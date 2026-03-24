@@ -42,7 +42,7 @@ Some books include a `posthoc_revision/` directory. These folders preserve the c
 - revision packets and revision reports
 - a short provenance note
 
-Raw job logs are intentionally omitted from this repository to keep the artifact archive readable and lightweight.
+Raw job logs (i.e., with every prompt, reasoning trace, and output provided by the model) are intentionally omitted from this repository to keep the artifact archive readable and lightweight. Please email <support@autofiction.ai> if you'd like access to any of these logs!
 
 ## License
 
