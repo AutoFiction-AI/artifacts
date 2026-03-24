@@ -6,7 +6,13 @@ The companion pipeline repository that contains the code used to generate and re
 
 ## Structure
 
-Each top-level directory is a single exported book.
+The repository root is intentionally compact:
+
+- `README.md`: overview of the archive
+- `LICENSE`: usage terms for the artifact corpus
+- `books/`: one subdirectory per exported book
+
+Each directory under `books/` is a single exported book.
 
 Book directories preserve the structured outputs of the generation pipeline. Not every book contains every artifact type, but most books include a substantial subset of the following:
 
