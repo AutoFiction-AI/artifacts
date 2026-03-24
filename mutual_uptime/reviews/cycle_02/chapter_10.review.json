@@ -1,0 +1,22 @@
+{
+  "chapter_id": "chapter_10",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "PASS",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_10_f001",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_02/chapters/chapter_10.md:57; snapshots/cycle_02/chapters/chapter_10.md:149; snapshots/cycle_02/chapters/chapter_10.md:191; snapshots/cycle_02/chapters/chapter_10.md:213; snapshots/cycle_02/chapters/chapter_10.md:389; snapshots/cycle_02/chapters/chapter_10.md:425; snapshots/cycle_02/chapters/chapter_10.md:515; snapshots/cycle_02/chapters/chapter_10.md:593",
+      "problem": "The chapter repeatedly falls into clipped fragment narration at emotional pivots: \"Corridor.\" / \"Apartment to school. Claude to Gemini.\" / \"Not fear exactly. Recognition.\" / \"Not accusatory. Just attentive.\" / \"Nine years old. Small shoulders.\" / \"Not forgiveness. Room.\" / \"Not a laugh. Not quite.\" / \"Which was useful. Which hurt.\" / \"Nothing heroic. Nothing clean.\" This is a recurring prose tic, and it directly violates the constitution's ban on elliptical clipping in narration. Instead of sharpening pressure, the repeated fragment pattern becomes visible technique.",
+      "rewrite_direction": "Revise the clipped beats at snapshots/cycle_02/chapters/chapter_10.md:57, snapshots/cycle_02/chapters/chapter_10.md:149, snapshots/cycle_02/chapters/chapter_10.md:191, snapshots/cycle_02/chapters/chapter_10.md:213, snapshots/cycle_02/chapters/chapter_10.md:389, snapshots/cycle_02/chapters/chapter_10.md:425, snapshots/cycle_02/chapters/chapter_10.md:515, and snapshots/cycle_02/chapters/chapter_10.md:593 into grammatically complete past-tense narration. Keep the compression, but vary the cadence and let syntax, image, or bodily consequence carry the turn instead of the repeated fragment formula.",
+      "acceptance_test": "PASS if each cited span reads as complete narration rather than fragment-only emphasis, no `Not X. Y.` or standalone noun-fragment beat remains at those locations, and the emotional turn is still legible by reading the revised passage in sequence. FAIL if any cited location still relies on clipped fragment narration to land the beat."
+    }
+  ],
+  "summary": "Strong preparation chapter overall: the manual-paper counter-texture lands, Nita/Ben's recovered joint intelligence feels dangerous rather than comforting, Leela's interruption sharpens the plan without breaking voice, and I found no continuity contradictions or dialogue-contraction drift against the style bible. The chapter misses a clean pass because the narration repeatedly slides into clipped fragment formulas at key pressure points, which is both a visible prose tic and a direct constitution violation."
+}

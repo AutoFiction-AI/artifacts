@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_06",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_06_craft_001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:3; snapshots/cycle_01/chapters/chapter_06.md:31; snapshots/cycle_01/chapters/chapter_06.md:97; snapshots/cycle_01/chapters/chapter_06.md:411",
+      "problem": "Narration repeatedly uses clipped noun-phrase fragments such as 'Broth, yes,' 'Bones for stock,' 'Not a smile,' and 'Work. Morning.' The constitution explicitly disallows this kind of article and verb stripped narration, and the repetition makes the mannerism visible.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_06.md:3, snapshots/cycle_01/chapters/chapter_06.md:31, snapshots/cycle_01/chapters/chapter_06.md:97, and snapshots/cycle_01/chapters/chapter_06.md:411, recast the fragment stacks into grammatically complete sentences or fold them into adjacent clauses. Keep the snap, but let the syntax stay whole rather than clipped for effect.",
+      "acceptance_test": "PASS if the revised prose at snapshots/cycle_01/chapters/chapter_06.md:3, snapshots/cycle_01/chapters/chapter_06.md:31, snapshots/cycle_01/chapters/chapter_06.md:97, and snapshots/cycle_01/chapters/chapter_06.md:411 preserves the same observations without standalone narration fragments that omit subject, article, or verb; FAIL if those beats still depend on clipped constructions like 'Broth, yes' or 'Work. Morning.'"
+    },
+    {
+      "finding_id": "chapter_06_craft_002",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:287; snapshots/cycle_01/chapters/chapter_06.md:291; snapshots/cycle_01/chapters/chapter_06.md:299; snapshots/cycle_01/chapters/chapter_06.md:309",
+      "problem": "The supper conversation explains the chapter's naming thesis twice after the tray scene has already dramatized it. Inez's back to back explanation blocks flatten scene pressure and edge toward speechifying instead of keeping the exchange abrasive and lived.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_06.md:287, snapshots/cycle_01/chapters/chapter_06.md:291, snapshots/cycle_01/chapters/chapter_06.md:299, and snapshots/cycle_01/chapters/chapter_06.md:309, compress the explanation or interrupt it sooner. Keep the crowd versus household distinction, but let one concrete example carry it and let Junie or Silas force a turn before Inez lands a second generalized summary.",
+      "acceptance_test": "PASS if the exchange anchored at snapshots/cycle_01/chapters/chapter_06.md:287, snapshots/cycle_01/chapters/chapter_06.md:291, snapshots/cycle_01/chapters/chapter_06.md:299, and snapshots/cycle_01/chapters/chapter_06.md:309 gives Inez no more than one sustained explanatory run before another character interrupts, contradicts, or misreads it, while the use versus admiration distinction remains legible through a concrete example; FAIL if she still gets two consecutive theory-heavy blocks that restate the same point."
+    },
+    {
+      "finding_id": "chapter_06_dialogue_001",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:165",
+      "problem": "Inez's line at line 165 closely echoes the style-bible calibration line about saying what light does instead of how it is admired. Example lines are reference-only; this reuse makes the voice feel templated and violates the instruction against near-verbatim carryover from the bible.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_06.md:165, replace the sentence architecture itself, not just a noun or two. Give Inez a fresh, tray-specific formulation grounded in heat, hold, or service so the thought arrives from this kitchen's labor rather than from the style-bible sample line.",
+      "acceptance_test": "PASS if the revised line at snapshots/cycle_01/chapters/chapter_06.md:165 no longer follows the pattern 'say what it does or is for, not how you want it admired or sold' and still sounds like Inez's precise maintenance-driven voice; FAIL if it still reads as a paraphrase of the style-bible example."
+    },
+    {
+      "finding_id": "chapter_06_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:71; snapshots/cycle_01/chapters/chapter_06.md:143; snapshots/cycle_01/chapters/chapter_06.md:257; snapshots/cycle_01/chapters/chapter_06.md:347; snapshots/cycle_01/chapters/chapter_06.md:411; snapshots/cycle_01/chapters/chapter_06.md:437",
+      "problem": "The chapter repeatedly defines feeling through the same negation scaffold: 'not unkindly and not kind either,' 'not soft, not theatrical,' 'not complaint exactly,' 'not forgiveness, not invitation,' 'not coyly, not by accident either.' After enough repetitions, the rhythm becomes predictable and starts to flatten emotional calibration.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_06.md:71, snapshots/cycle_01/chapters/chapter_06.md:143, snapshots/cycle_01/chapters/chapter_06.md:257, snapshots/cycle_01/chapters/chapter_06.md:347, snapshots/cycle_01/chapters/chapter_06.md:411, and snapshots/cycle_01/chapters/chapter_06.md:437, replace most of the hedge-through-negation beats with direct positive description, concrete action, or sharper image specific to each moment.",
+      "acceptance_test": "PASS if, across snapshots/cycle_01/chapters/chapter_06.md:71, snapshots/cycle_01/chapters/chapter_06.md:143, snapshots/cycle_01/chapters/chapter_06.md:257, snapshots/cycle_01/chapters/chapter_06.md:347, snapshots/cycle_01/chapters/chapter_06.md:411, and snapshots/cycle_01/chapters/chapter_06.md:437, no more than one beat still relies on a double-negation or hedge-before-definition formula and the rest state the quality through concrete image or action; FAIL if the same scaffold remains the dominant way the prose names feeling."
+    }
+  ],
+  "summary": "Booker-wise, the chapter lands its required aftermath beats: the speculative problem is brought down into cookware and service, Junie refuses glamour and self-pity, and the ending softens Silas and Inez without granting forgiveness. No MEDIUM+ continuity, tense, sanitization, timidity, or dialogue-contraction violations surfaced. The review still fails because the narration repeatedly breaks the constitution's anti-clipping rule, Inez's key line at snapshots/cycle_01/chapters/chapter_06.md:165 echoes a style-bible example too closely, the supper scene over-explains a lesson the cleanup already dramatized, and the prose leans too often on the same negation scaffold."
+}

@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_08",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch08-craft-001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_02/chapters/chapter_08.md:287",
+      "problem": "Gabriel's identifying dental detail contradicts canon. The continuity sheet establishes a missing upper-left premolar, but the chapter records \"second premolar gone upper right.\" Because Gabriel's later identification depends on these body markers, this is a high-stakes continuity break, not a cosmetic slip.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_08.md:287, align Gabriel's identifying markers with canon: keep the healed left collarbone break and revise the tooth note to the established upper-left premolar detail. If Della would record the feature in more exact language, make it exact there rather than introducing a right-side variant.",
+      "acceptance_test": "PASS if the revised line at snapshots/cycle_02/chapters/chapter_08.md:287 identifies Gabriel with a healed left collarbone break and a missing upper-left premolar, with no conflicting right-side or alternate premolar wording remaining. FAIL if the line still points to the upper right or any other contradictory dental marker."
+    },
+    {
+      "finding_id": "ch08-craft-002",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_02/chapters/chapter_08.md:289; snapshots/cycle_02/chapters/chapter_08.md:293; snapshots/cycle_02/chapters/chapter_08.md:295",
+      "problem": "The chapter reaches its hardest moral choice when Della withholds Gabriel's page, then cushions that choice with an immediate self-verdict (\"Coward\"). That is a moral safety valve: the prose tells the reader Della knows she is failing instead of letting the reader sit inside the selfish, practical, blood-and-land logic of the withholding.",
+      "rewrite_direction": "Rework the decision beat across snapshots/cycle_02/chapters/chapter_08.md:289-295 so Della's refusal to copy Gabriel is rendered through concrete stakes and bodily behavior rather than abstract self-condemnation. Keep the focus on what leaving Gabriel out protects or endangers for Rafe, the land claim, and the house; then land the beat on a physical action with the pen, page, or oilcloth instead of the label at snapshots/cycle_02/chapters/chapter_08.md:295.",
+      "acceptance_test": "PASS if the revised passage at snapshots/cycle_02/chapters/chapter_08.md:289-295 makes Della's choice legible through specific consequences and behavior, and the beat contains no explicit self-judging shorthand such as \"coward,\" \"wrong,\" or equivalent authorial reassurance. FAIL if the scene still resolves the discomfort by naming her guilt instead of dramatizing the withholding."
+    },
+    {
+      "finding_id": "ch08-prose-001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_02/chapters/chapter_08.md:77; snapshots/cycle_02/chapters/chapter_08.md:95; snapshots/cycle_02/chapters/chapter_08.md:139; snapshots/cycle_02/chapters/chapter_08.md:181",
+      "problem": "Several scene turns default to the same pivot construction: isolated \"Della looked...\" beats and a serial \"She thought of...\" chain. Reusing the same sight/thought hinge in key transitions makes the prose feel mechanically spliced instead of freshly perceived.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_08.md:77, snapshots/cycle_02/chapters/chapter_08.md:95, snapshots/cycle_02/chapters/chapter_08.md:139, and snapshots/cycle_02/chapters/chapter_08.md:181, recast at least two of these pivots away from bare looking/thinking clauses. Use Della's stronger house-body sensory repertoire instead: thumb stiffness, chair complaint, heat, lamp hiss, or the pressure of being cornered.",
+      "acceptance_test": "PASS if, after revision, at least two of the cited turns no longer rely on a bare \"Della looked...\" or repeated \"She thought of...\" formula and instead shift the scene through distinct physical or interpretive detail tied to those exact spans. FAIL if the revised passage still contains three or more of the same sight/thought pivot shapes across the cited lines."
+    }
+  ],
+  "summary": "Chapter 8 lands its boundary beats cleanly and keeps Della, Ruthie, June, and Rafe vocally distinct enough for Booker and dialogue to pass. It fails on craft and prose because Gabriel's tooth marker contradicts canon, the Gabriel-page climax defuses its own moral ugliness with a self-condemning safety valve, and several key turns repeat the same sight/thought pivot formula."
+}

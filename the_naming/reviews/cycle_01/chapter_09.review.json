@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_09",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_09_award_01",
+      "source": "award",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:169; snapshots/cycle_01/chapters/chapter_09.md:181; snapshots/cycle_01/chapters/chapter_09.md:185",
+      "problem": "The chapter's best images already prove the point, but the final movement keeps paraphrasing their meaning. Fasa explains the coercion-versus-community paradox, then restates that the warmth is real, then restates again that the families made something themselves. At shortlist level this reads as interpretive over-insistence rather than earned authority, because the scene no longer trusts the bread, the pipe, the sleeping children, and the resting hall to carry the chapter's consequence.",
+      "rewrite_direction": "Rework the closing argument at snapshots/cycle_01/chapters/chapter_09.md:169-185. Keep one clear articulation of Fasa's moral paradox if needed, but cut the repeated thesis restatements and let one concrete image cluster do the work. The close should land on observed consequence or bodily perception in snapshots/cycle_01/chapters/chapter_09.md:181-185, not a second or third abstract paraphrase of what the warmth means.",
+      "acceptance_test": "Pass if snapshots/cycle_01/chapters/chapter_09.md:169-185 contains no more than one explicit abstract statement about what the communal warmth signifies, and the final paragraph ends on a concrete image/action/sensation rather than another explanatory thesis. Fail if the revised ending still states the chapter's meaning in multiple consecutive paragraphs after the scene evidence has already landed."
+    },
+    {
+      "finding_id": "chapter_09_craft_01",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:133",
+      "problem": "The sentence reads as if Sem is thirteen and Raya is eleven because the ages follow the names in order, but the continuity sheet establishes Hala's children as Raya (13) and Sem (11). This is a canonical age swap, so it is a continuity contradiction, not a stylistic ambiguity.",
+      "rewrite_direction": "Correct snapshots/cycle_01/chapters/chapter_09.md:133 so the name-age mapping matches continuity: either reorder the names to 'Raya and Sem' before 'thirteen and eleven' or keep the existing name order and explicitly assign the ages in the sentence. Do not leave the current paired-order reading in place.",
+      "acceptance_test": "Pass if a reader of snapshots/cycle_01/chapters/chapter_09.md:133 can only read Raya as 13 and Sem as 11. Fail if the line still allows the left-to-right reading that makes Sem older than Raya."
+    },
+    {
+      "finding_id": "chapter_09_craft_02",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:125; snapshots/cycle_01/chapters/chapter_09.md:131; snapshots/cycle_01/chapters/chapter_09.md:171",
+      "problem": "Large stretches of the meal scene drift from live communal drama into roster-summary. The narration moves family by family, child by child, and then repeats the pattern later, so the scene starts reading like continuity bookkeeping instead of the chapter's first earned experience of collective rest. That weakens scene pressure precisely where the chapter should feel most alive.",
+      "rewrite_direction": "Tighten the census-style passages at snapshots/cycle_01/chapters/chapter_09.md:125-135 and snapshots/cycle_01/chapters/chapter_09.md:171-173. Keep the key communal nodes already on the page — the children's clump, Gitta's dish, Mava's story, Peyam and Kal on the steps — but merge or cut the one-sentence status updates so more of the room is implied and at least two cross-family interactions unfold as active beats rather than inventory.",
+      "acceptance_test": "Pass if snapshots/cycle_01/chapters/chapter_09.md:125-135 and snapshots/cycle_01/chapters/chapter_09.md:171-173 no longer stack more than three separate family-status updates in a row without a fresh action/dialogue beat, and if at least two cross-family moments in those spans are dramatized on the page rather than summarized. Fail if the revised meal scene still reads primarily as a list of where everyone is sitting and how each person looks."
+    },
+    {
+      "finding_id": "chapter_09_prose_01",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:13; snapshots/cycle_01/chapters/chapter_09.md:45; snapshots/cycle_01/chapters/chapter_09.md:53; snapshots/cycle_01/chapters/chapter_09.md:57; snapshots/cycle_01/chapters/chapter_09.md:79; snapshots/cycle_01/chapters/chapter_09.md:113; snapshots/cycle_01/chapters/chapter_09.md:123; snapshots/cycle_01/chapters/chapter_09.md:133; snapshots/cycle_01/chapters/chapter_09.md:147",
+      "problem": "A descriptive tic keeps announcing precision instead of supplying it: 'the specific...,' 'the particular...,' 'the quality of...,' and repeated 'of a woman/man who...' constructions. Used this often, the phrasing becomes mechanical scaffolding and flattens prose that should feel freshly observed in a chapter built from hands, food, smoke, rain, and bodies in shared space.",
+      "rewrite_direction": "Revise the repeated formula clusters at snapshots/cycle_01/chapters/chapter_09.md:13, snapshots/cycle_01/chapters/chapter_09.md:45, snapshots/cycle_01/chapters/chapter_09.md:49-57, snapshots/cycle_01/chapters/chapter_09.md:79, snapshots/cycle_01/chapters/chapter_09.md:113, snapshots/cycle_01/chapters/chapter_09.md:123, snapshots/cycle_01/chapters/chapter_09.md:133, and snapshots/cycle_01/chapters/chapter_09.md:147. Replace formulaic intensifier language with the actual gesture, texture, pressure, or sound doing the descriptive work, and vary the sentence shapes instead of reusing the same abstraction frame.",
+      "acceptance_test": "Pass if those target spans rely on concrete physical detail rather than repeated 'specific/particular/quality of' scaffolding, and no more than two such formula uses remain across the chapter. Fail if the revision still repeatedly tells the reader that a sensation or demeanor is 'specific' or 'particular' instead of rendering the thing itself."
+    }
+  ],
+  "summary": "The chapter lands the required boundary beats and keeps Fasa broadly on-model: the bread-sameness, Gitta's uncanny recipe knowledge, Mava's story, and Peyam/Kal's pipe all carry real warmth, and dialogue registers stay consistent enough to pass. It still fails overall because the communal meal is too often explained and inventoried instead of fully dramatized, the prose leans on a visible descriptive formula, and line 133 introduces a HIGH continuity contradiction by swapping Sem and Raya Dao's ages."
+}

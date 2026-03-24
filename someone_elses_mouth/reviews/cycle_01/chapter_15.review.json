@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_15",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch15-craft-001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_15",
+      "evidence": "At snapshots/cycle_01/chapters/chapter_15.md:137, Lena's first account to Farah collapses into reported summary ('So Lena told her ... But she gave enough') instead of making her voice the ugliest facts. At snapshots/cycle_01/chapters/chapter_15.md:349, the Gabe disclosure does the same ('She told him about the photos ... about proof on a laptop'). The chapter's engine is the shame of telling other people what happened, but the telling itself is repeatedly paraphrased.",
+      "problem": "Sanitization by summary: the chapter repeatedly steps around Lena having to say the most humiliating specifics aloud, so private humiliation becomes social fact more cleanly than this premise can bear.",
+      "rewrite_direction": "In snapshots/cycle_01/chapters/chapter_15.md:137, replace the summary block with on-page speech that makes Lena name June's authorship, the templated money asks, and at least one sexual-control detail from the archive. In snapshots/cycle_01/chapters/chapter_15.md:341 and snapshots/cycle_01/chapters/chapter_15.md:349, keep Gabe ignorant of June's name if that remains the chapter design, but make Lena say at least two concrete humiliations beyond 'fake profile and software' such as stolen source media, coached sexual direction, or scripted money requests.",
+      "acceptance_test": "PASS if the revised Farah passage at snapshots/cycle_01/chapters/chapter_15.md:137 and the revised Gabe passage at snapshots/cycle_01/chapters/chapter_15.md:341 contain at least three concrete spoken specifics that are currently summarized, and at least one listener reaction is triggered by a stated detail rather than generic bad-news recognition. FAIL if either scene still reports that Lena 'told' them without rendering the humiliating content itself."
+    },
+    {
+      "finding_id": "ch15-dialogue-001",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "Farah's strongest lines are vivid and in character, but several later lines turn polished enough to blur her dry logistics-first idiolect with the narrator's house voice: snapshots/cycle_01/chapters/chapter_15.md:211 ('Money is countable, so it behaves better. The rest doesn't.'), snapshots/cycle_01/chapters/chapter_15.md:221 ('amputation in places you didn't know had nerves'), and snapshots/cycle_01/chapters/chapter_15.md:261 ('you need a wall, not a crowbar').",
+      "problem": "Farah intermittently drifts from grounded neighborhood pragmatist into aphoristic therapist-sage language, which weakens idiolect separation and pushes against the style bible's instruction that she offers care through logistics rather than speeches.",
+      "rewrite_direction": "Roughen and localize Farah's support lines around snapshots/cycle_01/chapters/chapter_15.md:211, snapshots/cycle_01/chapters/chapter_15.md:221, and snapshots/cycle_01/chapters/chapter_15.md:261. Keep her dry humor and competence, but route at least two of those beats through bottle-shop language, task assignment, interruption, or clipped anger instead of finished metaphor or therapy framing.",
+      "acceptance_test": "PASS if at least two of Farah's revised lines in the cited spans deliver care through concrete instruction, practical question, or rough local shorthand rather than abstract reassurance or extended metaphor, and she still reads as dry and unsentimental. FAIL if she still sounds like the chapter's most quotable counselor instead of a specific woman from this block."
+    },
+    {
+      "finding_id": "ch15-prose-001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "The archive scene foregrounds voice-note evidence at snapshots/cycle_01/chapters/chapter_15.md:13 and snapshots/cycle_01/chapters/chapter_15.md:57, but Lena never actually hears one; snapshots/cycle_01/chapters/chapter_15.md:15 explicitly retreats to transcript. After that, several emotional turns are staged through repeated look-beats at snapshots/cycle_01/chapters/chapter_15.md:111, snapshots/cycle_01/chapters/chapter_15.md:209, snapshots/cycle_01/chapters/chapter_15.md:223, and snapshots/cycle_01/chapters/chapter_15.md:445.",
+      "problem": "The prose pulls back from the book's sound-driven premise at the exact moment the archive should be most destabilizing, then defaults too often to neutral visual staging. That combination reads as timidity plus a small recurring formula, and it flattens a chapter that should feel acoustically haunted.",
+      "rewrite_direction": "In snapshots/cycle_01/chapters/chapter_15.md:13 through snapshots/cycle_01/chapters/chapter_15.md:16 or snapshots/cycle_01/chapters/chapter_15.md:55 through snapshots/cycle_01/chapters/chapter_15.md:57, make Lena play or vividly hear one Eli artifact so the scene uses the style bible's sound bias instead of only remembered transcript. Around snapshots/cycle_01/chapters/chapter_15.md:111, snapshots/cycle_01/chapters/chapter_15.md:209, snapshots/cycle_01/chapters/chapter_15.md:223, and snapshots/cycle_01/chapters/chapter_15.md:445, replace most 'Lena looked ...' transitions with touch, breath, posture, or spatial-pressure beats.",
+      "acceptance_test": "PASS if the revised archive section includes one audible Eli fragment rendered on page with a bodily consequence for Lena, and no more than one of the cited midchapter transitions still uses a 'Lena looked ...' construction. FAIL if Eli remains entirely unheard in the archive scene or if the chapter still leans on repeated visual glance beats to pivot emotional turns."
+    }
+  ],
+  "summary": "Chapter 15 hits its boundary obligations, stays in tight past-tense Lena POV, and does not show a continuity contradiction against the provided context. It still fails review because the strongest material is the archive autopsy; the confession scenes sanitize key shame beats by summarizing what Lena says, Farah occasionally slips from her dry logistics-first voice into polished counselor aphorism, and the prose avoids the chapter's most destabilizing sound artifact while repeating neutral look-beat transitions."
+}

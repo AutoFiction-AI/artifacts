@@ -1,0 +1,85 @@
+{
+  "acceptance_targets": [
+    "[chapter_06_prose_001] Pass if each cited location reads as complete narration sentences with explicit subjects and verbs, and a line-by-line read no longer finds fragment-only emphasis sentences in those passages. Fail if the revision still contains clipped narration such as 'Not safely,' 'A woman preparing evidence,' or similar subjectless emphasis beats at the cited lines.",
+    "[chapter_06_prose_002] Pass if a side-by-side read of the revised passages at snapshots/cycle_01/chapters/chapter_06.md:97 and snapshots/cycle_01/chapters/chapter_06.md:209 reveals no identical full sentences and the later passage adds at least one new concrete observation about Majed's changed posture, speech, or physical behavior. Fail if 'He was not simple enough to be a villain. That made the room worse.' or the same fear inventory still appears in both places."
+  ],
+  "chapter_id": "chapter_06",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if each cited location reads as complete narration sentences with explicit subjects and verbs, and a line-by-line read no longer finds fragment-only emphasis sentences in those passages. Fail if the revision still contains clipped narration such as 'Not safely,' 'A woman preparing evidence,' or similar subjectless emphasis beats at the cited lines.",
+      "chapter_id": "chapter_06",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:67, snapshots/cycle_01/chapters/chapter_06.md:97, snapshots/cycle_01/chapters/chapter_06.md:211, snapshots/cycle_01/chapters/chapter_06.md:219",
+      "finding_id": "chapter_06_prose_001",
+      "problem": "The prose repeatedly falls into clipped narration fragments at key turns ('Not safely. Never safely.'; 'Not the fat appetite...'; 'A woman preparing evidence.'; the object-list at the close). The constitution explicitly bans elliptical clipping in narration, and here the habit reads as a recurring mannerism rather than earned rhythm.",
+      "rewrite_direction": "Rewrite the fragment-heavy beats at snapshots/cycle_01/chapters/chapter_06.md:67, snapshots/cycle_01/chapters/chapter_06.md:97, snapshots/cycle_01/chapters/chapter_06.md:211, and snapshots/cycle_01/chapters/chapter_06.md:219 as grammatically complete sentences with explicit subjects and verbs. Preserve the pressure and cadence, but stop relying on noun-phrase or adjective-only sentence shards to create emphasis.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if a side-by-side read of the revised passages at snapshots/cycle_01/chapters/chapter_06.md:97 and snapshots/cycle_01/chapters/chapter_06.md:209 reveals no identical full sentences and the later passage adds at least one new concrete observation about Majed's changed posture, speech, or physical behavior. Fail if 'He was not simple enough to be a villain. That made the room worse.' or the same fear inventory still appears in both places.",
+      "chapter_id": "chapter_06",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:97, snapshots/cycle_01/chapters/chapter_06.md:209",
+      "finding_id": "chapter_06_prose_002",
+      "problem": "Majed's fear is described twice with the same inventory and the same concluding sentence pair. The second appearance reads like accidental duplication rather than purposeful echo, flattening a later beat that should reveal a changed understanding of him.",
+      "rewrite_direction": "Revise either snapshots/cycle_01/chapters/chapter_06.md:97 or snapshots/cycle_01/chapters/chapter_06.md:209, preferably the later beat at snapshots/cycle_01/chapters/chapter_06.md:209, so Majed's fear is rendered through new observation specific to that moment instead of repeating the parts-debt/colony/day-laborer inventory and the same villain-room-worse line.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "4f89ea12c849b202f6ddfad9e2acb72b7389289d6bf4405b6690e908f21519f9",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on prose and copyedit finish: diction precision, rhythm control, sentence-level clarity, grammar, line-level polish without flattening style, and explicit aesthetic-risk audit (sanitization is the primary risk \u2014 do not soften or euphemize; push toward creative risk and specificity).",
+    "key": "p3_prose_copyedit",
+    "label": "prose/copyedit fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into contradiction: mercy that creates future damage, tenderness inside humiliation, and paperwork treated as an instrument of violence. In edge cases, choose the more socially and bodily specific version over the tasteful summary or thematic paraphrase.",
+      "dark_content_allowed_when_character_true": true,
+      "edge_case_resolution": "When a scene risks becoming too neat, keep the hurt visible and let no one explain it away too quickly. When a scene risks becoming lurid, keep it tethered to character perception, material fact, and consequence rather than spectacle.",
+      "euphemism_penalty": "If bodily pain, sexual threat, shame, hunger, or bureaucratic exclusion matter in a scene, they must register in specific lived detail; vague softening counts as a failed draft.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High in rendered English dialogue; contractions are the norm, with fuller forms reserved for emphasis, institutional performance, or character-specific formality.",
+      "dialect_rendering_policy": "Render Bangla and char-specific speech through rhythm, hierarchy, metaphor, and social assumption, not through phonetic misspelling or exoticized broken English.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1,
+      "subtext_requirement": "Most important exchanges should carry a visible practical agenda and a second, less speakable pressure beneath it, especially around kinship, shame, and money."
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate public pressure with private reckoning, crowd scenes with object-heavy aftermath, and dialogue-dense chapters with chapters driven by inventory, travel, weather, or delayed information. No two consecutive chapters should rely on the same scene count, confrontation style, or emotional tempo.",
+      "diction": "Plainspoken but exact, letting bureaucratic vocabulary and domestic vocabulary sit in the same paragraph without either swallowing the other; lyric lift should emerge from concrete detail, not ornamental abstraction.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third with one focal consciousness per scene, anchored primarily to Halima and opening selectively to Nura or Kashem only where the outline assigns that pressure.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Flexible sentence music: longer accrual sentences for weather, labor, and memory; short declarative cuts for administrative harm, revelation, and emotional impact.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

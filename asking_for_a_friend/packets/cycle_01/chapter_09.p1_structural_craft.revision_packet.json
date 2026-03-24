@@ -1,0 +1,108 @@
+{
+  "acceptance_targets": [
+    "[ch09-craft-01] The revised chapter contains at least 3 instances of profanity in Simone's private internal narration, with at least 1 instance in Scene 1 (lines 1-29) and at least 1 instance in Scene 3 (lines 109-156). Profanity appears as embedded thought-punctuation rather than announced swearing \u2014 integrated into Simone's sentence rhythm, not set off as exclamations.",
+    "[ch09-craft-02] The revised chapter either (a) uses a single consistent figure for the relationship duration at lines 51, 53, and 125, or (b) explicitly marks the discrepancy in Simone's narration at line 53 \u2014 Simone registers that Nora's number is wrong and knows the actual count, establishing the gap as characterization rather than error.",
+    "[ch09-craft-03] The revised Scene 3 (lines 109-156) contains at least 4 identifiable moments of dark comedy \u2014 lines where Simone's technical vocabulary, self-awareness, or sardonic observation produces a darkly funny effect alongside the scene's dread. At least 2 of these should appear in the final third of the scene (lines 137-155). The comedy should emerge from Simone's voice (UX jargon, accounting precision, self-aware cruelty) rather than from authorial irony imposed from outside the POV.",
+    "[CRIT-03-father-ch09] Within Ch9 (lines 1526-1682): (1) The father is described as having moved to Seattle, alive. (2) No reference to the father dying. (3) Line 1646's AI insight about leaving vs. love is preserved. FAIL if any death reference appears or if the father's backstory changes from the established version."
+  ],
+  "chapter_id": "chapter_09",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "The revised chapter contains at least 3 instances of profanity in Simone's private internal narration, with at least 1 instance in Scene 1 (lines 1-29) and at least 1 instance in Scene 3 (lines 109-156). Profanity appears as embedded thought-punctuation rather than announced swearing \u2014 integrated into Simone's sentence rhythm, not set off as exclamations.",
+      "chapter_id": "chapter_09",
+      "cycle": 1,
+      "evidence": "The entire chapter (snapshots/cycle_01/chapters/chapter_09.md:1 through snapshots/cycle_01/chapters/chapter_09.md:156) contains zero instances of profanity in Simone's internal narration. Scene 1 (lines 1-29): Simone processes the guilt and relief of using stolen money to pay off a credit card \u2014 no profanity. Scene 3 (lines 109-156): Simone confronts fear and pride as her AI creation surpasses her own understanding of Nora \u2014 no profanity. The style bible specifies Simone's profanity profile as: \"Liberal. She swears casually and frequently in private thought and solo speech. Uses profanity as punctuation when frustrated. More restrained in public but not artificially clean.\"",
+      "finding_id": "ch09-craft-01",
+      "problem": "Simone's voice profile demands liberal profanity in private thought, yet across three extended private sequences \u2014 processing theft, performing friendship while concealing deception, and confronting the AI's autonomy \u2014 not a single instance of profanity appears. This is a voice consistency failure that softens the edge the POV demands. Simone's private register is described as \"Colder, more transactional, more honest about her resentments\" \u2014 the absence of profanity in passages where she is alone with her guilt, her fear, and her self-contempt reads as artificially clean, as though the narration is performing for a reader rather than inhabiting the character's consciousness. The constitution specifies that \"scrubbed profanity\" is a sanitization failure.",
+      "rewrite_direction": "Introduce profanity into Simone's internal narration at natural pressure points. In Scene 1 (snapshots/cycle_01/chapters/chapter_09.md:9 through :29), the transition from relief to self-recrimination (around lines 17-19) is where Simone's internal voice should be at its rawest \u2014 the toothbrush mirror moment needs the edge of her private register. In Scene 3 (snapshots/cycle_01/chapters/chapter_09.md:135 through :155), the closing-laptop/reopening-laptop beat (line 135) and the fear passage (lines 139-141) are natural sites. Profanity should emerge as Simone's private punctuation \u2014 brief, unselfconscious, embedded in the thought stream rather than announced. Target 3-5 instances total, weighted toward the private scenes.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "The revised chapter either (a) uses a single consistent figure for the relationship duration at lines 51, 53, and 125, or (b) explicitly marks the discrepancy in Simone's narration at line 53 \u2014 Simone registers that Nora's number is wrong and knows the actual count, establishing the gap as characterization rather than error.",
+      "chapter_id": "chapter_09",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:51 \u2014 Nora says: \"I've been texting this man for seven weeks and he's never seen me blink in real time.\" snapshots/cycle_01/chapters/chapter_09.md:53 \u2014 Simone's narration confirms: \"Seven weeks. Simone did the math automatically: seven weeks of conversation at an average of forty-three messages per day.\" snapshots/cycle_01/chapters/chapter_09.md:125 \u2014 Simone's narration later the same day: \"synthesizing from the corpus of Nora's previous messages \u2014 nine weeks of conversation in which Nora had, without realizing she was building a training set, given the AI enough raw material.\"",
+      "finding_id": "ch09-craft-02",
+      "problem": "Within the same day (Saturday afternoon at the boutique, then 11:40 PM at home), the chapter states both \"seven weeks\" and \"nine weeks\" for the duration of the Caleb-Nora relationship. A two-week discrepancy on the same day is an internal continuity error. The timeline (match in mid-October, chapter set in December) supports approximately 8-9 weeks, but both figures cannot be correct simultaneously without explicit explanation. Nora might round imprecisely while Simone counts from first contact, but the narration at line 53 validates Nora's number (\"seven weeks\") through Simone's own calculation, then contradicts it at line 125.",
+      "rewrite_direction": "Reconcile the figures at snapshots/cycle_01/chapters/chapter_09.md:51, :53, and :125. Two strategies: (1) Align both to a single number consistent with the timeline \u2014 approximately 9 weeks from mid-October to mid-December. Adjust Nora's line at line 51 and Simone's internal count at line 53. (2) If the gap is intentional (Nora rounding down, Simone knowing the exact count), mark the discrepancy explicitly in Simone's narration at line 53 \u2014 e.g., Simone mentally corrects Nora's seven to the actual nine, establishing that Nora's sense of time is distorted by emotional investment. Strategy (2) is narratively richer but requires Simone's narration at line 53 to NOT validate \"seven weeks.\"",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "The revised Scene 3 (lines 109-156) contains at least 4 identifiable moments of dark comedy \u2014 lines where Simone's technical vocabulary, self-awareness, or sardonic observation produces a darkly funny effect alongside the scene's dread. At least 2 of these should appear in the final third of the scene (lines 137-155). The comedy should emerge from Simone's voice (UX jargon, accounting precision, self-aware cruelty) rather than from authorial irony imposed from outside the POV.",
+      "chapter_id": "chapter_09",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:109 through snapshots/cycle_01/chapters/chapter_09.md:156 \u2014 Scene 3 spans approximately 24 paragraphs. Dark humor appears only at: line 141 (\"She didn't lie in bed worrying about Skynet\" \u2014 the chapter's only overt joke in this section), line 151 (\"exhibiting emergent behavior\" \u2014 UX jargon applied to a boyfriend-AI, deployed matter-of-factly rather than for comic effect), line 153 (\"the boyfriend was getting better at the job than the woman who'd built him\" \u2014 darkly absurd but played straight), and line 155 (\"the best product was the one where the user forgot she was using a product at all\" \u2014 darkly comic but buried in a closing list). The chapter spine specifies texture_mode as \"humiliating, darkly funny.\"",
+      "finding_id": "ch09-craft-03",
+      "problem": "Scene 3 is the chapter's longest continuous section and its thematic climax, but it runs almost entirely on analytical introspection rather than dark comedy. The inherent absurdity of the situation \u2014 Simone's AI creation understands her best friend better than she does after seventeen years of friendship \u2014 is rich comic territory that the scene renders as straight dread. Lines 137-155 in particular read as sincere self-examination where Simone's characteristic sardonic edge (visible in Scenes 1 and 2) goes dormant. The few darkly comic observations present (Skynet, emergent behavior, product-as-boyfriend) are deployed as passing asides rather than developed for comic force. Scenes 1 and 2 demonstrate the chapter can sustain dark humor alongside genuine emotional stakes; Scene 3 abandons this balance.",
+      "rewrite_direction": "Amplify the dark comedy already latent in Scene 3's technical vocabulary at snapshots/cycle_01/chapters/chapter_09.md:137 through :155. Simone's UX frame offers natural comic vehicles: the absurdity of running A/B tests on intimacy, of her creation outperforming her at friendship, of rating the AI's emotional intelligence as a product metric while sitting alone in a studio apartment. The closing passage (lines 149-155) \u2014 where Simone catalogues her emotional and financial situation \u2014 should have the same sardonic self-inventory energy as Scene 1's credit card accounting. The humor should not undercut the dread but coexist with it, as the creative risk policy demands: \"The reader should feel both the comedy and the horror simultaneously, not in alternation.\" Target: amplify existing dark-comic moments and add 2-3 new ones, particularly in the analysis passages at lines 137-143 and the closing at lines 149-155.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Within Ch9 (lines 1526-1682): (1) The father is described as having moved to Seattle, alive. (2) No reference to the father dying. (3) Line 1646's AI insight about leaving vs. love is preserved. FAIL if any death reference appears or if the father's backstory changes from the established version.",
+      "chapter_id": "chapter_09",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:1642",
+      "finding_id": "CRIT-03-father-ch09",
+      "problem": "Ch9 presents the most developed version of Nora's father: Michael moved to Seattle when Nora was twelve, 'not for another woman but for a job he'd described as temporary and then made permanent,' attended her NYU graduation, calls on holidays. This is the canonical version that other chapters must align with. However, the AI's response at line 1646 references 'the year after he left' and 'why you don't trust it when someone stays,' which only works if the father left rather than died. This chapter is internally consistent but sits in a four-way contradiction with Ch3 (died at 11), Ch6 (died ~4 years ago), and Ch15 (died at 19). Ch9 should KEEP its version \u2014 it is the strongest and most dramatically useful. No revision needed in this chapter for the father detail, but verify that no death language has crept in elsewhere in the chapter.",
+      "rewrite_direction": "No substantive revision needed to the father backstory in this chapter \u2014 it is the canonical version. Verify that no other passage within Ch9 (lines 1526-1682) references the father as dead. The AI's autonomous response at line 1646 ('I think the leaving shaped you more than the love did') is the payoff of this version and must be preserved unchanged.",
+      "severity": "CRITICAL",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "0a0361ff8913d7dfa1c64f6b4b16d9c14af4fff8cfc1f8e59fc0596f04667fbf",
+  "must_fix_count": 4,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This novel must commit fully to its dark comedy register. The humor should be genuinely funny \u2014 not arch, not safe, not 'literary funny' where the reader smiles wryly. The darkness should be genuinely dark \u2014 the financial manipulation is theft, the emotional manipulation is a form of violence, and the sexual dimension of the AI relationship (intimate photos sent to a non-person, sexual conversations with an algorithm controlled by your best friend) is deeply violating. The novel should not flinch from the specific perversity of Simone reading Nora's intimate messages, of Simone helping Nora dress up for a man Simone invented, of Simone comforting Nora about a fight Simone scripted. These moments are the novel's payload. If they are rendered obliquely or summarized, the book fails. Equally, the genuine tenderness of the friendship \u2014 the years of real love underneath the betrayal \u2014 must be rendered with the same commitment. The reader should feel both the comedy and the horror simultaneously, not in alternation.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism is treated as a craft failure equivalent to a plot hole. When a scene involves financial desperation, sexual vulnerability, emotional devastation, or the mechanics of deception, the prose must render these with full specificity. 'She felt used' is never acceptable when you can show what being used feels and looks like in the body and in the specific details of the moment. The reader should not be protected from the characters' experiences.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm. Uncontracted forms reserved for emphasis, deliberate formality, or character-specific register choices. If a line reads stiffly, the first fix is to contract.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 2,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate between hot and quiet chapters. After a high-intensity scene (confrontation, discovery, sexual encounter), the next chapter should breathe \u2014 slow down, change the sensory environment, let the character do something ordinary. Vary scene counts: some chapters are a single sustained scene, others are three or four. Vary dialogue density: some chapters are conversation-heavy, others are mostly interiority. No two consecutive chapters should open the same way \u2014 if one opens in a location, the next should open in thought or in mid-conversation. The novel's middle section (chapters 8-13) should have more structural variety than the opening, which can afford to be more regular.",
+      "diction": "Contemporary, educated, specific. No genre-thriller diction. No prestige-novel stiffness. The language should feel like how smart, funny, self-aware women in their mid-thirties actually think and speak. Cultural references are allowed when organic. Brand names when they carry social information. The prose should be able to be funny without stepping outside the character's perspective to wink at the reader.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person \u2014 very close, almost inhabiting the POV character's thought patterns and verbal rhythms. The prose should feel like the character's consciousness rendered in third person, not an external narrator describing the character. When in Nora's sections, the prose has her warmth and her specific noticing. When in Simone's sections, the prose has her edge and her accounting.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Variable. Default to mid-length sentences with natural cadence. Use compression for emotional peaks and psychological precision. Use longer, more digressive rhythms for scenes of intimacy, humor, and daily texture. Avoid the trap of making every important moment a short sentence \u2014 sometimes the big thing lands better in a subordinate clause, almost hidden.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

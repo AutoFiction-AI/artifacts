@@ -1,0 +1,82 @@
+{
+  "acceptance_targets": [
+    "[ch05_prose_001] PASS if the revised chapter uses \"By the time\" no more than once across those three transition points and each transition opens with a distinct sentence shape; FAIL otherwise.",
+    "[ch05_prose_002] PASS if, in revised snapshots/cycle_01/chapters/chapter_05.md:237, the exact stem \"She kept seeing\" appears at most twice and the paragraph still presents three concrete images tied to three different conclusions; FAIL otherwise."
+  ],
+  "chapter_id": "chapter_05",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if the revised chapter uses \"By the time\" no more than once across those three transition points and each transition opens with a distinct sentence shape; FAIL otherwise.",
+      "chapter_id": "chapter_05",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:3; snapshots/cycle_01/chapters/chapter_05.md:191; snapshots/cycle_01/chapters/chapter_05.md:241",
+      "finding_id": "ch05_prose_001",
+      "problem": "A recurring transition formula (\"By the time ...\") appears three times at major scene pivots, creating a noticeable structural tic.",
+      "rewrite_direction": "Recast at least two of the openings at snapshots/cycle_01/chapters/chapter_05.md:3, snapshots/cycle_01/chapters/chapter_05.md:191, and snapshots/cycle_01/chapters/chapter_05.md:241 with different syntactic entries (for example one sensory-first and one action-first) while preserving chronology.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if, in revised snapshots/cycle_01/chapters/chapter_05.md:237, the exact stem \"She kept seeing\" appears at most twice and the paragraph still presents three concrete images tied to three different conclusions; FAIL otherwise.",
+      "chapter_id": "chapter_05",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:237",
+      "finding_id": "ch05_prose_002",
+      "problem": "The repeated anaphora (\"She kept seeing ...\") runs four times in one paragraph and starts to sound mechanical instead of accumulative.",
+      "rewrite_direction": "Rework the paragraph at snapshots/cycle_01/chapters/chapter_05.md:237 so the obsessive loop remains, but vary syntax and verb choice; keep no more than two identical repeated stems and ensure each image adds a distinct inference.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "3a9f5f0300733fc1051ea3cc8e96edd198fca1cfc10c5b200fcbcd0a1f58b976",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on prose and copyedit finish: diction precision, rhythm control, sentence-level clarity, grammar, line-level polish without flattening style, and explicit aesthetic-risk audit (sanitization is the primary risk \u2014 do not soften or euphemize; push toward creative risk and specificity).",
+    "key": "p3_prose_copyedit",
+    "label": "prose/copyedit fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "When choosing between reputationally safe abstraction and specific discomfort, choose specificity. Render addiction, sexuality, deceit, class shame, and grief at lived scale. In edge cases, preserve character truth and causal accountability over reader comfort or institutional decorum.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene demands bodily, moral, or economic specificity, euphemistic phrasing is treated as a failed draft and must be rewritten with concrete stakes and observable consequence.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the spoken default; full forms appear only for emphasis, ritual language, or character-specific formal posture",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate scene density and pressure modes: pair high-conflict chapters with quiet domestic or documentary chapters, vary dialogue-to-interiority ratios, and prevent identical chapter skeletons in consecutive sequence.",
+      "diction": "contemporary literary diction with class-aware, borough-specific concreteness; avoid prestige-neutral workshop language",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third centered on Marisol, with rare brief distance expansions for institutional scenes",
+      "narrative_tense": "past tense",
+      "rhythm_target": "alternating tensile compression and reflective extension; line-level cadence should carry emotional pressure, not just information",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

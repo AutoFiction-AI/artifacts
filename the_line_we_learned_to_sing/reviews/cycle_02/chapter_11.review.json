@@ -1,0 +1,78 @@
+{
+  "chapter_id": "chapter_11",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_11_f001_process_leak",
+      "source": "craft",
+      "severity": "CRITICAL",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_02/chapters/chapter_11.md:201",
+      "problem": "Narrative process leakage breaks diegesis: the line references prior events as \"chapter-seven trust and chapter-nine panic,\" which reads like drafting metadata instead of in-world narration.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_11.md:201, replace chapter-number meta labeling with in-world recall anchored to concrete events (e.g., the specific trust exchange and Jamsil panic context) while preserving the emotional logic of why she uses that burner.",
+      "acceptance_test": "PASS if line 201 no longer contains chapter-number/meta language and the burner reference is understandable entirely as in-world memory; FAIL if any chapter/cycle labeling remains in narration."
+    },
+    {
+      "finding_id": "chapter_11_f002_sanitized_intimacy_retreat",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_02/chapters/chapter_11.md:314; snapshots/cycle_02/chapters/chapter_11.md:326",
+      "problem": "At the peak emotional/intimate decision point, prose retreats into euphemistic abstraction (\"simple body answer\", \"used each other that way\") instead of embodied specificity. This is sanitization drift that blunts stakes.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_11.md:314-327 so Ina's temptation/refusal is rendered through concrete bodily and sensory detail (touch distance, breath, remembered physical habit, immediate stress response) rather than placeholder phrasing.",
+      "acceptance_test": "PASS if the revised 314-327 span contains at least two concrete physical/sensory details and one explicit embodied cost of refusing him, with no euphemistic stand-ins like \"that way\"; FAIL if the moment still reads as abstract summary."
+    },
+    {
+      "finding_id": "chapter_11_f003_interiority_drought_meeting",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_02/chapters/chapter_11.md:67; snapshots/cycle_02/chapters/chapter_11.md:91",
+      "problem": "The meeting runs a long external-only stretch (10+ consecutive paragraphs between interior beats) that thins close-third immersion and makes the chapter read like a transcripted briefing.",
+      "rewrite_direction": "In snapshots/cycle_02/chapters/chapter_11.md:67-91, insert interiority beats tied to Ina's focal experience (micro-sensation, tactical self-correction, memory trigger) at least every 4-6 paragraphs without slowing scene momentum.",
+      "acceptance_test": "PASS if the 67-91 span contains at least three distinct Ina-internal beats (thought/sensation/self-assessment) distributed across the exchange so there is no 10+ paragraph interiority gap; FAIL if the passage remains primarily external dialogue/exposition."
+    },
+    {
+      "finding_id": "chapter_11_f004_committee_voice_blur",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_02/chapters/chapter_11.md:69; snapshots/cycle_02/chapters/chapter_11.md:79; snapshots/cycle_02/chapters/chapter_11.md:83; snapshots/cycle_02/chapters/chapter_11.md:87",
+      "problem": "Song, Bae, and Park are differentiated by job labels but not by strongly distinct spoken rhythm/idiolect in the core exchange, so the room's pressure dynamics flatten.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_11.md:69-89 so each secondary speaker has a clearly distinct verbal pattern (e.g., Song's model-cautious precision, Bae's blunt tactical cynicism, Park's legal narrowing language) while preserving scene content.",
+      "acceptance_test": "PASS if a reader can attribute each of Song/Bae/Park lines in 69-89 without dialogue tags based on diction/rhythm alone; FAIL if the lines remain mostly interchangeable committee-speak."
+    },
+    {
+      "finding_id": "chapter_11_f005_facial_expression_tic",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_02/chapters/chapter_11.md:211; snapshots/cycle_02/chapters/chapter_11.md:304; snapshots/cycle_02/chapters/chapter_11.md:346",
+      "problem": "The same facial-microreaction construction (mouth/jaw tightening/twisting to signal emotion) recurs more than twice in one chapter beat, creating a visible prose tic.",
+      "rewrite_direction": "In snapshots/cycle_02/chapters/chapter_11.md:205-347, keep at most one mouth/jaw microreaction and replace the others with varied embodied cues tied to dock action (movement, voice break, hand behavior, environmental interaction).",
+      "acceptance_test": "PASS if the revised dock scene uses no more than one mouth/jaw tightening-twist reaction and at least two alternate embodied emotional cues; FAIL if three similar mouth/jaw reactions remain."
+    },
+    {
+      "finding_id": "chapter_11_f006_endbeat_hook_stack",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_02/chapters/chapter_11.md:374; snapshots/cycle_02/chapters/chapter_11.md:377",
+      "problem": "The ending stacks multiple inbound messages as a rapid hook bundle, which reads outline-forward and diffuses the chapter's final dramatic pressure into notification summary.",
+      "rewrite_direction": "Rework snapshots/cycle_02/chapters/chapter_11.md:374-377 so one dominant consequence lands in-scene (single urgent demand or interruption) and the chapter closes on a concrete immediate choice/action rather than three sequential message beats.",
+      "acceptance_test": "PASS if the closing beat is driven by one primary pressure event that forces an immediate action before the final line; FAIL if the ending remains a multi-message summary stack."
+    }
+  ],
+  "summary": "Chapter 11 lands core spine beats and maintains causal momentum, but it fails review due to one CRITICAL diegetic breach (process leakage), one HIGH sanitization retreat at a key intimacy-pressure moment, and additional MEDIUM dialogue/prose/booker issues (interiority drought, voice blur, repeated expression tic, and a hook-stacked ending). Narrative tense remains consistent with past-tense canon, no style-bible example-line copying was found, and no explicit continuity-sheet contradictions were detected.",
+  "coverage_scene_ids": [
+    "busan_safehouse_morning",
+    "seongdong_mercury_meeting",
+    "busan_docks_minjae_confrontation",
+    "apartment_protocol_aftershock"
+  ]
+}

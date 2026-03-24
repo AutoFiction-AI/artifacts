@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_18",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_18_craft_001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_18",
+      "evidence": "snapshots/cycle_02/chapters/chapter_18.md:137 (\"curse under his breath only once\"); snapshots/cycle_02/chapters/chapter_18.md:435; snapshots/cycle_02/chapters/chapter_18.md:445 (\"That's on me with the documents and on all of us with everything else.\")",
+      "problem": "The chapter's hardest accountability beat flinches into euphemism. Delroy's stress is summarized instead of rendered at line 137, and when he finally addresses Tiana's lost Gainesville path he reduces the concrete betrayal to 'documents' and 'everything else.' Because this is the decisive family-reckoning scene, the abstraction reads as sanitization drift rather than earned restraint.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_18.md:435-446 so Delroy or Tiana names the actual harm in plain language: the renewal money, the lie, the broken paperwork promise, or the specific way Gainesville was lost. Keep the exchange in-scene long enough for the naming to change leverage in the room. If snapshots/cycle_02/chapters/chapter_18.md:137 stays, replace the generic 'curse under his breath' summary with either the exact verbal edge Tiana hears or a more concrete bodily reaction.",
+      "acceptance_test": "PASS if the revised exchange at snapshots/cycle_02/chapters/chapter_18.md:435-446 explicitly states the concrete betrayal in character language and the next response visibly shifts the room's leverage; FAIL if the scene still relies on placeholders such as 'documents,' 'everything else,' or another generalized summary of the harm. PASS at snapshots/cycle_02/chapters/chapter_18.md:137 only if the stress response is rendered specifically enough that a reader can hear or feel what Tiana registers."
+    },
+    {
+      "finding_id": "chapter_18_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_18",
+      "evidence": "snapshots/cycle_02/chapters/chapter_18.md:47 (\"not with ... but with\"); snapshots/cycle_02/chapters/chapter_18.md:175 (\"not because ... but because\"); snapshots/cycle_02/chapters/chapter_18.md:223 (\"not as ... not even as ... but as\"); snapshots/cycle_02/chapters/chapter_18.md:291 (\"not because ... but because\"); snapshots/cycle_02/chapters/chapter_18.md:347 (\"not because ...\"); snapshots/cycle_02/chapters/chapter_18.md:379 (\"not with ... but with\")",
+      "problem": "The chapter reuses the same contrastive self-correction sentence shape often enough to become a tic. The repeated 'not X, but Y' / 'not because X, but because Y' construction keeps telling the reader how to revise a sentence instead of letting image, action, or syntax carry the turn, which flattens otherwise strong prose.",
+      "rewrite_direction": "Rework at least four of the repeated contrastive sentences in snapshots/cycle_02/chapters/chapter_18.md:47, snapshots/cycle_02/chapters/chapter_18.md:175, snapshots/cycle_02/chapters/chapter_18.md:223, snapshots/cycle_02/chapters/chapter_18.md:291, snapshots/cycle_02/chapters/chapter_18.md:347, and snapshots/cycle_02/chapters/chapter_18.md:379. Preserve the factual contrast, but express it through direct image, reordered syntax, or action beats instead of another correction frame.",
+      "acceptance_test": "PASS if no more than two of the six cited spans still use an explicit contrastive-correction frame after revision and the replacements remain readable as the same factual beat on a normal reading pass; FAIL if three or more of those cited spans still rely on 'not X, but Y' / 'not because X, but because Y' phrasing."
+    }
+  ],
+  "summary": "The chapter lands its required state changes and keeps the local-college choice constrained rather than uplifting, and the dialogue voices mostly stay distinct and contraction-faithful to the style bible. It fails on craft because the Delroy/Tiana reckoning softens the book's central betrayal into abstraction at the moment it most needs named consequence, and it fails on prose because a repeated contrastive sentence formula turns into a noticeable chapter-level tic."
+}

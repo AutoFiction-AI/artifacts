@@ -1,0 +1,91 @@
+{
+  "acceptance_targets": [
+    "[ch02_f001] Pass if a reader moving from snapshots/cycle_01/chapters/chapter_02.md:119 into the provided `next_head_excerpt` encounters only one age for Devon; fail if chapter_02 still says he is twenty-three while the immediate next-chapter excerpt still says twenty-six.",
+    "[ch02_f002] Pass if, by reading snapshots/cycle_01/chapters/chapter_02.md:165-177, a cold reader can state exactly why Carmen does not file/report this anomaly, or can point to the specific limited note she chooses to enter instead; fail if she still simply does not call anyone and does not write it down without a more concrete reason than confusion.",
+    "[ch02_f003] Pass if snapshots/cycle_01/chapters/chapter_02.md:169-171 read as Carmen's immediate working thought without a generalized clinical definition of sundowning, and the passage still clearly shows why the explanation fails against the concrete evidence already on page; fail if the revision still explains sundowning in textbook terms for the reader."
+  ],
+  "chapter_id": "chapter_02",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if a reader moving from snapshots/cycle_01/chapters/chapter_02.md:119 into the provided `next_head_excerpt` encounters only one age for Devon; fail if chapter_02 still says he is twenty-three while the immediate next-chapter excerpt still says twenty-six.",
+      "chapter_id": "chapter_02",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_02.md:119",
+      "finding_id": "ch02_f001",
+      "problem": "The chapter fixes Devon Watts at twenty-three, but the provided boundary context's immediate `next_head_excerpt` for chapter 3 describes him as twenty-six. That creates an adjacent-chapter age contradiction on a named staff member and breaks continuity at the chapter boundary.",
+      "rewrite_direction": "Revise the age tag at snapshots/cycle_01/chapters/chapter_02.md:119 so it matches the fixed age used in the provided chapter-03 boundary excerpt, or remove the age from this line altogether if the book does not need it stated here. Do not leave chapter_02 introducing a conflicting numeral.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if, by reading snapshots/cycle_01/chapters/chapter_02.md:165-177, a cold reader can state exactly why Carmen does not file/report this anomaly, or can point to the specific limited note she chooses to enter instead; fail if she still simply does not call anyone and does not write it down without a more concrete reason than confusion.",
+      "chapter_id": "chapter_02",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_02.md:35; snapshots/cycle_01/chapters/chapter_02.md:41; snapshots/cycle_01/chapters/chapter_02.md:85; snapshots/cycle_01/chapters/chapter_02.md:173; snapshots/cycle_01/chapters/chapter_02.md:177",
+      "finding_id": "ch02_f002",
+      "problem": "The ending asks Carmen to abandon the exact procedural reflex the chapter has just established as her self-protective instinct. She documents the narcotics discrepancy immediately and charts Agnes's refusal as routine, then after seeing three residents out of bed in a coordinated late-night meeting she neither writes even a defensible neutral note nor gets a specific on-page reason why she cannot. As written, the non-documentation reads slightly plot-protective rather than character-necessary.",
+      "rewrite_direction": "Rework snapshots/cycle_01/chapters/chapter_02.md:165-177 so Carmen's refusal to document is locally earned. Options: show her recognizing that any note about the TV-room meeting will attach to the discrepancy already under her license; show her deciding a narrowed chart note would be factually indefensible because she cannot prove what she saw; or have her actually chart a minimal observable incident and then sit with why that still does not solve the problem. If needed, lightly echo her procedural habits from snapshots/cycle_01/chapters/chapter_02.md:35-43 and snapshots/cycle_01/chapters/chapter_02.md:85-87 so the break is clearly motivated, not omitted.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if snapshots/cycle_01/chapters/chapter_02.md:169-171 read as Carmen's immediate working thought without a generalized clinical definition of sundowning, and the passage still clearly shows why the explanation fails against the concrete evidence already on page; fail if the revision still explains sundowning in textbook terms for the reader.",
+      "chapter_id": "chapter_02",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_02.md:169",
+      "finding_id": "ch02_f003",
+      "problem": "The sundowning paragraph slides out of close Carmen POV into textbook exposition: 'a common feature of dementia and related cognitive disorders, characterized by increased confusion...' Carmen's style-bible profile says medical vocabulary is native to her and she does not translate nursing terms for an outside audience. At the moment the chapter should stay inside her pressured attempt to rationalize what she saw, the prose briefly sounds like a training manual explaining a concept the focalizer already knows.",
+      "rewrite_direction": "Rewrite snapshots/cycle_01/chapters/chapter_02.md:169-171 so the rationalization stays in Carmen's lived shorthand and floor-level examples rather than dictionary-style definition. Keep the beat that she reaches for sundowning and rejects it, but make the paragraph sound like a nurse grabbing for a bad explanation in real time, not narration pausing to brief the reader.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "52fc3c59df8e2c2c7d3a6b13b84893a44b3c87d26cb1ddebb20e6b82a7a1007f",
+  "must_fix_count": 3,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This is a dark comedy about elderly agency, institutional failure, and moral compromise in a setting most fiction treats as a punchline or a tragedy but never both. The risks the novel must take: render the comedy of octogenarians as pharmaceutical distributors without condescending to them or turning them into lovable rogues; make Carmen's escalating complicity fully legible without moralizing about it; show the bodily realities of aging \u2014 incontinence, tremor, cognitive decline, falls, the smell of a body that doesn't leave a building \u2014 with unsentimental specificity; render the economic desperation of both healthcare workers and uninsured buyers without turning either into social-issue abstractions; give the moral ambiguity of the ring genuine weight by refusing to resolve it into either 'they were wrong' or 'they were heroes.' The novel must trust readers to sit with complexity. When in doubt between too raw and too safe, choose raw. A nursing home that smells like potpourri is a nursing home written by someone who's never been in one.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism for bodily functions, aging, economic shame, institutional dysfunction, or the realities of nursing home care is a craft failure. The novel's comedy and humanity depend on rendering what polite fiction glosses over: what it smells like to clean someone who can't clean themselves, what it costs to count coins for a bus fare, what oxycodone sells for per milligram on the secondary market, what a concussion looks like on an 88-year-old skull, what it sounds like when someone with Parkinson's tries to hold a coffee cup steady, what Burt's dementia actually looks like up close. If the prose flinches from these specifics, the novel loses its authority.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the default for all dialogue. Uncontracted forms appear only for emphasis, character-specific formality (Agnes's low contraction level), Carmen under extreme stress reverting to formal speech, or deliberate register choices. In a contemporary New Jersey nursing home, stiff diction is the anomaly, not the norm.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate high-intensity scenes with reflective interiority. Vary scene count: single-scene chapters for maximum compression, three-scene chapters for range. Comic chapters (3, 9) should feel structurally different from quiet character studies (7, 8, 12, 15), which should feel different from crisis chapters (11, 16, 17). Follow a confrontation with a reflection, an escalation with a domestic scene, a comic set piece with an elegiac one. If two consecutive chapters share the same rhythm, one needs redesigning.",
+      "diction": "Grounded and specific. Drug names (oxycodone, alprazolam, hydroxychloroquine), nursing procedures (med pass, pill count, charting, fall assessment), body realities (incontinence, tremor, laceration, scalp bleed). No purple prose, no literary performance. The style should feel like someone who works with their hands is telling you the truth about what she saw.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person, varying by POV character. Carmen chapters are warm and sensory, anchored in the body and the immediate environment. Harry chapters are precise and calculating, with attention to numbers and angles. Agnes chapters are clinical and compressed. Lola chapters are winding and emotionally layered, with embedded memories. Earl chapters are spare and weighted, with silence doing as much work as language. Marcus chapters are kinetic, with physical movement and code-switching. Tammy chapters are flat and observational, her trained eye cataloguing what doesn't add up.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Varied by chapter and POV. Carmen chapters favor medium sentences with occasional long runs when she's anxious. Harry chapters are short and clipped. Comic set pieces (chapters 3 and 9) move between fast inventory and slow domestic beats. Quiet chapters (7, 12, 15) slow down and let space onto the page. No chapter should feel rhythmically identical to the one before it.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

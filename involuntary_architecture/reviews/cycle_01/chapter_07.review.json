@@ -1,0 +1,62 @@
+{
+  "chapter_id": "chapter_07",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH07_CONTINUITY_MONTH_DRIFT",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:25",
+      "problem": "The chapter explicitly says \"Early November had tipped into December,\" but the boundary pack's immediate continuation for chapter 8 is still a November day. Because this chapter ends the same night, the named month here creates a chapter-boundary timeline contradiction.",
+      "rewrite_direction": "Revise the month anchor at snapshots/cycle_01/chapters/chapter_07.md:25 so it stays consistent with the overnight handoff after snapshots/cycle_01/chapters/chapter_07.md:241. Either keep the chapter in late November/early winter without naming December, or add a clear time jump before the bedroom scene so the next chapter is not implicitly the next morning.",
+      "acceptance_test": "PASS if a reader can move from snapshots/cycle_01/chapters/chapter_07.md:25 through snapshots/cycle_01/chapters/chapter_07.md:241 and into the boundary excerpt for chapter 8 without the calendar moving backward from December to November. FAIL if the chapter still names December while the immediate continuation remains November."
+    },
+    {
+      "finding_id": "CH07_REFERENCE_KEY_HANDOUT",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:171; snapshots/cycle_01/chapters/chapter_07.md:175; snapshots/cycle_01/chapters/chapter_07.md:181; snapshots/cycle_01/chapters/chapter_07.md:183",
+      "problem": "The research breakthrough depends on Abraxas's key appearing exactly when they need it on a shelf that \"wasn't there yesterday.\" The text names the convenience and then declines to test or challenge it, so the chapter's biggest discovery reads as a house-delivered handout instead of a hard-won turn with cost or uncertainty.",
+      "rewrite_direction": "Rework the discovery beat across snapshots/cycle_01/chapters/chapter_07.md:171, snapshots/cycle_01/chapters/chapter_07.md:175, snapshots/cycle_01/chapters/chapter_07.md:181, and snapshots/cycle_01/chapters/chapter_07.md:183 so the key's appearance has on-page logic. Options: show a specific trigger or toll for the shelf surfacing, make Hermione and Draco verify or distrust the key before relying on it, or clarify why the house only reveals it now and why Draco had not already found it.",
+      "acceptance_test": "PASS if a cold reader can answer, from the revised snapshots/cycle_01/chapters/chapter_07.md:171-183 alone, why the key becomes available now, why Draco had not already been using it, and what uncertainty or cost remains in trusting it. FAIL if the scene still boils down to \"the house produced the missing answer when the plot needed it\" with no additional test, friction, or rationale."
+    },
+    {
+      "finding_id": "CH07_COMPOSED_DIALOGUE_REGISTER",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:53; snapshots/cycle_01/chapters/chapter_07.md:61; snapshots/cycle_01/chapters/chapter_07.md:101; snapshots/cycle_01/chapters/chapter_07.md:105; snapshots/cycle_01/chapters/chapter_07.md:129",
+      "problem": "Narcissa's major turns keep arriving as polished thesis-speeches and detachable maxims: history lecture, mechanism summary, and the final marriage line all sound fully distilled before anyone speaks them. That pushes the scene toward composed dialogue rather than live exchange under pressure, and Hermione too often functions as a prompt instead of applying enough pressure to roughen the speech.",
+      "rewrite_direction": "Keep Narcissa's formal low-contraction register, but break the explanatory blocks at snapshots/cycle_01/chapters/chapter_07.md:53-65, snapshots/cycle_01/chapters/chapter_07.md:101-105, and snapshots/cycle_01/chapters/chapter_07.md:123-129 into more response-shaped turns. Let Hermione's pressure alter at least one answer in real time, and make the last Lucius/marriage beat land as a scene-specific answer rather than a portable aphorism.",
+      "acceptance_test": "PASS if, in the revised snapshots/cycle_01/chapters/chapter_07.md:53-65 and snapshots/cycle_01/chapters/chapter_07.md:101-129, at least one long Narcissa explanation is interrupted, redirected, or narrowed by Hermione's follow-up, and the closing line about marriage no longer reads like a standalone maxim lifted out of context. FAIL if the same information still arrives mostly as uninterrupted polished mini-speeches."
+    },
+    {
+      "finding_id": "CH07_REVELATION_TRANSLATED_TWICE",
+      "source": "award",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:101; snapshots/cycle_01/chapters/chapter_07.md:105; snapshots/cycle_01/chapters/chapter_07.md:137; snapshots/cycle_01/chapters/chapter_07.md:143; snapshots/cycle_01/chapters/chapter_07.md:255; snapshots/cycle_01/chapters/chapter_07.md:271",
+      "problem": "The chapter's real revelation lands when Narcissa names the doubt: what Hermione feels in the Manor may not be separable from the Manor itself. Instead of cashing that into a new risk, choice, or relational consequence, the chapter rephrases the same insight in the cold-tea aftermath and then again in bed. That repetition lowers the force of the revelation and keeps the chapter below pass-level dramatic compression.",
+      "rewrite_direction": "Compress the interpretive restatement at snapshots/cycle_01/chapters/chapter_07.md:137-143 and/or snapshots/cycle_01/chapters/chapter_07.md:255-271, and spend the recovered space on a fresh consequence that changes what Hermione does next. Useful targets are snapshots/cycle_01/chapters/chapter_07.md:145, snapshots/cycle_01/chapters/chapter_07.md:227-235, or snapshots/cycle_01/chapters/chapter_07.md:259-271: a riskier question to Draco, a changed research protocol, a deliberate concealment with cost, or another concrete choice that alters chapter 8's starting pressure.",
+      "acceptance_test": "PASS if the revised snapshots/cycle_01/chapters/chapter_07.md:137-145 adds a fact, suspicion, or decision not already contained in snapshots/cycle_01/chapters/chapter_07.md:101-105, and the revised snapshots/cycle_01/chapters/chapter_07.md:255-271 ends on a changed behavior or next-step rather than another thematic paraphrase. FAIL if both later spans still mainly restate \"the house may be affecting this\" in cleaner language."
+    },
+    {
+      "finding_id": "CH07_CORRECTIVE_NEGATION_TIC",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:37; snapshots/cycle_01/chapters/chapter_07.md:75; snapshots/cycle_01/chapters/chapter_07.md:95; snapshots/cycle_01/chapters/chapter_07.md:113; snapshots/cycle_01/chapters/chapter_07.md:225; snapshots/cycle_01/chapters/chapter_07.md:251; snapshots/cycle_01/chapters/chapter_07.md:263",
+      "problem": "The prose keeps reaching for the same corrective scaffold: not X but Y, not X rather than Y, or perception-by-negation. Used this many times in one chapter, the move stops feeling precise and starts feeling automatic, so different emotional beats arrive through the same sentence engine.",
+      "rewrite_direction": "Vary the sentence architecture at snapshots/cycle_01/chapters/chapter_07.md:37, snapshots/cycle_01/chapters/chapter_07.md:75, snapshots/cycle_01/chapters/chapter_07.md:95, snapshots/cycle_01/chapters/chapter_07.md:113, snapshots/cycle_01/chapters/chapter_07.md:225, snapshots/cycle_01/chapters/chapter_07.md:251, and snapshots/cycle_01/chapters/chapter_07.md:263. Keep only the strongest one or two corrective-negation constructions and convert the rest into direct sensory description, action, or plain declarative thought.",
+      "acceptance_test": "PASS if, across the revised snapshots/cycle_01/chapters/chapter_07.md:37-113 and snapshots/cycle_01/chapters/chapter_07.md:225-263, no more than two instances of the same not-X-but-Y corrective scaffold remain and at least three currently negated descriptions have been recast as direct statements or images. FAIL if the chapter still repeatedly explains perception by first saying what it is not."
+    }
+  ],
+  "summary": "FAIL across all four lenses. The chapter hits the required spine beats and Narcissa's material has real force, but it is not yet pass-level: there is a HIGH month-level continuity contradiction at the chapter boundary, the research breakthrough arrives through a too-convenient house-delivered key, the Narcissa scene repeatedly tips into composed thesis dialogue, the central revelation gets translated more than once instead of becoming a fresh consequence, and the prose leans on a noticeable corrective-negation tic."
+}

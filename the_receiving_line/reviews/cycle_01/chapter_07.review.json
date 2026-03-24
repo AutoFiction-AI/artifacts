@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_07",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch07-craft-001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:145; snapshots/cycle_01/chapters/chapter_07.md:163; snapshots/cycle_01/chapters/chapter_07.md:167",
+      "problem": "Paloma's chart lie is procedurally impossible as written. The scene states Rufino's official arrival time is 11:38, then has Paloma write a ketorolac administration at 11:17 and present that as the cover story. In an audit-driven chapter built on timestamp scrutiny, this makes the falsification read sloppy rather than risky, because the chart now appears to record medication twenty-one minutes before the patient officially arrived.",
+      "rewrite_direction": "Revise the trauma-room chart beat at snapshots/cycle_01/chapters/chapter_07.md:141-167 so the forged timeline forms a plausible chain of custody. Either change the stated official arrival/observation time to pre-freeze, or show Paloma altering the intake/observation entries on-page before she writes the medication line, so her false record would survive first-pass compliance scrutiny instead of collapsing on internal contradiction.",
+      "acceptance_test": "In the revised passage at snapshots/cycle_01/chapters/chapter_07.md:141-167, a close reader can track a coherent timestamp sequence in which Rufino is documented as present or under observation before the ketorolac entry. Pass if the record no longer requires the shot at snapshots/cycle_01/chapters/chapter_07.md:163 to occur before the chart says Rufino arrived; fail if the scene still leaves that impossible ordering in place."
+    },
+    {
+      "finding_id": "ch07-prose-001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:133; snapshots/cycle_01/chapters/chapter_07.md:237; snapshots/cycle_01/chapters/chapter_07.md:315; snapshots/cycle_01/chapters/chapter_07.md:327",
+      "problem": "The chapter repeats the same negation-then-redefinition sentence construction often enough to become a tic: 'That was worse,' 'It was not formal demotion. It was worse,' 'That was not absolution,' 'It was not hatred... This was colder.' The first use sharpens perception; by the fourth, the chapter starts announcing distinctions through the same template instead of finding fresh sentence pressure.",
+      "rewrite_direction": "Rework the repeated formula in the local passages at snapshots/cycle_01/chapters/chapter_07.md:133-136, snapshots/cycle_01/chapters/chapter_07.md:237-238, snapshots/cycle_01/chapters/chapter_07.md:315, and snapshots/cycle_01/chapters/chapter_07.md:327-328. Keep the underlying distinctions, but express at least two of them through direct positive description, changed rhythm, or image-based perception rather than another 'not X / this was Y' pivot.",
+      "acceptance_test": "Review the revised passages at snapshots/cycle_01/chapters/chapter_07.md:133-136, snapshots/cycle_01/chapters/chapter_07.md:237-238, snapshots/cycle_01/chapters/chapter_07.md:315, and snapshots/cycle_01/chapters/chapter_07.md:327-328. Pass if no more than one of those beats still uses the chapter's negation-reclassification template and the others achieve the distinction through materially different sentence shapes; fail if the same template still governs most of those moments."
+    }
+  ],
+  "summary": "Chapter 07 lands its humiliation spine, preserves character voice, and keeps class coercion physically and economically legible, but it does not clear review. The trauma-room falsification hinges on an impossible timestamp sequence, which is a high-severity craft break in an audit chapter, and the prose leans too often on the same negation-to-redefinition sentence pattern, flattening emphasis in later beats."
+}

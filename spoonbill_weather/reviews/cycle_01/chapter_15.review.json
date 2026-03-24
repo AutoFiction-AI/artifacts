@@ -1,0 +1,48 @@
+{
+  "chapter_id": "chapter_15",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch15-craft-001",
+      "source": "craft",
+      "severity": "CRITICAL",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_01/chapters/chapter_15.md:61; snapshots/cycle_01/chapters/chapter_15.md:189; snapshots/cycle_01/chapters/chapter_15.md:499",
+      "problem": "The close-third narration directly names \"chapter thirteen,\" \"chapter fourteen,\" and \"chapter nine.\" That is process leakage: manuscript scaffolding appears inside scene consciousness, breaks immersion, and violates the constitution's no-process-leak rule.",
+      "rewrite_direction": "Replace the scaffold references at snapshots/cycle_01/chapters/chapter_15.md:61, snapshots/cycle_01/chapters/chapter_15.md:189, and snapshots/cycle_01/chapters/chapter_15.md:499 with diegetic memory cues. Name the earlier annex confrontation, paddleboard survey intimacy, or shared eel sighting by event, sensation, or consequence as Mina would actually remember them, not by chapter number.",
+      "acceptance_test": "Pass if the revised text at snapshots/cycle_01/chapters/chapter_15.md:61, snapshots/cycle_01/chapters/chapter_15.md:189, and snapshots/cycle_01/chapters/chapter_15.md:499 contains no chapter-number language and each beat reads as lived memory inside Mina's world without any meta awareness of the manuscript."
+    },
+    {
+      "finding_id": "ch15-prose-001",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_01/chapters/chapter_15.md:147; snapshots/cycle_01/chapters/chapter_15.md:163; snapshots/cycle_01/chapters/chapter_15.md:267; snapshots/cycle_01/chapters/chapter_15.md:305; snapshots/cycle_01/chapters/chapter_15.md:343; snapshots/cycle_01/chapters/chapter_15.md:389; snapshots/cycle_01/chapters/chapter_15.md:485; snapshots/cycle_01/chapters/chapter_15.md:507; snapshots/cycle_01/chapters/chapter_15.md:519",
+      "problem": "The chapter overuses the same corrective-emphasis sentence shapes: \"Not X. Y.\", \"That was X.\", and \"There it was.\" The first few hits sharpen pressure, but by the dock argument, casualty sequence, and eel coda the repetition reads as an autopilot cadence and flattens distinct beats into one reusable authorial rhythm.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_15.md:147, snapshots/cycle_01/chapters/chapter_15.md:163, snapshots/cycle_01/chapters/chapter_15.md:267, snapshots/cycle_01/chapters/chapter_15.md:305, snapshots/cycle_01/chapters/chapter_15.md:343, snapshots/cycle_01/chapters/chapter_15.md:389, snapshots/cycle_01/chapters/chapter_15.md:485, snapshots/cycle_01/chapters/chapter_15.md:507, and snapshots/cycle_01/chapters/chapter_15.md:519, keep only the one or two strongest corrective fragments. Rebuild the other beats with fresh image, bodily sensation, or action so each scene lands through its own texture rather than the same negative-correction template.",
+      "acceptance_test": "Pass if the revised beats anchored at snapshots/cycle_01/chapters/chapter_15.md:147, snapshots/cycle_01/chapters/chapter_15.md:163, snapshots/cycle_01/chapters/chapter_15.md:267, snapshots/cycle_01/chapters/chapter_15.md:305, snapshots/cycle_01/chapters/chapter_15.md:343, snapshots/cycle_01/chapters/chapter_15.md:389, snapshots/cycle_01/chapters/chapter_15.md:485, snapshots/cycle_01/chapters/chapter_15.md:507, and snapshots/cycle_01/chapters/chapter_15.md:519 no longer stack the same corrective formula throughout the chapter: no single scene should rely on that template more than twice, and at least three of the currently flagged beats should instead land through concrete detail unique to that moment."
+    },
+    {
+      "finding_id": "ch15-prose-002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_01/chapters/chapter_15.md:493; snapshots/cycle_01/chapters/chapter_15.md:495; snapshots/cycle_01/chapters/chapter_15.md:519",
+      "problem": "At the final eel return, the narration explains the symbol too aggressively instead of trusting the contaminated image. Phrases like \"survival with a patent history\" and \"the annex logbook given muscle\" turn a potent uncanny reveal into thematic paraphrase and narrow the reader's own inference space.",
+      "rewrite_direction": "Thin the interpretive chain at snapshots/cycle_01/chapters/chapter_15.md:493, snapshots/cycle_01/chapters/chapter_15.md:495, and snapshots/cycle_01/chapters/chapter_15.md:519. Keep the poisoned sheen, dead juveniles, county badge, and eel movement on the water, but reduce the stacked abstract equivalences and let Mina register the revelation through one sharp bodily response or changed action.",
+      "acceptance_test": "Pass if the revised ending at snapshots/cycle_01/chapters/chapter_15.md:493, snapshots/cycle_01/chapters/chapter_15.md:495, and snapshots/cycle_01/chapters/chapter_15.md:519 still links the eel to contamination through observable scene detail and Mina's immediate embodied reaction, without a run of three or more abstract thesis sentences translating the image for the reader."
+    }
+  ],
+  "summary": "Booker and dialogue pass: the chapter cleanly executes its disaster spine, keeps cause and effect legible, and major speakers largely stay inside their style-bible registers and contraction habits. Craft and prose fail on a CRITICAL process-leak breach, a chapter-wide corrective-fragment tic, and an over-explained final eel image. No MEDIUM+ continuity contradiction, tense drift, sanitization drift, intimacy fade-to-black, or interiority-lapse finding surfaced in this pass.",
+  "coverage_scene_ids": [
+    "county_authorization",
+    "dock_argument",
+    "spray_casualty_response",
+    "midnight_eel_aftermath"
+  ]
+}

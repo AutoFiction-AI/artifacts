@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_05",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch05-craft-001",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "The chapter goes semi-reportorial at the exact cost point of June's public humiliation: `snapshots/cycle_02/chapters/chapter_05.md:329`, `snapshots/cycle_02/chapters/chapter_05.md:331`, `snapshots/cycle_02/chapters/chapter_05.md:343`.",
+      "problem": "Once June returns to the podium, the prose starts summarizing the resumed seminar instead of staying fully inside it. Because this is the scene where she has to keep speaking after Mohit's ambush and Leela's public non-defense, the compression reads as timidity: the chapter states the humiliation clearly, but it does not linger in enough live beats of June's damaged authority for the cost to land at full force.",
+      "rewrite_direction": "Rework `snapshots/cycle_02/chapters/chapter_05.md:329` through `snapshots/cycle_02/chapters/chapter_05.md:343` so the final movement stays in scene rather than mostly in summary. Keep the existing endpoint at `snapshots/cycle_02/chapters/chapter_05.md:343`, but add more moment-to-moment action between June's resumed explanation and that final image: one bodily strain beat from June, one socially legible reaction from the room, and one fresh Leela interior beat that registers what her sentence has cost.",
+      "acceptance_test": "PASS if the revised passage between `snapshots/cycle_02/chapters/chapter_05.md:329` and `snapshots/cycle_02/chapters/chapter_05.md:343` contains at least three sequential dramatized beats after June resumes speaking: a specific line of technical explanation delivered under strain, a visible audience response that changes the room, and a new Leela interior reaction. FAIL if the passage still jumps from appendix setup to end-state mostly through summary sentences."
+    },
+    {
+      "finding_id": "ch05-prose-001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "The same violence metaphor recurs three times in one chapter: `snapshots/cycle_02/chapters/chapter_05.md:21`, `snapshots/cycle_02/chapters/chapter_05.md:127`, `snapshots/cycle_02/chapters/chapter_05.md:209`.",
+      "problem": "The chapter keeps returning to knife/blade imagery to describe methodological critique and public humiliation. By the third use, the image stops sharpening the scene and starts reading like autopilot. Under the constitution's anti-tic rule, this is a prose flattening problem, not a harmless echo.",
+      "rewrite_direction": "Revise the cited beats at `snapshots/cycle_02/chapters/chapter_05.md:21`, `snapshots/cycle_02/chapters/chapter_05.md:127`, and `snapshots/cycle_02/chapters/chapter_05.md:209` so the seminar's violence is rendered through different local textures. Keep at most one knife/blade metaphor in the chapter; rewrite the other occurrences into room-specific pressure such as administrative theater, audience silence, or bodily recoil.",
+      "acceptance_test": "PASS if only one of the cited lines still uses knife/blade imagery after revision and the remaining beats convey danger through distinct language tied to the seminar setting. FAIL if two or more knife/blade references remain in those spans or if the replacements collapse into a new repeated metaphor template."
+    }
+  ],
+  "summary": "Booker and dialogue both clear the bar: the seminar ambush is causally sharp, the chapter hits its required state change, the narrative tense stays consistent with the style bible, and the principal voices remain distinct and on-register, especially June's shift from barbed performance to flattened logistics, Omar's pressured precision, and Mohit's soft procedural menace. Craft and prose still fail on two unresolved issues: the chapter retreats into partial summary just when June's humiliation should be most fully dramatized, and the repeated knife/blade metaphor cluster becomes a visible prose tic."
+}

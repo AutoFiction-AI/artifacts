@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_12",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch12-craft-001",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_02/chapters/chapter_12.md:117; snapshots/cycle_02/chapters/chapter_12.md:137",
+      "problem": "Once Tammy's confession and Lola's \"You're a good person, mija\" have already landed the emotional turn, the narration keeps translating the same guilt beat into abstract thesis language. The scene stops escalating and starts explaining that Lola is still herself and that confession would ruin everything, which blunts the pressure the dialogue has already made legible.",
+      "rewrite_direction": "Compress or repurpose the explanatory material at snapshots/cycle_02/chapters/chapter_12.md:117, snapshots/cycle_02/chapters/chapter_12.md:119, snapshots/cycle_02/chapters/chapter_12.md:137, and snapshots/cycle_02/chapters/chapter_12.md:139. Keep Tammy's loneliness, Lola's withheld honesty, and the final Woodbridge loss, but make the space earn itself through visible risk: Tammy's reaction, Lola's bodily effort not to confess, or another immediate consequence instead of abstract paraphrase of the theme.",
+      "acceptance_test": "Between snapshots/cycle_02/chapters/chapter_12.md:115 and snapshots/cycle_02/chapters/chapter_12.md:149, the revised passage contains no more than one abstract sentence naming Lola's fraud/performance dilemma; every other paragraph in that stretch must either change Tammy's read of Lola, force Lola into a new choice, or sharpen the final memory test that ends with Woodbridge disappearing."
+    },
+    {
+      "finding_id": "ch12-dialogue-001",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_02/chapters/chapter_12.md:69; snapshots/cycle_02/chapters/chapter_12.md:89; snapshots/cycle_02/chapters/chapter_12.md:157",
+      "problem": "Lola's performance dialogue leaks calibration-only style-bible material onto the page. The exact \"Mm.\" reply appears twice, and the closing \"What day is it?\" beat closely echoes the example-line pattern the style bible explicitly marks as do-not-copy. Because one of those echoes sits in the chapter's closing turn, the voice reads templated instead of freshly lived.",
+      "rewrite_direction": "Replace Lola's lines at snapshots/cycle_02/chapters/chapter_12.md:69, snapshots/cycle_02/chapters/chapter_12.md:89, and snapshots/cycle_02/chapters/chapter_12.md:157 with fresh evasions that still fit her high-contraction, warm, indirect performance register. Do not reuse any wording from the `example_lines` in outline/style_bible.json; invent new cover behavior specific to Tammy's divorce scene and the nurse's-station re-entry.",
+      "acceptance_test": "After revision, Lola's lines at snapshots/cycle_02/chapters/chapter_12.md:69, snapshots/cycle_02/chapters/chapter_12.md:89, and snapshots/cycle_02/chapters/chapter_12.md:157 do not verbatim or near-verbatim match any `example_lines` text in outline/style_bible.json. At least one of those revised lines must use a fresh story-fragment or redirect question rather than `Mm.` or `What day is it?`, while Tammy can still plausibly accept the performance."
+    },
+    {
+      "finding_id": "ch12-prose-001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_02/chapters/chapter_12.md:15; snapshots/cycle_02/chapters/chapter_12.md:19; snapshots/cycle_02/chapters/chapter_12.md:53; snapshots/cycle_02/chapters/chapter_12.md:85; snapshots/cycle_02/chapters/chapter_12.md:109; snapshots/cycle_02/chapters/chapter_12.md:149",
+      "problem": "The chapter leans on the same `the way ...` comparison scaffold often enough to become audible as a prose tic. In a quiet interior chapter, that repeated sentence shape starts to flatten the rhythm and makes several otherwise strong observations feel generated from one template instead of discovered in the moment.",
+      "rewrite_direction": "Recast the comparison syntax at snapshots/cycle_02/chapters/chapter_12.md:15, snapshots/cycle_02/chapters/chapter_12.md:19, snapshots/cycle_02/chapters/chapter_12.md:53, snapshots/cycle_02/chapters/chapter_12.md:85, snapshots/cycle_02/chapters/chapter_12.md:109, and snapshots/cycle_02/chapters/chapter_12.md:149. Preserve the specific images and Lola's associative thought pattern, but vary the grammatical route into them so the chapter is not repeatedly turning on the same scaffold.",
+      "acceptance_test": "In the revised passages around snapshots/cycle_02/chapters/chapter_12.md:15, snapshots/cycle_02/chapters/chapter_12.md:19, snapshots/cycle_02/chapters/chapter_12.md:53, snapshots/cycle_02/chapters/chapter_12.md:85, snapshots/cycle_02/chapters/chapter_12.md:109, and snapshots/cycle_02/chapters/chapter_12.md:149, no more than two emotionally loaded sentences retain the exact `the way ...` scaffold, and every revised comparison remains concrete, character-specific, and legible on first read."
+    }
+  ],
+  "summary": "Fail. The chapter has strong raw material, especially in the Tomás death passage and the final Woodbridge loss, but it still sits below pass level because it over-explains Lola's guilt after the scene has already landed, leaks calibration-only style-bible dialogue onto the page, and repeats one comparison scaffold often enough to register as a prose tic."
+}

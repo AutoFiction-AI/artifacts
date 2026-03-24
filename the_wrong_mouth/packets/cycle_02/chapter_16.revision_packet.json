@@ -1,0 +1,125 @@
+{
+  "acceptance_targets": [
+    "[CRAFT_CONTINUITY_BOWL_PRICE] In the revised versions of snapshots/cycle_02/chapters/chapter_16.md:127 and snapshots/cycle_02/chapters/chapter_16.md:179, the bowl is consistently remembered as a four-copper purchase, and no surrounding sentence in those spans implies a three-copper origin price.",
+    "[PROSE_VOICE_LABEL_REPETITION] Reading the revised passages at snapshots/cycle_02/chapters/chapter_16.md:13, snapshots/cycle_02/chapters/chapter_16.md:41, snapshots/cycle_02/chapters/chapter_16.md:67, snapshots/cycle_02/chapters/chapter_16.md:109, snapshots/cycle_02/chapters/chapter_16.md:153, and snapshots/cycle_02/chapters/chapter_16.md:211, a cold reader can still distinguish Vess from Aldric without repeated narrator labels of 'flat/professional/formal/clipped,' and no more than one of those calibration adjectives remains as a voice tag across those six spans.",
+    "[R-09] Chapter 16 does not contain the phrase 'order that no longer existed' or any close synonym.",
+    "[C-06] The bowl's purchase price in Ch16 matches Ch1's 'four coppers.' Any surrounding arithmetic is internally consistent.",
+    "[length_chapter_16_min_words] Chapter word count is >= 4000 while preserving heading contract."
+  ],
+  "chapter_id": "chapter_16",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "In the revised versions of snapshots/cycle_02/chapters/chapter_16.md:127 and snapshots/cycle_02/chapters/chapter_16.md:179, the bowl is consistently remembered as a four-copper purchase, and no surrounding sentence in those spans implies a three-copper origin price.",
+      "chapter_id": "chapter_16",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_16.md:127; snapshots/cycle_02/chapters/chapter_16.md:179",
+      "finding_id": "CRAFT_CONTINUITY_BOWL_PRICE",
+      "problem": "The bowl's origin price contradicts canon continuity. The continuity sheet fixes Maren's ceramic bowl as a four-copper purchase, but the chapter twice calls it a three-copper bowl. Because the bowl is a tracked object payoff in this chapter, the mismatch reads as a hard object-state error, not harmless color.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_16.md:127 and snapshots/cycle_02/chapters/chapter_16.md:179, correct the bowl's purchase-price memory to match canon and adjust the comparison sentence around the 'nicer one' so the arithmetic and Maren's seventeen-year-old logic still read cleanly. Keep the emotional function of the bowl recollection, but remove every statement that implies the cheaper bowl cost three coppers.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Reading the revised passages at snapshots/cycle_02/chapters/chapter_16.md:13, snapshots/cycle_02/chapters/chapter_16.md:41, snapshots/cycle_02/chapters/chapter_16.md:67, snapshots/cycle_02/chapters/chapter_16.md:109, snapshots/cycle_02/chapters/chapter_16.md:153, and snapshots/cycle_02/chapters/chapter_16.md:211, a cold reader can still distinguish Vess from Aldric without repeated narrator labels of 'flat/professional/formal/clipped,' and no more than one of those calibration adjectives remains as a voice tag across those six spans.",
+      "chapter_id": "chapter_16",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_16.md:13; snapshots/cycle_02/chapters/chapter_16.md:41; snapshots/cycle_02/chapters/chapter_16.md:67; snapshots/cycle_02/chapters/chapter_16.md:109; snapshots/cycle_02/chapters/chapter_16.md:153; snapshots/cycle_02/chapters/chapter_16.md:211",
+      "finding_id": "PROSE_VOICE_LABEL_REPETITION",
+      "problem": "The narration keeps re-labeling Vess and Aldric with calibration adjectives already embedded in the style bible ('flat,' 'economical,' 'professional,' 'formal,' 'clipped') instead of letting syntax, interruption pattern, and line shape carry the distinction. Repeating those labels across the chapter starts to feel like token-list reuse and flattens otherwise strong voice work.",
+      "rewrite_direction": "Revise the voice-introduction and reminder beats at snapshots/cycle_02/chapters/chapter_16.md:13, snapshots/cycle_02/chapters/chapter_16.md:41, snapshots/cycle_02/chapters/chapter_16.md:67, snapshots/cycle_02/chapters/chapter_16.md:109, snapshots/cycle_02/chapters/chapter_16.md:153, and snapshots/cycle_02/chapters/chapter_16.md:211 so that most of the differentiation comes from what each voice does in-scene: Vess speaking once, finishing cleanly, entering after silence; Aldric retreating into report language, then breaking sentence-completion when afraid. Cut redundant adjective tags where the dialogue already proves the register.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Chapter 16 does not contain the phrase 'order that no longer existed' or any close synonym.",
+      "chapter_id": "chapter_16",
+      "cycle": 2,
+      "evidence": "Ch16 line 4308: 'A report delivered to an order that no longer existed.' Also at Ch2 line 552 (first use), Ch4 line 848, Ch9 line 2461, Ch14 line 3546, Ch17 line 4483. Total: 6 uses of the exact formula across 6 chapters.",
+      "finding_id": "R-09",
+      "problem": "Aldric's 'reports filed to an order that no longer existed' is a fixed formula used 6 times verbatim. The Ch17 use (line 4483) functions as deliberate dissolution of the motif; the Ch16 use at line 4308 is a plain restatement that dulls the Ch17 payoff.",
+      "rewrite_direction": "At line 4308, cut the 'to an order that no longer existed' formula. Convey Aldric's formality with fresh language. Reserve the formula's final appearance for Ch17 line 4483 where it is deliberately broken.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "The bowl's purchase price in Ch16 matches Ch1's 'four coppers.' Any surrounding arithmetic is internally consistent.",
+      "chapter_id": "chapter_16",
+      "cycle": 2,
+      "evidence": "Ch1 line 9: 'purchased from a market stall in Fenhold for four coppers when Maren was seventeen.' Ch16 line 4222: 'Three coppers. The woman had tried to sell him a nicer one for five, and he'd said no, because he was seventeen and two coppers was dinner.' Continuity sheet: 'bought at seventeen for four coppers.'",
+      "finding_id": "C-06",
+      "problem": "The bowl's purchase price is stated as four coppers in Ch1 (line 9) and the continuity sheet, but three coppers in Ch16 (line 4222). The Ch16 version includes arithmetic (3 + 2 = 5) that supports the three-copper figure internally, but contradicts the established canonical price.",
+      "rewrite_direction": "At line 4222, change 'Three coppers' to 'Four coppers' and adjust the arithmetic: 'Four coppers. The woman had tried to sell him a nicer one for six, and he'd said no, because he was seventeen and two coppers was dinner.' Or match to Ch1's canonical four-copper price with appropriate arithmetic.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Chapter word count is >= 4000 while preserving heading contract.",
+      "chapter_id": "chapter_16",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_16.md:1",
+      "finding_id": "length_chapter_16_min_words",
+      "problem": "Chapter is below projected_min_words (3791 < 4000).",
+      "rewrite_direction": "Add causally necessary scene material that strengthens the chapter engine, increases pressure, and lands the planned state shift without filler.",
+      "severity": "HIGH",
+      "source": "length_guardrail",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "9871c6b4117aec9644482561c47a40fd1d352f4c0549df55a5e7a3038b7a25e1",
+  "must_fix_count": 5,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This novel must commit fully to its own weirdness. A System-blind con man with a dead paladin and a dead assassin arguing in his skull is inherently absurd, and the novel should let that absurdity live alongside genuine grief, genuine violence, and genuine mystery without apologizing for the tonal range. The darkest moments and the funniest moments may occupy the same scene. When they do, let both registers operate simultaneously \u2014 do not sacrifice comedy for gravitas or gravitas for comedy. Risk means specificity: the specific sensation of a body doing things you did not tell it to do, the specific comedy of a dead paladin critiquing your hygiene while you're running for your life, the specific horror of carrying incomplete people whose memories have holes, the specific shame of learning that your eleven years of fraud may have killed people. When in doubt between too raw and too safe, choose raw. The novel's emotional range should be wider than any single genre label would suggest.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism in the narration of violence, bodily experience, moral compromise, or physical consequence is a draft-level failure. Maren is a con man who has seen hard things and done dirty work in poor villages for eleven years \u2014 his narration should not flinch where he would not flinch. The style bible's sensory bias toward tactile and proprioceptive detail means physical consequence must be rendered through the body: what it feels like to throw up, to kill someone, to have your muscles operate without your consent, to perform a ritual that requires you to open yourself to contamination. Summary and abstraction at the moment of consequence is always worse than presence.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for all characters except Aldric, whose low contraction level is a deliberate character marker that should erode over the course of the novel. Uncontracted forms in other characters' speech are reserved for emphasis, deliberation, or ceremony. In a world of practical people doing unglamorous work, stiff diction is the exception.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate between hot and quiet chapters as a structural principle. No two consecutive chapters should open the same way \u2014 if one opens with action, the next should open with interiority or setting; if one opens with dialogue, the next should open with physical sensation or observation. Vary scene count between chapters: compressed single-scene chapters after multi-scene ones. Let quiet chapters stay quiet \u2014 do not insert action beats or revelations to maintain pace. The pacing engine is Maren's voice and the interplay between the three internal consciousnesses, not external plot pressure.",
+      "diction": "Colloquial with earned elevation. Default register is smart but not literary \u2014 a con man's English, precise about people and vague about feelings. Elevation reserved for moments of genuine awe, grief, or the rare glimpse of something beautiful. Fantasy-register portentousness is a draft-level failure \u2014 no 'ancient darkness' or 'powers beyond comprehension.' The world is weird and dangerous and ordinary all at once, and the prose should match.",
+      "forbidden_drift_patterns": [
+        "Sentence fragments imitating action-movie or thriller prose \u2014 subject-dropping and article-stripping for false urgency",
+        "Semicolon-heavy scholarly narration that distances the reader from embodied experience",
+        "Present-tense micro-shifts for intensity \u2014 the novel is past tense throughout, no exceptions",
+        "Filtering words ('he saw,' 'he felt,' 'he noticed,' 'he realized') when direct rendering is available",
+        "Fantasy-voice portentousness: 'ancient,' 'dark power,' 'something stirred,' 'a presence beyond reckoning'",
+        "Comic narration that winks at the reader or breaks the fourth wall instead of committing to the situation",
+        "Repeated metaphor templates \u2014 if a comparison structure appears twice in a chapter, the second instance is a tic",
+        "Emotional summary replacing scene presence: 'He was overwhelmed by grief' instead of rendering what grief looks and feels like in the body"
+      ],
+      "narrative_distance": "Close third person, locked to Maren throughout. Aldric and Vess are experienced as internal voices \u2014 they speak as italicized dialogue within Maren's consciousness, clearly distinguished from his own thoughts. Maren cannot access their thoughts directly; he hears what they say to him, not what they think. The narration inherits Maren's sensory limitations: the System interface is always mediated through Aldric or Vess's descriptions, never rendered directly until the single exception in Chapter 17.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Varied by emotional register. Default: medium-length sentences with periodic short declaratives for grounding. When Maren is performing (lying, charming, faking): smoother, more controlled rhythm with longer subordinate-clause chains. When Maren is honest or overwhelmed: choppier, more fragmented, more concrete. Fight scenes: visceral and slightly disoriented, reflecting Maren's System-blindness \u2014 sensation and proprioception without the visual data everyone else has. Quiet scenes: allow longer, more observational sentences. The rhythm should breathe differently in every chapter.",
+      "sensory_bias": [
+        "tactile \u2014 Maren's primary sense channel; the physical world is how he navigates System-blindness",
+        "auditory \u2014 the hum of System activity, Aldric and Vess's voices, the specific sounds of quest-light and contamination",
+        "proprioceptive \u2014 Maren's body doing things he didn't choose; the internal sensation of carrying fragments; the physical cost of consumption",
+        "olfactory \u2014 contamination has smell; ritual has smell; the world stinks in specific ways that the System-sighted don't notice because they navigate by interface"
+      ]
+    }
+  }
+}

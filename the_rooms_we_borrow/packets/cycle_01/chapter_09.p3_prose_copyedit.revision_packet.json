@@ -1,0 +1,82 @@
+{
+  "acceptance_targets": [
+    "[chapter_09_prose_001] In revised versions of snapshots/cycle_01/chapters/chapter_09.md:206 through snapshots/cycle_01/chapters/chapter_09.md:210 and snapshots/cycle_01/chapters/chapter_09.md:328 through snapshots/cycle_01/chapters/chapter_09.md:329, the shift in pressure is communicated through at least one observable action or sensation in each span, and the passage no longer relies on an abstract atmosphere label such as 'changed the air' or a global silence summary.",
+    "[chapter_09_prose_002] After revision of snapshots/cycle_01/chapters/chapter_09.md:43, snapshots/cycle_01/chapters/chapter_09.md:125, snapshots/cycle_01/chapters/chapter_09.md:210, snapshots/cycle_01/chapters/chapter_09.md:328, and snapshots/cycle_01/chapters/chapter_09.md:418, no more than one of those passages uses a corrective-negation construction. The remaining passages must express the same emotional turn through direct phrasing or concrete image rather than a 'not X, but Y' setup."
+  ],
+  "chapter_id": "chapter_09",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "In revised versions of snapshots/cycle_01/chapters/chapter_09.md:206 through snapshots/cycle_01/chapters/chapter_09.md:210 and snapshots/cycle_01/chapters/chapter_09.md:328 through snapshots/cycle_01/chapters/chapter_09.md:329, the shift in pressure is communicated through at least one observable action or sensation in each span, and the passage no longer relies on an abstract atmosphere label such as 'changed the air' or a global silence summary.",
+      "chapter_id": "chapter_09",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:208",
+      "finding_id": "chapter_09_prose_001",
+      "problem": "At two major turns, the prose drops from the chapter's strong tactile specificity into generic cinematic shorthand. 'The name changed the air' and the later summary of the drive home as a shared silence name the atmosphere instead of rendering it through bodies, objects, or sound. That violates the style bible's ban on generic cinematic phrasing and feels thin beside the chapter's better material detail.",
+      "rewrite_direction": "Replace the abstract turn-markers in snapshots/cycle_01/chapters/chapter_09.md:206 through snapshots/cycle_01/chapters/chapter_09.md:210 and snapshots/cycle_01/chapters/chapter_09.md:328 through snapshots/cycle_01/chapters/chapter_09.md:329 with concrete behavioral and sensory changes: who stops moving, what gets gripped, how the car sounds, what the children do with their faces and hands once Celia's death enters the day.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "After revision of snapshots/cycle_01/chapters/chapter_09.md:43, snapshots/cycle_01/chapters/chapter_09.md:125, snapshots/cycle_01/chapters/chapter_09.md:210, snapshots/cycle_01/chapters/chapter_09.md:328, and snapshots/cycle_01/chapters/chapter_09.md:418, no more than one of those passages uses a corrective-negation construction. The remaining passages must express the same emotional turn through direct phrasing or concrete image rather than a 'not X, but Y' setup.",
+      "chapter_id": "chapter_09",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:43",
+      "finding_id": "chapter_09_prose_002",
+      "problem": "The chapter overuses corrective-negation scaffolding: 'not because ... but because,' 'not happiness exactly, not yet,' 'not one silence but four separate ones.' Used this often in one chapter, the move stops reading as precision and starts reading as a house rhythm. It makes the narrator sound like he is repeatedly backing into meaning instead of landing it cleanly.",
+      "rewrite_direction": "Vary the syntax at snapshots/cycle_01/chapters/chapter_09.md:43, snapshots/cycle_01/chapters/chapter_09.md:125, snapshots/cycle_01/chapters/chapter_09.md:210, snapshots/cycle_01/chapters/chapter_09.md:328, and snapshots/cycle_01/chapters/chapter_09.md:418. Keep at most one corrective-negation sentence among those targeted spots; recast the others as direct statement, image, or action that does not first tell the reader what the moment is not.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "ccbea1804dc877c310d47938f26710a9934122b034c4b45ca1ff58c6ca908805",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on prose and copyedit finish: diction precision, rhythm control, sentence-level clarity, grammar, line-level polish without flattening style, and explicit aesthetic-risk audit (sanitization is the primary risk \u2014 do not soften or euphemize; push toward creative risk and specificity).",
+    "key": "p3_prose_copyedit",
+    "label": "prose/copyedit fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into embarrassment, erotic consequence, moral compromise, and the ugly arithmetic of poverty. When a scene turns on prejudice, bureaucracy, violence, or family betrayal, stay with the room long enough for the reader to feel what each choice costs. Resolve edge cases by choosing the more specific and less flattering truth unless it breaks established character logic.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If sex, racism, injury, debt, hunger, or shame is rendered abstractly, rewrite until the bodily detail, social pressure, and changed leverage are visible on the page.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high \u2014 contractions are the spoken norm across the novel; uncontracted forms should appear only for emphasis, ceremony, legal language, or character-specific pressure.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Vary scene count, dialogue density, and chapter motor across the book: pair public humiliation with private aftermath, follow argument chapters with information-turn or weather chapters, preserve at least three genuinely quiet domestic or communal stretches, and never let more than three chapters in a row hinge on debate followed by decisive action.",
+      "diction": "Contemporary and concrete, with Caribbean-American texture carried naturally in syntax and reference rather than in italicized glossary behavior; lyrical when earned, blunt when the room turns brutal.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third person that rotates by chapter; intimate enough for bodily shame and private contradiction, but alert to class performance, racial reading, and room dynamics.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Alternate lean pressure sentences with occasional longer image-bearing sentences; lyric lift should arrive at emotional turns, never as constant prestige haze.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

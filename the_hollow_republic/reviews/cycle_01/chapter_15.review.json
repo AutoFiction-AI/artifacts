@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_15",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_15_f01",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_15",
+      "evidence": "Lucien orders Elise to sleep in 'the outer gallery by the wine stairs' at snapshots/cycle_01/chapters/chapter_15.md:411, Clemence takes her to that outer-gallery pallet at snapshots/cycle_01/chapters/chapter_15.md:473, and the closing description still anchors her beside the stair draft and wine smell at snapshots/cycle_01/chapters/chapter_15.md:489.",
+      "problem": "This handoff breaks chapter-boundary continuity. The allowed boundary pack for chapter 16 remembers Clemence placing Elise in a narrow alcove near the ration room after the truth comes out, but this chapter ends by locating her in the outer gallery at the wine stair. Because the next scene's smoke alarm depends on where Elise wakes, the contradiction is spatial, causal, and canonical rather than cosmetic.",
+      "rewrite_direction": "Revise the placement beats at snapshots/cycle_01/chapters/chapter_15.md:411, snapshots/cycle_01/chapters/chapter_15.md:473, and snapshots/cycle_01/chapters/chapter_15.md:489 so they describe one location. Easiest repair: move Elise into a narrow alcove adjoining the ration room, still segregated from the women and children, and let the end-of-chapter sensory detail support that location. If the intended location is truly the wine-stair outer gallery, then those same lines must establish how that spot can honestly be recalled in the next chapter as near the ration room, without inventing an off-page relocation.",
+      "acceptance_test": "PASS if the revised placement at snapshots/cycle_01/chapters/chapter_15.md:411, snapshots/cycle_01/chapters/chapter_15.md:473, and snapshots/cycle_01/chapters/chapter_15.md:489 all point to one sleeping spot that can still be described in chapter 16 as the place where Clemence put Elise after the truth came out; FAIL if the chapter still places Elise by the wine stair with its own draft/smell logic while the next-scene boundary requires a ration-room alcove."
+    },
+    {
+      "finding_id": "chapter_15_f02",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "The narration repeats the same clipped negation/contrast construction at snapshots/cycle_01/chapters/chapter_15.md:35, snapshots/cycle_01/chapters/chapter_15.md:109, snapshots/cycle_01/chapters/chapter_15.md:165, snapshots/cycle_01/chapters/chapter_15.md:183, snapshots/cycle_01/chapters/chapter_15.md:235, snapshots/cycle_01/chapters/chapter_15.md:379, snapshots/cycle_01/chapters/chapter_15.md:421, and snapshots/cycle_01/chapters/chapter_15.md:473.",
+      "problem": "The repeated 'Not X. [replacement].' fragment rhythm has become a chapter-level tic. By the second half it starts flattening moments that should feel distinct, and it brushes against the constitution's ban on clipped narration: instead of sounding compressed by pressure, the prose begins to sound mechanically pre-compressed in the same way every time.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_15.md:35, snapshots/cycle_01/chapters/chapter_15.md:109, snapshots/cycle_01/chapters/chapter_15.md:165, snapshots/cycle_01/chapters/chapter_15.md:235, snapshots/cycle_01/chapters/chapter_15.md:379, snapshots/cycle_01/chapters/chapter_15.md:421, and snapshots/cycle_01/chapters/chapter_15.md:473, keep only the strongest one or two clipped reversals and rewrite the rest into full, scene-specific syntax. Let some turns land through bodily action, some through longer carried thought, and some through dialogue so the chapter stops resolving pressure with one repeated sentence shape.",
+      "acceptance_test": "PASS if, after revision, no more than two of the cited beats at snapshots/cycle_01/chapters/chapter_15.md:35, snapshots/cycle_01/chapters/chapter_15.md:109, snapshots/cycle_01/chapters/chapter_15.md:165, snapshots/cycle_01/chapters/chapter_15.md:235, snapshots/cycle_01/chapters/chapter_15.md:379, snapshots/cycle_01/chapters/chapter_15.md:421, and snapshots/cycle_01/chapters/chapter_15.md:473 still use the same clipped negation formula, and each revised passage reads as grammatically complete prose rather than a fragment stack; FAIL if three or more of those marked passages still hinge on the same 'Not X' construction."
+    }
+  ],
+  "summary": "Chapter 15 clears the spine and dialogue bars: Clemence, Vautrin, and Lucien all sound distinct, the three required confrontations land, and the chapter does not sanitize coercion, grief, or erotic betrayal. It fails on craft because Elise's end-of-chapter sleeping location contradicts the chapter-16 boundary handoff, and it fails on prose because the clipped negation-fragment cadence recurs often enough to become a mechanical tic."
+}

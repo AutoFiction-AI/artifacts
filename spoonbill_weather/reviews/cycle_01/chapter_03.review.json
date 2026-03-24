@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_03",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_03_craft_001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:437; snapshots/cycle_01/chapters/chapter_03.md:455",
+      "problem": "The chapter's closing geography conflicts with the boundary handoff. These lines return Mina and Tomas to the county dock and send Mina back to camp on foot, but the chapter_04 boundary excerpt assumes Tomas dropped her at the stilts; with the continuity-sheet geography placing the county dock roughly a ten-minute walk from camp, the transition currently asks the reader to invent missing transit.",
+      "rewrite_direction": "Revise snapshots/cycle_01/chapters/chapter_03.md:437-455 so the physical handoff matches the next-chapter setup. Either have Tomas actually bring Mina to the camp stilts, or keep the county-dock return but make the separation explicit enough that chapter_04 cannot describe it as Tomas dropping her off. Preserve the tired dock banter and the blank-notebook beat.",
+      "acceptance_test": "A reader moving from snapshots/cycle_01/chapters/chapter_03.md:437-455 into the chapter_04 boundary excerpt can account for Mina's arrival without inventing off-page transport: the revised text explicitly places Tomas and Mina at the same drop-off location the next chapter assumes, or explicitly marks that Tomas does not drop her at camp."
+    },
+    {
+      "finding_id": "chapter_03_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:65; snapshots/cycle_01/chapters/chapter_03.md:113; snapshots/cycle_01/chapters/chapter_03.md:125; snapshots/cycle_01/chapters/chapter_03.md:191; snapshots/cycle_01/chapters/chapter_03.md:279; snapshots/cycle_01/chapters/chapter_03.md:423; snapshots/cycle_01/chapters/chapter_03.md:455",
+      "problem": "Mina's precision/obsession is over-labeled instead of fully dramatized. The chapter keeps reaching for 'exact,' 'exactly,' 'specificity,' and adjacent precision tags, which starts to sound like the style-bible lexical signature being repeated back rather than a live voice under pressure.",
+      "rewrite_direction": "Rework snapshots/cycle_01/chapters/chapter_03.md:113-125, snapshots/cycle_01/chapters/chapter_03.md:191, snapshots/cycle_01/chapters/chapter_03.md:279, snapshots/cycle_01/chapters/chapter_03.md:423-455 so Mina's control shows through measured observation, remembered geometry, and selective recall instead of repeated exactness labels. Keep one or two strategically placed uses if needed, but stop naming the trait every time it surfaces.",
+      "acceptance_test": "Across snapshots/cycle_01/chapters/chapter_03.md:113-125, snapshots/cycle_01/chapters/chapter_03.md:191, snapshots/cycle_01/chapters/chapter_03.md:279, and snapshots/cycle_01/chapters/chapter_03.md:423-455, the revised text uses 'exact,' 'exactly,' 'specificity,' or 'precision' no more than twice total, and at least two of those beats show Mina's precision through concrete observational detail rather than by naming it."
+    },
+    {
+      "finding_id": "chapter_03_prose_002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:49; snapshots/cycle_01/chapters/chapter_03.md:249; snapshots/cycle_01/chapters/chapter_03.md:383; snapshots/cycle_01/chapters/chapter_03.md:387; snapshots/cycle_01/chapters/chapter_03.md:433; snapshots/cycle_01/chapters/chapter_03.md:463",
+      "problem": "The chapter repeatedly lands turns with the same adjudicative mini-sentence formula: 'That was ...' and 'It was enough ...' These after-the-fact judgments keep translating the beat for the reader instead of trusting the surrounding action, which turns a strength of the prose into a noticeable tic by the final pages.",
+      "rewrite_direction": "Revise snapshots/cycle_01/chapters/chapter_03.md:49, snapshots/cycle_01/chapters/chapter_03.md:249, snapshots/cycle_01/chapters/chapter_03.md:383-387, and snapshots/cycle_01/chapters/chapter_03.md:433-463 so more of these turns land through physical consequence, silence, or social friction rather than immediate explanatory gloss. Preserve the meanings, but vary the sentence shape and remove the repeated judge's-gavel cadence.",
+      "acceptance_test": "In the revised chapter, no more than two standalone interpretive sentences beginning with 'That was' or 'It was enough' remain, and each cited beat communicates its emotional turn through adjacent action, dialogue, or sensory residue rather than an immediate summary sentence."
+    }
+  ],
+  "summary": "The chapter clears the bar on engine and dialogue: the illegal run feels physically dangerous, the eel sighting lands as a vivid irreversible turn, and Mina/Tomas speak with distinct, pressure-responsive voices that honor the style bible's contraction and register rules. It misses pass level on craft/prose because the ending handoff breaks continuity with the next-chapter boundary geography, and the prose leans too often on repeated exactness labels and repeated 'That was/It was enough' interpretive formulas."
+}

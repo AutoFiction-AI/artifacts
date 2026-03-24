@@ -1,0 +1,87 @@
+{
+  "chapter_id": "chapter_05",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH05-F001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_02/chapters/chapter_05.md:514; snapshots/cycle_02/chapters/chapter_05.md:518; snapshots/cycle_02/chapters/chapter_05.md:556",
+      "problem": "Sanitization drift at the chapter climax: Lena makes a high-risk ethical move (authorizing publication of suspension and doxxing documents) and the prose immediately defuses that danger into administrative summary ('plain, boring, admissible' logging), functioning as a moral safety valve instead of staying inside consequence.",
+      "rewrite_direction": "Revise the beat anchored at snapshots/cycle_02/chapters/chapter_05.md:514 and snapshots/cycle_02/chapters/chapter_05.md:518 before the logging beat at snapshots/cycle_02/chapters/chapter_05.md:556. Keep the decision, but render immediate concrete fallout (legal exposure, family rupture, retaliatory pressure, or social blowback) on-page before procedural cleanup language.",
+      "acceptance_test": "PASS if the revised section between snapshots/cycle_02/chapters/chapter_05.md:518 and snapshots/cycle_02/chapters/chapter_05.md:556 contains at least one explicit adverse consequence that occurs after 'Run it' and before logging starts; FAIL if it still jumps directly from decision to procedural record-keeping without new cost."
+    },
+    {
+      "finding_id": "CH05-F002",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_02/chapters/chapter_05.md:346; snapshots/cycle_02/chapters/chapter_05.md:349; snapshots/cycle_02/chapters/chapter_05.md:401",
+      "problem": "Timidity in the home-fallout scene: once Jalen's fear lands, the chapter pivots quickly to logistics (locks, packing, route text) and under-renders the emotional/physical reality of a teenager being targeted through doxxing.",
+      "rewrite_direction": "Expand the emotional beat around snapshots/cycle_02/chapters/chapter_05.md:349 and snapshots/cycle_02/chapters/chapter_05.md:395 before transitioning into the operational checklist at snapshots/cycle_02/chapters/chapter_05.md:401. Let Lena and Jalen hold the fear in-scene before tactical planning resumes.",
+      "acceptance_test": "PASS if the revised passage anchored at snapshots/cycle_02/chapters/chapter_05.md:349 through snapshots/cycle_02/chapters/chapter_05.md:401 includes a sustained mother-son exchange (minimum 6 dialogue/action lines) centered on concrete fear, not logistics; FAIL if the scene acknowledges fear and returns to planning within two paragraphs."
+    },
+    {
+      "finding_id": "CH05-F003",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_02/chapters/chapter_05.md:175; snapshots/cycle_02/chapters/chapter_05.md:203; snapshots/cycle_02/chapters/chapter_05.md:420; snapshots/cycle_02/chapters/chapter_05.md:472",
+      "problem": "Idiolect separation slips: several speakers deliver similarly polished epigrammatic lines under pressure, making voices partially interchangeable instead of clearly character-specific register/rhythm.",
+      "rewrite_direction": "Revoice dialogue at snapshots/cycle_02/chapters/chapter_05.md:175, snapshots/cycle_02/chapters/chapter_05.md:203, snapshots/cycle_02/chapters/chapter_05.md:420, and snapshots/cycle_02/chapters/chapter_05.md:472 so each line reflects speaker-specific cadence and lexicon (Beau's tactile local idiom, legal counsel precision, Marcus's domestic fear register).",
+      "acceptance_test": "PASS if, when speaker tags are removed from the revised lines at snapshots/cycle_02/chapters/chapter_05.md:175/203/420/472, each line is still attributable to the correct speaker by distinct register cues; FAIL if two or more remain swap-compatible without changing meaning."
+    },
+    {
+      "finding_id": "CH05-F004",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_02/chapters/chapter_05.md:3; snapshots/cycle_02/chapters/chapter_05.md:57; snapshots/cycle_02/chapters/chapter_05.md:298; snapshots/cycle_02/chapters/chapter_05.md:559",
+      "problem": "Recurring prose tic: the chapter overuses the same 'like ...' simile construction well beyond twice, flattening sentence music into a predictable comparative template.",
+      "rewrite_direction": "Revise high-density simile clusters anchored at snapshots/cycle_02/chapters/chapter_05.md:3, snapshots/cycle_02/chapters/chapter_05.md:57, snapshots/cycle_02/chapters/chapter_05.md:298, and snapshots/cycle_02/chapters/chapter_05.md:559 by converting repeated 'like ...' comparisons into direct sensory detail, material action, or syntactic variation.",
+      "acceptance_test": "PASS if the revised block snapshots/cycle_02/chapters/chapter_05.md:3-178 and the revised block snapshots/cycle_02/chapters/chapter_05.md:314-561 each contain no more than two 'like + noun phrase' similes; FAIL if either block contains three or more."
+    },
+    {
+      "finding_id": "CH05-F005",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_02/chapters/chapter_05.md:203; snapshots/cycle_02/chapters/chapter_05.md:236; snapshots/cycle_02/chapters/chapter_05.md:238",
+      "problem": "Interiority drought: the suspension hearing runs for a 10+ paragraph stretch of mostly external dialogue with no focal interior experience, pushing the chapter toward screenplay cadence.",
+      "rewrite_direction": "In the hearing run anchored between snapshots/cycle_02/chapters/chapter_05.md:203 and snapshots/cycle_02/chapters/chapter_05.md:236, add close-third interior beats (thought, sensation, memory, self-assessment) that track Lena's pressure in real time before the existing return at snapshots/cycle_02/chapters/chapter_05.md:238.",
+      "acceptance_test": "PASS if revised snapshots/cycle_02/chapters/chapter_05.md:203-236 contains at least three paragraphs with explicit Lena interiority and no run of more than four consecutive paragraphs without it; FAIL otherwise."
+    },
+    {
+      "finding_id": "CH05-F006",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_02/chapters/chapter_05.md:141; snapshots/cycle_02/chapters/chapter_05.md:476; snapshots/cycle_02/chapters/chapter_05.md:484",
+      "problem": "Causal compression weakens suspense: major investigative gains (vendor linkage and trace pathway) arrive rapidly in-dialogue with limited friction, making progression feel pre-solved rather than fought for.",
+      "rewrite_direction": "Rework lead handoffs at snapshots/cycle_02/chapters/chapter_05.md:141 and snapshots/cycle_02/chapters/chapter_05.md:476 so at least one datapoint is provisional or contested; use snapshots/cycle_02/chapters/chapter_05.md:484 as the pivot to define a risky next step rather than a clean pattern lock.",
+      "acceptance_test": "PASS if the revised spans at snapshots/cycle_02/chapters/chapter_05.md:141-143 and snapshots/cycle_02/chapters/chapter_05.md:476-490 leave at least one lead unresolved and attach it to a specific next action plus obstacle; FAIL if both leads remain immediate confirmations with no new resistance."
+    },
+    {
+      "finding_id": "CH05-F007",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_02/chapters/chapter_05.md:11; snapshots/cycle_02/chapters/chapter_05.md:230; snapshots/cycle_02/chapters/chapter_05.md:492",
+      "problem": "Mechanical style-profile literalization: character cognition is occasionally narrated in checklist-like analytic labels (e.g., explicitly naming risk-calculation steps), which reads like calibration metadata rather than lived scene experience.",
+      "rewrite_direction": "Refine narration at snapshots/cycle_02/chapters/chapter_05.md:492 (with support from snapshots/cycle_02/chapters/chapter_05.md:11 and snapshots/cycle_02/chapters/chapter_05.md:230) so decision processes are conveyed through observable behavior, interruption, pacing, and diction instead of explicit explanatory tagging.",
+      "acceptance_test": "PASS if revised snapshots/cycle_02/chapters/chapter_05.md:492-494 shows Mara's decision through action/dialogue only, with no abstract process labels (e.g., 'risk calculation', 'ethics pass'); FAIL if analytic meta-labeling remains."
+    }
+  ],
+  "summary": "Chapter 5 lands core boundary beats (street pressure, suspension, improvised access) and stays canon-consistent on tense and continuity, but it does not meet pass-level quality. The draft fails on craft/prose pressure handling: the climactic ethical move is sanitized by procedural defusion, family danger beats turn timidly logistical, dialogue idiolect separation blurs in repeated epigram cadence, and prose relies on repeated simile formulas while the hearing scene runs through an interiority drought.",
+  "coverage_scene_ids": [
+    "courthouse_steps_pressure",
+    "conference_room_suspension",
+    "home_fallout_improvised_channels"
+  ]
+}

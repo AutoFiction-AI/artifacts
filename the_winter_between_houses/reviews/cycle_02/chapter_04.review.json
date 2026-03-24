@@ -1,0 +1,66 @@
+{
+  "chapter_id": "chapter_04",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_04_F001",
+      "source": "booker",
+      "severity": "HIGH",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:199; snapshots/cycle_02/chapters/chapter_04.md:351; snapshots/cycle_02/chapters/chapter_04.md:353",
+      "problem": "The chapter's external engine stalls at the handoff: after the full-closure beat lands, the ending returns to another search plan without a new causal fact about Tom. That leaves the central objective functionally deferred rather than transformed.",
+      "rewrite_direction": "Revise the late sequence anchored at snapshots/cycle_02/chapters/chapter_04.md:197, snapshots/cycle_02/chapters/chapter_04.md:231, snapshots/cycle_02/chapters/chapter_04.md:335, and snapshots/cycle_02/chapters/chapter_04.md:353 so the chapter ends on a concrete status change, not only reiterated intent. Options: (a) add a verifiable Tom datapoint before dawn (injury report, confirmed sighting, custody hold, message), then update the dawn split at snapshots/cycle_02/chapters/chapter_04.md:353; or (b) reframe the objective earlier at snapshots/cycle_02/chapters/chapter_04.md:5 and snapshots/cycle_02/chapters/chapter_04.md:203 so the chapter's true win-condition is securing a joint emergency protocol, and make that protocol materially new by the close.",
+      "acceptance_test": "Pass if the ending block anchored at snapshots/cycle_02/chapters/chapter_04.md:323 and snapshots/cycle_02/chapters/chapter_04.md:353 introduces at least one new, verifiable fact about Tom that was unknown before snapshots/cycle_02/chapters/chapter_04.md:199 and that fact changes Elsie's next action; fail if the ending still resolves to 'Tom missing' plus another checklist search note."
+    },
+    {
+      "finding_id": "chapter_04_F002",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:23; snapshots/cycle_02/chapters/chapter_04.md:47; snapshots/cycle_02/chapters/chapter_04.md:83; snapshots/cycle_02/chapters/chapter_04.md:125",
+      "problem": "The pre-closure search run repeats a similar ask/negative answer/move-on pattern across multiple stops, which blunts escalation before the overnight shelter turn.",
+      "rewrite_direction": "Tighten and differentiate the search chain anchored at snapshots/cycle_02/chapters/chapter_04.md:23, snapshots/cycle_02/chapters/chapter_04.md:47, snapshots/cycle_02/chapters/chapter_04.md:83, and snapshots/cycle_02/chapters/chapter_04.md:125. Either compress one stop (for example the beat anchored at snapshots/cycle_02/chapters/chapter_04.md:125) or rewrite one retained stop to deliver a distinct consequence-bearing reveal (financial, legal, or physical) that changes the next stop's tactic.",
+      "acceptance_test": "Pass if each retained pre-closure stop before snapshots/cycle_02/chapters/chapter_04.md:199 yields unique actionable information that alters Elsie's immediate next move; fail if two stops can be swapped or removed without changing causal flow."
+    },
+    {
+      "finding_id": "chapter_04_F003",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:305; snapshots/cycle_02/chapters/chapter_04.md:311; snapshots/cycle_02/chapters/chapter_04.md:321",
+      "problem": "At the emotional crest, dialogue shifts into polished aphorism, which narrows voice separation and reads author-shaped rather than pressure-shaped for these two characters.",
+      "rewrite_direction": "Rework the exchange anchored at snapshots/cycle_02/chapters/chapter_04.md:303, snapshots/cycle_02/chapters/chapter_04.md:311, and snapshots/cycle_02/chapters/chapter_04.md:321 with messier spoken texture (interruptions, retries, incomplete starts) while preserving support. Keep Noreen's high-contraction, quick pragmatic rhythm and Elsie's concrete bodily/domestic framing so each line is identifiable without tags.",
+      "acceptance_test": "Pass if the revised passage anchored at snapshots/cycle_02/chapters/chapter_04.md:303 and snapshots/cycle_02/chapters/chapter_04.md:321 includes at least two interruption/restart moments and each speaker has distinct register markers (Noreen: brisk directive or dark humor pivot; Elsie: practical bodily detail); fail if the lines still read as interchangeable maxims."
+    },
+    {
+      "finding_id": "chapter_04_F004",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:3; snapshots/cycle_02/chapters/chapter_04.md:235; snapshots/cycle_02/chapters/chapter_04.md:345",
+      "problem": "A recurring corrective sentence template ('X, not Y') appears in multiple high-attention beats and starts reading as a chapter-level prose tic.",
+      "rewrite_direction": "Vary syntax in at least two cited spans (snapshots/cycle_02/chapters/chapter_04.md:3, snapshots/cycle_02/chapters/chapter_04.md:235, snapshots/cycle_02/chapters/chapter_04.md:345) by converting contrasts into action-led or image-led constructions rather than repeating corrective pairings.",
+      "acceptance_test": "Pass if, across the three cited lines, no more than one keeps the explicit 'X, not Y' corrective form and each beat uses a distinct sentence shape; fail if all three still share the same contrast template."
+    },
+    {
+      "finding_id": "chapter_04_F005",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:153; snapshots/cycle_02/chapters/chapter_04.md:219; snapshots/cycle_02/chapters/chapter_04.md:353",
+      "problem": "Elsie's stress-tell is rendered three times as near-identical task-list enumeration. The recurrence reads mechanically patterned rather than newly escalated, suggesting over-literal reuse of a style-bible cue.",
+      "rewrite_direction": "Keep one full checklist beat (either snapshots/cycle_02/chapters/chapter_04.md:153 or snapshots/cycle_02/chapters/chapter_04.md:353), but rewrite one other cited span into a different stress expression (silence, mis-sequenced action, bodily memory flash) and adjust snapshots/cycle_02/chapters/chapter_04.md:219 to avoid another full inventory cadence.",
+      "acceptance_test": "Pass if only one of the cited spans remains an extended checklist-style stress beat and at least one other cited span shows a different stress manifestation tied to Tom's absence; fail if all three remain list-driven with similar rhythm."
+    }
+  ],
+  "summary": "Chapter 4 delivers strong embodied trauma detail and clear scene-level weather pressure, but it does not yet clear fail-default standards: the search engine repeats without a fresh causal turn at the close, dialogue at the emotional apex trends aphoristic, and prose shows detectable formula repetition. No canonical continuity contradictions were found against the continuity sheet, narrative tense remains aligned with past-tense canon, and no HIGH-level sanitization drift was detected in the stillbirth material.",
+  "coverage_scene_ids": [
+    "chapter_04_scene_search",
+    "chapter_04_scene_shelter_confession"
+  ]
+}

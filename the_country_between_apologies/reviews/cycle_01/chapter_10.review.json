@@ -1,0 +1,43 @@
+{
+  "chapter_id": "chapter_10",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH10-F001",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:83; snapshots/cycle_01/chapters/chapter_10.md:111; snapshots/cycle_01/chapters/chapter_10.md:215; snapshots/cycle_01/chapters/chapter_10.md:239",
+      "problem": "The chapter contains two screenplay-like stretches of 10+ consecutive short paragraphs with no interior experience from the focalizer (job-intake run and drunk-guest exchange). The external action is clear, but the close-third anchor thins and emotional pressure drops.",
+      "rewrite_direction": "In snapshots/cycle_01/chapters/chapter_10.md:83 and snapshots/cycle_01/chapters/chapter_10.md:111, and again between snapshots/cycle_01/chapters/chapter_10.md:215 and snapshots/cycle_01/chapters/chapter_10.md:239, add brief interior beats (thought, pain signal, memory flicker, or self-assessment) inside the exchanges without slowing scene pace. Keep dialogue turns, but thread Eli's embodied processing between leverage shifts so the POV remains interiorly anchored.",
+      "acceptance_test": "PASS if each target span (83-111 and 215-239) includes at least two explicit interior beats from Eli and there is no run of 10 or more consecutive paragraphs in those spans that are purely external action/dialogue; FAIL otherwise."
+    },
+    {
+      "finding_id": "CH10-F002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:155; snapshots/cycle_01/chapters/chapter_10.md:173; snapshots/cycle_01/chapters/chapter_10.md:355",
+      "problem": "A recurring corrective-negation formula (reject term, then replace it) appears more than twice and starts reading as autopilot rhetoric rather than fresh scene language.",
+      "rewrite_direction": "In snapshots/cycle_01/chapters/chapter_10.md:155, snapshots/cycle_01/chapters/chapter_10.md:173, and snapshots/cycle_01/chapters/chapter_10.md:355, keep only one corrective-negation line and recast the others through concrete action/sensation or idiolect-specific phrasing. Preserve intent (boundary-setting and anti-redemption stance) while varying sentence architecture.",
+      "acceptance_test": "PASS if, across lines 155/173/355 revisions, no more than one beat uses the explicit negation-then-replacement construction and the remaining beats communicate the same meaning via materially different syntax; FAIL if all three still use the same formula."
+    },
+    {
+      "finding_id": "CH10-F003",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:11; snapshots/cycle_01/chapters/chapter_10.md:113; snapshots/cycle_01/chapters/chapter_10.md:329",
+      "problem": "Eli's logistics/ledger stress mode is repeated in near-identical form at three major beats, which reads like over-literal reuse of the style-bible stress tell instead of progression. The chapter keeps re-running arithmetic cognition rather than varying how pressure lands.",
+      "rewrite_direction": "Differentiate one of the three accounting passages (preferably the span anchored by snapshots/cycle_01/chapters/chapter_10.md:329 and snapshots/cycle_01/chapters/chapter_10.md:331) by interleaving a non-ledger consequence (relational image, body memory, or specific fear tied to Nora/June/Theo). Keep financial facts intact but alter cognitive texture so each beat performs a different narrative function.",
+      "acceptance_test": "PASS if the revised 329-331 span still states the key numbers but also includes a concrete non-financial interior consequence, and at least one of the three cited passages (11, 113, 329) is no longer primarily structured as step-by-step tallying; FAIL if all three remain ledger-first in the same mode."
+    }
+  ],
+  "summary": "Chapter 10 lands its causal spine and continuity obligations (post-crash inventory, Marisol negotiation, first-shift consequence) with strong material specificity and stable past-tense close third. It fails craft/prose at review level due interiority droughts in extended dialogue runs and repeated rhetorical/cognitive templates that flatten variation. Dialogue contraction/register checks are broadly compliant, with no style-bible example-line copying found.",
+  "coverage_scene_ids": []
+}

@@ -1,0 +1,87 @@
+{
+  "chapter_id": "chapter_11",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch11-f001",
+      "source": "booker",
+      "severity": "HIGH",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:527; snapshots/cycle_01/chapters/chapter_11.md:537",
+      "problem": "The chapter locks Noreen's next clinic time to Thursday 12:40, but the chapter boundary handoff for chapter 12 establishes Thursday 10:40. This creates a hard serialization contradiction at the chapter seam.",
+      "rewrite_direction": "Normalize all appointment-time mentions to the canonical handoff value by revising the message and spoken confirmation at snapshots/cycle_01/chapters/chapter_11.md:527 and snapshots/cycle_01/chapters/chapter_11.md:537 (and any adjacent echoes in the close) so chapter 12's opening card time remains causally consistent.",
+      "acceptance_test": "PASS if every explicit Thursday appointment reference in snapshots/cycle_01/chapters/chapter_11.md:527 and snapshots/cycle_01/chapters/chapter_11.md:537 reads 10:40 and no remaining 12:40 reference appears in the chapter; FAIL otherwise."
+    },
+    {
+      "finding_id": "ch11-f002",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:381; snapshots/cycle_01/chapters/chapter_11.md:383; snapshots/cycle_01/chapters/chapter_11.md:393",
+      "problem": "Sanitization drift at the coercion aftermath: immediately after Peter's control ultimatum, the overnight power dynamic is compressed into summary bookkeeping (wakes, water, chamber pot) rather than rendered as an embodied scene beat, which defuses narrative tension at the exact point consequence should land.",
+      "rewrite_direction": "Expand the aftermath in snapshots/cycle_01/chapters/chapter_11.md:381 through snapshots/cycle_01/chapters/chapter_11.md:395 by staging at least one full nocturnal interaction (request, refusal/pressure, compliance cost) in present scene time, with concrete bodily detail and social risk tied to Arthur's nearby presence.",
+      "acceptance_test": "PASS if the revised span from snapshots/cycle_01/chapters/chapter_11.md:381 to snapshots/cycle_01/chapters/chapter_11.md:395 contains at least one fully dramatized night exchange with 3 or more action/dialogue beats plus an explicit immediate consequence in Noreen's body or decision-state; FAIL if the section remains primarily retrospective summary."
+    },
+    {
+      "finding_id": "ch11-f003",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:143; snapshots/cycle_01/chapters/chapter_11.md:367",
+      "problem": "Timidity in intimidation beats: menace is labeled abstractly (\"something hot and dangerous\", \"softness that frightened her\") instead of being made legible through observable behavior, which pulls the prose back from the physical/emotional reality the scene has earned.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_11.md:143 and snapshots/cycle_01/chapters/chapter_11.md:367, replace abstraction with concrete threat signals (distance, hand movement, blocked path, vocal texture) and immediate somatic response from Noreen.",
+      "acceptance_test": "PASS if revised versions of snapshots/cycle_01/chapters/chapter_11.md:143 and snapshots/cycle_01/chapters/chapter_11.md:367 each contain at least one observable external cue and one specific Noreen body reaction; FAIL if menace is still conveyed mainly through abstract labels."
+    },
+    {
+      "finding_id": "ch11-f004",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:263; snapshots/cycle_01/chapters/chapter_11.md:271; snapshots/cycle_01/chapters/chapter_11.md:329; snapshots/cycle_01/chapters/chapter_11.md:351; snapshots/cycle_01/chapters/chapter_11.md:373; snapshots/cycle_01/chapters/chapter_11.md:423; snapshots/cycle_01/chapters/chapter_11.md:427",
+      "problem": "Peter's voice over-literalizes the style-bible lexical signature (administrative/ledger diction) in consecutive high-pressure exchanges, producing stilted one-note formality rather than escalating, varied coercive speech rhythms.",
+      "rewrite_direction": "Rework selected Peter lines between snapshots/cycle_01/chapters/chapter_11.md:263 and snapshots/cycle_01/chapters/chapter_11.md:271, between snapshots/cycle_01/chapters/chapter_11.md:329 and snapshots/cycle_01/chapters/chapter_11.md:351, and between snapshots/cycle_01/chapters/chapter_11.md:373 and snapshots/cycle_01/chapters/chapter_11.md:427 to keep low-contraction control but vary tactic and cadence (e.g., clipped interruption, contempt aside, strategic silence cue) so pressure feels lived rather than formulaic.",
+      "acceptance_test": "PASS if at least three revised Peter lines in the cited spans use distinct control modes (directive, insinuation, humiliation) without repeating the same bureaucratic keyword set; FAIL if lines remain predominantly interchangeable legalistic commands."
+    },
+    {
+      "finding_id": "ch11-f005",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:11; snapshots/cycle_01/chapters/chapter_11.md:45; snapshots/cycle_01/chapters/chapter_11.md:87; snapshots/cycle_01/chapters/chapter_11.md:125; snapshots/cycle_01/chapters/chapter_11.md:233; snapshots/cycle_01/chapters/chapter_11.md:261; snapshots/cycle_01/chapters/chapter_11.md:453",
+      "problem": "Recurring comparison scaffold tic: repeated \"as if\" constructions appear across beats and scenes, flattening texture and making sentence architecture feel autopiloted.",
+      "rewrite_direction": "Revise the comparison-heavy passages at snapshots/cycle_01/chapters/chapter_11.md:11, snapshots/cycle_01/chapters/chapter_11.md:45, snapshots/cycle_01/chapters/chapter_11.md:87, snapshots/cycle_01/chapters/chapter_11.md:125, snapshots/cycle_01/chapters/chapter_11.md:233, snapshots/cycle_01/chapters/chapter_11.md:261, and snapshots/cycle_01/chapters/chapter_11.md:453 by converting most hypothetical comparisons into direct sensory/action rendering.",
+      "acceptance_test": "PASS if no more than two of the cited lines retain an \"as if\" structure and each revised line still carries equivalent narrative meaning through concrete detail; FAIL if the original repetitive scaffold largely remains."
+    },
+    {
+      "finding_id": "ch11-f006",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:151; snapshots/cycle_01/chapters/chapter_11.md:153; snapshots/cycle_01/chapters/chapter_11.md:155; snapshots/cycle_01/chapters/chapter_11.md:157; snapshots/cycle_01/chapters/chapter_11.md:159; snapshots/cycle_01/chapters/chapter_11.md:161; snapshots/cycle_01/chapters/chapter_11.md:163; snapshots/cycle_01/chapters/chapter_11.md:165; snapshots/cycle_01/chapters/chapter_11.md:167; snapshots/cycle_01/chapters/chapter_11.md:169; snapshots/cycle_01/chapters/chapter_11.md:171; snapshots/cycle_01/chapters/chapter_11.md:173; snapshots/cycle_01/chapters/chapter_11.md:175",
+      "problem": "Interiority drop: the casualty intake runs for 10+ consecutive paragraphs with mostly external transaction before interior access resumes, creating screenplay drift and weakening close-third pressure.",
+      "rewrite_direction": "Within the span from snapshots/cycle_01/chapters/chapter_11.md:151 to snapshots/cycle_01/chapters/chapter_11.md:175, insert short focalized interior beats at decision points (triage questions, signature moment setup) so procedural flow remains but Noreen's embodied stake stays present.",
+      "acceptance_test": "PASS if the revised span from snapshots/cycle_01/chapters/chapter_11.md:151 to snapshots/cycle_01/chapters/chapter_11.md:175 includes at least three paragraphs with explicit Noreen thought/sensation/self-assessment before the signature beat at snapshots/cycle_01/chapters/chapter_11.md:177; FAIL if interiority returns only at or after that beat."
+    },
+    {
+      "finding_id": "ch11-f007",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:527; snapshots/cycle_01/chapters/chapter_11.md:547; snapshots/cycle_01/chapters/chapter_11.md:549; snapshots/cycle_01/chapters/chapter_11.md:551; snapshots/cycle_01/chapters/chapter_11.md:559",
+      "problem": "Late-scene leverage stalls: Noreen's covert counter-move is reduced to a quick relay message, then Peter immediately reasserts control over appointment visibility. The chapter closes on reiterated containment rather than a sharpened, irreversible turn.",
+      "rewrite_direction": "Strengthen the close between snapshots/cycle_01/chapters/chapter_11.md:527 and snapshots/cycle_01/chapters/chapter_11.md:563 by giving Noreen one durable on-page tactical action that survives Peter's surveillance (for example, a duplicate record, confirmed escort arrangement, or concealed signal handoff) and is echoed in the final paragraphs.",
+      "acceptance_test": "PASS if the revised close between snapshots/cycle_01/chapters/chapter_11.md:527 and snapshots/cycle_01/chapters/chapter_11.md:563 contains a clearly stated Noreen action that materially limits Peter's control and is still operative by snapshots/cycle_01/chapters/chapter_11.md:559; FAIL if the ending remains purely anticipatory with no new leverage."
+    }
+  ],
+  "summary": "Chapter 11 delivers strong immediate logistics and pressure but fails review due to a HIGH chapter-seam continuity contradiction (Thursday time), HIGH sanitization-by-summary in the coercion aftermath, and unresolved dialogue/prose flattening tics (bureaucratic voice overuse, repeated comparison scaffolds, and a prolonged interiority drop).",
+  "coverage_scene_ids": [
+    "scene_01_fall_and_casualty",
+    "scene_02_evening_control_order",
+    "scene_03_clinic_rebook_return"
+  ]
+}

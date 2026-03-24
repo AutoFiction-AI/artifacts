@@ -1,0 +1,67 @@
+{
+  "chapter_id": "chapter_15",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch15-craft-001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_02/chapters/chapter_15.md:276",
+      "problem": "Sanitization drift at the immediate social consequence beat: the narrative summarizes fallout (\"Public disappointment had texture. It came as...\") instead of staging a concrete humiliating interaction. This replaces scene with explanation at the exact moment consequence should be most embodied.",
+      "rewrite_direction": "Rewrite snapshots/cycle_02/chapters/chapter_15.md:274-277 as live action: put one specific outsider interaction on the page (quote + behavior), show Ravi's visible response in real time, and anchor Anika's embodied reaction before moving to the corridor at snapshots/cycle_02/chapters/chapter_15.md:278.",
+      "acceptance_test": "PASS if revised snapshots/cycle_02/chapters/chapter_15.md:274-277 includes (a) at least one direct quoted line from an outsider, (b) one observable Ravi action under pressure, and (c) one concrete bodily reaction from Anika; FAIL if the consequence is still delivered primarily as summary phrasing (e.g., \"It came as...\")."
+    },
+    {
+      "finding_id": "ch15-booker-001",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_02/chapters/chapter_15.md:298",
+      "problem": "Post-loss consequence is partially defused by a too-clean repair beat: the corridor exchange moves quickly into mutual insight and stable planning, with minimal friction from the recently coercive father-daughter pattern. That softens the chapter's causal sting after a pivotal defeat.",
+      "rewrite_direction": "Rework snapshots/cycle_02/chapters/chapter_15.md:298-343 and snapshots/cycle_02/chapters/chapter_15.md:372-383 to include one failed repair attempt (Ravi defaults to control language; Anika resists), then earn the eventual shared plan through that clash.",
+      "acceptance_test": "PASS if revised snapshots/cycle_02/chapters/chapter_15.md:298-383 contains one explicit control attempt from Ravi, one explicit refusal/counter from Anika, and a later negotiated agreement that follows that conflict; FAIL if the exchange remains a single uninterrupted validation arc."
+    },
+    {
+      "finding_id": "ch15-dialogue-001",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_02/chapters/chapter_15.md:334",
+      "problem": "Ravi's register drifts toward polished therapist/coaching abstraction (\"It's information\", \"That's a clean read\", \"That's ambition\") and underuses his style-bible stress tells (procedural repetition, command-then-late-correction, work/schedule lexicon). Voice specificity softens.",
+      "rewrite_direction": "Revise Ravi lines in snapshots/cycle_02/chapters/chapter_15.md:334-373 and snapshots/cycle_02/chapters/chapter_15.md:436-437 to restore idiolect: concrete workload/scheduling language, one self-correction beat, and more pressure-shaped rhythm instead of generalized coaching labels.",
+      "acceptance_test": "PASS if in revised snapshots/cycle_02/chapters/chapter_15.md:334-373 Ravi has at least 3 lines with concrete procedural/work diction and at least 1 line with a visible self-interruption or late correction; FAIL if his lines remain primarily abstract motivational framing."
+    },
+    {
+      "finding_id": "ch15-prose-001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_02/chapters/chapter_15.md:73",
+      "problem": "A recurring scoreboard formula (\", and the score ...\" / \"The score ...\") appears repeatedly in the match sequence, creating prose autopilot and flattening rally texture.",
+      "rewrite_direction": "Vary score-reporting constructions across snapshots/cycle_02/chapters/chapter_15.md:67-95, snapshots/cycle_02/chapters/chapter_15.md:152-159, and snapshots/cycle_02/chapters/chapter_15.md:213-219 by tying point outcomes to distinct tactical or bodily consequences instead of repeating the same sentence template.",
+      "acceptance_test": "PASS if revised snapshots/cycle_02/chapters/chapter_15.md:67-220 uses at least 4 distinct sentence shapes for score updates and the exact pattern \", and the score ...\" appears no more than 2 times; FAIL otherwise."
+    },
+    {
+      "finding_id": "ch15-prose-002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_02/chapters/chapter_15.md:122",
+      "problem": "Mechanical repetition of coaching abstractions (e.g., \"discipline\", \"shape\", \"depth\", \"pace\") compresses tonal range and starts to sound like direct style-bible token reuse rather than fresh scene language.",
+      "rewrite_direction": "In snapshots/cycle_02/chapters/chapter_15.md:122-170 and snapshots/cycle_02/chapters/chapter_15.md:270-353, replace repeated abstract coaching nouns with concrete sensory/kinesthetic detail (foot placement, wall contact, breath cadence, shoulder load) while keeping tactical clarity.",
+      "acceptance_test": "PASS if revised snapshots/cycle_02/chapters/chapter_15.md:122-170 and snapshots/cycle_02/chapters/chapter_15.md:270-353 replace at least 3 repeated abstractions (\"discipline\", \"shape\", \"depth\", \"pace\") with concrete physical detail tied to the same decision point; FAIL if the abstract coaching vocabulary remains dominant."
+    }
+  ],
+  "summary": "Chapter 15 lands core continuity beats (5-game loss, no collapse, mixed shame/relief) and maintains past tense and canon facts, but it does not clear review standard due to a high-severity summary-based sanitization beat at peak consequence, softened causal sting in post-loss repair, Ravi voice drift from style-bible idiolect, and repeated prose formulas that flatten match texture.",
+  "coverage_scene_ids": [
+    "midtown_quarterfinal_match",
+    "postmatch_corridor_exchange",
+    "commute_and_home_aftermath"
+  ]
+}

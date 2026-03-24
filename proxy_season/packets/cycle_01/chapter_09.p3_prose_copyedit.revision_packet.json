@@ -1,0 +1,74 @@
+{
+  "acceptance_targets": [
+    "[CH09-PROSE-01] In the revised chapter: (1) 'the way' as comparison connector appears no more than 4 times total; (2) 'He/he thought about' as interiority marker appears no more than 3 times, with no paragraph containing more than one instance; (3) 'the specific' or 'the particular' as a modifier appears no more than 3 times; (4) 'the kind of' appears no more than 2 times; (5) 'not X exactly' or 'not X but Y' hedging appears no more than 4 times. Each surviving instance should feel deliberately placed within its paragraph, not defaulted to."
+  ],
+  "chapter_id": "chapter_09",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "In the revised chapter: (1) 'the way' as comparison connector appears no more than 4 times total; (2) 'He/he thought about' as interiority marker appears no more than 3 times, with no paragraph containing more than one instance; (3) 'the specific' or 'the particular' as a modifier appears no more than 3 times; (4) 'the kind of' appears no more than 2 times; (5) 'not X exactly' or 'not X but Y' hedging appears no more than 4 times. Each surviving instance should feel deliberately placed within its paragraph, not defaulted to.",
+      "chapter_id": "chapter_09",
+      "cycle": 1,
+      "evidence": "\"the way\" as comparison connector appears 10 times: snapshots/cycle_01/chapters/chapter_09.md:41 ('the way Parsons held himself'), :55 ('the way you'd say'), :63 ('the way a doctor's receptionist'), :75 ('the way you recognize the faces'), :79 ('the way you'd scan a foreign newspaper'), :109 ('the way his father had taught him'), :131 ('in the way that apartments are quiet'), :137 ('the way she always said it' and 'the way he always said it'). \"He/he thought about\" appears ~10 times across lines 23, 81, 97 (\u00d73), 109, 123 (\u00d72), 135, 139. \"the specific/particular X\" modifier appears 6 times: lines 31, 33, 41, 81, 129, 141. \"the kind of/that\" appears 5 times: lines 15, 21, 25, 33, 81. \"not X exactly / not X but Y\" hedging appears 8 times: lines 3, 13, 21, 27, 41, 81, 105, 137.",
+      "finding_id": "CH09-PROSE-01",
+      "problem": "Five distinct prose formula tics recur far above the twice-is-coincidence threshold. 'The way' (10\u00d7) and 'He thought about' (10\u00d7) are the most pervasive, functioning as autopilot connectors for comparisons and interiority respectively. 'The specific/particular X' (6\u00d7), 'the kind of X that Y' (5\u00d7), and 'not X exactly/but Y' (8\u00d7) compound the effect. Collectively these formulas create a rhythmic monotony that flattens the prose between its genuinely strong images (the wedding ring, the refinery flame, the milk-eye cereal bowl). The reader begins to anticipate the construction before the content, which is the opposite of the style bible's instruction that 'if three consecutive paragraphs use the same sentence structure, one of them is wrong.'",
+      "rewrite_direction": "Target the densest clusters first. In snapshots/cycle_01/chapters/chapter_09.md:97 ('He thought about the tables...He thought about K-4471-DOM...He thought about Mira'), replace at least two of three instances with constructions that enact the thinking rather than reporting it \u2014 e.g., let the tables appear in Dan's perception, let K-4471-DOM trigger a physical reaction, let Mira arrive as image rather than named subject of 'thought about.' In :135, the same pattern closes the chapter with a litany ('he thought about the facility...and the seven other people...and the flame'). Vary the syntactic container: some of these can be rendered as images without the 'thought about' frame. For 'the way' comparisons, cut at least 5 of 10 instances across the chapter. In :55 and :63 (both in the Parsons exchange), the consecutive use is especially noticeable \u2014 keep one, rephrase the other. For 'not X exactly/but Y,' the pattern is most mechanical in :21 and :27 where it appears in consecutive paragraphs. Retain instances where the hedge genuinely earns its precision (e.g., :13 'Not nostalgia exactly') and eliminate those that are merely habitual qualification.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "d06655844d8dcc7353997e052e102bf91458c4eedadd8cc86e42eed2beb8cec1",
+  "must_fix_count": 1,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on prose and copyedit finish: diction precision, rhythm control, sentence-level clarity, grammar, line-level polish without flattening style, and explicit aesthetic-risk audit (sanitization is the primary risk \u2014 do not soften or euphemize; push toward creative risk and specificity).",
+    "key": "p3_prose_copyedit",
+    "label": "prose/copyedit fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This novel's risk zone is the gap between dignity and absurdity. The characters are adults with professional histories, a child, a mortgage \u2014 people with legitimate self-respect \u2014 who have been reduced to warm bodies in an optimization framework they cannot understand. The comedy must not protect them from the humiliation; the humiliation must not neutralize the comedy. Render both registers at full force, often in the same scene. The temptation will be to soften the comedy into gentle satire or to darken the humiliation into dystopian grimness \u2014 resist both. The novel's territory is the painful and the funny coexisting without one defusing the other. Commit to the specific physical embarrassment of being professionally irrelevant. Commit to the specific tenderness of parenting under surveillance. Commit to the specific grief of a marriage that might still be alive inside a system that has classified it as infrastructure. When in doubt, choose the version that makes you wince and then laugh, or laugh and then wince \u2014 both are correct.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism is a craft failure equivalent to a plot hole. When a scene requires the reader to sit with discomfort \u2014 economic shame, marital cruelty, parental failure, institutional humiliation, the specific indignity of being professionally redundant \u2014 render it with full specificity. 'They struggled with the situation' is not a sentence that belongs in this novel. Name the thing. Show the body. Let the reader be uncomfortable.",
+      "intimacy_and_desire_policy": "Dan and Mira's residual physical attraction is a narrative force, not background radiation. When the novel's relational pressure calls for it, render desire with the same specificity as any other emotional state \u2014 where in the body it lives, how it changes the air in a room, the precise quality of proximity when two people who know each other's bodies are trying to pretend they don't. The almost-kiss in Chapter 7 should be as fully rendered as any confrontation scene.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "register_commitment": "This is a dark comedy, not a cautionary tale, not a dystopia, not a satire with a thesis. The novel should not argue about AI. It should render what it feels like to be a body in a world where bodies are overhead. The comic register is not a veneer over a serious message \u2014 it IS the message. A scene that is genuinely funny about genuine suffering is doing more literary work than a scene that is solemnly observant about the same material.",
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the default for all spoken English in this novel. Uncontracted forms should be reserved for deliberate emphasis, Lena Morse's institutional register, or moments where a character is being carefully precise. If a line of dialogue uses 'do not' instead of 'don't' or 'I am' instead of 'I'm,' there should be a reason audible in the scene's pressure.",
+      "idiolect_separation_required": true,
+      "interruption_and_overlap_policy": "Use interruptions, sentence fragments, and crosstalk when scene pressure warrants. Dan and Mira in particular should interrupt each other \u2014 they know each other's arguments before the sentences end. But every interruption must be motivated; do not scatter dashes for rhythmic texture alone.",
+      "leverage_shift_guidance": "Every exchange of more than three lines should shift the power balance between speakers. This doesn't require overt conflict \u2014 a silence, a deflection, a piece of information withheld or accidentally revealed, a joke that lands wrong, a question left unanswered can all shift leverage. The dialogue must be going somewhere, not circling.",
+      "max_consecutive_low_info_replies": 2,
+      "required_leverage_shifts_per_scene": 1,
+      "silence_as_dialogue": "Silence, non-answers, and topic changes are valid dialogue moves and often more revealing than speech. When a character doesn't respond to something, the reader should feel the weight of what wasn't said. Render these moments through physical action or observed stillness, not by narrating that the character chose not to speak."
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "No two consecutive chapters should share the same structural rhythm. Vary: scene count (single-scene compression vs. multi-scene chapters), dialogue density (some chapters are conversation-heavy, others are nearly silent), interiority depth (some chapters live mostly in the POV character's head, others are externally rendered), pacing (some chapters cover hours, others cover weeks in montage), and tonal register (comic chapters adjacent to devastating ones). The contrast between chapters is itself a narrative tool \u2014 use it to create whiplash, irony, and accumulating emotional force.",
+      "diction": "Contemporary, precise, and register-sensitive. The prose absorbs the vocabulary of its setting: corporate language, tech terminology, bureaucratic formulas \u2014 but always filtered through the POV character's relationship to that language. Dan uses corporate words reflexively and with slight discomfort. Mira uses strategic vocabulary as native speech. The narrator should not editorialize on the language; let the words sit in context and let the reader hear the dissonance. Avoid: prestige-literary abstractions that haven't been earned by sensory grounding, and journalistic explainer-prose that breaks character to tell the reader about the world.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person, rotating between Dan and Mira as primary POV characters. The camera stays tight to the current POV character's perceptions and vocabulary \u2014 what Dan notices is different from what Mira notices. In shared-POV chapters, the rotation should be clear (section breaks or sustained passages in one POV before shifting) rather than head-hopping within a scene.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Varied and responsive to scene pressure. Short declarative sentences for comic timing, for shock, and for moments of clarity. Longer, more syntactically complex sentences for interiority, sensory immersion, and emotional complexity. The rhythm should accelerate during confrontation and slow during reflection. Avoid settling into any single rhythmic default \u2014 if three consecutive paragraphs use the same sentence structure, one of them is wrong.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

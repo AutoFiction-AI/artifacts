@@ -1,0 +1,57 @@
+{
+  "chapter_id": "chapter_17",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_17_F001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_02/chapters/chapter_17.md:313",
+      "problem": "The chapter introduces postpartum stitches only retrospectively (\"stitched flesh\") after eliding the tear assessment/repair sequence, so a major bodily consequence is summarized away at the point where the scene should stay fully embodied. This is sanitization drift (summary replacing scene) in a high-consequence passage.",
+      "rewrite_direction": "Expand the immediate postpartum block around snapshots/cycle_02/chapters/chapter_17.md:211, snapshots/cycle_02/chapters/chapter_17.md:213, snapshots/cycle_02/chapters/chapter_17.md:215, and snapshots/cycle_02/chapters/chapter_17.md:221 to render Keane's tear assessment and repair decision/action in-scene (or an explicit deferred-repair rationale). Then align snapshots/cycle_02/chapters/chapter_17.md:313 so later pain/clot management clearly follows from what was already shown.",
+      "acceptance_test": "PASS if the revised text in the 211-221 block includes at least one explicit repair-related action and one explicit physical sensation tied to that action/decision, and line 313 no longer introduces stitches as new information. FAIL if repair remains implied only by retrospective mention."
+    },
+    {
+      "finding_id": "chapter_17_F002",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_02/chapters/chapter_17.md:99",
+      "problem": "Noreen's reassurance line (\"You've done hard things before. This is one more and we do it together.\") reads as generic endurance coaching and blunts her voice profile, which explicitly forbids saintly/generic support slogans.",
+      "rewrite_direction": "Rewrite the encouragement beat at snapshots/cycle_02/chapters/chapter_17.md:99 (and, if needed, nearby setup at snapshots/cycle_02/chapters/chapter_17.md:73) using Noreen's idiolect: colloquial contraction, concrete room-level sensory anchor, and her clipped under-pressure cadence instead of abstract motivational phrasing.",
+      "acceptance_test": "PASS if Noreen's revised support line in the 99-area includes a specific sensory/situational anchor from the room and avoids abstract pep-talk language (for example, \"hard things\"/\"we can do this\" formulas). FAIL if the line remains interchangeable with generic encouragement dialogue."
+    },
+    {
+      "finding_id": "chapter_17_F003",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_02/chapters/chapter_17.md:21",
+      "problem": "Across urgent exchanges, multiple spoken lines drift into full-form auxiliaries/negatives (e.g., \"You should not... I will...\", \"He is not...\", \"does not...\", \"I will witness\"), creating pockets of stiff formality against the chapter's high-contraction spoken baseline.",
+      "rewrite_direction": "Rework spoken lines at snapshots/cycle_02/chapters/chapter_17.md:21, snapshots/cycle_02/chapters/chapter_17.md:95, snapshots/cycle_02/chapters/chapter_17.md:117, and snapshots/cycle_02/chapters/chapter_17.md:271 toward contractions unless deliberate legal/clinical emphasis is intended and legible in context.",
+      "acceptance_test": "PASS if at least three of those four targeted full-form constructions are converted to contractions, and any remaining uncontracted form reads as intentional emphasis. FAIL if multiple unmotivated full-form clauses remain in pressure dialogue."
+    },
+    {
+      "finding_id": "chapter_17_F004",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_02/chapters/chapter_17.md:65",
+      "problem": "Assent beats overuse a repeated \"single nod\" construction (see also lines 141 and 299), which reads as a recurring prose formula rather than a fresh physical response.",
+      "rewrite_direction": "Replace at least two assent beats at snapshots/cycle_02/chapters/chapter_17.md:65, snapshots/cycle_02/chapters/chapter_17.md:141, and snapshots/cycle_02/chapters/chapter_17.md:299 with differentiated actions tied to scene logistics (for example, tool handling, door positioning, bike preparation, or eye-line shifts).",
+      "acceptance_test": "PASS if no more than two nod-based assent beats remain across those three locations and each retained assent beat is paired with a distinct physical action. FAIL if all three locations still resolve primarily as nod variants."
+    }
+  ],
+  "summary": "Chapter 17 lands core causality (flood labor, husband absence, women-led delivery, and witnessed guardian designation) and stays continuity-consistent, but it fails craft/dialogue/prose at review threshold due one high-severity sanitization gap in postpartum embodiment, plus unresolved dialogue-register drift and a recurring prose gesture tic.",
+  "coverage_scene_ids": [
+    "chapter_17_scene_01_flood_onset",
+    "chapter_17_scene_02_active_labor",
+    "chapter_17_scene_03_dawn_guardianship"
+  ]
+}

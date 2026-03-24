@@ -1,0 +1,95 @@
+{
+  "acceptance_targets": [
+    "[chapter_02_F001] PASS only if the revised passage in the 334-390 span contains at most one checklist-style block and includes at least two concrete embodied consequences (e.g., bodily stress response, intrusive memory, or self-condemning thought) tied directly to the Tomas revelation; FAIL if process vocabulary again becomes the primary carrier of tension.",
+    "[chapter_02_F002] PASS only if each of the three beats (initial call, note capture, follow-up call) introduces non-overlapping narrative value; FAIL if the date/address/witness absence is restated without a new decision or consequence in at least one of those beats.",
+    "[chapter_02_F007] PASS only if the post-email section shows one concrete same-night action with legal/exposure risk (not just discussion) before tonal decompression; FAIL if the sequence still pivots directly from legal hold to comfort banter without enacted consequence."
+  ],
+  "chapter_id": "chapter_02",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS only if the revised passage in the 334-390 span contains at most one checklist-style block and includes at least two concrete embodied consequences (e.g., bodily stress response, intrusive memory, or self-condemning thought) tied directly to the Tomas revelation; FAIL if process vocabulary again becomes the primary carrier of tension.",
+      "chapter_id": "chapter_02",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:338; snapshots/cycle_02/chapters/chapter_02.md:349; snapshots/cycle_02/chapters/chapter_02.md:370; snapshots/cycle_02/chapters/chapter_02.md:388",
+      "finding_id": "chapter_02_F001",
+      "problem": "Sanitization drift: at the moment of family-truth rupture, the chapter repeatedly retreats into administrative listwork and process language (claims/data-missing/usable/chain-of-custody), which defuses immediate emotional and moral consequence instead of sustaining scene-level discomfort.",
+      "rewrite_direction": "Rework the sequence anchored at snapshots/cycle_02/chapters/chapter_02.md:338 and snapshots/cycle_02/chapters/chapter_02.md:349 so one concise evidence log remains but the surrounding beats carry embodied destabilization (thought, sensation, self-accusation). At snapshots/cycle_02/chapters/chapter_02.md:370 and snapshots/cycle_02/chapters/chapter_02.md:388, keep procedural stakes but attach each process step to a concrete personal cost visible on-page.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS only if each of the three beats (initial call, note capture, follow-up call) introduces non-overlapping narrative value; FAIL if the date/address/witness absence is restated without a new decision or consequence in at least one of those beats.",
+      "chapter_id": "chapter_02",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:232; snapshots/cycle_02/chapters/chapter_02.md:338; snapshots/cycle_02/chapters/chapter_02.md:366",
+      "finding_id": "chapter_02_F002",
+      "problem": "Second-scene momentum stalls because the same evidentiary beat is repeated in near-identical form across phone call, notes app, and recap call; leverage does not materially shift between iterations.",
+      "rewrite_direction": "Condense duplicate restatements around snapshots/cycle_02/chapters/chapter_02.md:232, snapshots/cycle_02/chapters/chapter_02.md:338, and snapshots/cycle_02/chapters/chapter_02.md:366 so each recurrence adds new consequence (legal, relational, or sobriety risk) rather than reprinting the same claim set.",
+      "severity": "MEDIUM",
+      "source": "booker",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS only if the post-email section shows one concrete same-night action with legal/exposure risk (not just discussion) before tonal decompression; FAIL if the sequence still pivots directly from legal hold to comfort banter without enacted consequence.",
+      "chapter_id": "chapter_02",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:380; snapshots/cycle_02/chapters/chapter_02.md:390; snapshots/cycle_02/chapters/chapter_02.md:400",
+      "finding_id": "chapter_02_F007",
+      "problem": "Timidity: after a major legal escalation (Nora's legal hold), the scene quickly eases into low-pressure banter, muting the immediate institutional threat the chapter just introduced.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_02.md:380 and snapshots/cycle_02/chapters/chapter_02.md:390, keep the phone support dynamic but add an immediate high-risk action or consequence before the lighter exchange at snapshots/cycle_02/chapters/chapter_02.md:400.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "ec468c0ce65852f187878be31ed3de109f0603149e3f04112d8f92ccf324408f",
+  "must_fix_count": 3,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "When choosing between reputationally safe abstraction and specific discomfort, choose specificity. Render addiction, sexuality, deceit, class shame, and grief at lived scale. In edge cases, preserve character truth and causal accountability over reader comfort or institutional decorum.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene demands bodily, moral, or economic specificity, euphemistic phrasing is treated as a failed draft and must be rewritten with concrete stakes and observable consequence.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the spoken default; full forms appear only for emphasis, ritual language, or character-specific formal posture",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate scene density and pressure modes: pair high-conflict chapters with quiet domestic or documentary chapters, vary dialogue-to-interiority ratios, and prevent identical chapter skeletons in consecutive sequence.",
+      "diction": "contemporary literary diction with class-aware, borough-specific concreteness; avoid prestige-neutral workshop language",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third centered on Marisol, with rare brief distance expansions for institutional scenes",
+      "narrative_tense": "past tense",
+      "rhythm_target": "alternating tensile compression and reflective extension; line-level cadence should carry emotional pressure, not just information",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

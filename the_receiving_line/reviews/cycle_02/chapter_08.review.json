@@ -1,0 +1,22 @@
+{
+  "chapter_id": "chapter_08",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "PASS",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_08_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_02/chapters/chapter_08.md:63; snapshots/cycle_02/chapters/chapter_08.md:139; snapshots/cycle_02/chapters/chapter_08.md:189; snapshots/cycle_02/chapters/chapter_08.md:205; snapshots/cycle_02/chapters/chapter_08.md:269; snapshots/cycle_02/chapters/chapter_08.md:337; snapshots/cycle_02/chapters/chapter_08.md:419",
+      "problem": "The prose relies too often on the same negation-and-correction emphasis scaffold ('not X ... Y' / 'It was not X. It was Y.'). Repeated this many times in one chapter, the move stops sharpening pressure and starts to feel like an authorial tic that pre-explains beats the scene has already earned.",
+      "rewrite_direction": "Revise the highlighted pivots at snapshots/cycle_02/chapters/chapter_08.md:63, snapshots/cycle_02/chapters/chapter_08.md:139, snapshots/cycle_02/chapters/chapter_08.md:189, snapshots/cycle_02/chapters/chapter_08.md:205, snapshots/cycle_02/chapters/chapter_08.md:269, snapshots/cycle_02/chapters/chapter_08.md:337, and snapshots/cycle_02/chapters/chapter_08.md:419 so most of those beats land in direct sensory or judgment language instead of being defined by what they are not. Keep the meaning, but vary the sentence architecture: let some beats arrive as blunt affirmations, some as image, and some as action consequence.",
+      "acceptance_test": "FAIL if the revised spans at snapshots/cycle_02/chapters/chapter_08.md:63-64, snapshots/cycle_02/chapters/chapter_08.md:139-145, snapshots/cycle_02/chapters/chapter_08.md:189-190, snapshots/cycle_02/chapters/chapter_08.md:205-206, snapshots/cycle_02/chapters/chapter_08.md:269-271, snapshots/cycle_02/chapters/chapter_08.md:337-343, and snapshots/cycle_02/chapters/chapter_08.md:419 contain no more than one repeated 'not X / it was Y' reversal across the set. PASS if at least three of those targeted beats now state the concrete reality directly without a negation setup while preserving the same narrative meaning."
+    }
+  ],
+  "summary": "Chapter 8 lands the required collective-refusal turn with strong spatial choreography, unsanitized bodily consequence, and voice-consistent dialogue for Marisol, Gabriel, Naila, Paloma, and Teresa. It passes booker, craft, and dialogue review, but fails prose review because the chapter repeatedly falls back on the same negation-and-reversal sentence shape, which starts to flatten emphasis across otherwise vivid material."
+}

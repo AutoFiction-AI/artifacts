@@ -1,0 +1,70 @@
+{
+  "acceptance_targets": [
+    "[ch17_dialogue_001] PASS if Prue still makes clear that Owen is withholding available help, but at least two of the cited beats now contain a visible hitch, restart, or practical interruption, and the narration no longer comments on a line landing cleanly. FAIL if the exchange still reads as a chain of thesis statements or if the prose still spotlights the rhetoric as a polished line."
+  ],
+  "chapter_id": "chapter_17",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if Prue still makes clear that Owen is withholding available help, but at least two of the cited beats now contain a visible hitch, restart, or practical interruption, and the narration no longer comments on a line landing cleanly. FAIL if the exchange still reads as a chain of thesis statements or if the prose still spotlights the rhetoric as a polished line.",
+      "chapter_id": "chapter_17",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_17.md:59; snapshots/cycle_01/chapters/chapter_17.md:197; snapshots/cycle_01/chapters/chapter_17.md:251; snapshots/cycle_01/chapters/chapter_17.md:253",
+      "finding_id": "ch17_dialogue_001",
+      "problem": "Prue's confrontation keeps resolving into balanced, quotable verdicts, and the narration at line 253 explicitly scores one of them as a clean line. That pushes the scene toward composed argument instead of the style-bible target for Prue under pressure: quieter, more exact, but also more re-angled, repaired, and humanly messy.",
+      "rewrite_direction": "Roughen snapshots/cycle_01/chapters/chapter_17.md:59, snapshots/cycle_01/chapters/chapter_17.md:197, snapshots/cycle_01/chapters/chapter_17.md:251, and snapshots/cycle_01/chapters/chapter_17.md:253. Keep Prue's moral accusation intact, but break at least two of those beats with interruption, self-correction, or concrete business, and remove the narrator's meta-commentary about how neatly the sentence lands.",
+      "severity": "MEDIUM",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "cecf42ef9c4485237252c1a9d41f0b9b8ab0e01e4ef008d1133de2aed4e7f414",
+  "must_fix_count": 1,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on dialogue realism and voice separation: idiolect fidelity, leverage shifts, pressure cadence, anti-transcript behavior, natural colloquial texture (contractions/interruptions/slang when character-true), pressure-true profanity usage per aesthetic risk policy, and preservation of productive roughness (false starts, evasions, repetitions, unfinished turns) rather than polishing speech flat.",
+    "key": "p2_dialogue_idiolect_cadence",
+    "label": "dialogue/idiolect/cadence fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into the premise's sharpest contradiction: school-year comedy, adolescent awkwardness, punitive cruelty, and cosmic dread may coexist in the same novel without canceling each other. When a scene offers a cleaner version and a truer version, choose the truer one unless the character is actively refusing perception on the page.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If pain, cruelty, fear, or moral ugliness would leave a bodily or environmental trace, render that trace instead of summarizing it into tasteful haze.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High. Contractions are the spoken norm for most characters; fuller forms are reserved for Snape, ritual language, or deliberate emphasis.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate scene density, dialogue load, and movement mode aggressively: confrontation against quiet meals, subterranean revelation against corridor farce, ritual compression against spring drift, so no consecutive chapters feel built from the same emotional or structural template.",
+      "diction": "British boarding-school realism under wartime pressure, with speculative vocabulary introduced only when Owen's attention earns it.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third limited through Owen, with only brief sensory widenings that he could plausibly notice in the moment.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Alternate analytic accumulation with blunt corporeal sentences. Quiet chapters should breathe; punishment and ritual chapters should tighten without clipping grammar.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

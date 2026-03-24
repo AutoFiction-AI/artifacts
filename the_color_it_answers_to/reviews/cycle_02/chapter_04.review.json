@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_04",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_04_craft_001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:225 has Silas name Gideon Wren, Verdancy House, the payment, and the noon deadline to Inez; snapshots/cycle_02/chapters/chapter_04.md:265 has Inez answer with a Wren-specific prohibition.",
+      "problem": "This creates a continuity contradiction with the canon knowledge state in outline/continuity_sheet.json, which says Silas's Gideon exclusivity tie and loss of neutrality stay hidden from Inez until chapter_10. Letting Inez learn the patron, payment, and immediate commercial brief here weakens the later betrayal/reveal arc and makes her chapter-end terms react to information she should not yet have.",
+      "rewrite_direction": "Revise the confession exchange starting at snapshots/cycle_02/chapters/chapter_04.md:221 and the ultimatum starting at snapshots/cycle_02/chapters/chapter_04.md:265 so Silas can admit divided motives and economic pressure without naming Gideon, Verdancy, the paid deadline, or any contract-level detail. Keep the moral split visible to the reader, but keep Inez's on-page knowledge general enough that the chapter_10 reveal still has somewhere to land.",
+      "acceptance_test": "Pass if the revised passage at snapshots/cycle_02/chapters/chapter_04.md:221 and snapshots/cycle_02/chapters/chapter_04.md:265 lets a first-time reader reach chapter end without Inez learning Gideon's name, Verdancy House, a paid naming deadline, or any explicit exclusivity arrangement. Fail if those specifics are still spoken or if Inez's response shows she already knows Silas is tied to Wren in particular."
+    },
+    {
+      "finding_id": "chapter_04_booker_001",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:37, snapshots/cycle_02/chapters/chapter_04.md:59, snapshots/cycle_02/chapters/chapter_04.md:91, snapshots/cycle_02/chapters/chapter_04.md:167, and snapshots/cycle_02/chapters/chapter_04.md:189 each restage the same proof that local names encode use; snapshots/cycle_02/chapters/chapter_04.md:247 resumes summarizing the lesson after Silas has already conceded it at snapshots/cycle_02/chapters/chapter_04.md:183.",
+      "problem": "The chapter's discovery engine is over-proven. Once potback/threadshow, stepblue, and fingerbiter have all demonstrated the naming logic in action, the propagation-run speech and rooftop recap start to feel like a tutorial repeating itself rather than a scene escalating. That costs momentum in the final third, where the Gideon pressure and provisional alliance should be carrying the chapter instead of another round of explanation.",
+      "rewrite_direction": "Compress or repurpose one of the explanatory beats beginning at snapshots/cycle_02/chapters/chapter_04.md:187 or snapshots/cycle_02/chapters/chapter_04.md:247. After Silas's 'Not one' turn at snapshots/cycle_02/chapters/chapter_04.md:183, spend the remaining space on new leverage: the cost of his contract, what collaboration actually requires, or a concrete next hazard in the ward, rather than restating the use-name thesis in abstract terms.",
+      "acceptance_test": "Pass if every exchange after snapshots/cycle_02/chapters/chapter_04.md:183 either adds a new stake, changes the leverage between Silas and Inez, or introduces new Gideon pressure not already dramatized. Fail if the revised last third still includes a passage whose main function is simply to restate that names are practical instructions or memory after the reader has already seen that proved in scene."
+    },
+    {
+      "finding_id": "chapter_04_dialogue_001",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:9, snapshots/cycle_02/chapters/chapter_04.md:33, snapshots/cycle_02/chapters/chapter_04.md:49, snapshots/cycle_02/chapters/chapter_04.md:159, and snapshots/cycle_02/chapters/chapter_04.md:177 all land in the same polished, quotable aphoristic rhythm despite belonging to Vero, Marta, Nessa, and Ruthie.",
+      "problem": "The ward women are vivid in description, but too many of their spoken lines share the same neatly turned, authorially polished cadence. That blurs idiolect separation and especially underserves Aunt Vero, whose style-bible syntax should meander, double back, and then land hard rather than staying in short epigram mode. The result is that Inez's controlled sharpness bleeds into multiple side voices instead of each woman sounding shaped by her own labor pressure.",
+      "rewrite_direction": "Rework the exchanges anchored at snapshots/cycle_02/chapters/chapter_04.md:9, snapshots/cycle_02/chapters/chapter_04.md:33, snapshots/cycle_02/chapters/chapter_04.md:49, and snapshots/cycle_02/chapters/chapter_04.md:159 so each speaker carries a distinct lexical field and sentence rhythm. Give Vero at least one looping, baiting sentence with bodily or fermentation texture; let Marta stay stove-and-supper practical; let Nessa's syntax feel tied to sewing, mourning, and baby-handling; let Ruthie sound interrupted by childcare and iron work rather than like another polished wit machine.",
+      "acceptance_test": "Pass if the revised dialogue at snapshots/cycle_02/chapters/chapter_04.md:9, snapshots/cycle_02/chapters/chapter_04.md:33, snapshots/cycle_02/chapters/chapter_04.md:49, and snapshots/cycle_02/chapters/chapter_04.md:159 gives each named speaker at least one line that remains attributable without a tag because its diction and rhythm are uniquely hers. Fail if those lines can still be swapped between Vero, Marta, Nessa, Ruthie, and Inez with little or no adjustment."
+    },
+    {
+      "finding_id": "chapter_04_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:11, snapshots/cycle_02/chapters/chapter_04.md:39, snapshots/cycle_02/chapters/chapter_04.md:63, snapshots/cycle_02/chapters/chapter_04.md:75, snapshots/cycle_02/chapters/chapter_04.md:95, snapshots/cycle_02/chapters/chapter_04.md:137, snapshots/cycle_02/chapters/chapter_04.md:185, snapshots/cycle_02/chapters/chapter_04.md:227, and snapshots/cycle_02/chapters/chapter_04.md:277 repeatedly lean on 'the way ...' and 'as if ...' comparison scaffolds.",
+      "problem": "The chapter has strong sensory texture, but its image-making starts to show a repeated sentence template. The recurring 'the way ...' and 'as if ...' constructions announce authorial style instead of varying the prose pressure from paragraph to paragraph, which is exactly the kind of recurring formula the constitution and review brief tell you to flag once it shows up three or more times in a chapter.",
+      "rewrite_direction": "Keep only the strongest comparison frames in the descriptive spans beginning at snapshots/cycle_02/chapters/chapter_04.md:11, snapshots/cycle_02/chapters/chapter_04.md:75, snapshots/cycle_02/chapters/chapter_04.md:137, and snapshots/cycle_02/chapters/chapter_04.md:227. Rewrite the other marked lines into direct sensory observation, action, or a different sentence shape so the chapter's images stop arriving through the same hinge.",
+      "acceptance_test": "Pass if the revised paragraphs anchored at snapshots/cycle_02/chapters/chapter_04.md:11, snapshots/cycle_02/chapters/chapter_04.md:39, snapshots/cycle_02/chapters/chapter_04.md:63, snapshots/cycle_02/chapters/chapter_04.md:75, snapshots/cycle_02/chapters/chapter_04.md:95, snapshots/cycle_02/chapters/chapter_04.md:137, snapshots/cycle_02/chapters/chapter_04.md:185, snapshots/cycle_02/chapters/chapter_04.md:227, and snapshots/cycle_02/chapters/chapter_04.md:277 contain no more than two remaining 'the way ...' constructions and no more than two remaining 'as if ...' constructions across those cited passages. Fail if either comparison frame still appears three or more times in those same targeted passages."
+    }
+  ],
+  "summary": "The chapter has real strengths: the wet civic-biology setting is concrete, Silas stays plausibly close-third, and the Silas/Inez attraction grows through shared competence rather than detached flirtation. It still fails review because one HIGH continuity breach reveals Silas's Gideon tie to Inez too early, the middle-to-late scene overexplains a lesson the chapter has already dramatized, several ward voices collapse toward the same polished aphoristic cadence, and the prose leans too often on repeated 'the way/as if' comparison formulas."
+}

@@ -1,0 +1,36 @@
+{
+  "chapter_id": "chapter_07",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_07_craft_001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_02/chapters/chapter_07.md:249",
+      "problem": "Right before Mira kisses Tavi, the narration explicitly assures the reader that the desire is unrelated to the assaulted client who just left. That sentence works as a moral safety valve: it pre-clears the ethics of the scene instead of letting the recent injury, bodily residue, and compromised room remain active pressure. Given the constitution's sanitization standard, that is a craft failure, not a harmless clarification.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_07.md:249 and snapshots/cycle_02/chapters/chapter_07.md:251 so the room's contamination stays present without narratorial acquittal. Keep Luz's residue, the red-bin/sweet-rot context, and Mira's desire in the same frame, but remove the sentence that explicitly clears the sex of ethical contamination; let Mira choose the kiss under pressure rather than having the prose certify her innocence first.",
+      "acceptance_test": "PASS if the revised passage at snapshots/cycle_02/chapters/chapter_07.md:249-253 preserves the client's residue in the room and moves into the kiss without any sentence that explicitly says the sex is unrelated to Luz or otherwise morally clears Mira and Tavi in advance. FAIL if an exculpatory aside still appears before the kiss."
+    },
+    {
+      "finding_id": "chapter_07_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_02/chapters/chapter_07.md:189; snapshots/cycle_02/chapters/chapter_07.md:253; snapshots/cycle_02/chapters/chapter_07.md:347; snapshots/cycle_02/chapters/chapter_07.md:375; snapshots/cycle_02/chapters/chapter_07.md:477; snapshots/cycle_02/chapters/chapter_07.md:497",
+      "problem": "The back half develops a noticeable sentence-engine tic. Major emotional turns keep arriving through the same comparison and observation scaffolds, especially repeated 'as if' constructions and repeated 'He looked...' entries into Tavi's state. The prose stays strong at the image level, but these recycled hinges start to flatten the chapter's most important turns into variations on the same move.",
+      "rewrite_direction": "Rework the repeated scaffold sentences at snapshots/cycle_02/chapters/chapter_07.md:189, snapshots/cycle_02/chapters/chapter_07.md:253, snapshots/cycle_02/chapters/chapter_07.md:347, snapshots/cycle_02/chapters/chapter_07.md:375, snapshots/cycle_02/chapters/chapter_07.md:477, and snapshots/cycle_02/chapters/chapter_07.md:497. Keep Mira's close POV, but vary how she reads Tavi and the room: use posture, breath, hand pressure, voice break, spatial hesitation, or object interaction instead of repeatedly leaning on 'as if' comparison hinges or 'He looked...' sentence starts.",
+      "acceptance_test": "PASS if the revised passages at snapshots/cycle_02/chapters/chapter_07.md:347-377 and snapshots/cycle_02/chapters/chapter_07.md:477-499 use no more than one 'He looked...' sentence total and render at least two of Tavi's state changes through nonvisual cues such as posture, breath, hand movement, or voice. PASS only if one of the comparison-led sentences at snapshots/cycle_02/chapters/chapter_07.md:189 or snapshots/cycle_02/chapters/chapter_07.md:253 is also rewritten into a more direct formulation. FAIL if the same scaffolds still carry consecutive emotional beats."
+    }
+  ],
+  "summary": "Chapter 7 strongly lands the required seduction-and-confession architecture, keeps continuity intact, honors the style bible's tense and voice rules, and gives Mira, Tavi, Luz, and Jo distinct dialogue. It still fails review on craft and prose because the narration inserts a HIGH-severity moral safety valve at the threshold of the sex scene and the back half accumulates a MEDIUM-level prose tic through repeated comparison and observation scaffolds.",
+  "coverage_scene_ids": [
+    "blue_hour_luz_repair",
+    "mira_tavi_sex_and_confession"
+  ]
+}

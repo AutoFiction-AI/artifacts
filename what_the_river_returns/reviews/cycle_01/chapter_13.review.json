@@ -1,0 +1,72 @@
+{
+  "chapter_id": "chapter_13",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH13-F001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:338",
+      "problem": "Sanitization drift at the chapter's pressure point: the final risk statement retreats into bureaucratic euphemism (\"Foreseeable blind-spot vulnerability\") and clipped grammar (missing function word in \"due legal\"), defusing bodily consequence right where dread should peak.",
+      "rewrite_direction": "Revise the close at snapshots/cycle_01/chapters/chapter_13.md:336, snapshots/cycle_01/chapters/chapter_13.md:338, and snapshots/cycle_01/chapters/chapter_13.md:344 so the memo line remains legally precise but is grammatically complete and immediately paired with concrete human consequence (named person/path at risk if the lane fails). Keep the procedural frame, but do not let abstraction be the only texture.",
+      "acceptance_test": "PASS if the revised passage at snapshots/cycle_01/chapters/chapter_13.md:336 through snapshots/cycle_01/chapters/chapter_13.md:344 contains (a) a grammatically complete risk sentence with explicit causality (including \"due to\" or equivalent), and (b) at least one concrete, physical consequence tied to a specific person in-scene; FAIL if stakes remain only abstract policy nouns."
+    },
+    {
+      "finding_id": "CH13-F002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:3",
+      "problem": "Opening stretch reads like screenplay blocking: the chapter runs more than ten consecutive paragraphs before clear interior access to Lena (first explicit interior beat appears at line 55), weakening close-third anchoring.",
+      "rewrite_direction": "Inject focalized interior beats into the opening run at snapshots/cycle_01/chapters/chapter_13.md:9, snapshots/cycle_01/chapters/chapter_13.md:21, snapshots/cycle_01/chapters/chapter_13.md:35, and snapshots/cycle_01/chapters/chapter_13.md:49 so pressure registers as thought/sensation/memory before the line-55 pivot.",
+      "acceptance_test": "PASS if revised span snapshots/cycle_01/chapters/chapter_13.md:3 through snapshots/cycle_01/chapters/chapter_13.md:53 include at least three distinct paragraphs with explicit Lena interiority (thought, sensation, memory, or self-assessment) and no run longer than six consecutive paragraphs without such access; FAIL otherwise."
+    },
+    {
+      "finding_id": "CH13-F003",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:83; snapshots/cycle_01/chapters/chapter_13.md:123; snapshots/cycle_01/chapters/chapter_13.md:151; snapshots/cycle_01/chapters/chapter_13.md:225; snapshots/cycle_01/chapters/chapter_13.md:297; snapshots/cycle_01/chapters/chapter_13.md:326",
+      "problem": "Recurring \"X looked...\" construction appears well beyond twice, creating a visible prose tic that flattens moment-to-moment perception.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_13.md:83, snapshots/cycle_01/chapters/chapter_13.md:123, snapshots/cycle_01/chapters/chapter_13.md:151, snapshots/cycle_01/chapters/chapter_13.md:225, snapshots/cycle_01/chapters/chapter_13.md:297, and snapshots/cycle_01/chapters/chapter_13.md:326, replace at least four \"looked\" clauses with differentiated physical or cognitive actions tied to each character's intent.",
+      "acceptance_test": "PASS if the cited span contains no more than two uses of \"looked/looked at\" after revision and each replacement conveys a distinct perceptual mode (movement, touch, inference, or avoidance); FAIL if the repeated template still dominates."
+    },
+    {
+      "finding_id": "CH13-F004",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:223; snapshots/cycle_01/chapters/chapter_13.md:271; snapshots/cycle_01/chapters/chapter_13.md:275; snapshots/cycle_01/chapters/chapter_13.md:277; snapshots/cycle_01/chapters/chapter_13.md:281; snapshots/cycle_01/chapters/chapter_13.md:285",
+      "problem": "During the corridor standoff, Lena, Eleanor, and Kline converge into similarly polished policy syntax. Under scene pressure, idiolect separation softens and the exchange loses interruption/friction texture.",
+      "rewrite_direction": "Rework the confrontation at snapshots/cycle_01/chapters/chapter_13.md:223 through snapshots/cycle_01/chapters/chapter_13.md:285 so Lena's stress pattern shifts into harder compact bursts, Kline uses more field-ops idiom and contractor pragmatics, and Eleanor's legalistic control shows through revisions/qualifiers rather than matching everyone else's cadence.",
+      "acceptance_test": "PASS if revised span snapshots/cycle_01/chapters/chapter_13.md:223 through snapshots/cycle_01/chapters/chapter_13.md:285 includes at least one clearly distinguishable syntax/rhythm marker per speaker (Lena, Eleanor, Kline) plus at least two pressure artifacts (interruption, cut-off, broken clause, or overlap); FAIL if lines remain interchangeable in register."
+    },
+    {
+      "finding_id": "CH13-F005",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:45; snapshots/cycle_01/chapters/chapter_13.md:69; snapshots/cycle_01/chapters/chapter_13.md:113",
+      "problem": "Thomas is framed as the imminent target but remains mostly reactive; he exits without making a consequential decision that changes the tactical reality, reducing character-driven causality.",
+      "rewrite_direction": "In snapshots/cycle_01/chapters/chapter_13.md:69 through snapshots/cycle_01/chapters/chapter_13.md:123, give Thomas one explicit decision with operational consequence (for example, refusing/signed condition on the limits sheet, route change, or access concession) that materially affects the later deployment plan at snapshots/cycle_01/chapters/chapter_13.md:305 through snapshots/cycle_01/chapters/chapter_13.md:310.",
+      "acceptance_test": "PASS if, by the end of snapshots/cycle_01/chapters/chapter_13.md:111 through snapshots/cycle_01/chapters/chapter_13.md:123, Thomas performs a decision/action that is explicitly reflected in at least one assignment or restriction in snapshots/cycle_01/chapters/chapter_13.md:305 through snapshots/cycle_01/chapters/chapter_13.md:310; FAIL if he remains only a worried observer."
+    },
+    {
+      "finding_id": "CH13-F006",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:55",
+      "problem": "Mechanical token reuse: \"stress tells\" reads like imported style-bible taxonomy instead of lived narration, briefly exposing the calibration scaffolding inside the prose.",
+      "rewrite_direction": "Replace the label-driven phrasing at snapshots/cycle_01/chapters/chapter_13.md:55 with embodied behavior (breath, cadence shift, verbal compression) so Lena's stress transition is shown rather than categorized.",
+      "acceptance_test": "PASS if snapshots/cycle_01/chapters/chapter_13.md:55 is rewritten to depict behavior without profile-taxonomy terms (e.g., \"stress tells\", \"register\", \"signature\") while still making Lena's pressure shift legible; FAIL if metadata-like wording remains."
+    }
+  ],
+  "summary": "Chapter 13 lands core continuity beats (dread-prep structure, Pike's private admission, explicit operational weakness) and stays in canonical past tense, but it fails review on unresolved MEDIUM+ craft and causality issues: a sanitized bureaucratic close at the emotional peak, early screenplay-style interiority drought, repeated prose templates, dialogue idiolect flattening in the key standoff, and a passive target figure who does not materially bend events."
+}

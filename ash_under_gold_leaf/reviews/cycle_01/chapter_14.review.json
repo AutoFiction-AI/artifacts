@@ -1,0 +1,72 @@
+{
+  "chapter_id": "chapter_14",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_14_F001",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:279",
+      "problem": "The chapter's key reveal (the pawn ticket) is triggered by accidental drawer rummaging rather than a character-driven decision, which weakens causal pressure at the exact turning point.",
+      "rewrite_direction": "Rework the discovery beat so agency drives it: either Carina deliberately produces the ticket or Marisol intentionally asks to see rehab-payment records before opening the drawer. Target `snapshots/cycle_01/chapters/chapter_14.md:273` through `snapshots/cycle_01/chapters/chapter_14.md:281` and keep the same downstream reveal content.",
+      "acceptance_test": "PASS if, in the revised `snapshots/cycle_01/chapters/chapter_14.md:273-281` span, the ticket appears because of an explicit choice (request, challenge, or deliberate reveal) stated on-page; FAIL if the reveal still depends on incidental tape-search coincidence."
+    },
+    {
+      "finding_id": "chapter_14_F002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:113",
+      "problem": "A long exteriority run turns the chapter into staged logistics: from errands through takeout, the focalizer mostly reports action/dialogue without interior thought/sensation until later, causing screenplay drift.",
+      "rewrite_direction": "Add short interior beats tied to immediate stimuli during the errands sequence, not retrospective summary. Insert at least two interior moments in `snapshots/cycle_01/chapters/chapter_14.md:125`-`snapshots/cycle_01/chapters/chapter_14.md:171` and one in `snapshots/cycle_01/chapters/chapter_14.md:181`-`snapshots/cycle_01/chapters/chapter_14.md:189`.",
+      "acceptance_test": "PASS if the revised `snapshots/cycle_01/chapters/chapter_14.md:113-189` span contains at least 3 paragraphs with explicit Marisol interiority (thought, bodily sensation, memory, or self-assessment) anchored to present action; FAIL if the span remains primarily external choreography."
+    },
+    {
+      "finding_id": "chapter_14_F003",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:93",
+      "problem": "Leo's dialogue repeats the saint/liar thematic binary in multiple exchanges, making him read as a thesis-delivery device more than an eight-year-old with variable conversational focus.",
+      "rewrite_direction": "Keep one direct saint/liar question, but diversify the other beats into child-specific, situational questions with imperfect logic and abrupt pivots. Rework at least two of `snapshots/cycle_01/chapters/chapter_14.md:93`, `snapshots/cycle_01/chapters/chapter_14.md:155`, and `snapshots/cycle_01/chapters/chapter_14.md:195`.",
+      "acceptance_test": "PASS if only one of those three loci retains the explicit saint-versus-liar framing and the other two are rewritten as concrete child-context questions (homework/church/bus-ride level, not abstract moral thesis); FAIL if all three still echo the same binary framing."
+    },
+    {
+      "finding_id": "chapter_14_F004",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:59",
+      "problem": "Carina's stress tell (task-listing and visible multitasking) is applied so continuously that voice calibration becomes mechanical rather than dynamic, flattening her emotional contour.",
+      "rewrite_direction": "Reduce repeated chore-tag scaffolding and add one stillness beat where Carina delivers boundary language without doing another task. Focus revisions in `snapshots/cycle_01/chapters/chapter_14.md:59`, `snapshots/cycle_01/chapters/chapter_14.md:113`, `snapshots/cycle_01/chapters/chapter_14.md:167`, and especially `snapshots/cycle_01/chapters/chapter_14.md:239`-`snapshots/cycle_01/chapters/chapter_14.md:244`.",
+      "acceptance_test": "PASS if, in `snapshots/cycle_01/chapters/chapter_14.md:239-244`, Carina has at least one full boundary statement delivered while physically still, and if no more than one adjacent dialogue beat in that span is coupled to a chore action; FAIL if boundary talk remains fully chore-coupled."
+    },
+    {
+      "finding_id": "chapter_14_F005",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:115",
+      "problem": "Telegraphic noun-phrase clipping in spoken lines (\"Laundromat drop. Dollar Plus for poster board. Pharmacy for Mami's knee refill.\") violates the constitution's anti-elliptical-clipping rule and reads as stylized shorthand over natural speech.",
+      "rewrite_direction": "Rewrite the mission-list line into grammatically complete spoken clauses while preserving Carina's pace and command tone. Target `snapshots/cycle_01/chapters/chapter_14.md:115`.",
+      "acceptance_test": "PASS if the revised `snapshots/cycle_01/chapters/chapter_14.md:115` equivalent contains complete clauses with explicit subject+verb for each step; FAIL if the line remains a sequence of verbless fragment commands."
+    },
+    {
+      "finding_id": "chapter_14_F006",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:95",
+      "problem": "The chapter reuses gaze-stage-direction construction (\"looked at\") more than twice, which flattens relational beats into generic visual blocking.",
+      "rewrite_direction": "Replace at least three gaze-default beats with more specific physical or auditory relational cues. Prioritize `snapshots/cycle_01/chapters/chapter_14.md:95`, `snapshots/cycle_01/chapters/chapter_14.md:143`, `snapshots/cycle_01/chapters/chapter_14.md:207`, `snapshots/cycle_01/chapters/chapter_14.md:380`, and `snapshots/cycle_01/chapters/chapter_14.md:420`.",
+      "acceptance_test": "PASS if, across those target loci, no more than two \"looked\" interpersonal beats remain and replaced beats convey tension through non-gaze action/sound/tactile detail; FAIL if the same gaze formula still appears at three or more loci."
+    }
+  ],
+  "summary": "Chapter 14 lands key boundary beats and continuity facts, but it does not meet pass threshold: the turning-point reveal is convenience-driven, mid-chapter exteriority runs too long without focal interiority, and repetitive dialogue/prose constructions (thematic child prompts, multitask stress tell, gaze defaults, clipped list-speech) reduce causal and stylistic precision."
+}

@@ -1,0 +1,82 @@
+{
+  "acceptance_targets": [
+    "[ch07-craft-01] Pass if a read of the revised intake around snapshots/cycle_02/chapters/chapter_07.md:233, snapshots/cycle_02/chapters/chapter_07.md:269, snapshots/cycle_02/chapters/chapter_07.md:337, and snapshots/cycle_02/chapters/chapter_07.md:377 shows that each retained exchange changes the situation in a different way visible on the page. Fail if two adjacent exchange blocks still only restate that the office's language is too small for Mohit's coercion without changing what Leela admits, what the office records, or what consequence is imposed.",
+    "[FBR-02-005] Pass if `snapshots/cycle_02/FINAL_NOVEL.md:2047`-`snapshots/cycle_02/FINAL_NOVEL.md:2051` still communicates that Leela withholds the truer answer, but does so without the phrase 'almost said' or a near-identical suppression construction. Fail if the beat still reads as the same template already used in chapter 6."
+  ],
+  "chapter_id": "chapter_07",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if a read of the revised intake around snapshots/cycle_02/chapters/chapter_07.md:233, snapshots/cycle_02/chapters/chapter_07.md:269, snapshots/cycle_02/chapters/chapter_07.md:337, and snapshots/cycle_02/chapters/chapter_07.md:377 shows that each retained exchange changes the situation in a different way visible on the page. Fail if two adjacent exchange blocks still only restate that the office's language is too small for Mohit's coercion without changing what Leela admits, what the office records, or what consequence is imposed.",
+      "chapter_id": "chapter_07",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_07.md:233; snapshots/cycle_02/chapters/chapter_07.md:269; snapshots/cycle_02/chapters/chapter_07.md:337; snapshots/cycle_02/chapters/chapter_07.md:377",
+      "finding_id": "ch07-craft-01",
+      "problem": "The intake's middle third keeps returning to the same dramatic point, that Research Integrity's vocabulary cannot hold advisor coercion, without enough intervening state change. Because the scene re-argues that limitation in several adjacent passes, the meeting briefly plateaus instead of tightening all the way to the suspension notice.",
+      "rewrite_direction": "Compress or differentiate the exchanges anchored at snapshots/cycle_02/chapters/chapter_07.md:233, snapshots/cycle_02/chapters/chapter_07.md:269, snapshots/cycle_02/chapters/chapter_07.md:337, and snapshots/cycle_02/chapters/chapter_07.md:377. Keep one early beat that makes the institutional-vocabulary failure explicit, then make each later beat do a distinct job on the page: force Leela into the documentary-evidence lie, formalize the access restriction, and expose the copied-to-Mohit dependency consequence.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if `snapshots/cycle_02/FINAL_NOVEL.md:2047`-`snapshots/cycle_02/FINAL_NOVEL.md:2051` still communicates that Leela withholds the truer answer, but does so without the phrase 'almost said' or a near-identical suppression construction. Fail if the beat still reads as the same template already used in chapter 6.",
+      "chapter_id": "chapter_07",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:2049",
+      "finding_id": "FBR-02-005",
+      "problem": "This chapter repeats a full-book suppression tic that appears in four chapters (chapters 6, 7, 16, and 18): Leela 'almost said' the truer sentence and then swallows it. Chapter 6's instance is the strongest and earliest; this later recurrence turns a sharp character habit into a recognizable prose formula, which starts to make her interiority sound authored by pattern rather than pressure.",
+      "rewrite_direction": "Replace the suppression beat in `snapshots/cycle_02/FINAL_NOVEL.md:2047`-`snapshots/cycle_02/FINAL_NOVEL.md:2051` with a hesitation unique to the Research Integrity intake setup: a clipped false answer, a bodily stall, or a concrete image that reveals what she withholds without reusing the same template. Keep chapter 6's stronger instance as the keeper; this chapter should vary the move rather than echo it.",
+      "severity": "MEDIUM",
+      "source": "booker_global",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "95dd543f9f57880b6820bc5d520ae69c7b21a9d61cab805949b75a5526d63df8",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into the absurdity and cruelty of graduate labor without converting the book into caricature or chase-plot menace. In edge cases, prefer the messier and more compromising version of events if it yields stronger human consequence and remains causally plausible; render sex, professional theft, bureaucratic harm, and emotional pettiness with the same specificity as any technical problem.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene turns vague at the exact point humiliation, erotic charge, class shame, visa fear, or institutional cruelty becomes concrete, rewrite until the cost is materially and socially legible.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High; contractions are the baseline in speech, and uncontracted forms should appear only for deliberate precision, class performance, emotional emphasis, or character-specific formality.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate public and private pressure, ensemble chapters and solitary ones, bureaucratic scenes and domestic scenes, deadline compression and aftermath inventory, so no two adjacent chapters rely on the same structural rhythm or dialogue density.",
+      "diction": "Contemporary literary English grounded in material detail; technical language should appear only when the social reality of the lab requires it, and it should never replace bodily or relational consequence.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person centered on Leela, with occasional brief widenings that register group mood and institutional atmosphere without leaving her interpretive frame.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Alternate compressed observational lines with longer accrual sentences that can carry comedy, shame, and procedural dread in the same movement; quiet chapters should breathe, deadline chapters should tighten without turning telegraphic.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

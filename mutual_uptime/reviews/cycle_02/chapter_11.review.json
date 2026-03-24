@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_11",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "award_01_schematic_parallelism",
+      "source": "award",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_02/chapters/chapter_11.md:159; snapshots/cycle_02/chapters/chapter_11.md:289; snapshots/cycle_02/chapters/chapter_11.md:315; snapshots/cycle_02/chapters/chapter_11.md:319; snapshots/cycle_02/chapters/chapter_11.md:551",
+      "problem": "The chapter's comic escalation is strong at the scene level, but the overall architecture gets slightly too diagrammatic: Ben and Nita both execute sabotage, both receive dashboard validation, both summarize the outcome by text, and then both get folded into the same household upgrade. That neat symmetry makes the chapter feel demonstrated rather than discovered, which keeps it below award-level surprise and unruliness.",
+      "rewrite_direction": "Roughen the parallel structure in either the Ben outcome run at snapshots/cycle_02/chapters/chapter_11.md:157 or the Nita outcome run at snapshots/cycle_02/chapters/chapter_11.md:285 so one strand produces a qualitatively different aftershock before the shared stipend banner at snapshots/cycle_02/chapters/chapter_11.md:551. Keep the continuity facts intact: Ben still regains wider transit access, Nita still gains the $400 supplement/freeze-week role, and the household stipend still activates, but at least one thread should add a consequence or temptation that is not just another mirrored 'failure converted to value' beat.",
+      "acceptance_test": "Pass if a read-through of snapshots/cycle_02/chapters/chapter_11.md:157-175, snapshots/cycle_02/chapters/chapter_11.md:285-321, and snapshots/cycle_02/chapters/chapter_11.md:551-559 shows that Ben and Nita no longer resolve in the same cadence of sabotage -> dashboard win -> text-summary, and at least one work thread delivers a distinct secondary consequence or temptation before the chapter lands the $1,600 household stipend. Fail if both adult strands still feel like cleanly mirrored proofs of the same joke."
+    },
+    {
+      "finding_id": "craft_01_deflated_comic_explanation",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_02/chapters/chapter_11.md:523; snapshots/cycle_02/chapters/chapter_11.md:525; snapshots/cycle_02/chapters/chapter_11.md:531; snapshots/cycle_02/chapters/chapter_11.md:551",
+      "problem": "The kitchen debrief explains the chapter's mechanism in thesis language right after the school-recovery scene has already dramatized it. In a comedy-driven chapter, that reads as deflated humor: the chapter starts telling the reader the joke ('They want strain with visible recovery' / 'throughput') instead of letting the stipend banner and grocery crates finish the punch on their own.",
+      "rewrite_direction": "Tighten or replace the explanatory exchange at snapshots/cycle_02/chapters/chapter_11.md:523-535 so Ben and Nita stay in conflict with concrete aftermath objects already on the table: the tote, the pudding, the missed pickup, the notification, and then the crates at snapshots/cycle_02/chapters/chapter_11.md:580-596. The scene should preserve Nita's operational precision, but the mechanism should be inferred through pressure, accusation, or object logic rather than abstract thesis phrasing.",
+      "acceptance_test": "Pass if, by the end of snapshots/cycle_02/chapters/chapter_11.md:551-596, a reader can clearly infer that the system rewards visible strain without either character delivering a full explanatory thesis built around abstract nouns such as 'strain,' 'recovery,' or 'throughput' in snapshots/cycle_02/chapters/chapter_11.md:523-535. Fail if the final grocery/stipend escalation still feels like confirmation of something the dialogue has already fully explained."
+    },
+    {
+      "finding_id": "prose_01_below_that_tic",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_02/chapters/chapter_11.md:163; snapshots/cycle_02/chapters/chapter_11.md:293; snapshots/cycle_02/chapters/chapter_11.md:556",
+      "problem": "The narration uses the same 'Below that' reveal scaffold three times for interface addenda. By the third use it stops feeling like a deliberate sharpener and starts reading as a prose tic, giving three different escalation beats the same sentence-level cadence.",
+      "rewrite_direction": "Revise the UI-reveal beats at snapshots/cycle_02/chapters/chapter_11.md:163-165, snapshots/cycle_02/chapters/chapter_11.md:293-294, and snapshots/cycle_02/chapters/chapter_11.md:556-558 so each addendum lands through a distinct sentence shape or perception cue. Keep the notification facts the same, but do not introduce all three tails with the same 'Below that' framing move.",
+      "acceptance_test": "Pass if those three passages no longer repeat the same 'Below that' reveal formula more than twice and each addendum can be heard, when read aloud in sequence, as landing through a distinct rhythm or framing move. Fail if all three notification tails still arrive through materially identical setup phrasing."
+    }
+  ],
+  "summary": "Dialogue is the strongest lens here: Ben, Nita, Saskia, Leela, Janice, and Ms. Feliciano remain cleanly separated in register, contraction use is broadly consistent with the style bible, the chapter stays in past tense, and I found no continuity contradiction against the provided sheet. The chapter still fails overall because the adult sabotage strands are a little too neatly mirrored for award-level surprise, the final kitchen scene explains the comic mechanism instead of trusting the dramatized evidence, and the repeated 'Below that' interface reveal has crossed into a visible prose tic."
+}

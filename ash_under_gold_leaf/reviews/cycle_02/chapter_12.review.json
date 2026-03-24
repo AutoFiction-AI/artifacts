@@ -1,0 +1,72 @@
+{
+  "chapter_id": "chapter_12",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH12-BOOKER-001",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_02/chapters/chapter_12.md:291; snapshots/cycle_02/chapters/chapter_12.md:309; snapshots/cycle_02/chapters/chapter_12.md:327; snapshots/cycle_02/chapters/chapter_12.md:339",
+      "problem": "After Gloria's strongest causal reveal (benefits/immigration calculus), the confrontation loops through repeated accusation patterns before the next irreversible turn. The scene loses escalation pressure between the confession and the housing ultimatum.",
+      "rewrite_direction": "Tighten and re-sequence the debate in snapshots/cycle_02/chapters/chapter_12.md:291-351 so each exchange adds new leverage. Move Carina's housing challenge earlier (near snapshots/cycle_02/chapters/chapter_12.md:309-327) or add a new concrete consequence beat before it, rather than repeating abstract accusation lines.",
+      "acceptance_test": "Pass if, in the revised span corresponding to snapshots/cycle_02/chapters/chapter_12.md:291-351, a new fact or irreversible action appears within 8 dialogue turns after Gloria's line at :291, and no accusation pair with the same claim repeats more than once before the housing question. Fail otherwise."
+    },
+    {
+      "finding_id": "CH12-CRAFT-001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_02/chapters/chapter_12.md:397; snapshots/cycle_02/chapters/chapter_12.md:487; snapshots/cycle_02/chapters/chapter_12.md:507; snapshots/cycle_02/chapters/chapter_12.md:511",
+      "problem": "Sanitization drift at the relapse-risk apex: the prose names danger but retreats into summary/status language (`No drink`, `Facts sat still`, `She was not drunk`) instead of fully rendering temptation and counter-action in scene.",
+      "rewrite_direction": "Expand snapshots/cycle_02/chapters/chapter_12.md:487-513 (and, if needed, seed from :397-399) with one embodied craving beat and one concrete sobriety action in real time. Keep the economic stakes but replace aphoristic safety-valve statements with observable behavior and sensory consequence.",
+      "acceptance_test": "Pass if the revised passage at snapshots/cycle_02/chapters/chapter_12.md:487-513 shows (1) a specific external alcohol cue, (2) Marisol's bodily urge response, and (3) an explicit anti-relapse action that changes immediate options before boarding the bus. Fail if risk is only declared or summarized."
+    },
+    {
+      "finding_id": "CH12-CRAFT-002",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_02/chapters/chapter_12.md:99; snapshots/cycle_02/chapters/chapter_12.md:263; snapshots/cycle_02/chapters/chapter_12.md:265; snapshots/cycle_02/chapters/chapter_12.md:409; snapshots/cycle_02/chapters/chapter_12.md:413",
+      "problem": "Timidity around Leo's exposure: the chapter repeatedly raises child-hearing stakes, then deflects into logistics (bedroom/headphones/quick reassurance) without fully dramatizing immediate emotional fallout for him or the adults.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_12.md:263-273 and/or :409-425 to keep Leo present for one sharper consequence beat. Give one adult an age-appropriate truthful line and show how that truth changes Leo's immediate behavior, not just his location.",
+      "acceptance_test": "Pass if the revised scene includes one concrete truthful statement to Leo about the conflict and one directly observable response from Leo that alters the scene's next actions. Fail if he is only moved offstage or soothed without consequence."
+    },
+    {
+      "finding_id": "CH12-DIALOGUE-001",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_02/chapters/chapter_12.md:43; snapshots/cycle_02/chapters/chapter_12.md:119; snapshots/cycle_02/chapters/chapter_12.md:123; snapshots/cycle_02/chapters/chapter_12.md:251; snapshots/cycle_02/chapters/chapter_12.md:317; snapshots/cycle_02/chapters/chapter_12.md:377",
+      "problem": "Mechanical reuse of legal/document register across multiple speakers flattens idiolect separation. Carina and Gloria repeatedly answer in Marisol-adjacent case-file language (`tribunal`, `case files`, `subpoenas`, `hearing`) instead of sustaining their style-bible default registers.",
+      "rewrite_direction": "Keep legal/document diction concentrated in Marisol's turns (e.g., snapshots/cycle_02/chapters/chapter_12.md:43, :315). Revoice Carina/Gloria turns at :119-123, :251-252, and :377 using household logistics, budget math, and church/neighbor idiom consistent with outline/style_bible.json.",
+      "acceptance_test": "Pass if revised Carina/Gloria lines in snapshots/cycle_02/chapters/chapter_12.md:119-123, :251-252, and :377 avoid courtroom nouns (tribunal/case/subpoena/hearing/evidence unless directly quoting Marisol) and each line still reads character-specific on first pass. Fail otherwise."
+    },
+    {
+      "finding_id": "CH12-PROSE-001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_02/chapters/chapter_12.md:13; snapshots/cycle_02/chapters/chapter_12.md:35; snapshots/cycle_02/chapters/chapter_12.md:59; snapshots/cycle_02/chapters/chapter_12.md:61",
+      "problem": "The chapter opens with a long external-blocking/dialogue run before sustained interior access returns, creating screenplay drift. The focalizer's internal channel is underrepresented for a close-third chapter.",
+      "rewrite_direction": "Inject interiority in snapshots/cycle_02/chapters/chapter_12.md:13-59 at key leverage changes (door entry, Leo present, first document read). Use thought/sensation/self-assessment beats that alter Marisol's immediate choices rather than decorative reflection.",
+      "acceptance_test": "Pass if the revised span corresponding to snapshots/cycle_02/chapters/chapter_12.md:13-59 contains at least three separated interior beats from Marisol and each directly motivates the next spoken line or action. Fail if the section still reads primarily as external blocking/dialogue."
+    },
+    {
+      "finding_id": "CH12-PROSE-002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_02/chapters/chapter_12.md:85; snapshots/cycle_02/chapters/chapter_12.md:137; snapshots/cycle_02/chapters/chapter_12.md:203; snapshots/cycle_02/chapters/chapter_12.md:231; snapshots/cycle_02/chapters/chapter_12.md:293; snapshots/cycle_02/chapters/chapter_12.md:449",
+      "problem": "Recurring gaze-construction defaults (`looked/stared` reaction beats) appear well beyond twice and begin to flatten emotional texture during confrontation turns.",
+      "rewrite_direction": "Revise reaction lines at snapshots/cycle_02/chapters/chapter_12.md:85, :137, :203, :231, :293, and :449 to diversify beat mechanics (object handling, distance shifts, breath/voice changes, interrupted tasks) tied to power shifts in each exchange.",
+      "acceptance_test": "Pass if, in revised confrontation spans covering snapshots/cycle_02/chapters/chapter_12.md:85-139 and :231-293 and :447-451, no more than two gaze-only reaction beats remain and replacements create distinct leverage signals. Fail otherwise."
+    }
+  ],
+  "summary": "Chapter 12 lands required plot beats and continuity anchors, but it does not clear pass-level quality under Booker/craft/dialogue/prose standards: escalation loops after the core reveal, sanitization appears at the relapse-risk apex, Leo-exposure pressure is partially defused, speaker idiolects blur through repeated legal register, interiority thins in long stretches, and repeated gaze formulas flatten line-level texture."
+}

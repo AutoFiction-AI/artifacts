@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_10",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_10_craft_01",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_02/chapters/chapter_10.md:95; snapshots/cycle_02/chapters/chapter_10.md:223; snapshots/cycle_02/chapters/chapter_10.md:263",
+      "problem": "The chapter repeatedly annotates its own meaning after the scene has already supplied the evidence. The narration tells us the room has \"sorted,\" literalizes Della's evasive habit with \"answered the literal question,\" and ends by assigning abstract roles to the living. That commentary layer reads like calibration leaking onto the page and lowers the pressure of the scene itself.",
+      "rewrite_direction": "Rework `snapshots/cycle_02/chapters/chapter_10.md:95`, `snapshots/cycle_02/chapters/chapter_10.md:223`, and `snapshots/cycle_02/chapters/chapter_10.md:263` so social alignment and Della's evasion are conveyed through observed behavior, gesture, and what she actually says back to Rafe. Replace the final label-stack with one concrete social consequence inside the supper room or in its immediate aftermath.",
+      "acceptance_test": "At `snapshots/cycle_02/chapters/chapter_10.md:95`, `snapshots/cycle_02/chapters/chapter_10.md:223`, and `snapshots/cycle_02/chapters/chapter_10.md:263`, a reader can infer who has aligned with whom and how Della dodges Rafe without the narration explicitly saying the room has \"sorted,\" without naming her move as answering the literal question, and without closing on abstract category labels such as \"thief, bastard, victim, witness.\""
+    },
+    {
+      "finding_id": "chapter_10_prose_01",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_02/chapters/chapter_10.md:5; snapshots/cycle_02/chapters/chapter_10.md:23; snapshots/cycle_02/chapters/chapter_10.md:89; snapshots/cycle_02/chapters/chapter_10.md:205; snapshots/cycle_02/chapters/chapter_10.md:261",
+      "problem": "The narration leans too often on the same threshold-calibration construction, especially variants of \"enough to ...\". After five repetitions in one chapter, the phrasing stops feeling chosen and starts reading like an autopilot meter for force or emphasis.",
+      "rewrite_direction": "Revise at least three of the cited beats at `snapshots/cycle_02/chapters/chapter_10.md:5`, `snapshots/cycle_02/chapters/chapter_10.md:23`, `snapshots/cycle_02/chapters/chapter_10.md:89`, `snapshots/cycle_02/chapters/chapter_10.md:205`, and `snapshots/cycle_02/chapters/chapter_10.md:261` so intensity is rendered through direct physical effect, consequence, or image instead of the repeated threshold formula.",
+      "acceptance_test": "Across `snapshots/cycle_02/chapters/chapter_10.md:5`, `snapshots/cycle_02/chapters/chapter_10.md:23`, `snapshots/cycle_02/chapters/chapter_10.md:89`, `snapshots/cycle_02/chapters/chapter_10.md:205`, and `snapshots/cycle_02/chapters/chapter_10.md:261`, no more than two narration beats retain an `enough to` construction, and each revised beat conveys force through a distinct observable effect rather than threshold math."
+    }
+  ],
+  "summary": "Chapter 10 lands its required spine beats, maintains canonical continuity, and keeps Della, Rafe, Ruthie, June, Vernon, and Noreen broadly in voice. It fails on craft/prose because the narration occasionally explains social meaning instead of trusting the scene and because a repeated `enough to` construction becomes a chapter-level tic."
+}

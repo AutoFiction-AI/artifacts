@@ -1,0 +1,85 @@
+{
+  "acceptance_targets": [
+    "[chapter_17_prose_01] At snapshots/cycle_02/chapters/chapter_17.md:45 and snapshots/cycle_02/chapters/chapter_17.md:249, the revised text renders the behavior through concrete action or sensory inference inside the scene and no longer relies on abstract diagnostic phrasing such as 'more exact, not less' or 'task, a correction'; fail if either beat still reads like an authorial character-summary sentence.",
+    "[chapter_17_prose_02] After revision, at least two of the three emotional turns at snapshots/cycle_02/chapters/chapter_17.md:61, snapshots/cycle_02/chapters/chapter_17.md:297, and snapshots/cycle_02/chapters/chapter_17.md:377 no longer use the 'It wasn't ...' reversal structure; fail if all three still hinge on the same sentence template."
+  ],
+  "chapter_id": "chapter_17",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "At snapshots/cycle_02/chapters/chapter_17.md:45 and snapshots/cycle_02/chapters/chapter_17.md:249, the revised text renders the behavior through concrete action or sensory inference inside the scene and no longer relies on abstract diagnostic phrasing such as 'more exact, not less' or 'task, a correction'; fail if either beat still reads like an authorial character-summary sentence.",
+      "chapter_id": "chapter_17",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_17.md:45; snapshots/cycle_02/chapters/chapter_17.md:249",
+      "finding_id": "chapter_17_prose_01",
+      "problem": "The narration occasionally slides from lived close third into profile-note diagnosis. 'Under pressure she got more exact, not less' and the later summary of Halima reaching for 'a task, a correction' sound like character-sheet paraphrase rather than scene-native perception, which briefly breaks the illusion of consciousness.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_17.md:45 and snapshots/cycle_02/chapters/chapter_17.md:249 so each trait is dramatized through present-scene behavior. At snapshots/cycle_02/chapters/chapter_17.md:45, let Nura's fear show in a packing action, bodily tell, or mistake under pressure; at snapshots/cycle_02/chapters/chapter_17.md:249, let Halima actually attempt a deflecting task or correction before Nura pins her down. Remove the diagnostic summary phrasing.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "After revision, at least two of the three emotional turns at snapshots/cycle_02/chapters/chapter_17.md:61, snapshots/cycle_02/chapters/chapter_17.md:297, and snapshots/cycle_02/chapters/chapter_17.md:377 no longer use the 'It wasn't ...' reversal structure; fail if all three still hinge on the same sentence template.",
+      "chapter_id": "chapter_17",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_17.md:61; snapshots/cycle_02/chapters/chapter_17.md:297; snapshots/cycle_02/chapters/chapter_17.md:377",
+      "finding_id": "chapter_17_prose_02",
+      "problem": "Three separate emotional pivots use the same adversative emphasis skeleton built around 'It wasn't ...', so crooked repair, separating care, and partial relief all arrive with nearly identical sentence machinery. By the third use, the cadence reads as a prose tic rather than chosen emphasis.",
+      "rewrite_direction": "Recast at least two of the beats anchored at snapshots/cycle_02/chapters/chapter_17.md:61, snapshots/cycle_02/chapters/chapter_17.md:297, and snapshots/cycle_02/chapters/chapter_17.md:377 with different syntax, image, or rhythm. Keep the reversals of meaning, but stop delivering all three through the same 'It wasn't ...' turn.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "6bc937b52fa5caea8014328389fba871425be66198acc70eb3df327daf91093c",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on prose and copyedit finish: diction precision, rhythm control, sentence-level clarity, grammar, line-level polish without flattening style, and explicit aesthetic-risk audit (sanitization is the primary risk \u2014 do not soften or euphemize; push toward creative risk and specificity).",
+    "key": "p3_prose_copyedit",
+    "label": "prose/copyedit fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into contradiction: mercy that creates future damage, tenderness inside humiliation, and paperwork treated as an instrument of violence. In edge cases, choose the more socially and bodily specific version over the tasteful summary or thematic paraphrase.",
+      "dark_content_allowed_when_character_true": true,
+      "edge_case_resolution": "When a scene risks becoming too neat, keep the hurt visible and let no one explain it away too quickly. When a scene risks becoming lurid, keep it tethered to character perception, material fact, and consequence rather than spectacle.",
+      "euphemism_penalty": "If bodily pain, sexual threat, shame, hunger, or bureaucratic exclusion matter in a scene, they must register in specific lived detail; vague softening counts as a failed draft.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High in rendered English dialogue; contractions are the norm, with fuller forms reserved for emphasis, institutional performance, or character-specific formality.",
+      "dialect_rendering_policy": "Render Bangla and char-specific speech through rhythm, hierarchy, metaphor, and social assumption, not through phonetic misspelling or exoticized broken English.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1,
+      "subtext_requirement": "Most important exchanges should carry a visible practical agenda and a second, less speakable pressure beneath it, especially around kinship, shame, and money."
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate public pressure with private reckoning, crowd scenes with object-heavy aftermath, and dialogue-dense chapters with chapters driven by inventory, travel, weather, or delayed information. No two consecutive chapters should rely on the same scene count, confrontation style, or emotional tempo.",
+      "diction": "Plainspoken but exact, letting bureaucratic vocabulary and domestic vocabulary sit in the same paragraph without either swallowing the other; lyric lift should emerge from concrete detail, not ornamental abstraction.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third with one focal consciousness per scene, anchored primarily to Halima and opening selectively to Nura or Kashem only where the outline assigns that pressure.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Flexible sentence music: longer accrual sentences for weather, labor, and memory; short declarative cuts for administrative harm, revelation, and emotional impact.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "chapter_id": "chapter_03",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_03_craft_001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:141; snapshots/cycle_01/chapters/chapter_03.md:143; snapshots/cycle_01/chapters/chapter_03.md:147; snapshots/cycle_01/chapters/chapter_03.md:161",
+      "problem": "At the exact moment Leela chooses complicity, the narration repeatedly tells the reader that her thinking is ignoble, cowardly, and morally suspect instead of trusting the concrete behavior to carry that judgment. This functions as a moral safety valve: the chapter keeps announcing that it knows the choice is ugly, which cushions the scene's hardest turn instead of letting the compromise stand on its own social and ethical damage.",
+      "rewrite_direction": "Rework the concealment turn anchored at snapshots/cycle_01/chapters/chapter_03.md:141, snapshots/cycle_01/chapters/chapter_03.md:143, snapshots/cycle_01/chapters/chapter_03.md:147, snapshots/cycle_01/chapters/chapter_03.md:149, and snapshots/cycle_01/chapters/chapter_03.md:161 so the chapter shows the compromise through observable behavior: the archive creation, the shell-history cleanup, the lie in the email, the hesitation before sending, and the immediate institutional relief in Mohit's reply. Compress or remove the narrator-side labels about nobility, innocence, cowardice, and bravery; if judgment remains, it should come from one concrete consequence rather than repeated explanation.",
+      "acceptance_test": "Pass if the revised concealment passage anchored at snapshots/cycle_01/chapters/chapter_03.md:141 through snapshots/cycle_01/chapters/chapter_03.md:163 still shows Leela copying the logs, trimming the local trace, composing the misleading email, and sending it, but does not explicitly instruct the reader how to judge her via labels such as 'not noble,' 'innocent people,' 'cowardice,' or 'braver.' Fail if the narration continues to spell out the moral verdict at multiple points instead of letting the actions and email wording do the work."
+    },
+    {
+      "finding_id": "chapter_03_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:73; snapshots/cycle_01/chapters/chapter_03.md:81; snapshots/cycle_01/chapters/chapter_03.md:93; snapshots/cycle_01/chapters/chapter_03.md:101; snapshots/cycle_01/chapters/chapter_03.md:103; snapshots/cycle_01/chapters/chapter_03.md:107; snapshots/cycle_01/chapters/chapter_03.md:125; snapshots/cycle_01/chapters/chapter_03.md:153",
+      "problem": "The chapter leans too often on the same negation-correction sentence shape: 'not X / but Y,' 'not X. It was Y,' or serial 'Not ... Not ...' constructions. After several repetitions, the discovery sequence and the concealment sequence start to sound as if they are being processed through one rhetorical preset rather than fresh, scene-specific syntax, which flattens otherwise strong prose.",
+      "rewrite_direction": "Vary the sentence architecture in the discovery and decision passages anchored at snapshots/cycle_01/chapters/chapter_03.md:73, snapshots/cycle_01/chapters/chapter_03.md:81, snapshots/cycle_01/chapters/chapter_03.md:93, snapshots/cycle_01/chapters/chapter_03.md:101, snapshots/cycle_01/chapters/chapter_03.md:103, snapshots/cycle_01/chapters/chapter_03.md:107, snapshots/cycle_01/chapters/chapter_03.md:125, and snapshots/cycle_01/chapters/chapter_03.md:153. Keep the emphasis, but recast several beats into positive declaratives, image-led sentences, or action-led sentences so the prose does not keep arriving by the same corrective pivot.",
+      "acceptance_test": "Pass if the revised passages anchored at snapshots/cycle_01/chapters/chapter_03.md:73 through snapshots/cycle_01/chapters/chapter_03.md:107 and snapshots/cycle_01/chapters/chapter_03.md:125 through snapshots/cycle_01/chapters/chapter_03.md:153 contain no more than two negation-correction constructions of the form 'not X / but Y,' 'not X. It was Y,' or serial 'Not ... Not ...,' and at least three of the cited beats are rewritten into materially different sentence shapes while preserving the same story information. Fail if the same corrective template still dominates those beats."
+    }
+  ],
+  "summary": "Chapter 3 lands its causal spine and its scene-level consequence: the audit work is tactile and lonely, Ruderal arrives as a concrete anomaly rather than a plot coupon, Mohit's dialogue tracks his style-bible register, and Leela's choice to conceal the evidence clearly changes the story state. It fails craft because the concealment climax keeps labeling her choice as ugly instead of letting the ugly choice stand, and it fails prose because the chapter repeats the same negation-correction sentence template often enough to become a noticeable tic.",
+  "coverage_scene_ids": []
+}

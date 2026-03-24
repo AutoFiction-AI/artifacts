@@ -1,0 +1,67 @@
+{
+  "chapter_id": "chapter_06",
+  "verdicts": {
+    "award": "PASS",
+    "craft": "PASS",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "F06-01",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:3 (\"the way the subordinate clause sagged\"), :33 (\"the way you talk about a natural disaster\"), :43 (\"the way a copy editor looks at a comma\"), :49 (\"the way you furnish a room\"), :59 (\"the way other people worried\"), :61 (\"the way a church smells like candles\"), :95 (\"the way she absorbed a student's thesis statement\"), :221 (\"The way you believe a sentence\")",
+      "problem": "The comparative construction \"the way [X]\" appears 8 times in 222 lines (approximately once every 28 lines). This is the chapter's most frequent prose formula and produces a recognizable rhythm signature that flattens what should be varied analogical machinery.",
+      "rewrite_direction": "Retain at most 3 instances — the opening (snapshots/cycle_01/chapters/chapter_06.md:3), one in the Diane section, and the closing line (snapshots/cycle_01/chapters/chapter_06.md:221). Revise the other 5 instances (snapshots/cycle_01/chapters/chapter_06.md:33, :43, :49, :59, :61) using direct simile (\"like\"), apposition, or embedded metaphor. For example, line 61 (\"the way a church smells like candles — not a decision but an accumulation\") could become a direct statement: \"the house smelled like garlic the way a church smells like candles\" could be recast as apposition or analogy without the \"the way\" frame.",
+      "acceptance_test": "\"The way\" as a comparative/analogical construction appears no more than 3 times in the revised chapter. No two instances occur within 30 lines of each other."
+    },
+    {
+      "finding_id": "F06-02",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:49 (\"not consciously, not with blueprints, but\"), :61 (\"not a decision but an accumulation\"), :63 (\"a feature rather than a flaw\"), :67 (\"not information, exactly, but the ambient sound\"), :105 (\"wasn't worry, exactly, or disapproval, but\"), :197 (\"Not a flutter. Not a swoon. Something quieter.\"), :213 (\"Not her heart.\")",
+      "problem": "The negation-then-correction construction (\"not X but Y\" / \"not X, exactly, but Y\") appears 7 times. The pattern is most concentrated in the Diane dinner scene (lines 61-105, 4 instances) and the closing interiority (lines 197-213, 2 instances). When the narrator repeatedly approaches a feeling by first saying what it is not, the rhetorical gesture loses its diagnostic precision and becomes a reflex.",
+      "rewrite_direction": "State the real term directly in at least 4 of these 7 instances. Priority targets: snapshots/cycle_01/chapters/chapter_06.md:61 (\"not a decision but an accumulation\" — cut the negation and state the accumulation directly), :63 (\"a feature rather than a flaw\" — drop the contrast), :67 (\"not information, exactly, but the ambient sound\" — name the sound without pre-negation), :105 (\"wasn't worry, exactly\" — describe the expression without the approach-by-elimination). Retain the pattern where the emotional searching justifies it, such as lines 197 and 213.",
+      "acceptance_test": "The negation-correction construction (\"not X but Y,\" \"not X, exactly,\" \"rather than\") appears no more than 3 times in the revised chapter. No more than 1 instance appears in the Diane dinner scene (lines 58-124)."
+    },
+    {
+      "finding_id": "F06-03",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:61 (\"the particular warmth of a kitchen\"), :73 (\"the specific density of suburban Long Island\"), :105 (\"the specific expression of a woman\"), :127 (\"the particular LIRR texture\"), :175 (\"the specificity of an animal\"), :221 (\"the specific, earned, defenseless conviction\")",
+      "problem": "\"The particular [X]\" or \"the specific [X]\" appears 6 times as a precision-signaling modifier. The adjective is doing work the noun phrase should do on its own — if the image is precise, it does not need a label announcing its precision. The repetition creates a verbal tic that undercuts the prose's otherwise strong observational acuity.",
+      "rewrite_direction": "Delete the qualifier in at least 4 of 6 instances and let the noun phrase carry its own specificity. Priority targets: snapshots/cycle_01/chapters/chapter_06.md:61 (\"the particular warmth\" -> \"the warmth\"), :73 (\"the specific density\" -> render the density through sensation rather than labeling it specific), :127 (\"the particular LIRR texture\" -> describe the texture instead of flagging it as particular), :175 (\"the specificity of an animal\" -> use a more active construction, e.g., \"an animal that knew\"). Retain at most 2 instances where the qualifier genuinely compounds meaning (candidate: line 221, where \"specific\" works as part of a triad with \"earned\" and \"defenseless\").",
+      "acceptance_test": "\"Specific,\" \"particular,\" and \"specificity\" appear as adjective modifiers no more than 2 times total in the revised chapter."
+    },
+    {
+      "finding_id": "F06-04",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:17 (\"His new girlfriend does Rolfing.\") structurally echoes Margo's NON-COPYABLE calibration sample in the style bible: \"My ex-husband's new girlfriend does hot yoga. I know this because he posts about it.\" The chapter continues the parallel at snapshots/cycle_01/chapters/chapter_06.md:23: \"She posts about it — she posts *everything*.\"",
+      "problem": "The style bible marks Margo's example lines as \"NON-COPYABLE REFERENCE ONLY — calibration samples, never to be echoed in any draft.\" Margo's opening line replicates the syntactic skeleton of the calibration sample: [possessive] new girlfriend does [single-word activity name]. The social-media-posting follow-up also echoes the example's second sentence (\"I know this because he posts about it\" -> \"She posts about it\"). The extended riff (psoas, flame emoji, algorithm metaphor) diverges effectively, but the launch point is a near-verbatim structural copy of restricted material.",
+      "rewrite_direction": "Rewrite snapshots/cycle_01/chapters/chapter_06.md:17-23 so the Rolfing complaint enters from a different syntactic angle. The comic content is strong and should be preserved — the Rolfing, the psoas, Kevin's flame emoji, the algorithm. Options: (1) lead with the social media discovery (\"The algorithm just delivered a Rolfing testimonial to my feed. With a flame emoji. From Kevin's girlfriend.\"), (2) lead with the psoas detail (\"I now know things about a stranger's connective tissue that I don't know about my own mother.\"), (3) lead with the tagging (\"She tagged Kevin. My Kevin. In a post about her hip flexor.\"). Any entry that avoids the \"[possessive] new girlfriend does [activity]\" skeleton.",
+      "acceptance_test": "Margo's first line about Kevin's new girlfriend does not use the syntactic pattern \"[possessive] [new] girlfriend does [activity].\" The revised opening enters the Rolfing complaint through a structurally different door while preserving the comic payload (the activity, the social media stalking, the psoas absurdity, the algorithm metaphor)."
+    },
+    {
+      "finding_id": "F06-05",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:7 (\"a small daily lean to the right\"), :11 (\"the small hit of warmth\"), :31 (\"a small daily mystery she never solved\"), :105 (\"a small contraction between the eyebrows\"), :171 (\"the small vertigo\")",
+      "problem": "\"Small\" is used as an emotional/sensory modifier 5 times, including the identical formula \"a small daily [X]\" at lines 7 and 31 (both in the office scene, 24 lines apart). The repetition signals a default diminutive for internal experience rather than varied calibration of scale.",
+      "rewrite_direction": "Replace at least 3 of the 5 instances with more precise modifiers or delete them. Priority: resolve the \"a small daily\" duplication at snapshots/cycle_01/chapters/chapter_06.md:7 and :31 by revising one — \"a lean to the right\" works without the qualifier at line 7, or \"a daily mystery\" works at line 31 since the pen detail is inherently minor-scaled. At snapshots/cycle_01/chapters/chapter_06.md:171, \"the small vertigo\" could become the vertigo itself, rendered through sensation (a shift in the chest, a catch in the breath) rather than scaled by adjective.",
+      "acceptance_test": "\"Small\" as a modifier for emotions, sensations, or internal observations appears no more than 2 times in the revised chapter. The exact phrase \"a small daily\" appears at most once."
+    }
+  ],
+  "summary": "Chapter 6 delivers its three must-land beats with genuine literary craft: Nora's editorial competence at work, Diane's maternal diagnostic reading of the unseen boyfriend, and the late-night texting sequence where ordinariness is the payload. Voice differentiation is strong across four characters — Margo's post-divorce gallows humor, Diane's warm investigative precision, Caleb's engineered warmth in text, and Nora's editorial consciousness all register as distinct and well-calibrated to their style-bible profiles. The dramatic irony (the reader's knowledge that Nora's happiness is manufactured) operates throughout without narratorial commentary, giving every tender moment its proper dread weight. Dialogue register is appropriate: contractions match character profiles, leverage shifts are present in all three scenes, and no two characters sound interchangeable. The chapter functions correctly as a breathing chapter between chapter 5's concealment tension and chapter 7's financial desperation. Continuity is clean — no contradictions with the continuity sheet, narrative tense is consistently past, and no sanitization or interiority gaps were found. The primary failure is prose formula density: four distinct recurring constructions (\"the way\" x8, negation-correction x7, \"specific/particular\" x6, \"small\" x5) produce a cumulative sameness in the analogical and descriptive machinery that undermines otherwise precise sentence-level work. One HIGH finding: Margo's opening line structurally echoes a NON-COPYABLE calibration sample from the style bible and must be rewritten from a different syntactic entry point.",
+  "coverage_scene_ids": [
+    "ch06_office_editing",
+    "ch06_diane_dinner",
+    "ch06_train_texting"
+  ]
+}

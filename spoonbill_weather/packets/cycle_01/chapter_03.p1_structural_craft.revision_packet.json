@@ -1,0 +1,82 @@
+{
+  "acceptance_targets": [
+    "[chapter_03_craft_001] A reader moving from snapshots/cycle_01/chapters/chapter_03.md:437-455 into the chapter_04 boundary excerpt can account for Mina's arrival without inventing off-page transport: the revised text explicitly places Tomas and Mina at the same drop-off location the next chapter assumes, or explicitly marks that Tomas does not drop her at camp.",
+    "[FBR-004] Pass if snapshots/cycle_01/FINAL_NOVEL.md:1251-1261 no longer uses stillness shorthand and Tomas's change in pressure is legible through a concrete reaction unique to him. Fail if the beat still resolves into a generic freeze/pause sentence that could be transplanted to another chapter."
+  ],
+  "chapter_id": "chapter_03",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "A reader moving from snapshots/cycle_01/chapters/chapter_03.md:437-455 into the chapter_04 boundary excerpt can account for Mina's arrival without inventing off-page transport: the revised text explicitly places Tomas and Mina at the same drop-off location the next chapter assumes, or explicitly marks that Tomas does not drop her at camp.",
+      "chapter_id": "chapter_03",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:437; snapshots/cycle_01/chapters/chapter_03.md:455",
+      "finding_id": "chapter_03_craft_001",
+      "problem": "The chapter's closing geography conflicts with the boundary handoff. These lines return Mina and Tomas to the county dock and send Mina back to camp on foot, but the chapter_04 boundary excerpt assumes Tomas dropped her at the stilts; with the continuity-sheet geography placing the county dock roughly a ten-minute walk from camp, the transition currently asks the reader to invent missing transit.",
+      "rewrite_direction": "Revise snapshots/cycle_01/chapters/chapter_03.md:437-455 so the physical handoff matches the next-chapter setup. Either have Tomas actually bring Mina to the camp stilts, or keep the county-dock return but make the separation explicit enough that chapter_04 cannot describe it as Tomas dropping her off. Preserve the tired dock banter and the blank-notebook beat.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if snapshots/cycle_01/FINAL_NOVEL.md:1251-1261 no longer uses stillness shorthand and Tomas's change in pressure is legible through a concrete reaction unique to him. Fail if the beat still resolves into a generic freeze/pause sentence that could be transplanted to another chapter.",
+      "chapter_id": "chapter_03",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:1259",
+      "finding_id": "FBR-004",
+      "problem": "Full-book recurring-construction finding: the default-stillness shorthand appears in five chapters, and this use is one of the weaker copies. 'He went still behind her' is functional but generic, especially in a scene where Tomas's money, county access, and labor risk are already specific enough to deserve a more individual physical reaction.",
+      "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:1251-1261, REPLACE the stillness beat with a Tomas-specific response tied to this boat/fuel/debt scene: what he does with the pole, how his mouth or shoulders lock, how he handles the space behind her, or how his voice changes because the ledger risk has become personal. Do not use 'went still' or 'went flat' here.",
+      "severity": "MEDIUM",
+      "source": "booker_global",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "3dfe235e33572ecacae9c8651207cb13ae782bc9d312751bd5021eb281d3bce5",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into the book's uncomfortable overlaps: desire entangled with access, wonder contaminated by biotech history, class need shaping erotic choices, and ecological harm rendered at creature scale. When a scene sits on the edge between restraint and retreat, keep the pressure visible through bodies, residue, changed behavior, or social cost. If an exact detail would make the material more embarrassing, more sensual, or more morally compromising, that is usually the detail to keep.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If sex, ecological damage, class shame, or moral compromise are softened into tasteful fog at the moment they should bite, the scene has failed and must be rewritten at higher specificity.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High - contractions are the norm in spoken dialogue; uncontracted forms should signal deliberate emphasis, institutional performance, or a character-specific formality shift.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate compression and dilation aggressively: single-scene nocturnes, comic paperwork chapters, quiet survey chapters, domestic weather chapters, confrontational set pieces, and aftermath chapters should sit beside each other without repeating the same rhythm two chapters in a row.",
+      "diction": "Concrete, coastal, and exact without brochure prettiness; scientific and bureaucratic terms may appear when the characters would think or speak through them, but they should stay embodied by consequence.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third centered on Mina Cordero, with free-indirect access tight enough to track bodily desire, shame, and observational obsession without collapsing into confessional summary",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Supple sentence music that can hold humidity, rot, and erotic charge, then cut hard into blunt compression at moments of humiliation, procedural friction, or ecological damage.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

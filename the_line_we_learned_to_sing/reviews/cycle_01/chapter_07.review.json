@@ -1,0 +1,66 @@
+{
+  "chapter_id": "chapter_07",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH07-F001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:31; snapshots/cycle_01/chapters/chapter_07.md:35; snapshots/cycle_01/chapters/chapter_07.md:57; snapshots/cycle_01/chapters/chapter_07.md:181; snapshots/cycle_01/chapters/chapter_07.md:185",
+      "problem": "Sanitization drift in the coercion confession: the chapter summarizes what Ina gave NIS in abstract operational language (\"operational context,\" \"crumbs\") instead of naming concrete compromised material and embodied fallout. This softens the moral and tactical consequence at the exact pressure point where specificity is required.",
+      "rewrite_direction": "Revise the confession exchange at snapshots/cycle_01/chapters/chapter_07.md:31-36 and snapshots/cycle_01/chapters/chapter_07.md:181-186 to include one specific surrendered item, one specific downstream risk it created, and one immediate bodily/behavioral reaction from Minjae tied to that item. Replace metaphor-only phrasing (crumbs/loaf) with concrete disclosure stakes.",
+      "acceptance_test": "PASS if, in the revised spans at snapshots/cycle_01/chapters/chapter_07.md:31-36 and snapshots/cycle_01/chapters/chapter_07.md:181-186, a reader can point to (1) exactly what Ina disclosed, (2) who/what became newly exposed, and (3) Minjae's immediate reaction to that exposure. FAIL if the exchange still relies on abstractions like \"operational context\" or \"crumbs\" without concrete consequence."
+    },
+    {
+      "finding_id": "CH07-F002",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:235; snapshots/cycle_01/chapters/chapter_07.md:236",
+      "problem": "Timidity after intimacy: the post-sex consequence beat retreats into abstract framing (\"full of math\") instead of rendering concrete emotional/physical vulnerability. The scene pulls back when it should press in.",
+      "rewrite_direction": "Rewrite snapshots/cycle_01/chapters/chapter_07.md:235-236 with specific observable aftermath behavior (what each avoids saying, what each physically does, and one concrete fear signal) rather than conceptual summary language.",
+      "acceptance_test": "PASS if snapshots/cycle_01/chapters/chapter_07.md:235-236 are replaced by concrete post-intimacy actions/sensations that show leverage anxiety without abstract shorthand. FAIL if the beat remains primarily conceptual (e.g., risk described as \"math\" or equivalent summary metaphor)."
+    },
+    {
+      "finding_id": "CH07-F003",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:145; snapshots/cycle_01/chapters/chapter_07.md:165; snapshots/cycle_01/chapters/chapter_07.md:197; snapshots/cycle_01/chapters/chapter_07.md:271; snapshots/cycle_01/chapters/chapter_07.md:277",
+      "problem": "Major turn sequencing is too smooth: tactical continuation, sexual commitment, and route-key transfer land in rapid succession with limited near-failure resistance. The chapter hits required beats, but causality feels under-stressed at the highest-risk transitions.",
+      "rewrite_direction": "Insert a concrete near-abort beat between snapshots/cycle_01/chapters/chapter_07.md:165-207 and/or before snapshots/cycle_01/chapters/chapter_07.md:271-279 where either Ina or Minjae explicitly withholds, tests, or almost exits due NIS/sister exposure, then recommits for a named cost.",
+      "acceptance_test": "PASS if the revised chapter includes one explicit near-failure decision point before sex and one explicit cost acknowledgment before key handoff, both anchored in immediate risk. FAIL if progression remains linear (argument -> intimacy -> key transfer) without a visible jeopardy spike."
+    },
+    {
+      "finding_id": "CH07-F004",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:105; snapshots/cycle_01/chapters/chapter_07.md:107; snapshots/cycle_01/chapters/chapter_07.md:119; snapshots/cycle_01/chapters/chapter_07.md:123; snapshots/cycle_01/chapters/chapter_07.md:277; snapshots/cycle_01/chapters/chapter_07.md:283; snapshots/cycle_01/chapters/chapter_07.md:301",
+      "problem": "Idiolect separation weakens in negotiation stretches: both speakers converge into similar technical cadence (lane/key/expiry protocol talk), creating moments where Ina and Minjae become syntactically interchangeable. This also reads as over-literal reuse of operational lexical signatures.",
+      "rewrite_direction": "Revise dialogue at snapshots/cycle_01/chapters/chapter_07.md:105-123 and snapshots/cycle_01/chapters/chapter_07.md:277-303 so Ina's lines retain her analytic self-editing cadence while Minjae's lines carry his wry, pressure-tested street pragmatism and family-risk edge. Keep the same plot content but differentiate rhythm and diction.",
+      "acceptance_test": "PASS if in each target span a reader can identify at least two lines per speaker that would sound wrong if swapped between Ina and Minjae. FAIL if most lines remain functionally swappable operational directives."
+    },
+    {
+      "finding_id": "CH07-F005",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:83; snapshots/cycle_01/chapters/chapter_07.md:111; snapshots/cycle_01/chapters/chapter_07.md:153; snapshots/cycle_01/chapters/chapter_07.md:171; snapshots/cycle_01/chapters/chapter_07.md:191; snapshots/cycle_01/chapters/chapter_07.md:197",
+      "problem": "Recurring prose tic: the chapter reuses the \"as if\" inference scaffold six times, which flattens sentence texture and signals autopilot construction rather than scene-specific image work.",
+      "rewrite_direction": "In the cited lines (snapshots/cycle_01/chapters/chapter_07.md:83, 111, 153, 171, 191, 197), replace at least four \"as if\" constructions with direct concrete observation or varied syntactic structures tied to immediate sensory detail.",
+      "acceptance_test": "PASS if the revised cited lines contain no more than two \"as if\" constructions total and each replacement delivers specific action/sensory evidence rather than abstract inference. FAIL if the repeated template persists across most of those lines."
+    }
+  ],
+  "summary": "Chapter 7 lands its required plot beats and keeps continuity/timeline/tense consistent with canon, but it does not clear pass-level quality. The biggest unresolved issue is HIGH-severity sanitization in the NIS confession, where abstraction dilutes consequence. Additional MEDIUM issues remain in turn-causality stress, dialogue idiolect separation, timidity in the post-intimacy aftermath beat, and repeated prose scaffolding.",
+  "coverage_scene_ids": [
+    "workshop_negotiation",
+    "apartment_intimacy"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_03",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch03_craft_ruthie_knowledge_leak",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:535, snapshots/cycle_01/chapters/chapter_03.md:541, snapshots/cycle_01/chapters/chapter_03.md:543, snapshots/cycle_01/chapters/chapter_03.md:619, snapshots/cycle_01/chapters/chapter_03.md:643",
+      "problem": "In the kitchen scene, Della explicitly confirms in Ruthie's hearing that the exposed body is not Eli and that she is suppressing a larger truth. That contradicts the continuity sheet's canonical knowledge state: chapter 03 gives this decisive suspicion to Rafe, while Ruthie is not supposed to reach the blood-and-naming layer until later.",
+      "rewrite_direction": "Revise the kitchen exchange around snapshots/cycle_01/chapters/chapter_03.md:535, snapshots/cycle_01/chapters/chapter_03.md:541, snapshots/cycle_01/chapters/chapter_03.md:543, and snapshots/cycle_01/chapters/chapter_03.md:619 so Rafe can leave convinced Della is hiding something without giving Ruthie an explicit yes/no confirmation that the grave is not Eli. Options that fit the current scene: keep Della on refusal instead of admission, move the blunt confirmation to a private beat after Ruthie exits, or let Ruthie register only that Della is cornered and evasive.",
+      "acceptance_test": "Pass if, by the end of the revised chapter, Rafe has actionable suspicion but Ruthie has suspicion only, not explicit confirmation that the grave is not Eli's or that Della knows the true name. Fail if Ruthie still witnesses a direct confirmation in the cited exchange."
+    },
+    {
+      "finding_id": "ch03_prose_clipped_narration",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:55, snapshots/cycle_01/chapters/chapter_03.md:191, snapshots/cycle_01/chapters/chapter_03.md:487, snapshots/cycle_01/chapters/chapter_03.md:537, snapshots/cycle_01/chapters/chapter_03.md:545",
+      "problem": "The chapter repeatedly uses clipped narration fragments of the exact kind the constitution forbids: 'Not grief. Not dread. Arithmetic.' / 'Need one. Not find one. Need one.' / 'Not the grave now. Her.' / 'Not into understanding. Something harder.' / 'It was warning.' Repetition turns a banned compression trick into a visible stylistic habit.",
+      "rewrite_direction": "Recast the narration at snapshots/cycle_01/chapters/chapter_03.md:55, snapshots/cycle_01/chapters/chapter_03.md:191, snapshots/cycle_01/chapters/chapter_03.md:487, snapshots/cycle_01/chapters/chapter_03.md:537, and snapshots/cycle_01/chapters/chapter_03.md:545 as grammatically complete sentences that keep the same pressure without stripping articles, pronouns, or auxiliaries. Preserve compression and force, but let the sentence carry them.",
+      "acceptance_test": "Pass if each cited beat reads as complete narration with its subject/article/auxiliary intact and no 'Not X. Not Y.' or article-less equivalent remains in those spans. Fail if the revised passage still relies on clipped fragment shorthand for force."
+    },
+    {
+      "finding_id": "ch03_prose_impact_marker_tic",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:153, snapshots/cycle_01/chapters/chapter_03.md:173, snapshots/cycle_01/chapters/chapter_03.md:367, snapshots/cycle_01/chapters/chapter_03.md:533, snapshots/cycle_01/chapters/chapter_03.md:579, snapshots/cycle_01/chapters/chapter_03.md:623",
+      "problem": "The chapter repeatedly stops to label the force of a line for the reader: 'That landed,' 'That one hit where he meant it to,' 'That shut him for one beat,' 'The sentence dropped into the kitchen...,' 'That finally cracked her temper,' 'That landed on all three of them...' Once or twice is a choice; this many becomes a tic and flattens the blows instead of letting them land through scene consequence.",
+      "rewrite_direction": "Vary or cut the impact-announcer sentences at snapshots/cycle_01/chapters/chapter_03.md:153, snapshots/cycle_01/chapters/chapter_03.md:173, snapshots/cycle_01/chapters/chapter_03.md:367, snapshots/cycle_01/chapters/chapter_03.md:533, snapshots/cycle_01/chapters/chapter_03.md:579, and snapshots/cycle_01/chapters/chapter_03.md:623. In each beat, show the hit through breath, gesture, silence, interruption, or the next line of dialogue rather than narratorial labeling.",
+      "acceptance_test": "Pass if the emotional turn in each cited beat is legible through action or reply and the cited spans contain no more than two direct impact-announcer sentences of the 'That ...' or 'The sentence ...' variety. Fail if the narration keeps naming the blow instead of dramatizing it."
+    },
+    {
+      "finding_id": "ch03_dialogue_rafe_authorial_polish",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:571, snapshots/cycle_01/chapters/chapter_03.md:637",
+      "problem": "Rafe's climactic accusations slip from his established work-rough, shame-driven register into abstract, essay-clean phrasing: 'Poor folks don't get to worship truth as a luxury item' and 'don't expect me to go broke in reverence to it.' The argument is clear, but the wording is too polished and ideologically tidy for a character whose speech is supposed to route feeling through money, labor, and bodily strain.",
+      "rewrite_direction": "Rewrite Rafe's speeches at snapshots/cycle_01/chapters/chapter_03.md:571 and snapshots/cycle_01/chapters/chapter_03.md:637 so the point stays sharp but moves through his established lexicon: debt, feed, truck, land, credit, mouths to feed, and the humiliation of needing paperwork. Let the syntax show pressure with a restart, stumble, or concrete repetition instead of abstract phrasing.",
+      "acceptance_test": "Pass if those two speeches read as Rafe-specific lines grounded in work/money/family pressure, with abstract phrases like 'luxury item' and 'reverence' replaced by concrete cost language. Fail if the revised lines still sound like a polished thematic thesis another character could plausibly deliver."
+    }
+  ],
+  "summary": "Booker-level escalation lands: the exposed grave, the office clarification, and the kitchen rupture all push Rafe from grievance into active opposition. The chapter still fails review because it breaks canonical knowledge sequencing for Ruthie, repeatedly uses constitution-forbidden clipped narration, leans on a visible impact-marker prose tic, and lets Rafe's final pressure-speech drift into authorial polish."
+}

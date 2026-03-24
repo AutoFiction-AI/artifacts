@@ -1,0 +1,89 @@
+{
+  "chapter_id": "chapter_14",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH14-BOOKER-001",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:95; snapshots/cycle_02/chapters/chapter_14.md:133; snapshots/cycle_02/chapters/chapter_14.md:155; snapshots/cycle_02/chapters/chapter_14.md:171; snapshots/cycle_02/chapters/chapter_14.md:223; snapshots/cycle_02/chapters/chapter_14.md:231",
+      "problem": "The middle of the chapter repeats the same leverage beat (manager warning + compliance) without a distinct state change, so pressure accumulates physically but not structurally. That flattens causality between the hiring scene and the end-of-chapter commitment.",
+      "rewrite_direction": "Consolidate one redundant warning exchange and add one irreversible turn in the work loop at snapshots/cycle_02/chapters/chapter_14.md:133, snapshots/cycle_02/chapters/chapter_14.md:155, snapshots/cycle_02/chapters/chapter_14.md:223, and snapshots/cycle_02/chapters/chapter_14.md:231 (for example: temporary loss/retention of audit access tied to a documented incident). Then reference that changed status when he accepts extra coverage at snapshots/cycle_02/chapters/chapter_14.md:352.",
+      "acceptance_test": "PASS if the revised span between snapshots/cycle_02/chapters/chapter_14.md:133 and snapshots/cycle_02/chapters/chapter_14.md:237 contains one explicit managerial action that changes Eli's next-shift options (not just another warning), and that changed status is named again at snapshots/cycle_02/chapters/chapter_14.md:352; FAIL otherwise."
+    },
+    {
+      "finding_id": "CH14-CRAFT-001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:167; snapshots/cycle_02/chapters/chapter_14.md:331; snapshots/cycle_02/chapters/chapter_14.md:335",
+      "problem": "Sanitization drift at the chapter's moral pressure points: the affair/family harm is referenced in abstract shorthand (\"any of this\", \"real money\") instead of concrete accountability, so the narrative softens the ugliest causal truth right when stakes peak.",
+      "rewrite_direction": "Deepen the accountability beats at snapshots/cycle_02/chapters/chapter_14.md:167, snapshots/cycle_02/chapters/chapter_14.md:331, and snapshots/cycle_02/chapters/chapter_14.md:335 by replacing abstract placeholders with concrete remembered action and explicit harm naming (who was deceived, what was concealed, what was taken). Keep embodiment in-scene (voice, breath, pain response) instead of summary-only reflection.",
+      "acceptance_test": "PASS if revised text at snapshots/cycle_02/chapters/chapter_14.md:167, snapshots/cycle_02/chapters/chapter_14.md:331, and snapshots/cycle_02/chapters/chapter_14.md:335 includes both (1) one specific, observable action detail tied to the concealed affair and (2) one direct sentence naming Eli's concrete harm to Nora or June using explicit nouns, not pronouns like \"this/it\"; FAIL if either element is missing."
+    },
+    {
+      "finding_id": "CH14-CRAFT-002",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:331; snapshots/cycle_02/chapters/chapter_14.md:335; snapshots/cycle_02/chapters/chapter_14.md:339; snapshots/cycle_02/chapters/chapter_14.md:342",
+      "problem": "Timidity in the June voicemail sequence: Eli retreats into logistical reporting and exits before the hardest relational admission lands on the page, which undercuts the chapter's intended relational consequence.",
+      "rewrite_direction": "Rework the voicemail beat at snapshots/cycle_02/chapters/chapter_14.md:331, snapshots/cycle_02/chapters/chapter_14.md:335, snapshots/cycle_02/chapters/chapter_14.md:339, and snapshots/cycle_02/chapters/chapter_14.md:342 so one emotional claim remains unhedged and un-retracted before the sign-off.",
+      "acceptance_test": "PASS if the revised voicemail between snapshots/cycle_02/chapters/chapter_14.md:331 and snapshots/cycle_02/chapters/chapter_14.md:339 contains at least one direct emotional statement that is not a work update, money update, or plan, and line snapshots/cycle_02/chapters/chapter_14.md:342 does not immediately reframe that statement as logistical self-management; FAIL otherwise."
+    },
+    {
+      "finding_id": "CH14-DIALOGUE-001",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:55; snapshots/cycle_02/chapters/chapter_14.md:133; snapshots/cycle_02/chapters/chapter_14.md:189; snapshots/cycle_02/chapters/chapter_14.md:307",
+      "problem": "Tasha, Deena, and Kendra frequently share the same clipped compliance-threat syntax, reducing idiolect separation. Multiple supervisory voices become swappable in rhythm and sentence architecture.",
+      "rewrite_direction": "Differentiate supervisor registers at snapshots/cycle_02/chapters/chapter_14.md:55, snapshots/cycle_02/chapters/chapter_14.md:133, snapshots/cycle_02/chapters/chapter_14.md:189, and snapshots/cycle_02/chapters/chapter_14.md:307: keep Deena floor-pragmatic and physical, make Tasha more bureaucratic but colloquial, and give Kendra number/reconciliation-specific diction. Remove at least one repeated \"if X, you're out\" construction across these spans.",
+      "acceptance_test": "PASS if a reader can attribute one untagged line from each cited span to the correct speaker by diction/rhythm alone, and no two of the three supervisors use the same threat-template sentence shape in those lines; FAIL otherwise."
+    },
+    {
+      "finding_id": "CH14-PROSE-001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:5; snapshots/cycle_02/chapters/chapter_14.md:7; snapshots/cycle_02/chapters/chapter_14.md:9; snapshots/cycle_02/chapters/chapter_14.md:11; snapshots/cycle_02/chapters/chapter_14.md:13; snapshots/cycle_02/chapters/chapter_14.md:15; snapshots/cycle_02/chapters/chapter_14.md:17; snapshots/cycle_02/chapters/chapter_14.md:19; snapshots/cycle_02/chapters/chapter_14.md:21; snapshots/cycle_02/chapters/chapter_14.md:23; snapshots/cycle_02/chapters/chapter_14.md:25; snapshots/cycle_02/chapters/chapter_14.md:27; snapshots/cycle_02/chapters/chapter_14.md:29; snapshots/cycle_02/chapters/chapter_14.md:31",
+      "problem": "The hiring-intake opening contains a 10+ paragraph interiority drought (14 consecutive paragraphs without thought/sensation/memory/self-assessment), which breaks the close-third requirement and makes the section read as external transcript staging.",
+      "rewrite_direction": "Inject Eli's interior processing into the intake stretch at snapshots/cycle_02/chapters/chapter_14.md:15, snapshots/cycle_02/chapters/chapter_14.md:17, snapshots/cycle_02/chapters/chapter_14.md:23, and snapshots/cycle_02/chapters/chapter_14.md:27 while preserving scene velocity.",
+      "acceptance_test": "PASS if between snapshots/cycle_02/chapters/chapter_14.md:5 and snapshots/cycle_02/chapters/chapter_14.md:31, at least three separate paragraphs include explicit Eli interiority (thought, bodily sensation, memory, or self-judgment) rather than only action/dialogue; FAIL otherwise."
+    },
+    {
+      "finding_id": "CH14-PROSE-002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:25; snapshots/cycle_02/chapters/chapter_14.md:113; snapshots/cycle_02/chapters/chapter_14.md:157; snapshots/cycle_02/chapters/chapter_14.md:285",
+      "problem": "A repeated nodding default (4 instances) becomes a reaction tic, flattening beat-level physical variety and subtext differentiation.",
+      "rewrite_direction": "Replace at least two nod beats at snapshots/cycle_02/chapters/chapter_14.md:25, snapshots/cycle_02/chapters/chapter_14.md:113, snapshots/cycle_02/chapters/chapter_14.md:157, and snapshots/cycle_02/chapters/chapter_14.md:285 with distinct, context-specific actions tied to hierarchy, fatigue, or pain.",
+      "acceptance_test": "PASS if revised chapter uses \"nod\"/\"nodded\" no more than twice across these cited locations and each remaining reaction communicates a different subtext (e.g., compliance vs. dismissal) through concrete action; FAIL otherwise."
+    },
+    {
+      "finding_id": "CH14-PROSE-003",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:17; snapshots/cycle_02/chapters/chapter_14.md:97; snapshots/cycle_02/chapters/chapter_14.md:127; snapshots/cycle_02/chapters/chapter_14.md:313",
+      "problem": "Character-introduction prose leans on a recurring formula (small decorative detail plus explanatory gloss), which appears 3+ times and makes side-character entrances feel patterned rather than scene-specific.",
+      "rewrite_direction": "Vary introduction strategy for side characters at snapshots/cycle_02/chapters/chapter_14.md:97, snapshots/cycle_02/chapters/chapter_14.md:127, and snapshots/cycle_02/chapters/chapter_14.md:313 by leading with role pressure or immediate action instead of accessory-first description.",
+      "acceptance_test": "PASS if in revised cited spans, no more than one introduction uses an accessory-detail-first construction and each of the three entrances foregrounds immediate task pressure in its first sentence; FAIL otherwise."
+    }
+  ],
+  "summary": "Chapter 14 lands key boundary beats (desperation hiring, punishing labor texture, unanswered June contact) and stays in canonical past tense with no clear continuity contradiction, but it does not clear pass-level quality: causality plateaus in the mid-loop, emotional accountability is sanitized/timid at key pressure points, supervisor dialogue voices blur, and prose shows both an opening interiority drought and repeated stylistic tics.",
+  "coverage_scene_ids": [
+    "hiring_intake",
+    "laundry_audit_loop",
+    "everify_nonconfirmation",
+    "theo_call",
+    "june_voicemail"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "chapter_id": "chapter_11",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH11-BOOKER-001",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:150; snapshots/cycle_01/chapters/chapter_11.md:162; snapshots/cycle_01/chapters/chapter_11.md:166",
+      "problem": "The chapter's key acceleration (10-business-day delay to same-day pull) is introduced right after a personal connection reveal, which risks reading as convenience instead of inevitability from prior causal setup.",
+      "rewrite_direction": "In snapshots/cycle_01/chapters/chapter_11.md:150 and snapshots/cycle_01/chapters/chapter_11.md:166, foreground the procedural trigger (policy code + documented harm statement) before or independent of the niece mention at snapshots/cycle_01/chapters/chapter_11.md:162 so the same-day path reads as system logic, not insider luck.",
+      "acceptance_test": "Pass if a reader can remove the line at snapshots/cycle_01/chapters/chapter_11.md:162 and still clearly understand why expedite eligibility is granted from on-page policy/criteria in the surrounding passage (snapshots/cycle_01/chapters/chapter_11.md:150-180). Fail if approval still appears to hinge on personal connection." 
+    },
+    {
+      "finding_id": "CH11-CRAFT-001",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:96; snapshots/cycle_01/chapters/chapter_11.md:112; snapshots/cycle_01/chapters/chapter_11.md:114; snapshots/cycle_01/chapters/chapter_11.md:124",
+      "problem": "Procedural exposition dominates the middle run with stacked transaction beats (window, cashier, county desk, return queue), causing leverage movement to feel incremental rather than escalating.",
+      "rewrite_direction": "Compress one redundant administrative beat across snapshots/cycle_01/chapters/chapter_11.md:96, snapshots/cycle_01/chapters/chapter_11.md:112, and snapshots/cycle_01/chapters/chapter_11.md:114, then reallocate that space before snapshots/cycle_01/chapters/chapter_11.md:150 to a sharper consequence beat (time-loss, money-loss, relapse-risk, or legal-risk) that raises stakes before the reveal sequence.",
+      "acceptance_test": "Pass if the revised section between snapshots/cycle_01/chapters/chapter_11.md:96 and snapshots/cycle_01/chapters/chapter_11.md:150 has at least one clearly escalated consequence that changes Marisol's options before the certificate pull. Fail if the sequence still reads as four interchangeable queue updates with no new cost." 
+    },
+    {
+      "finding_id": "CH11-CRAFT-002",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:367; snapshots/cycle_01/chapters/chapter_11.md:369",
+      "problem": "Timidity: after the chapter's harsh documentary reveal, the AA-room beat is compressed into a safe summary-plus-affirmation, retreating from the social/emotional volatility the setup has earned.",
+      "rewrite_direction": "Expand the meeting exchange at snapshots/cycle_01/chapters/chapter_11.md:367 and snapshots/cycle_01/chapters/chapter_11.md:369 with at least one frictional or destabilizing response and one embodied reaction from Marisol, while keeping meeting anonymity and pace.",
+      "acceptance_test": "Pass if the revised meeting moment (around snapshots/cycle_01/chapters/chapter_11.md:367-371) contains more than a single generic supportive line and shows a concrete shift in Marisol's state caused by that interaction. Fail if it remains one-line reassurance with no scene-level pressure." 
+    },
+    {
+      "finding_id": "CH11-PROSE-001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:96; snapshots/cycle_01/chapters/chapter_11.md:122",
+      "problem": "A 10+ paragraph stretch in the central bureaucracy run is rendered mostly as external action, thinning close-third interior access and creating screenplay drift.",
+      "rewrite_direction": "Within snapshots/cycle_01/chapters/chapter_11.md:96 to snapshots/cycle_01/chapters/chapter_11.md:122, add brief interior beats at decision points (for example after snapshots/cycle_01/chapters/chapter_11.md:100, snapshots/cycle_01/chapters/chapter_11.md:112, and snapshots/cycle_01/chapters/chapter_11.md:122) that show thought, sensation, or self-assessment tied to stakes.",
+      "acceptance_test": "Pass if the revised segment between snapshots/cycle_01/chapters/chapter_11.md:96 and snapshots/cycle_01/chapters/chapter_11.md:122 includes at least three explicit interior moments (thought/sensation/memory/self-assessment) and no uninterrupted run of 10+ paragraphs without internal access. Fail otherwise." 
+    },
+    {
+      "finding_id": "CH11-PROSE-002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:3; snapshots/cycle_01/chapters/chapter_11.md:66; snapshots/cycle_01/chapters/chapter_11.md:122; snapshots/cycle_01/chapters/chapter_11.md:263",
+      "problem": "The transition construction 'By the time ...' appears four times and becomes a detectable rhythmic tic.",
+      "rewrite_direction": "Retain at most one early anchor use (snapshots/cycle_01/chapters/chapter_11.md:3) and recast later transitions at snapshots/cycle_01/chapters/chapter_11.md:66, snapshots/cycle_01/chapters/chapter_11.md:122, and snapshots/cycle_01/chapters/chapter_11.md:263 with distinct syntactic moves tied to concrete pressure cues.",
+      "acceptance_test": "Pass if the revised chapter uses 'By the time' no more than twice and the three cited transition points each use non-matching sentence constructions. Fail if the same formula remains in three or more places." 
+    }
+  ],
+  "summary": "Chapter 11 lands its documentary consequence and remains continuity/tense-consistent, but it does not clear pass-level yet: a convenience-prone causality hinge, process-heavy middle without enough leverage escalation, a timidly compressed meeting aftermath, an interiority drought in the central run, and a repeated transition formula keep booker/craft/prose below target. Dialogue register and contraction behavior are broadly consistent with the style bible."
+}

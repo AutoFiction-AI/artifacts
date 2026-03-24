@@ -1,0 +1,82 @@
+{
+  "acceptance_targets": [
+    "[CH07-B-001] PASS if the revised text in the confrontation/exfiltration and final pages shows one already-triggered consequence that forces an immediate plan change on-page before dawn; FAIL if the chapter still ends with only predictions about what may happen next morning.",
+    "[CH07-C-001] PASS if the revised final section keeps Lena morally unsettled and materially exposed, with no self-exonerating thesis line; FAIL if the ending still resolves into a declarative reassurance about her ethical clarity."
+  ],
+  "chapter_id": "chapter_07",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if the revised text in the confrontation/exfiltration and final pages shows one already-triggered consequence that forces an immediate plan change on-page before dawn; FAIL if the chapter still ends with only predictions about what may happen next morning.",
+      "chapter_id": "chapter_07",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:47; snapshots/cycle_01/chapters/chapter_07.md:233; snapshots/cycle_01/chapters/chapter_07.md:311; snapshots/cycle_01/chapters/chapter_07.md:427",
+      "finding_id": "CH07-B-001",
+      "problem": "The chapter frames felony-level risk, but its major consequences are mostly deferred to tomorrow language; the on-page arc resolves as a competent extraction rather than a costly turn, which softens causal impact.",
+      "rewrite_direction": "Revise the leverage sequence and exit aftermath at snapshots/cycle_01/chapters/chapter_07.md:233, snapshots/cycle_01/chapters/chapter_07.md:253, snapshots/cycle_01/chapters/chapter_07.md:311, snapshots/cycle_01/chapters/chapter_07.md:427, and snapshots/cycle_01/chapters/chapter_07.md:437 so one irreversible consequence from tonight is already active before chapter end (not only forecasted risk).",
+      "severity": "MEDIUM",
+      "source": "booker",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if the revised final section keeps Lena morally unsettled and materially exposed, with no self-exonerating thesis line; FAIL if the ending still resolves into a declarative reassurance about her ethical clarity.",
+      "chapter_id": "chapter_07",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:331; snapshots/cycle_01/chapters/chapter_07.md:423; snapshots/cycle_01/chapters/chapter_07.md:427",
+      "finding_id": "CH07-C-001",
+      "problem": "Sanitization via moral safety valve: after exposing Deputy Waller's role, the narration quickly recenters Lena in a clean ethical credo, reducing the unresolved contamination the chapter just uncovered.",
+      "rewrite_direction": "Rework the closing emotional turn at snapshots/cycle_01/chapters/chapter_07.md:421, snapshots/cycle_01/chapters/chapter_07.md:423, snapshots/cycle_01/chapters/chapter_07.md:427, and snapshots/cycle_01/chapters/chapter_07.md:439 so the chapter stays inside conflicted consequence (specific incriminating memory/evidence friction) instead of concluding with reassurance.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "042e3bad35d9ab47597005b797385ae5d1a8860e8aae7abb2fc9676265956f66",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "When edge cases arise, choose the version that preserves uncomfortable specificity and character accountability; do not replace difficult scenes with procedural summary, and do not mute class, race, sexuality, or institutional cruelty when those forces are actively shaping choices.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene with violence, racism, grief, or moral compromise is rendered in abstract or polite shorthand, revise to restore specific bodily, social, and material consequence before accepting the draft.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the baseline in contemporary Mississippi speech; uncontracted forms are reserved for formality, emphasis, or social performance.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "rotate structural textures across chapters: procedural surge, quiet domestic interval, document-driven slow burn, dread preparation, aftermath inventory, and information-turn chapters; avoid repeating scene count plus dialogue density pattern in adjacent chapters.",
+      "diction": "literary but grounded; precise legal and forensic terms when needed, balanced by lived vernacular and local material detail.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third person anchored primarily to Lena, with brief controlled expansions only when factual clarity requires it.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "alternate compressed procedural sentences with longer sensory-emotional lines so pressure and reflection keep rebalancing.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

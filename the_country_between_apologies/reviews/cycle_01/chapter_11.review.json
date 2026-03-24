@@ -1,0 +1,68 @@
+{
+  "chapter_id": "chapter_11",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch11_booker_01",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:492; snapshots/cycle_01/chapters/chapter_11.md:502; snapshots/cycle_01/chapters/chapter_11.md:506",
+      "problem": "The ending replays avoidance without adding fresh causal consequence: after the chapter's intimacy/confession state change, Eli again defers contact (unplayed voicemail), which softens forward pressure instead of forcing a new cost-bearing choice.",
+      "rewrite_direction": "Revise the closing beat at snapshots/cycle_01/chapters/chapter_11.md:492, snapshots/cycle_01/chapters/chapter_11.md:502, and snapshots/cycle_01/chapters/chapter_11.md:506 so the voicemail creates immediate consequence (e.g., concrete demand/deadline from home) and Eli makes an observable response in-scene (play, delete, call back, or explicit refusal with cost).",
+      "acceptance_test": "In the revised closing span anchored at snapshots/cycle_01/chapters/chapter_11.md:492 and snapshots/cycle_01/chapters/chapter_11.md:506, the reader learns one new external stake datum from the message (caller identity plus a concrete ask/date/amount), and Eli performs a visible action in response before chapter end."
+    },
+    {
+      "finding_id": "ch11_craft_01",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:331; snapshots/cycle_01/chapters/chapter_11.md:333; snapshots/cycle_01/chapters/chapter_11.md:335",
+      "problem": "Sanitization drift via summary-replacing-scene: at a high-stakes post-intimacy moment, the text reports an hour of talk in aggregate ('She told him... He told her...') instead of dramatizing live friction and consequence, reducing emotional and ethical pressure.",
+      "rewrite_direction": "Replace the summarized block anchored at snapshots/cycle_01/chapters/chapter_11.md:331, snapshots/cycle_01/chapters/chapter_11.md:333, and snapshots/cycle_01/chapters/chapter_11.md:335 with rendered scene dialogue and embodied beats that stage at least one direct conflict point about secrecy/return obligations and one boundary reaffirmation from Marisol.",
+      "acceptance_test": "In the revised 331-336 span, there is no omnibus summary sentence of the conversation; both characters speak directly about family consequence, the exchange contains at least one interruption/refusal, and at least one physical beat references Eli's injury or bodily state."
+    },
+    {
+      "finding_id": "ch11_dialogue_01",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:380; snapshots/cycle_01/chapters/chapter_11.md:396; snapshots/cycle_01/chapters/chapter_11.md:402; snapshots/cycle_01/chapters/chapter_11.md:452; snapshots/cycle_01/chapters/chapter_11.md:480",
+      "problem": "Two key exchanges lean on repeated confirmation turns ('Okay.' 'I know.' 'Good.') that flatten idiolect separation and drift toward transcript cadence instead of leverage-shifting dialogue.",
+      "rewrite_direction": "Rework dialogue anchored at snapshots/cycle_01/chapters/chapter_11.md:380 and snapshots/cycle_01/chapters/chapter_11.md:402, plus snapshots/cycle_01/chapters/chapter_11.md:452 and snapshots/cycle_01/chapters/chapter_11.md:480, by replacing confirmation-only turns with character-specific diction/rhythm (Eli's self-revising logistics voice vs. Marisol's concrete boundary voice) and at least one interruption that changes leverage.",
+      "acceptance_test": "In each revised exchange anchored at snapshots/cycle_01/chapters/chapter_11.md:380 and snapshots/cycle_01/chapters/chapter_11.md:452, there is no run of more than one consecutive low-information confirmation line, and each character has at least one line whose syntax/diction is clearly non-interchangeable with the other."
+    },
+    {
+      "finding_id": "ch11_prose_01",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:37; snapshots/cycle_01/chapters/chapter_11.md:343; snapshots/cycle_01/chapters/chapter_11.md:434",
+      "problem": "The same compressed sentence construction ('He did.') appears three times, reading as a repeated formula rather than deliberate rhythmic variation.",
+      "rewrite_direction": "Revise the beats at snapshots/cycle_01/chapters/chapter_11.md:37, snapshots/cycle_01/chapters/chapter_11.md:343, and snapshots/cycle_01/chapters/chapter_11.md:434 to replace pronoun+auxiliary shorthand with context-specific action/sensation/thought.",
+      "acceptance_test": "All three target lines are rewritten so none uses 'He did.' as a complete sentence, and each revised beat contributes a distinct concrete detail (sensory, emotional, or situational)."
+    },
+    {
+      "finding_id": "ch11_prose_02",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:380; snapshots/cycle_01/chapters/chapter_11.md:402",
+      "problem": "The ground-rules section runs 10+ consecutive short paragraphs without interior access to Eli, producing screenplay drift during a consequential boundary negotiation.",
+      "rewrite_direction": "Inject close-third interiority into the ground-rules run anchored at snapshots/cycle_01/chapters/chapter_11.md:380 and snapshots/cycle_01/chapters/chapter_11.md:402 (bodily sensation, memory, or self-assessment tied to Marisol's rules) while keeping scene tempo and conflict.",
+      "acceptance_test": "In the revised ground-rules section anchored at snapshots/cycle_01/chapters/chapter_11.md:380 and snapshots/cycle_01/chapters/chapter_11.md:402, at least two paragraphs include explicit Eli interiority (thought, sensation, memory, or self-assessment), and there is no uninterrupted run longer than nine paragraphs without interior access."
+    }
+  ],
+  "summary": "Chapter 11 lands key spine beats (meal, confessional boundary, explicit intimacy, morning routine) with strong sensory grounding and continuity alignment, but it does not clear pass-level rigor: the post-intimacy aftermath is partially sanitized via summary, late-chapter consequence is deferred, dialogue cadence flattens in repeated confirmation loops, and repeated prose formulas plus an interiority drought reduce stylistic control.",
+  "coverage_scene_ids": [
+    "meal_after_shift",
+    "pool_and_room_intimacy",
+    "morning_ground_rules",
+    "workday_and_voicemail_close"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "acceptance_targets": [
+    "[CH09_PROSE_001] Pass if the revised cited passages no longer rely on the same negation-correction template in more than one of those five beats, and each moment reads as a distinct turn on first pass; fail if multiple key beats still announce what something is not before saying what it is.",
+    "[CH09_PROSE_002] Pass if, across the revised cited pivots, the exact 'looked at her' construction appears no more than twice and at least three of those turns signal leverage change through a more specific physical or psychological cue; fail if the chapter still uses the same gaze beat as the default pivot marker across those moments."
+  ],
+  "chapter_id": "chapter_09",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if the revised cited passages no longer rely on the same negation-correction template in more than one of those five beats, and each moment reads as a distinct turn on first pass; fail if multiple key beats still announce what something is not before saying what it is.",
+      "chapter_id": "chapter_09",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:95; snapshots/cycle_01/chapters/chapter_09.md:236; snapshots/cycle_01/chapters/chapter_09.md:382; snapshots/cycle_01/chapters/chapter_09.md:450; snapshots/cycle_01/chapters/chapter_09.md:514",
+      "finding_id": "CH09_PROSE_001",
+      "problem": "The chapter repeatedly lands major beats through the same negation-then-correction sentence machinery: 'It wasn't that...', 'This was not...', 'It was not...', 'It wasn't.' The device works once or twice, but at this frequency it becomes visible scaffolding and starts making distinct emotional turns sound built from the same template.",
+      "rewrite_direction": "Rework the pressure beats at snapshots/cycle_01/chapters/chapter_09.md:95, snapshots/cycle_01/chapters/chapter_09.md:236, snapshots/cycle_01/chapters/chapter_09.md:382, snapshots/cycle_01/chapters/chapter_09.md:450, and snapshots/cycle_01/chapters/chapter_09.md:514 so most of them arrive through direct statement, image, or action rather than the recurring 'not X / it was Y' hinge. Keep the construction only where the negation itself materially sharpens the beat.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if, across the revised cited pivots, the exact 'looked at her' construction appears no more than twice and at least three of those turns signal leverage change through a more specific physical or psychological cue; fail if the chapter still uses the same gaze beat as the default pivot marker across those moments.",
+      "chapter_id": "chapter_09",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:113; snapshots/cycle_01/chapters/chapter_09.md:284; snapshots/cycle_01/chapters/chapter_09.md:330; snapshots/cycle_01/chapters/chapter_09.md:360; snapshots/cycle_01/chapters/chapter_09.md:526; snapshots/cycle_01/chapters/chapter_09.md:572",
+      "finding_id": "CH09_PROSE_002",
+      "problem": "Late emotional pivots default too often to the exact 'looked at her' construction. Because those lines sit at leverage changes, the repeated gaze cue starts reading like a placeholder beat instead of fresh scene writing, especially in the back half where June and Leela should be distinguishable through more specific bodily or interior signals.",
+      "rewrite_direction": "Vary the turn markers at snapshots/cycle_01/chapters/chapter_09.md:113, snapshots/cycle_01/chapters/chapter_09.md:284, snapshots/cycle_01/chapters/chapter_09.md:330, snapshots/cycle_01/chapters/chapter_09.md:360, snapshots/cycle_01/chapters/chapter_09.md:526, and snapshots/cycle_01/chapters/chapter_09.md:572. Replace several of the exact 'looked at her' beats with more specific action, sensation, or interior reaction that tells the reader what changed in the room, not just where the characters' eyes went.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "5292acd739278bec0a3254361b5b7fde2dafee28aec787edb8d53158d5922343",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on prose and copyedit finish: diction precision, rhythm control, sentence-level clarity, grammar, line-level polish without flattening style, and explicit aesthetic-risk audit (sanitization is the primary risk \u2014 do not soften or euphemize; push toward creative risk and specificity).",
+    "key": "p3_prose_copyedit",
+    "label": "prose/copyedit fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into the absurdity and cruelty of graduate labor without converting the book into caricature or chase-plot menace. In edge cases, prefer the messier and more compromising version of events if it yields stronger human consequence and remains causally plausible; render sex, professional theft, bureaucratic harm, and emotional pettiness with the same specificity as any technical problem.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene turns vague at the exact point humiliation, erotic charge, class shame, visa fear, or institutional cruelty becomes concrete, rewrite until the cost is materially and socially legible.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High; contractions are the baseline in speech, and uncontracted forms should appear only for deliberate precision, class performance, emotional emphasis, or character-specific formality.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate public and private pressure, ensemble chapters and solitary ones, bureaucratic scenes and domestic scenes, deadline compression and aftermath inventory, so no two adjacent chapters rely on the same structural rhythm or dialogue density.",
+      "diction": "Contemporary literary English grounded in material detail; technical language should appear only when the social reality of the lab requires it, and it should never replace bodily or relational consequence.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person centered on Leela, with occasional brief widenings that register group mood and institutional atmosphere without leaving her interpretive frame.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Alternate compressed observational lines with longer accrual sentences that can carry comedy, shame, and procedural dread in the same movement; quiet chapters should breathe, deadline chapters should tighten without turning telegraphic.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

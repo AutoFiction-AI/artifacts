@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_07",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_07_craft_001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:31; snapshots/cycle_01/chapters/chapter_07.md:99; snapshots/cycle_01/chapters/chapter_07.md:101; snapshots/cycle_01/chapters/chapter_07.md:105",
+      "problem": "The chapter's hardest moral fact, Della helping move Joel from Clara's house to Willa's, is still told around rather than rendered. The text gives concrete fallout, but the transfer itself is cushioned by retrospective rationale ('a child could belong where there was milk powder,' 'The middle was hungry') and clerkly burial summary instead of the actual handoff, which reads as sanitization-by-summary at the exact point the chapter should force the reader to sit inside the coercion, bodily strain, and moral compromise.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_07.md:99-101, replace the rationalizing summary with a brief, concrete flash of the transfer itself: who physically lifts Joel, what Clara says or cannot say, what Della's hands do, and how Willa receives him. Use snapshots/cycle_01/chapters/chapter_07.md:31 as the setup to sharpen rather than soften the act, and let snapshots/cycle_01/chapters/chapter_07.md:211-219 carry one more specific consequence from that remembered handoff instead of returning to generalized moral framing.",
+      "acceptance_test": "Pass if the revised material around snapshots/cycle_01/chapters/chapter_07.md:99-101 makes explicit, without inference, who handed Joel over, what Clara's immediate bodily or verbal response was, and what material condition made her consent compromised; fail if the transfer is still described mainly through abstractions such as 'better chance,' 'hungry,' or burial-record summary."
+    },
+    {
+      "finding_id": "chapter_07_prose_001",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:107; snapshots/cycle_01/chapters/chapter_07.md:109; snapshots/cycle_01/chapters/chapter_07.md:119; snapshots/cycle_01/chapters/chapter_07.md:133; snapshots/cycle_01/chapters/chapter_07.md:153; snapshots/cycle_01/chapters/chapter_07.md:201; snapshots/cycle_01/chapters/chapter_07.md:225; snapshots/cycle_01/chapters/chapter_07.md:245",
+      "problem": "The chapter repeatedly falls back on the same aftershock cadence: demonstrative openers ('That broke,' 'That bought,' 'That landed,' 'That hit') paired with clipped narration fragments ('Not outrage. Not even belief.' 'Not a mob.' 'Only empty.'). By the back half this stops reading as controlled compression and starts reading as a mechanical tic, flattening the prose and repeatedly violating the constitution's ban on elliptical clipping in narration.",
+      "rewrite_direction": "Rework the repeated cadences at snapshots/cycle_01/chapters/chapter_07.md:107-109, snapshots/cycle_01/chapters/chapter_07.md:119, snapshots/cycle_01/chapters/chapter_07.md:133, snapshots/cycle_01/chapters/chapter_07.md:153, snapshots/cycle_01/chapters/chapter_07.md:201, snapshots/cycle_01/chapters/chapter_07.md:225, and snapshots/cycle_01/chapters/chapter_07.md:245 so the reactions are carried by specific agents, bodily responses, or scene action in grammatically complete sentences. Keep the compression, but vary the sentence entries and stop using standalone fragment beats as the default emphasis device.",
+      "acceptance_test": "Across the revised cited spans, pass only if no more than two sentences begin with 'That' plus a past-tense verb and none of the emphasis beats rely on standalone narration fragments such as 'Not a mob.' or 'Only empty.'; fail if the same demonstrative-plus-fragment pattern still appears in three or more of those locations."
+    }
+  ],
+  "summary": "Chapter 07 lands its causal job: the children's-row work is physically vivid, the twin-grave mismatch materially escalates the novel's naming conflict, June and Ruthie absorb public fallout, and the speaking characters remain distinct enough to support PASS verdicts for booker and dialogue. It fails on craft and prose because the infant-transfer reveal is still partly sanitized into retrospective rationale instead of concrete handoff, and the chapter overuses demonstrative/fragment aftershock formulas until the prose rhythm turns mechanical. No continuity contradiction or sustained tense drift was found against the supplied continuity sheet and style bible."
+}

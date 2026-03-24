@@ -1,0 +1,82 @@
+{
+  "acceptance_targets": [
+    "[CH16-DIALOGUE-001] In the revised Clay dialogue at the cited lines, at least 3 lines contain concrete action/consequence language (who does what next, what penalty follows) rather than repeating abstract PR terms; Clay should still sound polished and controlling.",
+    "[CH16-DIALOGUE-002] Read the two revised exchanges without speaker tags: Mara's should be identifiable by reframe-and-probe rhythm, Pilar's by legal-remedy triage language; each exchange must remain intelligible as distinct voices in at least 3 consecutive lines."
+  ],
+  "chapter_id": "chapter_16",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "In the revised Clay dialogue at the cited lines, at least 3 lines contain concrete action/consequence language (who does what next, what penalty follows) rather than repeating abstract PR terms; Clay should still sound polished and controlling.",
+      "chapter_id": "chapter_16",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_16.md:23; snapshots/cycle_02/chapters/chapter_16.md:33; snapshots/cycle_02/chapters/chapter_16.md:53; snapshots/cycle_02/chapters/chapter_16.md:57; snapshots/cycle_02/chapters/chapter_16.md:93",
+      "finding_id": "CH16-DIALOGUE-001",
+      "problem": "Clay's speech overuses abstract governance nouns (order/stability/trust/process), reading like literal style-bible token reuse instead of adaptive coercive rhetoric. The voice becomes predictable and flatter than the scene pressure warrants.",
+      "rewrite_direction": "Revise Clay's lines at snapshots/cycle_02/chapters/chapter_16.md:23, snapshots/cycle_02/chapters/chapter_16.md:33, snapshots/cycle_02/chapters/chapter_16.md:53, snapshots/cycle_02/chapters/chapter_16.md:57, and snapshots/cycle_02/chapters/chapter_16.md:93 so at least part of his pressure comes through concrete tactical stakes and veiled threat, not repeated institutional abstractions.",
+      "severity": "MEDIUM",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Read the two revised exchanges without speaker tags: Mara's should be identifiable by reframe-and-probe rhythm, Pilar's by legal-remedy triage language; each exchange must remain intelligible as distinct voices in at least 3 consecutive lines.",
+      "chapter_id": "chapter_16",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_16.md:171; snapshots/cycle_02/chapters/chapter_16.md:173; snapshots/cycle_02/chapters/chapter_16.md:177; snapshots/cycle_02/chapters/chapter_16.md:181; snapshots/cycle_02/chapters/chapter_16.md:211; snapshots/cycle_02/chapters/chapter_16.md:213; snapshots/cycle_02/chapters/chapter_16.md:216; snapshots/cycle_02/chapters/chapter_16.md:218",
+      "finding_id": "CH16-DIALOGUE-002",
+      "problem": "Pilar and Mara both default to similar clipped interrogative cadence in pressure exchanges, blurring idiolect separation in adjacent scenes.",
+      "rewrite_direction": "Differentiate the two exchanges: keep Mara's rapid reframing and investigative pivoting at snapshots/cycle_02/chapters/chapter_16.md:211-219, while shifting Pilar's turn at snapshots/cycle_02/chapters/chapter_16.md:171-181 toward defender-remedy framing (motion, preservation, medical access) with fewer mirrored question stems.",
+      "severity": "MEDIUM",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "287ee193115b1227b7e6ac9c6a68b530c331a5bda6d32f663b5a58865d1c5310",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on dialogue realism and voice separation: idiolect fidelity, leverage shifts, pressure cadence, anti-transcript behavior, natural colloquial texture (contractions/interruptions/slang when character-true), and pressure-true profanity usage per aesthetic risk policy.",
+    "key": "p2_dialogue_idiolect_cadence",
+    "label": "dialogue/idiolect/cadence fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "When edge cases arise, choose the version that preserves uncomfortable specificity and character accountability; do not replace difficult scenes with procedural summary, and do not mute class, race, sexuality, or institutional cruelty when those forces are actively shaping choices.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene with violence, racism, grief, or moral compromise is rendered in abstract or polite shorthand, revise to restore specific bodily, social, and material consequence before accepting the draft.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the baseline in contemporary Mississippi speech; uncontracted forms are reserved for formality, emphasis, or social performance.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "rotate structural textures across chapters: procedural surge, quiet domestic interval, document-driven slow burn, dread preparation, aftermath inventory, and information-turn chapters; avoid repeating scene count plus dialogue density pattern in adjacent chapters.",
+      "diction": "literary but grounded; precise legal and forensic terms when needed, balanced by lived vernacular and local material detail.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third person anchored primarily to Lena, with brief controlled expansions only when factual clarity requires it.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "alternate compressed procedural sentences with longer sensory-emotional lines so pressure and reflection keep rebalancing.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

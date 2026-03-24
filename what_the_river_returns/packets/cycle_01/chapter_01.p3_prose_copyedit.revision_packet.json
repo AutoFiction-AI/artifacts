@@ -1,0 +1,95 @@
+{
+  "acceptance_targets": [
+    "[chapter_01_F003] PASS only if none of the revised lines at snapshots/cycle_01/chapters/chapter_01.md:87, snapshots/cycle_01/chapters/chapter_01.md:183, and snapshots/cycle_01/chapters/chapter_01.md:235 uses the pattern \"gave a ... laugh/half-smile\" and each beat signals a different emotional mechanism. FAIL if the template still appears in 3+ instances.",
+    "[chapter_01_F004] PASS only if the revised section between snapshots/cycle_01/chapters/chapter_01.md:247 and snapshots/cycle_01/chapters/chapter_01.md:307 includes at least 3 distinct Lena-internal moments (one sensation, one memory/association, one strategic self-assessment) and no uninterrupted run longer than 6 paragraphs without focal interiority. FAIL if a 10+ paragraph interiority gap remains.",
+    "[chapter_01_F008] PASS only if revised text between snapshots/cycle_01/chapters/chapter_01.md:253 and snapshots/cycle_01/chapters/chapter_01.md:303 replaces at least two abstract governance tokens with concrete operational detail and avoids meta-rhetorical labeling like part-of-speech commentary. FAIL if lexical checklist feel remains."
+  ],
+  "chapter_id": "chapter_01",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS only if none of the revised lines at snapshots/cycle_01/chapters/chapter_01.md:87, snapshots/cycle_01/chapters/chapter_01.md:183, and snapshots/cycle_01/chapters/chapter_01.md:235 uses the pattern \"gave a ... laugh/half-smile\" and each beat signals a different emotional mechanism. FAIL if the template still appears in 3+ instances.",
+      "chapter_id": "chapter_01",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:87; snapshots/cycle_01/chapters/chapter_01.md:183; snapshots/cycle_01/chapters/chapter_01.md:235",
+      "finding_id": "chapter_01_F003",
+      "problem": "Recurring reaction formula appears 3 times (\"X gave a [adjective] laugh/half-smile\"), creating a detectable prose tic that flattens character texture.",
+      "rewrite_direction": "Rewrite reaction beats at snapshots/cycle_01/chapters/chapter_01.md:87, snapshots/cycle_01/chapters/chapter_01.md:183, and snapshots/cycle_01/chapters/chapter_01.md:235 with character-specific physical behavior and scene-linked gesture instead of repeating the same construction.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS only if the revised section between snapshots/cycle_01/chapters/chapter_01.md:247 and snapshots/cycle_01/chapters/chapter_01.md:307 includes at least 3 distinct Lena-internal moments (one sensation, one memory/association, one strategic self-assessment) and no uninterrupted run longer than 6 paragraphs without focal interiority. FAIL if a 10+ paragraph interiority gap remains.",
+      "chapter_id": "chapter_01",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:247; snapshots/cycle_01/chapters/chapter_01.md:287",
+      "finding_id": "chapter_01_F004",
+      "problem": "Interiority drought: the briefing sequence runs 10+ consecutive paragraphs without Lena's internal thought/sensation/self-assessment, so focalized prose slips toward screenplay transcript.",
+      "rewrite_direction": "Add brief interior beats between snapshots/cycle_01/chapters/chapter_01.md:247 and snapshots/cycle_01/chapters/chapter_01.md:287 (not clustered in one spot), tying Clay/Cora dialogue to Lena's bodily stress, memory trigger, and tactical self-check before snapshots/cycle_01/chapters/chapter_01.md:289.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS only if revised text between snapshots/cycle_01/chapters/chapter_01.md:253 and snapshots/cycle_01/chapters/chapter_01.md:303 replaces at least two abstract governance tokens with concrete operational detail and avoids meta-rhetorical labeling like part-of-speech commentary. FAIL if lexical checklist feel remains.",
+      "chapter_id": "chapter_01",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:253; snapshots/cycle_01/chapters/chapter_01.md:281; snapshots/cycle_01/chapters/chapter_01.md:303",
+      "finding_id": "chapter_01_F008",
+      "problem": "Mechanical repetition from style-bible token reuse: governance abstractions (stability, confidence, institution/control) stack so explicitly that passages read like calibration markers instead of discovered scene language.",
+      "rewrite_direction": "Rework abstraction-heavy lines between snapshots/cycle_01/chapters/chapter_01.md:253 and snapshots/cycle_01/chapters/chapter_01.md:303 by replacing repeated governance nouns with concrete administrative acts, and remove or recast meta-label phrasing that explains the rhetoric instead of dramatizing it.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "99b41666368f26e4077c085a3ddbba3f9e57d45537af6ef2506115ed57f18eb4",
+  "must_fix_count": 3,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on prose and copyedit finish: diction precision, rhythm control, sentence-level clarity, grammar, line-level polish without flattening style, and explicit aesthetic-risk audit (sanitization is the primary risk \u2014 do not soften or euphemize; push toward creative risk and specificity).",
+    "key": "p3_prose_copyedit",
+    "label": "prose/copyedit fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "When edge cases arise, choose the version that preserves uncomfortable specificity and character accountability; do not replace difficult scenes with procedural summary, and do not mute class, race, sexuality, or institutional cruelty when those forces are actively shaping choices.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene with violence, racism, grief, or moral compromise is rendered in abstract or polite shorthand, revise to restore specific bodily, social, and material consequence before accepting the draft.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the baseline in contemporary Mississippi speech; uncontracted forms are reserved for formality, emphasis, or social performance.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "rotate structural textures across chapters: procedural surge, quiet domestic interval, document-driven slow burn, dread preparation, aftermath inventory, and information-turn chapters; avoid repeating scene count plus dialogue density pattern in adjacent chapters.",
+      "diction": "literary but grounded; precise legal and forensic terms when needed, balanced by lived vernacular and local material detail.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third person anchored primarily to Lena, with brief controlled expansions only when factual clarity requires it.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "alternate compressed procedural sentences with longer sensory-emotional lines so pressure and reflection keep rebalancing.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

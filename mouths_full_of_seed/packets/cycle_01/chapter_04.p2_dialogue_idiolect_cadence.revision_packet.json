@@ -1,0 +1,69 @@
+{
+  "acceptance_targets": [
+    "[chapter_04_dialogue_001] In the revised banter anchored at snapshots/cycle_01/chapters/chapter_04.md:91 and snapshots/cycle_01/chapters/chapter_04.md:147, at least four consecutive lines can be attributed to the correct speaker without dialogue tags because their diction and rhythm are distinct; fail if two or more of Riva, Tovin, and Lale still sound interchangeable when their lines are read in isolation."
+  ],
+  "chapter_id": "chapter_04",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "In the revised banter anchored at snapshots/cycle_01/chapters/chapter_04.md:91 and snapshots/cycle_01/chapters/chapter_04.md:147, at least four consecutive lines can be attributed to the correct speaker without dialogue tags because their diction and rhythm are distinct; fail if two or more of Riva, Tovin, and Lale still sound interchangeable when their lines are read in isolation.",
+      "chapter_id": "chapter_04",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_04.md:101; snapshots/cycle_01/chapters/chapter_04.md:103; snapshots/cycle_01/chapters/chapter_04.md:107; snapshots/cycle_01/chapters/chapter_04.md:111; snapshots/cycle_01/chapters/chapter_04.md:149",
+      "finding_id": "chapter_04_dialogue_001",
+      "problem": "The meal banter is lively, but too many speakers land the same compact, polished dry zinger. In this stretch Lale, Riva, Tovin, and Iven briefly compress into one shared sharp-tongued cadence, which softens the idiolect separation the style bible requires even though the contraction level itself is mostly correct.",
+      "rewrite_direction": "Retune the exchange around snapshots/cycle_01/chapters/chapter_04.md:91; snapshots/cycle_01/chapters/chapter_04.md:107; snapshots/cycle_01/chapters/chapter_04.md:147 so the humor remains but each speaker's line logic is more character-specific: Riva should sound task-first and physically consequential, Tovin bluntly workwoman-practical, Lale precise and measured, and Iven faster, more bartering, and more evasively flirtatious. Replace or reshape the most swappable punchlines rather than flattening the scene's comic energy.",
+      "severity": "MEDIUM",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "1746ffec96467b97cc7e14f1a84e647f16187a02989a6dccdba5373a382480e8",
+  "must_fix_count": 1,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on dialogue realism and voice separation: idiolect fidelity, leverage shifts, pressure cadence, anti-transcript behavior, natural colloquial texture (contractions/interruptions/slang when character-true), and pressure-true profanity usage per aesthetic risk policy.",
+    "key": "p2_dialogue_idiolect_cadence",
+    "label": "dialogue/idiolect/cadence fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into the collision of sanctity, lust, labor, rot, and family resentment. In edge cases, choose the more concrete, uncomfortable, and character-specific rendering over symbolic safety; if an image or action feels too polite for the pressure, it is probably wrong.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If sex, violence, shame, grief, or economic pressure drives a scene, vague language counts as a failed beat; replace euphemism with the exact bodily, social, or material consequence the character experiences.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High - contractions are the norm across dialogue; uncontracted forms are reserved for ritual speech, emphasis, or deliberate character-specific formality.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Vary scene count, dialogue density, and narrative movement aggressively: follow ordeal with meal, revelation with labor, schism with care, and public spectacle with close-bodied aftermath so no adjacent chapters share the same structural rhythm.",
+      "diction": "Concrete, bodily, locally sacred, and unsanitized; lyrical only when pressure earns it, never as a decorative default.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person rotating among the five siblings; each scene stays inside one consciousness and lets the river press through perception rather than omniscient explanation.",
+      "narrative_tense": "Past tense.",
+      "rhythm_target": "Alternate muscular propulsion with denser lyric accumulation; peak scenes should tighten and clarify rather than dissolve into fragmentary haze.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

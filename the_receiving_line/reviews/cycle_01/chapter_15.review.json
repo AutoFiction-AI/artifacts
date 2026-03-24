@@ -1,0 +1,22 @@
+{
+  "chapter_id": "chapter_15",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "PASS",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH15-PROSE-01",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_01/chapters/chapter_15.md:53; snapshots/cycle_01/chapters/chapter_15.md:107; snapshots/cycle_01/chapters/chapter_15.md:121; snapshots/cycle_01/chapters/chapter_15.md:265; snapshots/cycle_01/chapters/chapter_15.md:311",
+      "problem": "The chapter repeatedly drops into clipped noun-phrase/count-off fragments such as \"Three knots. Then four.\", \"Systems. Shared infrastructure.\", \"Strings, low and tasteful.\", \"Two beats. Three.\", and \"No nod. No signal.\" The recurrence makes the rhythm feel like a reusable house tic instead of earned compression, and it violates the constitution's ban on elliptical clipping in narration.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_15.md:53, snapshots/cycle_01/chapters/chapter_15.md:107, snapshots/cycle_01/chapters/chapter_15.md:121, snapshots/cycle_01/chapters/chapter_15.md:265, and snapshots/cycle_01/chapters/chapter_15.md:311, recast the fragment beats as grammatically complete sentences still locked to Marisol's perception. Keep the abrupt impact, but restore omitted verbs/articles so the counting, systems realization, headset texture, flush delay, and Ivo handoff read as deliberate compression rather than clipped shorthand.",
+      "acceptance_test": "PASS only if the revised beats at snapshots/cycle_01/chapters/chapter_15.md:53, snapshots/cycle_01/chapters/chapter_15.md:107, snapshots/cycle_01/chapters/chapter_15.md:121, snapshots/cycle_01/chapters/chapter_15.md:265, and snapshots/cycle_01/chapters/chapter_15.md:311 all read as grammatically complete sentences in narration while preserving the same immediate scene function. FAIL if any of those targeted beats still rely on isolated noun-phrase or count-off fragments with omitted verbs."
+    }
+  ],
+  "summary": "The chapter meets its dark-comic escalation brief: the hospitality theater is absurd without becoming forgiving, the sabotage remains materially petty and strategically useful, and the dialogue voices stay distinct and register-true to the style bible. It fails the prose lens because the narration repeatedly falls into clipped fragment beats, turning sentence rhythm into a visible tic and breaching the constitution's anti-elliptical standard."
+}

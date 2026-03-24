@@ -1,0 +1,83 @@
+{
+  "acceptance_targets": [
+    "[ch13_f004_dialogue_idiolect_blur_bridge] PASS if, in lines 327-404, Minjae delivers at least 2 lines anchored to concrete route/family logistics, Ina delivers at least 2 lines anchored to moral/media framing, and the exchange contains at least 3 interruptive beats (cutoffs, overlaps, unfinished clauses); FAIL if both voices still read as interchangeable polished rebuttals.",
+    "[ch13_f005_dialogue_contraction_drift] PASS if the revised span uses contractions for all contractible Ina/Minjae dialogue forms except at most one deliberately formal line per speaker marked by context (e.g., legalistic distancing, explicit emphasis); FAIL if repeated unmotivated full forms remain."
+  ],
+  "chapter_id": "chapter_13",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if, in lines 327-404, Minjae delivers at least 2 lines anchored to concrete route/family logistics, Ina delivers at least 2 lines anchored to moral/media framing, and the exchange contains at least 3 interruptive beats (cutoffs, overlaps, unfinished clauses); FAIL if both voices still read as interchangeable polished rebuttals.",
+      "chapter_id": "chapter_13",
+      "cycle": 1,
+      "evidence": "`snapshots/cycle_01/chapters/chapter_13.md:327`, `snapshots/cycle_01/chapters/chapter_13.md:387`, `snapshots/cycle_01/chapters/chapter_13.md:399`",
+      "finding_id": "ch13_f004_dialogue_idiolect_blur_bridge",
+      "problem": "In the bridge argument, Ina and Minjae repeatedly converge into similarly polished aphoristic cadence, reducing idiolect separation under peak pressure.",
+      "rewrite_direction": "Retune `snapshots/cycle_01/chapters/chapter_13.md:327`-`snapshots/cycle_01/chapters/chapter_13.md:404`: make Minjae's turns more logistics/family-specific and interruption-prone, and keep Ina's turns in moral/media framing with sharper pivots and less rhetorical symmetry.",
+      "severity": "MEDIUM",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if the revised span uses contractions for all contractible Ina/Minjae dialogue forms except at most one deliberately formal line per speaker marked by context (e.g., legalistic distancing, explicit emphasis); FAIL if repeated unmotivated full forms remain.",
+      "chapter_id": "chapter_13",
+      "cycle": 1,
+      "evidence": "`snapshots/cycle_01/chapters/chapter_13.md:341`, `snapshots/cycle_01/chapters/chapter_13.md:359`, `snapshots/cycle_01/chapters/chapter_13.md:435`, `snapshots/cycle_01/chapters/chapter_13.md:441`",
+      "finding_id": "ch13_f005_dialogue_contraction_drift",
+      "problem": "High-contraction characters (Ina and Minjae) cluster uncontracted forms during emotional escalation, producing avoidable formality drift in scenes that should sound more fractured and colloquial.",
+      "rewrite_direction": "In `snapshots/cycle_01/chapters/chapter_13.md:335`-`snapshots/cycle_01/chapters/chapter_13.md:443`, convert non-emphatic full forms in Ina/Minjae dialogue to contractions; keep only clearly motivated formal lines with explicit narrative justification.",
+      "severity": "MEDIUM",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "743d0d789dc14666357e3e6f61f9752f74dbc1d85149bcd32798f7407d0eb2cd",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on dialogue realism and voice separation: idiolect fidelity, leverage shifts, pressure cadence, anti-transcript behavior, natural colloquial texture (contractions/interruptions/slang when character-true), and pressure-true profanity usage per aesthetic risk policy.",
+    "key": "p2_dialogue_idiolect_cadence",
+    "label": "dialogue/idiolect/cadence fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into uncomfortable specificity when stakes demand it: show coercion mechanics, sexual negotiation, grief rituals, and financial desperation at scene level. In edge cases, prefer precision over decorum; protect character dignity through perspective accuracy, not by omitting the hard material.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene requires bodily, economic, or moral consequence and the draft retreats into abstract phrasing, rewrite with concrete action, sensation, and decision impact before proceeding.",
+      "operational_resolution_rule": "When uncertain between tasteful distance and narrative truth, choose the version that preserves causal accountability and embodied consequence, then tune language for clarity rather than softness.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the baseline in spoken dialogue; uncontracted forms are reserved for deliberate emphasis, legal language, or character-specific formality.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate chapter structures deliberately: high-density dialogue vs interior reflection, multi-scene public collision vs two-scene intimate pressure, aftermath inventory vs anticipatory dread. Never let two consecutive chapters share the same pacing architecture or turn mechanism.",
+      "diction": "Contemporary, unsentimental literary diction that permits technical vocabulary, profanity, and class-marked speech without flattening idiolects.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third person centered on Seo Ina, with brief controlled widenings in public-event chapters.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Alternating pressure waves: compressed clauses in operational stress, longer breath-based lines in grief and reflection.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

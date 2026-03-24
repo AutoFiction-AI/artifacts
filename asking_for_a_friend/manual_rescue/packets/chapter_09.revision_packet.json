@@ -1,0 +1,28 @@
+{
+  "chapter_id": "chapter_09",
+  "cycle": 2,
+  "input_snapshot_hash": "09227db3dbffa0a886ea36172992d240e1889f6ce078fdabe7164a8e79ae4209",
+  "findings": [
+    {
+      "finding_id": "calibrated_saturation_ch09",
+      "source": "manual_rescue/full_award_rescue.review.json",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.post_revision.md:1592, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:1606, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:1620, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:1638",
+      "problem": "'Calibrated' or 'calibration' appears 4 times in this chapter (full-novel count: 30). The word is thematically motivated — Simone is operating a system that literally calibrates — but at this frequency in a single chapter it has become the dominant note rather than one element of the diction. A shortlist reader would hear the narrator announcing the theme rather than embodying it.",
+      "rewrite_direction": "Keep 1 instance — the most directly technical one, where Simone is literally adjusting the AI's parameters. Replace the other 3 at snapshots/cycle_02/FINAL_NOVEL.post_revision.md:1592, :1606, :1620, or :1638. Strategy options: (a) use Simone's established UX vocabulary ('tuned,' 'adjusted,' 'configured,' 'weighted') to vary the tech-metaphor diction, (b) in emotional-register contexts, replace with psychological verbs ('measured,' 'gauged,' 'performed').",
+      "acceptance_test": "Revised chapter contains no more than 1 instance of 'calibrated'/'calibration.' Replacement words are drawn from Simone's established UX/design vocabulary. No replacement introduces a new single-word tic by repeating the same substitute more than once."
+    }
+  ],
+  "must_fix_count": 1,
+  "non_negotiables": [
+    "No more than 1 instance of 'calibrated'/'calibration' in the revised chapter",
+    "The retained instance must be the most directly technical use where Simone is literally adjusting AI parameters",
+    "No replacement word is repeated more than once (avoid creating a new single-word tic)"
+  ],
+  "acceptance_targets": [
+    "Three of the four instances at lines 1592, 1606, 1620, 1638 are replaced",
+    "Replacement words are drawn from Simone's UX/design vocabulary ('tuned,' 'adjusted,' 'configured,' 'weighted') or psychological verbs ('measured,' 'gauged,' 'performed')",
+    "Each replacement uses a different substitute word"
+  ]
+}

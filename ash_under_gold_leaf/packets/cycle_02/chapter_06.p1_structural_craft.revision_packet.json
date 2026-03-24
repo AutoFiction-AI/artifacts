@@ -1,0 +1,108 @@
+{
+  "acceptance_targets": [
+    "[chapter_06_F001] Pass if, in revised versions of lines 49-431, every narrative sentence in the cited spans is grammatically complete (explicit subject and finite verb), with fragments retained only when they are diegetic artifacts (e.g., quoted text messages). Fail if 3 or more clipped narrative fragments remain in those spans.",
+    "[chapter_06_F003] Pass if each job loss in revised lines 273-324 can be traced through explicit prior setup and missed action, with at least one full paragraph of embodied reaction between the two losses. Fail if both losses still land as near-simultaneous notifications without separate causal framing.",
+    "[chapter_06_F004] Pass if revised lines 295-459 contain no more than one unsent-confession loop and each subsequent communication beat produces a new external state change. Fail if multiple beats still repeat the same draft-delete pattern with no changed consequence.",
+    "[FBK-001] PASS if snapshots/cycle_02/FINAL_NOVEL.md:1653-1682 no longer uses 'off Hamilton Avenue' and instead aligns with a single canonical motel/location string that can cohere with the documentary line. FAIL if chapter_06 still introduces a distinct location label that conflicts with later chapters."
+  ],
+  "chapter_id": "chapter_06",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if, in revised versions of lines 49-431, every narrative sentence in the cited spans is grammatically complete (explicit subject and finite verb), with fragments retained only when they are diegetic artifacts (e.g., quoted text messages). Fail if 3 or more clipped narrative fragments remain in those spans.",
+      "chapter_id": "chapter_06",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_06.md:49; snapshots/cycle_02/chapters/chapter_06.md:57; snapshots/cycle_02/chapters/chapter_06.md:231; snapshots/cycle_02/chapters/chapter_06.md:237; snapshots/cycle_02/chapters/chapter_06.md:253; snapshots/cycle_02/chapters/chapter_06.md:293; snapshots/cycle_02/chapters/chapter_06.md:341; snapshots/cycle_02/chapters/chapter_06.md:431",
+      "finding_id": "chapter_06_F001",
+      "problem": "Recurring clipped-fragment narration and subject-dropping becomes a chapter-level tic and violates the constitution's anti-elliptical-clipping rule. The cumulative effect is stylized shorthand where full syntactic pressure is needed.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_06.md:49, :57, :231, :237, :253, :293, :341, and :431, rewrite fragment beats into grammatically complete clauses while preserving pace. Keep brevity, but restore explicit subject+verb structure in narration.",
+      "severity": "HIGH",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if each job loss in revised lines 273-324 can be traced through explicit prior setup and missed action, with at least one full paragraph of embodied reaction between the two losses. Fail if both losses still land as near-simultaneous notifications without separate causal framing.",
+      "chapter_id": "chapter_06",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_06.md:273; snapshots/cycle_02/chapters/chapter_06.md:279; snapshots/cycle_02/chapters/chapter_06.md:287; snapshots/cycle_02/chapters/chapter_06.md:321; snapshots/cycle_02/chapters/chapter_06.md:323; snapshots/cycle_02/chapters/chapter_06.md:395",
+      "finding_id": "chapter_06_F003",
+      "problem": "The relapse-consequence run stacks multiple professional penalties in rapid succession (copy-shop opener and workshop slot) with limited processing space, creating an engineered-feeling escalation rather than fully earned causal fallout.",
+      "rewrite_direction": "Re-sequence snapshots/cycle_02/chapters/chapter_06.md:273-324 and :395-397 so each penalty has explicit setup->deadline->miss->result progression, and add a reaction beat between losses. If both penalties remain in-chapter, seed one hard deadline earlier in the chapter with timestamp clarity.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if revised lines 295-459 contain no more than one unsent-confession loop and each subsequent communication beat produces a new external state change. Fail if multiple beats still repeat the same draft-delete pattern with no changed consequence.",
+      "chapter_id": "chapter_06",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_06.md:295; snapshots/cycle_02/chapters/chapter_06.md:299; snapshots/cycle_02/chapters/chapter_06.md:405; snapshots/cycle_02/chapters/chapter_06.md:413; snapshots/cycle_02/chapters/chapter_06.md:457",
+      "finding_id": "chapter_06_F004",
+      "problem": "The confession mechanic repeats without leverage change (draft confession, delete; draft confession, delete; reread silence), which softens late-chapter momentum instead of escalating consequence.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_06.md:295-300, :405-414, and :457-459, keep only one unsent-confession cycle; revise later beats so each materially changes state (message sent, interruption with cost, or explicit avoidance action that worsens stakes).",
+      "severity": "MEDIUM",
+      "source": "booker",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if snapshots/cycle_02/FINAL_NOVEL.md:1653-1682 no longer uses 'off Hamilton Avenue' and instead aligns with a single canonical motel/location string that can cohere with the documentary line. FAIL if chapter_06 still introduces a distinct location label that conflicts with later chapters.",
+      "chapter_id": "chapter_06",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:1653",
+      "finding_id": "FBK-001",
+      "problem": "Cross-chapter factual inconsistency: this chapter places Tomas's death at a motel 'off Hamilton Avenue,' while later chapters place the event in materially different geographies (e.g., chapter_09:2811 'off Atlantic'; chapter_17:6222 Queens highway motel) and chapter_12 anchors Room 214 in formal records. This is a continuity break, not additive detail.",
+      "rewrite_direction": "Revise the confession span at snapshots/cycle_02/FINAL_NOVEL.md:1653-1682 so the location nomenclature matches the canonical record thread used elsewhere (same motel identifier and room number family, not a new location). If Gloria is still withholding at this point, make the uncertainty explicit without introducing a conflicting place-name. Keep the emotional beat, but remove geography drift.",
+      "severity": "HIGH",
+      "source": "booker_global",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "1e5bc6035966fc917a38a1491f90a398f56579741cbcc0120e0889d94a2d5225",
+  "must_fix_count": 4,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "When choosing between reputationally safe abstraction and specific discomfort, choose specificity. Render addiction, sexuality, deceit, class shame, and grief at lived scale. In edge cases, preserve character truth and causal accountability over reader comfort or institutional decorum.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene demands bodily, moral, or economic specificity, euphemistic phrasing is treated as a failed draft and must be rewritten with concrete stakes and observable consequence.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the spoken default; full forms appear only for emphasis, ritual language, or character-specific formal posture",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate scene density and pressure modes: pair high-conflict chapters with quiet domestic or documentary chapters, vary dialogue-to-interiority ratios, and prevent identical chapter skeletons in consecutive sequence.",
+      "diction": "contemporary literary diction with class-aware, borough-specific concreteness; avoid prestige-neutral workshop language",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third centered on Marisol, with rare brief distance expansions for institutional scenes",
+      "narrative_tense": "past tense",
+      "rhythm_target": "alternating tensile compression and reflective extension; line-level cadence should carry emotional pressure, not just information",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

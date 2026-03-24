@@ -1,0 +1,69 @@
+{
+  "acceptance_targets": [
+    "[ch03-dialogue-001] Pass if the revised lines replacing snapshots/cycle_02/chapters/chapter_03.md:397-408 and snapshots/cycle_02/chapters/chapter_03.md:453-463 preserve Gideon's polished coercion without using 'scale,' 'public-facing,' or comparable modern corporate idioms. Fail if any line in those spans still reads like contemporary business jargon rather than 1898 mercantile speech."
+  ],
+  "chapter_id": "chapter_03",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if the revised lines replacing snapshots/cycle_02/chapters/chapter_03.md:397-408 and snapshots/cycle_02/chapters/chapter_03.md:453-463 preserve Gideon's polished coercion without using 'scale,' 'public-facing,' or comparable modern corporate idioms. Fail if any line in those spans still reads like contemporary business jargon rather than 1898 mercantile speech.",
+      "chapter_id": "chapter_03",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:397; snapshots/cycle_02/chapters/chapter_03.md:407",
+      "finding_id": "ch03-dialogue-001",
+      "problem": "Gideon's offer scene slips into modern business jargon that the style bible explicitly forbids for him. Phrases like 'Investors certainly cannot scale it' and 'public-facing applications' sound startup-corporate rather than period-commercial, which breaks both his idiolect and the novel's world texture.",
+      "rewrite_direction": "Recast Gideon's pitch and the contract paraphrase in world-native trade diction at snapshots/cycle_02/chapters/chapter_03.md:397-408 and snapshots/cycle_02/chapters/chapter_03.md:453-463. Keep him formal, controlling, and low-contraction, but make him talk about shelves, orders, labels, distribution, and trade reach instead of modern management vocabulary.",
+      "severity": "MEDIUM",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "5d9a29f09e69e2b2bd95c0044ae2e347bde6b68a98d58143894e1e2a667354d1",
+  "must_fix_count": 1,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on dialogue realism and voice separation: idiolect fidelity, leverage shifts, pressure cadence, anti-transcript behavior, natural colloquial texture (contractions/interruptions/slang when character-true), and pressure-true profanity usage per aesthetic risk policy.",
+    "key": "p2_dialogue_idiolect_cadence",
+    "label": "dialogue/idiolect/cadence fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into the book's strange civic biology, vulgar humor, erotic consequence, and class abrasion. When a choice appears between the cleaner version and the truer, messier one, choose the messier version so long as causality and character truth remain exact. Treat the city's slime, smell, heat, and appetite as part of the novel's beauty rather than embarrassment to be polished away.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If sex, shame, hunger, class humiliation, bodily mess, or economic pressure starts drifting into decorous vagueness, rewrite until the scene carries concrete sensory and social cost on the page.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm across the novel; uncontracted forms should signal emphasis, class performance, ceremonial language, or Gideon's deliberate control.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate crowd scenes with cleanup, ritual with labor, public humiliation with private tenderness, and single-sweep chapters with multi-scene accumulations; no two consecutive chapters should feel built from the same emotional weather, dialogue density, or scene rhythm.",
+      "diction": "Period-aware but not museum-stiff; vivid, bodily, class-conscious, and willing to be ugly or funny without slipping into arch parody or modern snark.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third person anchored to Silas Vale for the full novel, with no head-hopping and no neutral historian voice; Inez remains legible through observed action, dialogue, and the objects she shares.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Elastic and pressure-sensitive: quick comic snap in public scenes, thicker sensory accumulation in labor and erotic passages, and hard clean sentences at moments of shame or decision.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

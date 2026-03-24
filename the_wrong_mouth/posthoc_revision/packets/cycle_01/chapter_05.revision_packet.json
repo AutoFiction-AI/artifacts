@@ -1,0 +1,86 @@
+{
+  "acceptance_targets": [
+    "[R002] Ch5 contains zero variants of 'filing a report' or 'order/audience that no longer existed' as an Aldric descriptor.",
+    "[R003] Ch5 does not contain 'Maren's body was already moving' or a near-identical variant."
+  ],
+  "chapter_id": "chapter_05",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Ch5 contains zero variants of 'filing a report' or 'order/audience that no longer existed' as an Aldric descriptor.",
+      "chapter_id": "chapter_05",
+      "cycle": 1,
+      "evidence": "Ch2 L588: 'filing a report to an order that no longer existed'; Ch4 L878: 'filing reports to an order that no longer existed'; Ch5 L1255: 'every word set down with the precision of a man filing a report for an audience that no longer existed.' Three consecutive chapter-openings (Ch2, Ch4, Ch5) use variants of the same 12-word formula.",
+      "finding_id": "R002",
+      "problem": "Ch5 L1255 is the third use of 'filing a report for an order/audience that no longer existed' in four chapters. This is a near-verbatim cross-chapter repetition (12 content words with minor substitution). The adjacent Ch4\u2192Ch5 repetition is the most jarring.",
+      "rewrite_direction": "Remove the 'report/audience that no longer existed' formula entirely from Ch5. Characterize Aldric's voice through how it sounds in this specific tactical moment \u2014 e.g., through the shift from formality to urgency, not through the now-worn formula.",
+      "severity": "HIGH",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch5 does not contain 'Maren's body was already moving' or a near-identical variant.",
+      "chapter_id": "chapter_05",
+      "cycle": 1,
+      "evidence": "Ch4 L994: 'But Maren's body was already moving.' Ch5 L1281: 'Aldric's assessment dissolved into irrelevance because Maren's body was already moving.' Identical 6-word core sentence in adjacent chapters, both marking reflex overriding deliberation.",
+      "finding_id": "R003",
+      "problem": "'Maren's body was already moving' appears verbatim at Ch4 L994 and Ch5 L1281, one chapter apart. Both serve the same narrative function (body acts before mind decides).",
+      "rewrite_direction": "Vary Ch5 L1281. Convey the reflex-override through a different construction \u2014 e.g., focus on a specific body part (the hand snapping to the knife already does this at L1283) and cut the general 'body was already moving' sentence.",
+      "severity": "HIGH",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "d6265adc6cb5536f3ccd5cae2e5d55a0c1f6874eedc2b9986bf8d3eb6cdc75bc",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This novel must commit fully to its own weirdness. A System-blind con man with a dead paladin and a dead assassin arguing in his skull is inherently absurd, and the novel should let that absurdity live alongside genuine grief, genuine violence, and genuine mystery without apologizing for the tonal range. The darkest moments and the funniest moments may occupy the same scene. When they do, let both registers operate simultaneously \u2014 do not sacrifice comedy for gravitas or gravitas for comedy. Risk means specificity: the specific sensation of a body doing things you did not tell it to do, the specific comedy of a dead paladin critiquing your hygiene while you're running for your life, the specific horror of carrying incomplete people whose memories have holes, the specific shame of learning that your eleven years of fraud may have killed people. When in doubt between too raw and too safe, choose raw. The novel's emotional range should be wider than any single genre label would suggest.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism in the narration of violence, bodily experience, moral compromise, or physical consequence is a draft-level failure. Maren is a con man who has seen hard things and done dirty work in poor villages for eleven years \u2014 his narration should not flinch where he would not flinch. The style bible's sensory bias toward tactile and proprioceptive detail means physical consequence must be rendered through the body: what it feels like to throw up, to kill someone, to have your muscles operate without your consent, to perform a ritual that requires you to open yourself to contamination. Summary and abstraction at the moment of consequence is always worse than presence.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for all characters except Aldric, whose low contraction level is a deliberate character marker that should erode over the course of the novel. Uncontracted forms in other characters' speech are reserved for emphasis, deliberation, or ceremony. In a world of practical people doing unglamorous work, stiff diction is the exception.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate between hot and quiet chapters as a structural principle. No two consecutive chapters should open the same way \u2014 if one opens with action, the next should open with interiority or setting; if one opens with dialogue, the next should open with physical sensation or observation. Vary scene count between chapters: compressed single-scene chapters after multi-scene ones. Let quiet chapters stay quiet \u2014 do not insert action beats or revelations to maintain pace. The pacing engine is Maren's voice and the interplay between the three internal consciousnesses, not external plot pressure.",
+      "diction": "Colloquial with earned elevation. Default register is smart but not literary \u2014 a con man's English, precise about people and vague about feelings. Elevation reserved for moments of genuine awe, grief, or the rare glimpse of something beautiful. Fantasy-register portentousness is a draft-level failure \u2014 no 'ancient darkness' or 'powers beyond comprehension.' The world is weird and dangerous and ordinary all at once, and the prose should match.",
+      "forbidden_drift_patterns": [
+        "Sentence fragments imitating action-movie or thriller prose \u2014 subject-dropping and article-stripping for false urgency",
+        "Semicolon-heavy scholarly narration that distances the reader from embodied experience",
+        "Present-tense micro-shifts for intensity \u2014 the novel is past tense throughout, no exceptions",
+        "Filtering words ('he saw,' 'he felt,' 'he noticed,' 'he realized') when direct rendering is available",
+        "Fantasy-voice portentousness: 'ancient,' 'dark power,' 'something stirred,' 'a presence beyond reckoning'",
+        "Comic narration that winks at the reader or breaks the fourth wall instead of committing to the situation",
+        "Repeated metaphor templates \u2014 if a comparison structure appears twice in a chapter, the second instance is a tic",
+        "Emotional summary replacing scene presence: 'He was overwhelmed by grief' instead of rendering what grief looks and feels like in the body"
+      ],
+      "narrative_distance": "Close third person, locked to Maren throughout. Aldric and Vess are experienced as internal voices \u2014 they speak as italicized dialogue within Maren's consciousness, clearly distinguished from his own thoughts. Maren cannot access their thoughts directly; he hears what they say to him, not what they think. The narration inherits Maren's sensory limitations: the System interface is always mediated through Aldric or Vess's descriptions, never rendered directly until the single exception in Chapter 17.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Varied by emotional register. Default: medium-length sentences with periodic short declaratives for grounding. When Maren is performing (lying, charming, faking): smoother, more controlled rhythm with longer subordinate-clause chains. When Maren is honest or overwhelmed: choppier, more fragmented, more concrete. Fight scenes: visceral and slightly disoriented, reflecting Maren's System-blindness \u2014 sensation and proprioception without the visual data everyone else has. Quiet scenes: allow longer, more observational sentences. The rhythm should breathe differently in every chapter.",
+      "sensory_bias": [
+        "tactile \u2014 Maren's primary sense channel; the physical world is how he navigates System-blindness",
+        "auditory \u2014 the hum of System activity, Aldric and Vess's voices, the specific sounds of quest-light and contamination",
+        "proprioceptive \u2014 Maren's body doing things he didn't choose; the internal sensation of carrying fragments; the physical cost of consumption",
+        "olfactory \u2014 contamination has smell; ritual has smell; the world stinks in specific ways that the System-sighted don't notice because they navigate by interface"
+      ]
+    }
+  }
+}

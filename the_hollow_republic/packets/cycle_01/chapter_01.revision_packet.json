@@ -1,0 +1,77 @@
+{
+  "acceptance_targets": [
+    "[ch01_prose_001] Reading the revised passages at snapshots/cycle_01/chapters/chapter_01.md:81-82, snapshots/cycle_01/chapters/chapter_01.md:137-138, and snapshots/cycle_01/chapters/chapter_01.md:323-324, each beat must be expressible in complete narration rather than standalone clipped fragments; if any of those spans still relies on back-to-back fragmentary negations such as \"Not ... . Not ... .\", this finding remains unresolved.",
+    "[ch01_craft_001] In the revised hand-inspection sequence at snapshots/cycle_01/chapters/chapter_01.md:271-276, a reader must be able to track where the glove-hidden slip is and why Clemence does not find it. If Elise removes the glove and the scene still passes without any observable consequence from the concealed paper, this finding fails."
+  ],
+  "chapter_id": "chapter_01",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Reading the revised passages at snapshots/cycle_01/chapters/chapter_01.md:81-82, snapshots/cycle_01/chapters/chapter_01.md:137-138, and snapshots/cycle_01/chapters/chapter_01.md:323-324, each beat must be expressible in complete narration rather than standalone clipped fragments; if any of those spans still relies on back-to-back fragmentary negations such as \"Not ... . Not ... .\", this finding remains unresolved.",
+      "chapter_id": "chapter_01",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:81; snapshots/cycle_01/chapters/chapter_01.md:137; snapshots/cycle_01/chapters/chapter_01.md:323",
+      "finding_id": "ch01_prose_001",
+      "problem": "The narration repeatedly falls into clipped fragment chains and standalone negation beats (for example, \"Not a bomb crew, then. Not only that.\", \"Widow, yes. Copyist, yes.\", and \"Not safe. Not good.\"). That construction appears more than twice, violates the constitution's ban on elliptical clipping in narration, and starts to read as an authored tic rather than earned pressure.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_01.md:81-82, snapshots/cycle_01/chapters/chapter_01.md:137-138, and snapshots/cycle_01/chapters/chapter_01.md:323-324, replace the fragment chains with grammatically complete sentences or full clauses that preserve Elise's close-third pressure without dropping articles, subjects, or auxiliaries. Keep this negation-fragment pattern to no more than one deliberate use in the whole chapter.",
+      "severity": "HIGH",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "In the revised hand-inspection sequence at snapshots/cycle_01/chapters/chapter_01.md:271-276, a reader must be able to track where the glove-hidden slip is and why Clemence does not find it. If Elise removes the glove and the scene still passes without any observable consequence from the concealed paper, this finding fails.",
+      "chapter_id": "chapter_01",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:135; snapshots/cycle_01/chapters/chapter_01.md:271; snapshots/cycle_01/chapters/chapter_01.md:275",
+      "finding_id": "ch01_craft_001",
+      "problem": "Elise deliberately hides one cipher slip in her glove lining, then later removes that glove under Clemence's scrutiny with no physical risk beat, evasive choice, or relocation of the paper. That turns a loaded concealment detail into dead inventory and leaves available scene tension uncaptured.",
+      "rewrite_direction": "Rework the setup/payoff across snapshots/cycle_01/chapters/chapter_01.md:135-136 and snapshots/cycle_01/chapters/chapter_01.md:271-276 so the glove-hidden slip materially participates in the interrogation. Either move the slip to a safer hiding place before Clemence orders the glove off, or stage the inspection so Elise feels the paper, chooses a hand strategically, or nearly gets caught.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "b07861f35a16794c68c3098573de7263f7be4758104ad1e773e748b0f28d2c10",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into the contradiction that tenderness can coexist with surveillance, desire with betrayal, and ideology with vanity. Render violence, sex, illness, and poverty at the scale characters actually experience them. When an edge case appears, choose the more specific and less reputationally safe version if it remains faithful to character, period, and causality.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene reaches bodily danger, sex, grief, class shame, or political cruelty and then retreats into summary, rewrite toward the exact physical and social fact the character cannot evade.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "Moderate to high; contractions are the spoken default, with full forms reserved for period formality, deliberate emphasis, or Vautrin's cultivated precision.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate compressive surveillance chapters with slower communal or reflective chapters; vary scene count, dialogue density, and whether the turn comes from action, information, dread, or aftermath so no two adjacent chapters run on the same structural rhythm.",
+      "diction": "Historically grounded and unsentimental; plain enough for labor and bureaucracy, lyrical only when perception earns it rather than rhetoric.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third centered on Elise, elastic enough to register class texture, political pressure, and the quarry's collective life without drifting into authorial essay.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Supple, image-bearing sentences broken by hard factual beats at moments of violence, lust, bureaucratic coercion, or shame.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

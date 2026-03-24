@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_01",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_01_f001",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "The narration starts paraphrasing style-bible stress tells instead of dramatizing them: \"She got tidier, quieter, and more exact\" at snapshots/cycle_01/chapters/chapter_01.md:45 and \"That was Marisol under stress exactly as Paloma accused: more specific, never less\" at snapshots/cycle_01/chapters/chapter_01.md:147.",
+      "problem": "The chapter occasionally sounds like it is quoting its own character notes. That flattens otherwise strong close-third work and creates mild process leakage: instead of letting Paloma's and Marisol's pressure states emerge from behavior, the prose diagnoses them in near-bible language.",
+      "rewrite_direction": "Rewrite the paragraphs beginning at snapshots/cycle_01/chapters/chapter_01.md:45 and snapshots/cycle_01/chapters/chapter_01.md:147 so Paloma's near-empty steadiness and Marisol's stress-tightened over-specificity are conveyed through fresh scene behavior, physical response, and dialogue texture. Keep the same story beats, but remove any sentence that directly summarizes the character template and replace it with details Teresa or Marisol would concretely observe in the moment.",
+      "acceptance_test": "PASS if the revised paragraphs at snapshots/cycle_01/chapters/chapter_01.md:45 and snapshots/cycle_01/chapters/chapter_01.md:147 let a reader infer both characters' stress patterns without any sentence that explicitly labels the pattern or paraphrases the style bible. FAIL if the rewritten passage still reads like diagnostic character-sheet commentary rather than scene-made observation."
+    },
+    {
+      "finding_id": "chapter_01_f002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "Several major turns land on the same emphatic construction: snapshots/cycle_01/chapters/chapter_01.md:35, snapshots/cycle_01/chapters/chapter_01.md:87, snapshots/cycle_01/chapters/chapter_01.md:165, snapshots/cycle_01/chapters/chapter_01.md:273, and snapshots/cycle_01/chapters/chapter_01.md:307 all rely on repeated `It was/That was` declarative emphasis.",
+      "problem": "The recurrence turns a once-effective cadence into a visible tic. Mercy, recognition, paperwork revelation, helpless advice, and final reckoning all arrive in nearly the same sentence shape, which blunts the chapter's rhythmic control and makes key beats feel less discovered than delivered.",
+      "rewrite_direction": "Rework the emphasis beats anchored at snapshots/cycle_01/chapters/chapter_01.md:35, snapshots/cycle_01/chapters/chapter_01.md:87, snapshots/cycle_01/chapters/chapter_01.md:165, snapshots/cycle_01/chapters/chapter_01.md:273, and snapshots/cycle_01/chapters/chapter_01.md:307 so they do not all hinge on the same `It was/That was` setup. Preserve the underlying meaning of each beat, but vary the local syntax through concrete noun-led openings, action-led turns, or longer freighted sentences that break on the impact word instead of announcing it first.",
+      "acceptance_test": "PASS if, on reread of the revised beats at snapshots/cycle_01/chapters/chapter_01.md:35, snapshots/cycle_01/chapters/chapter_01.md:87, snapshots/cycle_01/chapters/chapter_01.md:165, snapshots/cycle_01/chapters/chapter_01.md:273, and snapshots/cycle_01/chapters/chapter_01.md:307, no more than two of those five moments still rely on back-to-back `It was/That was` declarative emphasis and each beat now lands through a visibly distinct sentence shape. FAIL if most of those turns still arrive in the same declarative wrapper."
+    }
+  ],
+  "summary": "Booker and dialogue pass: the chapter lands its discovery engine, reveals Gabriel through bodily recognition before paperwork, keeps the departure schedule as the trap, and holds Marisol, Gabriel, Paloma, and Teresa inside the voice rules in outline/style_bible.json. It still fails overall because the narration twice slips into style-bible paraphrase instead of scene-built characterization, and the repeated `It was/That was` emphasis pattern becomes a visible prose tic across several major beats."
+}

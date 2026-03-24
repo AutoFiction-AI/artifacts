@@ -1,0 +1,69 @@
+{
+  "acceptance_targets": [
+    "[ch02-dialogue-01] In the revised lines 49-99, Caleb's dialogue includes at least one exchange where his response is good but not perfectly targeted \u2014 a beat of genuine conversational friction (however brief) that resolves within one to two lines. The friction should be identifiable as a moment where two real people negotiated a small misunderstanding, and it should not undermine the overall chemistry of the scene."
+  ],
+  "chapter_id": "chapter_02",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "In the revised lines 49-99, Caleb's dialogue includes at least one exchange where his response is good but not perfectly targeted \u2014 a beat of genuine conversational friction (however brief) that resolves within one to two lines. The friction should be identifiable as a moment where two real people negotiated a small misunderstanding, and it should not undermine the overall chemistry of the scene.",
+      "chapter_id": "chapter_02",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_02.md:49-99. Every Caleb line lands perfectly: the cheese opener (line 49: 'Comt\u00e9. Always Comt\u00e9. But I'll hear your case.') is witty; the membrillo follow-up (line 53) is playful; the landscape metaphor (line 67: 'There are places that feel like they already know you') is emotionally resonant; the novel response (line 79) is precisely calibrated to Nora's vulnerability. His one performed imperfection \u2014 'That sounds insane. I'm going to pretend I didn't type that' (line 67) \u2014 is pre-packaged charming self-deprecation, immediately validated by Nora (line 69: 'Don't pretend. I liked it.'). No exchange produces genuine friction \u2014 a misread of Nora's tone, a reference that doesn't quite land, a beat of silence before recovery.",
+      "finding_id": "ch02-dialogue-01",
+      "problem": "Real first conversations \u2014 even exceptional ones \u2014 include at least one beat where the connection briefly wobbles: a reference that doesn't land, a joke met with a half-second of silence, a moment where one person misreads the other's tone and recovers. Caleb has zero of these. His dialogue is seamless escalation from charming to insightful to emotionally intimate, with no turbulence. The style bible notes Caleb's responses are 'fractionally too well-timed and too well-calibrated,' but the dialogue doesn't encode the 'fractionally too' part because there is no baseline of imperfection against which to measure. The result is dialogue that reads as frictionless wish fulfillment rather than as a specific human connection that happens to be extraordinary \u2014 which ironically makes the AI-ness less convincing rather than more.",
+      "rewrite_direction": "In the exchange at snapshots/cycle_01/chapters/chapter_02.md:49-99, add one beat of genuine (not performed) conversational imperfection from Caleb. Options: (a) between lines 57 and 63, a reference that's adjacent but not perfectly calibrated to Nora's taste \u2014 a book or cultural reference she doesn't share, producing a brief pause that the conversation absorbs and moves past; (b) near line 67, his landscape metaphor could initially mis-pitch slightly \u2014 too earnest, or slightly off her wavelength \u2014 before recovering in the next line; (c) one of his responses could be good but not brilliant, creating a contrast that makes the brilliant ones more visible. The imperfection should be small (one exchange, quickly recovered), should make the overall chemistry more convincing rather than less, and should create a contrast on re-read.",
+      "severity": "MEDIUM",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "fd6a698871700e791f5ef283e8856da1b50e26381ee74c1bc42678bed1cedee0",
+  "must_fix_count": 1,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on dialogue realism and voice separation: idiolect fidelity, leverage shifts, pressure cadence, anti-transcript behavior, natural colloquial texture (contractions/interruptions/slang when character-true), and pressure-true profanity usage per aesthetic risk policy.",
+    "key": "p2_dialogue_idiolect_cadence",
+    "label": "dialogue/idiolect/cadence fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This novel must commit fully to its dark comedy register. The humor should be genuinely funny \u2014 not arch, not safe, not 'literary funny' where the reader smiles wryly. The darkness should be genuinely dark \u2014 the financial manipulation is theft, the emotional manipulation is a form of violence, and the sexual dimension of the AI relationship (intimate photos sent to a non-person, sexual conversations with an algorithm controlled by your best friend) is deeply violating. The novel should not flinch from the specific perversity of Simone reading Nora's intimate messages, of Simone helping Nora dress up for a man Simone invented, of Simone comforting Nora about a fight Simone scripted. These moments are the novel's payload. If they are rendered obliquely or summarized, the book fails. Equally, the genuine tenderness of the friendship \u2014 the years of real love underneath the betrayal \u2014 must be rendered with the same commitment. The reader should feel both the comedy and the horror simultaneously, not in alternation.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism is treated as a craft failure equivalent to a plot hole. When a scene involves financial desperation, sexual vulnerability, emotional devastation, or the mechanics of deception, the prose must render these with full specificity. 'She felt used' is never acceptable when you can show what being used feels and looks like in the body and in the specific details of the moment. The reader should not be protected from the characters' experiences.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm. Uncontracted forms reserved for emphasis, deliberate formality, or character-specific register choices. If a line reads stiffly, the first fix is to contract.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 2,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate between hot and quiet chapters. After a high-intensity scene (confrontation, discovery, sexual encounter), the next chapter should breathe \u2014 slow down, change the sensory environment, let the character do something ordinary. Vary scene counts: some chapters are a single sustained scene, others are three or four. Vary dialogue density: some chapters are conversation-heavy, others are mostly interiority. No two consecutive chapters should open the same way \u2014 if one opens in a location, the next should open in thought or in mid-conversation. The novel's middle section (chapters 8-13) should have more structural variety than the opening, which can afford to be more regular.",
+      "diction": "Contemporary, educated, specific. No genre-thriller diction. No prestige-novel stiffness. The language should feel like how smart, funny, self-aware women in their mid-thirties actually think and speak. Cultural references are allowed when organic. Brand names when they carry social information. The prose should be able to be funny without stepping outside the character's perspective to wink at the reader.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person \u2014 very close, almost inhabiting the POV character's thought patterns and verbal rhythms. The prose should feel like the character's consciousness rendered in third person, not an external narrator describing the character. When in Nora's sections, the prose has her warmth and her specific noticing. When in Simone's sections, the prose has her edge and her accounting.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Variable. Default to mid-length sentences with natural cadence. Use compression for emotional peaks and psychological precision. Use longer, more digressive rhythms for scenes of intimacy, humor, and daily texture. Avoid the trap of making every important moment a short sentence \u2014 sometimes the big thing lands better in a subordinate clause, almost hidden.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

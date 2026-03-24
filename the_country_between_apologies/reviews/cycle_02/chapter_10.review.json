@@ -1,0 +1,72 @@
+{
+  "chapter_id": "chapter_10",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch10-craft-001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_02/chapters/chapter_10.md:111; snapshots/cycle_02/chapters/chapter_10.md:117; snapshots/cycle_02/chapters/chapter_10.md:339",
+      "problem": "Continuity contradiction with canonical financial state: this chapter establishes $12/hour for 40 hours and a $160 room deduction (net $320 before other costs), but canon pegs Glenwood motel income at about $480 weekly after room deduction.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_10.md:111-120 and snapshots/cycle_02/chapters/chapter_10.md:339-341, reconcile the arithmetic to canon in-scene (e.g., adjust hourly rate/shift count or add a guaranteed cash differential) while keeping Eli's net calculation internally consistent in the same passage.",
+      "acceptance_test": "PASS if the revised negotiation terms and Eli's boxed math in snapshots/cycle_02/chapters/chapter_10.md:111-120 and :339-341 produce a clearly stated post-room weekly net of approximately $480, with no conflicting numbers in the chapter; FAIL if the text still implies $320 net or leaves incompatible totals."
+    },
+    {
+      "finding_id": "ch10-craft-002",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_02/chapters/chapter_10.md:343; snapshots/cycle_02/chapters/chapter_10.md:349; snapshots/cycle_02/chapters/chapter_10.md:355",
+      "problem": "Sanitization drift at the highest emotional-pressure beat: Eli's contact with June is reduced to summary avoidance (close phone) instead of rendered scene presence. This is summary replacing scene exactly where the narrative needs specific emotional consequence.",
+      "rewrite_direction": "Expand snapshots/cycle_02/chapters/chapter_10.md:349-356 into a short on-page attempt/failure beat: show at least one drafted line to June, a concrete bodily response while composing/deleting, and a specific fear tied to their established rupture before he chooses silence.",
+      "acceptance_test": "PASS if snapshots/cycle_02/chapters/chapter_10.md:349-356 includes (1) visible message text addressed to June, (2) one embodied reaction during the attempt, and (3) a specific stated reason for not sending; FAIL if it remains a single summary sentence about closing the phone."
+    },
+    {
+      "finding_id": "ch10-booker-001",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_02/chapters/chapter_10.md:209; snapshots/cycle_02/chapters/chapter_10.md:213; snapshots/cycle_02/chapters/chapter_10.md:251; snapshots/cycle_02/chapters/chapter_10.md:312",
+      "problem": "Mid-chapter momentum flattens into a work-log sequence. The first-shift section accumulates tasks but adds limited new causal pressure between early pain spikes and the later trash-spill intervention, weakening scene-level escalation.",
+      "rewrite_direction": "In snapshots/cycle_02/chapters/chapter_10.md:209-312, compress at least one repetitive housekeeping beat and introduce one consequential complication (guest, cash, policy, or physical failure) that forces Eli to make a choice with immediate cost before Marisol's line at snapshots/cycle_02/chapters/chapter_10.md:263.",
+      "acceptance_test": "PASS if the revised span contains a distinct decision by Eli that changes what happens later in the same night (not just more tasks), and the sequence no longer reads as uninterrupted procedural logging; FAIL if events remain mostly task-then-task without a new causal turn."
+    },
+    {
+      "finding_id": "ch10-dialogue-001",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_02/chapters/chapter_10.md:239; snapshots/cycle_02/chapters/chapter_10.md:249",
+      "problem": "Eli's register slips into writerly quip during a pain-heavy, low-status desk interaction (\"houses that are not this one\" / \"Desk side of this counter\"). The rhythm reads performed rather than lived, reducing dialogue realism under scene pressure.",
+      "rewrite_direction": "Rework Eli's lines at snapshots/cycle_02/chapters/chapter_10.md:239-249 into plainer colloquial speech with tighter, pressure-appropriate cadence while preserving his boundary-setting and dry humor.",
+      "acceptance_test": "PASS if in snapshots/cycle_02/chapters/chapter_10.md:239-249 Eli's revised lines sound colloquial and situationally natural (no self-conscious aphoristic phrasing) while still defusing the guest exchange; FAIL if the exchange retains elevated one-liner wording that draws attention to itself."
+    },
+    {
+      "finding_id": "ch10-prose-001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_02/chapters/chapter_10.md:3; snapshots/cycle_02/chapters/chapter_10.md:11; snapshots/cycle_02/chapters/chapter_10.md:213; snapshots/cycle_02/chapters/chapter_10.md:313",
+      "problem": "Recurring prose formula: repeated 'as if' simile hinge appears more than twice and becomes a detectable chapter tic, flattening syntactic variation.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_10.md:3, :11, :213, and :313, keep only the strongest one or two comparisons and convert the others to direct sensory or action description.",
+      "acceptance_test": "PASS if revised narration in the cited spans uses no more than two total 'as if' constructions across the chapter and each retained instance carries unique image pressure; FAIL if three or more 'as if' hinges remain in similar sentence roles."
+    },
+    {
+      "finding_id": "ch10-prose-002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_02/chapters/chapter_10.md:11; snapshots/cycle_02/chapters/chapter_10.md:115; snapshots/cycle_02/chapters/chapter_10.md:119; snapshots/cycle_02/chapters/chapter_10.md:331; snapshots/cycle_02/chapters/chapter_10.md:339",
+      "problem": "Mechanical repetition from over-literal stress-tell reuse: numeric/accounting framing recurs so frequently that it begins to flatten prose texture instead of sharpening character pressure.",
+      "rewrite_direction": "Retain financial precision at snapshots/cycle_02/chapters/chapter_10.md:11 and :339-341, but revise one interior beat in snapshots/cycle_02/chapters/chapter_10.md:115-120 or :331-341 to foreground embodied or relational stakes without adding new arithmetic recap.",
+      "acceptance_test": "PASS if the revised chapter preserves necessary numbers at negotiation and closing math while at least one currently number-led interior paragraph is rewritten around sensory/emotional consequence; FAIL if all currently cited beats remain primarily numeric restatement."
+    }
+  ],
+  "summary": "Chapter 10 lands core causal beats and maintains close-third past-tense control, but unresolved continuity arithmetic, a high-impact sanitization-by-summary beat, and repeated prose/dialogue tics keep it below pass threshold across all four lenses."
+}

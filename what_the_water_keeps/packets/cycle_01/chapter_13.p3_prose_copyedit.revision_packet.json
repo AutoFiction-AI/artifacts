@@ -1,0 +1,82 @@
+{
+  "acceptance_targets": [
+    "[ch13-prose-001] PASS only if the revised spans at snapshots/cycle_01/chapters/chapter_13.md:3-27, snapshots/cycle_01/chapters/chapter_13.md:103-139, and snapshots/cycle_01/chapters/chapter_13.md:229-317 use no more than two `as if`/`as though` comparisons total, and each retained comparison does work that direct description could not. FAIL if comparison-driven sentences remain the chapter's default way of making an image.",
+    "[ch13-prose-002] PASS only if the revised span at snapshots/cycle_01/chapters/chapter_13.md:199-241 contains at least two explicit Della-internal beats of sensation, memory, or self-assessment, and no run longer than nine consecutive paragraphs in that span remains purely external dialogue/reaction. FAIL if the passage still reads like a public transcript with Della reduced to a camera position."
+  ],
+  "chapter_id": "chapter_13",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS only if the revised spans at snapshots/cycle_01/chapters/chapter_13.md:3-27, snapshots/cycle_01/chapters/chapter_13.md:103-139, and snapshots/cycle_01/chapters/chapter_13.md:229-317 use no more than two `as if`/`as though` comparisons total, and each retained comparison does work that direct description could not. FAIL if comparison-driven sentences remain the chapter's default way of making an image.",
+      "chapter_id": "chapter_13",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:3; snapshots/cycle_01/chapters/chapter_13.md:7; snapshots/cycle_01/chapters/chapter_13.md:9; snapshots/cycle_01/chapters/chapter_13.md:11; snapshots/cycle_01/chapters/chapter_13.md:27; snapshots/cycle_01/chapters/chapter_13.md:103; snapshots/cycle_01/chapters/chapter_13.md:139; snapshots/cycle_01/chapters/chapter_13.md:229; snapshots/cycle_01/chapters/chapter_13.md:317",
+      "finding_id": "ch13-prose-001",
+      "problem": "The chapter leans on the same `as if`/`as though` comparison template often enough to become audible as autopilot. What should feel like Della's concrete, unsentimental noticing starts to sound like a reusable sentence habit, especially in the opening tableau and reaction beats.",
+      "rewrite_direction": "Revise the repeated comparison construction across snapshots/cycle_01/chapters/chapter_13.md:3-27, snapshots/cycle_01/chapters/chapter_13.md:103-139, and snapshots/cycle_01/chapters/chapter_13.md:229-317. Keep only the comparisons that reveal something specific about Della's mind; convert the rest into direct physical description, action, or consequence so the prose carries the image without leaning on the same template.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS only if the revised span at snapshots/cycle_01/chapters/chapter_13.md:199-241 contains at least two explicit Della-internal beats of sensation, memory, or self-assessment, and no run longer than nine consecutive paragraphs in that span remains purely external dialogue/reaction. FAIL if the passage still reads like a public transcript with Della reduced to a camera position.",
+      "chapter_id": "chapter_13",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:199; snapshots/cycle_01/chapters/chapter_13.md:207; snapshots/cycle_01/chapters/chapter_13.md:225; snapshots/cycle_01/chapters/chapter_13.md:241",
+      "finding_id": "ch13-prose-002",
+      "problem": "From Vernon's attempt to push the matter back into 'process' through Lucille's record sentence, the chapter goes more than twenty short paragraphs with no explicit Della sensation, memory, or self-assessment. In a close-third chapter this reads less like pressure and more like coverage, flattening the focalization right when the public consequences of her choice should be registering in her body and mind.",
+      "rewrite_direction": "Thread two or three brief Della-internal beats into snapshots/cycle_01/chapters/chapter_13.md:199-241. The additions should stay local to the existing action: what it costs her to hear Gabriel named by others, what Silas's confession does to her, what she reads in Rafe's collapse, or how the hill/crowd feels in her body while the legal sentence is being written.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "0c86f6d926050574824294fb909ad3598ab4fddfeabf75394c53a28d8353164e",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on prose and copyedit finish: diction precision, rhythm control, sentence-level clarity, grammar, line-level polish without flattening style, and explicit aesthetic-risk audit (sanitization is the primary risk \u2014 do not soften or euphemize; push toward creative risk and specificity).",
+    "key": "p3_prose_copyedit",
+    "label": "prose/copyedit fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into morally compromised caretaking, the bureaucratic brutality of naming, and the physical labor of moving the dead. When an edge case appears, prefer the detail a witness would remember over the phrasing a polite narrator would use. Let tenderness exist inside harsh material without cleaning the harshness off.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If childbirth, exhumation, poverty, sexual history, bodily decay, or violence enters a scene, render it through specific sensation and consequence; summarizing away the hard fact counts as a failed pass, not tasteful restraint.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High overall; contractions are the norm across dialogue, with fuller forms reserved for class performance, legal formality, deliberate emphasis, or a character trying not to lose composure.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate public labor chapters with quieter domestic or inventory chapters, vary scene count and dialogue density, let some chapters turn on information or paperwork rather than confrontation, and ensure no two consecutive chapters share the same dominant mechanism, pace, or emotional temperature.",
+      "diction": "Plainspoken historical Appalachian-Southern English without caricature; concrete, unsentimental, regionally grounded, and alert to how legal language clashes with lived speech.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third centered on Della Bledsoe, intimate enough to track bodily memory and evasive thought while never slipping into other characters' interior monologue as fact",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Alternate muscular work-sentence compression with longer accumulating sentences that carry memory, atmosphere, and moral weight; let cadence tighten in hearings and exhumations, then widen in domestic or reflective passages.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

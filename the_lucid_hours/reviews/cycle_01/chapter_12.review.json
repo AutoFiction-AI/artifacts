@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_12",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "PASS",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch12_dialogue_001",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:123",
+      "problem": "Tammy's key reply, \"Good people get paid shit,\" is a near-verbatim reuse of a style-bible calibration line. Because it lands inside the chapter's defining Lola/Tammy exchange, the beat reads imported rather than newly voiced, which damages voice integrity and violates the explicit do-not-copy rule for example dialogue.",
+      "rewrite_direction": "Replace Tammy's reply at snapshots/cycle_01/chapters/chapter_12.md:123, then re-tune the surrounding exchange at snapshots/cycle_01/chapters/chapter_12.md:115 and snapshots/cycle_01/chapters/chapter_12.md:125 so the turn still answers Lola's compliment without reproducing calibration text. Keep Tammy's high-contraction, flat, wage-conscious register, but give her a chapter-specific line rooted in her own pressures here (Greg, doubles, the apartment, the pay) rather than the copied phrasing.",
+      "acceptance_test": "In the revised exchange at snapshots/cycle_01/chapters/chapter_12.md:115 and snapshots/cycle_01/chapters/chapter_12.md:125, Tammy's answer to Lola's compliment no longer contains the phrase \"good people get paid shit\" or a trivially close variant, and it still reads as Tammy-specific bitterness about work, money, or Greg rather than generic wisdom. If the key reply remains recognizably the style-bible example, this finding fails."
+    },
+    {
+      "finding_id": "ch12_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:19; snapshots/cycle_01/chapters/chapter_12.md:149",
+      "problem": "The chapter states Lola's performance-versus-decline fear clearly in the opening movement, then states it again in almost the same conceptual terms at the close. Because the ending re-explains 'which kind of forgetting' after the courtyard scene has already embodied the cost of that uncertainty, the final beat lands as paraphrase instead of escalation.",
+      "rewrite_direction": "Keep one direct articulation of the central ambiguity in either snapshots/cycle_01/chapters/chapter_12.md:19 or snapshots/cycle_01/chapters/chapter_12.md:149. Rework the other cited span, plus the immediate close at snapshots/cycle_01/chapters/chapter_12.md:145, so the chapter ends on new concrete fallout from Tammy's visit: a fresh sensory consequence, a word-loss that changes Lola's behavior, or a specific choice about how she will resume the act inside. Let the last movement do new dramatic work rather than restating the opening thesis.",
+      "acceptance_test": "By the end of the revised chapter, the performance-versus-real-decline dilemma is explicitly summarized only once across snapshots/cycle_01/chapters/chapter_12.md:19 and snapshots/cycle_01/chapters/chapter_12.md:149, and the closing lines at snapshots/cycle_01/chapters/chapter_12.md:145 add a new observable consequence or decision tied to Tammy's scene instead of mainly rephrasing Lola's uncertainty about what kind of forgetting this is. If the ending still functions chiefly as a second abstract summary of the opening fear, this finding remains unresolved."
+    }
+  ],
+  "summary": "The chapter's structure is sound: it lands the required inward turn on Lola, renders Tom\u00e1s's death with unsanitized specificity, and pays off the Tammy bond without continuity or tense drift. It still fails overall because a chapter-defining Tammy line is lifted from a style-bible calibration example, and the ending re-states Lola's central fear instead of converting the courtyard scene into a fresher concrete consequence."
+}

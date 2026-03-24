@@ -1,0 +1,119 @@
+{
+  "acceptance_targets": [
+    "[chapter_09_f001] At each cited post-interview beat, the revised passage must either introduce a new consequence, a new piece of observable behavior, or a new cost to Carmen's understanding. The revision fails if the paragraph after the shown action explicitly explains why the act worked, labels the moment as comedy, or restates the same contrast in abstract terms.",
+    "[chapter_09_f003] The revised ending must still show Carmen motionless in the car, must make clear that she lied to the surveyor and crossed into active complicity, and must end with her driving to pick up Reggie. It passes only if, after the moment her complicity becomes unmistakable, every remaining sentence adds a new image, consequence, or decision; it fails if the close continues to paraphrase the same realization in abstract moral language.",
+    "[CONTINUITY_ROOMMATE_CH09] PASS if: (a) the roommate name at lines 1725 and 1745 matches the name used in chapters 8 and 18; (b) the age and diagnosis are consistent across all three chapters. FAIL if the name differs from either other chapter."
+  ],
+  "chapter_id": "chapter_09",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "At each cited post-interview beat, the revised passage must either introduce a new consequence, a new piece of observable behavior, or a new cost to Carmen's understanding. The revision fails if the paragraph after the shown action explicitly explains why the act worked, labels the moment as comedy, or restates the same contrast in abstract terms.",
+      "chapter_id": "chapter_09",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:89; snapshots/cycle_01/chapters/chapter_09.md:159; snapshots/cycle_01/chapters/chapter_09.md:207",
+      "finding_id": "chapter_09_f001",
+      "problem": "The chapter's central comic set piece keeps explaining its own joke after the scene has already landed. After Harry, Lola, and Earl/Burt, the narration steps out of live pressure to tell the reader why the performance works or what kind of comedy it is, which deflates the comic escalation the chapter spine promises and softens the dark edge the material already earned on the page.",
+      "rewrite_direction": "Revise the explanatory aftermath at snapshots/cycle_01/chapters/chapter_09.md:89, snapshots/cycle_01/chapters/chapter_09.md:159, and snapshots/cycle_01/chapters/chapter_09.md:207 so each beat ends on concrete residue instead of commentary. Keep Horvath's reactions, Carmen's bodily tracking, and Burt's tonal complication, but remove labels like 'best acting' / 'the warmth was real' / 'It was funny and it wasn't' unless a later sentence adds new dramatic pressure rather than paraphrasing the beat.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "The revised ending must still show Carmen motionless in the car, must make clear that she lied to the surveyor and crossed into active complicity, and must end with her driving to pick up Reggie. It passes only if, after the moment her complicity becomes unmistakable, every remaining sentence adds a new image, consequence, or decision; it fails if the close continues to paraphrase the same realization in abstract moral language.",
+      "chapter_id": "chapter_09",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:293; snapshots/cycle_01/chapters/chapter_09.md:295; snapshots/cycle_01/chapters/chapter_09.md:303; snapshots/cycle_01/chapters/chapter_09.md:305",
+      "finding_id": "chapter_09_f003",
+      "problem": "The parking-lot ending does not trust its own arrival. Once the resident roll call and Carmen's lie to the surveyor are on the page, the close keeps restating the same moral recognition in increasingly abstract formulations. That extra certification weakens what should be the chapter's clean irreversible turn and is a key reason the chapter falls short of award-level compression.",
+      "rewrite_direction": "Compress the close from snapshots/cycle_01/chapters/chapter_09.md:293 through snapshots/cycle_01/chapters/chapter_09.md:305. Keep the must-land beats from the chapter spine: Carmen sits fifteen minutes, understands she has lied to the state, and drives to pick up Reggie. After the first sentence that makes her complicity unmistakable, either stop the scene sooner or replace later paraphrase with a fresh physical or relational consequence that changes the pressure rather than rephrasing it.",
+      "severity": "MEDIUM",
+      "source": "award",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if: (a) the roommate name at lines 1725 and 1745 matches the name used in chapters 8 and 18; (b) the age and diagnosis are consistent across all three chapters. FAIL if the name differs from either other chapter.",
+      "chapter_id": "chapter_09",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:1725, snapshots/cycle_01/FINAL_NOVEL.md:1745",
+      "finding_id": "CONTINUITY_ROOMMATE_CH09",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:1725",
+            "excerpt": "1725: Her roommate, a ninety-one-year-old woman named Doris who had advanced Alzheimer's and hadn't spoken a recognizable word in eight months, was asleep in the bed by the window, her mouth open, her breathing a thick, slow rasp that was audible from the hallway. Agnes sat in the chair by her own bed, hands folded in her lap, eyes fixed on a point approximately fourteen inches above the floor. She did not look up when Horvath entered.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:1745",
+            "excerpt": "1745: A seventy-six-year-old woman with forty-two years of pharmaceutical expertise, a woman who could calculate drug interactions in her head faster than the pharmacy software, who had once nearly lost her license for refusing to fill a contraindicated prescription because she'd rather lose the license than lose a patient \u2014 sitting in a vinyl chair in a room that smelled like Doris's incontinence pads, pretending she didn't know what language was.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          }
+        ],
+        "rewrite_direction": [
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:1725",
+            "excerpt": "1725: Her roommate, a ninety-one-year-old woman named Doris who had advanced Alzheimer's and hadn't spoken a recognizable word in eight months, was asleep in the bed by the window, her mouth open, her breathing a thick, slow rasp that was audible from the hallway. Agnes sat in the chair by her own bed, hands folded in her lap, eyes fixed on a point approximately fourteen inches above the floor. She did not look up when Horvath entered.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "problem": "Cross-chapter continuity failure. Agnes's roommate is named 'Doris' in this chapter (lines 1725, 1745) but 'Margaret' in chapter 8 (line 1456) and 'Mrs. Delacroix' in chapter 18 (line 3632). Three parallel-drafted chapters assigned different names to the same character in Room 108A. The description is consistent across chapters (advanced dementia, non-verbal, needs to be spoon-fed, sleep apnea/snoring), confirming this is intended to be one character with three names.",
+      "rewrite_direction": "If 'Doris' is selected as the canonical name (recommended \u2014 it avoids collision with other characters), no change is needed at lines 1725 and 1745. If a different canonical name is chosen, replace 'Doris' at both lines. The key requirement is that the name at snapshots/cycle_01/FINAL_NOVEL.md:1725 and 1745 matches the name used in chapters 8 and 18. Additionally verify that the roommate description details (age, condition) are consistent: this chapter says 'ninety-one-year-old' with Alzheimer's \u2014 check that chapters 8 and 18 don't contradict the age or diagnosis.",
+      "severity": "HIGH",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "has_locator_excerpts": true,
+  "input_snapshot_hash": "a8f650697ee3f5cb77eaf35e9158d1ddfcfcd540a3e018a646dff1dc0ee74bb3",
+  "must_fix_count": 3,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "original_snapshot_file": "snapshots/cycle_01/chapters/chapter_09.md",
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This is a dark comedy about elderly agency, institutional failure, and moral compromise in a setting most fiction treats as a punchline or a tragedy but never both. The risks the novel must take: render the comedy of octogenarians as pharmaceutical distributors without condescending to them or turning them into lovable rogues; make Carmen's escalating complicity fully legible without moralizing about it; show the bodily realities of aging \u2014 incontinence, tremor, cognitive decline, falls, the smell of a body that doesn't leave a building \u2014 with unsentimental specificity; render the economic desperation of both healthcare workers and uninsured buyers without turning either into social-issue abstractions; give the moral ambiguity of the ring genuine weight by refusing to resolve it into either 'they were wrong' or 'they were heroes.' The novel must trust readers to sit with complexity. When in doubt between too raw and too safe, choose raw. A nursing home that smells like potpourri is a nursing home written by someone who's never been in one.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism for bodily functions, aging, economic shame, institutional dysfunction, or the realities of nursing home care is a craft failure. The novel's comedy and humanity depend on rendering what polite fiction glosses over: what it smells like to clean someone who can't clean themselves, what it costs to count coins for a bus fare, what oxycodone sells for per milligram on the secondary market, what a concussion looks like on an 88-year-old skull, what it sounds like when someone with Parkinson's tries to hold a coffee cup steady, what Burt's dementia actually looks like up close. If the prose flinches from these specifics, the novel loses its authority.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the default for all dialogue. Uncontracted forms appear only for emphasis, character-specific formality (Agnes's low contraction level), Carmen under extreme stress reverting to formal speech, or deliberate register choices. In a contemporary New Jersey nursing home, stiff diction is the anomaly, not the norm.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate high-intensity scenes with reflective interiority. Vary scene count: single-scene chapters for maximum compression, three-scene chapters for range. Comic chapters (3, 9) should feel structurally different from quiet character studies (7, 8, 12, 15), which should feel different from crisis chapters (11, 16, 17). Follow a confrontation with a reflection, an escalation with a domestic scene, a comic set piece with an elegiac one. If two consecutive chapters share the same rhythm, one needs redesigning.",
+      "diction": "Grounded and specific. Drug names (oxycodone, alprazolam, hydroxychloroquine), nursing procedures (med pass, pill count, charting, fall assessment), body realities (incontinence, tremor, laceration, scalp bleed). No purple prose, no literary performance. The style should feel like someone who works with their hands is telling you the truth about what she saw.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person, varying by POV character. Carmen chapters are warm and sensory, anchored in the body and the immediate environment. Harry chapters are precise and calculating, with attention to numbers and angles. Agnes chapters are clinical and compressed. Lola chapters are winding and emotionally layered, with embedded memories. Earl chapters are spare and weighted, with silence doing as much work as language. Marcus chapters are kinetic, with physical movement and code-switching. Tammy chapters are flat and observational, her trained eye cataloguing what doesn't add up.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Varied by chapter and POV. Carmen chapters favor medium sentences with occasional long runs when she's anxious. Harry chapters are short and clipped. Comic set pieces (chapters 3 and 9) move between fast inventory and slow domestic beats. Quiet chapters (7, 12, 15) slow down and let space onto the page. No chapter should feel rhythmically identical to the one before it.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

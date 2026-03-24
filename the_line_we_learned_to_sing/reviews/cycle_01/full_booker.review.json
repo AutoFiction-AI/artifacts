@@ -1,0 +1,133 @@
+{
+  "cycle": 1,
+  "verdict": "FAIL",
+  "summary": "Compelling political stakes, strong scene logistics, and sustained close-third pressure are present, but the manuscript is not shortlist-ready. Two HIGH continuity contradictions break trust in cross-chapter factual control, and recurrent craft tics (default facial-freeze phrasing, repeated \"landed like\" template, and mantra-like abstraction tokens around weather/discipline) flatten late-book prose authority. Narrative tense is consistently past tense across all chapters (no chapter-level tense drift detected), but cross-chapter voice separation is weakened by repeated formalized argument cadence in high-pressure dialogue.",
+  "findings": [
+    {
+      "finding_id": "FBR-001",
+      "severity": "HIGH",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2842",
+      "problem": "Cross-chapter continuity break: this chapter establishes Suyon as having \"a boy who's nine\", while chapter 15 describes a different child profile. Because Minjae's family risk is a core causal lever, this contradiction undermines factual reliability.",
+      "rewrite_direction": "Revise the disclosure beat at snapshots/cycle_01/FINAL_NOVEL.md:2836-2844 so dependent details are continuity-safe and compatible with later chapters. Prefer either (a) neutral phrasing (e.g., dependents/children) or (b) the same exact family composition used in later chapters; do not introduce a third variant.",
+      "acceptance_test": "Pass if the revised lines at snapshots/cycle_01/FINAL_NOVEL.md:2836-2844 no longer assert a child profile that conflicts with later chapters. Fail if a unique child count/gender detail remains here that is contradicted elsewhere."
+    },
+    {
+      "finding_id": "FBR-002",
+      "severity": "HIGH",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:6366",
+      "problem": "Cross-chapter continuity break: this chapter states Minjae's sister has two daughters, conflicting with chapter 7's earlier dependent description. The contradiction lands inside the novel's emotional crisis center and reads as parallel-draft mismatch.",
+      "rewrite_direction": "Revise snapshots/cycle_01/FINAL_NOVEL.md:6364-6371 to align dependent details with the established canon. If upstream canon remains uncertain, make the line specificity-neutral while preserving urgency (missing caregiver + separated dependents + immediate stakes).",
+      "acceptance_test": "Pass if snapshots/cycle_01/FINAL_NOVEL.md:6364-6371 no longer hard-codes a child profile that conflicts with chapter 7. Fail if the chapter still states an incompatible dependent composition."
+    },
+    {
+      "finding_id": "FBR-003",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2826",
+      "problem": "Recurring full-book pattern (5 chapters: 07, 09, 10, 13, 17): default facial-freeze construction (\"went still/flat\"). This chapter's instance should be REPLACED to break template repetition.",
+      "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:2824-2828, replace \"He went still\" with a character-specific physical beat tied to Minjae's established idiolect/body logic (e.g., cable-color mutter stopping, drawer slam, shoulder guarding) rather than generic freeze language.",
+      "acceptance_test": "Pass if snapshots/cycle_01/FINAL_NOVEL.md:2824-2828 no longer uses \"went still/flat\" and instead shows one concrete, character-specific reaction. Fail if the revised line remains a generic freeze-face construction."
+    },
+    {
+      "finding_id": "FBR-004",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:3860",
+      "problem": "Recurring full-book pattern (5 chapters: 07, 09, 10, 13, 17): default facial-freeze construction. This chapter's instance should be REPLACED.",
+      "rewrite_direction": "Revise snapshots/cycle_01/FINAL_NOVEL.md:3858-3861 so Ji-eun's refusal is rendered through a more specific behavioral cue (voice texture, breath pattern, hand tremor control) instead of \"mouth went flat.\"",
+      "acceptance_test": "Pass if the beat at snapshots/cycle_01/FINAL_NOVEL.md:3858-3861 keeps the defiance but avoids \"went still/flat\" phrasing and reads as Ji-eun-specific performance language. Fail if it remains generic face-freeze diction."
+    },
+    {
+      "finding_id": "FBR-005",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:4209",
+      "problem": "Recurring full-book pattern (5 chapters: 07, 09, 10, 13, 17): default facial-freeze construction. This chapter's instance should be REPLACED.",
+      "rewrite_direction": "Rewrite snapshots/cycle_01/FINAL_NOVEL.md:4207-4212 to convey Ji-eun's shut-down with a less templated signal grounded in this scene's train-car intimacy (micro-gesture, breath, pacing) rather than \"voice went flat.\"",
+      "acceptance_test": "Pass if snapshots/cycle_01/FINAL_NOVEL.md:4207-4212 preserves emotional drop but removes \"went flat/still\" language and uses chapter-specific sensory behavior. Fail if a default flat/still face/voice construction remains."
+    },
+    {
+      "finding_id": "FBR-006",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:5780",
+      "problem": "Recurring full-book pattern (5 chapters: 07, 09, 10, 13, 17): default facial-freeze construction. This chapter's instance should be REPLACED.",
+      "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:5778-5782, replace \"He went still\" with a sharper betrayal-scene beat that reflects Minjae's specific stress tells (topic shift, tool handling, breath control, profanity drop).",
+      "acceptance_test": "Pass if snapshots/cycle_01/FINAL_NOVEL.md:5778-5782 avoids \"went still/flat\" and heightens the rupture through concrete action. Fail if the line remains template freeze language."
+    },
+    {
+      "finding_id": "FBR-007",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:7118",
+      "problem": "Recurring full-book pattern (5 chapters: 07, 09, 10, 13, 17): default facial-freeze construction. This chapter's instance should be REPLACED.",
+      "rewrite_direction": "Revise snapshots/cycle_01/FINAL_NOVEL.md:7118 so the liaison's reaction is rendered with non-template procedural behavior (note-taking change, interruption choice, mic posture) rather than \"went still.\"",
+      "acceptance_test": "Pass if snapshots/cycle_01/FINAL_NOVEL.md:7118 conveys institutional tension without \"went still/flat\" phrasing. Fail if the default freeze construction persists."
+    },
+    {
+      "finding_id": "FBR-008",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:560",
+      "problem": "Recurring full-book pattern (3 chapters: 02, 17, 18): formula metaphor template \"landed like X\". This chapter's instance should be REPLACED.",
+      "rewrite_direction": "Replace the sentence at snapshots/cycle_01/FINAL_NOVEL.md:560 with a non-template, scene-specific reaction tied to Ina's body and immediate context (contract/folder/debt pressure), avoiding \"landed like\" phrasing.",
+      "acceptance_test": "Pass if snapshots/cycle_01/FINAL_NOVEL.md:560 no longer uses \"landed like\" and preserves the emotional impact through concrete sensation/action. Fail if the same metaphor scaffold remains."
+    },
+    {
+      "finding_id": "FBR-009",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:7164",
+      "problem": "Recurring full-book pattern (3 chapters: 02, 17, 18): formula metaphor template \"landed like X\". This chapter's instance should be REPLACED.",
+      "rewrite_direction": "Revise snapshots/cycle_01/FINAL_NOVEL.md:7162-7165 to keep the coldness of Kwon's intervention without the \"landed like\" formula; prefer courtroom-specific physical perception (temperature, hearing, posture shift) over stock metaphor shape.",
+      "acceptance_test": "Pass if snapshots/cycle_01/FINAL_NOVEL.md:7162-7165 removes \"landed like\" while retaining pressure escalation. Fail if the sentence still uses the same formula template."
+    },
+    {
+      "finding_id": "FBR-010",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_18",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:7911",
+      "problem": "Recurring full-book pattern (3 chapters: 02, 17, 18): formula metaphor template \"landed like X\". This chapter's instance should be REPLACED.",
+      "rewrite_direction": "Rewrite snapshots/cycle_01/FINAL_NOVEL.md:7909-7912 to express the legal-notice impact via a chapter-18-specific aftermath cue (fatigue, cold, procedural dread) instead of \"landed like\".",
+      "acceptance_test": "Pass if snapshots/cycle_01/FINAL_NOVEL.md:7909-7912 no longer contains \"landed like\" and the emotional beat remains legible in plain concrete prose. Fail if the formula survives."
+    },
+    {
+      "finding_id": "FBR-011",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2075",
+      "problem": "Style-token overfitting pattern (recurs across chapters 05, 09, 17): Kwon's abstraction lexicon repeats as mantra (weather/strategy/discipline frame), reducing rhetorical freshness and making later scenes feel pre-echoed.",
+      "rewrite_direction": "In snapshots/cycle_01/FINAL_NOVEL.md:2075-2089, keep Kwon's ideological coldness but retire repeated weather-mantra language and substitute one concrete operational cost example (specific district/family/route consequence) to carry menace.",
+      "acceptance_test": "Pass if snapshots/cycle_01/FINAL_NOVEL.md:2075-2089 reads as Kwon-specific but not sloganic, with at least one concrete operational detail doing the persuasive work. Fail if the passage remains primarily abstract mantra language."
+    },
+    {
+      "finding_id": "FBR-012",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:3486",
+      "problem": "Style-token overfitting pattern (recurs across chapters 05, 09, 17): repeated abstraction tokens (signal/continuity/discipline) begin to sound like carried-over prompt vocabulary rather than scene-discovered language.",
+      "rewrite_direction": "Revise snapshots/cycle_01/FINAL_NOVEL.md:3486-3490 and snapshots/cycle_01/FINAL_NOVEL.md:3734-3742 so Kwon's control argument lands through immediate stage-control facts and consequences, not repeated slogan nouns.",
+      "acceptance_test": "Pass if the revised spans at snapshots/cycle_01/FINAL_NOVEL.md:3486-3490 and snapshots/cycle_01/FINAL_NOVEL.md:3734-3742 maintain threat but read as event-specific language rather than repeated institutional mantra. Fail if the same token loop dominates both beats."
+    },
+    {
+      "finding_id": "FBR-013",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:7162",
+      "problem": "Style-token overfitting pattern (recurs across chapters 05, 09, 17): the same discipline/stability abstraction set reappears in climactic testimony, blunting rhetorical escalation at the exact point that should feel newly dangerous.",
+      "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:7162-7168, vary Kwon-vs-Ina language away from repeated abstraction tokens and anchor the conflict in hearing-room specifics (evidence handling, chain-of-custody claims, human cost) to avoid mantra carryover.",
+      "acceptance_test": "Pass if snapshots/cycle_01/FINAL_NOVEL.md:7162-7168 feels like a fresh argumentative turn tied to the hearing evidence rather than recycled chapter-05/09 rhetoric. Fail if the exchange still reads as repetition of earlier tokenized framing."
+    },
+    {
+      "finding_id": "FBR-014",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:5824",
+      "problem": "Dialogue register mismatch and stiltedness: in a maximal emotional rupture between two high-contraction characters (Ina and Minjae), the exchange repeatedly slides into formal, legalistic full-form diction (\"I am...\", \"I did not...\", \"I am sorry\"), flattening voice distinctness under pressure.",
+      "rewrite_direction": "Rework the core confrontation at snapshots/cycle_01/FINAL_NOVEL.md:5696-5826 to restore spoken-pressure texture: default contractions, interruptions, clipped self-corrections, and clearer idiolect separation (Ina analytical then breaking; Minjae practical, jagged, defensive). Keep one deliberate formal line only if used as a conscious emotional defense.",
+      "acceptance_test": "Pass if the revised span at snapshots/cycle_01/FINAL_NOVEL.md:5696-5826 reads as two distinct stressed voices with contractions as baseline and at least one audible interruption/overlap beat. Fail if the exchange still sustains polished full-form debate cadence through the breakup peak."
+    }
+  ]
+}

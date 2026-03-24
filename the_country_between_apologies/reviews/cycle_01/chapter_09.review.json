@@ -1,0 +1,67 @@
+{
+  "chapter_id": "chapter_09",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_09_f01",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:253; snapshots/cycle_01/chapters/chapter_09.md:259; snapshots/cycle_01/chapters/chapter_09.md:265",
+      "problem": "Sanitization drift at the family-contact climax: the chapter stages the difficult messages, then retreats before any live consequence lands. Eli sends a pulse-check text, receives high-pressure replies, and the prose cuts to logistics instead of rendering the confrontation the scene has earned.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_09.md:259-266, replace the cutaway with an on-page exchange that forces one uncomfortable truth. Keep the chapter endpoint in transit if needed, but insert a brief Nora or June response loop where Eli answers directly (location, injury status, immediate plan) and absorbs a concrete boundary or demand before moving to the shuttle timetable beat.",
+      "acceptance_test": "Pass if the revised span at snapshots/cycle_01/chapters/chapter_09.md:259-266 contains at least one outbound Eli reply that directly answers either 'Where exactly are you?' or 'What pass?', plus one inbound response that changes his next action; fail if he still exits the scene without answering either message."
+    },
+    {
+      "finding_id": "chapter_09_f02",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:159; snapshots/cycle_01/chapters/chapter_09.md:175; snapshots/cycle_01/chapters/chapter_09.md:207; snapshots/cycle_01/chapters/chapter_09.md:229",
+      "problem": "Post-crash architecture drifts into a serial intake procession (triage -> registrar -> social worker -> discharge desk) with similar scene function, so leverage shifts flatten. Consequences are itemized, but dramatic pressure stalls between beats.",
+      "rewrite_direction": "In snapshots/cycle_01/chapters/chapter_09.md:159-233, compress at least one institutional interaction and reallocate lines to Eli making explicit choices under pressure (payment-plan posture, transport commitment, retrieval priority). Ensure each retained exchange ends by narrowing or widening his options, not just adding information.",
+      "acceptance_test": "Pass if every retained interaction in snapshots/cycle_01/chapters/chapter_09.md:159-233 ends with an observable decision by Eli that alters what he can do next, and no two consecutive interactions are information-only handoffs; fail otherwise."
+    },
+    {
+      "finding_id": "chapter_09_f03",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:163; snapshots/cycle_01/chapters/chapter_09.md:165; snapshots/cycle_01/chapters/chapter_09.md:173",
+      "problem": "Timidity in injury aftermath: a high-stakes physical window is summarized ('X-rayed, scanned, glued') right before administrative beats, which softens embodied vulnerability at the moment the cracked-rib reality should be most immediate.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_09.md:163-173, replace summary compression with one rendered care action (e.g., breathing tool attempt, assisted repositioning, cough/pain spike) that shows physical cost in real time before the discharge instructions and billing logistics proceed.",
+      "acceptance_test": "Pass if snapshots/cycle_01/chapters/chapter_09.md:163-173 includes at least one fully rendered physical action-response sequence (attempt -> pain/limitation -> adjustment) tied to the rib injury; fail if treatment remains summarized in a single omnibus sentence."
+    },
+    {
+      "finding_id": "chapter_09_f04",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:93; snapshots/cycle_01/chapters/chapter_09.md:109; snapshots/cycle_01/chapters/chapter_09.md:161; snapshots/cycle_01/chapters/chapter_09.md:193; snapshots/cycle_01/chapters/chapter_09.md:221",
+      "problem": "Multiple secondary speakers converge on the same polished, mildly wry cadence, reducing idiolect separation. Trooper, medic, nurse/registrar, and social-worker voices are all competent but too rhythmically interchangeable under pressure.",
+      "rewrite_direction": "Differentiate speaker registers in snapshots/cycle_01/chapters/chapter_09.md:89-113 and snapshots/cycle_01/chapters/chapter_09.md:161-221: give Chen command-forward brevity, Dario medic shorthand plus field cadence, Kelsey bureaucratic precision with hedging, and Patrice transit-resource pragmatism. Preserve contraction-heavy natural speech while varying syntax length and lexical domain by role.",
+      "acceptance_test": "Pass if, in the revised lines at snapshots/cycle_01/chapters/chapter_09.md:89-113 and snapshots/cycle_01/chapters/chapter_09.md:161-221, each of Chen, Dario, Kelsey, and Patrice can be identified by dialogue alone in at least one line without relying on speaker tags; fail if two or more still read as interchangeable after tag removal."
+    },
+    {
+      "finding_id": "chapter_09_f05",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:23; snapshots/cycle_01/chapters/chapter_09.md:89; snapshots/cycle_01/chapters/chapter_09.md:107; snapshots/cycle_01/chapters/chapter_09.md:161; snapshots/cycle_01/chapters/chapter_09.md:175; snapshots/cycle_01/chapters/chapter_09.md:207; snapshots/cycle_01/chapters/chapter_09.md:241",
+      "problem": "Recurring tertiary-introduction formula appears more than twice: name/badge identification plus quirky personal-detail garnish. The repetition becomes a visible construction tic and starts to flatten scene texture.",
+      "rewrite_direction": "Across snapshots/cycle_01/chapters/chapter_09.md:23-241, vary minor-character entrances: keep at most two full portrait beats and convert others to action-first or voice-first introductions tied directly to scene function. Remove decorative detail where it does not alter leverage or consequence.",
+      "acceptance_test": "Pass if, in snapshots/cycle_01/chapters/chapter_09.md:23-241, no more than two minor-character entrances use the combined pattern (name marker + quirky accessory/biography detail), and at least three entrances are introduced primarily through action or speech pressure; fail if the pattern appears three or more times."
+    }
+  ],
+  "summary": "Chapter 9 lands core causality and canon state changes (whiteout crash, cracked rib, totaled sedan, $2,740 medical debt) and stays in canonical past-tense close-third. However, unresolved craft issues keep it below pass level: one HIGH sanitization retreat at the family-contact climax, plus MEDIUM pacing, timidity, dialogue-idiolect flattening, and repeated prose-construction tics. No direct contradictions with continuity_sheet canonical facts were found.",
+  "coverage_scene_ids": [
+    "dawn_departure_despite_posted_advisories",
+    "whiteout_disorientation_and_impact",
+    "clinic_itemization_injury_debt_transport_loss"
+  ]
+}

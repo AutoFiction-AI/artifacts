@@ -1,0 +1,58 @@
+{
+  "chapter_id": "chapter_14",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH14-F001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:37; snapshots/cycle_01/chapters/chapter_14.md:183; snapshots/cycle_01/chapters/chapter_14.md:219",
+      "problem": "Sanitization drift in high-pressure moments: profanity is repeatedly euphemized (\"swore\", \"language stripped of poetry\") instead of rendered directly, which softens scene pressure at exactly the points where consequence should stay embodied.",
+      "rewrite_direction": "Revise target spans at snapshots/cycle_01/chapters/chapter_14.md:37, snapshots/cycle_01/chapters/chapter_14.md:183, and snapshots/cycle_01/chapters/chapter_14.md:219 to replace indirect profanity summaries with explicit spoken words that fit each speaker's register and period context. Keep the swears short, character-specific, and causally tied to the immediate obstacle (pain, blood loss, storm logistics).",
+      "acceptance_test": "PASS if lines 37, 183, and 219 each contain at least one directly quoted profanity or curse utterance tied to the immediate action; FAIL if any of those beats still report swearing indirectly (e.g., \"swore\", \"language stripped of poetry\") without the actual lexical content."
+    },
+    {
+      "finding_id": "CH14-F002",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:235; snapshots/cycle_01/chapters/chapter_14.md:257; snapshots/cycle_01/chapters/chapter_14.md:279",
+      "problem": "Keane's speech drifts into extended legal-administrative monologue during confrontation, blurring idiolect separation with Peter's control register and reducing spoken urgency under scene pressure.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_14.md:235-240, snapshots/cycle_01/chapters/chapter_14.md:257-263, and snapshots/cycle_01/chapters/chapter_14.md:279-283, keep Keane's authority but recast lines into her style-bible emergency voice: shorter imperative chains, moderate contraction use, and clipped interruptions that counter Peter rather than mirroring his formal cadence.",
+      "acceptance_test": "PASS if each of the three target exchanges contains (a) at least one contraction in Keane's speech and (b) at least one short interruptive or imperative line that is rhythmically distinct from Peter's full-form legal syntax; FAIL if Keane's lines remain multi-sentence bureaucratic blocks with predominantly uncontracted phrasing."
+    },
+    {
+      "finding_id": "CH14-F003",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:59; snapshots/cycle_01/chapters/chapter_14.md:183; snapshots/cycle_01/chapters/chapter_14.md:191; snapshots/cycle_01/chapters/chapter_14.md:201; snapshots/cycle_01/chapters/chapter_14.md:247; snapshots/cycle_01/chapters/chapter_14.md:281; snapshots/cycle_01/chapters/chapter_14.md:321",
+      "problem": "A recurring \"as if ...\" comparison template appears repeatedly across the chapter, creating a detectable sentence-shape tic and flattening prose variation.",
+      "rewrite_direction": "Revise the listed spans to replace most \"as if\" comparisons with direct sensory statements, action-embedded perception, or character-specific metaphor. Keep no more than two \"as if\" constructions in the entire chapter, with any retained instances reserved for highest-stakes beats.",
+      "acceptance_test": "PASS if the revised chapter contains at most two \"as if\" comparison clauses total and the listed lines no longer rely on repeated template phrasing; FAIL if three or more \"as if\" constructions remain, especially in the cited spans."
+    },
+    {
+      "finding_id": "CH14-F004",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:267; snapshots/cycle_01/chapters/chapter_14.md:303; snapshots/cycle_01/chapters/chapter_14.md:317; snapshots/cycle_01/chapters/chapter_14.md:323",
+      "problem": "The ending over-signals Peter's control motif through repeated ledger/number/sequence language in tight proximity, reducing subtext and making thematic intent feel explained rather than dramatized.",
+      "rewrite_direction": "Tighten the motif cluster at snapshots/cycle_01/chapters/chapter_14.md:267, snapshots/cycle_01/chapters/chapter_14.md:303, snapshots/cycle_01/chapters/chapter_14.md:317, and snapshots/cycle_01/chapters/chapter_14.md:323 by preserving one explicit ledger-frame line and converting the others to concrete behavior (gesture, object handling, interruption, silence) that implies control without naming it repeatedly.",
+      "acceptance_test": "PASS if only one explicit ledger/numbers/sequence metaphor remains across the four cited beats and at least two of the remaining beats convey Peter's control attempt through observable action instead of abstract thematic labeling; FAIL if multiple explicit motif labels remain clustered across those lines."
+    }
+  ],
+  "summary": "Chapter 14 delivers strong causal urgency, embodied medical stakes, and major state transitions on continuity without timeline or tense violations, but it does not clear pass-level quality due to one HIGH craft issue (sanitized profanity at pressure points) and three MEDIUM issues: Keane/Peter register bleed into formal monologue, repeated \"as if\" sentence-template overuse, and over-explicit ledger-motif repetition in the close. Character voices are mostly consistent, with the main dialogue drift localized to Keane's confrontation passages.",
+  "coverage_scene_ids": [
+    "labor_onset_whiteout",
+    "premature_delivery_and_transfer",
+    "postpartum_hemorrhage_response",
+    "hallway_power_reversal_aftermath"
+  ]
+}

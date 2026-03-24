@@ -1,0 +1,82 @@
+{
+  "acceptance_targets": [
+    "[ch10-prose-overexplained-chill] Across the revised passage anchored at snapshots/cycle_02/chapters/chapter_10.md:455 and snapshots/cycle_02/chapters/chapter_10.md:543, no more than two explicit narrator explanations may tell the reader why Eli feels wrong; the rest of the unease must come from concrete glitches, repeated phrasing, timing, or Lena's immediate bodily reaction on the page.",
+    "[ch10-prose-scene-opening-formula] In the revised chapter, at least one of the three post-break scenes beginning at snapshots/cycle_02/chapters/chapter_10.md:105, snapshots/cycle_02/chapters/chapter_10.md:219, or snapshots/cycle_02/chapters/chapter_10.md:397 must start with an action or spoken line in its first two sentences, with sensory inventory arriving only after the scene's conflict or leverage is underway."
+  ],
+  "chapter_id": "chapter_10",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Across the revised passage anchored at snapshots/cycle_02/chapters/chapter_10.md:455 and snapshots/cycle_02/chapters/chapter_10.md:543, no more than two explicit narrator explanations may tell the reader why Eli feels wrong; the rest of the unease must come from concrete glitches, repeated phrasing, timing, or Lena's immediate bodily reaction on the page.",
+      "chapter_id": "chapter_10",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_10.md:455; snapshots/cycle_02/chapters/chapter_10.md:467; snapshots/cycle_02/chapters/chapter_10.md:515; snapshots/cycle_02/chapters/chapter_10.md:533; snapshots/cycle_02/chapters/chapter_10.md:539; snapshots/cycle_02/chapters/chapter_10.md:543",
+      "finding_id": "ch10-prose-overexplained-chill",
+      "problem": "Once the lag and repetition pattern is visible, the prose keeps restating that Eli feels too clean, repeatable, or ready. The first sensory chill lands; the next several explanations soften it by diagnosing the effect again and again instead of letting concrete anomalies keep working on the reader.",
+      "rewrite_direction": "Compress the explanatory commentary in the final call at snapshots/cycle_02/chapters/chapter_10.md:455, snapshots/cycle_02/chapters/chapter_10.md:467, snapshots/cycle_02/chapters/chapter_10.md:515, snapshots/cycle_02/chapters/chapter_10.md:533, snapshots/cycle_02/chapters/chapter_10.md:539, and snapshots/cycle_02/chapters/chapter_10.md:543. Keep one or two interpretive sentences, but let the duplicated laugh at snapshots/cycle_02/chapters/chapter_10.md:501, the pre-shaped compliment at snapshots/cycle_02/chapters/chapter_10.md:517, or the too-fast answer at snapshots/cycle_02/chapters/chapter_10.md:537 carry the unease without repeated gloss.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "In the revised chapter, at least one of the three post-break scenes beginning at snapshots/cycle_02/chapters/chapter_10.md:105, snapshots/cycle_02/chapters/chapter_10.md:219, or snapshots/cycle_02/chapters/chapter_10.md:397 must start with an action or spoken line in its first two sentences, with sensory inventory arriving only after the scene's conflict or leverage is underway.",
+      "chapter_id": "chapter_10",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_10.md:3; snapshots/cycle_02/chapters/chapter_10.md:105; snapshots/cycle_02/chapters/chapter_10.md:219; snapshots/cycle_02/chapters/chapter_10.md:397",
+      "finding_id": "ch10-prose-scene-opening-formula",
+      "problem": "Each scene opens with a strong but similar atmosphere-first inventory of weather, smell, and room condition before human leverage starts. Used four times in one chapter, the move becomes a visible formula and regularizes the pulse instead of giving each scene a distinct entry.",
+      "rewrite_direction": "Rework at least one later scene opening at snapshots/cycle_02/chapters/chapter_10.md:105, snapshots/cycle_02/chapters/chapter_10.md:219, or snapshots/cycle_02/chapters/chapter_10.md:397 so the first two sentences enter through action, dialogue, or pressure rather than another room-weather catalog. Keep the environmental texture, but fold it in after the scene's human leverage is already active.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "8a4c6e16ebd9efede6a344dc873c4bc8ccb40eb81d09007d1c7fd1a1b9508131",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on prose and copyedit finish: diction precision, rhythm control, sentence-level clarity, grammar, line-level polish without flattening style, and explicit aesthetic-risk audit (sanitization is the primary risk \u2014 do not soften or euphemize; push toward creative risk and specificity).",
+    "key": "p3_prose_copyedit",
+    "label": "prose/copyedit fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into the embarrassing specifics: transfer amounts, body awkwardness, neighborhood petty detail, ugly motives, and the unstable overlap between care and control. When a choice arises between a safer generalized line and a sharper socially revealing one, choose the sharper line unless it breaks character truth.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene reaches sex, money shame, betrayal, or bodily disgust and the prose flinches into summary or tasteful fog, revise toward concrete action, sensory residue, and social consequence.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are normal in almost all spoken English here; full forms are reserved for emphasis, class performance, or moments of deliberate control.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate compressed one-scene chapters with socially dense multi-scene chapters; follow hot chapters with quiet domestic ones, let comic humiliation sit beside grief, and vary dialogue density so no two consecutive chapters share the same pulse.",
+      "diction": "Contemporary, unsanitized, class-attentive English with enough lyric lift to surprise but not enough polish to float above the bodies and bills in the room.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "tight third person centered on Lena, with no head-hopping; June and Eli are knowable only through what Lena hears, sees, infers, and later uncovers in artifacts.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Supple, pressure-sensitive sentences that can hold embarrassment and desire in the same line, then snap short at moments of exposure or financial pain.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

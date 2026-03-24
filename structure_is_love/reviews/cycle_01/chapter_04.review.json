@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_04",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_04_F001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_01/chapters/chapter_04.md:169; snapshots/cycle_01/chapters/chapter_04.md:171; snapshots/cycle_01/chapters/chapter_04.md:249; snapshots/cycle_01/chapters/chapter_04.md:255; snapshots/cycle_01/chapters/chapter_04.md:257; snapshots/cycle_01/chapters/chapter_04.md:299",
+      "problem": "Sanitization drift in consequence handling: after explicit dizziness, dissociation cues, and violent emesis, the scene lets Ravi shut down care and quickly returns to routine logistics, defusing the full physical/institutional stakes the chapter itself establishes.",
+      "rewrite_direction": "Revise the aftermath at snapshots/cycle_01/chapters/chapter_04.md:255 and snapshots/cycle_01/chapters/chapter_04.md:257 so Mr. Salazar's medic prompt cannot be dismissed in one line; add one concrete third-party safety action before the cool-down transition at snapshots/cycle_01/chapters/chapter_04.md:299 (for example: bench assessment, incident logging, or forced rest interval), then keep Ravi's result-first ideology but make it contend with that intervention.",
+      "acceptance_test": "PASS if revised text around snapshots/cycle_01/chapters/chapter_04.md:255-303 includes (1) one non-Ravi adult taking a specific safety action after vomiting and (2) one immediate consequence that changes the departure flow (delay, warning, or monitoring). FAIL if the sequence still moves directly from emesis to normal cool-down routine with no external check."
+    },
+    {
+      "finding_id": "chapter_04_F002",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_01/chapters/chapter_04.md:69; snapshots/cycle_01/chapters/chapter_04.md:77; snapshots/cycle_01/chapters/chapter_04.md:241; snapshots/cycle_01/chapters/chapter_04.md:293; snapshots/cycle_01/chapters/chapter_04.md:296",
+      "problem": "The chapter sets up social cruelty and coercive lesson-making, but the room-level social consequence resolves too cleanly: Ravi's public framing of suffering as virtue is accepted with minimal contest, so the thematic turn reads more asserted than dramatized.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_04.md:241 and snapshots/cycle_01/chapters/chapter_04.md:293, insert one visible counterforce (official caution, peer/adult objection, or direct refusal) that Ravi must answer before exit. Tie that counterforce back to the earlier taunt pressure at snapshots/cycle_01/chapters/chapter_04.md:69 and snapshots/cycle_01/chapters/chapter_04.md:77 so consequence feels causally linked rather than ambient.",
+      "acceptance_test": "PASS if revised aftermath includes at least one explicit challenge to Ravi's 'results over wellbeing' framing and an in-scene response that changes behavior or next action. FAIL if public praise still lands unopposed and nothing in the room shifts."
+    },
+    {
+      "finding_id": "chapter_04_F003",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_01/chapters/chapter_04.md:13; snapshots/cycle_01/chapters/chapter_04.md:117; snapshots/cycle_01/chapters/chapter_04.md:125; snapshots/cycle_01/chapters/chapter_04.md:277; snapshots/cycle_01/chapters/chapter_04.md:285; snapshots/cycle_01/chapters/chapter_04.md:287",
+      "problem": "Mechanical over-literal reuse of style-bible stress tokens flattens dialogue cadence: the Ravi-to-Anika control loop repeats identical command/echo forms (\"Say it\" + \"process\") often enough to feel templated instead of pressure-responsive.",
+      "rewrite_direction": "Revise exchanges at snapshots/cycle_01/chapters/chapter_04.md:113, snapshots/cycle_01/chapters/chapter_04.md:125, snapshots/cycle_01/chapters/chapter_04.md:277, and snapshots/cycle_01/chapters/chapter_04.md:287 so Ravi's authority remains procedural but not slogan-locked. Keep contraction-heavy natural speech, and swap at least two repeated command beats for concrete situation language (breath timing, footwork correction, or recovery instructions).",
+      "acceptance_test": "PASS if revised dialogue preserves power asymmetry but no identical Ravi command phrase appears more than twice across the chapter and at least two revised lines use scene-specific concrete instruction. FAIL if \"Say it\" or \"process\" still functions as a 3+ recurrence refrain."
+    },
+    {
+      "finding_id": "chapter_04_F004",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_01/chapters/chapter_04.md:53; snapshots/cycle_01/chapters/chapter_04.md:151; snapshots/cycle_01/chapters/chapter_04.md:221",
+      "problem": "A sentence-shape formula recurs more than twice around the serve routine (four bounces, exhale, eyes up), turning a useful motif into visible prose autopilot.",
+      "rewrite_direction": "Keep the ritual at snapshots/cycle_01/chapters/chapter_04.md:53, snapshots/cycle_01/chapters/chapter_04.md:151, and snapshots/cycle_01/chapters/chapter_04.md:221, but rewrite at least two instances with distinct syntax and new sensory/inferential payload (for example: tremor, missed bounce recovery, or intrusive memory interference) rather than near-verbatim sequencing.",
+      "acceptance_test": "PASS if the three routine beats remain legible as the same ritual but differ in phrasing and emphasis, with no near-verbatim clause chain repeated across all three. FAIL if the repeated construction still reads as the same sentence template at each occurrence."
+    }
+  ],
+  "summary": "Chapter 4 delivers strong embodied match tension and clear causal movement into the chapter-level consequence, but it fails review due to one high-severity sanitization/consequence defusal in the collapse aftermath plus unresolved repetition tics in dialogue and prose that flatten voice precision under pressure."
+}

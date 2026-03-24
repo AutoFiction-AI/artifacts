@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_01",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch01_craft_001_sanitized_omar_precarity",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:339; snapshots/cycle_01/chapters/chapter_01.md:341",
+      "problem": "The chapter makes Omar's inability to refuse central, then backs away into abstract cover terms: 'Funding. Visa paperwork. The thousand invisible signatures.' Because the style bible explicitly penalizes euphemism around visa fear and institutional cruelty, this reads as sanitization drift at the precise moment the coercive mechanism should become materially legible.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_01.md:339 and snapshots/cycle_01/chapters/chapter_01.md:341, replace the abstract noun cluster with one immediate, concrete consequence Omar is calculating: the funding line tied to his status, the paperwork Mohit controls, the deadline he cannot miss, or the administrative failure that would follow refusal. Keep the close-third distance on Leela, but name the mechanism instead of summarizing it as institutional atmosphere.",
+      "acceptance_test": "Pass if the revised hallway passage lets a reader state the precise near-term institutional lever making refusal dangerous for Omar after reading snapshots/cycle_01/chapters/chapter_01.md:339-343; fail if the passage still relies on umbrella phrases like 'funding' or 'visa paperwork' without a concrete consequence."
+    },
+    {
+      "finding_id": "ch01_booker_001_pairing_scheme_uneven",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:155; snapshots/cycle_01/chapters/chapter_01.md:159; snapshots/cycle_01/chapters/chapter_01.md:163; snapshots/cycle_01/chapters/chapter_01.md:167; snapshots/cycle_01/chapters/chapter_01.md:171; snapshots/cycle_01/chapters/chapter_01.md:199",
+      "problem": "The chapter's central engine is the adversarial pairing scheme, but the reveal lands unevenly. Leela's contingent approval and Omar's alarm get full dramatic weight, while Omar->June and June->Ben remain mostly technical labels. That leaves the ensemble cannibalization system less causally legible than the chapter spine requires.",
+      "rewrite_direction": "In the assignment reveal at snapshots/cycle_01/chapters/chapter_01.md:155, snapshots/cycle_01/chapters/chapter_01.md:163, snapshots/cycle_01/chapters/chapter_01.md:167, and snapshots/cycle_01/chapters/chapter_01.md:171, add one concrete consequence, reaction, or memory beat for each pairing so the reader can see what each person stands to lose. Use the immediate reactions around snapshots/cycle_01/chapters/chapter_01.md:189 and snapshots/cycle_01/chapters/chapter_01.md:199 as the model of specificity rather than introducing more abstract technical nouns.",
+      "acceptance_test": "Pass if, by the end of the revised assignment scene at snapshots/cycle_01/chapters/chapter_01.md:155-173, a first-time reader can state what Omar threatens in June's project, what June can expose in Ben's, and what Ben accessing Leela's corpus materially endangers; fail if two or more pairings still read as generic technical labels."
+    },
+    {
+      "finding_id": "ch01_prose_001_qualifier_tic",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:21; snapshots/cycle_01/chapters/chapter_01.md:145; snapshots/cycle_01/chapters/chapter_01.md:293; snapshots/cycle_01/chapters/chapter_01.md:395; snapshots/cycle_01/chapters/chapter_01.md:417",
+      "problem": "The chapter leans too often on the same qualifying glosses: 'as if,' 'not quite,' and negation-correction sentences that immediately explain the subtext the scene has already dramatized. Repeated across the chapter, the pattern becomes a prose tic and flattens Leela's otherwise sharp interiority into a single explanatory rhythm.",
+      "rewrite_direction": "In snapshots/cycle_01/chapters/chapter_01.md:141, snapshots/cycle_01/chapters/chapter_01.md:145, snapshots/cycle_01/chapters/chapter_01.md:293, snapshots/cycle_01/chapters/chapter_01.md:395, and snapshots/cycle_01/chapters/chapter_01.md:417, keep only the strongest qualifying comparison and replace the rest with direct action, sensory detail, or silence. Let at least some beats land without an immediate 'as if' or 'not X but Y' interpretive translation.",
+      "acceptance_test": "Pass if the revised passages at snapshots/cycle_01/chapters/chapter_01.md:141-153, snapshots/cycle_01/chapters/chapter_01.md:293-299, and snapshots/cycle_01/chapters/chapter_01.md:395-417 each contain at least one pressure beat that lands without an immediate qualifying gloss, and no targeted span relies on more than one 'as if' or negation-correction construction; fail if the reader is still being repeatedly told how to parse beats the scene already makes legible."
+    }
+  ],
+  "summary": "Dialogue passes: June, Mohit, Omar, Ben, and Leela remain distinct, contraction use stays natural for their profiles, and scene exchanges keep shifting leverage. The chapter still fails overall. It nails the lab's atmosphere and Mohit's managerial menace, but Omar's coercion turns euphemistic exactly where the style bible demands concrete institutional harm, the adversarial pairing system is not equally legible across the full ensemble, and repeated qualifying glosses over-explain several otherwise strong beats."
+}

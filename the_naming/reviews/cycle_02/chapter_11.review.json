@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_11",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_11_award_01",
+      "source": "award",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_02/chapters/chapter_11.md:43; snapshots/cycle_02/chapters/chapter_11.md:63; snapshots/cycle_02/chapters/chapter_11.md:81; snapshots/cycle_02/chapters/chapter_11.md:95; snapshots/cycle_02/chapters/chapter_11.md:105; snapshots/cycle_02/chapters/chapter_11.md:109; snapshots/cycle_02/chapters/chapter_11.md:115",
+      "problem": "The chapter keeps discovering potent material and then resetting into another quiet withdrawal, so the night walk accumulates sideways instead of building toward one defining turn. The journal coda, which should be the chapter's formal payoff and Leni's sharpest private register, mostly re-inventories scenes the reader already watched, leaving the chapter atmospheric but not fully transformed by its own discoveries.",
+      "rewrite_direction": "Rebuild the back half around a single discovery that changes Leni's route, attention, or writing. Target `snapshots/cycle_02/chapters/chapter_11.md:43`, `snapshots/cycle_02/chapters/chapter_11.md:63`, `snapshots/cycle_02/chapters/chapter_11.md:81`, and `snapshots/cycle_02/chapters/chapter_11.md:95` so at least one transition is driven by what the previous scene did to her rather than by neutral withdrawal. Then revise `snapshots/cycle_02/chapters/chapter_11.md:105`, `snapshots/cycle_02/chapters/chapter_11.md:109`, and `snapshots/cycle_02/chapters/chapter_11.md:115` so the journal adds a new judgment, fear, or accusation instead of only summarizing prior beats.",
+      "acceptance_test": "PASS if a reader can point to one earlier sighting that concretely alters Leni's next action before she reaches `snapshots/cycle_02/chapters/chapter_11.md:105`, and if the journal passage at `snapshots/cycle_02/chapters/chapter_11.md:109` and `snapshots/cycle_02/chapters/chapter_11.md:115` contains at least one new emotional or moral perception not already stated in the walk. FAIL if the revised chapter still moves scene-to-scene through simple retreat verbs and the coda only recaps the same images."
+    },
+    {
+      "finding_id": "chapter_11_craft_01",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_02/chapters/chapter_11.md:45; snapshots/cycle_02/chapters/chapter_11.md:61; snapshots/cycle_02/chapters/chapter_11.md:79; snapshots/cycle_02/chapters/chapter_11.md:91; snapshots/cycle_02/chapters/chapter_11.md:103",
+      "problem": "After several strong images, the narration steps in to explain the image's meaning instead of trusting the image to carry force. Arash and Bett become 'a problem,' Peyam produces an abstract meditation on youth and conviction, Jin's vigil is interpreted for the reader, the distant ordnance is unpacked twice, and the parents' handclasp is directly labeled as fear. This violates the style bible's demand for grounded specificity and pushes Leni's close-third chapter toward retrospective essay instead of lived fifteen-year-old perception.",
+      "rewrite_direction": "At `snapshots/cycle_02/chapters/chapter_11.md:45`, `snapshots/cycle_02/chapters/chapter_11.md:61`, `snapshots/cycle_02/chapters/chapter_11.md:79`, `snapshots/cycle_02/chapters/chapter_11.md:91`, and `snapshots/cycle_02/chapters/chapter_11.md:103`, cut or compress the abstract glosses and replace them with immediate bodily reaction, social consequence, or age-true inference. End each beat on an observed action, sensation, or Leni-specific response rather than on a sentence that paraphrases what the scene already showed.",
+      "acceptance_test": "PASS if each revised target beat can be understood from the concrete action and Leni's immediate reaction without a follow-up sentence that states the theme in abstract terms. FAIL if the cited passages still show an image and then immediately translate it into explicit labels such as what the scene 'means,' who is 'afraid,' or why the image is 'a problem.'"
+    },
+    {
+      "finding_id": "chapter_11_prose_01",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_02/chapters/chapter_11.md:23; snapshots/cycle_02/chapters/chapter_11.md:27; snapshots/cycle_02/chapters/chapter_11.md:45; snapshots/cycle_02/chapters/chapter_11.md:79; snapshots/cycle_02/chapters/chapter_11.md:81; snapshots/cycle_02/chapters/chapter_11.md:91; snapshots/cycle_02/chapters/chapter_11.md:109; snapshots/cycle_02/chapters/chapter_11.md:117",
+      "problem": "The prose reuses the same comparative hinge, especially the `the way ...` construction, often enough that it stops feeling like chosen rhythm and starts feeling like an autopilot template. Because the chapter is otherwise quiet and observational, that repetition is audible: it flattens several paragraphs into the same explanatory cadence and weakens the chapter's sentence-level variety.",
+      "rewrite_direction": "Revise the sentence shapes at `snapshots/cycle_02/chapters/chapter_11.md:23`, `snapshots/cycle_02/chapters/chapter_11.md:27`, `snapshots/cycle_02/chapters/chapter_11.md:45`, `snapshots/cycle_02/chapters/chapter_11.md:79`, `snapshots/cycle_02/chapters/chapter_11.md:81`, `snapshots/cycle_02/chapters/chapter_11.md:91`, `snapshots/cycle_02/chapters/chapter_11.md:109`, and `snapshots/cycle_02/chapters/chapter_11.md:117` so some beats land as direct statement, some as sensory detail, and some as Leni-specific analogy. Keep the exact `the way ...` hinge only where it does irreplaceable work.",
+      "acceptance_test": "PASS if, across the cited lines, the revised chapter uses the exact `the way ...` comparative construction no more than twice and the remaining comparisons arrive in visibly different sentence shapes. FAIL if three or more of the cited beats still pivot on the same `the way ...` formula."
+    }
+  ],
+  "summary": "Dialogue passes: Bett and Arash's exchange stays contracted, distinct, and pressure-bearing. `award`, `craft`, and `prose` fail because the chapter keeps resetting from one potent night vignette to the next, repeatedly interprets its own images after they land, and leans too often on the same `the way ...` comparative scaffold. No MEDIUM+ continuity contradiction, tense drift, sanitization break, or dialogue-register violation was found in the allowed inputs."
+}

@@ -1,0 +1,43 @@
+{
+  "chapter_id": "chapter_05",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_05_booker_001",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:47; snapshots/cycle_01/chapters/chapter_05.md:93; snapshots/cycle_01/chapters/chapter_05.md:137; snapshots/cycle_01/chapters/chapter_05.md:169; snapshots/cycle_01/chapters/chapter_05.md:199",
+      "problem": "The pre-storm middle keeps resetting into adjacent paperwork-case visits rather than ratcheting into a sharper chapter turn. Jamila, Rahima, the tea-stall witness market, Kashem, and then Nura all illuminate the same deadline pressure, but Halima does not make a new tactical choice until the weather forces one, so the sequence reads as accumulation more than escalation.",
+      "rewrite_direction": "Rework the sequence beginning at snapshots/cycle_01/chapters/chapter_05.md:137, snapshots/cycle_01/chapters/chapter_05.md:169, and snapshots/cycle_01/chapters/chapter_05.md:199 so one pre-storm encounter changes Halima's plan on the page. Let the witness market or Kashem confrontation force a concrete move before the rain, such as turning her house into a triage archive, prioritizing disputed households, or actively sorting witnesses instead of only advising storage.",
+      "acceptance_test": "PASS if, by the end of the sequence beginning at snapshots/cycle_01/chapters/chapter_05.md:169, Halima has made a specific new decision or instruction that did not exist at snapshots/cycle_01/chapters/chapter_05.md:47, and the home scene beginning at snapshots/cycle_01/chapters/chapter_05.md:199 is visibly a consequence of that move. FAIL if the pre-storm visits still read as interchangeable examples of the same problem."
+    },
+    {
+      "finding_id": "chapter_05_craft_001",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:45; snapshots/cycle_01/chapters/chapter_05.md:155; snapshots/cycle_01/chapters/chapter_05.md:217; snapshots/cycle_01/chapters/chapter_05.md:275; snapshots/cycle_01/chapters/chapter_05.md:287",
+      "problem": "The narration repeatedly steps out of Halima's immediate scene into island-wide sociological summary. Those passages are smart, but they keep explaining what Kadam Char is becoming instead of letting enough of that change arrive through live behavior, so procedural meaning starts crowding embodied consequence.",
+      "rewrite_direction": "Rebuild at least two of the summary-heavy passages beginning at snapshots/cycle_01/chapters/chapter_05.md:45, snapshots/cycle_01/chapters/chapter_05.md:155, snapshots/cycle_01/chapters/chapter_05.md:275, and snapshots/cycle_01/chapters/chapter_05.md:287 as concrete observed action inside Halima's range of sight and hearing. Keep the same social meaning, but let it emerge through named people rehearsing testimony, bargaining for witness labor, or pruning a household claim rather than through narrator explanation first.",
+      "acceptance_test": "PASS if at least two of the cited spans convey the same social shift through dramatized behavior, quoted speech, or object handling before any generalized label appears, and no more than one paragraph after snapshots/cycle_01/chapters/chapter_05.md:275 summarizes the island's condition in abstract collective terms. FAIL if multiple 'the island is now X' passages still perform the interpretive work for the reader."
+    },
+    {
+      "finding_id": "chapter_05_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:43; snapshots/cycle_01/chapters/chapter_05.md:83; snapshots/cycle_01/chapters/chapter_05.md:169; snapshots/cycle_01/chapters/chapter_05.md:197; snapshots/cycle_01/chapters/chapter_05.md:225; snapshots/cycle_01/chapters/chapter_05.md:287",
+      "problem": "The chapter overuses corrective thesis machinery: 'That was not... It was...', 'The card was not the problem. The problem was...', 'It was not joking.', 'It was impossible work. It was still work.', and 'Not into... Not into... Into...'. Once the pattern appears this many times in one chapter, it reads as a tic rather than as deliberate variation.",
+      "rewrite_direction": "Vary the sentence architecture in the passages beginning at snapshots/cycle_01/chapters/chapter_05.md:43, snapshots/cycle_01/chapters/chapter_05.md:83, snapshots/cycle_01/chapters/chapter_05.md:169, snapshots/cycle_01/chapters/chapter_05.md:225, and snapshots/cycle_01/chapters/chapter_05.md:287. Preserve the insights, but carry most of them through fresh syntax, image, or action instead of repeated antithetical correction formulas.",
+      "acceptance_test": "PASS if the revised chapter retains no more than one explicit 'not X / but Y' or 'It was not / The problem was' construction across the cited spans, and at least two of the current thesis beats are re-expressed through concrete image or action without loss of meaning. FAIL if a reader still encounters three or more of these corrective sentence shapes in the targeted passages."
+    }
+  ],
+  "summary": "Dialogue stays character-distinct and consistent with the style bible's contraction and register rules, and the chapter strongly physicalizes weather, paper, and bureaucratic pressure. It still fails on Booker/craft/prose because the pre-storm middle reads too modular, the narration too often explains the island-wide shift instead of dramatizing it, and the repeated corrective sentence pattern becomes a noticeable prose tic. No continuity contradiction, narrative-tense drift, or verbatim style-bible reuse was found.",
+  "coverage_scene_ids": []
+}

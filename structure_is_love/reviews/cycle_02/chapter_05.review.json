@@ -1,0 +1,50 @@
+{
+  "chapter_id": "chapter_05",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_05-f001",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_02/chapters/chapter_05.md:201; snapshots/cycle_02/chapters/chapter_05.md:231; snapshots/cycle_02/chapters/chapter_05.md:243; snapshots/cycle_02/chapters/chapter_05.md:281",
+      "problem": "The middle escalation repeats the same negotiate-then-refuse beat across kitchen and court scenes (continue training vs stop), which slows momentum before the late-night collapse and weakens leverage progression.",
+      "rewrite_direction": "Tighten and differentiate confrontation beats at snapshots/cycle_02/chapters/chapter_05.md:197, snapshots/cycle_02/chapters/chapter_05.md:231, and snapshots/cycle_02/chapters/chapter_05.md:281 so each exchange introduces new irreversible leverage (for example: one scene sets policy, the next enforces consequence) instead of repeating ask/deny variants.",
+      "acceptance_test": "Pass if revised versions of the spans around snapshots/cycle_02/chapters/chapter_05.md:197 and snapshots/cycle_02/chapters/chapter_05.md:231 each contain one unique leverage shift that did not exist in the prior beat, and the ask/deny loop does not recur again in the span around snapshots/cycle_02/chapters/chapter_05.md:281; fail if the same continue-vs-stop argument repeats without new consequence."
+    },
+    {
+      "finding_id": "chapter_05-f002",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_02/chapters/chapter_05.md:105; snapshots/cycle_02/chapters/chapter_05.md:109; snapshots/cycle_02/chapters/chapter_05.md:263; snapshots/cycle_02/chapters/chapter_05.md:323; snapshots/cycle_02/chapters/chapter_05.md:373; snapshots/cycle_02/chapters/chapter_05.md:389",
+      "problem": "Anika's numeric stress-tell (pain scoring/counting) is used so frequently across scenes that it starts reading like checklist reuse from the style profile rather than evolving scene-specific behavior, reducing emotional texture.",
+      "rewrite_direction": "Keep explicit numeric pain reporting where medically or strategically necessary (nurse assessment at snapshots/cycle_02/chapters/chapter_05.md:103), but in later beats at snapshots/cycle_02/chapters/chapter_05.md:261, snapshots/cycle_02/chapters/chapter_05.md:319, and snapshots/cycle_02/chapters/chapter_05.md:371 shift at least two updates into embodied consequences, misdirection, or action that changes the scene's power dynamic.",
+      "acceptance_test": "Pass if, after the nurse scene near snapshots/cycle_02/chapters/chapter_05.md:103, at least two later pain-status moments in the spans around snapshots/cycle_02/chapters/chapter_05.md:261, snapshots/cycle_02/chapters/chapter_05.md:319, and snapshots/cycle_02/chapters/chapter_05.md:371 are conveyed without explicit numeric labels and still make severity unambiguous; fail if those beats continue as repeated number declarations."
+    },
+    {
+      "finding_id": "chapter_05-f003",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_02/chapters/chapter_05.md:35; snapshots/cycle_02/chapters/chapter_05.md:71; snapshots/cycle_02/chapters/chapter_05.md:149; snapshots/cycle_02/chapters/chapter_05.md:299; snapshots/cycle_02/chapters/chapter_05.md:333; snapshots/cycle_02/chapters/chapter_05.md:363",
+      "problem": "Reaction-beat defaults repeat past the tic threshold (especially repeated nodding, plus repeated looked-at staging), flattening paragraph-level surprise and signaling autopilot gesture writing.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_05.md:35, snapshots/cycle_02/chapters/chapter_05.md:71, snapshots/cycle_02/chapters/chapter_05.md:149, snapshots/cycle_02/chapters/chapter_05.md:299, snapshots/cycle_02/chapters/chapter_05.md:333, and snapshots/cycle_02/chapters/chapter_05.md:363, replace most nod-based reactions with distinct physical or interior responses tied to immediate stakes; also diversify looked-at beats near snapshots/cycle_02/chapters/chapter_05.md:101 and snapshots/cycle_02/chapters/chapter_05.md:215.",
+      "acceptance_test": "Pass if the cited reaction spans retain no more than two total nodding beats and no more than two total looked-at staging beats, with each replacement introducing a concrete action/sensation specific to that moment's conflict; fail if repetitive gesture placeholders remain the dominant reaction form in those lines."
+    }
+  ],
+  "summary": "Causality, continuity, and tense control are solid, and character registers are largely consistent with the style bible. The chapter still fails review due to unresolved structural repetition in confrontation beats and prose-level repetition tics (gesture defaults and over-recycled numeric stress reporting) that reduce escalation sharpness and stylistic freshness.",
+  "coverage_scene_ids": [
+    "pre_dawn_training_block",
+    "school_nurse_evaluation",
+    "kitchen_rest_conflict",
+    "jonah_override_session",
+    "late_night_secret_conditioning",
+    "log_falsification_aftermath"
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "acceptance_targets": [
+    "[C09-PROSE-001] PASS if the revised closing sequence (current lines 318-508) contains no more than two paragraphs that begin with an explicit timestamp formula ('At [time]'). FAIL if three or more timestamp-led paragraph openings remain."
+  ],
+  "chapter_id": "chapter_09",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if the revised closing sequence (current lines 318-508) contains no more than two paragraphs that begin with an explicit timestamp formula ('At [time]'). FAIL if three or more timestamp-led paragraph openings remain.",
+      "chapter_id": "chapter_09",
+      "cycle": 2,
+      "evidence": "The same paragraph-entry construction repeats eight times: snapshots/cycle_02/chapters/chapter_09.md:318; snapshots/cycle_02/chapters/chapter_09.md:328; snapshots/cycle_02/chapters/chapter_09.md:386; snapshots/cycle_02/chapters/chapter_09.md:468; snapshots/cycle_02/chapters/chapter_09.md:470; snapshots/cycle_02/chapters/chapter_09.md:480; snapshots/cycle_02/chapters/chapter_09.md:496; snapshots/cycle_02/chapters/chapter_09.md:508.",
+      "finding_id": "C09-PROSE-001",
+      "problem": "Recurring formula ('At HH:MM, ...') exceeds the allowed repetition threshold and creates logbook cadence in the chapter's most volatile stretch, reducing line-level dynamism.",
+      "rewrite_direction": "Revise the late-section openings across snapshots/cycle_02/chapters/chapter_09.md:318-508 to vary sentence entry patterns. Keep only key anchor timestamps; move other time progression into embodied action beats, device cues, or environmental change.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "6aa59e3ff6847ea41a5c522ab015d96f342c0295a6299605bf17572cb8e957dc",
+  "must_fix_count": 1,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on prose and copyedit finish: diction precision, rhythm control, sentence-level clarity, grammar, line-level polish without flattening style, and explicit aesthetic-risk audit (sanitization is the primary risk \u2014 do not soften or euphemize; push toward creative risk and specificity).",
+    "key": "p3_prose_copyedit",
+    "label": "prose/copyedit fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "When choosing between reputationally safe abstraction and specific discomfort, choose specificity. Render addiction, sexuality, deceit, class shame, and grief at lived scale. In edge cases, preserve character truth and causal accountability over reader comfort or institutional decorum.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene demands bodily, moral, or economic specificity, euphemistic phrasing is treated as a failed draft and must be rewritten with concrete stakes and observable consequence.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the spoken default; full forms appear only for emphasis, ritual language, or character-specific formal posture",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate scene density and pressure modes: pair high-conflict chapters with quiet domestic or documentary chapters, vary dialogue-to-interiority ratios, and prevent identical chapter skeletons in consecutive sequence.",
+      "diction": "contemporary literary diction with class-aware, borough-specific concreteness; avoid prestige-neutral workshop language",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third centered on Marisol, with rare brief distance expansions for institutional scenes",
+      "narrative_tense": "past tense",
+      "rhythm_target": "alternating tensile compression and reflective extension; line-level cadence should carry emotional pressure, not just information",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

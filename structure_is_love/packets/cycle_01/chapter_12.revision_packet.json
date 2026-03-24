@@ -1,0 +1,141 @@
+{
+  "acceptance_targets": [
+    "[ch12_f001] PASS if the day named in snapshots/cycle_01/chapters/chapter_12.md:185 matches a court day listed in the revised schedule at snapshots/cycle_01/chapters/chapter_12.md:153, and no revised line depicts impact work on a day marked no-impact. FAIL otherwise.",
+    "[ch12_f002] PASS if the revised chapter names one unambiguous weekly rest day and all later references in chapter 12 support that same day without contradiction at the chapter boundary. FAIL if two competing rest-day signals remain.",
+    "[ch12_f003] PASS if, between the deletion beat and home-routine transition, the revised passage contains at least one explicit relational consequence (a stated boundary with pushback, a refusal, or a behavior change that costs someone something). FAIL if conflict is resolved by deletion plus summary alone.",
+    "[ch12_f004] PASS if each targeted exchange contains no more than one consecutive low-information reply and includes at least one line that changes leverage (new condition, challenge, or disclosure). FAIL if back-to-back low-information replies still remain in both exchanges.",
+    "[ch12_f005] PASS if neither construction appears more than twice in the revised chapter and each replacement beat communicates distinct subtext. FAIL if either formula still appears three or more times.",
+    "[ch12_f006] PASS if the revised span includes at least two explicit Anika-internal beats (one sensory and one evaluative) and no uninterrupted run of 10+ external-only paragraphs remains in that segment. FAIL otherwise.",
+    "[FBR-06] PASS if chapter 12 opens with non-domestic external action and contains only one concise statement of the boundary conflict before terms are set; FAIL if it still repeats the same kitchen-schedule negotiation pattern and duplicated argument beats."
+  ],
+  "chapter_id": "chapter_12",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if the day named in snapshots/cycle_01/chapters/chapter_12.md:185 matches a court day listed in the revised schedule at snapshots/cycle_01/chapters/chapter_12.md:153, and no revised line depicts impact work on a day marked no-impact. FAIL otherwise.",
+      "chapter_id": "chapter_12",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:153; snapshots/cycle_01/chapters/chapter_12.md:185",
+      "finding_id": "ch12_f001",
+      "problem": "The calendar establishes Wednesday as no-impact home mobility, then the next scene is explicitly set on Wednesday at Queens rec with impact court work. This is a direct continuity contradiction that damages protocol stakes.",
+      "rewrite_direction": "Reconcile the schedule block at snapshots/cycle_01/chapters/chapter_12.md:153 with the scene header at snapshots/cycle_01/chapters/chapter_12.md:185 and downstream drill/action lines at snapshots/cycle_01/chapters/chapter_12.md:205 and snapshots/cycle_01/chapters/chapter_12.md:249. Either make Wednesday a court day everywhere or move the scene to an already-listed court day.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if the revised chapter names one unambiguous weekly rest day and all later references in chapter 12 support that same day without contradiction at the chapter boundary. FAIL if two competing rest-day signals remain.",
+      "chapter_id": "chapter_12",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:85; snapshots/cycle_01/chapters/chapter_12.md:153; snapshots/cycle_01/chapters/chapter_12.md:329",
+      "finding_id": "ch12_f002",
+      "problem": "The chapter locks the weekly rest day to Sunday, but the handoff context to chapter 13 centers a Saturday first-rest-day opening. This creates a chapter-boundary causality break in the spine.",
+      "rewrite_direction": "Align rest-day declarations at snapshots/cycle_01/chapters/chapter_12.md:85 and snapshots/cycle_01/chapters/chapter_12.md:153 with the boundary handoff, and ensure the late-night calendar beat at snapshots/cycle_01/chapters/chapter_12.md:329 does not imply a conflicting rest-day logic.",
+      "severity": "HIGH",
+      "source": "booker",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if, between the deletion beat and home-routine transition, the revised passage contains at least one explicit relational consequence (a stated boundary with pushback, a refusal, or a behavior change that costs someone something). FAIL if conflict is resolved by deletion plus summary alone.",
+      "chapter_id": "chapter_12",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:285; snapshots/cycle_01/chapters/chapter_12.md:301; snapshots/cycle_01/chapters/chapter_12.md:309",
+      "finding_id": "ch12_f003",
+      "problem": "Sanitization drift: Ravi's covert conditioning attempt is neutralized in a single deletion beat, then the narrative moves into routine summary. The scene sidesteps the full relational consequence of coercive behavior instead of carrying tension forward in-scene.",
+      "rewrite_direction": "Rework the immediate aftermath around snapshots/cycle_01/chapters/chapter_12.md:301 and snapshots/cycle_01/chapters/chapter_12.md:309 to render concrete fallout (trust rupture, anger, defensive control behavior) before routine domestic beats, while preserving the unresolved night tension at snapshots/cycle_01/chapters/chapter_12.md:329.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if each targeted exchange contains no more than one consecutive low-information reply and includes at least one line that changes leverage (new condition, challenge, or disclosure). FAIL if back-to-back low-information replies still remain in both exchanges.",
+      "chapter_id": "chapter_12",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:171; snapshots/cycle_01/chapters/chapter_12.md:175; snapshots/cycle_01/chapters/chapter_12.md:177; snapshots/cycle_01/chapters/chapter_12.md:333; snapshots/cycle_01/chapters/chapter_12.md:335; snapshots/cycle_01/chapters/chapter_12.md:337",
+      "finding_id": "ch12_f004",
+      "problem": "Two exchanges lean on consecutive low-information replies (\"Still.\"/\"Okay.\" and \"No.\"/\"Me neither.\"), violating the style-bible cadence limit and flattening leverage at key pressure moments.",
+      "rewrite_direction": "Revise the dinner and midnight exchanges at snapshots/cycle_01/chapters/chapter_12.md:171, snapshots/cycle_01/chapters/chapter_12.md:177, snapshots/cycle_01/chapters/chapter_12.md:333, and snapshots/cycle_01/chapters/chapter_12.md:337 so at least one response in each pair carries new stake information or power shift rather than acknowledgment-only minimalism.",
+      "severity": "MEDIUM",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if neither construction appears more than twice in the revised chapter and each replacement beat communicates distinct subtext. FAIL if either formula still appears three or more times.",
+      "chapter_id": "chapter_12",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:69; snapshots/cycle_01/chapters/chapter_12.md:243; snapshots/cycle_01/chapters/chapter_12.md:295; snapshots/cycle_01/chapters/chapter_12.md:5; snapshots/cycle_01/chapters/chapter_12.md:143; snapshots/cycle_01/chapters/chapter_12.md:329",
+      "finding_id": "ch12_f005",
+      "problem": "Recurring constructions cross the three-use threshold (\"jaw + motion\" and repeated \"stared at\" phrasing), creating detectable autopilot tics that flatten prose variation.",
+      "rewrite_direction": "Replace at least two jaw-motion instances at snapshots/cycle_01/chapters/chapter_12.md:69, snapshots/cycle_01/chapters/chapter_12.md:243, and snapshots/cycle_01/chapters/chapter_12.md:295, and diversify at least one stare construction at snapshots/cycle_01/chapters/chapter_12.md:5, snapshots/cycle_01/chapters/chapter_12.md:143, or snapshots/cycle_01/chapters/chapter_12.md:329 with setting-specific physical beats.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if the revised span includes at least two explicit Anika-internal beats (one sensory and one evaluative) and no uninterrupted run of 10+ external-only paragraphs remains in that segment. FAIL otherwise.",
+      "chapter_id": "chapter_12",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:85; snapshots/cycle_01/chapters/chapter_12.md:107",
+      "finding_id": "ch12_f006",
+      "problem": "Interiority drought: the negotiation stretch runs 10+ consecutive paragraphs as external dialogue/action without focalized thought, sensation, memory, or self-assessment from Anika, thinning close-third depth.",
+      "rewrite_direction": "Add focalized interior beats inside the span anchored at snapshots/cycle_01/chapters/chapter_12.md:85 and snapshots/cycle_01/chapters/chapter_12.md:107, especially around the definition standoff near snapshots/cycle_01/chapters/chapter_12.md:103, while preserving scene tempo.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if chapter 12 opens with non-domestic external action and contains only one concise statement of the boundary conflict before terms are set; FAIL if it still repeats the same kitchen-schedule negotiation pattern and duplicated argument beats.",
+      "chapter_id": "chapter_12",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:4080",
+      "finding_id": "FBR-06",
+      "problem": "Chapter-texture variance drifts toward repetition: the middle-book sequence repeatedly opens with domestic sensory inventory and table-negotiation architecture, weakening pacing contrast demanded by the style bible.",
+      "rewrite_direction": "Restructure chapter 12 to break the recurring pulse by adding an external pressure scene before kitchen negotiation and compressing reiterative recap in snapshots/cycle_01/FINAL_NOVEL.md:4080-4137 and snapshots/cycle_01/FINAL_NOVEL.md:4208-4231. Use chapter 9 and chapter 13 openings only as contrast checks (snapshots/cycle_01/FINAL_NOVEL.md:3200 and snapshots/cycle_01/FINAL_NOVEL.md:4421) to avoid rebuilding the same scaffold.",
+      "severity": "MEDIUM",
+      "source": "booker_global",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "727281ce10fc2be0e90551cd6049c2cf5de44afd9c8e42cfd5ef54d9239c9ad5",
+  "must_fix_count": 7,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into uncomfortable specificity when it changes behavior: pain detail, debt arithmetic, manipulative care, and mixed motives. In edge cases, prefer the truest in-character action over protective narration, then carry the real consequence forward instead of immediately moralizing it away.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If coercion, grief, injury, or economic shame appears, language must stay specific and embodied; vague softening triggers mandatory rewrite.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High - contractions are the spoken default; uncontracted forms are reserved for formal authority, deliberate emphasis, or emotional freezing.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Vary scene count and dialogue density chapter to chapter: rotate match compression, slow inventory aftermath, institutional pressure scenes, and quiet domestic intervals so adjacent chapters do not share the same structural pulse.",
+      "diction": "Concrete contemporary diction with class-aware specificity; avoid abstract therapy language unless a character would actually use it.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third anchored in Anika for most chapters, with brief controlled slips toward Ravi in designated confrontation and aftermath chapters.",
+      "rhythm_target": "Alternate clipped athletic sequences with longer reflective cadences; sentence length should track exertion, shame, and release.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

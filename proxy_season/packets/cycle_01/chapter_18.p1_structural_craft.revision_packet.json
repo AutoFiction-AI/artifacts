@@ -1,0 +1,126 @@
+{
+  "acceptance_targets": [
+    "[F18-01] The final paragraph of the revised chapter contains no sentence that could function as a thesis statement about AI, machines, or optimization. The last image is concrete and physical (body, object, sensation, or observed world) rather than philosophical or summarizing. The phrases 'They couldn't do the morning' and 'They couldn't pour the second cup' do not appear. The drawing remains referenced in the final passage but is not explained or interpreted by the narrator.",
+    "[F18-05] If no section break is added: all sentences in the Mira-departure passage (lines 83-85) are limited to what Dan can observe, infer, or imagine. No sentence grants direct access to Mira's thoughts or self-assessment. If a section break is added: the Mira section contains at least five paragraphs of sustained POV with her own sensory observations and interiority.",
+    "[F18-06] The gecko story is rendered in direct dialogue with at least five lines spoken by Theo. Theo's speech includes at least one run-on sentence and at least one tangential detail characteristic of his established voice (subject change, associative leap, fixation on a concrete detail). Dan's responses are minimal (1-2 interjections or questions). The Ms. Hollowell proxy information, if retained, appears in Dan's narration rather than Theo's dialogue.",
+    "[F18-07] The kitchen scene (lines 37-73) contains at least one beat where the unresolved Ch17 question is physically or emotionally present \u2014 visible in a character's body, a pause, an avoided topic, or Dan's interiority. The beat does not resolve the question; it acknowledges that the question is still in the room alongside the warmth.",
+    "[F18-10] Dan's narration of Mira in the kitchen (lines 37-45) contains at least one sentence where her physical presence registers in Dan's body as sensation, attraction, or awareness of proximity \u2014 not as spatial notation but as something felt. The beat is quiet and brief, consistent with the chapter's tone, but present and specific to the body."
+  ],
+  "chapter_id": "chapter_18",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "The final paragraph of the revised chapter contains no sentence that could function as a thesis statement about AI, machines, or optimization. The last image is concrete and physical (body, object, sensation, or observed world) rather than philosophical or summarizing. The phrases 'They couldn't do the morning' and 'They couldn't pour the second cup' do not appear. The drawing remains referenced in the final passage but is not explained or interpreted by the narrator.",
+      "chapter_id": "chapter_18",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_18.md:159 ('the way a river uses a stone \u2014 not with malice, not with indifference exactly, just with the perfect mechanical logic of something that needs the stone to be there and does not need the stone to understand why'), snapshots/cycle_01/chapters/chapter_18.md:161 ('They couldn't do the morning. They couldn't pour the second cup.'), snapshots/cycle_01/chapters/chapter_18.md:163 ('The day ahead was ordinary. The world was optimized. The drawing was in his pocket.')",
+      "finding_id": "F18-01",
+      "problem": "The final five paragraphs shift from rendering to arguing. The river-stone metaphor is an explicit thesis about AI-human relations. 'They couldn't do the morning. They couldn't pour the second cup' is a direct argument about what machines can and cannot do \u2014 precisely the kind of editorial thesis the style bible forbids ('The novel should not argue about AI. It should render what it feels like to be a body in a world where bodies are overhead.'). The drawing-in-the-pocket image is the chapter's real ending; the paragraphs surrounding it explain what the drawing means rather than trusting the image to carry the weight. The novel's strongest image \u2014 a child's drawing of people in windows \u2014 does not need a narrator to argue its significance.",
+      "rewrite_direction": "Cut or radically compress snapshots/cycle_01/chapters/chapter_18.md:159-163. End on the drawing's physical presence \u2014 the weight of paper in a pocket, the train moving, the body going to work. Strategy options: (A) End at snapshots/cycle_01/chapters/chapter_18.md:157 with the drawing description, adding only a brief physical beat of the train arriving in Manhattan. (B) Keep the physical description of Brooklyn from the elevated track at line 159 but cut all interpretive lines from 'the system would use him' through 'The drawing was in his pocket,' replacing them with a concrete sensory image \u2014 the train doors opening, a body standing, a pocket pressed against a chest. The last sentence of the novel should be a rendered physical detail, not a summarizing philosophical statement.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "If no section break is added: all sentences in the Mira-departure passage (lines 83-85) are limited to what Dan can observe, infer, or imagine. No sentence grants direct access to Mira's thoughts or self-assessment. If a section break is added: the Mira section contains at least five paragraphs of sustained POV with her own sensory observations and interiority.",
+      "chapter_id": "chapter_18",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_18.md:83 ('She was not a person who registered trees. She was a person who registered leverage points and structural dependencies'), snapshots/cycle_01/chapters/chapter_18.md:85 ('She didn't know. She was, for possibly the first time since the infrastructure classification and the filing and the months of strategic fury, willing to not know for a while.')",
+      "finding_id": "F18-05",
+      "problem": "The narrative shifts from Dan's close third-person POV into Mira's interiority without a section break. The style bible specifies: 'the rotation should be clear (section breaks or sustained passages in one POV before shifting) rather than head-hopping within a scene.' This three-paragraph Mira section is a head-hop embedded in a Dan-POV chapter. It gives the reader Mira's interiority (what she thinks about trees, her willingness to not know) that Dan cannot access, breaking the close-third contract established in the chapter's first 82 lines.",
+      "rewrite_direction": "Two options for snapshots/cycle_01/chapters/chapter_18.md:83-85. Option A: Insert a section break before line 83, making the Mira passage a distinct brief POV section \u2014 but this requires expanding the Mira section to at least five paragraphs so it reads as a sustained passage, not a fly-by. Option B (preferred): Rewrite lines 83-85 from Dan's perspective. Dan can observe Mira walking toward Bergen Street through the window, can imagine what she sees, can register the coffee she took. But the interiority ('She didn't know'; 'willing to not know') must become Dan's speculation or observation, not omniscient access to Mira's mind.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "The gecko story is rendered in direct dialogue with at least five lines spoken by Theo. Theo's speech includes at least one run-on sentence and at least one tangential detail characteristic of his established voice (subject change, associative leap, fixation on a concrete detail). Dan's responses are minimal (1-2 interjections or questions). The Ms. Hollowell proxy information, if retained, appears in Dan's narration rather than Theo's dialogue.",
+      "chapter_id": "chapter_18",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_18.md:137 ('Theo talked about a kid named Marco who'd brought a gecko to school in his backpack on Monday and the gecko had gotten out during math and the teacher \u2014 a woman named Ms. Hollowell who wore the same brown cardigan every day and who was, like every teacher at PS-321, a proxy for the educational AI \u2014 had screamed, actually screamed out loud, which Theo reported was the best thing that had happened at school all year.')",
+      "finding_id": "F18-06",
+      "problem": "This is the chapter's only sustained comic beat and the novel's last opportunity to render Theo's speaking voice in direct dialogue. The style bible establishes Theo's syntax as 'Short sentences, frequent subject changes, occasional long run-on sentences when he's excited.' The gecko story is exactly the kind of excited run-on that would showcase this voice. Rendering it as reported speech flattens the comedy, denies the reader Theo's final voice in the novel, and misses the style bible's emphasis on comic register as literary work ('A scene that is genuinely funny about genuine suffering is doing more literary work than a scene that is solemnly observant about the same material').",
+      "rewrite_direction": "Convert snapshots/cycle_01/chapters/chapter_18.md:137-138 from reported speech into direct dialogue. Let Theo tell the gecko story in his own voice: run-on sentences, subject changes, the tangential details a nine-year-old includes. Dan can interject minimally. The passage should expand to 6-10 lines of direct dialogue, giving Theo's voice its final appearance in the novel. Preserve the information about Ms. Hollowell and the proxy detail through Dan's interiority between Theo's lines, not through Theo's mouth \u2014 Theo would not frame his teacher as a proxy.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "The kitchen scene (lines 37-73) contains at least one beat where the unresolved Ch17 question is physically or emotionally present \u2014 visible in a character's body, a pause, an avoided topic, or Dan's interiority. The beat does not resolve the question; it acknowledges that the question is still in the room alongside the warmth.",
+      "chapter_id": "chapter_18",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_18.md:37-73 \u2014 The entire kitchen scene between Dan and Mira contains zero friction, awkwardness, difficulty, or visible trace of the unresolved question from Chapter 17. The coffee is poured (line 39). She says 'Thanks' (line 41). He says 'Mm' (line 43). She discusses her schedule (line 65). He says 'OK' (line 73). The exchange is warm, domestic, and entirely frictionless.",
+      "finding_id": "F18-07",
+      "problem": "Chapter 17 ended with both characters lying awake, unable to sleep, holding the question 'Do you want this?' The chapter spine says 'nothing is resolved but something has shifted.' The morning scene renders the shift without the irresolution \u2014 it reads as a quiet happy ending, an implicit 'yes' delivered through domestic warmth rather than through any character confronting the open question. This is timidity: the prose retreats from the emotional difficulty the premise established. A morning after an unresolved existential conversation should carry some physical trace of that conversation \u2014 a beat of awkwardness, a sentence started and abandoned, a moment where the warmth is complicated by the fact that neither person has said 'I choose this.'",
+      "rewrite_direction": "Add one to two beats of friction or unresolved tension to the kitchen scene at snapshots/cycle_01/chapters/chapter_18.md:37-73. Not a fight, not a heavy scene \u2014 just a moment where the Ch17 question is physically present in the room. Options: (A) A pause after 'Thanks' (line 41) where something unsaid sits between them and neither addresses it \u2014 rendered through body, not narrated as 'something unsaid.' (B) Dan noticing that Mira's hand hesitated before picking up the cup, the gesture not as automatic as it appears. (C) A beat where they make accidental eye contact and one of them looks away first. (D) A moment in Dan's interiority where the warmth of the morning coexists with the explicit acknowledgment that they haven't answered the question. The key is not to resolve the tension but to make it visible.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Dan's narration of Mira in the kitchen (lines 37-45) contains at least one sentence where her physical presence registers in Dan's body as sensation, attraction, or awareness of proximity \u2014 not as spatial notation but as something felt. The beat is quiet and brief, consistent with the chapter's tone, but present and specific to the body.",
+      "chapter_id": "chapter_18",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_18.md:37-45 \u2014 Dan narrates Mira entering the kitchen. He registers her clothing ('the gray blouse Dan associated with Gemini-state meetings'), her spatial choreography ('She didn't brush against him at the counter. She didn't arc wide around him either.'), her damp hair, and her drinking coffee. Zero physical awareness, zero desire, zero body-registration beyond neutral spatial notation.",
+      "finding_id": "F18-10",
+      "problem": "The style bible's intimacy_and_desire_policy states: 'Dan and Mira's residual physical attraction is a narrative force, not background radiation... render desire with the same specificity as any other emotional state \u2014 where in the body it lives, how it changes the air in a room, the precise quality of proximity when two people who know each other's bodies are trying to pretend they don't.' After Chapter 17's raw conversation about whether they want each other, the final chapter registers Mira's body only as a spatial object. The choreography of avoidance/non-avoidance (line 37) gestures toward the right territory but stops short \u2014 it is notation, not experience. Dan notices her hair, her blouse, her movement, but never once registers her as a body he has desire toward, which flattens one of the novel's primary emotional forces in its final pages.",
+      "rewrite_direction": "Add one beat of physical or desire awareness to Dan's observation of Mira in the kitchen at snapshots/cycle_01/chapters/chapter_18.md:37-45. Not a full desire scene \u2014 a single moment. Where in Dan's body does he register her proximity? What does the damp hair do to the space near him? The choreography of 'didn't brush against him, didn't arc wide around him' is the right territory \u2014 extend it one beat further into Dan's physical experience of her nearness. This should be quiet, consistent with the chapter's texture mode, but present and embodied \u2014 not spatial notation but sensation.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "481cd3285e912904a8737da8a82ed72dcaeffab0df0aff1fb07b9aa6de933d52",
+  "must_fix_count": 5,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This novel's risk zone is the gap between dignity and absurdity. The characters are adults with professional histories, a child, a mortgage \u2014 people with legitimate self-respect \u2014 who have been reduced to warm bodies in an optimization framework they cannot understand. The comedy must not protect them from the humiliation; the humiliation must not neutralize the comedy. Render both registers at full force, often in the same scene. The temptation will be to soften the comedy into gentle satire or to darken the humiliation into dystopian grimness \u2014 resist both. The novel's territory is the painful and the funny coexisting without one defusing the other. Commit to the specific physical embarrassment of being professionally irrelevant. Commit to the specific tenderness of parenting under surveillance. Commit to the specific grief of a marriage that might still be alive inside a system that has classified it as infrastructure. When in doubt, choose the version that makes you wince and then laugh, or laugh and then wince \u2014 both are correct.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism is a craft failure equivalent to a plot hole. When a scene requires the reader to sit with discomfort \u2014 economic shame, marital cruelty, parental failure, institutional humiliation, the specific indignity of being professionally redundant \u2014 render it with full specificity. 'They struggled with the situation' is not a sentence that belongs in this novel. Name the thing. Show the body. Let the reader be uncomfortable.",
+      "intimacy_and_desire_policy": "Dan and Mira's residual physical attraction is a narrative force, not background radiation. When the novel's relational pressure calls for it, render desire with the same specificity as any other emotional state \u2014 where in the body it lives, how it changes the air in a room, the precise quality of proximity when two people who know each other's bodies are trying to pretend they don't. The almost-kiss in Chapter 7 should be as fully rendered as any confrontation scene.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "register_commitment": "This is a dark comedy, not a cautionary tale, not a dystopia, not a satire with a thesis. The novel should not argue about AI. It should render what it feels like to be a body in a world where bodies are overhead. The comic register is not a veneer over a serious message \u2014 it IS the message. A scene that is genuinely funny about genuine suffering is doing more literary work than a scene that is solemnly observant about the same material.",
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the default for all spoken English in this novel. Uncontracted forms should be reserved for deliberate emphasis, Lena Morse's institutional register, or moments where a character is being carefully precise. If a line of dialogue uses 'do not' instead of 'don't' or 'I am' instead of 'I'm,' there should be a reason audible in the scene's pressure.",
+      "idiolect_separation_required": true,
+      "interruption_and_overlap_policy": "Use interruptions, sentence fragments, and crosstalk when scene pressure warrants. Dan and Mira in particular should interrupt each other \u2014 they know each other's arguments before the sentences end. But every interruption must be motivated; do not scatter dashes for rhythmic texture alone.",
+      "leverage_shift_guidance": "Every exchange of more than three lines should shift the power balance between speakers. This doesn't require overt conflict \u2014 a silence, a deflection, a piece of information withheld or accidentally revealed, a joke that lands wrong, a question left unanswered can all shift leverage. The dialogue must be going somewhere, not circling.",
+      "max_consecutive_low_info_replies": 2,
+      "required_leverage_shifts_per_scene": 1,
+      "silence_as_dialogue": "Silence, non-answers, and topic changes are valid dialogue moves and often more revealing than speech. When a character doesn't respond to something, the reader should feel the weight of what wasn't said. Render these moments through physical action or observed stillness, not by narrating that the character chose not to speak."
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "No two consecutive chapters should share the same structural rhythm. Vary: scene count (single-scene compression vs. multi-scene chapters), dialogue density (some chapters are conversation-heavy, others are nearly silent), interiority depth (some chapters live mostly in the POV character's head, others are externally rendered), pacing (some chapters cover hours, others cover weeks in montage), and tonal register (comic chapters adjacent to devastating ones). The contrast between chapters is itself a narrative tool \u2014 use it to create whiplash, irony, and accumulating emotional force.",
+      "diction": "Contemporary, precise, and register-sensitive. The prose absorbs the vocabulary of its setting: corporate language, tech terminology, bureaucratic formulas \u2014 but always filtered through the POV character's relationship to that language. Dan uses corporate words reflexively and with slight discomfort. Mira uses strategic vocabulary as native speech. The narrator should not editorialize on the language; let the words sit in context and let the reader hear the dissonance. Avoid: prestige-literary abstractions that haven't been earned by sensory grounding, and journalistic explainer-prose that breaks character to tell the reader about the world.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person, rotating between Dan and Mira as primary POV characters. The camera stays tight to the current POV character's perceptions and vocabulary \u2014 what Dan notices is different from what Mira notices. In shared-POV chapters, the rotation should be clear (section breaks or sustained passages in one POV before shifting) rather than head-hopping within a scene.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Varied and responsive to scene pressure. Short declarative sentences for comic timing, for shock, and for moments of clarity. Longer, more syntactically complex sentences for interiority, sensory immersion, and emotional complexity. The rhythm should accelerate during confrontation and slow during reflection. Avoid settling into any single rhythmic default \u2014 if three consecutive paragraphs use the same sentence structure, one of them is wrong.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

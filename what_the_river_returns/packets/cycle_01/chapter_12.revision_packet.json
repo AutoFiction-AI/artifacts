@@ -1,0 +1,155 @@
+{
+  "acceptance_targets": [
+    "[CH12-F001] Pass if revised chapter text and canon agree on Mara's chapter-12 availability: if continuity remains unchanged, revised lines 95-215 contain no physical-presence cues for Mara; fail if Mara remains physically present without canon alignment.",
+    "[CH12-F002] Pass if revised lines 185-203 include all three observable elements: a named vulnerable person or role, a specific attack vector/location, and a concrete immediate consequence if prevention fails; fail if risk remains abstract procedural language only.",
+    "[CH12-F003] Pass if the revised hospital scene leaves at least one explicit unresolved condition active after line 83 (e.g., a boundary Lena must honor); fail if the exchange resolves to reassurance without a lingering constraint.",
+    "[CH12-F004] Pass if, with tags removed from revised lines 121-136 and 183-195, at least 5 of 7 sampled lines remain attributable by register cues alone; fail if lines remain largely interchangeable.",
+    "[CH12-F005] Pass if revised versions of lines 51, 75, and 129 each contain explicit subjects and finite verbs; fail if any remains a standalone verbless fragment used as narration emphasis.",
+    "[CH12-F006] Pass if revised lines 21-93 contain no more than two \"like\" similes and replacements add concrete sensory or kinetic detail; fail if the same simile template still appears three or more times in that span.",
+    "[CH12-F007] Pass if revised lines 153-174 show at least two independent supports for the Thomas-target inference before line 177 is written; fail if the pivot still depends on a single unverified anecdotal source.",
+    "[F002] Pass if the revised chapter 12 records-room sequence no longer stages Mara as physically present in that room and all her contributions are remote or deferred; fail if she still appears on-site in snapshots/cycle_01/FINAL_NOVEL.md:4073-4195."
+  ],
+  "chapter_id": "chapter_12",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if revised chapter text and canon agree on Mara's chapter-12 availability: if continuity remains unchanged, revised lines 95-215 contain no physical-presence cues for Mara; fail if Mara remains physically present without canon alignment.",
+      "chapter_id": "chapter_12",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:95; snapshots/cycle_01/chapters/chapter_12.md:97; snapshots/cycle_01/chapters/chapter_12.md:107; snapshots/cycle_01/chapters/chapter_12.md:167",
+      "finding_id": "CH12-F001",
+      "problem": "Continuity contradiction: Mara is physically on-page and materially active in chapter 12, but the continuity sheet's canonical availability excludes her from this chapter. This breaks cross-chapter state reliability.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_12.md:93-217, resolve the contradiction one way: (A) keep continuity as canonical and rewrite Mara to off-page participation only (voice/text/file handoff) by removing physical staging and actions at snapshots/cycle_01/chapters/chapter_12.md:95-96, 167, 171, 205-215; or (B) if Mara must remain physically present, align canon by updating continuity in the corresponding chapter-state source before acceptance.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if revised lines 185-203 include all three observable elements: a named vulnerable person or role, a specific attack vector/location, and a concrete immediate consequence if prevention fails; fail if risk remains abstract procedural language only.",
+      "chapter_id": "chapter_12",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:173; snapshots/cycle_01/chapters/chapter_12.md:185; snapshots/cycle_01/chapters/chapter_12.md:191; snapshots/cycle_01/chapters/chapter_12.md:219",
+      "finding_id": "CH12-F002",
+      "problem": "Sanitization drift at the threat pivot: once imminent violence is identified, the prose retreats into abstract risk language (\"exposure window,\" \"violence,\" \"optics\") instead of rendering concrete human consequence and attack reality.",
+      "rewrite_direction": "Revise snapshots/cycle_01/chapters/chapter_12.md:173-203 and 219-221 to stage one concrete threat scenario (specific vulnerable body, path, and likely interruption point) and one concrete institutional failure consequence, while preserving legal uncertainty.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if the revised hospital scene leaves at least one explicit unresolved condition active after line 83 (e.g., a boundary Lena must honor); fail if the exchange resolves to reassurance without a lingering constraint.",
+      "chapter_id": "chapter_12",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:21; snapshots/cycle_01/chapters/chapter_12.md:25; snapshots/cycle_01/chapters/chapter_12.md:27; snapshots/cycle_01/chapters/chapter_12.md:37; snapshots/cycle_01/chapters/chapter_12.md:81",
+      "finding_id": "CH12-F003",
+      "problem": "Timidity in emotional consequence: Beau-Lena rupture is raised sharply, then quickly cushioned by humor and reassurance, reducing the felt operational and relational cost of chapter-11 injury fallout.",
+      "rewrite_direction": "In snapshots/cycle_01/chapters/chapter_12.md:21-39 and 81-83, insert one additional unresolved consequence beat (explicit trust condition, operational boundary, or cost) before reconciliation lands.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if, with tags removed from revised lines 121-136 and 183-195, at least 5 of 7 sampled lines remain attributable by register cues alone; fail if lines remain largely interchangeable.",
+      "chapter_id": "chapter_12",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:121; snapshots/cycle_01/chapters/chapter_12.md:125; snapshots/cycle_01/chapters/chapter_12.md:133; snapshots/cycle_01/chapters/chapter_12.md:135; snapshots/cycle_01/chapters/chapter_12.md:183; snapshots/cycle_01/chapters/chapter_12.md:193",
+      "finding_id": "CH12-F004",
+      "problem": "Records-room deduction dialogue compresses characters into similar clipped procedural rhythm, softening idiolect separation among Lena, Mara, and Beau.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_12.md:121-136 and 183-195, revoice lines so Beau carries workman/tactile phrasing with stress-humor pivots, Mara uses attribution/challenge framing, and Lena retains procedural-to-decision cadence.",
+      "severity": "MEDIUM",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if revised versions of lines 51, 75, and 129 each contain explicit subjects and finite verbs; fail if any remains a standalone verbless fragment used as narration emphasis.",
+      "chapter_id": "chapter_12",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:51; snapshots/cycle_01/chapters/chapter_12.md:75; snapshots/cycle_01/chapters/chapter_12.md:129",
+      "finding_id": "CH12-F005",
+      "problem": "Narration uses elliptical clipping in emphasis beats (verbless fragments), conflicting with constitution guidance that forbids clipped function-word omission in narration.",
+      "rewrite_direction": "Rewrite snapshots/cycle_01/chapters/chapter_12.md:51, 75, and 129 into grammatically complete sentences with explicit subject-verb structure while preserving pressure and rhythm.",
+      "severity": "HIGH",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if revised lines 21-93 contain no more than two \"like\" similes and replacements add concrete sensory or kinetic detail; fail if the same simile template still appears three or more times in that span.",
+      "chapter_id": "chapter_12",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:21; snapshots/cycle_01/chapters/chapter_12.md:43; snapshots/cycle_01/chapters/chapter_12.md:77; snapshots/cycle_01/chapters/chapter_12.md:93",
+      "finding_id": "CH12-F006",
+      "problem": "Recurring simile scaffold (\"... like ...\") appears in dense clusters and starts to read as a default sentence engine rather than deliberate image selection.",
+      "rewrite_direction": "In snapshots/cycle_01/chapters/chapter_12.md:21, 43, 77, and 93, replace at least three simile constructions with direct sensory/action phrasing that carries equivalent pressure without the same template.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if revised lines 153-174 show at least two independent supports for the Thomas-target inference before line 177 is written; fail if the pivot still depends on a single unverified anecdotal source.",
+      "chapter_id": "chapter_12",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:153; snapshots/cycle_01/chapters/chapter_12.md:159; snapshots/cycle_01/chapters/chapter_12.md:163; snapshots/cycle_01/chapters/chapter_12.md:173",
+      "finding_id": "CH12-F007",
+      "problem": "Causal convenience: Ida's call delivers high-value motive/timing intelligence exactly at the strategic pivot, making the reveal feel writer-timed rather than investigation-earned.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_12.md:153-174, add one corroboration step (existing note, call-log trace, or independent record check) between Ida's anecdote and Lena's target-window conclusion.",
+      "severity": "MEDIUM",
+      "source": "booker",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if the revised chapter 12 records-room sequence no longer stages Mara as physically present in that room and all her contributions are remote or deferred; fail if she still appears on-site in snapshots/cycle_01/FINAL_NOVEL.md:4073-4195.",
+      "chapter_id": "chapter_12",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:4075",
+      "finding_id": "F002",
+      "problem": "Continuity-state mismatch: Mara is physically on-page and co-working the records-room reconstruction in chapter 12, but the continuity canon marks her on-page availability as chapters 3, 5-10, and 14-18.",
+      "rewrite_direction": "Revise Mara's physical presence beats in snapshots/cycle_01/FINAL_NOVEL.md:4075, snapshots/cycle_01/FINAL_NOVEL.md:4081, snapshots/cycle_01/FINAL_NOVEL.md:4087, snapshots/cycle_01/FINAL_NOVEL.md:4103, and snapshots/cycle_01/FINAL_NOVEL.md:4167 so chapter 12 functions without her in-room presence (phone/sent materials/async input are acceptable). Keep the discovery logic but make the on-page actor set continuity-compliant for this chapter.",
+      "severity": "HIGH",
+      "source": "booker_global",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "50c16bc70224df2dc9509355bf48b3d2d7ac37c678423fa98d18ff350291ba11",
+  "must_fix_count": 8,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "When edge cases arise, choose the version that preserves uncomfortable specificity and character accountability; do not replace difficult scenes with procedural summary, and do not mute class, race, sexuality, or institutional cruelty when those forces are actively shaping choices.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene with violence, racism, grief, or moral compromise is rendered in abstract or polite shorthand, revise to restore specific bodily, social, and material consequence before accepting the draft.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the baseline in contemporary Mississippi speech; uncontracted forms are reserved for formality, emphasis, or social performance.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "rotate structural textures across chapters: procedural surge, quiet domestic interval, document-driven slow burn, dread preparation, aftermath inventory, and information-turn chapters; avoid repeating scene count plus dialogue density pattern in adjacent chapters.",
+      "diction": "literary but grounded; precise legal and forensic terms when needed, balanced by lived vernacular and local material detail.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third person anchored primarily to Lena, with brief controlled expansions only when factual clarity requires it.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "alternate compressed procedural sentences with longer sensory-emotional lines so pressure and reflection keep rebalancing.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

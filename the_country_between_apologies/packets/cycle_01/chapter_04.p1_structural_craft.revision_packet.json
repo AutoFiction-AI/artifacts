@@ -1,0 +1,95 @@
+{
+  "acceptance_targets": [
+    "[CH04-F001] Pass if, between snapshots/cycle_01/chapters/chapter_04.md:84 and snapshots/cycle_01/chapters/chapter_04.md:257, the revised scene contains at least two distinct leverage shifts that introduce new information or constraints rather than restating 'give me a number'; fail if the conflict remains a repeated demand/deflection loop.",
+    "[CH04-F002] Pass if a reader can start from the prior carry-forward cash state and, using revised snapshots/cycle_01/chapters/chapter_04.md:17-24 only, reproduce current checking/cash amounts via explicit arithmetic with no unexplained jump greater than $100; fail otherwise.",
+    "[CH04-F003] Pass if revised snapshots/cycle_01/chapters/chapter_04.md:275-315 includes at least one immediate concrete consequence of Eli's non-transfer affecting another character and depicts Eli's response through specific action/sensation rather than explanatory summary; fail if the climax remains mostly procedural abstraction."
+  ],
+  "chapter_id": "chapter_04",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if, between snapshots/cycle_01/chapters/chapter_04.md:84 and snapshots/cycle_01/chapters/chapter_04.md:257, the revised scene contains at least two distinct leverage shifts that introduce new information or constraints rather than restating 'give me a number'; fail if the conflict remains a repeated demand/deflection loop.",
+      "chapter_id": "chapter_04",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_04.md:84; snapshots/cycle_01/chapters/chapter_04.md:122; snapshots/cycle_01/chapters/chapter_04.md:245",
+      "finding_id": "CH04-F001",
+      "problem": "The chapter repeats the same negotiation beat three times (Nora asks for an amount, Eli evades) before adding materially new pressure, so the middle stretch spins tension instead of escalating it.",
+      "rewrite_direction": "Tighten and differentiate the confrontation loop at snapshots/cycle_01/chapters/chapter_04.md:84-104, snapshots/cycle_01/chapters/chapter_04.md:188-223, and snapshots/cycle_01/chapters/chapter_04.md:241-255. Keep only one early amount-demand exchange in full, then replace one later repetition with a new leverage event (for example: failed transfer execution, a bursar policy barrier, or a concrete cost that changes Eli's options).",
+      "severity": "MEDIUM",
+      "source": "booker",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if a reader can start from the prior carry-forward cash state and, using revised snapshots/cycle_01/chapters/chapter_04.md:17-24 only, reproduce current checking/cash amounts via explicit arithmetic with no unexplained jump greater than $100; fail otherwise.",
+      "chapter_id": "chapter_04",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_04.md:19; snapshots/cycle_01/chapters/chapter_04.md:20; snapshots/cycle_01/chapters/chapter_04.md:24",
+      "finding_id": "CH04-F002",
+      "problem": "Financial continuity breaks at chapter open: the listed balances imply materially more available cash than the carry-forward state, with no on-page inflow accounting. This undercuts the chapter's central stakes math.",
+      "rewrite_direction": "Reconcile the ledger at snapshots/cycle_01/chapters/chapter_04.md:17-24. Either adjust the balances to match carry-forward cash state or add explicit, source-labeled inflow/outflow steps in-scene that bridge prior totals to current totals before Nora's deadline sequence starts.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if revised snapshots/cycle_01/chapters/chapter_04.md:275-315 includes at least one immediate concrete consequence of Eli's non-transfer affecting another character and depicts Eli's response through specific action/sensation rather than explanatory summary; fail if the climax remains mostly procedural abstraction.",
+      "chapter_id": "chapter_04",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_04.md:275; snapshots/cycle_01/chapters/chapter_04.md:289; snapshots/cycle_01/chapters/chapter_04.md:295; snapshots/cycle_01/chapters/chapter_04.md:297",
+      "finding_id": "CH04-F003",
+      "problem": "Sanitization/timidity at the decision apex: once Eli chooses non-transfer, the prose shifts to abstract managerial framing ('least specific version,' 'procedural acknowledgment,' 'logic held together') instead of staying in embodied consequence for Nora/June and Eli's immediate physical-emotional reality.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_04.md:275-299 and snapshots/cycle_01/chapters/chapter_04.md:307-315, replace abstract evaluative summary with concrete downstream consequence rendered on-page (not forecast) and embodied response. Keep the discomfort active: show what his choice immediately costs someone, and show his body registering it in the same scene.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "4075bb629fc65953efeaaedc230ed72065c4df609eeec6b7c5639f894764806d",
+  "must_fix_count": 3,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into morally mixed behavior, bodily consequence, and economic detail when they are causally active. In edge cases, choose the more concrete and uncomfortable rendering unless it violates factual continuity; if two renderings are equally plausible, prefer the one that increases character accountability rather than reader reassurance.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene contains pain, sex, addiction, debt panic, or humiliation, abstract phrasing is treated as a failed draft and must be rewritten with embodied specificity.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the spoken default; uncontracted forms are reserved for emphasis, legal precision, or deliberate emotional distance.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate chapter architectures across the book: confrontation chapters, document-information turns, labor-process chapters, transit interiority chapters, and quiet relational chapters. Consecutive chapters must differ in scene density or dialogue-to-interiority ratio.",
+      "diction": "Contemporary American literary realism: precise, unsentimental, image-aware, and concrete under stress.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third-person anchored to Eli, with no unmarked POV drift.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Braided cadence: reflective medium-length sentences interrupted by blunt short lines at impact moments.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

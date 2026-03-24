@@ -1,0 +1,60 @@
+{
+  "chapter_id": "chapter_08",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH08-BOOKER-001",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_02/chapters/chapter_08.md:239; snapshots/cycle_02/chapters/chapter_08.md:253; snapshots/cycle_02/chapters/chapter_08.md:269; snapshots/cycle_02/chapters/chapter_08.md:275",
+      "problem": "The chapter's decisive turn (Ina choosing embezzlement) stays in transaction workflow mode for too long, so tension plateaus where the moral crossing should intensify.",
+      "rewrite_direction": "Revise the embezzlement sequence around snapshots/cycle_02/chapters/chapter_08.md:239, snapshots/cycle_02/chapters/chapter_08.md:253, snapshots/cycle_02/chapters/chapter_08.md:269, and snapshots/cycle_02/chapters/chapter_08.md:275 to introduce at least two active obstacles that force tactical change before funds clear (for example, a live compliance interruption plus a time-pressure update from the clinic). Keep the financial mechanics, but each beat must change leverage.",
+      "acceptance_test": "PASS if the revised sequence in snapshots/cycle_02/chapters/chapter_08.md:239-275 shows at least two explicit leverage shifts (new obstacle -> altered tactic) before success; FAIL if it remains mostly linear form-entry execution."
+    },
+    {
+      "finding_id": "CH08-CRAFT-001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_02/chapters/chapter_08.md:339; snapshots/cycle_02/chapters/chapter_08.md:343; snapshots/cycle_02/chapters/chapter_08.md:347; snapshots/cycle_02/chapters/chapter_08.md:353",
+      "problem": "Sanitization drift in aftermath form: once the crime and exposure risk crystallize, the prose retreats into ledger abstraction and summary. The critical consequence beat is reported, not inhabited, which blunts embodied cost.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_08.md:337-355, keep the ledger record but add immediate embodied aftermath before or between the log entries: physiological stress response, concrete fear-management behavior, and one in-person/world consequence cue that is not just a digital notice. Preserve Ina's unsentimental voice, but do not let bookkeeping replace scene presence.",
+      "acceptance_test": "PASS if snapshots/cycle_02/chapters/chapter_08.md:337-355 includes at least one full paragraph of present-moment bodily/psychological consequence and one external consequence cue prior to chapter close; FAIL if the section remains primarily a retrospective log of events."
+    },
+    {
+      "finding_id": "CH08-PROSE-001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_02/chapters/chapter_08.md:107; snapshots/cycle_02/chapters/chapter_08.md:155; snapshots/cycle_02/chapters/chapter_08.md:339",
+      "problem": "A repeated refusal construction (\"She did not ...\") appears more than twice at key beats, turning a once-effective cadence choice into a detectable tic.",
+      "rewrite_direction": "Vary the sentence architecture at snapshots/cycle_02/chapters/chapter_08.md:107, snapshots/cycle_02/chapters/chapter_08.md:155, and snapshots/cycle_02/chapters/chapter_08.md:339 so the three refusal moments use distinct rhetorical shapes (for example: one negative declarative, one physical action beat, one direct affirmative statement).",
+      "acceptance_test": "PASS if no more than two sentence-openings in the revised chapter use the exact \"She did not ...\" construction and all three cited beats read as syntactically distinct; FAIL if the same refusal template remains in all three locations."
+    },
+    {
+      "finding_id": "CH08-PROSE-002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_02/chapters/chapter_08.md:247; snapshots/cycle_02/chapters/chapter_08.md:249; snapshots/cycle_02/chapters/chapter_08.md:253; snapshots/cycle_02/chapters/chapter_08.md:257; snapshots/cycle_02/chapters/chapter_08.md:275",
+      "problem": "The chapter runs a 10+ paragraph stretch with no focal interiority during the transfer mechanics, making the scene read like an operations transcript instead of close-third fiction.",
+      "rewrite_direction": "In snapshots/cycle_02/chapters/chapter_08.md:247-275, insert Ina's internal experience at decision pivots (Exception 44B warning, split decision, re-authorization). Keep pacing tight, but break the exterior-only run with thought/sensation/self-assessment tied to each pivot.",
+      "acceptance_test": "PASS if the revised span at snapshots/cycle_02/chapters/chapter_08.md:247-275 contains at least three distinct interior beats tied to the three decision pivots and no run longer than six consecutive paragraphs without focal interiority; FAIL otherwise."
+    }
+  ],
+  "summary": "Causal continuity, timeline facts, and character-voice calibration are mostly intact (including contraction discipline and idiolect separation), but the chapter fails review due to tension flattening in the embezzlement turn, HIGH-severity sanitization-by-abstraction in late aftermath, a repeated prose tic, and a prolonged interiority drought in a high-stakes sequence.",
+  "coverage_scene_ids": [
+    "shadow_ledger_setup",
+    "jieun_rider_handoff",
+    "kwon_restitution_confrontation",
+    "fund_diversion_execution",
+    "dialysis_window_payment",
+    "compliance_notice_aftermath"
+  ]
+}

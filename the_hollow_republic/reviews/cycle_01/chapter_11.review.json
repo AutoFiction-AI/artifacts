@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_11",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch11_booker_001",
+      "source": "booker",
+      "severity": "HIGH",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:27, snapshots/cycle_01/chapters/chapter_11.md:103, snapshots/cycle_01/chapters/chapter_11.md:227, snapshots/cycle_01/chapters/chapter_11.md:253, snapshots/cycle_01/chapters/chapter_11.md:303",
+      "problem": "The chapter's decisive turn depends on Ferrand abruptly mishandling the satchel the text has already established he guards instinctively. He protects it in the street and through Nadir's arrest aftermath, then leaves gelignite and a pistol unattended long enough for Abel to steal them. That makes the end-of-chapter countdown feel arranged by authorial convenience rather than earned causality.",
+      "rewrite_direction": "Rebuild the satchel handoff around snapshots/cycle_01/chapters/chapter_11.md:227, snapshots/cycle_01/chapters/chapter_11.md:249, snapshots/cycle_01/chapters/chapter_11.md:253, snapshots/cycle_01/chapters/chapter_11.md:299, and snapshots/cycle_01/chapters/chapter_11.md:303 so Abel's access is shown and motivated. Viable fixes include forcing Ferrand to surrender the bag under room pressure, showing Abel physically lifting it during a specific distraction, or giving Ferrand an immediate need that credibly overrides the possessiveness established earlier.",
+      "acceptance_test": "PASS if the revised sequence at snapshots/cycle_01/chapters/chapter_11.md:227, snapshots/cycle_01/chapters/chapter_11.md:253, and snapshots/cycle_01/chapters/chapter_11.md:303 makes Ferrand's loss of physical control over the satchel visible on the page before Abel disappears; FAIL if readers still have to infer that Ferrand simply forgot the one object the chapter keeps showing him protect."
+    },
+    {
+      "finding_id": "ch11_craft_001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:145",
+      "problem": "The recap beat breaks the constitution's anti-clipped-narration rule. \"Elise did. The lane. The men closing in. The carriage. The papers in the gutter.\" reads like note-form shorthand at the exact point the scene should stay embodied and precise.",
+      "rewrite_direction": "Rewrite the report beat at snapshots/cycle_01/chapters/chapter_11.md:145 into grammatically complete compressed sentences that still preserve speed and sequence. Keep the same arrest facts, but render them as lived narration rather than article-stripped fragments.",
+      "acceptance_test": "PASS if the revised passage at snapshots/cycle_01/chapters/chapter_11.md:145 still conveys the lane, closing officers, waiting carriage, and papers in the gutter using fully grammatical sentences; FAIL if the passage still relies on fragment chains like \"The lane. The men closing in.\""
+    },
+    {
+      "finding_id": "ch11_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:195, snapshots/cycle_01/chapters/chapter_11.md:287",
+      "problem": "Two stress beats read like near-direct import from the style bible's calibration language instead of fresh scene-native prose. \"Plainer. Hurt made him simpler, not softer\" and \"flat, over-clean\" echo the stored stress-tell vocabulary so closely that the narration starts sounding annotated.",
+      "rewrite_direction": "Recast the stress beats at snapshots/cycle_01/chapters/chapter_11.md:195 and snapshots/cycle_01/chapters/chapter_11.md:287 through observable action, pause, cough, diction, or bodily sensation instead of abstract labels that mirror the style-bible descriptors.",
+      "acceptance_test": "PASS if the revised lines at snapshots/cycle_01/chapters/chapter_11.md:195 and snapshots/cycle_01/chapters/chapter_11.md:287 make Lucien's hurt and Elise's stress legible through scene behavior or spoken texture without diagnostic phrasing like \"plainer,\" \"simpler,\" or \"flat, over-clean\"; FAIL if those beats still read like voice-profile notes pasted into narration."
+    },
+    {
+      "finding_id": "ch11_prose_002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:119, snapshots/cycle_01/chapters/chapter_11.md:241, snapshots/cycle_01/chapters/chapter_11.md:339",
+      "problem": "The chapter repeats the same beat construction three times: \"for one [modifier] second.\" At this frequency it stops reading as choice and starts reading as a reusable prose hinge, flattening moments that should each have their own pressure signature.",
+      "rewrite_direction": "Vary at least two of the beats at snapshots/cycle_01/chapters/chapter_11.md:119, snapshots/cycle_01/chapters/chapter_11.md:241, and snapshots/cycle_01/chapters/chapter_11.md:339 so those pauses are phrased through distinct image, syntax, or bodily response rather than the same temporal formula.",
+      "acceptance_test": "PASS if, after revision, no more than two of snapshots/cycle_01/chapters/chapter_11.md:119, snapshots/cycle_01/chapters/chapter_11.md:241, and snapshots/cycle_01/chapters/chapter_11.md:339 use the \"for one [modifier] second\" construction; FAIL if all three instances remain."
+    }
+  ],
+  "summary": "The chapter lands Nadir's public humiliation, Ferrand's opportunistic rhetoric, and the quarry-room argument with strong pressure and distinct voices, so dialogue clears the bar. It still fails overall because the Abel countdown turns on an under-motivated satchel lapse, one recap beat violates the constitution's anti-clipping rule, and the prose shows both style-sheet leakage and repeated formula phrasing."
+}

@@ -1,0 +1,72 @@
+{
+  "chapter_id": "chapter_08",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH8-BOOKER-001",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "The chapter sets up imminent consequence but withholds enacted fallout: 'If it goes bad tonight...' at snapshots/cycle_01/chapters/chapter_08.md:333 and then cuts to summary at snapshots/cycle_01/chapters/chapter_08.md:349.",
+      "problem": "Causal payoff is deferred at the highest-pressure beat: Tom's arrival is reported, not dramatized, so the chapter ends in preparation rather than consequence.",
+      "rewrite_direction": "Revise the ending block starting at snapshots/cycle_01/chapters/chapter_08.md:349 through snapshots/cycle_01/chapters/chapter_08.md:353 to include at least one on-page interaction or immediate external trigger tied to Tom's return that materially changes Elsie's options before chapter close.",
+      "acceptance_test": "PASS if revised lines 349-353 contain a concrete new state change caused by Tom's return (e.g., threat, search, demand, evidence handling) that did not exist before line 349; FAIL if the ending remains summary of intent/prep only."
+    },
+    {
+      "finding_id": "CH8-CRAFT-001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_08",
+      "evidence": "Sanitizing summary replaces scene at the moment of maximum domestic/legal risk: snapshots/cycle_01/chapters/chapter_08.md:349, snapshots/cycle_01/chapters/chapter_08.md:351, and snapshots/cycle_01/chapters/chapter_08.md:353 ('By the time Tom came home...' followed by abstract 'map' framing).",
+      "problem": "Sanitization drift: the prose retreats into abstraction and summary exactly where embodied consequence should be rendered, defusing tension instead of cashing it.",
+      "rewrite_direction": "Replace the abstract close at snapshots/cycle_01/chapters/chapter_08.md:349, snapshots/cycle_01/chapters/chapter_08.md:351, and snapshots/cycle_01/chapters/chapter_08.md:353 with a concrete beat in kitchen space (speech, movement, object interaction, bodily response) that makes the debt threat physically and socially present.",
+      "acceptance_test": "PASS if revised ending includes at least three concrete, scene-level details tied to conflict (what Tom does/says, what Elsie does physically, what object/evidence is at risk); FAIL if climax remains metaphor-only summary."
+    },
+    {
+      "finding_id": "CH8-CRAFT-002",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "Risk language is euphemized in a pressure moment: snapshots/cycle_01/chapters/chapter_08.md:333 ('If it goes bad tonight...').",
+      "problem": "Timidity: the scene gestures toward danger but avoids naming the specific consequences (legal exposure, collector pressure, domestic retaliation), softening urgency.",
+      "rewrite_direction": "In the warning exchange at snapshots/cycle_01/chapters/chapter_08.md:325 through snapshots/cycle_01/chapters/chapter_08.md:337, replace at least one euphemistic line with explicit consequence naming and a matching contingency action in-character.",
+      "acceptance_test": "PASS if revised lines 325-337 include at least one explicit named risk (not generic 'bad') plus one concrete action tied to that risk; FAIL if threat remains only implied/vague."
+    },
+    {
+      "finding_id": "CH8-DIALOGUE-001",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "Under pressure, both voices drift into polished aphorism: snapshots/cycle_01/chapters/chapter_08.md:203 ('Truth and true...'), snapshots/cycle_01/chapters/chapter_08.md:293 ('Practical to the bone...'), and snapshots/cycle_01/chapters/chapter_08.md:341 ('I trust habits before I trust speeches.').",
+      "problem": "Idiolect separation weakens: lines become similarly authorial and balanced, reducing register contrast between Elsie's practical bluntness and Noreen's quicker, pivoting rhythm.",
+      "rewrite_direction": "Rework dialogue around snapshots/cycle_01/chapters/chapter_08.md:203, snapshots/cycle_01/chapters/chapter_08.md:293, and snapshots/cycle_01/chapters/chapter_08.md:341 to increase speaker-specific syntax/rhythm and reduce polished maxim-style phrasing while preserving scene pressure.",
+      "acceptance_test": "PASS if, with tags removed, readers can still attribute each revised line in those spans to the correct speaker by register cues, and no two consecutive lines read as interchangeable maxims; FAIL if attribution remains ambiguous."
+    },
+    {
+      "finding_id": "CH8-PROSE-001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "Recurring sentence formula appears three times: snapshots/cycle_01/chapters/chapter_08.md:113, snapshots/cycle_01/chapters/chapter_08.md:161, snapshots/cycle_01/chapters/chapter_08.md:327 ('She wanted to ... She wanted to ...').",
+      "problem": "Prose tic: repeated desire-sentence scaffolding flattens interior rhythm and signals mechanical reuse.",
+      "rewrite_direction": "Revise the interior beats at snapshots/cycle_01/chapters/chapter_08.md:113, snapshots/cycle_01/chapters/chapter_08.md:161, and snapshots/cycle_01/chapters/chapter_08.md:327 so each conveys impulse through different sentence architecture (embodied response, action interruption, or memory intrusion).",
+      "acceptance_test": "PASS if no more than one of those three target locations retains the exact repeated 'She wanted to ... She wanted to ...' pattern; FAIL if the duplicated template remains in two or more locations."
+    },
+    {
+      "finding_id": "CH8-PROSE-002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "Negation-correction construction recurs at snapshots/cycle_01/chapters/chapter_08.md:5, snapshots/cycle_01/chapters/chapter_08.md:123, snapshots/cycle_01/chapters/chapter_08.md:139, snapshots/cycle_01/chapters/chapter_08.md:181, and snapshots/cycle_01/chapters/chapter_08.md:267 ('It was not ... It was ... / This was ...').",
+      "problem": "Recurring prose formula creates predictable cadence and reduces texture variance.",
+      "rewrite_direction": "Recast at least three of the five flagged lines, prioritizing snapshots/cycle_01/chapters/chapter_08.md:123, snapshots/cycle_01/chapters/chapter_08.md:139, and snapshots/cycle_01/chapters/chapter_08.md:181, into direct affirmative description or image-led syntax rather than negation-then-correction.",
+      "acceptance_test": "PASS if the revised set of lines 5/123/139/181/267 contains no more than two negation-correction instances and at least two openings that are not 'It was'; FAIL if three or more retain the same template."
+    }
+  ],
+  "summary": "Chapter 8 lands its required discovery mechanics and remains continuity-consistent, but it fails review on unresolved craft/prose/dialogue risks: sanitizing end-summary at the consequence point, timidity in risk naming, idiolect bleed into aphoristic dialogue, and repeated sentence templates that flatten rhythm. Narrative tense remains aligned with the style bible (past tense), and no canonical continuity contradiction was detected in this chapter."
+}

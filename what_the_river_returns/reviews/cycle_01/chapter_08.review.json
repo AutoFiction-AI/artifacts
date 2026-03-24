@@ -1,0 +1,97 @@
+{
+  "chapter_id": "chapter_08",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_08_F001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_01/chapters/chapter_08.md:29; snapshots/cycle_01/chapters/chapter_08.md:57; snapshots/cycle_01/chapters/chapter_08.md:131; snapshots/cycle_01/chapters/chapter_08.md:185; snapshots/cycle_01/chapters/chapter_08.md:359",
+      "problem": "Sanitization drift: the chapter introduces Ava's violent death with concrete detail, then repeatedly retreats into process/checklist language at the exact moments that require embodied grief, fear, and social consequence. Procedural summary displaces scene presence.",
+      "rewrite_direction": "Revise snapshots/cycle_01/chapters/chapter_08.md:57-71, snapshots/cycle_01/chapters/chapter_08.md:131-136, snapshots/cycle_01/chapters/chapter_08.md:185-201, and snapshots/cycle_01/chapters/chapter_08.md:359-365 so each procedural beat is paired with immediate bodily/emotional consequence (Lena, Teresa, or crowd) rendered in-scene rather than abstracted.",
+      "acceptance_test": "PASS if each revised target span contains at least one concrete bodily or sensory consequence sentence before or alongside policy language; FAIL if any target span reads as pure administrative summary without embodied impact."
+    },
+    {
+      "finding_id": "chapter_08_F002",
+      "source": "booker",
+      "severity": "HIGH",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_01/chapters/chapter_08.md:67; snapshots/cycle_01/chapters/chapter_08.md:69; snapshots/cycle_01/chapters/chapter_08.md:141; snapshots/cycle_01/chapters/chapter_08.md:267",
+      "problem": "Causality and legal-stakes break: Lena states she is suspended and barred from chain-of-custody actions, then physically carries a case-file box before reinstatement. This undercuts the chapter's own chain-integrity stakes and world-rule legal constraints.",
+      "rewrite_direction": "Rewrite snapshots/cycle_01/chapters/chapter_08.md:139-142 (and, if needed, snapshots/cycle_01/chapters/chapter_08.md:67-73) so either an authorized on-duty custodian moves the box, or Lena receives explicit temporary authorization with witness and log entry before any transfer.",
+      "acceptance_test": "PASS if the revised transfer shows who is legally authorized, plus an on-page witness/log marker, before evidence leaves Ava's desk; FAIL if suspended Lena still performs an unlogged physical transfer."
+    },
+    {
+      "finding_id": "chapter_08_F003",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_01/chapters/chapter_08.md:145; snapshots/cycle_01/chapters/chapter_08.md:147; snapshots/cycle_01/chapters/chapter_08.md:149; snapshots/cycle_01/chapters/chapter_08.md:151; snapshots/cycle_01/chapters/chapter_08.md:153; snapshots/cycle_01/chapters/chapter_08.md:155; snapshots/cycle_01/chapters/chapter_08.md:157; snapshots/cycle_01/chapters/chapter_08.md:159; snapshots/cycle_01/chapters/chapter_08.md:161; snapshots/cycle_01/chapters/chapter_08.md:163; snapshots/cycle_01/chapters/chapter_08.md:165; snapshots/cycle_01/chapters/chapter_08.md:167",
+      "problem": "A 12-paragraph stretch runs without focalized interior experience. The scene reads like externally staged coverage instead of close-third narrative anchored to Lena.",
+      "rewrite_direction": "Revise snapshots/cycle_01/chapters/chapter_08.md:145-167 to insert short interior beats (thought, sensation, memory, self-assessment) tied to Lena while preserving scene momentum.",
+      "acceptance_test": "PASS if at least 3 paragraphs in lines 145-167 include explicit Lena interiority and no run of 10+ consecutive paragraphs remains without interior markers; FAIL otherwise."
+    },
+    {
+      "finding_id": "chapter_08_F004",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_01/chapters/chapter_08.md:165; snapshots/cycle_01/chapters/chapter_08.md:185; snapshots/cycle_01/chapters/chapter_08.md:191; snapshots/cycle_01/chapters/chapter_08.md:219; snapshots/cycle_01/chapters/chapter_08.md:225; snapshots/cycle_01/chapters/chapter_08.md:235",
+      "problem": "Register separation blurs in the town-hall exchange. Lena, Mara, Clay, and Cain repeatedly converge on the same policy-brief cadence, weakening idiolect separation required by the style bible.",
+      "rewrite_direction": "Rework snapshots/cycle_01/chapters/chapter_08.md:185-235 so Mara's lines use fast interrogative pivots, Clay's lines retain evasive institutional framing, Cain's lines carry sermonic memory texture, and Lena alternates procedural precision with stress-shortened bursts.",
+      "acceptance_test": "PASS if each speaker (Lena, Mara, Clay, Cain) has at least one clearly distinct rhythm/lexicon marker in lines 185-235 and no three-turn sequence sounds interchangeable by syntax; FAIL if voices remain swappable."
+    },
+    {
+      "finding_id": "chapter_08_F005",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_01/chapters/chapter_08.md:153; snapshots/cycle_01/chapters/chapter_08.md:185; snapshots/cycle_01/chapters/chapter_08.md:191; snapshots/cycle_01/chapters/chapter_08.md:195; snapshots/cycle_01/chapters/chapter_08.md:201; snapshots/cycle_01/chapters/chapter_08.md:313",
+      "problem": "Dialogue pressure drops into stilted official prose at key conflict peaks; multiple lines read like policy memo dictation rather than contested live speech, muting interruption and colloquial rhythm.",
+      "rewrite_direction": "Tighten and roughen spoken delivery in snapshots/cycle_01/chapters/chapter_08.md:153-201 and snapshots/cycle_01/chapters/chapter_08.md:309-314 by adding interruption beats, shorter turn collisions, and register-appropriate contractions where speakers are not intentionally performing public formality.",
+      "acceptance_test": "PASS if revised lines 153-201 contain at least two interruption/overlap beats and high-contraction speakers in that span (e.g., Mara) use contractions in most eligible lines; FAIL if the exchange still reads as uninterrupted podium copy."
+    },
+    {
+      "finding_id": "chapter_08_F006",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_01/chapters/chapter_08.md:19; snapshots/cycle_01/chapters/chapter_08.md:151; snapshots/cycle_01/chapters/chapter_08.md:229; snapshots/cycle_01/chapters/chapter_08.md:297",
+      "problem": "Recurring facial-expression default: jaw-clench/flex appears four times, becoming a visible prose tic and flattening emotional specificity.",
+      "rewrite_direction": "Revise at least two of snapshots/cycle_01/chapters/chapter_08.md:19, snapshots/cycle_01/chapters/chapter_08.md:151, snapshots/cycle_01/chapters/chapter_08.md:229, snapshots/cycle_01/chapters/chapter_08.md:297 with character-specific physical tells that are not jaw-based repeats.",
+      "acceptance_test": "PASS if jaw-based stress markers occur no more than twice across those target beats after revision; FAIL if three or more jaw-clench variants remain."
+    },
+    {
+      "finding_id": "chapter_08_F007",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_01/chapters/chapter_08.md:9; snapshots/cycle_01/chapters/chapter_08.md:21; snapshots/cycle_01/chapters/chapter_08.md:81; snapshots/cycle_01/chapters/chapter_08.md:111; snapshots/cycle_01/chapters/chapter_08.md:145; snapshots/cycle_01/chapters/chapter_08.md:173; snapshots/cycle_01/chapters/chapter_08.md:181; snapshots/cycle_01/chapters/chapter_08.md:183; snapshots/cycle_01/chapters/chapter_08.md:243; snapshots/cycle_01/chapters/chapter_08.md:363",
+      "problem": "Overused 'somebody' construction (10 occurrences) creates mechanical vagueness. Repeated indefinite agency blunts specificity and starts to sound autogenerated.",
+      "rewrite_direction": "In snapshots/cycle_01/chapters/chapter_08.md:81, snapshots/cycle_01/chapters/chapter_08.md:111, snapshots/cycle_01/chapters/chapter_08.md:173, snapshots/cycle_01/chapters/chapter_08.md:243, and snapshots/cycle_01/chapters/chapter_08.md:363, replace generic 'somebody' with observable actor classes or concrete sensory identifiers when viewpoint permits.",
+      "acceptance_test": "PASS if revised chapter uses 'somebody' no more than three times total and remaining uses occur only where identity is genuinely unknowable in-scene; FAIL if the repeated generic placeholder remains dominant."
+    },
+    {
+      "finding_id": "chapter_08_F008",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_01/chapters/chapter_08.md:39; snapshots/cycle_01/chapters/chapter_08.md:59; snapshots/cycle_01/chapters/chapter_08.md:103; snapshots/cycle_01/chapters/chapter_08.md:363",
+      "problem": "Timidity: Lena's personal response to Ava's death is briefly signaled, then sidelined. The chapter avoids sustained interior reckoning despite a premise that demands emotional and moral proximity.",
+      "rewrite_direction": "Deepen Lena's internal line in snapshots/cycle_01/chapters/chapter_08.md:39-60 and add one aftermath beat in snapshots/cycle_01/chapters/chapter_08.md:361-365 that links Ava's death to Lena's personal history/obligation, not only investigation mechanics.",
+      "acceptance_test": "PASS if revised text includes at least two explicit non-procedural interior beats about Ava (one before the hall scene and one near the ending evidence-monitor beat); FAIL if Ava remains mainly an evidentiary function."
+    }
+  ],
+  "summary": "Chapter 8 lands major spine beats and continuity goals, but it does not meet pass-level quality yet: procedural framing repeatedly displaces embodied consequence, a key legal-causality action breaks its own chain stakes, dialogue voices flatten under policy cadence, and recurring prose tics reduce texture.",
+  "coverage_scene_ids": [
+    "annex_crime_scene",
+    "new_hope_hall_session",
+    "sheriff_office_reinstatement"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_09",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "PASS",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH09_BOOKER_001",
+      "source": "booker",
+      "severity": "HIGH",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:478",
+      "problem": "The chapter lands its decisive emotional event by line 474, then keeps going into a full morning-after wake-up/evidence-triage sequence that the boundary pack already reserves for chapter 10. That overrun blurs the chapter ending, weakens the terminal beat, and creates a high risk of downstream duplication instead of a clean chapter handoff.",
+      "rewrite_direction": "Recut the material beginning at snapshots/cycle_01/chapters/chapter_09.md:478 so chapter_09 ends on the unresolved pressure already alive around snapshots/cycle_01/chapters/chapter_09.md:450 and snapshots/cycle_01/chapters/chapter_09.md:474, or replace the current morning scene with fallout that does not restage the cold-room wake-up, notepad strategy setup, and early evidence handling now occupying snapshots/cycle_01/chapters/chapter_09.md:478 through snapshots/cycle_01/chapters/chapter_09.md:576.",
+      "acceptance_test": "Pass if the revised chapter reaches its final line without replaying a second wake-up/evidence-triage opening after the sex scene; fail if the ending still includes Leela waking in the hotel room, June's early evidence-management setup, and a launch beat that reads like the start of the next chapter rather than the close of this one."
+    },
+    {
+      "finding_id": "CH09_DIALOGUE_001",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:452; snapshots/cycle_01/chapters/chapter_09.md:454; snapshots/cycle_01/chapters/chapter_09.md:456; snapshots/cycle_01/chapters/chapter_09.md:458",
+      "problem": "The morning-after reckoning briefly violates the style bible's dialogue rule against consecutive low-information replies. June raises two distinct stakes, and Leela answers both with the same bare 'I know,' which flattens leverage at the exact point the chapter should be sharpening the distinction between desire, October's wound, and the deck evidence.",
+      "rewrite_direction": "Revise the exchange at snapshots/cycle_01/chapters/chapter_09.md:452 through snapshots/cycle_01/chapters/chapter_09.md:458 so one of Leela's answers does more than assent. Keep her spare if needed, but make at least one reply introduce a fresh admission, condition, or fear that June can answer and that clarifies how Leela understands October versus the Ruderal theft.",
+      "acceptance_test": "Pass if, in the revised exchange at snapshots/cycle_01/chapters/chapter_09.md:452 through snapshots/cycle_01/chapters/chapter_09.md:458, Leela's two responses are not both generic assent and at least one line adds new pressure or information; fail if the scene still contains two consecutive low-info acknowledgments from Leela."
+    },
+    {
+      "finding_id": "CH09_PROSE_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:95; snapshots/cycle_01/chapters/chapter_09.md:236; snapshots/cycle_01/chapters/chapter_09.md:382; snapshots/cycle_01/chapters/chapter_09.md:450; snapshots/cycle_01/chapters/chapter_09.md:514",
+      "problem": "The chapter repeatedly lands major beats through the same negation-then-correction sentence machinery: 'It wasn't that...', 'This was not...', 'It was not...', 'It wasn't.' The device works once or twice, but at this frequency it becomes visible scaffolding and starts making distinct emotional turns sound built from the same template.",
+      "rewrite_direction": "Rework the pressure beats at snapshots/cycle_01/chapters/chapter_09.md:95, snapshots/cycle_01/chapters/chapter_09.md:236, snapshots/cycle_01/chapters/chapter_09.md:382, snapshots/cycle_01/chapters/chapter_09.md:450, and snapshots/cycle_01/chapters/chapter_09.md:514 so most of them arrive through direct statement, image, or action rather than the recurring 'not X / it was Y' hinge. Keep the construction only where the negation itself materially sharpens the beat.",
+      "acceptance_test": "Pass if the revised cited passages no longer rely on the same negation-correction template in more than one of those five beats, and each moment reads as a distinct turn on first pass; fail if multiple key beats still announce what something is not before saying what it is."
+    },
+    {
+      "finding_id": "CH09_PROSE_002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:113; snapshots/cycle_01/chapters/chapter_09.md:284; snapshots/cycle_01/chapters/chapter_09.md:330; snapshots/cycle_01/chapters/chapter_09.md:360; snapshots/cycle_01/chapters/chapter_09.md:526; snapshots/cycle_01/chapters/chapter_09.md:572",
+      "problem": "Late emotional pivots default too often to the exact 'looked at her' construction. Because those lines sit at leverage changes, the repeated gaze cue starts reading like a placeholder beat instead of fresh scene writing, especially in the back half where June and Leela should be distinguishable through more specific bodily or interior signals.",
+      "rewrite_direction": "Vary the turn markers at snapshots/cycle_01/chapters/chapter_09.md:113, snapshots/cycle_01/chapters/chapter_09.md:284, snapshots/cycle_01/chapters/chapter_09.md:330, snapshots/cycle_01/chapters/chapter_09.md:360, snapshots/cycle_01/chapters/chapter_09.md:526, and snapshots/cycle_01/chapters/chapter_09.md:572. Replace several of the exact 'looked at her' beats with more specific action, sensation, or interior reaction that tells the reader what changed in the room, not just where the characters' eyes went.",
+      "acceptance_test": "Pass if, across the revised cited pivots, the exact 'looked at her' construction appears no more than twice and at least three of those turns signal leverage change through a more specific physical or psychological cue; fail if the chapter still uses the same gaze beat as the default pivot marker across those moments."
+    }
+  ],
+  "summary": "FAIL overall. The chapter is strong on causality, specificity, unsanitized erotic rendering, and character-voice alignment with the style bible: June stays practical and high-contraction under pressure, Mohit's texts remain managerial and exploitative, Leela's close-third narration stays past-tense and materially grounded, and I found no contradiction against the provided continuity/boundary facts. It still fails this pass because the ending overruns into material already queued for chapter_10, one key morning-after exchange breaks the dialogue rule against consecutive low-information replies, and the prose shows visible repetition in negation-hinge and gaze-pivot sentence patterns."
+}

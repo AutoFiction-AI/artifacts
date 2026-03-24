@@ -1,0 +1,43 @@
+{
+  "cycle": 2,
+  "verdict": "FAIL",
+  "summary": "Shortlist-level strengths are present in the sustained close-third voice, past-tense control, unsanitized physical specificity, and the strong match to the style bible's register and narrative distance. The draft still fails shortlist readiness because the novel's climactic proof chain contradicts itself at the level of basic evidence: two chapters place Gabriel Wolfe's identifying premolar on the wrong side, and chapter 15 both invents a copied fever-ground page that earlier chapters say was never made and shifts the grave's location against the book's earlier burial geometry. Those are HIGH-severity coherence failures because the reader is asked to trust this forensic and procedural logic exactly where the plot turns on it.",
+  "findings": [
+    {
+      "finding_id": "FBR-001",
+      "severity": "HIGH",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:2358",
+      "problem": "Silas identifies Gabriel by a missing premolar \"on the right,\" which contradicts the continuity sheet's canonical marker and the later exhumation sequence, where the missing upper left premolar is treated as decisive proof. Because Gabriel's tooth is one of the book's core forensic identifiers, this wrong-side detail weakens the credibility of every later identification beat.",
+      "rewrite_direction": "Revise the identifier exchange at snapshots/cycle_02/FINAL_NOVEL.md:2358-2362 so Silas names the missing upper left premolar, not the right. Keep the scene's coarse oral texture, but align the bodily marker with the later exhumation language at snapshots/cycle_02/FINAL_NOVEL.md:4615-4621 so chapter_06 establishes the same forensic fact the book later proves.",
+      "acceptance_test": "Pass if the revised passage at snapshots/cycle_02/FINAL_NOVEL.md:2358-2360 explicitly identifies Gabriel's missing upper left premolar and chapter_06 contains no surviving right-side tooth reference. Fail if the side remains right, is left ambiguous, or no longer matches the exhumation proof in snapshots/cycle_02/FINAL_NOVEL.md:4615-4621."
+    },
+    {
+      "finding_id": "FBR-002",
+      "severity": "HIGH",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:3204",
+      "problem": "Della's own ledger entry records Gabriel as having the \"second premolar gone upper right,\" which contradicts both the continuity sheet and the later grave opening, where the missing upper left premolar is treated as authoritative evidence. This is more damaging than a stray dialogue slip because it makes the manuscript's supposedly definitive written source internally wrong.",
+      "rewrite_direction": "Revise the ledger excerpt at snapshots/cycle_02/FINAL_NOVEL.md:3202-3210 so Gabriel's page records the missing upper left premolar while preserving the rest of the entry's function. The line should match the later proof language rather than force the reader to decide whether the notebook or the exhumation is the true canon.",
+      "acceptance_test": "Pass if the ledger line at snapshots/cycle_02/FINAL_NOVEL.md:3204 specifies the upper left premolar and no right-side dental description remains anywhere in chapter_08. Fail if the ledger still says upper right or if the identifier is softened into vagueness that no longer supports the later identification sequence."
+    },
+    {
+      "finding_id": "FBR-003",
+      "severity": "HIGH",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:5295",
+      "problem": "The hearing says Della brought three copied pages including \"the fever ground\" and then describes a copied page that already marks the row, cedar stump, collarbone, tooth, and burial night. Earlier chapters establish the opposite: at snapshots/cycle_02/FINAL_NOVEL.md:3471-3473 Lucille states Della did not copy the fever-plot entry, and at snapshots/cycle_02/FINAL_NOVEL.md:3505 the copied bundle is explicitly said to have a blank where Gabriel should have been. Chapter_15 therefore invents documentary support that the novel had already denied existed before the ledger theft.",
+      "rewrite_direction": "Rewrite the hearing setup at snapshots/cycle_02/FINAL_NOVEL.md:5293-5305 and the ruling support at snapshots/cycle_02/FINAL_NOVEL.md:5499-5501 so chapter_15 does not rely on a pre-theft copied fever-ground page. The scene can still carry the hearing on evidence the novel has already established exists: Della's sworn testimony, Silas's corroborating statement already filed, the exhumed collarbone and tooth, Gabriel's pocketwatch, and the parcel map. If you need paperwork in the room, make it the contest filing or exhumation notes rather than a copy chapter_09 says was never made.",
+      "acceptance_test": "Pass if snapshots/cycle_02/FINAL_NOVEL.md:5293-5305 no longer claims Della brought or copied a fever-ground extract before the theft, and snapshots/cycle_02/FINAL_NOVEL.md:5499-5501 grounds the ruling only in evidence the manuscript has already established on-page. Fail if the hearing still depends on a copied fever-ground page or any other newly invented pre-theft document."
+    },
+    {
+      "finding_id": "FBR-004",
+      "severity": "HIGH",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:5339",
+      "problem": "Della's hearing testimony relocates Gabriel's grave to the \"north side\" of the lower fever ground and \"six rows from the cedar stump,\" contradicting the placement already established in earlier chapters: snapshots/cycle_02/FINAL_NOVEL.md:717 places the grave below the lightning-scarred cedar and east of the child fever row, while snapshots/cycle_02/FINAL_NOVEL.md:4627-4631 and snapshots/cycle_02/FINAL_NOVEL.md:4713 place it on the south edge below the cedar root. Because grave placement is part of the identification logic, this contradiction undercuts the court scene's authority.",
+      "rewrite_direction": "Revise the testimony block at snapshots/cycle_02/FINAL_NOVEL.md:5339-5347 so Della uses the same burial geometry already established elsewhere in the novel. Keep one consistent coordinate system across the chapter: below the cedar/lightning-scarred cedar, east of the child row, south edge/below the cedar root. Do not leave \"north side\" in chapter_15 unless earlier chapters are also changed, which this workflow cannot do.",
+      "acceptance_test": "Pass if the revised testimony at snapshots/cycle_02/FINAL_NOVEL.md:5339-5347 matches the established south/below-cedar placement and no north-side grave coordinate remains in chapter_15. Fail if chapter_15 still asks the reader to reconcile incompatible grave locations between the hearing and the exhumation chapters."
+    }
+  ]
+}

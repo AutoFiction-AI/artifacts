@@ -1,0 +1,40 @@
+{
+  "chapter_id": "chapter_11",
+  "cycle": 2,
+  "input_snapshot_hash": "6040cc33651aa5ce96d3371f17a19e8eb3d780dce41624d2eacffdae1e07f9c9",
+  "findings": [
+    {
+      "finding_id": "calibrated_saturation_ch11",
+      "source": "manual_rescue/full_award_rescue.review.json",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.post_revision.md:2190, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:2258, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:2290, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:2326",
+      "problem": "'Calibrated' appears 4 times in this chapter (full-novel count: 30). Line 2258 is the chapter's strongest instance: 'under pressure she became gentler, warmer, more perfectly calibrated, and that was her tell — the more dangerous she was, the kinder she sounded.' The other 3 instances dilute this payoff by using the identical word in lower-stakes narration throughout the crisis sequence.",
+      "rewrite_direction": "Keep snapshots/cycle_02/FINAL_NOVEL.post_revision.md:2258 (the 'that was her tell' sentence — the word earns its place through the paradox it enables). Replace at snapshots/cycle_02/FINAL_NOVEL.post_revision.md:2190, :2290, :2326. Strategy: in the crisis-management scenes, replace 'calibrated' with crisis-specific vocabulary ('timed,' 'scripted,' 'programmed') that maintains the system-operator metaphor without the exact same word.",
+      "acceptance_test": "Revised chapter contains no more than 1 instance of 'calibrated'/'calibration.' The retained instance is at or near line 2258. The crisis sequences at lines 2190, 2290, 2326 use varied tech vocabulary."
+    },
+    {
+      "finding_id": "which_was_cascading_ch11",
+      "source": "manual_rescue/full_award_rescue.review.json",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.post_revision.md:2110",
+      "problem": "Cascading 'which was'/'which meant'/'which were' appositives are the novel's signature syntactic move (full-novel count: 89 instances of 'which was'). Line 2110 is the construction's peak: 'she had become so good at performing the friend that the performance was indistinguishable from the thing itself... which were the minutes she felt most human, which meant her humanity had become contingent on the lie, which was a thought she could not afford to have right now because right now she needed to get to the fucking bathroom.' This is the novel's best sentence. But when the same construction appears in ordinary narration throughout the chapter and the full novel, it dilutes this payoff — the reader has heard 'which was' so often that the climactic chain registers as another iteration of a habit rather than a decisive escalation.",
+      "rewrite_direction": "Keep the cascading chain at snapshots/cycle_02/FINAL_NOVEL.post_revision.md:2110 — it is earned and devastating. Reduce 'which was'/'which meant'/'which were' constructions elsewhere in this chapter to no more than 2 additional instances. In non-climactic narration, break the appositive chains into separate sentences or replace with different subordination strategies (participial phrases, em-dash asides, direct restatement). The goal is to make the climactic chain at line 2110 feel like the construction arriving at its full power, not like one more deployment of the narrator's default sentence shape.",
+      "acceptance_test": "Revised chapter retains the cascading chain at line 2110. Total instances of 'which was'/'which meant'/'which were' in the chapter do not exceed 3 (including the retained chain). Non-climactic instances use varied subordination strategies."
+    }
+  ],
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "No more than 1 instance of 'calibrated'/'calibration' in the revised chapter",
+    "Retain the 'that was her tell' sentence at or near line 2258 as the sole 'calibrated' instance",
+    "Retain the cascading 'which was/which meant/which were' chain at line 2110 — do not alter this sentence",
+    "Total 'which was'/'which meant'/'which were' instances in the chapter must not exceed 3 (including the line 2110 chain)"
+  ],
+  "acceptance_targets": [
+    "Lines 2190, 2290, 2326: 'calibrated' replaced with varied crisis-specific tech vocabulary",
+    "Non-climactic 'which was'/'which meant'/'which were' constructions reduced to at most 2 additional instances beyond line 2110",
+    "Non-climactic replacements use varied subordination strategies (participial phrases, em-dash asides, direct restatement)",
+    "The climactic chain at line 2110 feels like an escalation rather than a repetition of the chapter's default sentence shape"
+  ]
+}

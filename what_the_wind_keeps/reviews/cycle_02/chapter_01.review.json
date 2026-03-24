@@ -1,0 +1,47 @@
+{
+  "chapter_id": "chapter_01",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "PASS",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_01_booker_01_supernatural_causality",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_02/chapters/chapter_01.md:289; snapshots/cycle_02/chapters/chapter_01.md:303; snapshots/cycle_02/chapters/chapter_01.md:323; snapshots/cycle_02/chapters/chapter_01.md:341",
+      "problem": "The chapter asks the reader to accept the first window-memory as conclusive proof of Ezra's lie before the narrative has fully earned why Cora, on this first supernatural encounter, trusts it over exhaustion, grief, and storm-shock. Because this turn changes the novel's engine, the leap from apparition to certainty weakens causal storytelling at a Booker level.",
+      "rewrite_direction": "Rework the apparition-and-aftermath sequence at snapshots/cycle_02/chapters/chapter_01.md:289, snapshots/cycle_02/chapters/chapter_01.md:303, snapshots/cycle_02/chapters/chapter_01.md:323, and snapshots/cycle_02/chapters/chapter_01.md:341 so Cora's trust in the vision is earned on the page. Either seed earlier in the chapter that she already knows storm-glass can hold true images, or make her reaction more provisional and hinge it on one specific corroborating detail from the vision that she could not have invented in the moment. Preserve the state change into active suspicion, but do not let the narration claim 'proof' without setup or reasoning.",
+      "acceptance_test": "Reading the revised passage anchored at snapshots/cycle_02/chapters/chapter_01.md:289 and ending by snapshots/cycle_02/chapters/chapter_01.md:341, a first-time reader can explain why Cora treats the apparition as credible: either earlier text has established prior knowledge of dust-memories, or Cora explicitly weighs hallucination against a concrete, corroborating detail from the vision. If the chapter still jumps straight from first sighting to certainty with no earned basis, fail."
+    },
+    {
+      "finding_id": "chapter_01_prose_01_negation_tic",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_02/chapters/chapter_01.md:77; snapshots/cycle_02/chapters/chapter_01.md:117; snapshots/cycle_02/chapters/chapter_01.md:151; snapshots/cycle_02/chapters/chapter_01.md:283; snapshots/cycle_02/chapters/chapter_01.md:295; snapshots/cycle_02/chapters/chapter_01.md:313",
+      "problem": "Charged beats keep arriving through the same negative-definition construction: the prose repeatedly tells the reader what a touch, feeling, or revelation is not before naming what it is. After this many recurrences in one chapter, the pattern reads as a sentence-level tic rather than an intentional echo and starts flattening discovery.",
+      "rewrite_direction": "Revise the repeated negation beats at snapshots/cycle_02/chapters/chapter_01.md:77, snapshots/cycle_02/chapters/chapter_01.md:117, snapshots/cycle_02/chapters/chapter_01.md:151, snapshots/cycle_02/chapters/chapter_01.md:283, snapshots/cycle_02/chapters/chapter_01.md:295, and snapshots/cycle_02/chapters/chapter_01.md:313 so most of them define the moment positively through action, sensation, or image on the first pass. Keep the single strongest negation if you want the echo; cut the recurrence everywhere else.",
+      "acceptance_test": "Across the revised lines anchored at snapshots/cycle_02/chapters/chapter_01.md:77, snapshots/cycle_02/chapters/chapter_01.md:117, snapshots/cycle_02/chapters/chapter_01.md:151, snapshots/cycle_02/chapters/chapter_01.md:283, snapshots/cycle_02/chapters/chapter_01.md:295, and snapshots/cycle_02/chapters/chapter_01.md:313, no more than one major emotional or revelatory beat may rely on an opening negative-definition phrase such as 'it was not', 'not X exactly', or 'never only'. If three or more cited beats still use that same template, fail."
+    },
+    {
+      "finding_id": "chapter_01_prose_02_clipped_narration",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_02/chapters/chapter_01.md:19; snapshots/cycle_02/chapters/chapter_01.md:217",
+      "problem": "The chapter slips into clipped narration that drops a predicate or subject for emphasis ('Then immediately, angrily, Thea.' / 'Saw, Cora knew...'). The constitution explicitly disallows elliptical clipping in narration, and these fragments stand out because the surrounding prose is otherwise controlled and grammatical.",
+      "rewrite_direction": "Rewrite the clipped narration at snapshots/cycle_02/chapters/chapter_01.md:19 and snapshots/cycle_02/chapters/chapter_01.md:217 into fully grammatical sentences that keep the same speed and pressure without omitting the subject or predicate. Check the nearby emphasis lines in those same beats so the revision does not simply relocate the clipping into the next sentence.",
+      "acceptance_test": "At the revised passages anchored to snapshots/cycle_02/chapters/chapter_01.md:19 and snapshots/cycle_02/chapters/chapter_01.md:217, each emphasis beat must remain brief and forceful but read as a complete sentence aloud, with an explicit subject and predicate. If either beat still depends on a fragment created by dropping the subject or verb for effect, fail."
+    }
+  ],
+  "summary": "Black Sunday is vividly embodied, Cora/Thea/Dell keep distinct period-credible voices, and the chapter lands the required state change without continuity contradiction, tense drift, sanitization drift, or dialogue-register collapse. It still fails review level because the first dust-memory is asked to carry too much unearned certainty, and the prose accumulates both a recurring negation tic and clipped-narration fragments barred by the constitution.",
+  "coverage_scene_ids": [
+    "black_sunday_lockdown",
+    "dell_returns",
+    "window_memory_revelation"
+  ]
+}

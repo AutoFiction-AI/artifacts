@@ -1,0 +1,108 @@
+{
+  "acceptance_targets": [
+    "[C09-CRAFT-001] PASS if the revised testimony segment (replacing the material around lines 68-79 and 170-217) contains explicit, readable answers to all three prompts ('what did you do / when / with whom') including at least one named third party and one concrete artifact/action (report, statement, mural/scholarship setup). FAIL if admissions remain abstract ('story,' 'protection,' 'mercy') without operational detail.",
+    "[C09-CRAFT-002] PASS if the revised section between the reveal and 'Who else knows' includes at least two distinct embodied reactions and one memory/self-assessment beat that changes Marisol's immediate stance. FAIL if the scene still moves from denial to procedural questioning with no additional interior paragraph-level processing.",
+    "[C09-BOOKER-001] PASS if revised passages preserve conflict while removing at least two direct moral-summary statements and replacing them with scene evidence that implies the same tension. FAIL if the revised chapter still states the core thesis in explicit slogan form at those beats.",
+    "[FBK-002] PASS if snapshots/cycle_02/FINAL_NOVEL.md:2811-2822 uses the same death-location naming system as the rest of the revised manuscript and contains no conflicting locator. FAIL if 'off Atlantic' remains or a third competing location is introduced."
+  ],
+  "chapter_id": "chapter_09",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if the revised testimony segment (replacing the material around lines 68-79 and 170-217) contains explicit, readable answers to all three prompts ('what did you do / when / with whom') including at least one named third party and one concrete artifact/action (report, statement, mural/scholarship setup). FAIL if admissions remain abstract ('story,' 'protection,' 'mercy') without operational detail.",
+      "chapter_id": "chapter_09",
+      "cycle": 2,
+      "evidence": "The scene asks for specifics but keeps key mechanics abstract: snapshots/cycle_02/chapters/chapter_09.md:54; snapshots/cycle_02/chapters/chapter_09.md:78; snapshots/cycle_02/chapters/chapter_09.md:170; snapshots/cycle_02/chapters/chapter_09.md:216.",
+      "finding_id": "C09-CRAFT-001",
+      "problem": "Sanitization drift at a core causality beat: Salvador confesses participation in the false narrative, but the operational acts (who altered what, which document/public statement changed, who coordinated it) stay euphemized. The chapter promises 'full testimony' yet withholds the material chain of fabrication.",
+      "rewrite_direction": "Expand the roof-garden testimony in the spans around snapshots/cycle_02/chapters/chapter_09.md:68, snapshots/cycle_02/chapters/chapter_09.md:78, and snapshots/cycle_02/chapters/chapter_09.md:170-217 so Marisol's 'what/when/with whom' prompt receives concrete answers: name at least one additional participant, one document/event that was shaped, and one direct consequence for family/public record.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if the revised section between the reveal and 'Who else knows' includes at least two distinct embodied reactions and one memory/self-assessment beat that changes Marisol's immediate stance. FAIL if the scene still moves from denial to procedural questioning with no additional interior paragraph-level processing.",
+      "chapter_id": "chapter_09",
+      "cycle": 2,
+      "evidence": "The paternity reveal arrives, then quickly pivots back to interrogation/procedure: snapshots/cycle_02/chapters/chapter_09.md:120; snapshots/cycle_02/chapters/chapter_09.md:122; snapshots/cycle_02/chapters/chapter_09.md:192; snapshots/cycle_02/chapters/chapter_09.md:194.",
+      "finding_id": "C09-CRAFT-002",
+      "problem": "Timidity in emotional rendering: the premise-level shock (possible paternity) gets one acute beat, then the prose retreats to question sequencing before fully inhabiting Marisol's internal dislocation.",
+      "rewrite_direction": "In the span between snapshots/cycle_02/chapters/chapter_09.md:120 and snapshots/cycle_02/chapters/chapter_09.md:194, add embodied interiority before procedural follow-up: sensory disruption, identity-memory collision, and a conscious decision to continue recording despite destabilization.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if revised passages preserve conflict while removing at least two direct moral-summary statements and replacing them with scene evidence that implies the same tension. FAIL if the revised chapter still states the core thesis in explicit slogan form at those beats.",
+      "chapter_id": "chapter_09",
+      "cycle": 2,
+      "evidence": "Theme is repeatedly declared rather than left to dramatic inference: snapshots/cycle_02/chapters/chapter_09.md:80; snapshots/cycle_02/chapters/chapter_09.md:146; snapshots/cycle_02/chapters/chapter_09.md:246; snapshots/cycle_02/chapters/chapter_09.md:320; snapshots/cycle_02/chapters/chapter_09.md:490.",
+      "finding_id": "C09-BOOKER-001",
+      "problem": "The chapter leans on explicit thesis language ('lie/mercy/saint') at key turns, which narrows interpretive complexity and blunts Booker-level ambiguity.",
+      "rewrite_direction": "In the argumentative beats around snapshots/cycle_02/chapters/chapter_09.md:80-99 and snapshots/cycle_02/chapters/chapter_09.md:246-320 (plus the decision beat at snapshots/cycle_02/chapters/chapter_09.md:488-494), replace at least two direct thematic declarations with contradictory concrete action/object detail that lets readers infer the moral conflict.",
+      "severity": "MEDIUM",
+      "source": "booker",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if snapshots/cycle_02/FINAL_NOVEL.md:2811-2822 uses the same death-location naming system as the rest of the revised manuscript and contains no conflicting locator. FAIL if 'off Atlantic' remains or a third competing location is introduced.",
+      "chapter_id": "chapter_09",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:2811",
+      "finding_id": "FBK-002",
+      "problem": "Cross-chapter factual inconsistency: Salvador's testimony says 'motel off Atlantic,' which conflicts with chapter_06 and chapter_17 variants and fractures the core death-scene geography.",
+      "rewrite_direction": "Update the testimony span at snapshots/cycle_02/FINAL_NOVEL.md:2811-2822 so location details match the same canonical motel reference used after revision in chapter_06 and chapter_17. Preserve Salvador's manipulative cadence, but remove the standalone 'off Atlantic' locator.",
+      "severity": "HIGH",
+      "source": "booker_global",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "6aa59e3ff6847ea41a5c522ab015d96f342c0295a6299605bf17572cb8e957dc",
+  "must_fix_count": 4,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "When choosing between reputationally safe abstraction and specific discomfort, choose specificity. Render addiction, sexuality, deceit, class shame, and grief at lived scale. In edge cases, preserve character truth and causal accountability over reader comfort or institutional decorum.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene demands bodily, moral, or economic specificity, euphemistic phrasing is treated as a failed draft and must be rewritten with concrete stakes and observable consequence.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the spoken default; full forms appear only for emphasis, ritual language, or character-specific formal posture",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate scene density and pressure modes: pair high-conflict chapters with quiet domestic or documentary chapters, vary dialogue-to-interiority ratios, and prevent identical chapter skeletons in consecutive sequence.",
+      "diction": "contemporary literary diction with class-aware, borough-specific concreteness; avoid prestige-neutral workshop language",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third centered on Marisol, with rare brief distance expansions for institutional scenes",
+      "narrative_tense": "past tense",
+      "rhythm_target": "alternating tensile compression and reflective extension; line-level cadence should carry emotional pressure, not just information",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

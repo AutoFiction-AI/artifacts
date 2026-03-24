@@ -1,0 +1,83 @@
+{
+  "acceptance_targets": [
+    "[CH07-F004] PASS if the revised chapter retains all three sensory beats but uses \"She could feel\" at no more than one of the three cited locations; FAIL if that exact construction still appears at two or more of those locations.",
+    "[CH07-F005] PASS if the revised intimacy block at snapshots/cycle_02/chapters/chapter_07.md:161-231 contains no more than two scar mentions total and each remaining mention triggers a distinct relational shift (e.g., trust test, pain response, consent recalibration); FAIL if scars are still repeated as default descriptive shorthand without new consequence."
+  ],
+  "chapter_id": "chapter_07",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if the revised chapter retains all three sensory beats but uses \"She could feel\" at no more than one of the three cited locations; FAIL if that exact construction still appears at two or more of those locations.",
+      "chapter_id": "chapter_07",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_07.md:21; snapshots/cycle_02/chapters/chapter_07.md:223; snapshots/cycle_02/chapters/chapter_07.md:353",
+      "finding_id": "CH07-F004",
+      "problem": "Recurring sentence scaffold (\"She could feel ...\") appears three times at key beats, creating noticeable prose autopilot and flattening sensory rhythm.",
+      "rewrite_direction": "Rewrite the sensory entry lines at snapshots/cycle_02/chapters/chapter_07.md:21, snapshots/cycle_02/chapters/chapter_07.md:223, and snapshots/cycle_02/chapters/chapter_07.md:353 with varied syntax and agency (body-first, environment-first, and action-first openings rather than repeating the same scaffold).",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if the revised intimacy block at snapshots/cycle_02/chapters/chapter_07.md:161-231 contains no more than two scar mentions total and each remaining mention triggers a distinct relational shift (e.g., trust test, pain response, consent recalibration); FAIL if scars are still repeated as default descriptive shorthand without new consequence.",
+      "chapter_id": "chapter_07",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_07.md:73; snapshots/cycle_02/chapters/chapter_07.md:161; snapshots/cycle_02/chapters/chapter_07.md:211; snapshots/cycle_02/chapters/chapter_07.md:231",
+      "finding_id": "CH07-F005",
+      "problem": "Scar imagery is over-reused (Ina wrist scar and Minjae shoulder scar) at multiple pivots, reading like mechanical token recall rather than evolving embodied detail.",
+      "rewrite_direction": "Tighten the motif across snapshots/cycle_02/chapters/chapter_07.md:161-231: keep scar references where they change power/intimacy, and replace redundant mentions with new tactile or behavioral cues that carry equivalent emotional information.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "30e3e01daae568bea4a9d3bfcd1b8f41b3c0cf651ab2642a8f1861fce791d0ac",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on prose and copyedit finish: diction precision, rhythm control, sentence-level clarity, grammar, line-level polish without flattening style, and explicit aesthetic-risk audit (sanitization is the primary risk \u2014 do not soften or euphemize; push toward creative risk and specificity).",
+    "key": "p3_prose_copyedit",
+    "label": "prose/copyedit fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into uncomfortable specificity when stakes demand it: show coercion mechanics, sexual negotiation, grief rituals, and financial desperation at scene level. In edge cases, prefer precision over decorum; protect character dignity through perspective accuracy, not by omitting the hard material.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene requires bodily, economic, or moral consequence and the draft retreats into abstract phrasing, rewrite with concrete action, sensation, and decision impact before proceeding.",
+      "operational_resolution_rule": "When uncertain between tasteful distance and narrative truth, choose the version that preserves causal accountability and embodied consequence, then tune language for clarity rather than softness.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the baseline in spoken dialogue; uncontracted forms are reserved for deliberate emphasis, legal language, or character-specific formality.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate chapter structures deliberately: high-density dialogue vs interior reflection, multi-scene public collision vs two-scene intimate pressure, aftermath inventory vs anticipatory dread. Never let two consecutive chapters share the same pacing architecture or turn mechanism.",
+      "diction": "Contemporary, unsentimental literary diction that permits technical vocabulary, profanity, and class-marked speech without flattening idiolects.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third person centered on Seo Ina, with brief controlled widenings in public-event chapters.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Alternating pressure waves: compressed clauses in operational stress, longer breath-based lines in grief and reflection.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

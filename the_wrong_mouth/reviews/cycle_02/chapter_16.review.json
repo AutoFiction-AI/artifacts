@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_16",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CRAFT_CONTINUITY_BOWL_PRICE",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_02/chapters/chapter_16.md:127; snapshots/cycle_02/chapters/chapter_16.md:179",
+      "problem": "The bowl's origin price contradicts canon continuity. The continuity sheet fixes Maren's ceramic bowl as a four-copper purchase, but the chapter twice calls it a three-copper bowl. Because the bowl is a tracked object payoff in this chapter, the mismatch reads as a hard object-state error, not harmless color.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_16.md:127 and snapshots/cycle_02/chapters/chapter_16.md:179, correct the bowl's purchase-price memory to match canon and adjust the comparison sentence around the 'nicer one' so the arithmetic and Maren's seventeen-year-old logic still read cleanly. Keep the emotional function of the bowl recollection, but remove every statement that implies the cheaper bowl cost three coppers.",
+      "acceptance_test": "In the revised versions of snapshots/cycle_02/chapters/chapter_16.md:127 and snapshots/cycle_02/chapters/chapter_16.md:179, the bowl is consistently remembered as a four-copper purchase, and no surrounding sentence in those spans implies a three-copper origin price."
+    },
+    {
+      "finding_id": "PROSE_VOICE_LABEL_REPETITION",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_02/chapters/chapter_16.md:13; snapshots/cycle_02/chapters/chapter_16.md:41; snapshots/cycle_02/chapters/chapter_16.md:67; snapshots/cycle_02/chapters/chapter_16.md:109; snapshots/cycle_02/chapters/chapter_16.md:153; snapshots/cycle_02/chapters/chapter_16.md:211",
+      "problem": "The narration keeps re-labeling Vess and Aldric with calibration adjectives already embedded in the style bible ('flat,' 'economical,' 'professional,' 'formal,' 'clipped') instead of letting syntax, interruption pattern, and line shape carry the distinction. Repeating those labels across the chapter starts to feel like token-list reuse and flattens otherwise strong voice work.",
+      "rewrite_direction": "Revise the voice-introduction and reminder beats at snapshots/cycle_02/chapters/chapter_16.md:13, snapshots/cycle_02/chapters/chapter_16.md:41, snapshots/cycle_02/chapters/chapter_16.md:67, snapshots/cycle_02/chapters/chapter_16.md:109, snapshots/cycle_02/chapters/chapter_16.md:153, and snapshots/cycle_02/chapters/chapter_16.md:211 so that most of the differentiation comes from what each voice does in-scene: Vess speaking once, finishing cleanly, entering after silence; Aldric retreating into report language, then breaking sentence-completion when afraid. Cut redundant adjective tags where the dialogue already proves the register.",
+      "acceptance_test": "Reading the revised passages at snapshots/cycle_02/chapters/chapter_16.md:13, snapshots/cycle_02/chapters/chapter_16.md:41, snapshots/cycle_02/chapters/chapter_16.md:67, snapshots/cycle_02/chapters/chapter_16.md:109, snapshots/cycle_02/chapters/chapter_16.md:153, and snapshots/cycle_02/chapters/chapter_16.md:211, a cold reader can still distinguish Vess from Aldric without repeated narrator labels of 'flat/professional/formal/clipped,' and no more than one of those calibration adjectives remains as a voice tag across those six spans."
+    }
+  ],
+  "summary": "Emotionally the chapter is strong: it lands the Vess separation, preserves Maren's close-third interiority, and keeps Aldric, Vess, and Maren largely in character. It still fails review because a tracked-object continuity error lands inside the bowl payoff, and the prose too often repeats style-bible calibration labels instead of trusting the scene's voice work."
+}

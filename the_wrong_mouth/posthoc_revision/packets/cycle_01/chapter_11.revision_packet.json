@@ -1,0 +1,138 @@
+{
+  "acceptance_targets": [
+    "[R006] Ch11 does not editorially explain Derry's Pell-talk habit. The absence of Pell's name is noted without a characterization gloss.",
+    "[R012] Ch11 contains at most 2 uses of 'fake/fraud/faking/sham' or equivalent fraud re-statements. No passage in Ch11 re-tells Maren's fraud origin story.",
+    "[R015] Ch11 contains at most 5 instances of the word 'something.' Each remaining instance is genuinely vague by narrative intent, not by prose habit.",
+    "[R023] Ch11 em-dash-containing prose lines are at most 9 out of ~117 prose lines (\u22648%).",
+    "[C003] Ch11's description of how Maren learned the postures does not contradict Ch1 or Ch3 in either method or location.",
+    "[length_chapter_11_min_words] Chapter word count is >= 4000 while preserving heading contract."
+  ],
+  "chapter_id": "chapter_11",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Ch11 does not editorially explain Derry's Pell-talk habit. The absence of Pell's name is noted without a characterization gloss.",
+      "chapter_id": "chapter_11",
+      "cycle": 1,
+      "evidence": "Ch10 L2562: 'The Derry who filled every silence with stories about Pell's counting lessons and Lenna's tomato plants'; Ch11 L2821: 'Derry talked about his daughter the way most people breathed \u2014 because it was necessary, because it happened without effort, because stopping would require a conscious decision that something had fundamentally changed.'",
+      "finding_id": "R006",
+      "problem": "Ch11 L2821 re-explains Derry's Pell-talk habit one chapter after Ch10 L2562 did the same. This is the 5th re-explanation of a trait first established in Ch3 L625. The Ch10\u2192Ch11 adjacent pair is the most jarring instance.",
+      "rewrite_direction": "Cut the simile at L2821. Let 'Pell hadn't come up since the night before Caul found them' carry the weight alone \u2014 the reader knows what Pell's absence means by now.",
+      "severity": "HIGH",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch11 contains at most 2 uses of 'fake/fraud/faking/sham' or equivalent fraud re-statements. No passage in Ch11 re-tells Maren's fraud origin story.",
+      "chapter_id": "chapter_11",
+      "cycle": 1,
+      "evidence": "Ch11 L2857: 'the way he'd arranged it a hundred and thirty times before, the familiar choreography of the fake ritual'; Ch11 L2887: 'The fake ritual was performance. That was all it had ever been. At sixteen, he'd learned the postures from watching a real sin-eater...'; Ch11 L2907: 'instead of murmuring the fake incantation.' Ch10 also contains 6 fraud re-statements at L2620-L2764. Together Ch10-Ch11 re-prove fraud 11 times in adjacent chapters.",
+      "finding_id": "R012",
+      "problem": "By Ch11, Maren's fraud identity has been proved ~45 times across prior chapters. Ch11 adds 5 more re-statements (L2857, L2887, L2907, L2905, L3033) in a chapter where Maren is actively trying to do real sin-eating \u2014 the fraud baseline is being re-proved while the character is moving beyond it. Adjacent to Ch10's 6 fraud re-statements.",
+      "rewrite_direction": "Cut at least 2-3 of Ch11's fraud re-statements. The act of attempting genuine consumption already implies the contrast with his fake past. L2887's origin-story passage (postures from watching) could be cut entirely since the reader learned this in Ch1/Ch3. Keep L2857 if it serves the ritual scene.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch11 contains at most 5 instances of the word 'something.' Each remaining instance is genuinely vague by narrative intent, not by prose habit.",
+      "chapter_id": "chapter_11",
+      "cycle": 1,
+      "evidence": "Ch11 contains 29 uses of 'something' in 3,911 prose words (5.93 per 800 words). Manuscript-wide: 286 total occurrences across 76,797 prose words (2.98 per 800 words vs. threshold of 1.0 per 800). Ch11 is the worst single-chapter offender at 6x threshold.",
+      "finding_id": "R015",
+      "problem": "'Something' appears 286 times manuscript-wide (3x the 1-per-800-word threshold). Ch11 alone has 29 instances in 3,911 words \u2014 nearly 6x the threshold. This creates a pervasive hedging quality where specificity would serve better.",
+      "rewrite_direction": "Reduce Ch11's 'something' count from 29 to at most 5. Replace vague 'something' constructions with specific nouns, sensations, or actions. E.g., 'something inside him shifted' \u2192 name what shifted; 'like something being dissolved' \u2192 name the dissolution.",
+      "severity": "HIGH",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch11 em-dash-containing prose lines are at most 9 out of ~117 prose lines (\u22648%).",
+      "chapter_id": "chapter_11",
+      "cycle": 1,
+      "evidence": "Ch11: 34 em-dash-containing prose lines / 117 total prose lines = 29.1%. Manuscript-wide: 404/2515 = 16.1%.",
+      "finding_id": "R023",
+      "problem": "Ch11 has 29.1% em-dash density (34/117 prose lines).",
+      "rewrite_direction": "Reduce em-dash-containing lines from 34 to at most 9 (targeting ~8%).",
+      "severity": "HIGH",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch11's description of how Maren learned the postures does not contradict Ch1 or Ch3 in either method or location.",
+      "chapter_id": "chapter_11",
+      "cycle": 1,
+      "evidence": "Ch1 L19: 'He'd copied it from a woodcut in a book he'd stolen from a traveling merchant when he was sixteen'; Ch3 L825: 'the words he'd memorized from watching a real sin-eater work once, at a distance, in a village that wasn't Fenhold, when he was sixteen'; Ch11 L2887: 'At sixteen, he'd learned the postures from watching a real sin-eater work a field outside Fenhold \u2014 an old woman whose name he'd never learned.'",
+      "finding_id": "C003",
+      "problem": "Three incompatible origins for how Maren learned sin-eater postures. Ch1 says from a stolen book's woodcut. Ch3 and Ch11 say from watching a real sin-eater \u2014 but Ch3 says 'in a village that wasn't Fenhold' while Ch11 says 'outside Fenhold.' Each passage frames its version as THE origin of his technique.",
+      "rewrite_direction": "Establish one canonical learning method and location. The woodcut (Ch1) and the observation (Ch3/Ch11) could coexist (woodcut for postures, observation for rhythm) if explicitly reconciled. But the location must be unified: either 'outside Fenhold' or 'a village that wasn't Fenhold,' not both. Revise Ch11 L2887 to match whichever origin Ch1 and Ch3 agree on.",
+      "severity": "HIGH",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Chapter word count is >= 4000 while preserving heading contract.",
+      "chapter_id": "chapter_11",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:1",
+      "finding_id": "length_chapter_11_min_words",
+      "problem": "Chapter is below projected_min_words (3911 < 4000).",
+      "rewrite_direction": "Add causally necessary scene material that strengthens the chapter engine, increases pressure, and lands the planned state shift without filler.",
+      "severity": "HIGH",
+      "source": "length_guardrail",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "220db45e744b1bb1bf3dd5f3f75284e79d7fc42763315dc8161eedcb48386c7e",
+  "must_fix_count": 6,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This novel must commit fully to its own weirdness. A System-blind con man with a dead paladin and a dead assassin arguing in his skull is inherently absurd, and the novel should let that absurdity live alongside genuine grief, genuine violence, and genuine mystery without apologizing for the tonal range. The darkest moments and the funniest moments may occupy the same scene. When they do, let both registers operate simultaneously \u2014 do not sacrifice comedy for gravitas or gravitas for comedy. Risk means specificity: the specific sensation of a body doing things you did not tell it to do, the specific comedy of a dead paladin critiquing your hygiene while you're running for your life, the specific horror of carrying incomplete people whose memories have holes, the specific shame of learning that your eleven years of fraud may have killed people. When in doubt between too raw and too safe, choose raw. The novel's emotional range should be wider than any single genre label would suggest.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism in the narration of violence, bodily experience, moral compromise, or physical consequence is a draft-level failure. Maren is a con man who has seen hard things and done dirty work in poor villages for eleven years \u2014 his narration should not flinch where he would not flinch. The style bible's sensory bias toward tactile and proprioceptive detail means physical consequence must be rendered through the body: what it feels like to throw up, to kill someone, to have your muscles operate without your consent, to perform a ritual that requires you to open yourself to contamination. Summary and abstraction at the moment of consequence is always worse than presence.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for all characters except Aldric, whose low contraction level is a deliberate character marker that should erode over the course of the novel. Uncontracted forms in other characters' speech are reserved for emphasis, deliberation, or ceremony. In a world of practical people doing unglamorous work, stiff diction is the exception.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate between hot and quiet chapters as a structural principle. No two consecutive chapters should open the same way \u2014 if one opens with action, the next should open with interiority or setting; if one opens with dialogue, the next should open with physical sensation or observation. Vary scene count between chapters: compressed single-scene chapters after multi-scene ones. Let quiet chapters stay quiet \u2014 do not insert action beats or revelations to maintain pace. The pacing engine is Maren's voice and the interplay between the three internal consciousnesses, not external plot pressure.",
+      "diction": "Colloquial with earned elevation. Default register is smart but not literary \u2014 a con man's English, precise about people and vague about feelings. Elevation reserved for moments of genuine awe, grief, or the rare glimpse of something beautiful. Fantasy-register portentousness is a draft-level failure \u2014 no 'ancient darkness' or 'powers beyond comprehension.' The world is weird and dangerous and ordinary all at once, and the prose should match.",
+      "forbidden_drift_patterns": [
+        "Sentence fragments imitating action-movie or thriller prose \u2014 subject-dropping and article-stripping for false urgency",
+        "Semicolon-heavy scholarly narration that distances the reader from embodied experience",
+        "Present-tense micro-shifts for intensity \u2014 the novel is past tense throughout, no exceptions",
+        "Filtering words ('he saw,' 'he felt,' 'he noticed,' 'he realized') when direct rendering is available",
+        "Fantasy-voice portentousness: 'ancient,' 'dark power,' 'something stirred,' 'a presence beyond reckoning'",
+        "Comic narration that winks at the reader or breaks the fourth wall instead of committing to the situation",
+        "Repeated metaphor templates \u2014 if a comparison structure appears twice in a chapter, the second instance is a tic",
+        "Emotional summary replacing scene presence: 'He was overwhelmed by grief' instead of rendering what grief looks and feels like in the body"
+      ],
+      "narrative_distance": "Close third person, locked to Maren throughout. Aldric and Vess are experienced as internal voices \u2014 they speak as italicized dialogue within Maren's consciousness, clearly distinguished from his own thoughts. Maren cannot access their thoughts directly; he hears what they say to him, not what they think. The narration inherits Maren's sensory limitations: the System interface is always mediated through Aldric or Vess's descriptions, never rendered directly until the single exception in Chapter 17.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Varied by emotional register. Default: medium-length sentences with periodic short declaratives for grounding. When Maren is performing (lying, charming, faking): smoother, more controlled rhythm with longer subordinate-clause chains. When Maren is honest or overwhelmed: choppier, more fragmented, more concrete. Fight scenes: visceral and slightly disoriented, reflecting Maren's System-blindness \u2014 sensation and proprioception without the visual data everyone else has. Quiet scenes: allow longer, more observational sentences. The rhythm should breathe differently in every chapter.",
+      "sensory_bias": [
+        "tactile \u2014 Maren's primary sense channel; the physical world is how he navigates System-blindness",
+        "auditory \u2014 the hum of System activity, Aldric and Vess's voices, the specific sounds of quest-light and contamination",
+        "proprioceptive \u2014 Maren's body doing things he didn't choose; the internal sensation of carrying fragments; the physical cost of consumption",
+        "olfactory \u2014 contamination has smell; ritual has smell; the world stinks in specific ways that the System-sighted don't notice because they navigate by interface"
+      ]
+    }
+  }
+}

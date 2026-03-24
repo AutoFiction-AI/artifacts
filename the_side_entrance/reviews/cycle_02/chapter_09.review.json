@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_09",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_09_craft_001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_02/chapters/chapter_09.md:173",
+      "problem": "The chapter creates a timeline impossibility at the handoff between the Noor scene and the night-forgery scene. Line 173 says it is 'not yet three' and then says Beni 'took Bea to school,' which is not temporally possible for a same-day school drop-off and conflicts with the Wednesday route sequence the chapter later treats as already existing in the Ashdown book. This is a continuity break, not just awkward phrasing.",
+      "rewrite_direction": "Revise the transition at snapshots/cycle_02/chapters/chapter_09.md:173 so the timeline is physically possible. Either change the school action to an afternoon collection/return beat, or move the clock reference to a morning hour and realign the following itinerary so the day still reaches the depot by night. Keep the practical bridge into the forgery scene, but make the sequence unambiguous.",
+      "acceptance_test": "Pass if a close read of snapshots/cycle_02/chapters/chapter_09.md:173 shows a temporally possible action sequence: a pre-3 PM timestamp cannot coexist with 'took Bea to school' as a same-day drop-off. Fail if the revised passage still pairs an afternoon timestamp with a school-departure action or otherwise leaves the Wednesday route order impossible."
+    },
+    {
+      "finding_id": "chapter_09_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_02/chapters/chapter_09.md:153; snapshots/cycle_02/chapters/chapter_09.md:249",
+      "problem": "The close-third voice briefly slips from Beni's materially grounded register into packaged thesis writing. At line 153 the paragraph uses the same 'He remembered...' stem three times, then lands on 'Chosen was not the same as known'; at line 249 the forged-record beat resolves into 'The worst choices he had made in his life had all happened in rooms that would have looked ordinary to anyone else.' Both moves flatten the prose into explained meaning instead of letting the upholstery, cash, ink, and record-keeping details carry the realization. The repeated sentence scaffold is also a chapter-level prose tic under the constitution's repetition rule.",
+      "rewrite_direction": "Rework the reflection beats at snapshots/cycle_02/chapters/chapter_09.md:153 and snapshots/cycle_02/chapters/chapter_09.md:249 so Beni's recognition arrives through concrete recalled detail and bodily reaction rather than triple anaphora or detachable aphorism. Keep the same emotional information, but anchor it to specifics already present in the scene: seat seam, cash thickness, hand cramp, ink drag, odometer arithmetic, or the feel of his initials on the page.",
+      "acceptance_test": "Pass if the revised memory passage at snapshots/cycle_02/chapters/chapter_09.md:153 does not reuse the same sentence stem more than twice and if the reflective beat around snapshots/cycle_02/chapters/chapter_09.md:249 conveys Beni's self-recognition through concrete scene detail rather than a standalone thesis sentence. Fail if the passage still depends on triple 'He remembered...' scaffolding or on generalized authorial summary to explain what the scene already dramatizes."
+    }
+  ],
+  "summary": "The chapter lands its major causal turn cleanly: the paparazzi image ripples through the household and depot, Noor's warning has weight, and the logbook falsification is rendered with enough procedural specificity to matter later. It fails this review pass because one HIGH continuity contradiction breaks the day's timeline and one MEDIUM prose/voice lapse slips into repeated scaffolding and aphoristic explanation where Beni's close-third should stay materially grounded."
+}

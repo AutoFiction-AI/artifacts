@@ -1,0 +1,69 @@
+{
+  "acceptance_targets": [
+    "[ch02-craft-001] PASS if revised lines 561-581 show Tomas performing a specific illegal county act on the page (false entry written, county fuel dispensed, or illicit departure launched) while Mina witnesses it; FAIL if the chapter still ends with both cans empty and the ledger line blank."
+  ],
+  "chapter_id": "chapter_02",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if revised lines 561-581 show Tomas performing a specific illegal county act on the page (false entry written, county fuel dispensed, or illicit departure launched) while Mina witnesses it; FAIL if the chapter still ends with both cans empty and the ledger line blank.",
+      "chapter_id": "chapter_02",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:561; snapshots/cycle_02/chapters/chapter_02.md:563; snapshots/cycle_02/chapters/chapter_02.md:575; snapshots/cycle_02/chapters/chapter_02.md:581",
+      "finding_id": "ch02-craft-001",
+      "problem": "The chapter ends with the gas cans still empty and the falsified ledger line still blank, so the irreversible county violation has not actually happened on the page. That contradicts the continuity sheet's canonical chapter-02 state transition that Tomas starts falsifying fuel use and giving Mina illicit night access here, and it weakens the chapter's consequence by deferring the ugliest operational act to chapter_03.",
+      "rewrite_direction": "Revise the ending in snapshots/cycle_02/chapters/chapter_02.md:561-581 so Tomas commits the first irreversible county offense before Mina leaves: either he writes the false log entry at the station, fills the cans with the county key, or initiates the run itself in this chapter. Keep Mina present for the choice so the chapter closes on witnessed consequence rather than anticipation.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "e3a059ca762d652f1b0c41d4877670a04057571c8bbe29173ac16313b7ac544a",
+  "must_fix_count": 1,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into the book's uncomfortable overlaps: desire entangled with access, wonder contaminated by biotech history, class need shaping erotic choices, and ecological harm rendered at creature scale. When a scene sits on the edge between restraint and retreat, keep the pressure visible through bodies, residue, changed behavior, or social cost. If an exact detail would make the material more embarrassing, more sensual, or more morally compromising, that is usually the detail to keep.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If sex, ecological damage, class shame, or moral compromise are softened into tasteful fog at the moment they should bite, the scene has failed and must be rewritten at higher specificity.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High - contractions are the norm in spoken dialogue; uncontracted forms should signal deliberate emphasis, institutional performance, or a character-specific formality shift.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate compression and dilation aggressively: single-scene nocturnes, comic paperwork chapters, quiet survey chapters, domestic weather chapters, confrontational set pieces, and aftermath chapters should sit beside each other without repeating the same rhythm two chapters in a row.",
+      "diction": "Concrete, coastal, and exact without brochure prettiness; scientific and bureaucratic terms may appear when the characters would think or speak through them, but they should stay embodied by consequence.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third centered on Mina Cordero, with free-indirect access tight enough to track bodily desire, shame, and observational obsession without collapsing into confessional summary",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Supple sentence music that can hold humidity, rot, and erotic charge, then cut hard into blunt compression at moments of humiliation, procedural friction, or ecological damage.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

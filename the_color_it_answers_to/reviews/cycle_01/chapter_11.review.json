@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_11",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch11-f001",
+      "source": "craft",
+      "severity": "CRITICAL",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:264",
+      "problem": "The sentence about what Damaris's \"voice profile\" would say is explicit process leakage. It imports out-of-world calibration language into close third person, breaks period immersion, and violates the constitution's ban on process leakage at a moment that should tighten pressure.",
+      "rewrite_direction": "Rewrite the thought at snapshots/cycle_01/chapters/chapter_11.md:264 so Silas reads Damaris's shift entirely through in-world perception: her body, timing, silence, or the way her newsroom performance drops off. Keep the beat that she stops narrating once the story becomes a wound she is inside, but remove any metatextual terminology from the surrounding beat anchored at snapshots/cycle_01/chapters/chapter_11.md:263, snapshots/cycle_01/chapters/chapter_11.md:264, and snapshots/cycle_01/chapters/chapter_11.md:265.",
+      "acceptance_test": "Pass if the beat anchored at snapshots/cycle_01/chapters/chapter_11.md:263, snapshots/cycle_01/chapters/chapter_11.md:264, and snapshots/cycle_01/chapters/chapter_11.md:265 contains no terms like \"voice profile\" or any comparable authorial-calibration language, and the revised sentence reads as Silas's lived observation of Damaris rather than commentary about character design. Fail if the paragraph still gestures outside the world of the novel."
+    },
+    {
+      "finding_id": "ch11-f002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:5; snapshots/cycle_01/chapters/chapter_11.md:231; snapshots/cycle_01/chapters/chapter_11.md:302; snapshots/cycle_01/chapters/chapter_11.md:416",
+      "problem": "The chapter leans four times on the same abstract reversal formula, \"It was not X. It was Y.\" Once is emphasis; four times is a visible tic. The repetition flattens rhythm and makes key realizations sound machine-shaped instead of scene-born.",
+      "rewrite_direction": "Revise at least two of the cited sentences at snapshots/cycle_01/chapters/chapter_11.md:5, snapshots/cycle_01/chapters/chapter_11.md:231, snapshots/cycle_01/chapters/chapter_11.md:302, and snapshots/cycle_01/chapters/chapter_11.md:416 so the distinction is carried by image, action, or syntax variation instead of the same contrastive template. Keep whichever instance is doing the most work and vary the others locally in place.",
+      "acceptance_test": "Pass if the revised chapter contains no more than two instances of the exact \"It was not ... It was ...\" construction at the cited beats, and at least two of those four beats now express the contrast through concrete scene language rather than the same abstract sentence shape. Fail if three or more cited beats still use the same formula."
+    },
+    {
+      "finding_id": "ch11-f003",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:342; snapshots/cycle_01/chapters/chapter_11.md:352; snapshots/cycle_01/chapters/chapter_11.md:366; snapshots/cycle_01/chapters/chapter_11.md:368; snapshots/cycle_01/chapters/chapter_11.md:370; snapshots/cycle_01/chapters/chapter_11.md:372; snapshots/cycle_01/chapters/chapter_11.md:374; snapshots/cycle_01/chapters/chapter_11.md:376",
+      "problem": "The final strategy exchange turns into a yes/no confirmation ladder. Silas proposes a bad answer, Inez corrects it, and then the scene keeps diagramming the same anti-monopoly idea through serial one-word replies. That makes Inez function as a validator more than a fully pressuring speaker and drains force from the chapter's key pivot.",
+      "rewrite_direction": "Tighten the deduction chain anchored at snapshots/cycle_01/chapters/chapter_11.md:342, snapshots/cycle_01/chapters/chapter_11.md:352, snapshots/cycle_01/chapters/chapter_11.md:366, and snapshots/cycle_01/chapters/chapter_11.md:390. Cut at least one round of serial confirmations, and replace at least one of Inez's bare \"Yes\" answers at snapshots/cycle_01/chapters/chapter_11.md:368, snapshots/cycle_01/chapters/chapter_11.md:372, or snapshots/cycle_01/chapters/chapter_11.md:376 with a line in her practical register that names use, maintenance, household need, or another concrete consequence. The scene should move from Silas's ownership mistake to the anti-monopoly tactic with sharper leverage, not repeated assent.",
+      "acceptance_test": "Pass if the exchange anchored at snapshots/cycle_01/chapters/chapter_11.md:342, snapshots/cycle_01/chapters/chapter_11.md:352, snapshots/cycle_01/chapters/chapter_11.md:366, and snapshots/cycle_01/chapters/chapter_11.md:390 no longer contains three consecutive strategic prompts answered by bare one-word confirmations from Inez, and if within two rebuttal turns after Silas suggests proving the mother line at snapshots/cycle_01/chapters/chapter_11.md:342 the dialogue advances to a new tactical or emotional consequence not already stated by Vero. Fail if the exchange still reads as a schematic Q-and-A ladder."
+    }
+  ],
+  "summary": "Chapter 11 lands the required revelation engine: the ledger functions as factual bridge, Aunt Vero's history arrives with resentment and personality intact, Gideon's regatta scheme reads as a real saturation campaign, and continuity/tense stay clean. It still fails craft, dialogue, and prose on a CRITICAL process-leak sentence in the Damaris scene, a four-time reusable prose formula, and a late yes/no strategy ladder that over-explains the pivot instead of letting Inez and Silas drive it through sharper pressure."
+}

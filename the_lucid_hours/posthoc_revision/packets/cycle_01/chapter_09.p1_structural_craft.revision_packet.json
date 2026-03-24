@@ -1,0 +1,122 @@
+{
+  "acceptance_targets": [
+    "[agnes_roommate_age_discrepancy] The roommate's age is identical at L1571 and L1914. Alzheimer's duration is clinically plausible for the chosen age.",
+    "[somatic_gesture_overuse_chapter_09] L1745 uses a phrasing for the badge gesture that does not repeat 'hand went to her badge.'",
+    "[RED-06] Ch9 does not contain a sentence of the form 'Burt Kovacs was [age] and his dementia was [real/the real thing].' Burt's condition is shown through behavior in the scene, not re-stated as narrator summary.",
+    "[RED-19] Ch9 contains em-dashes in no more than 15% of prose lines (approximately 21 of 142).",
+    "[CON-04] No passage describes Burt's fingers on piano keys. All instrument references identify him as a trumpet player consistent with the continuity sheet."
+  ],
+  "chapter_id": "chapter_09",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "The roommate's age is identical at L1571 and L1914. Alzheimer's duration is clinically plausible for the chosen age.",
+      "chapter_id": "chapter_09",
+      "cycle": 1,
+      "evidence": "FINAL_NOVEL.md:1571 (Ch8): 'Her roommate, Doris Okonkwo, eighty-three, was five years into Alzheimer's.' FINAL_NOVEL.md:1914 (Ch9): 'Her roommate, Doris, ninety-one and deep into Alzheimer's.' The timeline between these chapters is approximately two weeks.",
+      "finding_id": "agnes_roommate_age_discrepancy",
+      "problem": "Agnes's roommate ages eight years between consecutive chapters. Eighty-three to ninety-one in two weeks of story time is an obvious factual error that undermines the reader's trust in the narrator's reliability.",
+      "rewrite_direction": "Choose one age and apply it at both FINAL_NOVEL.md:1571 and FINAL_NOVEL.md:1914. Given the description of severe Alzheimer's and PEG-tube dependency elsewhere, ninety-one is the more plausible age. Update L1571 to 'ninety-one' and adjust the 'five years into Alzheimer's' duration if needed for clinical consistency.",
+      "severity": "MEDIUM",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "L1745 uses a phrasing for the badge gesture that does not repeat 'hand went to her badge.'",
+      "chapter_id": "chapter_09",
+      "cycle": 1,
+      "evidence": "FINAL_NOVEL.md:1745 'Carmen's hand went to her badge, adjusted it \u2014 the automatic motion Agnes had seen her make during medication counts that did not add up.' FINAL_NOVEL.md:1938 'Her gold crucifix caught the late-morning light through the window.'",
+      "finding_id": "somatic_gesture_overuse_chapter_09",
+      "problem": "One badge and one crucifix instance in the same chapter. The badge instance at L1745 is one of the stronger uses \u2014 Agnes observes it as diagnostic evidence \u2014 but it uses the template phrase 'hand went to her badge' that appears nearly verbatim at L3813, L4012, and elsewhere.",
+      "rewrite_direction": "Retain FINAL_NOVEL.md:1745 (it earns its place through Agnes's POV interpretation) but vary the phrasing so it does not duplicate 'hand went to her badge.' FINAL_NOVEL.md:1938 is atmospheric and can stay if the global crucifix count is brought within range.",
+      "severity": "MEDIUM",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch9 does not contain a sentence of the form 'Burt Kovacs was [age] and his dementia was [real/the real thing].' Burt's condition is shown through behavior in the scene, not re-stated as narrator summary.",
+      "chapter_id": "chapter_09",
+      "cycle": 1,
+      "evidence": "Ch3 L433: 'Burt Kovacs was eighty-eight and his dementia was the real thing...his long fingers \u2014 musician's fingers'; Ch9 L2002: 'Burt Kovacs was eighty-eight and his dementia was real...those hands lay on the thermal blanket, long-fingered and mostly still, occasionally twitching in patterns that might have been remembered chord progressions'",
+      "finding_id": "RED-06",
+      "problem": "Near-verbatim restatement. Ch3 L433 establishes 'Burt Kovacs was eighty-eight and his dementia was the real thing' plus 'long fingers \u2014 musician's fingers.' Ch9 L2002 restates 'Burt Kovacs was eighty-eight and his dementia was real' plus 'long-fingered.' The sentence structure, age, dementia qualifier, and finger description are all repeated with minimal variation.",
+      "rewrite_direction": "In Ch9 L2002, cut the age-plus-dementia-qualifier sentence \u2014 the reader has been told this at least twice (Ch3 L433, Ch5 L946). Enter Burt's surveyor scene through what the surveyor sees, not through a narrator re-establishing his baseline. The twitching-as-chord-progressions detail is a fresh observation and can stay if the lead-in sentence is cut.",
+      "severity": "HIGH",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch9 contains em-dashes in no more than 15% of prose lines (approximately 21 of 142).",
+      "chapter_id": "chapter_09",
+      "cycle": 1,
+      "evidence": "Ch9 has 47 em-dash-containing prose lines out of 142 total prose lines = 33.1% density. Manuscript-wide threshold is 10%.",
+      "finding_id": "RED-19",
+      "problem": "Ch9 (the state survey chapter) has the highest absolute count of em-dash lines (47). At 33.1% density, the em-dash functions as a general-purpose connector rather than a marked interruption.",
+      "rewrite_direction": "Reduce Ch9's em-dash density from 33.1% to below 15% by converting at least 25 of the 47 em-dash lines to use alternative punctuation. Prioritize cutting em-dashes in descriptive passages and background exposition; retain them in dialogue and high-tension moments where the interruption mirrors character thought.",
+      "severity": "HIGH",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "No passage describes Burt's fingers on piano keys. All instrument references identify him as a trumpet player consistent with the continuity sheet.",
+      "chapter_id": "chapter_09",
+      "cycle": 1,
+      "evidence": "Ch3 L433: 'He might have been dreaming about a piano'; Ch9 L2002: 'his hands moving over piano keys fast and exact, as if the thinking lived in his fingers'; Ch9 L2018: 'rubbing his thumb against his forefinger...as if there were still piano keys there'; Ch11 L2710: 'those long musician's fingers, the ones that had held a trumpet in a photograph she'd seen a hundred times'; Ch11 L2714: 'him holding a trumpet'; Ch11 L2750: 'playing trumpet in clubs on Fifty-Second Street'; continuity sheet: 'Retired jazz musician and trumpeter'",
+      "finding_id": "CON-04",
+      "problem": "Burt's instrument is inconsistent. Ch3 and Ch9 describe him dreaming of piano keys and his hands moving over piano keys. Ch11 and the continuity sheet identify him as a trumpet player who played clubs on 52nd Street. A trumpeter's muscle memory would not produce piano-key finger movements. The finger-tapping gesture (tapping on armrests) is ambiguous but the 'piano keys' language in Ch9 L2002 and L2018 directly contradicts the trumpet identification.",
+      "rewrite_direction": "In Ch9 L2002, replace 'piano keys' with a trumpet-appropriate description (e.g., 'his hands holding a horn, his fingers pressing valves'). In Ch9 L2018, replace 'as if there were still piano keys there' with a trumpet-appropriate gesture. In Ch3 L433, replace 'dreaming about a piano' with 'dreaming about a trumpet' or 'dreaming about a stage.' Ensure all instrument references align with the continuity sheet's 'trumpeter' designation.",
+      "severity": "HIGH",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "cbe6cc52c12ee7bcc51adbb2a6a4185a5318bbb8223e406f62974f50500f2dc8",
+  "must_fix_count": 5,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This is a dark comedy about elderly agency, institutional failure, and moral compromise in a setting most fiction treats as a punchline or a tragedy but never both. The risks the novel must take: render the comedy of octogenarians as pharmaceutical distributors without condescending to them or turning them into lovable rogues; make Carmen's escalating complicity fully legible without moralizing about it; show the bodily realities of aging \u2014 incontinence, tremor, cognitive decline, falls, the smell of a body that doesn't leave a building \u2014 with unsentimental specificity; render the economic desperation of both healthcare workers and uninsured buyers without turning either into social-issue abstractions; give the moral ambiguity of the ring genuine weight by refusing to resolve it into either 'they were wrong' or 'they were heroes.' The novel must trust readers to sit with complexity. When in doubt between too raw and too safe, choose raw. A nursing home that smells like potpourri is a nursing home written by someone who's never been in one.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism for bodily functions, aging, economic shame, institutional dysfunction, or the realities of nursing home care is a craft failure. The novel's comedy and humanity depend on rendering what polite fiction glosses over: what it smells like to clean someone who can't clean themselves, what it costs to count coins for a bus fare, what oxycodone sells for per milligram on the secondary market, what a concussion looks like on an 88-year-old skull, what it sounds like when someone with Parkinson's tries to hold a coffee cup steady, what Burt's dementia actually looks like up close. If the prose flinches from these specifics, the novel loses its authority.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the default for all dialogue. Uncontracted forms appear only for emphasis, character-specific formality (Agnes's low contraction level), Carmen under extreme stress reverting to formal speech, or deliberate register choices. In a contemporary New Jersey nursing home, stiff diction is the anomaly, not the norm.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate high-intensity scenes with reflective interiority. Vary scene count: single-scene chapters for maximum compression, three-scene chapters for range. Comic chapters (3, 9) should feel structurally different from quiet character studies (7, 8, 12, 15), which should feel different from crisis chapters (11, 16, 17). Follow a confrontation with a reflection, an escalation with a domestic scene, a comic set piece with an elegiac one. If two consecutive chapters share the same rhythm, one needs redesigning.",
+      "diction": "Grounded and specific. Drug names (oxycodone, alprazolam, hydroxychloroquine), nursing procedures (med pass, pill count, charting, fall assessment), body realities (incontinence, tremor, laceration, scalp bleed). No purple prose, no literary performance. The style should feel like someone who works with their hands is telling you the truth about what she saw.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person, varying by POV character. Carmen chapters are warm and sensory, anchored in the body and the immediate environment. Harry chapters are precise and calculating, with attention to numbers and angles. Agnes chapters are clinical and compressed. Lola chapters are winding and emotionally layered, with embedded memories. Earl chapters are spare and weighted, with silence doing as much work as language. Marcus chapters are kinetic, with physical movement and code-switching. Tammy chapters are flat and observational, her trained eye cataloguing what doesn't add up.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Varied by chapter and POV. Carmen chapters favor medium sentences with occasional long runs when she's anxious. Harry chapters are short and clipped. Comic set pieces (chapters 3 and 9) move between fast inventory and slow domestic beats. Quiet chapters (7, 12, 15) slow down and let space onto the page. No chapter should feel rhythmically identical to the one before it.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "acceptance_targets": [
+    "[ch13-prose-001] Pass if no more than one of the cited passages at snapshots/cycle_02/chapters/chapter_13.md:265, snapshots/cycle_02/chapters/chapter_13.md:455, snapshots/cycle_02/chapters/chapter_13.md:463, and snapshots/cycle_02/chapters/chapter_13.md:491 still uses a direct not-X/yes-Y correction structure, and each revised passage still communicates its contrast clearly on first read. Fail if the chapter still repeats that same sentence formula across most of those locations."
+  ],
+  "chapter_id": "chapter_13",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if no more than one of the cited passages at snapshots/cycle_02/chapters/chapter_13.md:265, snapshots/cycle_02/chapters/chapter_13.md:455, snapshots/cycle_02/chapters/chapter_13.md:463, and snapshots/cycle_02/chapters/chapter_13.md:491 still uses a direct not-X/yes-Y correction structure, and each revised passage still communicates its contrast clearly on first read. Fail if the chapter still repeats that same sentence formula across most of those locations.",
+      "chapter_id": "chapter_13",
+      "cycle": 2,
+      "evidence": "A repeated negation-then-correction sentence shape appears at snapshots/cycle_02/chapters/chapter_13.md:265, snapshots/cycle_02/chapters/chapter_13.md:455, snapshots/cycle_02/chapters/chapter_13.md:463, and snapshots/cycle_02/chapters/chapter_13.md:491.",
+      "finding_id": "ch13-prose-001",
+      "problem": "The prose leans multiple times on the same correction formula: \"They were not chapel bells. They were quarry bells,\" \"They were not gathered to stare this time. They were gathered to load,\" and \"It had not transformed. It had changed.\" By the back half, the repeated not-X/yes-Y rhythm becomes a tic and makes the chapter's transitions feel mechanically pre-shaped instead of freshly observed.",
+      "rewrite_direction": "Rework at least three of snapshots/cycle_02/chapters/chapter_13.md:265, snapshots/cycle_02/chapters/chapter_13.md:455, snapshots/cycle_02/chapters/chapter_13.md:463, and snapshots/cycle_02/chapters/chapter_13.md:491 so the contrast is carried by different syntax, image, or action rather than another direct negation-correction setup. Preserve the underlying distinctions, but do not let the same sentence template keep announcing them.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "39441ee2c631e43ba7123ab05d93c6cda55893a9ed27db0e62b72e39091bd4fd",
+  "must_fix_count": 1,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on prose and copyedit finish: diction precision, rhythm control, sentence-level clarity, grammar, line-level polish without flattening style, and explicit aesthetic-risk audit (sanitization is the primary risk \u2014 do not soften or euphemize; push toward creative risk and specificity).",
+    "key": "p3_prose_copyedit",
+    "label": "prose/copyedit fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into the collision of sanctity, lust, labor, rot, and family resentment. In edge cases, choose the more concrete, uncomfortable, and character-specific rendering over symbolic safety; if an image or action feels too polite for the pressure, it is probably wrong.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If sex, violence, shame, grief, or economic pressure drives a scene, vague language counts as a failed beat; replace euphemism with the exact bodily, social, or material consequence the character experiences.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High - contractions are the norm across dialogue; uncontracted forms are reserved for ritual speech, emphasis, or deliberate character-specific formality.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Vary scene count, dialogue density, and narrative movement aggressively: follow ordeal with meal, revelation with labor, schism with care, and public spectacle with close-bodied aftermath so no adjacent chapters share the same structural rhythm.",
+      "diction": "Concrete, bodily, locally sacred, and unsanitized; lyrical only when pressure earns it, never as a decorative default.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person rotating among the five siblings; each scene stays inside one consciousness and lets the river press through perception rather than omniscient explanation.",
+      "narrative_tense": "Past tense.",
+      "rhythm_target": "Alternate muscular propulsion with denser lyric accumulation; peak scenes should tighten and clarify rather than dissolve into fragmentary haze.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

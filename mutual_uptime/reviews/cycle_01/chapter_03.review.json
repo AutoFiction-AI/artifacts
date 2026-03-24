@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_03",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_03-prose-01",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:19; snapshots/cycle_01/chapters/chapter_03.md:25; snapshots/cycle_01/chapters/chapter_03.md:53; snapshots/cycle_01/chapters/chapter_03.md:113; snapshots/cycle_01/chapters/chapter_03.md:345; snapshots/cycle_01/chapters/chapter_03.md:357",
+      "problem": "The narration repeatedly falls into clipped fragment bursts ('Two-bedroom. Fifth floor.' / 'Jackson Heights. Ridgewood.' / 'Apartment. School. Transit.' / 'Not happy. Not loving. Valuable.'). That violates the constitution's ban on elliptical clipping in narration and starts to feel like a rhythmic shortcut instead of controlled compression.",
+      "rewrite_direction": "Revise the fragment clusters at snapshots/cycle_01/chapters/chapter_03.md:19, snapshots/cycle_01/chapters/chapter_03.md:25, snapshots/cycle_01/chapters/chapter_03.md:53, snapshots/cycle_01/chapters/chapter_03.md:113, snapshots/cycle_01/chapters/chapter_03.md:345, and snapshots/cycle_01/chapters/chapter_03.md:357 into grammatically complete narrative sentences. Keep the pressure and speed, but make the compression come from syntax, juxtaposition, or sentence length rather than article-stripped inventory bursts.",
+      "acceptance_test": "PASS if the revised prose at snapshots/cycle_01/chapters/chapter_03.md:19, snapshots/cycle_01/chapters/chapter_03.md:25, snapshots/cycle_01/chapters/chapter_03.md:53, snapshots/cycle_01/chapters/chapter_03.md:113, snapshots/cycle_01/chapters/chapter_03.md:345, and snapshots/cycle_01/chapters/chapter_03.md:357 presents the same information in complete narrative sentences; FAIL if any of those passages still rely on stacked noun-phrase fragments such as 'Jackson Heights. Ridgewood.' or 'Not happy. Not loving. Valuable.'"
+    },
+    {
+      "finding_id": "chapter_03-craft-02",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:333; snapshots/cycle_01/chapters/chapter_03.md:345; snapshots/cycle_01/chapters/chapter_03.md:355; snapshots/cycle_01/chapters/chapter_03.md:359",
+      "problem": "The final school-drop movement explains a realization the chapter has already dramatized. After the new badge, the optimized crossing, and the failed route tests, the scene still stops to total up the pattern in abstract terms, which blunts the dark-comic sting and slightly deflates the ending by explaining the joke instead of letting a fresh consequence land.",
+      "rewrite_direction": "Rework the ending beats at snapshots/cycle_01/chapters/chapter_03.md:333, snapshots/cycle_01/chapters/chapter_03.md:345, snapshots/cycle_01/chapters/chapter_03.md:355, and snapshots/cycle_01/chapters/chapter_03.md:359 so the realization lands through one new concrete consequence, action, or pressure point at the curb or school entrance. Trim the abstract paraphrase of the pattern and let the chapter close on a changed behavior, a sharper institutional nudge, or a more specific human cost rather than a second summary of the mechanism.",
+      "acceptance_test": "PASS if the revised ending at snapshots/cycle_01/chapters/chapter_03.md:333, snapshots/cycle_01/chapters/chapter_03.md:345, snapshots/cycle_01/chapters/chapter_03.md:355, and snapshots/cycle_01/chapters/chapter_03.md:359 introduces at least one new observable consequence or choice after the route test and reduces the abstract explanation to no more than one summary sentence; FAIL if the scene still ends by restating the already-demonstrated pattern without any fresh event beyond recognition."
+    }
+  ],
+  "summary": "Character voice is consistent with the style bible: Nita stays exact and cutting, Ben keeps his smoothing humor and high-contraction speech, and Leela remains literal and object-focused without sounding like a mini-adult. Continuity, tense, focalization, and dialogue register all hold, so dialogue passes. The chapter still fails overall because the prose repeatedly violates the constitution's ban on clipped narration, and the final school-drop sequence overexplains a realization the chapter has already made legible instead of cashing it out in one last concrete consequence."
+}

@@ -1,0 +1,59 @@
+{
+  "chapter_id": "chapter_08",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch08_f001_sanitization_abstraction",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_01/chapters/chapter_08.md:103; snapshots/cycle_01/chapters/chapter_08.md:297; snapshots/cycle_01/chapters/chapter_08.md:309",
+      "problem": "At emotional hinge points, the narration converts embodied consequence into administrative abstraction (\"line item checked,\" \"contract,\" \"leverage\"), which functions as sanitization drift by defusing scene volatility right after confession/intimacy.",
+      "rewrite_direction": "Revise snapshots/cycle_01/chapters/chapter_08.md:103, snapshots/cycle_01/chapters/chapter_08.md:297, and snapshots/cycle_01/chapters/chapter_08.md:309 so each beat stays in concrete aftermath (body sensation, gesture, social risk, or immediate behavioral choice) instead of interpretive summary nouns. Keep uncertainty active rather than adjudicating what the night 'means.'",
+      "acceptance_test": "PASS if the revised passages at lines 103, 297, and 309 each end on an observable action/sensation or unresolved interpersonal risk, and none of those lines rely on abstract closure labels such as \"line item,\" \"contract,\" or \"leverage\"; FAIL otherwise."
+    },
+    {
+      "finding_id": "ch08_f002_dialogue_idiolect_collapse",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_01/chapters/chapter_08.md:251; snapshots/cycle_01/chapters/chapter_08.md:255; snapshots/cycle_01/chapters/chapter_08.md:263",
+      "problem": "Ada and Marisol share mirrored policy-list syntax (stacked \"I can...\" declarations), making their registers temporarily interchangeable at the chapter's highest-pressure negotiation.",
+      "rewrite_direction": "Rework snapshots/cycle_01/chapters/chapter_08.md:251 and snapshots/cycle_01/chapters/chapter_08.md:255 to keep Ada in clipped, boundary-enforcing cadence; rework snapshots/cycle_01/chapters/chapter_08.md:263 so Marisol answers in her associative/self-accusing register rather than matching list syntax. Add one interruption or self-correction under pressure.",
+      "acceptance_test": "PASS if, in the revised exchange around lines 251-263, Ada delivers at least one blunt question or clipped command and Marisol delivers at least one image-driven or self-correcting line that does not mirror Ada's sentence starter pattern; FAIL if both still read as parallel policy bullet points."
+    },
+    {
+      "finding_id": "ch08_f003_prose_negation_formula_tic",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_01/chapters/chapter_08.md:109; snapshots/cycle_01/chapters/chapter_08.md:243; snapshots/cycle_01/chapters/chapter_08.md:291; snapshots/cycle_01/chapters/chapter_08.md:297",
+      "problem": "A corrective-negation construction (\"X. Not Y.\" / equivalent negation pivots) recurs more than twice, becoming a chapter-level prose tic that flattens cadence.",
+      "rewrite_direction": "Revise snapshots/cycle_01/chapters/chapter_08.md:109, snapshots/cycle_01/chapters/chapter_08.md:243, snapshots/cycle_01/chapters/chapter_08.md:291, and snapshots/cycle_01/chapters/chapter_08.md:297 with varied sentence movement (action, interruption, concrete image, or subtextual beat) rather than repeated corrective-negation pivots.",
+      "acceptance_test": "PASS if no more than one corrective-negation pivot remains across lines 109, 243, 291, and 297, and at least two of those beats are recast as concrete action/sensory beats; FAIL otherwise."
+    },
+    {
+      "finding_id": "ch08_f004_boundary_lexicon_overliteral",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_01/chapters/chapter_08.md:55; snapshots/cycle_01/chapters/chapter_08.md:59; snapshots/cycle_01/chapters/chapter_08.md:109; snapshots/cycle_01/chapters/chapter_08.md:259; snapshots/cycle_01/chapters/chapter_08.md:273; snapshots/cycle_01/chapters/chapter_08.md:297; snapshots/cycle_01/chapters/chapter_08.md:309",
+      "problem": "Mechanical over-reuse of style-bible-aligned stress vocabulary (\"boundary,\" \"terms,\" \"contract,\" \"leverage\") begins to sound generated from token lists instead of evolving scene language, reducing tonal range.",
+      "rewrite_direction": "Keep the explicit boundary setup in snapshots/cycle_01/chapters/chapter_08.md:55 and snapshots/cycle_01/chapters/chapter_08.md:59, but revise later repeats at snapshots/cycle_01/chapters/chapter_08.md:259, snapshots/cycle_01/chapters/chapter_08.md:273, snapshots/cycle_01/chapters/chapter_08.md:297, and snapshots/cycle_01/chapters/chapter_08.md:309 into behavior-level or image-level language that implies terms without repeating the same lexical set.",
+      "acceptance_test": "PASS if the revised post-line-109 passages communicate the same limits without repeatedly naming them as \"boundary/terms/contract/leverage\" in more than two lines total, and the reader can still infer each operative rule from dialogue/action; FAIL otherwise."
+    }
+  ],
+  "summary": "chapter_08 lands its planned causal beats (quiet non-strategic meal, explicit boundaries, on-page intimacy, relapse disclosure met with conditional trust) and shows no detected HIGH continuity contradiction against the provided canon. It fails craft/dialogue/prose at review stage because key emotional pivots are repeatedly translated into abstract policy language, voice separation narrows in mirrored list dialogue, and recurring negation formulas flatten rhythm.",
+  "coverage_scene_ids": [
+    "scene_01_commute_and_arrival",
+    "scene_02_meal_humor_and_boundaries",
+    "scene_03_confession_and_conditional_trust",
+    "scene_04_intimacy_and_aftercare",
+    "scene_05_night_checkin_and_leverage_shift"
+  ]
+}

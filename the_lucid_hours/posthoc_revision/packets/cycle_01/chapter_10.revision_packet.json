@@ -1,0 +1,78 @@
+{
+  "acceptance_targets": [
+    "[kind_of_prose_formula_chapter_10] Chapter 10 contains no more than one instance of 'the kind of X that Y.'",
+    "[RED-16] The 'faded blue cardigan' phrase appears no more than 6 times in the manuscript. No instance after Ch1 includes a narrator explanation that he wears it to every meeting or interaction."
+  ],
+  "chapter_id": "chapter_10",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Chapter 10 contains no more than one instance of 'the kind of X that Y.'",
+      "chapter_id": "chapter_10",
+      "cycle": 1,
+      "evidence": "FINAL_NOVEL.md:2422 'the kind of incomplete med list you got when people outside care settings pieced their treatment together.' FINAL_NOVEL.md:2521 'the kind of coverage that kept a body functional.' FINAL_NOVEL.md:2601 'the kind of sheet someone carried around because throwing it away would make the problem feel official.' Three instances in one chapter.",
+      "finding_id": "kind_of_prose_formula_chapter_10",
+      "problem": "Three uses in a chapter centered on Rosa's medical and economic vulnerability. Each instance classifies an observation rather than rendering it, and the repetition makes the narrator sound like they are sorting rather than seeing.",
+      "rewrite_direction": "Retain the strongest (L2601, which has genuine ironic force). Rewrite FINAL_NOVEL.md:2422 to direct statement (e.g., 'an incomplete med list \u2014 the patchwork you got when...'). Rewrite FINAL_NOVEL.md:2521 to remove the frame (e.g., 'coverage that kept a body functional').",
+      "severity": "MEDIUM",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "The 'faded blue cardigan' phrase appears no more than 6 times in the manuscript. No instance after Ch1 includes a narrator explanation that he wears it to every meeting or interaction.",
+      "chapter_id": "chapter_10",
+      "cycle": 1,
+      "evidence": "Harry's 'faded blue cardigan' appears 11 times across 9 chapters: Ch1 L101/105, Ch3 L399, Ch5 L884, Ch9 L1874, Ch10 L2119, Ch11 L2780, Ch16 L3699, Ch17 L4018/4228, Ch18 L4483. Seven include a narrator gloss ('the one he wore to every meeting/interaction').",
+      "finding_id": "RED-16",
+      "problem": "The faded blue cardigan exceeds the 10-instance image-density threshold. Seven instances include a narrator gloss re-teaching the reader it is Harry's signature item. First establishment is Ch1 L101.",
+      "rewrite_direction": "Across the manuscript, keep 4-6 cardigan references \u2014 the first establishment (Ch1), one mid-novel instance, and 1-2 in the final act. In every retained instance after Ch1, cut the 'he wore to every meeting' gloss. In Ch10 L2119, cut the gloss entirely.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "e912f35a9fb660f751121df58664e1cfc9aa9fecb12b6dca263b0cd0a7b68ef7",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This is a dark comedy about elderly agency, institutional failure, and moral compromise in a setting most fiction treats as a punchline or a tragedy but never both. The risks the novel must take: render the comedy of octogenarians as pharmaceutical distributors without condescending to them or turning them into lovable rogues; make Carmen's escalating complicity fully legible without moralizing about it; show the bodily realities of aging \u2014 incontinence, tremor, cognitive decline, falls, the smell of a body that doesn't leave a building \u2014 with unsentimental specificity; render the economic desperation of both healthcare workers and uninsured buyers without turning either into social-issue abstractions; give the moral ambiguity of the ring genuine weight by refusing to resolve it into either 'they were wrong' or 'they were heroes.' The novel must trust readers to sit with complexity. When in doubt between too raw and too safe, choose raw. A nursing home that smells like potpourri is a nursing home written by someone who's never been in one.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism for bodily functions, aging, economic shame, institutional dysfunction, or the realities of nursing home care is a craft failure. The novel's comedy and humanity depend on rendering what polite fiction glosses over: what it smells like to clean someone who can't clean themselves, what it costs to count coins for a bus fare, what oxycodone sells for per milligram on the secondary market, what a concussion looks like on an 88-year-old skull, what it sounds like when someone with Parkinson's tries to hold a coffee cup steady, what Burt's dementia actually looks like up close. If the prose flinches from these specifics, the novel loses its authority.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the default for all dialogue. Uncontracted forms appear only for emphasis, character-specific formality (Agnes's low contraction level), Carmen under extreme stress reverting to formal speech, or deliberate register choices. In a contemporary New Jersey nursing home, stiff diction is the anomaly, not the norm.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate high-intensity scenes with reflective interiority. Vary scene count: single-scene chapters for maximum compression, three-scene chapters for range. Comic chapters (3, 9) should feel structurally different from quiet character studies (7, 8, 12, 15), which should feel different from crisis chapters (11, 16, 17). Follow a confrontation with a reflection, an escalation with a domestic scene, a comic set piece with an elegiac one. If two consecutive chapters share the same rhythm, one needs redesigning.",
+      "diction": "Grounded and specific. Drug names (oxycodone, alprazolam, hydroxychloroquine), nursing procedures (med pass, pill count, charting, fall assessment), body realities (incontinence, tremor, laceration, scalp bleed). No purple prose, no literary performance. The style should feel like someone who works with their hands is telling you the truth about what she saw.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person, varying by POV character. Carmen chapters are warm and sensory, anchored in the body and the immediate environment. Harry chapters are precise and calculating, with attention to numbers and angles. Agnes chapters are clinical and compressed. Lola chapters are winding and emotionally layered, with embedded memories. Earl chapters are spare and weighted, with silence doing as much work as language. Marcus chapters are kinetic, with physical movement and code-switching. Tammy chapters are flat and observational, her trained eye cataloguing what doesn't add up.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Varied by chapter and POV. Carmen chapters favor medium sentences with occasional long runs when she's anxious. Harry chapters are short and clipped. Comic set pieces (chapters 3 and 9) move between fast inventory and slow domestic beats. Quiet chapters (7, 12, 15) slow down and let space onto the page. No chapter should feel rhythmically identical to the one before it.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

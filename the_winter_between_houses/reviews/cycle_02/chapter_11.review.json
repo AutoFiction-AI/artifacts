@@ -1,0 +1,57 @@
+{
+  "chapter_id": "chapter_11",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH11-F001",
+      "source": "booker",
+      "severity": "HIGH",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_02/chapters/chapter_11.md:567 sets 'van at Walsh gate Thursday twelve sharp,' creating a boundary handoff conflict.",
+      "problem": "Continuity contradiction at the chapter boundary: the chapter establishes Dev's pickup at the Walsh gate, but Chapter 12 boundary context requires a market cut-through rendezvous. This breaks spatial causality and weakens the secrecy logic of Noreen's plan.",
+      "rewrite_direction": "Edit the booking message at snapshots/cycle_02/chapters/chapter_11.md:567 so Dev is told to wait at the market cut-through. If you keep the gate in that line, add an explicit reroute beat before close at snapshots/cycle_02/chapters/chapter_11.md:577 or snapshots/cycle_02/chapters/chapter_11.md:603 that names why the location changed.",
+      "acceptance_test": "PASS if, by the end of snapshots/cycle_02/chapters/chapter_11.md:603, the revised text leaves one unambiguous pickup location matching the market cut-through setup for Chapter 12. FAIL if Walsh gate remains the only stated location, or if both locations appear without an explicit on-page reroute reason."
+    },
+    {
+      "finding_id": "CH11-F002",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_02/chapters/chapter_11.md:125 ('charge on an invoice'), snapshots/cycle_02/chapters/chapter_11.md:241 ('plaster carried legal authority'), snapshots/cycle_02/chapters/chapter_11.md:269 ('audited ledgers'), snapshots/cycle_02/chapters/chapter_11.md:369 ('like a court filing'), snapshots/cycle_02/chapters/chapter_11.md:467 ('managing this week's cash flow').",
+      "problem": "Peter's control is repeatedly rendered through accounting/legal metaphors, which reads as over-literal style-bible token reuse. The pattern flattens menace by keeping control in the same conceptual register instead of varying through embodied coercion.",
+      "rewrite_direction": "In snapshots/cycle_02/chapters/chapter_11.md:241, snapshots/cycle_02/chapters/chapter_11.md:269, snapshots/cycle_02/chapters/chapter_11.md:359, and snapshots/cycle_02/chapters/chapter_11.md:467, keep at most one signature accounting metaphor per beat and replace the rest with concrete physical/social control details (space-blocking, object seizure, timing threats, resource gating).",
+      "acceptance_test": "PASS if the revised spans at snapshots/cycle_02/chapters/chapter_11.md:241, snapshots/cycle_02/chapters/chapter_11.md:269, snapshots/cycle_02/chapters/chapter_11.md:359, and snapshots/cycle_02/chapters/chapter_11.md:467 contain no more than two total accounting/legal metaphors and include at least three distinct embodied control actions visible on the page. FAIL if the same ledger/legal metaphor family still dominates those beats."
+    },
+    {
+      "finding_id": "CH11-F003",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "The cue phrase repeats at snapshots/cycle_02/chapters/chapter_11.md:19 ('There it was...'), snapshots/cycle_02/chapters/chapter_11.md:181 ('There it was again...'), and snapshots/cycle_02/chapters/chapter_11.md:317 ('There it was.').",
+      "problem": "A recurring recognition formula appears three times, creating an autopilot prose tic. Repetition at this density reduces surprise in Noreen's interior turns.",
+      "rewrite_direction": "Rework at least two of the three entries at snapshots/cycle_02/chapters/chapter_11.md:19, snapshots/cycle_02/chapters/chapter_11.md:181, and snapshots/cycle_02/chapters/chapter_11.md:317 so each recognition beat opens with a different syntactic move anchored to immediate sensory detail.",
+      "acceptance_test": "PASS if 'There it was' appears no more than once in the chapter and the other two cited beats are rewritten with distinct openings tied to present-scene stimuli. FAIL if all three beats retain the same formula."
+    },
+    {
+      "finding_id": "CH11-F004",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "Medical warning dialogue clusters at snapshots/cycle_02/chapters/chapter_11.md:207, snapshots/cycle_02/chapters/chapter_11.md:519, and snapshots/cycle_02/chapters/chapter_11.md:553 use near-identical symptom-list + imperative cadence.",
+      "problem": "Receptionist and Keane land in the same warning syntax and rhythm, which blurs idiolect separation in two different authority voices. The repeated checklist cadence starts to read as transcripted protocol instead of character-specific speech.",
+      "rewrite_direction": "Differentiate the exchanges in snapshots/cycle_02/chapters/chapter_11.md:203 and snapshots/cycle_02/chapters/chapter_11.md:519: keep receptionist language clipped/procedural, but push Keane's lines at snapshots/cycle_02/chapters/chapter_11.md:553 and snapshots/cycle_02/chapters/chapter_11.md:563 toward her body-specific, imperative-chain register.",
+      "acceptance_test": "PASS if the revised receptionist block (around snapshots/cycle_02/chapters/chapter_11.md:203-217) and Keane block (around snapshots/cycle_02/chapters/chapter_11.md:553-563) each contain clearly distinct rhythm and lexical markers, with no repeated symptom-list sentence template across both scenes. FAIL if both voices still deliver materially parallel warning phrasing."
+    }
+  ],
+  "summary": "Chapter 11 sustains pressure and close interiority, but review fails on a HIGH boundary continuity mismatch plus unresolved craft/prose/dialogue flattening patterns (token-list metaphor reuse, repeated recognition formula, and insufficient voice separation in medical warning exchanges).",
+  "coverage_scene_ids": [
+    "chapter_11_scene_01",
+    "chapter_11_scene_02",
+    "chapter_11_scene_03"
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "cycle": 1,
+  "verdict": "FAIL",
+  "summary": "FAIL. The draft has strong embodied specificity and does not sanitize its core material, but it is not shortlist-ready: recurring process-leakage meta references, high-impact continuity confusions, and repeated diction/register flattening undercut Booker-level control. Cross-chapter voice is partially aligned to the style bible, but confrontation chapters repeatedly collapse distinct idiolects into one legal-therapeutic cadence. No verbatim style-bible example-line leakage was found.",
+  "findings": [
+    {
+      "finding_id": "FBR-01",
+      "severity": "CRITICAL",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:6671",
+      "problem": "Process leakage breaks diegesis: the narration repeatedly references manuscript chapter numbers as in-world memory labels (e.g., chapter three/six/eight/sixteen), violating the constitution's no-process-leakage rule and collapsing immersion at key emotional beats.",
+      "rewrite_direction": "Replace meta chapter-number callouts with diegetic time anchors at snapshots/cycle_01/FINAL_NOVEL.md:1934, snapshots/cycle_01/FINAL_NOVEL.md:3214, snapshots/cycle_01/FINAL_NOVEL.md:3686, snapshots/cycle_01/FINAL_NOVEL.md:4879, snapshots/cycle_01/FINAL_NOVEL.md:5515, snapshots/cycle_01/FINAL_NOVEL.md:5802, snapshots/cycle_01/FINAL_NOVEL.md:6282, snapshots/cycle_01/FINAL_NOVEL.md:6671, snapshots/cycle_01/FINAL_NOVEL.md:6743, and snapshots/cycle_01/FINAL_NOVEL.md:7026. Keep chapter numbering only in headings; convert all in-scene references to story-time language (season/event-based markers).",
+      "acceptance_test": "PASS if each target line reads as in-world memory/time reference with no manuscript chapter-number terminology; FAIL if any target line still uses chapter-number labels outside markdown headings."
+    },
+    {
+      "finding_id": "FBR-02",
+      "severity": "HIGH",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:3690",
+      "problem": "Character-identity continuity collision: \"Marisol Vega\" appears as a junior tournament opponent in chapter 8 and as an adult compliance coordinator with a child in chapter 10, creating unresolved identity ambiguity.",
+      "rewrite_direction": "Disambiguate names by renaming one role and propagating consistently across snapshots/cycle_01/FINAL_NOVEL.md:2805, snapshots/cycle_01/FINAL_NOVEL.md:2843, snapshots/cycle_01/FINAL_NOVEL.md:2851, snapshots/cycle_01/FINAL_NOVEL.md:3684, snapshots/cycle_01/FINAL_NOVEL.md:3690, and snapshots/cycle_01/FINAL_NOVEL.md:3693.",
+      "acceptance_test": "PASS if chapter 8 and chapter 10 clearly refer to distinct full names with no overlap and no reader could infer an impossible age/role shift; FAIL if the same full name still maps to both the junior player and the adult staff role."
+    },
+    {
+      "finding_id": "FBR-03",
+      "severity": "HIGH",
+      "chapter_id": "chapter_18",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:7024",
+      "problem": "Financial-state continuity is arithmetically unclear: utility arrears are $1,860.12 in chapter 9, a $620 payment is logged in chapter 16, but chapter 18 reports $1,420 remaining without explicit accrual explanation, leaving the debt track logically unstable.",
+      "rewrite_direction": "Reconcile the utility ledger across snapshots/cycle_01/FINAL_NOVEL.md:3266, snapshots/cycle_01/FINAL_NOVEL.md:6075, and snapshots/cycle_01/FINAL_NOVEL.md:7024 by either correcting the remaining balance number or adding explicit intervening fees/new charges with dates in snapshots/cycle_01/FINAL_NOVEL.md:7024-7027.",
+      "acceptance_test": "PASS if a reader can compute the chapter 18 balance directly from chapter 9 baseline and chapter 16 payment(s), with any added charges explicitly stated in-text; FAIL if the remaining amount still requires unstated assumptions."
+    },
+    {
+      "finding_id": "FBR-04",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:5628",
+      "problem": "Recurring prose-formula overuse creates mantra diction across chapters: repeated emotional-impact templates (notably 'X landed...' and binary 'It was not X. It was Y.') flatten line-level surprise and violate the constitution's anti-recurring-formula threshold.",
+      "rewrite_direction": "Line-edit the repeated templates at snapshots/cycle_01/FINAL_NOVEL.md:2452, snapshots/cycle_01/FINAL_NOVEL.md:2717, snapshots/cycle_01/FINAL_NOVEL.md:3202, snapshots/cycle_01/FINAL_NOVEL.md:4575, snapshots/cycle_01/FINAL_NOVEL.md:5628, snapshots/cycle_01/FINAL_NOVEL.md:7092, snapshots/cycle_01/FINAL_NOVEL.md:1517, snapshots/cycle_01/FINAL_NOVEL.md:4158, snapshots/cycle_01/FINAL_NOVEL.md:5501, and snapshots/cycle_01/FINAL_NOVEL.md:6407 to use scene-specific action, syntax, and image rather than reusable templates.",
+      "acceptance_test": "PASS if targeted lines no longer rely on the same 'landed' emotional verb or 'It was not... It was...' binary structure and each beat is conveyed through distinct concrete language; FAIL if the template pattern remains visibly repeated in the listed lines."
+    },
+    {
+      "finding_id": "FBR-05",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:5066",
+      "problem": "Dialogue register convergence in conflict scenes: Anika, Ravi, and Priya frequently share the same polished legal-therapeutic cadence, reducing idiolect separation and age-specific speech texture required by the style bible.",
+      "rewrite_direction": "Revoice mediation exchanges at snapshots/cycle_01/FINAL_NOVEL.md:4970-4993, snapshots/cycle_01/FINAL_NOVEL.md:5058-5073, snapshots/cycle_01/FINAL_NOVEL.md:5080-5097, and snapshots/cycle_01/FINAL_NOVEL.md:5134-5153 so each speaker carries distinct syntax and lexicon: Anika (short, concrete, pressure-fragmented), Ravi (work/process terms with variable contraction under stress), Priya (plain boundary language without courtroom theatrics).",
+      "acceptance_test": "PASS if the revised spans remain intelligible when dialogue tags are removed and each speaker is still identifiable by register/rhythm alone; FAIL if lines remain easily interchangeable across the three speakers."
+    },
+    {
+      "finding_id": "FBR-06",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:4080",
+      "problem": "Chapter-texture variance drifts toward repetition: the middle-book sequence repeatedly opens with domestic sensory inventory and table-negotiation architecture, weakening pacing contrast demanded by the style bible.",
+      "rewrite_direction": "Restructure chapter 12 to break the recurring pulse by adding an external pressure scene before kitchen negotiation and compressing reiterative recap in snapshots/cycle_01/FINAL_NOVEL.md:4080-4137 and snapshots/cycle_01/FINAL_NOVEL.md:4208-4231. Use chapter 9 and chapter 13 openings only as contrast checks (snapshots/cycle_01/FINAL_NOVEL.md:3200 and snapshots/cycle_01/FINAL_NOVEL.md:4421) to avoid rebuilding the same scaffold.",
+      "acceptance_test": "PASS if chapter 12 opens with non-domestic external action and contains only one concise statement of the boundary conflict before terms are set; FAIL if it still repeats the same kitchen-schedule negotiation pattern and duplicated argument beats."
+    },
+    {
+      "finding_id": "FBR-07",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:6499",
+      "problem": "Climactic scene defocus: the retirement beat loses force under layered procedural exposition and sponsor-language loops before and after the decision point.",
+      "rewrite_direction": "Tighten the semifinal retirement sequence by condensing sponsor-protocol exposition at snapshots/cycle_01/FINAL_NOVEL.md:6499-6520 and snapshots/cycle_01/FINAL_NOVEL.md:6571-6590 into one clear consequence beat, preserving medical clarity and Ravi's public support without repeated framing language.",
+      "acceptance_test": "PASS if the scene moves from medical timeout declaration (snapshots/cycle_01/FINAL_NOVEL.md:6431) to definitive retirement and sponsor consequence in one uninterrupted dramatic arc, with no duplicated explanatory loop; FAIL if multiple near-identical consequence explanations remain."
+    }
+  ]
+}

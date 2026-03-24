@@ -1,0 +1,82 @@
+{
+  "acceptance_targets": [
+    "[CH11-PROSE-001] Pass if the revised segment between snapshots/cycle_01/chapters/chapter_11.md:96 and snapshots/cycle_01/chapters/chapter_11.md:122 includes at least three explicit interior moments (thought/sensation/memory/self-assessment) and no uninterrupted run of 10+ paragraphs without internal access. Fail otherwise.",
+    "[CH11-PROSE-002] Pass if the revised chapter uses 'By the time' no more than twice and the three cited transition points each use non-matching sentence constructions. Fail if the same formula remains in three or more places."
+  ],
+  "chapter_id": "chapter_11",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if the revised segment between snapshots/cycle_01/chapters/chapter_11.md:96 and snapshots/cycle_01/chapters/chapter_11.md:122 includes at least three explicit interior moments (thought/sensation/memory/self-assessment) and no uninterrupted run of 10+ paragraphs without internal access. Fail otherwise.",
+      "chapter_id": "chapter_11",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:96; snapshots/cycle_01/chapters/chapter_11.md:122",
+      "finding_id": "CH11-PROSE-001",
+      "problem": "A 10+ paragraph stretch in the central bureaucracy run is rendered mostly as external action, thinning close-third interior access and creating screenplay drift.",
+      "rewrite_direction": "Within snapshots/cycle_01/chapters/chapter_11.md:96 to snapshots/cycle_01/chapters/chapter_11.md:122, add brief interior beats at decision points (for example after snapshots/cycle_01/chapters/chapter_11.md:100, snapshots/cycle_01/chapters/chapter_11.md:112, and snapshots/cycle_01/chapters/chapter_11.md:122) that show thought, sensation, or self-assessment tied to stakes.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if the revised chapter uses 'By the time' no more than twice and the three cited transition points each use non-matching sentence constructions. Fail if the same formula remains in three or more places.",
+      "chapter_id": "chapter_11",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:3; snapshots/cycle_01/chapters/chapter_11.md:66; snapshots/cycle_01/chapters/chapter_11.md:122; snapshots/cycle_01/chapters/chapter_11.md:263",
+      "finding_id": "CH11-PROSE-002",
+      "problem": "The transition construction 'By the time ...' appears four times and becomes a detectable rhythmic tic.",
+      "rewrite_direction": "Retain at most one early anchor use (snapshots/cycle_01/chapters/chapter_11.md:3) and recast later transitions at snapshots/cycle_01/chapters/chapter_11.md:66, snapshots/cycle_01/chapters/chapter_11.md:122, and snapshots/cycle_01/chapters/chapter_11.md:263 with distinct syntactic moves tied to concrete pressure cues.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "ce735ee6b61f0f2b523da35c3ee27b9f01ed129999fac926accf5ac338811b95",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on prose and copyedit finish: diction precision, rhythm control, sentence-level clarity, grammar, line-level polish without flattening style, and explicit aesthetic-risk audit (sanitization is the primary risk \u2014 do not soften or euphemize; push toward creative risk and specificity).",
+    "key": "p3_prose_copyedit",
+    "label": "prose/copyedit fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "When choosing between reputationally safe abstraction and specific discomfort, choose specificity. Render addiction, sexuality, deceit, class shame, and grief at lived scale. In edge cases, preserve character truth and causal accountability over reader comfort or institutional decorum.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene demands bodily, moral, or economic specificity, euphemistic phrasing is treated as a failed draft and must be rewritten with concrete stakes and observable consequence.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the spoken default; full forms appear only for emphasis, ritual language, or character-specific formal posture",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate scene density and pressure modes: pair high-conflict chapters with quiet domestic or documentary chapters, vary dialogue-to-interiority ratios, and prevent identical chapter skeletons in consecutive sequence.",
+      "diction": "contemporary literary diction with class-aware, borough-specific concreteness; avoid prestige-neutral workshop language",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third centered on Marisol, with rare brief distance expansions for institutional scenes",
+      "narrative_tense": "past tense",
+      "rhythm_target": "alternating tensile compression and reflective extension; line-level cadence should carry emotional pressure, not just information",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

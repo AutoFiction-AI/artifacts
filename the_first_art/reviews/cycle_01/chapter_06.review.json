@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_06",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_06_award_01",
+      "source": "award",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:127; snapshots/cycle_01/chapters/chapter_06.md:129; snapshots/cycle_01/chapters/chapter_06.md:133; snapshots/cycle_01/chapters/chapter_06.md:249; snapshots/cycle_01/chapters/chapter_06.md:251",
+      "problem": "The chapter does not trust its own high-wire premise: instead of letting Gavin's deadpan irritation at lost translation time collide with the shared torture around him, the narration repeatedly explains that his response is wrong and rehearses both sides of the moral argument. That explanatory framing blunts the dark-comic discomfort the chapter spine says should land deadpan.",
+      "rewrite_direction": "Rebuild the aftermath and close around concrete choices at snapshots/cycle_01/chapters/chapter_06.md:127, snapshots/cycle_01/chapters/chapter_06.md:129, snapshots/cycle_01/chapters/chapter_06.md:135, snapshots/cycle_01/chapters/chapter_06.md:249, and snapshots/cycle_01/chapters/chapter_06.md:251. Keep Gavin's wrong priorities visible through what he notices, what he almost does, and what he fails to do for Duncan or Miren; cut the abstract adjudication unless a line introduces new pressure.",
+      "acceptance_test": "PASS if the revised aftermath at snapshots/cycle_01/chapters/chapter_06.md:127 and the revised close at snapshots/cycle_01/chapters/chapter_06.md:249 show Gavin's skewed priorities through observable behavior and at most one brief self-diagnostic line in each section; FAIL if either section still spends multiple consecutive paragraphs explaining to the reader that he knows his response is morally wrong."
+    },
+    {
+      "finding_id": "chapter_06_craft_01",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:19; snapshots/cycle_01/chapters/chapter_06.md:135; snapshots/cycle_01/chapters/chapter_06.md:231; snapshots/cycle_01/chapters/chapter_06.md:245",
+      "problem": "The manuscript's location contradicts itself inside the chapter. Gavin hides it under his pillow before the summons, later thinks he needs to go to his trunk to retrieve it, then the text reverts to the manuscript being under his pillow. That unsupported object jump breaks local continuity in a chapter built around the manuscript's pull.",
+      "rewrite_direction": "Make the manuscript's hiding place continuous across snapshots/cycle_01/chapters/chapter_06.md:19, snapshots/cycle_01/chapters/chapter_06.md:135, snapshots/cycle_01/chapters/chapter_06.md:231, and snapshots/cycle_01/chapters/chapter_06.md:245. Either keep it under the pillow all night or add an on-page action where Gavin moves it to the trunk before the common-room aftermath.",
+      "acceptance_test": "PASS if a reader can trace the manuscript from snapshots/cycle_01/chapters/chapter_06.md:19 through snapshots/cycle_01/chapters/chapter_06.md:245 without any unexplained relocation; FAIL if Gavin reaches for the trunk at snapshots/cycle_01/chapters/chapter_06.md:135 while the object is still later treated as being under the pillow without a described move."
+    },
+    {
+      "finding_id": "chapter_06_dialogue_01",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:185; snapshots/cycle_01/chapters/chapter_06.md:186",
+      "problem": "Gavin's explanation lifts a style-bible calibration line almost verbatim: the 'spell is a sentence / grammar / grammar's wrong too' phrasing is too close to the forbidden example text. Calibration lines are not reusable dialogue, and this one reads as template reuse rather than fresh speech.",
+      "rewrite_direction": "Replace Gavin's formulation at snapshots/cycle_01/chapters/chapter_06.md:185 and snapshots/cycle_01/chapters/chapter_06.md:186 with new language that still sounds like him: apologetic, self-correcting, ordinary, and struggling for analogy. Keep the failed explanation dynamic, but do not reuse the sentence-and-grammar scaffold or the phrase 'Except grammar's wrong too.'",
+      "acceptance_test": "PASS if the revised speech at snapshots/cycle_01/chapters/chapter_06.md:185 and snapshots/cycle_01/chapters/chapter_06.md:186 explains the substrate without the sentence-and-grammar calibration phrasing and includes at least one Gavin-style self-correction or hedge; FAIL if a reader can still match the line directly to the style-bible example by wording or structure."
+    },
+    {
+      "finding_id": "chapter_06_prose_01",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:113; snapshots/cycle_01/chapters/chapter_06.md:123; snapshots/cycle_01/chapters/chapter_06.md:237; snapshots/cycle_01/chapters/chapter_06.md:247",
+      "problem": "The chapter leans on the same tremor construction too many times. 'His left hand trembled/trembling' recurs as a default sentence shape across the aftermath and close, turning a real consequence into a prose tic instead of a freshly observed symptom.",
+      "rewrite_direction": "Vary the late-chapter tremor rendering at snapshots/cycle_01/chapters/chapter_06.md:113, snapshots/cycle_01/chapters/chapter_06.md:123, snapshots/cycle_01/chapters/chapter_06.md:237, and snapshots/cycle_01/chapters/chapter_06.md:247. Keep the injury present, but convert repeated declarative labeling into different physical manifestations such as a failed grip, blanket snag, copied rhythm in wood, or a moment where Gavin deliberately hides it.",
+      "acceptance_test": "PASS if the revised aftermath and close at snapshots/cycle_01/chapters/chapter_06.md:113, snapshots/cycle_01/chapters/chapter_06.md:123, snapshots/cycle_01/chapters/chapter_06.md:237, and snapshots/cycle_01/chapters/chapter_06.md:247 keep the tremor visible without reusing the exact 'his left hand trembled/trembling' construction more than twice in the chapter; FAIL if that sentence pattern still appears three or more times across those beats."
+    }
+  ],
+  "summary": "FAIL. The Cruciatus sequence is physically legible and the Miren fracture lands, but the chapter stays below pass level because it over-explains Gavin's moral skew instead of trusting the deadpan collision, breaks manuscript-location continuity, reuses a forbidden calibration line, and repeats the left-hand tremor in formulaic prose."
+}

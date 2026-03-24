@@ -1,0 +1,68 @@
+{
+  "chapter_id": "chapter_14",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch14-F001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:279",
+      "problem": "The narration breaks diegesis with meta framing (\"felt the chapter title in her own head\"), which reads like process leakage instead of close-third interiority and violates the constitution rule against narrative process leakage.",
+      "rewrite_direction": "Rewrite snapshots/cycle_02/chapters/chapter_14.md:279-281 to keep Ina's cognition fully in-world (constraint, risk, route logic) and remove any reference to chapter/story apparatus; preserve the emotional function (no salvation, only narrow pathway) without metafictional wording.",
+      "acceptance_test": "PASS if the revised passage at snapshots/cycle_02/chapters/chapter_14.md:279-281 contains no meta terms such as \"chapter\", \"title\", \"story\", or \"scene\", while still conveying Ina's constrained realization in embodied close-third thought; FAIL otherwise."
+    },
+    {
+      "finding_id": "ch14-F002",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:197, snapshots/cycle_02/chapters/chapter_14.md:201, snapshots/cycle_02/chapters/chapter_14.md:213",
+      "problem": "Sanitization drift at the chapter's key consequence beat: once the seized ledger is confirmed, the prose pivots into procedural timestamp summary instead of rendering specific human fallout in-scene. The narrative reports mechanism but withholds embodied moral cost at the moment it lands.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_14.md:197-214, add one concrete ledger-linked human consequence (specific recipient marker, amount, or risk trigger) and Ina's immediate bodily/cognitive response tied to that person before the release-time montage continues; keep the coercive machinery visible but do not abstract the harm into generic language.",
+      "acceptance_test": "PASS if snapshots/cycle_02/chapters/chapter_14.md:197-214 includes at least one concrete identifying ledger detail and one immediate action/thought from Ina that names the consequence to a real person or household; FAIL if the passage remains procedural-only (logs, timestamps, seizure labels) without individualized fallout."
+    },
+    {
+      "finding_id": "ch14-F003",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:15, snapshots/cycle_02/chapters/chapter_14.md:37, snapshots/cycle_02/chapters/chapter_14.md:167, snapshots/cycle_02/chapters/chapter_14.md:171",
+      "problem": "Choi's interrogation dialogue stays in uniform policy diction with low spoken-texture variance, so high-pressure exchanges read stilted and drift toward the same formal register as Kwon. This weakens idiolect separation and underuses the style bible's high-contraction default for spoken dialogue.",
+      "rewrite_direction": "Revise Choi's lines at snapshots/cycle_02/chapters/chapter_14.md:15-37 and snapshots/cycle_02/chapters/chapter_14.md:165-176 so her authority remains bureaucratic but speech becomes more human under stress: add contractions, at least one interruption/self-correction, and one line that reveals her personal stake without sounding memo-written.",
+      "acceptance_test": "PASS if in the revised equivalents of lines 15/37/167/171/175, Choi uses contractions in at least 3 lines and includes at least one interruption or self-correction marker (dash or restart), while remaining distinct from Kwon's polished formal cadence; FAIL otherwise."
+    },
+    {
+      "finding_id": "ch14-F004",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:9, snapshots/cycle_02/chapters/chapter_14.md:13, snapshots/cycle_02/chapters/chapter_14.md:159, snapshots/cycle_02/chapters/chapter_14.md:223, snapshots/cycle_02/chapters/chapter_14.md:301",
+      "problem": "Recurring conjunctive stacking (multiple \"and\" chains/tricolon accumulation) appears more than twice and becomes a detectable sentence-shape tic, flattening rhythm at moments that should differentiate stress, aftermath, and planning textures.",
+      "rewrite_direction": "In snapshots/cycle_02/chapters/chapter_14.md:9-13, snapshots/cycle_02/chapters/chapter_14.md:159-223, and snapshots/cycle_02/chapters/chapter_14.md:301-309, vary syntax architecture by replacing repeated and-chains with mixed structures (short impact sentence, appositive compression, or verb-led clause) while preserving scene facts.",
+      "acceptance_test": "PASS if the revised targeted spans contain no more than two double-\"and\" accumulation sentences and at least three cited lines are rewritten into visibly different sentence shapes; FAIL if the same stacking formula remains the dominant pattern."
+    },
+    {
+      "finding_id": "ch14-F005",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:223, snapshots/cycle_02/chapters/chapter_14.md:233, snapshots/cycle_02/chapters/chapter_14.md:243, snapshots/cycle_02/chapters/chapter_14.md:271",
+      "problem": "Consequence compression in the back half: after detention release, the chapter transitions quickly into cipher logistics, but the family-coercion cost is only partially metabolized on page. This weakens the chapter-spine promise that family vulnerability is the central weapon.",
+      "rewrite_direction": "Expand the father-daughter aftermath beat at snapshots/cycle_02/chapters/chapter_14.md:233-263 before the hymnal reveal at snapshots/cycle_02/chapters/chapter_14.md:271-277: stage one additional exchange where Dohyun names a concrete impact of the coercive call and Ina must make a costly communication choice in response.",
+      "acceptance_test": "PASS if revised lines 233-263 include (1) explicit callback to the call at lines 103-119, (2) one concrete household consequence (work shift loss, landlord escalation, or visit risk), and (3) a changed immediate behavior by either Ina or Dohyun resulting from that exchange; FAIL if the scene moves to the hymnal without those three observable elements."
+    }
+  ],
+  "summary": "Chapter 14 lands strong operational pressure and continuity anchors, but it does not clear pass-level quality under Booker/craft standards because a meta process-leak line breaks immersion, the seizure consequence beat softens into procedural summary (sanitization risk), dialogue register variance is underpowered in Choi's scenes, and a repeated conjunctive sentence formula flattens prose rhythm.",
+  "coverage_scene_ids": [
+    "hongje_detention_coercion",
+    "ilsan_node_surrender",
+    "post_release_mapo_family_aftermath",
+    "hymnal_cipher_discovery"
+  ]
+}

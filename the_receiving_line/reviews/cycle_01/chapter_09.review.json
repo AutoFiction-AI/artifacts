@@ -1,0 +1,33 @@
+{
+  "chapter_id": "chapter_09",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_09_craft_elliptical_clipping",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_09",
+      "evidence": "Narration repeatedly uses clipped, subject-dropped emphasis at snapshots/cycle_01/chapters/chapter_09.md:31, snapshots/cycle_01/chapters/chapter_09.md:95, snapshots/cycle_01/chapters/chapter_09.md:141, snapshots/cycle_01/chapters/chapter_09.md:207, snapshots/cycle_01/chapters/chapter_09.md:211, snapshots/cycle_01/chapters/chapter_09.md:215, snapshots/cycle_01/chapters/chapter_09.md:255, and snapshots/cycle_01/chapters/chapter_09.md:319 (for example: \"Not the stew itself.\", \"Just enough to feel heat.\", \"Crowded.\", \"Technical.\", \"Not startled.\", \"Not relief.\").",
+      "problem": "This chapter leans on elliptical clipping in narration even though the constitution explicitly forbids subject-dropping prose. Because the fragments recur across both scenes, the effect stops reading as pressure-specific compression and starts reading as a default line-making shortcut, which weakens sentence authority in an otherwise controlled chapter.",
+      "rewrite_direction": "Recast the emphatic narration anchored at snapshots/cycle_01/chapters/chapter_09.md:31, snapshots/cycle_01/chapters/chapter_09.md:95, snapshots/cycle_01/chapters/chapter_09.md:141, snapshots/cycle_01/chapters/chapter_09.md:207, snapshots/cycle_01/chapters/chapter_09.md:211, snapshots/cycle_01/chapters/chapter_09.md:215, snapshots/cycle_01/chapters/chapter_09.md:255, and snapshots/cycle_01/chapters/chapter_09.md:319 into grammatically complete sentences. Keep the compression, but land emphasis through full syntax, sensory residue, or clause-level contrast instead of isolated fragments.",
+      "acceptance_test": "Pass if the revised narration at snapshots/cycle_01/chapters/chapter_09.md:31, snapshots/cycle_01/chapters/chapter_09.md:95, snapshots/cycle_01/chapters/chapter_09.md:141, snapshots/cycle_01/chapters/chapter_09.md:207, snapshots/cycle_01/chapters/chapter_09.md:211, snapshots/cycle_01/chapters/chapter_09.md:215, snapshots/cycle_01/chapters/chapter_09.md:255, and snapshots/cycle_01/chapters/chapter_09.md:319 reads as complete narration without dropped subjects or one-word narrative fragments; fail if any of those emphasis beats still rely on clipped narration to do the work."
+    },
+    {
+      "finding_id": "chapter_09_prose_negation_ladder_tic",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "The same negation-ladder sentence shape recurs at snapshots/cycle_01/chapters/chapter_09.md:141 (\"Crowded. Not tragic. Not poetic.\"), snapshots/cycle_01/chapters/chapter_09.md:211 (\"Not for his hand. Not that.\"), snapshots/cycle_01/chapters/chapter_09.md:217 (\"Not love. Not anything that clean.\"), snapshots/cycle_01/chapters/chapter_09.md:255 (\"Not startled. That would have been easier.\"), snapshots/cycle_01/chapters/chapter_09.md:317 (\"Not as policy. As cost.\"), snapshots/cycle_01/chapters/chapter_09.md:319 (\"Not relief. Recognition, maybe.\"), and snapshots/cycle_01/chapters/chapter_09.md:325 (\"Not a yes. Not tonight.\").",
+      "problem": "Once this many emotional beats are built with the same \"Not X / Not Y / short corrective\" pattern, the prose stops feeling chosen and starts feeling automated. The repetition flattens distinct moments of grief, desire, bargaining, and recognition into one reusable cadence, which is exactly the kind of recurring construction the review brief says to flag.",
+      "rewrite_direction": "Vary the sentence architecture in the beats anchored at snapshots/cycle_01/chapters/chapter_09.md:141, snapshots/cycle_01/chapters/chapter_09.md:211, snapshots/cycle_01/chapters/chapter_09.md:217, snapshots/cycle_01/chapters/chapter_09.md:255, snapshots/cycle_01/chapters/chapter_09.md:317, snapshots/cycle_01/chapters/chapter_09.md:319, and snapshots/cycle_01/chapters/chapter_09.md:325. Keep the emotional distinctions, but make those passages arrive through different rhythms and clause structures rather than repeated negation ladders.",
+      "acceptance_test": "Pass if the revised passages anchored at snapshots/cycle_01/chapters/chapter_09.md:141, snapshots/cycle_01/chapters/chapter_09.md:211, snapshots/cycle_01/chapters/chapter_09.md:217, snapshots/cycle_01/chapters/chapter_09.md:255, snapshots/cycle_01/chapters/chapter_09.md:317, snapshots/cycle_01/chapters/chapter_09.md:319, and snapshots/cycle_01/chapters/chapter_09.md:325 no longer present more than two instances of the same \"Not X / Not Y / corrective beat\" construction across the chapter, and each passage can be read as carrying a distinct emotional rhythm; fail if three or more of those beats still use the same negation-ladder shape."
+    }
+  ],
+  "summary": "Chapter 09 fulfills its aftermath brief: the quiet meal, old tenderness, Ivo's pension and child-support pressure, and the shadowed agreement to hear the plan all land, and Marisol/Ivo remain voice-distinct with no continuity or tense drift problems. It still fails craft and prose because the narration repeatedly defaults to clipped, subject-dropped fragments and an overused negation-ladder cadence, turning emphasis into a visible chapter-wide tic.",
+  "coverage_scene_ids": []
+}

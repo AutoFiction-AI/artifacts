@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_18",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH18_SIGHT_RULE_COLLAPSE",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_18",
+      "evidence": "snapshots/cycle_01/chapters/chapter_18.md:119; snapshots/cycle_01/chapters/chapter_18.md:169; snapshots/cycle_01/chapters/chapter_18.md:203; snapshots/cycle_01/chapters/chapter_18.md:241",
+      "problem": "The chapter cannot keep Maren's visual capability straight. It gives him direct visual access to the contamination shimmer and the girl's wave, then states flatly that he has always been blind and cannot see anything. Because the style bible locks narration to Maren's sensory limitations, this reads as both a continuity contradiction and a POV-control break.",
+      "rewrite_direction": "Revise the visual-access beats at snapshots/cycle_01/chapters/chapter_18.md:119 and snapshots/cycle_01/chapters/chapter_18.md:241 together with the blindness assertions at snapshots/cycle_01/chapters/chapter_18.md:169 and snapshots/cycle_01/chapters/chapter_18.md:203. Choose one rule and enforce it everywhere in the chapter: if Maren is fully blind, recast those moments through sound, touch, smell, or Aldric's mediation; if he can perceive raw quest-light or other visual data, rewrite the blindness language so the chapter no longer claims total sightlessness.",
+      "acceptance_test": "Pass if a cold reader can read snapshots/cycle_01/chapters/chapter_18.md:119, snapshots/cycle_01/chapters/chapter_18.md:169, snapshots/cycle_01/chapters/chapter_18.md:203, and snapshots/cycle_01/chapters/chapter_18.md:241 in the revision and state exactly what Maren can and cannot see without contradiction. Fail if the chapter still both grants him direct visual perception of the yard or contamination and states that he sees nothing at all."
+    },
+    {
+      "finding_id": "CH18_STYLE_BIBLE_ECHO",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_18",
+      "evidence": "snapshots/cycle_01/chapters/chapter_18.md:79; snapshots/cycle_01/chapters/chapter_18.md:171; snapshots/cycle_01/chapters/chapter_18.md:245",
+      "problem": "The chapter lifts calibration-only style-bible material into finished scene language. Thessa's assignment echoes the example built around a farmstead twelve miles east with children, the remembered training quote repeats \"Slower this time,\" and Aldric's closing direction beat mirrors the calibration \"Left ... your left\" exchange. Reusing example-line phrasing in chapter-defining beats damages voice integrity and makes the scene feel assembled from notes instead of spoken by these characters in the moment.",
+      "rewrite_direction": "Rewrite the assignment exchange at snapshots/cycle_01/chapters/chapter_18.md:79, the remembered training quote at snapshots/cycle_01/chapters/chapter_18.md:171, and the closing direction beat at snapshots/cycle_01/chapters/chapter_18.md:245 so they keep the same plot function and character relationship but use fresh phrasing and a fresh conversational shape rather than the style-bible calibration wording.",
+      "acceptance_test": "Pass if a reader comparing the revised chapter against outline/style_bible.json finds no near-verbatim clause and no obviously copied beat-shape at snapshots/cycle_01/chapters/chapter_18.md:79, snapshots/cycle_01/chapters/chapter_18.md:171, or snapshots/cycle_01/chapters/chapter_18.md:245. Thessa must still assign Barren Rill and Aldric must still correct Maren's direction, but the language must be unmistakably new."
+    },
+    {
+      "finding_id": "CH18_OVERSTATEMENT_AFTER_ARRIVAL",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_18",
+      "evidence": "snapshots/cycle_01/chapters/chapter_18.md:97; snapshots/cycle_01/chapters/chapter_18.md:107; snapshots/cycle_01/chapters/chapter_18.md:253; snapshots/cycle_01/chapters/chapter_18.md:255; snapshots/cycle_01/chapters/chapter_18.md:257",
+      "problem": "The chapter lands its key turns in scene and then immediately translates them into thesis language. Thessa's \"Go eat it\" plus Aldric's \"That was an acknowledgment\" already establish the professional recognition, but the narration then explains that she has treated Maren as a colleague. The final image of him already walking toward the next job is enough, yet the coda re-proves the point with abstract statements about why he keeps going and how he is now the one who answers. That extra paraphrase weakens the ending's force.",
+      "rewrite_direction": "Compress or recast the explanatory aftermath at snapshots/cycle_01/chapters/chapter_18.md:107 and snapshots/cycle_01/chapters/chapter_18.md:255 while preserving the must-land beats from the scene. Keep Thessa's cold professional acknowledgment and keep Maren leaving Barren Rill committed to the next site, but let action, image, or one earned line carry those meanings instead of narrator certification.",
+      "acceptance_test": "Pass if a cold reader can infer from snapshots/cycle_01/chapters/chapter_18.md:97 through snapshots/cycle_01/chapters/chapter_18.md:109 and from snapshots/cycle_01/chapters/chapter_18.md:253 through snapshots/cycle_01/chapters/chapter_18.md:259 that Thessa now treats Maren as a colleague and that he will continue the work, without the revision explicitly restating those meanings in abstract thesis language. Fail if the revised passages still explain the beat after it has already landed on the page."
+    },
+    {
+      "finding_id": "CH18_PROSE_TEMPLATE_RECURRENCE",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_18",
+      "evidence": "snapshots/cycle_01/chapters/chapter_18.md:53; snapshots/cycle_01/chapters/chapter_18.md:69; snapshots/cycle_01/chapters/chapter_18.md:81; snapshots/cycle_01/chapters/chapter_18.md:163; snapshots/cycle_01/chapters/chapter_18.md:165; snapshots/cycle_01/chapters/chapter_18.md:171; snapshots/cycle_01/chapters/chapter_18.md:181; snapshots/cycle_01/chapters/chapter_18.md:243",
+      "problem": "The prose falls into a repeated workshoped template: \"the specific ... of someone,\" \"the way ...,\" and explanatory simile wrappers recur across Derry, Thessa, the watching family, Aldric's changed tone, and the closing road paragraph. Because the chapter keeps reaching for the same interpretive sentence machinery, the promised specificity starts sounding mechanical rather than freshly observed. This also looks like over-literal reuse of style-bible token habits instead of live sentence-making.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_18.md:53, snapshots/cycle_01/chapters/chapter_18.md:69, snapshots/cycle_01/chapters/chapter_18.md:81, snapshots/cycle_01/chapters/chapter_18.md:163, snapshots/cycle_01/chapters/chapter_18.md:171, snapshots/cycle_01/chapters/chapter_18.md:181, and snapshots/cycle_01/chapters/chapter_18.md:243, replace several of the repeated scaffolds with direct observation, action, or a different sentence shape. Keep the content, but stop defaulting to \"specific,\" \"the way,\" and comparison-led explanation every time the narration interprets a person or beat.",
+      "acceptance_test": "Pass if the revised passages at snapshots/cycle_01/chapters/chapter_18.md:53, snapshots/cycle_01/chapters/chapter_18.md:69, snapshots/cycle_01/chapters/chapter_18.md:163, and snapshots/cycle_01/chapters/chapter_18.md:243 contain at most one total use of \"specific\" as an intensifier and do not stack back-to-back paragraphs on the same \"the way ...\" or explanatory-comparison scaffold. Fail if those spans still read as variations of the same sentence template."
+    }
+  ],
+  "summary": "The chapter lands the intended end-state beats, but it does not pass review. The biggest problem is a hard sensory-rule collapse around Maren's sight that breaks both continuity and close-third POV control. On top of that, the chapter imports calibration-only phrasing from the style bible into finished dialogue, keeps translating already-earned turns into thesis language, and leans too often on repeated prose templates that make the quiet ending feel more workshopped than lived."
+}

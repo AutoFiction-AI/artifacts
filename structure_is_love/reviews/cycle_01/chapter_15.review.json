@@ -1,0 +1,67 @@
+{
+  "chapter_id": "chapter_15",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch15-F001",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_01/chapters/chapter_15.md:64; snapshots/cycle_01/chapters/chapter_15.md:138; snapshots/cycle_01/chapters/chapter_15.md:212",
+      "problem": "The quarterfinal sequence sustains tactical clarity, but the middle of the chapter over-allocates to rally score mechanics and under-allocates to non-score consequence turns (class pressure, agreement cost, and relationship leverage), so escalation reads as incremental rather than transformational.",
+      "rewrite_direction": "In snapshots/cycle_01/chapters/chapter_15.md:64-170 and snapshots/cycle_01/chapters/chapter_15.md:212-243, compress repetitive shot-by-shot runs and add one explicit non-score stake pivot per game (e.g., agreement enforcement pressure, social-class humiliation, father-daughter authority shift) that changes Anika's next tactical decision.",
+      "acceptance_test": "PASS if each game segment in snapshots/cycle_01/chapters/chapter_15.md:64-243 contains at least one clearly readable choice/consequence beat that is not just score movement and that directly alters the next rally approach; FAIL if any game remains only tactical exchange plus scoreboard updates."
+    },
+    {
+      "finding_id": "ch15-F002",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_01/chapters/chapter_15.md:454",
+      "problem": "Sanitization drift: a high-pressure impact beat is rendered as euphemistic summary (\"He swore under his breath\") instead of specific language/event texture. This is exactly the scrubbed-profanity failure the constitution forbids, and it weakens scene force.",
+      "rewrite_direction": "Rewrite snapshots/cycle_01/chapters/chapter_15.md:454 so the utterance is concrete (quoted wording) and socially embodied (who hears it, how Anika reacts, or how the crowded car registers it) rather than summarized as generic swearing.",
+      "acceptance_test": "PASS if the revised beat at snapshots/cycle_01/chapters/chapter_15.md:454 includes explicit spoken wording and an immediate observable consequence in the car; FAIL if the prose still uses generic placeholders like \"swore\" without content."
+    },
+    {
+      "finding_id": "ch15-F003",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_01/chapters/chapter_15.md:342; snapshots/cycle_01/chapters/chapter_15.md:352; snapshots/cycle_01/chapters/chapter_15.md:368",
+      "problem": "Ravi's corridor dialogue drifts into polished therapeutic aphorism under stress, which blurs idiolect separation and reduces pressure realism. The style bible defines his core voice as procedural/workmanlike with late confessional breaks; here several lines read cross-character with Tess/Priya-style framing.",
+      "rewrite_direction": "In snapshots/cycle_01/chapters/chapter_15.md:336-369, keep Ravi's emotional concession but recast at least two aphoristic lines into his practical register (workload, schedule, concrete next action), with one interruption or false start to preserve stress texture.",
+      "acceptance_test": "PASS if Ravi's revised lines in snapshots/cycle_01/chapters/chapter_15.md:336-369 contain at least one disfluent beat (interruption, restart, fragment) and at least one concrete procedural term, while preserving contractions; FAIL if the exchange remains mostly abstract motivational phrasing."
+    },
+    {
+      "finding_id": "ch15-F004",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_01/chapters/chapter_15.md:82; snapshots/cycle_01/chapters/chapter_15.md:90; snapshots/cycle_01/chapters/chapter_15.md:140; snapshots/cycle_01/chapters/chapter_15.md:142; snapshots/cycle_01/chapters/chapter_15.md:147; snapshots/cycle_01/chapters/chapter_15.md:185; snapshots/cycle_01/chapters/chapter_15.md:216; snapshots/cycle_01/chapters/chapter_15.md:218; snapshots/cycle_01/chapters/chapter_15.md:228",
+      "problem": "Recurring paragraph-open formula (\"At [score], ...\") appears repeatedly and creates visible construction tic. The pattern flattens rhythm in a chapter that otherwise aims to alternate burst and reflection.",
+      "rewrite_direction": "Revise snapshots/cycle_01/chapters/chapter_15.md:82-230 to vary entry syntax: fold some score updates into mid-sentence action, start some paragraphs with body sensation/social pressure, and reserve direct \"At [score]\" openings for only the most consequential pivot points.",
+      "acceptance_test": "PASS if snapshots/cycle_01/chapters/chapter_15.md:82-230 contains no more than two paragraphs opening with \"At [score]\" and at least three score changes are conveyed through action-led syntax; FAIL if the repeated opener remains the dominant entry pattern."
+    },
+    {
+      "finding_id": "ch15-F005",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_01/chapters/chapter_15.md:13; snapshots/cycle_01/chapters/chapter_15.md:130; snapshots/cycle_01/chapters/chapter_15.md:252; snapshots/cycle_01/chapters/chapter_15.md:281; snapshots/cycle_01/chapters/chapter_15.md:310; snapshots/cycle_01/chapters/chapter_15.md:498",
+      "problem": "Negation-led sentence construction (\"There was no...\", \"did not...\") recurs at key emotional beats and becomes a prose tic. It also introduces timidity by defining moments through absence instead of embodied presence.",
+      "rewrite_direction": "In snapshots/cycle_01/chapters/chapter_15.md:130, snapshots/cycle_01/chapters/chapter_15.md:252, snapshots/cycle_01/chapters/chapter_15.md:281, snapshots/cycle_01/chapters/chapter_15.md:310, and snapshots/cycle_01/chapters/chapter_15.md:498, rewrite core beats in affirmative, sensory, consequence-first language; keep negation only where contrast is truly indispensable.",
+      "acceptance_test": "PASS if the targeted lines are revised so each beat states what concretely happens (action/sensation/response) rather than primarily what does not happen, and no more than one negation-led sentence remains across those targets; FAIL if absence framing still carries most of those moments."
+    }
+  ],
+  "summary": "Chapter 15 lands required state deltas (five-game loss, no collapse, mixed shame/relief) and preserves continuity, but it does not clear pass-level quality because repetitive match constructions and negation tics flatten prose, one high-pressure moment sanitizes language, and key Ravi dialogue drifts from his established idiolect. No continuity contradiction found against outline/continuity_sheet.json, and no contraction-level violations were found in chapter dialogue.",
+  "coverage_scene_ids": [
+    "quarterfinal_match",
+    "corridor_decompression",
+    "subway_and_home_aftermath"
+  ]
+}

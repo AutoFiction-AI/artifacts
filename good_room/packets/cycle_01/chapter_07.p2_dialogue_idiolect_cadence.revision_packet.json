@@ -1,0 +1,70 @@
+{
+  "acceptance_targets": [
+    "[ch07_dialogue_simone_mentor_speech] PASS if Simone's revised Friday exchange is built from shorter diagnostic turns, leaves at least one implication unstated for Doug to infer, and no longer hinges on a polished analogy that could stand alone as writing advice; FAIL if she still delivers a clean mentor monologue that fully interprets Doug for the reader."
+  ],
+  "chapter_id": "chapter_07",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if Simone's revised Friday exchange is built from shorter diagnostic turns, leaves at least one implication unstated for Doug to infer, and no longer hinges on a polished analogy that could stand alone as writing advice; FAIL if she still delivers a clean mentor monologue that fully interprets Doug for the reader.",
+      "chapter_id": "chapter_07",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:237; snapshots/cycle_01/chapters/chapter_07.md:241; snapshots/cycle_01/chapters/chapter_07.md:245; snapshots/cycle_01/chapters/chapter_07.md:277",
+      "finding_id": "ch07_dialogue_simone_mentor_speech",
+      "problem": "Simone slides from dry, diagnostic comedy-writer into polished mentor. Her Friday explanations arrive as balanced mini-speeches and clean analogies, especially the documentary-versus-feature-film line, which reads like theme delivery rather than spoken thought under scene pressure. That blurs her idiolect and violates the style bible's ban on mentor-figure wisdom speeches.",
+      "rewrite_direction": "Rework Simone's Friday dialogue in snapshots/cycle_01/chapters/chapter_07.md:237 through snapshots/cycle_01/chapters/chapter_07.md:277 into shorter, more interruptible, more character-true turns. Let her identify what works, but make her sound like a working comic diagnostician rather than a novelist summarizing the chapter's point.",
+      "severity": "MEDIUM",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "f50ba5347b18bd77402ca5d994f8866d80c752bc1f3d97911611e6662f2fcf67",
+  "must_fix_count": 1,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on dialogue realism and voice separation: idiolect fidelity, leverage shifts, pressure cadence, anti-transcript behavior, natural colloquial texture (contractions/interruptions/slang when character-true), pressure-true profanity usage per aesthetic risk policy, and preservation of productive roughness (false starts, evasions, repetitions, unfinished turns) rather than polishing speech flat.",
+    "key": "p2_dialogue_idiolect_cadence",
+    "label": "dialogue/idiolect/cadence fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This novel's greatest risk is timidity. The premise \u2014 a man who is not funny trying to be funny \u2014 invites a safe, gently comic execution where Doug is lovably bumbling and everything works out. Resist this. Doug's failures should be genuinely uncomfortable to witness. His loneliness should be genuinely lonely, not charmingly solitary. The toast should contain things that are genuinely inappropriate, not safely edgy. The comedy should come from truth that hurts, not from situations that are merely awkward. The moments of tenderness \u2014 the Gloria chapter, the Kelsey lunch, the Simone conversation \u2014 should be earned through accumulated specificity, not through the narrative signaling that it's time to feel. Every chapter should contain at least one moment that a cautious writer would soften, and the drafting agent should not soften it.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism is a craft failure. If Doug is drunk, describe what drunk looks and feels like \u2014 the specific sensory experience, not the label. If Doug is lonely, show the loneliness through the objects and routines that fill the space where other people would be \u2014 the cereal dinner, the second bedroom, the unpacked boxes. If a scene involves embarrassment, shame, failure, or longing, render it in full physical and emotional detail. The reader should feel it, not be told about it. Replace every euphemism with the specific thing it is hiding.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for most characters. Uncontracted forms should be reserved for emphasis, deliberate formality, or character-specific moments (Doug going precise under stress, Megan's composed register). If a line reads stiff and the character is not being deliberately formal, contract it.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "No two consecutive chapters should share the same structural rhythm. Vary: scene count (1-4), dialogue density (high-dialogue chapters followed by interior-heavy chapters), pacing (frenetic chapters followed by still ones), emotional register (comic escalation followed by tender quiet), narrative distance (very close interior followed by observed social scenes). The novel should feel like it breathes \u2014 tight chapters followed by loose ones, crowded chapters followed by solitary ones. Chapter 3 (quiet office day) must feel structurally different from Chapter 10 (quiet visit to Gloria). Chapter 9 (the corporate disaster) must feel structurally different from Chapter 14 (the tour), even though both involve performance failure. Achieve variety through scene construction, not through gimmick.",
+      "diction": "Mid-register, clean, precise. No pyrotechnics. No extended metaphors. The prose should have the quality of someone describing what happened accurately \u2014 not artlessly, but without reaching for beauty. When beauty arrives, it should feel accidental, like Doug's humor: a precisely observed detail that turns out to be devastating not because the prose reached for devastation but because the detail was exact. Insurance language may surface in narration when it captures something emotional more precisely than emotional language would. Avoid lyrical flights, extended similes, or any construction that would sound wrong coming from a narrator who is sympathetic to Doug's plainness.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person, tightly bound to Doug's perspective. The narrator has access to Doug's interior \u2014 his observations, his assessments, his emotional processing through objects and details \u2014 but not to any other character's thoughts. Other characters are rendered through Doug's perception: what they say, how they move, what Doug notices about them. The narrator's voice is distinct from Doug's voice but sympathetic to it \u2014 slightly more articulate, slightly more aware, but never mocking and never superior. The humor in the narration comes from the same source as Doug's humor: precision about mundane things that reveals the absurdity or sadness underneath. The narrator does not explain the comedy. The narrator does not wink.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Varied and controlled. Default to mid-length sentences with clean syntax. Use short sentences for comic timing \u2014 the flat declarative that follows an elaborate setup. Use longer, more syntactically complex sentences for interior passages where Doug is processing something he cannot name. Avoid uniform sentence length across paragraphs. The prose should breathe \u2014 alternating between compression and expansion, between observation and reflection, between the external world and Doug's interior. Comedy requires rhythm more than any other mode: the setup needs room, the punch needs precision, and the space after needs silence.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

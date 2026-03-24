@@ -1,0 +1,69 @@
+{
+  "acceptance_targets": [
+    "[ch01-dialogue-001] PASS if the revised Nora block anchored at snapshots/cycle_02/chapters/chapter_01.md:91 and snapshots/cycle_02/chapters/chapter_01.md:149 includes at least 2 concrete operational references and does not repeat 'donor' or 'legal' more than once each in that block; FAIL otherwise."
+  ],
+  "chapter_id": "chapter_01",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if the revised Nora block anchored at snapshots/cycle_02/chapters/chapter_01.md:91 and snapshots/cycle_02/chapters/chapter_01.md:149 includes at least 2 concrete operational references and does not repeat 'donor' or 'legal' more than once each in that block; FAIL otherwise.",
+      "chapter_id": "chapter_01",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_01.md:17; snapshots/cycle_02/chapters/chapter_01.md:31; snapshots/cycle_02/chapters/chapter_01.md:91; snapshots/cycle_02/chapters/chapter_01.md:97; snapshots/cycle_02/chapters/chapter_01.md:123; snapshots/cycle_02/chapters/chapter_01.md:149",
+      "finding_id": "ch01-dialogue-001",
+      "problem": "Nora's voice over-relies on repeated policy nouns ('donor', 'legal', 'defamation', 'exposure') across multiple turns, which reads as lexical-signature token reuse rather than adaptive speech under pressure.",
+      "rewrite_direction": "In Nora's lines at snapshots/cycle_02/chapters/chapter_01.md:91, snapshots/cycle_02/chapters/chapter_01.md:123, and snapshots/cycle_02/chapters/chapter_01.md:149, keep one legal-density pass but replace repeated abstract nouns with concrete institutional actions, named documents, or operational constraints.",
+      "severity": "MEDIUM",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "6a0678cc448e9619ea87dce5ff0af5f7613db8f59c23f93d98da4d2cca941807",
+  "must_fix_count": 1,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on dialogue realism and voice separation: idiolect fidelity, leverage shifts, pressure cadence, anti-transcript behavior, natural colloquial texture (contractions/interruptions/slang when character-true), and pressure-true profanity usage per aesthetic risk policy.",
+    "key": "p2_dialogue_idiolect_cadence",
+    "label": "dialogue/idiolect/cadence fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "When choosing between reputationally safe abstraction and specific discomfort, choose specificity. Render addiction, sexuality, deceit, class shame, and grief at lived scale. In edge cases, preserve character truth and causal accountability over reader comfort or institutional decorum.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene demands bodily, moral, or economic specificity, euphemistic phrasing is treated as a failed draft and must be rewritten with concrete stakes and observable consequence.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the spoken default; full forms appear only for emphasis, ritual language, or character-specific formal posture",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate scene density and pressure modes: pair high-conflict chapters with quiet domestic or documentary chapters, vary dialogue-to-interiority ratios, and prevent identical chapter skeletons in consecutive sequence.",
+      "diction": "contemporary literary diction with class-aware, borough-specific concreteness; avoid prestige-neutral workshop language",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third centered on Marisol, with rare brief distance expansions for institutional scenes",
+      "narrative_tense": "past tense",
+      "rhythm_target": "alternating tensile compression and reflective extension; line-level cadence should carry emotional pressure, not just information",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

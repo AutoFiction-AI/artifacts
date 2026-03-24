@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_06",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch06_award_buyer_triptych_repetition",
+      "source": "award",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_02/chapters/chapter_06.md:61; snapshots/cycle_02/chapters/chapter_06.md:85; snapshots/cycle_02/chapters/chapter_06.md:125",
+      "problem": "The chapter's middle third keeps proving the same moral argument in near-identical units: buyer arrives, Marcus recalls the medical-and-insurance dossier, pills change hands, a small hardship detail lands. Rosa establishes the chapter engine cleanly, but Derek and Janine mostly re-run it, so the chapter buys additional emphasis more than additional dramatic payload. That keeps this from feeling shortlist-level even though the material is humane and specific.",
+      "rewrite_direction": "Rework one or more of the buyer blocks in snapshots/cycle_02/chapters/chapter_06.md:61, snapshots/cycle_02/chapters/chapter_06.md:85, and snapshots/cycle_02/chapters/chapter_06.md:125 so each retained exchange has a distinct dramatic job visible on the page. One encounter can establish the compassion economy, but a later one should force a concrete operational cost or risk for Marcus, and another should change future pressure (schedule, supply, exposure, or relationship) rather than just supplying another case history. If a scene cannot carry a different job, compress its dossier material into the money-count aftermath at snapshots/cycle_02/chapters/chapter_06.md:151 instead of giving it a full handoff beat.",
+      "acceptance_test": "Pass if a cold reader can describe the Rosa/Derek/Janine sequence as three different turns with non-overlapping functions on the page: establishment, concrete cost/risk, and future-pressure change. Fail if two of the three encounters can still be swapped without materially changing Marcus's situation or the chapter's state shift."
+    },
+    {
+      "finding_id": "ch06_craft_visit_duration_continuity",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_02/chapters/chapter_06.md:3; snapshots/cycle_02/chapters/chapter_06.md:161; snapshots/cycle_02/chapters/chapter_06.md:163; snapshots/cycle_02/chapters/chapter_06.md:177",
+      "problem": "The chapter's own chronology does not support the repeated 'fourteen months' count. The text dates Marcus's firing to June 2024, his mother's death to four months later, and Harry's recruitment message to three months after that; with chapter 6 placed in early September 2026 by the continuity pack, Marcus has been operating as Lola's nephew for roughly twenty months, not fourteen. This is a visible continuity contradiction, not an inferential edge case.",
+      "rewrite_direction": "Revise the duration markers at snapshots/cycle_02/chapters/chapter_06.md:3 and snapshots/cycle_02/chapters/chapter_06.md:177, or revise the backstory timing at snapshots/cycle_02/chapters/chapter_06.md:161 and snapshots/cycle_02/chapters/chapter_06.md:163, so the chapter yields one coherent timeline from the June 2024 firing to this early-September-2026 visit.",
+      "acceptance_test": "Pass if a reader can calculate one consistent duration for Marcus's visits and lies using the revised chapter alone, and that duration no longer conflicts with the June 2024 firing and post-death recruitment sequence. Fail if 'fourteen months' remains alongside the current backstory dates or any other impossible count."
+    },
+    {
+      "finding_id": "ch06_craft_lakeview_route_mismatch",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_02/chapters/chapter_06.md:51",
+      "problem": "The chapter places Route 1 traffic directly past Lakeview's entrance, but the continuity sheet fixes Lakeview off Route 27 and separately places Marcus's buyer lot twenty minutes south on Route 1. As written, the geography collapses two established locations into one and makes the travel logic wobble.",
+      "rewrite_direction": "Revise the location phrasing in snapshots/cycle_02/chapters/chapter_06.md:51, and adjust snapshots/cycle_02/chapters/chapter_06.md:57 only if needed, so Lakeview's entrance geography matches the continuity-sheet placement off Route 27 while preserving the later drive south to the Route 1 strip-mall lot.",
+      "acceptance_test": "Pass if the revised chapter makes Lakeview and the strip-mall handoff read as two distinct locations, with Lakeview situated off Route 27 and the buyer lot reached by a later drive south on Route 1. Fail if Route 1 still runs directly past Lakeview's entrance."
+    },
+    {
+      "finding_id": "ch06_prose_overexplains_mother_lie",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_02/chapters/chapter_06.md:177; snapshots/cycle_02/chapters/chapter_06.md:179; snapshots/cycle_02/chapters/chapter_06.md:185",
+      "problem": "The scene already lands when Marcus's throat closes and he lies to Lola about his mother, but the next paragraph translates the moment into abstract explanation: pity, identity, usefulness, the reason he keeps the lie moving. That post-arrival paraphrase drains force from a beat that was stronger when it stayed embodied.",
+      "rewrite_direction": "Rewrite or compress the explanatory paragraph at snapshots/cycle_02/chapters/chapter_06.md:185, and adjust the handoff into snapshots/cycle_02/chapters/chapter_06.md:187 if needed, so Marcus's reason for maintaining the lie is carried by behavior, image, sensory residue, or one sharply concrete thought rather than a full abstract summary.",
+      "acceptance_test": "Pass if, after snapshots/cycle_02/chapters/chapter_06.md:177 through snapshots/cycle_02/chapters/chapter_06.md:183, the revised passage lets a reader infer why Marcus lies from the scene's physical and emotional residue without a paragraph that explicitly lists pity, self-concept, and usefulness. Fail if the narration still pauses to explain the lie after the lie has already landed."
+    }
+  ],
+  "summary": "Fail. The chapter has strong local specificity and the dialogue largely holds character, but two HIGH continuity contradictions break reader trust, the three-buyer middle section repeats its moral proof instead of escalating cleanly, and the mother-lie beat is explained past the point where the scene has already landed."
+}

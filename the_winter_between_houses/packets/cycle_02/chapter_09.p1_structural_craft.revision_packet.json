@@ -1,0 +1,95 @@
+{
+  "acceptance_targets": [
+    "[chapter_09_F001] PASS if the revised span at snapshots/cycle_02/chapters/chapter_09.md:289-404 states each of these once (night was intentional, what to tell husbands, mutual aid rule) and then immediately moves to an action caused by that agreement; FAIL if any of the three points is restated in paraphrase without new leverage.",
+    "[chapter_09_F006] PASS if the revised line at snapshots/cycle_02/chapters/chapter_09.md:221 is a grammatically complete clause and preserves the consent beat's immediacy; FAIL if the line remains a clipped auxiliary fragment.",
+    "[FBR-02-008] Read `snapshots/cycle_02/FINAL_NOVEL.md:3499`-`snapshots/cycle_02/FINAL_NOVEL.md:3504`. PASS if the tension spike is carried by concrete sensory reaction and not stock stillness diction. FAIL if the generic phrase remains."
+  ],
+  "chapter_id": "chapter_09",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if the revised span at snapshots/cycle_02/chapters/chapter_09.md:289-404 states each of these once (night was intentional, what to tell husbands, mutual aid rule) and then immediately moves to an action caused by that agreement; FAIL if any of the three points is restated in paraphrase without new leverage.",
+      "chapter_id": "chapter_09",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_09.md:289; snapshots/cycle_02/chapters/chapter_09.md:297; snapshots/cycle_02/chapters/chapter_09.md:389; snapshots/cycle_02/chapters/chapter_09.md:397; snapshots/cycle_02/chapters/chapter_09.md:401",
+      "finding_id": "chapter_09_F001",
+      "problem": "Post-intimacy consequence handling repeats the same boundary content in multiple passes (intentionality, secrecy, mutual-aid), so leverage stalls after the irreversible act instead of escalating through new pressure.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_09.md:289, snapshots/cycle_02/chapters/chapter_09.md:297, snapshots/cycle_02/chapters/chapter_09.md:389, snapshots/cycle_02/chapters/chapter_09.md:397, and snapshots/cycle_02/chapters/chapter_09.md:401, compress repeated declarations into one escalating negotiation keyed to an external trigger (dawn noise, fuel collapse, or men returning), then land the scene on a concrete action that enacts the choice.",
+      "severity": "MEDIUM",
+      "source": "booker",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if the revised line at snapshots/cycle_02/chapters/chapter_09.md:221 is a grammatically complete clause and preserves the consent beat's immediacy; FAIL if the line remains a clipped auxiliary fragment.",
+      "chapter_id": "chapter_09",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_09.md:221",
+      "finding_id": "chapter_09_F006",
+      "problem": "The clipped reply \"I'll.\" is grammatically incomplete and reads as artificial terseness, violating the constitution's anti-elliptical-clipping rule.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_09.md:221, replace the clipped fragment with a complete spoken clause that keeps urgency and character voice (for example, a full assent tied to the prior check-in).",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Read `snapshots/cycle_02/FINAL_NOVEL.md:3499`-`snapshots/cycle_02/FINAL_NOVEL.md:3504`. PASS if the tension spike is carried by concrete sensory reaction and not stock stillness diction. FAIL if the generic phrase remains.",
+      "chapter_id": "chapter_09",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:3503",
+      "finding_id": "FBR-02-008",
+      "problem": "Recurring full-book construction: default stillness shorthand appears in 7 chapters. In this chapter, `snapshots/cycle_02/FINAL_NOVEL.md:3503` should REPLACE.",
+      "rewrite_direction": "Revise `snapshots/cycle_02/FINAL_NOVEL.md:3503` to show the startle beat through a sound-interrupt response unique to the landing moment (e.g., breath check, blanket grip, listening shift) rather than \"went still\".",
+      "severity": "MEDIUM",
+      "source": "booker_global",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "21a0a2c17195a4921f329cd02b28681b8e7aa0e522072464200e3bc4440f373c",
+  "must_fix_count": 3,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "When edge cases arise, choose the more specific and potentially uncomfortable rendering if it is character-true and causally necessary. Intimacy, bodily risk, and moral compromise must be shown with concrete detail and aftermath, then integrated into later behavior rather than quarantined as a one-scene shock.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a draft abstracts pain, sex, coercion, blood, or economic shame at the exact moment consequence should be embodied, revise by replacing summary with physically and socially specific action tied to POV stakes.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High by default for spoken lines; uncontracted forms are marked choices for period formality, emphasis, or character-specific control behavior.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate structural engines across adjacent chapters: ensemble social scenes, inventory chapters, information-turn chapters, acted-upon pressure chapters, and aftermath chapters. Vary scene count (2 to 4), dialogue density, and interiority depth so consecutive chapters do not share the same pacing signature.",
+      "diction": "Period-authentic but readable contemporary English, favoring concrete nouns and precise verbs over lyrical abstraction.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person, alternating primarily between Elsie and Noreen, with occasional tightly limited deviations only when causal clarity requires it.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Sentence rhythm should alternate compressed pressure bursts with longer observational lines that carry social texture; avoid monotone paragraph cadence.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

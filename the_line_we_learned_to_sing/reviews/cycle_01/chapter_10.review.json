@@ -1,0 +1,62 @@
+{
+  "chapter_id": "chapter_10",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH10-F001",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:183",
+      "problem": "Narration repeatedly uses clipped negation fragments (e.g., \"Not buzzed.\", \"Not surrender.\", \"Not gone.\") that read as elliptical clipping and recur as a visible prose tic. This violates the constitution's anti-clipping rule and flattens sentence texture through overused formula.",
+      "rewrite_direction": "Rewrite the clipped fragment beats at snapshots/cycle_01/chapters/chapter_10.md:127, snapshots/cycle_01/chapters/chapter_10.md:183, snapshots/cycle_01/chapters/chapter_10.md:411, and snapshots/cycle_01/chapters/chapter_10.md:457 as grammatically complete sentences with explicit subject+verb while preserving pace and pressure.",
+      "acceptance_test": "PASS if the revised narration at lines 127, 183, 411, and 457 contains no standalone \"Not ...\" fragment sentences and each line-level beat remains tense but syntactically complete; FAIL if any clipped narration fragment remains in those spans."
+    },
+    {
+      "finding_id": "CH10-F002",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:281",
+      "problem": "The live-stream confrontation runs for 10+ consecutive short paragraphs with minimal Ina interior access, creating screenplay drift in a chapter that otherwise promises close-third psychological pressure.",
+      "rewrite_direction": "In the confrontation stretch from snapshots/cycle_01/chapters/chapter_10.md:281 through snapshots/cycle_01/chapters/chapter_10.md:305, add interior beats (body sensation, tactical thought, or self-assessment) between dialogue turns so reader access to Ina does not disappear for long runs.",
+      "acceptance_test": "PASS if lines 281-305 include at least three discrete Ina interior beats inserted between spoken exchanges and no run exceeds six consecutive paragraphs without interiority; FAIL if the passage remains primarily external dialogue/action for 10+ consecutive paragraphs."
+    },
+    {
+      "finding_id": "CH10-F003",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:325",
+      "problem": "After an explicit suicide line (\"Then I find a bridge\"), the scene pivots quickly into legal leverage explanation and vow rhetoric, softening immediate crisis consequence. This reads as sanitization/timidity: tension is managed conceptually instead of being rendered through concrete containment actions.",
+      "rewrite_direction": "Rework the sequence across snapshots/cycle_01/chapters/chapter_10.md:325, snapshots/cycle_01/chapters/chapter_10.md:337, and snapshots/cycle_01/chapters/chapter_10.md:349 so immediate safety management is staged on-page before contract-clause strategy resumes.",
+      "acceptance_test": "PASS if, before legal clause discussion resumes, the revised scene shows at least two concrete immediate safety actions and one explicit short-horizon survival commitment in direct speech from Ji-eun; FAIL if the chapter returns to legal strategy without those on-page containment beats."
+    },
+    {
+      "finding_id": "CH10-F004",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:405",
+      "problem": "Ina's climactic promise shifts into ceremonially uncontracted legal recital (\"I promise I will... I do not...\"), which drifts from her high-contraction private register and introduces stilted formality at peak scene pressure.",
+      "rewrite_direction": "Revise the promise block at snapshots/cycle_01/chapters/chapter_10.md:401 and snapshots/cycle_01/chapters/chapter_10.md:405 to keep legal clarity but use Ina's stressed natural speech rhythm (contractions, blunt concrete phrasing, fewer recital-style repeats).",
+      "acceptance_test": "PASS if Ina's revised promise uses contractions in at least 3 of 5 declarative clauses while still naming one concrete enforceable action (e.g., debt challenge or collection block); FAIL if the block remains predominantly uncontracted ceremonial diction."
+    },
+    {
+      "finding_id": "CH10-F005",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:427",
+      "problem": "Kwon delivers multiple control lines in this chapter but functions as a pure command channel with little individualized pressure logic, reducing antagonist dimensionality at the chapter's hinge.",
+      "rewrite_direction": "Deepen one Kwon communication beat at snapshots/cycle_01/chapters/chapter_10.md:191 or snapshots/cycle_01/chapters/chapter_10.md:427 with a specific timed consequence and character-specific inevitability framing rather than generic institutional threat wording.",
+      "acceptance_test": "PASS if one revised Kwon message/voicemail includes a concrete consequence with a clear timeframe and idiolect that is recognizably his (calm inevitability frame) rather than interchangeable command boilerplate; FAIL if Kwon remains functionally generic in all chapter communications."
+    }
+  ],
+  "summary": "Required chapter-10 beats land (train humor, debt specificity, refusal to sedate, binding promise), continuity and canonical tense are intact, and no direct continuity-sheet contradiction was found. The chapter still fails on craft/prose rigor due repeated clipped narration formulas, an under-rendered post-suicidality containment beat (sanitization/timidity risk), interiority drop in a long confrontation run, and dialogue-register drift at the promise climax."
+}

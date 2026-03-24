@@ -1,0 +1,109 @@
+{
+  "acceptance_targets": [
+    "[ch04_booker_001] PASS if the revised 503-543 span contains one explicit choice by Ina that cannot be undone in the same chapter and one immediate concrete consequence (access loss, legal threat, production shutdown, or ally rupture) shown on-page; FAIL if conflict remains only in notices/emails.",
+    "[ch04_craft_001] PASS if revised 543-573 includes at least one materially risky action by Ina that changes Ji-eun's immediate condition and at least one blocking response from an institution/person on-page; FAIL if the passage resolves mainly through documentation plus abstract principles.",
+    "[ch04_craft_002] PASS if revised lines at 3 and 386 read as complete narrative sentences with explicit subjects and finite verbs (except quoted on-screen text); FAIL if stand-alone clipped narration fragments remain.",
+    "[FBR02-006] PASS if chapter 4 contains only one `sat/landed like` construction and it is the retained line at/around `snapshots/cycle_02/FINAL_NOVEL.md:1591`. FAIL if additional instances of the same template are introduced in chapter 4."
+  ],
+  "chapter_id": "chapter_04",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if the revised 503-543 span contains one explicit choice by Ina that cannot be undone in the same chapter and one immediate concrete consequence (access loss, legal threat, production shutdown, or ally rupture) shown on-page; FAIL if conflict remains only in notices/emails.",
+      "chapter_id": "chapter_04",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:503; snapshots/cycle_02/chapters/chapter_04.md:509; snapshots/cycle_02/chapters/chapter_04.md:535; snapshots/cycle_02/chapters/chapter_04.md:539",
+      "finding_id": "ch04_booker_001",
+      "problem": "The chapter's climactic conflict disperses into parallel compliance demands without forcing an irreversible on-page choice between them, so the causal turn lands as admin traffic rather than a decisive dramatic pivot.",
+      "rewrite_direction": "In snapshots/cycle_02/chapters/chapter_04.md:503-543, stage a forced decision where Ina chooses one gate (network legal vs council policy) or openly defies both, and show immediate retaliation in-scene before the chapter exits.",
+      "severity": "MEDIUM",
+      "source": "booker",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if revised 543-573 includes at least one materially risky action by Ina that changes Ji-eun's immediate condition and at least one blocking response from an institution/person on-page; FAIL if the passage resolves mainly through documentation plus abstract principles.",
+      "chapter_id": "chapter_04",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:517; snapshots/cycle_02/chapters/chapter_04.md:519; snapshots/cycle_02/chapters/chapter_04.md:543; snapshots/cycle_02/chapters/chapter_04.md:551; snapshots/cycle_02/chapters/chapter_04.md:570",
+      "finding_id": "ch04_craft_001",
+      "problem": "Sanitization/moral safety-valve drift: after Ji-eun's bodily crisis is shown, the narrative retreats into portal filing and credo lines, reducing embodied aftermath and cushioning discomfort with principle statements.",
+      "rewrite_direction": "Rewrite snapshots/cycle_02/chapters/chapter_04.md:543-573 so aftermath stays scene-level and embodied: include Ina taking a concrete protective action for Ji-eun (medical, legal, or physical extraction) that meets active obstruction and imposes personal cost; trim or reframe slogan-like self-absolution lines.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if revised lines at 3 and 386 read as complete narrative sentences with explicit subjects and finite verbs (except quoted on-screen text); FAIL if stand-alone clipped narration fragments remain.",
+      "chapter_id": "chapter_04",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:3; snapshots/cycle_02/chapters/chapter_04.md:386",
+      "finding_id": "ch04_craft_002",
+      "problem": "Elliptical clipping in narration (fragment stacks like time-stamp shards and imperative fragments) violates the constitution's no-clipped-narration rule and reads as telegraphic shorthand.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_04.md:3 and snapshots/cycle_02/chapters/chapter_04.md:386 into fully grammatical narrative clauses while preserving pace through punctuation and sentence length, not dropped function words.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if chapter 4 contains only one `sat/landed like` construction and it is the retained line at/around `snapshots/cycle_02/FINAL_NOVEL.md:1591`. FAIL if additional instances of the same template are introduced in chapter 4.",
+      "chapter_id": "chapter_04",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:1591",
+      "finding_id": "FBR02-006",
+      "problem": "Recurring full-book construction pattern detected: formula metaphor template (`[word/abstract noun] sat/landed like [object]`) appears in 5 chapters (4, 9, 10, 16, 18). In chapter 4, this is the strongest and first-use instance; this chapter should KEEP it while other chapters replace theirs.",
+      "rewrite_direction": "Designate `snapshots/cycle_02/FINAL_NOVEL.md:1591` as retained anchor. In this chapter, avoid adding any new `sat/landed like` template lines in nearby revision passes around `snapshots/cycle_02/FINAL_NOVEL.md:1579` and `snapshots/cycle_02/FINAL_NOVEL.md:1604` so the image remains singular.",
+      "severity": "MEDIUM",
+      "source": "booker_global",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "7c6acde88a5e3096dd40563f99b12a22dd1bd753273e4b07a24e2d4822562555",
+  "must_fix_count": 4,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into uncomfortable specificity when stakes demand it: show coercion mechanics, sexual negotiation, grief rituals, and financial desperation at scene level. In edge cases, prefer precision over decorum; protect character dignity through perspective accuracy, not by omitting the hard material.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene requires bodily, economic, or moral consequence and the draft retreats into abstract phrasing, rewrite with concrete action, sensation, and decision impact before proceeding.",
+      "operational_resolution_rule": "When uncertain between tasteful distance and narrative truth, choose the version that preserves causal accountability and embodied consequence, then tune language for clarity rather than softness.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the baseline in spoken dialogue; uncontracted forms are reserved for deliberate emphasis, legal language, or character-specific formality.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate chapter structures deliberately: high-density dialogue vs interior reflection, multi-scene public collision vs two-scene intimate pressure, aftermath inventory vs anticipatory dread. Never let two consecutive chapters share the same pacing architecture or turn mechanism.",
+      "diction": "Contemporary, unsentimental literary diction that permits technical vocabulary, profanity, and class-marked speech without flattening idiolects.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third person centered on Seo Ina, with brief controlled widenings in public-event chapters.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Alternating pressure waves: compressed clauses in operational stress, longer breath-based lines in grief and reflection.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

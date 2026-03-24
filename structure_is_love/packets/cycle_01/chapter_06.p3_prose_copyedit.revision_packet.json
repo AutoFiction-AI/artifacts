@@ -1,0 +1,81 @@
+{
+  "acceptance_targets": [
+    "[CH6-F005] Pass if the revised late-chapter sequence keeps the debt-math motif but includes at least 2 non-numeric interruption beats that alter what Anika does next. Fail if the run remains primarily list-and-calculation progression.",
+    "[CH6-F006] Pass if this construction appears no more than twice in the revised chapter and rewritten instances add concrete action/perception. Fail if all three current instances remain unchanged."
+  ],
+  "chapter_id": "chapter_06",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if the revised late-chapter sequence keeps the debt-math motif but includes at least 2 non-numeric interruption beats that alter what Anika does next. Fail if the run remains primarily list-and-calculation progression.",
+      "chapter_id": "chapter_06",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:151; snapshots/cycle_01/chapters/chapter_06.md:153; snapshots/cycle_01/chapters/chapter_06.md:157; snapshots/cycle_01/chapters/chapter_06.md:245; snapshots/cycle_01/chapters/chapter_06.md:255; snapshots/cycle_01/chapters/chapter_06.md:257; snapshots/cycle_01/chapters/chapter_06.md:259; snapshots/cycle_01/chapters/chapter_06.md:261; snapshots/cycle_01/chapters/chapter_06.md:267; snapshots/cycle_01/chapters/chapter_06.md:303; snapshots/cycle_01/chapters/chapter_06.md:305; snapshots/cycle_01/chapters/chapter_06.md:311",
+      "finding_id": "CH6-F005",
+      "problem": "Mechanical reuse of Anika's counting/logistics stress pattern flattens prose variance late in the chapter. The motif is character-true, but repeated in close succession it narrows emotional and sensory range.",
+      "rewrite_direction": "Revise the calculation-heavy cluster at snapshots/cycle_01/chapters/chapter_06.md:151, snapshots/cycle_01/chapters/chapter_06.md:157, snapshots/cycle_01/chapters/chapter_06.md:255, snapshots/cycle_01/chapters/chapter_06.md:261, and snapshots/cycle_01/chapters/chapter_06.md:303 to alternate arithmetic control with conflicting sensory or relational beats that change her immediate choice.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if this construction appears no more than twice in the revised chapter and rewritten instances add concrete action/perception. Fail if all three current instances remain unchanged.",
+      "chapter_id": "chapter_06",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:3; snapshots/cycle_01/chapters/chapter_06.md:165; snapshots/cycle_01/chapters/chapter_06.md:275",
+      "finding_id": "CH6-F006",
+      "problem": "Recurring omission construction (\"without + gerund/participle\") appears more than twice and reads as a prose tic rather than a deliberate rhythmic choice.",
+      "rewrite_direction": "Recast at least two instances at snapshots/cycle_01/chapters/chapter_06.md:3, snapshots/cycle_01/chapters/chapter_06.md:165, and snapshots/cycle_01/chapters/chapter_06.md:275 into active alternatives that show what each character does in the beat.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "86508c1b3cb0085e49c72959c6152ea4447ae3732be8c0f76d9e8833a655cbdd",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on prose and copyedit finish: diction precision, rhythm control, sentence-level clarity, grammar, line-level polish without flattening style, and explicit aesthetic-risk audit (sanitization is the primary risk \u2014 do not soften or euphemize; push toward creative risk and specificity).",
+    "key": "p3_prose_copyedit",
+    "label": "prose/copyedit fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into uncomfortable specificity when it changes behavior: pain detail, debt arithmetic, manipulative care, and mixed motives. In edge cases, prefer the truest in-character action over protective narration, then carry the real consequence forward instead of immediately moralizing it away.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If coercion, grief, injury, or economic shame appears, language must stay specific and embodied; vague softening triggers mandatory rewrite.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High - contractions are the spoken default; uncontracted forms are reserved for formal authority, deliberate emphasis, or emotional freezing.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Vary scene count and dialogue density chapter to chapter: rotate match compression, slow inventory aftermath, institutional pressure scenes, and quiet domestic intervals so adjacent chapters do not share the same structural pulse.",
+      "diction": "Concrete contemporary diction with class-aware specificity; avoid abstract therapy language unless a character would actually use it.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third anchored in Anika for most chapters, with brief controlled slips toward Ravi in designated confrontation and aftermath chapters.",
+      "rhythm_target": "Alternate clipped athletic sequences with longer reflective cadences; sentence length should track exertion, shame, and release.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

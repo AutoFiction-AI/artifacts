@@ -1,0 +1,46 @@
+{
+  "chapter_id": "chapter_09",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch09-craft-001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_02/chapters/chapter_09.md:57; snapshots/cycle_02/chapters/chapter_09.md:71; snapshots/cycle_02/chapters/chapter_09.md:77; snapshots/cycle_02/chapters/chapter_09.md:83; snapshots/cycle_02/chapters/chapter_09.md:87; snapshots/cycle_02/chapters/chapter_09.md:99",
+      "problem": "The core documentary proof contradicts itself. Vautrin says Ferrand has not yet earned the signature, the deposition leaves the date and quantity blank, and the margin note says the substances may still need to be arranged in situ, but the ledger already records the 14 May final payment and the file appears to include a signed receipt. That collapses contingency into settled fact at the exact point where the chapter needs procedural coherence.",
+      "rewrite_direction": "Rebuild the payment/warrant relationship in the Prefecture file at snapshots/cycle_02/chapters/chapter_09.md:57, snapshots/cycle_02/chapters/chapter_09.md:71, snapshots/cycle_02/chapters/chapter_09.md:77, snapshots/cycle_02/chapters/chapter_09.md:83, snapshots/cycle_02/chapters/chapter_09.md:87, and snapshots/cycle_02/chapters/chapter_09.md:99. Either make the 60-franc line a pending authorization, draft voucher, or unsigned promise that has not yet been paid, or change the surrounding evidence so Ferrand has already planted the material proof and Vautrin is delaying only the formal execution timing.",
+      "acceptance_test": "Reading snapshots/cycle_02/chapters/chapter_09.md:57, snapshots/cycle_02/chapters/chapter_09.md:71, snapshots/cycle_02/chapters/chapter_09.md:77, snapshots/cycle_02/chapters/chapter_09.md:83, snapshots/cycle_02/chapters/chapter_09.md:87, and snapshots/cycle_02/chapters/chapter_09.md:99 should leave no ambiguity about whether Ferrand's final 60 francs are pending or paid. Pass only if that payment status matches the warrant status: if the substances are still 'not yet visible in situ,' the file cannot also present a completed final-payment receipt; if the payment is already completed, the surrounding lines must show that Ferrand has already delivered the proof and only procedural timing remains."
+    },
+    {
+      "finding_id": "ch09-prose-001",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_02/chapters/chapter_09.md:93; snapshots/cycle_02/chapters/chapter_09.md:101; snapshots/cycle_02/chapters/chapter_09.md:147; snapshots/cycle_02/chapters/chapter_09.md:339; snapshots/cycle_02/chapters/chapter_09.md:385",
+      "problem": "The chapter repeatedly falls into clipped noun-phrase narration ('School copybooks.' 'Complete arrangement.' 'Approval and evidence in one seam.' 'Strength she understood better than explanations.' 'Practical motion. No rhetoric.'). Once or twice might read as emphasis; at this frequency it becomes a mannerism and directly conflicts with the constitution's ban on elliptical clipping in narration.",
+      "rewrite_direction": "Revise the emphasis beats between snapshots/cycle_02/chapters/chapter_09.md:91 and snapshots/cycle_02/chapters/chapter_09.md:101, between snapshots/cycle_02/chapters/chapter_09.md:145 and snapshots/cycle_02/chapters/chapter_09.md:147, at snapshots/cycle_02/chapters/chapter_09.md:339, and at snapshots/cycle_02/chapters/chapter_09.md:385 so the punch comes from grammatically complete sentences or tighter integration with adjacent syntax, not from stand-alone clipped fragments.",
+      "acceptance_test": "Pass only if the revised passages at snapshots/cycle_02/chapters/chapter_09.md:93, snapshots/cycle_02/chapters/chapter_09.md:101, snapshots/cycle_02/chapters/chapter_09.md:147, snapshots/cycle_02/chapters/chapter_09.md:339, and snapshots/cycle_02/chapters/chapter_09.md:385 read as complete grammatical sentences or are absorbed into neighboring sentences; none of those emphasis beats should remain as isolated elliptical fragments."
+    },
+    {
+      "finding_id": "ch09-prose-002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_02/chapters/chapter_09.md:13; snapshots/cycle_02/chapters/chapter_09.md:83; snapshots/cycle_02/chapters/chapter_09.md:85; snapshots/cycle_02/chapters/chapter_09.md:101; snapshots/cycle_02/chapters/chapter_09.md:203; snapshots/cycle_02/chapters/chapter_09.md:363",
+      "problem": "The prose leans on the same 'almost' hedge six times across key emotional and perceptual beats. In aggregate that becomes timidity: the chapter keeps stepping half a pace back from smile, smell, honesty, courtesy, hatred, and amusement instead of deciding which of those states Elise actually reaches.",
+      "rewrite_direction": "Tighten the cited beats at snapshots/cycle_02/chapters/chapter_09.md:13, snapshots/cycle_02/chapters/chapter_09.md:83, snapshots/cycle_02/chapters/chapter_09.md:85, snapshots/cycle_02/chapters/chapter_09.md:101, snapshots/cycle_02/chapters/chapter_09.md:203, and snapshots/cycle_02/chapters/chapter_09.md:363. Replace most of the repeated 'almost' softeners with more exact emotional or sensory commitments, keeping hesitation only where the uncertainty itself matters on the page.",
+      "acceptance_test": "Pass only if, in the revised cited lines, at least four of the six current 'almost' hedges are gone and each remaining beat reads as a specific committed perception or feeling rather than a generic near-miss."
+    }
+  ],
+  "summary": "Chapter 9 hits its major turn cleanly: Elise re-enters the Prefecture, gets proof that Ferrand is furnishing a case rather than merely observing one, and warns Lucien just enough to force the overnight press move without confessing herself. Lucien, Clemence, and Vautrin all stay on-model against the style bible, and the chapter preserves close-third interiority throughout. It still fails review because the documentary evidence at the heart of the chapter is procedurally self-contradictory, and the prose accrues two visible mannerisms: constitution-banned clipped narration and repeated hedge-softening.",
+  "coverage_scene_ids": [
+    "prefecture_infiltration",
+    "schoolroom_warning_and_press_move"
+  ]
+}

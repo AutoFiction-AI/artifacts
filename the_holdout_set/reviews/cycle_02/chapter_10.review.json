@@ -1,0 +1,43 @@
+{
+  "chapter_id": "chapter_10",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch10-booker-01",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "The hotel investigation runs two near-identical proof loops before the leverage changes: June proves an old export at snapshots/cycle_02/chapters/chapter_10.md:23 and Leela repeats the same basic beat with her own earlier plot at snapshots/cycle_02/chapters/chapter_10.md:53, then the metadata beat arrives at snapshots/cycle_02/chapters/chapter_10.md:71.",
+      "problem": "Scene-level tension stalls because the first scene spends too long proving the same category of fact twice: both documents show that Mohit used earlier draft material, but the second pass does not materially change the relationship pressure or the strategic problem until the metadata arrives. That keeps the chapter below Booker-level structural compression even though the underlying causal chain is strong.",
+      "rewrite_direction": "Rebuild the sequence around snapshots/cycle_02/chapters/chapter_10.md:23, snapshots/cycle_02/chapters/chapter_10.md:53, and snapshots/cycle_02/chapters/chapter_10.md:71 so each document discovery changes a different axis of the scene. Options: compress one of the two old-version reveals into the metadata beat, or make the Leela plot discovery at snapshots/cycle_02/chapters/chapter_10.md:53 force the hidden-Hades problem to surface rather than merely adding another earlier timestamp.",
+      "acceptance_test": "Pass if, on a reread of the revised hotel scene anchored at snapshots/cycle_02/chapters/chapter_10.md:23, snapshots/cycle_02/chapters/chapter_10.md:53, and snapshots/cycle_02/chapters/chapter_10.md:71, each successive evidence beat creates a new consequence category (source theft, legal/administrative exposure, or interpersonal leverage) rather than repeating 'this came from an older draft.' Fail if two consecutive beats still perform the same reveal with different files."
+    },
+    {
+      "finding_id": "ch10-craft-01",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_10",
+      "evidence": "At snapshots/cycle_02/chapters/chapter_10.md:133 the narration explicitly names the charged material ('whose body had done what on the carpet' and whether the sex was desire or anger) and then declines to stage it; the bruise beat at snapshots/cycle_02/chapters/chapter_10.md:166 and the retrospective gloss at snapshots/cycle_02/chapters/chapter_10.md:387 keep the aftermath present as summary and symbol rather than consequence.",
+      "problem": "This is sanitization drift in a scene that should be hotter and messier. The chapter knows the morning after sex, betrayal, and evidence-sharing has changed the alliance, but instead of letting either woman confront that alteration in speech or action, it names the possibility and retreats into cleaner investigative business. Because the retreat happens exactly where erotic and emotional consequence should become concrete, it reads as a HIGH craft failure rather than a minor omission.",
+      "rewrite_direction": "Revise the morning-after exchange around snapshots/cycle_02/chapters/chapter_10.md:133, snapshots/cycle_02/chapters/chapter_10.md:166, and snapshots/cycle_02/chapters/chapter_10.md:387 so the sex and the evidence problem collide on-page. One of them should have to name what last night was, what the bruise/scrape means now, or how intimacy changes trust and risk; the answer should alter the plan they carry out later, not sit outside it as subtext only.",
+      "acceptance_test": "Pass if the revised passage anchored at snapshots/cycle_02/chapters/chapter_10.md:133 and snapshots/cycle_02/chapters/chapter_10.md:166 contains at least one direct spoken or physically enacted acknowledgment of the sex/anger/trust aftermath that changes the operational conversation. Fail if the revision still summarizes the emotional problem as something they could discuss while leaving the actual confrontation off-page."
+    },
+    {
+      "finding_id": "ch10-prose-01",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "Once Mohit's text lands, the chapter restates the same surveillance thesis in multiple abstract formulations: 'instrument' at snapshots/cycle_02/chapters/chapter_10.md:324, 'transmission vector' at snapshots/cycle_02/chapters/chapter_10.md:369, 'coverage' at snapshots/cycle_02/chapters/chapter_10.md:377, 'shared grammar' at snapshots/cycle_02/chapters/chapter_10.md:387, 'the beginning of method' at snapshots/cycle_02/chapters/chapter_10.md:415, and 'The paranoia had objects... usable' at snapshots/cycle_02/chapters/chapter_10.md:427.",
+      "problem": "The closing stretch starts paraphrasing its own meaning instead of trusting the already-strong material details. Because the same conceptual move appears more than twice, it becomes a prose tic: Keating keeps being translated into instrument, coverage, transmission vector, and usable paranoia rather than the scene landing on one decisive image or action. That repetition flattens the ending and pushes the narration toward essayistic gloss, which the style bible explicitly resists.",
+      "rewrite_direction": "Tighten the closing movement at snapshots/cycle_02/chapters/chapter_10.md:324, snapshots/cycle_02/chapters/chapter_10.md:377, snapshots/cycle_02/chapters/chapter_10.md:387, snapshots/cycle_02/chapters/chapter_10.md:415, and snapshots/cycle_02/chapters/chapter_10.md:427. Keep one strong surveillance/conversion image, then let concrete behavior carry the rest: the folded note, the wallet slot, the choice to go off campus, Mohit's text warming in Leela's pocket. Cut or concrete-ify the later abstract restatements so the ending stops explaining the state change and simply embodies it.",
+      "acceptance_test": "Pass if a reread of the revised close anchored at snapshots/cycle_02/chapters/chapter_10.md:324, snapshots/cycle_02/chapters/chapter_10.md:377, and snapshots/cycle_02/chapters/chapter_10.md:427 no longer encounters three separate abstract restatements of 'the space is compromised' and instead ends on one concrete image or action that makes the changed paranoia legible. Fail if the ending still explains the same shift through multiple synonymous conceptual nouns."
+    }
+  ],
+  "summary": "Strong continuity control, clean past-tense handling, and distinct Leela/June/Ben register work are enough for a dialogue pass, but the chapter still fails overall. The morning-after scene sanitizes its most charged emotional material by naming it and stepping around it, the hotel investigation duplicates one proof beat before the leverage changes, and the final stretch over-explains its surveillance thesis instead of trusting the concrete scene work.",
+  "coverage_scene_ids": []
+}

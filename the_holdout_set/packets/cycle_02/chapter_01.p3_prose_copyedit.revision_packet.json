@@ -1,0 +1,82 @@
+{
+  "acceptance_targets": [
+    "[chapter_01_prose_001] PASS if no more than two `as if` explanatory comparisons remain across the cited spans and each surviving comparison introduces information not already obvious from the surrounding action; FAIL if the same comparison template still appears in three or more of those beats.",
+    "[chapter_01_prose_002] PASS if at least three of the cited recognition captions are replaced by concrete observable consequences and no more than two abstract caption beats of this type remain in those spans; FAIL if the revised passage still repeatedly labels the reader's recognition for them after the dialogue has already landed."
+  ],
+  "chapter_id": "chapter_01",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if no more than two `as if` explanatory comparisons remain across the cited spans and each surviving comparison introduces information not already obvious from the surrounding action; FAIL if the same comparison template still appears in three or more of those beats.",
+      "chapter_id": "chapter_01",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_01.md:35; snapshots/cycle_02/chapters/chapter_01.md:115; snapshots/cycle_02/chapters/chapter_01.md:221; snapshots/cycle_02/chapters/chapter_01.md:263; snapshots/cycle_02/chapters/chapter_01.md:283; snapshots/cycle_02/chapters/chapter_01.md:337",
+      "finding_id": "chapter_01_prose_001",
+      "problem": "The chapter leans too often on the same `as if` explanatory comparison to interpret behavior for the reader. Accumulated across the office scene, meeting, and hallway aftermath, the template becomes a visible prose tic and starts to mediate pressure that should feel immediate.",
+      "rewrite_direction": "In the beats at snapshots/cycle_02/chapters/chapter_01.md:35, snapshots/cycle_02/chapters/chapter_01.md:115, snapshots/cycle_02/chapters/chapter_01.md:221, snapshots/cycle_02/chapters/chapter_01.md:263, snapshots/cycle_02/chapters/chapter_01.md:283, and snapshots/cycle_02/chapters/chapter_01.md:337, replace most of the `as if` comparisons with direct action, bodily response, or more specific material detail. Keep only the comparisons that add genuinely new pressure rather than paraphrasing the scene.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if at least three of the cited recognition captions are replaced by concrete observable consequences and no more than two abstract caption beats of this type remain in those spans; FAIL if the revised passage still repeatedly labels the reader's recognition for them after the dialogue has already landed.",
+      "chapter_id": "chapter_01",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_01.md:59; snapshots/cycle_02/chapters/chapter_01.md:145; snapshots/cycle_02/chapters/chapter_01.md:191; snapshots/cycle_02/chapters/chapter_01.md:227; snapshots/cycle_02/chapters/chapter_01.md:327; snapshots/cycle_02/chapters/chapter_01.md:357",
+      "finding_id": "chapter_01_prose_002",
+      "problem": "After several strong dialogue turns, the narration drops into a repeated recognition-caption pattern (`There it was`, `The sentence...`, `The word...`) that explains the subtext instead of trusting the scene to carry it. Once or twice this is emphasis; at this frequency it starts to sound workshop-polished and predictable.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_01.md:59, snapshots/cycle_02/chapters/chapter_01.md:145, snapshots/cycle_02/chapters/chapter_01.md:191, snapshots/cycle_02/chapters/chapter_01.md:227, snapshots/cycle_02/chapters/chapter_01.md:327, and snapshots/cycle_02/chapters/chapter_01.md:357, cut or recast at least half of these abstract captions into concrete consequences: a silence that changes leverage, a visible reaction from June or Omar, or a bodily response from Leela. Leave one or two as signature emphasis, not the default explanatory move.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "2fafeb9d8913848d3f8739deb044937685fe74f54a20aeccdc9b282e2c471a4b",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on prose and copyedit finish: diction precision, rhythm control, sentence-level clarity, grammar, line-level polish without flattening style, and explicit aesthetic-risk audit (sanitization is the primary risk \u2014 do not soften or euphemize; push toward creative risk and specificity).",
+    "key": "p3_prose_copyedit",
+    "label": "prose/copyedit fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into the absurdity and cruelty of graduate labor without converting the book into caricature or chase-plot menace. In edge cases, prefer the messier and more compromising version of events if it yields stronger human consequence and remains causally plausible; render sex, professional theft, bureaucratic harm, and emotional pettiness with the same specificity as any technical problem.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene turns vague at the exact point humiliation, erotic charge, class shame, visa fear, or institutional cruelty becomes concrete, rewrite until the cost is materially and socially legible.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High; contractions are the baseline in speech, and uncontracted forms should appear only for deliberate precision, class performance, emotional emphasis, or character-specific formality.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate public and private pressure, ensemble chapters and solitary ones, bureaucratic scenes and domestic scenes, deadline compression and aftermath inventory, so no two adjacent chapters rely on the same structural rhythm or dialogue density.",
+      "diction": "Contemporary literary English grounded in material detail; technical language should appear only when the social reality of the lab requires it, and it should never replace bodily or relational consequence.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person centered on Leela, with occasional brief widenings that register group mood and institutional atmosphere without leaving her interpretive frame.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Alternate compressed observational lines with longer accrual sentences that can carry comedy, shame, and procedural dread in the same movement; quiet chapters should breathe, deadline chapters should tighten without turning telegraphic.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

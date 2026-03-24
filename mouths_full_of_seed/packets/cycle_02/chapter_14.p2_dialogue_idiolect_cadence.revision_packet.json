@@ -1,0 +1,69 @@
+{
+  "acceptance_targets": [
+    "[chapter_14_dialogue_001] Pass if the line at snapshots/cycle_02/chapters/chapter_14.md:389 can be read aloud as natural Reedmouth speech in one breath and no longer uses the unidiomatic/formal \"need not to\" construction; fail if Riva still sounds stiff, ceremonious, or syntactically off in that beat."
+  ],
+  "chapter_id": "chapter_14",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if the line at snapshots/cycle_02/chapters/chapter_14.md:389 can be read aloud as natural Reedmouth speech in one breath and no longer uses the unidiomatic/formal \"need not to\" construction; fail if Riva still sounds stiff, ceremonious, or syntactically off in that beat.",
+      "chapter_id": "chapter_14",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:389 gives Riva the line \"People need not to drown,\" which is unidiomatic and breaks both her blunt workmanlike register and the style bible's high-contraction/default-natural-speech rule.",
+      "finding_id": "chapter_14_dialogue_001",
+      "problem": "At the exact point where Riva should sound hardest and cleanest, the chapter gives her a grammatically awkward, over-formal line. The slip is small but it lands in the climactic platform confrontation, so it momentarily knocks her voice out of character and weakens the exchange's pressure.",
+      "rewrite_direction": "Revise Riva's rebuttal at snapshots/cycle_02/chapters/chapter_14.md:389 so it sounds like her established public register: blunt, physical, and immediately speakable under stress. Keep the beat's meaning, but replace the current construction with idiomatic spoken English consistent with a high-contraction speaker.",
+      "severity": "MEDIUM",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "d723843ab7275e86af8eeae455db57584a7158d7b5f0405ddafcc083ba0ac9a4",
+  "must_fix_count": 1,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on dialogue realism and voice separation: idiolect fidelity, leverage shifts, pressure cadence, anti-transcript behavior, natural colloquial texture (contractions/interruptions/slang when character-true), and pressure-true profanity usage per aesthetic risk policy.",
+    "key": "p2_dialogue_idiolect_cadence",
+    "label": "dialogue/idiolect/cadence fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into the collision of sanctity, lust, labor, rot, and family resentment. In edge cases, choose the more concrete, uncomfortable, and character-specific rendering over symbolic safety; if an image or action feels too polite for the pressure, it is probably wrong.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If sex, violence, shame, grief, or economic pressure drives a scene, vague language counts as a failed beat; replace euphemism with the exact bodily, social, or material consequence the character experiences.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High - contractions are the norm across dialogue; uncontracted forms are reserved for ritual speech, emphasis, or deliberate character-specific formality.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Vary scene count, dialogue density, and narrative movement aggressively: follow ordeal with meal, revelation with labor, schism with care, and public spectacle with close-bodied aftermath so no adjacent chapters share the same structural rhythm.",
+      "diction": "Concrete, bodily, locally sacred, and unsanitized; lyrical only when pressure earns it, never as a decorative default.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person rotating among the five siblings; each scene stays inside one consciousness and lets the river press through perception rather than omniscient explanation.",
+      "narrative_tense": "Past tense.",
+      "rhythm_target": "Alternate muscular propulsion with denser lyric accumulation; peak scenes should tighten and clarify rather than dissolve into fragmentary haze.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "acceptance_targets": [
+    "[ch17_craft_001] PASS if the revised passage still explains how Prue reaches the chamber, but a reader cross-checking the chapter against the continuity sheet no longer has to place her prior chamber visit before chapter 9's February event or before chapter 10's four-anchor work. FAIL if January, or any equally early timing, still governs the route-sharing memory.",
+    "[FA-004] Pass if those spans still make Owen's choice unmistakable but no longer rely on consecutive polished mic-drops to do the work. Fail if a reader can still lift several lines as finished aphorisms without hearing battle shock and smoke-fatigue in the syntax.",
+    "[FA-011] Pass if snapshots/cycle_01/FINAL_NOVEL.md:5039-5040 still conveys the totality of the strain but no longer uses teeth/molars/jaw to do it. Fail if the scene continues the same somatic default."
+  ],
+  "chapter_id": "chapter_17",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if the revised passage still explains how Prue reaches the chamber, but a reader cross-checking the chapter against the continuity sheet no longer has to place her prior chamber visit before chapter 9's February event or before chapter 10's four-anchor work. FAIL if January, or any equally early timing, still governs the route-sharing memory.",
+      "chapter_id": "chapter_17",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_17.md:23; snapshots/cycle_01/chapters/chapter_17.md:167; snapshots/cycle_01/chapters/chapter_17.md:171",
+      "finding_id": "ch17_craft_001",
+      "problem": "The chapter places Prue's prior visit to the chamber in January, then ties that visit to 'the overlays and the anchor tables' memory. The continuity materials place Prue's four-anchor/anchor-table access in chapter 10, after chapter 9's February sabotage, so this month marker pulls her route knowledge earlier than canon and muddies the access chronology.",
+      "rewrite_direction": "Revise snapshots/cycle_01/chapters/chapter_17.md:23 and, if needed, snapshots/cycle_01/chapters/chapter_17.md:167 plus snapshots/cycle_01/chapters/chapter_17.md:171 so Prue anchors the memory to the later anchor-table work rather than to January. Keep the established logic that Owen showed her the route himself, but remove the month cue or replace it with timing consistent with chapter 10.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if those spans still make Owen's choice unmistakable but no longer rely on consecutive polished mic-drops to do the work. Fail if a reader can still lift several lines as finished aphorisms without hearing battle shock and smoke-fatigue in the syntax.",
+      "chapter_id": "chapter_17",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:5121",
+      "finding_id": "FA-004",
+      "problem": "The Prue confrontation is emotionally right but too composed in its spoken texture. In snapshots/cycle_01/FINAL_NOVEL.md:5121-5133, 5205-5233, and 5271-5303, both characters keep landing polished moral verdicts while smoke, exhaustion, and battle aftermath should be fracturing syntax and timing.",
+      "rewrite_direction": "Roughen snapshots/cycle_01/FINAL_NOVEL.md:5121-5133, snapshots/cycle_01/FINAL_NOVEL.md:5205-5233, and snapshots/cycle_01/FINAL_NOVEL.md:5271-5303. Preserve the clarity of Prue's disgust and Owen's refusal, but replace some of the neat moral-summary turns with interrupted starts, repetitions, physically distracted speech, or lines that arrive half-formed and have to be repaired in dialogue.",
+      "severity": "MEDIUM",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if snapshots/cycle_01/FINAL_NOVEL.md:5039-5040 still conveys the totality of the strain but no longer uses teeth/molars/jaw to do it. Fail if the scene continues the same somatic default.",
+      "chapter_id": "chapter_17",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:5039",
+      "finding_id": "FA-011",
+      "problem": "Recurring somatic-vocabulary pattern: old-work strain defaults to teeth/molars/jaw across 7 chapters, and this chapter's 'feel the whole lattice in his teeth' at snapshots/cycle_01/FINAL_NOVEL.md:5039 is another repeat in a scene already dense with stronger physical cost. The chapter can gain force by redistributing that sensation into fresher bodily or environmental detail.",
+      "rewrite_direction": "Replace the teeth-based cue in snapshots/cycle_01/FINAL_NOVEL.md:5039-5040 with a distinct local register tied to the undercroft afterhours condition: arm numbness, split nails, chalk paste drying on skin, floor-vibration through the knees, or another scene-specific sensation that is not mouth/jaw based.",
+      "severity": "MEDIUM",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "cecf42ef9c4485237252c1a9d41f0b9b8ab0e01e4ef008d1133de2aed4e7f414",
+  "must_fix_count": 3,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into the premise's sharpest contradiction: school-year comedy, adolescent awkwardness, punitive cruelty, and cosmic dread may coexist in the same novel without canceling each other. When a scene offers a cleaner version and a truer version, choose the truer one unless the character is actively refusing perception on the page.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If pain, cruelty, fear, or moral ugliness would leave a bodily or environmental trace, render that trace instead of summarizing it into tasteful haze.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High. Contractions are the spoken norm for most characters; fuller forms are reserved for Snape, ritual language, or deliberate emphasis.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate scene density, dialogue load, and movement mode aggressively: confrontation against quiet meals, subterranean revelation against corridor farce, ritual compression against spring drift, so no consecutive chapters feel built from the same emotional or structural template.",
+      "diction": "British boarding-school realism under wartime pressure, with speculative vocabulary introduced only when Owen's attention earns it.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third limited through Owen, with only brief sensory widenings that he could plausibly notice in the moment.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Alternate analytic accumulation with blunt corporeal sentences. Quiet chapters should breathe; punishment and ritual chapters should tighten without clipping grammar.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

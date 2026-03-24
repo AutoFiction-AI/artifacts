@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_09",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_09_f001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_02/chapters/chapter_09.md:15",
+      "problem": "Doug's salary is stated as sixty-one thousand dollars here, which contradicts the continuity sheet's canonical $61,400 annual Mutual Fidelity salary. Because Doug's voice is built on exact dollar amounts and correct math, the mismatch reads as both a continuity break and a character-precision failure.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_09.md:15 so the salary and hourly-rate math match canon exactly. The line should use the continuity-sheet figure of $61,400 and a consistent 2,080-hour conversion, or else remove the hourly figure entirely if the passage cannot keep both numbers correct without damaging rhythm.",
+      "acceptance_test": "Pass if a cold read of snapshots/cycle_02/chapters/chapter_09.md:15 shows Doug earning the canonical $61,400 per year and any hourly conversion in that same sentence computes correctly from that salary over a 2,080-hour work year; fail if the passage still says $61,000 or preserves mismatched math."
+    },
+    {
+      "finding_id": "chapter_09_f002",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_02/chapters/chapter_09.md:83; snapshots/cycle_02/chapters/chapter_09.md:89; snapshots/cycle_02/chapters/chapter_09.md:97; snapshots/cycle_02/chapters/chapter_09.md:101; snapshots/cycle_02/chapters/chapter_09.md:105; snapshots/cycle_02/chapters/chapter_09.md:111; snapshots/cycle_02/chapters/chapter_09.md:113",
+      "problem": "The keynote death is the chapter's central ordeal, but the narration keeps diagnosing the bombing for the reader instead of letting enough failed stage time and audience behavior do the work. In a comedy-driven chapter, this is a deflated-humor problem: the prose explains the collapse ('The audience was polite,' 'The room gave him a soft exhale,' 'It sounded exactly right...') where the chapter would be stronger if the reader had to sit in more of the dead material and its immediate social cost.",
+      "rewrite_direction": "Rework snapshots/cycle_02/chapters/chapter_09.md:81-115 so at least one of the explanatory summary beats is replaced by concrete onstage failure: another specific line or fragment of material, Doug's bodily loss of control, and a sharper audience consequence before or immediately after 'I think that's probably enough.' Keep the must-land mechanics already present in snapshots/cycle_02/chapters/chapter_09.md:81-115: the first relief laugh, the phone check, the cough, the stop at nineteen, and the polite applause.",
+      "acceptance_test": "Pass if a reader can point to snapshots/cycle_02/chapters/chapter_09.md:81-115 and identify one additional failed joke beat, one visible or physical sign that Doug is losing control of the set, and one audience consequence more concrete than an abstract statement about 'the room,' while the existing stop-short ending and polite applause still remain. Fail if the revised passage still relies mainly on narration to tell the reader that the set is dying."
+    },
+    {
+      "finding_id": "chapter_09_f003",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_02/chapters/chapter_09.md:61; snapshots/cycle_02/chapters/chapter_09.md:151; snapshots/cycle_02/chapters/chapter_09.md:199",
+      "problem": "The chapter reuses the same 'Doug looked at ...' launch to enter interior processing multiple times, and the hotel scene uses it twice in quick succession. That repeated inventory-opening becomes a visible prose formula rather than a fresh choice, flattening two otherwise important emotional turns into the same sentence shape.",
+      "rewrite_direction": "Vary the openings at snapshots/cycle_02/chapters/chapter_09.md:151-153 and snapshots/cycle_02/chapters/chapter_09.md:199-201 so the hotel scene does not stage both turns through another 'Doug looked at ...' inventory. Keep the bedspread, bolted furniture, and dead-hotel specifics, but let at least one passage enter through a different sensory channel or action rather than another look-and-list setup.",
+      "acceptance_test": "Pass if the revised hotel passage no longer opens both snapshots/cycle_02/chapters/chapter_09.md:151-153 and snapshots/cycle_02/chapters/chapter_09.md:199-201 with near-identical 'Doug looked at ...' inventory sentences, and each beat reveals his state through a distinct cue while preserving the room's fixed-object details. Fail if both emotional turns still begin with the same observational formula."
+    }
+  ],
+  "summary": "FAIL overall. The chapter has a strong engine and the Roy aftermath stays character-true, but it does not clear review because it breaks canon on Doug's salary, partially explains the bombing instead of making the reader sit in more of the dead room, and repeats a visible inventory-opening prose formula in the hotel scene."
+}

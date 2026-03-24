@@ -1,0 +1,119 @@
+{
+  "chapter_id": "chapter_03",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch03_booker_001",
+      "source": "booker",
+      "severity": "HIGH",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:121; snapshots/cycle_01/chapters/chapter_03.md:123; snapshots/cycle_01/chapters/chapter_03.md:127; snapshots/cycle_01/chapters/chapter_03.md:143; snapshots/cycle_01/chapters/chapter_03.md:201; snapshots/cycle_01/chapters/chapter_03.md:207; snapshots/cycle_01/chapters/chapter_03.md:313",
+      "problem": "The money choreography for tow balance, deposit, shift cash, and remaining repair balance does not reconcile cleanly on-page, which weakens causal trust at the chapter's core logistical conflict.",
+      "rewrite_direction": "Revise transaction logic around snapshots/cycle_01/chapters/chapter_03.md:121, snapshots/cycle_01/chapters/chapter_03.md:123, snapshots/cycle_01/chapters/chapter_03.md:127, snapshots/cycle_01/chapters/chapter_03.md:139, snapshots/cycle_01/chapters/chapter_03.md:143, snapshots/cycle_01/chapters/chapter_03.md:201, snapshots/cycle_01/chapters/chapter_03.md:207, and snapshots/cycle_01/chapters/chapter_03.md:313 so one explicit ledger governs all exchanges (who holds each amount, when Darlene starts work, and what balance remains).",
+      "acceptance_test": "Pass if a reader can compute the same remaining balance from the stated total (445) using only revised lines 121-143, 201-209, and 313 with no double-counting or implied off-page transfers; fail if two different balances are still plausible."
+    },
+    {
+      "finding_id": "ch03_booker_002",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:263; snapshots/cycle_01/chapters/chapter_03.md:267; snapshots/cycle_01/chapters/chapter_03.md:269; snapshots/cycle_01/chapters/chapter_03.md:305; snapshots/cycle_01/chapters/chapter_03.md:317",
+      "problem": "The chapter's confession arc peaks at an almost-admission and then ends on another unsent message, so the scene-level state change is muted instead of decisively escalating consequence.",
+      "rewrite_direction": "Strengthen end-state around snapshots/cycle_01/chapters/chapter_03.md:263, snapshots/cycle_01/chapters/chapter_03.md:267, snapshots/cycle_01/chapters/chapter_03.md:269, snapshots/cycle_01/chapters/chapter_03.md:305, and snapshots/cycle_01/chapters/chapter_03.md:317 by requiring one irreversible action in-scene (explicit admission to Cora or a sent message that names the offense).",
+      "acceptance_test": "Pass if revised lines 263-317 contain one explicit admission naming the transfer (what he did and amount) and one irreversible communication action (a sent message or spoken disclosure) before chapter close; fail if the chapter still closes on withheld truth only."
+    },
+    {
+      "finding_id": "ch03_craft_001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:17; snapshots/cycle_01/chapters/chapter_03.md:289; snapshots/cycle_01/chapters/chapter_03.md:291",
+      "problem": "Continuity contradiction: the continuity sheet canonizes Eli's device as a prepaid flip phone, but this chapter describes a burner with a peeling plastic screen protector in a way that reads as touchscreen-phone coding.",
+      "rewrite_direction": "Align device description in snapshots/cycle_01/chapters/chapter_03.md:17, snapshots/cycle_01/chapters/chapter_03.md:289, snapshots/cycle_01/chapters/chapter_03.md:291, and snapshots/cycle_01/chapters/chapter_03.md:299 with flip-phone physical behavior (hinge, keypad, small screens) or remove touchscreen-specific cues.",
+      "acceptance_test": "Pass if revised lines 17 and 289-299 contain at least one unambiguous flip-phone detail and no smartphone-only descriptors; fail if the object can still be read as a touchscreen slab phone."
+    },
+    {
+      "finding_id": "ch03_craft_002",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:265; snapshots/cycle_01/chapters/chapter_03.md:267; snapshots/cycle_01/chapters/chapter_03.md:271",
+      "problem": "Sanitization drift at the chapter's moral pressure point: the prose names the theft context, then retreats into abstraction ('Partial confession. Partial debt.') instead of rendering accountability in-scene.",
+      "rewrite_direction": "In snapshots/cycle_01/chapters/chapter_03.md:267, snapshots/cycle_01/chapters/chapter_03.md:269, snapshots/cycle_01/chapters/chapter_03.md:271, and snapshots/cycle_01/chapters/chapter_03.md:273, replace abstract gloss with concrete admission language (actor, amount, victim, intent) and an immediate relational consequence from Cora.",
+      "acceptance_test": "Pass if revised lines 267-273 include Eli stating the transfer plainly (including amount) and Cora responding with a concrete boundary, demand, or refusal; fail if the passage resolves into abstract labels without explicit admission."
+    },
+    {
+      "finding_id": "ch03_craft_003",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:9",
+      "problem": "Timidity in high-pressure rendering: 'He swore' summarizes panic-language instead of presenting the utterance, softening impact in the first mechanical failure beat.",
+      "rewrite_direction": "Revise snapshots/cycle_01/chapters/chapter_03.md:9 to include Eli's actual spoken outburst (register-appropriate profanity or verbal reaction) tied to his immediate decision to signal and coast.",
+      "acceptance_test": "Pass if revised line 9 includes explicit quoted speech for Eli's reaction and that speech directly precedes or motivates his pull-over action; fail if the beat remains summarized as a generic swearing tag."
+    },
+    {
+      "finding_id": "ch03_dialogue_001",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:71; snapshots/cycle_01/chapters/chapter_03.md:97; snapshots/cycle_01/chapters/chapter_03.md:149; snapshots/cycle_01/chapters/chapter_03.md:179; snapshots/cycle_01/chapters/chapter_03.md:201; snapshots/cycle_01/chapters/chapter_03.md:229; snapshots/cycle_01/chapters/chapter_03.md:275",
+      "problem": "Dialogue register drifts stiff through repeated uncontracted forms ('Do not,' 'You are,' 'That is,' 'I did not') across high-pressure contemporary speech, conflicting with style-bible default high contraction use.",
+      "rewrite_direction": "Adjust spoken lines at snapshots/cycle_01/chapters/chapter_03.md:71, snapshots/cycle_01/chapters/chapter_03.md:93, snapshots/cycle_01/chapters/chapter_03.md:97, snapshots/cycle_01/chapters/chapter_03.md:149, snapshots/cycle_01/chapters/chapter_03.md:179, snapshots/cycle_01/chapters/chapter_03.md:201, snapshots/cycle_01/chapters/chapter_03.md:229, and snapshots/cycle_01/chapters/chapter_03.md:275 so default speech contracts unless deliberate emphasis is clearly motivated.",
+      "acceptance_test": "Pass if each targeted speaker uses contractions in at least 3 of 5 eligible finite clauses within those spans, with any remaining full forms clearly functioning as emphasis or formality; fail if uncontracted phrasing remains the default texture."
+    },
+    {
+      "finding_id": "ch03_dialogue_002",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:63; snapshots/cycle_01/chapters/chapter_03.md:97; snapshots/cycle_01/chapters/chapter_03.md:149; snapshots/cycle_01/chapters/chapter_03.md:167; snapshots/cycle_01/chapters/chapter_03.md:179; snapshots/cycle_01/chapters/chapter_03.md:223",
+      "problem": "Darlene, Vera, and Cora intermittently converge into the same clipped admonition cadence, reducing idiolect separation in multi-speaker shop/diner sequences.",
+      "rewrite_direction": "Differentiate speaker textures around snapshots/cycle_01/chapters/chapter_03.md:63, snapshots/cycle_01/chapters/chapter_03.md:71, snapshots/cycle_01/chapters/chapter_03.md:149, snapshots/cycle_01/chapters/chapter_03.md:167, snapshots/cycle_01/chapters/chapter_03.md:179, snapshots/cycle_01/chapters/chapter_03.md:183, snapshots/cycle_01/chapters/chapter_03.md:223, and snapshots/cycle_01/chapters/chapter_03.md:227: keep Darlene mechanically diagnostic, Vera process-and-tempo managerial, Cora relational and socially surgical.",
+      "acceptance_test": "Pass if anonymizing speaker tags in those revised spans still lets a reader attribute each line to the correct character by diction and rhythm alone in most cases; fail if lines remain easily interchangeable across the three voices."
+    },
+    {
+      "finding_id": "ch03_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:9; snapshots/cycle_01/chapters/chapter_03.md:129; snapshots/cycle_01/chapters/chapter_03.md:191; snapshots/cycle_01/chapters/chapter_03.md:215; snapshots/cycle_01/chapters/chapter_03.md:285; snapshots/cycle_01/chapters/chapter_03.md:319",
+      "problem": "Recurring comparison template ('... like ...') appears repeatedly beyond twice, creating a noticeable formula that flattens otherwise strong sensory prose.",
+      "rewrite_direction": "Rework concentration points in snapshots/cycle_01/chapters/chapter_03.md:129, snapshots/cycle_01/chapters/chapter_03.md:191, snapshots/cycle_01/chapters/chapter_03.md:215, snapshots/cycle_01/chapters/chapter_03.md:285, and snapshots/cycle_01/chapters/chapter_03.md:319 by mixing direct concrete description and varied figurative structures rather than repeated 'like' similes.",
+      "acceptance_test": "Pass if the revised 129-319 span avoids repeating the same 'like + noun phrase' sentence pattern more than twice while preserving concrete sensory specificity; fail if the pattern still recurs three or more times in that span."
+    },
+    {
+      "finding_id": "ch03_prose_002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:271",
+      "problem": "Narrative clipping in 'Partial confession. Partial debt.' reads as telegraphic fragmenting, conflicting with the constitution's ban on elliptical clipping in narration.",
+      "rewrite_direction": "Rewrite around snapshots/cycle_01/chapters/chapter_03.md:269 and snapshots/cycle_01/chapters/chapter_03.md:271 into full grammatical prose that preserves the beat but avoids fragment shorthand.",
+      "acceptance_test": "Pass if revised lines 269-272 contain no standalone noun-phrase fragment sentences and still bridge cleanly into Eli's defensive line at 273; fail if clipped nominal fragments remain."
+    },
+    {
+      "finding_id": "ch03_prose_003",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:31; snapshots/cycle_01/chapters/chapter_03.md:237; snapshots/cycle_01/chapters/chapter_03.md:309",
+      "problem": "Eli's stress profile ('logistics first, controlled disclosure') is explained directly multiple times, which reads as over-literal reuse of style-bible character notes rather than emergent characterization.",
+      "rewrite_direction": "In snapshots/cycle_01/chapters/chapter_03.md:31, snapshots/cycle_01/chapters/chapter_03.md:237, and snapshots/cycle_01/chapters/chapter_03.md:309, keep one explicit meta-articulation and convert the other two into dramatized behavior (ordering details, evasive sequencing, interrupted speech) without naming the pattern.",
+      "acceptance_test": "Pass if only one of the three targeted spans states Eli's disclosure strategy explicitly and the other two convey it through action/dialogue behavior; fail if all three still explain the pattern overtly."
+    }
+  ],
+  "summary": "The chapter has strong sensory specificity and clear scene scaffolding, but it does not reach pass level under Booker-default scrutiny: a HIGH cash-logic coherence break, a HIGH continuity object mismatch, and a HIGH sanitization retreat at the confession pivot undermine consequence and trust; dialogue register/formality drift and repeated prose formulas add medium-level craft drag.",
+  "coverage_scene_ids": [
+    "breakdown_frontage_road",
+    "pike_yard_negotiation",
+    "yard_bird_dish_shift",
+    "post_shift_pie_confession",
+    "upstairs_unsent_texts"
+  ]
+}

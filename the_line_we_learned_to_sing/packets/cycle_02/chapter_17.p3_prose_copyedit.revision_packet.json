@@ -1,0 +1,96 @@
+{
+  "acceptance_targets": [
+    "[chapter_17_F002] PASS if in each cited span there is no run longer than 6 consecutive paragraphs without Ina thought/sensation/self-assessment, and each span includes at least 2 explicit interior beats tied to live testimony/ruling content; otherwise FAIL.",
+    "[chapter_17_F003] PASS if references to Ji-eun's left-hand tremor/stillness occur no more than 2 times across snapshots/cycle_02/chapters/chapter_17.md:157-475 and at least 2 distinct alternate stress cues are visible; FAIL if the tremor cue remains the dominant repeated marker.",
+    "[chapter_17_F004] PASS if the exact gaze-pivot template appears at most twice in the full revised chapter and at least two of snapshots/cycle_02/chapters/chapter_17.md:101/:167/:319 are rewritten with different beat mechanics; otherwise FAIL."
+  ],
+  "chapter_id": "chapter_17",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if in each cited span there is no run longer than 6 consecutive paragraphs without Ina thought/sensation/self-assessment, and each span includes at least 2 explicit interior beats tied to live testimony/ruling content; otherwise FAIL.",
+      "chapter_id": "chapter_17",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_17.md:273; snapshots/cycle_02/chapters/chapter_17.md:313; snapshots/cycle_02/chapters/chapter_17.md:381; snapshots/cycle_02/chapters/chapter_17.md:405",
+      "finding_id": "chapter_17_F002",
+      "problem": "Two long stretches run as near-transcript without focalizer interiority (Ji-eun cross-exam and indictment procedure), pushing close-third narration toward screenplay mode.",
+      "rewrite_direction": "Insert Ina's internal experience beats inside the cited spans: one around snapshots/cycle_02/chapters/chapter_17.md:285-303 during debt/sedation testimony, and one around snapshots/cycle_02/chapters/chapter_17.md:391-401 when indictment conditions are read and processed.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if references to Ji-eun's left-hand tremor/stillness occur no more than 2 times across snapshots/cycle_02/chapters/chapter_17.md:157-475 and at least 2 distinct alternate stress cues are visible; FAIL if the tremor cue remains the dominant repeated marker.",
+      "chapter_id": "chapter_17",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_17.md:157; snapshots/cycle_02/chapters/chapter_17.md:267; snapshots/cycle_02/chapters/chapter_17.md:321; snapshots/cycle_02/chapters/chapter_17.md:475",
+      "finding_id": "chapter_17_F003",
+      "problem": "Ji-eun's stress is repeatedly signaled with the same left-hand tremor cue, creating mechanical repetition from a single stress marker and flattening emotional progression.",
+      "rewrite_direction": "Keep one early tremor anchor near snapshots/cycle_02/chapters/chapter_17.md:157 or :267, then replace later repeats near snapshots/cycle_02/chapters/chapter_17.md:321 and :475 with different embodied signals (voice break, breath control failure, posture shift, forced smile collapse) consistent with her public/private register toggling.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if the exact gaze-pivot template appears at most twice in the full revised chapter and at least two of snapshots/cycle_02/chapters/chapter_17.md:101/:167/:319 are rewritten with different beat mechanics; otherwise FAIL.",
+      "chapter_id": "chapter_17",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_17.md:101; snapshots/cycle_02/chapters/chapter_17.md:167; snapshots/cycle_02/chapters/chapter_17.md:319",
+      "finding_id": "chapter_17_F004",
+      "problem": "The recurring gaze-pivot construction (\"looked ... then back/then at ...\") appears three times, becoming a visible prose tic and reducing line-level freshness.",
+      "rewrite_direction": "Revise at least two of the cited lines so turn-taking is conveyed through non-gaze actions (object handling, interruption, breath, micro-movement) while preserving scene logic.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "a660338efc8a7ed4f010237bd98089419304c3b5c9e186435f6080a7e1823bc6",
+  "must_fix_count": 3,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on prose and copyedit finish: diction precision, rhythm control, sentence-level clarity, grammar, line-level polish without flattening style, and explicit aesthetic-risk audit (sanitization is the primary risk \u2014 do not soften or euphemize; push toward creative risk and specificity).",
+    "key": "p3_prose_copyedit",
+    "label": "prose/copyedit fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into uncomfortable specificity when stakes demand it: show coercion mechanics, sexual negotiation, grief rituals, and financial desperation at scene level. In edge cases, prefer precision over decorum; protect character dignity through perspective accuracy, not by omitting the hard material.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene requires bodily, economic, or moral consequence and the draft retreats into abstract phrasing, rewrite with concrete action, sensation, and decision impact before proceeding.",
+      "operational_resolution_rule": "When uncertain between tasteful distance and narrative truth, choose the version that preserves causal accountability and embodied consequence, then tune language for clarity rather than softness.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the baseline in spoken dialogue; uncontracted forms are reserved for deliberate emphasis, legal language, or character-specific formality.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate chapter structures deliberately: high-density dialogue vs interior reflection, multi-scene public collision vs two-scene intimate pressure, aftermath inventory vs anticipatory dread. Never let two consecutive chapters share the same pacing architecture or turn mechanism.",
+      "diction": "Contemporary, unsentimental literary diction that permits technical vocabulary, profanity, and class-marked speech without flattening idiolects.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third person centered on Seo Ina, with brief controlled widenings in public-event chapters.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Alternating pressure waves: compressed clauses in operational stress, longer breath-based lines in grief and reflection.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

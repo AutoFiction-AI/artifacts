@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_11",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "PASS",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH11_ALDRIC_SILENCE_POV_BREACH",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_02/chapters/chapter_11.md:115; snapshots/cycle_02/chapters/chapter_11.md:165; snapshots/cycle_02/chapters/chapter_11.md:237",
+      "problem": "The chapter repeatedly upgrades Aldric's silence from what Maren can actually perceive into unframed access to Aldric's internal processing, then closes by stating as fact why Aldric is withholding and how large the unnamed revelation is. That breaks the style bible's close-third contract for internal fragments and weakens the ending by substituting abstract authorial assurance for observable pressure.",
+      "rewrite_direction": "Revise the Aldric-silence passages at snapshots/cycle_02/chapters/chapter_11.md:115, snapshots/cycle_02/chapters/chapter_11.md:165, and especially snapshots/cycle_02/chapters/chapter_11.md:237 so they stay inside Maren's available evidence: bodily pressure, duration of silence, any shift in the hum, and Maren's interpretations clearly marked as guesses. Rebuild the closing beat at snapshots/cycle_02/chapters/chapter_11.md:225 and snapshots/cycle_02/chapters/chapter_11.md:237 around a concrete on-page hook already present here (the altered hum, the bowl's warmth, Derry's distance, Maren's physical aftermath) instead of asserting that Aldric is deciding whether Maren is ready for world-changing knowledge.",
+      "acceptance_test": "PASS if the revised closing movement beginning at snapshots/cycle_02/chapters/chapter_11.md:225 never states as fact what Aldric saw, why he is silent, or what decision he is making unless Aldric or Vess says it aloud, and the chapter ends on an observable consequence the reader can point to on the page. FAIL if narration in the cited beats still attributes private motives, certainty, or unspoken conclusions to Aldric from inside Maren's POV."
+    },
+    {
+      "finding_id": "CH11_AUTOPILOT_PROSE_SCAFFOLDS",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_02/chapters/chapter_11.md:3; snapshots/cycle_02/chapters/chapter_11.md:65; snapshots/cycle_02/chapters/chapter_11.md:95; snapshots/cycle_02/chapters/chapter_11.md:107; snapshots/cycle_02/chapters/chapter_11.md:113; snapshots/cycle_02/chapters/chapter_11.md:141; snapshots/cycle_02/chapters/chapter_11.md:229",
+      "problem": "At the exact moments when the prose should feel most freshly discovered, the chapter falls back on the same marked sentence scaffolds: placeholder comparisons built on 'like something...' and corrective turns built on 'not X but Y.' A few instances would read as style; this many starts to feel mechanical and blunts the bodily specificity the chapter otherwise earns.",
+      "rewrite_direction": "Vary or replace the repeated fallback constructions at snapshots/cycle_02/chapters/chapter_11.md:3, snapshots/cycle_02/chapters/chapter_11.md:65, snapshots/cycle_02/chapters/chapter_11.md:95, snapshots/cycle_02/chapters/chapter_11.md:107, snapshots/cycle_02/chapters/chapter_11.md:113, snapshots/cycle_02/chapters/chapter_11.md:141, and snapshots/cycle_02/chapters/chapter_11.md:229. Where the sensation is knowable, name a concrete analogue directly or state the sensation without a placeholder comparison; where uncertainty matters, let one uncertainty carry the beat instead of stacking repeated negation-correction frames across consecutive physical descriptions.",
+      "acceptance_test": "PASS if, across the revised cited beats, no more than one key image relies on 'like something...' phrasing and no more than two cited beats rely on a 'not X but Y' correction frame, while each beat still makes the contamination, silence, or bodily effect legible on first read. FAIL if those same passages still cluster the same placeholder and corrective templates across multiple consecutive sensory beats."
+    }
+  ],
+  "summary": "Chapter 11 lands its discovery engine: Maren's first real consumption is physically convincing, the half-success/real cost state shift is clear, and the dialogue stays on-register for Maren, Aldric, Vess, and Derry. It still fails award-level review because the prose loses control in two places: the ending steps outside Maren's permitted perspective to explain Aldric's silence, and the bodily-description passages reuse the same placeholder/corrective sentence shapes often enough to flatten what should feel newly perceived."
+}

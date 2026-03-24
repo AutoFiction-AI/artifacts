@@ -1,0 +1,72 @@
+{
+  "chapter_id": "chapter_08",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH8-F001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_01/chapters/chapter_08.md:43; snapshots/cycle_01/chapters/chapter_08.md:73; snapshots/cycle_01/chapters/chapter_08.md:179",
+      "problem": "Cash continuity is internally coherent inside this chapter but conflicts with the established carryover entering chapter 8, creating an unexplained disappearance of funds and weakening financial-causality trust.",
+      "rewrite_direction": "Reconcile the money trail at snapshots/cycle_01/chapters/chapter_08.md:43, snapshots/cycle_01/chapters/chapter_08.md:73, and snapshots/cycle_01/chapters/chapter_08.md:179 by either adding explicit intervening expenses/transfers before the brake negotiation or revising the listed amounts so start-of-chapter cash aligns with prior state and downstream arithmetic.",
+      "acceptance_test": "PASS if the revised amounts at snapshots/cycle_01/chapters/chapter_08.md:43, snapshots/cycle_01/chapters/chapter_08.md:73, and snapshots/cycle_01/chapters/chapter_08.md:179 can be read as one continuous ledger with no unexplained large cash drop; FAIL if a reader still has to invent where missing cash went."
+    },
+    {
+      "finding_id": "CH8-F002",
+      "source": "booker",
+      "severity": "HIGH",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_01/chapters/chapter_08.md:31; snapshots/cycle_01/chapters/chapter_08.md:51; snapshots/cycle_01/chapters/chapter_08.md:83; snapshots/cycle_01/chapters/chapter_08.md:338",
+      "problem": "Brake-repair causality does not cleanly hand off to the next-chapter boundary state: this chapter depicts completed shop-performed partial repair, which conflicts with the downstream setup that attributes front-pad work to Eli doing it himself overnight.",
+      "rewrite_direction": "Choose one causal chain and enforce it at snapshots/cycle_01/chapters/chapter_08.md:31, snapshots/cycle_01/chapters/chapter_08.md:51, snapshots/cycle_01/chapters/chapter_08.md:83, and snapshots/cycle_01/chapters/chapter_08.md:338: either keep a shop-completed repair and remove DIY implications from handoff beats, or revise this chapter so the shop does diagnosis/quote only and Eli performs the actual partial fix later that night.",
+      "acceptance_test": "PASS if a cold reader can trace exactly one brake-fix origin from chapter 8 end state into chapter 9 setup without contradiction; FAIL if both a completed shop repair and a later first-time DIY front-pad change remain inferable."
+    },
+    {
+      "finding_id": "CH8-F003",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_01/chapters/chapter_08.md:143; snapshots/cycle_01/chapters/chapter_08.md:144; snapshots/cycle_01/chapters/chapter_08.md:145",
+      "problem": "Sanitization via moral safety valve: immediately after the ring sale decision, the narration shifts to abstract moral framing that softens the raw transactional discomfort instead of staying in present-tense consequence.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_08.md:143, snapshots/cycle_01/chapters/chapter_08.md:144, and snapshots/cycle_01/chapters/chapter_08.md:145, replace abstract moral adjudication with embodied specifics (cash urgency, legal hold reality, bodily response, or concrete next-step pressure) while preserving the decision to sell.",
+      "acceptance_test": "PASS if the revised beat keeps the reader in concrete immediate consequence and contains no generalized moral verdict sentence in this decision moment; FAIL if the passage still resolves tension through abstract self-judgment."
+    },
+    {
+      "finding_id": "CH8-F004",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_01/chapters/chapter_08.md:37; snapshots/cycle_01/chapters/chapter_08.md:95; snapshots/cycle_01/chapters/chapter_08.md:133; snapshots/cycle_01/chapters/chapter_08.md:171; snapshots/cycle_01/chapters/chapter_08.md:302",
+      "problem": "Multiple speakers converge on the same polished aphoristic cadence, reducing idiolect separation and making side-character voices partially interchangeable under pressure.",
+      "rewrite_direction": "Rework dialogue texture at snapshots/cycle_01/chapters/chapter_08.md:37, snapshots/cycle_01/chapters/chapter_08.md:95, snapshots/cycle_01/chapters/chapter_08.md:133, snapshots/cycle_01/chapters/chapter_08.md:171, and snapshots/cycle_01/chapters/chapter_08.md:302 so each speaker carries role-specific diction and rhythm (mechanic pragmatics, pawnbroker valuation/legal phrasing, desk-clerk local-weather register, Theo accountability register) rather than shared maxim style.",
+      "acceptance_test": "PASS if at least three of the cited lines are rewritten with distinct speaker-specific syntax and lexicon and no two read as interchangeable aphorisms; FAIL if the lines still share near-identical proverb-like cadence."
+    },
+    {
+      "finding_id": "CH8-F005",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_01/chapters/chapter_08.md:49; snapshots/cycle_01/chapters/chapter_08.md:50; snapshots/cycle_01/chapters/chapter_08.md:135; snapshots/cycle_01/chapters/chapter_08.md:136",
+      "problem": "A repeated sentence construction (double-beat 'He almost ... He almost ...') appears at multiple emotional pivots, reading as a prose tic rather than a fresh pressure response.",
+      "rewrite_direction": "Vary one or both repeated constructions at snapshots/cycle_01/chapters/chapter_08.md:49, snapshots/cycle_01/chapters/chapter_08.md:50, snapshots/cycle_01/chapters/chapter_08.md:135, and snapshots/cycle_01/chapters/chapter_08.md:136 by converting at least one beat into concrete interruption/action/sensory trigger instead of mirrored syntactic setup.",
+      "acceptance_test": "PASS if no more than one doubled 'He almost...' construction remains across the cited spans and at least one replacement line shows immediate physical or situational interruption; FAIL if both moments retain the same duplicated setup."
+    },
+    {
+      "finding_id": "CH8-F006",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_01/chapters/chapter_08.md:81; snapshots/cycle_01/chapters/chapter_08.md:211; snapshots/cycle_01/chapters/chapter_08.md:286",
+      "problem": "Mechanical reuse of style-bible stress-tell language (managerial self-diagnosis labels) flattens interiority by naming the pattern repeatedly instead of dramatizing it.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_08.md:81, snapshots/cycle_01/chapters/chapter_08.md:211, and snapshots/cycle_01/chapters/chapter_08.md:286, keep only one explicit meta-label and rewrite the others as enacted behavior (failed call wording, aborted action, bodily tell, or concrete procedural misstep).",
+      "acceptance_test": "PASS if at least two of the three cited moments are rendered as observable behavior rather than abstract self-labeling while preserving Eli's managerial-shame profile; FAIL if all three remain primarily diagnostic summary statements."
+    }
+  ],
+  "summary": "Chapter 8 sustains strong sensory immediacy and Eli-centered interiority, but it does not pass review because high-severity continuity breaks disrupt causal trust, a key pawn-scene beat slips into sanitizing moral abstraction, and repeated dialogue/prose formulas flatten voice distinctness below Booker-level rigor."
+}

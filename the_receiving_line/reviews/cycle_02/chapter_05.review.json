@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_05",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_05_craft_001",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_02/chapters/chapter_05.md:45; snapshots/cycle_02/chapters/chapter_05.md:57; snapshots/cycle_02/chapters/chapter_05.md:101; snapshots/cycle_02/chapters/chapter_05.md:333",
+      "problem": "The chapter already renders the hold's worker and detainee cost vividly on the page, but it then repeatedly steps in to explain Marisol's guilt and the system's meaning. That repetition starts to act like a moral safety valve: the scene keeps telling the reader that the sabotage is ethically compromised instead of trusting the concrete harm and Gabriel's later rebuke to carry the indictment.",
+      "rewrite_direction": "Compress or cut one explanatory beat in snapshots/cycle_02/chapters/chapter_05.md:45-57 and another in snapshots/cycle_02/chapters/chapter_05.md:97-101 or snapshots/cycle_02/chapters/chapter_05.md:331-333. Keep the strongest material consequence, then replace the weaker summary with fresh scene pressure at the same local span: a worker's operational problem, a detainee's immediate bodily cost, or a tactical choice Marisol makes to preserve the hold. Let Gabriel's exchange at snapshots/cycle_02/chapters/chapter_05.md:253-311 do more of the explicit ethical naming.",
+      "acceptance_test": "Pass if the revised passages at snapshots/cycle_02/chapters/chapter_05.md:45-57 and snapshots/cycle_02/chapters/chapter_05.md:97-101 no longer deliver back-to-back explanatory paragraphs about what the hold 'means' after the harm is already shown, and if snapshots/cycle_02/chapters/chapter_05.md:331-333 ends on debt or consequence without restating the same moral verdict a third time. Fail if the revision still explains Marisol's culpability immediately after the scene has already made it legible through observed damage."
+    },
+    {
+      "finding_id": "chapter_05_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_02/chapters/chapter_05.md:143; snapshots/cycle_02/chapters/chapter_05.md:153; snapshots/cycle_02/chapters/chapter_05.md:245; snapshots/cycle_02/chapters/chapter_05.md:249; snapshots/cycle_02/chapters/chapter_05.md:309",
+      "problem": "Several key beats rely on the same look-based, 'as if' inferential construction to tell the reader what hesitation, concealment, or endurance resembles. By the back half, that repeated sentence habit starts to smooth distinct emotional situations into one tonal texture, which is below the chapter's otherwise high level of specificity.",
+      "rewrite_direction": "Rework the repeated inferential beats at snapshots/cycle_02/chapters/chapter_05.md:143, snapshots/cycle_02/chapters/chapter_05.md:153, snapshots/cycle_02/chapters/chapter_05.md:245, snapshots/cycle_02/chapters/chapter_05.md:249, and snapshots/cycle_02/chapters/chapter_05.md:309 so at least several of them land through direct physical fact instead of another 'as if' frame. Give Ivo, the cropped-haired girl, and Marisol different kinds of sentence pressure: tool handling, counted handwork, officer-spacing, posture, or object contact specific to that moment.",
+      "acceptance_test": "Pass if at least three of the cited beats are rewritten without the current 'as if' explanatory hedge and each revised sentence reveals state through a distinct concrete action or sensory fact. Fail if Ivo's hesitation, the girl's endurance, and Marisol's cover behavior are still rendered through substantially the same look-plus-comparison construction."
+    }
+  ],
+  "summary": "The chapter lands its concealment spine cleanly: sanitation procedure becomes sabotage, Ivo's complicity is costly and specific, Gabriel widens the frame from private rescue to collective use of delay, continuity stays intact, and dialogue register remains sharply differentiated and contraction-consistent. It does not yet clear a full pass on craft/prose because it sometimes over-explains the sabotage's ethics after already dramatizing them, and a repeated 'as if'/look-based sentence habit becomes noticeable enough to flatten several otherwise strong beats."
+}

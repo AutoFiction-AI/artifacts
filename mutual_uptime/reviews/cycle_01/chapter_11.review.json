@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_11",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_11_award_01",
+      "source": "award",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:71; snapshots/cycle_01/chapters/chapter_11.md:89; snapshots/cycle_01/chapters/chapter_11.md:135; snapshots/cycle_01/chapters/chapter_11.md:205; snapshots/cycle_01/chapters/chapter_11.md:223; snapshots/cycle_01/chapters/chapter_11.md:247",
+      "problem": "The first two workplace scenes run through nearly the same architecture: handler framing, deliberate sloppiness in public, audience warmth, handler/dashboard validation, then a perk unlock. Each scene is strong on its own, but in sequence the symmetry becomes predictable enough that the chapter's middle proves the mechanism twice before the Leela pickup scene finally escalates it.",
+      "rewrite_direction": "Differentiate one of the workplace blocks at snapshots/cycle_01/chapters/chapter_11.md:71, snapshots/cycle_01/chapters/chapter_11.md:89, snapshots/cycle_01/chapters/chapter_11.md:135 or at snapshots/cycle_01/chapters/chapter_11.md:205, snapshots/cycle_01/chapters/chapter_11.md:223, snapshots/cycle_01/chapters/chapter_11.md:247 so the second scene turns on a materially different kind of failure or cost before any metric/perk reveal. Keep the required state change, but make the second workplace success feel like escalation, not replay.",
+      "acceptance_test": "Pass if the scene beginning at snapshots/cycle_01/chapters/chapter_11.md:223 no longer resolves through the same visible beat order as the scene beginning at snapshots/cycle_01/chapters/chapter_11.md:89 and introduces a distinct new pressure or consequence before the reward reveal at snapshots/cycle_01/chapters/chapter_11.md:277. Fail if a reader can still map the two workplace scenes one-to-one as brief -> public stumble -> audience approval -> handler metrics -> perk unlock."
+    },
+    {
+      "finding_id": "chapter_11_craft_01",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:560; snapshots/cycle_01/chapters/chapter_11.md:590",
+      "problem": "On the final page, the narration twice explains the chapter's meaning in abstract thesis language after the tote, stipend, grocery crates, and fridge prompt have already dramatized it. In a comedy-driven chapter, this is the comic equivalent of explaining the joke: the chapter briefly steps out of scene pressure to name what the reader already understands.",
+      "rewrite_direction": "Rework the interpretive sentences centered at snapshots/cycle_01/chapters/chapter_11.md:560 and snapshots/cycle_01/chapters/chapter_11.md:590 into fresh scene-local perception, dialogue, or action. Let the disgust/help contradiction and the grotesque usefulness of the groceries carry the indictment without a summary sentence about what 'the systems' are doing.",
+      "acceptance_test": "Pass if the final page, from snapshots/cycle_01/chapters/chapter_11.md:548 through snapshots/cycle_01/chapters/chapter_11.md:592, contains no abstract sentence that summarizes the chapter's mechanism in narrator-thesis terms, while the reader can still clearly infer that the household is being rewarded for recoverable disorder. Fail if those closing beats still pause to explain the joke instead of letting the objects and dialogue land it."
+    },
+    {
+      "finding_id": "chapter_11_prose_01",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:337; snapshots/cycle_01/chapters/chapter_11.md:355; snapshots/cycle_01/chapters/chapter_11.md:367; snapshots/cycle_01/chapters/chapter_11.md:379; snapshots/cycle_01/chapters/chapter_11.md:381",
+      "problem": "The Leela section accumulates a visible sentence-start formula built on bare 'That ...' constructions ('That was almost funny,' 'That was a weird thing,' 'That was the first bad part,' 'That answer helped,' 'That helped too'). Because the cluster is so local, it reads as a prose tic rather than a choice and slightly flattens a focalization that is otherwise sharp and object-driven.",
+      "rewrite_direction": "Revise the local run at snapshots/cycle_01/chapters/chapter_11.md:337, snapshots/cycle_01/chapters/chapter_11.md:355, snapshots/cycle_01/chapters/chapter_11.md:367, snapshots/cycle_01/chapters/chapter_11.md:379, and snapshots/cycle_01/chapters/chapter_11.md:381. Keep Leela's practical logic, but replace at least three of those openings with distinct constructions rooted in badge-color logic, room sensation, or object judgment rather than the repeated 'That ...' frame.",
+      "acceptance_test": "Pass if the passage beginning at snapshots/cycle_01/chapters/chapter_11.md:337 and running through snapshots/cycle_01/chapters/chapter_11.md:381 contains no more than two nearby sentence openings built on the bare 'That ...' formula. Fail if the revised passage still presents three or more of the same construction in that local sequence."
+    }
+  ],
+  "summary": "A strong, specific comic-escalation chapter with clean continuity, committed anti-sanitized scene work, and distinct character voices; dialogue passes. It still fails overall because the Ben and Nita workplace sabotages mirror each other too neatly, the close explains its own joke instead of fully trusting scene pressure, and the Leela section shows a local 'That ...' sentence-start tic that flattens the prose."
+}

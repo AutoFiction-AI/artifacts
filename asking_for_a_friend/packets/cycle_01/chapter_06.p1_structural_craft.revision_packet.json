@@ -1,0 +1,95 @@
+{
+  "acceptance_targets": [
+    "[F06-04] Margo's first line about Kevin's new girlfriend does not use the syntactic pattern \"[possessive] [new] girlfriend does [activity].\" The revised opening enters the Rolfing complaint through a structurally different door while preserving the comic payload (the activity, the social media stalking, the psoas absurdity, the algorithm metaphor).",
+    "[CRIT-02-father-ch06] At line 1077: (1) No reference to death. (2) The father's absence is attributed to his move to Seattle, not to dying. (3) The time reference is consistent with the father leaving when Nora was 12 (approximately 22 years ago). (4) Diane's present-tense speech habit is preserved. FAIL if 'death' or 'died' appears, or if the time reference contradicts Ch9 line 1642.",
+    "[HIGH-03-ex-name-ch06] At line 1179: (1) The name reads 'Marcus,' not 'Aaron.' (2) No other instance of 'Aaron' appears in the chapter. FAIL if 'Aaron' remains."
+  ],
+  "chapter_id": "chapter_06",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Margo's first line about Kevin's new girlfriend does not use the syntactic pattern \"[possessive] [new] girlfriend does [activity].\" The revised opening enters the Rolfing complaint through a structurally different door while preserving the comic payload (the activity, the social media stalking, the psoas absurdity, the algorithm metaphor).",
+      "chapter_id": "chapter_06",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:17 (\"His new girlfriend does Rolfing.\") structurally echoes Margo's NON-COPYABLE calibration sample in the style bible: \"My ex-husband's new girlfriend does hot yoga. I know this because he posts about it.\" The chapter continues the parallel at snapshots/cycle_01/chapters/chapter_06.md:23: \"She posts about it \u2014 she posts *everything*.\"",
+      "finding_id": "F06-04",
+      "problem": "The style bible marks Margo's example lines as \"NON-COPYABLE REFERENCE ONLY \u2014 calibration samples, never to be echoed in any draft.\" Margo's opening line replicates the syntactic skeleton of the calibration sample: [possessive] new girlfriend does [single-word activity name]. The social-media-posting follow-up also echoes the example's second sentence (\"I know this because he posts about it\" -> \"She posts about it\"). The extended riff (psoas, flame emoji, algorithm metaphor) diverges effectively, but the launch point is a near-verbatim structural copy of restricted material.",
+      "rewrite_direction": "Rewrite snapshots/cycle_01/chapters/chapter_06.md:17-23 so the Rolfing complaint enters from a different syntactic angle. The comic content is strong and should be preserved \u2014 the Rolfing, the psoas, Kevin's flame emoji, the algorithm. Options: (1) lead with the social media discovery (\"The algorithm just delivered a Rolfing testimonial to my feed. With a flame emoji. From Kevin's girlfriend.\"), (2) lead with the psoas detail (\"I now know things about a stranger's connective tissue that I don't know about my own mother.\"), (3) lead with the tagging (\"She tagged Kevin. My Kevin. In a post about her hip flexor.\"). Any entry that avoids the \"[possessive] new girlfriend does [activity]\" skeleton.",
+      "severity": "HIGH",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "At line 1077: (1) No reference to death. (2) The father's absence is attributed to his move to Seattle, not to dying. (3) The time reference is consistent with the father leaving when Nora was 12 (approximately 22 years ago). (4) Diane's present-tense speech habit is preserved. FAIL if 'death' or 'died' appears, or if the time reference contradicts Ch9 line 1642.",
+      "chapter_id": "chapter_06",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:1077",
+      "finding_id": "CRIT-02-father-ch06",
+      "problem": "The narrator describes Diane speaking about 'Nora's father four years after his death, present tense for his opinions.' This creates two contradictions: (1) if the canonical version is that the father is alive (Ch9), then 'his death' is wrong; (2) 'four years after his death' implies the father died when Nora was approximately 30, contradicting Ch3 (died at 11) and Ch15 (died at 19). The passage also uses 'Your father would have loved it' \u2014 a conditional that works for both death and absence but is followed by narrator gloss that commits to death.",
+      "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:1077, change 'four years after his death, present tense for his opinions, as though his taste in lawn ornaments were ongoing business' to reflect the canonical version where the father is alive but absent in Seattle. Option A: 'more than twenty years after Michael had moved to Seattle, present tense for his opinions, as though his taste in lawn ornaments could be evaluated from three thousand miles away.' Option B: reference Diane's habit of speaking about Michael as if he still lived nearby, a refusal to fully acknowledge the departure. Keep Diane's 'Your father would have loved it' \u2014 the conditional works for absence. The key change is the narrator's gloss: replace death with departure.",
+      "severity": "CRITICAL",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "At line 1179: (1) The name reads 'Marcus,' not 'Aaron.' (2) No other instance of 'Aaron' appears in the chapter. FAIL if 'Aaron' remains.",
+      "chapter_id": "chapter_06",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:1179",
+      "finding_id": "HIGH-03-ex-name-ch06",
+      "problem": "Line 1179 references 'the places she'd been protecting since Aaron.' No character named Aaron is established anywhere in the novel. Ch1 line 233 establishes Nora's ex as 'Marcus' \u2014 'She'd had Marcus, for three years.' The name 'Aaron' appears only once in the entire manuscript. This is a parallel-drafting error where the chapter author used a different name for the established ex-boyfriend.",
+      "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:1179, change 'since Aaron' to 'since Marcus.' The sentence reads 'She was letting this man \u2014 this voice, this warmth, this presence that lived in her phone and nowhere she could touch \u2014 into the places she'd been protecting since Aaron.' Change to 'since Marcus.'",
+      "severity": "HIGH",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "43218fb3796c489b3f7b553a194a29e677d308c47f2f24f3914bd289f5f37ba5",
+  "must_fix_count": 3,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This novel must commit fully to its dark comedy register. The humor should be genuinely funny \u2014 not arch, not safe, not 'literary funny' where the reader smiles wryly. The darkness should be genuinely dark \u2014 the financial manipulation is theft, the emotional manipulation is a form of violence, and the sexual dimension of the AI relationship (intimate photos sent to a non-person, sexual conversations with an algorithm controlled by your best friend) is deeply violating. The novel should not flinch from the specific perversity of Simone reading Nora's intimate messages, of Simone helping Nora dress up for a man Simone invented, of Simone comforting Nora about a fight Simone scripted. These moments are the novel's payload. If they are rendered obliquely or summarized, the book fails. Equally, the genuine tenderness of the friendship \u2014 the years of real love underneath the betrayal \u2014 must be rendered with the same commitment. The reader should feel both the comedy and the horror simultaneously, not in alternation.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism is treated as a craft failure equivalent to a plot hole. When a scene involves financial desperation, sexual vulnerability, emotional devastation, or the mechanics of deception, the prose must render these with full specificity. 'She felt used' is never acceptable when you can show what being used feels and looks like in the body and in the specific details of the moment. The reader should not be protected from the characters' experiences.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm. Uncontracted forms reserved for emphasis, deliberate formality, or character-specific register choices. If a line reads stiffly, the first fix is to contract.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 2,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate between hot and quiet chapters. After a high-intensity scene (confrontation, discovery, sexual encounter), the next chapter should breathe \u2014 slow down, change the sensory environment, let the character do something ordinary. Vary scene counts: some chapters are a single sustained scene, others are three or four. Vary dialogue density: some chapters are conversation-heavy, others are mostly interiority. No two consecutive chapters should open the same way \u2014 if one opens in a location, the next should open in thought or in mid-conversation. The novel's middle section (chapters 8-13) should have more structural variety than the opening, which can afford to be more regular.",
+      "diction": "Contemporary, educated, specific. No genre-thriller diction. No prestige-novel stiffness. The language should feel like how smart, funny, self-aware women in their mid-thirties actually think and speak. Cultural references are allowed when organic. Brand names when they carry social information. The prose should be able to be funny without stepping outside the character's perspective to wink at the reader.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person \u2014 very close, almost inhabiting the POV character's thought patterns and verbal rhythms. The prose should feel like the character's consciousness rendered in third person, not an external narrator describing the character. When in Nora's sections, the prose has her warmth and her specific noticing. When in Simone's sections, the prose has her edge and her accounting.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Variable. Default to mid-length sentences with natural cadence. Use compression for emotional peaks and psychological precision. Use longer, more digressive rhythms for scenes of intimacy, humor, and daily texture. Avoid the trap of making every important moment a short sentence \u2014 sometimes the big thing lands better in a subordinate clause, almost hidden.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

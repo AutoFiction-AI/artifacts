@@ -1,0 +1,82 @@
+{
+  "acceptance_targets": [
+    "[chapter_18_f002] PASS if snapshots/cycle_02/chapters/chapter_18.md:197-221 contains at least 2 explicit Noreen interior cues separated by dialogue turns and no run longer than 6 consecutive paragraphs without focalizer interiority; FAIL otherwise.",
+    "[chapter_18_f003] PASS if at least 4 of the 6 cited instances are rewritten without \"as if\" and each replacement adds concrete sensory or behavioral specificity in the same sentence; FAIL if the cited lines keep the same comparative template."
+  ],
+  "chapter_id": "chapter_18",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if snapshots/cycle_02/chapters/chapter_18.md:197-221 contains at least 2 explicit Noreen interior cues separated by dialogue turns and no run longer than 6 consecutive paragraphs without focalizer interiority; FAIL otherwise.",
+      "chapter_id": "chapter_18",
+      "cycle": 2,
+      "evidence": "The Saint Brigid hearing runs 13 consecutive paragraph turns with no focalizer interior cue from Noreen: snapshots/cycle_02/chapters/chapter_18.md:197 through snapshots/cycle_02/chapters/chapter_18.md:221.",
+      "finding_id": "chapter_18_f002",
+      "problem": "Interiority drop-out: the chapter temporarily becomes transcript-like, weakening emotional tracking and violating close-third texture expectations.",
+      "rewrite_direction": "Insert interior beats in the hearing exchange, especially after leverage shifts around snapshots/cycle_02/chapters/chapter_18.md:205, snapshots/cycle_02/chapters/chapter_18.md:217, and snapshots/cycle_02/chapters/chapter_18.md:221. Keep them brief but specific (sensation, memory flash, self-assessment) so dialogue pressure remains intact.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if at least 4 of the 6 cited instances are rewritten without \"as if\" and each replacement adds concrete sensory or behavioral specificity in the same sentence; FAIL if the cited lines keep the same comparative template.",
+      "chapter_id": "chapter_18",
+      "cycle": 2,
+      "evidence": "The same comparative scaffold repeats 13 times (\"as if\") across the chapter, including snapshots/cycle_02/chapters/chapter_18.md:3, snapshots/cycle_02/chapters/chapter_18.md:35, snapshots/cycle_02/chapters/chapter_18.md:125, snapshots/cycle_02/chapters/chapter_18.md:185, snapshots/cycle_02/chapters/chapter_18.md:337, snapshots/cycle_02/chapters/chapter_18.md:365.",
+      "finding_id": "chapter_18_f003",
+      "problem": "Recurring prose formula: repeated \"as if\" construction flattens rhythm and signals autopilot rather than deliberate variation.",
+      "rewrite_direction": "Rework repeated comparison lines in snapshots/cycle_02/chapters/chapter_18.md:33, snapshots/cycle_02/chapters/chapter_18.md:35, snapshots/cycle_02/chapters/chapter_18.md:125, snapshots/cycle_02/chapters/chapter_18.md:183, snapshots/cycle_02/chapters/chapter_18.md:189, snapshots/cycle_02/chapters/chapter_18.md:337, and snapshots/cycle_02/chapters/chapter_18.md:365 by replacing formulaic similes with direct observation, action consequence, or voice-specific metaphor.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "ec98a7de679717440ded47313fb468188fe4bfad6bd0222ba84f6dc67e420cae",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on prose and copyedit finish: diction precision, rhythm control, sentence-level clarity, grammar, line-level polish without flattening style, and explicit aesthetic-risk audit (sanitization is the primary risk \u2014 do not soften or euphemize; push toward creative risk and specificity).",
+    "key": "p3_prose_copyedit",
+    "label": "prose/copyedit fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "When edge cases arise, choose the more specific and potentially uncomfortable rendering if it is character-true and causally necessary. Intimacy, bodily risk, and moral compromise must be shown with concrete detail and aftermath, then integrated into later behavior rather than quarantined as a one-scene shock.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a draft abstracts pain, sex, coercion, blood, or economic shame at the exact moment consequence should be embodied, revise by replacing summary with physically and socially specific action tied to POV stakes.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High by default for spoken lines; uncontracted forms are marked choices for period formality, emphasis, or character-specific control behavior.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate structural engines across adjacent chapters: ensemble social scenes, inventory chapters, information-turn chapters, acted-upon pressure chapters, and aftermath chapters. Vary scene count (2 to 4), dialogue density, and interiority depth so consecutive chapters do not share the same pacing signature.",
+      "diction": "Period-authentic but readable contemporary English, favoring concrete nouns and precise verbs over lyrical abstraction.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person, alternating primarily between Elsie and Noreen, with occasional tightly limited deviations only when causal clarity requires it.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Sentence rhythm should alternate compressed pressure bursts with longer observational lines that carry social texture; avoid monotone paragraph cadence.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

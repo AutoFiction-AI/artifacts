@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_16",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch16_craft_headcount_manifest",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_01/chapters/chapter_16.md:91; snapshots/cycle_01/chapters/chapter_16.md:197; snapshots/cycle_01/chapters/chapter_16.md:305; snapshots/cycle_01/chapters/chapter_16.md:311",
+      "problem": "The evacuation manifest stops matching itself. Lucien's order does not explicitly include Marius, the tunnel count names Elise, Lucie, Therese, two boys, Pons, Marius, and Clemence but calls that seven, and the surface count still resolves to seven even after Clemence counts herself and tells Elise to count separately. In a sequence whose tension depends on exact body logistics, the broken arithmetic damages continuity and spatial trust.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_16.md:91-92, snapshots/cycle_01/chapters/chapter_16.md:197-199, and snapshots/cycle_01/chapters/chapter_16.md:301-311, choose one consistent evacuation roster and propagate it all the way through. If Marius goes through the drain, name him in Lucien's order and make the final total eight including Elise; if he stays behind, remove him from the tunnel and surface counts. Also make both boys visibly resolve in snapshots/cycle_01/chapters/chapter_16.md:301-303 so no child disappears into category blur.",
+      "acceptance_test": "Pass if a first-time reader can list the evacuees from snapshots/cycle_01/chapters/chapter_16.md:91-92 and verify that the same people reach snapshots/cycle_01/chapters/chapter_16.md:301-311 with one unambiguous total. Fail if any person appears only in the tunnel count, vanishes at the exit, or the arithmetic changes midscene."
+    },
+    {
+      "finding_id": "ch16_prose_elliptical_clipping_tic",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_01/chapters/chapter_16.md:5; snapshots/cycle_01/chapters/chapter_16.md:61; snapshots/cycle_01/chapters/chapter_16.md:111; snapshots/cycle_01/chapters/chapter_16.md:199; snapshots/cycle_01/chapters/chapter_16.md:235; snapshots/cycle_01/chapters/chapter_16.md:257; snapshots/cycle_01/chapters/chapter_16.md:367",
+      "problem": "The narration repeatedly leans on clipped emphasis fragments and negation pivots: 'Not one person. Several.' 'It was not a request for mercy. It was arithmetic.' 'This.' 'Not bodies. Betrayal.' 'Not surprise. Appetite.' Repetition turns the pressure beat into a visible house cadence, and it also violates the constitution's explicit ban on elliptical clipping in narration.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_16.md:5, snapshots/cycle_01/chapters/chapter_16.md:61, snapshots/cycle_01/chapters/chapter_16.md:111, snapshots/cycle_01/chapters/chapter_16.md:199-200, snapshots/cycle_01/chapters/chapter_16.md:235, snapshots/cycle_01/chapters/chapter_16.md:257, and snapshots/cycle_01/chapters/chapter_16.md:367, recast the emphasis as complete syntax or fold it into adjacent sentences. Keep the compression and force, but let Elise's perception carry it instead of isolated fragment sentences or repeated 'not X / Y' pivots.",
+      "acceptance_test": "Pass if the cited spans read as grammatically complete narration and no longer depend on stand-alone fragment beats for force. Fail if a reader still encounters repeated one- or two-word narration jolts like 'Not bodies. Betrayal.' or 'Not surprise. Appetite.' in those passages."
+    },
+    {
+      "finding_id": "ch16_craft_injury_drop",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_01/chapters/chapter_16.md:105; snapshots/cycle_01/chapters/chapter_16.md:165; snapshots/cycle_01/chapters/chapter_16.md:195; snapshots/cycle_01/chapters/chapter_16.md:289; snapshots/cycle_01/chapters/chapter_16.md:347",
+      "problem": "The chapter makes Elise descend into black water, twist through squeeze points, shove trapped bodies, force the grate, and climb out to scout the cordon, but her already-established tollhouse side injury never registers inside the scene. In a chapter this bodily exact, that omission makes her physical continuity read temporarily reset.",
+      "rewrite_direction": "Thread the side wound back through snapshots/cycle_01/chapters/chapter_16.md:105-107, snapshots/cycle_01/chapters/chapter_16.md:165-166, snapshots/cycle_01/chapters/chapter_16.md:195-199, and snapshots/cycle_01/chapters/chapter_16.md:289-347. The wound does not need to incapacitate Elise, but it should alter how she turns, braces, shoves, or climbs, and the recon beat should cost her something physical.",
+      "acceptance_test": "Pass if a reader can point to at least one tunnel squeeze and one aboveground movement beat in those cited spans where Elise's side injury actively changes her motion or tactical choices. Fail if she still crawls, hauls, levers, and scouts with no sign of the preexisting wound."
+    }
+  ],
+  "summary": "This chapter lands its major causal beats: the smoke siege relies on suffocation and masonry rather than gunplay, Elise earns provisional cooperation through competence, Lucien buys time by staying behind, and the refuge is physically lost. Voice and dialogue remain consistent with the style bible. It still fails on craft and prose because the evacuation headcount contradicts itself, Elise's established side wound disappears during the most body-taxing sequence, and the narration overuses clipped fragment emphasis the constitution explicitly forbids."
+}

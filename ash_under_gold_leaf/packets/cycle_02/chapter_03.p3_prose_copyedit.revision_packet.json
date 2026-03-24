@@ -1,0 +1,82 @@
+{
+  "acceptance_targets": [
+    "[ch03-prose-001] PASS if revised cited lines contain no more than two uses of \"as if\" and no more than two uses of \"land/landed\" in narration, while preserving scene meaning; FAIL if either formula still appears three or more times.",
+    "[ch03-prose-002] PASS if revised snapshots/cycle_02/chapters/chapter_03.md:153 and snapshots/cycle_02/chapters/chapter_03.md:191 are full clauses and still convey the same emotional pressure; FAIL if either beat remains an orphaned noun-phrase sentence."
+  ],
+  "chapter_id": "chapter_03",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if revised cited lines contain no more than two uses of \"as if\" and no more than two uses of \"land/landed\" in narration, while preserving scene meaning; FAIL if either formula still appears three or more times.",
+      "chapter_id": "chapter_03",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:13; snapshots/cycle_02/chapters/chapter_03.md:67; snapshots/cycle_02/chapters/chapter_03.md:153; snapshots/cycle_02/chapters/chapter_03.md:169; snapshots/cycle_02/chapters/chapter_03.md:215; snapshots/cycle_02/chapters/chapter_03.md:227; snapshots/cycle_02/chapters/chapter_03.md:283",
+      "finding_id": "ch03-prose-001",
+      "problem": "Recurring formula tics flatten cadence: repeated \"as if\" simile framing and repeated impact framing around \"landed/land\" appear 3+ times each in one chapter.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_03.md:13, snapshots/cycle_02/chapters/chapter_03.md:67, snapshots/cycle_02/chapters/chapter_03.md:153, snapshots/cycle_02/chapters/chapter_03.md:169, snapshots/cycle_02/chapters/chapter_03.md:215, snapshots/cycle_02/chapters/chapter_03.md:227, and snapshots/cycle_02/chapters/chapter_03.md:283 to replace at least two instances of each construction with distinct sensory or action-based phrasing.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if revised snapshots/cycle_02/chapters/chapter_03.md:153 and snapshots/cycle_02/chapters/chapter_03.md:191 are full clauses and still convey the same emotional pressure; FAIL if either beat remains an orphaned noun-phrase sentence.",
+      "chapter_id": "chapter_03",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:153; snapshots/cycle_02/chapters/chapter_03.md:191",
+      "finding_id": "ch03-prose-002",
+      "problem": "Clipped narration fragments (notably noun-phrase beats) replace full clauses at key pressure points, which reduces precision and drifts toward telegraphic shorthand.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_03.md:153 and snapshots/cycle_02/chapters/chapter_03.md:191 into complete grammatical clauses with explicit subject-verb structure while keeping the same emotional force.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "e3fee48f29a5bb064bc62edc5e78274c1d03ef2aae801cd2d03578196ef60a42",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on prose and copyedit finish: diction precision, rhythm control, sentence-level clarity, grammar, line-level polish without flattening style, and explicit aesthetic-risk audit (sanitization is the primary risk \u2014 do not soften or euphemize; push toward creative risk and specificity).",
+    "key": "p3_prose_copyedit",
+    "label": "prose/copyedit fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "When choosing between reputationally safe abstraction and specific discomfort, choose specificity. Render addiction, sexuality, deceit, class shame, and grief at lived scale. In edge cases, preserve character truth and causal accountability over reader comfort or institutional decorum.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene demands bodily, moral, or economic specificity, euphemistic phrasing is treated as a failed draft and must be rewritten with concrete stakes and observable consequence.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the spoken default; full forms appear only for emphasis, ritual language, or character-specific formal posture",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate scene density and pressure modes: pair high-conflict chapters with quiet domestic or documentary chapters, vary dialogue-to-interiority ratios, and prevent identical chapter skeletons in consecutive sequence.",
+      "diction": "contemporary literary diction with class-aware, borough-specific concreteness; avoid prestige-neutral workshop language",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third centered on Marisol, with rare brief distance expansions for institutional scenes",
+      "narrative_tense": "past tense",
+      "rhythm_target": "alternating tensile compression and reflective extension; line-level cadence should carry emotional pressure, not just information",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "acceptance_targets": [
+    "[CH16-PROSE-01] The words 'specific' and 'particular' (used as adjective modifiers of nouns, excluding 'money was specific' on line 25 which is predicative) each appear no more than twice in the revised chapter, for a combined maximum of 4 instances. At least 3 of the removed instances are replaced by constructions that achieve precision through concrete detail rather than a flagging adjective.",
+    "[CH16-PROSE-02] The phrase 'She remembered' or 'Nora remembered' appears no more than twice in the revised chapter. The replacement passages use at least two distinct retrospective modes (e.g., unframed flashback and physical-reaction trigger), and no two consecutive memory entries in the audit section use the same transitional construction.",
+    "[CH16-PROSE-03] No single paragraph in the revised chapter contains more than 2 instances of the 'the [adjective] [noun] of [qualifier]' construction. The total count across the chapter is 12 or fewer. The passages at lines 55-59 and 27-29 (or their equivalents) each contain no more than 1 such construction.",
+    "[CH16-PROSE-04] The Diane dinner section (lines 99-117 equivalent) contains no more than 1 'which [reframing]' construction. The total chapter count of reframing 'which' pivots is 4 or fewer. At least 2 of the removed instances are replaced by constructions that deliver the reinterpretation through a different syntactic form (period break, dash pivot, or embedded reframe)."
+  ],
+  "chapter_id": "chapter_16",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "The words 'specific' and 'particular' (used as adjective modifiers of nouns, excluding 'money was specific' on line 25 which is predicative) each appear no more than twice in the revised chapter, for a combined maximum of 4 instances. At least 3 of the removed instances are replaced by constructions that achieve precision through concrete detail rather than a flagging adjective.",
+      "chapter_id": "chapter_16",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_16.md:15 'the particular late-night voice'; snapshots/cycle_01/chapters/chapter_16.md:19 'the specific quality of the feeling'; snapshots/cycle_01/chapters/chapter_16.md:39 'the hyper-specific attention of someone'; snapshots/cycle_01/chapters/chapter_16.md:55 'the specific relief of being held'; snapshots/cycle_01/chapters/chapter_16.md:59 'the specific warmth of a best friend and the specific timing of a con artist' (two instances in one sentence); snapshots/cycle_01/chapters/chapter_16.md:69 'the particular energy of books'; snapshots/cycle_01/chapters/chapter_16.md:101 'the particular shadowless brightness'; snapshots/cycle_01/chapters/chapter_16.md:127 'the specific way that only seventeen years of closeness could produce.' Nine instances total.",
+      "finding_id": "CH16-PROSE-01",
+      "problem": "The adjectives 'specific' and 'particular' are deployed as precision-markers 9 times in a 142-line chapter. These words announce 'I am being precise now' rather than simply being precise. Individually each instance works, but at this density the gesture becomes a verbal tic \u2014 the prose has one dominant mode of pointing at its own noticing. The double deployment on line 59 ('the specific warmth... the specific timing') is especially visible because the repetition within a single sentence spotlights the formula.",
+      "rewrite_direction": "Reduce to no more than 3 total instances of 'the specific/particular [noun]' in the chapter. Prioritize keeping the strongest uses (line 59's parallelism could be powerful if it were rare; line 127's emotional weight earns the word). For the others, cut the flagging adjective entirely (many noun phrases are already precise enough without it \u2014 'the energy of books being finalized' works without 'particular') or achieve precision through added detail rather than an announcing adjective. Target: snapshots/cycle_01/chapters/chapter_16.md:15, :19, :39, :55, :69, :101 for revision.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "The phrase 'She remembered' or 'Nora remembered' appears no more than twice in the revised chapter. The replacement passages use at least two distinct retrospective modes (e.g., unframed flashback and physical-reaction trigger), and no two consecutive memory entries in the audit section use the same transitional construction.",
+      "chapter_id": "chapter_16",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_16.md:9 'She remembered that desire. She remembered the little pulse of courage' (2 instances); snapshots/cycle_01/chapters/chapter_16.md:19 'She remembered reading that message on her lunch break'; snapshots/cycle_01/chapters/chapter_16.md:27 'She remembered sending it' and 'She remembered telling Simone about it the next day' (2 instances); snapshots/cycle_01/chapters/chapter_16.md:55 'Nora remembered the weight of Simone's arm.' Six instances concentrated in the first 55 lines.",
+      "finding_id": "CH16-PROSE-02",
+      "problem": "The audit section uses 'She remembered' as its primary retrospective device six times, with four instances clustered in lines 9-27. By the fourth occurrence the construction becomes a mechanical ramp into each recalled moment rather than an organic entry. The chapter's interiority is otherwise varied and strong, which makes this particular formula's repetition more conspicuous \u2014 it reads like the prose defaulting to a safe transition every time it needs to move from present reading to past experience.",
+      "rewrite_direction": "Reduce to no more than 2 instances of 'She/Nora remembered.' Replace the others with varied retrospective modes: (a) direct sensory flashback without the framing verb \u2014 let the past tense shift and specific detail do the work; (b) a physical reaction in the present (hand tightening, breath catching) that triggers the memory without announcing it; (c) embedded past-tense memory within the ongoing scroll ('The message had arrived during her lunch break \u2014 she'd been standing in the publishing house kitchen...'). The double hit on snapshots/cycle_01/chapters/chapter_16.md:9 and the double on snapshots/cycle_01/chapters/chapter_16.md:27 are the highest-priority targets because back-to-back uses of the same construction within a single paragraph expose the formula most clearly.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "No single paragraph in the revised chapter contains more than 2 instances of the 'the [adjective] [noun] of [qualifier]' construction. The total count across the chapter is 12 or fewer. The passages at lines 55-59 and 27-29 (or their equivalents) each contain no more than 1 such construction.",
+      "chapter_id": "chapter_16",
+      "cycle": 1,
+      "evidence": "The chapter's dominant prose formula is the definite-article-fronted characterizing noun phrase: 'the [adjective] [noun] of [qualifier].' Representative instances across the chapter: snapshots/cycle_01/chapters/chapter_16.md:9 'the little pulse of courage'; :19 'the specific quality of the feeling'; :21 'the small, warm surprise of being asked'; :27 'the warm flush of generosity'; :29 'the faintest signal from some sub-basement'; :39 'the hyper-specific attention of someone who was not ready to feel the large thing yet'; :47 'the uncomplicated enthusiasm of a best friend'; :55 'the precision of this cruelty \u2014 the completeness of the loop'; :59 'the specific warmth of a best friend and the specific timing of a con artist'; :71 'the casual precision of a daily ritual'; :77 'the absolutism of the recently divorced'; :89 'the resigned acceptance of someone who understood'; :101 'the particular shadowless brightness'; :109 'the efficiency of a woman who had been cooking'; :133 'the cold, clean quality of a freshly formatted page.' Approximately 20+ instances across 142 lines.",
+      "finding_id": "CH16-PROSE-03",
+      "problem": "Each instance is individually well-crafted. At a density of roughly one per seven lines, however, they constitute a dominant analytical mode that reduces tonal variety. The prose processes nearly every observation through the same syntactic template: abstract a quality from a moment, name it with a definite article, and qualify it with a prepositional phrase. This creates a persistent categorizing distance \u2014 everything is being labeled and filed \u2014 that works against the chapter's need for raw, unsorted grief. The chapter's best moments (line 97's cherry tomato sequence, line 37's 'The number wasn't the injury. The number was the receipt') succeed precisely because they break this pattern.",
+      "rewrite_direction": "Reduce the total count by approximately one-third to one-half. Target passages where 3+ such phrases appear in close succession \u2014 particularly snapshots/cycle_01/chapters/chapter_16.md:55-59 (4 instances in rapid sequence) and snapshots/cycle_01/chapters/chapter_16.md:27-29 (3 instances). Convert at least 5 of the removed instances to different syntactic modes: direct action, unmediated sensory impression, or sentence structures where the observation arrives in a subordinate clause rather than as the grammatical subject. Preserve the strongest instances (line 133's 'the cold, clean quality of a freshly formatted page' earns its formula; line 77's 'the absolutism of the recently divorced' is compact enough to keep).",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "The Diane dinner section (lines 99-117 equivalent) contains no more than 1 'which [reframing]' construction. The total chapter count of reframing 'which' pivots is 4 or fewer. At least 2 of the removed instances are replaced by constructions that deliver the reinterpretation through a different syntactic form (period break, dash pivot, or embedded reframe).",
+      "chapter_id": "chapter_16",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_16.md:21 'which was the same thing, or close enough'; :29 'which she'd interpreted at the time as healthy caution and which she now understood as'; :35 'which was a comparison she didn't want to be making but which arrived anyway'; :77 'which she did when she wanted to talk'; :99 'which was less an invitation than a gravitational event'; :101 'which she called baking and Nora recognized as a form of prayer'; :113 'which was *are you happy*... which was *is this person going to hurt you*'; :117 'which was the justification Simone had probably used too.' Eight instances of 'which' used as a pivot to reframe surface meaning.",
+      "finding_id": "CH16-PROSE-04",
+      "problem": "The 'which was [reinterpretation]' clause has become this chapter's default mechanism for doubling \u2014 turning a surface observation into a second, deeper reading. This is thematically motivated (the chapter is about seeing double meanings) but when the same syntactic vehicle carries every pivot, the reframing becomes predictable. The construction on line 113 works because it nests two reinterpretations inside Diane's question; many of the others could land harder in a different syntactic form. The cluster on lines 99-117 is especially dense \u2014 4 reframing 'which' clauses in 19 lines during the Diane dinner section.",
+      "rewrite_direction": "Reduce to no more than 4 reframing 'which' pivots in the chapter. Convert the others to period-break reframes (end the sentence, start a new one with the reinterpretation), dash-interrupted pivots (use the em-dash the prose already favors), or no-pivot constructions where the reframing is embedded rather than appended. Priority target: the Diane dinner cluster at snapshots/cycle_01/chapters/chapter_16.md:99-117, where reducing from 4 to 1 'which' pivot would improve rhythmic variety in a section that should feel warm and domestic rather than analytical.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "4499b0d99b6d2288cd3e683d5791fa89c36939d7f3fbf4eea8f5942f4e8bc4d9",
+  "must_fix_count": 4,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on prose and copyedit finish: diction precision, rhythm control, sentence-level clarity, grammar, line-level polish without flattening style, and explicit aesthetic-risk audit (sanitization is the primary risk \u2014 do not soften or euphemize; push toward creative risk and specificity).",
+    "key": "p3_prose_copyedit",
+    "label": "prose/copyedit fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This novel must commit fully to its dark comedy register. The humor should be genuinely funny \u2014 not arch, not safe, not 'literary funny' where the reader smiles wryly. The darkness should be genuinely dark \u2014 the financial manipulation is theft, the emotional manipulation is a form of violence, and the sexual dimension of the AI relationship (intimate photos sent to a non-person, sexual conversations with an algorithm controlled by your best friend) is deeply violating. The novel should not flinch from the specific perversity of Simone reading Nora's intimate messages, of Simone helping Nora dress up for a man Simone invented, of Simone comforting Nora about a fight Simone scripted. These moments are the novel's payload. If they are rendered obliquely or summarized, the book fails. Equally, the genuine tenderness of the friendship \u2014 the years of real love underneath the betrayal \u2014 must be rendered with the same commitment. The reader should feel both the comedy and the horror simultaneously, not in alternation.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism is treated as a craft failure equivalent to a plot hole. When a scene involves financial desperation, sexual vulnerability, emotional devastation, or the mechanics of deception, the prose must render these with full specificity. 'She felt used' is never acceptable when you can show what being used feels and looks like in the body and in the specific details of the moment. The reader should not be protected from the characters' experiences.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm. Uncontracted forms reserved for emphasis, deliberate formality, or character-specific register choices. If a line reads stiffly, the first fix is to contract.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 2,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate between hot and quiet chapters. After a high-intensity scene (confrontation, discovery, sexual encounter), the next chapter should breathe \u2014 slow down, change the sensory environment, let the character do something ordinary. Vary scene counts: some chapters are a single sustained scene, others are three or four. Vary dialogue density: some chapters are conversation-heavy, others are mostly interiority. No two consecutive chapters should open the same way \u2014 if one opens in a location, the next should open in thought or in mid-conversation. The novel's middle section (chapters 8-13) should have more structural variety than the opening, which can afford to be more regular.",
+      "diction": "Contemporary, educated, specific. No genre-thriller diction. No prestige-novel stiffness. The language should feel like how smart, funny, self-aware women in their mid-thirties actually think and speak. Cultural references are allowed when organic. Brand names when they carry social information. The prose should be able to be funny without stepping outside the character's perspective to wink at the reader.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person \u2014 very close, almost inhabiting the POV character's thought patterns and verbal rhythms. The prose should feel like the character's consciousness rendered in third person, not an external narrator describing the character. When in Nora's sections, the prose has her warmth and her specific noticing. When in Simone's sections, the prose has her edge and her accounting.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Variable. Default to mid-length sentences with natural cadence. Use compression for emotional peaks and psychological precision. Use longer, more digressive rhythms for scenes of intimacy, humor, and daily texture. Avoid the trap of making every important moment a short sentence \u2014 sometimes the big thing lands better in a subordinate clause, almost hidden.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

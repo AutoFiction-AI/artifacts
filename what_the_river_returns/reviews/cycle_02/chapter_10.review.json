@@ -1,0 +1,66 @@
+{
+  "chapter_id": "chapter_10",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch10_booker_01",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_02/chapters/chapter_10.md:83; snapshots/cycle_02/chapters/chapter_10.md:127; snapshots/cycle_02/chapters/chapter_10.md:175",
+      "problem": "The chapter runs two near-identical Otis negotiation cycles (ask/refuse/partial yield) in sequence, which softens escalation and delays consequence instead of ratcheting pressure.",
+      "rewrite_direction": "Restructure the handoff arc across snapshots/cycle_02/chapters/chapter_10.md:83, snapshots/cycle_02/chapters/chapter_10.md:127, and snapshots/cycle_02/chapters/chapter_10.md:175 so only one refusal cycle remains. Use the second beat to introduce a new external cost (time/weather/witness exposure/command risk) rather than repeating leverage mechanics.",
+      "acceptance_test": "In revised lines anchored at snapshots/cycle_02/chapters/chapter_10.md:83-175, readers can point to one refusal cycle only; the next exchange must introduce a new consequence absent from the first cycle and lead directly to the map handoff."
+    },
+    {
+      "finding_id": "ch10_craft_01",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_02/chapters/chapter_10.md:99; snapshots/cycle_02/chapters/chapter_10.md:111",
+      "problem": "Sanitization drift appears at the history-to-evidence bridge: violence and dispossession are named, then abstracted into summary (\"paperwork\", \"human context\") instead of rendered through one concrete coercive act with immediate consequence.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_10.md:99 and snapshots/cycle_02/chapters/chapter_10.md:111 to replace abstract summary with one specific witnessed act (who forced what signature/transfer, what was taken, and immediate aftermath) that Lena can directly connect to search strategy.",
+      "acceptance_test": "At the revised equivalent of snapshots/cycle_02/chapters/chapter_10.md:99-111, at least one sentence must include agent + coercive action + immediate consequence, and Lena must explicitly tie that detail to a present-day recoverable artifact/site before Otis exits."
+    },
+    {
+      "finding_id": "ch10_dialogue_01",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_02/chapters/chapter_10.md:147",
+      "problem": "Lena's trust-negotiation line slips into memo-like legal diction (\"classify source material as confidential pending corroboration\"), producing stilted over-formality under high scene pressure.",
+      "rewrite_direction": "Keep the misstep at snapshots/cycle_02/chapters/chapter_10.md:147 but rewrite it in spoken register with contractions and plain local phrasing so Otis is reacting to mistrust, not bureaucratic jargon.",
+      "acceptance_test": "The revised line at snapshots/cycle_02/chapters/chapter_10.md:147 contains at least one contraction and removes phrases equivalent to \"source material\"/\"pending corroboration\" while preserving Otis's interruption beat at line 149."
+    },
+    {
+      "finding_id": "ch10_prose_01",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_02/chapters/chapter_10.md:63; snapshots/cycle_02/chapters/chapter_10.md:121; snapshots/cycle_02/chapters/chapter_10.md:129; snapshots/cycle_02/chapters/chapter_10.md:185; snapshots/cycle_02/chapters/chapter_10.md:225",
+      "problem": "A repeated stress formula (jaw/teeth/chest \"tightened\") recurs five times, which reads as mechanical emotional shorthand and flattens line-level texture.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_10.md:63, snapshots/cycle_02/chapters/chapter_10.md:121, snapshots/cycle_02/chapters/chapter_10.md:129, snapshots/cycle_02/chapters/chapter_10.md:185, and snapshots/cycle_02/chapters/chapter_10.md:225, preserve only one tighten-verb cue and replace the others with distinct character-specific physical actions or sensory reactions.",
+      "acceptance_test": "Across the revised equivalents of snapshots/cycle_02/chapters/chapter_10.md:63/121/129/185/225, no more than one tighten-verb stress marker remains; each remaining stress beat uses a different observable reaction."
+    },
+    {
+      "finding_id": "ch10_prose_02",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_02/chapters/chapter_10.md:7; snapshots/cycle_02/chapters/chapter_10.md:27; snapshots/cycle_02/chapters/chapter_10.md:29",
+      "problem": "The opening runs 10+ consecutive paragraphs without Lena's internal experience, making the focalization briefly read like external camera before interior access returns.",
+      "rewrite_direction": "Add brief interior beats between snapshots/cycle_02/chapters/chapter_10.md:7 and snapshots/cycle_02/chapters/chapter_10.md:27 (before the interior return at line 29) so Lena's thought/sensation/risk appraisal remains continuously present.",
+      "acceptance_test": "In revised opening lines anchored to snapshots/cycle_02/chapters/chapter_10.md:7-29, there is no stretch of 10 or more consecutive paragraphs without a Lena interior beat, and at least two interior beats appear before line 29."
+    }
+  ],
+  "summary": "Chapter 10 delivers strong local texture and consistent macro continuity, but it remains below pass threshold because escalation loops in the Otis negotiation, key historical harm is partially abstracted at a pivotal evidence bridge (sanitization risk), one dialogue beat turns bureaucratically stiff, and prose falls into repeated stress formulas plus an opening interiority drought.",
+  "coverage_scene_ids": [
+    "levee_catfish_supper_interview",
+    "tailgate_map_handoff_and_departure"
+  ]
+}

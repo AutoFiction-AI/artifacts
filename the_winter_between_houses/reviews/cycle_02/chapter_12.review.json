@@ -1,0 +1,62 @@
+{
+  "chapter_id": "chapter_12",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH12_BOOKER_01",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_02/chapters/chapter_12.md:9; snapshots/cycle_02/chapters/chapter_12.md:111; snapshots/cycle_02/chapters/chapter_12.md:117",
+      "problem": "The chapter introduces Dev/Bhatti van pickup as a timing-critical secrecy mechanism, then pivots to bus/cab transport without resolving whether Dev was missed, dismissed, or used. That dropped setup weakens causal payoff and leaves a hanging logistics thread in a chapter built on access barriers.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_12.md:109-118, add a concrete beat that closes the Dev thread (for example: they reach the cut-through and he has already gone, or they choose to avoid him because witnesses are present), and tie that choice to the cab-cost consequence. If Dev will not matter, cut the setup at snapshots/cycle_02/chapters/chapter_12.md:9.",
+      "acceptance_test": "PASS if a first read of snapshots/cycle_02/chapters/chapter_12.md:109-118 makes Dev's outcome explicit (missed/declined/used) and links it to the transport decision; FAIL if the chapter still introduces Dev at snapshots/cycle_02/chapters/chapter_12.md:9 with no explicit resolution."
+    },
+    {
+      "finding_id": "CH12_CRAFT_01",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_02/chapters/chapter_12.md:243; snapshots/cycle_02/chapters/chapter_12.md:245",
+      "problem": "Micro-continuity break: Keane tears two slips, then assigns three separate documents (Monday clinic slip, Saturday district slip, formal high-risk note). The count mismatch creates avoidable mechanical noise in a medically procedural scene.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_12.md:243-246 so physical document count matches spoken assignments. Either change the action to three slips/forms or consolidate the spoken outputs into two clearly defined documents.",
+      "acceptance_test": "PASS if, in snapshots/cycle_02/chapters/chapter_12.md:243-246, the number of slips/forms physically produced equals the number of slips/forms verbally handed out; FAIL if a count mismatch remains."
+    },
+    {
+      "finding_id": "CH12_DIALOGUE_01",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_02/chapters/chapter_12.md:283; snapshots/cycle_02/chapters/chapter_12.md:285; snapshots/cycle_02/chapters/chapter_12.md:287",
+      "problem": "In the closing exchange, Elsie and Noreen momentarily converge into the same polished, aphoristic register, reducing idiolect separation under pressure. This blurs character distinction against the style-bible requirement for clearly separated speech rhythms.",
+      "rewrite_direction": "Rework snapshots/cycle_02/chapters/chapter_12.md:283-287 so Elsie stays in concrete task/cost language and Noreen carries her quicker pivoting cadence (humor/defiance in the same beat). Keep the emotional content but differentiate syntax and word choice.",
+      "acceptance_test": "PASS if, in snapshots/cycle_02/chapters/chapter_12.md:283-287, each speaker has at least one line that is attributable by voice alone (without dialogue tags) and uses profile-consistent diction/rhythm; FAIL if their lines remain interchangeable in register."
+    },
+    {
+      "finding_id": "CH12_PROSE_01",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_02/chapters/chapter_12.md:201; snapshots/cycle_02/chapters/chapter_12.md:310",
+      "problem": "Close-third focalization on Noreen loosens into un-signaled access to Elsie's private cognition (task list/arithmetic), creating a POV boundary wobble against the style-bible close-distance requirement.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_12.md:201-202 and snapshots/cycle_02/chapters/chapter_12.md:310, either convert Elsie's inner-state claims into Noreen-observable cues/inference language or insert an explicit POV shift marker before entering Elsie's interior processing.",
+      "acceptance_test": "PASS if snapshots/cycle_02/chapters/chapter_12.md:201-202 and snapshots/cycle_02/chapters/chapter_12.md:310 read as either Noreen-observable description or clearly signaled POV transition; FAIL if Elsie's private thoughts remain directly asserted with no transition cue."
+    },
+    {
+      "finding_id": "CH12_PROSE_02",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_02/chapters/chapter_12.md:3; snapshots/cycle_02/chapters/chapter_12.md:225; snapshots/cycle_02/chapters/chapter_12.md:261; snapshots/cycle_02/chapters/chapter_12.md:280",
+      "problem": "Recurring construction tic: multiple state changes are delivered with the same 'had gone + adjective' template. At four uses, the pattern starts to flatten prose texture and reads as autopilot phrasing.",
+      "rewrite_direction": "Revise at least two of snapshots/cycle_02/chapters/chapter_12.md:3, snapshots/cycle_02/chapters/chapter_12.md:225, snapshots/cycle_02/chapters/chapter_12.md:261, and snapshots/cycle_02/chapters/chapter_12.md:280 by replacing the template with concrete sensory/action-specific language.",
+      "acceptance_test": "PASS if no more than two instances of the exact 'had gone + adjective' construction remain across snapshots/cycle_02/chapters/chapter_12.md:3,225,261,280 and revised lines show distinct sensory/action rendering; FAIL if three or more template instances remain in those target lines."
+    }
+  ],
+  "summary": "Chapter 12 lands its medical-risk spine and keeps strong scene pressure, but it does not clear pass threshold because of a dropped logistics setup, a procedural continuity glitch, late-scene voice convergence, and prose-level focalization/tic issues that reduce precision and distinctness."
+}

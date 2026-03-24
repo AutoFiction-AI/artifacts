@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_05",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_05_booker_001",
+      "source": "booker",
+      "severity": "HIGH",
+      "chapter_id": "chapter_05",
+      "evidence": "`snapshots/cycle_02/chapters/chapter_05.md:5` sets Vautrin's demand for names before Thursday night, `snapshots/cycle_02/chapters/chapter_05.md:17` makes Thursday the day the May Day crowd provides cover, `snapshots/cycle_02/chapters/chapter_05.md:225` keeps the family's fear fixed on Thursday, and `snapshots/cycle_02/chapters/chapter_05.md:275` has Thursday penciled into the cache book.",
+      "problem": "The chapter's central countdown is canonically wrong. The continuity sheet fixes the novel in 1895, when May Day falls on Wednesday, not Thursday, so the scene's core tactical deadline is misdated. Because Ferrand's entire pitch depends on that crowd timing, this is a structural continuity failure rather than a cosmetic calendar slip.",
+      "rewrite_direction": "Revise `snapshots/cycle_02/chapters/chapter_05.md:5`, `snapshots/cycle_02/chapters/chapter_05.md:17`, `snapshots/cycle_02/chapters/chapter_05.md:225`, and `snapshots/cycle_02/chapters/chapter_05.md:275` so the chapter uses one historically and canonically consistent day for the coming demonstration, or decouple the planned action from May Day explicitly if Thursday must remain the operative date.",
+      "acceptance_test": "Pass if a reader can track the revised countdown through `snapshots/cycle_02/chapters/chapter_05.md:5`, `snapshots/cycle_02/chapters/chapter_05.md:17`, `snapshots/cycle_02/chapters/chapter_05.md:225-230`, and `snapshots/cycle_02/chapters/chapter_05.md:275-276` and find one consistent weekday tied to the demonstration; fail if any surviving line still treats May Day as Thursday."
+    },
+    {
+      "finding_id": "chapter_05_craft_001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_05",
+      "evidence": "`snapshots/cycle_02/chapters/chapter_05.md:191-193` says there had not been a plot waiting in the quarry, but `snapshots/cycle_02/chapters/chapter_05.md:275-289` reveals written entries for fuse, caps, pistol, a powder parcel, a spare key, Thursday, and 'For review route.'",
+      "problem": "The chapter's answer to its own objective is causally muddled. Elise concludes Ferrand is manufacturing a plot in real time, yet the ledger she finds reads like a pre-existing operational record. That contradiction weakens the chapter turn and makes the evidence feel too neat, especially given Ferrand's canon profile as a performance-first operator rather than someone who would conveniently keep a quasi-case file in the refuge's supplies.",
+      "rewrite_direction": "Make `snapshots/cycle_02/chapters/chapter_05.md:275-289` and `snapshots/cycle_02/chapters/chapter_05.md:293-296` align with `snapshots/cycle_02/chapters/chapter_05.md:191-193`: either reduce the discovered material to partial contamination that supports Elise's 'manufactured' conclusion, or revise Elise's later reading so she admits Ferrand has already seeded a real operational apparatus. Keep the evidence messy, local, and character-plausible rather than dossier-clean.",
+      "acceptance_test": "Pass if a first read of revised `snapshots/cycle_02/chapters/chapter_05.md:191-195`, `snapshots/cycle_02/chapters/chapter_05.md:275-289`, and `snapshots/cycle_02/chapters/chapter_05.md:293-296` yields one coherent causal answer: either the plot is still being manufactured from fragments, or a formed plan already exists and Elise names that fact. Fail if the evidence still supports both readings at once."
+    },
+    {
+      "finding_id": "chapter_05_dialogue_001",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "`snapshots/cycle_02/chapters/chapter_05.md:113` gives Ferrand a polished mini-speech about clerks and fear, `snapshots/cycle_02/chapters/chapter_05.md:171` has him declare 'I need nothing from any man who has not offered it,' and `snapshots/cycle_02/chapters/chapter_05.md:197-207` keeps him in crisp, controlled rhetoric while he recruits Abel.",
+      "problem": "Ferrand's voice drifts away from the style bible. He is supposed to sound high-contraction, greasy, fast, and half-technical, but several key speeches come out too syntactically clean and aphoristic, which narrows the gap between Ferrand, Abel, and Lucien. The result is a register blur at the exact point where the chapter needs speaker separation most.",
+      "rewrite_direction": "Rework Ferrand's quoted material in `snapshots/cycle_02/chapters/chapter_05.md:113-123`, `snapshots/cycle_02/chapters/chapter_05.md:165-175`, `snapshots/cycle_02/chapters/chapter_05.md:197-207`, and `snapshots/cycle_02/chapters/chapter_05.md:331-343` toward dirtier opportunism: more contractions, slipperier specifics, more social grease, and less balanced rhetoric. Keep Abel's lines in `snapshots/cycle_02/chapters/chapter_05.md:141-152` as the more aspirational, overreaching register so the two men stop sounding adjacent.",
+      "acceptance_test": "Pass if, on a cold read of revised `snapshots/cycle_02/chapters/chapter_05.md:113-123`, `snapshots/cycle_02/chapters/chapter_05.md:141-152`, `snapshots/cycle_02/chapters/chapter_05.md:165-175`, and `snapshots/cycle_02/chapters/chapter_05.md:197-207`, Ferrand's lines are identifiable by contractions, swagger, and evasive bomb talk while Abel still sounds like a boy reaching for history. Fail if Ferrand can still swap lines with Abel or Lucien without obvious register damage."
+    },
+    {
+      "finding_id": "chapter_05_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "`snapshots/cycle_02/chapters/chapter_05.md:125` uses 'That was what gave it force,' `snapshots/cycle_02/chapters/chapter_05.md:133` uses 'That was the measure of him,' `snapshots/cycle_02/chapters/chapter_05.md:143` uses 'That was his mistake,' `snapshots/cycle_02/chapters/chapter_05.md:209` uses 'That was answer enough,' and `snapshots/cycle_02/chapters/chapter_05.md:357` uses 'That was the moment it became something more than omission.'",
+      "problem": "The chapter leans too often on the same interpretive hinge construction to announce significance. That repeated 'That was ...' scaffolding becomes a prose tic and slightly flattens beats that are already strong enough to land through image, gesture, or consequence.",
+      "rewrite_direction": "Vary the highlighted moments in `snapshots/cycle_02/chapters/chapter_05.md:125`, `snapshots/cycle_02/chapters/chapter_05.md:133`, `snapshots/cycle_02/chapters/chapter_05.md:143`, `snapshots/cycle_02/chapters/chapter_05.md:209`, and `snapshots/cycle_02/chapters/chapter_05.md:357-360` so at least three of them land without the same signposting formula. Replace the hinge with direct sensory consequence, altered syntax, or a cleaner cut to action.",
+      "acceptance_test": "Pass if the revised beats at `snapshots/cycle_02/chapters/chapter_05.md:125`, `snapshots/cycle_02/chapters/chapter_05.md:133`, `snapshots/cycle_02/chapters/chapter_05.md:143`, `snapshots/cycle_02/chapters/chapter_05.md:209`, and `snapshots/cycle_02/chapters/chapter_05.md:357-360` no longer rely on more than two total 'That was ...' significance markers and each beat still reads clearly on first pass. Fail if three or more of those passages retain the same formula."
+    }
+  ],
+  "summary": "FAIL across all four lenses. The chapter has strong embodied detail, sustained Elise interiority, and no major sanitization, tense-drift, or fade-to-black problem, but it still carries one high continuity break in the May Day countdown, one high causal muddle in the ledger turn, a medium Ferrand voice/register drift, and a medium repeated-signposting prose tic."
+}

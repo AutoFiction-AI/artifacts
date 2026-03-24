@@ -1,0 +1,115 @@
+{
+  "cycle": 1,
+  "verdict": "FAIL",
+  "summary": "FAIL. The manuscript has real shortlist-adjacent force in its own mode: the rotating close-third voice is broadly consistent with the style bible, canonical past tense holds across chapters, dialogue largely honors the high-contraction/local-register brief, and the book does not sanitize sex, violence, shame, or grotesquerie. But it is not major-award ready yet because several HIGH-severity craft failures remain visible at full-book scale: uncorrected process/meta leakage in chapters 6, 12, and 17; a broken salt-fig-seed continuity chain across chapters 14, 16, and 17 against the continuity sheet; and a repeated \"went still/went flat\" reaction template across six chapters that dulls otherwise distinct character response.",
+  "findings": [
+    {
+      "finding_id": "FBR-001",
+      "severity": "HIGH",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2292",
+      "problem": "Chapter 6 still contains visible markdown/process artifacts rather than finished prose: the barge name is repeatedly wrapped in backticks, and the betting-board/slate text is formatted as literal inline code. In a shortlist context this reads as uncorrected draft tooling leakage, not an intentional in-world typographic choice.",
+      "rewrite_direction": "Clean the formatting at snapshots/cycle_01/FINAL_NOVEL.md:2292, snapshots/cycle_01/FINAL_NOVEL.md:2354, snapshots/cycle_01/FINAL_NOVEL.md:2394, snapshots/cycle_01/FINAL_NOVEL.md:2436, snapshots/cycle_01/FINAL_NOVEL.md:2550, snapshots/cycle_01/FINAL_NOVEL.md:2654, and snapshots/cycle_01/FINAL_NOVEL.md:2694. Keep the diction, scene rhythm, and the betting-board content, but render the boat name and written text in ordinary narrative typography so the chapter reads as fully authored prose rather than markup residue.",
+      "acceptance_test": "Pass if the cited lines read as normal in-world prose with no backticks or code-style formatting, and the betting-board/slate details still remain legible in context. Fail if any inline-code marks remain in those spans."
+    },
+    {
+      "finding_id": "FBR-002",
+      "severity": "HIGH",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:5482",
+      "problem": "The line \"chapter thirteen hiding inside the sentence\" is explicit chapter-counting meta commentary. It breaks the diegesis at the exact moment the book should be tightening toward the next movement.",
+      "rewrite_direction": "Rewrite the transition at snapshots/cycle_01/FINAL_NOVEL.md:5480-5483 so it points forward through scene logic, route pressure, or family dread rather than chapter numbering. Keep the sense of the next damage already arriving, but express it in-world.",
+      "acceptance_test": "Pass if snapshots/cycle_01/FINAL_NOVEL.md:5480-5483 contains no chapter-number language and still clearly pivots from the ferry-house argument into the Halcote plan. Fail if the passage still comments on itself as a numbered chapter."
+    },
+    {
+      "finding_id": "FBR-003",
+      "severity": "HIGH",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:7569",
+      "problem": "The climax is punctured by explicit chapter-based meta language: the key was handed over \"in chapter three,\" and the pilgrims react as if \"the chapter\" has informed them of the outcome. Those are process-level intrusions, not controlled narrative estrangement.",
+      "rewrite_direction": "Revise snapshots/cycle_01/FINAL_NOVEL.md:7567-7570 and snapshots/cycle_01/FINAL_NOVEL.md:7843-7845 so both beats are framed in lived time and witness behavior rather than chapter terminology. Keep Tovin's long reluctance and the crowd's disappointed relief, but state them through memory, duration, or bodily reaction inside the scene.",
+      "acceptance_test": "Pass if the cited spans contain no chapter-based vocabulary and still track the key's history and the pilgrims' response with full clarity. Fail if either span still breaks the scene to reference chapter structure."
+    },
+    {
+      "finding_id": "FBR-004",
+      "severity": "HIGH",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:6348",
+      "problem": "Bato splits Nami's pocketed salt-fig seed open on the page, which contradicts the continuity sheet's canon that one seed remains an active threat through chapter_17 and also breaks the later-object logic of chapters 16 and 17.",
+      "rewrite_direction": "Revise snapshots/cycle_01/FINAL_NOVEL.md:6338-6350. Preserve Bato's demystifying beat and Nami's humiliation, but do not destroy the only pocketed seed. Options: have Bato nick, scar, or squeeze the seed to show rot without rendering it unusable, or have him demonstrate on another recovered seed while returning Nami's intact one. The local result at snapshots/cycle_01/FINAL_NOVEL.md:6344-6348 must leave one active seed in Nami's possession for the later Storm Mouth sequence.",
+      "acceptance_test": "Pass if, after reading snapshots/cycle_01/FINAL_NOVEL.md:6326-6350, a reader can tell exactly that one seed survives and remains portable/active into the later chapters. Fail if Bato plainly destroys the only pocketed seed or if later possession would still require inventing an unseen replacement."
+    },
+    {
+      "finding_id": "FBR-005",
+      "severity": "HIGH",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:7438",
+      "problem": "Chapter 16 announces \"I've got the seed\" and visualizes a hidden seed in Nami's pocket after chapter 14 has already split that object open. Even if chapter 14 is repaired, this chapter currently relies on the reader silently supplying a resurrected or replacement seed.",
+      "rewrite_direction": "Tighten the object-state at snapshots/cycle_01/FINAL_NOVEL.md:7436-7444 and snapshots/cycle_01/FINAL_NOVEL.md:7460. Make it explicit that Nami is referring to the same surviving salt-fig seed she still carries after Bato's warning, not a new or magically restored object; if this scene does not need the seed materially, replace the claim with another already-established contribution. The chapter must not rely on an unexplained return of the seed.",
+      "acceptance_test": "Pass if a reader entering chapter 16 can understand what object Nami has, why she still has it, and how it connects to the earlier reveal without inventing an off-page replacement. Fail if \"I've got the seed\" still reads like an impossible resurrection after chapter 14."
+    },
+    {
+      "finding_id": "FBR-006",
+      "severity": "HIGH",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:7771",
+      "problem": "Nami's confession scene depends on an intact hidden seed and presents it as continuously carried, but chapter 14 currently destroyed that object on page. The emotional beat is strong; the physical continuity is not.",
+      "rewrite_direction": "Revise snapshots/cycle_01/FINAL_NOVEL.md:7771-7825 so the confession tracks one clear seed history. Keep Nami's admission that she wanted chosenness, but replace the chapter-counting phrase with in-world duration language and make the object state locally legible: either this is the same surviving seed Nami has carried since the ferry-house night, or the scene must use another surviving token already established before this chapter. The knotting of the seed to Bato's weight at snapshots/cycle_01/FINAL_NOVEL.md:7823-7825 must follow from a trackable object, not a resurrected one.",
+      "acceptance_test": "Pass if the revised span lets a reader trace a single continuous seed from chapter 2 into this confession without chapter-counting language or continuity gaps. Fail if the seed still appears here as if restored from the already-split chapter 14 version."
+    },
+    {
+      "finding_id": "FBR-007",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:726",
+      "problem": "The novel repeats the same default reaction template across six chapters and seven instances: faces or bodies \"went flat\" or \"went still\" instead of receiving a more character-specific response beat. This chapter contains the first occurrence, and it is one of the two strongest uses, but the full-book repetition has retroactively made even the keeper instance feel like a house habit.",
+      "rewrite_direction": "KEEP the beat at snapshots/cycle_01/FINAL_NOVEL.md:726 as the book's first and cleanest flatness instance, but treat it as this chapter's only use of that reaction template. If you touch snapshots/cycle_01/FINAL_NOVEL.md:718-728, preserve Riva's defensive hardening without adding another still/flat variant nearby.",
+      "acceptance_test": "Pass if snapshots/cycle_01/FINAL_NOVEL.md:726 remains the chapter's lone default-stillness/flatness beat and still reads specifically as Riva's clipped contempt. Fail if the revision adds another nearby still/flat template or blurs the line into a generic placeholder."
+    },
+    {
+      "finding_id": "FBR-008",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2440",
+      "problem": "The same full-book reaction template recurs here: Nami's body \"went still,\" one of seven still/flat beats spread across six chapters. Because other chapters are already carrying this pattern, this instance reads as generic shorthand instead of a local, Nami-specific shock response.",
+      "rewrite_direction": "REPLACE the reaction at snapshots/cycle_01/FINAL_NOVEL.md:2438-2442. Keep Nami's fixation on the seed and the market chaos, but swap the stock stillness beat for a bodily response specific to her private chosenness-hunger or sensory narrowing in this moment.",
+      "acceptance_test": "Pass if snapshots/cycle_01/FINAL_NOVEL.md:2438-2442 now renders Nami's reaction in chapter-specific physical terms and no \"went still\" or \"went flat\" wording remains in that beat. Fail if the replacement is just another generic freeze/blank shorthand."
+    },
+    {
+      "finding_id": "FBR-009",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:3332",
+      "problem": "This chapter repeats the book-wide still/flat template when Daro's face \"went flat.\" At this point in the novel the phrasing no longer feels like deliberate motif; it flattens a pressure point that should be more particular to Daro's injury, vanity, and resentment.",
+      "rewrite_direction": "REPLACE the beat at snapshots/cycle_01/FINAL_NOVEL.md:3330-3334 with a reaction that shows Daro's hurt hardening into spite or performance without using the stock face-flat stillness phrasing.",
+      "acceptance_test": "Pass if the cited span now conveys Daro's reaction through a more specific verbal, bodily, or rhythmic choice and no still/flat placeholder remains there. Fail if the revised line still relies on the same generic reaction template."
+    },
+    {
+      "finding_id": "FBR-010",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:6232",
+      "problem": "This chapter contains two instances of the novel's repeated still/flat reaction pattern: Daro \"went still\" at snapshots/cycle_01/FINAL_NOVEL.md:6232 and Bato's face \"went very still\" at snapshots/cycle_01/FINAL_NOVEL.md:6324. The chapter should not keep both. The Daro beat is the weaker, more generic reuse; the Bato beat is the stronger sparse one and can stay.",
+      "rewrite_direction": "REPLACE the default stillness at snapshots/cycle_01/FINAL_NOVEL.md:6232-6233 with a more character-specific indication of Daro's threatened vanity or mounting spite, but KEEP snapshots/cycle_01/FINAL_NOVEL.md:6324 as the chapter's single retained stillness beat because Bato's near-nothing reaction suits his voice. Do not add new still/flat placeholders elsewhere in snapshots/cycle_01/FINAL_NOVEL.md:6230-6328.",
+      "acceptance_test": "Pass if snapshots/cycle_01/FINAL_NOVEL.md:6232-6233 no longer uses \"went still\" or a near-identical placeholder, while snapshots/cycle_01/FINAL_NOVEL.md:6324 may remain as the chapter's one retained instance. Fail if both instances stay, or if the replacement at 6232 is just another generic freeze/blank expression."
+    },
+    {
+      "finding_id": "FBR-011",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:7250",
+      "problem": "Chapter 16 adds another entry to the novel's repeated still/flat reaction pattern when Bato \"went still.\" Because the book already uses this construction across six chapters, the line reads as default shorthand rather than the precise recognition beat this reveal deserves.",
+      "rewrite_direction": "REPLACE the reaction at snapshots/cycle_01/FINAL_NOVEL.md:7248-7252 with a more exact sign of Bato's recognition, history, or alarm that fits his spare register without falling back on the stock stillness template.",
+      "acceptance_test": "Pass if snapshots/cycle_01/FINAL_NOVEL.md:7248-7252 now makes Bato's recognition legible through a more specific physical or verbal choice and no still/flat wording remains there. Fail if the revised beat is still a generic frozen-face/body reaction."
+    },
+    {
+      "finding_id": "FBR-012",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:7751",
+      "problem": "This chapter repeats the book-wide still/flat pattern again when Nami \"had gone still at the threshold.\" Coming inside the climax, the familiar phrasing drains distinctiveness from a scene that should sharpen Nami's dangerous attraction to sacrifice, not describe it with a house-default gesture.",
+      "rewrite_direction": "REPLACE the beat at snapshots/cycle_01/FINAL_NOVEL.md:7749-7755. Keep the sense that the room slides toward Nami as possible sacrifice, but render her reaction through a more specific bodily or perceptual cue than the stock stillness phrasing.",
+      "acceptance_test": "Pass if snapshots/cycle_01/FINAL_NOVEL.md:7749-7755 gives Nami a more particular reaction beat and no still/flat placeholder remains there. Fail if the line still defaults to generic stoppage language."
+    }
+  ]
+}

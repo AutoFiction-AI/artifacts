@@ -1,0 +1,27 @@
+{
+  "chapter_id": "chapter_10",
+  "cycle": 1,
+  "input_snapshot_hash": "d75f8ef710830488f6b4c7ad6a41055a9881b91987af2073ae808caf24af8762",
+  "findings": [
+    {
+      "finding_id": "F05",
+      "source": "full_award_rescue.review",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.post_revision.md:2200",
+      "problem": "Full-book recurring pattern continues. Line 2200: 'the wanting sat in her chest like a fist.' By Chapter 10 the reader has encountered at least three prior chest/sternum emotional registrations across two chapters. While the 'like a fist' simile is individually stronger than 'went tight, then hot' (Ch 6), the anatomical default (chest as container for feeling) undercuts it. This is the fourth chapter to locate peak emotion in the chest cavity. Mira's private register is angular and physical \u2014 her body occupies space deliberately, she reorganizes objects under stress, her metaphors become violent. The wanting should arrive through her body's actual vocabulary, not the generic chest-locus shared with Dan's chapters.",
+      "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.post_revision.md:2200, replace 'sat in her chest like a fist' with a somatic location that hasn't served as emotional container in the novel's recent chapters. Options: her throat closing on words she can't shape yet; her hands pressing flat against the counter with deliberate force; her jaw working against the wanting; her left hand opening and closing at her side (a gesture the novel can call back in Ch 14). The 'like a fist' simile may be preserved if relocated to a non-chest body part (e.g., 'the wanting closed her throat like a fist'). The replacement should feel Mira-specific in its somatic register.",
+      "acceptance_test": "PASS if line 2200 area delivers Mira's emotional pressure through a body part other than chest/sternum/ribs, the replacement is somatically specific and consistent with Mira's character profile, and the sensation feels physically located rather than abstractly interior. FAIL if 'chest' or anatomical equivalent remains as the container."
+    }
+  ],
+  "must_fix_count": 1,
+  "non_negotiables": [
+    "Remove 'chest' as the somatic locus at line 2200; reroute through a body part not used as emotional container in prior chapters (throat, hands, jaw, or similar)",
+    "The replacement must feel Mira-specific: angular, physical, deliberate"
+  ],
+  "acceptance_targets": [
+    "Line 2200 area contains no reference to chest, sternum, or ribs as emotional container",
+    "The replacement somatic detail is physically located, specific, and consistent with Mira's established body vocabulary",
+    "The 'like a fist' simile may be preserved if relocated to a non-chest body part"
+  ]
+}

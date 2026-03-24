@@ -1,0 +1,124 @@
+{
+  "cycle": 1,
+  "verdict": "FAIL",
+  "summary": "Booker-shortlist readiness is not evidenced yet. The manuscript has major strengths (high consequence scenes, unsanitized intimacy and obstetric risk rendered with concrete detail), but it fails on unresolved coherence and craft blockers: a HIGH cross-chapter continuity contradiction (Noreen's infant gender), a HIGH character-identity continuity split around Arthur Pike/Hale, recurring prose-construction tics that repeat across chapters, and middle/late-book diction overfitted to style-bible control/accounting tokens that flattens voice variation. Narrative tense was checked across all chapters and remains consistent with the style bible's canonical past tense (no tense-drift finding).",
+  "findings": [
+    {
+      "finding_id": "FBR-001",
+      "severity": "HIGH",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:892",
+      "problem": "Cross-chapter continuity split: this chapter introduces \"Arthur Pike\" with distinctive witness-like traits, while the continuity sheet and later chapters center \"Arthur Hale\" as the key outsider witness. As written, this creates an identity fork that reads as drafting drift rather than deliberate design.",
+      "rewrite_direction": "Revise the Christmas-arrival block at `snapshots/cycle_01/FINAL_NOVEL.md:892`, `snapshots/cycle_01/FINAL_NOVEL.md:904`, and `snapshots/cycle_01/FINAL_NOVEL.md:918`. Choose one path: (A) canonical unification: rename and align this guest to Arthur Hale now; or (B) explicit separation: keep Pike but add one clear disambiguating line (different role/history from the later billeted linesman) and remove overlapping signature cues that imply the same person.",
+      "acceptance_test": "Pass if a reader can identify, within lines 892-918, whether this is the same canonical Arthur Hale or a clearly separate person without inference. Fail if \"Arthur Pike\" remains with no explicit disambiguation while retaining overlapping witness-signature characterization."
+    },
+    {
+      "finding_id": "FBR-002",
+      "severity": "HIGH",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2140",
+      "problem": "Cross-chapter continuity split companion: chapter 7 presents Arthur Hale as a fresh entry without resolving chapter 3's Arthur Pike appearance, leaving readers to guess whether this is one person with inconsistent naming or two near-duplicate Arthurs.",
+      "rewrite_direction": "At `snapshots/cycle_01/FINAL_NOVEL.md:2132`, `snapshots/cycle_01/FINAL_NOVEL.md:2140`, and `snapshots/cycle_01/FINAL_NOVEL.md:2234`, add an explicit continuity anchor. If same man, include one line linking him to the Christmas scene; if different, include one line that rules out identity overlap (surname/occupation distinction) so this chapter does not depend on off-page reconciliation.",
+      "acceptance_test": "Pass if chapter 7's introduction resolves Arthur identity in-text at first appearance. Fail if reader still has to infer identity reconciliation from later chapters or external continuity docs."
+    },
+    {
+      "finding_id": "FBR-003",
+      "severity": "HIGH",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:6618",
+      "problem": "High factual contradiction: this line refers to Noreen's child as a \"son\" despite established canon and prior chapter text identifying Noreen's infant as female (e.g., female infant bracelet and repeated \"daughter\" references).",
+      "rewrite_direction": "Correct the gender reference in `snapshots/cycle_01/FINAL_NOVEL.md:6618` and audit adjacent infant references in `snapshots/cycle_01/FINAL_NOVEL.md:6598` and `snapshots/cycle_01/FINAL_NOVEL.md:6622` so chapter 17 matches the established female-infant continuity.",
+      "acceptance_test": "Pass if all infant references in the target span are female or neutral and none are masculine. Fail if any \"son/he/him\" reference remains for Noreen's infant in this chapter."
+    },
+    {
+      "finding_id": "FBR-004",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:401",
+      "problem": "Recurring full-book construction detected in 5 chapters (2, 3, 4, 9, 17): the \"short laugh with no humor\" affect beat. This chapter contains the strongest early instance and should be the one to KEEP while other chapters vary.",
+      "rewrite_direction": "KEEP the line-level beat at `snapshots/cycle_01/FINAL_NOVEL.md:401` as the anchor instance. In the surrounding beat (`snapshots/cycle_01/FINAL_NOVEL.md:397` to `snapshots/cycle_01/FINAL_NOVEL.md:406`), slightly sharpen concrete reaction detail so this scene clearly earns being the retained version.",
+      "acceptance_test": "Pass if chapter 2 retains exactly one \"laugh-without-humor\" beat in the target span and it is grounded in immediate document-specific reaction. Fail if the chapter adds additional near-duplicate variants of the same beat."
+    },
+    {
+      "finding_id": "FBR-005",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:842",
+      "problem": "Same full-book recurrence pattern (5 chapters): \"short laugh with no humor\". In this chapter, the beat repeats rather than individualizes Noreen's response under social humiliation.",
+      "rewrite_direction": "REPLACE the formulaic beat at `snapshots/cycle_01/FINAL_NOVEL.md:842` with a chapter-specific reaction tied to this table scene's pressure (for example: breath control failure, plate/utensil handling, or accent-performance masking). Keep the emotional function but remove the stock wording.",
+      "acceptance_test": "Pass if the target line no longer uses a \"short laugh/no humor\" construction and the replacement reaction is specific to the Christmas-table power dynamic. Fail if the same formula remains or is replaced by a near-synonym that reads identical in function."
+    },
+    {
+      "finding_id": "FBR-006",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:1289",
+      "problem": "Same recurring pattern across 5 chapters: \"short laugh with no humor\" appears again at the stillbirth-confession peak, diluting the singularity of this chapter's emotional register.",
+      "rewrite_direction": "REPLACE the phrase at `snapshots/cycle_01/FINAL_NOVEL.md:1289` with a more embodied, memory-specific response consistent with the hospital trauma recounting (e.g., breath break, hand action, sensory recoil).",
+      "acceptance_test": "Pass if the target span conveys emotional break without the laugh-formula and lands on a concrete trauma-linked bodily/action detail. Fail if the revised text still relies on a generic humorless-laugh shorthand."
+    },
+    {
+      "finding_id": "FBR-007",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:3070",
+      "problem": "Same recurring affect pattern (5 chapters): the chapter opens with a variant (\"short laugh that died quickly\") that functions as the same stock emotional beat.",
+      "rewrite_direction": "REPLACE the beat at `snapshots/cycle_01/FINAL_NOVEL.md:3070` with a blackout-specific pressure reaction (resource calculus, hand movement, cold-body response) so the scene enters on distinct stakes rather than reused cadence.",
+      "acceptance_test": "Pass if line 3070's emotional turn no longer uses the laugh-dies pattern and instead reflects a distinct blackout-survival cue. Fail if the revised line still performs the same affect beat with minor wording changes."
+    },
+    {
+      "finding_id": "FBR-008",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:6468",
+      "problem": "Same full-book recurrence pattern (5 chapters): another \"short laugh with no humor\" appears in active labor logistics, where a sharper scene-specific coping signal would carry more force.",
+      "rewrite_direction": "REPLACE the phrase at `snapshots/cycle_01/FINAL_NOVEL.md:6468` with a labor-and-flood-specific coping beat (timed breathing fragment, task interruption, tactile focus) that preserves tonal hardness without repeating the book's stock laugh formula.",
+      "acceptance_test": "Pass if the target line conveys strain through an original labor-context action/sensation rather than humorless-laugh shorthand. Fail if the revised sentence remains a laugh-then-denial cadence."
+    },
+    {
+      "finding_id": "FBR-009",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:4116",
+      "problem": "Style-bible token overfitting: Peter's control voice leans repeatedly on abstract bookkeeping language (order/disorder/impulses) in a way that becomes mantra-like across multiple chapters (3, 11, 12, 15, 16, 18), reducing cross-chapter texture variance.",
+      "rewrite_direction": "In `snapshots/cycle_01/FINAL_NOVEL.md:4102` to `snapshots/cycle_01/FINAL_NOVEL.md:4126`, KEEP one control-lexicon line but REPLACE the rest with concrete coercive behavior (movement blocking, fare control, phone access, timing constraints) so this chapter's pressure is dramatized, not sermonized.",
+      "acceptance_test": "Pass if the span contains at most one abstract order/discipline maxim and at least two concrete controlling actions with immediate scene consequence. Fail if the scene still reads as back-to-back abstract governance diction."
+    },
+    {
+      "finding_id": "FBR-010",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:4361",
+      "problem": "Same style-token overfitting pattern: the scene repeats accounting vocabulary (ledger/count/assess) instead of varying Peter's control tactics, causing voice flattening in the middle stretch.",
+      "rewrite_direction": "Revise `snapshots/cycle_01/FINAL_NOVEL.md:4341`, `snapshots/cycle_01/FINAL_NOVEL.md:4361`, and `snapshots/cycle_01/FINAL_NOVEL.md:4375`: retain one accounting cue for character consistency, then pivot remaining control beats to transport obstruction, social surveillance, and procedural gatekeeping grounded in this chapter's clinic urgency.",
+      "acceptance_test": "Pass if the target span uses accounting lexicon once as signature, then diversifies into non-redundant control mechanisms tied to clinic access. Fail if multiple consecutive turns still repeat the same ledger/count framing."
+    },
+    {
+      "finding_id": "FBR-011",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:5648",
+      "problem": "Same overfitting pattern in hospital aftermath: receipts/files/order language is repeated so heavily that Peter's voice stops escalating and starts looping.",
+      "rewrite_direction": "At `snapshots/cycle_01/FINAL_NOVEL.md:5648`, `snapshots/cycle_01/FINAL_NOVEL.md:5654`, and `snapshots/cycle_01/FINAL_NOVEL.md:5672`, KEEP the file prop once but REPLACE at least two repeated accounting turns with fresh coercive moves specific to hospital context (access mediation, message control, reputation leverage with staff).",
+      "acceptance_test": "Pass if the hospital scene no longer stacks multiple near-identical bookkeeping assertions and instead shows at least two distinct control tactics beyond receipts/accounting language. Fail if Peter's dialogue remains predominantly repetitive fiscal bookkeeping rhetoric."
+    },
+    {
+      "finding_id": "FBR-012",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:6011",
+      "problem": "Same style-bible overfitting drift at threat escalation: forms/records/household-paper diction repeats so often that the confrontation's danger becomes rhetorically monotone.",
+      "rewrite_direction": "Revise the threat sequence at `snapshots/cycle_01/FINAL_NOVEL.md:5955` to `snapshots/cycle_01/FINAL_NOVEL.md:6041`. KEEP one paperwork-reference anchor, then REPLACE repeated office diction with specific legal and social tactics (custody mechanism details, timeline pressure, movement restriction) plus one nonverbal coercive beat.",
+      "acceptance_test": "Pass if the target span escalates through varied threat modalities and does not rely on repeated paperwork nouns for every beat. Fail if the scene remains lexically repetitive around forms/records/papers as the primary engine."
+    },
+    {
+      "finding_id": "FBR-013",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_18",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:7001",
+      "problem": "Final-chapter compression: debt collector, hostel compliance, parish mediation, Tom reconciliation terms, and Peter ultimatum all arrive in rapid succession, reducing the chapter's emotional focus and diluting the ending's dramatic hierarchy.",
+      "rewrite_direction": "Rebalance chapter 18 by tightening one procedural confrontation into aftermath summary and deepening one chosen climax scene. Target `snapshots/cycle_01/FINAL_NOVEL.md:6745`, `snapshots/cycle_01/FINAL_NOVEL.md:6875`, and `snapshots/cycle_01/FINAL_NOVEL.md:7001` for consolidation/re-prioritization, then strengthen `snapshots/cycle_01/FINAL_NOVEL.md:7087` with one concrete near-future cost (money, curfew, nursery access) tied to the final image.",
+      "acceptance_test": "Pass if chapter 18 presents a clear dominant confrontation arc, with at least one currently on-page bureaucratic exchange converted to concise consequence summary, and the closing section grounds thaw imagery in a specific concrete obligation. Fail if the chapter still reads as a rapid checklist of unresolved administrative scenes."
+    }
+  ]
+}

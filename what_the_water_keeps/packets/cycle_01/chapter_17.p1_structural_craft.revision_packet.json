@@ -1,0 +1,69 @@
+{
+  "acceptance_targets": [
+    "[chapter_17_f01] PASS only if a reader moving through snapshots/cycle_01/chapters/chapter_17.md:35 and snapshots/cycle_01/chapters/chapter_17.md:307 encounters no self-referential 'chapter' language or equivalent story-process phrasing, while both beats still clearly convey Della's pull toward the Gabriel dispute and the meal's unresolved aftermath."
+  ],
+  "chapter_id": "chapter_17",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS only if a reader moving through snapshots/cycle_01/chapters/chapter_17.md:35 and snapshots/cycle_01/chapters/chapter_17.md:307 encounters no self-referential 'chapter' language or equivalent story-process phrasing, while both beats still clearly convey Della's pull toward the Gabriel dispute and the meal's unresolved aftermath.",
+      "chapter_id": "chapter_17",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_17.md:35; snapshots/cycle_01/chapters/chapter_17.md:307",
+      "finding_id": "chapter_17_f01",
+      "problem": "The narration twice calls attention to 'the chapter' itself, which is direct process leakage. In a close-third historical novel this breaks diegesis, violates the constitution's no-process-leakage rule, and makes the scene feel managed from outside instead of lived from inside Della.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_17.md:35, replace the self-aware line with Della-centered motive rooted in the visible pressure around Gabriel's blank stone. At snapshots/cycle_01/chapters/chapter_17.md:307, keep the refusal of tidy healing but express it through in-world consequence at the table rather than narratorial mention of what the chapter has or has not granted.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "81d35ebaf2f9592b90b7ddad6ca3fd911483de0c3387020229da597e7dbf9eeb",
+  "must_fix_count": 1,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into morally compromised caretaking, the bureaucratic brutality of naming, and the physical labor of moving the dead. When an edge case appears, prefer the detail a witness would remember over the phrasing a polite narrator would use. Let tenderness exist inside harsh material without cleaning the harshness off.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If childbirth, exhumation, poverty, sexual history, bodily decay, or violence enters a scene, render it through specific sensation and consequence; summarizing away the hard fact counts as a failed pass, not tasteful restraint.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High overall; contractions are the norm across dialogue, with fuller forms reserved for class performance, legal formality, deliberate emphasis, or a character trying not to lose composure.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate public labor chapters with quieter domestic or inventory chapters, vary scene count and dialogue density, let some chapters turn on information or paperwork rather than confrontation, and ensure no two consecutive chapters share the same dominant mechanism, pace, or emotional temperature.",
+      "diction": "Plainspoken historical Appalachian-Southern English without caricature; concrete, unsentimental, regionally grounded, and alert to how legal language clashes with lived speech.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third centered on Della Bledsoe, intimate enough to track bodily memory and evasive thought while never slipping into other characters' interior monologue as fact",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Alternate muscular work-sentence compression with longer accumulating sentences that carry memory, atmosphere, and moral weight; let cadence tighten in hearings and exhumations, then widen in domestic or reflective passages.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_07",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "PASS",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_07_dialogue_001",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:235; snapshots/cycle_01/chapters/chapter_07.md:239; snapshots/cycle_01/chapters/chapter_07.md:251; snapshots/cycle_01/chapters/chapter_07.md:359; snapshots/cycle_01/chapters/chapter_07.md:451; snapshots/cycle_01/chapters/chapter_07.md:463",
+      "problem": "Leela and June keep reaching for the same rebuttal syntax (\"That's not ...\") when the pressure rises. Because the chapter uses that correction frame six times across separate exchanges, the voices momentarily collapse toward a shared argumentative rhythm instead of staying as distinct as the style bible wants: Leela precise and overexplaining, June blunter and more bodily.",
+      "rewrite_direction": "Revise the rebuttal-heavy exchanges at snapshots/cycle_01/chapters/chapter_07.md:235, snapshots/cycle_01/chapters/chapter_07.md:239, snapshots/cycle_01/chapters/chapter_07.md:251, snapshots/cycle_01/chapters/chapter_07.md:359, snapshots/cycle_01/chapters/chapter_07.md:451, and snapshots/cycle_01/chapters/chapter_07.md:463 so the objections arrive through character-specific syntax rather than the same \"That's not ...\" frame. Keep Leela's intake-room replies more exacting and overqualified, and let June's lab-floor responses at snapshots/cycle_01/chapters/chapter_07.md:451 and snapshots/cycle_01/chapters/chapter_07.md:463 sound shorter, rougher, and less seminar-shaped.",
+      "acceptance_test": "Pass if, in the revised spans at snapshots/cycle_01/chapters/chapter_07.md:235, snapshots/cycle_01/chapters/chapter_07.md:239, snapshots/cycle_01/chapters/chapter_07.md:251, snapshots/cycle_01/chapters/chapter_07.md:359, snapshots/cycle_01/chapters/chapter_07.md:451, and snapshots/cycle_01/chapters/chapter_07.md:463, no more than two lines still use the \"That's not ...\" rebuttal template and a read-aloud makes Leela's corrections and June's corrections sound recognizably different in syntax and rhythm. Fail if three or more of those lines still hinge on the same formula or if June can still be swapped with Leela without much change."
+    },
+    {
+      "finding_id": "chapter_07_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:363; snapshots/cycle_01/chapters/chapter_07.md:431; snapshots/cycle_01/chapters/chapter_07.md:505",
+      "problem": "The narrator explains the same bureaucratic euphemism three times: the notice is \"not disciplinary, not a finding, an administrative safeguard,\" then the same idea is paraphrased again on the walk back and again at the desk. The first statement lands; the next two turn a sharp thematic beat into repeated explanation, which blunts the ending's force and violates the chapter-level repetition rule.",
+      "rewrite_direction": "Keep the first explicit naming of the euphemistic label at snapshots/cycle_01/chapters/chapter_07.md:363, then revise snapshots/cycle_01/chapters/chapter_07.md:431 and snapshots/cycle_01/chapters/chapter_07.md:505 so those aftermath beats add new concrete pressure instead of restating the same critique. Use one of those later slots for a fresh practical consequence of the copied notice or the locked-out machine, not another narrator gloss on administrative diction.",
+      "acceptance_test": "Pass if the revised passages at snapshots/cycle_01/chapters/chapter_07.md:363, snapshots/cycle_01/chapters/chapter_07.md:431, and snapshots/cycle_01/chapters/chapter_07.md:505 contain only one direct paraphrase of the university's softening language and the later two beats each introduce a distinct new consequence or image. Fail if the chapter still spells out the same euphemism critique three separate times in those locations."
+    }
+  ],
+  "summary": "The chapter hits the required spine: the intake is banal and frightening, the institutional vocabulary cannot hold the coercive advisor relationship, the state change is concrete, continuity stays intact, and the narrative tense remains the style-bible past tense. Omar, June, Mohit, and Leela are broadly in register, but the chapter still fails dialogue and prose on repetition: a cross-character \"That's not ...\" rebuttal tic flattens voice separation, and the narrator restates the same administrative-euphemism critique three times instead of letting later beats escalate consequence."
+}

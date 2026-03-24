@@ -1,0 +1,99 @@
+{
+  "acceptance_targets": [
+    "[EM_DASH_CH09] Pass if revised chapter contains no more than 9 lines with em-dashes. Fail if density remains above 8%."
+  ],
+  "chapter_id": "chapter_09",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if revised chapter contains no more than 9 lines with em-dashes. Fail if density remains above 8%.",
+      "chapter_id": "chapter_09",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:1831; snapshots/cycle_02/FINAL_NOVEL.md:1873",
+      "finding_id": "EM_DASH_CH09",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:1831",
+            "excerpt": "1831: \"I had a student once,\" Priya said. The table went slightly quieter, the way it did when Priya talked about teaching, which she almost never did. \"A junior. David Herrera. He was in my AP Art class, which I taught for \u2014 God, six years? Seven? And David was not a natural. He worked hard, he drew technically, but his stuff always looked like homework. Like an assignment someone had completed well. You know what I mean?\"",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:1873",
+            "excerpt": "1873: Priya stopped with her keys halfway out of her purse. \"This is what I spent all week doing. Building retraining decks out of trusted calls because it's the only way to keep the new hires from free-associating, and then one pretty face gets a generous score and suddenly I'm in the conference room explaining to twelve people why shoulders do not come out of ribs.\"",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          }
+        ],
+        "rewrite_direction": [
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:1727-1957",
+            "excerpt": "1727: # Chapter 9\n1728: \n1729: Tommy was doing the CEO.\n1730: \n1731: He had the posture \u2014 both hands gripping the edge of the table like he was steadying a lectern, chin lifted, the studied casualness of a man who had practiced looking unrehearsed. \"I want to be real with you all,\" Tommy said, his voice pitched half an octave below his own. \"The human layer isn't a cost center. The human layer is our competitive moat.\"\n1732: \n[...]\n1952: \n1953: She got in. The engine started. She backed out and pulled toward the lot's exit. He watched the taillights turn left toward the freeway on-ramp and disappear.\n1954: \n1955: He walked to his Civic. The car was an oven, baked all day in the July sun, and he rolled the windows down before sitting behind the wheel. Rosie's red neon smeared across the windshield. His key turned. As he backed out of the lot, the night came back in pieces: Bao tucking the five under his glass with two fingers, Priya saying one bad call didn't stay one bad call in a place like this, Tommy's voice going high when he finally won, Dani's green-marker horse taped crooked in the rear window. He drove home with the windows down, and for the length of the drive, that was en...",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "problem": "Chapter 9 contains 37 em-dashes across 114 content lines (32.5%). The bar scene's descriptions, Priya's teaching story, and the parking-lot walk use em-dashes for appositional detail.",
+      "rewrite_direction": "Revise snapshots/cycle_02/FINAL_NOVEL.md:1727-1957. Reduce em-dashes from 37 to no more than 9. Bar descriptions and character observations can use commas. Keep em-dashes for the parking-lot tension between Nick and Dani.",
+      "severity": "HIGH",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "has_locator_excerpts": true,
+  "input_snapshot_hash": "aef706568e09fd91119dc0b0b9a31bf06549b649b04d8aee2cddcc37866d4fe4",
+  "must_fix_count": 1,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "original_snapshot_file": "snapshots/cycle_02/chapters/chapter_09.md",
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This is a dark workplace comedy about AI, art, labor, and moral compromise. The novel's risks are not gratuitous \u2014 they emerge from the premise's pressures. Lean into: the specific humiliation of having your creative work rated by strangers on a five-point scale; the moral vertigo of befriending people you plan to betray; the comedy of a painter who is terrible at coding but too angry to quit; the economic desperation that makes gig work feel like a lifeline even when it is degrading; the creeping horror of watching your own vocabulary get overwritten by corporate evaluation language. Do not retreat from any of these. The biggest creative risk in this novel is not a single shocking scene but the sustained commitment to showing how a system designed to evaluate art eventually evaluates the evaluator \u2014 and finding that funny and devastating in the same breath.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism for difficult content \u2014 economic shame, professional humiliation, moral compromise, grief, attraction, anger \u2014 is a craft failure equal to bad prose. When Nick's poverty is the subject, the prose must name amounts, count coins, and show the specific texture of not having enough. When Nick's sabotage causes harm, the prose must not retreat into abstraction. When characters are attracted to each other, the prose must inhabit the attraction physically and specifically. The novel's comedy does not exempt it from emotional specificity; if anything, the comic register demands more precision because the reader needs to feel the real thing beneath the joke.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for all contemporary dialogue in this novel. Uncontracted forms should feel deliberate: emphasis, precision, formality, or a character slowing down to make sure they are heard. If a line reads stiffly and the character has no reason to be formal, contract it.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate high-intensity chapters with reflective or quiet ones. Vary scene count, dialogue density, and pacing across the book. Comic chapters should have quicker pacing and more dialogue; quiet chapters should breathe with interiority and observation. No two consecutive chapters should have the same structural rhythm: if Chapter 7 is a multi-scene public chapter with confrontations and revelations, Chapter 8 should be a focused, inward chapter with fewer scenes and more technical observation. The middle third should resist the temptation to escalate continuously \u2014 build in genuine rest, meals, transit, and moments of ordinary life between plot advances.",
+      "diction": "Contemporary American English. The base register is educated but not academic \u2014 a working painter's vocabulary, which includes both colloquial speech and precise visual-art terminology used without pretension. Tech-industry vocabulary enters through the workplace and should feel like a foreign language Nick gradually absorbs. The novel's linguistic arc: art vocabulary eroded by evaluation vocabulary eroded by corporate vocabulary, each layer burying the one before.",
+      "forbidden_drift_patterns": [
+        "Prestige-literary inflation: do not upgrade the register when the scene is ordinary. A man eating cereal should not sound like a man contemplating mortality unless the text earns the escalation.",
+        "Irony saturation: the novel's comic register must coexist with genuine emotional presence. Do not let narrative irony become the default lens through which every moment is filtered.",
+        "Competence porn: Nick is good at visual evaluation, but the prose should not admire his skill. Show what he sees, not how impressive it is that he sees it.",
+        "Rubric-language comedy overuse: the colonization of Nick's vocabulary by evaluation terms is a real psychological event, not a running gag. Use it with increasing naturalness, not escalating self-awareness.",
+        "Clipped narration: do not drop subjects, articles, or auxiliaries for rhythm. Short complete sentences are fine; telegraphic fragments are not.",
+        "Sentimentalizing the coworkers: Bao, Dani, Tommy, and Priya carry genuine weight, but the prose must not soften them into objects of pity. They are people with their own lives, not casualties arranged to make Nick feel bad.",
+        "Over-explaining the comedy: if something is funny, the prose should trust the reader to laugh without narratorial wink, pause, or commentary."
+      ],
+      "narrative_distance": "Close third person, locked to Nick Bray. The reader sees only what Nick sees, hears only what Nick hears. Nick's painter's eye shapes the narration: he notices light, color, spatial composition, anatomical detail, and surface texture before he notices emotion. His visual intelligence is the prose's dominant sensory engine. As the novel progresses, evaluation-rubric language infiltrates the narration \u2014 not as comic device but as genuine perceptual colonization. The rubric vocabulary should feel naturalized by mid-novel, not quoted.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Variable across chapters and within chapters. Comic passages: quicker, punchier, shorter sentences with abrupt turns. Emotional passages: longer sentences, more subordinate clauses, slowed observation. Work passages: flat, repetitive, industrial rhythm that mirrors the labor. Do not default to one rhythm. The prose should shift gear to match what the chapter is doing.",
+      "sensory_bias": [
+        "visual (dominant \u2014 Nick's painter's eye shapes all perception)",
+        "tactile (secondary \u2014 paint, keyboard, physical objects, temperature, texture of surfaces)",
+        "auditory (tertiary \u2014 the hum of monitors, Slack notifications, BART sounds, Oakland street noise)"
+      ]
+    }
+  }
+}

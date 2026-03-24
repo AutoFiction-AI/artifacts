@@ -1,0 +1,82 @@
+{
+  "acceptance_targets": [
+    "[chapter_14_f001] PASS if the revised 227-263 block contains one Peter action that materially complicates transfer/scene control and one counteraction that pays a visible cost (time, risk, exposure) before he yields; FAIL if the exchange remains a sequence of verbal put-downs with no temporary leverage change.",
+    "[chapter_14_f002] PASS if no two consecutive turns in lines 219-239 are pure procedural data and each factual update is followed by an observable physical or relational consequence in-scene; FAIL if report cadence remains uninterrupted for multiple turns."
+  ],
+  "chapter_id": "chapter_14",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if the revised 227-263 block contains one Peter action that materially complicates transfer/scene control and one counteraction that pays a visible cost (time, risk, exposure) before he yields; FAIL if the exchange remains a sequence of verbal put-downs with no temporary leverage change.",
+      "chapter_id": "chapter_14",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:233; snapshots/cycle_02/chapters/chapter_14.md:237; snapshots/cycle_02/chapters/chapter_14.md:245; snapshots/cycle_02/chapters/chapter_14.md:249; snapshots/cycle_02/chapters/chapter_14.md:263; snapshots/cycle_02/chapters/chapter_14.md:297",
+      "finding_id": "chapter_14_f001",
+      "problem": "The Peter-arrival confrontation resolves as a rhetorical pile-on rather than a contested power struggle: he is neutralized almost immediately, so the scene loses uncertainty and Booker-level moral pressure at the exact point it should peak.",
+      "rewrite_direction": "Rebuild the leverage turn across snapshots/cycle_02/chapters/chapter_14.md:227 through snapshots/cycle_02/chapters/chapter_14.md:263 and snapshots/cycle_02/chapters/chapter_14.md:289 through snapshots/cycle_02/chapters/chapter_14.md:298 so Peter makes one concrete move that alters immediate stakes (delay, access, or social threat) before being countered. Keep his formal register, but force a real cost for others before control shifts away from him.",
+      "severity": "MEDIUM",
+      "source": "booker",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if no two consecutive turns in lines 219-239 are pure procedural data and each factual update is followed by an observable physical or relational consequence in-scene; FAIL if report cadence remains uninterrupted for multiple turns.",
+      "chapter_id": "chapter_14",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:219; snapshots/cycle_02/chapters/chapter_14.md:235; snapshots/cycle_02/chapters/chapter_14.md:257",
+      "finding_id": "chapter_14_f002",
+      "problem": "Procedural report language takes over key beats, crowding embodied consequence. The chapter briefly reads like incident documentation instead of lived emergency aftermath.",
+      "rewrite_direction": "In snapshots/cycle_02/chapters/chapter_14.md:219 through snapshots/cycle_02/chapters/chapter_14.md:239 and snapshots/cycle_02/chapters/chapter_14.md:257, trim list-like medical/legal recitation and interleave immediate bodily and social effects (how Noreen, Elsie, and the room respond in real time) between each data point.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "aee5cf35d3445027a1e15931297209904ad283083e6339dbac2ea668a52fe938",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "When edge cases arise, choose the more specific and potentially uncomfortable rendering if it is character-true and causally necessary. Intimacy, bodily risk, and moral compromise must be shown with concrete detail and aftermath, then integrated into later behavior rather than quarantined as a one-scene shock.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a draft abstracts pain, sex, coercion, blood, or economic shame at the exact moment consequence should be embodied, revise by replacing summary with physically and socially specific action tied to POV stakes.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High by default for spoken lines; uncontracted forms are marked choices for period formality, emphasis, or character-specific control behavior.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate structural engines across adjacent chapters: ensemble social scenes, inventory chapters, information-turn chapters, acted-upon pressure chapters, and aftermath chapters. Vary scene count (2 to 4), dialogue density, and interiority depth so consecutive chapters do not share the same pacing signature.",
+      "diction": "Period-authentic but readable contemporary English, favoring concrete nouns and precise verbs over lyrical abstraction.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person, alternating primarily between Elsie and Noreen, with occasional tightly limited deviations only when causal clarity requires it.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Sentence rhythm should alternate compressed pressure bursts with longer observational lines that carry social texture; avoid monotone paragraph cadence.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

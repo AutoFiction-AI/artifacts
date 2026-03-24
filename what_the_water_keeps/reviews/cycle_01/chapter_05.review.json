@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_05",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch05-booker-001",
+      "source": "booker",
+      "severity": "HIGH",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:375, snapshots/cycle_01/chapters/chapter_05.md:379, snapshots/cycle_01/chapters/chapter_05.md:387, snapshots/cycle_01/chapters/chapter_05.md:429",
+      "problem": "The chapter hands its decisive reveal to Silas instead of forcing it through Della's choice. Once Silas names Gabriel outright, the central family conflict stops being 'what will Della do with the truth?' and becomes aftermath management. That weakens Della's agency at the exact hinge where the chapter should make her moral pressure most active.",
+      "rewrite_direction": "Rework the cemetery turn beginning at snapshots/cycle_01/chapters/chapter_05.md:339 and continuing through snapshots/cycle_01/chapters/chapter_05.md:431 so that Silas escalates pressure without being the first character to solve the scene for everyone else. Either keep the identity unspoken in this chapter while still worsening Rafe's desperation, or make Della herself choose whether to name Gabriel in the confrontation. Preserve June hearing enough to know the name matters, but do not let a side character discharge the chapter's core reveal for Della.",
+      "acceptance_test": "Pass if the revised cemetery sequence from snapshots/cycle_01/chapters/chapter_05.md:339 through snapshots/cycle_01/chapters/chapter_05.md:431 leaves the decisive new information about the fever-plot body either unspoken or spoken by Della herself; fail if Silas remains the first character to identify Gabriel aloud and thereby resolves the chapter's main mystery by intervention."
+    },
+    {
+      "finding_id": "ch05-craft-001",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:123, snapshots/cycle_01/chapters/chapter_05.md:175, snapshots/cycle_01/chapters/chapter_05.md:391, snapshots/cycle_01/chapters/chapter_05.md:407",
+      "problem": "The narration occasionally states June's and Rafe's internal conclusions as fact rather than as Della's reading of them. That slips past the style bible's close-third rule and briefly turns the chapter omniscient at moments of pressure.",
+      "rewrite_direction": "Revise the POV-slippage beats at snapshots/cycle_01/chapters/chapter_05.md:123, snapshots/cycle_01/chapters/chapter_05.md:175, snapshots/cycle_01/chapters/chapter_05.md:391, and snapshots/cycle_01/chapters/chapter_05.md:407 so they stay inside Della's perceptual authority. Replace asserted cognition with observable behavior, or explicitly mark the interpretation as Della's guess, misreading, or bodily inference.",
+      "acceptance_test": "Pass if each revised passage at snapshots/cycle_01/chapters/chapter_05.md:123, snapshots/cycle_01/chapters/chapter_05.md:175, snapshots/cycle_01/chapters/chapter_05.md:391, and snapshots/cycle_01/chapters/chapter_05.md:407 can be read as something Della directly observes or consciously infers; fail if the prose still states June's or Rafe's private mental content as narrator-certified fact."
+    },
+    {
+      "finding_id": "ch05-prose-001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:229, snapshots/cycle_01/chapters/chapter_05.md:291, snapshots/cycle_01/chapters/chapter_05.md:309, snapshots/cycle_01/chapters/chapter_05.md:453, snapshots/cycle_01/chapters/chapter_05.md:487",
+      "problem": "The chapter leans too often on the same negation-correction sentence shape: 'Not X. Y.' or 'Not X exactly.' Repetition at these stress points turns a once-effective emphatic beat into a visible prose tic.",
+      "rewrite_direction": "Recast the emphatic fragments at snapshots/cycle_01/chapters/chapter_05.md:229, snapshots/cycle_01/chapters/chapter_05.md:291, snapshots/cycle_01/chapters/chapter_05.md:309, snapshots/cycle_01/chapters/chapter_05.md:453, and snapshots/cycle_01/chapters/chapter_05.md:487 with different sentence architecture. Keep at most one or two negation-correction beats in the chapter where they hit hardest, and let the remaining emphasis come from image, syntax length, or concrete action instead of the same rhetorical turn.",
+      "acceptance_test": "Pass if, after revision of snapshots/cycle_01/chapters/chapter_05.md:229, snapshots/cycle_01/chapters/chapter_05.md:291, snapshots/cycle_01/chapters/chapter_05.md:309, snapshots/cycle_01/chapters/chapter_05.md:453, and snapshots/cycle_01/chapters/chapter_05.md:487, no more than two instances of the chapter's current 'Not X.' corrective fragment remain and the revised lines still deliver distinct emphasis by reading, not by repeated formula. Fail if three or more of those beats still use the same negation-correction template."
+    }
+  ],
+  "summary": "FAIL overall. The supper material, embodied poverty, and voice separation are strong enough to pass dialogue, and I found no continuity contradiction, tense drift, or sanitization fade-out. But the chapter spends its biggest reveal through Silas instead of Della, slips outside Della's close-third at several pressure points, and repeats a negation-correction sentence formula often enough to read as autopilot rather than choice."
+}

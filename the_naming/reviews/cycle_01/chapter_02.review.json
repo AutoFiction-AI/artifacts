@@ -1,0 +1,62 @@
+{
+  "chapter_id": "chapter_02",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_02_f01",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_01/chapters/chapter_02.md:7; snapshots/cycle_01/chapters/chapter_02.md:87; snapshots/cycle_01/chapters/chapter_02.md:97; snapshots/cycle_01/chapters/chapter_02.md:115; snapshots/cycle_01/chapters/chapter_02.md:139; snapshots/cycle_01/chapters/chapter_02.md:171; snapshots/cycle_01/chapters/chapter_02.md:197; snapshots/cycle_01/chapters/chapter_02.md:221; snapshots/cycle_01/chapters/chapter_02.md:237",
+      "problem": "The chapter says the shrine is holding forty-three family members, but the declarations in the scene only account for thirty-nine people: Kondo 12, Mera 6, Okoye 5, Jin/Melie 2, Tesh 5, Dao 5, Leo 4. That breaks the chapter's own crowd logic and contradicts the continuity pack's canonical total of forty-three family members.",
+      "rewrite_direction": "Audit the roster math at snapshots/cycle_01/chapters/chapter_02.md:7, snapshots/cycle_01/chapters/chapter_02.md:87, snapshots/cycle_01/chapters/chapter_02.md:97, snapshots/cycle_01/chapters/chapter_02.md:115, snapshots/cycle_01/chapters/chapter_02.md:139, snapshots/cycle_01/chapters/chapter_02.md:171, snapshots/cycle_01/chapters/chapter_02.md:197, snapshots/cycle_01/chapters/chapter_02.md:221, and snapshots/cycle_01/chapters/chapter_02.md:237. Either restore the four missing people inside the family declarations/action beats or change every aggregate reference so the total matches the actual roster; the revised chapter must agree with the continuity-sheet canon of forty-three family members.",
+      "acceptance_test": "Pass if a reader can add the revised family totals stated in the naming scene and get the same number named at snapshots/cycle_01/chapters/chapter_02.md:7 and snapshots/cycle_01/chapters/chapter_02.md:237. Fail if the declarations still sum to thirty-nine or any other number that does not match the stated crowd total."
+    },
+    {
+      "finding_id": "chapter_02_f02",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_01/chapters/chapter_02.md:87; snapshots/cycle_01/chapters/chapter_02.md:183; snapshots/cycle_01/chapters/chapter_02.md:185; snapshots/cycle_01/chapters/chapter_02.md:257",
+      "problem": "The chapter leaks calibration-only material from outline/style_bible.json into the manuscript. Venn's wedding declaration closely tracks his example line, Gitta's \"He is my grandson\" is reproduced verbatim from her calibration line, and Fasa's closing \"asked and waited and asked again\" echoes her example cadence. The style bible explicitly forbids example-line reuse.",
+      "rewrite_direction": "Rewrite the voiced beats at snapshots/cycle_01/chapters/chapter_02.md:87, snapshots/cycle_01/chapters/chapter_02.md:183, snapshots/cycle_01/chapters/chapter_02.md:185, and snapshots/cycle_01/chapters/chapter_02.md:257 from first principles rather than from outline/style_bible.json. Keep the plot facts, but give Venn, Gitta, and Fasa fresh wording and different rhythmic scaffolding so the chapter reads like original scene work instead of copied calibration.",
+      "acceptance_test": "Pass if a reader can no longer match those revised lines to the style-bible example lines except at the level of shared plot fact. Fail if the revised chapter still preserves the example wording or the same distinctive clause sequence for Venn's wedding declaration, Gitta's grandson claim, or Fasa's closing formulation."
+    },
+    {
+      "finding_id": "chapter_02_f03",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_01/chapters/chapter_02.md:43; snapshots/cycle_01/chapters/chapter_02.md:45; snapshots/cycle_01/chapters/chapter_02.md:75; snapshots/cycle_01/chapters/chapter_02.md:79; snapshots/cycle_01/chapters/chapter_02.md:255",
+      "problem": "The chapter keeps installing safety valves around the naming's coercion. It notes that food access is controlled, then insists the ritual is not coercive, not an interrogation, and in the closing reduces the event to mild discomfort. That defuses the chapter's own engine of public exposure in exchange for shelter and reads as sanitization rather than earned restraint.",
+      "rewrite_direction": "Rework the framing at snapshots/cycle_01/chapters/chapter_02.md:43, snapshots/cycle_01/chapters/chapter_02.md:45, snapshots/cycle_01/chapters/chapter_02.md:75, snapshots/cycle_01/chapters/chapter_02.md:79, and snapshots/cycle_01/chapters/chapter_02.md:255 so the scene shows the coercive pressure through concrete participant cost. Keep Fasa's belief if needed, but counterweight it with observable strain in beats around snapshots/cycle_01/chapters/chapter_02.md:97, snapshots/cycle_01/chapters/chapter_02.md:147, snapshots/cycle_01/chapters/chapter_02.md:205, and snapshots/cycle_01/chapters/chapter_02.md:217 instead of reassuring the reader that the ritual is basically benign.",
+      "acceptance_test": "Pass if the revised naming gives at least three named families a concrete bodily or social cost for public declaration and the closing reflection no longer characterizes the ceremony as only mild discomfort. Fail if institutional reassurance still carries more weight on the page than the participants' humiliation, fear, or calculation."
+    },
+    {
+      "finding_id": "chapter_02_f04",
+      "source": "award",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_01/chapters/chapter_02.md:11; snapshots/cycle_01/chapters/chapter_02.md:17; snapshots/cycle_01/chapters/chapter_02.md:21; snapshots/cycle_01/chapters/chapter_02.md:23; snapshots/cycle_01/chapters/chapter_02.md:53; snapshots/cycle_01/chapters/chapter_02.md:61; snapshots/cycle_01/chapters/chapter_02.md:87; snapshots/cycle_01/chapters/chapter_02.md:169; snapshots/cycle_01/chapters/chapter_02.md:217; snapshots/cycle_01/chapters/chapter_02.md:239; snapshots/cycle_01/chapters/chapter_02.md:247",
+      "problem": "The chapter spends its first movement decoding each family, then reintroduces many of the same tells during the seating choreography, then summarizes the same reads again after the naming. Because Fasa has already explained so much up front, several declarations confirm earlier summary instead of creating new exposure or surprise. The chapter lands its state shift, but not with shortlist-level compression or escalation.",
+      "rewrite_direction": "Compress or repurpose the dossier-style setup at snapshots/cycle_01/chapters/chapter_02.md:11, snapshots/cycle_01/chapters/chapter_02.md:17, snapshots/cycle_01/chapters/chapter_02.md:21, and snapshots/cycle_01/chapters/chapter_02.md:23 so the ceremony beats at snapshots/cycle_01/chapters/chapter_02.md:53, snapshots/cycle_01/chapters/chapter_02.md:61, snapshots/cycle_01/chapters/chapter_02.md:87, snapshots/cycle_01/chapters/chapter_02.md:169, snapshots/cycle_01/chapters/chapter_02.md:217, snapshots/cycle_01/chapters/chapter_02.md:239, and snapshots/cycle_01/chapters/chapter_02.md:247 deliver first-impact information or a changed social consequence instead of replaying the same observation.",
+      "acceptance_test": "Pass if at least four family declarations in the revised chapter reveal a new pressure, contradiction, or social consequence that was not already fully narrated in the opening catalogue. Fail if the reader still receives the same family read in setup, ceremony, and recap before the scene materially turns."
+    },
+    {
+      "finding_id": "chapter_02_f05",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_01/chapters/chapter_02.md:11; snapshots/cycle_01/chapters/chapter_02.md:17; snapshots/cycle_01/chapters/chapter_02.md:23; snapshots/cycle_01/chapters/chapter_02.md:55; snapshots/cycle_01/chapters/chapter_02.md:57; snapshots/cycle_01/chapters/chapter_02.md:59; snapshots/cycle_01/chapters/chapter_02.md:65; snapshots/cycle_01/chapters/chapter_02.md:77; snapshots/cycle_01/chapters/chapter_02.md:85; snapshots/cycle_01/chapters/chapter_02.md:167; snapshots/cycle_01/chapters/chapter_02.md:179; snapshots/cycle_01/chapters/chapter_02.md:219; snapshots/cycle_01/chapters/chapter_02.md:225; snapshots/cycle_01/chapters/chapter_02.md:245",
+      "problem": "A single interpretive prose mold recurs all through the chapter: \"the diction of a man who...,\" \"the posture of someone who...,\" \"the economy of a woman who...,\" \"the discomfort of people who....\" Once or twice this is a choice; at this density it becomes a tic. The repetition makes Fasa's noticing feel mechanically generated instead of singularly observant.",
+      "rewrite_direction": "Vary the descriptive sentence architecture at snapshots/cycle_01/chapters/chapter_02.md:11, snapshots/cycle_01/chapters/chapter_02.md:17, snapshots/cycle_01/chapters/chapter_02.md:23, snapshots/cycle_01/chapters/chapter_02.md:55, snapshots/cycle_01/chapters/chapter_02.md:57, snapshots/cycle_01/chapters/chapter_02.md:59, snapshots/cycle_01/chapters/chapter_02.md:65, snapshots/cycle_01/chapters/chapter_02.md:77, snapshots/cycle_01/chapters/chapter_02.md:85, snapshots/cycle_01/chapters/chapter_02.md:167, snapshots/cycle_01/chapters/chapter_02.md:179, snapshots/cycle_01/chapters/chapter_02.md:219, snapshots/cycle_01/chapters/chapter_02.md:225, and snapshots/cycle_01/chapters/chapter_02.md:245. Replace generic explanatory wrappers with concrete behavior, sharper physical detail, or syntax that lets inference emerge without leaning on the same \"someone who\" template.",
+      "acceptance_test": "Pass if the revised chapter uses that explanatory template no more than twice total and at least five of the cited beats are re-rendered through concrete action or sensory detail instead of a \"the X of someone who\" construction. Fail if the template still appears often enough to read as a chapter-level tic."
+    }
+  ],
+  "summary": "FAIL across all four lenses. Fasa's POV and the ritual architecture are coherent, but the chapter still has a hard headcount contradiction, leaked style-bible calibration lines, safety-valve sanitization around the naming's coercion, duplicated family cataloguing that weakens escalation, and a repeated descriptive formula that flattens the prose."
+}

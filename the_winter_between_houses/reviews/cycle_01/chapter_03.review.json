@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_03",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch03_f001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:257; snapshots/cycle_01/chapters/chapter_03.md:261; snapshots/cycle_01/chapters/chapter_03.md:269; snapshots/cycle_01/chapters/chapter_03.md:271; snapshots/cycle_01/chapters/chapter_03.md:299",
+      "problem": "Sanitization/timidity at the chapter's hottest conflict beat: the Tom-Peter escalation reaches bodily threshold, then a conveniently timed knock defuses it and the consequence is summarized rather than rendered on-page.",
+      "rewrite_direction": "Revise the escalation window at snapshots/cycle_01/chapters/chapter_03.md:261-272 and the aftermath at snapshots/cycle_01/chapters/chapter_03.md:297-300 so at least one concrete consequence lands in-scene (physical contact, damaged object, explicit threat heard by guests, or forced intervention). Carry that consequence into snapshots/cycle_01/chapters/chapter_03.md:307-367 so the later domestic confrontation is causally continuous, not a reset.",
+      "acceptance_test": "PASS if revised lines 261-300 contain an on-page, specific consequence from the Tom-Peter confrontation that another character visibly reacts to, and lines 307-367 explicitly reference that same consequence. FAIL if the conflict is still neutralized by arrival timing plus metaphorical summary only."
+    },
+    {
+      "finding_id": "ch03_f002",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:273; snapshots/cycle_01/chapters/chapter_03.md:279; snapshots/cycle_01/chapters/chapter_03.md:285; snapshots/cycle_01/chapters/chapter_03.md:297; snapshots/cycle_01/chapters/chapter_03.md:301",
+      "problem": "Late-entry guest arrival functions as a pressure-release device, reducing causal cost after Peter's public humiliation beat. The chapter's social ranking conflict partially resolves through convenience instead of earned fallout.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_03.md:273-303, either (a) pre-seed Arthur's arrival pressure earlier in the chapter (e.g., explicit stake at snapshots/cycle_01/chapters/chapter_03.md:45-47) and make his entry worsen conflict, or (b) remove the relief function and let the table rupture drive immediate consequence before departures. Ensure the chosen consequence is still active in snapshots/cycle_01/chapters/chapter_03.md:307-387.",
+      "acceptance_test": "PASS if a reader can trace a direct cause-effect chain from Peter's humiliation at lines 151-179 to a visible social consequence before the scene break (public rupture, alliance shift, or reputational cost) without relying on a mood-only reset. FAIL if the arrival beat primarily restores conviviality and postpones cost."
+    },
+    {
+      "finding_id": "ch03_f003",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:3; snapshots/cycle_01/chapters/chapter_03.md:61; snapshots/cycle_01/chapters/chapter_03.md:89; snapshots/cycle_01/chapters/chapter_03.md:109; snapshots/cycle_01/chapters/chapter_03.md:129; snapshots/cycle_01/chapters/chapter_03.md:155; snapshots/cycle_01/chapters/chapter_03.md:181; snapshots/cycle_01/chapters/chapter_03.md:197; snapshots/cycle_01/chapters/chapter_03.md:273; snapshots/cycle_01/chapters/chapter_03.md:281; snapshots/cycle_01/chapters/chapter_03.md:311; snapshots/cycle_01/chapters/chapter_03.md:371",
+      "problem": "The narration leans repeatedly on the same 'as if' comparison construction, creating a noticeable formula (>2 uses) that flattens line-level surprise.",
+      "rewrite_direction": "In the densest clusters at snapshots/cycle_01/chapters/chapter_03.md:3-13, snapshots/cycle_01/chapters/chapter_03.md:89-109, snapshots/cycle_01/chapters/chapter_03.md:155-197, and snapshots/cycle_01/chapters/chapter_03.md:273-311, keep only the strongest comparisons and rewrite the rest as direct sensory observation, action, or interior judgment with varied sentence shapes.",
+      "acceptance_test": "PASS if the revised target spans contain no more than two narration uses of 'as if' total and each edited cluster includes at least one concrete non-simile sentence that carries equivalent meaning. FAIL if the same comparison scaffold remains the dominant descriptive move."
+    },
+    {
+      "finding_id": "ch03_f004",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:231; snapshots/cycle_01/chapters/chapter_03.md:235; snapshots/cycle_01/chapters/chapter_03.md:283; snapshots/cycle_01/chapters/chapter_03.md:293; snapshots/cycle_01/chapters/chapter_03.md:301",
+      "problem": "Post-clash dialogue compresses Tom, Len, and Arthur into similar quip-forward cadence, reducing idiolect separation right after a high-pressure sequence.",
+      "rewrite_direction": "Retune the exchange at snapshots/cycle_01/chapters/chapter_03.md:231-240 and snapshots/cycle_01/chapters/chapter_03.md:283-301: push Tom toward shame-deflecting matey talk, keep Len grounded in pigeon/racing plainness, and make Arthur more practical/observational with fewer punchlines. Preserve period register and high contraction default for non-Peter speakers.",
+      "acceptance_test": "PASS if, in the revised spans, each of Tom/Len/Arthur has at least one line identifiable by character-specific register without a dialogue tag, and the sequence includes a clear leverage shift rather than consecutive joke-response beats. FAIL if the three voices remain rhythmically interchangeable."
+    }
+  ],
+  "summary": "Chapter 03 lands core beats (shared warmth, public humiliation, Noreen's internal withdrawal), holds past-tense continuity, and shows strong local detail, but unresolved MEDIUM+/HIGH issues remain: a sanitized/timid defusal at peak conflict, structural pressure release via convenience, repetitive comparison scaffolding, and voice convergence in a key dialogue stretch."
+}

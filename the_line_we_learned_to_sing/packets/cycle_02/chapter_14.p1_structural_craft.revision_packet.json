@@ -1,0 +1,109 @@
+{
+  "acceptance_targets": [
+    "[ch14-F001] PASS if the revised passage at snapshots/cycle_02/chapters/chapter_14.md:279-281 contains no meta terms such as \"chapter\", \"title\", \"story\", or \"scene\", while still conveying Ina's constrained realization in embodied close-third thought; FAIL otherwise.",
+    "[ch14-F002] PASS if snapshots/cycle_02/chapters/chapter_14.md:197-214 includes at least one concrete identifying ledger detail and one immediate action/thought from Ina that names the consequence to a real person or household; FAIL if the passage remains procedural-only (logs, timestamps, seizure labels) without individualized fallout.",
+    "[ch14-F005] PASS if revised lines 233-263 include (1) explicit callback to the call at lines 103-119, (2) one concrete household consequence (work shift loss, landlord escalation, or visit risk), and (3) a changed immediate behavior by either Ina or Dohyun resulting from that exchange; FAIL if the scene moves to the hymnal without those three observable elements.",
+    "[FBR02-004] PASS if the revised spans contain at least three concrete, scene-anchored coercion details replacing abstraction-mantra language and the two speakers no longer mirror the same diction. FAIL if the dialogue still leans on repeated governance abstractions as primary content."
+  ],
+  "chapter_id": "chapter_14",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if the revised passage at snapshots/cycle_02/chapters/chapter_14.md:279-281 contains no meta terms such as \"chapter\", \"title\", \"story\", or \"scene\", while still conveying Ina's constrained realization in embodied close-third thought; FAIL otherwise.",
+      "chapter_id": "chapter_14",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:279",
+      "finding_id": "ch14-F001",
+      "problem": "The narration breaks diegesis with meta framing (\"felt the chapter title in her own head\"), which reads like process leakage instead of close-third interiority and violates the constitution rule against narrative process leakage.",
+      "rewrite_direction": "Rewrite snapshots/cycle_02/chapters/chapter_14.md:279-281 to keep Ina's cognition fully in-world (constraint, risk, route logic) and remove any reference to chapter/story apparatus; preserve the emotional function (no salvation, only narrow pathway) without metafictional wording.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if snapshots/cycle_02/chapters/chapter_14.md:197-214 includes at least one concrete identifying ledger detail and one immediate action/thought from Ina that names the consequence to a real person or household; FAIL if the passage remains procedural-only (logs, timestamps, seizure labels) without individualized fallout.",
+      "chapter_id": "chapter_14",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:197, snapshots/cycle_02/chapters/chapter_14.md:201, snapshots/cycle_02/chapters/chapter_14.md:213",
+      "finding_id": "ch14-F002",
+      "problem": "Sanitization drift at the chapter's key consequence beat: once the seized ledger is confirmed, the prose pivots into procedural timestamp summary instead of rendering specific human fallout in-scene. The narrative reports mechanism but withholds embodied moral cost at the moment it lands.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_14.md:197-214, add one concrete ledger-linked human consequence (specific recipient marker, amount, or risk trigger) and Ina's immediate bodily/cognitive response tied to that person before the release-time montage continues; keep the coercive machinery visible but do not abstract the harm into generic language.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if revised lines 233-263 include (1) explicit callback to the call at lines 103-119, (2) one concrete household consequence (work shift loss, landlord escalation, or visit risk), and (3) a changed immediate behavior by either Ina or Dohyun resulting from that exchange; FAIL if the scene moves to the hymnal without those three observable elements.",
+      "chapter_id": "chapter_14",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:223, snapshots/cycle_02/chapters/chapter_14.md:233, snapshots/cycle_02/chapters/chapter_14.md:243, snapshots/cycle_02/chapters/chapter_14.md:271",
+      "finding_id": "ch14-F005",
+      "problem": "Consequence compression in the back half: after detention release, the chapter transitions quickly into cipher logistics, but the family-coercion cost is only partially metabolized on page. This weakens the chapter-spine promise that family vulnerability is the central weapon.",
+      "rewrite_direction": "Expand the father-daughter aftermath beat at snapshots/cycle_02/chapters/chapter_14.md:233-263 before the hymnal reveal at snapshots/cycle_02/chapters/chapter_14.md:271-277: stage one additional exchange where Dohyun names a concrete impact of the coercive call and Ina must make a costly communication choice in response.",
+      "severity": "MEDIUM",
+      "source": "booker",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if the revised spans contain at least three concrete, scene-anchored coercion details replacing abstraction-mantra language and the two speakers no longer mirror the same diction. FAIL if the dialogue still leans on repeated governance abstractions as primary content.",
+      "chapter_id": "chapter_14",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:6192",
+      "finding_id": "FBR02-004",
+      "problem": "Style-bible token overfitting creates mantra diction in the coercion dialogue: repeated abstraction stack (sequence/history/operational boundaries/legal pathways/survival) in `snapshots/cycle_02/FINAL_NOVEL.md:6192`, `snapshots/cycle_02/FINAL_NOVEL.md:6200`, `snapshots/cycle_02/FINAL_NOVEL.md:6240`, and `snapshots/cycle_02/FINAL_NOVEL.md:6252` flattens immediacy and makes both sides sound over-scripted.",
+      "rewrite_direction": "At `snapshots/cycle_02/FINAL_NOVEL.md:6192`, `snapshots/cycle_02/FINAL_NOVEL.md:6200`, `snapshots/cycle_02/FINAL_NOVEL.md:6240`, and `snapshots/cycle_02/FINAL_NOVEL.md:6252`, replace at least half of abstraction nouns with concrete leverage mechanics (specific officer action, document type, time horizon, direct consequence to Dohyun). Keep one signature inevitability line for Kwon, but diversify Ina's replies toward sensory and tactical specificity.",
+      "severity": "MEDIUM",
+      "source": "booker_global",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "a9d095c5a714d5840af3f42dade8597422cb7aa3c67691408d103e5a473a4a96",
+  "must_fix_count": 4,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into uncomfortable specificity when stakes demand it: show coercion mechanics, sexual negotiation, grief rituals, and financial desperation at scene level. In edge cases, prefer precision over decorum; protect character dignity through perspective accuracy, not by omitting the hard material.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene requires bodily, economic, or moral consequence and the draft retreats into abstract phrasing, rewrite with concrete action, sensation, and decision impact before proceeding.",
+      "operational_resolution_rule": "When uncertain between tasteful distance and narrative truth, choose the version that preserves causal accountability and embodied consequence, then tune language for clarity rather than softness.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the baseline in spoken dialogue; uncontracted forms are reserved for deliberate emphasis, legal language, or character-specific formality.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate chapter structures deliberately: high-density dialogue vs interior reflection, multi-scene public collision vs two-scene intimate pressure, aftermath inventory vs anticipatory dread. Never let two consecutive chapters share the same pacing architecture or turn mechanism.",
+      "diction": "Contemporary, unsentimental literary diction that permits technical vocabulary, profanity, and class-marked speech without flattening idiolects.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third person centered on Seo Ina, with brief controlled widenings in public-event chapters.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Alternating pressure waves: compressed clauses in operational stress, longer breath-based lines in grief and reflection.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

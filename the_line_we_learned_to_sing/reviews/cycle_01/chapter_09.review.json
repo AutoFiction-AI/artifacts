@@ -1,0 +1,77 @@
+{
+  "chapter_id": "chapter_09",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH09-F001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:309; snapshots/cycle_01/chapters/chapter_09.md:312; snapshots/cycle_01/chapters/chapter_09.md:603",
+      "problem": "Sanitization/timidity drift at the violence apex: once mass harm begins, the prose pulls back to monitor-view and montage snapshots instead of staying in embodied, scene-level consequence. That distance softens the chapter's central moral damage right when stakes peak.",
+      "rewrite_direction": "Revise the riot escalation around snapshots/cycle_01/chapters/chapter_09.md:309-337 and snapshots/cycle_01/chapters/chapter_09.md:603-604 so Ina directly encounters one injured person in real space (not only via feed), takes a concrete action, and absorbs a physical/emotional cost before the scene returns to command decisions.",
+      "acceptance_test": "PASS if the revised passage at snapshots/cycle_01/chapters/chapter_09.md:309-337 contains one continuous embodied casualty beat (touch + visible injury detail + immediate decision consequence for Ina) before any summary montage; FAIL if harm remains primarily reported through screens or generalized crowd description."
+    },
+    {
+      "finding_id": "CH09-F002",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:179; snapshots/cycle_01/chapters/chapter_09.md:253; snapshots/cycle_01/chapters/chapter_09.md:255; snapshots/cycle_01/chapters/chapter_09.md:351",
+      "problem": "Elliptical clipping appears repeatedly in narration (subjectless/telegraphic fragments), which violates constitution guidance and creates an AI-staccato rhythm that reads as emphasis shortcut rather than crafted compression.",
+      "rewrite_direction": "Rework clipped narration at snapshots/cycle_01/chapters/chapter_09.md:179-180, snapshots/cycle_01/chapters/chapter_09.md:253-256, and snapshots/cycle_01/chapters/chapter_09.md:351-352 into grammatically complete sentences with explicit subjects/articles while preserving urgency through syntax and cadence, not omission.",
+      "acceptance_test": "PASS if the revised cited spans contain no standalone narration fragments of the form single noun/phrase sentence (for example, 'Negotiators.') and each sentence has an explicit grammatical subject; FAIL if fragment-stacking remains in those spans."
+    },
+    {
+      "finding_id": "CH09-F003",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:89; snapshots/cycle_01/chapters/chapter_09.md:125; snapshots/cycle_01/chapters/chapter_09.md:403; snapshots/cycle_01/chapters/chapter_09.md:523; snapshots/cycle_01/chapters/chapter_09.md:527; snapshots/cycle_01/chapters/chapter_09.md:469",
+      "problem": "Dialogue register drifts stiff for high-contraction characters (Ina, Minjae) during high-pressure beats via repeated uncontracted forms ('does not', 'are not', 'did not', 'it is'). The book default is high contraction use, so this reads over-formal unless intentionally marked.",
+      "rewrite_direction": "Adjust high-pressure lines at snapshots/cycle_01/chapters/chapter_09.md:89, snapshots/cycle_01/chapters/chapter_09.md:125, snapshots/cycle_01/chapters/chapter_09.md:403, snapshots/cycle_01/chapters/chapter_09.md:523-527, and snapshots/cycle_01/chapters/chapter_09.md:469 to contracted speech by default; keep full forms only where deliberate precision/formality is explicitly motivated in the surrounding beat.",
+      "acceptance_test": "PASS if, across the cited Ina/Minjae lines, at least four of five non-legal utterances use contractions and any remaining full-form line is contextually justified on-page (formal quoting, legal precision, or deliberate emphasis); FAIL if uncontracted speech remains the default texture in those beats."
+    },
+    {
+      "finding_id": "CH09-F004",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:59; snapshots/cycle_01/chapters/chapter_09.md:99; snapshots/cycle_01/chapters/chapter_09.md:155",
+      "problem": "A recurring rhetorical construction ('There was/There it was...') appears three times and becomes a prose tic, flattening turns that should land with distinct energy.",
+      "rewrite_direction": "Revise the pivot lines at snapshots/cycle_01/chapters/chapter_09.md:59, snapshots/cycle_01/chapters/chapter_09.md:99, and snapshots/cycle_01/chapters/chapter_09.md:155 so each beat enters through different syntax and scene-specific action or image rather than repeating the same declarative turn formula.",
+      "acceptance_test": "PASS if the revised chapter contains no more than two 'There was/there it was' pivot formulas and the three cited beats no longer share the same opening construction; FAIL if all three still hinge on that repeated sentence shape."
+    },
+    {
+      "finding_id": "CH09-F005",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:189; snapshots/cycle_01/chapters/chapter_09.md:209; snapshots/cycle_01/chapters/chapter_09.md:261; snapshots/cycle_01/chapters/chapter_09.md:493; snapshots/cycle_01/chapters/chapter_09.md:557",
+      "problem": "Mechanical repetition of Ji-eun's stress tell ('left hand' tremor) reads like over-literal reuse of style-bible markers rather than evolving characterization, reducing tonal range in high-intensity scenes.",
+      "rewrite_direction": "Keep the tremor motif but vary expression across snapshots/cycle_01/chapters/chapter_09.md:189-557: replace at least two repeated 'left hand shaking/tremor' mentions with different pressure markers (breath disruption, vocal break, jaw lock, dissociation, motor error) that also alter scene action.",
+      "acceptance_test": "PASS if the cited passage contains no more than three explicit 'left hand' stress mentions and at least two replacement cues produce distinct behavioral outcomes in-scene; FAIL if the same hand-tremor phrasing remains the dominant stress signal throughout."
+    },
+    {
+      "finding_id": "CH09-F006",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:423; snapshots/cycle_01/chapters/chapter_09.md:471; snapshots/cycle_01/chapters/chapter_09.md:505; snapshots/cycle_01/chapters/chapter_09.md:509",
+      "problem": "Declared systemic stakes (kidnapping/national-security exposure) are partially undercut by a comparatively light escape corridor: after explicit containment threats, exfiltration faces only a brief two-guard friction beat and then no immediate pursuit.",
+      "rewrite_direction": "Strengthen causal resistance in snapshots/cycle_01/chapters/chapter_09.md:471-510 by adding one concrete institutional containment action triggered by Kwon's order (checkpoint alert, plate capture, dispatch call, staff lockout) and forcing Ina's team to pay an immediate operational cost to evade it.",
+      "acceptance_test": "PASS if the revised exfil span shows at least one explicit, named containment response and one irreversible cost (lost route, identified vehicle, injured ally, burned asset) before the van clears danger; FAIL if escape still resolves after only local scuffle pressure."
+    }
+  ],
+  "summary": "Chapter 09 delivers strong momentum and coherent macro-causality, but it does not clear pass threshold: craft and prose fall on sanitization-at-peak, clipping/fragment tics, and repeated formulaic constructions; dialogue drifts over-formal against the style bible's contraction baseline; and the final escape underpays the chapter's declared institutional stakes. No canonical continuity contradiction or sustained narrative-tense drift was detected.",
+  "coverage_scene_ids": [
+    "pre_show_control_annex",
+    "live_stage_hijack",
+    "backstage_extraction_and_van_escape"
+  ]
+}

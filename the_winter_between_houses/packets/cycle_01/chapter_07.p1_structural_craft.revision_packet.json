@@ -1,0 +1,108 @@
+{
+  "acceptance_targets": [
+    "[CH7-F001] PASS if each surviving pre-blackout scene in snapshots/cycle_01/chapters/chapter_07.md:159-323 ends with a different, concrete state change (not a repeat of 'Peter controls money/etiquette' in the same form); FAIL if two consecutive scenes end at the same control baseline with only tonal variation.",
+    "[CH7-F002] PASS if the revised snapshots/cycle_01/chapters/chapter_07.md:403-452 contains at least one explicit material consequence of Tom's outburst (object/wall/body detail) and one non-euphemistic indicator of ongoing threat; FAIL if risk is still conveyed mainly by abstract labels or minimizing phrasing ('just', 'not tonight') without concrete aftermath.",
+    "[CH7-F003] PASS if snapshots/cycle_01/chapters/chapter_07.md:315-323 includes a real-time two-character exchange that demonstrates forced distance under watch; FAIL if the section remains purely reportive list-summary of changed habits.",
+    "[FBR-002] Pass if chapter 7's introduction resolves Arthur identity in-text at first appearance. Fail if reader still has to infer identity reconciliation from later chapters or external continuity docs."
+  ],
+  "chapter_id": "chapter_07",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if each surviving pre-blackout scene in snapshots/cycle_01/chapters/chapter_07.md:159-323 ends with a different, concrete state change (not a repeat of 'Peter controls money/etiquette' in the same form); FAIL if two consecutive scenes end at the same control baseline with only tonal variation.",
+      "chapter_id": "chapter_07",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:159; snapshots/cycle_01/chapters/chapter_07.md:189; snapshots/cycle_01/chapters/chapter_07.md:251; snapshots/cycle_01/chapters/chapter_07.md:315",
+      "finding_id": "CH7-F001",
+      "problem": "Mid-chapter momentum plateaus: multiple domestic-control beats restate Peter's dominance without adding a distinct new consequence until the blackout sequence, so leverage shifts blur together instead of escalating scene-by-scene.",
+      "rewrite_direction": "Compress repeated control beats in snapshots/cycle_01/chapters/chapter_07.md:159-323 into fewer, sharper turns, and add one explicit irreversible consequence before the blackout (for example, a new access restriction or public humiliation event that materially changes what Noreen/Elsie can do next). Target revisions in snapshots/cycle_01/chapters/chapter_07.md:159-239 and snapshots/cycle_01/chapters/chapter_07.md:251-323.",
+      "severity": "MEDIUM",
+      "source": "booker",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if the revised snapshots/cycle_01/chapters/chapter_07.md:403-452 contains at least one explicit material consequence of Tom's outburst (object/wall/body detail) and one non-euphemistic indicator of ongoing threat; FAIL if risk is still conveyed mainly by abstract labels or minimizing phrasing ('just', 'not tonight') without concrete aftermath.",
+      "chapter_id": "chapter_07",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:339; snapshots/cycle_01/chapters/chapter_07.md:341; snapshots/cycle_01/chapters/chapter_07.md:447; snapshots/cycle_01/chapters/chapter_07.md:451",
+      "finding_id": "CH7-F002",
+      "problem": "Sanitization drift around domestic violence risk: the chapter stages Tom's volatility, then resolves it with euphemistic minimization ('Not tonight. Just the wall.') at the exact point the narrative should embody concrete harm and threat pattern.",
+      "rewrite_direction": "In the blackout aftermath span (snapshots/cycle_01/chapters/chapter_07.md:403-452), replace euphemistic shorthand with specific physical and social evidence: what was struck, what moved or broke, how close Tom got, and what Noreen reads in Elsie's body. Keep it character-true and observational rather than moralizing.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if snapshots/cycle_01/chapters/chapter_07.md:315-323 includes a real-time two-character exchange that demonstrates forced distance under watch; FAIL if the section remains purely reportive list-summary of changed habits.",
+      "chapter_id": "chapter_07",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:315; snapshots/cycle_01/chapters/chapter_07.md:318; snapshots/cycle_01/chapters/chapter_07.md:321; snapshots/cycle_01/chapters/chapter_07.md:323",
+      "finding_id": "CH7-F003",
+      "problem": "Timidity via summary-over-scene: the new 'choreography' of secrecy between Noreen and Elsie is described as a list rather than dramatized in live interaction, reducing emotional immediacy at a key consequence beat.",
+      "rewrite_direction": "Replace at least one summary item in snapshots/cycle_01/chapters/chapter_07.md:315-323 with a short enacted exchange where surveillance actively interrupts them (for example, a public fence-call or a deliberately formal handoff under observation), including Noreen's immediate internal reaction.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if chapter 7's introduction resolves Arthur identity in-text at first appearance. Fail if reader still has to infer identity reconciliation from later chapters or external continuity docs.",
+      "chapter_id": "chapter_07",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2140",
+      "finding_id": "FBR-002",
+      "problem": "Cross-chapter continuity split companion: chapter 7 presents Arthur Hale as a fresh entry without resolving chapter 3's Arthur Pike appearance, leaving readers to guess whether this is one person with inconsistent naming or two near-duplicate Arthurs.",
+      "rewrite_direction": "At `snapshots/cycle_01/FINAL_NOVEL.md:2132`, `snapshots/cycle_01/FINAL_NOVEL.md:2140`, and `snapshots/cycle_01/FINAL_NOVEL.md:2234`, add an explicit continuity anchor. If same man, include one line linking him to the Christmas scene; if different, include one line that rules out identity overlap (surname/occupation distinction) so this chapter does not depend on off-page reconciliation.",
+      "severity": "HIGH",
+      "source": "booker_global",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "5e2782cd46ba3fb60521460db40a8e1f7e5db4d669cf41ff28b4735c6fe1c97a",
+  "must_fix_count": 4,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "When edge cases arise, choose the more specific and potentially uncomfortable rendering if it is character-true and causally necessary. Intimacy, bodily risk, and moral compromise must be shown with concrete detail and aftermath, then integrated into later behavior rather than quarantined as a one-scene shock.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a draft abstracts pain, sex, coercion, blood, or economic shame at the exact moment consequence should be embodied, revise by replacing summary with physically and socially specific action tied to POV stakes.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High by default for spoken lines; uncontracted forms are marked choices for period formality, emphasis, or character-specific control behavior.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate structural engines across adjacent chapters: ensemble social scenes, inventory chapters, information-turn chapters, acted-upon pressure chapters, and aftermath chapters. Vary scene count (2 to 4), dialogue density, and interiority depth so consecutive chapters do not share the same pacing signature.",
+      "diction": "Period-authentic but readable contemporary English, favoring concrete nouns and precise verbs over lyrical abstraction.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person, alternating primarily between Elsie and Noreen, with occasional tightly limited deviations only when causal clarity requires it.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Sentence rhythm should alternate compressed pressure bursts with longer observational lines that carry social texture; avoid monotone paragraph cadence.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

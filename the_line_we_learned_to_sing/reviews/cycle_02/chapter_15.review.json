@@ -1,0 +1,82 @@
+{
+  "chapter_id": "chapter_15",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch15-f01",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_02/chapters/chapter_15.md:159; snapshots/cycle_02/chapters/chapter_15.md:163; snapshots/cycle_02/chapters/chapter_15.md:165; snapshots/cycle_02/chapters/chapter_15.md:419; snapshots/cycle_02/chapters/chapter_15.md:515",
+      "problem": "Sanitization drift: the chapter's core harm (panic deaths and detentions) is repeatedly conveyed as relayed reports and aggregate counts, so consequence is often abstracted at the exact moments that need embodied scene presence.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_15.md:159, snapshots/cycle_02/chapters/chapter_15.md:163, and snapshots/cycle_02/chapters/chapter_15.md:165, replace at least one report-only casualty beat with on-page action Ina directly witnesses or physically manages. Then revise the recap beats at snapshots/cycle_02/chapters/chapter_15.md:419 and snapshots/cycle_02/chapters/chapter_15.md:515 so they tie numbers to named human aftermath already shown, not just tallies.",
+      "acceptance_test": "PASS if the revised casualty section anchored to snapshots/cycle_02/chapters/chapter_15.md:159-166 includes concrete bodily action, sensory detail, and a decision-cost for Ina, and the bulletin section anchored to snapshots/cycle_02/chapters/chapter_15.md:515-518 includes at least one named callback to that embodied event. FAIL if harm remains primarily count updates and secondhand report verbs."
+    },
+    {
+      "finding_id": "ch15-f02",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_02/chapters/chapter_15.md:417; snapshots/cycle_02/chapters/chapter_15.md:441; snapshots/cycle_02/chapters/chapter_15.md:517; snapshots/cycle_02/chapters/chapter_15.md:579",
+      "problem": "Timidity: after emotional peaks, prose repeatedly retreats into board-management and accounting language, softening immediate emotional and physical reality instead of sustaining pressure in-scene.",
+      "rewrite_direction": "Rework the ledger-heavy stretches at snapshots/cycle_02/chapters/chapter_15.md:417-441 and snapshots/cycle_02/chapters/chapter_15.md:517-585 to keep operational tracking but anchor each block in immediate body-level stakes (fatigue, panic control, fear of exposure) and interpersonal fallout from Ina's choices.",
+      "acceptance_test": "PASS if each revised block (around snapshots/cycle_02/chapters/chapter_15.md:417-441 and snapshots/cycle_02/chapters/chapter_15.md:517-585) contains at least one explicit internal sensation/thought from Ina and one live interaction consequence triggered by her choice. FAIL if either block still reads primarily as administrative summary."
+    },
+    {
+      "finding_id": "ch15-f03",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_02/chapters/chapter_15.md:19; snapshots/cycle_02/chapters/chapter_15.md:27; snapshots/cycle_02/chapters/chapter_15.md:159; snapshots/cycle_02/chapters/chapter_15.md:171; snapshots/cycle_02/chapters/chapter_15.md:181; snapshots/cycle_02/chapters/chapter_15.md:189; snapshots/cycle_02/chapters/chapter_15.md:261; snapshots/cycle_02/chapters/chapter_15.md:349; snapshots/cycle_02/chapters/chapter_15.md:381; snapshots/cycle_02/chapters/chapter_15.md:419; snapshots/cycle_02/chapters/chapter_15.md:421; snapshots/cycle_02/chapters/chapter_15.md:457; snapshots/cycle_02/chapters/chapter_15.md:571; snapshots/cycle_02/chapters/chapter_15.md:587",
+      "problem": "Recurring timestamp opener formula (\"At/By HH:MM\") appears far beyond twice, producing incident-log cadence and flattening sentence variety.",
+      "rewrite_direction": "Keep only pivotal time anchors, but rewrite several openings at snapshots/cycle_02/chapters/chapter_15.md:19, :159, :349, :419, :457, and :571 into action- or sensation-led entries that imply elapsed time without repeating identical syntax.",
+      "acceptance_test": "PASS if revised scene blocks corresponding to the cited lines contain no run of more than two consecutive paragraphs beginning with explicit clock stamps and at least four former time-stamp openers are replaced with non-clock sentence starts while chronology remains clear. FAIL if the chapter still reads as a repeated \"At/By time\" log."
+    },
+    {
+      "finding_id": "ch15-f04",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_02/chapters/chapter_15.md:7; snapshots/cycle_02/chapters/chapter_15.md:147; snapshots/cycle_02/chapters/chapter_15.md:179; snapshots/cycle_02/chapters/chapter_15.md:213; snapshots/cycle_02/chapters/chapter_15.md:273; snapshots/cycle_02/chapters/chapter_15.md:523",
+      "problem": "A single sensory construction repeats six times (\"X smelled like ...\"), which becomes a prose tic and dulls freshness.",
+      "rewrite_direction": "Revise the sensory sentences at snapshots/cycle_02/chapters/chapter_15.md:7, :147, :179, :213, :273, and :523 with mixed syntax and modality (touch/sound/spatial pressure) so smell is selective rather than default.",
+      "acceptance_test": "PASS if in revised versions of the cited lines no more than two sentences use the exact \"smelled like\" construction and at least three replacements use non-olfactory sensory emphasis. FAIL if the same template continues to dominate those beats."
+    },
+    {
+      "finding_id": "ch15-f05",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_02/chapters/chapter_15.md:319; snapshots/cycle_02/chapters/chapter_15.md:323; snapshots/cycle_02/chapters/chapter_15.md:331; snapshots/cycle_02/chapters/chapter_15.md:335; snapshots/cycle_02/chapters/chapter_15.md:337; snapshots/cycle_02/chapters/chapter_15.md:553; snapshots/cycle_02/chapters/chapter_15.md:557; snapshots/cycle_02/chapters/chapter_15.md:563",
+      "problem": "Ina and Minjae's high-pressure exchanges trend toward polished, symmetrical lines, reducing idiolect separation; Minjae's logistics-grounded pivots and Ina's qualifier-then-correction stress pattern are underused in key confrontations.",
+      "rewrite_direction": "Recast the confrontations at snapshots/cycle_02/chapters/chapter_15.md:319-337 and snapshots/cycle_02/chapters/chapter_15.md:553-565 with interruptions, pragmatic route language for Minjae, and one explicit self-edit turn for Ina so their registers diverge under stress.",
+      "acceptance_test": "PASS if the revised 319-337 exchange includes at least one interrupted clause plus concrete logistics diction from Minjae and one qualifier-then-correction move from Ina, and the 553-565 exchange removes mirrored scaffold lines (e.g., parallel \"I still ...\" cadence). FAIL if both speakers remain rhetorically interchangeable."
+    },
+    {
+      "finding_id": "ch15-f06",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_02/chapters/chapter_15.md:441; snapshots/cycle_02/chapters/chapter_15.md:443; snapshots/cycle_02/chapters/chapter_15.md:447; snapshots/cycle_02/chapters/chapter_15.md:457; snapshots/cycle_02/chapters/chapter_15.md:465",
+      "problem": "The chapter contains a 10+ paragraph run in midday updates that gives almost no focalizer interiority, shifting the read toward incident transcript rather than close-third embodiment.",
+      "rewrite_direction": "In the run starting at snapshots/cycle_02/chapters/chapter_15.md:441 and continuing through snapshots/cycle_02/chapters/chapter_15.md:465, insert brief thought/sensation/self-assessment beats tied to Ina's immediate tasks without slowing scene velocity.",
+      "acceptance_test": "PASS if the revised span corresponding to snapshots/cycle_02/chapters/chapter_15.md:441-465 includes at least three interiority beats from Ina and no uninterrupted stretch longer than nine paragraphs without interior experience. FAIL if the passage remains externally reported for 10+ consecutive paragraphs."
+    },
+    {
+      "finding_id": "ch15-f07",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_02/chapters/chapter_15.md:381; snapshots/cycle_02/chapters/chapter_15.md:385; snapshots/cycle_02/chapters/chapter_15.md:403; snapshots/cycle_02/chapters/chapter_15.md:517; snapshots/cycle_02/chapters/chapter_15.md:587",
+      "problem": "After Kwon's on-air move, antagonistic force is mostly off-page rumor and bulletin pressure; the back half lacks a direct opposing encounter that forces a fresh irreversible choice before the handoff to chapter 16.",
+      "rewrite_direction": "Add one on-page counterforce beat in the post-Kwon section (target snapshots/cycle_02/chapters/chapter_15.md:403-440 or snapshots/cycle_02/chapters/chapter_15.md:491-531) where an identifiable actor tries to block, seize, or expose Ina's records, forcing a binary decision that changes what she carries into snapshots/cycle_02/chapters/chapter_15.md:587.",
+      "acceptance_test": "PASS if revised post-381 material includes a direct confrontation with an opposing actor and Ina makes a visible either/or decision with immediate cost before the St. Mary's call. FAIL if opposition remains mediated only through broadcasts, rumors, or paperwork."
+    }
+  ],
+  "summary": "Fail by default stands: the chapter delivers strong continuity alignment and no canonical-tense drift (past-tense narration remains intact), but unresolved MEDIUM+/HIGH issues remain in craft, dialogue, and prose. The largest risk is HIGH sanitization/timidity drift where mass-harm beats are repeatedly abstracted into reports and tallies, plus repeated prose formulas (clock-stamp openers and smell syntax), an interiority lapse in a long midday stretch, and key confrontation dialogue that narrows voice separation."
+}

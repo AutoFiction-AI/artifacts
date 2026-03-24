@@ -1,0 +1,68 @@
+{
+  "chapter_id": "chapter_16",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch16-craft-001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_02/chapters/chapter_16.md:290, snapshots/cycle_02/chapters/chapter_16.md:292, snapshots/cycle_02/chapters/chapter_16.md:294",
+      "problem": "Sanitization drift via moral safety valve: immediately after the wake rupture, the narrative pivots into quote-ready abstraction ('I regret that truth always lands on women with mops and grocery lists') instead of staying with direct interpersonal damage. This defuses tension at the exact point consequence should feel least controllable.",
+      "rewrite_direction": "Revise the press-exchange beat at snapshots/cycle_02/chapters/chapter_16.md:290 and snapshots/cycle_02/chapters/chapter_16.md:294 so Marisol first names a concrete cost she caused (mother/sister/Leo consequence in-room) before any structural framing. Keep the interview pressure but remove the immediate polished thesis posture.",
+      "acceptance_test": "PASS if the revised span around snapshots/cycle_02/chapters/chapter_16.md:290-296 includes (1) one concrete family consequence Marisol cannot rhetorically control and (2) one self-implicating line before any abstract social claim; FAIL if the first substantive answer is still a polished generalization."
+    },
+    {
+      "finding_id": "ch16-prose-001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_02/chapters/chapter_16.md:3, snapshots/cycle_02/chapters/chapter_16.md:37, snapshots/cycle_02/chapters/chapter_16.md:39",
+      "problem": "Interiority drought: the opening runs more than ten consecutive paragraphs of staging/dialogue before Marisol gets an internal beat, pushing the chapter toward external coverage instead of close-third lived pressure.",
+      "rewrite_direction": "Insert interior microbeats within snapshots/cycle_02/chapters/chapter_16.md:13, snapshots/cycle_02/chapters/chapter_16.md:27, and/or snapshots/cycle_02/chapters/chapter_16.md:33-37 so Marisol's thought/sensation/self-assessment threads through the wake setup before the kitchen confrontation.",
+      "acceptance_test": "PASS if, in revised lines 3-39, no run exceeds six consecutive paragraphs without a clear Marisol interior marker (thought, sensation, memory, or self-assessment); FAIL if the opening still reads as uninterrupted external observation for 10+ paragraphs."
+    },
+    {
+      "finding_id": "ch16-dialogue-001",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_02/chapters/chapter_16.md:212, snapshots/cycle_02/chapters/chapter_16.md:214, snapshots/cycle_02/chapters/chapter_16.md:216, snapshots/cycle_02/chapters/chapter_16.md:218, snapshots/cycle_02/chapters/chapter_16.md:254, snapshots/cycle_02/chapters/chapter_16.md:260",
+      "problem": "Crowd dialogue is pressure-correct but voice-blurred: multiple speakers use similar sentence weight and argument vocabulary, so opposition factions become interchangeable rather than socially distinct.",
+      "rewrite_direction": "Rework the two crowd bursts at snapshots/cycle_02/chapters/chapter_16.md:212-218 and snapshots/cycle_02/chapters/chapter_16.md:254-260 with differentiated registers (church elder cadence, intern/legal language, neighborhood slang, code-switching) so each line carries identifiable social position and rhythm.",
+      "acceptance_test": "PASS if revised crowd lines present at least three clearly distinct idiolects that remain identifiable even without dialogue tags; FAIL if the lines can still be swapped between speakers with little tonal change."
+    },
+    {
+      "finding_id": "ch16-prose-002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_02/chapters/chapter_16.md:95, snapshots/cycle_02/chapters/chapter_16.md:318, snapshots/cycle_02/chapters/chapter_16.md:356",
+      "problem": "A recurring contradiction-slogan construction ('both things can be true' / 'those two things can live together' / 'both are true') appears three times and starts to feel programmatic instead of discovered in-scene.",
+      "rewrite_direction": "Keep the thematic contradiction once, but revise at least two of snapshots/cycle_02/chapters/chapter_16.md:95, snapshots/cycle_02/chapters/chapter_16.md:318, and snapshots/cycle_02/chapters/chapter_16.md:356 into concrete action/image that enacts duality without stating the slogan directly.",
+      "acceptance_test": "PASS if the revised chapter uses explicit 'both ... true' style formulation no more than once and the remaining contradiction beats are shown through specific behavior or detail; FAIL if three explicit binary-reconciliation slogans remain."
+    },
+    {
+      "finding_id": "ch16-prose-003",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_02/chapters/chapter_16.md:105",
+      "problem": "Generic cinematic phrasing ('Not in a dramatic movie way') undercuts the chapter's otherwise concrete diction and conflicts with the style profile's ban on cinematic-generic drift.",
+      "rewrite_direction": "Replace the abstraction at snapshots/cycle_02/chapters/chapter_16.md:105 with concrete social mechanics already present in-scene (chair scrape stop, phone lift angles, breath/noise drop) so tension shift is rendered materially rather than meta-described.",
+      "acceptance_test": "PASS if revised lines around snapshots/cycle_02/chapters/chapter_16.md:105 describe the room's shift using at least two concrete sensory/physical cues and no film/drama meta-language; FAIL if the beat still relies on cinematic abstraction."
+    }
+  ],
+  "summary": "Chapter 16 lands its causal spine and consequence chain (public wake rupture with immediate social/media fallout), but it fails craft/dialogue/prose at review threshold: one HIGH sanitization-by-moral-safety-valve beat in the press aftermath, plus interiority drought, crowd-voice blur, repeated contradiction sloganing, and one explicit cinematic-phrase drift.",
+  "coverage_scene_ids": [
+    "saint_brigid_arrival",
+    "eulogy_sequence",
+    "marisol_poem_rupture",
+    "post_wake_press_aftermath"
+  ]
+}

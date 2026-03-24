@@ -1,0 +1,62 @@
+{
+  "chapter_id": "chapter_13",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch13-f001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:113; snapshots/cycle_01/chapters/chapter_13.md:115; snapshots/cycle_01/chapters/chapter_13.md:121; snapshots/cycle_01/chapters/chapter_13.md:127; snapshots/cycle_01/chapters/chapter_13.md:216",
+      "problem": "Sanitization drift appears in the revision montage: the chapter repeatedly labels emotional material (\"Out went...\" / \"In came...\") instead of rendering at least one fully present beat of bodily, moral, or relational consequence. At the moment the narrative claims greater honesty, it substitutes process summary for scene-level evidence.",
+      "rewrite_direction": "In snapshots/cycle_01/chapters/chapter_13.md:113 through snapshots/cycle_01/chapters/chapter_13.md:127, and again in snapshots/cycle_01/chapters/chapter_13.md:216 through snapshots/cycle_01/chapters/chapter_13.md:220, replace at least two abstract process lines with concrete micro-scenes from the material she is drafting (one tied to relapse cost, one tied to family lie cost). Keep evidentiary rigor, but anchor each replacement in observable action, sensation, and immediate consequence rather than categorical labels like \"In came the body.\"",
+      "acceptance_test": "PASS if the revised spans between snapshots/cycle_01/chapters/chapter_13.md:113 and snapshots/cycle_01/chapters/chapter_13.md:127, plus snapshots/cycle_01/chapters/chapter_13.md:216 and snapshots/cycle_01/chapters/chapter_13.md:220, contain at least two concrete, embodied beats (action + sensory detail + consequence) and no standalone placeholder abstractions for key stakes; FAIL if those spans still summarize edits without dramatized evidence."
+    },
+    {
+      "finding_id": "ch13-f002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:115; snapshots/cycle_01/chapters/chapter_13.md:117; snapshots/cycle_01/chapters/chapter_13.md:119; snapshots/cycle_01/chapters/chapter_13.md:121; snapshots/cycle_01/chapters/chapter_13.md:123; snapshots/cycle_01/chapters/chapter_13.md:125; snapshots/cycle_01/chapters/chapter_13.md:127; snapshots/cycle_01/chapters/chapter_13.md:230",
+      "problem": "Recurring prose constructions exceed the chapter's tolerance for formula: \"Out went...\" appears three times, \"In came...\" appears four times, and \"She replaced...\" recurs in the closing pass. The repetition reads as compositional scaffolding left on the page rather than intentional cadence.",
+      "rewrite_direction": "Rework the sequence anchored at snapshots/cycle_01/chapters/chapter_13.md:115 through snapshots/cycle_01/chapters/chapter_13.md:127, plus the closing pass at snapshots/cycle_01/chapters/chapter_13.md:230, by varying sentence openings and integrating at least one continuous paragraph where deletion/addition/replacement moves causally instead of via list-template repetition.",
+      "acceptance_test": "PASS if, in the revised spans around snapshots/cycle_01/chapters/chapter_13.md:115, snapshots/cycle_01/chapters/chapter_13.md:127, and snapshots/cycle_01/chapters/chapter_13.md:230, no single starter formula (e.g., \"Out went\", \"In came\", \"She replaced\") appears more than twice and adjacent sentences show visibly different syntactic shapes; FAIL if any one formula still appears three or more times."
+    },
+    {
+      "finding_id": "ch13-f003",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:17; snapshots/cycle_01/chapters/chapter_13.md:141; snapshots/cycle_01/chapters/chapter_13.md:151; snapshots/cycle_01/chapters/chapter_13.md:206; snapshots/cycle_01/chapters/chapter_13.md:222; snapshots/cycle_01/chapters/chapter_13.md:228; snapshots/cycle_01/chapters/chapter_13.md:230; snapshots/cycle_01/chapters/chapter_13.md:234",
+      "problem": "The chapter over-literalizes Marisol's stress tell (timeline specificity) into repeated timestamp beats, producing ledger rhythm and flattening prose variance. This reads like mechanical reuse of style-bible pressure markers rather than organic escalation.",
+      "rewrite_direction": "Across snapshots/cycle_01/chapters/chapter_13.md:17 through snapshots/cycle_01/chapters/chapter_13.md:234, retain exact clock times only where they change tactical outcome (e.g., interview slot and send/reply sequence), and convert other time markers into embodied transitions (light shift, bodily fatigue, environmental change, or task consequence).",
+      "acceptance_test": "PASS if the revised section between snapshots/cycle_01/chapters/chapter_13.md:17 and snapshots/cycle_01/chapters/chapter_13.md:234 keeps exact timestamps for causally binding events while replacing at least two nonessential clock stamps with sensory/action transitions that still preserve chronology; FAIL if timestamp-driven transitions remain the dominant connective tissue."
+    },
+    {
+      "finding_id": "ch13-f004",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:111; snapshots/cycle_01/chapters/chapter_13.md:131; snapshots/cycle_01/chapters/chapter_13.md:141; snapshots/cycle_01/chapters/chapter_13.md:185; snapshots/cycle_01/chapters/chapter_13.md:210",
+      "problem": "Mid-chapter momentum sags because two long drafting loops deliver similar function (self-editing toward honesty) before the next external consequence lands. The causal spine stays intact, but leverage does not escalate quickly enough between Luis's challenge and Cora's hard window.",
+      "rewrite_direction": "Compress either the drafting loop bounded by snapshots/cycle_01/chapters/chapter_13.md:111 and snapshots/cycle_01/chapters/chapter_13.md:149 or the later loop bounded by snapshots/cycle_01/chapters/chapter_13.md:208 and snapshots/cycle_01/chapters/chapter_13.md:220, then intercut added external pressure inside that span (housing risk, interview fragility, sponsor consequence, or institutional threat) so each block forces a new choice before snapshots/cycle_01/chapters/chapter_13.md:222.",
+      "acceptance_test": "PASS if the revised section from snapshots/cycle_01/chapters/chapter_13.md:111 to snapshots/cycle_01/chapters/chapter_13.md:222 shows at least one new obstacle or irreversible decision in each major block and no more than two consecutive process-only paragraphs without external pressure; FAIL if drafting montage remains repetitive without leverage shift."
+    },
+    {
+      "finding_id": "ch13-f005",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:149",
+      "problem": "Timidity at a key emotional node: the paternity line resolves into clinical hedging (\"emotionally disruptive\", \"partially verified\") without adjacent lived consequence, softening what should register as immediate destabilization.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_13.md:149, keep the evidentiary uncertainty language but pair it with one concrete present-tense consequence in Marisol's body or behavior (e.g., involuntary reaction, memory intrusion, or decision shift) to restore pressure.",
+      "acceptance_test": "PASS if the revised line-149 paragraph contains both legal/evidentiary status and one explicit embodied or behavioral consequence tied to paternity uncertainty; FAIL if the beat remains purely abstract/clinical."
+    }
+  ],
+  "summary": "Chapter 13 preserves continuity and lands required causal beats (draft urgency, Luis accountability pressure, closing lucid-window constraint), with strong dialogue register and contraction fidelity for Marisol, Luis, and Cora. It fails booker/craft/prose on unresolved sanitization-by-summary in key revision passages, repeated prose templates, timestamp-driven rhythmic flattening, and a mid-chapter leverage dip that weakens escalation before the final lock-in."
+}

@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_01",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_01_F001",
+      "source": "award",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_02/chapters/chapter_01.md:97, snapshots/cycle_02/chapters/chapter_01.md:157",
+      "problem": "The chapter tees up Harry's med-pass beat at line 97, then leaves the floor for the handoff, parking-lot, Gloria, commute, and apartment material before delivering the chapter's only real rupture as recollection at lines 157-183. That structural delay makes the opening read like context inventory first and destabilization second, so the state shift arrives after the chapter has already cooled into routine.",
+      "rewrite_direction": "Restructure the sequence around snapshots/cycle_02/chapters/chapter_01.md:97, snapshots/cycle_02/chapters/chapter_01.md:115, and snapshots/cycle_02/chapters/chapter_01.md:157 so Harry's correction disturbs the chapter in live dramatic time rather than arriving only as a late recollection. Options: move the Harry beat forward into the active med pass, or let the home material begin only after the correction is already on page and actively haunting Carmen. Keep the concrete domestic stakes from snapshots/cycle_02/chapters/chapter_01.md:119, snapshots/cycle_02/chapters/chapter_01.md:131, and snapshots/cycle_02/chapters/chapter_01.md:151, but make them aftermath of the crack, not a buffer before it.",
+      "acceptance_test": "Pass if, by the time the revised chapter reaches the equivalent of snapshots/cycle_02/chapters/chapter_01.md:119, the reader has already witnessed Harry's dosage correction or an immediate present-tense consequence from it that materially disturbs Carmen's shift. Fail if the chapter still withholds the corrective moment itself until the late recall block beginning at snapshots/cycle_02/chapters/chapter_01.md:157."
+    },
+    {
+      "finding_id": "chapter_01_F002",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_02/chapters/chapter_01.md:181, snapshots/cycle_02/chapters/chapter_01.md:189, snapshots/cycle_02/chapters/chapter_01.md:191",
+      "problem": "Once Harry has delivered the exact correction and snapped back into Eleanor-mode, the chapter spends multiple paragraphs certifying what the reader already knows: that the moment was precise, abnormal, and memorable. The explanatory interiority at lines 189-191 largely re-proves the lucidity instead of converting it into a fresh consequence, so the ending arrives with emphasis rather than escalation.",
+      "rewrite_direction": "Compress or repurpose the material at snapshots/cycle_02/chapters/chapter_01.md:181, snapshots/cycle_02/chapters/chapter_01.md:189, and snapshots/cycle_02/chapters/chapter_01.md:191. Keep Carmen's decision not to file an incident and her inability to forget the moment, but make the post-correction narration do new work: sharpen her licensure risk, name the specific suspicion she is refusing, or create a more active unresolved consequence that carries into sleep. Do not spend multiple paragraphs restating the precision the dialogue at snapshots/cycle_02/chapters/chapter_01.md:169 already established.",
+      "acceptance_test": "Pass if the revised closing sequence after snapshots/cycle_02/chapters/chapter_01.md:169 delivers three distinct beats in order: Harry's correction, Carmen's immediate professional response, and a new unresolved consequence that follows her into bed. Fail if more than one paragraph after the correction still exists primarily to restate that Harry was unusually clear or that the moment felt different."
+    },
+    {
+      "finding_id": "chapter_01_F003",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_02/chapters/chapter_01.md:135",
+      "problem": "Gloria's line \"Mija, you look tired.\" reproduces a calibration-only example line from the style bible verbatim. That is an explicit dialogue-rule violation, and it creates cross-character leakage because borrowed calibration language is doing the work instead of a Gloria-specific maternal voice.",
+      "rewrite_direction": "Replace the line at snapshots/cycle_02/chapters/chapter_01.md:135 with Gloria-specific phrasing rooted in this exchange's actual pressure: Carmen overworking, Gloria feeding Reggie, childcare logistics, or a sharper Spanish scold. The new line should sound like Gloria in this kitchen, not imported sample language.",
+      "acceptance_test": "Pass if the revised line at or around snapshots/cycle_02/chapters/chapter_01.md:135 is not verbatim or near-verbatim to any `example_lines` in outline/style_bible.json and the exchange gives Gloria a household-specific maternal rhythm. Fail if the sentence remains substantially \"Mija, you look tired\" or another obvious carryover from the calibration examples."
+    },
+    {
+      "finding_id": "chapter_01_F004",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_02/chapters/chapter_01.md:3, snapshots/cycle_02/chapters/chapter_01.md:71, snapshots/cycle_02/chapters/chapter_01.md:101, snapshots/cycle_02/chapters/chapter_01.md:145, snapshots/cycle_02/chapters/chapter_01.md:161",
+      "problem": "The chapter repeatedly delivers core description through the same interruptive em-dash scaffold: statement, explanatory gloss, resumed statement. At this density, the construction stops feeling like flexible rhythm and starts reading as autopilot, especially in the opening description, Tammy passage, night-shift transition, commute, and Harry setup.",
+      "rewrite_direction": "In snapshots/cycle_02/chapters/chapter_01.md:3, snapshots/cycle_02/chapters/chapter_01.md:71, snapshots/cycle_02/chapters/chapter_01.md:101, snapshots/cycle_02/chapters/chapter_01.md:145, and snapshots/cycle_02/chapters/chapter_01.md:161, recast the highest-load sentences so at least some facts land in main clauses or separate sentences instead of `statement - gloss - continuation` form. Preserve the specificity and close-third texture, but vary the sentence architecture so each paragraph does not pause to annotate itself the same way.",
+      "acceptance_test": "Pass if the revised cited paragraphs no longer stack consecutive dash-gloss constructions and at least four of those cited lines land their key image or fact without an interruptive em-dash. Fail if those spans still read primarily as repeated `main clause - explanatory insert - resume` templates."
+    }
+  ],
+  "summary": "The chapter has strong sensory authority and clear command of Carmen's work world, and Harry's dosage correction is a viable opening crack. It still fails review because the opening defers that crack into a late recollection, the ending then over-explains what the correction already proved, Gloria inherits a calibration-only sample line verbatim, and the prose leans too heavily on a repeated dash-gloss sentence shape."
+}

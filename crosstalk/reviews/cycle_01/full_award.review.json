@@ -1,0 +1,25 @@
+{
+  "cycle": 1,
+  "verdict": "FAIL",
+  "summary": "This snapshot is close to major-award shortlist level: the book sustains close-third past-tense control across chapters, keeps character idiolects distinct, avoids sanitization, and maintains strong tonal conviction in its comic-noir-speculative mode. I did not find chapter-level tense drift, material continuity contradictions against the continuity sheet, or other MEDIUM+ structural blockers. The present draft still fails shortlist readiness because chapter_10 and chapter_12 each reproduce a style-bible calibration line in near-verbatim form, which is a HIGH voice-integrity/process-leak failure under the review contract.",
+  "findings": [
+    {
+      "finding_id": "FA-001",
+      "severity": "HIGH",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:5967",
+      "problem": "Ren's line at this beat reproduces a forbidden style-bible calibration sample in near-verbatim form (\"She looked more like you than I expected\"). Because the style bible explicitly marks example_lines as calibration-only text that must never be copied, this is a voice-integrity/process-leak failure, not a minor phrasing issue.",
+      "rewrite_direction": "Revise the exchange centered on snapshots/cycle_01/FINAL_NOVEL.md:5963-5971. Replace the line at snapshots/cycle_01/FINAL_NOVEL.md:5967 with new wording that still makes Ren register an unexpected resemblance between Faye and her mother, but does so in fresh language specific to this scene and Ren's own action-and-observation-based register. Keep Faye's shock response at snapshots/cycle_01/FINAL_NOVEL.md:5969-5975 causally legible, but do not reuse the sentence skeleton \"She looked more like you than I expected\" or a light synonym swap of it. A good local fix would anchor the resemblance in one concrete feature, movement, or expression rather than in the copied abstract comparison.",
+      "acceptance_test": "Pass if, when reading the revised passage at snapshots/cycle_01/FINAL_NOVEL.md:5963-5975, Ren still delivers a comparison that plausibly triggers Faye's immediate pronoun-shock and mental rearrangement, but no line in the exchange repeats or closely paraphrases the calibration sample. Fail if the revised line remains recognizable as the same sentence with only minor word substitutions or punctuation changes."
+    },
+    {
+      "finding_id": "FA-002",
+      "severity": "HIGH",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:7141",
+      "problem": "Ed's line here reproduces a forbidden style-bible calibration sample in near-verbatim form (\"That was a long time ago, huh\"). The moment otherwise works, but the copied calibration text breaks the contract against lifting example_lines and creates a process-leak inside a high-emotion beat.",
+      "rewrite_direction": "Revise the local beat at snapshots/cycle_01/FINAL_NOVEL.md:7139-7145. Replace the line at snapshots/cycle_01/FINAL_NOVEL.md:7141 with a different short utterance that preserves the intended effect: Ed dropping into unusually plain, emotionally direct syntax while looking at the record. Keep the room-stilling aftermath at snapshots/cycle_01/FINAL_NOVEL.md:7143-7147, but do not preserve the copied phrasing or a close paraphrase such as another simple elapsed-time remark with the same rhythm. A good local rewrite would make Ed's response specific to the record, memory gap, or elapsed childhood distance rather than to the calibration wording.",
+      "acceptance_test": "Pass if, in the revised passage at snapshots/cycle_01/FINAL_NOVEL.md:7139-7147, Ed still sounds unusually plain and exposed for Ed, the room's reaction remains earned, and the sentence no longer repeats or closely paraphrases the calibration sample. Fail if the new line is still effectively \"That was a long time ago, huh\" with only superficial substitution (for example, \"That was a while back, huh\" or equivalent)."
+    }
+  ]
+}

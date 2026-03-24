@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_05",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "PASS",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH05_PROSE_001_ELLIPTICAL_CLIPPING",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:57; snapshots/cycle_01/chapters/chapter_05.md:71; snapshots/cycle_01/chapters/chapter_05.md:119; snapshots/cycle_01/chapters/chapter_05.md:121; snapshots/cycle_01/chapters/chapter_05.md:127; snapshots/cycle_01/chapters/chapter_05.md:133; snapshots/cycle_01/chapters/chapter_05.md:139; snapshots/cycle_01/chapters/chapter_05.md:209; snapshots/cycle_01/chapters/chapter_05.md:215; snapshots/cycle_01/chapters/chapter_05.md:217; snapshots/cycle_01/chapters/chapter_05.md:219",
+      "problem": "The narration repeatedly drops into clipped noun-phrase fragments to force intensity: \"Not decision. Not thought.\", \"The texture of the stone. The warmth.\", \"Pale. Cold.\", \"Eleven years.\" The constitution explicitly forbids elliptical clipping in narration, and the recurrence here makes the chapter sound workshopped-thriller rather than fully inhabited.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_05.md:57; snapshots/cycle_01/chapters/chapter_05.md:71; snapshots/cycle_01/chapters/chapter_05.md:119; snapshots/cycle_01/chapters/chapter_05.md:121; snapshots/cycle_01/chapters/chapter_05.md:127; snapshots/cycle_01/chapters/chapter_05.md:133; snapshots/cycle_01/chapters/chapter_05.md:139; snapshots/cycle_01/chapters/chapter_05.md:209; snapshots/cycle_01/chapters/chapter_05.md:215; snapshots/cycle_01/chapters/chapter_05.md:217; and snapshots/cycle_01/chapters/chapter_05.md:219, convert the stand-alone fragments into grammatically complete narration or fold them into adjacent sentences. Preserve the concrete beat in each spot: instinct taking over, the altered fighting stance, mechanical vomiting, Derry's concealment, wound assessment, bandaging, Aldric's failed comfort, the cold campsite atmosphere, the tactile memory of the stab, and Maren's final realization.",
+      "acceptance_test": "Pass if the revised narration at snapshots/cycle_01/chapters/chapter_05.md:57; snapshots/cycle_01/chapters/chapter_05.md:71; snapshots/cycle_01/chapters/chapter_05.md:119; snapshots/cycle_01/chapters/chapter_05.md:121; snapshots/cycle_01/chapters/chapter_05.md:127; snapshots/cycle_01/chapters/chapter_05.md:133; snapshots/cycle_01/chapters/chapter_05.md:139; snapshots/cycle_01/chapters/chapter_05.md:209; snapshots/cycle_01/chapters/chapter_05.md:215; snapshots/cycle_01/chapters/chapter_05.md:217; and snapshots/cycle_01/chapters/chapter_05.md:219 reads as complete prose sentences rather than dropped-subject or dropped-verb fragments, while each cited beat remains legible on the page. Fail if the revised passage still relies on fragment bursts like \"Not decision,\" \"The warmth,\" \"Pale. Cold.\", or \"Eleven years\" for emphasis."
+    },
+    {
+      "finding_id": "CH05_PROSE_002_TEMPLATE_RECURRENCE",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:5; snapshots/cycle_01/chapters/chapter_05.md:61; snapshots/cycle_01/chapters/chapter_05.md:63; snapshots/cycle_01/chapters/chapter_05.md:81; snapshots/cycle_01/chapters/chapter_05.md:95; snapshots/cycle_01/chapters/chapter_05.md:119; snapshots/cycle_01/chapters/chapter_05.md:139; snapshots/cycle_01/chapters/chapter_05.md:175",
+      "problem": "The chapter keeps reaching for emphasis through the same marked scaffolds: correction moves (\"not X but Y\" / \"Not X — Y\"), \"the specific...\" qualifiers, and \"the way...\" comparison frames. Because these arrive in the opening, fight, aftermath, and Aldric/Vess beats alike, vivid material starts sounding pre-shaped by one rhetorical mold instead of scene-specific prose pressure.",
+      "rewrite_direction": "Rework the sentence machinery at snapshots/cycle_01/chapters/chapter_05.md:5; snapshots/cycle_01/chapters/chapter_05.md:61; snapshots/cycle_01/chapters/chapter_05.md:63; snapshots/cycle_01/chapters/chapter_05.md:81; snapshots/cycle_01/chapters/chapter_05.md:95; snapshots/cycle_01/chapters/chapter_05.md:119; snapshots/cycle_01/chapters/chapter_05.md:139; and snapshots/cycle_01/chapters/chapter_05.md:175. Keep the strongest contrast where it genuinely sharpens perception, but rebuild the rest through direct image, action, sound, or a different sentence shape so the chapter does not keep leaning on the same self-correcting hinge.",
+      "acceptance_test": "Pass if a cold read of snapshots/cycle_01/chapters/chapter_05.md:5; snapshots/cycle_01/chapters/chapter_05.md:61; snapshots/cycle_01/chapters/chapter_05.md:63; snapshots/cycle_01/chapters/chapter_05.md:81; snapshots/cycle_01/chapters/chapter_05.md:95; snapshots/cycle_01/chapters/chapter_05.md:119; snapshots/cycle_01/chapters/chapter_05.md:139; and snapshots/cycle_01/chapters/chapter_05.md:175 still yields the same narrative information, but the cited beats no longer repeat the same correction-template emphasis from paragraph to paragraph. Fail if multiple cited paragraphs still hinge on another \"not X/but Y\" correction or \"the specific/the way\" qualifier where direct rendering would do the work."
+    }
+  ],
+  "summary": "Chapter 05 is structurally solid: it lands the first-kill engine, keeps the combat and aftermath causally legible, stays unsanitized, and preserves distinct voices for Maren, Aldric, Vess, and Derry. It still fails the award and prose lenses because the sentence-level handling leans too hard on clipped narration and repeated correction-template rhetoric, which gives too many paragraphs the same manufactured cadence. No continuity contradiction, tense drift, dialogue-register failure, or separate craft-level structural gap surfaced from the allowed inputs."
+}

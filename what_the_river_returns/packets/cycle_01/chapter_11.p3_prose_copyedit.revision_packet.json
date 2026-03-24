@@ -1,0 +1,82 @@
+{
+  "acceptance_targets": [
+    "[ch11_prose_002] PASS if 'There it was' appears no more than once in the revised chapter and the two revised beats are non-interchangeable in imagery; FAIL if the same reveal template still appears three times.",
+    "[ch11_prose_003] PASS if revised lines 325-343 include at least three explicit Lena interior beats and no stretch longer than eight consecutive paragraphs lacks interior experience; FAIL if that block remains dialogue/external action only."
+  ],
+  "chapter_id": "chapter_11",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if 'There it was' appears no more than once in the revised chapter and the two revised beats are non-interchangeable in imagery; FAIL if the same reveal template still appears three times.",
+      "chapter_id": "chapter_11",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:149, snapshots/cycle_01/chapters/chapter_11.md:243, snapshots/cycle_01/chapters/chapter_11.md:305",
+      "finding_id": "ch11_prose_002",
+      "problem": "A recurring reveal formula (\"There it was\") appears three times, flattening emphasis and signaling autopilot rather than scene-specific discovery language.",
+      "rewrite_direction": "Keep at most one instance of the construction (strongest candidate: snapshots/cycle_01/chapters/chapter_11.md:149) and rewrite snapshots/cycle_01/chapters/chapter_11.md:243 plus snapshots/cycle_01/chapters/chapter_11.md:305 with distinct sensory or psychological phrasing tied to each moment.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if revised lines 325-343 include at least three explicit Lena interior beats and no stretch longer than eight consecutive paragraphs lacks interior experience; FAIL if that block remains dialogue/external action only.",
+      "chapter_id": "chapter_11",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:325, snapshots/cycle_01/chapters/chapter_11.md:327, snapshots/cycle_01/chapters/chapter_11.md:329, snapshots/cycle_01/chapters/chapter_11.md:331, snapshots/cycle_01/chapters/chapter_11.md:333, snapshots/cycle_01/chapters/chapter_11.md:335, snapshots/cycle_01/chapters/chapter_11.md:337, snapshots/cycle_01/chapters/chapter_11.md:339, snapshots/cycle_01/chapters/chapter_11.md:341, snapshots/cycle_01/chapters/chapter_11.md:343",
+      "finding_id": "ch11_prose_003",
+      "problem": "The hospital Clay exchange runs 10+ consecutive paragraphs without Lena interiority (thought, sensation, memory, self-assessment), so the focalization thins into transcript-like coverage.",
+      "rewrite_direction": "Insert interior beats into the cited run, especially around snapshots/cycle_01/chapters/chapter_11.md:329, snapshots/cycle_01/chapters/chapter_11.md:337, and snapshots/cycle_01/chapters/chapter_11.md:343, to keep close-third anchoring active during dialogue pressure.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "30489b3b180d8a177ca7ff4b0e606b6e802c505916f7fb05e534f52adcda538a",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on prose and copyedit finish: diction precision, rhythm control, sentence-level clarity, grammar, line-level polish without flattening style, and explicit aesthetic-risk audit (sanitization is the primary risk \u2014 do not soften or euphemize; push toward creative risk and specificity).",
+    "key": "p3_prose_copyedit",
+    "label": "prose/copyedit fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "When edge cases arise, choose the version that preserves uncomfortable specificity and character accountability; do not replace difficult scenes with procedural summary, and do not mute class, race, sexuality, or institutional cruelty when those forces are actively shaping choices.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene with violence, racism, grief, or moral compromise is rendered in abstract or polite shorthand, revise to restore specific bodily, social, and material consequence before accepting the draft.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the baseline in contemporary Mississippi speech; uncontracted forms are reserved for formality, emphasis, or social performance.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "rotate structural textures across chapters: procedural surge, quiet domestic interval, document-driven slow burn, dread preparation, aftermath inventory, and information-turn chapters; avoid repeating scene count plus dialogue density pattern in adjacent chapters.",
+      "diction": "literary but grounded; precise legal and forensic terms when needed, balanced by lived vernacular and local material detail.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third person anchored primarily to Lena, with brief controlled expansions only when factual clarity requires it.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "alternate compressed procedural sentences with longer sensory-emotional lines so pressure and reflection keep rebalancing.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

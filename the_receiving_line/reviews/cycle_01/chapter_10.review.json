@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_10",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch10_f001_case_number_continuity",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:159",
+      "problem": "The chapter reuses `4471-R` as an anonymous trauma-room example even though `outline/continuity_sheet.json` canonizes `4471-R` as Gabriel's case number. In close third, Marisol already knows that number belongs to Gabriel, so her complete lack of recognition here reads as either a mistaken case-number reuse or a focalization break.",
+      "rewrite_direction": "Revise `snapshots/cycle_01/chapters/chapter_10.md:155-160` so the binder passage is unambiguous. Either change `4471-R` to a different case number, or make Marisol explicitly recognize that she has hit Gabriel's file and show why she turns past it to keep hunting the clipped-corner cases.",
+      "acceptance_test": "PASS if `snapshots/cycle_01/chapters/chapter_10.md:155-160` no longer leaves `4471-R` floating as an unremarked background entry: either the number is no longer Gabriel's canonical identifier, or Marisol visibly registers that it is Gabriel's record before moving on. FAIL if a reader can still read `4471-R` as Gabriel's file without any POV acknowledgement."
+    },
+    {
+      "finding_id": "ch10_f002_clipped_narration_tic",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:163; snapshots/cycle_01/chapters/chapter_10.md:169; snapshots/cycle_01/chapters/chapter_10.md:183; snapshots/cycle_01/chapters/chapter_10.md:297; snapshots/cycle_01/chapters/chapter_10.md:379",
+      "problem": "The chapter repeatedly lands emphasis with article-stripped noun fragments and clipped inventory beats (`Municipal receiving clinic.`, `Labor safe.`, `Reflux. Bedding discard. Nontransportable.`, `Invoice. Invoice.`, `Not enough for court.`). That violates the constitution's no-elliptical-clipping rule and starts to make high-pressure narration sound like note cards instead of finished prose.",
+      "rewrite_direction": "Rewrite the fragment-heavy spans at `snapshots/cycle_01/chapters/chapter_10.md:163-169`, `snapshots/cycle_01/chapters/chapter_10.md:183-183`, `snapshots/cycle_01/chapters/chapter_10.md:297-298`, and `snapshots/cycle_01/chapters/chapter_10.md:379-379` into grammatically complete sentences. Keep the snap, but let the narration carry full syntax rather than isolated labels.",
+      "acceptance_test": "PASS if each cited span reads as complete narration without standalone noun-fragment sentences used for impact, and the emotional force still lands through rhythm and detail. FAIL if the revised chapter still contains clipped beats like `Labor safe.` or `Invoice. Invoice.` in those passages."
+    },
+    {
+      "finding_id": "ch10_f003_negation_beat_repetition",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:35; snapshots/cycle_01/chapters/chapter_10.md:243; snapshots/cycle_01/chapters/chapter_10.md:265; snapshots/cycle_01/chapters/chapter_10.md:287; snapshots/cycle_01/chapters/chapter_10.md:345; snapshots/cycle_01/chapters/chapter_10.md:379",
+      "problem": "The prose keeps returning to the same negated-action beat to signal tension and withholding: characters `did not look up`, Marisol `almost laughed and did not`, she `did not offer a hand`, Lidia `did not look up`, Marisol `did not move`. After the third recurrence, the chapter's emotional pivots start arriving in the same sentence shape rather than in scene-specific behavior.",
+      "rewrite_direction": "Vary the tension beats in `snapshots/cycle_01/chapters/chapter_10.md:35-35`, `snapshots/cycle_01/chapters/chapter_10.md:243-243`, `snapshots/cycle_01/chapters/chapter_10.md:265-287`, `snapshots/cycle_01/chapters/chapter_10.md:345-345`, and `snapshots/cycle_01/chapters/chapter_10.md:379-379`. Replace several of the negated beats with affirmative physical actions, sensory tells, or speech-adjacent gestures that belong specifically to Paloma, Marisol, and Lidia.",
+      "acceptance_test": "PASS if at least four of the cited beats are revised into distinct positive actions or sensory cues and no near-identical `did not [verb]` tension tag remains more than twice across the chapter. FAIL if the chapter still leans on the same negated-action construction for three or more major beats."
+    }
+  ],
+  "summary": "Chapter 10 cleanly executes its discovery spine and keeps Marisol, Gabriel, Naila, and Paloma in distinct registers, so booker and dialogue clear. It still fails review on one high continuity/focalization break around Gabriel's canonical case number and on two recurring prose habits, clipped noun-fragment narration and repeated negated-action beats, that flatten emphasis and violate the constitution's prose constraints."
+}

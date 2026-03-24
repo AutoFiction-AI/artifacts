@@ -1,0 +1,83 @@
+{
+  "acceptance_targets": [
+    "[CH02-PROSE-02] PASS if revised target passages use at least four distinct beat shapes and each repeated template ('... once' beats, 'looked' beats) appears no more than twice chapter-wide; FAIL if either template still appears three or more times.",
+    "[CH02-PROSE-03] PASS if this span includes at least two distinct paragraphs with explicit internal experience from Ina and one resulting dialogue/action adjustment; FAIL if the sequence remains only external dialogue and blocking."
+  ],
+  "chapter_id": "chapter_02",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if revised target passages use at least four distinct beat shapes and each repeated template ('... once' beats, 'looked' beats) appears no more than twice chapter-wide; FAIL if either template still appears three or more times.",
+      "chapter_id": "chapter_02",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_02.md:29; snapshots/cycle_01/chapters/chapter_02.md:163; snapshots/cycle_01/chapters/chapter_02.md:191; snapshots/cycle_01/chapters/chapter_02.md:244; snapshots/cycle_01/chapters/chapter_02.md:290; snapshots/cycle_01/chapters/chapter_02.md:41; snapshots/cycle_01/chapters/chapter_02.md:123; snapshots/cycle_01/chapters/chapter_02.md:175; snapshots/cycle_01/chapters/chapter_02.md:282",
+      "finding_id": "CH02-PROSE-02",
+      "problem": "Recurring beat templates repeat past the twice-only threshold: both '[name] ... once' and '[name] looked ...' constructions recur enough to create rhythmic autopilot and flatten prose texture.",
+      "rewrite_direction": "Vary beat construction at snapshots/cycle_01/chapters/chapter_02.md:29, snapshots/cycle_01/chapters/chapter_02.md:163, snapshots/cycle_01/chapters/chapter_02.md:191, snapshots/cycle_01/chapters/chapter_02.md:244, snapshots/cycle_01/chapters/chapter_02.md:290, snapshots/cycle_01/chapters/chapter_02.md:41, snapshots/cycle_01/chapters/chapter_02.md:123, snapshots/cycle_01/chapters/chapter_02.md:175, and snapshots/cycle_01/chapters/chapter_02.md:282 by replacing at least four instances with distinct sensory/action/subtext beats tied to scene pressure.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if this span includes at least two distinct paragraphs with explicit internal experience from Ina and one resulting dialogue/action adjustment; FAIL if the sequence remains only external dialogue and blocking.",
+      "chapter_id": "chapter_02",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_02.md:246; snapshots/cycle_01/chapters/chapter_02.md:274",
+      "finding_id": "CH02-PROSE-03",
+      "problem": "There is a 15-paragraph external-only run in the script-room exchange before interiority returns, making the focalized chapter read like a staged transcript instead of close-third narrative.",
+      "rewrite_direction": "Inject 2-3 interior beats for Ina between snapshots/cycle_01/chapters/chapter_02.md:246 and snapshots/cycle_01/chapters/chapter_02.md:274 (thought, body sensation, or self-assessment tied to contract pressure and Ji-eun's risk), and let at least one beat alter Ina's next spoken line.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "cc4267de676affa57ca1c12276146063abcfbaedb0ebc05886d775f515f5254a",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on prose and copyedit finish: diction precision, rhythm control, sentence-level clarity, grammar, line-level polish without flattening style, and explicit aesthetic-risk audit (sanitization is the primary risk \u2014 do not soften or euphemize; push toward creative risk and specificity).",
+    "key": "p3_prose_copyedit",
+    "label": "prose/copyedit fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into uncomfortable specificity when stakes demand it: show coercion mechanics, sexual negotiation, grief rituals, and financial desperation at scene level. In edge cases, prefer precision over decorum; protect character dignity through perspective accuracy, not by omitting the hard material.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene requires bodily, economic, or moral consequence and the draft retreats into abstract phrasing, rewrite with concrete action, sensation, and decision impact before proceeding.",
+      "operational_resolution_rule": "When uncertain between tasteful distance and narrative truth, choose the version that preserves causal accountability and embodied consequence, then tune language for clarity rather than softness.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the baseline in spoken dialogue; uncontracted forms are reserved for deliberate emphasis, legal language, or character-specific formality.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate chapter structures deliberately: high-density dialogue vs interior reflection, multi-scene public collision vs two-scene intimate pressure, aftermath inventory vs anticipatory dread. Never let two consecutive chapters share the same pacing architecture or turn mechanism.",
+      "diction": "Contemporary, unsentimental literary diction that permits technical vocabulary, profanity, and class-marked speech without flattening idiolects.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third person centered on Seo Ina, with brief controlled widenings in public-event chapters.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Alternating pressure waves: compressed clauses in operational stress, longer breath-based lines in grief and reflection.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

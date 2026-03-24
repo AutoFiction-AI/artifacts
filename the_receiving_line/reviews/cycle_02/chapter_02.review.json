@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_02",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch02_craft_continuity",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:35; snapshots/cycle_02/chapters/chapter_02.md:297; snapshots/cycle_02/chapters/chapter_02.md:373",
+      "problem": "The chapter seam breaks continuity. This scene reintroduces Gabriel as if he is still waiting for final car assignment and then has him say Marisol recognized him in intake \"yesterday,\" but the boundary material for the prior chapter ends with him already inside Car 8 at final two-minute and this chapter still closes during the same southbound staging window. The result reads like an unmarked rewind rather than a continuation.",
+      "rewrite_direction": "Rebuild the custody setup around snapshots/cycle_02/chapters/chapter_02.md:33, snapshots/cycle_02/chapters/chapter_02.md:35, snapshots/cycle_02/chapters/chapter_02.md:87, and snapshots/cycle_02/chapters/chapter_02.md:297 so Gabriel's location and timing follow directly from the prior-chapter tail. Either pull him out of an already-loaded car for medical, or explicitly establish an unload/requeue before the lane-three description; then replace the time marker at snapshots/cycle_02/chapters/chapter_02.md:297 with one that matches the actual elapsed time.",
+      "acceptance_test": "Pass if a reader can move from the chapter-01 boundary excerpt into the revised passages at snapshots/cycle_02/chapters/chapter_02.md:33, snapshots/cycle_02/chapters/chapter_02.md:35, snapshots/cycle_02/chapters/chapter_02.md:87, and snapshots/cycle_02/chapters/chapter_02.md:297 without inventing an unseen reset in Gabriel's custody state, and if the accusation uses a same-shift time marker unless a day break is explicitly staged on the page. Fail if Gabriel is still described as awaiting final car assignment after the prior boundary has already placed him in Car 8, or if \"yesterday\" remains without a clearly established elapsed day."
+    },
+    {
+      "finding_id": "ch02_craft_anatomy",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:17; snapshots/cycle_02/chapters/chapter_02.md:53; snapshots/cycle_02/chapters/chapter_02.md:57; snapshots/cycle_02/chapters/chapter_02.md:339",
+      "problem": "The medical logic puts a splenic injury on Gabriel's right side. Marisol identifies right-rib trauma, palpates the right side, and then twice invokes splenic danger, including in Celia's scan read. Because the spleen is left-sided, the pretext currently reads as anatomically wrong rather than plausibly improvised under pressure.",
+      "rewrite_direction": "Align the injury side and organ logic at snapshots/cycle_02/chapters/chapter_02.md:17, snapshots/cycle_02/chapters/chapter_02.md:53, snapshots/cycle_02/chapters/chapter_02.md:57, and snapshots/cycle_02/chapters/chapter_02.md:339. If the bruise stays on the right side, change the concern and scan language to a right-sided risk such as liver trauma, kidney trauma, or generic internal bleeding. If splenic danger is the intended lever, move the bruise, palpation, and later scan references to the left side everywhere.",
+      "acceptance_test": "Pass if the revised passages at snapshots/cycle_02/chapters/chapter_02.md:17, snapshots/cycle_02/chapters/chapter_02.md:53, snapshots/cycle_02/chapters/chapter_02.md:57, and snapshots/cycle_02/chapters/chapter_02.md:339 all describe an anatomically compatible side-and-organ pairing, and Celia's scan result answers the same risk Marisol used to justify the transfer. Fail if the chapter still pairs right-side rib trauma with a splenic threat."
+    },
+    {
+      "finding_id": "ch02_prose_negation_tic",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:29; snapshots/cycle_02/chapters/chapter_02.md:71; snapshots/cycle_02/chapters/chapter_02.md:95; snapshots/cycle_02/chapters/chapter_02.md:205",
+      "problem": "A negation-then-correction sentence pattern turns into a visible tic: \"It was not refusal. It was arithmetic,\" \"It was not because the recorder looked expensive,\" \"He did not lean on her. He would have fallen first,\" and \"He was not accusing for effect. He was keeping accounts.\" The chapter uses this architecture often enough that the prose starts announcing its own emphasis instead of letting image and rhythm do the work.",
+      "rewrite_direction": "Recast the repeated beats anchored at snapshots/cycle_02/chapters/chapter_02.md:29, snapshots/cycle_02/chapters/chapter_02.md:71, snapshots/cycle_02/chapters/chapter_02.md:95, and snapshots/cycle_02/chapters/chapter_02.md:205 so at least two of them land through fresh syntax, image, or direct assertion instead of the same explicit negation-and-reframe move. Keep the distinctions, but vary the sentence architecture.",
+      "acceptance_test": "Pass if the revised paragraphs anchored at snapshots/cycle_02/chapters/chapter_02.md:29, snapshots/cycle_02/chapters/chapter_02.md:71, snapshots/cycle_02/chapters/chapter_02.md:95, and snapshots/cycle_02/chapters/chapter_02.md:205 no longer produce three or more near-identical negation-then-reframe beats when read in sequence. Fail if a reader still encounters that same corrective sentence shape in three or more of those four spots."
+    }
+  ],
+  "summary": "Booker and dialogue pass: the confrontation engine lands, Gabriel's anger stays morally coherent, and Marisol, Gabriel, Celia, and Baca remain distinct in register. Craft fails on a chapter-seam continuity reset and an anatomically wrong splenic-risk call on Gabriel's right side. Prose fails on a repeated negation-then-correction sentence formula that becomes a chapter-level tic."
+}

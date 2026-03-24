@@ -1,0 +1,94 @@
+{
+  "acceptance_targets": [
+    "[chapter_17_F001] Pass if, in the revised spans, there is no more than one explicit reassurance line (e.g., 'right thing,' 'proud,' 'not on you') and at least two observable beats show unresolved fallout without editorial comfort language; fail otherwise.",
+    "[chapter_17_F002] Pass if the revised aftermath includes exactly one sponsor-status conversation and one imaging-logistics conversation, and the final paragraph introduces a new unresolved complication not already stated earlier in the chapter; fail if consequence beats are restated in parallel scenes.",
+    "[FBR-004] PASS if utility-balance numbers form one coherent timeline across snapshots/cycle_02/FINAL_NOVEL.md:6558, snapshots/cycle_02/FINAL_NOVEL.md:6632, snapshots/cycle_02/FINAL_NOVEL.md:7255, and snapshots/cycle_02/FINAL_NOVEL.md:7257. FAIL if both totals coexist for the same period without explicit date logic."
+  ],
+  "chapter_id": "chapter_17",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if, in the revised spans, there is no more than one explicit reassurance line (e.g., 'right thing,' 'proud,' 'not on you') and at least two observable beats show unresolved fallout without editorial comfort language; fail otherwise.",
+      "chapter_id": "chapter_17",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_17.md:187; snapshots/cycle_02/chapters/chapter_17.md:191; snapshots/cycle_02/chapters/chapter_17.md:289; snapshots/cycle_02/chapters/chapter_17.md:423; snapshots/cycle_02/chapters/chapter_17.md:461",
+      "finding_id": "chapter_17_F001",
+      "problem": "Sanitization via stacked moral safety valves: immediately after the retirement call, multiple characters repeatedly reassure Anika that the choice was unquestionably right. The repetition defuses the earned discomfort around money, power, and loss instead of letting consequence stay jagged on-page.",
+      "rewrite_direction": "Revise the reassurance cluster in snapshots/cycle_02/chapters/chapter_17.md:187-195, snapshots/cycle_02/chapters/chapter_17.md:281-295, snapshots/cycle_02/chapters/chapter_17.md:419-427, and snapshots/cycle_02/chapters/chapter_17.md:459-467. Keep at most one explicit validating line; replace the rest with conflicted behavior, silence, or materially costly decisions (billing, transport, treatment timing) that preserve moral ambiguity.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if the revised aftermath includes exactly one sponsor-status conversation and one imaging-logistics conversation, and the final paragraph introduces a new unresolved complication not already stated earlier in the chapter; fail if consequence beats are restated in parallel scenes.",
+      "chapter_id": "chapter_17",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_17.md:271; snapshots/cycle_02/chapters/chapter_17.md:301; snapshots/cycle_02/chapters/chapter_17.md:381; snapshots/cycle_02/chapters/chapter_17.md:443; snapshots/cycle_02/chapters/chapter_17.md:487",
+      "finding_id": "chapter_17_F002",
+      "problem": "After the decisive retirement beat, the chapter runs a long aftermath that restates the same consequence set (medical stop, money pressure, supportive framing) across multiple scenes, which reduces forward pressure and blunts the chapter's terminal impact.",
+      "rewrite_direction": "Compress snapshots/cycle_02/chapters/chapter_17.md:271-491 into two distinct aftermath movements: (1) immediate institutional/public consequence and (2) one private domestic consequence turn. Merge redundant logistics/emotion loops in snapshots/cycle_02/chapters/chapter_17.md:309-341, snapshots/cycle_02/chapters/chapter_17.md:381-389, and snapshots/cycle_02/chapters/chapter_17.md:459-467.",
+      "severity": "MEDIUM",
+      "source": "booker",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if utility-balance numbers form one coherent timeline across snapshots/cycle_02/FINAL_NOVEL.md:6558, snapshots/cycle_02/FINAL_NOVEL.md:6632, snapshots/cycle_02/FINAL_NOVEL.md:7255, and snapshots/cycle_02/FINAL_NOVEL.md:7257. FAIL if both totals coexist for the same period without explicit date logic.",
+      "chapter_id": "chapter_17",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:6558",
+      "finding_id": "FBR-004",
+      "problem": "Chapter 17 states utility arrears as 1,860, but later chapter accounting gives 1,240.12 remaining after a 620 payment. Without explicit date framing, this is a financial continuity contradiction against both Chapter 18 and the continuity sheet.",
+      "rewrite_direction": "Reconcile financial arithmetic in snapshots/cycle_02/FINAL_NOVEL.md:6558 and snapshots/cycle_02/FINAL_NOVEL.md:6632 with snapshots/cycle_02/FINAL_NOVEL.md:7255-7257. Option A: update Chapter 17 figures to post-payment balance. Option B: explicitly date Chapter 17 pre-payment in snapshots/cycle_02/FINAL_NOVEL.md:6516-6535 and adjust later references to preserve chronology.",
+      "severity": "HIGH",
+      "source": "booker_global",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "865aa6a74fc6eb4faab589aa7485224ed118ade0e7e075e531d59fd82615081e",
+  "must_fix_count": 3,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into uncomfortable specificity when it changes behavior: pain detail, debt arithmetic, manipulative care, and mixed motives. In edge cases, prefer the truest in-character action over protective narration, then carry the real consequence forward instead of immediately moralizing it away.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If coercion, grief, injury, or economic shame appears, language must stay specific and embodied; vague softening triggers mandatory rewrite.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High - contractions are the spoken default; uncontracted forms are reserved for formal authority, deliberate emphasis, or emotional freezing.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Vary scene count and dialogue density chapter to chapter: rotate match compression, slow inventory aftermath, institutional pressure scenes, and quiet domestic intervals so adjacent chapters do not share the same structural pulse.",
+      "diction": "Concrete contemporary diction with class-aware specificity; avoid abstract therapy language unless a character would actually use it.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third anchored in Anika for most chapters, with brief controlled slips toward Ravi in designated confrontation and aftermath chapters.",
+      "rhythm_target": "Alternate clipped athletic sequences with longer reflective cadences; sentence length should track exertion, shame, and release.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

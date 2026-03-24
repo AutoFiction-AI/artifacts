@@ -1,0 +1,43 @@
+{
+  "chapter_id": "chapter_02",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_02_craft_001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:217; snapshots/cycle_02/chapters/chapter_02.md:313",
+      "problem": "Sanitization/tension defusal at a peak family-consequence beat: after Lena chooses the case over Ida in the pantry rupture, Ida's emotional break is reported second-hand by Jalen instead of being rendered on-page, which softens the immediate human cost of Lena's choice.",
+      "rewrite_direction": "Revise the consequence bridge anchored at snapshots/cycle_02/chapters/chapter_02.md:217 and snapshots/cycle_02/chapters/chapter_02.md:313. Add an on-page aftermath beat (immediately after :217 or during the callback sequence at snapshots/cycle_02/chapters/chapter_02.md:317 and snapshots/cycle_02/chapters/chapter_02.md:325) where Lena directly encounters and responds to Ida's hurt, with specific bodily/social consequence rather than relay summary.",
+      "acceptance_test": "PASS if the revised passage anchored to snapshots/cycle_02/chapters/chapter_02.md:217 and snapshots/cycle_02/chapters/chapter_02.md:313 shows Ida's emotional state in-scene (not only via Jalen report) and includes at least one direct line where Lena acknowledges the harm from taking the key; FAIL if Ida's crying remains purely second-hand exposition."
+    },
+    {
+      "finding_id": "chapter_02_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:9; snapshots/cycle_02/chapters/chapter_02.md:27; snapshots/cycle_02/chapters/chapter_02.md:133; snapshots/cycle_02/chapters/chapter_02.md:305",
+      "problem": "Recurring prose formula (\"smelled like ...\") appears four times and begins to read as autopilot sensory scaffolding rather than intentional variation.",
+      "rewrite_direction": "Rework at least two of the repeated constructions at snapshots/cycle_02/chapters/chapter_02.md:9, snapshots/cycle_02/chapters/chapter_02.md:27, snapshots/cycle_02/chapters/chapter_02.md:133, and snapshots/cycle_02/chapters/chapter_02.md:305 so the sensory setup varies by syntax and channel (sound, touch, spatial pressure) while staying in Lena-close perception.",
+      "acceptance_test": "PASS if, across the four cited lines, no more than two retain the exact \"smell(ed) like\" construction and the replacements provide concrete non-olfactory perception; FAIL if three or more of those lines still use the same formula."
+    },
+    {
+      "finding_id": "chapter_02_prose_002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:245; snapshots/cycle_02/chapters/chapter_02.md:271",
+      "problem": "Elliptical clipping in the storage-inventory reveal (fragment chains like \"Second box: ... Third box: ...\" and \"No red twine, no ledger...\") pushes narration toward telegraphic shorthand and weakens sentence-level control at a key discovery moment.",
+      "rewrite_direction": "Rewrite the inventory and absence beats at snapshots/cycle_02/chapters/chapter_02.md:245 and snapshots/cycle_02/chapters/chapter_02.md:271 into fully grammatical sentences with explicit subject-verb structure, while preserving urgency through cadence rather than fragment clipping.",
+      "acceptance_test": "PASS if the revised text at snapshots/cycle_02/chapters/chapter_02.md:245 and snapshots/cycle_02/chapters/chapter_02.md:271 removes colon-labeled fragment lists and verbless inventory strings, replacing them with complete sentences that still clearly mark what is present and missing; FAIL if fragment-list syntax remains the primary construction in those beats."
+    }
+  ],
+  "summary": "Chapter 2 lands its required causal beats and stays continuity-consistent, with strong idiolect separation and contraction-appropriate dialogue, but it fails craft/prose due one HIGH sanitization-defusal at a key family consequence moment and two MEDIUM sentence-level repetition/clipping issues.",
+  "coverage_scene_ids": []
+}

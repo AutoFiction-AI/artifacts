@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_13",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "PASS",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH13-DIALOGUE-01",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_02/chapters/chapter_13.md:29; snapshots/cycle_02/chapters/chapter_13.md:105; snapshots/cycle_02/chapters/chapter_13.md:109; snapshots/cycle_02/chapters/chapter_13.md:123; snapshots/cycle_02/chapters/chapter_13.md:143; snapshots/cycle_02/chapters/chapter_13.md:155; snapshots/cycle_02/chapters/chapter_13.md:159; snapshots/cycle_02/chapters/chapter_13.md:181; snapshots/cycle_02/chapters/chapter_13.md:271; snapshots/cycle_02/chapters/chapter_13.md:283",
+      "problem": "The chapter repeatedly gives June and Omar the same period-stopped interrogative cadence ('What else.' 'Did he.' 'Can the hole be filled.' 'Is that wrong.'). It reads as pressure at first, but the repetition turns into a house mannerism that blurs idiolect separation and makes several high-stakes lines feel typographically flattened rather than naturally spoken. That cuts against the style bible's requirement that June sound blunt and anti-ornamental while Omar keeps a more precise, balanced syntax under pressure.",
+      "rewrite_direction": "Rework the pressure exchanges at snapshots/cycle_02/chapters/chapter_13.md:105, snapshots/cycle_02/chapters/chapter_13.md:143, snapshots/cycle_02/chapters/chapter_13.md:155, snapshots/cycle_02/chapters/chapter_13.md:181, snapshots/cycle_02/chapters/chapter_13.md:271, and snapshots/cycle_02/chapters/chapter_13.md:283 so June's questions land in her own blunt, bodily register and Omar's questions retain more syntactic precision. Vary punctuation and sentence architecture instead of letting every hard question arrive as the same clipped period-ended fragment.",
+      "acceptance_test": "In the revised exchanges around snapshots/cycle_02/chapters/chapter_13.md:105-165 and snapshots/cycle_02/chapters/chapter_13.md:267-289, a cold read should let a reader distinguish June's and Omar's questions by syntax and rhythm alone in at least two unattributed lines each. Fail if those beats still stack multiple period-stopped interrogatives so that the speakers sound driven by the same house cadence."
+    },
+    {
+      "finding_id": "CH13-PROSE-01",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_02/chapters/chapter_13.md:75; snapshots/cycle_02/chapters/chapter_13.md:231; snapshots/cycle_02/chapters/chapter_13.md:261; snapshots/cycle_02/chapters/chapter_13.md:311",
+      "problem": "At several hinge moments the prose falls back on stock suspense throat-clearing ('For one stretched second', 'For a second', 'Then there was only the last decision', 'For a moment nothing happened'). Because the rest of the chapter is strongest when tension comes through touch, sound, and document detail, these repeated pause-markers read as generic cinematic scaffolding rather than pressure generated from the scene itself.",
+      "rewrite_direction": "Rework the hinge beats at snapshots/cycle_02/chapters/chapter_13.md:75, snapshots/cycle_02/chapters/chapter_13.md:231, snapshots/cycle_02/chapters/chapter_13.md:261, and snapshots/cycle_02/chapters/chapter_13.md:311 so each pause is carried by a distinct physical or relational consequence specific to that moment: June's proximity at the exhibit list, Ben seeing the grievance title, the envelope coming onto the desk, and the sent-email delay. Keep the beats, but remove the generic temporal scaffolding.",
+      "acceptance_test": "On a read-through of the revised passages at snapshots/cycle_02/chapters/chapter_13.md:75, snapshots/cycle_02/chapters/chapter_13.md:231, snapshots/cycle_02/chapters/chapter_13.md:261, and snapshots/cycle_02/chapters/chapter_13.md:311, at least three of the four pauses should be legible through concrete action, sensation, or leverage shift rather than formulaic lead-ins like 'For a second,' 'For a moment,' or 'Then there was only.' Fail if the scene changes still rely on those stock pause cues."
+    }
+  ],
+  "summary": "Strong causal chapter that cleanly lands the boundary brief: the grievance packet is assembled through painstaking, almost intimate collaboration, Leela's exact withholding choice is dramatized on-page, and the ending is brave but insufficient in the right way. Voice, continuity, tense, and institutional stakes are largely on target, and I did not find sanitization drift or continuity contradiction. The fail is sentence-level: repeated period-flattened question beats blur dialogue idiolects, and repeated suspense markers become visible prose tics at key hinges."
+}

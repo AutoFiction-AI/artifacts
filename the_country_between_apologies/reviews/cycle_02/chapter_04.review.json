@@ -1,0 +1,88 @@
+{
+  "chapter_id": "chapter_04",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch04-booker-001",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:202; snapshots/cycle_02/chapters/chapter_04.md:214; snapshots/cycle_02/chapters/chapter_04.md:250; snapshots/cycle_02/chapters/chapter_04.md:286; snapshots/cycle_02/chapters/chapter_04.md:318",
+      "problem": "The chapter replays the same refusal beat (attempt, delay, no amount committed) across multiple cycles without enough new causal movement, so escalation feels looped rather than sharpened.",
+      "rewrite_direction": "Tighten one of the repeated refusal loops in snapshots/cycle_02/chapters/chapter_04.md:202 and snapshots/cycle_02/chapters/chapter_04.md:250, then spend reclaimed space on a new irreversible consequence anchored in snapshots/cycle_02/chapters/chapter_04.md:286 or snapshots/cycle_02/chapters/chapter_04.md:318 (e.g., a concrete account-state change, filing step, or locked-out option that cannot be undone by another promise text).",
+      "acceptance_test": "PASS if revised material between snapshots/cycle_02/chapters/chapter_04.md:202 and snapshots/cycle_02/chapters/chapter_04.md:320 contains no more than two refusal cycles and each cycle introduces a distinct new leverage change visible on-page; FAIL if a third cycle repeats 'no amount/no transfer' without a new irreversible state change."
+    },
+    {
+      "finding_id": "ch04-craft-001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:238; snapshots/cycle_02/chapters/chapter_04.md:240; snapshots/cycle_02/chapters/chapter_04.md:288; snapshots/cycle_02/chapters/chapter_04.md:312",
+      "problem": "Sanitization drift: at the key harm window, the prose retreats into abstract planning language and probability bookkeeping, which cushions the immediate family consequence instead of forcing a present-tense moral collision.",
+      "rewrite_direction": "In snapshots/cycle_02/chapters/chapter_04.md:238 and snapshots/cycle_02/chapters/chapter_04.md:245, replace at least one abstract ledger/probability block with a concrete in-scene consequence beat tied to June/Nora's exposure; in snapshots/cycle_02/chapters/chapter_04.md:286 and snapshots/cycle_02/chapters/chapter_04.md:312, swap summary phrasing for embodied action/reaction that shows the cost of his delay in the moment.",
+      "acceptance_test": "PASS if revised spans around snapshots/cycle_02/chapters/chapter_04.md:238-245 and snapshots/cycle_02/chapters/chapter_04.md:286-314 include at least one concrete, observable consequence event (not just projected probabilities or generic promises) and keep the chapter's decision climax grounded in scene; FAIL if the beat remains primarily abstract accounting plus summary language."
+    },
+    {
+      "finding_id": "ch04-craft-002",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:266; snapshots/cycle_02/chapters/chapter_04.md:288; snapshots/cycle_02/chapters/chapter_04.md:320",
+      "problem": "Timidity at decision beats: Eli's refusals stay in managerial euphemism ('full hit', 'start sending this week') rather than exposing the sharper internal motive he is protecting.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_04.md:266, snapshots/cycle_02/chapters/chapter_04.md:288, and snapshots/cycle_02/chapters/chapter_04.md:320, add one explicit internal line naming what he chooses to preserve (mobility/control) at whose expense, paired with immediate bodily response rather than administrative phrasing.",
+      "acceptance_test": "PASS if each revised refusal beat in the lines anchored above contains one direct self-assessment sentence and one physical marker of strain tied to that admission; FAIL if refusals remain only logistical phrasing with no explicit internal stake naming."
+    },
+    {
+      "finding_id": "ch04-dialogue-001",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:127; snapshots/cycle_02/chapters/chapter_04.md:167; snapshots/cycle_02/chapters/chapter_04.md:252; snapshots/cycle_02/chapters/chapter_04.md:272; snapshots/cycle_02/chapters/chapter_04.md:280",
+      "problem": "The late-call confrontations lean toward legal-transcript polish (fully formed declaratives, minimal interruption), which reduces live pressure and blurs spoken spontaneity under stress.",
+      "rewrite_direction": "Revise exchange beats in snapshots/cycle_02/chapters/chapter_04.md:252 through snapshots/cycle_02/chapters/chapter_04.md:280 to include interruption, overlap, self-correction, and sharper colloquial rhythm while preserving Nora's deadline precision and Eli's evasive hedging.",
+      "acceptance_test": "PASS if the revised call segment anchored to snapshots/cycle_02/chapters/chapter_04.md:252-280 includes at least three audible pressure markers (cut-off lines, false starts, interrupted clauses, or abrupt fragments) and the two voices remain clearly distinct in rhythm and intent; FAIL if lines remain uniformly polished declaratives."
+    },
+    {
+      "finding_id": "ch04-prose-001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:5; snapshots/cycle_02/chapters/chapter_04.md:53; snapshots/cycle_02/chapters/chapter_04.md:125; snapshots/cycle_02/chapters/chapter_04.md:159; snapshots/cycle_02/chapters/chapter_04.md:175; snapshots/cycle_02/chapters/chapter_04.md:208; snapshots/cycle_02/chapters/chapter_04.md:218; snapshots/cycle_02/chapters/chapter_04.md:278",
+      "problem": "A repeated auditory-filter construction ('he heard/he could hear/heard himself') appears more than twice and becomes a visible prose tic that distances immediacy.",
+      "rewrite_direction": "In snapshots/cycle_02/chapters/chapter_04.md:125, snapshots/cycle_02/chapters/chapter_04.md:159, snapshots/cycle_02/chapters/chapter_04.md:175, snapshots/cycle_02/chapters/chapter_04.md:218, and snapshots/cycle_02/chapters/chapter_04.md:278, replace most filter-verb openings with direct sensory/action rendering so sound arrives without narrative mediation.",
+      "acceptance_test": "PASS if the revised chapter uses no more than two total 'he heard/he could hear/heard himself' constructions and preserves clarity of who speaks/what is heard at each cited beat; FAIL if the pattern remains 3+ times."
+    },
+    {
+      "finding_id": "ch04-prose-002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:125; snapshots/cycle_02/chapters/chapter_04.md:145; snapshots/cycle_02/chapters/chapter_04.md:268",
+      "problem": "The confrontation relies on repeated pause-label scaffolding ('There was a pause' / 'Another pause' / inhale beat), which reads formulaic by the third use.",
+      "rewrite_direction": "Rework beat transitions at snapshots/cycle_02/chapters/chapter_04.md:125, snapshots/cycle_02/chapters/chapter_04.md:145, and snapshots/cycle_02/chapters/chapter_04.md:268 with concrete counter-actions (background interruption, breath control detail, movement against environment) instead of explicit pause labels.",
+      "acceptance_test": "PASS if revised lines at the cited anchors contain zero literal 'There was a pause'/'Another pause' constructions and at least two replacement beats are concrete physical or auditory actions; FAIL if pause labels remain the primary transition device."
+    },
+    {
+      "finding_id": "ch04-prose-003",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:99; snapshots/cycle_02/chapters/chapter_04.md:216; snapshots/cycle_02/chapters/chapter_04.md:218",
+      "problem": "Mechanical style-bible leakage: the narration explicitly names Eli's stress behavior ('logistics first, fact tone, no number') instead of dramatizing it, which makes character voice feel over-instrumented.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_04.md:218, remove the diagnostic label and revise surrounding lines (snapshots/cycle_02/chapters/chapter_04.md:216 and snapshots/cycle_02/chapters/chapter_04.md:219) so the stress tell is inferred from his word choice, syntax, and Nora's reaction.",
+      "acceptance_test": "PASS if the revised passage around snapshots/cycle_02/chapters/chapter_04.md:216-219 conveys Eli's evasive logistics pattern without meta terms like 'stress tell' and readers can infer the behavior from dialogue/action alone; FAIL if the narration still names the pattern explicitly."
+    }
+  ],
+  "summary": "Chapter 4 lands core continuity beats and maintains close-third past-tense control, but it fails review threshold on craft rigor: escalation loops repeat, key decision beats over-rely on procedural abstraction, dialogue pressure skews transcript-formal, and repeated prose constructions become visible tics.",
+  "coverage_scene_ids": [
+    "motel-ledger-and-proof-review",
+    "nora-call-deadline-negotiation",
+    "failed-transfer-and-legal-window",
+    "departure-west-after-no-transfer"
+  ]
+}

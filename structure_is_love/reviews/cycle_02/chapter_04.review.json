@@ -1,0 +1,62 @@
+{
+  "chapter_id": "chapter_04",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_04_F001",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:81; snapshots/cycle_02/chapters/chapter_04.md:99; snapshots/cycle_02/chapters/chapter_04.md:177; snapshots/cycle_02/chapters/chapter_04.md:193; snapshots/cycle_02/chapters/chapter_04.md:207",
+      "problem": "The match middle over-indexes on sequential score accounting, so escalation plateaus before the chapter's major consequence lands. The causal line (taunt-triggered destabilization -> adaptation -> win -> collapse) is present but diluted by repetitive bookkeeping beats.",
+      "rewrite_direction": "Tighten the rally-by-rally reporting at snapshots/cycle_02/chapters/chapter_04.md:81, snapshots/cycle_02/chapters/chapter_04.md:99, snapshots/cycle_02/chapters/chapter_04.md:177, snapshots/cycle_02/chapters/chapter_04.md:193, and snapshots/cycle_02/chapters/chapter_04.md:207 into fewer decisive turn points. Keep one long endurance exchange before the ICU-trigger beat and one before match ball, and replace intermediate score crawl paragraphs with beats where Anika makes a specific tactical or emotional choice that immediately changes leverage.",
+      "acceptance_test": "Pass if each game section in the revised target spans contains no more than one pure score-update paragraph and at least one explicit decision-to-consequence pivot by Anika; fail if momentum still relies mainly on serial score narration."
+    },
+    {
+      "finding_id": "chapter_04_F002",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:275; snapshots/cycle_02/chapters/chapter_04.md:277; snapshots/cycle_02/chapters/chapter_04.md:279",
+      "problem": "Sanitization drift via moral safety valve: immediately after the cruelty and collapse, Leah self-reports and adults rapidly codify fault, which relieves interpersonal tension before Anika's wound fully lands on the page. The scene shifts to procedural cleanup too quickly at the exact moment narrative discomfort should stay live.",
+      "rewrite_direction": "Rework the exchange around snapshots/cycle_02/chapters/chapter_04.md:265-280 so accountability remains unresolved in-scene instead of instantly self-resolved by Leah. Keep incident reporting, but delay or complicate confession language and center Anika's embodied/emotional processing for at least the next two paragraphs before procedural closure.",
+      "acceptance_test": "Pass if the revised passage at lines 265-280 does not let Leah neutralize her taunts through immediate self-clearing confession and if Anika's aftermath occupies at least two consecutive paragraphs before authority summary; fail if cleanup/admin language still defuses pressure immediately."
+    },
+    {
+      "finding_id": "chapter_04_F003",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:69; snapshots/cycle_02/chapters/chapter_04.md:77; snapshots/cycle_02/chapters/chapter_04.md:153",
+      "problem": "Leah's antagonistic lines read thematically over-explicit and adult-coded, reducing register realism for a fourteen-year-old under match pressure and making the taunts sound authored to message rather than spoken to wound.",
+      "rewrite_direction": "Rewrite Leah's taunts at snapshots/cycle_02/chapters/chapter_04.md:69, snapshots/cycle_02/chapters/chapter_04.md:77, and snapshots/cycle_02/chapters/chapter_04.md:153 into contraction-heavy, age-credible jabs with interruption-ready rhythm. Preserve the bereavement trigger, but remove explanatory phrasing that states theme directly.",
+      "acceptance_test": "Pass if the revised target lines include at least three Leah pressure utterances that use contractions/teen cadence and avoid abstract explanatory wording (for example labels like 'grief girl' or explanatory claims about hospital acclimation); fail if taunts still read like thematic exposition."
+    },
+    {
+      "finding_id": "chapter_04_F004",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:53; snapshots/cycle_02/chapters/chapter_04.md:201; snapshots/cycle_02/chapters/chapter_04.md:203; snapshots/cycle_02/chapters/chapter_04.md:205; snapshots/cycle_02/chapters/chapter_04.md:343; snapshots/cycle_02/chapters/chapter_04.md:385",
+      "problem": "Anika's counting-based stress tell is reused so literally across serve ritual, rally mantra, transit aftermath, and bedtime that it starts reading as checklist reuse from the style profile rather than evolving interior language.",
+      "rewrite_direction": "Keep counting in only two high-pressure anchors (for example one on-court and one post-match) and vary the other target beats at snapshots/cycle_02/chapters/chapter_04.md:53, snapshots/cycle_02/chapters/chapter_04.md:201-205, snapshots/cycle_02/chapters/chapter_04.md:343, and snapshots/cycle_02/chapters/chapter_04.md:385-387 with non-numeric coping texture (touch, avoidance, breath disruption, memory intrusion, or self-deceptive logistics).",
+      "acceptance_test": "Pass if explicit counting-as-coping appears in no more than two of the four target zones and at least one replacement beat shows a non-numeric stress behavior in-scene; fail if counting remains the dominant mechanism in all phases."
+    },
+    {
+      "finding_id": "chapter_04_F005",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:47; snapshots/cycle_02/chapters/chapter_04.md:67; snapshots/cycle_02/chapters/chapter_04.md:81; snapshots/cycle_02/chapters/chapter_04.md:99; snapshots/cycle_02/chapters/chapter_04.md:133; snapshots/cycle_02/chapters/chapter_04.md:153; snapshots/cycle_02/chapters/chapter_04.md:179; snapshots/cycle_02/chapters/chapter_04.md:195",
+      "problem": "The repeated paragraph lead formula 'At [score/time] ...' appears well beyond twice and becomes a visible prose tic, flattening cadence during the longest scene.",
+      "rewrite_direction": "Revise paragraph entries across snapshots/cycle_02/chapters/chapter_04.md:47-205 to reduce score-led openings. Integrate score updates inside action/sensation clauses and vary openings with movement, contact, or perception so rhythm tracks exertion instead of template repetition.",
+      "acceptance_test": "Pass if no more than two paragraphs in lines 47-205 begin with an explicit score/time marker ('At ...') and each game section has at least one paragraph opening on embodied action rather than scoreboard framing; fail if score-led opener templates still dominate."
+    }
+  ],
+  "summary": "Chapter 4 lands core causal beats and preserves continuity/tense canon, but it does not clear pass-level quality: pacing plateaus under repetitive score bookkeeping, a post-cruelty moral safety valve sanitizes pressure at a key consequence point, and dialogue/prose repetition patterns flatten voice and rhythm."
+}

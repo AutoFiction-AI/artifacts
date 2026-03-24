@@ -1,0 +1,72 @@
+{
+  "chapter_id": "chapter_03",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_03_F001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:287; snapshots/cycle_02/chapters/chapter_03.md:289; snapshots/cycle_02/chapters/chapter_03.md:303",
+      "problem": "Continuity contradiction: Arthur is introduced as \"Arthur Pike, Tom's relief driver from the bus depot\" with bus-shift follow-through, which conflicts with canon where Arthur Hale/Pike is an electricity-board linesman first introduced later via billeting. This creates an occupation/timeline identity mismatch.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_03.md:287 and snapshots/cycle_02/chapters/chapter_03.md:303 (plus adjacent lines) to resolve identity cleanly. Option A: rename this guest to a distinct minor character and remove Hale/Pike carryover cues. Option B: keep Arthur but align him with canonical occupation (no depot relief-driver framing, no bus-route return line) so his profile does not contradict continuity.",
+      "acceptance_test": "PASS if revised lines 287-304 no longer identify Arthur as a depot relief driver and no line implies next-day bus-route duty; identity is either clearly a different person or occupation-consistent with canon. FAIL if \"relief driver\"/bus-shift logic remains attached to Arthur Pike/Hale."
+    },
+    {
+      "finding_id": "chapter_03_F002",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:273; snapshots/cycle_02/chapters/chapter_03.md:283; snapshots/cycle_02/chapters/chapter_03.md:299; snapshots/cycle_02/chapters/chapter_03.md:305",
+      "problem": "Sanitization drift at the violence apex: the scene pivots from assault escalation into interruption/cleanup before embodied fallout fully lands. The prose reduces immediate physical and social consequence at the exact moment the narrative has earned full-contact aftermath.",
+      "rewrite_direction": "Expand snapshots/cycle_02/chapters/chapter_03.md:273 and snapshots/cycle_02/chapters/chapter_03.md:299 (including the intervening beat sequence) with one additional aftermath beat before cleanup logistics. Render concrete bodily consequence (beyond a single nick), immediate fear/shame response, and explicit relational rupture language in-scene before the action shifts to dustpan duties.",
+      "acceptance_test": "PASS if, before cleanup starts, the revised span includes (1) at least one concrete physical consequence for the men and (2) one explicit spoken acknowledgment that the gathering is ruptured, not merely awkward. FAIL if the sequence still jumps from shove/shatter directly into practical cleanup with no embodied relational reckoning."
+    },
+    {
+      "finding_id": "chapter_03_F003",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:283; snapshots/cycle_02/chapters/chapter_03.md:295",
+      "problem": "Doorstep interruption arrives exactly at peak escalation and reads as a convenience release valve, weakening earned causal payoff between Tom, Peter, and Noreen.",
+      "rewrite_direction": "In snapshots/cycle_02/chapters/chapter_03.md:145 and snapshots/cycle_02/chapters/chapter_03.md:173, seed Arthur's delayed arrival earlier as active tension. Then revise snapshots/cycle_02/chapters/chapter_03.md:273 and snapshots/cycle_02/chapters/chapter_03.md:295 so at least one irreversible in-room consequence lands before the knock (social ban, declared break, or completed physical consequence).",
+      "acceptance_test": "PASS if the revised chapter shows pre-knock foreshadowing of Arthur's delay and the confrontation produces one irreversible consequence before the door opens. FAIL if the knock remains the first mechanism that prevents consequence from landing."
+    },
+    {
+      "finding_id": "chapter_03_F004",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:115; snapshots/cycle_02/chapters/chapter_03.md:135; snapshots/cycle_02/chapters/chapter_03.md:227; snapshots/cycle_02/chapters/chapter_03.md:245",
+      "problem": "Two stretches run 10 consecutive paragraphs without focalized internal experience (115-135 and 227-245), pushing the chapter into screenplay mode during key leverage shifts.",
+      "rewrite_direction": "Inject close-third interior beats within snapshots/cycle_02/chapters/chapter_03.md:115 and snapshots/cycle_02/chapters/chapter_03.md:135, plus snapshots/cycle_02/chapters/chapter_03.md:227 and snapshots/cycle_02/chapters/chapter_03.md:245, tied to Elsie/Noreen's active appraisal (thought, sensation, memory, or self-assessment) rather than external observation only.",
+      "acceptance_test": "PASS if each target span contains at least two paragraphs of explicit internal experience from a named focalizer and those beats alter how the next spoken line is read. FAIL if either span remains purely external action/dialogue for 10+ consecutive paragraphs."
+    },
+    {
+      "finding_id": "chapter_03_F005",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:77; snapshots/cycle_02/chapters/chapter_03.md:177; snapshots/cycle_02/chapters/chapter_03.md:261; snapshots/cycle_02/chapters/chapter_03.md:327",
+      "problem": "Recurring \"voice + state-change adjective\" construction appears more than twice and becomes a prose tic, flattening tonal modulation (\"voice stayed light\", \"voice went gentler\", \"voice sharpened\", \"voice tidy\").",
+      "rewrite_direction": "Rework at least three of the cited lines in snapshots/cycle_02/chapters/chapter_03.md:77,177,261,327 to convey tone through varied channels (syntax fracture, gesture, breath, object interaction) instead of repeated voice-labeling.",
+      "acceptance_test": "PASS if the revised cited lines contain no more than two explicit \"voice\" state labels total and at least two moments communicate emotional shift through non-voice physical/action cues. FAIL if all four beats still rely on voice-state shorthand."
+    },
+    {
+      "finding_id": "chapter_03_F006",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:245; snapshots/cycle_02/chapters/chapter_03.md:327; snapshots/cycle_02/chapters/chapter_03.md:345; snapshots/cycle_02/chapters/chapter_03.md:367",
+      "problem": "Mechanical repetition from over-literal style-bible token reuse: Peter's controlling dialogue repeatedly defaults to bookkeeping diction (\"logged\", \"standards\", and echoed \"accounting\" frame), making his pressure pattern predictable and reducing scene-by-scene register variance.",
+      "rewrite_direction": "Diversify control rhetoric across snapshots/cycle_02/chapters/chapter_03.md:245, snapshots/cycle_02/chapters/chapter_03.md:327, snapshots/cycle_02/chapters/chapter_03.md:345, and snapshots/cycle_02/chapters/chapter_03.md:367. Keep at most one explicit ledger/accounting metaphor; rewrite other turns to use distinct pressure modes (class contempt, reputational threat, faux-concern minimization) in period-appropriate colloquial rhythm.",
+      "acceptance_test": "PASS if, in lines 245-367, Peter uses no more than one explicit bookkeeping metaphor and at least two separate intimidation modes with distinct syntax/rhythm. FAIL if multiple turns continue to reuse accounting/standards framing as the dominant control language."
+    }
+  ],
+  "summary": "Chapter 3 lands key dramatic beats and maintains strong period texture, but it does not clear pass threshold because of one HIGH continuity break (Arthur identity/occupation), one HIGH craft sanitization drift at the violence apex, and additional unresolved medium issues in causality payoff, interiority coverage, prose tics, and dialogue register variety. No sustained tense drift was detected against the canonical past-tense requirement."
+}

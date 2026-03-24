@@ -1,0 +1,62 @@
+{
+  "chapter_id": "chapter_09",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH09-F001",
+      "source": "booker",
+      "severity": "HIGH",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_02/chapters/chapter_09.md:211; snapshots/cycle_02/chapters/chapter_09.md:231; snapshots/cycle_02/chapters/chapter_09.md:243",
+      "problem": "The core identity reveal (HR -> Hollis Reddick) lands as convenience timing: the suspect walks in and supplies the missing linkage at the exact moment the investigators are blocked, which weakens earned causality and investigative agency.",
+      "rewrite_direction": "Rebuild the reveal so the name is derived before the interruption. Target spans: snapshots/cycle_02/chapters/chapter_09.md:211, snapshots/cycle_02/chapters/chapter_09.md:223, snapshots/cycle_02/chapters/chapter_09.md:231, snapshots/cycle_02/chapters/chapter_09.md:243. Have Lena/Beau force a code-legend step and one additional document cross-check; if Hollis still enters, use him as pressure escalation rather than first proof.",
+      "acceptance_test": "Pass if, in the revised passage around lines 211-244, at least two explicit procedural inference steps identify Hollis before his entrance; fail if removing Hollis's entrance would break the identity chain."
+    },
+    {
+      "finding_id": "CH09-F002",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_02/chapters/chapter_09.md:201; snapshots/cycle_02/chapters/chapter_09.md:281; snapshots/cycle_02/chapters/chapter_09.md:301; snapshots/cycle_02/chapters/chapter_09.md:353",
+      "problem": "Sanitization drift: the chapter's key harm linkage is repeatedly routed through euphemistic finance language (retainers, routing, admissibility) at moments that should foreground concrete human consequence, which softens narrative impact.",
+      "rewrite_direction": "Inject concrete consequence where euphemism currently dominates. Target spans: snapshots/cycle_02/chapters/chapter_09.md:281, snapshots/cycle_02/chapters/chapter_09.md:289, snapshots/cycle_02/chapters/chapter_09.md:301, snapshots/cycle_02/chapters/chapter_09.md:349, snapshots/cycle_02/chapters/chapter_09.md:353. Pair each legal/financial claim with one specific bodily, social, or familial effect tied to the moved remains or affected families.",
+      "acceptance_test": "Pass if each revised argument block in lines 281-303 and 349-355 contains at least one concrete consequence sentence that names what was done to bodies or people (not just billing categories); fail if stakes remain mostly abstract/legal."
+    },
+    {
+      "finding_id": "CH09-F003",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_02/chapters/chapter_09.md:231; snapshots/cycle_02/chapters/chapter_09.md:237; snapshots/cycle_02/chapters/chapter_09.md:253",
+      "problem": "Timidity in the confrontation beat: a suspected evidence mover appears in arm's reach, but scene energy slips into banter and exits without fully rendering immediate tactical danger or the explicit cost of standing down.",
+      "rewrite_direction": "Sharpen the risk envelope while preserving legal constraints. Target spans: snapshots/cycle_02/chapters/chapter_09.md:231, snapshots/cycle_02/chapters/chapter_09.md:241, snapshots/cycle_02/chapters/chapter_09.md:249, snapshots/cycle_02/chapters/chapter_09.md:253. Add concrete room-level threat cues (positioning, evidence protection, fear response) plus one explicit line stating why they cannot detain him yet.",
+      "acceptance_test": "Pass if the revised Hollis entrance includes at least two physical risk cues and one explicit legal constraint before he exits; fail if the beat remains primarily social banter."
+    },
+    {
+      "finding_id": "CH09-F004",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_02/chapters/chapter_09.md:121; snapshots/cycle_02/chapters/chapter_09.md:123; snapshots/cycle_02/chapters/chapter_09.md:349; snapshots/cycle_02/chapters/chapter_09.md:355",
+      "problem": "Idiolect separation blurs in key pressure exchanges: Lena, Beau, and Mara all lean on similar abstract policy diction, which narrows voice distinctness when conflict should make registers diverge.",
+      "rewrite_direction": "Differentiate speech texture in the cited exchanges. Target spans: snapshots/cycle_02/chapters/chapter_09.md:121, snapshots/cycle_02/chapters/chapter_09.md:123, snapshots/cycle_02/chapters/chapter_09.md:349, snapshots/cycle_02/chapters/chapter_09.md:355. Give Lena a procedure-to-blunt pivot, Beau a workmanlike anecdotal idiom, and Mara a precise evidence-verb challenge with sharper interrogative rhythm.",
+      "acceptance_test": "Pass if, in each revised exchange, a reader can attribute lines to speaker without tags from syntax and diction alone and each of Lena/Beau/Mara gets at least one line matching their style-bible stress/register profile; fail if lines remain interchangeable."
+    },
+    {
+      "finding_id": "CH09-F005",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_02/chapters/chapter_09.md:37; snapshots/cycle_02/chapters/chapter_09.md:235; snapshots/cycle_02/chapters/chapter_09.md:339; snapshots/cycle_02/chapters/chapter_09.md:375",
+      "problem": "Recurring visual-reaction formula (looked/eyes) appears repeatedly as the default interpersonal beat, flattening motion and emotional texture once it passes two uses.",
+      "rewrite_direction": "Vary reaction mechanics in the cited beats. Target spans: snapshots/cycle_02/chapters/chapter_09.md:37, snapshots/cycle_02/chapters/chapter_09.md:235, snapshots/cycle_02/chapters/chapter_09.md:339, snapshots/cycle_02/chapters/chapter_09.md:375. Replace at least half of look/eye reactions with non-visual actions (posture, object handling, interruption, silence with consequence).",
+      "acceptance_test": "Pass if the revised cited spans use no more than two look/eye reaction beats total and tension is still legible through alternate physical actions; fail if visual-reaction defaults remain the dominant beat type."
+    }
+  ],
+  "summary": "Chapter 09 sustains procedural momentum and lands required plot beats, but it fails review on causality rigor, sanitization pressure, voice separation, and repeated prose defaults. No canonical continuity contradiction, narrative-tense drift, intimacy fade-to-black, or explicit contraction-level breach was found, yet the unresolved HIGH/MEDIUM craft issues prevent pass-level quality."
+}

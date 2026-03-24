@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_15",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "PASS"
+  },
+  "findings": [
+    {
+      "finding_id": "CH15_CRAFT_CROOK_ROSTER_DRIFT",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_02/chapters/chapter_15.md:7; snapshots/cycle_02/chapters/chapter_15.md:9; snapshots/cycle_02/chapters/chapter_15.md:35; snapshots/cycle_02/chapters/chapter_15.md:45; snapshots/cycle_02/chapters/chapter_15.md:185",
+      "problem": "The chapter's opening roster does not reconcile with the provided chapter handoff. In the boundary excerpt, Kael is male and the root-chewer while Errin is the jar-carrier; here Kael becomes a woman at the water barrel, Ruald inherits the roots, and Petra/Denna absorb the other duties with no on-page explanation. Because this scene immediately cashes out who dies and who escapes, the shift reads as continuity corruption, not a deliberate reveal.",
+      "rewrite_direction": "Rework snapshots/cycle_02/chapters/chapter_15.md:7, snapshots/cycle_02/chapters/chapter_15.md:9, snapshots/cycle_02/chapters/chapter_15.md:35, snapshots/cycle_02/chapters/chapter_15.md:45, and snapshots/cycle_02/chapters/chapter_15.md:185 so the Crook roster, role assignments, and Kael pronouns match one stable lineup from the opening through the casualty accounting. Either preserve the boundary handoff's Kael/Errin assignments or explicitly establish on page why the personnel have changed before the attack starts, but do not let jar duty, root-chewing, and survivor/dead bookkeeping hop names invisibly.",
+      "acceptance_test": "Pass if a cold reader can map every Crook member introduced at snapshots/cycle_02/chapters/chapter_15.md:7 and snapshots/cycle_02/chapters/chapter_15.md:9 to the same person and role at snapshots/cycle_02/chapters/chapter_15.md:35, snapshots/cycle_02/chapters/chapter_15.md:45, and snapshots/cycle_02/chapters/chapter_15.md:185 without pronoun or name collisions. Fail if Kael still changes gender, Errin still disappears unreconciled, or the jar-carrier/root-chewer identity still shifts with no explanation."
+    },
+    {
+      "finding_id": "CH15_CRAFT_DENNA_DEATH_BY_REPORT",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_02/chapters/chapter_15.md:9; snapshots/cycle_02/chapters/chapter_15.md:85; snapshots/cycle_02/chapters/chapter_15.md:185; snapshots/cycle_02/chapters/chapter_15.md:187",
+      "problem": "One of the chapter's three defining civilian deaths lands almost entirely as report. Denna is introduced with a small human detail, then reduced to 'some kind of pulse' and later a slot in the body count. Because the chapter's engine is that three working sin-eaters die because Maren brought the hunt here, leaving one of those deaths this abstract weakens the chapter's central moral payload.",
+      "rewrite_direction": "Rework snapshots/cycle_02/chapters/chapter_15.md:85 and snapshots/cycle_02/chapters/chapter_15.md:185, with support from snapshots/cycle_02/chapters/chapter_15.md:9 or snapshots/cycle_02/chapters/chapter_15.md:187, so Denna's loss leaves a concrete on-page trace Maren can actually register: the dropped tally, a visible body position, the pulse's physical residue, or another specific aftermath detail. If Maren cannot witness the hit itself, the aftermath still needs to render Denna as a person lost, not a name transferred into a count.",
+      "acceptance_test": "Pass if, after reading the revised snapshots/cycle_02/chapters/chapter_15.md:85 and snapshots/cycle_02/chapters/chapter_15.md:185, a cold reader can say what happened to Denna and name one specific Denna detail the scene makes newly painful. Fail if Denna is still only 'down' or 'dead' with no concrete aftermath beyond the casualty report."
+    },
+    {
+      "finding_id": "CH15_AWARD_CAUL_FRACTURE_UNDERLANDED",
+      "source": "award",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_02/chapters/chapter_15.md:163; snapshots/cycle_02/chapters/chapter_15.md:175; snapshots/cycle_02/chapters/chapter_15.md:177; snapshots/cycle_02/chapters/chapter_15.md:199; snapshots/cycle_02/chapters/chapter_15.md:203",
+      "problem": "The chapter tells us Caul's pursuit is over and implies he has seen the System sacrifice his own party, but the promised specific moment of faith fracture never quite becomes a page-dominating beat. Aldric paraphrases the order and Caul changes objectives; the ideological turn mostly survives as inference. For a chapter whose required consequence is that Caul witnesses the System's true nature and his certainty breaks, that is not enough.",
+      "rewrite_direction": "Sharpen snapshots/cycle_02/chapters/chapter_15.md:163, snapshots/cycle_02/chapters/chapter_15.md:175, snapshots/cycle_02/chapters/chapter_15.md:177, snapshots/cycle_02/chapters/chapter_15.md:199, and snapshots/cycle_02/chapters/chapter_15.md:203 so one unmistakable trigger causes one unmistakable behavioral pivot on page. Options: let Caul voice what he has just read, make his turn toward the surviving boy visibly cost him the hunt, or let Maren observe a concrete break in Caul's professional cadence that ties directly to the System ordering his own people expendable.",
+      "acceptance_test": "Pass if a cold reader can point to one exact beat anchored in snapshots/cycle_02/chapters/chapter_15.md:163, snapshots/cycle_02/chapters/chapter_15.md:175, snapshots/cycle_02/chapters/chapter_15.md:177, snapshots/cycle_02/chapters/chapter_15.md:199, or snapshots/cycle_02/chapters/chapter_15.md:203 and say, 'This is where Caul stops trusting the System,' naming both the trigger and the resulting action. Fail if the revised chapter still requires Aldric's paraphrase plus general battlefield behavior to infer that break."
+    }
+  ],
+  "summary": "Fails award and craft. The chapter has strong tactile combat clarity, keeps dialogue in register, and stays consistent with the style bible's past-tense close-third method, but it breaks the Crook handoff continuity, reports Denna's death too thinly for a chapter built on civilian loss, and under-lands the specific moment where Caul's faith in the System should fracture."
+}

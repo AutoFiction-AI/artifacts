@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_04",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch04_dialogue_001",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_01/chapters/chapter_04.md:49; snapshots/cycle_01/chapters/chapter_04.md:75",
+      "problem": "Professor Babbling's dialogue reproduces calibration-only style-bible example material nearly verbatim. The academic-voice target is clear, but these lines read as copied register scaffolding rather than fresh speech, which is an explicit HIGH failure under the review contract.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_04.md:49 and snapshots/cycle_01/chapters/chapter_04.md:75, rewrite Babbling's lines from first principles. Keep the same informational beats and her low-contraction, precise academic register, but replace the borrowed clause order, phrasing, and cadence so the scene sounds spoken in this moment rather than retrieved from `outline/style_bible.json`.",
+      "acceptance_test": "Pass if the revised dialogue at snapshots/cycle_01/chapters/chapter_04.md:49 and snapshots/cycle_01/chapters/chapter_04.md:75 preserves Babbling's meaning without any clause-level echo of the calibration lines; fail if the passage still contains the example-line sequence around \"pre-Futhark\"/\"Possibly pre-Ogham\"/\"Sardinian fragments\" or retains \"There is a difference this year.\""
+    },
+    {
+      "finding_id": "ch04_craft_001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_01/chapters/chapter_04.md:169; snapshots/cycle_01/chapters/chapter_04.md:189",
+      "problem": "The Duncan thread is softened by an explicit moral-safety-valve. Naming Gavin's guilt twice turns his inaction into a reassuring conscience beat, which undercuts the novel's stated risk that his priorities become alien and leaves the chapter tidier than the premise allows. This is sanitization drift, so it is a HIGH craft failure.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_04.md:169 and snapshots/cycle_01/chapters/chapter_04.md:189, remove the narrated guilt labels and the explanatory moral framing. Let the pressure live in concrete aftermath instead: Duncan's body, the social silence at the table, Gavin's divided attention, and the fact that he resumes the manuscript anyway. If guilt remains, it should appear as behavior, sensory carryover, or avoidance rather than narrator summary.",
+      "acceptance_test": "Pass if the revised ending still shows Gavin noticing Duncan's bruises and choosing the manuscript, but the final two paragraphs do not name, paraphrase, or explain his guilt for him; fail if the passage still reassures the reader with explicit moral interpretation instead of leaving the avoidance legible through action and residue."
+    },
+    {
+      "finding_id": "ch04_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_01/chapters/chapter_04.md:101; snapshots/cycle_01/chapters/chapter_04.md:105; snapshots/cycle_01/chapters/chapter_04.md:113; snapshots/cycle_01/chapters/chapter_04.md:117",
+      "problem": "The first decoding breakthrough is delivered mostly as abstract summary and English glosses. The chapter explains what Gavin thinks the manuscript means, but it gives too little of the immediate perceptual struggle with the moving notation, so the First Art lands as an interesting theory before it lands as uncanny experience.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_04.md:101, snapshots/cycle_01/chapters/chapter_04.md:105, snapshots/cycle_01/chapters/chapter_04.md:113, and snapshots/cycle_01/chapters/chapter_04.md:117, recast at least one breakthrough as an on-page encounter with the notation: what the cluster is doing on the page, what Gavin notices before he can name it, and how the cold, headache, eye strain, or material warmth interacts with the act of reading. Keep the conceptual content, but make the English approximations arrive after a concrete sensory beat rather than as a run of definitions.",
+      "acceptance_test": "Pass if the revised material anchored at snapshots/cycle_01/chapters/chapter_04.md:101, snapshots/cycle_01/chapters/chapter_04.md:105, snapshots/cycle_01/chapters/chapter_04.md:113, and snapshots/cycle_01/chapters/chapter_04.md:117 renders at least one decoded concept through Gavin's immediate visual or bodily experience of the manuscript before its English approximation appears; fail if the section still reads as consecutive abstract definitions detached from the page in front of him."
+    },
+    {
+      "finding_id": "ch04_prose_002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_01/chapters/chapter_04.md:5; snapshots/cycle_01/chapters/chapter_04.md:33; snapshots/cycle_01/chapters/chapter_04.md:49; snapshots/cycle_01/chapters/chapter_04.md:135; snapshots/cycle_01/chapters/chapter_04.md:179",
+      "problem": "The chapter leans repeatedly on the same explanatory sentence shape: emotion or intention translated into \"someone who\" or adjacent interpretive gloss. Used this often, the pattern stops feeling precise and starts reading as an authorial fallback, flattening Babbling's reaction and Duncan's distress into the same prose template.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_04.md:5, snapshots/cycle_01/chapters/chapter_04.md:33, snapshots/cycle_01/chapters/chapter_04.md:49, snapshots/cycle_01/chapters/chapter_04.md:135, and snapshots/cycle_01/chapters/chapter_04.md:179, replace at least three of the repeated interpretive constructions with distinct sentence shapes grounded in local physical detail: page handling, breath, hand movement, sleeve adjustment, bread-roll destruction, or other scene-specific signals. Let the reader infer state from what is observable instead of receiving the same explanatory scaffold each time.",
+      "acceptance_test": "Pass if no more than two of the cited passages still rely on a \"someone who/person who\"-style explanatory gloss and the replacements convey the character state through visibly different concrete cues; fail if the revised chapter keeps stacking the same interpretive template across Gavin, Babbling, and Duncan."
+    }
+  ],
+  "summary": "Chapter 4 cleanly hits the required state change, preserves past-tense continuity, and keeps character positions canon-consistent, but it does not yet clear shortlist-level review. The major failures are a HIGH dialogue breach from style-bible example-line leakage and a HIGH craft breach where the Duncan material is morally softened by explicit guilt. On the prose side, the decoding breakthrough stays too abstract and the chapter repeats one explanatory sentence template often enough to become a tic."
+}

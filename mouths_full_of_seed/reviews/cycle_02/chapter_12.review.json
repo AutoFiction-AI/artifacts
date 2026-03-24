@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_12",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "PASS",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_12_prose_01",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_02/chapters/chapter_12.md:5; snapshots/cycle_02/chapters/chapter_12.md:31; snapshots/cycle_02/chapters/chapter_12.md:91; snapshots/cycle_02/chapters/chapter_12.md:121; snapshots/cycle_02/chapters/chapter_12.md:137; snapshots/cycle_02/chapters/chapter_12.md:221",
+      "problem": "The prose leans on the same inferential comparison scaffold far past the twice-is-coincidence threshold: key descriptive beats keep arriving through repeated \"as if\" and \"like\" turns, so sentence texture starts to feel mechanically familiar instead of freshly pressured.",
+      "rewrite_direction": "Rework the repeated comparison beats at snapshots/cycle_02/chapters/chapter_12.md:5, snapshots/cycle_02/chapters/chapter_12.md:31, snapshots/cycle_02/chapters/chapter_12.md:91, snapshots/cycle_02/chapters/chapter_12.md:121, snapshots/cycle_02/chapters/chapter_12.md:137, and snapshots/cycle_02/chapters/chapter_12.md:221. Keep only the strongest one or two similes; convert the rest into direct sensory fact, plain physical action, or Nami's blunt judgment so the prose stops explaining pressure through the same comparison shape.",
+      "acceptance_test": "PASS if the revised passages at snapshots/cycle_02/chapters/chapter_12.md:5, snapshots/cycle_02/chapters/chapter_12.md:31, snapshots/cycle_02/chapters/chapter_12.md:91, snapshots/cycle_02/chapters/chapter_12.md:121, snapshots/cycle_02/chapters/chapter_12.md:137, and snapshots/cycle_02/chapters/chapter_12.md:221 contain no more than two inferential \"as if\"/\"like\" comparison scaffolds total, and at least four of those beats land as direct description or action; FAIL if the same sentence pattern still repeats through the caregiving and dawn setup."
+    },
+    {
+      "finding_id": "chapter_12_prose_02",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_02/chapters/chapter_12.md:103; snapshots/cycle_02/chapters/chapter_12.md:104",
+      "problem": "The fever-dream cluster drops into verbless image fragments (\"Jun's drowned infant face...\" / \"Sereya's ferry pole...\") that read as clipped lyric shorthand. That violates the constitution's ban on elliptical clipping in narration and weakens what should be fully rendered fever perception.",
+      "rewrite_direction": "Revise the dream sequence at snapshots/cycle_02/chapters/chapter_12.md:103 and snapshots/cycle_02/chapters/chapter_12.md:104 into grammatically complete clauses anchored to Nami's body and perception. Keep the dream logic, but give each image an explicit action or state instead of presenting it as a standalone noun-phrase fragment.",
+      "acceptance_test": "PASS if every sentence in the revised cluster at snapshots/cycle_02/chapters/chapter_12.md:103 and snapshots/cycle_02/chapters/chapter_12.md:104 contains an explicit verb while the fever pressure remains legible on the page; FAIL if any standalone image fragment without a governing verb remains in that passage."
+    }
+  ],
+  "summary": "This chapter clears its structural and continuity obligations: it keeps the promised caregiving aftermath, lands the Riva/Lale reckoning, gets Daro's childhood river-hearing confession on the page, and moves the family onto the slower hand-poled mission without any MEDIUM+ continuity or dialogue-register failures. It still fails review on prose because the sentence-making falls into a repeated \"as if\"/\"like\" comparison tic and a clipped fever-fragment patch that breaks the constitution's narration rule."
+}

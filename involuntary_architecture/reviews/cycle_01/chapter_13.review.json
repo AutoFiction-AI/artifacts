@@ -1,0 +1,62 @@
+{
+  "chapter_id": "chapter_13",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH13_DIALOGUE_STYLE_BIBLE_REUSE",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:91; snapshots/cycle_01/chapters/chapter_13.md:269",
+      "problem": "The chapter reuses Ron's calibration-only style-bible phrase almost verbatim: \"be careful with that house\" appears in Hermione's narration and then again in her recalled inner refrain. Because the borrowed phrase anchors one of the chapter's defining warning beats, the moment reads templated rather than newly written for this scene.",
+      "rewrite_direction": "Rewrite the warning beat in `snapshots/cycle_01/chapters/chapter_13.md:77-91` and Hermione's later recall in `snapshots/cycle_01/chapters/chapter_13.md:269-273` so Ron's concern remains specific to the Manor and Hermione's self-destructive fixation without reproducing the style-bible wording or a close paraphrase of it.",
+      "acceptance_test": "Pass if `snapshots/cycle_01/chapters/chapter_13.md:77-91` and `snapshots/cycle_01/chapters/chapter_13.md:269-273` still clearly communicate Ron's warning about the Manor and Hermione's pattern, but the exact phrase \"be careful with that house\" and any obvious near-copy of the style-bible line are absent. Fail if the warning or the recall still lands on that borrowed wording."
+    },
+    {
+      "finding_id": "CH13_DIALOGUE_COMPOSED_WARNINGS",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:77; snapshots/cycle_01/chapters/chapter_13.md:81; snapshots/cycle_01/chapters/chapter_13.md:85; snapshots/cycle_01/chapters/chapter_13.md:91; snapshots/cycle_01/chapters/chapter_13.md:181; snapshots/cycle_01/chapters/chapter_13.md:189; snapshots/cycle_01/chapters/chapter_13.md:201; snapshots/cycle_01/chapters/chapter_13.md:225",
+      "problem": "Both major conversation scenes resolve into polished diagnosis speeches. Ron's warning becomes a balanced thesis about Hermione's psychology and their marriage, then the narration certifies how perfectly it lands. Harry's scene likewise shifts from concrete rumor management into aphoristic life advice about names, honesty, and self-knowledge. The result is composed dialogue: the chapter's key warnings sound written-about rather than spoken-through, and Ron/Harry start sharing the same cleanly insightful register.",
+      "rewrite_direction": "Roughen the warning beats in `snapshots/cycle_01/chapters/chapter_13.md:77-91` and `snapshots/cycle_01/chapters/chapter_13.md:181-205`, then tighten the final admonition in `snapshots/cycle_01/chapters/chapter_13.md:225-233`. Give Ron more sidewaysness, unfinished social grace, and concrete marital memory; keep Harry shorter, blunter, and more operationally focused on rumors, optics, and the crisis. Remove narrator language that admires how neatly a line lands.",
+      "acceptance_test": "Pass if Ron's warning in `snapshots/cycle_01/chapters/chapter_13.md:77-91` contains at least one visible self-correction or abandoned turn and arrives through his own colloquial rhythm rather than a continuous diagnosis speech, and if Harry's warning in `snapshots/cycle_01/chapters/chapter_13.md:181-233` stays grounded in concrete public stakes instead of aphoristic self-knowledge. Fail if either exchange still reads as a mini-essay about Hermione, or if the narration still tells the reader that a line \"landed\" or otherwise certifies its precision."
+    },
+    {
+      "finding_id": "CH13_CRAFT_OVERSTATEMENT_CODA",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:269; snapshots/cycle_01/chapters/chapter_13.md:273; snapshots/cycle_01/chapters/chapter_13.md:281; snapshots/cycle_01/chapters/chapter_13.md:283; snapshots/cycle_01/chapters/chapter_13.md:289",
+      "problem": "The closing movement keeps re-proving a point the chapter has already made legible. By the time Hermione hears Ron, Harry, and Ginny in her head and the Manor shortens corridors, warms itself for her, and sets out tea, the conflict is already clear: the outside world has warned her, and she is still choosing this place. Lines 281-289 then translate that meaning again in abstract thematic language instead of producing a fresher consequence or sharper turn.",
+      "rewrite_direction": "Compress and re-shape the coda in `snapshots/cycle_01/chapters/chapter_13.md:281-289`, with optional cleanup in `snapshots/cycle_01/chapters/chapter_13.md:291-293`. Keep the must-land beats already earned on the page: the outside world's warning, the Manor's intimate welcome, Draco's eased resonance, and Hermione's conscious return. Replace the repeated thesis-paraphrase with one new on-page consequence, action, or relational shift that advances pressure rather than restating it.",
+      "acceptance_test": "Pass if `snapshots/cycle_01/chapters/chapter_13.md:281-293` preserves the chapter engine and the required state shift, but lands on a new observable consequence at the desk/with the house/through the Mark rather than repeating in abstract that the ordinary world exists, the house wants her, and she knows what she is choosing. Fail if the revised coda still spends multiple sentences paraphrasing the same realization after the house's welcome has already made it clear."
+    },
+    {
+      "finding_id": "CH13_PROSE_CLIPPED_NARRATION",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:3; snapshots/cycle_01/chapters/chapter_13.md:23; snapshots/cycle_01/chapters/chapter_13.md:53; snapshots/cycle_01/chapters/chapter_13.md:243; snapshots/cycle_01/chapters/chapter_13.md:245; snapshots/cycle_01/chapters/chapter_13.md:255; snapshots/cycle_01/chapters/chapter_13.md:259; snapshots/cycle_01/chapters/chapter_13.md:287",
+      "problem": "The narration repeatedly relies on clipped sentence fragments that omit their subject or full clause: \"Just a room,\" \"Faint from London. Degraded by distance. But there,\" \"Not toward anything,\" \"Ordinary,\" \"His pain. His wakefulness,\" and similar beats. This is not an isolated flourish; it becomes a chapter-wide rhythm and violates the constitution's ban on elliptical clipping in narration.",
+      "rewrite_direction": "Revise the fragment clusters in `snapshots/cycle_01/chapters/chapter_13.md:3-5`, `snapshots/cycle_01/chapters/chapter_13.md:23`, `snapshots/cycle_01/chapters/chapter_13.md:53-55`, `snapshots/cycle_01/chapters/chapter_13.md:243-245`, `snapshots/cycle_01/chapters/chapter_13.md:255`, `snapshots/cycle_01/chapters/chapter_13.md:259-265`, and `snapshots/cycle_01/chapters/chapter_13.md:287-289` into grammatical sentences or complete clauses. Preserve emphasis through rhythm, punctuation, and sentence length rather than omitted subjects or article-stripped fragments.",
+      "acceptance_test": "Pass if the cited spans can be read straight through without encountering emphatic subjectless fragments in narration; each beat should resolve as a grammatical sentence or complete clause on the page. Fail if the revised passage still depends on constructions like \"Ordinary,\" \"Not toward anything,\" or \"His pain. His wakefulness\" to create force."
+    },
+    {
+      "finding_id": "CH13_PROSE_PRECISION_TIC",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:113; snapshots/cycle_01/chapters/chapter_13.md:119; snapshots/cycle_01/chapters/chapter_13.md:147; snapshots/cycle_01/chapters/chapter_13.md:207; snapshots/cycle_01/chapters/chapter_13.md:225; snapshots/cycle_01/chapters/chapter_13.md:263; snapshots/cycle_01/chapters/chapter_13.md:281; snapshots/cycle_01/chapters/chapter_13.md:283",
+      "problem": "The prose keeps announcing its own precision through the same classifier family: \"the specific,\" \"the particular,\" \"specificity,\" and related formulations. Instead of sharpening the chapter, the repetition becomes a tic. The sentences keep telling the reader that a feeling or observation is precise rather than finding fresh detail that would make the precision self-evident.",
+      "rewrite_direction": "Rework the repeated classifier-heavy sentences in `snapshots/cycle_01/chapters/chapter_13.md:113-119`, `snapshots/cycle_01/chapters/chapter_13.md:147`, `snapshots/cycle_01/chapters/chapter_13.md:207-225`, and `snapshots/cycle_01/chapters/chapter_13.md:263-283`. Replace most uses of this diction with concrete sensory detail, more varied syntax, or sharper observed behavior so the paragraph earns exactness instead of declaring it.",
+      "acceptance_test": "Pass if, across the cited spans, no more than two uses of `specific`, `specificity`, or `particular` remain, and each remaining use points to a concrete sensory fact rather than an abstract emotional label or character summary. Fail if the revised prose still leans on that same vocabulary to certify its own precision."
+    }
+  ],
+  "summary": "Chapter 13 fails on award-level control despite strong chapter intent. The outside-world intrusion and escalating decay are legible, but the two warning scenes drift into polished diagnosis, one of the central warning phrases is lifted too close to the style-bible calibration line, the closing coda overstates a realization the house has already dramatized, and the prose relies on repeated clipped fragments plus precision-announcing tics that make the sentence work feel patterned rather than fully earned."
+}

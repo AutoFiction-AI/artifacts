@@ -1,0 +1,82 @@
+{
+  "acceptance_targets": [
+    "[ch02-prose-001] PASS if, in the revised versions of the cited beats, at least four of those passages are readable as direct affirmative observations rather than correction openings built around 'not' or 'no'; FAIL if the same discovery moments still depend on repeated negation-first framing across those named lines.",
+    "[ch02-prose-002] PASS if at least two of the four cited reaction beats are revised so the character's response is conveyed without a mouth-centered expression and the chapter no longer contains more than two such mouth-reaction beats; FAIL if the same four moments still rely on mouth twitching, bending, or moving as the default signal."
+  ],
+  "chapter_id": "chapter_02",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if, in the revised versions of the cited beats, at least four of those passages are readable as direct affirmative observations rather than correction openings built around 'not' or 'no'; FAIL if the same discovery moments still depend on repeated negation-first framing across those named lines.",
+      "chapter_id": "chapter_02",
+      "cycle": 2,
+      "evidence": "The chapter repeatedly lands discovery through correction-by-negation: snapshots/cycle_02/chapters/chapter_02.md:65; snapshots/cycle_02/chapters/chapter_02.md:89; snapshots/cycle_02/chapters/chapter_02.md:159; snapshots/cycle_02/chapters/chapter_02.md:217; snapshots/cycle_02/chapters/chapter_02.md:239; snapshots/cycle_02/chapters/chapter_02.md:285.",
+      "finding_id": "ch02-prose-001",
+      "problem": "The prose keeps telling the reader what the quarry is not before it states what it is. That pattern fits Elise's overturned assumptions once or twice, but at this frequency it becomes an editorial tic, flattening the chapter's discoveries into repeated corrections instead of letting the rendered specifics carry the turn.",
+      "rewrite_direction": "Rework the cited beats at snapshots/cycle_02/chapters/chapter_02.md:65, snapshots/cycle_02/chapters/chapter_02.md:159, snapshots/cycle_02/chapters/chapter_02.md:217, snapshots/cycle_02/chapters/chapter_02.md:239, and snapshots/cycle_02/chapters/chapter_02.md:285 so most of them land through affirmative image, action, or judgment rather than a 'not/no ... actually' structure. Preserve Elise's reassessment, but let the positive fact arrive first in the sentence more often than the correction.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if at least two of the four cited reaction beats are revised so the character's response is conveyed without a mouth-centered expression and the chapter no longer contains more than two such mouth-reaction beats; FAIL if the same four moments still rely on mouth twitching, bending, or moving as the default signal.",
+      "chapter_id": "chapter_02",
+      "cycle": 2,
+      "evidence": "A mouth-centered reaction default recurs often enough to become visible shorthand: snapshots/cycle_02/chapters/chapter_02.md:63; snapshots/cycle_02/chapters/chapter_02.md:83; snapshots/cycle_02/chapters/chapter_02.md:141; snapshots/cycle_02/chapters/chapter_02.md:271.",
+      "finding_id": "ch02-prose-002",
+      "problem": "This is exactly the kind of recurring facial-expression formula that starts reading like autopilot once it appears three or more times in a chapter. The repeated mouth-twitch/bent/moved cue narrows the ensemble's physical expressiveness and makes otherwise distinct character beats feel mechanically related.",
+      "rewrite_direction": "Vary the reaction beats at snapshots/cycle_02/chapters/chapter_02.md:63, snapshots/cycle_02/chapters/chapter_02.md:83, snapshots/cycle_02/chapters/chapter_02.md:141, and snapshots/cycle_02/chapters/chapter_02.md:271 so at least two of them land through different physical or vocal detail. Use hands, shoulders, breath, timing, gaze, or line delivery rather than another mouth-based micro-expression.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "2fa522b762266d4a682aab64e6937c5311f7ea085e47f7b2e5b1a8b05ef9287e",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on prose and copyedit finish: diction precision, rhythm control, sentence-level clarity, grammar, line-level polish without flattening style, and explicit aesthetic-risk audit (sanitization is the primary risk \u2014 do not soften or euphemize; push toward creative risk and specificity).",
+    "key": "p3_prose_copyedit",
+    "label": "prose/copyedit fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into the contradiction that tenderness can coexist with surveillance, desire with betrayal, and ideology with vanity. Render violence, sex, illness, and poverty at the scale characters actually experience them. When an edge case appears, choose the more specific and less reputationally safe version if it remains faithful to character, period, and causality.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene reaches bodily danger, sex, grief, class shame, or political cruelty and then retreats into summary, rewrite toward the exact physical and social fact the character cannot evade.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "Moderate to high; contractions are the spoken default, with full forms reserved for period formality, deliberate emphasis, or Vautrin's cultivated precision.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate compressive surveillance chapters with slower communal or reflective chapters; vary scene count, dialogue density, and whether the turn comes from action, information, dread, or aftermath so no two adjacent chapters run on the same structural rhythm.",
+      "diction": "Historically grounded and unsentimental; plain enough for labor and bureaucracy, lyrical only when perception earns it rather than rhetoric.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third centered on Elise, elastic enough to register class texture, political pressure, and the quarry's collective life without drifting into authorial essay.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Supple, image-bearing sentences broken by hard factual beats at moments of violence, lust, bureaucratic coercion, or shame.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

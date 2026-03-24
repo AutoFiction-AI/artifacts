@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_05",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch05_craft_001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_05",
+      "evidence": "The narration repeatedly falls into clipped fragments at snapshots/cycle_01/chapters/chapter_05.md:117, snapshots/cycle_01/chapters/chapter_05.md:171, snapshots/cycle_01/chapters/chapter_05.md:235, snapshots/cycle_01/chapters/chapter_05.md:239, and snapshots/cycle_01/chapters/chapter_05.md:273.",
+      "problem": "This chapter violates the constitution's ban on elliptical clipping in narration. Beats such as \"Not mockery exactly. Not at first.\", \"Not because she shouted.\", \"Not metaphor.\", and \"No volume. No scene.\" read like withheld sentence parts rather than controlled compression, which breaks the otherwise embodied comic pressure.",
+      "rewrite_direction": "Rewrite the clipped narration at snapshots/cycle_01/chapters/chapter_05.md:117, snapshots/cycle_01/chapters/chapter_05.md:171, snapshots/cycle_01/chapters/chapter_05.md:235, snapshots/cycle_01/chapters/chapter_05.md:239, and snapshots/cycle_01/chapters/chapter_05.md:273 into grammatically complete prose that names the actor, sensation, or causal turn on the page instead of implying it through fragment shorthand.",
+      "acceptance_test": "PASS if each cited spot reads as complete narration with explicit subject/verb logic while preserving the same meaning and comic timing; FAIL if any of those line-level beats still rely on stand-alone narrative fragments of the form \"Not X.\", \"No Y.\", or similarly clipped sentence shards."
+    },
+    {
+      "finding_id": "ch05_craft_002",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "The prose leans on calibration-style labels at snapshots/cycle_01/chapters/chapter_05.md:191 and snapshots/cycle_01/chapters/chapter_05.md:199.",
+      "problem": "The narration briefly sounds like it is consulting the style bible instead of dramatizing the moment. \"Her face had gone harder, cleaner\" and especially \"That made Silas mean-funny\" echo voice-profile stress tells closely enough to feel like guide-text leakage rather than fresh scene observation.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_05.md:191 and snapshots/cycle_01/chapters/chapter_05.md:199, replace calibration shorthand with concrete behavior: show how Inez's face and phrasing tighten, and how Silas's shame turns into defensive joking, without using abstract profile terms as the description itself.",
+      "acceptance_test": "PASS if the revised beats let a reader infer Inez's tightened control and Silas's shame-driven joking from action, diction, or gesture in those passages, and the exact shorthand compounds \"harder, cleaner\" and \"mean-funny\" no longer appear there; FAIL if the prose still labels the stress response instead of staging it."
+    },
+    {
+      "finding_id": "ch05_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "Abstract pointer openings recur at snapshots/cycle_01/chapters/chapter_05.md:65, snapshots/cycle_01/chapters/chapter_05.md:169, snapshots/cycle_01/chapters/chapter_05.md:199, snapshots/cycle_01/chapters/chapter_05.md:233, snapshots/cycle_01/chapters/chapter_05.md:273, snapshots/cycle_01/chapters/chapter_05.md:327, snapshots/cycle_01/chapters/chapter_05.md:379, and snapshots/cycle_01/chapters/chapter_05.md:397.",
+      "problem": "The chapter develops a visible sentence tic built from abstract pivots such as \"That was...\", \"That did it.\", \"That made...\", and \"That hurt...\". Once the construction repeats this often, the prose stops feeling pressure-sensitive and starts feeling mechanically signposted, which violates the anti-formula rule in the constitution.",
+      "rewrite_direction": "Revise the pivot sentences at snapshots/cycle_01/chapters/chapter_05.md:169, snapshots/cycle_01/chapters/chapter_05.md:199, snapshots/cycle_01/chapters/chapter_05.md:233, snapshots/cycle_01/chapters/chapter_05.md:273, snapshots/cycle_01/chapters/chapter_05.md:327, snapshots/cycle_01/chapters/chapter_05.md:379, and snapshots/cycle_01/chapters/chapter_05.md:397 so the beats open from concrete subjects or images already in the scene rather than from the generic abstract pointer \"That\"; keep no more than two of the cited patternings if any survive for emphasis.",
+      "acceptance_test": "PASS if, on reread of the cited lines, no more than two of those targeted pivots still begin with the abstract \"That\" construction and each revised beat enters through a distinct concrete source such as the wall, the crowd, Gideon, Inez, or Silas's body; FAIL if the same sentence launcher continues to govern most of those transitions."
+    }
+  ],
+  "summary": "Booker and dialogue pass: the launch lands the planned humiliation cleanly, the competing names feel socially rooted rather than random, and Silas, Gideon, Damaris, and Inez all stay in distinct register with no contraction-level or example-line violations. I found no continuity contradiction, tense drift, sanitization retreat, timidity problem, or intimacy fade-to-black. Craft and prose still fail because the narration repeatedly breaks the constitution's no-elliptical-clipping rule and leans on visible shorthand templates, which keeps this from reading as fully controlled at shortlist level."
+}

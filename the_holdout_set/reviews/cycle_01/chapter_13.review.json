@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_13",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "PASS",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH13-BOOKER-01",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:215, snapshots/cycle_01/chapters/chapter_13.md:219, snapshots/cycle_01/chapters/chapter_13.md:227, snapshots/cycle_01/chapters/chapter_13.md:241",
+      "problem": "The copy-room handoff to Ben feels mechanically arranged to give chapter 14 its leak path. The trio's fatigue is on the page, but the scene does not make the danger of letting Ben unlock scan-to-email, preview the grievance title, and accidentally receive the packet concrete enough before it happens.",
+      "rewrite_direction": "Rework snapshots/cycle_01/chapters/chapter_13.md:215, snapshots/cycle_01/chapters/chapter_13.md:219, snapshots/cycle_01/chapters/chapter_13.md:227, and snapshots/cycle_01/chapters/chapter_13.md:241 so the group explicitly weighs the risk of Ben's proximity against a concrete deadline or technical constraint. Either make Ben's access something they knowingly accept under pressure or make him obtain it despite an on-page attempt to shut him out.",
+      "acceptance_test": "Pass if a reader can point to one explicit pre-access beat at snapshots/cycle_01/chapters/chapter_13.md:215 or snapshots/cycle_01/chapters/chapter_13.md:219 that states why using Ben is dangerous and one concrete necessity that overrides that danger before snapshots/cycle_01/chapters/chapter_13.md:227; fail if snapshots/cycle_01/chapters/chapter_13.md:241 still reads as an unprepared accident rather than the consequence of a choice or failed precaution."
+    },
+    {
+      "finding_id": "CH13-PROSE-01",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:73, snapshots/cycle_01/chapters/chapter_13.md:103, snapshots/cycle_01/chapters/chapter_13.md:287, snapshots/cycle_01/chapters/chapter_13.md:289, snapshots/cycle_01/chapters/chapter_13.md:295",
+      "problem": "The narration repeatedly resorts to clipped fragment sentences and noun-phrase shards to manufacture urgency. In isolation they can punch; repeated across the chapter, they become mannered telegraphy and violate the constitution's ban on elliptical clipping in narration.",
+      "rewrite_direction": "Revise snapshots/cycle_01/chapters/chapter_13.md:73, snapshots/cycle_01/chapters/chapter_13.md:103, snapshots/cycle_01/chapters/chapter_13.md:287, snapshots/cycle_01/chapters/chapter_13.md:289, and snapshots/cycle_01/chapters/chapter_13.md:295 into grammatically complete narrative sentences. Keep the compression, but make the pressure come from image, syntax, and causal escalation rather than from standalone labels or two-word shards.",
+      "acceptance_test": "Pass if each cited passage can be read as complete narration without any standalone fragment that omits the sentence's needed subject or verb for effect; fail if abstract list items like 'Contradictory assignments' or sentence shards like 'Her stipend' remain in those beats."
+    },
+    {
+      "finding_id": "CH13-PROSE-02",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:59, snapshots/cycle_01/chapters/chapter_13.md:73, snapshots/cycle_01/chapters/chapter_13.md:75, snapshots/cycle_01/chapters/chapter_13.md:143, snapshots/cycle_01/chapters/chapter_13.md:279, snapshots/cycle_01/chapters/chapter_13.md:289, snapshots/cycle_01/chapters/chapter_13.md:313",
+      "problem": "Several high-pressure beats default to the same leverage markers: characters look at one another and the prose pivots through repeated 'not X but Y' contrasts. Because these formulas recur across revelation, accusation, and aftermath, distinct beats begin landing in the same rhythm.",
+      "rewrite_direction": "Vary snapshots/cycle_01/chapters/chapter_13.md:59, snapshots/cycle_01/chapters/chapter_13.md:143, snapshots/cycle_01/chapters/chapter_13.md:279, snapshots/cycle_01/chapters/chapter_13.md:313, snapshots/cycle_01/chapters/chapter_13.md:73, snapshots/cycle_01/chapters/chapter_13.md:75, and snapshots/cycle_01/chapters/chapter_13.md:289 by replacing some gaze-reporting with more specific bodily or spatial reactions and recasting some contrast-template sentences into fresher syntax.",
+      "acceptance_test": "Pass if at least four of the cited beats no longer use either gaze-reporting or a 'not X but Y' contrast as the primary pressure cue, and each revised beat can be distinguished by a different embodied or syntactic move when read in sequence; fail if the same formulas still organize most of those moments."
+    }
+  ],
+  "summary": "Continuity is clean, the chapter lands its required state change, and the dialogue stays distinct and naturally contracted; June, Omar, Ben, and Leela all track the style bible well, and the chapter does not sanitize the institutional or personal stakes. It still fails on Booker and prose grounds because Ben's access to the grievance is under-motivated on the page and the narration repeatedly falls into clipped fragments and recycled pressure markers."
+}

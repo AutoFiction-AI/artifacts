@@ -1,0 +1,76 @@
+{
+  "chapter_id": "chapter_02",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_02_F001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:25; snapshots/cycle_02/chapters/chapter_02.md:47; snapshots/cycle_02/chapters/chapter_02.md:77",
+      "problem": "Continuity contradiction: the chapter implies Eli left campus \"yesterday\" while Cal is already in a live Monday 9:00 audit-prep room, which conflicts with the canonical anchor that departure occurs on 2026-08-28 (Friday).",
+      "rewrite_direction": "In snapshots/cycle_02/chapters/chapter_02.md:25, :47, and :77, make the day chain explicit and consistent with the canon anchor. Either keep this chapter on Saturday and recast Cal's message as advance Monday pressure, or keep the Monday meeting and update the departure reference so it is not \"yesterday\".",
+      "acceptance_test": "Pass if a reader can map lines 25/47/77 to one coherent calendar sequence that preserves the canonical 2026-08-28 departure; fail if those lines still require Eli to have left both \"yesterday\" and not-yesterday in the same timeline."
+    },
+    {
+      "finding_id": "chapter_02_F002",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:59; snapshots/cycle_02/chapters/chapter_02.md:63; snapshots/cycle_02/chapters/chapter_02.md:95; snapshots/cycle_02/chapters/chapter_02.md:121; snapshots/cycle_02/chapters/chapter_02.md:167",
+      "problem": "Sanitization drift via interface mediation: major conflict beats are repeatedly routed through alerts, screenshots, and voicemail summaries, which buffers embodied consequence and softens the emotional violence of abandonment into administrative feed updates.",
+      "rewrite_direction": "In snapshots/cycle_02/chapters/chapter_02.md:57-123 and :163-177, compress at least one alert cluster and replace it with live, embodied confrontation or immediate physical fallout in-scene (not just a device transcript). Keep the bank/job information, but force it through character action/reaction on-page.",
+      "acceptance_test": "Pass if revised lines 57-123 and 163-177 contain at least one conflict beat rendered as live interaction or immediate bodily consequence, and no more than one consecutive paragraph of screen-text-only reporting; fail if those spans still read as stacked notifications with delayed embodiment."
+    },
+    {
+      "finding_id": "chapter_02_F003",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:13; snapshots/cycle_02/chapters/chapter_02.md:71; snapshots/cycle_02/chapters/chapter_02.md:101; snapshots/cycle_02/chapters/chapter_02.md:153",
+      "problem": "Mid-chapter escalation stalls because the same avoidant beat (ring, defer, drive) repeats before the burner-phone turn, reducing causal acceleration and dramatic surprise.",
+      "rewrite_direction": "Rework snapshots/cycle_02/chapters/chapter_02.md:13-157 so each communication beat forces a distinct state change rather than another deferment. Keep the final burner pivot, but cut duplicated avoidance loops and attach each retained beat to a new irreversible cost.",
+      "acceptance_test": "Pass if lines 13-157 show at least three sequential contact beats with different outcomes (e.g., job status shift, relational boundary hardening, deception escalation) and no duplicated ring-ignore-drive loop used more than twice; fail otherwise."
+    },
+    {
+      "finding_id": "chapter_02_F004",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:157; snapshots/cycle_02/chapters/chapter_02.md:301; snapshots/cycle_02/chapters/chapter_02.md:309; snapshots/cycle_02/chapters/chapter_02.md:313",
+      "problem": "Idiolect separation weakens under pressure: Nora's late-call diction (\"usable data,\" \"amount, date, and destination,\" \"I’m done buffering this\") converges toward Cal's procedural-HR register, blurring two voices that should remain distinct.",
+      "rewrite_direction": "In snapshots/cycle_02/chapters/chapter_02.md:301-315, keep Nora's boundary-setting but shift syntax and lexicon toward her established nurse-household register (contraction-rich, concrete, domestic/clinical pressure) while preserving contrast with Cal's policy diction at :157.",
+      "acceptance_test": "Pass if revised lines 301-315 give Nora at least three contractions across four consecutive turns and at least one line rooted in home/shift stakes, with no Cal-style policy framing reused from line 157; fail if Nora still reads as HR-voice adjacent in that exchange."
+    },
+    {
+      "finding_id": "chapter_02_F005",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:17; snapshots/cycle_02/chapters/chapter_02.md:33; snapshots/cycle_02/chapters/chapter_02.md:49; snapshots/cycle_02/chapters/chapter_02.md:65; snapshots/cycle_02/chapters/chapter_02.md:69; snapshots/cycle_02/chapters/chapter_02.md:163; snapshots/cycle_02/chapters/chapter_02.md:181; snapshots/cycle_02/chapters/chapter_02.md:363; snapshots/cycle_02/chapters/chapter_02.md:365; snapshots/cycle_02/chapters/chapter_02.md:367",
+      "problem": "Recurring construction tic: repeated paragraph starts with pronoun-led action (\"He ...\") and timestamp/location lead-ins (\"At ...\", \"By ...\") appear well beyond twice, flattening rhythm into itinerary-report cadence.",
+      "rewrite_direction": "In snapshots/cycle_02/chapters/chapter_02.md:17-75 and :163-367, vary opening constructions by foregrounding objects, environment, and pressure cues; merge or recast serial one-line action paragraphs that currently repeat the same syntactic entry.",
+      "acceptance_test": "Pass if revised lines 17-75 and 163-367 contain no run longer than two consecutive paragraphs opening with \"He\" or \"At/By,\" and at least four paragraph openings in those spans begin with non-pronoun concrete subjects; fail otherwise."
+    },
+    {
+      "finding_id": "chapter_02_F006",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:359; snapshots/cycle_02/chapters/chapter_02.md:367",
+      "problem": "Timidity at the chapter exit: after the burner-phone lie lands, the prose retreats into deferred consequence (unopened message + mile-marker drift) instead of rendering immediate emotional impact.",
+      "rewrite_direction": "Rework snapshots/cycle_02/chapters/chapter_02.md:359-367 so the ending includes one concrete consequence from the incoming message (content fragment, bodily reaction, or immediate behavioral shift) before the close, rather than pure deferral.",
+      "acceptance_test": "Pass if lines 359-367 show an explicit consequence from the incoming message on-page before the final sentence; fail if the chapter still exits on an unopened-message dodge."
+    }
+  ],
+  "summary": "Chapter 2 lands key plot obligations (stacked pressure, Cal audit threat, burner-phone escalation) and maintains close-third past-tense control, but it does not clear pass-level quality: there is a high-severity continuity date conflict, high-severity sanitization-by-interface in central beats, and recurring structural/prose/dialogue flattening that reduce causal force and voice separation.",
+  "coverage_scene_ids": [
+    "chapter_02_scene_drive_pressure",
+    "chapter_02_scene_bp_discard"
+  ]
+}

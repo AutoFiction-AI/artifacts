@@ -1,0 +1,69 @@
+{
+  "chapter_id": "chapter_12",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch12-f001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_02/chapters/chapter_12.md:3; snapshots/cycle_02/chapters/chapter_12.md:151; snapshots/cycle_02/chapters/chapter_12.md:157",
+      "problem": "The chapter's temporal anchors conflict. Line 3 frames the shift as Friday-coded (including the `Fri 3 p.m. ET` carryover cue), but line 151 explicitly dates the same night sequence as October 6, 2026 (a Tuesday), with line 157 then treating October 7 as Wednesday. This creates continuity ambiguity around the current day.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_12.md:3 and snapshots/cycle_02/chapters/chapter_12.md:151, choose one clear present-day anchor and align all downstream schedule references (including snapshots/cycle_02/chapters/chapter_12.md:157). If the scene is Tuesday night, remove Friday-present framing at line 3; if it is Friday, adjust the written date/schedule block accordingly.",
+      "acceptance_test": "PASS if a reader can track one unambiguous date progression across snapshots/cycle_02/chapters/chapter_12.md:3, :151, and :157 without reconciling contradictory weekday cues; FAIL if weekday/date cues still imply different current days."
+    },
+    {
+      "finding_id": "ch12-f002",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_02/chapters/chapter_12.md:133; snapshots/cycle_02/chapters/chapter_12.md:141; snapshots/cycle_02/chapters/chapter_12.md:145; snapshots/cycle_02/chapters/chapter_12.md:147",
+      "problem": "Sanitization drift via moral safety valve: the addiction-risk beat becomes quickly self-reassuring. After a strong embodied craving setup, the scene resolves into immediate disposal/smashing of the bottle, reducing ongoing uncertainty and flattening consequence pressure.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_12.md:133-149 to preserve embodied craving while keeping unresolved risk alive. Keep the no-drink choice if desired, but add concrete aftermath cost (e.g., sustained physiological agitation, near-relapse behavior, or a compromised next action) rather than symbolic closure alone.",
+      "acceptance_test": "PASS if snapshots/cycle_02/chapters/chapter_12.md:133-149 ends with a concrete unresolved vulnerability that carries into the next beats (not just bottle disposal symbolism); FAIL if the scene still reads as clean temptation-to-purity closure."
+    },
+    {
+      "finding_id": "ch12-f003",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_02/chapters/chapter_12.md:43; snapshots/cycle_02/chapters/chapter_12.md:45; snapshots/cycle_02/chapters/chapter_12.md:47; snapshots/cycle_02/chapters/chapter_12.md:49; snapshots/cycle_02/chapters/chapter_12.md:51; snapshots/cycle_02/chapters/chapter_12.md:53",
+      "problem": "Nora's voicemail block reads as a near-written briefing memo (numbered sections, dense accounting cadence) rather than stressed speech. The facts are strong, but spoken texture is too polished for live pressure.",
+      "rewrite_direction": "Rework snapshots/cycle_02/chapters/chapter_12.md:43-55 to keep all canonical facts while introducing spoken friction appropriate to Nora's voice profile: brief restarts, pressure pauses, and one emotionally loaded line that remains controlled. Maintain moderate contraction use and legal precision.",
+      "acceptance_test": "PASS if all required facts remain present in snapshots/cycle_02/chapters/chapter_12.md:43-55 (filing date/time, counsel deadline, account freeze, meal-plan cut, arrears math, required text action) and the speech includes at least two natural cadence markers (restart/pause/interruption/correction); FAIL if it still reads as uninterrupted memo prose."
+    },
+    {
+      "finding_id": "ch12-f004",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_02/chapters/chapter_12.md:147; snapshots/cycle_02/chapters/chapter_12.md:185; snapshots/cycle_02/chapters/chapter_12.md:249; snapshots/cycle_02/chapters/chapter_12.md:253",
+      "problem": "Recurring sentence formula tic: repeated negative declarative openings (\"He did not ...\") appear 4+ times in the chapter's final movement, flattening cadence at key emotional beats.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_12.md:147, :185, :249, and :253, recast at least two negative-opened sentences into concrete affirmative action/sensory constructions that preserve meaning but vary rhythm.",
+      "acceptance_test": "PASS if the revised span snapshots/cycle_02/chapters/chapter_12.md:147-253 contains no more than two sentence openings with \"He did not\" and at least two of the cited lines are rewritten into concrete action/image phrasing; FAIL otherwise."
+    },
+    {
+      "finding_id": "ch12-f005",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_02/chapters/chapter_12.md:101; snapshots/cycle_02/chapters/chapter_12.md:213; snapshots/cycle_02/chapters/chapter_12.md:217; snapshots/cycle_02/chapters/chapter_12.md:245",
+      "problem": "Consequence pressure eases too quickly once the voicemail lands: Eli gets extra hours, a Reno hiring lead, and a self-authored repayment plan in one chapter turn, which compresses resistance and makes the pivot feel comparatively friction-light.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_12.md:101-103 and snapshots/cycle_02/chapters/chapter_12.md:213-218 (with payoff near snapshots/cycle_02/chapters/chapter_12.md:245), add cost or uncertainty to at least one rescue vector (hours or Lucia lead) so the chapter ends with earned forward motion but unresolved operational risk.",
+      "acceptance_test": "PASS if, by the end of the revised chapter, at least one key repayment enabler introduced in snapshots/cycle_02/chapters/chapter_12.md:101-218 remains materially uncertain or conditional with explicit cost; FAIL if all major enablers still land as near-immediate supports in the same beat."
+    }
+  ],
+  "summary": "The chapter is strong on sensory labor texture and concrete financial stakes, but it fails review due to a HIGH timeline-anchor inconsistency and a HIGH sanitization-style safety valve in the addiction-risk turn. Additional MEDIUM issues in dialogue realism, recurring prose cadence tics, and consequence compression keep all four lenses below pass threshold.",
+  "coverage_scene_ids": [
+    "shift_open_laundry",
+    "vending_alcove_voicemail",
+    "bottle_decision_and_disposal",
+    "repayment_sequence_desk",
+    "late_night_marisol_visit"
+  ]
+}

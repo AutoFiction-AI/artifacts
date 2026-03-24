@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_06",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_06_craft_001",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "The chapter's decisive theft beat stacks several helpful loopholes during an active audit: Celia's live token opens restricted routing, blank wafers are sitting at the console, the slot can be pried open manually, a dead calibration sliver is conveniently available for the purge fake-out, and exit security checks only Mira's bag (`snapshots/cycle_01/chapters/chapter_06.md:187`, `snapshots/cycle_01/chapters/chapter_06.md:207`, `snapshots/cycle_01/chapters/chapter_06.md:225`, `snapshots/cycle_01/chapters/chapter_06.md:229`, `snapshots/cycle_01/chapters/chapter_06.md:239`, `snapshots/cycle_01/chapters/chapter_06.md:529`, `snapshots/cycle_01/chapters/chapter_06.md:537`).",
+      "problem": "The anomaly-wafer theft is vivid and plot-critical, but the success path depends on too many convenient breaks arriving in sequence. That softens the sense of risk in the chapter's most consequential criminal act and makes the concealment engine feel slightly arranged rather than fully earned.",
+      "rewrite_direction": "Harden the theft mechanics in `snapshots/cycle_01/chapters/chapter_06.md:185`, `snapshots/cycle_01/chapters/chapter_06.md:207`, `snapshots/cycle_01/chapters/chapter_06.md:225`, `snapshots/cycle_01/chapters/chapter_06.md:239`, and `snapshots/cycle_01/chapters/chapter_06.md:529`. Either establish one exploit clearly and remove the extra conveniences, or keep the current exploit chain but add an immediate cost or trace on page: a partial log entry, a near-catch from Nasrin, a visible injury that later exposes her, or an exit-search beat that forces a riskier concealment than simply using the shoe.",
+      "acceptance_test": "Reading the revised theft sequence at `snapshots/cycle_01/chapters/chapter_06.md:185`, `snapshots/cycle_01/chapters/chapter_06.md:225`, `snapshots/cycle_01/chapters/chapter_06.md:239`, and `snapshots/cycle_01/chapters/chapter_06.md:529`, the wafer should survive because Mira exploits one clearly grounded loophole and pays one concrete on-page cost or near-detection. Fail if the scene still requires the reader to accept three or more fresh conveniences arriving back-to-back with no trace left behind."
+    },
+    {
+      "finding_id": "chapter_06_prose_001",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_06",
+      "evidence": "The narration repeatedly uses clipped fragments forbidden by the constitution: 'Missing disposal paperwork' / 'A return packet that did not reconcile' / 'Someone from compliance staying late' (`snapshots/cycle_01/chapters/chapter_06.md:19`), 'Civil penalties' (`snapshots/cycle_01/chapters/chapter_06.md:405`), 'Formal. Ugly.' (`snapshots/cycle_01/chapters/chapter_06.md:457`), and 'Badge. Desk. Questions.' (`snapshots/cycle_01/chapters/chapter_06.md:561`).",
+      "problem": "These stress beats are aiming for compression, but they cross into elliptical clipping in narration, which the constitution explicitly forbids. The result is a noticeable prose-mode break: instead of tense complete sentences, the chapter keeps dropping into subjectless shorthand.",
+      "rewrite_direction": "Rewrite the fragment clusters at `snapshots/cycle_01/chapters/chapter_06.md:19`, `snapshots/cycle_01/chapters/chapter_06.md:405`, `snapshots/cycle_01/chapters/chapter_06.md:457`, and `snapshots/cycle_01/chapters/chapter_06.md:561` as grammatically complete sentences. Keep the same pressure and brevity, but carry it through rhythm, syntax, and punctuation rather than standalone fragments missing required subjects or verbs.",
+      "acceptance_test": "In the revised passages at `snapshots/cycle_01/chapters/chapter_06.md:19`, `snapshots/cycle_01/chapters/chapter_06.md:405`, `snapshots/cycle_01/chapters/chapter_06.md:457`, and `snapshots/cycle_01/chapters/chapter_06.md:561`, every narration sentence is grammatically complete while still sounding compressed under pressure. Fail if any standalone narration beat still omits a necessary subject or verb purely for terseness."
+    },
+    {
+      "finding_id": "chapter_06_prose_002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "A recurring demonstrative-evaluation scaffold appears throughout the chapter: 'That was new enough...' (`snapshots/cycle_01/chapters/chapter_06.md:37`), 'That was worse too' (`snapshots/cycle_01/chapters/chapter_06.md:51`), 'That was part of the problem with her' (`snapshots/cycle_01/chapters/chapter_06.md:73`), 'That was Celia at her purest' (`snapshots/cycle_01/chapters/chapter_06.md:83`), 'That was a tool too' (`snapshots/cycle_01/chapters/chapter_06.md:275`), 'It was the worst possible response' (`snapshots/cycle_01/chapters/chapter_06.md:401`), and 'It was the nearest thing to honesty...' (`snapshots/cycle_01/chapters/chapter_06.md:509`).",
+      "problem": "Because this 'That/It was...' hinge recurs so often, it becomes a prose tic and starts explaining beats the scene has already dramatized. The repetition flattens the chapter's otherwise sharp institutional dialogue by leaning on narrator labels instead of letting gesture, silence, or consequence carry more of the interpretation.",
+      "rewrite_direction": "Revise the explanatory hinge sentences at `snapshots/cycle_01/chapters/chapter_06.md:37`, `snapshots/cycle_01/chapters/chapter_06.md:51`, `snapshots/cycle_01/chapters/chapter_06.md:73`, `snapshots/cycle_01/chapters/chapter_06.md:83`, `snapshots/cycle_01/chapters/chapter_06.md:275`, `snapshots/cycle_01/chapters/chapter_06.md:401`, and `snapshots/cycle_01/chapters/chapter_06.md:509`. Convert at least most of them into observed behavior, sensory pressure, or downstream consequence so the reader infers the beat rather than being told how to read it.",
+      "acceptance_test": "After revision, the entry scene, Celia scene, and Yaret scene anchored at `snapshots/cycle_01/chapters/chapter_06.md:37`, `snapshots/cycle_01/chapters/chapter_06.md:73`, and `snapshots/cycle_01/chapters/chapter_06.md:275` should not stack multiple 'That/It was...' explanatory hinges. Pass if at least four of the seven cited instances have been replaced with action, sensation, or consequence that makes the same point without the formula."
+    }
+  ],
+  "summary": "Strong concealment chapter on structure and voice: the chapter spine lands, Mira stays tightly focalized in past tense, and Lin, Gabe, Celia, and Yaret all track the style bible's registers and contraction logic. Booker and dialogue pass. Craft and prose fail on three unresolved issues: the wafer theft still leans on a stack of convenient loopholes under audit pressure, clipped narration fragments violate the constitution, and the repeated 'That/It was...' hinge construction becomes a noticeable prose tic."
+}

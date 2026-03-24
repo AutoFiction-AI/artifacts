@@ -1,0 +1,90 @@
+{
+  "acceptance_targets": [
+    "[ch05-craft-001] Pass if a reader can point to an explicit intervening action, obstacle, or deception between snapshots/cycle_01/chapters/chapter_05.md:203 and snapshots/cycle_01/chapters/chapter_05.md:323 that explains how Ferrand remains inside the refuge long enough to recruit Abel privately. Fail if he still moves from exposed threat to private tunnel access without any on-page containment attempt or clear constraint.",
+    "[ch05-prose-001] Pass if those cited spans read as fully grammatical narration with explicit subjects and verbs, and the only fragmentary text left is quoted material such as the ledger entry at snapshots/cycle_01/chapters/chapter_05.md:277. Fail if standalone narration fragments like 'Not Lucien's voice' or 'Not rumor. Not fear.' remain in the revised passage.",
+    "[ch05-prose-002] Pass if, across the cited lines, no more than one passage still hinges on the current negate-then-pivot structure and the other revised beats land through distinct sentence shapes. Fail if all three revelations still rely on the same 'not X / it was Y' maneuver."
+  ],
+  "chapter_id": "chapter_05",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if a reader can point to an explicit intervening action, obstacle, or deception between snapshots/cycle_01/chapters/chapter_05.md:203 and snapshots/cycle_01/chapters/chapter_05.md:323 that explains how Ferrand remains inside the refuge long enough to recruit Abel privately. Fail if he still moves from exposed threat to private tunnel access without any on-page containment attempt or clear constraint.",
+      "chapter_id": "chapter_05",
+      "cycle": 1,
+      "evidence": "Lucien orders Ferrand to remove the satchel and later says Ferrand will not recruit in the refuge, but Ferrand still leaves unescorted and is privately working Abel in the tunnels moments later (snapshots/cycle_01/chapters/chapter_05.md:75, snapshots/cycle_01/chapters/chapter_05.md:179, snapshots/cycle_01/chapters/chapter_05.md:207, snapshots/cycle_01/chapters/chapter_05.md:217, snapshots/cycle_01/chapters/chapter_05.md:323).",
+      "finding_id": "ch05-craft-001",
+      "problem": "The room correctly reads Ferrand as an active bomb-risk and recruiting threat, then takes no concrete action to eject, tail, or contain him. That creates a scene-mechanics gap at the exact hinge where Abel's next step needs to feel causally forced rather than author-permitted, and it weakens Lucien/Clemence/Nadir's competence under pressure.",
+      "rewrite_direction": "Revise the transition around snapshots/cycle_01/chapters/chapter_05.md:203, snapshots/cycle_01/chapters/chapter_05.md:217, snapshots/cycle_01/chapters/chapter_05.md:313, and snapshots/cycle_01/chapters/chapter_05.md:323 so Ferrand's continued access to Abel is earned on the page. Options: show Lucien, Clemence, or Nadir trying to throw him out and failing for a concrete reason; show Ferrand exploiting a visible distraction or route advantage; or show why no one can risk a physical confrontation while he is carrying powder.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if those cited spans read as fully grammatical narration with explicit subjects and verbs, and the only fragmentary text left is quoted material such as the ledger entry at snapshots/cycle_01/chapters/chapter_05.md:277. Fail if standalone narration fragments like 'Not Lucien's voice' or 'Not rumor. Not fear.' remain in the revised passage.",
+      "chapter_id": "chapter_05",
+      "cycle": 1,
+      "evidence": "The narration repeatedly snaps into clipped fragments: 'Not Lucien's voice' (snapshots/cycle_01/chapters/chapter_05.md:11), 'Not rumor. Not fear' (snapshots/cycle_01/chapters/chapter_05.md:43), 'Or trying to give the room the idea of it' (snapshots/cycle_01/chapters/chapter_05.md:47), 'Not fear in the abstract. Not some floating pulse' (snapshots/cycle_01/chapters/chapter_05.md:275), and 'Not because the quarry was innocent. It was not' (snapshots/cycle_01/chapters/chapter_05.md:353).",
+      "finding_id": "ch05-prose-001",
+      "problem": "This chapter uses clipped fragment narration often enough to become a visible mannerism, and several instances cross the constitution's explicit ban on elliptical clipping in narration. Instead of reading as hard compression, the effect starts to feel like manufactured emphasis.",
+      "rewrite_direction": "Recast the fragment-heavy narration around snapshots/cycle_01/chapters/chapter_05.md:11, snapshots/cycle_01/chapters/chapter_05.md:43, snapshots/cycle_01/chapters/chapter_05.md:47, snapshots/cycle_01/chapters/chapter_05.md:275, and snapshots/cycle_01/chapters/chapter_05.md:353 into complete sentences with explicit subjects and verbs. Keep the pressure by adjusting sentence length, paragraphing, or punctuation rather than relying on standalone fragments.",
+      "severity": "HIGH",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if, across the cited lines, no more than one passage still hinges on the current negate-then-pivot structure and the other revised beats land through distinct sentence shapes. Fail if all three revelations still rely on the same 'not X / it was Y' maneuver.",
+      "chapter_id": "chapter_05",
+      "cycle": 1,
+      "evidence": "Several key realizations arrive through the same negate-then-correct construction: 'It was not the bomb itself ... It was the way every eye had found its own use for the thing' (snapshots/cycle_01/chapters/chapter_05.md:107), 'It was not a bomb plot written cleanly out. It was worse' (snapshots/cycle_01/chapters/chapter_05.md:271), and 'Not because the quarry was innocent. It was not' (snapshots/cycle_01/chapters/chapter_05.md:353).",
+      "finding_id": "ch05-prose-002",
+      "problem": "The repeated 'not X / actually Y' pivot becomes a chapter-level prose tic. Because it lands on multiple major interpretive beats, Elise's thinking starts to sound mechanically processed in the same cadence instead of freshly observed each time.",
+      "rewrite_direction": "Vary the sentence architecture at snapshots/cycle_01/chapters/chapter_05.md:107, snapshots/cycle_01/chapters/chapter_05.md:271, and snapshots/cycle_01/chapters/chapter_05.md:353. Let at least two of those insights arrive directly through image, consequence, or plain assertion instead of first negating an alternative.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "917fd0cbf172c660b936a58b8b52057ad14d3d2a70d95aa8a13401e3e4d5fead",
+  "must_fix_count": 3,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into the contradiction that tenderness can coexist with surveillance, desire with betrayal, and ideology with vanity. Render violence, sex, illness, and poverty at the scale characters actually experience them. When an edge case appears, choose the more specific and less reputationally safe version if it remains faithful to character, period, and causality.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene reaches bodily danger, sex, grief, class shame, or political cruelty and then retreats into summary, rewrite toward the exact physical and social fact the character cannot evade.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "Moderate to high; contractions are the spoken default, with full forms reserved for period formality, deliberate emphasis, or Vautrin's cultivated precision.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate compressive surveillance chapters with slower communal or reflective chapters; vary scene count, dialogue density, and whether the turn comes from action, information, dread, or aftermath so no two adjacent chapters run on the same structural rhythm.",
+      "diction": "Historically grounded and unsentimental; plain enough for labor and bureaucracy, lyrical only when perception earns it rather than rhetoric.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third centered on Elise, elastic enough to register class texture, political pressure, and the quarry's collective life without drifting into authorial essay.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Supple, image-bearing sentences broken by hard factual beats at moments of violence, lust, bureaucratic coercion, or shame.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

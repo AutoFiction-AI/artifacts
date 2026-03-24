@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_16",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "PASS",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch16-dialogue-01",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_01/chapters/chapter_16.md:27; snapshots/cycle_01/chapters/chapter_16.md:45; snapshots/cycle_01/chapters/chapter_16.md:175; snapshots/cycle_01/chapters/chapter_16.md:221; snapshots/cycle_01/chapters/chapter_16.md:261; snapshots/cycle_01/chapters/chapter_16.md:293",
+      "problem": "The chapter repeatedly uses the same dropped-article or dropped-auxiliary sentence shape across Marcia, Delroy, Kerene, and Sister Eudora (\"what left,\" \"make joke,\" \"rain done,\" \"what you saying,\" \"what in there,\" \"Hair catch cold\"). That generic clipped Caribbean syntax starts to blur voice separation instead of sharpening it, which works against the style bible's idiolect distinctions and the constitution's anti-clipping rule.",
+      "rewrite_direction": "Rework the dialogue at snapshots/cycle_01/chapters/chapter_16.md:27, snapshots/cycle_01/chapters/chapter_16.md:45, snapshots/cycle_01/chapters/chapter_16.md:175, snapshots/cycle_01/chapters/chapter_16.md:221, snapshots/cycle_01/chapters/chapter_16.md:261, and snapshots/cycle_01/chapters/chapter_16.md:293 so each speaker keeps a distinct rhythm without leaning on omitted function words as the main Caribbean marker. Marcia should stay task-sharp, Delroy bargaining and prideful, Kerene bright-edged, and Eudora matronly and practical, but restore grammatical completeness unless a specific line needs marked dialect for a clear dramatic reason.",
+      "acceptance_test": "Pass if the revised cluster at snapshots/cycle_01/chapters/chapter_16.md:27, snapshots/cycle_01/chapters/chapter_16.md:45, snapshots/cycle_01/chapters/chapter_16.md:175, snapshots/cycle_01/chapters/chapter_16.md:221, snapshots/cycle_01/chapters/chapter_16.md:261, and snapshots/cycle_01/chapters/chapter_16.md:293 no longer depends on dropped articles or auxiliaries to signal voice, and the speakers remain distinguishable by rhythm and intent alone; fail if multiple speakers still share the same \"what left / rain done / what in there\" construction without a scene-specific reason."
+    },
+    {
+      "finding_id": "ch16-prose-01",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_01/chapters/chapter_16.md:137; snapshots/cycle_01/chapters/chapter_16.md:205; snapshots/cycle_01/chapters/chapter_16.md:223; snapshots/cycle_01/chapters/chapter_16.md:289; snapshots/cycle_01/chapters/chapter_16.md:303; snapshots/cycle_01/chapters/chapter_16.md:327",
+      "problem": "The chapter lands too many major beats with the same corrective-fragment formula: \"Not We have taken. Not It came in,\" \"Not what you're withholding,\" \"Only a little. Only enough...,\" \"Not daughter... Not almost-gone,\" and \"Not delayed. Not bruised. Dead.\" Repeating the same negating emphasis across flood, confrontation, shelter humiliation, and notebook grief turns an otherwise strong narrative voice into a visible tic.",
+      "rewrite_direction": "Vary the emphasis at snapshots/cycle_01/chapters/chapter_16.md:137, snapshots/cycle_01/chapters/chapter_16.md:205, snapshots/cycle_01/chapters/chapter_16.md:223, snapshots/cycle_01/chapters/chapter_16.md:289, snapshots/cycle_01/chapters/chapter_16.md:303, and snapshots/cycle_01/chapters/chapter_16.md:327. Keep the emotional conclusions, but let several of these beats land through image, action, or different sentence rhythm instead of stacked negation or correction fragments.",
+      "acceptance_test": "Pass if, across snapshots/cycle_01/chapters/chapter_16.md:137, snapshots/cycle_01/chapters/chapter_16.md:205, snapshots/cycle_01/chapters/chapter_16.md:223, snapshots/cycle_01/chapters/chapter_16.md:289, snapshots/cycle_01/chapters/chapter_16.md:303, and snapshots/cycle_01/chapters/chapter_16.md:327, no more than two beats still use the same \"Not X. Not Y.\" or \"Only a little. Only enough...\" structure, and each revised beat reads as locally shaped by its scene rather than by the same rhetorical template."
+    }
+  ],
+  "summary": "The chapter clears the causal and continuity bar: the flood breach, landlord refusal, and fellowship-hall displacement escalate cleanly, the narration stays in canonical past tense, and no continuity contradiction or sanitization drift rose to reportable severity. It fails dialogue and prose on narrower but real issues: several speakers share the same clipped sentence shape, which weakens character-voice separation, and the chapter repeats the same negating emphasis formula often enough to become audible as craft habit."
+}

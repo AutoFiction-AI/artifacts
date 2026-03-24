@@ -1,0 +1,69 @@
+{
+  "chapter_id": "chapter_05",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch05_booker_001",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:63; snapshots/cycle_01/chapters/chapter_05.md:71; snapshots/cycle_01/chapters/chapter_05.md:77; snapshots/cycle_01/chapters/chapter_05.md:81; snapshots/cycle_01/chapters/chapter_05.md:97",
+      "problem": "The chapter's central confrontation cycles through accusation and denial for too long before new causal information arrives; the witness reveal that changes the chapter's stakes lands late, so momentum stalls in the middle third.",
+      "rewrite_direction": "Tighten the exchange in snapshots/cycle_01/chapters/chapter_05.md:63-97: compress the first accusation loop (63-71) into one sharper turn, move the redaction-condition conflict earlier (around 75-87), and bring Benny's factual interruption in by the early part of that span so causal movement starts sooner.",
+      "acceptance_test": "PASS if, in the revised snapshots/cycle_01/chapters/chapter_05.md:63-97 span, no accusation/denial cycle is repeated more than once and the first new factual witness detail about Tomas appears before the end of the third major exchange after Deena's introduction; FAIL otherwise."
+    },
+    {
+      "finding_id": "ch05_craft_001",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:51; snapshots/cycle_01/chapters/chapter_05.md:53; snapshots/cycle_01/chapters/chapter_05.md:55; snapshots/cycle_01/chapters/chapter_05.md:57; snapshots/cycle_01/chapters/chapter_05.md:59; snapshots/cycle_01/chapters/chapter_05.md:61; snapshots/cycle_01/chapters/chapter_05.md:63; snapshots/cycle_01/chapters/chapter_05.md:65; snapshots/cycle_01/chapters/chapter_05.md:67; snapshots/cycle_01/chapters/chapter_05.md:69; snapshots/cycle_01/chapters/chapter_05.md:71; snapshots/cycle_01/chapters/chapter_05.md:73",
+      "problem": "There is a 10+ paragraph stretch in the office confrontation where the focalizer has almost no explicit internal experience, so the scene reads like external blocking and transcript rather than close-third pressure.",
+      "rewrite_direction": "In snapshots/cycle_01/chapters/chapter_05.md:51-73, add brief interior beats tied to Marisol's thought/sensation/self-assessment (for example after Deena's first accusation and after Marisol's first two replies) while preserving scene tempo.",
+      "acceptance_test": "PASS if the revised snapshots/cycle_01/chapters/chapter_05.md:51-73 span includes at least 3 paragraphs with explicit Marisol interiority and no run longer than 6 consecutive paragraphs without interior experience; FAIL otherwise."
+    },
+    {
+      "finding_id": "ch05_dialogue_001",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:63; snapshots/cycle_01/chapters/chapter_05.md:67; snapshots/cycle_01/chapters/chapter_05.md:69; snapshots/cycle_01/chapters/chapter_05.md:71; snapshots/cycle_01/chapters/chapter_05.md:77; snapshots/cycle_01/chapters/chapter_05.md:79; snapshots/cycle_01/chapters/chapter_05.md:81; snapshots/cycle_01/chapters/chapter_05.md:83",
+      "problem": "The early Deena/Marisol argument leans into transcript cadence: several adjacent turns restate institutional-position versus family-position without adding distinct new leverage, which temporarily flattens dialogic pressure.",
+      "rewrite_direction": "Revise snapshots/cycle_01/chapters/chapter_05.md:63-83 so each turn introduces a new pressure vector (legal exposure, union representation protocol, evidence scope, publication condition). Keep Marisol's high-contraction stressed register active in this span and reduce slogan-like restatement.",
+      "acceptance_test": "PASS if, in revised snapshots/cycle_01/chapters/chapter_05.md:63-83, each Marisol line either concedes, reframes, or requests a concrete condition, and no two adjacent turns merely restate the same institutional-vs-family claim without new tactical information; FAIL otherwise."
+    },
+    {
+      "finding_id": "ch05_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:3; snapshots/cycle_01/chapters/chapter_05.md:191; snapshots/cycle_01/chapters/chapter_05.md:241",
+      "problem": "A recurring transition formula (\"By the time ...\") appears three times at major scene pivots, creating a noticeable structural tic.",
+      "rewrite_direction": "Recast at least two of the openings at snapshots/cycle_01/chapters/chapter_05.md:3, snapshots/cycle_01/chapters/chapter_05.md:191, and snapshots/cycle_01/chapters/chapter_05.md:241 with different syntactic entries (for example one sensory-first and one action-first) while preserving chronology.",
+      "acceptance_test": "PASS if the revised chapter uses \"By the time\" no more than once across those three transition points and each transition opens with a distinct sentence shape; FAIL otherwise."
+    },
+    {
+      "finding_id": "ch05_prose_002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:237",
+      "problem": "The repeated anaphora (\"She kept seeing ...\") runs four times in one paragraph and starts to sound mechanical instead of accumulative.",
+      "rewrite_direction": "Rework the paragraph at snapshots/cycle_01/chapters/chapter_05.md:237 so the obsessive loop remains, but vary syntax and verb choice; keep no more than two identical repeated stems and ensure each image adds a distinct inference.",
+      "acceptance_test": "PASS if, in revised snapshots/cycle_01/chapters/chapter_05.md:237, the exact stem \"She kept seeing\" appears at most twice and the paragraph still presents three concrete images tied to three different conclusions; FAIL otherwise."
+    }
+  ],
+  "summary": "Chapter 5 cleanly hits boundary beats and preserves canonical continuity and past-tense narration, but it does not clear pass-level quality: the union-office middle stretch loses leverage efficiency and interior pressure, and repeated prose constructions create detectable formula drift.",
+  "coverage_scene_ids": [
+    "red_hook_annex_entry",
+    "union_office_confrontation",
+    "copy_room_testimony",
+    "bodega_timeline_assembly",
+    "apartment_sequence_rebuild"
+  ]
+}

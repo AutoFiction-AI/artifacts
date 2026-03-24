@@ -1,0 +1,53 @@
+{
+  "chapter_id": "chapter_05",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "PASS",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch05-prose-01",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:29 — \"which today was the bread basket, which was also fine, which was also nothing\"; snapshots/cycle_01/chapters/chapter_05.md:68 — \"which was something Nora did when she was flirting, which Simone knew because she'd been cataloging Nora's behavioral tells for seventeen years, which was also why the AI was so good\"; snapshots/cycle_01/chapters/chapter_05.md:92 — \"which was hope, which was tenderness, which was the most convincing product Simone had ever shipped\"",
+      "problem": "Cascading 'which was/which' relative clause chains appear three times. Each instance stacks three or more 'which'-clauses into a single sentence, creating a rhythmic signature that calls attention to itself through repetition. Once is a deliberate syntactic choice suited to Simone's analytical consciousness; three times is a tic.",
+      "rewrite_direction": "Vary at least two of the three instances at snapshots/cycle_01/chapters/chapter_05.md:29, :68, :92. Options: (a) break the cascade into separate sentences, (b) use a different connector (dash, semicolon, new sentence), or (c) restructure the thought to avoid the stacking pattern. One instance may remain as a deliberate stylistic move — the line 29 cascade ('which was also fine, which was also nothing') is the strongest candidate to keep because its rhythm enacts Simone's self-deceptive minimization.",
+      "acceptance_test": "The chapter contains no more than one sentence with three or more 'which'-clause links in a cascade. The two rewritten passages use visibly different syntactic structures from each other and from the retained instance."
+    },
+    {
+      "finding_id": "ch05-prose-02",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:29 — \"Simone watched it the way she always watched it\"; snapshots/cycle_01/chapters/chapter_05.md:35 — \"the way a user flow does after enough A/B testing\"; snapshots/cycle_01/chapters/chapter_05.md:66 — \"the way you train yourself to lock a door\"; snapshots/cycle_01/chapters/chapter_05.md:116 — \"the way people stopped inviting your opinion\"; snapshots/cycle_01/chapters/chapter_05.md:170 — \"not the way Simone knew Nora\"",
+      "problem": "The 'the way [X] [verbs]' comparison formula appears five times — the most over-deployed construction in the chapter. While each individual instance is functional, the cumulative effect flattens the prose's comparative texture into a single rhythmic default.",
+      "rewrite_direction": "Reduce to no more than two instances across the full chapter. Rephrase at least three of the five occurrences at snapshots/cycle_01/chapters/chapter_05.md:29, :35, :66, :116, :170 using different syntactic frames for comparison — direct metaphor, 'like,' embedded analogy, or restructured sentences that eliminate the comparison entirely when the observation can stand on its own. The line 35 instance ('the way a user flow does') and the line 170 instance ('not the way Simone knew Nora') are the strongest candidates to keep because they carry the most semantic weight.",
+      "acceptance_test": "'The way [X]' comparison formula appears no more than twice in the chapter. The remaining comparisons use at least two distinct syntactic structures (e.g., one 'like,' one direct metaphor, one restructured sentence that drops the comparison frame)."
+    },
+    {
+      "finding_id": "ch05-prose-03",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:3 — \"the particular geometry of a friendship\"; snapshots/cycle_01/chapters/chapter_05.md:25 — \"the specific bitter flatness of a pour-over\"; snapshots/cycle_01/chapters/chapter_05.md:98 — \"the particular unhurried way of people with nowhere to be\"; snapshots/cycle_01/chapters/chapter_05.md:100 — \"the specific texture of the neighborhood's gentrification\"; snapshots/cycle_01/chapters/chapter_05.md:29 — \"not just her mouth but her entire face\"; snapshots/cycle_01/chapters/chapter_05.md:156 — \"not as a competitor but as a machine\"; snapshots/cycle_01/chapters/chapter_05.md:170 — \"not the way Simone knew Nora... but through pure pattern recognition\"",
+      "problem": "Two precision-qualifying formulas recur at tic frequency. 'The particular/specific [noun]' appears four times, establishing specificity through the same adjective-plus-noun frame each time. 'Not [X] but [Y]' dash-correction appears three times, refining a claim through the same oppositional structure. Both serve Simone's analytic POV but flatten into autopilot when deployed this often in a single chapter.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_05.md:3, :25, :98, :100 — reduce 'particular' and 'specific' as precision qualifiers to no more than two total instances. Let the specific noun carry its own weight without the qualifying adjective where possible (e.g., 'the bitter flatness of a pour-over' instead of 'the specific bitter flatness'). At snapshots/cycle_01/chapters/chapter_05.md:29, :156, :170 — reduce 'not X but Y' corrections to one instance. Restructure the others as new sentences or use different contrastive syntax.",
+      "acceptance_test": "'Particular' or 'specific' as a precision-qualifying adjective before a noun appears no more than twice total in the chapter. 'Not [X] but [Y]' dash-correction construction appears no more than once. Each replaced instance uses a visibly different syntactic strategy from the retained instance."
+    },
+    {
+      "finding_id": "ch05-prose-04",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:168 — \"She had built a system that learned from its conversations. That was the feature. That was what made the platform more than a chatbot\"; snapshots/cycle_01/chapters/chapter_05.md:172 — \"The creation was outpacing the creator. The thing she'd built was becoming better at being Nora's partner than Simone was at being Nora's friend, and Simone wasn't sure if the correct response to this fact was to be proud or terrified... whether the distinction mattered\"",
+      "problem": "The closing section (lines 168-172) shifts from embodied scene to thematic essay. 'The creation was outpacing the creator' reads as a thesis statement. 'Simone wasn't sure if the correct response to this fact was to be proud or terrified' names the chapter's central ambiguity as an abstraction rather than showing it through specific thought, sensation, or memory. The chapter's final image (line 176 — 'the dashboard still running behind her eyes') is strong, but the path to it passes through summary rather than scene. The preceding 140 lines built the case through evidence; the ending should trust that evidence instead of annotating it.",
+      "rewrite_direction": "Revise snapshots/cycle_01/chapters/chapter_05.md:168-172 to anchor Simone's reflection in her immediate physical reality — the bed, the cold sheets, the bass through the wall, her body's specific fatigue. The thematic content (the AI outpacing its creator, the ambiguity of pride and terror) should emerge from concrete, Simone-specific thought rather than from named abstractions. Cut or rewrite 'The creation was outpacing the creator' — this is a summary of what the chapter has already dramatized through the Koch-memoir response. Let the reader draw the conclusion. The closing image at line 176 should remain and may even land harder once the essayistic scaffolding is removed.",
+      "acceptance_test": "Lines 168-172 in revision contain at least three specific sensory or physical details drawn from Simone's immediate environment or body. No sentence in the passage functions as a thesis statement or names the chapter's thematic tension in abstract terms (no formulations equivalent to 'the creation was outpacing the creator' or 'proud or terrified'). The reader arrives at the thematic conclusion through Simone's concrete, embodied thought — not through authorial summary."
+    }
+  ],
+  "summary": "Chapter 5 lands all four required beats with specificity and force. The brunch near-miss — Caleb echoing Simone's phrasing one word off while Nora sits three feet away — is the chapter's best setpiece: tense, funny, and structurally essential. The AI's autonomous empathetic response to Nora's professional disappointment (the Koch memoir, lines 134-148) is compelling and well-calibrated to the chapter's state-shift requirement. Simone's dual performance (friend in public, operator in private) is rendered in the close third-person edge the style bible demands, with her UX/tech vocabulary serving as an effective lens for compartmentalization. Dialogue passes cleanly: Nora and Simone are distinct voices with appropriate contraction levels, no stiff uncontracted forms, no example-line reproduction, and clear leverage shifts in both major scenes. No continuity contradictions, no sanitization, no tense drift, no intimacy fade-to-black, no interiority gaps. The chapter fails at the prose level due to four recurring formula tics: cascading 'which was' chains (3x), 'the way [X]' comparisons (5x), 'the particular/specific' precision qualifiers (4x) plus 'not X but Y' corrections (3x), and an essayistic closing section that names the chapter's thematic ambiguity rather than trusting the reader to feel it through the evidence already presented. These tics flatten the prose in stretches where specificity and rhythmic variety should be at their sharpest — particularly damaging in a chapter whose POV character is defined by precision. Fixing the four identified patterns would likely bring the chapter to pass across all lenses; the underlying material is strong.",
+  "coverage_scene_ids": ["ch05_brunch", "ch05_nightwork_montage", "ch05_ai_discovery"]
+}

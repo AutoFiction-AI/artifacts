@@ -1,0 +1,46 @@
+{
+  "chapter_id": "chapter_16",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_16_craft_001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_01/chapters/chapter_16.md:119; snapshots/cycle_01/chapters/chapter_16.md:135; snapshots/cycle_01/chapters/chapter_16.md:147; snapshots/cycle_01/chapters/chapter_16.md:159; snapshots/cycle_01/chapters/chapter_16.md:209; snapshots/cycle_01/chapters/chapter_16.md:231; snapshots/cycle_01/chapters/chapter_16.md:285; snapshots/cycle_01/chapters/chapter_16.md:359",
+      "problem": "The chapter repeatedly falls into clipped negation fragments such as \"Not forgiveness. Not advice dressed as heroism.\" and \"Not softness. Injury.\" This violates the constitution's ban on elliptical clipping, strips out required function words, and turns several otherwise sharp beats into a visible formula.",
+      "rewrite_direction": "Rewrite the clipped beats at snapshots/cycle_01/chapters/chapter_16.md:119, snapshots/cycle_01/chapters/chapter_16.md:135, snapshots/cycle_01/chapters/chapter_16.md:147, snapshots/cycle_01/chapters/chapter_16.md:159, snapshots/cycle_01/chapters/chapter_16.md:209, snapshots/cycle_01/chapters/chapter_16.md:231, snapshots/cycle_01/chapters/chapter_16.md:285, and snapshots/cycle_01/chapters/chapter_16.md:359 as grammatically complete sentences or other full constructions rooted in Mina's physical perception. Keep the same pressure and compression, but do it through complete syntax rather than subjectless \"Not X\" fragments.",
+      "acceptance_test": "Pass if each cited passage reads as a grammatically complete thought with the emotional pressure still legible on the page, and none of those beats depends on standalone clipped fragments like \"Not forgiveness\" or \"Not softness.\" Fail if any cited line still omits subject/verb purely for terse effect."
+    },
+    {
+      "finding_id": "chapter_16_dialogue_001",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_01/chapters/chapter_16.md:53",
+      "problem": "Imogen's line \"Nobody funds nuance. They fund miracles, funerals, and villains\" reads as a near-paraphrase of her calibration-only style-bible example line about people funding \"a miracle, a scandal, or a funeral.\" The review brief treats example-line reuse as a HIGH failure because it exposes the style bible on the page instead of sounding newly spoken by the character in-scene.",
+      "rewrite_direction": "Replace the rhetorical core of Imogen's speech at snapshots/cycle_01/chapters/chapter_16.md:53 with new language that still conveys donor appetite, public sacrifice, and camp triage, but does not reuse the \"people fund / miracle / funeral\" template or its noun-pairing logic from the calibration example.",
+      "acceptance_test": "Pass if Imogen's revised speech at snapshots/cycle_01/chapters/chapter_16.md:53 still makes her donor-politics argument while no sentence can be recognized as a paraphrase of the style-bible calibration line. Fail if the revised dialogue still hinges on the same \"fund a miracle/scandal/funeral\" structure or close variant."
+    },
+    {
+      "finding_id": "chapter_16_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_01/chapters/chapter_16.md:45; snapshots/cycle_01/chapters/chapter_16.md:65; snapshots/cycle_01/chapters/chapter_16.md:97; snapshots/cycle_01/chapters/chapter_16.md:167; snapshots/cycle_01/chapters/chapter_16.md:187; snapshots/cycle_01/chapters/chapter_16.md:199; snapshots/cycle_01/chapters/chapter_16.md:229; snapshots/cycle_01/chapters/chapter_16.md:287; snapshots/cycle_01/chapters/chapter_16.md:297; snapshots/cycle_01/chapters/chapter_16.md:335",
+      "problem": "Several major turns are carried by the same transition scaffolds: feelings or words \"hit\" or \"land,\" and people or spaces \"had gone\" into a new state. Because the chapter returns to those constructions over and over, the pivots start to feel pre-shaped rather than freshly observed through this scene's specific bodies, surfaces, and social fallout.",
+      "rewrite_direction": "Rework the transition beats at snapshots/cycle_01/chapters/chapter_16.md:45, snapshots/cycle_01/chapters/chapter_16.md:65, snapshots/cycle_01/chapters/chapter_16.md:97, snapshots/cycle_01/chapters/chapter_16.md:167, snapshots/cycle_01/chapters/chapter_16.md:187, snapshots/cycle_01/chapters/chapter_16.md:199, snapshots/cycle_01/chapters/chapter_16.md:229, snapshots/cycle_01/chapters/chapter_16.md:287, snapshots/cycle_01/chapters/chapter_16.md:297, and snapshots/cycle_01/chapters/chapter_16.md:335 so that at least most of those shifts register through bodily consequence, gesture, sound, or material detail instead of the repeated \"hit/landed\" or \"had gone\" templates.",
+      "acceptance_test": "Pass if, across the cited lines, no more than two transitions still rely on \"hit,\" \"landed,\" or \"had gone\" as the primary delivery system for a shift, and the replacements make the turn legible through concrete scene evidence. Fail if the revised chapter still uses those same formulas for most of the cited pivots."
+    }
+  ],
+  "summary": "Chapter 16 cleanly delivers its public-confession spine and stays consistent with the supplied continuity/context packs, but it does not meet pass-level execution yet. The biggest problems are a calibration-only style-bible echo in Imogen's dialogue, repeated clipped-negation narration that violates the constitution's no-elliptical-clipping rule, and recurring transition formulas that flatten too many emotional turns.",
+  "coverage_scene_ids": [
+    "imogen_office_confrontation",
+    "platform_confession_hearing"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "chapter_id": "chapter_06",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_06_F001",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_02/chapters/chapter_06.md:49; snapshots/cycle_02/chapters/chapter_06.md:57; snapshots/cycle_02/chapters/chapter_06.md:231; snapshots/cycle_02/chapters/chapter_06.md:237; snapshots/cycle_02/chapters/chapter_06.md:253; snapshots/cycle_02/chapters/chapter_06.md:293; snapshots/cycle_02/chapters/chapter_06.md:341; snapshots/cycle_02/chapters/chapter_06.md:431",
+      "problem": "Recurring clipped-fragment narration and subject-dropping becomes a chapter-level tic and violates the constitution's anti-elliptical-clipping rule. The cumulative effect is stylized shorthand where full syntactic pressure is needed.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_06.md:49, :57, :231, :237, :253, :293, :341, and :431, rewrite fragment beats into grammatically complete clauses while preserving pace. Keep brevity, but restore explicit subject+verb structure in narration.",
+      "acceptance_test": "Pass if, in revised versions of lines 49-431, every narrative sentence in the cited spans is grammatically complete (explicit subject and finite verb), with fragments retained only when they are diegetic artifacts (e.g., quoted text messages). Fail if 3 or more clipped narrative fragments remain in those spans."
+    },
+    {
+      "finding_id": "chapter_06_F002",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_02/chapters/chapter_06.md:99; snapshots/cycle_02/chapters/chapter_06.md:103; snapshots/cycle_02/chapters/chapter_06.md:107; snapshots/cycle_02/chapters/chapter_06.md:145; snapshots/cycle_02/chapters/chapter_06.md:167",
+      "problem": "The marquee Marisol-Gloria confrontation drifts into polished paragraph speeches with limited interruption, which reduces spoken realism under pressure and makes both voices intermittently sound authored rather than lived-in.",
+      "rewrite_direction": "In snapshots/cycle_02/chapters/chapter_06.md:99-127 and :145-167, break long turns with interruptions, overlaps, or self-corrections; keep Gloria in command/procedural diction and keep Marisol in high-contraction, image-driven stress speech.",
+      "acceptance_test": "Pass if, in revised lines 99-167, no single speaker turn exceeds 3 sentences without an interruptive beat, and at least 3 turns include interruption/self-cutoff/redirect markers consistent with scene pressure. Fail if the exchange still reads as consecutive monologues."
+    },
+    {
+      "finding_id": "chapter_06_F003",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_02/chapters/chapter_06.md:273; snapshots/cycle_02/chapters/chapter_06.md:279; snapshots/cycle_02/chapters/chapter_06.md:287; snapshots/cycle_02/chapters/chapter_06.md:321; snapshots/cycle_02/chapters/chapter_06.md:323; snapshots/cycle_02/chapters/chapter_06.md:395",
+      "problem": "The relapse-consequence run stacks multiple professional penalties in rapid succession (copy-shop opener and workshop slot) with limited processing space, creating an engineered-feeling escalation rather than fully earned causal fallout.",
+      "rewrite_direction": "Re-sequence snapshots/cycle_02/chapters/chapter_06.md:273-324 and :395-397 so each penalty has explicit setup->deadline->miss->result progression, and add a reaction beat between losses. If both penalties remain in-chapter, seed one hard deadline earlier in the chapter with timestamp clarity.",
+      "acceptance_test": "Pass if each job loss in revised lines 273-324 can be traced through explicit prior setup and missed action, with at least one full paragraph of embodied reaction between the two losses. Fail if both losses still land as near-simultaneous notifications without separate causal framing."
+    },
+    {
+      "finding_id": "chapter_06_F004",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_02/chapters/chapter_06.md:295; snapshots/cycle_02/chapters/chapter_06.md:299; snapshots/cycle_02/chapters/chapter_06.md:405; snapshots/cycle_02/chapters/chapter_06.md:413; snapshots/cycle_02/chapters/chapter_06.md:457",
+      "problem": "The confession mechanic repeats without leverage change (draft confession, delete; draft confession, delete; reread silence), which softens late-chapter momentum instead of escalating consequence.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_06.md:295-300, :405-414, and :457-459, keep only one unsent-confession cycle; revise later beats so each materially changes state (message sent, interruption with cost, or explicit avoidance action that worsens stakes).",
+      "acceptance_test": "Pass if revised lines 295-459 contain no more than one unsent-confession loop and each subsequent communication beat produces a new external state change. Fail if multiple beats still repeat the same draft-delete pattern with no changed consequence."
+    }
+  ],
+  "summary": "Chapter 6 lands the core causal spine and remains continuity-consistent (no canonical age, timeline, object-state, world-rule, or tense contradictions found), and it avoids sanitization drift in the relapse material. It still fails review on unresolved craft/prose pressure points: repeated clipped narration, monologue-heavy confrontation dialogue, compressed consequence stacking, and duplicated confession-loop mechanics that flatten late momentum.",
+  "coverage_scene_ids": [
+    "chapter_06_scene_01_parking_lot_confrontation",
+    "chapter_06_scene_02_relapse_night"
+  ]
+}

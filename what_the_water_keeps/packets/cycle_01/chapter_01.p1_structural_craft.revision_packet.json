@@ -1,0 +1,82 @@
+{
+  "acceptance_targets": [
+    "[ch01-craft-001] Pass if the revised passages anchored at snapshots/cycle_01/chapters/chapter_01.md:147, snapshots/cycle_01/chapters/chapter_01.md:161, snapshots/cycle_01/chapters/chapter_01.md:207, snapshots/cycle_01/chapters/chapter_01.md:335, and snapshots/cycle_01/chapters/chapter_01.md:337 end on concrete action, dialogue, or sensory consequence, and no more than one of those beats still uses an abstract sentence to explain what the dispute means. Fail if two or more of those scene turns still rely on narrator interpretation instead of dramatized consequence.",
+    "[FBR-006] Pass if `snapshots/cycle_01/FINAL_NOVEL.md:109-115` shows specific, scene-bound physical reactions and does not use generic stillness phrasing. Fail if the moment still resolves into some version of people simply going still."
+  ],
+  "chapter_id": "chapter_01",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if the revised passages anchored at snapshots/cycle_01/chapters/chapter_01.md:147, snapshots/cycle_01/chapters/chapter_01.md:161, snapshots/cycle_01/chapters/chapter_01.md:207, snapshots/cycle_01/chapters/chapter_01.md:335, and snapshots/cycle_01/chapters/chapter_01.md:337 end on concrete action, dialogue, or sensory consequence, and no more than one of those beats still uses an abstract sentence to explain what the dispute means. Fail if two or more of those scene turns still rely on narrator interpretation instead of dramatized consequence.",
+      "chapter_id": "chapter_01",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:147; snapshots/cycle_01/chapters/chapter_01.md:161; snapshots/cycle_01/chapters/chapter_01.md:207; snapshots/cycle_01/chapters/chapter_01.md:335; snapshots/cycle_01/chapters/chapter_01.md:337",
+      "finding_id": "ch01-craft-001",
+      "problem": "The chapter repeatedly stops to translate its own implications into thesis sentences after the scene has already made the point. Those interpretive glosses sharpen the theme once or twice, but repeated use turns consequence into explanation and slightly bleeds pressure from the grave-opening and pump scenes.",
+      "rewrite_direction": "Revise the explanatory glosses at snapshots/cycle_01/chapters/chapter_01.md:147, snapshots/cycle_01/chapters/chapter_01.md:161, snapshots/cycle_01/chapters/chapter_01.md:207, snapshots/cycle_01/chapters/chapter_01.md:335, and snapshots/cycle_01/chapters/chapter_01.md:337. Replace at least two of those thesis-forward sentences with concrete, observable consequence in the scene itself: crowd reaction, Lucille's procedural behavior, Rafe's bodily shame, or Della's physical response to the tags. Let the legal and thematic stakes emerge from action and image rather than narrator summary.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if `snapshots/cycle_01/FINAL_NOVEL.md:109-115` shows specific, scene-bound physical reactions and does not use generic stillness phrasing. Fail if the moment still resolves into some version of people simply going still.",
+      "chapter_id": "chapter_01",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:113",
+      "finding_id": "FBR-006",
+      "problem": "This chapter participates in a full-book default-stillness pattern that appears in 7 chapters (`chapter_01`, `chapter_04`, `chapter_05`, `chapter_07`, `chapter_10`, `chapter_11`, `chapter_14`). Here the scene resolves with \"They went still. Not calm, but still,\" which becomes a repeated authorial default instead of a chapter-specific reaction.",
+      "rewrite_direction": "In `snapshots/cycle_01/FINAL_NOVEL.md:109-115`, replace the generic stillness beat with a response tied to Lena, Bess, and the open-grave setting: a parasol stopping mid-fidget, a backward step from the hole, a hand going to the coffin lid, a crowd murmur choking off. Avoid `went still`, `so still`, or equivalent freeze-language in the revised beat.",
+      "severity": "MEDIUM",
+      "source": "booker_global",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "3effd4ec5e4bfa3b7db060df8bc3ce55919ef7d4a7520eafe3c8477303b42bd7",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into morally compromised caretaking, the bureaucratic brutality of naming, and the physical labor of moving the dead. When an edge case appears, prefer the detail a witness would remember over the phrasing a polite narrator would use. Let tenderness exist inside harsh material without cleaning the harshness off.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If childbirth, exhumation, poverty, sexual history, bodily decay, or violence enters a scene, render it through specific sensation and consequence; summarizing away the hard fact counts as a failed pass, not tasteful restraint.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High overall; contractions are the norm across dialogue, with fuller forms reserved for class performance, legal formality, deliberate emphasis, or a character trying not to lose composure.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate public labor chapters with quieter domestic or inventory chapters, vary scene count and dialogue density, let some chapters turn on information or paperwork rather than confrontation, and ensure no two consecutive chapters share the same dominant mechanism, pace, or emotional temperature.",
+      "diction": "Plainspoken historical Appalachian-Southern English without caricature; concrete, unsentimental, regionally grounded, and alert to how legal language clashes with lived speech.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third centered on Della Bledsoe, intimate enough to track bodily memory and evasive thought while never slipping into other characters' interior monologue as fact",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Alternate muscular work-sentence compression with longer accumulating sentences that carry memory, atmosphere, and moral weight; let cadence tighten in hearings and exhumations, then widen in domestic or reflective passages.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

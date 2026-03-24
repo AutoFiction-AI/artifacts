@@ -1,0 +1,97 @@
+{
+  "cycle": 2,
+  "verdict": "FAIL",
+  "summary": "FAIL for shortlist readiness. The manuscript sustains high-stakes consequence and does not show broad sanitization drift, and the chapter narration stays in canonical past tense overall. But it breaks on one HIGH continuity contradiction (post-indictment travel constraints vs chapter_18 movement), plus medium-severity craft blockers: late-book voice flattening into repeated policy-jargon mantra and a recurring formula-metaphor template repeated across five chapters.",
+  "findings": [
+    {
+      "finding_id": "FBR02-001",
+      "severity": "HIGH",
+      "chapter_id": "chapter_18",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:8049",
+      "problem": "Cross-chapter legal continuity breaks. Chapter 17 imposes Seoul-metro travel restriction at `snapshots/cycle_02/FINAL_NOVEL.md:7745` with immediate passport surrender at `snapshots/cycle_02/FINAL_NOVEL.md:7751`, but chapter 18 moves Ina to the DMZ relay site (`snapshots/cycle_02/FINAL_NOVEL.md:8049`) without explicit prior approval and then frames travel restriction as newly pending (`snapshots/cycle_02/FINAL_NOVEL.md:8287`). That is a factual/legal contradiction in the protagonist's state constraints.",
+      "rewrite_direction": "Revise the movement and legal-status chain in chapter 18 at `snapshots/cycle_02/FINAL_NOVEL.md:8049`, `snapshots/cycle_02/FINAL_NOVEL.md:8051`, and `snapshots/cycle_02/FINAL_NOVEL.md:8287`. Option A: relocate Ina's operations to a Seoul-metro control room and keep DMZ feeds remote. Option B: keep DMZ visit but add explicit court/prosecutorial pre-approval on-page before departure (date/time, issuing authority, scope), then change `:8287` to a different incremental condition (for example curfew tightening or electronic monitoring) rather than a first-time travel restriction.",
+      "acceptance_test": "PASS if the revised chapter explicitly resolves legal authority before cross-jurisdiction movement (or removes the movement) and no line at `snapshots/cycle_02/FINAL_NOVEL.md:8049` or `snapshots/cycle_02/FINAL_NOVEL.md:8287` implies travel limits were first imposed after the DMZ sequence. FAIL if Ina still leaves Seoul jurisdiction without explicit waiver or if `snapshots/cycle_02/FINAL_NOVEL.md:8287` still contradicts the existing restriction from chapter 17."
+    },
+    {
+      "finding_id": "FBR02-002",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:4616",
+      "problem": "Scene-pressure mismatch: the apartment stabilization scene shifts into clause-by-clause legal briefing language right after acute self-harm risk (`snapshots/cycle_02/FINAL_NOVEL.md:4560`, `snapshots/cycle_02/FINAL_NOVEL.md:4570` -> `snapshots/cycle_02/FINAL_NOVEL.md:4616`, `snapshots/cycle_02/FINAL_NOVEL.md:4625`). This reads as procedural exposition overriding embodied conflict, and the dialogue texture turns stilted where breathless, interrupted speech should dominate.",
+      "rewrite_direction": "Rebuild the core exchange at `snapshots/cycle_02/FINAL_NOVEL.md:4600` and `snapshots/cycle_02/FINAL_NOVEL.md:4638` so legal leverage appears as compressed, character-voiced fragments (one clause max in-scene), with the rest deferred to a later planning beat (for example after `snapshots/cycle_02/FINAL_NOVEL.md:4660`). Keep the promise beat but shift diction toward pressure speech: contractions, interruptions, emotional backtracking, and fewer memo-style nouns.",
+      "acceptance_test": "PASS if the scene bounded by `snapshots/cycle_02/FINAL_NOVEL.md:4600` and `snapshots/cycle_02/FINAL_NOVEL.md:4638` reads as immediate crisis dialogue (no multi-clause legal lecture turn, no stacked clause-number recital) while preserving the commitment stakes. FAIL if the scene still contains extended statute-style explanation that stalls the emotional emergency."
+    },
+    {
+      "finding_id": "FBR02-003",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:4803",
+      "problem": "Voice separation weakens in the Mercury Night delay meeting: multiple speakers converge into the same abstract policy register (`snapshots/cycle_02/FINAL_NOVEL.md:4785`, `snapshots/cycle_02/FINAL_NOVEL.md:4803`, `snapshots/cycle_02/FINAL_NOVEL.md:4819`, `snapshots/cycle_02/FINAL_NOVEL.md:4837`). The exchange drifts toward transcript cadence and blunts character-idiolect contrast.",
+      "rewrite_direction": "Revise the meeting core at `snapshots/cycle_02/FINAL_NOVEL.md:4785` through `snapshots/cycle_02/FINAL_NOVEL.md:4850` to force register separation: Kwon can keep inevitability rhetoric, but Ina's rebuttals should skew shorter, higher-contraction, and concrete (named bodies/events over abstractions); legal/comms interjections should be terse and tactical rather than parallel mini-monologues. Add at least one interruption overlap and one incomplete sentence turn.",
+      "acceptance_test": "PASS if a cold read between `snapshots/cycle_02/FINAL_NOVEL.md:4785` and `snapshots/cycle_02/FINAL_NOVEL.md:4850` allows speaker attribution by rhythm/diction without dialogue tags and shows at least one real interruption beat. FAIL if turns remain uniformly polished, full-sentence policy prose."
+    },
+    {
+      "finding_id": "FBR02-004",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:6192",
+      "problem": "Style-bible token overfitting creates mantra diction in the coercion dialogue: repeated abstraction stack (sequence/history/operational boundaries/legal pathways/survival) in `snapshots/cycle_02/FINAL_NOVEL.md:6192`, `snapshots/cycle_02/FINAL_NOVEL.md:6200`, `snapshots/cycle_02/FINAL_NOVEL.md:6240`, and `snapshots/cycle_02/FINAL_NOVEL.md:6252` flattens immediacy and makes both sides sound over-scripted.",
+      "rewrite_direction": "At `snapshots/cycle_02/FINAL_NOVEL.md:6192`, `snapshots/cycle_02/FINAL_NOVEL.md:6200`, `snapshots/cycle_02/FINAL_NOVEL.md:6240`, and `snapshots/cycle_02/FINAL_NOVEL.md:6252`, replace at least half of abstraction nouns with concrete leverage mechanics (specific officer action, document type, time horizon, direct consequence to Dohyun). Keep one signature inevitability line for Kwon, but diversify Ina's replies toward sensory and tactical specificity.",
+      "acceptance_test": "PASS if the revised spans contain at least three concrete, scene-anchored coercion details replacing abstraction-mantra language and the two speakers no longer mirror the same diction. FAIL if the dialogue still leans on repeated governance abstractions as primary content."
+    },
+    {
+      "finding_id": "FBR02-005",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:7581",
+      "problem": "Style-token overfit recurs in Chamber B: the negotiation turns at `snapshots/cycle_02/FINAL_NOVEL.md:7581`, `snapshots/cycle_02/FINAL_NOVEL.md:7585`, and `snapshots/cycle_02/FINAL_NOVEL.md:7601` repeat bureaucratic phrasing and rhythm already used in the hearing sequence, reducing escalation texture and making officials sound interchangeable.",
+      "rewrite_direction": "Rewrite the Chamber B exchange from `snapshots/cycle_02/FINAL_NOVEL.md:7581` through `snapshots/cycle_02/FINAL_NOVEL.md:7603` with sharper differentiation: Nam as euphemistic institutional smoother, junior official as blunt threat instrument, Ina as compressed refusal language. Cut repeated terms like containment/procedural timing unless attached to new concrete terms and stakes.",
+      "acceptance_test": "PASS if each speaker between `snapshots/cycle_02/FINAL_NOVEL.md:7581` and `snapshots/cycle_02/FINAL_NOVEL.md:7603` has a distinct register and at least one turn changes leverage through concrete condition change (not rephrased legal boilerplate). FAIL if the exchange remains mostly interchangeable legal prose."
+    },
+    {
+      "finding_id": "FBR02-006",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:1591",
+      "problem": "Recurring full-book construction pattern detected: formula metaphor template (`[word/abstract noun] sat/landed like [object]`) appears in 5 chapters (4, 9, 10, 16, 18). In chapter 4, this is the strongest and first-use instance; this chapter should KEEP it while other chapters replace theirs.",
+      "rewrite_direction": "Designate `snapshots/cycle_02/FINAL_NOVEL.md:1591` as retained anchor. In this chapter, avoid adding any new `sat/landed like` template lines in nearby revision passes around `snapshots/cycle_02/FINAL_NOVEL.md:1579` and `snapshots/cycle_02/FINAL_NOVEL.md:1604` so the image remains singular.",
+      "acceptance_test": "PASS if chapter 4 contains only one `sat/landed like` construction and it is the retained line at/around `snapshots/cycle_02/FINAL_NOVEL.md:1591`. FAIL if additional instances of the same template are introduced in chapter 4."
+    },
+    {
+      "finding_id": "FBR02-007",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:3623",
+      "problem": "Same recurring full-book template (present in 5 chapters) appears twice in chapter 9: `snapshots/cycle_02/FINAL_NOVEL.md:3623` and `snapshots/cycle_02/FINAL_NOVEL.md:3951`. This chapter should REPLACE both uses; they read as repeated mechanism, not motif.",
+      "rewrite_direction": "Rewrite both template hits at `snapshots/cycle_02/FINAL_NOVEL.md:3623` and `snapshots/cycle_02/FINAL_NOVEL.md:3951` into distinct reactions grounded in action/sound/body response (no `sat/landed like` structure). Keep scene intensity but vary sentence architecture between the two moments.",
+      "acceptance_test": "PASS if neither cited line retains the `sat/landed like` template and the two replacements use different image mechanics. FAIL if either phrase remains formulaic or both rewrites collapse into near-identical alternatives."
+    },
+    {
+      "finding_id": "FBR02-008",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:4242",
+      "problem": "Recurring full-book template (5 chapters total) appears in chapter 10 at `snapshots/cycle_02/FINAL_NOVEL.md:4242`. This chapter should REPLACE it to reduce patterned diction drift.",
+      "rewrite_direction": "Replace the sentence at `snapshots/cycle_02/FINAL_NOVEL.md:4242` with an embodied stress marker tied to current motion (screen lock, breath, hand tension, environmental noise), avoiding `sat/landed like` phrasing and avoiding recycled tool/grit imagery.",
+      "acceptance_test": "PASS if the revised line at/around `snapshots/cycle_02/FINAL_NOVEL.md:4242` conveys the same pressure without `sat/landed like` and without generic substitution cliche. FAIL if the old template remains or reappears with minor noun swaps."
+    },
+    {
+      "finding_id": "FBR02-009",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:7014",
+      "problem": "Recurring full-book template (5 chapters total) appears twice in chapter 16 (`snapshots/cycle_02/FINAL_NOVEL.md:7014` and `snapshots/cycle_02/FINAL_NOVEL.md:7242`). This chapter should REPLACE both; density here turns style into tic.",
+      "rewrite_direction": "Revise `snapshots/cycle_02/FINAL_NOVEL.md:7014` and `snapshots/cycle_02/FINAL_NOVEL.md:7242` with two different non-template renderings: one physiological/internal, one procedural/spatial. Remove `sat/landed like` structure entirely.",
+      "acceptance_test": "PASS if both cited lines are rewritten without template phrasing and the two new images are clearly non-overlapping in domain and syntax. FAIL if either line still uses the formula or if both replacements mirror each other."
+    },
+    {
+      "finding_id": "FBR02-010",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_18",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:8205",
+      "problem": "Recurring full-book template (5 chapters total) returns at the consent-negotiation beat in chapter 18 (`snapshots/cycle_02/FINAL_NOVEL.md:8205`). This chapter should REPLACE it so the emotional peak is not delivered with a reused sentence mechanism.",
+      "rewrite_direction": "Rewrite the consent response unit at `snapshots/cycle_02/FINAL_NOVEL.md:8203` and `snapshots/cycle_02/FINAL_NOVEL.md:8207` to preserve affirmative-consent clarity while shifting metaphor mechanics away from `landed ... like ...`; favor immediate body response or micro-action.",
+      "acceptance_test": "PASS if the exchange around `snapshots/cycle_02/FINAL_NOVEL.md:8203` and `snapshots/cycle_02/FINAL_NOVEL.md:8207` keeps explicit consent and emotional force without the formula template. FAIL if the line still relies on `sat/landed like` construction."
+    }
+  ]
+}

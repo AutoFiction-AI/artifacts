@@ -1,0 +1,194 @@
+{
+  "acceptance_targets": [
+    "[F14-01] No sequence of 4 or more consecutive words from any of Caleb's style-bible example_lines appears in the chapter text. Caleb's response to the LinkedIn question still reads as authentically disinterested in professional networking and consistent with his voice profile (warm, self-deprecating, slightly evasive on verifiability questions).",
+    "[F14-02] \"Particular\" and \"specific\" as adjectives modifying abstract or experiential nouns appear no more than 4 times combined in the revised chapter. Each surviving instance modifies a noun that genuinely benefits from the qualifier (i.e., the adjective disambiguates rather than merely intensifies).",
+    "[F14-03] \"The way\" as a comparative or habitual-description connective appears no more than 4 times in the revised chapter. No sentence contains more than one instance.",
+    "[F14-04] The \"the [abstraction] of a [person/type] who [clause]\" construction appears no more than 3 times in the revised chapter. At least 2 of the eliminated instances are replaced with constructions that show the quality through action or sensory detail rather than naming it.",
+    "[F14-05] The \"not X, not Y, [different thing]\" negation pattern appears no more than twice in the revised chapter. No two surviving instances appear within 30 lines of each other.",
+    "[F14-06] No more than one explicit \"she recognized this as a narrative/manuscript strategy\" observation appears in the chapter. Lines 129 and 185 convey their meaning without manuscript-craft analogies. The Simone coffee-shop scene (lines 149-187) contains zero instances of Nora comparing Simone's behavior to editorial or rhetorical technique.",
+    "[F14-07] The closing paragraph contains at least two concrete, observed sensory details from the Brooklyn environment. It does not use the words \"decide,\" \"commit,\" or \"between\" (or direct synonyms) to describe the weather or season. The reader can feel the emotional resonance between Nora's state and the external world without the narration making the connection explicit.",
+    "[F14-08] The financial comparison at this passage either (a) accounts for all three Caleb payments ($400 + $2,500 + $10,000 = $12,900) in the counterfactual, or (b) explicitly frames itself as the difference between this morning's balance and the post-send balance without implying it represents the total relationship cost. The math is consistent with the continuity sheet's cumulative financial data.",
+    "[HIGH-05-savings-ch14] At line 2823: (1) The savings figure is consistent with Ch10's revised figure minus the $2,500 sent in Ch10, plus approximately 2 months of savings at the stated rate. (2) The figure is in the range $41,000-$44,000. FAIL if the figure implies a savings rate inconsistent with the stated $700-900/month.",
+    "[HIGH-06-style-echo-linkedin-ch14] At line 2757: (1) No phrase matching 'I'm not [really] a LinkedIn person' appears. (2) Caleb's response still deflects the LinkedIn question. (3) The deflection has the same functional role \u2014 Nora cannot verify his professional existence. (4) The language does not echo any other calibration sample from the style bible. FAIL if the revised line shares more than 4 consecutive words with any caleb_mora_ai example line.",
+    "[MED-06-editing-metaphor-ch14] At line 2685: (1) The metaphor does not reference manuscripts, editing, sentences, or flagging. (2) The new language conveys the same meaning (recognizing emptiness in a statement). FAIL if any form of editing vocabulary appears in this figurative passage."
+  ],
+  "chapter_id": "chapter_14",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "No sequence of 4 or more consecutive words from any of Caleb's style-bible example_lines appears in the chapter text. Caleb's response to the LinkedIn question still reads as authentically disinterested in professional networking and consistent with his voice profile (warm, self-deprecating, slightly evasive on verifiability questions).",
+      "chapter_id": "chapter_14",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:133 \u2014 Caleb's line reads: \"Ha, I'm not really a LinkedIn person. I know I probably should be but it always feels like performing professionalism for people I don't actually want to work with.\" The style-bible calibration example for caleb_mora_ai reads: \"I'm not a LinkedIn person. I'm barely an email person. I'm a show-up-and-build-the-thing person.\" The core phrase \"not a LinkedIn person\" is reproduced near-verbatim.",
+      "finding_id": "F14-01",
+      "problem": "Near-verbatim reproduction of a style-bible calibration example line. Example lines are marked \"NON-COPYABLE REFERENCE ONLY\" and exist solely for voice calibration. The shared phrase \"not a LinkedIn person\" is 5 consecutive words from the example appearing in the chapter text, and the overall response covers the same semantic territory (disdain for professional social media performed as charming self-deprecation).",
+      "rewrite_direction": "Rewrite Caleb's LinkedIn response at snapshots/cycle_01/chapters/chapter_14.md:133-134 to convey the same meaning \u2014 authentic reluctance toward professional networking \u2014 without using the phrase \"not a LinkedIn person\" or any other 4+-word sequence from the calibration example. Caleb can deflect the question with his characteristic self-deprecating warmth, but the specific phrasing must be original. Consider having him redirect toward what he does do rather than naming the platform he avoids.",
+      "severity": "HIGH",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "\"Particular\" and \"specific\" as adjectives modifying abstract or experiential nouns appear no more than 4 times combined in the revised chapter. Each surviving instance modifies a noun that genuinely benefits from the qualifier (i.e., the adjective disambiguates rather than merely intensifies).",
+      "chapter_id": "chapter_14",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md \u2014 \"particular\" as intensifying adjective appears 5 times: line 29 (\"a particular signal\"), line 41 (\"the particular discomfort\"), line 59 (\"the particular way\"), line 143 (\"the particular quality\"), line 193 (\"the particular quiet\"). \"Specific\" as intensifying adjective appears 4 times: line 85 (\"the specific architecture,\" \"her specific daughter\"), line 105 (\"the specific dread\"), line 179 (\"the specific relief\"), line 227 (\"the specific vertigo\"). Total: 9 instances of the same specifying-intensifier pattern.",
+      "finding_id": "F14-02",
+      "problem": "The chapter relies on \"particular\" and \"specific\" as modifiers to claim precision for abstract nouns rather than earning precision through concrete detail. Nine instances of effectively the same move \u2014 placing an intensifier before an abstraction to make it feel observed \u2014 creates a flattening effect. These words promise specificity without delivering it; the actual specificity comes from the surrounding context, not the adjective.",
+      "rewrite_direction": "Cut at least 5 of the 9 instances across snapshots/cycle_01/chapters/chapter_14.md:29, :41, :59, :85, :105, :143, :179, :193, :227. In most cases, deleting the adjective strengthens the noun phrase (\"the discomfort of being overheated\" is stronger than \"the particular discomfort of being overheated\"). In cases where specificity is genuinely needed, replace the adjective with concrete detail that earns the claim. Retain no more than 2 instances of \"particular\" and 2 of \"specific\" in the full chapter.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "\"The way\" as a comparative or habitual-description connective appears no more than 4 times in the revised chapter. No sentence contains more than one instance.",
+      "chapter_id": "chapter_14",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md \u2014 \"the way\" as comparative/descriptive connective appears 9+ times: line 5 (\"the way he arrived at everything\"), line 59 (\"the particular way you thought about\"), line 75 (\"the way she would present a manuscript\"), line 76 (\"the way a retired English teacher heard syntax\"), line 155 (\"the way she'd been telling Simone things\"), line 185 (\"the way a well-placed concession in a manuscript\"), line 187 (\"the way it always did when work was not fine\"), line 199 (\"the way she'd been checking for three days, the way you checked on something\" \u2014 two instances in a single sentence).",
+      "finding_id": "F14-03",
+      "problem": "\"The way\" becomes the chapter's dominant rhythmic connective for drawing comparisons, establishing habitual behavior, and introducing simile. At 9+ occurrences it creates a monotonous cadence across otherwise varied passages. Two instances in a single sentence (line 199) make the pattern audible.",
+      "rewrite_direction": "Reduce to no more than 4 instances across the chapter. Target the least essential uses for elimination: snapshots/cycle_01/chapters/chapter_14.md:59 (cut \"particular way\" entirely), :185 (cut the manuscript analogy \u2014 see F14-06), :187 (rephrase), :199 (the double occurrence can be compressed to a single construction). Replace with direct description, embedded clauses, or compression. Do not simply substitute \"the manner in which\" \u2014 vary the underlying sentence architecture.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "The \"the [abstraction] of a [person/type] who [clause]\" construction appears no more than 3 times in the revised chapter. At least 2 of the eliminated instances are replaced with constructions that show the quality through action or sensory detail rather than naming it.",
+      "chapter_id": "chapter_14",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md \u2014 The construction \"the [abstract noun] of a [person/situation] who [clause]\" appears 6 times: line 7 (\"the attention of a woman who read for a living\"), line 49 (\"the restraint of a woman who'd learned through her own divorce\"), line 85 (\"the fear of a mother who had been watching her specific daughter\"), line 105 (\"the specific dread of someone looking for evidence\" / \"the ordinary curiosity of someone googling a new romantic interest\"), line 179 (\"the specific relief of hearing her own best instincts echoed back\"), line 193 (\"the particular quiet of a building where everyone was either out or asleep\").",
+      "finding_id": "F14-04",
+      "problem": "This genitive-abstraction construction is the chapter's default method for characterizing emotional states and secondary figures. It names the quality, then defines the type of person who produces it. At 6 instances, it creates a processional rhythm \u2014 each emotional beat arrives in the same syntactic frame. The construction keeps the reader at one remove from the experience by abstracting it into a category before the reader encounters it directly.",
+      "rewrite_direction": "Retain no more than 3 instances across the chapter. The strongest candidates for retention are snapshots/cycle_01/chapters/chapter_14.md:7 (establishes Nora's editorial consciousness) and :85 (Diane's maternal specificity). For the others, show the quality through action, physical detail, or direct interiority rather than naming it through an abstracting genitive. At line 49, for example, let Margo's restraint be visible in what she does next rather than labeled as a quality of a type of person.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "The \"not X, not Y, [different thing]\" negation pattern appears no more than twice in the revised chapter. No two surviving instances appear within 30 lines of each other.",
+      "chapter_id": "chapter_14",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md \u2014 The negation-triad pattern (\"not X, not Y, [something else]\") appears 4 times: line 31 (\"not anger, not hurt, something closer to the flinch\"), line 201 (\"not willing to call love in case it turned out to be something else and not willing to call anything else in case it turned out to be love\"), line 209 (\"not a period, not a question mark, something in between that grammar didn't have a name for\"), line 229 (\"not knowing, and going on anyway, and the going on not feeling like courage or foolishness but like the only direction left\").",
+      "finding_id": "F14-05",
+      "problem": "The negation-triad is the chapter's default syntactic strategy for expressing Nora's ambivalence \u2014 she defines her emotional state by naming what it is not, then gesturing toward what it might be. Each instance is individually effective, but 4 occurrences in a single chapter turn the construction into a visible template. The final two instances (lines 209, 229) are within 20 lines of each other, making the repetition audible in the chapter's climactic passage.",
+      "rewrite_direction": "Retain the 2 strongest instances. The punctuation metaphor at snapshots/cycle_01/chapters/chapter_14.md:209 is the chapter's most original use; line 31 (the flinch) is vivid and well-placed. For lines 201 and 229, rebuild the expression of ambivalence using different syntactic strategies \u2014 a direct contradictory pair, an image that holds both states, or a physical gesture that embodies the unresolved tension. Do not cluster surviving instances within 30 lines of each other.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "No more than one explicit \"she recognized this as a narrative/manuscript strategy\" observation appears in the chapter. Lines 129 and 185 convey their meaning without manuscript-craft analogies. The Simone coffee-shop scene (lines 149-187) contains zero instances of Nora comparing Simone's behavior to editorial or rhetorical technique.",
+      "chapter_id": "chapter_14",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md \u2014 Three instances of the prose explaining its own effects through Nora's editorial consciousness: line 61 (\"which was the kind of sentence she would have flagged in a manuscript for doing no work\"), line 129 (\"a test disguised as idle curiosity, the kind of move she recognized from the manuscripts she edited, where characters who were beginning to doubt always did exactly this\"), line 185 (\"the note of caution that made the encouragement more credible, the way a well-placed concession in a manuscript made the argument around it stronger\").",
+      "finding_id": "F14-06",
+      "problem": "While the editorial-consciousness voice is organic to Nora's character, three instances of the narrator explicitly analogizing Nora's life to a manuscript she is editing becomes self-glossing \u2014 the prose explains its own machinery rather than trusting the reader to experience it. Line 185 is the most damaging: it reduces the devastating dramatic irony of Simone's perfectly calibrated encouragement to a craft observation about persuasive rhetoric. The reader who knows Simone's secret should feel the horror of that perfection directly, not have it annotated as a manuscript technique.",
+      "rewrite_direction": "Keep one instance \u2014 snapshots/cycle_01/chapters/chapter_14.md:61 is the most natural (a quick, self-aware aside about a hollow sentence). At line 129, cut \"the kind of move she recognized from the manuscripts she edited, where characters who were beginning to doubt always did exactly this\" \u2014 let the test-text stand as an action rather than a recognized literary trope. At line 185, cut \"the way a well-placed concession in a manuscript made the argument around it stronger\" \u2014 let Nora register that Simone's advice was both encouraging and cautious, but do not have her decode why it was persuasive. The dramatic irony is stronger when Nora does not analyze the technique that is being used on her.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "The closing paragraph contains at least two concrete, observed sensory details from the Brooklyn environment. It does not use the words \"decide,\" \"commit,\" or \"between\" (or direct synonyms) to describe the weather or season. The reader can feel the emotional resonance between Nora's state and the external world without the narration making the connection explicit.",
+      "chapter_id": "chapter_14",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:231 \u2014 \"Outside, March did what March does in Brooklyn \u2014 couldn't decide, wouldn't commit, hung between what it had been and what it was becoming, the last ice on the sidewalks going grey and soft in the gutters, the season not yet arrived but no longer deniable.\"",
+      "finding_id": "F14-07",
+      "problem": "The closing pathetic fallacy mirrors Nora's emotional state so directly that it reads as thesis statement rather than image. \"Couldn't decide, wouldn't commit\" explicitly restates Nora's ambivalence from the preceding paragraphs. \"Hung between what it had been and what it was becoming\" summarizes the chapter's emotional arc. The preceding paragraph (lines 228-230) has already established Nora's state of suspended irresolution; the weather close does not deepen it, it repackages it. A shortlist-level close would let the external world provide counterpoint or resonance, not annotation.",
+      "rewrite_direction": "Revise snapshots/cycle_01/chapters/chapter_14.md:231 to let the March image carry genuine weather-observation rather than allegorical transparency. The image should rhyme with Nora's state obliquely \u2014 through sensory detail, texture, or physical presence \u2014 rather than restating the emotional vocabulary of the chapter (\"decide,\" \"commit,\" \"between\"). Consider ending on a concrete physical detail from the cityscape that the reader connects to Nora's state without being told to. The melting ice is a good image; let it do the work without the preamble of \"couldn't decide, wouldn't commit.\"",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "The financial comparison at this passage either (a) accounts for all three Caleb payments ($400 + $2,500 + $10,000 = $12,900) in the counterfactual, or (b) explicitly frames itself as the difference between this morning's balance and the post-send balance without implying it represents the total relationship cost. The math is consistent with the continuity sheet's cumulative financial data.",
+      "chapter_id": "chapter_14",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:221 \u2014 \"She had thirty-two thousand eight hundred dollars that would have been forty-two thousand eight hundred if she hadn't met a man on Hinge five months ago.\" Per the continuity sheet, Nora has previously sent $400 (chapter 8) and $2,500 (chapter 10) to Caleb. Her total financial loss upon sending the $10,000 in this chapter is $12,900. But the sentence implies the total cost of meeting Caleb is $10,000 ($42,800 - $32,800), treating her pre-send balance as equivalent to a hypothetical no-Caleb balance. The $42,800 already reflects the earlier $2,900 in losses (offset by continued monthly savings), so it is not what she would have had without Caleb.",
+      "finding_id": "F14-08",
+      "problem": "A character established as financially meticulous (lines 199-200: \"the evidence of sustained attention, of a woman who understood that money\") conflates her balance before today's transfer with the counterfactual of never having met Caleb. The actual no-Caleb balance would be approximately $45,700 (her current $42,800 plus $2,900 in previous losses, adjusting for savings growth). This reads as an authorial accounting error rather than a character-level rounding, because the surrounding prose emphasizes Nora's precise financial awareness.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_14.md:221, either (a) correct the counterfactual to reflect all three payments \u2014 something like \"thirty-two thousand eight hundred dollars, which would have been closer to forty-six thousand if she'd never swiped right on a man who didn't exist,\" or (b) frame the comparison explicitly as today's immediate loss rather than the relationship's total cost \u2014 \"thirty-two thousand eight hundred dollars, ten thousand less than she'd had this morning.\" Option (a) is stronger because it forces Nora to confront the full accounting; option (b) is acceptable if the chapter wants to preserve her avoidance of the total number as a psychological beat (in which case, do not use the phrase \"if she hadn't met a man on Hinge,\" which implies total-relationship accounting).",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "At line 2823: (1) The savings figure is consistent with Ch10's revised figure minus the $2,500 sent in Ch10, plus approximately 2 months of savings at the stated rate. (2) The figure is in the range $41,000-$44,000. FAIL if the figure implies a savings rate inconsistent with the stated $700-900/month.",
+      "chapter_id": "chapter_14",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2823",
+      "finding_id": "HIGH-05-savings-ch14",
+      "problem": "Line 2823 states Nora's savings are '$42,800.' This is internally well-supported by the detailed financial reasoning in this chapter ('she'd been saving since she was twenty-six' at $700-900/month). However, it contradicts Ch10's figure of ~$14,000 two months earlier. If Ch10 corrects to ~$44,000, then Ch14's $42,800 is consistent (she's sent $2,500 and saved ~$1,600 in the interim, netting approximately -$900). No revision needed in this chapter IF Ch10 corrects its figure. Flagging to ensure cross-chapter awareness.",
+      "rewrite_direction": "No substantive revision needed at line 2823 if Ch10 corrects its savings figure to approximately $44,100. Verify that the $42,800 figure is arithmetically consistent: if she had ~$44,100 in January, sent $2,500 (Ch10), and saved ~$1,600 over two months (at ~$800/month), her March balance would be approximately $43,200 \u2014 close enough to $42,800 to account for normal spending variation. If this math doesn't work after Ch10's revision, adjust the figure here by \u00b1$500 to reconcile.",
+      "severity": "HIGH",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "At line 2757: (1) No phrase matching 'I'm not [really] a LinkedIn person' appears. (2) Caleb's response still deflects the LinkedIn question. (3) The deflection has the same functional role \u2014 Nora cannot verify his professional existence. (4) The language does not echo any other calibration sample from the style bible. FAIL if the revised line shares more than 4 consecutive words with any caleb_mora_ai example line.",
+      "chapter_id": "chapter_14",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2757",
+      "finding_id": "HIGH-06-style-echo-linkedin-ch14",
+      "problem": "Caleb's text message reads: 'I'm not really a LinkedIn person.' The style bible's example line for caleb_mora_ai is: 'I'm not a LinkedIn person. I'm barely an email person. I'm a show-up-and-build-the-thing person.' These are marked as 'NON-COPYABLE REFERENCE ONLY \u2014 calibration samples, never to be echoed in any draft.' The manuscript's version differs by a single adverb ('really') and is a near-verbatim echo of the calibration sample's first clause.",
+      "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:2757, replace Caleb's LinkedIn deflection with a response that captures the same character beat (a man who is charmingly anti-corporate, resistant to professional self-presentation) without echoing the calibration sample. The response should still feel evasive \u2014 this is a scene where Nora is testing Caleb's verifiability, so his dodge matters. Options: (a) Caleb could deflect with a joke about his firm's non-existent web presence; (b) he could express genuine distaste for the platform in his own idiom; (c) he could redirect to something personal rather than professional. The key constraint: the response should wobble slightly, giving Nora's doubt room to grow.",
+      "severity": "HIGH",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "At line 2685: (1) The metaphor does not reference manuscripts, editing, sentences, or flagging. (2) The new language conveys the same meaning (recognizing emptiness in a statement). FAIL if any form of editing vocabulary appears in this figurative passage.",
+      "chapter_id": "chapter_14",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2685",
+      "finding_id": "MED-06-editing-metaphor-ch14",
+      "problem": "Line 2685: 'the kind of sentence she would have flagged in a manuscript for doing no work.' This chapter is about Nora deciding whether to send $10,000 \u2014 the stakes are financial and emotional, not editorial. The editing metaphor domain has appeared in 14+ chapters at this point, and by Ch14 the reader has absorbed the premise that Nora thinks like an editor. Continuing to reach for the same register creates diminishing returns and signals the prose has a single available channel for interiority.",
+      "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:2685, replace 'the kind of sentence she would have flagged in a manuscript for doing no work' with a non-editorial way of describing empty reassurance. Nora's professional eye can still be present in this chapter \u2014 her investigation of Caleb's LinkedIn and website (lines 2751-2763) is organic \u2014 but the figurative deployment of editing vocabulary should stop.",
+      "severity": "MEDIUM",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "5dcb701672adba1170138adeca9ef5981ec200230ae91aed22113f95164504b6",
+  "must_fix_count": 11,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This novel must commit fully to its dark comedy register. The humor should be genuinely funny \u2014 not arch, not safe, not 'literary funny' where the reader smiles wryly. The darkness should be genuinely dark \u2014 the financial manipulation is theft, the emotional manipulation is a form of violence, and the sexual dimension of the AI relationship (intimate photos sent to a non-person, sexual conversations with an algorithm controlled by your best friend) is deeply violating. The novel should not flinch from the specific perversity of Simone reading Nora's intimate messages, of Simone helping Nora dress up for a man Simone invented, of Simone comforting Nora about a fight Simone scripted. These moments are the novel's payload. If they are rendered obliquely or summarized, the book fails. Equally, the genuine tenderness of the friendship \u2014 the years of real love underneath the betrayal \u2014 must be rendered with the same commitment. The reader should feel both the comedy and the horror simultaneously, not in alternation.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism is treated as a craft failure equivalent to a plot hole. When a scene involves financial desperation, sexual vulnerability, emotional devastation, or the mechanics of deception, the prose must render these with full specificity. 'She felt used' is never acceptable when you can show what being used feels and looks like in the body and in the specific details of the moment. The reader should not be protected from the characters' experiences.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm. Uncontracted forms reserved for emphasis, deliberate formality, or character-specific register choices. If a line reads stiffly, the first fix is to contract.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 2,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate between hot and quiet chapters. After a high-intensity scene (confrontation, discovery, sexual encounter), the next chapter should breathe \u2014 slow down, change the sensory environment, let the character do something ordinary. Vary scene counts: some chapters are a single sustained scene, others are three or four. Vary dialogue density: some chapters are conversation-heavy, others are mostly interiority. No two consecutive chapters should open the same way \u2014 if one opens in a location, the next should open in thought or in mid-conversation. The novel's middle section (chapters 8-13) should have more structural variety than the opening, which can afford to be more regular.",
+      "diction": "Contemporary, educated, specific. No genre-thriller diction. No prestige-novel stiffness. The language should feel like how smart, funny, self-aware women in their mid-thirties actually think and speak. Cultural references are allowed when organic. Brand names when they carry social information. The prose should be able to be funny without stepping outside the character's perspective to wink at the reader.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person \u2014 very close, almost inhabiting the POV character's thought patterns and verbal rhythms. The prose should feel like the character's consciousness rendered in third person, not an external narrator describing the character. When in Nora's sections, the prose has her warmth and her specific noticing. When in Simone's sections, the prose has her edge and her accounting.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Variable. Default to mid-length sentences with natural cadence. Use compression for emotional peaks and psychological precision. Use longer, more digressive rhythms for scenes of intimacy, humor, and daily texture. Avoid the trap of making every important moment a short sentence \u2014 sometimes the big thing lands better in a subordinate clause, almost hidden.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_06",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH06-BOOKER-001",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:5; snapshots/cycle_01/chapters/chapter_06.md:19; snapshots/cycle_01/chapters/chapter_06.md:194; snapshots/cycle_01/chapters/chapter_06.md:200",
+      "problem": "The chapter frames county records access as a hard institutional blockade, but Lena still reaches a major tract linkage in one uninterrupted home pass, so the obstacle reads more atmospheric than causally constraining. This weakens escalation and makes the end-of-chapter ask to Mara feel less forced than it should.",
+      "rewrite_direction": "Rework the investigation sequence across snapshots/cycle_01/chapters/chapter_06.md:194-207 and snapshots/cycle_01/chapters/chapter_06.md:252-255 so one critical link remains unobtainable after Lena's analog search. Add a concrete failed step in snapshots/cycle_01/chapters/chapter_06.md:194-207 (for example, ambiguous parcel ownership or missing transfer page) that directly triggers the Mara outreach in snapshots/cycle_01/chapters/chapter_06.md:252-255.",
+      "acceptance_test": "PASS if, in revised snapshots/cycle_01/chapters/chapter_06.md:194-255, a reader can identify one explicit dead end after the analog search and one new leverage point that becomes available only by contacting Mara; FAIL if Lena still resolves both parcel linkage and practical next move before outside help."
+    },
+    {
+      "finding_id": "CH06-CRAFT-001",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:133; snapshots/cycle_01/chapters/chapter_06.md:137; snapshots/cycle_01/chapters/chapter_06.md:141",
+      "problem": "Timidity: after the chapter's sharpest family-pressure admission (\"We're not fine\"), the narrative retreats into summary (\"Conversation limped after that\") instead of rendering the immediate interpersonal damage beat-by-beat. That softens the stated cost of Lena's choice.",
+      "rewrite_direction": "Replace the summary transition in snapshots/cycle_01/chapters/chapter_06.md:141-143 with a fully dramatized aftermath beat that includes direct action or speech from Jalen and/or Marcus before the custody warning in snapshots/cycle_01/chapters/chapter_06.md:145. Keep the same scene and time; do not jump ahead until a specific behavioral consequence is shown.",
+      "acceptance_test": "PASS if revised snapshots/cycle_01/chapters/chapter_06.md:133-145 contains at least one concrete, on-page consequence after \"We're not fine\" (e.g., changed plan, refused contact, explicit boundary) that alters what follows; FAIL if the passage still bridges by summary language without a new enacted consequence."
+    },
+    {
+      "finding_id": "CH06-PROSE-001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:37; snapshots/cycle_01/chapters/chapter_06.md:141; snapshots/cycle_01/chapters/chapter_06.md:169; snapshots/cycle_01/chapters/chapter_06.md:177; snapshots/cycle_01/chapters/chapter_06.md:234; snapshots/cycle_01/chapters/chapter_06.md:236",
+      "problem": "A recurring \"as if\" explanatory clause appears six times in one chapter, creating a visible sentence template. The repetition starts to flatten texture and signals autopilot rather than controlled variation.",
+      "rewrite_direction": "Revise the \"as if\" constructions at snapshots/cycle_01/chapters/chapter_06.md:37, snapshots/cycle_01/chapters/chapter_06.md:141, snapshots/cycle_01/chapters/chapter_06.md:169, snapshots/cycle_01/chapters/chapter_06.md:177, snapshots/cycle_01/chapters/chapter_06.md:234, and snapshots/cycle_01/chapters/chapter_06.md:236. Convert at least four of these to direct sensory/action description or tighter declarative inference so the chapter is not leaning on one comparative frame.",
+      "acceptance_test": "PASS if revised versions of the cited spans contain no more than two total \"as if\" constructions and each remaining instance adds non-redundant meaning; FAIL if three or more \"as if\" comparisons remain across those same spans."
+    }
+  ],
+  "summary": "Chapter 6 hits core chapter-spine beats (family dinner pressure, Gideon Tract code break, decision to continue) and keeps character dialogue voices distinct with generally natural contraction use. However, it remains below pass-level on booker/craft/prose due to a softened causal obstacle in the records sequence, an emotionally timid summary bridge after the dinner confrontation, and repeated \"as if\" sentence framing. No continuity-sheet contradiction was detected, and the chapter maintains canonical past-tense narration."
+}

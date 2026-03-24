@@ -1,0 +1,37 @@
+{
+  "chapter_id": "chapter_07",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "PASS",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_07_F001",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_02/chapters/chapter_07.md:29; snapshots/cycle_02/chapters/chapter_07.md:247; snapshots/cycle_02/chapters/chapter_07.md:271; snapshots/cycle_02/chapters/chapter_07.md:355; snapshots/cycle_02/chapters/chapter_07.md:356; snapshots/cycle_02/chapters/chapter_07.md:357",
+      "problem": "The chapter repeatedly uses clipped narrative fragments to force emphasis: \"Manifest editing gone,\" \"Not louder. Tighter.\", \"Undocumented favors. Personal improvisations.\", and the final \"Not Teresa's speech. Not the orange strip. The space.\" Because this pattern recurs across all three scenes and at the closing beat, it reads as a chapter-wide compression tic instead of a deliberate one-off effect, and it violates the constitution's explicit ban on elliptical clipping in narration.",
+      "rewrite_direction": "Recast the emphatic fragments at snapshots/cycle_02/chapters/chapter_07.md:29, snapshots/cycle_02/chapters/chapter_07.md:247, snapshots/cycle_02/chapters/chapter_07.md:271, snapshots/cycle_02/chapters/chapter_07.md:355, snapshots/cycle_02/chapters/chapter_07.md:356, and snapshots/cycle_02/chapters/chapter_07.md:357 into short but grammatically complete clauses. Preserve the pressure and cadence, but stop omitting auxiliaries or relying on bare noun phrases for impact.",
+      "acceptance_test": "PASS if the revised narration at snapshots/cycle_02/chapters/chapter_07.md:29, snapshots/cycle_02/chapters/chapter_07.md:247, snapshots/cycle_02/chapters/chapter_07.md:271, snapshots/cycle_02/chapters/chapter_07.md:355, snapshots/cycle_02/chapters/chapter_07.md:356, and snapshots/cycle_02/chapters/chapter_07.md:357 lands the same humiliation/tightening/isolation beats in complete clauses; FAIL if any of those moments still depend on fragment-only lines with omitted auxiliaries or bare noun-phrase sentence endings."
+    },
+    {
+      "finding_id": "chapter_07_F002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_02/chapters/chapter_07.md:23; snapshots/cycle_02/chapters/chapter_07.md:29; snapshots/cycle_02/chapters/chapter_07.md:195; snapshots/cycle_02/chapters/chapter_07.md:211; snapshots/cycle_02/chapters/chapter_07.md:241; snapshots/cycle_02/chapters/chapter_07.md:347",
+      "problem": "The chapter leans on `as if` comparison scaffolding often enough that it starts to pre-shape the prose. The junior clerk, Marisol's bodily metaphor, Paloma's diagnosis, Rufino's shoe check, Ivo's posture, and the attendants' avoidance all arrive through the same comparative hinge, which flattens sentence variety in an otherwise strong chapter.",
+      "rewrite_direction": "Rework the weaker `as if` constructions at snapshots/cycle_02/chapters/chapter_07.md:23, snapshots/cycle_02/chapters/chapter_07.md:195, snapshots/cycle_02/chapters/chapter_07.md:211, snapshots/cycle_02/chapters/chapter_07.md:241, and snapshots/cycle_02/chapters/chapter_07.md:347, and keep only the comparison(s) that truly earn metaphorical lift. In those passages, favor direct physical description, free-indirect thought, or a different sentence shape over the default `as if` bridge.",
+      "acceptance_test": "PASS if rereading snapshots/cycle_02/chapters/chapter_07.md:23, snapshots/cycle_02/chapters/chapter_07.md:195, snapshots/cycle_02/chapters/chapter_07.md:211, snapshots/cycle_02/chapters/chapter_07.md:241, and snapshots/cycle_02/chapters/chapter_07.md:347 shows that at least four of those beats now land without `as if`, and the remaining comparison(s) feel singular rather than habitual; FAIL if those passages still rely on the same repeated comparative scaffold to move from observation into meaning."
+    }
+  ],
+  "summary": "Chapter 7 lands its humiliation spine cleanly: Teresa's audit materially strips Marisol's access, Paloma's chart lie grows out of bodily care under pressure, and the cafeteria scene concretizes how housing, overtime, and visas turn coworkers against her. Continuity, narrative tense, and character voice all hold. The unresolved weakness is sentence-level prose control: recurring clipped fragments violate the constitution's no-elliptical-clipping rule, and repeated `as if` comparisons become a noticeable chapter tic.",
+  "coverage_scene_ids": [
+    "platform_audit",
+    "trauma_room",
+    "cafeteria_all_hands"
+  ]
+}

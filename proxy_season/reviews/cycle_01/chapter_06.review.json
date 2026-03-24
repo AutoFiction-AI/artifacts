@@ -1,0 +1,88 @@
+{
+  "chapter_id": "chapter_06",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch06-prose-01",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:7, snapshots/cycle_01/chapters/chapter_06.md:15, snapshots/cycle_01/chapters/chapter_06.md:117, snapshots/cycle_01/chapters/chapter_06.md:151, snapshots/cycle_01/chapters/chapter_06.md:161, snapshots/cycle_01/chapters/chapter_06.md:163",
+      "problem": "The simile construction 'the way [subject] [verb]' appears 8 times, forming a prose tic that flattens the chapter's otherwise varied syntax. Instances: 'the way she used to hold market reports' (line 7), 'The way a power company uses a transformer' (line 15), 'the way she'd research a hostile acquisition' (line 117), 'the way you'd move a file' (line 117), 'the way she'd been trained to' (line 151), 'the way she moved through the world' (line 161), 'the way a surgeon builds on her hands' (line 161), 'the way a river accommodates a stone' (line 163). Line 161 contains two instances in a single sentence. Once or twice is a stylistic choice; eight times is autopilot.",
+      "rewrite_direction": "Reduce to no more than 3 instances across the full chapter. Preserve the strongest: the river/stone metaphor at snapshots/cycle_01/chapters/chapter_06.md:163 is earned; the power-company comparison at snapshots/cycle_01/chapters/chapter_06.md:15 is sharp. The double instance at snapshots/cycle_01/chapters/chapter_06.md:161 is the most urgent fix — one of the two 'the way' constructions must become a different syntactic structure. Rework weaker instances at lines 117 and 151 using 'as,' 'like,' direct metaphor, or deletion of the comparison frame entirely. Do not simply swap all for 'like' — vary the replacement strategies.",
+      "acceptance_test": "The revised chapter contains no more than 3 instances of 'the way [subject] [verb]' as a simile connector. Line 161 contains at most one such construction. At least 3 of the removed instances use syntactically distinct replacement strategies (not all converted to the same alternative pattern)."
+    },
+    {
+      "finding_id": "ch06-prose-02",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:15, snapshots/cycle_01/chapters/chapter_06.md:27, snapshots/cycle_01/chapters/chapter_06.md:107, snapshots/cycle_01/chapters/chapter_06.md:145, snapshots/cycle_01/chapters/chapter_06.md:163",
+      "problem": "The negation-then-reveal construction ('not X but Y' or 'Not X. Not Y. Z.') appears 5 times: 'Not watched. Not monitored. Used.' (line 15), 'not the old silence of two people who had stopped talking... but the charged silence' (line 27), 'not the sharp grief of sudden failure but the slower, more humiliating recognition' (line 107), 'not strategic hope, not the calculated expectation... but the real thing' (line 145), 'She was not being outmaneuvered. She had not made a mistake.' (line 163). Each instance is rhetorically effective in isolation, but at five occurrences the move becomes a default rhetorical gear, draining each instance of its contrastive force.",
+      "rewrite_direction": "Retain no more than 2 instances. The strongest candidates: snapshots/cycle_01/chapters/chapter_06.md:15 ('Not watched. Not monitored. Used.') for its comic precision, and snapshots/cycle_01/chapters/chapter_06.md:145 ('not strategic hope... but the real thing') for its emotional weight. Rework the remaining three — snapshots/cycle_01/chapters/chapter_06.md:27, snapshots/cycle_01/chapters/chapter_06.md:107, and snapshots/cycle_01/chapters/chapter_06.md:163 — to achieve their contrast through direct assertion, reordering so the positive statement leads, or embedding the contrast in action/image rather than explicit negation.",
+      "acceptance_test": "The revised chapter contains no more than 2 instances of the 'not X but Y' / 'Not X. Not Y. Z.' negation-reveal pattern. The reworked passages at lines 27, 107, and 163 achieve their intended contrast through syntactically distinct strategies."
+    },
+    {
+      "finding_id": "ch06-craft-01",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:1-172",
+      "problem": "The style bible's creative_risk_policy demands 'the painful and the funny coexisting without one defusing the other' and warns against darkening 'the humiliation into dystopian grimness.' The register_commitment declares 'this is a dark comedy, not a cautionary tale, not a dystopia.' Chapter 6 reads overwhelmingly as devastation with minimal comedy. The few comic moments — the refrigerator coefficient (line 11), Priya's horse-racing anecdote (line 71), the empty paper-towel dispenser (line 95) — are scattered and brief. The chapter's abundant absurdist material (a marriage classified as infrastructure, a transfer denied because the applicant is 'locally optimal,' a formal objection sustained in nine minutes with zero practical effect, a portal designed by committee) is rendered with solemn gravity rather than allowing the inherent farce to coexist with the pain. The chapter's texture_mode ('tense') justifies dramatic emphasis but not the near-total suppression of the novel's comic register.",
+      "rewrite_direction": "Do not convert this into a comic chapter — the tense texture is correct. Instead, let the existing absurdity be funny at 3-4 targeted passages where comedy is currently suppressed: (1) snapshots/cycle_01/chapters/chapter_06.md:9-11, the classification document's itemization of the refrigerator — already has comic edge but could commit further to the absurdity of a refrigerator having a bilateral dependency coefficient; (2) snapshots/cycle_01/chapters/chapter_06.md:129, the Administrative Coordination portal ('a website that looked like it had been designed by a committee that couldn't agree on a font size') — this is a comedy beat rendered as observation when it could land as genuinely funny; (3) snapshots/cycle_01/chapters/chapter_06.md:137-139, the nine-minute response time — the temporal mismatch between Mira's careful evening and the system's nine minutes is acknowledged but analytically observed rather than felt as farce; (4) snapshots/cycle_01/chapters/chapter_06.md:149-153, the 'sustained' reversal — the absurdity of winning and losing simultaneously could hold a beat of dark comic recognition before devastation lands. The prose should hold both registers simultaneously, not alternate between them.",
+      "acceptance_test": "In the revised chapter, at least 3 passages achieve dual-register prose where the absurdity of the situation is simultaneously funny and devastating — the reader winces and laughs in the same beat. The portal description (line 129), the nine-minute response (lines 137-139), and at least one additional passage land as dark comedy, not just dark drama. No comedy deflects from or defuses the chapter's devastating arc."
+    },
+    {
+      "finding_id": "ch06-craft-02",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:101-111, snapshots/cycle_01/chapters/chapter_06.md:149-165",
+      "problem": "The style bible specifies that under acute stress, 'Mira's metaphors become violent and her syntax clips' and that 'her profanity should feel like an event.' The chapter delivers Mira's physical stress tell (organizing papers at line 167, hand-washing at line 109, gripping the counter at line 159) but never delivers the violent metaphors, clipped syntax, or pressurized profanity the style bible marks as her cognitive-verbal stress response. At the two emotional peaks — the 'locally optimal' denial (lines 101-111) and the 'sustained' reversal (lines 149-165) — Mira's interiority remains composed and analytical. The architectural metaphor at line 105 ('removing a load-bearing wall') is coolly observed, not violent. The identity passage at line 161 is reflective, not clipped. The emotional climaxes are intellectualized — the prose tells us the composure should crack but never actually shows the crack. This is timidity: the prose retreats into Mira's analytical register at the moments when that register should finally fail her.",
+      "rewrite_direction": "At the 'locally optimal' moment (snapshots/cycle_01/chapters/chapter_06.md:101-111), allow Mira's syntax to break — a fragment, a violent image, a sentence that starts one way and pivots hard. The analytical recovery can follow, but the initial impact should register in the body and in broken syntax before the strategist reassembles. At the 'sustained' reversal (snapshots/cycle_01/chapters/chapter_06.md:149-165), the gap between hope and devastation should produce at least one moment where Mira's language turns violent or raw before she goes quiet. The style bible says 'After these moments, she often goes very quiet, which is worse' — the going-quiet is well-rendered (line 157 onward), but the moment of verbal sharpness that should precede it is missing. Consider whether at least one of these two peaks warrants pressurized profanity — her profile says 'when profanity comes, it's pressurized and specific, and it signals that her composure has cracked. Her profanity should feel like an event.' If there is ever a chapter where that event should occur, it is this one.",
+      "acceptance_test": "In the revised 'locally optimal' passage (lines 101-111), Mira's interiority includes at least one sentence with clipped syntax or violent imagery that departs from her analytical baseline before she recovers composure. In the revised 'sustained' passage (lines 149-165), at least one moment of raw or violent internal language precedes the quiet. At least one of the two peaks includes a specific break in Mira's composed register — whether violent metaphor, syntactic rupture, or pressurized profanity — that is audibly different from her analytical default."
+    },
+    {
+      "finding_id": "ch06-craft-03",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:53, snapshots/cycle_01/chapters/chapter_06.md:141",
+      "problem": "The continuity sheet establishes the story's setting as 'Late February, near future — approximately 2029.' Two tracking numbers in the chapter use '2024' as what reads as a year prefix: 'GM-TR-2024-00891' (line 53) and 'AC-OBJ-2024-14077' (line 141). Their format (four-digit number hyphen five-digit serial) strongly implies year-sequential numbering, placing the events in 2024 — contradicting the established timeline by approximately five years.",
+      "rewrite_direction": "Either (a) update both tracking numbers at snapshots/cycle_01/chapters/chapter_06.md:53 and snapshots/cycle_01/chapters/chapter_06.md:141 to use a year consistent with the story's timeline (e.g., GM-TR-2029-00891, AC-OBJ-2029-14077), or (b) change the format to be clearly non-year-based (e.g., GM-TR-M7-00891, AC-OBJ-N4-14077), removing the ambiguity. Option (a) is simpler and preserves the bureaucratic flavor.",
+      "acceptance_test": "All tracking numbers and reference codes in the chapter either use a year consistent with the continuity sheet's timeline (approximately 2029) or use a format that cannot be parsed as year-based. No code in the chapter contains '2024' in a position readable as a year."
+    },
+    {
+      "finding_id": "ch06-craft-04",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:29-35",
+      "problem": "The protocol-research passage (lines 29-35) catalogs Mira's eight examined approaches as procedural summary with minimal embodied presence. The two-hour research session is rendered as a list of strategies attempted and rejected, with one exception: the Theo moment (line 31, 'she closed the tab with a sharpness that was almost audible') which grounds the analysis in physical consequence. Otherwise the passage reads as a research brief — Mira's body, her fatigue, her environment, and the specific emotional cost of each dead end are absent. The constitution requires: 'Procedural exposition must not crowd out embodied consequence.'",
+      "rewrite_direction": "Integrate 2-3 embodied details into the eight-approaches passage at snapshots/cycle_01/chapters/chapter_06.md:29-35. Candidates: (1) a physical detail mid-analysis — Mira's posture shifting, her hands on the keyboard, the kitchen table's surface under her elbows during the two-hour session; (2) a sensory interruption the analysis absorbs and continues through — the refrigerator clicking, Dan shifting on the couch, the streetlight through the window; (3) a specific bodily reaction to one of the closed-off approaches (e.g., reading the 'seventeen subclauses' that nullify personal hardship). Do not bloat — integrate into existing sentences rather than adding paragraphs. The passage's compression is a virtue; the absence of the body inside that compression is the problem.",
+      "acceptance_test": "The revised protocol-research passage (lines 29-35) contains at least 2 embodied details (physical sensation, environmental sensory input, or Mira's body in space) integrated into the procedural analysis, in addition to the existing Theo moment. The passage increases by no more than 3 sentences total."
+    },
+    {
+      "finding_id": "ch06-craft-05",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:81",
+      "problem": "The word 'unchassified' on line 81 is a typo for 'unclassified.' The passage reads: 'she would love it because it would be hers, unchassified, unoptimized, a room the machines didn't need.' This is a key emotional moment — Mira imagining her Chicago apartment as a space free from the system's classification — and the misspelling breaks the prose at a point that should be flawless.",
+      "rewrite_direction": "Correct 'unchassified' to 'unclassified' at snapshots/cycle_01/chapters/chapter_06.md:81.",
+      "acceptance_test": "Line 81 reads 'unclassified' in the position where it currently reads 'unchassified.' No other changes to the sentence."
+    }
+  ],
+  "summary": "Chapter 6 executes Mira's 'preparation then constraint' arc with genuine structural intelligence. All five must-land beats are delivered, and the central conceit — winning a bureaucratic objection that changes nothing — is one of the novel's strongest narrative moves. The 'sustained' reversal, where the system agrees with Mira's reasoning and ignores her need, is award-caliber plotting. The three-day transfer wait is well-paced, Mira's voice is distinct and consistent, the continuity with the broader novel is strong (with one timeline exception in tracking numbers), and the final paragraph's accumulative rhythm is powerful prose. However, two prose tics drain the craft: the 'the way [subject] [verb]' simile appears 8 times and the 'not X but Y' negation-reveal appears 5 times, both well past the threshold where repetition becomes autopilot. The chapter's near-total commitment to devastating drama without the novel's declared dark-comedy register is a tonal misalignment — abundant absurdist material (refrigerator coefficients, nine-minute processing of careful human work, a portal designed by committee) is rendered with solemn gravity rather than allowing humor to coexist with pain. Mira's style-bible stress tells (violent metaphors, clipped syntax, pressurized profanity) are never deployed at the emotional peaks, leaving the climaxes intellectualized rather than embodied. Dialogue passes: the single Priya exchange is well-executed with distinct voices, appropriate contractions, and a leverage shift, and the chapter's near-silence is a legitimate texture choice for Mira's isolated strategic arc. The chapter is close to passing — its structural intelligence and narrative power are real — but the prose tics, tonal monotony, and emotional-peak timidity keep it below shortlist level across three of four lenses.",
+  "coverage_scene_ids": [
+    "train_classification_documents",
+    "kitchen_table_analysis",
+    "transfer_submission_and_wait",
+    "objection_and_aftermath"
+  ]
+}

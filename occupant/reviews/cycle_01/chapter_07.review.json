@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_07",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_07_F001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:93",
+      "problem": "The chapter states that December 28, 2005 is a Monday, but that date fell on a Wednesday. Because the countdown date is the chapter's central concrete revelation, the wrong weekday creates a direct continuity contradiction rather than a cosmetic typo.",
+      "rewrite_direction": "Revise the countdown sentence at snapshots/cycle_01/chapters/chapter_07.md:93 and its immediate setup at snapshots/cycle_01/chapters/chapter_07.md:91 so the date remains concrete without asserting the wrong weekday. Either name the correct weekday or remove the weekday entirely while preserving the sense of an ordinary workday with assigned responsibilities.",
+      "acceptance_test": "PASS if every reference in the revised passage around snapshots/cycle_01/chapters/chapter_07.md:91 and snapshots/cycle_01/chapters/chapter_07.md:93 either identifies December 28, 2005 as Wednesday or omits the weekday; FAIL if the text still calls that date Monday or introduces another calendar mismatch."
+    },
+    {
+      "finding_id": "chapter_07_F002",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:138",
+      "problem": "Mort's imagined line leaks a calibration-only style-bible example almost verbatim: the chapter effectively reproduces the 'They sent a letter' beat that was provided for voice reference only. That kind of example-line contamination breaks the contract and makes the moment feel generated instead of freshly observed.",
+      "rewrite_direction": "Rewrite the imagined Mort beat at snapshots/cycle_01/chapters/chapter_07.md:138 and snapshots/cycle_01/chapters/chapter_07.md:139 so it carries Mort's quiet, practical understatement without repeating the calibration phrasing. A different line, or a concrete store action plus partial speech, would preserve his voice while making the moment original on the page.",
+      "acceptance_test": "PASS if the revised material at snapshots/cycle_01/chapters/chapter_07.md:138 and snapshots/cycle_01/chapters/chapter_07.md:139 no longer contains or closely echoes 'They sent a letter' and still reads as Mort's compressed, practical register; FAIL if the passage keeps the calibration wording or a near-verbatim paraphrase of it."
+    },
+    {
+      "finding_id": "chapter_07_F003",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:37; snapshots/cycle_01/chapters/chapter_07.md:67; snapshots/cycle_01/chapters/chapter_07.md:134; snapshots/cycle_01/chapters/chapter_07.md:158; snapshots/cycle_01/chapters/chapter_07.md:194",
+      "problem": "The chapter repeatedly lands major beats with the same negation-ladder construction: 'It was not X ... It was Y.' Used this often, the pattern stops feeling chosen and starts feeling like a prose template. Because it recurs at several of the chapter's biggest emotional turns, it flattens escalation and signals autopilot.",
+      "rewrite_direction": "Rework at least three of the highlighted landing beats at snapshots/cycle_01/chapters/chapter_07.md:37, snapshots/cycle_01/chapters/chapter_07.md:67, snapshots/cycle_01/chapters/chapter_07.md:134, snapshots/cycle_01/chapters/chapter_07.md:158, and snapshots/cycle_01/chapters/chapter_07.md:194 so they arrive through distinct syntax, image, or physical consequence rather than the same reversal template. Keep the strongest one or two instances and vary the rest.",
+      "acceptance_test": "PASS if, after revision, no more than two of the five highlighted beats still use the repeated 'It was not ... It was ...' ladder and at least one revised beat lands through a concrete sensory or physical action instead of thesis phrasing; FAIL if the marked passages still read as the same sentence pattern repeated across the chapter."
+    }
+  ],
+  "summary": "A strong single-scene discovery chapter with clear interior pressure and solid operational stakes, but it does not clear review because the chapter's central countdown beat contains a concrete calendar contradiction, Mort's imagined speech leaks a calibration-only style-bible line, and several major turns reuse the same prose template often enough to flatten the chapter's best landings."
+}

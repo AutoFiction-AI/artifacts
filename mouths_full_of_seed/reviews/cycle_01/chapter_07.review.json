@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_07",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "PASS",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_07_prose_01",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:111; snapshots/cycle_01/chapters/chapter_07.md:131; snapshots/cycle_01/chapters/chapter_07.md:293; snapshots/cycle_01/chapters/chapter_07.md:309",
+      "problem": "The chapter repeatedly slips into standalone narrative fragments such as \"Sensation first,\" \"Rain on the roof,\" \"Lover names. Tide notations. Offerings owed,\" and \"Not carefully. Not strategically.\" That breaks the constitution's ban on clipped narration and starts reading like prestige shorthand instead of fully rendered pressure.",
+      "rewrite_direction": "Rework the fragment-heavy narration around snapshots/cycle_01/chapters/chapter_07.md:109, snapshots/cycle_01/chapters/chapter_07.md:131, snapshots/cycle_01/chapters/chapter_07.md:293, snapshots/cycle_01/chapters/chapter_07.md:309, and snapshots/cycle_01/chapters/chapter_07.md:417 into grammatically complete sentences. Keep the staccato rhythm by tightening syntax and sensory sequencing rather than dropping verbs or subjects.",
+      "acceptance_test": "Pass if the revised narration around snapshots/cycle_01/chapters/chapter_07.md:109, snapshots/cycle_01/chapters/chapter_07.md:131, snapshots/cycle_01/chapters/chapter_07.md:293, snapshots/cycle_01/chapters/chapter_07.md:309, and snapshots/cycle_01/chapters/chapter_07.md:417 contains no standalone noun-phrase or adverb fragments outside quotation marks; fail if any of the current fragment beats remain in narration."
+    },
+    {
+      "finding_id": "chapter_07_prose_02",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:7; snapshots/cycle_01/chapters/chapter_07.md:99; snapshots/cycle_01/chapters/chapter_07.md:143; snapshots/cycle_01/chapters/chapter_07.md:289; snapshots/cycle_01/chapters/chapter_07.md:413",
+      "problem": "The prose keeps defaulting to the same `as if` comparison hinge across description, reaction, and memory beats. By the back half of the chapter the device is predictable enough to flatten otherwise strong sentences.",
+      "rewrite_direction": "In the local paragraphs anchored at snapshots/cycle_01/chapters/chapter_07.md:7, snapshots/cycle_01/chapters/chapter_07.md:99, snapshots/cycle_01/chapters/chapter_07.md:143, snapshots/cycle_01/chapters/chapter_07.md:289, and snapshots/cycle_01/chapters/chapter_07.md:413, replace several current `as if` clauses with direct sensory assertion, stronger verbs, or action-based comparison so the chapter is not running the same simile template over and over.",
+      "acceptance_test": "Pass if at least three of the cited paragraphs no longer use an `as if` clause and none of the cited paragraphs contains more than one `as if` comparison; fail if the revised chapter still stacks this formula across most of those beats."
+    }
+  ],
+  "summary": "Chapter 7 lands the required revelation beats, stays in close Lale perspective, and keeps Riva, Daro, Iven, Nami, and Paska aligned with the style bible's distinct registers. The failure is sentence-level: recurring clipped narration breaks the constitution's no-elliptical-clipping rule, and repeated `as if` comparisons turn part of the prose music into a visible tic."
+}

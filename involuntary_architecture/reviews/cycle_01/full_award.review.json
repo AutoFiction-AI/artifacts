@@ -1,0 +1,199 @@
+{
+  "cycle": 1,
+  "verdict": "FAIL",
+  "summary": "The manuscript's principal failure modes, ranked by consequence: (1) PROSE FORMULA RECURRENCE — the constructions 'the specific [X] of' and 'the particular [X] of' appear approximately 48 times across all 18 chapters, registering as a pervasive authorial tic rather than a deliberate stylistic choice. A secondary formula, 'the way [subject] [verb],' compounds the problem with 60+ instances, and 'not [X] but [Y]' negation-redefinition structures appear 24+ times. By mid-book a careful reader can predict the prose's rhythmic defaults, which erodes the sentence-level surprise that shortlist prose requires. (2) STRUCTURAL MONOTONY IN CHAPTER CADENCE — 13 of 18 chapters end in contemplative stillness, with 8 chapters ending on a 'did not sleep' beat. The book's emotional architecture is sophisticated, but the uniform chapter-ending register (character alone in bed or dark room, processing feelings, not sleeping) means the chapters feel structurally interchangeable despite strong local prose. A shortlist novel needs formal variation across its movement — chapters that end in action, dialogue, forward pressure, surprise, or at minimum varied emotional registers. (3) THEMATIC RESTATING WITHOUT ESCALATION — the novel's central question ('is this real or the house's amplification') is articulated in substantially the same form across chapters 11, 15, 16, 17, and 18, with chapter 17 particularly sprawling in its post-scene restating. The question is the right thematic center, but repeated re-articulation without changed terms, new evidence, or genuinely altered stakes produces circularity rather than deepening. (4) STYLE-BIBLE EXAMPLE LINE LEAKAGE — two of Narcissa's calibration-only example lines from the style bible appear near-verbatim in Chapter 4. This is a process violation that must be fixed. The manuscript's genuine strengths are considerable: the scar revelation scene (Ch 12), the Harry conversation (Ch 17), the drawing room re-entry (Ch 18), and the Mark examination sequences are rendered with the specificity, restraint, and emotional force that shortlist fiction demands. The premise is original and the emotional architecture is sophisticated. The book does not sanitize: violence, grief, intimacy, and moral compromise are all rendered with physical presence. Dialogue contraction levels are well-maintained and character voices are distinguishable. Narrative tense (past) is consistent throughout. No cross-chapter continuity violations were detected. Fixing the listed findings — particularly the prose formula tics and the chapter-ending monotony — would plausibly bring this manuscript to shortlist consideration.",
+  "findings": [
+    {
+      "finding_id": "CH04_STYLE_BIBLE_LEAKAGE",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:766; snapshots/cycle_01/FINAL_NOVEL.md:790",
+      "problem": "Two of Narcissa's calibration-only example lines from the style bible appear near-verbatim in the manuscript. Line 766: 'The house has preferences. I would not call them opinions.' matches the style bible's 'The house has always had preferences. I would not call them opinions.' Line 790: 'Those are not the same comfort.' is a verbatim fragment from the style bible's 'I did not say it was safe. I said it was not malicious. Those are not the same comfort.' The constitution explicitly marks example lines as 'calibration-only, non-copyable reference material.'",
+      "rewrite_direction": "Replace both lines at snapshots/cycle_01/FINAL_NOVEL.md:766 and snapshots/cycle_01/FINAL_NOVEL.md:790 with new Narcissa dialogue that preserves her low-contraction, indirect, formal register but uses entirely fresh phrasing. The replacement at line 766 should still convey Narcissa's oblique characterization of the Manor's agency. The replacement at line 790 should still deliver a distinction between two related concepts in Narcissa's characteristically precise diction.",
+      "acceptance_test": "Pass if no phrase from the style bible's example_lines fields for any character appears verbatim or near-verbatim (>5 consecutive shared words) at snapshots/cycle_01/FINAL_NOVEL.md:760-800. Fail if either replacement echoes, paraphrases, or structurally mirrors the style-bible examples."
+    },
+    {
+      "finding_id": "CH17_POST_TURN_SPRAWL",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:4737; snapshots/cycle_01/FINAL_NOVEL.md:4747; snapshots/cycle_01/FINAL_NOVEL.md:4759; snapshots/cycle_01/FINAL_NOVEL.md:4785",
+      "problem": "After the Harry conversation ends at line 4728, the chapter spends approximately 60 lines (4737-4791) restating in interior monologue what Harry already articulated in dialogue. Harry's diagnosis — 'You weren't protecting him. You were protecting yourself. From having to sit in the uncertainty before you had an answer.' — lands definitively at lines 4667-4668. The subsequent interior section recapitulates this insight repeatedly: line 4747 ('the verification hadn't been about rigour'), line 4759 ('she'd made herself the researcher and him the data'), line 4785 ('she'd retreated behind the glass. She'd researched. She'd verified.'). Each restating is well-written but does the same dramatic work as the prior one. The chapter's earned emotional force dissipates into explanatory surplus.",
+      "rewrite_direction": "Compress snapshots/cycle_01/FINAL_NOVEL.md:4737-4791 by at least 40%. Keep ONE interior passage that extends beyond Harry's diagnosis — the passage about the kiss (lines 4753-4755, 'He'd kissed her without knowing. She'd kissed him knowing.') is the strongest because it adds a concrete new cost Harry didn't name. Cut or radically compress the passages that merely restate 'she retreated into analysis instead of vulnerability' in successively cleaner language. End the chapter closer to the resonance-pulse beat at line 4789 without the extended thesis restatement.",
+      "acceptance_test": "Pass if the post-Harry section (snapshots/cycle_01/FINAL_NOVEL.md:4737 onward) articulates no more than one new insight beyond what Harry's dialogue already established, and reaches the chapter's closing beat within 25-30 lines of Harry's departure rather than 60. Fail if two or more passages still paraphrase the same 'retreated into analysis' insight in different language."
+    }
+  ],
+  "pattern_findings": [
+    {
+      "pattern_id": "SPECIFIC_PARTICULAR_FORMULA",
+      "severity": "HIGH",
+      "global_problem": "The prose construction 'the specific [qualifier] of [noun]' appears approximately 32 times and its synonym variant 'the particular [qualifier] of [noun]' appears approximately 16 more times, totaling ~48 instances across all 18 chapters. This far exceeds the constitution's threshold ('more than four times in the book, it is a tic, not a style'). The formula functions as a precision-signal — it says 'this is not generic, it is exact' — but through sheer repetition it becomes the opposite: a generic marker of intended specificity. By chapter 5 or 6 a careful reader can predict the construction's arrival, which erodes sentence-level surprise.",
+      "affected_chapters": ["chapter_01", "chapter_02", "chapter_03", "chapter_04", "chapter_05", "chapter_06", "chapter_07", "chapter_08", "chapter_09", "chapter_10", "chapter_11", "chapter_12", "chapter_13", "chapter_14", "chapter_15", "chapter_16", "chapter_17", "chapter_18"],
+      "global_rewrite_principles": "Retain at most 3-4 instances across the entire novel where the construction earns its place through genuine precision. Replace the rest with varied strategies: direct sensory rendering (show the specific thing rather than labeling it specific), fresh metaphor, syntactic restructuring, or deletion when the qualifier adds no information the sentence doesn't already carry. Do not replace 'the specific X of' with 'the particular X of' or vice versa — that is the same tic in a different hat.",
+      "chapter_hits": [
+        {
+          "finding_id": "SPECIFIC_PARTICULAR_CH01",
+          "chapter_id": "chapter_01",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:11; snapshots/cycle_01/FINAL_NOVEL.md:45; snapshots/cycle_01/FINAL_NOVEL.md:105; snapshots/cycle_01/FINAL_NOVEL.md:131",
+          "problem": "Chapter 1 uses 'the particular way' (line 11), 'the specific tiredness of a person who had exhausted every available avenue' (line 45), 'the specific irritation of watching an institution she belonged to lie' (line 105), and 'the particular fury of someone who had survived' (line 131). Four instances in a 165-line chapter establishes the formula as the prose's default precision device from the novel's opening pages.",
+          "rewrite_direction": "KEEP one instance — line 45 ('the specific tiredness') is the strongest because it earns its specificity through the clause that follows. REPLACE the other three at snapshots/cycle_01/FINAL_NOVEL.md:11, snapshots/cycle_01/FINAL_NOVEL.md:105, and snapshots/cycle_01/FINAL_NOVEL.md:131 with varied constructions. Line 11: restructure 'the particular way the Department of Mysteries got quiet' into a direct rendering of the quality of the silence. Line 105: replace 'the specific irritation' with an embodied reaction. Line 131: replace 'the particular fury' with a fresh construction.",
+          "acceptance_test": "Pass if chapter 1 contains at most one instance of 'the specific/particular [X] of' and the replacements use genuinely different syntactic strategies. Fail if any replacement substitutes one qualifier adjective for another (e.g., 'the precise X of,' 'the exact X of') without restructuring the sentence."
+        },
+        {
+          "finding_id": "SPECIFIC_PARTICULAR_CH03",
+          "chapter_id": "chapter_03",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:419; snapshots/cycle_01/FINAL_NOVEL.md:467; snapshots/cycle_01/FINAL_NOVEL.md:487; snapshots/cycle_01/FINAL_NOVEL.md:523; snapshots/cycle_01/FINAL_NOVEL.md:563; snapshots/cycle_01/FINAL_NOVEL.md:569",
+          "problem": "Chapter 3 has the highest density: 'the specific topography of his forearm' (419), 'the specific vertigo of holding a text' (487), 'the specific stillness of a painted figure' (523), plus 'the particular quality' at lines 563 and 569 — six instances in 185 lines. The construction dominates the chapter's descriptive register.",
+          "rewrite_direction": "KEEP one instance — line 487 ('the specific vertigo of holding a text she'd been told no longer existed') is the strongest. REPLACE the other five at snapshots/cycle_01/FINAL_NOVEL.md:419, 467, 523, 563, 569. At line 419: render the forearm's topography directly rather than labeling it 'specific.' At line 523: describe the painted figure's behavior rather than its 'specific stillness.' At lines 563 and 569: vary the sentence structure entirely.",
+          "acceptance_test": "Pass if chapter 3 contains at most one instance of the formula. Fail if more than one remains or if replacements use synonym-qualifier substitution."
+        },
+        {
+          "finding_id": "SPECIFIC_PARTICULAR_CH10",
+          "chapter_id": "chapter_10",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2562; snapshots/cycle_01/FINAL_NOVEL.md:2654; snapshots/cycle_01/FINAL_NOVEL.md:2714",
+          "problem": "Chapter 10 uses 'the particular' at lines 2562 and 2714, and 'the specific quality of being with someone' at line 2654. Three instances in this chapter compound the book-wide pattern.",
+          "rewrite_direction": "REPLACE all three at snapshots/cycle_01/FINAL_NOVEL.md:2562, 2654, 2714. At line 2654: the sentence already specifies what the quality is ('being with someone who knew him well enough that silence wasn't a failure of conversation') — cut the framing and let the definition do the work directly.",
+          "acceptance_test": "Pass if chapter 10 contains zero instances of 'the specific/particular [X] of.' Fail if any instance remains."
+        },
+        {
+          "finding_id": "SPECIFIC_PARTICULAR_CH12",
+          "chapter_id": "chapter_12",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:3100; snapshots/cycle_01/FINAL_NOVEL.md:3126; snapshots/cycle_01/FINAL_NOVEL.md:3262",
+          "problem": "Chapter 12 uses 'the specific frequency of whatever her diagnostic magic did' (3100), 'the particular care of someone who had made a thing' (3126), and 'the specific grief of a woman telling her son' (3262). Three instances in a chapter whose strongest passages (the scar revelation) don't rely on this construction at all.",
+          "rewrite_direction": "REPLACE all three at snapshots/cycle_01/FINAL_NOVEL.md:3100, 3126, 3262. The scar revelation scene (lines 3168-3298) demonstrates this chapter can write with precision without the formula — apply the same approach to these three instances.",
+          "acceptance_test": "Pass if chapter 12 contains zero instances of the formula. Fail if any remains."
+        },
+        {
+          "finding_id": "SPECIFIC_PARTICULAR_CH17",
+          "chapter_id": "chapter_17",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:4713; snapshots/cycle_01/FINAL_NOVEL.md:4741; snapshots/cycle_01/FINAL_NOVEL.md:4781; snapshots/cycle_01/FINAL_NOVEL.md:4785; snapshots/cycle_01/FINAL_NOVEL.md:4812",
+          "problem": "Chapter 17 clusters five instances: 'the specific generosity of a person' (4713), 'the specific physical fact' (4741), 'the particular quality of his laugh' (4781), 'the specific physical fact of his wrist' (4785), 'the specific addiction of someone paying sustained attention' (4812). The density is especially damaging because this chapter contains the novel's strongest dialogue scene (the Harry conversation), and the prose tic is concentrated in the weaker interior-monologue sections that follow.",
+          "rewrite_direction": "REPLACE all five at snapshots/cycle_01/FINAL_NOVEL.md:4713, 4741, 4781, 4785, 4812. At line 4713: the generosity is already specified by the clause — cut the label. At 4781: render the laugh directly rather than labeling its 'particular quality.' At 4812: 'the specific addiction of someone paying sustained attention to you with care' — this is a strong insight but the formula dulls it; restructure.",
+          "acceptance_test": "Pass if chapter 17 contains zero instances. Fail if any remains."
+        },
+        {
+          "finding_id": "SPECIFIC_PARTICULAR_CH18",
+          "chapter_id": "chapter_18",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:4956; snapshots/cycle_01/FINAL_NOVEL.md:4986; snapshots/cycle_01/FINAL_NOVEL.md:5086",
+          "problem": "Chapter 18 — the novel's final chapter — uses 'the specific grief of a woman telling her son' (already cited in context), 'the specific damage of his last words to her' (4986), and 'the specific architecture of her grip' (5086). The final chapter should consolidate the novel's voice at its most distinctive; these formula instances make it sound like the rest of the book.",
+          "rewrite_direction": "REPLACE instances at snapshots/cycle_01/FINAL_NOVEL.md:4986 and 5086. KEEP one if it earns its place — line 4956 can stay if it's the sole instance. At line 5086: 'the specific architecture of her grip' — 'architecture' is doing real work here given the novel's theme; restructure to keep the metaphor without the formula wrapper.",
+          "acceptance_test": "Pass if chapter 18 contains at most one instance. Fail if more than one remains."
+        }
+      ]
+    },
+    {
+      "pattern_id": "CHAPTER_END_MONOTONY",
+      "severity": "HIGH",
+      "global_problem": "13 of 18 chapters end in the same emotional register: a character alone in bed, in a dark room, or at a window, processing their feelings through interior monologue and arriving at contemplative stillness. The 'did not sleep' construction appears as a chapter-ending beat in 8 chapters (1, 3, 7, 9, 11, 14, 15, 17), becoming a structural refrain. The effect is not restful accumulation but rhythmic monotony — the reader learns to expect that every chapter will decelerate into the same landing pattern, which drains forward pressure from the book's architecture. A shortlist novel needs formal variation in its chapter cadence: some chapters should end in action, mid-conversation, on a revelation, in forward motion, or at minimum in varied emotional registers rather than the uniform contemplative-stillness default.",
+      "affected_chapters": ["chapter_01", "chapter_03", "chapter_04", "chapter_05", "chapter_07", "chapter_08", "chapter_09", "chapter_10", "chapter_11", "chapter_14"],
+      "global_rewrite_principles": "Retain the contemplative-stillness ending in 4-5 chapters where it is most earned (chapters 1, 9, 12, and 18 are the strongest candidates). Revise the remaining chapters to end at different points in their emotional arcs — mid-action, mid-conversation, on a question or revelation, or with forward momentum. Eliminate the 'did not sleep' construction from all but 2-3 chapters across the full novel. When a chapter must end quietly, vary the texture: dialogue trailing off, a domestic action, an interrupted thought, or an image that pushes forward rather than settling.",
+      "chapter_hits": [
+        {
+          "finding_id": "CHAPTER_END_CH03",
+          "chapter_id": "chapter_03",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:573; snapshots/cycle_01/FINAL_NOVEL.md:579",
+          "problem": "Chapter 3 ends with Hermione lying in bed processing the Manor's awareness, concluding with 'did not sleep for a long time, and the house around her was quiet in the specific way of something that is choosing not to make noise' (line 579). This is the second consecutive 'lying in bed, did not sleep' ending after Chapter 1.",
+          "rewrite_direction": "End chapter 3 earlier — the strongest candidate is the moment at snapshots/cycle_01/FINAL_NOVEL.md:565 where Hermione recognizes the house is sentient ('She was living inside something that watched her'). This is a revelation with forward momentum. Cut or compress lines 566-579 so the chapter ends on the recognition rather than the subsequent bedroom processing.",
+          "acceptance_test": "Pass if chapter 3 ends within 5 lines of the sentient-house recognition and does not contain the phrase 'did not sleep.' Fail if the chapter still concludes with a bedroom contemplation scene."
+        },
+        {
+          "finding_id": "CHAPTER_END_CH07",
+          "chapter_id": "chapter_07",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:1785",
+          "problem": "Chapter 7 ends with the single line 'She did not sleep for a long time.' This is the fourth instance of the 'did not sleep' ending (after chapters 1, 3, and implicitly 4). The construction has become a structural refrain rather than a meaningful beat.",
+          "rewrite_direction": "Revise the ending of chapter 7 at snapshots/cycle_01/FINAL_NOVEL.md:1780-1787 to end on a different beat entirely — the chapter's material about Narcissa's revelations about the Manor provides forward-driving questions that could serve as a chapter closer. End on what Hermione now knows rather than on her insomnia.",
+          "acceptance_test": "Pass if chapter 7's final lines contain no variation of 'did not sleep' and end on a forward-facing beat (question, recognition, or unresolved tension). Fail if the chapter still closes on a sleep/stillness beat."
+        },
+        {
+          "finding_id": "CHAPTER_END_CH09",
+          "chapter_id": "chapter_09",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2433",
+          "problem": "Chapter 9 — the drawing room confrontation — ends with 'She pulled the blanket over her shoulders and sat in the dark and did not sleep' (line 2433). The confrontation scene is the strongest dramatic sequence to this point, but the ending dissipates its force by routing to the same stillness-in-dark template as four previous chapters.",
+          "rewrite_direction": "Revise snapshots/cycle_01/FINAL_NOVEL.md:2425-2435 to end on a beat that preserves the confrontation's aftermath pressure without defaulting to the 'dark room, did not sleep' template. A strong alternative: end on a sensory residue of the drawing room (the cold of the marble, the Mark's changed behavior after the confrontation) that carries forward pressure.",
+          "acceptance_test": "Pass if the revised ending does not use the 'did not sleep' formula and preserves the confrontation's emotional charge through specific sensory or narrative detail rather than generic stillness. Fail if the chapter ends with a bedroom/darkness contemplation beat."
+        },
+        {
+          "finding_id": "CHAPTER_END_CH10",
+          "chapter_id": "chapter_10",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2784",
+          "problem": "Chapter 10 ends with Draco standing at a window watching darkness descend: 'the house settled around him, and the dark came down, and he let it' (line 2784). This is the sixth chapter to end with a character alone in stillness watching darkness or not sleeping. The window-at-dusk variant is barely distinguishable from the bedroom variant.",
+          "rewrite_direction": "End chapter 10 at a different point in the scene. The Theo visit that occupies the chapter's middle section provides forward momentum — end closer to Theo's departure, on a line of dialogue or a domestic action, rather than routing to the window-in-darkness template at snapshots/cycle_01/FINAL_NOVEL.md:2780-2786.",
+          "acceptance_test": "Pass if the chapter ends within the post-Theo-departure material without a window/darkness/stillness contemplation. Fail if the chapter still ends with a solitary character watching dark descend."
+        },
+        {
+          "finding_id": "CHAPTER_END_CH11",
+          "chapter_id": "chapter_11",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:3065",
+          "problem": "Chapter 11 ends with 'she lay in the dark and let the lie stand and she did not sleep' (line 3065). This is the seventh 'did not sleep' ending. The chapter's material — Hermione discovering the bonding folio and choosing concealment — generates genuine forward pressure that the ending neutralizes by routing to the established template.",
+          "rewrite_direction": "End chapter 11 at snapshots/cycle_01/FINAL_NOVEL.md:3060-3067 on the decision itself — the concealment choice — rather than on the bedroom aftermath. The chapter's dramatic turn is the decision to withhold; end on the weight of that decision, not on insomnia.",
+          "acceptance_test": "Pass if the chapter ends on the concealment decision or its immediate consequences without 'did not sleep.' Fail if a bedroom/darkness/insomnia beat still closes the chapter."
+        },
+        {
+          "finding_id": "CHAPTER_END_CH05",
+          "chapter_id": "chapter_05",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:1170; snapshots/cycle_01/FINAL_NOVEL.md:1175",
+          "problem": "Chapter 5 ends with Hermione sitting in the library with tea, observing evidence of Draco's work in her absence, producing 'a feeling she didn't examine' (line 1147). The chapter settles into quiet contemplation — not the 'did not sleep' variant but the same deceleration into interior stillness with a deliberately unnamed feeling.",
+          "rewrite_direction": "End chapter 5 closer to an active beat — the chapter contains the Harry lunch scene and the scar-concealment material, both of which generate forward momentum. If the library return scene stays as the ending, compress so it ends on a concrete detail (the hot tea, the flagged texts) rather than the 'feeling she didn't examine' formula at snapshots/cycle_01/FINAL_NOVEL.md:1145-1175.",
+          "acceptance_test": "Pass if chapter 5 ends on a concrete image or action rather than a named-but-unexplored emotion. Fail if the final beat is still an interior avoidance formulation."
+        }
+      ]
+    },
+    {
+      "pattern_id": "THE_WAY_COMPARATIVE",
+      "severity": "MEDIUM",
+      "global_problem": "The comparative simile 'the way [subject] [verb]' appears over 60 times across the manuscript in constructions like 'the way you might feel a large animal turn its head,' 'the way she processed information,' 'the way a candle looks in a draft,' 'the way iron filings orient to a magnet.' This is the novel's second most pervasive prose formula after the 'specific/particular' construction. The device works by translating an observation into a universalized comparison, and while individual instances are often effective, their cumulative density turns the prose's explanatory mechanism into a rhythmic default.",
+      "affected_chapters": ["chapter_01", "chapter_02", "chapter_03", "chapter_04", "chapter_05", "chapter_10", "chapter_11", "chapter_12", "chapter_14", "chapter_17", "chapter_18"],
+      "global_rewrite_principles": "Retain the construction in its strongest instances — where the comparison genuinely illuminates rather than merely restates. Eliminate the 'the way you [verb]' second-person simile variant except in 2-3 instances across the whole book, as the second-person address breaks close-third-person perspective. Replace weaker instances with direct rendering, fresh metaphor, or restructured sentences that show rather than compare.",
+      "chapter_hits": [
+        {
+          "finding_id": "THE_WAY_CH02",
+          "chapter_id": "chapter_02",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:180; snapshots/cycle_01/FINAL_NOVEL.md:192; snapshots/cycle_01/FINAL_NOVEL.md:194; snapshots/cycle_01/FINAL_NOVEL.md:196; snapshots/cycle_01/FINAL_NOVEL.md:200",
+          "problem": "Chapter 2 clusters five 'the way' constructions within 20 lines (180-200), including 'the way it expanded in summer' (192), 'the way it contracted in winter' (192), 'the way you didn't think about which eye you led with' (180), and 'the way you catalogued weather' is echoed in a near-construction. The density in this span makes the formula conspicuous.",
+          "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:175-200, reduce to at most two 'the way' constructions. Replace the others with direct description of the Manor's seasonal behavior and Draco's avoidance patterns. The second-person 'the way you' variants at lines 180 and 200 should be converted to close-third-person.",
+          "acceptance_test": "Pass if the span snapshots/cycle_01/FINAL_NOVEL.md:175-200 contains at most two 'the way' constructions and zero second-person 'the way you' variants. Fail if more than two remain."
+        },
+        {
+          "finding_id": "THE_WAY_CH12",
+          "chapter_id": "chapter_12",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:3072; snapshots/cycle_01/FINAL_NOVEL.md:3078; snapshots/cycle_01/FINAL_NOVEL.md:3170; snapshots/cycle_01/FINAL_NOVEL.md:3202; snapshots/cycle_01/FINAL_NOVEL.md:3262",
+          "problem": "Chapter 12 uses 'the way large animals make room' (3072), 'the way [the cold] pooled in certain corridors' (3078), 'the way heat haze warps the air' (3170), 'the way one touches something to verify' (3180), and 'the way a person reads in the dark' (3206). Five instances, though the last two in the scar scene are strong enough to keep.",
+          "rewrite_direction": "KEEP the two instances in the scar revelation scene (snapshots/cycle_01/FINAL_NOVEL.md:3180 and 3206). REPLACE the three in the chapter's opening section at snapshots/cycle_01/FINAL_NOVEL.md:3072, 3078. The 'large animals' simile at 3072 is the weakest — replace with direct rendering of the Manor's spatial changes.",
+          "acceptance_test": "Pass if the chapter's opening section (lines 3068-3130) contains at most one 'the way' construction. Fail if all original instances remain."
+        },
+        {
+          "finding_id": "THE_WAY_CH17",
+          "chapter_id": "chapter_17",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:4419; snapshots/cycle_01/FINAL_NOVEL.md:4685; snapshots/cycle_01/FINAL_NOVEL.md:4820",
+          "problem": "Chapter 17 uses three 'the way' constructions in its interior monologue sections, compounding the formula density alongside the 'specific/particular' tic already flagged for this chapter.",
+          "rewrite_direction": "REPLACE at least two of the three instances at snapshots/cycle_01/FINAL_NOVEL.md:4419, 4685, 4820. At line 4685: the 'way she listened to everything he did' can be restructured as direct free indirect thought. At line 4820: replace with direct description of the drawing room's open door.",
+          "acceptance_test": "Pass if chapter 17 contains at most one 'the way' construction. Fail if more than one remains."
+        }
+      ]
+    },
+    {
+      "pattern_id": "BOND_QUESTION_RESTATING",
+      "severity": "MEDIUM",
+      "global_problem": "The novel's central thematic question — whether the emotional connection between the protagonists is genuine or a product of the Manor's amplification architecture — is articulated in substantially the same form across five chapters (11, 15, 16, 17, 18) without the terms of the question materially changing between iterations. Each chapter re-stages the doubt ('is this real or the house'), each character processes it through interior monologue, and each arrival point is the same irreducible uncertainty. The question is the right thematic center, but restating it without new evidence, new cost, or genuinely changed stakes produces circularity. The most consequential instance is chapter 18, where Narcissa's revelation ('the house cannot fabricate') should resolve the question's terms, yet the chapter continues processing the same doubt afterward.",
+      "affected_chapters": ["chapter_15", "chapter_17", "chapter_18"],
+      "global_rewrite_principles": "The bond-authenticity question should escalate rather than recirculate. Each chapter that revisits it should do so from changed ground — new evidence, new cost, new witness, or changed relationship leverage. Chapter 16 (the confrontation) legitimately changes the terms by making the doubt interpersonal rather than private. Chapters 15, 17, and 18 should each find distinct angles rather than restaging the same interior processing.",
+      "chapter_hits": [
+        {
+          "finding_id": "BOND_RESTATING_CH15",
+          "chapter_id": "chapter_15",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:4030; snapshots/cycle_01/FINAL_NOVEL.md:4047; snapshots/cycle_01/FINAL_NOVEL.md:4061",
+          "problem": "After the first kiss, chapter 15's final section (lines 4030-4063) processes the bond-authenticity question through Hermione's interior monologue in the same form as chapter 11's discovery: 'is this the house or is it mine.' The terms of the doubt have not changed since chapter 11 — the only new element is the kiss itself, which the chapter underweights in favor of re-processing the familiar uncertainty.",
+          "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:4030-4063, refocus the post-kiss processing on what the kiss specifically changed or revealed rather than restating the bond-authenticity question. The kiss is a physical event — let the aftermath be physical and specific (what she felt, what surprised her, what she noticed about him) rather than routing immediately to the familiar abstract question.",
+          "acceptance_test": "Pass if the post-kiss processing section centers on what the kiss revealed that the prior weeks of proximity did not, rather than restating the 'real or the house' question in the same terms as chapter 11. Fail if the closing section still primarily re-articulates the bond-authenticity doubt without changed terms."
+        },
+        {
+          "finding_id": "BOND_RESTATING_CH18",
+          "chapter_id": "chapter_18",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:4902; snapshots/cycle_01/FINAL_NOVEL.md:4957; snapshots/cycle_01/FINAL_NOVEL.md:5016; snapshots/cycle_01/FINAL_NOVEL.md:5024",
+          "problem": "Chapter 18 receives Narcissa's revelation that the house 'cannot fabricate' (line 4890), which should materially change the question's terms. Yet the processing at lines 4957-4958 ('the same question it had always been but shaped differently now') and the dialogue at lines 5016-5022 restate the uncertainty again. The question is now resolved on one axis (the seed was real) but the chapter continues processing the amplification-uncertainty axis in the same interior register as previous chapters rather than moving to genuinely new ground.",
+          "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:4950-5025, let Narcissa's revelation do more work. After the 'cannot fabricate' beat, the characters should arrive at changed ground rather than restating the uncertainty. The dialogue at lines 5016-5022 ('I can't separate it... what I feel from what the house did') is effective because it's spoken rather than thought — preserve this but cut the preceding interior-monologue restatement at lines 4957-4958 that dilutes Narcissa's revelation before Draco can act on it.",
+          "acceptance_test": "Pass if the section between Narcissa's departure and Hermione's arrival (snapshots/cycle_01/FINAL_NOVEL.md:4954-4968) moves through the bond question in under 10 lines rather than re-processing it at length. Fail if Draco's interior monologue restates the uncertainty in the same terms as chapters 11, 15, or 17."
+        }
+      ]
+    }
+  ]
+}

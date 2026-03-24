@@ -1,0 +1,77 @@
+{
+  "chapter_id": "chapter_04",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_04_f001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:3",
+      "problem": "Continuity contradiction: Marisol fingers a \"chipped blue plastic medallion\" for her 30-month sobriety marker, but the continuity sheet's canonical blue sobriety chip is a day-one token introduced in chapter_07. This creates an object-state mismatch before its canonical introduction.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_04.md:3 so the carried token does not read as the chapter_07 blue day-one chip (e.g., specify a different color/material or a different keepsake object). Keep the sobriety beat, but remove premature overlap with the chapter_07 object state.",
+      "acceptance_test": "PASS if snapshots/cycle_02/chapters/chapter_04.md:3 identifies a sobriety marker that is explicitly distinct from a blue day-one chip; FAIL if line 3 still presents a blue sobriety medallion that can be read as the chapter_07 object."
+    },
+    {
+      "finding_id": "chapter_04_f002",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:111; snapshots/cycle_02/chapters/chapter_04.md:113; snapshots/cycle_02/chapters/chapter_04.md:243",
+      "problem": "Causal penalty is soft after the attempted protocol breach. Marisol tries to photograph restricted evidence, but the chapter still grants her full strategic route and key code capture in the same scene, muting consequence and reducing dramatic cost.",
+      "rewrite_direction": "In snapshots/cycle_02/chapters/chapter_04.md:111, snapshots/cycle_02/chapters/chapter_04.md:113, snapshots/cycle_02/chapters/chapter_04.md:123, and snapshots/cycle_02/chapters/chapter_04.md:243, add one durable setback tied to the breach (for example: a withheld field, mandatory incident notation, delayed records path, or temporary trust withdrawal by Ada) so the action changes what Marisol can do next.",
+      "acceptance_test": "PASS if the revised passage shows at least one concrete loss that persists past the reprimand (an action denied, route delayed, or access narrowed after line 113); FAIL if Marisol still exits with the same actionable path and no lasting cost from the photo attempt."
+    },
+    {
+      "finding_id": "chapter_04_f003",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:97; snapshots/cycle_02/chapters/chapter_04.md:125; snapshots/cycle_02/chapters/chapter_04.md:153",
+      "problem": "Timidity drift after the reveal: once the hidden figure and initials surface, scene energy retreats quickly into administrative routing language, thinning embodied fallout at the chapter's highest-pressure discovery beat.",
+      "rewrite_direction": "Rework snapshots/cycle_02/chapters/chapter_04.md:99, snapshots/cycle_02/chapters/chapter_04.md:107, snapshots/cycle_02/chapters/chapter_04.md:125, snapshots/cycle_02/chapters/chapter_04.md:151, and snapshots/cycle_02/chapters/chapter_04.md:189 to keep protocol content but add one sustained embodied consequence beat (fear, shame, or physical stress response with observable behavior) before the procedural checklist takes over.",
+      "acceptance_test": "PASS if the revised post-reveal section contains at least one full paragraph of concrete physical/emotional aftershock before process instructions begin; FAIL if the scene still pivots directly from discovery to workflow without a materially rendered impact beat."
+    },
+    {
+      "finding_id": "chapter_04_f004",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:139; snapshots/cycle_02/chapters/chapter_04.md:217",
+      "problem": "Ada's register drifts formal against her style profile (high contraction level, concise practical speech). Uncontracted forms (\"did not\", \"you did not\") land as stiff in non-ceremonial conflict beats.",
+      "rewrite_direction": "Revise Ada's dialogue at snapshots/cycle_02/chapters/chapter_04.md:139 and snapshots/cycle_02/chapters/chapter_04.md:217 toward contraction-default spoken cadence unless a marked emphasis beat justifies the full form.",
+      "acceptance_test": "PASS if Ada's revised lines at 139 and 217 use contractions or include explicit emphasis framing that justifies full forms; FAIL if those lines remain uncontracted without a clear dramatic reason on the page."
+    },
+    {
+      "finding_id": "chapter_04_f005",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:125; snapshots/cycle_02/chapters/chapter_04.md:235",
+      "problem": "Idiolect separation blurs in protocol-heavy exchange: Nora and Ada both deliver similarly structured institutional list-speech, reducing voice distinction when scene pressure is high.",
+      "rewrite_direction": "Differentiate snapshots/cycle_02/chapters/chapter_04.md:125, snapshots/cycle_02/chapters/chapter_04.md:129, snapshots/cycle_02/chapters/chapter_04.md:235, and snapshots/cycle_02/chapters/chapter_04.md:239 so Nora's language stays legal/reputation-gated while Ada's guidance sounds process-technical and colloquial to her character profile.",
+      "acceptance_test": "PASS if a cold read of the revised lines lets a reader attribute Nora vs Ada without dialogue tags based on syntax/lexicon alone; FAIL if both speeches still read like interchangeable policy bullet lists."
+    },
+    {
+      "finding_id": "chapter_04_f006",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:25; snapshots/cycle_02/chapters/chapter_04.md:81; snapshots/cycle_02/chapters/chapter_04.md:189",
+      "problem": "Recurring construction tic: the chapter uses the exact reaction stem \"Marisol felt ...\" three times, which flattens rhythmic variance and signals autopilot prose.",
+      "rewrite_direction": "Revise at least two of snapshots/cycle_02/chapters/chapter_04.md:25, snapshots/cycle_02/chapters/chapter_04.md:81, and snapshots/cycle_02/chapters/chapter_04.md:189 to deliver interior response through distinct syntax (action-first, image-first, or thought-first) instead of repeating the same stem.",
+      "acceptance_test": "PASS if no more than two of those three target lines retain the exact \"Marisol felt\" opening and each revised beat remains clearly intelligible as interior response; FAIL if all three still use the same stem."
+    }
+  ],
+  "summary": "Chapter 4 lands required plot beats and maintains past tense, but it fails review due to one HIGH continuity contradiction (premature blue sobriety token state), softened causal consequence after a major breach attempt, timidity drift into procedure at the reveal peak, dialogue register slippage versus style-bible contraction norms, Nora/Ada idiolect convergence, and a repeated prose reaction formula.",
+  "coverage_scene_ids": [
+    "chapter_04_scene_01_entry_and_protocol",
+    "chapter_04_scene_02_imaging_reveal",
+    "chapter_04_scene_03_access_conflict_and_manifest_trace"
+  ]
+}

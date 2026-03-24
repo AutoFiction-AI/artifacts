@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_15",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH15-CRAFT-001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_02/chapters/chapter_15.md:413; snapshots/cycle_02/chapters/chapter_15.md:417; snapshots/cycle_02/chapters/chapter_15.md:429",
+      "problem": "Sanitization drift in the final movement: at peak consequence, the narration repeatedly converts embodied pressure into abstract thesis language (ethics/temperature/well-vs-bad use), which summarizes discomfort instead of sustaining scene-level immediacy.",
+      "rewrite_direction": "Revise the closing run in snapshots/cycle_02/chapters/chapter_15.md:413-431 by replacing at least two abstract interpretive lines with concrete, present-moment physical or behavioral beats (body response, object handling, environment friction) that force readers to infer the moral stakes rather than receiving them as stated conclusions.",
+      "acceptance_test": "PASS if revised snapshots/cycle_02/chapters/chapter_15.md:413-431 contains at least 3 concrete sensory/action details and no more than 1 abstract thesis sentence; FAIL if the passage still relies on multiple summary statements to explain the meaning of consequence."
+    },
+    {
+      "finding_id": "CH15-DIALOGUE-001",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_02/chapters/chapter_15.md:295; snapshots/cycle_02/chapters/chapter_15.md:393; snapshots/cycle_02/chapters/chapter_15.md:197",
+      "problem": "Idiolect separation blurs in key pressure beats: Ada, Luis, and Malcolm each land polished maxim-style lines in similar clipped rhythm, which makes their voices converge toward the same authorial cadence instead of clearly distinct registers.",
+      "rewrite_direction": "Rework dialogue at snapshots/cycle_02/chapters/chapter_15.md:193-199, snapshots/cycle_02/chapters/chapter_15.md:291-297, and snapshots/cycle_02/chapters/chapter_15.md:393-398 so each speaker uses character-specific diction: Malcolm in legal nouns/procedural framing, Ada in technical precision plus blunt boundary language, Luis in plainspoken recovery pragmatics with workaday metaphor.",
+      "acceptance_test": "PASS if each cited exchange includes at least 1 lexical marker unique to that speaker and no more than 1 slogan-like standalone sentence per speaker; FAIL if readers could swap these lines between speakers without obvious register mismatch."
+    },
+    {
+      "finding_id": "CH15-PROSE-001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_02/chapters/chapter_15.md:109; snapshots/cycle_02/chapters/chapter_15.md:157; snapshots/cycle_02/chapters/chapter_15.md:225; snapshots/cycle_02/chapters/chapter_15.md:355",
+      "problem": "Recurring action-beat formula ('[character] [verb] once') appears more than twice and starts to read as autopilot staging rather than intentional variation.",
+      "rewrite_direction": "Revise beat-level prose at snapshots/cycle_02/chapters/chapter_15.md:109, snapshots/cycle_02/chapters/chapter_15.md:157, snapshots/cycle_02/chapters/chapter_15.md:225, and snapshots/cycle_02/chapters/chapter_15.md:355 by replacing at least two '... once' beats with distinct embodied actions that reveal emotional state through different physical choices.",
+      "acceptance_test": "PASS if the revised chapter has no more than 2 instances of the '[character] [verb] once' construction and the targeted lines each use non-redundant physical beats; FAIL if 3+ such beats remain or still cluster in these moments."
+    },
+    {
+      "finding_id": "CH15-BOOKER-001",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_02/chapters/chapter_15.md:421; snapshots/cycle_02/chapters/chapter_15.md:425",
+      "problem": "The ending partially shifts from novelistic pressure to report-like self-packaging: the sticky-note declaration and polished first paragraph recap close the chapter with explanatory control instead of unresolved dramatic voltage.",
+      "rewrite_direction": "In snapshots/cycle_02/chapters/chapter_15.md:421-426, keep Marisol drafting but introduce friction (false start, strike-through equivalent, interrupted sentence, or conflicting alternative phrasing) so the close preserves instability rather than delivering a finished chapter summary.",
+      "acceptance_test": "PASS if revised snapshots/cycle_02/chapters/chapter_15.md:421-426 shows visible drafting struggle (at least 1 aborted or revised sentence) and avoids ending on a fully polished recap paragraph; FAIL if the close still reads as complete documentary summary."
+    }
+  ],
+  "summary": "Chapter 15 lands major canonical beats (8:47 death, incomplete release execution, traceable file transfer, immediate administrative leave) with strong causality and no detected continuity or tense contradictions, but it fails this review pass due to one HIGH sanitization-drift issue in the closing abstraction, plus medium-level dialogue idiolect convergence, repeated prose beat formula, and report-like ending control that blunts Booker-level afterburn."
+}

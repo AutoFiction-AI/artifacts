@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_04",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_04_award_ending_overexplains",
+      "source": "award",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_01/chapters/chapter_04.md:441; snapshots/cycle_01/chapters/chapter_04.md:459; snapshots/cycle_01/chapters/chapter_04.md:465; snapshots/cycle_01/chapters/chapter_04.md:525; snapshots/cycle_01/chapters/chapter_04.md:531; snapshots/cycle_01/chapters/chapter_04.md:541",
+      "problem": "The chapter's real turn lands when Nate sees Morton's formal name, the demolition schedule, and Dominic's note about meeting Mort and Linda after hours. After that, the closing movement keeps restating the same bureaucratic-banality thesis in fresh wording instead of trusting the already-earned material. The result is a softer final blow than the chapter's strongest images deserve, which keeps the chapter below award-level compression and decisiveness.",
+      "rewrite_direction": "Compress or re-sequence the closing movement at snapshots/cycle_01/chapters/chapter_04.md:465, snapshots/cycle_01/chapters/chapter_04.md:525, snapshots/cycle_01/chapters/chapter_04.md:531, and snapshots/cycle_01/chapters/chapter_04.md:541 so it does three jobs only once each: the file reveals what is happening to Mort, Ray's brief return confirms how ordinary the office thinks this work is, and the chapter closes on Nate's guilt at occupying Dominic's chair. Keep the Eastbridge reveal and the Ray beat, but stop re-diagnosing the same insight after it is already legible on the page.",
+      "acceptance_test": "Pass if a cold reader can identify one reveal beat anchored by Mort's entry and the meeting note at snapshots/cycle_01/chapters/chapter_04.md:441 and snapshots/cycle_01/chapters/chapter_04.md:459, one relational beat with Ray at snapshots/cycle_01/chapters/chapter_04.md:483 or snapshots/cycle_01/chapters/chapter_04.md:521, and one final closing image/consequence at snapshots/cycle_01/chapters/chapter_04.md:541 or snapshots/cycle_01/chapters/chapter_04.md:543, without encountering additional paragraphs that merely restate that bureaucratic violence looks ordinary. Fail if the revised ending still spends multiple separate paragraphs paraphrasing the same thesis after the reveal has already landed."
+    },
+    {
+      "finding_id": "chapter_04_craft_timeline_arithmetic",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_01/chapters/chapter_04.md:3; snapshots/cycle_01/chapters/chapter_04.md:5; snapshots/cycle_01/chapters/chapter_04.md:393; snapshots/cycle_01/chapters/chapter_04.md:407",
+      "problem": "The opening says Nate spent the first six workdays of Dominic's life calling in sick, but this chapter's own Monday-through-Friday structure and the continuity sheet's canonical July 22 Eastbridge discovery do not leave room for six missed workdays after the July 11 transfer. As written, the chapter creates a timeline arithmetic contradiction at the exact point where the workweek framing is supposed to orient the reader.",
+      "rewrite_direction": "Revise the temporal count at snapshots/cycle_01/chapters/chapter_04.md:3 so it matches the Monday office return at snapshots/cycle_01/chapters/chapter_04.md:5 and the Friday Eastbridge status pass at snapshots/cycle_01/chapters/chapter_04.md:407. The cleanest repair is to change the sick-leave count to five workdays, unless you explicitly establish an additional missed workday on-page before the Monday return.",
+      "acceptance_test": "Pass if the revised opening and week structure can be read straight through with no date math problem: the number of missed workdays stated at snapshots/cycle_01/chapters/chapter_04.md:3 must reconcile with the Monday return at snapshots/cycle_01/chapters/chapter_04.md:5 and the Friday Eastbridge review at snapshots/cycle_01/chapters/chapter_04.md:407. Fail if the chapter still implies six missed workdays before that Friday without establishing where the extra day occurred."
+    },
+    {
+      "finding_id": "chapter_04_prose_formula_tics",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_01/chapters/chapter_04.md:173; snapshots/cycle_01/chapters/chapter_04.md:303; snapshots/cycle_01/chapters/chapter_04.md:441; snapshots/cycle_01/chapters/chapter_04.md:443; snapshots/cycle_01/chapters/chapter_04.md:519; snapshots/cycle_01/chapters/chapter_04.md:527",
+      "problem": "Several key beats default to the same polished contrast scaffolds: 'not X exactly,' the stacked 'Not Dad. Not Mort.' negation, and abstract summative lines like the bureaucracy 'miracle' sentence. Used once, these are choices; repeated at multiple pressure points, they start to feel like a house formula. That repetition makes the prose sound composed around the moment instead of fully inside Nate's raw processing.",
+      "rewrite_direction": "Rework the high-pressure beats at snapshots/cycle_01/chapters/chapter_04.md:173, snapshots/cycle_01/chapters/chapter_04.md:303, snapshots/cycle_01/chapters/chapter_04.md:441, snapshots/cycle_01/chapters/chapter_04.md:443, snapshots/cycle_01/chapters/chapter_04.md:519, and snapshots/cycle_01/chapters/chapter_04.md:527 so at least half of them land through distinct concrete observation, bodily response, or office detail rather than recycled contrast syntax or quotable abstraction. Preserve the pressure; vary the sentence shapes.",
+      "acceptance_test": "Pass if no more than two of the cited beats still rely on the same 'not X' contrast template or an abstract thesis sentence, and the revised passages instead show distinct sentence movement at snapshots/cycle_01/chapters/chapter_04.md:173, snapshots/cycle_01/chapters/chapter_04.md:303, snapshots/cycle_01/chapters/chapter_04.md:441, snapshots/cycle_01/chapters/chapter_04.md:519, and snapshots/cycle_01/chapters/chapter_04.md:527. Fail if three or more of those moments still arrive in near-identical contrast-formula language."
+    }
+  ],
+  "summary": "Fails award, craft, and prose; passes dialogue. Ray and Victor sound distinct, contracted, and scene-pressured in ways that match the style bible, and Nate's evasive workplace speech is character-true. The failures are elsewhere: the opening sick-day count breaks the chapter's canonical timing, the ending keeps re-proving its point after the Eastbridge reveal has already landed, and several major beats reuse the same contrast-heavy prose formula."
+}

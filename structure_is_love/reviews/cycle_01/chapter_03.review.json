@@ -1,0 +1,62 @@
+{
+  "chapter_id": "chapter_03",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch03-booker-001",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:315, snapshots/cycle_01/chapters/chapter_03.md:375, snapshots/cycle_01/chapters/chapter_03.md:401",
+      "problem": "The final movement repeats notebook-control beats three times with minimal leverage change, so causal momentum into chapter 4 softens instead of escalating.",
+      "rewrite_direction": "Rework the sequence at snapshots/cycle_01/chapters/chapter_03.md:315-329, snapshots/cycle_01/chapters/chapter_03.md:373-390, and snapshots/cycle_01/chapters/chapter_03.md:399-406 so each beat changes stakes (e.g., log entry -> external interruption/risk -> binding pre-training decision). Keep one full log block and convert at least one later block into scene action.",
+      "acceptance_test": "Pass if the revised sequence at snapshots/cycle_01/chapters/chapter_03.md:315-406 has three distinct beats where each introduces new consequence (not just new metrics), and no two consecutive notebook-entry blocks exceed 4 lines without an intervening external event; fail otherwise."
+    },
+    {
+      "finding_id": "ch03-craft-001",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:237, snapshots/cycle_01/chapters/chapter_03.md:243, snapshots/cycle_01/chapters/chapter_03.md:273",
+      "problem": "Timidity: the confrontation peaks, then quickly retreats into logistics and routine meal/training talk before embodied fallout lands on-page.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_03.md:237-277, add an immediate aftermath beat that forces physical/emotional consequence before the routine reset (examples: near-discovery of the missing watch, visible dysregulation, or a sharper boundary exchange that costs one of them something concrete).",
+      "acceptance_test": "Pass if, in snapshots/cycle_01/chapters/chapter_03.md:237-277, there is at least one new exchange where both Ravi and Anika each make a concrete consequential move (action or decision) tied to the conflict; fail if the scene transitions directly from argument to logistics without that consequence beat."
+    },
+    {
+      "finding_id": "ch03-dialogue-001",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:197, snapshots/cycle_01/chapters/chapter_03.md:225, snapshots/cycle_01/chapters/chapter_03.md:231",
+      "problem": "In the key fight, both voices drift into abstract therapeutic framing (\"grief work\", \"avoidance\") and polished rhetoric, reducing idiolect separation and pulling Anika away from her concrete/logistics-heavy stress voice in the style bible.",
+      "rewrite_direction": "Rewrite the exchange at snapshots/cycle_01/chapters/chapter_03.md:193-237 with more pressure-native cadence: interruptions, contractions, object/time-specific language, and Ravi's work/schedule lexicon instead of imported therapy terms. Keep the conflict content but localize it to this room, these boxes, this pickup deadline.",
+      "acceptance_test": "Pass if, in snapshots/cycle_01/chapters/chapter_03.md:193-237, Anika delivers at least 3 lines anchored to concrete objects/timing/logistics under pressure, Ravi avoids abstract labels like \"grief work/avoidance\" in favor of procedural language, and the two voices are distinguishable by syntax/rhythm when read aloud; fail otherwise."
+    },
+    {
+      "finding_id": "ch03-prose-001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:81, snapshots/cycle_01/chapters/chapter_03.md:211, snapshots/cycle_01/chapters/chapter_03.md:349",
+      "problem": "A recurring binary-negation construction (\"not X, not Y\" / \"not X and not Y\") appears more than twice, flattening sentence rhythm into a detectable tic.",
+      "rewrite_direction": "Revise the constructions at snapshots/cycle_01/chapters/chapter_03.md:81, snapshots/cycle_01/chapters/chapter_03.md:211, and snapshots/cycle_01/chapters/chapter_03.md:349 so at least two are replaced by concrete physical detail or action-based contrast rather than paired negations.",
+      "acceptance_test": "Pass if no more than one binary-negation formula remains across snapshots/cycle_01/chapters/chapter_03.md:81, snapshots/cycle_01/chapters/chapter_03.md:211, and snapshots/cycle_01/chapters/chapter_03.md:349, and each replacement sentence introduces a specific sensory or behavioral cue; fail if two or more \"not X, not Y\" style formulas remain."
+    },
+    {
+      "finding_id": "ch03-prose-002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:59, snapshots/cycle_01/chapters/chapter_03.md:267, snapshots/cycle_01/chapters/chapter_03.md:329, snapshots/cycle_01/chapters/chapter_03.md:367, snapshots/cycle_01/chapters/chapter_03.md:434",
+      "problem": "Anika's counting stress-tell is used so frequently that it starts to read as mechanical token reuse rather than evolving interior process.",
+      "rewrite_direction": "In snapshots/cycle_01/chapters/chapter_03.md:329-389 and snapshots/cycle_01/chapters/chapter_03.md:399-434, keep counting in one strategic moment per scene, but shift other regulation beats to alternate modalities already established for Anika (touch/sound/body memory/self-assessment) so the coping texture varies.",
+      "acceptance_test": "Pass if each late-scene span at snapshots/cycle_01/chapters/chapter_03.md:329-389 and snapshots/cycle_01/chapters/chapter_03.md:399-434 contains at most one explicit counting action and at least two non-numeric interior regulation cues that affect behavior; fail if counting remains the dominant repeated mechanism in both spans."
+    }
+  ],
+  "summary": "Chapter 3 lands core canon beats (watch + notebook theft, grief-memory specificity, and setup into chapter 4) without clear continuity breaks, but it fails review on leverage and style control: the end section repeats similar control-log beats, the main argument diffuses too quickly, dialogue slips into abstract shared rhetoric, and prose shows repeated formula/tell overuse that reduces freshness."
+}

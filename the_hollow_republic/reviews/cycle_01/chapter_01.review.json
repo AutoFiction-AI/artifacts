@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_01",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch01_prose_001",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:81; snapshots/cycle_01/chapters/chapter_01.md:137; snapshots/cycle_01/chapters/chapter_01.md:323",
+      "problem": "The narration repeatedly falls into clipped fragment chains and standalone negation beats (for example, \"Not a bomb crew, then. Not only that.\", \"Widow, yes. Copyist, yes.\", and \"Not safe. Not good.\"). That construction appears more than twice, violates the constitution's ban on elliptical clipping in narration, and starts to read as an authored tic rather than earned pressure.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_01.md:81-82, snapshots/cycle_01/chapters/chapter_01.md:137-138, and snapshots/cycle_01/chapters/chapter_01.md:323-324, replace the fragment chains with grammatically complete sentences or full clauses that preserve Elise's close-third pressure without dropping articles, subjects, or auxiliaries. Keep this negation-fragment pattern to no more than one deliberate use in the whole chapter.",
+      "acceptance_test": "Reading the revised passages at snapshots/cycle_01/chapters/chapter_01.md:81-82, snapshots/cycle_01/chapters/chapter_01.md:137-138, and snapshots/cycle_01/chapters/chapter_01.md:323-324, each beat must be expressible in complete narration rather than standalone clipped fragments; if any of those spans still relies on back-to-back fragmentary negations such as \"Not ... . Not ... .\", this finding remains unresolved."
+    },
+    {
+      "finding_id": "ch01_craft_001",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:135; snapshots/cycle_01/chapters/chapter_01.md:271; snapshots/cycle_01/chapters/chapter_01.md:275",
+      "problem": "Elise deliberately hides one cipher slip in her glove lining, then later removes that glove under Clemence's scrutiny with no physical risk beat, evasive choice, or relocation of the paper. That turns a loaded concealment detail into dead inventory and leaves available scene tension uncaptured.",
+      "rewrite_direction": "Rework the setup/payoff across snapshots/cycle_01/chapters/chapter_01.md:135-136 and snapshots/cycle_01/chapters/chapter_01.md:271-276 so the glove-hidden slip materially participates in the interrogation. Either move the slip to a safer hiding place before Clemence orders the glove off, or stage the inspection so Elise feels the paper, chooses a hand strategically, or nearly gets caught.",
+      "acceptance_test": "In the revised hand-inspection sequence at snapshots/cycle_01/chapters/chapter_01.md:271-276, a reader must be able to track where the glove-hidden slip is and why Clemence does not find it. If Elise removes the glove and the scene still passes without any observable consequence from the concealed paper, this finding fails."
+    }
+  ],
+  "summary": "Chapter 01 lands its causal spine cleanly: Vautrin's coercion, Henri's arrest, and Clemence's provisional admission all match the boundary/context packs, the chapter stays in canonical past tense, and the principal voices remain distinct and style-bible-consistent. No continuity contradictions, example-line reuse, sanitization retreat, intimacy fade-to-black, or long interiority droughts were found. The review still fails craft and prose because the narration repeatedly uses constitution-banned clipped fragments, and a planted concealment detail in Elise's glove does not cash out as active scene tension when Clemence inspects her hand."
+}

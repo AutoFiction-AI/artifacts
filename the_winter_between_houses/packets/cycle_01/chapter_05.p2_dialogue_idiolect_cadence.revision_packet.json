@@ -1,0 +1,82 @@
+{
+  "acceptance_targets": [
+    "[ch05_f04] PASS if revised Peter dialogue in the confrontation block includes at least two disrupted-syntax turns and at least one contracted form under stress while retaining his formal baseline; FAIL if his lines remain uniformly polished legalistic statements across the whole exchange.",
+    "[ch05_f05] PASS if a reader can attribute at least 4 of 5 sampled lines from the revised call block to the correct speaker without dialogue tags; FAIL if Elsie and Keane remain interchangeable in syntax and lexical register."
+  ],
+  "chapter_id": "chapter_05",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if revised Peter dialogue in the confrontation block includes at least two disrupted-syntax turns and at least one contracted form under stress while retaining his formal baseline; FAIL if his lines remain uniformly polished legalistic statements across the whole exchange.",
+      "chapter_id": "chapter_05",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:21; snapshots/cycle_01/chapters/chapter_05.md:35; snapshots/cycle_01/chapters/chapter_05.md:181; snapshots/cycle_01/chapters/chapter_05.md:345",
+      "finding_id": "ch05_f04",
+      "problem": "Peter's low-contraction formality is character-true, but its near-constant full-sentence precision under peak pressure becomes stilted and rhythmically monotone, reducing conversational volatility.",
+      "rewrite_direction": "Revise Peter's highest-pressure turns at snapshots/cycle_01/chapters/chapter_05.md:181 and snapshots/cycle_01/chapters/chapter_05.md:323 and snapshots/cycle_01/chapters/chapter_05.md:345 to keep his controlling register while adding pressure fractures (interruptions, clipped self-corrections, occasional stressed contraction) so dominance reads lived, not scripted.",
+      "severity": "MEDIUM",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if a reader can attribute at least 4 of 5 sampled lines from the revised call block to the correct speaker without dialogue tags; FAIL if Elsie and Keane remain interchangeable in syntax and lexical register.",
+      "chapter_id": "chapter_05",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:185; snapshots/cycle_01/chapters/chapter_05.md:193; snapshots/cycle_01/chapters/chapter_05.md:203; snapshots/cycle_01/chapters/chapter_05.md:215",
+      "finding_id": "ch05_f05",
+      "problem": "Elsie and Keane converge into similar procedural checklist cadence during the phone sequence, weakening idiolect separation in a high-information scene.",
+      "rewrite_direction": "Differentiate call voices in snapshots/cycle_01/chapters/chapter_05.md:185 and snapshots/cycle_01/chapters/chapter_05.md:215: keep Elsie in practical domestic shorthand with stress compression, and push Keane toward threshold-based clinical framing plus consent-oriented reassurance.",
+      "severity": "MEDIUM",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "6473094223965899bb628a9426a4f8b6a6702f859958f201dc19f62da158650e",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on dialogue realism and voice separation: idiolect fidelity, leverage shifts, pressure cadence, anti-transcript behavior, natural colloquial texture (contractions/interruptions/slang when character-true), and pressure-true profanity usage per aesthetic risk policy.",
+    "key": "p2_dialogue_idiolect_cadence",
+    "label": "dialogue/idiolect/cadence fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "When edge cases arise, choose the more specific and potentially uncomfortable rendering if it is character-true and causally necessary. Intimacy, bodily risk, and moral compromise must be shown with concrete detail and aftermath, then integrated into later behavior rather than quarantined as a one-scene shock.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a draft abstracts pain, sex, coercion, blood, or economic shame at the exact moment consequence should be embodied, revise by replacing summary with physically and socially specific action tied to POV stakes.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High by default for spoken lines; uncontracted forms are marked choices for period formality, emphasis, or character-specific control behavior.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate structural engines across adjacent chapters: ensemble social scenes, inventory chapters, information-turn chapters, acted-upon pressure chapters, and aftermath chapters. Vary scene count (2 to 4), dialogue density, and interiority depth so consecutive chapters do not share the same pacing signature.",
+      "diction": "Period-authentic but readable contemporary English, favoring concrete nouns and precise verbs over lyrical abstraction.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person, alternating primarily between Elsie and Noreen, with occasional tightly limited deviations only when causal clarity requires it.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Sentence rhythm should alternate compressed pressure bursts with longer observational lines that carry social texture; avoid monotone paragraph cadence.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

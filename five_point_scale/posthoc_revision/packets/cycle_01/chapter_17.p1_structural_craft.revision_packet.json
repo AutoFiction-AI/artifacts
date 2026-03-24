@@ -1,0 +1,115 @@
+{
+  "acceptance_targets": [
+    "[R-12] Ch17's reference to Dani's nail-picking does not explain that the residue is from her murals or that she hasn't painted in years. The gesture stands without editorial annotation.",
+    "[R-13] Ch17's bathroom passage does not reference Priya's teaching career or prior bathroom breakdowns in schools. Her identity is established through her current role.",
+    "[C-02] Ch17's references to Bao's reading glasses use 'chain' (matching Ch4) and are not conflated with his badge lanyard.",
+    "[length_chapter_17_min_words] Chapter word count is >= 5000 while preserving heading contract."
+  ],
+  "chapter_id": "chapter_17",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Ch17's reference to Dani's nail-picking does not explain that the residue is from her murals or that she hasn't painted in years. The gesture stands without editorial annotation.",
+      "chapter_id": "chapter_17",
+      "cycle": 1,
+      "evidence": "Ch4 L698: first paint-under-nails; Ch5 L913: second; Ch13 L2632: third; Ch17 L3522: 'her left hand, the one not on the mouse, picking at the paint residue under her thumbnail, the residue from the murals she hadn't painted in years, the last physical trace, which she'd never fully scraped away'",
+      "finding_id": "R-12",
+      "problem": "Dani's paint-under-nails appears for the 4th time in Ch17 (L3522), now with an extended explanatory gloss ('the residue from the murals she hadn't painted in years, the last physical trace'). The reader has been shown this detail three times already.",
+      "rewrite_direction": "In Ch17 L3522, keep the gesture (picking at her thumbnail) but cut the explanatory clause about the residue's origin and significance. The sentence's force is in the context \u2014 Dani under threat, reverting to a comfort gesture \u2014 not in re-explaining the gesture's provenance.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch17's bathroom passage does not reference Priya's teaching career or prior bathroom breakdowns in schools. Her identity is established through her current role.",
+      "chapter_id": "chapter_17",
+      "cycle": 1,
+      "evidence": "Ch4 L676: 'Priya used to teach high school art'; Ch6 L1007: 'She'd mentioned once...that she'd taught high school art for twelve years'; Ch9 L1837-1845: full David Herrera teaching anecdote; Ch17 L3550: 'the team lead who'd left a teaching career after her body made this same sound in a different bathroom'",
+      "finding_id": "R-13",
+      "problem": "Priya's teaching background is stated or re-stated five-plus times: Ch4 L676, Ch6 L1007, Ch9 L1837 (full anecdote), Ch17 L3550, Ch18 L3647. By Ch17, 'left a teaching career' re-proves a biographical fact the reader has known since Ch4 and heard elaborated in Ch9.",
+      "rewrite_direction": "In Ch17 L3550, cut the teaching-career reference. The bathroom scene's power is in the sound itself and the recognition that Priya has broken. Identification can work through simpler means ('the voice he'd heard managing a floor for a year') without re-invoking her pre-Canopy career.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch17's references to Bao's reading glasses use 'chain' (matching Ch4) and are not conflated with his badge lanyard.",
+      "chapter_id": "chapter_17",
+      "cycle": 1,
+      "evidence": "Ch4 L640: 'He wore reading glasses on a thin chain'; Ch17 L3392: 'settling his reading glasses into the case on the lanyard'; Ch17 L3420: 'He smoothed his shirt, adjusted the lanyard'",
+      "finding_id": "C-02",
+      "problem": "Bao's reading glasses are attached to 'a thin chain' in Ch4 (L640) but to 'the lanyard' in Ch17 (L3392, L3420). A glasses chain and a lanyard are different objects; 'lanyard' is used elsewhere in the novel exclusively for badge/ID holders (Ch3 L375, Ch4 L622, Ch10 L1994). The continuity sheet specifies 'reading glasses on a chain.'",
+      "rewrite_direction": "In Ch17 L3392, change 'the lanyard' to 'the chain' or 'the thin chain.' In L3420, 'adjusted the lanyard' should refer to his badge lanyard (which he has separately) or be changed to 'adjusted the chain.'",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Chapter word count is >= 5000 while preserving heading contract.",
+      "chapter_id": "chapter_17",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_17.md:1",
+      "finding_id": "length_chapter_17_min_words",
+      "problem": "Chapter is below projected_min_words (4941 < 5000).",
+      "rewrite_direction": "Add causally necessary scene material that strengthens the chapter engine, increases pressure, and lands the planned state shift without filler.",
+      "severity": "HIGH",
+      "source": "length_guardrail",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "75b0f3a17724b0f126bce6f440059f8b57620b6d175e8af5ebe0486bc00bebf8",
+  "must_fix_count": 4,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This is a dark workplace comedy about AI, art, labor, and moral compromise. The novel's risks are not gratuitous \u2014 they emerge from the premise's pressures. Lean into: the specific humiliation of having your creative work rated by strangers on a five-point scale; the moral vertigo of befriending people you plan to betray; the comedy of a painter who is terrible at coding but too angry to quit; the economic desperation that makes gig work feel like a lifeline even when it is degrading; the creeping horror of watching your own vocabulary get overwritten by corporate evaluation language. Do not retreat from any of these. The biggest creative risk in this novel is not a single shocking scene but the sustained commitment to showing how a system designed to evaluate art eventually evaluates the evaluator \u2014 and finding that funny and devastating in the same breath.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism for difficult content \u2014 economic shame, professional humiliation, moral compromise, grief, attraction, anger \u2014 is a craft failure equal to bad prose. When Nick's poverty is the subject, the prose must name amounts, count coins, and show the specific texture of not having enough. When Nick's sabotage causes harm, the prose must not retreat into abstraction. When characters are attracted to each other, the prose must inhabit the attraction physically and specifically. The novel's comedy does not exempt it from emotional specificity; if anything, the comic register demands more precision because the reader needs to feel the real thing beneath the joke.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for all contemporary dialogue in this novel. Uncontracted forms should feel deliberate: emphasis, precision, formality, or a character slowing down to make sure they are heard. If a line reads stiffly and the character has no reason to be formal, contract it.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate high-intensity chapters with reflective or quiet ones. Vary scene count, dialogue density, and pacing across the book. Comic chapters should have quicker pacing and more dialogue; quiet chapters should breathe with interiority and observation. No two consecutive chapters should have the same structural rhythm: if Chapter 7 is a multi-scene public chapter with confrontations and revelations, Chapter 8 should be a focused, inward chapter with fewer scenes and more technical observation. The middle third should resist the temptation to escalate continuously \u2014 build in genuine rest, meals, transit, and moments of ordinary life between plot advances.",
+      "diction": "Contemporary American English. The base register is educated but not academic \u2014 a working painter's vocabulary, which includes both colloquial speech and precise visual-art terminology used without pretension. Tech-industry vocabulary enters through the workplace and should feel like a foreign language Nick gradually absorbs. The novel's linguistic arc: art vocabulary eroded by evaluation vocabulary eroded by corporate vocabulary, each layer burying the one before.",
+      "forbidden_drift_patterns": [
+        "Prestige-literary inflation: do not upgrade the register when the scene is ordinary. A man eating cereal should not sound like a man contemplating mortality unless the text earns the escalation.",
+        "Irony saturation: the novel's comic register must coexist with genuine emotional presence. Do not let narrative irony become the default lens through which every moment is filtered.",
+        "Competence porn: Nick is good at visual evaluation, but the prose should not admire his skill. Show what he sees, not how impressive it is that he sees it.",
+        "Rubric-language comedy overuse: the colonization of Nick's vocabulary by evaluation terms is a real psychological event, not a running gag. Use it with increasing naturalness, not escalating self-awareness.",
+        "Clipped narration: do not drop subjects, articles, or auxiliaries for rhythm. Short complete sentences are fine; telegraphic fragments are not.",
+        "Sentimentalizing the coworkers: Bao, Dani, Tommy, and Priya carry genuine weight, but the prose must not soften them into objects of pity. They are people with their own lives, not casualties arranged to make Nick feel bad.",
+        "Over-explaining the comedy: if something is funny, the prose should trust the reader to laugh without narratorial wink, pause, or commentary."
+      ],
+      "narrative_distance": "Close third person, locked to Nick Bray. The reader sees only what Nick sees, hears only what Nick hears. Nick's painter's eye shapes the narration: he notices light, color, spatial composition, anatomical detail, and surface texture before he notices emotion. His visual intelligence is the prose's dominant sensory engine. As the novel progresses, evaluation-rubric language infiltrates the narration \u2014 not as comic device but as genuine perceptual colonization. The rubric vocabulary should feel naturalized by mid-novel, not quoted.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Variable across chapters and within chapters. Comic passages: quicker, punchier, shorter sentences with abrupt turns. Emotional passages: longer sentences, more subordinate clauses, slowed observation. Work passages: flat, repetitive, industrial rhythm that mirrors the labor. Do not default to one rhythm. The prose should shift gear to match what the chapter is doing.",
+      "sensory_bias": [
+        "visual (dominant \u2014 Nick's painter's eye shapes all perception)",
+        "tactile (secondary \u2014 paint, keyboard, physical objects, temperature, texture of surfaces)",
+        "auditory (tertiary \u2014 the hum of monitors, Slack notifications, BART sounds, Oakland street noise)"
+      ]
+    }
+  }
+}

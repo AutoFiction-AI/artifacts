@@ -1,0 +1,69 @@
+{
+  "acceptance_targets": [
+    "[chapter_10_prose_02] Pass if a read across snapshots/cycle_01/chapters/chapter_10.md:47-48, snapshots/cycle_01/chapters/chapter_10.md:121-123, snapshots/cycle_01/chapters/chapter_10.md:163-165, snapshots/cycle_01/chapters/chapter_10.md:193-194, snapshots/cycle_01/chapters/chapter_10.md:225-226, snapshots/cycle_01/chapters/chapter_10.md:411-417 shows differentiated rhetorical movement rather than three or more repetitions of the same negation-clarification formula; fail if that construction still reads as the chapter's default emphasis move."
+  ],
+  "chapter_id": "chapter_10",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if a read across snapshots/cycle_01/chapters/chapter_10.md:47-48, snapshots/cycle_01/chapters/chapter_10.md:121-123, snapshots/cycle_01/chapters/chapter_10.md:163-165, snapshots/cycle_01/chapters/chapter_10.md:193-194, snapshots/cycle_01/chapters/chapter_10.md:225-226, snapshots/cycle_01/chapters/chapter_10.md:411-417 shows differentiated rhetorical movement rather than three or more repetitions of the same negation-clarification formula; fail if that construction still reads as the chapter's default emphasis move.",
+      "chapter_id": "chapter_10",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:47; snapshots/cycle_01/chapters/chapter_10.md:121; snapshots/cycle_01/chapters/chapter_10.md:163; snapshots/cycle_01/chapters/chapter_10.md:193; snapshots/cycle_01/chapters/chapter_10.md:225; snapshots/cycle_01/chapters/chapter_10.md:411; snapshots/cycle_01/chapters/chapter_10.md:417",
+      "finding_id": "chapter_10_prose_02",
+      "problem": "The same negation-and-correction sentence shape recurs well past the chapter's allowed tolerance: 'Not whether...,' 'Not one dramatic danger...,' 'Not mastermind evil...,' 'Not sharp exactly...,' 'Not dramatic...,' 'Not cruel. Not forgiving. Just exact.,' and 'Not wages. Not savings. Not help.' Once or twice this is emphatic; by the sixth and seventh appearance it reads like a tic and flattens the prose's rhythm.",
+      "rewrite_direction": "Vary the emphasis beats at snapshots/cycle_01/chapters/chapter_10.md:47, snapshots/cycle_01/chapters/chapter_10.md:121, snapshots/cycle_01/chapters/chapter_10.md:163, snapshots/cycle_01/chapters/chapter_10.md:193, snapshots/cycle_01/chapters/chapter_10.md:225, snapshots/cycle_01/chapters/chapter_10.md:411, and snapshots/cycle_01/chapters/chapter_10.md:417 so some of them land through image, syntax expansion, or direct thought instead of the repeated 'Not X / Not Y / Just-or-final-Z' pattern.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "f1e3114691e9f9e8a484b7d608d2efb18e56824f89af96b0cbe80bbd974b62b9",
+  "must_fix_count": 1,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on prose and copyedit finish: diction precision, rhythm control, sentence-level clarity, grammar, line-level polish without flattening style, and explicit aesthetic-risk audit (sanitization is the primary risk \u2014 do not soften or euphemize; push toward creative risk and specificity).",
+    "key": "p3_prose_copyedit",
+    "label": "prose/copyedit fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into embarrassment, erotic consequence, moral compromise, and the ugly arithmetic of poverty. When a scene turns on prejudice, bureaucracy, violence, or family betrayal, stay with the room long enough for the reader to feel what each choice costs. Resolve edge cases by choosing the more specific and less flattering truth unless it breaks established character logic.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If sex, racism, injury, debt, hunger, or shame is rendered abstractly, rewrite until the bodily detail, social pressure, and changed leverage are visible on the page.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high \u2014 contractions are the spoken norm across the novel; uncontracted forms should appear only for emphasis, ceremony, legal language, or character-specific pressure.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Vary scene count, dialogue density, and chapter motor across the book: pair public humiliation with private aftermath, follow argument chapters with information-turn or weather chapters, preserve at least three genuinely quiet domestic or communal stretches, and never let more than three chapters in a row hinge on debate followed by decisive action.",
+      "diction": "Contemporary and concrete, with Caribbean-American texture carried naturally in syntax and reference rather than in italicized glossary behavior; lyrical when earned, blunt when the room turns brutal.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third person that rotates by chapter; intimate enough for bodily shame and private contradiction, but alert to class performance, racial reading, and room dynamics.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Alternate lean pressure sentences with occasional longer image-bearing sentences; lyric lift should arrive at emotional turns, never as constant prestige haze.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

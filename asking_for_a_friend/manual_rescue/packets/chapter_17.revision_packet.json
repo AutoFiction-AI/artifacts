@@ -1,0 +1,53 @@
+{
+  "chapter_id": "chapter_17",
+  "cycle": 2,
+  "input_snapshot_hash": "022e5991aea6cd7366f4e0dde8ed6eef23991e0359bb086b9927e1df2b7ff585",
+  "findings": [
+    {
+      "finding_id": "the_way_construction_ch17",
+      "source": "manual_rescue/full_award_rescue.review.json",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.post_revision.md:3310",
+      "problem": "The 'the way [noun] [verb]' construction continues in the confrontation chapter (full-novel count: 127). Line 3310 uses 'the way a structure fails when you remove the load-bearing wall.' In a chapter whose power comes from raw, unmediated dialogue, the narrator's signature simile structure interposes an analytical frame between the reader and the emotional event — the same figurative move used in lower-stakes chapters.",
+      "rewrite_direction": "At snapshots/cycle_02/FINAL_NOVEL.post_revision.md:3310, replace the 'the way' simile with a more direct rendering. Strategy option: drop the simile entirely and render Simone's reaction through physical detail (body, breath, hands) rather than architectural analogy. The confrontation's power comes from the dialogue — the narration should amplify through restraint, not through the narrator's characteristic figurative device.",
+      "acceptance_test": "Line 3310 no longer uses 'the way' construction. The replacement conveys the same meaning through a different syntactic structure. The surrounding dialogue at lines 3305-3320 remains unchanged."
+    },
+    {
+      "finding_id": "architecture_calibrated_ch17",
+      "source": "manual_rescue/full_award_rescue.review.json",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.post_revision.md:3286, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:3300, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:3360, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:3404, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:3440, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:3444, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:3456, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:3464, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:3466",
+      "problem": "'Calibrat-' appears 6 times and metaphorical 'architecture' appears 4 times in the confrontation chapter — 10 system-design terms in 221 lines (~1 per 22 lines). The confrontation's dialogue is raw and human, but the narration between speeches keeps the narrator's analytical frame between the reader and the emotion. Line 3466 uses both words in a single sentence: 'the architecture would come down... no one would be there to calibrate a response.' The two most emotionally devastating pages of the novel are narrated in the language of UX design.",
+      "rewrite_direction": "Keep 1 instance of 'calibrated' — snapshots/cycle_02/FINAL_NOVEL.post_revision.md:3300 ('calibrated to the millisecond,' earned by the performance-reading context). Keep 1 instance of 'architecture' — snapshots/cycle_02/FINAL_NOVEL.post_revision.md:3464 ('emergency architecture,' a strong coinage). Replace the other 8 instances. At snapshots/cycle_02/FINAL_NOVEL.post_revision.md:3466, break the sentence and replace both 'architecture' and 'calibrate' with embodied language — what her body is doing, not what her metaphorical system is doing. In the confrontation's most heated passages (lines 3370-3470), replace system-design vocabulary with physical and psychological detail.",
+      "acceptance_test": "Revised chapter contains no more than 1 instance of 'calibrat-' and no more than 1 of metaphorical 'architecture.' Line 3466 no longer contains both words. The confrontation's emotional peaks (lines 3370-3470) rely on physical and psychological detail rather than system-design metaphor."
+    },
+    {
+      "finding_id": "face_still_default_ch17",
+      "source": "manual_rescue/full_award_rescue.review.json",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.post_revision.md:3374, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:3416",
+      "problem": "Faces 'going still,' 'not changing,' or 'settling' is the novel's default reaction shot for devastating information. Full-novel count: 5 instances at lines 1523, 2443, 2669, 3374, 3416. Two instances in the confrontation chapter concentrates the pattern precisely where varied reactions are most needed. Line 3374: 'Nora's face didn't change.' Line 3416: 'Simone went still. Not the performed stillness of attentive listening but the stillness of someone who understands that the next thing said will be unsurvivable.'",
+      "rewrite_direction": "Keep snapshots/cycle_02/FINAL_NOVEL.post_revision.md:3374 ('Nora's face didn't change' — the controlled non-reaction is characterologically earned for Nora's editorial-mode devastation). Replace snapshots/cycle_02/FINAL_NOVEL.post_revision.md:3416: instead of 'Simone went still,' render Simone's reaction through a physical detail specific to her character — her hands, her posture, a verbal stumble, or a detail from her established stress tells (performance sharpening, becoming warmer under pressure). The sentence's second half ('Not the performed stillness...') can be preserved if the opening verb is changed.",
+      "acceptance_test": "Line 3416 no longer uses 'went still,' 'going still,' or synonymous stillness construction. The replacement renders Simone's reaction through a Simone-specific physical or behavioral detail consistent with her character profile. Line 3374 is unchanged."
+    }
+  ],
+  "must_fix_count": 3,
+  "non_negotiables": [
+    "Line 3310 no longer uses 'the way [noun] [verb]' construction",
+    "No more than 1 instance of 'calibrat-' in the revised chapter; retain only 'calibrated to the millisecond' (near line 3300)",
+    "No more than 1 instance of metaphorical 'architecture' in the revised chapter; retain only 'emergency architecture' (near line 3464)",
+    "Line 3466 no longer contains both 'architecture' and 'calibrate'",
+    "Line 3374 ('Nora's face didn't change') remains unchanged",
+    "Line 3416 no longer uses 'went still,' 'going still,' or synonymous stillness construction",
+    "Surrounding dialogue at lines 3305-3320 remains unchanged"
+  ],
+  "acceptance_targets": [
+    "Line 3310: 'the way' simile replaced with physical detail or direct rendering",
+    "Eight of ten system-design terms (calibrat-/architecture) replaced across lines 3286, 3360, 3404, 3440, 3444, 3456, 3466",
+    "Confrontation's emotional peaks (lines 3370-3470) rely on physical and psychological detail rather than system-design metaphor",
+    "Line 3416: Simone's reaction rendered through character-specific physical or behavioral detail (hands, posture, verbal stumble, or established stress tells)"
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "chapter_id": "chapter_01",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH1-BOOKER-CONTINUITY-HOLLIS-001",
+      "source": "booker",
+      "severity": "HIGH",
+      "chapter_id": "chapter_01",
+      "evidence": "Continuity sheet limits Hollis on-page availability to chapters 9, 14, 17-18, but chapter text places him at the scene in chapter 1: snapshots/cycle_02/chapters/chapter_01.md:249.",
+      "problem": "Canonical continuity contradiction: Deputy Hollis is functionally present in chapter 1 despite being unavailable until chapter 9 in the continuity pack. This destabilizes downstream reveal timing and weakens planned escalation.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_01.md:249, remove direct Hollis attribution and replace with a non-canonical deputy placeholder (e.g., unnamed deputy or Deputy Kane already established at snapshots/cycle_02/chapters/chapter_01.md:205 and snapshots/cycle_02/chapters/chapter_01.md:253), or update the continuity sheet canon if Hollis must be present from chapter 1.",
+      "acceptance_test": "PASS if the revised line at snapshots/cycle_02/chapters/chapter_01.md:249 no longer names or implies Hollis as physically present in chapter 1 (or canon is explicitly updated to include chapter 1); FAIL if 'Hollis' remains scene-active in chapter 1 without canon change."
+    },
+    {
+      "finding_id": "CH1-CRAFT-SANITIZATION-INTERVIEW-MONTAGE-002",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_01",
+      "evidence": "The intimidation-heavy witness phase is compressed into summary: snapshots/cycle_02/chapters/chapter_01.md:169; snapshots/cycle_02/chapters/chapter_01.md:171; snapshots/cycle_02/chapters/chapter_01.md:191.",
+      "problem": "Sanitization drift: the text reports collective fear/probable coercion instead of staging one full early interview where pressure, evasion, and bodily consequence are rendered in-scene. Procedural summary replaces dramatic presence at a moment the chapter premise requires specificity.",
+      "rewrite_direction": "Expand the compressed block around snapshots/cycle_02/chapters/chapter_01.md:169, snapshots/cycle_02/chapters/chapter_01.md:171, and snapshots/cycle_02/chapters/chapter_01.md:191 by inserting one complete pre-Calvin interview that dramatizes fear mechanics (who is watching, what the witness fears losing, how speech changes under threat) before the Calvin turn at snapshots/cycle_02/chapters/chapter_01.md:193.",
+      "acceptance_test": "PASS if, between snapshots/cycle_02/chapters/chapter_01.md:169 and snapshots/cycle_02/chapters/chapter_01.md:193, at least one witness interview is rendered as a full scene (minimum three back-and-forth lines plus embodied fear detail and a leverage shift); FAIL if the section remains montage-level summary."
+    },
+    {
+      "finding_id": "CH1-CRAFT-TIMIDITY-AFTERMATH-CUTAWAY-003",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "After explicit lynching threat, the narrative quickly shifts to process cadence: snapshots/cycle_02/chapters/chapter_01.md:163; snapshots/cycle_02/chapters/chapter_01.md:167; snapshots/cycle_02/chapters/chapter_01.md:169.",
+      "problem": "Timidity: the prose establishes immediate racist violence risk, then retreats into procedural transition without dwelling in immediate emotional/operational consequence for threatened workers in that beat.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_01.md:165, snapshots/cycle_02/chapters/chapter_01.md:167, and snapshots/cycle_02/chapters/chapter_01.md:169, add a short consequence beat before the noon transition showing immediate protective action and witness condition (e.g., Terrence's state, deputy response failure, Lena's tactical adjustment) so the threat lands as lived reality, not bridge text.",
+      "acceptance_test": "PASS if the section between snapshots/cycle_02/chapters/chapter_01.md:163 and snapshots/cycle_02/chapters/chapter_01.md:169 includes an explicit immediate consequence tied to the threat (observable worker reaction plus concrete protective or failed protective action); FAIL if it still jumps directly from threat to generic canvass setup."
+    },
+    {
+      "finding_id": "CH1-DIALOGUE-IDIOLECT-CONVERGENCE-004",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "Multiple speakers in different class/role positions deliver similarly polished policy-rhetorical constructions under pressure: snapshots/cycle_02/chapters/chapter_01.md:179; snapshots/cycle_02/chapters/chapter_01.md:229; snapshots/cycle_02/chapters/chapter_01.md:283; snapshots/cycle_02/chapters/chapter_01.md:285.",
+      "problem": "Voice separation drift: distinct speakers (union steward, mechanic, detective, PIO) converge toward the same highly composed argumentative cadence, reducing idiolect contrast required by the style bible.",
+      "rewrite_direction": "Rework lines at snapshots/cycle_02/chapters/chapter_01.md:179, snapshots/cycle_02/chapters/chapter_01.md:229, snapshots/cycle_02/chapters/chapter_01.md:283, and snapshots/cycle_02/chapters/chapter_01.md:285 so each speaker carries distinct rhythm/lexicon: workers should skew concrete and local under stress; official messaging can stay polished; Lena should oscillate procedural precision with clipped declaratives per her stress profile.",
+      "acceptance_test": "PASS if those four lines read with clearly separable registers (worker lines materially different from command/PIO diction, and Lena's line mixes procedural content with at least one clipped hard beat); FAIL if they remain interchangeable in syntax and rhetorical shape."
+    },
+    {
+      "finding_id": "CH1-PROSE-RECURRING-FORMULA-APHORISM-005",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "Repeated two-beat aphoristic closure pattern appears multiple times: snapshots/cycle_02/chapters/chapter_01.md:97; snapshots/cycle_02/chapters/chapter_01.md:349; snapshots/cycle_02/chapters/chapter_01.md:367.",
+      "problem": "Recurring sentence-shape tic (paired short declaratives as thematic stamp) starts to feel formulaic rather than earned, flattening late-chapter musical variation.",
+      "rewrite_direction": "Revise at least two of the beats at snapshots/cycle_02/chapters/chapter_01.md:97, snapshots/cycle_02/chapters/chapter_01.md:349, and snapshots/cycle_02/chapters/chapter_01.md:367 into structurally different closures (e.g., one sensory-embedded sentence, one action-anchored beat) while preserving meaning.",
+      "acceptance_test": "PASS if no more than one of those three locations retains the same two-sentence aphoristic closure shape; FAIL if two or more still use the identical paired-short-declarative cadence."
+    },
+    {
+      "finding_id": "CH1-PROSE-RECURRING-FORMULA-ONCE-GESTURE-006",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "Micro-gesture + 'once' construction repeats beyond stylistic coincidence: snapshots/cycle_02/chapters/chapter_01.md:27; snapshots/cycle_02/chapters/chapter_01.md:101; snapshots/cycle_02/chapters/chapter_01.md:211; snapshots/cycle_02/chapters/chapter_01.md:299.",
+      "problem": "Mechanical repetition: the same modifier pattern recurs enough to register as autopilot prose rather than intentional rhythm.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_01.md:27, snapshots/cycle_02/chapters/chapter_01.md:101, snapshots/cycle_02/chapters/chapter_01.md:211, and snapshots/cycle_02/chapters/chapter_01.md:299, vary at least three instances with non-'once' physical beats (or remove the beat where redundant) so gesture language stops clustering on one template.",
+      "acceptance_test": "PASS if within those four target lines the word 'once' appears in at most one gesture beat after revision; FAIL if two or more gesture beats still rely on the same 'once' template."
+    }
+  ],
+  "summary": "Chapter 1 lands core premise and procedural stakes, but it fails review due to one HIGH continuity contradiction, a HIGH sanitization-by-summary craft miss in the witness-pressure section, and cumulative dialogue/prose formula drift that reduces voice separation and stylistic freshness.",
+  "coverage_scene_ids": [
+    "gin_scene_initial_processing",
+    "witness_interview_block",
+    "sheriff_briefing_directive"
+  ]
+}

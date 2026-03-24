@@ -1,0 +1,66 @@
+{
+  "chapter_id": "chapter_09",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_09-F001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:423; snapshots/cycle_01/chapters/chapter_09.md:429; snapshots/cycle_01/chapters/chapter_09.md:439; snapshots/cycle_01/chapters/chapter_09.md:495",
+      "problem": "Continuity contradiction: Ada has a multi-turn on-page intervention in this chapter even though canonical availability in outline/continuity_sheet.json places her on-page in chapters 01, 04, 05, 08, 10, 15, and 18. This creates a canon-state mismatch.",
+      "rewrite_direction": "Revise the support beat starting at snapshots/cycle_01/chapters/chapter_09.md:423 and ending at snapshots/cycle_01/chapters/chapter_09.md:496 so the real-time de-escalation call is handled by a chapter-09-available character (for example Luis), or defer Ada's live call to chapter_10 while keeping only a brief text here. Preserve the sobriety check and leverage warning function.",
+      "acceptance_test": "PASS if, between snapshots/cycle_01/chapters/chapter_09.md:423 and snapshots/cycle_01/chapters/chapter_09.md:496, Ada is not carrying a multi-exchange live conversation unless her canon availability is explicitly updated elsewhere; FAIL if Ada still delivers the same extended real-time coaching while continuity_sheet availability remains unchanged."
+    },
+    {
+      "finding_id": "chapter_09-F002",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:509; snapshots/cycle_01/chapters/chapter_09.md:511; snapshots/cycle_01/chapters/chapter_09.md:523",
+      "problem": "Sanitization drift via summary replacing scene: at peak fallout pressure, the chapter moves into a generic comment chorus (\"This is brave\", \"This is irresponsible\", etc.) instead of staging one concrete social consequence with a named relationship or stakeholder. Tension diffuses into abstraction.",
+      "rewrite_direction": "Replace most of the montage starting at snapshots/cycle_01/chapters/chapter_09.md:509 and ending at snapshots/cycle_01/chapters/chapter_09.md:524 with one specific incoming message/call from a named person with actual leverage (family, sponsor, landlord, counsel, or donor-facing operator) and show Marisol's immediate embodied response and decision in-scene.",
+      "acceptance_test": "PASS if, between snapshots/cycle_01/chapters/chapter_09.md:509 and snapshots/cycle_01/chapters/chapter_09.md:524, there is at least one named-source consequence (not anonymous feed noise) plus Marisol's immediate action/reaction tied to that consequence; FAIL if the section remains primarily a generic social-media comment list."
+    },
+    {
+      "finding_id": "chapter_09-F003",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:79; snapshots/cycle_01/chapters/chapter_09.md:127; snapshots/cycle_01/chapters/chapter_09.md:181; snapshots/cycle_01/chapters/chapter_09.md:453",
+      "problem": "Contraction/register drift for Marisol: a high-contraction character repeatedly defaults to uncontracted imperatives (\"Do not ...\") in high-pressure speech. The pattern reads stilted and weakens spoken realism under stress.",
+      "rewrite_direction": "Rework Marisol's imperative lines at snapshots/cycle_01/chapters/chapter_09.md:79, snapshots/cycle_01/chapters/chapter_09.md:127, snapshots/cycle_01/chapters/chapter_09.md:181, and snapshots/cycle_01/chapters/chapter_09.md:453 toward contraction-default phrasing unless a specific emphatic beat requires one full form.",
+      "acceptance_test": "PASS if at least 3 of the 4 cited Marisol imperatives are contracted (for example \"don't\") and any remaining full-form line is clearly motivated by emphasis/formality in adjacent text; FAIL if most cited lines remain uncontracted without explicit dramatic rationale."
+    },
+    {
+      "finding_id": "chapter_09-F004",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:191; snapshots/cycle_01/chapters/chapter_09.md:192; snapshots/cycle_01/chapters/chapter_09.md:507",
+      "problem": "Recurring prose tic: the repeated \"She wanted to ...\" construction appears more than twice at climactic stress points, flattening cadence and signaling autopilot repetition.",
+      "rewrite_direction": "Vary the impulse-rendering syntax at snapshots/cycle_01/chapters/chapter_09.md:191, snapshots/cycle_01/chapters/chapter_09.md:192, and snapshots/cycle_01/chapters/chapter_09.md:507 by converting at least two of the repeated desire clauses into concrete action, sensory perception, or free-indirect thought with different sentence architecture.",
+      "acceptance_test": "PASS if, across snapshots/cycle_01/chapters/chapter_09.md:191, snapshots/cycle_01/chapters/chapter_09.md:192, and snapshots/cycle_01/chapters/chapter_09.md:507, no more than one sentence keeps the exact \"She wanted to\" opening and the emotional escalation remains legible; FAIL if the repeated opening still dominates both moments."
+    },
+    {
+      "finding_id": "chapter_09-F005",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:355",
+      "problem": "Checklist-like meta phrasing (\"Legal nouns first, Marisol thought. Stress tell.\") over-literalizes character calibration and briefly breaks diegetic immersion.",
+      "rewrite_direction": "Rewrite snapshots/cycle_01/chapters/chapter_09.md:355 to show Nora's stress pattern through observable diction and Marisol's embodied recognition without explicit analytic labeling (remove the direct label \"Stress tell\").",
+      "acceptance_test": "PASS if the revised sentence at snapshots/cycle_01/chapters/chapter_09.md:355 preserves Nora's legal-language escalation while eliminating explicit diagnostic label language; FAIL if the narration still names the pattern as a meta tag."
+    }
+  ],
+  "summary": "Chapter 09 lands its causal spine and carries consequence cleanly into chapter 10, but it fails craft/dialogue/prose due to a high-severity continuity mismatch, a high-severity summary-level sanitization retreat at the fallout peak, contraction-level dialogue stiffness in Marisol's pressure speech, and repeated sentence formulas that flatten line-level texture.",
+  "coverage_scene_ids": [
+    "roof_garden_interview",
+    "sunset_park_publication_fallout"
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "acceptance_targets": [
+    "[chapter_16_booker_001] FAIL if the revised passages at lines 143, 179, 361, and 405 still explain the scene's meaning in abstract summary terms. PASS only if at least three of those four moments now land through concrete behavior, sensation, or image, allowing the reader to infer kinship/family/grief stakes without an explicit moral gloss.",
+    "[chapter_16_prose_001] FAIL if the revised cited passages still stack the same `like a man ...` and `There was no ...` templates at emotional pivots. PASS only if the rewritten lines reduce those repeated templates to no more than two total uses across the cited spans and each cited beat reads with distinct syntax when the chapter is read straight through."
+  ],
+  "chapter_id": "chapter_16",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "FAIL if the revised passages at lines 143, 179, 361, and 405 still explain the scene's meaning in abstract summary terms. PASS only if at least three of those four moments now land through concrete behavior, sensation, or image, allowing the reader to infer kinship/family/grief stakes without an explicit moral gloss.",
+      "chapter_id": "chapter_16",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_16.md:143; snapshots/cycle_02/chapters/chapter_16.md:179; snapshots/cycle_02/chapters/chapter_16.md:361; snapshots/cycle_02/chapters/chapter_16.md:405",
+      "finding_id": "chapter_16_booker_001",
+      "problem": "Several major emotional pivots arrive with explicit thematic interpretation after the scene has already done the work. The chapter keeps translating mud, labor, kinship, and grief into stated meaning instead of trusting the concrete action to carry it, which keeps the piece below Booker-level pressure and ambiguity.",
+      "rewrite_direction": "Rework the interpretive glosses in snapshots/cycle_02/chapters/chapter_16.md:143, snapshots/cycle_02/chapters/chapter_16.md:179, snapshots/cycle_02/chapters/chapter_16.md:361, and snapshots/cycle_02/chapters/chapter_16.md:405 so at least three of those beats end on Della's observed action, bodily sensation, or another character's behavior rather than a thesis sentence about kinship, family, peace, or grief. Keep the meaning local to the scene instead of paraphrasing it for the reader.",
+      "severity": "MEDIUM",
+      "source": "booker",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "FAIL if the revised cited passages still stack the same `like a man ...` and `There was no ...` templates at emotional pivots. PASS only if the rewritten lines reduce those repeated templates to no more than two total uses across the cited spans and each cited beat reads with distinct syntax when the chapter is read straight through.",
+      "chapter_id": "chapter_16",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_16.md:17; snapshots/cycle_02/chapters/chapter_16.md:35; snapshots/cycle_02/chapters/chapter_16.md:73; snapshots/cycle_02/chapters/chapter_16.md:143; snapshots/cycle_02/chapters/chapter_16.md:185; snapshots/cycle_02/chapters/chapter_16.md:247; snapshots/cycle_02/chapters/chapter_16.md:263; snapshots/cycle_02/chapters/chapter_16.md:289",
+      "finding_id": "chapter_16_prose_001",
+      "problem": "The chapter develops visible fallback sentence formulas at its emotional hinges, especially repeated `like a man ...` similes and repeated `There was no ...` negation openings. Each individual use is serviceable, but in aggregate they read as a prose tic rather than deliberate variation, flattening the voice just when the chapter needs maximum freshness.",
+      "rewrite_direction": "Vary the sentence architecture in snapshots/cycle_02/chapters/chapter_16.md:17, snapshots/cycle_02/chapters/chapter_16.md:35, snapshots/cycle_02/chapters/chapter_16.md:73, snapshots/cycle_02/chapters/chapter_16.md:143, snapshots/cycle_02/chapters/chapter_16.md:185, snapshots/cycle_02/chapters/chapter_16.md:247, snapshots/cycle_02/chapters/chapter_16.md:263, and snapshots/cycle_02/chapters/chapter_16.md:289. Replace at least two of the three `like a man ...` constructions and at least three of the `There was no ...` openings with fresher, materially specific phrasing that does not rely on the same syntactic template.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "7564fba764f434ea2f085f4c2c91e58246b932f1d55bcdf38c81d68601029b4f",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into morally compromised caretaking, the bureaucratic brutality of naming, and the physical labor of moving the dead. When an edge case appears, prefer the detail a witness would remember over the phrasing a polite narrator would use. Let tenderness exist inside harsh material without cleaning the harshness off.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If childbirth, exhumation, poverty, sexual history, bodily decay, or violence enters a scene, render it through specific sensation and consequence; summarizing away the hard fact counts as a failed pass, not tasteful restraint.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High overall; contractions are the norm across dialogue, with fuller forms reserved for class performance, legal formality, deliberate emphasis, or a character trying not to lose composure.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate public labor chapters with quieter domestic or inventory chapters, vary scene count and dialogue density, let some chapters turn on information or paperwork rather than confrontation, and ensure no two consecutive chapters share the same dominant mechanism, pace, or emotional temperature.",
+      "diction": "Plainspoken historical Appalachian-Southern English without caricature; concrete, unsentimental, regionally grounded, and alert to how legal language clashes with lived speech.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third centered on Della Bledsoe, intimate enough to track bodily memory and evasive thought while never slipping into other characters' interior monologue as fact",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Alternate muscular work-sentence compression with longer accumulating sentences that carry memory, atmosphere, and moral weight; let cadence tighten in hearings and exhumations, then widen in domestic or reflective passages.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

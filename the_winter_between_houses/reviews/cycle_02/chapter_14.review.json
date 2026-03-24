@@ -1,0 +1,73 @@
+{
+  "chapter_id": "chapter_14",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_14_f001",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:233; snapshots/cycle_02/chapters/chapter_14.md:237; snapshots/cycle_02/chapters/chapter_14.md:245; snapshots/cycle_02/chapters/chapter_14.md:249; snapshots/cycle_02/chapters/chapter_14.md:263; snapshots/cycle_02/chapters/chapter_14.md:297",
+      "problem": "The Peter-arrival confrontation resolves as a rhetorical pile-on rather than a contested power struggle: he is neutralized almost immediately, so the scene loses uncertainty and Booker-level moral pressure at the exact point it should peak.",
+      "rewrite_direction": "Rebuild the leverage turn across snapshots/cycle_02/chapters/chapter_14.md:227 through snapshots/cycle_02/chapters/chapter_14.md:263 and snapshots/cycle_02/chapters/chapter_14.md:289 through snapshots/cycle_02/chapters/chapter_14.md:298 so Peter makes one concrete move that alters immediate stakes (delay, access, or social threat) before being countered. Keep his formal register, but force a real cost for others before control shifts away from him.",
+      "acceptance_test": "PASS if the revised 227-263 block contains one Peter action that materially complicates transfer/scene control and one counteraction that pays a visible cost (time, risk, exposure) before he yields; FAIL if the exchange remains a sequence of verbal put-downs with no temporary leverage change."
+    },
+    {
+      "finding_id": "chapter_14_f002",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:219; snapshots/cycle_02/chapters/chapter_14.md:235; snapshots/cycle_02/chapters/chapter_14.md:257",
+      "problem": "Procedural report language takes over key beats, crowding embodied consequence. The chapter briefly reads like incident documentation instead of lived emergency aftermath.",
+      "rewrite_direction": "In snapshots/cycle_02/chapters/chapter_14.md:219 through snapshots/cycle_02/chapters/chapter_14.md:239 and snapshots/cycle_02/chapters/chapter_14.md:257, trim list-like medical/legal recitation and interleave immediate bodily and social effects (how Noreen, Elsie, and the room respond in real time) between each data point.",
+      "acceptance_test": "PASS if no two consecutive turns in lines 219-239 are pure procedural data and each factual update is followed by an observable physical or relational consequence in-scene; FAIL if report cadence remains uninterrupted for multiple turns."
+    },
+    {
+      "finding_id": "chapter_14_f003",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:251; snapshots/cycle_02/chapters/chapter_14.md:255; snapshots/cycle_02/chapters/chapter_14.md:263; snapshots/cycle_02/chapters/chapter_14.md:291",
+      "problem": "During the hallway confrontation, Keane, Arthur, and Elsie converge into similarly polished, epigram-like retorts. Idiolect separation blurs under pressure.",
+      "rewrite_direction": "Revoice the exchange in snapshots/cycle_02/chapters/chapter_14.md:251 through snapshots/cycle_02/chapters/chapter_14.md:263 and snapshots/cycle_02/chapters/chapter_14.md:287 through snapshots/cycle_02/chapters/chapter_14.md:295: Arthur should speak task-first in plain workman rhythm, Elsie in concrete domestic-cost/body terms, and Keane in clipped procedural imperatives. Preserve contractions for high/moderate-contraction characters unless emphasis demands otherwise.",
+      "acceptance_test": "PASS if, after removing dialogue tags in lines 251-295, each of the three speakers remains distinguishable by rhythm and diction, with at least one contraction in each non-Peter speaker's key turn; FAIL if the lines still read as interchangeable polished comebacks."
+    },
+    {
+      "finding_id": "chapter_14_f004",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:233; snapshots/cycle_02/chapters/chapter_14.md:237; snapshots/cycle_02/chapters/chapter_14.md:249; snapshots/cycle_02/chapters/chapter_14.md:257; snapshots/cycle_02/chapters/chapter_14.md:303; snapshots/cycle_02/chapters/chapter_14.md:323",
+      "problem": "Peter's speech over-relies on legal/administrative tokens (consent, legal right, assigned status, report, names/dates, ledger framing) often enough to feel mechanically generated from his style profile rather than dynamically spoken.",
+      "rewrite_direction": "In snapshots/cycle_02/chapters/chapter_14.md:233 through snapshots/cycle_02/chapters/chapter_14.md:263 and snapshots/cycle_02/chapters/chapter_14.md:303 through snapshots/cycle_02/chapters/chapter_14.md:323, keep one formal control line per beat but add stress-tell variation from the style bible (tight formality tipping into contempt or rupture) plus physical leakage under stress.",
+      "acceptance_test": "PASS if Peter has at least one line in each target block that begins formally and then fractures into personal contempt, and no more than one line per block is purely paperwork/legal diction with no emotional leakage; FAIL if bureaucratic phrasing dominates nearly every Peter turn."
+    },
+    {
+      "finding_id": "chapter_14_f005",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:3; snapshots/cycle_02/chapters/chapter_14.md:7; snapshots/cycle_02/chapters/chapter_14.md:129; snapshots/cycle_02/chapters/chapter_14.md:185; snapshots/cycle_02/chapters/chapter_14.md:199; snapshots/cycle_02/chapters/chapter_14.md:221; snapshots/cycle_02/chapters/chapter_14.md:233; snapshots/cycle_02/chapters/chapter_14.md:271; snapshots/cycle_02/chapters/chapter_14.md:287",
+      "problem": "A recurring 'like' simile template appears repeatedly across the chapter, which turns figurative texture into a noticeable formula instead of a selective craft choice.",
+      "rewrite_direction": "Target snapshots/cycle_02/chapters/chapter_14.md:105 through snapshots/cycle_02/chapters/chapter_14.md:233 first, preserving only the strongest comparisons and converting the rest to direct sensory images or stronger verbs without comparative scaffolding.",
+      "acceptance_test": "PASS if revised lines 105-233 contain no more than two 'like'-based similes and add at least three direct-image replacements grounded in touch/sound/spatial pressure; FAIL if repeated comparative templates still drive most imagery in that span."
+    },
+    {
+      "finding_id": "chapter_14_f006",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:227; snapshots/cycle_02/chapters/chapter_14.md:229; snapshots/cycle_02/chapters/chapter_14.md:231; snapshots/cycle_02/chapters/chapter_14.md:233; snapshots/cycle_02/chapters/chapter_14.md:235; snapshots/cycle_02/chapters/chapter_14.md:237; snapshots/cycle_02/chapters/chapter_14.md:239; snapshots/cycle_02/chapters/chapter_14.md:241; snapshots/cycle_02/chapters/chapter_14.md:243; snapshots/cycle_02/chapters/chapter_14.md:245",
+      "problem": "There is a 10-paragraph run in the confrontation block with no focalizer interiority, so the chapter briefly flattens into externally observed dialogue/action instead of close-third experience.",
+      "rewrite_direction": "In snapshots/cycle_02/chapters/chapter_14.md:227 through snapshots/cycle_02/chapters/chapter_14.md:245, insert interior beats from Elsie or Noreen (thought, sensation, memory, or self-assessment) at pressure pivots without breaking scene momentum.",
+      "acceptance_test": "PASS if revised lines 227-245 include at least two explicit interior beats from Elsie or Noreen, including one body-level sensation under confrontation pressure; FAIL if the passage remains entirely externalized."
+    }
+  ],
+  "summary": "Chapter 14 lands core continuity beats (preterm delivery, neonatal transfer, maternal hemorrhage survival) and stays in canonical past tense, with no direct continuity contradictions detected. However, unresolved medium-severity issues in confrontation design, dialogue differentiation, procedural over-reporting, repeated simile construction, and a 10-paragraph interiority drought keep it below pass level for Booker, craft, dialogue, and prose.",
+  "coverage_scene_ids": []
+}

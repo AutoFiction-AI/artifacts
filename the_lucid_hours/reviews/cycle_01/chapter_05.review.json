@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_05",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_05_dialogue_01",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:159; snapshots/cycle_01/chapters/chapter_05.md:215",
+      "problem": "Harry's decisive leverage line near-verbatim echoes a calibration-only style-bible example (\"You already decided, or you'd have called the police\"), then gets repeated in Carmen's interior recall. Because this lands at the chapter's hinge, the reuse reads as voice-template leakage rather than a freshly authored turn, damaging voice integrity on first read.",
+      "rewrite_direction": "Replace the line at snapshots/cycle_01/chapters/chapter_05.md:159 and the callback at snapshots/cycle_01/chapters/chapter_05.md:215 with new wording grounded in the specific evidence of this scene: Carmen came to the TV room, shut the doors, sat down, and bargained for terms. Keep Harry's leverage shift, but make him diagnose her through those observed actions instead of reusing the calibration phrasing.",
+      "acceptance_test": "Pass if the revised lines at snapshots/cycle_01/chapters/chapter_05.md:159 and snapshots/cycle_01/chapters/chapter_05.md:215 still convey that Harry sees Carmen as already compromised, but neither line uses the phrase \"You already decided\" or the structure \"or you'd have called the police\"; fail if the pivot still reads like a copied calibration line."
+    },
+    {
+      "finding_id": "chapter_05_dialogue_02",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:113; snapshots/cycle_01/chapters/chapter_05.md:117; snapshots/cycle_01/chapters/chapter_05.md:139; snapshots/cycle_01/chapters/chapter_05.md:157",
+      "problem": "The confrontation repeatedly tips into composed dialogue. Harry gets thesis-speech, aphoristic summary, mini-speech diagnosis, and mic-drop cadence in the same scene: \"The optics are a prosecutor's nightmare and a headline writer's dream,\" \"That's the whole architecture,\" and the final diagnostic line all sound polished enough to be written-about rather than spoken-through. The pressure stays legible, but the exchange loses overheard mess and makes Harry feel more like an argument-delivery system than a man improvising under exposure.",
+      "rewrite_direction": "Rework Harry's speech blocks at snapshots/cycle_01/chapters/chapter_05.md:113, snapshots/cycle_01/chapters/chapter_05.md:117, snapshots/cycle_01/chapters/chapter_05.md:139, and snapshots/cycle_01/chapters/chapter_05.md:157 into more interruptible, reactive turns. Keep the legal and facility stakes, but break the polished summaries into shorter beats, let Carmen force clarification at least twice, and let one or two implications remain implied instead of named in thesis language.",
+      "acceptance_test": "Pass if the revised confrontation still communicates Harry's leverage at snapshots/cycle_01/chapters/chapter_05.md:113, snapshots/cycle_01/chapters/chapter_05.md:117, snapshots/cycle_01/chapters/chapter_05.md:139, and snapshots/cycle_01/chapters/chapter_05.md:157, but no speech block there lands as a self-contained slogan or mini-essay longer than three sentences, and at least two beats show interruption, forced clarification, or incomplete uptake before Carmen agrees to the week; fail if the same stretches still read as polished set speeches."
+    },
+    {
+      "finding_id": "chapter_05_craft_01",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:213; snapshots/cycle_01/chapters/chapter_05.md:221",
+      "problem": "The parking-lot coda overstates the chapter after the TV-room scene has already landed its turn. By the time Harry corners Carmen into \"One week,\" the chapter has made her compromise legible. The later run of abstract diagnosis - \"She had come to negotiate\" and \"the week wasn't a deadline. It was a door\" - translates the same realization into cleaner thematic language instead of buying a new proof, cost, or decision. That is overstatement after arrival, and it softens the ending rather than sharpening it.",
+      "rewrite_direction": "Compress or replace the interpretive material at snapshots/cycle_01/chapters/chapter_05.md:213 and snapshots/cycle_01/chapters/chapter_05.md:221. Preserve the state shift, but spend the parking-lot space on a consequence only this aftermath can provide: an aborted hotline call, a lie she now has to prepare for home, or another concrete action/image that shows the compromise without paraphrasing it.",
+      "acceptance_test": "Pass if the revised ending around snapshots/cycle_01/chapters/chapter_05.md:213 through snapshots/cycle_01/chapters/chapter_05.md:225 still leaves Carmen unmistakably compromised, but the coda adds one new consequence or decision not already explicit in snapshots/cycle_01/chapters/chapter_05.md:159 through snapshots/cycle_01/chapters/chapter_05.md:172 and does not rely on abstract labels such as \"negotiate,\" \"deadline,\" or \"door\" to explain the turn; fail if the coda mainly rephrases what the TV-room scene already proved."
+    },
+    {
+      "finding_id": "chapter_05_prose_01",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:45; snapshots/cycle_01/chapters/chapter_05.md:89; snapshots/cycle_01/chapters/chapter_05.md:161; snapshots/cycle_01/chapters/chapter_05.md:203",
+      "problem": "The chapter starts to feel profile-driven rather than scene-found. Carmen's badge becomes the stress tell four separate times, and the prose repeatedly leans on the same analytic comparison scaffold elsewhere in the chapter (\"the way she imagined,\" \"the way he waited,\" \"quiet the way a number...\"). Because the style bible already tags badge-fidgeting and precise stress behavior as Carmen defaults, their repeated reuse here reads less like earned recurrence and more like mechanical execution of a character sheet.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_05.md:45, snapshots/cycle_01/chapters/chapter_05.md:89, snapshots/cycle_01/chapters/chapter_05.md:161, and snapshots/cycle_01/chapters/chapter_05.md:203, keep only the single strongest badge beat and replace the others with different physical or sensory manifestations of stress tied to the exact moment. Also vary or cut the repeated comparison scaffolds around snapshots/cycle_01/chapters/chapter_05.md:43, snapshots/cycle_01/chapters/chapter_05.md:93, and snapshots/cycle_01/chapters/chapter_05.md:157 so the prose stops explaining pressure through the same sentence shape.",
+      "acceptance_test": "Pass if only one of the badge-manipulation beats at snapshots/cycle_01/chapters/chapter_05.md:45, snapshots/cycle_01/chapters/chapter_05.md:89, snapshots/cycle_01/chapters/chapter_05.md:161, and snapshots/cycle_01/chapters/chapter_05.md:203 remains in the revision, and at least two of the cited comparison sentences are replaced by distinct action, sensation, or spatial-pressure details; fail if the revised chapter still repeats the same stress cue and analytic sentence scaffold as a signature move."
+    }
+  ],
+  "summary": "Chapter 5 keeps continuity, geography, and canonical past tense intact, and the core compromise turn is legible, but it does not reach pass-level execution. The chapter's hinge line copies a calibration-only Harry example at the exact moment voice should feel most authored, the confrontation leans too often on polished debate-speech, the parking-lot aftermath re-explains a turn the TV-room scene has already landed, and repeated badge/comparison defaults make the prose feel mechanically profile-driven."
+}

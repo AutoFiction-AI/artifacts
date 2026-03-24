@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_11",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH11_CRAFT_FOLIO_LOCATION_CANON_BREAK",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:123; snapshots/cycle_01/chapters/chapter_11.md:125; snapshots/cycle_01/chapters/chapter_11.md:127; snapshots/cycle_01/chapters/chapter_11.md:169",
+      "problem": "Hermione finds the bonding folio on an ungated lower shelf in the main library while Draco is separately working in the archive. The continuity sheet canonically places the bonding folio in the gated archive with the Manor's oldest sensitive texts, so this discovery sequence breaks established location logic and weakens the later archive-access stakes.",
+      "rewrite_direction": "Rebuild the discovery sequence at snapshots/cycle_01/chapters/chapter_11.md:123, snapshots/cycle_01/chapters/chapter_11.md:125, snapshots/cycle_01/chapters/chapter_11.md:127, and snapshots/cycle_01/chapters/chapter_11.md:129 so the bonding text is found in a canon-consistent place. Either make shelf 14-C an explicitly archive-only subsection that is open because both of them are already working under the archive condition, or move the actual retrieval into a joint archive beat and keep the general-library survey only as the clue that points her there. Then align the explanatory follow-through at snapshots/cycle_01/chapters/chapter_11.md:145 and snapshots/cycle_01/chapters/chapter_11.md:169 so the archive remains the sensitive-text repository rather than a separate place Draco happened to be using while she found the decisive manual elsewhere.",
+      "acceptance_test": "Pass if a cold reader can read the revised discovery block and state, without outside context, that the bonding folio is housed in the gated archive or an explicitly gated archive subsection, and the chapter no longer implies Hermione retrieved it alone from ordinary Estate Administration shelves while Draco was elsewhere. Fail if the decisive text still appears to come from the main-library lower shelves with no gating explanation."
+    },
+    {
+      "finding_id": "CH11_DIALOGUE_EXAMPLE_LINE_COPY",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:13",
+      "problem": "Draco's first line is the exact calibration-only example line \"Mm.\" from the style bible. Those example lines are non-copyable reference material, so reproducing one verbatim damages voice integrity even though the local beat is small.",
+      "rewrite_direction": "Replace the assent at snapshots/cycle_01/chapters/chapter_11.md:13 with a different response or nonverbal beat that keeps Draco's distracted, guarded register without reproducing calibration text. The surrounding exchange at snapshots/cycle_01/chapters/chapter_11.md:11, snapshots/cycle_01/chapters/chapter_11.md:17, and snapshots/cycle_01/chapters/chapter_11.md:19 can stay minimal, but the replacement should sound scene-specific rather than lifted from the voice guide.",
+      "acceptance_test": "Pass if the revised line at snapshots/cycle_01/chapters/chapter_11.md:13 is not \"Mm.\" and is not near-verbatim to any Draco example line in the style bible, while still conveying distracted assent before the examination continues. Fail if the line remains \"Mm.\" or simply swaps to another copied example-line fragment."
+    },
+    {
+      "finding_id": "CH11_PROSE_DOUBT_RESTATEMENT_LOOP",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:177; snapshots/cycle_01/chapters/chapter_11.md:183; snapshots/cycle_01/chapters/chapter_11.md:207; snapshots/cycle_01/chapters/chapter_11.md:227; snapshots/cycle_01/chapters/chapter_11.md:261; snapshots/cycle_01/chapters/chapter_11.md:271; snapshots/cycle_01/chapters/chapter_11.md:275",
+      "problem": "Once the folio has already explained the Manor's mechanism, the back half keeps re-proving the same thesis in abstract summary: every connection is suspect, she cannot tell what is real, maybe it is the house, maybe it is him, maybe she should verify. The repetition blunts the reveal's force, leans on ambient-house-warmth shorthand, and pushes Hermione's private voice toward tidy diagnostic paraphrase instead of the more fractured, self-correcting interiority the style bible specifies.",
+      "rewrite_direction": "Compress and roughen the reiteration blocks at snapshots/cycle_01/chapters/chapter_11.md:177, snapshots/cycle_01/chapters/chapter_11.md:183, snapshots/cycle_01/chapters/chapter_11.md:207, snapshots/cycle_01/chapters/chapter_11.md:227, snapshots/cycle_01/chapters/chapter_11.md:261, and snapshots/cycle_01/chapters/chapter_11.md:275. Keep the must-land beats: the folio makes prior tenderness suspect, she lies to Draco over dinner, and she consciously chooses concealment before sleep. Cut or rework the duplicate abstract explanations so at least one late passage carries the doubt through behavior, interruption, or self-correction rather than another full thesis-summary, and replace repeated house-warmth paraphrase with one sharper concrete consequence of living inside the doubt.",
+      "acceptance_test": "Pass if, after the folio explanation lands, the revised chapter states the central doubt once, dramatizes one on-page concealment beat with Draco, and ends on the conscious lie without a second full paragraph that merely rephrases that she cannot tell whether the feeling is hers or the house's. Hermione's late-scene interiority must show at least one messy self-correction or aborted rationalization on the page. Fail if both the dinner section and the bedroom coda still stop to restate the same mechanism in abstract summary after the reader already understands it."
+    }
+  ],
+  "summary": "The chapter has a strong invasive-resonance opening and it does land the concealment turn, but it does not pass this review. The decisive bonding-folio discovery contradicts canon that places the text in the gated archive, Draco's opening assent copies a calibration-only style-bible line verbatim, and the back half keeps translating the same doubt into abstract thesis language after the reveal has already landed."
+}

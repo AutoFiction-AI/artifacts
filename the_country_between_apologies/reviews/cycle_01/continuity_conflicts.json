@@ -1,0 +1,64 @@
+{
+  "cycle": 1,
+  "conflicts": [
+    {
+      "conflict_id": "c01_transfer_timestamp",
+      "field": "timeline.key_events",
+      "description": "Emergency-fund transfer timing is inconsistent: chapter 1 frames a morning move-in-day transfer, chapter 2 cites an 11:43 PM prior-night transfer, and chapter 4 provides bank-record timestamps.",
+      "chapters_involved": [
+        "chapter_01",
+        "chapter_02",
+        "chapter_04"
+      ],
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.post_revision.md:176 (7:12 morning transfer framing); snapshots/cycle_01/FINAL_NOVEL.post_revision.md:553 (11:43 PM prior-night transfer framing); snapshots/cycle_01/FINAL_NOVEL.post_revision.md:979 and snapshots/cycle_01/FINAL_NOVEL.post_revision.md:981 (bank records at 06:12 transfer and 06:34 cash withdrawal on 08/28).",
+      "canonical_value": "Use chapter-4 documentary timestamps: 08/28 transfer at 06:12 and cash withdrawal at 06:34.",
+      "resolution_note": "Chapter 4 includes explicit bank evidence used in legal/financial causality, so it is the hardest-to-change and most reliable version."
+    },
+    {
+      "conflict_id": "c01_separation_weekly_transfer",
+      "field": "financial_state.debts",
+      "description": "Within chapter 17, weekly transfer terms change from $400 to $500 after additional disclosures.",
+      "chapters_involved": [
+        "chapter_17"
+      ],
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.post_revision.md:5702 ($400 from each weekly check); snapshots/cycle_01/FINAL_NOVEL.post_revision.md:6014 (line revised to $500); snapshots/cycle_01/FINAL_NOVEL.post_revision.md:6208 (Friday transfer discussed as $500).",
+      "canonical_value": "$500 weekly transfer with Friday proof deadline.",
+      "resolution_note": "The later term is an explicit amendment triggered by new information and governs subsequent behavior."
+    },
+    {
+      "conflict_id": "c01_separation_residence_term",
+      "field": "characters.eli_mercer.state_transitions",
+      "description": "Chapter 17 first sets an eight-week basement arrangement with week-six review, then revises to a 30-day provisional arrangement with day-14 review.",
+      "chapters_involved": [
+        "chapter_17"
+      ],
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.post_revision.md:5706 (8-week term, week-6 review); snapshots/cycle_01/FINAL_NOVEL.post_revision.md:6018 (30-day provisional, day-14 review); snapshots/cycle_01/FINAL_NOVEL.post_revision.md:6212 (day-14 review scheduling).",
+      "canonical_value": "30-day provisional basement residence with day-14 review and immediate termination on breach.",
+      "resolution_note": "The revised clause is later in-sequence and tied to a major trust breach, so it supersedes the initial draft terms."
+    },
+    {
+      "conflict_id": "c01_title_debt_amount_update",
+      "field": "financial_state.debts",
+      "description": "The previous sheet tracked a higher legacy title-loan amount; manuscript chapter 13 updates the active post-claim balance to a specific deficiency figure.",
+      "chapters_involved": [
+        "chapter_13"
+      ],
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.post_revision.md:4204 (net payout $4,980 applied to lienholder); snapshots/cycle_01/FINAL_NOVEL.post_revision.md:4246 (deficiency stated as $1,693.11); snapshots/cycle_01/FINAL_NOVEL.post_revision.md:4504 (still owes 'sixteen ninety-three').",
+      "canonical_value": "RidgeLine active deficiency is $1,693.11 after insurer payout application.",
+      "resolution_note": "Chapter 13 lender paperwork and speakerphone balance quote provide current, actionable debt state and override legacy sheet totals."
+    },
+    {
+      "conflict_id": "c01_casino_income_baseline_update",
+      "field": "financial_state.income_sources",
+      "description": "Prior sheet estimated casino wages at a different weekly baseline; chapter 14 provides a concrete paystub.",
+      "chapters_involved": [
+        "chapter_14"
+      ],
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.post_revision.md:4889 (first full check: $813.35 gross, $603.18 net).",
+      "canonical_value": "Casino baseline set to about $800 gross weekly (about $600 net on shown stub).",
+      "resolution_note": "Direct paystub evidence is more reliable than prior estimate ranges."
+    }
+  ],
+  "new_facts_added": 22,
+  "facts_updated": 8
+}

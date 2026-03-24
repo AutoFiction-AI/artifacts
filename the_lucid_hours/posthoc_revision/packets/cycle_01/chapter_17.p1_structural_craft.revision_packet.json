@@ -1,0 +1,122 @@
+{
+  "acceptance_targets": [
+    "[secondary_character_naming_instability_chapter_17] Agnes's roommate in Ch17 uses the same name as in Ch1, Ch2, Ch8, and Ch9. No name collision with the Room 110 resident.",
+    "[RED-07] Ch17's Prasad introduction does not repeat the forty-patients-across-three-facilities/buildings formula. Her workload is implied by her pace, not re-stated.",
+    "[RED-08] Ch17 L4092 does not list Agnes's height, hair color/style, or glasses as identifying features. She is recognized through action or expression.",
+    "[RED-11] Ch17 contains no more than 1 description of Earl's cough. That instance shows escalation or consequence, not merely the same wet-rattle sound.",
+    "[CON-02] Ch17 L4058 refers to Agnes's roommate as 'Doris,' not 'Mrs. Delacroix.' Mrs. Delacroix appears only in references to Room 110."
+  ],
+  "chapter_id": "chapter_17",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Agnes's roommate in Ch17 uses the same name as in Ch1, Ch2, Ch8, and Ch9. No name collision with the Room 110 resident.",
+      "chapter_id": "chapter_17",
+      "cycle": 1,
+      "evidence": "FINAL_NOVEL.md:4058 'Her roommate, Mrs. Delacroix, was asleep and snoring wetly in the bed nearest the door.' FINAL_NOVEL.md:4290 'Mrs. Delacroix's snoring was the only sound.'",
+      "finding_id": "secondary_character_naming_instability_chapter_17",
+      "problem": "Agnes's roommate is now called 'Mrs. Delacroix' \u2014 her fourth name and one that collides with the Room 110 resident who has been 'Mrs. Delacroix' since Ch4. Unless the novel narrates a room transfer (it does not), the reader must conclude either that Agnes's roommate and the Room 110 murmurer are the same person (contradicted by their simultaneous existence in earlier chapters) or that two different residents share a surname by coincidence (implausible and confusing).",
+      "rewrite_direction": "At FINAL_NOVEL.md:4058 and FINAL_NOVEL.md:4290, replace 'Mrs. Delacroix' with the chosen permanent name for Agnes's roommate (e.g., 'Doris' or 'Doris Okonkwo'). Ensure no name collision with the Room 110 resident.",
+      "severity": "HIGH",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch17's Prasad introduction does not repeat the forty-patients-across-three-facilities/buildings formula. Her workload is implied by her pace, not re-stated.",
+      "chapter_id": "chapter_17",
+      "cycle": 1,
+      "evidence": "Ch9 L1858: 'moving through Wing A with the efficient speed of a physician who saw forty patients a day across three facilities and couldn't afford to linger'; Ch17 L4421: 'She was small and sharp and saw forty patients a day across three buildings'",
+      "finding_id": "RED-07",
+      "problem": "Dr. Prasad's defining trait \u2014 'forty patients a day across three facilities' \u2014 is introduced in Ch9 L1858 and repeated near-verbatim in Ch17 L4421 ('forty patients a day across three buildings'). The only change is 'facilities' to 'buildings.'",
+      "rewrite_direction": "In Ch17 L4421, cut the 'forty patients a day across three buildings' clause. Enter Prasad through what is different in this visit \u2014 her specific clinical actions, her reaction to Agnes and Earl \u2014 not through the same statistical summary used in Ch9.",
+      "severity": "HIGH",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch17 L4092 does not list Agnes's height, hair color/style, or glasses as identifying features. She is recognized through action or expression.",
+      "chapter_id": "chapter_17",
+      "cycle": 1,
+      "evidence": "Ch1 L41: 'small and thin, gray hair cut short, wire-rimmed glasses'; Ch3 L403: same; Ch8 L1583: same; Ch17 L4092: 'She was a small woman, five-two, gray hair cut short because she could manage it without help, wire-rimmed glasses reflecting the hallway's fluorescent light'",
+      "finding_id": "RED-08",
+      "problem": "Agnes is re-introduced in Ch17 L4092 with the same trait trio (small, gray hair cut short, wire-rimmed glasses) that was established in Ch1 L41 and repeated in Ch3 and Ch8. By the 4th repetition of this exact descriptor cluster, the reader does not need it.",
+      "rewrite_direction": "In Ch17 L4092, cut the physical re-inventory entirely. Agnes is 16 chapters into the novel \u2014 the reader knows what she looks like. Enter the moment through Agnes's expression, posture, or silence.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch17 contains no more than 1 description of Earl's cough. That instance shows escalation or consequence, not merely the same wet-rattle sound.",
+      "chapter_id": "chapter_17",
+      "cycle": 1,
+      "evidence": "Earl's cough described in Ch3 L468, Ch5 L1088, Ch9 L1990/2186, Ch10 L2284/2463/2688/2700, Ch13 L3146/3184, Ch15 L3514-3676 (8+ instances), Ch16 L3757/3885, Ch17 L4128/4148/4162. By Ch17, the cough has been described 25+ times.",
+      "finding_id": "RED-11",
+      "problem": "Earl's declining health via the cough is the most aggressively re-proved baseline in the manuscript (32+ total instances). Ch17 adds 3 more instances after Ch15 already devoted an entire interior chapter to the cough. By Ch17, each additional description returns diminishing emotional weight.",
+      "rewrite_direction": "In Ch17, retain at most 1 cough instance \u2014 the strongest one that does new narrative work. Cut the other 2. The cough at L4162 ('heavier this time') has escalation value; the others at L4128 and L4148 are redundant.",
+      "severity": "HIGH",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch17 L4058 refers to Agnes's roommate as 'Doris,' not 'Mrs. Delacroix.' Mrs. Delacroix appears only in references to Room 110.",
+      "chapter_id": "chapter_17",
+      "cycle": 1,
+      "evidence": "Ch17 L4058: 'Her roommate, Mrs. Delacroix, was asleep and snoring wetly in the bed nearest the door'; Ch18 L4361: 'Her roommate, Doris, was snoring in the next bed'; but Mrs. Delacroix is established as the Room 110 patient from Ch4 L685 onward: 'Room 110 \u2014 Mrs. Delacroix \u2014 produced the same low, continuous murmur'",
+      "finding_id": "CON-02",
+      "problem": "In Ch17 L4058, Agnes's roommate in 108A is called 'Mrs. Delacroix.' But Mrs. Delacroix is already established as the Room 110 moaning patient (Ch4 L685, Ch4 L745, Ch4 L781, Ch5 L852, etc.). This creates a name collision: two different patients in different rooms sharing the same name. Ch18 L4361 reverts to 'Doris' for Agnes's roommate, confirming the Ch17 usage is an error.",
+      "rewrite_direction": "In Ch17 L4058, replace 'Mrs. Delacroix' with 'Doris' to match the established name for Agnes's roommate. Mrs. Delacroix should remain exclusively the Room 110 patient.",
+      "severity": "CRITICAL",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "3ef0e10ce6e959f6032516c748ac91d4d11deffef54e088c0736f7fd379b9dac",
+  "must_fix_count": 5,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This is a dark comedy about elderly agency, institutional failure, and moral compromise in a setting most fiction treats as a punchline or a tragedy but never both. The risks the novel must take: render the comedy of octogenarians as pharmaceutical distributors without condescending to them or turning them into lovable rogues; make Carmen's escalating complicity fully legible without moralizing about it; show the bodily realities of aging \u2014 incontinence, tremor, cognitive decline, falls, the smell of a body that doesn't leave a building \u2014 with unsentimental specificity; render the economic desperation of both healthcare workers and uninsured buyers without turning either into social-issue abstractions; give the moral ambiguity of the ring genuine weight by refusing to resolve it into either 'they were wrong' or 'they were heroes.' The novel must trust readers to sit with complexity. When in doubt between too raw and too safe, choose raw. A nursing home that smells like potpourri is a nursing home written by someone who's never been in one.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism for bodily functions, aging, economic shame, institutional dysfunction, or the realities of nursing home care is a craft failure. The novel's comedy and humanity depend on rendering what polite fiction glosses over: what it smells like to clean someone who can't clean themselves, what it costs to count coins for a bus fare, what oxycodone sells for per milligram on the secondary market, what a concussion looks like on an 88-year-old skull, what it sounds like when someone with Parkinson's tries to hold a coffee cup steady, what Burt's dementia actually looks like up close. If the prose flinches from these specifics, the novel loses its authority.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the default for all dialogue. Uncontracted forms appear only for emphasis, character-specific formality (Agnes's low contraction level), Carmen under extreme stress reverting to formal speech, or deliberate register choices. In a contemporary New Jersey nursing home, stiff diction is the anomaly, not the norm.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate high-intensity scenes with reflective interiority. Vary scene count: single-scene chapters for maximum compression, three-scene chapters for range. Comic chapters (3, 9) should feel structurally different from quiet character studies (7, 8, 12, 15), which should feel different from crisis chapters (11, 16, 17). Follow a confrontation with a reflection, an escalation with a domestic scene, a comic set piece with an elegiac one. If two consecutive chapters share the same rhythm, one needs redesigning.",
+      "diction": "Grounded and specific. Drug names (oxycodone, alprazolam, hydroxychloroquine), nursing procedures (med pass, pill count, charting, fall assessment), body realities (incontinence, tremor, laceration, scalp bleed). No purple prose, no literary performance. The style should feel like someone who works with their hands is telling you the truth about what she saw.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person, varying by POV character. Carmen chapters are warm and sensory, anchored in the body and the immediate environment. Harry chapters are precise and calculating, with attention to numbers and angles. Agnes chapters are clinical and compressed. Lola chapters are winding and emotionally layered, with embedded memories. Earl chapters are spare and weighted, with silence doing as much work as language. Marcus chapters are kinetic, with physical movement and code-switching. Tammy chapters are flat and observational, her trained eye cataloguing what doesn't add up.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Varied by chapter and POV. Carmen chapters favor medium sentences with occasional long runs when she's anxious. Harry chapters are short and clipped. Comic set pieces (chapters 3 and 9) move between fast inventory and slow domestic beats. Quiet chapters (7, 12, 15) slow down and let space onto the page. No chapter should feel rhythmically identical to the one before it.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "acceptance_targets": [
+    "[chapter_03_F001] PASS if revised lines 287-304 no longer identify Arthur as a depot relief driver and no line implies next-day bus-route duty; identity is either clearly a different person or occupation-consistent with canon. FAIL if \"relief driver\"/bus-shift logic remains attached to Arthur Pike/Hale.",
+    "[chapter_03_F002] PASS if, before cleanup starts, the revised span includes (1) at least one concrete physical consequence for the men and (2) one explicit spoken acknowledgment that the gathering is ruptured, not merely awkward. FAIL if the sequence still jumps from shove/shatter directly into practical cleanup with no embodied relational reckoning.",
+    "[chapter_03_F003] PASS if the revised chapter shows pre-knock foreshadowing of Arthur's delay and the confrontation produces one irreversible consequence before the door opens. FAIL if the knock remains the first mechanism that prevents consequence from landing."
+  ],
+  "chapter_id": "chapter_03",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if revised lines 287-304 no longer identify Arthur as a depot relief driver and no line implies next-day bus-route duty; identity is either clearly a different person or occupation-consistent with canon. FAIL if \"relief driver\"/bus-shift logic remains attached to Arthur Pike/Hale.",
+      "chapter_id": "chapter_03",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:287; snapshots/cycle_02/chapters/chapter_03.md:289; snapshots/cycle_02/chapters/chapter_03.md:303",
+      "finding_id": "chapter_03_F001",
+      "problem": "Continuity contradiction: Arthur is introduced as \"Arthur Pike, Tom's relief driver from the bus depot\" with bus-shift follow-through, which conflicts with canon where Arthur Hale/Pike is an electricity-board linesman first introduced later via billeting. This creates an occupation/timeline identity mismatch.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_03.md:287 and snapshots/cycle_02/chapters/chapter_03.md:303 (plus adjacent lines) to resolve identity cleanly. Option A: rename this guest to a distinct minor character and remove Hale/Pike carryover cues. Option B: keep Arthur but align him with canonical occupation (no depot relief-driver framing, no bus-route return line) so his profile does not contradict continuity.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if, before cleanup starts, the revised span includes (1) at least one concrete physical consequence for the men and (2) one explicit spoken acknowledgment that the gathering is ruptured, not merely awkward. FAIL if the sequence still jumps from shove/shatter directly into practical cleanup with no embodied relational reckoning.",
+      "chapter_id": "chapter_03",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:273; snapshots/cycle_02/chapters/chapter_03.md:283; snapshots/cycle_02/chapters/chapter_03.md:299; snapshots/cycle_02/chapters/chapter_03.md:305",
+      "finding_id": "chapter_03_F002",
+      "problem": "Sanitization drift at the violence apex: the scene pivots from assault escalation into interruption/cleanup before embodied fallout fully lands. The prose reduces immediate physical and social consequence at the exact moment the narrative has earned full-contact aftermath.",
+      "rewrite_direction": "Expand snapshots/cycle_02/chapters/chapter_03.md:273 and snapshots/cycle_02/chapters/chapter_03.md:299 (including the intervening beat sequence) with one additional aftermath beat before cleanup logistics. Render concrete bodily consequence (beyond a single nick), immediate fear/shame response, and explicit relational rupture language in-scene before the action shifts to dustpan duties.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if the revised chapter shows pre-knock foreshadowing of Arthur's delay and the confrontation produces one irreversible consequence before the door opens. FAIL if the knock remains the first mechanism that prevents consequence from landing.",
+      "chapter_id": "chapter_03",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:283; snapshots/cycle_02/chapters/chapter_03.md:295",
+      "finding_id": "chapter_03_F003",
+      "problem": "Doorstep interruption arrives exactly at peak escalation and reads as a convenience release valve, weakening earned causal payoff between Tom, Peter, and Noreen.",
+      "rewrite_direction": "In snapshots/cycle_02/chapters/chapter_03.md:145 and snapshots/cycle_02/chapters/chapter_03.md:173, seed Arthur's delayed arrival earlier as active tension. Then revise snapshots/cycle_02/chapters/chapter_03.md:273 and snapshots/cycle_02/chapters/chapter_03.md:295 so at least one irreversible in-room consequence lands before the knock (social ban, declared break, or completed physical consequence).",
+      "severity": "MEDIUM",
+      "source": "booker",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "899f4b26f11a4d887df659df9222451e08e3fd248aa51bc252502d6d0d5ee1a5",
+  "must_fix_count": 3,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "When edge cases arise, choose the more specific and potentially uncomfortable rendering if it is character-true and causally necessary. Intimacy, bodily risk, and moral compromise must be shown with concrete detail and aftermath, then integrated into later behavior rather than quarantined as a one-scene shock.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a draft abstracts pain, sex, coercion, blood, or economic shame at the exact moment consequence should be embodied, revise by replacing summary with physically and socially specific action tied to POV stakes.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High by default for spoken lines; uncontracted forms are marked choices for period formality, emphasis, or character-specific control behavior.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate structural engines across adjacent chapters: ensemble social scenes, inventory chapters, information-turn chapters, acted-upon pressure chapters, and aftermath chapters. Vary scene count (2 to 4), dialogue density, and interiority depth so consecutive chapters do not share the same pacing signature.",
+      "diction": "Period-authentic but readable contemporary English, favoring concrete nouns and precise verbs over lyrical abstraction.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person, alternating primarily between Elsie and Noreen, with occasional tightly limited deviations only when causal clarity requires it.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Sentence rhythm should alternate compressed pressure bursts with longer observational lines that carry social texture; avoid monotone paragraph cadence.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

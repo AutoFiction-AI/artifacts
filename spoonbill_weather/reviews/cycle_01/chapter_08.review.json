@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_08",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "PASS",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_08_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_01/chapters/chapter_08.md:115; snapshots/cycle_01/chapters/chapter_08.md:159; snapshots/cycle_01/chapters/chapter_08.md:287; snapshots/cycle_01/chapters/chapter_08.md:351; snapshots/cycle_01/chapters/chapter_08.md:391; snapshots/cycle_01/chapters/chapter_08.md:403",
+      "problem": "The narration keeps summarizing emotional turns with the same generic effect language: the room changes, a sentence lands, fairness lands. Those glosses are clear the first time, but by the later recurrences they start replacing scene-specific consequence with reusable shorthand, which flattens the chapter's strongest pressure points.",
+      "rewrite_direction": "Rework the emotional-turn lines at snapshots/cycle_01/chapters/chapter_08.md:115, snapshots/cycle_01/chapters/chapter_08.md:287, snapshots/cycle_01/chapters/chapter_08.md:351, snapshots/cycle_01/chapters/chapter_08.md:391, and snapshots/cycle_01/chapters/chapter_08.md:403 so each beat lands through a distinct physical or relational consequence instead of narrator summary. Strategy: let Tomas's handling of the key/map, Rhea's touch or withdrawal, and Mina's bodily reaction do the work, and keep at most one explicit room-changed/line-landed gloss if you want the cadence once.",
+      "acceptance_test": "Pass if, at the revised equivalents of snapshots/cycle_01/chapters/chapter_08.md:115, snapshots/cycle_01/chapters/chapter_08.md:351, snapshots/cycle_01/chapters/chapter_08.md:391, and snapshots/cycle_01/chapters/chapter_08.md:403, a reader can identify the emotional shift from concrete action, touch, object use, or changed spatial behavior without the narration saying that the room changed or that a line/sentence landed; fail if those beats still rely on generic effect labels."
+    },
+    {
+      "finding_id": "chapter_08_prose_002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_01/chapters/chapter_08.md:85; snapshots/cycle_01/chapters/chapter_08.md:111; snapshots/cycle_01/chapters/chapter_08.md:253; snapshots/cycle_01/chapters/chapter_08.md:275; snapshots/cycle_01/chapters/chapter_08.md:319; snapshots/cycle_01/chapters/chapter_08.md:379",
+      "problem": "The chapter leans too often on the same clipped negation template: 'Not X. Y.' or 'Not forgiveness. Not exile either.' Used once or twice, that compression is a choice. Used across this many pivots, it reads like an autopilot stress rhythm and starts flattening Mina's interior music into a repeated sentence trick.",
+      "rewrite_direction": "Vary the sentence shapes at snapshots/cycle_01/chapters/chapter_08.md:85, snapshots/cycle_01/chapters/chapter_08.md:111, snapshots/cycle_01/chapters/chapter_08.md:253, snapshots/cycle_01/chapters/chapter_08.md:275, snapshots/cycle_01/chapters/chapter_08.md:319, and snapshots/cycle_01/chapters/chapter_08.md:379. Keep only the one or two strongest isolated negation beats; recast the others into full clauses, tactile observations, or action so the pressure comes from fresh syntax rather than repeated 'Not ...' fragments.",
+      "acceptance_test": "Pass if, across the revised equivalents of snapshots/cycle_01/chapters/chapter_08.md:85, snapshots/cycle_01/chapters/chapter_08.md:111, snapshots/cycle_01/chapters/chapter_08.md:253, snapshots/cycle_01/chapters/chapter_08.md:275, snapshots/cycle_01/chapters/chapter_08.md:319, and snapshots/cycle_01/chapters/chapter_08.md:379, no more than two emotional pivots still rely on isolated 'Not ...' fragment sentences; fail if the same negation cadence remains the default at three or more of those beats."
+    }
+  ],
+  "summary": "Chapter 8 cleanly lands the required confession state shift, keeps continuity and past-tense narration intact, and handles sex, shame, and procedural risk without sanitization or timidity; Mina, Tomas, and Rhea also remain voice-distinct with natural contraction use under pressure. It fails prose, however, because the narration falls back too often on repeated room-change/line-landed glosses and recurring 'Not ...' fragment cadences, which makes several late emotional beats feel mechanically paraphrased instead of freshly embodied."
+}

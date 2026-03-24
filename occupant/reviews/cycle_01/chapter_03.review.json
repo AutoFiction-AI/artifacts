@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_03",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch03_f01",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:79; snapshots/cycle_01/chapters/chapter_03.md:233",
+      "problem": "The chapter publicly dates Nate's Eastbridge trip and Mort sighting to July 12, 2005, which contradicts the continuity sheet's canonical placement of this event on July 13-14, 2005. Because the date is printed twice and anchors the whole outing, this is a hard timeline break rather than a fuzzy inference.",
+      "rewrite_direction": "Revise the public date markers at snapshots/cycle_01/chapters/chapter_03.md:79 and snapshots/cycle_01/chapters/chapter_03.md:233 so the trip lands on the canonical July 13 or July 14 window, and make any needed supporting timeline adjustment in the surrounding chapter setup at snapshots/cycle_01/chapters/chapter_03.md:3 so the morning call-in, drive, and return all agree on the same day.",
+      "acceptance_test": "Pass if the newspaper reveal at snapshots/cycle_01/chapters/chapter_03.md:79 and the dashboard callback at snapshots/cycle_01/chapters/chapter_03.md:233 now place the trip on July 13 or July 14, 2005, and no surviving line in the chapter dates Mort's first sighting to July 12. Fail if any on-page marker still places this chapter event on July 12."
+    },
+    {
+      "finding_id": "ch03_f02",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:45; snapshots/cycle_01/chapters/chapter_03.md:123; snapshots/cycle_01/chapters/chapter_03.md:147; snapshots/cycle_01/chapters/chapter_03.md:235",
+      "problem": "The chapter leans too often on the same clipped-fragment emphasis ladder for major beats: object inventory, Mort's first sighting, the threshold beat outside the store, and the closing recognition all land through near-identical stacks of tiny declaratives. What begins as stress rhythm becomes a visible chapter tic, flattening cadence where the style bible calls for more rhythmic variance.",
+      "rewrite_direction": "Rework at least two of the major emphasis clusters around snapshots/cycle_01/chapters/chapter_03.md:45, snapshots/cycle_01/chapters/chapter_03.md:123, snapshots/cycle_01/chapters/chapter_03.md:147, and snapshots/cycle_01/chapters/chapter_03.md:235 so the pressure lands through fuller sentence movement, concrete action, or fresh sensory sequencing rather than another fragment stack. Keep the beats themselves: trespass through Dominic's objects, Mort's embodied presence, Nate's inability to cross the threshold, and the final recognition in the car.",
+      "acceptance_test": "Pass if the Mort-recognition beat at snapshots/cycle_01/chapters/chapter_03.md:123 and at least one of the other cited beats are revised so the emphasis resolves through a complete sentence tied to physical detail or action, rather than three or more standalone fragments in succession. Fail if those centerpiece beats still rely on essentially the same clipped ladder shape."
+    },
+    {
+      "finding_id": "ch03_f03",
+      "source": "award",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:209",
+      "problem": "After the chapter has already made Nate's collapse legible through the live sight of Mort and Linda, the failed reach for the door, and the reflexive duck in the car, the narration steps back into explicit thesis language about the 'moral logic' of revenge. At shortlist level this reads as explanatory self-annotation: the scene has already landed its meaning, and the chapter briefly re-argues it instead of buying a fresh turn.",
+      "rewrite_direction": "Compress or re-embody the recap at snapshots/cycle_01/chapters/chapter_03.md:209 and snapshots/cycle_01/chapters/chapter_03.md:211. If Nate revisits the revenge logic here, tie it to an immediate physical trigger or decision in the parking lot; otherwise cut more directly from the forty-minute beat at snapshots/cycle_01/chapters/chapter_03.md:215 into the departure sequence beginning at snapshots/cycle_01/chapters/chapter_03.md:217.",
+      "acceptance_test": "Pass if the material after snapshots/cycle_01/chapters/chapter_03.md:215 either adds a fresh action, decision, obstacle, or observable consequence before Nate leaves, or exits the scene without restating the chapter's revenge thesis in generalized summary. Fail if the revised late passage still explains what the reader already understands from the dramatized scene."
+    }
+  ],
+  "summary": "Strong close-third control, period disorientation, and emotionally specific staging around Mort's first appearance make this chapter feel alive on the page, and the dialogue that is present is cleanly on-model. It still fails review because the printed date breaks canon, the prose overuses one clipped-fragment emphasis pattern, and the late parking-lot recap explains meaning the scene has already earned."
+}

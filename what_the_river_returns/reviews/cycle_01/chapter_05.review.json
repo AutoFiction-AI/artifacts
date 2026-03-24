@@ -1,0 +1,72 @@
+{
+  "chapter_id": "chapter_05",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch05-f001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:181; snapshots/cycle_01/chapters/chapter_05.md:283; snapshots/cycle_01/chapters/chapter_05.md:469; snapshots/cycle_01/chapters/chapter_05.md:515",
+      "problem": "Narration repeatedly uses elliptical fragment chains (e.g., object-only beats and clipped noun phrases). This violates the constitution rule against clipping and reads as an autopilot rhythm tic rather than controlled emphasis.",
+      "rewrite_direction": "Revise clipped clusters at snapshots/cycle_01/chapters/chapter_05.md:181, snapshots/cycle_01/chapters/chapter_05.md:283, snapshots/cycle_01/chapters/chapter_05.md:469, and snapshots/cycle_01/chapters/chapter_05.md:515 into grammatically complete sentences with explicit subjects while preserving urgency.",
+      "acceptance_test": "PASS if each targeted span reads as complete sentences (subject + finite verb) with no run of two or more clipped fragments; FAIL if any target span still uses stacked fragment beats like \"X. Y. Z.\" for core narration."
+    },
+    {
+      "finding_id": "ch05-f002",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:387; snapshots/cycle_01/chapters/chapter_05.md:393; snapshots/cycle_01/chapters/chapter_05.md:401; snapshots/cycle_01/chapters/chapter_05.md:463",
+      "problem": "Timidity drift after the family-threat beat: once Jalen voices abduction fear, the chapter pivots quickly into legal/process briefing and campaign-vendor intel. The emotional and physical danger is acknowledged but under-rendered before strategy resumes.",
+      "rewrite_direction": "In snapshots/cycle_01/chapters/chapter_05.md:387-417 and snapshots/cycle_01/chapters/chapter_05.md:463-479, add concrete household-security action and embodied fear consequences (for Lena and/or Jalen) before returning to legal/procedural discussion.",
+      "acceptance_test": "PASS if the revised 387-417 span contains at least two explicit on-page safety actions (for example: lock checks, patrol coordination, relocation logistics performed) and one embodied fear response before process dialogue dominates; FAIL if it remains mostly advisory talk."
+    },
+    {
+      "finding_id": "ch05-f003",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:187; snapshots/cycle_01/chapters/chapter_05.md:223; snapshots/cycle_01/chapters/chapter_05.md:323; snapshots/cycle_01/chapters/chapter_05.md:345",
+      "problem": "The focalizer drops out for long dialogue/action runs (10+ consecutive paragraphs) in the command hearing and early kitchen exchange. That weakens the close-third requirement and pushes the chapter toward screenplay cadence.",
+      "rewrite_direction": "Inject Lena interior beats in snapshots/cycle_01/chapters/chapter_05.md:187-223 and snapshots/cycle_01/chapters/chapter_05.md:323-345 (thought, sensation, memory, or self-assessment), not just external observation.",
+      "acceptance_test": "PASS if each target span includes at least two explicit Lena-interiority sentences, with no gap larger than six paragraphs between interior beats; FAIL if either span remains purely external dialogue/blocking for 10+ paragraphs."
+    },
+    {
+      "finding_id": "ch05-f004",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:195; snapshots/cycle_01/chapters/chapter_05.md:197; snapshots/cycle_01/chapters/chapter_05.md:201; snapshots/cycle_01/chapters/chapter_05.md:217; snapshots/cycle_01/chapters/chapter_05.md:227",
+      "problem": "Tate, Clay, and Weems converge into similar polished bureaucratic cadence in the hearing. The exchange carries conflict, but idiolect separation is too thin for a high-pressure scene.",
+      "rewrite_direction": "Rework speaker lines in snapshots/cycle_01/chapters/chapter_05.md:195-227 so each voice has a distinct syntax and leverage style: Tate as managerial triage, Clay as falsely courteous institutional control, Weems as legalistic risk framing.",
+      "acceptance_test": "PASS if a cold read of the revised 195-227 span can attribute at least one untagged line each to Tate, Clay, and Weems by diction/rhythm alone, and at least one leverage shift is clear in the exchange; FAIL if voices remain interchangeable."
+    },
+    {
+      "finding_id": "ch05-f005",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:17; snapshots/cycle_01/chapters/chapter_05.md:473; snapshots/cycle_01/chapters/chapter_05.md:501",
+      "problem": "Contraction register drifts stiff in spots for high-contraction characters (Beau, Mara) without a clear formal-performance trigger, creating brief over-formality against the book default.",
+      "rewrite_direction": "Adjust the targeted lines at snapshots/cycle_01/chapters/chapter_05.md:17, snapshots/cycle_01/chapters/chapter_05.md:473, and snapshots/cycle_01/chapters/chapter_05.md:501 to contracted, pressure-natural speech unless deliberate emphasis is explicitly signaled.",
+      "acceptance_test": "PASS if Beau and Mara use contractions in at least two of the three targeted beats and any retained full-form phrase is clearly motivated by emphasis or social performance in-context; FAIL if the lines stay stiff by default."
+    },
+    {
+      "finding_id": "ch05-f006",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:243; snapshots/cycle_01/chapters/chapter_05.md:305; snapshots/cycle_01/chapters/chapter_05.md:401; snapshots/cycle_01/chapters/chapter_05.md:463; snapshots/cycle_01/chapters/chapter_05.md:535",
+      "problem": "The chapter lands a strong irreversible turn (suspension) but then diffuses momentum through back-to-back legal/process briefings. The final movement prioritizes information transfer over a sharper consequence beat.",
+      "rewrite_direction": "Compress one exposition block and recast the other as active conflict in snapshots/cycle_01/chapters/chapter_05.md:393-535, then end with a concrete irreversible choice tied to suspension consequences.",
+      "acceptance_test": "PASS if the revised 393-539 section contains one explicit irreversible decision with immediate downside before chapter end and avoids consecutive exposition-heavy dialogue blocks longer than one paragraph without action or reversal; FAIL otherwise."
+    }
+  ],
+  "summary": "Chapter 5 preserves core causality and required state deltas (street pressure, suspension, improvised access), with no detected continuity contradiction and no sustained tense drift from past tense. It still fails this review pass because clipped narration tics, interiority dropouts, dialogue register flattening, and consequence-diffusing exposition keep the chapter below pass-level craft/prose/dialogue quality."
+}

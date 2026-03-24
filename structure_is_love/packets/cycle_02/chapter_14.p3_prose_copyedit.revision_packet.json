@@ -1,0 +1,81 @@
+{
+  "acceptance_targets": [
+    "[chapter_14-F004] PASS if no more than two clause transitions retain the exact 'Clause <number>, she said' opener and at least three clause transitions are introduced through non-redundant action/subtext beats in the same span; FAIL if the seven-step repeated opener pattern remains.",
+    "[chapter_14-F005] PASS if, in the revised span from snapshots/cycle_02/chapters/chapter_14.md:145 to snapshots/cycle_02/chapters/chapter_14.md:165, no run exceeds six consecutive paragraphs without an explicit Anika interior cue; FAIL if a 10+ paragraph external-only stretch remains."
+  ],
+  "chapter_id": "chapter_14",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if no more than two clause transitions retain the exact 'Clause <number>, she said' opener and at least three clause transitions are introduced through non-redundant action/subtext beats in the same span; FAIL if the seven-step repeated opener pattern remains.",
+      "chapter_id": "chapter_14",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:161; snapshots/cycle_02/chapters/chapter_14.md:177; snapshots/cycle_02/chapters/chapter_14.md:201; snapshots/cycle_02/chapters/chapter_14.md:213; snapshots/cycle_02/chapters/chapter_14.md:237; snapshots/cycle_02/chapters/chapter_14.md:243; snapshots/cycle_02/chapters/chapter_14.md:251",
+      "finding_id": "chapter_14-F004",
+      "problem": "Recurring formula tic: the identical 'Clause <number>, she said' construction appears seven times, flattening rhythm and signaling autopilot prose scaffolding.",
+      "rewrite_direction": "Revise clause transitions at snapshots/cycle_02/chapters/chapter_14.md:161, snapshots/cycle_02/chapters/chapter_14.md:177, snapshots/cycle_02/chapters/chapter_14.md:201, snapshots/cycle_02/chapters/chapter_14.md:213, snapshots/cycle_02/chapters/chapter_14.md:237, snapshots/cycle_02/chapters/chapter_14.md:243, and snapshots/cycle_02/chapters/chapter_14.md:251 so at least three transitions are carried by action, resistance, or sensory beat rather than repeating the same sentence frame.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if, in the revised span from snapshots/cycle_02/chapters/chapter_14.md:145 to snapshots/cycle_02/chapters/chapter_14.md:165, no run exceeds six consecutive paragraphs without an explicit Anika interior cue; FAIL if a 10+ paragraph external-only stretch remains.",
+      "chapter_id": "chapter_14",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:145; snapshots/cycle_02/chapters/chapter_14.md:147; snapshots/cycle_02/chapters/chapter_14.md:149; snapshots/cycle_02/chapters/chapter_14.md:151; snapshots/cycle_02/chapters/chapter_14.md:153; snapshots/cycle_02/chapters/chapter_14.md:155; snapshots/cycle_02/chapters/chapter_14.md:157; snapshots/cycle_02/chapters/chapter_14.md:159; snapshots/cycle_02/chapters/chapter_14.md:161; snapshots/cycle_02/chapters/chapter_14.md:163; snapshots/cycle_02/chapters/chapter_14.md:165",
+      "finding_id": "chapter_14-F005",
+      "problem": "Interiority drought: there is a 10+ paragraph run where focalization stays external and procedural, making the chapter read like a hearing transcript instead of close-third experience.",
+      "rewrite_direction": "Inject Anika interiority in the stretch anchored at snapshots/cycle_02/chapters/chapter_14.md:145 through snapshots/cycle_02/chapters/chapter_14.md:165 (thought, sensation, memory, or self-assessment linked to each clause turn) while preserving mediation pacing.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "ebe43765ef642300d69af7f0eb89800e5fca07dc442d1a0cc68e757d418fefe8",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on prose and copyedit finish: diction precision, rhythm control, sentence-level clarity, grammar, line-level polish without flattening style, and explicit aesthetic-risk audit (sanitization is the primary risk \u2014 do not soften or euphemize; push toward creative risk and specificity).",
+    "key": "p3_prose_copyedit",
+    "label": "prose/copyedit fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into uncomfortable specificity when it changes behavior: pain detail, debt arithmetic, manipulative care, and mixed motives. In edge cases, prefer the truest in-character action over protective narration, then carry the real consequence forward instead of immediately moralizing it away.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If coercion, grief, injury, or economic shame appears, language must stay specific and embodied; vague softening triggers mandatory rewrite.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High - contractions are the spoken default; uncontracted forms are reserved for formal authority, deliberate emphasis, or emotional freezing.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Vary scene count and dialogue density chapter to chapter: rotate match compression, slow inventory aftermath, institutional pressure scenes, and quiet domestic intervals so adjacent chapters do not share the same structural pulse.",
+      "diction": "Concrete contemporary diction with class-aware specificity; avoid abstract therapy language unless a character would actually use it.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third anchored in Anika for most chapters, with brief controlled slips toward Ravi in designated confrontation and aftermath chapters.",
+      "rhythm_target": "Alternate clipped athletic sequences with longer reflective cadences; sentence length should track exertion, shame, and release.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

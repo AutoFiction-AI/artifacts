@@ -1,0 +1,66 @@
+{
+  "chapter_id": "chapter_07",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH07-F001",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_02/chapters/chapter_07.md:31; snapshots/cycle_02/chapters/chapter_07.md:185; snapshots/cycle_02/chapters/chapter_07.md:193",
+      "problem": "The second scene replays the same confession payload already delivered in scene one (April timestamps, burner IDs, plate stills), so the chapter burns space on recap instead of escalating to a fresh causal turn.",
+      "rewrite_direction": "Rebuild the exchange at snapshots/cycle_02/chapters/chapter_07.md:181-195 so it does not restate the disclosure from snapshots/cycle_02/chapters/chapter_07.md:31. Keep one callback line for continuity, then pivot to new leverage (for example: a concrete operational condition, a new demand from Minjae, or a non-negotiable risk tied to Suyon).",
+      "acceptance_test": "PASS if the revised span at snapshots/cycle_02/chapters/chapter_07.md:181-195 introduces at least one new factual stake not present in snapshots/cycle_02/chapters/chapter_07.md:31 and avoids repeating the same three-item evidence bundle (timestamps + burner IDs + plate stills); FAIL if the second scene still functions mainly as recap."
+    },
+    {
+      "finding_id": "CH07-F002",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_02/chapters/chapter_07.md:355; snapshots/cycle_02/chapters/chapter_07.md:357; snapshots/cycle_02/chapters/chapter_07.md:359",
+      "problem": "Sanitization drift at the exit: the chapter resolves into abstract summary (\"had not solved anything and had still changed everything\", \"borrowed alignment\") instead of ending on concrete pressure. This is summary replacing scene at the exact point tension should stay embodied.",
+      "rewrite_direction": "Replace the abstract wrap-up in snapshots/cycle_02/chapters/chapter_07.md:355-359 with a specific immediate consequence in-scene (e.g., surveillance signal, handler contact, physical compromise risk tied to the key). Keep the dawn exit, but make the final beat observable rather than thematic commentary.",
+      "acceptance_test": "PASS if the last two paragraphs at snapshots/cycle_02/chapters/chapter_07.md:355-361 end on a concrete external threat/action that can be seen or heard in the moment, and remove generalized evaluative phrasing like \"changed everything\"/\"borrowed alignment\"; FAIL if the ending remains primarily abstract synthesis."
+    },
+    {
+      "finding_id": "CH07-F003",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_02/chapters/chapter_07.md:123; snapshots/cycle_02/chapters/chapter_07.md:283; snapshots/cycle_02/chapters/chapter_07.md:285; snapshots/cycle_02/chapters/chapter_07.md:349",
+      "problem": "Ina and Minjae intermittently collapse into the same polished aphoristic register in high-pressure moments, blurring idiolect separation. Their lines can read as one shared authorial voice rather than distinct private registers.",
+      "rewrite_direction": "Revise dialogue around snapshots/cycle_02/chapters/chapter_07.md:279-286 and snapshots/cycle_02/chapters/chapter_07.md:343-350. Push Ina toward analytic self-revision and clipped admissions; push Minjae toward concrete logistics language, defensive humor, and direct operational framing. Remove paired metaphor chains where both characters echo the same abstract frame.",
+      "acceptance_test": "PASS if, in each target exchange, Minjae has at least one line grounded in concrete operational terms and Ina has at least one line with explicit self-correction/qualifier drop, with no mirrored metaphor pair delivered by both speakers; FAIL if both still sound interchangeable in rhythm and abstraction level."
+    },
+    {
+      "finding_id": "CH07-F004",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_02/chapters/chapter_07.md:21; snapshots/cycle_02/chapters/chapter_07.md:223; snapshots/cycle_02/chapters/chapter_07.md:353",
+      "problem": "Recurring sentence scaffold (\"She could feel ...\") appears three times at key beats, creating noticeable prose autopilot and flattening sensory rhythm.",
+      "rewrite_direction": "Rewrite the sensory entry lines at snapshots/cycle_02/chapters/chapter_07.md:21, snapshots/cycle_02/chapters/chapter_07.md:223, and snapshots/cycle_02/chapters/chapter_07.md:353 with varied syntax and agency (body-first, environment-first, and action-first openings rather than repeating the same scaffold).",
+      "acceptance_test": "PASS if the revised chapter retains all three sensory beats but uses \"She could feel\" at no more than one of the three cited locations; FAIL if that exact construction still appears at two or more of those locations."
+    },
+    {
+      "finding_id": "CH07-F005",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_02/chapters/chapter_07.md:73; snapshots/cycle_02/chapters/chapter_07.md:161; snapshots/cycle_02/chapters/chapter_07.md:211; snapshots/cycle_02/chapters/chapter_07.md:231",
+      "problem": "Scar imagery is over-reused (Ina wrist scar and Minjae shoulder scar) at multiple pivots, reading like mechanical token recall rather than evolving embodied detail.",
+      "rewrite_direction": "Tighten the motif across snapshots/cycle_02/chapters/chapter_07.md:161-231: keep scar references where they change power/intimacy, and replace redundant mentions with new tactile or behavioral cues that carry equivalent emotional information.",
+      "acceptance_test": "PASS if the revised intimacy block at snapshots/cycle_02/chapters/chapter_07.md:161-231 contains no more than two scar mentions total and each remaining mention triggers a distinct relational shift (e.g., trust test, pain response, consent recalibration); FAIL if scars are still repeated as default descriptive shorthand without new consequence."
+    }
+  ],
+  "summary": "Chapter 07 lands required plot beats (partial NIS disclosure, Suyon reveal, intimacy, limited route key) and maintains tense/continuity, but it does not clear pass-level quality: recap duplication blunts causal escalation, dialogue voices intermittently converge, prose relies on repeated constructions, and the ending retreats into abstract summary where concrete consequence is needed.",
+  "coverage_scene_ids": [
+    "scene_01_workshop_negotiation",
+    "scene_02_apartment_intimacy_and_route_key"
+  ]
+}

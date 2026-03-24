@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_14",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_14_f001",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:49; snapshots/cycle_01/chapters/chapter_14.md:333; snapshots/cycle_01/chapters/chapter_14.md:391",
+      "problem": "Style-bible calibration lines have leaked into the draft verbatim or near-verbatim. Ray's remembered \"What the hell was that?\", Mort's \"They sent a letter.\", and Victor's compliment/warning at line 333 all echo protected example-line material instead of generating fresh speech for this chapter.",
+      "rewrite_direction": "Replace the leaked language in `snapshots/cycle_01/chapters/chapter_14.md:49`, `snapshots/cycle_01/chapters/chapter_14.md:333`, and `snapshots/cycle_01/chapters/chapter_14.md:391` with new phrasing that preserves the remembered meaning but does not reproduce or closely shadow any `example_lines` from `outline/style_bible.json`. Keep Ray's disgust, Mort's understatement, and Victor's compliment-as-warning, but rebuild each line from this scene's specific pressure rather than the calibration text.",
+      "acceptance_test": "PASS if the revised language at `snapshots/cycle_01/chapters/chapter_14.md:49`, `snapshots/cycle_01/chapters/chapter_14.md:333`, and `snapshots/cycle_01/chapters/chapter_14.md:391` is recognizably new on the page while preserving the same dramatic function; FAIL if a reader can still point to those spans as verbatim or obvious near-verbatim reuse of style-bible example lines."
+    },
+    {
+      "finding_id": "chapter_14_f002",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:285; snapshots/cycle_01/chapters/chapter_14.md:289; snapshots/cycle_01/chapters/chapter_14.md:317; snapshots/cycle_01/chapters/chapter_14.md:321; snapshots/cycle_01/chapters/chapter_14.md:389; snapshots/cycle_01/chapters/chapter_14.md:417",
+      "problem": "Victor's Wednesday scene drifts from dangerous advice into polished explanatory monologue. The confrontation stacks quotable thesis-lines one after another (\"The paper is the receipt,\" the six-signatures speech, the final machine metaphor), so the exchange reads composed rather than overheard and edges toward the villain-speech mode the style bible explicitly forbids.",
+      "rewrite_direction": "Rework Victor's speech in `snapshots/cycle_01/chapters/chapter_14.md:285-321` and `snapshots/cycle_01/chapters/chapter_14.md:389-417` so the same facts arrive through more pressure-shaped conversation: interruptions, partial answers, concrete office-political specifics, and at least one evasive redirect instead of a chain of perfect summations. Keep the required facts about Dreher, the brother-in-law contract, the committed financing, and the employment threat, but reduce the number of clean aphorisms and let Nate force more of the information out of Victor.",
+      "acceptance_test": "PASS if the revised spans at `snapshots/cycle_01/chapters/chapter_14.md:285-321` and `snapshots/cycle_01/chapters/chapter_14.md:389-417` still deliver the corruption facts and job threat but no longer read as a run of back-to-back quotable lines, with at least two visible leverage shifts caused by Nate's pushback or Victor's deflection; FAIL if Victor still gets to explain the system in uninterrupted mini-speeches that land as polished maxims."
+    },
+    {
+      "finding_id": "chapter_14_f003",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:317; snapshots/cycle_01/chapters/chapter_14.md:329; snapshots/cycle_01/chapters/chapter_14.md:349; snapshots/cycle_01/chapters/chapter_14.md:389; snapshots/cycle_01/chapters/chapter_14.md:433; snapshots/cycle_01/chapters/chapter_14.md:445; snapshots/cycle_01/chapters/chapter_14.md:449",
+      "problem": "Once the chapter lands its core turn, it keeps re-proving the same thesis. By the time Victor has explained that walking off Eastbridge changes nothing, confirmed Dominic already made the humane case, and tied the issue to Dominic's job, the chapter has already done its central dramatic work. The later office beats and parking-lot aftermath repeatedly restate the same system lesson instead of adding equal new pressure.",
+      "rewrite_direction": "Compress or redistribute the material in `snapshots/cycle_01/chapters/chapter_14.md:349-449`. Preserve three must-land beats only: the employment threat, the answer to why Dominic stayed on the project, and Nate's drive to Eastbridge where he cannot go inside. Any retained sentence in those spans should either sharpen one of those beats with new information or create a fresh physical/emotional consequence; cut or rewrite sentences that merely paraphrase \"the system is bigger than one man\" in new wording.",
+      "acceptance_test": "PASS if the revised material after `snapshots/cycle_01/chapters/chapter_14.md:349` contains one clear employment consequence, one distinct answer about Dominic's role, and one final Eastbridge beat that changes pressure through image or action; FAIL if those spans still repeat the same machine/cog/system diagnosis without adding a new fact, decision, witness, or consequence."
+    },
+    {
+      "finding_id": "chapter_14_f004",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:9; snapshots/cycle_01/chapters/chapter_14.md:159; snapshots/cycle_01/chapters/chapter_14.md:273; snapshots/cycle_01/chapters/chapter_14.md:353; snapshots/cycle_01/chapters/chapter_14.md:449",
+      "problem": "The chapter leans too often on the same negation-and-reversal sentence chassis to make beats land: \"It was not...\", \"There it was. Not...\", \"It was not one bad decision...\" Repeating that construction across the chapter turns it from emphasis into a prose tic and makes multiple turns sound pre-shaped the same way.",
+      "rewrite_direction": "Vary the line shapes at `snapshots/cycle_01/chapters/chapter_14.md:9`, `snapshots/cycle_01/chapters/chapter_14.md:159`, `snapshots/cycle_01/chapters/chapter_14.md:273-274`, `snapshots/cycle_01/chapters/chapter_14.md:353`, and `snapshots/cycle_01/chapters/chapter_14.md:449` so at least several of those beats land through concrete image, action, or direct declaration rather than a negation-first reversal. Keep the meanings, but stop building them all on the same sentence formula.",
+      "acceptance_test": "PASS if, when reading the revised chapter, the beats now sitting at `snapshots/cycle_01/chapters/chapter_14.md:9`, `snapshots/cycle_01/chapters/chapter_14.md:159`, `snapshots/cycle_01/chapters/chapter_14.md:273-274`, `snapshots/cycle_01/chapters/chapter_14.md:353`, and `snapshots/cycle_01/chapters/chapter_14.md:449` no longer rely on the same repeated negation/reversal construction more than twice in total; FAIL if three or more of those spans still use that same formula to land the beat."
+    }
+  ],
+  "summary": "The chapter has a strong engine and clean continuity, but it does not clear pass level because the central Victor confrontation is over-composed, the draft illegally reuses style-bible calibration language, and the chapter keeps restating its thematic turn after it has already landed."
+}

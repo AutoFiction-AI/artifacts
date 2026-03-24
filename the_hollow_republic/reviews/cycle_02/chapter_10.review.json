@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_10",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_10_craft_001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_02/chapters/chapter_10.md:5; snapshots/cycle_02/chapters/chapter_10.md:163",
+      "problem": "The chapter reintroduces forged papers inside the quarry inventory, culminating in \"the packet of forged papers Elise herself had once risked her neck to cache.\" The continuity sheet establishes that the reserve forged papers were already moved to the mourning-ribbon shop cache in chapter 09, so as written the same packet appears to be both offsite and still present in chapter 10. That is a HIGH object-state contradiction.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_10.md:5 and snapshots/cycle_02/chapters/chapter_10.md:163 so the object state is unambiguous. Either remove the forged papers from the chapter-10 inventory, or explicitly establish on-page that a different packet remained in the quarry after Elise moved the reserve cache in chapter 09, including what that second packet is for and why it was left behind.",
+      "acceptance_test": "Pass if, after reading snapshots/cycle_02/chapters/chapter_10.md:5 and snapshots/cycle_02/chapters/chapter_10.md:163, a reader can state exactly where the reserve forged papers are at the start of chapter 10 and why any forged papers still in the quarry are not the already-cached packet. Fail if the same papers can still be read as both offsite and being moved through the survey pocket."
+    },
+    {
+      "finding_id": "chapter_10_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_02/chapters/chapter_10.md:105; snapshots/cycle_02/chapters/chapter_10.md:117; snapshots/cycle_02/chapters/chapter_10.md:187; snapshots/cycle_02/chapters/chapter_10.md:227; snapshots/cycle_02/chapters/chapter_10.md:327; snapshots/cycle_02/chapters/chapter_10.md:333; snapshots/cycle_02/chapters/chapter_10.md:465",
+      "problem": "The chapter repeatedly uses the same demonstrative hinge construction to turn beats: \"That was...,\" \"That got...,\" \"That schoolmasterly tone...,\" \"That nearly....\" Once or twice this is a choice; at this frequency it becomes a prose tic that labels the previous beat instead of letting the next sentence earn its own pressure through image, action, or interiority.",
+      "rewrite_direction": "Rework the paragraph and sentence openings around snapshots/cycle_02/chapters/chapter_10.md:105, snapshots/cycle_02/chapters/chapter_10.md:117, snapshots/cycle_02/chapters/chapter_10.md:187, snapshots/cycle_02/chapters/chapter_10.md:227, snapshots/cycle_02/chapters/chapter_10.md:327, snapshots/cycle_02/chapters/chapter_10.md:333, and snapshots/cycle_02/chapters/chapter_10.md:465 so several of these pivots arrive through fresh concrete detail, character action, or Elise's direct interior response rather than a repeated retrospective \"That ...\" setup. Keep the causal turn, but vary the sentence architecture.",
+      "acceptance_test": "Pass if, across the revised spans at snapshots/cycle_02/chapters/chapter_10.md:105, snapshots/cycle_02/chapters/chapter_10.md:117, snapshots/cycle_02/chapters/chapter_10.md:187, snapshots/cycle_02/chapters/chapter_10.md:227, snapshots/cycle_02/chapters/chapter_10.md:327, snapshots/cycle_02/chapters/chapter_10.md:333, and snapshots/cycle_02/chapters/chapter_10.md:465, no more than two beat transitions still open with a leading demonstrative summary. Fail if the revision keeps defaulting to \"That ...\" as the chapter's main hinge syntax in those same passages."
+    }
+  ],
+  "summary": "Chapter 10 lands its two required set pieces: the press move is bodily, awkward, and unsanitized, and the Elise/Lucien intimacy scene is fully rendered rather than decoratively implied. Voice work and contraction use remain consistent with the style bible. The chapter still fails review because it introduces a HIGH continuity break around the forged papers' location and a noticeable repeated prose hinge that starts flattening transitions."
+}

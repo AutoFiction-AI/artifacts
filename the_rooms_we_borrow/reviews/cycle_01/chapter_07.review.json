@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_07",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch07-booker-01",
+      "source": "booker",
+      "severity": "HIGH",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:167; snapshots/cycle_01/chapters/chapter_07.md:169; snapshots/cycle_01/chapters/chapter_07.md:179; snapshots/cycle_01/chapters/chapter_07.md:193",
+      "problem": "The apartment aftermath scene consumes Tiana's first receipt of the partner-collapse news, but the supplied chapter-08 boundary opens on Tiana arriving and being told that same information. That creates a direct cross-chapter continuity clash and weakens the chapter handoff by spending the next chapter's opening engine here.",
+      "rewrite_direction": "Rework the entrance and first disclosure at snapshots/cycle_01/chapters/chapter_07.md:167, snapshots/cycle_01/chapters/chapter_07.md:169, snapshots/cycle_01/chapters/chapter_07.md:179, snapshots/cycle_01/chapters/chapter_07.md:183, and snapshots/cycle_01/chapters/chapter_07.md:193 so chapter_07 does not already stage Tiana hearing the theft for the first time. The cleanest local fix is to keep Tiana offstage in this scene and let Marcia tell Delroy and Micah only, or cut the scene earlier and reserve Tiana's arrival/disclosure beat for the next chapter.",
+      "acceptance_test": "Pass if a straight read of the revised passage beginning at snapshots/cycle_01/chapters/chapter_07.md:167 shows that Tiana is not already in the apartment and does not hear 'the partner broke'/'Yvette took money from the hand' before the chapter ends, so chapter 8 can open with her arrival without contradiction. Fail if the revised chapter still has Tiana at the table learning the news here."
+    },
+    {
+      "finding_id": "ch07-craft-01",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:3; snapshots/cycle_01/chapters/chapter_07.md:21; snapshots/cycle_01/chapters/chapter_07.md:23; snapshots/cycle_01/chapters/chapter_07.md:97; snapshots/cycle_01/chapters/chapter_07.md:129; snapshots/cycle_01/chapters/chapter_07.md:239; snapshots/cycle_01/chapters/chapter_07.md:271; snapshots/cycle_01/chapters/chapter_07.md:363",
+      "problem": "The chapter repeatedly relies on clipped noun-phrase stacks and article-stripped shorthand ('The light bill.' 'Straight to voicemail.' 'Mortgage. Stroke. Marcia's draw.' 'Hospital first. House after.' 'Less fear. More disbelief.'). The constitution explicitly forbids elliptical clipping in narration, and the recurrence turns pressure into a visible sentence tic rather than earned compression.",
+      "rewrite_direction": "Recast the fragment-heavy clusters at snapshots/cycle_01/chapters/chapter_07.md:3, snapshots/cycle_01/chapters/chapter_07.md:21, snapshots/cycle_01/chapters/chapter_07.md:23, snapshots/cycle_01/chapters/chapter_07.md:97, snapshots/cycle_01/chapters/chapter_07.md:129, snapshots/cycle_01/chapters/chapter_07.md:239, snapshots/cycle_01/chapters/chapter_07.md:271, and snapshots/cycle_01/chapters/chapter_07.md:363 into grammatically complete clauses/sentences that keep the urgency but stop depending on isolated fragments for force.",
+      "acceptance_test": "Pass if each cited span reads with complete clauses or sentences carrying the pressure, rather than standalone clipped beats that omit required function words for style. Fail if the revised text still leans on fragment stacks like 'The light bill.' / 'Mortgage. Stroke. Marcia's draw.' / 'Hospital first. House after.' in those passages."
+    },
+    {
+      "finding_id": "ch07-prose-01",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:11; snapshots/cycle_01/chapters/chapter_07.md:75; snapshots/cycle_01/chapters/chapter_07.md:99; snapshots/cycle_01/chapters/chapter_07.md:169; snapshots/cycle_01/chapters/chapter_07.md:229; snapshots/cycle_01/chapters/chapter_07.md:387; snapshots/cycle_01/chapters/chapter_07.md:405",
+      "problem": "The chapter leans too often on the same 'as if' comparison hinge and personified-object simile template. The first few instances are vivid, but by the back half the repeated construction starts to feel automatic, flattening imagery that should keep surprising the reader.",
+      "rewrite_direction": "Vary or cut the repeated comparison template at snapshots/cycle_01/chapters/chapter_07.md:11, snapshots/cycle_01/chapters/chapter_07.md:75, snapshots/cycle_01/chapters/chapter_07.md:99, snapshots/cycle_01/chapters/chapter_07.md:169, snapshots/cycle_01/chapters/chapter_07.md:229, snapshots/cycle_01/chapters/chapter_07.md:387, and snapshots/cycle_01/chapters/chapter_07.md:405. Keep only the strongest two or three figurative turns and replace the rest with direct physical description or a different syntactic approach.",
+      "acceptance_test": "Pass if a close read of the cited passages no longer hits the same 'as if' personification hinge in more than two of those moments, and the surviving comparisons are materially distinct. Fail if both scenes still stack the same comparative template often enough to read like a default move."
+    }
+  ],
+  "summary": "FAIL. The fellowship-hall sequence has real pressure and the dialogue mostly honors distinct character registers, but the chapter still misses pass level because it collides with the supplied chapter-08 handoff and because the prose repeatedly falls into constitution-breaching clipped fragments plus an overused 'as if' comparison template."
+}

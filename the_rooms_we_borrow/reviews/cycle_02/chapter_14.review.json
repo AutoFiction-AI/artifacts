@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_14",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch14_booker_ending_consequence_drop",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:501; snapshots/cycle_02/chapters/chapter_14.md:503; snapshots/cycle_02/chapters/chapter_14.md:519; snapshots/cycle_02/chapters/chapter_14.md:520",
+      "problem": "The chapter finds its hardest, most chapter-specific aftershock when Tiana says she still needs the originals and Marcia nearly breaks on the bureaucracy's indifference, then it slides into storm foreshadowing. That closing move weakens consequence by ending on sequel setup rather than the most damaging truth this chapter has earned: Delroy is gone and the household still has to keep functioning under administrative pressure.",
+      "rewrite_direction": "Rework the closing sequence between snapshots/cycle_02/chapters/chapter_14.md:501 and snapshots/cycle_02/chapters/chapter_14.md:520 so the final beat lands on a concrete consequence of Delroy's exit. Either end closer to the paperwork aftershock at snapshots/cycle_02/chapters/chapter_14.md:501, snapshots/cycle_02/chapters/chapter_14.md:503, and snapshots/cycle_02/chapters/chapter_14.md:505, or keep the weather only if it forces an immediate action in the room at snapshots/cycle_02/chapters/chapter_14.md:513 or snapshots/cycle_02/chapters/chapter_14.md:519 rather than functioning as atmospheric trailer copy.",
+      "acceptance_test": "Pass if the revised ending between snapshots/cycle_02/chapters/chapter_14.md:501 and snapshots/cycle_02/chapters/chapter_14.md:520 closes on a visible changed condition or decision caused by Delroy's departure, Tiana's paperwork crisis, or both. Fail if the last note is still only abstract weather menace without any new action, choice, or household consequence."
+    },
+    {
+      "finding_id": "ch14_craft_trunk_lock_continuity",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:237; snapshots/cycle_02/chapters/chapter_14.md:241; snapshots/cycle_02/chapters/chapter_14.md:247",
+      "problem": "The cedar trunk becomes the proof-delivery mechanism for the remittance receipts, but the chapter gives Marcia instant access with no account of the lock state. In the allowed boundary context, chapter 13 ends with Tiana closing the trunk and turning the key. Opening it here by only dragging it out and flipping the latches creates an object-state continuity miss at the exact plot hinge where the receipts become public evidence.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_14.md:237 and snapshots/cycle_02/chapters/chapter_14.md:247, explicitly account for how Marcia accesses the trunk: show her retrieving the key, note that it was never actually relocked, or otherwise reconcile the lock state before the lid opens and the receipts come out at snapshots/cycle_02/chapters/chapter_14.md:253, snapshots/cycle_02/chapters/chapter_14.md:255, and snapshots/cycle_02/chapters/chapter_14.md:257.",
+      "acceptance_test": "Pass if the revised text around snapshots/cycle_02/chapters/chapter_14.md:237 and snapshots/cycle_02/chapters/chapter_14.md:247 makes the trunk's access method legible before Marcia opens it. Fail if she still reaches the receipts with no key, unlocking beat, or other continuity explanation."
+    },
+    {
+      "finding_id": "ch14_prose_room_proxy_repetition",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:211; snapshots/cycle_02/chapters/chapter_14.md:347; snapshots/cycle_02/chapters/chapter_14.md:469; snapshots/cycle_02/chapters/chapter_14.md:513; snapshots/cycle_02/chapters/chapter_14.md:519",
+      "problem": "The late chapter repeatedly hands emotional pressure to the room or weather instead of finding a fresh body-or-object consequence for each turn: 'The room stayed,' 'The room throbbed,' 'The room winced,' 'The room wanted instruction,' then thunder rolling outside. Because this construction appears well over twice, it stops reading as choice and starts reading as a fallback formula, flattening the prose texture the style bible asks to keep concrete and scene-specific.",
+      "rewrite_direction": "Revise the pressure beats at snapshots/cycle_02/chapters/chapter_14.md:347, snapshots/cycle_02/chapters/chapter_14.md:469, snapshots/cycle_02/chapters/chapter_14.md:513, and snapshots/cycle_02/chapters/chapter_14.md:519 so at least two of them register consequence through a body, gesture, object, or household task already in play rather than through room/weather personification. Keep the sensory bias toward touch, sound, and spatial pressure, but vary the carrier.",
+      "acceptance_test": "Pass if, in the revised cited beats, at least two of the current room-or-weather proxy sentences are replaced by concrete bodily or material observations tied to Marcia, Tiana, Micah, Kerene, Delroy, or the household objects onstage. Fail if three or more of those passages still rely on the room or exterior weather itself as the main emotional surrogate."
+    }
+  ],
+  "summary": "This is a strong confrontation chapter with distinct voices, credible leverage shifts, and no meaningful sanitization or dialogue-register collapse, but it still fails review on one high continuity break and two medium-quality issues: the ending backs away from its sharpest consequence into foreshadowing, and the late prose over-reuses room/weather proxy constructions."
+}

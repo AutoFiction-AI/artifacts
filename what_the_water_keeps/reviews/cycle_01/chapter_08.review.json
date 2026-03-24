@@ -1,0 +1,33 @@
+{
+  "chapter_id": "chapter_08",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch08-craft-001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_01/chapters/chapter_08.md:19; snapshots/cycle_01/chapters/chapter_08.md:267; snapshots/cycle_01/chapters/chapter_08.md:293; snapshots/cycle_01/chapters/chapter_08.md:321",
+      "problem": "The narration repeatedly drops into clipped fragments the constitution explicitly forbids: \"Not just him. Eli too.\", \"Not safe exactly.\", a standalone \"Because...\" sentence, and \"Gone.\" Once might read as pressure; at four beats it becomes a mannerism and breaks the chapter's own sentence-level rules.",
+      "rewrite_direction": "Rebuild the pressure beats around snapshots/cycle_01/chapters/chapter_08.md:19, snapshots/cycle_01/chapters/chapter_08.md:267, snapshots/cycle_01/chapters/chapter_08.md:293, and snapshots/cycle_01/chapters/chapter_08.md:321 into grammatically complete sentences. Keep the compression, but carry emphasis through cadence, punctuation, and image instead of subject-dropped or subordinate-only fragments.",
+      "acceptance_test": "Pass if the revised narration at the beats anchored by snapshots/cycle_01/chapters/chapter_08.md:19, snapshots/cycle_01/chapters/chapter_08.md:267, snapshots/cycle_01/chapters/chapter_08.md:293, and snapshots/cycle_01/chapters/chapter_08.md:321 contains no standalone clipped predicates such as \"Gone.\" and no dependent-clause-only sentence such as \"Because she could not yet bear...\"; fail if any of those beats still rely on elliptical clipping."
+    },
+    {
+      "finding_id": "ch08-prose-001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_01/chapters/chapter_08.md:35; snapshots/cycle_01/chapters/chapter_08.md:55; snapshots/cycle_01/chapters/chapter_08.md:97; snapshots/cycle_01/chapters/chapter_08.md:149; snapshots/cycle_01/chapters/chapter_08.md:255; snapshots/cycle_01/chapters/chapter_08.md:347",
+      "problem": "The narration starts reusing style-bible calibration words instead of freshly dramatizing character voice: Ruthie is repeatedly tagged through \"quiet\" and \"dry\" framing, while June is repeatedly tagged as \"exact/exactly.\" That over-literal reuse makes the characterization feel pre-labeled rather than observed in scene.",
+      "rewrite_direction": "In the kitchen-confrontation and copy-work beats around snapshots/cycle_01/chapters/chapter_08.md:35, snapshots/cycle_01/chapters/chapter_08.md:55, snapshots/cycle_01/chapters/chapter_08.md:97, snapshots/cycle_01/chapters/chapter_08.md:149, snapshots/cycle_01/chapters/chapter_08.md:255, and snapshots/cycle_01/chapters/chapter_08.md:347, replace the repeated label words with new concrete behavior and syntax cues. Let Ruthie's severity register through what she chooses to cut, stack, mend, and forbid; let June's precision register through the order and content of her questions and copying decisions.",
+      "acceptance_test": "Pass if, in the revised passages anchored by snapshots/cycle_01/chapters/chapter_08.md:35, snapshots/cycle_01/chapters/chapter_08.md:149, snapshots/cycle_01/chapters/chapter_08.md:255, and snapshots/cycle_01/chapters/chapter_08.md:347, Ruthie still reads as dry and controlling and June still reads as precise without the narrator having to reuse \"quiet/quieter/dry\" as Ruthie's main tag or \"exact/exactly\" more than once total for June in those beats; fail if the characterization still depends on those repeated labels."
+    }
+  ],
+  "summary": "The chapter's domestic argument is structurally sound and the speaker registers stay distinct, but it fails on sentence-level craft. Recurrent constitution-breaking clipped narration and visible reuse of style-bible label words flatten the prose enough to pull the draft below pass.",
+  "coverage_scene_ids": []
+}

@@ -1,0 +1,95 @@
+{
+  "acceptance_targets": [
+    "[CH16_CRAFT_001] PASS if the revised passage anchored at snapshots/cycle_01/chapters/chapter_16.md:183 and snapshots/cycle_01/chapters/chapter_16.md:292 lets a reader state, from on-page evidence, whether Deshawn received inhaler access that night and includes at least one specific physical marker of his condition; FAIL if the chapter still leaves medical status as speculation only.",
+    "[CH16_BOOKER_001] PASS if, between snapshots/cycle_01/chapters/chapter_16.md:236 and snapshots/cycle_01/chapters/chapter_16.md:306, at least one newly occurring event on-page creates irreversible leverage (legal, evidentiary, or custody) beyond waiting and recaps; FAIL if the section remains primarily status checks plus summary updates.",
+    "[F009] Pass if the revised podium/corridor exchange distinguishes Clay's polished performance voice from Lena's stressed refusal voice without both sounding equally formal; fail if revised speech remains mostly uncontracted and similarly clause-heavy across speakers."
+  ],
+  "chapter_id": "chapter_16",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if the revised passage anchored at snapshots/cycle_01/chapters/chapter_16.md:183 and snapshots/cycle_01/chapters/chapter_16.md:292 lets a reader state, from on-page evidence, whether Deshawn received inhaler access that night and includes at least one specific physical marker of his condition; FAIL if the chapter still leaves medical status as speculation only.",
+      "chapter_id": "chapter_16",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_16.md:183; snapshots/cycle_01/chapters/chapter_16.md:189; snapshots/cycle_01/chapters/chapter_16.md:292; snapshots/cycle_01/chapters/chapter_16.md:316",
+      "finding_id": "CH16_CRAFT_001",
+      "problem": "Sanitization/timidity drift at the peak custody-risk beat: the chapter raises potentially life-threatening inhaler deprivation, but the prose retreats into administrative opacity and speculative imagining instead of rendering a concrete bodily/institutional consequence on-page.",
+      "rewrite_direction": "Revise the jail sequence at snapshots/cycle_01/chapters/chapter_16.md:183, snapshots/cycle_01/chapters/chapter_16.md:292, and snapshots/cycle_01/chapters/chapter_16.md:316 to deliver one verifiable custody-medical outcome before chapter close (for example: confirmed administration, documented refusal with staff name/time, or observed respiratory decline through a permitted contact point). Keep Lena in-POV, but replace inference-only narration with concrete consequence.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if, between snapshots/cycle_01/chapters/chapter_16.md:236 and snapshots/cycle_01/chapters/chapter_16.md:306, at least one newly occurring event on-page creates irreversible leverage (legal, evidentiary, or custody) beyond waiting and recaps; FAIL if the section remains primarily status checks plus summary updates.",
+      "chapter_id": "chapter_16",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_16.md:236; snapshots/cycle_01/chapters/chapter_16.md:288; snapshots/cycle_01/chapters/chapter_16.md:306",
+      "finding_id": "CH16_BOOKER_001",
+      "problem": "Scene-two momentum plateaus in a waiting-loop: after a strong public-refusal beat, the chapter spends a long stretch in procedural holding without a fresh on-page leverage shift until the off-page publication update, weakening causal propulsion toward the close.",
+      "rewrite_direction": "Rework the middle-late jail stretch at snapshots/cycle_01/chapters/chapter_16.md:236 and snapshots/cycle_01/chapters/chapter_16.md:288 so at least one live event changes tactical position before snapshots/cycle_01/chapters/chapter_16.md:306 (for example: documented intake breach, defense escalation triggered by new evidence, or a forced choice that materially alters the overnight strategy).",
+      "severity": "MEDIUM",
+      "source": "booker",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if the revised podium/corridor exchange distinguishes Clay's polished performance voice from Lena's stressed refusal voice without both sounding equally formal; fail if revised speech remains mostly uncontracted and similarly clause-heavy across speakers.",
+      "chapter_id": "chapter_16",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:5250",
+      "finding_id": "F009",
+      "problem": "The same register issue recurs in a peak-stakes press scene: dialogue repeatedly defaults to formal legal exposition and shared rhetorical shape, reducing character distinctness and scene volatility.",
+      "rewrite_direction": "Tighten and de-formalize key turns at snapshots/cycle_01/FINAL_NOVEL.md:5250, snapshots/cycle_01/FINAL_NOVEL.md:5264, snapshots/cycle_01/FINAL_NOVEL.md:5288, snapshots/cycle_01/FINAL_NOVEL.md:5308, and snapshots/cycle_01/FINAL_NOVEL.md:5312. Keep legal precision, but move spoken texture toward contractions, asymmetry, and pressure-specific idiolect contrast.",
+      "severity": "MEDIUM",
+      "source": "booker_global",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "a4e08809b7f8a096c6d66c78e12613a41667de604fb81a09f0ef3d67be7062b5",
+  "must_fix_count": 3,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "When edge cases arise, choose the version that preserves uncomfortable specificity and character accountability; do not replace difficult scenes with procedural summary, and do not mute class, race, sexuality, or institutional cruelty when those forces are actively shaping choices.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene with violence, racism, grief, or moral compromise is rendered in abstract or polite shorthand, revise to restore specific bodily, social, and material consequence before accepting the draft.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the baseline in contemporary Mississippi speech; uncontracted forms are reserved for formality, emphasis, or social performance.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "rotate structural textures across chapters: procedural surge, quiet domestic interval, document-driven slow burn, dread preparation, aftermath inventory, and information-turn chapters; avoid repeating scene count plus dialogue density pattern in adjacent chapters.",
+      "diction": "literary but grounded; precise legal and forensic terms when needed, balanced by lived vernacular and local material detail.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third person anchored primarily to Lena, with brief controlled expansions only when factual clarity requires it.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "alternate compressed procedural sentences with longer sensory-emotional lines so pressure and reflection keep rebalancing.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

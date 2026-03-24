@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_11",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch11-f001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_02/chapters/chapter_11.md:163",
+      "problem": "The downstairs tailor-shop owner is named \"Mr. Yazdi\" here, contradicting the continuity sheet's canonical geography, which places Lena above Mr. Velez's tailor shop. This is a direct location-fact mismatch in a fixed home setting.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_11.md:163, replace the conflicting proper name with the continuity-sheet canon or recast the sentence so the neon sign is observed without assigning the shop to a different owner.",
+      "acceptance_test": "PASS if the revised passage at snapshots/cycle_02/chapters/chapter_11.md:163 identifies the downstairs tailor shop consistently with the continuity sheet or omits the owner name entirely; FAIL if \"Mr. Yazdi\" or any second owner identity still appears for Lena's downstairs shop."
+    },
+    {
+      "finding_id": "ch11-f002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_02/chapters/chapter_11.md:231; snapshots/cycle_02/chapters/chapter_11.md:297; snapshots/cycle_02/chapters/chapter_11.md:299; snapshots/cycle_02/chapters/chapter_11.md:301; snapshots/cycle_02/chapters/chapter_11.md:381; snapshots/cycle_02/chapters/chapter_11.md:477",
+      "problem": "The chapter explains Lena's suspicion through explicit machine/build metaphors too many times in close succession: Eli becomes a \"pressure sensor,\" his room feels assembled, Lena hears \"workmanship,\" then \"carpentry,\" then \"instrumentation.\" After the first one or two hits, the pattern turns into a prose tic and starts naming the uncanny thesis instead of trusting the scene evidence.",
+      "rewrite_direction": "Rework the explanatory beats at snapshots/cycle_02/chapters/chapter_11.md:231, snapshots/cycle_02/chapters/chapter_11.md:297, snapshots/cycle_02/chapters/chapter_11.md:299, snapshots/cycle_02/chapters/chapter_11.md:301, snapshots/cycle_02/chapters/chapter_11.md:381, and snapshots/cycle_02/chapters/chapter_11.md:477 so at least some of the wrongness is carried by observable lag, copied phrasing, bodily response, or social consequence rather than named mechanism metaphors. One sharp construction metaphor can stay; the stack should not.",
+      "acceptance_test": "PASS if, across the revised passages at snapshots/cycle_02/chapters/chapter_11.md:231, snapshots/cycle_02/chapters/chapter_11.md:297, snapshots/cycle_02/chapters/chapter_11.md:299, snapshots/cycle_02/chapters/chapter_11.md:301, snapshots/cycle_02/chapters/chapter_11.md:381, and snapshots/cycle_02/chapters/chapter_11.md:477, no more than two beats describe Eli or June through explicit machine/build labels and at least two beats let the unease register through concrete behavior or sensation alone; FAIL if three or more such labels remain clustered across those same suspicion beats."
+    }
+  ],
+  "summary": "A strong discovery chapter with tight Lena focalization, distinct character voices, and effective scene-level escalation, but it fails craft on a hard continuity contradiction and fails prose because the uncanny case is over-explained through a repeated machine-construction metaphor stack. Dialogue remains a pass: contractions, leverage shifts, and idiolect separation all stay consistent with the style bible."
+}

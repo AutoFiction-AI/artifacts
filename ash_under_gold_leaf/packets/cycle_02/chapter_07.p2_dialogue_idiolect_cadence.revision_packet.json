@@ -1,0 +1,82 @@
+{
+  "acceptance_targets": [
+    "[CH07-F003] PASS if at least half of Luis's revised lines in snapshots/cycle_02/chapters/chapter_07.md:161-166, snapshots/cycle_02/chapters/chapter_07.md:237-238, and snapshots/cycle_02/chapters/chapter_07.md:297-302 contain no transit/route/bus metaphor while preserving his direct sponsor posture; FAIL if those spans still stack repeated transit analogies line after line.",
+    "[CH07-F004] PASS if, in the revised cited spans, each of the three speakers has at least one line whose syntax/word choice is not plausibly interchangeable with the others; FAIL if the lines still read as the same authorial cadence with swapped names."
+  ],
+  "chapter_id": "chapter_07",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if at least half of Luis's revised lines in snapshots/cycle_02/chapters/chapter_07.md:161-166, snapshots/cycle_02/chapters/chapter_07.md:237-238, and snapshots/cycle_02/chapters/chapter_07.md:297-302 contain no transit/route/bus metaphor while preserving his direct sponsor posture; FAIL if those spans still stack repeated transit analogies line after line.",
+      "chapter_id": "chapter_07",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_07.md:143; snapshots/cycle_02/chapters/chapter_07.md:161; snapshots/cycle_02/chapters/chapter_07.md:237; snapshots/cycle_02/chapters/chapter_07.md:297",
+      "finding_id": "CH07-F003",
+      "problem": "Luis's idiolect over-literalizes his style-bible stress signature: repeated route/bus/checklist metaphors dominate multiple exchanges, making the voice feel mechanically programmed rather than situationally alive.",
+      "rewrite_direction": "In snapshots/cycle_02/chapters/chapter_07.md:161-166, snapshots/cycle_02/chapters/chapter_07.md:237-238, and snapshots/cycle_02/chapters/chapter_07.md:297-302, keep one transit metaphor per exchange maximum and replace the rest with plainspoken, emotionally specific lines that still fit Luis's moderate-contraction, accountability-first register.",
+      "severity": "MEDIUM",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if, in the revised cited spans, each of the three speakers has at least one line whose syntax/word choice is not plausibly interchangeable with the others; FAIL if the lines still read as the same authorial cadence with swapped names.",
+      "chapter_id": "chapter_07",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_07.md:215; snapshots/cycle_02/chapters/chapter_07.md:267; snapshots/cycle_02/chapters/chapter_07.md:325; snapshots/cycle_02/chapters/chapter_07.md:347",
+      "finding_id": "CH07-F004",
+      "problem": "Several secondary speakers (Eileen, the Cypress grandmother, Marcy) converge toward similarly polished, quote-ready phrasing, reducing idiolect separation and making pressure-specific register differences less distinct than required.",
+      "rewrite_direction": "Retune speech at snapshots/cycle_02/chapters/chapter_07.md:215, snapshots/cycle_02/chapters/chapter_07.md:267, and snapshots/cycle_02/chapters/chapter_07.md:325-352 so each speaker carries a unique rhythm and lexical field tied to role: AA ritual brevity for Eileen, colloquial bluntness for the grandmother, administrative precision for Marcy.",
+      "severity": "MEDIUM",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "16c6e33215fcea1beeb54e399e8ae0cdac8884ec48d170d2bb9ce5a6485d805e",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on dialogue realism and voice separation: idiolect fidelity, leverage shifts, pressure cadence, anti-transcript behavior, natural colloquial texture (contractions/interruptions/slang when character-true), and pressure-true profanity usage per aesthetic risk policy.",
+    "key": "p2_dialogue_idiolect_cadence",
+    "label": "dialogue/idiolect/cadence fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "When choosing between reputationally safe abstraction and specific discomfort, choose specificity. Render addiction, sexuality, deceit, class shame, and grief at lived scale. In edge cases, preserve character truth and causal accountability over reader comfort or institutional decorum.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene demands bodily, moral, or economic specificity, euphemistic phrasing is treated as a failed draft and must be rewritten with concrete stakes and observable consequence.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the spoken default; full forms appear only for emphasis, ritual language, or character-specific formal posture",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate scene density and pressure modes: pair high-conflict chapters with quiet domestic or documentary chapters, vary dialogue-to-interiority ratios, and prevent identical chapter skeletons in consecutive sequence.",
+      "diction": "contemporary literary diction with class-aware, borough-specific concreteness; avoid prestige-neutral workshop language",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third centered on Marisol, with rare brief distance expansions for institutional scenes",
+      "narrative_tense": "past tense",
+      "rhythm_target": "alternating tensile compression and reflective extension; line-level cadence should carry emotional pressure, not just information",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

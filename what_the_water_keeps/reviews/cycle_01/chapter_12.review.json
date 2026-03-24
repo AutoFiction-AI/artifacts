@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_12",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch12-craft-001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_12",
+      "evidence": "`snapshots/cycle_01/chapters/chapter_12.md:225` calls Rafe's line \"the cruelest sentence in the chapter,\" which is chapter-level meta language inside a close-third scene.",
+      "problem": "This is process leakage at the chapter's emotional hinge. Instead of staying inside Della's body and judgment, the narration steps outside the fiction and comments on the line from an authorial perch, breaking the constitution's no-process-leakage rule and puncturing immersion.",
+      "rewrite_direction": "Revise the beat centered on `snapshots/cycle_01/chapters/chapter_12.md:223`, `snapshots/cycle_01/chapters/chapter_12.md:225`, and `snapshots/cycle_01/chapters/chapter_12.md:226` so the hurt lands through Della's bodily reaction, memory, or immediate perception of the slope. Remove any wording that names \"the chapter\" or otherwise ranks the sentence from outside the scene.",
+      "acceptance_test": "Pass if the revised passage anchored at `snapshots/cycle_01/chapters/chapter_12.md:225` contains no meta/chapter-level terminology and Della's reaction is rendered entirely in-scene; fail if the narration still tells the reader how the line ranks \"in the chapter\" or comments on it from outside close third."
+    },
+    {
+      "finding_id": "ch12-craft-002",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "From `snapshots/cycle_01/chapters/chapter_12.md:7` through `snapshots/cycle_01/chapters/chapter_12.md:29`, the chapter runs twelve consecutive paragraphs of blocking and dialogue before the next Della-internal beat at `snapshots/cycle_01/chapters/chapter_12.md:31`.",
+      "problem": "The opening drops focalized interiority long enough to make the scene read like external coverage. Under the stated review rule, this qualifies as a 10+ paragraph stretch with no thought, sensation, memory, or self-assessment from the focalizer, which weakens the close-third hold right when the chapter is establishing fresh pressure.",
+      "rewrite_direction": "In the opening exchange spanning `snapshots/cycle_01/chapters/chapter_12.md:7`, `snapshots/cycle_01/chapters/chapter_12.md:23`, `snapshots/cycle_01/chapters/chapter_12.md:25`, and `snapshots/cycle_01/chapters/chapter_12.md:29`, add Della-specific sensation, appraisal, or self-assessment before Lucille finishes the schedule briefing. Keep the new material local and embodied rather than expository.",
+      "acceptance_test": "Pass if the revised span from `snapshots/cycle_01/chapters/chapter_12.md:7` through `snapshots/cycle_01/chapters/chapter_12.md:29` includes at least two paragraphs with Della's internal experience before `snapshots/cycle_01/chapters/chapter_12.md:31`; fail if that opening still reads as twelve straight paragraphs of external observation and dialogue."
+    },
+    {
+      "finding_id": "ch12-prose-001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "`snapshots/cycle_01/chapters/chapter_12.md:133` says Della \"answered the literal question and not the real one,\" which closely echoes her style-bible stress tell.",
+      "problem": "The prose surfaces calibration notes instead of dramatizing character behavior. By almost naming Della's stress tell verbatim, the narration reads like imported character-sheet annotation rather than discovered scene language, which flattens voice and exposes the scaffolding.",
+      "rewrite_direction": "Rework the exchange around `snapshots/cycle_01/chapters/chapter_12.md:131`, `snapshots/cycle_01/chapters/chapter_12.md:133`, and `snapshots/cycle_01/chapters/chapter_12.md:139` so Della's dodge is inferred from the literal wagon-answer, Lucille's response, and the social pressure in the beat. Do not label the move with abstract narrator explanation.",
+      "acceptance_test": "Pass if, in the revised passage anchored at `snapshots/cycle_01/chapters/chapter_12.md:133`, a reader can infer that Della dodges the real issue without the narration explicitly naming it as the literal question versus the real one; fail if the revised prose still states the stress tell in explanatory terms."
+    },
+    {
+      "finding_id": "ch12-prose-002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "`snapshots/cycle_01/chapters/chapter_12.md:97`, `snapshots/cycle_01/chapters/chapter_12.md:151`, `snapshots/cycle_01/chapters/chapter_12.md:205`, and `snapshots/cycle_01/chapters/chapter_12.md:295` all open beats with \"Della looked ...,\" while `snapshots/cycle_01/chapters/chapter_12.md:139` and `snapshots/cycle_01/chapters/chapter_12.md:225` repeat the same \"That was ...\" evaluative frame.",
+      "problem": "These repeated sentence scaffolds are visible tics inside an otherwise strong chapter. The recurring `Della looked` lead-in and `That was` narrator verdicts make perception and judgment arrive in the same prefabricated shape, which flattens the prose and signals autopilot.",
+      "rewrite_direction": "Revise the beats centered on `snapshots/cycle_01/chapters/chapter_12.md:97`, `snapshots/cycle_01/chapters/chapter_12.md:139`, `snapshots/cycle_01/chapters/chapter_12.md:151`, `snapshots/cycle_01/chapters/chapter_12.md:205`, `snapshots/cycle_01/chapters/chapter_12.md:225`, and `snapshots/cycle_01/chapters/chapter_12.md:295` so several of them enter through different engines: action, touch, sound, bodily reaction, or free-indirect thought rather than the same perception/evaluation templates.",
+      "acceptance_test": "Pass if the revised set of passages at `snapshots/cycle_01/chapters/chapter_12.md:97`, `snapshots/cycle_01/chapters/chapter_12.md:139`, `snapshots/cycle_01/chapters/chapter_12.md:151`, `snapshots/cycle_01/chapters/chapter_12.md:205`, `snapshots/cycle_01/chapters/chapter_12.md:225`, and `snapshots/cycle_01/chapters/chapter_12.md:295` contains no more than one `Della looked ...` opening and no more than one `That was ...` evaluative sentence; fail if those scaffolds still recur across the revised chapter."
+    }
+  ],
+  "summary": "Booker and dialogue are the strongest lenses here: the dam timetable, Della's failing body, Rafe's dam labor, and the landslip all escalate causally, and the speakers remain distinct without contraction drift or continuity/tense violations. The chapter still fails review because a high-severity meta leak at line 225 breaks narrative illusion, the opening lets close-third interiority disappear for a twelve-paragraph stretch, and the prose shows visible scaffolding through near-direct style-bible reuse and repeated sentence formulas."
+}

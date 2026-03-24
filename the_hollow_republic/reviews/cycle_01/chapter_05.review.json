@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_05",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch05-craft-001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_05",
+      "evidence": "Lucien orders Ferrand to remove the satchel and later says Ferrand will not recruit in the refuge, but Ferrand still leaves unescorted and is privately working Abel in the tunnels moments later (snapshots/cycle_01/chapters/chapter_05.md:75, snapshots/cycle_01/chapters/chapter_05.md:179, snapshots/cycle_01/chapters/chapter_05.md:207, snapshots/cycle_01/chapters/chapter_05.md:217, snapshots/cycle_01/chapters/chapter_05.md:323).",
+      "problem": "The room correctly reads Ferrand as an active bomb-risk and recruiting threat, then takes no concrete action to eject, tail, or contain him. That creates a scene-mechanics gap at the exact hinge where Abel's next step needs to feel causally forced rather than author-permitted, and it weakens Lucien/Clemence/Nadir's competence under pressure.",
+      "rewrite_direction": "Revise the transition around snapshots/cycle_01/chapters/chapter_05.md:203, snapshots/cycle_01/chapters/chapter_05.md:217, snapshots/cycle_01/chapters/chapter_05.md:313, and snapshots/cycle_01/chapters/chapter_05.md:323 so Ferrand's continued access to Abel is earned on the page. Options: show Lucien, Clemence, or Nadir trying to throw him out and failing for a concrete reason; show Ferrand exploiting a visible distraction or route advantage; or show why no one can risk a physical confrontation while he is carrying powder.",
+      "acceptance_test": "Pass if a reader can point to an explicit intervening action, obstacle, or deception between snapshots/cycle_01/chapters/chapter_05.md:203 and snapshots/cycle_01/chapters/chapter_05.md:323 that explains how Ferrand remains inside the refuge long enough to recruit Abel privately. Fail if he still moves from exposed threat to private tunnel access without any on-page containment attempt or clear constraint."
+    },
+    {
+      "finding_id": "ch05-prose-001",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_05",
+      "evidence": "The narration repeatedly snaps into clipped fragments: 'Not Lucien's voice' (snapshots/cycle_01/chapters/chapter_05.md:11), 'Not rumor. Not fear' (snapshots/cycle_01/chapters/chapter_05.md:43), 'Or trying to give the room the idea of it' (snapshots/cycle_01/chapters/chapter_05.md:47), 'Not fear in the abstract. Not some floating pulse' (snapshots/cycle_01/chapters/chapter_05.md:275), and 'Not because the quarry was innocent. It was not' (snapshots/cycle_01/chapters/chapter_05.md:353).",
+      "problem": "This chapter uses clipped fragment narration often enough to become a visible mannerism, and several instances cross the constitution's explicit ban on elliptical clipping in narration. Instead of reading as hard compression, the effect starts to feel like manufactured emphasis.",
+      "rewrite_direction": "Recast the fragment-heavy narration around snapshots/cycle_01/chapters/chapter_05.md:11, snapshots/cycle_01/chapters/chapter_05.md:43, snapshots/cycle_01/chapters/chapter_05.md:47, snapshots/cycle_01/chapters/chapter_05.md:275, and snapshots/cycle_01/chapters/chapter_05.md:353 into complete sentences with explicit subjects and verbs. Keep the pressure by adjusting sentence length, paragraphing, or punctuation rather than relying on standalone fragments.",
+      "acceptance_test": "Pass if those cited spans read as fully grammatical narration with explicit subjects and verbs, and the only fragmentary text left is quoted material such as the ledger entry at snapshots/cycle_01/chapters/chapter_05.md:277. Fail if standalone narration fragments like 'Not Lucien's voice' or 'Not rumor. Not fear.' remain in the revised passage."
+    },
+    {
+      "finding_id": "ch05-prose-002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "Several key realizations arrive through the same negate-then-correct construction: 'It was not the bomb itself ... It was the way every eye had found its own use for the thing' (snapshots/cycle_01/chapters/chapter_05.md:107), 'It was not a bomb plot written cleanly out. It was worse' (snapshots/cycle_01/chapters/chapter_05.md:271), and 'Not because the quarry was innocent. It was not' (snapshots/cycle_01/chapters/chapter_05.md:353).",
+      "problem": "The repeated 'not X / actually Y' pivot becomes a chapter-level prose tic. Because it lands on multiple major interpretive beats, Elise's thinking starts to sound mechanically processed in the same cadence instead of freshly observed each time.",
+      "rewrite_direction": "Vary the sentence architecture at snapshots/cycle_01/chapters/chapter_05.md:107, snapshots/cycle_01/chapters/chapter_05.md:271, and snapshots/cycle_01/chapters/chapter_05.md:353. Let at least two of those insights arrive directly through image, consequence, or plain assertion instead of first negating an alternative.",
+      "acceptance_test": "Pass if, across the cited lines, no more than one passage still hinges on the current negate-then-pivot structure and the other revised beats land through distinct sentence shapes. Fail if all three revelations still rely on the same 'not X / it was Y' maneuver."
+    }
+  ],
+  "summary": "The chapter's macro shape is strong: the Ferrand/Lucien split sharpens, Abel's susceptibility becomes concrete, Elise makes a consequential choice, and the major voices remain distinct and style-bible-consistent. It fails on scene mechanics and prose execution, though: Ferrand's unrestricted movement after he is exposed as a bomb risk creates a real craft gap, and the narration's clipped fragments and repeated negation pivots are now visible habits rather than controlled variation."
+}

@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_10",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch10_craft_001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:335; snapshots/cycle_01/chapters/chapter_10.md:551",
+      "problem": "The chapter establishes the Cape trip as \"last August\" in an October 2005 timeline, then writes Nate's notebook entry as \"Cape trip Aug 2004.\" Because the notebook is the chapter's culminating survival document, the wrong year reads as a continuity contradiction and undercuts the scene's central proof that Nate is finally recording what he has learned.",
+      "rewrite_direction": "Revise snapshots/cycle_01/chapters/chapter_10.md:549-552 so the notebook's Cape entry matches the timing already fixed at snapshots/cycle_01/chapters/chapter_10.md:325-335. If Nate is uncertain, keep the uncertainty on the restaurant name, oysters, or other missing details, not on the year the scene has already pinned down.",
+      "acceptance_test": "Pass if a cold read of snapshots/cycle_01/chapters/chapter_10.md:549-552 produces the same dating as snapshots/cycle_01/chapters/chapter_10.md:325-335, with no 2004 reference or second incompatible year. Fail if the notebook still dates the Cape trip a year earlier than Sarah does."
+    },
+    {
+      "finding_id": "ch10_dialogue_001",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:191; snapshots/cycle_01/chapters/chapter_10.md:193; snapshots/cycle_01/chapters/chapter_10.md:537",
+      "problem": "The chapter leaks calibration-only style-bible language into the text. Marco's \"You seem different\" followed by Nate's internal \"Good different,\" plus the notebook note that Renata \"calls them good,\" reconstructs the banned example-line logic closely enough to read as template reuse rather than lived dialogue and distinct character memory.",
+      "rewrite_direction": "Revise snapshots/cycle_01/chapters/chapter_10.md:191-193 and snapshots/cycle_01/chapters/chapter_10.md:537 so the beat remains that other people notice Nate-as-Dominic has changed, but Marco says it in Marco's own bar-friend register and Nate's note about Renata records her habit without echoing the calibration phrasing.",
+      "acceptance_test": "Pass if the revised passages at snapshots/cycle_01/chapters/chapter_10.md:191-193 and snapshots/cycle_01/chapters/chapter_10.md:537 no longer use the distinctive phrase \"good different\" or a recognizable reconstruction of the example-line sequence, and the two passages sound like different speakers with different relationships to Dominic. Fail if the example-line wording or an obvious near-copy still remains."
+    },
+    {
+      "finding_id": "ch10_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:155; snapshots/cycle_01/chapters/chapter_10.md:313; snapshots/cycle_01/chapters/chapter_10.md:355; snapshots/cycle_01/chapters/chapter_10.md:507",
+      "problem": "The chapter leans repeatedly on the same emphasis scaffold: \"Not X. Not Y. Just Z.\" / \"Not X. Just Y.\" It works once, but by the third and fourth use the prose starts announcing emphasis through a reusable template instead of moment-specific rhythm.",
+      "rewrite_direction": "Recast at least two of the cited passages at snapshots/cycle_01/chapters/chapter_10.md:155, snapshots/cycle_01/chapters/chapter_10.md:313-314, snapshots/cycle_01/chapters/chapter_10.md:355-356, and snapshots/cycle_01/chapters/chapter_10.md:507 so Marco's scrutiny, Sarah's stillness, Sarah's withdrawal, and Ray's exit land through different sentence architectures rather than the same negation ladder.",
+      "acceptance_test": "Pass if no more than two of those four sites still use the \"Not ... Just ...\" emphasis pattern and each revised beat remains legible on a cold read for its local dramatic function. Fail if three or more of the cited moments still rely on the same formula."
+    }
+  ],
+  "summary": "FAIL. The chapter's concealment engine escalates cleanly across Marco, Sarah, and the office/notebook coda, but it does not clear review because a HIGH notebook-date contradiction breaks continuity, a HIGH calibration-line leak blurs character voice discipline, and a MEDIUM repeated negation formula starts to flatten the prose."
+}

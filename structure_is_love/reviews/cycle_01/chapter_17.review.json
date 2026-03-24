@@ -1,0 +1,79 @@
+{
+  "chapter_id": "chapter_17",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH17-F001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_01/chapters/chapter_17.md:259",
+      "problem": "At the precise hinge where the semifinal ends, the narration compresses into abstract summary (\"The handshake happened. The announcement happened.\") instead of rendering embodied consequence. This is sanitization drift (summary replacing scene) at a moment that needs immediate lived detail.",
+      "rewrite_direction": "Expand the retirement-protocol beat at snapshots/cycle_01/chapters/chapter_17.md:259 and snapshots/cycle_01/chapters/chapter_17.md:261 before moving to snapshots/cycle_01/chapters/chapter_17.md:263. Keep the same plot facts, but replace summary with concrete physical and social beats (Anika's body response, crowd behavior, official procedure friction).",
+      "acceptance_test": "PASS if the revised span at snapshots/cycle_01/chapters/chapter_17.md:259 contains at least two concrete physical actions/reactions and one specific social consequence during retirement protocol; FAIL if the beat is still delivered primarily through abstract summary phrasing."
+    },
+    {
+      "finding_id": "CH17-F002",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_01/chapters/chapter_17.md:271; snapshots/cycle_01/chapters/chapter_17.md:313; snapshots/cycle_01/chapters/chapter_17.md:447",
+      "problem": "After the decisive turn lands, the chapter reiterates the same thematic claim (health over sponsorship money) in multiple explicit declarations, which blunts momentum and reduces subtext.",
+      "rewrite_direction": "Tighten repeated thesis statements across snapshots/cycle_01/chapters/chapter_17.md:271, snapshots/cycle_01/chapters/chapter_17.md:313, and snapshots/cycle_01/chapters/chapter_17.md:447. Keep one public statement and one private statement, then let remaining beats carry through behavior, logistics, and consequence rather than re-declaration.",
+      "acceptance_test": "PASS if each aftermath scene from snapshots/cycle_01/chapters/chapter_17.md:263 onward introduces new consequence information without restating the same principle in direct thesis language; FAIL if three separate speeches still restate the same moral line."
+    },
+    {
+      "finding_id": "CH17-F003",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_01/chapters/chapter_17.md:199; snapshots/cycle_01/chapters/chapter_17.md:211; snapshots/cycle_01/chapters/chapter_17.md:265",
+      "problem": "In peak-pressure institutional exchanges, turns run long and policy-formal, muting interruption and making speaker rhythms closer than they should be. The result edges toward transcript-like exposition under stress.",
+      "rewrite_direction": "Rework the exchanges at snapshots/cycle_01/chapters/chapter_17.md:199, snapshots/cycle_01/chapters/chapter_17.md:211, and snapshots/cycle_01/chapters/chapter_17.md:265 so pressure shows in shorter, interrupted turns. Differentiate idiolects: Lindsay should hedge and reframe, Morales should stay clipped and clinical, Ravi should shift from procedural to boundary-setting without memo diction.",
+      "acceptance_test": "PASS if a read-aloud of the revised spans shows at least one interruption/overlap per exchange and each speaker is identifiable by syntax/lexicon alone; FAIL if the lines remain long interchangeable policy statements."
+    },
+    {
+      "finding_id": "CH17-F004",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_01/chapters/chapter_17.md:3; snapshots/cycle_01/chapters/chapter_17.md:417; snapshots/cycle_01/chapters/chapter_17.md:443",
+      "problem": "A recurring \"smelled/looked like X\" emotional-equivalence construction repeats beyond twice and starts reading as formula rather than fresh perception, flattening image texture.",
+      "rewrite_direction": "Revise at snapshots/cycle_01/chapters/chapter_17.md:3, snapshots/cycle_01/chapters/chapter_17.md:417, and snapshots/cycle_01/chapters/chapter_17.md:443 by replacing at least two template repeats with different sensory mechanics (movement, pressure, sound, or object interaction) while preserving scene meaning.",
+      "acceptance_test": "PASS if no more than two of these formula constructions remain across the cited lines and the replacements still convey mood concretely; FAIL if the same template appears three or more times in those spans."
+    },
+    {
+      "finding_id": "CH17-F005",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_01/chapters/chapter_17.md:47",
+      "problem": "\"touch, sound, and space\" reads as an over-literal style-control checklist rather than organic interior language, signaling mechanical reuse of style-bible sensory tokens.",
+      "rewrite_direction": "Replace the triad label at snapshots/cycle_01/chapters/chapter_17.md:47 with an in-world grounding cue tied to this exact court moment (specific noise, contact point, or visual anchor), and align nearby reflection at snapshots/cycle_01/chapters/chapter_17.md:55 to the same personal idiolect.",
+      "acceptance_test": "PASS if the revised grounding beat in the cited span is concrete and character-specific without abstract category labels (\"touch/sound/space\"); FAIL if it remains a three-item sensory checklist."
+    },
+    {
+      "finding_id": "CH17-F006",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_01/chapters/chapter_17.md:341; snapshots/cycle_01/chapters/chapter_17.md:345; snapshots/cycle_01/chapters/chapter_17.md:351",
+      "problem": "Timidity: the narrative softens sponsor-side coercion too quickly by shifting Lindsay into conciliatory self-disclosure before institutional consequences finish landing, which diffuses pressure that the chapter just built.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_17.md:341 through snapshots/cycle_01/chapters/chapter_17.md:353, preserve complexity but delay or compress personal softening so the scene exits with unresolved institutional friction. Keep consequence-forward tension through the handoff to transit at snapshots/cycle_01/chapters/chapter_17.md:357.",
+      "acceptance_test": "PASS if the revised lobby exchange ends with active unresolved friction (not mutual absolution) and Anika exits carrying that tension into the next beat; FAIL if the scene resolves into understanding that neutralizes the prior coercive pressure."
+    }
+  ],
+  "summary": "Chapter 17 hits required boundary beats and preserves core causal consequence (medical retirement and sponsor loss), with no direct continuity-sheet contradictions detected. Voice for Anika/Ravi remains mostly style-bible consistent, but the chapter still fails this pass on craft rigor: one HIGH sanitization-by-summary hinge beat, plus MEDIUM-level structural reiteration, pressure-flattened institutional dialogue, repeated prose formulas, token-list mechanicality, and timidity in late-scene de-escalation.",
+  "coverage_scene_ids": [
+    "opening_games_breakthrough",
+    "pain_recurrence_and_risk_math",
+    "medical_timeout_and_retirement_call",
+    "sponsor_pressure_and_public_statement",
+    "postmatch_financial_aftershock"
+  ]
+}

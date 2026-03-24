@@ -1,0 +1,425 @@
+# Chapter 8
+
+At 5:18 a.m., with rain still ticking the kitchen window, the next unknown number finally came. Beau said, "Get down to Legal Aid. Don't wait for coffee."
+
+She was halfway into yesterday's jeans when he added, "It's Ava."
+
+The line went dead before she could ask anything else.
+
+The Mercer Public Defense Annex sat two blocks off the square in a one-story brick building that used to be a feed office. By the time Lena turned onto Willow, the street was already clogged with cruisers, church vans, and people who had come in house shoes because a cousin had texted them one sentence and they had not stopped to get dressed. Yellow tape stretched from an oak tree to a parking meter, then bowed inward where shoulders kept hitting it.
+
+A woman in a denim robe screamed, "She got my boy out when nobody else answered the phone," and slammed both palms against a deputy's chest. He staggered, caught himself, and looked twenty years old.
+
+Lena parked three blocks out because she had no county placard anymore. Suspension meant she had no lane, no clipped nod from uniforms, no right to cross tape. It also meant nobody had the authority to stop her from walking through the middle of people who knew her name and had reasons to hate what it represented.
+
+"Detective Waller." Sergeant Nia Tolliver stepped in front of her with both hands up, then rubbed her thumb against a strip of pink athletic tape she kept wrapped around her index finger. Lena remembered the finger from softball season years back; Nia had dislocated it twice and never took the tape off entirely. "You're still on paper. I can't let you in unless command clears it."
+
+"Then call command while I keep your people from getting run over," Lena said.
+
+Nia worried the pink tape with her thumb until it rolled at the edge. "You ain't wrong. Stay on my shoulder."
+
+They pushed together through the tape gap while a man behind the tape threw a plastic water bottle that hit the annex wall hard enough to burst. Warm water ran down brick like sweat.
+
+Inside, the building smelled like bleach and copier heat. Fluorescent lights buzzed. The reception desk had been knocked sideways, and one of the waiting-room chairs had a shoe print on the seat, heel dug deep into cheap vinyl. Ava's office door stood open with a strip of paper evidence seal hanging off one hinge like wet skin.
+
+Beau waited at the threshold in a wrinkled dress shirt and nitrile gloves. He had shoved one glove halfway off and forgotten it there. "Glad you came," he said. "Rao's in back."
+
+He did not say he was sorry. He did not have to.
+
+Ava lay on her side between desk and file cabinet, one arm trapped under her body. The overhead fan kept turning, slow and crooked, and made the loose pages on her desk tick against wood. Her throat had been cut from left to right in one deep pass. The blood had gone black at the edges and sticky in the center where humidity refused to let anything dry clean.
+
+There was no second body beside her, no Isaiah Bell laid out like accusation and warning. There was only Ava, alone on the floor she had walked every morning in square-toed black pumps with a worn spot on the right heel where she dragged when she was tired.
+
+On the desk, centered on a legal pad, sat a clear mason jar packed with human teeth and cloudy fluid.
+
+Each tooth had a string tied to the root and a tiny manila tag threaded on the line. The tags were handwritten in all caps, thick black marker that bled into the paper fibers: GT-14C. GT-9A. GT-22B.
+
+They were Gideon Tract parcel codes.
+
+Lena felt her stomach pull tight so fast it hurt her back. She had copied those same letter-number patterns out of her father's notebook two nights ago in the chancery archive basement, her flashlight balanced between shoulder and cheek.
+
+Dr. Naveen Rao looked up from the jar with his glasses sliding down his nose. He had a coffee stain on his cuff and an old habit of tapping his pen against his lower lip when he was sorting thoughts. Tap, tap, stop. "Do not touch the table," he said, then exhaled and corrected himself. "Don't touch anything near the table. The jar was staged for visibility. Whoever left it wanted first glance impact."
+
+"One mouth?" Lena asked.
+
+"No." Rao angled his light. "Mixed dentition. Different wear patterns, different restorations. At least one amalgam old enough to predate modern composite work, and at least three very recent extractions. This isn't a trophy from one victim. It's assembled."
+
+"Assembled by whoever had access to oral evidence or a dental waste stream," Beau said. "Jesus."
+
+Rao nodded once. "And confidence about handling biologic material. There are typed labels on two strings under the handwriting. Medical supply stock. Not grocery twine."
+
+From the doorway, Mara Quinn raised her phone and then lowered it without taking a photo. She wore the same green windbreaker from storm season, cuffs frayed, and had a reporter's notebook tucked flat against her forearm like she slept with it there. "I'm not publishing scene photos," she said, voice clipped with anger. "But people outside already know about the jar. They're saying y'all planted it to spin out riot control."
+
+"You heard that where?" Beau asked.
+
+"On three group threads and one live stream from the parking lot. You lost the perimeter fifteen minutes ago."
+
+Lena looked at Ava again, at the legal pad under the jar. The top page had an outline in Ava's handwriting, block letters and hard underlines: MOTION TO COMPEL BENEFICIARY ACCOUNTING. A coffee ring had warped one corner. In the margin Ava had written call T. Boyd re exhibits in blue ink and circled it twice.
+
+The blue ink had feathered where blood mist reached it. Lena saw Ava in a courthouse hallway last winter, tie shoes kicked off under a bench at midnight, laughing through a cold while she rewrote a motion by hand because the clerk's portal crashed again. The newest ink on Ava's desk was still about work, and Ava's body was cooling three feet away from it.
+
+A deputy from Records appeared behind Mara, breathing hard. "Detective Broussard, we got people trying to push in through the back loading door. They said if we don't let family see her, they'll break glass."
+
+"Which family?"
+
+"All of them," he said, and that was not an exaggeration.
+
+Lena's suspension letter sat folded in her back pocket. She could feel the paper edge against her skin when she bent. She was not supposed to direct anybody, not supposed to touch chain of custody, not supposed to do anything except stay home and wait for Internal Affairs to schedule a hearing that kept moving every week.
+
+Her throat tasted like pennies. If she kept quiet, people in that hall would bleed next. If she sounded like command, Clay would write her up before sundown.
+
+She said, "Beau, tell Nia to pull three more units on the rear lane and get one clergy liaison in front. Nobody gets through this door, but Ava's sister gets visual through the hallway window once the body is covered. If we shut them out cold, they'll take it anyway."
+
+Beau glanced at her, then at the deputy. "Do it. And get me body cam numbers for every uniform on this block."
+
+The deputy ran.
+
+Mara watched Lena with narrowed eyes. "You just gave an order while suspended."
+
+"I gave a survival suggestion," Lena said.
+
+"Same thing in this county."
+
+Outside, the first plate-glass window cracked, sharp enough to make half the porch duck. A woman screamed. Boots thudded on concrete. Then came that low crowd roar Lena had started hearing in her sleep: grief and fury braided so tight the boards under her shoes vibrated.
+
+She went to the front anyway.
+
+The porch had turned into a pressure point. Two deputies held a line with their forearms while bodies shoved from the sidewalk side. Reverend Ellis Cain stood on a bench near the azaleas, suit coat buttoned wrong, trying to project over everybody with the cough-ragged preacher voice that had carried three decades of funerals. He kept a silver inhaler in his left hand and hit it between sentences without stepping down.
+
+"Back up and let the medics work," he shouted. "Back up so we don't hand them another body today."
+
+Teresa Boyd stood directly under him in Ava's cardigan, sleeves too long over her knuckles, mascara run down both cheeks. "Don't tell me to back up," she yelled at the deputies. "My sister paid this county's bills in blood and continuances and now she's on that floor and y'all got your guns out on us?"
+
+A young patrolman had already unclipped his pepper spray. His hand shook.
+
+Lena stepped between him and Teresa and put her own empty palms up. "Officer, holster that now."
+
+"I've got authority to deploy if-"
+
+"You deploy in this crowd, we lose the whole block. Put it away." She heard herself slip into the careful procedural cadence she used in court testimony, every word measured. "You'll keep your baton low and your body camera active."
+
+He hesitated one beat too long, then shoved the spray back into his belt.
+
+Teresa turned on Lena. "You were suspended. Ava said you were trying to help and they benched you anyway. So what are you now, huh? A cop or a mourner?"
+
+Lena swallowed heat and copper. "I'm here to keep them from hurting you next."
+
+"Then say her name where all these people can hear it."
+
+Lena climbed onto the bench beside Reverend Cain, shoes slipping on wet paint. The crowd noise shook through the wood into her knees.
+
+"Ava Boyd was murdered in her office this morning," she said. The line carried because everybody wanted to hear what lie came next. "She wasn't found with a second body. That's new. What was left at this scene is different from every other murder scene in this case, and we're preserving it exactly as we found it."
+
+A voice near the doorway shouted, "Preserving for who? For Clay?"
+
+"For court," Lena shot back. "If we lose chain now, whoever did this walks. You know that."
+
+A man near the curb yelled, "Court never held shit for us."
+
+Reverend Cain leaned into the mic clipped to his tie, not county issue, church issue, battery pack taped with red electrical tape because he refused to buy new equipment while the roof fund was short. "She's telling you where the trap is," he said. "Don't jump in it for them."
+
+The shove at the front line eased by inches, not trust but a pause.
+
+Lena got down from the bench and felt her phone vibrate in her pocket. Unknown number. She answered and heard Clay Reddick's smooth campaign voice over background office noise.
+
+"Detective Waller," he said. "Stay where you are. We're convening a community session at New Hope in forty-five minutes. I need your cooperation."
+
+"You need my face," Lena said.
+
+A tiny pause. "I need order. Bring whatever facts you can verify."
+
+He hung up before she could answer.
+
+Back inside, Rao had started sealing the jar transport box. Tape screamed across cardboard as he pulled each strip tight, and the sound made Lena's shoulders jump before she could mask it. He glanced up as she entered. "I logged the tag strings separately," he said. "You were right about the parcel format."
+
+"Tell me something I can say out loud in forty-five minutes," she said.
+
+Rao slid a paper toward her with three lines at the top. "You can say this is an altered signature. You can say no complete historical remains were present. And you can say the tags map to land identifiers, not random numbers. Anything past that would be overclaiming."
+
+Outside, Ava's name hit the windows again, a chant and a plea at once. Lena folded the paper once and put it in her pocket next to the suspension letter.
+
+On Ava's desk, under the blood-dark edge of the legal pad, Lena saw the corner of a banker box inventory sheet. The first line read: Boyd v. Gideon Tract Trust et al.
+
+She read it twice, then reached for the handles and stopped an inch short. "I can't touch that while I'm suspended."
+
+Beau nodded once and stepped to the door. "Deputy Kincaid. In here with chain clipboard. You're on-duty evidence custodian now."
+
+The Records deputy came in with fresh gloves and a body camera light blinking red. Sergeant Tolliver followed and braced in the doorway, also recording. Kincaid read the file label aloud, then read it again for clarity while Beau signed the temporary transfer line and Nia called timestamp and witness names into both cameras.
+
+Only when the log line was complete did Kincaid seal the box handles with tamper tape and lift it level off Ava's desk. Lena walked beside him empty-handed toward Evidence while the crowd outside chanted Ava's name like they were daring the county to choke on it.
+
+Nia caught Lena's sleeve before she hit the hallway turn. "Teresa's visual is ready. Window only."
+
+They brought Teresa to the wired-glass fire door at the end of the corridor. Rao had draped Ava to the collarbone in a clean sheet and taped gauze over the throat wound for transport, but her face was uncovered for identification. Fluorescent glare flattened her skin to paper.
+
+Teresa put both palms on the glass and froze. Then her knees buckled so hard her shoulder slammed the frame. She gagged, bent double, and vomited coffee and yellow bile onto the cinderblock floor. When she came up she hit her fist against her own sternum twice, hard enough to make a dull knocking sound, and let out one raw scream that ricocheted down the annex and snapped every head toward the door.
+
+Outside, the line lurched forward on that sound. The same young patrolman reached for his pepper spray again. Nia smacked his wrist down and shouted, "No chemical agents. Lock shields and give me two feet." Beau got on the radio and repeated it to every unit on the block while Reverend Cain turned the surge into a prayer chant that held by inches.
+
+Teresa slid down the wall, shaking so hard her teeth clicked. Lena crouched beside her without touching. "Visual confirmed," she said into Nia's body cam and then into her own phone recorder, chain words first because that was the only language command respected.
+
+***
+
+New Hope Baptist's fellowship hall had old linoleum that clicked under dress shoes and folding tables that never sat level. A deacon had set out coffee in church urns, and nobody touched it. The room smelled like rain-damp denim, bleach mop water, and the fried catfish a grieving auntie had tried to bring because in Mercer County grief still got fed even when nobody could swallow. The grease smell turned Lena's stomach anyway.
+
+Clay did not come in uniform. He wore a navy sport coat and a flag pin and stood at the front beside a portable podium like this was donor outreach. To his left sat County Attorney Felicia Dunn with three binders and an expression that said she had not slept. To his right sat an empty chair with a paper tent card: DET. L. WALLER. The card looked less like welcome than bait.
+
+Mara slid into the back row and set her phone rig on a tripod made from taped chopsticks and stubbornness. She caught Lena's eye and gave one small nod: on record.
+
+Teresa Boyd was already at the front, arms crossed over Ava's cardigan, mouth pressed into a hard line. Next to her sat Deshawn Lee, paint still under his thumbnail from protest signs, heel bouncing fast enough to shake his chair. Reverend Cain took the aisle seat with his inhaler in his lap and a legal pad full of names of people who wanted to speak. Seeing that cardigan in Teresa's folded arms made Lena's chest tighten; Ava wore it to winter arraignments and always complained the pockets were too small for files.
+
+Clay tapped the microphone. "We're here to reduce immediate harm while the investigation proceeds."
+
+Boos rolled through the hall.
+
+Teresa stood without waiting to be recognized. "You mean reduce harm now that she's dead," she said. "Ava asked this office for protective detail after she filed notice on Gideon, and y'all told her staffing was thin. Don't say immediate like this started today."
+
+Dunn leaned toward her mic. "Ms. Boyd, there are pending privilege questions on your sister's files, and-"
+
+"Don't lawyer me with her blood still wet," Teresa snapped.
+
+The room surged. Chairs scraped. One deputy at the back moved his hand toward his belt, saw thirty phones pointed at him, and dropped it.
+
+The scrape and shift hit Lena like a body memory of the porch crush outside. One bad move, one burst of spray or baton, and this room would go from mourning to triage in ten seconds.
+
+Clay lifted both palms in a performance of calm. "Detective Waller has asked to present verified facts from the scene. Then we can discuss release parameters."
+
+He stressed can like permission flowed one way.
+
+Lena took the chair with her name and did not sit. She stood behind it, hands on plastic, and looked at faces she knew from court corridors, school pickup lines, church revivals, bond hearings at two in the morning. They looked back like jurors deciding whether she still belonged among them.
+
+"Ava was killed in her office before dawn," Lena said. "No second full body was staged with her. That pattern broke today."
+
+A man in the middle row said, "Changed by who?"
+
+Clay leaned toward his mic. "Let's keep this to verified process and avoid speculation."
+
+Lena did not look at him. "I'm doing exactly that. We don't know yet."
+
+A few people nodded at the bluntness. More waited.
+
+"A jar of human teeth was left on her desk," Lena said. Murmurs broke across the room like wind in tin roofing. "Each tooth had a tag with a Gideon Tract parcel code. Lab has confirmed mixed teeth from multiple sources. That means this was assembled, not random."
+
+Deshawn leaned forward. "So whoever did this is harvesting evidence now?"
+
+"Whoever staged it had access," Lena said. "Could be evidence, could be dental waste, could be both. I'm not feeding guesses into this room."
+
+Mara called from the back before Clay could reclaim the mic. "Then give clocks. Not 'as available.' Tonight, what's public? Tags? Photos? Who signs off?"
+
+"Questions will be queued," Clay said. "Detective Waller will finish her initial statement."
+
+Mara stayed standing. "That's not a question. That's the whole fight."
+
+Lena felt the old instinct to hedge, to leave room for command to step in and revise later. That instinct had cost too many people already.
+
+"Milestone one," she said. "When lab logs final intake of the jar and tag strings, we release tag numbers and recovery photos to family counsel and the public defender board. Deadline: tonight, 8:00 p.m."
+
+At recovery photos, Teresa made a small choking sound and pressed Ava's sleeve to her mouth.
+
+Mara raised her phone toward the wall clock and said, "Time stamp that. Seven-eleven."
+
+Clay cut in, voice smooth. "Release still runs through legal privilege and victim-family safeguards."
+
+Teresa barked a laugh with no humor. "You hear that? That's how they stall."
+
+"Milestone two," Lena said, louder. "When privilege review clears what can be disclosed from Ava's case files, we release the index of entities and individuals named in her pending Gideon litigation. Deadline: tomorrow, 6:00 p.m."
+
+Dunn cracked open her center binder to a tab marked PRIVILEGE and started shaking her head before Lena finished the sentence. Deshawn kicked his chair back and said, "Put her binder on camera if she's blocking."
+
+Sweat rolled down Lena's spine under her shirt despite the hall AC rattling overhead. She could feel every eye in the room counting whether she'd flinch.
+
+"Milestone three. When the clerk certifies copies for court use, we publish the transaction map connecting the murdered parties to Gideon Tract trust payouts and land transfers. Deadline: seventy-two hours from now."
+
+By the time she said seventy-two hours, her palms were numb from gripping the chair back. A deputy near the side door reached for his radio, then stopped when Reverend Cain pointed two fingers at him and said, "No side chatter. Let her finish."
+
+The hall went very quiet for one full second, then exploded.
+
+"Put it in writing!"
+
+"No edits from Clay!"
+
+"Name names now!"
+
+Reverend Cain's voice cut over the shouting before feedback squealed. "I've heard this room in three decades of funerals and one courthouse riot. Rage talks fast, but paper lasts longer. Make them write what she promised."
+
+Teresa stood again, breathing hard. "You already saw her files, didn't you? Say what she died over."
+
+Lena looked at Clay. He smiled without showing teeth, an expression he used in campaign photos with people he planned to cut loose after November.
+
+So she answered Teresa instead.
+
+"Ava filed a stamped motion yesterday at 7:11 p.m. in Mercer Chancery, docket 26-417, titled MOTION TO COMPEL BENEFICIARY ACCOUNTING," Lena said. "The signature line reads Ava Boyd, counsel for petitioners. Exhibit C is a disbursement ledger listing Henry Voss as paid operations manager and Lyle Fenn as contracted survey witness on the disputed tract parcels."
+
+Mara said, "So the first two murder victims weren't just old history. They were tied to ongoing land profit."
+
+"Yes," Lena said. "And Ava's homicide now sits on that same line."
+
+A woman in the second row began to cry without sound, just shoulders shaking. Her son had been one of Ava's clients on a parole violation last year. Deshawn reached over and held her wrist while she cried.
+
+Reverend Cain stood and cleared his throat into the mic. "I want everybody hearing this to hear one more thing. If we tear this room apart right now, they'll call that proof we can't be trusted with truth. That lie has fed this county longer than I've been alive."
+
+He took a pull from his inhaler and continued, voice thinner but steady. "You hold her to the deadlines she just spoke. You hold me too. We post a watcher list and a clock on the church board tonight."
+
+Deshawn nodded, heel still hammering the tile. "We'll hold tonight. One night. If they stall by tomorrow, we march to the square and we don't ask permission."
+
+Clay leaned into his mic before Lena could answer. "No one is threatening anyone in this hall."
+
+Deshawn looked straight at him. "You call it threat when poor people make plans in public."
+
+Lena stepped between microphones. "Deshawn, I heard you. Clay, you heard him. The timeline stands."
+
+She turned to Teresa. "I need one thing from you now. Who had keys to Ava's off-site file cabinet?"
+
+Teresa wiped her face with Ava's sleeve. "Three people. Ava. Me. Her paralegal, June Haskins." She swallowed. "June keeps peppermint schnapps in a cough-syrup bottle in her desk because she says courthouse air is poison. If she's gone, she did not run. She panics on the bridge over Bayou Road and never drives it alone."
+
+Lena wrote that down fast, because details like that were how you found a person before rumor found them. She texted Beau under the table: JUNE HASKINS BOLO NOW. BAYOU BRIDGE ROUTE FIRST.
+
+By the time the meeting broke, three church volunteers had taped butcher paper to the fellowship hall wall and written DEADLINE WATCH in black marker. Under it: 8 p.m. / 6 p.m. / 72 hours. Names filled in below, people volunteering to witness each handoff so nobody could claim confusion later.
+
+Mara walked with Lena to the side exit under a bank of flickering lights.
+
+"You just boxed yourself in on camera," Mara said.
+
+"I know."
+
+"If Clay blocks release, your credibility burns with his."
+
+"I know that too."
+
+Mara tightened the strap on her phone rig. "Good. I prefer collaborators who can count."
+
+Outside, thunder rolled over the levee and the first cold rain in weeks started tapping the metal awning hard enough to make everyone raise their voices.
+
+***
+
+Clay's office had a new camera in the upper corner by the air vent, black dome half-hidden behind a county seal decal. Lena saw it before she sat down.
+
+He noticed her noticing. "Security upgrades," he said. "Given current volatility."
+
+Beau stood by the filing cabinet with his arms crossed and looked like he wanted to be anywhere else. Internal Affairs Lieutenant Mark Penrod sat at the conference end of the room, reading glasses low on his nose, a handkerchief folded under his wrist so his palm sweat did not smear the forms.
+
+Clay slid a packet across the table. "Reinstatement order effective immediately," he said. "Restricted duty classification, subject to active oversight."
+
+Lena did not touch the paper yet. "How restricted?"
+
+Clay folded his hands. "You regain evidence access on the Bell-related homicides and the Boyd file review. In exchange, you operate under command monitoring."
+
+"Define monitoring."
+
+Penrod answered without looking up. "Continuous body cam during duty hours, GPS telemetry on your assigned unit, mirrored email archive, and supervised upload of field notes at end of shift. Any unscheduled media contact triggers review."
+
+"You forgot call logs," Lena said.
+
+Penrod looked up, surprised. "Those too."
+
+Clay gave a practiced sigh that sounded paternal if you ignored the math inside it. "Lena, this is not punitive. We need stable process after today's unrest."
+
+She laughed once, no humor in it. "You suspended me for refusing your script and now you need my face to sell your timeline. Call it by its name."
+
+His voice softened, which meant he was angry. "Here's what this is, Detective: an opportunity to return to service instead of staying outside with activists and reporters guessing at evidence."
+
+Lena leaned forward. "Then let's be precise. I accept monitoring if I get full chain access to the tagged-teeth evidence and unredacted review access to Ava's Gideon files. Not summaries. Originals."
+
+Clay's smile thinned. "Original privileged material is not your lane."
+
+"It's my lane now if you want me to keep that church clock from turning into a street fight," she said. "You heard the room. They're one delay away from believing this office killed Ava and staged the rest."
+
+Beau spoke for the first time. "She's right. That room was one bad order from a stampede."
+
+Clay did not look at him. "And this office does not make decisions from crowd pressure."
+
+Beau started again. "With respect, you weren't in there when that line buckled."
+
+Clay cut him off. "You're here as witness, Detective Broussard, not policy counsel."
+
+Beau stared at the rain-blurred window, nostrils flaring once, and shut up.
+
+Lena tapped the packet. "Add one line. Any directive that limits release milestones must be issued to me in writing with signature and timestamp. If you change the plan, you own the change on paper."
+
+Penrod blinked. "That's unusual."
+
+"So is all of this," Lena said.
+
+Clay stood and walked to the window that faced the parking lot. Rain had started to sheet across the glass, turning patrol cars into blurred lights. He stayed there long enough to make the room feel the wait.
+
+When he turned back, campaign calm had returned.
+
+"Fine," he said. "Written directives required for timeline modifications. But you don't freelance statements. All press goes through Public Information."
+
+"I already made public commitments," Lena said.
+
+"And you will honor them through approved channels."
+
+She heard the trap and chose it anyway.
+
+Penrod revised the form by hand, block letters, then pushed it to her with a county pen that had no cap. Lena read every line.
+
+REINSTATEMENT STATUS: ACTIVE, RESTRICTED.
+
+OVERSIGHT PROTOCOL: LEVEL TWO.
+
+FIELD REPORTING: REAL-TIME DIGITAL MIRROR.
+
+COMMUNICATIONS: SUBJECT TO COMMAND REVIEW.
+
+SPECIAL CONDITION: ANY MODIFICATION TO PUBLIC EVIDENCE-RELEASE TIMELINE SHALL BE ISSUED IN WRITING TO DETECTIVE WALLER WITH SHERIFF SIGNATURE AND TIMESTAMP.
+
+She signed.
+
+Clay signed.
+
+Penrod stamped the top page twice because the first stamp came out half-inked.
+
+Clay sat back down and slid her old badge across the table in a plastic evidence sleeve, as if even that had become contraband. "Welcome back," he said.
+
+He held the sleeve between two fingers until she took it.
+
+Lena clipped the badge to her belt and felt how light it was compared to the cost of touching it again.
+
+In the hallway outside Clay's office, Mara waited on a metal bench under the flickering light panel, notebook open, one boot heel worrying a crack in the tile. She looked up when Lena stepped out.
+
+"Well?"
+
+Lena held up the reinstatement packet. "I'm back in. He put me on a leash."
+
+"How short?"
+
+"Short enough that if I sneeze off schedule, Penrod files a memo."
+
+Mara made a face that might have been sympathy if she trusted the category. "Then we work around it."
+
+"No," Lena said. "We work through it where we can and around it where we must. You don't send me anything that can burn your source trail if this office mirrors my phone."
+
+Mara snapped the notebook shut. "Already moved sensitive docs to dead drop. You're late to your own paranoia."
+
+A tired laugh escaped Lena before she could stop it.
+
+In Evidence, Rao had already logged the jar under new homicide sequence numbers. The chain screen on the wall showed incoming items from Ava's office: one legal pad, seven banker boxes, one encrypted drive, two courthouse key cards, and three binders marked GIDEON TRACT ACCOUNTING. The scanner gave a sharp electronic chirp on each entry, regular as a monitor alarm.
+
+Lena stood in front of the monitor with rain still drying on her shoulders and read the names on the first binder index as the clerk scanned pages: Voss, Henry. Fenn, Lyle. Pike Foundation Disbursement Committee. Emergency Motion Draft.
+
+Ava Boyd had built the line in ink before a killer cut her throat for it. Lena remembered Ava at two in the morning outside Courtroom Two, shoe in one hand and file in the other, saying, "If they can hide the paper, they can steal a family in daylight." Lena had nodded then and gone home to sleep. Ava had stayed and kept filing.
+
+Now the line was evidence, and evidence had a clock taped to a church wall across town with half the county watching.
+
+Lena checked the time. 7:42 p.m.
+
+At 7:46, Kincaid brought the first completed intake sheet to the scanner and read it aloud for chain capture: tag IDs GT-14C, GT-9A, GT-22B, plus twelve additional parcel-coded tags pending verification. Lena drafted the release packet on the evidence terminal while Beau stood over her shoulder, witness line ready.
+
+At 7:53, Clay called from upstairs. "Public release pauses until Legal signs off."
+
+"Then issue it in writing with signature and timestamp," Lena said. "That's your own condition."
+
+Silence. Rain hissed against the loading-bay door.
+
+At 7:57, Penrod emailed a signed directive: RELEASE AUTHORIZED FOR TAG NUMBERS, RECOVERY STILLS, AND INITIAL CHAIN LOG; PRIVILEGED FILE CONTENT EXCLUDED. Lena read it once, forwarded it to Mara, Teresa's counsel, and the public defender board, then nodded to Kincaid.
+
+At 7:59:18, Kincaid hit transmit through the county PIO portal and the mirrored evidence-mail channel. Mara replied with a screenshot from New Hope thirty seconds later: DEADLINE WATCH, first line circled green, phones in the hall raised as the files arrived.
+
+Lena's phone rang again at 8:03. Nia, breathless over road noise. "June status update. Her Honda's on the Bayou Road bridge shoulder, purse and keys inside, no sign of her. No blood in the car."
+
+"Who owns the search?"
+
+"Me," Nia said. "I've got river patrol plus two deputies sweeping bridge-to-launch and motel strip. First report to you by 9:30. Full overnight status by midnight."
+
+Lena logged the call, attached it to Ava's case chronology, and opened the Emergency Motion Draft binder to start the affidavit she'd have to carry into chambers in the morning. June was missing. Tolliver owned the hunt until midnight. The first deadline had held by seconds, and the next one was already running.

@@ -1,0 +1,82 @@
+{
+  "acceptance_targets": [
+    "[ch07-craft-001] Pass if a reader can compare the revised chapter with the continuity sheet and find one consistent status for the 43-crown Havelock debt: already paid before chapter 7, or absent from this scene because another creditor now fills that role. Fail if the revised lines still imply Gideon newly settles Havelock in chapter 7.",
+    "[FBR-005] Pass if Inez's anger in this beat becomes legible through chapter-specific action or diction and not through 'face went still' or equivalent flattening shorthand. Fail if the scene still defaults to generic stillness language as the primary signal."
+  ],
+  "chapter_id": "chapter_07",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if a reader can compare the revised chapter with the continuity sheet and find one consistent status for the 43-crown Havelock debt: already paid before chapter 7, or absent from this scene because another creditor now fills that role. Fail if the revised lines still imply Gideon newly settles Havelock in chapter 7.",
+      "chapter_id": "chapter_07",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_07.md:17, snapshots/cycle_02/chapters/chapter_07.md:21, snapshots/cycle_02/chapters/chapter_07.md:141",
+      "finding_id": "ch07-craft-001",
+      "problem": "The chapter stages Havelock Pigments as a debt Gideon settles now: Silas receives a receipt marked settled in full, Gideon says he has purchased Silas time, and Junie treats Havelock's changed behavior that morning as new. The continuity sheet canon says the 43-crown Havelock debt was already cleared with Gideon's chapter 3 advance, so this opening bargain replays a resolved leverage point and breaks causal continuity.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_07.md:17, snapshots/cycle_02/chapters/chapter_07.md:21, and snapshots/cycle_02/chapters/chapter_07.md:141 so the leverage object matches canon. Either make this receipt explicitly old proof of the chapter-3 settlement that Gideon is now weaponizing, or replace Havelock here with a different still-open creditor and adjust Junie's reaction and Silas's relief accordingly.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if Inez's anger in this beat becomes legible through chapter-specific action or diction and not through 'face went still' or equivalent flattening shorthand. Fail if the scene still defaults to generic stillness language as the primary signal.",
+      "chapter_id": "chapter_07",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:2729",
+      "finding_id": "FBR-005",
+      "problem": "Recurring full-book pattern: default emotional punctuation via 'went still/flat' appears in 5 chapters (chapters 03, 04, 07, 11, and 13). Here the phrase 'her face went still' repeats the same emotional shorthand just when the chapter needs Inez's controlled anger to feel newly dangerous, not familiarly phrased.",
+      "rewrite_direction": "REPLACE the beat centered on `snapshots/cycle_02/FINAL_NOVEL.md:2729` and its immediate setup at `snapshots/cycle_02/FINAL_NOVEL.md:2730`-`snapshots/cycle_02/FINAL_NOVEL.md:2733` with a more particular cue: what she does with the tray, knife, or sentence rhythm when she recognizes he has brought Gideon's hunger back into the ward.",
+      "severity": "MEDIUM",
+      "source": "booker_global",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "87bb3271111cf72f7c419be2cbcfaf766f434eb9ee3c4ab3bd42577fb97e2428",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into the book's strange civic biology, vulgar humor, erotic consequence, and class abrasion. When a choice appears between the cleaner version and the truer, messier one, choose the messier version so long as causality and character truth remain exact. Treat the city's slime, smell, heat, and appetite as part of the novel's beauty rather than embarrassment to be polished away.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If sex, shame, hunger, class humiliation, bodily mess, or economic pressure starts drifting into decorous vagueness, rewrite until the scene carries concrete sensory and social cost on the page.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm across the novel; uncontracted forms should signal emphasis, class performance, ceremonial language, or Gideon's deliberate control.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate crowd scenes with cleanup, ritual with labor, public humiliation with private tenderness, and single-sweep chapters with multi-scene accumulations; no two consecutive chapters should feel built from the same emotional weather, dialogue density, or scene rhythm.",
+      "diction": "Period-aware but not museum-stiff; vivid, bodily, class-conscious, and willing to be ugly or funny without slipping into arch parody or modern snark.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third person anchored to Silas Vale for the full novel, with no head-hopping and no neutral historian voice; Inez remains legible through observed action, dialogue, and the objects she shares.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Elastic and pressure-sensitive: quick comic snap in public scenes, thicker sensory accumulation in labor and erotic passages, and hard clean sentences at moments of shame or decision.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

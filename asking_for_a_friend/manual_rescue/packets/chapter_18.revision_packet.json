@@ -1,0 +1,30 @@
+{
+  "chapter_id": "chapter_18",
+  "cycle": 2,
+  "input_snapshot_hash": "f17fce247f98efcac1db7fb521c2e234152c3740b1158ea6c98f376230c3f5ff",
+  "findings": [
+    {
+      "finding_id": "adam_anti_caleb_ch18",
+      "source": "manual_rescue/full_award_rescue.review.json",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_18",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.post_revision.md:3497, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:3505, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:3515, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:3523, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:3531, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:3533",
+      "problem": "The Adam bookstore scene (lines 3497-3533) accumulates anti-Caleb signifiers: coffee from somewhere else (social miscalibration vs. Caleb's perfection), hair that needs cutting, stain on shirt, pen not phone, adjunct salary (real financial precarity vs. Caleb's fake career), wrong opinion about semicolons, funny 'in a way that didn't work too hard.' Every detail is positioned as a contrast to Caleb's engineered perfection. The accumulation risks reading as authorial wish-fulfillment — a reward-scene curated to signal 'this one is real' — rather than the tentative, uncertain encounter the novel's ending needs.",
+      "rewrite_direction": "Thin the anti-Caleb signifier count by 2 details at snapshots/cycle_02/FINAL_NOVEL.post_revision.md:3497-3533. The pen and the stain are the strongest (physical presence vs. textual existence). Consider cutting the semicolon opinion (line 3531, too charming for a first encounter — it reads as the author curating the meet-cute) and the adjunct salary detail (line 3515, too much biographical specificity for a stranger — it overloads the scene with character data that would emerge naturally later). Strategy: let Adam have one detail that does NOT serve the anti-Caleb contrast — something neutral or slightly off-putting that makes him feel like a person rather than a thematic counterpoint to the novel's antagonist.",
+      "acceptance_test": "The Adam scene (lines 3497-3533) contains no more than 4 anti-Caleb signifiers (reduced from ~7). At least one detail about Adam is neutral or ambiguous — not positioned as a contrast to Caleb's perfection. The scene's final beat (line 3533) still reads as tentative rather than triumphant."
+    }
+  ],
+  "must_fix_count": 1,
+  "non_negotiables": [
+    "The Adam scene (lines 3497-3533) contains no more than 4 anti-Caleb signifiers",
+    "At least one detail about Adam is neutral or ambiguous — not positioned as contrast to Caleb",
+    "The scene's final beat (near line 3533) retains its tentative rather than triumphant tone",
+    "Retain the pen and the stain details as the strongest anti-Caleb signifiers"
+  ],
+  "acceptance_targets": [
+    "At least 2 anti-Caleb signifiers removed or replaced from the Adam bookstore scene (lines 3497-3533)",
+    "The semicolon opinion (near line 3531) and/or adjunct salary detail (near line 3515) cut or replaced",
+    "At least one new or modified Adam detail is neutral or slightly off-putting — not serving the anti-Caleb contrast",
+    "Scene reads as tentative first encounter, not curated reward-scene"
+  ]
+}

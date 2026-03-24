@@ -1,0 +1,62 @@
+{
+  "chapter_id": "chapter_15",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH15_AWARD_AFTERMATH_RECAP",
+      "source": "award",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_01/chapters/chapter_15.md:191; snapshots/cycle_01/chapters/chapter_15.md:193; snapshots/cycle_01/chapters/chapter_15.md:195; snapshots/cycle_01/chapters/chapter_15.md:209; snapshots/cycle_01/chapters/chapter_15.md:213; snapshots/cycle_01/chapters/chapter_15.md:219",
+      "problem": "The chapter clears the physical threshold, but the bedroom aftermath keeps translating a point the kiss has already made: the Manor amplifies desire and Hermione cannot trust what she feels. Instead of escalating cleanly from residue to consequence, the second scene pauses for thematic recap and only later arrives at the real turn, her choice not to tell him. That costs the chapter the compression and inevitability the award lens requires.",
+      "rewrite_direction": "Target snapshots/cycle_01/chapters/chapter_15.md:191; snapshots/cycle_01/chapters/chapter_15.md:193; snapshots/cycle_01/chapters/chapter_15.md:195; snapshots/cycle_01/chapters/chapter_15.md:209; snapshots/cycle_01/chapters/chapter_15.md:213; snapshots/cycle_01/chapters/chapter_15.md:219. Compress the abstract recap of the bonding mechanism and move the scene more directly from post-kiss bodily residue to Draco's echoed wakefulness to Hermione's explicit concealment choice. Keep the must-land beats: the house is at its warmest, Draco still does not know, and she decides not to tell him.",
+      "acceptance_test": "Pass if the revised aftermath moves from immediate post-kiss residue to Hermione's concealment decision without any standalone paragraph that re-explains the Manor's amplification rules after the kiss has already dramatized them. Fail if snapshots/cycle_01/chapters/chapter_15.md:191-219 still contains a recap paragraph whose main job is to restate the same real-or-house dilemma before the scene reaches the decision at snapshots/cycle_01/chapters/chapter_15.md:213."
+    },
+    {
+      "finding_id": "CH15_CRAFT_BONDING_TEXT_TIMELINE",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_01/chapters/chapter_15.md:73; snapshots/cycle_01/chapters/chapter_15.md:209",
+      "problem": "The chapter twice dates Hermione's discovery of the bonding texts to 'four weeks ago,' which conflicts with the provided continuity. In the continuity sheet the bonding folio is discovered in chapter 11, while chapter 15 is the first kiss roughly five weeks after arrival. The current wording implies she found the folio almost immediately after reaching the Manor and collapses the chapter chronology.",
+      "rewrite_direction": "Revise the timing language at snapshots/cycle_01/chapters/chapter_15.md:73 and snapshots/cycle_01/chapters/chapter_15.md:209 so the concealment remains meaningfully prolonged without contradicting the chapter-11 discovery. 'Weeks ago' or another interval consistent with the provided chapter spacing will preserve the betrayal without inventing an earlier find date.",
+      "acceptance_test": "Pass if the revised lines at snapshots/cycle_01/chapters/chapter_15.md:73 and snapshots/cycle_01/chapters/chapter_15.md:209 no longer imply that Hermione found the bonding folio in her first week at the Manor and can coexist with chapter_11 as the discovery point. Fail if a reader can still infer a four-week concealment window inside a five-week stay."
+    },
+    {
+      "finding_id": "CH15_CRAFT_MANOR_GEOGRAPHY",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_01/chapters/chapter_15.md:167; snapshots/cycle_01/chapters/chapter_15.md:205; snapshots/cycle_01/chapters/chapter_15.md:219",
+      "problem": "The aftermath introduces two spatial/timeline slips that the provided context does not support. The line about the corridor behaving this way 'since she'd returned after the weeks away' implies a separation-and-return that has not happened yet, and the later references place Draco two floors above her when the boundary context places her room one floor below his. Because the Manor's changing geography is story-relevant, these are not harmless texture errors.",
+      "rewrite_direction": "Revise snapshots/cycle_01/chapters/chapter_15.md:167; snapshots/cycle_01/chapters/chapter_15.md:205; snapshots/cycle_01/chapters/chapter_15.md:219. Replace the invented pre-rupture 'returned after the weeks away' clause with a current-story explanation for the shortened walk, and make Draco's room relation consistent with the established one-floor separation unless the house has changed it again and the text explicitly says so.",
+      "acceptance_test": "Pass if the revised aftermath contains no wording that implies Hermione has already had the chapter-16 separation/return and if the room-to-room spacing is legible in one consistent way across snapshots/cycle_01/chapters/chapter_15.md:167, snapshots/cycle_01/chapters/chapter_15.md:205, and snapshots/cycle_01/chapters/chapter_15.md:219. Fail if the passage still suggests an off-page return or leaves Draco both one floor away and two floors away in the same chapter state."
+    },
+    {
+      "finding_id": "CH15_DIALOGUE_EXAMPLE_LINE_LEAK",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_01/chapters/chapter_15.md:27; snapshots/cycle_01/chapters/chapter_15.md:41; snapshots/cycle_01/chapters/chapter_15.md:61",
+      "problem": "Draco's calibration-only example line 'Mm.' from the style bible appears verbatim three times in the chapter. The taciturn beat is character-true, but direct reuse of style-bible example text is explicitly disallowed and reads like source leakage rather than observed speech.",
+      "rewrite_direction": "Revise at least two of the three responses at snapshots/cycle_01/chapters/chapter_15.md:27; snapshots/cycle_01/chapters/chapter_15.md:41; snapshots/cycle_01/chapters/chapter_15.md:61. Keep Draco terse, but convert the literal example-line copy into a different clipped acknowledgement, a gesture, or silence that still preserves his indirect register.",
+      "acceptance_test": "Pass if no dialogue line in the revised chapter reproduces any style-bible example line verbatim and Draco still reads as terse and indirect in the same exchanges. Fail if 'Mm.' remains on any of snapshots/cycle_01/chapters/chapter_15.md:27, snapshots/cycle_01/chapters/chapter_15.md:41, or snapshots/cycle_01/chapters/chapter_15.md:61."
+    },
+    {
+      "finding_id": "CH15_PROSE_AMBIENT_MAGIC_FALLBACK",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_01/chapters/chapter_15.md:145; snapshots/cycle_01/chapters/chapter_15.md:165; snapshots/cycle_01/chapters/chapter_15.md:173; snapshots/cycle_01/chapters/chapter_15.md:185; snapshots/cycle_01/chapters/chapter_15.md:207; snapshots/cycle_01/chapters/chapter_15.md:217; snapshots/cycle_01/chapters/chapter_15.md:219",
+      "problem": "Once the kiss lands, the narration keeps returning to the Manor's warmth and tending as the main translator of feeling. Because the style bible explicitly warns against ambient-magic-as-mood fallback, the repeated heat cues start doing work that should be carried by fresher bodily, spatial, or behavioral observation.",
+      "rewrite_direction": "Rework the warmth beats at snapshots/cycle_01/chapters/chapter_15.md:145; snapshots/cycle_01/chapters/chapter_15.md:165; snapshots/cycle_01/chapters/chapter_15.md:173; snapshots/cycle_01/chapters/chapter_15.md:185; snapshots/cycle_01/chapters/chapter_15.md:207; snapshots/cycle_01/chapters/chapter_15.md:217; snapshots/cycle_01/chapters/chapter_15.md:219. Keep the new-information moments, especially the prepared bedroom and the house at its warmest, but let the rest of the aftermath pressure ride on Hermione's body, the resonance, and her concealment rather than additional temperature reminders.",
+      "acceptance_test": "Pass if the revised aftermath uses the Manor's warmth only when it adds a new fact, not as the repeated default cue for emotion, and the pressure in snapshots/cycle_01/chapters/chapter_15.md:145-219 remains legible through action, sensation, or choice without needing multiple additional heat reminders. Fail if the scene still relies on repeated warm-room or warm-house cues to keep restating the same emotional condition."
+    }
+  ],
+  "summary": "The chapter lands the first kiss with real physical specificity and keeps Hermione's doubt active on the page, but it still fails review. Two HIGH continuity errors break the provided chronology/geography, Draco's dialogue leaks a calibration-only example line from the style bible, the prose leans too hard on the Manor's warmth as mood translation, and the bedroom aftermath re-explains a chapter point the kiss had already made instead of moving straight to the irreversible consequence: Hermione choosing not to tell him."
+}

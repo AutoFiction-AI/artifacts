@@ -1,0 +1,43 @@
+{
+  "chapter_id": "chapter_04",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_04_craft_001",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:145 lands the chapter's central reversal with 'She needed this too. Maybe more than he did.'; snapshots/cycle_02/chapters/chapter_04.md:263 then explains Layla's laugh instead of trusting it; snapshots/cycle_02/chapters/chapter_04.md:299 and snapshots/cycle_02/chapters/chapter_04.md:301 restate the ending as abstract thesis ('What he'd bought...' / 'somebody wanted him badly enough') after the scene has already made that legible.",
+      "problem": "The chapter repeatedly translates its own comic and emotional beats into explanatory thesis language after those beats have already landed on the page. That deflates the humor, softens the ending, and makes the seduction feel interpreted rather than lived.",
+      "rewrite_direction": "Revise the explanatory clauses at snapshots/cycle_02/chapters/chapter_04.md:263, snapshots/cycle_02/chapters/chapter_04.md:299, and snapshots/cycle_02/chapters/chapter_04.md:301. Keep the state shift from snapshots/cycle_02/chapters/chapter_04.md:145, but carry it through concrete aftermath in the room: the signed pages leaving with Layla, the ink on Doug's hand, the apartment returning to scale, the cereal at the counter. Let the laugh and the exit register without narrator diagnosis.",
+      "acceptance_test": "PASS if the revised passage at snapshots/cycle_02/chapters/chapter_04.md:263 and the closing run beginning at snapshots/cycle_02/chapters/chapter_04.md:299 let a cold reader infer why Layla's laugh matters and why Doug signs without any sentence that explains the joke or paraphrases the chapter's meaning in abstract terms. FAIL if the revision still re-proves the emotional takeaway after the laugh, contract, and physical aftermath have already conveyed it."
+    },
+    {
+      "finding_id": "chapter_04_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:127 certifies that 'the genuine thing was real'; snapshots/cycle_02/chapters/chapter_04.md:263 states why Layla is laughing; snapshots/cycle_02/chapters/chapter_04.md:293 presents her waiting as settled fact; snapshots/cycle_02/chapters/chapter_04.md:293-294 further assert that she had been checking her phone for two weeks, which Doug cannot know directly.",
+      "problem": "The narration occasionally slips outside the close-third contract and treats Layla's inner sincerity and off-page behavior as known fact rather than as Doug's reading of her. That breaks the style-bible narrative distance and removes the uncertainty that should sharpen this scene.",
+      "rewrite_direction": "Recast the certainty at snapshots/cycle_02/chapters/chapter_04.md:127, snapshots/cycle_02/chapters/chapter_04.md:263, and snapshots/cycle_02/chapters/chapter_04.md:293 so every claim about Layla is filtered through what Doug can observe, hear, or infer. If Doug believes she means it, mark that as his interpretation and anchor it to a visible cue or to words she actually says.",
+      "acceptance_test": "PASS if the revised lines at snapshots/cycle_02/chapters/chapter_04.md:127, snapshots/cycle_02/chapters/chapter_04.md:263, and snapshots/cycle_02/chapters/chapter_04.md:293 contain no unframed factual claim about what Layla 'really' feels or what she was doing off-page; any certainty must arise from dialogue or an observation Doug could plausibly make. FAIL if the page still reports her private motive or prior behavior as narrator-certified fact."
+    },
+    {
+      "finding_id": "chapter_04_prose_002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:105 uses 'Something happened in her face'; snapshots/cycle_02/chapters/chapter_04.md:199 uses 'A new calculation crossed her face'; snapshots/cycle_02/chapters/chapter_04.md:225 uses 'Something shifted in her expression'; snapshots/cycle_02/chapters/chapter_04.md:257 returns to another expression-read of Layla after Doug surprises her.",
+      "problem": "The chapter marks Layla's leverage changes through the same face/expression recalculation template four times. Once or twice reads as perception; by the fourth instance it feels automatic and flattens a negotiation that should keep changing texture.",
+      "rewrite_direction": "Revise at least two of the repeated leverage markers at snapshots/cycle_02/chapters/chapter_04.md:105, snapshots/cycle_02/chapters/chapter_04.md:199, snapshots/cycle_02/chapters/chapter_04.md:225, and snapshots/cycle_02/chapters/chapter_04.md:257 so they register through different pressure signals: interrupted pitch rhythm, phone abandonment, handwriting changes, silence length, body stillness, or concession timing. Keep no more than two face/expression reads in this run.",
+      "acceptance_test": "PASS if in the revised negotiation sequence covering snapshots/cycle_02/chapters/chapter_04.md:105 through snapshots/cycle_02/chapters/chapter_04.md:257 no more than two leverage beats depend on face/expression recalibration language, and at least two are instead conveyed by distinct physical or conversational changes visible on the page. FAIL if three or more of those beats still rely on Doug reading a change in Layla's face or expression."
+    }
+  ],
+  "summary": "Strong chapter engine and clean Doug/Layla voice separation; the contract scene is legible, funny, and continuous with Doug's professional competence. It still fails award/craft/prose because the narration too often explains beats after they land, briefly certifies Layla's interior beyond Doug's access, and repeats the same facial-recalculation cue until it reads like a template. Dialogue is the strongest lens and clears the style-bible register audit.",
+  "coverage_scene_ids": []
+}

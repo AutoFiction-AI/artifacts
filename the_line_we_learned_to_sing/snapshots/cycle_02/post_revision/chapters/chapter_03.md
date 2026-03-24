@@ -1,0 +1,426 @@
+# Chapter 3
+
+The fan belt on the old standing fan in the corner squealed one short cry every three turns when Ina pushed open her father's apartment door, like a bird trapped in plastic. Garlic and soybean paste caught in the back of her throat before the heat from the pot reached her face. She had spent the day signing pages she still wanted to spit out, and the taste had followed her into dinner.
+
+"You came in time to work," Hyejin called from the sink. She wore her apron over church slacks, blue flowers printed over a bleach stain shaped like Jeju Island. Her reading glasses hung on the chain at her chest and clicked against a ladle every time she leaned over the pot. "Don't stand there like a guest. Wash your hands. The zucchini won't cut itself."
+
+Dohyun sat at the low table with his bad knee stretched straight, brace straps loose. He had spread an old paper road map over the table like a cloth and set chopsticks on top of Busan and Incheon, pinning the curled edges. Nicotine had yellowed the pads of his fingers so deeply they looked varnished. He did not look up right away.
+
+"She brought those expensive eggs," he said, finally lifting his chin at the grocery bag in Ina's hand. "Means she did something she feels guilty about."
+
+"I brought cheap eggs," Ina said. "You think guilt has a market rate now?"
+
+Hyejin snorted. "Everything has a market rate now. Last week they sold strawberries that tasted like wet tissue for fifteen thousand won."
+
+Ina set the bag on the counter and moved beside her aunt. The faucet stuttered before it gave a clean stream. She washed her hands and sliced zucchini into half-moons while Hyejin dropped tofu cubes into the bubbling jjigae with the neat precision of someone dealing cards. The window was cracked open, but the room still held yesterday's cigarette smoke in the wallpaper.
+
+On the floor by the refrigerator, next to a bag of rice, lay three unopened envelopes with red stamps. A fourth envelope had already been slit open and taped back together. Someone had written DO NOT THROW AWAY across the front in thick marker. Hyejin saw Ina's eyes and placed a bowl over the stack as if she were covering leftovers.
+
+"Eat first," she said without looking at her. "Money always tastes worse on an empty stomach."
+
+They set out side dishes: kimchi too sour for polite company, stir-fried anchovies with too much chili, cucumber seasoned with sesame oil, omelet strips folded like yellow napkins. Hyejin lined up metal bowls by size without thinking, tapping each one once before she put it down. It was a habit Ina remembered from childhood lunches at church basement weddings, where her aunt could feed two hundred people out of panic and pride.
+
+Dohyun folded the map in half and sat up enough to make room. "If you're using this table," he said, "don't spill soup on North Chungcheong."
+
+Ina sat and looked at the faded lines. The map was old enough that some roads no longer existed, and some names had changed spelling. Near the top edge, a tiny crease had almost erased a river.
+
+"You still keeping that thing?" she asked.
+
+"It still tells me where things are."
+
+"It tells you where things were."
+
+"Close enough." He reached for the rice paddle. "That's my whole life now."
+
+Hyejin thumped his shoulder with the back of her hand. "Don't start the tragedy talk before the rice is served. Your daughter came over. Let her pretend she has a normal family for twelve minutes."
+
+Dohyun's mouth twitched at one corner. "Twelve? You're generous tonight."
+
+"I found shrimp on sale. I'm soft."
+
+They ate in standing heat from the pot, mouths burning on the first spoonful before their tongues adjusted. For a while the talk stayed in easy territory. Hyejin complained about a deacon who watered down sesame oil in the church kitchen and called it stewardship. Dohyun told a story about his former foreman falling asleep during a safety lecture and snoring so loud the training video paused because the microphone thought he was speaking. Ina laughed with soup in her mouth and had to cover her lips with the back of her hand while she coughed.
+
+"Your mother would've fired him," Hyejin said.
+
+"She tried to fire everyone," Dohyun said. "At home too."
+
+"She fired your cigarettes once," Ina said. "Remember? She soaked a whole carton in dishwater and lined them up on the balcony like dead fish."
+
+Hyejin slapped the table and barked out a laugh, head thrown back. "He cried over those cigarettes more than he cried at your wedding." She paused, then corrected herself with a dry tilt of her mouth. "At your cousin's wedding. Sorry. I was thinking of the one that never happened because men are unreliable and my memory is old."
+
+Ina rolled her eyes. "Auntie, if you start arranging me at dinner again, I'll leave with the pot."
+
+"Take the pot. I need less washing up."
+
+Even Dohyun laughed then, a rough two-note sound like rusted hinges. He rubbed the side of his knee with his thumb while he chewed, and Ina saw the little relief that came when his face moved out of its careful set. She let the moment stay as long as it could, spoon in hand, steam wet on her upper lip.
+
+The television in the next room bled muffled debate noise through the doorway: campaign promises, panelists snapping over one another, a map of the peninsula on constant rotation in red and blue. No one had muted it all the way, only lowered it to the level of weather.
+
+"Turn that off," Hyejin said. "I can't hear people lie and digest at the same time."
+
+Dohyun did not move. "Leave it. If you turn it off, they'll still lie."
+
+"If it's on, they lie in my kitchen."
+
+Ina got up and clicked the remote. With the TV dead, the fan belt owned the room; chopsticks rang against metal, and traffic hissed up from the street below. Somewhere outside a scooter backfired and shot away.
+
+When she sat again, Dohyun was staring at the map under his bowl. He lifted the bowl and repositioned it so it no longer covered the border line.
+
+"At the dock," he said, voice aimed at the table, "there was a guy from Hamhung. He came down with nothing but a coat and one shoe. This was before you were born." He pressed two fingers against a road line, tracing it from memory. "He kept saying his mother would follow by train because she promised. For ten years he stayed by the freight gate every Chuseok. He brought rice cakes in a plastic bag, like she could smell him through concrete."
+
+Hyejin gave a small click of her tongue. "Dohyun."
+
+"I'm eating," he said. "I'm allowed to talk while I eat."
+
+Ina lowered her spoon. The broth had gone from scalding to warm and suddenly too salty.
+
+"What happened to him?" she asked.
+
+"Nothing happened. That's the point." Dohyun shrugged. "Year eleven he stopped coming to the gate. Year twelve he drank during shift and got his hand crushed under a pallet jack. Year thirteen he moved to Uijeongbu and slept in a laundry room behind his niece's kitchen. That's what the big promises paid him: one ruined hand, no overtime, and rent he could never catch."
+
+Hyejin set down her chopsticks and wiped her fingers on a paper napkin, though they were already clean. "You always pick the ugliest version and call it realism."
+
+"You always pick the church version and call it hope."
+
+"Hope fed people in this house when realism could not."
+
+He looked up at that, and Ina saw anger arriving not as volume but as stillness. The fan squealed in its loop. Outside, someone shouted up an address, then cursed when no one answered.
+
+"Hope didn't pay the hospital," Dohyun said. "Hope didn't cover the cremation deposit."
+
+"I know exactly what hope paid," Hyejin snapped. "I signed two of those forms because your handwriting looked like an earthquake."
+
+Ina felt the pressure shift and tried to pull it back. "Can we not run a balance sheet over jjigae?"
+
+"First, eat," Hyejin said, nudging Ina's rice bowl toward her. "Then panic. Last winter Mrs. Jang took a collections call on an empty stomach, face-planted into the church kimchi tub, and woke up cursing me for salt in her nose. Her debt still sat there when she got home."
+
+Dohyun exhaled through his nose and reached for the anchovies. "Your mother would've turned this into a loading-dock argument by now," he said.
+
+Ina kept her face neutral. "Loading dock."
+
+"That was her move when she wanted to win." Dohyun plucked a chili seed from his bottom lip. "Men with clean cuffs can talk over maps all night, she'd say. Stories move people before policy even laces its boots."
+
+The sentence landed so cleanly it felt rehearsed, though she knew him better than that. He did not rehearse pain. He hoarded it until it leaked out sideways.
+
+Hyejin made a sound that might have been agreement or warning. "She said that while peeling garlic at my sink, one hand on the knife, one hand waving like she was in parliament."
+
+"She said it at me too," Dohyun said. "I told her to stop taking those weekend train trips. She packed anyway. Said if she stayed home and folded laundry while old men drew lines, then she'd be folding laundry for ghosts." He gave a short laugh with no joy in it. "I told her ghosts don't pay rent. She told me rent isn't history."
+
+Ina watched a bead of broth slide down the outside of her spoon and collect at the handle. Her mother had used phrases like tools: not always elegant, always pointed. At the safehouse basement two nights ago, Kwon had spoken with almost the same confidence, except his hands had stayed dry and clean while he did it.
+
+Dohyun chewed, swallowed, and looked directly at Ina for the first time in several minutes. "She believed it, though. The stories thing. Not as slogan. As work. She thought you could move a country by changing what people hummed doing dishes."
+
+Ina heard herself answer before she had planned the tone. "Maybe she wasn't—" She shook her head. "No. Maybe she wasn't wrong about songs. About what people keep humming when they don't remember the speech."
+
+Hyejin's eyes flicked up. Dohyun's did too.
+
+"About dishes?" Hyejin asked lightly, testing.
+
+"About songs," Ina said, then added quickly, "I mean, about how people remember things. Not slogans."
+
+Dohyun leaned back and the chair joints complained. "Careful. That's how people get recruited."
+
+The word hit the table harder than any chopstick. Ina forced herself to reach for rice so her hand had a job.
+
+"Recruited by what, Appa? By who? I mean, say it plain."
+
+"By anyone who spots red stamps on your fridge and smells panic." He pushed his bowl away an inch. "Election vans with loudspeakers. Church elders with pledge cards. Startup kids in clean sneakers. Doesn't matter. They tell you your private mess is noble duty, then they cut your hours, wreck your knee, and tape an eviction notice to your door."
+
+Hyejin gave him a hard look. "Don't talk like she's fourteen."
+
+"I'm talking like she's thirty-five and smart enough to hear it."
+
+Ina set the rice bowl down too hard and grains stuck to the lacquered table. "No one's recruiting me at this table."
+
+Dohyun's expression softened around the edges, and that made it worse. "I didn't say at this table."
+
+Silence gathered, but it was not empty. The television in the other room stayed dark while the fan kept its squeal and traffic scraped below. When Hyejin shifted, her glasses chain ticked once against her bowl.
+
+Hyejin reached for the sour kimchi and put a strip on Ina's rice. "Eat," she said. "Chew first, think second. Pastor Lim's boy read three legal notices before breakfast, puked bile in the parking lot, and blamed me for the coffee. I'm not mopping that scene in my kitchen."
+
+Ina almost laughed. Instead she ate. The kimchi hit sharp and cold against the starch.
+
+After a minute Dohyun spoke again, quieter. "I remember." He tapped the map once with his knuckle. "Your mother and I fought for twenty years over that stripe up north. Same fight in dock lockers, bus stops, kitchen sinks. I wanted a life that fit in a lunch pail and made it home by midnight. She wanted a life that reached past our block." He pressed his palm flat to the old map. "Both of us lost anyway."
+
+"You didn't lose everything," Hyejin said. "You still have your daughter."
+
+"For now," he said.
+
+Ina put her spoon down. "I'm not going anywhere."
+
+He met her gaze and gave a tired half-smile that did not agree with her. "Nobody leaves all at once."
+
+The envelopes by the refrigerator seemed to tilt into her vision again even though she was not looking that way, with red stamps, late notices, and final reminders stacked in one accusing pile.
+
+Hyejin stood and gathered bowls with brisk, irritated efficiency. "Fine. Enough philosophy. If either of you says border, policy, or destiny again, I'm putting both of you on dish duty and locking the soap." She pointed the ladle at Dohyun. "You, medicine after dinner." Then at Ina. "You, take those envelopes before your father uses them as coasters."
+
+"I wasn't going to use them as coasters," Dohyun muttered.
+
+"You used one as a fan last week."
+
+"That wasn't an envelope. It was a flyer."
+
+"It was a tax notice."
+
+Ina snorted despite herself; the sound slipped out before she could clamp it down, and it hurt less than she expected.
+
+She stayed to wash dishes while Hyejin wrapped leftovers for tomorrow's breakfast service. Her aunt labeled each plastic container with masking tape and blocky marker letters: TOFU, KIMCHI, DOHYUN PILLS DO NOT TOUCH. She did it like a person putting names on lifeboats.
+
+In the small bathroom mirror, Ina caught her own face under the yellow bulb. Her eyes looked older than thirty-five tonight. A thread of zucchini skin clung to her sleeve. She rinsed it off, dried her hands, and came back to the kitchen where the envelopes waited.
+
+The top one was from Seoul St. Mary's billing office. She knew the logo before she read the return address: blue cross bent into a ribbon shape. She slid a finger under the seal and unfolded the statement.
+
+Minimum payment due within seven days: KRW 2,900,000.
+
+Total outstanding balance: KRW 58,000,000.
+
+Past due notices sent: 3.
+
+"They're calling during daytime now," Hyejin said, tying a bag knot with a hard jerk. "Not just the evening shift. They called while I was gutting mackerel and asked if Mr. Han understood legal escalation. I told the woman he understood knives better and she hung up."
+
+Ina scanned the smaller print and read each item in order: interest adjustment, late fees, processing charge. The rows and columns felt like polite bureaucratic violence.
+
+"Did they call Appa directly?"
+
+"Of course they called him." Hyejin lowered her voice. "He pretended he couldn't hear them and smoked half a pack on the landing."
+
+From the other room Dohyun shouted, "I can hear you both. My hearing works when people are insulting me."
+
+"Hear this," Hyejin shouted back. "You owe rent."
+
+Dohyun did not answer.
+
+The second envelope was from his landlord: arrears KRW 11,200,000. A typed paragraph threatened legal filing if no payment arrangement was made within ten business days. Someone had added a handwritten note in blue pen: Mr. Han, please call me before this goes to attorney. I know your situation.
+
+The handwriting was small and careful, the kind used by someone trying not to look cruel.
+
+"Landlord's daughter wrote that," Hyejin said. "She wears those huge black boots even in July. Nice girl. Keeps giving your father extra time because he fixed their hallway lights for free last winter."
+
+A phone buzzed on the counter. Not Ina's. Hyejin checked the screen and exhaled through her teeth.
+
+"Billing office again," she said. "Blocked number."
+
+She offered the phone to Ina, then pulled it back before Ina could take it. "No. If you answer, they smell blood."
+
+The vibration stopped, then started again ten seconds later.
+
+This time Ina took it and swiped accept.
+
+"Hello?"
+
+A woman with a hoarse smoker's rasp launched into scripted courtesy so quickly the syllables tripped one another. "Good evening, this call concerns account services for Mr. Han Dohyun regarding unresolved medical balance. For privacy verification, can you confirm relation to account holder?"
+
+Ina could hear office noise behind her: keyboards, cheap headset static, someone coughing without muting. She pictured a row of cubicles under fluorescent light, paper cups with instant coffee skin on top.
+
+"I'm his daughter," Ina said.
+
+"Thank you, Ms. Seo. I need to advise you this account is currently at escalation level three. We can suspend legal handoff if a minimum commitment is made tonight."
+
+"How much?"
+
+"Two million nine hundred thousand won by midnight secures suspension for fourteen days."
+
+Ina looked at the statement in her hand as if a different number might appear.
+
+"Tonight?"
+
+"Yes, ma'am. We can process card, account transfer, or split authorization if you have family contributors available on the line." The woman paused, then dropped the script by half a degree. "If I don't log movement by shift close, it goes to the next team and they don't negotiate."
+
+A pen tapped twice against a desk on the other end, maybe the caller's own habit, maybe the person in the next cubicle. Ina imagined her in a cardigan with pilled sleeves and gum hidden in her cheek to keep from shouting.
+
+"What is your name?" Ina asked.
+
+There was a tiny silence. "Agent ID is 7426."
+
+"Your real name."
+
+Another pause, longer this time. "Sunmi," the woman said, voice flattening as if she regretted it immediately. "Ms. Seo, I'm not allowed to do personal conversation on recorded line."
+
+"I'm not trying to make friends. I'm trying to understand if any part of this is human."
+
+Sunmi let out air through her teeth, a scrape of breath against the mic. "Human costs extra. I can offer you fourteen days. That's all I've got."
+
+Ina closed her eyes. The kitchen smelled of dish soap and cooled broth. Hyejin watched her with her lips pressed thin.
+
+"I can't pay tonight," Ina said.
+
+"Pay partial by midnight. Even three hundred thousand changes my screen color. Right now you're red."
+
+Her status was red.
+
+Ina's eyes kept snagging on the same proof. Red-stamped envelopes by the fridge. Block-letter labels on leftover containers. A map corner trapped under the placemat where Dohyun had shoved it aside. Every object in the room had been stretched past its intended life and was still being asked for one more week.
+
+"I'll transfer three hundred tonight," she said.
+
+"Thank you," Sunmi said, pure script again. "I'm sending secure link now. Please complete before 23:59 to preserve temporary hold."
+
+The line clicked dead.
+
+Ten seconds later Ina's own phone buzzed in her pocket.
+
+She expected the payment link. She got two messages.
+
+The first was from an unlisted number labeled COMPLIANCE DESK:
+
+If you resign before the first payout, Legal files breach at 09:00 Monday.
+Security Crimes receives your intake file the same day.
+Your accounts freeze first, and questions come later.
+
+The second was from Council payroll, formal and bland:
+
+Welcome packet processed. First stipend release scheduled Friday, pending compliance confirmation.
+
+She stared at both until the screen dimmed.
+
+Hyejin had not seen the texts, only Ina's face.
+
+"What now?" her aunt asked.
+
+Ina locked the phone. "Now I pay what I can and pretend that's strategy."
+
+"That sounds like your mother." Hyejin tied another bag. "Except she would have called it revolution and made everyone else wash dishes."
+
+Ina almost told her about the basement with blocked windows and hot server fans, about Kwon's dry hands on the contract pages, and about the clause that made non-disclosure a criminal edge instead of family privacy. She imagined saying it out loud and watched, in advance, what it would do: Dohyun standing up too fast on a bad knee, Hyejin reaching for the church phone tree, this apartment becoming a frightened committee.
+
+She swallowed it.
+
+"I picked up extra work," she said instead. "Script polish. Night schedule. It'll cover things for now."
+
+From the living room, Dohyun spoke without turning around. "Television scripts?"
+
+"Some of it still pays."
+
+"People still pay for that?"
+
+"People pay for whatever keeps them from hearing silence."
+
+He grunted, which might have been skepticism or respect. "Charge double."
+
+It was the closest he had come all evening to blessing.
+
+By the time she left, the air in the hallway had cooled and smelled faintly of bleach from someone's late mop. In the elevator mirror she saw soup flecks on her shirt and wiped them with a tissue until the fabric darkened in uneven circles.
+
+Outside, the night carried wet asphalt and fryer oil from the fried chicken place across the alley. A delivery rider idled at the curb scrolling his phone, helmet visor up, lips moving while he read. Ina walked past him to the bus stop and did the numbers again because numbers gave her hands a way to move even when she stood still.
+
+The hospital minimum this week was 2.9 million.
+
+The landlord threat window was ten business days.
+
+If MiraeWave did not delay again, the subtitle residual due next month might be 2.1 million.
+
+The cash in her account after the funeral, groceries, and her father's pills was not enough.
+
+The council stipend on Friday would be 7 million.
+
+The contract breach clause still meant immediate repayment of advance and liability exposure for operational disclosure.
+
+She did not need a calculator. She needed money and silence and a stomach strong enough to hold both.
+
+At home the apartment over the river felt too clean because she had spent the last week scrubbing grief into corners. The green lyric notebook lay where she had hidden it, inside an old rice bin under dish towels. She took it out and set it on the table beside her laptop.
+
+The call log already showed three missed numbers from variants of the same billing office prefix. A voicemail icon glowed red; another appeared while she watched. She let both sit unopened.
+
+She opened her banking app and transferred KRW 300,000 through the secure link Sunmi had sent. The confirmation screen showed an animated checkmark so cheerful it felt insulting.
+
+Immediately, another call came in from a different number, and she answered without greeting.
+
+"Ms. Seo?" a male voice asked. Younger than she expected, maybe late twenties, polite enough to be dangerous. "This is Min from Daewon Asset Recovery, legal-prep desk for Seoul St. Mary's follow-up unit. Did you receive our colleague's message?"
+
+"I paid partial."
+
+"I see that. Thank you." Keyboard clicks. "New trigger: because you paid from your account, you're payer of record now. If the remaining minimum isn't posted by Friday 18:00, legal files a provisional seizure request at 09:00 Monday."
+
+Ina pulled an unopened envelope toward her and flattened it with her palm. "You freeze my account over my father's bill."
+
+"The court decides freeze, but filing lets your bank hold incoming deposits while the petition is pending." He paused to read something on-screen. "If Friday payroll lands after 18:00, it can get trapped in that hold."
+
+The stipend. He was describing the stipend without knowing its name.
+
+"How long is pending?" She wrote FRI 18:00 on the back of the envelope and underlined it twice.
+
+"Usually five to ten business days."
+
+"Noted."
+
+"I need a same-day payment intent with an exact amount."
+
+"Two million six by Friday, before six."
+
+"Logged." Office chatter surged behind him, then dipped. "If that number slips, call before Friday noon. We can request one 24-hour legal hold once. After 12:00, we can't submit it."
+
+Ina circled NOON and pressed the pen hard enough to split the paper fibers. "Then don't miss my call either."
+
+This time he answered through a tired half-smile. "I won't. Good night, Ms. Seo."
+
+When the call ended, the room became very small, with refrigerator hum, distant traffic, and river wind pushing faintly against the window frame. Her burn scar on her left wrist ached where the weather changed, a dull nerve tug she usually ignored.
+
+She opened the council contract file on her laptop and read the breach section again. Section 11 named Council Legal as reporting authority.
+She rubbed the burn scar on her left wrist until the skin blanched.
+If she withdrew without clearance, the clocks started immediately: breach notice in twelve hours, repayment demand within seventy-two, intake recordings forwarded to National Security Investigation within one business day.
+Section 12 allowed temporary asset-preservation orders on suspicion alone, before any disclosure was proved.
+
+She could quit in theory. She could send an email by morning and call it a bad fit.
+Her banking app still showed the transfer checkmark beside a balance that could not survive another week.
+In practice, that email started four clocks: hospital legal filing Friday night, seizure petition Monday morning, landlord attorney notice inside ten business days, Council breach packet by noon.
+
+The unknown text sat at the top of her messages, plain and ugly.
+
+If you resign before the first payout, Legal files breach at 09:00 Monday.
+Security Crimes receives your intake file the same day.
+Your accounts freeze first, and questions come later.
+
+It could have been a bluff from someone low in the chain. It could have been policy. Either way, it gave her a date, an office, and a clock.
+
+Ina pulled the green notebook toward her. The cover had softened at the corners from years in her mother's hands. Inside were lyric fragments, dates, grocery lists, a phone number crossed out three times, and one page where Eun-sook had copied a line from an old speech and then written in the margin, Too clean. Real life leaks.
+
+Ina flipped to an empty page near the back. She sat with the pen uncapped, listening to the fan belt cry in memory, hearing her father say recruited like it was a weather report and a warning both.
+
+She wrote one sentence in Korean first and copied it below in English because contract language had entered her head in English and she wanted no excuse to misunderstand herself.
+
+No operation of mine will knowingly increase civilian harm.
+
+She stared at it, added a date, and drew a box around the line as if a box could turn resolve into law.
+
+After a moment she wrote two clarifications underneath, smaller, harsher:
+
+No targeting civilians for pressure effects.
+
+No concealment of civilian casualties if discovered.
+
+The pen dug so hard on discovered that it almost tore the page.
+
+Her phone buzzed before the ink dried.
+
+REMAINING KRW 2,600,000 DUE BY FRI 18:00.
+PROVISIONAL FILING SET FOR 09:00 MONDAY IF UNPAID.
+ONE LEGAL HOLD REQUEST AVAILABLE BEFORE FRI 12:00.
+
+A second banner stacked above it from Council payroll:
+COMPLIANCE CONFIRMATION WINDOW CLOSES 23:00.
+
+She wrote a fourth line under the box, smaller than the others.
+
+Take their stipend first. Keep Appa housed.
+
+She hated that line more than the first three because it was the one she could actually execute.
+
+She opened a new note on her phone. She copied the three rule lines, buried the file under a grocery-list title, and made sure it would not glow like a confession if someone glanced at her screen.
+
+She reopened the payroll message and tapped the secure link she had left untouched.
+
+COMPLIANCE CONFIRMATION REQUIRED BEFORE FIRST STIPEND RELEASE.
+By confirming active status, contractor accepts Clause 11 and Clause 12 remedies.
+
+Her thumb hovered over CONFIRM while the fourth line bled through to the next page.
+
+She entered the one-time code, typed her legal name, and pressed CONFIRM.
+
+The receipt arrived before she could change her mind.
+
+ACTIVE STATUS LOCKED - 22:41
+FIRST STIPEND RELEASE - FRIDAY
+WITHDRAWAL WITHOUT CLEARANCE TRIGGERS BREACH ENFORCEMENT
+
+Outside, a siren moved along the river road and faded. Ina stood, took two steps toward the sink, and bent over hard when acid climbed her throat. Nothing came up but bitter spit and a thread of blood from where she had bitten the inside of her cheek. Her left wrist burned under old scar tissue, hot and sharp, and she gripped the steel edge until her fingers cramped.
+
+In the dark kitchen window, her reflection floated over black water and construction cranes. She did not text her father. She sent Hyejin one line instead: I'll cover Friday. Then she opened MiraeWave's morning rundown and read until the sky went from black to dishwater gray and rain started needling the glass.

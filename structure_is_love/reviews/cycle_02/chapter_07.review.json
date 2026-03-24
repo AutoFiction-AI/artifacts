@@ -1,0 +1,49 @@
+{
+  "chapter_id": "chapter_07",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH07-BKR-001",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_02/chapters/chapter_07.md:209; snapshots/cycle_02/chapters/chapter_07.md:225; snapshots/cycle_02/chapters/chapter_07.md:311; snapshots/cycle_02/chapters/chapter_07.md:423",
+      "problem": "The chapter's core consequence (Zoe boundary repair) lands strongly in-scene, but the ending weight shifts to a long home-control reprise, so the friendship consequence is reduced to a brief late text exchange instead of a fully dramatized carry-forward action.",
+      "rewrite_direction": "Tighten repeated audit beats in snapshots/cycle_02/chapters/chapter_07.md:323-347 and use the recovered space in snapshots/cycle_02/chapters/chapter_07.md:367-431 to stage one explicit behavioral carry-forward from Zoe's boundary scene (set up at snapshots/cycle_02/chapters/chapter_07.md:209-226), not just a reactive aftermath text.",
+      "acceptance_test": "PASS if, in snapshots/cycle_02/chapters/chapter_07.md:367-431, Anika takes one observable boundary action learned from Zoe before the chapter closes (spoken boundary, proactive outreach, or refusal pattern linked to lines 209-226); FAIL if the Zoe consequence remains only a short end-text after the father conflict."
+    },
+    {
+      "finding_id": "CH07-CRF-001",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_02/chapters/chapter_07.md:3; snapshots/cycle_02/chapters/chapter_07.md:7; snapshots/cycle_02/chapters/chapter_07.md:127; snapshots/cycle_02/chapters/chapter_07.md:255; snapshots/cycle_02/chapters/chapter_07.md:433",
+      "problem": "Anika's stress mode is repeatedly rendered through explicit math/minute accounting. Because this token set appears in nearly every major beat, the pattern starts to feel mechanically imported from the stress-tell profile rather than dynamically evolving in-scene.",
+      "rewrite_direction": "In snapshots/cycle_02/chapters/chapter_07.md:3-9, snapshots/cycle_02/chapters/chapter_07.md:125-129, snapshots/cycle_02/chapters/chapter_07.md:253-257, and snapshots/cycle_02/chapters/chapter_07.md:433-434, keep only the most narratively necessary numeric beat and replace the others with non-numeric embodied pressure signals (breath, muscle guarding, compulsive gesture, sensory trigger tied to debt/grief stakes).",
+      "acceptance_test": "PASS if each cited beat contains at least one non-numeric stress cue and no beat contains more than one explicit time/calorie/rep calculation; FAIL if the revised passage still stacks multiple explicit calculations in each of those beats."
+    },
+    {
+      "finding_id": "CH07-PRO-001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_02/chapters/chapter_07.md:41; snapshots/cycle_02/chapters/chapter_07.md:61; snapshots/cycle_02/chapters/chapter_07.md:333",
+      "problem": "The sentence construction 'She could hear ...' appears three times. Crossing the twice-only threshold turns a useful sensory entry into a detectable prose tic.",
+      "rewrite_direction": "Revise at least one of snapshots/cycle_02/chapters/chapter_07.md:41, snapshots/cycle_02/chapters/chapter_07.md:61, and snapshots/cycle_02/chapters/chapter_07.md:333 so the auditory perception is conveyed with a different syntactic shape (for example, external sound pressure, intrusive quoted memory, or physical vibration language).",
+      "acceptance_test": "PASS if the exact stem 'She could hear' appears no more than twice across the chapter and all three cited moments read as distinct sensory constructions; FAIL if all three retain the same stem-driven setup."
+    }
+  ],
+  "summary": "Chapter 07 is emotionally legible, tense-consistent, and continuity-consistent, with strong voice separation between Anika, Zoe, and Ravi and no detectable fade-to-black intimacy or major sanitization drift. It still fails this review pass on Booker/craft/prose because ending-weight distribution weakens the chapter-specific consequence and repeated stress/prose templates begin to feel mechanical.",
+  "coverage_scene_ids": [
+    "party_arrival_and_food_audit",
+    "cookie_game_release",
+    "fire_escape_boundary_conversation",
+    "home_curfew_confrontation",
+    "night_notebook_and_text"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "chapter_id": "chapter_07",
+  "cycle": 1,
+  "input_snapshot_hash": "6ee31b8a68ce147c9266fcab5d2d435020a6105d597afc8bb4fcf43d99e7413f",
+  "findings": [
+    {
+      "finding_id": "F04",
+      "source": "full_award_rescue.review",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.post_revision.md:1479",
+      "problem": "Full-book recurring pattern continues. Line 1479: 'Dan felt something open in his chest that was specific to this room.' By Chapter 7 this is the reader's third encounter with chest-as-emotion-container (after Ch 6 lines 1224 and 1280). The construction 'felt something [verb] in his chest' is structurally identical to Mira's instances, which also collapses the voice distinction between Dan and Mira chapters \u2014 both characters default to the same interior anatomy for peak emotion. Dan's established stress tells and emotional processing style involve noticing irrelevant physical details and gripping concrete objects. His interiority should work through his senses and his attention rather than through interior chest-openings.",
+      "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.post_revision.md:1479, replace 'Dan felt something open in his chest that was specific to this room' with a response routed through Dan's established perceptual mode. Dan processes emotion by grabbing onto the concrete: the bourbon glass gaining weight in his hand, the room's sound changing quality (the algorithmic jazz suddenly audible, or suddenly inaudible), a specific visual detail of Mira \u2014 her collarbones, the tortoiseshell clip, the grad-school tote \u2014 occupying his entire field of attention. The recognition that she's reminding him of something he'd stopped seeing should arrive through his eyes, not his chest.",
+      "acceptance_test": "PASS if line 1479 area delivers Dan's emotional recognition without referencing his chest, sternum, ribs, or interior cavity, and the replacement is consistent with Dan's stress-tell pattern (concrete physical detail, external sensory attention). FAIL if any variant of the chest-opening construction remains."
+    }
+  ],
+  "must_fix_count": 1,
+  "non_negotiables": [
+    "Remove the chest/sternum emotional registration at line 1479; reroute Dan's emotional response through his established perceptual mode (concrete physical detail, external sensory attention)",
+    "The replacement must preserve Dan's distinct voice separation from Mira's somatic register"
+  ],
+  "acceptance_targets": [
+    "Line 1479 area contains no reference to chest, sternum, ribs, or interior cavity as emotional container",
+    "Dan's emotional recognition arrives through concrete sensory detail consistent with his character profile",
+    "Voice distinction between Dan and Mira chapters is maintained or strengthened"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_17",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_17-craft-001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_01/chapters/chapter_17.md:85, snapshots/cycle_01/chapters/chapter_17.md:101, snapshots/cycle_01/chapters/chapter_17.md:205, snapshots/cycle_01/chapters/chapter_17.md:207, snapshots/cycle_01/chapters/chapter_17.md:215, snapshots/cycle_01/chapters/chapter_17.md:253, snapshots/cycle_01/chapters/chapter_17.md:287",
+      "problem": "The notebook handoff that changes the novel's endgame depends on a prison procedure gap the chapter itself foregrounds and then hand-waves. Elise is searched for paper on entry, Drouet explicitly says she will see any paper passed, Lucien still has a hidden notebook in his coat lining, and Drouet later notices the altered line of Elise's bodice without intervening. Because the scene's stated rules and the plot-critical transfer do not fully reconcile, the chapter asks the reader to accept contraband by authorial permission rather than earned causality.",
+      "rewrite_direction": "Rework the transfer logic around snapshots/cycle_01/chapters/chapter_17.md:85, snapshots/cycle_01/chapters/chapter_17.md:101, snapshots/cycle_01/chapters/chapter_17.md:205, snapshots/cycle_01/chapters/chapter_17.md:215, snapshots/cycle_01/chapters/chapter_17.md:251, and snapshots/cycle_01/chapters/chapter_17.md:287 so the notebook's survival and exit obey the prison regime already on the page. Either establish before or during the visit that Lucien was allowed a vetted account book and that Drouet is consciously choosing not to stop the transfer, or change the transfer method to one the stated search procedure could plausibly miss. The scene cannot rely only on Drouet not looking up and then ignoring the bulge at Elise's bodice.",
+      "acceptance_test": "Pass if the revised equivalents of snapshots/cycle_01/chapters/chapter_17.md:85, snapshots/cycle_01/chapters/chapter_17.md:101, snapshots/cycle_01/chapters/chapter_17.md:205-215, and snapshots/cycle_01/chapters/chapter_17.md:251-287 make two facts readable on the page: how Lucien retained the notebook after intake, and why Drouet or the search procedure fails or chooses not to stop its transfer. Fail if the notebook still appears from an unprepared coat lining and leaves on Elise's body after a guard has explicitly warned that she sees any paper passed."
+    },
+    {
+      "finding_id": "chapter_17-prose-001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_01/chapters/chapter_17.md:59, snapshots/cycle_01/chapters/chapter_17.md:71, snapshots/cycle_01/chapters/chapter_17.md:131, snapshots/cycle_01/chapters/chapter_17.md:187, snapshots/cycle_01/chapters/chapter_17.md:299, snapshots/cycle_01/chapters/chapter_17.md:301",
+      "problem": "The chapter repeatedly leans on the same negation-fragment emphasis pattern ('Not X. Y.' and close variants) in narration and in the notebook reveal. Once that cadence recurs across six separate beats, including the closing evidence pages, it stops feeling pressure-earned and starts reading like a house formula. The repetition flattens moments that should differentiate Vautrin's administrative chill, Lucien's moral refusal, and the ledger's deadpan record into one authorial rhythm.",
+      "rewrite_direction": "Rewrite at least four of the marked beats around snapshots/cycle_01/chapters/chapter_17.md:59, snapshots/cycle_01/chapters/chapter_17.md:71, snapshots/cycle_01/chapters/chapter_17.md:131, snapshots/cycle_01/chapters/chapter_17.md:187, snapshots/cycle_01/chapters/chapter_17.md:299, and snapshots/cycle_01/chapters/chapter_17.md:301 so they keep the same force without recycling the same negation-fragment syntax. Let some emphasis ride on image, some on action, and some on longer syntactic pressure; keep the notebook entries especially distinct from the narrator's habitual rhetorical moves.",
+      "acceptance_test": "Pass if, in the revised equivalents of snapshots/cycle_01/chapters/chapter_17.md:59, snapshots/cycle_01/chapters/chapter_17.md:71, snapshots/cycle_01/chapters/chapter_17.md:131, snapshots/cycle_01/chapters/chapter_17.md:187, snapshots/cycle_01/chapters/chapter_17.md:299, and snapshots/cycle_01/chapters/chapter_17.md:301, no more than two beats still use the same negation-fragment formula and at least three are recast into clearly different sentence shapes. Fail if three or more of these marked moments still rely on the same 'Not X...' cadence."
+    }
+  ],
+  "summary": "chapter_17 clears the causal spine and keeps Vautrin, Lucien, Elise, and Drouet vocally distinct; I found no continuity contradiction, narrative-tense drift, sanitization drift, intimacy fade-to-black, or example-line reuse against the provided canon and style inputs. It still fails overall because the notebook transfer hinges on under-motivated prison procedure slack, and the prose overuses one negation-fragment construction until it reads like a tic rather than a choice."
+}

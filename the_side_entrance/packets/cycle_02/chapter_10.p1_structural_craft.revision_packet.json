@@ -1,0 +1,82 @@
+{
+  "acceptance_targets": [
+    "[booker_001] Pass if, after the first breakup recap at snapshots/cycle_02/chapters/chapter_10.md:143, the revised chapter contains no more than one additional grievance block before Nina names why she called Beni, and each intervening exchange produces an observable leverage change in the car rather than another thematically similar complaint.",
+    "[FBR-009] Pass if snapshots/cycle_02/FINAL_NOVEL.md:3498 through snapshots/cycle_02/FINAL_NOVEL.md:3506 preserve the beat's shock without using the repeated stillness formula; fail if the moment is still carried by some variant of her simply going still or flat."
+  ],
+  "chapter_id": "chapter_10",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if, after the first breakup recap at snapshots/cycle_02/chapters/chapter_10.md:143, the revised chapter contains no more than one additional grievance block before Nina names why she called Beni, and each intervening exchange produces an observable leverage change in the car rather than another thematically similar complaint.",
+      "chapter_id": "chapter_10",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_10.md:143; snapshots/cycle_02/chapters/chapter_10.md:195; snapshots/cycle_02/chapters/chapter_10.md:249; snapshots/cycle_02/chapters/chapter_10.md:293",
+      "finding_id": "booker_001",
+      "problem": "The night-drive scene spends too long circling the same humiliation in successive complaint runs before the decisive objectification beat lands, so the chapter's planned two-scene spine slackens into a prolonged confessional loop instead of escalating cleanly toward consequence.",
+      "rewrite_direction": "Compress or combine the grievance material around snapshots/cycle_02/chapters/chapter_10.md:143 and snapshots/cycle_02/chapters/chapter_10.md:195, or make the cigarette-stop exchange at snapshots/cycle_02/chapters/chapter_10.md:217 force a new tactical turn, so Nina's 'you contain' / 'useful' confession arrives earlier and changes the ride before the chapter reaches snapshots/cycle_02/chapters/chapter_10.md:293.",
+      "severity": "MEDIUM",
+      "source": "booker",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if snapshots/cycle_02/FINAL_NOVEL.md:3498 through snapshots/cycle_02/FINAL_NOVEL.md:3506 preserve the beat's shock without using the repeated stillness formula; fail if the moment is still carried by some variant of her simply going still or flat.",
+      "chapter_id": "chapter_10",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:3502",
+      "finding_id": "FBR-009",
+      "problem": "Nina's turn lands on the same `went still` wording the novel has already used three times in quick succession. At this point the construction reads as a reflex rather than a deliberate motif, and it flattens a scene that otherwise has excellent charge. This instance should REPLACE, not KEEP.",
+      "rewrite_direction": "Revise snapshots/cycle_02/FINAL_NOVEL.md:3498 through snapshots/cycle_02/FINAL_NOVEL.md:3506 so Nina's pause after Beni's pushback registers through a more singular physical recalibration: cigarette ash, shoe grip, breath, jaw, hand on the bottle, or another concrete choice tied to this embankment stop. Remove the `went still` phrasing.",
+      "severity": "MEDIUM",
+      "source": "booker_global",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "22ef23ba3f32e60c1ddab93f5e05cd618670065142926c12430a102200426dc9",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into asymmetry, embarrassment, appetite, and the material costs of intimacy. When an edge case appears, choose the version that preserves class pressure, erotic consequence, and bodily specificity rather than smoothing the scene into tasteful distance or soft-focus safety.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene naturally contains sexual awkwardness, bodily shame, class contempt, grief, or moral compromise, vague tasteful phrasing counts as a failed draft and must be rewritten toward concrete consequence.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High - contractions are the norm in spoken English here; uncontracted forms should appear mainly for precision, social performance, or emphasis.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 2,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Vary chapter feel through scene count, dialogue density, movement versus waiting, and whether the turn comes from confrontation, discovery, aftermath, preparation, or unwanted intrusion. A nocturnal chauffeur chapter should not be followed by another chapter with the same pulse and architecture; counter hard chapters with domestic or reflective ones that still advance consequence.",
+      "diction": "Plainspoken but exact, materially grounded, and alert to social register; imagery should emerge from labor, appetite, weather, and bodily memory rather than from decorative abstraction.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person anchored to Beni, with memory pressure and sensory bleed but no roaming omniscience.",
+      "narrative_tense": "Past tense",
+      "rhythm_target": "Alternate compressed, road-tight paragraphs with slower observational passages that let smell, touch, and silence accumulate; keep sentence music controlled rather than showy.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

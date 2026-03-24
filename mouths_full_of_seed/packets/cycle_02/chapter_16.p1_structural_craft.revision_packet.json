@@ -1,0 +1,95 @@
+{
+  "acceptance_targets": [
+    "[chapter_16_f001] At snapshots/cycle_02/chapters/chapter_16.md:137-141, Lale's reply reads as complete spoken English on a first pass. The reader does not need to infer a missing word or predicate, and the exchange still preserves her corrective pressure.",
+    "[chapter_16_f002] At snapshots/cycle_02/chapters/chapter_16.md:317-319, every sentence is attributable to Riva's perception or inference. Daro's error is legible from visible behavior, voice, or remembered pattern, not from unfiltered narration of his inner certainty.",
+    "[FBR-002] Pass if reading snapshots/cycle_02/FINAL_NOVEL.md:7366-7444 makes the collective form of the ritual feel discovered through immediate physical problem-solving. Fail if the scene still solves itself through several fresh declarative rules delivered back-to-back during the crisis."
+  ],
+  "chapter_id": "chapter_16",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "At snapshots/cycle_02/chapters/chapter_16.md:137-141, Lale's reply reads as complete spoken English on a first pass. The reader does not need to infer a missing word or predicate, and the exchange still preserves her corrective pressure.",
+      "chapter_id": "chapter_16",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_16.md:139 - Lale says, \"At the moment we're.\"",
+      "finding_id": "chapter_16_f001",
+      "problem": "This is an ungrammatical clipped fragment, not pressure-shaped speech. It violates the constitution's ban on elliptical clipping and lands as a draft glitch in the middle of a precision docking beat.",
+      "rewrite_direction": "Replace the line at snapshots/cycle_02/chapters/chapter_16.md:139 with a fully grammatical reply in Lale's precise, dry register that still acknowledges Iven's point and keeps the scene moving. If interruption is intended, mark the interruption explicitly on the page instead of leaving the predicate missing.",
+      "severity": "HIGH",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "At snapshots/cycle_02/chapters/chapter_16.md:317-319, every sentence is attributable to Riva's perception or inference. Daro's error is legible from visible behavior, voice, or remembered pattern, not from unfiltered narration of his inner certainty.",
+      "chapter_id": "chapter_16",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_16.md:317 - \"He felt the mouth answer him and mistook answer for obedience.\"",
+      "finding_id": "chapter_16_f002",
+      "problem": "The Riva scene steps outside the style bible's close-third rule by stating Daro's private cognition as fact. That brief omniscient slide weakens the otherwise tight pressure of Riva's POV at the chapter's central disaster beat.",
+      "rewrite_direction": "Recast snapshots/cycle_02/chapters/chapter_16.md:317 so Daro's mistake is conveyed through what Riva can see, hear, or infer from his behavior. Keep the parallel to Riva's own labor logic if useful, but make it legibly her reading rather than direct access to his mind.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if reading snapshots/cycle_02/FINAL_NOVEL.md:7366-7444 makes the collective form of the ritual feel discovered through immediate physical problem-solving. Fail if the scene still solves itself through several fresh declarative rules delivered back-to-back during the crisis.",
+      "chapter_id": "chapter_16",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:7414",
+      "finding_id": "FBR-002",
+      "problem": "The final-lock mechanics arrive in a compressed explanatory burst while the catastrophe is already underway. Between snapshots/cycle_02/FINAL_NOVEL.md:7414-7438 and snapshots/cycle_02/FINAL_NOVEL.md:7561-7567, the scene stacks the distributed-lock explanation, Nami's hidden seed, and Bato's interpretive rule about Jun in rapid succession, so the climax reads as late puzzle assembly instead of an inevitable discovery earned by prior physical logic.",
+      "rewrite_direction": "Rework snapshots/cycle_02/FINAL_NOVEL.md:7366-7438 and snapshots/cycle_02/FINAL_NOVEL.md:7553-7567 so the collective solution emerges from visible failed attempts and short physical deductions already inside the scene. Keep only one new piece of information per turn. Convert summary sentences such as snapshots/cycle_02/FINAL_NOVEL.md:7436-7438 into action, interruption, or resisted recognition. The reader should watch characters infer the five-station structure under pressure instead of receiving the whole mechanism in a stack.",
+      "severity": "HIGH",
+      "source": "booker_global",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "9ba29108c9e51364c5e1900183bad32fa703ecf70826b37ff8d37ce521d0df32",
+  "must_fix_count": 3,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into the collision of sanctity, lust, labor, rot, and family resentment. In edge cases, choose the more concrete, uncomfortable, and character-specific rendering over symbolic safety; if an image or action feels too polite for the pressure, it is probably wrong.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If sex, violence, shame, grief, or economic pressure drives a scene, vague language counts as a failed beat; replace euphemism with the exact bodily, social, or material consequence the character experiences.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High - contractions are the norm across dialogue; uncontracted forms are reserved for ritual speech, emphasis, or deliberate character-specific formality.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Vary scene count, dialogue density, and narrative movement aggressively: follow ordeal with meal, revelation with labor, schism with care, and public spectacle with close-bodied aftermath so no adjacent chapters share the same structural rhythm.",
+      "diction": "Concrete, bodily, locally sacred, and unsanitized; lyrical only when pressure earns it, never as a decorative default.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person rotating among the five siblings; each scene stays inside one consciousness and lets the river press through perception rather than omniscient explanation.",
+      "narrative_tense": "Past tense.",
+      "rhythm_target": "Alternate muscular propulsion with denser lyric accumulation; peak scenes should tighten and clarify rather than dissolve into fragmentary haze.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

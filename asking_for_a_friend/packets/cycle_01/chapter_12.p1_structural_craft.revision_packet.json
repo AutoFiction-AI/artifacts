@@ -1,0 +1,160 @@
+{
+  "acceptance_targets": [
+    "[c12-prose-01] Count the em-dash parenthetical constructions in the revised chapter. The total should not exceed 10 (down from 20+). Of the 13 instances cited in this finding, at least 7 should be restructured using a different sentence shape (period break, reordering, dialogue embedding, participial phrase, or colon). Read lines 23, 49, 111, 119, and 163 aloud in sequence: if the rhythmic shape of all five is no longer identical, the fix has landed.",
+    "[c12-craft-01] In the revised morning scene (lines 139-173), at least 2 of Simone's physical actions or expressions during the apology exchange carry a legible double reading: one meaning for Nora (warmth, support) and another for the informed reader (performance, guilt, self-awareness). These moments should be specific enough that a reader on their second pass notices them and feels the horror sharpen. Test: read the exchange as a first-time reader \u2014 does it feel warm and supportive? Then read it knowing Simone sent the message \u2014 do at least 2 details shift meaning? Both readings must work.",
+    "[c12-craft-02] The transition from Simone's wet eyes (line 97) to her reassuring smile (line 99) spans at least 3 physical beats (distinct bodily actions or micro-expressions) across at least 2 sentences. The reader should be able to identify the exact moment the performance reassembles \u2014 a hinge point between vulnerability and mask. Read the revised passage knowing Simone's secret: the transition should feel frightening in its efficiency.",
+    "[c12-award-01] The revised passage (lines 147-173) contains at least 2 observations from Nora about the apology's qualities that carry a double reading: one interpretation for Nora (evidence of genuine feeling) and another for the informed reader (evidence of AI engineering). The word 'architecture' at line 173 should not be immediately resolved into a positive interpretation \u2014 it should sit for at least one full sentence as an ambiguous observation. Test: a first-time reader should find these moments moving; a rereader should find them devastating.",
+    "[MED-05-editing-metaphor-ch12] Within Ch12 (lines 2309-2499): (1) At most 1 editing metaphor remains. (2) The opening line (2311) does not use editorial vocabulary. FAIL if the opening sentence contains an editing metaphor or if more than 1 remains in the chapter.",
+    "[MED-09-chest-somatic-ch12] Within Ch12 (lines 2309-2499): (1) The phrase 'a loosening in her chest' does not appear. (2) At most 1 instance of 'chest' as emotional locus remains (line 2457 or equivalent). (3) The replacement at line 2377 uses a different body part. FAIL if the verbatim phrase appears or if more than 1 emotional-locus chest remains.",
+    "[MED-12-formula-metaphor-ch12] Within Ch12 (lines 2309-2499): (1) No instance of the '[X] arrived/landed like [Y]' formula remains. (2) The replacement renders the same emotional content through a different syntactic structure. FAIL if 'arrived' or 'landed' appears with an abstract noun as subject.",
+    "[MED-14-voice-convergence-ch12] Within the couch scene (lines 2315-2497): (1) At least 2 of Simone's lines contain UX, tech, or strategic vocabulary that Nora would not use. (2) Simone's average sentence length in this scene is shorter than Nora's. (3) A reader could assign at least 70% of untagged lines to the correct speaker based on voice alone. FAIL if Simone's dialogue contains zero UX/tech vocabulary or if both characters' average sentence lengths are within 10% of each other."
+  ],
+  "chapter_id": "chapter_12",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Count the em-dash parenthetical constructions in the revised chapter. The total should not exceed 10 (down from 20+). Of the 13 instances cited in this finding, at least 7 should be restructured using a different sentence shape (period break, reordering, dialogue embedding, participial phrase, or colon). Read lines 23, 49, 111, 119, and 163 aloud in sequence: if the rhythmic shape of all five is no longer identical, the fix has landed.",
+      "chapter_id": "chapter_12",
+      "cycle": 1,
+      "evidence": "Em-dash parenthetical insertions appear 20+ times across 190 lines. Examples: snapshots/cycle_01/chapters/chapter_12.md:7 ('\u2014 the grace of a friendship'), snapshots/cycle_01/chapters/chapter_12.md:23 ('\u2014 the unit under the window hissed'), snapshots/cycle_01/chapters/chapter_12.md:27 ('\u2014 twelve dollars, which Simone had once told her'), snapshots/cycle_01/chapters/chapter_12.md:49 ('\u2014 Simone used it because she couldn't afford'), snapshots/cycle_01/chapters/chapter_12.md:59 ('\u2014 she had a habit of doing this'), snapshots/cycle_01/chapters/chapter_12.md:101 ('\u2014 the thick knitted one, cream-colored'), snapshots/cycle_01/chapters/chapter_12.md:111 ('\u2014 an ugly little wooden box'), snapshots/cycle_01/chapters/chapter_12.md:119 ('\u2014 not really a kitchen'), snapshots/cycle_01/chapters/chapter_12.md:121 ('\u2014 there was already a mug rinsed'), snapshots/cycle_01/chapters/chapter_12.md:153 ('\u2014 that was all it took'), snapshots/cycle_01/chapters/chapter_12.md:155 ('\u2014 brows lifting, mouth softening'), snapshots/cycle_01/chapters/chapter_12.md:163 ('\u2014 oat milk, no sugar'), snapshots/cycle_01/chapters/chapter_12.md:185 ('\u2014 the small, precise space'). The pattern is near-universal: introduce a noun phrase, interrupt with an em-dash, embed qualifying information.",
+      "finding_id": "c12-prose-01",
+      "problem": "Mechanical over-reuse of the style bible's syntax signature ('compound sentences connected by dashes and afterthoughts') has collapsed sentence variety into a single rhythmic shape. The em-dash parenthetical is the chapter's only available modification pattern. Nearly every extended sentence follows the same architecture: [subject clause] \u2014 [qualifying subordinate clause/appositive]. This creates a monotonous undercurrent beneath superficially varied content. The reader learns to predict each sentence's shape before reaching its middle. What should register as Nora's characteristic thought pattern instead reads as the prose's only gear.",
+      "rewrite_direction": "Target the 13 instances cited above. Retain em-dash parentheticals in no more than 6-8 of the chapter's long sentences \u2014 enough to establish Nora's digressive voice without making it the default. For the remaining instances, restructure using: (a) period-separated sentences (e.g., snapshots/cycle_01/chapters/chapter_12.md:49 \u2014 split the Febreze detail into its own sentence); (b) leading with the qualifying detail rather than appending it (e.g., snapshots/cycle_01/chapters/chapter_12.md:111 \u2014 open with the flea-market origin, then name the object); (c) embedding the detail in action or dialogue rather than narration (e.g., snapshots/cycle_01/chapters/chapter_12.md:119 \u2014 Simone's movement across the tiny kitchen can convey its size without the dash-appended footnote). The goal is sentence-shape variety: the reader should not be able to predict the next sentence's structure from the previous one.",
+      "severity": "HIGH",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "In the revised morning scene (lines 139-173), at least 2 of Simone's physical actions or expressions during the apology exchange carry a legible double reading: one meaning for Nora (warmth, support) and another for the informed reader (performance, guilt, self-awareness). These moments should be specific enough that a reader on their second pass notices them and feels the horror sharpen. Test: read the exchange as a first-time reader \u2014 does it feel warm and supportive? Then read it knowing Simone sent the message \u2014 do at least 2 details shift meaning? Both readings must work.",
+      "chapter_id": "chapter_12",
+      "cycle": 1,
+      "evidence": "The morning scene (snapshots/cycle_01/chapters/chapter_12.md:109-189) is the chapter's dramatic irony payload: Nora texts Caleb an apology, the AI responds with a polished, moving message, and Simone is in the same room pouring coffee. During the apology exchange (lines 141-173), Simone's physical behavior is rendered in only two moments: she turns from the counter and holds out coffee (line 153), and she reads the phone and nods (line 155). Neither detail carries a double reading \u2014 nothing in Simone's exterior behavior signals the horror of her position (she sent the message, she knows it's coming, she is watching Nora be moved by something she engineered). The spine's state shift requires 'a chamber of horrors from the inside,' but the morning scene renders only the tenderness, not the horror.",
+      "finding_id": "c12-craft-01",
+      "problem": "Timidity. The prose retreats from the emotional reality the premise establishes. The morning scene should be simultaneously tender (from Nora's perspective) and horrifying (from the reader's informed perspective). Instead, Simone's physical presence during the apology exchange is rendered generically \u2014 she pours coffee, she reads the phone, she nods, she validates. None of these actions are specific enough for the reader to read double. The dramatic irony depends entirely on what the reader already knows; the prose does no work to amplify it. This is a missed payload \u2014 the chapter's most devastating ironic moment is handled with the least craft investment.",
+      "rewrite_direction": "In the span snapshots/cycle_01/chapters/chapter_12.md:139-173, add at least 2 moments of Simone's physical behavior that an informed reader can interpret as performance or guilt while Nora interprets them as friendship. These should be subtle and physically specific \u2014 not obvious winking but the kind of micro-detail that rewards rereading. Examples of the kind of detail needed (not prescriptive): Simone's hands doing something precise while Nora reads the message; a timing detail (how quickly Simone looks at the phone, or how long she takes before speaking); a facial micro-expression that Nora reads as empathy but could also be the face of someone watching their own work land. The key is that Simone's body must be present in the scene during the moments when the irony is highest \u2014 when Nora reads the message, when Simone reads it, when Simone validates it.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "The transition from Simone's wet eyes (line 97) to her reassuring smile (line 99) spans at least 3 physical beats (distinct bodily actions or micro-expressions) across at least 2 sentences. The reader should be able to identify the exact moment the performance reassembles \u2014 a hinge point between vulnerability and mask. Read the revised passage knowing Simone's secret: the transition should feel frightening in its efficiency.",
+      "chapter_id": "chapter_12",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:95-99. Simone's near-confession \u2014 the chapter's most important character beat \u2014 resolves in a single transitional sentence: 'Then Simone smiled. It was the right smile \u2014 warm, steady, arriving at exactly the right moment.' The transition from wet eyes and held suspension to a perfect performance smile takes one sentence. The mechanics of Simone reassembling her mask \u2014 the physical process of composing herself \u2014 are skipped.",
+      "finding_id": "c12-craft-02",
+      "problem": "Timidity. The near-confession is the moment where the reader most needs to feel the speed and skill of Simone's performance. The style bible's stress tell for Simone says 'when Simone is at her most generous, she is at her most dangerous' \u2014 this moment should demonstrate that danger by showing the reader how quickly and completely Simone can rebuild her public face from a state of near-breakdown. Instead, the prose elides the transition. The held suspension at line 97 is well-rendered ('every muscle engaged in the act of not doing something'), but the resolution is a single sentence that names the outcome ('she smiled') without showing the process. The effect is that Simone's performance looks effortless when it should look terrifyingly practiced.",
+      "rewrite_direction": "Expand the transition at snapshots/cycle_01/chapters/chapter_12.md:99 from 1 sentence to 2-3 sentences. Show the physical mechanics of Simone's recovery: the swallow, the blink, the micro-adjustment of posture, the exact moment when the performance clicks back into place. The prose should let the reader feel the speed of the transition \u2014 not slow it down into melodrama, but give it enough physical beats that the reader registers the skill involved. The word 'right' in 'the right smile' is doing too much work: unpack what makes the smile 'right' (timing, warmth, the exact degree of reassurance) so the reader understands this as performance craft, not natural warmth.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "The revised passage (lines 147-173) contains at least 2 observations from Nora about the apology's qualities that carry a double reading: one interpretation for Nora (evidence of genuine feeling) and another for the informed reader (evidence of AI engineering). The word 'architecture' at line 173 should not be immediately resolved into a positive interpretation \u2014 it should sit for at least one full sentence as an ambiguous observation. Test: a first-time reader should find these moments moving; a rereader should find them devastating.",
+      "chapter_id": "chapter_12",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:147-173. Nora reads Caleb's apology message and the prose renders her response warmly: 'The words were warm and specific and they reached into the exact bruised place in her chest and held it' (line 149). She notes that 'He hadn't made excuses. He hadn't performed a generic apology' (line 149). At line 173, she observes 'the architecture showed through the feeling.' These observations treat the message as genuine emotional communication. Only 'architecture' carries any potential double reading, and Nora's interpretation neutralizes it immediately ('a second reading where the architecture showed through the feeling' \u2014 she reads 'architecture' as craft, not engineering).",
+      "finding_id": "c12-award-01",
+      "problem": "The Caleb apology message is the chapter's most charged double-meaning moment: an AI-generated text performing emotional vulnerability so well that it reaches 'the exact bruised place in her chest.' The prose commits fully to Nora's moved response but provides almost no hooks for the reader's double reading. Nora's analysis of the message's quality \u2014 'He hadn't made excuses. He hadn't performed a generic apology. He'd named what he did and what it cost her' \u2014 reads as admiration, but these are also descriptions of a well-engineered prompt response. The word 'architecture' at line 173 is the one moment where the double meaning is available, but the prose immediately closes it by interpreting architecture as emotional depth rather than letting it sit ambiguously. The result is that the reader's horror depends entirely on prior knowledge; the prose itself does not generate any new ironic pressure in this scene.",
+      "rewrite_direction": "In the span snapshots/cycle_01/chapters/chapter_12.md:147-173, add 1-2 observations from Nora about the message's quality that she interprets as evidence of authenticity but the reader can interpret as evidence of engineering. These should be subtle \u2014 not 'it was almost too perfect' (which would break Nora's POV) but observations about precision, timing, or emotional calibration that land differently depending on what the reader knows. The existing 'architecture' observation at line 173 should be allowed to sit ambiguously rather than being immediately resolved \u2014 let Nora notice the architecture without fully interpreting it. Additionally, consider whether Nora should register the message's unusual polish for a 6 AM text composed on a phone \u2014 not with suspicion, but with the kind of admiring observation that becomes painful on rereading.",
+      "severity": "MEDIUM",
+      "source": "award",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Within Ch12 (lines 2309-2499): (1) At most 1 editing metaphor remains. (2) The opening line (2311) does not use editorial vocabulary. FAIL if the opening sentence contains an editing metaphor or if more than 1 remains in the chapter.",
+      "chapter_id": "chapter_12",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2311",
+      "finding_id": "MED-05-editing-metaphor-ch12",
+      "problem": "Ch12 opens with an editing metaphor: 'She kept coming back to the phrase, circling it the way she'd circle a problem sentence in a manuscript' (2311). Later: 'felt like working on a sentence she wasn't sure belonged in the manuscript' (2441). This chapter is the aftermath of the manufactured fight \u2014 Nora is heartbroken, crying on Simone's couch. The emotional register should be raw, not analytical. Processing grief through editorial vocabulary distances the reader from the feeling.",
+      "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:2311, replace the opening editorial metaphor with a non-editorial register for obsessive rumination. 'Circling a problem sentence' could become circling a physical space, or circling a thought the way you circle a bruise with your thumb. At line 2441, replace 'working on a sentence she wasn't sure belonged in the manuscript' with a non-editorial register for emotional uncertainty. KEEP if a strong alternative is not available \u2014 one editing metaphor in this chapter is tolerable if the opening is revised.",
+      "severity": "MEDIUM",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Within Ch12 (lines 2309-2499): (1) The phrase 'a loosening in her chest' does not appear. (2) At most 1 instance of 'chest' as emotional locus remains (line 2457 or equivalent). (3) The replacement at line 2377 uses a different body part. FAIL if the verbatim phrase appears or if more than 1 emotional-locus chest remains.",
+      "chapter_id": "chapter_12",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2377",
+      "finding_id": "MED-09-chest-somatic-ch12",
+      "problem": "Line 2377: 'a loosening in her chest' \u2014 verbatim repetition of Ch10 line 1927. Additionally, line 2457 uses 'the exact bruised place in her chest' as another chest-as-emotion instance. Two chest references in a chapter that is also the destination of a verbatim repeated phrase. This chapter should KEEP one chest reference (line 2457 is stronger \u2014 'the exact bruised place' is specific) and REPLACE the verbatim repeat.",
+      "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:2377, replace 'a loosening in her chest' with a different somatic register for the sensation of being comforted on a friend's couch. The wine is warming her hands \u2014 the loosening could register there, or in her shoulders, or in the muscles of her face. KEEP line 2457 ('the exact bruised place in her chest') as the chapter's single strongest chest reference.",
+      "severity": "MEDIUM",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Within Ch12 (lines 2309-2499): (1) No instance of the '[X] arrived/landed like [Y]' formula remains. (2) The replacement renders the same emotional content through a different syntactic structure. FAIL if 'arrived' or 'landed' appears with an abstract noun as subject.",
+      "chapter_id": "chapter_12",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2321",
+      "finding_id": "MED-12-formula-metaphor-ch12",
+      "problem": "Line 2321 uses a variant of the arrival formula (the agent identified 'arrived in her body like' or similar construction). This chapter already has findings for editing metaphor, chest somatic, and voice convergence \u2014 the addition of the formula metaphor compounds the prose-pattern density. This chapter should REPLACE its instance since other chapters (Ch1, Ch16) have stronger uses of the formula.",
+      "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:2321, replace any '[X] arrived/landed like [Y]' construction with a direct rendering of the emotional state. The context is Nora processing hurt after the manufactured fight \u2014 the feeling should be rendered through action, body, or thought rather than through the arrival-simile frame.",
+      "severity": "MEDIUM",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Within the couch scene (lines 2315-2497): (1) At least 2 of Simone's lines contain UX, tech, or strategic vocabulary that Nora would not use. (2) Simone's average sentence length in this scene is shorter than Nora's. (3) A reader could assign at least 70% of untagged lines to the correct speaker based on voice alone. FAIL if Simone's dialogue contains zero UX/tech vocabulary or if both characters' average sentence lengths are within 10% of each other.",
+      "chapter_id": "chapter_12",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2315",
+      "finding_id": "MED-14-voice-convergence-ch12",
+      "problem": "In the long couch scene (lines 2315-2497), Nora and Simone's dialogue becomes rhythmically and syntactically indistinguishable. Both speak in medium-length declarative sentences, both use the same confessional register, and both reach for the same self-analytical precision. Example: Nora (2329): 'Right, but it's also the kind of thing you can't argue with...' Simone (2351): 'You didn't break in anywhere. You bought a plane ticket...' If dialogue tags were removed, several exchanges could not be attributed by voice alone. The style bible requires idiolect separation: Simone's UX vocabulary and strategic question-asking should differentiate her from Nora's editorial vocabulary even in emotional scenes.",
+      "rewrite_direction": "Within the couch scene (lines 2315-2497), differentiate Nora and Simone's dialogue by leaning into each character's lexical signature. Simone should deploy UX vocabulary when comforting \u2014 she might frame Caleb's behavior as a 'design flaw' or describe the fight as a 'bad interaction pattern.' Her sentences should be shorter and more declarative when she's alone with Nora (per the style bible: 'Her sentences tend to be shorter and more declarative when she's alone'). Nora's lines can keep their editorial register. The differentiation doesn't need to be heavy-handed \u2014 2-3 lines per character with distinctly Simone or Nora vocabulary would be sufficient to break the convergence.",
+      "severity": "MEDIUM",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "e99d25f0b5a706081eca4619a82191f06e6f60f2353ae731c4cc90d01c992acd",
+  "must_fix_count": 8,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This novel must commit fully to its dark comedy register. The humor should be genuinely funny \u2014 not arch, not safe, not 'literary funny' where the reader smiles wryly. The darkness should be genuinely dark \u2014 the financial manipulation is theft, the emotional manipulation is a form of violence, and the sexual dimension of the AI relationship (intimate photos sent to a non-person, sexual conversations with an algorithm controlled by your best friend) is deeply violating. The novel should not flinch from the specific perversity of Simone reading Nora's intimate messages, of Simone helping Nora dress up for a man Simone invented, of Simone comforting Nora about a fight Simone scripted. These moments are the novel's payload. If they are rendered obliquely or summarized, the book fails. Equally, the genuine tenderness of the friendship \u2014 the years of real love underneath the betrayal \u2014 must be rendered with the same commitment. The reader should feel both the comedy and the horror simultaneously, not in alternation.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism is treated as a craft failure equivalent to a plot hole. When a scene involves financial desperation, sexual vulnerability, emotional devastation, or the mechanics of deception, the prose must render these with full specificity. 'She felt used' is never acceptable when you can show what being used feels and looks like in the body and in the specific details of the moment. The reader should not be protected from the characters' experiences.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm. Uncontracted forms reserved for emphasis, deliberate formality, or character-specific register choices. If a line reads stiffly, the first fix is to contract.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 2,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate between hot and quiet chapters. After a high-intensity scene (confrontation, discovery, sexual encounter), the next chapter should breathe \u2014 slow down, change the sensory environment, let the character do something ordinary. Vary scene counts: some chapters are a single sustained scene, others are three or four. Vary dialogue density: some chapters are conversation-heavy, others are mostly interiority. No two consecutive chapters should open the same way \u2014 if one opens in a location, the next should open in thought or in mid-conversation. The novel's middle section (chapters 8-13) should have more structural variety than the opening, which can afford to be more regular.",
+      "diction": "Contemporary, educated, specific. No genre-thriller diction. No prestige-novel stiffness. The language should feel like how smart, funny, self-aware women in their mid-thirties actually think and speak. Cultural references are allowed when organic. Brand names when they carry social information. The prose should be able to be funny without stepping outside the character's perspective to wink at the reader.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person \u2014 very close, almost inhabiting the POV character's thought patterns and verbal rhythms. The prose should feel like the character's consciousness rendered in third person, not an external narrator describing the character. When in Nora's sections, the prose has her warmth and her specific noticing. When in Simone's sections, the prose has her edge and her accounting.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Variable. Default to mid-length sentences with natural cadence. Use compression for emotional peaks and psychological precision. Use longer, more digressive rhythms for scenes of intimacy, humor, and daily texture. Avoid the trap of making every important moment a short sentence \u2014 sometimes the big thing lands better in a subordinate clause, almost hidden.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

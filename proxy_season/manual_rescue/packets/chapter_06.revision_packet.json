@@ -1,0 +1,40 @@
+{
+  "chapter_id": "chapter_06",
+  "cycle": 1,
+  "input_snapshot_hash": "a2332e067fc984507ef2e45a73ade0f910ab99f89fcea2fe9391793323be1068",
+  "findings": [
+    {
+      "finding_id": "F01",
+      "source": "full_award_rescue.review",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.post_revision.md:1292",
+      "problem": "Full-book recurring pattern: the refrigerator's forty-minute click appears as a scene-anchoring device in at least 5 chapters (Ch 1 lines 119/187, Ch 6 line 1292, Ch 8 lines 1720/1884, Ch 11 lines 2233/2398/2454, and likely others). This chapter's instance at line 1292 ('The refrigerator clicked. She counted without deciding to \u2014 right on schedule, forty minutes since the last one') nearly duplicates Ch 1 line 187 in both phrasing and function. The motif has crossed from domestic texture into narrative tic \u2014 it reads as a default paragraph closer rather than a chosen detail. Ch 1 (first occurrence, establishing the apartment's rhythm) and Ch 8 (2 AM kitchen scene, most thematically earned use) are the two strongest deployments and should be preserved. This chapter's instance should be REPLACED.",
+      "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.post_revision.md:1292, replace the refrigerator click with a different ambient domestic sound that serves the same function \u2014 marking time's passage in the dark kitchen, anchoring Mira's midnight awareness in the physical apartment. Options: the radiator's final tick as it cools for the night; the brownstone settling with the structural complaint it makes on cold nights; street noise filtering through the window; the neighbor's cat on the second-floor landing. The replacement sound should feel specific to this hour and this scene rather than recycled.",
+      "acceptance_test": "PASS if the passage around line 1292 no longer contains 'refrigerator clicked' or the forty-minute interval marker, and instead uses a distinct ambient sound that anchors the midnight scene with equal domestic specificity. FAIL if the refrigerator click remains or if the replacement is generic ('a sound from the apartment')."
+    },
+    {
+      "finding_id": "F03",
+      "source": "full_award_rescue.review",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.post_revision.md:1224",
+      "problem": "Full-book recurring pattern: the chest or sternum as default somatic locus for emotional intensity appears in at least 4 chapters (Ch 6 lines 1224 and 1280, Ch 7 line 1479, Ch 10 line 2200, Ch 11 line 2340). Chapter 6 alone has TWO chest/sternum instances within 56 lines of each other: line 1224 ('Something in her chest went tight, then hot') and line 1280 ('Something behind her sternum burned, hot and chemical'). Line 1280 is the stronger, more specific image \u2014 'hot and chemical' is a precise sensation, and it arrives at the chapter's devastating pivot (the objection sustained and nothing changed). Line 1224 is the weaker, more generic version ('tight, then hot') and should be replaced to prevent somatic-register fatigue within a single chapter.",
+      "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.post_revision.md:1224, replace 'Something in her chest went tight, then hot' with a somatic response routed through a different body zone \u2014 consistent with Mira's established stress tells. Mira grips surfaces under acute stress (she grips the sink immediately after this line) and her syntax clips. Options: the fury arriving in her hands first (knuckles whitening on the phone, grip tightening before the thought forms); her jaw locking on the profanity ('Fuck your locally optimal') before she lets it through; her vision narrowing to the two words on the screen. The body should register the hit somewhere other than the chest to preserve line 1280's stronger chest-burn for the chapter's climactic moment.",
+      "acceptance_test": "PASS if line 1224 area delivers Mira's physical fury without using 'chest,' 'sternum,' or 'behind her ribs,' and the replacement routes through a body part consistent with her character profile (hands, jaw, vision). Line 1280's sternum reference may remain as this chapter's KEEP instance. FAIL if line 1224 still uses the chest as somatic locus."
+    }
+  ],
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Remove the refrigerator-click / forty-minute-interval motif from this chapter entirely; replace with a distinct ambient domestic sound specific to the midnight scene",
+    "Reroute the somatic response at line 1224 away from chest/sternum/ribs to a different body zone consistent with Mira's stress-tell profile (hands, jaw, or vision)",
+    "Preserve the sternum-burn at line 1280 ('Something behind her sternum burned, hot and chemical') as this chapter's single permitted chest-locus instance"
+  ],
+  "acceptance_targets": [
+    "No instance of 'refrigerator clicked' or forty-minute interval marker remains in chapter 06",
+    "The replacement ambient sound is somatically specific and anchored to the midnight hour",
+    "Line 1224 area uses a non-chest body part for Mira's emotional registration",
+    "Line 1280 sternum reference is intact and unchanged",
+    "No new recurring-pattern instances introduced"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "chapter_id": "chapter_18",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch18_craft_grave_chronology",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_18",
+      "evidence": "snapshots/cycle_01/chapters/chapter_18.md:77; snapshots/cycle_01/chapters/chapter_18.md:91; snapshots/cycle_01/chapters/chapter_18.md:99; snapshots/cycle_01/chapters/chapter_18.md:127",
+      "problem": "The burial logistics contradict themselves. The on-page sequence keeps Dell at the stove while the wash water heats and shows Rudy arriving only after Dell goes to fetch him, but the cemetery paragraph later says Rudy and Dell dug Hester's grave 'before breakfast while the water heated.' That makes Rudy present before his arrival and muddies a chapter whose emotional force depends on exact practical sequence.",
+      "rewrite_direction": "Reconcile the timeline at snapshots/cycle_01/chapters/chapter_18.md:77, snapshots/cycle_01/chapters/chapter_18.md:91, snapshots/cycle_01/chapters/chapter_18.md:99, and snapshots/cycle_01/chapters/chapter_18.md:127. Either move Rudy's arrival and the grave-digging into the death-preparation sequence before the washing finishes, or revise the cemetery exposition so the grave is dug only after Rudy arrives and not 'while the water heated.'",
+      "acceptance_test": "Pass if a reader can trace one continuous chronology from snapshots/cycle_01/chapters/chapter_18.md:77 through snapshots/cycle_01/chapters/chapter_18.md:127 without Rudy being absent in one beat and retroactively present in the same window of time; fail if the revised text still implies he helped dig during the water-heating sequence before snapshots/cycle_01/chapters/chapter_18.md:99."
+    },
+    {
+      "finding_id": "ch18_prose_clipped_narration",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_18",
+      "evidence": "snapshots/cycle_01/chapters/chapter_18.md:237",
+      "problem": "The basin aftermath slips into constitution-forbidden clipped narration: 'Could not tell him that he had. Could not tell him...' drops the subject three times in a row. In a crucial Cora/Dell exchange, the prose reads like shorthand rather than pressured close third.",
+      "rewrite_direction": "Recast the withheld-thought beat at snapshots/cycle_01/chapters/chapter_18.md:237 and snapshots/cycle_01/chapters/chapter_18.md:239 into grammatically complete sentences with explicit subjects. Keep Cora's restraint and the unsaid history, but let the pressure come from syntax and word choice rather than subject-dropping fragments.",
+      "acceptance_test": "Pass if the narration at snapshots/cycle_01/chapters/chapter_18.md:237 and snapshots/cycle_01/chapters/chapter_18.md:239 remains clearly anchored in Cora's consciousness while every sentence is grammatically complete; fail if the revision still relies on omitted subjects or auxiliaries to create terseness."
+    },
+    {
+      "finding_id": "ch18_prose_negation_tic",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_18",
+      "evidence": "snapshots/cycle_01/chapters/chapter_18.md:69; snapshots/cycle_01/chapters/chapter_18.md:183; snapshots/cycle_01/chapters/chapter_18.md:203; snapshots/cycle_01/chapters/chapter_18.md:209; snapshots/cycle_01/chapters/chapter_18.md:323; snapshots/cycle_01/chapters/chapter_18.md:335",
+      "problem": "The chapter leans too often on a negation-first sentence pattern to launch key images: the quiet is 'not holy,' the basin air is 'not clean,' the jar smell is 'not dust,' the returned water is 'not miracle water,' Thea's call is 'not delicate,' and Morrow 'did not do anything grand.' At this frequency the construction stops feeling exact and starts sounding like a reusable house cadence.",
+      "rewrite_direction": "Vary the sentence architecture at snapshots/cycle_01/chapters/chapter_18.md:69, snapshots/cycle_01/chapters/chapter_18.md:183, snapshots/cycle_01/chapters/chapter_18.md:203, snapshots/cycle_01/chapters/chapter_18.md:209, snapshots/cycle_01/chapters/chapter_18.md:323, and snapshots/cycle_01/chapters/chapter_18.md:335. Let several of these beats arrive through direct image or action first, and reserve the not-X correction pattern for the single place where it lands hardest.",
+      "acceptance_test": "Pass if, across the cited lines, at least four openings now lead with direct sensory fact or action instead of a not-framed disclaimer, and the repeated 'It was not...'/'did not...' cadence no longer reads as the default way scene-defining moments are introduced. Fail if those same spans still stack multiple negation-first openings back to back."
+    }
+  ],
+  "summary": "Chapter 18 lands its major obligations: Hester's death, the burial, the abundance-memory in the final jar, and the train departure all carry real consequence, and Cora, Thea, Dell, and Hester stay vocally distinct enough for `booker` and `dialogue` to pass. It still fails `craft` and `prose` review on a hard burial-timeline contradiction, a constitution-level clipped-narration beat in Cora's basin response, and a repeated negation-first sentence formula that starts flattening otherwise strong prose.",
+  "coverage_scene_ids": []
+}

@@ -1,0 +1,69 @@
+{
+  "acceptance_targets": [
+    "[ch18-prose-01] In the revised chapter, no more than one of the beats anchored at snapshots/cycle_01/chapters/chapter_18.md:141, snapshots/cycle_01/chapters/chapter_18.md:263, snapshots/cycle_01/chapters/chapter_18.md:315, and snapshots/cycle_01/chapters/chapter_18.md:359 may rely on consecutive no/not/neither phrasing to define meaning. The others must communicate the distinction through positive sensory or action-based detail that can be verified by reading the lines."
+  ],
+  "chapter_id": "chapter_18",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "In the revised chapter, no more than one of the beats anchored at snapshots/cycle_01/chapters/chapter_18.md:141, snapshots/cycle_01/chapters/chapter_18.md:263, snapshots/cycle_01/chapters/chapter_18.md:315, and snapshots/cycle_01/chapters/chapter_18.md:359 may rely on consecutive no/not/neither phrasing to define meaning. The others must communicate the distinction through positive sensory or action-based detail that can be verified by reading the lines.",
+      "chapter_id": "chapter_18",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_18.md:141 ('No halos. No absolution.'), snapshots/cycle_01/chapters/chapter_18.md:263 ('Not innocence. Not martyr either.'), snapshots/cycle_01/chapters/chapter_18.md:315 ('It was not greeting and not quite recognition either'), and snapshots/cycle_01/chapters/chapter_18.md:359 ('It was not rescue. It was not innocence.') reuse the same exclusion-based sentence pattern.",
+      "finding_id": "ch18-prose-01",
+      "problem": "The chapter leans on emphatic negation to define significance by exclusion. Used once, the trick is pointed; used this many times, it starts to read like a default cadence, flattening the prose and making several emotional beats arrive in the same rhetorical shape.",
+      "rewrite_direction": "Revise at least two of the exclusion beats at snapshots/cycle_01/chapters/chapter_18.md:141, snapshots/cycle_01/chapters/chapter_18.md:263, snapshots/cycle_01/chapters/chapter_18.md:315, and snapshots/cycle_01/chapters/chapter_18.md:359 so they land through concrete image, action, or character-specific diction instead of paired negations. Keep at most one such formula as a deliberate choice.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "03fbd9931b75ffbc0b7d357b328172123bdfcb06c0dc30a960509c10ed665404",
+  "must_fix_count": 1,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on prose and copyedit finish: diction precision, rhythm control, sentence-level clarity, grammar, line-level polish without flattening style, and explicit aesthetic-risk audit (sanitization is the primary risk \u2014 do not soften or euphemize; push toward creative risk and specificity).",
+    "key": "p3_prose_copyedit",
+    "label": "prose/copyedit fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into the contradiction that tenderness can coexist with surveillance, desire with betrayal, and ideology with vanity. Render violence, sex, illness, and poverty at the scale characters actually experience them. When an edge case appears, choose the more specific and less reputationally safe version if it remains faithful to character, period, and causality.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene reaches bodily danger, sex, grief, class shame, or political cruelty and then retreats into summary, rewrite toward the exact physical and social fact the character cannot evade.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "Moderate to high; contractions are the spoken default, with full forms reserved for period formality, deliberate emphasis, or Vautrin's cultivated precision.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate compressive surveillance chapters with slower communal or reflective chapters; vary scene count, dialogue density, and whether the turn comes from action, information, dread, or aftermath so no two adjacent chapters run on the same structural rhythm.",
+      "diction": "Historically grounded and unsentimental; plain enough for labor and bureaucracy, lyrical only when perception earns it rather than rhetoric.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third centered on Elise, elastic enough to register class texture, political pressure, and the quarry's collective life without drifting into authorial essay.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Supple, image-bearing sentences broken by hard factual beats at moments of violence, lust, bureaucratic coercion, or shame.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

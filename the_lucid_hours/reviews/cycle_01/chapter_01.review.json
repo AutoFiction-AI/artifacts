@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_01",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_01_f001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:143 states that Carmen's drive from Gloria's house to her apartment takes twenty-five minutes.",
+      "problem": "This contradicts the continuity sheet's established distance of roughly fifteen minutes between Gloria's house and Carmen's apartment. In a chapter built around commute math, schedule margins, and financial precision, a wrong travel time is not cosmetic; it damages the factual pressure the chapter depends on.",
+      "rewrite_direction": "Revise the post-Gloria transit beat at snapshots/cycle_01/chapters/chapter_01.md:143 so the trip matches the established fifteen-minute distance, or add an explicit intervening stop/delay on-page. If any downstream commute math in snapshots/cycle_01/chapters/chapter_01.md:147 depends on the longer drive, align that passage too.",
+      "acceptance_test": "Pass if the revised version of snapshots/cycle_01/chapters/chapter_01.md:143 makes the Gloria-to-apartment trip about fifteen minutes, or clearly states a reason the trip takes longer; fail if the chapter still presents a direct Gloria-to-apartment drive of twenty-five minutes."
+    },
+    {
+      "finding_id": "chapter_01_f002",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:35 presents the med pass as routine; snapshots/cycle_01/chapters/chapter_01.md:79 shows general understaffing pressure; snapshots/cycle_01/chapters/chapter_01.md:169 explains only after Harry's correction that Carmen miscounted because she was behind from doing the 6 PM turns herself.",
+      "problem": "The chapter's key turn depends on Carmen making a tramadol-count error, but the decisive last-mile pressure is retro-explained instead of dramatized before the mistake lands. The result is a slightly arranged feel: the chapter tells us she was overloaded, but it does not show the concrete interruption, rush, or divided attention that produces the extra half-tab before Harry catches it.",
+      "rewrite_direction": "Seed the causal chain inside the work sequence at snapshots/cycle_01/chapters/chapter_01.md:35, snapshots/cycle_01/chapters/chapter_01.md:79, and snapshots/cycle_01/chapters/chapter_01.md:159 by adding a specific operational disruption before Harry's room: an interrupted count, a resident need that forces Carmen to resume mid-task, or a turn that leaves her rushing back to the cart. Do not leave the explanation confined to snapshots/cycle_01/chapters/chapter_01.md:169 after Harry has already exposed the error.",
+      "acceptance_test": "Pass if, before the equivalent of snapshots/cycle_01/chapters/chapter_01.md:167, the revised chapter shows at least one concrete disruption that plausibly causes the extra half-tab in Harry's cup; fail if the reader still learns why Carmen miscounted only in retrospective explanation after Harry points it out."
+    },
+    {
+      "finding_id": "chapter_01_f003",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:17 and snapshots/cycle_01/chapters/chapter_01.md:21 reproduce the style-bible calibration sequence almost beat for beat: 'Mija, you look tired' plus chicken, 'what day is it,' and Tom's cooking.",
+      "problem": "Lola's first exchange is not merely style-adjacent; it is conspicuously built from calibration-only example material. Because this is her introduction in chapter 1, the borrowing damages voice integrity on first read and makes the dialogue feel generated from notes rather than spoken by a character.",
+      "rewrite_direction": "Rewrite Lola's opening exchange from scratch at snapshots/cycle_01/chapters/chapter_01.md:17, snapshots/cycle_01/chapters/chapter_01.md:21, and snapshots/cycle_01/chapters/chapter_01.md:25. Keep the intended qualities from the style bible -- warmth, indirectness, mild performed confusion, story-drift -- but replace the borrowed verbal sequence and turn-shape entirely.",
+      "acceptance_test": "Pass if the revised version of snapshots/cycle_01/chapters/chapter_01.md:17 through snapshots/cycle_01/chapters/chapter_01.md:25 establishes Lola's warmth and confusion without reusing the ordered beat-chain of tiredness -> chicken -> day check -> husband's cooking; fail if that scaffold is still recognizable on the page."
+    },
+    {
+      "finding_id": "chapter_01_f004",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:71, snapshots/cycle_01/chapters/chapter_01.md:147, snapshots/cycle_01/chapters/chapter_01.md:187, and snapshots/cycle_01/chapters/chapter_01.md:189 each resolve concrete material into abstract coda language ('It was a condition she'd become,' 'The math found everything,' 'A good moment was...,' 'Assessment. Expectation.').",
+      "problem": "A recurring prose habit turns strong sensory or procedural observation into detachable thesis lines. The chapter is most authoritative when it stays in bodies, objects, and work; these abstract codas sound workshopped rather than lived, and they loosen the close-third grip the style bible calls for.",
+      "rewrite_direction": "Rework the paragraph endings around snapshots/cycle_01/chapters/chapter_01.md:71, snapshots/cycle_01/chapters/chapter_01.md:147, snapshots/cycle_01/chapters/chapter_01.md:187, and snapshots/cycle_01/chapters/chapter_01.md:189 so the meaning is carried by observable detail, Carmen-specific inference, or silence rather than aphoristic summary. Preserve the underlying point, but land it through scene texture instead of detachable taglines.",
+      "acceptance_test": "Pass if the revised versions of snapshots/cycle_01/chapters/chapter_01.md:71, snapshots/cycle_01/chapters/chapter_01.md:147, snapshots/cycle_01/chapters/chapter_01.md:187, and snapshots/cycle_01/chapters/chapter_01.md:189 no longer end on abstract thesis phrasing and instead remain anchored in sensory detail, action, or immediate interiority; fail if those beats still culminate in summary taglines that could be lifted out as slogans."
+    }
+  ],
+  "summary": "Vivid sensory groundwork and a strong closing crack do not reach pass level. The chapter falls short on shortlist-grade control because its inciting medication error is mostly retro-explained rather than causally seeded in-scene, Lola's introduction lifts calibration-only dialogue, a commute-time contradiction breaks continuity math, and several paragraphs resolve into abstract thesis language instead of staying inside Carmen's body."
+}

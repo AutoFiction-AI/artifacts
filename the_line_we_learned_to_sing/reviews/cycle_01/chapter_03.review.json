@@ -1,0 +1,77 @@
+{
+  "chapter_id": "chapter_03",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH03-B001",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:207; snapshots/cycle_01/chapters/chapter_03.md:217; snapshots/cycle_01/chapters/chapter_03.md:221; snapshots/cycle_01/chapters/chapter_03.md:323; snapshots/cycle_01/chapters/chapter_03.md:329; snapshots/cycle_01/chapters/chapter_03.md:347",
+      "problem": "The second debt-collection call largely repeats leverage already established in the first call, so the chapter's late movement stalls instead of escalating before Ina's final choice.",
+      "rewrite_direction": "Rework or compress the second call at snapshots/cycle_01/chapters/chapter_03.md:323 and snapshots/cycle_01/chapters/chapter_03.md:355 so it introduces a new causal pressure not present at snapshots/cycle_01/chapters/chapter_03.md:207 and snapshots/cycle_01/chapters/chapter_03.md:257 (for example: account freeze timing, landlord legal filing trigger, or stipend interception risk) and forces Ina to change plan, not just restate awareness.",
+      "acceptance_test": "PASS if the revised material anchored at snapshots/cycle_01/chapters/chapter_03.md:323 and snapshots/cycle_01/chapters/chapter_03.md:355 adds at least one concrete consequence that did not appear between snapshots/cycle_01/chapters/chapter_03.md:207 and snapshots/cycle_01/chapters/chapter_03.md:257, and visibly alters Ina's next action; FAIL if it only reiterates '14-day pause'/'don't ignore calls.'"
+    },
+    {
+      "finding_id": "CH03-C001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:265; snapshots/cycle_01/chapters/chapter_03.md:359; snapshots/cycle_01/chapters/chapter_03.md:361; snapshots/cycle_01/chapters/chapter_03.md:365; snapshots/cycle_01/chapters/chapter_03.md:367",
+      "problem": "Sanitization drift: coercive retaliation is framed in euphemistic abstractions ('Fast exits break people,' 'counted as risk') at the exact moment the story needs concrete threat mechanics, which softens consequence clarity.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_03.md:263, snapshots/cycle_01/chapters/chapter_03.md:267, snapshots/cycle_01/chapters/chapter_03.md:359, and snapshots/cycle_01/chapters/chapter_03.md:367, replace vague menace with specific operational consequence (actor, mechanism, and timeline). Keep it in-scene (message/call/document detail), not retrospective summary.",
+      "acceptance_test": "PASS if a first-read reader can answer from the revised lines: who can act against Ina, what exact harm they can trigger, and when; FAIL if threat remains inferential or purely atmospheric."
+    },
+    {
+      "finding_id": "CH03-C002",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:281; snapshots/cycle_01/chapters/chapter_03.md:283; snapshots/cycle_01/chapters/chapter_03.md:285; snapshots/cycle_01/chapters/chapter_03.md:395; snapshots/cycle_01/chapters/chapter_03.md:397",
+      "problem": "Timidity at the chapter hinge: the draft retreats into concealment and declarative summary ('She stayed in the operation') rather than rendering an immediate, embodied cost of that decision.",
+      "rewrite_direction": "Revise snapshots/cycle_01/chapters/chapter_03.md:281, snapshots/cycle_01/chapters/chapter_03.md:285, snapshots/cycle_01/chapters/chapter_03.md:391, and snapshots/cycle_01/chapters/chapter_03.md:397 so the decision is enacted through one irreversible present action (e.g., sending compliance confirmation, deleting a protective option, or committing an operational step) plus a concrete physical/emotional aftershock.",
+      "acceptance_test": "PASS if the ending anchored at snapshots/cycle_01/chapters/chapter_03.md:391 and snapshots/cycle_01/chapters/chapter_03.md:397 includes both (1) an irreversible action tied to staying and (2) an embodied reaction tied to cost; FAIL if the scene still ends on abstract declaration alone."
+    },
+    {
+      "finding_id": "CH03-D001",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:79; snapshots/cycle_01/chapters/chapter_03.md:127",
+      "problem": "Dohyun's register drifts into abstract policy language ('reunification model,' 'history calling') that weakens his style-bible voice, which should stay grounded in labor, money, and lived neighborhood consequence.",
+      "rewrite_direction": "Recast Dohyun's lines at snapshots/cycle_01/chapters/chapter_03.md:79 and snapshots/cycle_01/chapters/chapter_03.md:127 into concrete dock/rent/body-risk diction while preserving his warning function and moderate contraction use.",
+      "acceptance_test": "PASS if Dohyun's revised warning between snapshots/cycle_01/chapters/chapter_03.md:69 and snapshots/cycle_01/chapters/chapter_03.md:133 uses at least two concrete work-or-money images and avoids theory labels unless explicitly marked as quoted sarcasm; FAIL if his critique still sounds like policy commentary."
+    },
+    {
+      "finding_id": "CH03-P001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:65; snapshots/cycle_01/chapters/chapter_03.md:137; snapshots/cycle_01/chapters/chapter_03.md:251; snapshots/cycle_01/chapters/chapter_03.md:357; snapshots/cycle_01/chapters/chapter_03.md:393",
+      "problem": "A recurring three-item sensory inventory sentence shape repeats five times, creating detectable prose autopilot and flattening rhythm variation.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_03.md:65, 137, 251, 357, and 393, vary architecture: convert some list-lines into action-led beats, some into single-dominant-image lines, and some into clause-driven pressure lines.",
+      "acceptance_test": "PASS if no more than two of those five target lines retain the same three-item comma-list construction and at least three are rewritten into clearly distinct sentence shapes; FAIL if the recurring inventory template still dominates."
+    },
+    {
+      "finding_id": "CH03-P002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:15; snapshots/cycle_01/chapters/chapter_03.md:41; snapshots/cycle_01/chapters/chapter_03.md:65; snapshots/cycle_01/chapters/chapter_03.md:79; snapshots/cycle_01/chapters/chapter_03.md:185; snapshots/cycle_01/chapters/chapter_03.md:205; snapshots/cycle_01/chapters/chapter_03.md:319; snapshots/cycle_01/chapters/chapter_03.md:373; snapshots/cycle_01/chapters/chapter_03.md:377",
+      "problem": "Overuse of 'then' as default transition makes sequencing sound mechanical rather than causal and scene-driven.",
+      "rewrite_direction": "Revise transitions in the cited lines to reduce routine 'then' chaining; prefer implied time flow, causality, or punctuation-driven momentum for beat changes.",
+      "acceptance_test": "PASS if across the revised cited lines explicit 'then' appears no more than three times and each remaining use marks a genuine temporal jump; FAIL if 'then' is still the dominant beat connector."
+    }
+  ],
+  "summary": "Chapter 3 lands required spine beats, stays in canonical past tense, and presents no direct continuity-sheet contradictions, but it fails review due to one HIGH craft issue (sanitized coercion mechanics) plus unresolved pacing redundancy, dialogue register drift for Dohyun, and repeated prose formulas that flatten rhythm.",
+  "coverage_scene_ids": [
+    "scene_family_dinner",
+    "scene_debt_collection_calls",
+    "scene_private_rule_commitment"
+  ]
+}

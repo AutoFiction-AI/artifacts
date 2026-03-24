@@ -1,0 +1,63 @@
+{
+  "chapter_id": "chapter_12",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH12-001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:19; snapshots/cycle_01/chapters/chapter_12.md:29; snapshots/cycle_01/chapters/chapter_12.md:37; snapshots/cycle_01/chapters/chapter_12.md:99; snapshots/cycle_01/chapters/chapter_12.md:105; snapshots/cycle_01/chapters/chapter_12.md:165; snapshots/cycle_01/chapters/chapter_12.md:193; snapshots/cycle_01/chapters/chapter_12.md:201",
+      "problem": "The chapter hard-codes Lucien's care parcel as cherries, but the supplied chapter-boundary handoff for chapter 13 describes the same carried fruit as apricot-scented. Because chapter 12 repeats cherry-specific business (stone, taste, juice, paper bleed), the boundary breaks on a named object rather than on a minor surface detail.",
+      "rewrite_direction": "Revise snapshots/cycle_01/chapters/chapter_12.md:19, snapshots/cycle_01/chapters/chapter_12.md:29, snapshots/cycle_01/chapters/chapter_12.md:37, snapshots/cycle_01/chapters/chapter_12.md:99, snapshots/cycle_01/chapters/chapter_12.md:105, snapshots/cycle_01/chapters/chapter_12.md:165, snapshots/cycle_01/chapters/chapter_12.md:193, and snapshots/cycle_01/chapters/chapter_12.md:201 so the parcel stays one fruit from purchase through carry-off. If the chapter 13 handoff remains apricot, convert the cherry-specific beats here to apricot-compatible ones instead of leaving mixed fruit logic on the page.",
+      "acceptance_test": "Pass if a reader can trace one fruit type consistently from the purchase at snapshots/cycle_01/chapters/chapter_12.md:19 and snapshots/cycle_01/chapters/chapter_12.md:29 through the tasting beat at snapshots/cycle_01/chapters/chapter_12.md:99 and snapshots/cycle_01/chapters/chapter_12.md:105 to the exit image at snapshots/cycle_01/chapters/chapter_12.md:193 and snapshots/cycle_01/chapters/chapter_12.md:201, with no leftover cherry-specific action if the parcel is meant to match the apricot handoff."
+    },
+    {
+      "finding_id": "CH12-002",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:91; snapshots/cycle_01/chapters/chapter_12.md:95; snapshots/cycle_01/chapters/chapter_12.md:107; snapshots/cycle_01/chapters/chapter_12.md:131; snapshots/cycle_01/chapters/chapter_12.md:163; snapshots/cycle_01/chapters/chapter_12.md:169",
+      "problem": "The tollhouse pause announces a tight external clock and immediate tactical danger, then spends that window on a comparatively extended reckoning and kiss. The emotional material is strong, but the chapter does not buy enough time on the page for the delay, so the bomb-threat tension slackens exactly where the scene should be tightening.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_12.md:91, snapshots/cycle_01/chapters/chapter_12.md:95, snapshots/cycle_01/chapters/chapter_12.md:107, snapshots/cycle_01/chapters/chapter_12.md:131, and snapshots/cycle_01/chapters/chapter_12.md:163, either establish a concrete tactical reason they can safely hold for this exchange (for example, a still-dark cellar, a missing accomplice, or a crowd condition Ferrand is waiting on) or compress the emotional beat so it lands as one hard admission before they move.",
+      "acceptance_test": "Pass if the revised pause between snapshots/cycle_01/chapters/chapter_12.md:91 and snapshots/cycle_01/chapters/chapter_12.md:169 either contains an explicit on-page reason the delay is tactically safe before the confession starts, or resolves the confession in a visibly brief beat and sends them toward the tollhouse immediately after. Fail if the chapter still states urgency at snapshots/cycle_01/chapters/chapter_12.md:95 and snapshots/cycle_01/chapters/chapter_12.md:131 but offers no concrete justification for lingering."
+    },
+    {
+      "finding_id": "CH12-003",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:11; snapshots/cycle_01/chapters/chapter_12.md:13; snapshots/cycle_01/chapters/chapter_12.md:41; snapshots/cycle_01/chapters/chapter_12.md:61; snapshots/cycle_01/chapters/chapter_12.md:75; snapshots/cycle_01/chapters/chapter_12.md:83",
+      "problem": "The search montage is atmospherically rich but procedurally flat. Multiple inquiry beats return the same null result, and the decisive route to the tollhouse arrives only when Borel volunteers it, which makes the breakthrough feel delivered rather than earned through cumulative narrowing.",
+      "rewrite_direction": "Revise snapshots/cycle_01/chapters/chapter_12.md:11, snapshots/cycle_01/chapters/chapter_12.md:13, snapshots/cycle_01/chapters/chapter_12.md:41, and snapshots/cycle_01/chapters/chapter_12.md:61 so at least one pre-Borel stop yields a usable partial coordinate, habit, or route pattern that points toward Porte d'Orleans or Montrouge; then let snapshots/cycle_01/chapters/chapter_12.md:75 sharpen or confirm that line instead of originating it from zero.",
+      "acceptance_test": "Pass if, before snapshots/cycle_01/chapters/chapter_12.md:75, the revised chapter gives the reader at least one specific earlier clue that plausibly points toward the barrier or tollhouse area, and Borel's information at snapshots/cycle_01/chapters/chapter_12.md:75 clearly intensifies that clue rather than replacing empty searching. Fail if the route still appears only when Borel speaks."
+    },
+    {
+      "finding_id": "CH12-004",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:3; snapshots/cycle_01/chapters/chapter_12.md:19; snapshots/cycle_01/chapters/chapter_12.md:37; snapshots/cycle_01/chapters/chapter_12.md:61; snapshots/cycle_01/chapters/chapter_12.md:85; snapshots/cycle_01/chapters/chapter_12.md:119; snapshots/cycle_01/chapters/chapter_12.md:165; snapshots/cycle_01/chapters/chapter_12.md:193",
+      "problem": "The chapter leans too often on 'as if' comparison to carry perception. In accumulation, that repeated hinge starts to feel mechanical and keeps otherwise vivid images one layer away from direct statement.",
+      "rewrite_direction": "Rework the sentence shaping at snapshots/cycle_01/chapters/chapter_12.md:37, snapshots/cycle_01/chapters/chapter_12.md:61, snapshots/cycle_01/chapters/chapter_12.md:85, snapshots/cycle_01/chapters/chapter_12.md:119, snapshots/cycle_01/chapters/chapter_12.md:165, and snapshots/cycle_01/chapters/chapter_12.md:193 so most of those perceptions land as direct sensory fact or fresh metaphor rather than another 'as if' turn. Keep only the one or two comparisons that do irreplaceable work.",
+      "acceptance_test": "Pass if, across the revised versions of snapshots/cycle_01/chapters/chapter_12.md:37, snapshots/cycle_01/chapters/chapter_12.md:61, snapshots/cycle_01/chapters/chapter_12.md:85, snapshots/cycle_01/chapters/chapter_12.md:119, snapshots/cycle_01/chapters/chapter_12.md:165, and snapshots/cycle_01/chapters/chapter_12.md:193, no more than two sentences still rely on 'as if' and at least three of the current comparisons have been replaced by direct image or declarative pressure."
+    },
+    {
+      "finding_id": "CH12-005",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:43; snapshots/cycle_01/chapters/chapter_12.md:83; snapshots/cycle_01/chapters/chapter_12.md:85; snapshots/cycle_01/chapters/chapter_12.md:107; snapshots/cycle_01/chapters/chapter_12.md:137; snapshots/cycle_01/chapters/chapter_12.md:165",
+      "problem": "The prose repeatedly reaches for negation-driven contrast ('not X but Y', 'not X, not Y', 'did not mean') to create emphasis. Used this often in one chapter, the move turns from chosen rhythm into a recognizable formula.",
+      "rewrite_direction": "Revise snapshots/cycle_01/chapters/chapter_12.md:43, snapshots/cycle_01/chapters/chapter_12.md:83, snapshots/cycle_01/chapters/chapter_12.md:85, snapshots/cycle_01/chapters/chapter_12.md:137, and snapshots/cycle_01/chapters/chapter_12.md:165 so at least several of those emphases are rendered in affirmative syntax or a different rhythmic pattern instead of another negated contrast.",
+      "acceptance_test": "Pass if the revised passages at snapshots/cycle_01/chapters/chapter_12.md:43, snapshots/cycle_01/chapters/chapter_12.md:83, snapshots/cycle_01/chapters/chapter_12.md:85, snapshots/cycle_01/chapters/chapter_12.md:137, and snapshots/cycle_01/chapters/chapter_12.md:165 replace at least three of the current negation pivots with distinct affirmative sentence shapes, and no single local cluster still repeats the same contrastive template more than once."
+    }
+  ],
+  "summary": "FAIL overall: chapter 12 sustains period texture, close-third interiority, and largely style-bible-compliant dialogue, but it does not clear review because it introduces a high-severity object-continuity break at the chapter boundary, weakens its own bomb-clock during the tollhouse pause, lets the decisive clue arrive too externally, and falls into repeated 'as if' and negation-contrast sentence formulas.",
+  "coverage_scene_ids": []
+}

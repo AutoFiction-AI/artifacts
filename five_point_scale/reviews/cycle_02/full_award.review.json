@@ -1,0 +1,160 @@
+{
+  "cycle": 2,
+  "verdict": "FAIL",
+  "summary": "The manuscript has an original, timely premise — a broke painter infiltrating an AI data-labeling company to poison training data — executed with genuine conviction. Nick's painter's eye creates a vivid perceptual engine; the characters are well-differentiated; the moral architecture refuses easy redemption; and the ending (canvas white, six-fingered hand loading, Nick clicking the rating field) is structurally powerful. The novel's principal failure mode is em-dash density: 21.5% of content lines contain em-dashes, more than double the 10% HIGH threshold. This saturates the prose with an interrupted, fractured rhythm that flattens genuine emphasis and makes every sentence feel parenthetical. The defect concentrates catastrophically in Chapters 4 (60.4%), 10 (58.1%), and 17 (53.4%), while three chapters (6, 12, 16) use zero em-dashes, producing rhythmic whiplash between sections. Secondary blocker: Bao Nguyen's dialogue in Chapter 6 consistently uses full-form constructions ('I am home,' 'I do not know,' 'there are not any') that exceed his style-bible 'moderate' contraction level and push him toward the Wise Elder archetype the style bible explicitly forbids — a consequential failure because Chapter 6 builds the emotional bond that makes Bao's firing in Chapter 17 land. Tertiary blocker: Chapter 18's Bao-notes discovery section spends five paragraphs restating emotional meaning the notes themselves already earned. With em-dash density brought below 8%, Bao's dialogue naturalized to his stated contraction level, and Chapter 18's overstatement compressed, the manuscript would be competitive for shortlist consideration — the premise, structure, characterization, and ending are at that level.",
+  "findings": [
+    {
+      "finding_id": "CH06_BAO_OVER_FORMAL_DIALOGUE",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:1126; snapshots/cycle_02/FINAL_NOVEL.md:1144; snapshots/cycle_02/FINAL_NOVEL.md:1152; snapshots/cycle_02/FINAL_NOVEL.md:1156; snapshots/cycle_02/FINAL_NOVEL.md:1160; snapshots/cycle_02/FINAL_NOVEL.md:1178; snapshots/cycle_02/FINAL_NOVEL.md:1192",
+      "problem": "Bao's contraction_level in the style bible is 'moderate,' but every extended dialogue line in this chapter uses full-form constructions: 'I am home early morning and evening' (1126), 'I am the man who comes in with water' (1144), 'The problem with mint is not keeping it alive' (1152), 'I am doing bad work with the fuchsias' (1156), 'I do not know enough to fix it' (1160), 'there are not any' (1178), 'I am slow' (1192). The cumulative effect makes Bao sound like a literary archetype delivering aphoristic wisdom rather than a 64-year-old retired graphic designer talking over pho on a night shift. The style bible explicitly forbids 'fortune-cookie wisdom, dignified suffering speeches, or any moment where his primary narrative function is to teach Nick a lesson through his example.' His formality here drifts toward exactly that register. Because this chapter establishes the emotional bond that powers his firing scene in Chapter 17, the voice problem is structurally consequential.",
+      "rewrite_direction": "Revise snapshots/cycle_02/FINAL_NOVEL.md:1126-1192. Contract roughly half of Bao's full-form constructions to match 'moderate' contraction level: 'I'm home early morning and evening,' 'I don't know enough to fix it,' 'they aren't any,' 'I'm slow.' Keep full forms only where Bao is being deliberately precise or where the formality carries emotional weight — his description of Mai ('I am the man who comes in with water') could justify full form as a statement of identity. The mint aphorism at line 1152 should be softened: either embed it in a longer, less structured thought, or let it arrive through conversation rather than as a standalone declaration. Preserve Bao's precision and quietness without making every line a completed philosophical statement.",
+      "acceptance_test": "Pass if at least half of Bao's dialogue lines in snapshots/cycle_02/FINAL_NOVEL.md:1126-1192 use natural contractions ('I'm,' 'don't,' 'aren't,' 'can't') while preserving his sparse, considered speech pattern. Fail if the revised dialogue still reads as uniformly uncontracted across the full exchange, or if Bao's lines could be attributed to a literary archetype rather than a specific person with a design career and a sick wife."
+    },
+    {
+      "finding_id": "CH18_OVERSTATEMENT_BAO_NOTES",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_18",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:3569; snapshots/cycle_02/FINAL_NOVEL.md:3573; snapshots/cycle_02/FINAL_NOVEL.md:3599",
+      "problem": "The chapter establishes Bao's handwritten evaluation notes through two detailed specimen passages (lines 3569-3573) that show what he wrote — green variations in foliage, skin color in shadow, flyaway hair filaments, each ending with a circled '3.' These passages earn the reader's understanding that Bao saw more than the system wanted and wrote it down anyway. Then lines 3595-3599 restate this meaning through Nick's internal narration: 'page after page of Bao's observations, each one a record of a man who had seen more than the system wanted from him and written it down anyway, knowing that no one would read it, knowing that his per-image time was already flagged, knowing that this precision was the thing that would cost him his job and doing it anyway because the alternative was seeing less than he could see.' The triple-knowing construction explicitly interprets what the notes already showed. The insight has been earned through concrete evidence; the narratorial summary paraphrases rather than extends it.",
+      "rewrite_direction": "Revise snapshots/cycle_02/FINAL_NOVEL.md:3595-3599. Cut or compress the explanatory narration so the chapter moves from the specimen notes directly into the confession attempt at line 3601. Options: (A) Delete lines 3595-3599 entirely and let the physical image of Nick holding the stack carry the emotional weight into the confession beat. (B) Reduce to a single sentence of physical observation — Nick holding the stack, the weight of the pages, the steadiness of Bao's handwriting — without restating the thematic meaning the notes already delivered. Do not let the narrator explain what Bao's notes mean when the notes themselves are on the page.",
+      "acceptance_test": "Pass if snapshots/cycle_02/FINAL_NOVEL.md:3595-3601 moves from the specimen notes to the confession attempt without a narratorial passage that restates the significance of Bao's writing practice in thematic language. Physical observation of the notes (weight, handwriting, stack height) is fine; abstract restatement of what the notes represent ('a man who had seen more than the system wanted') is not. Fail if the revised passage still contains a multi-clause interpretive summary of what Bao's notes mean after the notes themselves have already shown it."
+    }
+  ],
+  "pattern_findings": [
+    {
+      "pattern_id": "EM_DASH_DENSITY",
+      "severity": "HIGH",
+      "global_problem": "Em-dash density across the manuscript is 21.5% of content lines (404 of 1880 lines contain at least one em-dash), more than double the 10% HIGH threshold. Total em-dash count is 578. The saturation flattens genuine emphasis, makes interruption the default prose texture, and turns every parenthetical aside into the same rhythmic gesture. Additionally, three chapters (6, 12, 16) contain zero em-dashes while others exceed 50%, creating jarring rhythmic inconsistency between sections drafted in parallel.",
+      "affected_chapters": [
+        "chapter_01", "chapter_02", "chapter_03", "chapter_04", "chapter_05",
+        "chapter_07", "chapter_08", "chapter_09", "chapter_10", "chapter_11",
+        "chapter_13", "chapter_14", "chapter_15", "chapter_17", "chapter_18"
+      ],
+      "global_rewrite_principles": "Replace non-essential em-dashes with commas, periods, colons, or sentence restructuring. Keep em-dashes only where genuine interruption, fracture, or interjection is doing real dramatic work — a character cutting herself off, a thought breaking under pressure, a syntactic rupture that cannot be achieved with other punctuation. Appositional asides, descriptive elaborations, and clause-joining can almost always use commas or colons instead. Target: manuscript-wide em-dash density below 8% of content lines. Per-chapter targets reflect 8% of each chapter's content-line count.",
+      "chapter_hits": [
+        {
+          "finding_id": "EM_DASH_CH04",
+          "chapter_id": "chapter_04",
+          "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:606; snapshots/cycle_02/FINAL_NOVEL.md:630; snapshots/cycle_02/FINAL_NOVEL.md:638; snapshots/cycle_02/FINAL_NOVEL.md:651",
+          "problem": "Chapter 4 has the highest em-dash density in the manuscript: 55 em-dashes across 91 content lines (60.4%). Nearly every descriptive passage uses em-dashes for appositional elaboration — character introductions, workspace descriptions, and physical observations all default to the em-dash for clause separation. The first-day-on-the-floor descriptions stack em-dashes until every new detail feels parenthetical.",
+          "rewrite_direction": "Revise snapshots/cycle_02/FINAL_NOVEL.md:604-784. Reduce em-dashes from 55 to no more than 7. The workspace description (lines 606-625), Priya's introduction (lines 630-635), Bao's introduction (lines 638-648), and Tommy's introduction (lines 651-680) each contain multiple em-dashes that serve as appositional commas — replace with commas or restructure into separate sentences. Reserve em-dashes for at most 1-2 moments of genuine syntactic fracture in the chapter.",
+          "acceptance_test": "Pass if revised chapter contains no more than 7 lines with em-dashes (8% of 91 content lines). Fail if em-dash density remains above 8% or if appositional description still defaults to em-dash punctuation."
+        },
+        {
+          "finding_id": "EM_DASH_CH10",
+          "chapter_id": "chapter_10",
+          "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:1960; snapshots/cycle_02/FINAL_NOVEL.md:1972; snapshots/cycle_02/FINAL_NOVEL.md:2044",
+          "problem": "Chapter 10 has the second-highest density: 54 em-dashes across 93 content lines (58.1%). Marcus's visit, the calibration-team offer, and Dani's reaction are all punctuated with em-dashes that substitute for commas, colons, and sentence breaks throughout.",
+          "rewrite_direction": "Revise snapshots/cycle_02/FINAL_NOVEL.md:1958-2146. Reduce em-dashes from 54 to no more than 7. Marcus's dialogue and physical descriptions, the promotion-offer scene, and Dani's break-room silence can all be restructured with commas or colons. Keep em-dashes only for Nick's internal fractures under the pressure of accepting the role that enables his sabotage.",
+          "acceptance_test": "Pass if revised chapter contains no more than 7 lines with em-dashes. Fail if density remains above 8%."
+        },
+        {
+          "finding_id": "EM_DASH_CH17",
+          "chapter_id": "chapter_17",
+          "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:3332; snapshots/cycle_02/FINAL_NOVEL.md:3388; snapshots/cycle_02/FINAL_NOVEL.md:3410; snapshots/cycle_02/FINAL_NOVEL.md:3418",
+          "problem": "Chapter 17 has the third-highest density: 62 em-dashes across 116 content lines (53.4%). The audit-day scenes, Bao's firing, and the farewell sequence all use em-dashes for description, apposition, and clause-joining. The emotional climax (Bao packing his desk) is undermined because the em-dash rhythm is identical to the morning-arrival description — genuine fracture sounds the same as routine elaboration.",
+          "rewrite_direction": "Revise snapshots/cycle_02/FINAL_NOVEL.md:3328-3562. Reduce em-dashes from 62 to no more than 9. Reserve em-dashes for the highest-pressure moments: Tommy's broken reaction (line 3394), the farewell handshakes, Priya's breakdown. Strip em-dashes from the parking-lot arrival, HR descriptions, and interview-procedure passages where commas or periods serve better.",
+          "acceptance_test": "Pass if revised chapter contains no more than 9 lines with em-dashes and the remaining em-dashes are concentrated in the farewell and breakdown scenes rather than in procedural description. Fail if density remains above 8%."
+        },
+        {
+          "finding_id": "EM_DASH_CH01",
+          "chapter_id": "chapter_01",
+          "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:8; snapshots/cycle_02/FINAL_NOVEL.md:99; snapshots/cycle_02/FINAL_NOVEL.md:117",
+          "problem": "Chapter 1 contains 41 em-dashes across 88 content lines (46.6%). The Zoom-call scene, apartment description, and late-night browsing all default to em-dash punctuation for appositional detail.",
+          "rewrite_direction": "Revise snapshots/cycle_02/FINAL_NOVEL.md:3-181. Reduce em-dashes from 41 to no more than 7. Replace descriptive em-dashes (apartment details, financial specifics, browsing sessions) with commas or sentence breaks. Preserve em-dashes for at most the Zoom-call interruption, the rent-notice moment, and the plan's crystallization.",
+          "acceptance_test": "Pass if revised chapter contains no more than 7 lines with em-dashes. Fail if density remains above 8%."
+        },
+        {
+          "finding_id": "EM_DASH_CH08",
+          "chapter_id": "chapter_08",
+          "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:1629; snapshots/cycle_02/FINAL_NOVEL.md:1700",
+          "problem": "Chapter 8 contains 30 em-dashes across 72 content lines (41.7%). The exploit-discovery passages and safeguard descriptions use em-dashes for technical elaboration where commas or colons would serve.",
+          "rewrite_direction": "Revise snapshots/cycle_02/FINAL_NOVEL.md:1581-1726. Reduce em-dashes from 30 to no more than 6. The primer metaphor and technical exposition can use colons and commas. Keep em-dashes for Nick's moral hesitation at the moment of first deliberate misrating.",
+          "acceptance_test": "Pass if revised chapter contains no more than 6 lines with em-dashes. Fail if density remains above 8%."
+        },
+        {
+          "finding_id": "EM_DASH_CH18",
+          "chapter_id": "chapter_18",
+          "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:3565; snapshots/cycle_02/FINAL_NOVEL.md:3599; snapshots/cycle_02/FINAL_NOVEL.md:3741",
+          "problem": "Chapter 18 contains 41 em-dashes across 110 content lines (37.3%). The desk-clearing scene, Priya's confession, Marcus's meeting, and the final painting attempt all use em-dashes for description and apposition.",
+          "rewrite_direction": "Revise snapshots/cycle_02/FINAL_NOVEL.md:3563-3783. Reduce em-dashes from 41 to no more than 9. Keep em-dashes for the non-confession break ('I did,' he said, and stopped), the painting failure, and the final image loading. Strip from descriptive passages, office setup, and routine narration.",
+          "acceptance_test": "Pass if revised chapter contains no more than 9 lines with em-dashes and the remaining instances are concentrated in the confession, painting, and ending scenes. Fail if density remains above 8%."
+        },
+        {
+          "finding_id": "EM_DASH_CH02",
+          "chapter_id": "chapter_02",
+          "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:188; snapshots/cycle_02/FINAL_NOVEL.md:206",
+          "problem": "Chapter 2 contains 31 em-dashes across 85 content lines (36.5%). The Python-learning comedy and financial-desperation passages use em-dashes for elaboration and contrast.",
+          "rewrite_direction": "Revise snapshots/cycle_02/FINAL_NOVEL.md:182-354. Reduce em-dashes from 31 to no more than 7. The coding-struggle comedy can use commas and sentence breaks. Keep em-dashes for the Jess phone call's emotional interruptions.",
+          "acceptance_test": "Pass if revised chapter contains no more than 7 lines with em-dashes. Fail if density remains above 8%."
+        },
+        {
+          "finding_id": "EM_DASH_CH11",
+          "chapter_id": "chapter_11",
+          "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:2217; snapshots/cycle_02/FINAL_NOVEL.md:2265",
+          "problem": "Chapter 11 contains 36 em-dashes across 101 content lines (35.6%). The first sabotage runs and notebook passages use em-dashes for technical and emotional elaboration.",
+          "rewrite_direction": "Revise snapshots/cycle_02/FINAL_NOVEL.md:2147-2344. Reduce em-dashes from 36 to no more than 8. Technical descriptions of the sabotage process can use commas and colons. Keep em-dashes for the gallery-images-in-pipeline discovery and the notebook's first entry.",
+          "acceptance_test": "Pass if revised chapter contains no more than 8 lines with em-dashes. Fail if density remains above 8%."
+        },
+        {
+          "finding_id": "EM_DASH_CH13",
+          "chapter_id": "chapter_13",
+          "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:2528; snapshots/cycle_02/FINAL_NOVEL.md:2595",
+          "problem": "Chapter 13 contains 38 em-dashes across 109 content lines (34.9%). The failed painting, recital, and kiss scenes all use em-dashes for descriptive and emotional interpolation.",
+          "rewrite_direction": "Revise snapshots/cycle_02/FINAL_NOVEL.md:2504-2724. Reduce em-dashes from 38 to no more than 9. The recital and Luna's drawing can use commas. Keep em-dashes for the kiss scene's physical fracture and the painting-failure moment.",
+          "acceptance_test": "Pass if revised chapter contains no more than 9 lines with em-dashes. Fail if density remains above 8%."
+        },
+        {
+          "finding_id": "EM_DASH_CH09",
+          "chapter_id": "chapter_09",
+          "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:1831; snapshots/cycle_02/FINAL_NOVEL.md:1873",
+          "problem": "Chapter 9 contains 37 em-dashes across 114 content lines (32.5%). The bar scene's descriptions, Priya's teaching story, and the parking-lot walk use em-dashes for appositional detail.",
+          "rewrite_direction": "Revise snapshots/cycle_02/FINAL_NOVEL.md:1727-1957. Reduce em-dashes from 37 to no more than 9. Bar descriptions and character observations can use commas. Keep em-dashes for the parking-lot tension between Nick and Dani.",
+          "acceptance_test": "Pass if revised chapter contains no more than 9 lines with em-dashes. Fail if density remains above 8%."
+        },
+        {
+          "finding_id": "EM_DASH_CH03",
+          "chapter_id": "chapter_03",
+          "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:369; snapshots/cycle_02/FINAL_NOVEL.md:513",
+          "problem": "Chapter 3 contains 35 em-dashes across 130 content lines (26.9%). The interview scenes use em-dashes for Kevin's technical descriptions and Nick's internal assessment process.",
+          "rewrite_direction": "Revise snapshots/cycle_02/FINAL_NOVEL.md:355-603. Reduce em-dashes from 35 to no more than 10. Technical interview dialogue can use commas and colons. Keep em-dashes for Nick's linseed-oil-smell observation and the moment he spots errors the answer key missed.",
+          "acceptance_test": "Pass if revised chapter contains no more than 10 lines with em-dashes. Fail if density remains above 8%."
+        },
+        {
+          "finding_id": "EM_DASH_CH14",
+          "chapter_id": "chapter_14",
+          "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:2895; snapshots/cycle_02/FINAL_NOVEL.md:2925",
+          "problem": "Chapter 14 contains 28 em-dashes across 105 content lines (26.7%). The audit meeting and Manila aftermath use em-dashes for corporate-process description and Nick's internal panic.",
+          "rewrite_direction": "Revise snapshots/cycle_02/FINAL_NOVEL.md:2725-2937. Reduce em-dashes from 28 to no more than 8. Meeting descriptions and corporate dialogue framing can use commas. Keep em-dashes for Nick's near-exposure moment and the decision to accelerate.",
+          "acceptance_test": "Pass if revised chapter contains no more than 8 lines with em-dashes. Fail if density remains above 8%."
+        },
+        {
+          "finding_id": "EM_DASH_CH07",
+          "chapter_id": "chapter_07",
+          "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:1479; snapshots/cycle_02/FINAL_NOVEL.md:1541",
+          "problem": "Chapter 7 contains 42 em-dashes across 166 content lines (25.3%). The all-hands meeting, new-hire training sequences, and Tommy's confession all use em-dashes for elaboration.",
+          "rewrite_direction": "Revise snapshots/cycle_02/FINAL_NOVEL.md:1247-1580. Reduce em-dashes from 42 to no more than 13. CEO speech framing and new-hire descriptions can use commas and periods. Keep em-dashes for Tommy's AI-art confession and Priya's stress-fracture moments.",
+          "acceptance_test": "Pass if revised chapter contains no more than 13 lines with em-dashes. Fail if density remains above 8%."
+        },
+        {
+          "finding_id": "EM_DASH_CH05",
+          "chapter_id": "chapter_05",
+          "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:853; snapshots/cycle_02/FINAL_NOVEL.md:1033",
+          "problem": "Chapter 5 contains 30 em-dashes across 127 content lines (23.6%). The quality-audit scene, Dani's coaching, and the Slack mishap use em-dashes for descriptive and internal-state elaboration.",
+          "rewrite_direction": "Revise snapshots/cycle_02/FINAL_NOVEL.md:785-1041. Reduce em-dashes from 30 to no more than 10. Workplace descriptions and Slack-interface narration can use commas. Keep em-dashes for Dani's overheard custody phone call and Nick's promotion moment.",
+          "acceptance_test": "Pass if revised chapter contains no more than 10 lines with em-dashes. Fail if density remains above 8%."
+        },
+        {
+          "finding_id": "EM_DASH_CH15",
+          "chapter_id": "chapter_15",
+          "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:2982; snapshots/cycle_02/FINAL_NOVEL.md:2992",
+          "problem": "Chapter 15 contains 18 em-dashes across 133 content lines (13.5%). Closer to the target than other chapters but still above 8%. The three-week sabotage execution uses em-dashes for process description.",
+          "rewrite_direction": "Revise snapshots/cycle_02/FINAL_NOVEL.md:2938-3202. Reduce em-dashes from 18 to no more than 11. Process descriptions and daily-routine narration can use commas. Keep em-dashes for the vomiting-on-880 scene and the moment of irreversibility.",
+          "acceptance_test": "Pass if revised chapter contains no more than 11 lines with em-dashes. Fail if density remains above 8%."
+        }
+      ]
+    }
+  ]
+}

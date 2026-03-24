@@ -1,0 +1,88 @@
+{
+  "cycle": 2,
+  "verdict": "FAIL",
+  "summary": "FAIL for shortlist readiness. The draft has strong local specificity and consequence, and the dark material is mostly unsanitized, but it breaks book-level coherence and style control: Chapters 1-2 are in present tense against the declared past-tense canon, two HIGH continuity contradictions remain unresolved, and recurring cross-chapter diction/dialogue patterns flatten voice distinctness below Booker shortlist standard.",
+  "findings": [
+    {
+      "finding_id": "FBR-001",
+      "severity": "HIGH",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:5",
+      "problem": "Chapter 1 is drafted in present tense (e.g., 'the apartment is dark', 'Anika is already awake') while the style bible's canonical narrative tense is past tense. This creates immediate book-level tense incoherence when later chapters switch to past.",
+      "rewrite_direction": "Rewrite narrative prose in snapshots/cycle_02/FINAL_NOVEL.md:5-409 into past tense while preserving close-third urgency. Prioritize high-friction spans first (snapshots/cycle_02/FINAL_NOVEL.md:5, snapshots/cycle_02/FINAL_NOVEL.md:25, snapshots/cycle_02/FINAL_NOVEL.md:55, snapshots/cycle_02/FINAL_NOVEL.md:79, snapshots/cycle_02/FINAL_NOVEL.md:171) and run a full chapter pass to remove residual present-tense scene narration.",
+      "acceptance_test": "PASS if, on read-through of snapshots/cycle_02/FINAL_NOVEL.md:5-409, scene-action narration is consistently past tense and any present tense appears only inside quoted dialogue or fixed artifacts. FAIL if paragraph-level scene narration still uses present-tense action verbs."
+    },
+    {
+      "finding_id": "FBR-002",
+      "severity": "HIGH",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:412",
+      "problem": "Chapter 2 continues the present-tense narration ('schedule ... is still curling', 'Anika stands'), extending the canonical-tense violation across two opening chapters before Chapter 3 shifts to past. This is fundamental cross-chapter coherence failure.",
+      "rewrite_direction": "Convert snapshots/cycle_02/FINAL_NOVEL.md:412-798 to past-tense narration to match prose_style_profile.narrative_tense and Chapters 3-18. Focus first on school and phone-monitoring passages at snapshots/cycle_02/FINAL_NOVEL.md:412, snapshots/cycle_02/FINAL_NOVEL.md:420, snapshots/cycle_02/FINAL_NOVEL.md:463, snapshots/cycle_02/FINAL_NOVEL.md:497, snapshots/cycle_02/FINAL_NOVEL.md:517.",
+      "acceptance_test": "PASS if snapshots/cycle_02/FINAL_NOVEL.md:412-798 reads in past tense with no present-tense scene narration outside dialogue/artifacts. FAIL if Chapter 2 still reads as present while Chapter 3 onward remains past."
+    },
+    {
+      "finding_id": "FBR-003",
+      "severity": "HIGH",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:4626",
+      "problem": "Ravi's chronic marker is established as left-ankle stiffness throughout the book, but Chapter 13 suddenly says he is rolling his right ankle. This is a cross-chapter physical-state contradiction with no setup or follow-through.",
+      "rewrite_direction": "Normalize laterality at snapshots/cycle_02/FINAL_NOVEL.md:4626 to match established continuity (left ankle), or explicitly introduce a new right-ankle issue with causal setup and downstream references in snapshots/cycle_02/FINAL_NOVEL.md:4622-4700 and later continuity beats (e.g., snapshots/cycle_02/FINAL_NOVEL.md:5165, snapshots/cycle_02/FINAL_NOVEL.md:6520).",
+      "acceptance_test": "PASS if ankle laterality is internally consistent after revision: either left-ankle marker remains consistent, or a new right-ankle condition is explicitly introduced and carried forward. FAIL if a one-off right-ankle mention remains unsupported."
+    },
+    {
+      "finding_id": "FBR-004",
+      "severity": "HIGH",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:6558",
+      "problem": "Chapter 17 states utility arrears as 1,860, but later chapter accounting gives 1,240.12 remaining after a 620 payment. Without explicit date framing, this is a financial continuity contradiction against both Chapter 18 and the continuity sheet.",
+      "rewrite_direction": "Reconcile financial arithmetic in snapshots/cycle_02/FINAL_NOVEL.md:6558 and snapshots/cycle_02/FINAL_NOVEL.md:6632 with snapshots/cycle_02/FINAL_NOVEL.md:7255-7257. Option A: update Chapter 17 figures to post-payment balance. Option B: explicitly date Chapter 17 pre-payment in snapshots/cycle_02/FINAL_NOVEL.md:6516-6535 and adjust later references to preserve chronology.",
+      "acceptance_test": "PASS if utility-balance numbers form one coherent timeline across snapshots/cycle_02/FINAL_NOVEL.md:6558, snapshots/cycle_02/FINAL_NOVEL.md:6632, snapshots/cycle_02/FINAL_NOVEL.md:7255, and snapshots/cycle_02/FINAL_NOVEL.md:7257. FAIL if both totals coexist for the same period without explicit date logic."
+    },
+    {
+      "finding_id": "FBR-005",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:4016",
+      "problem": "Default stillness construction recurs across chapters ('went still' / room-object stillness) and reads like a reusable macro rather than intentional motif, reducing voice freshness at peak conflict beats.",
+      "rewrite_direction": "Replace repeated stillness constructions with character-specific and scene-specific physical reactions at snapshots/cycle_02/FINAL_NOVEL.md:1315, snapshots/cycle_02/FINAL_NOVEL.md:3474, snapshots/cycle_02/FINAL_NOVEL.md:4016, and snapshots/cycle_02/FINAL_NOVEL.md:5195. Use distinct embodied tells tied to who is under pressure in each moment.",
+      "acceptance_test": "PASS if those four spans no longer rely on the same stillness template and each conveys pressure through distinct physical behavior. FAIL if 'went still' style phrasing persists across three or more of the targeted spans."
+    },
+    {
+      "finding_id": "FBR-006",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:2542",
+      "problem": "Formula-impact phrasing recurs across chapters ('landed like...', 'sentence landed flat/heavy'), creating noticeable patterning instead of controlled motif.",
+      "rewrite_direction": "Rework the repeated abstract-impact constructions at snapshots/cycle_02/FINAL_NOVEL.md:2542, snapshots/cycle_02/FINAL_NOVEL.md:2829, snapshots/cycle_02/FINAL_NOVEL.md:5993, and snapshots/cycle_02/FINAL_NOVEL.md:7323 into varied consequence rendering (action interruption, breath shift, decision pivot, or dialogue break).",
+      "acceptance_test": "PASS if the targeted lines no longer use the same 'abstract thing landed' template and each beat lands through a different mechanism visible on the page. FAIL if the formula remains in most targeted spans."
+    },
+    {
+      "finding_id": "FBR-007",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_18",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:7019",
+      "problem": "Cross-chapter diction overfits recurring token clusters from style/continuity prompts (HVAC metallic-rattle + mustard-seed/curry-leaf kitchen loop), producing mantra-like repetition and weakening chapter texture variance.",
+      "rewrite_direction": "Diversify sensory anchors in repeated setup zones: snapshots/cycle_02/FINAL_NOVEL.md:79, snapshots/cycle_02/FINAL_NOVEL.md:1646, snapshots/cycle_02/FINAL_NOVEL.md:4622, snapshots/cycle_02/FINAL_NOVEL.md:6560, snapshots/cycle_02/FINAL_NOVEL.md:7019, plus kitchen smell callbacks at snapshots/cycle_02/FINAL_NOVEL.md:13, snapshots/cycle_02/FINAL_NOVEL.md:4630, snapshots/cycle_02/FINAL_NOVEL.md:6120. Keep continuity, but vary lexical surface and sensory priority by chapter stakes.",
+      "acceptance_test": "PASS if those targeted spans no longer read as near-verbatim sensory restatements and each chapter opening uses a distinct sensory lead tied to current conflict. FAIL if the same HVAC and curry-leaf/mustard-seed phrasing remains repeated across most targeted lines."
+    },
+    {
+      "finding_id": "FBR-008",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:5149",
+      "problem": "Mediation dialogue collapses into shared formal/legal cadence, reducing idiolect separation. It also pushes Anika (style-bible contraction level: high) into repeated stiff uncontracted pressure lines (see snapshots/cycle_02/FINAL_NOVEL.md:3468 and snapshots/cycle_02/FINAL_NOVEL.md:5285), making voices sound interchangeable under stress.",
+      "rewrite_direction": "Revoice the mediation core in snapshots/cycle_02/FINAL_NOVEL.md:5149-5293 and adjust linked pressure beat at snapshots/cycle_02/FINAL_NOVEL.md:3468. Keep legal stakes, but differentiate rhythm/register: Anika with shorter high-contraction stress speech, Ravi with procedural fragments and late emotional breaks, Priya with plainspoken boundary language rather than deposition diction.",
+      "acceptance_test": "PASS if read-aloud of snapshots/cycle_02/FINAL_NOVEL.md:5183-5300 allows speaker identification without tags from syntax/rhythm alone, and Anika's pressure dialogue defaults to contracted colloquial speech except intentional emphasis beats. FAIL if multiple speakers still share the same formal sentence scaffolding."
+    },
+    {
+      "finding_id": "FBR-009",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:3775",
+      "problem": "Chapter 10 overweights procedural explanation and policy language, which suppresses leverage shifts and embodied scene consequence. The chapter reads closer to protocol briefing than dramatic confrontation.",
+      "rewrite_direction": "Refactor snapshots/cycle_02/FINAL_NOVEL.md:3775-3831 to externalize policy through conflict actions instead of summary blocks: tighten Tess/Ravi exchange into decisive turns, foreground Anika's immediate tradeoff decisions, and convert at least one explanatory policy paragraph into a concrete behavioral consequence beat in snapshots/cycle_02/FINAL_NOVEL.md:3809-3829.",
+      "acceptance_test": "PASS if each exchange in snapshots/cycle_02/FINAL_NOVEL.md:3775-3831 produces a clear power or decision shift and procedural facts are embedded in immediate stakes. FAIL if the revised chapter still functions primarily as exposition dump with minimal dramatic movement."
+    }
+  ]
+}

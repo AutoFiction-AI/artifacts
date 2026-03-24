@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_14",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "PASS",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_14_award_01",
+      "source": "award",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:33-35",
+      "problem": "The opening lands the comic scale mismatch on its own, then the narration explains the joke instead of trusting it. After showing a fifteen-year-old writing Herbology lines while mentally modeling planetary ward failure, the chapter stops to spell out the absurdity and Gavin's lack of ironic self-awareness, which softens the deadpan commitment the comic chapter mode needs.",
+      "rewrite_direction": "Rework the explanatory gloss at snapshots/cycle_02/chapters/chapter_14.md:33-35. Keep the detention-room specifics and the ward-pressure stakes, but remove the direct commentary about how absurd the situation is and about Gavin not standing outside himself to notice it. Let the mismatch read through concrete detail and Gavin's actual attention pattern instead.",
+      "acceptance_test": "Pass if the revised passage at snapshots/cycle_02/chapters/chapter_14.md:33-35 still makes the detention-versus-planetary-defense mismatch clear through observable detail alone; fail if the narrator still explicitly labels the situation's absurdity or explains Gavin's non-ironic stance to the reader."
+    },
+    {
+      "finding_id": "chapter_14_dialogue_01",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:245",
+      "problem": "Gavin's line at the break point echoes a calibration-only example from outline/style_bible.json almost verbatim. That is a direct contract violation, and here it also makes the line feel sourced from character notes rather than from the specific pressure of Miren leaving this room.",
+      "rewrite_direction": "Replace the line at snapshots/cycle_02/chapters/chapter_14.md:245 with a scene-specific failed explanation that belongs to this argument. Keep Gavin's high-contraction, hedge-heavy, self-correcting register, but ground the line in something present here now: Miren seeing his eyes track the wall, the blood, the supply run, or the wards he cannot prove.",
+      "acceptance_test": "Pass if the revised line at snapshots/cycle_02/chapters/chapter_14.md:245 does not contain the phrase `I don't know how to explain it` and includes at least one concrete referent from this confrontation; fail if the replacement still reads like a generic Gavin calibration line rather than speech produced by this exact scene."
+    },
+    {
+      "finding_id": "chapter_14_prose_01",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:55; snapshots/cycle_02/chapters/chapter_14.md:167; snapshots/cycle_02/chapters/chapter_14.md:249",
+      "problem": "At three emotional pivots, the narration falls back on the same filtered-recognition construction (`had the sense` / `had the uneasy feeling`). Repeating the formula at Sprout's decision, Miren's shift from anger to fear, and the doorway goodbye turns a usable sentence shape into a tic and slightly backs the prose away from close-third immediacy.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_14.md:55, snapshots/cycle_02/chapters/chapter_14.md:167, and snapshots/cycle_02/chapters/chapter_14.md:249 so Gavin registers each turn through distinct concrete cues instead of the same filter phrase. Use observation, silence, or body response, and vary the sentence shape across the three beats.",
+      "acceptance_test": "Pass if none of the revised passages at snapshots/cycle_02/chapters/chapter_14.md:55, snapshots/cycle_02/chapters/chapter_14.md:167, and snapshots/cycle_02/chapters/chapter_14.md:249 uses `had the sense` or `had the uneasy feeling`, and each beat signals the shift through a different concrete cue; fail if the filter formula survives in two or more of those three pivots."
+    }
+  ],
+  "summary": "FAIL overall. The chapter's structural spine is sound and the Miren break lands, but shortlist-level control is undercut by one explained-joke passage in the comic setup, a calibration-line echo in Gavin's dialogue, and a repeated filter-phrase tic at key emotional pivots."
+}

@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_02",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_02_f001_weekday_continuity",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:7; snapshots/cycle_02/chapters/chapter_02.md:99; snapshots/cycle_02/chapters/chapter_02.md:311",
+      "problem": "The chapter opens in the early hours of July 11, 2005 and continues straight through Sarah's 6:30 alarm and departure, but line 311 calls the same continuous morning 'Tuesday morning.' July 11, 2005 was a Monday, so this is a canonical timeline contradiction inside the chapter's own scene chronology.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_02.md:311 so the post-departure paragraph names the correct weekday or drops the weekday entirely. Keep the surrounding continuity in snapshots/cycle_02/chapters/chapter_02.md:299-315 anchored to the same uninterrupted morning established at snapshots/cycle_02/chapters/chapter_02.md:7 and snapshots/cycle_02/chapters/chapter_02.md:99.",
+      "acceptance_test": "A cold read of snapshots/cycle_02/chapters/chapter_02.md:299-315 reads as the immediate continuation of the July 11, 2005 morning established earlier in the chapter, and the text no longer labels that sequence as Tuesday. Pass if the weekday is Monday or omitted; fail if Tuesday remains or an unsignaled day jump is introduced."
+    },
+    {
+      "finding_id": "chapter_02_f002_tech_metaphor_cluster",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:39; snapshots/cycle_02/chapters/chapter_02.md:49; snapshots/cycle_02/chapters/chapter_02.md:61; snapshots/cycle_02/chapters/chapter_02.md:77",
+      "problem": "Nate's tech-adjacent idiolect is over-applied in a tight cluster: 'legacy software,' 'autocomplete,' 'search box,' and 'operating system' arrive within forty lines. Instead of feeling like lived thought under pressure, the voice starts to read like an over-literal deployment of the style-bible signature.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_02.md:39, snapshots/cycle_02/chapters/chapter_02.md:49, snapshots/cycle_02/chapters/chapter_02.md:61, and snapshots/cycle_02/chapters/chapter_02.md:77 so the strongest one or two computational frames survive, but the other beats are carried by body-specific or 2005-specific friction already present in the scene: the urination angle, the absent phone weight, the dial-up scream, the percolator confusion.",
+      "acceptance_test": "Across snapshots/cycle_02/chapters/chapter_02.md:39-77, no more than two explicitly computational metaphors remain, and at least two of the current beats are rewritten as concrete physical or era-specific observations rather than software/search/OS analogies. Pass if Nate still sounds like Nate without the passage feeling token-calibrated; fail if all four digital frames remain."
+    },
+    {
+      "finding_id": "chapter_02_f003_apartment_formula_repetition",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:7; snapshots/cycle_02/chapters/chapter_02.md:41; snapshots/cycle_02/chapters/chapter_02.md:85; snapshots/cycle_02/chapters/chapter_02.md:305; snapshots/cycle_02/chapters/chapter_02.md:323",
+      "problem": "The chapter keeps re-entering description through the same personified formula: 'The apartment...' or a near-equivalent acting as the sentence subject. By the fourth and fifth use, the construction stops feeling chosen and starts feeling like a reusable scaffold, which flattens otherwise sharp spatial writing.",
+      "rewrite_direction": "Revise the paragraph entries at snapshots/cycle_02/chapters/chapter_02.md:41, snapshots/cycle_02/chapters/chapter_02.md:85, snapshots/cycle_02/chapters/chapter_02.md:305, and snapshots/cycle_02/chapters/chapter_02.md:323 so at least three no longer lead with 'The apartment' or 'The place' as an animate actor. Enter those moments through distinct concrete cues already available in-scene: toothbrushes, bills, the percolator's cooling ticks, the couch taking Dominic's weight, the threat of the phone or a knock at the door.",
+      "acceptance_test": "After revision, no more than two paragraph openings in the chapter personify 'The apartment' or 'The place' as the acting subject, and snapshots/cycle_02/chapters/chapter_02.md:41, snapshots/cycle_02/chapters/chapter_02.md:85, snapshots/cycle_02/chapters/chapter_02.md:305, and snapshots/cycle_02/chapters/chapter_02.md:323 each begin from a different concrete sensory or action cue. Pass if the room feels newly observed each time; fail if the same opening formula still drives most of those entries."
+    }
+  ],
+  "summary": "Strong close-third control and a convincing Sarah/Nate domestic scene make dialogue the chapter's strongest lens: Sarah's dry teacher precision and Nate's clipped, agreeable panic stay distinct and contraction-true. The chapter still fails overall. A HIGH weekday contradiction at line 311 breaks canonical chronology, and the prose leans too hard on preloaded signature devices: the digital-metaphor cluster in the first half and the repeated 'The apartment...' paragraph formula both make the voice feel calibrated rather than fully lived."
+}

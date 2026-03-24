@@ -1,0 +1,82 @@
+{
+  "acceptance_targets": [
+    "[chapter_02_F001] Pass if the revised scene makes Baca's hearing limits explicit before Gabriel's threat, or shows Baca reacting when those lines are audible; fail if Gabriel can still say the material in snapshots/cycle_01/chapters/chapter_02.md:297 at ordinary low-voice range while Baca remains six feet away and nothing changes.",
+    "[chapter_02_F002] Pass if the revised passage resolves the scanner on-page before or during the observation question: the scan is used and yields a readable outcome, or the text explicitly states why it cannot be used. Fail if Celia still retrieves the scanner and sets it down while the chapter later claims Marisol lacks a scan with no explanation."
+  ],
+  "chapter_id": "chapter_02",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if the revised scene makes Baca's hearing limits explicit before Gabriel's threat, or shows Baca reacting when those lines are audible; fail if Gabriel can still say the material in snapshots/cycle_01/chapters/chapter_02.md:297 at ordinary low-voice range while Baca remains six feet away and nothing changes.",
+      "chapter_id": "chapter_02",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_02.md:121; snapshots/cycle_01/chapters/chapter_02.md:147; snapshots/cycle_01/chapters/chapter_02.md:297; snapshots/cycle_01/chapters/chapter_02.md:331",
+      "finding_id": "chapter_02_F001",
+      "problem": "The chapter insists the trauma-room exchange is guarded and acoustically exposed, but then lets Gabriel say the most incriminating material in earshot of Baca with no credible privacy cover or reaction. Because the scene's pressure depends on surveillance and chain-of-custody risk, that selective deafness weakens the confrontation's plausibility at its most important turn.",
+      "rewrite_direction": "Revise the guarded-room exchange around snapshots/cycle_01/chapters/chapter_02.md:121, snapshots/cycle_01/chapters/chapter_02.md:147, snapshots/cycle_01/chapters/chapter_02.md:297, and snapshots/cycle_01/chapters/chapter_02.md:331 so the risky admissions are either plausibly masked by room action/noise, moved into a genuinely private beat, or overheard and reacted to on-page. The scene needs a concrete reason Baca cannot process Gabriel naming Marisol, the prior recognition, and the procedural bending.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if the revised passage resolves the scanner on-page before or during the observation question: the scan is used and yields a readable outcome, or the text explicitly states why it cannot be used. Fail if Celia still retrieves the scanner and sets it down while the chapter later claims Marisol lacks a scan with no explanation.",
+      "chapter_id": "chapter_02",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_02.md:115; snapshots/cycle_01/chapters/chapter_02.md:329; snapshots/cycle_01/chapters/chapter_02.md:333; snapshots/cycle_01/chapters/chapter_02.md:345; snapshots/cycle_01/chapters/chapter_02.md:347",
+      "finding_id": "chapter_02_F002",
+      "problem": "Celia explicitly leaves to fetch a portable scan, returns with it, and then the chapter drops the scan entirely while Marisol's final decision turns on not having scan-level justification. That creates a plot-convenient hole in the medical logic right where the scene needs procedural rigor.",
+      "rewrite_direction": "Clarify the diagnostic beat around snapshots/cycle_01/chapters/chapter_02.md:115, snapshots/cycle_01/chapters/chapter_02.md:329, snapshots/cycle_01/chapters/chapter_02.md:333, and snapshots/cycle_01/chapters/chapter_02.md:347. Either perform the scan and make the result inconclusive/insufficient, or state concretely why the scanner cannot be used in time, by this staff, or for this injury before Baca asks for an observation call.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "9894e5ae459d3f924c3a160d50074f0388bb6bb5f5e541e66af2802ab47e57d1",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into the novel's uncomfortable overlap of sanitation, state violence, labor dependence, and family love. When an edge case appears, prefer the version that keeps physical consequence, class coercion, and emotional contradiction visible on the page rather than the version that makes characters cleaner, nobler, or easier to forgive.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene turns away at the exact moment bodily, economic, or moral consequence should become legible, revise toward specificity. Omission is only valid when residue, aftermath, and changed behavior keep the pressure fully present.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High - contractions are the spoken default; uncontracted forms should mark emphasis, bureaucracy, class performance, or character-specific formality.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate dense procedural chapters with quieter aftermath, meals, night holds, confession scenes, and dark-comic institutional theater. No two consecutive chapters should rely on the same rhythm of scene count, dialogue density, or pressure delivery; vary between confrontation, drift, revelation, ritual preparation, humiliation, public spectacle, and stillness under pressure.",
+      "diction": "Concrete, infrastructural, unsentimental, and specific about procedures without becoming jargon-drunk. Abstract thought should rise from physical consequence instead of replacing it.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third anchored primarily to Marisol's bodily labor, practical thought, and moral self-management, with any widening kept chapter-level and earned by scene design.",
+      "narrative_tense": "Past tense",
+      "rhythm_target": "Let long freighted sentences carry labor process, institutional language, or accumulating sensory load; then cut to shorter, grammatically complete sentences at impact points where a body, fact, or decision can no longer be blurred.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

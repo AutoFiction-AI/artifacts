@@ -1,0 +1,69 @@
+{
+  "acceptance_targets": [
+    "[ch12-f004] PASS if the revised span snapshots/cycle_02/chapters/chapter_12.md:147-253 contains no more than two sentence openings with \"He did not\" and at least two of the cited lines are rewritten into concrete action/image phrasing; FAIL otherwise."
+  ],
+  "chapter_id": "chapter_12",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if the revised span snapshots/cycle_02/chapters/chapter_12.md:147-253 contains no more than two sentence openings with \"He did not\" and at least two of the cited lines are rewritten into concrete action/image phrasing; FAIL otherwise.",
+      "chapter_id": "chapter_12",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_12.md:147; snapshots/cycle_02/chapters/chapter_12.md:185; snapshots/cycle_02/chapters/chapter_12.md:249; snapshots/cycle_02/chapters/chapter_12.md:253",
+      "finding_id": "ch12-f004",
+      "problem": "Recurring sentence formula tic: repeated negative declarative openings (\"He did not ...\") appear 4+ times in the chapter's final movement, flattening cadence at key emotional beats.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_12.md:147, :185, :249, and :253, recast at least two negative-opened sentences into concrete affirmative action/sensory constructions that preserve meaning but vary rhythm.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "d713404375ff42de5d0eda8a67c370b173773cb9ec9c6734e36b25eb920f5025",
+  "must_fix_count": 1,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on prose and copyedit finish: diction precision, rhythm control, sentence-level clarity, grammar, line-level polish without flattening style, and explicit aesthetic-risk audit (sanitization is the primary risk \u2014 do not soften or euphemize; push toward creative risk and specificity).",
+    "key": "p3_prose_copyedit",
+    "label": "prose/copyedit fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into morally mixed behavior, bodily consequence, and economic detail when they are causally active. In edge cases, choose the more concrete and uncomfortable rendering unless it violates factual continuity; if two renderings are equally plausible, prefer the one that increases character accountability rather than reader reassurance.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene contains pain, sex, addiction, debt panic, or humiliation, abstract phrasing is treated as a failed draft and must be rewritten with embodied specificity.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the spoken default; uncontracted forms are reserved for emphasis, legal precision, or deliberate emotional distance.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate chapter architectures across the book: confrontation chapters, document-information turns, labor-process chapters, transit interiority chapters, and quiet relational chapters. Consecutive chapters must differ in scene density or dialogue-to-interiority ratio.",
+      "diction": "Contemporary American literary realism: precise, unsentimental, image-aware, and concrete under stress.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third-person anchored to Eli, with no unmarked POV drift.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Braided cadence: reflective medium-length sentences interrupted by blunt short lines at impact moments.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "chapter_id": "chapter_03",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch03-booker-001",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:205; snapshots/cycle_02/chapters/chapter_03.md:211; snapshots/cycle_02/chapters/chapter_03.md:213",
+      "problem": "The chapter's decisive clue enters as an errand coincidence (foil retrieval leading to a visible envelope), so the plot turn reads opportunistic rather than causally earned by Marisol's investigative choices.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_03.md:205, snapshots/cycle_02/chapters/chapter_03.md:211, snapshots/cycle_02/chapters/chapter_03.md:213, and snapshots/cycle_02/chapters/chapter_03.md:217 so Marisol identifies a specific lead before entering the bedroom and then chooses an intentional search action with explicit risk.",
+      "acceptance_test": "PASS if revised snapshots/cycle_02/chapters/chapter_03.md:205-217 show both (a) a stated hypothesis before she reaches the dresser and (b) a deliberate search step tied to that hypothesis; FAIL if the envelope still appears as pure happenstance."
+    },
+    {
+      "finding_id": "ch03-craft-001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:171; snapshots/cycle_02/chapters/chapter_03.md:179; snapshots/cycle_02/chapters/chapter_03.md:199",
+      "problem": "Sanitization drift: at the confrontation peak, the rice-spill beat functions as a safety valve and the narrative pivots to cleanup/gossip before any concrete date-level disclosure or explicit refusal is forced, defusing earned tension.",
+      "rewrite_direction": "Keep the spill at snapshots/cycle_02/chapters/chapter_03.md:179, but revise the post-spill sequence at snapshots/cycle_02/chapters/chapter_03.md:183 and snapshots/cycle_02/chapters/chapter_03.md:199 so one character must either provide one concrete fact (date, place, witness) or explicitly refuse to provide it, with an immediate interpersonal consequence.",
+      "acceptance_test": "PASS if revised snapshots/cycle_02/chapters/chapter_03.md:179-200 include a concrete fact or explicit refusal after cleanup and before the conversation drifts; FAIL if the scene exits into neighborhood chatter without that truth/refusal beat."
+    },
+    {
+      "finding_id": "ch03-craft-002",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:89; snapshots/cycle_02/chapters/chapter_03.md:111",
+      "problem": "The dinner-exchange run from line 89 through line 111 plays as 10+ consecutive dialogue paragraphs without focal interior thought/sensation/memory from Marisol, weakening close-third pressure and reading screenplay-flat.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_03.md:91, snapshots/cycle_02/chapters/chapter_03.md:97, and snapshots/cycle_02/chapters/chapter_03.md:109 to insert brief Marisol interior beats (somatic reaction, memory flash, or self-assessment) between dialogue turns.",
+      "acceptance_test": "PASS if revised snapshots/cycle_02/chapters/chapter_03.md:89-111 contain at least two non-dialogue interior beats from Marisol separated by no more than five paragraphs; FAIL if the span remains uninterrupted external dialogue/action."
+    },
+    {
+      "finding_id": "ch03-dialogue-001",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:171; snapshots/cycle_02/chapters/chapter_03.md:277; snapshots/cycle_02/chapters/chapter_03.md:281",
+      "problem": "Under highest scene pressure, Carina's lines tilt into polished rhetorical phrasing (including \"Don't sell me neutral\") instead of the clipped, interruption-heavy neighborhood cadence defined for her register, reducing realism and idiolect separation.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_03.md:171 and snapshots/cycle_02/chapters/chapter_03.md:277-282 so Carina speaks while tasking, cuts herself off at least once, and lands accusation in colloquial phrasing rather than writerly abstraction.",
+      "acceptance_test": "PASS if revised snapshots/cycle_02/chapters/chapter_03.md:171-182 and snapshots/cycle_02/chapters/chapter_03.md:277-282 include at least one interruption marker and one task-anchored line for Carina, with no equivalent of \"sell me neutral\"; FAIL if her attack remains primarily polished speechifying."
+    },
+    {
+      "finding_id": "ch03-prose-001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:13; snapshots/cycle_02/chapters/chapter_03.md:67; snapshots/cycle_02/chapters/chapter_03.md:153; snapshots/cycle_02/chapters/chapter_03.md:169; snapshots/cycle_02/chapters/chapter_03.md:215; snapshots/cycle_02/chapters/chapter_03.md:227; snapshots/cycle_02/chapters/chapter_03.md:283",
+      "problem": "Recurring formula tics flatten cadence: repeated \"as if\" simile framing and repeated impact framing around \"landed/land\" appear 3+ times each in one chapter.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_03.md:13, snapshots/cycle_02/chapters/chapter_03.md:67, snapshots/cycle_02/chapters/chapter_03.md:153, snapshots/cycle_02/chapters/chapter_03.md:169, snapshots/cycle_02/chapters/chapter_03.md:215, snapshots/cycle_02/chapters/chapter_03.md:227, and snapshots/cycle_02/chapters/chapter_03.md:283 to replace at least two instances of each construction with distinct sensory or action-based phrasing.",
+      "acceptance_test": "PASS if revised cited lines contain no more than two uses of \"as if\" and no more than two uses of \"land/landed\" in narration, while preserving scene meaning; FAIL if either formula still appears three or more times."
+    },
+    {
+      "finding_id": "ch03-prose-002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:153; snapshots/cycle_02/chapters/chapter_03.md:191",
+      "problem": "Clipped narration fragments (notably noun-phrase beats) replace full clauses at key pressure points, which reduces precision and drifts toward telegraphic shorthand.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_03.md:153 and snapshots/cycle_02/chapters/chapter_03.md:191 into complete grammatical clauses with explicit subject-verb structure while keeping the same emotional force.",
+      "acceptance_test": "PASS if revised snapshots/cycle_02/chapters/chapter_03.md:153 and snapshots/cycle_02/chapters/chapter_03.md:191 are full clauses and still convey the same emotional pressure; FAIL if either beat remains an orphaned noun-phrase sentence."
+    }
+  ],
+  "summary": "Chapter 3 lands the required supper-to-photo-discovery spine and no canonical continuity contradiction or sustained tense drift was found, but it fails this pass on causal rigor, a HIGH sanitization/tension-defusal moment, interiority coverage, dialogue register naturalness under pressure, and repeated prose formulae."
+}

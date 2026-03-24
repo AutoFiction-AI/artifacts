@@ -1,0 +1,27 @@
+{
+  "chapter_id": "chapter_12",
+  "cycle": 1,
+  "input_snapshot_hash": "96608bcda5f3e89728790bcdbff71e1e9c26012dba72a04c43cdbe3b50372290",
+  "findings": [
+    {
+      "finding_id": "F06",
+      "source": "full_award_rescue.review",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.post_revision.md:2473",
+      "problem": "Formulaic description pattern. Line 2473: 'The morning light from the east-facing window caught the side of his face' is nearly identical to Chapter 1, line 9: 'The morning light came through the east-facing window and caught the side of his face.' Same construction (morning light + east-facing window + caught + side of face), same staging (Theo at the kitchen table), same function (establishing the domestic scene before an important chapter event). The east-facing window is a fixed architectural detail and may recur, but repeating the full sentence pattern creates a default opening rather than a deliberate seasonal echo. Two months separate these scenes (late February to late April); the light should register the difference.",
+      "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.post_revision.md:2473, vary the morning-light description to register the seasonal shift from late February to late April. April light in Park Slope arrives earlier, at a steeper angle, warmer. The east-facing window can stay but the full construction must change: different verb (not 'caught'), different target (not 'the side of his face' \u2014 let the light fall on the drawing in progress, on Theo's left hand moving the pencil, on the cracked cornice he's rendering, or on the headphones around his neck). Let the description be specific to THIS April morning and to what Theo is doing in it, not a recycled Ch 1 establishing beat.",
+      "acceptance_test": "PASS if line 2473 area describes the kitchen light without replicating the Chapter 1 formula ('morning light [from/through] the east-facing window caught [the side of] his face'). The window may be referenced but the sentence pattern must diverge in verb, target, and seasonal texture. FAIL if the construction mirrors Chapter 1's phrasing or if the description is generically warm ('light filled the room')."
+    }
+  ],
+  "must_fix_count": 1,
+  "non_negotiables": [
+    "Break the formulaic morning-light description at line 2473; the sentence must not replicate the Chapter 1 pattern (morning light + east-facing window + caught + side of his face)",
+    "The replacement must register the seasonal shift from late February to late April"
+  ],
+  "acceptance_targets": [
+    "Line 2473 area uses a different verb (not 'caught'), a different target (not 'the side of his face'), and registers April-specific light quality",
+    "The east-facing window may be referenced but the full sentence construction diverges from Chapter 1",
+    "The description is specific to this April morning and to Theo's current activity, not a generic warm-light establishing beat"
+  ]
+}

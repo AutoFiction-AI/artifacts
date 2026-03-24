@@ -1,0 +1,72 @@
+{
+  "chapter_id": "chapter_06",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_06_F001",
+      "source": "craft",
+      "severity": "CRITICAL",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:291",
+      "problem": "Process leakage breaks diegesis: the narration explicitly references \"Chapter Five\" inside scene consciousness, which reads as outline metadata instead of in-world memory.",
+      "rewrite_direction": "Revise snapshots/cycle_01/chapters/chapter_06.md:289 and snapshots/cycle_01/chapters/chapter_06.md:291 to replace the chapter-number reference with an in-world anchor (for example, a dated meeting, location, or prior conversation) while preserving Ina's causal association between Kwon's phrase and prior casualties.",
+      "acceptance_test": "PASS if the revised sentence at snapshots/cycle_01/chapters/chapter_06.md:291 contains no chapter-number/meta language (e.g., \"Chapter\", numerals used as chapter labels) and still links Kwon's phrase to a specific prior event in-world; FAIL otherwise."
+    },
+    {
+      "finding_id": "chapter_06_F002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:13; snapshots/cycle_01/chapters/chapter_06.md:105; snapshots/cycle_01/chapters/chapter_06.md:107",
+      "problem": "Narration repeatedly uses clipped, subjectless fragments (\"Not loading gear.\", \"Marked already.\", \"Not in this office.\") that read as terseness-by-deletion rather than controlled close-third rhythm.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_06.md:13, snapshots/cycle_01/chapters/chapter_06.md:105, and snapshots/cycle_01/chapters/chapter_06.md:107, convert clipped fragments into fully formed clauses with explicit subjects/auxiliaries while keeping urgency and Ina's focal pressure.",
+      "acceptance_test": "PASS if each targeted location reads as grammatically complete narration (explicit subject + verb) with no standalone fragment beginning with \"Not\" or equivalent deletion; FAIL if any clipped fragment remains in those spans."
+    },
+    {
+      "finding_id": "chapter_06_F003",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:33; snapshots/cycle_01/chapters/chapter_06.md:53; snapshots/cycle_01/chapters/chapter_06.md:73; snapshots/cycle_01/chapters/chapter_06.md:315; snapshots/cycle_01/chapters/chapter_06.md:327; snapshots/cycle_01/chapters/chapter_06.md:444; snapshots/cycle_01/chapters/chapter_06.md:502",
+      "problem": "The repeated \"as if\" simile template appears across multiple pressure beats, creating a visible prose tic and flattening sentence-level surprise.",
+      "rewrite_direction": "Rework at least four of the cited \"as if\" constructions in snapshots/cycle_01/chapters/chapter_06.md:33, 53, 73, 315, 327, 444, and 502 into varied forms (direct observation, interior statement, or concrete action consequence) so the same rhetorical frame is not reused beat-to-beat.",
+      "acceptance_test": "PASS if the revised cited spans contain no more than two total \"as if\" clauses and the replacements use at least two different syntactic strategies beyond simile; FAIL otherwise."
+    },
+    {
+      "finding_id": "chapter_06_F004",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:3; snapshots/cycle_01/chapters/chapter_06.md:109; snapshots/cycle_01/chapters/chapter_06.md:125; snapshots/cycle_01/chapters/chapter_06.md:360; snapshots/cycle_01/chapters/chapter_06.md:472",
+      "problem": "A recurring smell-list construction (\"smelled like/of X, Y, Z\") appears five times, becoming formulaic rather than additive to scene texture.",
+      "rewrite_direction": "Keep one anchor usage, then revise the other cited lines in snapshots/cycle_01/chapters/chapter_06.md:109, 125, 360, and 472 with alternative sensory framing (touch, sound, spatial pressure, or non-list olfactory syntax) to avoid repeated triad phrasing.",
+      "acceptance_test": "PASS if across the cited lines only one sentence uses the \"smelled like/of + list\" pattern and at least two revised lines shift to non-olfactory sensory detail; FAIL otherwise."
+    },
+    {
+      "finding_id": "chapter_06_F005",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:410; snapshots/cycle_01/chapters/chapter_06.md:412; snapshots/cycle_01/chapters/chapter_06.md:414",
+      "problem": "The three-route briefing lands as dossier exposition at a peak-emotion moment, briefly stalling scene momentum and diluting the post-interrogation turn.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_06.md:410-414, condense the catalog into one primary escape option plus one rejected alternative, and tie it immediately to Ina's risk calculus in-scene rather than listing all logistics at once.",
+      "acceptance_test": "PASS if the revised span removes the full three-item route catalog and ends with an immediate character-level decision pressure beat (Ina names a fear, boundary, or choice in direct response); FAIL if the passage still reads as a multi-item briefing dump."
+    },
+    {
+      "finding_id": "chapter_06_F006",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:404; snapshots/cycle_01/chapters/chapter_06.md:432",
+      "problem": "Minjae (high-contraction voice profile) shifts into repeated uncontracted imperatives (\"Do not...\") in a way that sounds procedural rather than lived-in spoken pressure.",
+      "rewrite_direction": "Revise Minjae's directive lines at snapshots/cycle_01/chapters/chapter_06.md:404 and snapshots/cycle_01/chapters/chapter_06.md:432 so urgency stays high but phrasing returns to his colloquial, high-contraction register.",
+      "acceptance_test": "PASS if in snapshots/cycle_01/chapters/chapter_06.md:404-433 Minjae uses contractions in at least three directive clauses while preserving all three operational constraints (burner location discipline, no names by text, prearranged audio warning); FAIL otherwise."
+    }
+  ],
+  "summary": "Chapter 6 lands major causal beats and has strong consequence tracking, but it does not clear review due to one critical craft break (meta chapter reference), recurring prose tics that flatten line-level texture, and a dialogue register drift in Minjae's directives. Continuity facts and canonical past-tense alignment remain intact, with no chapter-level contradiction detected against the continuity sheet."
+}

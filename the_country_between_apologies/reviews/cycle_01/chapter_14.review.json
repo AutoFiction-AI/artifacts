@@ -1,0 +1,100 @@
+{
+  "chapter_id": "chapter_14",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch14-F001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:309",
+      "problem": "Internal pay math is contradictory: the chapter states laundry/audit rates and a six-double workload, then reports a gross check amount that does not reconcile with those rates/hours, weakening causal trust in the chapter's central economic stakes.",
+      "rewrite_direction": "Reconcile the compensation chain across snapshots/cycle_01/chapters/chapter_14.md:61, snapshots/cycle_01/chapters/chapter_14.md:213, and snapshots/cycle_01/chapters/chapter_14.md:309-312. Either (a) revise the scheduled hours worked in this pay period, (b) revise rates/shift lengths, or (c) revise the gross check amount so one coherent arithmetic story remains on the page.",
+      "acceptance_test": "PASS if a reader can compute an implied gross from the stated shifts/rates in snapshots/cycle_01/chapters/chapter_14.md:61 and snapshots/cycle_01/chapters/chapter_14.md:213 and get a value consistent with snapshots/cycle_01/chapters/chapter_14.md:309 (allowing only ordinary payroll rounding). FAIL if the numbers still require unstated assumptions."
+    },
+    {
+      "finding_id": "ch14-F002",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:85",
+      "problem": "Continuity break on a named coworker: this chapter establishes Mateo's surname as Santos, while the boundary context for chapter 15 uses Mateo Rivas. That is a canonical identity mismatch across adjacent chapters.",
+      "rewrite_direction": "Unify Mateo's surname in snapshots/cycle_01/chapters/chapter_14.md:85 and any subsequent in-chapter references so it matches the boundary handoff into chapter 15. Keep only one canonical surname before final line edit lock.",
+      "acceptance_test": "PASS if Mateo has one consistent surname in chapter 14 and that surname matches the chapter-15 boundary handoff. FAIL if chapter 14 and boundary material still disagree on his last name."
+    },
+    {
+      "finding_id": "ch14-F003",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:167",
+      "problem": "Sanitization drift around a morally loaded relationship beat: Eli's recollection of Marisol is abstracted into \"somebody who looked at him with warmth,\" which euphemizes accountability and blunts the emotional consequence established by earlier affair chapters.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_14.md:167, replace euphemistic distancing with specific recall that names Marisol and includes one concrete sensory/moral consequence tied to Eli's present decision at work. Keep the beat brief, but do not hide behind generic phrasing.",
+      "acceptance_test": "PASS if the revised memory beat at snapshots/cycle_01/chapters/chapter_14.md:167 explicitly identifies Marisol and contains at least one concrete detail that sharpens, rather than softens, Eli's complicity. FAIL if the beat remains anonymized or abstract."
+    },
+    {
+      "finding_id": "ch14-F004",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:221",
+      "problem": "Mid-chapter progression loops through repeated pain-command-endure beats without enough new causal turn, so scene pressure plateaus instead of escalating through distinct consequences.",
+      "rewrite_direction": "Reshape the middle run across snapshots/cycle_01/chapters/chapter_14.md:99-177 and snapshots/cycle_01/chapters/chapter_14.md:221-307 so each major work sequence adds a non-redundant consequence (for example: a specific payroll penalty, a documented error, or a relationship cost) rather than another variation of \"work through pain.\"",
+      "acceptance_test": "PASS if each of the two work blocks (snapshots/cycle_01/chapters/chapter_14.md:99-177 and snapshots/cycle_01/chapters/chapter_14.md:221-307) ends with a distinct new consequence that alters Eli's options in the next block. FAIL if either block can be removed without changing downstream decisions."
+    },
+    {
+      "finding_id": "ch14-F005",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:55",
+      "problem": "Supervisor dialogue voices converge into near-identical conditional-threat syntax (Deena, Tasha, Kendra), reducing idiolect separation and making power-scene exchanges sound interchangeable.",
+      "rewrite_direction": "Differentiate manager registers in snapshots/cycle_01/chapters/chapter_14.md:55-56, snapshots/cycle_01/chapters/chapter_14.md:189-193, and snapshots/cycle_01/chapters/chapter_14.md:133-134 by giving each speaker distinct lexical habits and sentence rhythm tied to role (floor operations vs admin process vs audit precision).",
+      "acceptance_test": "PASS if, in those three spans, each supervisor has at least one line whose diction/rhythm is uniquely attributable without dialogue tags. FAIL if the lines can still be swapped between speakers with little or no change in perceived voice."
+    },
+    {
+      "finding_id": "ch14-F006",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:107",
+      "problem": "Telegraphic clipping appears in spoken lines (for example, article/auxiliary drop), which conflicts with the constitution's ban on elliptical stripping and reads as stylized shorthand rather than lived speech.",
+      "rewrite_direction": "Revise clipped lines at snapshots/cycle_01/chapters/chapter_14.md:107 and snapshots/cycle_01/chapters/chapter_14.md:207 into concise but grammatically complete speech. Preserve pressure and brevity, but restore required function words.",
+      "acceptance_test": "PASS if those two lines remain terse while containing complete spoken grammar (no dropped articles/auxiliaries that force telegraphic reading). FAIL if either line still relies on clipped omission for rhythm."
+    },
+    {
+      "finding_id": "ch14-F007",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:175",
+      "problem": "Recurring sentence-construction tic: repeated anaphora and negation ladders (\"He learned...\" chains; \"Not X. Not Y.\" chains) appear more than twice, flattening cadence where the chapter needs fresher syntactic variation.",
+      "rewrite_direction": "Vary repeated structures in snapshots/cycle_01/chapters/chapter_14.md:175-177, snapshots/cycle_01/chapters/chapter_14.md:261-262, snapshots/cycle_01/chapters/chapter_14.md:311, and snapshots/cycle_01/chapters/chapter_14.md:319 by keeping one strongest anaphora/negation beat and rewriting the others into different sentence shapes anchored in concrete action or sensation.",
+      "acceptance_test": "PASS if only one major anaphora chain and one negation ladder remain across those spans, with the rest recast into distinct syntactic forms. FAIL if three or more instances of the same formulaic pattern still appear."
+    },
+    {
+      "finding_id": "ch14-F008",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:346",
+      "problem": "Mechanical reuse of Eli's style-bible stress tell (logistics/money accounting) becomes over-literal in the back third, narrowing tonal range and making interiority feel pattern-driven instead of newly observed.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_14.md:69-70, snapshots/cycle_01/chapters/chapter_14.md:311-312, and snapshots/cycle_01/chapters/chapter_14.md:346, keep one explicit ledger-style interior beat and revise the others to different forms of self-assessment (embodied, relational, or memory-driven) while retaining financial stakes.",
+      "acceptance_test": "PASS if only one of those three spans uses explicit ledger-style internal math and the other two deliver distinct interior textures tied to the same stakes. FAIL if all three still resolve into near-identical number-led self-talk."
+    }
+  ],
+  "summary": "Chapter 14 lands strong environmental specificity and close-third continuity in tense, but it does not clear pass-level quality because core stakes integrity and voice precision are unresolved: pay arithmetic is internally inconsistent, a named-character identity breaks at the chapter boundary, sanitizing euphemism softens a key moral thread, and repeated dialogue/prose formulas flatten differentiation in the middle-to-late chapter.",
+  "coverage_scene_ids": [
+    "hiring_office",
+    "laundry_orientation",
+    "audit_crossover",
+    "everify_notice",
+    "dock_call_with_theo",
+    "june_voicemail"
+  ]
+}

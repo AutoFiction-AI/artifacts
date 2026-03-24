@@ -1,0 +1,69 @@
+{
+  "acceptance_targets": [
+    "[chapter_10_craft_001] Pass if, after reading snapshots/cycle_02/chapters/chapter_10.md:5 and snapshots/cycle_02/chapters/chapter_10.md:163, a reader can state exactly where the reserve forged papers are at the start of chapter 10 and why any forged papers still in the quarry are not the already-cached packet. Fail if the same papers can still be read as both offsite and being moved through the survey pocket."
+  ],
+  "chapter_id": "chapter_10",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if, after reading snapshots/cycle_02/chapters/chapter_10.md:5 and snapshots/cycle_02/chapters/chapter_10.md:163, a reader can state exactly where the reserve forged papers are at the start of chapter 10 and why any forged papers still in the quarry are not the already-cached packet. Fail if the same papers can still be read as both offsite and being moved through the survey pocket.",
+      "chapter_id": "chapter_10",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_10.md:5; snapshots/cycle_02/chapters/chapter_10.md:163",
+      "finding_id": "chapter_10_craft_001",
+      "problem": "The chapter reintroduces forged papers inside the quarry inventory, culminating in \"the packet of forged papers Elise herself had once risked her neck to cache.\" The continuity sheet establishes that the reserve forged papers were already moved to the mourning-ribbon shop cache in chapter 09, so as written the same packet appears to be both offsite and still present in chapter 10. That is a HIGH object-state contradiction.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_10.md:5 and snapshots/cycle_02/chapters/chapter_10.md:163 so the object state is unambiguous. Either remove the forged papers from the chapter-10 inventory, or explicitly establish on-page that a different packet remained in the quarry after Elise moved the reserve cache in chapter 09, including what that second packet is for and why it was left behind.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "bc36346cc3644946217a4227a3e64dc27d07ad8283f124d74d6d6955838dde1d",
+  "must_fix_count": 1,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into the contradiction that tenderness can coexist with surveillance, desire with betrayal, and ideology with vanity. Render violence, sex, illness, and poverty at the scale characters actually experience them. When an edge case appears, choose the more specific and less reputationally safe version if it remains faithful to character, period, and causality.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene reaches bodily danger, sex, grief, class shame, or political cruelty and then retreats into summary, rewrite toward the exact physical and social fact the character cannot evade.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "Moderate to high; contractions are the spoken default, with full forms reserved for period formality, deliberate emphasis, or Vautrin's cultivated precision.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate compressive surveillance chapters with slower communal or reflective chapters; vary scene count, dialogue density, and whether the turn comes from action, information, dread, or aftermath so no two adjacent chapters run on the same structural rhythm.",
+      "diction": "Historically grounded and unsentimental; plain enough for labor and bureaucracy, lyrical only when perception earns it rather than rhetoric.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third centered on Elise, elastic enough to register class texture, political pressure, and the quarry's collective life without drifting into authorial essay.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Supple, image-bearing sentences broken by hard factual beats at moments of violence, lust, bureaucratic coercion, or shame.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

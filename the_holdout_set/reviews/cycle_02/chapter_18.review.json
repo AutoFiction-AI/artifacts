@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_18",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "PASS",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch18_dialogue_001",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_18",
+      "evidence": "snapshots/cycle_02/chapters/chapter_18.md:392; snapshots/cycle_02/chapters/chapter_18.md:394",
+      "problem": "The `holdout_set` naming exchange slips into reader-facing explanation. June, Leela, and Omar are all deep enough in this work that Omar's basic definition of a holdout set reads less like lived speech and more like a glossary pause, which briefly breaks the insider texture the rest of the dinner scene maintains.",
+      "rewrite_direction": "Revise the exchange at snapshots/cycle_02/chapters/chapter_18.md:392 and snapshots/cycle_02/chapters/chapter_18.md:394 so June's prompt asks for the archive's moral fit, not a term-definition she already knows. Keep Omar's answer in insider shorthand and make him name what this archive preserves against the university's flattening, rather than re-explaining baseline ML vocabulary.",
+      "acceptance_test": "Pass if the exchange at snapshots/cycle_02/chapters/chapter_18.md:388-395 reads as three peers speaking from shared technical knowledge, with Omar naming why this archive is their holdout rather than defining the concept from scratch. Fail if a reader could lift Omar's line as an introductory explanation for someone outside the room."
+    },
+    {
+      "finding_id": "ch18_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_18",
+      "evidence": "snapshots/cycle_02/chapters/chapter_18.md:110; snapshots/cycle_02/chapters/chapter_18.md:198; snapshots/cycle_02/chapters/chapter_18.md:200; snapshots/cycle_02/chapters/chapter_18.md:472; snapshots/cycle_02/chapters/chapter_18.md:484",
+      "problem": "A negation-first sentence habit has become visible enough to read as formula: the prose repeatedly clears away a false version of events before stating the real one (`not X but Y`, `It was not ... It was ...`). In a chapter this otherwise exact, that corrective rhythm starts to sound preloaded rather than freshly discovered on the page.",
+      "rewrite_direction": "Rework the corrective-negation beats at snapshots/cycle_02/chapters/chapter_18.md:110, snapshots/cycle_02/chapters/chapter_18.md:198, snapshots/cycle_02/chapters/chapter_18.md:200, snapshots/cycle_02/chapters/chapter_18.md:472, and snapshots/cycle_02/chapters/chapter_18.md:484. Let at least several of these moments lead with the concrete condition, image, or consequence itself instead of first negating an expected alternative; vary the rhetorical movement so the chapter does not keep arriving by the same sentence shape.",
+      "acceptance_test": "Pass if, on a reread of the cited passages, at least three of the five beats begin from the actual condition or image rather than a `not X / but Y` correction, and no repeated corrective pattern calls attention to itself across those lines. Fail if those moments still rely on the same negation-to-true-state turn often enough to feel like a chapter tic."
+    }
+  ],
+  "summary": "Strong closing chapter. It lands the narrowed future, preserves the novel's dark humor, and makes the university's euphemistic language feel materially insulting rather than merely thematic. The unresolved issues are smaller and local: one dialogue beat turns explanatory in a way the trio should not need, and one recurring negation/correction sentence pattern has become visible enough to flatten the prose texture."
+}

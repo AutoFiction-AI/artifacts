@@ -1,0 +1,57 @@
+{
+  "chapter_id": "chapter_02",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH2-BOOKER-001",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_01/chapters/chapter_02.md:75; snapshots/cycle_01/chapters/chapter_02.md:83; snapshots/cycle_01/chapters/chapter_02.md:217; snapshots/cycle_01/chapters/chapter_02.md:223; snapshots/cycle_01/chapters/chapter_02.md:259",
+      "problem": "The chapter repeats its central reveal beat twice (signature confirmation + secrecy plea) with limited new causal movement, so the second half reads as reiteration instead of escalation.",
+      "rewrite_direction": "Condense the first verification cycle around snapshots/cycle_01/chapters/chapter_02.md:75 and snapshots/cycle_01/chapters/chapter_02.md:83, then repurpose the later exchange at snapshots/cycle_01/chapters/chapter_02.md:217 and snapshots/cycle_01/chapters/chapter_02.md:259 into net-new pressure (for example: a concrete repayment obstacle, a time-bound threat from Baby Goods, or a costlier secrecy demand).",
+      "acceptance_test": "PASS if the revised passage contains only one explicit 'same-hand' verification beat and the later scene introduces at least two new consequences not already stated in lines 75-113; FAIL if the later scene still re-proves the forgery before moving plot pressure forward."
+    },
+    {
+      "finding_id": "CH2-CRAFT-001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_01/chapters/chapter_02.md:199; snapshots/cycle_01/chapters/chapter_02.md:205; snapshots/cycle_01/chapters/chapter_02.md:206; snapshots/cycle_01/chapters/chapter_02.md:309",
+      "problem": "Sanitization/tension defusal: after Peter's coercive threat, the prose steps into routine-summary and then closes with explanatory framing, softening the immediate bodily and social danger instead of holding the reader inside it.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_02.md:199 and snapshots/cycle_01/chapters/chapter_02.md:205, replace summary reset with concrete aftermath behavior (fear response, contingency planning, or a specific household action taken to protect the secret). At snapshots/cycle_01/chapters/chapter_02.md:309, remove interpretive labeling and end on an observed action/image that carries unresolved risk.",
+      "acceptance_test": "PASS if the revision shows at least one explicit immediate consequence of Peter's threat before scene transition (observable action plus embodied response) and the closing beat is concrete, not thesis-like; FAIL if lines corresponding to 205-206/309 still summarize mood without enacted consequence."
+    },
+    {
+      "finding_id": "CH2-DIALOGUE-001",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_01/chapters/chapter_02.md:227; snapshots/cycle_01/chapters/chapter_02.md:245; snapshots/cycle_01/chapters/chapter_02.md:281; snapshots/cycle_01/chapters/chapter_02.md:297",
+      "problem": "Noreen and Elsie occasionally converge into the same polished, aphoristic cadence in the scullery exchange, blurring idiolect separation under peak stress.",
+      "rewrite_direction": "Rework the exchange at snapshots/cycle_01/chapters/chapter_02.md:227, snapshots/cycle_01/chapters/chapter_02.md:245, and snapshots/cycle_01/chapters/chapter_02.md:281 so Noreen carries quicker pivots/interruption rhythm and Elsie carries practical over-specification followed by shutdown, consistent with their style-bible stress signatures.",
+      "acceptance_test": "PASS if, in the revised lines 227-297 span, Noreen has at least one interruptive pivot and Elsie has at least one task-specific over-detailed line followed by a curtailed response; FAIL if both voices still read as similarly balanced one- or two-sentence maxims."
+    },
+    {
+      "finding_id": "CH2-PROSE-001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_01/chapters/chapter_02.md:3; snapshots/cycle_01/chapters/chapter_02.md:67; snapshots/cycle_01/chapters/chapter_02.md:83; snapshots/cycle_01/chapters/chapter_02.md:173; snapshots/cycle_01/chapters/chapter_02.md:203; snapshots/cycle_01/chapters/chapter_02.md:307; snapshots/cycle_01/chapters/chapter_02.md:61; snapshots/cycle_01/chapters/chapter_02.md:95; snapshots/cycle_01/chapters/chapter_02.md:191; snapshots/cycle_01/chapters/chapter_02.md:221",
+      "problem": "Recurring prose formulas exceed the chapter's tolerance: repeated 'as if ...' simile scaffolding and repeated look/glance/stare tracking beats flatten the line-level texture.",
+      "rewrite_direction": "Revise targeted lines at snapshots/cycle_01/chapters/chapter_02.md:61, snapshots/cycle_01/chapters/chapter_02.md:67, snapshots/cycle_01/chapters/chapter_02.md:83, snapshots/cycle_01/chapters/chapter_02.md:173, snapshots/cycle_01/chapters/chapter_02.md:191, and snapshots/cycle_01/chapters/chapter_02.md:307 by replacing formulaic visual-comparison beats with varied syntax and concrete touch/sound/spatial-pressure details.",
+      "acceptance_test": "PASS if the revised targeted spans contain no more than two total 'as if' clauses and no more than three total look/glance/stare beats, with replacements anchored in concrete sensory action; FAIL if the same constructions still dominate those spans at comparable density."
+    }
+  ],
+  "summary": "Chapter 2 hits its required plot beats and stays consistent with canonical continuity facts and past-tense narration, but it fails review due to duplicated core scene mechanics, a HIGH sanitization/tension-defusal beat after coercive threat, partial idiolect flattening between Noreen and Elsie, and repeated prose constructions that read as stylistic tics.",
+  "coverage_scene_ids": [
+    "scene_morning_misdelivery",
+    "scene_dinner_interrogation",
+    "scene_night_complicity"
+  ]
+}

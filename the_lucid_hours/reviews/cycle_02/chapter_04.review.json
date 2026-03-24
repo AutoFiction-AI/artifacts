@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_04",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_04_award_001",
+      "source": "award",
+      "severity": "HIGH",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:121; snapshots/cycle_02/chapters/chapter_04.md:125; snapshots/cycle_02/chapters/chapter_04.md:131",
+      "problem": "The chapter's second promised proof never becomes on-page fact. After Carmen's solo recount, the ending keeps saying she needs the next formal count as witness, so the 47-pill scale remains anticipated rather than incontrovertibly landed. That leaves the chapter reading like setup for chapter_05 instead of a fully delivered discovery unit, even though the allowed context for chapter_04 says Carmen should end this chapter with proof of both Harry's capability and the diversion scale.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_04.md:121, snapshots/cycle_02/chapters/chapter_04.md:125, and snapshots/cycle_02/chapters/chapter_04.md:131 so the chapter either stages the witnessed shift-change count on page before the ending or explicitly recalibrates the ending to a smaller state change and stops presenting the 47-pill shortage as already confirmed fact.",
+      "acceptance_test": "Pass if the revised ending shows another named staff witness confirm the shortage on page, or else the ending no longer claims confirmed scale and closes on a different concrete turn that matches what Carmen has actually verified by the final paragraph. Fail if the chapter still exits on future-tense anticipation of a count that has not happened yet."
+    },
+    {
+      "finding_id": "chapter_04_craft_001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:7; snapshots/cycle_02/chapters/chapter_04.md:67; snapshots/cycle_02/chapters/chapter_04.md:103; snapshots/cycle_02/chapters/chapter_04.md:127",
+      "problem": "Chapter 04 identifies Room 110's resident as Mrs. Okafor, but the provided boundary pack's immediate next-chapter excerpt identifies Room 110 as Mrs. Delacroix. Because Room 110 is used as a persistent auditory landmark across adjacent chapters, this reads as a canon-level resident identity contradiction rather than a harmless naming variation.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_04.md:7, snapshots/cycle_02/chapters/chapter_04.md:67, snapshots/cycle_02/chapters/chapter_04.md:103, and snapshots/cycle_02/chapters/chapter_04.md:127 so Room 110 aligns with the same resident identity used in the allowed context packs, or remove the resident's name entirely and keep only the recurring sound cue if the room is meant to stay anonymous here.",
+      "acceptance_test": "Pass if every Room 110 reference in chapter_04 names the same resident identity used elsewhere in the allowed context, or if none of those references name the resident at all. Fail if a cold read of adjacent chapter material still produces two different women occupying Room 110."
+    },
+    {
+      "finding_id": "chapter_04_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:5",
+      "problem": "Carmen's POV is supposed to live in exact numbers, but this sentence makes the 3.50-dollar overnight differential sound like it alone closes a 140-dollar insurance gap across sixteen hours. Readers who do the arithmetic get yanked out of the scene, and the financial pressure that should feel precise instead reads fuzzy.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_04.md:5 so the money logic is explicit on the page: either make it clear that the total pay for the extra sixteen hours closes the gap, not the differential alone, or change the shortfall or hour-count so the stated math visibly works.",
+      "acceptance_test": "Pass if a reader can parse the revised line once and the wage math reads plausibly without having to reinterpret the word differential. Fail if the sentence still implies that 3.50 dollars times sixteen hours covers 140 dollars plus gas."
+    },
+    {
+      "finding_id": "chapter_04_prose_002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:121; snapshots/cycle_02/chapters/chapter_04.md:123; snapshots/cycle_02/chapters/chapter_04.md:125",
+      "problem": "Once the count scene has already made Carmen's exposure legible, the narration shifts into abstract institutional paraphrase: Controlled Substances Act, Board of Nursing, prosecutor, policy, then another summary of why she needs proof. The chapter starts explaining its own stakes instead of letting the cabinet, the log, the towel, and the shift-change clock carry them.",
+      "rewrite_direction": "Compress or replace snapshots/cycle_02/chapters/chapter_04.md:121, snapshots/cycle_02/chapters/chapter_04.md:123, and snapshots/cycle_02/chapters/chapter_04.md:125 with a more concrete immediate beat anchored to the log, the supervisor call she is not making, or Harry's tactical advantage, so the passage advances pressure instead of re-translating what the reader already understands.",
+      "acceptance_test": "Pass if the revised passage conveys Carmen's legal exposure through one specific concrete consequence or action and then moves directly into the next tactical beat. Fail if the passage still stacks abstract authorities and policy language to restate stakes the previous count scene has already made clear."
+    }
+  ],
+  "summary": "The hallway reveal is strong and the dialogue stays character-true, but the chapter does not fully land its own promised discovery-state, breaks Room 110 continuity against the boundary pack, and weakens otherwise sharp material with fuzzy money math and explanatory overstatement after the count."
+}

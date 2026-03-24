@@ -1,0 +1,108 @@
+{
+  "acceptance_targets": [
+    "[F10-PROSE-002] The revised chapter uses 'specific' (or 'specifically' / 'specifics') no more than four times total. No two instances appear within 20 lines of each other. Where an instance is removed, the replacement delivers the specificity through concrete detail rather than asserting it with the word itself.",
+    "[F10-PROSE-003] The revised chapter contains no more than two polysyndetic tricolon constructions ('[X] and [Y] and [Z]'). The paragraph at line ~331 ('The trust was real...') uses a different rhythmic strategy than the '[A] and [B] and [C]' formula.",
+    "[F10-PROSE-004] The revised chapter uses the 'was real' declarative stack in only one of the two passages (303 or 331). The other passage conveys the same thematic content \u2014 Nora's need to assert the reality of her experience \u2014 through a different syntactic and rhetorical strategy, creating progression rather than repetition.",
+    "[F10-PROSE-005] The revised chapter contains no more than three instances of 'the way [subject] [verb]' in narration. No more than one generic-'you' version ('the way you...') survives. Each surviving instance introduces a comparison that earns its narrative distance and cannot be replaced by direct rendering."
+  ],
+  "chapter_id": "chapter_10",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "The revised chapter uses 'specific' (or 'specifically' / 'specifics') no more than four times total. No two instances appear within 20 lines of each other. Where an instance is removed, the replacement delivers the specificity through concrete detail rather than asserting it with the word itself.",
+      "chapter_id": "chapter_10",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:93, :97, :129, :137, :155, :291, :309, :315, :329 \u2014 nine instances of 'specific,' 'specifically,' or 'specifics' across dialogue and narration: 'specifically' (93, Caleb dialogue), 'specifically how' (97, Nora dialogue), 'the specific weight' (129), 'in specifics that felt almost accidental' (137), 'She had been specific' (155), 'a very specific category of stranger' (291, Nora dialogue), 'the specific architecture of her loneliness' (309), 'specifically, precisely seen' (315), 'the specific expression she'd been wearing' (329).",
+      "finding_id": "F10-PROSE-002",
+      "problem": "The word 'specific' and its forms appear nine times. While thematically apt \u2014 the chapter is about what is rendered versus what is fabricated, specificity versus invention \u2014 the word itself becomes depleted through repetition. By the chapter's final third, 'the specific architecture of her loneliness' (309) and 'specifically, precisely seen' (315) ask the word to carry weight it can no longer bear after seven prior appearances. The narration asserts specificity rather than delivering it.",
+      "rewrite_direction": "Reduce to no more than four instances across snapshots/cycle_01/chapters/chapter_10.md. In the sexual exchange (lines 93-155), keep two \u2014 the word earns its place in the intimacy context where being specific is the point. At line 309, 'the specific architecture of her loneliness' should name the architecture instead of labeling it specific \u2014 show the shape of the loneliness rather than asserting its specificity. At line 315, 'specifically, precisely seen' is a redundant doublet \u2014 cut one or both and show what being seen looks like through Caleb's actual words or Nora's bodily experience of being seen. At line 329, 'the specific expression' can become simply the expression, rendered through its physical details.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "The revised chapter contains no more than two polysyndetic tricolon constructions ('[X] and [Y] and [Z]'). The paragraph at line ~331 ('The trust was real...') uses a different rhythmic strategy than the '[A] and [B] and [C]' formula.",
+      "chapter_id": "chapter_10",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:65, :179, :315, :331 \u2014 polysyndetic tricolon ('[X] and [Y] and [Z]') used as default escalation rhythm: 'warm and offhand and enormous' (65), 'honest and undone and not performing anything' (179), 'vivid and human and the kind of thing' (315), 'The trust was real and the love was real and the desire was real' (331).",
+      "finding_id": "F10-PROSE-003",
+      "problem": "The three-item polysyndeton connected by repeated 'and' is used four times as the primary device for emotional escalation. The construction is individually effective but becomes a rhythmic default \u2014 the prose reaches for the same shape each time it needs to land a moment with weight. By line 331, the reader has internalized the rhythm and the chapter's most important emotional turn ('The trust was real and the love was real and the desire was real') lands with less force than it should because the reader has already heard this cadence three times.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_10.md:65, :179, :315, :331, keep no more than two instances. Protect the strongest \u2014 line 65 ('warm and offhand and enormous') works because the three words are tonally mismatched, creating surprise. Line 331 is the chapter's emotional climax and should use a different construction to avoid competing with the earlier rhythm. Consider: a two-beat construction, a single devastating word, syntactic fragmentation, or a sentence whose shape is not predictable before the reader reaches its end.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "The revised chapter uses the 'was real' declarative stack in only one of the two passages (303 or 331). The other passage conveys the same thematic content \u2014 Nora's need to assert the reality of her experience \u2014 through a different syntactic and rhetorical strategy, creating progression rather than repetition.",
+      "chapter_id": "chapter_10",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:303, :331 \u2014 two passages built on 'was real' declarations. Line 303: 'The smile was real. The warmth in her chest was real. Rosa was real.' Line 331: 'The trust was real and the love was real and the desire was real.'",
+      "finding_id": "F10-PROSE-004",
+      "problem": "The 'was real' assertion is deployed in two separate passages thirty lines apart, each stacking three claims. The first (303) anchors Nora's belief in Rosa's existence; the second (331) anchors her belief in the entire relationship. The repetition is thematically intentional \u2014 reality vs. fabrication is the chapter's central tension \u2014 but the device is structurally identical both times, creating a formula echo rather than a thematic deepening. The second passage should build on the first, not replicate its shape.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_10.md:303 and :331, differentiate the two passages. If line 303 uses the 'was real' declarative stack (three short assertions of reality), then line 331 should approach the same theme through a different formal strategy \u2014 perhaps through negation (what she refused to believe was not real), through physical sensation (the trust had a bodily quality she could describe), or through a single compressed admission rather than a triple declaration. The two passages are close enough in the text that the echo is immediately audible.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "The revised chapter contains no more than three instances of 'the way [subject] [verb]' in narration. No more than one generic-'you' version ('the way you...') survives. Each surviving instance introduces a comparison that earns its narrative distance and cannot be replaced by direct rendering.",
+      "chapter_id": "chapter_10",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:35, :89, :95, :123, :179, :245, :307 \u2014 the 'the way [subject] [verb]' qualifying construction appears seven times in narration: 'the way she always did' (35), 'the way a single word could be an opening' (89), 'the way you hear the first few notes of a song' (95), 'in the way you feel someone's attention' (123), 'in a way that made her want to be seen this completely' (179), 'the way you recognize the shape of a sentence' (245), 'the way her brain sometimes edited sentences she'd already approved' (307).",
+      "finding_id": "F10-PROSE-005",
+      "problem": "The 'the way' construction, like 'the kind of,' is a qualifying formula that steps back from the thing itself to describe how it resembles something else. Seven instances in narration, combined with the nine 'kind of' instances (F10-PROSE-001), creates a prose texture that is constantly classifying experience rather than inhabiting it. The generic-'you' variants (lines 95, 123, 245) are especially problematic \u2014 they shift from Nora-specific close-third into a generalizing second person ('the way you hear,' 'the way you feel,' 'the way you recognize') that weakens the narrative distance the style bible mandates.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_10.md:35, :89, :95, :123, :179, :245, :307, reduce to no more than three instances. Prioritize cutting the generic-'you' versions (95, 123, 245) \u2014 these shift out of close third person into essayistic address. Replace with direct rendering of Nora's specific experience rather than an appeal to shared experience. At line 95 ('the way you hear the first few notes'), stay inside Nora's stomach-drop \u2014 render the sensation itself rather than reaching for an analogy. At line 245 ('the way you recognize the shape of a sentence'), keep Nora's editorial metaphor but deliver it without 'the way you' \u2014 she recognizes the shape; show her recognizing it.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "79bf88f7d3213cb773243fae0f0ef7abab256c5b6a41d0da42aea9d729a5dbf1",
+  "must_fix_count": 4,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on prose and copyedit finish: diction precision, rhythm control, sentence-level clarity, grammar, line-level polish without flattening style, and explicit aesthetic-risk audit (sanitization is the primary risk \u2014 do not soften or euphemize; push toward creative risk and specificity).",
+    "key": "p3_prose_copyedit",
+    "label": "prose/copyedit fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This novel must commit fully to its dark comedy register. The humor should be genuinely funny \u2014 not arch, not safe, not 'literary funny' where the reader smiles wryly. The darkness should be genuinely dark \u2014 the financial manipulation is theft, the emotional manipulation is a form of violence, and the sexual dimension of the AI relationship (intimate photos sent to a non-person, sexual conversations with an algorithm controlled by your best friend) is deeply violating. The novel should not flinch from the specific perversity of Simone reading Nora's intimate messages, of Simone helping Nora dress up for a man Simone invented, of Simone comforting Nora about a fight Simone scripted. These moments are the novel's payload. If they are rendered obliquely or summarized, the book fails. Equally, the genuine tenderness of the friendship \u2014 the years of real love underneath the betrayal \u2014 must be rendered with the same commitment. The reader should feel both the comedy and the horror simultaneously, not in alternation.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism is treated as a craft failure equivalent to a plot hole. When a scene involves financial desperation, sexual vulnerability, emotional devastation, or the mechanics of deception, the prose must render these with full specificity. 'She felt used' is never acceptable when you can show what being used feels and looks like in the body and in the specific details of the moment. The reader should not be protected from the characters' experiences.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm. Uncontracted forms reserved for emphasis, deliberate formality, or character-specific register choices. If a line reads stiffly, the first fix is to contract.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 2,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate between hot and quiet chapters. After a high-intensity scene (confrontation, discovery, sexual encounter), the next chapter should breathe \u2014 slow down, change the sensory environment, let the character do something ordinary. Vary scene counts: some chapters are a single sustained scene, others are three or four. Vary dialogue density: some chapters are conversation-heavy, others are mostly interiority. No two consecutive chapters should open the same way \u2014 if one opens in a location, the next should open in thought or in mid-conversation. The novel's middle section (chapters 8-13) should have more structural variety than the opening, which can afford to be more regular.",
+      "diction": "Contemporary, educated, specific. No genre-thriller diction. No prestige-novel stiffness. The language should feel like how smart, funny, self-aware women in their mid-thirties actually think and speak. Cultural references are allowed when organic. Brand names when they carry social information. The prose should be able to be funny without stepping outside the character's perspective to wink at the reader.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person \u2014 very close, almost inhabiting the POV character's thought patterns and verbal rhythms. The prose should feel like the character's consciousness rendered in third person, not an external narrator describing the character. When in Nora's sections, the prose has her warmth and her specific noticing. When in Simone's sections, the prose has her edge and her accounting.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Variable. Default to mid-length sentences with natural cadence. Use compression for emotional peaks and psychological precision. Use longer, more digressive rhythms for scenes of intimacy, humor, and daily texture. Avoid the trap of making every important moment a short sentence \u2014 sometimes the big thing lands better in a subordinate clause, almost hidden.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

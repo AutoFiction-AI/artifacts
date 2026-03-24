@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_09",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "PASS",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_09_prose_001",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_02/chapters/chapter_09.md:287; snapshots/cycle_02/chapters/chapter_09.md:289; snapshots/cycle_02/chapters/chapter_09.md:291; snapshots/cycle_02/chapters/chapter_09.md:293; snapshots/cycle_02/chapters/chapter_09.md:295",
+      "problem": "The terminal-lot beat drops into bare noun-phrase fragments (\"Hospital rental spillover. Debt pool. Resort return. Wash waiver. Recirculate.\") that read as clipped narration rather than rendered fiction. That violates the constitution's explicit ban on elliptical clipping in narration and briefly makes the chapter sound like process shorthand instead of Mira's finished close-third perception.",
+      "rewrite_direction": "Rework the lot-review sequence around snapshots/cycle_02/chapters/chapter_09.md:285, snapshots/cycle_02/chapters/chapter_09.md:287, and snapshots/cycle_02/chapters/chapter_09.md:295 so the staccato recognition arrives either as clearly marked on-screen file text or as grammatically complete narration anchored to Mira's reading of the terminal. Keep the compression, but do it with sentence length and sequencing rather than article-stripped fragments.",
+      "acceptance_test": "Pass if the passage between snapshots/cycle_02/chapters/chapter_09.md:285 and snapshots/cycle_02/chapters/chapter_09.md:297 contains no bare noun-phrase sentences like \"Debt pool.\" outside dialogue or explicitly presented document text; fail if the revised narration still relies on fragment-only summary lines to convey the lot contents."
+    },
+    {
+      "finding_id": "chapter_09_prose_002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_02/chapters/chapter_09.md:73; snapshots/cycle_02/chapters/chapter_09.md:183; snapshots/cycle_02/chapters/chapter_09.md:283; snapshots/cycle_02/chapters/chapter_09.md:375; snapshots/cycle_02/chapters/chapter_09.md:441",
+      "problem": "The chapter leans too often on the same negation-correction sentence pattern to define perception: \"It was not a machine stillness. It was a braced one\"; \"The horror was not hidden...\"; \"The file did not read like a failure report. It read like manufacturing instructions\"; \"It did not look menacing. That was the trick\"; \"They were not enough for a tribunal... They were enough for her.\" Once this corrective syntax appears this many times, it stops feeling like a chosen rhythm and starts reading as autopilot.",
+      "rewrite_direction": "Vary the perception turns at snapshots/cycle_02/chapters/chapter_09.md:73, snapshots/cycle_02/chapters/chapter_09.md:183, snapshots/cycle_02/chapters/chapter_09.md:283, snapshots/cycle_02/chapters/chapter_09.md:375, and snapshots/cycle_02/chapters/chapter_09.md:441 so at least two of those beats land through direct image, consequence, or metaphor on the first pass instead of the recurring \"not X / actually Y\" reversal. Keep the strongest one or two where contrast genuinely sharpens meaning, but stop using the same template as the default reveal mechanism.",
+      "acceptance_test": "Pass if no more than two of the cited spans at snapshots/cycle_02/chapters/chapter_09.md:73, snapshots/cycle_02/chapters/chapter_09.md:183, snapshots/cycle_02/chapters/chapter_09.md:283, snapshots/cycle_02/chapters/chapter_09.md:375, and snapshots/cycle_02/chapters/chapter_09.md:441 still use an explicit negation-correction construction; fail if three or more of those moments remain built on the same corrective formula."
+    }
+  ],
+  "summary": "Warehouse Nine lands strongly on booker, craft, and dialogue terms: the chapter satisfies the boundary brief's disgusting-plus-banal discovery scene, keeps Lin emotionally central, stays in canonical past tense, and maintains distinct, contraction-consistent voices for Mira, Tavi, and Lin. The fail is prose discipline. One passage breaks the constitution's ban on clipped narration, and the chapter repeats a negation-correction sentence template often enough to become a noticeable tic. No continuity contradictions surfaced against outline/continuity_sheet.json."
+}

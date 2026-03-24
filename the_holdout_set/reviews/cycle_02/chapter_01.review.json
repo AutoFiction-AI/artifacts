@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_01",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_01_craft_001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_02/chapters/chapter_01.md:59; snapshots/cycle_02/chapters/chapter_01.md:69; snapshots/cycle_02/chapters/chapter_01.md:233; snapshots/cycle_02/chapters/chapter_01.md:297",
+      "problem": "The narration repeatedly slips into clipped reaction fragments (\"Not `big picture`...\", \"Calibrate.\", \"Temporary.\", \"Trust.\") at exactly the moments Leela is processing pressure. The constitution explicitly forbids elliptical clipping in narration, and here the fragments read as mannerism rather than earned compression.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_01.md:59, snapshots/cycle_02/chapters/chapter_01.md:69, snapshots/cycle_02/chapters/chapter_01.md:233, and snapshots/cycle_02/chapters/chapter_01.md:297, rewrite each clipped reaction into a fully grammatical close-third sentence. Keep Leela's dry intelligence, but anchor each beat to Mohit's immediate language, Leela's body, or the room's changed social pressure instead of a stand-alone fragment.",
+      "acceptance_test": "PASS if those four cited beats contain no standalone clipped reaction fragments and each revised sentence is grammatically complete while still making Leela's recognition legible on first read; FAIL if any cited beat still depends on a lone adjective, noun, or verb fragment to carry the moment."
+    },
+    {
+      "finding_id": "chapter_01_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_02/chapters/chapter_01.md:35; snapshots/cycle_02/chapters/chapter_01.md:115; snapshots/cycle_02/chapters/chapter_01.md:221; snapshots/cycle_02/chapters/chapter_01.md:263; snapshots/cycle_02/chapters/chapter_01.md:283; snapshots/cycle_02/chapters/chapter_01.md:337",
+      "problem": "The chapter leans too often on the same `as if` explanatory comparison to interpret behavior for the reader. Accumulated across the office scene, meeting, and hallway aftermath, the template becomes a visible prose tic and starts to mediate pressure that should feel immediate.",
+      "rewrite_direction": "In the beats at snapshots/cycle_02/chapters/chapter_01.md:35, snapshots/cycle_02/chapters/chapter_01.md:115, snapshots/cycle_02/chapters/chapter_01.md:221, snapshots/cycle_02/chapters/chapter_01.md:263, snapshots/cycle_02/chapters/chapter_01.md:283, and snapshots/cycle_02/chapters/chapter_01.md:337, replace most of the `as if` comparisons with direct action, bodily response, or more specific material detail. Keep only the comparisons that add genuinely new pressure rather than paraphrasing the scene.",
+      "acceptance_test": "PASS if no more than two `as if` explanatory comparisons remain across the cited spans and each surviving comparison introduces information not already obvious from the surrounding action; FAIL if the same comparison template still appears in three or more of those beats."
+    },
+    {
+      "finding_id": "chapter_01_prose_002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_02/chapters/chapter_01.md:59; snapshots/cycle_02/chapters/chapter_01.md:145; snapshots/cycle_02/chapters/chapter_01.md:191; snapshots/cycle_02/chapters/chapter_01.md:227; snapshots/cycle_02/chapters/chapter_01.md:327; snapshots/cycle_02/chapters/chapter_01.md:357",
+      "problem": "After several strong dialogue turns, the narration drops into a repeated recognition-caption pattern (`There it was`, `The sentence...`, `The word...`) that explains the subtext instead of trusting the scene to carry it. Once or twice this is emphasis; at this frequency it starts to sound workshop-polished and predictable.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_01.md:59, snapshots/cycle_02/chapters/chapter_01.md:145, snapshots/cycle_02/chapters/chapter_01.md:191, snapshots/cycle_02/chapters/chapter_01.md:227, snapshots/cycle_02/chapters/chapter_01.md:327, and snapshots/cycle_02/chapters/chapter_01.md:357, cut or recast at least half of these abstract captions into concrete consequences: a silence that changes leverage, a visible reaction from June or Omar, or a bodily response from Leela. Leave one or two as signature emphasis, not the default explanatory move.",
+      "acceptance_test": "PASS if at least three of the cited recognition captions are replaced by concrete observable consequences and no more than two abstract caption beats of this type remain in those spans; FAIL if the revised passage still repeatedly labels the reader's recognition for them after the dialogue has already landed."
+    }
+  ],
+  "summary": "Strong chapter spine and scene causality: the lab returns as a briefly lovable ecosystem, Mohit's charm curdles into procedural coercion, the adversarial pairings are concrete, and the ending makes Leela's compliance materially believable. Voice separation also holds across Leela, June, Omar, Ben, and Mohit. The chapter still fails craft/prose review because the narration repeatedly breaks into constitution-violating clipped reaction fragments and two noticeable explanatory prose tics (`as if` comparisons and recognition captions) that flatten otherwise sharp scene work."
+}

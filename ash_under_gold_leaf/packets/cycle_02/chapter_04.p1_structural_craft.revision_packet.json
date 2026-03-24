@@ -1,0 +1,95 @@
+{
+  "acceptance_targets": [
+    "[chapter_04_f001] PASS if snapshots/cycle_02/chapters/chapter_04.md:3 identifies a sobriety marker that is explicitly distinct from a blue day-one chip; FAIL if line 3 still presents a blue sobriety medallion that can be read as the chapter_07 object.",
+    "[chapter_04_f002] PASS if the revised passage shows at least one concrete loss that persists past the reprimand (an action denied, route delayed, or access narrowed after line 113); FAIL if Marisol still exits with the same actionable path and no lasting cost from the photo attempt.",
+    "[chapter_04_f003] PASS if the revised post-reveal section contains at least one full paragraph of concrete physical/emotional aftershock before process instructions begin; FAIL if the scene still pivots directly from discovery to workflow without a materially rendered impact beat."
+  ],
+  "chapter_id": "chapter_04",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if snapshots/cycle_02/chapters/chapter_04.md:3 identifies a sobriety marker that is explicitly distinct from a blue day-one chip; FAIL if line 3 still presents a blue sobriety medallion that can be read as the chapter_07 object.",
+      "chapter_id": "chapter_04",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:3",
+      "finding_id": "chapter_04_f001",
+      "problem": "Continuity contradiction: Marisol fingers a \"chipped blue plastic medallion\" for her 30-month sobriety marker, but the continuity sheet's canonical blue sobriety chip is a day-one token introduced in chapter_07. This creates an object-state mismatch before its canonical introduction.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_04.md:3 so the carried token does not read as the chapter_07 blue day-one chip (e.g., specify a different color/material or a different keepsake object). Keep the sobriety beat, but remove premature overlap with the chapter_07 object state.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if the revised passage shows at least one concrete loss that persists past the reprimand (an action denied, route delayed, or access narrowed after line 113); FAIL if Marisol still exits with the same actionable path and no lasting cost from the photo attempt.",
+      "chapter_id": "chapter_04",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:111; snapshots/cycle_02/chapters/chapter_04.md:113; snapshots/cycle_02/chapters/chapter_04.md:243",
+      "finding_id": "chapter_04_f002",
+      "problem": "Causal penalty is soft after the attempted protocol breach. Marisol tries to photograph restricted evidence, but the chapter still grants her full strategic route and key code capture in the same scene, muting consequence and reducing dramatic cost.",
+      "rewrite_direction": "In snapshots/cycle_02/chapters/chapter_04.md:111, snapshots/cycle_02/chapters/chapter_04.md:113, snapshots/cycle_02/chapters/chapter_04.md:123, and snapshots/cycle_02/chapters/chapter_04.md:243, add one durable setback tied to the breach (for example: a withheld field, mandatory incident notation, delayed records path, or temporary trust withdrawal by Ada) so the action changes what Marisol can do next.",
+      "severity": "MEDIUM",
+      "source": "booker",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if the revised post-reveal section contains at least one full paragraph of concrete physical/emotional aftershock before process instructions begin; FAIL if the scene still pivots directly from discovery to workflow without a materially rendered impact beat.",
+      "chapter_id": "chapter_04",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:97; snapshots/cycle_02/chapters/chapter_04.md:125; snapshots/cycle_02/chapters/chapter_04.md:153",
+      "finding_id": "chapter_04_f003",
+      "problem": "Timidity drift after the reveal: once the hidden figure and initials surface, scene energy retreats quickly into administrative routing language, thinning embodied fallout at the chapter's highest-pressure discovery beat.",
+      "rewrite_direction": "Rework snapshots/cycle_02/chapters/chapter_04.md:99, snapshots/cycle_02/chapters/chapter_04.md:107, snapshots/cycle_02/chapters/chapter_04.md:125, snapshots/cycle_02/chapters/chapter_04.md:151, and snapshots/cycle_02/chapters/chapter_04.md:189 to keep protocol content but add one sustained embodied consequence beat (fear, shame, or physical stress response with observable behavior) before the procedural checklist takes over.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "cbddcdb5d89f2d063341bbb174478d7a817bda1fc672ffb607d0571c6ceeb32e",
+  "must_fix_count": 3,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "When choosing between reputationally safe abstraction and specific discomfort, choose specificity. Render addiction, sexuality, deceit, class shame, and grief at lived scale. In edge cases, preserve character truth and causal accountability over reader comfort or institutional decorum.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene demands bodily, moral, or economic specificity, euphemistic phrasing is treated as a failed draft and must be rewritten with concrete stakes and observable consequence.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the spoken default; full forms appear only for emphasis, ritual language, or character-specific formal posture",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate scene density and pressure modes: pair high-conflict chapters with quiet domestic or documentary chapters, vary dialogue-to-interiority ratios, and prevent identical chapter skeletons in consecutive sequence.",
+      "diction": "contemporary literary diction with class-aware, borough-specific concreteness; avoid prestige-neutral workshop language",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third centered on Marisol, with rare brief distance expansions for institutional scenes",
+      "narrative_tense": "past tense",
+      "rhythm_target": "alternating tensile compression and reflective extension; line-level cadence should carry emotional pressure, not just information",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

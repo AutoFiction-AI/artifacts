@@ -1,0 +1,187 @@
+{
+  "cycle": 2,
+  "verdict": "FAIL",
+  "summary": "An arrestingly funny, erotic, materially specific novel with strong scene execution, unsanitized treatment of money, sex, and shame, and solid compliance with the style bible's tight Lena POV, high-contraction dialogue, and past-tense requirement. It is not yet major-award shortlist ready because the core fraud accounting breaks in chapters 15-16, undermining trust in the book's evidentiary climax, and because two recurring prose defaults recur across nine chapters each, flattening a voice that otherwise depends on precision and surprise.",
+  "findings": [
+    {
+      "finding_id": "FA-001",
+      "severity": "HIGH",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:6780",
+      "problem": "The evidence packet in the reveal chapter rewrites the novel's already-established transfer history into a different set of amounts, payment rails, and total: $380, $460 via Venmo, and $2,400 totaling $3,240. Earlier chapters explicitly dramatize $350 via Cash App, $280 via Cash App, and a $3,100 wire. Because this chapter turns suspicion into proof, the wrong accounting makes the book's own case file unreliable.",
+      "rewrite_direction": "Rebuild the ledger block at snapshots/cycle_02/FINAL_NOVEL.md:6780, snapshots/cycle_02/FINAL_NOVEL.md:6782, snapshots/cycle_02/FINAL_NOVEL.md:6784, and snapshots/cycle_02/FINAL_NOVEL.md:6786 so it matches the canonical transfers established at snapshots/cycle_02/FINAL_NOVEL.md:2647, snapshots/cycle_02/FINAL_NOVEL.md:3627, snapshots/cycle_02/FINAL_NOVEL.md:4266, and snapshots/cycle_02/FINAL_NOVEL.md:4288: first transfer $350 via Cash App for the van window/sound gear, second transfer $280 via Cash App for Noelle's room, third transfer $3,100 by wire, total $3,730 before the $25 bank fee. Keep Farah's prosecutorial clarity, but make the paperwork factually usable.",
+      "acceptance_test": "Pass if snapshots/cycle_02/FINAL_NOVEL.md:6780, snapshots/cycle_02/FINAL_NOVEL.md:6782, snapshots/cycle_02/FINAL_NOVEL.md:6784, and snapshots/cycle_02/FINAL_NOVEL.md:6786 now reproduce the same three amounts and payment methods already shown in chapters 5, 7, and 9, and the total reads as $3,730 before fee. Fail if the chapter still shows $380, $460, $2,400, $3,240, calls the motel payment Venmo, or otherwise conflicts with the earlier transfer scenes."
+    },
+    {
+      "finding_id": "FA-002",
+      "severity": "HIGH",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:7526",
+      "problem": "The confrontation chapter repeats yet another incompatible set of transfer amounts and dates: June says three eighty-two, six forty, and two nine forty on October tenth, then Lena repeats the same numbers later. That turns the emotional reckoning into an accounting contradiction rather than a sharpening of truth.",
+      "rewrite_direction": "Revise June's spoken recap at snapshots/cycle_02/FINAL_NOVEL.md:7526 and Lena's demand at snapshots/cycle_02/FINAL_NOVEL.md:7766 so both lines match the corrected record in chapter 15 and the original transfers at snapshots/cycle_02/FINAL_NOVEL.md:2647, snapshots/cycle_02/FINAL_NOVEL.md:3627, and snapshots/cycle_02/FINAL_NOVEL.md:4288. Keep June's blunt cadence, but have her speak the canonical amounts and the same wire date used in chapter 15 instead of inventing a third version.",
+      "acceptance_test": "Pass if snapshots/cycle_02/FINAL_NOVEL.md:7526 and snapshots/cycle_02/FINAL_NOVEL.md:7766 use the same corrected amounts and wire date as the revised chapter-15 evidence packet and the earlier transfer scenes. Fail if either line still says three eighty-two, six forty, two nine forty, October tenth, or any other set that does not match the book's established record."
+    },
+    {
+      "finding_id": "FA-003",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:678",
+      "problem": "The novel uses an 'almost [verb]' hesitation construction in 9 chapters. This chapter's line at 678 is the strongest early instance and is the one the book should keep, but it needs to remain singular rather than inaugurating a tic.",
+      "rewrite_direction": "Keep the beat at snapshots/cycle_02/FINAL_NOVEL.md:678, but if you revise the surrounding exchange, sharpen the specific contrast between Eli's practical request and Lena's eroticized reception of it instead of adding another 'almost' suppression beat in the same scene.",
+      "acceptance_test": "Pass if the moment at snapshots/cycle_02/FINAL_NOVEL.md:678 still lands through this single earned hesitation beat and the immediate exchange does not add a second similar 'almost' construction. Fail if the line is flattened into generic reluctance or multiplied into a repeated tic nearby."
+    },
+    {
+      "finding_id": "FA-004",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:2373",
+      "problem": "The full-book 'almost [verb]' pattern appears in 9 chapters, and chapter 5 stacks three versions of it at lines 2373, 2683, and 2701. Three distinct emotional beats end up sounding like one repeated sentence habit.",
+      "rewrite_direction": "At snapshots/cycle_02/FINAL_NOVEL.md:2373, snapshots/cycle_02/FINAL_NOVEL.md:2683, and snapshots/cycle_02/FINAL_NOVEL.md:2701, replace at least two of the three 'almost smiled' or 'almost cried' beats with scene-specific physical or verbal reactions. Preserve the progression from irritation to rueful relief, but make each turn legible through different behavior rather than the same withheld-response syntax.",
+      "acceptance_test": "Pass if those three moments now read as differentiated reactions and no more than one 'almost [verb]' construction remains across the cited lines. Fail if the chapter still stacks multiple near-identical hesitation beats in those spots."
+    },
+    {
+      "finding_id": "FA-005",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:3066",
+      "problem": "The novel's 9-chapter 'almost [verb]' pattern reappears here as 'almost said it,' even though chapter 5 has already spent this maneuver repeatedly. The withheld confession is specific; the sentence architecture is not.",
+      "rewrite_direction": "Rework snapshots/cycle_02/FINAL_NOVEL.md:3066 so Lena's withheld confession is dramatized through interruption, self-edit, or a concrete deflection rather than the stock 'almost said it' setup. The water bottle and financial shame are already specific; let the syntax be specific too.",
+      "acceptance_test": "Pass if the beat at snapshots/cycle_02/FINAL_NOVEL.md:3066 shows Lena refusing or failing to confess without the phrase 'almost said it' or a near-equivalent suppression formula. Fail if the revised line still announces the withheld sentence before dodging it."
+    },
+    {
+      "finding_id": "FA-006",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:3217",
+      "problem": "The novel uses the same 9-chapter hesitation pattern here in the bar-order beat. 'Almost said water' repeats a familiar suppression move where the scene really needs Lena's active decision to perform confidence.",
+      "rewrite_direction": "At snapshots/cycle_02/FINAL_NOVEL.md:3217, replace the 'almost said water' move with a choice that reveals Lena's self-presentation more directly through dialogue or bar behavior. The point is not suppressed speech but her decision to play at confidence.",
+      "acceptance_test": "Pass if the line at snapshots/cycle_02/FINAL_NOVEL.md:3217 now shows that decision without naming the withheld reasonable option first. Fail if the beat still depends on 'almost said' or another close suppression setup."
+    },
+    {
+      "finding_id": "FA-007",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:3974",
+      "problem": "The 9-chapter 'almost [verb]' pattern doubles up inside a single sentence here: Lena almost laughs and almost reaches for a smaller sentence. That makes intense pressure sound prewritten instead of discovered in the scene.",
+      "rewrite_direction": "Revise snapshots/cycle_02/FINAL_NOVEL.md:3974 so this escalation lands through one concrete action or one verbal pivot, not two stacked 'almost' beats. Keep the sense that Lena wants to retreat from the question, but express it through the stoop scene's actual movement and stakes.",
+      "acceptance_test": "Pass if the cited line now gives one vivid reaction rather than paired 'almost' constructions. Fail if both near-actions remain or are replaced by another paired suppression formula."
+    },
+    {
+      "finding_id": "FA-008",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:4785",
+      "problem": "The novel's 9-chapter 'almost [verb]' pattern appears twice in this chapter, at lines 4785 and 4975. Using the same syntax for Mateo amusement and for the phone-prop flirtation blurs two very different social textures.",
+      "rewrite_direction": "At snapshots/cycle_02/FINAL_NOVEL.md:4785 and snapshots/cycle_02/FINAL_NOVEL.md:4975, replace the weaker 'almost smiled' and 'almost said' beats with voice-specific reactions. Mateo should pull a sharper aunt-nephew rhythm, and the phone scene should show flirtation or annoyance through what Lena actually says or does.",
+      "acceptance_test": "Pass if the Mateo beat and the phone beat no longer rely on the same 'almost' syntax and feel like two different registers. Fail if both moments still hinge on withheld-reaction phrasing."
+    },
+    {
+      "finding_id": "FA-009",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:6007",
+      "problem": "The full-book 'almost [verb]' pattern appears in 9 chapters, and this chapter falls back on it again in a scene where Lena's anger is already strong enough to be rendered more directly.",
+      "rewrite_direction": "Rewrite snapshots/cycle_02/FINAL_NOVEL.md:6007 so Lena's resistance to June comes through clipped dialogue, body movement, or a sharper narrated refusal rather than 'almost told her.' Keep the aggression; remove the prefabricated hedge.",
+      "acceptance_test": "Pass if the beat at snapshots/cycle_02/FINAL_NOVEL.md:6007 expresses the impulse without 'almost told' or an equivalent suppression formula. Fail if the revised line still frames the moment as a named near-utterance that gets withdrawn."
+    },
+    {
+      "finding_id": "FA-010",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:6938",
+      "problem": "The novel's 9-chapter 'almost [verb]' pattern shows up three more times here, at lines 6938, 7182, and 7330. The confession-hinge at 7330 is the one worth keeping; the other two dilute it.",
+      "rewrite_direction": "At snapshots/cycle_02/FINAL_NOVEL.md:6938 and snapshots/cycle_02/FINAL_NOVEL.md:7182, replace the 'almost smiled' and 'almost laughed' beats with more singular reactions. Keep the confession-suppressing beat at snapshots/cycle_02/FINAL_NOVEL.md:7330, since that is the book's strongest late use of the pattern and earns its pressure.",
+      "acceptance_test": "Pass if snapshots/cycle_02/FINAL_NOVEL.md:7330 remains the only 'almost' beat among these three lines and the other two moments now register through different behavior. Fail if chapter 15 still repeats the construction three times."
+    },
+    {
+      "finding_id": "FA-011",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:7937",
+      "problem": "The full-book 'almost [verb]' pattern reaches chapter 17 as 'almost said no,' which makes Lena's acceptance of help feel like one more recycled reflex instead of a culminating change.",
+      "rewrite_direction": "Rework snapshots/cycle_02/FINAL_NOVEL.md:7937 so the scene shows the old reflex and its override through action with the case and June's offer, not by naming another 'almost said no.' This is a growth beat and should feel newly earned.",
+      "acceptance_test": "Pass if the lines around snapshots/cycle_02/FINAL_NOVEL.md:7937 dramatize Lena's reversal without the 'almost said no' formula and the beat reads as progress rather than another familiar dodge. Fail if the revision still frames the moment as one more withheld sentence."
+    },
+    {
+      "finding_id": "FA-012",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:219",
+      "problem": "The novel defaults to labeling June unreadable or blank in 9 chapters. This first instance is the cleanest and is the one the book should keep, but it needs to carry the job without spawning echoes.",
+      "rewrite_direction": "Keep the description at snapshots/cycle_02/FINAL_NOVEL.md:219 as the book's canonical early unreadability beat, but if you revise it, sharpen the concrete tiredness, work, and nicotine particulars rather than adding another synonym in this chapter. This should be the retained seed, not the start of a repeated label.",
+      "acceptance_test": "Pass if snapshots/cycle_02/FINAL_NOVEL.md:219 still renders June's opacity through concrete detail and chapter 1 does not add a second facial label from the same family nearby. Fail if the moment becomes more generic or starts doubling the shorthand."
+    },
+    {
+      "finding_id": "FA-013",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:1607",
+      "problem": "The 9-chapter unreadable-face pattern repeats here as 'the unreadable set her mouth took when she was listening hardest.' That echoes chapter 1's shorthand instead of making June's listening newly specific.",
+      "rewrite_direction": "At snapshots/cycle_02/FINAL_NOVEL.md:1607, replace the 'unreadable set' label with an observable behavior, timing, or micro-decision that shows June listening hardest. Preserve Lena's apprehension, but make June's face do something exact.",
+      "acceptance_test": "Pass if snapshots/cycle_02/FINAL_NOVEL.md:1607 now conveys June's listening without the word 'unreadable' or a close blank-face synonym. Fail if it still relies on the same facial label."
+    },
+    {
+      "finding_id": "FA-014",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:2471",
+      "problem": "The novel's unreadable-face pattern appears in 9 chapters, and chapter 5 uses it twice: 'unreadable already' at line 2471 and 'face went blank again' at line 2607. The chapter explains the default so explicitly that it starts to feel habitual instead of observed.",
+      "rewrite_direction": "Rewrite snapshots/cycle_02/FINAL_NOVEL.md:2471 and snapshots/cycle_02/FINAL_NOVEL.md:2607 so June's skepticism and fatigue register through question rhythm, eye movement, or the speed of her reply instead of unreadable or blank-face shorthand. This chapter already has enough pressure without leaning on the stock face-shutdown signal.",
+      "acceptance_test": "Pass if both cited lines now show June's response through specific behavior and neither uses unreadable, blank, or flat language. Fail if either line still labels her face that way."
+    },
+    {
+      "finding_id": "FA-015",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:3842",
+      "problem": "The novel's 9-chapter unreadable-face pattern reappears here as 'a quick unreadable flick of attention,' reducing a socially rich grill scene to the same shorthand.",
+      "rewrite_direction": "At snapshots/cycle_02/FINAL_NOVEL.md:3842, trade the unreadable label for a more legible, scene-bound signal: what June notices, whether she looks away, how long the glance lasts, or what it changes in her body at the grill.",
+      "acceptance_test": "Pass if snapshots/cycle_02/FINAL_NOVEL.md:3842 now gives a concrete social signal rather than calling the glance unreadable. Fail if the revised line still uses unreadable or another blank-face shortcut."
+    },
+    {
+      "finding_id": "FA-016",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:4805",
+      "problem": "The 9-chapter unreadable-face pattern shows up here as 'blunt and unreadable,' which makes June's tiredness generic at a point when the couch scene needs sharper relational texture.",
+      "rewrite_direction": "Revise snapshots/cycle_02/FINAL_NOVEL.md:4805 so June's exhaustion and alertness come through voice, posture, or the exact way she asks 'What happened' instead of the blanket label 'unreadable.' Keep the fatigue; remove the stock descriptor.",
+      "acceptance_test": "Pass if snapshots/cycle_02/FINAL_NOVEL.md:4805 now differentiates this tiredness from earlier scenes without unreadable, blank, or flat-face shorthand. Fail if the line still names the face as unreadable."
+    },
+    {
+      "finding_id": "FA-017",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:5564",
+      "problem": "The novel's 9-chapter unreadable-face pattern repeats almost verbatim here: 'Her face went unreadable in the tired way Lena knew.' At this point it sounds compositional rather than observed.",
+      "rewrite_direction": "At snapshots/cycle_02/FINAL_NOVEL.md:5564, replace the label with a new manifestation of June thinking hard under pressure: delayed answer, mouth tightening, inventory-taking, or some other exact behavior specific to this chapter's stakes.",
+      "acceptance_test": "Pass if snapshots/cycle_02/FINAL_NOVEL.md:5564 conveys thought and restraint without the phrase 'went unreadable' or a close echo. Fail if it still uses the same label."
+    },
+    {
+      "finding_id": "FA-018",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:6344",
+      "problem": "The 9-chapter unreadable-face pattern returns again here with the same tired unreadability bundle at exactly the point where Lena and June need sharper differentiation after the reveal pressure starts building.",
+      "rewrite_direction": "Rewrite snapshots/cycle_02/FINAL_NOVEL.md:6344 so June's refusal lands through a concrete look, movement, or clipped sentence specific to this argument, not the familiar unreadable mask. The chapter needs escalation, not fallback diction.",
+      "acceptance_test": "Pass if snapshots/cycle_02/FINAL_NOVEL.md:6344 now feels like this argument's distinct version of resistance and avoids unreadable, blank, or flat-face shorthand. Fail if the line still defaults to that mask."
+    },
+    {
+      "finding_id": "FA-019",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:6511",
+      "problem": "The novel's 9-chapter unreadable-face pattern is still in play in the expose chapter as 'that flat, unreadable look.' Reusing the same face description weakens a chapter that should feel newly dangerous.",
+      "rewrite_direction": "At snapshots/cycle_02/FINAL_NOVEL.md:6511, replace the flat unreadable look with evidence from June's actual concealment strategy in the moment: speed, false lightness, a missed beat, or some physical tell that Lena can read without the narration naming unreadability.",
+      "acceptance_test": "Pass if snapshots/cycle_02/FINAL_NOVEL.md:6511 now shows the lie-management through a specific tell and omits unreadable or flat-face shorthand. Fail if the chapter still labels June's face that way here."
+    },
+    {
+      "finding_id": "FA-020",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:7440",
+      "problem": "The novel's 9-chapter unreadable-face pattern returns twice during the confrontation itself, at lines 7440 and 7494. Using the same old mask twice at the emotional peak flattens the scene's internal turns.",
+      "rewrite_direction": "At snapshots/cycle_02/FINAL_NOVEL.md:7440 and snapshots/cycle_02/FINAL_NOVEL.md:7494, replace both unreadability labels with distinct confrontation behaviors: one for June's defensive control, one for the moment she starts taking inventory. The scene is too climactic to rely on the same mask twice.",
+      "acceptance_test": "Pass if both cited lines now stage June's two different modes without unreadable, blank, or flat phrasing and a reader can tell the emotional shift between them. Fail if either line still uses the stock label or if both moments remain interchangeable."
+    }
+  ]
+}

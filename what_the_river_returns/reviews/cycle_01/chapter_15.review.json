@@ -1,0 +1,62 @@
+{
+  "chapter_id": "chapter_15",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch15-craft-001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_01/chapters/chapter_15.md:27",
+      "problem": "Continuity break: the safe is opened with a different combination than the one established at the end of chapter 14, creating a canonical contradiction in a causally critical handoff beat.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_15.md:27, reconcile the dial sequence with the established prior-chapter combination. If the number change is intentional, add explicit on-page explanation between snapshots/cycle_01/chapters/chapter_15.md:5 and snapshots/cycle_01/chapters/chapter_15.md:27 before the safe opens.",
+      "acceptance_test": "PASS if the revised text at snapshots/cycle_01/chapters/chapter_15.md:27 either matches the established combination or explicitly explains why a different sequence is required before the safe opens; FAIL if the mismatch remains unexplained."
+    },
+    {
+      "finding_id": "ch15-craft-002",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_01/chapters/chapter_15.md:79",
+      "problem": "Sanitization drift via summary: a two-hour, high-risk evidence capture is compressed into a single retrospective paragraph, replacing lived scene pressure with procedural recap at the precise point where legal and personal stakes should stay embodied.",
+      "rewrite_direction": "Replace or expand snapshots/cycle_01/chapters/chapter_15.md:79 with an on-page micro-sequence that includes one concrete interruption risk, one chain-of-custody vulnerability, and one immediate bodily stress marker from Lena before returning to forward motion at snapshots/cycle_01/chapters/chapter_15.md:81.",
+      "acceptance_test": "PASS if the revised span between snapshots/cycle_01/chapters/chapter_15.md:79 and snapshots/cycle_01/chapters/chapter_15.md:81 contains a dramatized moment where chain integrity is actively threatened and recovered in-scene; FAIL if it remains a blanket summary of work completed."
+    },
+    {
+      "finding_id": "ch15-booker-001",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_01/chapters/chapter_15.md:125; snapshots/cycle_01/chapters/chapter_15.md:131; snapshots/cycle_01/chapters/chapter_15.md:235",
+      "problem": "Decision causality is partially duplicated: Lena appears to decide full unredacted release at line 125, then the chapter replays the same decisive beat at line 235 without a fully explicit procedural gate, softening climax efficiency.",
+      "rewrite_direction": "Tighten causal clarity by making the provisional-vs-final distinction explicit at snapshots/cycle_01/chapters/chapter_15.md:125-133, then escalate new stakes (not just repeated stakes) before the final authorization at snapshots/cycle_01/chapters/chapter_15.md:231-236.",
+      "acceptance_test": "PASS if a first-time reader can point to explicit text in snapshots/cycle_01/chapters/chapter_15.md:125-133 that makes line 125 provisional and line 235 final under materially changed pressure; FAIL if both beats still read as the same decision repeated."
+    },
+    {
+      "finding_id": "ch15-dialogue-001",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_01/chapters/chapter_15.md:117; snapshots/cycle_01/chapters/chapter_15.md:121; snapshots/cycle_01/chapters/chapter_15.md:207; snapshots/cycle_01/chapters/chapter_15.md:211",
+      "problem": "Voice separation compresses under pressure: Mara and Corinne converge into similar legal-brief diction, weakening idiolect contrast. Mara's profile calls for high-contraction, evidence-verb skepticism, but several lines drift toward counsel-speak.",
+      "rewrite_direction": "Revise Mara's lines at snapshots/cycle_01/chapters/chapter_15.md:117, snapshots/cycle_01/chapters/chapter_15.md:121, and snapshots/cycle_01/chapters/chapter_15.md:211 toward faster, more colloquial, attribution-driven phrasing; preserve Corinne's formal legal precision at snapshots/cycle_01/chapters/chapter_15.md:207 as contrast.",
+      "acceptance_test": "PASS if readers can correctly attribute Mara vs Corinne in at least four of five consecutive turns in snapshots/cycle_01/chapters/chapter_15.md:199-212 without tags, and Mara uses contractions in at least three of her four turns; FAIL if both voices still sound legally interchangeable."
+    },
+    {
+      "finding_id": "ch15-prose-001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_01/chapters/chapter_15.md:41; snapshots/cycle_01/chapters/chapter_15.md:43; snapshots/cycle_01/chapters/chapter_15.md:45",
+      "problem": "Mechanical repetition: the construction \"The [ordinal] stack held ...\" appears three times in a row, flattening rhythm and signaling list autopilot during a key discovery sequence.",
+      "rewrite_direction": "Rework snapshots/cycle_01/chapters/chapter_15.md:41-46 so only one sentence (max) uses the current inventory template; vary syntax and integrate Lena's immediate internal/sensory response into at least one of the document reveals.",
+      "acceptance_test": "PASS if snapshots/cycle_01/chapters/chapter_15.md:41-46 contains no more than one \"The ... stack held\" opener and includes at least one sentence linking a specific document to Lena's immediate internal or bodily reaction; FAIL if the three-step catalogue formula remains."
+    }
+  ],
+  "summary": "Chapter 15 lands major consequence and maintains close-third pressure, but it fails review due one HIGH continuity contradiction (safe combination mismatch), one HIGH sanitization-by-summary compression at a critical risk window, and medium-level dialogue/prose craft drag from duplicated decision framing, idiolect convergence, and repeated inventory sentence formulas."
+}

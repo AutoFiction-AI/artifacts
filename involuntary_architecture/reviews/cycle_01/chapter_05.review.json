@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_05",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "PASS"
+  },
+  "findings": [
+    {
+      "finding_id": "C05_TIMELINE_DAYCOUNT_SLIP",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:3; snapshots/cycle_01/chapters/chapter_05.md:175; snapshots/cycle_01/chapters/chapter_05.md:309; snapshots/cycle_01/chapters/chapter_05.md:311",
+      "problem": "The chapter's own elapsed-time math does not cohere. The opening establishes Hermione has been at the Manor for eleven days, the narrative then advances three days, but Harry calls it twelve days and the narration backs him with 'just under two weeks.' That creates a visible timeline contradiction inside the chapter rather than a mere rough estimate.",
+      "rewrite_direction": "Reconcile the count across snapshots/cycle_01/chapters/chapter_05.md:3, snapshots/cycle_01/chapters/chapter_05.md:175, snapshots/cycle_01/chapters/chapter_05.md:309, and snapshots/cycle_01/chapters/chapter_05.md:311. Revise either the opening day count, the 'Three days later' jump, or Harry's line so all four references point to one consistent number of days at the Manor.",
+      "acceptance_test": "Pass if a cold read can add the elapsed time from snapshots/cycle_01/chapters/chapter_05.md:3 through snapshots/cycle_01/chapters/chapter_05.md:175 and arrive at the same count named in snapshots/cycle_01/chapters/chapter_05.md:309 and snapshots/cycle_01/chapters/chapter_05.md:311. Fail if the chapter still says she has been there eleven days, then advances three days, then calls the stay twelve days or 'just under two weeks.'"
+    },
+    {
+      "finding_id": "C05_STYLE_BIBLE_EXAMPLE_LINE_REUSE",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:55; snapshots/cycle_01/chapters/chapter_05.md:203",
+      "problem": "The chapter reuses calibration-only example dialogue from the style bible verbatim or near-verbatim. Draco's standalone 'Mm.' and Harry's 'Are you sleeping?' both duplicate example-line material that the contract explicitly marks as non-copyable, which turns voice guidance into copied output and weakens dialogue integrity even though the borrowed lines are short.",
+      "rewrite_direction": "Replace the borrowed beats at snapshots/cycle_01/chapters/chapter_05.md:55 and snapshots/cycle_01/chapters/chapter_05.md:203 with fresh phrasings or beat structures that still preserve Draco's muted acknowledgment and Harry's direct sleep check. Before finalizing, compare the revised lines against outline/style_bible.json so no example line survives verbatim in those positions.",
+      "acceptance_test": "Pass if the revised dialogue at snapshots/cycle_01/chapters/chapter_05.md:55 and snapshots/cycle_01/chapters/chapter_05.md:203 performs the same dramatic work without reproducing any exact example-line wording from outline/style_bible.json. Fail if 'Mm.' remains as Draco's full line there or if Harry's sleep check still opens with the exact example-line wording."
+    },
+    {
+      "finding_id": "C05_ENDING_REPLAYS_RESONANCE_BEAT",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:149; snapshots/cycle_01/chapters/chapter_05.md:167; snapshots/cycle_01/chapters/chapter_05.md:333; snapshots/cycle_01/chapters/chapter_05.md:351; snapshots/cycle_01/chapters/chapter_05.md:361",
+      "problem": "The chapter lands its central turn the first time Hermione feels Draco at a distance, rationalizes it as diagnostic residue, and decides not to tell him. The closing return-to-library movement then largely restages that same understanding with the same clinical self-explanation instead of converting the London absence-and-return data into a new cost, test, or changed protocol. That makes the ending certify the beat again rather than move it forward.",
+      "rewrite_direction": "Rework the return sequence beginning at snapshots/cycle_01/chapters/chapter_05.md:329, especially snapshots/cycle_01/chapters/chapter_05.md:333, snapshots/cycle_01/chapters/chapter_05.md:351, and snapshots/cycle_01/chapters/chapter_05.md:361, so it builds on the earlier turn at snapshots/cycle_01/chapters/chapter_05.md:149 and snapshots/cycle_01/chapters/chapter_05.md:167 instead of replaying it. Keep the distinct payload already earned there: the London absence proves the bond is proximity-dependent and Draco independently confirms Floo instability. Then either compress the repeated 'residue/artifact' rationalization or make the return scene force a new observable consequence such as a changed diagnostic plan, a visible behavioral slip, or a more costly concealment choice.",
+      "acceptance_test": "Pass if the material after snapshots/cycle_01/chapters/chapter_05.md:329 produces a new dramatic turn beyond 'she feels him, explains it away, and says nothing' while preserving the must-land proof that the signal vanishes in London and resumes at the Manor. Fail if the ending still repeats the same residue/artifact explanation from the earlier resonance scene without adding a new cost, protocol change, witnessable mistake, or other changed state."
+    }
+  ],
+  "summary": "Chapter 05 lands the required beats and keeps Hermione in strong close-third interiority, but it does not clear shortlist-level review. A hard day-count contradiction breaks local continuity, the dialogue crosses the style-bible contract by reusing calibration-only example lines, and the final return-to-library movement mostly re-proves the resonance/concealment turn instead of cashing the new London-versus-Manor data into a fresh consequence. The prose itself remains tense-consistent and generally controlled, which keeps this from failing more broadly."
+}

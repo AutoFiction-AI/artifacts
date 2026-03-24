@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_02",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_02_f01_discovery_logic_cleanup",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:133; snapshots/cycle_02/chapters/chapter_02.md:141; snapshots/cycle_02/chapters/chapter_02.md:147; snapshots/cycle_02/chapters/chapter_02.md:165",
+      "problem": "The chapter's central discovery turn depends on concealment mechanics the page does not make physically credible enough. Carmen catches three lucid residents in a blind-spot room, but the beat asks the reader to accept several authorially convenient gaps at once: she arrives on the exact night the voices are audible, the papers vanish without visible action, and by the time she returns Harry, Earl, the wheelchair position, and the floor lamp have all reset with no shown obstacle or timing logic. In a realistic nursing-home world, the scene needs clearer cause-and-effect than 'she looked back and everything incriminating was gone.'",
+      "rewrite_direction": "Rebuild the discovery/cleanup sequence at snapshots/cycle_02/chapters/chapter_02.md:133, snapshots/cycle_02/chapters/chapter_02.md:141, snapshots/cycle_02/chapters/chapter_02.md:147, and snapshots/cycle_02/chapters/chapter_02.md:165 so the reader can track the physical mechanics. Clarify why Carmen hears them tonight rather than on any prior overnight, what split-second action hides the papers, and what concrete delay or duty keeps her from catching Harry and Earl before the room resets. Strategy options: let Carmen lose sight of one resident while steadying Lola, show a paper slid under a cushion or blanket, or make the louder-than-usual exchange itself a consequence of the count-pressure already in play. Keep the uncanny effect, but not at the expense of realism.",
+      "acceptance_test": "Pass if the revised span from snapshots/cycle_02/chapters/chapter_02.md:133 through snapshots/cycle_02/chapters/chapter_02.md:165 lets a cold reader answer three questions from the text alone: why access happens now, where the papers go, and how Harry/Earl clear the room before Carmen gets back. Fail if the incriminating objects and room setup still effectively disappear without shown action or a stated reason Carmen cannot intercept it."
+    },
+    {
+      "finding_id": "chapter_02_f02_overexplained_anomalies",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:59; snapshots/cycle_02/chapters/chapter_02.md:61; snapshots/cycle_02/chapters/chapter_02.md:131; snapshots/cycle_02/chapters/chapter_02.md:137; snapshots/cycle_02/chapters/chapter_02.md:149; snapshots/cycle_02/chapters/chapter_02.md:171",
+      "problem": "The chapter repeatedly lands a strong observed anomaly, then mistrusts it and translates it into writerly explanation. Lola's clean swallow is already damning before the narration moves into 'stage business' and 'blocking note'; the TV-room voices are already legible before the prose defines conversation structure twice; Lola's slur and the synchronized drop already read as performance before the narration reaches for 'a menu of available registers' and 'like somebody had hit a switch.' This overstatement weakens the close-third Carmen voice the style bible calls for and nudges the prose toward literary-performance phrasing instead of nurse-native observation.",
+      "rewrite_direction": "Trim or recast the explanatory overlays at snapshots/cycle_02/chapters/chapter_02.md:59, snapshots/cycle_02/chapters/chapter_02.md:61, snapshots/cycle_02/chapters/chapter_02.md:131, snapshots/cycle_02/chapters/chapter_02.md:137, snapshots/cycle_02/chapters/chapter_02.md:149, and snapshots/cycle_02/chapters/chapter_02.md:171 so Carmen's conclusions stay grounded in bodily detail, med-pass knowledge, gait knowledge, and charting logic. Let one concrete observation do the work where possible. If interpretation is necessary, phrase it in Carmen's professional lexicon rather than theater or interface metaphors.",
+      "acceptance_test": "Pass if the revised passages at snapshots/cycle_02/chapters/chapter_02.md:59-61 and snapshots/cycle_02/chapters/chapter_02.md:131-171 still make Lola's compliance, the residents' coherent meeting, and the failed sundowning rationalization unmistakable, but do so without abstract performance-language that re-proves what the action has already shown. Fail if the revision still explains the same anomaly twice or relies on non-Carmen metaphors instead of observable nursing specifics."
+    }
+  ],
+  "summary": "Dialogue remains natural, contracted, and character-true, and the institutional texture is strong. The chapter still fails overall because its centerpiece discovery beat relies on under-explained concealment logistics, and its best uncanny observations are too often followed by writerly paraphrase instead of being trusted to stand on their own."
+}

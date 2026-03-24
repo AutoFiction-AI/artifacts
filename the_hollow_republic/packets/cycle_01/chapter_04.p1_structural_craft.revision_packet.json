@@ -1,0 +1,82 @@
+{
+  "acceptance_targets": [
+    "[chapter_04_booker_001] In revised lines 285-319, a reader can point to one explicit new fact that directly signals an impending act of violence beyond Elise's interpretation alone, and that fact is spoken, shown, or physically exchanged on the page before the chapter ends.",
+    "[chapter_04_craft_001] In revised lines 207-245, at least three separate paragraphs contain explicit Elise interiority (thought, sensation, memory, or self-assessment), and no stretch longer than nine consecutive paragraphs in that supper exchange remains without it."
+  ],
+  "chapter_id": "chapter_04",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "In revised lines 285-319, a reader can point to one explicit new fact that directly signals an impending act of violence beyond Elise's interpretation alone, and that fact is spoken, shown, or physically exchanged on the page before the chapter ends.",
+      "chapter_id": "chapter_04",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_04.md:189; snapshots/cycle_01/chapters/chapter_04.md:191; snapshots/cycle_01/chapters/chapter_04.md:311; snapshots/cycle_01/chapters/chapter_04.md:315; snapshots/cycle_01/chapters/chapter_04.md:319",
+      "finding_id": "chapter_04_booker_001",
+      "problem": "The chapter's promised turn is concrete evidence of an intended attack, but the ending still withholds a material plot fact. Ferrand clearly identifies himself as poison and Abel clearly leans toward him, yet lines 315-319 explicitly admit there is no pact, target, or plan on the page and ask the reader to accept Elise's interpretation as the chapter's substitute for evidence. That lands theme, but it weakens chapter-level consequence and leaves the turn more diagnostic than causal.",
+      "rewrite_direction": "Rework snapshots/cycle_01/chapters/chapter_04.md:285, snapshots/cycle_01/chapters/chapter_04.md:291, snapshots/cycle_01/chapters/chapter_04.md:311, and snapshots/cycle_01/chapters/chapter_04.md:315 so Ferrand leaves Abel with one specific, deniable operational next step rather than only flattery: a meeting place, a materials source, a promised demonstration, or another concrete hook Elise could plausibly report. Preserve Ferrand's slipperiness, but make the chapter close on an observable fact, not only Elise's inference.",
+      "severity": "MEDIUM",
+      "source": "booker",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "In revised lines 207-245, at least three separate paragraphs contain explicit Elise interiority (thought, sensation, memory, or self-assessment), and no stretch longer than nine consecutive paragraphs in that supper exchange remains without it.",
+      "chapter_id": "chapter_04",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_04.md:207; snapshots/cycle_01/chapters/chapter_04.md:219; snapshots/cycle_01/chapters/chapter_04.md:235; snapshots/cycle_01/chapters/chapter_04.md:245; snapshots/cycle_01/chapters/chapter_04.md:247",
+      "finding_id": "chapter_04_craft_001",
+      "problem": "The supper confrontation runs for more than twenty consecutive one-line paragraphs without explicit Elise interiority. Because the chapter is formatted as single-line paragraphs, the stretch from Abel's interest in fuse through Ferrand's evasions becomes almost entirely camera-external until line 247 restores Elise's reading of the room. That violates the close-third requirement from the style bible and turns the highest-pressure exchange into something closer to a screenplay than lived focal experience.",
+      "rewrite_direction": "Thread Elise's thought, bodily sensation, memory, or self-assessment back into the exchange at snapshots/cycle_01/chapters/chapter_04.md:207, snapshots/cycle_01/chapters/chapter_04.md:219, snapshots/cycle_01/chapters/chapter_04.md:231, snapshots/cycle_01/chapters/chapter_04.md:239, and snapshots/cycle_01/chapters/chapter_04.md:245. The added interior beats should not summarize the argument after the fact; they should change the reader's understanding of Abel, Ferrand, or Lucien in real time while the dialogue is still unfolding.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "b27ed9be13e39a5aca272c904c50a6037fa03da545cac58deeb2b68d65333c36",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into the contradiction that tenderness can coexist with surveillance, desire with betrayal, and ideology with vanity. Render violence, sex, illness, and poverty at the scale characters actually experience them. When an edge case appears, choose the more specific and less reputationally safe version if it remains faithful to character, period, and causality.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene reaches bodily danger, sex, grief, class shame, or political cruelty and then retreats into summary, rewrite toward the exact physical and social fact the character cannot evade.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "Moderate to high; contractions are the spoken default, with full forms reserved for period formality, deliberate emphasis, or Vautrin's cultivated precision.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate compressive surveillance chapters with slower communal or reflective chapters; vary scene count, dialogue density, and whether the turn comes from action, information, dread, or aftermath so no two adjacent chapters run on the same structural rhythm.",
+      "diction": "Historically grounded and unsentimental; plain enough for labor and bureaucracy, lyrical only when perception earns it rather than rhetoric.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third centered on Elise, elastic enough to register class texture, political pressure, and the quarry's collective life without drifting into authorial essay.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Supple, image-bearing sentences broken by hard factual beats at moments of violence, lust, bureaucratic coercion, or shame.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

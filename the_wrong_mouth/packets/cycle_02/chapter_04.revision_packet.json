@@ -1,0 +1,177 @@
+{
+  "acceptance_targets": [
+    "[C04_CONTINUITY_BOUNTY_AMOUNT] Pass if the revised text at snapshots/cycle_02/chapters/chapter_04.md:61, snapshots/cycle_02/chapters/chapter_04.md:247, and snapshots/cycle_02/chapters/chapter_04.md:327 all name the same canonical 4,000-gold-crown bounty or an unambiguous equivalent, with no surviving reference to four hundred gold. Fail if any instance still uses the smaller figure or introduces a conflicting amount.",
+    "[C04_DERRY_DEBRIEF_VOICE_FLATTENING] Pass if the revised exchange at snapshots/cycle_02/chapters/chapter_04.md:229-241 still makes clear that Maren now carries two opposed voices, but Derry gets there in at least one self-correcting or qualifying turn that sounds like his stress idiolect rather than a staircase of clipped questions. Fail if the passage still reads as short debrief prompts any generic witness could ask.",
+    "[C04_AFTERMATH_SCHEMATIC_SUMMARY] Pass if the revised passage at snapshots/cycle_02/chapters/chapter_04.md:225-245 lets a cold reader state what changed after the collision and what immediate pressure follows, while staying inside Maren's lived experience and avoiding abstract framing such as \"The tactical situation was this.\" Fail if the passage still pauses to summarize the new state in report language before generating a new consequential beat.",
+    "[CH04_BOUNTY_AMOUNT] Every bounty-amount reference in the manuscript resolves to a single consistent figure matching the continuity sheet, or any intentional discrepancy is narratively justified at point of introduction.",
+    "[R-11] Line 872 presents Derry's nervous chatter through action or dialogue, not through narrator explanation of the behavioral pattern.",
+    "[R-16] Chapter 4 contains em-dashes on no more than 15% of prose lines (approximately 25 of 169 lines).",
+    "[C-01] Every bounty amount in Chapter 4 reads 'four thousand gold crowns,' matching the Ch3 establishment and the continuity sheet.",
+    "[C-02] Line 1004 uses 'Knight-paladin' rather than 'Knight-Servitor.' Aldric's title is consistent with Ch1 line 87.",
+    "[length_chapter_04_min_words] Chapter word count is >= 5000 while preserving heading contract."
+  ],
+  "chapter_id": "chapter_04",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if the revised text at snapshots/cycle_02/chapters/chapter_04.md:61, snapshots/cycle_02/chapters/chapter_04.md:247, and snapshots/cycle_02/chapters/chapter_04.md:327 all name the same canonical 4,000-gold-crown bounty or an unambiguous equivalent, with no surviving reference to four hundred gold. Fail if any instance still uses the smaller figure or introduces a conflicting amount.",
+      "chapter_id": "chapter_04",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:61; snapshots/cycle_02/chapters/chapter_04.md:247; snapshots/cycle_02/chapters/chapter_04.md:327",
+      "finding_id": "C04_CONTINUITY_BOUNTY_AMOUNT",
+      "problem": "The chapter states Maren's bounty as four hundred gold in three separate beats, but the continuity sheet and global timeline establish the canon amount as 4,000 gold crowns from Chapter 3 onward. Because the bounty is the chapter's live pressure source, this is not cosmetic: it alters the scale of pursuit and weakens the surrounding fear calculus every time the number appears.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_04.md:61, snapshots/cycle_02/chapters/chapter_04.md:247, and snapshots/cycle_02/chapters/chapter_04.md:327, replace the incorrect amount with the canonical 4,000-gold-crown bounty and adjust any nearby phrasing so the higher figure reads as catastrophic exposure rather than routine travel inconvenience.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if the revised exchange at snapshots/cycle_02/chapters/chapter_04.md:229-241 still makes clear that Maren now carries two opposed voices, but Derry gets there in at least one self-correcting or qualifying turn that sounds like his stress idiolect rather than a staircase of clipped questions. Fail if the passage still reads as short debrief prompts any generic witness could ask.",
+      "chapter_id": "chapter_04",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:229; snapshots/cycle_02/chapters/chapter_04.md:233; snapshots/cycle_02/chapters/chapter_04.md:237; snapshots/cycle_02/chapters/chapter_04.md:241",
+      "finding_id": "C04_DERRY_DEBRIEF_VOICE_FLATTENING",
+      "problem": "In the immediate aftermath of the collision, Derry stops sounding like Derry and turns into a clipped reader-surrogate questionnaire: \"So there's two of them now,\" \"In your head,\" \"She's an assassin?\" \"And they don't get along?\" The style bible gives him stress speech that overtalks, qualifies, circles, and reaches for mundane anchors; here he becomes clean debrief machinery at the exact moment his fear should make him messier, not tidier.",
+      "rewrite_direction": "Rework the question ladder at snapshots/cycle_02/chapters/chapter_04.md:229, snapshots/cycle_02/chapters/chapter_04.md:233, snapshots/cycle_02/chapters/chapter_04.md:237, and snapshots/cycle_02/chapters/chapter_04.md:241 so Derry processes the new reality in his own register: high-contraction, self-correcting, slightly run-on speech with a nervous coda or mundane anchor. Keep the necessary facts that there are now two internal voices and the newcomer is an assassin, but let Derry arrive there through frightened overtalk rather than four short diagnostic prompts.",
+      "severity": "MEDIUM",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if the revised passage at snapshots/cycle_02/chapters/chapter_04.md:225-245 lets a cold reader state what changed after the collision and what immediate pressure follows, while staying inside Maren's lived experience and avoiding abstract framing such as \"The tactical situation was this.\" Fail if the passage still pauses to summarize the new state in report language before generating a new consequential beat.",
+      "chapter_id": "chapter_04",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:225; snapshots/cycle_02/chapters/chapter_04.md:243; snapshots/cycle_02/chapters/chapter_04.md:245",
+      "finding_id": "C04_AFTERMATH_SCHEMATIC_SUMMARY",
+      "problem": "Right after the chapter's strongest live event, the narration backs away into schematic explanation: \"The tactical situation was this\" followed by alignment labels and an abstract inventory of the new configuration. That phrasing is report-language, not Maren's close-third ordeal register, and it re-translates shock the scene has already dramatized instead of using the aftermath to create fresh pressure.",
+      "rewrite_direction": "Replace the abstract setup beginning at snapshots/cycle_02/chapters/chapter_04.md:225 and continuing through snapshots/cycle_02/chapters/chapter_04.md:243 and snapshots/cycle_02/chapters/chapter_04.md:245 with scene-grounded aftermath in Maren's body and ear: let Derry's reaction, Vess and Aldric's clash, and the altered contamination bank show what changed. Preserve the reader's understanding that two opposed fragments now share Maren and that the collision destabilized his classification, but do it without thesis framing or label-dump exposition.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Every bounty-amount reference in the manuscript resolves to a single consistent figure matching the continuity sheet, or any intentional discrepancy is narratively justified at point of introduction.",
+      "chapter_id": "chapter_04",
+      "cycle": 2,
+      "evidence": "Ch3 establishes the bounty as 'four thousand gold crowns' (lines 763, 793), consistent with the continuity sheet's '4,000-gold-crown bounty.' Ch4 reduces it to 'four hundred gold' at lines 906, 1092, and 1172. The amount drops by an order of magnitude with no narrative explanation.",
+      "finding_id": "CH04_BOUNTY_AMOUNT",
+      "problem": "The bounty\u2014Maren's core financial motivation and the story's primary external stakes driver\u2014contradicts itself between Ch3 and Ch4. Four thousand crowns versus four hundred gold is not a rounding error; it changes the scale of consequence. Every subsequent reference to the bounty inherits whichever wrong number the reader last encountered.",
+      "rewrite_direction": "Standardize all bounty references in Ch4 (lines 906, 1092, 1172) to 'four thousand gold crowns,' matching Ch3 and the continuity sheet. Audit Ch5-18 for any further bounty-amount references and reconcile. If a plot reason exists for a different figure (e.g., a partial bounty or a local price on Maren's head distinct from the Temple bounty), make that distinction explicit in dialogue or narration at first occurrence.",
+      "severity": "HIGH",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Line 872 presents Derry's nervous chatter through action or dialogue, not through narrator explanation of the behavioral pattern.",
+      "chapter_id": "chapter_04",
+      "cycle": 2,
+      "evidence": "Ch4 line 872: 'He talked as he always did when he was scared: too much and about nothing, each sentence hitched to the next.' Ch3 line 589: 'the leek monologue was a tell \u2014 the worse things got, the more Derry talked...The content didn't matter. What mattered was the noise, the filling of space.' Adjacent chapters.",
+      "finding_id": "R-11",
+      "problem": "Derry's talking-when-scared behavioral tell is described in full expository form in both Ch3 (line 589) and Ch4 (line 872), adjacent chapters. Both explain the same mechanism: Derry fills silence with chatter when frightened.",
+      "rewrite_direction": "At line 872, cut the explanatory aside 'as he always did when he was scared: too much and about nothing...' Show Derry talking \u2014 the reader will recognize the pattern from Ch3. Line 874 ('Maren let him talk. It was familiar.') already provides sufficient recognition.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Chapter 4 contains em-dashes on no more than 15% of prose lines (approximately 25 of 169 lines).",
+      "chapter_id": "chapter_04",
+      "cycle": 2,
+      "evidence": "62 of 169 prose lines (36.7%) in Ch4 contain em-dashes. Manuscript-wide: 582/2362 = 24.6%. Notable: three chapters (Ch5, Ch10, Ch12) contain zero em-dashes, creating an extreme bimodal distribution.",
+      "finding_id": "R-16",
+      "problem": "Em-dash density in Ch4 is 36.7% (62/169 prose lines), the third highest by absolute count. The manuscript shows extreme stylistic inconsistency: 5 chapters exceed 35% while 3 chapters have 0%, suggesting different drafting passes with different punctuation habits.",
+      "rewrite_direction": "Reduce Ch4's em-dash count from 62 to approximately 14 (targeting 8%). Convert parenthetical asides to commas or periods. The bimodal distribution across the manuscript also suggests a global normalization pass is needed to bring all chapters into the 5-10% range.",
+      "severity": "HIGH",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Every bounty amount in Chapter 4 reads 'four thousand gold crowns,' matching the Ch3 establishment and the continuity sheet.",
+      "chapter_id": "chapter_04",
+      "cycle": 2,
+      "evidence": "Ch3 lines 717, 723, 733, 763, 793: bounty stated as 'four thousand gold crowns' five times. Ch4 lines 906, 1092, 1172: bounty stated as 'four hundred gold' three times. Continuity sheet confirms canonical amount is 4,000 gold crowns.",
+      "finding_id": "C-01",
+      "problem": "The bounty on Maren drops by a factor of ten between Ch3 and Ch4. Ch3 consistently states 'four thousand gold crowns' (5 uses) while Ch4 consistently states 'four hundred gold' (3 uses). The continuity sheet confirms 4,000 as canonical. This is a tenfold magnitude error that appears in dialogue, narration, and System readout.",
+      "rewrite_direction": "Change all three Ch4 bounty references (lines 906, 1092, 1172) from 'four hundred gold' to 'four thousand gold crowns' to match the canonical Ch3 figure and continuity sheet.",
+      "severity": "CRITICAL",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Line 1004 uses 'Knight-paladin' rather than 'Knight-Servitor.' Aldric's title is consistent with Ch1 line 87.",
+      "chapter_id": "chapter_04",
+      "cycle": 2,
+      "evidence": "Ch1 line 87: 'I am Aldric of the Order of the Veil. Knight-paladin of the Fourth Seal.' Ch4 line 1004: 'I am \u2014 I was \u2014 Aldric, Knight-Servitor of the Order of the\u2014'. Continuity sheet confirms 'knight-paladin of the Order of the Veil's Fourth Seal.'",
+      "finding_id": "C-02",
+      "problem": "Aldric introduces himself as 'Knight-paladin of the Fourth Seal' in Ch1 (line 87) and as 'Knight-Servitor' in Ch4 (line 1004). These are different rank designations. The continuity sheet confirms 'knight-paladin' as canonical.",
+      "rewrite_direction": "Change 'Knight-Servitor' at line 1004 to 'Knight-paladin of the Fourth Seal' (or an appropriate truncation given the interrupted speech: 'Knight-paladin of the\u2014').",
+      "severity": "HIGH",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Chapter word count is >= 5000 while preserving heading contract.",
+      "chapter_id": "chapter_04",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:1",
+      "finding_id": "length_chapter_04_min_words",
+      "problem": "Chapter is below projected_min_words (4684 < 5000).",
+      "rewrite_direction": "Add causally necessary scene material that strengthens the chapter engine, increases pressure, and lands the planned state shift without filler.",
+      "severity": "HIGH",
+      "source": "length_guardrail",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "2291ab0965ab0433221b208daef8a29d6072978245a281c4f40a6e84834a93c3",
+  "must_fix_count": 9,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This novel must commit fully to its own weirdness. A System-blind con man with a dead paladin and a dead assassin arguing in his skull is inherently absurd, and the novel should let that absurdity live alongside genuine grief, genuine violence, and genuine mystery without apologizing for the tonal range. The darkest moments and the funniest moments may occupy the same scene. When they do, let both registers operate simultaneously \u2014 do not sacrifice comedy for gravitas or gravitas for comedy. Risk means specificity: the specific sensation of a body doing things you did not tell it to do, the specific comedy of a dead paladin critiquing your hygiene while you're running for your life, the specific horror of carrying incomplete people whose memories have holes, the specific shame of learning that your eleven years of fraud may have killed people. When in doubt between too raw and too safe, choose raw. The novel's emotional range should be wider than any single genre label would suggest.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism in the narration of violence, bodily experience, moral compromise, or physical consequence is a draft-level failure. Maren is a con man who has seen hard things and done dirty work in poor villages for eleven years \u2014 his narration should not flinch where he would not flinch. The style bible's sensory bias toward tactile and proprioceptive detail means physical consequence must be rendered through the body: what it feels like to throw up, to kill someone, to have your muscles operate without your consent, to perform a ritual that requires you to open yourself to contamination. Summary and abstraction at the moment of consequence is always worse than presence.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for all characters except Aldric, whose low contraction level is a deliberate character marker that should erode over the course of the novel. Uncontracted forms in other characters' speech are reserved for emphasis, deliberation, or ceremony. In a world of practical people doing unglamorous work, stiff diction is the exception.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate between hot and quiet chapters as a structural principle. No two consecutive chapters should open the same way \u2014 if one opens with action, the next should open with interiority or setting; if one opens with dialogue, the next should open with physical sensation or observation. Vary scene count between chapters: compressed single-scene chapters after multi-scene ones. Let quiet chapters stay quiet \u2014 do not insert action beats or revelations to maintain pace. The pacing engine is Maren's voice and the interplay between the three internal consciousnesses, not external plot pressure.",
+      "diction": "Colloquial with earned elevation. Default register is smart but not literary \u2014 a con man's English, precise about people and vague about feelings. Elevation reserved for moments of genuine awe, grief, or the rare glimpse of something beautiful. Fantasy-register portentousness is a draft-level failure \u2014 no 'ancient darkness' or 'powers beyond comprehension.' The world is weird and dangerous and ordinary all at once, and the prose should match.",
+      "forbidden_drift_patterns": [
+        "Sentence fragments imitating action-movie or thriller prose \u2014 subject-dropping and article-stripping for false urgency",
+        "Semicolon-heavy scholarly narration that distances the reader from embodied experience",
+        "Present-tense micro-shifts for intensity \u2014 the novel is past tense throughout, no exceptions",
+        "Filtering words ('he saw,' 'he felt,' 'he noticed,' 'he realized') when direct rendering is available",
+        "Fantasy-voice portentousness: 'ancient,' 'dark power,' 'something stirred,' 'a presence beyond reckoning'",
+        "Comic narration that winks at the reader or breaks the fourth wall instead of committing to the situation",
+        "Repeated metaphor templates \u2014 if a comparison structure appears twice in a chapter, the second instance is a tic",
+        "Emotional summary replacing scene presence: 'He was overwhelmed by grief' instead of rendering what grief looks and feels like in the body"
+      ],
+      "narrative_distance": "Close third person, locked to Maren throughout. Aldric and Vess are experienced as internal voices \u2014 they speak as italicized dialogue within Maren's consciousness, clearly distinguished from his own thoughts. Maren cannot access their thoughts directly; he hears what they say to him, not what they think. The narration inherits Maren's sensory limitations: the System interface is always mediated through Aldric or Vess's descriptions, never rendered directly until the single exception in Chapter 17.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Varied by emotional register. Default: medium-length sentences with periodic short declaratives for grounding. When Maren is performing (lying, charming, faking): smoother, more controlled rhythm with longer subordinate-clause chains. When Maren is honest or overwhelmed: choppier, more fragmented, more concrete. Fight scenes: visceral and slightly disoriented, reflecting Maren's System-blindness \u2014 sensation and proprioception without the visual data everyone else has. Quiet scenes: allow longer, more observational sentences. The rhythm should breathe differently in every chapter.",
+      "sensory_bias": [
+        "tactile \u2014 Maren's primary sense channel; the physical world is how he navigates System-blindness",
+        "auditory \u2014 the hum of System activity, Aldric and Vess's voices, the specific sounds of quest-light and contamination",
+        "proprioceptive \u2014 Maren's body doing things he didn't choose; the internal sensation of carrying fragments; the physical cost of consumption",
+        "olfactory \u2014 contamination has smell; ritual has smell; the world stinks in specific ways that the System-sighted don't notice because they navigate by interface"
+      ]
+    }
+  }
+}

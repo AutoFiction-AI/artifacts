@@ -1,0 +1,69 @@
+{
+  "chapter_id": "chapter_17",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_17_F001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_02/chapters/chapter_17.md:187; snapshots/cycle_02/chapters/chapter_17.md:191; snapshots/cycle_02/chapters/chapter_17.md:289; snapshots/cycle_02/chapters/chapter_17.md:423; snapshots/cycle_02/chapters/chapter_17.md:461",
+      "problem": "Sanitization via stacked moral safety valves: immediately after the retirement call, multiple characters repeatedly reassure Anika that the choice was unquestionably right. The repetition defuses the earned discomfort around money, power, and loss instead of letting consequence stay jagged on-page.",
+      "rewrite_direction": "Revise the reassurance cluster in snapshots/cycle_02/chapters/chapter_17.md:187-195, snapshots/cycle_02/chapters/chapter_17.md:281-295, snapshots/cycle_02/chapters/chapter_17.md:419-427, and snapshots/cycle_02/chapters/chapter_17.md:459-467. Keep at most one explicit validating line; replace the rest with conflicted behavior, silence, or materially costly decisions (billing, transport, treatment timing) that preserve moral ambiguity.",
+      "acceptance_test": "Pass if, in the revised spans, there is no more than one explicit reassurance line (e.g., 'right thing,' 'proud,' 'not on you') and at least two observable beats show unresolved fallout without editorial comfort language; fail otherwise."
+    },
+    {
+      "finding_id": "chapter_17_F002",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_02/chapters/chapter_17.md:271; snapshots/cycle_02/chapters/chapter_17.md:301; snapshots/cycle_02/chapters/chapter_17.md:381; snapshots/cycle_02/chapters/chapter_17.md:443; snapshots/cycle_02/chapters/chapter_17.md:487",
+      "problem": "After the decisive retirement beat, the chapter runs a long aftermath that restates the same consequence set (medical stop, money pressure, supportive framing) across multiple scenes, which reduces forward pressure and blunts the chapter's terminal impact.",
+      "rewrite_direction": "Compress snapshots/cycle_02/chapters/chapter_17.md:271-491 into two distinct aftermath movements: (1) immediate institutional/public consequence and (2) one private domestic consequence turn. Merge redundant logistics/emotion loops in snapshots/cycle_02/chapters/chapter_17.md:309-341, snapshots/cycle_02/chapters/chapter_17.md:381-389, and snapshots/cycle_02/chapters/chapter_17.md:459-467.",
+      "acceptance_test": "Pass if the revised aftermath includes exactly one sponsor-status conversation and one imaging-logistics conversation, and the final paragraph introduces a new unresolved complication not already stated earlier in the chapter; fail if consequence beats are restated in parallel scenes."
+    },
+    {
+      "finding_id": "chapter_17_F003",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_02/chapters/chapter_17.md:199; snapshots/cycle_02/chapters/chapter_17.md:203; snapshots/cycle_02/chapters/chapter_17.md:211; snapshots/cycle_02/chapters/chapter_17.md:345; snapshots/cycle_02/chapters/chapter_17.md:363",
+      "problem": "Institutional confrontation dialogue trends toward policy-brief cadence ('auto-freezes,' 'review window,' status phrasing), and Morales/Lindsay sometimes converge into similarly explanatory rhythm instead of sharper idiolect contrast under pressure.",
+      "rewrite_direction": "Rework the exchanges at snapshots/cycle_02/chapters/chapter_17.md:199-223 and snapshots/cycle_02/chapters/chapter_17.md:359-369 so Morales stays evidence-first and clipped, while Lindsay stays transactional and evasive. Introduce interruption/cutoff beats and subtext-bearing fragments instead of consecutive full explanatory lines.",
+      "acceptance_test": "Pass if each revised exchange contains at least one line per speaker that is voice-unique (cannot be swapped without sounding wrong), includes at least two interruption/cutoff beats, and contains no back-to-back long policy-exposition lines; fail otherwise."
+    },
+    {
+      "finding_id": "chapter_17_F004",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_02/chapters/chapter_17.md:131; snapshots/cycle_02/chapters/chapter_17.md:179; snapshots/cycle_02/chapters/chapter_17.md:219; snapshots/cycle_02/chapters/chapter_17.md:359; snapshots/cycle_02/chapters/chapter_17.md:463",
+      "problem": "A recurring blocking formula ('looked at') appears repeatedly after the midpoint, flattening sentence texture and signaling autopilot staging instead of motive-specific action.",
+      "rewrite_direction": "Vary the repeated 'looked at' constructions in snapshots/cycle_02/chapters/chapter_17.md:131, snapshots/cycle_02/chapters/chapter_17.md:179, snapshots/cycle_02/chapters/chapter_17.md:219, snapshots/cycle_02/chapters/chapter_17.md:359, snapshots/cycle_02/chapters/chapter_17.md:463, and nearby beats through concrete alternatives (checking gait, avoiding eye contact, challenging posture, object-focused displacement).",
+      "acceptance_test": "Pass if the exact phrase 'looked at' appears no more than twice in the revised chapter section corresponding to lines 120-480 and each replacement beat encodes a distinct intention visible on the page; fail otherwise."
+    },
+    {
+      "finding_id": "chapter_17_F005",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_02/chapters/chapter_17.md:115; snapshots/cycle_02/chapters/chapter_17.md:225; snapshots/cycle_02/chapters/chapter_17.md:227; snapshots/cycle_02/chapters/chapter_17.md:253",
+      "problem": "Mechanical stress-tell deployment: counting/math coping and explicit meta-labels ('command voice'/'boundary voice') read like style-profile tags rendered directly, which makes the prose feel schematic in key emotional pivots.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_17.md:115-120, snapshots/cycle_02/chapters/chapter_17.md:225-227, and snapshots/cycle_02/chapters/chapter_17.md:253-255. Keep one counting behavior as a tell, but replace other instances with fresh sensory/behavioral detail; remove explicit voice-category labels and show the shift through diction and turn-taking.",
+      "acceptance_test": "Pass if the revised spans contain only one explicit counting/math self-soothing beat and no abstract labels like 'command voice' or 'boundary voice,' while the power shift is still inferable from spoken phrasing and actions; fail otherwise."
+    }
+  ],
+  "summary": "Chapter 17 is causally coherent and tense-consistent, with strong embodied injury detail and clear continuity alignment on the medical retirement event. It still fails review due to a HIGH sanitization pattern (stacked moral safety valves after the key choice), plus medium-level pacing diffusion, institutional dialogue homogenization, and recurring prose formulas that flatten texture.",
+  "coverage_scene_ids": [
+    "arrival_and_warmup",
+    "semifinal_match_and_pain_return",
+    "medical_timeout_and_retirement",
+    "institutional_fallout",
+    "home_aftermath"
+  ]
+}

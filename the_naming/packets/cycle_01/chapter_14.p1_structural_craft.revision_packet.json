@@ -1,0 +1,108 @@
+{
+  "acceptance_targets": [
+    "[ch14_continuity_headcount_drift] Pass if every explicit crowd count in snapshots/cycle_01/chapters/chapter_14.md:7, snapshots/cycle_01/chapters/chapter_14.md:35, snapshots/cycle_01/chapters/chapter_14.md:103, and snapshots/cycle_01/chapters/chapter_14.md:207 is either canon-consistent with the people present in snapshots/cycle_01/chapters/chapter_14.md:17 or explicitly scoped as a subset. Fail if the naming room is still called forty-three people while the custodians remain present, or if Jin still refers to forty-two listeners/strangers without qualification.",
+    "[ch14_gitta_example_line_leakage] Pass if the revised lines at snapshots/cycle_01/chapters/chapter_14.md:43 and snapshots/cycle_01/chapters/chapter_14.md:97-101 no longer contain the exact sentence 'He is my grandson.' and no longer pair a sentence about what the naming asks with the exact follow-up 'This is the truth,' while Gitta still reads as short, careful, and low-contraction. Fail if either borrowed sentence pattern remains recognizable on the page.",
+    "[ch14_sanitized_reassurance_in_ending] Pass if snapshots/cycle_01/chapters/chapter_14.md:195-213 end on concrete gesture, bodily sensation, or social pressure while leaving Fen's act legibly unresolved. Fail if the revised passage still explicitly labels the scene as 'family,' states that Fen is 'choosing her,' or tells the reader that the break has already found a new stable shape.",
+    "[FA-008] Pass if the revised line at snapshots/cycle_01/FINAL_NOVEL.md:3280 no longer reads as a near-verbatim variant of the style-bible exemplar while still sounding recognizably like Gitta. Fail if the sentence keeps the same two-part formulation about the naming asking for truth and Gitta supplying it."
+  ],
+  "chapter_id": "chapter_14",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if every explicit crowd count in snapshots/cycle_01/chapters/chapter_14.md:7, snapshots/cycle_01/chapters/chapter_14.md:35, snapshots/cycle_01/chapters/chapter_14.md:103, and snapshots/cycle_01/chapters/chapter_14.md:207 is either canon-consistent with the people present in snapshots/cycle_01/chapters/chapter_14.md:17 or explicitly scoped as a subset. Fail if the naming room is still called forty-three people while the custodians remain present, or if Jin still refers to forty-two listeners/strangers without qualification.",
+      "chapter_id": "chapter_14",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:7; snapshots/cycle_01/chapters/chapter_14.md:17; snapshots/cycle_01/chapters/chapter_14.md:35; snapshots/cycle_01/chapters/chapter_14.md:103; snapshots/cycle_01/chapters/chapter_14.md:207",
+      "finding_id": "ch14_continuity_headcount_drift",
+      "problem": "The chapter's explicit crowd counts do not reconcile with canon. Line 17 places Fasa, Olet, and three assistant custodians in the hall, but lines 35 and 103 reduce the naming room to forty-three people, and lines 7 and 207 call Jin's audience forty-two. The continuity sheet fixes the shrine population at forty-three family members plus five custodians, so these numbers read as contradiction rather than selective perception.",
+      "rewrite_direction": "Reconcile the explicit counts in snapshots/cycle_01/chapters/chapter_14.md:7, snapshots/cycle_01/chapters/chapter_14.md:35, snapshots/cycle_01/chapters/chapter_14.md:103, and snapshots/cycle_01/chapters/chapter_14.md:207 against the people physically present in snapshots/cycle_01/chapters/chapter_14.md:17. If Jin is counting only family members or only other travelers, qualify that scope on the page; otherwise replace the numerals with canon-consistent counts.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if the revised lines at snapshots/cycle_01/chapters/chapter_14.md:43 and snapshots/cycle_01/chapters/chapter_14.md:97-101 no longer contain the exact sentence 'He is my grandson.' and no longer pair a sentence about what the naming asks with the exact follow-up 'This is the truth,' while Gitta still reads as short, careful, and low-contraction. Fail if either borrowed sentence pattern remains recognizable on the page.",
+      "chapter_id": "chapter_14",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:43; snapshots/cycle_01/chapters/chapter_14.md:97; snapshots/cycle_01/chapters/chapter_14.md:101",
+      "finding_id": "ch14_gitta_example_line_leakage",
+      "problem": "Gitta's confession lifts calibration-only language from the style bible closely enough to count as example-line leakage. Line 43 repeats the sentence 'He is my grandson,' and lines 97-101 reproduce the same paired logic as the forbidden calibration line about the naming asking for truth. That makes the scene sound derived from its guide text instead of organically written in Gitta's voice.",
+      "rewrite_direction": "Recast Gitta's lines in snapshots/cycle_01/chapters/chapter_14.md:43 and snapshots/cycle_01/chapters/chapter_14.md:97-101 into new wording that keeps her low-contraction, plain, deliberate register without sentence-level overlap with any calibration `example_lines` in outline/style_bible.json. Preserve the content of her claim and refusal, but not the guide's phrasing.",
+      "severity": "HIGH",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if snapshots/cycle_01/chapters/chapter_14.md:195-213 end on concrete gesture, bodily sensation, or social pressure while leaving Fen's act legibly unresolved. Fail if the revised passage still explicitly labels the scene as 'family,' states that Fen is 'choosing her,' or tells the reader that the break has already found a new stable shape.",
+      "chapter_id": "chapter_14",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:195; snapshots/cycle_01/chapters/chapter_14.md:199; snapshots/cycle_01/chapters/chapter_14.md:201; snapshots/cycle_01/chapters/chapter_14.md:203; snapshots/cycle_01/chapters/chapter_14.md:209; snapshots/cycle_01/chapters/chapter_14.md:213",
+      "finding_id": "ch14_sanitized_reassurance_in_ending",
+      "problem": "The closing movement over-interprets Fen's return into a consoling lesson. Phrases like 'he was choosing her,' 'something broken that had found a different way to hold together,' and 'unmistakably, family' reassure the reader and Jin too quickly after a theft of identity, dead parents on the road, and a family imploding in real time. That is sanitization drift by moral safety valve: the prose supplies redemptive meaning before the damage has been allowed to stay jagged.",
+      "rewrite_direction": "Rework snapshots/cycle_01/chapters/chapter_14.md:195-213 so the scene remains physically present but less adjudicated. Keep Fen sitting beside Gitta and Jin recognizing the pressure on his own lie, but strip the abstract labels that turn the tableau into proof that confession heals. Let Jin register ambivalence, debt, fear, or horror alongside attachment, and let the image end as a charged fact rather than a narrated resolution.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if the revised line at snapshots/cycle_01/FINAL_NOVEL.md:3280 no longer reads as a near-verbatim variant of the style-bible exemplar while still sounding recognizably like Gitta. Fail if the sentence keeps the same two-part formulation about the naming asking for truth and Gitta supplying it.",
+      "chapter_id": "chapter_14",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:3280",
+      "finding_id": "FA-008",
+      "problem": "Style-bible leakage. Gitta's line here tracks a non-copyable calibration example from the style bible too closely: 'The naming asks for truth. This is the truth.' That makes the sentence read like scaffolding imported from the guide instead of language earned by the scene.",
+      "rewrite_direction": "Recast Gitta's declaration at snapshots/cycle_01/FINAL_NOVEL.md:3276 and snapshots/cycle_01/FINAL_NOVEL.md:3280 so it still sounds low-contraction, severe, and declarative in Gitta's register without reproducing the style-bible exemplar's syntax. Keep the moral force and self-authorization, but change the phrasing shape itself.",
+      "severity": "HIGH",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "b6f12bbe25385e94c0547579452b6cfed1499ad5a98b5fdb63fa84a1ce05e5a0",
+  "must_fix_count": 4,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This novel operates in the register between domestic realism and the uncanny. The manifestations must be rendered matter-of-factly \u2014 not with horror-genre dread, not with fantasy-genre wonder, but with the flat strangeness of an ordinary impossible thing. A four-year-old rubbing her ear in an old woman's gesture IS strange; the prose should let it be strange without managing the reader's response. The families' emotional reactions provide intensity; the narrative voice stays grounded. Commit fully to the strangeness without explaining it away and without escalating it into the supernatural spectacular. Similarly, commit to the difficult emotional material without providing moral commentary, narrator-managed redemption arcs, or reassurance that things will be all right. Jin's shame, Suna's hidden fracture, Gitta's calculated lie, Bett's unperformed grief, Venn's rigidity \u2014 none of these should be softened to make the characters more sympathetic. Trust the reader to hold complexity. The novel's refusal to explain the manifestations definitively is a creative risk \u2014 resist the pressure to resolve the ambiguity in the final chapters. The families act in the face of genuine uncertainty, and so must the reader.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism for this novel's difficult material \u2014 a child's anaphylactic reaction, a drowned boy, a stolen infant, the shame of spousal abandonment, coerced participation in ritual, the uncanny experience of watching your child develop another person's traits, the sexual and emotional charge between Arash and Bett \u2014 is a craft failure. Each of these situations demands physical and emotional specificity. Summary, softening, moral self-reassurance, and narrator-managed emotional distance all constitute euphemism. A throat swelling shut must be rendered as a throat swelling shut. A man whose wife left must carry the specific texture of that shame, not a generic sadness. A woman naming her dead child must feel the name in her mouth. When in doubt between too raw and too safe, choose raw.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for most characters. Uncontracted forms are reserved for Olet's institutional voice, Gitta's careful precision, Venn's formal commands, and Fasa's ritual language. Even these characters should contract in casual or private speech. If two characters are in a scene and both speak without contractions, at least one voice is calibrated wrong. When in doubt, contract.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 2,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate intensity levels across consecutive chapters. A crisis chapter must be followed by aftermath, reflection, or quiet \u2014 never by another crisis at the same pitch. Vary scene count (1-3 scenes per chapter), dialogue density (the meal chapter should be mostly action and sensory detail; the debate chapter should be dialogue-heavy), and the ratio of interiority to external action. Chapters 3, 9, and 11 should feel spacious and observational. Chapters 10, 13, and 14 should feel compressed and relentless. Chapter 16 is a single sustained scene between two people. Chapter 18 is expansive and polyphonic. No two consecutive chapters should share structural shape, dominant sense, or emotional register.",
+      "diction": "Grounded, precise, mid-register. Neither lyrical nor stripped. The prose earns beauty through specificity rather than ornamentation, and earns force through precision rather than intensity. Allow images to land without explaining them. Avoid both prestige-literary arabesques and genre-thriller bluntness. The goal is the transparency of good realist prose that becomes uncanny only when the material itself is uncanny \u2014 the manifestations should be rendered with the same flatness as a meal or a sleeping arrangement, and the flatness should make them stranger.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person, rotating among five POV characters by chapter assignment (Suna, Jin, Fasa, Leni, Venn). The narration sits behind one character's eyes per chapter, with full access to their thoughts and perceptions. The POV character's emotional state colors the prose \u2014 Suna's chapters are more cataloguing and load-bearing, Jin's more fragmented and physically grounded, Fasa's more rhythmic and pattern-seeking, Leni's more colloquial and observational, Venn's more declarative and hierarchical. The narrator's baseline voice provides continuity across POV shifts without flattening the differences.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Variable, following the POV character's internal tempo and the scene's intensity. Medium-length sentences are the default. Compress for crisis and impact \u2014 shorter sentences during manifestations, confrontations, and moments of physical fear. Elongate for reflection, beauty, and communal warmth. Avoid sustained barrages in either direction: no thriller-staccato runs longer than three sentences, no lyrical elongation that loses the reader's breath. The prose should feel like variable breathing \u2014 natural acceleration and deceleration, with occasional held breath at moments of revelation.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

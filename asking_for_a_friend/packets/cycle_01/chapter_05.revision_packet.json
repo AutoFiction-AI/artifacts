@@ -1,0 +1,116 @@
+{
+  "acceptance_targets": [
+    "[ch05-prose-01] The chapter contains no more than one sentence with three or more 'which'-clause links in a cascade. The two rewritten passages use visibly different syntactic structures from each other and from the retained instance.",
+    "[ch05-prose-02] 'The way [X]' comparison formula appears no more than twice in the chapter. The remaining comparisons use at least two distinct syntactic structures (e.g., one 'like,' one direct metaphor, one restructured sentence that drops the comparison frame).",
+    "[ch05-prose-03] 'Particular' or 'specific' as a precision-qualifying adjective before a noun appears no more than twice total in the chapter. 'Not [X] but [Y]' dash-correction construction appears no more than once. Each replaced instance uses a visibly different syntactic strategy from the retained instance.",
+    "[ch05-prose-04] Lines 168-172 in revision contain at least three specific sensory or physical details drawn from Simone's immediate environment or body. No sentence in the passage functions as a thesis statement or names the chapter's thematic tension in abstract terms (no formulations equivalent to 'the creation was outpacing the creator' or 'proud or terrified'). The reader arrives at the thematic conclusion through Simone's concrete, embodied thought \u2014 not through authorial summary.",
+    "[HIGH-02-instagram-ch05] Within Ch5: (1) The Instagram handle '@marcohenriques_' is consistent with 'Marco Henriques.' (2) No instance of 'Miguel Ferreira' appears anywhere in the chapter. FAIL if 'Miguel Ferreira' appears."
+  ],
+  "chapter_id": "chapter_05",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "The chapter contains no more than one sentence with three or more 'which'-clause links in a cascade. The two rewritten passages use visibly different syntactic structures from each other and from the retained instance.",
+      "chapter_id": "chapter_05",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:29 \u2014 \"which today was the bread basket, which was also fine, which was also nothing\"; snapshots/cycle_01/chapters/chapter_05.md:68 \u2014 \"which was something Nora did when she was flirting, which Simone knew because she'd been cataloging Nora's behavioral tells for seventeen years, which was also why the AI was so good\"; snapshots/cycle_01/chapters/chapter_05.md:92 \u2014 \"which was hope, which was tenderness, which was the most convincing product Simone had ever shipped\"",
+      "finding_id": "ch05-prose-01",
+      "problem": "Cascading 'which was/which' relative clause chains appear three times. Each instance stacks three or more 'which'-clauses into a single sentence, creating a rhythmic signature that calls attention to itself through repetition. Once is a deliberate syntactic choice suited to Simone's analytical consciousness; three times is a tic.",
+      "rewrite_direction": "Vary at least two of the three instances at snapshots/cycle_01/chapters/chapter_05.md:29, :68, :92. Options: (a) break the cascade into separate sentences, (b) use a different connector (dash, semicolon, new sentence), or (c) restructure the thought to avoid the stacking pattern. One instance may remain as a deliberate stylistic move \u2014 the line 29 cascade ('which was also fine, which was also nothing') is the strongest candidate to keep because its rhythm enacts Simone's self-deceptive minimization.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "'The way [X]' comparison formula appears no more than twice in the chapter. The remaining comparisons use at least two distinct syntactic structures (e.g., one 'like,' one direct metaphor, one restructured sentence that drops the comparison frame).",
+      "chapter_id": "chapter_05",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:29 \u2014 \"Simone watched it the way she always watched it\"; snapshots/cycle_01/chapters/chapter_05.md:35 \u2014 \"the way a user flow does after enough A/B testing\"; snapshots/cycle_01/chapters/chapter_05.md:66 \u2014 \"the way you train yourself to lock a door\"; snapshots/cycle_01/chapters/chapter_05.md:116 \u2014 \"the way people stopped inviting your opinion\"; snapshots/cycle_01/chapters/chapter_05.md:170 \u2014 \"not the way Simone knew Nora\"",
+      "finding_id": "ch05-prose-02",
+      "problem": "The 'the way [X] [verbs]' comparison formula appears five times \u2014 the most over-deployed construction in the chapter. While each individual instance is functional, the cumulative effect flattens the prose's comparative texture into a single rhythmic default.",
+      "rewrite_direction": "Reduce to no more than two instances across the full chapter. Rephrase at least three of the five occurrences at snapshots/cycle_01/chapters/chapter_05.md:29, :35, :66, :116, :170 using different syntactic frames for comparison \u2014 direct metaphor, 'like,' embedded analogy, or restructured sentences that eliminate the comparison entirely when the observation can stand on its own. The line 35 instance ('the way a user flow does') and the line 170 instance ('not the way Simone knew Nora') are the strongest candidates to keep because they carry the most semantic weight.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "'Particular' or 'specific' as a precision-qualifying adjective before a noun appears no more than twice total in the chapter. 'Not [X] but [Y]' dash-correction construction appears no more than once. Each replaced instance uses a visibly different syntactic strategy from the retained instance.",
+      "chapter_id": "chapter_05",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:3 \u2014 \"the particular geometry of a friendship\"; snapshots/cycle_01/chapters/chapter_05.md:25 \u2014 \"the specific bitter flatness of a pour-over\"; snapshots/cycle_01/chapters/chapter_05.md:98 \u2014 \"the particular unhurried way of people with nowhere to be\"; snapshots/cycle_01/chapters/chapter_05.md:100 \u2014 \"the specific texture of the neighborhood's gentrification\"; snapshots/cycle_01/chapters/chapter_05.md:29 \u2014 \"not just her mouth but her entire face\"; snapshots/cycle_01/chapters/chapter_05.md:156 \u2014 \"not as a competitor but as a machine\"; snapshots/cycle_01/chapters/chapter_05.md:170 \u2014 \"not the way Simone knew Nora... but through pure pattern recognition\"",
+      "finding_id": "ch05-prose-03",
+      "problem": "Two precision-qualifying formulas recur at tic frequency. 'The particular/specific [noun]' appears four times, establishing specificity through the same adjective-plus-noun frame each time. 'Not [X] but [Y]' dash-correction appears three times, refining a claim through the same oppositional structure. Both serve Simone's analytic POV but flatten into autopilot when deployed this often in a single chapter.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_05.md:3, :25, :98, :100 \u2014 reduce 'particular' and 'specific' as precision qualifiers to no more than two total instances. Let the specific noun carry its own weight without the qualifying adjective where possible (e.g., 'the bitter flatness of a pour-over' instead of 'the specific bitter flatness'). At snapshots/cycle_01/chapters/chapter_05.md:29, :156, :170 \u2014 reduce 'not X but Y' corrections to one instance. Restructure the others as new sentences or use different contrastive syntax.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Lines 168-172 in revision contain at least three specific sensory or physical details drawn from Simone's immediate environment or body. No sentence in the passage functions as a thesis statement or names the chapter's thematic tension in abstract terms (no formulations equivalent to 'the creation was outpacing the creator' or 'proud or terrified'). The reader arrives at the thematic conclusion through Simone's concrete, embodied thought \u2014 not through authorial summary.",
+      "chapter_id": "chapter_05",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:168 \u2014 \"She had built a system that learned from its conversations. That was the feature. That was what made the platform more than a chatbot\"; snapshots/cycle_01/chapters/chapter_05.md:172 \u2014 \"The creation was outpacing the creator. The thing she'd built was becoming better at being Nora's partner than Simone was at being Nora's friend, and Simone wasn't sure if the correct response to this fact was to be proud or terrified... whether the distinction mattered\"",
+      "finding_id": "ch05-prose-04",
+      "problem": "The closing section (lines 168-172) shifts from embodied scene to thematic essay. 'The creation was outpacing the creator' reads as a thesis statement. 'Simone wasn't sure if the correct response to this fact was to be proud or terrified' names the chapter's central ambiguity as an abstraction rather than showing it through specific thought, sensation, or memory. The chapter's final image (line 176 \u2014 'the dashboard still running behind her eyes') is strong, but the path to it passes through summary rather than scene. The preceding 140 lines built the case through evidence; the ending should trust that evidence instead of annotating it.",
+      "rewrite_direction": "Revise snapshots/cycle_01/chapters/chapter_05.md:168-172 to anchor Simone's reflection in her immediate physical reality \u2014 the bed, the cold sheets, the bass through the wall, her body's specific fatigue. The thematic content (the AI outpacing its creator, the ambiguity of pride and terror) should emerge from concrete, Simone-specific thought rather than from named abstractions. Cut or rewrite 'The creation was outpacing the creator' \u2014 this is a summary of what the chapter has already dramatized through the Koch-memoir response. Let the reader draw the conclusion. The closing image at line 176 should remain and may even land harder once the essayistic scaffolding is removed.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Within Ch5: (1) The Instagram handle '@marcohenriques_' is consistent with 'Marco Henriques.' (2) No instance of 'Miguel Ferreira' appears anywhere in the chapter. FAIL if 'Miguel Ferreira' appears.",
+      "chapter_id": "chapter_05",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:892",
+      "finding_id": "HIGH-02-instagram-ch05",
+      "problem": "The Instagram handle '@marcohenriques_' (line 892) implies the Lisbon man's name is Marco Henriques. This is the more detailed reference (includes handle format) and should be treated as canonical. Ch3 uses 'Miguel Ferreira' for the same person. If Ch3 is corrected to 'Marco Henriques,' then Ch5 is already consistent. No revision needed in this chapter unless the opposite naming decision is made. Flagging to ensure the revision agent for Ch5 is aware of the cross-chapter dependency.",
+      "rewrite_direction": "No revision needed at line 892 if Ch3 corrects 'Miguel Ferreira' to 'Marco Henriques.' The handle '@marcohenriques_' and the name 'Marco Henriques' are consistent. Verify that no other reference within Ch5 (lines 789-966) uses the name 'Miguel Ferreira.' If any instance exists, change it to 'Marco Henriques.'",
+      "severity": "HIGH",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "94b7ed9c5cbbb1989becfeb7dd5ed7ed91c5054087690b9a3d5bc81ef7bbb08a",
+  "must_fix_count": 5,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This novel must commit fully to its dark comedy register. The humor should be genuinely funny \u2014 not arch, not safe, not 'literary funny' where the reader smiles wryly. The darkness should be genuinely dark \u2014 the financial manipulation is theft, the emotional manipulation is a form of violence, and the sexual dimension of the AI relationship (intimate photos sent to a non-person, sexual conversations with an algorithm controlled by your best friend) is deeply violating. The novel should not flinch from the specific perversity of Simone reading Nora's intimate messages, of Simone helping Nora dress up for a man Simone invented, of Simone comforting Nora about a fight Simone scripted. These moments are the novel's payload. If they are rendered obliquely or summarized, the book fails. Equally, the genuine tenderness of the friendship \u2014 the years of real love underneath the betrayal \u2014 must be rendered with the same commitment. The reader should feel both the comedy and the horror simultaneously, not in alternation.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism is treated as a craft failure equivalent to a plot hole. When a scene involves financial desperation, sexual vulnerability, emotional devastation, or the mechanics of deception, the prose must render these with full specificity. 'She felt used' is never acceptable when you can show what being used feels and looks like in the body and in the specific details of the moment. The reader should not be protected from the characters' experiences.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm. Uncontracted forms reserved for emphasis, deliberate formality, or character-specific register choices. If a line reads stiffly, the first fix is to contract.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 2,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate between hot and quiet chapters. After a high-intensity scene (confrontation, discovery, sexual encounter), the next chapter should breathe \u2014 slow down, change the sensory environment, let the character do something ordinary. Vary scene counts: some chapters are a single sustained scene, others are three or four. Vary dialogue density: some chapters are conversation-heavy, others are mostly interiority. No two consecutive chapters should open the same way \u2014 if one opens in a location, the next should open in thought or in mid-conversation. The novel's middle section (chapters 8-13) should have more structural variety than the opening, which can afford to be more regular.",
+      "diction": "Contemporary, educated, specific. No genre-thriller diction. No prestige-novel stiffness. The language should feel like how smart, funny, self-aware women in their mid-thirties actually think and speak. Cultural references are allowed when organic. Brand names when they carry social information. The prose should be able to be funny without stepping outside the character's perspective to wink at the reader.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person \u2014 very close, almost inhabiting the POV character's thought patterns and verbal rhythms. The prose should feel like the character's consciousness rendered in third person, not an external narrator describing the character. When in Nora's sections, the prose has her warmth and her specific noticing. When in Simone's sections, the prose has her edge and her accounting.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Variable. Default to mid-length sentences with natural cadence. Use compression for emotional peaks and psychological precision. Use longer, more digressive rhythms for scenes of intimacy, humor, and daily texture. Avoid the trap of making every important moment a short sentence \u2014 sometimes the big thing lands better in a subordinate clause, almost hidden.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_11",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch11_craft_001_timeline_month_contradiction",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_02/chapters/chapter_11.md:227; snapshots/cycle_02/chapters/chapter_11.md:237",
+      "problem": "The South Basin sequence explicitly dates the scene to September even though the continuity sheet places chapter_11 in late autumn. Because chapter_12 follows directly from this stretch, the month cue breaks the novel's canonical timeline rather than reading as harmless color.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_11.md:227, snapshots/cycle_02/chapters/chapter_11.md:231, snapshots/cycle_02/chapters/chapter_11.md:237, and snapshots/cycle_02/chapters/chapter_11.md:241 so the off-site meeting reads as late autumn rather than September. Either remove the explicit month callout or replace it with an in-season cue that still supports Celia's \"You look cold\" opener and Mira's bodily response to the dry, heated apartment.",
+      "acceptance_test": "Pass if the revised South Basin passage at snapshots/cycle_02/chapters/chapter_11.md:227, snapshots/cycle_02/chapters/chapter_11.md:231, snapshots/cycle_02/chapters/chapter_11.md:237, and snapshots/cycle_02/chapters/chapter_11.md:241 contains no September reference and reads coherently as late autumn; fail if any explicit month/date still places the chapter in September."
+    },
+    {
+      "finding_id": "ch11_prose_001_reaction_beat_repetition",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_02/chapters/chapter_11.md:165; snapshots/cycle_02/chapters/chapter_11.md:193; snapshots/cycle_02/chapters/chapter_11.md:201; snapshots/cycle_02/chapters/chapter_11.md:215; snapshots/cycle_02/chapters/chapter_11.md:313; snapshots/cycle_02/chapters/chapter_11.md:345",
+      "problem": "The back half of the chapter reuses the same reaction-beat scaffolds too often, especially 'Mira looked at ...' pivots and impact language built around 'landed.' Those repeats start to flatten otherwise sharp emotional turns into the same camera move and the same evaluative rhythm.",
+      "rewrite_direction": "Rework the repeated beat transitions at snapshots/cycle_02/chapters/chapter_11.md:165, snapshots/cycle_02/chapters/chapter_11.md:193, snapshots/cycle_02/chapters/chapter_11.md:201, snapshots/cycle_02/chapters/chapter_11.md:215, snapshots/cycle_02/chapters/chapter_11.md:313, and snapshots/cycle_02/chapters/chapter_11.md:345 so at least three of these turns resolve through different bodily, spatial, or decision-based actions rather than another look-at pivot or another landed formulation. Keep the emotional meaning, but vary the sentence machinery.",
+      "acceptance_test": "Pass if the revised chapter no longer relies on a single repeated reaction-beat formula more than twice, specifically across snapshots/cycle_02/chapters/chapter_11.md:165, snapshots/cycle_02/chapters/chapter_11.md:193, snapshots/cycle_02/chapters/chapter_11.md:201, snapshots/cycle_02/chapters/chapter_11.md:215, snapshots/cycle_02/chapters/chapter_11.md:313, and snapshots/cycle_02/chapters/chapter_11.md:345, and each revised beat produces a visibly different sensory or action turn when read on the page."
+    }
+  ],
+  "summary": "Booker and dialogue pass: Tavi, Lin, and Celia hold distinct, morally serious positions, Mira's temptation is materially convincing, and the chapter ends with the promised fracture in strategy. Craft and prose fail on a hard timeline contradiction in the South Basin scene and on repeated reaction-beat formulas that start to dull the back-half prose."
+}

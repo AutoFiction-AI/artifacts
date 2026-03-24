@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_04",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_04_craft_001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_01/chapters/chapter_04.md:301; snapshots/cycle_01/chapters/chapter_04.md:317; snapshots/cycle_01/chapters/chapter_04.md:321",
+      "problem": "Daro names a distinct under-floorboard song in front of the family and then frames it as exclusive access, making his private river-hearing legible to the siblings in chapter_04. That contradicts the continuity sheet's knowledge state, which says his hearing of the drowned remains hidden from his siblings until chapter_12, and it spends later revelation leverage too early.",
+      "rewrite_direction": "Revise the under-floorboard exchange at snapshots/cycle_01/chapters/chapter_04.md:279; snapshots/cycle_01/chapters/chapter_04.md:301; snapshots/cycle_01/chapters/chapter_04.md:317; snapshots/cycle_01/chapters/chapter_04.md:321 so Daro's disturbance stays ambiguous or deniable in public. Keep the hook for chapter_05, but remove the explicit claim that he alone can hear a meaningful signal; options include making him register a pressure change without naming it, letting Tovin's skepticism cut him off before he states exclusivity, or shifting the 'not for you' dynamic into subtext instead of dialogue.",
+      "acceptance_test": "In the revised passage anchored at snapshots/cycle_01/chapters/chapter_04.md:279 and snapshots/cycle_01/chapters/chapter_04.md:321, a first-time reader can tell Daro is unsettled by the water, but the siblings do not receive explicit proof that he has a privileged hearing channel; fail if the scene still contains a direct equivalent of both an identified song and a statement that it is not for the others."
+    },
+    {
+      "finding_id": "chapter_04_dialogue_001",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_01/chapters/chapter_04.md:101; snapshots/cycle_01/chapters/chapter_04.md:103; snapshots/cycle_01/chapters/chapter_04.md:107; snapshots/cycle_01/chapters/chapter_04.md:111; snapshots/cycle_01/chapters/chapter_04.md:149",
+      "problem": "The meal banter is lively, but too many speakers land the same compact, polished dry zinger. In this stretch Lale, Riva, Tovin, and Iven briefly compress into one shared sharp-tongued cadence, which softens the idiolect separation the style bible requires even though the contraction level itself is mostly correct.",
+      "rewrite_direction": "Retune the exchange around snapshots/cycle_01/chapters/chapter_04.md:91; snapshots/cycle_01/chapters/chapter_04.md:107; snapshots/cycle_01/chapters/chapter_04.md:147 so the humor remains but each speaker's line logic is more character-specific: Riva should sound task-first and physically consequential, Tovin bluntly workwoman-practical, Lale precise and measured, and Iven faster, more bartering, and more evasively flirtatious. Replace or reshape the most swappable punchlines rather than flattening the scene's comic energy.",
+      "acceptance_test": "In the revised banter anchored at snapshots/cycle_01/chapters/chapter_04.md:91 and snapshots/cycle_01/chapters/chapter_04.md:147, at least four consecutive lines can be attributed to the correct speaker without dialogue tags because their diction and rhythm are distinct; fail if two or more of Riva, Tovin, and Lale still sound interchangeable when their lines are read in isolation."
+    },
+    {
+      "finding_id": "chapter_04_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_01/chapters/chapter_04.md:85; snapshots/cycle_01/chapters/chapter_04.md:159; snapshots/cycle_01/chapters/chapter_04.md:167; snapshots/cycle_01/chapters/chapter_04.md:181; snapshots/cycle_01/chapters/chapter_04.md:203; snapshots/cycle_01/chapters/chapter_04.md:343; snapshots/cycle_01/chapters/chapter_04.md:377; snapshots/cycle_01/chapters/chapter_04.md:381",
+      "problem": "The chapter repeatedly externalizes emotional turns by making 'the room' or 'the house' the acting subject. After the third use this becomes a visible formula, and the repeated scene-state announcements start to flatten prose that is otherwise concrete and bodily.",
+      "rewrite_direction": "Rework the emotional pivot sentences at snapshots/cycle_01/chapters/chapter_04.md:85; snapshots/cycle_01/chapters/chapter_04.md:159; snapshots/cycle_01/chapters/chapter_04.md:167; snapshots/cycle_01/chapters/chapter_04.md:181; snapshots/cycle_01/chapters/chapter_04.md:203; snapshots/cycle_01/chapters/chapter_04.md:343; snapshots/cycle_01/chapters/chapter_04.md:377; snapshots/cycle_01/chapters/chapter_04.md:381 so the state shifts arrive through concrete bodies, objects, sounds, and pressures instead of the repeated room/house personification. Keep one or two of the strongest versions if desired, but stop using the same sentence strategy as the default hinge.",
+      "acceptance_test": "Across the revised beats anchored at snapshots/cycle_01/chapters/chapter_04.md:85 and snapshots/cycle_01/chapters/chapter_04.md:381, no more than two emotional turns are carried by 'the room' or 'the house' as grammatical subject; pass only if at least three of those turns are instead rendered through specific physical changes on the page such as hands stopping, floorboards shifting, bowls being set down, breath catching, or stove and rain noise changing."
+    }
+  ],
+  "summary": "The chapter cleanly lands its two-scene aftermath spine: the meal at Tovin's house restores a convincing domestic baseline, then the ledger and under-floorboard disturbance fracture it again. It still fails review because Daro's explicit under-song claim contradicts the continuity sheet's hidden knowledge state, the ensemble banter occasionally compresses several siblings into one shared punchline register, and the prose leans too often on room/house personification as an emotional shortcut."
+}

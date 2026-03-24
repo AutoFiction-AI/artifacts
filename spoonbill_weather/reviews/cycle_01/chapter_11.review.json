@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_11",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch11-prose-001",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:3; snapshots/cycle_01/chapters/chapter_11.md:9; snapshots/cycle_01/chapters/chapter_11.md:501; snapshots/cycle_01/chapters/chapter_11.md:617",
+      "problem": "The chapter repeatedly leans on clipped narration and label-stack fragments for force, including dropped-auxiliary beats like Mina's visual scan at the dock and the deferred-invoice/tide-note passages. That violates the constitution's ban on elliptical clipping in narration and turns compression into a repeated house tic instead of scene-specific rhythm.",
+      "rewrite_direction": "Recast the fragment-heavy passages anchored at snapshots/cycle_01/chapters/chapter_11.md:3, snapshots/cycle_01/chapters/chapter_11.md:9, snapshots/cycle_01/chapters/chapter_11.md:501, and snapshots/cycle_01/chapters/chapter_11.md:617 into grammatically complete clauses. Keep the compression and sensory pressure, but restore omitted verbs/auxiliaries and let the cadence come from sequencing, not from note-form fragments.",
+      "acceptance_test": "Pass if a line-by-line read of the revised passages anchored at snapshots/cycle_01/chapters/chapter_11.md:3, snapshots/cycle_01/chapters/chapter_11.md:9, snapshots/cycle_01/chapters/chapter_11.md:501, and snapshots/cycle_01/chapters/chapter_11.md:617 finds full clauses rather than noun-label bursts or dropped-auxiliary fragments; fail if any of those beats still read like shorthand notes rather than narrated sentences."
+    },
+    {
+      "finding_id": "ch11-craft-001",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:583",
+      "problem": "The aside about 'the logbook she did not yet know she would find there' breaks the style-bible close-third contract by importing future knowledge Mina cannot presently have. It also weakens suspense by pre-announcing the annex evidence instead of letting the next chapter discover it on the page.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_11.md:583, keep Mina inside present knowledge only: the remembered concrete throat of the annex, the BrightCurrent signage, and the tide logic that suggests a foot route. Remove the future-aware logbook reference and let chapter 12 reveal the artifact when Mina actually encounters it.",
+      "acceptance_test": "Pass if the revised sentence at snapshots/cycle_01/chapters/chapter_11.md:583 names only what Mina can currently remember, perceive, or infer; fail if it still references a future discovery, unrevealed evidence, or any knowledge unavailable to her in-scene."
+    },
+    {
+      "finding_id": "ch11-prose-002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:17; snapshots/cycle_01/chapters/chapter_11.md:43; snapshots/cycle_01/chapters/chapter_11.md:195; snapshots/cycle_01/chapters/chapter_11.md:245; snapshots/cycle_01/chapters/chapter_11.md:315; snapshots/cycle_01/chapters/chapter_11.md:367",
+      "problem": "The prose overuses the same negation-and-correction move ('not X', 'not the word', 'not enough and not nothing') to refine emotional beats. By the middle and late scenes that repeated self-canceling construction starts to flatten the chapter's cadence and makes distinct observations arrive in the same sentence shape.",
+      "rewrite_direction": "Vary the emotional turns anchored at snapshots/cycle_01/chapters/chapter_11.md:17, snapshots/cycle_01/chapters/chapter_11.md:43, snapshots/cycle_01/chapters/chapter_11.md:195, snapshots/cycle_01/chapters/chapter_11.md:245, snapshots/cycle_01/chapters/chapter_11.md:315, and snapshots/cycle_01/chapters/chapter_11.md:367. Keep the distinctions, but rewrite at least several of those beats as direct positive description, gesture, or sensory consequence instead of another negation-and-replacement sentence frame.",
+      "acceptance_test": "Pass if at least three of the cited beats now land through direct image, action, or positive phrasing rather than a negation-and-replacement turn, and no more than two of those passages still rely on 'not X' correction phrasing; fail if the same self-canceling construction still governs most of the cited lines."
+    }
+  ],
+  "summary": "Chapter 11 lands the required aftermath beats cleanly: Tomas's suspension is concrete and causal, Rhea and Imogen each force Mina to reckon with marriage, housing, and camp economics, and the ending sets up the no-engine annex approach without a continuity break. Dialogue and character voice are strong and distinct across Tomas, Rhea, Imogen, Beto, and Vega. The chapter fails on craft/prose because it breaks close-third once with a future-aware aside, and because the sentence-level style slips into repeated clipped-fragment narration and a repeated negation-correction tic."
+}

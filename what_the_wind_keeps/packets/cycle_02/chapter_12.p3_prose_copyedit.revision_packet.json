@@ -1,0 +1,69 @@
+{
+  "acceptance_targets": [
+    "[chapter_12_prose_001] Pass if the revised chapter leaves no more than two `as if` comparisons across the targeted spans in snapshots/cycle_02/chapters/chapter_12.md:9, :41, :55, :161, :205, :245, :303, :313, :327, and :449, and each rewritten beat still lands through concrete sensory or emotional detail rather than abstraction. Fail if the chapter still repeats the same `as if` sentence shape across most of those moments."
+  ],
+  "chapter_id": "chapter_12",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if the revised chapter leaves no more than two `as if` comparisons across the targeted spans in snapshots/cycle_02/chapters/chapter_12.md:9, :41, :55, :161, :205, :245, :303, :313, :327, and :449, and each rewritten beat still lands through concrete sensory or emotional detail rather than abstraction. Fail if the chapter still repeats the same `as if` sentence shape across most of those moments.",
+      "chapter_id": "chapter_12",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_12.md:9; snapshots/cycle_02/chapters/chapter_12.md:41; snapshots/cycle_02/chapters/chapter_12.md:55; snapshots/cycle_02/chapters/chapter_12.md:161; snapshots/cycle_02/chapters/chapter_12.md:205; snapshots/cycle_02/chapters/chapter_12.md:245; snapshots/cycle_02/chapters/chapter_12.md:303; snapshots/cycle_02/chapters/chapter_12.md:313; snapshots/cycle_02/chapters/chapter_12.md:327; snapshots/cycle_02/chapters/chapter_12.md:449",
+      "finding_id": "chapter_12_prose_001",
+      "problem": "The chapter leans on the same `as if` comparison template at least ten times. Because the surrounding prose is otherwise strong and tactile, that repeated sentence shape starts to feel like autopilot rather than fresh perception, flattening distinct beats into a noticeable chapter tic.",
+      "rewrite_direction": "Vary the comparison logic across snapshots/cycle_02/chapters/chapter_12.md:9, snapshots/cycle_02/chapters/chapter_12.md:41, snapshots/cycle_02/chapters/chapter_12.md:55, snapshots/cycle_02/chapters/chapter_12.md:161, snapshots/cycle_02/chapters/chapter_12.md:205, snapshots/cycle_02/chapters/chapter_12.md:245, snapshots/cycle_02/chapters/chapter_12.md:303, snapshots/cycle_02/chapters/chapter_12.md:313, snapshots/cycle_02/chapters/chapter_12.md:327, and snapshots/cycle_02/chapters/chapter_12.md:449. Keep the strongest one or two `as if` comparisons, but rewrite the rest into direct physical description, causal phrasing, or different metaphor structures so each beat earns its own texture.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "b61d63c4775637fa06cacf802cd5803a9acc40b39254b368433c8a7250198e4a",
+  "must_fix_count": 1,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on prose and copyedit finish: diction precision, rhythm control, sentence-level clarity, grammar, line-level polish without flattening style, and explicit aesthetic-risk audit (sanitization is the primary risk \u2014 do not soften or euphemize; push toward creative risk and specificity).",
+    "key": "p3_prose_copyedit",
+    "label": "prose/copyedit fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into queer secrecy, erotic specificity, dust-sick bodies, economic shame, bad bargains, and the humiliations of dependence. When deciding between a tidier scene and a truer one, choose the version that preserves historical pressure and emotional contradiction even if it leaves characters compromised, unsympathetic, or exposed.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If grief, desire, debt, illness, bodily damage, or shame are abstracted at the moment they should become sensory and social, rewrite toward the concrete consequence until the scene stops hiding from itself.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "moderate-high - contractions are the baseline for speech; uncontracted forms should appear only for emphasis, social performance, or character-specific formality.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate structural rhythms across the book: survival set-piece, aftermath inventory, intimate chamber scene, bureaucratic squeeze, outdoor search, quiet communal ritual, preparation without payoff, public reckoning, and departure elegy. Vary scene counts, dialogue density, and where the turn comes from so consecutive chapters never feel built from the same dramatic machine.",
+      "diction": "Plainspoken and period-credible, with agricultural, domestic, and biblical undertones used sparingly; favor exact nouns and verbs over decorative frontier lyricism.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third person rotating among Cora, Thea, Dell, August, and Hester, with only brief collective widening when weather or communal memory demands it",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Supple, pressure-sensitive prose: longer weather and labor sentences that can suddenly snap short at revelation, pain, or shame.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

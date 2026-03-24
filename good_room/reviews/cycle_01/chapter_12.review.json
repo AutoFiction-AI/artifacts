@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_12",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_12_dialogue_001",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:13; snapshots/cycle_01/chapters/chapter_12.md:137; snapshots/cycle_01/chapters/chapter_12.md:233",
+      "problem": "The chapter reproduces calibration-only style-bible example lines verbatim: Doug's \"I drive a Civic,\" Roy's \"I don't watch videos. I barely watch television,\" and Doug's \"I bought better cereal.\" That is direct voice-calibration leakage rather than scene-generated speech, and it makes Doug and Roy sound preloaded instead of overheard.",
+      "rewrite_direction": "Replace the copied dialogue beats at snapshots/cycle_01/chapters/chapter_12.md:11, snapshots/cycle_01/chapters/chapter_12.md:13, snapshots/cycle_01/chapters/chapter_12.md:125, snapshots/cycle_01/chapters/chapter_12.md:137, snapshots/cycle_01/chapters/chapter_12.md:229, and snapshots/cycle_01/chapters/chapter_12.md:233 with fresh wording generated from the style-bible voice rules, not from the example lines. Doug still needs to answer Alex's abstraction too literally and still needs to reduce fame to a grocery-level metric; Roy still needs to dismiss the video premise in his own plain register.",
+      "acceptance_test": "At snapshots/cycle_01/chapters/chapter_12.md:13, snapshots/cycle_01/chapters/chapter_12.md:137, and snapshots/cycle_01/chapters/chapter_12.md:233, none of the revised lines is verbatim or near-verbatim to any example line in outline/style_bible.json, and the passage still clearly lands three observable beats: Alex's question misfires literally, Roy refuses the viral-video frame because it adds nothing for him, and Doug measures fame through a cereal upgrade."
+    },
+    {
+      "finding_id": "chapter_12_craft_001",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:255; snapshots/cycle_01/chapters/chapter_12.md:257; snapshots/cycle_01/chapters/chapter_12.md:259; snapshots/cycle_01/chapters/chapter_12.md:261; snapshots/cycle_01/chapters/chapter_12.md:263; snapshots/cycle_01/chapters/chapter_12.md:265; snapshots/cycle_01/chapters/chapter_12.md:267",
+      "problem": "Once the profile is established as well-written and completely wrong, the chapter spends five more paragraphs paraphrasing slightly different versions of the same misreading. The turn lands by the \"midwestern Everyman\" paragraph, but the scene keeps re-proving it instead of moving into the sharper consequences with Layla, the office, and Roy.",
+      "rewrite_direction": "Compress the profile-autopsy block at snapshots/cycle_01/chapters/chapter_12.md:255, snapshots/cycle_01/chapters/chapter_12.md:257, snapshots/cycle_01/chapters/chapter_12.md:259, snapshots/cycle_01/chapters/chapter_12.md:261, snapshots/cycle_01/chapters/chapter_12.md:263, snapshots/cycle_01/chapters/chapter_12.md:265, and snapshots/cycle_01/chapters/chapter_12.md:267 so each retained paragraph does distinct dramatic work: establish the false public Doug, show one or two concrete distortions that matter, then move quickly to snapshots/cycle_01/chapters/chapter_12.md:269 and snapshots/cycle_01/chapters/chapter_12.md:285 where the article starts exerting pressure on Doug's life.",
+      "acceptance_test": "In the revised block beginning at snapshots/cycle_01/chapters/chapter_12.md:255, a cold reader can identify one false public persona and one concrete distortion of fact or quote before the scene advances to Layla's amplification or Roy's response. If adjacent paragraphs in that block only supply new wording for \"the article was wrong\" without changing Doug's pressure, the test fails."
+    },
+    {
+      "finding_id": "chapter_12_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:5; snapshots/cycle_01/chapters/chapter_12.md:15; snapshots/cycle_01/chapters/chapter_12.md:119; snapshots/cycle_01/chapters/chapter_12.md:163; snapshots/cycle_01/chapters/chapter_12.md:197; snapshots/cycle_01/chapters/chapter_12.md:217; snapshots/cycle_01/chapters/chapter_12.md:287",
+      "problem": "The chapter leans repeatedly on the same descriptive sentence chassis: \"the [smile/expression/look/posture/intensity] of someone/a man who...\" By the third use it stops reading as chosen prose and starts reading as a generator pattern, which flattens otherwise sharp characterization.",
+      "rewrite_direction": "Rework the description sentences at snapshots/cycle_01/chapters/chapter_12.md:5, snapshots/cycle_01/chapters/chapter_12.md:15, snapshots/cycle_01/chapters/chapter_12.md:119, snapshots/cycle_01/chapters/chapter_12.md:163, snapshots/cycle_01/chapters/chapter_12.md:197, snapshots/cycle_01/chapters/chapter_12.md:217, and snapshots/cycle_01/chapters/chapter_12.md:287 into varied syntactic shapes. Keep Doug's observational precision, but let some character reads arrive through action, some through object detail, and some through contrast instead of the recurring \"of someone who\" / \"of a man who\" template.",
+      "acceptance_test": "Across the revised passages anchored at snapshots/cycle_01/chapters/chapter_12.md:5, snapshots/cycle_01/chapters/chapter_12.md:15, snapshots/cycle_01/chapters/chapter_12.md:119, snapshots/cycle_01/chapters/chapter_12.md:163, snapshots/cycle_01/chapters/chapter_12.md:197, snapshots/cycle_01/chapters/chapter_12.md:217, and snapshots/cycle_01/chapters/chapter_12.md:287, no more than two descriptions rely on the \"the [noun] of someone/a man who...\" construction, and each cited character beat remains individually legible without sounding like a syntactic variant of the previous one."
+    },
+    {
+      "finding_id": "chapter_12_dialogue_002",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:297; snapshots/cycle_01/chapters/chapter_12.md:301",
+      "problem": "Roy's closing office exchange tips from character speech into authorial summary. \"Three too many words\" followed by \"You just haven't figured out how to stop\" gives Roy two polished pull quotes in a row and turns a plainspoken coworker into a thesis-delivery device, which the style bible explicitly warns against for him.",
+      "rewrite_direction": "Rework the office beat at snapshots/cycle_01/chapters/chapter_12.md:293, snapshots/cycle_01/chapters/chapter_12.md:297, and snapshots/cycle_01/chapters/chapter_12.md:301 so Roy still rejects the headline's framing and unsettles Doug, but does it in office-plain language that sounds like Roy talking, not the novel summarizing itself through Roy. One blunt line can stay sharp; the exchange should not resolve into a neat diagnosis.",
+      "acceptance_test": "In the revised exchange around snapshots/cycle_01/chapters/chapter_12.md:293 through snapshots/cycle_01/chapters/chapter_12.md:301, Roy's response must still make clear that the headline misnames Doug, but it should read like an overheard coworker assessment rather than a standalone aphorism. If the revised line can still be lifted cleanly as a novel thesis without losing its force, the test fails."
+    }
+  ],
+  "summary": "FAIL across all four lenses. The chapter is canonically aligned and often funny, but it does not clear pass-level control because it imports calibration-only dialogue from the style bible verbatim, overextends the profile-was-wrong beat after it already lands, leans on a visible descriptive sentence template, and gives Roy a final line that reads more like authorial thesis than spoken character."
+}

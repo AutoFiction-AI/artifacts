@@ -1,0 +1,69 @@
+{
+  "acceptance_targets": [
+    "[chapter_14_dialogue_001] PASS if the revised passage at snapshots/cycle_01/chapters/chapter_14.md:389-395 contains no `I don't need ... I need ...` clean/accuracy formulation and no near-verbatim echo of any `example_lines` from `outline/style_bible.json`, while still making Rhea's standard for Mina immediately legible in-scene; FAIL if the beat still hinges on the clean/accurate contrast or another calibration-style sentence template."
+  ],
+  "chapter_id": "chapter_14",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if the revised passage at snapshots/cycle_01/chapters/chapter_14.md:389-395 contains no `I don't need ... I need ...` clean/accuracy formulation and no near-verbatim echo of any `example_lines` from `outline/style_bible.json`, while still making Rhea's standard for Mina immediately legible in-scene; FAIL if the beat still hinges on the clean/accurate contrast or another calibration-style sentence template.",
+      "chapter_id": "chapter_14",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:391",
+      "finding_id": "chapter_14_dialogue_001",
+      "problem": "Rhea's climactic line, \"I don't need you clean... I need you accurate,\" lands too close to her calibration-only style-bible example and reads like reused scaffolding instead of freshly discovered speech. Because this is the chapter's emotional hinge, the echo breaks the non-copyable example-line rule and weakens character-voice credibility at the exact point the scene needs maximum authority.",
+      "rewrite_direction": "Rewrite the exchange at snapshots/cycle_01/chapters/chapter_14.md:389-395 so Rhea states her standard for Mina in original language that still fits Rhea's measured, exacting register, and revise Mina's answer at snapshots/cycle_01/chapters/chapter_14.md:395 so it responds to that new wording instead of repeating the same keyword pair.",
+      "severity": "HIGH",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "f2796bde7fd6db5ebb0908093af9c6f5d3604c0982882647f8f05d7f306ef46e",
+  "must_fix_count": 1,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into the book's uncomfortable overlaps: desire entangled with access, wonder contaminated by biotech history, class need shaping erotic choices, and ecological harm rendered at creature scale. When a scene sits on the edge between restraint and retreat, keep the pressure visible through bodies, residue, changed behavior, or social cost. If an exact detail would make the material more embarrassing, more sensual, or more morally compromising, that is usually the detail to keep.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If sex, ecological damage, class shame, or moral compromise are softened into tasteful fog at the moment they should bite, the scene has failed and must be rewritten at higher specificity.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High - contractions are the norm in spoken dialogue; uncontracted forms should signal deliberate emphasis, institutional performance, or a character-specific formality shift.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate compression and dilation aggressively: single-scene nocturnes, comic paperwork chapters, quiet survey chapters, domestic weather chapters, confrontational set pieces, and aftermath chapters should sit beside each other without repeating the same rhythm two chapters in a row.",
+      "diction": "Concrete, coastal, and exact without brochure prettiness; scientific and bureaucratic terms may appear when the characters would think or speak through them, but they should stay embodied by consequence.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third centered on Mina Cordero, with free-indirect access tight enough to track bodily desire, shame, and observational obsession without collapsing into confessional summary",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Supple sentence music that can hold humidity, rot, and erotic charge, then cut hard into blunt compression at moments of humiliation, procedural friction, or ecological damage.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_05",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch05_dialogue_001",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:149; snapshots/cycle_01/chapters/chapter_05.md:179; snapshots/cycle_01/chapters/chapter_05.md:189",
+      "problem": "Megan's phone-call exchange reproduces calibration-only style-bible language. Line 149 uses the exact example sentence \"I think it's important we contextualize what happened,\" and the surrounding \"brave\" delivery at lines 179 and 189 tracks the example-line cadence closely enough that the scene reads as voice-sheet reuse rather than fresh spoken language. The style bible explicitly forbids reproducing example lines; this is a HIGH dialogue failure and it also weakens Megan's individuality on the page.",
+      "rewrite_direction": "Rewrite Megan's key turns at snapshots/cycle_01/chapters/chapter_05.md:149, snapshots/cycle_01/chapters/chapter_05.md:179, and snapshots/cycle_01/chapters/chapter_05.md:189 so she remains measured, fair, and therapeutically organized without lifting calibration wording. Keep the scene's functions: she accepts the apology, frames the toast inside her own structure, and reports Brendan's \"brave\" reading; but phrase each beat in language unique to this call and this marriage.",
+      "acceptance_test": "Pass if a read-through of the revised passage replacing snapshots/cycle_01/chapters/chapter_05.md:149, snapshots/cycle_01/chapters/chapter_05.md:179, and snapshots/cycle_01/chapters/chapter_05.md:189 shows no verbatim or near-verbatim overlap with any `megan_coyle.example_lines` in outline/style_bible.json, while Megan still sounds composed, contextualizing, and character-specific. Fail if \"I think it's important we contextualize what happened\" or another calibration sentence survives in whole or recognizable paraphrase."
+    },
+    {
+      "finding_id": "ch05_craft_001",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:99; snapshots/cycle_01/chapters/chapter_05.md:241; snapshots/cycle_01/chapters/chapter_05.md:243; snapshots/cycle_01/chapters/chapter_05.md:247; snapshots/cycle_01/chapters/chapter_05.md:249",
+      "problem": "The chapter keeps re-diagnosing its strongest turns after they have already landed. Line 99 explicitly explains the meaning of the five-minute silence, and the closing apartment sequence returns to the same material in summary form: Kelsey's silence, the lie as answer, Brendan's \"brave\" verdict, and the internet's judgment are all restated rather than advanced. That creates thematic over-explanation and late-chapter sprawl: the pages buy emphasis where the chapter needs fresh consequence.",
+      "rewrite_direction": "Compress or redistribute the interpretive commentary at snapshots/cycle_01/chapters/chapter_05.md:99, snapshots/cycle_01/chapters/chapter_05.md:241, snapshots/cycle_01/chapters/chapter_05.md:243, snapshots/cycle_01/chapters/chapter_05.md:247, and snapshots/cycle_01/chapters/chapter_05.md:249. Let the silence stand through booth behavior and aftermath detail, and let Brendan's \"brave\" land once in Doug's body before the closing apartment sequence moves into new pressure. Preserve the chapter engine and must-land beats from the boundary/context packs: Kelsey's specific fury, the table question and deflection, the honest silence, Megan's managed response, Brendan calling the toast brave, and Doug alone in the apartment afterward.",
+      "acceptance_test": "Pass if the revised chapter still clearly delivers the state shift from the diner silence and Brendan's \"brave\" reading, but the material replacing snapshots/cycle_01/chapters/chapter_05.md:99, snapshots/cycle_01/chapters/chapter_05.md:241, snapshots/cycle_01/chapters/chapter_05.md:243, snapshots/cycle_01/chapters/chapter_05.md:247, and snapshots/cycle_01/chapters/chapter_05.md:249 adds a new observable consequence, decision, or pressure-bearing image instead of paraphrasing what the reader already knows. Fail if those passages still explicitly explain that the silence was their closest honesty or that the lie itself was the answer without creating new dramatic movement."
+    },
+    {
+      "finding_id": "ch05_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:55; snapshots/cycle_01/chapters/chapter_05.md:85; snapshots/cycle_01/chapters/chapter_05.md:153; snapshots/cycle_01/chapters/chapter_05.md:185; snapshots/cycle_01/chapters/chapter_05.md:213; snapshots/cycle_01/chapters/chapter_05.md:231; snapshots/cycle_01/chapters/chapter_05.md:237; snapshots/cycle_01/chapters/chapter_05.md:249",
+      "problem": "The prose leans on the same `the way ...` analogy hinge at least eight times in one chapter to turn observation into interpretation. Once or twice this is a signature; at this density it becomes a visible tic and flattens rhythm. The repeated construction also pushes the narration away from the style bible's plain, mid-register precision toward a more obviously scaffolded and workshopped texture.",
+      "rewrite_direction": "Recast several of the analogy-hinge sentences at snapshots/cycle_01/chapters/chapter_05.md:55, snapshots/cycle_01/chapters/chapter_05.md:85, snapshots/cycle_01/chapters/chapter_05.md:153, snapshots/cycle_01/chapters/chapter_05.md:185, snapshots/cycle_01/chapters/chapter_05.md:213, snapshots/cycle_01/chapters/chapter_05.md:231, snapshots/cycle_01/chapters/chapter_05.md:237, and snapshots/cycle_01/chapters/chapter_05.md:249. Keep the underlying perceptions, but let some beats stand as direct observation, object detail, or blunt inference instead of routing them through the same comparative hinge. Vary the sentence shapes so emotional turns do not all arrive through `the way` analogies.",
+      "acceptance_test": "Pass if the revised passages replacing snapshots/cycle_01/chapters/chapter_05.md:55, snapshots/cycle_01/chapters/chapter_05.md:85, snapshots/cycle_01/chapters/chapter_05.md:153, snapshots/cycle_01/chapters/chapter_05.md:185, snapshots/cycle_01/chapters/chapter_05.md:213, snapshots/cycle_01/chapters/chapter_05.md:231, snapshots/cycle_01/chapters/chapter_05.md:237, and snapshots/cycle_01/chapters/chapter_05.md:249 contain no more than two `the way ...` analogy hinges, and each retained comparison does distinct work. Fail if three or more of those beats still rely on the same comparative template to deliver interpretation."
+    }
+  ],
+  "summary": "Chapter 5 hits its required confrontation beats and stays continuity-safe, but it does not clear pass level. Megan's call scene illegally reuses calibration dialogue from the style bible, the chapter repeatedly explains its own strongest turns after they land, and the prose's repeated `the way ...` hinge becomes a visible tic rather than a controlled signature."
+}

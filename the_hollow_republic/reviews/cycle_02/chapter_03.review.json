@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_03",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_03_booker_001",
+      "source": "booker",
+      "severity": "HIGH",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:57; snapshots/cycle_02/chapters/chapter_03.md:61; snapshots/cycle_02/chapters/chapter_03.md:87; snapshots/cycle_02/chapters/chapter_03.md:217; snapshots/cycle_02/chapters/chapter_03.md:265; snapshots/cycle_02/chapters/chapter_03.md:273",
+      "problem": "The chapter's hinge consequence is chronologically impossible on the page. Elise deposits the note before the washhouse sweep, pickup is not confirmed until late afternoon, yet Elise and Vautrin both treat the morning operation as if he widened it in response to omissions from that unread report. That breaks cause-and-effect exactly where the chapter is trying to cash in its moral turn.",
+      "rewrite_direction": "Clarify the sequence across snapshots/cycle_02/chapters/chapter_03.md:57, snapshots/cycle_02/chapters/chapter_03.md:61, snapshots/cycle_02/chapters/chapter_03.md:87, snapshots/cycle_02/chapters/chapter_03.md:217, snapshots/cycle_02/chapters/chapter_03.md:265, and snapshots/cycle_02/chapters/chapter_03.md:273. Either make the washhouse sweep explicitly preexisting and reserve the report-driven escalation for later warrants/searches, or move the punitive action to a point after Vautrin can plausibly receive and read the note. Do not let the dialogue imply that unseen information shaped the same-morning raid.",
+      "acceptance_test": "PASS if a reader can track a coherent sequence in the revised passage: dead drop, pickup/read, then any Vautrin-ordered escalation. FAIL if snapshots/cycle_02/chapters/chapter_03.md:265 or snapshots/cycle_02/chapters/chapter_03.md:273 still imply that Vautrin used the uncollected note to shape the sweep already underway at snapshots/cycle_02/chapters/chapter_03.md:87."
+    },
+    {
+      "finding_id": "chapter_03_craft_001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:61; snapshots/cycle_02/chapters/chapter_03.md:87; snapshots/cycle_02/chapters/chapter_03.md:217; snapshots/cycle_02/chapters/chapter_03.md:271; snapshots/cycle_02/chapters/chapter_03.md:275",
+      "problem": "The impossible timing also acts as a moral safety valve. Elise gets the guilt-state of having endangered Clemence and Lucie, but the chapter arranges events so her omission cannot actually have caused that specific morning harm. That softens the stain of her professional deviation at the exact point the draft should force full consequence, which is a sanitization-level craft failure under the constitution.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_03.md:61, snapshots/cycle_02/chapters/chapter_03.md:87, snapshots/cycle_02/chapters/chapter_03.md:217, snapshots/cycle_02/chapters/chapter_03.md:271, and snapshots/cycle_02/chapters/chapter_03.md:275, choose one harder version and commit to it. If Elise truly buys Clemence and Lucie temporary protection, then the later cost must arrive only after Vautrin reads the note. If the washhouse sweep is unrelated, then revise Elise's guilt language so she is reacting to state violence she witnessed, not to a harm the chapter has insulated her from causing.",
+      "acceptance_test": "PASS if the revised chapter lets a reader state, from the page alone, what harm Elise directly caused by omitting Clemence and Lucie and what harm was already in motion before the dead drop. FAIL if snapshots/cycle_02/chapters/chapter_03.md:275 still asks Elise to own the washhouse sweep without giving the note time to produce that consequence."
+    },
+    {
+      "finding_id": "chapter_03_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:5; snapshots/cycle_02/chapters/chapter_03.md:9",
+      "problem": "The opening page overworks dossier-style anaphora. 'She could give him' repeats four times, then 'She wrote that' repeats four more times. The first recurrence is a choice; by the second chain the rhythm has flattened into bookkeeping and announced its own device.",
+      "rewrite_direction": "Rework snapshots/cycle_02/chapters/chapter_03.md:5 and snapshots/cycle_02/chapters/chapter_03.md:9 so no clause-launch formula runs more than twice in succession. Keep the report-minded pressure, but break the sequence after two beats with a sensory interruption, a sharper moral turn, or a syntactic change that makes the prose feel inhabited rather than enumerated.",
+      "acceptance_test": "PASS if, in the revised opening across snapshots/cycle_02/chapters/chapter_03.md:5 and snapshots/cycle_02/chapters/chapter_03.md:9, no identical clause opening appears more than twice consecutively and the passage still clearly distinguishes what Elise can report from what she withholds. FAIL if the revision still stacks four or more near-identical clause launches in a row."
+    }
+  ],
+  "summary": "FAIL overall. Dialogue is the chapter's strongest area: Clemence, Lucie, Elise, and Vautrin remain distinct, and contraction handling matches the style bible. The chapter fails on story logic because it treats the washhouse sweep as a consequence of a report Vautrin has not yet received; that same timing also sanitizes Elise's culpability by giving her guilt without clean causation. The opening page adds a smaller prose failure by leaning too heavily on repeated dossier-style clause openings."
+}

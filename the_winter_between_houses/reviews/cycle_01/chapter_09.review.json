@@ -1,0 +1,63 @@
+{
+  "chapter_id": "chapter_09",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH09-F001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:191; snapshots/cycle_01/chapters/chapter_09.md:205; snapshots/cycle_01/chapters/chapter_09.md:223; snapshots/cycle_01/chapters/chapter_09.md:255",
+      "problem": "The intimacy scene keeps retreating to euphemistic placeholders (for example, \"touched her exactly right\") at peak sexual action, which softens physical reality relative to the style bible's anti-sanitization requirement. Consent handling is strong, but the bodily rendering remains partially buffered.",
+      "rewrite_direction": "Target snapshots/cycle_01/chapters/chapter_09.md:191, snapshots/cycle_01/chapters/chapter_09.md:205, snapshots/cycle_01/chapters/chapter_09.md:223, and snapshots/cycle_01/chapters/chapter_09.md:255. Keep the existing consent beats, but replace generalized arousal language with concrete touch/anatomy detail and explicit sensory consequence (pressure, breath, sound control through the wall, post-contact physical state) without cutting away.",
+      "acceptance_test": "PASS if the revised intimacy span at snapshots/cycle_01/chapters/chapter_09.md:191-256 contains at least four concrete, non-euphemistic physical details of sexual contact, shows one on-page adjustment to discomfort/constraints, and moves from initiation to climax with no summary skip; FAIL otherwise."
+    },
+    {
+      "finding_id": "CH09-F002",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:287; snapshots/cycle_01/chapters/chapter_09.md:389; snapshots/cycle_01/chapters/chapter_09.md:417; snapshots/cycle_01/chapters/chapter_09.md:445",
+      "problem": "The chapter states consequence in dialogue (\"This was not an accident\") but delays external causal collision until after the chapter break. The result is a strong emotional turn with limited immediate plot cost on-page, which weakens Booker-level consequence pressure.",
+      "rewrite_direction": "Target snapshots/cycle_01/chapters/chapter_09.md:417 and snapshots/cycle_01/chapters/chapter_09.md:445 while preserving the ending image. Add one concrete external consequence triggered by the night (for example: visible mark, coal discrepancy, neighbor observation, or schedule conflict) that forces Elsie or Noreen into an immediate tactical decision before the final paragraph.",
+      "acceptance_test": "PASS if the revised ending span at snapshots/cycle_01/chapters/chapter_09.md:417-449 includes an observable external consequence of the intimacy/blackout and shows one explicit action decision taken in response on-page; FAIL if consequence remains only verbal or deferred."
+    },
+    {
+      "finding_id": "CH09-F003",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:389; snapshots/cycle_01/chapters/chapter_09.md:393; snapshots/cycle_01/chapters/chapter_09.md:397; snapshots/cycle_01/chapters/chapter_09.md:403",
+      "problem": "The dawn terms exchange collapses both voices into a shared procedural register (\"First... Second... Agreed\"). That checklist rhythm reduces idiolect separation between Elsie and Noreen at a moment that should sharpen difference under pressure.",
+      "rewrite_direction": "Revise snapshots/cycle_01/chapters/chapter_09.md:389-412 so the same boundaries are negotiated through character-specific rhythm: Elsie in concrete domestic-risk framing and clipped self-revision, Noreen with pivoting cadence (humor/defiance/tenderness shifts) rather than repeated ratification tokens.",
+      "acceptance_test": "PASS if, in snapshots/cycle_01/chapters/chapter_09.md:389-412, each woman has at least one line that is unmistakably character-specific by style bible profile and the exchange contains no repeated one-word legalistic confirmations as the dominant beat; FAIL otherwise."
+    },
+    {
+      "finding_id": "CH09-F004",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:125; snapshots/cycle_01/chapters/chapter_09.md:181; snapshots/cycle_01/chapters/chapter_09.md:195; snapshots/cycle_01/chapters/chapter_09.md:373; snapshots/cycle_01/chapters/chapter_09.md:411; snapshots/cycle_01/chapters/chapter_09.md:437",
+      "problem": "A recurring beat formula (gesture verb + \"once\") appears more than twice and starts reading as autopilot body-language markup rather than fresh emotional information.",
+      "rewrite_direction": "Target snapshots/cycle_01/chapters/chapter_09.md:125, snapshots/cycle_01/chapters/chapter_09.md:181, snapshots/cycle_01/chapters/chapter_09.md:195, snapshots/cycle_01/chapters/chapter_09.md:373, snapshots/cycle_01/chapters/chapter_09.md:411, and snapshots/cycle_01/chapters/chapter_09.md:437. Keep the emotional intent but vary beat mechanics (hesitation, incomplete movement, contradictory gesture, sensory interruption) and remove redundant \"once\" scaffolding.",
+      "acceptance_test": "PASS if the revised cited lines contain no more than two gesture beats using the adverb \"once\" and at least three replacement beats add distinct emotional information not already stated in dialogue; FAIL otherwise."
+    },
+    {
+      "finding_id": "CH09-F005",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:35; snapshots/cycle_01/chapters/chapter_09.md:41; snapshots/cycle_01/chapters/chapter_09.md:367; snapshots/cycle_01/chapters/chapter_09.md:379",
+      "problem": "Stress behavior is sometimes explained in meta terms (\"Listing practical tasks to keep from feeling things\") instead of being inferred from scene action. This reads like over-literal reuse of style-bible stress-tell guidance and reduces dramatic texture.",
+      "rewrite_direction": "Revise snapshots/cycle_01/chapters/chapter_09.md:367 and snapshots/cycle_01/chapters/chapter_09.md:379 (with light harmonization at snapshots/cycle_01/chapters/chapter_09.md:35 and snapshots/cycle_01/chapters/chapter_09.md:41) to dramatize coping through action/friction rather than explicit explanatory labeling.",
+      "acceptance_test": "PASS if, in snapshots/cycle_01/chapters/chapter_09.md:367-383, fear is conveyed through concrete behavior without abstract self-diagnosis lines naming the coping mechanism, and at least three actions imply emotional state by context; FAIL otherwise."
+    }
+  ],
+  "summary": "Chapter 09 delivers strong atmosphere, clear consent architecture, and maintained close-third interiority, but it does not clear pass threshold. The main deficits are HIGH sanitization drift in the intimacy lexicon, consequence that remains partly declarative rather than externally causal by chapter end, dialogue idiolect convergence in the dawn terms scene, and two prose/craft repetition tics (gesture-\"once\" formula and over-explicit stress-tell labeling). No continuity contradiction with the provided continuity sheet was found, and narrative tense remains consistent with the declared past-tense canon.",
+  "coverage_scene_ids": []
+}

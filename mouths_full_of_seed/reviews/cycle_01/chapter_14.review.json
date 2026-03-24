@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_14",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "C14-F01",
+      "source": "craft",
+      "severity": "CRITICAL",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:363",
+      "problem": "The narration breaks diegesis with a literal process-leak phrase: \"half the novel.\" That is an out-of-story label inside a climactic scene, so the chapter momentarily stops being fiction and starts naming itself as an artifact.",
+      "rewrite_direction": "Rewrite the description centered on snapshots/cycle_01/chapters/chapter_14.md:361 and snapshots/cycle_01/chapters/chapter_14.md:363 so Nami measures Daro's long hunger in story-native terms: remembered behavior, flood-season duration, or sibling history. Keep the observation inside her consciousness and remove any language that refers to the book as a book.",
+      "acceptance_test": "Pass if the revised paragraph at snapshots/cycle_01/chapters/chapter_14.md:363 contains no out-of-story vocabulary such as \"novel,\" \"chapter,\" \"scene,\" \"reader,\" or equivalent, and the sentence reads as a diegetic Nami observation rooted in story time or lived memory. Fail if the narration still labels the text as a literary object."
+    },
+    {
+      "finding_id": "C14-F02",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:47; snapshots/cycle_01/chapters/chapter_14.md:71; snapshots/cycle_01/chapters/chapter_14.md:159; snapshots/cycle_01/chapters/chapter_14.md:241; snapshots/cycle_01/chapters/chapter_14.md:301; snapshots/cycle_01/chapters/chapter_14.md:445; snapshots/cycle_01/chapters/chapter_14.md:465",
+      "problem": "The chapter repeatedly leans on clipped narration fragments and the same emphatic hinge pattern (\"Not X. Y.\" / \"Because...\" as a stand-alone sentence). Used this often, the device stops reading as pressure-specific rhythm and starts reading as a prose tic. It also collides with the constitution's explicit ban on elliptical clipping in narration.",
+      "rewrite_direction": "Revise the emphatic beats at snapshots/cycle_01/chapters/chapter_14.md:47, snapshots/cycle_01/chapters/chapter_14.md:71, snapshots/cycle_01/chapters/chapter_14.md:159, snapshots/cycle_01/chapters/chapter_14.md:241, snapshots/cycle_01/chapters/chapter_14.md:301, snapshots/cycle_01/chapters/chapter_14.md:445, and snapshots/cycle_01/chapters/chapter_14.md:465 so the force comes from complete syntax and concrete consequence rather than repeated fragment bursts. Keep the urgency, but vary the sentence architecture and let image, action, or sensation carry the emphasis.",
+      "acceptance_test": "Pass if each cited span reads with grammatically complete narration or clearly anchored free indirect thought, and none of those spans still relies on back-to-back clipped fragments in the form of \"Not X. Y.\" or equivalent shorthand to generate force. Fail if two-sentence fragment bursts still recur across those passages."
+    },
+    {
+      "finding_id": "C14-F03",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:87; snapshots/cycle_01/chapters/chapter_14.md:187; snapshots/cycle_01/chapters/chapter_14.md:211; snapshots/cycle_01/chapters/chapter_14.md:285; snapshots/cycle_01/chapters/chapter_14.md:313",
+      "problem": "Major turns are over-signaled with the same generic whole-scene shorthand: the room tilts, leans closer, gets smaller, stops, goes utterly still. Repeating the same room-reacts construction across five separate emotional peaks flattens escalation instead of sharpening it.",
+      "rewrite_direction": "Rework the reaction beats around snapshots/cycle_01/chapters/chapter_14.md:87, snapshots/cycle_01/chapters/chapter_14.md:187, snapshots/cycle_01/chapters/chapter_14.md:211, snapshots/cycle_01/chapters/chapter_14.md:285, and snapshots/cycle_01/chapters/chapter_14.md:313 so each turn registers through a different concrete mechanism: a named body locking up, the plank rattling under Nami's hand, kettle hiss, grit falling, lamp shake, breath catching, or another chapel-specific physical consequence. Do not let the room itself do the work more than once.",
+      "acceptance_test": "Pass if, across the five cited beats, no more than one still uses \"the room\" as subject or a generic whole-scene stillness claim, and the others are visibly rendered through specific characters or material elements in the chapel. Fail if the revised passage still repeats room-personification as the default emotional marker."
+    }
+  ],
+  "summary": "Chapter 14 lands its structural obligations: Bato's survival, the unsanctified account of Jun's drowning, Nami's desperate bid for chosenness, and Daro's conversion of private hunger into public schism. No continuity contradiction, tense drift, sanitization failure, or dialogue-register collapse was found against the allowed inputs. It still fails at review stage because one climactic paragraph contains a direct process leak and the prose repeatedly falls back on clipped-fragment and room-reacts formulas that blunt line-level originality."
+}

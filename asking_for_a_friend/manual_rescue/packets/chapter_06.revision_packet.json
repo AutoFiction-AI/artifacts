@@ -1,0 +1,41 @@
+{
+  "chapter_id": "chapter_06",
+  "cycle": 2,
+  "input_snapshot_hash": "5a546096609a2ef4209217deef0e1b8aab3056aeb8fa2e7059066939c84b5573",
+  "findings": [
+    {
+      "finding_id": "warmth_overuse_ch06",
+      "source": "manual_rescue/full_award_rescue.review.json",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.post_revision.md:1029, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:1039, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:1041, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:1053, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:1055, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:1091, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:1199",
+      "problem": "'Warmth' or 'warm' appears 7 times in this chapter (full-novel count: 96). This is a quiet, domestic chapter where emotional temperature should vary — the office scene, Diane's kitchen, the texting — but 'warm' serves as the uniform descriptor for all three environments. The effect is thermal monotone: Margo's office is warm, Diane's kitchen is warm, Nora's feelings are warm, the texting is warm.",
+      "rewrite_direction": "Keep at most 2 instances. Keep snapshots/cycle_02/FINAL_NOVEL.post_revision.md:1039 ('the particular warmth of a kitchen that had never once been merely decorative' — earns the word through domestic specificity). Replace the other 5 at snapshots/cycle_02/FINAL_NOVEL.post_revision.md:1029, :1041, :1053, :1055, :1091, :1199. In the Diane kitchen scene, replace at least 2 instances with sensory details from different channels — smell, sound, texture of surfaces. In the texting scene, replace emotional warmth with a description of what the feeling actually does in Nora's body.",
+      "acceptance_test": "Revised chapter contains no more than 2 instances of 'warmth'/'warm' as emotional or atmospheric descriptors. The Diane kitchen scene (lines 1039-1101) uses at least one non-temperature sensory detail to convey domestic presence. The texting scene uses a somatic or psychological descriptor rather than 'warm.'"
+    },
+    {
+      "finding_id": "specific_particular_ch06",
+      "source": "manual_rescue/full_award_rescue.review.json",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.post_revision.md:1039, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:1047, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:1053, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:1085, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:1155",
+      "problem": "'The specific' or 'the particular' appears 5 times in this chapter (full-novel count: 81). The Diane dinner scene concentrates 3 instances within ~50 lines (1039, 1053, 1085), making the narrator's habit especially audible in a scene that should feel domestic and organic rather than analytically tagged.",
+      "rewrite_direction": "Keep 1 instance — snapshots/cycle_02/FINAL_NOVEL.post_revision.md:1085 ('the specific expression of a woman who had once watched a student turn in a brilliant essay she strongly suspected the student hadn't written' — earns its specificity through the extended simile that follows). Replace at snapshots/cycle_02/FINAL_NOVEL.post_revision.md:1039, :1047, :1053, :1155. In the domestic scene, delete the adjective and let the concrete details of Diane's kitchen carry their own weight.",
+      "acceptance_test": "Revised chapter contains no more than 1 instance of 'the specific'/'the particular.' The Diane dinner scene (lines 1039-1101) contains zero additional instances beyond the retained one at line 1085."
+    }
+  ],
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "No more than 2 instances of 'warmth'/'warm' as emotional or atmospheric descriptors in the revised chapter",
+    "No more than 1 instance of 'the specific'/'the particular' in the revised chapter",
+    "Retain 'the particular warmth of a kitchen that had never once been merely decorative' (near line 1039) as the strongest warmth use",
+    "Retain 'the specific expression of a woman who had once watched a student turn in a brilliant essay...' (near line 1085) as the strongest precision-intensifier use",
+    "The Diane dinner scene (lines 1039-1101) contains zero instances of 'the specific'/'the particular' beyond line 1085"
+  ],
+  "acceptance_targets": [
+    "Lines 1029, 1041, 1053, 1055, 1091, 1199: 'warmth'/'warm' replaced",
+    "Lines 1039, 1047, 1053, 1155: 'the specific'/'the particular' replaced or removed",
+    "Diane kitchen scene uses at least one non-temperature sensory detail (smell, sound, texture) to convey domestic presence",
+    "Texting scene uses a somatic or psychological descriptor rather than 'warm'"
+  ]
+}

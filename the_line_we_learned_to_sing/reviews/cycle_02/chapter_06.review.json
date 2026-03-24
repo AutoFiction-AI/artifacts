@@ -1,0 +1,67 @@
+{
+  "chapter_id": "chapter_06",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch06-F001",
+      "source": "booker",
+      "severity": "HIGH",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_02/chapters/chapter_06.md:225; snapshots/cycle_02/chapters/chapter_06.md:247",
+      "problem": "The interrogation power balance collapses too quickly: Ina secures multiple procedural protections in one pass with minimal counter-cost, which weakens the coercive credibility of the scene and blunts the chapter's central double-bind.",
+      "rewrite_direction": "Rework the negotiation between snapshots/cycle_02/chapters/chapter_06.md:221 and snapshots/cycle_02/chapters/chapter_06.md:247 so each protection request triggers explicit institutional pushback. Keep Ina's leverage move, but force a concrete trade (for example: one immediate deliverable, one denied demand, one accepted condition with narrow wording) before signature at snapshots/cycle_02/chapters/chapter_06.md:303.",
+      "acceptance_test": "Pass if the revised span between snapshots/cycle_02/chapters/chapter_06.md:221 and snapshots/cycle_02/chapters/chapter_06.md:247 shows (1) at least one Ina demand rejected, (2) at least one demand accepted with restrictive carve-outs, and (3) one explicit concession Ina gives before signing; fail if protections are granted without visible cost."
+    },
+    {
+      "finding_id": "ch06-F002",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_02/chapters/chapter_06.md:382; snapshots/cycle_02/chapters/chapter_06.md:412",
+      "problem": "Operational logic breaks in the alley scene: after confirming active surveillance, Ina and Minjae still exchange actionable movement guidance and route specifics in an exposed location, undermining their competence and the surveillance threat.",
+      "rewrite_direction": "Revise the exchange between snapshots/cycle_02/chapters/chapter_06.md:382 and snapshots/cycle_02/chapters/chapter_06.md:429 so once the tail is confirmed, actionable details are moved off-site/off-channel. Keep the burner handoff, but replace spoken route specifics with coded placeholders or deferred secure contact steps.",
+      "acceptance_test": "Pass if, after surveillance confirmation at snapshots/cycle_02/chapters/chapter_06.md:382, no explicit place-name route instructions are spoken in the open-alley exchange and at least one concrete countersurveillance action is shown before operational talk resumes; fail otherwise."
+    },
+    {
+      "finding_id": "ch06-F003",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_02/chapters/chapter_06.md:231; snapshots/cycle_02/chapters/chapter_06.md:239",
+      "problem": "Ina's interrogation voice drifts into sustained legal-memo diction that flattens her idiolect under stress. The style bible calls for high contraction use and stress-driven self-correction, but this stretch sounds institutionally generic.",
+      "rewrite_direction": "Tighten Ina's lines between snapshots/cycle_02/chapters/chapter_06.md:231 and snapshots/cycle_02/chapters/chapter_06.md:240 to preserve her demands while shifting to her stress pattern: sharper contractions, one over-qualification that she cuts off, and one blunt corrective statement.",
+      "acceptance_test": "Pass if Ina uses contractions in at least 3 of her 5 lines between snapshots/cycle_02/chapters/chapter_06.md:231 and snapshots/cycle_02/chapters/chapter_06.md:240 and includes one audible self-correction beat (qualifier then blunt correction); fail if the exchange remains uniformly formal/legalistic."
+    },
+    {
+      "finding_id": "ch06-F004",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_02/chapters/chapter_06.md:141; snapshots/cycle_02/chapters/chapter_06.md:159",
+      "problem": "The interrogation entry runs as a near-transcript for 10+ consecutive paragraphs without focal interiority, causing close-third distance to flatten into procedural Q/A.",
+      "rewrite_direction": "Add interior micro-beats between snapshots/cycle_02/chapters/chapter_06.md:141 and snapshots/cycle_02/chapters/chapter_06.md:159 (sensation, memory flash, self-assessment) between the questions and answers without slowing scene momentum.",
+      "acceptance_test": "Pass if the revised span between snapshots/cycle_02/chapters/chapter_06.md:141 and snapshots/cycle_02/chapters/chapter_06.md:159 contains at least 3 interior beats, with no gap larger than 3 paragraphs between interior beats; fail if the section still reads as uninterrupted transcript cadence."
+    },
+    {
+      "finding_id": "ch06-F005",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_02/chapters/chapter_06.md:337; snapshots/cycle_02/chapters/chapter_06.md:492; snapshots/cycle_02/chapters/chapter_06.md:512",
+      "problem": "A recurring negation-echo sentence formula (e.g., 'No X. No Y.' / repeated 'had not ... had not ...') appears more than twice, flattening rhythmic variation at key pressure beats.",
+      "rewrite_direction": "Recast the repeated negation constructions at snapshots/cycle_02/chapters/chapter_06.md:337, snapshots/cycle_02/chapters/chapter_06.md:492, and snapshots/cycle_02/chapters/chapter_06.md:512 so at least two use different sentence logic (affirmative concrete action, sensory consequence, or causal clause) instead of mirrored negatives.",
+      "acceptance_test": "Pass if no more than one of the cited locations retains the negation-echo structure and the other two are rewritten with distinct sentence shapes tied to concrete action/sensation; fail if two or more still use mirrored negative phrasing."
+    }
+  ],
+  "summary": "Chapter 6 lands its core event chain and continuity beats (raid, coercive cooperation, surveillance stigma) with strong scene-level specificity, but it does not clear pass threshold due to a high-stakes plausibility collapse in the interrogation negotiation, exposed operational logic in the tail scene, dialogue register drift in Ina's stress voice, a transcript-like interiority drought, and repeated negation-based prose formulas. No canonical continuity contradiction or sustained tense drift was found.",
+  "coverage_scene_ids": [
+    "scene_01_raid_and_seizure",
+    "scene_02_nis_interrogation_and_memorandum",
+    "scene_03_release_tail_and_minjae_contact"
+  ]
+}

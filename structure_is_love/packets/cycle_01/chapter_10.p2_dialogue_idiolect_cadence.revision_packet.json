@@ -1,0 +1,81 @@
+{
+  "acceptance_targets": [
+    "[CH10-F005] PASS if revised Ravi dialogue in snapshots/cycle_01/chapters/chapter_10.md:13, :19, and :45 uses contractions in at least 3 of 5 eligible auxiliary slots and any remaining uncontracted form reads as deliberate emphasis; FAIL if multiple unmotivated full forms remain.",
+    "[CH10-F006] PASS if a blind read of revised snapshots/cycle_01/chapters/chapter_10.md:29 and :37-43 can attribute each speaker by lexical and rhythmic cues without dialogue tags; FAIL if both still read as interchangeable generic compliance voice."
+  ],
+  "chapter_id": "chapter_10",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if revised Ravi dialogue in snapshots/cycle_01/chapters/chapter_10.md:13, :19, and :45 uses contractions in at least 3 of 5 eligible auxiliary slots and any remaining uncontracted form reads as deliberate emphasis; FAIL if multiple unmotivated full forms remain.",
+      "chapter_id": "chapter_10",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:13; snapshots/cycle_01/chapters/chapter_10.md:19; snapshots/cycle_01/chapters/chapter_10.md:45",
+      "finding_id": "CH10-F005",
+      "problem": "Dialogue register drifts stiff in high-pressure exchanges via repeated uncontracted forms (e.g., 'She is', 'You are', 'We are', 'They are') despite a high-contraction default and contemporary spoken context.",
+      "rewrite_direction": "Adjust Ravi's speech rhythm at snapshots/cycle_01/chapters/chapter_10.md:13, snapshots/cycle_01/chapters/chapter_10.md:19, and snapshots/cycle_01/chapters/chapter_10.md:45 toward natural contraction-heavy delivery, keeping any retained full-form phrasing only where emphasis or deliberate precision is explicit.",
+      "severity": "MEDIUM",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if a blind read of revised snapshots/cycle_01/chapters/chapter_10.md:29 and :37-43 can attribute each speaker by lexical and rhythmic cues without dialogue tags; FAIL if both still read as interchangeable generic compliance voice.",
+      "chapter_id": "chapter_10",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:29; snapshots/cycle_01/chapters/chapter_10.md:37; snapshots/cycle_01/chapters/chapter_10.md:43",
+      "finding_id": "CH10-F006",
+      "problem": "Tess and Marisol converge toward a similar institutional compliance cadence, weakening idiolect separation in adjacent authority scenes.",
+      "rewrite_direction": "Differentiate voice design between snapshots/cycle_01/chapters/chapter_10.md:29 and snapshots/cycle_01/chapters/chapter_10.md:37-43: keep Tess in body-process/actionable rehab language and give Marisol stricter systems-and-limitations diction with a distinct sentence rhythm.",
+      "severity": "MEDIUM",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "cc8df74765b8f979fad9216a42b502388d417da688c017cfe0f27c0be9a5191b",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on dialogue realism and voice separation: idiolect fidelity, leverage shifts, pressure cadence, anti-transcript behavior, natural colloquial texture (contractions/interruptions/slang when character-true), and pressure-true profanity usage per aesthetic risk policy.",
+    "key": "p2_dialogue_idiolect_cadence",
+    "label": "dialogue/idiolect/cadence fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into uncomfortable specificity when it changes behavior: pain detail, debt arithmetic, manipulative care, and mixed motives. In edge cases, prefer the truest in-character action over protective narration, then carry the real consequence forward instead of immediately moralizing it away.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If coercion, grief, injury, or economic shame appears, language must stay specific and embodied; vague softening triggers mandatory rewrite.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High - contractions are the spoken default; uncontracted forms are reserved for formal authority, deliberate emphasis, or emotional freezing.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Vary scene count and dialogue density chapter to chapter: rotate match compression, slow inventory aftermath, institutional pressure scenes, and quiet domestic intervals so adjacent chapters do not share the same structural pulse.",
+      "diction": "Concrete contemporary diction with class-aware specificity; avoid abstract therapy language unless a character would actually use it.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third anchored in Anika for most chapters, with brief controlled slips toward Ravi in designated confrontation and aftermath chapters.",
+      "rhythm_target": "Alternate clipped athletic sequences with longer reflective cadences; sentence length should track exertion, shame, and release.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_02",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch02-craft-001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:561; snapshots/cycle_02/chapters/chapter_02.md:563; snapshots/cycle_02/chapters/chapter_02.md:575; snapshots/cycle_02/chapters/chapter_02.md:581",
+      "problem": "The chapter ends with the gas cans still empty and the falsified ledger line still blank, so the irreversible county violation has not actually happened on the page. That contradicts the continuity sheet's canonical chapter-02 state transition that Tomas starts falsifying fuel use and giving Mina illicit night access here, and it weakens the chapter's consequence by deferring the ugliest operational act to chapter_03.",
+      "rewrite_direction": "Revise the ending in snapshots/cycle_02/chapters/chapter_02.md:561-581 so Tomas commits the first irreversible county offense before Mina leaves: either he writes the false log entry at the station, fills the cans with the county key, or initiates the run itself in this chapter. Keep Mina present for the choice so the chapter closes on witnessed consequence rather than anticipation.",
+      "acceptance_test": "PASS if revised lines 561-581 show Tomas performing a specific illegal county act on the page (false entry written, county fuel dispensed, or illicit departure launched) while Mina witnesses it; FAIL if the chapter still ends with both cans empty and the ledger line blank."
+    },
+    {
+      "finding_id": "ch02-dialogue-001",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:241; snapshots/cycle_02/chapters/chapter_02.md:251; snapshots/cycle_02/chapters/chapter_02.md:265; snapshots/cycle_02/chapters/chapter_02.md:275; snapshots/cycle_02/chapters/chapter_02.md:285",
+      "problem": "In the core bargaining stretch, Tomas drifts toward abstract, polished seducer talk ('which part you think is free,' 'Some airboat attached to a pulse,' 'You're expensive in a whole different way') and Mina answers in the same sharpened register. That blurs idiolect separation and nudges Tomas toward generic dangerous-man dialogue instead of the work-rooted county-boatman voice required by the style bible.",
+      "rewrite_direction": "Rework the bargaining beats in snapshots/cycle_02/chapters/chapter_02.md:241-285 so Tomas's leverage comes through county-work diction, fuel-log risk, route knowledge, overtime/job anxiety, and local shorthand, while Mina's replies stay anchored to creek-obsession, bodily want, and shame. Strip or replace the most generic sexy-threat lines rather than polishing them further.",
+      "acceptance_test": "PASS if, in revised lines 241-285, Tomas has at least two leverage turns grounded in county or fuel-work specifics and Mina has at least two replies grounded in the creek/rumor/body-specific want that is hers; FAIL if their lines in that span still read like interchangeable hard-boiled flirtation once dialogue tags are removed."
+    },
+    {
+      "finding_id": "ch02-prose-001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:243; snapshots/cycle_02/chapters/chapter_02.md:443; snapshots/cycle_02/chapters/chapter_02.md:499; snapshots/cycle_02/chapters/chapter_02.md:535",
+      "problem": "The prose leans repeatedly on the same negation-to-redefinition sentence shape ('Not flirtation exactly. Not yet.' / 'Not guilt exactly. Not dismissal.' / 'Not triumph. Something rougher...' / 'Not a fall, not a seduction, not fate.'). Once or twice this is a choice; at this frequency it becomes a chapter-level tic and makes the voice feel patterned rather than freshly observant.",
+      "rewrite_direction": "Vary the sentence logic in snapshots/cycle_02/chapters/chapter_02.md:243, snapshots/cycle_02/chapters/chapter_02.md:443, snapshots/cycle_02/chapters/chapter_02.md:499-500, and snapshots/cycle_02/chapters/chapter_02.md:535-536. Preserve the emotional meaning, but deliver at least three of those beats through different syntax, image, or action instead of sentence-initial denial/reframe.",
+      "acceptance_test": "PASS if, across revised lines 243, 443, 499-500, and 535-536, no more than one beat still uses the sentence-initial 'Not ...' denial/reframe construction; FAIL if the chapter keeps stacking the same correction formula in three or more of those locations."
+    }
+  ],
+  "summary": "The chapter does land its bureaucratic-to-transactional spine and it does not sanitize the sex-for-access bargain, but it still fails overall. The ending defers the canonical irreversible fuel-fraud step instead of staging it, Tomas and Mina blur into a shared hard-boiled flirtation register in the key negotiation, and the prose overuses a visible negation/redefinition sentence template."
+}

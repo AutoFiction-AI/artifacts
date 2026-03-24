@@ -1,0 +1,40 @@
+{
+  "chapter_id": "chapter_04",
+  "cycle": 2,
+  "input_snapshot_hash": "6e9c864b59a3bd7825f7c94d693ce5c8ada86fcbd84704fc31d6a7c9d8c755f5",
+  "findings": [
+    {
+      "finding_id": "warmth_overuse_ch04",
+      "source": "manual_rescue/full_award_rescue.review.json",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.post_revision.md:656, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:678, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:684, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:740, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:756, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:793, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:794",
+      "problem": "'Warmth' or 'warm' appears 7 times in this chapter. Full-novel count: 96 instances (~1 per 37 lines). The word has become the novel's sole descriptor for positive emotional sensation. Line 656: 'not warmth, something with more edge than warmth'; lines 678, 684: describing Caleb's emotional effect; lines 740, 756, 793, 794: in dialogue and narration scenes. When every good feeling is 'warm,' the word loses its heat and the emotional palette contracts to a single note.",
+      "rewrite_direction": "Keep at most 2 instances in this chapter. Keep the instance at snapshots/cycle_02/FINAL_NOVEL.post_revision.md:656, where the prose is already pushing past the word ('not warmth, something with more edge'). Replace the other 5 instances at snapshots/cycle_02/FINAL_NOVEL.post_revision.md:678, :684, :740, :756, :793, :794 with varied descriptors: specific physical sensations (loosening, softening, opening), non-'warm' temperature words (flush, heat), or emotional specifics that bypass temperature metaphor entirely and name what the feeling actually does in Nora's body.",
+      "acceptance_test": "Revised chapter contains no more than 2 instances of 'warmth' or 'warm' as emotional/atmospheric descriptors (literal temperature references excluded). Replacements at lines 678, 684, 740, 756, 793, 794 use at least 3 different alternative strategies."
+    },
+    {
+      "finding_id": "specific_particular_ch04",
+      "source": "manual_rescue/full_award_rescue.review.json",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.post_revision.md:614, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:617, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:656, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:664, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:694",
+      "problem": "'The specific' or 'the particular' appears 5 times in this chapter (full-novel count: 81). By this point the reader has encountered the pattern 15+ times and it has solidified from precision tool into verbal habit.",
+      "rewrite_direction": "Keep 1 instance — snapshots/cycle_02/FINAL_NOVEL.post_revision.md:656 ('the specific, terrifying sensation of being known' — the most emotionally charged use). Remove or replace the adjective at snapshots/cycle_02/FINAL_NOVEL.post_revision.md:614, :617, :664, :694. Strategy: trust the concrete detail to signal its own importance without the 'specific'/'particular' tag.",
+      "acceptance_test": "Revised chapter contains no more than 1 instance of 'the specific [noun]' or 'the particular [noun].' Lines 614, 617, 664, 694 no longer contain these constructions."
+    }
+  ],
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "No more than 2 instances of 'warmth'/'warm' as emotional or atmospheric descriptors in the revised chapter",
+    "No more than 1 instance of 'the specific [noun]' or 'the particular [noun]' in the revised chapter",
+    "Retain 'not warmth, something with more edge than warmth' (near line 656) as the strongest warmth use",
+    "Retain 'the specific, terrifying sensation of being known' (near line 656) as the strongest precision-intensifier use"
+  ],
+  "acceptance_targets": [
+    "Lines 678, 684, 740, 756, 793, 794: 'warmth'/'warm' replaced with at least 3 different alternative strategies",
+    "Lines 614, 617, 664, 694: 'the specific'/'the particular' removed or replaced",
+    "Warmth replacements include specific physical sensations, non-warm temperature words, or emotion-naming that bypasses temperature metaphor",
+    "Literal temperature references to 'warm' are excluded from the count"
+  ]
+}

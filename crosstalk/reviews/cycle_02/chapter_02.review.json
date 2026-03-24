@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_02",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch02-craft-001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:419; snapshots/cycle_02/chapters/chapter_02.md:483",
+      "problem": "Miriam gives Faye the blue-dress and tipping details in chapter 2, but the continuity sheet and chapter spine reserve those specifics for chapter_07. That front-loads a later reveal, flattens Faye's discovery arc, and creates a canonical sequencing contradiction.",
+      "rewrite_direction": "In snapshots/cycle_02/chapters/chapter_02.md:419 and snapshots/cycle_02/chapters/chapter_02.md:483, strip Miriam's memory back to the chapter_02 payload: Golden Ox recognition, the face/voice match, and the collarbone gesture. Hold the blue dress, the distinctive tipping detail, and any stronger corroboration for the later Miriam scene.",
+      "acceptance_test": "Pass if the revised passages anchored at snapshots/cycle_02/chapters/chapter_02.md:419 and snapshots/cycle_02/chapters/chapter_02.md:483 let a reader recover only the chapter_02 facts (Golden Ox, face match, collarbone habit) and do not mention the blue dress or that 'Faye' tipped; fail if either later-chapter detail still appears here."
+    },
+    {
+      "finding_id": "ch02-dialogue-001",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:69; snapshots/cycle_02/chapters/chapter_02.md:299; snapshots/cycle_02/chapters/chapter_02.md:453",
+      "problem": "The chapter's three revelation scenes lean on the same dialogue ladder: question, denial or deflection, insistence, retreat into concealment. Because Jet/Faye, Jet/Spike, and Faye/Miriam all cycle through that same turn-shape, the discoveries start to feel modular rather than differently lived.",
+      "rewrite_direction": "Differentiate the conversational engines in snapshots/cycle_02/chapters/chapter_02.md:69-151, snapshots/cycle_02/chapters/chapter_02.md:299-343, and snapshots/cycle_02/chapters/chapter_02.md:453-519. Options: let Jet's scene convert into an explicit rule or threat, let the Jet/Spike exchange force a concrete operational concession, and let the Faye/Miriam scene pick up interruptions, dead ends, or misremembered fragments instead of another denial loop.",
+      "acceptance_test": "Pass if, when reading the revised passages anchored at snapshots/cycle_02/chapters/chapter_02.md:69-151, snapshots/cycle_02/chapters/chapter_02.md:299-343, and snapshots/cycle_02/chapters/chapter_02.md:453-519, at least two scenes pivot through visibly different leverage changes rather than repeating denial-counterdenial, and each scene ends with a distinct on-page consequence such as a rule, an action order, or a destabilizing new detail. Fail if all three exchanges still resolve by one character refusing, the other insisting, and the scene withdrawing."
+    },
+    {
+      "finding_id": "ch02-prose-001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:9; snapshots/cycle_02/chapters/chapter_02.md:99; snapshots/cycle_02/chapters/chapter_02.md:401; snapshots/cycle_02/chapters/chapter_02.md:555",
+      "problem": "A recurring exclusion-based sentence formula keeps reappearing: the prose tells the reader what a moment is not before stating what it is. By the fourth and fifth use, that negation-first rhythm reads like a tic and turns several pressure beats into the same sentence shape.",
+      "rewrite_direction": "In snapshots/cycle_02/chapters/chapter_02.md:9-10, snapshots/cycle_02/chapters/chapter_02.md:99-103, snapshots/cycle_02/chapters/chapter_02.md:401-402, and snapshots/cycle_02/chapters/chapter_02.md:555-556, replace most 'not X / just-or-something Y' constructions with direct sensory or behavioral description. Keep at most one such negation where the contrast genuinely sharpens meaning; elsewhere, name the room change, Miriam's recognition, and Faye's return-to-ship unease positively.",
+      "acceptance_test": "Pass if the revised passages anchored at snapshots/cycle_02/chapters/chapter_02.md:9-10, snapshots/cycle_02/chapters/chapter_02.md:99-103, snapshots/cycle_02/chapters/chapter_02.md:401-402, and snapshots/cycle_02/chapters/chapter_02.md:555-556 contain no more than one exclusion-based sentence of the form 'not X ... just or only Y,' and the replacement language gives a direct observable description in each location. Fail if the chapter still leans on that same negation-first construction across multiple of these beats."
+    }
+  ],
+  "summary": "Atmosphere, POV handling, and the three mandated disturbances are present, but the chapter does not clear a pass. A HIGH continuity leak spends later Miriam specifics too early, the major conversations reuse the same concealment ladder, and a repeated negation-first prose formula exposes the sentence-making rather than deepening pressure."
+}

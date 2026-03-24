@@ -1,0 +1,57 @@
+{
+  "chapter_id": "chapter_17",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_17_F001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_02/chapters/chapter_17.md:351; snapshots/cycle_02/chapters/chapter_17.md:353",
+      "problem": "At the hearing's moral apex, civilian harm testimony is compressed into montage summary (three witnesses in one paragraph) rather than rendered at scene level. This is sanitization drift via summary-replacing-scene: consequence is reported, not fully experienced in real time.",
+      "rewrite_direction": "Expand the public-comment block at snapshots/cycle_02/chapters/chapter_17.md:351 into at least one fully dramatized witness exchange (direct quote + concrete object/body detail + immediate room response), then trim adjacent connective exposition around snapshots/cycle_02/chapters/chapter_17.md:353-355 to keep pacing.",
+      "acceptance_test": "PASS if revised text in snapshots/cycle_02/chapters/chapter_17.md:351-355 contains at least one witness testimony presented over 3+ consecutive lines with concrete sensory detail and an explicit panel/crowd reaction; FAIL if the section remains a multi-witness summary sentence cluster."
+    },
+    {
+      "finding_id": "chapter_17_F002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_02/chapters/chapter_17.md:273; snapshots/cycle_02/chapters/chapter_17.md:313; snapshots/cycle_02/chapters/chapter_17.md:381; snapshots/cycle_02/chapters/chapter_17.md:405",
+      "problem": "Two long stretches run as near-transcript without focalizer interiority (Ji-eun cross-exam and indictment procedure), pushing close-third narration toward screenplay mode.",
+      "rewrite_direction": "Insert Ina's internal experience beats inside the cited spans: one around snapshots/cycle_02/chapters/chapter_17.md:285-303 during debt/sedation testimony, and one around snapshots/cycle_02/chapters/chapter_17.md:391-401 when indictment conditions are read and processed.",
+      "acceptance_test": "PASS if in each cited span there is no run longer than 6 consecutive paragraphs without Ina thought/sensation/self-assessment, and each span includes at least 2 explicit interior beats tied to live testimony/ruling content; otherwise FAIL."
+    },
+    {
+      "finding_id": "chapter_17_F003",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_02/chapters/chapter_17.md:157; snapshots/cycle_02/chapters/chapter_17.md:267; snapshots/cycle_02/chapters/chapter_17.md:321; snapshots/cycle_02/chapters/chapter_17.md:475",
+      "problem": "Ji-eun's stress is repeatedly signaled with the same left-hand tremor cue, creating mechanical repetition from a single stress marker and flattening emotional progression.",
+      "rewrite_direction": "Keep one early tremor anchor near snapshots/cycle_02/chapters/chapter_17.md:157 or :267, then replace later repeats near snapshots/cycle_02/chapters/chapter_17.md:321 and :475 with different embodied signals (voice break, breath control failure, posture shift, forced smile collapse) consistent with her public/private register toggling.",
+      "acceptance_test": "PASS if references to Ji-eun's left-hand tremor/stillness occur no more than 2 times across snapshots/cycle_02/chapters/chapter_17.md:157-475 and at least 2 distinct alternate stress cues are visible; FAIL if the tremor cue remains the dominant repeated marker."
+    },
+    {
+      "finding_id": "chapter_17_F004",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_02/chapters/chapter_17.md:101; snapshots/cycle_02/chapters/chapter_17.md:167; snapshots/cycle_02/chapters/chapter_17.md:319",
+      "problem": "The recurring gaze-pivot construction (\"looked ... then back/then at ...\") appears three times, becoming a visible prose tic and reducing line-level freshness.",
+      "rewrite_direction": "Revise at least two of the cited lines so turn-taking is conveyed through non-gaze actions (object handling, interruption, breath, micro-movement) while preserving scene logic.",
+      "acceptance_test": "PASS if the exact gaze-pivot template appears at most twice in the full revised chapter and at least two of snapshots/cycle_02/chapters/chapter_17.md:101/:167/:319 are rewritten with different beat mechanics; otherwise FAIL."
+    }
+  ],
+  "summary": "The chapter lands core causal beats (Ina testimony, Ji-eun corroboration, council dissolution, indictment) with strong momentum and character-level consequence, but it does not clear craft/prose review due one HIGH sanitization-by-summary block and multiple prose repetition/interiority issues.",
+  "coverage_scene_ids": [
+    "c17_scene_01_hearing_morning",
+    "c17_scene_02_plaza_and_backchannel",
+    "c17_scene_03_ruling_and_aftermath"
+  ]
+}

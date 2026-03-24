@@ -1,0 +1,83 @@
+{
+  "acceptance_targets": [
+    "[ch14-dialogue-001] PASS if the revised exchange at snapshots/cycle_01/chapters/chapter_14.md:89-177 includes at least three Ina lines with audible disfluency (restart, cutoff, fragment, or correction) while retaining scene leverage; FAIL if her replies remain predominantly polished full-sentence retorts.",
+    "[ch14-dialogue-002] PASS if revised Choi lines in snapshots/cycle_01/chapters/chapter_14.md:165-203 contain at least two concrete process nouns (for example forms, signatures, dispatch windows, intake codes) and no nation-scale rhetoric, while Kwon retains macro historical framing; FAIL if both voices still read as interchangeable formal operators."
+  ],
+  "chapter_id": "chapter_14",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if the revised exchange at snapshots/cycle_01/chapters/chapter_14.md:89-177 includes at least three Ina lines with audible disfluency (restart, cutoff, fragment, or correction) while retaining scene leverage; FAIL if her replies remain predominantly polished full-sentence retorts.",
+      "chapter_id": "chapter_14",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:91; snapshots/cycle_01/chapters/chapter_14.md:127; snapshots/cycle_01/chapters/chapter_14.md:139; snapshots/cycle_01/chapters/chapter_14.md:173; snapshots/cycle_01/chapters/chapter_14.md:177",
+      "finding_id": "ch14-dialogue-001",
+      "problem": "Ina's interrogation dialogue stays unusually polished and aphoristic despite acute sleep deprivation, flattening pressure realism for a high-contraction character who should show more speech fracture under this level of coercion.",
+      "rewrite_direction": "Rework Ina's detention exchange in snapshots/cycle_01/chapters/chapter_14.md:89-177 to preserve defiance while adding interruption, contraction-heavy fragments, and self-corrections that reflect cognitive depletion.",
+      "severity": "MEDIUM",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if revised Choi lines in snapshots/cycle_01/chapters/chapter_14.md:165-203 contain at least two concrete process nouns (for example forms, signatures, dispatch windows, intake codes) and no nation-scale rhetoric, while Kwon retains macro historical framing; FAIL if both voices still read as interchangeable formal operators.",
+      "chapter_id": "chapter_14",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:37; snapshots/cycle_01/chapters/chapter_14.md:125; snapshots/cycle_01/chapters/chapter_14.md:137; snapshots/cycle_01/chapters/chapter_14.md:167; snapshots/cycle_01/chapters/chapter_14.md:171",
+      "finding_id": "ch14-dialogue-002",
+      "problem": "Choi and Kwon partially converge into the same controlled managerial cadence, weakening idiolect separation in the detention room.",
+      "rewrite_direction": "Differentiate register in snapshots/cycle_01/chapters/chapter_14.md:165-203: keep Kwon's macro-inevitability rhetoric in his scene (snapshots/cycle_01/chapters/chapter_14.md:81-163), but push Choi toward concrete compliance diction and practical stakes rather than elevated abstraction.",
+      "severity": "MEDIUM",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "4a0470061033e89798263e41a7269d1073aa5af10c5982cd9b22df6ae3231bc2",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on dialogue realism and voice separation: idiolect fidelity, leverage shifts, pressure cadence, anti-transcript behavior, natural colloquial texture (contractions/interruptions/slang when character-true), and pressure-true profanity usage per aesthetic risk policy.",
+    "key": "p2_dialogue_idiolect_cadence",
+    "label": "dialogue/idiolect/cadence fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into uncomfortable specificity when stakes demand it: show coercion mechanics, sexual negotiation, grief rituals, and financial desperation at scene level. In edge cases, prefer precision over decorum; protect character dignity through perspective accuracy, not by omitting the hard material.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene requires bodily, economic, or moral consequence and the draft retreats into abstract phrasing, rewrite with concrete action, sensation, and decision impact before proceeding.",
+      "operational_resolution_rule": "When uncertain between tasteful distance and narrative truth, choose the version that preserves causal accountability and embodied consequence, then tune language for clarity rather than softness.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the baseline in spoken dialogue; uncontracted forms are reserved for deliberate emphasis, legal language, or character-specific formality.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate chapter structures deliberately: high-density dialogue vs interior reflection, multi-scene public collision vs two-scene intimate pressure, aftermath inventory vs anticipatory dread. Never let two consecutive chapters share the same pacing architecture or turn mechanism.",
+      "diction": "Contemporary, unsentimental literary diction that permits technical vocabulary, profanity, and class-marked speech without flattening idiolects.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third person centered on Seo Ina, with brief controlled widenings in public-event chapters.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Alternating pressure waves: compressed clauses in operational stress, longer breath-based lines in grief and reflection.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

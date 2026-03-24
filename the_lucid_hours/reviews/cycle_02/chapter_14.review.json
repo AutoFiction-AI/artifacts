@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_14",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_14_craft_continuity_tammy_ex_name",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:21; snapshots/cycle_02/chapters/chapter_14.md:57",
+      "problem": "The chapter names Tammy's ex-husband as Kevin, but the continuity sheet establishes Greg Briggs as the ex-husband tied to her divorce hook. Because the divorce is one of this chapter's required carry-forward beats, this reads as a canonical contradiction, not a throwaway detail.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_14.md:21 and snapshots/cycle_02/chapters/chapter_14.md:57, replace the ex-husband naming/details so they match Tammy Briggs's established continuity. If Kevin is meant to be a different man, the revised lines must say that explicitly on the page instead of leaving the divorce memory attached to two different men.",
+      "acceptance_test": "Pass if a cold reader of snapshots/cycle_02/chapters/chapter_14.md:21 and snapshots/cycle_02/chapters/chapter_14.md:57 can identify exactly one continuity-consistent ex-husband for Tammy: Greg Briggs, unless the passage explicitly states Kevin is someone else. Fail if the divorce hook still appears attached to Kevin without clarification."
+    },
+    {
+      "finding_id": "chapter_14_prose_clipped_narration",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:3; snapshots/cycle_02/chapters/chapter_14.md:7; snapshots/cycle_02/chapters/chapter_14.md:41; snapshots/cycle_02/chapters/chapter_14.md:47; snapshots/cycle_02/chapters/chapter_14.md:49",
+      "problem": "The chapter repeatedly relies on constitution-banned clipped narration: standalone noun phrases, subordinate-clause fragments, and article-stripped shorthand such as \"Barrier cream,\" \"Oxy balanced,\" \"Which hall had the bad fluorescent tube,\" and \"Gas. Phone. Groceries.\" At this frequency the effect stops reading as Tammy's pressure and starts reading as mechanical terseness.",
+      "rewrite_direction": "Recast the clipped beats at snapshots/cycle_02/chapters/chapter_14.md:3, snapshots/cycle_02/chapters/chapter_14.md:7, snapshots/cycle_02/chapters/chapter_14.md:41, snapshots/cycle_02/chapters/chapter_14.md:47, and snapshots/cycle_02/chapters/chapter_14.md:49 into grammatically complete sentences that keep Tammy's blunt, body-level observational voice without dropping subjects, articles, or finite verbs. Preserve the care-labor texture, count routine, and wage-math pressure; remove the note-fragment scaffolding.",
+      "acceptance_test": "Pass if the revised passages at snapshots/cycle_02/chapters/chapter_14.md:3, snapshots/cycle_02/chapters/chapter_14.md:7, snapshots/cycle_02/chapters/chapter_14.md:41, snapshots/cycle_02/chapters/chapter_14.md:47, and snapshots/cycle_02/chapters/chapter_14.md:49 still sound blunt and exhausted but read as fully formed prose sentences on the page. Fail if the cited spans still depend on standalone fragments like \"Barrier cream.\" or article-stripped shorthand like \"had pattern in it.\""
+    },
+    {
+      "finding_id": "chapter_14_dialogue_style_bible_echo",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:17; snapshots/cycle_02/chapters/chapter_14.md:25",
+      "problem": "Tammy's voice leaks calibration-only style-bible phrasing into the chapter. Her \"Sure\" reply reproduces a provided example line verbatim, and \"Something was off\" tracks too closely to another calibration line. That makes the voice feel copied from notes instead of freshly spoken or thought in scene.",
+      "rewrite_direction": "Rewrite Tammy's response at snapshots/cycle_02/chapters/chapter_14.md:17 and her suspicion beat at snapshots/cycle_02/chapters/chapter_14.md:25 so they keep the same local function — a flat brush-off and a cautious suspicion she refuses to overclaim — without reproducing or near-reproducing calibration-only wording from the style bible.",
+      "acceptance_test": "Pass if revised snapshots/cycle_02/chapters/chapter_14.md:17 and snapshots/cycle_02/chapters/chapter_14.md:25 still sound like Tammy in this scene but do not verbatim or near-verbatim echo any Tammy example line from the style bible. Fail if either line still reads as a direct lift or obvious paraphrase of a calibration-only example."
+    }
+  ],
+  "summary": "Strong Tammy-specific observation, bodily specificity, and state-shift function are present, but the chapter still fails review. A HIGH continuity contradiction misnames Tammy's ex-husband, the prose repeatedly falls into constitution-banned clipped narration, and Tammy's voice leaks calibration-only style-bible phrasing onto the page."
+}

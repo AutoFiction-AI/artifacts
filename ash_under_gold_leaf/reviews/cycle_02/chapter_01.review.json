@@ -1,0 +1,68 @@
+{
+  "chapter_id": "chapter_01",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch01-craft-001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_02/chapters/chapter_01.md:149; snapshots/cycle_02/chapters/chapter_01.md:293; snapshots/cycle_02/chapters/chapter_01.md:310",
+      "problem": "Sanitization drift at the legal-risk peak: after explicit warning of personal exposure, the narrative retreats into email text and fact-log summary instead of rendering the risk-ack confrontation on-page. This defuses tension at the exact moment consequence should become embodied.",
+      "rewrite_direction": "Rewrite the post-warning block at snapshots/cycle_02/chapters/chapter_01.md:293, snapshots/cycle_02/chapters/chapter_01.md:297, snapshots/cycle_02/chapters/chapter_01.md:304, and snapshots/cycle_02/chapters/chapter_01.md:310 as a live Conference B exchange. Keep one short quoted email if needed, but stage the confrontation with Legal/Security in-scene and force Marisol to answer one non-negotiable condition in person.",
+      "acceptance_test": "PASS if the revised section anchored at snapshots/cycle_02/chapters/chapter_01.md:293 and snapshots/cycle_02/chapters/chapter_01.md:310 contains an on-page dialogue beat where institutional staff state a specific liability term, Marisol responds in-scene, and the block ends with an immediate physical or logistical consequence; FAIL if this section remains primarily email/summary text."
+    },
+    {
+      "finding_id": "ch01-prose-001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_02/chapters/chapter_01.md:91; snapshots/cycle_02/chapters/chapter_01.md:99; snapshots/cycle_02/chapters/chapter_01.md:107; snapshots/cycle_02/chapters/chapter_01.md:115; snapshots/cycle_02/chapters/chapter_01.md:119; snapshots/cycle_02/chapters/chapter_01.md:121",
+      "problem": "Interiority drought in the core Gallery Three negotiation: there is a long external run (15 consecutive paragraphs in this block) before Marisol's inner processing returns, flattening close-third pressure into screenplay-like coverage.",
+      "rewrite_direction": "Inject Marisol-specific interior beats into the negotiation block around snapshots/cycle_02/chapters/chapter_01.md:97, snapshots/cycle_02/chapters/chapter_01.md:109, and snapshots/cycle_02/chapters/chapter_01.md:119, using thought/sensation/self-assessment tied to the leverage shifts already present.",
+      "acceptance_test": "PASS if in the revised span anchored by snapshots/cycle_02/chapters/chapter_01.md:91 through snapshots/cycle_02/chapters/chapter_01.md:121 there are at least 3 distinct interior cues and no run longer than 9 consecutive paragraphs without focalized internal experience; FAIL otherwise."
+    },
+    {
+      "finding_id": "ch01-prose-002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_02/chapters/chapter_01.md:157; snapshots/cycle_02/chapters/chapter_01.md:191; snapshots/cycle_02/chapters/chapter_01.md:310",
+      "problem": "Recurring sentence formula appears more than twice: action is framed as happening 'before ... could ...' in three separate beats, creating a detectable autopilot cadence.",
+      "rewrite_direction": "Revise at least two of the constructions at snapshots/cycle_02/chapters/chapter_01.md:157, snapshots/cycle_02/chapters/chapter_01.md:191, and snapshots/cycle_02/chapters/chapter_01.md:310 into different syntactic shapes that state cause/effect directly.",
+      "acceptance_test": "PASS if among snapshots/cycle_02/chapters/chapter_01.md:157, snapshots/cycle_02/chapters/chapter_01.md:191, and snapshots/cycle_02/chapters/chapter_01.md:310 no more than one sentence retains the 'before ... could ...' structure; FAIL if two or three remain."
+    },
+    {
+      "finding_id": "ch01-dialogue-001",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_02/chapters/chapter_01.md:17; snapshots/cycle_02/chapters/chapter_01.md:31; snapshots/cycle_02/chapters/chapter_01.md:91; snapshots/cycle_02/chapters/chapter_01.md:97; snapshots/cycle_02/chapters/chapter_01.md:123; snapshots/cycle_02/chapters/chapter_01.md:149",
+      "problem": "Nora's voice over-relies on repeated policy nouns ('donor', 'legal', 'defamation', 'exposure') across multiple turns, which reads as lexical-signature token reuse rather than adaptive speech under pressure.",
+      "rewrite_direction": "In Nora's lines at snapshots/cycle_02/chapters/chapter_01.md:91, snapshots/cycle_02/chapters/chapter_01.md:123, and snapshots/cycle_02/chapters/chapter_01.md:149, keep one legal-density pass but replace repeated abstract nouns with concrete institutional actions, named documents, or operational constraints.",
+      "acceptance_test": "PASS if the revised Nora block anchored at snapshots/cycle_02/chapters/chapter_01.md:91 and snapshots/cycle_02/chapters/chapter_01.md:149 includes at least 2 concrete operational references and does not repeat 'donor' or 'legal' more than once each in that block; FAIL otherwise."
+    },
+    {
+      "finding_id": "ch01-booker-001",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_02/chapters/chapter_01.md:308; snapshots/cycle_02/chapters/chapter_01.md:314; snapshots/cycle_02/chapters/chapter_01.md:319",
+      "problem": "The chapter closes by previewing the next interview objective instead of landing the immediate consequence of the decision, softening chapter-end impact.",
+      "rewrite_direction": "Rebuild the ending around the immediate post-email consequence at snapshots/cycle_02/chapters/chapter_01.md:314 and snapshots/cycle_02/chapters/chapter_01.md:319. Keep forward motion, but end on a present-scene cost (institutional control, bodily fallout, or relational rupture) rather than a planning line.",
+      "acceptance_test": "PASS if the final paragraph anchored at snapshots/cycle_02/chapters/chapter_01.md:319 ends on an immediate in-scene consequence and does not close on a future appointment/objective statement; FAIL if the closing beat remains a forward-looking setup line."
+    }
+  ],
+  "summary": "Strong premise pressure is present, but the chapter fails review due to one HIGH sanitization retreat at the legal-risk apex plus unresolved medium issues in interiority continuity, repeated prose construction, dialogue lexical over-reuse, and chapter-end consequence landing.",
+  "coverage_scene_ids": [
+    "scene_01_museum_intake",
+    "scene_02_gallery_three_negotiation",
+    "scene_03_loading_dock_craving_call",
+    "scene_04_admin_risk_followup"
+  ]
+}

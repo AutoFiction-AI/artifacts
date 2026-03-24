@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_02",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch2_booker_001",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_01/chapters/chapter_02.md:245; snapshots/cycle_01/chapters/chapter_02.md:249; snapshots/cycle_01/chapters/chapter_02.md:251; snapshots/cycle_01/chapters/chapter_02.md:283",
+      "problem": "The chapter withholds immediate relational consequence after Lena chooses evidence over family contact twice (ignoring Jalen at 7:58 and again at chapter close), so the information turn lands before the promised human cost fully materializes.",
+      "rewrite_direction": "Revise the ending movement in snapshots/cycle_01/chapters/chapter_02.md:245-283 so Lena's choice triggers an on-page consequence before final cutoff (for example: she plays the voicemail, replies, or receives a message that alters her next move). Keep the Mercer-docket discovery, but tie it causally to a changed personal stake in the same span.",
+      "acceptance_test": "Pass if the revised span at snapshots/cycle_01/chapters/chapter_02.md:245-283 contains a direct consequence beat from Jalen contact (played voicemail, live exchange, or equivalent new information) that changes Lena's immediate behavior before the chapter ends; fail if she still ignores all contact and the close remains clue-only."
+    },
+    {
+      "finding_id": "ch2_craft_001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_01/chapters/chapter_02.md:183; snapshots/cycle_01/chapters/chapter_02.md:187; snapshots/cycle_01/chapters/chapter_02.md:189; snapshots/cycle_01/chapters/chapter_02.md:191",
+      "problem": "Sanitization drift: Lena's morally charged decision to violate Ida's boundary and take the key is compressed into fast summary, replacing a high-tension betrayal scene with efficient transit beats and minimizing interpersonal risk.",
+      "rewrite_direction": "Rebuild snapshots/cycle_01/chapters/chapter_02.md:187-191 as a fully rendered theft beat: stage resistance (someone present, chance of being seen, or required lie), bodily stress, and immediate relational damage signal before she exits. Do not skip from intention to possession in summary form.",
+      "acceptance_test": "Pass if revised snapshots/cycle_01/chapters/chapter_02.md:187-191 shows at least one concrete obstacle during key retrieval and one explicit indicator of relational cost before departure; fail if the action remains a compressed summary jump from decision to key-in-pocket."
+    },
+    {
+      "finding_id": "ch2_dialogue_001",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_01/chapters/chapter_02.md:145",
+      "problem": "In Ida's highest-pressure exchange, uncontracted negatives (\"did not\", \"would not\") create a stiff formal patch that conflicts with chapter-level high-contraction defaults and the scene's emotional heat.",
+      "rewrite_direction": "Adjust Ida's line in snapshots/cycle_01/chapters/chapter_02.md:145 so baseline spoken rhythm uses contractions, preserving force through word choice and cadence rather than formal full forms. If one full form is retained, mark it as deliberate emphasis in context.",
+      "acceptance_test": "Pass if the revised Ida outburst at snapshots/cycle_01/chapters/chapter_02.md:145-146 uses natural contracted negatives for routine clauses and any remaining uncontracted form reads as explicit emphasis; fail if multiple neutral full-form negatives remain in this heated speech."
+    },
+    {
+      "finding_id": "ch2_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_01/chapters/chapter_02.md:3; snapshots/cycle_01/chapters/chapter_02.md:15; snapshots/cycle_01/chapters/chapter_02.md:35; snapshots/cycle_01/chapters/chapter_02.md:151; snapshots/cycle_01/chapters/chapter_02.md:239; snapshots/cycle_01/chapters/chapter_02.md:279",
+      "problem": "A recurring simile construction (\"... like ...\") appears repeatedly across the chapter, crossing from intentional motif into detectable sentence-template reuse that flattens prose surprise.",
+      "rewrite_direction": "Line-edit the repeated simile cluster in snapshots/cycle_01/chapters/chapter_02.md:3, snapshots/cycle_01/chapters/chapter_02.md:15, snapshots/cycle_01/chapters/chapter_02.md:35, snapshots/cycle_01/chapters/chapter_02.md:151, snapshots/cycle_01/chapters/chapter_02.md:239, and snapshots/cycle_01/chapters/chapter_02.md:279 by replacing most with direct sensory statement, verb-driven image, or non-simile comparison.",
+      "acceptance_test": "Pass if the revised cited lines retain concrete imagery but reduce the repeated \"... like ...\" template to no more than two instances across those targeted lines; fail if three or more of those lines still use the same simile construction."
+    }
+  ],
+  "summary": "Chapter 2 cleanly lands required continuity beats (fish-fry social texture, Ida's refusal/anger, and coded-notebook recovery) and stays in canonical past tense with no detected continuity-sheet contradictions. It still fails this pass because one HIGH craft issue (sanitized compression of Lena's key theft) and three MEDIUM issues (deferred consequence landing, one stiff high-pressure dialogue patch, and repeated simile templates) remain unresolved."
+}

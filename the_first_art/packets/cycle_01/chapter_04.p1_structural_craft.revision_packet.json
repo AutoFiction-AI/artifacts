@@ -1,0 +1,96 @@
+{
+  "acceptance_targets": [
+    "[ch04_dialogue_001] Pass if the revised dialogue at snapshots/cycle_01/chapters/chapter_04.md:49 and snapshots/cycle_01/chapters/chapter_04.md:75 preserves Babbling's meaning without any clause-level echo of the calibration lines; fail if the passage still contains the example-line sequence around \"pre-Futhark\"/\"Possibly pre-Ogham\"/\"Sardinian fragments\" or retains \"There is a difference this year.\"",
+    "[ch04_craft_001] Pass if the revised ending still shows Gavin noticing Duncan's bruises and choosing the manuscript, but the final two paragraphs do not name, paraphrase, or explain his guilt for him; fail if the passage still reassures the reader with explicit moral interpretation instead of leaving the avoidance legible through action and residue.",
+    "[full_award_001] Pass if a reader comparing the revised dialogue at snapshots/cycle_01/FINAL_NOVEL.md:706 and snapshots/cycle_01/FINAL_NOVEL.md:732 to the style-bible calibration lines can no longer map them line-for-line or cadence-for-cadence, while Babbling still reads as precise, low-contraction, academically excited, and frightened of being seen helping. Fail if the revised scene still echoes the calibration wording or sentence architecture."
+  ],
+  "chapter_id": "chapter_04",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if the revised dialogue at snapshots/cycle_01/chapters/chapter_04.md:49 and snapshots/cycle_01/chapters/chapter_04.md:75 preserves Babbling's meaning without any clause-level echo of the calibration lines; fail if the passage still contains the example-line sequence around \"pre-Futhark\"/\"Possibly pre-Ogham\"/\"Sardinian fragments\" or retains \"There is a difference this year.\"",
+      "chapter_id": "chapter_04",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_04.md:49; snapshots/cycle_01/chapters/chapter_04.md:75",
+      "finding_id": "ch04_dialogue_001",
+      "problem": "Professor Babbling's dialogue reproduces calibration-only style-bible example material nearly verbatim. The academic-voice target is clear, but these lines read as copied register scaffolding rather than fresh speech, which is an explicit HIGH failure under the review contract.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_04.md:49 and snapshots/cycle_01/chapters/chapter_04.md:75, rewrite Babbling's lines from first principles. Keep the same informational beats and her low-contraction, precise academic register, but replace the borrowed clause order, phrasing, and cadence so the scene sounds spoken in this moment rather than retrieved from `outline/style_bible.json`.",
+      "severity": "HIGH",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if the revised ending still shows Gavin noticing Duncan's bruises and choosing the manuscript, but the final two paragraphs do not name, paraphrase, or explain his guilt for him; fail if the passage still reassures the reader with explicit moral interpretation instead of leaving the avoidance legible through action and residue.",
+      "chapter_id": "chapter_04",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_04.md:169; snapshots/cycle_01/chapters/chapter_04.md:189",
+      "finding_id": "ch04_craft_001",
+      "problem": "The Duncan thread is softened by an explicit moral-safety-valve. Naming Gavin's guilt twice turns his inaction into a reassuring conscience beat, which undercuts the novel's stated risk that his priorities become alien and leaves the chapter tidier than the premise allows. This is sanitization drift, so it is a HIGH craft failure.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_04.md:169 and snapshots/cycle_01/chapters/chapter_04.md:189, remove the narrated guilt labels and the explanatory moral framing. Let the pressure live in concrete aftermath instead: Duncan's body, the social silence at the table, Gavin's divided attention, and the fact that he resumes the manuscript anyway. If guilt remains, it should appear as behavior, sensory carryover, or avoidance rather than narrator summary.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if a reader comparing the revised dialogue at snapshots/cycle_01/FINAL_NOVEL.md:706 and snapshots/cycle_01/FINAL_NOVEL.md:732 to the style-bible calibration lines can no longer map them line-for-line or cadence-for-cadence, while Babbling still reads as precise, low-contraction, academically excited, and frightened of being seen helping. Fail if the revised scene still echoes the calibration wording or sentence architecture.",
+      "chapter_id": "chapter_04",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:706",
+      "finding_id": "full_award_001",
+      "problem": "Professor Babbling's dialogue is built from style-bible calibration text rather than fresh scene writing. The line at 706 closely tracks the banned example about pre-Futhark/Sardinian fragments, and the instruction about returning Wexworth at 732 repeats another calibration line nearly verbatim. That violates the explicit no-echo rule and makes Babbling sound pre-composed instead of present in the room.",
+      "rewrite_direction": "Rewrite Babbling's quoted material around snapshots/cycle_01/FINAL_NOVEL.md:706 and snapshots/cycle_01/FINAL_NOVEL.md:732 from scratch. Keep her academic precision, caution, and fear of the year, but give her different image order, different technical examples, and different sentence music. Do not reuse the Sardinian-fragments phrasing or the 'There is a difference this year' construction; let the same information arrive through new wording that still sounds like Babbling and still hands Gavin a usable method/tool.",
+      "severity": "HIGH",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "9ba4240e91dd1bd1ac2b1028ead4e7baa413793c60807a36cad56232d5a54aab",
+  "must_fix_count": 3,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This novel's central risk is tonal: it must sustain dark comedy, cosmic horror, and genuine emotional tenderness in the same narrative without any register canceling the others. Lean into the discomfort of juxtaposition. A scene where Gavin is mentally modeling ward-substrate decay while a classmate screams under the Cruciatus Curse is not a failure of empathy \u2014 it is the novel's core tension made visceral. The humor of the premise \u2014 that Voldemort's war is an irritating distraction from the real problem \u2014 must never be defused by making Gavin feel appropriately guilty at the right moments. He should feel guilty sometimes and not other times, and the reader should sit with the discomfort of a protagonist whose priorities have become genuinely alien. The cosmic material should be rendered with enough specificity that it is genuinely unsettling, not just philosophically interesting. Do not soften the ending: Gavin's refusal to intervene in the Battle of Hogwarts must be played straight, without a last-minute redemptive gesture or moral safety net.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism in this novel is a particularly acute failure because the entire thematic engine runs on the difference between seeing something directly and not seeing it. Gavin's journey is toward unmediated perception. The prose must mirror that commitment. When the Carrows torture a student, render the torture. When Gavin is hit with the Cruciatus, render the pain in his body. When the cosmic threat presses against perception, render what it feels like \u2014 do not retreat to abstractions about 'something vast' or 'an incomprehensible presence.' Find the specific sensory detail that makes the incomprehensible land. Euphemism in a novel about the failure to see what is real is thematic self-sabotage.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for all dialogue. Uncontracted forms are reserved for deliberate emphasis, Babbling's academic register, or moments where a character is being pointedly formal. If a line reads stiffly, check contractions first.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate chapter textures aggressively. A high-intensity chapter (Cruciatus detention, Duncan's torture) must be followed by a chapter with a different pressure profile \u2014 quieter, more internal, more comic, or more focused on intellectual work. No two consecutive chapters should share the same dominant emotional register, the same scene-structure (e.g., two chapters that each build to a confrontation), or the same pacing profile. Vary scene count, dialogue density, and the ratio of interiority to action. Some chapters should be mostly one extended scene; others should move across multiple locations and timeframes. The Christmas chapter and the work-routine chapters should breathe differently from the Carrow chapters and the battle chapter.",
+      "diction": "Plain, concrete, specific. Anglo-Saxon roots preferred over Latinate where both are available. Avoid poetic diction, literary allusion, and metaphors that call attention to their own cleverness. Metaphors should arise from Gavin's actual frame of reference: schoolwork, the castle, ordinary physical experience. When the First Art requires description, reach for precision over beauty \u2014 describe what it looks like, not what it means. The novel's most striking language should come from the collision between ordinary diction and extraordinary perception.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person, locked to Gavin's perception throughout. The narrative voice has access to his thoughts, feelings, and sensory experience but not to anyone else's interiority. Other characters are known only through what Gavin observes. As the First Art restructures Gavin's cognition, the narrative's perceptual range should gradually expand \u2014 he begins noticing things no one else can see \u2014 but the voice remains grounded in his ordinary, slightly bewildered perspective. The narration should never become more articulate or literary than Gavin himself would be; the strangeness of what he perceives should press against the ordinariness of how he describes it.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Varied and responsive to scene pressure. Default rhythm is medium-paced prose with sentences of mixed length \u2014 some short, some compound, none habitually long. During scenes of intellectual discovery, let sentences extend as Gavin's attention extends, then cut short when comprehension fails. During Carrow scenes, prose should tighten and become more physical. During quiet scenes, allow room for observation and sensory detail without rushing toward the next event. Do not develop a signature rhythm that persists across all chapters \u2014 the rhythm should be the scene's rhythm, not the author's.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

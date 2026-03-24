@@ -1,0 +1,69 @@
+{
+  "acceptance_targets": [
+    "[ch10_prose_01] Pass if the revised chapter contains no more than two exact \"She looked at him\" constructions and no more than two explanatory \"That was ...\" emphasis sentences in the cited passages, with each replacement adding new physical, sensory, or relational information. Fail if the same formulas still carry most of the chapter's emphasis beats."
+  ],
+  "chapter_id": "chapter_10",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if the revised chapter contains no more than two exact \"She looked at him\" constructions and no more than two explanatory \"That was ...\" emphasis sentences in the cited passages, with each replacement adding new physical, sensory, or relational information. Fail if the same formulas still carry most of the chapter's emphasis beats.",
+      "chapter_id": "chapter_10",
+      "cycle": 1,
+      "evidence": "Two sentence/body-language defaults start repeating often enough to feel automatic: \"She looked at him\" recurs at snapshots/cycle_01/chapters/chapter_10.md:79, snapshots/cycle_01/chapters/chapter_10.md:143, and snapshots/cycle_01/chapters/chapter_10.md:185, while explanatory \"That was ...\" scaffolding stacks up at snapshots/cycle_01/chapters/chapter_10.md:289, snapshots/cycle_01/chapters/chapter_10.md:313, snapshots/cycle_01/chapters/chapter_10.md:421, and snapshots/cycle_01/chapters/chapter_10.md:563.",
+      "finding_id": "ch10_prose_01",
+      "problem": "The chapter's prose is generally controlled, but these repeated constructions flatten emphasis. The gaze beat becomes a default hinge instead of a specific read on the marriage, and the repeated \"That was ...\" sentences start sounding like authorial underlining rather than discovered rhythm inside the focalizer.",
+      "rewrite_direction": "Revise the repeated hinge lines at snapshots/cycle_01/chapters/chapter_10.md:79, snapshots/cycle_01/chapters/chapter_10.md:143, snapshots/cycle_01/chapters/chapter_10.md:185, snapshots/cycle_01/chapters/chapter_10.md:289, snapshots/cycle_01/chapters/chapter_10.md:313, snapshots/cycle_01/chapters/chapter_10.md:421, and snapshots/cycle_01/chapters/chapter_10.md:563. Replace at least half of them with more particular action, sensation, or object-pressure from the kitchen so the emphasis comes from scene-specific detail rather than reusable scaffolding.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "78c3e9d54d58aee6ca7d1b11a3957bf42361939d8f3e1c47132671495cb9fc40",
+  "must_fix_count": 1,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on prose and copyedit finish: diction precision, rhythm control, sentence-level clarity, grammar, line-level polish without flattening style, and explicit aesthetic-risk audit (sanitization is the primary risk \u2014 do not soften or euphemize; push toward creative risk and specificity).",
+    "key": "p3_prose_copyedit",
+    "label": "prose/copyedit fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into the ugly overlap between office systems and intimate life: sweat under formalwear, sponsored groceries in the middle of a fight, sex that clarifies nothing, a child noticing coercion through object logic. When choosing between elegant abstraction and embarrassing specificity, choose specificity unless the character is actively lying to themselves. If a scene risks becoming pure farce, restore weight through money, care work, or the body's limits; if it risks becoming solemn prestige fiction, let the absurd machinery stay absurd.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a draft replaces bodily fact, financial shame, sexual consequence, or emotional cruelty with tasteful summary, rewrite until the cost is present in scene rather than merely reported.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High - contractions are the norm in spoken dialogue; uncontracted forms are reserved for emphasis, ritual formality, or character-specific self-control.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "No two consecutive chapters should move the same way. Follow spectacle with aftermath, ritual with drift, humiliation with quiet, revelation with preparation. Vary scene count, dialogue density, location spread, and whether the chapter advances by confrontation, seduction, dread, comic escalation, or changed understanding.",
+      "diction": "Concrete contemporary English with room for corporate and systems language when characters would actually think or speak that way; every abstract term should be contaminated by bodily or household reality nearby.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third that stays inside the current focalizer's sensory field and only shifts focalization at scene breaks.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Alternate dry compression for comic pressure with longer, accrual-based sentences when shame, fatigue, or desire flood the body. Let jokes land through timing and juxtaposition rather than narrator commentary.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

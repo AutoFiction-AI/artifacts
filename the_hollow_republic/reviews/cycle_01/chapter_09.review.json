@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_09",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_09_f01",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:227; snapshots/cycle_01/chapters/chapter_09.md:285; snapshots/cycle_01/chapters/chapter_09.md:339; snapshots/cycle_01/chapters/chapter_09.md:405",
+      "problem": "The reveal scene lands the information but not enough immediate consequence. Lucien recognizes that Elise knows the Prefecture corridor, expects she will lie, and is still asking her not to insult him with a small lie, yet the scene pivots to logistics and lets her keep custody of the documents without an in-scene cost, verification step, or narrowed trust. That softens the chapter's big turn from compromised operative to active traitor.",
+      "rewrite_direction": "Rewrite snapshots/cycle_01/chapters/chapter_09.md:227, snapshots/cycle_01/chapters/chapter_09.md:279, snapshots/cycle_01/chapters/chapter_09.md:325, snapshots/cycle_01/chapters/chapter_09.md:339, and snapshots/cycle_01/chapters/chapter_09.md:405 so Lucien acts on his suspicion before the move-plan settles. Keep the press-move decision, but make him impose a concrete cost or constraint in scene: demand one verifiable insider detail, refuse to let Elise re-hide the pages herself, bring Clemence into the decision before trust resets, or assign Elise a riskier task that shows her standing has materially worsened.",
+      "acceptance_test": "Pass if the revised exchange anchored at snapshots/cycle_01/chapters/chapter_09.md:227, snapshots/cycle_01/chapters/chapter_09.md:325, and snapshots/cycle_01/chapters/chapter_09.md:339 shows Lucien both naming Elise's suspicious access and imposing at least one observable constraint or price before he acts on the intelligence; fail if he still moves straight from suspicion to logistics while Elise's practical role and custody of the evidence remain unchanged."
+    },
+    {
+      "finding_id": "chapter_09_f02",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:185; snapshots/cycle_01/chapters/chapter_09.md:191; snapshots/cycle_01/chapters/chapter_09.md:219; snapshots/cycle_01/chapters/chapter_09.md:253; snapshots/cycle_01/chapters/chapter_09.md:265; snapshots/cycle_01/chapters/chapter_09.md:269; snapshots/cycle_01/chapters/chapter_09.md:313; snapshots/cycle_01/chapters/chapter_09.md:345",
+      "problem": "Elise's pressure register collapses into repeated bare \"Yes.\" replies across the schoolroom scene, including consecutive low-information assent at lines 265 and 269. That pushes the exchange toward transcript cadence and flattens a voice that the style bible defines as cleaner and flatter under stress, not generic monosyllabic assent.",
+      "rewrite_direction": "Rewrite snapshots/cycle_01/chapters/chapter_09.md:183, snapshots/cycle_01/chapters/chapter_09.md:217, snapshots/cycle_01/chapters/chapter_09.md:257, snapshots/cycle_01/chapters/chapter_09.md:263, snapshots/cycle_01/chapters/chapter_09.md:311, and snapshots/cycle_01/chapters/chapter_09.md:343 so Elise's clipped answers still vary in syntax and intent. Replace the repeated assent at snapshots/cycle_01/chapters/chapter_09.md:265 and snapshots/cycle_01/chapters/chapter_09.md:269, and tighten the thinner beats at snapshots/cycle_01/chapters/chapter_09.md:185, snapshots/cycle_01/chapters/chapter_09.md:191, snapshots/cycle_01/chapters/chapter_09.md:313, and snapshots/cycle_01/chapters/chapter_09.md:345 with replies that deflect, qualify, warn, or counterpressure.",
+      "acceptance_test": "Pass if the revised dialogue from snapshots/cycle_01/chapters/chapter_09.md:183 through snapshots/cycle_01/chapters/chapter_09.md:345 contains no stretch with more than one one-word low-information reply from Elise, and at least three of her answers in that span carry distinct pressure moves such as deflection, concession, warning, or counterquestion; fail if the scene still relies on serial bare assent."
+    },
+    {
+      "finding_id": "chapter_09_f03",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:3; snapshots/cycle_01/chapters/chapter_09.md:27; snapshots/cycle_01/chapters/chapter_09.md:83; snapshots/cycle_01/chapters/chapter_09.md:179; snapshots/cycle_01/chapters/chapter_09.md:221; snapshots/cycle_01/chapters/chapter_09.md:279; snapshots/cycle_01/chapters/chapter_09.md:305; snapshots/cycle_01/chapters/chapter_09.md:319; snapshots/cycle_01/chapters/chapter_09.md:369; snapshots/cycle_01/chapters/chapter_09.md:397",
+      "problem": "The chapter leans too often on the same explanatory `as if` simile template. Used this many times, the comparison stops feeling chosen and starts feeling like a reflexive way of glossing emotion or perception for the reader, which flattens otherwise strong texture into a visible prose tic.",
+      "rewrite_direction": "Rewrite snapshots/cycle_01/chapters/chapter_09.md:83, snapshots/cycle_01/chapters/chapter_09.md:179, snapshots/cycle_01/chapters/chapter_09.md:221, snapshots/cycle_01/chapters/chapter_09.md:279, snapshots/cycle_01/chapters/chapter_09.md:305, snapshots/cycle_01/chapters/chapter_09.md:319, snapshots/cycle_01/chapters/chapter_09.md:369, and snapshots/cycle_01/chapters/chapter_09.md:397 so only the sharpest comparative turn remains. Let some beats land through direct bodily fact, gesture, or spatial pressure instead of another `as if` gloss, and vary the sentence architecture in the confrontation passage.",
+      "acceptance_test": "Pass if the revised chapter keeps the explanatory `as if` construction to no more than one use in the Prefecture evidence block and no more than one use in the schoolroom confrontation, with the emotional beats anchored at snapshots/cycle_01/chapters/chapter_09.md:221, snapshots/cycle_01/chapters/chapter_09.md:305, and snapshots/cycle_01/chapters/chapter_09.md:319 landing through concrete action or sensation rather than fresh comparative gloss; fail if the same template still appears three or more times in the confrontation scene."
+    }
+  ],
+  "summary": "Booker passes: the chapter's causal spine is strong, the key reveal about Ferrand's payments lands, the press-move consequence is real, and no continuity contradiction or narrative-tense drift surfaced against the provided context. The chapter still fails overall because the Lucien reveal scene undercharges immediate consequence, Elise's repeated bare assent flattens dialogue pressure, and the prose shows a visible `as if`-simile tic."
+}

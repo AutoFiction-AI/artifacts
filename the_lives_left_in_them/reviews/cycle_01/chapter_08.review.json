@@ -1,0 +1,58 @@
+{
+  "chapter_id": "chapter_08",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch08-craft-01",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_01/chapters/chapter_08.md:83; snapshots/cycle_01/chapters/chapter_08.md:189",
+      "problem": "In a comedy-driven chapter, the narration occasionally explains the social joke instead of trusting the scene to carry it. The abstract commentary at these lines tells the reader how humiliation and absurdity work rather than letting the queue behavior and public shame produce the effect on their own.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_08.md:83 and snapshots/cycle_01/chapters/chapter_08.md:189, replace the interpretive summary with one or two concrete beats from Mira's close POV: a failed attempt at composure, a bodily tell, or a class-shame detail that makes the humor and pity legible without narrator explanation.",
+      "acceptance_test": "Pass if the revised passages at snapshots/cycle_01/chapters/chapter_08.md:83 and snapshots/cycle_01/chapters/chapter_08.md:189 convey the comic-painful effect through action, dialogue, or sensory detail alone. Fail if either passage still explicitly explains that the scene is funny, humiliating, or absurd."
+    },
+    {
+      "finding_id": "ch08-dialogue-01",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_01/chapters/chapter_08.md:53; snapshots/cycle_01/chapters/chapter_08.md:91; snapshots/cycle_01/chapters/chapter_08.md:247; snapshots/cycle_01/chapters/chapter_08.md:263",
+      "problem": "Lin's public voice skews too uniformly polished and aphoristic for the style bible's version of them. Instead of a careful, slightly over-attentive speaker field-testing social phrasing, they too often land as a fully formed therapist-prophet delivering quotable diagnostics.",
+      "rewrite_direction": "In the exchanges anchored at snapshots/cycle_01/chapters/chapter_08.md:53, snapshots/cycle_01/chapters/chapter_08.md:91, snapshots/cycle_01/chapters/chapter_08.md:247, and snapshots/cycle_01/chapters/chapter_08.md:263, keep Lin effective but roughen the register: add slight self-correction, a borrowed domestic/sensory image, or a socially learned phrasing choice so their authority still feels newly learned in public rather than authorially perfected.",
+      "acceptance_test": "Pass if the revised Lin dialogue in the cited exchanges still steadies the room but includes at least two moments of variable, field-tested phrasing that mark their still-forming public register. Fail if multiple cited lines still read as clean standalone maxims with no sign of social calibration."
+    },
+    {
+      "finding_id": "ch08-prose-01",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_01/chapters/chapter_08.md:207; snapshots/cycle_01/chapters/chapter_08.md:447; snapshots/cycle_01/chapters/chapter_08.md:503; snapshots/cycle_01/chapters/chapter_08.md:521; snapshots/cycle_01/chapters/chapter_08.md:557; snapshots/cycle_01/chapters/chapter_08.md:571",
+      "problem": "The chapter repeatedly slips into clipped, subjectless fragment chains in narration. That breaks the constitution's explicit ban on elliptical clipping and starts to make pressure read as workshop shorthand instead of fully rendered prose.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_08.md:207, snapshots/cycle_01/chapters/chapter_08.md:447, snapshots/cycle_01/chapters/chapter_08.md:503, snapshots/cycle_01/chapters/chapter_08.md:521, snapshots/cycle_01/chapters/chapter_08.md:557, and snapshots/cycle_01/chapters/chapter_08.md:571, recast the fragment strings into grammatically complete sentences with clear subjects and verbs while preserving compression and urgency.",
+      "acceptance_test": "Pass if the revised prose at each cited span reads in complete sentences rather than fragment chains like \"Front room packed. Back room illegal.\" or \"Not the wetbench. Not the curtain.\" Fail if any of those clipped constructions remain in the revised spans."
+    },
+    {
+      "finding_id": "ch08-prose-02",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_01/chapters/chapter_08.md:103; snapshots/cycle_01/chapters/chapter_08.md:121; snapshots/cycle_01/chapters/chapter_08.md:201; snapshots/cycle_01/chapters/chapter_08.md:281; snapshots/cycle_01/chapters/chapter_08.md:331; snapshots/cycle_01/chapters/chapter_08.md:447",
+      "problem": "The chapter overuses anonymous crowd-reaction formulas built around generic \"somebody\" beats. In a scene whose strength is social specificity, that repetition turns parts of the room back into interchangeable noise instead of cumulative neighborhood texture.",
+      "rewrite_direction": "In the crowd beats at snapshots/cycle_01/chapters/chapter_08.md:103, snapshots/cycle_01/chapters/chapter_08.md:121, snapshots/cycle_01/chapters/chapter_08.md:201, snapshots/cycle_01/chapters/chapter_08.md:281, snapshots/cycle_01/chapters/chapter_08.md:331, and snapshots/cycle_01/chapters/chapter_08.md:447, replace at least three anonymous reactions with named or sharply individuated figures already onstage, or with more distinctive visual identifiers that accumulate rather than blur together.",
+      "acceptance_test": "Pass if at least three of the cited crowd beats are reassigned to established or clearly individuated figures, and no single cited paragraph leans on more than one generic anonymous reaction. Fail if the revised crowd still reacts mostly through repeated unspecified \"somebody\" beats."
+    }
+  ],
+  "summary": "The chapter clears the booker bar: it lands the comic-escalation spine, shows Lin becoming indispensable with frightened clients, ends with Mira choosing expansion over caution, stays in past tense, and does not contradict the continuity sheet. It fails craft, dialogue, and prose because the narration occasionally explains its own comedy, Lin's voice becomes too uniformly oracular for the style bible, and the prose relies too often on constitution-banned clipped fragments and repetitive anonymous crowd formulas. No HIGH continuity contradiction, sanitization drift, timidity, intimacy fade-to-black, or sustained interiority failure was found.",
+  "coverage_scene_ids": [
+    "queue_triage",
+    "inspection_and_paz_episode",
+    "back_room_stabilization",
+    "closing_expansion_decision"
+  ]
+}

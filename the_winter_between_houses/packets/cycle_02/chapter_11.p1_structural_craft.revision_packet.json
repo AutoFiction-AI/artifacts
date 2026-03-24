@@ -1,0 +1,82 @@
+{
+  "acceptance_targets": [
+    "[CH11-F001] PASS if, by the end of snapshots/cycle_02/chapters/chapter_11.md:603, the revised text leaves one unambiguous pickup location matching the market cut-through setup for Chapter 12. FAIL if Walsh gate remains the only stated location, or if both locations appear without an explicit on-page reroute reason.",
+    "[CH11-F002] PASS if the revised spans at snapshots/cycle_02/chapters/chapter_11.md:241, snapshots/cycle_02/chapters/chapter_11.md:269, snapshots/cycle_02/chapters/chapter_11.md:359, and snapshots/cycle_02/chapters/chapter_11.md:467 contain no more than two total accounting/legal metaphors and include at least three distinct embodied control actions visible on the page. FAIL if the same ledger/legal metaphor family still dominates those beats."
+  ],
+  "chapter_id": "chapter_11",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if, by the end of snapshots/cycle_02/chapters/chapter_11.md:603, the revised text leaves one unambiguous pickup location matching the market cut-through setup for Chapter 12. FAIL if Walsh gate remains the only stated location, or if both locations appear without an explicit on-page reroute reason.",
+      "chapter_id": "chapter_11",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_11.md:567 sets 'van at Walsh gate Thursday twelve sharp,' creating a boundary handoff conflict.",
+      "finding_id": "CH11-F001",
+      "problem": "Continuity contradiction at the chapter boundary: the chapter establishes Dev's pickup at the Walsh gate, but Chapter 12 boundary context requires a market cut-through rendezvous. This breaks spatial causality and weakens the secrecy logic of Noreen's plan.",
+      "rewrite_direction": "Edit the booking message at snapshots/cycle_02/chapters/chapter_11.md:567 so Dev is told to wait at the market cut-through. If you keep the gate in that line, add an explicit reroute beat before close at snapshots/cycle_02/chapters/chapter_11.md:577 or snapshots/cycle_02/chapters/chapter_11.md:603 that names why the location changed.",
+      "severity": "HIGH",
+      "source": "booker",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if the revised spans at snapshots/cycle_02/chapters/chapter_11.md:241, snapshots/cycle_02/chapters/chapter_11.md:269, snapshots/cycle_02/chapters/chapter_11.md:359, and snapshots/cycle_02/chapters/chapter_11.md:467 contain no more than two total accounting/legal metaphors and include at least three distinct embodied control actions visible on the page. FAIL if the same ledger/legal metaphor family still dominates those beats.",
+      "chapter_id": "chapter_11",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_11.md:125 ('charge on an invoice'), snapshots/cycle_02/chapters/chapter_11.md:241 ('plaster carried legal authority'), snapshots/cycle_02/chapters/chapter_11.md:269 ('audited ledgers'), snapshots/cycle_02/chapters/chapter_11.md:369 ('like a court filing'), snapshots/cycle_02/chapters/chapter_11.md:467 ('managing this week's cash flow').",
+      "finding_id": "CH11-F002",
+      "problem": "Peter's control is repeatedly rendered through accounting/legal metaphors, which reads as over-literal style-bible token reuse. The pattern flattens menace by keeping control in the same conceptual register instead of varying through embodied coercion.",
+      "rewrite_direction": "In snapshots/cycle_02/chapters/chapter_11.md:241, snapshots/cycle_02/chapters/chapter_11.md:269, snapshots/cycle_02/chapters/chapter_11.md:359, and snapshots/cycle_02/chapters/chapter_11.md:467, keep at most one signature accounting metaphor per beat and replace the rest with concrete physical/social control details (space-blocking, object seizure, timing threats, resource gating).",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "958a618f48d638d6c386236051c88f2ed4474715a945446d853789b86b04cf5a",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "When edge cases arise, choose the more specific and potentially uncomfortable rendering if it is character-true and causally necessary. Intimacy, bodily risk, and moral compromise must be shown with concrete detail and aftermath, then integrated into later behavior rather than quarantined as a one-scene shock.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a draft abstracts pain, sex, coercion, blood, or economic shame at the exact moment consequence should be embodied, revise by replacing summary with physically and socially specific action tied to POV stakes.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High by default for spoken lines; uncontracted forms are marked choices for period formality, emphasis, or character-specific control behavior.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate structural engines across adjacent chapters: ensemble social scenes, inventory chapters, information-turn chapters, acted-upon pressure chapters, and aftermath chapters. Vary scene count (2 to 4), dialogue density, and interiority depth so consecutive chapters do not share the same pacing signature.",
+      "diction": "Period-authentic but readable contemporary English, favoring concrete nouns and precise verbs over lyrical abstraction.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person, alternating primarily between Elsie and Noreen, with occasional tightly limited deviations only when causal clarity requires it.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Sentence rhythm should alternate compressed pressure bursts with longer observational lines that carry social texture; avoid monotone paragraph cadence.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

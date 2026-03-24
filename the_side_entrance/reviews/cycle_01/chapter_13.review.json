@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_13",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch13-booker-001",
+      "source": "booker",
+      "severity": "HIGH",
+      "chapter_id": "chapter_13",
+      "evidence": "The chapter's hinge transaction breaks its own arithmetic: `snapshots/cycle_01/chapters/chapter_13.md:465` says \"two fifties, six twenties, two tens\" and claims it totals three hundred, but that sum is 240; `snapshots/cycle_01/chapters/chapter_13.md:499` then confirms Eszter's first count is 240 before she adds one ten at `snapshots/cycle_01/chapters/chapter_13.md:511`.",
+      "problem": "A hard denominations error sits inside the chapter's central causal bargain. Because the money is the mechanism that binds Beni's care for Eszter to Nina's leverage, the reader has to be able to track exactly what is offered, taken, and left over. As written, the chapter asks the reader to choose between the stated total and the listed notes, which weakens both plausibility and the contamination beat.",
+      "rewrite_direction": "Rework the counted cash beats at `snapshots/cycle_01/chapters/chapter_13.md:331`, `snapshots/cycle_01/chapters/chapter_13.md:465`, `snapshots/cycle_01/chapters/chapter_13.md:499`, `snapshots/cycle_01/chapters/chapter_13.md:511`, and `snapshots/cycle_01/chapters/chapter_13.md:549` so the denominations reconcile on the page. Either change the notes Beni lays out to a true 300 or change the stated total and the later leftover accordingly; in either case, make the amount Eszter takes and the cash still riding in Beni's pocket numerically consistent.",
+      "acceptance_test": "Pass if a reader can follow `snapshots/cycle_01/chapters/chapter_13.md:331`, `snapshots/cycle_01/chapters/chapter_13.md:465`, `snapshots/cycle_01/chapters/chapter_13.md:499`, `snapshots/cycle_01/chapters/chapter_13.md:511`, and `snapshots/cycle_01/chapters/chapter_13.md:549` without mental correction: the counted notes add up, Eszter's withdrawal matches that total, and the remaining cash in Beni's pocket is still trackable after the handoff."
+    },
+    {
+      "finding_id": "ch13-craft-001",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "From `snapshots/cycle_01/chapters/chapter_13.md:389` through `snapshots/cycle_01/chapters/chapter_13.md:415`, the attic-room negotiation runs for fourteen consecutive short paragraphs of dialogue/external action before Beni's interiority resumes at `snapshots/cycle_01/chapters/chapter_13.md:417`.",
+      "problem": "The focalization goes screenplay-flat at the exact point where Beni is lying to Eszter and trying to turn contaminated money into care. The scene remains readable, but it withholds thought, sensation, memory, or self-assessment for too long, so the moral and bodily cost of the lie arrives late instead of tightening the exchange as it happens.",
+      "rewrite_direction": "Thread Beni's internal experience back into the negotiation before `snapshots/cycle_01/chapters/chapter_13.md:417`. The most useful insertion points are `snapshots/cycle_01/chapters/chapter_13.md:391` (his sensory response to the room and Eszter's exhaustion), `snapshots/cycle_01/chapters/chapter_13.md:405` (the envelope landing on the bed), and `snapshots/cycle_01/chapters/chapter_13.md:415` (Eszter naming his age and rent debt). Keep the scene in action, but let at least two of those beats register as thought, sensation, or self-accusation rather than pure transcript.",
+      "acceptance_test": "Pass if, before `snapshots/cycle_01/chapters/chapter_13.md:417`, the revised attic-room exchange contains at least two unmistakable moments of Beni internal experience and no run of 10 or more consecutive paragraphs in that scene remains without thought, sensation, memory, or self-assessment."
+    },
+    {
+      "finding_id": "ch13-prose-001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "The chapter repeatedly uses a negation-first sharpening move on key beats: `snapshots/cycle_01/chapters/chapter_13.md:83` (\"It was not cruel\"), `snapshots/cycle_01/chapters/chapter_13.md:193` (\"They were not love letters\"), `snapshots/cycle_01/chapters/chapter_13.md:279` (\"not from shame exactly\"), and `snapshots/cycle_01/chapters/chapter_13.md:367` (\"It was not that the room had ever been large or kind\").",
+      "problem": "Used this often in one chapter, the `not X / actually Y` turn stops feeling like precision and starts reading as a visible house tic. Because several of these instances sit on emotionally important beats, the repetition announces authorial method instead of letting each image or feeling land freshly.",
+      "rewrite_direction": "At `snapshots/cycle_01/chapters/chapter_13.md:83`, `snapshots/cycle_01/chapters/chapter_13.md:193`, `snapshots/cycle_01/chapters/chapter_13.md:279`, and `snapshots/cycle_01/chapters/chapter_13.md:367`, replace at least two of the negation-first pivots with direct naming or concrete image on the first pass. Keep the sharpness, but vary the sentence strategy so the prose is not repeatedly arriving at its point by first saying what the point is not.",
+      "acceptance_test": "Pass if, across the revised beats at `snapshots/cycle_01/chapters/chapter_13.md:83`, `snapshots/cycle_01/chapters/chapter_13.md:193`, `snapshots/cycle_01/chapters/chapter_13.md:279`, and `snapshots/cycle_01/chapters/chapter_13.md:367`, no more than two still rely on a negation-first pivot and at least two now state the image or emotion directly without the `not X` setup."
+    }
+  ],
+  "summary": "Dialogue is the strongest lens here: Oscar, Nina, Eszter, Bea, and Beni stay distinct, the contraction/register rules hold, and no style-bible example-line reuse is evident. The chapter still fails overall because its core money transfer contains a HIGH arithmetic continuity break, the attic-room confrontation spends too long outside Beni's interiority, and the prose leans on a visible negation-first formula often enough to flatten key beats."
+}

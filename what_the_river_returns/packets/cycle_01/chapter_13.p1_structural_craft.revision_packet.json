@@ -1,0 +1,95 @@
+{
+  "acceptance_targets": [
+    "[CH13-F001] PASS if the revised passage at snapshots/cycle_01/chapters/chapter_13.md:336 through snapshots/cycle_01/chapters/chapter_13.md:344 contains (a) a grammatically complete risk sentence with explicit causality (including \"due to\" or equivalent), and (b) at least one concrete, physical consequence tied to a specific person in-scene; FAIL if stakes remain only abstract policy nouns.",
+    "[CH13-F005] PASS if, by the end of snapshots/cycle_01/chapters/chapter_13.md:111 through snapshots/cycle_01/chapters/chapter_13.md:123, Thomas performs a decision/action that is explicitly reflected in at least one assignment or restriction in snapshots/cycle_01/chapters/chapter_13.md:305 through snapshots/cycle_01/chapters/chapter_13.md:310; FAIL if he remains only a worried observer.",
+    "[CH13-F006] PASS if snapshots/cycle_01/chapters/chapter_13.md:55 is rewritten to depict behavior without profile-taxonomy terms (e.g., \"stress tells\", \"register\", \"signature\") while still making Lena's pressure shift legible; FAIL if metadata-like wording remains."
+  ],
+  "chapter_id": "chapter_13",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if the revised passage at snapshots/cycle_01/chapters/chapter_13.md:336 through snapshots/cycle_01/chapters/chapter_13.md:344 contains (a) a grammatically complete risk sentence with explicit causality (including \"due to\" or equivalent), and (b) at least one concrete, physical consequence tied to a specific person in-scene; FAIL if stakes remain only abstract policy nouns.",
+      "chapter_id": "chapter_13",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:338",
+      "finding_id": "CH13-F001",
+      "problem": "Sanitization drift at the chapter's pressure point: the final risk statement retreats into bureaucratic euphemism (\"Foreseeable blind-spot vulnerability\") and clipped grammar (missing function word in \"due legal\"), defusing bodily consequence right where dread should peak.",
+      "rewrite_direction": "Revise the close at snapshots/cycle_01/chapters/chapter_13.md:336, snapshots/cycle_01/chapters/chapter_13.md:338, and snapshots/cycle_01/chapters/chapter_13.md:344 so the memo line remains legally precise but is grammatically complete and immediately paired with concrete human consequence (named person/path at risk if the lane fails). Keep the procedural frame, but do not let abstraction be the only texture.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if, by the end of snapshots/cycle_01/chapters/chapter_13.md:111 through snapshots/cycle_01/chapters/chapter_13.md:123, Thomas performs a decision/action that is explicitly reflected in at least one assignment or restriction in snapshots/cycle_01/chapters/chapter_13.md:305 through snapshots/cycle_01/chapters/chapter_13.md:310; FAIL if he remains only a worried observer.",
+      "chapter_id": "chapter_13",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:45; snapshots/cycle_01/chapters/chapter_13.md:69; snapshots/cycle_01/chapters/chapter_13.md:113",
+      "finding_id": "CH13-F005",
+      "problem": "Thomas is framed as the imminent target but remains mostly reactive; he exits without making a consequential decision that changes the tactical reality, reducing character-driven causality.",
+      "rewrite_direction": "In snapshots/cycle_01/chapters/chapter_13.md:69 through snapshots/cycle_01/chapters/chapter_13.md:123, give Thomas one explicit decision with operational consequence (for example, refusing/signed condition on the limits sheet, route change, or access concession) that materially affects the later deployment plan at snapshots/cycle_01/chapters/chapter_13.md:305 through snapshots/cycle_01/chapters/chapter_13.md:310.",
+      "severity": "MEDIUM",
+      "source": "booker",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if snapshots/cycle_01/chapters/chapter_13.md:55 is rewritten to depict behavior without profile-taxonomy terms (e.g., \"stress tells\", \"register\", \"signature\") while still making Lena's pressure shift legible; FAIL if metadata-like wording remains.",
+      "chapter_id": "chapter_13",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:55",
+      "finding_id": "CH13-F006",
+      "problem": "Mechanical token reuse: \"stress tells\" reads like imported style-bible taxonomy instead of lived narration, briefly exposing the calibration scaffolding inside the prose.",
+      "rewrite_direction": "Replace the label-driven phrasing at snapshots/cycle_01/chapters/chapter_13.md:55 with embodied behavior (breath, cadence shift, verbal compression) so Lena's stress transition is shown rather than categorized.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "11de8d9814bf9d553d36855e2a3dff93763c6dfb0eb08b450102bd5387adc919",
+  "must_fix_count": 3,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "When edge cases arise, choose the version that preserves uncomfortable specificity and character accountability; do not replace difficult scenes with procedural summary, and do not mute class, race, sexuality, or institutional cruelty when those forces are actively shaping choices.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene with violence, racism, grief, or moral compromise is rendered in abstract or polite shorthand, revise to restore specific bodily, social, and material consequence before accepting the draft.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the baseline in contemporary Mississippi speech; uncontracted forms are reserved for formality, emphasis, or social performance.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "rotate structural textures across chapters: procedural surge, quiet domestic interval, document-driven slow burn, dread preparation, aftermath inventory, and information-turn chapters; avoid repeating scene count plus dialogue density pattern in adjacent chapters.",
+      "diction": "literary but grounded; precise legal and forensic terms when needed, balanced by lived vernacular and local material detail.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third person anchored primarily to Lena, with brief controlled expansions only when factual clarity requires it.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "alternate compressed procedural sentences with longer sensory-emotional lines so pressure and reflection keep rebalancing.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

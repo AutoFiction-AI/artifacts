@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_13",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch13-dialogue-001",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:193, snapshots/cycle_01/chapters/chapter_13.md:241, snapshots/cycle_01/chapters/chapter_13.md:245",
+      "problem": "Kelsey's marriage metaphor is a near-verbatim reuse of the style-bible calibration line about a hotel room, then the chapter repeats it as a callback. That is an explicit rules breach and it makes the exchange feel templated rather than spoken under pressure.",
+      "rewrite_direction": "Replace the borrowed image at snapshots/cycle_01/chapters/chapter_13.md:193, then rebuild the later echo at snapshots/cycle_01/chapters/chapter_13.md:241 and snapshots/cycle_01/chapters/chapter_13.md:245 with a fresh, scene-born comparison that still communicates Kelsey's uncertainty about whether she chose stability or deadness.",
+      "acceptance_test": "Pass if the revised lines at snapshots/cycle_01/chapters/chapter_13.md:193, snapshots/cycle_01/chapters/chapter_13.md:241, and snapshots/cycle_01/chapters/chapter_13.md:245 do not use 'hotel room' or a near-paraphrase of the calibration line, while Kelsey's conflict about Tyler remains immediately legible and Doug's later callback still earns a genuine involuntary laugh."
+    },
+    {
+      "finding_id": "ch13-craft-001",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:243",
+      "problem": "The narration names the beat as a 'callback' and a 'comedy mechanic' and then tells the reader 'this was not comedy.' That deflates the moment by explaining the joke architecture instead of letting Doug's fear and Kelsey's reaction carry it, which violates the style bible's ban on explaining the comedy.",
+      "rewrite_direction": "Rewrite the reaction beat at snapshots/cycle_01/chapters/chapter_13.md:243 so it stays inside Doug's immediate apprehension about having trivialized something fragile, without labeling the line's comic structure or declaring the scene's genre for the reader.",
+      "acceptance_test": "Pass if the revised version of snapshots/cycle_01/chapters/chapter_13.md:243 contains no meta-comedy terms such as 'callback,' 'comedy mechanic,' or an authorial statement that the moment is or is not comedy, and Doug's fear of misreading the room is still clear before Kelsey snorts."
+    },
+    {
+      "finding_id": "ch13-craft-002",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:127, snapshots/cycle_01/chapters/chapter_13.md:137, snapshots/cycle_01/chapters/chapter_13.md:155, snapshots/cycle_01/chapters/chapter_13.md:161, snapshots/cycle_01/chapters/chapter_13.md:231, snapshots/cycle_01/chapters/chapter_13.md:285, snapshots/cycle_01/chapters/chapter_13.md:287",
+      "problem": "After the scene lands its core wound in 'I was a case file' and Doug's answer about not knowing how to miss her, the chapter keeps paraphrasing the same insight: it pre-explains why apology is wrong, re-explains the dessert silence, then restates the spreadsheet as line-item/truth language in the car. The effect is thematic over-explanation and mild chapter sprawl after the decisive turn has already happened.",
+      "rewrite_direction": "Compress or repurpose the paraphrase-heavy beats at snapshots/cycle_01/chapters/chapter_13.md:137, snapshots/cycle_01/chapters/chapter_13.md:231, snapshots/cycle_01/chapters/chapter_13.md:279, snapshots/cycle_01/chapters/chapter_13.md:285, and snapshots/cycle_01/chapters/chapter_13.md:287 so the post-confession material does new dramatic work instead of re-diagnosing what snapshots/cycle_01/chapters/chapter_13.md:127 and snapshots/cycle_01/chapters/chapter_13.md:155 already made clear.",
+      "acceptance_test": "Pass if the revised chapter still preserves four must-land beats after snapshots/cycle_01/chapters/chapter_13.md:155: the non-smoothing response to Kelsey's wound, the shared mango sticky rice, Kelsey's promise to call, and Doug's altered return home; fail if any surviving narration in the flagged spans merely restates 'case file,' 'line item,' 'not an apology,' or 'the truth' without adding a new action, image, or consequence."
+    },
+    {
+      "finding_id": "ch13-prose-001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:5, snapshots/cycle_01/chapters/chapter_13.md:11, snapshots/cycle_01/chapters/chapter_13.md:81, snapshots/cycle_01/chapters/chapter_13.md:109, snapshots/cycle_01/chapters/chapter_13.md:113, snapshots/cycle_01/chapters/chapter_13.md:193, snapshots/cycle_01/chapters/chapter_13.md:277, snapshots/cycle_01/chapters/chapter_13.md:283",
+      "problem": "The narration leans too often on the same explanatory bridges, especially 'the way...' comparisons and 'specific...' emphasis. Used this many times in one chapter, those constructions stop feeling like voice and start feeling like an autopilot sentence template, which flattens the otherwise strong observational prose.",
+      "rewrite_direction": "Recast the repeated formula sentences at snapshots/cycle_01/chapters/chapter_13.md:5, snapshots/cycle_01/chapters/chapter_13.md:11, snapshots/cycle_01/chapters/chapter_13.md:81, snapshots/cycle_01/chapters/chapter_13.md:109, snapshots/cycle_01/chapters/chapter_13.md:113, snapshots/cycle_01/chapters/chapter_13.md:193, snapshots/cycle_01/chapters/chapter_13.md:277, and snapshots/cycle_01/chapters/chapter_13.md:283 so more of the pressure is carried by the concrete object or sensation itself, with fewer identical comparison frames telling the reader how to read it.",
+      "acceptance_test": "Pass if the revised chapter uses the 'the way...' comparative frame no more than twice across the flagged passages and removes 'specific' as an emphasis crutch from those same passages, while a first-time reader can still infer Doug's observational habit from the awning, air shift, spreadsheet formatting, Tyler comparison, and parking-lot aftermath without extra explanation."
+    }
+  ],
+  "summary": "Strong emotional engine and clean continuity control, but the chapter is not pass-level yet: it copies a calibration-only style-bible line, explains its own comedy and emotional meaning after the scene has already landed, and relies on repeated prose formulas that make the voice feel generated rather than fully controlled."
+}

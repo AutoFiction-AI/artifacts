@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_04",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch04-craft-001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:17",
+      "problem": "Lin's signature scar is placed under the right ribs here, but the continuity sheet canonically identifies Lin's pale rib scar on the left side. Because this scar is the chapter's key identifying anomaly, the side swap is a direct continuity contradiction.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_04.md:17, change the scar placement to the left side and then re-check the nearby exam language so Mira and Tavi's handling still tracks the corrected anatomy. Preserve the scar's age, surgical neatness, and missing documentation; only the side should change.",
+      "acceptance_test": "At snapshots/cycle_02/chapters/chapter_04.md:17 in the revision, Lin's scar is explicitly on the left side, and no later line in this chapter places or implies the scar on the right. A reader comparing the chapter to the continuity sheet finds one consistent side only."
+    },
+    {
+      "finding_id": "ch04-prose-001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:91; snapshots/cycle_02/chapters/chapter_04.md:183; snapshots/cycle_02/chapters/chapter_04.md:343; snapshots/cycle_02/chapters/chapter_04.md:403; snapshots/cycle_02/chapters/chapter_04.md:427; snapshots/cycle_02/chapters/chapter_04.md:453",
+      "problem": "The chapter reuses the same antithetical emphasis pattern across multiple major beats: `It wasn't X. It was Y.` or near-variants. By the fourth and fifth occurrence, distinct emotional turns start landing in the same syntactic mold, which flattens prose that is otherwise much more alive than this fallback rhythm.",
+      "rewrite_direction": "Rework the turns at snapshots/cycle_02/chapters/chapter_04.md:91, snapshots/cycle_02/chapters/chapter_04.md:183, snapshots/cycle_02/chapters/chapter_04.md:343, snapshots/cycle_02/chapters/chapter_04.md:403, snapshots/cycle_02/chapters/chapter_04.md:427, and snapshots/cycle_02/chapters/chapter_04.md:453 so only the strongest one or two keep the antithetical structure. Recast the others through action, image, or free-indirect thought that fits the specific pressure of each moment instead of reusing the same negation-then-definition beat.",
+      "acceptance_test": "Across the revised beats at snapshots/cycle_02/chapters/chapter_04.md:91, :183, :343, :403, :427, and :453, no more than two use the `It wasn't/It was` antithesis. At least four of those six moments must land through materially different sentence shapes while preserving the same narrative meaning."
+    },
+    {
+      "finding_id": "ch04-prose-002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:149; snapshots/cycle_02/chapters/chapter_04.md:185; snapshots/cycle_02/chapters/chapter_04.md:233; snapshots/cycle_02/chapters/chapter_04.md:375; snapshots/cycle_02/chapters/chapter_04.md:391; snapshots/cycle_02/chapters/chapter_04.md:447",
+      "problem": "Emotional pivots keep defaulting to `looked`-led staging. That repeated gaze choreography becomes a prose tic, especially in a chapter whose style bible prioritizes touch, sound, and spatial pressure; too many turns are registered through who looks at whom instead of through more specific bodily or environmental cues.",
+      "rewrite_direction": "Revise the reaction beats at snapshots/cycle_02/chapters/chapter_04.md:149, snapshots/cycle_02/chapters/chapter_04.md:185, snapshots/cycle_02/chapters/chapter_04.md:233, snapshots/cycle_02/chapters/chapter_04.md:375, snapshots/cycle_02/chapters/chapter_04.md:391, and snapshots/cycle_02/chapters/chapter_04.md:447 so at least four of them pivot through non-ocular cues: pressure in Mira's hands, Tavi's bench habits, Lin's anchoring motions, room heat/noise, or a sharper interior inference. Keep scene geography clear, but stop using eye direction as the default hinge.",
+      "acceptance_test": "In the revised spans at snapshots/cycle_02/chapters/chapter_04.md:149, :185, :233, :375, :391, and :447, at least four reaction turns register through touch, posture, breath, sound, or interior inference rather than `looked` or `eyes` as the lead verb. No more than two of those six beats may still rely on gaze as the primary reaction cue."
+    }
+  ],
+  "summary": "Booker and dialogue clear pass: the chapter lands the awakening bodily, keeps Mira, Tavi, and Lin style-bible-consistent in voice, and ends on a real escalation into concealment. Craft fails on a direct continuity break in Lin's identifying scar, and prose fails on repeated fallback sentence formulas that start to homogenize otherwise strong scene work."
+}

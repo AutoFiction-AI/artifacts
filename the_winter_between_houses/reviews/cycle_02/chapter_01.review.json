@@ -1,0 +1,62 @@
+{
+  "chapter_id": "chapter_01",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_01_F001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_02/chapters/chapter_01.md:188; snapshots/cycle_02/chapters/chapter_01.md:320; snapshots/cycle_02/chapters/chapter_01.md:326",
+      "problem": "Sanitization drift at the chapter's highest-pressure economic abuse beats: after explicit betrayal and coercion, the narration resolves through atmospheric summary/metaphor and routine action instead of rendering immediate embodied consequence. This defuses narrative tension at the exact moments consequence should be present on-page.",
+      "rewrite_direction": "Revise the confrontation exit and final coin-withdrawal beats in snapshots/cycle_02/chapters/chapter_01.md:178-190 and snapshots/cycle_02/chapters/chapter_01.md:316-327 so each coercive act lands in concrete POV consequence (body response, social risk, and immediate survival tradeoff) before the scene moves on. Keep concealment as outcome, but remove safety-valve phrasing that substitutes mood for consequence.",
+      "acceptance_test": "PASS if revised text in snapshots/cycle_02/chapters/chapter_01.md:178-190 and snapshots/cycle_02/chapters/chapter_01.md:316-327 shows, for each coercive event, at least one explicit bodily reaction from Elsie and one explicit material consequence (fuel/food/heat decision) before scene exit; FAIL if either event still exits via metaphorical summary alone."
+    },
+    {
+      "finding_id": "chapter_01_F002",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_02/chapters/chapter_01.md:86; snapshots/cycle_02/chapters/chapter_01.md:88; snapshots/cycle_02/chapters/chapter_01.md:250; snapshots/cycle_02/chapters/chapter_01.md:278",
+      "problem": "The chapter runs two extended mutual-aid beats with near-identical dramatic function (Noreen offers coal, Elsie resists, Noreen insists). The second pass adds warmth but limited new leverage, so mid-chapter momentum plateaus between discovery and closing setback.",
+      "rewrite_direction": "Condense or repurpose one aid exchange. In snapshots/cycle_02/chapters/chapter_01.md:250-288, keep the transfer but add a new irreversible condition (explicit secrecy cost, repayment term, or public-risk consequence) so this beat does more than restate the earlier lend/accept dynamic from snapshots/cycle_02/chapters/chapter_01.md:86-94.",
+      "acceptance_test": "PASS if the revised second aid beat (anchored to snapshots/cycle_02/chapters/chapter_01.md:250-288) introduces a clearly new condition that changes later behavior, visible in dialogue/action on-page; FAIL if both aid beats remain functionally the same offer-refusal-insistence pattern."
+    },
+    {
+      "finding_id": "chapter_01_F003",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_02/chapters/chapter_01.md:136; snapshots/cycle_02/chapters/chapter_01.md:148; snapshots/cycle_02/chapters/chapter_01.md:166; snapshots/cycle_02/chapters/chapter_01.md:200",
+      "problem": "Tom's reassurance loop is over-literalized: near-identical promise language recurs four times (\"it'll come back\"/\"I'll square Lomas\"), reading as mechanical stress-tell reuse rather than evolving evasive strategy. This flattens dialogue pressure and register variation.",
+      "rewrite_direction": "In snapshots/cycle_02/chapters/chapter_01.md:136-148, snapshots/cycle_02/chapters/chapter_01.md:166-167, and snapshots/cycle_02/chapters/chapter_01.md:198-200, vary Tom's tactics by leverage state (deflection, blame shift, minimization, pleading, transactional bargain) while preserving his betting/depot idiolect and high-contraction speech.",
+      "acceptance_test": "PASS if at least three of Tom's four reassurance moments in the cited spans use distinct wording and distinct tactical intent; FAIL if two or more beats repeat the same reassurance formula with no leverage shift."
+    },
+    {
+      "finding_id": "chapter_01_F004",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_02/chapters/chapter_01.md:2; snapshots/cycle_02/chapters/chapter_01.md:6; snapshots/cycle_02/chapters/chapter_01.md:102; snapshots/cycle_02/chapters/chapter_01.md:112; snapshots/cycle_02/chapters/chapter_01.md:190; snapshots/cycle_02/chapters/chapter_01.md:286; snapshots/cycle_02/chapters/chapter_01.md:320; snapshots/cycle_02/chapters/chapter_01.md:327",
+      "problem": "A recurring \"and then\" transition formula appears across the chapter and creates a predictable sentence engine. Once or twice reads intentional; repeated deployment reads like autopilot construction and dulls rhythmic variation.",
+      "rewrite_direction": "Rework transition-heavy clusters in snapshots/cycle_02/chapters/chapter_01.md:102-112, snapshots/cycle_02/chapters/chapter_01.md:190-193, and snapshots/cycle_02/chapters/chapter_01.md:320-327 by mixing causal pivots, sensory pivots, and harder cuts instead of default \"and then\" chaining.",
+      "acceptance_test": "PASS if the revised cited spans contain no more than one literal \"and then\" transition while preserving clear temporal order; FAIL if multiple \"and then\" links still carry the local sequence in each span."
+    },
+    {
+      "finding_id": "chapter_01_F005",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_02/chapters/chapter_01.md:76; snapshots/cycle_02/chapters/chapter_01.md:188; snapshots/cycle_02/chapters/chapter_01.md:216",
+      "problem": "Elliptical clipped construction recurs in narration (bulletin fragments and \"No X\" stacks), which pushes toward screenplay shorthand and conflicts with the constitution's anti-clipping rule. Repetition above twice makes this a prose tic, not an isolated choice.",
+      "rewrite_direction": "Replace clipped fragments in snapshots/cycle_02/chapters/chapter_01.md:76-77, snapshots/cycle_02/chapters/chapter_01.md:188, and snapshots/cycle_02/chapters/chapter_01.md:216 with grammatically complete sentences that preserve pressure and voice without subject/auxiliary drop.",
+      "acceptance_test": "PASS if revised versions of the cited lines read as complete clauses/sentences with explicit subject-verb structure and retain scene pressure; FAIL if three-or-more clipped fragment beats remain across those exact spans."
+    }
+  ],
+  "summary": "Chapter fundamentals (cold-front disruption, emerging Elsie-Noreen reliance, and financial instability) land, and continuity/tense checks are clean (no canonical contradiction found; past-tense narration remains stable). However, the chapter does not reach pass-level quality due to one HIGH craft issue (sanitization at key coercion consequences), mid-chapter leverage redundancy, mechanical dialogue repetition in Tom's stress language, and two recurring prose tics (\"and then\" chaining and clipped-fragment shorthand). Character voices are mostly distinct and contraction compliance is generally strong, but unresolved medium+ issues remain in all four review lenses."
+}

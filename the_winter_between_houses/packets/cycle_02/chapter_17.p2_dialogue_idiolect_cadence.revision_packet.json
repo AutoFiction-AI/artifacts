@@ -1,0 +1,82 @@
+{
+  "acceptance_targets": [
+    "[chapter_17_F002] PASS if Noreen's revised support line in the 99-area includes a specific sensory/situational anchor from the room and avoids abstract pep-talk language (for example, \"hard things\"/\"we can do this\" formulas). FAIL if the line remains interchangeable with generic encouragement dialogue.",
+    "[chapter_17_F003] PASS if at least three of those four targeted full-form constructions are converted to contractions, and any remaining uncontracted form reads as intentional emphasis. FAIL if multiple unmotivated full-form clauses remain in pressure dialogue."
+  ],
+  "chapter_id": "chapter_17",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if Noreen's revised support line in the 99-area includes a specific sensory/situational anchor from the room and avoids abstract pep-talk language (for example, \"hard things\"/\"we can do this\" formulas). FAIL if the line remains interchangeable with generic encouragement dialogue.",
+      "chapter_id": "chapter_17",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_17.md:99",
+      "finding_id": "chapter_17_F002",
+      "problem": "Noreen's reassurance line (\"You've done hard things before. This is one more and we do it together.\") reads as generic endurance coaching and blunts her voice profile, which explicitly forbids saintly/generic support slogans.",
+      "rewrite_direction": "Rewrite the encouragement beat at snapshots/cycle_02/chapters/chapter_17.md:99 (and, if needed, nearby setup at snapshots/cycle_02/chapters/chapter_17.md:73) using Noreen's idiolect: colloquial contraction, concrete room-level sensory anchor, and her clipped under-pressure cadence instead of abstract motivational phrasing.",
+      "severity": "MEDIUM",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if at least three of those four targeted full-form constructions are converted to contractions, and any remaining uncontracted form reads as intentional emphasis. FAIL if multiple unmotivated full-form clauses remain in pressure dialogue.",
+      "chapter_id": "chapter_17",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_17.md:21",
+      "finding_id": "chapter_17_F003",
+      "problem": "Across urgent exchanges, multiple spoken lines drift into full-form auxiliaries/negatives (e.g., \"You should not... I will...\", \"He is not...\", \"does not...\", \"I will witness\"), creating pockets of stiff formality against the chapter's high-contraction spoken baseline.",
+      "rewrite_direction": "Rework spoken lines at snapshots/cycle_02/chapters/chapter_17.md:21, snapshots/cycle_02/chapters/chapter_17.md:95, snapshots/cycle_02/chapters/chapter_17.md:117, and snapshots/cycle_02/chapters/chapter_17.md:271 toward contractions unless deliberate legal/clinical emphasis is intended and legible in context.",
+      "severity": "MEDIUM",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "80bf48ccd827fec2bbd0da8f910295e54a80f950806b0ce9b8797500dd767a4e",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on dialogue realism and voice separation: idiolect fidelity, leverage shifts, pressure cadence, anti-transcript behavior, natural colloquial texture (contractions/interruptions/slang when character-true), and pressure-true profanity usage per aesthetic risk policy.",
+    "key": "p2_dialogue_idiolect_cadence",
+    "label": "dialogue/idiolect/cadence fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "When edge cases arise, choose the more specific and potentially uncomfortable rendering if it is character-true and causally necessary. Intimacy, bodily risk, and moral compromise must be shown with concrete detail and aftermath, then integrated into later behavior rather than quarantined as a one-scene shock.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a draft abstracts pain, sex, coercion, blood, or economic shame at the exact moment consequence should be embodied, revise by replacing summary with physically and socially specific action tied to POV stakes.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High by default for spoken lines; uncontracted forms are marked choices for period formality, emphasis, or character-specific control behavior.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate structural engines across adjacent chapters: ensemble social scenes, inventory chapters, information-turn chapters, acted-upon pressure chapters, and aftermath chapters. Vary scene count (2 to 4), dialogue density, and interiority depth so consecutive chapters do not share the same pacing signature.",
+      "diction": "Period-authentic but readable contemporary English, favoring concrete nouns and precise verbs over lyrical abstraction.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person, alternating primarily between Elsie and Noreen, with occasional tightly limited deviations only when causal clarity requires it.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Sentence rhythm should alternate compressed pressure bursts with longer observational lines that carry social texture; avoid monotone paragraph cadence.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

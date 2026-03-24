@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_10",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_10-prose-001",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:73; snapshots/cycle_01/chapters/chapter_10.md:157; snapshots/cycle_01/chapters/chapter_10.md:421; snapshots/cycle_01/chapters/chapter_10.md:455; snapshots/cycle_01/chapters/chapter_10.md:467",
+      "problem": "The narration repeatedly falls into clipped correction fragments such as \"Not cruel. Worse. Tired.\" and \"Not accusation. Inventory.\" This violates the constitution's ban on elliptical clipping and turns a once-useful emphasis beat into a chapter-wide tic.",
+      "rewrite_direction": "Rewrite the clipped beats at snapshots/cycle_01/chapters/chapter_10.md:73, snapshots/cycle_01/chapters/chapter_10.md:157, snapshots/cycle_01/chapters/chapter_10.md:421, snapshots/cycle_01/chapters/chapter_10.md:455, and snapshots/cycle_01/chapters/chapter_10.md:467 into grammatically complete sentences that keep the pressure without dropping required function words. If one emphatic fragment remains, isolate it instead of repeating the \"Not X. Y.\" pattern across those lines.",
+      "acceptance_test": "Pass if the revised passages anchored at snapshots/cycle_01/chapters/chapter_10.md:73, snapshots/cycle_01/chapters/chapter_10.md:157, snapshots/cycle_01/chapters/chapter_10.md:421, snapshots/cycle_01/chapters/chapter_10.md:455, and snapshots/cycle_01/chapters/chapter_10.md:467 read in complete sentences without article-stripped corrections such as \"Not X. Y.\" or equivalent clipped noun phrases; fail if three or more clipped correction beats still remain across those passages."
+    },
+    {
+      "finding_id": "chapter_10-craft-001",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:455; snapshots/cycle_01/chapters/chapter_10.md:467; snapshots/cycle_01/chapters/chapter_10.md:503; snapshots/cycle_01/chapters/chapter_10.md:519",
+      "problem": "The late Eli scene lands the first sensory chill, but after the first clean hit the chapter keeps explaining the same discovery in slightly different language. The repeated analytic paraphrase about familiarity, fitting, and repeatability reduces unease by translating the effect for the reader instead of letting each new beat deepen it.",
+      "rewrite_direction": "Tighten the suspicion sequence at snapshots/cycle_01/chapters/chapter_10.md:455, snapshots/cycle_01/chapters/chapter_10.md:467, snapshots/cycle_01/chapters/chapter_10.md:503, and snapshots/cycle_01/chapters/chapter_10.md:519 so each paragraph adds a distinct new cue or consequence rather than another restatement of the same thesis. Preserve the first moment of recognition, then let later beats show the seam through Eli's timing, recycled phrasing, or Lena's bodily reaction instead of repeated interpretive gloss.",
+      "acceptance_test": "Pass if the revised span anchored at snapshots/cycle_01/chapters/chapter_10.md:455, snapshots/cycle_01/chapters/chapter_10.md:467, snapshots/cycle_01/chapters/chapter_10.md:503, and snapshots/cycle_01/chapters/chapter_10.md:519 progresses through distinct observable cues and names the \"too perfect / repeatable\" realization directly no more than once; fail if three separate paragraphs in that passage still restate the same conclusion in new synonyms."
+    },
+    {
+      "finding_id": "chapter_10-prose-002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:375",
+      "problem": "The line about June softening first being part of how she \"got away with everything she got away with in Lena's memory\" imports retrospective judgment the chapter has not earned yet. It momentarily steps outside tight chapter-10 Lena and hints at future knowledge rather than letting the scene stay inside present-tense suspicion.",
+      "rewrite_direction": "Recast the thought at snapshots/cycle_01/chapters/chapter_10.md:375 so it reads as Lena's immediate, in-scene interpretation of June's familiar softening move. Keep the emotional effect on Lena, but remove hindsight phrasing that implies confirmed culpability before chapter 10 has reached it.",
+      "acceptance_test": "Pass if the revised line anchored at snapshots/cycle_01/chapters/chapter_10.md:375 can be read as something Lena could think in that exact moment, without wording that implies later proof or retrospective summary; fail if the sentence still asks the reader to import post-reveal judgment about June's larger guilt."
+    }
+  ],
+  "summary": "Chapter 10 hits the planned continuity beats, keeps canon intact, sustains past-tense tight-third narration, and differentiates Farah, June, Mateo, Nora, and Eli cleanly enough for a dialogue pass. It still fails review because the prose repeatedly violates the no-elliptical-clipping rule, the Eli call over-explains its own uncanniness once the seam is visible, and one June sentence briefly slips into retrospective framing that knows more than chapter-10 Lena should. No continuity contradiction, sanitization drift, timidity, intimacy fade-to-black, tense drift, or style-bible example-line reuse was found."
+}

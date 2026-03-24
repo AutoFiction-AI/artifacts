@@ -1,0 +1,58 @@
+{
+  "chapter_id": "chapter_16",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch16-F001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_02/chapters/chapter_16.md:101; snapshots/cycle_02/chapters/chapter_16.md:107; snapshots/cycle_02/chapters/chapter_16.md:243; snapshots/cycle_02/chapters/chapter_16.md:293",
+      "problem": "Sanitization/timidity drift: the affair and betrayal are repeatedly rendered as moral-accounting statements and checklist language (\"What I did,\" \"I had sex...,\" \"There was only sequence\") instead of staying in embodied emotional consequence. The chapter names culpability but often defuses tension by adjudicating it for the reader.",
+      "rewrite_direction": "Revise the accountability passages in the span from snapshots/cycle_02/chapters/chapter_16.md:99 through snapshots/cycle_02/chapters/chapter_16.md:114, then again from snapshots/cycle_02/chapters/chapter_16.md:243 through snapshots/cycle_02/chapters/chapter_16.md:244 and snapshots/cycle_02/chapters/chapter_16.md:293 through snapshots/cycle_02/chapters/chapter_16.md:294. Keep the factual admissions, but replace abstract self-verdict phrasing with concrete remembered physical/intimate detail and immediate relational risk tied to Nora/June/Theo.",
+      "acceptance_test": "Pass if the revised text at snapshots/cycle_02/chapters/chapter_16.md:99-114 and snapshots/cycle_02/chapters/chapter_16.md:243-244 contains at least one concrete sensory memory of the Marisol relationship and one explicit interpersonal consequence Eli cannot control (not a self-summary), and if snapshots/cycle_02/chapters/chapter_16.md:293-294 no longer resolves into a moral lesson sentence. Fail if these spans remain primarily abstract confession/checklist language."
+    },
+    {
+      "finding_id": "ch16-F002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_02/chapters/chapter_16.md:55; snapshots/cycle_02/chapters/chapter_16.md:71; snapshots/cycle_02/chapters/chapter_16.md:133; snapshots/cycle_02/chapters/chapter_16.md:247; snapshots/cycle_02/chapters/chapter_16.md:271",
+      "problem": "Mechanical repetition: the same transfer-ID/confirmation-number sentence construction appears well beyond twice, over-literalizing Eli's stress-tell (logistics-first speech) and flattening paragraph rhythm. The prose starts sounding like repeated ledger templates rather than evolving interior pressure.",
+      "rewrite_direction": "Reshape repetition in the Theo-transfer and notebook sections: snapshots/cycle_02/chapters/chapter_16.md:55 through snapshots/cycle_02/chapters/chapter_16.md:72, snapshots/cycle_02/chapters/chapter_16.md:129 through snapshots/cycle_02/chapters/chapter_16.md:143, and snapshots/cycle_02/chapters/chapter_16.md:247 through snapshots/cycle_02/chapters/chapter_16.md:275. Keep essential financial facts once per beat, then vary sentence architecture with fresh sensory or relational counterbeats.",
+      "acceptance_test": "Pass if each targeted span still preserves the required money facts but includes at least one non-ledger sentence that changes emotional pressure (not just data restatement), and no two adjacent lines in the Theo exchange are both pure transfer metadata. Fail if the revised spans still read as repeated ID/confirmation templates."
+    },
+    {
+      "finding_id": "ch16-F003",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_02/chapters/chapter_16.md:53; snapshots/cycle_02/chapters/chapter_16.md:71; snapshots/cycle_02/chapters/chapter_16.md:171; snapshots/cycle_02/chapters/chapter_16.md:177; snapshots/cycle_02/chapters/chapter_16.md:191; snapshots/cycle_02/chapters/chapter_16.md:235",
+      "problem": "Idiolect separation softens under pressure: Theo and Marisol both lean into similar coaching-imperative lines (\"don't do...,\" \"say the sentence,\" \"don't ... speech\"), making the two high-stakes calls partially interchangeable in rhythm and command syntax.",
+      "rewrite_direction": "Differentiate voice in the call blocks at snapshots/cycle_02/chapters/chapter_16.md:53 through snapshots/cycle_02/chapters/chapter_16.md:88 and snapshots/cycle_02/chapters/chapter_16.md:171 through snapshots/cycle_02/chapters/chapter_16.md:236. Keep Theo's sequence/accountability register, but push Marisol toward her style-bible sensory/work-floor specificity and quieter factual precision rather than mirrored directive phrasing.",
+      "acceptance_test": "Pass if, in revised dialogue for the two call spans, at least two Marisol lines contain vocabulary anchored to her labor/body context and at least two Theo lines retain accountability-sequence framing, such that stripped lines remain attributable to speaker without tags. Fail if both calls still rely on near-identical imperative coaching syntax."
+    },
+    {
+      "finding_id": "ch16-F004",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_02/chapters/chapter_16.md:127; snapshots/cycle_02/chapters/chapter_16.md:139; snapshots/cycle_02/chapters/chapter_16.md:149; snapshots/cycle_02/chapters/chapter_16.md:265; snapshots/cycle_02/chapters/chapter_16.md:277",
+      "problem": "The middle/late transit run leans on montage summary and inbox status updates where scene-level conflict could intensify. Consequence remains conceptually clear, but dramatized pressure dips before arrival, reducing Booker-level scene electricity.",
+      "rewrite_direction": "In either snapshots/cycle_02/chapters/chapter_16.md:127 through snapshots/cycle_02/chapters/chapter_16.md:150 or snapshots/cycle_02/chapters/chapter_16.md:265 through snapshots/cycle_02/chapters/chapter_16.md:277, replace summary-only movement with one enacted micro-scene where Eli must choose under time pressure (money, disclosure, or contact timing) and pay an immediate cost.",
+      "acceptance_test": "Pass if one revised target span contains a full action-decision-consequence unit on-page (not retrospective summary) with a tangible immediate outcome by the end of that span. Fail if both spans remain primarily narrated transit progression plus message recap."
+    }
+  ],
+  "summary": "Chapter 16 lands required boundary beats and maintains continuity/tense, but it does not clear pass-level quality under Booker default fail: craft drifts into sanitizing moral-accounting language, prose over-repeats logistics templates, dialogue idiolects partially converge in imperative cadence, and transit sections lose scene-level pressure.",
+  "coverage_scene_ids": [
+    "chapter16_roomette_inventory",
+    "chapter16_theo_transfer_call",
+    "chapter16_marisol_break_call",
+    "chapter16_arrival_contacts"
+  ]
+}

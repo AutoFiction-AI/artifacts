@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_18",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch18_f001_ren_template_recurrence",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_18",
+      "evidence": "snapshots/cycle_02/chapters/chapter_18.md:13; snapshots/cycle_02/chapters/chapter_18.md:21; snapshots/cycle_02/chapters/chapter_18.md:47; snapshots/cycle_02/chapters/chapter_18.md:51; snapshots/cycle_02/chapters/chapter_18.md:61; snapshots/cycle_02/chapters/chapter_18.md:71",
+      "problem": "The Dry Well goodbye scene over-reuses the same Ren move: Jet or Faye reaches for the larger emotional question, and Ren narrows the answer back to machinery or logistics. That trait is canon-true, but here the repetition becomes visible as a template and flattens the scene's pressure instead of letting the goodbye feel newly live.",
+      "rewrite_direction": "Rework the exchange blocks beginning at snapshots/cycle_02/chapters/chapter_18.md:13, snapshots/cycle_02/chapters/chapter_18.md:47, snapshots/cycle_02/chapters/chapter_18.md:61, and snapshots/cycle_02/chapters/chapter_18.md:71 so no more than two of them use the same 'larger prompt -> narrower mechanical answer' ladder. Keep Ren's narrowing-scope habit, but vary the scene pressure with at least one different response mode: silence, a partial direct acknowledgment, a question back, or a nonverbal action that changes what Jet/Faye says next.",
+      "acceptance_test": "Reading the revised departure scene from snapshots/cycle_02/chapters/chapter_18.md:13 through snapshots/cycle_02/chapters/chapter_18.md:85, a cold reader can distinguish at least three different exchange shapes; if the blocks beginning at lines 13, 47, 61, and 71 still read as the same emotional prompt followed by the same mechanical deflection more than twice, fail."
+    },
+    {
+      "finding_id": "ch18_f002_dialogue_landed_meta",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_18",
+      "evidence": "snapshots/cycle_02/chapters/chapter_18.md:243; snapshots/cycle_02/chapters/chapter_18.md:245",
+      "problem": "The narration explicitly tells us Faye's quip 'landed,' which is the exact kind of literary-polish staging the dialogue brief warns against. It turns an otherwise ordinary exchange into a moment the prose is seen arranging for effect rather than overhearing.",
+      "rewrite_direction": "Revise the beat at snapshots/cycle_02/chapters/chapter_18.md:245 so the scene does not comment on how Faye's line at snapshots/cycle_02/chapters/chapter_18.md:243 lands. Let the room's temperature register through plain continuation: a reply, a resumed task, or a visible non-reaction.",
+      "acceptance_test": "After Faye's line at snapshots/cycle_02/chapters/chapter_18.md:243, the next beat no longer contains narrator evaluation of the joke's impact ('landed,' equivalent effect-language, or admiration). Pass if the reader infers ordinariness from behavior alone; fail if the prose still stages the line's reception for us."
+    },
+    {
+      "finding_id": "ch18_f003_compressor_motif_overinsistence",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_18",
+      "evidence": "snapshots/cycle_02/chapters/chapter_18.md:315; snapshots/cycle_02/chapters/chapter_18.md:333; snapshots/cycle_02/chapters/chapter_18.md:375; snapshots/cycle_02/chapters/chapter_18.md:419; snapshots/cycle_02/chapters/chapter_18.md:421; snapshots/cycle_02/chapters/chapter_18.md:423",
+      "problem": "The refrigerator/compressor image is a good closure device, but the last scene leans on it too many times. By the time the chapter reaches the final paragraph, the prose is restating its symbol instead of trusting the image once, so the ending feels slightly over-signaled rather than fully earned.",
+      "rewrite_direction": "Tighten the motif across the passages beginning at snapshots/cycle_02/chapters/chapter_18.md:315, snapshots/cycle_02/chapters/chapter_18.md:333, snapshots/cycle_02/chapters/chapter_18.md:375, snapshots/cycle_02/chapters/chapter_18.md:419, and snapshots/cycle_02/chapters/chapter_18.md:421. Preserve the setup and the final payoff, but replace at least one mid-to-late callback with a different sensory or relational detail so the chapter's 'same place, changed meaning' thesis is not carried by the same motor note three times over.",
+      "acceptance_test": "In the revised final third, a reader can point to one clear setup mention of the short-cycling refrigerator and one clear closing payoff. If three or more of the cited late-scene beats still explicitly use the refrigerator/compressor as the meaning-bearing image, fail."
+    }
+  ],
+  "summary": "FAIL. The chapter lands the required end-state beats, stays in canonical past tense, and does not introduce any continuity contradiction against the continuity sheet, but it does not clear pass-level review. The departure scene turns Ren's narrowing-scope voice trait into a visible template, the flight scene trips the forbidden 'the line landed' dialogue-polish tell, and the final scene leans too hard on the refrigerator/compressor motif instead of trusting it once."
+}

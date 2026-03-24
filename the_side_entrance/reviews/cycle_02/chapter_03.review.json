@@ -1,0 +1,53 @@
+{
+  "chapter_id": "chapter_03",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_03_craft_001",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:329; snapshots/cycle_02/chapters/chapter_03.md:347",
+      "problem": "The chapter reaches its key intimacy turn when Eszter asks about Hungary, then backs away into reported summary at the exact moment Beni finally opens up. That timidity softens the emotional risk of the scene and blunts the chapter's main consequence: his first real desire to stay and be known in the Ashdown house.",
+      "rewrite_direction": "Rework snapshots/cycle_02/chapters/chapter_03.md:329-349 so Beni's garage history arrives through live exchange, action, or close-third recall rather than retrospective report. Keep the withholding around Klara, but render it as an on-page hesitation, deflection, or bodily shutdown inside the scene instead of summarizing that he omitted it.",
+      "acceptance_test": "Pass if snapshots/cycle_02/chapters/chapter_03.md:329-349 includes at least one concrete garage detail delivered in-scene, one immediate response from Eszter that changes the leverage, and one observable sign of Beni shutting down around Klara; fail if the beat is still mainly delivered as summarized report."
+    },
+    {
+      "finding_id": "chapter_03_dialogue_001",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:205; snapshots/cycle_02/chapters/chapter_03.md:223",
+      "problem": "Eszter's question run collapses into four consecutive low-information replies from Beni (\"No.\" / \"No.\" / \"No.\" / \"That died.\"), which violates the style bible's two-reply cap and turns his evasiveness into a mechanical gag rather than character-specific resistance.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_03.md:205-223 so Beni still resists intimacy, but at least one or two answers carry his idiolect: a dry deflection, a bodily detail, or a clipped explanation instead of another monosyllable.",
+      "acceptance_test": "Pass if snapshots/cycle_02/chapters/chapter_03.md:205-223 contains no run of more than two consecutive low-information replies and at least one reply reveals a Beni-specific detail or defensive joke; fail if the exchange still contains the current four-beat \"No/No/No/That died\" pattern."
+    },
+    {
+      "finding_id": "chapter_03_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:5; snapshots/cycle_02/chapters/chapter_03.md:7; snapshots/cycle_02/chapters/chapter_03.md:71; snapshots/cycle_02/chapters/chapter_03.md:85; snapshots/cycle_02/chapters/chapter_03.md:247; snapshots/cycle_02/chapters/chapter_03.md:327; snapshots/cycle_02/chapters/chapter_03.md:373",
+      "problem": "The chapter repeatedly lands observations on polished class-thesis sentences about money, labor, invisibility, or service. The individual lines are strong, but the repeated image-then-thesis pattern makes Beni's close-third feel pre-composed and essayistic, and it reads like over-literal reuse of the style bible's class/labor lexicon.",
+      "rewrite_direction": "Rework the paragraph endings around snapshots/cycle_02/chapters/chapter_03.md:5, snapshots/cycle_02/chapters/chapter_03.md:7, snapshots/cycle_02/chapters/chapter_03.md:71, snapshots/cycle_02/chapters/chapter_03.md:85, snapshots/cycle_02/chapters/chapter_03.md:247, snapshots/cycle_02/chapters/chapter_03.md:327, and snapshots/cycle_02/chapters/chapter_03.md:373. Keep the class pressure, but let more of those beats end on object, gesture, sound, or bodily consequence rather than a summarizing thesis sentence.",
+      "acceptance_test": "Pass if at least three of the cited passages now end on a concrete physical image, action, or bodily sensation rather than an abstract statement about money, labor, or invisibility, and no more than one remaining cited passage uses the current image-then-thesis landing; fail if three or more of the cited endings still resolve into polished class-summary statements."
+    },
+    {
+      "finding_id": "chapter_03_prose_002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:347",
+      "problem": "The paragraph at line 347 repeats the exact sentence stem \"He told her\" three times in a row. Once would read as deliberate anaphora; three times becomes a visible tic and drains energy from the chapter's most vulnerable exchange.",
+      "rewrite_direction": "Rewrite snapshots/cycle_02/chapters/chapter_03.md:347 so the garage details arrive through varied sentence shapes. Keep the facts if needed, but break the repeated stem by folding one detail into live dialogue, one into image or free indirect thought, and one into Eszter's response.",
+      "acceptance_test": "Pass if snapshots/cycle_02/chapters/chapter_03.md:347 no longer repeats the stem \"He told her\" more than twice and at least one of the three details enters through a different construction; fail if three consecutive sentences still begin with the same stem."
+    }
+  ],
+  "summary": "The chapter cleanly lands its Booker function: Beni's waiting day turns the Ashdown kitchen into a real emotional stake, and I found no continuity contradiction or sustained tense drift against the declared canon. It still fails craft, dialogue, and prose because the central vulnerability beat retreats into summary, one exchange violates the dialogue rule on consecutive low-information replies, and the narration overuses thesis-like class closures plus a repeated sentence scaffold at the chapter's hinge.",
+  "coverage_scene_ids": []
+}

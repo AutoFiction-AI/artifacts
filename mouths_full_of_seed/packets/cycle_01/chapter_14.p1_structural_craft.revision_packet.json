@@ -1,0 +1,108 @@
+{
+  "acceptance_targets": [
+    "[C14-F01] Pass if the revised paragraph at snapshots/cycle_01/chapters/chapter_14.md:363 contains no out-of-story vocabulary such as \"novel,\" \"chapter,\" \"scene,\" \"reader,\" or equivalent, and the sentence reads as a diegetic Nami observation rooted in story time or lived memory. Fail if the narration still labels the text as a literary object.",
+    "[C14-F02] Pass if each cited span reads with grammatically complete narration or clearly anchored free indirect thought, and none of those spans still relies on back-to-back clipped fragments in the form of \"Not X. Y.\" or equivalent shorthand to generate force. Fail if two-sentence fragment bursts still recur across those passages.",
+    "[FBR-004] Pass if, after reading snapshots/cycle_01/FINAL_NOVEL.md:6326-6350, a reader can tell exactly that one seed survives and remains portable/active into the later chapters. Fail if Bato plainly destroys the only pocketed seed or if later possession would still require inventing an unseen replacement.",
+    "[FBR-010] Pass if snapshots/cycle_01/FINAL_NOVEL.md:6232-6233 no longer uses \"went still\" or a near-identical placeholder, while snapshots/cycle_01/FINAL_NOVEL.md:6324 may remain as the chapter's one retained instance. Fail if both instances stay, or if the replacement at 6232 is just another generic freeze/blank expression."
+  ],
+  "chapter_id": "chapter_14",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if the revised paragraph at snapshots/cycle_01/chapters/chapter_14.md:363 contains no out-of-story vocabulary such as \"novel,\" \"chapter,\" \"scene,\" \"reader,\" or equivalent, and the sentence reads as a diegetic Nami observation rooted in story time or lived memory. Fail if the narration still labels the text as a literary object.",
+      "chapter_id": "chapter_14",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:363",
+      "finding_id": "C14-F01",
+      "problem": "The narration breaks diegesis with a literal process-leak phrase: \"half the novel.\" That is an out-of-story label inside a climactic scene, so the chapter momentarily stops being fiction and starts naming itself as an artifact.",
+      "rewrite_direction": "Rewrite the description centered on snapshots/cycle_01/chapters/chapter_14.md:361 and snapshots/cycle_01/chapters/chapter_14.md:363 so Nami measures Daro's long hunger in story-native terms: remembered behavior, flood-season duration, or sibling history. Keep the observation inside her consciousness and remove any language that refers to the book as a book.",
+      "severity": "CRITICAL",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if each cited span reads with grammatically complete narration or clearly anchored free indirect thought, and none of those spans still relies on back-to-back clipped fragments in the form of \"Not X. Y.\" or equivalent shorthand to generate force. Fail if two-sentence fragment bursts still recur across those passages.",
+      "chapter_id": "chapter_14",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:47; snapshots/cycle_01/chapters/chapter_14.md:71; snapshots/cycle_01/chapters/chapter_14.md:159; snapshots/cycle_01/chapters/chapter_14.md:241; snapshots/cycle_01/chapters/chapter_14.md:301; snapshots/cycle_01/chapters/chapter_14.md:445; snapshots/cycle_01/chapters/chapter_14.md:465",
+      "finding_id": "C14-F02",
+      "problem": "The chapter repeatedly leans on clipped narration fragments and the same emphatic hinge pattern (\"Not X. Y.\" / \"Because...\" as a stand-alone sentence). Used this often, the device stops reading as pressure-specific rhythm and starts reading as a prose tic. It also collides with the constitution's explicit ban on elliptical clipping in narration.",
+      "rewrite_direction": "Revise the emphatic beats at snapshots/cycle_01/chapters/chapter_14.md:47, snapshots/cycle_01/chapters/chapter_14.md:71, snapshots/cycle_01/chapters/chapter_14.md:159, snapshots/cycle_01/chapters/chapter_14.md:241, snapshots/cycle_01/chapters/chapter_14.md:301, snapshots/cycle_01/chapters/chapter_14.md:445, and snapshots/cycle_01/chapters/chapter_14.md:465 so the force comes from complete syntax and concrete consequence rather than repeated fragment bursts. Keep the urgency, but vary the sentence architecture and let image, action, or sensation carry the emphasis.",
+      "severity": "HIGH",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if, after reading snapshots/cycle_01/FINAL_NOVEL.md:6326-6350, a reader can tell exactly that one seed survives and remains portable/active into the later chapters. Fail if Bato plainly destroys the only pocketed seed or if later possession would still require inventing an unseen replacement.",
+      "chapter_id": "chapter_14",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:6348",
+      "finding_id": "FBR-004",
+      "problem": "Bato splits Nami's pocketed salt-fig seed open on the page, which contradicts the continuity sheet's canon that one seed remains an active threat through chapter_17 and also breaks the later-object logic of chapters 16 and 17.",
+      "rewrite_direction": "Revise snapshots/cycle_01/FINAL_NOVEL.md:6338-6350. Preserve Bato's demystifying beat and Nami's humiliation, but do not destroy the only pocketed seed. Options: have Bato nick, scar, or squeeze the seed to show rot without rendering it unusable, or have him demonstrate on another recovered seed while returning Nami's intact one. The local result at snapshots/cycle_01/FINAL_NOVEL.md:6344-6348 must leave one active seed in Nami's possession for the later Storm Mouth sequence.",
+      "severity": "HIGH",
+      "source": "booker_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if snapshots/cycle_01/FINAL_NOVEL.md:6232-6233 no longer uses \"went still\" or a near-identical placeholder, while snapshots/cycle_01/FINAL_NOVEL.md:6324 may remain as the chapter's one retained instance. Fail if both instances stay, or if the replacement at 6232 is just another generic freeze/blank expression.",
+      "chapter_id": "chapter_14",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:6232",
+      "finding_id": "FBR-010",
+      "problem": "This chapter contains two instances of the novel's repeated still/flat reaction pattern: Daro \"went still\" at snapshots/cycle_01/FINAL_NOVEL.md:6232 and Bato's face \"went very still\" at snapshots/cycle_01/FINAL_NOVEL.md:6324. The chapter should not keep both. The Daro beat is the weaker, more generic reuse; the Bato beat is the stronger sparse one and can stay.",
+      "rewrite_direction": "REPLACE the default stillness at snapshots/cycle_01/FINAL_NOVEL.md:6232-6233 with a more character-specific indication of Daro's threatened vanity or mounting spite, but KEEP snapshots/cycle_01/FINAL_NOVEL.md:6324 as the chapter's single retained stillness beat because Bato's near-nothing reaction suits his voice. Do not add new still/flat placeholders elsewhere in snapshots/cycle_01/FINAL_NOVEL.md:6230-6328.",
+      "severity": "MEDIUM",
+      "source": "booker_global",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "5d6a67b394e4c18c94751f9425f72f5309d5cc5a50fb5ac2ae2192a42d03953f",
+  "must_fix_count": 4,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into the collision of sanctity, lust, labor, rot, and family resentment. In edge cases, choose the more concrete, uncomfortable, and character-specific rendering over symbolic safety; if an image or action feels too polite for the pressure, it is probably wrong.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If sex, violence, shame, grief, or economic pressure drives a scene, vague language counts as a failed beat; replace euphemism with the exact bodily, social, or material consequence the character experiences.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High - contractions are the norm across dialogue; uncontracted forms are reserved for ritual speech, emphasis, or deliberate character-specific formality.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Vary scene count, dialogue density, and narrative movement aggressively: follow ordeal with meal, revelation with labor, schism with care, and public spectacle with close-bodied aftermath so no adjacent chapters share the same structural rhythm.",
+      "diction": "Concrete, bodily, locally sacred, and unsanitized; lyrical only when pressure earns it, never as a decorative default.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person rotating among the five siblings; each scene stays inside one consciousness and lets the river press through perception rather than omniscient explanation.",
+      "narrative_tense": "Past tense.",
+      "rhythm_target": "Alternate muscular propulsion with denser lyric accumulation; peak scenes should tighten and clarify rather than dissolve into fragmentary haze.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

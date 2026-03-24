@@ -1,0 +1,95 @@
+{
+  "acceptance_targets": [
+    "[ch05_booker_001] PASS if, in the revised snapshots/cycle_01/chapters/chapter_05.md:63-97 span, no accusation/denial cycle is repeated more than once and the first new factual witness detail about Tomas appears before the end of the third major exchange after Deena's introduction; FAIL otherwise.",
+    "[ch05_craft_001] PASS if the revised snapshots/cycle_01/chapters/chapter_05.md:51-73 span includes at least 3 paragraphs with explicit Marisol interiority and no run longer than 6 consecutive paragraphs without interior experience; FAIL otherwise.",
+    "[FBR-C01-002] Pass if the revised chapter distinguishes June narrative artifacts from unresolved actual death-date fact at the cited spans; fail if June 12 is still asserted as the settled death date without qualification."
+  ],
+  "chapter_id": "chapter_05",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if, in the revised snapshots/cycle_01/chapters/chapter_05.md:63-97 span, no accusation/denial cycle is repeated more than once and the first new factual witness detail about Tomas appears before the end of the third major exchange after Deena's introduction; FAIL otherwise.",
+      "chapter_id": "chapter_05",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:63; snapshots/cycle_01/chapters/chapter_05.md:71; snapshots/cycle_01/chapters/chapter_05.md:77; snapshots/cycle_01/chapters/chapter_05.md:81; snapshots/cycle_01/chapters/chapter_05.md:97",
+      "finding_id": "ch05_booker_001",
+      "problem": "The chapter's central confrontation cycles through accusation and denial for too long before new causal information arrives; the witness reveal that changes the chapter's stakes lands late, so momentum stalls in the middle third.",
+      "rewrite_direction": "Tighten the exchange in snapshots/cycle_01/chapters/chapter_05.md:63-97: compress the first accusation loop (63-71) into one sharper turn, move the redaction-condition conflict earlier (around 75-87), and bring Benny's factual interruption in by the early part of that span so causal movement starts sooner.",
+      "severity": "MEDIUM",
+      "source": "booker",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if the revised snapshots/cycle_01/chapters/chapter_05.md:51-73 span includes at least 3 paragraphs with explicit Marisol interiority and no run longer than 6 consecutive paragraphs without interior experience; FAIL otherwise.",
+      "chapter_id": "chapter_05",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:51; snapshots/cycle_01/chapters/chapter_05.md:53; snapshots/cycle_01/chapters/chapter_05.md:55; snapshots/cycle_01/chapters/chapter_05.md:57; snapshots/cycle_01/chapters/chapter_05.md:59; snapshots/cycle_01/chapters/chapter_05.md:61; snapshots/cycle_01/chapters/chapter_05.md:63; snapshots/cycle_01/chapters/chapter_05.md:65; snapshots/cycle_01/chapters/chapter_05.md:67; snapshots/cycle_01/chapters/chapter_05.md:69; snapshots/cycle_01/chapters/chapter_05.md:71; snapshots/cycle_01/chapters/chapter_05.md:73",
+      "finding_id": "ch05_craft_001",
+      "problem": "There is a 10+ paragraph stretch in the office confrontation where the focalizer has almost no explicit internal experience, so the scene reads like external blocking and transcript rather than close-third pressure.",
+      "rewrite_direction": "In snapshots/cycle_01/chapters/chapter_05.md:51-73, add brief interior beats tied to Marisol's thought/sensation/self-assessment (for example after Deena's first accusation and after Marisol's first two replies) while preserving scene tempo.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if the revised chapter distinguishes June narrative artifacts from unresolved actual death-date fact at the cited spans; fail if June 12 is still asserted as the settled death date without qualification.",
+      "chapter_id": "chapter_05",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:1569",
+      "finding_id": "FBR-C01-002",
+      "problem": "Chapter-level chronology conflicts with later chapters: this chapter presents June 12 as the vigil-card death date and treats it as settled, but later certified-record chapters pivot to a November 1992 frame without reconciling the date architecture.",
+      "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:1529-1541 and snapshots/cycle_01/FINAL_NOVEL.md:1569-1573, rewrite the June material as one contested narrative layer (or a separate march-date layer) rather than definitive death-date fact, and explicitly mark uncertainty so later November records can coexist causally.",
+      "severity": "HIGH",
+      "source": "booker_global",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "3a9f5f0300733fc1051ea3cc8e96edd198fca1cfc10c5b200fcbcd0a1f58b976",
+  "must_fix_count": 3,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "When choosing between reputationally safe abstraction and specific discomfort, choose specificity. Render addiction, sexuality, deceit, class shame, and grief at lived scale. In edge cases, preserve character truth and causal accountability over reader comfort or institutional decorum.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene demands bodily, moral, or economic specificity, euphemistic phrasing is treated as a failed draft and must be rewritten with concrete stakes and observable consequence.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the spoken default; full forms appear only for emphasis, ritual language, or character-specific formal posture",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate scene density and pressure modes: pair high-conflict chapters with quiet domestic or documentary chapters, vary dialogue-to-interiority ratios, and prevent identical chapter skeletons in consecutive sequence.",
+      "diction": "contemporary literary diction with class-aware, borough-specific concreteness; avoid prestige-neutral workshop language",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third centered on Marisol, with rare brief distance expansions for institutional scenes",
+      "narrative_tense": "past tense",
+      "rhythm_target": "alternating tensile compression and reflective extension; line-level cadence should carry emotional pressure, not just information",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "chapter_id": "chapter_03",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch3_f001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_03",
+      "evidence": "`snapshots/cycle_01/chapters/chapter_03.md:243` cuts from storm-chaos to `snapshots/cycle_01/chapters/chapter_03.md:245` (administrative packet summary) and `snapshots/cycle_01/chapters/chapter_03.md:247` (command meeting), skipping embodied aftermath at the exact point of maximum social and family consequence.",
+      "problem": "Sanitization drift: the narrative substitutes procedural summary for scene presence immediately after the river-ramp trauma, reducing bodily, social, and moral consequence to paperwork transition.",
+      "rewrite_direction": "Revise the transition block at `snapshots/cycle_01/chapters/chapter_03.md:243`, `snapshots/cycle_01/chapters/chapter_03.md:245`, and `snapshots/cycle_01/chapters/chapter_03.md:247` to include on-page aftermath beats before the meeting: one concrete custody-preservation action, one concrete family-impact beat (Tina or immediate NOK handling), and one embodied reaction from Lena tied to the storm and crowd pressure.",
+      "acceptance_test": "PASS if the revised passage between lines 243-247 contains all three observable elements before the meeting starts: (1) a specific physical/procedural evidence action, (2) a direct family-consequence moment involving Tina/Fenn notification dynamics, and (3) a focalized physical or emotional cost for Lena; FAIL if it still jumps from rain onset directly to packet count/meeting setup."
+    },
+    {
+      "finding_id": "ch3_f002",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "A 10-paragraph external-only run appears from `snapshots/cycle_01/chapters/chapter_03.md:145` through `snapshots/cycle_01/chapters/chapter_03.md:163`; another long external run extends from `snapshots/cycle_01/chapters/chapter_03.md:221` to `snapshots/cycle_01/chapters/chapter_03.md:277` before interior texture resumes.",
+      "problem": "Interiority drought: extended screenplay-like stretches mute Lena's internal processing, weakening close-third anchoring required by the style bible.",
+      "rewrite_direction": "Add compact interior beats inside the two flagged spans (`snapshots/cycle_01/chapters/chapter_03.md:145`-`snapshots/cycle_01/chapters/chapter_03.md:163` and `snapshots/cycle_01/chapters/chapter_03.md:221`-`snapshots/cycle_01/chapters/chapter_03.md:277`) that register thought, sensation, memory, or self-assessment under pressure without stalling scene motion.",
+      "acceptance_test": "PASS if each flagged span contains at least two distinct Lena-interiority paragraphs tied to immediate stimuli (crowd, bodies, cameras, command pressure); FAIL if either span remains purely external action/dialogue for 10+ consecutive paragraphs."
+    },
+    {
+      "finding_id": "ch3_f003",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "Token reuse and aphoristic convergence cluster at `snapshots/cycle_01/chapters/chapter_03.md:99`, `snapshots/cycle_01/chapters/chapter_03.md:189`, `snapshots/cycle_01/chapters/chapter_03.md:223`, `snapshots/cycle_01/chapters/chapter_03.md:241` (\\\"documented\\\"/records rhetoric), plus similarly polished maxim cadence at `snapshots/cycle_01/chapters/chapter_03.md:237`, `snapshots/cycle_01/chapters/chapter_03.md:321`, and `snapshots/cycle_01/chapters/chapter_03.md:355`.",
+      "problem": "Idiolect separation softens under pressure: Lena, Clay, and Mara intermittently sound cut from the same rhetorical template (institutional abstraction plus quotable maxims), flattening register distinction.",
+      "rewrite_direction": "Rework dialogue in `snapshots/cycle_01/chapters/chapter_03.md:189`-`snapshots/cycle_01/chapters/chapter_03.md:193`, `snapshots/cycle_01/chapters/chapter_03.md:223`-`snapshots/cycle_01/chapters/chapter_03.md:241`, and `snapshots/cycle_01/chapters/chapter_03.md:347`-`snapshots/cycle_01/chapters/chapter_03.md:355` so Mara leads with interrogative/reframing moves, Clay stays institutionally evasive, and Lena stays procedural-to-blunt rather than sloganic.",
+      "acceptance_test": "PASS if revised lines show character-distinct rhythm in each exchange (Mara reframes at least once, Clay uses at least one institutional deflection, Lena uses at least one compact procedural-to-blunt shift) and the exact word \"documented\" appears no more than once across lines 189-241; FAIL otherwise."
+    },
+    {
+      "finding_id": "ch3_f004",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "Identical sentence construction repeats three times at `snapshots/cycle_01/chapters/chapter_03.md:379`, `snapshots/cycle_01/chapters/chapter_03.md:381`, and `snapshots/cycle_01/chapters/chapter_03.md:383` (\"The email had no mention of ...\").",
+      "problem": "Recurring formula crosses the >2 threshold and reads as autopilot emphasis rather than sharpened progression.",
+      "rewrite_direction": "Revise `snapshots/cycle_01/chapters/chapter_03.md:379`, `snapshots/cycle_01/chapters/chapter_03.md:381`, and `snapshots/cycle_01/chapters/chapter_03.md:383` to keep at most one repeated opener and replace the others with materially different constructions that escalate consequence (public perception, departmental behavior, or family impact).",
+      "acceptance_test": "PASS if the repeated opener \"The email had no mention of\" appears at most once in lines 379-383 and the replacement lines each add a distinct concrete consequence; FAIL if the same opener still appears three times."
+    },
+    {
+      "finding_id": "ch3_f005",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "Closing movement at `snapshots/cycle_01/chapters/chapter_03.md:389`, `snapshots/cycle_01/chapters/chapter_03.md:391`, `snapshots/cycle_01/chapters/chapter_03.md:393`, `snapshots/cycle_01/chapters/chapter_03.md:395`, and `snapshots/cycle_01/chapters/chapter_03.md:397` shifts into abstract thesis statements before the actionable lead at `snapshots/cycle_01/chapters/chapter_03.md:399`.",
+      "problem": "Timidity at the chapter exit: the prose retreats from immediate dramatic consequence into summary aphorism, weakening forward causal propulsion.",
+      "rewrite_direction": "Rebuild the ending block at `snapshots/cycle_01/chapters/chapter_03.md:389`-`snapshots/cycle_01/chapters/chapter_03.md:399` around an active Tina-lead beat (contact attempt, location urgency, or interception risk), then keep thematic framing to one concise line max.",
+      "acceptance_test": "PASS if final paragraphs show Lena taking one observable investigative step toward Tina before chapter end and include one explicit obstacle/urgency marker; FAIL if the ending remains primarily abstract declaratives without enacted next-move pressure."
+    }
+  ],
+  "summary": "Chapter 3 lands major spine beats and stays continuity/tense compliant, but unresolved MEDIUM+ issues remain: a HIGH sanitization cut at the river-ramp aftermath, two long interiority droughts, dialogue idiolect flattening through repeated rhetorical tokens, and repeated prose formulas that reduce chapter-exit force.",
+  "coverage_scene_ids": [
+    "morgue_verification_breach",
+    "river_ramp_double_body",
+    "command_task_force_meeting",
+    "hallway_fallout_and_leak_map"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "chapter_id": "chapter_07",
+  "finding_results": [
+    {
+      "evidence": "chapters/chapter_07.md:61",
+      "finding_id": "fallback_chapter_07_contract",
+      "notes": "Craft audit identified a math error in Simone's financial accounting: the take-home pay was listed as $5,800/month on a $95K NYC salary, but the itemized expenses totaled $4,410, leaving $1,390 \u2014 contradicting the stated '$300 a month' remainder that anchors the chapter's emotional payload. A $95K salary in NYC after federal, state, and city income taxes, FICA, health insurance, and 401(k) yields approximately $4,700/month take-home. Changed both occurrences of '$5,800' to '$4,700' so the arithmetic ($4,700 - $2,400 - $280 - $420 - $210 - $1,100 = $290) now lands at 'roughly $300.' Heading contract preserved (line 1: '# Chapter 7'). No elliptical clipping, transcript cadence, sanitization, or dialogue formality violations found. Character voices match style bible registers. All four must-land beats confirmed present.",
+      "status_after_revision": "FIXED"
+    },
+    {
+      "evidence": "chapters/chapter_07.md:63, chapters/chapter_07.md:91",
+      "finding_id": "HIGH-07-parents-town-ch07",
+      "notes": "Changed both occurrences of 'Bayonne' to 'Teaneck' to match Ch13's more detailed canonical description of Simone's parents' home. Line 63: 'her parents expected a visit to Teaneck.' Line 91: 'They lived in the same two-bedroom in Teaneck where Simone had grown up.' Father's Newark airport shuttle job and mother's Hoboken dentist office job remain geographically plausible commutes from Teaneck (Bergen County).",
+      "status_after_revision": "FIXED"
+    }
+  ],
+  "pass_summaries": [
+    {
+      "pass_key": "p1_structural_craft",
+      "pass_label": "HIGH/CRITICAL structural/craft fixes",
+      "summary": "Two fixes applied. (1) Continuity: 'Bayonne' changed to 'Teaneck' at lines 63 and 91 to match Ch13's canonical placement of Simone's parents. (2) Craft/math: take-home pay corrected from $5,800 to $4,700 at line 61 (two occurrences) so the financial arithmetic supports the stated $300/month remainder that drives the chapter's emotional stakes. Chapter audited for constitution compliance \u2014 heading contract, dialogue register, sensory bias, voice signatures, anti-sanitization, and structural beats all confirmed intact."
+    },
+    {
+      "pass_key": "p2_dialogue_idiolect_cadence",
+      "pass_label": "dialogue/idiolect/cadence fixes",
+      "summary": "dialogue/idiolect/cadence fixes: no assigned findings."
+    },
+    {
+      "pass_key": "p3_prose_copyedit",
+      "pass_label": "prose/copyedit fixes",
+      "summary": "prose/copyedit fixes: no assigned findings."
+    }
+  ],
+  "summary": "Merged three-pass revision report (FIXED=2, PARTIAL=0, UNRESOLVED=0)."
+}

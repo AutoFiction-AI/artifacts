@@ -1,0 +1,108 @@
+{
+  "acceptance_targets": [
+    "[chapter_02_F001] Pass if a reader can map lines 25/47/77 to one coherent calendar sequence that preserves the canonical 2026-08-28 departure; fail if those lines still require Eli to have left both \"yesterday\" and not-yesterday in the same timeline.",
+    "[chapter_02_F002] Pass if revised lines 57-123 and 163-177 contain at least one conflict beat rendered as live interaction or immediate bodily consequence, and no more than one consecutive paragraph of screen-text-only reporting; fail if those spans still read as stacked notifications with delayed embodiment.",
+    "[chapter_02_F003] Pass if lines 13-157 show at least three sequential contact beats with different outcomes (e.g., job status shift, relational boundary hardening, deception escalation) and no duplicated ring-ignore-drive loop used more than twice; fail otherwise.",
+    "[chapter_02_F006] Pass if lines 359-367 show an explicit consequence from the incoming message on-page before the final sentence; fail if the chapter still exits on an unopened-message dodge."
+  ],
+  "chapter_id": "chapter_02",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if a reader can map lines 25/47/77 to one coherent calendar sequence that preserves the canonical 2026-08-28 departure; fail if those lines still require Eli to have left both \"yesterday\" and not-yesterday in the same timeline.",
+      "chapter_id": "chapter_02",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:25; snapshots/cycle_02/chapters/chapter_02.md:47; snapshots/cycle_02/chapters/chapter_02.md:77",
+      "finding_id": "chapter_02_F001",
+      "problem": "Continuity contradiction: the chapter implies Eli left campus \"yesterday\" while Cal is already in a live Monday 9:00 audit-prep room, which conflicts with the canonical anchor that departure occurs on 2026-08-28 (Friday).",
+      "rewrite_direction": "In snapshots/cycle_02/chapters/chapter_02.md:25, :47, and :77, make the day chain explicit and consistent with the canon anchor. Either keep this chapter on Saturday and recast Cal's message as advance Monday pressure, or keep the Monday meeting and update the departure reference so it is not \"yesterday\".",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if revised lines 57-123 and 163-177 contain at least one conflict beat rendered as live interaction or immediate bodily consequence, and no more than one consecutive paragraph of screen-text-only reporting; fail if those spans still read as stacked notifications with delayed embodiment.",
+      "chapter_id": "chapter_02",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:59; snapshots/cycle_02/chapters/chapter_02.md:63; snapshots/cycle_02/chapters/chapter_02.md:95; snapshots/cycle_02/chapters/chapter_02.md:121; snapshots/cycle_02/chapters/chapter_02.md:167",
+      "finding_id": "chapter_02_F002",
+      "problem": "Sanitization drift via interface mediation: major conflict beats are repeatedly routed through alerts, screenshots, and voicemail summaries, which buffers embodied consequence and softens the emotional violence of abandonment into administrative feed updates.",
+      "rewrite_direction": "In snapshots/cycle_02/chapters/chapter_02.md:57-123 and :163-177, compress at least one alert cluster and replace it with live, embodied confrontation or immediate physical fallout in-scene (not just a device transcript). Keep the bank/job information, but force it through character action/reaction on-page.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if lines 13-157 show at least three sequential contact beats with different outcomes (e.g., job status shift, relational boundary hardening, deception escalation) and no duplicated ring-ignore-drive loop used more than twice; fail otherwise.",
+      "chapter_id": "chapter_02",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:13; snapshots/cycle_02/chapters/chapter_02.md:71; snapshots/cycle_02/chapters/chapter_02.md:101; snapshots/cycle_02/chapters/chapter_02.md:153",
+      "finding_id": "chapter_02_F003",
+      "problem": "Mid-chapter escalation stalls because the same avoidant beat (ring, defer, drive) repeats before the burner-phone turn, reducing causal acceleration and dramatic surprise.",
+      "rewrite_direction": "Rework snapshots/cycle_02/chapters/chapter_02.md:13-157 so each communication beat forces a distinct state change rather than another deferment. Keep the final burner pivot, but cut duplicated avoidance loops and attach each retained beat to a new irreversible cost.",
+      "severity": "MEDIUM",
+      "source": "booker",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if lines 359-367 show an explicit consequence from the incoming message on-page before the final sentence; fail if the chapter still exits on an unopened-message dodge.",
+      "chapter_id": "chapter_02",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:359; snapshots/cycle_02/chapters/chapter_02.md:367",
+      "finding_id": "chapter_02_F006",
+      "problem": "Timidity at the chapter exit: after the burner-phone lie lands, the prose retreats into deferred consequence (unopened message + mile-marker drift) instead of rendering immediate emotional impact.",
+      "rewrite_direction": "Rework snapshots/cycle_02/chapters/chapter_02.md:359-367 so the ending includes one concrete consequence from the incoming message (content fragment, bodily reaction, or immediate behavioral shift) before the close, rather than pure deferral.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "791ef07d431ad53393732da6c4c9e0273fe5bae042e33eb8dc8db7088dfd7a5d",
+  "must_fix_count": 4,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into morally mixed behavior, bodily consequence, and economic detail when they are causally active. In edge cases, choose the more concrete and uncomfortable rendering unless it violates factual continuity; if two renderings are equally plausible, prefer the one that increases character accountability rather than reader reassurance.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene contains pain, sex, addiction, debt panic, or humiliation, abstract phrasing is treated as a failed draft and must be rewritten with embodied specificity.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the spoken default; uncontracted forms are reserved for emphasis, legal precision, or deliberate emotional distance.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate chapter architectures across the book: confrontation chapters, document-information turns, labor-process chapters, transit interiority chapters, and quiet relational chapters. Consecutive chapters must differ in scene density or dialogue-to-interiority ratio.",
+      "diction": "Contemporary American literary realism: precise, unsentimental, image-aware, and concrete under stress.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third-person anchored to Eli, with no unmarked POV drift.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Braided cadence: reflective medium-length sentences interrupted by blunt short lines at impact moments.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

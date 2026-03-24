@@ -1,0 +1,23 @@
+{
+  "chapter_id": "chapter_01",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "PASS",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_01_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "Recurring explanatory templates appear at snapshots/cycle_02/chapters/chapter_01.md:5, snapshots/cycle_02/chapters/chapter_01.md:23, snapshots/cycle_02/chapters/chapter_01.md:103, snapshots/cycle_02/chapters/chapter_01.md:195, snapshots/cycle_02/chapters/chapter_01.md:211, snapshots/cycle_02/chapters/chapter_01.md:269, and snapshots/cycle_02/chapters/chapter_01.md:299.",
+      "problem": "The chapter reuses two sentence machines past the allowed threshold: explanatory \"as if\" comparisons and negation/correction codas (\"it was not X,\" \"not belief, only...\"). Because the underlying images are already strong, the repeated templates start to predigest meaning and flatten the prose's volatility.",
+      "rewrite_direction": "Rework the representative beats at snapshots/cycle_02/chapters/chapter_01.md:5, snapshots/cycle_02/chapters/chapter_01.md:23, snapshots/cycle_02/chapters/chapter_01.md:103, snapshots/cycle_02/chapters/chapter_01.md:195, snapshots/cycle_02/chapters/chapter_01.md:211, snapshots/cycle_02/chapters/chapter_01.md:269, and snapshots/cycle_02/chapters/chapter_01.md:299. Keep the strongest concrete image in each spot, but replace several \"as if\" bridges with direct perception or action and cut at least two negation/reversal codas so the beat lands without an interpretive after-sentence.",
+      "acceptance_test": "Pass if the revised passages around snapshots/cycle_02/chapters/chapter_01.md:5, snapshots/cycle_02/chapters/chapter_01.md:23, snapshots/cycle_02/chapters/chapter_01.md:103, snapshots/cycle_02/chapters/chapter_01.md:195, snapshots/cycle_02/chapters/chapter_01.md:211, snapshots/cycle_02/chapters/chapter_01.md:269, and snapshots/cycle_02/chapters/chapter_01.md:299 no longer rely on the same two templates more than twice total in the chapter, and each cited beat remains intelligible through image or action alone; fail if three or more of those beats still resolve via \"as if\" explanation or \"it was not X / not X, only Y\" correction."
+    }
+  ],
+  "summary": "Booker, craft, and dialogue pass: the chapter lands the required coercion, failed handoff, and morally compromising entry with distinct voices, specific bodily and economic detail, canonical past tense, and no continuity contradiction against the supplied references. Prose fails on one unresolved repetition issue: explanatory \"as if\" and negation/correction constructions recur often enough to read like a sentence habit rather than chosen emphasis.",
+  "coverage_scene_ids": []
+}

@@ -1,0 +1,96 @@
+{
+  "acceptance_targets": [
+    "[ch16_award_01] Reading the revised passages corresponding to current snapshots/cycle_02/chapters/chapter_16.md:117-121 and snapshots/cycle_02/chapters/chapter_16.md:181-193, a reader can state one new end-of-chapter state change that was not already true at line 115, and the close does not merely restate Roy's 'Friday' point in different wording.",
+    "[ch16_craft_01] A reader comparing the revised venue description at snapshots/cycle_02/chapters/chapter_16.md:3 and snapshots/cycle_02/chapters/chapter_16.md:11 can state one unambiguous total capacity for the Lincoln Theatre, with balcony seating clearly included rather than added.",
+    "[F07] The rehearsal section between 'He started the material' (line 3757) and the scene break (line 3779) occupies no more than 10 lines. Only one run-through is described. The ghost-light scene (lines 3833-3925) and Layla-Charlie dinner scene (lines 3781-3829) retain their current length and detail."
+  ],
+  "chapter_id": "chapter_16",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Reading the revised passages corresponding to current snapshots/cycle_02/chapters/chapter_16.md:117-121 and snapshots/cycle_02/chapters/chapter_16.md:181-193, a reader can state one new end-of-chapter state change that was not already true at line 115, and the close does not merely restate Roy's 'Friday' point in different wording.",
+      "chapter_id": "chapter_16",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_16.md:117; snapshots/cycle_02/chapters/chapter_16.md:121; snapshots/cycle_02/chapters/chapter_16.md:181; snapshots/cycle_02/chapters/chapter_16.md:193",
+      "finding_id": "ch16_award_01",
+      "problem": "The back third keeps re-proving ideas the novel has already landed instead of converting Roy's call into a sharper new end-state. The Gloria callback arrives as the vague shorthand \"the thing about the table,\" the spreadsheet paragraph re-summarizes an already-established wound, and the close paraphrases Roy's Friday line after he has already said it. That leaves the chapter with elegant reiteration rather than a shortlist-level final turn.",
+      "rewrite_direction": "Rebuild the recall-and-close sequence around snapshots/cycle_02/chapters/chapter_16.md:117, snapshots/cycle_02/chapters/chapter_16.md:119, snapshots/cycle_02/chapters/chapter_16.md:181, and snapshots/cycle_02/chapters/chapter_16.md:187 so the material does one forward job: make the specific earlier truth Doug is applying tonight legible on the page, then end on a fresh state change, action, or misreading triggered by Roy's call. If the Gloria callback stays, name enough of the table idea at snapshots/cycle_02/chapters/chapter_16.md:117 to be legible without prior-chapter memory; if the Friday line stays at the end, it needs to buy a different consequence than Roy already supplied at snapshots/cycle_02/chapters/chapter_16.md:181.",
+      "severity": "MEDIUM",
+      "source": "award",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "A reader comparing the revised venue description at snapshots/cycle_02/chapters/chapter_16.md:3 and snapshots/cycle_02/chapters/chapter_16.md:11 can state one unambiguous total capacity for the Lincoln Theatre, with balcony seating clearly included rather than added.",
+      "chapter_id": "chapter_16",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_16.md:3; snapshots/cycle_02/chapters/chapter_16.md:11",
+      "finding_id": "ch16_craft_01",
+      "problem": "The opening makes the seat count a precision detail Doug notices, then muddies it. Line 3 establishes that the contract capacity is 580; line 11 says there are five hundred and eighty seats and then adds \"more seats up there\" in the balcony, which reads as extra seats beyond the already-established total. Because exact counts are part of Doug's characterization, the ambiguity lands as a continuity error, not atmospheric looseness.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_16.md:11 against the exact count at snapshots/cycle_02/chapters/chapter_16.md:3 so the balcony is clearly part of the 580 total or the orchestra/balcony split is specified. Remove additive phrasing that implies balcony seats exist on top of the established capacity.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "The rehearsal section between 'He started the material' (line 3757) and the scene break (line 3779) occupies no more than 10 lines. Only one run-through is described. The ghost-light scene (lines 3833-3925) and Layla-Charlie dinner scene (lines 3781-3829) retain their current length and detail.",
+      "chapter_id": "chapter_16",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:3757-3777",
+      "finding_id": "F07",
+      "problem": "Chapter 16 contains two full run-throughs of the scripted set, both failing, described in detail over 20 lines. By this point, the reader has watched Doug's prepared material fail in Indianapolis (Ch 9), in Simone's kitchen diagnoses (Ch 11), and across three tour cities (Ch 14). Two more failures in rehearsal \u2014 including the metaphor 'a photograph of a fire: all image, no heat' (line 3771) and Simone's head-shake from the balcony (line 3777) \u2014 are restaging a discovery already made five times. The chapter's genuinely new dramatic contributions are the Lincoln Theatre setting, the Layla-Charlie dinner scene (lines 3781-3829), and the ghost-light/Roy-phone-call scene (lines 3833-3925). The rehearsal-failure scenes are the least necessary material.",
+      "rewrite_direction": "At snapshots/cycle_02/FINAL_NOVEL.md:3757-3777, compress the two rehearsal run-throughs into one brief attempt that fails, described in 5-8 sentences. The reader needs to KNOW the rehearsal failed \u2014 they do not need to WATCH it fail in real-time detail for the sixth time. Cut the second run-through entirely. Keep 'a photograph of a fire: all image, no heat' if desired as a single-sentence summary of the failure, but do not extend the description with specific bits dying or crew reactions. Redirect the chapter's page weight toward the Layla-Charlie dinner (lines 3781-3829), which is the chapter's sharpest scene, and the ghost-light/Roy scene (lines 3833-3925), which is its emotional core.",
+      "severity": "MEDIUM",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "a9e0eeadf8883c7351df6258958bad0483b707136acfb47e4f22ec3ee8492eab",
+  "must_fix_count": 3,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This novel's greatest risk is timidity. The premise \u2014 a man who is not funny trying to be funny \u2014 invites a safe, gently comic execution where Doug is lovably bumbling and everything works out. Resist this. Doug's failures should be genuinely uncomfortable to witness. His loneliness should be genuinely lonely, not charmingly solitary. The toast should contain things that are genuinely inappropriate, not safely edgy. The comedy should come from truth that hurts, not from situations that are merely awkward. The moments of tenderness \u2014 the Gloria chapter, the Kelsey lunch, the Simone conversation \u2014 should be earned through accumulated specificity, not through the narrative signaling that it's time to feel. Every chapter should contain at least one moment that a cautious writer would soften, and the drafting agent should not soften it.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism is a craft failure. If Doug is drunk, describe what drunk looks and feels like \u2014 the specific sensory experience, not the label. If Doug is lonely, show the loneliness through the objects and routines that fill the space where other people would be \u2014 the cereal dinner, the second bedroom, the unpacked boxes. If a scene involves embarrassment, shame, failure, or longing, render it in full physical and emotional detail. The reader should feel it, not be told about it. Replace every euphemism with the specific thing it is hiding.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for most characters. Uncontracted forms should be reserved for emphasis, deliberate formality, or character-specific moments (Doug going precise under stress, Megan's composed register). If a line reads stiff and the character is not being deliberately formal, contract it.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "No two consecutive chapters should share the same structural rhythm. Vary: scene count (1-4), dialogue density (high-dialogue chapters followed by interior-heavy chapters), pacing (frenetic chapters followed by still ones), emotional register (comic escalation followed by tender quiet), narrative distance (very close interior followed by observed social scenes). The novel should feel like it breathes \u2014 tight chapters followed by loose ones, crowded chapters followed by solitary ones. Chapter 3 (quiet office day) must feel structurally different from Chapter 10 (quiet visit to Gloria). Chapter 9 (the corporate disaster) must feel structurally different from Chapter 14 (the tour), even though both involve performance failure. Achieve variety through scene construction, not through gimmick.",
+      "diction": "Mid-register, clean, precise. No pyrotechnics. No extended metaphors. The prose should have the quality of someone describing what happened accurately \u2014 not artlessly, but without reaching for beauty. When beauty arrives, it should feel accidental, like Doug's humor: a precisely observed detail that turns out to be devastating not because the prose reached for devastation but because the detail was exact. Insurance language may surface in narration when it captures something emotional more precisely than emotional language would. Avoid lyrical flights, extended similes, or any construction that would sound wrong coming from a narrator who is sympathetic to Doug's plainness.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person, tightly bound to Doug's perspective. The narrator has access to Doug's interior \u2014 his observations, his assessments, his emotional processing through objects and details \u2014 but not to any other character's thoughts. Other characters are rendered through Doug's perception: what they say, how they move, what Doug notices about them. The narrator's voice is distinct from Doug's voice but sympathetic to it \u2014 slightly more articulate, slightly more aware, but never mocking and never superior. The humor in the narration comes from the same source as Doug's humor: precision about mundane things that reveals the absurdity or sadness underneath. The narrator does not explain the comedy. The narrator does not wink.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Varied and controlled. Default to mid-length sentences with clean syntax. Use short sentences for comic timing \u2014 the flat declarative that follows an elaborate setup. Use longer, more syntactically complex sentences for interior passages where Doug is processing something he cannot name. Avoid uniform sentence length across paragraphs. The prose should breathe \u2014 alternating between compression and expansion, between observation and reflection, between the external world and Doug's interior. Comedy requires rhythm more than any other mode: the setup needs room, the punch needs precision, and the space after needs silence.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

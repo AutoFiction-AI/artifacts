@@ -1,0 +1,142 @@
+{
+  "cycle": 1,
+  "verdict": "FAIL",
+  "summary": "FAIL for shortlist readiness. The novel has strong embodied detail and does not sanitize intimacy, addiction pressure, or economic consequence, and narrative tense remains consistently past across chapters. But it still carries unresolved MEDIUM+ blockers: a HIGH cross-chapter continuity break in the Chapter 8-9 brake chronology, recurring cross-book prose templates, and voice flattening from repeated managerial mantra diction that reduces idiolect separation.",
+  "findings": [
+    {
+      "finding_id": "FBR-001",
+      "severity": "HIGH",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2399",
+      "problem": "Cross-chapter continuity breaks on brake-repair chronology. Chapter 8 states the shop installs front pads/flushes fluid, but Chapter 9 later claims Eli changed front pads himself the night before the crash. Because chapters are revised independently, Chapter 8 needs an unambiguous handoff state.",
+      "rewrite_direction": "Rewrite the mechanical-state block at snapshots/cycle_01/FINAL_NOVEL.md:2399, snapshots/cycle_01/FINAL_NOVEL.md:2405, snapshots/cycle_01/FINAL_NOVEL.md:2419, snapshots/cycle_01/FINAL_NOVEL.md:2453, and departure lines around snapshots/cycle_01/FINAL_NOVEL.md:2706 so this chapter establishes exactly one brake history. Option A: keep shop work as limited/temporary and explicitly set up later self-repair; Option B: keep shop-installed front pads and explicitly state no further brake work before dawn.",
+      "acceptance_test": "Pass if a reader can trace a single, contradiction-free brake timeline from snapshots/cycle_01/FINAL_NOVEL.md:2399 through snapshots/cycle_01/FINAL_NOVEL.md:2706 without inferring two separate front-pad replacements. Fail if both a completed shop front-pad replacement and an implied off-page second front-pad replacement remain possible."
+    },
+    {
+      "finding_id": "FBR-002",
+      "severity": "HIGH",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2719",
+      "problem": "Chapter 9 introduces an off-page brake event (Eli changing front pads himself) that conflicts with Chapter 8's stated repair sequence, creating a factual continuity contradiction in a causally central setup for the whiteout crash.",
+      "rewrite_direction": "Rewrite snapshots/cycle_01/FINAL_NOVEL.md:2719 (and any dependent references in snapshots/cycle_01/FINAL_NOVEL.md:2779 to snapshots/cycle_01/FINAL_NOVEL.md:2784) so pre-crash brake condition matches the established Chapter 8 history instead of introducing a new off-page repair.",
+      "acceptance_test": "Pass if snapshots/cycle_01/FINAL_NOVEL.md:2719 no longer claims a contradictory self-performed front-pad change and the crash causality reads from one consistent prior repair state. Fail if the chapter still asserts a separate overnight front-pad replacement not supported by Chapter 8."
+    },
+    {
+      "finding_id": "FBR-003",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:877",
+      "problem": "Recurring full-book pattern: triple-suppression (appears in 4 chapters: chapter_03, chapter_08, chapter_10, chapter_17). This chapter's version is one of the strongest early placements and should be the retained instance, but it is currently doubled inside one beat.",
+      "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:877, KEEP this chapter as a retained instance but compress to a single suppression move: one withheld sentence plus one concrete consequence beat. Remove the second near-identical 'almost said' clause.",
+      "acceptance_test": "Pass if snapshots/cycle_01/FINAL_NOVEL.md:877 to snapshots/cycle_01/FINAL_NOVEL.md:880 contains one clear suppression beat (not two stacked variants) and still lands Eli's avoidance with concrete stakes. Fail if the line remains a repeated 'He almost... He almost...' chain."
+    },
+    {
+      "finding_id": "FBR-004",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2503",
+      "problem": "Recurring full-book triple-suppression pattern (4 chapters total). This chapter currently repeats the construction multiple times and should be REPLACED to avoid tic-like cadence.",
+      "rewrite_direction": "Replace suppression-template lines at snapshots/cycle_01/FINAL_NOVEL.md:2417 and snapshots/cycle_01/FINAL_NOVEL.md:2503 with one concrete action or one spoken fragment that reveals avoidance without the repeated 'almost told/almost said' formula.",
+      "acceptance_test": "Pass if neither target line uses back-to-back suppression phrasing and the pawn-shop scene still conveys emotional recoil through specific action/dialogue. Fail if the revised passage still reads as 'He almost X. He almost Y. Instead...'."
+    },
+    {
+      "finding_id": "FBR-005",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:3312",
+      "problem": "Recurring full-book triple-suppression pattern (4 chapters total). This chapter's instance should be REPLACED because it duplicates a now-frequent rhetorical move.",
+      "rewrite_direction": "Rewrite snapshots/cycle_01/FINAL_NOVEL.md:3312 so Eli's hesitation is shown via immediate physical behavior, interruption, or one failed sentence rather than another suppression template.",
+      "acceptance_test": "Pass if the revised line at snapshots/cycle_01/FINAL_NOVEL.md:3312 avoids 'almost told/said' construction and still communicates avoidance under pressure. Fail if the suppression formula remains structurally intact."
+    },
+    {
+      "finding_id": "FBR-006",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:5678",
+      "problem": "Recurring full-book triple-suppression pattern (4 chapters total). This chapter's use is a viable late-book echo and can be retained, but only as one of at most two surviving instances in the novel.",
+      "rewrite_direction": "KEEP the suppression beat at snapshots/cycle_01/FINAL_NOVEL.md:5678, but tighten surrounding lines snapshots/cycle_01/FINAL_NOVEL.md:5676 to snapshots/cycle_01/FINAL_NOVEL.md:5680 so it lands as a singular rupture, not another patterned refrain.",
+      "acceptance_test": "Pass if the kept instance reads as a unique late-book rupture with no adjacent duplicate suppression structure. Fail if nearby wording reintroduces a second suppression beat in the same micro-scene."
+    },
+    {
+      "finding_id": "FBR-007",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:739",
+      "problem": "Recurring full-book formula-metaphor pattern ('landed like ...') appears across chapter_03, chapter_07, and chapter_15. This chapter's instance is the strongest and should be the retained version.",
+      "rewrite_direction": "KEEP snapshots/cycle_01/FINAL_NOVEL.md:739 as the canonical instance; do not add a second 'landed like' construction in this chapter. Tighten adjacent context at snapshots/cycle_01/FINAL_NOVEL.md:737 to snapshots/cycle_01/FINAL_NOVEL.md:741 so the image remains singular and high-impact.",
+      "acceptance_test": "Pass if chapter_03 contains only this one retained 'landed like' construction and it remains anchored to scene-specific stakes. Fail if additional formula-metaphor echoes are introduced in the same chapter."
+    },
+    {
+      "finding_id": "FBR-008",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2292",
+      "problem": "Recurring formula-metaphor pattern ('landed like ...') appears in 3 chapters and becomes mannered at this point. This chapter should REPLACE its instance.",
+      "rewrite_direction": "Replace the metaphor at snapshots/cycle_01/FINAL_NOVEL.md:2292 with a concrete physiological/action reaction (e.g., breath, grip, pacing error, missed exit behavior) that is specific to this rest-stop moment.",
+      "acceptance_test": "Pass if snapshots/cycle_01/FINAL_NOVEL.md:2292 to snapshots/cycle_01/FINAL_NOVEL.md:2293 no longer uses the 'landed like [object/sentence]' template and still escalates pressure. Fail if the same metaphor skeleton remains."
+    },
+    {
+      "finding_id": "FBR-009",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:5028",
+      "problem": "Recurring formula-metaphor pattern ('landed like ...') appears in 3 chapters; this late repetition reads as house-style overuse rather than deliberate motif. This chapter should REPLACE its instance.",
+      "rewrite_direction": "Rewrite snapshots/cycle_01/FINAL_NOVEL.md:5028 with an immediate behavioral consequence (voice shift, posture change, task error, delayed response) instead of the 'landed like' template.",
+      "acceptance_test": "Pass if snapshots/cycle_01/FINAL_NOVEL.md:5028 conveys the emotional impact through observable behavior and avoids formula-metaphor wording. Fail if the revised line still follows the same 'X landed like Y' structure."
+    },
+    {
+      "finding_id": "FBR-010",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:3901",
+      "problem": "Style-bible token overfitting: managerial mantra diction ('numbers', 'dates', 'facts', 'no speeches') repeats across many chapters and starts to flatten voice. In this chapter, the recurrence is concentrated enough to feel sloganic.",
+      "rewrite_direction": "Revise mantra-dense spans at snapshots/cycle_01/FINAL_NOVEL.md:3901, snapshots/cycle_01/FINAL_NOVEL.md:3927, snapshots/cycle_01/FINAL_NOVEL.md:4013, and snapshots/cycle_01/FINAL_NOVEL.md:4039. Keep all deadlines/amounts, but vary diction and embed at least one character-specific sensory or relational cue per block so the scene reads as lived conflict, not repeated policy language.",
+      "acceptance_test": "Pass if the revised cited lines preserve all concrete financial/legal information while removing slogan-like repetition of the same managerial token cluster and restoring distinct speaker texture. Fail if the passage still reads as interchangeable 'facts/dates/numbers/receipts' refrains."
+    },
+    {
+      "finding_id": "FBR-011",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:5260",
+      "problem": "Style-bible token overfitting recurs here in rule-list form ('facts before stories', 'dates before apologies'), contributing to cross-chapter mantra drift rather than fresh voice.",
+      "rewrite_direction": "Rewrite the Theo text block at snapshots/cycle_01/FINAL_NOVEL.md:5260 to snapshots/cycle_01/FINAL_NOVEL.md:5264 so the same accountability terms are conveyed in Theo-specific vernacular and relationship history instead of generic slogan symmetry.",
+      "acceptance_test": "Pass if the revised text block still sets concrete accountability rules but reads as uniquely Theo (syntax/rhythm/word choice) rather than generalized mantra language. Fail if it remains parallel aphorism format with swapped nouns."
+    },
+    {
+      "finding_id": "FBR-012",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:5519",
+      "problem": "Style-bible token overfitting persists in Eli's self-command list. The rule list is functional, but the repeated imperative phrasing mirrors earlier chapters too closely and weakens late-book tonal variation.",
+      "rewrite_direction": "Revise the list at snapshots/cycle_01/FINAL_NOVEL.md:5519 to snapshots/cycle_01/FINAL_NOVEL.md:5530 so each line is rooted in chapter-specific stakes (Nora, June, Marisol, train return) rather than abstract directives.",
+      "acceptance_test": "Pass if each revised list line references concrete chapter-specific stakes while preserving accountability intent, and the block no longer reads as reusable generic command text. Fail if lines remain mostly abstract imperatives that could be pasted from earlier chapters unchanged."
+    },
+    {
+      "finding_id": "FBR-013",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:839",
+      "problem": "Dialogue register mismatch against style-bible contraction guidance (Eli = high contraction). In a casual diner exchange, Eli defaults to formal uncontracted diction ('I did not...'), and this drift recurs in later chapters.",
+      "rewrite_direction": "Rewrite Eli's quoted line at snapshots/cycle_01/FINAL_NOVEL.md:839 using natural spoken contraction and defensive rhythm consistent with his high-contraction profile under stress.",
+      "acceptance_test": "Pass if Eli's line at snapshots/cycle_01/FINAL_NOVEL.md:839 sounds colloquial and pressure-reactive (with contractions) while preserving the same meaning. Fail if it remains formal/uncontracted legal-sounding speech."
+    },
+    {
+      "finding_id": "FBR-014",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:4474",
+      "problem": "Persistent contraction-level mismatch (Eli high-contraction) recurs in emotionally immediate dialogue ('I almost did not call tonight'), producing avoidable formality at peak pressure.",
+      "rewrite_direction": "Revise snapshots/cycle_01/FINAL_NOVEL.md:4474 to Eli's natural spoken cadence with contraction and cleaner colloquial stress while preserving hesitation.",
+      "acceptance_test": "Pass if the revised line uses natural contraction and still communicates reluctance to call. Fail if the line remains stiffly uncontracted in a high-pressure father-son exchange."
+    },
+    {
+      "finding_id": "FBR-015",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:4577",
+      "problem": "Idiolect separation weakens: Tasha, Deena, and Kendra often share near-identical clipped rule-book cadence, making three authority voices partially interchangeable within the same chapter.",
+      "rewrite_direction": "Differentiate supervisor voices in snapshots/cycle_01/FINAL_NOVEL.md:4541, snapshots/cycle_01/FINAL_NOVEL.md:4567, and snapshots/cycle_01/FINAL_NOVEL.md:4651. Keep policy content, but vary syntax length, contractions, and lexical field so each speaker is identifiable without tags.",
+      "acceptance_test": "Pass if a blinded read of the three cited dialogue blocks can attribute each voice correctly by register/rhythm/word choice alone. Fail if all three blocks still read as the same clipped policy voice with interchangeable tags."
+    }
+  ]
+}

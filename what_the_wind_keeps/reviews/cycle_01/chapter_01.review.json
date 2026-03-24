@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_01",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_01_craft_001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:137; snapshots/cycle_01/chapters/chapter_01.md:193; snapshots/cycle_01/chapters/chapter_01.md:235",
+      "problem": "The chapter repeatedly reports that characters swore instead of putting the oath on the page. In this book's constitution that is sanitization, not restraint: the prose looks away from the exact word at the moment storm fear and bodily pain should sharpen speech.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_01.md:137, snapshots/cycle_01/chapters/chapter_01.md:193, and snapshots/cycle_01/chapters/chapter_01.md:235, replace the summary verbs `swore/swearing` with the actual period-credible oath or curse each speaker would use under that pressure. Keep the language matched to Thea's low-moderate profanity profile and Dell's more impulsive one, but render the profanity directly instead of narrating around it.",
+      "acceptance_test": "PASS if the revised beats at snapshots/cycle_01/chapters/chapter_01.md:137, snapshots/cycle_01/chapters/chapter_01.md:193, and snapshots/cycle_01/chapters/chapter_01.md:235 place at least two actual curses or oaths on the page and none of those beats rely only on `swore/swearing` to summarize the profanity. FAIL if the narration still reports the act of swearing without the word itself."
+    },
+    {
+      "finding_id": "chapter_01_dialogue_001",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:65; snapshots/cycle_01/chapters/chapter_01.md:97; snapshots/cycle_01/chapters/chapter_01.md:233; snapshots/cycle_01/chapters/chapter_01.md:257",
+      "problem": "Thea's voice is mostly well-calibrated, but several stress lines arrive as polished bons mots rather than pressured speech. That pushes her toward authorial cleverness and away from the style bible's brief for embodied, period-natural wit that roughens under strain.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_01.md:65, snapshots/cycle_01/chapters/chapter_01.md:97, snapshots/cycle_01/chapters/chapter_01.md:233, and snapshots/cycle_01/chapters/chapter_01.md:257, roughen Thea's sharpest lines so they still sound educated and dry but less finished. Favor contractions, quicker practical nouns, and one self-interruption or abrupt turn where scene pressure is highest; keep at most one line in the sequence as a clean joke.",
+      "acceptance_test": "PASS if at least three of the revised Thea lines at snapshots/cycle_01/chapters/chapter_01.md:65, snapshots/cycle_01/chapters/chapter_01.md:97, snapshots/cycle_01/chapters/chapter_01.md:233, and snapshots/cycle_01/chapters/chapter_01.md:257 sound like speech made while handling dust, injury, or exhaustion rather than quotable aphorisms in isolation. FAIL if those lines still read as finished literary one-liners detached from the immediate task."
+    },
+    {
+      "finding_id": "chapter_01_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:3; snapshots/cycle_01/chapters/chapter_01.md:69; snapshots/cycle_01/chapters/chapter_01.md:205; snapshots/cycle_01/chapters/chapter_01.md:297; snapshots/cycle_01/chapters/chapter_01.md:329",
+      "problem": "The chapter leans on the same `as if` comparison scaffold often enough to become audible as a habit. The images are good, but the repeated framing starts to feel like a default sentence machine instead of a series of freshly chosen perceptions.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_01.md:3, snapshots/cycle_01/chapters/chapter_01.md:69, snapshots/cycle_01/chapters/chapter_01.md:205, snapshots/cycle_01/chapters/chapter_01.md:297, and snapshots/cycle_01/chapters/chapter_01.md:329, recast most of the comparison beats into direct image, action, or free-indirect judgment so the prose does not keep pausing to explain itself through `as if`. Keep only the strongest instance where the scaffold adds surprise rather than repetition.",
+      "acceptance_test": "PASS if at least three of the five cited passages at snapshots/cycle_01/chapters/chapter_01.md:3, snapshots/cycle_01/chapters/chapter_01.md:69, snapshots/cycle_01/chapters/chapter_01.md:205, snapshots/cycle_01/chapters/chapter_01.md:297, and snapshots/cycle_01/chapters/chapter_01.md:329 no longer use `as if/as though` and still deliver a concrete image on first read. FAIL if the revised chapter preserves the same comparison scaffold in most of those named beats."
+    },
+    {
+      "finding_id": "chapter_01_craft_002",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:205; snapshots/cycle_01/chapters/chapter_01.md:295; snapshots/cycle_01/chapters/chapter_01.md:313",
+      "problem": "The narration uses clipped negation fragments to force emphasis: `Not defiant. Not even guilty at first.` `Not this room.` `Not a refusal. Not a scene.` The constitution explicitly bars elliptical clipping, and here the device reads as manufactured intensity rather than earned pressure.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_01.md:205, snapshots/cycle_01/chapters/chapter_01.md:295, and snapshots/cycle_01/chapters/chapter_01.md:313, rewrite the beats as grammatically complete sentences with explicit subjects and articles. Preserve the snap of the moment through rhythm, not through omitted syntax.",
+      "acceptance_test": "PASS if the revised passages at snapshots/cycle_01/chapters/chapter_01.md:205, snapshots/cycle_01/chapters/chapter_01.md:295, and snapshots/cycle_01/chapters/chapter_01.md:313 read as complete sentences and none of them depend on standalone `Not ...` fragments for force. FAIL if any of those named beats still rely on clipped negation fragments."
+    }
+  ],
+  "summary": "The chapter lands the Black Sunday set-piece, the Cora-Thea pressure, Dell's late return, and the first dust-memory without continuity contradiction, tense drift, or example-line reuse. It still fails craft, dialogue, and prose because it sanitizes profanity at high-pressure beats, lets parts of Thea's register harden into polished quips under strain, overuses the same `as if` comparison scaffold, and leans on clipped negation fragments the constitution forbids."
+}

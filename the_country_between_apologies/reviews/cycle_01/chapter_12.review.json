@@ -1,0 +1,59 @@
+{
+  "chapter_id": "chapter_12",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_12_f01",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:45; snapshots/cycle_01/chapters/chapter_12.md:69; snapshots/cycle_01/chapters/chapter_12.md:155",
+      "problem": "Core financial facts are restated in three consecutive blocks (voicemail, Eli recap, repayment draft) with limited new dramatic leverage, so the chapter stalls in information loop before the behavioral turn fully lands.",
+      "rewrite_direction": "Compress one of the recap blocks and convert that space into consequential action beats. Keep the full fact set in the voicemail at snapshots/cycle_01/chapters/chapter_12.md:45 and snapshots/cycle_01/chapters/chapter_12.md:53, trim Eli's desk recap at snapshots/cycle_01/chapters/chapter_12.md:69 and snapshots/cycle_01/chapters/chapter_12.md:75 to only what Marisol challenges, and let the plan block at snapshots/cycle_01/chapters/chapter_12.md:155 and snapshots/cycle_01/chapters/chapter_12.md:173 carry only decisions not already spoken verbatim.",
+      "acceptance_test": "PASS if a read-through anchored at snapshots/cycle_01/chapters/chapter_12.md:45, snapshots/cycle_01/chapters/chapter_12.md:69, and snapshots/cycle_01/chapters/chapter_12.md:155 shows each block introducing distinct function (facts, pressure response, decision) with no full repeated list of the same dates/amounts; FAIL if two blocks still present materially identical financial recitation."
+    },
+    {
+      "finding_id": "chapter_12_f02",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:119; snapshots/cycle_01/chapters/chapter_12.md:121",
+      "problem": "Timidity at a pressure point: narration steps back into abstract framing (\"There was no melodrama and no scene\") instead of rendering the immediate emotional/physical aftershock, which defuses tension right after Marisol's boundary push.",
+      "rewrite_direction": "Replace the abstract reassurance line at snapshots/cycle_01/chapters/chapter_12.md:121 with concrete in-room consequence tied to Eli's body and attention (breath, posture, tactile detail, failed response), while preserving Marisol's unsentimental boundary at snapshots/cycle_01/chapters/chapter_12.md:119.",
+      "acceptance_test": "PASS if revised text anchored at snapshots/cycle_01/chapters/chapter_12.md:119 and snapshots/cycle_01/chapters/chapter_12.md:121 shows the beat through at least two specific observable details in-scene and removes abstract de-escalation phrasing; FAIL if the passage still summarizes the moment as non-drama rather than depicting it."
+    },
+    {
+      "finding_id": "chapter_12_f03",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:87; snapshots/cycle_01/chapters/chapter_12.md:149; snapshots/cycle_01/chapters/chapter_12.md:255",
+      "problem": "Recurring negation-first sentence template (\"not because... but because...\" / \"not from...\") appears more than twice, becoming a visible prose tic that flattens cadence and makes emotional claims feel pre-argued.",
+      "rewrite_direction": "Recast the targeted lines at snapshots/cycle_01/chapters/chapter_12.md:87, snapshots/cycle_01/chapters/chapter_12.md:149, and snapshots/cycle_01/chapters/chapter_12.md:255 into varied affirmative constructions that state motive/consequence directly without prefacing through negation.",
+      "acceptance_test": "PASS if, in the revised versions of snapshots/cycle_01/chapters/chapter_12.md:87, snapshots/cycle_01/chapters/chapter_12.md:149, and snapshots/cycle_01/chapters/chapter_12.md:255, no more than one line still uses a negation-led correction pattern and each beat remains concrete; FAIL if two or more of those anchors keep the same negation-first architecture."
+    },
+    {
+      "finding_id": "chapter_12_f04",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:43; snapshots/cycle_01/chapters/chapter_12.md:53; snapshots/cycle_01/chapters/chapter_12.md:75; snapshots/cycle_01/chapters/chapter_12.md:153; snapshots/cycle_01/chapters/chapter_12.md:201",
+      "problem": "Mechanical lexical repetition around accountability tokens (\"numbers, dates, facts, receipts\") is over-literal and starts to read like style-profile checklist reuse instead of organic language variation.",
+      "rewrite_direction": "Keep the motif but diversify diction outside Nora's voicemail. Retain token-heavy phrasing in snapshots/cycle_01/chapters/chapter_12.md:43 and snapshots/cycle_01/chapters/chapter_12.md:53, then revise snapshots/cycle_01/chapters/chapter_12.md:75, snapshots/cycle_01/chapters/chapter_12.md:153, and snapshots/cycle_01/chapters/chapter_12.md:201 to express accountability through concrete actions/objects rather than repeating the same abstract nouns.",
+      "acceptance_test": "PASS if the revised chapter keeps Nora's lexicon at snapshots/cycle_01/chapters/chapter_12.md:43 and snapshots/cycle_01/chapters/chapter_12.md:53 but replaces at least two later token repeats at snapshots/cycle_01/chapters/chapter_12.md:75, snapshots/cycle_01/chapters/chapter_12.md:153, and snapshots/cycle_01/chapters/chapter_12.md:201 with fresh, scene-specific language while preserving meaning; FAIL if those later anchors still recycle the same token cluster verbatim."
+    }
+  ],
+  "summary": "Chapter 12 cleanly hits required boundary beats and stays continuity-safe (dates, objects, timeline) with canonical past tense and generally strong voice calibration, especially for Eli/Marisol/Nora. It fails this review pass on craft/prose rigor due an information-loop middle, one timidity deflation at a key pressure beat, and repeated prose/lexical constructions that become visible tics.",
+  "coverage_scene_ids": [
+    "voicemail_delivery",
+    "desk_pressure_exchange",
+    "bottle_disposal",
+    "repayment_sequence_draft",
+    "late_night_marisol_followup"
+  ]
+}

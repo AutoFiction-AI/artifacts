@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_16",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch16-award-01",
+      "source": "award",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_02/chapters/chapter_16.md:420; snapshots/cycle_02/chapters/chapter_16.md:428; snapshots/cycle_02/chapters/chapter_16.md:492",
+      "problem": "The final Ben/Nita confrontation stops trusting the chapter's embodied setup and restates the same thesis twice: first in Nita's translation list, then again in the dictated message. Because the groceries, room staging, and Leela scene have already demonstrated the machine's appetite to convert private life into copy, the late scene loses some ferocity by explaining what the reader already knows instead of discovering new pressure.",
+      "rewrite_direction": "Rework the escalation at snapshots/cycle_02/chapters/chapter_16.md:420, snapshots/cycle_02/chapters/chapter_16.md:428, and snapshots/cycle_02/chapters/chapter_16.md:492 so the scene keeps one explicit articulation of the system's logic and uses the remaining space for fresh pressure: a new financial consequence, a sharper interpersonal break, a physical action with the staged objects, or an immediate offsite response. Keep the argument concrete and present-tense in feeling rather than essaying the chapter's theme a second time.",
+      "acceptance_test": "PASS if the revised late-scene exchange still makes the stakes of translation legible but contains only one extended explanation of how the stacks will spin the family, and at least one new concrete beat after snapshots/cycle_02/chapters/chapter_16.md:428 materially changes the pressure in the room. FAIL if both the speech and the dictated message continue to perform the same explanatory work."
+    },
+    {
+      "finding_id": "ch16-craft-01",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_02/chapters/chapter_16.md:398",
+      "problem": "Ben's financial rundown gives Nita a current salary of \"one-thirty-eight,\" which matches her original signing salary, but the continuity sheet establishes that her Claude compensation was revised upward after chapter 8. This scene asks the reader to trust exact money math, so stale canon here reads as a hard continuity break rather than casual approximation.",
+      "rewrite_direction": "Revise the money beat at snapshots/cycle_02/chapters/chapter_16.md:398 so Ben names Nita's current post-retreat compensation, or explicitly distinguishes the $138k base from later raise/supplement income. Preserve the panicked cadence, but the number set has to reconcile with the continuity sheet's post-chapter-8 pay change.",
+      "acceptance_test": "PASS if the revised line no longer implies that Nita still earns exactly one-thirty-eight after chapter 8 and a reader can reconcile every number in Ben's list with context/cycle_02/continuity_sheet.json. FAIL if snapshots/cycle_02/chapters/chapter_16.md:398 still presents one-thirty-eight as Nita's full current compensation."
+    },
+    {
+      "finding_id": "ch16-prose-01",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_02/chapters/chapter_16.md:3; snapshots/cycle_02/chapters/chapter_16.md:130; snapshots/cycle_02/chapters/chapter_16.md:152; snapshots/cycle_02/chapters/chapter_16.md:190; snapshots/cycle_02/chapters/chapter_16.md:304; snapshots/cycle_02/chapters/chapter_16.md:364",
+      "problem": "The chapter leans repeatedly on the same \"as if\" comparison hinge across all three focalizers. Used this often in one chapter, the syntax starts to announce itself as a default move, flattening the sentence music and making disparate images arrive through the same mechanical wrapper.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_16.md:3, snapshots/cycle_02/chapters/chapter_16.md:130, snapshots/cycle_02/chapters/chapter_16.md:152, snapshots/cycle_02/chapters/chapter_16.md:190, snapshots/cycle_02/chapters/chapter_16.md:304, and snapshots/cycle_02/chapters/chapter_16.md:364, recast most of the comparisons into direct description, action, or a different comparative shape. Keep the imagery, but vary the sentence mechanics so Nita, Leela, and Ben do not all reach for the same hinge.",
+      "acceptance_test": "PASS if at least four of the cited comparison beats no longer use the phrase \"as if\" and each revised line lands its image through a distinct sentence shape. FAIL if three or more of the cited beats still rely on the same \"as if\" construction."
+    },
+    {
+      "finding_id": "ch16-prose-02",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_02/chapters/chapter_16.md:72; snapshots/cycle_02/chapters/chapter_16.md:214; snapshots/cycle_02/chapters/chapter_16.md:296; snapshots/cycle_02/chapters/chapter_16.md:400",
+      "problem": "Across Nita, Leela, and Ben sections, the narration repeatedly falls back on explanatory after-sentences built around \"That was...\" or the same demonstrative gloss. The result is a small but noticeable focalization blur: after concrete beats land, the narrator steps in to explain their significance in nearly identical syntax instead of letting each POV own the reaction in its own logic.",
+      "rewrite_direction": "Rework the explanatory follow-through at snapshots/cycle_02/chapters/chapter_16.md:72, snapshots/cycle_02/chapters/chapter_16.md:214, snapshots/cycle_02/chapters/chapter_16.md:296, and snapshots/cycle_02/chapters/chapter_16.md:400. Replace most of those glosses with focalizer-specific sensation, memory, object logic, or behavior so the scene stays in close third rather than stepping into a reusable narrator summary.",
+      "acceptance_test": "PASS if no more than one of the cited explanatory \"That was...\" beats remains and the revised passages register reaction through Nita-specific contempt, Leela's object logic, or Ben's smoothing/shame habits rather than generic narrator commentary. FAIL if the chapter still uses the same explanatory template in three or more of the cited spots."
+    }
+  ],
+  "summary": "Strong domestic-invasion material and a very solid dialogue pass: Nita, Ben, Leela, Saskia, and Mina remain distinct, contractions track character/register, no example lines appear copied, and the chapter stays committed to embodied specificity rather than sanitizing the coercion. It still fails overall because a canon-level pay figure is wrong at the exact moment the chapter asks us to trust exact numbers, the last scene overstates a thesis the earlier scenes have already dramatized, and the prose shows recurring sentence templates that blur texture across focalizers."
+}

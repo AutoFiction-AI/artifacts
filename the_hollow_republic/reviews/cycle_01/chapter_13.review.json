@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_13",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch13-craft-001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:5; snapshots/cycle_01/chapters/chapter_13.md:229; snapshots/cycle_01/chapters/chapter_13.md:319; snapshots/cycle_01/chapters/chapter_13.md:325",
+      "problem": "Lucien's carryover fruit changes into apricots in this chapter even though the boundary context's `prev_tail_excerpt` hands off cherries from chapter 12. Because the parcel is a tracked object and emotional carryover beat, this is a canonical continuity contradiction, not a cosmetic synonym.",
+      "rewrite_direction": "Revise the fruit references at snapshots/cycle_01/chapters/chapter_13.md:5, snapshots/cycle_01/chapters/chapter_13.md:229, snapshots/cycle_01/chapters/chapter_13.md:319, and snapshots/cycle_01/chapters/chapter_13.md:325 so the parcel matches the established cherries throughout, or else add a clear on-page causal explanation before the cellar descent that explicitly converts the carryover object from cherries to something else. Keep the parcel as Lucien's embodied care-object while removing the canon mismatch.",
+      "acceptance_test": "PASS if a reader can trace the same fruit object consistently across snapshots/cycle_01/chapters/chapter_13.md:5, snapshots/cycle_01/chapters/chapter_13.md:229, snapshots/cycle_01/chapters/chapter_13.md:319, and snapshots/cycle_01/chapters/chapter_13.md:325, and that object matches the boundary pack's chapter-12 carryover; FAIL if any cited line still names apricots without an explicit causal explanation or leaves the parcel's identity ambiguous."
+    },
+    {
+      "finding_id": "ch13-prose-001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:21; snapshots/cycle_01/chapters/chapter_13.md:119; snapshots/cycle_01/chapters/chapter_13.md:147; snapshots/cycle_01/chapters/chapter_13.md:163; snapshots/cycle_01/chapters/chapter_13.md:203",
+      "problem": "The chapter reuses the same corrective-negation construction across major beats (`not X but Y` / `not away but in`) often enough that it becomes a prose tic. The repetition starts to flatten the confrontation's rhythm by delivering several separate turns through the same sentence mechanism instead of letting each beat earn its own shape.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_13.md:21, snapshots/cycle_01/chapters/chapter_13.md:119, snapshots/cycle_01/chapters/chapter_13.md:147, snapshots/cycle_01/chapters/chapter_13.md:163, and snapshots/cycle_01/chapters/chapter_13.md:203, replace at least four of the corrective-negation turns with direct observation, character-specific diction, or a different sentence rhythm. Keep the meanings intact, but stop relying on the same `not X but Y` pivot to deliver escalation.",
+      "acceptance_test": "PASS if, across snapshots/cycle_01/chapters/chapter_13.md:21, snapshots/cycle_01/chapters/chapter_13.md:119, snapshots/cycle_01/chapters/chapter_13.md:147, snapshots/cycle_01/chapters/chapter_13.md:163, and snapshots/cycle_01/chapters/chapter_13.md:203, no more than one beat still uses the same corrective-negation syntax and each revised beat lands through a distinct image or phrasing choice; FAIL if three or more cited beats still depend on the same negation-then-correction move."
+    }
+  ],
+  "summary": "The chapter lands the intended intimate climax: the tollhouse confrontation stays spatially precise, Ferrand's usable-atrocity logic is clear, Abel dies stripped of legend, and the blast aftermath is bodily and unsanitized. Booker and dialogue pass on causality, consequence, and voice distinction. Craft fails on a direct carryover continuity break with Lucien's fruit parcel, and prose fails on a repeated corrective-negation sentence pattern that becomes a chapter-level tic."
+}

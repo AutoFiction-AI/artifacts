@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_03",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch03_craft_001",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:111 (Paloma asks what Marisol is carrying); snapshots/cycle_02/chapters/chapter_03.md:117 (Paloma pushes again); snapshots/cycle_02/chapters/chapter_03.md:185 (Ivo asks whether it is just paperwork); snapshots/cycle_02/chapters/chapter_03.md:197 (he exits after offering cover); snapshots/cycle_02/chapters/chapter_03.md:209 (Marisol leaves the cafeteria with no sharper cost attached to either coworker).",
+      "problem": "Once Paloma and Ivo register that Marisol is wrong-footed, the meal scene keeps producing excellent worker texture but too little leverage change. Marisol lies, both friends notice, and the scene still releases them without a new concrete suspicion, consequence, or forced choice. At this review standard, that reads as atmospheric drift inside a chapter whose engine is supposed to be appearing normal among friends while the possibility of quiet correction dies.",
+      "rewrite_direction": "Rework snapshots/cycle_02/chapters/chapter_03.md:111, snapshots/cycle_02/chapters/chapter_03.md:117, snapshots/cycle_02/chapters/chapter_03.md:185, and snapshots/cycle_02/chapters/chapter_03.md:197 so the concealment escalates instead of plateauing. Keep the off-duty meal and the worker-specific humor, but convert part of the banter stretch around snapshots/cycle_02/chapters/chapter_03.md:137 and snapshots/cycle_02/chapters/chapter_03.md:147 into pressure that changes what Paloma or Ivo now suspects, or forces Marisol to leave early / act differently because the lie is no longer holding cleanly.",
+      "acceptance_test": "Pass if, between snapshots/cycle_02/chapters/chapter_03.md:111 and snapshots/cycle_02/chapters/chapter_03.md:209, at least one exchange after Paloma's first challenge materially changes another character's practical suspicion or imposes an immediate new action on Marisol before she leaves the table. Fail if the scene still ends with Paloma and Ivo in the same operative position they occupied when Paloma first asked what she was carrying."
+    },
+    {
+      "finding_id": "ch03_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:3 (double-because motive sentence); snapshots/cycle_02/chapters/chapter_03.md:5 (self-correcting negation: habit, not paranoia, not only habit); snapshots/cycle_02/chapters/chapter_03.md:69 (double-because motive sentence); snapshots/cycle_02/chapters/chapter_03.md:135 (double-because motive sentence); snapshots/cycle_02/chapters/chapter_03.md:211 (double-because motive sentence); snapshots/cycle_02/chapters/chapter_03.md:255 (not defiance / not sympathy); snapshots/cycle_02/chapters/chapter_03.md:283 (not hope exactly); snapshots/cycle_02/chapters/chapter_03.md:285 (nothing dramatic / just the little household matter).",
+      "problem": "The chapter reuses the same explanatory qualification machinery at too many major beats: doubled causal clauses (\"because X and because Y\") and self-correcting negation (\"not X ... not Y ... just Z\"). Each instance works locally, but together they make Marisol's close-third intelligence feel patterned rather than freshly pressured, flattening rhythm exactly where the chapter wants surprise and force.",
+      "rewrite_direction": "Revise the sentence architecture in place at snapshots/cycle_02/chapters/chapter_03.md:3, snapshots/cycle_02/chapters/chapter_03.md:5, snapshots/cycle_02/chapters/chapter_03.md:69, snapshots/cycle_02/chapters/chapter_03.md:135, snapshots/cycle_02/chapters/chapter_03.md:211, snapshots/cycle_02/chapters/chapter_03.md:255, snapshots/cycle_02/chapters/chapter_03.md:283, and snapshots/cycle_02/chapters/chapter_03.md:285. Keep Marisol's analytic cast of mind, but vary how motive and correction reach the page: let some beats resolve through action or sensory image, and let at least two of the cited negation ladders land as blunt positive statements instead of qualifying themselves into place.",
+      "acceptance_test": "Pass if the revised versions of the cited paragraphs reduce the repeated `because X and because Y` / `not X ... not Y ... just Z` pattern to no more than one instance across those targeted beats, while each paragraph still makes Marisol's motive legible on first read. Fail if multiple key beats still rely on the same qualifier-heavy sentence shape."
+    }
+  ],
+  "summary": "The chapter lands its planned state shift, keeps the close-third lens anchored to Marisol, and gives Paloma and Ivo distinct, lived-in voices and private concerns. It still falls short of pass level on this review because the meal scene's suspicion thread stalls before the call/property pivot, and the prose leans too often on repeated explanatory qualification formulas at major beats."
+}

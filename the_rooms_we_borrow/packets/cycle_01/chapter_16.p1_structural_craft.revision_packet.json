@@ -1,0 +1,69 @@
+{
+  "acceptance_targets": [
+    "[FBR-009] Pass if neither cited line uses the suppression template and the chapter's forward motion speeds up rather than stalls for withheld-speech signaling. Fail if one or both beats still hinge on \"almost said\" / redirected speech."
+  ],
+  "chapter_id": "chapter_16",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if neither cited line uses the suppression template and the chapter's forward motion speeds up rather than stalls for withheld-speech signaling. Fail if one or both beats still hinge on \"almost said\" / redirected speech.",
+      "chapter_id": "chapter_16",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:7177",
+      "finding_id": "FBR-009",
+      "problem": "Chapter 16 repeats the same 7-chapter suppression-template pattern twice (7177 and 7227) right when flood triage and shelter intake should feel most reactive. The duplicated maneuver drains urgency from the most physical chapter in the book.",
+      "rewrite_direction": "Rewrite snapshots/cycle_01/FINAL_NOVEL.md:7177 and snapshots/cycle_01/FINAL_NOVEL.md:7227 so Marcia's swallowed reactions register through flood labor, bureaucratic category language, or the public shame of intake rather than repeated \"almost said\" beats. These moments need pressure, not another pause for the same prose trick.",
+      "severity": "MEDIUM",
+      "source": "booker_global",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "9287eea909a105b9470fdc6da4e20eed13cee5dbbcac60f4d002e2e10e443a45",
+  "must_fix_count": 1,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into embarrassment, erotic consequence, moral compromise, and the ugly arithmetic of poverty. When a scene turns on prejudice, bureaucracy, violence, or family betrayal, stay with the room long enough for the reader to feel what each choice costs. Resolve edge cases by choosing the more specific and less flattering truth unless it breaks established character logic.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If sex, racism, injury, debt, hunger, or shame is rendered abstractly, rewrite until the bodily detail, social pressure, and changed leverage are visible on the page.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high \u2014 contractions are the spoken norm across the novel; uncontracted forms should appear only for emphasis, ceremony, legal language, or character-specific pressure.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Vary scene count, dialogue density, and chapter motor across the book: pair public humiliation with private aftermath, follow argument chapters with information-turn or weather chapters, preserve at least three genuinely quiet domestic or communal stretches, and never let more than three chapters in a row hinge on debate followed by decisive action.",
+      "diction": "Contemporary and concrete, with Caribbean-American texture carried naturally in syntax and reference rather than in italicized glossary behavior; lyrical when earned, blunt when the room turns brutal.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third person that rotates by chapter; intimate enough for bodily shame and private contradiction, but alert to class performance, racial reading, and room dynamics.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Alternate lean pressure sentences with occasional longer image-bearing sentences; lyric lift should arrive at emotional turns, never as constant prestige haze.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

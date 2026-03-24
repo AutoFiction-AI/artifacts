@@ -1,0 +1,27 @@
+{
+  "chapter_id": "chapter_01",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_01_craft_001",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_02/chapters/chapter_01.md:147; snapshots/cycle_02/chapters/chapter_01.md:195; snapshots/cycle_02/chapters/chapter_01.md:201; snapshots/cycle_02/chapters/chapter_01.md:233; snapshots/cycle_02/chapters/chapter_01.md:235; snapshots/cycle_02/chapters/chapter_01.md:331; snapshots/cycle_02/chapters/chapter_01.md:337",
+      "problem": "The narration repeatedly leans on clipped emphasis fragments and, in the ledger section, repeats the same `Not because ... Because ...` contrast shape. By the back third this reads as a prose tic rather than pressure-driven variation, and the standalone subordinate-clause fragments violate the constitution's ban on elliptical clipping in narration.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_01.md:147, snapshots/cycle_02/chapters/chapter_01.md:195, snapshots/cycle_02/chapters/chapter_01.md:201, snapshots/cycle_02/chapters/chapter_01.md:233, snapshots/cycle_02/chapters/chapter_01.md:235, snapshots/cycle_02/chapters/chapter_01.md:331, and snapshots/cycle_02/chapters/chapter_01.md:337, recast the emphasis into grammatically complete sentences with explicit subjects and verbs. Keep Halima's dry, cutting cadence, but vary the sentence architecture so the late-turning ledger material does not reuse the same `Not because ... Because ...` template twice in quick succession.",
+      "acceptance_test": "Pass if the revised prose at snapshots/cycle_02/chapters/chapter_01.md:147, snapshots/cycle_02/chapters/chapter_01.md:195, snapshots/cycle_02/chapters/chapter_01.md:201, snapshots/cycle_02/chapters/chapter_01.md:233-235, snapshots/cycle_02/chapters/chapter_01.md:331, and snapshots/cycle_02/chapters/chapter_01.md:337 carries the same emotional turns with complete sentences rather than standalone `Not because ...`, `Because ...`, or `Or perhaps ...` fragments. Fail if any of those fragment formulas remain in narration or if two late-ledger paragraphs still hinge on the same `Not because ... Because ...` construction."
+    }
+  ],
+  "summary": "The chapter lands its planned spine cleanly: the birth scene, the verified-household order, Aminul's recruitment of Halima, and the ledger retrieval all arrive with strong causal consequence and specific bodily and bureaucratic pressure. Halima, Nura, Aminul, and Mofiz all stay consistent with the style bible, dialogue remains distinct and natural under pressure, continuity details align with the sheet, and the narration stays in canonical past tense. The unresolved failure is sentence-level craft: the chapter overuses clipped fragment emphasis, especially the repeated `Not because ... Because ...` pattern late in the chapter, and that both violates the constitution and flattens the prose into a noticeable tic.",
+  "coverage_scene_ids": [
+    "birth_hut_launch_order",
+    "schoolyard_verification_notice",
+    "home_ledger_reveal"
+  ]
+}

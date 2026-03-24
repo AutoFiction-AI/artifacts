@@ -1,0 +1,82 @@
+{
+  "acceptance_targets": [
+    "[ch13-f002] PASS if, in the revised spans around snapshots/cycle_01/chapters/chapter_13.md:115, snapshots/cycle_01/chapters/chapter_13.md:127, and snapshots/cycle_01/chapters/chapter_13.md:230, no single starter formula (e.g., \"Out went\", \"In came\", \"She replaced\") appears more than twice and adjacent sentences show visibly different syntactic shapes; FAIL if any one formula still appears three or more times.",
+    "[ch13-f003] PASS if the revised section between snapshots/cycle_01/chapters/chapter_13.md:17 and snapshots/cycle_01/chapters/chapter_13.md:234 keeps exact timestamps for causally binding events while replacing at least two nonessential clock stamps with sensory/action transitions that still preserve chronology; FAIL if timestamp-driven transitions remain the dominant connective tissue."
+  ],
+  "chapter_id": "chapter_13",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if, in the revised spans around snapshots/cycle_01/chapters/chapter_13.md:115, snapshots/cycle_01/chapters/chapter_13.md:127, and snapshots/cycle_01/chapters/chapter_13.md:230, no single starter formula (e.g., \"Out went\", \"In came\", \"She replaced\") appears more than twice and adjacent sentences show visibly different syntactic shapes; FAIL if any one formula still appears three or more times.",
+      "chapter_id": "chapter_13",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:115; snapshots/cycle_01/chapters/chapter_13.md:117; snapshots/cycle_01/chapters/chapter_13.md:119; snapshots/cycle_01/chapters/chapter_13.md:121; snapshots/cycle_01/chapters/chapter_13.md:123; snapshots/cycle_01/chapters/chapter_13.md:125; snapshots/cycle_01/chapters/chapter_13.md:127; snapshots/cycle_01/chapters/chapter_13.md:230",
+      "finding_id": "ch13-f002",
+      "problem": "Recurring prose constructions exceed the chapter's tolerance for formula: \"Out went...\" appears three times, \"In came...\" appears four times, and \"She replaced...\" recurs in the closing pass. The repetition reads as compositional scaffolding left on the page rather than intentional cadence.",
+      "rewrite_direction": "Rework the sequence anchored at snapshots/cycle_01/chapters/chapter_13.md:115 through snapshots/cycle_01/chapters/chapter_13.md:127, plus the closing pass at snapshots/cycle_01/chapters/chapter_13.md:230, by varying sentence openings and integrating at least one continuous paragraph where deletion/addition/replacement moves causally instead of via list-template repetition.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if the revised section between snapshots/cycle_01/chapters/chapter_13.md:17 and snapshots/cycle_01/chapters/chapter_13.md:234 keeps exact timestamps for causally binding events while replacing at least two nonessential clock stamps with sensory/action transitions that still preserve chronology; FAIL if timestamp-driven transitions remain the dominant connective tissue.",
+      "chapter_id": "chapter_13",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:17; snapshots/cycle_01/chapters/chapter_13.md:141; snapshots/cycle_01/chapters/chapter_13.md:151; snapshots/cycle_01/chapters/chapter_13.md:206; snapshots/cycle_01/chapters/chapter_13.md:222; snapshots/cycle_01/chapters/chapter_13.md:228; snapshots/cycle_01/chapters/chapter_13.md:230; snapshots/cycle_01/chapters/chapter_13.md:234",
+      "finding_id": "ch13-f003",
+      "problem": "The chapter over-literalizes Marisol's stress tell (timeline specificity) into repeated timestamp beats, producing ledger rhythm and flattening prose variance. This reads like mechanical reuse of style-bible pressure markers rather than organic escalation.",
+      "rewrite_direction": "Across snapshots/cycle_01/chapters/chapter_13.md:17 through snapshots/cycle_01/chapters/chapter_13.md:234, retain exact clock times only where they change tactical outcome (e.g., interview slot and send/reply sequence), and convert other time markers into embodied transitions (light shift, bodily fatigue, environmental change, or task consequence).",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "fb872adabcdeb3e84c08ca8f9299a76689e9edf7cb80c13193bab28b74eb1293",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on prose and copyedit finish: diction precision, rhythm control, sentence-level clarity, grammar, line-level polish without flattening style, and explicit aesthetic-risk audit (sanitization is the primary risk \u2014 do not soften or euphemize; push toward creative risk and specificity).",
+    "key": "p3_prose_copyedit",
+    "label": "prose/copyedit fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "When choosing between reputationally safe abstraction and specific discomfort, choose specificity. Render addiction, sexuality, deceit, class shame, and grief at lived scale. In edge cases, preserve character truth and causal accountability over reader comfort or institutional decorum.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene demands bodily, moral, or economic specificity, euphemistic phrasing is treated as a failed draft and must be rewritten with concrete stakes and observable consequence.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the spoken default; full forms appear only for emphasis, ritual language, or character-specific formal posture",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate scene density and pressure modes: pair high-conflict chapters with quiet domestic or documentary chapters, vary dialogue-to-interiority ratios, and prevent identical chapter skeletons in consecutive sequence.",
+      "diction": "contemporary literary diction with class-aware, borough-specific concreteness; avoid prestige-neutral workshop language",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third centered on Marisol, with rare brief distance expansions for institutional scenes",
+      "narrative_tense": "past tense",
+      "rhythm_target": "alternating tensile compression and reflective extension; line-level cadence should carry emotional pressure, not just information",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

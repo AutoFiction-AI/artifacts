@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_10",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH10_DIALOGUE_001",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:77",
+      "problem": "Caul's central accusation reuses calibration-only style-bible phrasing almost verbatim, especially the sequence about a \"class-certified sin-eater, registered, verified.\" Because the borrowed wording sits inside the chapter's defining emotional reveal, it damages voice integrity on first read and makes the scene sound assembled from reference material instead of spoken by Caul.",
+      "rewrite_direction": "Rewrite Caul's explanation at snapshots/cycle_01/chapters/chapter_10.md:73-82 so the same facts remain on the page (the site was logged as clear, Haley trusted the record, the dungeon should have been safe) but the sentence order, phrasing, and rhythm are newly invented for this scene. Remove the borrowed formulation at snapshots/cycle_01/chapters/chapter_10.md:77 and let Caul's own ranger-report cadence carry the beat without echoing calibration text.",
+      "acceptance_test": "Pass if the revised passage at snapshots/cycle_01/chapters/chapter_10.md:73-82 still communicates that certification records said the area was clear and Haley relied on them, but no line repeats or near-repeats the calibration phrase \"class-certified sin-eater, registered, verified\" or its surrounding sentence structure. Fail if a cold read can still hear the style-bible example line in Caul's speech."
+    },
+    {
+      "finding_id": "CH10_CRAFT_001",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:103; snapshots/cycle_01/chapters/chapter_10.md:121; snapshots/cycle_01/chapters/chapter_10.md:191; snapshots/cycle_01/chapters/chapter_10.md:237",
+      "problem": "The chapter lands its moral payload cleanly twice, then keeps translating and replaying the same realization instead of moving to a new consequence. Caul's bird-journal beat already makes the loss specific, and Derry's \"Pell was living in it\" already makes the local cost irreversible; after that, the narration paraphrases the chapter's meaning and the stream exchange restages daughter-plus-contamination logic without adding a new fact, choice, or operational change.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_10.md:103-121 and snapshots/cycle_01/chapters/chapter_10.md:187-247, trust the bird-journal reveal and the \"Pell was living in it\" beat as arrivals. Compress the abstract paraphrase that follows those arrivals, and either cut the stream re-argument at snapshots/cycle_01/chapters/chapter_10.md:233-247 or replace it with a new consequence that changes the travel dynamic beyond restating guilt, such as Derry withholding practical cooperation, naming a next-step decision, or otherwise altering what the two men will do from here.",
+      "acceptance_test": "Pass if, after the revised equivalents of snapshots/cycle_01/chapters/chapter_10.md:103-107 and snapshots/cycle_01/chapters/chapter_10.md:191-193, the next beat creates new pressure rather than re-explaining the same moral point, and the ending still preserves the must-land beats of Caul's loss, Derry's trust erosion, and Derry walking ahead. Fail if the chapter again explains that Pell/Fenhold were living in contamination without adding a new fact, decision, or cost."
+    },
+    {
+      "finding_id": "CH10_PROSE_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:59; snapshots/cycle_01/chapters/chapter_10.md:153; snapshots/cycle_01/chapters/chapter_10.md:197; snapshots/cycle_01/chapters/chapter_10.md:219; snapshots/cycle_01/chapters/chapter_10.md:229; snapshots/cycle_01/chapters/chapter_10.md:247",
+      "problem": "The chapter leans repeatedly on the same explanatory psychology scaffold: \"the [abstract noun] of a man/woman/someone who...\" Because that construction recurs across Caul, Derry, Aldric, Vess, and the closing distance beat, it starts to read as authorial autopilot rather than fresh close-third perception.",
+      "rewrite_direction": "Revise the delivery sentences at snapshots/cycle_01/chapters/chapter_10.md:59, snapshots/cycle_01/chapters/chapter_10.md:153, snapshots/cycle_01/chapters/chapter_10.md:197, snapshots/cycle_01/chapters/chapter_10.md:219, snapshots/cycle_01/chapters/chapter_10.md:229, and snapshots/cycle_01/chapters/chapter_10.md:247 so most of those emotional reads are rendered through distinct concrete evidence, syntax, or sensory detail rather than the same abstract-noun scaffold. Keep at most one version of that construction in the chapter.",
+      "acceptance_test": "Pass if the revised chapter uses the \"the [abstract noun] of a man/woman/someone who...\" scaffold no more than once across the cited beats, and each remaining beat makes the state legible through materially different language such as gesture, object handling, silence, pacing, or distance. Fail if a cold read still encounters the same psychology template across multiple cited lines."
+    }
+  ],
+  "summary": "FAIL across all four lenses. The chapter has real force in Caul's grief and Derry's trust erosion, and it stays continuous with the provided timeline and past-tense requirement, but a copied calibration line compromises dialogue integrity, the aftermath keeps certifying a turn that already landed, and a repeated explanatory sentence template flattens the prose."
+}

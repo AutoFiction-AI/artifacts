@@ -1,0 +1,69 @@
+{
+  "acceptance_targets": [
+    "[chapter_16_f005] PASS if revised Lenore and Randi lines each include concrete, situational intent tied to what they are doing in-scene and their sentence rhythm/word choice are clearly distinct from each other; FAIL if both still deliver generalized life-maxim statements."
+  ],
+  "chapter_id": "chapter_16",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if revised Lenore and Randi lines each include concrete, situational intent tied to what they are doing in-scene and their sentence rhythm/word choice are clearly distinct from each other; FAIL if both still deliver generalized life-maxim statements.",
+      "chapter_id": "chapter_16",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_16.md:31; snapshots/cycle_01/chapters/chapter_16.md:123; snapshots/cycle_01/chapters/chapter_16.md:263",
+      "finding_id": "chapter_16_f005",
+      "problem": "Secondary-character dialogue drifts into thematic aphorism, making Lenore and Randi sound partially authorial and reducing register separation under scene pressure.",
+      "rewrite_direction": "Adjust the side-character lines in snapshots/cycle_01/chapters/chapter_16.md:29-33 and snapshots/cycle_01/chapters/chapter_16.md:119-124 plus snapshots/cycle_01/chapters/chapter_16.md:263 so each line is anchored to immediate practical motive/job context rather than chapter-theme commentary.",
+      "severity": "MEDIUM",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "833851f621bb9fad9fcbe51a8f7cac0cd6123d1993fe81134f938b425328deeb",
+  "must_fix_count": 1,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on dialogue realism and voice separation: idiolect fidelity, leverage shifts, pressure cadence, anti-transcript behavior, natural colloquial texture (contractions/interruptions/slang when character-true), and pressure-true profanity usage per aesthetic risk policy.",
+    "key": "p2_dialogue_idiolect_cadence",
+    "label": "dialogue/idiolect/cadence fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into morally mixed behavior, bodily consequence, and economic detail when they are causally active. In edge cases, choose the more concrete and uncomfortable rendering unless it violates factual continuity; if two renderings are equally plausible, prefer the one that increases character accountability rather than reader reassurance.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene contains pain, sex, addiction, debt panic, or humiliation, abstract phrasing is treated as a failed draft and must be rewritten with embodied specificity.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the spoken default; uncontracted forms are reserved for emphasis, legal precision, or deliberate emotional distance.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate chapter architectures across the book: confrontation chapters, document-information turns, labor-process chapters, transit interiority chapters, and quiet relational chapters. Consecutive chapters must differ in scene density or dialogue-to-interiority ratio.",
+      "diction": "Contemporary American literary realism: precise, unsentimental, image-aware, and concrete under stress.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third-person anchored to Eli, with no unmarked POV drift.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Braided cadence: reflective medium-length sentences interrupted by blunt short lines at impact moments.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

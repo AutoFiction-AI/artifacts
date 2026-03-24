@@ -1,0 +1,95 @@
+{
+  "acceptance_targets": [
+    "[CH8-BOOKER-001] PASS if revised lines 349-353 contain a concrete new state change caused by Tom's return (e.g., threat, search, demand, evidence handling) that did not exist before line 349; FAIL if the ending remains summary of intent/prep only.",
+    "[CH8-CRAFT-001] PASS if revised ending includes at least three concrete, scene-level details tied to conflict (what Tom does/says, what Elsie does physically, what object/evidence is at risk); FAIL if climax remains metaphor-only summary.",
+    "[CH8-CRAFT-002] PASS if revised lines 325-337 include at least one explicit named risk (not generic 'bad') plus one concrete action tied to that risk; FAIL if threat remains only implied/vague."
+  ],
+  "chapter_id": "chapter_08",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if revised lines 349-353 contain a concrete new state change caused by Tom's return (e.g., threat, search, demand, evidence handling) that did not exist before line 349; FAIL if the ending remains summary of intent/prep only.",
+      "chapter_id": "chapter_08",
+      "cycle": 1,
+      "evidence": "The chapter sets up imminent consequence but withholds enacted fallout: 'If it goes bad tonight...' at snapshots/cycle_01/chapters/chapter_08.md:333 and then cuts to summary at snapshots/cycle_01/chapters/chapter_08.md:349.",
+      "finding_id": "CH8-BOOKER-001",
+      "problem": "Causal payoff is deferred at the highest-pressure beat: Tom's arrival is reported, not dramatized, so the chapter ends in preparation rather than consequence.",
+      "rewrite_direction": "Revise the ending block starting at snapshots/cycle_01/chapters/chapter_08.md:349 through snapshots/cycle_01/chapters/chapter_08.md:353 to include at least one on-page interaction or immediate external trigger tied to Tom's return that materially changes Elsie's options before chapter close.",
+      "severity": "MEDIUM",
+      "source": "booker",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if revised ending includes at least three concrete, scene-level details tied to conflict (what Tom does/says, what Elsie does physically, what object/evidence is at risk); FAIL if climax remains metaphor-only summary.",
+      "chapter_id": "chapter_08",
+      "cycle": 1,
+      "evidence": "Sanitizing summary replaces scene at the moment of maximum domestic/legal risk: snapshots/cycle_01/chapters/chapter_08.md:349, snapshots/cycle_01/chapters/chapter_08.md:351, and snapshots/cycle_01/chapters/chapter_08.md:353 ('By the time Tom came home...' followed by abstract 'map' framing).",
+      "finding_id": "CH8-CRAFT-001",
+      "problem": "Sanitization drift: the prose retreats into abstraction and summary exactly where embodied consequence should be rendered, defusing tension instead of cashing it.",
+      "rewrite_direction": "Replace the abstract close at snapshots/cycle_01/chapters/chapter_08.md:349, snapshots/cycle_01/chapters/chapter_08.md:351, and snapshots/cycle_01/chapters/chapter_08.md:353 with a concrete beat in kitchen space (speech, movement, object interaction, bodily response) that makes the debt threat physically and socially present.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if revised lines 325-337 include at least one explicit named risk (not generic 'bad') plus one concrete action tied to that risk; FAIL if threat remains only implied/vague.",
+      "chapter_id": "chapter_08",
+      "cycle": 1,
+      "evidence": "Risk language is euphemized in a pressure moment: snapshots/cycle_01/chapters/chapter_08.md:333 ('If it goes bad tonight...').",
+      "finding_id": "CH8-CRAFT-002",
+      "problem": "Timidity: the scene gestures toward danger but avoids naming the specific consequences (legal exposure, collector pressure, domestic retaliation), softening urgency.",
+      "rewrite_direction": "In the warning exchange at snapshots/cycle_01/chapters/chapter_08.md:325 through snapshots/cycle_01/chapters/chapter_08.md:337, replace at least one euphemistic line with explicit consequence naming and a matching contingency action in-character.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "7ba627732299109d4f91a69d116c1b4a1a77be026b97a589c957fbdc6592f16a",
+  "must_fix_count": 3,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "When edge cases arise, choose the more specific and potentially uncomfortable rendering if it is character-true and causally necessary. Intimacy, bodily risk, and moral compromise must be shown with concrete detail and aftermath, then integrated into later behavior rather than quarantined as a one-scene shock.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a draft abstracts pain, sex, coercion, blood, or economic shame at the exact moment consequence should be embodied, revise by replacing summary with physically and socially specific action tied to POV stakes.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High by default for spoken lines; uncontracted forms are marked choices for period formality, emphasis, or character-specific control behavior.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate structural engines across adjacent chapters: ensemble social scenes, inventory chapters, information-turn chapters, acted-upon pressure chapters, and aftermath chapters. Vary scene count (2 to 4), dialogue density, and interiority depth so consecutive chapters do not share the same pacing signature.",
+      "diction": "Period-authentic but readable contemporary English, favoring concrete nouns and precise verbs over lyrical abstraction.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person, alternating primarily between Elsie and Noreen, with occasional tightly limited deviations only when causal clarity requires it.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Sentence rhythm should alternate compressed pressure bursts with longer observational lines that carry social texture; avoid monotone paragraph cadence.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

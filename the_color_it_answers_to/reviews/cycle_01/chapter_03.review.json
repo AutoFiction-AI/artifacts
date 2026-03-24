@@ -1,0 +1,48 @@
+{
+  "chapter_id": "chapter_03",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH03-BOOKER-01",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:243; snapshots/cycle_01/chapters/chapter_03.md:271; snapshots/cycle_01/chapters/chapter_03.md:399; snapshots/cycle_01/chapters/chapter_03.md:403",
+      "problem": "The chapter's central bargain is too predetermined. Damaris is framed as a warning and a weak side-income, while Gideon's sixty-crown advance maps directly onto the debts already established, so the climax reads less like a live hard choice than like the only administratively possible answer.",
+      "rewrite_direction": "Rework the counteroffer and choice architecture around snapshots/cycle_01/chapters/chapter_03.md:243 and snapshots/cycle_01/chapters/chapter_03.md:271 so Damaris represents a credible competing path, or complicate Gideon's offer around snapshots/cycle_01/chapters/chapter_03.md:399 and snapshots/cycle_01/chapters/chapter_03.md:403 with an immediate in-room cost that makes the signature turn on more than the larger number. The chapter needs a genuinely contested bargain, not a foregone better-funded one.",
+      "acceptance_test": "Reading the revised Damaris and Gideon sequences, a reasonable reader can articulate two plausible paths Silas could take in the moment before he signs. Pass only if Damaris's path can credibly relieve at least one urgent pressure already named in the Junie scene, and Silas's final signature depends on a fresh leverage shift or value tradeoff visible in the room rather than the money simply being the only workable option."
+    },
+    {
+      "finding_id": "CH03-CRAFT-01",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:221; snapshots/cycle_01/chapters/chapter_03.md:229; snapshots/cycle_01/chapters/chapter_03.md:337; snapshots/cycle_01/chapters/chapter_03.md:349; snapshots/cycle_01/chapters/chapter_03.md:489",
+      "problem": "The back half repeats the same scene mechanic twice in a row: a verbally sharp visitor sits across from Silas in Junie's kitchen, pitches a version of the moss's future, and exits. Because Damaris and Gideon arrive in such similar table-talk geometry, the chapter's energy plateaus just when it should tighten.",
+      "rewrite_direction": "Differentiate one of the proposition scenes around snapshots/cycle_01/chapters/chapter_03.md:221 and snapshots/cycle_01/chapters/chapter_03.md:229 or around snapshots/cycle_01/chapters/chapter_03.md:337 and snapshots/cycle_01/chapters/chapter_03.md:349 by changing the physical business and leverage pattern. Strategy options: compress Damaris sharply, force one negotiation to happen under interruption from kitchen labor or a late customer, or give Otis/Junie a concrete action beat that materially alters the pitch before the visitor exits at snapshots/cycle_01/chapters/chapter_03.md:489.",
+      "acceptance_test": "Pass only if the revised back half no longer contains two consecutive extended sit-down pitches over the same table-or-bench geometry. At least one of the two scenes must be broken or redirected by a concrete event or action that changes leverage mid-conversation and gives that scene a distinct texture from the other."
+    },
+    {
+      "finding_id": "CH03-PROSE-01",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:147; snapshots/cycle_01/chapters/chapter_03.md:201; snapshots/cycle_01/chapters/chapter_03.md:235; snapshots/cycle_01/chapters/chapter_03.md:271; snapshots/cycle_01/chapters/chapter_03.md:323",
+      "problem": "The prose falls back too often on the same negative-definition reversal (`It was not ... It was ...` / `It was worse`), and by the fifth recurrence the construction reads like an autopilot tic rather than an earned rhetorical choice.",
+      "rewrite_direction": "Rewrite the repeated negation pivots at snapshots/cycle_01/chapters/chapter_03.md:147, snapshots/cycle_01/chapters/chapter_03.md:201, snapshots/cycle_01/chapters/chapter_03.md:235, snapshots/cycle_01/chapters/chapter_03.md:271, and snapshots/cycle_01/chapters/chapter_03.md:323 so at least three of those beats land through direct image, action, or a materially different sentence architecture. Keep the observations; vary the delivery.",
+      "acceptance_test": "Pass only if no more than two of the cited passages still use the exact `It was not ... It was ...` / `It was worse` reversal, and the revised sentences are visibly distinct in syntax rather than reading like fresh variations of the same template."
+    }
+  ],
+  "summary": "FAIL overall. The chapter is strong on voice separation, class pressure, past-tense control, and continuity, and I found no continuity contradiction, dialogue-register collapse, tense drift, or sanitization retreat. It still misses pass level because the central bargain is too overdetermined, the Damaris and Gideon proposition scenes repeat their staging, and the prose leans too often on the same negation-reversal sentence shape.",
+  "coverage_scene_ids": [
+    "junie_ledger_kitchen",
+    "supper_rush_word_spread",
+    "damaris_serial_offer",
+    "gideon_exclusivity_pitch"
+  ]
+}

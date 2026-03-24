@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_10",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "PASS",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_10_prose_001",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_02/chapters/chapter_10.md:37; snapshots/cycle_02/chapters/chapter_10.md:61; snapshots/cycle_02/chapters/chapter_10.md:141; snapshots/cycle_02/chapters/chapter_10.md:163; snapshots/cycle_02/chapters/chapter_10.md:217; snapshots/cycle_02/chapters/chapter_10.md:329. The narration repeatedly breaks into clipped fragments and subject-dropped shards, including lines like 'Suspicion first. Then calculation.' and 'Fishbone clips. Humming. One by one gone into the dark.'",
+      "problem": "The chapter's narration repeatedly falls into verbless fragment bursts and subject-dropped sentence shards. That violates the constitution's ban on elliptical clipping and makes the prose feel telegraphic in places where the chapter otherwise has strong sensory and emotional control.",
+      "rewrite_direction": "Recast the fragment clusters at snapshots/cycle_02/chapters/chapter_10.md:37, snapshots/cycle_02/chapters/chapter_10.md:61, snapshots/cycle_02/chapters/chapter_10.md:141, snapshots/cycle_02/chapters/chapter_10.md:163, snapshots/cycle_02/chapters/chapter_10.md:217, and snapshots/cycle_02/chapters/chapter_10.md:329 so the pressure comes from cadence, image, and sentence length rather than omitted grammar. Preserve the compression, but turn each beat back into a fully legible narrated thought.",
+      "acceptance_test": "Pass if the revised passages at snapshots/cycle_02/chapters/chapter_10.md:37, snapshots/cycle_02/chapters/chapter_10.md:61, snapshots/cycle_02/chapters/chapter_10.md:141, snapshots/cycle_02/chapters/chapter_10.md:163, snapshots/cycle_02/chapters/chapter_10.md:217, and snapshots/cycle_02/chapters/chapter_10.md:329 no longer contain subject-dropped narration shards and the paragraph corresponding to line 141 no longer stacks three clipped fragments in a row. Fail if lines equivalent to 'Suspicion first. Then calculation.' or 'One by one gone into the dark.' remain in those spans."
+    },
+    {
+      "finding_id": "chapter_10_prose_002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_02/chapters/chapter_10.md:43; snapshots/cycle_02/chapters/chapter_10.md:137; snapshots/cycle_02/chapters/chapter_10.md:165; snapshots/cycle_02/chapters/chapter_10.md:209; snapshots/cycle_02/chapters/chapter_10.md:261; snapshots/cycle_02/chapters/chapter_10.md:345. The chapter keeps returning to the same contrastive correction formula: 'not peace but,' 'not built to charm ... but,' 'not to keep him in, only to keep,' 'not gentled or made safe but deepened,' 'not soft but hungry,' and 'checking not romance but comprehension.'",
+      "problem": "A repeated 'not X but Y' correction pattern becomes a noticeable sentence-level tic. By the second scene, the prose is often sharpening meaning with the same syntactic move instead of finding fresher images or actions, which flattens otherwise vivid material.",
+      "rewrite_direction": "Vary the contrastive beats at snapshots/cycle_02/chapters/chapter_10.md:43, snapshots/cycle_02/chapters/chapter_10.md:137, snapshots/cycle_02/chapters/chapter_10.md:165, snapshots/cycle_02/chapters/chapter_10.md:209, snapshots/cycle_02/chapters/chapter_10.md:261, and snapshots/cycle_02/chapters/chapter_10.md:345. In at least four of those lines, replace the abstract correction structure with a different rhetorical strategy, such as a fresh concrete image, an action beat, or a sentence that states the condition directly.",
+      "acceptance_test": "Pass if, on reread, at least four of the six cited passages at snapshots/cycle_02/chapters/chapter_10.md:43, snapshots/cycle_02/chapters/chapter_10.md:137, snapshots/cycle_02/chapters/chapter_10.md:165, snapshots/cycle_02/chapters/chapter_10.md:209, snapshots/cycle_02/chapters/chapter_10.md:261, and snapshots/cycle_02/chapters/chapter_10.md:345 no longer use a 'not ... but' or 'not ... only to' correction and still preserve the underlying distinction through concrete prose. Fail if the same formula remains the dominant sharpening device across those beats."
+    }
+  ],
+  "summary": "Chapter 10 lands the seduction chapter's structural obligations: the apology arrives through labor, the intimacy scene is rendered on-page rather than sanitized, the ledger handoff materially changes Silas's access, and Silas, Inez, and Aunt Vero remain distinct in register and pressure behavior. It falls short on prose because the narration repeatedly substitutes clipped fragments and a recurring correction formula for fresher sentence-level control."
+}

@@ -1,0 +1,70 @@
+{
+  "acceptance_targets": [
+    "[chapter_05_dialogue_01] Pass if the revised exchanges around snapshots/cycle_02/chapters/chapter_05.md:145-177, snapshots/cycle_02/chapters/chapter_05.md:231-277, and snapshots/cycle_02/chapters/chapter_05.md:421-431 still sound recognizably like Owen and Prue, but at least two of the current clean question-correction-answer sequences are broken by an interruption, repair, or failed formulation, and no three consecutive dialogue turns in those lines reduce to a neat clarification ladder. Fail if the late-scene exchanges still march through repeated tidy calibration beats."
+  ],
+  "chapter_id": "chapter_05",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if the revised exchanges around snapshots/cycle_02/chapters/chapter_05.md:145-177, snapshots/cycle_02/chapters/chapter_05.md:231-277, and snapshots/cycle_02/chapters/chapter_05.md:421-431 still sound recognizably like Owen and Prue, but at least two of the current clean question-correction-answer sequences are broken by an interruption, repair, or failed formulation, and no three consecutive dialogue turns in those lines reduce to a neat clarification ladder. Fail if the late-scene exchanges still march through repeated tidy calibration beats.",
+      "chapter_id": "chapter_05",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_05.md:145; snapshots/cycle_02/chapters/chapter_05.md:153; snapshots/cycle_02/chapters/chapter_05.md:161; snapshots/cycle_02/chapters/chapter_05.md:171; snapshots/cycle_02/chapters/chapter_05.md:231; snapshots/cycle_02/chapters/chapter_05.md:233; snapshots/cycle_02/chapters/chapter_05.md:269; snapshots/cycle_02/chapters/chapter_05.md:273; snapshots/cycle_02/chapters/chapter_05.md:421; snapshots/cycle_02/chapters/chapter_05.md:429",
+      "finding_id": "chapter_05_dialogue_01",
+      "problem": "Owen and Prue stay broadly voice-consistent with the style bible, and contraction use is natural, but too many late-scene exchanges land in the same tidy calibration ladder: Owen literal-clarifies, Prue refines the premise, then one of them states the usable conclusion. Repeated often enough, the pattern reads composed rather than overheard.",
+      "rewrite_direction": "Rework the dialogue clusters anchored at snapshots/cycle_02/chapters/chapter_05.md:145, snapshots/cycle_02/chapters/chapter_05.md:231, and snapshots/cycle_02/chapters/chapter_05.md:421 so at least three current clarification ladders become messier but still legible: use an interruption, a self-correction, a wrong inference, or an unfinished answer that makes the other person work harder. Keep Owen literal and Prue precise, but vary the rhythm so their stress tells are not replayed in the same shape.",
+      "severity": "MEDIUM",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "5d29b45ab29d1c37d507cc7ca066b333d1685a4fcadb4466cb96b974073a48b1",
+  "must_fix_count": 1,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on dialogue realism and voice separation: idiolect fidelity, leverage shifts, pressure cadence, anti-transcript behavior, natural colloquial texture (contractions/interruptions/slang when character-true), pressure-true profanity usage per aesthetic risk policy, and preservation of productive roughness (false starts, evasions, repetitions, unfinished turns) rather than polishing speech flat.",
+    "key": "p2_dialogue_idiolect_cadence",
+    "label": "dialogue/idiolect/cadence fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into the premise's sharpest contradiction: school-year comedy, adolescent awkwardness, punitive cruelty, and cosmic dread may coexist in the same novel without canceling each other. When a scene offers a cleaner version and a truer version, choose the truer one unless the character is actively refusing perception on the page.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If pain, cruelty, fear, or moral ugliness would leave a bodily or environmental trace, render that trace instead of summarizing it into tasteful haze.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High. Contractions are the spoken norm for most characters; fuller forms are reserved for Snape, ritual language, or deliberate emphasis.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate scene density, dialogue load, and movement mode aggressively: confrontation against quiet meals, subterranean revelation against corridor farce, ritual compression against spring drift, so no consecutive chapters feel built from the same emotional or structural template.",
+      "diction": "British boarding-school realism under wartime pressure, with speculative vocabulary introduced only when Owen's attention earns it.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third limited through Owen, with only brief sensory widenings that he could plausibly notice in the moment.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Alternate analytic accumulation with blunt corporeal sentences. Quiet chapters should breathe; punishment and ritual chapters should tighten without clipping grammar.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

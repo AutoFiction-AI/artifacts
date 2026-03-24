@@ -1,0 +1,46 @@
+{
+  "chapter_id": "chapter_10",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "PASS",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH10-DIALOGUE-01",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:411",
+      "problem": "Leela's closing line drops a required object pronoun: \"we treat like somebody who's already started building his explanation.\" That reads as trimmed prose rather than contemporary speech and violates the constitution's ban on elliptical clipping. Because this is the chapter's strategic thesis line, the clipped grammar lands as authorial compression instead of Leela's exacting voice.",
+      "rewrite_direction": "Revise the exchange beginning at snapshots/cycle_01/chapters/chapter_10.md:407 and especially Leela's line at snapshots/cycle_01/chapters/chapter_10.md:411 so the sentence is grammatically complete in her precise register (for example, restoring the missing object pronoun or using an equally natural full construction) while preserving June's short confirming beat at snapshots/cycle_01/chapters/chapter_10.md:413.",
+      "acceptance_test": "PASS if Leela's line at snapshots/cycle_01/chapters/chapter_10.md:411 is grammatically complete in natural contemporary speech and still sounds more strategically precise than June's answer at snapshots/cycle_01/chapters/chapter_10.md:413; FAIL if the object pronoun is still omitted or the line still reads like clipped narration."
+    },
+    {
+      "finding_id": "CH10-PROSE-01",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:105; snapshots/cycle_01/chapters/chapter_10.md:170; snapshots/cycle_01/chapters/chapter_10.md:172; snapshots/cycle_01/chapters/chapter_10.md:232; snapshots/cycle_01/chapters/chapter_10.md:387",
+      "problem": "The chapter repeatedly lands recognition beats through the same negation-and-reclassification engine: \"It was not...\" followed by a corrective label. Used this often, the hotel confession beat, the morning-after recalibration, the LLC discovery, and the alley détente start to sound mechanically related even when the underlying pressures differ.",
+      "rewrite_direction": "Rework the turns at snapshots/cycle_01/chapters/chapter_10.md:105, snapshots/cycle_01/chapters/chapter_10.md:170, snapshots/cycle_01/chapters/chapter_10.md:172, snapshots/cycle_01/chapters/chapter_10.md:232, and snapshots/cycle_01/chapters/chapter_10.md:387 so at least three of them land through direct positive statement, image, or action specific to that scene rather than the recurring \"It was not X / it was Y\" pivot.",
+      "acceptance_test": "PASS if the cited passages no longer use the same negation-and-reclassification pattern more than twice across the chapter and each revised beat is distinguishable by scene-specific language alone; FAIL if three or more of those turns still rely on the same \"It was not...\" sentence engine."
+    },
+    {
+      "finding_id": "CH10-PROSE-02",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:83; snapshots/cycle_01/chapters/chapter_10.md:101; snapshots/cycle_01/chapters/chapter_10.md:129; snapshots/cycle_01/chapters/chapter_10.md:200; snapshots/cycle_01/chapters/chapter_10.md:272; snapshots/cycle_01/chapters/chapter_10.md:302; snapshots/cycle_01/chapters/chapter_10.md:379; snapshots/cycle_01/chapters/chapter_10.md:425",
+      "problem": "Several key turns are mediated through the same stock scaffolds: generic pause markers (\"for a second\") and explanatory \"as if\" comparisons. Those constructions recur often enough that memory flash, social hesitation, Ben's exposure, and the final surveillance atmosphere start to arrive through the same pre-translated sentence move instead of through freshly observed detail.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_10.md:83, snapshots/cycle_01/chapters/chapter_10.md:101, snapshots/cycle_01/chapters/chapter_10.md:129, snapshots/cycle_01/chapters/chapter_10.md:200, snapshots/cycle_01/chapters/chapter_10.md:272, snapshots/cycle_01/chapters/chapter_10.md:302, snapshots/cycle_01/chapters/chapter_10.md:379, and snapshots/cycle_01/chapters/chapter_10.md:425, replace several of those pause/simile beats with scene-bound physical or sensory reactions so each hesitation carries its own texture rather than the chapter's default scaffolding.",
+      "acceptance_test": "PASS if the cited passages differentiate memory, embarrassment, suspicion, and threat through distinct bodily or environmental cues, with no more than two generic pause-marker or explanatory \"as if\" beats left among those moments; FAIL if the revised passages still reuse the same pause/simile scaffold across multiple different turns."
+    }
+  ],
+  "summary": "The chapter lands its causal spine cleanly: the evidentiary work escalates, the Ruderal LLC reveal is continuity-consistent, Ben's leak-path role becomes legible, and the chapter ends on operational method rather than vague paranoia. It avoids sanitization, timidity, tense drift, continuity contradiction, and major voice collapse. It still misses pass level on dialogue and prose because one closing Leela line is clipped into unnatural speech and the prose reuses a few sentence engines often enough to feel patterned instead of fully alive.",
+  "coverage_scene_ids": [
+    "hotel_room_morning",
+    "keating_alcove_office_alley"
+  ]
+}

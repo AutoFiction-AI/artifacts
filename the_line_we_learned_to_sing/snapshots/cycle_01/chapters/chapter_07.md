@@ -1,0 +1,339 @@
+# Chapter 7
+
+By the time Ina reached the alley behind the radiator market, the rain had become a vertical sheet, hard enough to flatten cigarette butts into the cracked concrete. Water spilled from broken gutters, hit rusted awnings, and came down again in colder drops that found the back of her neck and ran inside her shirt. She took the long way around the block anyway, passing the same shuttered pawn window twice, waiting for the reflection of a second umbrella that never settled into a pattern. The city smelled like wet asphalt, fryer oil, and hot wire insulation. Somewhere above her a compressor kicked on, coughed, and held a thin mechanical whine that made everything underneath it feel temporary.
+
+Minjae had left the workshop door half-latched, a signal that meant hurry up and also get out if anything looked wrong. Ina knocked once with her ring finger. He opened before the sound finished.
+
+"You're late," he said. "Or you got tailed and took your time deciding whether I should die with you."
+
+He wore a black sleeveless undershirt darkened with sweat across the chest. His left shoulder, where an old scar cut diagonally toward his collarbone, shone with flux smudges. He had a soldering iron in one hand and a paper cup of instant coffee in the other. It was nearly midnight and he was still standing like he'd just started his shift.
+
+"If I got tailed, I wouldn't come to your door," Ina said.
+
+"People always think that until they're scared enough." He shut the door, threw the dead bolt, and pointed at a plastic stool by the workbench. "Phone. Battery out."
+
+She handed him the burner and popped the battery herself. He dropped both into separate foil pouches, then set them inside a dented stockpot under the sink. The workshop was one long room with no windows, stacked with routers, old set-top boxes, and cardboard cartons labeled as toaster ovens for customs. The single standing fan oscillated in a tired arc and pushed hot air from one end to the other. Every surface had the same thin grit of metal shavings and paper dust. When he moved, the calluses in his palms rasped against plastic housings.
+
+He did not offer her coffee. He flipped a monitor toward her instead. A map of relay points glowed in green and red pixels, half of them crossed out.
+
+"You wanted to talk about safer lanes," he said. "Talk."
+
+Ina sat. The stool wobbled on one short leg, then found level on an old copy of a sports magazine shoved under it. She could feel the damp seam of her jeans against her thigh. "I need you to move one class of payload out of the entertainment stream. No mixed bundles. No names, no civic packets, no memorial videos piggybacking on drama files. We separate. We randomize dispatch windows. We stop teaching security teams where to look."
+
+Minjae laughed once, dry and disbelieving. "That's your opening pitch? You walk in here a week after the raid and ask me to restructure a network on trust?"
+
+"I'm not asking for trust first. I'm asking for mechanics first."
+
+"Mechanics cost trust." He leaned both hands on the bench and looked at her like he could see the shape of every sentence she had rehearsed on the taxi ride. "Who're you reporting to now?"
+
+The fan turned toward them and made her wet shirt cling to her shoulder blades. She had promised herself she would answer without spinning, without editorial notes, without the polished language she used when executives wanted conscience translated into legal risk. It still came out careful.
+
+"NIS detained me for thirteen hours. They wanted full access, account credentials, names, process notes, the whole production chain. I said no to names. I said no to anything that would get people arrested off a spreadsheet."
+
+"That wasn't the question."
+
+"I know." She watched a drop of rain slide from her sleeve and darken the wood grain on the workbench. "I signed limited cooperation. Weekly check-in call. Monthly in-person debrief. If I miss twice, they can revoke immunity and reopen espionage charges."
+
+He stared at her for a long moment that felt like another interrogation room, just hotter and honest about the sweat.
+
+"So you're wired," he said.
+
+"No."
+
+"You are tracked."
+
+"Probably."
+
+"And you're in my shop."
+
+"Yes."
+
+He swore under his breath, then louder. "Fuck, Ina."
+
+The soldering iron hissed where he set it down on a stand. Outside, a truck rolled through standing water and sent a slap of sound against the metal shutter.
+
+"How much did you give them?" he asked.
+
+She started with qualifiers and heard herself doing it. "Operational context. Public channels. Stuff they could scrape anyway. Outdated manifests from a quarter ago."
+
+His mouth tightened.
+
+She stopped hedging. "I gave them enough to keep my father out of asset seizure and keep me out of a cell. I did not give them routes. I did not give them your name."
+
+Minjae dragged a hand over his face and left a black streak on his cheekbone. "Do you hear what that sounds like to me? It sounds like you brought a camera crew into my apartment and promised they wouldn't film the bedroom."
+
+"Then don't let me in your apartment," she said. "Keep this here. Keep it ugly and transactional. But we still need to reconfigure before another sweep reads our timing."
+
+He gave her a look that was half anger and half reluctant respect for not pretending they were past it. "You want to split lanes. Fine. Which lanes do you think keep people alive?"
+
+"Medical and household first. Language content second. Political content last and insulated."
+
+"You say political like it's a file type. Over there everything's political if the wrong person sees it." He jabbed at the map. "This node outside Sinuiju used to pass cough syrup and pirated cartoons. Then one teenager added a song with a memorial subtitle track and three apartment blocks got searched."
+
+Ina felt the old nausea from chapter five, that exact detonation of abstraction into bodies and doors kicked in before dawn. She put her palms flat on the bench to keep from rubbing at her left wrist scar. "That's why I need you. I can read patterns. You can change them."
+
+"I can get people killed with a cleaner graph," he said.
+
+"You're already getting people killed with the current one. So am I." She held his stare. "I'm done pretending intent matters more than outcomes."
+
+He went still, then turned away and opened a metal drawer with too much force. He took out two packets of seaweed and a crushed carton of convenience-store kimbap, tossed one packet at her without looking.
+
+"Eat," he said. "If we're going to burn our lives down, I don't want you fainting halfway through."
+
+It was the nearest thing to care he had offered all night. Ina peeled the seaweed packet and tasted salt, sesame oil, and stale cardboard. Minjae opened his kimbap with his teeth and stood by the sink while he ate, as if sitting would mean he trusted the room.
+
+"You know why I didn't answer your calls for three days?" he said finally.
+
+"Because you thought I sold you out."
+
+"Because I thought I might have to disappear before you did." He swallowed and looked at the wall instead of her. "My sister's route into Pyongyang is tied to two of these carriers. If one gets rolled up, she doesn't lose entertainment money. She loses medicine, access, and the broker's protection stamp."
+
+He had never used the word sister with her before. Family came out of him in scraps, usually hidden inside sarcasm. Ina kept her voice level so he could keep going.
+
+"What's her name?"
+
+"Kang Suyon." He said it quickly, like if he slowed down he'd hear himself and stop. "Thirty-two. Works in a state textile line during the day, alters uniforms at night for cash. She keeps a blue tape measure tied around her wrist because she says she loses every other one. She has a boy who's nine and wheezes through most winters. Inhalers don't come through official channels in her district unless you're related to the right colonel."
+
+The fan turned again and blew the smell of solder toward them. Ina pictured a woman she had never met measuring sleeve lengths by dim light, counting breath sounds in a child she could not take to a clinic that admitted need.
+
+"The broker knows she's mine," Minjae said. "He thinks that makes me reliable. It also means if I fuck up, punishment has an address."
+
+Ina pressed her thumb into the corner of the seaweed packet until the foil edge bit skin. "I won't ask for your full map."
+
+"Good, because you won't get it."
+
+"I want one pilot lane. Low-profile, low-volume, no political payload, just material that won't trigger household sweeps if seized. We test for six weeks. If detentions spike, we kill it."
+
+"Six weeks is fantasy. Two weeks gives us enough telemetry without branding me a traitor to three different governments." He tossed the empty kimbap tray into a bin full of stripped cable jackets. "And nothing gets named as safe. Safe is how people stop checking."
+
+She almost smiled despite herself. "Fine. Two weeks. Nothing gets named safe."
+
+Minjae came back to the bench and pulled a marker from behind his ear. On the glossy map he circled one inland transfer point and one northern handset relay, then crossed out two obvious alternatives so hard the marker squealed. His handwriting was cramped and impatient, every letter leaning forward as if chased.
+
+"If this channel exists," he said, "it carries study apps, medical reference clips, and subtitled weather reports. Boring content. No martyr compilations. No coded anthems. No dead-parent propaganda and no clever editing games."
+
+The dead-parent line landed where he meant it to. Ina accepted it without defense. "Agreed."
+
+"And if your NIS handler asks why your contact map changed, what do you say?"
+
+"I say I lost visibility after the raid. Which is true."
+
+"Partial true," he muttered.
+
+"That's all either of us has right now."
+
+He capped the marker and set it down with precise care. The rain hammered the shutter harder. In the pause after their bargaining, the room got smaller, defined by the fan's arc and the rectangle of light from the map display. Ina could hear his breathing shift from sharp to tired. Her own body registered the hour in annoying details: damp bra strap digging in, a cramp in her right foot from holding still, the cold edge of fear she had carried since the interview room now settling into her lower back like a weight belt.
+
+"You should leave before three," Minjae said. "Cameras at the intersection cycle maintenance mode around then."
+
+"I can stay till two forty."
+
+"You always answer like a scheduler."
+
+"It's either that or panic."
+
+He looked at her for a long second. "I know."
+
+A siren passed, distant and brief. He unplugged the map monitor and the room dropped into dim yellow from a single desk lamp. Without the screen light he looked less like a technician and more like a man who had not slept properly in months. There were grease shadows under his fingernails and a small burn blister at the base of his thumb. She wanted to ask when he last ate a meal that came in a bowl instead of a wrapper. She wanted to ask if anyone else knew about Suyon. She asked nothing.
+
+"My place is three blocks," he said. "Workshop's hot and this fan sounds like a dying goat. If we're still talking, we talk there."
+
+"Is that smarter?"
+
+"No. It's quieter."
+
+He locked the foil-pouched burner in a tool chest, turned off the lamp, and waited for her to decide whether this was tactical continuation or the beginning of a bad idea she had wanted since the first time he showed her detention metadata and watched her face instead of the screen.
+
+Ina picked up her bag. "Three blocks," she said.
+
+***
+
+His building sat above a tire shop that closed at sundown but left one fluorescent tube buzzing all night in the stairwell. On the second-floor landing someone had taped a handwritten note to the wall asking tenants not to wash squid in the shared sink. The ink had run in the humidity until the word squid looked like a bruise.
+
+Minjae's room was narrow enough that when he shut the door his elbow brushed the refrigerator and the coat rack at the same time. The fridge door was held closed with blue painter's tape. A cracked induction plate sat on a milk crate. Beside the mattress, a stack of old networking manuals propped up a fanless desktop tower with its side panel removed. He moved through the space without looking, as if each object had fixed coordinates in his body.
+
+He set a clear glass bottle upright against the inside of the door. "If anyone opens it while we're asleep, this drops and shatters," he said.
+
+"You sleep with alarms made of kitchen trash," Ina said.
+
+"Kitchen trash has fewer firmware updates."
+
+She laughed, surprised by the sound in her own throat. He handed her a faded T-shirt and pointed at the bathroom, which was mostly a showerhead above a floor drain and one narrow mirror fogged at the edges. When she stripped off her wet shirt, she saw the left-wrist burn scar pale against damp skin and thought of contract pages, court forms, signatures written to survive one week at a time.
+
+When she came back out in his shirt and dry socks, he was standing by the windowless wall with two cups of barley tea and the expression of a man about to defuse a bomb he had wired himself.
+
+"Before this goes where it looks like it's going," he said, "answer one thing straight. Are you here because you need the route, or because you want me?"
+
+There was no useful answer that did not expose her. She sat on the edge of the mattress, cup warming both hands, and chose the one that was hardest to weaponize.
+
+"Both," she said. "And I hate that it's both."
+
+Minjae nodded once, as if she'd just confirmed a checksum.
+
+"Good," he said. "If you said one or the other, I'd call bullshit."
+
+He sat across from her on the floor, back against the wall, long legs folded awkwardly. For a minute they drank tea and listened to rain tap the metal duct outside, irregular as typing. The city sounded farther away up here, reduced to scooter engines and a drunk couple arguing in the alley, their voices rising then dissolving into laughter.
+
+Ina set her cup down. "I don't have clean hands in this."
+
+"Nobody in this room does."
+
+"No, listen." The careful clauses rose again and she pushed through them. "At the debrief they put photos on the table. My father outside his building. Your workshop from across the street. A frame from Ji-eun's rehearsal hall. The message wasn't subtle. Give us channels and we protect you. Refuse and we let the law do what the law can do."
+
+"And what did you do?"
+
+"I gave them crumbs and let them think they had a loaf."
+
+"That trick works until they get hungry." His voice stayed low, not cruel, just exact. "You know that, right?"
+
+"I do."
+
+He rubbed the scar on his shoulder as if it itched from inside. "Then don't ask me for forever. Ask me for the window we can survive."
+
+"Two weeks," she said. "Then we reassess."
+
+"Two weeks," he agreed.
+
+The agreement should have ended the night. She knew that. She should have set an alarm, put her wet clothes back on, and left before habit made this something neither of them could file under operational necessity. Instead she reached for his cup, their fingers touched, and he caught her wrist with a grip that was firm but not trapping, his thumb resting over the old burn scar as if he were reading braille.
+
+"Ina," he said, quieter now, "if this is pity, don't."
+
+"It's not pity."
+
+"If it's fear, don't."
+
+"It's fear," she said, and let him see it. "And it's you."
+
+He exhaled like he had been holding his lungs for days. "Come here."
+
+She moved from the mattress to the floor. He kissed her once, testing, then again with decision. His mouth tasted like barley tea and stale coffee. She could feel the roughness of solder nicks along his fingertips when he pushed her hair back from her face. The room was too warm and still too small, and the closeness made every sound larger: the fabric of his shirt sliding across her skin, the hum of the taped refrigerator motor, rainwater ticking in the downpipe.
+
+"Tell me if you want me to stop," he said against her mouth.
+
+"I won't go quiet if I do."
+
+"Good."
+
+She pulled his shirt over his head and saw the shoulder scar clearly for the first time, old tissue silvered and puckered where muscle had torn and healed wrong. She ran her fingers along it. He flinched once, then leaned into her hand. She kissed the scar and felt him shudder, not performative, not pretty, just involuntary and human. Her own body answered before thought caught up.
+
+They undressed each other with the impatience of people who had been pretending not to want this through too many meetings, too many burner calls, too many sentences that ended before the dangerous word. He eased her back onto the mattress, then stopped, braced above her.
+
+"Last check," he said, breath uneven. "You sure?"
+
+"Yes. I'm sure."
+
+He nodded and kissed her again, slower this time, giving her space to change her mind and reading her when she did not. When he moved inside her she grabbed his forearm hard enough to leave half-moon marks in skin already marked by work. The first thrust hurt, then the hurt opened and changed shape. She wrapped one leg around his hip and pulled him closer. The mattress springs complained with every movement, loud enough that he laughed once under his breath and turned his face into her neck to keep from making a sound that would carry through the wall.
+
+"Thin walls," he murmured.
+
+"I noticed."
+
+He slipped his hand over her mouth when she got loud and she bit his palm lightly, warning, and he shifted so she could breathe and still keep quiet. The compromise made them both laugh, then made them both shakier. She felt sweat gather at his spine, felt the callus line across his thumb drag and catch against her thigh, felt the room tip from negotiation into something less orderly and more honest. Outside, somebody in the hallway coughed three times and turned on a faucet. Inside, Ina lost count of everything except the pressure of his body and the way he said her name like it was both apology and demand.
+
+When he came, his forehead dropped to her shoulder and he stayed there, breathing hard against her skin. She kept one hand on the back of his neck until his weight shifted from urgent to heavy and trusted. Then he rolled onto his back and pulled her with him, her cheek against his chest, both of them listening to the rain slow from hammering to a steady hiss.
+
+For a while neither spoke. The silence was not clean. It was full of math: who now knew what, who could hurt whom, what this would cost if either one chose survival over tenderness when the bill came due.
+
+Ina traced the edge of his collarbone and said, "I haven't slept through a night since the raid."
+
+"I sleep in forty-minute pieces," he said. "Any longer and I dream in logs."
+
+"Dream in logs?"
+
+"Packet loss, retries, checksum errors. My subconscious is a cheap server rack."
+
+She smiled into his skin. "That's bleak even for you."
+
+"You haven't heard my top ten bleak list." He hesitated. "Suyon calls every Thursday at exactly six fourteen, if she can. Three rings means she's fine. One ring means money problem. No call means I don't eat for two days because my stomach decides we're done." He rubbed his eyes with the heel of his hand. "Tonight she did one ring."
+
+Ina lifted herself onto an elbow. "How much?"
+
+"Not huge. Bribe spike after a local inspection. Equivalent of maybe six hundred US through three hands. Big enough to hurt. Small enough to feel impossible when channels are unstable."
+
+"I can cover some."
+
+"No." His answer came fast, then softened. "No, not because pride. Because paper trails. If your accounts move toward my broker and NIS is bored that week, we're both dead and she still goes without inhalers."
+
+"Right."
+
+"You can help by not blowing up the lane we just negotiated."
+
+She lay back down. The ceiling above them had a long water stain that looked like a river delta. She thought about her own numbers waiting at home: fifty-eight million won to St. Mary's billing office, eleven-point-two million in her father's rent arrears, and a stipend that could vanish the minute she stopped being useful to men in suits. Every month she translated grief for television and called it work. Every month she paid people to postpone punishment.
+
+"When I was twenty-six," she said, "I thought debt was a temporary weather pattern. Like rain season. You complain, you buy better shoes, it passes."
+
+Minjae made a tired sound that might have been a laugh. "And now?"
+
+"Now it feels like architecture."
+
+"Yeah," he said. "Load-bearing shame."
+
+He turned onto his side and reached toward the stack of manuals by the wall. From between two books he pulled a flat black envelope the size of a passport. He held it for a second without handing it over.
+
+"This is as far as I can go tonight," he said.
+
+Ina sat up. "What is it?"
+
+"Limited route key. One lane only. Expiration fourteen days from first use. You get entry node schedule, payload size caps, and the sanitation rules. You don't get terminal contacts, broker names, or fallback routes." He looked at her until she met him squarely. "If this leaks, I know exactly where it leaked."
+
+He placed the envelope in her hand. It was warm from where he'd kept it against the books, and heavier than paper. Inside she felt the stiff edge of a microSD case and a folded card.
+
+"What's on the card?" she asked.
+
+"Authentication phrase and a dead-man condition. If the phrase changes without warning, lane is burned and everyone aborts." He paused. "Phrase rotates every forty-eight hours. I send updates voice-only. No text."
+
+This was not trust. It was engineered vulnerability, constrained and measurable. It was also more than she had expected to get before dawn.
+
+"Why now?" she asked.
+
+"Because if I wait till morning I'll probably decide you're too risky and go back to old routes out of habit." He rubbed the back of his neck, embarrassed by his own honesty. "And because I just let you see where I hide things. That's either stupid or commitment. Maybe both."
+
+Ina slid the envelope under the folded T-shirt on the milk crate, away from condensation dripping from the taped fridge door. She wanted to promise she would never use this against him, never weaponize what he had just given her with his body still warm beside her. She knew better than to promise forever in a room where both of them survived by revision.
+
+"I'll run clean on this lane," she said. "No hidden payloads. No side deals. If pressure changes, I tell you before I move."
+
+"And NIS?"
+
+"Gets nothing about this key." She held his gaze. "That's the line."
+
+He watched her face for the tiny delays that meant spin. Whatever he saw, he accepted for now.
+
+"Then we're aligned for fourteen days," he said. "After that, alignment expires."
+
+She nodded. "Fourteen days."
+
+He reached for her again, less urgent this time, his hand settling at the curve of her waist with a familiarity that had not existed three hours ago. It frightened her more than the envelope did. Data leaks could be patched. Account freezes could be challenged. This was different: a man she could hurt and who could hurt her, both of them newly equipped with reasons not to.
+
+At four forty-five, his cheap alarm buzzed from under the pillow with the tinny melody of a children's song. He groaned, slapped it silent, and sat up to start coffee in a dented steel pot. The room smelled immediately of burnt grounds and wet cotton. Ina dressed in yesterday's damp jeans, tucked the black envelope into the lining pocket of her bag, and watched him from the door as he poured coffee into two chipped mugs that did not match.
+
+"You'll take the river road out," he said. "Less camera density before six."
+
+"You memorized camera density?"
+
+"I memorize what keeps people alive."
+
+She took the mug he offered. His fingers brushed hers, then withdrew. Outside the rain had thinned to mist. Somewhere below, the tire-shop owner arrived early and started singing an old trot song while dragging metal racks onto the sidewalk, badly off-key and cheerfully committed.
+
+Ina drank half the coffee, bitter enough to wake pain, and set the mug down.
+
+"Minjae."
+
+"Yeah?"
+
+"If I get pulled in again, I won't let them surprise you. You'll hear it from me first."
+
+"Do that," he said. "And Ina?"
+
+"What?"
+
+"Don't romanticize this. We're not healed. We're useful to each other and maybe something else on top. Keep both truths in frame."
+
+She almost told him he sounded like a producer giving notes. Instead she nodded because he was right.
+
+When she stepped into the stairwell, the fluorescent light flickered and steadied. She could feel the envelope's edge through the bag lining with every step down. On the landing, the squid note had peeled at one corner and curled like a tongue. She flattened it with her palm without thinking, then kept moving.
+
+At street level she turned toward the river, hood up, pace even. Dawn pressed a pale strip of color behind the warehouse roofs. Her phone battery was still in the foil pouch three blocks away. Her body carried the ache of a night that had not solved anything and had still changed everything.
+
+Fourteen days, she thought. Two weeks of borrowed alignment, two weeks to make a safer channel real before fear or law or love turned back into leverage.
+
+She walked faster.

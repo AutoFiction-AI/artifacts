@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_11",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_11_craft_001",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_02/chapters/chapter_11.md:21; snapshots/cycle_02/chapters/chapter_11.md:25; snapshots/cycle_02/chapters/chapter_11.md:33; snapshots/cycle_02/chapters/chapter_11.md:45",
+      "problem": "The chapter's major turn depends on Nate finding the Eastbridge thread in Dominic's Sent Items, but the text does not adequately answer why this obviously relevant archive remained unexplored until now by a man whose whole adult grievance is organized around Eastbridge. The scene gives a local trigger for opening Sent Items at all, yet it does not solve the stronger plausibility question of why Nate had not already mined Dominic's work email on the one project that defines his life, which makes the revelation read as partly convenient.",
+      "rewrite_direction": "Rework the discovery setup in snapshots/cycle_02/chapters/chapter_11.md:21-45 so the chapter earns the timing of the find. Options: establish a prior failed pass through Dominic's email that was blocked by ignorance of Outlook's structure or by searching the wrong folders; make the Thursday client-call humiliation specifically force Nate into Sent Items as a new method he had avoided; or add a concrete blind spot that explains why he had treated the Eastbridge paper file as exhaustive until this Saturday. Keep the mundane Outlook mechanics, but make the reader able to answer why this discovery happens now rather than in chapter 7.",
+      "acceptance_test": "Pass if a cold reader can point to snapshots/cycle_02/chapters/chapter_11.md:21-45 and answer both 'Why is Nate searching Sent Items this Saturday?' and 'What concrete obstacle, false assumption, or prior failure kept him from finding the Eastbridge thread earlier?' Fail if the revised passage still leaves Sent Items feeling like the first obvious place Nate should have checked months ago."
+    },
+    {
+      "finding_id": "chapter_11_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_02/chapters/chapter_11.md:55; snapshots/cycle_02/chapters/chapter_11.md:69; snapshots/cycle_02/chapters/chapter_11.md:75; snapshots/cycle_02/chapters/chapter_11.md:111",
+      "problem": "The chapter repeatedly lands realization beats with the same emphatic scaffold: short 'That was ...' declarations. Used this often, the construction stops feeling like a deliberate hammer blow and starts reading like reusable prose machinery, which flattens otherwise sharp turns in the scene.",
+      "rewrite_direction": "Vary the landing syntax at snapshots/cycle_02/chapters/chapter_11.md:55, snapshots/cycle_02/chapters/chapter_11.md:69, snapshots/cycle_02/chapters/chapter_11.md:75, and snapshots/cycle_02/chapters/chapter_11.md:111. Keep at most one or two of these emphatic resets; rewrite the others so the turn arrives through local perception, body response, or document-specific language instead of another abstract 'That was ...' sentence opener.",
+      "acceptance_test": "Pass if the revised passages at snapshots/cycle_02/chapters/chapter_11.md:55, snapshots/cycle_02/chapters/chapter_11.md:69, snapshots/cycle_02/chapters/chapter_11.md:75, and snapshots/cycle_02/chapters/chapter_11.md:111 contain no more than two emphatic 'That was ...' sentence-openers total, and each retained realization beat has a distinct syntactic shape. Fail if three or more of those beats still resolve through the same formula."
+    },
+    {
+      "finding_id": "chapter_11_prose_002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_02/chapters/chapter_11.md:149; snapshots/cycle_02/chapters/chapter_11.md:151; snapshots/cycle_02/chapters/chapter_11.md:157; snapshots/cycle_02/chapters/chapter_11.md:163",
+      "problem": "The chapter already lands Nate's guilt through concrete bodily evidence: the hand on the notice, the sex under false identity, the handshake with Mort, the slashed notebook page, the shaking. The final sentence then converts that embodied horror into a clean thesis statement. Because the style bible explicitly wants the reader to feel sick rather than enlightened, the closing abstraction reads as thematic over-explanation at the moment the scene should trust its physical details.",
+      "rewrite_direction": "Rebuild the final beat at snapshots/cycle_02/chapters/chapter_11.md:149-163 so the chapter ends on embodied consequence or a changed immediate action rather than an abstract moral summary. The realization that Dominic was trying to help should remain unmistakable, but it should be carried by the letter, the hand, the damaged notebook page, the office soundscape, or Nate's next physical move instead of a concluding sentence that states the moral in thesis form.",
+      "acceptance_test": "Pass if the revised ending at snapshots/cycle_02/chapters/chapter_11.md:149-163 leaves the reader with a concrete physical consequence, image, or action that makes Nate's realization legible without an abstract summary sentence. Fail if the last line still directly paraphrases the chapter's moral discovery after the body-level evidence has already delivered it."
+    }
+  ],
+  "summary": "A strong single-scene discovery chapter with good continuity control, clear Victor-versus-Dominic voice contrast in the email archive, and properly unsanitized bodily guilt once the truth lands. It still fails award/craft/prose on this pass because the discovery timing is not fully earned, the prose leans too often on the same emphatic sentence scaffold, and the closing line explains a realization the scene has already rendered more forcefully in physical terms."
+}

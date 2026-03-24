@@ -1,0 +1,207 @@
+{
+  "cycle": 1,
+  "verdict": "FAIL",
+  "summary": "The novel's premise is original and fully committed to: a System-blind con man discovers real sin-eating ability and chooses maintenance over heroism. Character voice differentiation is strong across all six principals. The thematic architecture (plumbing vs. glory, work vs. narrative) resolves with genuine force, and the Vess departure (Ch16) and Woundmouth sequence (Ch17) operate at shortlist-caliber emotional and conceptual density. The ending earns its quietness. However, two prose-level constructions saturate the text at frequencies that constitute craft failure under constitution rule 9: the 'the way X' analogical clause (~100 instances) and 'the specific X of Y' appositive (~40 instances) together account for a measurable rhythmic monotony across every chapter. A critical process leakage at line 3770 ('the farmer from Chapter — from Fenhold') is an automatic quality-rule violation. Two style-bible example-line echoes breach the calibration-only contract. Accumulated reader-knowledge violations — bowl origin rehearsed 7+ times in near-identical language, Derry's family details recycled across 7 chapters with identical emotional function, contamination smell locked to the same ozone-sweetness formula 20+ times — erode the narrator's authority by re-explaining what the reader already knows. The path to shortlist is prose renovation, not structural rebuilding: vary the two dominant constructions, trust the reader's memory after the first establishment, and diversify the sensory vocabulary for contamination and consumption sequences.",
+  "findings": [
+    {
+      "chapter": "chapter_14",
+      "severity": "CRITICAL",
+      "problem": "Process leakage: narrative text references a chapter number before self-correcting to a diegetic place name.",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:3770 — 'That thought sat where it always did now. In the same place as the farmer from Chapter — from Fenhold.' The word 'Chapter' is authorial/structural vocabulary that has no place in Maren's close-third consciousness.",
+      "rewrite_direction": "Delete 'from Chapter —' entirely. The sentence should read: 'That thought sat where it always did now. In the same place as the farmer from Fenhold.' Alternatively, let Maren name Breck specifically.",
+      "acceptance_test": "Zero instances of 'chapter', 'scene', 'draft', 'outline', 'arc', or any other process/structural vocabulary in narrative text. Grep for these terms and confirm no hits outside markdown headings."
+    },
+    {
+      "chapter": "chapter_04",
+      "severity": "MEDIUM",
+      "problem": "Style-bible example-line echo: Vess's first speech closely paraphrases a calibration-only example line.",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:916 — 'I had Torren Blackhall's schedule memorized to the quarter-hour.' Compare style_bible.json Vess example_lines: 'The contract was for a man named Torren Blackhall. I had his schedule memorized. I still do.' The phrasing 'had [his/Blackhall's] schedule memorized' is a near-verbatim lift of the calibration line.",
+      "rewrite_direction": "Rephrase to convey the same assassin's precision without echoing the calibration sentence structure. E.g., 'I knew Torren Blackhall's movements to the quarter-hour' or 'Three weeks of surveillance had Blackhall's routine down to fifteen-minute intervals.' The character detail (obsessive target knowledge) is correct; the specific phrasing must diverge from the example line.",
+      "acceptance_test": "No sentence in the manuscript reproduces more than four consecutive content words from any style-bible example_lines entry. Automated check: extract all example_lines, generate 4-grams, confirm zero matches in manuscript text."
+    },
+    {
+      "chapter": "chapter_07",
+      "severity": "MEDIUM",
+      "problem": "Style-bible example-line echo: Thessa's dialogue closely paraphrases a calibration-only example line.",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:1507 — 'I've been at it since before you were born and mine look like I dipped them in varnish.' Compare style_bible.json Thessa example_lines: 'I've been doing this since before you were born. Don't tell me what's possible.' The construction 'since before you were born' is a direct echo.",
+      "rewrite_direction": "Rephrase to preserve Thessa's seniority assertion without lifting the calibration phrasing. E.g., 'Thirty years of this work' or 'I started before your mother finished growing you' — anything that conveys decades of experience without the 'before you were born' template.",
+      "acceptance_test": "Same 4-gram check as the Ch4 finding. No manuscript sentence reproduces more than four consecutive content words from any Thessa example_lines entry."
+    },
+    {
+      "chapter": "chapter_13",
+      "severity": "MEDIUM",
+      "problem": "Continuity error: Pell's counting ability regresses without narrative justification across Derry's references.",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:647 (Ch3) — 'counting to twenty'; snapshots/cycle_01/FINAL_NOVEL.md:1326 (Ch6) — 'all the way to fourteen'; snapshots/cycle_01/FINAL_NOVEL.md:1830 (Ch8) — 'she's got to ten but she keeps skipping seven'; snapshots/cycle_01/FINAL_NOVEL.md:2191 (Ch9) — 'learned to count up to forty'; snapshots/cycle_01/FINAL_NOVEL.md:3467 (Ch13) — 'She could do one to seven.' The progression 20→14→10→40→7 is incoherent. If the inconsistency is meant to signal Derry's unreliable emotional state, the text gives no cue — each number is presented as factual report.",
+      "rewrite_direction": "Choose one of two approaches: (A) Fix the numbers to a plausible progression reflecting a ~4-week timeline for a 3-year-old (e.g., stays around 14-20, with different quirks each time — skips different numbers, pronounces them differently). (B) If the regression is intentional unreliable narration, signal it: have Maren notice the numbers don't match, or have Derry hesitate on the number, or contradict himself within a single scene. The reader needs a cue that this is characterization, not error.",
+      "acceptance_test": "Pell's counting references either (A) show monotonic or stable progression with varied quirks, or (B) at least one moment where Maren or Derry acknowledges the inconsistency, making the unreliability legible."
+    }
+  ],
+  "pattern_findings": [
+    {
+      "pattern_id": "P_WAY_CLAUSE",
+      "global_problem": "The analogical clause 'the way X does/did Y' appears approximately 100 times across all 18 chapters, making it the novel's most pervasive sentence construction. Constitution rule 9 sets the threshold at 4 instances per book before a construction becomes a tic. This pattern exceeds that threshold by an order of magnitude. It flattens the prose's rhythmic variety by routing nearly every comparison, simile, and behavioral observation through an identical syntactic template.",
+      "severity": "HIGH",
+      "affected_chapters": ["chapter_01", "chapter_02", "chapter_03", "chapter_04", "chapter_05", "chapter_06", "chapter_07", "chapter_08", "chapter_09", "chapter_10", "chapter_11", "chapter_12", "chapter_13", "chapter_14", "chapter_15", "chapter_16", "chapter_17", "chapter_18"],
+      "chapter_hits": [
+        {
+          "chapter": "chapter_03",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:433 'the way you'd twitch from a hornet'; :453 'the way a System-sighted person's would'; :579 'in the way they did when Derry's anxiety overtook'; :587 'the way a man sits when'; :599 'the way his words sounded when'; :601 'the way it always did when'. Six instances in a single chapter (~250 lines).",
+          "rewrite_direction": "Reduce to 1-2 per chapter. Replace with direct description ('his shoulder flinched left'), embedded metaphor ('Derry collapsed onto the stool, legs folding'), or no comparison at all — many of these similes explain feelings the action already conveys."
+        },
+        {
+          "chapter": "chapter_07",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:1447 'the way they mentioned the rendering pit'; :1491 'the way someone looks at a puddle they've just stepped in'; :1547 'the way a surgeon uses incision'; :1637 'in the way it went when something frightened him'; :1751 'the way his words got when he couldn't afford to let them carry weight'. Five instances.",
+          "rewrite_direction": "Same reduction target. Several of these comparisons are doing useful work (the surgeon simile at 1547 is precise); keep the best 1-2 and rephrase the rest as direct observation."
+        },
+        {
+          "chapter": "chapter_16",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:4212 'patient the way someone who had spent years waiting in dark rooms was patient'; :4252 'the way people pretend the thing they guard least'; :4322 'the way you let a wave pass'; :4366 'the way you feel a sound dropping out'; :4372 'She left the way a sound leaves a room'; :4378 'carrying warmth the way a living thing carries blood'; :4408 'the way a man retreats to the far end of a corridor'; :4454 'the way you sit with anything that has become permanent'. Eight instances in the novel's most emotionally demanding chapter.",
+          "rewrite_direction": "Line 4372 ('She left the way a sound leaves a room') is the chapter's signature image and should stand. The remaining 7 instances dilute it. Reduce to 2-3 total. The departure passage especially needs rhythmic variety — the repeated template makes the grief feel catalogued rather than felt."
+        },
+        {
+          "chapter": "chapter_18",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:4761 'the specific sound of a dead man recognizing' (combined with 'the way one worker recognizes another'); :4780 'the way the warmth faded out of the day'; the final chapter uses the construction at least 5 times in its closing pages.",
+          "rewrite_direction": "The final chapter should land with a voice that has evolved past its own verbal habits. Reduce to 1 instance maximum. Let Maren's observation become more direct in the closing pages — he's learned to see clearly, so his prose should reflect that clarity."
+        }
+      ]
+    },
+    {
+      "pattern_id": "P_SPECIFIC_OF",
+      "global_problem": "The appositive construction 'the specific X of Y' appears approximately 40 times across 15+ chapters. Like P_WAY_CLAUSE, this is a sentence-level habit that functions as a naming device — 'the specific grief of,' 'the specific silence of,' 'the specific fury of,' 'the specific comfort of' — and its repetition converts precision into formula. Constitution rule 9 threshold exceeded by 10x.",
+      "severity": "HIGH",
+      "affected_chapters": ["chapter_04", "chapter_05", "chapter_06", "chapter_07", "chapter_08", "chapter_09", "chapter_10", "chapter_11", "chapter_12", "chapter_14", "chapter_15", "chapter_16", "chapter_17", "chapter_18"],
+      "chapter_hits": [
+        {
+          "chapter": "chapter_05",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:1042 'the specific silence of a man who had always had words for everything'; :1283 'the specific cold of the dead woman's weight against his chest'; :1285 (additional instance in same paragraph). Three instances in ~210 lines.",
+          "rewrite_direction": "Remove the 'specific' framing and render the sensation directly. 'The specific silence of a man who had always had words' → 'Aldric had always had words for everything. Now he didn't.' The observation is stronger without the narrator labeling it as 'specific.'"
+        },
+        {
+          "chapter": "chapter_07",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:1541 'the specific texture of someone who has been asked to show their work'; :1663 'the specific weariness of a professional'; :1729 'the specific detail of her hands'; :1777 'the specific weight of a decade of damage.' Four instances in a single chapter — the highest density.",
+          "rewrite_direction": "Keep at most one. 'The specific weariness of a professional' (1663) is the strongest; the others should be rewritten to show the texture/weight/detail rather than naming it as 'specific.'"
+        },
+        {
+          "chapter": "chapter_16",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:4280 'the specific comfort of burning wood in autumn air'; :4322 'the specific angle of the wrists'; :4354 'the specific horror of a fragment discovering that pieces of itself had been removed.' Three instances in a chapter that is already carrying P_WAY_CLAUSE density.",
+          "rewrite_direction": "Line 4354 is doing real emotional work (naming a horror unique to fragments). Keep it. Lines 4280 and 4322 are decorative — 'burning wood in autumn air' doesn't need 'specific' to be precise, and 'the angle of the wrists' is already specific by definition. Delete 'specific' or rephrase."
+        }
+      ]
+    },
+    {
+      "pattern_id": "P_BOWL_ORIGIN",
+      "global_problem": "The bowl's origin story — three coppers, Fenhold market, ordinary ceramic, hairline crack, good for soup — is rehearsed in near-identical factual language 7+ times across the novel. Each instance adds emotional context (prop → real tool → vessel for departure), but the factual scaffold is copied without variation. By Ch17, the reader has been told about the three coppers at least five times. This is a reader-knowledge violation that signals distrust of the reader's retention.",
+      "severity": "MEDIUM",
+      "affected_chapters": ["chapter_01", "chapter_04", "chapter_15", "chapter_16", "chapter_17", "chapter_18"],
+      "chapter_hits": [
+        {
+          "chapter": "chapter_16",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:4300 'Bought it from a woman at the Fenhold market when he was seventeen... Three coppers. She'd wrapped it in a scrap of linen and told him it was good for soup.' Full origin re-narration (9 sentences). The reader knows all of this from Ch1 and Ch4. snapshots/cycle_01/FINAL_NOVEL.md:4378 'Three coppers at a market stall, good for soup' — second rehearsal within the same chapter. snapshots/cycle_01/FINAL_NOVEL.md:4424 'the same three-copper purchase from a Fenhold market stall' — third rehearsal, 120 lines later.",
+          "rewrite_direction": "Ch16 is the Vess departure — the bowl's emotional significance is real here. But the factual recap is not needed. At line 4300, cut the origin paragraph to focus on what's NEW: that Maren is about to use it for expulsion for the first time. At 4378 and 4424, refer to the bowl without restating its price. The reader remembers three coppers."
+        },
+        {
+          "chapter": "chapter_17",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:4521 'ordinary, unenchanted, purchased from a market stall in Fenhold eleven years ago for three coppers'; :4669 'Three coppers' worth of ceramic from a village market'; :4749 'three coppers' worth of Fenhold market ceramic'.",
+          "rewrite_direction": "By Ch17 the bowl's ordinariness is established beyond any doubt. Refer to it as 'the bowl' or 'his bowl.' If the contrast between ordinary and extraordinary is the point, one brief reference suffices — not three within a single chapter."
+        },
+        {
+          "chapter": "chapter_18",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:4902 'the same bowl he'd bought at a market in Fenhold when he was seventeen — ordinary ceramic, a chip on the rim he'd stopped noticing years ago, no System properties of any kind.' Full origin re-narration again in the final chapter.",
+          "rewrite_direction": "The final chapter should trust the reader completely. The bowl is the novel's central object — its history is established. Line 4902 should be 'He took out the bowl.' The ordinariness resonates from accumulated context, not from being restated."
+        }
+      ]
+    },
+    {
+      "pattern_id": "P_CONTAM_SMELL",
+      "global_problem": "Contamination is described with the same ozone-sweetness formula ('ozone and sweetness,' 'ozone-sweet,' 'sweet-rot,' 'metallic sweetness,' 'ozone and something rotting underneath') in 20+ instances across 14 chapters. While the smell is a legitimate worldbuilding detail, the phrasing calcifies into a single sensory register. Constitution rule 9 applies: this descriptive default appears more than four times in the book.",
+      "severity": "MEDIUM",
+      "affected_chapters": ["chapter_01", "chapter_04", "chapter_05", "chapter_07", "chapter_08", "chapter_09", "chapter_10", "chapter_11", "chapter_12", "chapter_14", "chapter_15", "chapter_17", "chapter_18"],
+      "chapter_hits": [
+        {
+          "chapter": "chapter_09",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2071 'ozone and metal and the sweet chemical residue'; :2203 'ozone and sweetness and a sour undertone of decay'; :2403 'metallic sweetness of quest-light residue.' Three instances of the same smell described with the same vocabulary in a single chapter.",
+          "rewrite_direction": "Vary the sensory channel. Contamination can register as taste (copper on the tongue), texture (air that feels thick against the skin), sound (the hum intensifying), or temperature (warmth where warmth shouldn't be). In Harrow, where contamination is densest, use the variety to show escalation rather than repeating the same olfactory note."
+        },
+        {
+          "chapter": "chapter_17",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:4479 'ozone and sweetness and something rotting underneath'; :4511 'contamination smell was so concentrated this close that it had stopped being a smell and became a condition.' The second sentence is a genuine escalation — the formula breaking under its own weight. The first sentence is the standard formula unchanged.",
+          "rewrite_direction": "Line 4511 is excellent — it moves past the formula into something new. Cut 4479's restatement of the formula entirely. Let the Woundmouth's contamination register differently from the start — this is the novel's climactic site, and the smell should signal that something unprecedented is happening."
+        },
+        {
+          "chapter": "chapter_18",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:4812 'the ozone-sweet undertone'; :4878 'the ozone-sweet decay'; :4918 'The ozone-sweet smell intensified'; :4930 'copper and ozone.' Four instances of ozone/sweetness in the final chapter.",
+          "rewrite_direction": "The final chapter is deliberately quotidian — Maren doing routine work. The smell should be familiar but muted. One reference to establish it, then trust the reader. The repetition in the final chapter undermines the 'this is now ordinary work' theme by making the prose itself feel routine."
+        }
+      ]
+    },
+    {
+      "pattern_id": "P_DERRY_FAMILY",
+      "global_problem": "Derry's references to his family — Pell's counting progress, Lenna's garden (tomatoes, beans), the cow, fence posts — serve identical emotional function across 7 chapters: Derry expresses homesickness by narrating domestic details. The information content is the same each time. After the first two instances (Ch3 and Ch6), the reader knows Derry misses his family and processes that grief through domestic chatter. Subsequent rehearsals (Ch8, Ch9, Ch10, Ch13) re-explain what is already established.",
+      "severity": "MEDIUM",
+      "affected_chapters": ["chapter_03", "chapter_06", "chapter_08", "chapter_09", "chapter_10", "chapter_13"],
+      "chapter_hits": [
+        {
+          "chapter": "chapter_08",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:1830 'So Pell... Pell's been learning her numbers, right? Lenna says she's got to ten but she keeps skipping seven' — third iteration of Pell counting + Lenna reference; snapshots/cycle_01/FINAL_NOVEL.md:1838 'Derry was still talking about Pell's numbers' — narrator acknowledges the repetition without the text itself breaking the pattern.",
+          "rewrite_direction": "By Ch8, let Derry's homesickness manifest differently. Instead of another counting update, let him trail off mid-sentence, or refuse to talk about home, or say something that reveals he's starting to forget a detail (showing the cost of distance rather than restating the same content)."
+        },
+        {
+          "chapter": "chapter_09",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2191 'my daughter, Pell, she counts everything now. She learned to count up to forty and she counts everything. Steps from the door to the well. Chickens.' Full monologue re-introducing Pell as if the reader hasn't met her.",
+          "rewrite_direction": "Derry is nervous (Harrow, hero territory). His anxiety can manifest as family talk, but the content should advance. Instead of re-explaining that Pell counts, show Derry doing something with the knowledge — counting things himself (fence posts, scorch marks) in unconscious mimicry of his daughter. Show the imprint rather than restating the source."
+        },
+        {
+          "chapter": "chapter_13",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:3467 'Pell's three... she was learning to count. Did I tell you that?' — Derry re-introduces Pell's counting as if it's new information. He literally asks 'Did I tell you that?' despite having told Maren (and the reader) in Ch3, Ch6, Ch8, and Ch9. snapshots/cycle_01/FINAL_NOVEL.md:3477 — the narrator notes Derry's speech has 'the smoothed quality of something rehearsed,' which meta-acknowledges the repetition but doesn't solve the reader's experience of it.",
+          "rewrite_direction": "Ch13 is Derry's departure — the emotional stakes are highest. This is where the family details should land hardest. But they need to arrive in a form the reader hasn't heard before. Instead of another counting monologue, let Derry say something he's never said: what he's afraid Pell will think of him. Or let him be unable to talk about her at all — the silence would be more powerful than the seventh iteration of the same content."
+        }
+      ]
+    },
+    {
+      "pattern_id": "P_SILENCE_TAXONOMY",
+      "global_problem": "Aldric's silences are catalogued and differentiated through extended appositive descriptions ('the silence of a man who...', 'the quiet of a man...', 'not X-silence but Y-silence') in 15+ instances across 10+ chapters. The device is effective initially — it characterizes the internal relationship between Maren and Aldric — but becomes a structural default. By Ch16, Maren has taxonomized Aldric's silences so many times that each new catalogue reads as a recursive version of the same analytical habit rather than fresh observation.",
+      "severity": "MEDIUM",
+      "affected_chapters": ["chapter_01", "chapter_04", "chapter_05", "chapter_06", "chapter_07", "chapter_08", "chapter_12", "chapter_13", "chapter_16"],
+      "chapter_hits": [
+        {
+          "chapter": "chapter_05",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:1034 'Not the clipped absence of a man choosing his words. Not the pointed quiet of moral judgment. This was the silence of someone standing at an edge'; :1042 'the specific silence of a man who had always had words for everything and now, for the first time, did not.' Two catalogued silences within 8 lines.",
+          "rewrite_direction": "Keep one. Line 1042 is stronger (it names what's new about this silence). Line 1034's three-part negation structure ('not X, not Y, this was Z') is the template that recurs most heavily — vary the approach."
+        },
+        {
+          "chapter": "chapter_16",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:4226 'Not his afraid-quiet... Not his refusing-to-describe-what-he-saw-quiet... This was the quiet of a man who couldn't argue'; :4252 'This was the silence of a man hit in a place he'd never armored'; :4390 'the moral-outrage silence... the frightened silence... the refusing-to-describe-what-he-saw silence... the processing silence' (full re-enumeration); :4392 'This was the silence of a man standing in a room that had just lost a wall.' Four catalogued silences in one chapter — line 4390 is a comprehensive re-listing of types already established.",
+          "rewrite_direction": "Line 4390 is the most egregious: it re-enumerates the entire silence taxonomy the reader already knows. Delete the enumeration. At this point in the novel, Maren's knowledge of Aldric's silences is established — trust it. 'This silence was none of those' is sufficient without re-listing them all. Save the detailed cataloguing for ONE key moment (the post-Vess silence at 4392, which is genuinely new)."
+        },
+        {
+          "chapter": "chapter_13",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:3318 'Not the silence of withholding. Not the silence of a man composing his next report. The silence of someone who had said the worst thing'; :3347 'The quality of his silence had changed — before, Aldric's quiet had been withheld commentary, moral judgments filed but not delivered. Now it was the silence of a man who had said too much.' Two within 30 lines, both using the 'not-X, this-was-Y' template.",
+          "rewrite_direction": "Show the silence through Maren's physical response to it rather than taxonomizing it. If Aldric's quiet feels different after the revelation, Maren could feel it as a change in pressure, temperature, or weight in his skull — the body-level register the novel handles well elsewhere."
+        }
+      ]
+    },
+    {
+      "pattern_id": "P_CONSUMPTION_APPROACH",
+      "global_problem": "The consumption ritual follows a near-identical 7-beat sequence across 5 chapters: (1) kneel at pool/site, (2) position bowl, (3) open self with resistance, (4) body objects (gag/shaking/nausea), (5) contamination floods in, (6) physical cost (trembling/bleeding/vomiting), (7) Aldric reads aftermath data. Each instance serves different dramatic purposes, but the mechanical prose choreography calcifies — the reader encounters the same approach sequence with minor variation in Ch11, Ch14, Ch15, Ch17, and Ch18.",
+      "severity": "MEDIUM",
+      "affected_chapters": ["chapter_11", "chapter_14", "chapter_15", "chapter_17", "chapter_18"],
+      "chapter_hits": [
+        {
+          "chapter": "chapter_14",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:3774 'he knelt at the pool's edge with his bowl in his hands'; :3786 'opened'; :3792 'The contamination poured into the channel — ozone-sweet, acrid... His gorge kicked. His hands started shaking around the bowl.' Beats 1-4 match the Ch11 sequence closely.",
+          "rewrite_direction": "This is a supervised examination — the Crook sin-eaters are watching. Filter the ritual through their judgment rather than repeating the internal experience. Let Maren focus outward (their reactions, Thessa's corrections) rather than inward (the same gag-and-shake sequence). The approach can be compressed to a sentence or two."
+        },
+        {
+          "chapter": "chapter_17",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:4537 'He knelt. He took the bowl from his pack'; :4541 'palms up, bowl between them, not gripping but cradling'; :4565 'opened himself'; :4571 'His body tried to close. The reflex was automatic — the same gag that had accompanied every real consumption.' The text itself acknowledges the repetition ('the same gag') without varying the prose approach.",
+          "rewrite_direction": "The Woundmouth is the novel's climactic site. The approach sequence should break from the established pattern — perhaps the bowl does something different, or the gag doesn't come because Maren's body has learned, or the opening is instantaneous rather than gradual. Signal that this consumption is categorically different from the start, not just in what Maren sees afterward."
+        },
+        {
+          "chapter": "chapter_18",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:4910 'He knelt at the edge of the pool'; :4912 'The bowl went down in front of him'; :4916 'He opened'; :4918 'His stomach turned'; :4924 'his arms locked rigid, the muscles doing what the ritual demanded.' The sequence is structurally identical to Ch11 and Ch14.",
+          "rewrite_direction": "Ch18's final consumption is meant to be quotidian — maintenance work, not drama. Compress the approach to 2-3 sentences maximum. The brevity itself signals that this is routine now: 'He knelt, set the bowl, opened. The contamination pulled through him.' The reader knows the choreography. Let the mundanity of competence be the point."
+        }
+      ]
+    }
+  ]
+}

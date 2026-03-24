@@ -1,0 +1,27 @@
+{
+  "chapter_id": "chapter_14",
+  "cycle": 2,
+  "input_snapshot_hash": "6c8ca8f383829a3ca00e0a0dac45aedb432ca42069161d95f9d873022aa88edc",
+  "findings": [
+    {
+      "finding_id": "specific_particular_ch14",
+      "source": "manual_rescue/full_award_rescue.review.json",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.post_revision.md:2697, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:2761, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:2825, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:2883",
+      "problem": "'The specific' or 'the particular' appears 4 times in this chapter (full-novel count: 81). In a chapter organized around Nora's editorial-mode doubt and due diligence, the narrator's generic precision-marker undercuts the voice — Nora's professional mind should generate its own vocabulary for exactness rather than relying on the narrator's default adjective.",
+      "rewrite_direction": "Keep 1 instance (the strongest). Replace the other 3 at snapshots/cycle_02/FINAL_NOVEL.post_revision.md:2697, :2761, :2825, or :2883. Strategy: in Nora's editorial POV, replace 'the specific'/'the particular' with vocabulary from her professional register — 'the exact,' 'the unmistakable,' or constructions that show specificity through concrete detail rather than labeling it.",
+      "acceptance_test": "Revised chapter contains no more than 1 instance of 'the specific'/'the particular.' Replacement constructions use vocabulary consistent with Nora's established editorial voice."
+    }
+  ],
+  "must_fix_count": 1,
+  "non_negotiables": [
+    "No more than 1 instance of 'the specific'/'the particular' in the revised chapter",
+    "Replacement vocabulary must be consistent with Nora's established editorial voice and professional register"
+  ],
+  "acceptance_targets": [
+    "Three of the four instances at lines 2697, 2761, 2825, 2883 are replaced",
+    "Replacements use Nora's editorial-register vocabulary ('the exact,' 'the unmistakable') or show specificity through concrete detail rather than labeling",
+    "Retained instance is the strongest use — the one most earned by its context"
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "cycle": 2,
+  "findings": [
+    {
+      "acceptance_test": "Every bounty-amount reference in the manuscript resolves to a single consistent figure matching the continuity sheet, or any intentional discrepancy is narratively justified at point of introduction.",
+      "category": "continuity",
+      "chapter_id": "chapter_04",
+      "evidence": "Ch3 establishes the bounty as 'four thousand gold crowns' (lines 763, 793), consistent with the continuity sheet's '4,000-gold-crown bounty.' Ch4 reduces it to 'four hundred gold' at lines 906, 1092, and 1172. The amount drops by an order of magnitude with no narrative explanation.",
+      "finding_id": "CH04_BOUNTY_AMOUNT",
+      "problem": "The bounty\u2014Maren's core financial motivation and the story's primary external stakes driver\u2014contradicts itself between Ch3 and Ch4. Four thousand crowns versus four hundred gold is not a rounding error; it changes the scale of consequence. Every subsequent reference to the bounty inherits whichever wrong number the reader last encountered.",
+      "rewrite_direction": "Standardize all bounty references in Ch4 (lines 906, 1092, 1172) to 'four thousand gold crowns,' matching Ch3 and the continuity sheet. Audit Ch5-18 for any further bounty-amount references and reconcile. If a plot reason exists for a different figure (e.g., a partial bounty or a local price on Maren's head distinct from the Temple bounty), make that distinction explicit in dialogue or narration at first occurrence.",
+      "severity": "HIGH"
+    },
+    {
+      "acceptance_test": "Any in-narration arithmetic involving the bounty produces a result that is derivable from 4,000 gold crowns with explicit reasoning, and no unexplained third figure appears.",
+      "category": "continuity",
+      "chapter_id": "chapter_09",
+      "evidence": "Line 2231: Maren calculates the bounty as 'four hundred times' multiplied by three gold, yielding 1,200 gold. This matches neither 4,000 crowns (Ch3/continuity sheet) nor 400 gold (Ch4). The arithmetic itself is opaque\u2014'four hundred times' times three is 1,200, not 400 or 4,000.",
+      "finding_id": "CH09_BOUNTY_MATH",
+      "problem": "A third bounty figure surfaces through in-narration math that contradicts both prior amounts. The reader who has been tracking the number now has three incompatible values. This compounds the Ch4 error and suggests the bounty amount drifted during drafting without reconciliation.",
+      "rewrite_direction": "Replace the line-2231 calculation with arithmetic consistent with the canonical bounty amount (4,000 gold crowns). If Maren is mentally converting or discounting the bounty (e.g., estimating his share, subtracting bribes, converting currencies), make the conversion logic explicit so the reader can follow the math. The final figure must trace back to 4,000 crowns.",
+      "severity": "HIGH"
+    },
+    {
+      "acceptance_test": "Every character named in Ch15's death report was introduced with at least one identifying detail in Ch14. No character introduced in Ch14 disappears without accounting. No distinguishing trait is attributed to a character other than the one who displayed it.",
+      "category": "continuity",
+      "chapter_id": "chapter_14",
+      "evidence": "Ch14 names five sin-eaters at the Crook: Thessa, Kael, Petra, Errin, and Hale (introduced across lines 3540-3700). The continuity sheet specifies five sin-eaters. Ch15's death report (line 4057-4059) accounts for six people\u2014survivors Thessa, Kael, Hale; dead Petra, Ruald, Denna\u2014naming two characters (Ruald, Denna) who were never introduced in Ch14 and dropping Errin entirely.",
+      "finding_id": "CH14_INCOMPLETE_ROSTER",
+      "problem": "The roster breaks between chapters. Ruald and Denna appear only as names in a casualty list, denying the reader any basis for registering their deaths as losses. Errin, who was introduced and given scene presence in Ch14, vanishes without explanation. The root-chewing detail established as Kael's distinguishing gesture (Ch14, line 3596) is attributed to dead Ruald in Ch15 (line 4059), transplanting a living character's trait onto a character the reader never met.",
+      "rewrite_direction": "Option A (preferred): Introduce all six sin-eaters in Ch14\u2014Thessa, Kael, Petra, Errin, Ruald, and Denna\u2014each with at least one distinguishing detail (gesture, voice tic, physical marker). Root-chewing belongs to whichever character dies with it. Errin must either survive into Ch15's accounting or die on-page. Option B: Reduce Ch15's death list to characters actually introduced in Ch14 (Petra and Errin die; Thessa, Kael, Hale survive). This requires rewriting Thessa's loss-reaction in Ch15-16 to match a smaller body count. Either option must reconcile with the continuity sheet's character count.",
+      "severity": "HIGH"
+    },
+    {
+      "acceptance_test": "Ch15's death report names only characters introduced in Ch14. All distinguishing details in the death report match the character who displayed them. Survivor + dead count equals Ch14's total roster.",
+      "category": "continuity",
+      "chapter_id": "chapter_15",
+      "evidence": "Lines 4057-4059: 'Petra, Ruald, and Denna didn't make it. Kael's alive\u2014barely. Hale too.' Ruald is given the root-chewing trait (line 4059) that Ch14 line 3596 established as Kael's. The continuity sheet's state_transitions for Thessa reference 'Loses Petra, Ruald, and Denna,' suggesting the names were planned but never planted in Ch14's text.",
+      "finding_id": "CH15_ROSTER_DEATH_MISMATCH",
+      "problem": "The death report references a planned roster that was never fully written into the preceding chapter. This is a draft-state artifact: the outline knew about six sin-eaters, but the prose only introduced five, and the wrong five. The misattributed root-chewing detail compounds the error by creating a false continuity\u2014implying the reader should remember Ruald chewing root, when in fact Kael was the one who did it.",
+      "rewrite_direction": "After fixing Ch14's roster (see CH14_INCOMPLETE_ROSTER), revise Ch15 lines 4057-4059 to ensure: (a) every named dead character appeared on-page in Ch14, (b) the root-chewing detail belongs to the character who displayed it in Ch14, (c) the survivor count matches Ch14's roster minus the dead. If Kael chews root in Ch14 and survives in Ch15, do not attribute root-chewing to a dead character in the death report.",
+      "severity": "HIGH"
+    },
+    {
+      "acceptance_test": "At least one sin-eater death is rendered through concrete sensory detail (body, object, physical reaction) rather than reported in a casualty list. Surviving characters' grief registers through changed behavior or specific physical response, not summary emotion.",
+      "category": "structure",
+      "chapter_id": "chapter_15",
+      "evidence": "Lines 4057-4059 deliver three sin-eater deaths (Petra, Ruald, Denna) plus aftermath of the chapter's major confrontation in a brief reported-speech montage. The deaths are conveyed as a list item in Thessa's dialogue rather than experienced as events with embodied consequence.",
+      "finding_id": "CH15_CONSEQUENCE_COMPRESSION",
+      "problem": "Five chapters (Ch10-14) build toward the Crook confrontation and the sin-eater community's exposure to real danger. The payoff compresses three named deaths into a casualty roster delivered in dialogue, violating the constitution's anti-sanitization mandate (rule 10) and consequence-rendering requirement (rule 12). The reader invests in these characters' world but receives a summary where embodied aftermath should be. This is not restraint intensifying pressure\u2014it is compression evacuating it.",
+      "rewrite_direction": "Expand lines 4057-4059 into a passage that renders at least one death with sensory presence\u2014a body detail, a survivor's physical reaction, a specific object left behind. The other deaths can land through Thessa's changed behavior or a concrete aftermath detail (not 'she was devastated'). The passage need not be long; a paragraph of embodied specificity outweighs a page of summary. Model: the constitution's grief example (grocery-list detail) rather than the forbidden 'devastated by the loss' pattern.",
+      "severity": "HIGH"
+    },
+    {
+      "acceptance_test": "Ch14's opening confrontation does not replicate Ch7's expose-the-fraud structure. Thessa's skepticism, if present, takes a new form or serves a new narrative function.",
+      "category": "structure",
+      "chapter_id": "chapter_14",
+      "evidence": "Ch14's Crook arrival recapitulates Ch7's dynamic: Thessa confronts Maren's fraudulence, demands credentials he lacks, and exposes him before peers. Ch7 (lines 1700-1750) runs the same pattern\u2014Thessa's examination, Maren's deflection, public exposure of incompetence. Ch14 eventually reaches new ground (Maren's genuine contamination-clearing work), but the first half restages familiar conflict.",
+      "finding_id": "CH14_RESTAGED_CONFRONTATION",
+      "problem": "The reader experiences diminishing tension because the confrontation shape is recycled. Thessa-exposes-Maren is a one-time reveal; a second staging needs a fundamentally different power dynamic or new information to justify the structural repetition. The chapter does pivot, but the restaged portion occupies significant space before the pivot arrives.",
+      "rewrite_direction": "Compress or reframe the Ch14 confrontation opening so that Thessa's skepticism manifests differently than in Ch7. Options: (a) Thessa has already accepted Maren's presence and the tension is over what he'll be asked to do, not whether he belongs; (b) another sin-eater challenges Maren while Thessa unexpectedly defends him, inverting the Ch7 dynamic; (c) the confrontation is cut to a few lines of callback ('The same look she'd given him in the examination room') before moving to new territory. The goal is to avoid re-earning credibility that was already at stake in Ch7.",
+      "severity": "MEDIUM"
+    },
+    {
+      "acceptance_test": "Thessa's Ch7 examination dialogue does not reproduce the tripartite show-me/show-me/what-can-you-do structure from the style bible example. The scene achieves the same dramatic function through a different rhetorical approach.",
+      "category": "style_bible_compliance",
+      "chapter_id": "chapter_07",
+      "evidence": "Lines 1721-1729: Thessa's examination dialogue uses the structure 'Show me a containment pass' / 'A residual clear' / 'A density assessment'\u2014a tripartite credential-demand pattern that closely mirrors the style bible's Thessa example line: 'Show me the containment pass. No? Then show me the residual clear. No? What exactly do you know how to do?' The style bible marks all example lines as 'CALIBRATION ONLY \u2014 DO NOT COPY,' and the constitution (rule 2b) prohibits reproducing or closely paraphrasing example lines.",
+      "finding_id": "CH07_STYLE_BIBLE_ECHO",
+      "problem": "The manuscript's Thessa dialogue echoes the style bible's example line in structure, vocabulary, and escalation pattern. While not a verbatim copy, it reproduces the rhetorical shape (show-me X / show-me Y / what can you do) closely enough to constitute the kind of paraphrase the constitution forbids. This suggests the example line leaked into the draft as a template rather than serving its intended calibration function.",
+      "rewrite_direction": "Rewrite Thessa's examination sequence (lines 1721-1729) to convey the same credential-checking function through a different rhetorical structure. Thessa can still be demanding and methodical, but the specific pattern of 'Show me X. No? Show me Y. No? What do you actually know?' must be replaced. Options: she could run a practical test rather than asking for certifications, or she could challenge Maren's knowledge indirectly through a case-study question, or she could simply observe his technique and comment on its failures.",
+      "severity": "MEDIUM"
+    },
+    {
+      "acceptance_test": "The Ch6 Aldric/Vess argument does not replicate Ch5's accusation-deflection-counter-concession structure. The scene either introduces new stakes, shifts the conflict axis, or compresses the familiar beats to under five exchanges before pivoting.",
+      "category": "structure",
+      "chapter_id": "chapter_06",
+      "evidence": "Lines 1488-1508: Aldric and Vess argue about trust, obligation, and Maren's reliability in a pattern that recycles Ch5's conversational structure\u2014accusation, deflection, moral counter, reluctant concession. The specific beats (Aldric appeals to duty, Vess questions Maren's motives, Aldric concedes a point, temporary truce) mirror the Ch5 argument's shape.",
+      "finding_id": "CH06_ARGUMENT_RECURRENCE",
+      "problem": "Two consecutive chapters run the same argument template between the same characters without sufficient escalation or new information to justify the repetition. The reader registers this as spinning wheels rather than advancing conflict. The constitution's rule 9 (recurring prose formulas) extends to dialogue templates that repeat structural shapes across scenes.",
+      "rewrite_direction": "Revise the Ch6 argument (lines 1488-1508) to either (a) introduce new information that changes the power dynamic between Aldric and Vess, (b) shift the argument to a different axis of conflict (e.g., tactical disagreement rather than moral disagreement), or (c) compress the exchange so the familiar beats pass quickly and the scene pivots to new territory. The goal is for Ch6's conflict to feel like escalation from Ch5, not repetition of it.",
+      "severity": "MEDIUM"
+    }
+  ],
+  "pattern_findings": [],
+  "summary": "The Wrong Mouth sustains a distinctive, committed voice across eighteen chapters and delivers genuine emotional architecture\u2014Maren's fraudulence eroding under Aldric's residency, the Derry departure, the understated Barren Rill ending. Dialogue differentiation is strong: Maren's high-contraction con-man patter, Aldric's formal register properly eroding toward contractions by Ch17-18, Vess's flat tactical cadence, Derry's nervous chatter. The premise inversion\u2014LitRPG trappings reframed as maintenance work\u2014is original and fully committed. However, three categories of failure prevent a PASS verdict, listed in order of consequence: (1) CONTINUITY BREAKS: The bounty amount contradicts itself across chapters (4,000 crowns in Ch3 per the continuity sheet vs. 400 gold in Ch4), and the sin-eater roster in Ch14-15 is incoherent\u2014Ch14 introduces five named sin-eaters but Ch15's death report names two characters (Ruald, Denna) never introduced and loses one (Errin) entirely, with a distinguishing detail (root-chewing) misattributed from a living character to a dead one. (2) PROSE PATTERN TICS: The sensory baseline for contamination collapses to two formulas\u2014ozone-sweet smell and teeth/jaw hum\u2014repeated in near-identical phrasing across 12+ chapters each, violating Constitution rule 9. Hand tremors appear in 10+ chapters. These tics flatten what should be an escalating sensory arc into wallpaper. (3) STRUCTURAL COMPRESSION AND REPETITION: Ch15 kills three named sin-eaters and two hero-party members in a three-line montage, denying earned consequence. Ch14 restages Ch7's Thessa-exposes-Maren dynamic before reaching new ground. Ch6's Aldric/Vess argument recycles Ch5's conversational ladder. A style-bible example-line echo surfaces in Ch7. All failures are fixable within the existing architecture. The voice, emotional throughline, and premise commitment are shortlist-caliber raw material that revision can realize.",
+  "verdict": "FAIL"
+}

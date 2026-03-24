@@ -1,0 +1,82 @@
+{
+  "acceptance_targets": [
+    "[chapter_14_prose_01] PASS if at least two of the four cited reaction labels are replaced by concrete room behavior that lets the reader infer the social effect, and no replacement sentence explicitly tells the reader that a joke landed badly or that the wrong people laughed; FAIL if the revised passage still relies on narrator labeling for most of those beats.",
+    "[chapter_14_prose_02] PASS if each cited beat is rewritten as a full sentence with an explicit subject and auxiliary, or absorbed into a neighboring full sentence without losing emphasis; FAIL if any of those emphasis beats still rely on clipped fragments with omitted function words."
+  ],
+  "chapter_id": "chapter_14",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if at least two of the four cited reaction labels are replaced by concrete room behavior that lets the reader infer the social effect, and no replacement sentence explicitly tells the reader that a joke landed badly or that the wrong people laughed; FAIL if the revised passage still relies on narrator labeling for most of those beats.",
+      "chapter_id": "chapter_14",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:35; snapshots/cycle_01/chapters/chapter_14.md:105; snapshots/cycle_01/chapters/chapter_14.md:133; snapshots/cycle_01/chapters/chapter_14.md:153",
+      "finding_id": "chapter_14_prose_01",
+      "problem": "The narrator repeatedly captions how the room's humor and discomfort land instead of trusting bodies and timing to carry the beat. In a comedy-pressurized chapter, this explanatory reaction-labeling deflates the joke pressure the style bible asks to arrive through juxtaposition rather than commentary.",
+      "rewrite_direction": "Revise the reaction-caption lines at snapshots/cycle_01/chapters/chapter_14.md:35, snapshots/cycle_01/chapters/chapter_14.md:105, snapshots/cycle_01/chapters/chapter_14.md:133, and snapshots/cycle_01/chapters/chapter_14.md:153 so the room's response is shown through observable behavior, silence, or physical interruption rather than narrator verdicts about what kind of laugh or applause it was.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if each cited beat is rewritten as a full sentence with an explicit subject and auxiliary, or absorbed into a neighboring full sentence without losing emphasis; FAIL if any of those emphasis beats still rely on clipped fragments with omitted function words.",
+      "chapter_id": "chapter_14",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:160; snapshots/cycle_01/chapters/chapter_14.md:263; snapshots/cycle_01/chapters/chapter_14.md:401",
+      "finding_id": "chapter_14_prose_02",
+      "problem": "Emphasis increasingly arrives through clipped fragments such as 'Not metaphorically. Literally.' and 'Not desire exactly. Not now.', which becomes a visible prose tic and brushes against the constitution's ban on elliptical clipping in narration.",
+      "rewrite_direction": "Rework the emphatic fragment beats at snapshots/cycle_01/chapters/chapter_14.md:160, snapshots/cycle_01/chapters/chapter_14.md:263, and snapshots/cycle_01/chapters/chapter_14.md:401 into grammatically complete sentences or fold them into adjacent sentences so the stress comes from diction and sentence pressure rather than omitted subjects or auxiliaries.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "d611c05bf38132d499b808af368a337a192d65543592f2c2d4e4327e7209b409",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on prose and copyedit finish: diction precision, rhythm control, sentence-level clarity, grammar, line-level polish without flattening style, and explicit aesthetic-risk audit (sanitization is the primary risk \u2014 do not soften or euphemize; push toward creative risk and specificity).",
+    "key": "p3_prose_copyedit",
+    "label": "prose/copyedit fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into the ugly overlap between office systems and intimate life: sweat under formalwear, sponsored groceries in the middle of a fight, sex that clarifies nothing, a child noticing coercion through object logic. When choosing between elegant abstraction and embarrassing specificity, choose specificity unless the character is actively lying to themselves. If a scene risks becoming pure farce, restore weight through money, care work, or the body's limits; if it risks becoming solemn prestige fiction, let the absurd machinery stay absurd.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a draft replaces bodily fact, financial shame, sexual consequence, or emotional cruelty with tasteful summary, rewrite until the cost is present in scene rather than merely reported.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High - contractions are the norm in spoken dialogue; uncontracted forms are reserved for emphasis, ritual formality, or character-specific self-control.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "No two consecutive chapters should move the same way. Follow spectacle with aftermath, ritual with drift, humiliation with quiet, revelation with preparation. Vary scene count, dialogue density, location spread, and whether the chapter advances by confrontation, seduction, dread, comic escalation, or changed understanding.",
+      "diction": "Concrete contemporary English with room for corporate and systems language when characters would actually think or speak that way; every abstract term should be contaminated by bodily or household reality nearby.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third that stays inside the current focalizer's sensory field and only shifts focalization at scene breaks.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Alternate dry compression for comic pressure with longer, accrual-based sentences when shame, fatigue, or desire flood the body. Let jokes land through timing and juxtaposition rather than narrator commentary.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

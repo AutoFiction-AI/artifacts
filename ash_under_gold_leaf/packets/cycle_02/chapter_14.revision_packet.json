@@ -1,0 +1,142 @@
+{
+  "acceptance_targets": [
+    "[ch14-craft-001] PASS if the revised line at snapshots/cycle_02/chapters/chapter_14.md:13 no longer identifies the apartment as 3B and is consistent with canon (unit 2B or no unit number). FAIL if any explicit 3B reference remains in the chapter.",
+    "[ch14-dialogue-001] PASS if Leo's revised lines in the two target spans read as age-credible spoken language (concrete, immediate, kid-rhythmic) while preserving his curiosity. FAIL if those lines can still be read unchanged as adult thematic commentary.",
+    "[ch14-prose-001] PASS if, across the four target lines/spans, no more than two triadic \"and\" stacks remain and each revised passage uses a distinct cadence. FAIL if all four passages retain the same triadic stacking pattern.",
+    "[ch14-booker-001] PASS if the revised ending span (snapshots/cycle_02/chapters/chapter_14.md:431-434) communicates unresolved contradiction through concrete imagery without direct moral-summary phrasing. FAIL if the paragraph still states explicit abstract verdict language.",
+    "[FBK-004] PASS if snapshots/cycle_02/FINAL_NOVEL.md:4969 (and nearby age mentions) matches chapter_12's established age and no contradictory numeral remains. FAIL if 'eight years old' persists or another conflicting age appears in the chapter.",
+    "[FBK-005] PASS if all chapter_14 unit references read 2B and no 3B instance remains in snapshots/cycle_02/FINAL_NOVEL.md:4823-5273. FAIL if any 3B reference remains.",
+    "[FBK-010] PASS if the target span removes 'went still/flat' and uses a Carina-specific pressure response. FAIL if the line still relies on default stillness phrasing."
+  ],
+  "chapter_id": "chapter_14",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if the revised line at snapshots/cycle_02/chapters/chapter_14.md:13 no longer identifies the apartment as 3B and is consistent with canon (unit 2B or no unit number). FAIL if any explicit 3B reference remains in the chapter.",
+      "chapter_id": "chapter_14",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:13",
+      "finding_id": "ch14-craft-001",
+      "problem": "Continuity contradiction: the family apartment is identified as unit 3B, but canon fixes the Flatbush apartment as unit 2B. This is a hard world-state mismatch, not a stylistic variant.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_14.md:13, change the explicit unit reference from \"3B\" to the canonical unit, or remove the unit number entirely if the beat does not require it. Re-check adjacent arrival beats for any implicit floor/unit assumptions tied to this line.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if Leo's revised lines in the two target spans read as age-credible spoken language (concrete, immediate, kid-rhythmic) while preserving his curiosity. FAIL if those lines can still be read unchanged as adult thematic commentary.",
+      "chapter_id": "chapter_14",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:105",
+      "finding_id": "ch14-dialogue-001",
+      "problem": "Leo's voice occasionally skews too thesis-forward/adult (for example, \"that's math with people\" and later \"I assess\"), which weakens dialogue realism for an eight-year-old and makes him sound like a thematic delivery device.",
+      "rewrite_direction": "Rework Leo's lines in snapshots/cycle_02/chapters/chapter_14.md:101-105 and snapshots/cycle_02/chapters/chapter_14.md:141-150 so his logic stays sharp but lands in child-scaled syntax, concrete examples, and occasional verbal wobble rather than polished aphorism.",
+      "severity": "MEDIUM",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if, across the four target lines/spans, no more than two triadic \"and\" stacks remain and each revised passage uses a distinct cadence. FAIL if all four passages retain the same triadic stacking pattern.",
+      "chapter_id": "chapter_14",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:13",
+      "finding_id": "ch14-prose-001",
+      "problem": "A recurring prose construction becomes a tic: sensory/idea stacking in repeated \"X and Y and Z\" triads. The pattern appears enough times to feel mechanical and flatten rhythmic variation.",
+      "rewrite_direction": "Vary sentence architecture at snapshots/cycle_02/chapters/chapter_14.md:13, snapshots/cycle_02/chapters/chapter_14.md:107, snapshots/cycle_02/chapters/chapter_14.md:183, and snapshots/cycle_02/chapters/chapter_14.md:433 by converting at least two triads into different rhythms (for example, one verb-led action beat and one single-detail image beat).",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if the revised ending span (snapshots/cycle_02/chapters/chapter_14.md:431-434) communicates unresolved contradiction through concrete imagery without direct moral-summary phrasing. FAIL if the paragraph still states explicit abstract verdict language.",
+      "chapter_id": "chapter_14",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:433",
+      "finding_id": "ch14-booker-001",
+      "problem": "The ending briefly over-explains its moral ledger (\"It did not erase... It did not absolve...\"), reducing reader inference right after a strong concrete reveal.",
+      "rewrite_direction": "Recast snapshots/cycle_02/chapters/chapter_14.md:431-434 so ambivalence is carried by concrete countervailing detail (body memory, object detail, immediate action) rather than explicit abstract adjudication.",
+      "severity": "MEDIUM",
+      "source": "booker",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if snapshots/cycle_02/FINAL_NOVEL.md:4969 (and nearby age mentions) matches chapter_12's established age and no contradictory numeral remains. FAIL if 'eight years old' persists or another conflicting age appears in the chapter.",
+      "chapter_id": "chapter_14",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:4969",
+      "finding_id": "FBK-004",
+      "problem": "Cross-chapter character-state mismatch: this chapter calls Leo 'eight years old' after chapter_12 has already positioned him as nine.",
+      "rewrite_direction": "Revise the age callout at snapshots/cycle_02/FINAL_NOVEL.md:4969 to match the canonical age established in chapter_12. Sweep adjacent references in snapshots/cycle_02/FINAL_NOVEL.md:4850-5050 for any second conflicting age cue.",
+      "severity": "HIGH",
+      "source": "booker_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if all chapter_14 unit references read 2B and no 3B instance remains in snapshots/cycle_02/FINAL_NOVEL.md:4823-5273. FAIL if any 3B reference remains.",
+      "chapter_id": "chapter_14",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:4835",
+      "finding_id": "FBK-005",
+      "problem": "Geographic/setting continuity break: chapter_14 places the family at unit 3B, but continuity canon and chapter_12 place the apartment at unit 2B.",
+      "rewrite_direction": "Correct unit references in snapshots/cycle_02/FINAL_NOVEL.md:4835-4840 (and any repeated unit mention in this chapter) to 2B. Keep scene blocking and dialogue intact.",
+      "severity": "HIGH",
+      "source": "booker_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if the target span removes 'went still/flat' and uses a Carina-specific pressure response. FAIL if the line still relies on default stillness phrasing.",
+      "chapter_id": "chapter_14",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:5121",
+      "finding_id": "FBK-010",
+      "problem": "Recurring full-book default-stillness construction: 'went still/went flat' appears across at least 3 later chapters (14, 15, 17), flattening emotional differentiation. Decision for this chapter: REPLACE.",
+      "rewrite_direction": "Replace the reaction line at snapshots/cycle_02/FINAL_NOVEL.md:5121-5122 with a character-specific Carina stress tell aligned to style bible (multitasking, clipped command, task-redirection) rather than generic stillness.",
+      "severity": "MEDIUM",
+      "source": "booker_global",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "24cafaad9af708fedfa03f5d31aaa129e95e3db1b362b30654eb5f28a052546f",
+  "must_fix_count": 7,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "When choosing between reputationally safe abstraction and specific discomfort, choose specificity. Render addiction, sexuality, deceit, class shame, and grief at lived scale. In edge cases, preserve character truth and causal accountability over reader comfort or institutional decorum.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene demands bodily, moral, or economic specificity, euphemistic phrasing is treated as a failed draft and must be rewritten with concrete stakes and observable consequence.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the spoken default; full forms appear only for emphasis, ritual language, or character-specific formal posture",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate scene density and pressure modes: pair high-conflict chapters with quiet domestic or documentary chapters, vary dialogue-to-interiority ratios, and prevent identical chapter skeletons in consecutive sequence.",
+      "diction": "contemporary literary diction with class-aware, borough-specific concreteness; avoid prestige-neutral workshop language",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third centered on Marisol, with rare brief distance expansions for institutional scenes",
+      "narrative_tense": "past tense",
+      "rhythm_target": "alternating tensile compression and reflective extension; line-level cadence should carry emotional pressure, not just information",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

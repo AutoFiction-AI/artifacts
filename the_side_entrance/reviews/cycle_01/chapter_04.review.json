@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_04",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "PASS",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_04_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_01/chapters/chapter_04.md:21; snapshots/cycle_01/chapters/chapter_04.md:65; snapshots/cycle_01/chapters/chapter_04.md:87; snapshots/cycle_01/chapters/chapter_04.md:113; snapshots/cycle_01/chapters/chapter_04.md:127; snapshots/cycle_01/chapters/chapter_04.md:137; snapshots/cycle_01/chapters/chapter_04.md:275",
+      "problem": "The chapter keeps signaling class difference with explicit price vocabulary (\"expensive,\" \"money,\" \"cost,\" \"price\") even when the surrounding object detail already carries the social gap. That repetition starts to feel like over-literal reuse of Beni's style-bible lexical signature rather than fresh perception, which flattens the prose.",
+      "rewrite_direction": "Rework the status-marking passages at snapshots/cycle_01/chapters/chapter_04.md:21, snapshots/cycle_01/chapters/chapter_04.md:65, snapshots/cycle_01/chapters/chapter_04.md:87, snapshots/cycle_01/chapters/chapter_04.md:113, snapshots/cycle_01/chapters/chapter_04.md:127, snapshots/cycle_01/chapters/chapter_04.md:137, and snapshots/cycle_01/chapters/chapter_04.md:275 so more of the class information comes through material detail, labor relation, smell, or Beni's bodily response instead of direct value words. Keep one or two money comparisons where they cut deepest, but stop restating the same price logic in every location.",
+      "acceptance_test": "Pass if the revised paragraphs at snapshots/cycle_01/chapters/chapter_04.md:21, snapshots/cycle_01/chapters/chapter_04.md:87, and snapshots/cycle_01/chapters/chapter_04.md:127 still make the status gradient unmistakable while relying primarily on concrete detail rather than repeated \"expensive\"/\"money\"/\"cost\"/\"price\" cues; fail if those passages still announce class mainly through direct price words."
+    },
+    {
+      "finding_id": "chapter_04_prose_002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_01/chapters/chapter_04.md:53; snapshots/cycle_01/chapters/chapter_04.md:89; snapshots/cycle_01/chapters/chapter_04.md:113; snapshots/cycle_01/chapters/chapter_04.md:155; snapshots/cycle_01/chapters/chapter_04.md:163; snapshots/cycle_01/chapters/chapter_04.md:179; snapshots/cycle_01/chapters/chapter_04.md:185; snapshots/cycle_01/chapters/chapter_04.md:245; snapshots/cycle_01/chapters/chapter_04.md:257",
+      "problem": "Narration leans on the same `as if` comparison hinge so often that it becomes a chapter-level tic. The repeated construction does some useful inferential work at first, but by the back half it flattens the sentence music and makes Beni's judgments feel mechanically routed through one formula.",
+      "rewrite_direction": "Vary the comparison logic at snapshots/cycle_01/chapters/chapter_04.md:53, snapshots/cycle_01/chapters/chapter_04.md:89, snapshots/cycle_01/chapters/chapter_04.md:113, snapshots/cycle_01/chapters/chapter_04.md:155, snapshots/cycle_01/chapters/chapter_04.md:163, snapshots/cycle_01/chapters/chapter_04.md:179, snapshots/cycle_01/chapters/chapter_04.md:185, snapshots/cycle_01/chapters/chapter_04.md:245, and snapshots/cycle_01/chapters/chapter_04.md:257. Convert several of the current `as if` clauses into direct observation, causal statement, or free-indirect judgment so the prose keeps Beni's interpretive sharpness without repeating the same sentence shape.",
+      "acceptance_test": "Pass if the revised narration across the cited lines no longer stacks repeated `as if` clauses and at least three of the currently cited sentences now land through direct assertion or sensory judgment instead; fail if the chapter still uses `as if` as the default device for reading motive, status, or atmosphere across those same spans."
+    }
+  ],
+  "summary": "The chapter hits its spine cleanly: Jonas's studio feels materially different from the Ashdown house, Nina's dependence on Beni sharpens, Oscar's polite pressure lands, and Beni's first direct lie closes with real consequence. Dialogue stays distinct and register-true, continuity holds, and there is no tense drift or sanitization failure. The unresolved problem is prose repetition: the chapter overstates class through repeated price words and keeps returning to the same `as if` sentence hinge, so the review is not a full pass yet."
+}

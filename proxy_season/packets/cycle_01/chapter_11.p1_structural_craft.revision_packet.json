@@ -1,0 +1,113 @@
+{
+  "acceptance_targets": [
+    "[CH11-CRAFT-01] In the revised Scene 2, every sentence of interiority (thought, memory, sensation, self-assessment) must be attributable to the section's established POV character. No instance of 'Dan thought,' 'Dan understood,' 'Dan could hear [internal processing],' or equivalent constructions accessing Dan's interior state should appear after line 160 unless preceded by a new section break.",
+    "[CH11-CRAFT-02] The continuity sheet's environmental_constants entry and the chapter text must agree on the identity of the building Theo draws. Either (a) the environmental_constants entry is updated to identify the Kessler apartment building as Theo's subject, matching lines 124, 188, and 196; or (b) the chapter text is revised to identify the building across the street, with appropriate emotional reframing. Option (a) is strongly recommended as it preserves the chapter's earned emotional architecture and aligns with the spine and objects entries.",
+    "[CH11-CRAFT-03] The 'machine measures but cannot know' formulation should appear no more than twice in the revised chapter: once in Dan's interiority (currently line 154) and once in Mira's dialogue (currently line 222). The final two paragraphs (228-234) should contain zero sentences that explicitly state the chapter's thesis in narrator voice \u2014 the insight should be enacted through specific detail, not declared.",
+    "[CH11-AWARD-01] The revised chapter should contain at least three moments where the institutional language of the report provokes a specifically comic response from the POV character \u2014 a darkly funny observation, a wince-laugh recognition, or a moment where the absurdity of the clinical language is foregrounded through the character's reaction rather than absorbed into the general tone of grief. These moments should coexist with the emotional devastation, not replace it."
+  ],
+  "chapter_id": "chapter_11",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "In the revised Scene 2, every sentence of interiority (thought, memory, sensation, self-assessment) must be attributable to the section's established POV character. No instance of 'Dan thought,' 'Dan understood,' 'Dan could hear [internal processing],' or equivalent constructions accessing Dan's interior state should appear after line 160 unless preceded by a new section break.",
+      "chapter_id": "chapter_11",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:194 ('Dan thought about the dog in the lamp. The story that was just room after room...') and snapshots/cycle_01/chapters/chapter_11.md:216 ('Dan could hear, underneath the clinical language, the echo of every evening Theo had retreated...'). Both intrude into Dan's interiority within a section established as Mira's POV at snapshots/cycle_01/chapters/chapter_11.md:160 ('Mira closed the laptop').",
+      "finding_id": "CH11-CRAFT-01",
+      "problem": "Scene 2 (after the section break at line 158) establishes Mira's POV at line 160 but head-hops into Dan's interiority at lines 194 and 216 without a section break. The style bible requires clear POV rotation via section breaks in shared-POV chapters and specifically prohibits head-hopping within a scene. Lines 194-195 access Dan's memories (the dog-in-the-lamp story, Theo at breakfast, the gap in his teeth, covering the page with his arm). Line 216 accesses Dan's internal processing of what the next quarter's report will reveal. Neither is observable from Mira's POV.",
+      "rewrite_direction": "Option A: Add a second section break between the Mira-focused opening (snapshots/cycle_01/chapters/chapter_11.md:160-192) and the dialogue-heavy back half, allowing a clean shift to Dan's POV or shared-close narration. Option B: Rewrite snapshots/cycle_01/chapters/chapter_11.md:194-195 and snapshots/cycle_01/chapters/chapter_11.md:216-217 so that the observations are either (i) rendered as Mira's own interiority (what she imagines Dan is thinking, filtered through her knowledge of him), or (ii) externalized into Dan's physical behavior that Mira can observe. For line 194, Mira could recall the dog-in-the-lamp story herself, or Dan could mention it aloud. For line 216, the interior processing could be spoken as dialogue or rendered through Dan's physical tells (face, hands, posture) as observed by Mira.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "The continuity sheet's environmental_constants entry and the chapter text must agree on the identity of the building Theo draws. Either (a) the environmental_constants entry is updated to identify the Kessler apartment building as Theo's subject, matching lines 124, 188, and 196; or (b) the chapter text is revised to identify the building across the street, with appropriate emotional reframing. Option (a) is strongly recommended as it preserves the chapter's earned emotional architecture and aligns with the spine and objects entries.",
+      "chapter_id": "chapter_11",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:124 ('Theo had been drawing their building. The brownstone walk-up in Park Slope where the second stair creaked and the kitchen window faced east'), snapshots/cycle_01/chapters/chapter_11.md:188 ('This building. Where we live'), and snapshots/cycle_01/chapters/chapter_11.md:196 ('He's been drawing our apartment'). The continuity sheet environmental_constants entry states: 'The building across the street from the Kessler apartment is a brownstone with a cracked cornice \u2014 this is the building Theo draws from his window.'",
+      "finding_id": "CH11-CRAFT-02",
+      "problem": "The chapter establishes that Theo has been drawing the Kessler family's own building (the brownstone they live in). The continuity sheet's environmental_constants entry identifies 'the building across the street' as Theo's drawing subject. These are different buildings with different emotional implications. The chapter follows the chapter spine ('drawing their apartment building') and the objects entry ('apartment-building drawings'), both of which agree with the chapter text. The environmental_constants entry is the outlier, but it is a canonical continuity fact that contradicts the chapter. The continuity sheet is internally inconsistent on this point.",
+      "rewrite_direction": "The chapter's interpretation (Theo draws their own building) is narratively and emotionally correct and aligns with the chapter spine and objects entries. The recommended resolution is to keep the chapter text at snapshots/cycle_01/chapters/chapter_11.md:124, snapshots/cycle_01/chapters/chapter_11.md:188, and snapshots/cycle_01/chapters/chapter_11.md:196 as-is and update the environmental_constants entry in continuity_sheet.json to match. If the environmental_constants entry is instead authoritative, then lines 120-124, 166, 170-176, 188, 196, and all subsequent references to 'their building' / 'our apartment' would need rewriting to identify the subject as the brownstone across the street \u2014 but this would fundamentally alter the chapter's emotional logic (drawing the building he sees from his window is observation; drawing the building he lives in from outside is an act of holding something he fears losing).",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "The 'machine measures but cannot know' formulation should appear no more than twice in the revised chapter: once in Dan's interiority (currently line 154) and once in Mira's dialogue (currently line 222). The final two paragraphs (228-234) should contain zero sentences that explicitly state the chapter's thesis in narrator voice \u2014 the insight should be enacted through specific detail, not declared.",
+      "chapter_id": "chapter_11",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:154 ('a boy the machine could measure but would never sit with on the floor while he explained why the dog in the lamp didn't have a name'), snapshots/cycle_01/chapters/chapter_11.md:216 ('he could quantify but could not sit with on the floor while he explained that the dog in the lamp didn't need a name because nobody else was there to call it'), snapshots/cycle_01/chapters/chapter_11.md:228 ('The machine could map him. They could know him. Those were different things, and the difference was the whole difference'), and snapshots/cycle_01/chapters/chapter_11.md:234 ('It had shown them everything it could see. And the thing it couldn't see...').",
+      "finding_id": "CH11-CRAFT-03",
+      "problem": "The chapter's central thesis \u2014 that machine measurement is accurate but insufficient, that knowing a child differs from quantifying him \u2014 is explicitly stated five times. Lines 154 and 216 use nearly identical phrasing (both invoke sitting on the floor with Theo and the dog-in-the-lamp story, both use 'measure/quantify but could not sit with'). The final two paragraphs (228-234) convert the chapter's earned insight into explicit narrator commentary, telling the reader what 200 lines of juxtaposed report-language and parental interiority have already shown. The first statement (line 154) is powerful; each subsequent restatement dilutes its force. The chapter's method IS the argument \u2014 the narrator explaining the thesis afterward is redundant.",
+      "rewrite_direction": "Keep the first statement at snapshots/cycle_01/chapters/chapter_11.md:154 and Mira's dialogue version at snapshots/cycle_01/chapters/chapter_11.md:222 (which is distinct and character-voiced). Cut or substantially rework the near-duplicate at snapshots/cycle_01/chapters/chapter_11.md:216 \u2014 if Dan's interiority must return to the dog-in-the-lamp image, find new language and a new angle rather than reprising the same construction. Compress the final paragraphs at snapshots/cycle_01/chapters/chapter_11.md:228-234: trust the specific details (knock-knock jokes, one sock, the notebook) to carry the insight without the narrator explaining what they mean. The paragraph at line 228 could end after the enumeration of what the parents know and before the narrator declares that 'Those were different things, and the difference was the whole difference.' Let the reader close that gap.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "The revised chapter should contain at least three moments where the institutional language of the report provokes a specifically comic response from the POV character \u2014 a darkly funny observation, a wince-laugh recognition, or a moment where the absurdity of the clinical language is foregrounded through the character's reaction rather than absorbed into the general tone of grief. These moments should coexist with the emotional devastation, not replace it.",
+      "chapter_id": "chapter_11",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:37 ('a dandelion drawn by someone who'd never seen one' \u2014 mildly comic), snapshots/cycle_01/chapters/chapter_11.md:104 ('caloric intake at school lunch, bathroom-visit frequency' \u2014 deadpan absurdity noted but not pressurized), snapshots/cycle_01/chapters/chapter_11.md:150 ('Sixty-fourth percentile. Adequate.' \u2014 darkly comic). The chapter spine requires 'The assessment document rendered in specific comic-devastating detail.' The novel's risk policy demands comedy and devastation 'at full force, often in the same scene.'",
+      "finding_id": "CH11-AWARD-01",
+      "problem": "The chapter achieves devastating emotional force but the comic register is muted. The assessment document's absurdity \u2014 a machine scoring a child's resilience, counting his bathroom visits, classifying his drawings as 'architectural-motif persistence,' rating his coping mechanisms as 'adequate' \u2014 is inherently comic-devastating material. But the prose treats the institutional language primarily with horror and grief rather than exploiting the wince-laugh register the style bible demands. The moments of dark comedy (the dandelion logo, bathroom frequency, 'adequate') are noted in passing rather than pressurized. The style bible's risk policy says: 'choose the version that makes you wince and then laugh, or laugh and then wince.' This chapter makes the reader wince and then wince more.",
+      "rewrite_direction": "Identify 3-5 passages where the report's clinical language is most absurd \u2014 the bathroom-visit frequency at snapshots/cycle_01/chapters/chapter_11.md:104, the caloric intake classification at the same line, the 'adequate coping mechanisms' at snapshots/cycle_01/chapters/chapter_11.md:150, the 'architectural-motif persistence' at snapshots/cycle_01/chapters/chapter_11.md:152 \u2014 and lean into the POV character's comic awareness of the language's absurdity. Dan's stress-tell is noticing irrelevant physical details; his comic register lives in the gap between corporate vocabulary and honest observation. Let him have a moment of black humor about the machine classifying his son's bathroom habits or rating his resilience like a quarterly performance review. The comedy should emerge from the characters' recognition of absurdity, not from the narrator editorializing. The devastation should not be reduced \u2014 the comedy should coexist with it, making both registers sharper.",
+      "severity": "MEDIUM",
+      "source": "award",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "56d3126da7f2a9c376a9df2ac764c1cf5886d8da5982ea739a97a35534087bf8",
+  "must_fix_count": 4,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This novel's risk zone is the gap between dignity and absurdity. The characters are adults with professional histories, a child, a mortgage \u2014 people with legitimate self-respect \u2014 who have been reduced to warm bodies in an optimization framework they cannot understand. The comedy must not protect them from the humiliation; the humiliation must not neutralize the comedy. Render both registers at full force, often in the same scene. The temptation will be to soften the comedy into gentle satire or to darken the humiliation into dystopian grimness \u2014 resist both. The novel's territory is the painful and the funny coexisting without one defusing the other. Commit to the specific physical embarrassment of being professionally irrelevant. Commit to the specific tenderness of parenting under surveillance. Commit to the specific grief of a marriage that might still be alive inside a system that has classified it as infrastructure. When in doubt, choose the version that makes you wince and then laugh, or laugh and then wince \u2014 both are correct.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism is a craft failure equivalent to a plot hole. When a scene requires the reader to sit with discomfort \u2014 economic shame, marital cruelty, parental failure, institutional humiliation, the specific indignity of being professionally redundant \u2014 render it with full specificity. 'They struggled with the situation' is not a sentence that belongs in this novel. Name the thing. Show the body. Let the reader be uncomfortable.",
+      "intimacy_and_desire_policy": "Dan and Mira's residual physical attraction is a narrative force, not background radiation. When the novel's relational pressure calls for it, render desire with the same specificity as any other emotional state \u2014 where in the body it lives, how it changes the air in a room, the precise quality of proximity when two people who know each other's bodies are trying to pretend they don't. The almost-kiss in Chapter 7 should be as fully rendered as any confrontation scene.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "register_commitment": "This is a dark comedy, not a cautionary tale, not a dystopia, not a satire with a thesis. The novel should not argue about AI. It should render what it feels like to be a body in a world where bodies are overhead. The comic register is not a veneer over a serious message \u2014 it IS the message. A scene that is genuinely funny about genuine suffering is doing more literary work than a scene that is solemnly observant about the same material.",
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the default for all spoken English in this novel. Uncontracted forms should be reserved for deliberate emphasis, Lena Morse's institutional register, or moments where a character is being carefully precise. If a line of dialogue uses 'do not' instead of 'don't' or 'I am' instead of 'I'm,' there should be a reason audible in the scene's pressure.",
+      "idiolect_separation_required": true,
+      "interruption_and_overlap_policy": "Use interruptions, sentence fragments, and crosstalk when scene pressure warrants. Dan and Mira in particular should interrupt each other \u2014 they know each other's arguments before the sentences end. But every interruption must be motivated; do not scatter dashes for rhythmic texture alone.",
+      "leverage_shift_guidance": "Every exchange of more than three lines should shift the power balance between speakers. This doesn't require overt conflict \u2014 a silence, a deflection, a piece of information withheld or accidentally revealed, a joke that lands wrong, a question left unanswered can all shift leverage. The dialogue must be going somewhere, not circling.",
+      "max_consecutive_low_info_replies": 2,
+      "required_leverage_shifts_per_scene": 1,
+      "silence_as_dialogue": "Silence, non-answers, and topic changes are valid dialogue moves and often more revealing than speech. When a character doesn't respond to something, the reader should feel the weight of what wasn't said. Render these moments through physical action or observed stillness, not by narrating that the character chose not to speak."
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "No two consecutive chapters should share the same structural rhythm. Vary: scene count (single-scene compression vs. multi-scene chapters), dialogue density (some chapters are conversation-heavy, others are nearly silent), interiority depth (some chapters live mostly in the POV character's head, others are externally rendered), pacing (some chapters cover hours, others cover weeks in montage), and tonal register (comic chapters adjacent to devastating ones). The contrast between chapters is itself a narrative tool \u2014 use it to create whiplash, irony, and accumulating emotional force.",
+      "diction": "Contemporary, precise, and register-sensitive. The prose absorbs the vocabulary of its setting: corporate language, tech terminology, bureaucratic formulas \u2014 but always filtered through the POV character's relationship to that language. Dan uses corporate words reflexively and with slight discomfort. Mira uses strategic vocabulary as native speech. The narrator should not editorialize on the language; let the words sit in context and let the reader hear the dissonance. Avoid: prestige-literary abstractions that haven't been earned by sensory grounding, and journalistic explainer-prose that breaks character to tell the reader about the world.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person, rotating between Dan and Mira as primary POV characters. The camera stays tight to the current POV character's perceptions and vocabulary \u2014 what Dan notices is different from what Mira notices. In shared-POV chapters, the rotation should be clear (section breaks or sustained passages in one POV before shifting) rather than head-hopping within a scene.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Varied and responsive to scene pressure. Short declarative sentences for comic timing, for shock, and for moments of clarity. Longer, more syntactically complex sentences for interiority, sensory immersion, and emotional complexity. The rhythm should accelerate during confrontation and slow during reflection. Avoid settling into any single rhythmic default \u2014 if three consecutive paragraphs use the same sentence structure, one of them is wrong.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

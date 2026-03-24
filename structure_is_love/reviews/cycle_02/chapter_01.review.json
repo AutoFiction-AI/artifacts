@@ -1,0 +1,62 @@
+{
+  "chapter_id": "chapter_01",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH01-F001",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "The chapter runs two near-identical deterioration loops (dawn and afternoon) with limited new leverage: snapshots/cycle_02/chapters/chapter_01.md:83; snapshots/cycle_02/chapters/chapter_01.md:225; snapshots/cycle_02/chapters/chapter_01.md:325; snapshots/cycle_02/chapters/chapter_01.md:369",
+      "problem": "Scene progression stalls because the afternoon court block repeats the dawn block's beat pattern (drill -> distress -> refusal of relief -> completion) instead of introducing a materially new conflict variable. That weakens the chapter-level causal turn into isolation and commitment.",
+      "rewrite_direction": "Target snapshots/cycle_02/chapters/chapter_01.md:325-369 and snapshots/cycle_02/chapters/chapter_01.md:387-395. Compress the second drill loop and reallocate space to a non-court consequence beat (school or friendship rupture) that directly pressures the signing decision. Keep one physical callback, but make the key escalation social/relational rather than another full rep-by-rep collapse.",
+      "acceptance_test": "PASS if the revised span around snapshots/cycle_02/chapters/chapter_01.md:317-395 contains a new conflict beat absent from the dawn block (e.g., explicit Zoe/teacher confrontation or external consequence) that changes Anika's decision pressure before she signs; FAIL if the afternoon section still reproduces a second full drill-collapse cycle with no new leverage."
+    },
+    {
+      "finding_id": "CH01-F002",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "Both peak-confrontation moments retreat into withheld speech and immediate compliance: snapshots/cycle_02/chapters/chapter_01.md:239; snapshots/cycle_02/chapters/chapter_01.md:389; snapshots/cycle_02/chapters/chapter_01.md:391",
+      "problem": "Timidity at pressure peaks: the prose repeatedly approaches rupture, then backs away before one explicit spoken boundary lands on-page. The result softens the emotional reality of coercive father-daughter dynamics in a chapter built on pressure.",
+      "rewrite_direction": "Revise either snapshots/cycle_02/chapters/chapter_01.md:231-240 or snapshots/cycle_02/chapters/chapter_01.md:387-392 so Anika voices one concrete boundary/grievance aloud instead of only internalizing it. Force an immediate Ravi response (deflection, escalation, or concession) that changes what happens next in the scene.",
+      "acceptance_test": "PASS if at least one revised line in the targeted span states harm/cost explicitly in dialogue and triggers an observable response that alters immediate action; FAIL if both beats remain interior-only protest followed by silent compliance."
+    },
+    {
+      "finding_id": "CH01-F003",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "High-pressure exchanges repeatedly follow instruction/acknowledgment loops with minimal leverage movement: snapshots/cycle_02/chapters/chapter_01.md:53; snapshots/cycle_02/chapters/chapter_01.md:71; snapshots/cycle_02/chapters/chapter_01.md:95; snapshots/cycle_02/chapters/chapter_01.md:103; snapshots/cycle_02/chapters/chapter_01.md:327; snapshots/cycle_02/chapters/chapter_01.md:343",
+      "problem": "Dialogue cadence trends toward drill transcript in multiple stretches, which flattens tension and underuses idiolect separation. Ravi's directive register is consistent, but Anika's reply rhythm too often collapses to compliance tokens instead of stressed, over-specific evasions.",
+      "rewrite_direction": "Rework the dialogue in snapshots/cycle_02/chapters/chapter_01.md:53-71, snapshots/cycle_02/chapters/chapter_01.md:95-103, and snapshots/cycle_02/chapters/chapter_01.md:327-343 to include interruption, misalignment, and at least one counter-move per cluster. Keep natural contraction use as default; no broad shift to formal full forms.",
+      "acceptance_test": "PASS if each targeted dialogue cluster contains at least one leverage shift (new demand/refusal/reframe) and avoids back-to-back low-information acknowledgments without escalation; FAIL if the revised exchanges still read as instruction-response transcript with static power."
+    },
+    {
+      "finding_id": "CH01-F004",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "Recurring ordinal progression template appears across exertion beats: snapshots/cycle_02/chapters/chapter_01.md:83; snapshots/cycle_02/chapters/chapter_01.md:219; snapshots/cycle_02/chapters/chapter_01.md:223; snapshots/cycle_02/chapters/chapter_01.md:259; snapshots/cycle_02/chapters/chapter_01.md:335",
+      "problem": "A repeated sentence construction (In/During/By + sequence index + symptom update) appears more than twice, turning exertion prose into a recognizable formula and reducing rhythmic surprise.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_01.md:219-223, snapshots/cycle_02/chapters/chapter_01.md:259, and snapshots/cycle_02/chapters/chapter_01.md:335 so at least two of these passages use different syntactic scaffolds (cause-effect chaining, sensory interruption, or spatial pressure framing) rather than ordinal countdown phrasing.",
+      "acceptance_test": "PASS if no more than one of the targeted passages still uses ordinal lead-in construction and at least two are rewritten into distinct sentence shapes with clear sensory specificity; FAIL if three or more retain the same ordinal deterioration formula."
+    },
+    {
+      "finding_id": "CH01-F005",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "Counting/logistics diction saturates both neutral and peak moments: snapshots/cycle_02/chapters/chapter_01.md:3; snapshots/cycle_02/chapters/chapter_01.md:93; snapshots/cycle_02/chapters/chapter_01.md:169; snapshots/cycle_02/chapters/chapter_01.md:241; snapshots/cycle_02/chapters/chapter_01.md:307",
+      "problem": "Mechanical reuse of Anika's style-bible stress tell (counting/over-specifying logistics) flattens voice modulation. The tell works at panic points, but its near-constant use makes the interior pattern feel programmed rather than situational.",
+      "rewrite_direction": "Focus revisions on snapshots/cycle_02/chapters/chapter_01.md:3-5 and snapshots/cycle_02/chapters/chapter_01.md:307-311 (optionally snapshots/cycle_02/chapters/chapter_01.md:83-93). Retain counting at acute distress beats (snapshots/cycle_02/chapters/chapter_01.md:107-131 and snapshots/cycle_02/chapters/chapter_01.md:241), but swap at least two non-peak numeric/logistics clauses for sensory or relational detail.",
+      "acceptance_test": "PASS if counting/logistics language remains strongest at panic-control peaks while the revised opening and schedule-handout spans each contain concrete non-numeric detail replacing prior checklist phrasing; FAIL if the same density of numeric/logistics phrasing persists across both peak and non-peak beats."
+    }
+  ],
+  "summary": "Chapter 1 lands core spine beats and maintains continuity/tense alignment, but it does not clear pass-level craft due to repeated beat structure, transcript-like dialogue cadence, and prose tics (ordinal deterioration formulas and over-distributed counting stress tells) that flatten escalation and voice modulation. No canonical continuity contradictions were found against the provided continuity sheet."
+}

@@ -1,0 +1,115 @@
+{
+  "cycle": 2,
+  "verdict": "FAIL",
+  "summary": "Line-level prose and character voice control are often strong, contraction/register targets are mostly honored, and narrative tense remains consistently past tense across all 18 chapters. The manuscript still misses shortlist readiness because high-severity continuity breaks remain unresolved (death-scene geography drift, Leo age drift, apartment-unit drift), and recurring cross-chapter prose templates flatten voice texture in key turns. No major sanitization/fade-to-black failure was found, but structural coherence and pattern repetition are still below Booker shortlist standard.",
+  "findings": [
+    {
+      "finding_id": "FBK-001",
+      "severity": "HIGH",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:1653",
+      "problem": "Cross-chapter factual inconsistency: this chapter places Tomas's death at a motel 'off Hamilton Avenue,' while later chapters place the event in materially different geographies (e.g., chapter_09:2811 'off Atlantic'; chapter_17:6222 Queens highway motel) and chapter_12 anchors Room 214 in formal records. This is a continuity break, not additive detail.",
+      "rewrite_direction": "Revise the confession span at snapshots/cycle_02/FINAL_NOVEL.md:1653-1682 so the location nomenclature matches the canonical record thread used elsewhere (same motel identifier and room number family, not a new location). If Gloria is still withholding at this point, make the uncertainty explicit without introducing a conflicting place-name. Keep the emotional beat, but remove geography drift.",
+      "acceptance_test": "PASS if snapshots/cycle_02/FINAL_NOVEL.md:1653-1682 no longer uses 'off Hamilton Avenue' and instead aligns with a single canonical motel/location string that can cohere with the documentary line. FAIL if chapter_06 still introduces a distinct location label that conflicts with later chapters."
+    },
+    {
+      "finding_id": "FBK-002",
+      "severity": "HIGH",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:2811",
+      "problem": "Cross-chapter factual inconsistency: Salvador's testimony says 'motel off Atlantic,' which conflicts with chapter_06 and chapter_17 variants and fractures the core death-scene geography.",
+      "rewrite_direction": "Update the testimony span at snapshots/cycle_02/FINAL_NOVEL.md:2811-2822 so location details match the same canonical motel reference used after revision in chapter_06 and chapter_17. Preserve Salvador's manipulative cadence, but remove the standalone 'off Atlantic' locator.",
+      "acceptance_test": "PASS if snapshots/cycle_02/FINAL_NOVEL.md:2811-2822 uses the same death-location naming system as the rest of the revised manuscript and contains no conflicting locator. FAIL if 'off Atlantic' remains or a third competing location is introduced."
+    },
+    {
+      "finding_id": "FBK-003",
+      "severity": "HIGH",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:4105",
+      "problem": "Cross-chapter character-state drift: chapter_12 defines Leo as nine, but chapter_14 later calls him eight, creating age regression across forward-moving time.",
+      "rewrite_direction": "Lock the age anchor in snapshots/cycle_02/FINAL_NOVEL.md:4105 (and nearby child references at 4177-4190) with an explicit continuity cue that survives later chapters (e.g., age + school-grade context), so later chapters cannot regress him by a year.",
+      "acceptance_test": "PASS if chapter_12 contains an explicit, unambiguous Leo age anchor in the target span that supports forward continuity. FAIL if the span remains loose enough to permit the chapter_14 downgrade or introduces a conflicting age within chapter_12."
+    },
+    {
+      "finding_id": "FBK-004",
+      "severity": "HIGH",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:4969",
+      "problem": "Cross-chapter character-state mismatch: this chapter calls Leo 'eight years old' after chapter_12 has already positioned him as nine.",
+      "rewrite_direction": "Revise the age callout at snapshots/cycle_02/FINAL_NOVEL.md:4969 to match the canonical age established in chapter_12. Sweep adjacent references in snapshots/cycle_02/FINAL_NOVEL.md:4850-5050 for any second conflicting age cue.",
+      "acceptance_test": "PASS if snapshots/cycle_02/FINAL_NOVEL.md:4969 (and nearby age mentions) matches chapter_12's established age and no contradictory numeral remains. FAIL if 'eight years old' persists or another conflicting age appears in the chapter."
+    },
+    {
+      "finding_id": "FBK-005",
+      "severity": "HIGH",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:4835",
+      "problem": "Geographic/setting continuity break: chapter_14 places the family at unit 3B, but continuity canon and chapter_12 place the apartment at unit 2B.",
+      "rewrite_direction": "Correct unit references in snapshots/cycle_02/FINAL_NOVEL.md:4835-4840 (and any repeated unit mention in this chapter) to 2B. Keep scene blocking and dialogue intact.",
+      "acceptance_test": "PASS if all chapter_14 unit references read 2B and no 3B instance remains in snapshots/cycle_02/FINAL_NOVEL.md:4823-5273. FAIL if any 3B reference remains."
+    },
+    {
+      "finding_id": "FBK-006",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:2529",
+      "problem": "Recurring full-book pattern: suppression template ('almost said ... instead said ...') appears in at least 4 chapters (08, 11, 12, 15). In this chapter, the template blunts immediacy at a key boundary/consent beat. Decision for this chapter: REPLACE.",
+      "rewrite_direction": "Rewrite snapshots/cycle_02/FINAL_NOVEL.md:2529-2534 so Marisol's hesitation is conveyed through concrete action/voice texture without the 'almost said' scaffold. Keep the relational stakes and Ada's boundary pressure unchanged.",
+      "acceptance_test": "PASS if snapshots/cycle_02/FINAL_NOVEL.md:2529-2534 no longer uses an 'almost ... instead ...' suppression construction and still clearly conveys hesitation plus commitment. FAIL if the same template remains."
+    },
+    {
+      "finding_id": "FBK-007",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:3967",
+      "problem": "Recurring full-book pattern: suppression template appears across 4 chapters; this chapter contains two instances (3967 and 4065), making the tic audible. Decision for this chapter: KEEP the later high-pressure meeting-line version at 4065, REPLACE the earlier municipal-desk version at 3967.",
+      "rewrite_direction": "At snapshots/cycle_02/FINAL_NOVEL.md:3967-3968, replace the suppression scaffold with direct voiced admission or sensory-economic specificity. Preserve snapshots/cycle_02/FINAL_NOVEL.md:4065 as the chapter's single retained suppression beat.",
+      "acceptance_test": "PASS if the 3967 instance is rewritten out of suppression-template form and chapter_11 contains at most one such construction (the retained 4065 beat). FAIL if both 3967 and 4065 remain in template form."
+    },
+    {
+      "finding_id": "FBK-008",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:4475",
+      "problem": "Recurring full-book suppression template (4-chapter pattern) recurs here as 'Instead she said, “Fine.”' right at the expulsion pivot, reducing local distinctness. Decision for this chapter: REPLACE.",
+      "rewrite_direction": "Rewrite snapshots/cycle_02/FINAL_NOVEL.md:4475-4478 with a chapter-specific acceptance beat grounded in body/task detail (packing, grip, breath, spatial action) rather than the generic 'Instead she said' release.",
+      "acceptance_test": "PASS if snapshots/cycle_02/FINAL_NOVEL.md:4475-4478 conveys collapse/acceptance without using an 'instead said' suppression turn. FAIL if the suppression template remains."
+    },
+    {
+      "finding_id": "FBK-009",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:5390",
+      "problem": "Recurring full-book suppression template (4 chapters) appears again in a critical legal-death transition ('She almost hung up. Instead she said...'). Decision for this chapter: REPLACE.",
+      "rewrite_direction": "Revise snapshots/cycle_02/FINAL_NOVEL.md:5390-5394 so Marisol's response to estate counsel is immediate and scene-specific without 'almost ... instead ...' framing. Keep the shock and legal pressure intact.",
+      "acceptance_test": "PASS if snapshots/cycle_02/FINAL_NOVEL.md:5390-5394 no longer uses the suppression template and still shows her choosing engagement under duress. FAIL if 'almost ... instead ...' remains."
+    },
+    {
+      "finding_id": "FBK-010",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:5121",
+      "problem": "Recurring full-book default-stillness construction: 'went still/went flat' appears across at least 3 later chapters (14, 15, 17), flattening emotional differentiation. Decision for this chapter: REPLACE.",
+      "rewrite_direction": "Replace the reaction line at snapshots/cycle_02/FINAL_NOVEL.md:5121-5122 with a character-specific Carina stress tell aligned to style bible (multitasking, clipped command, task-redirection) rather than generic stillness.",
+      "acceptance_test": "PASS if the target span removes 'went still/flat' and uses a Carina-specific pressure response. FAIL if the line still relies on default stillness phrasing."
+    },
+    {
+      "finding_id": "FBK-011",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:5510",
+      "problem": "Recurring default-stillness construction (chapters 14, 15, 17) repeats here as 'Marisol went still,' reducing tonal precision at a high-stakes evidentiary handoff. Decision for this chapter: REPLACE.",
+      "rewrite_direction": "Rewrite snapshots/cycle_02/FINAL_NOVEL.md:5510-5514 with a concrete somatic/behavioral response tied to this scene's stakes (e.g., grip change, breath pattern, legal scan behavior), not a generic stillness label.",
+      "acceptance_test": "PASS if snapshots/cycle_02/FINAL_NOVEL.md:5510-5514 removes the default stillness phrase and renders a distinct physical response. FAIL if 'went still' remains."
+    },
+    {
+      "finding_id": "FBK-012",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:6356",
+      "problem": "Recurring default-flatness construction (chapters 14, 15, 17) appears as 'voice went flat with effort,' contributing to cross-chapter reaction sameness. Decision for this chapter: REPLACE.",
+      "rewrite_direction": "Revise snapshots/cycle_02/FINAL_NOVEL.md:6356-6357 so Gloria's pressure voice shows up via her chapter-specific register (command shift + practical threat detail) without 'went flat' shorthand.",
+      "acceptance_test": "PASS if snapshots/cycle_02/FINAL_NOVEL.md:6356-6357 no longer uses default flatness wording and instead expresses Gloria's stress through idiolect-consistent diction/rhythm. FAIL if 'went flat' phrasing remains."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "chapter_id": "chapter_12",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_12_craft_001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_02/chapters/chapter_12.md:27; snapshots/cycle_02/chapters/chapter_12.md:41; snapshots/cycle_02/chapters/chapter_12.md:159; snapshots/cycle_02/chapters/chapter_12.md:395; snapshots/cycle_02/chapters/chapter_12.md:441",
+      "problem": "The chapter repeatedly slips into clipped narrator fragments (\"Not in apology. In refusal.\" / \"Not just heat.\" / \"Only the arm.\" / \"Which stung.\" / \"Acreage.\") even though the constitution explicitly disallows elliptical clipping in narration. The compression is vivid, but the repeated subject/verb drop reads as a house-style violation rather than earned pressure-sensitive rhythm.",
+      "rewrite_direction": "Revise the fragment clusters at snapshots/cycle_02/chapters/chapter_12.md:27, snapshots/cycle_02/chapters/chapter_12.md:41, snapshots/cycle_02/chapters/chapter_12.md:159, snapshots/cycle_02/chapters/chapter_12.md:395, and snapshots/cycle_02/chapters/chapter_12.md:441 into grammatically complete sentences that preserve Cora's close-third urgency. Fold the emphasis back into full syntax instead of using standalone fragments; for example, convert corrective beats into complete clauses rather than isolated tags.",
+      "acceptance_test": "Pass if the revised narration at snapshots/cycle_02/chapters/chapter_12.md:27, snapshots/cycle_02/chapters/chapter_12.md:41, snapshots/cycle_02/chapters/chapter_12.md:159, snapshots/cycle_02/chapters/chapter_12.md:395, and snapshots/cycle_02/chapters/chapter_12.md:441 reads as complete sentences with explicit subjects/verbs and no standalone clipped narrator fragments. Fail if any of those spans still rely on fragmentary emphasis like \"Not in apology\" or \"Acreage\" outside dialogue."
+    },
+    {
+      "finding_id": "chapter_12_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_02/chapters/chapter_12.md:9; snapshots/cycle_02/chapters/chapter_12.md:41; snapshots/cycle_02/chapters/chapter_12.md:55; snapshots/cycle_02/chapters/chapter_12.md:161; snapshots/cycle_02/chapters/chapter_12.md:205; snapshots/cycle_02/chapters/chapter_12.md:245; snapshots/cycle_02/chapters/chapter_12.md:303; snapshots/cycle_02/chapters/chapter_12.md:313; snapshots/cycle_02/chapters/chapter_12.md:327; snapshots/cycle_02/chapters/chapter_12.md:449",
+      "problem": "The chapter leans on the same `as if` comparison template at least ten times. Because the surrounding prose is otherwise strong and tactile, that repeated sentence shape starts to feel like autopilot rather than fresh perception, flattening distinct beats into a noticeable chapter tic.",
+      "rewrite_direction": "Vary the comparison logic across snapshots/cycle_02/chapters/chapter_12.md:9, snapshots/cycle_02/chapters/chapter_12.md:41, snapshots/cycle_02/chapters/chapter_12.md:55, snapshots/cycle_02/chapters/chapter_12.md:161, snapshots/cycle_02/chapters/chapter_12.md:205, snapshots/cycle_02/chapters/chapter_12.md:245, snapshots/cycle_02/chapters/chapter_12.md:303, snapshots/cycle_02/chapters/chapter_12.md:313, snapshots/cycle_02/chapters/chapter_12.md:327, and snapshots/cycle_02/chapters/chapter_12.md:449. Keep the strongest one or two `as if` comparisons, but rewrite the rest into direct physical description, causal phrasing, or different metaphor structures so each beat earns its own texture.",
+      "acceptance_test": "Pass if the revised chapter leaves no more than two `as if` comparisons across the targeted spans in snapshots/cycle_02/chapters/chapter_12.md:9, :41, :55, :161, :205, :245, :303, :313, :327, and :449, and each rewritten beat still lands through concrete sensory or emotional detail rather than abstraction. Fail if the chapter still repeats the same `as if` sentence shape across most of those moments."
+    }
+  ],
+  "summary": "Strong aftermath chapter on structure and dialogue: Dell's bodily dependence is rendered unsanitized, Cora/Thea/Hester/August remain voice-distinct, the chapter stays in canonical past tense, and Cora's priority shift from land to son lands clearly by the flour-tin ending. It fails craft/prose on two execution issues: repeated clipped narration violates the constitution's ban on elliptical narrator shorthand, and the chapter overuses the same `as if` comparison template often enough to flatten otherwise sharp prose. No continuity contradiction or tense drift surfaced against the supplied context.",
+  "coverage_scene_ids": []
+}

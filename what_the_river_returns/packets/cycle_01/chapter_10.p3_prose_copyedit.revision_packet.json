@@ -1,0 +1,69 @@
+{
+  "acceptance_targets": [
+    "[ch10-prose-002] PASS if, after revision, the exact construction pattern used at snapshots/cycle_01/chapters/chapter_10.md:31 (\"gave her a ... look\") appears no more than once across those three target lines and each replacement beat conveys a distinct social pressure cue. FAIL if the same formula still appears 2+ times in that set."
+  ],
+  "chapter_id": "chapter_10",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if, after revision, the exact construction pattern used at snapshots/cycle_01/chapters/chapter_10.md:31 (\"gave her a ... look\") appears no more than once across those three target lines and each replacement beat conveys a distinct social pressure cue. FAIL if the same formula still appears 2+ times in that set.",
+      "chapter_id": "chapter_10",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:31; snapshots/cycle_01/chapters/chapter_10.md:129; snapshots/cycle_01/chapters/chapter_10.md:197",
+      "finding_id": "ch10-prose-002",
+      "problem": "A recurring reaction template (\"gave her a [adjective] look\") appears three times and starts to feel mechanical rather than character-specific, flattening tension beats during key trust negotiations.",
+      "rewrite_direction": "Revise reaction beats at snapshots/cycle_01/chapters/chapter_10.md:31, snapshots/cycle_01/chapters/chapter_10.md:129, and snapshots/cycle_01/chapters/chapter_10.md:197 so at least two of the three use different constructions tied to context (e.g., gesture, posture shift, or speech interruption) rather than the repeated visual-look formula.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "abda15ed27557927f5f0d07bcfcd125f4817763da85ae729c026eb16389f3e58",
+  "must_fix_count": 1,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on prose and copyedit finish: diction precision, rhythm control, sentence-level clarity, grammar, line-level polish without flattening style, and explicit aesthetic-risk audit (sanitization is the primary risk \u2014 do not soften or euphemize; push toward creative risk and specificity).",
+    "key": "p3_prose_copyedit",
+    "label": "prose/copyedit fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "When edge cases arise, choose the version that preserves uncomfortable specificity and character accountability; do not replace difficult scenes with procedural summary, and do not mute class, race, sexuality, or institutional cruelty when those forces are actively shaping choices.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene with violence, racism, grief, or moral compromise is rendered in abstract or polite shorthand, revise to restore specific bodily, social, and material consequence before accepting the draft.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the baseline in contemporary Mississippi speech; uncontracted forms are reserved for formality, emphasis, or social performance.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "rotate structural textures across chapters: procedural surge, quiet domestic interval, document-driven slow burn, dread preparation, aftermath inventory, and information-turn chapters; avoid repeating scene count plus dialogue density pattern in adjacent chapters.",
+      "diction": "literary but grounded; precise legal and forensic terms when needed, balanced by lived vernacular and local material detail.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third person anchored primarily to Lena, with brief controlled expansions only when factual clarity requires it.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "alternate compressed procedural sentences with longer sensory-emotional lines so pressure and reflection keep rebalancing.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

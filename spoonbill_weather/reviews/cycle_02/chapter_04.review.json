@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_04",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_04_F01_clipped_narration",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:11; snapshots/cycle_02/chapters/chapter_04.md:79; snapshots/cycle_02/chapters/chapter_04.md:289",
+      "problem": "The chapter repeatedly uses clipped, verbless narration for emphasis (\"Too quick.\" / \"Not annoyed. Measuring.\" / \"Not cold. Not warm. Exact.\"), but the constitution explicitly forbids elliptical clipping in narration. The compression reads like a stylistic shortcut rather than earned bluntness.",
+      "rewrite_direction": "Recast the fragment beats at snapshots/cycle_02/chapters/chapter_04.md:11, snapshots/cycle_02/chapters/chapter_04.md:79, and snapshots/cycle_02/chapters/chapter_04.md:289 into grammatically complete sentences that keep Mina's close-third pressure and Rhea's appraisal sharp without dropping subjects or auxiliaries. Check the immediately adjacent sentences in those exchanges for any similar fragment carryover and repair them in the same pass.",
+      "acceptance_test": "Pass if the revised passages anchored at snapshots/cycle_02/chapters/chapter_04.md:9, snapshots/cycle_02/chapters/chapter_04.md:11, snapshots/cycle_02/chapters/chapter_04.md:77, snapshots/cycle_02/chapters/chapter_04.md:79, snapshots/cycle_02/chapters/chapter_04.md:287, and snapshots/cycle_02/chapters/chapter_04.md:289 contain no emphatic verbless narration fragments; fail if any beat equivalent to \"Too quick\" or \"Not cold. Not warm. Exact.\" remains as fragmentary sentence compression."
+    },
+    {
+      "finding_id": "chapter_04_F02_stress_tell_repetition",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:11; snapshots/cycle_02/chapters/chapter_04.md:77; snapshots/cycle_02/chapters/chapter_04.md:165; snapshots/cycle_02/chapters/chapter_04.md:287; snapshots/cycle_02/chapters/chapter_04.md:357; snapshots/cycle_02/chapters/chapter_04.md:167; snapshots/cycle_02/chapters/chapter_04.md:171; snapshots/cycle_02/chapters/chapter_04.md:411",
+      "problem": "Mina's pressure and attraction are rendered too often through the same literal stress-tell vocabulary: she is \"too quick/too fast\" four times, then both Rhea and Mina name her as \"exact.\" Because the style bible already identifies those as Mina/Rhea stress markers, this reuse feels mechanically profile-driven instead of freshly embodied on the page.",
+      "rewrite_direction": "Vary the pressure cues in the local beats at snapshots/cycle_02/chapters/chapter_04.md:77, snapshots/cycle_02/chapters/chapter_04.md:165, snapshots/cycle_02/chapters/chapter_04.md:167, snapshots/cycle_02/chapters/chapter_04.md:171, snapshots/cycle_02/chapters/chapter_04.md:287, snapshots/cycle_02/chapters/chapter_04.md:357, and snapshots/cycle_02/chapters/chapter_04.md:411. Keep at most one direct speed-tell and one direct \"exact\" naming, and let the other moments show Mina's stress or desire through distinct actions, sensory shifts, or task-specific behavior tied to bats, coffee, the thin-walled house, or Tomas's offstage presence.",
+      "acceptance_test": "Pass if, across snapshots/cycle_02/chapters/chapter_04.md:77, snapshots/cycle_02/chapters/chapter_04.md:165, snapshots/cycle_02/chapters/chapter_04.md:167, snapshots/cycle_02/chapters/chapter_04.md:171, snapshots/cycle_02/chapters/chapter_04.md:287, snapshots/cycle_02/chapters/chapter_04.md:357, and snapshots/cycle_02/chapters/chapter_04.md:411, there is no more than one direct \"too quick/too fast\" formulation and no more than one direct \"exact\" label; fail if the revision still relies on repeated keyword tells instead of varied embodied cues."
+    },
+    {
+      "finding_id": "chapter_04_F03_warning_without_cost",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:305; snapshots/cycle_02/chapters/chapter_04.md:319; snapshots/cycle_02/chapters/chapter_04.md:355; snapshots/cycle_02/chapters/chapter_04.md:385; snapshots/cycle_02/chapters/chapter_04.md:397; snapshots/cycle_02/chapters/chapter_04.md:403",
+      "problem": "The breakfast scene names the camp's surveillance and power asymmetry clearly, but it spends multiple beats explaining the risk and then resolves into an immediate reinvitation for tomorrow night. That gives the chapter's warning more thematic clarity than practical cost, so the ending hands Mina forward motion without making her absorb a sharper consequence or boundary.",
+      "rewrite_direction": "In the breakfast confrontation and exit anchored at snapshots/cycle_02/chapters/chapter_04.md:305, snapshots/cycle_02/chapters/chapter_04.md:319, snapshots/cycle_02/chapters/chapter_04.md:355, snapshots/cycle_02/chapters/chapter_04.md:385, and snapshots/cycle_02/chapters/chapter_04.md:403, keep Rhea's warning and the tomorrow-night hook, but compress the duplicated explanation and attach the invitation to a concrete changed condition: a stated boundary, a new leverage point, or a specific risk Mina has to accept before she says yes.",
+      "acceptance_test": "Pass if the revised ending anchored at snapshots/cycle_02/chapters/chapter_04.md:305, snapshots/cycle_02/chapters/chapter_04.md:319, snapshots/cycle_02/chapters/chapter_04.md:355, snapshots/cycle_02/chapters/chapter_04.md:385, snapshots/cycle_02/chapters/chapter_04.md:397, and snapshots/cycle_02/chapters/chapter_04.md:403 states the risk once and makes Mina's agreement to tomorrow night carry a concrete on-page cost or boundary; fail if the scene still ends with a largely frictionless \"Yeah\" after a second generalized reminder that secrecy is not privacy."
+    }
+  ],
+  "summary": "The bat-netting scene and register separation are strong enough to pass the dialogue lens, but the chapter still fails review: clipped fragment narration violates the constitution, Mina's stress/desire cues repeat too literally, and the breakfast warning explains the danger more than it materially increases the cost of the next step."
+}

@@ -1,0 +1,43 @@
+{
+  "chapter_id": "chapter_08",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_08_craft_001_aftermath_sanitization",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_01/chapters/chapter_08.md:133, snapshots/cycle_01/chapters/chapter_08.md:139, snapshots/cycle_01/chapters/chapter_08.md:141",
+      "problem": "After Lucien's failure to choose, the chapter retreats into an afternoon montage instead of dramatizing the first concrete cost of that failure. The draft says the room now needs butcher's work, then skips past the immediate bodily/practical consequence: Colombe's untreated foot, the missing men left unsearched, or the exposed papers. That is sanitization by summary, and it makes the aftermath feel cleaner than the premise.",
+      "rewrite_direction": "Replace or expand the transition anchored at snapshots/cycle_01/chapters/chapter_08.md:133 and snapshots/cycle_01/chapters/chapter_08.md:139 before the notebook beat at snapshots/cycle_01/chapters/chapter_08.md:141. Put one consequence-bearing task on-page in scene time: a failed or painful attempt to deal with Colombe's foot, an explicit decision to delay Marcel/Etienne, or a tense paper-hiding action that shows what Lucien's indecision costs the room.",
+      "acceptance_test": "PASS if the revised material between snapshots/cycle_01/chapters/chapter_08.md:133 and snapshots/cycle_01/chapters/chapter_08.md:141 contains a concrete action sequence with a named actor, a visible cost, and an irreversible practical result; FAIL if the chapter still moves from Lucien's weak 'parallel' answer straight into generalized afternoon summary."
+    },
+    {
+      "finding_id": "chapter_08_prose_001_negation_reversal_tic",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_01/chapters/chapter_08.md:125, snapshots/cycle_01/chapters/chapter_08.md:141, snapshots/cycle_01/chapters/chapter_08.md:237, snapshots/cycle_01/chapters/chapter_08.md:273",
+      "problem": "The chapter uses the same negation-and-correction scaffold at multiple pressure points: 'It was not ...,' 'It was the opposite ...,' 'It was not sentiment. It was strategy ...' Once, this is sharp; four times, it reads like a reusable sentence machine rather than fresh perception.",
+      "rewrite_direction": "Rework at least three of the beats anchored at snapshots/cycle_01/chapters/chapter_08.md:125, snapshots/cycle_01/chapters/chapter_08.md:141, snapshots/cycle_01/chapters/chapter_08.md:237, and snapshots/cycle_01/chapters/chapter_08.md:273 so they land through different syntax, image, or action instead of another 'not X / actually Y' reversal.",
+      "acceptance_test": "PASS if no more than one of the cited beats still uses an explicit negation-reversal construction and the revised moments remain clear without repeating the same sentence shape; FAIL if readers still encounter this scaffold three or more times across the chapter."
+    },
+    {
+      "finding_id": "chapter_08_prose_002_accounting_motif_overexplicit",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_01/chapters/chapter_08.md:95, snapshots/cycle_01/chapters/chapter_08.md:225, snapshots/cycle_01/chapters/chapter_08.md:243, snapshots/cycle_01/chapters/chapter_08.md:245, snapshots/cycle_01/chapters/chapter_08.md:267, snapshots/cycle_01/chapters/chapter_08.md:269, snapshots/cycle_01/chapters/chapter_08.md:317, snapshots/cycle_01/chapters/chapter_08.md:321",
+      "problem": "The opening counting motif is earned, but the back half keeps naming the same idea outright through 'counting,' 'arithmetic,' 'account book,' and 'ledger.' Because the chapter already has coins, rows, hems, and ration math doing this work, the repeated bookkeeping labels flatten subtext into self-commentary.",
+      "rewrite_direction": "Keep the initial counting frame at snapshots/cycle_01/chapters/chapter_08.md:95, then thin or concretize the later echoes at snapshots/cycle_01/chapters/chapter_08.md:225, snapshots/cycle_01/chapters/chapter_08.md:243, snapshots/cycle_01/chapters/chapter_08.md:245, snapshots/cycle_01/chapters/chapter_08.md:267, snapshots/cycle_01/chapters/chapter_08.md:269, snapshots/cycle_01/chapters/chapter_08.md:317, and snapshots/cycle_01/chapters/chapter_08.md:321. Let bodily drag, stitched cloth, hunger, and route risk carry the motif instead of repeatedly naming bookkeeping logic.",
+      "acceptance_test": "PASS if the revised chapter retains the counting motif but uses no more than two explicit bookkeeping labels after snapshots/cycle_01/chapters/chapter_08.md:225, and at least one of Elise's late turning beats lands through material detail rather than finance/accounting vocabulary; FAIL if the back half still spells out the same metaphor in multiple adjacent beats."
+    }
+  ],
+  "summary": "Booker PASS: the chapter lands its required spine beats and Elise's move from observer to carrier with real consequence. Dialogue PASS: voices stay distinct and naturally pressured, with contraction use aligned to the style bible. Craft FAIL on a high-severity summarized aftermath beat that cleans up Lucien's failed triage. Prose FAIL on repeated negation-reversal scaffolds and over-explicit accounting diction that make the chapter's language feel slightly self-announcing.",
+  "coverage_scene_ids": []
+}

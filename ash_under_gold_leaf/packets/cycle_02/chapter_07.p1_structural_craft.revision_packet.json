@@ -1,0 +1,82 @@
+{
+  "acceptance_targets": [
+    "[CH07-F001] PASS if, in the revised versions of snapshots/cycle_02/chapters/chapter_07.md:161-176 and snapshots/cycle_02/chapters/chapter_07.md:297-375, at least two consequences are rendered as observable action/reaction with no explanatory moral line attached in the same paragraph; FAIL if the scene still resolves through explicit lesson language before the concrete consequence lands.",
+    "[CH07-F002] PASS if the revised chapter contains at least one on-page accountability attempt between meeting confession and final paragraph that produces a new setback not immediately resolved in the same scene; FAIL if every major recovery step still succeeds in one attempt."
+  ],
+  "chapter_id": "chapter_07",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if, in the revised versions of snapshots/cycle_02/chapters/chapter_07.md:161-176 and snapshots/cycle_02/chapters/chapter_07.md:297-375, at least two consequences are rendered as observable action/reaction with no explanatory moral line attached in the same paragraph; FAIL if the scene still resolves through explicit lesson language before the concrete consequence lands.",
+      "chapter_id": "chapter_07",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_07.md:161; snapshots/cycle_02/chapters/chapter_07.md:175; snapshots/cycle_02/chapters/chapter_07.md:301; snapshots/cycle_02/chapters/chapter_07.md:371",
+      "finding_id": "CH07-F001",
+      "problem": "Sanitization drift appears as moral safety-valve framing: the relapse is repeatedly translated into explicit lesson statements, which pre-interprets the damage and reduces narrative discomfort instead of letting consequence stand on its own.",
+      "rewrite_direction": "Revise the didactic beats at snapshots/cycle_02/chapters/chapter_07.md:161, snapshots/cycle_02/chapters/chapter_07.md:175, snapshots/cycle_02/chapters/chapter_07.md:301, and snapshots/cycle_02/chapters/chapter_07.md:371 by replacing abstract thesis lines with concrete pressure beats (failed outreach, renewed concealment impulse, or immediate logistical fallout) that force Marisol to act before anyone summarizes the meaning.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if the revised chapter contains at least one on-page accountability attempt between meeting confession and final paragraph that produces a new setback not immediately resolved in the same scene; FAIL if every major recovery step still succeeds in one attempt.",
+      "chapter_id": "chapter_07",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_07.md:185; snapshots/cycle_02/chapters/chapter_07.md:257; snapshots/cycle_02/chapters/chapter_07.md:321; snapshots/cycle_02/chapters/chapter_07.md:375",
+      "finding_id": "CH07-F002",
+      "problem": "The chapter's core conflict runs in a largely unbroken compliance arc once Luis enters: confession, chip reset, and institutional amends all execute on first pass, which lowers unpredictability and weakens Booker-level dramatic counterforce.",
+      "rewrite_direction": "Rebuild the middle-to-late sequence at snapshots/cycle_02/chapters/chapter_07.md:185, snapshots/cycle_02/chapters/chapter_07.md:257, and snapshots/cycle_02/chapters/chapter_07.md:321 so at least one accountability step partially fails or worsens stakes (social, financial, or relational), and carry that unresolved friction into the ending at snapshots/cycle_02/chapters/chapter_07.md:375.",
+      "severity": "MEDIUM",
+      "source": "booker",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "16c6e33215fcea1beeb54e399e8ae0cdac8884ec48d170d2bb9ce5a6485d805e",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "When choosing between reputationally safe abstraction and specific discomfort, choose specificity. Render addiction, sexuality, deceit, class shame, and grief at lived scale. In edge cases, preserve character truth and causal accountability over reader comfort or institutional decorum.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene demands bodily, moral, or economic specificity, euphemistic phrasing is treated as a failed draft and must be rewritten with concrete stakes and observable consequence.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the spoken default; full forms appear only for emphasis, ritual language, or character-specific formal posture",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate scene density and pressure modes: pair high-conflict chapters with quiet domestic or documentary chapters, vary dialogue-to-interiority ratios, and prevent identical chapter skeletons in consecutive sequence.",
+      "diction": "contemporary literary diction with class-aware, borough-specific concreteness; avoid prestige-neutral workshop language",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third centered on Marisol, with rare brief distance expansions for institutional scenes",
+      "narrative_tense": "past tense",
+      "rhythm_target": "alternating tensile compression and reflective extension; line-level cadence should carry emotional pressure, not just information",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

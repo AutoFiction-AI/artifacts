@@ -1,0 +1,41 @@
+{
+  "chapter_id": "chapter_01",
+  "cycle": 2,
+  "input_snapshot_hash": "299e0f6c1f42d68b9713ca6b5ac1edcada4389742ae43e16a3300605218a3417",
+  "findings": [
+    {
+      "finding_id": "specific_particular_ch01",
+      "source": "manual_rescue/full_award_rescue.review.json",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.post_revision.md:7, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:25, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:129, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:145, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:225, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:229, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:243, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:251",
+      "problem": "'The specific' or 'the particular' appears at least 8 times in 253 lines — approximately once every 32 lines. Full-novel count: 81 combined (52 + 29). These adjectives function as the narrator's all-purpose precision intensifier, signaling 'this detail matters,' but when every detail gets the same marker, the marker loses its force. This is the reader's first chapter; the density establishes a verbal habit that will persist for 3,500 lines.",
+      "rewrite_direction": "Keep at most 2 instances. Keep snapshots/cycle_02/FINAL_NOVEL.post_revision.md:229 ('the particular silence of a one-bedroom apartment' — the most evocative use, where the adjective earns its place). Remove 'the specific'/'the particular' at snapshots/cycle_02/FINAL_NOVEL.post_revision.md:7, :25, :129, :145, :225, :243, :251 by: (a) deleting the adjective and trusting the noun to carry its own weight, (b) replacing with a more precise descriptor that does actual characterization work, or (c) restructuring the sentence to foreground the concrete detail rather than labeling it.",
+      "acceptance_test": "Revised chapter contains no more than 2 instances of 'the specific [noun]' or 'the particular [noun].' At lines 7, 25, 129, 145, 225, 243, 251, the adjective is replaced or removed. No replacement introduces 'specific' or 'particular' in a different position within the same sentence."
+    },
+    {
+      "finding_id": "not_exactly_hedging_ch01",
+      "source": "manual_rescue/full_award_rescue.review.json",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.post_revision.md:123, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:143, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:223, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:233",
+      "problem": "The hedging formula 'not X, exactly, but Y' (and its variant 'not X... the other kind') appears 4 times in this chapter: line 123 ('not jealousy, exactly, but its quieter cousin'), line 143 ('not sadness, exactly, but a weight'), line 223 ('Not sadness, exactly. Just the awareness'), line 233 ('not the big, cinematic jealousy... The other kind. The quiet one.'). Four instances in 253 lines means the narrator names a strong emotion and immediately softens it into a qualified version once every 63 lines. The pattern signals a narrator who is always pulling the reader back from the emotional edge — qualifying, moderating, refusing to let a feeling land without a disclaimer.",
+      "rewrite_direction": "Keep 1 instance — snapshots/cycle_02/FINAL_NOVEL.post_revision.md:123 ('not jealousy, exactly, but its quieter cousin,' the chapter's first and strongest use). Replace the other 3 at snapshots/cycle_02/FINAL_NOVEL.post_revision.md:143, :223, :233. Strategy: let at least one of these feelings land without the hedging frame. At line 143, instead of 'not sadness, exactly, but a weight,' name the weight directly through a physical sensation or concrete image. At line 233, instead of taxonomizing two grades of jealousy, render the feeling through a specific remembered moment.",
+      "acceptance_test": "Revised chapter contains no more than 1 instance of 'not X, exactly' or 'not X... the other kind' construction. Lines 143, 223, 233 use different rhetorical moves. At least one of the replacements names the feeling directly without hedging or qualification."
+    }
+  ],
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "No more than 2 instances of 'the specific [noun]' or 'the particular [noun]' in the revised chapter",
+    "No more than 1 instance of the 'not X, exactly, but Y' hedging construction in the revised chapter",
+    "Retain 'the particular silence of a one-bedroom apartment' (near line 229) as the strongest precision-intensifier use",
+    "Retain 'not jealousy, exactly, but its quieter cousin' (near line 123) as the strongest hedging use",
+    "No replacement introduces 'specific' or 'particular' in a different position within the same sentence"
+  ],
+  "acceptance_targets": [
+    "Lines 7, 25, 129, 145, 225, 243, 251: 'the specific'/'the particular' replaced or removed at each location",
+    "Lines 143, 223, 233: hedging constructions replaced with varied rhetorical moves",
+    "At least one hedging replacement names the feeling directly without qualification",
+    "Replacements at lines 7, 25, 129, 145, 225, 243, 251 use at least 2 different strategies (deletion, replacement with precise descriptor, or sentence restructuring)"
+  ]
+}

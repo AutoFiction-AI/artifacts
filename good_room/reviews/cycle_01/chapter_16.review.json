@@ -1,0 +1,62 @@
+{
+  "chapter_id": "chapter_16",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch16_continuity_seat_count",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_01/chapters/chapter_16.md:3; snapshots/cycle_01/chapters/chapter_16.md:11; snapshots/cycle_01/chapters/chapter_16.md:21; snapshots/cycle_01/chapters/chapter_16.md:111; snapshots/cycle_01/chapters/chapter_16.md:169",
+      "problem": "The chapter repeatedly treats the Lincoln Theatre as a 582-seat room after noting that the Netflix contract says 580. The continuity sheet establishes the Lincoln Theatre as a 580-seat venue, so the chapter leaves the theater's capacity both internally ambiguous and canonically contradictory.",
+      "rewrite_direction": "Normalize the venue capacity across snapshots/cycle_01/chapters/chapter_16.md:3, snapshots/cycle_01/chapters/chapter_16.md:11, snapshots/cycle_01/chapters/chapter_16.md:21, snapshots/cycle_01/chapters/chapter_16.md:111, and snapshots/cycle_01/chapters/chapter_16.md:169. If Doug notices a discrepancy at snapshots/cycle_01/chapters/chapter_16.md:3, make one source explicitly wrong and make every later physical seat count match the canonical number instead of repeating the disputed one as fact.",
+      "acceptance_test": "Pass if a cold reader can state one unambiguous seating capacity for the Lincoln Theatre after reading snapshots/cycle_01/chapters/chapter_16.md:3, snapshots/cycle_01/chapters/chapter_16.md:11, snapshots/cycle_01/chapters/chapter_16.md:21, snapshots/cycle_01/chapters/chapter_16.md:111, and snapshots/cycle_01/chapters/chapter_16.md:169, and every mention in those lines agrees with the same number."
+    },
+    {
+      "finding_id": "ch16_roy_calibration_copy",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_01/chapters/chapter_16.md:155; snapshots/cycle_01/chapters/chapter_16.md:161; snapshots/cycle_01/chapters/chapter_16.md:165",
+      "problem": "Roy's key exchange reproduces style-bible calibration lines verbatim: \"Then don't\" and the breach-of-contract beat that lands on \"Paperwork.\" The style bible explicitly forbids using example lines in draft text, so the chapter's most important dialogue turn is running on copied calibration material instead of fresh speech.",
+      "rewrite_direction": "Rewrite Roy's responses at snapshots/cycle_01/chapters/chapter_16.md:155 and snapshots/cycle_01/chapters/chapter_16.md:161-165 so the scene function stays intact but the wording is new. Roy still needs to refuse Doug's melodrama, reduce the contract panic to an administrative consequence, and accidentally make Doug laugh, but he must do it in fresh, economical language that does not echo the calibration lines.",
+      "acceptance_test": "Pass if the revised exchange at snapshots/cycle_01/chapters/chapter_16.md:155 and snapshots/cycle_01/chapters/chapter_16.md:161-165 still makes Doug laugh and still shows Roy's flat adequacy, but it does not reuse \"Then don't,\" does not reuse \"You know what happens when you breach a contract?\" and does not land on \"Paperwork.\""
+    },
+    {
+      "finding_id": "ch16_award_overexplained_beats",
+      "source": "award",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_01/chapters/chapter_16.md:97; snapshots/cycle_01/chapters/chapter_16.md:189; snapshots/cycle_01/chapters/chapter_16.md:195",
+      "problem": "The chapter keeps explaining beats after the scene action has already landed them. Layla's circles, Charlie's stalled sentence, Doug's laugh in the empty theater, and the untouched sixty-minute clock already make the state shift legible; the later analytic summaries restate the point in abstract terms and cost the chapter shortlist-level compression.",
+      "rewrite_direction": "Compress or replace the explanatory summaries at snapshots/cycle_01/chapters/chapter_16.md:97 and snapshots/cycle_01/chapters/chapter_16.md:189-195. At the dinner table, let the failed pitches, the silence, and Doug asking for the check carry the turn. After Roy's call, keep the chapter's must-land state shift through concrete aftermath in the theater or the drive home instead of another explicit inventory of what Doug does not have.",
+      "acceptance_test": "Pass if snapshots/cycle_01/chapters/chapter_16.md:91-99 still end with Doug taking control by asking for the check and snapshots/cycle_01/chapters/chapter_16.md:187-197 still leave him alone with Friday, but neither passage needs an abstract summary sentence telling the reader that Layla and Charlie were 'the people with answers' or that Doug lacks 'material' and 'format' after the action has already shown those facts."
+    },
+    {
+      "finding_id": "ch16_charlie_pov_seep",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_01/chapters/chapter_16.md:33; snapshots/cycle_01/chapters/chapter_16.md:95",
+      "problem": "The narration briefly leaves Doug's close third and states Charlie's interior processing as if it were knowable fact: he is said to be translating the dead air through development categories and later to have lived inside 'the machine' so long he no longer knows what to breathe when it fails. The style bible allows direct access to Doug's interior, not Charlie's.",
+      "rewrite_direction": "Rework snapshots/cycle_01/chapters/chapter_16.md:33 and snapshots/cycle_01/chapters/chapter_16.md:95-97 so Charlie's collapse is rendered through behavior Doug can actually witness: rapid note-taking, a stalled sentence, an unhelpful stare above the phone, a reframe that never arrives. Keep Doug's interpretation, but phrase it as inference from visible conduct rather than asserted access to Charlie's mind.",
+      "acceptance_test": "Pass if the revised versions of snapshots/cycle_01/chapters/chapter_16.md:33 and snapshots/cycle_01/chapters/chapter_16.md:95-97 let a cold reader infer Charlie's confusion from what Doug sees and hears, while the narration does not state what Charlie 'knows,' what his operating system feels like, or what he does or does not understand internally."
+    },
+    {
+      "finding_id": "ch16_negation_template_tic",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_01/chapters/chapter_16.md:29; snapshots/cycle_01/chapters/chapter_16.md:47; snapshots/cycle_01/chapters/chapter_16.md:95; snapshots/cycle_01/chapters/chapter_16.md:133; snapshots/cycle_01/chapters/chapter_16.md:153; snapshots/cycle_01/chapters/chapter_16.md:167",
+      "problem": "The chapter leans too often on the same negation-correction template: \"Not bad. Not wrong. Dead.\" \"Not 'no.' Not 'stop.'\" \"Not cynicism. Not failure.\" \"Not a complaint. A report.\" Once that structure recurs across rehearsal, dinner, and the Roy call, it stops feeling like a choice and starts feeling like visible autopilot.",
+      "rewrite_direction": "Vary the sentence architecture at snapshots/cycle_01/chapters/chapter_16.md:29, snapshots/cycle_01/chapters/chapter_16.md:47, snapshots/cycle_01/chapters/chapter_16.md:95, snapshots/cycle_01/chapters/chapter_16.md:133, snapshots/cycle_01/chapters/chapter_16.md:153, and snapshots/cycle_01/chapters/chapter_16.md:167. Keep at most one or two negation turns where the emphasis is worth it, and recast the other beats through image, action, or a materially different sentence shape.",
+      "acceptance_test": "Pass if, across the revised versions of snapshots/cycle_01/chapters/chapter_16.md:29, snapshots/cycle_01/chapters/chapter_16.md:47, snapshots/cycle_01/chapters/chapter_16.md:95, snapshots/cycle_01/chapters/chapter_16.md:133, snapshots/cycle_01/chapters/chapter_16.md:153, and snapshots/cycle_01/chapters/chapter_16.md:167, no more than two beats still rely on the repeated \"Not X. Not Y. Just/A ...\" ladder and the remaining beats land through clearly different syntax."
+    }
+  ],
+  "summary": "FAIL. The rehearsal scene and the ghost-light call to Roy carry real dread and comic pressure, but the chapter does not clear pass level: it contradicts canon on the Lincoln Theatre's capacity, copies Roy's calibration lines from the style bible, explains several beats after they have already landed, briefly mind-reads Charlie past the allowed narrative distance, and repeats one negation template until it turns into a tic."
+}

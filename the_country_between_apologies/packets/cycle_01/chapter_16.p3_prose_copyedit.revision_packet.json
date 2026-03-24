@@ -1,0 +1,82 @@
+{
+  "acceptance_targets": [
+    "[chapter_16_f003] PASS if the revised named spans communicate the same financial/accountability facts while using clearly differentiated phrasing per speaker and no more than one repeated receipts/facts/logistics keyword per exchange; FAIL if multiple adjacent exchanges still hinge on the same repeated keyword bundle.",
+    "[chapter_16_f004] PASS if the exact antithetical pattern (\"not ..., just ...\") appears no more than twice in the chapter after revision and the targeted lines retain equivalent meaning via non-matching syntax; FAIL if all three formula instances remain."
+  ],
+  "chapter_id": "chapter_16",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if the revised named spans communicate the same financial/accountability facts while using clearly differentiated phrasing per speaker and no more than one repeated receipts/facts/logistics keyword per exchange; FAIL if multiple adjacent exchanges still hinge on the same repeated keyword bundle.",
+      "chapter_id": "chapter_16",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_16.md:55; snapshots/cycle_01/chapters/chapter_16.md:71; snapshots/cycle_01/chapters/chapter_16.md:81; snapshots/cycle_01/chapters/chapter_16.md:133; snapshots/cycle_01/chapters/chapter_16.md:247; snapshots/cycle_01/chapters/chapter_16.md:279",
+      "finding_id": "chapter_16_f003",
+      "problem": "Mechanical repetition from over-literal stress-tell execution: the accountability lexicon (receipts/facts/logistics) is reiterated so often that voice texture narrows and emotional modulation flattens.",
+      "rewrite_direction": "In snapshots/cycle_01/chapters/chapter_16.md:55-81, snapshots/cycle_01/chapters/chapter_16.md:129-143, and snapshots/cycle_01/chapters/chapter_16.md:245-287, keep factual precision but vary diction and delivery by speaker (Theo boundary language, Eli shame language, Nora task language) so accountability is not carried by the same repeated token set.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if the exact antithetical pattern (\"not ..., just ...\") appears no more than twice in the chapter after revision and the targeted lines retain equivalent meaning via non-matching syntax; FAIL if all three formula instances remain.",
+      "chapter_id": "chapter_16",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_16.md:19; snapshots/cycle_01/chapters/chapter_16.md:233; snapshots/cycle_01/chapters/chapter_16.md:241",
+      "finding_id": "chapter_16_f004",
+      "problem": "Recurring antithesis formula (\"not X, just Y\") appears three times, creating a detectable prose tic that blunts impact.",
+      "rewrite_direction": "Rework at least one of the constructions in snapshots/cycle_01/chapters/chapter_16.md:19, snapshots/cycle_01/chapters/chapter_16.md:233, and snapshots/cycle_01/chapters/chapter_16.md:241 into different sentence mechanics (direct image, action-first line, or concrete noun-led close) to break formula repetition.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "833851f621bb9fad9fcbe51a8f7cac0cd6123d1993fe81134f938b425328deeb",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on prose and copyedit finish: diction precision, rhythm control, sentence-level clarity, grammar, line-level polish without flattening style, and explicit aesthetic-risk audit (sanitization is the primary risk \u2014 do not soften or euphemize; push toward creative risk and specificity).",
+    "key": "p3_prose_copyedit",
+    "label": "prose/copyedit fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into morally mixed behavior, bodily consequence, and economic detail when they are causally active. In edge cases, choose the more concrete and uncomfortable rendering unless it violates factual continuity; if two renderings are equally plausible, prefer the one that increases character accountability rather than reader reassurance.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene contains pain, sex, addiction, debt panic, or humiliation, abstract phrasing is treated as a failed draft and must be rewritten with embodied specificity.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the spoken default; uncontracted forms are reserved for emphasis, legal precision, or deliberate emotional distance.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate chapter architectures across the book: confrontation chapters, document-information turns, labor-process chapters, transit interiority chapters, and quiet relational chapters. Consecutive chapters must differ in scene density or dialogue-to-interiority ratio.",
+      "diction": "Contemporary American literary realism: precise, unsentimental, image-aware, and concrete under stress.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third-person anchored to Eli, with no unmarked POV drift.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Braided cadence: reflective medium-length sentences interrupted by blunt short lines at impact moments.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_04",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_04-F001",
+      "source": "booker",
+      "severity": "HIGH",
+      "chapter_id": "chapter_04",
+      "evidence": "`snapshots/cycle_01/chapters/chapter_04.md:47` says June will \"lose the seminar\" if Leela keeps the block; `snapshots/cycle_01/chapters/chapter_04.md:63` frames walking into seminar with bad numbers as imminent; `snapshots/cycle_01/chapters/chapter_04.md:209` and `snapshots/cycle_01/chapters/chapter_04.md:217` make tonight's node access necessary for that same seminar; `snapshots/cycle_01/chapters/chapter_04.md:371` still ties the drifting results to a 5 p.m. seminar-deck meeting.",
+      "problem": "The chapter's core pressure engine depends on June's seminar being effectively next-day, but the continuity sheet places chapter_04 in mid-September deadline week and the public seminar blowup in chapter_05 in early October. As written, the reader is pushed to treat them as the same imminent event, which breaks the causal clock the chapter is built on.",
+      "rewrite_direction": "Revise `snapshots/cycle_01/chapters/chapter_04.md:45`, `snapshots/cycle_01/chapters/chapter_04.md:63`, `snapshots/cycle_01/chapters/chapter_04.md:209`, `snapshots/cycle_01/chapters/chapter_04.md:217`, and `snapshots/cycle_01/chapters/chapter_04.md:371` so the calendar is explicit. Either rename June's near-term obligation as a different interim meeting/check-in, or move the chapter's submission week later so her public seminar is genuinely imminent.",
+      "acceptance_test": "Pass if a cold read of `snapshots/cycle_01/chapters/chapter_04.md:45`, `snapshots/cycle_01/chapters/chapter_04.md:63`, `snapshots/cycle_01/chapters/chapter_04.md:209`, `snapshots/cycle_01/chapters/chapter_04.md:217`, and `snapshots/cycle_01/chapters/chapter_04.md:371` no longer implies that the canonically chapter_05 seminar is happening within 24 hours unless the chapter timeline itself has been moved to early October."
+    },
+    {
+      "finding_id": "chapter_04-F002",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_04",
+      "evidence": "`snapshots/cycle_01/chapters/chapter_04.md:267` immediately explains away the falsified table while telling the reader what it cost; `snapshots/cycle_01/chapters/chapter_04.md:337` calls the paper's professionalism \"the most nauseating part\" the moment it starts to look publishable; `snapshots/cycle_01/chapters/chapter_04.md:437` labels the final tightening edit \"another ugly part\" as soon as she makes it.",
+      "problem": "Sanitization via moral safety valve: the chapter repeatedly captions Leela's compromise as ugly, nauseating, or already-known lie at the exact moment she commits it. That self-indicting gloss reassures the reader that the book disapproves instead of letting the falsification, career hunger, and abandonment of June stand on their own cold terms.",
+      "rewrite_direction": "Rework `snapshots/cycle_01/chapters/chapter_04.md:267`, `snapshots/cycle_01/chapters/chapter_04.md:269`, `snapshots/cycle_01/chapters/chapter_04.md:337`, `snapshots/cycle_01/chapters/chapter_04.md:433`, and `snapshots/cycle_01/chapters/chapter_04.md:437` so the scene stays with the concrete edit, the career gain, and the choice to ignore June. Strip or delay the abstract self-condemnation; let consequence, not instant narrator-approved guilt, do more of the judging.",
+      "acceptance_test": "Pass if the cited spans still show the exact falsifying edits and ignored contact attempts, but at least one decision beat lets Leela register relief, strategic advantage, or dissertation survival without an immediate abstract label such as lie, ugly, or nauseating in the same beat."
+    },
+    {
+      "finding_id": "chapter_04-F003",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "`snapshots/cycle_01/chapters/chapter_04.md:17` starts June's entrance and confrontation; focalized interiority does not return until `snapshots/cycle_01/chapters/chapter_04.md:41`, after roughly a dozen short blocking/dialogue paragraphs.",
+      "problem": "The opening conflict scene briefly drops the close-third contract and reads like screenplay blocking. The chapter is strongest when Leela's guilt and bodily stress are in the room; delaying interiority this long makes the first June confrontation flatter than the rest of the chapter.",
+      "rewrite_direction": "Seed brief Leela-internal beats into `snapshots/cycle_01/chapters/chapter_04.md:17`, `snapshots/cycle_01/chapters/chapter_04.md:23`, `snapshots/cycle_01/chapters/chapter_04.md:31`, or `snapshots/cycle_01/chapters/chapter_04.md:37` instead of waiting until `snapshots/cycle_01/chapters/chapter_04.md:41` for memory and self-implication.",
+      "acceptance_test": "Pass if `snapshots/cycle_01/chapters/chapter_04.md:17` through `snapshots/cycle_01/chapters/chapter_04.md:39` contain at least two explicit Leela-internal beats (thought, sensation, memory, or self-assessment) before the memory paragraph at line 41."
+    },
+    {
+      "finding_id": "chapter_04-F004",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "`snapshots/cycle_01/chapters/chapter_04.md:99`, `snapshots/cycle_01/chapters/chapter_04.md:225`, and `snapshots/cycle_01/chapters/chapter_04.md:453` reuse the bare \"Her phone buzzed\" interruption; `snapshots/cycle_01/chapters/chapter_04.md:227`, `snapshots/cycle_01/chapters/chapter_04.md:231`, `snapshots/cycle_01/chapters/chapter_04.md:235`, `snapshots/cycle_01/chapters/chapter_04.md:331`, `snapshots/cycle_01/chapters/chapter_04.md:343`, `snapshots/cycle_01/chapters/chapter_04.md:345`, `snapshots/cycle_01/chapters/chapter_04.md:347`, `snapshots/cycle_01/chapters/chapter_04.md:417`, and `snapshots/cycle_01/chapters/chapter_04.md:441` keep returning to the same isolated timestamp/message-log construction.",
+      "problem": "The back half leans too hard on the same notification-log scaffold. After the first few interruptions the repeated buzz/timestamp/text format becomes predictable prose machinery, which flattens pressure that should keep intensifying.",
+      "rewrite_direction": "Vary or compress the interruption beats at `snapshots/cycle_01/chapters/chapter_04.md:225`, `snapshots/cycle_01/chapters/chapter_04.md:227`, `snapshots/cycle_01/chapters/chapter_04.md:231`, `snapshots/cycle_01/chapters/chapter_04.md:235`, `snapshots/cycle_01/chapters/chapter_04.md:329`, `snapshots/cycle_01/chapters/chapter_04.md:341`, `snapshots/cycle_01/chapters/chapter_04.md:415`, and `snapshots/cycle_01/chapters/chapter_04.md:439` so not every escalation arrives as another log entry. Fold some into live action, partial voicemail content, or a materially different interruption texture.",
+      "acceptance_test": "Pass if no revised back-half stretch after `snapshots/cycle_01/chapters/chapter_04.md:225` contains more than one bare notification paragraph in a row without fresh dramatic action, and at least one June contact beat in that span is rendered through a materially different form than a standalone timestamped text or unanswered buzz."
+    }
+  ],
+  "summary": "The chapter has strong material detail, a credible pressure engine, and notably distinct June/Mohit/Leela voices; contraction use and register stay aligned with the style bible, so dialogue passes. It still fails overall because the seminar timeline appears to contradict canon, the narration repeatedly softens Leela's compromise with moral-safety-valve gloss, and the prose slips into screenplay/log-entry habits in places where the close-third should stay hotter and less mechanical."
+}

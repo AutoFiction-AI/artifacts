@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_16",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch16-craft-01",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_01/chapters/chapter_16.md:63; snapshots/cycle_01/chapters/chapter_16.md:183; snapshots/cycle_01/chapters/chapter_16.md:243; snapshots/cycle_01/chapters/chapter_16.md:383; snapshots/cycle_01/chapters/chapter_16.md:415; snapshots/cycle_01/chapters/chapter_16.md:437",
+      "problem": "The narration keeps stepping in to explain how the chorus tactic works, why the crowd is laughing, and what the public victory means. In a comedy-driven confrontation chapter, that interpretive gloss deflates the joke and weakens the scene's trust in observable public behavior.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_16.md:63-67, snapshots/cycle_01/chapters/chapter_16.md:183-185, snapshots/cycle_01/chapters/chapter_16.md:243-245, snapshots/cycle_01/chapters/chapter_16.md:383-385, snapshots/cycle_01/chapters/chapter_16.md:415, and snapshots/cycle_01/chapters/chapter_16.md:437-439, replace explanatory summary with concrete aftershocks: people misreading and correcting, bodies stopping in traffic, duplicate strips going up, or visible moss response on specific bridge sections. Keep at most one explicit statement of the read-say-repeat mechanism in the chapter and let the later Bellglass beats demonstrate the rest through action.",
+      "acceptance_test": "PASS if each cited span contains at least one concrete, observable crowd action or material moss change where the current draft explains the joke or the mechanism, and if a reader can infer the chorus tactic's success without narrator sentences that tell us the crowd loved a line because it was funny/true or that laughter is what carries it home. FAIL if the revised passage still translates the comedy or the victory into thesis statements."
+    },
+    {
+      "finding_id": "ch16-prose-01",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_01/chapters/chapter_16.md:127; snapshots/cycle_01/chapters/chapter_16.md:239; snapshots/cycle_01/chapters/chapter_16.md:271; snapshots/cycle_01/chapters/chapter_16.md:297; snapshots/cycle_01/chapters/chapter_16.md:367; snapshots/cycle_01/chapters/chapter_16.md:383; snapshots/cycle_01/chapters/chapter_16.md:401; snapshots/cycle_01/chapters/chapter_16.md:403; snapshots/cycle_01/chapters/chapter_16.md:415",
+      "problem": "The chapter repeatedly falls into clipped negative-correction fragments such as 'Not hard. Not intimate either.' and 'Not purity. Not the clean replacement...'. Because the constitution forbids elliptical clipping in narration, and because this construction recurs across multiple key beats, it reads as autopilot rather than controlled rhythm.",
+      "rewrite_direction": "Recast the cited narration at snapshots/cycle_01/chapters/chapter_16.md:127-128, snapshots/cycle_01/chapters/chapter_16.md:239-240, snapshots/cycle_01/chapters/chapter_16.md:271, snapshots/cycle_01/chapters/chapter_16.md:297, snapshots/cycle_01/chapters/chapter_16.md:367, snapshots/cycle_01/chapters/chapter_16.md:383, snapshots/cycle_01/chapters/chapter_16.md:401-403, and snapshots/cycle_01/chapters/chapter_16.md:415 into fully grammatical sentences with explicit subjects and verbs. Preserve snap where needed, but vary the cadence and let concrete nouns, sensory detail, or clean declarative syntax do the work instead of repeating the 'Not X. Not Y.' correction move.",
+      "acceptance_test": "PASS if every cited span is rewritten as grammatically complete narration and the revised chapter contains no more than two negative-correction fragment sequences of the 'Not X. Not Y.' type. FAIL if three or more subjectless corrective fragments remain in narration, or if lines like 'Not hard,' 'Not purity,' or 'Not victory music' survive in essentially the same clipped form."
+    }
+  ],
+  "summary": "FAIL. Booker and dialogue clear pass level: the chapter lands the chorus-board tactic, keeps continuity intact, and preserves strong voice separation. Craft and prose do not. The narrator over-explains the chapter's comic and thematic effects, and the prose repeatedly relies on clipped negative fragments that flatten key beats and violate the constitution's anti-elliptical-clipping rule."
+}

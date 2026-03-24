@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_07",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch07-booker-001",
+      "source": "booker",
+      "severity": "HIGH",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_02/chapters/chapter_07.md:257; snapshots/cycle_02/chapters/chapter_07.md:267; snapshots/cycle_02/chapters/chapter_07.md:279",
+      "problem": "The apartment aftermath stops one beat before the chapter's hardest private consequence lands. After the church scene delivers the public humiliation, the second scene becomes setup for the next chapter rather than a completed movement: Marcia warns against false hope, Tiana is named as the real audience for the bad news, and the chapter ends with everyone waiting for her instead of forcing an irreversible new turn.",
+      "rewrite_direction": "Rebuild the ending in snapshots/cycle_02/chapters/chapter_07.md:257 through snapshots/cycle_02/chapters/chapter_07.md:279 so the scene lands its own final turn. Best option: let Tiana enter and receive the loss on-page here. Alternate option: if chapter_08 must keep the arrival, replace the current waiting beat with a different irreversible action in this room at snapshots/cycle_02/chapters/chapter_07.md:267 and snapshots/cycle_02/chapters/chapter_07.md:279 that materially changes household leverage before the cut.",
+      "acceptance_test": "Pass only if the revised ending at snapshots/cycle_02/chapters/chapter_07.md:257 through snapshots/cycle_02/chapters/chapter_07.md:279 contains an observable irreversible turn: either Tiana arrives and is told on-page, or Marcia/Delroy/Micah takes a concrete action or decision that changes what chapter_08 starts from. Fail if the chapter still ends with characters merely listening for the side gate."
+    },
+    {
+      "finding_id": "ch07-prose-001",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_02/chapters/chapter_07.md:261",
+      "problem": "Delroy's interior read leaks style-bible scaffolding into the chapter. 'He could make bad news hold still for a few minutes' is a near-copy of the non-copyable calibration language for his voice, which makes the sentence feel generated from notes rather than discovered in-scene.",
+      "rewrite_direction": "Replace the Delroy summary at snapshots/cycle_02/chapters/chapter_07.md:261 with fresh scene-specific language grounded in this apartment, this marriage, and Marcia's current disgust. Do not reuse the existing 'bad news' framing or another variant of the calibration sentence; make his charm legible through a new image or action pattern native to this moment.",
+      "acceptance_test": "Pass only if snapshots/cycle_02/chapters/chapter_07.md:261 is rewritten so Delroy's evasive warmth is conveyed without echoing the style-bible example's syntax, key nouns, or causal structure. A reader comparing the revised line to the calibration note should not be able to map them as near-paraphrases."
+    },
+    {
+      "finding_id": "ch07-craft-001",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_02/chapters/chapter_07.md:263; snapshots/cycle_02/chapters/chapter_07.md:267; snapshots/cycle_02/chapters/chapter_07.md:279",
+      "problem": "The chapter shows timidity at the exact place it has earned maximum pressure. Once Marcia says Tiana must hear 'the truth,' the prose retreats into suspense instead of rendering the daughter's first bodily and verbal response to the lost money. That cutoff softens the emotional force of a scene built around public shame becoming private household damage.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_07.md:263 through snapshots/cycle_02/chapters/chapter_07.md:279 so the aftermath stays in the room long enough to show the disclosure hitting Tiana or, if the scene must remain pre-arrival, to substitute a comparably embodied consequence rather than anticipation. Anchor the rewrite to concrete objects already present on these lines: the envelopes, the notebook, the mug, the gate, the handkerchief.",
+      "acceptance_test": "Pass only if the revised ending includes one on-page bodily reaction and one spoken reaction tied to the cited span, plus a visible change in the room caused by the news. Fail if the revision still relies on suspense alone or summarizes the impact without dramatizing it."
+    },
+    {
+      "finding_id": "ch07-prose-002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_02/chapters/chapter_07.md:51; snapshots/cycle_02/chapters/chapter_07.md:65; snapshots/cycle_02/chapters/chapter_07.md:267; snapshots/cycle_02/chapters/chapter_07.md:279",
+      "problem": "The chapter leans on the same emphatic negative-anaphora too many times. By the fourth and fifth 'Nobody/No one' beat, what was initially sharp emphasis starts reading like a reusable prose macro rather than fresh pressure from the scene.",
+      "rewrite_direction": "Recast at least two of the repeated openings at snapshots/cycle_02/chapters/chapter_07.md:51, snapshots/cycle_02/chapters/chapter_07.md:65, snapshots/cycle_02/chapters/chapter_07.md:267, and snapshots/cycle_02/chapters/chapter_07.md:279 into different sentence shapes. Keep the strongest instance or two, but move the others into action, image, or character-specific syntax so each beat earns its emphasis separately.",
+      "acceptance_test": "Pass only if the revised cited lines contain no more than two emphatic beats beginning with 'Nobody' or 'No one,' and the remaining emphasis points use clearly different constructions when read aloud. Fail if three or more major beats in the chapter still rely on the same opening formula."
+    }
+  ],
+  "summary": "The chapter is canon-consistent, stays in past tense, and the dialogue generally separates voices well enough to pass that lens. It still fails overall because the apartment aftermath cuts away before the deepest private consequence lands, that cutoff reads timid rather than earned, Delroy's interior description echoes a non-copyable style-bible calibration line, and the repeated 'Nobody/No one' openings become a visible prose tic."
+}

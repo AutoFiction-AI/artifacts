@@ -1,0 +1,62 @@
+{
+  "chapter_id": "chapter_04",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH04-F001",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_01/chapters/chapter_04.md:84; snapshots/cycle_01/chapters/chapter_04.md:122; snapshots/cycle_01/chapters/chapter_04.md:245",
+      "problem": "The chapter repeats the same negotiation beat three times (Nora asks for an amount, Eli evades) before adding materially new pressure, so the middle stretch spins tension instead of escalating it.",
+      "rewrite_direction": "Tighten and differentiate the confrontation loop at snapshots/cycle_01/chapters/chapter_04.md:84-104, snapshots/cycle_01/chapters/chapter_04.md:188-223, and snapshots/cycle_01/chapters/chapter_04.md:241-255. Keep only one early amount-demand exchange in full, then replace one later repetition with a new leverage event (for example: failed transfer execution, a bursar policy barrier, or a concrete cost that changes Eli's options).",
+      "acceptance_test": "Pass if, between snapshots/cycle_01/chapters/chapter_04.md:84 and snapshots/cycle_01/chapters/chapter_04.md:257, the revised scene contains at least two distinct leverage shifts that introduce new information or constraints rather than restating 'give me a number'; fail if the conflict remains a repeated demand/deflection loop."
+    },
+    {
+      "finding_id": "CH04-F002",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_01/chapters/chapter_04.md:19; snapshots/cycle_01/chapters/chapter_04.md:20; snapshots/cycle_01/chapters/chapter_04.md:24",
+      "problem": "Financial continuity breaks at chapter open: the listed balances imply materially more available cash than the carry-forward state, with no on-page inflow accounting. This undercuts the chapter's central stakes math.",
+      "rewrite_direction": "Reconcile the ledger at snapshots/cycle_01/chapters/chapter_04.md:17-24. Either adjust the balances to match carry-forward cash state or add explicit, source-labeled inflow/outflow steps in-scene that bridge prior totals to current totals before Nora's deadline sequence starts.",
+      "acceptance_test": "Pass if a reader can start from the prior carry-forward cash state and, using revised snapshots/cycle_01/chapters/chapter_04.md:17-24 only, reproduce current checking/cash amounts via explicit arithmetic with no unexplained jump greater than $100; fail otherwise."
+    },
+    {
+      "finding_id": "CH04-F003",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_01/chapters/chapter_04.md:275; snapshots/cycle_01/chapters/chapter_04.md:289; snapshots/cycle_01/chapters/chapter_04.md:295; snapshots/cycle_01/chapters/chapter_04.md:297",
+      "problem": "Sanitization/timidity at the decision apex: once Eli chooses non-transfer, the prose shifts to abstract managerial framing ('least specific version,' 'procedural acknowledgment,' 'logic held together') instead of staying in embodied consequence for Nora/June and Eli's immediate physical-emotional reality.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_04.md:275-299 and snapshots/cycle_01/chapters/chapter_04.md:307-315, replace abstract evaluative summary with concrete downstream consequence rendered on-page (not forecast) and embodied response. Keep the discomfort active: show what his choice immediately costs someone, and show his body registering it in the same scene.",
+      "acceptance_test": "Pass if revised snapshots/cycle_01/chapters/chapter_04.md:275-315 includes at least one immediate concrete consequence of Eli's non-transfer affecting another character and depicts Eli's response through specific action/sensation rather than explanatory summary; fail if the climax remains mostly procedural abstraction."
+    },
+    {
+      "finding_id": "CH04-F004",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_01/chapters/chapter_04.md:205; snapshots/cycle_01/chapters/chapter_04.md:245; snapshots/cycle_01/chapters/chapter_04.md:251; snapshots/cycle_01/chapters/chapter_04.md:269",
+      "problem": "High-pressure dialogue drifts into stiff compliance language and partial voice convergence. Eli's stress voice is supposed to fracture under pressure, but key lines read like formal incident documentation.",
+      "rewrite_direction": "Rework dialogue at snapshots/cycle_01/chapters/chapter_04.md:205 and snapshots/cycle_01/chapters/chapter_04.md:241-269. Preserve Nora's boundary precision, but let Eli's high-contraction idiolect break in real time (self-interruption, colloquial pressure rhythm, abandoned starts) instead of memo phrasing.",
+      "acceptance_test": "Pass if, in revised snapshots/cycle_01/chapters/chapter_04.md:241-269, Eli uses contractions in at least 3 of 5 spoken lines and has at least one interrupted/self-corrected line, while Nora remains concise without relying on repeated one-word prompts; fail if both voices still read as institutional boilerplate."
+    },
+    {
+      "finding_id": "CH04-F005",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_01/chapters/chapter_04.md:74; snapshots/cycle_01/chapters/chapter_04.md:92; snapshots/cycle_01/chapters/chapter_04.md:174; snapshots/cycle_01/chapters/chapter_04.md:223; snapshots/cycle_01/chapters/chapter_04.md:303; snapshots/cycle_01/chapters/chapter_04.md:305",
+      "problem": "Recurring prose formulas flatten cadence: repeated 'typed/deleted' hesitation loops and repeated 'He could have...' constructions appear more than twice, signaling autopilot instead of deliberate variation.",
+      "rewrite_direction": "Vary decision-beat construction at snapshots/cycle_01/chapters/chapter_04.md:74-78, snapshots/cycle_01/chapters/chapter_04.md:174, snapshots/cycle_01/chapters/chapter_04.md:223, snapshots/cycle_01/chapters/chapter_04.md:303, and snapshots/cycle_01/chapters/chapter_04.md:305. Keep one representative loop, then convert the others into distinct physical, sensory, or interaction-based beats with different sentence shapes.",
+      "acceptance_test": "Pass if revised snapshots/cycle_01/chapters/chapter_04.md:74-305 contains no more than one 'typed then deleted' loop and no more than one multi-sentence 'He could have...' chain, with remaining hesitation beats rendered through non-redundant constructions; fail otherwise."
+    }
+  ],
+  "summary": "Chapter 4 sustains pressure and lands required plot beats, but it fails review due to one HIGH continuity contradiction in money-state carry-forward, one HIGH sanitization/timidity issue at the climax, and unresolved MEDIUM issues in escalation design, dialogue register distinctness, and repeated prose formulas."
+}

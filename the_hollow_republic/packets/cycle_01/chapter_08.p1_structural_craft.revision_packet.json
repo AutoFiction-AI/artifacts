@@ -1,0 +1,82 @@
+{
+  "acceptance_targets": [
+    "[chapter_08_craft_001_aftermath_sanitization] PASS if the revised material between snapshots/cycle_01/chapters/chapter_08.md:133 and snapshots/cycle_01/chapters/chapter_08.md:141 contains a concrete action sequence with a named actor, a visible cost, and an irreversible practical result; FAIL if the chapter still moves from Lucien's weak 'parallel' answer straight into generalized afternoon summary.",
+    "[FBR-001] Reading snapshots/cycle_01/FINAL_NOVEL.md:2384-2558, a cold reader should feel the triage through concrete, differentiated stakes and hear each speaker's pressure distinctly. Fail if those lines still rely on repeated bookkeeping tagwords to do the emotional work, or if Lucien's paralysis is mainly described rather than dramatized."
+  ],
+  "chapter_id": "chapter_08",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if the revised material between snapshots/cycle_01/chapters/chapter_08.md:133 and snapshots/cycle_01/chapters/chapter_08.md:141 contains a concrete action sequence with a named actor, a visible cost, and an irreversible practical result; FAIL if the chapter still moves from Lucien's weak 'parallel' answer straight into generalized afternoon summary.",
+      "chapter_id": "chapter_08",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_08.md:133, snapshots/cycle_01/chapters/chapter_08.md:139, snapshots/cycle_01/chapters/chapter_08.md:141",
+      "finding_id": "chapter_08_craft_001_aftermath_sanitization",
+      "problem": "After Lucien's failure to choose, the chapter retreats into an afternoon montage instead of dramatizing the first concrete cost of that failure. The draft says the room now needs butcher's work, then skips past the immediate bodily/practical consequence: Colombe's untreated foot, the missing men left unsearched, or the exposed papers. That is sanitization by summary, and it makes the aftermath feel cleaner than the premise.",
+      "rewrite_direction": "Replace or expand the transition anchored at snapshots/cycle_01/chapters/chapter_08.md:133 and snapshots/cycle_01/chapters/chapter_08.md:139 before the notebook beat at snapshots/cycle_01/chapters/chapter_08.md:141. Put one consequence-bearing task on-page in scene time: a failed or painful attempt to deal with Colombe's foot, an explicit decision to delay Marcel/Etienne, or a tense paper-hiding action that shows what Lucien's indecision costs the room.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Reading snapshots/cycle_01/FINAL_NOVEL.md:2384-2558, a cold reader should feel the triage through concrete, differentiated stakes and hear each speaker's pressure distinctly. Fail if those lines still rely on repeated bookkeeping tagwords to do the emotional work, or if Lucien's paralysis is mainly described rather than dramatized.",
+      "chapter_id": "chapter_08",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2384",
+      "finding_id": "FBR-001",
+      "problem": "The approved accounting lexicon turns into audible machinery here. In the ration-room triage, the narration and dialogue keep naming pressure through `count`, `arithmetic`, `account book`, and `useful` (especially around lines 2384-2426 and 2528-2558), so the scene starts sounding pre-coded by the style bible instead of freshly perceived. That flattens Elise's close-third voice and weakens Lucien's failure to choose by explaining the math instead of dramatizing the competing bodies and losses.",
+      "rewrite_direction": "Revise snapshots/cycle_01/FINAL_NOVEL.md:2384, snapshots/cycle_01/FINAL_NOVEL.md:2426, snapshots/cycle_01/FINAL_NOVEL.md:2528, and snapshots/cycle_01/FINAL_NOVEL.md:2558 so scarcity is carried by concrete, local pressure rather than repeated accounting labels. Keep the economic intelligence, but replace the mantra words with specifics already present in the chapter: the beans in Lucie's tin, Colombe's foot, the reserve biscuit tin, the forged papers, the risk profile of each possible courier, and the practical cost of losing each body. Lucien's indecision should remain, but it should emerge from staged triage and clashing priorities, not from the narrator repeatedly naming the arithmetic.",
+      "severity": "MEDIUM",
+      "source": "booker_global",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "15756273f51d2626d49d34e1fee53aa347edb0188784d692836af1e376bac090",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into the contradiction that tenderness can coexist with surveillance, desire with betrayal, and ideology with vanity. Render violence, sex, illness, and poverty at the scale characters actually experience them. When an edge case appears, choose the more specific and less reputationally safe version if it remains faithful to character, period, and causality.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene reaches bodily danger, sex, grief, class shame, or political cruelty and then retreats into summary, rewrite toward the exact physical and social fact the character cannot evade.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "Moderate to high; contractions are the spoken default, with full forms reserved for period formality, deliberate emphasis, or Vautrin's cultivated precision.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate compressive surveillance chapters with slower communal or reflective chapters; vary scene count, dialogue density, and whether the turn comes from action, information, dread, or aftermath so no two adjacent chapters run on the same structural rhythm.",
+      "diction": "Historically grounded and unsentimental; plain enough for labor and bureaucracy, lyrical only when perception earns it rather than rhetoric.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third centered on Elise, elastic enough to register class texture, political pressure, and the quarry's collective life without drifting into authorial essay.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Supple, image-bearing sentences broken by hard factual beats at moments of violence, lust, bureaucratic coercion, or shame.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

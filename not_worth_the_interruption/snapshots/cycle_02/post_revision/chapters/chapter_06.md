@@ -1,0 +1,401 @@
+# Chapter 6
+
+The next evening at supper, with one of Prue's star numbers half copied into the margin beside a line of Grinlow symbols, the spoons began at the Ravenclaw table.
+
+At first it sounded like somebody dropping cutlery one piece at a time: a light dry knock, then another, then a run of them. Owen looked up and saw every spoon on the table rise an inch from the wood. They turned together, bowls gleaming with gravy and lamplight, and pointed straight at the High Table.
+
+For one stupid second the Hall held still around it. Steam lifted from potatoes. A first-year at the end of Hufflepuff froze with custard on her chin and her mouth open. Then the spoons started hammering themselves against the rims of the serving bowls, not random, not noisy enough to be accidental. Three beats, pause. Three beats, pause. They all faced the teachers while they did it, as if a hundred bits of silver had developed opinions.
+
+Amycus Carrow came up out of his chair so hard the bench scraped stone.
+
+"Enough of that," he barked, and half the spoons dropped dead at once. The other half kept going for one more beat, stubborn as teeth chattering in a skull. Amycus drew his wand. The doors of the Hall slammed shut on the bang of it.
+
+Owen's first thought was not fear. It was annoyance, pure and mean. He had one good hour before curfew. He had a copied line in the margin of his Charms essay, a prepared chalk stroke wrapped in paper inside his sleeve, and a decent chance of finding out whether the new surfaced table meant contact in the physical sense or only in the legal one. Somebody had decided to be brave with spoons.
+
+Around him, benches scraped. Conversation died in clumps. At the far end of the Hufflepuff table Martha had already shoved the last of the treacle tart toward a second-year whose nose was red with cold and whose left sleeve still bulged with the mitten she kept checking for as if its pair might come back by magic. Martha stayed half turned toward her even when Amycus started down from the dais, one hand still on the custard jug, plait loosening down her back.
+
+Alecto Carrow moved more slowly, her heavier heel striking crooked on the flagstones. "Wands on the tables," she said. "Bags open. Everybody stays put till we know which little shit thought that was funny."
+
+A groan went round the Hall, quickly smothered. Nobody wanted to be the one heard reacting.
+
+Owen slid his parchment flat over the copied figures. The margin still looked like homework if you did not know what you were seeing. That was the useful thing about Prue's hand; even her dangerous notes looked schoolish at a glance, all tidy fractions and fussy corrections. He folded the sheet once, then again, and tucked it inside the back cover of *Defensive Theory for Beginners*. The paper inside his sleeve felt damp already with sweat.
+
+Amycus had made it to the middle of the Hall. He was thick through the shoulders and flushed at the cheeks, the colour climbing faster as he got angrier, and there was a thread hanging from one undone bootlace that kept flicking against the stone when he walked. He looked, Owen thought irrelevantly, like a man too lazy to tie his own shoe but very willing to break your fingers for noticing.
+
+"Up," Amycus said.
+
+Nobody moved quickly enough for him. He jabbed his wand at the nearest table and every goblet rattled. "Up means up."
+
+The Hall lurched into motion. Students stood. Benches shoved back with a long wooden scream. The smells of supper came out stronger when everyone moved at once: cabbage water, damp robes, the sweet thick skin on stewed fruit, soot from the torches. Owen stood with the others and slid his wand onto the table. He left the book where it was and put his hands where Alecto could see them.
+
+Martha edged in on his left as the table compressed. "You know anything about this?"
+
+"About spoons?" he said.
+
+She turned and stared at him, not fooled and not interested in the literal answer. Her cuff had come unstitched at the wrist and someone, probably her, had repaired it with green thread that did not match a thing on her robe. "Jesus Christ, Owen."
+
+"I don't know who did it."
+
+"That's not what I asked."
+
+Alecto began the searches at the end of Slytherin, slow and performative. Students had to empty pockets onto the wood. Quills. Crumbs wrapped in napkins. Contraband sugar. A pocketknife from someone who ought to have known better. She handled every object like it had personally insulted her.
+
+Amycus reached Ravenclaw and started pulling satchels apart. He tore through them without care. Ink bottles broke. A textbook hit the floor hard enough for the spine to split. The first-year with the custard chin began crying soundlessly, her face folding in on itself while she tried not to make a noise.
+
+Martha saw her and hissed, "For fuck's sake," under her breath, though whether at the girl or at the Carrows Owen could not tell.
+
+"If you've got something," she said to him without looking over, "anything at all that isn't just skulking and notes and whatever you've been doing, this would be a useful moment to stop being mysterious."
+
+He kept his eyes on Amycus. "It isn't ready."
+
+"Ready for what?"
+
+"For this."
+
+She laughed once, a horrible little breath with no humour in it. "Everything's for this now."
+
+Owen did not answer because there was not an answer that did not turn into the whole impossible thing at once. Because if he tried to explain that he had been working on conditions and not protections, on categories and not shields, she would hear, correctly, that he had been using occupied school nights to tinker with a manuscript while she ran messages through a regime that beat children for spoons. He knew that. Knowing it did not help.
+
+Amycus had reached Hufflepuff. A fourth-year emptied his pockets too slowly and got backhanded across the mouth for it. The sound cracked through the Hall. The boy sat down by accident and then sprang upright again, blood on his lower lip, while Amycus laughed.
+
+Martha's head came up. "It was cutlery," she said, not loud at first.
+
+Alecto looked over. Amycus did too.
+
+Martha repeated it, louder. "It was cutlery. You're acting like somebody blew a wall out."
+
+The silence after that felt crowded. Owen could hear the first-year breathing through snot. He could hear, somewhere further off, a Ravenclaw girl's teeth clicking because she was cold or scared enough not to manage stillness.
+
+Amycus smiled.
+
+The expression spread slowly, the way spilled drink spreads through cloth.
+
+"That's nice," he said. "I always like the volunteer commentary."
+
+He moved toward their table.
+
+Students tightened without meaning to. Martha had already set her shoulders for the thing she was going to say next. Owen knew the look: not courage exactly, not even recklessness, but the flat irritation she got when somebody bigger than her insisted on being stupid in a space everybody else had to live in. He also knew, with the clean mechanical certainty he hated about himself, that if Amycus reached the table and searched sleeves, the paper-wrapped chalk stroke would not survive the next ten seconds.
+
+There were three possible decent actions in the room and he chose the fourth: he left Martha standing there while he crouched.
+
+He let her face Amycus alone, kept his hands to himself, and left the stunt on her.
+
+Instead he bent as if his wand had rolled under the bench. His fingers found the chalk packet inside his sleeve, thumb already whitening with powder. In one movement, shielded by table edge and bodies, he stripped the paper away and dragged the prepared line hard along the underside of the bench's front lip, burying it in the carved badger scrollwork where shadow ate the white. It was only the priming stroke he'd copied out and shaved earlier to a precise width: enough, if he had read the damned page right, to wake on the first hard contact in front of the bench and spoil it. After that it would need wording or go broad and stupid. The chalk mix carried a flake from the old burn skin at the heel of his palm because the Leaves had answered better that way. He pushed the crumpled wrapping deeper into a crack in the wood and straightened.
+
+Amycus was in front of them.
+
+"Well?" he said to Martha.
+
+She lifted her chin. "Well what?"
+
+The Hall let out its breath all at once, but too quietly to count as sound.
+
+Amycus's smile widened. "There we are."
+
+Owen still had chalk under his thumbnail.
+
+* * *
+
+Amycus did not ask for names.
+
+That was the first bad sign. Names meant process, or the pretence of it. Names could be denied, traded, lied about. Amycus looked from Martha to the rest of the table and seemed to decide, there and then, that explanation would only waste everybody's evening.
+
+"Out," he said, jerking his wand toward the centre aisle.
+
+Martha did not move.
+
+Amycus caught a fistful of her robe at the shoulder and yanked. The green-thread repair at her cuff snapped with a sound as small as a twig. She stumbled over the bench leg, hit the table with her thigh, and went because the alternative was being dragged face-first.
+
+The first-year beside her made a noise, not quite a sob. Martha threw her a look over her shoulder that was almost annoyed, as if apologising for causing trouble was one more thing she had not got time for tonight.
+
+Amycus hauled her into the open space between the house tables and turned to the room as if beginning a practical lesson.
+
+"Since one of you thought it'd be clever to dress supper up with jokes," he said. "Fine. We'll do it this way, then. Useful way."
+
+He kept one hand bunched in the back of Martha's robe while he spoke. The grip was intimate in the ugliest way. His fingertips worked into the cloth, finding purchase, enjoying it. He gave her a short shake. "First thing. Room gets ideas, you don't waste your arm on all of it. Waste. You pick one. One with friends. One the rest'll feel."
+
+Scattered ugly laughter came from the Slytherin end, the sort students made when they wanted the adults to hear them being safe.
+
+Martha twisted, trying to get her balance. "You sad bastard."
+
+Amycus smacked her across the face.
+
+The blow went wrong exactly the way the priming stroke was meant to make it go wrong. Owen saw the skin of her cheek flatten under the hand and then refuse the clean landing. Amycus's palm slid. It took her mouth sideways, split the edge of her lip against a tooth, and then skidded off in a way that made his arm overtravel. Martha staggered two steps rather than one. Amycus blinked, more irritated than surprised.
+
+Under the table, the hidden chalk line had gone warm.
+
+The sensation reached Owen through the soles of his shoes first, a dry friction in the stone, as if the bench were being very slowly dragged across grit. The old burn in his right palm tightened. So the copied note had been right about that much. The priming stroke was enough to wake the rule. Without the rest of the instruction, every hard contact in front of the bench would come in crooked and keep going. He'd told himself he was only refusing to lose the line. That story lasted about as long as it took Amycus to turn back and take hold of Martha by the jaw.
+
+"Look," Amycus told the Hall. His thumb pressed into the cut he had just made. "Mouth won't answer, it can do this. Bleed. Cry. Shut the room up."
+
+Martha jerked away from him and he lost the grip, fingers smearing blood and spit across her chin instead of pinning it. The line was taking more than blows now. It had started taking holds as well. Anything trying to arrive square in that strip of floor started slipping its shape. Amycus only looked annoyed, which meant the next thing would be rougher.
+
+He had no time for clean wording or a safe radius. He had only the bench, the line under it, and the exact wrong demonstration in front of him.
+
+He set his left hand flat on the table where anyone could see it. With the right he took up his wand as if on instinct. The wood bit his skin at once. He kept the movement small, hiding the tip against the bench edge, and let the phrase he had spent two evenings not understanding settle into the back of his mouth. The line was already awake. All the wand phrase could do now was tell it how to keep misbehaving.
+
+A complete loss of contact would be absurd, he thought. She'd fall through her own shoes. He needed something short of landing: a skid, a glance, a pass.
+
+Amycus shoved Martha backward and sent a stinging hex after her before she had recovered the step.
+
+The curse hit the front of her robe, spread blue across the damp wool in a bright branching smear, and shot off sideways into the stone by the Ravenclaw table. Chips spat from the flagstone. Martha cried out anyway because the edge of it had caught her shoulder, enough to burn through cloth and leave a black crescent, but it was not the full-body wrench Amycus had meant.
+
+A murmur ran through the Hall before anybody could stop it.
+
+Amycus turned his head. "Quiet."
+
+He spoke without taking his eyes off Martha. He had seen it, even if he had not understood it, and Alecto had too. She had gone still with somebody's confiscated pocketknife in her hand.
+
+Martha breathed twice through her nose, sharp and deliberate, and spat blood onto the floor. "That all?"
+
+Owen almost lost the line laughing, less because it was funny than because it was so completely her to answer pain with household contempt, as if Amycus had served burnt potatoes.
+
+Amycus smiled again, thinner this time. "No," he said. "Not near."
+
+He flicked Levicorpus at her.
+
+The curse took at the edges. Her feet ripped off the stone, but instead of hauling her cleanly upside down it caught more in robe than body, wrenching her sideways. She rose with one leg kicked up and one shoulder dragged high, spun half round, and slammed into the end of a bench hard enough to make the wood jump. The back of her head missed the corner by an inch. Her forearm did not; Owen heard the crack of bone or bench and could not tell which.
+
+His palm seemed to open under the burn, an inner split under the scar rather than any visible wound. The wand recoiled so violently it struck his knuckles against the table edge. Light flashed in his hand. He tasted old pennies and lamp smoke.
+
+Around Martha, smaller things had started to go wrong. Her shoe skidded when she tried to stand. Amycus's grip failed twice in a row, fingers slipping from fabric that should have held. A bowl somebody had not cleared from the end of the table slid away from a reaching hand and smashed on the floor because friction in that patch of stone was now wrong, or thinner, or answering to a different rule.
+
+Alecto frowned. "Amycus."
+
+"What?"
+
+"Something's off."
+
+"Yes," Amycus said. "Her mouth."
+
+He seized Martha by the plait this time. The twist held better than cloth. He dragged her close enough that Owen could see the watered red in her eyes and the raw place where the stinging hex had burned through robe to skin. Amycus put his mouth almost to her ear, speaking for the room anyway.
+
+"And if that doesn't take-" He dragged her by the plait till her face tipped up. "you stop being nice. You go lower."
+
+He drove a knee into her stomach.
+
+The contact broke wrong there too. The blow slid off the angle of her hip and sent her sprawling rather than folding. She hit the stone on both palms and one knee with a skin-tearing slap. It spared her ribs. It took her skin instead. She gasped and went white.
+
+Owen held the phrase. The line had answered a new question now, and the answer was filthy. The hurt kept landing; it simply slid off centre. Miss the ribs, take the palms. Miss the stomach, split the knee. Amycus could keep changing angle all night and the line would keep finding some other place for the blow to land.
+
+Martha pushed herself up on shaking hands. Amycus kicked one arm out from under her and she hit the floor again, this time cheek first. Blood printed on the flagstone, a small mark and enough.
+
+Owen heard himself say, very softly, "Stop changing target."
+
+The words slipped out before he could keep them in. Martha's head snapped toward the Hufflepuff table. Amycus followed the line of it.
+
+"You saying something, Phipps?"
+
+Every part of Owen wanted the room smaller. He could feel the chalk line humming through the bench front like a held wire. "No, sir."
+
+"Thought not."
+
+Amycus raised his wand toward Martha again, then paused. His head tilted, listening to something mean in himself. When he spoke next his voice went almost convivial, which was worse.
+
+"Actually," he said, "let's make this educational."
+
+He pointed at a seventh-year Slytherin near the dais, a tall girl with a bitten thumbnail stained blue by leaking ink. "You. Show them a stinging hex. Properly this time. Not that nancy classroom rubbish."
+
+The girl went grey but stepped out because not stepping out was another form of volunteering. She held her wand like somebody trying not to touch a dead rat.
+
+"Go on," Amycus said.
+
+She cast. The hex flew green-white, shaky and fast.
+
+It clipped Martha's upper arm, sheared off into her robe seam, and tore the fabric open from shoulder to elbow in a line of sparks. The skin beneath blistered in three separate patches instead of one continuous lash. Martha bit down on the scream, failed, and let it out anyway. The sound had nothing brave in it. Owen was grateful for that. Brave sounds turned into stories too quickly. This was only pain.
+
+Amycus barked a laugh. "See? Better."
+
+The Slytherin girl looked as if she might be sick.
+
+Owen's wand jumped again, jerking in his grip like a live thing trying to get away from him. The bone ache ran up his forearm. The next problem was speed. The line was no longer taking single orders from him; every new touch in that strip of Hall yanked a fresh decision through his hand. Cloth. Skin. Stone. Spit. Boot leather. The questions were arriving faster than he could narrow them, and his arm was starting to fail before the chalk did.
+
+Amycus turned abruptly and fired at Hufflepuff.
+
+At first it was just a savage sweep, a warning shot at the table that had looked too horrified to his liking. Students ducked. Owen, because he had the line under his hand and nowhere to hide inside himself, took it in the shoulder, though the line stripped some of the force sideways before it finished arriving.
+
+The curse struck his robe, tore heat across the collarbone, and skidded off into the bench beside him, blasting a hand-span trench out of the wood. Pain came a second late, hot and granular, like somebody grinding salt into skin with a thumb.
+
+He made a sound he hated and clamped his mouth shut.
+
+Amycus stared at him.
+
+That was the bad moment. The hit barely mattered beside being noticed.
+
+"Funny," Amycus said.
+
+Owen could not tell whether Amycus meant the odd angle of the deflection or only the fact Owen was still upright. Around him students were looking everywhere except directly at him, which was its own form of looking. Martha was on one elbow in the aisle, breathing hard, and she was staring straight at his wand hand.
+
+"Maybe," Amycus said softly, "you'd like a turn instead."
+
+Owen's first stupid hope was that he meant some minor hex, another stinger he might survive with the line still holding. Then Amycus's face changed again, all the loose amusement burned out of it, and he said, "Crucio."
+
+The curse was red at the core and colourless at the edge.
+
+Crucio was too big for the line to spoil neatly. Martha still took it; the body-knowledge of it found her at once, back bowing, hands clawing, mouth opening on a raw sound that ripped the Hall apart. But the curse would not stay in her. It crawled over robe cloth and flagstone joints in crackling threads, leapt from her sleeve to the floor, snapped blue-white along the seam between stones, and grounded itself somewhere under the Ravenclaw table with a sound like a lamp exploding.
+
+The whole Hall flashed.
+
+Candles guttered blue. Goblets rang. The house-point hourglasses at the wall sang one thin note and then were silent.
+
+Martha collapsed, shaking and still fully inside the pain, but conscious enough to roll onto her side and cough blood-flecked spit onto the floor instead of lying there empty.
+
+Owen lost the line.
+
+The line tore loose from him. His wand punched backward so hard it flew from his hand, struck the table, and bounced to the floor. The shock up his arm felt like a bruise being hammered into place from the inside. He grabbed the table edge with his left hand to stay vertical. Under the bench, the hidden chalk mark had burned through wood and into stone. He could smell it now, a sour mineral hotness that did not belong in the Great Hall.
+
+Nobody moved.
+
+Amycus looked at the blackened seam in the floor and then at Owen and then at Martha. He lacked the wit to understand what he had seen. He still understood enough to know the room had misbehaved around the Hufflepuff boy and the girl in the aisle.
+
+Alecto came down two steps from the dais. "Amycus."
+
+This time her voice carried something besides annoyance. The candles were still burning blue.
+
+Amycus spat on the floor beside Martha's hand. "Fine," he said, breathing hard through his nose. "That's enough. That's what clever little shits get in here. Pain. Everybody watching. No clean bit of it. Think you're special, do you? I take my time with that. Right there. Let everybody look."
+
+He jabbed his wand toward the doors. "Take her to the hospital wing. If she can stand, she stands. If she can't, drag her. And if I hear another spoon in this castle so much as twitch, I start with the first-years. First-years first, then the rest of you."
+
+The doors banged open.
+
+Sound came back in a rush. Benches scraped. Somebody began crying properly now, with hiccups. The Slytherin girl with the ink-stained thumb backed away as if Martha's skin might stain her. Hufflepuffs surged into the aisle. Amycus stepped over Owen's wand where it lay on the floor, noticed, and ground the heel of his boot down beside it without quite touching.
+
+"Phipps," he said, not looking at him. "You're odd."
+
+Then he walked out, bootlace still trailing.
+
+Martha tried to stand on her own and nearly went over. Two girls got hold of her elbows. She shook one of them off long enough to look at Owen.
+
+Pain and furious, ordinary clarity filled the look. She was adding up what she had just seen and noticing what had already been in his sleeve.
+
+Owen stooped for his wand because if he looked at her properly he might answer. The wood was hot. It jerked in his hand as soon as his fingers closed round it.
+
+"What was that?" she said.
+
+"Not here," he said.
+
+"You did something."
+
+"I don't know exactly what I did."
+
+Her eyes dropped to his hand, to the chalk he had missed under the thumbnail. "But you had it ready."
+
+He took too long to answer.
+
+Her laugh turned into a cough. "Yeah. Course you did."
+
+Then the girls on either side got her moving, and Owen went after them because standing still in the Hall with his wand in his hand felt worse.
+
+The passage to the hospital wing clogged at once. Someone behind him was crying with hiccups now. Somebody else kept saying make room and not making any. Martha stumbled at the turn and slapped a hand against the wall. Owen reached without thinking. The older girl on her left knocked his hand away before he touched cloth.
+
+"Leave it, Phipps."
+
+"I was only-"
+
+"Don't," Martha said.
+
+She did not turn round. Her voice came out rough with blood in it and thinner than he had ever heard it. "Don't come in there now and do the helpful bit."
+
+The group started again. One of the younger Hufflepuffs looked back at him with open hatred and then away because there were more immediate jobs. Owen stopped in the middle of the corridor while they took Martha through the hospital-wing doors. They stood open, bright, and might as well have been locked.
+
+* * *
+
+He should have gone in anyway.
+
+That stayed true for maybe thirty feet. He backed down the corridor with the hospital wing still open behind him and tried the smallest spell he could think of, as if a decent bit of school magic might prove he was still the sort of person who could walk back through those doors. He tried only Lumos, under his breath, because the stair off the Hall was dim and his shoulder felt wet where the curse had torn robe and skin together.
+
+The wand kicked like a mule. Light flared at the wrong end, burst white against his knuckles, and died. Pain ran up his arm to the elbow in a deep thudding stripe.
+
+"Fuck," he said, and leaned his forehead briefly against the wall.
+
+The stone gave him a faint stored vibration instead of cold, a wrongness in it, as if somewhere inside the castle a bell had been struck and the sound had not yet decided to become audible. He could feel it through forehead bone and teeth. When he lifted his head the portraits along the passage were muttering in their frames, not awake enough to complain, only uneasy.
+
+He could have turned back then. The hospital wing was still behind him, bright at the end of the passage, and somebody in there would have said what he deserved to hear. He kept going the other way, down toward the kitchens because he needed distance from bodies and because the service passages there were often empty after supper if you kept out of the elves' way.
+
+His wand hurt to hold. That was new. This was actual recoil, material and repeated, beyond the vague unreliability after the greenhouse or a misfire now and then, as if the wood objected to him on contact. He shifted it to his left hand and the right palm answered with a fresh tightening under the old coffer burn. The scar there had darkened from angry red to a strange bruised violet at the edges.
+
+At the bottom of the stair by the kitchens, heat and noise should have met him. Pots knocked in the scullery. Water ran. The ordinary wet labour of the castle fed itself there. Instead the passage was quieter than usual, held down rather than empty.
+
+Tallow stood on a stool by the scullery door, sorting bent ladles into two stacks with the concentrated misery of a man balancing accounts nobody else respected. He was small even for an elf, one ear singed to a notch, and he kept testing each ladle by tapping it once against his wrist before deciding which pile it belonged in. When Owen came down the passage, Tallow looked up and all the skin around his eyes pulled tight.
+
+"No," he said immediately.
+
+Owen stopped. "No what?"
+
+Tallow set one bent ladle aside without looking. "No to whatever you've just been doing to the house."
+
+Owen's first instinct was denial. His second was the literal answer. "I wasn't doing anything to the house."
+
+Tallow gave him a look that would have been familiar on Martha and was somehow worse on a creature three feet tall with wet hands and soot on his cuffs. "Young sir, the plates are shivering in the rack and the south wall's making a singing fuss of itself. Tallow is not taking that for weather."
+
+He hopped down from the stool, came two steps nearer, and then stopped as if an invisible draught had met him. His nose wrinkled. House-elves, Owen remembered from half things overheard in Hufflepuff, did not like some old parts of the castle. He had never paid attention because most old parts of Hogwarts were only old stone and school history and had nothing to do with him. That category had been shrinking all autumn.
+
+Tallow pressed a damp hand flat against the passage wall, snatched it back, and glared. "There. Hear that?"
+
+Owen listened.
+
+At first he heard only kitchen noise at a distance: boil, clatter, a muffled shout. Then, under it, the note came through, finer than draught through a keyhole and steadier than plumbing, a held hum in the stone.
+
+"It'll stop," Owen said, because he wanted it to.
+
+"Maybe," Tallow said. "Maybe not. Old work doesn't always know when to mind itself once struck."
+
+The phrase hit Owen in the chest harder than the corridor curse had. "What old work?"
+
+Tallow's face closed at once. He reached for the nearest ladle and began rubbing at a stain that was not there. "Kitchen work is for kitchens. Upper-school foolishness is for upper school. Tallow's not talking beyond his broom. Not about pipes, not about coal, and not about what lies lower than both."
+
+Owen stepped closer. The wand in his hand twitched. "If you know something-"
+
+"Everybody who works in this house knows something," Tallow snapped, then repaired himself into a softer tone out of old habit. "Meaning no offence, young sir. Only you have a look about you tonight that says you've put your hand where the house keeps its age."
+
+He glanced at Owen's palm and then away too quickly, not from politeness. From dislike, or fear.
+
+"Go lie down if you've got any sense," Tallow said. "And if you haven't, don't lean on any wall that answers back."
+
+Owen wanted to ask five more questions. He asked none because the hum in the passage had changed while they spoke. It had grown directional instead of louder. It seemed to pull, very slightly, back toward the Great Hall.
+
+He left Tallow among the ladles and climbed again.
+
+By the time he reached the Hall, the corridor outside it was empty. The doors stood half closed. Supper mess remained inside in the ugly aftermath way only a public room could manage: plates abandoned crooked, a goblet overturned, one shoeprint through spilled custard near the Ravenclaw benches. Torchlight moved gently over the long tables. Everything looked ordinary. The feel of it had gone entirely wrong.
+
+Owen crossed to the Hufflepuff bench where he had hidden the line.
+
+The wood under the carved badgers had split along the stroke of it. A white mineral seam had pushed up through the grain from inside, pale and dry and impossible to wipe away. He touched it with one finger. The bench gave back a shiver that travelled straight up his arm.
+
+He crouched and looked along the floor.
+
+There it was.
+
+From the bench front to the centre aisle, nearly invisible until the light caught it, ran the ward scar: a hair-thin whitened line sunk into the flagstones, not painted on, not surface chalk, but part of the stone now, following no joint Owen could see. It forked once where the stinging hex had gone wrong. It thickened in the place where the Cruciatus had skated into the floor. Near the centre, where Martha had hit blood first, the line widened to the size of a thumbnail and then narrowed again, like a pulse trapped underground.
+
+Owen sat back on his heels. The Hall felt bigger in attention than in distance, as if the room were no longer merely containing what had happened but recording it.
+
+He drew his wand and held the tip two inches over the scar.
+
+The wand flew backward out of his hand.
+
+The recoil barely tossed it clear, but it cleared far enough. It cracked across his knuckles and the wand spun once in the air before he caught it against his chest. In the same instant the hum in the stone resolved.
+
+A single note gathered itself.
+
+The note reached him through his teeth, through the tender place under the old burn, through the bruised stripe along his arm. The Hall answered his proximity like metal answering metal. The hourglasses at the wall rang very softly. Far above, somewhere in the stacked dark of the castle, another answering vibration came back through the stone a heartbeat later.
+
+That was when the real fear arrived.
+
+The real fear came from somewhere colder than Amycus; Amycus could beat students and miss the structure of a room entirely. Fear of being caught with the manuscript remained practical enough, but this was narrower and worse: the sense of having made a disturbance in a system he barely understood, and of that disturbance travelling along routes older minds might already know how to read.
+
+Snape, Owen thought.
+
+He had not seen him. The fear was simpler than that: a headmaster lived in the listening parts of a castle whether he wanted to or not. Some forms of school authority were built out of notice before they were built out of punishment. If the Hall had just rung, somebody higher in the stone might have felt the note.
+
+Owen forced himself up, legs stiff from crouching. He put the wand away. It hurt less when he was not trying to use it, though even in the pocket it seemed to sit wrong, heavier at one end than the other.
+
+At the door he stopped and looked back once.
+
+The scar held its place in the floor, faint as a crack seen through milk. Water and house-elf vinegar would never scrub it out. It sat there as evidence.
+
+He left without going near the hospital wing.
+
+He got to the cellar with nobody seeing him, or nobody stopping him, which was not the same thing. The dormitory was mostly empty. Hufflepuffs were still below, or at Pomfrey's, or carrying the story of the Hall from bench to bench. Owen did not take the notes out. He sat on the end of his bed with the robe stuck to the burn on his shoulder and his right palm giving little dry pulses under the old scar.
+
+Every time he shut his eyes he saw the white seam in the flagstones and Martha looking at the chalk under his nail, and each time the old scar in his palm gave a dry answering ring. The two things sat together in his head and would not sort into anything useful. He listened to footsteps go past in the corridor outside, each one sending a faint answer through the stone, and kept not knowing whether he wanted hers to stop at the door or keep going.

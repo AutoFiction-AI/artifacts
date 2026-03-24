@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_06",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_06_craft_001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:15",
+      "problem": "The chapter says Lena already has the full $18,600 in 'trailer-sale money' sitting in savings. The continuity sheet makes the Wildwood trailer sale a later-story event that closes in chapter_17, so this line breaks the financial timeline and the trailer's object state.",
+      "rewrite_direction": "Revise snapshots/cycle_01/chapters/chapter_06.md:15 so Lena's protected reserve comes from a source that canonically exists by chapter_06, or recast the line so it no longer implies the Wildwood trailer has already been sold. Preserve the checking-account hit from the $350 transfer, but remove the completed-sale state from snapshots/cycle_01/chapters/chapter_06.md:15.",
+      "acceptance_test": "PASS if a close read of snapshots/cycle_01/chapters/chapter_06.md:15 no longer identifies Lena's reserve as completed trailer-sale proceeds and no longer implies the Wildwood trailer has already been sold before the later cleanout/sale chapters. FAIL if the revised line still gives her the full trailer-sale cash in hand."
+    },
+    {
+      "finding_id": "chapter_06_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:11; snapshots/cycle_01/chapters/chapter_06.md:13; snapshots/cycle_01/chapters/chapter_06.md:399; snapshots/cycle_01/chapters/chapter_06.md:401; snapshots/cycle_01/chapters/chapter_06.md:403",
+      "problem": "The chapter leans on the same sententious 'Adults ...' sentence shape five times. What starts as Lena's defensive self-talk becomes an over-literal thematic device in the closing triad, flattening the final turn by explaining the meaning instead of letting the concrete money/work detail and Eli's note carry it.",
+      "rewrite_direction": "Rework the mantra at snapshots/cycle_01/chapters/chapter_06.md:11, snapshots/cycle_01/chapters/chapter_06.md:13, and especially snapshots/cycle_01/chapters/chapter_06.md:397 so the ending lands through Lena's embodied rationalization rather than three consecutive aphorisms. Keep the callback only if it stays sharp, and let at least part of the justification emerge from the receipt, groceries, work schedule, or Lena's bodily response in snapshots/cycle_01/chapters/chapter_06.md:397.",
+      "acceptance_test": "PASS if the revised chapter uses the 'Adults ...' construction no more than twice across snapshots/cycle_01/chapters/chapter_06.md:11, snapshots/cycle_01/chapters/chapter_06.md:13, and snapshots/cycle_01/chapters/chapter_06.md:397, and the closing shift is legible through concrete scene detail rather than a three-sentence aphoristic stack. FAIL if the ending still resolves Lena's thinking through three consecutive 'Adults ...' declarations or an equivalent thematic chant."
+    }
+  ],
+  "summary": "The chapter has strong scene craft at the level of voice, money detail, and neighborhood texture, and its dialogue stays distinct and natural across Lena, Farah, June, Mateo, and Eli. It still fails review because a HIGH continuity break gives Lena trailer-sale proceeds before the sale canonically happens, and the ending's repeated 'Adults ...' mantra turns a strong emotional pivot into an over-explained prose device."
+}

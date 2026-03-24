@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_02",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CRAFT_CONTINUITY_MARK_EXAM_PREMATURE",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_01/chapters/chapter_02.md:117; snapshots/cycle_01/chapters/chapter_02.md:121; snapshots/cycle_01/chapters/chapter_02.md:123; snapshots/cycle_01/chapters/chapter_02.md:131",
+      "problem": "Chapter 2 advances the first physical Mark examination and the Mark's Hermione-specific response a chapter early. Hermione touches Draco, casts a diagnostic spell, and the Mark visibly quiets and orients toward her here, but the provided boundary pack and continuity sheet reserve that first-contact/state-change beat for chapter_03. This is a canon contradiction and it steals the next chapter's opening engine.",
+      "rewrite_direction": "Revise snapshots/cycle_01/chapters/chapter_02.md:117, snapshots/cycle_01/chapters/chapter_02.md:121, snapshots/cycle_01/chapters/chapter_02.md:123, and snapshots/cycle_01/chapters/chapter_02.md:131 so the morning-room scene stops at verbal agreement plus visual assessment. The lower-risk fix is to let Hermione inspect the Mark without touch, state that sustained diagnostic contact will be necessary, and defer all physical contact, spellcasting, and Mark-response beats to the chapter_03 examination scene.",
+      "acceptance_test": "Pass if, in the revised chapter 2 at snapshots/cycle_01/chapters/chapter_02.md:117 through snapshots/cycle_01/chapters/chapter_02.md:131, Hermione does not touch Draco or cast on the Mark, and the chapter shows no quieting, orienting, or other Hermione-specific response from the Mark before the handoff to chapter_03. Fail if any first-contact examination beat remains on the page in chapter 2."
+    },
+    {
+      "finding_id": "CRAFT_OVERSTATEMENT_AFTER_BEAT_LANDS",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_01/chapters/chapter_02.md:31; snapshots/cycle_01/chapters/chapter_02.md:157; snapshots/cycle_01/chapters/chapter_02.md:223; snapshots/cycle_01/chapters/chapter_02.md:227",
+      "problem": "The chapter repeatedly translates meaning into abstract summary after the concrete beat has already landed. Draco's solitary life is already clear from the empty kitchen, the turned portraits, and the apple browning in the library, but the narration still stops to explain 'the shape of his life.' The same pattern returns after the corridor reveal: the chapter lands the uncanny opening at the library door, then spends two more paragraphs paraphrasing that the house noticed Hermione and that the arrangement is insufficient. This is overstatement after arrival, and it creates mild chapter sprawl.",
+      "rewrite_direction": "Compress or refunction snapshots/cycle_01/chapters/chapter_02.md:31, snapshots/cycle_01/chapters/chapter_02.md:157, snapshots/cycle_01/chapters/chapter_02.md:223, and snapshots/cycle_01/chapters/chapter_02.md:227. After the isolation beat and after the corridor beat, either introduce a new consequence, decision, or pressure shift, or end on a concrete image already carrying the chapter's meaning. Do not spend those slots restating in thesis language that Draco is isolated, that the house noticed her, or that the arrangement is inadequate.",
+      "acceptance_test": "Pass if the revised material at snapshots/cycle_01/chapters/chapter_02.md:31 adds information not already dramatized by the opening routine, and if the ending after the corridor reveal at snapshots/cycle_01/chapters/chapter_02.md:205 through snapshots/cycle_01/chapters/chapter_02.md:219 either turns into a new operational consequence or stops on one concrete pressure beat without re-explaining that the house has changed for Hermione. Fail if the cited spans still paraphrase meanings the scene has already made legible."
+    },
+    {
+      "finding_id": "PROSE_ANALYTICAL_SCAFFOLD_REPETITION",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_01/chapters/chapter_02.md:25; snapshots/cycle_01/chapters/chapter_02.md:27; snapshots/cycle_01/chapters/chapter_02.md:31; snapshots/cycle_01/chapters/chapter_02.md:41; snapshots/cycle_01/chapters/chapter_02.md:77; snapshots/cycle_01/chapters/chapter_02.md:107; snapshots/cycle_01/chapters/chapter_02.md:157; snapshots/cycle_01/chapters/chapter_02.md:215",
+      "problem": "Draco's narration leans too often on the same analytical scaffold: explanatory 'the way...' bridges and a narrow cluster of abstract qualifiers such as 'specific,' 'precise,' 'professional,' 'functional,' and 'controlled.' Because those tokens recur across setup, negotiation, and aftermath, the prose starts sounding prompted rather than freshly perceived. The style bible wants crafted diction that does not feel written-about; here the repeated scaffold smooths too many beats into the same texture.",
+      "rewrite_direction": "Rework snapshots/cycle_01/chapters/chapter_02.md:25, snapshots/cycle_01/chapters/chapter_02.md:27, snapshots/cycle_01/chapters/chapter_02.md:31, snapshots/cycle_01/chapters/chapter_02.md:41, snapshots/cycle_01/chapters/chapter_02.md:77, snapshots/cycle_01/chapters/chapter_02.md:107, snapshots/cycle_01/chapters/chapter_02.md:157, and snapshots/cycle_01/chapters/chapter_02.md:215 so Draco's intelligence arrives through fresher sensory detail, syntax variation, and behavior rather than repeated label words. Keep his guarded analytic POV, but strip out enough repeated scaffolding that each scene has its own pressure texture instead of the same explanatory cadence.",
+      "acceptance_test": "Pass if the revised cited spans replace at least five of the current abstract scaffold uses with concrete perception, action, or more scene-specific diction, and no single revised beat relies on both a 'the way...' explanation and one of the repeated qualifier words to carry the same point. Fail if those passages still read through the same repeated explanatory template."
+    }
+  ],
+  "summary": "The chapter gets its core obligations onto the page: Draco's isolation is concrete, the Draco/Hermione negotiation stays credibly formal and last-name-based, and the corridor opening gives the Manor a strong first active beat. It still fails review because chapter_02 steals chapter_03's first Mark-contact turn, and because the chapter keeps weakening its own best images by re-explaining them in summary language and by recycling the same analytical prose scaffold across multiple scenes."
+}

@@ -1,0 +1,72 @@
+{
+  "chapter_id": "chapter_18",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch18-f001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_18",
+      "evidence": "snapshots/cycle_01/chapters/chapter_18.md:80; snapshots/cycle_01/chapters/chapter_18.md:82; snapshots/cycle_01/chapters/chapter_18.md:88; snapshots/cycle_01/chapters/chapter_18.md:100",
+      "problem": "Sanitization drift in the chapter's highest-stakes material: the three reading pieces are mostly summarized instead of rendered on-page. At the exact point where bodily, moral, and documentary specificity should peak, the narrative substitutes paraphrase, which defuses pressure and mutes consequence.",
+      "rewrite_direction": "Rewrite the reading core at snapshots/cycle_01/chapters/chapter_18.md:80, snapshots/cycle_01/chapters/chapter_18.md:86, and snapshots/cycle_01/chapters/chapter_18.md:98 by replacing summary-heavy narration at snapshots/cycle_01/chapters/chapter_18.md:82, snapshots/cycle_01/chapters/chapter_18.md:88, and snapshots/cycle_01/chapters/chapter_18.md:100 with direct manuscript language (poem/prose excerpt lines) that includes concrete documentary and bodily stakes, then tie immediate audience response to specific quoted language.",
+      "acceptance_test": "PASS if the revised passage around snapshots/cycle_01/chapters/chapter_18.md:80-101 contains at least two direct manuscript excerpts of 3+ sentences each, each excerpt includes concrete factual or bodily detail (not thematic summary), and at least one audience reaction is causally linked to a specific quoted line. FAIL if the section remains primarily paraphrase of what was read."
+    },
+    {
+      "finding_id": "ch18-f002",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_18",
+      "evidence": "snapshots/cycle_01/chapters/chapter_18.md:2; snapshots/cycle_01/chapters/chapter_18.md:30",
+      "problem": "Continuity contradiction risk on Marisol's home geography: this chapter places her apartment context around Winthrop/Prospect-Lefferts cues, while canon tracks an active Sunset Park sublet/debt frame. Without explicit move clarification, spatial continuity is broken.",
+      "rewrite_direction": "Resolve location continuity in the opening movement at snapshots/cycle_01/chapters/chapter_18.md:2 and snapshots/cycle_01/chapters/chapter_18.md:30 by either (a) explicitly stating she moved and still carries Sunset Park arrears, with when/why, or (b) relocating neighborhood cues to align with Sunset Park. Keep commute logic and debt object-state coherent in the same span.",
+      "acceptance_test": "PASS if the revised opening explicitly names Marisol's current neighborhood and its relation to the outstanding arrears by snapshots/cycle_01/chapters/chapter_18.md:30, and the trip to the reading is spatially coherent from that stated origin. FAIL if location remains ambiguous or implies two incompatible home bases."
+    },
+    {
+      "finding_id": "ch18-f003",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_18",
+      "evidence": "snapshots/cycle_01/chapters/chapter_18.md:110; snapshots/cycle_01/chapters/chapter_18.md:120; snapshots/cycle_01/chapters/chapter_18.md:132; snapshots/cycle_01/chapters/chapter_18.md:146; snapshots/cycle_01/chapters/chapter_18.md:148",
+      "problem": "Timidity in conflict handling: the public Q&A scene signals reputational danger, then quickly resolves into manageable process and approval. The chapter sidesteps the most combustible public stakes (paternity/disclosure boundary fallout), reducing narrative consequence at the climax.",
+      "rewrite_direction": "Increase scene-level consequence in the Q&A block at snapshots/cycle_01/chapters/chapter_18.md:110-149 by introducing at least one hard challenge tied to unresolved public damage (paternity, consent limits, or exploitation claim) and let Marisol's response create an immediate cost rather than social smoothing.",
+      "acceptance_test": "PASS if the revised Q&A (snapshots/cycle_01/chapters/chapter_18.md:110-149) includes one direct hostile challenge naming a currently suppressed stake and the scene registers a concrete negative consequence before snapshots/cycle_01/chapters/chapter_18.md:150 (e.g., walkout, refusal, public pushback, or reputational escalation). FAIL if conflict still resolves without cost."
+    },
+    {
+      "finding_id": "ch18-f004",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_18",
+      "evidence": "snapshots/cycle_01/chapters/chapter_18.md:110; snapshots/cycle_01/chapters/chapter_18.md:120; snapshots/cycle_01/chapters/chapter_18.md:132; snapshots/cycle_01/chapters/chapter_18.md:142",
+      "problem": "Q&A voices drift toward interchangeable polished syntax and similar rhetorical cadence. Under scene pressure, the four questioners are less distinct in rhythm/register than the style bible requires.",
+      "rewrite_direction": "Re-voice the questioners at snapshots/cycle_01/chapters/chapter_18.md:110, snapshots/cycle_01/chapters/chapter_18.md:120, snapshots/cycle_01/chapters/chapter_18.md:132, and snapshots/cycle_01/chapters/chapter_18.md:142 with sharper idiolect separation: vary contraction density, clause length, interruption/false-start behavior, and class/professional diction so each line is speaker-identifiable without tags.",
+      "acceptance_test": "PASS if, in the revised lines around snapshots/cycle_01/chapters/chapter_18.md:110-143, each of the four questioners has a distinct register profile (lexicon + rhythm) and at least three of four questions use contractions or colloquial speech pressure markers. FAIL if their lines remain interchangeable when dialogue tags are removed."
+    },
+    {
+      "finding_id": "ch18-f005",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_18",
+      "evidence": "snapshots/cycle_01/chapters/chapter_18.md:80; snapshots/cycle_01/chapters/chapter_18.md:110; snapshots/cycle_01/chapters/chapter_18.md:192; snapshots/cycle_01/chapters/chapter_18.md:236",
+      "problem": "Interiority droughts: there are 10+ paragraph runs where focalization carries action/dialogue but little explicit internal experience from Marisol. These stretches read closer to staged transcript than close-third immersion.",
+      "rewrite_direction": "In long exterior-heavy runs centered on snapshots/cycle_01/chapters/chapter_18.md:80-110 and snapshots/cycle_01/chapters/chapter_18.md:192-236, insert brief thought/sensation/memory/self-assessment beats tied to immediate pressure, without replacing scene action.",
+      "acceptance_test": "PASS if, in each revised target span, no sequence exceeds 9 consecutive paragraphs without an explicit internal-experience beat from Marisol (thought, sensation, memory, or self-assessment). FAIL if either span still contains a 10+ paragraph interiority gap."
+    },
+    {
+      "finding_id": "ch18-f006",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_18",
+      "evidence": "snapshots/cycle_01/chapters/chapter_18.md:2; snapshots/cycle_01/chapters/chapter_18.md:16; snapshots/cycle_01/chapters/chapter_18.md:34; snapshots/cycle_01/chapters/chapter_18.md:96; snapshots/cycle_01/chapters/chapter_18.md:138; snapshots/cycle_01/chapters/chapter_18.md:146; snapshots/cycle_01/chapters/chapter_18.md:254",
+      "problem": "Recurring construction tics flatten line-level freshness: the chapter repeats the exact sensory template 'smelled like' more than twice and repeats 'The room ...' reaction framing more than twice. Repetition at this frequency reads mechanical rather than intentional.",
+      "rewrite_direction": "Recast repeated templates at snapshots/cycle_01/chapters/chapter_18.md:2, snapshots/cycle_01/chapters/chapter_18.md:34, snapshots/cycle_01/chapters/chapter_18.md:254 and snapshots/cycle_01/chapters/chapter_18.md:16, snapshots/cycle_01/chapters/chapter_18.md:96, snapshots/cycle_01/chapters/chapter_18.md:138, snapshots/cycle_01/chapters/chapter_18.md:146 using alternate sentence architecture (action-embedded sensory detail, subject shifts, or image inversion) while preserving meaning.",
+      "acceptance_test": "PASS if the revised chapter contains no more than two exact uses of 'smelled like' and no more than two sentence openings with 'The room', with equivalent sensory/collective-reaction information still present in rewritten lines. FAIL if either construction remains above two uses."
+    }
+  ],
+  "summary": "Chapter 18 lands many continuity anchors and keeps close-third past-tense control, but it does not clear pass-level craft: high-stakes reading material is sanitized by paraphrase, a probable home-geography continuity contradiction remains unresolved, Q&A conflict is too quickly domesticated, dialogue idiolect separation softens, interiority drops out for long runs, and repeated sentence templates create detectable prose autopilot."
+}

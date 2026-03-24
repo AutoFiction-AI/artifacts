@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_17",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_17_craft_001",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_02/chapters/chapter_17.md:187; snapshots/cycle_02/chapters/chapter_17.md:233; snapshots/cycle_02/chapters/chapter_17.md:241; snapshots/cycle_02/chapters/chapter_17.md:281; snapshots/cycle_02/chapters/chapter_17.md:289",
+      "problem": "Beni's belated ethical turn is partly self-sabotaging on the page: before he asks Oscar to keep the damage on himself, he volunteers Eszter's exposure twice. That muddies the scene logic of his stated aim to stop staff from taking the hit, because the risk to Eszter enters the conversation from Beni rather than from pressure Oscar unmistakably forces.",
+      "rewrite_direction": "In snapshots/cycle_02/chapters/chapter_17.md:187 and snapshots/cycle_02/chapters/chapter_17.md:233, either keep Eszter unnamed until Oscar specifically corners him at snapshots/cycle_02/chapters/chapter_17.md:241, or add a clear beat showing Beni deciding that shielding her would itself be another lie. Then tighten snapshots/cycle_02/chapters/chapter_17.md:281 and snapshots/cycle_02/chapters/chapter_17.md:289 so his plea to protect staff reads as the continuation of one coherent choice, not a correction to collateral damage he just created.",
+      "acceptance_test": "Pass if, on a straight read of snapshots/cycle_02/chapters/chapter_17.md:187 through snapshots/cycle_02/chapters/chapter_17.md:243, Eszter's name either does not appear until Oscar directly asks about her or Beni explicitly states why naming her is unavoidable; and if snapshots/cycle_02/chapters/chapter_17.md:281 through snapshots/cycle_02/chapters/chapter_17.md:289 then reads as a consistent extension of that choice. Fail if Beni still volunteers Eszter first and only afterwards asks that she be spared."
+    },
+    {
+      "finding_id": "chapter_17_prose_001",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_02/chapters/chapter_17.md:133; snapshots/cycle_02/chapters/chapter_17.md:279; snapshots/cycle_02/chapters/chapter_17.md:297; snapshots/cycle_02/chapters/chapter_17.md:317",
+      "problem": "The narration repeatedly slips into clipped fragments such as \"Smaller than the rent it had helped,\" \"Dead on arrival, all of them,\" \"Not the affair. Not the envelope,\" and \"No next instruction.\" That violates the constitution's ban on elliptical clipping and also cuts against Beni's style-bible syntax, which should stay grammatical even under pressure.",
+      "rewrite_direction": "Rework the fragment clusters at snapshots/cycle_02/chapters/chapter_17.md:133, snapshots/cycle_02/chapters/chapter_17.md:279, snapshots/cycle_02/chapters/chapter_17.md:297, and snapshots/cycle_02/chapters/chapter_17.md:317 into fully grammatical sentences. Keep the compression by leaning on objects, money, and bodily pressure, but restore explicit subjects and verbs instead of using shorthand fragments.",
+      "acceptance_test": "Pass if those four target spans contain no standalone clipped narration fragments and each sentence in the revised passage has a grammatical subject-verb spine while still sounding like pressured Beni. Fail if lines in those spans still rely on fragment forms such as \"Smaller than...,\" \"Not the affair,\" or \"No next instruction.\""
+    },
+    {
+      "finding_id": "chapter_17_prose_002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_02/chapters/chapter_17.md:53; snapshots/cycle_02/chapters/chapter_17.md:115; snapshots/cycle_02/chapters/chapter_17.md:251",
+      "problem": "The chapter stages held pauses with the same temporal opener three times: \"For one suspended second\" and then two more versions of \"For a second.\" In a chapter already built on silences and suspended reactions, that repeated setup becomes a prose tic instead of distinct scene music.",
+      "rewrite_direction": "Revise at least two of the pause beats at snapshots/cycle_02/chapters/chapter_17.md:53, snapshots/cycle_02/chapters/chapter_17.md:115, and snapshots/cycle_02/chapters/chapter_17.md:251 so the stillness is rendered through different physical or acoustic cues specific to each moment rather than through the same \"for a second\" formula.",
+      "acceptance_test": "Pass if no more than one of those three beats begins with \"For a second\" or a near-identical variant, and each pause is instead made legible by a distinct cue tied to its scene. Fail if all three passages still announce the beat with the same temporal formula."
+    }
+  ],
+  "summary": "The chapter's causal spine is strong and the dialogue stays distinct and register-true: the gala feels full of labor and hypocrisy, Bea's refusal triggers the turn, and Beni's confession costs him work without collapsing into false redemption. It still fails craft and prose because Beni needlessly exposes Eszter before trying to shield staff, and the narration repeatedly falls into clipped fragments and repeated pause formulas that the style bible and constitution explicitly disallow. No continuity contradiction, narrative-tense drift, dialogue-contraction problem, example-line reuse, or sanitization fade-out was evidenced in this chapter."
+}

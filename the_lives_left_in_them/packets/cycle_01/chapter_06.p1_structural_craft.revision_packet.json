@@ -1,0 +1,83 @@
+{
+  "acceptance_targets": [
+    "[chapter_06_craft_001] Reading the revised theft sequence at `snapshots/cycle_01/chapters/chapter_06.md:185`, `snapshots/cycle_01/chapters/chapter_06.md:225`, `snapshots/cycle_01/chapters/chapter_06.md:239`, and `snapshots/cycle_01/chapters/chapter_06.md:529`, the wafer should survive because Mira exploits one clearly grounded loophole and pays one concrete on-page cost or near-detection. Fail if the scene still requires the reader to accept three or more fresh conveniences arriving back-to-back with no trace left behind.",
+    "[chapter_06_prose_001] In the revised passages at `snapshots/cycle_01/chapters/chapter_06.md:19`, `snapshots/cycle_01/chapters/chapter_06.md:405`, `snapshots/cycle_01/chapters/chapter_06.md:457`, and `snapshots/cycle_01/chapters/chapter_06.md:561`, every narration sentence is grammatically complete while still sounding compressed under pressure. Fail if any standalone narration beat still omits a necessary subject or verb purely for terseness."
+  ],
+  "chapter_id": "chapter_06",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Reading the revised theft sequence at `snapshots/cycle_01/chapters/chapter_06.md:185`, `snapshots/cycle_01/chapters/chapter_06.md:225`, `snapshots/cycle_01/chapters/chapter_06.md:239`, and `snapshots/cycle_01/chapters/chapter_06.md:529`, the wafer should survive because Mira exploits one clearly grounded loophole and pays one concrete on-page cost or near-detection. Fail if the scene still requires the reader to accept three or more fresh conveniences arriving back-to-back with no trace left behind.",
+      "chapter_id": "chapter_06",
+      "cycle": 1,
+      "evidence": "The chapter's decisive theft beat stacks several helpful loopholes during an active audit: Celia's live token opens restricted routing, blank wafers are sitting at the console, the slot can be pried open manually, a dead calibration sliver is conveniently available for the purge fake-out, and exit security checks only Mira's bag (`snapshots/cycle_01/chapters/chapter_06.md:187`, `snapshots/cycle_01/chapters/chapter_06.md:207`, `snapshots/cycle_01/chapters/chapter_06.md:225`, `snapshots/cycle_01/chapters/chapter_06.md:229`, `snapshots/cycle_01/chapters/chapter_06.md:239`, `snapshots/cycle_01/chapters/chapter_06.md:529`, `snapshots/cycle_01/chapters/chapter_06.md:537`).",
+      "finding_id": "chapter_06_craft_001",
+      "problem": "The anomaly-wafer theft is vivid and plot-critical, but the success path depends on too many convenient breaks arriving in sequence. That softens the sense of risk in the chapter's most consequential criminal act and makes the concealment engine feel slightly arranged rather than fully earned.",
+      "rewrite_direction": "Harden the theft mechanics in `snapshots/cycle_01/chapters/chapter_06.md:185`, `snapshots/cycle_01/chapters/chapter_06.md:207`, `snapshots/cycle_01/chapters/chapter_06.md:225`, `snapshots/cycle_01/chapters/chapter_06.md:239`, and `snapshots/cycle_01/chapters/chapter_06.md:529`. Either establish one exploit clearly and remove the extra conveniences, or keep the current exploit chain but add an immediate cost or trace on page: a partial log entry, a near-catch from Nasrin, a visible injury that later exposes her, or an exit-search beat that forces a riskier concealment than simply using the shoe.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "In the revised passages at `snapshots/cycle_01/chapters/chapter_06.md:19`, `snapshots/cycle_01/chapters/chapter_06.md:405`, `snapshots/cycle_01/chapters/chapter_06.md:457`, and `snapshots/cycle_01/chapters/chapter_06.md:561`, every narration sentence is grammatically complete while still sounding compressed under pressure. Fail if any standalone narration beat still omits a necessary subject or verb purely for terseness.",
+      "chapter_id": "chapter_06",
+      "cycle": 1,
+      "evidence": "The narration repeatedly uses clipped fragments forbidden by the constitution: 'Missing disposal paperwork' / 'A return packet that did not reconcile' / 'Someone from compliance staying late' (`snapshots/cycle_01/chapters/chapter_06.md:19`), 'Civil penalties' (`snapshots/cycle_01/chapters/chapter_06.md:405`), 'Formal. Ugly.' (`snapshots/cycle_01/chapters/chapter_06.md:457`), and 'Badge. Desk. Questions.' (`snapshots/cycle_01/chapters/chapter_06.md:561`).",
+      "finding_id": "chapter_06_prose_001",
+      "problem": "These stress beats are aiming for compression, but they cross into elliptical clipping in narration, which the constitution explicitly forbids. The result is a noticeable prose-mode break: instead of tense complete sentences, the chapter keeps dropping into subjectless shorthand.",
+      "rewrite_direction": "Rewrite the fragment clusters at `snapshots/cycle_01/chapters/chapter_06.md:19`, `snapshots/cycle_01/chapters/chapter_06.md:405`, `snapshots/cycle_01/chapters/chapter_06.md:457`, and `snapshots/cycle_01/chapters/chapter_06.md:561` as grammatically complete sentences. Keep the same pressure and brevity, but carry it through rhythm, syntax, and punctuation rather than standalone fragments missing required subjects or verbs.",
+      "severity": "HIGH",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "077fa5d51ebcc0cfc38adede0bc0b7f1d5d258b173f528792650e0c3f1181399",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into biotech grime, erotic awkwardness, debt language, bureaucratic absurdity, and the tenderness of people maintaining one another under bad systems. When choosing between an elegant abstraction and an ugly specific detail, choose the specific detail unless omission itself heightens pressure.",
+      "dark_content_allowed_when_character_true": true,
+      "edge_case_resolution": "Use restraint only when aftermath, gesture, residue, or changed behavior keeps the full pressure visible. Do not convert morally compromising acts into self-exonerating reflection, and do not flatten exploitative sex, poverty, or violence into generic dystopian mood.",
+      "euphemism_penalty": "If a scene reaches injury, sex, class shame, or institutional cruelty and the language retreats into tasteful fog, rewrite until the bodily fact, immediate sensation, and social consequence are fully legible on the page.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the norm in spoken English here; uncontracted forms are reserved for legal testimony, managerial performance, deliberate emphasis, or characters whose formality is itself a tactic.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate inspection-room procedural chapters with crowded comic clinic scenes, quiet domestic intervals, erotic pressure, warehouse horror, and civic hearing sequences; consecutive chapters should differ in scene density, dialogue load, and emotional temperature so the book keeps changing how it moves.",
+      "diction": "Concrete, urban, bodily, and unsentimental; technical vocabulary is welcome when embedded in action and cost, not as decorative futurism.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "tight third-person close anchored to Mira Alves; the narration can infer social systems through what she notices, but it should not become omniscient exposition.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Alternate crisp claim-note precision with longer, salt-wet, bodily sentences when feeling, memory, or city pressure breaches Mira's control.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

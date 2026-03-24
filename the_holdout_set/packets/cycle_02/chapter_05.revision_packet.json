@@ -1,0 +1,77 @@
+{
+  "acceptance_targets": [
+    "[ch05-craft-001] PASS if the revised passage between `snapshots/cycle_02/chapters/chapter_05.md:329` and `snapshots/cycle_02/chapters/chapter_05.md:343` contains at least three sequential dramatized beats after June resumes speaking: a specific line of technical explanation delivered under strain, a visible audience response that changes the room, and a new Leela interior reaction. FAIL if the passage still jumps from appendix setup to end-state mostly through summary sentences.",
+    "[ch05-prose-001] PASS if only one of the cited lines still uses knife/blade imagery after revision and the remaining beats convey danger through distinct language tied to the seminar setting. FAIL if two or more knife/blade references remain in those spans or if the replacements collapse into a new repeated metaphor template."
+  ],
+  "chapter_id": "chapter_05",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if the revised passage between `snapshots/cycle_02/chapters/chapter_05.md:329` and `snapshots/cycle_02/chapters/chapter_05.md:343` contains at least three sequential dramatized beats after June resumes speaking: a specific line of technical explanation delivered under strain, a visible audience response that changes the room, and a new Leela interior reaction. FAIL if the passage still jumps from appendix setup to end-state mostly through summary sentences.",
+      "chapter_id": "chapter_05",
+      "cycle": 2,
+      "evidence": "The chapter goes semi-reportorial at the exact cost point of June's public humiliation: `snapshots/cycle_02/chapters/chapter_05.md:329`, `snapshots/cycle_02/chapters/chapter_05.md:331`, `snapshots/cycle_02/chapters/chapter_05.md:343`.",
+      "finding_id": "ch05-craft-001",
+      "problem": "Once June returns to the podium, the prose starts summarizing the resumed seminar instead of staying fully inside it. Because this is the scene where she has to keep speaking after Mohit's ambush and Leela's public non-defense, the compression reads as timidity: the chapter states the humiliation clearly, but it does not linger in enough live beats of June's damaged authority for the cost to land at full force.",
+      "rewrite_direction": "Rework `snapshots/cycle_02/chapters/chapter_05.md:329` through `snapshots/cycle_02/chapters/chapter_05.md:343` so the final movement stays in scene rather than mostly in summary. Keep the existing endpoint at `snapshots/cycle_02/chapters/chapter_05.md:343`, but add more moment-to-moment action between June's resumed explanation and that final image: one bodily strain beat from June, one socially legible reaction from the room, and one fresh Leela interior beat that registers what her sentence has cost.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if only one of the cited lines still uses knife/blade imagery after revision and the remaining beats convey danger through distinct language tied to the seminar setting. FAIL if two or more knife/blade references remain in those spans or if the replacements collapse into a new repeated metaphor template.",
+      "chapter_id": "chapter_05",
+      "cycle": 2,
+      "evidence": "The same violence metaphor recurs three times in one chapter: `snapshots/cycle_02/chapters/chapter_05.md:21`, `snapshots/cycle_02/chapters/chapter_05.md:127`, `snapshots/cycle_02/chapters/chapter_05.md:209`.",
+      "finding_id": "ch05-prose-001",
+      "problem": "The chapter keeps returning to knife/blade imagery to describe methodological critique and public humiliation. By the third use, the image stops sharpening the scene and starts reading like autopilot. Under the constitution's anti-tic rule, this is a prose flattening problem, not a harmless echo.",
+      "rewrite_direction": "Revise the cited beats at `snapshots/cycle_02/chapters/chapter_05.md:21`, `snapshots/cycle_02/chapters/chapter_05.md:127`, and `snapshots/cycle_02/chapters/chapter_05.md:209` so the seminar's violence is rendered through different local textures. Keep at most one knife/blade metaphor in the chapter; rewrite the other occurrences into room-specific pressure such as administrative theater, audience silence, or bodily recoil.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "35e9787058a2964baca3d9fb72cfcb74680dcc648a7bf61c6a2465fbd99fb0e4",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into the absurdity and cruelty of graduate labor without converting the book into caricature or chase-plot menace. In edge cases, prefer the messier and more compromising version of events if it yields stronger human consequence and remains causally plausible; render sex, professional theft, bureaucratic harm, and emotional pettiness with the same specificity as any technical problem.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene turns vague at the exact point humiliation, erotic charge, class shame, visa fear, or institutional cruelty becomes concrete, rewrite until the cost is materially and socially legible.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High; contractions are the baseline in speech, and uncontracted forms should appear only for deliberate precision, class performance, emotional emphasis, or character-specific formality.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate public and private pressure, ensemble chapters and solitary ones, bureaucratic scenes and domestic scenes, deadline compression and aftermath inventory, so no two adjacent chapters rely on the same structural rhythm or dialogue density.",
+      "diction": "Contemporary literary English grounded in material detail; technical language should appear only when the social reality of the lab requires it, and it should never replace bodily or relational consequence.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person centered on Leela, with occasional brief widenings that register group mood and institutional atmosphere without leaving her interpretive frame.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Alternate compressed observational lines with longer accrual sentences that can carry comedy, shame, and procedural dread in the same movement; quiet chapters should breathe, deadline chapters should tighten without turning telegraphic.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

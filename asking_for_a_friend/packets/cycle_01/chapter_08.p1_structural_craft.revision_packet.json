@@ -1,0 +1,134 @@
+{
+  "acceptance_targets": [
+    "[F08-PROSE-01] The revised chapter contains no more than 6 total instances of 'the [adjective/noun] of a [person/thing] who/that [clause]' and 'the kind of [noun] that [clause]' combined. At least 5 of the replaced instances use a demonstrably different syntactic strategy (sensory detail, action beat, dialogue, compressed declarative, or free indirect thought). No two consecutive paragraphs use either formula.",
+    "[F08-CRAFT-01] The revised passage at snapshots/cycle_01/chapters/chapter_08.md:67 contains zero content overlap with any Margo example_line in the style bible. The replacement detail is (1) original, (2) specific enough to be funny, (3) performs the same character work (Margo's awareness of her ex-husband's conspicuous new life), and (4) does not reference hot yoga, posting habits, or any other element from the calibration samples.",
+    "[F08-CRAFT-02] The revised scene 4 contains at least 3 discrete moments (up from 1) where Simone's behavior carries dual interpretive weight. Each moment is grounded in physical detail, dialogue rhythm, or behavioral observation \u2014 not authorial editorializing. At least one moment occurs during or immediately adjacent to Simone's key validation lines (snapshots/cycle_01/chapters/chapter_08.md:193-207).",
+    "[F08-CRAFT-03] The revised chapter shows discernible comic escalation: scene 2's humor is sharper than scene 1's, scene 3 has at least one moment of genuine absurdist comedy, and scene 4 produces at least one moment of dark comedy that registers simultaneously as tender (from Nora's perspective) and darkly funny (from the reader's perspective). A reader encountering the chapter cold should be able to identify the comic register intensifying across the four scenes.",
+    "[F08-CRAFT-04] The revised chapter contains at least 3 instances of natural profanity distributed across at least 2 different characters. Each instance is consistent with the character's style-bible profanity profile (Nora: moderate, Margo: moderate-to-high, Simone: liberal). No instance reads as forced or performatively edgy \u2014 each sits naturally in its surrounding dialogue or interiority.",
+    "[MED-03-editing-metaphor-ch08] Within Ch8 (lines 1313-1525): (1) At most 1 editing metaphor in narration remains. (2) The dialogue metaphor at line 1495 is preserved. (3) Lines 1341 and 1391 use non-editorial vocabulary. FAIL if more than 2 total editing metaphors remain."
+  ],
+  "chapter_id": "chapter_08",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "The revised chapter contains no more than 6 total instances of 'the [adjective/noun] of a [person/thing] who/that [clause]' and 'the kind of [noun] that [clause]' combined. At least 5 of the replaced instances use a demonstrably different syntactic strategy (sensory detail, action beat, dialogue, compressed declarative, or free indirect thought). No two consecutive paragraphs use either formula.",
+      "chapter_id": "chapter_08",
+      "cycle": 1,
+      "evidence": "Two related formulaic constructions dominate the chapter's observational mode. 'The [adjective] [noun] of a [person/thing] who/that [clause]' appears 8+ times: 'the dogged optimism of a person who believed' (snapshots/cycle_01/chapters/chapter_08.md:37), 'the specific thud of a document that had already exhausted its reader' (snapshots/cycle_01/chapters/chapter_08.md:43), 'the decisive force of a woman who had stopped apologizing' (snapshots/cycle_01/chapters/chapter_08.md:49), 'the clarity of someone who has already been through the romantic wringer' (snapshots/cycle_01/chapters/chapter_08.md:67), 'the specific, private quality of a person who has momentarily forgotten' (snapshots/cycle_01/chapters/chapter_08.md:85), 'The specific, stubborn pride of a person who would rather absorb the blow' (snapshots/cycle_01/chapters/chapter_08.md:121), 'the breezy efficiency of a system that had reduced' (snapshots/cycle_01/chapters/chapter_08.md:141), 'the specific, precious, irreplaceable weight of being told by the person who knew you best' (snapshots/cycle_01/chapters/chapter_08.md:211). Additionally, 'the kind of [noun] that [clause]' appears 7 times: 'the kind of person who Googled that' (snapshots/cycle_01/chapters/chapter_08.md:29), 'the kind of touch that communicated' (snapshots/cycle_01/chapters/chapter_08.md:77), 'the kind of weighted thing that should have been oppressive' (snapshots/cycle_01/chapters/chapter_08.md:89), 'the kind of gesture that overwhelmed instead of helped' (snapshots/cycle_01/chapters/chapter_08.md:141), 'the kind of good that had a shape to it' (snapshots/cycle_01/chapters/chapter_08.md:147), 'the kind of contact that seventeen years had made as reflexive as breathing' (snapshots/cycle_01/chapters/chapter_08.md:159). Combined: 15+ instances in 212 lines.",
+      "finding_id": "F08-PROSE-01",
+      "problem": "These two related constructions are the chapter's default mode for rendering emotional observation. At this density (roughly one every 14 lines), the pattern becomes predictable: the reader anticipates the syntactic shape before it arrives, converting what should be varied, precise observation into formula. A shortlist novel needs more diverse prose architecture for its key observational moves.",
+      "rewrite_direction": "Reduce combined instances of both constructions to no more than 6 across the full chapter. Preserve the 2-3 strongest deployments \u2014 candidates for retention include snapshots/cycle_01/chapters/chapter_08.md:121 ('The specific, stubborn pride of a person who would rather absorb the blow than ask for a cushion') and snapshots/cycle_01/chapters/chapter_08.md:211 (the closing sentence), where the formula does active structural work. Revise the remaining 9-10 instances using varied strategies: direct sensory rendering, shorter declarative observation, embedded physical action, free indirect thought that doesn't route through the 'the [quality] of a [person] who' template. Priority targets for revision: snapshots/cycle_01/chapters/chapter_08.md:37, :43, :49, :77, :85, :89, :141 (both instances), :147, :159.",
+      "severity": "HIGH",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "The revised passage at snapshots/cycle_01/chapters/chapter_08.md:67 contains zero content overlap with any Margo example_line in the style bible. The replacement detail is (1) original, (2) specific enough to be funny, (3) performs the same character work (Margo's awareness of her ex-husband's conspicuous new life), and (4) does not reference hot yoga, posting habits, or any other element from the calibration samples.",
+      "chapter_id": "chapter_08",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_08.md:67 narration: 'an ex-husband who posted about his new girlfriend's hot yoga practice.' Margo's calibration example line in style_bible.json reads: 'My ex-husband's new girlfriend does hot yoga. I know this because he posts about it. He never posted about me. Draw your own conclusions.' The example line header states: 'NON-COPYABLE REFERENCE ONLY \u2014 calibration samples, never to be echoed in any draft.' The specific biographical content (ex-husband + new girlfriend + hot yoga + social media posting) is not established in Margo's character profile in the continuity sheet or anywhere else in the style bible outside the calibration sample.",
+      "finding_id": "F08-CRAFT-01",
+      "problem": "Content from a calibration-only example line has been transplanted into chapter narration. Although the phrasing is different (narration vs. first-person dialogue, different syntax), the unique biographical detail originated exclusively in the calibration sample. This makes calibration content canonical, undermining the firewall between reference material and draft text.",
+      "rewrite_direction": "Replace the hot yoga detail at snapshots/cycle_01/chapters/chapter_08.md:67 with an original backstory detail for Margo's ex-husband that serves the same character function: demonstrating his public-facing new life and Margo's dry awareness of it. The replacement detail should be specific, comic, and consistent with Margo's voice \u2014 something that communicates 'this man has moved on and is performing his new life on social media' without reproducing any element of the calibration sample. The surrounding sentence structure ('the whole arc compressed into five years that had left her with a settlement she never discussed, an ex-husband who [X], and a bullshit detector that ran at an industrial frequency') can remain intact.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "The revised scene 4 contains at least 3 discrete moments (up from 1) where Simone's behavior carries dual interpretive weight. Each moment is grounded in physical detail, dialogue rhythm, or behavioral observation \u2014 not authorial editorializing. At least one moment occurs during or immediately adjacent to Simone's key validation lines (snapshots/cycle_01/chapters/chapter_08.md:193-207).",
+      "chapter_id": "chapter_08",
+      "cycle": 1,
+      "evidence": "Scene 4 (snapshots/cycle_01/chapters/chapter_08.md:156-212). The phone notification at snapshots/cycle_01/chapters/chapter_08.md:169 ('the screen lit briefly with a notification \u2014 a quick flash of color and text too small to read from Nora's angle \u2014 and Simone's eyes moved to it for less than a second') is the only textually embedded marker of dramatic irony in a 56-line scene. Simone's remaining dialogue and behavior read as purely warm, with no additional observable seam or tell. The style bible states: 'when Simone is at her most generous, she is at her most dangerous' (stress_tells). The aesthetic_risk_policy states the novel must not flinch from 'the specific perversity of Simone comforting Nora' during the deception.",
+      "finding_id": "F08-CRAFT-02",
+      "problem": "Simone is validating Nora's decision to send $400 \u2014 money that went to Simone's own Venmo account the night before. This is the novel's 'specific perversity' in action. The dramatic irony relies almost entirely on structural reader knowledge from prior chapters (3, 5, 7); the scene itself provides only one brief, ambiguous beat. The perversity should be legible in the craft of this scene, not merely inferred from external context. One more embedded moment would let the prose do work the structure already promises.",
+      "rewrite_direction": "Add 2 additional moments in the Simone scene (snapshots/cycle_01/chapters/chapter_08.md:169-211) where Simone's behavior carries dual interpretive weight \u2014 readable as warmth by Nora and as performance by the informed reader. Strategies: (1) A micro-hesitation or physical self-management beat before a key validation line (e.g., before 'It's not stupid. It's generous' at line 197 \u2014 Simone's hands tightening on the cup, or a breath she controls). (2) A line of dialogue that's fractionally too perfectly calibrated to what Nora needs to hear, landing with an uncanny precision that reads as deep friendship from Nora's angle but as engineered reassurance from the reader's. (3) A moment where Simone steers Nora away from a line of questioning that would be dangerous \u2014 e.g., if Nora wonders aloud about the Venmo account details, Simone redirects. The existing phone notification at line 169 should remain as the first beat.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "The revised chapter shows discernible comic escalation: scene 2's humor is sharper than scene 1's, scene 3 has at least one moment of genuine absurdist comedy, and scene 4 produces at least one moment of dark comedy that registers simultaneously as tender (from Nora's perspective) and darkly funny (from the reader's perspective). A reader encountering the chapter cold should be able to identify the comic register intensifying across the four scenes.",
+      "chapter_id": "chapter_08",
+      "cycle": 1,
+      "evidence": "The chapter spine designates 'comic escalation' as the engine and 'comic, tender' as texture_mode. The chapter's four scenes maintain a consistent register of warm, observational humor \u2014 the CrossFit memoir (snapshots/cycle_01/chapters/chapter_08.md:45-49), Caleb's texting wit (snapshots/cycle_01/chapters/chapter_08.md:5, 15, 23, 35, 83, 111, 135, 145), the cat-lady joke (snapshots/cycle_01/chapters/chapter_08.md:137) \u2014 but these comic beats are all at the same gentle register. They do not build or darken across scenes.",
+      "finding_id": "F08-CRAFT-03",
+      "problem": "'Comic escalation' implies each scene is funnier or darker or both, building toward the chapter's payoff (the first money transfer). Instead, the chapter's emotional arc is wistful, defensive, anxious/generous, reassured \u2014 with comedy as a stable background note rather than an escalating force. The dark comedy latent in the novel's premise (the reader knows Simone engineered this) never surfaces as a textual register. Scene 4 \u2014 where Simone validates the sending of money to herself \u2014 is the scene where dark comedy should peak, but it plays as purely tender.",
+      "rewrite_direction": "Sharpen the comic register so it builds across scenes. Scene 2 (snapshots/cycle_01/chapters/chapter_08.md:43-86): push Margo's dry humor harder at lines 45-49 \u2014 her takedown of the CrossFit memoir could be funnier and more cutting. Scene 3 (snapshots/cycle_01/chapters/chapter_08.md:89-154): heighten the absurdist dimension of the vet emergency \u2014 the tennis ball, the cat-ribbon woman, the fluorescent waiting room have comic potential that the current text plays for pathos. Scene 4 (snapshots/cycle_01/chapters/chapter_08.md:156-212): this is where dark comedy should peak \u2014 Simone's validation lines should produce at least one moment where the reader laughs and then feels the laugh curdle. The comedy and the tenderness should coexist, not alternate.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "The revised chapter contains at least 3 instances of natural profanity distributed across at least 2 different characters. Each instance is consistent with the character's style-bible profanity profile (Nora: moderate, Margo: moderate-to-high, Simone: liberal). No instance reads as forced or performatively edgy \u2014 each sits naturally in its surrounding dialogue or interiority.",
+      "chapter_id": "chapter_08",
+      "cycle": 1,
+      "evidence": "The chapter contains zero instances of profanity across four scenes and three speaking characters. Nora's profanity profile: 'Moderate. Mostly shit and fuck deployed naturally in conversation and internal thought' (style_bible.json). Margo's profanity profile: 'Moderate to high. She swears with the casual ease of someone who stopped censoring herself after her divorce.' Simone's profanity profile: 'Liberal. She swears casually and frequently in private thought and solo speech.' Scenes include work frustration (snapshots/cycle_01/chapters/chapter_08.md:43-49), an emotional crisis (snapshots/cycle_01/chapters/chapter_08.md:89-147), and casual intimate conversation (snapshots/cycle_01/chapters/chapter_08.md:156-212).",
+      "finding_id": "F08-CRAFT-04",
+      "problem": "Three characters profiled as moderate-to-liberal swearers produce zero profanity across four scenes. The complete absence reads as unconscious speech sanitization \u2014 the prose has been scrubbed of the rougher textures these characters would naturally produce. Margo's takedown of the CrossFit memoir (lines 45-49) is exactly the kind of casual commentary where she'd deploy a 'bullshit' or 'shit.' Nora's gut reaction to the vet emergency (line 105) reads as 'Oh my god' but her profile suggests 'shit' or 'fuck' as a natural first response. Simone in casual mode would drop profanity without thinking about it.",
+      "rewrite_direction": "Add natural profanity at 3-4 points where character and scene pressure call for it. Candidates: (1) Margo's scene 2 commentary at snapshots/cycle_01/chapters/chapter_08.md:45-49 \u2014 a casual 'bullshit' or 'shit' in her CrossFit takedown. (2) Nora's internal or spoken reaction during the vet scene at snapshots/cycle_01/chapters/chapter_08.md:105 \u2014 'shit' or 'fuck' as a gut response to the emergency texts. (3) Simone's casual speech in scene 4 at snapshots/cycle_01/chapters/chapter_08.md:189-193 \u2014 a dropped profanity in her matter-of-fact register. Each instance should be organic to the character's profanity profile and the scene's emotional register \u2014 not performative edginess.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Within Ch8 (lines 1313-1525): (1) At most 1 editing metaphor in narration remains. (2) The dialogue metaphor at line 1495 is preserved. (3) Lines 1341 and 1391 use non-editorial vocabulary. FAIL if more than 2 total editing metaphors remain.",
+      "chapter_id": "chapter_08",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:1341",
+      "finding_id": "MED-03-editing-metaphor-ch08",
+      "problem": "Ch8 uses editing metaphors 3 times: 'she'd written margin notes like would your protagonist really not notice this?' (1341), 'her entire professional existence was built on the ability to see what a story was doing underneath what it said it was doing' (1391), 'it's like reading a manuscript where every page is brilliant but you can't see the author photo' (1495). These appear in a chapter about the first financial request and Margo's concern \u2014 the emotional texture should be vulnerability and defensiveness, not editorial analysis. The 'author photo' metaphor at line 1495 is genuinely funny and earns its place. The other two are ornamental.",
+      "rewrite_direction": "KEEP line 1495 ('it's like reading a manuscript where every page is brilliant but you can't see the author photo') \u2014 this is dialogue, it's comic, and it captures Nora's specific way of processing doubt. REPLACE lines 1341 and 1391 with non-editorial registers. At line 1341, replace the margin-notes metaphor with a different form of Nora's self-awareness about red flags. At line 1391, replace the story-analysis metaphor with a more direct rendering of Nora's professional skill at detecting deception, using non-literary vocabulary.",
+      "severity": "MEDIUM",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "2f3982f932a2dfde390c4548fe48fb3721caaba2f3f29d1271e26d61b8dc4aa4",
+  "must_fix_count": 6,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This novel must commit fully to its dark comedy register. The humor should be genuinely funny \u2014 not arch, not safe, not 'literary funny' where the reader smiles wryly. The darkness should be genuinely dark \u2014 the financial manipulation is theft, the emotional manipulation is a form of violence, and the sexual dimension of the AI relationship (intimate photos sent to a non-person, sexual conversations with an algorithm controlled by your best friend) is deeply violating. The novel should not flinch from the specific perversity of Simone reading Nora's intimate messages, of Simone helping Nora dress up for a man Simone invented, of Simone comforting Nora about a fight Simone scripted. These moments are the novel's payload. If they are rendered obliquely or summarized, the book fails. Equally, the genuine tenderness of the friendship \u2014 the years of real love underneath the betrayal \u2014 must be rendered with the same commitment. The reader should feel both the comedy and the horror simultaneously, not in alternation.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism is treated as a craft failure equivalent to a plot hole. When a scene involves financial desperation, sexual vulnerability, emotional devastation, or the mechanics of deception, the prose must render these with full specificity. 'She felt used' is never acceptable when you can show what being used feels and looks like in the body and in the specific details of the moment. The reader should not be protected from the characters' experiences.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm. Uncontracted forms reserved for emphasis, deliberate formality, or character-specific register choices. If a line reads stiffly, the first fix is to contract.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 2,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate between hot and quiet chapters. After a high-intensity scene (confrontation, discovery, sexual encounter), the next chapter should breathe \u2014 slow down, change the sensory environment, let the character do something ordinary. Vary scene counts: some chapters are a single sustained scene, others are three or four. Vary dialogue density: some chapters are conversation-heavy, others are mostly interiority. No two consecutive chapters should open the same way \u2014 if one opens in a location, the next should open in thought or in mid-conversation. The novel's middle section (chapters 8-13) should have more structural variety than the opening, which can afford to be more regular.",
+      "diction": "Contemporary, educated, specific. No genre-thriller diction. No prestige-novel stiffness. The language should feel like how smart, funny, self-aware women in their mid-thirties actually think and speak. Cultural references are allowed when organic. Brand names when they carry social information. The prose should be able to be funny without stepping outside the character's perspective to wink at the reader.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person \u2014 very close, almost inhabiting the POV character's thought patterns and verbal rhythms. The prose should feel like the character's consciousness rendered in third person, not an external narrator describing the character. When in Nora's sections, the prose has her warmth and her specific noticing. When in Simone's sections, the prose has her edge and her accounting.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Variable. Default to mid-length sentences with natural cadence. Use compression for emotional peaks and psychological precision. Use longer, more digressive rhythms for scenes of intimacy, humor, and daily texture. Avoid the trap of making every important moment a short sentence \u2014 sometimes the big thing lands better in a subordinate clause, almost hidden.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

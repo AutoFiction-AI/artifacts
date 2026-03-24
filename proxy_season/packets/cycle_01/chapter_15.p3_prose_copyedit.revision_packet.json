@@ -1,0 +1,87 @@
+{
+  "acceptance_targets": [
+    "[ch15_prose_01] The revised chapter contains no more than four instances of the 'not X, [but/just] Y' negation-pivot construction. No stretch of 30 consecutive lines contains more than one instance. The four retained instances each define something the reader could not infer from the positive assertion alone. Verifiable by scanning the revised text for 'not [noun/clause]' followed within the same sentence or adjacent sentence by a corrective assertion.",
+    "[ch15_prose_02] The revised chapter contains no more than 6 total instances of 'the kind of,' 'the one that/with,' and 'the way [subject] [verbed]' combined. At least three of the removed instances are replaced with direct sensory rendering rather than taxonomic classification. No single paragraph contains more than one of these constructions. Verifiable by searching the revised text for these three phrase patterns."
+  ],
+  "chapter_id": "chapter_15",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "The revised chapter contains no more than four instances of the 'not X, [but/just] Y' negation-pivot construction. No stretch of 30 consecutive lines contains more than one instance. The four retained instances each define something the reader could not infer from the positive assertion alone. Verifiable by scanning the revised text for 'not [noun/clause]' followed within the same sentence or adjacent sentence by a corrective assertion.",
+      "chapter_id": "chapter_15",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_15.md:17 ('not dramatic, not scared, just insulted'), snapshots/cycle_01/chapters/chapter_15.md:25 ('Not the heat of a kid who\u2019d been running'), snapshots/cycle_01/chapters/chapter_15.md:63 ('Not the duvet from their bed, not the fleece throw'), snapshots/cycle_01/chapters/chapter_15.md:139 ('Not because they\u2019d locked it out. Not because they\u2019d made a strategic choice'), snapshots/cycle_01/chapters/chapter_15.md:165 ('not because the story was funny exactly'), snapshots/cycle_01/chapters/chapter_15.md:175 ('Not soothing. Not monitoring. Confirming.'), snapshots/cycle_01/chapters/chapter_15.md:213 ('Not with desire, not with the careful assessment'), snapshots/cycle_01/chapters/chapter_15.md:217 ('Not well, not deeply' and 'Not the proxy job, not the warm-body-in-a-glass-tower job')",
+      "finding_id": "ch15_prose_01",
+      "problem": "The negation-pivot construction ('not X, [but/just] Y') appears 9+ times in 222 lines, becoming the chapter\u2019s dominant rhetorical device. Once or twice it works as a precision tool \u2014 defining by exclusion. At this frequency it becomes a predictable tic: the reader can feel the construction arriving before it lands. The second half of the chapter (lines 131\u2013221) is the most affected, with 6 of the 9 instances concentrated there, creating a rhythmic monotony that flattens the prose exactly when the emotional stakes are highest.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_15.md:139, snapshots/cycle_01/chapters/chapter_15.md:175, snapshots/cycle_01/chapters/chapter_15.md:213, and snapshots/cycle_01/chapters/chapter_15.md:217, replace at least three of the four negation-pivots with alternative constructions \u2014 direct assertion, image, or character action. Keep the strongest two instances (the blanket identification at line 63 earns its exclusions; the sleep-quality line at 217 could work as a standalone). Strategy: for each flagged instance, ask whether the positive assertion alone would be stronger than the negation-first approach. In most cases it will be.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "The revised chapter contains no more than 6 total instances of 'the kind of,' 'the one that/with,' and 'the way [subject] [verbed]' combined. At least three of the removed instances are replaced with direct sensory rendering rather than taxonomic classification. No single paragraph contains more than one of these constructions. Verifiable by searching the revised text for these three phrase patterns.",
+      "chapter_id": "chapter_15",
+      "cycle": 1,
+      "evidence": "'The kind of': snapshots/cycle_01/chapters/chapter_15.md:35 ('the kind of fever'), snapshots/cycle_01/chapters/chapter_15.md:165 ('the kind of laughter'), snapshots/cycle_01/chapters/chapter_15.md:175 ('the kind of unconscious motion'), snapshots/cycle_01/chapters/chapter_15.md:217 ('the kind that ran on no sleep'). 'The one that/with': snapshots/cycle_01/chapters/chapter_15.md:71 ('the one with noodles'), snapshots/cycle_01/chapters/chapter_15.md:87 ('the one with the faded milliliter markings'), snapshots/cycle_01/chapters/chapter_15.md:133 ('the one that lived in muscle memory'), snapshots/cycle_01/chapters/chapter_15.md:201 ('the blue one with the chip'), snapshots/cycle_01/chapters/chapter_15.md:217 ('The other one. The one that had no protocol'). 'The way': snapshots/cycle_01/chapters/chapter_15.md:47 ('the way he used to lean'), snapshots/cycle_01/chapters/chapter_15.md:99 ('the way children returned'), snapshots/cycle_01/chapters/chapter_15.md:115 ('the way kids did'), snapshots/cycle_01/chapters/chapter_15.md:201 ('the way he knew which stair creaked').",
+      "finding_id": "ch15_prose_02",
+      "problem": "Three related specifying constructions \u2014 'the kind of' (4x), 'the one that/with' (5x), and 'the way' comparative (4x) \u2014 collectively appear 13 times in 222 lines. They share a family resemblance: each defines an item by taxonomic placement ('this is the kind/the one/the way that...'). Together they create an inventory-catalog prose mode that catalogues and classifies the chapter\u2019s objects and feelings rather than rendering them. The irony is that a chapter about escaping machine classification keeps classifying its own emotional content.",
+      "rewrite_direction": "Across snapshots/cycle_01/chapters/chapter_15.md:35-217, reduce the combined count of 'the kind of,' 'the one that/with,' and 'the way' constructions from 13 to no more than 6. Prioritize keeping the instances that do real work \u2014 the soup can identification (line 71) and the blanket identification (line 63/related) earn their specificity. For the rest, try direct rendering: instead of 'the kind of laughter that happened across shared memory' (line 165), render the laughter itself \u2014 its volume, its shape, what it felt like in the body. Instead of 'the way kids did' (line 115), describe how Theo specifically fell asleep. Replace taxonomy with image.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "45ad8aa6e02e64bc5af43b0dbff9144119510bbca0c1ac458f2e7334457819fc",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on prose and copyedit finish: diction precision, rhythm control, sentence-level clarity, grammar, line-level polish without flattening style, and explicit aesthetic-risk audit (sanitization is the primary risk \u2014 do not soften or euphemize; push toward creative risk and specificity).",
+    "key": "p3_prose_copyedit",
+    "label": "prose/copyedit fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This novel's risk zone is the gap between dignity and absurdity. The characters are adults with professional histories, a child, a mortgage \u2014 people with legitimate self-respect \u2014 who have been reduced to warm bodies in an optimization framework they cannot understand. The comedy must not protect them from the humiliation; the humiliation must not neutralize the comedy. Render both registers at full force, often in the same scene. The temptation will be to soften the comedy into gentle satire or to darken the humiliation into dystopian grimness \u2014 resist both. The novel's territory is the painful and the funny coexisting without one defusing the other. Commit to the specific physical embarrassment of being professionally irrelevant. Commit to the specific tenderness of parenting under surveillance. Commit to the specific grief of a marriage that might still be alive inside a system that has classified it as infrastructure. When in doubt, choose the version that makes you wince and then laugh, or laugh and then wince \u2014 both are correct.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism is a craft failure equivalent to a plot hole. When a scene requires the reader to sit with discomfort \u2014 economic shame, marital cruelty, parental failure, institutional humiliation, the specific indignity of being professionally redundant \u2014 render it with full specificity. 'They struggled with the situation' is not a sentence that belongs in this novel. Name the thing. Show the body. Let the reader be uncomfortable.",
+      "intimacy_and_desire_policy": "Dan and Mira's residual physical attraction is a narrative force, not background radiation. When the novel's relational pressure calls for it, render desire with the same specificity as any other emotional state \u2014 where in the body it lives, how it changes the air in a room, the precise quality of proximity when two people who know each other's bodies are trying to pretend they don't. The almost-kiss in Chapter 7 should be as fully rendered as any confrontation scene.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "register_commitment": "This is a dark comedy, not a cautionary tale, not a dystopia, not a satire with a thesis. The novel should not argue about AI. It should render what it feels like to be a body in a world where bodies are overhead. The comic register is not a veneer over a serious message \u2014 it IS the message. A scene that is genuinely funny about genuine suffering is doing more literary work than a scene that is solemnly observant about the same material.",
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the default for all spoken English in this novel. Uncontracted forms should be reserved for deliberate emphasis, Lena Morse's institutional register, or moments where a character is being carefully precise. If a line of dialogue uses 'do not' instead of 'don't' or 'I am' instead of 'I'm,' there should be a reason audible in the scene's pressure.",
+      "idiolect_separation_required": true,
+      "interruption_and_overlap_policy": "Use interruptions, sentence fragments, and crosstalk when scene pressure warrants. Dan and Mira in particular should interrupt each other \u2014 they know each other's arguments before the sentences end. But every interruption must be motivated; do not scatter dashes for rhythmic texture alone.",
+      "leverage_shift_guidance": "Every exchange of more than three lines should shift the power balance between speakers. This doesn't require overt conflict \u2014 a silence, a deflection, a piece of information withheld or accidentally revealed, a joke that lands wrong, a question left unanswered can all shift leverage. The dialogue must be going somewhere, not circling.",
+      "max_consecutive_low_info_replies": 2,
+      "required_leverage_shifts_per_scene": 1,
+      "silence_as_dialogue": "Silence, non-answers, and topic changes are valid dialogue moves and often more revealing than speech. When a character doesn't respond to something, the reader should feel the weight of what wasn't said. Render these moments through physical action or observed stillness, not by narrating that the character chose not to speak."
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "No two consecutive chapters should share the same structural rhythm. Vary: scene count (single-scene compression vs. multi-scene chapters), dialogue density (some chapters are conversation-heavy, others are nearly silent), interiority depth (some chapters live mostly in the POV character's head, others are externally rendered), pacing (some chapters cover hours, others cover weeks in montage), and tonal register (comic chapters adjacent to devastating ones). The contrast between chapters is itself a narrative tool \u2014 use it to create whiplash, irony, and accumulating emotional force.",
+      "diction": "Contemporary, precise, and register-sensitive. The prose absorbs the vocabulary of its setting: corporate language, tech terminology, bureaucratic formulas \u2014 but always filtered through the POV character's relationship to that language. Dan uses corporate words reflexively and with slight discomfort. Mira uses strategic vocabulary as native speech. The narrator should not editorialize on the language; let the words sit in context and let the reader hear the dissonance. Avoid: prestige-literary abstractions that haven't been earned by sensory grounding, and journalistic explainer-prose that breaks character to tell the reader about the world.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person, rotating between Dan and Mira as primary POV characters. The camera stays tight to the current POV character's perceptions and vocabulary \u2014 what Dan notices is different from what Mira notices. In shared-POV chapters, the rotation should be clear (section breaks or sustained passages in one POV before shifting) rather than head-hopping within a scene.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Varied and responsive to scene pressure. Short declarative sentences for comic timing, for shock, and for moments of clarity. Longer, more syntactically complex sentences for interiority, sensory immersion, and emotional complexity. The rhythm should accelerate during confrontation and slow during reflection. Avoid settling into any single rhythmic default \u2014 if three consecutive paragraphs use the same sentence structure, one of them is wrong.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

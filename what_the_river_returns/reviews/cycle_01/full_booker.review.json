@@ -1,0 +1,124 @@
+{
+  "cycle": 1,
+  "verdict": "FAIL",
+  "summary": "FAIL for shortlist readiness. The manuscript sustains strong sensory specificity and does not show book-level sanitization or tense drift (past tense remains canonical), but critical coherence blockers remain: an internal date contradiction in chapter 17, homicide-mechanics contradictions across chapters 1/3/17, a continuity-state mismatch in chapter 12, recurring cross-chapter register flattening with mantra-like institutional diction in chapters 1/3/5/16, and a repeated default facial-description tic across four chapters.",
+  "findings": [
+    {
+      "finding_id": "F001",
+      "severity": "CRITICAL",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:5626",
+      "problem": "The same scene assigns two different calendar dates: the interview slate gives October 26, 2026, while the livestream slate gives October 12 at 8:14 a.m. This is a hard timeline contradiction inside one chapter.",
+      "rewrite_direction": "Unify the date references in the opening interview block and livestream block at snapshots/cycle_01/FINAL_NOVEL.md:5624, snapshots/cycle_01/FINAL_NOVEL.md:5626, snapshots/cycle_01/FINAL_NOVEL.md:5630, and snapshots/cycle_01/FINAL_NOVEL.md:5738. Pick one date consistent with late-story sequencing (before the November court material in chapter 18) and carry that exact date through both callouts.",
+      "acceptance_test": "Pass if the date spoken at the interview setup and the date spoken on livestream are identical and unambiguous in the revised lines; fail if two different dates remain in snapshots/cycle_01/FINAL_NOVEL.md:5624-5738."
+    },
+    {
+      "finding_id": "F002",
+      "severity": "HIGH",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:4075",
+      "problem": "Continuity-state mismatch: Mara is physically on-page and co-working the records-room reconstruction in chapter 12, but the continuity canon marks her on-page availability as chapters 3, 5-10, and 14-18.",
+      "rewrite_direction": "Revise Mara's physical presence beats in snapshots/cycle_01/FINAL_NOVEL.md:4075, snapshots/cycle_01/FINAL_NOVEL.md:4081, snapshots/cycle_01/FINAL_NOVEL.md:4087, snapshots/cycle_01/FINAL_NOVEL.md:4103, and snapshots/cycle_01/FINAL_NOVEL.md:4167 so chapter 12 functions without her in-room presence (phone/sent materials/async input are acceptable). Keep the discovery logic but make the on-page actor set continuity-compliant for this chapter.",
+      "acceptance_test": "Pass if the revised chapter 12 records-room sequence no longer stages Mara as physically present in that room and all her contributions are remote or deferred; fail if she still appears on-site in snapshots/cycle_01/FINAL_NOVEL.md:4073-4195."
+    },
+    {
+      "finding_id": "F003",
+      "severity": "HIGH",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:7",
+      "problem": "Victim-injury logic conflicts with later confession: chapter 1 presents Voss with a deep throat cut exposing cartilage, while chapter 17's confession centers a trocar thrust below the sternum as the killing mechanism with no throat-cut accounting.",
+      "rewrite_direction": "Rework the wound description and early scene interpretation in snapshots/cycle_01/FINAL_NOVEL.md:7 and snapshots/cycle_01/FINAL_NOVEL.md:163 so chapter 1 does not lock an incompatible mechanism. Keep observed brutality, but phrase causal certainty as provisional pending autopsy or include wound hierarchy that can coexist with a trocar-driven kill sequence.",
+      "acceptance_test": "Pass if revised chapter 1 no longer states an unqualified throat-cut fatal mechanism that excludes the chapter 17 account; fail if the revised line at snapshots/cycle_01/FINAL_NOVEL.md:7 still definitively fixes cause as a throat cut with no compatibility room."
+    },
+    {
+      "finding_id": "F004",
+      "severity": "HIGH",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:789",
+      "problem": "Second-victim injury logic conflicts with later confession: chapter 3 gives Fenn a deep throat cut (plus blunt facial crush), but chapter 17 describes a piano-wire garrote kill without explaining those scene-level injuries.",
+      "rewrite_direction": "Revise the river-ramp wound language in snapshots/cycle_01/FINAL_NOVEL.md:789 and snapshots/cycle_01/FINAL_NOVEL.md:790 so the chapter does not over-commit to an incompatible mechanism. Preserve scene horror while shifting from definitive throat-cut causality to forensic-observation language that can align with strangulation and later clarification.",
+      "acceptance_test": "Pass if revised chapter 3 leaves injury interpretation compatible with the eventual confession track; fail if snapshots/cycle_01/FINAL_NOVEL.md:789 still unequivocally identifies a deep throat-cut kill mechanism without reconciliation space."
+    },
+    {
+      "finding_id": "F005",
+      "severity": "HIGH",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:5656",
+      "problem": "Confession mechanics do not reconcile with established forensic observations from earlier chapters. Voss and Fenn admissions describe tools/sequences that omit major observed injuries, leaving prosecution logic internally unstable.",
+      "rewrite_direction": "Revise confession sequencing in snapshots/cycle_01/FINAL_NOVEL.md:5650, snapshots/cycle_01/FINAL_NOVEL.md:5656, snapshots/cycle_01/FINAL_NOVEL.md:5676, and snapshots/cycle_01/FINAL_NOVEL.md:5692 so each major injury pattern is causally accounted for. Either explicitly add the missing injury actions to Ruth's account or narrow her admissions and name where a second actor's actions begin.",
+      "acceptance_test": "Pass if a reader can map each major observed wound from prior scenes to a described act in the revised confession without inference gaps; fail if revised lines still leave one or more major injuries unexplained."
+    },
+    {
+      "finding_id": "F006",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:255",
+      "problem": "Dialogue register flattening and mantra diction. In this chapter, high-pressure exchange leans into repeated institutional token clusters (stability/order/posture/process), and Lena/Clay/Cora drift toward the same formal cadence instead of sharply separated idiolects.",
+      "rewrite_direction": "Rebuild the briefing exchange at snapshots/cycle_01/FINAL_NOVEL.md:255, snapshots/cycle_01/FINAL_NOVEL.md:265, snapshots/cycle_01/FINAL_NOVEL.md:281, snapshots/cycle_01/FINAL_NOVEL.md:293, and snapshots/cycle_01/FINAL_NOVEL.md:303. Keep Clay's polished control language, but give Lena and Cora more register divergence under pressure (more contractions, interruptions, and speaker-specific syntax rather than policy memo clauses).",
+      "acceptance_test": "Pass if the revised block reads as three distinct voices under stress (not interchangeable policy cadence) and the token cluster no longer repeats as mantra; fail if three or more consecutive turns still read as similarly formal institutional prose."
+    },
+    {
+      "finding_id": "F007",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:883",
+      "problem": "Same cross-book pattern as chapter 1: command-room dialogue overfits institutional diction and compresses character voice separation. Clay/Lena/Beau lines often share the same formal argumentative shape.",
+      "rewrite_direction": "Revise the command meeting turns at snapshots/cycle_01/FINAL_NOVEL.md:883, snapshots/cycle_01/FINAL_NOVEL.md:891, snapshots/cycle_01/FINAL_NOVEL.md:899, snapshots/cycle_01/FINAL_NOVEL.md:901, and snapshots/cycle_01/FINAL_NOVEL.md:925. Preserve legal stakes but break cadence symmetry: Clay long framing clauses, Beau colloquial practical pushback, Lena procedural-to-blunt compression.",
+      "acceptance_test": "Pass if the revised scene gives each speaker a distinct rhythm/lexicon under pressure and reduces repeated institutional slogan nouns; fail if dialogue remains interchangeable in register and sentence architecture."
+    },
+    {
+      "finding_id": "F008",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:1503",
+      "problem": "Mantra-like policy diction continues here, with formal uncontracted exchange dominating a crisis scene that should show more spoken pressure texture. Voices of Lena, Clay, and city leadership converge too closely.",
+      "rewrite_direction": "Recast the city-hall confrontation at snapshots/cycle_01/FINAL_NOVEL.md:1495, snapshots/cycle_01/FINAL_NOVEL.md:1503, snapshots/cycle_01/FINAL_NOVEL.md:1517, snapshots/cycle_01/FINAL_NOVEL.md:1525, and snapshots/cycle_01/FINAL_NOVEL.md:1527. Keep factual/legal arguments, but introduce interruption, contraction-heavy stress speech, and character-specific rhetorical habits so leverage shifts feel lived, not scripted.",
+      "acceptance_test": "Pass if revised lines carry audible pressure (overlap, clipped retorts, differentiated diction) and no longer read as a sequence of formally parallel policy statements; fail if the exchange still scans as institutional transcript prose."
+    },
+    {
+      "finding_id": "F009",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:5250",
+      "problem": "The same register issue recurs in a peak-stakes press scene: dialogue repeatedly defaults to formal legal exposition and shared rhetorical shape, reducing character distinctness and scene volatility.",
+      "rewrite_direction": "Tighten and de-formalize key turns at snapshots/cycle_01/FINAL_NOVEL.md:5250, snapshots/cycle_01/FINAL_NOVEL.md:5264, snapshots/cycle_01/FINAL_NOVEL.md:5288, snapshots/cycle_01/FINAL_NOVEL.md:5308, and snapshots/cycle_01/FINAL_NOVEL.md:5312. Keep legal precision, but move spoken texture toward contractions, asymmetry, and pressure-specific idiolect contrast.",
+      "acceptance_test": "Pass if the revised podium/corridor exchange distinguishes Clay's polished performance voice from Lena's stressed refusal voice without both sounding equally formal; fail if revised speech remains mostly uncontracted and similarly clause-heavy across speakers."
+    },
+    {
+      "finding_id": "F010",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:137",
+      "problem": "Recurring full-book prose tic: default facial stillness/flatness appears across 4 chapters (1, 3, 10, 17). In this chapter, \"eyes went flat\" is one of the repeated constructions and should be replaced here.",
+      "rewrite_direction": "Replace the facial-default phrasing at snapshots/cycle_01/FINAL_NOVEL.md:137 with a character-specific reaction beat tied to Clay's controlling behavior (voice shift, gesture, physical displacement, or tactical word choice). Avoid the still/flat template in this slot.",
+      "acceptance_test": "Pass if snapshots/cycle_01/FINAL_NOVEL.md:137 no longer uses a still/flat facial formula and the replacement conveys a specific behavioral cue; fail if the revised line still relies on \"went flat/went still\" wording."
+    },
+    {
+      "finding_id": "F011",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:961",
+      "problem": "Recurring full-book prose tic: default facial stillness/flatness appears across 4 chapters (1, 3, 10, 17). This chapter's instance is the strongest and should be kept as one of the limited retained uses.",
+      "rewrite_direction": "KEEP the core image at snapshots/cycle_01/FINAL_NOVEL.md:961, but ensure no second still/flat facial-template line is introduced in chapter 3 during revision. If neighboring lines are adjusted, preserve this as the chapter's single canonical instance.",
+      "acceptance_test": "Pass if snapshots/cycle_01/FINAL_NOVEL.md:961 remains the only still/flat facial-template usage in chapter 3 after revision; fail if additional \"went still/went flat\" face/eye constructions appear in chapter_03."
+    },
+    {
+      "finding_id": "F012",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:3437",
+      "problem": "Recurring full-book prose tic: default facial stillness/flatness appears across 4 chapters (1, 3, 10, 17). This chapter should replace its instance to avoid repetitive character reaction coding.",
+      "rewrite_direction": "Replace the reaction line at snapshots/cycle_01/FINAL_NOVEL.md:3437 with a non-facial response that shows Otis's shutdown through action, syntax break, or object interaction (for example: latch behavior, stance change, or refusal rhythm).",
+      "acceptance_test": "Pass if snapshots/cycle_01/FINAL_NOVEL.md:3437 no longer uses a still/flat eye-face formula and instead delivers a distinct shutdown behavior; fail if the revised beat remains a variant of the same facial template."
+    },
+    {
+      "finding_id": "F013",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:5594",
+      "problem": "Recurring full-book prose tic: default facial stillness/flatness appears across 4 chapters (1, 3, 10, 17). This chapter should replace its instance to preserve variation at a major confession entry point.",
+      "rewrite_direction": "Revise Ruth's entry beat at snapshots/cycle_01/FINAL_NOVEL.md:5594 so emotional bracing is shown through a more specific physical or tactical behavior (breath cadence, grip pattern, delay action) rather than the still-face template.",
+      "acceptance_test": "Pass if the revised line at snapshots/cycle_01/FINAL_NOVEL.md:5594 conveys Ruth's defensive state without \"face stayed still/went still/went flat\" language; fail if the default facial template remains."
+    }
+  ]
+}

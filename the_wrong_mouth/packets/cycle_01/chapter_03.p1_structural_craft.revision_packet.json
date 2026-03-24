@@ -1,0 +1,91 @@
+{
+  "acceptance_targets": [
+    "[CH03_CRAFT_BOUNTY_TIMING_AND_VISIBILITY] Reading snapshots/cycle_01/chapters/chapter_03.md:121-175 alone, a cold reader can state four concrete facts without inference gaps: when the bounty becomes active, why Aldric tells Maren at that moment rather than earlier, why Derry receives or reads the notice when he does, and why Fenhold has not already reacted publicly before the scene leaves the well. If any of those four answers still requires guesswork, this finding remains open.",
+    "[C-01] All references to Pell's age across the manuscript resolve to a single consistent age. No chapter states an age that contradicts any other chapter."
+  ],
+  "chapter_id": "chapter_03",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Reading snapshots/cycle_01/chapters/chapter_03.md:121-175 alone, a cold reader can state four concrete facts without inference gaps: when the bounty becomes active, why Aldric tells Maren at that moment rather than earlier, why Derry receives or reads the notice when he does, and why Fenhold has not already reacted publicly before the scene leaves the well. If any of those four answers still requires guesswork, this finding remains open.",
+      "chapter_id": "chapter_03",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:125; snapshots/cycle_01/chapters/chapter_03.md:133; snapshots/cycle_01/chapters/chapter_03.md:145; snapshots/cycle_01/chapters/chapter_03.md:173",
+      "finding_id": "CH03_CRAFT_BOUNTY_TIMING_AND_VISIBILITY",
+      "problem": "The chapter's hinge turn reads hand-timed rather than rule-timed. Aldric says he has been monitoring non-routine classification updates, then reveals Maren's bounty as if the crisis is arriving in the moment, but line 173 says the bounty has already been broadcasting for approximately four hours. The chapter never makes clear why Aldric withheld that information until the well, why Derry only gets or notices the alert in-scene, or why Fenhold still behaves as if nothing has changed before the reveal. Because the whole chapter pivots on this broadcast, the unclear timing and audience rules make the escalation feel author-convenient instead of causally legible.",
+      "rewrite_direction": "Rewrite the reveal block at snapshots/cycle_01/chapters/chapter_03.md:121, snapshots/cycle_01/chapters/chapter_03.md:133, snapshots/cycle_01/chapters/chapter_03.md:145, and snapshots/cycle_01/chapters/chapter_03.md:173 so the System event has an explicit sequence. Either make the bounty finalize on-page at the well, or explain in the text what Aldric was seeing before line 133, when the classification became live, who can actually receive the bounty notice, and why villagers like Breda have not already confronted Maren by the time he reaches the square. The repair needs to preserve the must-land beats of Derry noticing the change, the bounty's scale, and the decision to flee, but it cannot leave the chapter's central alert on ambiguous rules.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "All references to Pell's age across the manuscript resolve to a single consistent age. No chapter states an age that contradicts any other chapter.",
+      "chapter_id": "chapter_03",
+      "cycle": 1,
+      "evidence": "Ch 3 L577: 'Pell had been watering everything the same amount because she was four and believed all plants were equally thirsty'; Ch 7 L1522: 'She's three. She's three years old and she has opinions about shoes'; Ch 10 L2694: 'Pell's going to be three next month'; Ch 10 L2744: 'My daughter's going to be three'; Ch 13 L3345: 'She turned two while we were on the road.'",
+      "finding_id": "C-01",
+      "problem": "Pell's age regresses across the manuscript: she is 'four' in Ch 3, 'three' in Ch 7, 'going to be three' in Ch 10, and 'turned two' in Ch 13. Over ~19 days of story time, her stated age decreases from 4 to 2. The most common reference is 'three' or 'going to be three' (Ch 7, Ch 10), suggesting her canonical age should be approximately 2 turning 3. The Ch 3 reference to 'four' and Ch 13 reference to 'turned two' are both likely errors.",
+      "rewrite_direction": "Establish a canonical age for Pell and correct all inconsistent references. If Pell is 2 turning 3 (supported by Ch 10's 'going to be three next month'), change Ch 3 L577 from 'four' to 'three' (or 'nearly three') and change Ch 13 L3345 from 'turned two' to 'turning three' (or reference the upcoming birthday instead).",
+      "severity": "CRITICAL",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "f60f51eb398158548a0440701480d478ce95b586d8712e47f1da6030e2cde850",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This novel must commit fully to its own weirdness. A System-blind con man with a dead paladin and a dead assassin arguing in his skull is inherently absurd, and the novel should let that absurdity live alongside genuine grief, genuine violence, and genuine mystery without apologizing for the tonal range. The darkest moments and the funniest moments may occupy the same scene. When they do, let both registers operate simultaneously \u2014 do not sacrifice comedy for gravitas or gravitas for comedy. Risk means specificity: the specific sensation of a body doing things you did not tell it to do, the specific comedy of a dead paladin critiquing your hygiene while you're running for your life, the specific horror of carrying incomplete people whose memories have holes, the specific shame of learning that your eleven years of fraud may have killed people. When in doubt between too raw and too safe, choose raw. The novel's emotional range should be wider than any single genre label would suggest.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism in the narration of violence, bodily experience, moral compromise, or physical consequence is a draft-level failure. Maren is a con man who has seen hard things and done dirty work in poor villages for eleven years \u2014 his narration should not flinch where he would not flinch. The style bible's sensory bias toward tactile and proprioceptive detail means physical consequence must be rendered through the body: what it feels like to throw up, to kill someone, to have your muscles operate without your consent, to perform a ritual that requires you to open yourself to contamination. Summary and abstraction at the moment of consequence is always worse than presence.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for all characters except Aldric, whose low contraction level is a deliberate character marker that should erode over the course of the novel. Uncontracted forms in other characters' speech are reserved for emphasis, deliberation, or ceremony. In a world of practical people doing unglamorous work, stiff diction is the exception.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate between hot and quiet chapters as a structural principle. No two consecutive chapters should open the same way \u2014 if one opens with action, the next should open with interiority or setting; if one opens with dialogue, the next should open with physical sensation or observation. Vary scene count between chapters: compressed single-scene chapters after multi-scene ones. Let quiet chapters stay quiet \u2014 do not insert action beats or revelations to maintain pace. The pacing engine is Maren's voice and the interplay between the three internal consciousnesses, not external plot pressure.",
+      "diction": "Colloquial with earned elevation. Default register is smart but not literary \u2014 a con man's English, precise about people and vague about feelings. Elevation reserved for moments of genuine awe, grief, or the rare glimpse of something beautiful. Fantasy-register portentousness is a draft-level failure \u2014 no 'ancient darkness' or 'powers beyond comprehension.' The world is weird and dangerous and ordinary all at once, and the prose should match.",
+      "forbidden_drift_patterns": [
+        "Sentence fragments imitating action-movie or thriller prose \u2014 subject-dropping and article-stripping for false urgency",
+        "Semicolon-heavy scholarly narration that distances the reader from embodied experience",
+        "Present-tense micro-shifts for intensity \u2014 the novel is past tense throughout, no exceptions",
+        "Filtering words ('he saw,' 'he felt,' 'he noticed,' 'he realized') when direct rendering is available",
+        "Fantasy-voice portentousness: 'ancient,' 'dark power,' 'something stirred,' 'a presence beyond reckoning'",
+        "Comic narration that winks at the reader or breaks the fourth wall instead of committing to the situation",
+        "Repeated metaphor templates \u2014 if a comparison structure appears twice in a chapter, the second instance is a tic",
+        "Emotional summary replacing scene presence: 'He was overwhelmed by grief' instead of rendering what grief looks and feels like in the body"
+      ],
+      "narrative_distance": "Close third person, locked to Maren throughout. Aldric and Vess are experienced as internal voices \u2014 they speak as italicized dialogue within Maren's consciousness, clearly distinguished from his own thoughts. Maren cannot access their thoughts directly; he hears what they say to him, not what they think. The narration inherits Maren's sensory limitations: the System interface is always mediated through Aldric or Vess's descriptions, never rendered directly until the single exception in Chapter 17.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Varied by emotional register. Default: medium-length sentences with periodic short declaratives for grounding. When Maren is performing (lying, charming, faking): smoother, more controlled rhythm with longer subordinate-clause chains. When Maren is honest or overwhelmed: choppier, more fragmented, more concrete. Fight scenes: visceral and slightly disoriented, reflecting Maren's System-blindness \u2014 sensation and proprioception without the visual data everyone else has. Quiet scenes: allow longer, more observational sentences. The rhythm should breathe differently in every chapter.",
+      "sensory_bias": [
+        "tactile \u2014 Maren's primary sense channel; the physical world is how he navigates System-blindness",
+        "auditory \u2014 the hum of System activity, Aldric and Vess's voices, the specific sounds of quest-light and contamination",
+        "proprioceptive \u2014 Maren's body doing things he didn't choose; the internal sensation of carrying fragments; the physical cost of consumption",
+        "olfactory \u2014 contamination has smell; ritual has smell; the world stinks in specific ways that the System-sighted don't notice because they navigate by interface"
+      ]
+    }
+  }
+}

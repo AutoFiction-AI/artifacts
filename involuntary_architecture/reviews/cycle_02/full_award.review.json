@@ -1,0 +1,145 @@
+{
+  "cycle": 2,
+  "verdict": "FAIL",
+  "summary": "Strong dual-POV architecture, sustained house-as-agent tension across eighteen chapters, and prose with embodied specificity more often than not. The ending earns its ambiguity. Principal failures: (1) a mouth-as-emotional-gauge prose tic appears nine times across six chapters, creating generated-text texture at the sentence level; (2) baseline reorientation re-teaches established conditions in four chapters; (3) Chapter 13 doubles structurally redundant friend-warns-Hermione scenes; (4) Chapter 16's pivotal confrontation relies on composed-to-land dialogue; (5) Narcissa's residence contradicts itself between chapters. The tic and reorientation patterns are the most damaging because they recur across the manuscript's strongest passages. FAIL — close, but pattern-level craft issues undermine the novel's best work.",
+  "findings": [
+    {
+      "finding_id": "CH02_NARCISSA_RESIDENCE",
+      "severity": "HIGH",
+      "chapter_id": "chapter_02",
+      "evidence": {
+        "lines": [172],
+        "text_sample": "She had moved into a townhouse in Bath, tasteful and proportionate, rooms that stayed where they were put."
+      },
+      "problem": "Narcissa's post-war residence is 'a townhouse in Bath' at line 172 but 'a rented house in Knightsbridge' at line 1445 (Ch 7). The continuity sheet specifies Knightsbridge. Internal factual contradiction across chapters.",
+      "rewrite_direction": "Change line 172 to match Ch 7 and the continuity sheet: Narcissa lives in a rented house in Knightsbridge. Replace 'townhouse in Bath, tasteful and proportionate' with 'rented house in Knightsbridge' and adjust surrounding descriptors to preserve the sentence's rhythm and the contrast with the Manor's scale.",
+      "acceptance_test": "All references to Narcissa's residence within the manuscript resolve to the same location, matching the continuity sheet entry."
+    },
+    {
+      "finding_id": "CH16_COMPOSED_DIALOGUE",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_16",
+      "evidence": {
+        "lines": [3328, 3382, 3388],
+        "text_sample": "'You knew there was contamination in the experiment and you kissed me anyway.' / 'Everything important about me gets decided somewhere else.'"
+      },
+      "problem": "The novel's pivotal confrontation deploys lines that read as composed-to-land. 'Contamination in the experiment' is a thesis statement, not speech. 'Everything important about me gets decided somewhere else' compresses Draco's arc into an aphorism rather than letting pressure fracture syntax.",
+      "rewrite_direction": "Let both characters lose rhetorical control in proportion to the stakes. Hermione's framing should fumble toward the accusation rather than delivering it as a clean metaphor. Draco's response should break syntactically under the weight of betrayal — repetition, false starts, abandoned sentences — rather than arriving at perfect compression.",
+      "acceptance_test": "No line in the confrontation could serve as a pull-quote or chapter epigraph. Both characters should sound worse at speaking than the scene requires of them."
+    },
+    {
+      "finding_id": "CH15_POST_KISS_OVERSTATEMENT",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": {
+        "lines": [3174, 3195, 3199, 3205, 3211],
+        "text_sample": "She lay on her side in a room the Manor had made too comfortable... and let herself want what she wanted even while she distrusted every condition."
+      },
+      "problem": "Lines 3174-3215 devote forty-two lines of interior processing to restating the house-doubt and concealment dilemma already legible from the kiss scene. The section tells the reader what to conclude from events already dramatized.",
+      "rewrite_direction": "Cut the section by at least half. The fire-and-lavender opening (3175-3181) and the final image (3211-3213) carry the necessary emotional weight. The intervening paragraphs restating the house-influence question, the concealment dilemma, and the what-the-kiss-proved analysis can be compressed to sensory residue and one sharp thought.",
+      "acceptance_test": "Post-kiss reflection occupies no more than twenty lines. No sentence in the passage restates information available from the preceding scene action."
+    },
+    {
+      "finding_id": "CH13_STRUCTURAL_REDUNDANCY",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": {
+        "lines": [2523, 2645],
+        "text_sample": "Ron scene opens at pub near Charing Cross Road; Harry scene opens at his DMLE office. Both friends warn Hermione about the Manor."
+      },
+      "problem": "Chapter 13 runs two full-length 'outside friend warns Hermione' scenes (Ron: ~115 lines, Harry: ~155 lines) with insufficient structural differentiation. Both deliver the same narrative function — external perspective questions her judgment — producing a sprawling chapter.",
+      "rewrite_direction": "Differentiate the two scenes' functions sharply. Ron should address the personal axis (shared history, the divorce, what it means she's living with Malfoy). Harry should address the professional-political axis (Ministry crisis, Manor's institutional danger). Currently both blend personal and political concern. Alternatively, cut one scene and fold its unique content into the other.",
+      "acceptance_test": "No two scenes in the chapter serve the same narrative function. Each external-perspective scene advances a distinct axis of pressure the other does not touch."
+    },
+    {
+      "finding_id": "CH17_RESTATED_REVELATION",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_17",
+      "evidence": {
+        "lines": [3767, 3773, 3777],
+        "text_sample": "She saw the folio first... He had kissed her without knowing. She had kissed him knowing... The uglier thing was simpler."
+      },
+      "problem": "Lines 3767-3785 replay the folio discovery, concealment, and moral calculus in interior monologue, restating what the Harry conversation just dramatized and what Chapters 15-16 established. The reader has lived this sequence three times by this point.",
+      "rewrite_direction": "Replace the recap with forward motion. After Harry leaves, Hermione's internal state should register the conversation's impact through physical sensation and one new thought — the decision forming — not by replaying scenes the reader has already witnessed. Trust the preceding chapters to have landed.",
+      "acceptance_test": "Post-Harry reflection introduces no information already dramatized in Chapters 15-16 or in the Harry scene itself. Every sentence advances toward the closing decision or provides new texture."
+    }
+  ],
+  "pattern_findings": [
+    {
+      "pattern_id": "SUPPRESSED_EXPRESSION_TIC",
+      "severity": "MEDIUM",
+      "global_problem": "The manuscript uses the mouth as a suppressed-expression gauge at least nine times across six chapters via repeating constructions: 'mouth tightened' (3x), 'mouth worked' (2x), 'mouth didn't quite smile,' 'close enough to a smile,' 'mouth opened. Closed.' This creates a textural fingerprint associated with generated prose rather than authored style.",
+      "affected_chapters": ["chapter_05", "chapter_08", "chapter_09", "chapter_12", "chapter_14", "chapter_16"],
+      "chapter_hits": [
+        {
+          "chapter_id": "chapter_09",
+          "evidence": {
+            "lines": [1821, 1937],
+            "text_sample": "'his mouth didn't quite smile, but the line of it loosened' / 'His mouth worked once.'"
+          },
+          "problem": "Two mouth-as-gauge constructions in a single chapter. 'Didn't quite smile' and 'mouth worked once' both render Draco's emotional suppression through the same anatomical shorthand, producing repetitive texture within 120 lines.",
+          "rewrite_direction": "Keep one mouth construction per chapter maximum. Replace the other with a gesture drawn from a different part of the body, or cut the beat entirely if the suppression is already legible from dialogue or action.",
+          "acceptance_test": "No chapter contains more than one instance of mouth-as-emotional-gauge. Total manuscript instances do not exceed four."
+        },
+        {
+          "chapter_id": "chapter_14",
+          "evidence": {
+            "lines": [2878, 2936],
+            "text_sample": "'Her mouth tightened, then eased' / 'A corner of her mouth moved, close enough to a smile.'"
+          },
+          "problem": "Two mouth constructions within sixty lines. 'Mouth tightened' repeats an exact construction from Ch 12 (line 2474), and 'close enough to a smile' echoes Ch 5's 'as close to smiling as he allowed himself' — both defaulting to the same template.",
+          "rewrite_direction": "Replace 'mouth tightened' with a construction specific to this moment's emotional content. Let 'close enough to a smile' earn its near-miss by grounding it in something particular to Hermione in this scene, or cut the modifier entirely.",
+          "acceptance_test": "Neither line uses a mouth construction that appears elsewhere in the manuscript. If near-expression is rendered, the vehicle is unique to the moment."
+        },
+        {
+          "chapter_id": "chapter_16",
+          "evidence": {
+            "lines": [3280, 3384],
+            "text_sample": "'Her mouth tightened.' / 'Her mouth opened. Closed.'"
+          },
+          "problem": "'Mouth tightened' appears for the third time in the manuscript (after Ch 12 and Ch 14). In the novel's climactic confrontation, defaulting to a repeated construction flattens the scene's emotional stakes into familiar shorthand.",
+          "rewrite_direction": "Replace both mouth constructions. At line 3280, convey Hermione's tightening control through a different physical register. At line 3384, let the speechlessness land through silence or action rather than anatomical pantomime.",
+          "acceptance_test": "Chapter 16 contains zero instances of 'mouth tightened,' 'mouth worked,' or 'mouth opened/closed' constructions."
+        }
+      ]
+    },
+    {
+      "pattern_id": "BASELINE_REORIENTATION",
+      "severity": "MEDIUM",
+      "global_problem": "At least four chapters include passages that re-teach established conditions — Manor responsiveness, London-vs-Manor contrast, Mark ache behavior — as though informing the reader for the first time. These reorientation paragraphs convert earned world-building into expository refreshers that slow pacing and imply distrust of the reader's memory.",
+      "affected_chapters": ["chapter_09", "chapter_10", "chapter_13", "chapter_17"],
+      "chapter_hits": [
+        {
+          "chapter_id": "chapter_09",
+          "evidence": {
+            "lines": [1803],
+            "text_sample": "Since the examination that had gone wrong, or right, the Manor had turned almost accommodating. The route... stayed stable. Shelves surfaced the right texts."
+          },
+          "problem": "Line 1803 re-teaches Manor cooperative behavior already established across Chapters 5-8. The paragraph summarizes a shift the reader witnessed in real time, converting dramatized experience into exposition.",
+          "rewrite_direction": "Delete the reorientation paragraph. Open the domestic scene in medias res — the Manor's cooperation is background, not news. If the chapter needs the house's behavior, let it surface through a specific new detail rather than a summary.",
+          "acceptance_test": "Chapter 9 contains no paragraph that summarizes Manor behavior already dramatized in prior chapters."
+        },
+        {
+          "chapter_id": "chapter_13",
+          "evidence": {
+            "lines": [2525],
+            "text_sample": "The simple solidity of it, pavement that stayed where it was and walls that didn't rearrange themselves... felt strange."
+          },
+          "problem": "The London-arrival passage explicitly glosses the Manor contrast ('walls that didn't rearrange themselves') as though the reader needs reminding. The strangeness of ordinary London is already implicit in the chapter's shift of setting.",
+          "rewrite_direction": "Trust the setting shift to register the contrast. Let London's ordinariness land through specific sensory detail — traffic noise, flat light, non-magical objects — without explicitly comparing it to the Manor's behavior.",
+          "acceptance_test": "London scenes establish atmosphere through sensory detail, not through explicit comparison to Manor behavior the reader already knows."
+        },
+        {
+          "chapter_id": "chapter_17",
+          "evidence": {
+            "lines": [3507, 3511, 3517],
+            "text_sample": "Walls stayed where walls belonged... Nothing listened. Nothing withheld... No surface met her halfway. No wall gave anything back."
+          },
+          "problem": "Lines 3507-3521 devote fifteen lines to restaging the London-vs-Manor contrast already established in Ch 5 and reinforced in Ch 13. The passage functions as a third tutorial on a distinction the reader grasped two hundred pages earlier.",
+          "rewrite_direction": "Compress to three lines maximum. One sensory detail of the flat's deadness, one registration of the Mark's distance-degraded signal. Let the reader supply the contrast from memory rather than having it catalogued again.",
+          "acceptance_test": "Chapter 17's flat-return passage occupies no more than five lines and introduces no Manor-contrast language that appeared in Ch 5 or Ch 13."
+        }
+      ]
+    }
+  ]
+}

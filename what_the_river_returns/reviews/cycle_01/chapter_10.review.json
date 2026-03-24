@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_10",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch10-craft-001",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:119; snapshots/cycle_01/chapters/chapter_10.md:121; snapshots/cycle_01/chapters/chapter_10.md:125; snapshots/cycle_01/chapters/chapter_10.md:129; snapshots/cycle_01/chapters/chapter_10.md:137; snapshots/cycle_01/chapters/chapter_10.md:143",
+      "problem": "The tailgate negotiation runs as an external transcript for a long stretch (13 consecutive paragraphs) before re-entering Lena's interior at line 145. The chapter temporarily loses close-third pressure and reads flatter than the surrounding material.",
+      "rewrite_direction": "Insert focalized interior beats in the same exchange at snapshots/cycle_01/chapters/chapter_10.md:121, snapshots/cycle_01/chapters/chapter_10.md:129, snapshots/cycle_01/chapters/chapter_10.md:137, and snapshots/cycle_01/chapters/chapter_10.md:141. Keep them brief (1-2 sentences each) and specific to Lena (body sensation, memory flash, or self-assessment) so the Otis dialogue still drives the scene.",
+      "acceptance_test": "PASS if the revised span between snapshots/cycle_01/chapters/chapter_10.md:119 and snapshots/cycle_01/chapters/chapter_10.md:143 contains at least 3 distinct Lena-internal beats (thought, sensation, memory, or self-assessment), and no run longer than 5 consecutive paragraphs in that span is purely external action/dialogue. FAIL otherwise."
+    },
+    {
+      "finding_id": "ch10-prose-002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:31; snapshots/cycle_01/chapters/chapter_10.md:129; snapshots/cycle_01/chapters/chapter_10.md:197",
+      "problem": "A recurring reaction template (\"gave her a [adjective] look\") appears three times and starts to feel mechanical rather than character-specific, flattening tension beats during key trust negotiations.",
+      "rewrite_direction": "Revise reaction beats at snapshots/cycle_01/chapters/chapter_10.md:31, snapshots/cycle_01/chapters/chapter_10.md:129, and snapshots/cycle_01/chapters/chapter_10.md:197 so at least two of the three use different constructions tied to context (e.g., gesture, posture shift, or speech interruption) rather than the repeated visual-look formula.",
+      "acceptance_test": "PASS if, after revision, the exact construction pattern used at snapshots/cycle_01/chapters/chapter_10.md:31 (\"gave her a ... look\") appears no more than once across those three target lines and each replacement beat conveys a distinct social pressure cue. FAIL if the same formula still appears 2+ times in that set."
+    }
+  ],
+  "summary": "Chapter 10 lands its causal objective and boundary beats: quiet local texture, partial oral history, and a materially useful map that cleanly drives Chapter 11. Voice separation is strong (Lena/Beau/Otis), contraction use is natural for register, and tense/continuity checks are clean against style bible and continuity sheet. It fails craft/prose on two unresolved quality risks: a long interiority drop that temporarily screens the chapter into transcript mode, and a repeated reaction-beat sentence formula that reads as prose autopilot."
+}

@@ -1,0 +1,62 @@
+{
+  "chapter_id": "chapter_13",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch13_craft_001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_02/chapters/chapter_13.md:29",
+      "problem": "The chapter explicitly tags the scene as September, but canon places chapter_13 inside the late-fall run (with chapter_17 fixed at October 26, 2026). This creates timeline drift against established continuity.",
+      "rewrite_direction": "Revise the temporal marker at snapshots/cycle_02/chapters/chapter_13.md:29 so the weather/month cue aligns with late-fall continuity (or remove explicit month naming). Recheck downstream temporal cues at snapshots/cycle_02/chapters/chapter_13.md:147 and snapshots/cycle_02/chapters/chapter_13.md:350 for consistency.",
+      "acceptance_test": "PASS if the revised line at snapshots/cycle_02/chapters/chapter_13.md:29 no longer anchors the chapter to September and all explicit time cues in snapshots/cycle_02/chapters/chapter_13.md:147 and snapshots/cycle_02/chapters/chapter_13.md:350 remain consistent with a late-fall placement; FAIL if September remains or conflicting seasonal markers persist."
+    },
+    {
+      "finding_id": "ch13_craft_002",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_02/chapters/chapter_13.md:171; snapshots/cycle_02/chapters/chapter_13.md:175; snapshots/cycle_02/chapters/chapter_13.md:177",
+      "problem": "Sanitization drift in the confession beat: Eleanor's admission stays inside legal-financial abstractions ('endowment growth,' 'campaign debt,' 'title questions') at the exact moment the narrative needs concrete, embodied consequence. The euphemistic frame softens moral exposure instead of forcing it into material terms.",
+      "rewrite_direction": "Rewrite the confession exchange at snapshots/cycle_02/chapters/chapter_13.md:171 and snapshots/cycle_02/chapters/chapter_13.md:175, plus Lena's processing beat at snapshots/cycle_02/chapters/chapter_13.md:193, so at least one concrete dispossession consequence is named on-page (who lost what, what was funded, and what social cost was externalized). Keep Eleanor defensive, but do not let abstraction be the only vocabulary.",
+      "acceptance_test": "PASS if the revised confession span (snapshots/cycle_02/chapters/chapter_13.md:171-177 equivalent) includes at least two concrete, non-euphemistic consequences tied to Gideon disbursements and Lena's response at snapshots/cycle_02/chapters/chapter_13.md:193 names one specific harmed party or material loss; FAIL if the beat can still be summarized as abstract institutional guilt without concrete fallout."
+    },
+    {
+      "finding_id": "ch13_booker_001",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_02/chapters/chapter_13.md:45; snapshots/cycle_02/chapters/chapter_13.md:77; snapshots/cycle_02/chapters/chapter_13.md:281; snapshots/cycle_02/chapters/chapter_13.md:287",
+      "problem": "The chapter runs two near-parallel refusal loops (annex cancellation denial, then corridor contract denial) with similar rhetorical shape. Repetition lowers escalation pressure in a chapter that must sustain dread through consequence, not re-argued position.",
+      "rewrite_direction": "Differentiate the second confrontation at snapshots/cycle_02/chapters/chapter_13.md:281-292 from the first refusal cycle at snapshots/cycle_02/chapters/chapter_13.md:45-82 by introducing a new irreversible turn (e.g., explicit written override, named legal exposure, or concrete operational concession that changes tomorrow's risk map).",
+      "acceptance_test": "PASS if the revised second scene (snapshots/cycle_02/chapters/chapter_13.md:281-292 equivalent) produces one irreversible new decision not already present after snapshots/cycle_02/chapters/chapter_13.md:45-82, and the core refusal rationale is not restated in the same terms twice; FAIL if scene two mainly replays scene one's denial logic."
+    },
+    {
+      "finding_id": "ch13_dialogue_001",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_02/chapters/chapter_13.md:281; snapshots/cycle_02/chapters/chapter_13.md:289; snapshots/cycle_02/chapters/chapter_13.md:291; snapshots/cycle_02/chapters/chapter_13.md:328; snapshots/cycle_02/chapters/chapter_13.md:332",
+      "problem": "At peak pressure, several lines arrive as polished thesis statements instead of volatile live speech, which flattens register separation. Lena, Eleanor, and Kline intermittently converge toward the same aphoristic cadence rather than distinct stress rhythm.",
+      "rewrite_direction": "Rework the argument at snapshots/cycle_02/chapters/chapter_13.md:281-292 and closing exchange at snapshots/cycle_02/chapters/chapter_13.md:328-333 with more interruption, overlap, and contraction-driven rhythm for Lena/Kline while preserving Eleanor's lower-contraction formal control.",
+      "acceptance_test": "PASS if in the revised spans Lena and Kline each use contractions in at least 2 separate lines, at least 3 lines show interruption or broken-start cadence, and Eleanor remains the most syntactically formal speaker; FAIL if all three still read as similarly polished complete-statement dialogue."
+    },
+    {
+      "finding_id": "ch13_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_02/chapters/chapter_13.md:29; snapshots/cycle_02/chapters/chapter_13.md:31; snapshots/cycle_02/chapters/chapter_13.md:121; snapshots/cycle_02/chapters/chapter_13.md:175; snapshots/cycle_02/chapters/chapter_13.md:191",
+      "problem": "The recurring 'as if ...' construction appears more than twice and becomes a detectable formula. The repetition starts to flatten line-level surprise and makes image work feel templated.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_13.md:29, snapshots/cycle_02/chapters/chapter_13.md:31, snapshots/cycle_02/chapters/chapter_13.md:121, snapshots/cycle_02/chapters/chapter_13.md:175, and snapshots/cycle_02/chapters/chapter_13.md:191, replace at least three 'as if' formulations with direct physical observation or action-specific description.",
+      "acceptance_test": "PASS if no more than two 'as if' constructions remain in those targeted beats and each replacement line delivers concrete sensory/behavioral detail rather than analogy scaffolding; FAIL if three or more 'as if' templates remain in the same cluster."
+    }
+  ],
+  "summary": "Chapter 13 sustains operational dread and lands the required Pike admission, but it does not clear review: a HIGH continuity month mismatch and a HIGH sanitization-softened confession undercut canon and moral force, while medium-level scene-loop repetition, over-polished pressure dialogue, and repeated 'as if' prose scaffolding weaken escalation and voice texture."
+}

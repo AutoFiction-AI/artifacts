@@ -1,0 +1,33 @@
+{
+  "chapter_id": "chapter_02",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_02_craft_001",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:227; snapshots/cycle_02/chapters/chapter_02.md:245",
+      "problem": "At two of the chapter's sharpest turns, the narration steps out of the live social pressure to explain the meaning in abstract terms ('social hallucination', generalized tenure-case commentary). That interpretive overlay is intelligent, but it slightly defuses the scene's rawness by telling the reader what Mohit's manipulation means instead of making the consequence fully legible through June's fear, Leela's bodily response, and the changed terms of trust between them.",
+      "rewrite_direction": "Revise `snapshots/cycle_02/chapters/chapter_02.md:225-227` and `snapshots/cycle_02/chapters/chapter_02.md:243-245` so Leela's realization is carried by concrete local consequence: what June thinks can be taken from her benchmark, what Leela notices in June's fear, and how Leela hears her own earlier hedging as complicity. Keep the insight, but replace the abstract labels with specific social or procedural fallout visible inside those spans.",
+      "acceptance_test": "PASS if, in `snapshots/cycle_02/chapters/chapter_02.md:225-227` and `snapshots/cycle_02/chapters/chapter_02.md:243-245`, a reader can identify from scene detail alone what June believes Mohit is setting up and why Leela's earlier language now feels dangerous; FAIL if those beats still rely on abstract explanatory labels to carry the meaning."
+    },
+    {
+      "finding_id": "chapter_02_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:19; snapshots/cycle_02/chapters/chapter_02.md:55; snapshots/cycle_02/chapters/chapter_02.md:99; snapshots/cycle_02/chapters/chapter_02.md:127; snapshots/cycle_02/chapters/chapter_02.md:183; snapshots/cycle_02/chapters/chapter_02.md:217",
+      "problem": "The chapter leans too often on the same comparison scaffold (`as if`) and adjacent precision-language defaults (`careful`, `exactly`, `carefulness`) to characterize pressure. The first few uses are effective, but by the back half they read as a chapter-level prose habit rather than a fresh choice, which slightly flattens otherwise strong observation.",
+      "rewrite_direction": "Revise `snapshots/cycle_02/chapters/chapter_02.md:19-21`, `snapshots/cycle_02/chapters/chapter_02.md:55`, `snapshots/cycle_02/chapters/chapter_02.md:99`, `snapshots/cycle_02/chapters/chapter_02.md:127`, `snapshots/cycle_02/chapters/chapter_02.md:183`, and `snapshots/cycle_02/chapters/chapter_02.md:217` by replacing at least four `as if`-framed characterizations with direct action, sound, or spatial pressure. Also vary the precision lexicon around `snapshots/cycle_02/chapters/chapter_02.md:95`, `snapshots/cycle_02/chapters/chapter_02.md:113`, `snapshots/cycle_02/chapters/chapter_02.md:143`, `snapshots/cycle_02/chapters/chapter_02.md:203`, and `snapshots/cycle_02/chapters/chapter_02.md:263` so the prose is not repeatedly leaning on the same careful/exact register.",
+      "acceptance_test": "PASS if the cited spans no longer depend on the repeated comparative scaffold as the main characterization device: no more than two `as if` constructions remain across those revised passages, and at least three of the replacement beats render pressure through direct observed behavior or sensory detail. FAIL if the same `as if` pattern is still doing most of the characterization work in those lines."
+    }
+  ],
+  "summary": "The chapter cleanly lands its ensemble objective: June's apartment and dinner ritual establish a human baseline, Mohit's individualized promises surface through mismatched retellings, and the sink-scene aftermath leaves suspicion lodged inside ordinary fellowship. Voice work is strong and style-bible consistent across Leela, June, Omar, and Ben, with no continuity contradiction or dialogue-register failure rising to MEDIUM+. It fails craft/prose, though, because the narration occasionally over-interprets its own best scene work and because repeated `as if`/precision-based characterization becomes a noticeable prose tic.",
+  "coverage_scene_ids": []
+}

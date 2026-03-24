@@ -1,0 +1,37 @@
+{
+  "chapter_id": "chapter_06",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_06_F001",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:241; snapshots/cycle_01/chapters/chapter_06.md:251; snapshots/cycle_01/chapters/chapter_06.md:263",
+      "problem": "After the corpse scow bursts, the chapter time-skips over the hardest labor and over the seizure of the Bitter Thread's working gear. Because the cleanup and confiscation arrive as reported outcome instead of lived scene, the public humiliation loses force at the exact point the chapter's comic escalation should cash out into consequence, and Riva's authority is partly stripped offstage.",
+      "rewrite_direction": "Rework the transition anchored at snapshots/cycle_01/chapters/chapter_06.md:241, snapshots/cycle_01/chapters/chapter_06.md:251, and snapshots/cycle_01/chapters/chapter_06.md:263 so at least one immediate post-burst beat stays on page: show Iven doing corpse-clearance or recognition labor, show a witness or crew member tying blame to his sold knots, and stage the confiscation of the drag-frame, hawser, or block in front of Riva instead of revealing it later as finished fact.",
+      "acceptance_test": "Pass if the revised passage spanning snapshots/cycle_01/chapters/chapter_06.md:241 through snapshots/cycle_01/chapters/chapter_06.md:264 contains an on-page cleanup action, an explicit public accusation linked to Iven's promises, and the seizure of at least one key piece of gear happening in scene; fail if the text still jumps from the burst scow to 'It took the rest of the morning' and only reports the confiscation afterward."
+    },
+    {
+      "finding_id": "chapter_06_F002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:139; snapshots/cycle_01/chapters/chapter_06.md:171; snapshots/cycle_01/chapters/chapter_06.md:235; snapshots/cycle_01/chapters/chapter_06.md:459; snapshots/cycle_01/chapters/chapter_06.md:475",
+      "problem": "The chapter reuses the same emphasis engine too often: clipped negation ladders ('Not X. Not Y.') and 'That was the...' setup lines recur across multiple major beats. By the later instances, the rhythm feels templated rather than freshly earned, and some of the fragments drift toward the constitution's ban on elliptical clipping in narration.",
+      "rewrite_direction": "Revise the emphasis beats at snapshots/cycle_01/chapters/chapter_06.md:139, snapshots/cycle_01/chapters/chapter_06.md:171, snapshots/cycle_01/chapters/chapter_06.md:235, snapshots/cycle_01/chapters/chapter_06.md:459, and snapshots/cycle_01/chapters/chapter_06.md:475 so no more than one of them keeps the current clipped negation-ladder or 'That was the...' structure. Recast the others as complete sentences with different syntactic pressure or image logic, especially in the corpse-jam climax and final authority-shift beat.",
+      "acceptance_test": "Pass if, after revision, at most one of the cited spans still uses a clipped 'Not X. Not Y.' or 'That was the...' ladder and the remaining spans land in complete sentences with distinct syntax; fail if three or more of those local spans still repeat the same emphasis template."
+    }
+  ],
+  "summary": "Chapter 6 lands the planned comic-escalation spine, preserves continuity, and keeps the sibling voices distinct and on-model. It still fails craft and prose because it reports the ugliest aftermath instead of fully staging it, and because the repeated clipped-negation emphasis pattern becomes a visible tic.",
+  "coverage_scene_ids": [
+    "market_arrival",
+    "corpse_jam",
+    "aftermath_debt"
+  ]
+}

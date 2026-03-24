@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_16",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_16_f001",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_01/chapters/chapter_16.md:197",
+      "problem": "Earl's expulsion line reproduces a style-bible calibration line verbatim in the chapter's defining confrontation beat. That breaks the do-not-copy rule and makes the scene feel assembled from voice notes instead of freshly spoken on the page.",
+      "rewrite_direction": "Replace Earl's expulsion beat at snapshots/cycle_01/chapters/chapter_16.md:195 and snapshots/cycle_01/chapters/chapter_16.md:197 with new wording that still ejects Marcus from the ring and still hurts him, but does not reuse the calibration sentence from outline/style_bible.json. Keep Earl spare, final, and union-hardened; let the line be original and scene-specific.",
+      "acceptance_test": "In the revised confrontation at snapshots/cycle_01/chapters/chapter_16.md:195 and snapshots/cycle_01/chapters/chapter_16.md:197, Earl still ends Marcus's place in the group and Marcus visibly absorbs the blow, but the exact phrase \"You're not one of us anymore\" is absent and the replacement line reads as Earl's terse register rather than copied calibration text."
+    },
+    {
+      "finding_id": "chapter_16_f002",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_01/chapters/chapter_16.md:223, snapshots/cycle_01/chapters/chapter_16.md:239, snapshots/cycle_01/chapters/chapter_16.md:247, snapshots/cycle_01/chapters/chapter_16.md:255",
+      "problem": "After Marcus leaves, the chapter cools into an orderly origin-story debrief. The reveal is necessary, but the current execution shifts from live aftermath into explanatory report: Carmen mostly prompts, Harry summarizes, and the bodily and institutional injuries that should reframe the ring as survival arrive cleaner and safer than the chapter's own pressure has earned.",
+      "rewrite_direction": "Rebuild the aftermath at snapshots/cycle_01/chapters/chapter_16.md:223, snapshots/cycle_01/chapters/chapter_16.md:239, snapshots/cycle_01/chapters/chapter_16.md:247, and snapshots/cycle_01/chapters/chapter_16.md:255 so Harry's origin disclosure stays under present-scene pressure instead of reading like movable exposition. Keep the pharmacy-switch reveal and the closing tactical beat, but give Carmen a pressure-bearing response that changes what Harry says next, and replace the most report-like pain summary with a smaller number of concrete bodily and institutional consequences rendered in-scene language.",
+      "acceptance_test": "In the revised closing scene at snapshots/cycle_01/chapters/chapter_16.md:223 through snapshots/cycle_01/chapters/chapter_16.md:277, the reader can identify a live pressure in the room while Harry talks, at least two concrete consequences of the pharmacy switch on actual bodies or care failures, and a Carmen question or reaction that alters the shape of the disclosure. If the passage can be lifted out of the scene and read as a clean background briefing with no loss, it still fails."
+    },
+    {
+      "finding_id": "chapter_16_f003",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_01/chapters/chapter_16.md:67, snapshots/cycle_01/chapters/chapter_16.md:113, snapshots/cycle_01/chapters/chapter_16.md:179, snapshots/cycle_01/chapters/chapter_16.md:189, snapshots/cycle_01/chapters/chapter_16.md:199, snapshots/cycle_01/chapters/chapter_16.md:227, snapshots/cycle_01/chapters/chapter_16.md:271",
+      "problem": "The narration keeps annotating character states and paraphrasing the force of beats the scene has already made legible. Labels such as \"the accountant's version,\" \"Her stress mode,\" \"ledger mode now,\" and \"the self-repair had kicked in,\" plus repeated not-X/not-Y verdict scaffolds, make the chapter feel explained instead of fully trusted. The prose is strongest when it stays with the concrete room; it weakens when it translates its own effects into commentary.",
+      "rewrite_direction": "Revise the interpretive overlays at snapshots/cycle_01/chapters/chapter_16.md:67, snapshots/cycle_01/chapters/chapter_16.md:113, snapshots/cycle_01/chapters/chapter_16.md:179, snapshots/cycle_01/chapters/chapter_16.md:189, snapshots/cycle_01/chapters/chapter_16.md:199, snapshots/cycle_01/chapters/chapter_16.md:227, and snapshots/cycle_01/chapters/chapter_16.md:271 so behavior, silence, and physical detail carry the meaning without diagnostic labels. Cut the repeated explanatory verdicts after lines already land, and vary away from the recurring not-X/not-Y sentence scaffold in climactic moments.",
+      "acceptance_test": "In the revised passages anchored at snapshots/cycle_01/chapters/chapter_16.md:67, snapshots/cycle_01/chapters/chapter_16.md:113, snapshots/cycle_01/chapters/chapter_16.md:179, snapshots/cycle_01/chapters/chapter_16.md:189, and snapshots/cycle_01/chapters/chapter_16.md:199, a cold reader can still infer Harry's anger, Agnes's compression, Marcus's self-repair, Earl's authority, and Harry's age or clarity from action, syntax, and image alone. The narrator no longer uses the explicit labels cited above, and no climactic line is immediately followed by a paraphrase whose only job is to tell the reader what the line already did."
+    }
+  ],
+  "summary": "FAIL. The chapter lands the Marcus rupture, preserves continuity, and delivers the required state shift, but it stays below pass because a copied calibration line breaks voice integrity, the closing origin reveal cools into explanatory debrief, and the prose repeatedly annotates beats the scene has already made legible."
+}

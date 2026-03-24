@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_06",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH06_CONTINUITY_DECEMBER_TIMELINE",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_02/chapters/chapter_06.md:11",
+      "problem": "The chapter dates itself to December, but the continuity sheet places chapter_06 about two weeks after Hermione's early-November arrival and within the chapters 3-7 late-November band. That explicit month cue creates a direct timeline contradiction at the point the paired archive is supposed to debut.",
+      "rewrite_direction": "Revise the seasonal cue in `snapshots/cycle_02/chapters/chapter_06.md:11` so the weather and light stay compatible with late November rather than December. Keep the frost and shortened-day texture if wanted, but remove or replace the explicit month label with wording that fits the continuity timeline.",
+      "acceptance_test": "PASS if `snapshots/cycle_02/chapters/chapter_06.md:11` no longer names December and the revised sitting-room setup reads as late-November-consistent with frost and short daylight; FAIL if the chapter still explicitly or implicitly places this event in December."
+    },
+    {
+      "finding_id": "CH06_ARCHIVE_TRIGGER_HANDOUT",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_02/chapters/chapter_06.md:135; snapshots/cycle_02/chapters/chapter_06.md:161; snapshots/cycle_02/chapters/chapter_06.md:203",
+      "problem": "The archive arrives as exactly the room and materials the plot needs, but the chapter never makes legible what changed today to grant access or why Draco's family had not already opened it under comparable conditions. Because the morning Mark breakthrough is the obvious changed variable yet the text never links the two, the discovery reads as partially handed out rather than fully earned.",
+      "rewrite_direction": "In `snapshots/cycle_02/chapters/chapter_06.md:133-171` and/or `snapshots/cycle_02/chapters/chapter_06.md:199-223`, add a concrete trigger or inference chain that explains why the archive appears now: tie the door's appearance to the morning's new paired state, to a house rule the characters can infer, or to a reason Lucius and Draco could not satisfy the threshold earlier. Keep mystery if you want, but make the local causality legible on the page.",
+      "acceptance_test": "PASS if a cold reader can answer from `snapshots/cycle_02/chapters/chapter_06.md:133-171` plus `snapshots/cycle_02/chapters/chapter_06.md:199-223` what changed today that made the archive open and why prior occupants had not already claimed it; FAIL if the archive still appears as a research jackpot with no named trigger beyond the chapter needing it."
+    },
+    {
+      "finding_id": "CH06_ENDING_THEMATIC_RESTATEMENT",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_02/chapters/chapter_06.md:223; snapshots/cycle_02/chapters/chapter_06.md:251; snapshots/cycle_02/chapters/chapter_06.md:253; snapshots/cycle_02/chapters/chapter_06.md:255",
+      "problem": "Once the chapter has already shown the paired constraint through the vanishing door and the work montage inside the archive, the narration keeps paraphrasing its meaning in abstract thesis language. Repeated certification of the same idea turns the close from pressure into explanation.",
+      "rewrite_direction": "Rework `snapshots/cycle_02/chapters/chapter_06.md:223` and `snapshots/cycle_02/chapters/chapter_06.md:251-255` so the coercive intimacy stays concrete. Either cut one layer of paraphrase or replace the final abstract sentences with a specific closing beat: a document detail, bodily adjustment, house reaction, or choice in action that carries the same unease without translating it into theme.",
+      "acceptance_test": "PASS if `snapshots/cycle_02/chapters/chapter_06.md:251-255` ends on a concrete image, action, or new pressure beat and no sentence in that closing span merely restates the already-demonstrated idea that the house forced them together; FAIL if the ending still closes on abstract summary of the chapter's meaning."
+    }
+  ],
+  "summary": "The Mark-examination half is strong: tactile, legible, and voice-true, and the dialogue remains distinct enough to pass. The chapter still fails overall because it contains a hard timeline contradiction, the archive reveal reads too much like a handout without a named trigger, and the ending explains its own meaning after the scene has already shown it."
+}

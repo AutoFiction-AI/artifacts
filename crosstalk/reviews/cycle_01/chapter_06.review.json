@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_06",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "PASS",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_06_dialogue_001",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:553; snapshots/cycle_01/chapters/chapter_06.md:671",
+      "problem": "Calibration-only example language from outline/style_bible.json leaks into the draft. Jet's \"I fixed the refrigerator.\" repeats the opening clause of his sample line, and Spike's \"Yeah ... I know\" reproduces Jet's calibration beat almost verbatim. The rule is explicit that example lines are never to appear on the page. It also blurs voice ownership by giving Spike a Jet-shaped acknowledgment at the chapter's key emotional beat.",
+      "rewrite_direction": "Replace the dialogue at snapshots/cycle_01/chapters/chapter_06.md:553 and snapshots/cycle_01/chapters/chapter_06.md:671 with fresh, scene-specific lines that preserve the same relational function without echoing any sample wording. Jet's line should keep the domestic/mechanical irritation of the receiver joke, and Spike's reply should register that he noticed the blanket gesture in a Spike-specific register rather than reusing Jet's pause-and-acknowledgment cadence.",
+      "acceptance_test": "Pass if a reread of snapshots/cycle_01/chapters/chapter_06.md:553 and snapshots/cycle_01/chapters/chapter_06.md:671 finds no verbatim or near-verbatim reuse of any style-bible example line, Jet still sounds like Jet in the refrigerator exchange, and Spike's blanket-scene acknowledgment reads as his own voice rather than a transplanted Jet line."
+    },
+    {
+      "finding_id": "chapter_06_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:39; snapshots/cycle_01/chapters/chapter_06.md:45; snapshots/cycle_01/chapters/chapter_06.md:303; snapshots/cycle_01/chapters/chapter_06.md:519; snapshots/cycle_01/chapters/chapter_06.md:649; snapshots/cycle_01/chapters/chapter_06.md:671",
+      "problem": "The chapter keeps cueing weight with the same micro-pause construction: \"for a minute,\" \"for half a second,\" \"for a moment,\" \"for a second,\" \"for one second,\" \"after a second.\" Used this often, the stopwatch phrasing stops feeling chosen and starts feeling like a default mechanism for signaling significance. The late emotional beats, especially around the blanket scene, lose some force because the chapter reaches for the same timing language again instead of rendering distinct physical or sensory residue.",
+      "rewrite_direction": "Rework the pause beats at snapshots/cycle_01/chapters/chapter_06.md:519, snapshots/cycle_01/chapters/chapter_06.md:649, and snapshots/cycle_01/chapters/chapter_06.md:671 first; those are the highest-pressure repetitions. Keep only the time markers that are doing irreplaceable work, and replace the others with scene-specific consequences such as changed breath, hand position, receiver movement, eye contact, or room sound so each beat earns its own texture. If snapshots/cycle_01/chapters/chapter_06.md:39 or snapshots/cycle_01/chapters/chapter_06.md:303 remains time-based, the later climactic beats should not use the same construction again.",
+      "acceptance_test": "Pass if, on a reread of snapshots/cycle_01/chapters/chapter_06.md:519, snapshots/cycle_01/chapters/chapter_06.md:649, and snapshots/cycle_01/chapters/chapter_06.md:671, no more than one of those three beats still relies on explicit second-counting, and each surviving emotional pause is marked by a different observable effect rather than interchangeable clock-time wording."
+    }
+  ],
+  "summary": "Strong aftermath chapter with clear continuity, lived-in crew dynamics, and no continuity or sanitization failures, but it does not pass review because calibration-only style-bible language leaks onto the page and the prose leans too often on the same second-counting pause template."
+}

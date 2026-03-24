@@ -1,0 +1,97 @@
+{
+  "chapter_id": "chapter_01",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_01_F001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:111; snapshots/cycle_01/chapters/chapter_01.md:163; snapshots/cycle_01/chapters/chapter_01.md:241",
+      "problem": "Sanitization drift at key racial-pressure beats: the chapter names threat dynamics (\"jokes and threats,\" \"race war\") but keeps the actual hostility abstract, which mutes the social violence driving character choices.",
+      "rewrite_direction": "Revise target spans at snapshots/cycle_01/chapters/chapter_01.md:111, snapshots/cycle_01/chapters/chapter_01.md:113, snapshots/cycle_01/chapters/chapter_01.md:163, snapshots/cycle_01/chapters/chapter_01.md:164, snapshots/cycle_01/chapters/chapter_01.md:241, and snapshots/cycle_01/chapters/chapter_01.md:243 to render one or two concrete threat utterances/actions (spoken, posted, or shouted) plus immediate material consequence for a named person on scene; avoid euphemistic summary labels.",
+      "acceptance_test": "PASS only if the revised passages at snapshots/cycle_01/chapters/chapter_01.md:111 and snapshots/cycle_01/chapters/chapter_01.md:163 include at least one explicit hostile statement/action (not summarized as \"threats\" or \"race war\"), and snapshots/cycle_01/chapters/chapter_01.md:241 shows a direct consequence (fear behavior, withdrawal, or confrontation) tied to that hostility. FAIL if conflict remains abstracted."
+    },
+    {
+      "finding_id": "chapter_01_F002",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:169; snapshots/cycle_01/chapters/chapter_01.md:171; snapshots/cycle_01/chapters/chapter_01.md:243",
+      "problem": "Timidity in escalation handling: critical midday pressure is compressed into procedural inventory language, so emotional and tactical consequence arrives as recap instead of lived scene.",
+      "rewrite_direction": "Expand the compressed transitions at snapshots/cycle_01/chapters/chapter_01.md:169, snapshots/cycle_01/chapters/chapter_01.md:171, snapshots/cycle_01/chapters/chapter_01.md:241, and snapshots/cycle_01/chapters/chapter_01.md:245 into in-room beats where resistance, fear, and command pressure collide in real time before the time-jump summary.",
+      "acceptance_test": "PASS only if revised text anchored at snapshots/cycle_01/chapters/chapter_01.md:169 and snapshots/cycle_01/chapters/chapter_01.md:241 contains one fully dramatized exchange (question, refusal/pushback, response) and ends by snapshots/cycle_01/chapters/chapter_01.md:245 with one immediate operational consequence visible on-page. FAIL if those spans remain mostly recap."
+    },
+    {
+      "finding_id": "chapter_01_F003",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:87; snapshots/cycle_01/chapters/chapter_01.md:183; snapshots/cycle_01/chapters/chapter_01.md:235",
+      "problem": "Recurring reaction formula appears 3 times (\"X gave a [adjective] laugh/half-smile\"), creating a detectable prose tic that flattens character texture.",
+      "rewrite_direction": "Rewrite reaction beats at snapshots/cycle_01/chapters/chapter_01.md:87, snapshots/cycle_01/chapters/chapter_01.md:183, and snapshots/cycle_01/chapters/chapter_01.md:235 with character-specific physical behavior and scene-linked gesture instead of repeating the same construction.",
+      "acceptance_test": "PASS only if none of the revised lines at snapshots/cycle_01/chapters/chapter_01.md:87, snapshots/cycle_01/chapters/chapter_01.md:183, and snapshots/cycle_01/chapters/chapter_01.md:235 uses the pattern \"gave a ... laugh/half-smile\" and each beat signals a different emotional mechanism. FAIL if the template still appears in 3+ instances."
+    },
+    {
+      "finding_id": "chapter_01_F004",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:247; snapshots/cycle_01/chapters/chapter_01.md:287",
+      "problem": "Interiority drought: the briefing sequence runs 10+ consecutive paragraphs without Lena's internal thought/sensation/self-assessment, so focalized prose slips toward screenplay transcript.",
+      "rewrite_direction": "Add brief interior beats between snapshots/cycle_01/chapters/chapter_01.md:247 and snapshots/cycle_01/chapters/chapter_01.md:287 (not clustered in one spot), tying Clay/Cora dialogue to Lena's bodily stress, memory trigger, and tactical self-check before snapshots/cycle_01/chapters/chapter_01.md:289.",
+      "acceptance_test": "PASS only if the revised section between snapshots/cycle_01/chapters/chapter_01.md:247 and snapshots/cycle_01/chapters/chapter_01.md:307 includes at least 3 distinct Lena-internal moments (one sensation, one memory/association, one strategic self-assessment) and no uninterrupted run longer than 6 paragraphs without focal interiority. FAIL if a 10+ paragraph interiority gap remains."
+    },
+    {
+      "finding_id": "chapter_01_F005",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:253; snapshots/cycle_01/chapters/chapter_01.md:263; snapshots/cycle_01/chapters/chapter_01.md:279; snapshots/cycle_01/chapters/chapter_01.md:301",
+      "problem": "High-pressure argument drifts into over-formal, uncontracted policy cadence, especially in Lena/Clay turns, weakening spoken realism against the style-bible default of high contraction use.",
+      "rewrite_direction": "Revise briefing exchange between snapshots/cycle_01/chapters/chapter_01.md:253 and snapshots/cycle_01/chapters/chapter_01.md:305 to preserve institutional conflict while increasing natural spoken rhythm: contractions in non-ceremonial lines, interruptions, and pressure-driven fragments.",
+      "acceptance_test": "PASS only if revised dialogue between snapshots/cycle_01/chapters/chapter_01.md:253 and snapshots/cycle_01/chapters/chapter_01.md:305 shows at least 2 interruption/overlap beats and each major speaker (Lena, Clay, Cora, Beau) uses contractions in spontaneous lines unless a line is explicitly formal performance. FAIL if the exchange still reads as memo prose."
+    },
+    {
+      "finding_id": "chapter_01_F006",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:253; snapshots/cycle_01/chapters/chapter_01.md:255; snapshots/cycle_01/chapters/chapter_01.md:263; snapshots/cycle_01/chapters/chapter_01.md:281",
+      "problem": "Idiolect separation softens in the briefing room: Lena, Clay, and Cora often share similar institutional syntax and abstract noun stacks, reducing voice distinctness under pressure.",
+      "rewrite_direction": "Differentiate voices between snapshots/cycle_01/chapters/chapter_01.md:253 and snapshots/cycle_01/chapters/chapter_01.md:283: keep Clay in control/optics framing, Cora in media-risk shorthand, and Lena in evidence-procedure logic that snaps into short declaratives when she commits.",
+      "acceptance_test": "PASS only if revised lines between snapshots/cycle_01/chapters/chapter_01.md:253 and snapshots/cycle_01/chapters/chapter_01.md:283 can be attributed by register without dialogue tags in at least 4 consecutive turns; Clay should foreground institutional control terms, Cora media handling terms, and Lena evidence-chain terms plus clipped pressure lines. FAIL if voices remain interchangeable."
+    },
+    {
+      "finding_id": "chapter_01_F007",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:315; snapshots/cycle_01/chapters/chapter_01.md:323; snapshots/cycle_01/chapters/chapter_01.md:339",
+      "problem": "Consequence underpriced at chapter close: after a major chain-of-command rupture, the ending lands resolve language but not a concrete enacted penalty that reshapes immediate story options.",
+      "rewrite_direction": "In the closing section between snapshots/cycle_01/chapters/chapter_01.md:315 and snapshots/cycle_01/chapters/chapter_01.md:339, add one specific administrative or operational repercussion from Clay's warning (documented restriction, access control, or resource constraint) that directly informs Lena's next-step note.",
+      "acceptance_test": "PASS only if the revised ending between snapshots/cycle_01/chapters/chapter_01.md:315 and snapshots/cycle_01/chapters/chapter_01.md:339 includes one explicit enacted consequence (actor + mechanism + immediate effect on Lena's work), and Lena's final written objective clearly responds to that new constraint. FAIL if ending remains determination-only."
+    },
+    {
+      "finding_id": "chapter_01_F008",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:253; snapshots/cycle_01/chapters/chapter_01.md:281; snapshots/cycle_01/chapters/chapter_01.md:303",
+      "problem": "Mechanical repetition from style-bible token reuse: governance abstractions (stability, confidence, institution/control) stack so explicitly that passages read like calibration markers instead of discovered scene language.",
+      "rewrite_direction": "Rework abstraction-heavy lines between snapshots/cycle_01/chapters/chapter_01.md:253 and snapshots/cycle_01/chapters/chapter_01.md:303 by replacing repeated governance nouns with concrete administrative acts, and remove or recast meta-label phrasing that explains the rhetoric instead of dramatizing it.",
+      "acceptance_test": "PASS only if revised text between snapshots/cycle_01/chapters/chapter_01.md:253 and snapshots/cycle_01/chapters/chapter_01.md:303 replaces at least two abstract governance tokens with concrete operational detail and avoids meta-rhetorical labeling like part-of-speech commentary. FAIL if lexical checklist feel remains."
+    }
+  ],
+  "summary": "Chapter 1 cleanly lands core plot and continuity beats (Voss murder, Isaiah Bell identification pressure, state-lab escalation) and maintains canonical past tense, but it fails review due to unresolved craft/dialogue/prose weaknesses: HIGH sanitization drift around racial threat rendering, timidity via recap over scene in key escalation beats, over-formal and partially interchangeable briefing-room voices, repeated prose formulas, and a long interiority drought that weakens focal immersion.",
+  "coverage_scene_ids": [
+    "scene_01_gin_discovery",
+    "scene_02_break_room_interviews",
+    "scene_03_sheriff_briefing"
+  ]
+}

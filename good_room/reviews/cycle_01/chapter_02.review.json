@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_02",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "PASS",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch02_dialogue_roy_example_line",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_01/chapters/chapter_02.md:87",
+      "problem": "Roy's refusal to watch the video reproduces a style-bible calibration line verbatim. That is forbidden leakage from the voice guide into the draft, and it makes the exchange feel imported rather than discovered on the page.",
+      "rewrite_direction": "Replace Roy's refusal in snapshots/cycle_01/chapters/chapter_02.md:85 and snapshots/cycle_01/chapters/chapter_02.md:87 with fresh wording that still conveys his genuine indifference to online video culture and his flat, economical cadence. Keep Roy non-performative and non-sage-like; the beat should sound like Roy speaking, not like a reused calibration sentence.",
+      "acceptance_test": "PASS if the revised exchange at snapshots/cycle_01/chapters/chapter_02.md:85 and snapshots/cycle_01/chapters/chapter_02.md:87 still makes Roy's indifference unmistakable, uses concise declarative speech, and does not reproduce any style-bible example line verbatim or near-verbatim; FAIL if a reader can directly trace the wording back to the calibration line."
+    },
+    {
+      "finding_id": "ch02_prose_expression_template",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_01/chapters/chapter_02.md:23; snapshots/cycle_01/chapters/chapter_02.md:63; snapshots/cycle_01/chapters/chapter_02.md:87",
+      "problem": "The chapter reuses the same descriptive chassis three times: a character is rendered through an 'expression/quality of a man or woman who...' construction. By the third use, the narration starts to feel templated rather than freshly observed, which is exactly the kind of recurring prose formula the constitution warns against.",
+      "rewrite_direction": "Rework the description beats at snapshots/cycle_01/chapters/chapter_02.md:23, snapshots/cycle_01/chapters/chapter_02.md:63, and snapshots/cycle_01/chapters/chapter_02.md:87 so at least two of them land through different concrete observations from Doug's POV: gesture, timing, posture, or another physical detail rather than the same abstract 'expression ... who...' formula. Preserve the social discomfort in the Greg and Janet beats and Roy's baffled indifference, but vary the sentence architecture.",
+      "acceptance_test": "PASS if, in the revised versions of snapshots/cycle_01/chapters/chapter_02.md:23, snapshots/cycle_01/chapters/chapter_02.md:63, and snapshots/cycle_01/chapters/chapter_02.md:87, no more than one beat still relies on the current 'expression/quality of a man or woman who...' template and each moment communicates distinct social pressure through concrete detail; FAIL if two or more of those beats still share the same descriptive mold."
+    }
+  ],
+  "summary": "The chapter's core craft holds: it delivers the required comic-escalation engine, contaminates Doug's office routine without losing clarity, keeps continuity and narrative tense intact, and lands the Gahanna-file ending as a concrete state shift rather than a summary statement. It fails award-level review because one major dialogue beat leaks a calibration line directly from the style bible and the prose shows a visible repeated descriptive template that flattens freshness at the sentence level. No continuity contradiction, sanitization drift, timidity, operational-legibility failure, or dialogue-formality drift rose to finding level in this pass."
+}

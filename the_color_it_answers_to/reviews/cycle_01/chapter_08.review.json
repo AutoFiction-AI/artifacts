@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_08",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH08-CRAFT-01",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_01/chapters/chapter_08.md:81; snapshots/cycle_01/chapters/chapter_08.md:125; snapshots/cycle_01/chapters/chapter_08.md:141; snapshots/cycle_01/chapters/chapter_08.md:221; snapshots/cycle_01/chapters/chapter_08.md:229",
+      "problem": "The chapter renders Silas's theft concretely, but the narration keeps stopping to restate his guilt in abstract moral terms after the scene has already supplied the evidence. That becomes a moral safety valve: public exposure, bodily shame, and exile are all present, yet the prose repeatedly reassures the reader that Silas already understands and condemns himself instead of letting consequence remain jagged on the page.",
+      "rewrite_direction": "Revise the self-indicting interior beats at snapshots/cycle_01/chapters/chapter_08.md:81, snapshots/cycle_01/chapters/chapter_08.md:125, snapshots/cycle_01/chapters/chapter_08.md:141, snapshots/cycle_01/chapters/chapter_08.md:221, and snapshots/cycle_01/chapters/chapter_08.md:229 so that only one decisive moment states Silas's recognition outright. In the other spots, replace abstract guilt gloss with concrete recall, bodily reaction, or observed social consequence. Keep the close-third shame, but stop paraphrasing the chapter's moral verdict once Inez and Aunt Vero have already spoken it aloud.",
+      "acceptance_test": "PASS if the revised confrontation and exile material between snapshots/cycle_01/chapters/chapter_08.md:125 and snapshots/cycle_01/chapters/chapter_08.md:143, and again between snapshots/cycle_01/chapters/chapter_08.md:221 and snapshots/cycle_01/chapters/chapter_08.md:230, no longer contains narrator-authored abstract verdicts about theft, understanding, or moral knowledge, while Silas's guilt remains unmistakable through remembered nursery detail, the public accusations, and his bodily shame. FAIL if the narration still explains the wrongdoing after the crowd has already named it."
+    },
+    {
+      "finding_id": "CH08-PROSE-01",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_01/chapters/chapter_08.md:43; snapshots/cycle_01/chapters/chapter_08.md:47; snapshots/cycle_01/chapters/chapter_08.md:133; snapshots/cycle_01/chapters/chapter_08.md:179; snapshots/cycle_01/chapters/chapter_08.md:199; snapshots/cycle_01/chapters/chapter_08.md:235",
+      "problem": "The chapter leans too often on the same negation-and-correction sentence shape to sharpen emotional turns. By the fifth and sixth reuse, shame, crowd pressure, and tonal modulation start arriving through one mechanical template rather than through freshly observed syntax, which flattens a scene that should feel volatile and various.",
+      "rewrite_direction": "Rebuild the pivots at snapshots/cycle_01/chapters/chapter_08.md:43, snapshots/cycle_01/chapters/chapter_08.md:47, snapshots/cycle_01/chapters/chapter_08.md:133, snapshots/cycle_01/chapters/chapter_08.md:179, snapshots/cycle_01/chapters/chapter_08.md:199, and snapshots/cycle_01/chapters/chapter_08.md:235 with more varied sentence architecture tied to specific image, motion, or character pressure. Keep at most one or two negation turns where the contrast is indispensable; elsewhere let the turn come from action, spatial detail, or a fresh metaphor instead of the repeated not-this-worse-that formula.",
+      "acceptance_test": "PASS if, after revision, no more than two of the targeted pivots between snapshots/cycle_01/chapters/chapter_08.md:43 and snapshots/cycle_01/chapters/chapter_08.md:49, snapshots/cycle_01/chapters/chapter_08.md:133 and snapshots/cycle_01/chapters/chapter_08.md:141, snapshots/cycle_01/chapters/chapter_08.md:179 and snapshots/cycle_01/chapters/chapter_08.md:181, snapshots/cycle_01/chapters/chapter_08.md:199 and snapshots/cycle_01/chapters/chapter_08.md:205, and snapshots/cycle_01/chapters/chapter_08.md:235 and snapshots/cycle_01/chapters/chapter_08.md:241 still rely on a negation/correction construction, and each remaining pivot reads with distinct rhythm and imagery. FAIL if three or more of those passages still turn on the same formula."
+    }
+  ],
+  "summary": "The chapter lands its public-exposure structure and keeps the speaking voices distinct, so booker and dialogue clear review. It still fails craft and prose, though, because the narration over-cushions Silas's guilt with repeated moral self-explanation and because a recurring negation/correction sentence formula starts flattening the chapter's strongest turns."
+}

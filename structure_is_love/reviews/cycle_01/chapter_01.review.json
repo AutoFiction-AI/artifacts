@@ -1,0 +1,77 @@
+{
+  "chapter_id": "chapter_01",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch01-booker-001",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:313; snapshots/cycle_01/chapters/chapter_01.md:323; snapshots/cycle_01/chapters/chapter_01.md:347; snapshots/cycle_01/chapters/chapter_01.md:367",
+      "problem": "The chapter's emotional peak (post-vomit completion and bus-stop contract pressure) is followed by an extended school block that diffuses end-of-chapter force and pre-spends social-fatigue conflict before the next chapter turn fully lands.",
+      "rewrite_direction": "Tighten or restructure the span at snapshots/cycle_01/chapters/chapter_01.md:313-365 so the chapter pivots faster from the bus-stop schedule beat (snapshots/cycle_01/chapters/chapter_01.md:305-311) into the signing climax (snapshots/cycle_01/chapters/chapter_01.md:377-399). Keep at most one school-isolation beat here, and reserve the rest of the school-pressure escalation for the next chapter boundary.",
+      "acceptance_test": "PASS if the replacement for snapshots/cycle_01/chapters/chapter_01.md:313-365 contains no more than one brief school vignette and does not include a full Zoe confrontation; FAIL if both the lunch text loop and the locker exchange remain at current scope before the signing scene."
+    },
+    {
+      "finding_id": "ch01-craft-001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:323; snapshots/cycle_01/chapters/chapter_01.md:337; snapshots/cycle_01/chapters/chapter_01.md:367",
+      "problem": "Sanitization drift via summary replacement: the text explicitly promises a 'second session' but cuts directly to evening home, softening the coercive training cost at the exact escalation point where on-page consequence is most needed.",
+      "rewrite_direction": "Between snapshots/cycle_01/chapters/chapter_01.md:323 and snapshots/cycle_01/chapters/chapter_01.md:367, either render the second session on-page with concrete drill/body detail and father-daughter power dynamics, or add an explicit in-scene cancellation with causal reason and emotional consequence.",
+      "acceptance_test": "PASS if the replacement span for snapshots/cycle_01/chapters/chapter_01.md:323-367 includes either (a) one concrete second-session beat with a named drill, a physical consequence, and a power move in dialogue, or (b) a clearly stated cancellation reason voiced by a character; FAIL if the narrative still jumps from lunch texts to evening home without either."
+    },
+    {
+      "finding_id": "ch01-prose-001",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:93; snapshots/cycle_01/chapters/chapter_01.md:219; snapshots/cycle_01/chapters/chapter_01.md:221; snapshots/cycle_01/chapters/chapter_01.md:223; snapshots/cycle_01/chapters/chapter_01.md:259",
+      "problem": "Elliptical clipped narration recurs in training passages ('Front-right drop. Recover.' / 'First sequence: ...'), producing telemetry-style prose and violating the constitution's ban on article/subject stripping for terseness.",
+      "rewrite_direction": "Rewrite the training fragments at snapshots/cycle_01/chapters/chapter_01.md:93, snapshots/cycle_01/chapters/chapter_01.md:219-223, and snapshots/cycle_01/chapters/chapter_01.md:259 into grammatically complete clauses while preserving pace through sentence length and punctuation rather than clipping.",
+      "acceptance_test": "PASS if each cited span uses complete clauses with explicit subjects and verbs and contains no stacked subjectless fragments; FAIL if two or more clipped fragments remain in any one targeted span."
+    },
+    {
+      "finding_id": "ch01-dialogue-001",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:179; snapshots/cycle_01/chapters/chapter_01.md:181; snapshots/cycle_01/chapters/chapter_01.md:183; snapshots/cycle_01/chapters/chapter_01.md:185; snapshots/cycle_01/chapters/chapter_01.md:231; snapshots/cycle_01/chapters/chapter_01.md:233; snapshots/cycle_01/chapters/chapter_01.md:235",
+      "problem": "Several high-pressure exchanges slip into transcript cadence with consecutive low-information replies, reducing leverage shifts and flattening character-specific voice under stress.",
+      "rewrite_direction": "Revise dialogue in snapshots/cycle_01/chapters/chapter_01.md:175-187 and snapshots/cycle_01/chapters/chapter_01.md:231-237 so brevity remains but at least one turn per exchange introduces motive, threat, vulnerability, or tactical reframing instead of pure call-and-response labels.",
+      "acceptance_test": "PASS if each targeted exchange has no more than one consecutive reply under four words and includes at least one line that clearly shifts power or reveals intent; FAIL if chains like the current injury Q/A remain functionally unchanged."
+    },
+    {
+      "finding_id": "ch01-prose-002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:43; snapshots/cycle_01/chapters/chapter_01.md:189; snapshots/cycle_01/chapters/chapter_01.md:383",
+      "problem": "A repeated anaphora template ('He does not ...' / 'She thinks of ...') appears in three-beat runs, then recurs later, creating a noticeable prose tic rather than fresh escalation.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_01.md:43, snapshots/cycle_01/chapters/chapter_01.md:189, and snapshots/cycle_01/chapters/chapter_01.md:383, keep at most one two-beat anaphora move; replace extra repeated stems with image, action, or syntactic contrast.",
+      "acceptance_test": "PASS if no targeted paragraph contains a three-beat identical sentence stem; FAIL if any targeted paragraph still repeats the same opening phrase three times."
+    },
+    {
+      "finding_id": "ch01-prose-003",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:39; snapshots/cycle_01/chapters/chapter_01.md:307; snapshots/cycle_01/chapters/chapter_01.md:369; snapshots/cycle_01/chapters/chapter_01.md:379",
+      "problem": "Mechanical reuse of schedule/counting diction extends beyond panic beats into reflective beats, flattening tonal variance and making the lexical stress tell feel over-literal.",
+      "rewrite_direction": "In snapshots/cycle_01/chapters/chapter_01.md:307-313 and snapshots/cycle_01/chapters/chapter_01.md:367-379, retain key schedule facts but rebalance paragraph focus toward relational stakes and embodied reaction, not list-format planning language in consecutive paragraphs.",
+      "acceptance_test": "PASS if each targeted span contains at least one paragraph with no checklist/timetable diction and clear interpersonal or interior movement; FAIL if both spans remain dominated by sequential schedule/list delivery."
+    }
+  ],
+  "summary": "Chapter 1 lands premise, causality, and emotional pressure strongly, but unresolved craft/prose issues remain: a key escalation is summarized off-page (sanitization risk), training narration repeatedly clips into prohibited telemetry fragments, dialogue occasionally slips into transcript cadence, and recurring sentence/list formulas reduce stylistic freshness.",
+  "coverage_scene_ids": [
+    "scene_predawn_apartment",
+    "scene_dawn_court_block",
+    "scene_school_and_contract"
+  ]
+}

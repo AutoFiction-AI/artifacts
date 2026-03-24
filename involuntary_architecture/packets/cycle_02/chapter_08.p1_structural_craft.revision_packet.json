@@ -1,0 +1,115 @@
+{
+  "acceptance_targets": [
+    "[CH08_PROSE_CLIPPED_FRAGMENT_TIC] Reading the revised spans at snapshots/cycle_02/chapters/chapter_08.md:15, snapshots/cycle_02/chapters/chapter_08.md:71, snapshots/cycle_02/chapters/chapter_08.md:87, snapshots/cycle_02/chapters/chapter_08.md:97, snapshots/cycle_02/chapters/chapter_08.md:115, snapshots/cycle_02/chapters/chapter_08.md:143, and snapshots/cycle_02/chapters/chapter_08.md:169, a reviewer can verify that none of the chapter's key intensity beats rely on isolated noun/adjective fragments such as \"School shirt. White cuff.\" or \"Then burning.\" PASS if those moments are rendered with grammatically complete sentences while preserving the same scene pressure; FAIL if the revised prose still depends on article-stripped or subject-dropped fragments as a recurring emphasis device.",
+    "[R-05] Ch 8's examination opening does not contain 'skull and serpent' or a full sleeve-rolling sequence. The scene begins in diagnostic action or emotional state.",
+    "[R-09] Ch 8 contains at most one instance of 'frost.' The December atmosphere is conveyed through varied sensory language rather than a single repeated noun.",
+    "[length_chapter_08_min_words] Chapter word count is >= 6000 while preserving heading contract."
+  ],
+  "chapter_id": "chapter_08",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Reading the revised spans at snapshots/cycle_02/chapters/chapter_08.md:15, snapshots/cycle_02/chapters/chapter_08.md:71, snapshots/cycle_02/chapters/chapter_08.md:87, snapshots/cycle_02/chapters/chapter_08.md:97, snapshots/cycle_02/chapters/chapter_08.md:115, snapshots/cycle_02/chapters/chapter_08.md:143, and snapshots/cycle_02/chapters/chapter_08.md:169, a reviewer can verify that none of the chapter's key intensity beats rely on isolated noun/adjective fragments such as \"School shirt. White cuff.\" or \"Then burning.\" PASS if those moments are rendered with grammatically complete sentences while preserving the same scene pressure; FAIL if the revised prose still depends on article-stripped or subject-dropped fragments as a recurring emphasis device.",
+      "chapter_id": "chapter_08",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_08.md:15; snapshots/cycle_02/chapters/chapter_08.md:71; snapshots/cycle_02/chapters/chapter_08.md:87; snapshots/cycle_02/chapters/chapter_08.md:97; snapshots/cycle_02/chapters/chapter_08.md:115; snapshots/cycle_02/chapters/chapter_08.md:143; snapshots/cycle_02/chapters/chapter_08.md:169",
+      "finding_id": "CH08_PROSE_CLIPPED_FRAGMENT_TIC",
+      "problem": "The chapter repeatedly reaches for intensity through clipped noun-phrase fragments and article-stripped beats (\"button, fold, forearm on the desk,\" \"School shirt. White cuff.,\" \"Then burning.,\" \"December. Twenty-five. Her hand gone.,\" \"Candle flame. Their breathing. Nothing else.,\" \"Imprint. Residue. Transmission.,\" \"Ordinary as weather.\"). The constitution explicitly forbids elliptical clipping in narration, and the recurrence makes the prose feel like a visible compression tic rather than controlled pressure.",
+      "rewrite_direction": "Revise the fragment-heavy passages at snapshots/cycle_02/chapters/chapter_08.md:15, snapshots/cycle_02/chapters/chapter_08.md:71, snapshots/cycle_02/chapters/chapter_08.md:87, snapshots/cycle_02/chapters/chapter_08.md:97, snapshots/cycle_02/chapters/chapter_08.md:115, snapshots/cycle_02/chapters/chapter_08.md:143, and snapshots/cycle_02/chapters/chapter_08.md:169 so the pressure comes from complete syntax, not omitted function words. Keep the beats short if needed, but give each sentence a subject/verb structure or fold the image into the adjacent sentence. The goal is not to make the passage longer; it is to preserve the same force without the constitution-forbidden clipped construction.",
+      "severity": "HIGH",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch 8's examination opening does not contain 'skull and serpent' or a full sleeve-rolling sequence. The scene begins in diagnostic action or emotional state.",
+      "chapter_id": "chapter_08",
+      "cycle": 2,
+      "evidence": "Ch 8 line 1614: 'Across from her, Draco rolled his left sleeve to the elbow.'; Ch 8 line 1616: 'Routine did not make the skull and serpent less ugly. It only made the sight of it survivable.'; earlier instances at Ch 3 line 363, Ch 4 line 542, Ch 6 line 1084, Ch 7 line 1491",
+      "finding_id": "R-05",
+      "problem": "Ch 8 (lines 1614-1616) is the 5th instance of the sleeve-roll-plus-Mark-description template. The text acknowledges the repetition ('Now it was routine') but still re-delivers the skull-and-serpent image. The acknowledgment of routine does not erase the reader's experience of redundancy.",
+      "rewrite_direction": "Let the Ch 8 examination open from the diagnostic work or emotional state rather than the sleeve-rolling gesture. If the routine must be referenced, one compressed clause is sufficient. Cut 'skull and serpent' \u2014 the reader has encountered it five times.",
+      "severity": "HIGH",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch 8 contains at most one instance of 'frost.' The December atmosphere is conveyed through varied sensory language rather than a single repeated noun.",
+      "chapter_id": "chapter_08",
+      "cycle": 2,
+      "evidence": "Ch 8 contains 4 of 14 total 'frost' instances in a 1707-word chapter (lines 1604, 1632, 1636, 1640+). Other frost-heavy chapters: Ch 6 (4 instances in 2929 words), Ch 7 (2), Ch 12 (2). Total manuscript: 14 instances across 6 chapters, concentrated in the Ch 6-8 band.",
+      "finding_id": "R-09",
+      "problem": "'Frost' appears 14 times across the manuscript, with 10 of those instances packed into the consecutive Ch 6\u20138 band. Ch 8 alone has 4 instances in 1707 words \u2014 one every ~430 words. Target: keep the strongest 4-6 instances manuscript-wide. The Ch 8 concentration turns a seasonal detail into an ambient refrain.",
+      "rewrite_direction": "In Ch 8, keep at most one frost reference (the opening 'frost still clung to the east window' at line 1604 is the strongest). Replace the remaining instances with varied sensory detail \u2014 cold light, condensation, thin air \u2014 or cut them. The reader knows it is December in a stone house.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Chapter word count is >= 6000 while preserving heading contract.",
+      "chapter_id": "chapter_08",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_08.md:1",
+      "finding_id": "length_chapter_08_min_words",
+      "problem": "Chapter is below projected_min_words (1713 < 6000).",
+      "rewrite_direction": "Add causally necessary scene material that strengthens the chapter engine, increases pressure, and lands the planned state shift without filler.",
+      "severity": "HIGH",
+      "source": "length_guardrail",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "1fc25f396aeed97d5cc30de4550dbeb5778c963d0a513a2c71bd5e085c62b7ee",
+  "must_fix_count": 4,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This novel is dark, intense, and emotionally devastating. The premise asks for a love story built inside trauma, in a house that may be manipulating its inhabitants, between two people marked by the same war in different ways. The creative risk is not in the darkness \u2014 it is in the tenderness. The hardest thing this novel must do is make the quiet moments as fully rendered as the painful ones, and make the desire as specific as the grief. Do not retreat from the body: the Mark examinations are physical events with physical consequences. The kiss is a physical event. The scar is a physical object on a real arm. Do not retreat from the doubt: the Manor's possible manipulation is not a problem to be solved in act three but a condition to be lived inside for the entire novel. Do not retreat from the ugliness of the drawing room scene or the specificity of what Bellatrix did. And do not retreat from the gentleness of the domestic scenes \u2014 tenderness between damaged people is harder to write than pain and should be given equal craft attention.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism is a craft failure equivalent to bad prose. When the scene calls for specificity \u2014 in pain, in desire, in shame, in violence, in grief \u2014 render it. The drawing room scene must feel like being in the room. The Mark examinations must feel like touch. The scar reveal must feel like exposure. Fading to implication at the moment of consequence wastes every scene that built to that moment.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for all characters except Narcissa. Uncontracted forms reserved for emphasis, deliberate formality, or Narcissa's default register. An unjustified uncontracted line in casual dialogue should be flagged and revised.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate high-intensity chapters with reflective or domestic ones. Vary scene count: single-scene chapters are allowed for compression; three-scene chapters should not all follow the same internal rhythm. Vary dialogue density \u2014 some chapters are conversation-heavy, others are predominantly interior. Never give two consecutive chapters the same structural shape. A chapter that builds to a confrontation should not be followed by another chapter that builds to a confrontation; a quiet aftermath chapter should not be followed by another quiet aftermath chapter. The rhythm of the book as a whole should feel like breathing \u2014 expansion and contraction, tension and release, pressure and air.",
+      "diction": "Literary but not ornate. The prose should feel crafted without feeling written \u2014 precise where precision matters, rough where roughness is true. Avoid both the polished-prestige-novel voice and the genre-fiction utility voice. The diction should sound like someone telling a story who is very good at telling stories but not performing the act of telling.",
+      "forbidden_drift_patterns": [
+        "The metaphor chain \u2014 a comparison that extends across three or more sentences and becomes the scene's organizing image rather than a local effect",
+        "Emotional stage directions \u2014 'she felt a surge of' or 'something tightened in his chest' or 'a cold knot formed' as substitutes for specific rendered emotion",
+        "The retrospective frame \u2014 'she would later realize' or 'he didn't know then' or other future-looking narrative commentary that drains present-tense urgency",
+        "Symmetrical sentence pairs \u2014 'She was X. He was Y.' as a repeated structural pattern, especially in dual-POV transitions",
+        "The ambient-magic-as-mood fallback \u2014 using the Manor's temperature or the Mark's ache to externalize emotional states that should be rendered through behavior and thought",
+        "Catalogue of sensory impressions used as scene-setting rather than scene-building \u2014 lists of what a room looks, smells, sounds like that delay rather than create dramatic pressure",
+        "The literary-fiction semicolon habit \u2014 using semicolons to connect observations that would land harder as separate sentences or would reveal more if left unconnected"
+      ],
+      "narrative_distance": "Close third person, alternating by chapter. Hermione's chapters are in her interiority \u2014 analytical, self-aware, faster. Draco's chapters are in his \u2014 more guarded, more sensory, the observations sharper and the self-knowledge harder-won. The POV character's biases should be legible without being announced.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Variable. Default to medium-length sentences with occasional long, accumulating ones and occasional short declaratives for force. Avoid sustained staccato. Avoid sustained flowing prose. The rhythm should shift with scene pressure \u2014 tighter under tension, more expansive in quiet and reflective passages.",
+      "sensory_bias": [
+        "tactile \u2014 the Mark examinations, the Manor's surfaces, temperature, skin contact, the physical experience of proximity",
+        "architectural and spatial \u2014 the Manor as sensory environment, corridors, rooms, light, the way space itself communicates",
+        "proprioceptive \u2014 body awareness, the resonance between them as a felt physical phenomenon, pain and pleasure as data"
+      ]
+    }
+  }
+}

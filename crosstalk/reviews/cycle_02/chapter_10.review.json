@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_10",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "PASS"
+  },
+  "findings": [
+    {
+      "finding_id": "ch10_dialogue_001",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_02/chapters/chapter_10.md:651",
+      "problem": "Ren's line at the chapter's key face-to-face beat reproduces a calibration-only example line from the style bible. That is a direct dialogue-register violation: the scene stops sounding lived and starts sounding assembled from reference material at the exact moment Ren needs original voice authority.",
+      "rewrite_direction": "Rewrite Ren's first personal observation in the courtyard exchange at snapshots/cycle_02/chapters/chapter_10.md:648, snapshots/cycle_02/chapters/chapter_10.md:651, and snapshots/cycle_02/chapters/chapter_10.md:683 so the beat stays the same but the wording is newly scene-specific. Keep it plain, pressure-shaped, and rooted in what Ren can concretely notice about Faye in that moment rather than in any style-bible sample phrasing.",
+      "acceptance_test": "Pass if the replacement for snapshots/cycle_02/chapters/chapter_10.md:651 does not repeat or closely echo any `example_lines` wording from `outline/style_bible.json`, and Ren's observation reads as live speech tied to the immediate courtyard encounter. Fail if the current sentence or a near-paraphrase remains."
+    },
+    {
+      "finding_id": "ch10_craft_001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_02/chapters/chapter_10.md:651; snapshots/cycle_02/chapters/chapter_10.md:677; snapshots/cycle_02/chapters/chapter_10.md:771; snapshots/cycle_02/chapters/chapter_10.md:777",
+      "problem": "The aftermath recap does not match the encounter the chapter actually rendered. In the courtyard, Ren says the copied 'looked more like you' line and 'You're looking at this backwards' before leaving. In the recap, Faye says Ren instead told her that Faye's mouth tightens on one side when angry and that Ayane had the same tell. Because that line never appears in the scene itself, the chapter creates an internal continuity break at its major turn and muddies what information the crew genuinely received.",
+      "rewrite_direction": "Make the confrontation and the recap agree. Revise either the courtyard exchange at snapshots/cycle_02/chapters/chapter_10.md:647, snapshots/cycle_02/chapters/chapter_10.md:651, snapshots/cycle_02/chapters/chapter_10.md:677, and snapshots/cycle_02/chapters/chapter_10.md:705 or the later recap at snapshots/cycle_02/chapters/chapter_10.md:771 and snapshots/cycle_02/chapters/chapter_10.md:777 so Faye reports only dialogue the reader already heard, or render the mouth-tight detail explicitly in the encounter before Ren exits.",
+      "acceptance_test": "Pass if a reader comparing the confrontation around snapshots/cycle_02/chapters/chapter_10.md:647 through snapshots/cycle_02/chapters/chapter_10.md:733 with Faye's recap at snapshots/cycle_02/chapters/chapter_10.md:771 and snapshots/cycle_02/chapters/chapter_10.md:777 can verify that every quoted claim about what Ren said is present on-page in the earlier scene and matches in substance. Fail if Faye still attributes a line or detail to Ren that the encounter never rendered."
+    }
+  ],
+  "summary": "The chapter lands its comic-escalation design, preserves close-third pressure, and keeps the prose concrete and unsentimental, so the prose lens passes. It still fails review overall because the climactic Ren/Faye exchange contains a forbidden style-bible echo and then the chapter misreports that exchange in its own aftermath, which breaks control at the exact scene that has to carry the chapter's authority."
+}

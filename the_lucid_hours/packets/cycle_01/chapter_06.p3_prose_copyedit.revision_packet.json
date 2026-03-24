@@ -1,0 +1,83 @@
+{
+  "acceptance_targets": [
+    "[chapter_06_prose_01] Each revised backstory block begins from a present-scene cue and returns to the ongoing scene before the next beat advances. A cold reader can tell why Marcus is thinking of each fact at that moment; if a targeted paragraph still reads as free-floating background summary with no sensory or situational anchor, this fails.",
+    "[chapter_06_prose_02] After Lola hangs up, the closing beat no longer stacks Rosa, Derek, Janine, Mrs. Patterson, and his mother into one summary movement. It should end on a limited set of concrete details and a readable physical consequence in the apartment, not on an inventory of prior scenes."
+  ],
+  "chapter_id": "chapter_06",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Each revised backstory block begins from a present-scene cue and returns to the ongoing scene before the next beat advances. A cold reader can tell why Marcus is thinking of each fact at that moment; if a targeted paragraph still reads as free-floating background summary with no sensory or situational anchor, this fails.",
+      "chapter_id": "chapter_06",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:61, snapshots/cycle_01/chapters/chapter_06.md:81, snapshots/cycle_01/chapters/chapter_06.md:107, snapshots/cycle_01/chapters/chapter_06.md:129, snapshots/cycle_01/chapters/chapter_06.md:141",
+      "finding_id": "chapter_06_prose_01",
+      "problem": "Close third repeatedly loosens into dossier prose. Rosa's, Derek's, and Janine's histories and then Marcus's own backstory arrive in long, tidy briefings that read more like authorial case summaries than Marcus-shaped perception. That drifts away from the style bible's promise that Marcus chapters feel kinetic, close, and filtered through his code-switching sensibility.",
+      "rewrite_direction": "Recast the exposition blocks at snapshots/cycle_01/chapters/chapter_06.md:61 through snapshots/cycle_01/chapters/chapter_06.md:64, snapshots/cycle_01/chapters/chapter_06.md:81 through snapshots/cycle_01/chapters/chapter_06.md:82, snapshots/cycle_01/chapters/chapter_06.md:107 through snapshots/cycle_01/chapters/chapter_06.md:111, and snapshots/cycle_01/chapters/chapter_06.md:129 through snapshots/cycle_01/chapters/chapter_06.md:141 through present-scene triggers and Marcus's idiom. The facts can remain, but they should arrive because Marcus notices something, remembers a specific conversation, or relives a concrete moment, not because the narrator pauses to brief the reader.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "After Lola hangs up, the closing beat no longer stacks Rosa, Derek, Janine, Mrs. Patterson, and his mother into one summary movement. It should end on a limited set of concrete details and a readable physical consequence in the apartment, not on an inventory of prior scenes.",
+      "chapter_id": "chapter_06",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:183, snapshots/cycle_01/chapters/chapter_06.md:187, snapshots/cycle_01/chapters/chapter_06.md:189",
+      "finding_id": "chapter_06_prose_02",
+      "problem": "The chapter already lands its emotional point in Lola's rice exchange and the apartment's physical pressure. The final paragraph then inventories Mrs. Patterson, his mother, Janine, Rosa, Derek, and Lola in one sweep, re-proving the chapter's meaning instead of finding a sharper final image or consequence. This is overstatement after arrival.",
+      "rewrite_direction": "Compress snapshots/cycle_01/chapters/chapter_06.md:187 through snapshots/cycle_01/chapters/chapter_06.md:189 so the ending turns on one dominant afterimage or a tightly controlled pair of afterimages and Marcus's immediate embodied response. Keep the apartment pressure and his failure to make rice, but stop using the closing beat as a recap ledger for the entire chapter.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "70643cd5536b572e0031f8c89daba4d7720b14938606b388fbc872b8a2911443",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on prose and copyedit finish: diction precision, rhythm control, sentence-level clarity, grammar, line-level polish without flattening style, and explicit aesthetic-risk audit (sanitization is the primary risk \u2014 do not soften or euphemize; push toward creative risk and specificity).",
+    "key": "p3_prose_copyedit",
+    "label": "prose/copyedit fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This is a dark comedy about elderly agency, institutional failure, and moral compromise in a setting most fiction treats as a punchline or a tragedy but never both. The risks the novel must take: render the comedy of octogenarians as pharmaceutical distributors without condescending to them or turning them into lovable rogues; make Carmen's escalating complicity fully legible without moralizing about it; show the bodily realities of aging \u2014 incontinence, tremor, cognitive decline, falls, the smell of a body that doesn't leave a building \u2014 with unsentimental specificity; render the economic desperation of both healthcare workers and uninsured buyers without turning either into social-issue abstractions; give the moral ambiguity of the ring genuine weight by refusing to resolve it into either 'they were wrong' or 'they were heroes.' The novel must trust readers to sit with complexity. When in doubt between too raw and too safe, choose raw. A nursing home that smells like potpourri is a nursing home written by someone who's never been in one.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism for bodily functions, aging, economic shame, institutional dysfunction, or the realities of nursing home care is a craft failure. The novel's comedy and humanity depend on rendering what polite fiction glosses over: what it smells like to clean someone who can't clean themselves, what it costs to count coins for a bus fare, what oxycodone sells for per milligram on the secondary market, what a concussion looks like on an 88-year-old skull, what it sounds like when someone with Parkinson's tries to hold a coffee cup steady, what Burt's dementia actually looks like up close. If the prose flinches from these specifics, the novel loses its authority.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the default for all dialogue. Uncontracted forms appear only for emphasis, character-specific formality (Agnes's low contraction level), Carmen under extreme stress reverting to formal speech, or deliberate register choices. In a contemporary New Jersey nursing home, stiff diction is the anomaly, not the norm.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate high-intensity scenes with reflective interiority. Vary scene count: single-scene chapters for maximum compression, three-scene chapters for range. Comic chapters (3, 9) should feel structurally different from quiet character studies (7, 8, 12, 15), which should feel different from crisis chapters (11, 16, 17). Follow a confrontation with a reflection, an escalation with a domestic scene, a comic set piece with an elegiac one. If two consecutive chapters share the same rhythm, one needs redesigning.",
+      "diction": "Grounded and specific. Drug names (oxycodone, alprazolam, hydroxychloroquine), nursing procedures (med pass, pill count, charting, fall assessment), body realities (incontinence, tremor, laceration, scalp bleed). No purple prose, no literary performance. The style should feel like someone who works with their hands is telling you the truth about what she saw.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person, varying by POV character. Carmen chapters are warm and sensory, anchored in the body and the immediate environment. Harry chapters are precise and calculating, with attention to numbers and angles. Agnes chapters are clinical and compressed. Lola chapters are winding and emotionally layered, with embedded memories. Earl chapters are spare and weighted, with silence doing as much work as language. Marcus chapters are kinetic, with physical movement and code-switching. Tammy chapters are flat and observational, her trained eye cataloguing what doesn't add up.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Varied by chapter and POV. Carmen chapters favor medium sentences with occasional long runs when she's anxious. Harry chapters are short and clipped. Comic set pieces (chapters 3 and 9) move between fast inventory and slow domestic beats. Quiet chapters (7, 12, 15) slow down and let space onto the page. No chapter should feel rhythmically identical to the one before it.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

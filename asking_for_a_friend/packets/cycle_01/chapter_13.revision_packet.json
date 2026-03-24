@@ -1,0 +1,116 @@
+{
+  "acceptance_targets": [
+    "[F13-CRAFT-01] The revised chapter contains no more than 4 instances of 'the way [X] [verbed]' used as a simile/comparison frame. No two instances appear within 20 lines of each other. The closing paragraph (snapshots/cycle_01/chapters/chapter_13.md:123) uses a different syntactic frame for its final image. Verify by scanning for 'the way' followed by a subject-verb construction throughout the chapter.",
+    "[F13-PROSE-01] The revised chapter contains no more than 5 instances of the negation-then-reframe pattern ('not [X] but [Y]' and variants). The dream paragraph at snapshots/cycle_01/chapters/chapter_13.md:105 contains no more than one instance. No two instances appear in consecutive paragraphs. Verify by scanning for sentences beginning with or containing 'not [noun/adjective/adverb] but [noun/adjective/adverb]' and for 'it was not [X] \u2014 it was [Y]' constructions.",
+    "[F13-PROSE-02] The revised chapter contains no more than 1 instance of generalizing second-person 'you' used to universalize from Simone's specific experience. The closing paragraph at snapshots/cycle_01/chapters/chapter_13.md:123 remains in close-third without shifting to 'you.' Verify by scanning for second-person 'you' used outside of dialogue, quoted text, or the 'you asked' in line 3 (which is scene-specific, not generalizing).",
+    "[HIGH-08-parents-town-ch13] Within Ch13: (1) The parents' town is consistently 'Teaneck.' (2) No reference to 'Bayonne' appears. FAIL if the town name is inconsistent.",
+    "[HIGH-10-rent-ch13] At line 2516: (1) Rent reads '$2,550,' matching Ch7's renewal rate. (2) The surplus calculation is internally consistent with the new rent figure. (3) The financial math still demonstrates impossibility of covering the back rent within the deadline. FAIL if rent is below $2,400 or if the surplus math is internally inconsistent."
+  ],
+  "chapter_id": "chapter_13",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "The revised chapter contains no more than 4 instances of 'the way [X] [verbed]' used as a simile/comparison frame. No two instances appear within 20 lines of each other. The closing paragraph (snapshots/cycle_01/chapters/chapter_13.md:123) uses a different syntactic frame for its final image. Verify by scanning for 'the way' followed by a subject-verb construction throughout the chapter.",
+      "chapter_id": "chapter_13",
+      "cycle": 1,
+      "evidence": "The simile construction 'the way [X] [verbed] [Y]' appears 10 times in 124 lines (~1 per 12 lines): (1) 'delivered this envelope the way a veterinarian hands you the pamphlet about euthanasia' (snapshots/cycle_01/chapters/chapter_13.md:3), (2) 'she had treated it the way she treated all information she wasn't ready to process' (snapshots/cycle_01/chapters/chapter_13.md:5), (3) 'looked at her bank account the way you look at a wound' (snapshots/cycle_01/chapters/chapter_13.md:13), (4) 'the way people peeled sunburns or pressed bruises' (snapshots/cycle_01/chapters/chapter_13.md:17), (5) 'Nora heard distress the way certain dogs heard frequencies' (snapshots/cycle_01/chapters/chapter_13.md:63), (6) 'used humor to manage vulnerability the same way Nora did' (snapshots/cycle_01/chapters/chapter_13.md:67), (7) 'the way a reflex arc responded to a tap on the knee' (snapshots/cycle_01/chapters/chapter_13.md:75), (8) 'the way she maintained naming conventions' (snapshots/cycle_01/chapters/chapter_13.md:99), (9) 'The way you looked at a stain on something you used to love' (snapshots/cycle_01/chapters/chapter_13.md:105), (10) 'the way you wait for test results you already know will be bad' (snapshots/cycle_01/chapters/chapter_13.md:123). Many of these are individually strong metaphors, but the structural repetition flattens them into a single rhythmic gesture the reader begins to anticipate by mid-chapter.",
+      "finding_id": "F13-CRAFT-01",
+      "problem": "The 'the way [X]' simile is this chapter's dominant comparison device, used at a frequency (10 instances) that converts a stylistic choice into a tic. By the third or fourth occurrence the reader hears the template rather than the metaphor. This is especially damaging because several of these comparisons are the chapter's best sentences \u2014 the euthanasia pamphlet (line 3), the wound (line 13), the reflex arc (line 75) \u2014 and their impact is diluted by structural repetition. The closing line of the chapter (line 123) uses the same construction, meaning the final image arrives in a frame the reader has already encountered nine times.",
+      "rewrite_direction": "Reduce 'the way [X]' simile constructions from 10 to no more than 4 across the chapter, preserving the strongest instances (candidates to keep: the euthanasia pamphlet at snapshots/cycle_01/chapters/chapter_13.md:3, the wound at snapshots/cycle_01/chapters/chapter_13.md:13, and the stain in the dream at snapshots/cycle_01/chapters/chapter_13.md:105). For cut instances, revision strategies include: (a) converting to direct metaphor without the 'the way' frame ('she treated it as quarantine' rather than 'the way she treated all information'), (b) subordinating the comparison into a dependent clause, (c) dropping the comparison entirely and letting the primary action carry meaning, (d) using a different syntactic frame (appositive, participial, or simple declarative). The closing line at snapshots/cycle_01/chapters/chapter_13.md:123 should use a different structure to avoid ending on the chapter's most overworked construction. Consider ending on the 'patient and disease' inversion without the additional 'doctor' and 'bill' extensions, which dilute the strong image.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "The revised chapter contains no more than 5 instances of the negation-then-reframe pattern ('not [X] but [Y]' and variants). The dream paragraph at snapshots/cycle_01/chapters/chapter_13.md:105 contains no more than one instance. No two instances appear in consecutive paragraphs. Verify by scanning for sentences beginning with or containing 'not [noun/adjective/adverb] but [noun/adjective/adverb]' and for 'it was not [X] \u2014 it was [Y]' constructions.",
+      "chapter_id": "chapter_13",
+      "cycle": 1,
+      "evidence": "The negation-then-reframe pattern 'not [X] but [Y]' (and variants: 'not [X], not [Y], but [Z]'; 'it was not [X] \u2014 it was [Y]') appears 9 times: (1) 'not with hope but with the clinical interest' (snapshots/cycle_01/chapters/chapter_13.md:13), (2) 'not to heal but to confirm the damage' (snapshots/cycle_01/chapters/chapter_13.md:17), (3) 'not as requests but as situations' (snapshots/cycle_01/chapters/chapter_13.md:27), (4) 'Not a single conversation \u2014 that would feel transactional' (snapshots/cycle_01/chapters/chapter_13.md:39), (5) 'Not performed reluctance, not the actorly version... Genuine reluctance' (snapshots/cycle_01/chapters/chapter_13.md:59), (6) 'not guilt, exactly, or not only guilt, but the specific discomfort' (snapshots/cycle_01/chapters/chapter_13.md:97), (7) 'it was not a reaction at all \u2014 it was a settling' (snapshots/cycle_01/chapters/chapter_13.md:105), (8) 'not with surprise, not even with disappointment' (snapshots/cycle_01/chapters/chapter_13.md:105), (9) 'not as a decision but as a vacation' (snapshots/cycle_01/chapters/chapter_13.md:113).",
+      "finding_id": "F13-PROSE-01",
+      "problem": "The negation-reframe is partially justified by Simone's analytical character voice \u2014 she defines things by ruling out what they are not. But at 9 instances, the pattern creates a rhythmic predictability where the reader learns to expect every emotional observation to arrive in a 'not this \u2014 that' frame. Instances (7) and (8) stack in the same paragraph (the dream sequence at line 105), concentrating the pattern at the chapter's most important emotional moment. The cumulative effect makes the prose sound like it has a single intellectual gesture for precision: negate, then correct. Simone's intelligence should manifest in more varied syntactic shapes.",
+      "rewrite_direction": "Reduce to no more than 5 instances across the chapter. Prioritize retaining instances where the negation carries genuine surprise \u2014 the dream sequence's 'it was not a reaction at all \u2014 it was a settling' (snapshots/cycle_01/chapters/chapter_13.md:105) earns its form because the correction ('a settling') is unexpected. Cut instances where the reframe is predictable from context: e.g., at snapshots/cycle_01/chapters/chapter_13.md:17, 'not to heal but to confirm' could become a direct statement of Simone's compulsion. At snapshots/cycle_01/chapters/chapter_13.md:27, 'not as requests but as situations' could be rewritten as a declarative that names the design pattern directly. In the dream paragraph (snapshots/cycle_01/chapters/chapter_13.md:105), keep one of the two stacked instances and revise the other into a different syntactic shape. At snapshots/cycle_01/chapters/chapter_13.md:113, 'not as a decision but as a vacation' is a strong construction \u2014 consider keeping it but only if the local density of other 'not X but Y' instances has been reduced.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "The revised chapter contains no more than 1 instance of generalizing second-person 'you' used to universalize from Simone's specific experience. The closing paragraph at snapshots/cycle_01/chapters/chapter_13.md:123 remains in close-third without shifting to 'you.' Verify by scanning for second-person 'you' used outside of dialogue, quoted text, or the 'you asked' in line 3 (which is scene-specific, not generalizing).",
+      "chapter_id": "chapter_13",
+      "cycle": 1,
+      "evidence": "The prose shifts from close-third into generalizing second-person 'you' 4 times: (1) 'the way you look at a wound you already know is infected' (snapshots/cycle_01/chapters/chapter_13.md:13), (2) 'The leg kicks. You can't help it.' (snapshots/cycle_01/chapters/chapter_13.md:75), (3) 'The way you looked at a stain on something you used to love' (snapshots/cycle_01/chapters/chapter_13.md:105), (4) 'the way you wait for test results you already know will be bad' (snapshots/cycle_01/chapters/chapter_13.md:123). Three of these four overlap with the 'the way' simile formula, creating a compound pattern: 'the way you [universal experience].'",
+      "finding_id": "F13-PROSE-02",
+      "problem": "Each instance breaks narrative distance by stepping out of Simone's specific consciousness into an essayistic address that invites the reader to generalize from her experience. One or two such moments can work as deliberate gear-shifts \u2014 the wound comparison at line 13 is effective because it establishes Simone's clinical self-observation early. But 4 instances (3 in the same syntactic frame) convert the device from a strategic move into a reflexive habit. The style bible specifies 'very close' third person that feels like 'the character's consciousness rendered in third person.' Generalizing 'you' pulls toward editorial distance. The final line's 'the way you wait for test results' is the most damaging instance because it moves the chapter's climactic close away from Simone's specific interiority into a universal aphorism.",
+      "rewrite_direction": "Retain no more than 1 generalizing 'you' in the chapter \u2014 the strongest candidate is either the wound comparison at snapshots/cycle_01/chapters/chapter_13.md:13 (which establishes Simone's clinical lens early and effectively) or the dream stain at snapshots/cycle_01/chapters/chapter_13.md:105 (which earns its distance-shift in a dream context). Convert the others to close-third: e.g., at snapshots/cycle_01/chapters/chapter_13.md:75, replace 'The leg kicks. You can't help it.' with Simone's own observation in her own idiom. At snapshots/cycle_01/chapters/chapter_13.md:123, rewrite the closing image to stay inside Simone's specific experience rather than reaching for universal address \u2014 her particular dread, not a generalized one.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Within Ch13: (1) The parents' town is consistently 'Teaneck.' (2) No reference to 'Bayonne' appears. FAIL if the town name is inconsistent.",
+      "chapter_id": "chapter_13",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2518",
+      "finding_id": "HIGH-08-parents-town-ch13",
+      "problem": "Line 2518 places Simone's parents in 'Teaneck.' Ch7 line 1252 says 'Bayonne.' If Ch7 corrects to 'Teaneck' per the above finding, this chapter is already consistent. Flagging to ensure cross-chapter awareness. No revision needed here if Ch7 corrects.",
+      "rewrite_direction": "No revision needed at line 2518 if Ch7 changes 'Bayonne' to 'Teaneck.' Verify that no other reference to the parents' location within Ch13 (lines 2500-2624) contradicts 'Teaneck.'",
+      "severity": "HIGH",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "At line 2516: (1) Rent reads '$2,550,' matching Ch7's renewal rate. (2) The surplus calculation is internally consistent with the new rent figure. (3) The financial math still demonstrates impossibility of covering the back rent within the deadline. FAIL if rent is below $2,400 or if the surplus math is internally inconsistent.",
+      "chapter_id": "chapter_13",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2516",
+      "finding_id": "HIGH-10-rent-ch13",
+      "problem": "Line 2516 states Simone's rent is '$2,100' in February. Ch7 line 1242 established that the lease was renewing at '$2,550 in January.' By February, the new rate should be in effect. The rent figure of $2,100 is lower than even the pre-renewal $2,400 (Ch7) and far below the renewal rate of $2,550. This undermines the financial pressure that drives the $15,000 ask \u2014 if rent is only $2,100, Simone's budget math improves by ~$450/month, weakening the eviction logic.",
+      "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:2516, change '$2,100' to '$2,550' to match Ch7's stated January renewal rate. Then verify the downstream math in line 2516: the passage calculates total debt, monthly take-home, minimums, rent, and surplus. With $2,550 rent (instead of $2,100), the monthly surplus drops by $450, making the financial crisis more acute \u2014 which strengthens the chapter's dramatic pressure. Recalculate: take-home $5,600 minus minimums $1,340 minus rent $2,550 minus expenses $1,200 = surplus of $510 \u2014 still not enough to clear $11,400 in 24 days, but the math needs to be internally consistent.",
+      "severity": "HIGH",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "eaea3665941005693e2654e48b7f4a76e0de5748de0d4dae8790f6ff4ba14a7d",
+  "must_fix_count": 5,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This novel must commit fully to its dark comedy register. The humor should be genuinely funny \u2014 not arch, not safe, not 'literary funny' where the reader smiles wryly. The darkness should be genuinely dark \u2014 the financial manipulation is theft, the emotional manipulation is a form of violence, and the sexual dimension of the AI relationship (intimate photos sent to a non-person, sexual conversations with an algorithm controlled by your best friend) is deeply violating. The novel should not flinch from the specific perversity of Simone reading Nora's intimate messages, of Simone helping Nora dress up for a man Simone invented, of Simone comforting Nora about a fight Simone scripted. These moments are the novel's payload. If they are rendered obliquely or summarized, the book fails. Equally, the genuine tenderness of the friendship \u2014 the years of real love underneath the betrayal \u2014 must be rendered with the same commitment. The reader should feel both the comedy and the horror simultaneously, not in alternation.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism is treated as a craft failure equivalent to a plot hole. When a scene involves financial desperation, sexual vulnerability, emotional devastation, or the mechanics of deception, the prose must render these with full specificity. 'She felt used' is never acceptable when you can show what being used feels and looks like in the body and in the specific details of the moment. The reader should not be protected from the characters' experiences.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm. Uncontracted forms reserved for emphasis, deliberate formality, or character-specific register choices. If a line reads stiffly, the first fix is to contract.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 2,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate between hot and quiet chapters. After a high-intensity scene (confrontation, discovery, sexual encounter), the next chapter should breathe \u2014 slow down, change the sensory environment, let the character do something ordinary. Vary scene counts: some chapters are a single sustained scene, others are three or four. Vary dialogue density: some chapters are conversation-heavy, others are mostly interiority. No two consecutive chapters should open the same way \u2014 if one opens in a location, the next should open in thought or in mid-conversation. The novel's middle section (chapters 8-13) should have more structural variety than the opening, which can afford to be more regular.",
+      "diction": "Contemporary, educated, specific. No genre-thriller diction. No prestige-novel stiffness. The language should feel like how smart, funny, self-aware women in their mid-thirties actually think and speak. Cultural references are allowed when organic. Brand names when they carry social information. The prose should be able to be funny without stepping outside the character's perspective to wink at the reader.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person \u2014 very close, almost inhabiting the POV character's thought patterns and verbal rhythms. The prose should feel like the character's consciousness rendered in third person, not an external narrator describing the character. When in Nora's sections, the prose has her warmth and her specific noticing. When in Simone's sections, the prose has her edge and her accounting.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Variable. Default to mid-length sentences with natural cadence. Use compression for emotional peaks and psychological precision. Use longer, more digressive rhythms for scenes of intimacy, humor, and daily texture. Avoid the trap of making every important moment a short sentence \u2014 sometimes the big thing lands better in a subordinate clause, almost hidden.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "acceptance_targets": [
+    "[ch09_dialogue_001] PASS if, in the revised cited lines, three unattributed lines (one each from Yoon, Bae, and guard) remain clearly attributable by syntax/word choice alone and at least two non-legal panic lines use contractions; FAIL if voices still read as interchangeable formal policy speech."
+  ],
+  "chapter_id": "chapter_09",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if, in the revised cited lines, three unattributed lines (one each from Yoon, Bae, and guard) remain clearly attributable by syntax/word choice alone and at least two non-legal panic lines use contractions; FAIL if voices still read as interchangeable formal policy speech.",
+      "chapter_id": "chapter_09",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_09.md:379; snapshots/cycle_02/chapters/chapter_09.md:383; snapshots/cycle_02/chapters/chapter_09.md:421; snapshots/cycle_02/chapters/chapter_09.md:449; snapshots/cycle_02/chapters/chapter_09.md:477",
+      "finding_id": "ch09_dialogue_001",
+      "problem": "Institutional antagonists converge into the same polished bureaucratic cadence under pressure, which blurs idiolect separation. Yoon, Bae, and the yard guard all land in similarly formal control-language, reducing dialogue realism and character distinctness in a panic sequence.",
+      "rewrite_direction": "Differentiate registers in snapshots/cycle_02/chapters/chapter_09.md:379, snapshots/cycle_02/chapters/chapter_09.md:383, snapshots/cycle_02/chapters/chapter_09.md:449, and snapshots/cycle_02/chapters/chapter_09.md:477 by giving each speaker distinct rhythm and lexical priorities (media-handler spin for Yoon, contractual precision for Bae, terse field-security slang for the guard), with contractions for non-ceremonial lines.",
+      "severity": "MEDIUM",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "be8bd731550dce5b9498e9faa2307a5140e078da760cbea5a546eccf05418c8b",
+  "must_fix_count": 1,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on dialogue realism and voice separation: idiolect fidelity, leverage shifts, pressure cadence, anti-transcript behavior, natural colloquial texture (contractions/interruptions/slang when character-true), and pressure-true profanity usage per aesthetic risk policy.",
+    "key": "p2_dialogue_idiolect_cadence",
+    "label": "dialogue/idiolect/cadence fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into uncomfortable specificity when stakes demand it: show coercion mechanics, sexual negotiation, grief rituals, and financial desperation at scene level. In edge cases, prefer precision over decorum; protect character dignity through perspective accuracy, not by omitting the hard material.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene requires bodily, economic, or moral consequence and the draft retreats into abstract phrasing, rewrite with concrete action, sensation, and decision impact before proceeding.",
+      "operational_resolution_rule": "When uncertain between tasteful distance and narrative truth, choose the version that preserves causal accountability and embodied consequence, then tune language for clarity rather than softness.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the baseline in spoken dialogue; uncontracted forms are reserved for deliberate emphasis, legal language, or character-specific formality.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate chapter structures deliberately: high-density dialogue vs interior reflection, multi-scene public collision vs two-scene intimate pressure, aftermath inventory vs anticipatory dread. Never let two consecutive chapters share the same pacing architecture or turn mechanism.",
+      "diction": "Contemporary, unsentimental literary diction that permits technical vocabulary, profanity, and class-marked speech without flattening idiolects.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third person centered on Seo Ina, with brief controlled widenings in public-event chapters.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Alternating pressure waves: compressed clauses in operational stress, longer breath-based lines in grief and reflection.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

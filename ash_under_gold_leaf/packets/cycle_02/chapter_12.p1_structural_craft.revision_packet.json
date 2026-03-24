@@ -1,0 +1,121 @@
+{
+  "acceptance_targets": [
+    "[CH12-BOOKER-001] Pass if, in the revised span corresponding to snapshots/cycle_02/chapters/chapter_12.md:291-351, a new fact or irreversible action appears within 8 dialogue turns after Gloria's line at :291, and no accusation pair with the same claim repeats more than once before the housing question. Fail otherwise.",
+    "[CH12-CRAFT-001] Pass if the revised passage at snapshots/cycle_02/chapters/chapter_12.md:487-513 shows (1) a specific external alcohol cue, (2) Marisol's bodily urge response, and (3) an explicit anti-relapse action that changes immediate options before boarding the bus. Fail if risk is only declared or summarized.",
+    "[CH12-CRAFT-002] Pass if the revised scene includes one concrete truthful statement to Leo about the conflict and one directly observable response from Leo that alters the scene's next actions. Fail if he is only moved offstage or soothed without consequence.",
+    "[FBK-003] PASS if chapter_12 contains an explicit, unambiguous Leo age anchor in the target span that supports forward continuity. FAIL if the span remains loose enough to permit the chapter_14 downgrade or introduces a conflicting age within chapter_12.",
+    "[FBK-008] PASS if snapshots/cycle_02/FINAL_NOVEL.md:4475-4478 conveys collapse/acceptance without using an 'instead said' suppression turn. FAIL if the suppression template remains."
+  ],
+  "chapter_id": "chapter_12",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if, in the revised span corresponding to snapshots/cycle_02/chapters/chapter_12.md:291-351, a new fact or irreversible action appears within 8 dialogue turns after Gloria's line at :291, and no accusation pair with the same claim repeats more than once before the housing question. Fail otherwise.",
+      "chapter_id": "chapter_12",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_12.md:291; snapshots/cycle_02/chapters/chapter_12.md:309; snapshots/cycle_02/chapters/chapter_12.md:327; snapshots/cycle_02/chapters/chapter_12.md:339",
+      "finding_id": "CH12-BOOKER-001",
+      "problem": "After Gloria's strongest causal reveal (benefits/immigration calculus), the confrontation loops through repeated accusation patterns before the next irreversible turn. The scene loses escalation pressure between the confession and the housing ultimatum.",
+      "rewrite_direction": "Tighten and re-sequence the debate in snapshots/cycle_02/chapters/chapter_12.md:291-351 so each exchange adds new leverage. Move Carina's housing challenge earlier (near snapshots/cycle_02/chapters/chapter_12.md:309-327) or add a new concrete consequence beat before it, rather than repeating abstract accusation lines.",
+      "severity": "MEDIUM",
+      "source": "booker",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if the revised passage at snapshots/cycle_02/chapters/chapter_12.md:487-513 shows (1) a specific external alcohol cue, (2) Marisol's bodily urge response, and (3) an explicit anti-relapse action that changes immediate options before boarding the bus. Fail if risk is only declared or summarized.",
+      "chapter_id": "chapter_12",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_12.md:397; snapshots/cycle_02/chapters/chapter_12.md:487; snapshots/cycle_02/chapters/chapter_12.md:507; snapshots/cycle_02/chapters/chapter_12.md:511",
+      "finding_id": "CH12-CRAFT-001",
+      "problem": "Sanitization drift at the relapse-risk apex: the prose names danger but retreats into summary/status language (`No drink`, `Facts sat still`, `She was not drunk`) instead of fully rendering temptation and counter-action in scene.",
+      "rewrite_direction": "Expand snapshots/cycle_02/chapters/chapter_12.md:487-513 (and, if needed, seed from :397-399) with one embodied craving beat and one concrete sobriety action in real time. Keep the economic stakes but replace aphoristic safety-valve statements with observable behavior and sensory consequence.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if the revised scene includes one concrete truthful statement to Leo about the conflict and one directly observable response from Leo that alters the scene's next actions. Fail if he is only moved offstage or soothed without consequence.",
+      "chapter_id": "chapter_12",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_12.md:99; snapshots/cycle_02/chapters/chapter_12.md:263; snapshots/cycle_02/chapters/chapter_12.md:265; snapshots/cycle_02/chapters/chapter_12.md:409; snapshots/cycle_02/chapters/chapter_12.md:413",
+      "finding_id": "CH12-CRAFT-002",
+      "problem": "Timidity around Leo's exposure: the chapter repeatedly raises child-hearing stakes, then deflects into logistics (bedroom/headphones/quick reassurance) without fully dramatizing immediate emotional fallout for him or the adults.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_12.md:263-273 and/or :409-425 to keep Leo present for one sharper consequence beat. Give one adult an age-appropriate truthful line and show how that truth changes Leo's immediate behavior, not just his location.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if chapter_12 contains an explicit, unambiguous Leo age anchor in the target span that supports forward continuity. FAIL if the span remains loose enough to permit the chapter_14 downgrade or introduces a conflicting age within chapter_12.",
+      "chapter_id": "chapter_12",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:4105",
+      "finding_id": "FBK-003",
+      "problem": "Cross-chapter character-state drift: chapter_12 defines Leo as nine, but chapter_14 later calls him eight, creating age regression across forward-moving time.",
+      "rewrite_direction": "Lock the age anchor in snapshots/cycle_02/FINAL_NOVEL.md:4105 (and nearby child references at 4177-4190) with an explicit continuity cue that survives later chapters (e.g., age + school-grade context), so later chapters cannot regress him by a year.",
+      "severity": "HIGH",
+      "source": "booker_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if snapshots/cycle_02/FINAL_NOVEL.md:4475-4478 conveys collapse/acceptance without using an 'instead said' suppression turn. FAIL if the suppression template remains.",
+      "chapter_id": "chapter_12",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:4475",
+      "finding_id": "FBK-008",
+      "problem": "Recurring full-book suppression template (4-chapter pattern) recurs here as 'Instead she said, \u201cFine.\u201d' right at the expulsion pivot, reducing local distinctness. Decision for this chapter: REPLACE.",
+      "rewrite_direction": "Rewrite snapshots/cycle_02/FINAL_NOVEL.md:4475-4478 with a chapter-specific acceptance beat grounded in body/task detail (packing, grip, breath, spatial action) rather than the generic 'Instead she said' release.",
+      "severity": "MEDIUM",
+      "source": "booker_global",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "4309b6726102268e83788cfcd3352deb0e4f9ffbde301b289e8364008bd772e5",
+  "must_fix_count": 5,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "When choosing between reputationally safe abstraction and specific discomfort, choose specificity. Render addiction, sexuality, deceit, class shame, and grief at lived scale. In edge cases, preserve character truth and causal accountability over reader comfort or institutional decorum.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene demands bodily, moral, or economic specificity, euphemistic phrasing is treated as a failed draft and must be rewritten with concrete stakes and observable consequence.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the spoken default; full forms appear only for emphasis, ritual language, or character-specific formal posture",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate scene density and pressure modes: pair high-conflict chapters with quiet domestic or documentary chapters, vary dialogue-to-interiority ratios, and prevent identical chapter skeletons in consecutive sequence.",
+      "diction": "contemporary literary diction with class-aware, borough-specific concreteness; avoid prestige-neutral workshop language",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third centered on Marisol, with rare brief distance expansions for institutional scenes",
+      "narrative_tense": "past tense",
+      "rhythm_target": "alternating tensile compression and reflective extension; line-level cadence should carry emotional pressure, not just information",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

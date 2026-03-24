@@ -1,0 +1,82 @@
+{
+  "acceptance_targets": [
+    "[chapter_04_F01_clipped_narration] Pass if the revised passages anchored at snapshots/cycle_02/chapters/chapter_04.md:9, snapshots/cycle_02/chapters/chapter_04.md:11, snapshots/cycle_02/chapters/chapter_04.md:77, snapshots/cycle_02/chapters/chapter_04.md:79, snapshots/cycle_02/chapters/chapter_04.md:287, and snapshots/cycle_02/chapters/chapter_04.md:289 contain no emphatic verbless narration fragments; fail if any beat equivalent to \"Too quick\" or \"Not cold. Not warm. Exact.\" remains as fragmentary sentence compression.",
+    "[chapter_04_F03_warning_without_cost] Pass if the revised ending anchored at snapshots/cycle_02/chapters/chapter_04.md:305, snapshots/cycle_02/chapters/chapter_04.md:319, snapshots/cycle_02/chapters/chapter_04.md:355, snapshots/cycle_02/chapters/chapter_04.md:385, snapshots/cycle_02/chapters/chapter_04.md:397, and snapshots/cycle_02/chapters/chapter_04.md:403 states the risk once and makes Mina's agreement to tomorrow night carry a concrete on-page cost or boundary; fail if the scene still ends with a largely frictionless \"Yeah\" after a second generalized reminder that secrecy is not privacy."
+  ],
+  "chapter_id": "chapter_04",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if the revised passages anchored at snapshots/cycle_02/chapters/chapter_04.md:9, snapshots/cycle_02/chapters/chapter_04.md:11, snapshots/cycle_02/chapters/chapter_04.md:77, snapshots/cycle_02/chapters/chapter_04.md:79, snapshots/cycle_02/chapters/chapter_04.md:287, and snapshots/cycle_02/chapters/chapter_04.md:289 contain no emphatic verbless narration fragments; fail if any beat equivalent to \"Too quick\" or \"Not cold. Not warm. Exact.\" remains as fragmentary sentence compression.",
+      "chapter_id": "chapter_04",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:11; snapshots/cycle_02/chapters/chapter_04.md:79; snapshots/cycle_02/chapters/chapter_04.md:289",
+      "finding_id": "chapter_04_F01_clipped_narration",
+      "problem": "The chapter repeatedly uses clipped, verbless narration for emphasis (\"Too quick.\" / \"Not annoyed. Measuring.\" / \"Not cold. Not warm. Exact.\"), but the constitution explicitly forbids elliptical clipping in narration. The compression reads like a stylistic shortcut rather than earned bluntness.",
+      "rewrite_direction": "Recast the fragment beats at snapshots/cycle_02/chapters/chapter_04.md:11, snapshots/cycle_02/chapters/chapter_04.md:79, and snapshots/cycle_02/chapters/chapter_04.md:289 into grammatically complete sentences that keep Mina's close-third pressure and Rhea's appraisal sharp without dropping subjects or auxiliaries. Check the immediately adjacent sentences in those exchanges for any similar fragment carryover and repair them in the same pass.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if the revised ending anchored at snapshots/cycle_02/chapters/chapter_04.md:305, snapshots/cycle_02/chapters/chapter_04.md:319, snapshots/cycle_02/chapters/chapter_04.md:355, snapshots/cycle_02/chapters/chapter_04.md:385, snapshots/cycle_02/chapters/chapter_04.md:397, and snapshots/cycle_02/chapters/chapter_04.md:403 states the risk once and makes Mina's agreement to tomorrow night carry a concrete on-page cost or boundary; fail if the scene still ends with a largely frictionless \"Yeah\" after a second generalized reminder that secrecy is not privacy.",
+      "chapter_id": "chapter_04",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:305; snapshots/cycle_02/chapters/chapter_04.md:319; snapshots/cycle_02/chapters/chapter_04.md:355; snapshots/cycle_02/chapters/chapter_04.md:385; snapshots/cycle_02/chapters/chapter_04.md:397; snapshots/cycle_02/chapters/chapter_04.md:403",
+      "finding_id": "chapter_04_F03_warning_without_cost",
+      "problem": "The breakfast scene names the camp's surveillance and power asymmetry clearly, but it spends multiple beats explaining the risk and then resolves into an immediate reinvitation for tomorrow night. That gives the chapter's warning more thematic clarity than practical cost, so the ending hands Mina forward motion without making her absorb a sharper consequence or boundary.",
+      "rewrite_direction": "In the breakfast confrontation and exit anchored at snapshots/cycle_02/chapters/chapter_04.md:305, snapshots/cycle_02/chapters/chapter_04.md:319, snapshots/cycle_02/chapters/chapter_04.md:355, snapshots/cycle_02/chapters/chapter_04.md:385, and snapshots/cycle_02/chapters/chapter_04.md:403, keep Rhea's warning and the tomorrow-night hook, but compress the duplicated explanation and attach the invitation to a concrete changed condition: a stated boundary, a new leverage point, or a specific risk Mina has to accept before she says yes.",
+      "severity": "MEDIUM",
+      "source": "booker",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "59fac60688033cbebe3bc15f1e13b984c3dbbe32e41b54ab293ae19693ca8354",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into the book's uncomfortable overlaps: desire entangled with access, wonder contaminated by biotech history, class need shaping erotic choices, and ecological harm rendered at creature scale. When a scene sits on the edge between restraint and retreat, keep the pressure visible through bodies, residue, changed behavior, or social cost. If an exact detail would make the material more embarrassing, more sensual, or more morally compromising, that is usually the detail to keep.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If sex, ecological damage, class shame, or moral compromise are softened into tasteful fog at the moment they should bite, the scene has failed and must be rewritten at higher specificity.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High - contractions are the norm in spoken dialogue; uncontracted forms should signal deliberate emphasis, institutional performance, or a character-specific formality shift.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate compression and dilation aggressively: single-scene nocturnes, comic paperwork chapters, quiet survey chapters, domestic weather chapters, confrontational set pieces, and aftermath chapters should sit beside each other without repeating the same rhythm two chapters in a row.",
+      "diction": "Concrete, coastal, and exact without brochure prettiness; scientific and bureaucratic terms may appear when the characters would think or speak through them, but they should stay embodied by consequence.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third centered on Mina Cordero, with free-indirect access tight enough to track bodily desire, shame, and observational obsession without collapsing into confessional summary",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Supple sentence music that can hold humidity, rot, and erotic charge, then cut hard into blunt compression at moments of humiliation, procedural friction, or ecological damage.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

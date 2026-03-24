@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_10",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_10_f01_gloria_style_bible_echo",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:27; snapshots/cycle_01/chapters/chapter_10.md:85; snapshots/cycle_01/chapters/chapter_10.md:189",
+      "problem": "Gloria's dialogue repeatedly echoes calibration-only example material from the style bible instead of merely matching her voice. The thin/eating beat, the 'first honest thing since childhood' judgment, and the Ruth-dancing-show dismissal all read like paraphrased example lines rather than fresh scene speech, which is explicitly forbidden.",
+      "rewrite_direction": "Rewrite Gloria's lines at snapshots/cycle_01/chapters/chapter_10.md:27, snapshots/cycle_01/chapters/chapter_10.md:69, snapshots/cycle_01/chapters/chapter_10.md:85, snapshots/cycle_01/chapters/chapter_10.md:189, and snapshots/cycle_01/chapters/chapter_10.md:193 so her bluntness comes from this visit's concrete particulars (the notepad, the shuffle at the wedding, the food on the tray, Doug's posture) rather than from paraphrases of the calibration examples. Keep her compression and severity, but change the setup, the image, and the sentence logic.",
+      "acceptance_test": "PASS if the revised dialogue at snapshots/cycle_01/chapters/chapter_10.md:27-31, snapshots/cycle_01/chapters/chapter_10.md:69-85, and snapshots/cycle_01/chapters/chapter_10.md:189-193 still sounds unmistakably like Gloria but cannot be mapped back to the style-bible examples by paraphrase; FAIL if a reader can still recognize the thin/eating line, the childhood-honesty line, or the Ruth/dancing-show beat as recycled calibration material."
+    },
+    {
+      "finding_id": "chapter_10_f02_lunch_interiority_drop",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:143; snapshots/cycle_01/chapters/chapter_10.md:145; snapshots/cycle_01/chapters/chapter_10.md:163; snapshots/cycle_01/chapters/chapter_10.md:189; snapshots/cycle_01/chapters/chapter_10.md:201",
+      "problem": "The lunch scene runs for too many consecutive paragraphs as pure external description and dialogue before Doug's interior life re-enters. The result is a briefly detached ensemble sketch when the chapter should stay close to Doug's pressure, embarrassment, and social positioning inside the room.",
+      "rewrite_direction": "Thread Doug back into the lunch section at snapshots/cycle_01/chapters/chapter_10.md:143, snapshots/cycle_01/chapters/chapter_10.md:163, snapshots/cycle_01/chapters/chapter_10.md:189, and before snapshots/cycle_01/chapters/chapter_10.md:201 with short interior beats that are specific to him: bodily discomfort, defensive factual noticing, memory pressure around the wedding, or self-assessment about being discussed in public by his mother's friends. Do not add generic reflection; add scene-pressure interiority.",
+      "acceptance_test": "PASS if a cold reader can point to at least two distinct Doug interior beats within snapshots/cycle_01/chapters/chapter_10.md:143-201, with one landing before Patricia's diagnosis and one landing before the dancing-show exchange resolves; FAIL if that stretch still reads as externally observed banter with Doug functioning mainly as a chair at the table."
+    },
+    {
+      "finding_id": "chapter_10_f03_closing_overexplains_inheritance",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:295; snapshots/cycle_01/chapters/chapter_10.md:331; snapshots/cycle_01/chapters/chapter_10.md:333",
+      "problem": "The chapter first lets Gloria refuse the lesson, then the final drive-home paragraph states the family-inheritance thesis outright. That undercuts the power of Gloria's refusal to explain and turns a scene that had earned implication into a cleaner thematic summary than it needs.",
+      "rewrite_direction": "Rework the closing at snapshots/cycle_01/chapters/chapter_10.md:331 and snapshots/cycle_01/chapters/chapter_10.md:333 so Doug's aftermath remains in concrete residue: exits, oil light, the Novaks' ham, Harold's hands on the wheel, Gloria reaching across the seat. Preserve the state shift, but remove or recast the explicit diagnostic sentence that names the inheritance pattern after Gloria has deliberately declined to do that work for him.",
+      "acceptance_test": "PASS if the revised ending at snapshots/cycle_01/chapters/chapter_10.md:331-333 leaves the inheritance legible through image, selection of detail, and changed pressure without directly stating that Doug has inherited his father's habit or translating Gloria's story into an abstract thesis; FAIL if the chapter still spells out the point Gloria refused to name."
+    },
+    {
+      "finding_id": "chapter_10_f04_way_construction_tic",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:9; snapshots/cycle_01/chapters/chapter_10.md:87; snapshots/cycle_01/chapters/chapter_10.md:163; snapshots/cycle_01/chapters/chapter_10.md:237; snapshots/cycle_01/chapters/chapter_10.md:261; snapshots/cycle_01/chapters/chapter_10.md:277; snapshots/cycle_01/chapters/chapter_10.md:287; snapshots/cycle_01/chapters/chapter_10.md:301; snapshots/cycle_01/chapters/chapter_10.md:331",
+      "problem": "The prose falls back on the same 'the way ...' explanatory hinge often enough to become a chapter-level tic. Once the pattern shows up this many times, individual observations stop feeling freshly made and start arriving in the same sentence shape.",
+      "rewrite_direction": "Recast the sentences at snapshots/cycle_01/chapters/chapter_10.md:9, snapshots/cycle_01/chapters/chapter_10.md:87, snapshots/cycle_01/chapters/chapter_10.md:163, snapshots/cycle_01/chapters/chapter_10.md:237, snapshots/cycle_01/chapters/chapter_10.md:261, snapshots/cycle_01/chapters/chapter_10.md:277, snapshots/cycle_01/chapters/chapter_10.md:287, snapshots/cycle_01/chapters/chapter_10.md:301, and snapshots/cycle_01/chapters/chapter_10.md:331 so only the strongest one or two uses survive. Keep the underlying observations, but vary the grammar and let some details land without the repeated comparative scaffold.",
+      "acceptance_test": "PASS if the revised chapter retains the concrete observations in the targeted passages but no more than two 'the way ...' constructions remain across the chapter, and the remaining uses perform distinct work rather than the same explanatory move; FAIL if the chapter still defaults to that sentence pattern as a connective reflex."
+    }
+  ],
+  "summary": "This chapter has real force in Gloria's blunt tenderness and in the Maple Glen social texture, but it does not clear pass level. The review fails on a high-severity dialogue problem because Gloria's lines reuse calibration-only style-bible material, and it fails on craft/prose because the lunch scene drops Doug's interiority for too long, the ending overstates an inheritance thesis Gloria had more powerfully left implicit, and the chapter leans too often on the same 'the way ...' sentence construction."
+}

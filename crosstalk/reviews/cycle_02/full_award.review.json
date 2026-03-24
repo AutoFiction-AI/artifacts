@@ -1,0 +1,124 @@
+{
+  "cycle": 2,
+  "verdict": "FAIL",
+  "summary": "FAIL. The snapshot has real award-level control in its own mode: past-tense narration stays consistent across all 18 chapters, the comedy-dark engine remains unsanitized, character contraction/register mostly tracks the style bible, and I did not find a HIGH continuity contradiction against the cycle sheet. It still falls short of shortlist readiness because chapter_10 contains a direct style-bible example-line leak and an over-rigged trap collapse, chapter_11's key confrontation slides into thesis-forward dialogue, and a stillness/flatness reaction marker recurs across 10 chapters often enough to read as default diction rather than chosen motif.",
+  "findings": [
+    {
+      "finding_id": "award_001",
+      "severity": "HIGH",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:5918",
+      "problem": "Ren's line at 5918 reuses a style-bible calibration/example line almost verbatim. That is a direct voice leak from the reference material into the manuscript, and because the style bible explicitly treats example lines as non-transferable, the beat reads as imported scaffolding rather than discovered dialogue.",
+      "rewrite_direction": "Rewrite the exchange in `snapshots/cycle_02/FINAL_NOVEL.md:5914`-`snapshots/cycle_02/FINAL_NOVEL.md:5920` so Ren communicates the resemblance without using the bible phrasing. Keep the dramatic job of the beat: Ren notices the resemblance after glancing at Faye's collarbone, and the line should still pivot Faye into the pronoun shock at `snapshots/cycle_02/FINAL_NOVEL.md:5920`, but it needs chapter-specific diction, rhythm, and pressure.",
+      "acceptance_test": "Pass if a cold read of `snapshots/cycle_02/FINAL_NOVEL.md:5914`-`snapshots/cycle_02/FINAL_NOVEL.md:5920` no longer contains the style-bible wording or a near-paraphrase, while still making it clear that Ren recognizes resemblance before Faye says `She stole my name.` Fail if the revised line still reads like a lifted calibration sentence."
+    },
+    {
+      "finding_id": "award_002",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:5460",
+      "problem": "The chapter_10 trap collapse is overdetermined by stacked interruptions. Grosz publicly blows Jet's alias, Tamsin pins Faye in the card room exactly as Ren passes outside, and the roof cat trips security before Spike can cover the sighting. Each beat is individually playable, but in sequence they start to feel author-stacked, so the miss reads as engineered frustration rather than inevitable local consequence.",
+      "rewrite_direction": "Rework the failure chain across `snapshots/cycle_02/FINAL_NOVEL.md:5398`-`snapshots/cycle_02/FINAL_NOVEL.md:5480`, `snapshots/cycle_02/FINAL_NOVEL.md:5560`-`snapshots/cycle_02/FINAL_NOVEL.md:5666`, and `snapshots/cycle_02/FINAL_NOVEL.md:5714`-`snapshots/cycle_02/FINAL_NOVEL.md:5828`. Either consolidate the scene around one primary failure mode and one secondary complication, or pre-seed Tamsin's scrutiny and the roof sensor/cat problem earlier so the later obstruction feels inevitable rather than newly invented at the exact moment Ren appears.",
+      "acceptance_test": "Pass if, reading `snapshots/cycle_02/FINAL_NOVEL.md:5398`-`snapshots/cycle_02/FINAL_NOVEL.md:5828`, a cold reader can answer 'why did they miss Ren right then?' with one dominant cause and at most one clearly seeded secondary complication. Fail if the scene still depends on three separate interruptions clicking into place at the moment of discovery."
+    },
+    {
+      "finding_id": "award_003",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:6477",
+      "problem": "At the emotional apex, the cabin argument converts lived grievance into polished diagnosis. Faye's long accounting speech, the line about them 'doing accounting,' and the later formulation that the ship 'runs on not asking' are intellectually sharp but too composed for the pressure in the room, so the scene starts sounding written-about rather than spoken-through.",
+      "rewrite_direction": "Roughen the confrontation in `snapshots/cycle_02/FINAL_NOVEL.md:6439`-`snapshots/cycle_02/FINAL_NOVEL.md:6477` and `snapshots/cycle_02/FINAL_NOVEL.md:6593`-`snapshots/cycle_02/FINAL_NOVEL.md:6607`. Preserve the accusations, but break the speeches with interruption, failed starts, mishearing, and physical business; let part of the indictment arrive through what Jet and Spike cannot answer cleanly rather than through quotable thesis lines.",
+      "acceptance_test": "Pass if a cold reader can still recover Faye's grievance, Jet's defensiveness, and Spike's evasion from `snapshots/cycle_02/FINAL_NOVEL.md:6439`-`snapshots/cycle_02/FINAL_NOVEL.md:6477` and `snapshots/cycle_02/FINAL_NOVEL.md:6593`-`snapshots/cycle_02/FINAL_NOVEL.md:6607`, but no one in those spans gets to summarize the scene in polished maxim-like language. Fail if the revised passage still sounds built around quotable diagnosis instead of pressured speech."
+    },
+    {
+      "finding_id": "award_004",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:305",
+      "problem": "Full-book pattern: a stillness/flatness reaction marker recurs in 10 chapters (`chapter_01`, `chapter_02`, `chapter_05`, `chapter_08`, `chapter_09`, `chapter_10`, `chapter_11`, `chapter_14`, `chapter_17`, `chapter_18`). Here `Ed had gone still again` is functional but generic, so the opening alarm beat starts the pattern instead of establishing a one-off choice.",
+      "rewrite_direction": "Replace the tag at `snapshots/cycle_02/FINAL_NOVEL.md:305` within `snapshots/cycle_02/FINAL_NOVEL.md:303`-`snapshots/cycle_02/FINAL_NOVEL.md:307` with a more specific Ed behavior keyed to this detection moment: a chatter cutoff, a head-angle change, a data-scrape tic, or another observable that belongs to Ed rather than to the book's reusable affect vocabulary.",
+      "acceptance_test": "Pass if `snapshots/cycle_02/FINAL_NOVEL.md:303`-`snapshots/cycle_02/FINAL_NOVEL.md:307` makes Ed's instant detection legible without relying on `gone still`, `went still`, or `gone flat` language, and the substitute cue feels peculiar to Ed. Fail if the beat still resolves through generic stillness shorthand."
+    },
+    {
+      "finding_id": "award_005",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:874",
+      "problem": "Full-book pattern: the novel repeatedly reaches for stillness/flatness as its default reaction marker across 10 chapters. This chapter's ladder beat is one of the two strongest uses, but it still needs to be explicitly designated the keeper so other chapters can do the replacement work.",
+      "rewrite_direction": "KEEP the basic move at `snapshots/cycle_02/FINAL_NOVEL.md:874`-`snapshots/cycle_02/FINAL_NOVEL.md:876` if you want one retained stillness cue in the finished book. If you touch the passage, preserve the ladder posture and the immediate syndicate-recognition chill that make this instance specific, and do not add another stillness/flatness tag nearby.",
+      "acceptance_test": "Pass if `snapshots/cycle_02/FINAL_NOVEL.md:872`-`snapshots/cycle_02/FINAL_NOVEL.md:876` either stays as the retained specific instance or is sharpened further without multiplying similar shorthand elsewhere in the beat. Fail if the chapter adds another generic stillness/flatness cue or rewrites this into flatter stock diction."
+    },
+    {
+      "finding_id": "award_006",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:2471",
+      "problem": "Full-book pattern: stillness/flatness reaction shorthand recurs across 10 chapters, and this chapter contributes the phrase `her voice had gone flat`. Because the line names the affect instead of dramatizing Faye's embarrassment through behavior or cadence, it reads like reusable template diction.",
+      "rewrite_direction": "Replace the flattening tag in `snapshots/cycle_02/FINAL_NOVEL.md:2471` within `snapshots/cycle_02/FINAL_NOVEL.md:2469`-`snapshots/cycle_02/FINAL_NOVEL.md:2473`. Let the embarrassment register through what Faye does to the radio silence, how fast she answers, or how she throws the line back at Jet, instead of labeling the voice as flat.",
+      "acceptance_test": "Pass if `snapshots/cycle_02/FINAL_NOVEL.md:2469`-`snapshots/cycle_02/FINAL_NOVEL.md:2473` now conveys Faye's embarrassed defensiveness through action or speech rhythm rather than `gone flat` language. Fail if the revised beat still reduces to a flattening/stillness label."
+    },
+    {
+      "finding_id": "award_007",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:4279",
+      "problem": "Full-book pattern: stillness/flatness reaction shorthand recurs across 10 chapters, and this chapter contributes `went still enough`. The ring stopping is already a good local detail, so the generic stillness phrase is doing redundant work and keeps the pattern alive.",
+      "rewrite_direction": "Revise `snapshots/cycle_02/FINAL_NOVEL.md:4279` within `snapshots/cycle_02/FINAL_NOVEL.md:4277`-`snapshots/cycle_02/FINAL_NOVEL.md:4281` so Hector's response is carried by the blue-ink note and the halted ring movement rather than by `went still`. Keep the physical business; swap out the stock label.",
+      "acceptance_test": "Pass if `snapshots/cycle_02/FINAL_NOVEL.md:4277`-`snapshots/cycle_02/FINAL_NOVEL.md:4281` no longer uses stillness/flatness shorthand and Hector's reaction is instead legible from the ring, the note, and the line that follows. Fail if the revised sentence still leans on generic stillness vocabulary."
+    },
+    {
+      "finding_id": "award_008",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:4795",
+      "problem": "Full-book pattern: the novel repeatedly reaches for stillness/flatness across 10 chapters. This Ed-observed Jet beat is the second keeper candidate because the viewpoint-specific phrasing makes it more charactered than most of the other uses.",
+      "rewrite_direction": "KEEP the beat at `snapshots/cycle_02/FINAL_NOVEL.md:4795`-`snapshots/cycle_02/FINAL_NOVEL.md:4799` if you want a second retained instance after chapter_02. If you revise it, keep the Ed-filtered humor and the concrete hand/finger follow-through, and do not add another generic stillness/flatness cue elsewhere in the immediate passage.",
+      "acceptance_test": "Pass if `snapshots/cycle_02/FINAL_NOVEL.md:4793`-`snapshots/cycle_02/FINAL_NOVEL.md:4799` still reads as an Ed-specific observation rather than generic reaction shorthand, or is sharpened further without flattening into stock diction. Fail if the chapter adds another similar shorthand cue nearby or rewrites this moment into something blander."
+    },
+    {
+      "finding_id": "award_009",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:5249",
+      "problem": "Full-book pattern: stillness/flatness reaction shorthand recurs across 10 chapters, and this chapter uses it three times (`snapshots/cycle_02/FINAL_NOVEL.md:5249`, `snapshots/cycle_02/FINAL_NOVEL.md:5402`, `snapshots/cycle_02/FINAL_NOVEL.md:6046`). The accumulation makes the chapter's turns feel drafted from one affect template.",
+      "rewrite_direction": "Replace at least two, preferably all three, of the repeated stillness beats at `snapshots/cycle_02/FINAL_NOVEL.md:5249`-`snapshots/cycle_02/FINAL_NOVEL.md:5251`, `snapshots/cycle_02/FINAL_NOVEL.md:5400`-`snapshots/cycle_02/FINAL_NOVEL.md:5404`, and `snapshots/cycle_02/FINAL_NOVEL.md:6044`-`snapshots/cycle_02/FINAL_NOVEL.md:6048`. Differentiate the room hush, Jet's alias-recognition reflex, and the courtyard revelation with distinct sensory or social reactions rather than the same stillness vocabulary.",
+      "acceptance_test": "Pass if those three spans now land as three different reactions and no stillness/flatness phrasing repeats across them. Fail if chapter_10 still uses the same reaction shorthand for multiple major turns."
+    },
+    {
+      "finding_id": "award_010",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:6343",
+      "problem": "Full-book pattern: stillness/flatness reaction shorthand recurs across 10 chapters, and this chapter adds `He had gone still` at the start of a high-pressure exchange. Because chapter_11 already leans toward over-composed dialogue, the generic stillness tag compounds the sense of pre-shaped dramatic writing.",
+      "rewrite_direction": "Replace the tag at `snapshots/cycle_02/FINAL_NOVEL.md:6343` within `snapshots/cycle_02/FINAL_NOVEL.md:6341`-`snapshots/cycle_02/FINAL_NOVEL.md:6345` with a more specific sign of Spike's contained threat or withdrawal. The replacement should sharpen the blade-in-the-room feeling without using `went still` / `gone still` / `gone flat` language.",
+      "acceptance_test": "Pass if `snapshots/cycle_02/FINAL_NOVEL.md:6341`-`snapshots/cycle_02/FINAL_NOVEL.md:6345` now conveys Spike's danger through a concrete posture, gaze, hand, or silence cue rather than a stock stillness label. Fail if the beat still defaults to generic flattening/stillness diction."
+    },
+    {
+      "finding_id": "award_011",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:7954",
+      "problem": "Full-book pattern: stillness/flatness reaction shorthand recurs across 10 chapters, and this chapter contributes `Her mouth had gone flat`. The surrounding image work is already doing enough that the flatness tag reads like the book's habitual affect stamp rather than a necessary local choice.",
+      "rewrite_direction": "Revise `snapshots/cycle_02/FINAL_NOVEL.md:7954` within `snapshots/cycle_02/FINAL_NOVEL.md:7952`-`snapshots/cycle_02/FINAL_NOVEL.md:7956` so Faye's response is carried by the erased paint sharpness, distance from Jet, or a more singular facial/physical cue instead of `gone flat` language.",
+      "acceptance_test": "Pass if `snapshots/cycle_02/FINAL_NOVEL.md:7952`-`snapshots/cycle_02/FINAL_NOVEL.md:7956` still shows Faye stripped of performative edge, but no longer uses flatness/stillness shorthand to do it. Fail if the revised line still leans on the same default flattening vocabulary."
+    },
+    {
+      "finding_id": "award_012",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:9823",
+      "problem": "Full-book pattern: stillness/flatness reaction shorthand recurs across 10 chapters, and this chapter's `Her hands went still` extends the same book-wide habit into a confession scene that would benefit from more singular physical detail.",
+      "rewrite_direction": "Replace the stillness tag in `snapshots/cycle_02/FINAL_NOVEL.md:9823` within `snapshots/cycle_02/FINAL_NOVEL.md:9821`-`snapshots/cycle_02/FINAL_NOVEL.md:9824`. Use the rag, the bearing, or Ren's interrupted sentence to show the break in motion more specifically than `went still`.",
+      "acceptance_test": "Pass if `snapshots/cycle_02/FINAL_NOVEL.md:9821`-`snapshots/cycle_02/FINAL_NOVEL.md:9824` now marks Ren's hesitation through a concrete interaction with the rag, bearing, or unfinished syntax rather than generic stillness phrasing. Fail if the beat still resolves through the same shorthand."
+    },
+    {
+      "finding_id": "award_013",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_18",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:10602",
+      "problem": "Full-book pattern: stillness/flatness reaction shorthand recurs across 10 chapters, and the final page returns to `went still again`. Because the close is trying to land on earned domestic quiet, ending on the repeated shorthand makes the book's final hush feel recycled rather than newly observed.",
+      "rewrite_direction": "Rewrite the closing sentence at `snapshots/cycle_02/FINAL_NOVEL.md:10602` within `snapshots/cycle_02/FINAL_NOVEL.md:10600`-`snapshots/cycle_02/FINAL_NOVEL.md:10602` so Spike's settling and the ship's quiet are rendered through a more specific motion, sound, or absence of motion than `went still again`.",
+      "acceptance_test": "Pass if `snapshots/cycle_02/FINAL_NOVEL.md:10600`-`snapshots/cycle_02/FINAL_NOVEL.md:10602` still lands the domestic hush, but the line no longer uses `went still again` or equivalent flattening shorthand. Fail if the ending still closes on the recycled stillness marker."
+    }
+  ]
+}

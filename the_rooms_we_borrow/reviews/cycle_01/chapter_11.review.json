@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_11",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH11-CRAFT-001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:419",
+      "problem": "The narration breaks Marcia's close-third interior with technical voice-calibration language: \"Moderate contraction in her voice\" reads like style-bible metadata instead of a lived perception. That moment feels like process leakage and weakens the chapter's otherwise strong character-specific viewpoint.",
+      "rewrite_direction": "Revise the beat around snapshots/cycle_01/chapters/chapter_11.md:417 and snapshots/cycle_01/chapters/chapter_11.md:419 so Marcia registers Tiana's angry self-control in concrete social or auditory terms she would naturally think: job-interview neatness, school-polished diction, or the sound of anger forced through employable speech. Keep Marcia's recognition that she raised Tiana to sound legitimate, but remove the technical phrasing.",
+      "acceptance_test": "Pass if the revised sentence at snapshots/cycle_01/chapters/chapter_11.md:419 describes Tiana's voice in character-native sensory or social language and contains no technical diction such as \"contraction\" or other style-sheet terminology; fail if the beat still reads like metadata rather than Marcia's thought."
+    },
+    {
+      "finding_id": "CH11-PROSE-001",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:105; snapshots/cycle_01/chapters/chapter_11.md:133; snapshots/cycle_01/chapters/chapter_11.md:227; snapshots/cycle_01/chapters/chapter_11.md:279; snapshots/cycle_01/chapters/chapter_11.md:291; snapshots/cycle_01/chapters/chapter_11.md:471; snapshots/cycle_01/chapters/chapter_11.md:581",
+      "problem": "The chapter leans too often on the same clipped-negation fragment pattern in narration: \"Not empty. Wrong.\", \"Not because of the money. Because of the quickness.\", \"Not complaint. Not surprise.\", \"Not judging. Calculating.\", and similar beats. At this density the compression stops feeling chosen and starts reading as a prose tic. It also violates the constitution's ban on elliptical clipping in narration.",
+      "rewrite_direction": "Rework the fragment bursts at snapshots/cycle_01/chapters/chapter_11.md:105, snapshots/cycle_01/chapters/chapter_11.md:133, snapshots/cycle_01/chapters/chapter_11.md:227, snapshots/cycle_01/chapters/chapter_11.md:279, snapshots/cycle_01/chapters/chapter_11.md:291, snapshots/cycle_01/chapters/chapter_11.md:471, and snapshots/cycle_01/chapters/chapter_11.md:581. Keep the pressure and compression, but vary the sentence shapes and convert most of these beats into full clauses, concrete images, or other syntactic forms so emphasis does not depend on the same clipped template scene after scene.",
+      "acceptance_test": "Pass if, across the cited passages, no more than two clipped fragment bursts of the \"Not X. Y.\" or \"Because of...\" type remain and the revised beats otherwise read as complete, varied sentences; fail if three or more of those cited passages still rely on the same fragment formula for emphasis."
+    }
+  ],
+  "summary": "The chapter cleanly lands its planned causal beats: the landlord weaponizes procedure rather than volume, Elena offers help that matters without solving the problem, Kerene arrives witty and newly vulnerable, and Tiana's loss of private space lands as a real consequence rather than a symbolic inconvenience. Character voices remain distinct and continuity holds; no tense drift or canonical contradiction surfaced. The chapter still fails readiness because one line breaks close-third with style-bible-like metadata, and the prose repeatedly falls into clipped fragment formulas often enough to become a noticeable tic instead of controlled variation."
+}

@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_15",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "PASS"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_15_f01",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_02/chapters/chapter_15.md:137",
+      "problem": "The chapter reintroduces Burt as an active medication source for the ring ('Burt didn't know anymore what his pills were being used for'), which contradicts the continuity sheet's chapter-11 canon that Agnes pulled Burt's prescriptions from diversion once he lost capacity. This is a continuity break and it also weakens Agnes's established ethical line around Burt.",
+      "rewrite_direction": "Revise the operational summary at snapshots/cycle_02/chapters/chapter_15.md:137 so Burt is no longer described as a current supplier. If the inventory logic at snapshots/cycle_02/chapters/chapter_15.md:23 or snapshots/cycle_02/chapters/chapter_15.md:155 is meant to rely on Earl's own medications or another source, make that source explicit there instead of implying Burt's pills are still in circulation.",
+      "acceptance_test": "Pass if a cold reader of the revised snapshots/cycle_02/chapters/chapter_15.md:137 and snapshots/cycle_02/chapters/chapter_15.md:155 can state that Burt is now only Earl's diminished roommate, not an active contributor to the ring's inventory. Fail if any sentence still implies Burt's current prescriptions are being diverted."
+    },
+    {
+      "finding_id": "chapter_15_f02",
+      "source": "award",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_02/chapters/chapter_15.md:41; snapshots/cycle_02/chapters/chapter_15.md:47; snapshots/cycle_02/chapters/chapter_15.md:119; snapshots/cycle_02/chapters/chapter_15.md:163",
+      "problem": "The chapter keeps translating stakes that are already legible instead of trusting the scene work. The van ride pauses for a long household-budget explanation after the pension math is clear, and the late section returns to abstractly paraphrasing Earl and Maryann's silence dynamic after the grave scene has already landed the key omission at lines 119-123. That recurrence blunts the elegiac chapter's precision and keeps it from feeling shortlist-level compressed.",
+      "rewrite_direction": "Tighten the explanatory blocks at snapshots/cycle_02/chapters/chapter_15.md:41-49 and snapshots/cycle_02/chapters/chapter_15.md:163-169. Keep the must-land facts (patient-responsibility math, the $400 to Denise, the VA lie, the no-ring/no-cough omission), but either compress them into fewer, sharper material details or replace the abstract summary with one concrete memory/action that changes the pressure after snapshots/cycle_02/chapters/chapter_15.md:119-123 has already made Earl's concealment clear.",
+      "acceptance_test": "Pass if the revised chapter still makes the pension math, VA lie, cemetery handoff, and concealment legible, but the sections corresponding to snapshots/cycle_02/chapters/chapter_15.md:41-49 and snapshots/cycle_02/chapters/chapter_15.md:163-169 each add a fresh concrete consequence, memory, or decision instead of restating what the reader already knows. Fail if those spans still function mainly as abstract certification of Denise's need or Earl's silence."
+    },
+    {
+      "finding_id": "chapter_15_f03",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_02/chapters/chapter_15.md:153; snapshots/cycle_02/chapters/chapter_15.md:155",
+      "problem": "The chapter asks the reader to accept a long causal chain as settled fact: if Earl reports the cough, diagnostics follow; if diagnostics follow, his medications will change; if his medications change, the ring loses a supplier; if the ring loses that supply, Denise loses the $400. Because this chain carries the chapter's decision beat, the page needs to distinguish what Earl actually knows from what he is projecting in fear. As written, the logic reads partly as plot necessity rather than fully earned on-page reasoning.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_15.md:153-156, either ground the medication-risk chain in a specific facility or medical reality Earl knows (for example, med reconciliation after a new diagnosis, transfer risk, or prior precedent) or explicitly mark the downstream collapse as Earl's worst-case inference rather than objective certainty. Keep the refusal, but make the operational logic legible enough that a reader can separate fact from fear.",
+      "acceptance_test": "Pass if a cold reader of the revised snapshots/cycle_02/chapters/chapter_15.md:153-156 can identify which part of Earl's reasoning is known consequence and which part is projection, and can answer what diagnosis would concretely threaten tomorrow or next week. Fail if the text still treats Denise losing the $400 as an unqualified certainty without showing why the diagnosis would actually interrupt Earl's supply role."
+    }
+  ],
+  "summary": "Quiet and often precise on Earl's bodily decline, but the chapter fails review because it breaks continuity around Burt's prescriptions, over-explains stakes the scenes already render, and leaves the diagnosis-to-income logic less grounded than the chapter's central refusal beat needs."
+}

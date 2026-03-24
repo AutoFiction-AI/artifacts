@@ -1,0 +1,82 @@
+{
+  "acceptance_targets": [
+    "[chapter_01_F004] PASS if the revised cited spans contain no more than one literal \"and then\" transition while preserving clear temporal order; FAIL if multiple \"and then\" links still carry the local sequence in each span.",
+    "[chapter_01_F005] PASS if revised versions of the cited lines read as complete clauses/sentences with explicit subject-verb structure and retain scene pressure; FAIL if three-or-more clipped fragment beats remain across those exact spans."
+  ],
+  "chapter_id": "chapter_01",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if the revised cited spans contain no more than one literal \"and then\" transition while preserving clear temporal order; FAIL if multiple \"and then\" links still carry the local sequence in each span.",
+      "chapter_id": "chapter_01",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_01.md:2; snapshots/cycle_02/chapters/chapter_01.md:6; snapshots/cycle_02/chapters/chapter_01.md:102; snapshots/cycle_02/chapters/chapter_01.md:112; snapshots/cycle_02/chapters/chapter_01.md:190; snapshots/cycle_02/chapters/chapter_01.md:286; snapshots/cycle_02/chapters/chapter_01.md:320; snapshots/cycle_02/chapters/chapter_01.md:327",
+      "finding_id": "chapter_01_F004",
+      "problem": "A recurring \"and then\" transition formula appears across the chapter and creates a predictable sentence engine. Once or twice reads intentional; repeated deployment reads like autopilot construction and dulls rhythmic variation.",
+      "rewrite_direction": "Rework transition-heavy clusters in snapshots/cycle_02/chapters/chapter_01.md:102-112, snapshots/cycle_02/chapters/chapter_01.md:190-193, and snapshots/cycle_02/chapters/chapter_01.md:320-327 by mixing causal pivots, sensory pivots, and harder cuts instead of default \"and then\" chaining.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if revised versions of the cited lines read as complete clauses/sentences with explicit subject-verb structure and retain scene pressure; FAIL if three-or-more clipped fragment beats remain across those exact spans.",
+      "chapter_id": "chapter_01",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_01.md:76; snapshots/cycle_02/chapters/chapter_01.md:188; snapshots/cycle_02/chapters/chapter_01.md:216",
+      "finding_id": "chapter_01_F005",
+      "problem": "Elliptical clipped construction recurs in narration (bulletin fragments and \"No X\" stacks), which pushes toward screenplay shorthand and conflicts with the constitution's anti-clipping rule. Repetition above twice makes this a prose tic, not an isolated choice.",
+      "rewrite_direction": "Replace clipped fragments in snapshots/cycle_02/chapters/chapter_01.md:76-77, snapshots/cycle_02/chapters/chapter_01.md:188, and snapshots/cycle_02/chapters/chapter_01.md:216 with grammatically complete sentences that preserve pressure and voice without subject/auxiliary drop.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "f77b7f707f4e5b4f1f62e02f2bff70226347df0981166b455834422c0ae62fd9",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on prose and copyedit finish: diction precision, rhythm control, sentence-level clarity, grammar, line-level polish without flattening style, and explicit aesthetic-risk audit (sanitization is the primary risk \u2014 do not soften or euphemize; push toward creative risk and specificity).",
+    "key": "p3_prose_copyedit",
+    "label": "prose/copyedit fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "When edge cases arise, choose the more specific and potentially uncomfortable rendering if it is character-true and causally necessary. Intimacy, bodily risk, and moral compromise must be shown with concrete detail and aftermath, then integrated into later behavior rather than quarantined as a one-scene shock.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a draft abstracts pain, sex, coercion, blood, or economic shame at the exact moment consequence should be embodied, revise by replacing summary with physically and socially specific action tied to POV stakes.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High by default for spoken lines; uncontracted forms are marked choices for period formality, emphasis, or character-specific control behavior.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate structural engines across adjacent chapters: ensemble social scenes, inventory chapters, information-turn chapters, acted-upon pressure chapters, and aftermath chapters. Vary scene count (2 to 4), dialogue density, and interiority depth so consecutive chapters do not share the same pacing signature.",
+      "diction": "Period-authentic but readable contemporary English, favoring concrete nouns and precise verbs over lyrical abstraction.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person, alternating primarily between Elsie and Noreen, with occasional tightly limited deviations only when causal clarity requires it.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Sentence rhythm should alternate compressed pressure bursts with longer observational lines that carry social texture; avoid monotone paragraph cadence.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

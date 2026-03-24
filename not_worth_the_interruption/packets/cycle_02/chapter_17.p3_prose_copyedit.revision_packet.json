@@ -1,0 +1,83 @@
+{
+  "acceptance_targets": [
+    "[chapter_17_prose_01] Pass if, across the revised beats anchored at snapshots/cycle_02/chapters/chapter_17.md:3, snapshots/cycle_02/chapters/chapter_17.md:89, snapshots/cycle_02/chapters/chapter_17.md:149, and snapshots/cycle_02/chapters/chapter_17.md:229, no more than two sentences begin with 'He kept' and at least two of the current recurrence points instead render stasis through a different sentence shape or physical image. Fail if the chapter still leans on the same opening formula three or more times.",
+    "[chapter_17_prose_02] Pass if the revised paragraph at snapshots/cycle_02/chapters/chapter_17.md:279 limits upstairs detail to things Owen can hear, smell, feel through the stone, or explicitly imagine from below. Fail if the paragraph still states unseen actions such as who is covering faces, straightening benches, or vomiting behind tapestries as direct fact."
+  ],
+  "chapter_id": "chapter_17",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if, across the revised beats anchored at snapshots/cycle_02/chapters/chapter_17.md:3, snapshots/cycle_02/chapters/chapter_17.md:89, snapshots/cycle_02/chapters/chapter_17.md:149, and snapshots/cycle_02/chapters/chapter_17.md:229, no more than two sentences begin with 'He kept' and at least two of the current recurrence points instead render stasis through a different sentence shape or physical image. Fail if the chapter still leans on the same opening formula three or more times.",
+      "chapter_id": "chapter_17",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_17.md:3; snapshots/cycle_02/chapters/chapter_17.md:89; snapshots/cycle_02/chapters/chapter_17.md:149; snapshots/cycle_02/chapters/chapter_17.md:229",
+      "finding_id": "chapter_17_prose_01",
+      "problem": "The chapter keeps returning to the same 'He kept ...' sentence shape to signal endurance. By the fourth recurrence it reads as a visible prose default rather than a freshly observed persistence beat, flattening a scene that otherwise varies pressure well.",
+      "rewrite_direction": "Rework the recurrence points at snapshots/cycle_02/chapters/chapter_17.md:3, snapshots/cycle_02/chapters/chapter_17.md:89, snapshots/cycle_02/chapters/chapter_17.md:149, and snapshots/cycle_02/chapters/chapter_17.md:229 so Owen's continuation is rendered through different syntax and different concrete evidence each time rather than repeated 'He kept' openings.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if the revised paragraph at snapshots/cycle_02/chapters/chapter_17.md:279 limits upstairs detail to things Owen can hear, smell, feel through the stone, or explicitly imagine from below. Fail if the paragraph still states unseen actions such as who is covering faces, straightening benches, or vomiting behind tapestries as direct fact.",
+      "chapter_id": "chapter_17",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_17.md:279",
+      "finding_id": "chapter_17_prose_02",
+      "problem": "The final upstairs montage briefly slips outside Owen's close-third sensorium by asserting specific aftermath actions he cannot directly perceive from the chamber. That weakens the claustrophobic POV control the style bible calls for right before the chapter closes.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_17.md:279, keep the sense of upstairs aftermath but tie every detail to what reaches Owen through sound, smoke, vibration, or explicit inference. If you want the wider image, mark it as what he pictures or assumes rather than unframed narration.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "3f1d5f101014847e73b820caf2f0270df0a7dc38d7c980c61c5c26544c992017",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on prose and copyedit finish: diction precision, rhythm control, sentence-level clarity, grammar, line-level polish without flattening style, and explicit aesthetic-risk audit (sanitization is the primary risk \u2014 do not soften or euphemize; push toward creative risk and specificity).",
+    "key": "p3_prose_copyedit",
+    "label": "prose/copyedit fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into the premise's sharpest contradiction: school-year comedy, adolescent awkwardness, punitive cruelty, and cosmic dread may coexist in the same novel without canceling each other. When a scene offers a cleaner version and a truer version, choose the truer one unless the character is actively refusing perception on the page.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If pain, cruelty, fear, or moral ugliness would leave a bodily or environmental trace, render that trace instead of summarizing it into tasteful haze.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High. Contractions are the spoken norm for most characters; fuller forms are reserved for Snape, ritual language, or deliberate emphasis.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate scene density, dialogue load, and movement mode aggressively: confrontation against quiet meals, subterranean revelation against corridor farce, ritual compression against spring drift, so no consecutive chapters feel built from the same emotional or structural template.",
+      "diction": "British boarding-school realism under wartime pressure, with speculative vocabulary introduced only when Owen's attention earns it.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third limited through Owen, with only brief sensory widenings that he could plausibly notice in the moment.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Alternate analytic accumulation with blunt corporeal sentences. Quiet chapters should breathe; punishment and ritual chapters should tighten without clipping grammar.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

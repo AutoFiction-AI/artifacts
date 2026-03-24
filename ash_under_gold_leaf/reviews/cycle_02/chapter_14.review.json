@@ -1,0 +1,53 @@
+{
+  "chapter_id": "chapter_14",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch14-craft-001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:13",
+      "problem": "Continuity contradiction: the family apartment is identified as unit 3B, but canon fixes the Flatbush apartment as unit 2B. This is a hard world-state mismatch, not a stylistic variant.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_14.md:13, change the explicit unit reference from \"3B\" to the canonical unit, or remove the unit number entirely if the beat does not require it. Re-check adjacent arrival beats for any implicit floor/unit assumptions tied to this line.",
+      "acceptance_test": "PASS if the revised line at snapshots/cycle_02/chapters/chapter_14.md:13 no longer identifies the apartment as 3B and is consistent with canon (unit 2B or no unit number). FAIL if any explicit 3B reference remains in the chapter."
+    },
+    {
+      "finding_id": "ch14-dialogue-001",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:105",
+      "problem": "Leo's voice occasionally skews too thesis-forward/adult (for example, \"that's math with people\" and later \"I assess\"), which weakens dialogue realism for an eight-year-old and makes him sound like a thematic delivery device.",
+      "rewrite_direction": "Rework Leo's lines in snapshots/cycle_02/chapters/chapter_14.md:101-105 and snapshots/cycle_02/chapters/chapter_14.md:141-150 so his logic stays sharp but lands in child-scaled syntax, concrete examples, and occasional verbal wobble rather than polished aphorism.",
+      "acceptance_test": "PASS if Leo's revised lines in the two target spans read as age-credible spoken language (concrete, immediate, kid-rhythmic) while preserving his curiosity. FAIL if those lines can still be read unchanged as adult thematic commentary."
+    },
+    {
+      "finding_id": "ch14-prose-001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:13",
+      "problem": "A recurring prose construction becomes a tic: sensory/idea stacking in repeated \"X and Y and Z\" triads. The pattern appears enough times to feel mechanical and flatten rhythmic variation.",
+      "rewrite_direction": "Vary sentence architecture at snapshots/cycle_02/chapters/chapter_14.md:13, snapshots/cycle_02/chapters/chapter_14.md:107, snapshots/cycle_02/chapters/chapter_14.md:183, and snapshots/cycle_02/chapters/chapter_14.md:433 by converting at least two triads into different rhythms (for example, one verb-led action beat and one single-detail image beat).",
+      "acceptance_test": "PASS if, across the four target lines/spans, no more than two triadic \"and\" stacks remain and each revised passage uses a distinct cadence. FAIL if all four passages retain the same triadic stacking pattern."
+    },
+    {
+      "finding_id": "ch14-booker-001",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:433",
+      "problem": "The ending briefly over-explains its moral ledger (\"It did not erase... It did not absolve...\"), reducing reader inference right after a strong concrete reveal.",
+      "rewrite_direction": "Recast snapshots/cycle_02/chapters/chapter_14.md:431-434 so ambivalence is carried by concrete countervailing detail (body memory, object detail, immediate action) rather than explicit abstract adjudication.",
+      "acceptance_test": "PASS if the revised ending span (snapshots/cycle_02/chapters/chapter_14.md:431-434) communicates unresolved contradiction through concrete imagery without direct moral-summary phrasing. FAIL if the paragraph still states explicit abstract verdict language."
+    }
+  ],
+  "summary": "Chapter 14 lands its required domestic and pawn-ticket beats with strong scene specificity, but it fails review due to one HIGH continuity break (unit number mismatch) plus unresolved MEDIUM issues in dialogue realism, prose pattern repetition, and end-paragraph over-explication that keeps the chapter below pass threshold.",
+  "coverage_scene_ids": []
+}

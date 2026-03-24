@@ -1,0 +1,43 @@
+{
+  "chapter_id": "chapter_13",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_13_craft_01_exteriority_runs",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_02/chapters/chapter_13.md:175, snapshots/cycle_02/chapters/chapter_13.md:183, snapshots/cycle_02/chapters/chapter_13.md:195, snapshots/cycle_02/chapters/chapter_13.md:353, snapshots/cycle_02/chapters/chapter_13.md:375, snapshots/cycle_02/chapters/chapter_13.md:383 — the trunk-sort exchange and the nursing-letter exchange each run 10+ consecutive paragraphs on dialogue/action without an explicit Tiana thought, sensation, memory, or self-assessment, so the chapter briefly reads like staged coverage rather than close-third fiction.",
+      "problem": "Two major dialogue runs go exterior-only for too long. That violates the brief's interiority requirement and weakens the chapter's strongest asset: Tiana's close, caustic consciousness under pressure.",
+      "rewrite_direction": "Re-focalize the run beginning at snapshots/cycle_02/chapters/chapter_13.md:175 and the run beginning at snapshots/cycle_02/chapters/chapter_13.md:353. Add concise Tiana interior beats after Micah wakes, after Kerene's evidence joke lands, and after Marcia deflects the nursing-school question so the reader feels what each exchange costs in Tiana's body and self-story, not just what is said aloud.",
+      "acceptance_test": "PASS if the revised material around snapshots/cycle_02/chapters/chapter_13.md:175 and snapshots/cycle_02/chapters/chapter_13.md:353 contains at least two explicit Tiana interior beats in each run (thought, bodily sensation, memory, or self-assessment) and no stretch in either exchange exceeds 9 consecutive paragraphs without such an interior beat; FAIL otherwise."
+    },
+    {
+      "finding_id": "chapter_13_prose_01_as_if_tic",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_02/chapters/chapter_13.md:11, snapshots/cycle_02/chapters/chapter_13.md:13, snapshots/cycle_02/chapters/chapter_13.md:63, snapshots/cycle_02/chapters/chapter_13.md:145, snapshots/cycle_02/chapters/chapter_13.md:249, snapshots/cycle_02/chapters/chapter_13.md:305, snapshots/cycle_02/chapters/chapter_13.md:331, snapshots/cycle_02/chapters/chapter_13.md:425 — the chapter leans repeatedly on 'as if' comparison scaffolding to explain reactions and objects.",
+      "problem": "The repeated 'as if' template becomes a visible prose habit. By the back half of the chapter it starts to feel like default explanatory wiring rather than a chosen comparison, which slightly flattens otherwise sharp sentences.",
+      "rewrite_direction": "Revise the comparison beats at snapshots/cycle_02/chapters/chapter_13.md:63, snapshots/cycle_02/chapters/chapter_13.md:145, snapshots/cycle_02/chapters/chapter_13.md:249, snapshots/cycle_02/chapters/chapter_13.md:305, snapshots/cycle_02/chapters/chapter_13.md:331, and snapshots/cycle_02/chapters/chapter_13.md:425. Replace at least four of those 'as if' constructions with direct sensory description, named judgment, or action so the line lands without comparative scaffolding.",
+      "acceptance_test": "PASS if, by reading the revised passages anchored at snapshots/cycle_02/chapters/chapter_13.md:63, snapshots/cycle_02/chapters/chapter_13.md:145, snapshots/cycle_02/chapters/chapter_13.md:249, snapshots/cycle_02/chapters/chapter_13.md:305, snapshots/cycle_02/chapters/chapter_13.md:331, and snapshots/cycle_02/chapters/chapter_13.md:425, no more than two 'as if' explanatory comparisons remain and each replacement still conveys a concrete visual, tactile, or psychological fact; FAIL otherwise."
+    },
+    {
+      "finding_id": "chapter_13_craft_02_clipped_narration",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_02/chapters/chapter_13.md:53, snapshots/cycle_02/chapters/chapter_13.md:295, snapshots/cycle_02/chapters/chapter_13.md:375 — 'Almost.', 'Relief, already trying to stand up in him.', and 'Not long. Long enough.' rely on clipped narration for emphasis.",
+      "problem": "Those beats violate the constitution's ban on elliptical clipping in narration. Repeated fragments like this read as shorthand emphasis rather than earned compression, especially in a chapter whose baseline syntax is otherwise natural and controlled.",
+      "rewrite_direction": "Rewrite the narration at snapshots/cycle_02/chapters/chapter_13.md:53, snapshots/cycle_02/chapters/chapter_13.md:295, and snapshots/cycle_02/chapters/chapter_13.md:375 into grammatically complete sentences that preserve the same pressure. Keep the beat sharp, but make the emphasis come from diction and pacing rather than omitted verbs or sentence fragments.",
+      "acceptance_test": "PASS if the revised narration at snapshots/cycle_02/chapters/chapter_13.md:53, snapshots/cycle_02/chapters/chapter_13.md:295, and snapshots/cycle_02/chapters/chapter_13.md:375 remains tense while every sentence has an explicit grammatical subject and finite verb; FAIL if any of those emphasis beats still depend on clipped fragments."
+    }
+  ],
+  "summary": "Strong chapter architecture and continuity control: the document hunt stays concrete, the trunk works as archive rather than magic fix, the nursing-school packet and remittance receipts materially complicate both parents, and the dialogue remains distinct, contracted, and character-true. No continuity contradiction, sanitization drift, intimacy fade-to-black, or style-bible example-line reuse is evidenced in the allowed inputs. The fail is craft/prose-level rather than causal: long exterior-only dialogue runs thin the close-third interiority, the repeated 'as if' scaffolding becomes visible, and a few narration fragments break the constitution's anti-clipping rule, which keeps the chapter below pass-level Booker/craft/prose quality.",
+  "coverage_scene_ids": []
+}

@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_10",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH10-BOOKER-001",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_02/chapters/chapter_10.md:339; snapshots/cycle_02/chapters/chapter_10.md:353; snapshots/cycle_02/chapters/chapter_10.md:425",
+      "problem": "The chapter's post-suspension stretch re-lists losses for a long beat and delays the new causal move (municipal-records pivot) until the final line, which weakens scene-to-scene propulsion at the chapter hinge.",
+      "rewrite_direction": "Tighten or reorder aftermath material in snapshots/cycle_02/chapters/chapter_10.md:339 and snapshots/cycle_02/chapters/chapter_10.md:353 so Marisol executes an irreversible next-step action earlier (for example, records-office scheduling, fee planning, or document request prep) before the close at snapshots/cycle_02/chapters/chapter_10.md:425.",
+      "acceptance_test": "Pass if, before the closing beat (currently around snapshots/cycle_02/chapters/chapter_10.md:425), Marisol performs one explicit external action that commits her to the chapter_11 records run; fail if the pivot remains only a final-sentence setup after mostly retrospective inventory."
+    },
+    {
+      "finding_id": "CH10-CRAFT-001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_02/chapters/chapter_10.md:237; snapshots/cycle_02/chapters/chapter_10.md:313",
+      "problem": "Chapter-internal time cues conflict with canon continuity: the text implies a Tuesday workflow and a 13-day countdown to the Dec 15 rent deadline, while continuity canon fixes chapter_10's suspension event to Nov 29, 2026 (Sunday). This is a timeline contradiction and should be treated as HIGH.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_10.md:237 and snapshots/cycle_02/chapters/chapter_10.md:313, align weekday/countdown language to the canonical Nov 29, 2026 placement (or remove weekday-specific/countdown-specific phrasing so no contradictory date math is implied).",
+      "acceptance_test": "Pass if the revised chapter can be read on a Sunday Nov 29, 2026 timeline without arithmetic conflict: no Tuesday-specific implication at snapshots/cycle_02/chapters/chapter_10.md:237 and no incorrect 13-day count to Dec 15 at snapshots/cycle_02/chapters/chapter_10.md:313; fail if either contradiction remains."
+    },
+    {
+      "finding_id": "CH10-CRAFT-002",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_02/chapters/chapter_10.md:315; snapshots/cycle_02/chapters/chapter_10.md:391; snapshots/cycle_02/chapters/chapter_10.md:425",
+      "problem": "Sanitization drift: the text establishes immediate relapse pressure and a same-night accountability requirement, then cuts away to bedtime/doc setup without rendering the high-stakes sobriety test scene. This is summary replacing scene at the exact pressure point.",
+      "rewrite_direction": "Replace or expand the close in snapshots/cycle_02/chapters/chapter_10.md:419-425 to show the 7:30 church-basement meeting (or a clearly depicted refusal with consequence) on-page: include bodily craving management, at least one spoken exchange, and explicit sober/not-sober outcome before the chapter ends.",
+      "acceptance_test": "Pass if the revised ending explicitly shows whether Marisol attends the meeting and whether she drinks that night, with at least one concrete physical action and one in-scene spoken line; fail if the chapter still jumps from the phone directive to bedtime/next-day prep."
+    },
+    {
+      "finding_id": "CH10-PROSE-001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_02/chapters/chapter_10.md:3; snapshots/cycle_02/chapters/chapter_10.md:15; snapshots/cycle_02/chapters/chapter_10.md:61",
+      "problem": "A recurring clipped-shard construction appears more than twice in narration (e.g., stand-alone fragments), flattening cadence into a recognizable tic and drifting against the constitution's anti-elliptical-clipping rule.",
+      "rewrite_direction": "In snapshots/cycle_02/chapters/chapter_10.md:3, snapshots/cycle_02/chapters/chapter_10.md:15, and snapshots/cycle_02/chapters/chapter_10.md:61, recast fragment clusters into complete clauses with subject+verb while keeping pressure; vary syntax length so emphasis is not carried primarily by shard fragments.",
+      "acceptance_test": "Pass if those cited passages are revised into grammatically complete narrative sentences and no three-fragment shard run remains in the same local spans; fail if fragment-cluster rhythm remains the dominant mechanism in the cited lines."
+    }
+  ],
+  "summary": "Dialogue register and voice separation are mostly strong, but the chapter fails review due to one HIGH continuity contradiction, one HIGH sanitization cutaway at the sobriety-pressure climax, a MEDIUM structural propulsion gap in the aftermath block, and a MEDIUM recurring clipped-prose tic."
+}

@@ -1,0 +1,184 @@
+{
+  "cycle": 1,
+  "summary": "Cross-chapter audit of 18-chapter manuscript (85,527 prose words, 2,406 prose lines, ~6,236 sentences). REDUNDANCY: The manuscript's dominant defect is the phrase 'eleven years,' which appears 89 times across 17 of 18 chapters — a proof-of-baseline pattern that re-proves Maren's fraud duration far beyond reader need. The ceramic bowl is fully re-inventoried (purchase location, age, fraudulence, lack of System properties) in at least 7 passages across 6 chapters. Thessa receives a near-verbatim physical re-description in Ch 14 repeating every trait from her Ch 7 introduction. Em-dash density is 40.7% of prose lines (threshold 10%), the most extreme punctuation density finding. Sentence-opener 'He' reaches 10.7% manuscript-wide (threshold 7%). Hedge word 'something' appears 408 times (1 per 210 words vs. threshold 1 per 800). CONSISTENCY: Two critical inconsistencies found — Pell's age regresses from 4 (Ch 3) to 3 (Ch 7) to 2 (Ch 13), and the bounty amount shifts from 4,000 gold crowns (Ch 3) to 400 gold (Ch 4-5) to an implied 1,200 gold (Ch 9).",
+  "redundancy_findings": [
+    {
+      "finding_id": "R-01",
+      "category": "redundancy",
+      "subcategory": "character_re_introduction",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "Ch 7 L1641: 'Tall, angular, grey hair cut short enough that it didn't move in the breeze...staining showed — dark, mottled'; L1653: 'Her face was weathered deep...the tiredness in it didn't look temporary. It had gone into the bones, permanent as the staining on her hands.' Ch 14 L3548: 'She looked the same as she had in Silt — tall, angular, grey-streaked hair cut short for practicality, hands dark to the wrist from thirty years of contamination exposure. Tired in a way that had gone structural, settled into the bones of her face.'",
+      "problem": "Thessa's Ch 14 reappearance re-describes every physical trait from her Ch 7 introduction using synonymous phrasing: 'tall, angular' repeated verbatim; 'grey hair cut short' becomes 'grey-streaked hair cut short'; 'staining...dark, mottled' becomes 'hands dark to the wrist'; 'tiredness...gone into the bones' becomes 'Tired...gone structural, settled into the bones.' The text acknowledges 'She looked the same' and then re-describes anyway. First established Ch 7 L1641/1653.",
+      "rewrite_direction": "Cut the full physical re-description at L3548. 'Then Thessa came around the far shelter, a ceramic bowl in her stained hands, and stopped' is sufficient identification. Replace the removed description with one detail showing what has CHANGED since Silt — new fatigue lines, a fresh injury, different posture from sustained work at the Crook — rather than re-inventorying traits the reader already has.",
+      "acceptance_test": "Ch 14's Thessa passage contains no repetition of 'tall,' 'angular,' 'grey-streaked hair,' 'dark to the wrist,' or 'bones of her face.' Any physical detail present is new information not established in Ch 7."
+    },
+    {
+      "finding_id": "R-02",
+      "category": "redundancy",
+      "subcategory": "proof_of_baseline",
+      "severity": "HIGH",
+      "chapter_id": "chapter_07",
+      "evidence": "The phrase 'eleven years' appears 12 times in Ch 7 (lines 1589-1905), the highest of any chapter. By this point the reader has encountered the phrase 44 times in Ch 1-6. Examples: L1627 'the whole — the eleven years'; L1659 'the kind he'd been constructing for eleven years'; L1717 'You've been channeling backward for eleven years'; L1821 'Eleven harvests. Eleven years'; L1831 'in eleven years of fraud'; L1897 'eleven years of fake rituals.'",
+      "problem": "Ch 7 uses 'eleven years' 12 times to re-prove Maren's fraud duration, which was established in Ch 1 (11 uses) and reinforced in Ch 2-6 (33 uses). By Ch 7 the reader has been told this fact 44 times. Thessa's confrontation can land without restating the number in every exchange. First established Ch 1 L9.",
+      "rewrite_direction": "Reduce 'eleven years' in Ch 7 from 12 to at most 3 occurrences. Keep the single strongest use in Thessa's direct accusation (L1717 or L1831) and at most 2 supporting uses. Replace other instances with variation ('all those seasons,' 'since he was seventeen,' 'for as long as he'd been doing this') or delete the temporal marker where the sentence works without it.",
+      "acceptance_test": "Ch 7 contains no more than 3 occurrences of the exact phrase 'eleven years.' Remaining instances use varied phrasing or omit the temporal marker entirely."
+    },
+    {
+      "finding_id": "R-03",
+      "category": "redundancy",
+      "subcategory": "proof_of_baseline",
+      "severity": "HIGH",
+      "chapter_id": "chapter_10",
+      "evidence": "The phrase 'eleven years' appears 8 times in Ch 10 (lines 2508-2756). Examples: L2556 'eleven years of professional accuracy'; L2652 'You have known for eleven years'; L2686 'How many villages...in eleven years'; L2712 'eleven years watching Maren build sentences'; L2730 'You have known for eleven years.' L2652 and L2730 are near-verbatim repetitions of each other within the same chapter.",
+      "problem": "Ch 10 re-proves the fraud-duration baseline 8 times after the reader has been told 58+ times. The Caul scene's emotional power comes from Haley and Renn's deaths and the bird drawing — not from restating the number. L2652 and L2730 duplicate the same sentence. First established Ch 1 L9.",
+      "rewrite_direction": "Reduce 'eleven years' in Ch 10 from 8 to at most 2. Keep Caul's direct statement about the contamination timeline (one instance). Cut intra-chapter duplication (L2652 and L2730 must not both survive). Replace other instances with 'all that time,' 'for years,' or contextual references.",
+      "acceptance_test": "Ch 10 contains no more than 2 occurrences of 'eleven years.' The near-duplicate sentences at L2652 and L2730 are consolidated into one."
+    },
+    {
+      "finding_id": "R-04",
+      "category": "redundancy",
+      "subcategory": "proof_of_baseline",
+      "severity": "HIGH",
+      "chapter_id": "chapter_18",
+      "evidence": "The phrase 'eleven years' appears 7 times in Ch 18 (lines 4660-4918), the final chapter. By this point the reader has encountered the phrase 82+ times. Examples: L4794 'the same evaluative look people had given him for eleven years'; L4822 'every family had watched him for eleven years'; L4824 'For eleven years, he'd taken their money and left'; L4886 'every family had asked for eleven years'; L4914 'he'd spent eleven years not doing this.'",
+      "problem": "The final chapter re-proves the fraud duration 7 times after 82+ prior occurrences. L4822, L4824, L4886, and L4914 all restate the same fact within 92 lines. The ending should demonstrate transformation through action, not by restating the baseline. First established Ch 1 L9.",
+      "rewrite_direction": "Reduce 'eleven years' in Ch 18 from 7 to at most 1. The single strongest use should be the final thematic turn (L4914 is the best candidate). Cut or rephrase all other instances. The final chapter earns its power from what Maren does, not from how many times we are reminded what he did not do.",
+      "acceptance_test": "Ch 18 contains no more than 1 occurrence of 'eleven years.' The retained instance appears in the final pages as a deliberate thematic bookend."
+    },
+    {
+      "finding_id": "R-05",
+      "category": "redundancy",
+      "subcategory": "proof_of_baseline",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_16",
+      "evidence": "The phrase 'eleven years' appears 6 times in Ch 16 (lines 4126-4398). Examples: L4252 bowl description; L4304 'In eleven years of fake rituals'; L4310 'waited eleven years to be useful'; L4352 'eleven years of lies and three weeks of something else.'",
+      "problem": "Ch 16 contains the emotional pivot where Vess dissipates and the bowl does real work for the first time. The scene's power comes from the consumption itself, not from restating 'eleven years' 6 times. By this point the phrase has appeared 76+ times. First established Ch 1 L9.",
+      "rewrite_direction": "Reduce 'eleven years' in Ch 16 from 6 to at most 2. Keep the strongest thematic contrast (L4352: 'eleven years of lies and three weeks of something else'). Cut or vary the rest.",
+      "acceptance_test": "Ch 16 contains no more than 2 occurrences of 'eleven years.'"
+    },
+    {
+      "finding_id": "R-06",
+      "category": "redundancy",
+      "subcategory": "proof_of_baseline",
+      "severity": "HIGH",
+      "chapter_id": "chapter_11",
+      "evidence": "Ch 11 L2797: 'He pulled out the ceramic bowl — plain, chipped at the rim, the same one he'd bought from a potter in Fenhold eleven years ago when he'd first started the fraud. It had no System properties. It was a bowl.' Compare Ch 1 L9: 'The bowl was eleven years old, purchased from a market stall in Fenhold...It had no System properties. It had no properties at all.'",
+      "problem": "The ceramic bowl is fully re-inventoried in Ch 11 with the same facts from Ch 1 L9: Fenhold purchase, eleven-year age, connection to fraud, absence of System properties. The reader has been carrying this information for 10 chapters. First established Ch 1 L9.",
+      "rewrite_direction": "Cut the full re-inventory at L2797. Replace with minimal identification: 'He pulled out the ceramic bowl' or 'He pulled out his bowl — the same chipped ceramic, though it felt different now.' Do not restate purchase location, age, fraud connection, or System-property status.",
+      "acceptance_test": "Ch 11's bowl passage does not restate the bowl's purchase location, eleven-year age, or System-property status. Identification uses at most one physical detail."
+    },
+    {
+      "finding_id": "R-07",
+      "category": "redundancy",
+      "subcategory": "proof_of_baseline",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "Ch 14 L3742: 'The bowl — the ordinary ceramic he'd bought in a Fenhold market at seventeen, the prop of eleven years of fake rituals — sat on the ground in front of him, and in this place, surrounded by real sin-eaters, it looked exactly as fraudulent as it was. No staining. No ritual wear. Clean, cheap, useless.' Compare Ch 1 L9 and Ch 11 L2797.",
+      "problem": "Ch 14 re-inventories the bowl with purchase location (Fenhold), purchase age (seventeen), fraud duration (eleven years), and absence of legitimate use markers — the same cluster of facts from Ch 1 and Ch 11. The contrast with real sin-eaters' bowls is new information, but the bowl's biography is not. First established Ch 1 L9.",
+      "rewrite_direction": "Keep the contrast with real sin-eaters' stained bowls. Cut the biographical re-inventory. Rewrite as: 'His bowl sat on the ground in front of him, and in this place, surrounded by real sin-eaters, it looked exactly as fraudulent as it was. No staining. No ritual wear. Clean, cheap, useless.'",
+      "acceptance_test": "Ch 14's bowl passage does not restate purchase location, purchase age, or 'eleven years of fake rituals.' The contrast with real bowls remains."
+    },
+    {
+      "finding_id": "R-08",
+      "category": "redundancy",
+      "subcategory": "proof_of_baseline",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_17",
+      "evidence": "Ch 17 L4437: 'The ceramic was cold through his shirt...the same cheap market-stall bowl. Different man holding it.' L4467: 'The ceramic was white and cracked, glazed once but worn to matte by eleven years of handling.' The market-stall origin and eleven-year age are restated after 80+ prior uses of 'eleven years' and 5+ prior bowl re-inventories.",
+      "problem": "Ch 17's Woundmouth sequence re-describes the bowl twice, restating its market origin (L4437) and eleven-year age (L4467). By the climactic chapter, the bowl should be a familiar object that needs no biography. First established Ch 1 L9.",
+      "rewrite_direction": "At L4437, keep 'Different man holding it' — that is the meaningful beat. Cut 'the same cheap market-stall bowl.' At L4467, cut 'glazed once but worn to matte by eleven years of handling' and replace with sensory detail specific to this moment (the quest-light filling it, its weight, its temperature).",
+      "acceptance_test": "Ch 17's bowl passages do not restate the bowl's market origin or eleven-year age. Physical details are specific to the Woundmouth scene."
+    },
+    {
+      "finding_id": "R-09",
+      "category": "redundancy",
+      "subcategory": "em_dash_density",
+      "severity": "CRITICAL",
+      "chapter_id": "chapter_05",
+      "evidence": "Ch 5 has 58 em-dash-containing prose lines out of 109 total prose lines = 53.2% density. Manuscript-wide: 979/2406 = 40.7%. Threshold: 10%. The manuscript exceeds the threshold by a factor of 4. Ch 5 is the densest chapter.",
+      "problem": "Em-dash density in Ch 5 is 53.2% — more than half of all prose lines contain at least one em-dash. The manuscript-wide density of 40.7% is 4x the 10% threshold. Em-dashes are used for parenthetical asides, interrupted speech, mid-sentence pivots, and appositives, creating a rhythmic monotony where nearly every long sentence contains the same punctuation gesture.",
+      "rewrite_direction": "Reduce em-dash-containing lines in Ch 5 from 58 to no more than 11 (targeting 10% density). Convert parenthetical em-dashes to commas, semicolons, or separate sentences. Reserve em-dashes for genuine interruptions and dramatic pivots. This chapter contains the first kill — the interrupted rhythm should be the exception, not the baseline.",
+      "acceptance_test": "Ch 5 em-dash density is at or below 15% of prose lines. No paragraph contains more than one em-dash pair."
+    },
+    {
+      "finding_id": "R-10",
+      "category": "redundancy",
+      "subcategory": "em_dash_density",
+      "severity": "CRITICAL",
+      "chapter_id": "chapter_15",
+      "evidence": "Ch 15 has 70 em-dash-containing prose lines out of 136 total prose lines = 51.5% density. Manuscript-wide: 979/2406 = 40.7%. Threshold: 10%.",
+      "problem": "Em-dash density in Ch 15 is 51.5%. The combat and reclassification sequence relies on em-dashes for nearly every tactical update, internal voice, and action beat, flattening the distinction between interruption and narration. When everything is interrupted, nothing is.",
+      "rewrite_direction": "Reduce em-dash-containing lines in Ch 15 from 70 to no more than 20 (targeting 15% density). Use periods for completed thoughts, commas for light asides, and reserve em-dashes for genuine mid-sentence breaks where the interruption carries meaning.",
+      "acceptance_test": "Ch 15 em-dash density is at or below 15% of prose lines."
+    },
+    {
+      "finding_id": "R-11",
+      "category": "redundancy",
+      "subcategory": "em_dash_density",
+      "severity": "CRITICAL",
+      "chapter_id": "chapter_10",
+      "evidence": "Ch 10 has 61 em-dash-containing prose lines out of 122 total prose lines = 50.0% density. Manuscript-wide: 979/2406 = 40.7%. Threshold: 10%.",
+      "problem": "Em-dash density in Ch 10 is 50.0%. The Caul confrontation chapter uses em-dashes for virtually every parenthetical and aside, making the punctuation invisible through overuse. The emotional weight of Caul's story about Haley and Renn is diluted by the same punctuation gesture appearing in every other line.",
+      "rewrite_direction": "Reduce em-dash-containing lines in Ch 10 from 61 to no more than 18 (targeting 15% density). Caul's speech pattern should use fewer em-dashes than Maren's internal narration — his delivery is described as measured and practiced, which maps to complete sentences, not interrupted ones.",
+      "acceptance_test": "Ch 10 em-dash density is at or below 15% of prose lines."
+    },
+    {
+      "finding_id": "R-12",
+      "category": "redundancy",
+      "subcategory": "sentence_opener_monotony",
+      "severity": "HIGH",
+      "chapter_id": "chapter_05",
+      "evidence": "Ch 5 has 54 sentences beginning with 'He' out of 310 total sentences = 17.4%. Manuscript-wide: 669/6236 = 10.7%. Threshold: 7% for any single pronoun. Ch 5 is the densest chapter for 'He' openers.",
+      "problem": "17.4% of sentences in Ch 5 begin with 'He,' creating a rhythmic monotony in a chapter that should have maximum kinetic variety (first combat, first kill). The pronoun-opener density is 2.5x the 7% threshold. When nearly one in five sentences starts with the same word, the prose loses the ability to signal shifts in attention or agency.",
+      "rewrite_direction": "Reduce 'He' openers in Ch 5 from 54 to no more than 22 (targeting 7%). Vary sentence openings with action leads ('The sword came down'), sensory leads ('Something cracked'), participial phrases, or dialogue. In combat sequences, begin sentences with what Maren perceives rather than what he does.",
+      "acceptance_test": "Ch 5 'He'-initial sentences do not exceed 7% of total sentences. No three consecutive sentences begin with the same pronoun."
+    },
+    {
+      "finding_id": "R-13",
+      "category": "redundancy",
+      "subcategory": "sentence_opener_monotony",
+      "severity": "HIGH",
+      "chapter_id": "chapter_11",
+      "evidence": "Ch 11 has 44 sentences beginning with 'He' out of 270 total sentences = 16.3%. Manuscript-wide: 669/6236 = 10.7%. Threshold: 7%.",
+      "problem": "16.3% of sentences in Ch 11 begin with 'He.' The first real sin-eating attempt is a pivotal scene that should feel different from surrounding chapters, but the sentence-opening rhythm is the same He-led pattern. First established as a pattern in Ch 1 (12.7%).",
+      "rewrite_direction": "Reduce 'He' openers in Ch 11 from 44 to no more than 19 (targeting 7%). The creek-bed consumption sequence should lead with sensory and environmental detail rather than pronoun-action pairs.",
+      "acceptance_test": "Ch 11 'He'-initial sentences do not exceed 7% of total sentences."
+    }
+  ],
+  "consistency_findings": [
+    {
+      "finding_id": "C-01",
+      "category": "consistency",
+      "subcategory": "character_details",
+      "severity": "CRITICAL",
+      "chapter_id": "chapter_03",
+      "evidence": "Ch 3 L577: 'Pell had been watering everything the same amount because she was four and believed all plants were equally thirsty'; Ch 7 L1522: 'She's three. She's three years old and she has opinions about shoes'; Ch 10 L2694: 'Pell's going to be three next month'; Ch 10 L2744: 'My daughter's going to be three'; Ch 13 L3345: 'She turned two while we were on the road.'",
+      "problem": "Pell's age regresses across the manuscript: she is 'four' in Ch 3, 'three' in Ch 7, 'going to be three' in Ch 10, and 'turned two' in Ch 13. Over ~19 days of story time, her stated age decreases from 4 to 2. The most common reference is 'three' or 'going to be three' (Ch 7, Ch 10), suggesting her canonical age should be approximately 2 turning 3. The Ch 3 reference to 'four' and Ch 13 reference to 'turned two' are both likely errors.",
+      "rewrite_direction": "Establish a canonical age for Pell and correct all inconsistent references. If Pell is 2 turning 3 (supported by Ch 10's 'going to be three next month'), change Ch 3 L577 from 'four' to 'three' (or 'nearly three') and change Ch 13 L3345 from 'turned two' to 'turning three' (or reference the upcoming birthday instead).",
+      "acceptance_test": "All references to Pell's age across the manuscript resolve to a single consistent age. No chapter states an age that contradicts any other chapter."
+    },
+    {
+      "finding_id": "C-02",
+      "category": "consistency",
+      "subcategory": "financial_quantitative",
+      "severity": "CRITICAL",
+      "chapter_id": "chapter_04",
+      "evidence": "Ch 3 L711: 'Four thousand gold crowns'; L717: 'Four thousand gold crowns. Capture or elimination'; L723: 'Four thousand — Maren, that says four thousand gold crowns'; L727: 'four thousand crowns buys you a hero-class squad'; L787: 'bounty on your head is four thousand gold crowns.' Ch 4 L904: 'four hundred gold, visible to every hero in three regions.' Ch 5 L1090: 'the bounty is four hundred gold, highest priority bracket.'",
+      "problem": "The bounty amount shifts from 'four thousand gold crowns' (stated 5 times in Ch 3 with emphatic confirmation) to 'four hundred gold' in Ch 4 (L904), a 10x magnitude change with no narrative explanation. All subsequent references (Ch 5 L1090, Ch 9 L2227, L2251) follow the lower number. Ch 9 L2227 compounds the inconsistency by stating the bounty is 'four hundred times' a 3-gold cat quest, implying 1,200 gold — a third distinct amount.",
+      "rewrite_direction": "Choose one canonical bounty amount and correct all references. If 'four hundred gold' is intended (matching the majority of references in Ch 4-9), revise Ch 3 L711, L717, L723, L727, L757, and L787 to replace 'four thousand' with 'four hundred.' Also verify Ch 9 L2227's multiplication ('four hundred times' a 3-gold quest = 1,200) is revised to match the chosen amount.",
+      "acceptance_test": "Every reference to the bounty amount across all chapters resolves to a single consistent number. The Ch 9 multiplication reference produces the same total as the explicitly stated amount."
+    },
+    {
+      "finding_id": "C-03",
+      "category": "consistency",
+      "subcategory": "character_details",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "Ch 3 L577: 'she was four'; Ch 13 L3345: 'She turned two while we were on the road. I wasn't there.' If the canonical age is approximately 3 (per Ch 7/10 references), then 'turned two' in Ch 13 is a distinct error from the 'four' error in Ch 3.",
+      "problem": "Ch 13 L3345 has Derry saying Pell 'turned two while we were on the road.' This contradicts not only Ch 3 (where she is 'four') but also Ch 7 and Ch 10 (where she is 'three' or 'going to be three'). A child who is 'going to be three next month' in Ch 10 cannot have 'turned two' in Ch 13, which takes place only days later. This appears to be a separate error from the Ch 3 age reference.",
+      "rewrite_direction": "Correct L3345 to match the canonical age established in C-01. If Pell is turning 3, revise to: 'She's turning three while we're on the road. I won't be there.' This preserves the emotional beat (missing the birthday) while fixing the numerical error.",
+      "acceptance_test": "Ch 13's reference to Pell's age/birthday matches the canonical age established across the manuscript."
+    }
+  ]
+}

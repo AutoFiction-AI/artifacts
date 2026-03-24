@@ -1,0 +1,62 @@
+{
+  "chapter_id": "chapter_05",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_05_F001",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:217, snapshots/cycle_01/chapters/chapter_05.md:239, snapshots/cycle_01/chapters/chapter_05.md:271, snapshots/cycle_01/chapters/chapter_05.md:337, snapshots/cycle_01/chapters/chapter_05.md:449",
+      "problem": "The chapter's strongest irreversible turn lands at the rule-sheet signature, but the back half runs long on reiterative compliance beats (meals, chores, sleep logistics) before the next real turn. That dilutes chapter-level propulsion and weakens the exit pressure into chapter_06.",
+      "rewrite_direction": "Compress and re-sequence the post-signature span at snapshots/cycle_01/chapters/chapter_05.md:239-449 so each retained beat changes stakes (money transfer status, meeting commitment, housing consequence). Cut or merge routine beats that only restate existing rules, and end on the highest-pressure actionable turn (currently around snapshots/cycle_01/chapters/chapter_05.md:441-449).",
+      "acceptance_test": "Pass if, in the revised material corresponding to snapshots/cycle_01/chapters/chapter_05.md:239-449, each scene block introduces a new external consequence or decision and no two consecutive blocks merely restate house-rule compliance. Fail if the back half still repeats domestic process without changing stakes."
+    },
+    {
+      "finding_id": "chapter_05_F002",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:155, snapshots/cycle_01/chapters/chapter_05.md:157, snapshots/cycle_01/chapters/chapter_05.md:159, snapshots/cycle_01/chapters/chapter_05.md:163",
+      "problem": "Sanitization drift at the emotional peak: Eli's rehab-session admission resolves into clean self-diagnosis phrasing and is followed almost immediately by verbal stabilization. The moment reads partially safety-valved instead of forcing sustained discomfort and consequence.",
+      "rewrite_direction": "Rewrite the confession-and-aftermath pocket at snapshots/cycle_01/chapters/chapter_05.md:155-163 to keep it messier and more embodied: make Eli's admission include concrete behavior from that missed-session window and at least one disrupted, self-protective turn before clarity; delay any soothing acknowledgment until after renewed pressure or a concrete demand.",
+      "acceptance_test": "Pass if the revised passage aligned to snapshots/cycle_01/chapters/chapter_05.md:155-163 contains (1) at least one specific physical/action detail from the 2021 failure, (2) at least one broken or self-interrupted admission, and (3) no immediate de-escalating praise beat right after confession. Fail if the scene still resolves through polished abstract guilt language plus quick emotional release."
+    },
+    {
+      "finding_id": "chapter_05_F003",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:179, snapshots/cycle_01/chapters/chapter_05.md:191, snapshots/cycle_01/chapters/chapter_05.md:211, snapshots/cycle_01/chapters/chapter_05.md:215, snapshots/cycle_01/chapters/chapter_05.md:391",
+      "problem": "Eli's spoken register slips into stiff managerial compliance at high pressure (\"Understood,\" \"Agreed,\" \"Fair,\" \"It's fair,\" \"Yes, ma'am\"). For a high-contraction character in a domestic confrontation, this over-formality flattens realism and weakens idiolect texture.",
+      "rewrite_direction": "Revise Eli's response lines in snapshots/cycle_01/chapters/chapter_05.md:179-215 and snapshots/cycle_01/chapters/chapter_05.md:391-395 toward pressured colloquial speech (contractions, hesitations, partial pushback) while preserving his attempt to comply.",
+      "acceptance_test": "Pass if the revised exchange corresponding to snapshots/cycle_01/chapters/chapter_05.md:179-215 uses colloquial/contraction-heavy Eli replies in most turns and leaves at most one formal compliance token (e.g., \"understood\"/\"agreed\"/\"fair\"). Also pass only if the beat at snapshots/cycle_01/chapters/chapter_05.md:391 no longer relies on honorific stiffness (\"ma'am\") as default register. Fail otherwise."
+    },
+    {
+      "finding_id": "chapter_05_F004",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:63, snapshots/cycle_01/chapters/chapter_05.md:177, snapshots/cycle_01/chapters/chapter_05.md:203, snapshots/cycle_01/chapters/chapter_05.md:363, snapshots/cycle_01/chapters/chapter_05.md:445",
+      "problem": "Recurring gesture formula (nod-based beat tags) appears well over twice, turning emphasis into a prose tic rather than intentional variation.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_05.md:63, 177, 203, 363, and 445, vary physical response language so each beat carries distinct emotional information instead of repeating nod constructions.",
+      "acceptance_test": "Pass if the revised chapter keeps no more than two nod-formula beats total and each replacement beat communicates a different state (e.g., reluctance vs. irritation vs. guarded agreement) that is readable from the sentence itself. Fail if nod-formula phrasing still appears three or more times."
+    },
+    {
+      "finding_id": "chapter_05_F005",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:165, snapshots/cycle_01/chapters/chapter_05.md:173, snapshots/cycle_01/chapters/chapter_05.md:189, snapshots/cycle_01/chapters/chapter_05.md:205, snapshots/cycle_01/chapters/chapter_05.md:217",
+      "problem": "There is a long screenplay-like run during the rules negotiation where paragraph after paragraph carries dialogue and blocking but little focal interiority. The close-third anchor thins out right when psychological pressure should be most legible.",
+      "rewrite_direction": "In the rules block at snapshots/cycle_01/chapters/chapter_05.md:165-217, insert brief interior beats (thought, body sensation, self-assessment, memory flash) between leverage turns so Eli's internal stakes remain active while terms are set.",
+      "acceptance_test": "Pass if the revised span aligned to snapshots/cycle_01/chapters/chapter_05.md:165-217 includes at least three distributed interior beats and no stretch longer than six consecutive paragraphs without focal interiority. Fail if a 10+ paragraph exterior-only run remains."
+    }
+  ],
+  "summary": "Chapter 5 lands the required plot state changes and remains continuity/tense consistent, but it does not clear pass-level quality under Booker standards. The chapter fails on structure (back-half dilution), craft (HIGH sanitization/safety-valve drift at the emotional peak), dialogue register (stiff formal compliance in Eli's speech), and prose control (repeated gesture formulas plus an extended interiority drought during a high-pressure exchange)."
+}

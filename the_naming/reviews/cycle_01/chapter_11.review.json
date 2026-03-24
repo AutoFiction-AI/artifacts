@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_11",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_11_craft_001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:99; snapshots/cycle_01/chapters/chapter_11.md:105; snapshots/cycle_01/chapters/chapter_11.md:107",
+      "problem": "The chapter quotes Leni's journal directly even though the continuity sheet defines the journal as an object whose contents are never shown directly to the reader. That is a canonical contradiction, not just a stylistic preference.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_11.md:95, snapshots/cycle_01/chapters/chapter_11.md:99, snapshots/cycle_01/chapters/chapter_11.md:105, and snapshots/cycle_01/chapters/chapter_11.md:107, keep the act of Leni writing but convert the exact italicized entries into narrated summary, fragmentary paraphrase, or visible physical note-taking that preserves the continuity rule for Leni's journal.",
+      "acceptance_test": "PASS if the revised close at snapshots/cycle_01/chapters/chapter_11.md:95, snapshots/cycle_01/chapters/chapter_11.md:99, snapshots/cycle_01/chapters/chapter_11.md:105, and snapshots/cycle_01/chapters/chapter_11.md:107 shows that Leni writes without giving the reader any verbatim journal entry. FAIL if any full journal sentence is still presented as direct notebook text."
+    },
+    {
+      "finding_id": "chapter_11_award_001",
+      "source": "award",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:97; snapshots/cycle_01/chapters/chapter_11.md:105; snapshots/cycle_01/chapters/chapter_11.md:107",
+      "problem": "The closing synthesis turns Leni into a thematic mouthpiece. After the chapter has already dramatized night as the truth-telling inverse of the naming, the journal resolves that idea in polished abstract claims about everybody here and about what the naming thinks, which reduces interpretive tension and pushes the voice toward the preternaturally articulate literary teenager the style bible forbids.",
+      "rewrite_direction": "Rework the synthesis around snapshots/cycle_01/chapters/chapter_11.md:97, snapshots/cycle_01/chapters/chapter_11.md:105, and snapshots/cycle_01/chapters/chapter_11.md:107 so Leni's conclusion arrives through sharper, more age-appropriate fragments tied to what she actually saw tonight: Arash's hand, Peyam in the rain, Jin's vigil, and her parents' hands. Let the reader infer the chapter thesis from those specifics instead of stating the full governing argument outright.",
+      "acceptance_test": "PASS if the revised material at snapshots/cycle_01/chapters/chapter_11.md:105 and snapshots/cycle_01/chapters/chapter_11.md:107 expresses Leni's takeaway through concrete, partial observations rather than a universal explanation of everybody here or of the naming. FAIL if the close still contains an abstract, totalizing statement that reads like the novel explaining itself through Leni."
+    },
+    {
+      "finding_id": "chapter_11_prose_001",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:109; snapshots/cycle_01/chapters/chapter_11.md:111",
+      "problem": "The final paragraph breaks the chapter's declared close-third POV. After Leni lies down and drifts toward sleep, the narration reports unseen external facts as certainties: Arash and Bett staying on the wall, Peyam finishing prayer, and Jin's lamp burning on. The style bible requires the chapter to stay behind one POV character's eyes, and this ending slips into omniscient summary.",
+      "rewrite_direction": "Replace the offstage report at snapshots/cycle_01/chapters/chapter_11.md:111 with a close-third ending anchored to what Leni can still hear, feel, or plausibly infer from her mat after snapshots/cycle_01/chapters/chapter_11.md:109. If the night-world needs to linger, do it through rain, flood, lamp-glow, distant breathing, or Leni's conjecture marked as conjecture, not through omniscient factual wrap-up.",
+      "acceptance_test": "PASS if the revised ending at snapshots/cycle_01/chapters/chapter_11.md:111 contains only sensory information available to Leni from bed, or clearly signaled inference. FAIL if it still states Arash, Bett, Peyam, or Jin's unseen actions as settled fact after Leni has stopped watching."
+    },
+    {
+      "finding_id": "chapter_11_prose_002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:21; snapshots/cycle_01/chapters/chapter_11.md:35; snapshots/cycle_01/chapters/chapter_11.md:51; snapshots/cycle_01/chapters/chapter_11.md:63; snapshots/cycle_01/chapters/chapter_11.md:91; snapshots/cycle_01/chapters/chapter_11.md:93",
+      "problem": "A negation-correction sentence habit recurs across the chapter's key emotional beats: not younger but softer, not in a dramatic way, not because, not crying, not gripping, not a tightening. Because the constitution treats any construction repeated more than twice as a tic, this pattern now reads as autopilot rather than choice.",
+      "rewrite_direction": "Vary the sentence architecture at snapshots/cycle_01/chapters/chapter_11.md:21, snapshots/cycle_01/chapters/chapter_11.md:35, snapshots/cycle_01/chapters/chapter_11.md:51, snapshots/cycle_01/chapters/chapter_11.md:63, snapshots/cycle_01/chapters/chapter_11.md:91, and snapshots/cycle_01/chapters/chapter_11.md:93. Keep at most one or two deliberate negation pivots and rewrite the other beats as first-pass affirmative perception, physical detail, or action so the prose stops canceling itself before it lands.",
+      "acceptance_test": "PASS if, across the revised cited spans, no more than two paragraphs still rely on a Not X or not X but Y pivot and at least three of the six beats land through affirmative description instead. FAIL if three or more of those paragraphs still use the same negation-correction setup."
+    }
+  ],
+  "summary": "Atmosphere, sensory specificity, and Leni's observational access are strong, and the chapter lands every required night beat from the boundary pack. It still fails pass level because the close breaks continuity by showing Leni's journal directly, states its theme too explicitly for both award-level subtlety and Leni's declared register, slips out of close-third POV in the final paragraph, and repeats the same negation-based sentence construction often enough to become a visible tic."
+}

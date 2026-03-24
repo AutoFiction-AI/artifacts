@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_10",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "PASS",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch10_dialogue_001",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:653; snapshots/cycle_01/chapters/chapter_10.md:717",
+      "problem": "Ren's central confrontation with Faye lifts calibration-only style-bible language into the draft. The line at 653 reproduces a Ren example line verbatim, and the line at 717 is a near-verbatim reuse of another example line. That is a direct dialogue-register failure: the scene's most important revelations arrive as template leakage instead of live speech.",
+      "rewrite_direction": "Rebuild Ren's reveal beats at snapshots/cycle_01/chapters/chapter_10.md:649, snapshots/cycle_01/chapters/chapter_10.md:653, snapshots/cycle_01/chapters/chapter_10.md:703, and snapshots/cycle_01/chapters/chapter_10.md:717 from scene pressure rather than the calibration samples. Keep the facts Ren needs to convey, but put them in fresh wording shaped by her mechanical precision, low-key profanity profile, and habit of answering the factual core while letting the emotional part stay narrower.",
+      "acceptance_test": "Pass if the revised exchange in snapshots/cycle_01/chapters/chapter_10.md:649-718 contains neither the exact sentence at line 653 nor a near-verbatim restatement of the line at 717 that can be matched phrase-for-phrase to Ren's style-bible examples; fail if a reader can still line up Ren's key reveal lines against the calibration samples and see direct reuse."
+    },
+    {
+      "finding_id": "ch10_dialogue_002",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:653; snapshots/cycle_01/chapters/chapter_10.md:655; snapshots/cycle_01/chapters/chapter_10.md:709; snapshots/cycle_01/chapters/chapter_10.md:711",
+      "problem": "The Ren/Faye confrontation is too composed at the point where it should sound most overheard. Ren repeatedly lands clean thesis lines, and the narration then spotlights their force ('It felt like impact,' 'The sentence sat there...'), which turns the scene into authored significance rather than pressured speech. That is exactly the literary-polish failure the dialogue rules warn about.",
+      "rewrite_direction": "Roughen the exchange at snapshots/cycle_01/chapters/chapter_10.md:649, snapshots/cycle_01/chapters/chapter_10.md:681, snapshots/cycle_01/chapters/chapter_10.md:703, and snapshots/cycle_01/chapters/chapter_10.md:709 so Ren reaches meaning through at least one live adjustment, partial answer, or practical detour instead of a run of finished takeaway lines. At snapshots/cycle_01/chapters/chapter_10.md:655 and snapshots/cycle_01/chapters/chapter_10.md:711, cut the narrator's line-admiring emphasis and let Faye's bodily or cognitive reaction carry the pressure.",
+      "acceptance_test": "Pass if the revised confrontation in snapshots/cycle_01/chapters/chapter_10.md:649-711 includes at least one visibly incomplete or self-corrected Ren answer and no narrator sentence whose job is to announce that a line landed like a thesis or a blow; fail if the scene still stacks multiple polished one-shot lines and then tells the reader how hard they landed."
+    },
+    {
+      "finding_id": "ch10_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:565; snapshots/cycle_01/chapters/chapter_10.md:581; snapshots/cycle_01/chapters/chapter_10.md:599; snapshots/cycle_01/chapters/chapter_10.md:601; snapshots/cycle_01/chapters/chapter_10.md:605; snapshots/cycle_01/chapters/chapter_10.md:613; snapshots/cycle_01/chapters/chapter_10.md:619; snapshots/cycle_01/chapters/chapter_10.md:661",
+      "problem": "The pursuit-and-reveal passage falls into visible prose scaffolding. Six paragraphs in the chase-to-courtyard span open with 'The woman...,' and the reveal then leans on repeated negation-fragment ladders ('Not rudely. Not shyly.' / 'Not a clerk. Not a file.'). Those constructions are strong once; at this frequency they flatten the prose and make the chapter's most important turn feel generated.",
+      "rewrite_direction": "Recast the paragraph starts at snapshots/cycle_01/chapters/chapter_10.md:565, snapshots/cycle_01/chapters/chapter_10.md:581, snapshots/cycle_01/chapters/chapter_10.md:599, snapshots/cycle_01/chapters/chapter_10.md:601, snapshots/cycle_01/chapters/chapter_10.md:605, and snapshots/cycle_01/chapters/chapter_10.md:613 so they alternate among Faye's perception, environmental pressure, and concrete action rather than repeating the same withheld-subject opener. Rework snapshots/cycle_01/chapters/chapter_10.md:619 and snapshots/cycle_01/chapters/chapter_10.md:661 so only one negation-fragment cascade remains as a marked emphasis choice and the rest of the reveal uses syntactically distinct sentences.",
+      "acceptance_test": "Pass if the revised span in snapshots/cycle_01/chapters/chapter_10.md:565-661 contains no more than two paragraphs beginning with the same two-word opener and no more than one multi-sentence negation cascade of the form 'Not X. Not Y...'; fail if the reveal still relies on repeated 'The woman...' starts or multiple fragment ladders that expose the prose's template."
+    }
+  ],
+  "summary": "FAIL. The chapter is continuity-safe, tense-consistent, operationally legible, and strongly committed to its comic-failure engine, so craft passes. It does not clear award/dialogue/prose review because the Ren/Faye confrontation copies calibration-only style-bible lines, over-polishes its key dialogue beats, and slips into repeated formulaic prose at the exact stretch that should feel least templated."
+}

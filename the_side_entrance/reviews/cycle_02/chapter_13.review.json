@@ -1,0 +1,33 @@
+{
+  "chapter_id": "chapter_13",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_13_craft_001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_13",
+      "evidence": "Beni mixes Nina's money with his own without fixing the envelope total, then counts out 300 pounds, Eszter accepts 250, and the last paragraph introduces \"the other thirty\" without a stable prior shortfall (snapshots/cycle_02/chapters/chapter_13.md:343; snapshots/cycle_02/chapters/chapter_13.md:467; snapshots/cycle_02/chapters/chapter_13.md:501; snapshots/cycle_02/chapters/chapter_13.md:513; snapshots/cycle_02/chapters/chapter_13.md:551).",
+      "problem": "The chapter's core moral mechanism depends on exact cash contamination, but the bookkeeping and object handling turn muddy at the payoff. A reader cannot cleanly track how much of the loan is Beni's, how much remains in his pocket, or why another thirty pounds suddenly matters, which weakens causality at the precise moment the chapter is supposed to lock contamination into care. It also leaves the handoff unstable against the boundary pack's chapter-14 memory of the loan.",
+      "rewrite_direction": "Clarify the money choreography in the setup and payoff. At snapshots/cycle_02/chapters/chapter_13.md:337 and snapshots/cycle_02/chapters/chapter_13.md:343, state exactly how much Beni puts in the white envelope and how much of it is his own money. At snapshots/cycle_02/chapters/chapter_13.md:467, snapshots/cycle_02/chapters/chapter_13.md:501, and snapshots/cycle_02/chapters/chapter_13.md:513, make Eszter's accepted total legible against her stated room-and-fares need. At snapshots/cycle_02/chapters/chapter_13.md:551, replace the vague \"other thirty\" beat with a specific remaining amount and purpose so the chapter ends on contamination, not arithmetic haze, and can hand off cleanly into chapter 14.",
+      "acceptance_test": "Pass if a cold reader can account for every discussed amount across snapshots/cycle_02/chapters/chapter_13.md:337, snapshots/cycle_02/chapters/chapter_13.md:343, snapshots/cycle_02/chapters/chapter_13.md:467, snapshots/cycle_02/chapters/chapter_13.md:501, snapshots/cycle_02/chapters/chapter_13.md:513, and snapshots/cycle_02/chapters/chapter_13.md:551 without outside inference: the text explicitly identifies what is in the envelope, what portion is Beni's, what Eszter takes, what remains on him, and why any additional amount is still needed the next day. Fail if the revised ending still leaves the extra 30 pounds or the remaining 50 pounds semantically unmoored."
+    },
+    {
+      "finding_id": "chapter_13_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "The prose falls back on the same \"as if\" comparison template across multiple pressure points instead of varying how observation turns into judgment (snapshots/cycle_02/chapters/chapter_13.md:7; snapshots/cycle_02/chapters/chapter_13.md:83; snapshots/cycle_02/chapters/chapter_13.md:191; snapshots/cycle_02/chapters/chapter_13.md:215; snapshots/cycle_02/chapters/chapter_13.md:367; snapshots/cycle_02/chapters/chapter_13.md:377; snapshots/cycle_02/chapters/chapter_13.md:527).",
+      "problem": "This is a recurring prose construction, not an isolated choice. By the attic scene, the chapter repeatedly reaches for the same inferential hinge to tell the reader what a detail means, and the sentence music starts to flatten. The result is subtle autopilot in a chapter whose best writing is otherwise materially specific and pressure-sensitive.",
+      "rewrite_direction": "Vary the comparison logic in the cited passages. At snapshots/cycle_02/chapters/chapter_13.md:7, snapshots/cycle_02/chapters/chapter_13.md:83, snapshots/cycle_02/chapters/chapter_13.md:191, snapshots/cycle_02/chapters/chapter_13.md:215, snapshots/cycle_02/chapters/chapter_13.md:367, snapshots/cycle_02/chapters/chapter_13.md:377, and snapshots/cycle_02/chapters/chapter_13.md:527, replace at least four of the current \"as if\" constructions with direct physical fact, free-indirect judgment, or a different syntactic turn so the chapter stops leaning on one comparison shape as default prose wiring.",
+      "acceptance_test": "Pass if the revised chapter no longer uses \"as if\" as the default bridge in the cited passages: no more than two of those seven locations still rely on that construction, and each surviving instance earns its place by sharpening a distinct perception rather than doing routine interpretive work. Fail if both the basement and attic scenes still repeat the same comparison template often enough to register as a tic on a single read."
+    }
+  ],
+  "summary": "The chapter lands its austerity-to-contamination spine and keeps Beni, Eszter, Nina, Oscar, Bea, and Laci in voice; dialogue contraction levels and narrative tense remain aligned with the style bible, and I found no contradiction with the continuity sheet's canonical facts. It fails craft because the money bookkeeping turns opaque at the exact moral hinge of the chapter, and it fails prose because a repeated \"as if\" comparison formula starts flattening otherwise sharp observation.",
+  "coverage_scene_ids": []
+}

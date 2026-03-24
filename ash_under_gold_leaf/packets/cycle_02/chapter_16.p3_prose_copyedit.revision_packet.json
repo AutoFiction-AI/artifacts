@@ -1,0 +1,95 @@
+{
+  "acceptance_targets": [
+    "[ch16-prose-001] PASS if, in revised lines 3-39, no run exceeds six consecutive paragraphs without a clear Marisol interior marker (thought, sensation, memory, or self-assessment); FAIL if the opening still reads as uninterrupted external observation for 10+ paragraphs.",
+    "[ch16-prose-002] PASS if the revised chapter uses explicit 'both ... true' style formulation no more than once and the remaining contradiction beats are shown through specific behavior or detail; FAIL if three explicit binary-reconciliation slogans remain.",
+    "[ch16-prose-003] PASS if revised lines around snapshots/cycle_02/chapters/chapter_16.md:105 describe the room's shift using at least two concrete sensory/physical cues and no film/drama meta-language; FAIL if the beat still relies on cinematic abstraction."
+  ],
+  "chapter_id": "chapter_16",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if, in revised lines 3-39, no run exceeds six consecutive paragraphs without a clear Marisol interior marker (thought, sensation, memory, or self-assessment); FAIL if the opening still reads as uninterrupted external observation for 10+ paragraphs.",
+      "chapter_id": "chapter_16",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_16.md:3, snapshots/cycle_02/chapters/chapter_16.md:37, snapshots/cycle_02/chapters/chapter_16.md:39",
+      "finding_id": "ch16-prose-001",
+      "problem": "Interiority drought: the opening runs more than ten consecutive paragraphs of staging/dialogue before Marisol gets an internal beat, pushing the chapter toward external coverage instead of close-third lived pressure.",
+      "rewrite_direction": "Insert interior microbeats within snapshots/cycle_02/chapters/chapter_16.md:13, snapshots/cycle_02/chapters/chapter_16.md:27, and/or snapshots/cycle_02/chapters/chapter_16.md:33-37 so Marisol's thought/sensation/self-assessment threads through the wake setup before the kitchen confrontation.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if the revised chapter uses explicit 'both ... true' style formulation no more than once and the remaining contradiction beats are shown through specific behavior or detail; FAIL if three explicit binary-reconciliation slogans remain.",
+      "chapter_id": "chapter_16",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_16.md:95, snapshots/cycle_02/chapters/chapter_16.md:318, snapshots/cycle_02/chapters/chapter_16.md:356",
+      "finding_id": "ch16-prose-002",
+      "problem": "A recurring contradiction-slogan construction ('both things can be true' / 'those two things can live together' / 'both are true') appears three times and starts to feel programmatic instead of discovered in-scene.",
+      "rewrite_direction": "Keep the thematic contradiction once, but revise at least two of snapshots/cycle_02/chapters/chapter_16.md:95, snapshots/cycle_02/chapters/chapter_16.md:318, and snapshots/cycle_02/chapters/chapter_16.md:356 into concrete action/image that enacts duality without stating the slogan directly.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if revised lines around snapshots/cycle_02/chapters/chapter_16.md:105 describe the room's shift using at least two concrete sensory/physical cues and no film/drama meta-language; FAIL if the beat still relies on cinematic abstraction.",
+      "chapter_id": "chapter_16",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_16.md:105",
+      "finding_id": "ch16-prose-003",
+      "problem": "Generic cinematic phrasing ('Not in a dramatic movie way') undercuts the chapter's otherwise concrete diction and conflicts with the style profile's ban on cinematic-generic drift.",
+      "rewrite_direction": "Replace the abstraction at snapshots/cycle_02/chapters/chapter_16.md:105 with concrete social mechanics already present in-scene (chair scrape stop, phone lift angles, breath/noise drop) so tension shift is rendered materially rather than meta-described.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "a9065066eb1988ec475cfd5b93aa816809b62d18d90101ae6c9c44af727b70b2",
+  "must_fix_count": 3,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on prose and copyedit finish: diction precision, rhythm control, sentence-level clarity, grammar, line-level polish without flattening style, and explicit aesthetic-risk audit (sanitization is the primary risk \u2014 do not soften or euphemize; push toward creative risk and specificity).",
+    "key": "p3_prose_copyedit",
+    "label": "prose/copyedit fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "When choosing between reputationally safe abstraction and specific discomfort, choose specificity. Render addiction, sexuality, deceit, class shame, and grief at lived scale. In edge cases, preserve character truth and causal accountability over reader comfort or institutional decorum.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene demands bodily, moral, or economic specificity, euphemistic phrasing is treated as a failed draft and must be rewritten with concrete stakes and observable consequence.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the spoken default; full forms appear only for emphasis, ritual language, or character-specific formal posture",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate scene density and pressure modes: pair high-conflict chapters with quiet domestic or documentary chapters, vary dialogue-to-interiority ratios, and prevent identical chapter skeletons in consecutive sequence.",
+      "diction": "contemporary literary diction with class-aware, borough-specific concreteness; avoid prestige-neutral workshop language",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third centered on Marisol, with rare brief distance expansions for institutional scenes",
+      "narrative_tense": "past tense",
+      "rhythm_target": "alternating tensile compression and reflective extension; line-level cadence should carry emotional pressure, not just information",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

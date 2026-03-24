@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_14",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "PASS",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch14_dialogue_01",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:53",
+      "problem": "Bea's first explicit accusation lands with an unidiomatic grammatical slip: \"I know what him looks like.\" In the chapter's pivotal reveal beat, that jars against her otherwise precise, high-contraction voice profile and momentarily reads like a drafting error rather than character pressure.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_14.md:53, replace the unidiomatic phrasing with a lean, idiomatic line Bea could plausibly say under stress while keeping her flat certainty and clipped teenage register. Preserve the scene's pressure; do not inflate it into a speech.",
+      "acceptance_test": "Pass if the accusation at snapshots/cycle_01/chapters/chapter_14.md:53 reads as natural spoken English for Bea while retaining her cold certainty; fail if the revised line still uses ungrammatical phrasing like \"what him looks like\" or swings into stiff over-formality."
+    },
+    {
+      "finding_id": "ch14_prose_01",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:203",
+      "problem": "The narration briefly overclaims Nina's interior state: \"She did not know anything had moved under her feet. Or if she knew, she still trusted the house to absorb it...\" The style bible calls for close third anchored to Beni with no roaming omniscience; this beat states Nina's knowledge as fact instead of filtering it through what Beni can actually observe or infer.",
+      "rewrite_direction": "Rework the beat at snapshots/cycle_01/chapters/chapter_14.md:203 so Nina's obliviousness is conveyed through observable behavior or explicit Beni-side inference. Keep the irony, but phrase it as what she gives away in speech, posture, or routine rather than as authoritative access to her mind.",
+      "acceptance_test": "Pass if the revised passage at snapshots/cycle_01/chapters/chapter_14.md:203 stays inside Beni's perceptual reach by describing what Nina does, says, or seems to assume; fail if it still flatly tells the reader whether Nina does or does not know."
+    },
+    {
+      "finding_id": "ch14_prose_02",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:119; snapshots/cycle_01/chapters/chapter_14.md:173; snapshots/cycle_01/chapters/chapter_14.md:277; snapshots/cycle_01/chapters/chapter_14.md:407; snapshots/cycle_01/chapters/chapter_14.md:419",
+      "problem": "The chapter leans repeatedly on the same negation-reset sentence shape: \"It was not X. It was Y.\" / \"The first thing... was not X. It was Y.\" Used this many times in one chapter, the move stops feeling chosen and starts reading like autopilot scaffolding for emphasis.",
+      "rewrite_direction": "Rework at least two of the cited beats at snapshots/cycle_01/chapters/chapter_14.md:119, snapshots/cycle_01/chapters/chapter_14.md:173, snapshots/cycle_01/chapters/chapter_14.md:277, snapshots/cycle_01/chapters/chapter_14.md:407, and snapshots/cycle_01/chapters/chapter_14.md:419 so the image lands directly rather than through the same negation-then-correction formula. Vary the sentence architecture across those moments instead of repeating one emphasis pattern.",
+      "acceptance_test": "Pass if no more than two of the cited beats at snapshots/cycle_01/chapters/chapter_14.md:119, snapshots/cycle_01/chapters/chapter_14.md:173, snapshots/cycle_01/chapters/chapter_14.md:277, snapshots/cycle_01/chapters/chapter_14.md:407, and snapshots/cycle_01/chapters/chapter_14.md:419 still use the negation-reset construction after revision; fail if three or more still rely on the same \"It was not X. It was Y.\" emphasis move."
+    }
+  ],
+  "summary": "Bea's reveal is credible, specific, and causally productive, and Eszter's response lands as wounded adult judgment rather than melodrama; no continuity contradiction, tense drift, or sanitization failure surfaced in this pass. The chapter still fails dialogue/prose review because Bea's opening accusation contains a grammatical misfire, the Nina interlude briefly slips outside Beni's close-third access, and the prose repeats one negation-reset sentence formula often enough to register as a tic."
+}

@@ -1,0 +1,82 @@
+{
+  "acceptance_targets": [
+    "[chapter_02_prose_001] PASS if, across the four cited lines, no more than two retain the exact \"smell(ed) like\" construction and the replacements provide concrete non-olfactory perception; FAIL if three or more of those lines still use the same formula.",
+    "[chapter_02_prose_002] PASS if the revised text at snapshots/cycle_02/chapters/chapter_02.md:245 and snapshots/cycle_02/chapters/chapter_02.md:271 removes colon-labeled fragment lists and verbless inventory strings, replacing them with complete sentences that still clearly mark what is present and missing; FAIL if fragment-list syntax remains the primary construction in those beats."
+  ],
+  "chapter_id": "chapter_02",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if, across the four cited lines, no more than two retain the exact \"smell(ed) like\" construction and the replacements provide concrete non-olfactory perception; FAIL if three or more of those lines still use the same formula.",
+      "chapter_id": "chapter_02",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:9; snapshots/cycle_02/chapters/chapter_02.md:27; snapshots/cycle_02/chapters/chapter_02.md:133; snapshots/cycle_02/chapters/chapter_02.md:305",
+      "finding_id": "chapter_02_prose_001",
+      "problem": "Recurring prose formula (\"smelled like ...\") appears four times and begins to read as autopilot sensory scaffolding rather than intentional variation.",
+      "rewrite_direction": "Rework at least two of the repeated constructions at snapshots/cycle_02/chapters/chapter_02.md:9, snapshots/cycle_02/chapters/chapter_02.md:27, snapshots/cycle_02/chapters/chapter_02.md:133, and snapshots/cycle_02/chapters/chapter_02.md:305 so the sensory setup varies by syntax and channel (sound, touch, spatial pressure) while staying in Lena-close perception.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if the revised text at snapshots/cycle_02/chapters/chapter_02.md:245 and snapshots/cycle_02/chapters/chapter_02.md:271 removes colon-labeled fragment lists and verbless inventory strings, replacing them with complete sentences that still clearly mark what is present and missing; FAIL if fragment-list syntax remains the primary construction in those beats.",
+      "chapter_id": "chapter_02",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:245; snapshots/cycle_02/chapters/chapter_02.md:271",
+      "finding_id": "chapter_02_prose_002",
+      "problem": "Elliptical clipping in the storage-inventory reveal (fragment chains like \"Second box: ... Third box: ...\" and \"No red twine, no ledger...\") pushes narration toward telegraphic shorthand and weakens sentence-level control at a key discovery moment.",
+      "rewrite_direction": "Rewrite the inventory and absence beats at snapshots/cycle_02/chapters/chapter_02.md:245 and snapshots/cycle_02/chapters/chapter_02.md:271 into fully grammatical sentences with explicit subject-verb structure, while preserving urgency through cadence rather than fragment clipping.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "84807b8465d446e2b3831635952e14883338f0748190ad5ebccd5d5706d44718",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on prose and copyedit finish: diction precision, rhythm control, sentence-level clarity, grammar, line-level polish without flattening style, and explicit aesthetic-risk audit (sanitization is the primary risk \u2014 do not soften or euphemize; push toward creative risk and specificity).",
+    "key": "p3_prose_copyedit",
+    "label": "prose/copyedit fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "When edge cases arise, choose the version that preserves uncomfortable specificity and character accountability; do not replace difficult scenes with procedural summary, and do not mute class, race, sexuality, or institutional cruelty when those forces are actively shaping choices.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene with violence, racism, grief, or moral compromise is rendered in abstract or polite shorthand, revise to restore specific bodily, social, and material consequence before accepting the draft.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the baseline in contemporary Mississippi speech; uncontracted forms are reserved for formality, emphasis, or social performance.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "rotate structural textures across chapters: procedural surge, quiet domestic interval, document-driven slow burn, dread preparation, aftermath inventory, and information-turn chapters; avoid repeating scene count plus dialogue density pattern in adjacent chapters.",
+      "diction": "literary but grounded; precise legal and forensic terms when needed, balanced by lived vernacular and local material detail.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third person anchored primarily to Lena, with brief controlled expansions only when factual clarity requires it.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "alternate compressed procedural sentences with longer sensory-emotional lines so pressure and reflection keep rebalancing.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

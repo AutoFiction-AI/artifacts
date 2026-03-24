@@ -1,0 +1,69 @@
+{
+  "acceptance_targets": [
+    "[CH10-PROSE-001] Pass if those cited passages are revised into grammatically complete narrative sentences and no three-fragment shard run remains in the same local spans; fail if fragment-cluster rhythm remains the dominant mechanism in the cited lines."
+  ],
+  "chapter_id": "chapter_10",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if those cited passages are revised into grammatically complete narrative sentences and no three-fragment shard run remains in the same local spans; fail if fragment-cluster rhythm remains the dominant mechanism in the cited lines.",
+      "chapter_id": "chapter_10",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_10.md:3; snapshots/cycle_02/chapters/chapter_10.md:15; snapshots/cycle_02/chapters/chapter_10.md:61",
+      "finding_id": "CH10-PROSE-001",
+      "problem": "A recurring clipped-shard construction appears more than twice in narration (e.g., stand-alone fragments), flattening cadence into a recognizable tic and drifting against the constitution's anti-elliptical-clipping rule.",
+      "rewrite_direction": "In snapshots/cycle_02/chapters/chapter_10.md:3, snapshots/cycle_02/chapters/chapter_10.md:15, and snapshots/cycle_02/chapters/chapter_10.md:61, recast fragment clusters into complete clauses with subject+verb while keeping pressure; vary syntax length so emphasis is not carried primarily by shard fragments.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "21d7e717f94f34d3076409a20f3aff4457248be669061cb5903d1d7acdc0834d",
+  "must_fix_count": 1,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on prose and copyedit finish: diction precision, rhythm control, sentence-level clarity, grammar, line-level polish without flattening style, and explicit aesthetic-risk audit (sanitization is the primary risk \u2014 do not soften or euphemize; push toward creative risk and specificity).",
+    "key": "p3_prose_copyedit",
+    "label": "prose/copyedit fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "When choosing between reputationally safe abstraction and specific discomfort, choose specificity. Render addiction, sexuality, deceit, class shame, and grief at lived scale. In edge cases, preserve character truth and causal accountability over reader comfort or institutional decorum.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene demands bodily, moral, or economic specificity, euphemistic phrasing is treated as a failed draft and must be rewritten with concrete stakes and observable consequence.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the spoken default; full forms appear only for emphasis, ritual language, or character-specific formal posture",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate scene density and pressure modes: pair high-conflict chapters with quiet domestic or documentary chapters, vary dialogue-to-interiority ratios, and prevent identical chapter skeletons in consecutive sequence.",
+      "diction": "contemporary literary diction with class-aware, borough-specific concreteness; avoid prestige-neutral workshop language",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third centered on Marisol, with rare brief distance expansions for institutional scenes",
+      "narrative_tense": "past tense",
+      "rhythm_target": "alternating tensile compression and reflective extension; line-level cadence should carry emotional pressure, not just information",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

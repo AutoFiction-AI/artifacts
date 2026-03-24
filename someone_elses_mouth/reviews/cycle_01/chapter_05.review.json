@@ -1,0 +1,63 @@
+{
+  "chapter_id": "chapter_05",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_05_f001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:19",
+      "problem": "Line 19 says Lena is acting after \"months of hearing a man's voice in your ear,\" but the continuity sheet places chapter_05 in mid-September 2027, only weeks after the late-August match and early-September exclusivity. That is a direct timeline contradiction.",
+      "rewrite_direction": "At `snapshots/cycle_01/chapters/chapter_05.md:19`, replace the duration language with a span that fits the established timeline, or anchor it to an exact felt count of weeks or days so Lena's anticipation stays intense without falsifying chronology.",
+      "acceptance_test": "PASS if the revised sentence at `snapshots/cycle_01/chapters/chapter_05.md:19` describes a duration compatible with a late-August story start and a mid-September chapter_05; FAIL if it still implies multiple months of courtship."
+    },
+    {
+      "finding_id": "chapter_05_f002",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:367; snapshots/cycle_01/chapters/chapter_05.md:371; snapshots/cycle_01/chapters/chapter_05.md:377",
+      "problem": "The transfer mechanics break the chapter boundary: this chapter renders the payment as a new Zelle recipient added by email, but the boundary pack's chapter 6 opening depends on a Cash App receipt with app-specific confirmation behavior. That is an object-state/payment-platform contradiction at the exact handoff between chapters.",
+      "rewrite_direction": "Align the transfer details at `snapshots/cycle_01/chapters/chapter_05.md:367`, `snapshots/cycle_01/chapters/chapter_05.md:371`, and `snapshots/cycle_01/chapters/chapter_05.md:377` with the adjacent chapter boundary so the same payment platform, confirmation language, and receipt behavior carry forward cleanly.",
+      "acceptance_test": "PASS if a reader moving from the revised transfer sequence at `snapshots/cycle_01/chapters/chapter_05.md:367`, `snapshots/cycle_01/chapters/chapter_05.md:371`, and `snapshots/cycle_01/chapters/chapter_05.md:377` into chapter 6 encounters one continuous payment workflow with the same app semantics; FAIL if chapter_05 still uses Zelle-specific behavior while chapter 6 opens on Cash App-specific output."
+    },
+    {
+      "finding_id": "chapter_05_f003",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:265; snapshots/cycle_01/chapters/chapter_05.md:293; snapshots/cycle_01/chapters/chapter_05.md:407",
+      "problem": "June's sharpness is right, but several key lines drift from her practical, locally fluent register into thesis-ready authorial maxims: \"money changes the furniture,\" \"don't stuff the whole ruined night down the app and call it romance,\" and \"I just need you to know what chapter we're in.\" The style bible wants remembered facts, neighborhood shorthand, and practical consequence from her, not meta-story phrasing.",
+      "rewrite_direction": "At `snapshots/cycle_01/chapters/chapter_05.md:265`, `snapshots/cycle_01/chapters/chapter_05.md:293`, and `snapshots/cycle_01/chapters/chapter_05.md:407`, keep June severe but recast the warning in her own idiom: concrete money mechanics, observed patterns, or remembered facts other people hoped she had forgotten, rather than novel-aware phrasing or free-floating maxims.",
+      "acceptance_test": "PASS if each revised June warning at `snapshots/cycle_01/chapters/chapter_05.md:265`, `snapshots/cycle_01/chapters/chapter_05.md:293`, and `snapshots/cycle_01/chapters/chapter_05.md:407` reads as her voice through concrete consequence or remembered fact, and none of the three lines relies on meta-narrative wording such as \"chapter\" or a standalone abstract aphorism; FAIL if the scene still reads like June delivering the novel's thesis in polished slogans."
+    },
+    {
+      "finding_id": "chapter_05_f004",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:5; snapshots/cycle_01/chapters/chapter_05.md:61; snapshots/cycle_01/chapters/chapter_05.md:161; snapshots/cycle_01/chapters/chapter_05.md:207; snapshots/cycle_01/chapters/chapter_05.md:329; snapshots/cycle_01/chapters/chapter_05.md:427",
+      "problem": "The chapter overuses the `it/that made...` scaffold at emotional pivots. In isolation the phrasing works, but repeated across six key turns it becomes a recognizable template that explains effect instead of letting image, action, or syntax carry the shift.",
+      "rewrite_direction": "Revise at least four of `snapshots/cycle_01/chapters/chapter_05.md:5`, `snapshots/cycle_01/chapters/chapter_05.md:61`, `snapshots/cycle_01/chapters/chapter_05.md:161`, `snapshots/cycle_01/chapters/chapter_05.md:207`, `snapshots/cycle_01/chapters/chapter_05.md:329`, and `snapshots/cycle_01/chapters/chapter_05.md:427` so the emotional turn lands through direct sensation, action, or sharper syntax rather than the repeated causal formula.",
+      "acceptance_test": "PASS if no more than two of those six cited pivots still use the `it/that made...` construction and each revised moment remains clearly legible on first read; FAIL if the same scaffold continues to carry most of the chapter's emotional turns."
+    },
+    {
+      "finding_id": "chapter_05_f005",
+      "source": "award",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:221; snapshots/cycle_01/chapters/chapter_05.md:293; snapshots/cycle_01/chapters/chapter_05.md:373; snapshots/cycle_01/chapters/chapter_05.md:445",
+      "problem": "The chapter does not fully trust its own breach. June diagnoses Lena's mixed motive, Lena then diagnoses it again at the point of transfer, and the close interprets it again for multiple future audiences. The result is emotionally legible but over-insulated; shortlist-level work would leave more raw discomfort unparsed.",
+      "rewrite_direction": "Choose one explanatory locus and cut or harden the others: either let June's analysis carry the motive at `snapshots/cycle_01/chapters/chapter_05.md:221` and `snapshots/cycle_01/chapters/chapter_05.md:293`, or let Lena's pre-send thought at `snapshots/cycle_01/chapters/chapter_05.md:373` do the work, but strip the closing passage at `snapshots/cycle_01/chapters/chapter_05.md:445` down to concrete aftermath rather than a second or third thematic summary.",
+      "acceptance_test": "PASS if the revised chapter states Lena's mixed motive explicitly in only one of these zones: June's analysis, Lena's pre-send thought, or the closing summary, and the ending lands on a concrete aftereffect rather than another interpretive unpacking; FAIL if the same motive is still diagnosed before the send, at the send, and again in the final paragraph."
+    }
+  ],
+  "summary": "Vivid and materially specific chapter with real pressure and consequence, but it fails this pass on control: the chronology says \"months\" where canon allows only weeks, the payment app contradicts the chapter boundary, June occasionally slips into thesis-ready dialogue, and the prose/close repeat explanatory scaffolds instead of trusting the breach.",
+  "coverage_scene_ids": []
+}

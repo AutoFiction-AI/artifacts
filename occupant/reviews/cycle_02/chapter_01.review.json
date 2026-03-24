@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_01",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_01_f001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_02/chapters/chapter_01.md:25; snapshots/cycle_02/chapters/chapter_01.md:27; snapshots/cycle_02/chapters/chapter_01.md:113; snapshots/cycle_02/chapters/chapter_01.md:265",
+      "problem": "The chapter leans on repeated negation and anaphora frames (`He knew...`, `It was not...`, `He had not...`) often enough that emphasis turns into sentence machinery. The repetition suits Nate's obsessive mind once or twice, but at this frequency it starts to read like a generated prose tic rather than controlled compulsion.",
+      "rewrite_direction": "Rework the formula-heavy passages starting at `snapshots/cycle_02/chapters/chapter_01.md:21`, `snapshots/cycle_02/chapters/chapter_01.md:25`, `snapshots/cycle_02/chapters/chapter_01.md:113`, and `snapshots/cycle_02/chapters/chapter_01.md:263`. Keep the same factual payload and Nate-specific obsession, but vary how the information lands: convert some beats into image, consequence, or bodily/sensory reaction instead of resetting with another identical sentence stem.",
+      "acceptance_test": "Pass if the revised passages still establish the Eastbridge facts, Nate's partial self-awareness, and the body-overwrite realization, but no identical opening frame (`He knew`, `It was not`, `He had not` or `He was not`) appears more than twice in the same local passage. Fail if the revised lines still stack three or more identical sentence starts to do basic informational work."
+    },
+    {
+      "finding_id": "chapter_01_f002",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_02/chapters/chapter_01.md:147; snapshots/cycle_02/chapters/chapter_01.md:153; snapshots/cycle_02/chapters/chapter_01.md:273; snapshots/cycle_02/chapters/chapter_01.md:305",
+      "problem": "The chapter decodes the same mechanism too many times. The control panel announces consciousness-only transfer, Nate glosses the warning before launch, the bedside aftermath translates it again, and the close restates the replacement thesis. Because the overwrite is already legible through the wrong body, the clock, Sarah's touch, and the UI text, the repeated explanation starts re-proving a fact the scene has already landed.",
+      "rewrite_direction": "Compress one of the explanatory passes centered on `snapshots/cycle_02/chapters/chapter_01.md:147`, `snapshots/cycle_02/chapters/chapter_01.md:153`, `snapshots/cycle_02/chapters/chapter_01.md:273`, and `snapshots/cycle_02/chapters/chapter_01.md:295`. Keep the needed operational legibility: Nate expects physical travel, the machine is set to consciousness-only transfer, and he realizes Dominic is gone. Once that fact is unmistakable on the page, spend the remaining space on immediate pressure from Sarah, the borrowed body's impulses, and Nate's panic rather than another paraphrase of the mechanism.",
+      "acceptance_test": "Pass if the revised third scene still gives a cold reader four concrete facts from the page: the on-screen warning, Nate waking in Dominic's body beside Sarah, `3:47` and `JUL 11 2005`, and the realization that Dominic was overwritten. After that fact first becomes unmistakable, each remaining paragraph must introduce new pressure or consequence rather than restating the transfer logic in fresh wording. Fail if the scene still contains multiple separate explanatory beats whose only dramatic work is to say again that this was body replacement, not travel."
+    }
+  ],
+  "summary": "Chapter 1 has a strong hook, a legible and darkly funny vibe-coding build sequence, and an excellent bedside-arrival payoff. It still falls short of pass-level award/craft/prose quality because recurring sentence formulas and repeated mechanism-decoding flatten pressure in places where the chapter should trust its strongest images and consequences to carry more of the load."
+}

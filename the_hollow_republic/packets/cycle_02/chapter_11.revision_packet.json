@@ -1,0 +1,77 @@
+{
+  "acceptance_targets": [
+    "[ch11-booker-001] In the revised passage covering snapshots/cycle_02/chapters/chapter_11.md:243-257, at least one adult takes an observable step to secure the satchel or pistol after the argument, and Abel's successful theft happens only because he clearly circumvents or defeats that step. If a careful reader can still ask why the explosive satchel was left casually accessible after the room had already identified both the bag and Abel's agitation, this finding remains open.",
+    "[ch11-prose-001] In the revised text at snapshots/cycle_02/chapters/chapter_11.md:51-57, snapshots/cycle_02/chapters/chapter_11.md:79-95, snapshots/cycle_02/chapters/chapter_11.md:191, and snapshots/cycle_02/chapters/chapter_11.md:423-424, the narration conveys contrast through complete clauses rather than standalone clipped negation fragments. Pass if those cited spans no longer contain fragment beats like \"Not running.\" or \"Not on her.\" and the emphasis still reads clearly in context; fail if the chapter continues to rely on the same fragment formula in those locations."
+  ],
+  "chapter_id": "chapter_11",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "In the revised passage covering snapshots/cycle_02/chapters/chapter_11.md:243-257, at least one adult takes an observable step to secure the satchel or pistol after the argument, and Abel's successful theft happens only because he clearly circumvents or defeats that step. If a careful reader can still ask why the explosive satchel was left casually accessible after the room had already identified both the bag and Abel's agitation, this finding remains open.",
+      "chapter_id": "chapter_11",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_11.md:243; snapshots/cycle_02/chapters/chapter_11.md:245; snapshots/cycle_02/chapters/chapter_11.md:249; snapshots/cycle_02/chapters/chapter_11.md:255; snapshots/cycle_02/chapters/chapter_11.md:257",
+      "finding_id": "ch11-booker-001",
+      "problem": "The chapter's decisive turn depends on the room dropping its guard around the single most dangerous object in play. After Ferrand openly baits Abel toward spectacle, Elise notices Abel fixating on the satchel, and Lucien explicitly orders Ferrand to keep the bag shut or take it aboveground, the text still lets Abel carry the satchel and pistol into the sleeping gallery without any meaningful security step. That makes Abel's theft feel author-protected rather than causally earned.",
+      "rewrite_direction": "Rework the satchel handoff and theft around snapshots/cycle_02/chapters/chapter_11.md:243, snapshots/cycle_02/chapters/chapter_11.md:249, and snapshots/cycle_02/chapters/chapter_11.md:255-257 so Abel gets access by overcoming a concrete precaution instead of benefiting from everyone relaxing at once. Options: Lucien takes custody and Abel deceives or steals from him later; Clemence orders the bag locked away and Abel uses Lucie's report or quarry traffic to get at it; Ferrand refuses to relinquish it and Abel takes it during a sharper distraction. Preserve the countdown, but make the theft the result of action against resistance.",
+      "severity": "HIGH",
+      "source": "booker",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "In the revised text at snapshots/cycle_02/chapters/chapter_11.md:51-57, snapshots/cycle_02/chapters/chapter_11.md:79-95, snapshots/cycle_02/chapters/chapter_11.md:191, and snapshots/cycle_02/chapters/chapter_11.md:423-424, the narration conveys contrast through complete clauses rather than standalone clipped negation fragments. Pass if those cited spans no longer contain fragment beats like \"Not running.\" or \"Not on her.\" and the emphasis still reads clearly in context; fail if the chapter continues to rely on the same fragment formula in those locations.",
+      "chapter_id": "chapter_11",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_11.md:51; snapshots/cycle_02/chapters/chapter_11.md:57; snapshots/cycle_02/chapters/chapter_11.md:79; snapshots/cycle_02/chapters/chapter_11.md:91; snapshots/cycle_02/chapters/chapter_11.md:191; snapshots/cycle_02/chapters/chapter_11.md:423",
+      "finding_id": "ch11-prose-001",
+      "problem": "The narration repeatedly falls into clipped negation fragments such as \"Not running. Not startled.\", \"Not a fist.\", and \"Not on her.\" This is both a visible chapter-level tic and a direct violation of the constitution's ban on elliptical clipping in narration. The repeated fragment-reversal rhythm starts reading like formula instead of pressure-shaped prose.",
+      "rewrite_direction": "Rewrite the clipped beats at snapshots/cycle_02/chapters/chapter_11.md:51, snapshots/cycle_02/chapters/chapter_11.md:57, snapshots/cycle_02/chapters/chapter_11.md:79, snapshots/cycle_02/chapters/chapter_11.md:91-95, snapshots/cycle_02/chapters/chapter_11.md:191, and snapshots/cycle_02/chapters/chapter_11.md:423-424 into grammatically complete sentences or fuller clauses that carry the same emphasis without subject-dropping. Vary the sentence music rather than leaning on repeated \"Not X. Y.\" reversals.",
+      "severity": "HIGH",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "acfbccaa0469abc6c7703cde970c4f9b87220e2de39c17c043fd68cf1b5720b0",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into the contradiction that tenderness can coexist with surveillance, desire with betrayal, and ideology with vanity. Render violence, sex, illness, and poverty at the scale characters actually experience them. When an edge case appears, choose the more specific and less reputationally safe version if it remains faithful to character, period, and causality.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene reaches bodily danger, sex, grief, class shame, or political cruelty and then retreats into summary, rewrite toward the exact physical and social fact the character cannot evade.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "Moderate to high; contractions are the spoken default, with full forms reserved for period formality, deliberate emphasis, or Vautrin's cultivated precision.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate compressive surveillance chapters with slower communal or reflective chapters; vary scene count, dialogue density, and whether the turn comes from action, information, dread, or aftermath so no two adjacent chapters run on the same structural rhythm.",
+      "diction": "Historically grounded and unsentimental; plain enough for labor and bureaucracy, lyrical only when perception earns it rather than rhetoric.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third centered on Elise, elastic enough to register class texture, political pressure, and the quarry's collective life without drifting into authorial essay.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Supple, image-bearing sentences broken by hard factual beats at moments of violence, lust, bureaucratic coercion, or shame.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_14",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "PASS",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_14_dialogue_001",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:391",
+      "problem": "Rhea's climactic line, \"I don't need you clean... I need you accurate,\" lands too close to her calibration-only style-bible example and reads like reused scaffolding instead of freshly discovered speech. Because this is the chapter's emotional hinge, the echo breaks the non-copyable example-line rule and weakens character-voice credibility at the exact point the scene needs maximum authority.",
+      "rewrite_direction": "Rewrite the exchange at snapshots/cycle_01/chapters/chapter_14.md:389-395 so Rhea states her standard for Mina in original language that still fits Rhea's measured, exacting register, and revise Mina's answer at snapshots/cycle_01/chapters/chapter_14.md:395 so it responds to that new wording instead of repeating the same keyword pair.",
+      "acceptance_test": "PASS if the revised passage at snapshots/cycle_01/chapters/chapter_14.md:389-395 contains no `I don't need ... I need ...` clean/accuracy formulation and no near-verbatim echo of any `example_lines` from `outline/style_bible.json`, while still making Rhea's standard for Mina immediately legible in-scene; FAIL if the beat still hinges on the clean/accurate contrast or another calibration-style sentence template."
+    },
+    {
+      "finding_id": "chapter_14_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:145; snapshots/cycle_01/chapters/chapter_14.md:191; snapshots/cycle_01/chapters/chapter_14.md:295; snapshots/cycle_01/chapters/chapter_14.md:357; snapshots/cycle_01/chapters/chapter_14.md:419",
+      "problem": "The chapter reuses the same corrective sentence shape across multiple key beats: it tells the reader what a moment is not, then supplies the approved meaning. After the third or fourth instance, the move reads as a prose tic rather than deliberate emphasis, flattening surprise and violating the constitution's ban on recurring formulas that appear more than twice in a chapter.",
+      "rewrite_direction": "Vary at least three of the repeated corrective beats at snapshots/cycle_01/chapters/chapter_14.md:145, snapshots/cycle_01/chapters/chapter_14.md:191, snapshots/cycle_01/chapters/chapter_14.md:295, snapshots/cycle_01/chapters/chapter_14.md:357, and snapshots/cycle_01/chapters/chapter_14.md:419 so those moments land through image, action, or consequence rather than `not X / actually Y` explanation.",
+      "acceptance_test": "PASS if, across the revised lines at snapshots/cycle_01/chapters/chapter_14.md:145, snapshots/cycle_01/chapters/chapter_14.md:191, snapshots/cycle_01/chapters/chapter_14.md:295, snapshots/cycle_01/chapters/chapter_14.md:357, and snapshots/cycle_01/chapters/chapter_14.md:419, no more than two moments still use a direct negation-then-correction structure and at least three are rendered without explicit self-correction; FAIL if the same rhetorical shape still appears in three or more of those beats."
+    }
+  ],
+  "summary": "The chapter lands its structural brief: the paddle-survey tempo shift works, continuity holds, and Mina and Rhea mostly stay inside their canonical emotional and sensory registers. It still falls short of pass-level dialogue/prose control because the emotional capstone echoes a non-copyable style-bible calibration line and the prose repeats a corrective `not X / actually Y` sentence formula often enough to feel mechanical."
+}

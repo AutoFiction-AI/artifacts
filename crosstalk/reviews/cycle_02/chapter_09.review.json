@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_09",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_09_craft_001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_02/chapters/chapter_09.md:238 uses 'swore under his breath' at the exact moment Jet's reaction should become concrete.",
+      "problem": "This is scrubbed-profane sanitization. The constitution explicitly forbids summarizing profanity instead of rendering the utterance, and the summary lands at the chapter's first fully personal Ed reveal, where the prose should stay specific rather than retreat into generic shorthand.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_09.md:238 so Jet's reaction is rendered as an actual spoken fragment or a comparably specific physical response tied to the burning onions and Ed's revelation. Keep the displacement beat, but replace the generic report phrase with concrete language or action in snapshots/cycle_02/chapters/chapter_09.md:236 and snapshots/cycle_02/chapters/chapter_09.md:239.",
+      "acceptance_test": "At snapshots/cycle_02/chapters/chapter_09.md:236-239, Jet's frustration is shown through a literal utterance or equally specific embodied reaction; generic summaries such as 'swore under his breath' or 'cursed' do not appear, and the beat still reads as Jet redirecting pain into practical motion."
+    },
+    {
+      "finding_id": "chapter_09_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_02/chapters/chapter_09.md:226, snapshots/cycle_02/chapters/chapter_09.md:344, snapshots/cycle_02/chapters/chapter_09.md:388, snapshots/cycle_02/chapters/chapter_09.md:404, snapshots/cycle_02/chapters/chapter_09.md:480, and snapshots/cycle_02/chapters/chapter_09.md:520 all externalize emotional change through the same room-motion or hush construction.",
+      "problem": "The chapter repeats a single reaction template for multiple reveal beats: the room changes, the room shifts, the room gets quiet, the room moves, the room goes still. After the first instance, the construction stops feeling chosen and starts reading like autopilot, flattening distinct emotional turns into one ambient signal instead of letting Jet, Faye, Spike, and Ed register differently.",
+      "rewrite_direction": "Rework at least three of the reaction beats in snapshots/cycle_02/chapters/chapter_09.md:226, snapshots/cycle_02/chapters/chapter_09.md:344, snapshots/cycle_02/chapters/chapter_09.md:388, snapshots/cycle_02/chapters/chapter_09.md:404, snapshots/cycle_02/chapters/chapter_09.md:480, and snapshots/cycle_02/chapters/chapter_09.md:520 so the chapter stops defaulting to room-level abstraction. Replace those lines with character-specific bodily, vocal, or object-interaction consequences seen through Ed's POV, and preserve only the strongest single room-wide hush if desired.",
+      "acceptance_test": "In the revised versions of the cited spans, no more than one beat relies on 'the room' changing or going quiet; at least three of those beats instead land through distinct, readable reactions from named characters or concrete environmental interactions that are not interchangeable with one another."
+    }
+  ],
+  "summary": "Ed's voice, the chapter's comic escalation, and the cross-linked reveal architecture are strong enough to pass dialogue but not enough to clear award scrutiny while these issues remain. No continuity contradiction or tense drift surfaced from the allowed inputs, but the chapter still fails craft on a direct sanitization slip and fails prose on a repeated room-reaction formula that blunts the individuality of its major reveals."
+}

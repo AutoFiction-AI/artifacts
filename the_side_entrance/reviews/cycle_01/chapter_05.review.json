@@ -1,0 +1,33 @@
+{
+  "chapter_id": "chapter_05",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch05-craft-001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:133; snapshots/cycle_01/chapters/chapter_05.md:245; snapshots/cycle_01/chapters/chapter_05.md:255; snapshots/cycle_01/chapters/chapter_05.md:279; snapshots/cycle_01/chapters/chapter_05.md:291; snapshots/cycle_01/chapters/chapter_05.md:433; snapshots/cycle_01/chapters/chapter_05.md:477; snapshots/cycle_01/chapters/chapter_05.md:511",
+      "problem": "The chapter repeatedly falls into clipped fragment narration (for example, \"Potatoes peeled. Onions sliced.\" and \"Too young. Too poor.\"), which violates the constitution's ban on elliptical clipping and makes several emotional beats arrive in the same preset cadence instead of earning their pressure syntactically.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_05.md:133, snapshots/cycle_01/chapters/chapter_05.md:245, snapshots/cycle_01/chapters/chapter_05.md:255, snapshots/cycle_01/chapters/chapter_05.md:279, snapshots/cycle_01/chapters/chapter_05.md:291, snapshots/cycle_01/chapters/chapter_05.md:433, snapshots/cycle_01/chapters/chapter_05.md:477, and snapshots/cycle_01/chapters/chapter_05.md:511, recast the standalone fragments into complete grammatical sentences or clearly attributed interior thought while keeping the compression. Preserve intensity through subordination, apposition, or an added concrete sensory consequence, not through dropped subjects and sentence shards.",
+      "acceptance_test": "Pass if a read of snapshots/cycle_01/chapters/chapter_05.md:133, snapshots/cycle_01/chapters/chapter_05.md:245, snapshots/cycle_01/chapters/chapter_05.md:255, snapshots/cycle_01/chapters/chapter_05.md:279, snapshots/cycle_01/chapters/chapter_05.md:291, snapshots/cycle_01/chapters/chapter_05.md:433, snapshots/cycle_01/chapters/chapter_05.md:477, and snapshots/cycle_01/chapters/chapter_05.md:511 finds no standalone subjectless fragments used as intensity beats; fail if the revised passage still relies on clipped shards such as \"Too young. Too poor.\" or \"Not service. Not waiting.\"."
+    },
+    {
+      "finding_id": "ch05-prose-001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:245; snapshots/cycle_01/chapters/chapter_05.md:345; snapshots/cycle_01/chapters/chapter_05.md:433",
+      "problem": "The prose uses the room itself as Beni's emotion barometer three times in one chapter (it moves closer, tightens, then feels smaller). Spatial pressure is part of the style bible, but by the third recurrence the move reads as a visible formula rather than fresh perception.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_05.md:245, snapshots/cycle_01/chapters/chapter_05.md:345, and snapshots/cycle_01/chapters/chapter_05.md:433, keep at most one room-pressure beat. Rewrite at least two of those moments so the emotional shift lands through a different concrete channel specific to the beat, such as Beni's body, the objects in his hands, or the soundscape of the flat.",
+      "acceptance_test": "Pass if, across snapshots/cycle_01/chapters/chapter_05.md:245, snapshots/cycle_01/chapters/chapter_05.md:345, and snapshots/cycle_01/chapters/chapter_05.md:433, no more than one beat externalizes feeling by making the room physically close, tighten, or shrink, and at least two of the three revised beats register pressure through a different observable detail. Fail if all three still use the room as the same emotional proxy."
+    }
+  ],
+  "summary": "Chapter 5 lands its quiet-turn obligation: the shopping, cooking, Laci interruption, and landing kiss all advance the required consequence; Beni, Eszter, and Laci stay voice-consistent with the style bible; and no continuity contradiction, tense drift, sanitization failure, intimacy fade-to-black, or 10-plus-paragraph interiority lapse appears in the audited text. It still fails on craft and prose because recurrent clipped-fragment narration breaks the constitution's no-elliptical-clipping rule and the repeated room-tightening spatial-pressure move becomes a visible tic.",
+  "coverage_scene_ids": []
+}

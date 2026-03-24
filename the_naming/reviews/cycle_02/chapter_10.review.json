@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_10",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_10_craft_continuity_reva_timeline",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_10",
+      "evidence": "At snapshots/cycle_02/chapters/chapter_10.md:13 Melie is framed as if her mother's disappearance happened only weeks ago; at snapshots/cycle_02/chapters/chapter_10.md:57 Jin says the death was 'last year'; at snapshots/cycle_02/chapters/chapter_10.md:159 Jin remembers the transit-office lie as a recent event; at snapshots/cycle_02/chapters/chapter_10.md:193 he thinks of 'Three months of managing Melie alone.'",
+      "problem": "This chapter breaks canon on both the private and public timeline of Reva's disappearance. The continuity sheet fixes the real abandonment as happening when Melie was four and Jin's public death lie as a three-months-earlier claim, but this chapter treats the abandonment as fresh and improvises a different public date. Because Fasa does not confront the earlier public version, the intended interrogation pressure turns into a continuity error.",
+      "rewrite_direction": "Rework the abandonment setup beginning at snapshots/cycle_02/chapters/chapter_10.md:13 and the backstory memory beginning at snapshots/cycle_02/chapters/chapter_10.md:159 so Jin's private history reads as a two-year wound, not a three-month one. Then revise the questioning beginning at snapshots/cycle_02/chapters/chapter_10.md:51 and the mirrored follow-up beginning at snapshots/cycle_02/chapters/chapter_10.md:107 so the public lie either stays consistent with the already-established three-month timeline or Fasa explicitly names the contradiction on the page.",
+      "acceptance_test": "PASS if a reader can move through snapshots/cycle_02/chapters/chapter_10.md:13, snapshots/cycle_02/chapters/chapter_10.md:51, snapshots/cycle_02/chapters/chapter_10.md:107, snapshots/cycle_02/chapters/chapter_10.md:159, and snapshots/cycle_02/chapters/chapter_10.md:193 and infer one coherent chronology: Reva left when Melie was four, Jin has been carrying that abandonment since then, and the death lie used in this naming matches or is explicitly confronted against the earlier three-month claim. FAIL if those passages still imply both a recent abandonment and a different public death date without acknowledgment."
+    },
+    {
+      "finding_id": "chapter_10_prose_jin_voice_abstraction",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "At snapshots/cycle_02/chapters/chapter_10.md:55 the narration gives Jin 'narrative architecture'; at snapshots/cycle_02/chapters/chapter_10.md:99 it calls the lie 'three layers deep'; at snapshots/cycle_02/chapters/chapter_10.md:145 Melie's expectations become 'the architecture of her world'; at snapshots/cycle_02/chapters/chapter_10.md:163 the narration says 'The lie relied on decency.'",
+      "problem": "Jin's close-third interior intermittently slips into essayistic, meta-narrative abstraction that does not match the style bible's concrete, body-first private register. These lines sound like an external analyst arranging the scene rather than Jin thinking under humiliation pressure.",
+      "rewrite_direction": "Replace the abstract framing at snapshots/cycle_02/chapters/chapter_10.md:55, snapshots/cycle_02/chapters/chapter_10.md:99, snapshots/cycle_02/chapters/chapter_10.md:145, and snapshots/cycle_02/chapters/chapter_10.md:163 with objects, bodily cues, and immediate scene logic Jin would actually notice: the missing letter, the catch in his jaw, Melie's face in the children's cluster, the transit form in his hand.",
+      "acceptance_test": "PASS if those cited passages still communicate Jin's trap but do so through body, object, and situational detail rather than meta terms like 'architecture,' 'fiction,' or generalized moral commentary. FAIL if the revised lines still sound like an essay about lying instead of Jin's physically grounded interiority."
+    },
+    {
+      "finding_id": "chapter_10_prose_explanatory_formula_tic",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "The chapter repeats the same explanatory sentence shape at snapshots/cycle_02/chapters/chapter_10.md:5 ('the weariness of a woman who...'), snapshots/cycle_02/chapters/chapter_10.md:47 ('the cadence of someone who...'), snapshots/cycle_02/chapters/chapter_10.md:145 ('the confusion of a child whose...'), snapshots/cycle_02/chapters/chapter_10.md:199 ('the care of a man whose...'), snapshots/cycle_02/chapters/chapter_10.md:223 ('the adjustment of a man who...'), and snapshots/cycle_02/chapters/chapter_10.md:227 ('the economy of a man who...').",
+      "problem": "This repeated interpretive formula becomes a visible prose tic. After the third or fourth instance, the narration starts pre-explaining what a gesture means instead of trusting the gesture itself, which flattens otherwise strong scene detail.",
+      "rewrite_direction": "Vary or cut most of the explanatory glosses at snapshots/cycle_02/chapters/chapter_10.md:5, snapshots/cycle_02/chapters/chapter_10.md:47, snapshots/cycle_02/chapters/chapter_10.md:145, snapshots/cycle_02/chapters/chapter_10.md:199, snapshots/cycle_02/chapters/chapter_10.md:223, and snapshots/cycle_02/chapters/chapter_10.md:227. Keep at most two of this sentence shape and let the rest land through action, cadence, and sensory detail without appended decoding.",
+      "acceptance_test": "PASS if, when reading the six cited passages, no more than two still rely on the 'the [noun] of a [person] who...' explanatory construction and the other moments register through observable behavior alone. FAIL if that template remains the chapter's default way of telling the reader how to interpret people."
+    }
+  ],
+  "summary": "The chapter's public-humiliation engine and the Bram coda both work, and the best passages stay close to Jin's shame in concrete physical detail. It still fails review because it breaks canon on Reva's timeline and occasionally swaps Jin's harder, body-led register for analytic, repetitive explanation."
+}

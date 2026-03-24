@@ -1,0 +1,62 @@
+{
+  "chapter_id": "chapter_12",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_12_F001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:7; snapshots/cycle_01/chapters/chapter_12.md:15",
+      "problem": "Clinic time continuity breaks inside the chapter handoff: this draft sets the appointment to 10:40, while the boundary handoff from chapter 11 establishes 12:40. The mismatch destabilizes timeline pressure and transport stakes.",
+      "rewrite_direction": "Normalize appointment timing at snapshots/cycle_01/chapters/chapter_12.md:7 and snapshots/cycle_01/chapters/chapter_12.md:15 to the canonical handoff time, then reconcile downstream schedule logic at snapshots/cycle_01/chapters/chapter_12.md:103 and snapshots/cycle_01/chapters/chapter_12.md:141 so departure, wait, and return windows no longer conflict.",
+      "acceptance_test": "Pass if all time references in snapshots/cycle_01/chapters/chapter_12.md:7, snapshots/cycle_01/chapters/chapter_12.md:15, snapshots/cycle_01/chapters/chapter_12.md:103, and snapshots/cycle_01/chapters/chapter_12.md:141 describe one coherent appointment schedule with no contradictory return expectation; fail if incompatible times remain." 
+    },
+    {
+      "finding_id": "chapter_12_F002",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:173; snapshots/cycle_01/chapters/chapter_12.md:187; snapshots/cycle_01/chapters/chapter_12.md:243; snapshots/cycle_01/chapters/chapter_12.md:261; snapshots/cycle_01/chapters/chapter_12.md:305",
+      "problem": "The chapter restates the same medical-risk thesis multiple times (clinical explanation, symptom list, narrated list, final declaration), which reduces escalation and undercuts Booker-level subtlety in the final movement.",
+      "rewrite_direction": "Keep the first full risk articulation at snapshots/cycle_01/chapters/chapter_12.md:173 and snapshots/cycle_01/chapters/chapter_12.md:187 as the primary statement, then tighten duplicate restatements at snapshots/cycle_01/chapters/chapter_12.md:243, snapshots/cycle_01/chapters/chapter_12.md:261, and snapshots/cycle_01/chapters/chapter_12.md:305. Replace at least one repeated explanation with a new consequential action beat (for example, a concrete transport/household plan under Peter opposition).",
+      "acceptance_test": "Pass if the revision at snapshots/cycle_01/chapters/chapter_12.md:243, snapshots/cycle_01/chapters/chapter_12.md:261, and snapshots/cycle_01/chapters/chapter_12.md:305 includes at least one new consequential decision/action rather than repeating prior warning language from snapshots/cycle_01/chapters/chapter_12.md:173 and snapshots/cycle_01/chapters/chapter_12.md:187; fail if the ending still repeats the same symptom-warning thesis in summary form."
+    },
+    {
+      "finding_id": "chapter_12_F003",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:7; snapshots/cycle_01/chapters/chapter_12.md:9; snapshots/cycle_01/chapters/chapter_12.md:27; snapshots/cycle_01/chapters/chapter_12.md:33; snapshots/cycle_01/chapters/chapter_12.md:129; snapshots/cycle_01/chapters/chapter_12.md:161; snapshots/cycle_01/chapters/chapter_12.md:213; snapshots/cycle_01/chapters/chapter_12.md:239; snapshots/cycle_01/chapters/chapter_12.md:259; snapshots/cycle_01/chapters/chapter_12.md:297",
+      "problem": "A recurring \"as if\" comparison scaffold appears throughout the chapter and reads as a prose tic rather than deliberate patterning. Once the pattern crosses repeated uses, sentence texture flattens.",
+      "rewrite_direction": "Revise comparison-heavy clusters anchored at snapshots/cycle_01/chapters/chapter_12.md:7, snapshots/cycle_01/chapters/chapter_12.md:9, snapshots/cycle_01/chapters/chapter_12.md:27, snapshots/cycle_01/chapters/chapter_12.md:33, snapshots/cycle_01/chapters/chapter_12.md:239, snapshots/cycle_01/chapters/chapter_12.md:259, and snapshots/cycle_01/chapters/chapter_12.md:297 by converting repeated \"as if\" clauses into direct sensory specifics and concrete verbs rooted in Noreen's focal perception.",
+      "acceptance_test": "Pass if revised paragraphs at snapshots/cycle_01/chapters/chapter_12.md:7, snapshots/cycle_01/chapters/chapter_12.md:9, snapshots/cycle_01/chapters/chapter_12.md:27, snapshots/cycle_01/chapters/chapter_12.md:33, snapshots/cycle_01/chapters/chapter_12.md:239, snapshots/cycle_01/chapters/chapter_12.md:259, and snapshots/cycle_01/chapters/chapter_12.md:297 carry image through concrete observation rather than repeating the same comparison template; fail if those anchor paragraphs still rely on recurring \"as if\" scaffolding."
+    },
+    {
+      "finding_id": "chapter_12_F004",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:299; snapshots/cycle_01/chapters/chapter_12.md:301; snapshots/cycle_01/chapters/chapter_12.md:303; snapshots/cycle_01/chapters/chapter_12.md:305",
+      "problem": "The closing beat drifts out of close-third Noreen focalization into unsignaled Elsie interiority and abstract thesis language (\"It was systems\", \"every choice... medical decision\"). This is timidity by abstraction at the point where scene consequence should stay embodied.",
+      "rewrite_direction": "Rewrite the closing cluster at snapshots/cycle_01/chapters/chapter_12.md:299, snapshots/cycle_01/chapters/chapter_12.md:301, snapshots/cycle_01/chapters/chapter_12.md:303, and snapshots/cycle_01/chapters/chapter_12.md:305 to keep the camera inside Noreen-accessible perception (or mark a clear POV transition before any Elsie interior claim), and replace abstract summarizing lines with concrete, immediate consequence in action, sensation, or dialogue.",
+      "acceptance_test": "Pass if the revised ending at snapshots/cycle_01/chapters/chapter_12.md:299, snapshots/cycle_01/chapters/chapter_12.md:301, snapshots/cycle_01/chapters/chapter_12.md:303, and snapshots/cycle_01/chapters/chapter_12.md:305 uses only details Noreen can directly perceive unless a clear POV break is added, and lands on concrete consequence; fail if unmarked Elsie interior certainty or thesis-style abstraction remains."
+    },
+    {
+      "finding_id": "chapter_12_F005",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:31; snapshots/cycle_01/chapters/chapter_12.md:93; snapshots/cycle_01/chapters/chapter_12.md:99; snapshots/cycle_01/chapters/chapter_12.md:133; snapshots/cycle_01/chapters/chapter_12.md:177; snapshots/cycle_01/chapters/chapter_12.md:281",
+      "problem": "Accounting/ledger diction spreads across multiple speakers and narration in quick succession, so idiolect separation weakens and exchange texture starts to converge around one repeated metaphor field.",
+      "rewrite_direction": "In exchange clusters anchored at snapshots/cycle_01/chapters/chapter_12.md:93, snapshots/cycle_01/chapters/chapter_12.md:99, snapshots/cycle_01/chapters/chapter_12.md:133, snapshots/cycle_01/chapters/chapter_12.md:177, and snapshots/cycle_01/chapters/chapter_12.md:281, keep ledger/accounting language primarily in Peter's register, while shifting Elsie and Noreen lines toward their style-bible tactile/domestic and body-grounded vocabularies.",
+      "acceptance_test": "Pass if revised dialogue around snapshots/cycle_01/chapters/chapter_12.md:93, snapshots/cycle_01/chapters/chapter_12.md:99, snapshots/cycle_01/chapters/chapter_12.md:133, snapshots/cycle_01/chapters/chapter_12.md:177, and snapshots/cycle_01/chapters/chapter_12.md:281 keeps formal accounting diction with Peter while Elsie and Noreen each deliver at least two lines in distinct non-ledger vocabulary; fail if all voices continue sharing debt/ledger/page metaphors in the same cadence."
+    }
+  ],
+  "summary": "The chapter has strong embodied obstetric detail and clear scene causality, but it fails this gate on unresolved MEDIUM+ issues: a HIGH continuity contradiction in appointment timing, repeated risk restatement that blunts escalation, a recurring simile template tic, closing POV/abstraction drift, and dialogue metaphor-field convergence that weakens voice separation. Sanitization and intimacy fade-to-black were not primary failures in this chapter."
+}

@@ -1,0 +1,56 @@
+{
+  "chapter_id": "chapter_04",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_04_habel_age_continuity",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_01/chapters/chapter_04.md:129",
+      "problem": "Mava says only she and Habel know about Iru and that Habel \"was a baby when it happened,\" but the continuity sheet makes Habel 55 and the chapter dates Iru's death to forty years ago. That would make Habel about fifteen, not a baby, so the scene contradicts canon on age and timeline.",
+      "rewrite_direction": "Revise the Habel reference at snapshots/cycle_01/chapters/chapter_04.md:129 so it matches context/cycle_01/continuity_sheet.json. Either make Habel's knowledge consistent with being a teenager at the time, name a younger Kondo relative instead, or change the elapsed-time phrasing so the ages line up without disturbing Mava's history.",
+      "acceptance_test": "At snapshots/cycle_01/chapters/chapter_04.md:129, the revised line must be readable alongside Habel's canonical age of 55 with no arithmetic contradiction. Pass if a reader can calculate the ages from the line and the continuity sheet without making Habel both fifty-five now and a baby forty years earlier; fail if that contradiction remains."
+    },
+    {
+      "finding_id": "chapter_04_overproved_manifestation",
+      "source": "award",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_01/chapters/chapter_04.md:33; snapshots/cycle_01/chapters/chapter_04.md:63; snapshots/cycle_01/chapters/chapter_04.md:169",
+      "problem": "The chapter keeps re-proving the same manifestation beat instead of converting each recurrence into a sharper state change. By the time the final image arrives, the repeated ear-rub description confirms information the reader already has more than it escalates consequence, which keeps the chapter below shortlist-level force.",
+      "rewrite_direction": "Rework the manifestation sequence at snapshots/cycle_01/chapters/chapter_04.md:31, snapshots/cycle_01/chapters/chapter_04.md:61, and snapshots/cycle_01/chapters/chapter_04.md:167 so each beat does a different job: first notice, then impossibility, then changed consequence. Preserve the required closing image, but make the last beat alter Suna's practical or emotional position rather than mainly restating the same motion in the same terms.",
+      "acceptance_test": "Reading the revised beats at snapshots/cycle_01/chapters/chapter_04.md:31, snapshots/cycle_01/chapters/chapter_04.md:61, and snapshots/cycle_01/chapters/chapter_04.md:167, each recurrence must add a distinct new pressure on Suna. Pass if the final image produces a new consequence or decision not already contained in the earlier two beats; fail if it only reconfirms that Asha rubs her ear in sleep."
+    },
+    {
+      "finding_id": "chapter_04_uncanny_overexplained",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_01/chapters/chapter_04.md:35; snapshots/cycle_01/chapters/chapter_04.md:51; snapshots/cycle_01/chapters/chapter_04.md:137",
+      "problem": "At the moments when the chapter should trust the flat strangeness of the premise, the narration repeatedly explains the phenomenon away or explains Suna's need to categorize it. That interpretive cushioning reads as timidity: the prose manages the reader's response instead of letting the impossible sit there with full pressure.",
+      "rewrite_direction": "Trim or replace the explanatory cushioning at snapshots/cycle_01/chapters/chapter_04.md:35, snapshots/cycle_01/chapters/chapter_04.md:51, and snapshots/cycle_01/chapters/chapter_04.md:137 with embodied reaction, silence, or consequential behavior. Let Suna's bodily freeze, subsequent choice, or change in attention carry the beat rather than explicit reassurance about imitation, family nicknames, or filing systems.",
+      "acceptance_test": "In the revised passages anchored at snapshots/cycle_01/chapters/chapter_04.md:35, snapshots/cycle_01/chapters/chapter_04.md:51, and snapshots/cycle_01/chapters/chapter_04.md:137, the chapter must no longer contain explicit reassurance equivalent to \"It meant nothing\" or a full explanatory imitation theory immediately after the uncanny beat. Pass if the strangeness remains unresolved on the page and is carried by action, sensation, or silence; fail if the prose still promptly explains it into manageability."
+    },
+    {
+      "finding_id": "chapter_04_formula_repetition",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_01/chapters/chapter_04.md:3; snapshots/cycle_01/chapters/chapter_04.md:53; snapshots/cycle_01/chapters/chapter_04.md:69; snapshots/cycle_01/chapters/chapter_04.md:101; snapshots/cycle_01/chapters/chapter_04.md:137; snapshots/cycle_01/chapters/chapter_04.md:169",
+      "problem": "Several sentence-level constructions repeat often enough to turn from style into tic: the recurring \"the particular ...\" modifier frame, the repeated \"not X, not Y, but Z\" structure, the near-verbatim ear-rub fragments, and Suna's cataloguing language returning in nearly the same terms. The accumulation makes the prose feel mechanically patterned instead of freshly controlled.",
+      "rewrite_direction": "Revise the repeated formula sites at snapshots/cycle_01/chapters/chapter_04.md:3, snapshots/cycle_01/chapters/chapter_04.md:53, snapshots/cycle_01/chapters/chapter_04.md:69, snapshots/cycle_01/chapters/chapter_04.md:101, snapshots/cycle_01/chapters/chapter_04.md:137, and snapshots/cycle_01/chapters/chapter_04.md:169 to vary syntax and descriptive entry points. Keep only one exact recurrence where motif is intentional, and make the final ear-rub image echo earlier beats without copying their sentence shape.",
+      "acceptance_test": "Across the revised passages at snapshots/cycle_01/chapters/chapter_04.md:3, snapshots/cycle_01/chapters/chapter_04.md:53, snapshots/cycle_01/chapters/chapter_04.md:69, snapshots/cycle_01/chapters/chapter_04.md:101, snapshots/cycle_01/chapters/chapter_04.md:137, and snapshots/cycle_01/chapters/chapter_04.md:169, no descriptive or syntactic template should recur three times in near-identical form. Pass if each passage has a distinct sentence shape and the closing image is recognizably related but not verbatim-recycled; fail if the same modifier frame or three-beat fragment still appears three or more times."
+    }
+  ],
+  "summary": "Dialogue stays natural and contraction-consistent for Suna, Deshi, and Mava, so that lens passes. The chapter still fails overall because a HIGH continuity error breaks canon, the uncanny is over-proved and over-explained instead of landing with cleaner force, and repeated sentence formulas flatten the prose below pass-level quality.",
+  "coverage_scene_ids": [
+    "chapter_04_scene_01",
+    "chapter_04_scene_02"
+  ]
+}

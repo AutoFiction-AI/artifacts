@@ -1,0 +1,77 @@
+{
+  "acceptance_targets": [
+    "[CH11-CRAFT-001] Pass if the revised sentence at snapshots/cycle_01/chapters/chapter_11.md:419 describes Tiana's voice in character-native sensory or social language and contains no technical diction such as \"contraction\" or other style-sheet terminology; fail if the beat still reads like metadata rather than Marcia's thought.",
+    "[CH11-PROSE-001] Pass if, across the cited passages, no more than two clipped fragment bursts of the \"Not X. Y.\" or \"Because of...\" type remain and the revised beats otherwise read as complete, varied sentences; fail if three or more of those cited passages still rely on the same fragment formula for emphasis."
+  ],
+  "chapter_id": "chapter_11",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if the revised sentence at snapshots/cycle_01/chapters/chapter_11.md:419 describes Tiana's voice in character-native sensory or social language and contains no technical diction such as \"contraction\" or other style-sheet terminology; fail if the beat still reads like metadata rather than Marcia's thought.",
+      "chapter_id": "chapter_11",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:419",
+      "finding_id": "CH11-CRAFT-001",
+      "problem": "The narration breaks Marcia's close-third interior with technical voice-calibration language: \"Moderate contraction in her voice\" reads like style-bible metadata instead of a lived perception. That moment feels like process leakage and weakens the chapter's otherwise strong character-specific viewpoint.",
+      "rewrite_direction": "Revise the beat around snapshots/cycle_01/chapters/chapter_11.md:417 and snapshots/cycle_01/chapters/chapter_11.md:419 so Marcia registers Tiana's angry self-control in concrete social or auditory terms she would naturally think: job-interview neatness, school-polished diction, or the sound of anger forced through employable speech. Keep Marcia's recognition that she raised Tiana to sound legitimate, but remove the technical phrasing.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if, across the cited passages, no more than two clipped fragment bursts of the \"Not X. Y.\" or \"Because of...\" type remain and the revised beats otherwise read as complete, varied sentences; fail if three or more of those cited passages still rely on the same fragment formula for emphasis.",
+      "chapter_id": "chapter_11",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:105; snapshots/cycle_01/chapters/chapter_11.md:133; snapshots/cycle_01/chapters/chapter_11.md:227; snapshots/cycle_01/chapters/chapter_11.md:279; snapshots/cycle_01/chapters/chapter_11.md:291; snapshots/cycle_01/chapters/chapter_11.md:471; snapshots/cycle_01/chapters/chapter_11.md:581",
+      "finding_id": "CH11-PROSE-001",
+      "problem": "The chapter leans too often on the same clipped-negation fragment pattern in narration: \"Not empty. Wrong.\", \"Not because of the money. Because of the quickness.\", \"Not complaint. Not surprise.\", \"Not judging. Calculating.\", and similar beats. At this density the compression stops feeling chosen and starts reading as a prose tic. It also violates the constitution's ban on elliptical clipping in narration.",
+      "rewrite_direction": "Rework the fragment bursts at snapshots/cycle_01/chapters/chapter_11.md:105, snapshots/cycle_01/chapters/chapter_11.md:133, snapshots/cycle_01/chapters/chapter_11.md:227, snapshots/cycle_01/chapters/chapter_11.md:279, snapshots/cycle_01/chapters/chapter_11.md:291, snapshots/cycle_01/chapters/chapter_11.md:471, and snapshots/cycle_01/chapters/chapter_11.md:581. Keep the pressure and compression, but vary the sentence shapes and convert most of these beats into full clauses, concrete images, or other syntactic forms so emphasis does not depend on the same clipped template scene after scene.",
+      "severity": "HIGH",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "aa5a43816967aa5a769d67a691e8f68084d575839a361f99c808c6246e28612c",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into embarrassment, erotic consequence, moral compromise, and the ugly arithmetic of poverty. When a scene turns on prejudice, bureaucracy, violence, or family betrayal, stay with the room long enough for the reader to feel what each choice costs. Resolve edge cases by choosing the more specific and less flattering truth unless it breaks established character logic.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If sex, racism, injury, debt, hunger, or shame is rendered abstractly, rewrite until the bodily detail, social pressure, and changed leverage are visible on the page.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high \u2014 contractions are the spoken norm across the novel; uncontracted forms should appear only for emphasis, ceremony, legal language, or character-specific pressure.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Vary scene count, dialogue density, and chapter motor across the book: pair public humiliation with private aftermath, follow argument chapters with information-turn or weather chapters, preserve at least three genuinely quiet domestic or communal stretches, and never let more than three chapters in a row hinge on debate followed by decisive action.",
+      "diction": "Contemporary and concrete, with Caribbean-American texture carried naturally in syntax and reference rather than in italicized glossary behavior; lyrical when earned, blunt when the room turns brutal.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third person that rotates by chapter; intimate enough for bodily shame and private contradiction, but alert to class performance, racial reading, and room dynamics.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Alternate lean pressure sentences with occasional longer image-bearing sentences; lyric lift should arrive at emotional turns, never as constant prestige haze.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

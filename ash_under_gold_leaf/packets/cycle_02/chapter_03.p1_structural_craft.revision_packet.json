@@ -1,0 +1,95 @@
+{
+  "acceptance_targets": [
+    "[ch03-booker-001] PASS if revised snapshots/cycle_02/chapters/chapter_03.md:205-217 show both (a) a stated hypothesis before she reaches the dresser and (b) a deliberate search step tied to that hypothesis; FAIL if the envelope still appears as pure happenstance.",
+    "[ch03-craft-001] PASS if revised snapshots/cycle_02/chapters/chapter_03.md:179-200 include a concrete fact or explicit refusal after cleanup and before the conversation drifts; FAIL if the scene exits into neighborhood chatter without that truth/refusal beat.",
+    "[ch03-craft-002] PASS if revised snapshots/cycle_02/chapters/chapter_03.md:89-111 contain at least two non-dialogue interior beats from Marisol separated by no more than five paragraphs; FAIL if the span remains uninterrupted external dialogue/action."
+  ],
+  "chapter_id": "chapter_03",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if revised snapshots/cycle_02/chapters/chapter_03.md:205-217 show both (a) a stated hypothesis before she reaches the dresser and (b) a deliberate search step tied to that hypothesis; FAIL if the envelope still appears as pure happenstance.",
+      "chapter_id": "chapter_03",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:205; snapshots/cycle_02/chapters/chapter_03.md:211; snapshots/cycle_02/chapters/chapter_03.md:213",
+      "finding_id": "ch03-booker-001",
+      "problem": "The chapter's decisive clue enters as an errand coincidence (foil retrieval leading to a visible envelope), so the plot turn reads opportunistic rather than causally earned by Marisol's investigative choices.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_03.md:205, snapshots/cycle_02/chapters/chapter_03.md:211, snapshots/cycle_02/chapters/chapter_03.md:213, and snapshots/cycle_02/chapters/chapter_03.md:217 so Marisol identifies a specific lead before entering the bedroom and then chooses an intentional search action with explicit risk.",
+      "severity": "MEDIUM",
+      "source": "booker",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if revised snapshots/cycle_02/chapters/chapter_03.md:179-200 include a concrete fact or explicit refusal after cleanup and before the conversation drifts; FAIL if the scene exits into neighborhood chatter without that truth/refusal beat.",
+      "chapter_id": "chapter_03",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:171; snapshots/cycle_02/chapters/chapter_03.md:179; snapshots/cycle_02/chapters/chapter_03.md:199",
+      "finding_id": "ch03-craft-001",
+      "problem": "Sanitization drift: at the confrontation peak, the rice-spill beat functions as a safety valve and the narrative pivots to cleanup/gossip before any concrete date-level disclosure or explicit refusal is forced, defusing earned tension.",
+      "rewrite_direction": "Keep the spill at snapshots/cycle_02/chapters/chapter_03.md:179, but revise the post-spill sequence at snapshots/cycle_02/chapters/chapter_03.md:183 and snapshots/cycle_02/chapters/chapter_03.md:199 so one character must either provide one concrete fact (date, place, witness) or explicitly refuse to provide it, with an immediate interpersonal consequence.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if revised snapshots/cycle_02/chapters/chapter_03.md:89-111 contain at least two non-dialogue interior beats from Marisol separated by no more than five paragraphs; FAIL if the span remains uninterrupted external dialogue/action.",
+      "chapter_id": "chapter_03",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:89; snapshots/cycle_02/chapters/chapter_03.md:111",
+      "finding_id": "ch03-craft-002",
+      "problem": "The dinner-exchange run from line 89 through line 111 plays as 10+ consecutive dialogue paragraphs without focal interior thought/sensation/memory from Marisol, weakening close-third pressure and reading screenplay-flat.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_03.md:91, snapshots/cycle_02/chapters/chapter_03.md:97, and snapshots/cycle_02/chapters/chapter_03.md:109 to insert brief Marisol interior beats (somatic reaction, memory flash, or self-assessment) between dialogue turns.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "e3fee48f29a5bb064bc62edc5e78274c1d03ef2aae801cd2d03578196ef60a42",
+  "must_fix_count": 3,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "When choosing between reputationally safe abstraction and specific discomfort, choose specificity. Render addiction, sexuality, deceit, class shame, and grief at lived scale. In edge cases, preserve character truth and causal accountability over reader comfort or institutional decorum.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene demands bodily, moral, or economic specificity, euphemistic phrasing is treated as a failed draft and must be rewritten with concrete stakes and observable consequence.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the spoken default; full forms appear only for emphasis, ritual language, or character-specific formal posture",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate scene density and pressure modes: pair high-conflict chapters with quiet domestic or documentary chapters, vary dialogue-to-interiority ratios, and prevent identical chapter skeletons in consecutive sequence.",
+      "diction": "contemporary literary diction with class-aware, borough-specific concreteness; avoid prestige-neutral workshop language",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third centered on Marisol, with rare brief distance expansions for institutional scenes",
+      "narrative_tense": "past tense",
+      "rhythm_target": "alternating tensile compression and reflective extension; line-level cadence should carry emotional pressure, not just information",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

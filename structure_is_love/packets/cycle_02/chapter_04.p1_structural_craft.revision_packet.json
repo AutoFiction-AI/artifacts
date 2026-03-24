@@ -1,0 +1,81 @@
+{
+  "acceptance_targets": [
+    "[chapter_04_F001] Pass if each game section in the revised target spans contains no more than one pure score-update paragraph and at least one explicit decision-to-consequence pivot by Anika; fail if momentum still relies mainly on serial score narration.",
+    "[chapter_04_F002] Pass if the revised passage at lines 265-280 does not let Leah neutralize her taunts through immediate self-clearing confession and if Anika's aftermath occupies at least two consecutive paragraphs before authority summary; fail if cleanup/admin language still defuses pressure immediately."
+  ],
+  "chapter_id": "chapter_04",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if each game section in the revised target spans contains no more than one pure score-update paragraph and at least one explicit decision-to-consequence pivot by Anika; fail if momentum still relies mainly on serial score narration.",
+      "chapter_id": "chapter_04",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:81; snapshots/cycle_02/chapters/chapter_04.md:99; snapshots/cycle_02/chapters/chapter_04.md:177; snapshots/cycle_02/chapters/chapter_04.md:193; snapshots/cycle_02/chapters/chapter_04.md:207",
+      "finding_id": "chapter_04_F001",
+      "problem": "The match middle over-indexes on sequential score accounting, so escalation plateaus before the chapter's major consequence lands. The causal line (taunt-triggered destabilization -> adaptation -> win -> collapse) is present but diluted by repetitive bookkeeping beats.",
+      "rewrite_direction": "Tighten the rally-by-rally reporting at snapshots/cycle_02/chapters/chapter_04.md:81, snapshots/cycle_02/chapters/chapter_04.md:99, snapshots/cycle_02/chapters/chapter_04.md:177, snapshots/cycle_02/chapters/chapter_04.md:193, and snapshots/cycle_02/chapters/chapter_04.md:207 into fewer decisive turn points. Keep one long endurance exchange before the ICU-trigger beat and one before match ball, and replace intermediate score crawl paragraphs with beats where Anika makes a specific tactical or emotional choice that immediately changes leverage.",
+      "severity": "MEDIUM",
+      "source": "booker",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if the revised passage at lines 265-280 does not let Leah neutralize her taunts through immediate self-clearing confession and if Anika's aftermath occupies at least two consecutive paragraphs before authority summary; fail if cleanup/admin language still defuses pressure immediately.",
+      "chapter_id": "chapter_04",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:275; snapshots/cycle_02/chapters/chapter_04.md:277; snapshots/cycle_02/chapters/chapter_04.md:279",
+      "finding_id": "chapter_04_F002",
+      "problem": "Sanitization drift via moral safety valve: immediately after the cruelty and collapse, Leah self-reports and adults rapidly codify fault, which relieves interpersonal tension before Anika's wound fully lands on the page. The scene shifts to procedural cleanup too quickly at the exact moment narrative discomfort should stay live.",
+      "rewrite_direction": "Rework the exchange around snapshots/cycle_02/chapters/chapter_04.md:265-280 so accountability remains unresolved in-scene instead of instantly self-resolved by Leah. Keep incident reporting, but delay or complicate confession language and center Anika's embodied/emotional processing for at least the next two paragraphs before procedural closure.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "3e83c0bfab6c3de5d4ce5907980b6626a9d87d26249dffef2278a9d0942f5a44",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into uncomfortable specificity when it changes behavior: pain detail, debt arithmetic, manipulative care, and mixed motives. In edge cases, prefer the truest in-character action over protective narration, then carry the real consequence forward instead of immediately moralizing it away.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If coercion, grief, injury, or economic shame appears, language must stay specific and embodied; vague softening triggers mandatory rewrite.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High - contractions are the spoken default; uncontracted forms are reserved for formal authority, deliberate emphasis, or emotional freezing.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Vary scene count and dialogue density chapter to chapter: rotate match compression, slow inventory aftermath, institutional pressure scenes, and quiet domestic intervals so adjacent chapters do not share the same structural pulse.",
+      "diction": "Concrete contemporary diction with class-aware specificity; avoid abstract therapy language unless a character would actually use it.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third anchored in Anika for most chapters, with brief controlled slips toward Ravi in designated confrontation and aftermath chapters.",
+      "rhythm_target": "Alternate clipped athletic sequences with longer reflective cadences; sentence length should track exertion, shame, and release.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

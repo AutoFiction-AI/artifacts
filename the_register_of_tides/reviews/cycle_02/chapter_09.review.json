@@ -1,0 +1,23 @@
+{
+  "chapter_id": "chapter_09",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "PASS",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_09_prose_01",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_02/chapters/chapter_09.md:39; snapshots/cycle_02/chapters/chapter_09.md:109; snapshots/cycle_02/chapters/chapter_09.md:203; snapshots/cycle_02/chapters/chapter_09.md:239; snapshots/cycle_02/chapters/chapter_09.md:245; snapshots/cycle_02/chapters/chapter_09.md:301",
+      "problem": "The chapter repeatedly lands narration with clipped corrective-negation fragments and article-stripped tags (\"No soft give. No char mud to read.\" / \"North. South. Rejection.\" / \"It was not mercy.\" / \"Not safe. Not guaranteed.\" / \"Not because it comforted her.\" / \"Useful, yes. Limited, yes. Not false.\"). At this frequency the move stops feeling selective and becomes a house tic: it violates the constitution's ban on elliptical clipping in narration and makes materially different beats resolve in the same syntactic snap.",
+      "rewrite_direction": "Rework the narration beats at snapshots/cycle_02/chapters/chapter_09.md:39, snapshots/cycle_02/chapters/chapter_09.md:109, snapshots/cycle_02/chapters/chapter_09.md:203, snapshots/cycle_02/chapters/chapter_09.md:239, snapshots/cycle_02/chapters/chapter_09.md:245, and snapshots/cycle_02/chapters/chapter_09.md:301 so at least most of these moments land through grammatically complete sentences or image-led clauses rather than stand-alone negation fragments. Keep one sharp clipped landing if you want the emphasis, but vary the rest so the mainland arrival, the affidavit realization, Aminul's caution, and Halima's read on him do not all hit the same corrective beat.",
+      "acceptance_test": "PASS if, on a cold read of the revised passages at snapshots/cycle_02/chapters/chapter_09.md:39, snapshots/cycle_02/chapters/chapter_09.md:109, snapshots/cycle_02/chapters/chapter_09.md:239-245, and snapshots/cycle_02/chapters/chapter_09.md:301, at least three of the current clipped narration clusters have been replaced with complete sentences or clearly clause-bearing prose that preserves the meaning while changing the cadence; FAIL if three or more of those cited beats still rely on stand-alone \"No/Not\" fragments or parallel clipped tags."
+    }
+  ],
+  "summary": "Strong chapter-level architecture: the mainland trip changes scale, the office scenes render bureaucratic violence with specific unsanitized detail, the affidavit route lands as possible/expensive/humiliating at once, and Halima, Nura, and Aminul remain voice-consistent with the style bible. No continuity contradiction, tense drift, sanitization drift, or dialogue-register failure rose to MEDIUM+, but the prose still fails on repeated clipped-negation narration that turns from choice into tic.",
+  "coverage_scene_ids": []
+}

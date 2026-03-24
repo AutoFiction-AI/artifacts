@@ -1,0 +1,108 @@
+{
+  "acceptance_targets": [
+    "[CH17-BK-001] Pass if the revised text in lines 319-357 explicitly modifies at least one preexisting term from lines 25-42 and a later beat in lines 489-531 shows that modified term being enforced; fail if the only change is rhetorical emphasis or restatement.",
+    "[CH17-CR-001] Pass if, between lines 273-380, Nora and June each receive at least one concrete embodied reaction beat and the chapter does not advance to the 3:12 wake-up until a new immediate household consequence is visibly established; fail if the sequence still resolves primarily through paperwork talk and overnight skip.",
+    "[CH17-CR-002] Pass if June's first post-reveal exchange in lines 459-486 includes one direct unresolved objection or limit that Eli cannot smooth over in the same exchange; fail if the scene moves to humor/community-service warmth without a sustained conflict beat.",
+    "[FBR-006] Pass if the kept instance reads as a unique late-book rupture with no adjacent duplicate suppression structure. Fail if nearby wording reintroduces a second suppression beat in the same micro-scene."
+  ],
+  "chapter_id": "chapter_17",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if the revised text in lines 319-357 explicitly modifies at least one preexisting term from lines 25-42 and a later beat in lines 489-531 shows that modified term being enforced; fail if the only change is rhetorical emphasis or restatement.",
+      "chapter_id": "chapter_17",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_17.md:273; snapshots/cycle_01/chapters/chapter_17.md:339; snapshots/cycle_01/chapters/chapter_17.md:497",
+      "finding_id": "CH17-BK-001",
+      "problem": "The chapter's largest reveal (the affair) lands as information but does not drive a proportionate structural consequence; terms mostly stand and the scene re-stabilizes quickly, which weakens causal escalation at a hinge chapter.",
+      "rewrite_direction": "Rebuild post-disclosure consequence in `snapshots/cycle_01/chapters/chapter_17.md:319-357` and `snapshots/cycle_01/chapters/chapter_17.md:489-531` so the affair changes at least one already-set household term (residency timeline, access rule, transfer control, or co-presence rule) in a way that materially alters Eli's next actions in-scene.",
+      "severity": "HIGH",
+      "source": "booker",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if, between lines 273-380, Nora and June each receive at least one concrete embodied reaction beat and the chapter does not advance to the 3:12 wake-up until a new immediate household consequence is visibly established; fail if the sequence still resolves primarily through paperwork talk and overnight skip.",
+      "chapter_id": "chapter_17",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_17.md:273; snapshots/cycle_01/chapters/chapter_17.md:301; snapshots/cycle_01/chapters/chapter_17.md:339; snapshots/cycle_01/chapters/chapter_17.md:379",
+      "finding_id": "CH17-CR-001",
+      "problem": "Sanitization drift: after infidelity is disclosed, the prose shifts into procedural language and quickly time-jumps to routine, muting the embodied emotional blast radius that the scene premise demands.",
+      "rewrite_direction": "In `snapshots/cycle_01/chapters/chapter_17.md:273-380`, hold the camera in-scene longer on physical and behavioral aftermath (breath, posture, movement, room dynamics, failed attempts to continue routine) before moving to next-morning logistics; keep legal language secondary to felt consequence.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if June's first post-reveal exchange in lines 459-486 includes one direct unresolved objection or limit that Eli cannot smooth over in the same exchange; fail if the scene moves to humor/community-service warmth without a sustained conflict beat.",
+      "chapter_id": "chapter_17",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_17.md:307; snapshots/cycle_01/chapters/chapter_17.md:313; snapshots/cycle_01/chapters/chapter_17.md:459; snapshots/cycle_01/chapters/chapter_17.md:479",
+      "finding_id": "CH17-CR-002",
+      "problem": "Timidity: June's rupture beat de-intensifies too fast into functional banter and a practical gift, which retreats from the emotional reality established by her immediate exit and hard boundary.",
+      "rewrite_direction": "Rework `snapshots/cycle_01/chapters/chapter_17.md:307-315` and `snapshots/cycle_01/chapters/chapter_17.md:459-486` so the next encounter carries active friction (distance, mistrust, or refusal) before any thawing gesture; if a conciliatory object remains, it should arrive after an unresolved conflict beat, not as first response.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if the kept instance reads as a unique late-book rupture with no adjacent duplicate suppression structure. Fail if nearby wording reintroduces a second suppression beat in the same micro-scene.",
+      "chapter_id": "chapter_17",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:5678",
+      "finding_id": "FBR-006",
+      "problem": "Recurring full-book triple-suppression pattern (4 chapters total). This chapter's use is a viable late-book echo and can be retained, but only as one of at most two surviving instances in the novel.",
+      "rewrite_direction": "KEEP the suppression beat at snapshots/cycle_01/FINAL_NOVEL.md:5678, but tighten surrounding lines snapshots/cycle_01/FINAL_NOVEL.md:5676 to snapshots/cycle_01/FINAL_NOVEL.md:5680 so it lands as a singular rupture, not another patterned refrain.",
+      "severity": "MEDIUM",
+      "source": "booker_global",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "43832a02e96f033b905d9e1edfeb547a4cd9ec429b045ae6fae19ec67d9b1dd1",
+  "must_fix_count": 4,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into morally mixed behavior, bodily consequence, and economic detail when they are causally active. In edge cases, choose the more concrete and uncomfortable rendering unless it violates factual continuity; if two renderings are equally plausible, prefer the one that increases character accountability rather than reader reassurance.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene contains pain, sex, addiction, debt panic, or humiliation, abstract phrasing is treated as a failed draft and must be rewritten with embodied specificity.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the spoken default; uncontracted forms are reserved for emphasis, legal precision, or deliberate emotional distance.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate chapter architectures across the book: confrontation chapters, document-information turns, labor-process chapters, transit interiority chapters, and quiet relational chapters. Consecutive chapters must differ in scene density or dialogue-to-interiority ratio.",
+      "diction": "Contemporary American literary realism: precise, unsentimental, image-aware, and concrete under stress.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third-person anchored to Eli, with no unmarked POV drift.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Braided cadence: reflective medium-length sentences interrupted by blunt short lines at impact moments.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

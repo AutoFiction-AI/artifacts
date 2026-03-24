@@ -1,0 +1,67 @@
+{
+  "chapter_id": "chapter_01",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH1-F001",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "The first ignored Nora call happens while Eli is still parked (snapshots/cycle_01/chapters/chapter_01.md:183), while the merge-ignore beat appears later and repeats the same action pattern (snapshots/cycle_01/chapters/chapter_01.md:237).",
+      "problem": "The chapter's escalation beat is diluted by duplicating the same avoidance move in two places. The emotional turn is less sharp because the first refusal is static, then the merge refusal lands as an echo rather than the primary hinge.",
+      "rewrite_direction": "Restructure the decision corridor across snapshots/cycle_01/chapters/chapter_01.md:183-191 and snapshots/cycle_01/chapters/chapter_01.md:221-239 so the first ignored Nora call coincides with lane commitment; keep one definitive refusal beat and cut or repurpose the earlier parked-call refusal.",
+      "acceptance_test": "PASS if, in snapshots/cycle_01/chapters/chapter_01.md:183-239, the first on-page ignored Nora call occurs during the merge/interstate commitment sequence and there is only one primary call-refusal hinge before 'He kept going'; FAIL if a parked-call refusal still precedes the merge as a full duplicate beat."
+    },
+    {
+      "finding_id": "CH1-F002",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_01",
+      "evidence": "At the moral hinge, Eli's self-description retreats into euphemism: 'something weaker' (snapshots/cycle_01/chapters/chapter_01.md:177) and 'anything except the thing itself' (snapshots/cycle_01/chapters/chapter_01.md:223).",
+      "problem": "Sanitization drift: the prose substitutes abstract placeholders for explicit accountability exactly where the chapter needs concrete naming of abandonment, theft-risk, and family harm. This softens consequence and violates the anti-euphemism style policy.",
+      "rewrite_direction": "In snapshots/cycle_01/chapters/chapter_01.md:177-224, replace placeholder abstractions with explicit statements of what Eli is doing and to whom (Nora/June/home finances), and add embodied stress markers that keep the scene in physical present-tense experience of his choice.",
+      "acceptance_test": "PASS if snapshots/cycle_01/chapters/chapter_01.md:177-224 contains (1) at least two explicit named stakes/acts (for example, leaving his family, hiding the transfer, missing mortgage/tuition obligations) and (2) at least one concrete bodily response; FAIL if the hinge still relies on placeholder phrasing like 'something'/'the thing itself'."
+    },
+    {
+      "finding_id": "CH1-F003",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "The goodbye scene with June moves from hug to exit without one concrete near-confession, ending in generalized withholding ('He wanted to say a dozen things') at snapshots/cycle_01/chapters/chapter_01.md:123-130.",
+      "problem": "Timidity: the prose pulls back from the emotional reality the premise establishes at the final in-person father/daughter moment. The scene carries sentiment but not enough specific risk-language to match the stakes of what Eli is about to do.",
+      "rewrite_direction": "Revise snapshots/cycle_01/chapters/chapter_01.md:123-131 to include one specific almost-spoken line from Eli that reveals immediate stakes (money, disappearance, or fear of not returning), then let him suppress it in-character rather than bypassing specifics.",
+      "acceptance_test": "PASS if snapshots/cycle_01/chapters/chapter_01.md:123-131 includes one concrete near-confession sentence fragment tied to current stakes plus one physical reaction from Eli in the same exchange; FAIL if the scene remains at generalized unsaid-content language only."
+    },
+    {
+      "finding_id": "CH1-F004",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "Minor-character lines cluster in similar polished quip rhythm across Len/Len's mother/Sloane/Tasha (snapshots/cycle_01/chapters/chapter_01.md:31-38; snapshots/cycle_01/chapters/chapter_01.md:45-46; snapshots/cycle_01/chapters/chapter_01.md:57-65).",
+      "problem": "Idiolect separation slips in supporting dialogue: multiple speakers share the same joke-forward sentence shape and timing, so voices blur into a single authored register instead of distinct social rhythms.",
+      "rewrite_direction": "Adjust supporting-character exchanges in snapshots/cycle_01/chapters/chapter_01.md:31-65 so each speaker has distinct syntax/word choice; add at least one interruption, one incomplete thought, or one practical non-witty line under move-in pressure.",
+      "acceptance_test": "PASS if, within snapshots/cycle_01/chapters/chapter_01.md:31-65, at least three named secondary speakers can be distinguished by register (not just content) and no more than one back-to-back minor-character line resolves as a clean punchline; FAIL if the quip cadence remains uniform across speakers."
+    },
+    {
+      "finding_id": "CH1-F005",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "A repeated visual-reaction template appears 4+ times: 'Eli stared...' (snapshots/cycle_01/chapters/chapter_01.md:85), 'He looked at the message...' (snapshots/cycle_01/chapters/chapter_01.md:171), 'He watched it ring...' (snapshots/cycle_01/chapters/chapter_01.md:183), and 'He stared at the three words...' (snapshots/cycle_01/chapters/chapter_01.md:213).",
+      "problem": "Recurring construction tic: emotional beats default to gaze-at-screen reactions. The repetition signals autopilot and flattens rhythm in the chapter's highest-pressure section.",
+      "rewrite_direction": "In snapshots/cycle_01/chapters/chapter_01.md:85, snapshots/cycle_01/chapters/chapter_01.md:171, snapshots/cycle_01/chapters/chapter_01.md:183, and snapshots/cycle_01/chapters/chapter_01.md:213, keep at most two visual beats and replace the others with distinct response modes (touch, breath, involuntary movement, auditory focus) while preserving narrative causality.",
+      "acceptance_test": "PASS if the revised chapter retains no more than two gaze-at-phone/message reaction constructions across the cited lines and at least two are replaced by non-visual embodied reactions; FAIL if three or more near-identical visual reaction templates remain."
+    }
+  ],
+  "summary": "Chapter 1 lands core continuity, tense, and premise beats, but it does not clear fail-by-default review due to a HIGH sanitization drift at the moral hinge, timidity in the goodbye pressure point, supporting-dialogue idiolect blur, repeated reaction formulas, and an under-sharpened first-refusal escalation beat.",
+  "coverage_scene_ids": [
+    "chapter_01_scene_01_move_in",
+    "chapter_01_scene_02_garage_stall",
+    "chapter_01_scene_03_westbound_commitment"
+  ]
+}

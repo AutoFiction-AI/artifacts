@@ -1,0 +1,67 @@
+# The Receiving Line
+
+## Narrative Engine
+The novel's primary engine is speculative fiction fused with literary fiction and character study. Its plot is driven by the pressure of an invented but concrete border regime: privatized deportation rail, ancestral-admissibility paperwork, concession finance, sanitation thresholds, and the way bodily evidence has to be erased for the system to keep calling itself orderly. Chapter movement therefore comes less from chase mechanics than from shifts in complicity, witness, institutional leverage, shame, operational knowledge, and the changing terms between mother and son. The sabotage arc matters, but it is not a thriller chassis. The book advances through discovery, bureaucratic ordeal, concealment, refusal, humiliation, ritual preparation, confession, dark-comic exposure, and aftermath.
+
+## Core Dramatic Arc
+Marisol Anaya has spent twenty years helping RailPassage Logistics make deportation look clean. She began by bleaching toilets and trauma-room tiles, rose through competence into route supervision, and built a life on the premise that somebody would do this work anyway, so better that it be done by someone who understood bodies and limits. That compromise collapses when she finds her estranged son Gabriel loaded onto her line under a receiving state's paperwork for a country he has never seen. She first tries to correct a clerical wrong, then to delay one train, then to save one person. Over the summer she is forced to confront the truth that the machine is not malfunctioning around her son; it is functioning exactly as designed around thousands of people like him.
+
+The emotional spine is the severed bond between Marisol and Gabriel. He is not a passive rescue object but an archivist of the disappeared who despises the part of his mother that kept the line running. Their relationship changes by degrees: recognition, rejection, conditional cooperation, accusation, confession, and a damaged form of kinship that refuses clean absolution. The sabotage plot grows out of that relational pressure. Marisol's greatest skill is not violence but maintenance: she knows which failures remain invisible, which failures force paperwork, and which failures become public. Her eventual attack on the line is therefore an attack on cleanliness, on the corporation's ability to keep blood, sewage, and false language out of sight.
+
+The book keeps alternating heat and stillness. It needs scenes of bureaucratic cruelty, bodily risk, and public rupture, but also meals, weather holds, old flirtation, a recorder played in the dark, and one afternoon of soup after the world has already changed. The institution can be wounded; it cannot be redeemed. Marisol's final movement is away from private rescue and toward witness.
+
+## Chapter Plan
+
+## Chapter 1 - Bleach Weather
+On a heat-swollen intake morning at Puerta Seco Yard, Marisol supervises a southbound deportation train through blackwater alarms, vomiting children, and a trauma room that never fully loses the smell of cauterized skin. In the middle of the intake she recognizes Gabriel by an old eyebrow scar and by the particular way he refuses to lower his head for authority. His file identifies him not as her son but as a Santa Avelina receiving-state case under a dead man's ancestry packet. By the end of the chapter her private guilt has become operational emergency: the line she knows best is carrying her own blood.
+
+## Chapter 2 - Intake
+Using a medical pretext, Marisol gets Gabriel moved briefly through the trauma room and tries to persuade him to let her fix the mistake quietly. He refuses the role of grateful son. He tells her he was picked up while carrying recorded testimony from people the trains have already disappeared, and he says the difference between her and the guards is that she helped teach the system how to hide its stains. The chapter shifts their estrangement from old wound to active opposition.
+
+## Chapter 3 - The Meal Car Off Duty
+The train holds at Caldera Junction and the novel briefly steps away from overt crisis. Marisol eats cafeteria stew with Paloma Rivera, the aging trauma medic who grows basil in clinic cups, and Ivo Dalmau, a mechanic with grease under his nails and bird guides in his locker. Their talk moves through weather, foot pain, and the absurdities of company food before Marisol makes a covert compliance call that goes nowhere. She pockets Gabriel's confiscated recorder from the property shelf. Hope for a quiet clerical correction dies here; evidence enters her hands instead.
+
+## Chapter 4 - Ancestral Admissibility
+Marisol learns the policy structure around Gabriel's case. Because RailPassage can invoke ancestral admissibility through his dead father's Santa Avelina papers, Gabriel's appeal cannot be heard before transfer. Teresa Ordonez, the regional compliance director who once helped promote Marisol, warns her not to contaminate chain-of-custody records with family feeling. When Marisol gets back to Gabriel, he passes her a hidden scrap with other names and bunk numbers tied to false-country assignments. The chapter enlarges the story from one son's misclassification to a pattern.
+
+## Chapter 5 - Deep Clean
+Marisol commits her first deliberate act of sabotage by filing a fabricated sanitation failure and ordering an unscheduled deep clean on Gabriel's car. The delay buys hours but not safety. Ivo covers the hold with a fake valve fault, tying his own livelihood to her lie, while Gabriel makes clear that a private rescue means nothing if everyone else remains on the manifest. The chapter's state shift is crucial: sabotage begins, and it begins as something ethically insufficient.
+
+## Chapter 6 - Witness Tape
+During a night outage at Marsh Crescent, with the train inert in mosquito heat, Marisol listens to Gabriel's recorder. The voices on it are specific: a woman cataloging the contents of a pocket she was never allowed to keep, a man naming a country assigned to him because a border agent liked the sound of it, a child describing the smell of the restraint foam after vomiting on it. This is one of the book's quiet chapters, but it is not restful. Marisol understands that the work she called maintenance has also been erasure. Her motive widens from saving Gabriel to preserving names.
+
+## Chapter 7 - Audit
+Teresa arrives for a surprise audit after the deep-clean delay and publicly strips Marisol's access down to the bone. Gabriel is moved into a higher-security restraint tier. Paloma quietly falsifies a chart to buy pain medication for an injured detainee, crossing her own line while pretending she has not. Workers begin hearing that housing deductions and summer overtime may vanish if the route misses concession benchmarks. The chapter turns the sabotage from a private secret into a threat that can ruin coworkers too.
+
+## Chapter 8 - Refusal Car
+Detainees on Gabriel's car refuse biometric rescan and sit down in the aisle, led in part by Naila Quispe, a young woman who has learned how to organize through whispers and wrapper strings. Marisol tries to stall the restraint team, but delay without public exposure only produces a worse compromise: security eventually charges anyway, breaking a young mother's wrist and beating Naila bloody. Gabriel tells Marisol that hesitation is not mercy when the institution remains in control of the room. The chapter converts hidden sabotage into collective resistance and forces Marisol to see the limits of half-measures.
+
+## Chapter 9 - Night Hold
+A storm stalls the line again. In the relative quiet of a junction cafeteria after midnight, Marisol and Ivo share food, cigarettes, and the residue of an old intimacy that neither ever named properly. He talks about his daughter, bird migration, and the pension that only vests if the route survives the summer. Marisol talks about her dead mother's dentures still sitting in a bathroom glass because she has never had time to clear the room. Nothing in the scene is strategic until the end, when Ivo agrees to hear a larger plan. The chapter restores human scale and sharpens cost.
+
+## Chapter 10 - Secondary Market
+With help from Naila's memory and Gabriel's recordings, Marisol realizes the line's worst secret is not wrongful removal alone. RailPassage profits again from people it marks as medically deferred after sanitation or injury events, rerouting them into municipal labor concessions rather than releasing them from the machine. Marisol verifies the pattern through clinic and wastewater logs, then leaks copied evidence through a church archive tied to Gabriel's network. The chapter shifts the target from one file to the concession itself.
+
+## Chapter 11 - Things That Stop a Train
+Marisol, Paloma, and Ivo map the system from the inside. They identify the failures that the company can spin, the failures it can buy time around, and the failures that legally force a public stop: wastewater overflow, missing restraint inventories, biohazard exposure, brake-test anomalies on a civilian platform. Gabriel, still refusing solitary escape, agrees to coordinate names and witness if Marisol can get the line seen. The chapter changes improvisation into strategy and converts mother and son into reluctant collaborators.
+
+## Chapter 12 - Pathogen
+Their first large attempt goes wrong. Paloma seeds preserved biohazard material into the audit path so the train must be quarantined, but Teresa traces the discrepancy fast enough to push a rushed transfer before outside inspectors can arrive. In the chaos an elderly detainee dies of heat and arrhythmia. Paloma is suspended, Gabriel nearly breaks from the plan entirely, and Marisol is left carrying an undeniable death in the ledger of her sabotage. This is the book's moral low point: competence has failed, and the cost is a body.
+
+## Chapter 13 - Retiro Sur
+During a blackout storm Marisol smuggles Gabriel off the line in sanitation coveralls and hides with him in a retired sleeper car at the rail cemetery called Retiro Sur. This is not a triumphant escape chapter. It is a chapter of confession. Marisol finally admits that years earlier she scrubbed a restraint death scene before investigators arrived because she needed to keep her job and her health coverage. Gabriel tells her he has known for years and that this was the moment he stopped believing she could ever tell the truth before being forced to. The state shift is not reconciliation but exposure.
+
+## Chapter 14 - Offer
+Marisol goes back. Teresa offers her the clean bargain the novel has been refusing all along: identify the leak chain, stand beside management at the investor review, and Gabriel's file can be quietly rerouted into inland release rather than foreign transfer. For a few pages the offer is genuinely tempting. Then Marisol walks past bins of confiscated shoes, hearing aids, and labeled family photographs waiting for incineration and understands that the bargain only works by sacrificing the unnamed again. She chooses public ruin over private pardon.
+
+## Chapter 15 - Hospitality Run
+RailPassage stages a grotesquely polished "humane mobility" demonstration for ministers, journalists, and shareholders. Citrus diffusers cover the latrine smell. Linen napkins and scripted testimony attempt to turn deportation into hospitality theater. Marisol seeds minor errors into the event: recorded voices bleeding into the wrong audio channels, menus printed with detention codes, a VIP lavatory that will not stay flushed. The chapter runs on dark comic humiliation. The line's self-image becomes fragile enough to crack.
+
+## Chapter 16 - Open Valve
+At the public-station demonstration stop, all the threads converge. Ivo drags the coupling sequence out long enough to align the cars and the crowd. Gabriel hijacks the carriage audio with recorded detainee testimony. Naila leads passengers in throwing their assigned-country tags into civilian view. Marisol opens the greywater purge so bodily waste, false paperwork, and official language collide under cameras and municipal health jurisdiction. Paloma hands preserved logs to inspectors. The Meridian West concession is broken in public, and everyone involved pays immediately.
+
+## Chapter 17 - Soup
+After the rupture comes one quiet afternoon. Ivo is in the hospital with a crushed foot. Paloma is facing detention. Detainees are scattered into shelters and temporary municipal holding. Marisol and Gabriel share cheap soup and bakery rolls with no remaining illusion that a single day can heal what years did to them. They talk about his childhood asthma, her work hands, his father's voice on tape, and the smell of bleach that followed her home every night. Gabriel chooses witness over disappearance. The chapter gives them damaged kinship instead of restoration.
+
+## Chapter 18 - First Rain
+In the inquiry Marisol testifies to the exact mechanisms by which the trains were kept "clean": who signed the logs, what had to be scrubbed, what counted as a stoppage, what had been turned into cargo. Outside, in the first autumn rain, Gabriel reads names from the salvaged ledger while sealed white cars begin to rust through at the yard. The concession is lost, but the wider regime is already imagining replacement routes. The novel closes not on redemption but on witness: the line can be stopped, and the truth can be left visible, even if history refuses to stay still.

@@ -1,0 +1,29 @@
+{
+  "chapter_id": "chapter_07",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "PASS",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_07_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:7; snapshots/cycle_01/chapters/chapter_07.md:61; snapshots/cycle_01/chapters/chapter_07.md:93; snapshots/cycle_01/chapters/chapter_07.md:147; snapshots/cycle_01/chapters/chapter_07.md:167; snapshots/cycle_01/chapters/chapter_07.md:293; snapshots/cycle_01/chapters/chapter_07.md:343; snapshots/cycle_01/chapters/chapter_07.md:371; snapshots/cycle_01/chapters/chapter_07.md:385",
+      "problem": "The chapter repeatedly cues emphasis with the same beat-announcing sentence templates, especially 'That was ...' and 'Nobody ...'. The repetition starts to make turns of realization, public silence, and consequence feel signposted by formula instead of discovered through fresh syntax or image.",
+      "rewrite_direction": "Rework the sentence leads around snapshots/cycle_01/chapters/chapter_07.md:7, snapshots/cycle_01/chapters/chapter_07.md:61, snapshots/cycle_01/chapters/chapter_07.md:93, snapshots/cycle_01/chapters/chapter_07.md:147, snapshots/cycle_01/chapters/chapter_07.md:167, snapshots/cycle_01/chapters/chapter_07.md:293, snapshots/cycle_01/chapters/chapter_07.md:343, snapshots/cycle_01/chapters/chapter_07.md:371, and snapshots/cycle_01/chapters/chapter_07.md:385 so those beats arrive through scene-specific action, sensory detail, or character perception rather than repeated announcer stems. Keep the underlying story beats and silence effects, but vary the sentence architecture at those local points.",
+      "acceptance_test": "Pass if a reread of the cited passages shows that no more than two chapter sentences begin with the exact stems 'That was' or 'Nobody', and each revised beat is still legible through concrete action or perception in its local paragraph rather than through a formulaic lead-in. Fail if those same stems still recur across the cited lines as the chapter's default way of marking emphasis."
+    }
+  ],
+  "summary": "Strong causal chapter with distinct character registers, specific bodily and social consequence, and no continuity, tense, sanitization, or dialogue-voice failures surfaced from the allowed inputs. It fails prose because recurring beat-announcing sentence formulas start to flatten emphasis in an otherwise sharp chapter.",
+  "coverage_scene_ids": [
+    "schoolhouse_verification",
+    "house_search",
+    "jamila_retrieval",
+    "tea_stall_backlash",
+    "nasima_birth_call"
+  ]
+}

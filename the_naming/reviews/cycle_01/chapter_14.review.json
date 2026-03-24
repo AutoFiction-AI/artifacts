@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_14",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch14_continuity_headcount_drift",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:7; snapshots/cycle_01/chapters/chapter_14.md:17; snapshots/cycle_01/chapters/chapter_14.md:35; snapshots/cycle_01/chapters/chapter_14.md:103; snapshots/cycle_01/chapters/chapter_14.md:207",
+      "problem": "The chapter's explicit crowd counts do not reconcile with canon. Line 17 places Fasa, Olet, and three assistant custodians in the hall, but lines 35 and 103 reduce the naming room to forty-three people, and lines 7 and 207 call Jin's audience forty-two. The continuity sheet fixes the shrine population at forty-three family members plus five custodians, so these numbers read as contradiction rather than selective perception.",
+      "rewrite_direction": "Reconcile the explicit counts in snapshots/cycle_01/chapters/chapter_14.md:7, snapshots/cycle_01/chapters/chapter_14.md:35, snapshots/cycle_01/chapters/chapter_14.md:103, and snapshots/cycle_01/chapters/chapter_14.md:207 against the people physically present in snapshots/cycle_01/chapters/chapter_14.md:17. If Jin is counting only family members or only other travelers, qualify that scope on the page; otherwise replace the numerals with canon-consistent counts.",
+      "acceptance_test": "Pass if every explicit crowd count in snapshots/cycle_01/chapters/chapter_14.md:7, snapshots/cycle_01/chapters/chapter_14.md:35, snapshots/cycle_01/chapters/chapter_14.md:103, and snapshots/cycle_01/chapters/chapter_14.md:207 is either canon-consistent with the people present in snapshots/cycle_01/chapters/chapter_14.md:17 or explicitly scoped as a subset. Fail if the naming room is still called forty-three people while the custodians remain present, or if Jin still refers to forty-two listeners/strangers without qualification."
+    },
+    {
+      "finding_id": "ch14_gitta_example_line_leakage",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:43; snapshots/cycle_01/chapters/chapter_14.md:97; snapshots/cycle_01/chapters/chapter_14.md:101",
+      "problem": "Gitta's confession lifts calibration-only language from the style bible closely enough to count as example-line leakage. Line 43 repeats the sentence 'He is my grandson,' and lines 97-101 reproduce the same paired logic as the forbidden calibration line about the naming asking for truth. That makes the scene sound derived from its guide text instead of organically written in Gitta's voice.",
+      "rewrite_direction": "Recast Gitta's lines in snapshots/cycle_01/chapters/chapter_14.md:43 and snapshots/cycle_01/chapters/chapter_14.md:97-101 into new wording that keeps her low-contraction, plain, deliberate register without sentence-level overlap with any calibration `example_lines` in outline/style_bible.json. Preserve the content of her claim and refusal, but not the guide's phrasing.",
+      "acceptance_test": "Pass if the revised lines at snapshots/cycle_01/chapters/chapter_14.md:43 and snapshots/cycle_01/chapters/chapter_14.md:97-101 no longer contain the exact sentence 'He is my grandson.' and no longer pair a sentence about what the naming asks with the exact follow-up 'This is the truth,' while Gitta still reads as short, careful, and low-contraction. Fail if either borrowed sentence pattern remains recognizable on the page."
+    },
+    {
+      "finding_id": "ch14_sanitized_reassurance_in_ending",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:195; snapshots/cycle_01/chapters/chapter_14.md:199; snapshots/cycle_01/chapters/chapter_14.md:201; snapshots/cycle_01/chapters/chapter_14.md:203; snapshots/cycle_01/chapters/chapter_14.md:209; snapshots/cycle_01/chapters/chapter_14.md:213",
+      "problem": "The closing movement over-interprets Fen's return into a consoling lesson. Phrases like 'he was choosing her,' 'something broken that had found a different way to hold together,' and 'unmistakably, family' reassure the reader and Jin too quickly after a theft of identity, dead parents on the road, and a family imploding in real time. That is sanitization drift by moral safety valve: the prose supplies redemptive meaning before the damage has been allowed to stay jagged.",
+      "rewrite_direction": "Rework snapshots/cycle_01/chapters/chapter_14.md:195-213 so the scene remains physically present but less adjudicated. Keep Fen sitting beside Gitta and Jin recognizing the pressure on his own lie, but strip the abstract labels that turn the tableau into proof that confession heals. Let Jin register ambivalence, debt, fear, or horror alongside attachment, and let the image end as a charged fact rather than a narrated resolution.",
+      "acceptance_test": "Pass if snapshots/cycle_01/chapters/chapter_14.md:195-213 end on concrete gesture, bodily sensation, or social pressure while leaving Fen's act legibly unresolved. Fail if the revised passage still explicitly labels the scene as 'family,' states that Fen is 'choosing her,' or tells the reader that the break has already found a new stable shape."
+    },
+    {
+      "finding_id": "ch14_prose_formula_and_fragment_tics",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_01/chapters/chapter_14.md:35; snapshots/cycle_01/chapters/chapter_14.md:47; snapshots/cycle_01/chapters/chapter_14.md:69; snapshots/cycle_01/chapters/chapter_14.md:89; snapshots/cycle_01/chapters/chapter_14.md:111; snapshots/cycle_01/chapters/chapter_14.md:161; snapshots/cycle_01/chapters/chapter_14.md:185; snapshots/cycle_01/chapters/chapter_14.md:201",
+      "problem": "The chapter falls into repeatable sentence machinery. It uses 'the face of a...' as an interpretive template across multiple beats, and it repeatedly leans on clipped stand-alone fragments and corrective negatives ('Forty-three people not breathing. The flood below.' / 'Not blank. Still.' / 'Not forgiveness...'). Once or twice these are choices; at this frequency they become a tic, and the fragment runs also drift into the constitution's banned clipped narration.",
+      "rewrite_direction": "Recompose the targeted beats in snapshots/cycle_01/chapters/chapter_14.md:35, snapshots/cycle_01/chapters/chapter_14.md:47, snapshots/cycle_01/chapters/chapter_14.md:69, snapshots/cycle_01/chapters/chapter_14.md:89, snapshots/cycle_01/chapters/chapter_14.md:111, snapshots/cycle_01/chapters/chapter_14.md:161, snapshots/cycle_01/chapters/chapter_14.md:185, and snapshots/cycle_01/chapters/chapter_14.md:201 into fuller sentences or fresh physical observations. Keep the compression, but stop relying on missing auxiliaries and 'the face of...' as default explanatory shortcuts.",
+      "acceptance_test": "Pass if the revised spans contain no stand-alone clipped narration of the 'Forty-three people not breathing' or 'Not forgiveness' type, and if no more than one 'the face of...' construction remains across those targeted lines. Fail if multiple fragment/correction beats or multiple 'the face of...' templates are still present in the revised passage."
+    }
+  ],
+  "summary": "FAIL. The confession sequence has real dramatic force and Jin's close-third interior stays legible, but the chapter does not clear pass level because it breaks canon headcounts, reproduces non-copyable style-bible dialogue in Gitta's confession, softens its hardest revelation with a reassuring end-frame, and leans on repeated clipped/explanatory prose formulas that flatten the sentence work."
+}

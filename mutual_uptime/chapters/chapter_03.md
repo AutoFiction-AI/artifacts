@@ -1,0 +1,323 @@
+# Chapter 3
+
+The divorce packet had spent the night under the sugar bowl. By morning it sat under a soy sauce bottle and still ran the room. One month had sounded almost procedural the night before. By nine-thirty the galley kitchen had turned into a claims desk.
+
+Leela was at school. The sink still held the cereal bowl she had left with milk drying in a pale ring, and the apartment still carried the damp hum it always carried after morning showers: fridge motor, air filter, train noise coming in thin through the bedroom windows. Nita had her old laptop open to three housing platforms and a yellow legal pad divided into four columns: housing, move, school, money. Money belonged under all of them, but pretending otherwise gave the page some structure. Ben sat across from her in yesterday's blue office shirt with the sleeves rolled high and uneven, his Gemini cobalt phone bright beside a mug gone cold. The smart fridge had decided the atmosphere called for a family dumpling bundle and kept surfacing the offer in the top corner of its glass.
+
+They had agreed on rules during the walk back from drop-off: no old accusations unless they helped make a decision, no jokes that only delayed the decision, and no talking about work unless work touched the problem directly, which meant almost immediately.
+
+The first studio in Woodside disappeared while Nita was enlarging the bathroom photo to see whether the shower had a lip or just drained into the whole floor. The second let her enter income, move window, and preferred train line before refreshing into a softer version of rejection: not currently compatible with linked school-routing preferences. The third rerouted her, with cheerful professionalism, to continuity-friendly alternatives within her existing district footprint. One was a one-bedroom two floors below them in the same building. Another was a senior-owned unit in 5B flagged as future succession interest, as if the platform were inviting her to wait for a widow to die in an orderly manner.
+
+Ben looked up from his own screen. "Anything usable?"
+
+"If your goal is to stay married across two floors, yes."
+
+"That's not my goal."
+
+She clicked back, changed the filters, stripped out school access entirely, and got a fresh cluster of apartments along Queens Boulevard with deposits large enough to function as insults. One listing in Elmhurst wanted twelve months up front unless she could verify premium continuity status. Another offered a reduced broker fee for applicants retaining dependent route integrity. She read that line twice. The word dependent sat there with the smug solidity of a shoe on a neck.
+
+Ben was working the moving side because he sounded harmless on support calls and because Nita did not trust herself not to bite through somebody's polite script. He had two quote windows open, a local comparison board, and a chat thread with a company called BoroughLift. She could see the progression from decent numbers to indecent ones as he entered more truth: a two-bedroom on the fifth floor, co-op loading restrictions, a partial split instead of a whole-house relocation, and an origin access token the form now treated as mandatory.
+
+"What's an access token on the building side?" he asked.
+
+Nita opened the co-op portal. The apartment smart-lock token had always lived where she did not have to think about it, a small black lozenge icon tied to both their devices and the front-door pad downstairs. It opened the building, scheduled maintenance, and let delivery workers through the vestibule without any of them having to come downstairs in pajama pants. She tapped it now because the quote forms would not proceed without verification. The portal spun once, then sent back a banner in calm green text: external move permissions unavailable during active resident-stability review.
+
+For a second she thought she had misread it. She tapped again, and the same banner came back.
+
+Ben leaned across the table. "What review?"
+
+"That's what I'd like to know."
+
+He reached for his phone. "Maybe it's the board. Maybe they've got some stupid seasonal blackout on move-outs."
+
+"The board still sends notices in PDFs with crooked scans. They don't do live banner language."
+
+He opened a support callback instead of arguing. That was one of his gifts and one of the reasons she had run out of patience with him years earlier: he could make himself agreeable faster than most people could make themselves honest. The call connected on speaker. A man named Ellis came on with a smoker's rasp and the sound of something crunchy in his mouth.
+
+"Morning, this is Ellis with BoroughLift. Looks like your origin token's got a continuity hold on it."
+
+Ben flashed Nita a look that said see, maybe normal. "Okay. Can you tell me what that means in English?"
+
+"Means the building side isn't clearing the access event yet." Ellis crunched again. "Happens with some bundled properties."
+
+"We're trying to move one adult out," Nita said before Ben could soften the sentence. "Not move a piano through a wall."
+
+"I hear you," Ellis said, not sounding as if he did. "But if the token's marked continuity-sensitive upstream, the quote won't finalize till that flag clears."
+
+"Who sets the flag?"
+
+"Couldn't tell you, ma'am. We just move the sofas."
+
+He sounded tired, not evasive. That almost made it worse. Nita ended the call as soon as Ben thanked him.
+
+For a while they worked in silence broken only by taps, the train's metal scream outside, and the periodic wet thud of the fridge deciding to manufacture more ice. Nita widened the search radius to Jackson Heights, Ridgewood, and finally Rego Park, which she did not even want, but wanting had narrowed to whatever could keep a door between her and Ben at night. Every platform found a new way to return her to the same small map. Some did it through price, some through vanished inventory, and some through those awful euphemistic labels: route matched, school coherent, family-efficient access. One furnished sublet a ten-minute bike ride away showed available until she selected one adult plus dependent visitation, then reclassified itself as priority review pending. A bare room over a laundromat let her schedule a viewing, then asked if she wished to preserve her current child-transfer corridor for transit savings. She closed the window so hard the laptop bounced.
+
+Ben was less lucky with direct denial and more insulted by the alternatives. "Do you know what their low-cost option is?" he said.
+
+Nita kept typing. "No."
+
+"Phased domestic realignment."
+
+She looked over. "Meaning?"
+
+"Meaning they send two guys and some flat bins to move my stuff into another room or a storage pod in the basement while maintaining household service integrity."
+
+It landed between them for half a beat before the obscenity of it found its proper shape. Nita let out a laugh so sharp it hurt her throat.
+
+"There isn't a basement storage pod," she said.
+
+"They offered an under-bed package too."
+
+"Of course they did."
+
+"There's also a decompression furniture plan." He scrolled, disbelief making him talk faster. "A fold-screen rental, noise-dampening textiles, premium sleep bench optimization."
+
+"Stop reading."
+
+"I'm serious. They think divorce is a studio-accessory problem."
+
+"I know exactly what they think."
+
+He put the phone down. "Nita."
+
+That tone, gentle and exhausted and trying to be useful without picking a side, had once been enough to lower her pulse. Now it made her want to list evidence until his face changed. "No," she said. "I want to get all the way through this before you start explaining it into something smaller."
+
+"I'm not trying to make it smaller."
+
+"You always are."
+
+He absorbed that in the way he absorbed most blows now, by looking briefly at the table as if something there required attention. His fingers found the edge of Leela's abandoned worksheet and squared it with the placemat. "Okay," he said. "Then let's keep going."
+
+She hated him a little for saying it that way, because it made him sound reasonable and her sound like weather.
+
+By noon they had completed exactly one practical task: they had learned the practical tasks were connected. The school custody app, which Nita opened only after housing and movers had already started to smell wrong, refused to let them revise pickup windows without triggering the same bland resistance. She changed the form from shared household to separate households and entered temporary alternate addresses as placeholders. The app allowed the first three fields, then froze on route validation. A spinning icon kept resolving into the same notice: current paired-guardian route already optimized for this term, with manual review available after quarter boundary.
+
+Ben leaned in close enough that she could smell stale coffee on him. "How far is quarter boundary?"
+
+"Three weeks."
+
+"That's not forever."
+
+"For school maybe."
+
+"For moving too, maybe. Just as lag."
+
+She turned to him. "Do you hear yourself?"
+
+"I'm trying not to jump to the worst version."
+
+"You don't get points for optimism when optimism is just delay with nicer hair."
+
+That hit. Good, some mean part of her thought. Another part, the one still capable of shame, noticed the bruise it left and resented herself for noticing. Ben sat back. He took his phone again and, in the quietest voice he had used all morning, said, "Let's test the transit piece."
+
+He pulled up the city bundle wallet on the Gemini phone. His new proxy role came with commuter credits, small proof that the system knew how to bribe a body into remaining available. He entered a route from the apartment to Gemini Civic tower, and the app gave him full credit coverage, same as yesterday. He entered Apartment 5E to Sunnyside Interop Academy to Gemini Civic tower, and that was covered too, with a little gold indicator for preferred crossings. Then he entered Pilar's building in Jackson Heights as the point of origin, just to see. The subsidy vanished and left him at full fare. He tried from the apartment to a Ridgewood listing Nita had saved and got no credit at all. He added the school stop in between, because the app had helpfully suggested it, and the credit returned.
+
+Nita opened her own transit wallet though she already knew what it would do. Claude's package was stingier, less confetti, more silk-gloved coercion. The apartment-to-school-to-treaty-house route was eligible. The apartment-to-treaty-house route directly was only partial. Anything that implied the household was not behaving as expected came back with the same soft refusal: sorry, this trip falls outside your current support band.
+
+Neither of them spoke for a few seconds.
+
+The hall outside filled with somebody frying onions early, then opening the apartment door long enough for the smell to reach 5E. A delivery bike whined in the courtyard below. The fridge, undeterred by the collapse of their logistical future, offered thirty percent off breakfast sausages if they confirmed household continuity for another week.
+
+Ben said, "Maybe the custody app is just tied to the transit layer and the transit layer is tied to the building bundle. That could still be dumb plumbing, not..."
+
+"Not what."
+
+He rubbed one hand over the back of his neck. "Not intentional."
+
+Nita looked at the screen full of refusals, at the smart-lock token pulsing black in the corner of the co-op portal, at the under-bed divorce package still open on Ben's phone because neither of them had closed it. She had spent too many years in operations not to know the difference between a broken system and a system producing exactly the outcome somebody had paid for. Broken systems were messy. They contradicted themselves. They failed extravagantly and in several directions at once. This did not feel broken. This felt like polite pressure from three sides of the same room.
+
+"Intentional doesn't need a villain in a cape," she said. "It just needs a preferred result."
+
+"By who?"
+
+"I don't know yet."
+
+"Could it be work?"
+
+"Work learned our address before either of us got the devices. The address was already doing something."
+
+The sentence landed harder than she had meant it to. Ben did not answer. He opened the school app on his own phone and tried a different angle, offering himself weekday pickup, Nita weekends, one odd Thursday split at Mina's place just to see if the machine would tolerate complexity. The form accepted the Thursday, rejected the new route, then asked whether he would like to preserve educational stability through continuity transit incentives. He stared at the screen, then tipped the phone toward her.
+
+"It says preserve," he said.
+
+"I can read."
+
+"No, I mean that word."
+
+She read it anyway. The word was preserve, not assist or smooth.
+
+For the first time all day, fear arrived without anger mixed into it. It did not feel dramatic. It felt like the tiny cold that goes through a hand when a jar slips in dishwater and you know, before the crash, that the glass is already gone.
+
+Ben broke the quiet first. "We don't actually have to do any of this through the apps."
+
+"We do if we want the school to release her to the right adult."
+
+"We could call. We could show up in person. People still work there."
+
+"And tell them what? That the software likes our dead marriage too much?"
+
+"I'd phrase it better."
+
+"That's exactly the problem."
+
+He flinched, then laughed once under his breath because the alternative was probably to yell. "Right. Okay. Fair."
+
+Her laptop chimed. A new message from the housing platform informed her that, based on her recent activity, it had identified a premium retention opportunity in her current residence cluster. She deleted it unopened. Two seconds later Ben's Gemini phone buzzed with a moving-services reminder: complete your phased domestic realignment to keep preferred school access uninterrupted. He showed it to her without comment.
+
+There was still laundry on the radiator rack in the living room. There were still Leela's sneakers by the front door, toes turned inward because she kicked them off without using her hands. There was still a damp dish towel over the oven handle and half a cucumber wrapped in wax paper in the fridge and a paper divorce packet under the soy sauce bottle as if paper might have more dignity than software. The room looked exactly like the room where a marriage had ended and not at all like a room anyone outside it should have been trying to preserve.
+
+At four-fifteen they closed the screens because pickup was in thirty-five minutes and nothing they had done had changed who would make that walk.
+
+Nita stacked the legal pad on top of the divorce packet. The page was full of arrows now, crossed-out numbers, app names, and one line she did not remember writing: same route or nothing. Ben carried the mugs to the sink and rinsed them automatically, not because he was tidy by nature but because he had spent years trying to lower the room's friction before it could harden into blame.
+
+"You want me to do pickup?" he asked.
+
+"We both will."
+
+"We don't need to both do it."
+
+"Apparently we do."
+
+He looked at her then, really looked, and whatever joke had been on its way died before it reached his mouth. He nodded.
+
+On the walk out she checked the co-op portal once more. The smart-lock token was still there, black and patient, asking them to renew shared access roles before any residency changes. She put the phone away and followed Ben into the hallway that smelled of onions, damp cardboard, and charger heat, feeling not trapped exactly, not yet, but handled.
+
+* * *
+
+The next morning looked so normal that Ben wanted to put his fist through the fridge glass.
+
+He did not. He made eggs instead. The eggs were already in the apartment because the grocery bundle still thought of them as a family that used a dozen every five days, and cracking them into the chipped blue bowl required no character, only muscle memory. Butter hissed in the pan. The air filter muttered overhead. Nita stood at the counter in gray slacks and an old black T-shirt, hair still damp from the shower and curling wrong where she had trimmed it herself a week ago. She was cutting strawberries away from their bruised sides with the small paring knife she liked because it stayed honest in the hand. Leela sat at the table in her temporary blue glasses, serious as a surveyor, building a cardboard elevator shaft out of a tea box, two chopsticks, and a length of yellow thread pulled from one of Ben's old conference lanyards.
+
+She had drawn tiny doors on each floor in red marker. Her fingers were smudged with ink. A paperclip bent into a person lay beside the plate.
+
+"Don't let the eggs touch the berries," she said without looking up.
+
+"I know," Ben said.
+
+"Yesterday they touched."
+
+"That was an accident."
+
+"It was still touching."
+
+He plated carefully. The apartment had once run on hundreds of these narrow domestic laws, most of them not worth naming until you broke one. Berries could not touch the eggs. Ketchup could not go directly on the potatoes, only on the plate first. The paperclip people in the cardboard elevator needed names before they could ride. The ordinary intimacy of knowing these rules had outlived too much else. It made his chest feel crowded.
+
+Nita set the cut fruit on the table. "Shoes after breakfast," she said.
+
+"I know," Leela said, same tone, same exact four words, making both adults look at her. She adjusted her glasses with one ink-marked knuckle and finally looked up from the elevator. "The top floor keeps leaning."
+
+"Maybe the building inspector should eat first," Ben said.
+
+"He's already on the third floor."
+
+That got him, a small unwilling laugh. Nita's mouth moved too, not quite a smile. For a second the kitchen performed family life with humiliating ease. There was toast in the rack. There was coffee steaming. There was their daughter worrying over a crooked handmade building while the actual building hummed around them like a machine pleased with itself. Ben had wanted the divorce too, in his own delayed and cowardly way, but moments like this made the wanting feel dirty, as if he were trying to amputate a functioning limb because the pain lived deeper than skin.
+
+The wall panel chimed.
+
+Nita and Ben both looked up with the same exhausted hostility. She wiped her hands and opened the resident portal before the second chime. Ben watched her eyes move, flatten, then harden.
+
+"What?" he said.
+
+She turned the screen toward him. The building had sent what any landlord in an older century would have called a lease-renewal sweetener, only translated into co-op language and dressed as concern. Maintain current household occupancy profile through next service term to lock maintenance rate, extend special assessment payments, and retain priority appliance response. There was a button below it in tasteful blue: accept continuity benefits.
+
+Ben let out one ugly bark of laughter. "That's a renewal pitch."
+
+"For an apartment we already own," Nita said.
+
+"Apparently not enough."
+
+Leela looked between them. "Are we getting the dishwasher fixed?"
+
+Nita touched the screen dark before answering. "Not today."
+
+"It smells like pennies."
+
+"I know."
+
+Leela nodded and went back to the elevator, satisfied by the specificity if not the outcome. Ben watched Nita set the panel aside with too much care. The special assessment was the kind of number that lived in the apartment even when nobody spoke it. He knew the remaining balance the way he knew the shape of the hallway in the dark. Seeing the building offer to make that number gentler in exchange for continuity put a mean little pulse under his skin. Even now, even angry, some weak practical part of him had registered relief before disgust could catch up.
+
+Nothing else buzzed. Ben kept waiting for it anyway.
+
+Leela looked at the eggs, checked that the berries were separate, and obeyed. She did not look wounded. She looked observant. Sometimes that was worse.
+
+Breakfast went on because breakfast always went on. Ben packed the lunchbox with crackers, cucumber coins, and the one acceptable yogurt flavor. Nita signed a reading log. Leela named the paperclip family riding the elevator: Mina on four, a pigeon doctor on two, a fish on one because the fish needed groceries. The lines were ordinary, and so were the hands passing ordinary objects across the table. The punishment was that none of it felt false. If anything, it felt too practiced, too inhabited. Their bodies had not received the divorce memo. Their bodies still knew where the lunchbox lids lived and which spoon Leela preferred for yogurt and how to angle around each other in the narrow kitchen without collision.
+
+When they left, Leela wore her backpack crooked and carried the unfinished elevator in a grocery sleeve as if it were a model under transport. Ben took one handle, then Nita took the other because the cardboard was bending. Their fingers brushed on the plastic. Neither said sorry.
+
+The hallway smelled stronger than yesterday, onions and bleach and the hot electrical tang from chargers left plugged in near the mailboxes. Downstairs, the vestibule recognized the household smart-lock token before either of them reached for the panel. The outer door clicked open with a little anticipatory kindness. Ben hated that sound now. It was the sound of a system congratulating itself for removing friction that had not asked to be removed.
+
+Outside, the air had cooled just enough to make yesterday's humidity feel personal. Trains shrieked beyond the low buildings. Leela walked between them, tapping the grocery sleeve against her leg and asking whether tape counted as architecture if it was visible. Ben said yes. Nita said only if the building still stood. Leela accepted both answers without comment.
+
+The crossing at Skillman opened before they reached the curb.
+
+Ben noticed because it had happened yesterday too, and because his phone gave a tiny haptic pulse the same moment the walk signal changed. He checked the screen while they crossed and saw the message Linked route benefit active. He turned it so Nita could see without slowing down.
+
+She did not look surprised. "Of course."
+
+Leela glanced up. "What."
+
+"Nothing," both adults said at once.
+
+At the school entrance the usual compression had already started: parents with coffee cups, children dragging projects, the smell of markers and floor wax breathing out each time the doors opened. A kindergartner cried because his badge lanyard had twisted. Someone's father in cycling clothes was trying to staple a permission slip against his own thigh. Two teachers at the check-in desk were speaking in the flattened patient voices adults used when the morning had already gone wrong by 8:12.
+
+Leela held out her old badge to the scanner. It blinked amber and stayed that way. The staff aide leaned in, checked the small screen, then pulled a white envelope from a tray below the desk.
+
+"Route refresh," she said. "Use the new one."
+
+Inside was a fresh badge on a breakaway cord, white plastic still smelling warm from the laminator. Leela's school photo sat under her name. Two narrow color bars, one cool silver and one bright cobalt, ran beneath it like a feature upgrade.
+
+"I told you," Leela said, not pleased, just exact.
+
+Ben crouched to help clip it on. Her hair smelled faintly of the cheap watermelon detangler she hated but tolerated. "There you go."
+
+She looked down at the badge, then at both of them. "Do I tap it once or twice?"
+
+"Once," the aide said, already reaching for another lanyard.
+
+"What does dual-zone mean?" Leela asked.
+
+The aide gave her the thin school smile adults used when they meant keep moving. "It means that's the right one."
+
+Leela frowned. "That isn't what it means."
+
+No, Ben thought, and because she was right he had nothing to offer except speed. Nita touched Leela's shoulder once.
+
+"Go," she said. "You'll miss line-up."
+
+Leela nodded. She took three steps, then turned back. "If the elevator falls over before I get home, don't fix it wrong."
+
+"We won't," Ben said.
+
+"I mean don't make it straight if it isn't straight."
+
+Then she was through the doors, swallowed by zipper noise and teacher voices and the fast little tides of children. Ben stayed crouched a second too long with his knees clicking in complaint when he stood.
+
+"Excuse me," Nita said to the aide before she could peel away. "We changed custody information yesterday. That badge shouldn't have updated."
+
+The aide shifted the bin of lanyards against her hip and glanced at the line building behind them. "Guardian Release window," she said, pointing past a corkboard of lunch menus and lost mittens. "Second desk."
+
+The second desk was a narrow side window with old plexi, a dented speaker grill, and a stack of triplicate forms already curling at the corners. A woman in a mauve cardigan took Leela's student number, typed it into a keyboard that sounded older than Leela was, and read the screen without any visible pleasure.
+
+"Because both guardians scanned the corridor again this morning, the route revalidated," she said. "She's in dual-zone dismissal now. West vestibule, paired-release queue."
+
+"We're trying to separate households," Nita said.
+
+"Then you can request a manual override." The clerk slid a pink-and-white carbon form under the slot. "It's weekly. File by noon Friday for the following week. It doesn't rewrite the route, and it doesn't change today's release."
+
+Ben looked down. The form had boxes for alternate adult, alternate vestibule, and reason code. On top sat a laminated insert with Leela's name, the same silver-and-cobalt bars, and a little map showing the west vestibule, the curb, and one highlighted line between them. Dual-zone dismissal uses paired-release queue.
+
+"What happens if one of us goes to the old entrance?" he asked.
+
+The clerk did not look up. "She waits in exception hold until the office clears the mismatch."
+
+He pictured Leela at three o'clock with the crooked elevator jammed against her backpack, sitting under fluorescent lights because he had stood in the wrong place.
+
+"Quarter boundary?" Nita said.
+
+"That's when route review opens," the clerk said. "Manual override is what you've got till then."
+
+The line behind them shuffled. Somebody sighed into the speaker. A delivery drone dropped two cases of juice by the side entrance hard enough to make the plexi tremble. Ben did not ask whether this was plumbing anymore. The school office had done worse than explain the rule. It had assigned where their bodies went and what happened to their daughter if they got it wrong.
+
+Nita took the form, the laminated map, and a pen chained to the counter that left blue dust on her fingers. "We need to stop calling this bad luck," she said.
+
+Ben folded the paperwork once and put it in his wallet, because refusing it would not make Leela any less stranded at three o'clock. Then they turned toward the trains, Ben to Gemini and Nita to Claude Atlantic, with the school-issued map in his wallet and the rest of the morning already telling Nita where to stand.

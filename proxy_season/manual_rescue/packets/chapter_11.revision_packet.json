@@ -1,0 +1,28 @@
+{
+  "chapter_id": "chapter_11",
+  "cycle": 1,
+  "input_snapshot_hash": "5be7b3a286867b2e7327c538e563057962dc34ce43996c37942f89b20d70ef8a",
+  "findings": [
+    {
+      "finding_id": "F02",
+      "source": "full_award_rescue.review",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.post_revision.md:2233",
+      "problem": "Full-book recurring pattern continues and concentrates. Chapter 11 contains THREE refrigerator-click instances: line 2233 ('The refrigerator clicked \u2014 its forty-minute cycle, precise as a metronome'), line 2398 ('The refrigerator clicked. The apartment existed around them'), and line 2454 ('The refrigerator clicked. Mira's knee pressed against Dan's'). Three instances in a single chapter, on top of appearances in at least 4 other chapters, pushes the motif past ambient texture into mechanical repetition. The reader will notice the device rather than feeling the apartment. At most one instance should remain in this chapter.",
+      "rewrite_direction": "Keep the instance at snapshots/cycle_01/FINAL_NOVEL.post_revision.md:2233 (the 'precise as a metronome' version, which opens the assessment-reading scene and has the strongest individual phrasing). Replace the instances at snapshots/cycle_01/FINAL_NOVEL.post_revision.md:2398 and snapshots/cycle_01/FINAL_NOVEL.post_revision.md:2454 with different physical details that maintain the apartment's presence without the refrigerator: Theo's pencil scratching from down the hall (already present at nearby lines and can absorb more weight as a counterpoint to the clinical data), the streetlight adjusting outside (AI-managed, thematically resonant), the radiator pipes, or the specific quality of silence between two parents who have just read something devastating about their child.",
+      "acceptance_test": "PASS if Chapter 11 contains no more than one instance of 'refrigerator clicked' (at or near line 2233) and the former locations at lines 2398 and 2454 use different ambient details that maintain domestic grounding. FAIL if two or more refrigerator clicks remain in the chapter."
+    }
+  ],
+  "must_fix_count": 1,
+  "non_negotiables": [
+    "Reduce refrigerator-click instances from three to exactly one; preserve only the line 2233 instance ('precise as a metronome')",
+    "Replace lines 2398 and 2454 instances with distinct ambient details that maintain domestic grounding without the refrigerator motif"
+  ],
+  "acceptance_targets": [
+    "Chapter 11 contains exactly one instance of 'refrigerator clicked' at or near line 2233",
+    "Former refrigerator-click locations at lines 2398 and 2454 use different, specific ambient details",
+    "Replacement details maintain the apartment's physical presence and domestic grounding",
+    "No new recurring-pattern instances introduced"
+  ]
+}

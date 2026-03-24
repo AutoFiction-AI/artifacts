@@ -1,0 +1,33 @@
+{
+  "chapter_id": "chapter_17",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_17_craft_001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_17",
+      "evidence": "`snapshots/cycle_01/chapters/chapter_17.md:591` has Cora promising to come back in the morning, `snapshots/cycle_01/chapters/chapter_17.md:605` says the jars will ride with Thea tonight, `snapshots/cycle_01/chapters/chapter_17.md:631` sends Cora and Dell's steps toward the street, and `snapshots/cycle_01/chapters/chapter_17.md:639` leaves Thea alone upstairs with the blue tin.",
+      "problem": "The chapter-ending staging contradicts the supplied chapter-18 boundary state, which requires Cora and Dell already sleeping in the bakery with departure packing done. As written, the trio's overnight geography and the jars' travel setup do not line up cleanly with the next chapter, creating a canonical continuity break at the handoff between chapters.",
+      "rewrite_direction": "Revise the exit and overnight sequence at `snapshots/cycle_01/chapters/chapter_17.md:587`, `snapshots/cycle_01/chapters/chapter_17.md:591`, `snapshots/cycle_01/chapters/chapter_17.md:605`, `snapshots/cycle_01/chapters/chapter_17.md:631`, and `snapshots/cycle_01/chapters/chapter_17.md:639` so the chapter ends with the group in the same physical state chapter 18 opens from: Cora and Dell remain at the bakery overnight, the jars are packed in their morning travel container, and the pre-dawn departure setup is explicit on the page rather than implied offstage.",
+      "acceptance_test": "Pass if the revised ending makes it unmistakable, by direct on-page action in the material replacing `snapshots/cycle_01/chapters/chapter_17.md:587`, `snapshots/cycle_01/chapters/chapter_17.md:591`, `snapshots/cycle_01/chapters/chapter_17.md:605`, `snapshots/cycle_01/chapters/chapter_17.md:631`, and `snapshots/cycle_01/chapters/chapter_17.md:639`, that Cora and Dell stay in the bakery overnight, the jars' travel storage is prepared before sleep, and no line sends them away toward the street before night ends; fail if the reader still has to infer an unseen return or repacking step."
+    },
+    {
+      "finding_id": "chapter_17_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_17",
+      "evidence": "The chapter repeatedly lands beats with clipped negation fragments at `snapshots/cycle_01/chapters/chapter_17.md:83`, `snapshots/cycle_01/chapters/chapter_17.md:85`, `snapshots/cycle_01/chapters/chapter_17.md:217`, `snapshots/cycle_01/chapters/chapter_17.md:361`, `snapshots/cycle_01/chapters/chapter_17.md:465`, `snapshots/cycle_01/chapters/chapter_17.md:625`, and `snapshots/cycle_01/chapters/chapter_17.md:643`.",
+      "problem": "A recurrent 'Not X. Not Y. / No X. No Y.' sentence habit has turned into a chapter-level tic. It flattens otherwise strong prose into a recognizable formula, and several instances also rub against the constitution's ban on elliptical clipped narration by substituting fragmentary correction for fully rendered observation.",
+      "rewrite_direction": "Rework the emotional pivots at `snapshots/cycle_01/chapters/chapter_17.md:83`, `snapshots/cycle_01/chapters/chapter_17.md:85`, `snapshots/cycle_01/chapters/chapter_17.md:217`, `snapshots/cycle_01/chapters/chapter_17.md:361`, `snapshots/cycle_01/chapters/chapter_17.md:465`, `snapshots/cycle_01/chapters/chapter_17.md:625`, and `snapshots/cycle_01/chapters/chapter_17.md:643`; keep only the strongest one or two, and replace the rest with grammatically complete sentences or concrete physical detail and action that land the beat without a negation-first scaffold.",
+      "acceptance_test": "Pass if, in the revised versions of `snapshots/cycle_01/chapters/chapter_17.md:83`, `snapshots/cycle_01/chapters/chapter_17.md:85`, `snapshots/cycle_01/chapters/chapter_17.md:217`, `snapshots/cycle_01/chapters/chapter_17.md:361`, `snapshots/cycle_01/chapters/chapter_17.md:465`, `snapshots/cycle_01/chapters/chapter_17.md:625`, and `snapshots/cycle_01/chapters/chapter_17.md:643`, no more than two beats still rely on fragmentary 'Not/No/Just' corrections and each cited passage reads as complete narration anchored in scene-specific image or action; fail if the same clipped pattern still appears three or more times across those passages."
+    }
+  ],
+  "summary": "Booker and dialogue clear the bar: the supper scene lands the chapter-spine beats, keeps Dell active in the future negotiation, and preserves distinct voices with contraction use that matches the style bible. The review still fails overall because the ending breaks continuity with the supplied chapter-18 boundary state, and the prose leans too often on clipped negation fragments as an emotional landing pattern. No MEDIUM+ sanitization drift, intimacy fade-to-black, tense drift, or character-voice collapse was found.",
+  "coverage_scene_ids": []
+}

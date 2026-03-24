@@ -1,0 +1,62 @@
+{
+  "chapter_id": "chapter_16",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_16_f001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_01/chapters/chapter_16.md:193; snapshots/cycle_01/chapters/chapter_16.md:199; snapshots/cycle_01/chapters/chapter_16.md:241",
+      "problem": "Sanitization drift in the breakup beat: Eli's accountability language stays abstract (\"used this\", \"taking from you\") at the exact moment the chapter needs concrete relational damage. The scene lands as controlled moral summary instead of fully embodied consequence.",
+      "rewrite_direction": "Revise the call exchange in snapshots/cycle_01/chapters/chapter_16.md:191-210 and the aftermath beat at snapshots/cycle_01/chapters/chapter_16.md:241 so Eli names specific actions and harms (who was lied to, what was promised, what Marisol absorbed in practical terms). Keep the no-self-exoneration stance, but replace abstract confession phrasing with concrete scene facts and bodily response.",
+      "acceptance_test": "PASS if lines 191-210 include at least two concrete, checkable details of affair conduct/consequence (named event, lie, or practical cost) and one embodied reaction from each side of the call; FAIL if the passage still relies on abstract accountability phrases without those specifics."
+    },
+    {
+      "finding_id": "chapter_16_f002",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_01/chapters/chapter_16.md:277; snapshots/cycle_01/chapters/chapter_16.md:283; snapshots/cycle_01/chapters/chapter_16.md:309",
+      "problem": "Timidity at the chapter endpoint: the narrative retreats to transit closure right before the first interpersonal collision, so the chapter's promised return-consequence remains mostly preparatory rather than dramatically tested on-page.",
+      "rewrite_direction": "Strengthen the ending span in snapshots/cycle_01/chapters/chapter_16.md:283-309 with one immediate, irreversible interpersonal condition before cutoff (for example, an explicit household boundary or pre-entry rule with concrete consequence), not only arrival logistics.",
+      "acceptance_test": "PASS if the final 25 lines contain a new explicit condition imposed on Eli that changes what he is allowed to do upon arrival, and Eli gives a binding response before the last line; FAIL if the chapter still ends on movement/arrival without a fresh on-page relational cost."
+    },
+    {
+      "finding_id": "chapter_16_f003",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_01/chapters/chapter_16.md:55; snapshots/cycle_01/chapters/chapter_16.md:71; snapshots/cycle_01/chapters/chapter_16.md:81; snapshots/cycle_01/chapters/chapter_16.md:133; snapshots/cycle_01/chapters/chapter_16.md:247; snapshots/cycle_01/chapters/chapter_16.md:279",
+      "problem": "Mechanical repetition from over-literal stress-tell execution: the accountability lexicon (receipts/facts/logistics) is reiterated so often that voice texture narrows and emotional modulation flattens.",
+      "rewrite_direction": "In snapshots/cycle_01/chapters/chapter_16.md:55-81, snapshots/cycle_01/chapters/chapter_16.md:129-143, and snapshots/cycle_01/chapters/chapter_16.md:245-287, keep factual precision but vary diction and delivery by speaker (Theo boundary language, Eli shame language, Nora task language) so accountability is not carried by the same repeated token set.",
+      "acceptance_test": "PASS if the revised named spans communicate the same financial/accountability facts while using clearly differentiated phrasing per speaker and no more than one repeated receipts/facts/logistics keyword per exchange; FAIL if multiple adjacent exchanges still hinge on the same repeated keyword bundle."
+    },
+    {
+      "finding_id": "chapter_16_f004",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_01/chapters/chapter_16.md:19; snapshots/cycle_01/chapters/chapter_16.md:233; snapshots/cycle_01/chapters/chapter_16.md:241",
+      "problem": "Recurring antithesis formula (\"not X, just Y\") appears three times, creating a detectable prose tic that blunts impact.",
+      "rewrite_direction": "Rework at least one of the constructions in snapshots/cycle_01/chapters/chapter_16.md:19, snapshots/cycle_01/chapters/chapter_16.md:233, and snapshots/cycle_01/chapters/chapter_16.md:241 into different sentence mechanics (direct image, action-first line, or concrete noun-led close) to break formula repetition.",
+      "acceptance_test": "PASS if the exact antithetical pattern (\"not ..., just ...\") appears no more than twice in the chapter after revision and the targeted lines retain equivalent meaning via non-matching syntax; FAIL if all three formula instances remain."
+    },
+    {
+      "finding_id": "chapter_16_f005",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_01/chapters/chapter_16.md:31; snapshots/cycle_01/chapters/chapter_16.md:123; snapshots/cycle_01/chapters/chapter_16.md:263",
+      "problem": "Secondary-character dialogue drifts into thematic aphorism, making Lenore and Randi sound partially authorial and reducing register separation under scene pressure.",
+      "rewrite_direction": "Adjust the side-character lines in snapshots/cycle_01/chapters/chapter_16.md:29-33 and snapshots/cycle_01/chapters/chapter_16.md:119-124 plus snapshots/cycle_01/chapters/chapter_16.md:263 so each line is anchored to immediate practical motive/job context rather than chapter-theme commentary.",
+      "acceptance_test": "PASS if revised Lenore and Randi lines each include concrete, situational intent tied to what they are doing in-scene and their sentence rhythm/word choice are clearly distinct from each other; FAIL if both still deliver generalized life-maxim statements."
+    }
+  ],
+  "summary": "Chapter 16 maintains continuity and tense control, but this pass fails on craft/prose/dialogue rigor: the breakup scene is too abstract at key impact moments, transit closure remains timid at the endpoint, accountability diction is mechanically repeated, a prose formula recurs three times, and side-character dialogue turns thematic instead of fully lived-in."
+}

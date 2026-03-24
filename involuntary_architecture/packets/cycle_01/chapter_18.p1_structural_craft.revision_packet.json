@@ -1,0 +1,246 @@
+{
+  "acceptance_targets": [
+    "[CH18_CRAFT_01] Reading the revised material from snapshots/cycle_01/chapters/chapter_18.md:199 through snapshots/cycle_01/chapters/chapter_18.md:325, a cold reader can name one new boundary, procedure, or choice Draco and Hermione have made together that was not already handed to them by Narcissa's revelation; if the scene still goes from apology to hand-holding and research without that new proof, fail.",
+    "[SPECIFIC_PARTICULAR_CH18] Pass if chapter 18 contains at most one instance. Fail if more than one remains.",
+    "[BOND_RESTATING_CH18] Pass if the section between Narcissa's departure and Hermione's arrival (snapshots/cycle_01/FINAL_NOVEL.md:4954-4968) moves through the bond question in under 10 lines rather than re-processing it at length. Fail if Draco's interior monologue restates the uncertainty in the same terms as chapters 11, 15, or 17.",
+    "[R-07] Ch18 arrival description no longer uses 'escaping' or synonymous phrasing for Hermione's hair.",
+    "[R-11] Ch18 no longer explains that the grey eyes are a Malfoy/Black inheritance trait.",
+    "[R-18] Ch18 has no more than 2 Mark-pain references, each tied to new information or a character decision.",
+    "[R-41] Ch18 has em-dashes in no more than 13 prose lines (<=8%).",
+    "[R-59] Ch18 has no more than 31 She-opened sentences (<=7%).",
+    "[R-72] Ch18 has no more than 31 He-opened sentences (<=7%)."
+  ],
+  "chapter_id": "chapter_18",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Reading the revised material from snapshots/cycle_01/chapters/chapter_18.md:199 through snapshots/cycle_01/chapters/chapter_18.md:325, a cold reader can name one new boundary, procedure, or choice Draco and Hermione have made together that was not already handed to them by Narcissa's revelation; if the scene still goes from apology to hand-holding and research without that new proof, fail.",
+      "chapter_id": "chapter_18",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_18.md:199; snapshots/cycle_01/chapters/chapter_18.md:215; snapshots/cycle_01/chapters/chapter_18.md:223; snapshots/cycle_01/chapters/chapter_18.md:245; snapshots/cycle_01/chapters/chapter_18.md:323",
+      "finding_id": "CH18_CRAFT_01",
+      "problem": "The reunion turn is under-earned on the page. Hermione apologizes, Draco relays Narcissa's new information, and the scene moves quickly into the drawing room and resumed work, but the chapter never forces the two of them to make one new practical trust choice together after the information asymmetry that broke them. As written, the return lands as permission and atmosphere rather than as a fresh relational proof.",
+      "rewrite_direction": "Rebuild the exchange starting at snapshots/cycle_01/chapters/chapter_18.md:199 and carrying through snapshots/cycle_01/chapters/chapter_18.md:230 so the reunion produces a concrete new term of engagement that Narcissa's earlier explanation did not already supply: a rule about disclosure, a test for reopening the archive, a condition for staying, or an explicit cost they are both accepting. Keep the drawing-room movement at snapshots/cycle_01/chapters/chapter_18.md:245 and the library resumption at snapshots/cycle_01/chapters/chapter_18.md:323, but make those beats consequences of that on-page choice rather than substitutes for it.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if chapter 18 contains at most one instance. Fail if more than one remains.",
+      "chapter_id": "chapter_18",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:4956; snapshots/cycle_01/FINAL_NOVEL.md:4986; snapshots/cycle_01/FINAL_NOVEL.md:5086",
+      "finding_id": "SPECIFIC_PARTICULAR_CH18",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:4956",
+            "excerpt": "4956: He sat in the cold library with what she had given him. The specific grief of a woman telling her son that her marriage \u2014 real, chosen, survived \u2014 had never moved the house the way his messy, broken, possibly-ended thing had moved it. She'd carried that knowledge for years. She'd carried it alone, and today she'd set it down in front of him, and the generosity of that was the kind of thing he didn't have language for.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:4986",
+            "excerpt": "4986: She didn't ask to come in. She stood on the step and he stood in the doorway and the gap between them was three feet of cold air and six weeks of proximity and a week of absence and the specific damage of his last words to her, which had been precise and cruel, and her silence before walking out, which had been its own precision.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:5086",
+            "excerpt": "5086: She was still holding his hand. He could feel the calluses on her fingers from years of wand-work, the specific architecture of her grip. The Mark under the gauze had eased. Not gone quiet \u2014 it was far from quiet \u2014 but the grinding had softened to something he could carry, the way a noise you've been straining against loses its edge when another sound enters the room.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          }
+        ],
+        "rewrite_direction": [
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:4986",
+            "excerpt": "4986: She didn't ask to come in. She stood on the step and he stood in the doorway and the gap between them was three feet of cold air and six weeks of proximity and a week of absence and the specific damage of his last words to her, which had been precise and cruel, and her silence before walking out, which had been its own precision.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "problem": "Chapter 18 \u2014 the novel's final chapter \u2014 uses 'the specific grief of a woman telling her son' (already cited in context), 'the specific damage of his last words to her' (4986), and 'the specific architecture of her grip' (5086). The final chapter should consolidate the novel's voice at its most distinctive; these formula instances make it sound like the rest of the book.",
+      "rewrite_direction": "REPLACE instances at snapshots/cycle_01/FINAL_NOVEL.md:4986 and 5086. KEEP one if it earns its place \u2014 line 4956 can stay if it's the sole instance. At line 5086: 'the specific architecture of her grip' \u2014 'architecture' is doing real work here given the novel's theme; restructure to keep the metaphor without the formula wrapper.",
+      "severity": "HIGH",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if the section between Narcissa's departure and Hermione's arrival (snapshots/cycle_01/FINAL_NOVEL.md:4954-4968) moves through the bond question in under 10 lines rather than re-processing it at length. Fail if Draco's interior monologue restates the uncertainty in the same terms as chapters 11, 15, or 17.",
+      "chapter_id": "chapter_18",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:4902; snapshots/cycle_01/FINAL_NOVEL.md:4957; snapshots/cycle_01/FINAL_NOVEL.md:5016; snapshots/cycle_01/FINAL_NOVEL.md:5024",
+      "finding_id": "BOND_RESTATING_CH18",
+      "locator_excerpts": {
+        "acceptance_test": [
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:4954-4968",
+            "excerpt": "4954: He heard her footsteps recede down the entrance hall, measured and unhurried. The front door opened and closed. The house did not adjust \u2014 no corridor shifting, no temperature change. The house did nothing at all.\n4955: \n4956: He sat in the cold library with what she had given him. The specific grief of a woman telling her son that her marriage \u2014 real, chosen, survived \u2014 had never moved the house the way his messy, broken, possibly-ended thing had moved it. She'd carried that knowledge for years. She'd carried it alone, and today she'd set it down in front of him, and the generosity of that was the kind of thing he didn't have language for.\n4957: \n4958: The Mark ground against the bone. He pressed his wrapped forearm to the chair and closed his eyes and sat with the question, which was the same question it had always been but shaped differently now. Not: was this fabricated or real? The house couldn't fabricate. His mother had said so, and his mother did not say things she had not verified. The question was: how much of what he felt was his own and how much was the house's amplification? And the answer she'd given him, which was not an answer at all, was that this was the que...",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          }
+        ],
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:4902",
+            "excerpt": "4902: He was quiet for a long time. The information reorganized itself in his head with the slow heaviness of furniture being moved in a room too small for it. He thought of her hands on his forearm, the Mark going still under her diagnostic touch. He thought of her in the library at midnight, pushing hair off her face, mouthing a translation. He thought of the kiss \u2014 clumsy, terrified, the best thing that had happened to him in years \u2014 and he thought of it now with the knowledge that the wanting underneath it had been his. The house had turned up the volume. But the sound had been there.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:4957",
+            "excerpt": "4957:",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:5016",
+            "excerpt": "5016: \"That doesn't resolve it entirely,\" she said. \"Amplification is still influence. We still can't know\u2014\"",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:5024",
+            "excerpt": "5024: She was quiet. The entrance hall was cold around them. His arm throbbed. She was standing four feet away in her heavy coat with her hair loose and her work bag over her shoulder, and he wanted to touch her with a clarity that was either entirely his own or partly the house's or both, and the distinction mattered and also it didn't, and he was exhausted by the distinction mattering.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          }
+        ],
+        "rewrite_direction": [
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:4950-5025",
+            "excerpt": "4950: \"It'll be fine.\"\n4951: \n4952: \"It will not.\" She adjusted a glove. \"But you know that.\"\n4953: \n4954: He heard her footsteps recede down the entrance hall, measured and unhurried. The front door opened and closed. The house did not adjust \u2014 no corridor shifting, no temperature change. The house did nothing at all.\n4955: \n[...]\n5020: \"\u2014what's baseline and what's\u2014\"\n5021: \n5022: \"I know.\" He hadn't meant to interrupt, or maybe he had. \"My mother said the same thing. She said no one in any relationship can say for certain what's their own feeling and what's proximity or habit or circumstance. She said the house makes the question visible. It doesn't invent it.\"\n5023: \n5024: She was quiet. The entrance hall was cold around them. His arm throbbed. She was standing four feet away in her heavy coat with her hair loose and her work bag over her shoulder, and he wanted to touch her with a clarity that was either entirely his own or partly the house's or both, and the distinction mattered and also it didn't, and he was exhausted by the distinction mattering.\n5025:",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "problem": "Chapter 18 receives Narcissa's revelation that the house 'cannot fabricate' (line 4890), which should materially change the question's terms. Yet the processing at lines 4957-4958 ('the same question it had always been but shaped differently now') and the dialogue at lines 5016-5022 restate the uncertainty again. The question is now resolved on one axis (the seed was real) but the chapter continues processing the amplification-uncertainty axis in the same interior register as previous chapters rather than moving to genuinely new ground.",
+      "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:4950-5025, let Narcissa's revelation do more work. After the 'cannot fabricate' beat, the characters should arrive at changed ground rather than restating the uncertainty. The dialogue at lines 5016-5022 ('I can't separate it... what I feel from what the house did') is effective because it's spoken rather than thought \u2014 preserve this but cut the preceding interior-monologue restatement at lines 4957-4958 that dilutes Narcissa's revelation before Draco can act on it.",
+      "severity": "MEDIUM",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch18 arrival description no longer uses 'escaping' or synonymous phrasing for Hermione's hair.",
+      "chapter_id": "chapter_18",
+      "cycle": 1,
+      "evidence": "Ch2 line 234: 'her hair pulled back and already escaping'; Ch18 line 4974: 'her hair was escaping whatever she'd done with it, the curls winning their perpetual argument with order'",
+      "finding_id": "R-07",
+      "problem": "Hermione's hair-escaping-its-arrangement is established in Ch2 and re-described in Ch10, Ch14, Ch15, and Ch18 (5th time).",
+      "rewrite_direction": "In Ch18 line 4974, cut or replace the hair-escaping description. The heavy coat and leather satchel already orient the reader.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch18 no longer explains that the grey eyes are a Malfoy/Black inheritance trait.",
+      "chapter_id": "chapter_18",
+      "cycle": 1,
+      "evidence": "Ch4 line 790: 'Her eyes, which were his eyes \u2014 the grey, the specific grey that ran through the Black line and the Malfoy line'; Ch18 line 4880: 'Her eyes were the same grey \u2014 the Malfoy inheritance that had skipped nothing'",
+      "finding_id": "R-11",
+      "problem": "The Narcissa-Draco shared grey eyes as 'Malfoy inheritance' is taught in Ch4 and re-taught in Ch18 with synonymous phrasing.",
+      "rewrite_direction": "In Ch18, cut the lineage-inheritance explanation. The 'habit of watching before speaking' observation is new and can remain.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch18 has no more than 2 Mark-pain references, each tied to new information or a character decision.",
+      "chapter_id": "chapter_18",
+      "cycle": 1,
+      "evidence": "Ch18: 5 Mark-pain references. Manuscript total: 72 Mark-pain references across 18 chapters. Baseline established Ch2-3.",
+      "finding_id": "R-18",
+      "problem": "The Mark's pain state is re-proved in Ch18 without materially new information. The baseline 'the Mark hurts' is established in Ch2-3.",
+      "rewrite_direction": "Cut Mark-pain references in Ch18 that merely re-state the ache without new findings or narrative consequences. Keep max 2 that drive decisions.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch18 has em-dashes in no more than 13 prose lines (<=8%).",
+      "chapter_id": "chapter_18",
+      "cycle": 1,
+      "evidence": "Ch18: 62/169 prose lines contain em-dashes (36.7%). Manuscript: 1053/2506 = 42.0%.",
+      "finding_id": "R-41",
+      "problem": "Em-dashes in 36.7% of prose lines vs 10% threshold. ~49 lines need conversion.",
+      "rewrite_direction": "Convert ~49 em-dash lines to colons, semicolons, periods, or restructured sentences. Retain em-dashes only for dramatic interruption.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch18 has no more than 31 She-opened sentences (<=7%).",
+      "chapter_id": "chapter_18",
+      "cycle": 1,
+      "evidence": "Ch18: 59/449 sentences open with 'She' (13.1%). Manuscript: 982/6721 = 14.6%.",
+      "finding_id": "R-59",
+      "problem": "'She' opens 13.1% of sentences vs 7% threshold. ~28 need restructuring.",
+      "rewrite_direction": "Restructure ~28 She-opened sentences using subordinate clauses, prepositional phrases, gerunds, or sentence combining.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch18 has no more than 31 He-opened sentences (<=7%).",
+      "chapter_id": "chapter_18",
+      "cycle": 1,
+      "evidence": "Ch18: 57/449 sentences open with 'He' (12.7%). Manuscript: 732/6721 = 10.9%.",
+      "finding_id": "R-72",
+      "problem": "'He' opens 12.7% of sentences vs 7% threshold. ~26 need restructuring.",
+      "rewrite_direction": "Restructure ~26 He-opened sentences using varied openers.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "has_locator_excerpts": true,
+  "input_snapshot_hash": "7cc421885c815433f103d78b59b245ef732b9a1788978e8d4c0b35deb5b357d8",
+  "must_fix_count": 9,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "original_snapshot_file": "snapshots/cycle_01/chapters/chapter_18.md",
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This novel is dark, intense, and emotionally devastating. The premise asks for a love story built inside trauma, in a house that may be manipulating its inhabitants, between two people marked by the same war in different ways. The creative risk is not in the darkness \u2014 it is in the tenderness. The hardest thing this novel must do is make the quiet moments as fully rendered as the painful ones, and make the desire as specific as the grief. Do not retreat from the body: the Mark examinations are physical events with physical consequences. The kiss is a physical event. The scar is a physical object on a real arm. Do not retreat from the doubt: the Manor's possible manipulation is not a problem to be solved in act three but a condition to be lived inside for the entire novel. Do not retreat from the ugliness of the drawing room scene or the specificity of what Bellatrix did. And do not retreat from the gentleness of the domestic scenes \u2014 tenderness between damaged people is harder to write than pain and should be given equal craft attention.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism is a craft failure equivalent to bad prose. When the scene calls for specificity \u2014 in pain, in desire, in shame, in violence, in grief \u2014 render it. The drawing room scene must feel like being in the room. The Mark examinations must feel like touch. The scar reveal must feel like exposure. Fading to implication at the moment of consequence wastes every scene that built to that moment.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for all characters except Narcissa. Uncontracted forms reserved for emphasis, deliberate formality, or Narcissa's default register. An unjustified uncontracted line in casual dialogue should be flagged and revised.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate high-intensity chapters with reflective or domestic ones. Vary scene count: single-scene chapters are allowed for compression; three-scene chapters should not all follow the same internal rhythm. Vary dialogue density \u2014 some chapters are conversation-heavy, others are predominantly interior. Never give two consecutive chapters the same structural shape. A chapter that builds to a confrontation should not be followed by another chapter that builds to a confrontation; a quiet aftermath chapter should not be followed by another quiet aftermath chapter. The rhythm of the book as a whole should feel like breathing \u2014 expansion and contraction, tension and release, pressure and air.",
+      "diction": "Literary but not ornate. The prose should feel crafted without feeling written \u2014 precise where precision matters, rough where roughness is true. Avoid both the polished-prestige-novel voice and the genre-fiction utility voice. The diction should sound like someone telling a story who is very good at telling stories but not performing the act of telling.",
+      "forbidden_drift_patterns": [
+        "The metaphor chain \u2014 a comparison that extends across three or more sentences and becomes the scene's organizing image rather than a local effect",
+        "Emotional stage directions \u2014 'she felt a surge of' or 'something tightened in his chest' or 'a cold knot formed' as substitutes for specific rendered emotion",
+        "The retrospective frame \u2014 'she would later realize' or 'he didn't know then' or other future-looking narrative commentary that drains present-tense urgency",
+        "Symmetrical sentence pairs \u2014 'She was X. He was Y.' as a repeated structural pattern, especially in dual-POV transitions",
+        "The ambient-magic-as-mood fallback \u2014 using the Manor's temperature or the Mark's ache to externalize emotional states that should be rendered through behavior and thought",
+        "Catalogue of sensory impressions used as scene-setting rather than scene-building \u2014 lists of what a room looks, smells, sounds like that delay rather than create dramatic pressure",
+        "The literary-fiction semicolon habit \u2014 using semicolons to connect observations that would land harder as separate sentences or would reveal more if left unconnected"
+      ],
+      "narrative_distance": "Close third person, alternating by chapter. Hermione's chapters are in her interiority \u2014 analytical, self-aware, faster. Draco's chapters are in his \u2014 more guarded, more sensory, the observations sharper and the self-knowledge harder-won. The POV character's biases should be legible without being announced.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Variable. Default to medium-length sentences with occasional long, accumulating ones and occasional short declaratives for force. Avoid sustained staccato. Avoid sustained flowing prose. The rhythm should shift with scene pressure \u2014 tighter under tension, more expansive in quiet and reflective passages.",
+      "sensory_bias": [
+        "tactile \u2014 the Mark examinations, the Manor's surfaces, temperature, skin contact, the physical experience of proximity",
+        "architectural and spatial \u2014 the Manor as sensory environment, corridors, rooms, light, the way space itself communicates",
+        "proprioceptive \u2014 body awareness, the resonance between them as a felt physical phenomenon, pain and pleasure as data"
+      ]
+    }
+  }
+}

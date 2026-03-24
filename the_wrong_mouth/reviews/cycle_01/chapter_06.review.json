@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_06",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH06_DIALOGUE_CALIBRATION_ECHO",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:3; snapshots/cycle_01/chapters/chapter_06.md:35; snapshots/cycle_01/chapters/chapter_06.md:39",
+      "problem": "Derry's bread handoff and Lenna/tomatoes material echo calibration-only example lines from the style bible closely enough to read like voice-template reuse instead of fresh scene language. The review brief explicitly forbids copying, paraphrasing, or echoing those example lines.",
+      "rewrite_direction": "Rewrite the bread setup at snapshots/cycle_01/chapters/chapter_06.md:3 and the garden anecdote at snapshots/cycle_01/chapters/chapter_06.md:35; snapshots/cycle_01/chapters/chapter_06.md:39 so the stale-food beat and Lenna's failed-garden stakes arrive through new incident-specific wording and a different anecdote shape. Keep Derry's domestic specificity, but do not reuse the calibration framing built around yesterday's bread with the bad part removed or Lenna's tomatoes.",
+      "acceptance_test": "In revised snapshots/cycle_01/chapters/chapter_06.md:3; snapshots/cycle_01/chapters/chapter_06.md:35; snapshots/cycle_01/chapters/chapter_06.md:39, a cold reader comparing the chapter to Derry's style-bible example lines cannot map either beat by shared setup and key phrasing. Derry may still offer stale bread and discuss Lenna's garden, but neither passage can read as a paraphrase of the calibration-only lines."
+    },
+    {
+      "finding_id": "CH06_CRAFT_PARAPHRASED_DILEMMA",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:81; snapshots/cycle_01/chapters/chapter_06.md:89; snapshots/cycle_01/chapters/chapter_06.md:103",
+      "problem": "The Aldric/Vess disagreement is already legible in live dialogue, then the narration steps in to restate it as a clean abstract diagnosis ('They were both right' and moral-versus-tactical summary language). That turns active scene pressure into explanation instead of forcing Maren to register one concrete cost or choice.",
+      "rewrite_direction": "Replace the abstract summary at snapshots/cycle_01/chapters/chapter_06.md:103 with a concrete fear image, bodily recoil, or immediate choice tied to the two options already stated at snapshots/cycle_01/chapters/chapter_06.md:81; snapshots/cycle_01/chapters/chapter_06.md:89. Keep the Crook-versus-east stakes, but let them arrive through what Maren pictures happening to his body or future rather than through paired thematic labels.",
+      "acceptance_test": "After revised snapshots/cycle_01/chapters/chapter_06.md:81 through snapshots/cycle_01/chapters/chapter_06.md:105, a reader can infer Aldric's and Vess's positions from the dialogue alone, and the follow-up paragraph adds one new concrete consequence or choice for Maren. Fail if the revision still summarizes the disagreement with abstract paired categories instead of advancing the scene through image, behavior, or bodily consequence."
+    },
+    {
+      "finding_id": "CH06_PROSE_CLOSING_OVERSTATEMENT",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:161; snapshots/cycle_01/chapters/chapter_06.md:163; snapshots/cycle_01/chapters/chapter_06.md:165",
+      "problem": "Once Aldric's beauty beat and the eastward decision have landed, the closing coda replays Derry's domestic material and then certifies the chapter's meaning in abstract summary ('nothing happened' / 'nothing was resolved'). The chapter already has the image and ache; the added thesis language blunts both.",
+      "rewrite_direction": "Compress or reframe the closing walk at snapshots/cycle_01/chapters/chapter_06.md:161; snapshots/cycle_01/chapters/chapter_06.md:163; snapshots/cycle_01/chapters/chapter_06.md:165 so the chapter ends on one concrete residue from the day: Derry's voice carrying beside Maren, the remembered shimmer in the stream, the road east, or Maren's still-shaking body. Remove the abstract certification and keep the quiet ending in image and pressure.",
+      "acceptance_test": "The final movement of revised snapshots/cycle_01/chapters/chapter_06.md:161 through snapshots/cycle_01/chapters/chapter_06.md:165 ends on a concrete sensory or relational image from the walk. Pass if the ending leaves unresolved pressure without explicitly stating that nothing happened, nothing was resolved, or abstractly ranking what mattered; fail if the close still paraphrases the chapter's meaning after the image has already landed."
+    }
+  ],
+  "summary": "Chapter 06 hits its required quiet-aftermath beats and keeps the three internal voices largely distinct, but it does not yet clear a pass. The Derry material leans on calibration-only example language, the Crook-versus-east conflict is paraphrased into abstract diagnosis after the dialogue already makes it legible, and the ending over-explains a chapter whose strongest work is already present in concrete image."
+}

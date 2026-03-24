@@ -1,0 +1,28 @@
+{
+  "chapter_id": "chapter_07",
+  "cycle": 2,
+  "input_snapshot_hash": "ed20c90abc74e52c83eb047f9e656033b593fd7cbed1cecbc1991124611660e7",
+  "findings": [
+    {
+      "finding_id": "the_way_construction_ch07",
+      "source": "manual_rescue/full_award_rescue.review.json",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.post_revision.md:1228, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:1242, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:1278, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:1298, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:1310, snapshots/cycle_02/FINAL_NOVEL.post_revision.md:1318",
+      "problem": "The comparative simile 'the way [pronoun/noun] [verb]' appears at least 6 times in this chapter. Full-novel count: 127 instances across 18 chapters (~1 per 28 lines). This is the novel's most persistent rhetorical tic. In this chapter: 'the way conversations die on dating apps' (1228), 'the way she catalogued everything' (1242), 'the way you notice a price when money is something that happens to you' (1278), 'the way stones sewn into the lining of her coat' (1298), 'the way the worst thoughts do' (1310), 'the way a showrunner watches dailies' (1318). At this density the device reads as a reflex rather than a chosen move.",
+      "rewrite_direction": "Keep the strongest instance in this chapter — line 1298 ('the way stones sewn into the lining of her coat'), which is the most physically specific and earns its length. Replace the other 5 instances at snapshots/cycle_02/FINAL_NOVEL.post_revision.md:1228, :1242, :1278, :1310, :1318 with varied figurative strategies: direct metaphor, sensory rendering, syntactic compression, or bare statement without simile. The Simone POV voice can support more declarative, analytical constructions that do not require 'the way' as a bridge to the figurative.",
+      "acceptance_test": "Revised chapter contains no more than 2 instances of 'the way [pronoun/noun] [verb].' Replacement constructions at lines 1228, 1242, 1278, 1310, 1318 use at least 3 different figurative strategies — not all similes. No replacement introduces a new 'the way' in a different sentence position."
+    }
+  ],
+  "must_fix_count": 1,
+  "non_negotiables": [
+    "No more than 2 instances of 'the way [pronoun/noun] [verb]' in the revised chapter",
+    "Retain 'the way stones sewn into the lining of her coat' (near line 1298) as the strongest instance",
+    "No replacement introduces a new 'the way' construction in a different sentence position"
+  ],
+  "acceptance_targets": [
+    "Lines 1228, 1242, 1278, 1310, 1318: 'the way' constructions replaced",
+    "Replacement constructions use at least 3 different figurative strategies (direct metaphor, sensory rendering, syntactic compression, bare statement)",
+    "Replacements are not all similes — at least one uses a non-simile strategy"
+  ]
+}

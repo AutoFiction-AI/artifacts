@@ -1,0 +1,82 @@
+{
+  "acceptance_targets": [
+    "[chapter_18_prose_001] Pass if the revised chapter gives the reader no more than two full statement-level recitals of Ferrand's payments and the notebook's corrective logic, and every later reference to that evidence changes the stakes of the scene rather than rephrasing the same dossier. Fail if the same package is still fully restated in the notebook description, the Vignot exchange, the Saunier exchange, and the copybook scene.",
+    "[chapter_18_prose_002] Pass if no more than two explanatory 'as if' clauses remain in the revised chapter and the cited moments still carry their meaning through image or action rather than comparative paraphrase. Fail if the same scaffold still appears across most of the cited beats."
+  ],
+  "chapter_id": "chapter_18",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if the revised chapter gives the reader no more than two full statement-level recitals of Ferrand's payments and the notebook's corrective logic, and every later reference to that evidence changes the stakes of the scene rather than rephrasing the same dossier. Fail if the same package is still fully restated in the notebook description, the Vignot exchange, the Saunier exchange, and the copybook scene.",
+      "chapter_id": "chapter_18",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_18.md:45; snapshots/cycle_02/chapters/chapter_18.md:49; snapshots/cycle_02/chapters/chapter_18.md:147; snapshots/cycle_02/chapters/chapter_18.md:223; snapshots/cycle_02/chapters/chapter_18.md:271; snapshots/cycle_02/chapters/chapter_18.md:273",
+      "finding_id": "chapter_18_prose_001",
+      "problem": "The chapter over-recites its key evidence. Ferrand's three payments and the notebook's 'name, work, corrected lie' logic are each spelled out so many times that the repetitions start sounding like thesis restatement instead of escalation. What should sharpen into public consequence keeps circling back to the same dossier summary.",
+      "rewrite_direction": "Keep one full articulation of the notebook's human-scale corrective at snapshots/cycle_02/chapters/chapter_18.md:49 or snapshots/cycle_02/chapters/chapter_18.md:147 and one public-facing articulation at snapshots/cycle_02/chapters/chapter_18.md:223 or snapshots/cycle_02/chapters/chapter_18.md:281. Compress the other recitals at snapshots/cycle_02/chapters/chapter_18.md:45, snapshots/cycle_02/chapters/chapter_18.md:271, and snapshots/cycle_02/chapters/chapter_18.md:273 so those beats add new pressure such as grief, legal risk, or the mechanics of disappearance rather than re-listing the same proof.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if no more than two explanatory 'as if' clauses remain in the revised chapter and the cited moments still carry their meaning through image or action rather than comparative paraphrase. Fail if the same scaffold still appears across most of the cited beats.",
+      "chapter_id": "chapter_18",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_18.md:7; snapshots/cycle_02/chapters/chapter_18.md:49; snapshots/cycle_02/chapters/chapter_18.md:173; snapshots/cycle_02/chapters/chapter_18.md:271; snapshots/cycle_02/chapters/chapter_18.md:273",
+      "finding_id": "chapter_18_prose_002",
+      "problem": "The chapter leans on the same explanatory 'as if ...' comparison scaffold at least five times. In a draft whose strongest passages already trust hard facts and concrete objects, that repeated sentence shape begins to sound like a fallback interpretive habit rather than a chosen emphasis.",
+      "rewrite_direction": "Recast at least three of the repeated comparison tails at snapshots/cycle_02/chapters/chapter_18.md:7, snapshots/cycle_02/chapters/chapter_18.md:173, snapshots/cycle_02/chapters/chapter_18.md:271, and snapshots/cycle_02/chapters/chapter_18.md:273 into direct image, action, or statement. Let the clerk's precision, Saunier's raisins, Lucien's failing hand, and Elise's doubled transcription land without the same comparative hinge each time.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "245159521f82506fcd01a5b914fae4551afff8a380aaeabc36e1b1030c88b110",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on prose and copyedit finish: diction precision, rhythm control, sentence-level clarity, grammar, line-level polish without flattening style, and explicit aesthetic-risk audit (sanitization is the primary risk \u2014 do not soften or euphemize; push toward creative risk and specificity).",
+    "key": "p3_prose_copyedit",
+    "label": "prose/copyedit fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into the contradiction that tenderness can coexist with surveillance, desire with betrayal, and ideology with vanity. Render violence, sex, illness, and poverty at the scale characters actually experience them. When an edge case appears, choose the more specific and less reputationally safe version if it remains faithful to character, period, and causality.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene reaches bodily danger, sex, grief, class shame, or political cruelty and then retreats into summary, rewrite toward the exact physical and social fact the character cannot evade.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "Moderate to high; contractions are the spoken default, with full forms reserved for period formality, deliberate emphasis, or Vautrin's cultivated precision.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate compressive surveillance chapters with slower communal or reflective chapters; vary scene count, dialogue density, and whether the turn comes from action, information, dread, or aftermath so no two adjacent chapters run on the same structural rhythm.",
+      "diction": "Historically grounded and unsentimental; plain enough for labor and bureaucracy, lyrical only when perception earns it rather than rhetoric.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third centered on Elise, elastic enough to register class texture, political pressure, and the quarry's collective life without drifting into authorial essay.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Supple, image-bearing sentences broken by hard factual beats at moments of violence, lust, bureaucratic coercion, or shame.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

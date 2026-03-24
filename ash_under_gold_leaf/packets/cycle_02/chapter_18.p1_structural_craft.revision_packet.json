@@ -1,0 +1,95 @@
+{
+  "acceptance_targets": [
+    "[C18-F001] PASS if the toxicology in snapshots/cycle_02/chapters/chapter_18.md:90 either matches canon or is explicitly labeled as a variant record, and Marisol's explanation near snapshots/cycle_02/chapters/chapter_18.md:134 acknowledges that same status. FAIL if conflicting causes remain with no in-scene explanation.",
+    "[C18-F002] PASS if the revised chapter shows at least one explicit external consequence tied to the Q&A confrontation before the ending and one embodied stress response from Marisol linked to that consequence. FAIL if the text still jumps from walkout to wrap-up without concrete blowback.",
+    "[C18-F003] PASS if at least one boundary term in the Ada exchange (around snapshots/cycle_02/chapters/chapter_18.md:198-214) is explicitly motivated by the just-finished reading conflict. FAIL if the negotiation remains interchangeable with a version where the walkout never happened."
+  ],
+  "chapter_id": "chapter_18",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if the toxicology in snapshots/cycle_02/chapters/chapter_18.md:90 either matches canon or is explicitly labeled as a variant record, and Marisol's explanation near snapshots/cycle_02/chapters/chapter_18.md:134 acknowledges that same status. FAIL if conflicting causes remain with no in-scene explanation.",
+      "chapter_id": "chapter_18",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_18.md:90; snapshots/cycle_02/chapters/chapter_18.md:134",
+      "finding_id": "C18-F001",
+      "problem": "The document quote gives a cause-of-death toxicology that conflicts with the canonical continuity record for Tomas. In a chapter that asks the reader to trust documentary precision, this contradiction breaks factual authority.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_18.md:90, align the quoted certificate toxicology with continuity canon; then keep Marisol's fact-claim language consistent at snapshots/cycle_02/chapters/chapter_18.md:134. If you intend record variance, stage that discrepancy explicitly in the same section instead of leaving an unexplained mismatch.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if the revised chapter shows at least one explicit external consequence tied to the Q&A confrontation before the ending and one embodied stress response from Marisol linked to that consequence. FAIL if the text still jumps from walkout to wrap-up without concrete blowback.",
+      "chapter_id": "chapter_18",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_18.md:140; snapshots/cycle_02/chapters/chapter_18.md:148; snapshots/cycle_02/chapters/chapter_18.md:152; snapshots/cycle_02/chapters/chapter_18.md:160; snapshots/cycle_02/chapters/chapter_18.md:162",
+      "finding_id": "C18-F002",
+      "problem": "Sanitization drift at the scene peak: the paternity challenge and walkout are high-pressure public threats, but the chapter quickly shifts into summary bookkeeping and reassurance. Tension is defused before concrete social consequence lands on-page.",
+      "rewrite_direction": "Expand immediate fallout in snapshots/cycle_02/chapters/chapter_18.md:152 and snapshots/cycle_02/chapters/chapter_18.md:160-163 with one concrete repercussion triggered by the confrontation (for example: post spread, canceled invite, hostile text, or safety concern). Carry that repercussion into snapshots/cycle_02/chapters/chapter_18.md:262-284 so consequence remains active through the close.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if at least one boundary term in the Ada exchange (around snapshots/cycle_02/chapters/chapter_18.md:198-214) is explicitly motivated by the just-finished reading conflict. FAIL if the negotiation remains interchangeable with a version where the walkout never happened.",
+      "chapter_id": "chapter_18",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_18.md:152; snapshots/cycle_02/chapters/chapter_18.md:176; snapshots/cycle_02/chapters/chapter_18.md:198; snapshots/cycle_02/chapters/chapter_18.md:210",
+      "finding_id": "C18-F003",
+      "problem": "Causal bridge weakness: the public-room conflict thread does not materially shape the subsequent Ada negotiation, so the chapter reads as two adjacent set pieces instead of one cause-and-effect arc.",
+      "rewrite_direction": "Insert a transition beat between snapshots/cycle_02/chapters/chapter_18.md:176 and snapshots/cycle_02/chapters/chapter_18.md:198 where fallout from the reading actively changes what Marisol asks for or concedes in the boundary checklist at snapshots/cycle_02/chapters/chapter_18.md:210.",
+      "severity": "MEDIUM",
+      "source": "booker",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "3107b6449b8821e988ee0660b0ac385d4d2087fdfa87843d43023f03629045be",
+  "must_fix_count": 3,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "When choosing between reputationally safe abstraction and specific discomfort, choose specificity. Render addiction, sexuality, deceit, class shame, and grief at lived scale. In edge cases, preserve character truth and causal accountability over reader comfort or institutional decorum.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene demands bodily, moral, or economic specificity, euphemistic phrasing is treated as a failed draft and must be rewritten with concrete stakes and observable consequence.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the spoken default; full forms appear only for emphasis, ritual language, or character-specific formal posture",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate scene density and pressure modes: pair high-conflict chapters with quiet domestic or documentary chapters, vary dialogue-to-interiority ratios, and prevent identical chapter skeletons in consecutive sequence.",
+      "diction": "contemporary literary diction with class-aware, borough-specific concreteness; avoid prestige-neutral workshop language",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third centered on Marisol, with rare brief distance expansions for institutional scenes",
+      "narrative_tense": "past tense",
+      "rhythm_target": "alternating tensile compression and reflective extension; line-level cadence should carry emotional pressure, not just information",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

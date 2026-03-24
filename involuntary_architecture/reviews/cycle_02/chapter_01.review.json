@@ -1,0 +1,62 @@
+{
+  "chapter_id": "chapter_01",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH01_AWARD_01",
+      "source": "award",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_02/chapters/chapter_01.md:79; snapshots/cycle_02/chapters/chapter_01.md:83; snapshots/cycle_02/chapters/chapter_01.md:103; snapshots/cycle_02/chapters/chapter_01.md:123; snapshots/cycle_02/chapters/chapter_01.md:137; snapshots/cycle_02/chapters/chapter_01.md:141",
+      "problem": "The chapter's decisive turn lands when Hermione authorizes the assignment and her body finally registers it, but the final section mostly re-argues the same necessity-and-trauma equation instead of buying a fresh turn. Harry's note, the insomnia beat, and the late reminder of public stakes all certify what the reader already knows: she is afraid and she is still going. That leaves the opener feeling structurally complete at line 83 and then over-proved afterward.",
+      "rewrite_direction": "Compress or materially repurpose snapshots/cycle_02/chapters/chapter_01.md:87, snapshots/cycle_02/chapters/chapter_01.md:103, snapshots/cycle_02/chapters/chapter_01.md:123, and snapshots/cycle_02/chapters/chapter_01.md:137. Keep the chapter engine and must-land work - dying-magic failures, Hermione's competence-as-armor, Harry's warm check-in, her choice not to tell him, and the sleep cost of deciding to go - but make the back half end on a new consequence, witness, or operational complication rather than another abstract proof that professional necessity will win. If no new turn is added, cut earlier once snapshots/cycle_02/chapters/chapter_01.md:79 through snapshots/cycle_02/chapters/chapter_01.md:83 have landed the decision and bodily shock.",
+      "acceptance_test": "Pass if the revised material after snapshots/cycle_02/chapters/chapter_01.md:83 delivers at least one new development that changes the tactical or relational situation while preserving Harry's check-in and the sleepless-night cost. Fail if the ending still mainly restates that Hermione is competent, afraid, and going anyway."
+    },
+    {
+      "finding_id": "CH01_CRAFT_01",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_02/chapters/chapter_01.md:37",
+      "problem": "Ron is described as seeing someone 'from his department,' but the continuity sheet places him at Weasleys' Wizard Wheezes managing the books for the second shop. The line implies a Ministry-style department and contradicts a canonical character fact.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_01.md:37 so Ron's new relationship is tied to the Wheezes shop, a supplier or customer orbit, or another role consistent with context/cycle_02/continuity_sheet.json. Do not imply a Ministry department unless the continuity sheet is being changed everywhere else.",
+      "acceptance_test": "At snapshots/cycle_02/chapters/chapter_01.md:37, a reader can identify Ron's employment context without inferring that he works in a Ministry department. The line must remain compatible with Weasleys' Wizard Wheezes as his stated occupation."
+    },
+    {
+      "finding_id": "CH01_DIALOGUE_01",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_02/chapters/chapter_01.md:95; snapshots/cycle_02/chapters/chapter_01.md:97",
+      "problem": "Harry's note lifts the style-bible calibration question 'Are you sleeping?' as its own line and then spotlights it in narration. Because the example lines are explicitly non-copyable, the reuse reads like assembly from guidance rather than freshly written voice.",
+      "rewrite_direction": "Recast snapshots/cycle_02/chapters/chapter_01.md:93, snapshots/cycle_02/chapters/chapter_01.md:95, and snapshots/cycle_02/chapters/chapter_01.md:97 so Harry still asks concretely about sleep in his blunt everyday register, but with fresh wording and cadence that do not reproduce example-line phrasing from outline/style_bible.json.",
+      "acceptance_test": "The revised exchange must still contain a specific sleep check and still sound like Harry, but it cannot use the exact standalone sentence at snapshots/cycle_02/chapters/chapter_01.md:95 or any other verbatim or near-verbatim borrowing from the style-bible example lines."
+    },
+    {
+      "finding_id": "CH01_PROSE_01",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_02/chapters/chapter_01.md:35; snapshots/cycle_02/chapters/chapter_01.md:51; snapshots/cycle_02/chapters/chapter_01.md:75; snapshots/cycle_02/chapters/chapter_01.md:109; snapshots/cycle_02/chapters/chapter_01.md:123",
+      "problem": "Hermione's close-third interior keeps resolving into polished verdict sentences instead of the style bible's messier, faster, self-correcting private register. The narration is often elegant, but it sounds like an already-edited summary of her mind rather than Hermione thinking under pressure.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_01.md:35, snapshots/cycle_02/chapters/chapter_01.md:51, snapshots/cycle_02/chapters/chapter_01.md:75, snapshots/cycle_02/chapters/chapter_01.md:109, and snapshots/cycle_02/chapters/chapter_01.md:123 so more of the insight arrives through concrete behavior, interruption, or self-correction instead of standalone mini-thesis lines. Hermione can remain incisive, but her private narration should feel locally unstable and effortful once the Manor assignment is in play.",
+      "acceptance_test": "Across the revised versions of those spans, at least two emotional turns must be carried by action, sensation, or a visibly qualified thought rather than by an isolated aphoristic sentence. Pass if the reader still gets numbness, body-memory, and competence-as-armor without the chapter stacking polished verdict lines section after section."
+    },
+    {
+      "finding_id": "CH01_PROSE_02",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_02/chapters/chapter_01.md:41; snapshots/cycle_02/chapters/chapter_01.md:73; snapshots/cycle_02/chapters/chapter_01.md:107; snapshots/cycle_02/chapters/chapter_01.md:109; snapshots/cycle_02/chapters/chapter_01.md:139; snapshots/cycle_02/chapters/chapter_01.md:141",
+      "problem": "The chapter re-plants the scar-concealment beat too many times with the same forearm, sleeve, glamour vocabulary. What should feel like a light habitual secret starts to read as overt foreshadowing, which flattens the prose and weakens the later reveal's sense of exposure.",
+      "rewrite_direction": "Consolidate the setup across snapshots/cycle_02/chapters/chapter_01.md:41, snapshots/cycle_02/chapters/chapter_01.md:73, snapshots/cycle_02/chapters/chapter_01.md:107, snapshots/cycle_02/chapters/chapter_01.md:139, and snapshots/cycle_02/chapters/chapter_01.md:141. Keep one clear routine-concealment beat early and one later stress-triggered resurgence, and cut or repurpose the other mentions unless they add new information beyond 'she hides the scar.'",
+      "acceptance_test": "Before the chapter ends, the revised text must establish concealment once as habit and once as renewed bodily pressure; any additional scar reference must materially change information or stakes. Fail if all three sections still restate the same sleeve or glamour fact in roughly the same terms."
+    }
+  ],
+  "summary": "The chapter lands the premise cleanly and gives Hermione's competence, isolation, and the magical crisis enough specificity to orient the book. It still fails at review stage because the back half keeps restating the same decision after it has already landed, Ron's employment context contradicts continuity, Harry's sleep question copies style-bible calibration text, Hermione's private narration is too often polished into quotable verdicts, and the scar-concealment beat is over-planted instead of lightly seeded."
+}

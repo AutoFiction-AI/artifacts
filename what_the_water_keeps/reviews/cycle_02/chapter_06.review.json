@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_06",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch06-craft-001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_06",
+      "evidence": "At snapshots/cycle_02/chapters/chapter_06.md:101, Silas identifies Gabriel by a missing premolar \"on the right.\"",
+      "problem": "This contradicts the continuity sheet, which establishes Gabriel's canonical dental marker as a missing upper left premolar. Because the tooth gap is one of the chapter's key identification proofs, the side swap is a material continuity break, not a cosmetic wording issue.",
+      "rewrite_direction": "Revise the identification beat at snapshots/cycle_02/chapters/chapter_06.md:101 and, if needed for consistency, the surrounding setup at snapshots/cycle_02/chapters/chapter_06.md:103 and snapshots/cycle_02/chapters/chapter_06.md:341 so Gabriel's dental marker matches the canonical upper-left gap and the chapter's later callback still points to the same body.",
+      "acceptance_test": "PASS if the revised identification passage at snapshots/cycle_02/chapters/chapter_06.md:101 states or clearly implies that Gabriel's missing premolar is on the upper left, and no line in the chapter assigns that gap to the right side; FAIL if right-side wording remains or the identifying detail stays internally inconsistent."
+    },
+    {
+      "finding_id": "ch06-prose-001",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_02/chapters/chapter_06.md:85 breaks into subject-dropped fragments (\"Not talking. Not saying...\") and snapshots/cycle_02/chapters/chapter_06.md:217 repeats the same clipped-memory shorthand with noun-phrase standalones (\"Silas in shirtsleeves... The lamp set on a stone...\").",
+      "problem": "These flashback passages violate the constitution's ban on elliptical clipping in narration. The subjectless fragment chains create stylized shorthand where the chapter otherwise earns its pressure through concrete, grammatical close-third prose, so the memory beats start reading like compressed draft notation rather than finished narrative control.",
+      "rewrite_direction": "Recast the clipped flashback runs at snapshots/cycle_02/chapters/chapter_06.md:85 and snapshots/cycle_02/chapters/chapter_06.md:217 into grammatically complete sentences that keep Della's sensory pressure on the page. Preserve the bodily facts, but give each beat an explicit subject and verb instead of relying on fragment stacks to manufacture urgency.",
+      "acceptance_test": "PASS if the revised passages at snapshots/cycle_02/chapters/chapter_06.md:85 and snapshots/cycle_02/chapters/chapter_06.md:217 contain no subject-dropped fragments such as \"Not talking\" and no noun-phrase standalones such as \"Silas in shirtsleeves,\" while still rendering the same burial-memory details in close third; FAIL if the revised text still depends on clipped shorthand rather than complete sentences."
+    },
+    {
+      "finding_id": "ch06-prose-002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "The chapter repeats the same speech-as-object follow-up at snapshots/cycle_02/chapters/chapter_06.md:67 (\"The word landed...\"), snapshots/cycle_02/chapters/chapter_06.md:121 (\"The words struck...\"), snapshots/cycle_02/chapters/chapter_06.md:213 (\"The words sat between them...\"), and snapshots/cycle_02/chapters/chapter_06.md:287 (\"The sentence went between them...\").",
+      "problem": "Once this move shows up four times in one confrontation, it stops feeling chosen and starts feeling automatic. Each beat treats speech itself as the acting physical object, which flattens moments that should differ in how they hit Della, alter the silence, or redirect the scene's leverage.",
+      "rewrite_direction": "Vary the post-line impact beats at snapshots/cycle_02/chapters/chapter_06.md:67, snapshots/cycle_02/chapters/chapter_06.md:121, snapshots/cycle_02/chapters/chapter_06.md:213, and snapshots/cycle_02/chapters/chapter_06.md:287. Keep at most one speech-as-object personification; rewrite the others to register consequence through body, gesture, breath, terrain, or changed tactical position instead of another abstract \"word/words/sentence\" construction.",
+      "acceptance_test": "PASS if, after revision, no more than one of the beats at snapshots/cycle_02/chapters/chapter_06.md:67, snapshots/cycle_02/chapters/chapter_06.md:121, snapshots/cycle_02/chapters/chapter_06.md:213, and snapshots/cycle_02/chapters/chapter_06.md:287 personifies speech as a thing that lands, strikes, sits, or goes between the characters, and at least two of those moments show the impact through a concrete physical or tactical change; FAIL if three or more of the four beats still reuse the same speech-object template."
+    }
+  ],
+  "summary": "This chapter clears the booker and dialogue bars: the Della-Silas scene sharpens the novel's central moral conflict, lands the required state change, and keeps both voices distinct and pressure-responsive. It still fails craft and prose on a hard continuity contradiction in Gabriel's identifying tooth detail, repeated constitutional clipping in the flashback prose, and a visible speech-as-object sentence tic that starts to flatten key impact beats."
+}

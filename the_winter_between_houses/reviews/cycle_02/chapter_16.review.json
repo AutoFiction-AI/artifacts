@@ -1,0 +1,77 @@
+{
+  "chapter_id": "chapter_16",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH16-F001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_02/chapters/chapter_16.md:116",
+      "problem": "Narrative process leakage appears in diegetic prose (\"chapter one of this winter\"), which breaks immersion and violates the constitution rule against meta-textual draft/chapter framing inside story reality.",
+      "rewrite_direction": "Revise the memory clause at snapshots/cycle_02/chapters/chapter_16.md:116 to an in-world temporal anchor (for example, first week of the freeze or before Christmas) while preserving the wall-signal continuity beat.",
+      "acceptance_test": "PASS if line 116 no longer uses meta-book terms (such as \"chapter\"/\"scene\") and the revised sentence still clearly identifies when the wall signal originated in-world; FAIL if any drafting/chapter vocabulary remains in narration."
+    },
+    {
+      "finding_id": "CH16-F002",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_02/chapters/chapter_16.md:25; snapshots/cycle_02/chapters/chapter_16.md:207; snapshots/cycle_02/chapters/chapter_16.md:409",
+      "problem": "Clipped narration fragments recur at high-pressure beats (\"Still.\" / \"A bed tonight and nothing promised after.\" / \"No guarantee of income...\"), producing telegraphic prose that conflicts with the constitution's no-elliptical-clipping rule.",
+      "rewrite_direction": "Recast the fragment-heavy lines at snapshots/cycle_02/chapters/chapter_16.md:25, snapshots/cycle_02/chapters/chapter_16.md:207, and snapshots/cycle_02/chapters/chapter_16.md:409-410 into grammatically complete close-third sentences that keep urgency but restore full syntactic function.",
+      "acceptance_test": "PASS if the revised spans at lines 25, 207, and 409-410 read as complete sentences with explicit subject+finite verb while preserving the same stakes; FAIL if any of those spans remain as clipped nominal fragments."
+    },
+    {
+      "finding_id": "CH16-F003",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_02/chapters/chapter_16.md:11; snapshots/cycle_02/chapters/chapter_16.md:43; snapshots/cycle_02/chapters/chapter_16.md:139; snapshots/cycle_02/chapters/chapter_16.md:155; snapshots/cycle_02/chapters/chapter_16.md:225; snapshots/cycle_02/chapters/chapter_16.md:274; snapshots/cycle_02/chapters/chapter_16.md:369",
+      "problem": "The chapter overuses one comparison scaffold (\"as if ...\") more than twice, creating a recurring sentence formula that flattens rhythmic variance.",
+      "rewrite_direction": "Target the repeated comparison beats at snapshots/cycle_02/chapters/chapter_16.md:11, 43, 139, 155, 225, 274, and 369; keep at most two \"as if\" constructions and convert the others to direct sensory observation, action consequence, or a different syntactic comparison shape.",
+      "acceptance_test": "PASS if no more than two narrative \"as if\" comparison constructions remain across the cited spans and each revised line communicates the same perception without repeating the original template; FAIL if three or more \"as if\" templates still appear in those spans."
+    },
+    {
+      "finding_id": "CH16-F004",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_02/chapters/chapter_16.md:215; snapshots/cycle_02/chapters/chapter_16.md:244",
+      "problem": "The central transfer-prep block runs as extended procedural checklist with limited adversarial friction, dropping scene pressure between two stronger confrontation set-pieces.",
+      "rewrite_direction": "Restructure snapshots/cycle_02/chapters/chapter_16.md:215-244 so paperwork/inventory beats are compressed and at least one immediate obstacle (timing, missing item, transport threat, or interruption) forces a new decision before the 4:10 time check at snapshots/cycle_02/chapters/chapter_16.md:253.",
+      "acceptance_test": "PASS if the revised 215-253 span contains at least one concrete obstacle that changes what the characters do next in-scene, and no more than two consecutive paragraphs are pure list/form handling without leverage shift; FAIL if the section remains primarily static checklist narration."
+    },
+    {
+      "finding_id": "CH16-F005",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_02/chapters/chapter_16.md:225; snapshots/cycle_02/chapters/chapter_16.md:237; snapshots/cycle_02/chapters/chapter_16.md:341; snapshots/cycle_02/chapters/chapter_16.md:343",
+      "problem": "Noreen's coached legal phrase is repeated verbatim under peak pressure, which makes her voice sound ventriloquized by procedural language and weakens idiolect separation.",
+      "rewrite_direction": "Keep one legally explicit line in the showdown at snapshots/cycle_02/chapters/chapter_16.md:341-344, but revise the duplicate repetition so Noreen's second beat uses her own high-contraction, emotionally specific cadence while preserving the same legal intent.",
+      "acceptance_test": "PASS if lines 341-344 contain the legal claim once and a distinct follow-up line in Noreen's own register (including at least one contraction and one concrete stake); FAIL if the coached sentence is repeated verbatim multiple times in that span."
+    },
+    {
+      "finding_id": "CH16-F006",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_02/chapters/chapter_16.md:82; snapshots/cycle_02/chapters/chapter_16.md:295; snapshots/cycle_02/chapters/chapter_16.md:353",
+      "problem": "Peter's stress tell is rendered with near-redundant formality labels across multiple beats, reading like over-literal style-bible token reuse rather than fresh scene-specific observation.",
+      "rewrite_direction": "Revise the repeated formality markers at snapshots/cycle_02/chapters/chapter_16.md:82, 295, and 353 so only one beat names formality abstractly; in the other beats, show the shift through concrete diction choices, interruption patterns, or observable effect on Noreen/others.",
+      "acceptance_test": "PASS if among lines 82, 295, and 353 only one line uses an explicit abstract formality label and the other two communicate the same shift via concrete speech/action cues; FAIL if all three beats still rely on explicit label-style narration."
+    }
+  ],
+  "summary": "Chapter 16 lands its major state change and core causality, but it does not clear pass-level craft rigor due process leakage, clipped-fragment prose, repeated sentence formulas, a mid-scene momentum dip, and voice flattening in key dialogue beats.",
+  "coverage_scene_ids": [
+    "scene_01_letter_discovery_and_threat",
+    "scene_02_transfer_planning_in_harrow_kitchen",
+    "scene_03_public_departure_and_saint_brigid_intake"
+  ]
+}

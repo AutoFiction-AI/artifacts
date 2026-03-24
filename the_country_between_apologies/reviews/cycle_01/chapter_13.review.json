@@ -1,0 +1,62 @@
+{
+  "chapter_id": "chapter_13",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch13_f001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:265",
+      "problem": "Sanitization drift at a key accountability beat: the rehab memory lands in abstraction (\"He called it what it was now\") instead of naming the concrete act, which softens culpability exactly where the scene should sharpen it.",
+      "rewrite_direction": "Revise snapshots/cycle_01/chapters/chapter_13.md:265-266 so Eli explicitly names what he did in that rehab waiting-room moment (action + consequence), and pair it with immediate bodily/internal impact rather than a placeholder abstraction.",
+      "acceptance_test": "PASS if the revised span at snapshots/cycle_01/chapters/chapter_13.md:265-266 states the specific past behavior in plain language and includes at least one embodied reaction in-scene; FAIL if it still uses euphemistic placeholders like \"what it was\" or equivalent evasions."
+    },
+    {
+      "finding_id": "ch13_f002",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:345",
+      "problem": "Elliptical clipping/telegraphic break: \"Then I make calls and take day labor till it's.\" is grammatically incomplete and reads as accidental truncation, violating the no-clipped-function-words rule.",
+      "rewrite_direction": "Rewrite the exchange at snapshots/cycle_01/chapters/chapter_13.md:343-347 so Eli states a complete fallback plan sentence in his natural spoken register, and Theo's response pushes sequence/accountability against that complete plan.",
+      "acceptance_test": "PASS if Eli's fallback line in snapshots/cycle_01/chapters/chapter_13.md:343-347 is syntactically complete and names a concrete contingency action; FAIL if the line still ends in a clipped or unfinished clause."
+    },
+    {
+      "finding_id": "ch13_f003",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:255; snapshots/cycle_01/chapters/chapter_13.md:351",
+      "problem": "Idiolect flattening: Nora and Theo converge on near-identical managerial phrasing (\"dates and amounts\" logistics language), reducing voice separation in a chapter where dialogue rules require distinct registers.",
+      "rewrite_direction": "Keep Nora's deadline-forward instruction at snapshots/cycle_01/chapters/chapter_13.md:255, but revise Theo's instruction block at snapshots/cycle_01/chapters/chapter_13.md:351-356 into Theo-specific accountability language (sequence, backup records, anti-ghosting) without echoing Nora's exact phrasing.",
+      "acceptance_test": "PASS if Nora's text remains deadline/tuition specific and Theo's later block no longer repeats \"dates and amounts\" while still demanding concrete reporting; FAIL if both characters still sound like the same procedural voice in those spans."
+    },
+    {
+      "finding_id": "ch13_f004",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:247; snapshots/cycle_01/chapters/chapter_13.md:269; snapshots/cycle_01/chapters/chapter_13.md:275; snapshots/cycle_01/chapters/chapter_13.md:389",
+      "problem": "Post-decision pacing drag: after the core state change (Reno choice + first wire), the chapter lingers in repeated ambient-terminal beats and parallel watchman dialogue, which dilutes forward causal pressure before departure.",
+      "rewrite_direction": "Tighten snapshots/cycle_01/chapters/chapter_13.md:247-279 and snapshots/cycle_01/chapters/chapter_13.md:375-397 by compressing one observational vignette cluster, and spend the recovered space on a new immediate consequence beat (next-step contact, deadline risk, or housing/work failure condition tied to Reno).",
+      "acceptance_test": "PASS if the revised section after snapshots/cycle_01/chapters/chapter_13.md:243 contains one clear ambient montage (not two) and adds one new causally loaded beat that changes what can happen in chapter 14; FAIL if it remains mostly atmospheric repetition before boarding."
+    },
+    {
+      "finding_id": "ch13_f005",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:145; snapshots/cycle_01/chapters/chapter_13.md:307; snapshots/cycle_01/chapters/chapter_13.md:379; snapshots/cycle_01/chapters/chapter_13.md:381; snapshots/cycle_01/chapters/chapter_13.md:383; snapshots/cycle_01/chapters/chapter_13.md:385; snapshots/cycle_01/chapters/chapter_13.md:403",
+      "problem": "Recurring formula tics: sleep-denial phrasing repeats three times and the four-line \"Label: clipped.\" sequence over-signals the same control motif, flattening line-level surprise.",
+      "rewrite_direction": "Vary the refrain and syntax at snapshots/cycle_01/chapters/chapter_13.md:143-147, snapshots/cycle_01/chapters/chapter_13.md:303-309, and snapshots/cycle_01/chapters/chapter_13.md:403; rework the checklist at snapshots/cycle_01/chapters/chapter_13.md:377-385 so document control is conveyed through textured action/thought rather than four identical sentence constructions.",
+      "acceptance_test": "PASS if revised prose keeps the insomnia motif but avoids three near-identical sleep-denial formulations, and the 377-385 section no longer uses four consecutive \"X: clipped.\" lines; FAIL if those repeated constructions remain substantially unchanged."
+    }
+  ],
+  "summary": "Chapter 13 hits the required macro beats (impound loss, depot limbo, first wire transfer) and stays in past-tense close third on Eli, but unresolved craft/dialogue/prose issues keep it below pass level: one high-impact sanitization retreat at an accountability memory, one high-severity clipped dialogue defect, voice-separation flattening in logistics speech, pacing drag after the central decision, and repeated prose formulas that reduce texture." 
+}

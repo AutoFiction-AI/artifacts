@@ -1,0 +1,56 @@
+{
+  "chapter_id": "chapter_06",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_06_F001",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_02/chapters/chapter_06.md:263; snapshots/cycle_02/chapters/chapter_06.md:279; snapshots/cycle_02/chapters/chapter_06.md:283; snapshots/cycle_02/chapters/chapter_06.md:317",
+      "problem": "The chapter-turn is over-signaled: Anika's rescue narrative is stated, restated, and then restated again, which reduces subtext and weakens the final beat's dramatic compression.",
+      "rewrite_direction": "Revise the close at snapshots/cycle_02/chapters/chapter_06.md:263, snapshots/cycle_02/chapters/chapter_06.md:279, snapshots/cycle_02/chapters/chapter_06.md:283, snapshots/cycle_02/chapters/chapter_06.md:317 so it carries one explicit objective statement and one distinct consequence action; cut duplicate declarations that repeat the same intent in adjacent beats.",
+      "acceptance_test": "Pass if the revised passage in the current 263-317 close contains exactly one explicit statement of Anika's debt-rescue objective and ends on a new consequence (physical cost, concealment risk, or relational risk) rather than a second paraphrase of the same plan; fail if the objective is explicitly restated multiple times."
+    },
+    {
+      "finding_id": "chapter_06_F002",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_02/chapters/chapter_06.md:203",
+      "problem": "Sanitization drift at a pressure peak: \"He saw it and cursed under his breath\" summarizes rather than renders the profanity event, softening emotional and social consequence in a scene that should be fully embodied.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_06.md:203 and snapshots/cycle_02/chapters/chapter_06.md:205, replace summarized swearing with explicit spoken language plus immediate scene effect (how Anika reacts, how Ravi self-corrects, or what the room does next).",
+      "acceptance_test": "Pass if the revised 203-205 beat includes a direct utterance from Ravi with explicit profanity and a visible immediate consequence in the interaction; fail if swearing remains indirect summary (for example, \"cursed\" without quoted speech)."
+    },
+    {
+      "finding_id": "chapter_06_F003",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_02/chapters/chapter_06.md:173; snapshots/cycle_02/chapters/chapter_06.md:177; snapshots/cycle_02/chapters/chapter_06.md:183",
+      "problem": "The kitchen exchange stacks low-information evasions (\"It means they review.\" / \"Sometimes.\" / warning-only address), creating transcript cadence and missing a leverage shift under high pressure.",
+      "rewrite_direction": "In snapshots/cycle_02/chapters/chapter_06.md:171, snapshots/cycle_02/chapters/chapter_06.md:173, snapshots/cycle_02/chapters/chapter_06.md:177, snapshots/cycle_02/chapters/chapter_06.md:183, keep one deflection but make the next reply materially specific (caller, amount, deadline, or concrete consequence) so the exchange advances conflict rather than stalling.",
+      "acceptance_test": "Pass if after Anika's line at 171 at least one of Ravi's next two responses contains concrete new information and one line in that mini-exchange clearly shifts leverage (admission, refusal with stakes, or counter-demand); fail if both responses remain generic evasions."
+    },
+    {
+      "finding_id": "chapter_06_F004",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_02/chapters/chapter_06.md:43; snapshots/cycle_02/chapters/chapter_06.md:225; snapshots/cycle_02/chapters/chapter_06.md:243; snapshots/cycle_02/chapters/chapter_06.md:285; snapshots/cycle_02/chapters/chapter_06.md:305; snapshots/cycle_02/chapters/chapter_06.md:313; snapshots/cycle_02/chapters/chapter_06.md:315",
+      "problem": "Recurring micro-beat formula with \"once\" appears repeatedly across unrelated moments, turning emphasis into a detectable tic and flattening rhythmic variation.",
+      "rewrite_direction": "Rework the repeated construction at snapshots/cycle_02/chapters/chapter_06.md:225, snapshots/cycle_02/chapters/chapter_06.md:243, snapshots/cycle_02/chapters/chapter_06.md:285, snapshots/cycle_02/chapters/chapter_06.md:305, snapshots/cycle_02/chapters/chapter_06.md:313, snapshots/cycle_02/chapters/chapter_06.md:315 by varying syntax and sensory focus instead of reusing the same adverb-led emphasis.",
+      "acceptance_test": "Pass if, in the revised 225-315 span, no more than two beats use the \"once\" emphasis pattern and the replaced beats use distinct constructions (for example cadence, duration, or interruption cues); fail if three or more \"once\" micro-beats remain in that span."
+    }
+  ],
+  "summary": "Chapter 6 lands the required debt-exposure consequences and stays in canonical past tense with close third focalization, but it does not clear pass level because of one HIGH sanitization lapse, one dialogue-pressure cadence lapse, one recurring prose tic, and an over-explicit final turn that blunts Booker-level compression.",
+  "coverage_scene_ids": [
+    "chapter_06_scene_01_fee_waiver_intake",
+    "chapter_06_scene_02_home_private_plan"
+  ]
+}

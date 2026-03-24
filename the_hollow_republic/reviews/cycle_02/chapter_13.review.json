@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_13",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch13-craft-process-leak-abel-book",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_02/chapters/chapter_13.md:311",
+      "problem": "The narration breaks close-third and leaks process language with 'He had spent half the book trying to widen himself with rhetoric and bad company.' That sentence stops being Elise's perception and starts referring to the novel as an artifact, which violates the constitution's ban on process leakage and punctures the chapter's otherwise controlled aftermath.",
+      "rewrite_direction": "Rewrite snapshots/cycle_02/chapters/chapter_13.md:311 so Abel is measured through Elise's in-world knowledge of his recent posturing, rhetoric, and apprenticeship rather than through a meta reference to the novel. Keep the contrast between his performance and the smallness of his dead body, but anchor it to concrete memory or immediate physical detail in snapshots/cycle_02/chapters/chapter_13.md:309-312.",
+      "acceptance_test": "PASS if the revised passage at snapshots/cycle_02/chapters/chapter_13.md:309-312 contains no meta-textual terms such as 'book' or equivalent author-facing framing and Abel is described only through Elise's lived knowledge and the body in front of her; FAIL if the narration still refers to the novel, chapter, scene, or reader."
+    },
+    {
+      "finding_id": "ch13-craft-fruit-continuity",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_02/chapters/chapter_13.md:5; snapshots/cycle_02/chapters/chapter_13.md:229; snapshots/cycle_02/chapters/chapter_13.md:319; snapshots/cycle_02/chapters/chapter_13.md:325",
+      "problem": "Lucien's newspaper parcel changes from apricots to cherries mid-scene, then back to apricots. That is a clear object-state continuity error inside the chapter and against the chapter-12 carryover, and it undercuts trust at the exact moment the prose is asking the reader to track precise physical detail.",
+      "rewrite_direction": "Make the fruit consistent across snapshots/cycle_02/chapters/chapter_13.md:5, snapshots/cycle_02/chapters/chapter_13.md:229, snapshots/cycle_02/chapters/chapter_13.md:319, and snapshots/cycle_02/chapters/chapter_13.md:325. The cleanest fix is to revise snapshots/cycle_02/chapters/chapter_13.md:229 so the spilled fruit remains apricots and the smell/texture imagery matches the established parcel; if you prefer cherries, then every cited line must be revised into that single choice.",
+      "acceptance_test": "PASS if a reader tracking the parcel through snapshots/cycle_02/chapters/chapter_13.md:5, snapshots/cycle_02/chapters/chapter_13.md:229, snapshots/cycle_02/chapters/chapter_13.md:319, and snapshots/cycle_02/chapters/chapter_13.md:325 encounters one fruit only and the later smell/mashed-paper details match that choice; FAIL if the parcel changes fruit anywhere within the chapter."
+    },
+    {
+      "finding_id": "ch13-prose-clipped-not-fragments",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_02/chapters/chapter_13.md:15; snapshots/cycle_02/chapters/chapter_13.md:19; snapshots/cycle_02/chapters/chapter_13.md:99; snapshots/cycle_02/chapters/chapter_13.md:131; snapshots/cycle_02/chapters/chapter_13.md:163; snapshots/cycle_02/chapters/chapter_13.md:263; snapshots/cycle_02/chapters/chapter_13.md:315; snapshots/cycle_02/chapters/chapter_13.md:333; snapshots/cycle_02/chapters/chapter_13.md:351",
+      "problem": "The chapter leans repeatedly on clipped corrective fragments like 'Not speech yet,' 'Not tighter. Worse,' 'Not from the walls. From time,' and 'Not much. Enough.' Used this often, the construction becomes a visible tic, flattens the rhythm into the same beat under every kind of pressure, and violates the constitution's rule against elliptical clipping in narration.",
+      "rewrite_direction": "Rework the fragment runs at snapshots/cycle_02/chapters/chapter_13.md:15, snapshots/cycle_02/chapters/chapter_13.md:19, snapshots/cycle_02/chapters/chapter_13.md:99, snapshots/cycle_02/chapters/chapter_13.md:131, snapshots/cycle_02/chapters/chapter_13.md:163, snapshots/cycle_02/chapters/chapter_13.md:263, snapshots/cycle_02/chapters/chapter_13.md:315, snapshots/cycle_02/chapters/chapter_13.md:333, and snapshots/cycle_02/chapters/chapter_13.md:351 into grammatically complete, pressure-bearing sentences. Preserve compression and velocity, but vary the sentence shapes so the chapter stops defaulting to the same 'Not X. Y.' correction move.",
+      "acceptance_test": "PASS if the cited passages in snapshots/cycle_02/chapters/chapter_13.md are rewritten as complete narration rather than article-stripped corrective fragments, and no more than two deliberate fragment-corrections remain elsewhere in the chapter; FAIL if three or more 'Not X. Y.'-style clipped narration beats are still readable across the chapter."
+    }
+  ],
+  "summary": "The chapter's structure and dialogue clear the bar: the confrontation stays intimate, Ferrand's provocateur logic lands cleanly, Abel dies without romance, and the voices remain distinct under pressure. It still fails review on craft/prose because a blatant process leak, a HIGH fruit continuity break, and a chapter-wide clipped-fragment narration tic all remain unresolved."
+}

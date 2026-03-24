@@ -1,0 +1,82 @@
+{
+  "acceptance_targets": [
+    "[chapter_04-F001] Pass if a cold read of `snapshots/cycle_01/chapters/chapter_04.md:45`, `snapshots/cycle_01/chapters/chapter_04.md:63`, `snapshots/cycle_01/chapters/chapter_04.md:209`, `snapshots/cycle_01/chapters/chapter_04.md:217`, and `snapshots/cycle_01/chapters/chapter_04.md:371` no longer implies that the canonically chapter_05 seminar is happening within 24 hours unless the chapter timeline itself has been moved to early October.",
+    "[chapter_04-F002] Pass if the cited spans still show the exact falsifying edits and ignored contact attempts, but at least one decision beat lets Leela register relief, strategic advantage, or dissertation survival without an immediate abstract label such as lie, ugly, or nauseating in the same beat."
+  ],
+  "chapter_id": "chapter_04",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if a cold read of `snapshots/cycle_01/chapters/chapter_04.md:45`, `snapshots/cycle_01/chapters/chapter_04.md:63`, `snapshots/cycle_01/chapters/chapter_04.md:209`, `snapshots/cycle_01/chapters/chapter_04.md:217`, and `snapshots/cycle_01/chapters/chapter_04.md:371` no longer implies that the canonically chapter_05 seminar is happening within 24 hours unless the chapter timeline itself has been moved to early October.",
+      "chapter_id": "chapter_04",
+      "cycle": 1,
+      "evidence": "`snapshots/cycle_01/chapters/chapter_04.md:47` says June will \"lose the seminar\" if Leela keeps the block; `snapshots/cycle_01/chapters/chapter_04.md:63` frames walking into seminar with bad numbers as imminent; `snapshots/cycle_01/chapters/chapter_04.md:209` and `snapshots/cycle_01/chapters/chapter_04.md:217` make tonight's node access necessary for that same seminar; `snapshots/cycle_01/chapters/chapter_04.md:371` still ties the drifting results to a 5 p.m. seminar-deck meeting.",
+      "finding_id": "chapter_04-F001",
+      "problem": "The chapter's core pressure engine depends on June's seminar being effectively next-day, but the continuity sheet places chapter_04 in mid-September deadline week and the public seminar blowup in chapter_05 in early October. As written, the reader is pushed to treat them as the same imminent event, which breaks the causal clock the chapter is built on.",
+      "rewrite_direction": "Revise `snapshots/cycle_01/chapters/chapter_04.md:45`, `snapshots/cycle_01/chapters/chapter_04.md:63`, `snapshots/cycle_01/chapters/chapter_04.md:209`, `snapshots/cycle_01/chapters/chapter_04.md:217`, and `snapshots/cycle_01/chapters/chapter_04.md:371` so the calendar is explicit. Either rename June's near-term obligation as a different interim meeting/check-in, or move the chapter's submission week later so her public seminar is genuinely imminent.",
+      "severity": "HIGH",
+      "source": "booker",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if the cited spans still show the exact falsifying edits and ignored contact attempts, but at least one decision beat lets Leela register relief, strategic advantage, or dissertation survival without an immediate abstract label such as lie, ugly, or nauseating in the same beat.",
+      "chapter_id": "chapter_04",
+      "cycle": 1,
+      "evidence": "`snapshots/cycle_01/chapters/chapter_04.md:267` immediately explains away the falsified table while telling the reader what it cost; `snapshots/cycle_01/chapters/chapter_04.md:337` calls the paper's professionalism \"the most nauseating part\" the moment it starts to look publishable; `snapshots/cycle_01/chapters/chapter_04.md:437` labels the final tightening edit \"another ugly part\" as soon as she makes it.",
+      "finding_id": "chapter_04-F002",
+      "problem": "Sanitization via moral safety valve: the chapter repeatedly captions Leela's compromise as ugly, nauseating, or already-known lie at the exact moment she commits it. That self-indicting gloss reassures the reader that the book disapproves instead of letting the falsification, career hunger, and abandonment of June stand on their own cold terms.",
+      "rewrite_direction": "Rework `snapshots/cycle_01/chapters/chapter_04.md:267`, `snapshots/cycle_01/chapters/chapter_04.md:269`, `snapshots/cycle_01/chapters/chapter_04.md:337`, `snapshots/cycle_01/chapters/chapter_04.md:433`, and `snapshots/cycle_01/chapters/chapter_04.md:437` so the scene stays with the concrete edit, the career gain, and the choice to ignore June. Strip or delay the abstract self-condemnation; let consequence, not instant narrator-approved guilt, do more of the judging.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "c4c345dac91dd4bc8c253265afd0b5292a199212f3854dcacfed11e830dfe24d",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into the absurdity and cruelty of graduate labor without converting the book into caricature or chase-plot menace. In edge cases, prefer the messier and more compromising version of events if it yields stronger human consequence and remains causally plausible; render sex, professional theft, bureaucratic harm, and emotional pettiness with the same specificity as any technical problem.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene turns vague at the exact point humiliation, erotic charge, class shame, visa fear, or institutional cruelty becomes concrete, rewrite until the cost is materially and socially legible.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High; contractions are the baseline in speech, and uncontracted forms should appear only for deliberate precision, class performance, emotional emphasis, or character-specific formality.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate public and private pressure, ensemble chapters and solitary ones, bureaucratic scenes and domestic scenes, deadline compression and aftermath inventory, so no two adjacent chapters rely on the same structural rhythm or dialogue density.",
+      "diction": "Contemporary literary English grounded in material detail; technical language should appear only when the social reality of the lab requires it, and it should never replace bodily or relational consequence.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person centered on Leela, with occasional brief widenings that register group mood and institutional atmosphere without leaving her interpretive frame.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Alternate compressed observational lines with longer accrual sentences that can carry comedy, shame, and procedural dread in the same movement; quiet chapters should breathe, deadline chapters should tighten without turning telegraphic.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

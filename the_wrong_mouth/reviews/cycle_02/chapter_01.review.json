@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_01",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH01_CRAFT_PROFILE_LAYER_BLUR",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_02/chapters/chapter_01.md:165; snapshots/cycle_02/chapters/chapter_01.md:169; snapshots/cycle_02/chapters/chapter_01.md:173; snapshots/cycle_02/chapters/chapter_01.md:199",
+      "problem": "The road-scene interface read blurs two different layers the provided continuity material says should coexist before Chapter 3: Maren's hollow underlying structure and his still-registered public sin-eater listing. At line 165 Aldric introduces this as Maren's 'System profile,' lines 169-173 describe an empty classification/level structure, and line 199 then treats the Garsen request as already assigned to a registered sin-eater on the Fenhold flats. Because the chapter never names the distinction, the beat reads as if Aldric has contradicted himself at the exact moment the reader needs operational clarity.",
+      "rewrite_direction": "Revise the interface handoff around snapshots/cycle_02/chapters/chapter_01.md:165, snapshots/cycle_02/chapters/chapter_01.md:169, snapshots/cycle_02/chapters/chapter_01.md:173, and snapshots/cycle_02/chapters/chapter_01.md:199 so Aldric explicitly distinguishes the hollow underlying structure he can read from the public registered listing Fenhold sees. One sentence of translation is enough, but the scene must tell the reader which layer Aldric is reading at each step and why both can be true at once.",
+      "acceptance_test": "Pass if, after reading snapshots/cycle_02/chapters/chapter_01.md:165, snapshots/cycle_02/chapters/chapter_01.md:169, snapshots/cycle_02/chapters/chapter_01.md:173, and snapshots/cycle_02/chapters/chapter_01.md:199, a cold reader can accurately state that Maren has an empty underlying structure and a separate public registered sin-eater listing, and can say why Aldric can report both without contradiction. Fail if 'empty profile' and 'registered sin-eater' still read as the same layer."
+    },
+    {
+      "finding_id": "CH01_DIALOGUE_CALIBRATION_ECHO",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_02/chapters/chapter_01.md:81",
+      "problem": "Aldric's accusation in the ditch lands too close to the calibration-only example-line scaffold in the style bible: two generalized negations about the ritual followed by an incredulous 'what were you doing?' question. Because this exchange is one of the chapter's defining voice beats, the echo reads less like living speech and more like draft text leaning on its own prompt exemplar.",
+      "rewrite_direction": "Replace the accusation at snapshots/cycle_02/chapters/chapter_01.md:81 with a scene-specific complaint that names what Aldric actually objects to in Haff's rite: the fake murmuring, the false sequence, the real opening followed by nonsense, or another concrete failure visible in this chapter. Keep Aldric formal and morally certain, but avoid the existing two-negations-plus-incredulous-question ladder.",
+      "acceptance_test": "Pass if the revised exchange at snapshots/cycle_02/chapters/chapter_01.md:81-89 no longer reads as a recognizable paraphrase of the calibration line and instead gives Aldric at least one concrete, scene-specific objection to Maren's procedure. Fail if the beat still follows the same generalized 'that was not the ritual / that was not anything / what were you doing' shape."
+    },
+    {
+      "finding_id": "CH01_PROSE_CLIPPED_NEGATION_TIC",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_02/chapters/chapter_01.md:27; snapshots/cycle_02/chapters/chapter_01.md:31; snapshots/cycle_02/chapters/chapter_01.md:37; snapshots/cycle_02/chapters/chapter_01.md:41; snapshots/cycle_02/chapters/chapter_01.md:55; snapshots/cycle_02/chapters/chapter_01.md:241; snapshots/cycle_02/chapters/chapter_01.md:299",
+      "problem": "The chapter repeatedly falls into clipped negation fragments as an emphasis device: 'Not stronger. Gathered.' 'Not from the body.' 'Not from weakness. From obedience.' 'Not warmth. Not pardon.' 'Not gone.' In aggregate this becomes a marked prose scaffold rather than a choice. It also presses against the constitution's ban on elliptical clipping in narration, so the emphasis starts to feel pre-fabricated instead of earned by rhythm or image.",
+      "rewrite_direction": "Recast the emphatic beats at snapshots/cycle_02/chapters/chapter_01.md:27, snapshots/cycle_02/chapters/chapter_01.md:31, snapshots/cycle_02/chapters/chapter_01.md:37, snapshots/cycle_02/chapters/chapter_01.md:41, snapshots/cycle_02/chapters/chapter_01.md:55, snapshots/cycle_02/chapters/chapter_01.md:241, and snapshots/cycle_02/chapters/chapter_01.md:299 into grammatically complete sentences or more varied sentence shapes. Preserve pressure and contrast, but stop asking the same clipped 'Not X. Y.' pattern to do the work across the whole chapter.",
+      "acceptance_test": "Pass if, across snapshots/cycle_02/chapters/chapter_01.md:27, snapshots/cycle_02/chapters/chapter_01.md:31, snapshots/cycle_02/chapters/chapter_01.md:37, snapshots/cycle_02/chapters/chapter_01.md:41, snapshots/cycle_02/chapters/chapter_01.md:55, snapshots/cycle_02/chapters/chapter_01.md:241, and snapshots/cycle_02/chapters/chapter_01.md:299, no more than one clipped negation-fragment emphasis remains and the revised beats still read clearly on a first pass. Fail if the chapter still presents a visible run of repeated 'Not ...' fragment constructions doing the same emphatic job."
+    }
+  ],
+  "summary": "The chapter lands its core premise beats and keeps the bodily consequence on the page, but it does not clear this review pass. The strongest unresolved problems are local but real: Aldric's interface read muddies the canon distinction between Maren's hollow underlying structure and his still-registered public listing, one key accusation echoes a calibration-only style-bible line too closely, and the chapter-wide clipped-negation scaffold starts reading as prose autopilot instead of controlled emphasis."
+}

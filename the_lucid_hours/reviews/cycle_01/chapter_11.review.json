@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_11",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch11_continuity_calendar_mismatch",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:61; snapshots/cycle_01/chapters/chapter_11.md:69; snapshots/cycle_01/chapters/chapter_11.md:93",
+      "problem": "The chapter's explicit date and elapsed-time markers do not fit the stated weekday. The incident report dates Burt's fall to October 3, 2026; Burt returns 'two days later'; then the ring meets 'five days after Burt came back' at one in the morning 'on a Thursday.' October 3, 2026 is a Saturday, so the return lands on Monday, October 5, and five days after that lands on Saturday, October 10, not Thursday. This is a canonical timeline contradiction inside a chapter that otherwise asks the reader to track time precisely.",
+      "rewrite_direction": "Revise the time markers at snapshots/cycle_01/chapters/chapter_11.md:61, snapshots/cycle_01/chapters/chapter_11.md:69, and snapshots/cycle_01/chapters/chapter_11.md:93 so the fall date, hospital-return interval, and meeting weekday all map to one real calendar while staying in the continuity sheet's early-October 2026 slot.",
+      "acceptance_test": "A reader can plot the fall, Burt's return, and the 1 AM meeting on one calendar with no contradiction. If the fall remains October 3, 2026, the chapter cannot also say Burt returns two days later and that the meeting five days after his return is Thursday."
+    },
+    {
+      "finding_id": "ch11_burt_inventory_chain_unclear",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:43; snapshots/cycle_01/chapters/chapter_11.md:51; snapshots/cycle_01/chapters/chapter_11.md:89; snapshots/cycle_01/chapters/chapter_11.md:155; snapshots/cycle_01/chapters/chapter_11.md:175",
+      "problem": "The stash chain of custody never becomes operationally legible on the page. Earl sees Carmen remove the dictionary, Carmen hides it, later she notes that no one has asked about it, and then Agnes rules that Burt's medications must stay with him. But the chapter never clarifies who besides Earl knows Carmen moved the stash, whether Harry and Agnes know where it is, or what happens to Burt's already-diverted pills after the ring decides not to use his prescriptions. Because Carmen's operator-turn and Agnes's ethical line both depend on this silence, the omission reads like authorial hand-waving rather than earned covert procedure.",
+      "rewrite_direction": "Add a concrete follow-up beat at snapshots/cycle_01/chapters/chapter_11.md:43, snapshots/cycle_01/chapters/chapter_11.md:51, snapshots/cycle_01/chapters/chapter_11.md:155, and snapshots/cycle_01/chapters/chapter_11.md:175 that makes the chain of knowledge and the disposition of the existing stash explicit. The chapter needs an on-page decision about the hidden dictionary and Burt's already-diverted tablets, not just Carmen's assumption that the others 'understood.'",
+      "acceptance_test": "From the revised chapter text alone, a cold reader can answer three questions without inference: who knows Carmen removed the dictionary, where the dictionary/pills are after the meeting, and what the ring decides to do with Burt's already-diverted tablets once Agnes says his medications must stay with him."
+    },
+    {
+      "finding_id": "ch11_closing_scene_overexplains_turns",
+      "source": "award",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:157; snapshots/cycle_01/chapters/chapter_11.md:165; snapshots/cycle_01/chapters/chapter_11.md:169; snapshots/cycle_01/chapters/chapter_11.md:171; snapshots/cycle_01/chapters/chapter_11.md:181; snapshots/cycle_01/chapters/chapter_11.md:197",
+      "problem": "The chapter lands its strongest turns in dialogue and action, then repeatedly translates those turns into abstract explanation instead of driving to a new consequence. Carmen's 'us' already lands when she says it; Agnes's refusal already lands in her dialogue; Harry's concession already lands in 'Fine.' The surrounding paragraphs keep restating what the reader has already understood, which turns the close from frightening/tender crisis into thematic exegesis and makes the ending feel longer than the dramatic payload justifies.",
+      "rewrite_direction": "Compress or replace the explanatory material at snapshots/cycle_01/chapters/chapter_11.md:157, snapshots/cycle_01/chapters/chapter_11.md:165, snapshots/cycle_01/chapters/chapter_11.md:169, snapshots/cycle_01/chapters/chapter_11.md:171, snapshots/cycle_01/chapters/chapter_11.md:181, and snapshots/cycle_01/chapters/chapter_11.md:197. Keep the must-land beats, but once each one is legible, move the scene into a new concrete consequence: a stash decision, a trust fracture, or another irreversible operational change.",
+      "acceptance_test": "After Carmen says 'He'd want us to keep going' and Agnes rules Burt's meds stay with him, the remaining scene must introduce at least one new observable consequence that was not already implicit in those lines. A pass revision does not spend the closing paragraphs paraphrasing Carmen's pronoun, Agnes's principle, or Harry's calculation in abstract summary language."
+    },
+    {
+      "finding_id": "ch11_negation_reversal_tic",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:71; snapshots/cycle_01/chapters/chapter_11.md:97; snapshots/cycle_01/chapters/chapter_11.md:151; snapshots/cycle_01/chapters/chapter_11.md:165; snapshots/cycle_01/chapters/chapter_11.md:183",
+      "problem": "A marked negation-then-correction scaffold recurs often enough to feel automatic rather than chosen: 'He was lighter. Not his weight...'; 'He looked old tonight. Not the performed frailty...'; 'Not louder...'; 'Not them...'; 'The word wasn't agreement...' The repeated template gives the chapter's back half a processed cadence and starts flattening emphasis instead of sharpening it.",
+      "rewrite_direction": "Rework the repeated contrast scaffold at snapshots/cycle_01/chapters/chapter_11.md:71, snapshots/cycle_01/chapters/chapter_11.md:97, snapshots/cycle_01/chapters/chapter_11.md:151, snapshots/cycle_01/chapters/chapter_11.md:165, and snapshots/cycle_01/chapters/chapter_11.md:183. Keep only the strongest one or two reversals; recast the others into direct description, action, or a different syntactic contrast so the prose stops leaning on the same emphatic hinge.",
+      "acceptance_test": "In the revised passages at lines 71, 97, 151, 165, and 183, no more than two may still use the explicit 'Not X. Y.' or 'wasn't X. It was Y.' reversal. The remaining beats must land through different sentence shapes, and a read-through of the chapter's back half should no longer feel like the same emphasis pattern recurring every few paragraphs."
+    }
+  ],
+  "summary": "FAIL on award, craft, and prose; PASS on dialogue. The chapter has strong bodily specificity, clean scene pressure, and character-true speech, but an explicit calendar contradiction, unclear handling of Burt's hidden inventory, an over-explained closing movement, and a repeated negation-reversal prose tic keep it below pass-level."
+}

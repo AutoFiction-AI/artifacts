@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_04",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH04_STRUCTURAL_RECURRENCE",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:31; snapshots/cycle_02/chapters/chapter_04.md:57; snapshots/cycle_02/chapters/chapter_04.md:81; snapshots/cycle_02/chapters/chapter_04.md:103",
+      "problem": "The chapter fully proves its core fact by the shelf-lowering beat, then spends much of the middle re-certifying the same point with warmer floors, shorter routes, and the vanished draught before it reaches a genuinely new consequence. In a quiet chapter, that repetition reads as structural recurrence rather than accumulating pressure: the Manor favors Hermione is already legible, but the chapter keeps saying it again instead of buying a new cost, rule, or leverage shift until very late.",
+      "rewrite_direction": "Compress or repurpose the duplicate proof beats beginning at snapshots/cycle_02/chapters/chapter_04.md:57, snapshots/cycle_02/chapters/chapter_04.md:81, and snapshots/cycle_02/chapters/chapter_04.md:103. After the opening manifestations at snapshots/cycle_02/chapters/chapter_04.md:3 and snapshots/cycle_02/chapters/chapter_04.md:31, the next section should either alter Draco and Narcissa's leverage, state a more specific Manor rule, or drive more directly into the door and lockout turns at snapshots/cycle_02/chapters/chapter_04.md:113 and snapshots/cycle_02/chapters/chapter_04.md:181.",
+      "acceptance_test": "Pass if, after the equivalent of snapshots/cycle_02/chapters/chapter_04.md:31, each remaining Manor manifestation does one distinct job by inspection: one adds a new fact about the house's logic, one changes Draco/Narcissa leverage, and one delivers the exclusion consequence now centered on snapshots/cycle_02/chapters/chapter_04.md:181. Fail if two successive beats still only restate that the house is warmer, faster, or more helpful to Hermione."
+    },
+    {
+      "finding_id": "CH04_NARCISSA_ORACLE_DIALOGUE",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:133; snapshots/cycle_02/chapters/chapter_04.md:137; snapshots/cycle_02/chapters/chapter_04.md:143; snapshots/cycle_02/chapters/chapter_04.md:163",
+      "problem": "Narcissa's warning scene slips from strategic withholding into polished oracle-speech. Lines like 'the Manor notices where it means to spend its attention,' 'it withdraws something else,' and 'do not trust its intentions' stack abstractions that sound like authored theme delivery rather than a woman choosing partial truths under pressure. That cuts against the style bible's instruction to avoid mysterious-oracle Narcissa and makes the scene feel composed instead of spoken-through.",
+      "rewrite_direction": "Revise the warning beats at snapshots/cycle_02/chapters/chapter_04.md:133, snapshots/cycle_02/chapters/chapter_04.md:137, snapshots/cycle_02/chapters/chapter_04.md:143, and snapshots/cycle_02/chapters/chapter_04.md:163 so at least one of Narcissa's evasions is grounded in a concrete prior consequence, room, or behavior she has actually seen. Keep her low-contraction, complete-sentence control, but replace at least one gnomic generalization with a strategically incomplete fact that answers Draco's immediate question rather than the chapter's theme.",
+      "acceptance_test": "Pass if the exchange doing the work of snapshots/cycle_02/chapters/chapter_04.md:133 through snapshots/cycle_02/chapters/chapter_04.md:143 and snapshots/cycle_02/chapters/chapter_04.md:163 includes at least one specific, observable reference from Narcissa to a past room, prior appearance, or concrete house consequence, while still withholding the full explanation. Fail if two abstract generalizations still appear back-to-back without an intervening concrete detail or practical instruction."
+    },
+    {
+      "finding_id": "CH04_OVERSTATEMENT_AFTER_ARRIVAL",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:33; snapshots/cycle_02/chapters/chapter_04.md:59; snapshots/cycle_02/chapters/chapter_04.md:87; snapshots/cycle_02/chapters/chapter_04.md:185; snapshots/cycle_02/chapters/chapter_04.md:189",
+      "problem": "The chapter repeatedly explains beats that have already landed on the page. After vivid physical proof, the narration often translates the meaning into a thesis sentence about what the Manor wants or what the scene means. That habit weakens the uncanny force of the manifestations and turns Draco's inference track from sharp interiority into summary commentary.",
+      "rewrite_direction": "Trim or replace the explanatory after-statements at snapshots/cycle_02/chapters/chapter_04.md:33, snapshots/cycle_02/chapters/chapter_04.md:59, snapshots/cycle_02/chapters/chapter_04.md:87, snapshots/cycle_02/chapters/chapter_04.md:185, and snapshots/cycle_02/chapters/chapter_04.md:189. Let more of these moments end on action, sensory residue, or Draco's concrete choice; if an interpretive sentence remains, it should advance to a new inference rather than paraphrase the image that just made the point legible.",
+      "acceptance_test": "Pass if at least two of the three manifestation clusters now centered on snapshots/cycle_02/chapters/chapter_04.md:31, snapshots/cycle_02/chapters/chapter_04.md:57, and snapshots/cycle_02/chapters/chapter_04.md:181 end on a physical consequence or decision instead of an immediate summary thesis. Fail if the revised passage still states the point in narration right after the image has already made it clear."
+    }
+  ],
+  "summary": "FAIL. The chapter lands its required continuity beats and I found no continuity contradiction, tense drift, example-line reuse, or reportable sanitization failure, but it remains below pass level because too much of the middle re-proves the same Manor preference instead of escalating, Narcissa's key warning hardens into oracle-like abstraction, and the prose repeatedly explains meanings that the images have already delivered."
+}

@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_10",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_10_dialogue_001",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:25; snapshots/cycle_01/chapters/chapter_10.md:309; snapshots/cycle_01/chapters/chapter_10.md:317; snapshots/cycle_01/chapters/chapter_10.md:323; snapshots/cycle_01/chapters/chapter_10.md:357",
+      "problem": "Prue's voice is mostly consistent with the style bible's dry, carefully informal intelligence, but the confrontation keeps resolving into polished mic-drop lines, and the narration explicitly tells the reader one sentence 'landed.' That shifts the scene from pressured speech toward composed thesis exchange, which is exactly the literary-polish failure the dialogue rules warn against.",
+      "rewrite_direction": "Rework the confrontation beats centered on snapshots/cycle_01/chapters/chapter_10.md:25, snapshots/cycle_01/chapters/chapter_10.md:309, snapshots/cycle_01/chapters/chapter_10.md:317, snapshots/cycle_01/chapters/chapter_10.md:323, and snapshots/cycle_01/chapters/chapter_10.md:357. Remove the narrator's landing-callout, and roughen Prue's side of the argument so at least two of her turns arrive through interruption, self-repair, repetition, or concrete example rather than clean quotable compression.",
+      "acceptance_test": "Pass if the revised exchange anchored at snapshots/cycle_01/chapters/chapter_10.md:309 and snapshots/cycle_01/chapters/chapter_10.md:323 contains at least one visible restart or correction from Prue and at least one concrete reference to immediate upstairs harm, and if the narration at snapshots/cycle_01/chapters/chapter_10.md:25 no longer tells the reader that a sentence 'landed.' Fail if Prue still gets multiple one-line aphoristic finishes in the same confrontation."
+    },
+    {
+      "finding_id": "chapter_10_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:85; snapshots/cycle_01/chapters/chapter_10.md:93; snapshots/cycle_01/chapters/chapter_10.md:207; snapshots/cycle_01/chapters/chapter_10.md:295",
+      "problem": "The narration leans too often on the same negation-reset sentence shape: first deny a reading, then supply the correct one. Used this many times in one chapter, the pattern turns from analytic voice into a prose tic and flattens distinct beats into the same explanatory rhythm.",
+      "rewrite_direction": "Revise the moments anchored at snapshots/cycle_01/chapters/chapter_10.md:85, snapshots/cycle_01/chapters/chapter_10.md:93, snapshots/cycle_01/chapters/chapter_10.md:207, and snapshots/cycle_01/chapters/chapter_10.md:295. Keep Owen's precise close-third texture, but recast at least two of those beats so they land through image, bodily response, or concrete comparison rather than the exact 'not X / it was Y' correction pattern.",
+      "acceptance_test": "Pass if, after revision, no more than two beats in the chapter still use the exact negation-reset structure exemplified at snapshots/cycle_01/chapters/chapter_10.md:85 and snapshots/cycle_01/chapters/chapter_10.md:295, and at least two of the cited moments now read through direct image or sensation without first negating an alternative reading. Fail if the cited beats still repeat the same explanatory sentence formula."
+    },
+    {
+      "finding_id": "chapter_10_craft_001",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:337; snapshots/cycle_01/chapters/chapter_10.md:339; snapshots/cycle_01/chapters/chapter_10.md:341",
+      "problem": "After the Owen-Prue rupture lands, the chapter cools itself with a recap paragraph that re-summarizes the four-anchor discovery and the Hogwarts stress logic the scene has already earned. That procedural digest weakens the immediate human fallout and blunts the exit's force.",
+      "rewrite_direction": "Rebuild the back-third transition anchored at snapshots/cycle_01/chapters/chapter_10.md:337, snapshots/cycle_01/chapters/chapter_10.md:339, and snapshots/cycle_01/chapters/chapter_10.md:341. Either dramatize one fresh consequential beat while they finish the work, or compress the routine summary hard and move faster to Prue's altered departure at snapshots/cycle_01/chapters/chapter_10.md:345 and snapshots/cycle_01/chapters/chapter_10.md:357 without re-listing the chapter's discoveries in atlas form.",
+      "acceptance_test": "Pass if the revised stretch between snapshots/cycle_01/chapters/chapter_10.md:337 and snapshots/cycle_01/chapters/chapter_10.md:357 no longer restates all four anchors and Hogwarts's stress pattern in summary form, and if the ending arrives through either a new scene-level consequence or a tighter handoff into Prue's exit. Fail if the chapter still pauses after the argument to recap information the reader already has."
+    }
+  ],
+  "summary": "FAIL. The chapter meets continuity, tense, access-logic, and boundary-brief requirements, and Owen and Tallow stay strongly on-model; Prue is mostly on-model but drifts into over-polished line delivery in the confrontation. No continuity contradiction, tense drift, sanitization failure, intimacy fade-to-black, or convenience-discovery break was found in the allowed inputs. It still falls below pass because the argument is too often packaged as quotable dialogue, the narration repeats a noticeable negation-reset sentence formula, and the back third re-explains discoveries the scene had already earned instead of ending on fresher consequence."
+}

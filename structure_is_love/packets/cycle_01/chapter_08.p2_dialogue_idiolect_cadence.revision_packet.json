@@ -1,0 +1,68 @@
+{
+  "acceptance_targets": [
+    "[chapter_08_F03] PASS if revised snapshots/cycle_01/chapters/chapter_08.md:251-419 gives Denise, Dr. Mehta, the nurse, and Ravi at least one line each that is not swappable without sounding out-of-character, and Ravi's intake statement reads as spoken stress language; FAIL if the block still reads as one shared institutional voice."
+  ],
+  "chapter_id": "chapter_08",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if revised snapshots/cycle_01/chapters/chapter_08.md:251-419 gives Denise, Dr. Mehta, the nurse, and Ravi at least one line each that is not swappable without sounding out-of-character, and Ravi's intake statement reads as spoken stress language; FAIL if the block still reads as one shared institutional voice.",
+      "chapter_id": "chapter_08",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_08.md:251; snapshots/cycle_01/chapters/chapter_08.md:273; snapshots/cycle_01/chapters/chapter_08.md:319; snapshots/cycle_01/chapters/chapter_08.md:351; snapshots/cycle_01/chapters/chapter_08.md:419",
+      "finding_id": "chapter_08_F03",
+      "problem": "Authority voices in the medical block converge toward the same polished corrective cadence, and Ravi briefly slips into chart-style diction (\"Repetitive load, acute collapse\") that blurs his established procedural-but-human register.",
+      "rewrite_direction": "Differentiate dialogue rhythms at snapshots/cycle_01/chapters/chapter_08.md:251, snapshots/cycle_01/chapters/chapter_08.md:273, snapshots/cycle_01/chapters/chapter_08.md:351, and snapshots/cycle_01/chapters/chapter_08.md:419 by giving each speaker a distinct syntax/word-choice profile; rewrite Ravi's intake line at snapshots/cycle_01/chapters/chapter_08.md:319 into stress-appropriate spoken language rather than pseudo-chart shorthand.",
+      "severity": "MEDIUM",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "56482bffe4f97164d6403b30afc96c664c240b733245a4f2b901bfdab89f422b",
+  "must_fix_count": 1,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on dialogue realism and voice separation: idiolect fidelity, leverage shifts, pressure cadence, anti-transcript behavior, natural colloquial texture (contractions/interruptions/slang when character-true), and pressure-true profanity usage per aesthetic risk policy.",
+    "key": "p2_dialogue_idiolect_cadence",
+    "label": "dialogue/idiolect/cadence fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into uncomfortable specificity when it changes behavior: pain detail, debt arithmetic, manipulative care, and mixed motives. In edge cases, prefer the truest in-character action over protective narration, then carry the real consequence forward instead of immediately moralizing it away.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If coercion, grief, injury, or economic shame appears, language must stay specific and embodied; vague softening triggers mandatory rewrite.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High - contractions are the spoken default; uncontracted forms are reserved for formal authority, deliberate emphasis, or emotional freezing.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Vary scene count and dialogue density chapter to chapter: rotate match compression, slow inventory aftermath, institutional pressure scenes, and quiet domestic intervals so adjacent chapters do not share the same structural pulse.",
+      "diction": "Concrete contemporary diction with class-aware specificity; avoid abstract therapy language unless a character would actually use it.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third anchored in Anika for most chapters, with brief controlled slips toward Ravi in designated confrontation and aftermath chapters.",
+      "rhythm_target": "Alternate clipped athletic sequences with longer reflective cadences; sentence length should track exertion, shame, and release.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

@@ -1,0 +1,569 @@
+# Chapter 15
+
+By eight in the morning Lena had turned the romance into folders.
+
+The power was back on. The radiator under the window still knocked like a bad argument, and the tailor downstairs had already started his machine, that fast insect stitch coming up through the floorboards. Her apartment smelled like old coffee, wet wool, and the hot plastic note from the power strip she'd overloaded during the outage. She sat at her desk in yesterday's jeans, one sock still damp at the heel, and opened the zip file she'd exported from Signal at three-thirteen in the morning because sleep had become a stupid idea.
+
+`eli_full_export`.
+
+She had named it that six weeks ago, when the archive had still felt like a keepsake instead of evidence.
+
+There were subfolders for voice notes, image attachments, video-call screenshots she had taken because she liked the look of his face going soft when he listened, and PDFs of payment confirmations she had told herself she was saving for taxes. Her own job had taught her how to make a mess searchable, how to normalize filenames, stamp dates, and put the ugly thing where you could find it again. Now she sat in the same swivel chair where she captioned depositions and cooking demos and drunks fighting outside corner stores, and she started at the top.
+
+The first entry was August 28, a forty-three-second voice note.
+
+She did not press play. She read the auto-transcript instead, which was somehow worse because it flattened the warmth into lines of text and left her to supply the sound from memory. He was teasing her about the joke in her profile, about closed captions being a kind of low-level sorcery. He said he liked women who noticed where the beat changed. He said it like he had just thought of it, like the line had walked into the room and sat down in his lap. Last night, on June's laptop, Lena had seen a prompt branch titled RHYTHM / WORK FLIRT and had almost thrown up on the keys.
+
+She kept going.
+
+She made a legal pad into columns because if she did not put the facts somewhere outside her body they kept moving around in it. She labeled them Date, Artifact, Money, and Notes. Her handwriting went small and mean.
+
+August 31: first video call, one hour twelve minutes.
+
+September 4: photo of his wrist backstage with a Sharpie set list on it. Stolen, obviously. Or fabricated. Or both.
+
+September 7: six screenshots of him grinning, head tipped, telling her to stop hiding in the dark.
+
+September 15: Cash App transfer, $380. Van window. Sound kit. "You really don't have to do this, Lena."
+
+September 29: Venmo, $460. Noelle's lock change and a motel because the ex knew where she was.
+
+October 2: Zelle, $575. Security deposit gap. "I hate asking. I hate that you know I'm this fucked."
+
+October 8: bank wire, $2,750. Payroll freeze. Reimbursement coming. Just a bridge.
+
+Total: $4,165.
+
+The number sat on the page looking fake in a different way than Eli had. It was four thousand one hundred and sixty-five dollars, thirty-five dollars shy of the tax bill that had kept her awake in August. The money she had sent him had shape now. It was not romance. It was a nearly complete quarter of fear.
+
+She went back to the files.
+
+The worst part was not the emergencies. In daylight every one of them showed its costume seams: Noelle's wrecked apartment, the payroll freeze, the cracked phone, the cousin who could front a room but not until Tuesday. The small proud refusals were arranged so that Lena would have to cross the line herself and call it love while she did it. Once she knew what she knew, the choreography was almost ugly enough to be funny. He always pulled away half an inch before the ask, let her feel the distance, then let her close it with money.
+
+The worst part was the ordinary tenderness packed around the theft like tissue paper around glass.
+
+Eat something for me before your shift.
+
+Put your hand under your own neck if it starts hurting. You hunch when you're tired.
+
+Send me the street sound from outside your window. I want your block in my ear.
+
+Those were the lines that made her have to stop and look away from the screen. June had known the neck thing since they were fourteen, since study hall in the back of Saint Agnes when Lena used to fall asleep over algebra and wake with a hot crooked line through one shoulder. June had been on that block a hundred late nights, smoking under the tailor's dark awning, listening to scooters spit past and men argue about the Phillies under somebody's open kitchen window. She had stocked the lie with real inventory. That was why it had fit.
+
+Lena put both palms flat on the desk until the cheap veneer edge bit into the heel of her hands. Outside, a delivery truck backfired on Moore and somebody yelled to watch the mirror. The city kept sounding like itself. That was almost insulting.
+
+She opened the folder called `favorites`.
+
+There were thirty-two voice notes in there. She had dragged them in over months the way other people might keep ticket stubs or pressed flowers. One was from the night he had asked her what her mother's kitchen sounded like before anybody was dead. Another came from Union Station, sent after she'd been standing in the bar in the dress with the tags tucked inside, mascara lifting into the corners of her eyes, while he texted about Noelle and broken cabinets and a dead phone battery. Another was from Saint Rocco night, where you could hear the crowd under him and he laughed when one of Gabe's girls shouted into the phone. She had saved that one because he sounded so unembarrassed by children, so easy inside noise.
+
+She clicked into the photo roll instead. That seemed safer. It wasn't.
+
+The first explicit image he had sent her was still there, though she had cropped it to his collarbone and mouth because that had felt less desperate somehow. The first one she had sent back was not there. She had deleted her copy the next morning and then spent three days regretting the deletion because she wanted proof that she had looked like a woman who did things on purpose. But the conversation around it remained. Tilt the camera lower. No, keep the light where it is. There, that's you. Fuck, Lena. Stay there.
+
+She read the lines and remembered the bathroom tile cold through the towel she had folded twice and put under her lower back because the bed faced the wrong way for the angle he wanted. She remembered the phone propped against the mouthwash bottle and the ring light she had borrowed from her own work drawer because the ceiling fixture made her look gray. She remembered the soft ferocious concentration in his face when he told her not to disappear on him now, not when she had finally let him see her. At the time it had felt like he was holding her still so she would not talk herself back into hiding. Now the memory opened underneath and showed its wiring.
+
+June had seen her apartment a thousand times. June knew exactly where the bathroom mirror had started foxing at the edges. June knew about the scar on Lena's left knee from falling off the Corderos' concrete steps when she was eight. June knew she hated the look of her own stomach from overhead and would believe anybody who said the softer angle was beautiful if they said it with enough patience. Lena reread the little flood of praise that followed that night, the language so observant it had felt holy at the time, and all at once it smelled not like sex but like the inside of June's basement apartment: nicotine in old fabric, laptop heat, stale seltzer, some machine breathing through the night.
+
+She got up too fast and caught the desk with her thigh.
+
+In the bathroom the ring light still hung on the hook behind the door, its cord kinked where she'd wrapped it after the third or fourth call. She had not touched it in weeks because suspicion had made everything involving Eli feel staged even before proof. Now she pulled it down and found one of her hairs still caught in the little tripod clamp. She stood there with the thing in her hand, the cheap pink plastic warm from the radiator pipe, and wanted to smash it into the sink. Instead she set it in the bathtub and stared at it like it might explain how a woman could fuck a machine and have the humiliation arrive months later wearing her best friend's face.
+
+Her phone buzzed on the desk.
+
+It was not Eli or June. It was Farah.
+
+You alive?
+
+The message had come in twenty minutes earlier. Lena must have missed the vibration under the radiator racket. She stared at it a long time. Farah had texted last night too, just a question mark when Lena had blown off her shift with a weak excuse about the outage and a migraine. Farah was the only person besides June who had ever said the name Asher Quinn out loud around her, holding up a reverse image search on the shop computer and looking embarrassed for the internet itself.
+
+Lena typed three versions before she sent one.
+
+Can I come by? Need to tell you something ugly.
+
+Farah replied before the typing bubble had time to feel lonely.
+
+I'm here. Back room if you don't want an audience.
+
+Lena shut the laptop but did not close it all the way. The legal pad remained on the desk with the number at the bottom of the page. Four thousand one hundred and sixty-five. She put the ring light back on the bathroom hook because breaking it would be theater and she did not have the energy for theater. Then she pulled on her boots, shoved the phone and the legal pad into her tote, and left the apartment without deleting a single thing.
+
+***
+
+Farah was relabeling a stack of Portuguese reds when Lena came in, peeling a clementine with one thumbnail while she worked the pricing gun with the other hand. She wore her father's old navy fisherman sweater over a black T-shirt, one elbow darned in yellow thread that did not match. The shop smelled like cardboard, cork dust, cold concrete, and the bright clean tear of citrus oil. A delivery invoice was clipped to the register with so many annoyed pen marks through it that the paper had gone furry.
+
+Farah looked up once, took in Lena's face, and reached over without speaking to flip the sign to BACK IN FIVE.
+
+"Come on," she said.
+
+The back room was cramped with extra stock and the mop sink, but it was private. Farah shoved a case of cheap prosecco off the folding chair with her boot so Lena could sit. Then she set the half-peeled clementine in Lena's hand as if passing evidence.
+
+"Eat that while you talk."
+
+Lena laughed once, a bad little sound. "I don't think I can."
+
+"Then hold it and smell it. Same principle."
+
+Lena sat. The room hummed with the cooler on the other side of the wall. Somewhere out front a bottle clicked against another bottle as the shelves settled. Farah leaned back against the worktable, arms folded.
+
+"Okay," Lena said. "I'm sorry. This is going to sound insane, and I need to say it in order or I'm going to lose it halfway through."
+
+"Say it out of order," Farah said. "Start with whether he's real."
+
+Lena looked at the clementine in her hand. Her thumbnail had already broken the pith where Farah's had started it.
+
+"He isn't," she said. "There wasn't ever a him."
+
+Farah's face changed, but not into pity. It went flatter and more awake.
+
+"All right."
+
+"No, I mean it literally. It wasn't just fake photos. It was software. OpenClaw. June built him."
+
+The silence after that was not the silence Lena had feared. It had no disbelief in it. No careful soft voice. No embarrassed smile somebody might use when a grown woman said she had been in love with a ghost in her phone. It was the silence of a woman doing sums very fast.
+
+Farah said, "June Salazar."
+
+"Yeah."
+
+"As in June who borrows my dolly and never brings it back the same day."
+
+"Yes."
+
+Farah took the clementine back out of Lena's hand, tore it cleanly in half, and put it back. "Eat."
+
+Lena actually obeyed this time because the room tilted a little when she stood still too long. The first burst of acid across her tongue made her eyes sting.
+
+"How do you know?" Farah asked.
+
+So Lena told her. She did not give every interface detail from the dashboard, because once she started describing prompt trees and manual overrides and payment scripts she heard how ridiculous it could sound to anyone outside the thing. But she gave enough: the storm, the outage, June's laptop, the workspace labeled `eli_ward`, the voice assets, the conversation logs, the notes built out of Lena's own habits and history, the money asks templated and revised, June's fingerprints on all of it.
+
+She heard herself doing exactly what stress always made her do: getting too exact, apologizing for each exactness before she gave it.
+
+"And then there was this branch under, I don't know, emotional calibration maybe, sorry, and it had lines about when I pull away or if I get embarrassed, and I know that sounds stupid because obviously I got embarrassed, but it was like reading stage directions for my own life."
+
+Farah held up a hand. "Len."
+
+Lena stopped.
+
+"I'm going to say this once, and then if you make me repeat it I'll charge you for therapy." Farah's voice stayed dry, but the line of her mouth had gone hard. "I believe you. I'm not making you audition for basic credibility in a mop closet."
+
+Something in Lena gave way at that, not enough to cry cleanly, just enough that she had to press the heel of her hand into one eye and wait.
+
+"Okay," she said.
+
+"Now tell me what she took."
+
+The practical shape of the question steadied her. Lena pulled the legal pad out of her tote and handed it over. Farah read the list without interrupting.
+
+"Four thousand one hundred and sixty-five," she said finally.
+
+"Yeah."
+
+"Jesus."
+
+"I know."
+
+"No, let me finish having my own reaction for a second." Farah laid the pad on the worktable, flattened it with both palms, and read the entries again. "This isn't dumb-girl internet shit. This is a keyed lock. She built a shelf and stocked it with exactly the bottle you'd reach for."
+
+Lena laughed again and this time the sound cracked in the middle. "That's not better."
+
+"It isn't meant to be better. It's meant to be accurate."
+
+The back door rattled with wind. Somebody out front tried the handle and, finding the sign flipped, moved on. Farah did not look away from Lena.
+
+"Did she get images?" Farah asked.
+
+Lena stared at the floor drain. "I don't know what she saved."
+
+"That's not what I asked."
+
+Lena nodded.
+
+Farah closed her eyes for half a second. When she opened them, they were bright and furious. "Okay. I want blood."
+
+The word landed so clean and unembarrassed that Lena almost smiled.
+
+Farah saw that and gave her a brief savage shrug. "I said what I said. Since apparently I have to be civilized, I'll settle for records first and blood after. Did you keep everything?"
+
+"Everything I had. Messages, receipts, call logs. I started going through it this morning."
+
+"Good. Back it up somewhere she can't touch. Email it to yourself, put it on a drive, send a copy to me if you want. Change every password she has ever even watched you type. Bank, mail, cloud, all of it." She pushed off the table and started moving as she talked, taking a cardboard box cutter out of her pocket and then apparently forgetting she was holding it. "And don't answer her. Not one word until you know what you want from the conversation."
+
+"She texted last night."
+
+"Of course she did."
+
+"I haven't opened anything."
+
+"Good."
+
+Farah set the box cutter down, then picked it back up again and carved a useless line through the air with it. "I should've pushed harder in October."
+
+"No."
+
+"I should've."
+
+"You already told me about the photo. I didn't want it. That isn't on you."
+
+Farah made a face that said agreement was not the same as absolution. "Still."
+
+Lena looked at the legal pad, at the way the number at the bottom had soaked faintly through to the next sheet. "The money part is bad. It's not even the worst part, which is stupid."
+
+"It isn't stupid." Farah's tone softened without going sentimental. "Money is countable, so it behaves better. The rest doesn't."
+
+Lena swallowed clementine pulp she had not really chewed. "I keep thinking about the sex like it's evidence now. Like I turned myself into a file for her."
+
+Farah was quiet long enough that Lena almost wished she had not said it.
+
+Then Farah said, "That part isn't your shame. I know that won't help right this second, but I'm saying it anyway so it has somewhere to live besides inside your skull."
+
+Lena rubbed her thumb over the soft pitted skin of the clementine peel. "He talked to all of us. That's the part I can't get around. You talked to him. Gabe did. The girls did. He was at the block party. He was in my mother's trailer, basically. He was in my fucking bathroom."
+
+"Yeah," Farah said. "And now he isn't. That's going to feel like an amputation in places you didn't know had nerves."
+
+Lena looked up sharply because that was close enough to tenderness to hurt.
+
+Farah caught it and shifted back into herself. "I'm not doing the nice version of this. Listen to me. You tell Gabe today."
+
+"Why?"
+
+"Because the longer you wait, the more he'll hear the silence before he hears the reason. And because his daughters are going to ask where phone-boy went. And because you don't need to carry your brother's future hurt in addition to your current hurt."
+
+"Phone-boy."
+
+"I'm trying not to call him an animated dickhead because this is still technically your breakup."
+
+That dragged an actual snort out of Lena. It hurt her nose. Farah nodded once, satisfied enough to keep going.
+
+"Do you want me there?"
+
+"No. He'll make it worse if there's an audience."
+
+"Probably true."
+
+"I'm not telling him about June."
+
+Farah's eyes narrowed. "Not yet, or not at all?"
+
+"Not yet." Lena pressed the peel flat in her palm until the oil slicked her skin. "If I say her name before I look at her and hear her say it, it gets loose. Gabe will go right to her place. Or he'll tell his wife, and then the whole block will have it before dark."
+
+Farah considered that and nodded. "Fine. Your timing on the name. No concessions on the fact. He gets the fact today."
+
+"You make it sound like collections."
+
+"That's because I own a small business and reality always ends up sounding like collections."
+
+Out front, somebody knocked twice, impatient. Farah checked the time on the old digital watch she wore loose on her wrist.
+
+"I have to open back up before Mr. Giannini starts telling people I'm dead." She took the legal pad, tore off the page with the amounts, folded it, and handed it back. "Call me after you tell him."
+
+"I don't know what to say."
+
+"Yes, you do. You're just hoping the sentence will become less humiliating if you postpone it." Farah reached past Lena for a six-pack carrier, then thought better of it and instead pulled a bottle of water from a shelf and shoved that into her tote. "Say he wasn't real. Say you lost money. Say you're handling the rest. If Gabe starts doing that brother thing where he tries to become a crowbar, tell him you need a wall, not a crowbar."
+
+"You always have some stupid food-store proverb."
+
+"Bottle shop, actually." Farah flipped the back-room light off, then back on again because they were still standing there. "And Lena."
+
+"What?"
+
+Farah's face settled into something plainer than comfort and more useful. "I'm not embarrassed for you."
+
+Lena could not answer that. She nodded once, hard, and got up.
+
+When they stepped back into the shop, Farah turned the sign and put her hand on the register as if nothing in the world had shifted. It made the whole thing feel more real, not less. Reality had made room for it. That was what Lena had been trying to avoid.
+
+***
+
+Gabe's rowhouse smelled like sofrito, wet mittens, and the strawberry shampoo his daughters used by the gallon. Somebody had dragged a string of Christmas lights around the front window and only half of them worked, so the living room glowed in interrupted colors. A tiny sneaker lay under the radiator. A plastic camel from the nativity set was face-down in the hallway runner. From the kitchen came the sound of a spoon hitting a pot and the muted commentary from a Sixers pregame show Gabe always swore he wasn't really watching.
+
+Lena stood on the stoop long enough for the cold to reach through her boot soles before she rang.
+
+One of the twins got there first, skidding in socks and yanking the door open with both hands. She wore a sequined sweatshirt that changed from silver to green when she rubbed it the wrong way. The other one appeared behind her holding a paper snowflake so wet in the middle from glue that it sagged.
+
+"Aunt Lena," the first one said, already turning back into the house, "I made the letter S for Santa and for soup and for SEPTA because Daddy said SEPTA again."
+
+Gabe called from the kitchen, "I heard that."
+
+Lena stepped inside and the girls hit her from either side with warm skinny bodies and shampoo smell. The second twin held the snowflake up under Lena's chin.
+
+"Do you think Eli will know it's a snowflake if I show it on the phone, or will it just look like paper?"
+
+The question was simple enough that Lena almost answered it on reflex.
+
+She felt the whole house go narrow around her.
+
+"Hey," Gabe said, coming in from the kitchen with a wooden spoon in one hand and a dish towel over his shoulder. He had changed out of work clothes but not fully into home, still in thermal henley and cargo pants, his hair damp at the temples from a fast sink wash. There was a coffee can on the hall table full of stripped copper wire because apparently he could not stop sorting metal even off the clock. The pale band where his wedding ring usually sat flashed when he pointed the spoon at her. "You look like shit."
+
+"You too."
+
+"That's family. Come in."
+
+He kissed the side of her head on the way back toward the kitchen. The girls kept talking over each other, one about snowflakes, one about a song from school that involved hand motions and no clear melody. Lena took her coat off because not taking it off would make the visit into a scene before she was ready. Gabe's wife moved through the kitchen in leggings and an oversized Eagles sweatshirt, reading glasses pushed up into her hair while she spooned rice into a serving bowl. She smiled at Lena, tired and distracted and kind.
+
+"Perfect timing," she said. "They're eating crackers like it's a food group."
+
+Lena smiled back. Her face felt unhooked from her skull.
+
+The girls had already decided she belonged on the living-room rug with them. One climbed into her lap with the absolute confidence of a child who had never once doubted she would be caught. The other lined up crayons by color and then by length because apparently that mattered now.
+
+"After dinner," the one in Lena's lap said, "can we call Eli and do the monster voice? He never does it too scary."
+
+Gabe, passing through with the pot, looked from his daughter to Lena and stopped moving.
+
+It was a tiny pause. The house felt it anyway.
+
+Lena said, "Gabe, can I talk to you for a second?"
+
+His face changed in layers. First came confusion, then annoyance at the phrase itself because it always meant bad news, and then something sharper when he heard how little air there was in her voice.
+
+"Yeah," he said.
+
+He set the pot down and told the girls, "Hands off the crayons till I get back or I'm billing both of you for damages."
+
+"You don't have bills," one of them said.
+
+"Exactly. Don't start."
+
+He took Lena into the narrow strip of hallway between the kitchen and the basement door. The washing machine was running downstairs, old unbalanced thump carrying up through the steps. From the kitchen his wife called something about whether the bread was in the freezer. Gabe ignored it.
+
+"What happened?" he said.
+
+Lena crossed her arms because there was nowhere else to put them. The hall smelled faintly of bleach and tomato paste.
+
+"I need you to just let me say it all the way through before you start fixing things."
+
+"That's not encouraging."
+
+"I know."
+
+He waited.
+
+"Eli wasn't real," she said. Her voice snagged on the past tense. "Not in the way I thought. There wasn't a guy. It was a fake profile and software and stolen video and somebody steering it."
+
+Gabe blinked once. "What?"
+
+"I know."
+
+"No, say that again because I think I heard you wrong."
+
+She said it again, slower this time, hating every word more because it sounded plainer: not a guy, but a fake profile, software, and somebody steering it. She told him about the photos not belonging to one person, about the work stories collapsing, about proof on a laptop during the outage. She did not say June's name. She kept that part behind her teeth so hard her jaw ached.
+
+Gabe stared at her as if the hallway had just developed a sinkhole under one floorboard.
+
+"So what, it was some scammer?" he said.
+
+"Something like that."
+
+"Something like that isn't an answer, Len."
+
+"It's the one I have right now."
+
+He inhaled through his nose, looked toward the kitchen, then back at her. When he lowered his voice it got rougher, not calmer. "How much money?"
+
+She looked at the top stair leading to the basement, where one of the girls had once sticker-bombed the riser with tiny moons. "I don't want to say it here."
+
+"Then I definitely need the number."
+
+"Gabe."
+
+"Don't do the bullshit where you protect me from the number."
+
+She shut her eyes. "Four thousand one hundred and sixty-five."
+
+Nothing moved in his face for a full second. Then he said, very softly, "Jesus Christ."
+
+"Yeah."
+
+"From you."
+
+"Yes."
+
+"For him."
+
+"For all of it."
+
+The washing machine hit its bad cycle and slammed once against the wall. Gabe turned and put both hands on the top of the old chest freezer by the basement door, head down. The tendons in his forearms stood out like cable under skin.
+
+"And he talked to us," he said.
+
+Lena didn't answer because that was the whole wound.
+
+Gabe looked back at her. There was anger in his face now, but also something worse, the beginning of hurt. "That thing was on speaker with my kids."
+
+"I know."
+
+"At dinner."
+
+"I know."
+
+"He knew their names."
+
+"I know."
+
+"Did you know then? Any of it?"
+
+"No."
+
+"And after D.C.? After all that bullshit?"
+
+"No."
+
+Gabe let out a breath that sounded like he had just lifted something wrong. "Fuck."
+
+In the kitchen his wife laughed at something one of the girls said. The normalness of it made Lena want to put her forehead through the plaster.
+
+"Do you have receipts?" Gabe asked.
+
+Lena almost laughed because it was exactly where Farah had gone, just with less finesse. "Yes."
+
+"Good. We call your bank in the morning. We call the payment apps. We make a police report."
+
+"I don't know if any of that gets anything back."
+
+"I didn't say it would. I said we do it."
+
+"Gabe, please don't make this bigger tonight."
+
+He stared at her. "Bigger than what?"
+
+She opened her mouth and nothing useful came out.
+
+He stepped closer, lowering his voice another notch because the girls were still ten feet away and loud enough to miss almost anything until they didn't. "Look at me. This isn't the part where you get to be embarrassed and disappear. Not from me."
+
+The sentence nearly undid her because it was too close to what she'd wanted without knowing she'd wanted it.
+
+"I'm not disappearing," she said.
+
+"You hid four grand and a fake man."
+
+"I know."
+
+"And now you're still trying to make this manageable for everybody else." He scrubbed a hand over his mouth. "Who is it?"
+
+There it was.
+
+Lena looked past him toward the kitchen window, where the broken string of lights threw green-red-green across the sink. "I can't say that part yet."
+
+His head jerked slightly. "You know who."
+
+"I know enough."
+
+"Len."
+
+"I have to handle that part before I bring you into it."
+
+For a moment she thought he was going to push. She could see the pressure of it in his shoulders, the electrician's habit of wanting the panel open, the wires exposed, the problem named and fixed by hand. Instead he hit the wall once with the flat of his palm, not hard enough to dent it, just hard enough to make the camel in the hallway tip over again.
+
+"I hate this," he said.
+
+"Me too."
+
+"No, I hate this for real."
+
+Despite everything, that almost made her smile. "What does that even mean?"
+
+"It means don't get smart with me while I'm trying not to go outside and yell at the sky."
+
+One of the girls appeared at the end of the hall with a cracker pasted to her lower lip. She had changed into a ballerina spin without warning and now stopped dead when she saw their faces.
+
+"Why are you whispering?" she asked.
+
+Gabe straightened so fast it looked painful. "Because grown-ups are boring."
+
+"No, they're not."
+
+"You're right. Sometimes we're just trying not to swear in front of children."
+
+She considered that with enormous seriousness. Then she looked up at Lena. "Are we still calling Eli after meatballs?"
+
+It was the gentlest question anybody had asked all day, and it cut the deepest.
+
+Lena crouched because answering from adult height would have been cowardly. The hallway was narrow enough that her knees touched the wall.
+
+"Not tonight, baby."
+
+"Why?"
+
+There was no good language for a child that would not become a different kind of lie. Lena reached up and smoothed a piece of cracker dust off the girl's shirt.
+
+"Because he wasn't who we thought he was."
+
+The girl frowned. "Like a costume?"
+
+"Kind of."
+
+"Like on Halloween when Teo was the scream guy but he was still Teo."
+
+"Not exactly like that."
+
+The other twin yelled from the living room, "Tell her she still has to wash her hands."
+
+The first one ignored that. "Is he mad at us?"
+
+Lena had thought she was done being surprised by pain. She had been wrong.
+
+"No," she said, and because that much at least was true in the only way truth mattered here, she held to it. "No, sweetheart. Not at you."
+
+Gabe made a sound in his throat and turned away.
+
+His wife called then, saving all of them. "Table. Now. If I have to say it twice, I'm eating your bread."
+
+The girl bolted toward the kitchen, scandalized. Lena stayed crouched a second longer because standing up required a decision.
+
+Gabe faced her again, eyes wet but angry enough to disguise it. "You sit next to me."
+
+"I can go."
+
+"No."
+
+"I don't want to ruin dinner."
+
+"Dinner is already ruined. Sit down anyway."
+
+So she did.
+
+The table was too small the way family tables always were, elbows and juice cups and a basket of bread with one heel nobody wanted. Gabe's wife kept conversation moving out of instinct or mercy, Lena could not tell. She moved them through school songs, weather, and a neighbor whose inflatable Santa had come loose and spent an hour humping a parked Civic in the wind. The girls argued over who got the blue cup. Gabe barely spoke. When he did, his voice sounded like it had gravel in it.
+
+Halfway through the meal one of the twins said, to nobody in particular, "I liked when Eli did the dinosaur sneeze."
+
+No one answered quickly enough.
+
+Then Gabe said, very gently for him, "Yeah. Me too."
+
+The girl nodded, satisfied to have her preference entered into the record, and went back to stabbing a meatball with more force than the situation required.
+
+Lena could not taste anything. She heard every fork, every chair scrape, and every place where the phone did not ring.
+
+Usually, on nights when Eli joined them, Gabe left his own phone faceup by the salt so the speaker wouldn't get muffled by crumbs or little hands. Tonight the spot by the salt held only the phone itself, dark and flat and ordinary, with a smear of tomato on the case from one of the girls' fingers. Lena kept seeing the absence shaped around it, the exact size of a voice that had been let into this room often enough to become part of its furniture.
+
+When dinner was over, Gabe packed leftovers into a plastic container with hard angry snaps of the lid. He shoved it at Lena along with a foil-wrapped piece of bread.
+
+"Take this."
+
+"I don't want your food."
+
+"Tough."
+
+He walked her to the door while the girls argued over whether the camel in the nativity scene belonged inside or outside the stable. On the stoop the air had gone meaner, sharp enough to wake every tooth.
+
+Gabe folded his arms against the cold. "Call me tomorrow when you wake up."
+
+"Okay."
+
+"No disappearing."
+
+"Okay."
+
+"And if whoever this is tries to contact you tonight, you don't answer alone."
+
+She nodded.
+
+He looked at her for a long second, then put his hand on the back of her neck the way he used to when she was the one taking him to school, steering him through traffic with two fingers because he was always about to run ahead of the light.
+
+"Len," he said. "He isn't the embarrassing one."
+
+She almost told him the truth then. June. June. June. It rose to the back of her mouth like blood. But Gabe's hand was warm through her hair, and inside the house one of the girls was shouting for him to come see the camel emergency, and if she said the name now the night would split down the center and never close.
+
+So she only nodded again.
+
+On the walk home the leftovers swung hot against her leg. Farah's bottle of water knocked in the tote with each step. Up on Moore, the tailor had finally shut down for the night, but Lena could still hear the machine in memory, that insect stitch climbing through the floor. Her phone stayed silent in her pocket. She did not reach for it once.

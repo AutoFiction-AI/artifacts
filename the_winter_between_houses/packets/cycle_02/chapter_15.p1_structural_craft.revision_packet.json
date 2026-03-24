@@ -1,0 +1,95 @@
+{
+  "acceptance_targets": [
+    "[chapter_15_F001] PASS if, when reading the revised three confrontation spans (103-147, 217-241, 289-303), each ends with a different concrete state change (not just repeated policy language): one institutional, one household-logistical, and one personal-documentary; FAIL if any two beats resolve with functionally the same argument and no new consequence.",
+    "[chapter_15_F002] PASS if the revised transition includes a dramatized discharge interaction in which (1) a staff actor states a concrete restriction, (2) Noreen makes a specific request or refusal, and (3) an immediate practical consequence is shown before she reaches home; FAIL if discharge remains off-page summary.",
+    "[chapter_15_F003] PASS if the revised 291-303 span contains at least one action attempt by Peter to operationalize the rule set and one immediate embodied response from Noreen that changes what happens next; FAIL if refusal is still resolved by summary exit without enacted pushback."
+  ],
+  "chapter_id": "chapter_15",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if, when reading the revised three confrontation spans (103-147, 217-241, 289-303), each ends with a different concrete state change (not just repeated policy language): one institutional, one household-logistical, and one personal-documentary; FAIL if any two beats resolve with functionally the same argument and no new consequence.",
+      "chapter_id": "chapter_15",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_15.md:109; snapshots/cycle_02/chapters/chapter_15.md:129; snapshots/cycle_02/chapters/chapter_15.md:217; snapshots/cycle_02/chapters/chapter_15.md:231; snapshots/cycle_02/chapters/chapter_15.md:291",
+      "finding_id": "chapter_15_F001",
+      "problem": "The chapter replays the same Peter-control beat three times (hospital warning, home timetable, written house rules) with limited leverage change, so scene energy plateaus instead of escalating consequence. This undercuts causal momentum for the chapter's spine conflict.",
+      "rewrite_direction": "Rebuild the confrontation sequence across snapshots/cycle_02/chapters/chapter_15.md:103-147, snapshots/cycle_02/chapters/chapter_15.md:217-241, and snapshots/cycle_02/chapters/chapter_15.md:289-303 so each pass introduces a new control mechanism and forces a distinct counter-move from Noreen (e.g., hospital contact designation fight, transport/key choke point at home, then document/control breach). Keep one beat informational and make the other two action-consequence beats.",
+      "severity": "MEDIUM",
+      "source": "booker",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if the revised transition includes a dramatized discharge interaction in which (1) a staff actor states a concrete restriction, (2) Noreen makes a specific request or refusal, and (3) an immediate practical consequence is shown before she reaches home; FAIL if discharge remains off-page summary.",
+      "chapter_id": "chapter_15",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_15.md:181; snapshots/cycle_02/chapters/chapter_15.md:193; snapshots/cycle_02/chapters/chapter_15.md:195",
+      "finding_id": "chapter_15_F002",
+      "problem": "Sanitization drift: after building institutional gatekeeping pressure, the draft jump-cuts from hospital planning to post-discharge home return without rendering the discharge confrontation itself. Summary replaces scene at the exact point the chapter's institutional wound should be embodied.",
+      "rewrite_direction": "Insert an on-page discharge beat between snapshots/cycle_02/chapters/chapter_15.md:193 and snapshots/cycle_02/chapters/chapter_15.md:195 that stages the actual policy handoff (who controls updates/visits/milk transport), Noreen's attempted agency, and the immediate cost of compliance or refusal. Keep it in close third with body-state detail rather than administrative summary.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if the revised 291-303 span contains at least one action attempt by Peter to operationalize the rule set and one immediate embodied response from Noreen that changes what happens next; FAIL if refusal is still resolved by summary exit without enacted pushback.",
+      "chapter_id": "chapter_15",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_15.md:291; snapshots/cycle_02/chapters/chapter_15.md:299; snapshots/cycle_02/chapters/chapter_15.md:303",
+      "finding_id": "chapter_15_F003",
+      "problem": "Timidity: the first explicit in-house coercion contract is defused by quick retreat (\"she was tired and went upstairs\") instead of being played through as embodied conflict. The prose steps back from the emotional and physical reality the premise has already established.",
+      "rewrite_direction": "Expand snapshots/cycle_02/chapters/chapter_15.md:291-303 into a full pressure exchange with at least one attempted enforcement move by Peter and one physically grounded refusal beat from Noreen (pain, balance, blood-loss fatigue, fear management), so refusal has visible cost in-scene.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "b22a3b0540036e630d734f9bc259e2bdde72f84ebe438e96441cfb2379912ff5",
+  "must_fix_count": 3,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "When edge cases arise, choose the more specific and potentially uncomfortable rendering if it is character-true and causally necessary. Intimacy, bodily risk, and moral compromise must be shown with concrete detail and aftermath, then integrated into later behavior rather than quarantined as a one-scene shock.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a draft abstracts pain, sex, coercion, blood, or economic shame at the exact moment consequence should be embodied, revise by replacing summary with physically and socially specific action tied to POV stakes.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High by default for spoken lines; uncontracted forms are marked choices for period formality, emphasis, or character-specific control behavior.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate structural engines across adjacent chapters: ensemble social scenes, inventory chapters, information-turn chapters, acted-upon pressure chapters, and aftermath chapters. Vary scene count (2 to 4), dialogue density, and interiority depth so consecutive chapters do not share the same pacing signature.",
+      "diction": "Period-authentic but readable contemporary English, favoring concrete nouns and precise verbs over lyrical abstraction.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person, alternating primarily between Elsie and Noreen, with occasional tightly limited deviations only when causal clarity requires it.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Sentence rhythm should alternate compressed pressure bursts with longer observational lines that carry social texture; avoid monotone paragraph cadence.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

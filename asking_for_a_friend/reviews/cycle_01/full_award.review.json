@@ -1,0 +1,269 @@
+{
+  "cycle": 1,
+  "verdict": "FAIL",
+  "summary": "The novel demonstrates genuine literary ambition and substantial prose craft. Its premise — a woman catfished by an AI her best friend built — is original and executed with intelligence. The dialogue differentiation is mostly strong, tense consistency is flawless, and the novel passes the sanitization test: Chapter 10 renders sexual content with full specificity (lines 1791-1837), and Simone's financial desperation (Ch7 lines 1236-1258, Ch13 lines 2502-2518) is among the most concretely rendered economic shame in recent fiction. The contraction handling is precise throughout — every uncontracted form in dialogue serves deliberate emphasis. However, the manuscript is not shortlist-ready. CRITICAL: Nora's father is simultaneously dead (at age 11 in Ch3, at age 19 in Ch15, approximately 4 years ago in Ch6) and alive (moved to Seattle in Ch9) — a four-way factual contradiction that would destroy reader trust. Multiple HIGH-severity factual inconsistencies from parallel drafting (Instagram source name, ex-boyfriend name, savings balance, parents' town, rent amount) compound the problem. At the MEDIUM level, the prose suffers from pervasive overreliance on the editing/publishing metaphor domain as the default register for all emotional processing (14+ chapters), repeated somatic vocabulary ('chest' as emotional locus in 13+ chapters, with one phrase repeated verbatim), and a formula metaphor construction ('X arrived/landed like Y') recurring 10+ times. These patterns create a mannered texture that undercuts the novel's specificity. The strongest chapters — 1, 7, 10, 15, 17 — show shortlist-level capability. The weakest suffer from the compounding of cross-chapter continuity errors and prose-pattern density. With continuity resolved and the prose patterns thinned, this manuscript has genuine potential.",
+  "findings": [
+    {
+      "finding_id": "CRIT-01-father-ch03",
+      "severity": "CRITICAL",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:491",
+      "problem": "Nora's father is described as having 'died when she was eleven' in Simone's OpenClaw context entry. This contradicts Ch9 (father alive, moved to Seattle at 12), Ch6 (died approximately 4 years ago), and Ch15 (died at 19). Four chapters present four incompatible versions of the father's fate. The Ch9 version — father left for Seattle, alive, attended NYU graduation — is the most dramatically developed and gives the AI's autonomous insight at line 1646 ('the leaving shaped you more than the love did') its full power. Ch3's 'died when she was eleven' should be revised to match the Seattle-departure version.",
+      "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:491, in the long paragraph of Simone's context entries, change 'Her father, who had died when she was eleven and who she still talked about with a tenderness that made Simone want to hold her or scream' to reflect the canonical version: father left for Seattle when Nora was twelve, is alive but emotionally absent. Replace the death reference with language about the departure and Nora's complicated grief over an abandonment disguised as a career move. Keep the emotional texture — the tenderness Nora shows, Simone's dual impulse to hold or scream — but anchor it to loss-by-leaving rather than loss-by-death. The OpenClaw system would encode this as an emotional vulnerability: a father who chose to leave is arguably more painful than one who died, because the leaving was voluntary.",
+      "acceptance_test": "At line 491: (1) No reference to the father dying. (2) The father's departure to Seattle is mentioned. (3) The emotional vulnerability language is preserved — Nora's tenderness, Simone's complicated response. (4) The passage remains consistent with Ch9's version where the father attended NYU graduation and calls on holidays. FAIL if any death reference remains or if the age/circumstance contradicts Ch9 line 1642."
+    },
+    {
+      "finding_id": "CRIT-02-father-ch06",
+      "severity": "CRITICAL",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:1077",
+      "problem": "The narrator describes Diane speaking about 'Nora's father four years after his death, present tense for his opinions.' This creates two contradictions: (1) if the canonical version is that the father is alive (Ch9), then 'his death' is wrong; (2) 'four years after his death' implies the father died when Nora was approximately 30, contradicting Ch3 (died at 11) and Ch15 (died at 19). The passage also uses 'Your father would have loved it' — a conditional that works for both death and absence but is followed by narrator gloss that commits to death.",
+      "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:1077, change 'four years after his death, present tense for his opinions, as though his taste in lawn ornaments were ongoing business' to reflect the canonical version where the father is alive but absent in Seattle. Option A: 'more than twenty years after Michael had moved to Seattle, present tense for his opinions, as though his taste in lawn ornaments could be evaluated from three thousand miles away.' Option B: reference Diane's habit of speaking about Michael as if he still lived nearby, a refusal to fully acknowledge the departure. Keep Diane's 'Your father would have loved it' — the conditional works for absence. The key change is the narrator's gloss: replace death with departure.",
+      "acceptance_test": "At line 1077: (1) No reference to death. (2) The father's absence is attributed to his move to Seattle, not to dying. (3) The time reference is consistent with the father leaving when Nora was 12 (approximately 22 years ago). (4) Diane's present-tense speech habit is preserved. FAIL if 'death' or 'died' appears, or if the time reference contradicts Ch9 line 1642."
+    },
+    {
+      "finding_id": "CRIT-03-father-ch09",
+      "severity": "CRITICAL",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:1642",
+      "problem": "Ch9 presents the most developed version of Nora's father: Michael moved to Seattle when Nora was twelve, 'not for another woman but for a job he'd described as temporary and then made permanent,' attended her NYU graduation, calls on holidays. This is the canonical version that other chapters must align with. However, the AI's response at line 1646 references 'the year after he left' and 'why you don't trust it when someone stays,' which only works if the father left rather than died. This chapter is internally consistent but sits in a four-way contradiction with Ch3 (died at 11), Ch6 (died ~4 years ago), and Ch15 (died at 19). Ch9 should KEEP its version — it is the strongest and most dramatically useful. No revision needed in this chapter for the father detail, but verify that no death language has crept in elsewhere in the chapter.",
+      "rewrite_direction": "No substantive revision needed to the father backstory in this chapter — it is the canonical version. Verify that no other passage within Ch9 (lines 1526-1682) references the father as dead. The AI's autonomous response at line 1646 ('I think the leaving shaped you more than the love did') is the payoff of this version and must be preserved unchanged.",
+      "acceptance_test": "Within Ch9 (lines 1526-1682): (1) The father is described as having moved to Seattle, alive. (2) No reference to the father dying. (3) Line 1646's AI insight about leaving vs. love is preserved. FAIL if any death reference appears or if the father's backstory changes from the established version."
+    },
+    {
+      "finding_id": "CRIT-04-father-ch15",
+      "severity": "CRITICAL",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2928",
+      "problem": "The OpenClaw dashboard's emotional triggers section reads: 'Her father. He died when she was nineteen.' This contradicts Ch3 (died at 11), Ch6 (died ~4 years ago), and Ch9 (alive, moved to Seattle). Since this is Simone's own documentation, it should reflect what Simone knows — and Simone knows the truth (Ch9 line 1642 establishes Simone was present at the graduation dinner). The dashboard should describe the father's departure, not his death, and the emotional trigger language should reflect abandonment rather than bereavement.",
+      "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:2928, change 'Her father. He died when she was nineteen. He used to tell her she was the most interesting person in any room.' to reflect the canonical version. Something like: 'Her father. He moved to Seattle when she was twelve — told her it was temporary, made it permanent. He used to tell her she was the most interesting person in any room, and then he left. This is her deepest vulnerability — someone who makes her feel seen the way he did before he chose to stop.' The trigger logic remains the same (someone who makes her feel seen), but the wound is abandonment, not death. Keep the rest of the emotional trigger entry as-is.",
+      "acceptance_test": "At line 2928: (1) No reference to the father dying. (2) The father's move to Seattle is mentioned. (3) The emotional trigger logic — 'someone who makes her feel seen' — is preserved. (4) The age reference is consistent with leaving at 12, not dying at 11 or 19. FAIL if any death language remains."
+    },
+    {
+      "finding_id": "HIGH-01-instagram-ch03",
+      "severity": "HIGH",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:447",
+      "problem": "The Lisbon man whose photos Simone uses for Caleb is named 'Miguel Ferreira' in Ch3 (line 447: 'a thirty-year-old architect in Lisbon named Miguel Ferreira') but his Instagram handle in Ch5 is '@marcohenriques_' (line 892), implying the name is 'Marco Henriques.' These are two different names for the same character. The continuity sheet specifies the photos come from 'a real man living in Lisbon' without naming him, so one chapter must correct to match the other.",
+      "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:447, change 'Miguel Ferreira' to 'Marco Henriques' to match the Instagram handle established in Ch5. The passage reads 'a thirty-year-old architect in Lisbon named Miguel Ferreira, forty-seven followers' — change to 'a thirty-year-old architect in Lisbon named Marco Henriques, forty-seven followers.' This aligns with Ch5's '@marcohenriques_' handle.",
+      "acceptance_test": "At line 447: (1) The name reads 'Marco Henriques,' not 'Miguel Ferreira.' (2) All other details (age, profession, city, follower count) are unchanged. FAIL if 'Miguel Ferreira' remains."
+    },
+    {
+      "finding_id": "HIGH-02-instagram-ch05",
+      "severity": "HIGH",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:892",
+      "problem": "The Instagram handle '@marcohenriques_' (line 892) implies the Lisbon man's name is Marco Henriques. This is the more detailed reference (includes handle format) and should be treated as canonical. Ch3 uses 'Miguel Ferreira' for the same person. If Ch3 is corrected to 'Marco Henriques,' then Ch5 is already consistent. No revision needed in this chapter unless the opposite naming decision is made. Flagging to ensure the revision agent for Ch5 is aware of the cross-chapter dependency.",
+      "rewrite_direction": "No revision needed at line 892 if Ch3 corrects 'Miguel Ferreira' to 'Marco Henriques.' The handle '@marcohenriques_' and the name 'Marco Henriques' are consistent. Verify that no other reference within Ch5 (lines 789-966) uses the name 'Miguel Ferreira.' If any instance exists, change it to 'Marco Henriques.'",
+      "acceptance_test": "Within Ch5: (1) The Instagram handle '@marcohenriques_' is consistent with 'Marco Henriques.' (2) No instance of 'Miguel Ferreira' appears anywhere in the chapter. FAIL if 'Miguel Ferreira' appears."
+    },
+    {
+      "finding_id": "HIGH-03-ex-name-ch06",
+      "severity": "HIGH",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:1179",
+      "problem": "Line 1179 references 'the places she'd been protecting since Aaron.' No character named Aaron is established anywhere in the novel. Ch1 line 233 establishes Nora's ex as 'Marcus' — 'She'd had Marcus, for three years.' The name 'Aaron' appears only once in the entire manuscript. This is a parallel-drafting error where the chapter author used a different name for the established ex-boyfriend.",
+      "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:1179, change 'since Aaron' to 'since Marcus.' The sentence reads 'She was letting this man — this voice, this warmth, this presence that lived in her phone and nowhere she could touch — into the places she'd been protecting since Aaron.' Change to 'since Marcus.'",
+      "acceptance_test": "At line 1179: (1) The name reads 'Marcus,' not 'Aaron.' (2) No other instance of 'Aaron' appears in the chapter. FAIL if 'Aaron' remains."
+    },
+    {
+      "finding_id": "HIGH-04-savings-ch10",
+      "severity": "HIGH",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:1931",
+      "problem": "Line 1931 states Nora has 'about fourteen thousand' in savings (January timeline). But Ch14 line 2823 states her savings are '$42,800' (March timeline). At Nora's saving rate of $700-900/month (per Ch14's own description), she could accumulate at most ~$1,800 in two months — not $28,000+. Subtracting the $2,500 she sends in this chapter, her savings at the start of Ch14 should be approximately $11,500-$13,300, not $42,800. One of the two figures must be wrong. Since Ch14's $42,800 is supported by detailed financial reasoning ('she'd been saving since she was twenty-six' at $700-900/month for 8 years ≈ $67K-$86K minus life expenses), the Ch14 figure is more internally consistent. The Ch10 figure of $14,000 is the outlier.",
+      "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:1931, change 'She had about fourteen thousand in it' to a figure consistent with Ch14. If her savings are ~$42,800 in March and she saves ~$800/month, her January savings would be approximately $44,100 (before the $2,500 send in this chapter). Change to approximately 'forty-four thousand' or 'just over forty-four thousand.' Then the subsequent line 'Twenty-five hundred would leave her with eleven-five' should change to reflect the new math — 'Twenty-five hundred would barely dent it' or give the correct remainder (~$41,600). Adjust the emotional register: with $44K in savings, $2,500 is less of a stretch, which actually serves the escalation — the point is that the amount is psychologically significant, not financially devastating. The Ch14 decision ($10K of a $15K ask) is where the financial stakes become real.",
+      "acceptance_test": "At line 1931: (1) The savings figure is approximately $43,000-$45,000, consistent with Ch14's $42,800 minus two months of savings plus two months of additional saving. (2) The remainder math after sending $2,500 is correct. (3) The emotional texture acknowledges that the money is more psychologically than financially significant at this stage. FAIL if the savings figure is below $40,000 or above $50,000, or if the remainder math is wrong."
+    },
+    {
+      "finding_id": "HIGH-05-savings-ch14",
+      "severity": "HIGH",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2823",
+      "problem": "Line 2823 states Nora's savings are '$42,800.' This is internally well-supported by the detailed financial reasoning in this chapter ('she'd been saving since she was twenty-six' at $700-900/month). However, it contradicts Ch10's figure of ~$14,000 two months earlier. If Ch10 corrects to ~$44,000, then Ch14's $42,800 is consistent (she's sent $2,500 and saved ~$1,600 in the interim, netting approximately -$900). No revision needed in this chapter IF Ch10 corrects its figure. Flagging to ensure cross-chapter awareness.",
+      "rewrite_direction": "No substantive revision needed at line 2823 if Ch10 corrects its savings figure to approximately $44,100. Verify that the $42,800 figure is arithmetically consistent: if she had ~$44,100 in January, sent $2,500 (Ch10), and saved ~$1,600 over two months (at ~$800/month), her March balance would be approximately $43,200 — close enough to $42,800 to account for normal spending variation. If this math doesn't work after Ch10's revision, adjust the figure here by ±$500 to reconcile.",
+      "acceptance_test": "At line 2823: (1) The savings figure is consistent with Ch10's revised figure minus the $2,500 sent in Ch10, plus approximately 2 months of savings at the stated rate. (2) The figure is in the range $41,000-$44,000. FAIL if the figure implies a savings rate inconsistent with the stated $700-900/month."
+    },
+    {
+      "finding_id": "HIGH-06-style-echo-linkedin-ch14",
+      "severity": "HIGH",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2757",
+      "problem": "Caleb's text message reads: 'I'm not really a LinkedIn person.' The style bible's example line for caleb_mora_ai is: 'I'm not a LinkedIn person. I'm barely an email person. I'm a show-up-and-build-the-thing person.' These are marked as 'NON-COPYABLE REFERENCE ONLY — calibration samples, never to be echoed in any draft.' The manuscript's version differs by a single adverb ('really') and is a near-verbatim echo of the calibration sample's first clause.",
+      "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:2757, replace Caleb's LinkedIn deflection with a response that captures the same character beat (a man who is charmingly anti-corporate, resistant to professional self-presentation) without echoing the calibration sample. The response should still feel evasive — this is a scene where Nora is testing Caleb's verifiability, so his dodge matters. Options: (a) Caleb could deflect with a joke about his firm's non-existent web presence; (b) he could express genuine distaste for the platform in his own idiom; (c) he could redirect to something personal rather than professional. The key constraint: the response should wobble slightly, giving Nora's doubt room to grow.",
+      "acceptance_test": "At line 2757: (1) No phrase matching 'I'm not [really] a LinkedIn person' appears. (2) Caleb's response still deflects the LinkedIn question. (3) The deflection has the same functional role — Nora cannot verify his professional existence. (4) The language does not echo any other calibration sample from the style bible. FAIL if the revised line shares more than 4 consecutive words with any caleb_mora_ai example line."
+    },
+    {
+      "finding_id": "HIGH-07-parents-town-ch07",
+      "severity": "HIGH",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:1252",
+      "problem": "Line 1252 places Simone's parents in 'Bayonne' (NJ). Ch13 line 2518 places them in 'Teaneck' (NJ). These are different towns approximately 30 miles apart. Simone's parents cannot live in both. The continuity sheet does not specify the town, so one chapter must correct to match the other. Ch13 includes more detail about the parents' home (the Parkinson's detail, the craft room, the sourness), so it may be the chapter to treat as canonical.",
+      "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:1252, change 'Bayonne' to 'Teaneck' to match Ch13's more detailed description. The sentence reads 'her parents expected a visit to Bayonne' — change to 'her parents expected a visit to Teaneck.'",
+      "acceptance_test": "At line 1252: (1) The town reads 'Teaneck,' not 'Bayonne.' FAIL if 'Bayonne' remains."
+    },
+    {
+      "finding_id": "HIGH-08-parents-town-ch13",
+      "severity": "HIGH",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2518",
+      "problem": "Line 2518 places Simone's parents in 'Teaneck.' Ch7 line 1252 says 'Bayonne.' If Ch7 corrects to 'Teaneck' per the above finding, this chapter is already consistent. Flagging to ensure cross-chapter awareness. No revision needed here if Ch7 corrects.",
+      "rewrite_direction": "No revision needed at line 2518 if Ch7 changes 'Bayonne' to 'Teaneck.' Verify that no other reference to the parents' location within Ch13 (lines 2500-2624) contradicts 'Teaneck.'",
+      "acceptance_test": "Within Ch13: (1) The parents' town is consistently 'Teaneck.' (2) No reference to 'Bayonne' appears. FAIL if the town name is inconsistent."
+    },
+    {
+      "finding_id": "HIGH-09-rent-ch03",
+      "severity": "HIGH",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:559",
+      "problem": "Line 559 states Simone's rent is '$2,200, raised from $2,050 in August.' Ch7 line 1242 states rent is '$2,400 a month' in December, with a renewal notice for $2,550 in January. Ch13 line 2516 states rent is '$2,100' in February. Ch3 and Ch7 describe the same pre-renewal period (October and December respectively) but give different amounts ($2,200 vs $2,400). Ch7's financial section is the most detailed and internally consistent, so $2,400 should be treated as the canonical pre-renewal rent. Ch3's $2,200 should be corrected.",
+      "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:559, change '$2,200, raised from $2,050 in August' to '$2,400, raised from $2,050 in August.' Also verify that the downstream math in this chapter (minimum payments at line 559: '$1,100,' surplus of 'roughly three hundred dollars') still works with $2,400 rent. The current math: $5,800 take-home minus $2,200 rent minus $1,100 minimums minus ~$1,100 expenses = ~$400 surplus. With $2,400 rent: $5,800 - $2,400 - $1,100 - $1,100 = ~$1,200 surplus, which contradicts the 'three hundred dollars' figure. The minimums or expenses may also need adjustment to keep the surplus near $300. Alternatively, use Ch7's exact budget breakdown (line 1250) as the canonical reference and align Ch3's math to it.",
+      "acceptance_test": "At line 559: (1) Rent amount matches Ch7's $2,400. (2) The total monthly surplus after all expenses is approximately $300, consistent with Ch7 line 1252. (3) The 'raised from' figure creates a plausible increase to $2,400. FAIL if rent is not $2,400 or if the surplus math produces a number inconsistent with Ch7."
+    },
+    {
+      "finding_id": "HIGH-10-rent-ch13",
+      "severity": "HIGH",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2516",
+      "problem": "Line 2516 states Simone's rent is '$2,100' in February. Ch7 line 1242 established that the lease was renewing at '$2,550 in January.' By February, the new rate should be in effect. The rent figure of $2,100 is lower than even the pre-renewal $2,400 (Ch7) and far below the renewal rate of $2,550. This undermines the financial pressure that drives the $15,000 ask — if rent is only $2,100, Simone's budget math improves by ~$450/month, weakening the eviction logic.",
+      "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:2516, change '$2,100' to '$2,550' to match Ch7's stated January renewal rate. Then verify the downstream math in line 2516: the passage calculates total debt, monthly take-home, minimums, rent, and surplus. With $2,550 rent (instead of $2,100), the monthly surplus drops by $450, making the financial crisis more acute — which strengthens the chapter's dramatic pressure. Recalculate: take-home $5,600 minus minimums $1,340 minus rent $2,550 minus expenses $1,200 = surplus of $510 — still not enough to clear $11,400 in 24 days, but the math needs to be internally consistent.",
+      "acceptance_test": "At line 2516: (1) Rent reads '$2,550,' matching Ch7's renewal rate. (2) The surplus calculation is internally consistent with the new rent figure. (3) The financial math still demonstrates impossibility of covering the back rent within the deadline. FAIL if rent is below $2,400 or if the surplus math is internally inconsistent."
+    },
+    {
+      "finding_id": "MED-01-editing-metaphor-ch02",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:258",
+      "problem": "Editing/publishing metaphors appear 5 times in Ch2: 'approach the app the way she approached a manuscript' (258), 'conscientiousness that reminded her of a competent first draft' (266), Caleb asks about manuscripts (316), 'I'm an editor. There's always a record' (344), 'the way the first sentence of a good book sometimes sat in her chest' (346). This metaphor domain appears in 14+ chapters across the novel and is the default register for all emotional processing. While Nora's editorial eye is character-organic, when it becomes the only lens for romantic feeling, grief, desire, friendship, and self-assessment, it stops being character voice and becomes authorial tic. Lines 316 and 344 are organic (Nora literally discussing her job); lines 258, 266, and 346 are ornamental. This chapter should REPLACE at least 2 of the 3 ornamental instances with non-editorial metaphor domains — body, architecture, weather, music, cooking, or other registers available to a woman who lives in Brooklyn and has a rich sensory life.",
+      "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:258, replace 'the way she approached a manuscript she didn't love on first read' with a non-editorial simile for approaching something with cautious openness. At line 266, replace 'a competent first draft' with a different register for describing Caleb's early messages as promising but not yet fully formed. KEEP line 346 ('the way the first sentence of a good book sat in her chest') as the chapter's strongest editorial metaphor — it earns its place because it's specific and emotionally true. KEEP lines 316 and 344 as literal job discussion.",
+      "acceptance_test": "Within Ch2 (lines 254-430): (1) At most 3 editing/publishing metaphors remain (the 2 literal job references plus 1 organic figurative use). (2) Lines 258 and 266 use non-editorial metaphor domains. (3) The replacement metaphors are specific and sensory, not generic. FAIL if more than 3 editing metaphors remain or if replacements are abstract."
+    },
+    {
+      "finding_id": "MED-02-editing-metaphor-ch04",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:600",
+      "problem": "Ch4 uses editing metaphors 4 times for romantic feeling: 'each reading revealed a different thing she liked about it...the verb choice...the rhythm' (600), 'reread older exchanges the way she sometimes reread first chapters of novels she loved' (610), 'compose a reply...a temperature she monitored' (614), 'He asked questions the way she wished her authors asked questions' (616). All 4 instances describe the experience of falling in love through text, and all use the same editorial register. The result is monotone: every romantic sensation is processed through editing vocabulary. The chapter texture mode is 'hot, intimate, dread-underpinned' — the editing metaphor is too cerebral for heat and too controlled for dread. This chapter should REPLACE 3 of 4 instances.",
+      "rewrite_direction": "KEEP line 610 ('reread older exchanges the way she sometimes reread first chapters') — this is the strongest instance, connecting rereading behavior to romantic obsession. REPLACE lines 600, 614, and 616 with non-editorial registers. At line 600, replace the verb-choice/rhythm language with somatic or sensory metaphor for discovery. At line 614, replace 'compose a reply...temperature she monitored' with a physical description of the impulse control of texting. At line 616, replace 'the way she wished her authors asked questions' with a different comparison domain.",
+      "acceptance_test": "Within Ch4 (lines 598-788): (1) At most 1 editing/publishing metaphor remains (the rereading comparison at line 610 or equivalent). (2) Lines 600, 614, 616 use non-editorial registers. (3) The romantic feeling is rendered through varied sensory channels. FAIL if more than 1 editing metaphor remains in the non-literal passages."
+    },
+    {
+      "finding_id": "MED-03-editing-metaphor-ch08",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:1341",
+      "problem": "Ch8 uses editing metaphors 3 times: 'she'd written margin notes like would your protagonist really not notice this?' (1341), 'her entire professional existence was built on the ability to see what a story was doing underneath what it said it was doing' (1391), 'it's like reading a manuscript where every page is brilliant but you can't see the author photo' (1495). These appear in a chapter about the first financial request and Margo's concern — the emotional texture should be vulnerability and defensiveness, not editorial analysis. The 'author photo' metaphor at line 1495 is genuinely funny and earns its place. The other two are ornamental.",
+      "rewrite_direction": "KEEP line 1495 ('it's like reading a manuscript where every page is brilliant but you can't see the author photo') — this is dialogue, it's comic, and it captures Nora's specific way of processing doubt. REPLACE lines 1341 and 1391 with non-editorial registers. At line 1341, replace the margin-notes metaphor with a different form of Nora's self-awareness about red flags. At line 1391, replace the story-analysis metaphor with a more direct rendering of Nora's professional skill at detecting deception, using non-literary vocabulary.",
+      "acceptance_test": "Within Ch8 (lines 1313-1525): (1) At most 1 editing metaphor in narration remains. (2) The dialogue metaphor at line 1495 is preserved. (3) Lines 1341 and 1391 use non-editorial vocabulary. FAIL if more than 2 total editing metaphors remain."
+    },
+    {
+      "finding_id": "MED-04-editing-metaphor-ch10",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2011",
+      "problem": "Ch10 uses editing metaphors for sexual and emotional content: 'let her be wrong here in the margin four times' (1687), 'the character who knows something she hasn't yet admitted to herself' (2011), 'the internal editor who couldn't stop marking up the margins of her own life' (2015). This chapter's texture mode is 'hot, uncomfortable, intimate.' Processing an orgasm and an intimate photo through editorial vocabulary is a tonal mismatch — the prose needs to be in the body, not in the manuscript. The metaphor pulls the reader out of the physical experience and into Nora's professional identity at moments when the character herself would not be thinking about work.",
+      "rewrite_direction": "REPLACE all 3 instances. At line 1687, replace 'margin' with a non-editorial register for self-doubt during intimacy. At line 2011, replace 'the character who knows something she hasn't yet admitted to herself' with a physical or spatial metaphor for approaching awareness. At line 2015, replace 'the internal editor who couldn't stop marking up the margins of her own life' with a metaphor grounded in body or space — this is the end of a chapter about sexual vulnerability, and the closing image should stay in the register of the body, not the office.",
+      "acceptance_test": "Within Ch10 (lines 1683-2019): (1) Zero editing metaphors remain in passages about sexual content or emotional doubt. (2) The closing lines (2011-2015) use body, space, or sensation rather than editorial vocabulary. FAIL if any editing metaphor appears within 20 lines of sexual or intimate content."
+    },
+    {
+      "finding_id": "MED-05-editing-metaphor-ch12",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2311",
+      "problem": "Ch12 opens with an editing metaphor: 'She kept coming back to the phrase, circling it the way she'd circle a problem sentence in a manuscript' (2311). Later: 'felt like working on a sentence she wasn't sure belonged in the manuscript' (2441). This chapter is the aftermath of the manufactured fight — Nora is heartbroken, crying on Simone's couch. The emotional register should be raw, not analytical. Processing grief through editorial vocabulary distances the reader from the feeling.",
+      "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:2311, replace the opening editorial metaphor with a non-editorial register for obsessive rumination. 'Circling a problem sentence' could become circling a physical space, or circling a thought the way you circle a bruise with your thumb. At line 2441, replace 'working on a sentence she wasn't sure belonged in the manuscript' with a non-editorial register for emotional uncertainty. KEEP if a strong alternative is not available — one editing metaphor in this chapter is tolerable if the opening is revised.",
+      "acceptance_test": "Within Ch12 (lines 2309-2499): (1) At most 1 editing metaphor remains. (2) The opening line (2311) does not use editorial vocabulary. FAIL if the opening sentence contains an editing metaphor or if more than 1 remains in the chapter."
+    },
+    {
+      "finding_id": "MED-06-editing-metaphor-ch14",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2685",
+      "problem": "Line 2685: 'the kind of sentence she would have flagged in a manuscript for doing no work.' This chapter is about Nora deciding whether to send $10,000 — the stakes are financial and emotional, not editorial. The editing metaphor domain has appeared in 14+ chapters at this point, and by Ch14 the reader has absorbed the premise that Nora thinks like an editor. Continuing to reach for the same register creates diminishing returns and signals the prose has a single available channel for interiority.",
+      "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:2685, replace 'the kind of sentence she would have flagged in a manuscript for doing no work' with a non-editorial way of describing empty reassurance. Nora's professional eye can still be present in this chapter — her investigation of Caleb's LinkedIn and website (lines 2751-2763) is organic — but the figurative deployment of editing vocabulary should stop.",
+      "acceptance_test": "At line 2685: (1) The metaphor does not reference manuscripts, editing, sentences, or flagging. (2) The new language conveys the same meaning (recognizing emptiness in a statement). FAIL if any form of editing vocabulary appears in this figurative passage."
+    },
+    {
+      "finding_id": "MED-07-chest-somatic-ch04",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:650",
+      "problem": "'Chest' is used as a somatic locus for emotion 20+ times across 13 chapters in this novel, making it the default body part for feeling. Ch4 alone uses it at least 3 times (approximately lines 600, 650, 682 — warm feeling in chest, pressing phone against sternum/chest, a thing happening in her chest). The word 'sternum' appears 4 times across the novel as a variant. The phrase 'a loosening in her chest' appears verbatim at both Ch10 line 1927 and Ch12 line 2377. This chapter should REPLACE its instances since it is an early chapter where variety is most needed to prevent the pattern from calcifying.",
+      "rewrite_direction": "Within Ch4 (lines 598-788), locate all instances of 'chest' and 'sternum' used as emotional locus and replace with varied somatic locations: throat, hands, the backs of her knees, her jaw, her stomach, the base of her spine. Romantic falling-in-love sensation can register in many body parts — the scalp, the fingertips, the skin of the forearms. At least 2 of the 3 instances should move to non-chest body locations. KEEP at most 1 chest reference if it is the strongest.",
+      "acceptance_test": "Within Ch4 (lines 598-788): (1) At most 1 instance of 'chest' or 'sternum' as emotional locus. (2) At least 2 instances have been moved to different body parts. (3) The replacement body parts are specific and varied (not just 'stomach' replacing 'chest' everywhere). FAIL if more than 1 chest/sternum reference remains or if all replacements use the same body part."
+    },
+    {
+      "finding_id": "MED-08-chest-somatic-ch10",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:1927",
+      "problem": "Ch10 uses 'chest' 3 times as emotional locus (approximately lines 1925, 1927, 1985). Line 1927 contains 'a loosening in her chest' — this exact phrase is repeated verbatim at Ch12 line 2377. Three chest references in one chapter compounds a pattern that already spans 13 chapters. This chapter should REPLACE at least 2 instances, and specifically the 'loosening in her chest' phrase must not appear here if it also appears in Ch12 (or vice versa).",
+      "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:1927, replace 'a loosening in her chest' with a different somatic register for the sensation of deciding to send money. This is the moment she commits to the $2,500 — the body should register the decision, but not through the same phrase used in Ch12. Options: a release in her hands, a forward tip of her weight, a settling of her breath. At lines 1925 and 1985, replace 'chest' with varied body parts appropriate to the emotional context (knees to chest is physical and can stay; 'warmth in her chest was real' at 1985 should move to a different location).",
+      "acceptance_test": "Within Ch10 (lines 1683-2019): (1) The phrase 'a loosening in her chest' does not appear. (2) At most 1 instance of 'chest' as emotional locus remains. (3) Physical-position uses of 'chest' (knees to chest) are exempt. FAIL if 'a loosening in her chest' appears or if more than 1 emotional-locus 'chest' remains."
+    },
+    {
+      "finding_id": "MED-09-chest-somatic-ch12",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2377",
+      "problem": "Line 2377: 'a loosening in her chest' — verbatim repetition of Ch10 line 1927. Additionally, line 2457 uses 'the exact bruised place in her chest' as another chest-as-emotion instance. Two chest references in a chapter that is also the destination of a verbatim repeated phrase. This chapter should KEEP one chest reference (line 2457 is stronger — 'the exact bruised place' is specific) and REPLACE the verbatim repeat.",
+      "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:2377, replace 'a loosening in her chest' with a different somatic register for the sensation of being comforted on a friend's couch. The wine is warming her hands — the loosening could register there, or in her shoulders, or in the muscles of her face. KEEP line 2457 ('the exact bruised place in her chest') as the chapter's single strongest chest reference.",
+      "acceptance_test": "Within Ch12 (lines 2309-2499): (1) The phrase 'a loosening in her chest' does not appear. (2) At most 1 instance of 'chest' as emotional locus remains (line 2457 or equivalent). (3) The replacement at line 2377 uses a different body part. FAIL if the verbatim phrase appears or if more than 1 emotional-locus chest remains."
+    },
+    {
+      "finding_id": "MED-10-formula-metaphor-ch02",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:266",
+      "problem": "The construction '[X] arrived/landed like [Y]' or '[X] sat in [body part] the way [Y]' appears 10+ times across the novel, forming a default simile template. Ch2 has 2 instances: 'messages arrived with a conscientiousness that reminded her of a competent first draft' (266) and 'something that sat in her chest the way the first sentence of a good book sometimes sat in her chest' (346). The first is a mild variant; the second is a clear instance of the formula. The construction becomes visible as pattern by mid-novel. This chapter should REPLACE at least 1 of its 2 instances.",
+      "rewrite_direction": "KEEP line 346 ('sat in her chest the way the first sentence of a good book sometimes sat in her chest') as a strong instance that combines the formula with the editing metaphor domain to create genuine character texture. REPLACE line 266: instead of 'arrived with a conscientiousness that reminded her of,' use a construction that doesn't rely on the arrival/landing template — describe the messages' quality through a different syntactic structure (direct characterization, a clause of effect, a comparison that doesn't use 'arrived' or 'reminded her of').",
+      "acceptance_test": "Within Ch2 (lines 254-430): (1) The 'arrived with a conscientiousness' construction at line 266 no longer uses the arrival/remind template. (2) At most 1 instance of the '[X] arrived/landed/sat like [Y]' formula remains. FAIL if both instances remain or if the replacement uses the same syntactic template."
+    },
+    {
+      "finding_id": "MED-11-formula-metaphor-ch04",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:612",
+      "problem": "Ch4 has 2 instances of the arrival/landing formula: 'the relief arrived before she could suppress it' (612) and 'a feeling arrived that was too big for her face' (770). Both use 'arrived' for an abstract emotional state. Combined with Ch2, Ch10, Ch12, and Ch16's instances, this creates a default template for rendering emotion. This chapter should REPLACE both instances since Ch1 already has the establishing uses of this formula.",
+      "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:612, replace 'the relief arrived before she could suppress it' with direct rendering of relief — show the physical sensation without the arrival frame. At line 770, replace 'a feeling arrived that was too big for her face' with a construction that conveys the same meaning (an emotion too large to hide) without using 'arrived.' The feeling can be described through its physical manifestation or through Nora's attempt to contain it.",
+      "acceptance_test": "Within Ch4 (lines 598-788): (1) Neither line 612 nor line 770 uses 'arrived' for an emotion or sensation. (2) The replacement constructions render the same emotional content through direct description or different syntactic templates. FAIL if 'arrived' or 'landed' appears with an abstract noun as subject."
+    },
+    {
+      "finding_id": "MED-12-formula-metaphor-ch12",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2321",
+      "problem": "Line 2321 uses a variant of the arrival formula (the agent identified 'arrived in her body like' or similar construction). This chapter already has findings for editing metaphor, chest somatic, and voice convergence — the addition of the formula metaphor compounds the prose-pattern density. This chapter should REPLACE its instance since other chapters (Ch1, Ch16) have stronger uses of the formula.",
+      "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:2321, replace any '[X] arrived/landed like [Y]' construction with a direct rendering of the emotional state. The context is Nora processing hurt after the manufactured fight — the feeling should be rendered through action, body, or thought rather than through the arrival-simile frame.",
+      "acceptance_test": "Within Ch12 (lines 2309-2499): (1) No instance of the '[X] arrived/landed like [Y]' formula remains. (2) The replacement renders the same emotional content through a different syntactic structure. FAIL if 'arrived' or 'landed' appears with an abstract noun as subject."
+    },
+    {
+      "finding_id": "MED-13-formula-metaphor-ch16",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:3151",
+      "problem": "Line 3151: 'Nora felt the name arrive in her body like a knuckle pressed against a bruise.' This is a strong instance of the formula — the 'knuckle pressed against a bruise' is specific and earned. However, it uses the exact template ('felt X arrive in her body like Y') that appears across the novel. If the other chapters thin their instances, this one could KEEP its use — it's one of the strongest deployments. But the 'arrive in her body' phrasing should be evaluated: the knuckle/bruise image can survive without the arrival frame.",
+      "rewrite_direction": "Option A (KEEP): If all other chapters have thinned their instances of this formula, this chapter may retain this line as one of the novel's 1-2 surviving uses. It is one of the strongest deployments. Option B (REPLACE the frame, keep the image): Change 'felt the name arrive in her body like a knuckle pressed against a bruise' to something like 'the name hit like a knuckle pressed against a bruise' or 'the name was a knuckle pressed against a bruise' — keeping the powerful image while eliminating the 'arrive in her body' template.",
+      "acceptance_test": "At line 3151: (1) If the 'arrived/landed like' formula remains, it is one of at most 2 surviving instances in the entire novel. (2) The knuckle/bruise image is preserved in some form. FAIL if this is one of more than 2 instances of the formula remaining across the full manuscript."
+    },
+    {
+      "finding_id": "MED-14-voice-convergence-ch12",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2315",
+      "problem": "In the long couch scene (lines 2315-2497), Nora and Simone's dialogue becomes rhythmically and syntactically indistinguishable. Both speak in medium-length declarative sentences, both use the same confessional register, and both reach for the same self-analytical precision. Example: Nora (2329): 'Right, but it's also the kind of thing you can't argue with...' Simone (2351): 'You didn't break in anywhere. You bought a plane ticket...' If dialogue tags were removed, several exchanges could not be attributed by voice alone. The style bible requires idiolect separation: Simone's UX vocabulary and strategic question-asking should differentiate her from Nora's editorial vocabulary even in emotional scenes.",
+      "rewrite_direction": "Within the couch scene (lines 2315-2497), differentiate Nora and Simone's dialogue by leaning into each character's lexical signature. Simone should deploy UX vocabulary when comforting — she might frame Caleb's behavior as a 'design flaw' or describe the fight as a 'bad interaction pattern.' Her sentences should be shorter and more declarative when she's alone with Nora (per the style bible: 'Her sentences tend to be shorter and more declarative when she's alone'). Nora's lines can keep their editorial register. The differentiation doesn't need to be heavy-handed — 2-3 lines per character with distinctly Simone or Nora vocabulary would be sufficient to break the convergence.",
+      "acceptance_test": "Within the couch scene (lines 2315-2497): (1) At least 2 of Simone's lines contain UX, tech, or strategic vocabulary that Nora would not use. (2) Simone's average sentence length in this scene is shorter than Nora's. (3) A reader could assign at least 70% of untagged lines to the correct speaker based on voice alone. FAIL if Simone's dialogue contains zero UX/tech vocabulary or if both characters' average sentence lengths are within 10% of each other."
+    },
+    {
+      "finding_id": "MED-15-moral-safety-valve-ch17",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:3354",
+      "problem": "Line 3354: After Simone's resentment monologue ('You've never had to work for anything the way I've had to work for everything'), the narrator interjects: 'And it was partly true. And it was mostly a lie, because Nora worked hard, Nora was talented, Nora's career was not inherited but built. And it was completely beside the point, because no inventory of unfairness between two people makes it acceptable to build a counterfeit man out of your friend's vulnerabilities and use him to extract her money and her trust and a photograph of her body.' This is the narrator providing moral correction — telling the reader how to evaluate Simone's claims rather than letting the reader sit with the discomfort of partially justified resentment. The 'completely beside the point, because no inventory of unfairness...' clause reads as editorial commentary rather than character consciousness. The novel has otherwise been disciplined about avoiding moral safety valves.",
+      "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:3354, cut or revise the narrator's moral correction. Option A: Cut 'And it was completely beside the point, because no inventory of unfairness between two people makes it acceptable to build a counterfeit man...' entirely. Keep 'And it was partly true. And it was mostly a lie, because Nora worked hard, Nora was talented, Nora's career was not inherited but built.' This preserves the complexity without the editorial moralizing. Option B: Render the moral awareness through Simone's own consciousness — she could catch herself mid-rant and feel the justification crumble, without the narrator spelling out why it's wrong. Option C: Give the moral reckoning to Nora's silence — let Nora's non-response carry the weight instead of the narrator's commentary.",
+      "rewrite_direction_note": "The 'partly true, mostly a lie' construction is strong and can stay. The target is specifically the 'completely beside the point' clause, which shifts from psychological observation to moral instruction.",
+      "acceptance_test": "At line 3354: (1) The passage does not contain narrator commentary that tells the reader how to morally evaluate Simone's claims. (2) The complexity of Simone's resentment — partly justified, partly self-serving — is preserved. (3) No sentence in the passage reads as a thesis statement about the ethics of the situation. FAIL if the passage contains a clause equivalent to 'no inventory of unfairness makes it acceptable to...' or any construction where the narrator explicitly judges the morality of Simone's actions."
+    }
+  ]
+}

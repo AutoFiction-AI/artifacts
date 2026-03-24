@@ -1,0 +1,87 @@
+{
+  "chapter_id": "chapter_01",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_01_F001",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:91; snapshots/cycle_01/chapters/chapter_01.md:97; snapshots/cycle_01/chapters/chapter_01.md:101; snapshots/cycle_01/chapters/chapter_01.md:105; snapshots/cycle_01/chapters/chapter_01.md:131; snapshots/cycle_01/chapters/chapter_01.md:139",
+      "problem": "The central negotiation repeats the same protocol-vs-donor argument cycle before adding new leverage, which flattens escalation in the chapter's core scene.",
+      "rewrite_direction": "Compress and re-sequence the conflict loop between snapshots/cycle_01/chapters/chapter_01.md:91 and snapshots/cycle_01/chapters/chapter_01.md:105, then between snapshots/cycle_01/chapters/chapter_01.md:129 and snapshots/cycle_01/chapters/chapter_01.md:141, so each exchange adds a new constraint, concession, or threat. Keep one early protocol statement, then move directly to notebook-access terms and witness-risk consequences.",
+      "acceptance_test": "PASS if the revised spans anchored at snapshots/cycle_01/chapters/chapter_01.md:91, snapshots/cycle_01/chapters/chapter_01.md:105, snapshots/cycle_01/chapters/chapter_01.md:129, and snapshots/cycle_01/chapters/chapter_01.md:141 contain no back-to-back exchanges that restate protocol/donor framing without new information, and the second exchange introduces a materially new condition (access term, legal exposure, or medical limit). FAIL if the same argument is repeated in consecutive turns with only paraphrase changes."
+    },
+    {
+      "finding_id": "chapter_01_F002",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:291; snapshots/cycle_01/chapters/chapter_01.md:302; snapshots/cycle_01/chapters/chapter_01.md:304; snapshots/cycle_01/chapters/chapter_01.md:306",
+      "problem": "Sanitization drift: after a high-risk choice and acute craving episode, the chapter shifts into administrative summary (email + fact log) and abstract labeling, muting immediate emotional and ethical consequence.",
+      "rewrite_direction": "Rewrite the aftermath block between snapshots/cycle_01/chapters/chapter_01.md:291 and snapshots/cycle_01/chapters/chapter_01.md:307 to stage consequence in-scene before paperwork: add one embodied destabilization beat and one live interpersonal/organizational consequence beat, then fold documentation in as fallout rather than the main event.",
+      "acceptance_test": "PASS if the revised block anchored at snapshots/cycle_01/chapters/chapter_01.md:291 and snapshots/cycle_01/chapters/chapter_01.md:307 shows (1) at least one concrete bodily consequence after the call and (2) at least one immediate external consequence (reply, interruption, demand, or confrontation) before or during the email action. FAIL if the sequence remains primarily summary text plus abstract entry language."
+    },
+    {
+      "finding_id": "chapter_01_F003",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:163; snapshots/cycle_01/chapters/chapter_01.md:165",
+      "problem": "Timidity/moral safety valve: the narration pre-judges Marisol's risky decision with 'should have' hindsight framing, softening the discomfort of the choice right at the pivot.",
+      "rewrite_direction": "Rework the decision beat between snapshots/cycle_01/chapters/chapter_01.md:163 and snapshots/cycle_01/chapters/chapter_01.md:166 so conflict is conveyed through immediate perception/action rather than explicit hindsight instruction.",
+      "acceptance_test": "PASS if the revised decision beat anchored at snapshots/cycle_01/chapters/chapter_01.md:163 and snapshots/cycle_01/chapters/chapter_01.md:166 removes explicit 'should have/shouldn't have' moral framing and keeps reader-facing tension in present action, sensation, or thought. FAIL if hindsight guidance remains the primary framing device."
+    },
+    {
+      "finding_id": "chapter_01_F004",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:131; snapshots/cycle_01/chapters/chapter_01.md:139; snapshots/cycle_01/chapters/chapter_01.md:155; snapshots/cycle_01/chapters/chapter_01.md:167; snapshots/cycle_01/chapters/chapter_01.md:171; snapshots/cycle_01/chapters/chapter_01.md:175",
+      "problem": "Nora's pressure-scene dialogue stays heavily legal and uncontracted across escalation, creating stilted register where some spoken slippage should surface even within professional control.",
+      "rewrite_direction": "Revise Nora's lines between snapshots/cycle_01/chapters/chapter_01.md:129 and snapshots/cycle_01/chapters/chapter_01.md:175 to keep institutional stakes but add stress leakage: contractions, clipped interruptions, and one moment where syntax breaks before she regains formal cadence.",
+      "acceptance_test": "PASS if, in the revised span anchored at snapshots/cycle_01/chapters/chapter_01.md:129 and snapshots/cycle_01/chapters/chapter_01.md:175, Nora uses contractions in at least two conflict lines and has at least one interrupted or self-corrected line under pressure while still naming the legal risk. FAIL if her escalation remains uniformly polished full-form legal speech."
+    },
+    {
+      "finding_id": "chapter_01_F005",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:95; snapshots/cycle_01/chapters/chapter_01.md:123; snapshots/cycle_01/chapters/chapter_01.md:137",
+      "problem": "Character-voice drift: Salvador's dialogue is rhetorically sharp but underuses the material studio lexicon specified for his idiolect, so his voice risks blending with generic high-drama provocation.",
+      "rewrite_direction": "In the block between snapshots/cycle_01/chapters/chapter_01.md:95 and snapshots/cycle_01/chapters/chapter_01.md:141, recast selected Salvador lines with painter-specific material language (surface, pigment, solvent, ground, varnish, canvas, hand-memory) while preserving his manipulative cadence.",
+      "acceptance_test": "PASS if the revised Salvador block anchored at snapshots/cycle_01/chapters/chapter_01.md:95 and snapshots/cycle_01/chapters/chapter_01.md:141 includes at least three lines with concrete studio/material vocabulary and one indirect fear admission tied to bodily decline. FAIL if his speech remains mostly abstract rhetoric without craft-specific lexical identity."
+    },
+    {
+      "finding_id": "chapter_01_F006",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:7; snapshots/cycle_01/chapters/chapter_01.md:9; snapshots/cycle_01/chapters/chapter_01.md:29; snapshots/cycle_01/chapters/chapter_01.md:87; snapshots/cycle_01/chapters/chapter_01.md:185",
+      "problem": "Recurring 'as if' comparison construction appears five times and becomes a line-level tic rather than a deliberate stylistic choice.",
+      "rewrite_direction": "Rewrite at least three of the 'as if' instances in snapshots/cycle_01/chapters/chapter_01.md:7, snapshots/cycle_01/chapters/chapter_01.md:9, snapshots/cycle_01/chapters/chapter_01.md:29, snapshots/cycle_01/chapters/chapter_01.md:87, and snapshots/cycle_01/chapters/chapter_01.md:185 into varied structures (direct sensory image, action beat, or free-indirect thought) to restore rhythmic variance.",
+      "acceptance_test": "PASS if the revised chapter contains no more than two 'as if' constructions total, and at least three of the cited lines (snapshots/cycle_01/chapters/chapter_01.md:7, snapshots/cycle_01/chapters/chapter_01.md:9, snapshots/cycle_01/chapters/chapter_01.md:29, snapshots/cycle_01/chapters/chapter_01.md:87, snapshots/cycle_01/chapters/chapter_01.md:185) are recast without that template. FAIL if three or more 'as if' formulas remain."
+    },
+    {
+      "finding_id": "chapter_01_F007",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:5; snapshots/cycle_01/chapters/chapter_01.md:147; snapshots/cycle_01/chapters/chapter_01.md:203; snapshots/cycle_01/chapters/chapter_01.md:279",
+      "problem": "The 'No X. No Y.' negative-fragment cadence recurs across narration and dialogue and starts to feel mechanical.",
+      "rewrite_direction": "Vary sentence architecture at snapshots/cycle_01/chapters/chapter_01.md:5, snapshots/cycle_01/chapters/chapter_01.md:147, snapshots/cycle_01/chapters/chapter_01.md:203, and snapshots/cycle_01/chapters/chapter_01.md:279 by converting at least two fragment pairs into full clauses with character-specific rhythm.",
+      "acceptance_test": "PASS if at least two of the cited sites (snapshots/cycle_01/chapters/chapter_01.md:5, snapshots/cycle_01/chapters/chapter_01.md:147, snapshots/cycle_01/chapters/chapter_01.md:203, snapshots/cycle_01/chapters/chapter_01.md:279) are rewritten without sequential 'No ...' fragment pairs and the chapter retains no more than two such pairs overall. FAIL if the same fragment template still appears in three or more places."
+    }
+  ],
+  "summary": "Chapter 01 lands core plot obligations and remains continuity-consistent, with strong sensory grounding and clear scene stakes. It still fails review due to one HIGH craft issue (sanitization drift in the immediate aftermath), plus MEDIUM issues in escalation structure, dialogue register/voice specificity, and recurring prose formulas that flatten line-level variation.",
+  "coverage_scene_ids": [
+    "museum_intake_contract_negotiation",
+    "gallery_three_private_access_bargain",
+    "loading_dock_craving_and_documentation_aftershock"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_18",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch18_craft_001_sanitized_origin_pivot",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_18",
+      "evidence": "`snapshots/cycle_02/chapters/chapter_18.md:141` moves from the residents 'checking each other's medications' to 'keeping what we could keep,' and `snapshots/cycle_02/chapters/chapter_18.md:145` reduces the criminal turn to 'The selling came later.' The scene renders the exculpatory trigger in detail but summarizes away the compromising pivot.",
+      "problem": "The chapter's central origin reveal sanitizes the ugliest part of the ring's history. It gives full causal dignity to Agnes catching the interaction, but it hand-waves the morally dirtier transition from self-protection into diversion and sale. In this book's aesthetic, that is not restraint; it is euphemistic retreat at the exact point the scene needs the stain on the page.",
+      "rewrite_direction": "Rework `snapshots/cycle_02/chapters/chapter_18.md:125`, `snapshots/cycle_02/chapters/chapter_18.md:141`, and `snapshots/cycle_02/chapters/chapter_18.md:145` so the scene includes one concrete bridge beat between quality control and selling: who first kept medication back, what immediate need or opportunity made that step thinkable, what specific drug/object crossed the line, and what cost or self-justification attached to that decision. Keep the ciprofloxacin/ropinirole origin, but do not let the criminal pivot survive only as summary language like 'the selling came later.'",
+      "acceptance_test": "Pass if the revised material around `snapshots/cycle_02/chapters/chapter_18.md:141`-`snapshots/cycle_02/chapters/chapter_18.md:145` shows an on-page causal bridge from checking to keeping/selling with a named actor, a concrete medication or transaction, and a morally unsoftened motive or cost. Fail if the chapter still jumps from safety monitoring to diversion through abstract summary."
+    },
+    {
+      "finding_id": "ch18_dialogue_001_harry_expository_voice_collapse",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_18",
+      "evidence": "At `snapshots/cycle_02/chapters/chapter_18.md:133`, Harry delivers a dense pharmacology explanation ('augmented dopaminergic effects,' 'severe hypotension') in Agnes's register, and `snapshots/cycle_02/chapters/chapter_18.md:145` lands the neat thesis line 'We were taking care of ourselves because no one else was going to.' The payoff scene stacks borrowed technical diction, mini-speech diagnosis, and thesis-speech instead of Harry's usual clipped leverage.",
+      "problem": "Harry's chapter-defining revelation sounds written-about rather than spoken-through. His idiolect in the style bible is short, controlled, financial, and emotionally indirect; here he starts sounding like Agnes giving a pharmacology briefing and a narrator delivering the novel's thesis. Because Carmen mostly listens, the scene's central dialogue register becomes polished exposition rather than pressured speech.",
+      "rewrite_direction": "Rewrite the revelation centered on `snapshots/cycle_02/chapters/chapter_18.md:129`, `snapshots/cycle_02/chapters/chapter_18.md:133`, and `snapshots/cycle_02/chapters/chapter_18.md:145` so Harry speaks like Harry: shorter declaratives, moderate contractions, logistical causality, silence where he would normally withhold. If the technical interaction needs to stay explicit, move the dense explanation into Carmen's interior gloss or quote it as Agnes's language instead of Harry's native speech. Break the monologue with interruption, omission, or resistance so the exchange sounds lived, not workshopped.",
+      "acceptance_test": "Pass if the revised exchange around `snapshots/cycle_02/chapters/chapter_18.md:129`-`snapshots/cycle_02/chapters/chapter_18.md:145` gives Harry mostly short declaratives in his own register, attributes any dense medical language to Agnes or Carmen's thought, and includes at least one pressure beat that interrupts the clean monologue. Fail if Harry still carries multiple sentence-long technical explanations or polished thesis lines uninterrupted."
+    },
+    {
+      "finding_id": "ch18_dialogue_002_marcus_example_line_leak",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_18",
+      "evidence": "`snapshots/cycle_02/chapters/chapter_18.md:223` gives Marcus the voicemail 'I'm back. I found another way. No more middlemen.' This is near-verbatim reproduction of a style-bible calibration line and lands in the chapter's closing hook.",
+      "problem": "A calibration-only example line has leaked into the draft. That is a direct voice-integrity failure, and here it is especially conspicuous because the voicemail is the chapter's final forward-facing pressure point.",
+      "rewrite_direction": "Replace the voicemail at `snapshots/cycle_02/chapters/chapter_18.md:223` with fresh Marcus language that preserves the story fact, but not the calibration phrasing. The new line should still communicate return, a new route, and the invitation to call, while sounding like Marcus's high-contraction, contemporary, slightly kinetic speech rather than copied prompt scaffolding.",
+      "acceptance_test": "Pass if the revised line at `snapshots/cycle_02/chapters/chapter_18.md:223` conveys Marcus's return and new route without using the exact or near-exact sequence 'I'm back,' 'found another way,' and 'no more middlemen' in that calibration shape. Fail if the existing phrasing or an obvious close variant remains."
+    },
+    {
+      "finding_id": "ch18_prose_001_over_signaled_ambiguity_close",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_18",
+      "evidence": "After the voicemail lands at `snapshots/cycle_02/chapters/chapter_18.md:223`, the chapter adds a literal symbolic fork at `snapshots/cycle_02/chapters/chapter_18.md:231` and then keeps certifying indecision through repeated narrated non-actions at `snapshots/cycle_02/chapters/chapter_18.md:233` and `snapshots/cycle_02/chapters/chapter_18.md:243` ('She didn't pick it up,' 'She didn't delete the voicemail').",
+      "problem": "The ending overstates its ambiguity instead of trusting it. The voicemail already creates the unresolved future; the literal left-versus-right road image and the repeated 'she didn't' refusals push the close toward generic cinematic symbolism, which the style bible explicitly warns against.",
+      "rewrite_direction": "Compress or reshape the close around `snapshots/cycle_02/chapters/chapter_18.md:223`, `snapshots/cycle_02/chapters/chapter_18.md:231`, and `snapshots/cycle_02/chapters/chapter_18.md:243`. Keep the must-land facts that Carmen goes home, Reggie is present, and Marcus remains unresolved, but let the ambiguity ride on one book-specific physical pressure or object trace instead of the literal junction metaphor plus multiple narrated refusals. If the apartment coda stays, it must add a fresh pressure beat rather than re-proving indecision.",
+      "acceptance_test": "Pass if the revised closing after `snapshots/cycle_02/chapters/chapter_18.md:223` reaches its final beat without relying on the literal road-split symbol and without more than one explicit narrated refusal sentence, while still leaving Marcus unresolved and Carmen at home with Reggie. Fail if the ending still explains its ambiguity through the junction image or repeated 'she didn't' summary beats."
+    }
+  ],
+  "summary": "FAIL across lenses. The chapter is continuity-clean and often well observed, but its decisive beats underperform: the ring's origin reveal sanitizes the turn into selling, Harry's voice drifts into Agnes-like exposition, Marcus's voicemail copies a calibration line, and the close over-signals ambiguity with generic symbolic machinery instead of a sharper book-specific final pressure."
+}

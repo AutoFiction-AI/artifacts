@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_03",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch03-f01-chronology-sequencing",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:33; snapshots/cycle_01/chapters/chapter_03.md:37; snapshots/cycle_01/chapters/chapter_03.md:181; snapshots/cycle_01/chapters/chapter_03.md:333",
+      "problem": "The chapter's day markers do not resolve into a stable sequence. The opening routine block implies the narration is already looking back on Day 3 from a later morning ('Arash went once, on Day 3, then didn't come again'; 'By the middle of Day 3...'), but the last section re-anchors the evening gathering as 'the evening of Day 3' and closes with Day 4 still in the future. That creates a continuity-level chronology contradiction instead of a deliberate time shift.",
+      "rewrite_direction": "Clarify the timeline at the source lines `snapshots/cycle_01/chapters/chapter_03.md:33`, `snapshots/cycle_01/chapters/chapter_03.md:37`, `snapshots/cycle_01/chapters/chapter_03.md:181`, and `snapshots/cycle_01/chapters/chapter_03.md:333`. Either make the opening routine material explicitly Day 4 and mark `snapshots/cycle_01/chapters/chapter_03.md:179` as a flashback to the previous evening, or keep the chapter on Day 3 and remove the future-looking Day 3 references from the opening block.",
+      "acceptance_test": "Pass if a first-time reader can track the chapter's day count without inference: the revised text around `snapshots/cycle_01/chapters/chapter_03.md:33` and `snapshots/cycle_01/chapters/chapter_03.md:37` names the present day unambiguously, and the section beginning at `snapshots/cycle_01/chapters/chapter_03.md:179` is clearly marked as either same-day continuation or explicit flashback. Fail if the chapter still leaves it unclear whether the ending occurs before or after the opening routine material."
+    },
+    {
+      "finding_id": "ch03-f02-setup-heavy-opening",
+      "source": "award",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:27; snapshots/cycle_01/chapters/chapter_03.md:41; snapshots/cycle_01/chapters/chapter_03.md:91",
+      "problem": "The first movement spends too much of its page space in capsule-summary mode, introducing residents and household dynamics one by one instead of letting a single routine scene accumulate pressure. Because the chapter is carrying so much dossier-style setup before the noon turn, it reads as infrastructure for later chapters more than as a fully charged unit in its own right.",
+      "rewrite_direction": "Reshape the routine block beginning at `snapshots/cycle_01/chapters/chapter_03.md:27`, `snapshots/cycle_01/chapters/chapter_03.md:41`, and `snapshots/cycle_01/chapters/chapter_03.md:91` so one communal task unfolds in real time and reveals the hierarchy through action, interruption, and consequence. Keep the observational breadth, but compress secondary character capsule paragraphs unless they are actively changing the live scene.",
+      "acceptance_test": "Pass if the revised opening between `snapshots/cycle_01/chapters/chapter_03.md:27` and `snapshots/cycle_01/chapters/chapter_03.md:121` contains at least one sustained routine sequence with an on-page leverage shift or friction beat, and no more than one consecutive paragraph is purely static resident-summary. Fail if the section still reads as a run of character capsules before the noon realization at `snapshots/cycle_01/chapters/chapter_03.md:123`."
+    },
+    {
+      "finding_id": "ch03-f03-formula-repetition",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:35; snapshots/cycle_01/chapters/chapter_03.md:41; snapshots/cycle_01/chapters/chapter_03.md:65; snapshots/cycle_01/chapters/chapter_03.md:249; snapshots/cycle_01/chapters/chapter_03.md:309; snapshots/cycle_01/chapters/chapter_03.md:27; snapshots/cycle_01/chapters/chapter_03.md:95; snapshots/cycle_01/chapters/chapter_03.md:261; snapshots/cycle_01/chapters/chapter_03.md:317",
+      "problem": "The prose leans too often on the same explanatory sentence frames, especially 'the kind...' and 'the way...' comparisons. Those templates pre-interpret the observation for the reader instead of letting the image or action land directly, and their repetition starts to feel like autopilot rather than style.",
+      "rewrite_direction": "Revise the repeated template lines at `snapshots/cycle_01/chapters/chapter_03.md:35`, `snapshots/cycle_01/chapters/chapter_03.md:41`, `snapshots/cycle_01/chapters/chapter_03.md:65`, `snapshots/cycle_01/chapters/chapter_03.md:249`, `snapshots/cycle_01/chapters/chapter_03.md:309`, `snapshots/cycle_01/chapters/chapter_03.md:27`, `snapshots/cycle_01/chapters/chapter_03.md:95`, `snapshots/cycle_01/chapters/chapter_03.md:261`, and `snapshots/cycle_01/chapters/chapter_03.md:317` by replacing several of the comparison scaffolds with direct sensory detail, sharper verbs, or unglossed action.",
+      "acceptance_test": "Pass if, in the revised cited passages, at most one 'the kind...' construction and at most two 'the way...' constructions remain, and at least three of the current examples are rewritten so the meaning arrives through image or behavior rather than explanatory comparison. Fail if the same comparison templates still dominate the cited spans on a reread."
+    },
+    {
+      "finding_id": "ch03-f04-leni-voice-drift",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:93; snapshots/cycle_01/chapters/chapter_03.md:125; snapshots/cycle_01/chapters/chapter_03.md:127; snapshots/cycle_01/chapters/chapter_03.md:173",
+      "problem": "The close third person occasionally drifts from Leni's sharp teenage observation into polished thesis statements and mature social summary. That weakens the style-bible requirement that this POV stay colloquial and local rather than turning Leni into the novel's essayistic mouthpiece.",
+      "rewrite_direction": "Recast the abstraction-heavy lines at `snapshots/cycle_01/chapters/chapter_03.md:93`, `snapshots/cycle_01/chapters/chapter_03.md:125`, `snapshots/cycle_01/chapters/chapter_03.md:127`, and `snapshots/cycle_01/chapters/chapter_03.md:173` so the judgment comes through what Leni actually sees, hears, or writes in her own sharper register. Keep the insight, but make it arrive through teen-scale phrasing and immediate concrete cues instead of omniscient-seeming maxims.",
+      "acceptance_test": "Pass if each revised cited passage is anchored to an immediate trigger visible to Leni on the page, and at least two of the current generalized maxims are replaced by phrasing that sounds like Leni rather than a disembodied narrator. Fail if the cited lines still read like free-floating thematic verdicts that could belong to any POV in the book."
+    }
+  ],
+  "summary": "FAIL overall. The chapter lands the required routine, play-group, comedy, radio-news, and journal beats, and the dialogue is the strongest lens: contractions mostly track the style bible, Olet/Bram separate cleanly by register, and the Peyam-Mava card argument sustains real comic life without explanatory drag. It still falls below pass level on award/craft/prose because the chapter chronology is internally muddled, the opening third is too setup-heavy in capsule-summary mode, and the prose repeats explanatory comparison formulas often enough to flatten Leni's voice."
+}

@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_02",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_02_craft_001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:253; snapshots/cycle_02/chapters/chapter_02.md:285",
+      "problem": "The chapter materially introduces Tavi's wetbench before the continuity sheet's canonical introduction in chapter_03. At line 253 the room already contains \"a portable wetbench,\" and line 285 treats \"the wetbench\" as an established fixture, creating object-state drift in a core recurring prop.",
+      "rewrite_direction": "Revise the room-description span at snapshots/cycle_02/chapters/chapter_02.md:253 and snapshots/cycle_02/chapters/chapter_02.md:285 so Tavi's room reads as an improvised one-off repair setup or portable kit rather than the canonical wetbench introduced later. Keep the illegal repair functional, but remove language that makes chapter_03's wetbench introduction impossible or redundant.",
+      "acceptance_test": "Reading the revised passage at snapshots/cycle_02/chapters/chapter_02.md:253 and snapshots/cycle_02/chapters/chapter_02.md:285, a reviewer can no longer conclude that Tavi's named wetbench is already present before chapter_03; the chapter still shows a viable illicit repair space, but chapter_03 can remain the first clear introduction of the wetbench as a recurring object."
+    },
+    {
+      "finding_id": "chapter_02_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:329; snapshots/cycle_02/chapters/chapter_02.md:337; snapshots/cycle_02/chapters/chapter_02.md:349; snapshots/cycle_02/chapters/chapter_02.md:363; snapshots/cycle_02/chapters/chapter_02.md:365",
+      "problem": "The bench-side bargaining runs for roughly eighteen consecutive paragraphs with no Mira interiority before line 365 finally lets us back into her head. In a chapter whose strength is close-third pressure, this stretch goes transcript-flat exactly where trust, money, and criminal exposure are being negotiated.",
+      "rewrite_direction": "Thread two or three brief interior beats into the negotiation stretch anchored at snapshots/cycle_02/chapters/chapter_02.md:329, snapshots/cycle_02/chapters/chapter_02.md:349, and snapshots/cycle_02/chapters/chapter_02.md:363: Mira's bodily awareness of the badge in the room, her calculation of what Tavi's price test means, or her reaction to Nidia shutting down. Keep the pace, but restore close-third presence before snapshots/cycle_02/chapters/chapter_02.md:365.",
+      "acceptance_test": "Before the scene reaches snapshots/cycle_02/chapters/chapter_02.md:365, at least two revised paragraphs in the stretch beginning at snapshots/cycle_02/chapters/chapter_02.md:329 and passing through snapshots/cycle_02/chapters/chapter_02.md:363 contain unmistakable Mira interiority (thought, sensation, memory, or self-assessment) that changes how the bargaining reads. If the scene still plays as pure external dialogue/action until line 365, this remains a fail."
+    },
+    {
+      "finding_id": "chapter_02_prose_002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:115; snapshots/cycle_02/chapters/chapter_02.md:133; snapshots/cycle_02/chapters/chapter_02.md:165; snapshots/cycle_02/chapters/chapter_02.md:201; snapshots/cycle_02/chapters/chapter_02.md:437; snapshots/cycle_02/chapters/chapter_02.md:485; snapshots/cycle_02/chapters/chapter_02.md:551; snapshots/cycle_02/chapters/chapter_02.md:555",
+      "problem": "Mira's emotional suppression keeps resolving through the same withholding formula: \"Mira almost...\" at lines 115, 165, and 551; \"Mira did not...\" at lines 133, 437, and 555; and the fallback reply \"I know.\" at lines 115/201 and 485. Used this often in one chapter, the stress pattern stops reading as live character behavior and starts reading like a preloaded tic.",
+      "rewrite_direction": "Rework the withholding beats at snapshots/cycle_02/chapters/chapter_02.md:115, snapshots/cycle_02/chapters/chapter_02.md:133, snapshots/cycle_02/chapters/chapter_02.md:165, snapshots/cycle_02/chapters/chapter_02.md:201, snapshots/cycle_02/chapters/chapter_02.md:437, snapshots/cycle_02/chapters/chapter_02.md:485, snapshots/cycle_02/chapters/chapter_02.md:551, and snapshots/cycle_02/chapters/chapter_02.md:555 so at least several of them land through differentiated physical action, sharper occupational language, or scene-specific deflection rather than another almost/not/I-know beat.",
+      "acceptance_test": "In the revised cited passages, no more than two beats use the exact withholding frame \"Mira almost...\" or \"Mira did not...,\" and only one standalone \"I know.\" remains as Mira's reply. The remaining moments of repression must each read differently on the page rather than repeating the same syntax."
+    }
+  ],
+  "summary": "The chapter lands its spine: Nidia's claim makes the debt machine concrete, Tavi arrives funny/competent/suspicious, and Mira's illegal crossing feels consequential rather than heroic. Dialogue stays distinct and properly contracted. The fail is on execution discipline: a canonical wetbench continuity break, a long exterior-only bargaining stretch that loosens the close-third hold, and repeated Mira-withholding formulas that start to feel mechanical."
+}

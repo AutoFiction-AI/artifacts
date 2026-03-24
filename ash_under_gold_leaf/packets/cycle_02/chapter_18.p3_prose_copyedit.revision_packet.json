@@ -1,0 +1,82 @@
+{
+  "acceptance_targets": [
+    "[C18-F005] PASS if the word 'math' appears in no more than two dialogue lines across the chapter and each replacement line still conveys financial pressure through specific scene detail. FAIL if repeated math slogans remain the dominant economic diction.",
+    "[C18-F006] PASS if each five-paragraph segment inside snapshots/cycle_02/chapters/chapter_18.md:164-190 contains at least one explicit interior beat from Marisol. FAIL if the passage remains purely external until the commentary at snapshots/cycle_02/chapters/chapter_18.md:192."
+  ],
+  "chapter_id": "chapter_18",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if the word 'math' appears in no more than two dialogue lines across the chapter and each replacement line still conveys financial pressure through specific scene detail. FAIL if repeated math slogans remain the dominant economic diction.",
+      "chapter_id": "chapter_18",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_18.md:10; snapshots/cycle_02/chapters/chapter_18.md:12; snapshots/cycle_02/chapters/chapter_18.md:14; snapshots/cycle_02/chapters/chapter_18.md:166; snapshots/cycle_02/chapters/chapter_18.md:168; snapshots/cycle_02/chapters/chapter_18.md:236",
+      "finding_id": "C18-F005",
+      "problem": "Mechanical lexical repetition: math/rent aphorism language repeats until it reads like style-token reuse instead of organic motif development, flattening line-level freshness.",
+      "rewrite_direction": "Keep the motif concentrated in the setup exchange at snapshots/cycle_02/chapters/chapter_18.md:10-14 and one later callback; rewrite the other math-tag lines at snapshots/cycle_02/chapters/chapter_18.md:166, snapshots/cycle_02/chapters/chapter_18.md:168, and snapshots/cycle_02/chapters/chapter_18.md:236 with different concrete financial diction tied to the immediate moment.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if each five-paragraph segment inside snapshots/cycle_02/chapters/chapter_18.md:164-190 contains at least one explicit interior beat from Marisol. FAIL if the passage remains purely external until the commentary at snapshots/cycle_02/chapters/chapter_18.md:192.",
+      "chapter_id": "chapter_18",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_18.md:164; snapshots/cycle_02/chapters/chapter_18.md:166; snapshots/cycle_02/chapters/chapter_18.md:168; snapshots/cycle_02/chapters/chapter_18.md:170; snapshots/cycle_02/chapters/chapter_18.md:172; snapshots/cycle_02/chapters/chapter_18.md:174; snapshots/cycle_02/chapters/chapter_18.md:176; snapshots/cycle_02/chapters/chapter_18.md:178; snapshots/cycle_02/chapters/chapter_18.md:180; snapshots/cycle_02/chapters/chapter_18.md:182; snapshots/cycle_02/chapters/chapter_18.md:184; snapshots/cycle_02/chapters/chapter_18.md:186; snapshots/cycle_02/chapters/chapter_18.md:188; snapshots/cycle_02/chapters/chapter_18.md:190",
+      "finding_id": "C18-F006",
+      "problem": "A 10+ paragraph stretch runs on externally observable action/dialogue without explicit interior thought, sensation, memory, or self-assessment from the focalizer. At a hinge between public trial and private negotiation, that exteriority makes the chapter temporarily read like stage blocking.",
+      "rewrite_direction": "Add interior beats within snapshots/cycle_02/chapters/chapter_18.md:164-190 (for example: bodily aftershock, intrusive thought, or self-assessment) so the focal distance remains close-third before Ada's evaluative line lands.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "3107b6449b8821e988ee0660b0ac385d4d2087fdfa87843d43023f03629045be",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on prose and copyedit finish: diction precision, rhythm control, sentence-level clarity, grammar, line-level polish without flattening style, and explicit aesthetic-risk audit (sanitization is the primary risk \u2014 do not soften or euphemize; push toward creative risk and specificity).",
+    "key": "p3_prose_copyedit",
+    "label": "prose/copyedit fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "When choosing between reputationally safe abstraction and specific discomfort, choose specificity. Render addiction, sexuality, deceit, class shame, and grief at lived scale. In edge cases, preserve character truth and causal accountability over reader comfort or institutional decorum.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene demands bodily, moral, or economic specificity, euphemistic phrasing is treated as a failed draft and must be rewritten with concrete stakes and observable consequence.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the spoken default; full forms appear only for emphasis, ritual language, or character-specific formal posture",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate scene density and pressure modes: pair high-conflict chapters with quiet domestic or documentary chapters, vary dialogue-to-interiority ratios, and prevent identical chapter skeletons in consecutive sequence.",
+      "diction": "contemporary literary diction with class-aware, borough-specific concreteness; avoid prestige-neutral workshop language",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third centered on Marisol, with rare brief distance expansions for institutional scenes",
+      "narrative_tense": "past tense",
+      "rhythm_target": "alternating tensile compression and reflective extension; line-level cadence should carry emotional pressure, not just information",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

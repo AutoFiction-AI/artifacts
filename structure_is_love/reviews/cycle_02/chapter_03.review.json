@@ -1,0 +1,69 @@
+{
+  "chapter_id": "chapter_03",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch03-craft-001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:37; snapshots/cycle_02/chapters/chapter_03.md:255; snapshots/cycle_02/chapters/chapter_03.md:341",
+      "problem": "Sanitization drift in high-pressure beats: anger/profanity is narrated as euphemism (e.g., 'cursed once', 'swearing under his breath') instead of rendered as concrete in-character speech, which blunts emotional and social consequence.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_03.md:255 and snapshots/cycle_02/chapters/chapter_03.md:341, replace narration-about-swearing with direct quoted language that names the immediate trigger (tape failure, shift panic). At snapshots/cycle_02/chapters/chapter_03.md:37, keep memory tone but swap generic 'cursed once' for a specific utterance consistent with Maya's low-profanity profile.",
+      "acceptance_test": "PASS if snapshots/cycle_02/chapters/chapter_03.md:255 and snapshots/cycle_02/chapters/chapter_03.md:341 each contain concrete spoken irritation (not summary verbs like 'swore/cursed'), with at least one explicit lexical choice tied to the stressor; FAIL if these beats still euphemize anger as off-screen or under-breath abstraction."
+    },
+    {
+      "finding_id": "ch03-dialogue-001",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:209; snapshots/cycle_02/chapters/chapter_03.md:211; snapshots/cycle_02/chapters/chapter_03.md:213; snapshots/cycle_02/chapters/chapter_03.md:215; snapshots/cycle_02/chapters/chapter_03.md:221",
+      "problem": "The confrontation briefly falls into transcript cadence ('Take the bag.' / 'No.' repeated), creating low-information turn-taking and weakening leverage shifts at the scene's highest pressure point.",
+      "rewrite_direction": "Rework the confrontation between snapshots/cycle_02/chapters/chapter_03.md:209 and snapshots/cycle_02/chapters/chapter_03.md:221 so Anika's second response adds new leverage (threat, condition, or factual exposure) instead of another one-word refusal, and Ravi's reply shifts from command repetition to a concrete consequence or concession.",
+      "acceptance_test": "PASS if in the span bounded by snapshots/cycle_02/chapters/chapter_03.md:209 and snapshots/cycle_02/chapters/chapter_03.md:221 there is no repeated single-word refusal pattern and each speaker introduces new pressure/information in at least one subsequent line; FAIL if the exchange remains command-no-command-no with no leverage change."
+    },
+    {
+      "finding_id": "ch03-prose-001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:15; snapshots/cycle_02/chapters/chapter_03.md:97; snapshots/cycle_02/chapters/chapter_03.md:105; snapshots/cycle_02/chapters/chapter_03.md:301; snapshots/cycle_02/chapters/chapter_03.md:433",
+      "problem": "A recurring smell-led paragraph construction appears more than twice and becomes formulaic, flattening otherwise strong sensory prose.",
+      "rewrite_direction": "Retain the two strongest olfactory anchors (recommended: snapshots/cycle_02/chapters/chapter_03.md:15 and snapshots/cycle_02/chapters/chapter_03.md:105), then revise snapshots/cycle_02/chapters/chapter_03.md:97, snapshots/cycle_02/chapters/chapter_03.md:301, and snapshots/cycle_02/chapters/chapter_03.md:433 to lead with non-olfactory cues (touch, sound, or spatial pressure) before any scent detail.",
+      "acceptance_test": "PASS if at least two of the targeted passages at snapshots/cycle_02/chapters/chapter_03.md:97, snapshots/cycle_02/chapters/chapter_03.md:301, and snapshots/cycle_02/chapters/chapter_03.md:433 no longer open with smell/smelled constructions while preserving scene information; FAIL if all targeted passages remain smell-first templates."
+    },
+    {
+      "finding_id": "ch03-prose-002",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:59; snapshots/cycle_02/chapters/chapter_03.md:61; snapshots/cycle_02/chapters/chapter_03.md:267; snapshots/cycle_02/chapters/chapter_03.md:335; snapshots/cycle_02/chapters/chapter_03.md:443",
+      "problem": "Anika's stress behavior over-relies on counting/logistics substitution across multiple beats, reading as mechanical reuse of style-bible stress tokens rather than evolving interior variation.",
+      "rewrite_direction": "Keep counting at one early and one late hinge (snapshots/cycle_02/chapters/chapter_03.md:59 and snapshots/cycle_02/chapters/chapter_03.md:443), but revise snapshots/cycle_02/chapters/chapter_03.md:267 and snapshots/cycle_02/chapters/chapter_03.md:335 to alternate stress expressions (somatic detail, memory interruption, or deflective misread) in Anika's established voice.",
+      "acceptance_test": "PASS if the revised beats at snapshots/cycle_02/chapters/chapter_03.md:267 and snapshots/cycle_02/chapters/chapter_03.md:335 no longer use counting/logistics as the primary coping move and still remain recognizably Anika POV; FAIL if both beats still resolve via numeric counting or procedural substitution."
+    },
+    {
+      "finding_id": "ch03-booker-001",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:261; snapshots/cycle_02/chapters/chapter_03.md:419; snapshots/cycle_02/chapters/chapter_03.md:448",
+      "problem": "The chapter's key causal action (Anika stealing the watch) does not produce an explicit on-page relational consequence before close; the ending time-lapse defuses immediate narrative pressure.",
+      "rewrite_direction": "Between snapshots/cycle_02/chapters/chapter_03.md:419 and snapshots/cycle_02/chapters/chapter_03.md:448, add a concrete consequence beat tied to Ravi noticing the watch (challenge, conditional warning, or tactical deferral with stakes) and end on that changed condition rather than the summary tag at snapshots/cycle_02/chapters/chapter_03.md:448.",
+      "acceptance_test": "PASS if by the end of the span between snapshots/cycle_02/chapters/chapter_03.md:419 and snapshots/cycle_02/chapters/chapter_03.md:448 the theft has a readable consequence (new rule, altered trust signal, or explicit suspicion) stated or enacted on-page; FAIL if the chapter still exits via generalized week-summary without new causal condition."
+    }
+  ],
+  "summary": "Chapter 3 lands its core event beats and preserves continuity, but it fails review due to a HIGH sanitization problem in pressure language, a dialogue leverage dip, and repeated prose constructions that become formulaic; the ending also under-converts the theft into immediate consequence.",
+  "coverage_scene_ids": [
+    "kitchen_sorting_conflict",
+    "closet_sorting_escalation",
+    "pickup_and_theft",
+    "night_notebook_protocol",
+    "predawn_training_reset"
+  ]
+}

@@ -1,0 +1,315 @@
+# Chapter 7
+
+Silt smelled like tallow and horse piss, which made it the largest settlement Maren had entered in six days.
+
+The market town sat half a mile off the main road, down a packed-earth track rutted by cart wheels and scored with scorch lines from some hero who'd apparently discharged a fire-class ability while doing their shopping. The buildings were wood and daub, taller than Fenhold's cottages — two stories in places, leaning toward each other across narrow lanes like old men sharing a fence post. Late-summer sun pressed the smells flat against the ground: a tanner's vat somewhere behind the square, meat turning on a spit outside an inn whose sign had been charred off by quest-light residue, chickens making problems for a boy who clearly had opinions about better uses for his afternoon.
+
+*Three hero-class signatures within four hundred yards,* Aldric said. *None currently targeting. The bounty overlay remains standard visibility — they would need to search for it specifically.*
+
+*Two at the inn, one at the far stall,* Vess added. *The one at the stall is drunk. Afternoon drunk. Not a threat unless you fall on her.*
+
+"Fine," Maren said, to no one visible.
+
+Derry winced. "You've got to stop doing that."
+
+"Doing what?"
+
+"Answering them out loud. In public." He wiped sweat from his forehead with the heel of his hand. His shirt was already dark under the arms, and there was a mended tear at the shoulder — Lenna's work, tight small stitches — that he kept brushing at with his fingers, a gesture Maren had seen a hundred times on the road and never once in Fenhold. "People notice, Maren."
+
+"Right. Yeah." Maren kept his voice low, moving between market stalls where a woman sold bruised apples and another sold linen that had clearly been curtains in a previous life.
+
+The sin-eater. That was why they were here — a real one, the kind who actually cleared contamination instead of performing clearance while the contamination sat untouched in the soil underneath. If anyone could explain what the fragments were doing, what the thing Aldric wouldn't name was becoming, it was someone who'd spent a lifetime doing what Maren had spent a lifetime pretending to do.
+
+He asked the apple seller. "The sin-eater. The woman who works the contamination routes. Where do I find her?"
+
+The woman gave him a look he recognized — mild distaste, mild discomfort, the expression people wore when reminded that the toilet needed cleaning. "Thessa? She's out at the Vonn farmstead. Clearing contamination, if she hasn't finished already. Back past the stream, left at the dead oak." She picked up a bruised apple and turned it in her hands, looking for a side worth showing. "She works fast. You wanting a clearing done?"
+
+"Something like that."
+
+*The Vonn farmstead registered moderate contamination density this morning,* Aldric said. *If she has been working since dawn —*
+
+*It'll be handled,* Vess said. *Obviously.*
+
+*I was providing context.*
+
+*You were providing the same thing with more words around it.*
+
+They found the dead oak — a massive trunk split by old lightning, blackened on one side, the other still pushing out leaves as if half a tree was enough. Past it, a track led down to flatlands where a farmstead sat behind a low stone wall, barley fields half-harvested beyond, the stubble golden in afternoon light. Quest-light residue pooled in the low weeds along the track — pale, faintly warm, sitting in the ditches the way it always did near settlements. Maren had walked past pools like these his whole life. After eight days of Aldric reading the data overlaid on every surface, they didn't look the same. They had depth. They had information he couldn't read. They had consequences he'd spent eleven years ignoring.
+
+"Maybe we should talk about what to tell her," Derry said. He'd been reaching for the back of his neck with his farmer's hand, a gesture that left the skin there red and rubbed. "How much does she need to know? Because if she finds out about the whole — the eleven years —"
+
+"She's a sin-eater, Derry. A real one. She's going to see."
+
+"Right, but can't we just — maybe start with the fragments? Without the rest of it? Just say there was an accident and —"
+
+"Yeah. I'll handle it."
+
+He wouldn't handle it. He already knew that. The same instinct that could read Derry's discomfort, the apple seller's distaste, every family who'd ever hired him — that instinct told him that a woman who'd spent thirty years doing the real work would strip any shaped truth he offered the way she stripped contamination from soil. She'd strip it because stripping was what she did.
+
+Derry was quiet after that, which was worse than his talking. When Derry went quiet, it meant he was thinking about Pell, and when he thought about Pell, the fact that he'd left her sat in his face like something visible — the jaw set, the eyes down, the fingers working at the mended shoulder of his shirt.
+
+Someone was working in the nearest field.
+
+Maren saw her from fifty yards. Tall, angular, grey hair cut short enough that it didn't move in the breeze. She was kneeling in the dirt between stubble rows, her hands pressed flat against the ground, and even from this distance the staining showed — dark, mottled, the color of old tea or dried blood, worked so deep into the skin it had become permanent. She'd been doing this long enough that the work had marked her.
+
+He looked at his own hands. Clean.
+
+*She is performing a second-stage residual extraction,* Aldric said, and his voice had shifted — lower, more careful, the register he used for things that earned his respect. *The contamination density around this farmstead has dropped significantly since we arrived. She is efficient.*
+
+*She's good,* Vess said. Which was the closest thing to a compliment Vess had offered anyone.
+
+Thessa stood without brushing the dirt from her knees. She looked at Maren and Derry at the edge of her field, and her expression went through something — not recognition of their faces but of their type. Then her eyes narrowed, her head tilting slightly, like someone catching a frequency that shouldn't be there.
+
+"Stay where you are," she said.
+
+She walked toward them with the stride of someone who didn't waste steps — each foot landing flat, deliberate, the gait of decades on contaminated terrain. Up close, the staining went past her wrists in mottled patterns that looked burned in rather than absorbed. Her face was weathered deep, lines cut around her eyes and mouth, and the tiredness in it didn't look temporary. It had gone into the bones, permanent as the staining on her hands.
+
+She stopped six feet from Maren. Her nostrils flared once.
+
+"What are you carrying?"
+
+Maren had rehearsed something on the walk over — a version of the truth carefully shaped to hide the worst parts. Something about an unusual consumption, fragments he couldn't explain. A story with the bones of honesty and the flesh of misdirection, the kind he'd been constructing for eleven years.
+
+Thessa held up one stained hand. "Don't bother."
+
+She stepped closer. Her eyes moved over him — not his face but his chest, his hands, the air around him — reading something he couldn't perceive. The hum was louder here than it had been on the road. Or maybe a real sin-eater's proximity made things vibrate differently.
+
+"Two fragments," she said. "Paladin-class and shadow-class. Opposed." Her voice was clipped, clinical — a surgeon cataloguing damage. "Lodged. Not dissolving." She looked at his hands again. Clean hands. "And something underneath them. Something that doesn't —" She stopped. Her expression changed for the first time: not fear, but the controlled alertness of a professional encountering a problem she'd only ever heard described. "That. Come with me."
+
+She walked past them toward the road without checking whether they followed. Maren followed because the alternative was standing in a barley field knowing that a woman who'd spent three seconds assessing him had already learned more about his condition than he'd managed in eight days of living with it.
+
+Derry followed Maren. His fingers found the mended tear at his shoulder again.
+
+---
+
+Thessa's house sat where Silt thinned into scrub and the track met open ground. One room below, a loft above, and it smelled like the work — that ozone-sweet contamination smell, but older, layered into the walls and the wooden floor and the single table where ritual tools sat in a careful row. Three clay bowls, each stained darker than the last. A grinding stone with a worn channel down its center. Glass bottles holding liquids Maren couldn't identify — amber, grey-green, one the color of a deep bruise. The floor in front of the cold hearth was worn smooth, the wood lighter than the rest, a rectangle of use where someone had knelt thousands of times.
+
+"Sit." She pointed at a bench against the wall. Maren sat. Derry stayed by the door, gripping the frame with both hands, his breathing shallow and quick.
+
+Thessa pulled a stool to the center of the room and sat facing Maren. Her stained hands rested on her knees. Afternoon light through the single window caught the grey in her hair.
+
+"Show me your hands."
+
+Maren held them out, palms up. Clean. Unmarked. The skin was rough from travel and from years of carrying equipment, but none of the mottled staining that covered Thessa's to the wrists. Nothing that showed the work had ever touched him.
+
+She held one of her own hands beside his, palm to palm without contact. The contrast didn't need explanation — hers dark with thirty years of absorbed contamination, his showing nothing but the ordinary calluses of a man who'd carried a prop and walked a lot. She dropped his hand.
+
+"Where's your equipment?"
+
+"I've got a bowl. Ceramic. In my pack."
+
+"One bowl."
+
+"Yeah."
+
+She glanced at her table — three bowls, darkest to lightest, each in its place. "Active contamination, residual work, structural assessment. Different grades need different vessels." She looked back at him. "But you wouldn't know that."
+
+Maren said nothing. There was nothing to say that wouldn't make it worse.
+
+"How long have you been working?"
+
+"Eleven years."
+
+"Where?"
+
+"Fenhold, and the villages around it. Dunmore, Cress, the settlements along the —"
+
+"I know the area." Her voice flattened. "I've worked the eastern routes for thirty years. Including the overflow from certified sin-eaters who supposedly handled their zones." She studied him. "Tell me your consumption sequence."
+
+This was the question he could almost answer. He'd performed the fake version so many times the order was muscle memory — the bowl placement, the kneeling posture, the words spoken in the right cadence. "You set the bowl at the body's head. Kneel at the left side. The opening invocation, standard form, three repetitions. Then the hand positions, flat against the contamination line. The consumption pass —"
+
+"Which hand?"
+
+"What?"
+
+"Which hand opens the containment seal before the consumption pass?"
+
+He didn't know. He'd never known. The hand positions in his fake ritual were theatrical — they looked right because he'd studied what sin-eaters looked like from the outside, not what they did. "The — the right."
+
+"Left." Thessa's voice closed like a door. "The left hand opens. The right holds the seal. Every sin-eater learns this in the first week because getting it backward channels contamination through the dominant hand and into the body instead of the bowl." She looked at his hands. "You've been channeling backward for eleven years."
+
+"I haven't been channeling at all."
+
+The words came out before he could stop them — the specific, self-destructive honesty that surfaced when his performance infrastructure collapsed. Derry made a sound by the door, small and strangled.
+
+Thessa went very still.
+
+"Show me a containment pass," she said.
+
+Nothing. His hands stayed on his knees.
+
+"A residual clear."
+
+Nothing.
+
+"A density assessment."
+
+Each term fell into the silence between them, and each silence confirmed what Thessa already knew.
+
+"Name the three contamination grades."
+
+"Active, residual, and —" He knew this one. He'd heard the words. The third sat just out of reach, a shape he could feel but not name.
+
+"Structural." Thessa set the word down between them like a stone. "Active, residual, structural. Foundational classification. Governs every assessment and every consumption."
+
+She waited. The silence stretched. Then:
+
+"What does structural contamination smell like?"
+
+Maren knew the general contamination smell — everyone who'd lived near a dungeon mouth knew it. That ozone-sweet thickness with the undertone of decay. "It's — sweet, with a kind of —"
+
+"That's active contamination. The smell you know." Thessa's voice had the cadence of someone reciting knowledge she'd taught before, to students who'd actually been worth teaching. "Residual smells drier, like burnt grain. Structural has no smell at all. It's been in the ground so long it becomes the ground. You can only identify it through the ritual assessment." She paused. "But you don't do ritual assessments."
+
+She let that sit for a moment. Maren had nothing to offer into the silence.
+
+"How do you assess whether a contamination site is safe to consume?"
+
+Nothing. No guess, no bluff. Not even a fragment of overheard language to shape into an answer.
+
+"You check the layering. Old contamination stratifies — recent deposits sit on top, older material compresses underneath. If the deepest layer has gone structural, you can't consume from the top down. You cut in from the boundary edges, work the perimeter first, then core the center." She recited this with the fluency of ten thousand repetitions, each word worn smooth. "Consuming from the top on a stratified site pulls the structural layer up through the active layer and into the sin-eater. That's how we die. Not from heroics. Not from quests. From taking a contamination in the wrong order because we were rushing or tired or didn't check the layering first."
+
+She looked at his clean hands again, as if they were evidence she kept having to re-examine, each time finding the same absence.
+
+Maren looked at the floor. At the rectangle worn into the wood by genuine practice. His own knees had worn nothing anywhere, left no mark on anything. Eleven years of kneeling beside bodies and the only evidence was clean hands and a ceramic bowl that had never held anything real.
+
+"You're not a sin-eater," Thessa said. No question. The sky is blue. Water runs downhill.
+
+"No."
+
+"You never were."
+
+"No."
+
+*She is correct,* Aldric said. Nothing else. No qualification, no irony, no addendum.
+
+"A hundred rituals," Thessa said. "More?"
+
+"More."
+
+"And zero consumptions. Every family that paid you, every farmer who died in his field and hired you to clear the ground before the contamination spoiled the crop — you took the money, performed the gestures, and left the contamination exactly where it was."
+
+"Yes."
+
+She stood. She walked to the table and picked up the darkest bowl — the one that looked like it had absorbed thirty years of practice — and held it in both hands. She didn't look at him.
+
+"Do you know what residual contamination does to soil?"
+
+"Thessa —"
+
+"After one season, yield drops by a third. After two seasons, the barley comes up thin and the wheat gets a grey rot that no amount of turning fixes. After five years, the soil holds contamination the way wood holds smoke. You can't plant. You can't graze. The land is done." She set the bowl down with the precision she brought to everything. "It doesn't clear on its own. It accumulates. It concentrates. It sinks into the soil and the water and the food and the people."
+
+Maren's fingers had found the fabric of his trousers and were digging in, knuckles white against the rough-planed bench. A splinter caught at the seam above his knee. He counted the bottles on the table. Six. Amber, grey-green, bruise-purple, three others whose colors he couldn't name. He counted them again.
+
+"You worked Dunmore," Thessa said.
+
+"Yes."
+
+"I cleared Dunmore two years ago. Supposed to be routine maintenance. Instead I found contamination so old it had gone structural — into the water table, into the foundations of the houses. People sleeping in it every night." She paused — not for effect, but with the control of someone keeping fury subordinate to precision. "There's a girl in Dunmore. Maret. Nine years old. She can't hold a cup because her hands shake so badly her mother has to feed her."
+
+Six bottles. Splinter in the bench. The worn rectangle on the floor. He was listing things because listing was what his mind did when the thing in front of him was too large to hold.
+
+"Her contamination exposure started before she was born," Thessa continued. "Her mother carried her in contaminated soil. The soil was contaminated because the certified sin-eater never cleared it."
+
+*She's right,* Vess said. Flatly, without comfort. *About all of it.*
+
+Derry had slid down the doorframe to the floor. Not dramatically — his legs just stopped holding, and he sat on the threshold with his boots on the dirt outside and his back against the wood and his face the color of old paste. He'd been in Dunmore. He'd watched those rituals. He'd fed Maren the System details that made the performance look real, and afterward they'd split the coins and gone to the inn.
+
+"You worked Cress," Thessa said.
+
+"Twice. Maybe three times."
+
+"The Holloway farm outside Cress lost six acres to contamination blight three years ago. The farmer, Eddin Holloway, had worked that land for twenty years. He moved his family to Harrow after the blight. His youngest boy has the tremors."
+
+Six acres. Twenty years. A boy whose hands won't stay still.
+
+"Fenhold," Thessa said.
+
+Maren's jaw set, teeth together, the bench's grain pressing into the backs of his thighs.
+
+"A farmer died in Fenhold recently. Contamination exposure. I hadn't reached the eastern route yet this season — too much work, not enough of me, there's never enough of me." She sat back on her stool. "How long has the contamination been building in Fenhold?"
+
+"Eleven years."
+
+"Eleven harvests. Eleven years of families living in residue that should have been consumed after every quest event in the area." She looked at him. "That farmer. Did you do his ritual?"
+
+"Yes."
+
+"And when you performed your fake ritual over the body of a man who may have died because you never did your job — did anything happen?"
+
+"Something answered." His voice had gone wrong — stripped, the voice of someone whose entire performance infrastructure had been dismantled, leaving only the raw thing underneath. "A fragment. A paladin. That's why I'm here. That's why I came to find you."
+
+Thessa studied him the way she'd studied the contamination in the field — a problem to be assessed and, if possible, resolved.
+
+"You came to me," she said, "because in eleven years of fraud, you finally ate something real, and now you're scared."
+
+"Yes."
+
+---
+
+The silence had weight. Maren sat in it without reaching for deflection or humor or any of the machinery that had carried him through a decade of professional lying. None of it worked on Thessa. She wasn't an audience to be charmed. She was a professional measuring damage.
+
+"Help me," Maren said. "Teach me. If I can learn to actually consume — do the real work — maybe I can stabilize the fragments, or contain the —"
+
+"No."
+
+"The thing underneath them, the unclassified — you said you've heard of it. If you know what it is, how to —"
+
+"I said no." Thessa folded her arms — not defensively, but the way someone holds themselves still when their hands want to do something they shouldn't. "You want me to train a man who faked my profession for eleven years. Whose fraud left contamination in villages where children can't hold a cup." She looked down at him on the bench. "Even if I wanted to help you — and I don't — you're too dangerous. The thing underneath your fragments is growing. I can feel it from here, sitting across the room from you. If I open you up with a genuine consumption technique and that thing expands, it could contaminate everything within a mile of this house. I'm not risking my territory for a man who spent a decade poisoning his."
+
+"I'm not asking you to consume me. Just the basics — the real sequence, the hand positions, the —"
+
+"The hand positions." Her voice was flat as a blade laid on a table. "You want me to start from the hand positions. With a man carrying two opposed-classification fragments and an unclassified entity that the System has already placed a correction bounty on." She shook her head. "I've read two accounts of what you're carrying. One from my teacher, who heard it from hers. One from a text so old the binding was dust. Neither described the mechanism — only the result."
+
+"Then tell me the result. Give me something I can use."
+
+"I'm giving you the only thing I have." She walked to the door. "You don't have time for hand positions."
+
+"What does that mean?"
+
+She opened the door. Late-afternoon light spilled across the threshold, catching the dust in the air. "Unclassified entities don't last. The System treats them as errors — not threats, errors. Things that shouldn't exist within the classification structure." She gripped the doorframe, and the staining on her hands stood dark against the pale wood. "The last recorded instance was roughly sixty years ago. A woman in the northern territories. Opposed fragments, accidental consumption, same as you. The System reclassified the area around her as a high-priority threat zone. Contamination spiked. Threat creatures spawned from the nearest dungeon mouths. Heroes converged on the zone."
+
+*Go on,* Aldric said, very quietly.
+
+"Nothing remained of the host." Thessa's voice was clinical, the anger from the examination replaced by something colder — professional assessment of a situation she considered unsalvageable. "The System didn't send heroes to kill her. It changed the territory. Made the ground around her incompatible with human habitation and let the correction happen through environmental pressure. The heroes who showed up were responding to the threat zone, not to her. She was collateral damage in the System correcting its own architecture."
+
+The room was very still. Derry had pulled himself back to standing but he was pressed against the wall by the door, his mouth working around words that wouldn't form.
+
+"How long?" Maren asked. "From when the thing formed to the correction. How long did she have?"
+
+"The text didn't specify. Weeks, perhaps. Months at most." Thessa stepped back from the doorway. "If you want help, find a sin-eater who hasn't spent thirty years cleaning up after you. I'm done."
+
+Maren stood because standing was something he could do. His legs held, which felt like a minor accomplishment.
+
+"The girl in Dunmore," Thessa said as he moved toward the door. "Maret. She's named for her grandmother, who grew up on the same land before you ever touched it. The grandmother could hold a cup just fine."
+
+Maren walked out into the street. Derry followed, shoulders hunched, the mended tear at his shoulder pulling where his posture strained the stitching. Behind them, Thessa's door closed — not slammed, because Thessa didn't slam anything. It closed with the finality of something that had nothing left to give.
+
+They walked through the emptying market square — the apple seller packing up her bruised inventory, the linen woman folding her table, the boy and his chickens gone home. The light had gone gold and low, shadows reaching across packed earth, and the hum underneath everything was the same as always, the same as it had been for twenty-eight years. Maren had just never known what it was holding.
+
+His legs worked. That was something. After the bench in Thessa's house, after sitting under the weight of named villages and numbered years and a girl who couldn't hold a cup, the simple mechanical process of walking felt almost generous. Left foot, right foot, the packed dirt solid under each step, the evening air warm but losing its heat. He'd walked out of worse than this — out of rituals over dead bodies, out of grieving families' houses with their fifteen coppers in his pocket, out of every village he'd ever failed to clear. He'd never thought about the walking before. He thought about it now because thinking about the walking was easier than thinking about Maret.
+
+*She is right about the correction timeline,* Aldric said. His voice had the quality of someone delivering a report he wished contained different information. *The Order's records described similar patterns. Anomalies identified, territories destabilized, hosts removed. The corrections were always territorial — the System changed the ground and let the ground do the work. I have no reason to doubt her account.*
+
+*How long do we have?* Vess asked. The question was aimed at Aldric, not Maren.
+
+*I do not know. The Order's records were incomplete — they described outcomes, not intervals. The time between formation and correction was never specified clearly.*
+
+*Then we assume weeks,* Vess said. *And we move.*
+
+They reached the edge of Silt, where the town thinned into scrub and the track met the main road east. Maren stopped. He looked at his hands. Still clean. The only marks on them were calluses from years of carrying a ceramic bowl that had never done anything.
+
+"Maren," Derry said. His voice was small, wrung out, the voice of a man sitting with the knowledge that he'd helped. He'd fed Maren the System cues. He'd watched the rituals. He'd taken his half of the fee. "That girl. Maret. We went to Dunmore, I remember the — did we do that to her?"
+
+"Yeah."
+
+"And the farmer. The Holloway farm in Cress. Was that —"
+
+"Yeah."
+
+Derry pressed his hand over his mouth. Held it there. Took it away. His eyes were wet and he was looking at the road and there wasn't anything to say about a girl who couldn't hold a cup and a boy with tremors and a dead farmer in Fenhold and eleven years of fake rituals performed over real bodies in real villages where real contamination sat in the soil and the water and the children while Maren and Derry split fifteen coppers and went to the inn.
+
+They walked east. The road ahead was long and dust-colored and empty. Behind them, Silt's single column of chimney smoke rose into the late-summer sky. Inside Maren's skull, three voices were quiet, and the thing underneath the voices — the nameless, unclassified thing the System would eventually correct — waited.
+
+Fifteen hundred coppers. A girl named Maret. Eleven years.
+
+Maren walked.

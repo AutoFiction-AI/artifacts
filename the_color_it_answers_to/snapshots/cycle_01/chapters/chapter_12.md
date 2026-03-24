@@ -1,0 +1,455 @@
+# Chapter 12
+
+By the time Junie dragged the third table into place, the supper crowd had gone and Ferrymouth had dropped into its late noises: hulls knocking pilings, a bell from the upriver ferry, gulls disputing over fish skin in the alley, men on the slip laughing too hard because they were too tired to do it softly. The kitchen still held the whole day in its walls. Heat came off the digester stove in wet breaths, and the room smelled of eel broth, pepper vinegar, lamp smoke, yeast, and river mud. Silas had changed his shirt once and then given up on cleanliness as a profession.
+
+Junie jammed a folded rag under a short table leg and looked at him over the stockpot. Flour lived in the old split of her left eyebrow again, making the scar look chalked.
+
+"If you stand there like a hired mourner," she said, "I'll put you by the stove and let everybody sweat at you. Cut the bread. Thick. Nobody trusts a thin slice."
+
+His right wrist was mostly good for hauling, chopping, and being sworn at. It still did not forgive elegance. He took the knife and started through the rye loaves anyway, leaning his weight behind the blade when the ache climbed.
+
+"I wasn't planning a speech," he said.
+
+"You plan them by breathing. Cut."
+
+Otis, missing one front tooth and proud of the vacancy, sorted mismatched spoons by size because he had decided that honest people ought to get the heavier ones. Every few minutes he tested a word through the gap in his mouth to hear what the air did with it. Tonight he had chosen coalition, which came out with a pleased whistle.
+
+Junie caught him at it. "If you whistle that at the table, I'll make you scrub the fish board."
+
+"It whistles by itself," Otis said.
+
+"Then let it do it quietly."
+
+Silas watched his sister move through the room with the steady brutality of a woman determined to make hospitality do a job more delicate souls would have handed to prayer. She had set the good bowls out, which meant the thick white crockery with only two chips among them. She had fried plantain slices in a skillet black as a sin she'd stopped regretting years ago. Rice steamed in a lidded pan. There was eel stew, a heap of blistered green peppers, pickled onions, half a heel of hard cheese, and a slab of river-cake dense enough to stun a man if the evening went badly. Given the guest list, the evening still might.
+
+She had invited people who had reason to dislike him, reason to dislike one another, and worse reason to need all the same thing.
+
+"You still have time to claim plague," Silas said.
+
+"No, I don't." Junie slapped the ladle against the pot rim and counted under her breath. "Eight bowls, two benches, one boy, one fool of a brother, one stove that still answers to decent names. We're committed."
+
+"That sounded almost cheerful."
+
+"It wasn't. Move the lamp."
+
+He moved the lamp from the center shelf to the sideboard. The light in the glass had gone a working green, the kind Junie preferred when she wanted to see soup skin, dirty cuffs, and weak lies for what they were. She had refused the prettier shades from the first day of the craze. In her kitchen, beauty ranked below heat, rent, and whether a man had paid last week's tab.
+
+The first knock was not a knock but the heel of Aunt Vero's hand hitting the jamb as if she had a long history of entering rooms that pretended not to want her. Inez came in behind her with a crock wrapped in a dish towel. Her dark hair was tied up in the work scarf he knew too well now, the knot damp at the nape from the heat outside. A faint crescent of old burn scar showed inside her wrist when she shifted the bowl higher against her hip. He felt that sight before he had any right to. Aunt Vero brought a jar of pickled okra, and the vinegar reached the room ahead of her.
+
+Vero looked from Silas to the tables to the stockpot and clicked her tongue.
+
+"You did put the thief indoors," she said. "I had a little hope for you, Junie."
+
+"He isn't at the head of anything," Junie said. "He can slice bread till the hand gives out."
+
+Inez's gaze touched Silas only once on the way in. It was not cold or soft, only measured, and it was almost worse that way.
+
+"I brought black beans," she said to Junie.
+
+"Bless you for your timing and not your morals," Junie said, taking the crock. "Set it there."
+
+Aunt Vero set down the okra jar and fanned herself with her hat. One eye drifted a little when she was tired or amused; tonight it was doing both. "If that newspaper widow is here, I want her far enough from me that she has to lean to steal."
+
+"You say that like leaning's hard for me," came Damaris Pike from the door.
+
+She slid in wearing widow's black gone shiny at the seams, one sleeve shiny in a different place where ink had found it and made permanent claims. Her fingers were smudged blue-black to the first knuckle. Under one arm she carried a packet of spoiled proofs tied with string. The chipped edge of her front tooth showed when she smiled, which was often and not always because anything pleased her.
+
+"I brought paper," she said. "Also a peppermint if the company goes bad."
+
+"Keep the paper," Junie said. "Keep the peppermint. Wash your hands."
+
+"They're editor's hands."
+
+"They're hands."
+
+Behind Damaris came Mara Tindle from Lantern Steps, narrow as a stair rail, with a blue loop of darning thread tied around her smallest finger so she would not lose track of whose mending she had promised by morning. She smelled of starch, wet linen, and fennel seed. Silas had seen her before on the landings above Lantern Steps, beating rugs with a kind of private vengeance. Tonight she held her jaw tight as if the room itself needed basting.
+
+"I said I'd stay one bowl," she told Junie. "After that I've got shirts to turn and a lodger who snores like a drowned trumpet."
+
+"One bowl's all I'm asking," Junie said. "If you stay for cake, that's between you and your weak nature."
+
+Mara's glance caught on Damaris. "I didn't know Patent Row was invited."
+
+Damaris set her bundle of proofs on the sideboard. "I didn't know Lantern Steps permitted wit after dark."
+
+"It doesn't. That's why I came downriver for supper."
+
+Junie turned before the heat between them could find a fresh draft. "Nobody here has to like anybody. You have to sit long enough to eat while the food's hot and your mouth's busy. If you want to leave angry afterward, leave stronger."
+
+Otis, who had been instructed not to speak and had therefore been storing up a great pressure of language, said, "Can Uncle Silas leave thievy or does that wash off with dishwater?"
+
+The room went still for half a breath. Then Aunt Vero barked laughter so sharp it startled a gull off the sill outside.
+
+"Good," she said. "Keep the boy."
+
+Silas cut another loaf. "I walked into that one."
+
+"You walked into all of this," Junie said. "Set the bread out."
+
+They sat because Junie made sitting feel less like agreement than like the next chore on a list nobody could afford to neglect. She put Vero beside Silas, which he understood as punishment and utility in equal measure. Inez went across from him. Damaris took the corner nearest the lamp and immediately pinched the flame tube with professional interest. Mara chose the chair that let her see both door and window. Otis wedged himself between Junie and the sideboard and reached for the plantains the instant grace failed to appear.
+
+Junie smacked his knuckles lightly with a spoon. "Wait till everybody's got a bowl."
+
+"That isn't a prayer," Damaris said.
+
+"No," Junie said. "It's better."
+
+She served like a woman bailing a boat. Nothing about it was delicate. Eel stew thumped into bowls, thick with tomatoes, onion, and rice. Black beans, peppers, and bread followed, and the table filled with steam so dense it made the lamp halo woolly.
+
+Nobody spoke for the first minute except to ask for salt, and even that sounded like a tactical concession.
+
+Silas had forgotten what a room of suspicious people could do once you gave them food hot enough to demand concentration. Soup put everybody on the same side for a little while. Tongues cooled. Fingers got occupied. Steam softened posture. Junie knew this the way other people knew liturgy.
+
+Damaris broke first, because of course she did. "This is extortion by stew."
+
+"It works," Junie said.
+
+Mara tore bread, still watching the others. "I came because my top landing has changed color three times in six days and the old men on the sixth floor have started calling it fashionable instead of dangerous. That's how somebody dies stupid."
+
+"That's also how rent goes up," Junie said.
+
+"Everything in this city is how rent goes up," Damaris said.
+
+Aunt Vero jabbed her spoon into the beans. "For you, maybe. Some of us are old enough to remember greed before you lot learned to print it nicely."
+
+"I print it ugly on purpose," Damaris said. "That's my civic service."
+
+Inez ate with the clean efficiency he had watched in the propagation shed, no wasted motion even with stew. "If we're doing this," she said, "we don't do it like a newspaper supper. Nobody takes a word out of this room unless the person who brought it says where it may go."
+
+Damaris raised both hands. "I didn't come to steal."
+
+Mara snorted. "That's exactly what stealing says."
+
+"Not tonight," Damaris said, and for once the quick frame around her voice loosened a little. "Tonight I'm here because Gideon means to flood every decent surface in the city till schoolboys can chant his name in their sleep. I know what flood looks like when it's made of paper."
+
+Silas kept his eyes on the stew, though he felt all of them glance his way in the wake of it. He had done flood in paint and slogans. He had helped teach it the route.
+
+Junie cut through the silence before it could turn sentimental or righteous. "Fine. Rule one: nobody sells a word. Rule two: nobody asks for a true name, because that phrase makes me want to throw crockery. Rule three: if you say something useful, you keep eating while you say it so the rest of us know you're not performing."
+
+Aunt Vero pointed her spoon at Silas. "Add rule four. If he gets hungry for the prettiest phrase, somebody hits him."
+
+"Hard enough to improve him?" Damaris asked.
+
+"Nothing's that strong," Mara said.
+
+It got a laugh, even from Inez at the edge of her mouth, and the sound relieved the room of a pressure Silas had not realized he had been holding in his ribs. It was not peace; nothing so false would have survived the room. But the table gave a little around the joints.
+
+Junie reached for the beans. "There. We can act like a city for one meal."
+
+Outside, somebody on the slip shouted for more lamp oil. Somebody else answered with profanity and a joke about credit. Inside, bowls emptied. Vero demanded the pickled onions from Damaris rather than from Junie, and Damaris passed them without making a point of the surrender. Mara accepted pepper sauce from Inez after a pause short enough not to be called one. By the time the stew pot showed bottom and Otis had been allowed one plantain and denied a second, every chair was still occupied.
+
+Junie had done what Silas could not have done with ten speeches and his best coat. She had given every grudge a plate and made it wait its turn.
+
+***
+
+The proofs Damaris had brought were spoiled on one side by a mangled alderman's face and an advertisement for corsets promising moral uplift through lacing. The reverse was mostly blank. Junie spread the sheets across the wiped table while Otis collected bowls to the sink and listened with his whole back.
+
+"If anybody drips stew on the clean side," Damaris said, "I'll call it collaboration, but I won't enjoy it."
+
+Silas reached automatically for the broadest sheet and set it square to himself, the way he always did before lettering, with a big phrase down the middle and room on either side for ornament and for the eye to be told where to go.
+
+Inez leaned over, smelled faintly of soap, wet cotton, and the peppers she'd carried in with the beans, and turned the page sideways under his hand.
+
+"Don't build another altar," she said. "Make columns."
+
+His fingers paused around the pencil. "All right."
+
+"Five of them," she said. "Name. Place. Use. What it does wrong. Who says yes."
+
+Junie, carrying the pot to the cooling shelf, added without turning, "And what somebody owes if they borrow it. Make that six."
+
+Aunt Vero grunted approval. "Now we're in church."
+
+Silas ruled the sheet with the edge of the pencil and the side of his hand. The wrist complained halfway through the third line, a hot little warning down the bone. He kept going until six narrow fields stood waiting. The page looked ugly already. That helped.
+
+Damaris, watching over the lamp chimney she had decided needed cleaning, said, "If I ever see my profession described in six columns, I'll kill myself from shame."
+
+"You'll miss your own obituary," Junie said.
+
+"I trust you to write a better one."
+
+Mara had not touched the pencil or the paper. She kept rolling the blue thread around her finger till the tip went pale. "Before we begin," she said, staring at Silas and not blinking much, "I want it said plain. If anything from this table ends up prettied and sold, I'll tell every woman on Lantern Steps to send their mending elsewhere. You'll die dressed like a madman."
+
+It was not the harshest threat anyone had made him in the last month. It had the advantage of being specific.
+
+"Fair," Silas said.
+
+"Not fair," Aunt Vero said. "Light. Fair would've been the river."
+
+Junie planted both hands on the table. "Mara, say what you came to say. He writes what you say and only what you say. If he forgets where it came from, I'll open his skull and store onions in it."
+
+That, apparently, was sufficient guarantee. Mara exhaled through her nose and looked at the columns.
+
+"Pot first," Junie said. "My house, my order. Write potgreen."
+
+Silas wrote the word.
+
+Junie leaned over, saw the single naked phrase sitting there, and clicked her tongue. "What good is that by itself? Write the rest."
+
+"Tell me."
+
+"Ferrymouth kitchens. Dawn through dinner if you want beans to keep their shape and eel fat to mind itself. It holds a low steady heat. Doesn't spit. Doesn't sour broth. If some fool hangs it in a parlor because he likes how calm it looks, it turns greasy by the second day and makes the curtains stink. And if you borrow cuttings from my stove bed, you send back rice or lamp mash by week's end, because I don't run a charity for fashionable idiots."
+
+Silas wrote as fast as the wrist would allow: Ferrymouth kitchens. Dawn-dinner. Long pots. Low steady heat. Not for parlors; throws grease, stinks curtains. Borrower owes rice or lamp mash by week. The language wanted smoothing under his hand. He let it stay rough.
+
+"Better," Junie said.
+
+"My turn," Mara said, before anyone could claim hers for her.
+
+She sat straighter, one palm flat on the table. "Write stepblue. Lantern Steps, landings and stair rails, mostly after rain or fog. It catches the slick lip of the tread so people can see what will kill them. Not too bright, else old men miss the edge from glare and swear the light lied. You don't use it above a nursery because children think blue means cool and reach for it. And if you take it from our side of the city, you post the stair number with it. Otherwise some bastard paints it on a ballroom and says it came from nowhere."
+
+Silas looked up. "Why the stair number?"
+
+Mara's mouth tightened. "Because my brother split his chin open on the sixth landing before we learned what worked there. Because place matters, that's why."
+
+He wrote that down too, not the brother exactly, but post stair number; place matters. Then, because the omission felt like a fresh theft, he added smaller: Learned after injury on sixth landing. Mara saw him do it and gave the smallest nod, not gratitude, just correction accepted.
+
+Inez had been watching the columns fill. She pushed the lamp half an inch nearer the page so the pencil line sharpened.
+
+"Washcool," she said. "Sump Ward wash lines and fever rooms. Night rinse, baby cloths, shirts you can't afford to scorch. It keeps the heat low enough that lye doesn't bite back through the rag. It also keeps glow steady through steam, which matters when half the room is wet. It doesn't go near fermentation shelves. If you mix it with mother trays, you'll wake to white fur and spoiled stock. If somebody outside the ward wants it, they say where they heard it and who sent them. Not because we're holy. Because we've had enough of strangers pretending they invented soap."
+
+Her voice stayed even all through it. That was her pressure register, cleaner and sharper the more dangerous the subject got. Silas wrote with care, aware of her standing close enough that the burn scar inside her wrist hovered just above the margin while she pointed.
+
+"Make a mark by that one," she said. "Shared only if the keeper says yes."
+
+He added another note: keeper approval required.
+
+Damaris made a dissatisfied sound. "That's not a column. That's a legal warning."
+
+"Good," Inez said. "Maybe you'll finally respect one."
+
+Damaris sucked the chipped edge of her tooth against a peppermint and thought. "All right. Put me in, then. Proof-pale. Patent Row pressrooms and compositor benches. We use it when the type's fine and the night is long and three different liars want three different editions before dawn. It throws enough white to show a cracked serif and not enough heat to soften lead or wilt the cheap paper. It makes every face in the room look recently exhumed, which is useful only during election season. You don't ask newsboys to carry it as a parlor novelty. They read ghost stories by it and then piss themselves in alleys."
+
+Junie snorted into the sink.
+
+"And what does somebody owe?" Silas asked.
+
+Damaris looked almost startled that he had asked the question instead of assuming none applied to her kind of work. Then she shrugged. "If you borrow a pressroom name, you tell the boys who set type where you got it. And you buy them tea. Strong tea. Nobody steals from compositors twice if they want their letters spelled right ever again."
+
+Silas wrote it in.
+
+Aunt Vero had been quiet, which on her always meant either pity or calculation, and he knew better than to hope for the first. She ran a broad thumb along the rim of the okra jar and watched him making lines, notes, little cramped precisions where once he would have hunted for one phrase fat enough to sell to a wall.
+
+"You're still listening like a shopper," she said.
+
+The pencil stopped.
+
+"Am I."
+
+"Yes. I can hear it from your forehead. You're waiting for the one that'll beat his crown."
+
+The room tightened again, not loudly this time. Just enough for the table to remember all its reasons for existing.
+
+Silas did not attempt defense. It would have sounded too much like old trade. "I know that habit when it bites me," he said. "I'm trying not to feed it."
+
+"Try harder," Inez said.
+
+Junie wiped her hands on her apron and came back to the table with a dish towel over one shoulder like a banner for a state no one deserved. "Vero, either skin him properly or say your piece."
+
+Aunt Vero took her time. Her drifting eye settled for a beat, the way it sometimes did when old losses walked too close.
+
+"Write widow basil," she said at last.
+
+Silas did.
+
+"Wake rooms," she said. "Mostly Sump Ward before the investors learned to call grief a market. Low green with a little blue underneath. Keeps cut flowers from turning rank before dawn and lets old women see whose hand they're holding. You do not hang it in a dance hall because it is pretty. You do not bottle it for rich girls who want to feel tragic at supper. And if the widow house gives you cuttings, you send girls back on cleaning day. Two if you're strong, three if you're grateful. The obligation isn't courtesy. It's labor. The dead don't keep their own lamps."
+
+Nobody moved for a moment after that.
+
+Silas wrote slower than before. It was not from pain. It was from shame, and from the knowledge that the word itself had almost nothing to do with the thing if the thing was severed from the room that had taught it how to mean.
+
+When he finished, Aunt Vero reached over and tapped the sixth column with a thick stained fingernail.
+
+"There. That's the part you stole before. Not the word. The return path."
+
+Something hot and ugly crossed his throat. It was not the usual dramatic kind. It was not the self-loving version that wanted witnesses. It was just the hard little fact of being described accurately by someone who had earned the right.
+
+Otis, pretending to stack bowls and listening like sin, said, "What's the return path?"
+
+Junie answered before anyone else could turn a child into metaphor. "It means if you borrow, you carry back. Plate to sink. Name to the people it came from. Coal to the kitchen if the kitchen kept you alive."
+
+"Oh," Otis said. "Like spoons."
+
+"Exactly like spoons."
+
+Damaris leaned over the page. "It's too much for one broadside."
+
+Silas heard himself answer from the old part of his trade. "No newsboy will carry widow basil clean. And stepblue dies if you don't know what stair."
+
+Mara's chin lifted. "Then maybe the point isn't to make every mouth say the same damn thing."
+
+"No," Inez said. "It isn't."
+
+He looked down at the page. It held six columns and four names. Already the sheet felt crowded in the honest way a dock felt crowded: not decorative, just full of specific need. There was no center phrase, and there was no obvious winner. Every time his eye tried to choose one, the notes in the next columns dragged it back to place, task, cost, body.
+
+"All right," he said, more to the paper than the room. "Then tell me how far each one may go."
+
+That changed the table.
+
+Junie sat. Mara loosened the blue thread from her finger and laid it beside the page. Inez pulled another spoiled proof from Damaris's bundle and flattened it with both palms. Even Damaris stopped performing amusement long enough to think like a woman who lived by routes.
+
+They began again, and now the names came not as trophies but as permissions.
+
+Some were for public use if the district stayed attached: potgreen for kitchens, stepblue for slick landings, washcool for fever cloths, proof-pale for pressrooms. Some were public only in part: a dock term for fog ropes that Junie said could travel if Ferrymouth stayed on the line beneath it and nobody pretended it worked indoors. Some were not for public walls at all, only for mouth and house: a nursery light from Lantern Steps Mara would describe but not surrender, because one lodger's twins had lived by it through a winter cough and she would not see it turned into fashion copy. Inez gave uses without certain deeper ledger names. Aunt Vero named categories of obligation before she named anything else. Every time Silas asked the wrong question, the room corrected him toward the right one, and the same set of questions kept returning: where, for what, unsafe for whom, who might pass it on, and what got sent back.
+
+By the time they filled three sheets, the table was a mess of onion skins, pencil stubs, grease fingerprints, and an order of knowledge he had never once served in his professional life. He had made a career stripping words down till they flashed. Here they thickened under attention instead. The stories stayed with them like mud on boots.
+
+And the strangest thing was that the work did not feel diminished by that. It felt more exact. Harder to sell, certainly. Harder to own. But alive in a way his neatest copy had not.
+
+***
+
+Near midnight the kitchen changed weather. The rush heat had gone out of the stove. River damp came through the cracked window over the sink. Otis fell asleep with his cheek against folded arms and one hand still sticky from plantain sugar. Junie tucked a dish towel under his face without waking him. Outside, Ferrymouth had thinned to late freight and men too broke to go home yet.
+
+The papers covered most of the table now, full of names, uses, warnings, permissions, and return paths. The mess of it pleased Silas in flashes and scared him in others.
+
+Damaris stood over the pile with both hands on her hips. "If we put all this in the street raw, Gideon'll call it proof the wards haven't got a thought between them. He'll say only one man in one clean waistcoat can make order from the swamp."
+
+"He says that already," Junie said, scraping char from the bottom of the rice pan into a tin for tomorrow's stock. "Question is whether people hear him over breakfast."
+
+"They hear what fits in the mouth," Mara said. "Nobody on Lantern Steps is stopping on the fourth landing to read a sermon while carrying coal."
+
+"Nobody at Ferrymouth is reading delicate print through steam," Junie said. "If a board wants the dock, it needs words a man can catch while blowing on stew."
+
+Inez had taken one of the cleaner proofs and started sorting the names into rough groups with the blunt end of the pencil: kitchen, stairs, wash, press, dock, wake. "Then don't ask one board to do every job," she said.
+
+Silas looked up. "No?"
+
+"No. That's his disease." She nodded toward the city beyond the wall, where Gideon existed like a well-paid rash. "One surface, one slogan, one answer for everybody. We don't beat that by making our own prettier version."
+
+"We also don't beat it by hanging confusion till the whole town trips over it," Damaris said.
+
+Aunt Vero, who had been at the sink rinsing out the okra jar with enormous seriousness, snorted. "You all talk as if the city isn't already confusion. It manages."
+
+Junie pointed the spoon at her. "If you've got something better than insults, now's the hour."
+
+Vero set the jar upside down to dry and wiped her hands on her skirt. When she came back to the table, she did not look at the papers first. She looked at the stove, the shelves, the cooling crock of beans, the lamp tray by the window where a thin strip of moss glowed the kitchen's chosen green. She thought with objects, Silas had learned. With what could break, spoil, scorch, or keep.
+
+"When blight comes for a grow room," she said, "only a fool bets the season on one mother tray."
+
+No one interrupted. They all knew she hated being hurried to wisdom. It made her meaner and less useful.
+
+"You split the line," she went on. "One tray under burlap. One in the widow house. One at the wash room if the pipes are still kind. One with your cousin who forgets the saints but never forgets water day. Redundancy. A nasty ugly word. Keeps children lit." She pointed at the papers with a wet finger. "Do that with the names."
+
+Junie frowned. "Spread them where?"
+
+"Where mouths already queue," Vero said at once. "Ferries. Stoops. Wash lines. Market rails. Not one grand wall for rich men to stare at. Many surfaces, many heights, many chores. Let every board carry several names with the place and the use. Let women read them while pinning shirts. Let boys mouth them on the way to school. Let deckhands swear them over ropes. If one gets torn down, five more are already damp somewhere else."
+
+Silas felt the shape of it before the words finished landing. It was not a poster or a launch. It was a network of practical invitations, with surfaces built to keep language plural on purpose.
+
+"A chorus board," Aunt Vero said, as if she had only just now heard the name herself and approved its nuisance. "That's what it wants. Not a sermon board. Not a patent placard. A chorus board. Many mouths on one face, many faces through the city."
+
+Otis, half asleep, murmured into the dish towel, "Chorus whistles less."
+
+Junie smiled despite herself. "Go back to sleep."
+
+Damaris was already moving. She took a pencil and drew rough boxes on a fresh sheet. "If it's a chorus board, it can't look like a ledger. People won't stop for accounting unless a sheriff's involved. It needs a handhold. Big route word at top. Then uses beneath. Maybe district marked in the margin. Something a newsboy can cry without becoming literature."
+
+"And something rain won't eat before dawn," Mara said. "On Lantern Steps we'd need waxed edges or cloth ties. Paper alone goes to mush by the second mist."
+
+"At Ferrymouth we can back it with fish-crate slats till we get proper wood," Junie said. "Not yet. For now I can hang proofs in the kitchen window and by the ticket rail. Men waiting on stew read anything if the pot's delayed."
+
+Inez looked at the grouped names. "Not all of them. Only what the keepers release. District on the board. Use on the board. Warning on the board. If a name stays local, it stays local. We're not solving theft by doing theft with friendlier faces."
+
+"Fine," Damaris said. "So every board gets three marks. Public. Local only. Ask first."
+
+"Four," Silas said before he had thought through whether he had earned the right to add anything. Everybody looked at him, and he had the old nauseating urge either to flourish or to apologize. He chose neither. "Public, local, ask first, and return owed. If somebody borrows a name, the board ought to say what travels back with it."
+
+Aunt Vero's expression did not soften, but it altered. "At last."
+
+Junie nodded once. "Good. Because if Ferrymouth borrows a wash name, Ferrymouth can send soap. If Sump Ward borrows kitchen stock, Sump Ward can ask for rice. People remember what costs them."
+
+"And what binds them," Inez said.
+
+That settled more than one argument at once. Silas could feel it. The tactic stopped being a cloud of good intentions and turned under their hands into something rude enough to live. It was not unity. It was infrastructure.
+
+He pulled one of the cleaner sheets toward him. Every instinct in his body wanted to center it, crown it, make the eye obey. Instead he drew no middle line. He marked a header strip for route and place, then left three broad bands beneath for names tied to task. Margins for warnings. A corner square for what was owed back. The design looked almost unfinished, all that deliberate room.
+
+Inez watched the pencil move. "Leave space for changes."
+
+"I was going to."
+
+"No, you weren't."
+
+He almost laughed. "I was going to after you said it."
+
+Mara leaned over his shoulder, close enough that the starch of her sleeve brushed his arm. "Step numbers there," she said, tapping the margin. "Big. None of this tiny sign-painter vanity."
+
+"I heard you the first time."
+
+"Then I'll say it twice so it sticks."
+
+Damaris pointed with her peppermint tin. "Route word at the top wants to be something nobody can mistake at three paces. For Stairs. For Pots. For Wash. If you get fancy, I'll hit you with journalism."
+
+"That would be a first for the profession," Junie said.
+
+Silas altered the sketch. The route words grew big, practical, and nearly blunt. The result was not beautiful in the old sense. Or rather, it was beautiful in a new mean way, with beauty measured by whether a woman with two buckets and no spare breath would catch the point on the move.
+
+The lamp by the window had begun to gutter. Junie rose, checked the tray, and clicked her tongue. "It's hungry."
+
+There was enough moss in the little side tray to test, if not prove. A strip no longer than two fingers, grown from kitchen stock and tempered to Junie's routines. Not private enough to offend, not public enough to matter much. Still, the sight of it shining there while the papers lay spread made the room lean toward experiment without admitting it was doing so.
+
+Damaris saw the same thought. "Shall we let the city eavesdrop?"
+
+Junie looked at Inez. Inez looked at Vero. Vero made a vague circling motion that meant yes if no one got stupid.
+
+Junie took the draft sheet Silas had marked and pinned it in the open window with two wooden clothespins. The night air sucked at the paper. Outside, the ticket rail was nearly empty, but not fully. A pair of freight men lingered over beer by the post. Somebody farther down the slip was singing half a verse and getting the rest wrong.
+
+"Not a demonstration," Inez said.
+
+"No," Junie said. "Just reading."
+
+She handed the sheet to Otis when he woke enough to blink and sit up. He peered at the block letters, sounding them first with his finger.
+
+"For Pots," he read.
+
+"Louder," Damaris said automatically.
+
+Junie shot her a look. "Not like you're selling scandal. Like you're calling dinner."
+
+Otis cleared his little chest. "For Pots. Potgreen. Ferrymouth kitchens. Long simmer. Not for parlors. Rice owed back."
+
+One of the freight men outside said, "Rice owed back?" and laughed.
+
+"That's right," Junie called through the window. "You borrow, you carry."
+
+Otis read the next line slower. "For Stairs. Stepblue. Lantern Steps. Wet treads. Keep stair number with it."
+
+"Use the number," Mara said. "Say the number."
+
+Silas wrote Sixth Landing in the margin. Otis read that too. One of the men outside repeated it, not because he cared about Lantern Steps but because words on a board asked to be tried in the mouth. From farther down the slip somebody called, "What's stepblue?" and Mara, startled into ownership, answered before she could decide whether to.
+
+"The thing that keeps you from breaking your neck if you've got any sense."
+
+They moved through three more lines: Washcool, Proof-pale, and widow basil only as a category and not the whole obligation, because Vero had not released all of that one and nobody argued with her on it. Damaris gave the route words punch where they lagged. Junie corrected cadence whenever it turned theatrical. Inez cut anything that sounded like display. Silas wrote fast in the margins when the room sharpened a phrase by common use instead of individual brilliance.
+
+The strip of moss in the tray did not leap. Private reading alone would not have done much. But this was not private now. The window stood open, dock traffic was hearing and repeating, and the sheet sat in public sight. Several mouths took it up along several routes, and no single chant ruled them. After the third pass, the green in the tray loosened at one edge. A cool blue seam appeared, then held. Near the center a paler wash rose and did not take over. The old kitchen green stayed where it had work to do.
+
+Nobody cheered. That was not the mood of the room, and Junie's kitchen would have rejected cheering as vulgar optimism. They just watched the colors keep one another company without surrendering to a winner.
+
+"Ugly," Damaris said softly, almost admiring.
+
+"Useful," Inez said.
+
+"Both," Junie said.
+
+Aunt Vero folded her arms. "That's a city, then."
+
+Silas looked at the draft in the window, the block letters thick from his hand, the margins already crowded with other people's corrections. There was nowhere on it for a signature. The emptiness where his name would once have gone no longer looked like loss. It looked like structure. The thing held because it did not have a center greedy enough to eat the rest.
+
+Mara gathered her shawl. "One bowl," she said. "And now half the night. You're all thieves."
+
+"Stay for cake," Junie said.
+
+Mara hesitated just long enough to indict herself. "A small piece."
+
+Damaris laughed through her nose. "Coalition achieved."
+
+"Don't call it that in the paper," Junie said.
+
+"I won't call it anything till we know which parts survive daylight."
+
+That, too, felt correct. Nothing in the room claimed victory. They were not fools. Gideon still had money, walls, songs, debt papers, runners. But the shape on the table was no rival brand. It was a method that behaved like the people it came from: multiple, rude, practical, hard to evict all at once.
+
+Junie cut the cake. Inez took the draft sheet down from the window before the damp could curl it useless. Aunt Vero began listing which wash lines in Sump Ward saw the most dawn traffic and which ones belonged to women who would rather bite through tin than help Patent Row by accident. Damaris sorted spoiled proofs by size and muttered about type weight. Mara counted stair landings on her fingers and argued about where to post first. Otis, fully awake now, asked whether chorus boards could whistle if the slats were thin enough. Junie said everything in this city whistled if the wind found the right crack.
+
+Silas put a new sheet on the table and drew columns without being told.

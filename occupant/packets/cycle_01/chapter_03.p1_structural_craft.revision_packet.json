@@ -1,0 +1,83 @@
+{
+  "acceptance_targets": [
+    "[ch03_f01] Pass if the newspaper reveal at snapshots/cycle_01/chapters/chapter_03.md:79 and the dashboard callback at snapshots/cycle_01/chapters/chapter_03.md:233 now place the trip on July 13 or July 14, 2005, and no surviving line in the chapter dates Mort's first sighting to July 12. Fail if any on-page marker still places this chapter event on July 12.",
+    "[ch03_f03] Pass if the material after snapshots/cycle_01/chapters/chapter_03.md:215 either adds a fresh action, decision, obstacle, or observable consequence before Nate leaves, or exits the scene without restating the chapter's revenge thesis in generalized summary. Fail if the revised late passage still explains what the reader already understands from the dramatized scene."
+  ],
+  "chapter_id": "chapter_03",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if the newspaper reveal at snapshots/cycle_01/chapters/chapter_03.md:79 and the dashboard callback at snapshots/cycle_01/chapters/chapter_03.md:233 now place the trip on July 13 or July 14, 2005, and no surviving line in the chapter dates Mort's first sighting to July 12. Fail if any on-page marker still places this chapter event on July 12.",
+      "chapter_id": "chapter_03",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:79; snapshots/cycle_01/chapters/chapter_03.md:233",
+      "finding_id": "ch03_f01",
+      "problem": "The chapter publicly dates Nate's Eastbridge trip and Mort sighting to July 12, 2005, which contradicts the continuity sheet's canonical placement of this event on July 13-14, 2005. Because the date is printed twice and anchors the whole outing, this is a hard timeline break rather than a fuzzy inference.",
+      "rewrite_direction": "Revise the public date markers at snapshots/cycle_01/chapters/chapter_03.md:79 and snapshots/cycle_01/chapters/chapter_03.md:233 so the trip lands on the canonical July 13 or July 14 window, and make any needed supporting timeline adjustment in the surrounding chapter setup at snapshots/cycle_01/chapters/chapter_03.md:3 so the morning call-in, drive, and return all agree on the same day.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if the material after snapshots/cycle_01/chapters/chapter_03.md:215 either adds a fresh action, decision, obstacle, or observable consequence before Nate leaves, or exits the scene without restating the chapter's revenge thesis in generalized summary. Fail if the revised late passage still explains what the reader already understands from the dramatized scene.",
+      "chapter_id": "chapter_03",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:209",
+      "finding_id": "ch03_f03",
+      "problem": "After the chapter has already made Nate's collapse legible through the live sight of Mort and Linda, the failed reach for the door, and the reflexive duck in the car, the narration steps back into explicit thesis language about the 'moral logic' of revenge. At shortlist level this reads as explanatory self-annotation: the scene has already landed its meaning, and the chapter briefly re-argues it instead of buying a fresh turn.",
+      "rewrite_direction": "Compress or re-embody the recap at snapshots/cycle_01/chapters/chapter_03.md:209 and snapshots/cycle_01/chapters/chapter_03.md:211. If Nate revisits the revenge logic here, tie it to an immediate physical trigger or decision in the parking lot; otherwise cut more directly from the forty-minute beat at snapshots/cycle_01/chapters/chapter_03.md:215 into the departure sequence beginning at snapshots/cycle_01/chapters/chapter_03.md:217.",
+      "severity": "MEDIUM",
+      "source": "award",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "3eb57509ed77b38d68f68ac172a79d9b7bea97e29033a03d845420e10f1f2665",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This novel's central premise involves consciousness murder, identity theft, sexual fraud, and the demolition of a working-class community for profit. It must not flinch from any of these. The sex scenes between Nate and Sarah must reckon with the fact that Sarah is being deceived about who is in the bed with her \u2014 this is not a comfortable situation and the prose should not make it comfortable. The grief scenes must be physically specific \u2014 no 'he was devastated,' only the concrete gestures and sensory details of a man watching his life's work get torn down. The guilt should live in Nate's body (Dominic's body), not in tidy moral reflections. When the novel is funny, it should be funny about things that are actually terrible \u2014 the comedy should never feel safe. When Nate discovers that Dominic was trying to help, the reader should feel sick, not enlightened. Risk specificity over tastefulness at every turn.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism in place of specificity is a craft failure. When a scene requires difficult content \u2014 the moral weight of having killed an innocent man, the complicated ethics of sex under false identity, the physical reality of a man losing his livelihood, the specific humiliation of professional incompetence, the material texture of gambling debts and their enforcement \u2014 render it with the same care and specificity given to any other scene. The reader should feel the roughness of the situation, not a smoothed-over summary of it.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for all characters. Uncontracted forms reserved for emphasis, deliberate formality, or Victor's professional register when delivering serious messages. If a line reads as stiff or literary, check whether contractions would make it sound spoken.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate chapter energy aggressively. A comic workplace chapter should not be followed by another comic workplace chapter. A grief-heavy scene should be followed by something that lets the reader breathe \u2014 not through tonal whiplash but through a genuine shift in the kind of pressure being applied. Vary scene counts, dialogue-to-narration ratios, and temporal compression. Some chapters should cover hours; others should cover weeks. At least three chapters should contain extended quiet: meals, walks, conversations about nothing important. These are not filler \u2014 they are the human baseline that makes the high-pressure scenes land.",
+      "diction": "Plain American English with a slightly elevated attention to physical specificity. Not minimalist \u2014 the prose has room for interiority and texture \u2014 but never ornate. Latinate vocabulary only when the concept demands it. Prefer the concrete noun over the abstract one, the specific tool name over the generic 'tool,' the actual menu item over 'food.' The prose should feel like a smart person thinking clearly, not a writer crafting sentences.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person, limited to Nate. The camera sits inside Nate's skull \u2014 we see through his eyes, think in his rhythms, and register the world through his specific sensory and emotional biases. The narration should reflect Nate's intelligence and his limitations simultaneously: he notices things (sharp observer) but misinterprets them (blinded by resentment, guilt, and self-pity). The narrative should not explain things Nate wouldn't articulate and should not achieve insights Nate hasn't earned.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Varied sentence length with a center of gravity around 15-20 words. Short declaratives for landing beats. Longer, accumulative sentences for sensory description and interior processing. Avoid sustained staccato (more than three short sentences in sequence) and sustained lyricism (more than two long, clause-heavy sentences in sequence). The prose should breathe.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "acceptance_targets": [
+    "[chapter_03_booker_001] PASS if a reader can track a coherent sequence in the revised passage: dead drop, pickup/read, then any Vautrin-ordered escalation. FAIL if snapshots/cycle_02/chapters/chapter_03.md:265 or snapshots/cycle_02/chapters/chapter_03.md:273 still imply that Vautrin used the uncollected note to shape the sweep already underway at snapshots/cycle_02/chapters/chapter_03.md:87.",
+    "[chapter_03_craft_001] PASS if the revised chapter lets a reader state, from the page alone, what harm Elise directly caused by omitting Clemence and Lucie and what harm was already in motion before the dead drop. FAIL if snapshots/cycle_02/chapters/chapter_03.md:275 still asks Elise to own the washhouse sweep without giving the note time to produce that consequence."
+  ],
+  "chapter_id": "chapter_03",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if a reader can track a coherent sequence in the revised passage: dead drop, pickup/read, then any Vautrin-ordered escalation. FAIL if snapshots/cycle_02/chapters/chapter_03.md:265 or snapshots/cycle_02/chapters/chapter_03.md:273 still imply that Vautrin used the uncollected note to shape the sweep already underway at snapshots/cycle_02/chapters/chapter_03.md:87.",
+      "chapter_id": "chapter_03",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:57; snapshots/cycle_02/chapters/chapter_03.md:61; snapshots/cycle_02/chapters/chapter_03.md:87; snapshots/cycle_02/chapters/chapter_03.md:217; snapshots/cycle_02/chapters/chapter_03.md:265; snapshots/cycle_02/chapters/chapter_03.md:273",
+      "finding_id": "chapter_03_booker_001",
+      "problem": "The chapter's hinge consequence is chronologically impossible on the page. Elise deposits the note before the washhouse sweep, pickup is not confirmed until late afternoon, yet Elise and Vautrin both treat the morning operation as if he widened it in response to omissions from that unread report. That breaks cause-and-effect exactly where the chapter is trying to cash in its moral turn.",
+      "rewrite_direction": "Clarify the sequence across snapshots/cycle_02/chapters/chapter_03.md:57, snapshots/cycle_02/chapters/chapter_03.md:61, snapshots/cycle_02/chapters/chapter_03.md:87, snapshots/cycle_02/chapters/chapter_03.md:217, snapshots/cycle_02/chapters/chapter_03.md:265, and snapshots/cycle_02/chapters/chapter_03.md:273. Either make the washhouse sweep explicitly preexisting and reserve the report-driven escalation for later warrants/searches, or move the punitive action to a point after Vautrin can plausibly receive and read the note. Do not let the dialogue imply that unseen information shaped the same-morning raid.",
+      "severity": "HIGH",
+      "source": "booker",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if the revised chapter lets a reader state, from the page alone, what harm Elise directly caused by omitting Clemence and Lucie and what harm was already in motion before the dead drop. FAIL if snapshots/cycle_02/chapters/chapter_03.md:275 still asks Elise to own the washhouse sweep without giving the note time to produce that consequence.",
+      "chapter_id": "chapter_03",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:61; snapshots/cycle_02/chapters/chapter_03.md:87; snapshots/cycle_02/chapters/chapter_03.md:217; snapshots/cycle_02/chapters/chapter_03.md:271; snapshots/cycle_02/chapters/chapter_03.md:275",
+      "finding_id": "chapter_03_craft_001",
+      "problem": "The impossible timing also acts as a moral safety valve. Elise gets the guilt-state of having endangered Clemence and Lucie, but the chapter arranges events so her omission cannot actually have caused that specific morning harm. That softens the stain of her professional deviation at the exact point the draft should force full consequence, which is a sanitization-level craft failure under the constitution.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_03.md:61, snapshots/cycle_02/chapters/chapter_03.md:87, snapshots/cycle_02/chapters/chapter_03.md:217, snapshots/cycle_02/chapters/chapter_03.md:271, and snapshots/cycle_02/chapters/chapter_03.md:275, choose one harder version and commit to it. If Elise truly buys Clemence and Lucie temporary protection, then the later cost must arrive only after Vautrin reads the note. If the washhouse sweep is unrelated, then revise Elise's guilt language so she is reacting to state violence she witnessed, not to a harm the chapter has insulated her from causing.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "fbe2a2027e3fcd5d3b2dfc2132bd387ee1d3a5af3740ffe3ffa8cefb706b0a41",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into the contradiction that tenderness can coexist with surveillance, desire with betrayal, and ideology with vanity. Render violence, sex, illness, and poverty at the scale characters actually experience them. When an edge case appears, choose the more specific and less reputationally safe version if it remains faithful to character, period, and causality.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene reaches bodily danger, sex, grief, class shame, or political cruelty and then retreats into summary, rewrite toward the exact physical and social fact the character cannot evade.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "Moderate to high; contractions are the spoken default, with full forms reserved for period formality, deliberate emphasis, or Vautrin's cultivated precision.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate compressive surveillance chapters with slower communal or reflective chapters; vary scene count, dialogue density, and whether the turn comes from action, information, dread, or aftermath so no two adjacent chapters run on the same structural rhythm.",
+      "diction": "Historically grounded and unsentimental; plain enough for labor and bureaucracy, lyrical only when perception earns it rather than rhetoric.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third centered on Elise, elastic enough to register class texture, political pressure, and the quarry's collective life without drifting into authorial essay.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Supple, image-bearing sentences broken by hard factual beats at moments of violence, lust, bureaucratic coercion, or shame.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

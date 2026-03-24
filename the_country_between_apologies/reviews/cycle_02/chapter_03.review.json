@@ -1,0 +1,98 @@
+{
+  "chapter_id": "chapter_03",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch03_f01",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:17",
+      "problem": "Immediate-state continuity breaks: the chapter says Eli's prepaid phone has only two stored contacts, but inherited boundary canon from chapter_02 establishes that he copied three numbers (Nora, Theo, HR). Because who can reach him is plot-critical to traceability and consequence, this unexplained count drop reads as a canonical mismatch.",
+      "rewrite_direction": "Revise the phone setup at snapshots/cycle_02/chapters/chapter_03.md:17 and snapshots/cycle_02/chapters/chapter_03.md:18 so the text either preserves all three copied numbers or explicitly stages which number Eli deleted and why before he calls roadside service.",
+      "acceptance_test": "PASS if the revised passage explicitly accounts for all three inherited numbers (or shows an on-page deletion with motive) before the first call; FAIL if the contact count remains two with no causal explanation."
+    },
+    {
+      "finding_id": "ch03_f02",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:139; snapshots/cycle_02/chapters/chapter_03.md:183; snapshots/cycle_02/chapters/chapter_03.md:317",
+      "problem": "The chapter's objective/state delta is to get the car running, but the scene cuts before any repair outcome is rendered. Deferring the ignition/result beat weakens chapter-level payoff after substantial setup and labor cost.",
+      "rewrite_direction": "Add a concrete repair-result beat in snapshots/cycle_02/chapters/chapter_03.md:315 or snapshots/cycle_02/chapters/chapter_03.md:317 (engine starts, stalls, leaks, or fails) tied to Darlene's promised dawn work from snapshots/cycle_02/chapters/chapter_03.md:183.",
+      "acceptance_test": "PASS if the revised ending contains an on-page mechanical outcome tied to the dawn repair attempt; FAIL if the chapter still ends before any observable car-status change."
+    },
+    {
+      "finding_id": "ch03_f03",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:289; snapshots/cycle_02/chapters/chapter_03.md:293; snapshots/cycle_02/chapters/chapter_03.md:303; snapshots/cycle_02/chapters/chapter_03.md:315",
+      "problem": "Sanitization drift at the confession climax: the scene spends beats on euphemistic draft texts, then the final send line is phrased ambiguously enough to blur what was actually sent. That ambiguity functions as a moral safety valve where the chapter needs explicit consequence.",
+      "rewrite_direction": "Rework the send sequence at snapshots/cycle_02/chapters/chapter_03.md:303 and snapshots/cycle_02/chapters/chapter_03.md:315 so the final transmitted message is shown verbatim (including $14,000 and family impact) and followed immediately by one concrete consequence beat (device response, incoming call, or embodied reaction).",
+      "acceptance_test": "PASS if readers can point to the exact sent text containing the dollar amount and harm context, plus an immediate post-send consequence in the next sentence; FAIL if the send remains inferential or euphemized."
+    },
+    {
+      "finding_id": "ch03_f04",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:267; snapshots/cycle_02/chapters/chapter_03.md:271; snapshots/cycle_02/chapters/chapter_03.md:279",
+      "problem": "Timidity after the hardest admission: once Eli names the $14,000 transfer, the exchange quickly retreats into defensive sidestepping and service-logistics (pie/room terms) instead of sustaining the emotional pressure his confession creates.",
+      "rewrite_direction": "Strengthen the confrontation between snapshots/cycle_02/chapters/chapter_03.md:267 and snapshots/cycle_02/chapters/chapter_03.md:279 by adding one forced, concrete answer from Eli about motive or anticipated harm before the scene moves to lodging logistics.",
+      "acceptance_test": "PASS if Eli gives one explicit self-indicting statement after the confession and Cora answers that statement directly before offering the room; FAIL if the scene pivots to logistics without that accountability beat."
+    },
+    {
+      "finding_id": "ch03_f05",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:175; snapshots/cycle_02/chapters/chapter_03.md:183; snapshots/cycle_02/chapters/chapter_03.md:247; snapshots/cycle_02/chapters/chapter_03.md:277",
+      "problem": "Supporting voices drift toward interchangeable aphoristic punch-lines (for example: 'Usually is fake,' 'Narrow saves time,' 'choice with luggage,' 'folded map'). The shared cadence blurs idiolect separation and weakens dialogue realism.",
+      "rewrite_direction": "Retune dialogue in snapshots/cycle_02/chapters/chapter_03.md:171, snapshots/cycle_02/chapters/chapter_03.md:183, and snapshots/cycle_02/chapters/chapter_03.md:247 so Vera stays procedural/command-driven, Lena stays younger and colloquial, and Cora stays service-floor concrete rather than proverb-heavy.",
+      "acceptance_test": "PASS if at least one line each from Vera, Lena, and Cora has distinct lexical/rhythmic markers and remains attributable without dialogue tags; FAIL if the lines still read like the same aphoristic voice in rotation."
+    },
+    {
+      "finding_id": "ch03_f06",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:147; snapshots/cycle_02/chapters/chapter_03.md:161; snapshots/cycle_02/chapters/chapter_03.md:177; snapshots/cycle_02/chapters/chapter_03.md:197; snapshots/cycle_02/chapters/chapter_03.md:309; snapshots/cycle_02/chapters/chapter_03.md:315",
+      "problem": "Recurring clock-stamp construction ('By/At/Around + time') appears well over twice and pushes the chapter into logbook cadence, flattening sentence-level variation.",
+      "rewrite_direction": "Revise time transitions in snapshots/cycle_02/chapters/chapter_03.md:147, snapshots/cycle_02/chapters/chapter_03.md:161, snapshots/cycle_02/chapters/chapter_03.md:197, and snapshots/cycle_02/chapters/chapter_03.md:309 so chronology is carried by action/sensory shifts; retain no more than two explicit clock-stamp openings across this run.",
+      "acceptance_test": "PASS if the revised section keeps chronology clear while limiting explicit 'By/At/Around + time' openers to two or fewer; FAIL if temporal stamp openings still dominate paragraph starts."
+    },
+    {
+      "finding_id": "ch03_f07",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:129",
+      "problem": "Elliptical clipping appears in narration ('Not a cut yet.'), violating the constitution's ban on telegraphic subject-dropping in narrative prose.",
+      "rewrite_direction": "Rewrite the beat at snapshots/cycle_02/chapters/chapter_03.md:129 into grammatically complete narration that preserves threat without clipped fragments.",
+      "acceptance_test": "PASS if the revised line uses complete sentence syntax (explicit subject and predicate) while keeping the same pressure; FAIL if telegraphic fragmentary narration remains."
+    },
+    {
+      "finding_id": "ch03_f08",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:259",
+      "problem": "Mechanical lexical repetition flattens the admonition beat: 'Grocery arithmetic. Tuition arithmetic. Sleep arithmetic.' repeats the same abstract noun three times, creating token-loop texture instead of character-specific speech.",
+      "rewrite_direction": "Rework Cora's warning at snapshots/cycle_02/chapters/chapter_03.md:259 with concrete diner-floor and household imagery (for example bills, shifts, missed sleep) while avoiding repeated reuse of the same abstract keyword.",
+      "acceptance_test": "PASS if the revised line communicates the same pressure using varied concrete language and does not repeat a single abstract noun in three successive short sentences; FAIL if the triadic keyword loop remains."
+    }
+  ],
+  "summary": "Chapter 3 lands core plot beats and maintains past-tense continuity overall, but it still fails review due one HIGH canonical state mismatch, one HIGH sanitization-risk climax treatment, and multiple MEDIUM craft/dialogue/prose degradations (timidity after confession, idiolect blending, and repeated timestamp formulas).",
+  "coverage_scene_ids": [
+    "frontage_road_breakdown",
+    "pike_yard_negotiation",
+    "diner_dishpit_shift",
+    "post_shift_confession"
+  ]
+}

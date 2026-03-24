@@ -1,0 +1,82 @@
+{
+  "acceptance_targets": [
+    "[chapter_03_F004] PASS if each target span contains at least two paragraphs of explicit internal experience from a named focalizer and those beats alter how the next spoken line is read. FAIL if either span remains purely external action/dialogue for 10+ consecutive paragraphs.",
+    "[chapter_03_F005] PASS if the revised cited lines contain no more than two explicit \"voice\" state labels total and at least two moments communicate emotional shift through non-voice physical/action cues. FAIL if all four beats still rely on voice-state shorthand."
+  ],
+  "chapter_id": "chapter_03",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if each target span contains at least two paragraphs of explicit internal experience from a named focalizer and those beats alter how the next spoken line is read. FAIL if either span remains purely external action/dialogue for 10+ consecutive paragraphs.",
+      "chapter_id": "chapter_03",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:115; snapshots/cycle_02/chapters/chapter_03.md:135; snapshots/cycle_02/chapters/chapter_03.md:227; snapshots/cycle_02/chapters/chapter_03.md:245",
+      "finding_id": "chapter_03_F004",
+      "problem": "Two stretches run 10 consecutive paragraphs without focalized internal experience (115-135 and 227-245), pushing the chapter into screenplay mode during key leverage shifts.",
+      "rewrite_direction": "Inject close-third interior beats within snapshots/cycle_02/chapters/chapter_03.md:115 and snapshots/cycle_02/chapters/chapter_03.md:135, plus snapshots/cycle_02/chapters/chapter_03.md:227 and snapshots/cycle_02/chapters/chapter_03.md:245, tied to Elsie/Noreen's active appraisal (thought, sensation, memory, or self-assessment) rather than external observation only.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if the revised cited lines contain no more than two explicit \"voice\" state labels total and at least two moments communicate emotional shift through non-voice physical/action cues. FAIL if all four beats still rely on voice-state shorthand.",
+      "chapter_id": "chapter_03",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:77; snapshots/cycle_02/chapters/chapter_03.md:177; snapshots/cycle_02/chapters/chapter_03.md:261; snapshots/cycle_02/chapters/chapter_03.md:327",
+      "finding_id": "chapter_03_F005",
+      "problem": "Recurring \"voice + state-change adjective\" construction appears more than twice and becomes a prose tic, flattening tonal modulation (\"voice stayed light\", \"voice went gentler\", \"voice sharpened\", \"voice tidy\").",
+      "rewrite_direction": "Rework at least three of the cited lines in snapshots/cycle_02/chapters/chapter_03.md:77,177,261,327 to convey tone through varied channels (syntax fracture, gesture, breath, object interaction) instead of repeated voice-labeling.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "899f4b26f11a4d887df659df9222451e08e3fd248aa51bc252502d6d0d5ee1a5",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on prose and copyedit finish: diction precision, rhythm control, sentence-level clarity, grammar, line-level polish without flattening style, and explicit aesthetic-risk audit (sanitization is the primary risk \u2014 do not soften or euphemize; push toward creative risk and specificity).",
+    "key": "p3_prose_copyedit",
+    "label": "prose/copyedit fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "When edge cases arise, choose the more specific and potentially uncomfortable rendering if it is character-true and causally necessary. Intimacy, bodily risk, and moral compromise must be shown with concrete detail and aftermath, then integrated into later behavior rather than quarantined as a one-scene shock.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a draft abstracts pain, sex, coercion, blood, or economic shame at the exact moment consequence should be embodied, revise by replacing summary with physically and socially specific action tied to POV stakes.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High by default for spoken lines; uncontracted forms are marked choices for period formality, emphasis, or character-specific control behavior.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate structural engines across adjacent chapters: ensemble social scenes, inventory chapters, information-turn chapters, acted-upon pressure chapters, and aftermath chapters. Vary scene count (2 to 4), dialogue density, and interiority depth so consecutive chapters do not share the same pacing signature.",
+      "diction": "Period-authentic but readable contemporary English, favoring concrete nouns and precise verbs over lyrical abstraction.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person, alternating primarily between Elsie and Noreen, with occasional tightly limited deviations only when causal clarity requires it.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Sentence rhythm should alternate compressed pressure bursts with longer observational lines that carry social texture; avoid monotone paragraph cadence.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "chapter_id": "chapter_18",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_18_award_01",
+      "source": "award",
+      "severity": "HIGH",
+      "chapter_id": "chapter_18",
+      "evidence": "snapshots/cycle_02/chapters/chapter_18.md:209, snapshots/cycle_02/chapters/chapter_18.md:211, snapshots/cycle_02/chapters/chapter_18.md:217, snapshots/cycle_02/chapters/chapter_18.md:243",
+      "problem": "The final movement explains the ending instead of fully landing it. After Miren leaves, the chapter spends multiple consecutive paragraphs restating Gavin's moral arithmetic, his mediocrity relative to the Builders, and the ward threat, so the close arrives carrying a recap of ideas the novel has already taught the reader. That keeps the ending below shortlist-level force: it reads as a thesis coda rather than a terminal image the chapter trusts on its own.",
+      "rewrite_direction": "Rework the closing stretch at snapshots/cycle_02/chapters/chapter_18.md:209, snapshots/cycle_02/chapters/chapter_18.md:211, snapshots/cycle_02/chapters/chapter_18.md:217, and snapshots/cycle_02/chapters/chapter_18.md:243. Cut or sharply compress the repeated moral-calculus and cosmology recap, keep only the single fresh piece of information the reader still needs, and let the ending turn on one concrete action-image: Gavin choosing the page, bleeding on it, and continuing the work while the human world remains above him.",
+      "acceptance_test": "Pass if the revised closing movement from snapshots/cycle_02/chapters/chapter_18.md:203 through snapshots/cycle_02/chapters/chapter_18.md:249 contains no more than one short paragraph of cosmology/mechanics recap after Miren exits, and if the final two paragraphs end on Gavin's concrete act of reading rather than a second restatement of his mediocrity or the wards' thinning. Fail if the ending still relies on multiple explanatory paragraphs to restate stakes already established earlier in the chapter."
+    },
+    {
+      "finding_id": "chapter_18_craft_01",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_18",
+      "evidence": "snapshots/cycle_02/chapters/chapter_18.md:229, snapshots/cycle_02/chapters/chapter_18.md:231, snapshots/cycle_02/chapters/chapter_18.md:233",
+      "problem": "The chapter briefly retreats from the human aftermath at the exact point Gavin considers rejoining it. The Great Hall and the mourning students are rendered as a panoramic, future-tense overview rather than as immediate pressure arriving in the room, so his decision to stay with the manuscript lands against an idea of grief instead of a present sensory consequence. This is timidity rather than full sanitization, because the chapter has pressure traces elsewhere, but this beat still pulls back when it should bite harder.",
+      "rewrite_direction": "Revise the decision beat around snapshots/cycle_02/chapters/chapter_18.md:229 and snapshots/cycle_02/chapters/chapter_18.md:231. Keep Gavin in the sub-collection if you want, but replace the overview of what students 'would' do with concrete aftermath that reaches him now: sound, smoke, stretcher-noise, blood, broken stone, voices, or another immediate trace that makes the upstairs world physically present before he looks back to the manuscript at snapshots/cycle_02/chapters/chapter_18.md:233.",
+      "acceptance_test": "Pass if the revised passage replacing snapshots/cycle_02/chapters/chapter_18.md:229 through snapshots/cycle_02/chapters/chapter_18.md:233 includes at least one immediate aftermath detail that physically reaches Gavin before he turns back to the manuscript, and if the passage no longer relies on future-tense summary such as 'They would find' to supply that pressure. Fail if the beat remains a generalized overview instead of a scene-present intrusion."
+    },
+    {
+      "finding_id": "chapter_18_prose_01",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_18",
+      "evidence": "snapshots/cycle_02/chapters/chapter_18.md:31, snapshots/cycle_02/chapters/chapter_18.md:41, snapshots/cycle_02/chapters/chapter_18.md:149, snapshots/cycle_02/chapters/chapter_18.md:177, snapshots/cycle_02/chapters/chapter_18.md:243, snapshots/cycle_02/chapters/chapter_18.md:245",
+      "problem": "Several descriptive scaffolds recur often enough to read as chapter-level tics. Miren is framed through the same 'She looked like...' / 'She looked older than fifteen' pattern multiple times, and the ward danger is restated through repeated 'thinner than...' constructions. The repetition is noticeable rather than cumulative, which flattens moments that should feel freshly observed.",
+      "rewrite_direction": "Vary or cut the repeated likeness constructions at snapshots/cycle_02/chapters/chapter_18.md:31, snapshots/cycle_02/chapters/chapter_18.md:41, and snapshots/cycle_02/chapters/chapter_18.md:177, and consolidate the thinning refrain across snapshots/cycle_02/chapters/chapter_18.md:149, snapshots/cycle_02/chapters/chapter_18.md:243, and snapshots/cycle_02/chapters/chapter_18.md:245. Replace at least one repeated scaffold with a new action-level or tactile observation so each beat earns a distinct sentence shape.",
+      "acceptance_test": "Pass if the revised text uses the exact 'She looked like' scaffold no more than twice across snapshots/cycle_02/chapters/chapter_18.md:31 through snapshots/cycle_02/chapters/chapter_18.md:41 and snapshots/cycle_02/chapters/chapter_18.md:177, and if the closing sequence at snapshots/cycle_02/chapters/chapter_18.md:243 through snapshots/cycle_02/chapters/chapter_18.md:245 states the ward-thinning refrain once rather than in multiple adjacent sentences. Fail if those exact syntactic frames still recur three or more times."
+    }
+  ],
+  "summary": "Dialogue and voice work pass: Gavin and Miren stay distinct, contracted, and style-bible-consistent, and the chapter lands the required aftermath conversation with real emotional pressure. The chapter still fails overall because the ending explains its own stakes instead of trusting a final image, the human aftermath briefly pulls back into generalized summary when Gavin's refusal should feel most immediate, and repeated sentence scaffolds become noticeable prose tics.",
+  "coverage_scene_ids": [
+    "aftermath_conversation",
+    "return_to_manuscript"
+  ]
+}

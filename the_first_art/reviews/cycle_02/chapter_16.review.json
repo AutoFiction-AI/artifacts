@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_16",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch16-craft-01",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_02/chapters/chapter_16.md:9; snapshots/cycle_02/chapters/chapter_16.md:11; snapshots/cycle_02/chapters/chapter_16.md:13; snapshots/cycle_02/chapters/chapter_16.md:19",
+      "problem": "The opening handles the chapter's most volatile material as retrospective digest rather than live dramatic pressure. Open resistance, disappearances into the Room, corridor blood, and the Harry rumor all arrive as summary paragraphs before Gavin enters a scene with consequences. Under the constitution's sanitization rule, this is summary replacing scene at the point where the novel is supposed to make the school's collapse physically immediate.",
+      "rewrite_direction": "Replace part of snapshots/cycle_02/chapters/chapter_16.md:9-19 with a real-time corridor beat anchored around snapshots/cycle_02/chapters/chapter_16.md:21-29 or inserted just before snapshots/cycle_02/chapters/chapter_16.md:31. Put Gavin in the middle of one concrete act of DA logistics, Carrow authority failure, or rumor-driven movement so the chapter earns its chaos through present action instead of recap while preserving his detached priorities.",
+      "acceptance_test": "PASS if revised snapshots/cycle_02/chapters/chapter_16.md:9-29 contains at least one live action exchange in which student resistance or Carrow collapse changes the corridor situation while Gavin is present, with specific bodily or sensory consequences on the page; FAIL if those developments are still conveyed chiefly through retrospective summary."
+    },
+    {
+      "finding_id": "ch16-craft-02",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_02/chapters/chapter_16.md:53; snapshots/cycle_02/chapters/chapter_16.md:173",
+      "problem": "The chapter's date cues drift against canon continuity. The text explicitly places the afternoon in 'early May' and then frames the castle as battle-night 'tonight,' but the continuity sheet places chapter_16's resistance escalation in late April 1998 and reserves the Night of May 1 to dawn of May 2, 1998 for chapter_17. As written, chapter_16 muddies the canonical boundary between pre-battle deterioration and the battle window.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_16.md:53-55 and snapshots/cycle_02/chapters/chapter_16.md:171-183, either remove or reframe the early-May/battle-night cues so the chapter stays clearly in the late-April slot established by context/cycle_02/continuity_sheet.json, or add an explicit temporal transition that preserves chapter_17 as the May 1 battle night.",
+      "acceptance_test": "PASS if a reader can place revised snapshots/cycle_02/chapters/chapter_16.md:53-55 and snapshots/cycle_02/chapters/chapter_16.md:171-183 unambiguously before the Night of May 1 to dawn of May 2, 1998 battle window without contradicting the chapter's own date language; FAIL if the chapter still signals both an early-May battle night and a late-April continuity slot at once."
+    },
+    {
+      "finding_id": "ch16-award-01",
+      "source": "award",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_02/chapters/chapter_16.md:33; snapshots/cycle_02/chapters/chapter_16.md:45; snapshots/cycle_02/chapters/chapter_16.md:123; snapshots/cycle_02/chapters/chapter_16.md:133; snapshots/cycle_02/chapters/chapter_16.md:171; snapshots/cycle_02/chapters/chapter_16.md:181",
+      "problem": "The chapter's architecture loops the same work beat too many times: Gavin sits with the manuscript, explains why Builder maintenance exceeds him, and keeps reading. The wrist scene is the true change event, but the surrounding first and third movements echo each other so closely that the chapter reads as connective tissue rather than a distinct escalation on the eve of battle.",
+      "rewrite_direction": "Compress or merge one of the explanatory work loops in snapshots/cycle_02/chapters/chapter_16.md:33-47 or snapshots/cycle_02/chapters/chapter_16.md:121-141, then use the recovered space to sharpen the irreversible turn in snapshots/cycle_02/chapters/chapter_16.md:163-183 or to deepen the live human pressure before snapshots/cycle_02/chapters/chapter_16.md:31. The chapter should move through three different states, not restate one impossibility three times.",
+      "acceptance_test": "PASS if revised snapshots/cycle_02/chapters/chapter_16.md:31-47, snapshots/cycle_02/chapters/chapter_16.md:121-141, and snapshots/cycle_02/chapters/chapter_16.md:163-183 each introduce a distinct new condition or consequence, and only one of those spans carries the full explanation of why seventeen simultaneous variables exceed Gavin's cognition; FAIL if two or more spans still perform the same read-fail-explain loop."
+    },
+    {
+      "finding_id": "ch16-prose-01",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_02/chapters/chapter_16.md:17; snapshots/cycle_02/chapters/chapter_16.md:75; snapshots/cycle_02/chapters/chapter_16.md:83; snapshots/cycle_02/chapters/chapter_16.md:135; snapshots/cycle_02/chapters/chapter_16.md:139; snapshots/cycle_02/chapters/chapter_16.md:145; snapshots/cycle_02/chapters/chapter_16.md:179",
+      "problem": "A repeated negation-then-correction sentence shape becomes a prose tic: 'Not X, not Y, but Z,' 'Not healed - corrected,' 'not wrongness, exactly.' Used this often in one chapter, the construction stops feeling like Gavin thinking his way toward precision and starts feeling like an authorial fallback rhythm.",
+      "rewrite_direction": "Recast several of the cited sentences in direct affirmative language, especially snapshots/cycle_02/chapters/chapter_16.md:83, snapshots/cycle_02/chapters/chapter_16.md:139-145, and snapshots/cycle_02/chapters/chapter_16.md:179. Keep the negation/correction move only where the conceptual correction is itself the dramatic point, and vary the surrounding syntax everywhere else.",
+      "acceptance_test": "PASS if no more than two of the cited spans still rely on a negation-then-correction construction and the revised sentences state the perception directly; FAIL if three or more of snapshots/cycle_02/chapters/chapter_16.md:17, snapshots/cycle_02/chapters/chapter_16.md:75, snapshots/cycle_02/chapters/chapter_16.md:83, snapshots/cycle_02/chapters/chapter_16.md:135, snapshots/cycle_02/chapters/chapter_16.md:139, snapshots/cycle_02/chapters/chapter_16.md:145, and snapshots/cycle_02/chapters/chapter_16.md:179 still use the same formula."
+    }
+  ],
+  "summary": "Sparse dialogue stays natural and style-bible-consistent, but the chapter remains below pass on award, craft, and prose. The opening summarizes the school's collapse instead of staging it, the explicit date cues blur chapter_16's continuity slot against the May 1 battle window, the manuscript-work sections repeat the same explanatory loop, and a recurring negation/correction syntax hardens into a noticeable prose tic."
+}

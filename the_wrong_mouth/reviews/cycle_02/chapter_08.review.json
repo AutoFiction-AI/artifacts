@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_08",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH08_CRAFT_01",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_02/chapters/chapter_08.md:131; snapshots/cycle_02/chapters/chapter_08.md:133; snapshots/cycle_02/chapters/chapter_08.md:147; snapshots/cycle_02/chapters/chapter_08.md:223; snapshots/cycle_02/chapters/chapter_08.md:225; snapshots/cycle_02/chapters/chapter_08.md:227; snapshots/cycle_02/chapters/chapter_08.md:245",
+      "problem": "The chapter repeatedly translates its own revelations into diagnosis after the scene has already made them legible. Vess's missing-name beat lands at line 131, but line 133 immediately abstracts it into \"selective absence\"; Aldric's missing-death beat lands by lines 215-223, but lines 225-227 paraphrase the same inference again before the chapter moves into Maren's new responsibility. That self-explanation softens the eerie force of discovery and makes the quiet chapter feel more reported than turned.",
+      "rewrite_direction": "Revise the aftermath around snapshots/cycle_02/chapters/chapter_08.md:131-147 and snapshots/cycle_02/chapters/chapter_08.md:223-245 so the chapter trusts the fractures already on the page. Either cut the immediate diagnostic paraphrase or replace it with new dramatic work: a concrete implication Maren has to act on, a sharper relational beat with Vess, Aldric, or Derry, or a choice that shows responsibility instead of restating it. If Aldric names the pattern, that line needs to add information Maren could not already infer from the failed name retrieval or missing anger; if the chapter keeps the post-\"The System\" passage, it should introduce a new cost, plan, or fear rather than another abstract summary of removed memory.",
+      "acceptance_test": "Pass if the revised material at snapshots/cycle_02/chapters/chapter_08.md:131-147 contains Vess's failed retrieval and emotional cutoff without an immediate follow-up sentence that merely labels the phenomenon in abstract terms, unless that follow-up adds a new fact or decision. Pass if the revised material at snapshots/cycle_02/chapters/chapter_08.md:223-245 moves from Maren naming the System into either a new concrete consequence or choice, or the final staying beat; fail if two consecutive paragraphs in that span still only paraphrase that the memories were deliberately removed."
+    },
+    {
+      "finding_id": "CH08_PROSE_01",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_02/chapters/chapter_08.md:67; snapshots/cycle_02/chapters/chapter_08.md:81; snapshots/cycle_02/chapters/chapter_08.md:133; snapshots/cycle_02/chapters/chapter_08.md:145; snapshots/cycle_02/chapters/chapter_08.md:155; snapshots/cycle_02/chapters/chapter_08.md:191; snapshots/cycle_02/chapters/chapter_08.md:199; snapshots/cycle_02/chapters/chapter_08.md:205; snapshots/cycle_02/chapters/chapter_08.md:217",
+      "problem": "The narration falls back on the same nonliteral architecture and voice-annotation scaffold often enough to read as autopilot: \"load-bearing,\" \"construction,\" \"building,\" \"a man of complete sentences,\" and \"the voice of a...\" all arrive while the chapter is trying to show destabilized speech. Because the same template governs both Vess's and Aldric's disclosures, the prose starts explaining cadence instead of letting pause, interruption, and bodily detail do the work.",
+      "rewrite_direction": "Rework the interpretive narration in snapshots/cycle_02/chapters/chapter_08.md:67-81 and snapshots/cycle_02/chapters/chapter_08.md:191-217. Keep at most one architecture or construction metaphor where it directly serves the System material, and replace the rest with Maren-locked perception: the actual pause length, a change in breath, the hum, hand pressure on stone, Derry's glance, or the way a sentence breaks. Cut slogan-like tags such as the stand-alone characterization at snapshots/cycle_02/chapters/chapter_08.md:205 unless the revised line produces a sharper, less template-driven image.",
+      "acceptance_test": "Pass if, when reading snapshots/cycle_02/chapters/chapter_08.md:67-81 and snapshots/cycle_02/chapters/chapter_08.md:191-217, no more than one emotional beat is interpreted through construction or architecture language and the reader can still tell both Vess and Aldric are destabilized from the dialogue breaks and physical context alone. Fail if both passages still rely on repeated terms or equivalents like load-bearing, construction, building, structural wrongness, or other explicit voice-diagnosis formulas to explain the same effect."
+    }
+  ],
+  "summary": "Chapter 8 keeps continuity and tense intact, gives Vess and Aldric distinct enough speech to pass the dialogue audit, and does not sanitize its material. It still fails award, craft, and prose because the revelation beats are over-translated after they land and the narration leans on a repeated architecture and voice-explanation template that blunts the eerie force the chapter otherwise has."
+}

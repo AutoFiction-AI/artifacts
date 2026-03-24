@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_08",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch08_craft_001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_01/chapters/chapter_08.md:553",
+      "problem": "The dawn tableau breaks continuity with the required chapter handoff. This chapter says Delroy is absent and his pillow has not been touched, but the boundary for chapter 09 requires him to be in the apartment hearing Tiana come in at dawn. That makes the transition physically impossible without retroactive restaging.",
+      "rewrite_direction": "Restage the return beat around snapshots/cycle_01/chapters/chapter_08.md:549 and snapshots/cycle_01/chapters/chapter_08.md:553 so Delroy's location is compatible with the next chapter. Either show him physically present in or beside his bed when Tiana enters, or revise the final apartment tableau so nothing contradicts a continuation in which he hears the gate and her steps from inside the room.",
+      "acceptance_test": "Pass if a reader can move directly from the return sequence anchored at snapshots/cycle_01/chapters/chapter_08.md:549 and snapshots/cycle_01/chapters/chapter_08.md:553 into the boundary opening of chapter 09 without inventing an off-page teleport: Delroy must be visibly present, capable of hearing Tiana come in, and the text must not describe his pillow/place as untouched or empty."
+    },
+    {
+      "finding_id": "ch08_dialogue_001",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_01/chapters/chapter_08.md:285; snapshots/cycle_01/chapters/chapter_08.md:301; snapshots/cycle_01/chapters/chapter_08.md:333; snapshots/cycle_01/chapters/chapter_08.md:479",
+      "problem": "Malik's boundary-setting is clear, but the chapter stacks several polished diagnostic speeches in a row until he starts sounding like a calibration script for healthy communication rather than a tired young man with his own awkwardness and local roughness. That drifts toward the 'perfect-boyfriend therapy talk' the style bible explicitly warns against.",
+      "rewrite_direction": "Roughen one or two of Malik's major pressure beats at snapshots/cycle_01/chapters/chapter_08.md:285, snapshots/cycle_01/chapters/chapter_08.md:301, snapshots/cycle_01/chapters/chapter_08.md:333, and snapshots/cycle_01/chapters/chapter_08.md:479. Keep the leverage and consent clarity, but let at least some of it arrive through shorter colloquial phrasing, interruption, fatigue, or action instead of repeated fully articulated policy statements.",
+      "acceptance_test": "Pass if the bus exchange around snapshots/cycle_01/chapters/chapter_08.md:285 and snapshots/cycle_01/chapters/chapter_08.md:333 and the bed aftermath around snapshots/cycle_01/chapters/chapter_08.md:469 and snapshots/cycle_01/chapters/chapter_08.md:479 still make Malik's boundary legible while at least one beat in each passage lands through briefer, rougher speech or action rather than another polished diagnostic summary. Fail if both scenes still stack multiple clean explainers in Malik's voice."
+    },
+    {
+      "finding_id": "ch08_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_01/chapters/chapter_08.md:59; snapshots/cycle_01/chapters/chapter_08.md:249; snapshots/cycle_01/chapters/chapter_08.md:355; snapshots/cycle_01/chapters/chapter_08.md:435; snapshots/cycle_01/chapters/chapter_08.md:461; snapshots/cycle_01/chapters/chapter_08.md:539",
+      "problem": "A repeated negation-then-correction formula becomes audible across the chapter: 'it was not...', 'there was no...', 'it did not... it only...'. After the first few uses, the move stops feeling chosen and starts reading like a reusable sentence engine, which flattens otherwise strong prose.",
+      "rewrite_direction": "Recast several of the named beats at snapshots/cycle_01/chapters/chapter_08.md:59, snapshots/cycle_01/chapters/chapter_08.md:249, snapshots/cycle_01/chapters/chapter_08.md:355, snapshots/cycle_01/chapters/chapter_08.md:435, snapshots/cycle_01/chapters/chapter_08.md:461, and snapshots/cycle_01/chapters/chapter_08.md:539 so the passage states the condition directly or arrives through image/action rather than corrective negation. Preserve the meaning, but vary the attack.",
+      "acceptance_test": "Pass if, on reread of the named passages, at least three of them no longer rely on the 'not X / only Y' or 'no X / only Y' corrective frame and the chapter no longer repeats that move across the family scene, sex scene, and dawn ride. Fail if the same negation-first construction is still visibly doing the work in those specific spots."
+    }
+  ],
+  "summary": "The chapter lands its main spine well: Delroy's confession reads as shame rather than caricature, Marcia's anger stays focused on household math as well as betrayal, and the Malik scene does not sanitize sex, poverty, or aftermath. It still fails review because the dawn tableau contradicts the required next-chapter setup, Malik's dialogue drifts into overly diagnostic almost-therapeutic polish, and a repeated negation/correction sentence pattern starts to announce itself as a prose tic."
+}

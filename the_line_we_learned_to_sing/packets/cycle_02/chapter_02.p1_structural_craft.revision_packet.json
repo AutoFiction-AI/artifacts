@@ -1,0 +1,109 @@
+{
+  "acceptance_targets": [
+    "[CH2-F01] Pass if revised chapter_02 no longer presents Park Ji-eun as physically present and speaking in the studio sequence (lines 229-341 equivalent), and liability prompts no longer target PARK JIEUN by name (line 359 equivalent). Fail if Ji-eun remains an active scene participant in chapter_02 timeline.",
+    "[CH2-F02] Pass if the revised 399-405 equivalent includes at least two concrete consequences (for example: explicit recovery trigger, named account hold, direct human reaction) and avoids abstract moral-summary phrasing as the primary beat. Fail if the ending remains mostly conceptual commentary on harm.",
+    "[CH2-F03] Pass if revised lines 369-408 equivalent contain a direct Ina-family interaction that names the billing intervention and forces an immediate decision/rupture before the chapter ends. Fail if the chapter still jumps from alerts to travel summary without that confrontation.",
+    "[CH2-F04] Pass if revised passages identify who legally authorizes each transfer step, what contractual clause/workflow enables rapid execution, and one explicit friction point (review, cap, or rollback risk). Fail if consequences still appear instantaneous with no legible operational path."
+  ],
+  "chapter_id": "chapter_02",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if revised chapter_02 no longer presents Park Ji-eun as physically present and speaking in the studio sequence (lines 229-341 equivalent), and liability prompts no longer target PARK JIEUN by name (line 359 equivalent). Fail if Ji-eun remains an active scene participant in chapter_02 timeline.",
+      "chapter_id": "chapter_02",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:229",
+      "finding_id": "CH2-F01",
+      "problem": "Continuity contradiction: Park Ji-eun is onstage as an active pilot-table performer in chapter 2, but canon continuity places her first on-page availability from chapter 4 onward. This breaks timeline trust and destabilizes downstream state transitions tied to her debut and coercion arc.",
+      "rewrite_direction": "Revise the studio scene spans at snapshots/cycle_02/chapters/chapter_02.md:229-341 and notification lines at snapshots/cycle_02/chapters/chapter_02.md:359-361. Option A: replace Park Ji-eun with an unnamed/other performer in this chapter and remove performer-specific debt transfer stakes. Option B: if Ji-eun must appear, reframe as offstage reference only (no physical presence, no direct dialogue) and defer first embodied encounter to chapter 4-consistent placement.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if the revised 399-405 equivalent includes at least two concrete consequences (for example: explicit recovery trigger, named account hold, direct human reaction) and avoids abstract moral-summary phrasing as the primary beat. Fail if the ending remains mostly conceptual commentary on harm.",
+      "chapter_id": "chapter_02",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:399",
+      "finding_id": "CH2-F02",
+      "problem": "Sanitization drift at the chapter close: the prose retreats into abstract ethical summary at the exact moment where the narrative has set up concrete coercive consequence. This softens impact through conceptual language instead of embodied fallout.",
+      "rewrite_direction": "Rewrite the ending block at snapshots/cycle_02/chapters/chapter_02.md:399-405 to stage immediate material consequence in-scene: a concrete financial/legal/mechanical effect landing on a specific body or relationship right after CONFIRM ASSUMPTION. Keep moral ambiguity, but remove exculpatory abstraction and replace with observable cause-effect detail.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if revised lines 369-408 equivalent contain a direct Ina-family interaction that names the billing intervention and forces an immediate decision/rupture before the chapter ends. Fail if the chapter still jumps from alerts to travel summary without that confrontation.",
+      "chapter_id": "chapter_02",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:369",
+      "finding_id": "CH2-F03",
+      "problem": "Timidity/cutaway at peak relational pressure: the chapter tees up a volatile family confrontation (hospital call to father, fraud panic) and then defers the encounter off-page, reducing immediate narrative pressure.",
+      "rewrite_direction": "Revise the end sequence at snapshots/cycle_02/chapters/chapter_02.md:369-408 to include at least one on-page exchange (call or in-person) where Ina must answer for the guarantor intervention before scene exit. Keep chapter boundary to chapter 3, but make chapter 2 pay one relational cost in real time.",
+      "severity": "MEDIUM",
+      "source": "booker",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if revised passages identify who legally authorizes each transfer step, what contractual clause/workflow enables rapid execution, and one explicit friction point (review, cap, or rollback risk). Fail if consequences still appear instantaneous with no legible operational path.",
+      "chapter_id": "chapter_02",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:353",
+      "finding_id": "CH2-F04",
+      "problem": "Causal compression undermines plausibility: liability transfer, hospital posting, guarantor registration, and recovery-action warning all execute within minutes of a first-night probation signing with little procedural friction, reading as convenience rather than system behavior.",
+      "rewrite_direction": "Strengthen mechanism clarity in snapshots/cycle_02/chapters/chapter_02.md:317-326 and snapshots/cycle_02/chapters/chapter_02.md:353-394 by naming the enabling instrument(s), the authorizing actor(s), and at least one realistic gate/checkpoint. Preserve urgency, but show why speed is possible in this world instead of assuming it.",
+      "severity": "MEDIUM",
+      "source": "booker",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "d6d38929cefbe53446af63d35ee06b11038b7dac306a7e776d08ba88a78e98ac",
+  "must_fix_count": 4,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into uncomfortable specificity when stakes demand it: show coercion mechanics, sexual negotiation, grief rituals, and financial desperation at scene level. In edge cases, prefer precision over decorum; protect character dignity through perspective accuracy, not by omitting the hard material.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene requires bodily, economic, or moral consequence and the draft retreats into abstract phrasing, rewrite with concrete action, sensation, and decision impact before proceeding.",
+      "operational_resolution_rule": "When uncertain between tasteful distance and narrative truth, choose the version that preserves causal accountability and embodied consequence, then tune language for clarity rather than softness.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the baseline in spoken dialogue; uncontracted forms are reserved for deliberate emphasis, legal language, or character-specific formality.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate chapter structures deliberately: high-density dialogue vs interior reflection, multi-scene public collision vs two-scene intimate pressure, aftermath inventory vs anticipatory dread. Never let two consecutive chapters share the same pacing architecture or turn mechanism.",
+      "diction": "Contemporary, unsentimental literary diction that permits technical vocabulary, profanity, and class-marked speech without flattening idiolects.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third person centered on Seo Ina, with brief controlled widenings in public-event chapters.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Alternating pressure waves: compressed clauses in operational stress, longer breath-based lines in grief and reflection.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

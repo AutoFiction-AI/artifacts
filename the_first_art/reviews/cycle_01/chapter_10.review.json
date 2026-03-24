@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_10",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_10_award_001",
+      "source": "award",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:13; snapshots/cycle_01/chapters/chapter_10.md:55; snapshots/cycle_01/chapters/chapter_10.md:67; snapshots/cycle_01/chapters/chapter_10.md:85; snapshots/cycle_01/chapters/chapter_10.md:157; snapshots/cycle_01/chapters/chapter_10.md:159",
+      "problem": "The chapter keeps returning to the same emotional device: care expressed through slightly broken, lopsided, or malfunctioning objects. The fairy lights, garland, hand warmer, scarf, and game deck all land on the same 'flawed but endearing' note, so the Christmas tenderness starts to feel curated rather than freshly discovered. That repetition lowers the chapter's award-level surprise and originality.",
+      "rewrite_direction": "Diversify the emotional textures in snapshots/cycle_01/chapters/chapter_10.md:13 through snapshots/cycle_01/chapters/chapter_10.md:15, snapshots/cycle_01/chapters/chapter_10.md:55 through snapshots/cycle_01/chapters/chapter_10.md:71, snapshots/cycle_01/chapters/chapter_10.md:85 through snapshots/cycle_01/chapters/chapter_10.md:95, and snapshots/cycle_01/chapters/chapter_10.md:157 through snapshots/cycle_01/chapters/chapter_10.md:159. Keep one or two imperfect-object beats, but let the others land through different pressures such as scarcity, embarrassment, appetite, or relief, and cut at least one narrator gloss that explicitly turns imperfection into charm.",
+      "acceptance_test": "Pass if, in the revised passages at snapshots/cycle_01/chapters/chapter_10.md:13-15, snapshots/cycle_01/chapters/chapter_10.md:55-71, snapshots/cycle_01/chapters/chapter_10.md:85-95, and snapshots/cycle_01/chapters/chapter_10.md:157-159, no more than two separate objects or decorations are framed primarily as lovable because they are faulty, and at least one of those moments lands through a different emotional vector that is directly visible on the page. Fail if the sequence still stacks repeated 'wonky but touching' beats as the dominant texture of the day."
+    },
+    {
+      "finding_id": "chapter_10_craft_001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:193; snapshots/cycle_01/chapters/chapter_10.md:199; snapshots/cycle_01/chapters/chapter_10.md:203; snapshots/cycle_01/chapters/chapter_10.md:211",
+      "problem": "The decisive late-night ward-contact scene establishes real physical pressure, then blinks into abstraction and definition-by-negation: 'Not a creature. Not a mind... Just a condition.' The style bible and constitution explicitly forbid euphemistic cosmic vagueness at exactly this kind of moment. Here the chapter explains the threat instead of fully rendering what direct contact feels like, which reads as sanitization/timidity in the climax.",
+      "rewrite_direction": "Rework snapshots/cycle_01/chapters/chapter_10.md:191 through snapshots/cycle_01/chapters/chapter_10.md:205 and snapshots/cycle_01/chapters/chapter_10.md:211 so Gavin's first direct perception is carried by immediate bodily and environmental consequences before interpretation. Add concrete sensory fallout from the pressure at the window, then let Gavin infer indifference and incompatibility from what his body and the corridor register rather than from a run of abstract labels.",
+      "acceptance_test": "Pass if the revised material at snapshots/cycle_01/chapters/chapter_10.md:191-205 includes at least two directly rendered bodily or environmental effects of the pressure and no paragraph whose main move is listing what the force is not. Fail if the scene still depends mainly on abstract nouns such as 'condition' or on explanatory negation without new sensory consequence."
+    },
+    {
+      "finding_id": "chapter_10_dialogue_001",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:135",
+      "problem": "Keir's Amycus impression reuses the style bible's calibration-only Amycus line almost verbatim. That is an explicit dialogue-rule breach: example lines are for register calibration only and must never appear in draft text. The moment therefore reads as sourced from notes instead of spoken in scene.",
+      "rewrite_direction": "Replace the quoted wording in snapshots/cycle_01/chapters/chapter_10.md:133 through snapshots/cycle_01/chapters/chapter_10.md:145 with new Carrow-like phrasing that keeps the same social effect on Duncan without echoing the style-bible sentence shape or keyword sequence. Preserve the trigger, apology, and fallout, but rebuild the impression from fresh syntax and diction.",
+      "acceptance_test": "Pass if the revised exchange at snapshots/cycle_01/chapters/chapter_10.md:133-145 contains no sentence that verbatim or near-verbatim matches any Amycus example line in outline/style_bible.json, while Duncan still visibly freezes before recovering. Fail if the impression still hinges on 'Which one of you... No volunteers? That's all right' or a close variant."
+    },
+    {
+      "finding_id": "chapter_10_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:193; snapshots/cycle_01/chapters/chapter_10.md:197; snapshots/cycle_01/chapters/chapter_10.md:199; snapshots/cycle_01/chapters/chapter_10.md:203; snapshots/cycle_01/chapters/chapter_10.md:211",
+      "problem": "The final scene repeats the same explanatory comparison scaffold over and over: 'the way you might...', 'the way you understand...', 'the way the floor is...', 'the way a river...', 'the way weather...', 'the way you feel...'. Gavin should use ordinary analogies, but this many in one short span becomes a prose tic and flattens the climax into patterned explanation.",
+      "rewrite_direction": "Vary the sentence architecture in snapshots/cycle_01/chapters/chapter_10.md:193 through snapshots/cycle_01/chapters/chapter_10.md:211. Keep at most two comparison-led sentences in that stretch and replace the others with direct sensory statements, harder image structures, or plainer declaratives that do not route every perception through the same 'the way...' template.",
+      "acceptance_test": "Pass if the revised span at snapshots/cycle_01/chapters/chapter_10.md:193-211 uses 'the way...' or equivalent comparison-led framing no more than twice and still clearly communicates pressure, indifference, and thinning wards. Fail if three or more sentences in that span still rely on the same comparative construction."
+    }
+  ],
+  "summary": "Strong continuity control, clear character-voice alignment for Gavin, Miren, and Duncan, and no tense drift or canon contradiction detected. The chapter still fails this pass because it violates the style-bible ban on reusing calibration dialogue, leans too hard on curated imperfect-object tenderness, and softens its most important cosmic beat into abstraction right where the book's own rules demand harsher sensory specificity."
+}

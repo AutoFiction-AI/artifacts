@@ -1,0 +1,85 @@
+{
+  "acceptance_targets": [
+    "[ch07-prose-001] PASS if no more than two of the five flagged passages still rely on a visible negation-correction template and the revised beats remain understandable through concrete description alone. FAIL if three or more of those same passages still hinge on the same rhetorical reversal.",
+    "[ch07-prose-002] PASS if at least two of the three flagged moments are revised so the beat lands through something Halima can see, hear, or physically feel on the page rather than through a personified abstract noun or 'story/phrase' carrying the load by itself. FAIL if two or more of those moments still depend on abstract shorthand."
+  ],
+  "chapter_id": "chapter_07",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if no more than two of the five flagged passages still rely on a visible negation-correction template and the revised beats remain understandable through concrete description alone. FAIL if three or more of those same passages still hinge on the same rhetorical reversal.",
+      "chapter_id": "chapter_07",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_07.md:77; snapshots/cycle_02/chapters/chapter_07.md:93; snapshots/cycle_02/chapters/chapter_07.md:147; snapshots/cycle_02/chapters/chapter_07.md:183; snapshots/cycle_02/chapters/chapter_07.md:329",
+      "finding_id": "ch07-prose-001",
+      "problem": "The chapter keeps returning to the same negation-then-correction sentence shape: not trust, not a crowd, not agreement, worse than official, not the same as repair. Used this often, the move stops feeling like a deliberate rhythm choice and starts reading as an autopilot prose tic.",
+      "rewrite_direction": "Rework at least three of the repeated corrective beats at snapshots/cycle_02/chapters/chapter_07.md:77, snapshots/cycle_02/chapters/chapter_07.md:93, snapshots/cycle_02/chapters/chapter_07.md:147, snapshots/cycle_02/chapters/chapter_07.md:183, and snapshots/cycle_02/chapters/chapter_07.md:329 so the pressure is conveyed through direct image, body language, sound, or object detail instead of the same not-X / actually-Y turn.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if at least two of the three flagged moments are revised so the beat lands through something Halima can see, hear, or physically feel on the page rather than through a personified abstract noun or 'story/phrase' carrying the load by itself. FAIL if two or more of those moments still depend on abstract shorthand.",
+      "chapter_id": "chapter_07",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_07.md:187; snapshots/cycle_02/chapters/chapter_07.md:205; snapshots/cycle_02/chapters/chapter_07.md:371",
+      "finding_id": "ch07-prose-002",
+      "problem": "Several transition beats hand emotional weight to personified abstractions ('The word yet did its work and sat down,' 'the story had already learned how to walk,' 'The phrase sat between the tea glasses'). Those lines are neat, but they lift the narration above Halima's tactile close-third register right when rumor is supposed to feel bodily and social.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_07.md:187, snapshots/cycle_02/chapters/chapter_07.md:205, and snapshots/cycle_02/chapters/chapter_07.md:371, replace at least two of the authorial shorthand lines with observable reactions Halima can actually register: a repeated word in the lane, a watcher carrying the accusation onward, a silence or gesture around the tea glasses, or another concrete social consequence.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "028514f139d64f4736a5583cd6164fe85b57234e4e0acc7eb2afda052edb703a",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on prose and copyedit finish: diction precision, rhythm control, sentence-level clarity, grammar, line-level polish without flattening style, and explicit aesthetic-risk audit (sanitization is the primary risk \u2014 do not soften or euphemize; push toward creative risk and specificity).",
+    "key": "p3_prose_copyedit",
+    "label": "prose/copyedit fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into contradiction: mercy that creates future damage, tenderness inside humiliation, and paperwork treated as an instrument of violence. In edge cases, choose the more socially and bodily specific version over the tasteful summary or thematic paraphrase.",
+      "dark_content_allowed_when_character_true": true,
+      "edge_case_resolution": "When a scene risks becoming too neat, keep the hurt visible and let no one explain it away too quickly. When a scene risks becoming lurid, keep it tethered to character perception, material fact, and consequence rather than spectacle.",
+      "euphemism_penalty": "If bodily pain, sexual threat, shame, hunger, or bureaucratic exclusion matter in a scene, they must register in specific lived detail; vague softening counts as a failed draft.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High in rendered English dialogue; contractions are the norm, with fuller forms reserved for emphasis, institutional performance, or character-specific formality.",
+      "dialect_rendering_policy": "Render Bangla and char-specific speech through rhythm, hierarchy, metaphor, and social assumption, not through phonetic misspelling or exoticized broken English.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1,
+      "subtext_requirement": "Most important exchanges should carry a visible practical agenda and a second, less speakable pressure beneath it, especially around kinship, shame, and money."
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate public pressure with private reckoning, crowd scenes with object-heavy aftermath, and dialogue-dense chapters with chapters driven by inventory, travel, weather, or delayed information. No two consecutive chapters should rely on the same scene count, confrontation style, or emotional tempo.",
+      "diction": "Plainspoken but exact, letting bureaucratic vocabulary and domestic vocabulary sit in the same paragraph without either swallowing the other; lyric lift should emerge from concrete detail, not ornamental abstraction.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third with one focal consciousness per scene, anchored primarily to Halima and opening selectively to Nura or Kashem only where the outline assigns that pressure.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Flexible sentence music: longer accrual sentences for weather, labor, and memory; short declarative cuts for administrative harm, revelation, and emotional impact.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

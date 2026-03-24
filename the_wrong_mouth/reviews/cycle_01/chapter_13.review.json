@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_13",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH13_DIALOGUE_CALIBRATION_LEAK",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:203; snapshots/cycle_01/chapters/chapter_13.md:235; snapshots/cycle_01/chapters/chapter_13.md:239",
+      "problem": "The farewell exchange leaks calibration language from the style bible and then resolves on a polished self-explanatory line, so the chapter's emotional centerpiece reads workshopped rather than overheard. Derry's shared-memory beat at line 203 closely tracks the forbidden example-line scaffold about Grenn's barn and the cow, the garden callback at line 235 lands on the same tomatoes phrasing seeded in the style bible, and Maren's reply at line 239 turns into a neat thesis about his own profession instead of pressured speech.",
+      "rewrite_direction": "Replace the memory beat at snapshots/cycle_01/chapters/chapter_13.md:203 with a different shared incident that belongs specifically to this draft, and rebuild the garden callback at snapshots/cycle_01/chapters/chapter_13.md:235 around a fresh concrete detail rather than the tomato-example scaffold. Revise Maren's answer at snapshots/cycle_01/chapters/chapter_13.md:239 so it stays emotionally legible but sounds like Maren under strain, not an authored explanation of his habits.",
+      "acceptance_test": "Pass if the revised exchange at snapshots/cycle_01/chapters/chapter_13.md:203 uses a different remembered event than the Grenn's-barn/cow example, the beat at snapshots/cycle_01/chapters/chapter_13.md:235 no longer hinges on the style-bible tomato phrasing, and Maren's answer at snapshots/cycle_01/chapters/chapter_13.md:239 communicates why he remembers without turning into a quotable thesis about himself. Fail if the emotional peak still depends on those recognizable calibration scaffolds or on a polished explanatory line."
+    },
+    {
+      "finding_id": "CH13_CRAFT_PREDECODED_BETRAYAL",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:29; snapshots/cycle_01/chapters/chapter_13.md:63; snapshots/cycle_01/chapters/chapter_13.md:77; snapshots/cycle_01/chapters/chapter_13.md:103; snapshots/cycle_01/chapters/chapter_13.md:131; snapshots/cycle_01/chapters/chapter_13.md:227",
+      "problem": "The chapter keeps decoding Derry's withdrawal for the reader instead of trusting the staged evidence. Silence, posture, failed humor, and Derry's own circling speech already establish the pending departure, but the narration and internal voices keep rephrasing that same fact as rehearsal, bridge-building, already-made-deal, and absolution. The result is a scene whose pressure is repeatedly explained instead of allowed to tighten.",
+      "rewrite_direction": "Thin the interpretive gloss around snapshots/cycle_01/chapters/chapter_13.md:29, snapshots/cycle_01/chapters/chapter_13.md:63, snapshots/cycle_01/chapters/chapter_13.md:77, snapshots/cycle_01/chapters/chapter_13.md:103, and snapshots/cycle_01/chapters/chapter_13.md:131 so the body-language engine carries more of the scene. At snapshots/cycle_01/chapters/chapter_13.md:227, either cut Aldric's motive-summary or replace it with a line that creates new pressure rather than translating what the exchange has already made legible.",
+      "acceptance_test": "Pass if, reading from snapshots/cycle_01/chapters/chapter_13.md:29 through snapshots/cycle_01/chapters/chapter_13.md:115, the reader can infer Derry's impending departure from staging, silence, and Derry's halting logistics talk without the chapter separately labeling him as rehearsing, bridge-building, and already dealt. Pass if the post-embrace beat at snapshots/cycle_01/chapters/chapter_13.md:227 adds fresh friction or is removed. Fail if the revised scene still re-explains the same subtext in multiple diagnostic summaries."
+    },
+    {
+      "finding_id": "CH13_PROSE_APHORISTIC_ENDING",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:229; snapshots/cycle_01/chapters/chapter_13.md:277; snapshots/cycle_01/chapters/chapter_13.md:285; snapshots/cycle_01/chapters/chapter_13.md:289",
+      "problem": "After the chapter has already landed Derry's departure through the empty camp and the left-behind pot, the closing prose swerves into abstract, aphoristic paraphrase. Lines about what friendship is, what betrayals-from-love are, and the 'specific, non-transferable loneliness' of the moment step outside Maren's colloquial close-third and start summarizing the chapter's meaning instead of letting the pot, fork, road, and changed weight of the pack carry it.",
+      "rewrite_direction": "Keep the concrete arrival point at Derry's absence and the pot, then compress and re-ground the ending around observable consequence at snapshots/cycle_01/chapters/chapter_13.md:229, snapshots/cycle_01/chapters/chapter_13.md:277, snapshots/cycle_01/chapters/chapter_13.md:285, and snapshots/cycle_01/chapters/chapter_13.md:289. Preserve the must-land beats that Derry is gone, Caul has the direction, and Maren takes the left fork toward the Crook, but express the emotional cost through body, object, motion, and tactical reality rather than thesis language.",
+      "acceptance_test": "Pass if the revised ending still shows the empty campsite, the iron pot, Caul's operational advantage, and Maren choosing the left fork, but the closing paragraphs after snapshots/cycle_01/chapters/chapter_13.md:257 no longer explain friendship, betrayal, or loneliness in abstract aphoristic formulations. Fail if the revised close still contains equivalent summary statements where the scene has already made the point through the pot, fork, and altered travel conditions."
+    }
+  ],
+  "summary": "FAIL across all four lenses. Continuity and narrative tense hold, and the chapter does land the required state shift of Derry leaving and Caul gaining the direction, but the defining goodbye is undercut by style-bible calibration leakage in the dialogue, repeated interpretive gloss that pre-decodes the betrayal, and a closing run of aphoristic summary that keeps paraphrasing what the empty campsite and iron pot already made legible."
+}

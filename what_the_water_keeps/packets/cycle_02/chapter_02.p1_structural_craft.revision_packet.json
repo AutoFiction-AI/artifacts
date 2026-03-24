@@ -1,0 +1,82 @@
+{
+  "acceptance_targets": [
+    "[chapter_02_craft_001] Pass if the revised passage anchored at snapshots/cycle_02/chapters/chapter_02.md:281, snapshots/cycle_02/chapters/chapter_02.md:283, snapshots/cycle_02/chapters/chapter_02.md:295, and snapshots/cycle_02/chapters/chapter_02.md:299 includes at least one concrete Gabriel-page fact (for example a burial note, false father line, date, or location marker) and Della reacts to that exact fact; fail if the scene still relies only on abstract dread or generic danger language without exposing any record detail.",
+    "[chapter_02_craft_002] Pass if each revised paragraph in the cited span either introduces a new ledger fact, escalates a concrete risk of discovery or use, or changes Della's next action; fail if adjacent paragraphs still restate the same protection-versus-truth argument without altering the plan on the page."
+  ],
+  "chapter_id": "chapter_02",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if the revised passage anchored at snapshots/cycle_02/chapters/chapter_02.md:281, snapshots/cycle_02/chapters/chapter_02.md:283, snapshots/cycle_02/chapters/chapter_02.md:295, and snapshots/cycle_02/chapters/chapter_02.md:299 includes at least one concrete Gabriel-page fact (for example a burial note, false father line, date, or location marker) and Della reacts to that exact fact; fail if the scene still relies only on abstract dread or generic danger language without exposing any record detail.",
+      "chapter_id": "chapter_02",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:281; snapshots/cycle_02/chapters/chapter_02.md:283; snapshots/cycle_02/chapters/chapter_02.md:289",
+      "finding_id": "chapter_02_craft_001",
+      "problem": "The midnight ledger scene reaches Gabriel's page and then backs away into generalized dread instead of showing even one concrete fact from the entry. Because Gabriel is the book's central buried danger, this reads as sanitizing timidity: the chapter inventories other brutal histories but withholds the one record detail that would make Della's reactivation of the ledger feel immediately costly.",
+      "rewrite_direction": "Rework the sequence centered on snapshots/cycle_02/chapters/chapter_02.md:281, snapshots/cycle_02/chapters/chapter_02.md:283, snapshots/cycle_02/chapters/chapter_02.md:295, and snapshots/cycle_02/chapters/chapter_02.md:299 so Della reaches Gabriel's page and encounters at least one specific notation from it before she sets her rule for disclosure. The scene can still withhold the full family confession, but it needs a concrete datum from the page itself so the hearing notice and the hidden burial collide on the page rather than only in mood.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if each revised paragraph in the cited span either introduces a new ledger fact, escalates a concrete risk of discovery or use, or changes Della's next action; fail if adjacent paragraphs still restate the same protection-versus-truth argument without altering the plan on the page.",
+      "chapter_id": "chapter_02",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:263; snapshots/cycle_02/chapters/chapter_02.md:273; snapshots/cycle_02/chapters/chapter_02.md:277; snapshots/cycle_02/chapters/chapter_02.md:301",
+      "finding_id": "chapter_02_craft_002",
+      "problem": "Once the ledger opens, the scene keeps re-arguing Della's ethics in overlapping thesis statements after the central point is already clear. The first entries establish the book's function, but the later paragraphs keep restating truth-versus-protection in summary form, which eases off the live pressure of June's wakefulness, Rafe's suspicion, and the practical question of what Della will actually do before Sadie's hearing.",
+      "rewrite_direction": "Condense and sharpen the ledger argument at snapshots/cycle_02/chapters/chapter_02.md:263, snapshots/cycle_02/chapters/chapter_02.md:273, snapshots/cycle_02/chapters/chapter_02.md:277, snapshots/cycle_02/chapters/chapter_02.md:301, and snapshots/cycle_02/chapters/chapter_02.md:303. Keep one or two representative entries and one moral counterthought, then drive the scene through a concrete operational choice about what she will use, what she will not use, and how she will keep the book from the rest of the house tonight.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "6339e2731d4958a8488c7485b03bf7ff7b464c454c674bb43dd68f1f4c77324c",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into morally compromised caretaking, the bureaucratic brutality of naming, and the physical labor of moving the dead. When an edge case appears, prefer the detail a witness would remember over the phrasing a polite narrator would use. Let tenderness exist inside harsh material without cleaning the harshness off.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If childbirth, exhumation, poverty, sexual history, bodily decay, or violence enters a scene, render it through specific sensation and consequence; summarizing away the hard fact counts as a failed pass, not tasteful restraint.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High overall; contractions are the norm across dialogue, with fuller forms reserved for class performance, legal formality, deliberate emphasis, or a character trying not to lose composure.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate public labor chapters with quieter domestic or inventory chapters, vary scene count and dialogue density, let some chapters turn on information or paperwork rather than confrontation, and ensure no two consecutive chapters share the same dominant mechanism, pace, or emotional temperature.",
+      "diction": "Plainspoken historical Appalachian-Southern English without caricature; concrete, unsentimental, regionally grounded, and alert to how legal language clashes with lived speech.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third centered on Della Bledsoe, intimate enough to track bodily memory and evasive thought while never slipping into other characters' interior monologue as fact",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Alternate muscular work-sentence compression with longer accumulating sentences that carry memory, atmosphere, and moral weight; let cadence tighten in hearings and exhumations, then widen in domestic or reflective passages.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

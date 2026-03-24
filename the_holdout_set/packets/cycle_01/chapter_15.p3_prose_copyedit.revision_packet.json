@@ -1,0 +1,82 @@
+{
+  "acceptance_targets": [
+    "[ch15-prose-001] Pass if, across the revised cited lines, no more than one beat still uses an isolated fragment followed by an abstract commentary sentence; the remaining beats must be legible as physical action, sensory observation, or character-specific interior syntax. Fail if three or more of those cited beats still use the same fragment-plus-gloss shape.",
+    "[ch15-prose-002] Pass if the revised span around snapshots/cycle_01/chapters/chapter_15.md:293 through snapshots/cycle_01/chapters/chapter_15.md:299 still ends in concrete bodily consequence but uses one dominant image and no more than one sentence of direct thematic interpretation. Fail if the revision still pairs symbolic staging and full explanatory paraphrase in the same beat."
+  ],
+  "chapter_id": "chapter_15",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if, across the revised cited lines, no more than one beat still uses an isolated fragment followed by an abstract commentary sentence; the remaining beats must be legible as physical action, sensory observation, or character-specific interior syntax. Fail if three or more of those cited beats still use the same fragment-plus-gloss shape.",
+      "chapter_id": "chapter_15",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_15.md:67, snapshots/cycle_01/chapters/chapter_15.md:189, snapshots/cycle_01/chapters/chapter_15.md:199, snapshots/cycle_01/chapters/chapter_15.md:235, snapshots/cycle_01/chapters/chapter_15.md:249, snapshots/cycle_01/chapters/chapter_15.md:295 - the chapter repeatedly lands on isolated fragments and aphoristic glosses (\"Not warm. Not celebratory.\" / \"Practical version.\" / \"There it was. Assuming.\" / \"Timing. As if timing were weather too.\" / \"Not calm. Not clarity...\").",
+      "finding_id": "ch15-prose-001",
+      "problem": "The prose relies on the same fragment-then-gloss construction far more than twice, which turns a once-effective move into a tic. By the late committee exchanges and bathroom aftermath, the narration is announcing its sharpness instead of letting Leela's syntax, bodily sensation, and the room's pressure generate that sharpness organically.",
+      "rewrite_direction": "Revise snapshots/cycle_01/chapters/chapter_15.md:67, snapshots/cycle_01/chapters/chapter_15.md:189, snapshots/cycle_01/chapters/chapter_15.md:199, snapshots/cycle_01/chapters/chapter_15.md:235, snapshots/cycle_01/chapters/chapter_15.md:249, and snapshots/cycle_01/chapters/chapter_15.md:295 so only one of those beats keeps the isolated-fragment/aphoristic pattern. Recast the others into sentences anchored in action, sound, touch, or Leela's clause-heavy stress syntax rather than abstract editorial gloss.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if the revised span around snapshots/cycle_01/chapters/chapter_15.md:293 through snapshots/cycle_01/chapters/chapter_15.md:299 still ends in concrete bodily consequence but uses one dominant image and no more than one sentence of direct thematic interpretation. Fail if the revision still pairs symbolic staging and full explanatory paraphrase in the same beat.",
+      "chapter_id": "chapter_15",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_15.md:293, snapshots/cycle_01/chapters/chapter_15.md:295, snapshots/cycle_01/chapters/chapter_15.md:299 - the blood lands directly on \"further review,\" then the narration immediately decodes the image as \"a packet, a recommendation, a promise of later\" and \"Mohit's favorite terrain.\"",
+      "finding_id": "ch15-prose-002",
+      "problem": "The bathroom climax slightly overdetermines its own symbol. The chapter has already earned bodily fallout, but the blood-on-paper image and the immediate thematic explanation arrive together at full volume, which makes the turn feel arranged rather than observed.",
+      "rewrite_direction": "Simplify snapshots/cycle_01/chapters/chapter_15.md:293, snapshots/cycle_01/chapters/chapter_15.md:295, and snapshots/cycle_01/chapters/chapter_15.md:299 so the realization is carried either by the blood/paper collision or by Leela's interpretive line, not both at equal intensity. Keep the scene materially specific, but leave at least one inferential step for the reader.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "f92e3622d706cdd71cc94d47f90fbabde100e15ed56a39ea7e2d8d23361c340d",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on prose and copyedit finish: diction precision, rhythm control, sentence-level clarity, grammar, line-level polish without flattening style, and explicit aesthetic-risk audit (sanitization is the primary risk \u2014 do not soften or euphemize; push toward creative risk and specificity).",
+    "key": "p3_prose_copyedit",
+    "label": "prose/copyedit fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into the absurdity and cruelty of graduate labor without converting the book into caricature or chase-plot menace. In edge cases, prefer the messier and more compromising version of events if it yields stronger human consequence and remains causally plausible; render sex, professional theft, bureaucratic harm, and emotional pettiness with the same specificity as any technical problem.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene turns vague at the exact point humiliation, erotic charge, class shame, visa fear, or institutional cruelty becomes concrete, rewrite until the cost is materially and socially legible.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High; contractions are the baseline in speech, and uncontracted forms should appear only for deliberate precision, class performance, emotional emphasis, or character-specific formality.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate public and private pressure, ensemble chapters and solitary ones, bureaucratic scenes and domestic scenes, deadline compression and aftermath inventory, so no two adjacent chapters rely on the same structural rhythm or dialogue density.",
+      "diction": "Contemporary literary English grounded in material detail; technical language should appear only when the social reality of the lab requires it, and it should never replace bodily or relational consequence.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person centered on Leela, with occasional brief widenings that register group mood and institutional atmosphere without leaving her interpretive frame.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Alternate compressed observational lines with longer accrual sentences that can carry comedy, shame, and procedural dread in the same movement; quiet chapters should breathe, deadline chapters should tighten without turning telegraphic.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_09",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "PASS",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "DIALOGUE_EXAMPLE_LINE_COPY",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:87; snapshots/cycle_01/chapters/chapter_09.md:91; snapshots/cycle_01/chapters/chapter_09.md:95",
+      "problem": "Vess's threat-rating exchange lifts a calibration-only style-bible example almost verbatim: the chapter reuses the exact \"She'd kill you in two moves\" phrasing and the surrounding serial move-count ladder. Because this lands inside one of the chapter's defining comic/tactical beats, it reads as borrowed voice rather than authored voice.",
+      "rewrite_direction": "Rebuild Vess's scan of the market at snapshots/cycle_01/chapters/chapter_09.md:87-95 so she still sounds flat, tactical, and precise but does not reuse the example-line wording or its same count-the-people-by-moves cadence. Keep the beat's function, but change the observation unit, ordering, and sentence shape so the exchange feels chapter-native rather than style-bible-derived.",
+      "acceptance_test": "In a revision of snapshots/cycle_01/chapters/chapter_09.md:87-95, Vess still gives at least two concrete threat assessments, but the passage no longer contains the phrase \"She'd kill you in two moves\" or a near-verbatim serial echo of the calibration line. Fail if a reader can match the revised exchange to the style-bible example on first read."
+    },
+    {
+      "finding_id": "PROSE_CLIPPED_FRAGMENT_DRIFT",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:161; snapshots/cycle_01/chapters/chapter_09.md:163; snapshots/cycle_01/chapters/chapter_09.md:177; snapshots/cycle_01/chapters/chapter_09.md:215; snapshots/cycle_01/chapters/chapter_09.md:321; snapshots/cycle_01/chapters/chapter_09.md:331",
+      "problem": "The narration repeatedly falls into clipped fragment shorthand at pressure points (\"Not to Maren's face.\" \"Looked at it again.\" \"Eleven years.\" \"His absence on it.\" \"Not a rumor anymore.\"). That recurring scaffold pushes the chapter toward thriller-style telegraphy the constitution and style bible explicitly forbid, replacing embodied flow with manufactured punchiness.",
+      "rewrite_direction": "Revise the fragment-heavy narration at snapshots/cycle_01/chapters/chapter_09.md:161-177 and snapshots/cycle_01/chapters/chapter_09.md:319-331 into grammatically complete close-third sentences or clearly signaled free-indirect thought. Preserve urgency, but make it come from Maren's sensory pressure and inference rather than stacked sentence shards.",
+      "acceptance_test": "Across snapshots/cycle_01/chapters/chapter_09.md:161-177 and snapshots/cycle_01/chapters/chapter_09.md:319-331, the revised prose contains no back-to-back clipped narration fragments used for emphasis; each beat is either a complete sentence or a clearly framed thought rhythm inside a complete sentence. Pass only if the pressure remains legible without telegraphic shorthand."
+    },
+    {
+      "finding_id": "PROSE_CLOSE_THIRD_CERTAINTY_SLIP",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:289; snapshots/cycle_01/chapters/chapter_09.md:293; snapshots/cycle_01/chapters/chapter_09.md:329; snapshots/cycle_01/chapters/chapter_09.md:331",
+      "problem": "The ending stops sounding like locked Maren-perspective narration and starts certifying off-page System bureaucracy as fact. After Aldric has already inferred what the sighting means, the prose itself declares that the woman in blue \"was filing a report\" and that the bounty \"had just become specific,\" even though Maren cannot witness either action. The result is a brief but real POV looseness at the chapter close.",
+      "rewrite_direction": "Rework the closing aftermath at snapshots/cycle_01/chapters/chapter_09.md:289-331 so the report/distribution consequence stays inside Maren's knowledge boundary: either keep it in Aldric's explicit prediction, mark it as Maren's inference/fear, or replace the offstage-certifying language with an on-page consequence he can actually perceive.",
+      "acceptance_test": "In a revision of snapshots/cycle_01/chapters/chapter_09.md:289-331, every claim about the post-Harrow report and the spread of the sighting is either spoken by Aldric/Vess, framed as Maren's inference, or grounded in an observable on-page cue. Fail if the narration still states unseen off-page actions as settled fact from outside Maren's perspective."
+    }
+  ],
+  "summary": "The chapter lands its core engine: Harrow feels distinct, the comedy stays committed until the recognition beat, Derry's panic is physical and specific, and the state shift that Maren's blank profile is now publicly identifiable comes through clearly. It still fails overall because a chapter-defining Vess exchange copies calibration-only dialogue from the style bible, and the prose loses discipline at stress points by relying on clipped fragment shorthand and a brief close-third POV slip at the ending."
+}

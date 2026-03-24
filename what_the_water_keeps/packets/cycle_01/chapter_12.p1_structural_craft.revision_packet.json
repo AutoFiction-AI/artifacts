@@ -1,0 +1,82 @@
+{
+  "acceptance_targets": [
+    "[ch12-craft-001] Pass if the revised passage anchored at `snapshots/cycle_01/chapters/chapter_12.md:225` contains no meta/chapter-level terminology and Della's reaction is rendered entirely in-scene; fail if the narration still tells the reader how the line ranks \"in the chapter\" or comments on it from outside close third.",
+    "[ch12-craft-002] Pass if the revised span from `snapshots/cycle_01/chapters/chapter_12.md:7` through `snapshots/cycle_01/chapters/chapter_12.md:29` includes at least two paragraphs with Della's internal experience before `snapshots/cycle_01/chapters/chapter_12.md:31`; fail if that opening still reads as twelve straight paragraphs of external observation and dialogue."
+  ],
+  "chapter_id": "chapter_12",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if the revised passage anchored at `snapshots/cycle_01/chapters/chapter_12.md:225` contains no meta/chapter-level terminology and Della's reaction is rendered entirely in-scene; fail if the narration still tells the reader how the line ranks \"in the chapter\" or comments on it from outside close third.",
+      "chapter_id": "chapter_12",
+      "cycle": 1,
+      "evidence": "`snapshots/cycle_01/chapters/chapter_12.md:225` calls Rafe's line \"the cruelest sentence in the chapter,\" which is chapter-level meta language inside a close-third scene.",
+      "finding_id": "ch12-craft-001",
+      "problem": "This is process leakage at the chapter's emotional hinge. Instead of staying inside Della's body and judgment, the narration steps outside the fiction and comments on the line from an authorial perch, breaking the constitution's no-process-leakage rule and puncturing immersion.",
+      "rewrite_direction": "Revise the beat centered on `snapshots/cycle_01/chapters/chapter_12.md:223`, `snapshots/cycle_01/chapters/chapter_12.md:225`, and `snapshots/cycle_01/chapters/chapter_12.md:226` so the hurt lands through Della's bodily reaction, memory, or immediate perception of the slope. Remove any wording that names \"the chapter\" or otherwise ranks the sentence from outside the scene.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if the revised span from `snapshots/cycle_01/chapters/chapter_12.md:7` through `snapshots/cycle_01/chapters/chapter_12.md:29` includes at least two paragraphs with Della's internal experience before `snapshots/cycle_01/chapters/chapter_12.md:31`; fail if that opening still reads as twelve straight paragraphs of external observation and dialogue.",
+      "chapter_id": "chapter_12",
+      "cycle": 1,
+      "evidence": "From `snapshots/cycle_01/chapters/chapter_12.md:7` through `snapshots/cycle_01/chapters/chapter_12.md:29`, the chapter runs twelve consecutive paragraphs of blocking and dialogue before the next Della-internal beat at `snapshots/cycle_01/chapters/chapter_12.md:31`.",
+      "finding_id": "ch12-craft-002",
+      "problem": "The opening drops focalized interiority long enough to make the scene read like external coverage. Under the stated review rule, this qualifies as a 10+ paragraph stretch with no thought, sensation, memory, or self-assessment from the focalizer, which weakens the close-third hold right when the chapter is establishing fresh pressure.",
+      "rewrite_direction": "In the opening exchange spanning `snapshots/cycle_01/chapters/chapter_12.md:7`, `snapshots/cycle_01/chapters/chapter_12.md:23`, `snapshots/cycle_01/chapters/chapter_12.md:25`, and `snapshots/cycle_01/chapters/chapter_12.md:29`, add Della-specific sensation, appraisal, or self-assessment before Lucille finishes the schedule briefing. Keep the new material local and embodied rather than expository.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "6eb2582a00195bf4d62ebb2d9644028da5d9debe5f5e5fdf755f10b9e18ad683",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into morally compromised caretaking, the bureaucratic brutality of naming, and the physical labor of moving the dead. When an edge case appears, prefer the detail a witness would remember over the phrasing a polite narrator would use. Let tenderness exist inside harsh material without cleaning the harshness off.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If childbirth, exhumation, poverty, sexual history, bodily decay, or violence enters a scene, render it through specific sensation and consequence; summarizing away the hard fact counts as a failed pass, not tasteful restraint.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High overall; contractions are the norm across dialogue, with fuller forms reserved for class performance, legal formality, deliberate emphasis, or a character trying not to lose composure.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate public labor chapters with quieter domestic or inventory chapters, vary scene count and dialogue density, let some chapters turn on information or paperwork rather than confrontation, and ensure no two consecutive chapters share the same dominant mechanism, pace, or emotional temperature.",
+      "diction": "Plainspoken historical Appalachian-Southern English without caricature; concrete, unsentimental, regionally grounded, and alert to how legal language clashes with lived speech.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third centered on Della Bledsoe, intimate enough to track bodily memory and evasive thought while never slipping into other characters' interior monologue as fact",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Alternate muscular work-sentence compression with longer accumulating sentences that carry memory, atmosphere, and moral weight; let cadence tighten in hearings and exhumations, then widen in domestic or reflective passages.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

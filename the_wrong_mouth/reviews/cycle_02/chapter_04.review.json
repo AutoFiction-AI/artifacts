@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_04",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "C04_CONTINUITY_BOUNTY_AMOUNT",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:61; snapshots/cycle_02/chapters/chapter_04.md:247; snapshots/cycle_02/chapters/chapter_04.md:327",
+      "problem": "The chapter states Maren's bounty as four hundred gold in three separate beats, but the continuity sheet and global timeline establish the canon amount as 4,000 gold crowns from Chapter 3 onward. Because the bounty is the chapter's live pressure source, this is not cosmetic: it alters the scale of pursuit and weakens the surrounding fear calculus every time the number appears.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_04.md:61, snapshots/cycle_02/chapters/chapter_04.md:247, and snapshots/cycle_02/chapters/chapter_04.md:327, replace the incorrect amount with the canonical 4,000-gold-crown bounty and adjust any nearby phrasing so the higher figure reads as catastrophic exposure rather than routine travel inconvenience.",
+      "acceptance_test": "Pass if the revised text at snapshots/cycle_02/chapters/chapter_04.md:61, snapshots/cycle_02/chapters/chapter_04.md:247, and snapshots/cycle_02/chapters/chapter_04.md:327 all name the same canonical 4,000-gold-crown bounty or an unambiguous equivalent, with no surviving reference to four hundred gold. Fail if any instance still uses the smaller figure or introduces a conflicting amount."
+    },
+    {
+      "finding_id": "C04_DERRY_DEBRIEF_VOICE_FLATTENING",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:229; snapshots/cycle_02/chapters/chapter_04.md:233; snapshots/cycle_02/chapters/chapter_04.md:237; snapshots/cycle_02/chapters/chapter_04.md:241",
+      "problem": "In the immediate aftermath of the collision, Derry stops sounding like Derry and turns into a clipped reader-surrogate questionnaire: \"So there's two of them now,\" \"In your head,\" \"She's an assassin?\" \"And they don't get along?\" The style bible gives him stress speech that overtalks, qualifies, circles, and reaches for mundane anchors; here he becomes clean debrief machinery at the exact moment his fear should make him messier, not tidier.",
+      "rewrite_direction": "Rework the question ladder at snapshots/cycle_02/chapters/chapter_04.md:229, snapshots/cycle_02/chapters/chapter_04.md:233, snapshots/cycle_02/chapters/chapter_04.md:237, and snapshots/cycle_02/chapters/chapter_04.md:241 so Derry processes the new reality in his own register: high-contraction, self-correcting, slightly run-on speech with a nervous coda or mundane anchor. Keep the necessary facts that there are now two internal voices and the newcomer is an assassin, but let Derry arrive there through frightened overtalk rather than four short diagnostic prompts.",
+      "acceptance_test": "Pass if the revised exchange at snapshots/cycle_02/chapters/chapter_04.md:229-241 still makes clear that Maren now carries two opposed voices, but Derry gets there in at least one self-correcting or qualifying turn that sounds like his stress idiolect rather than a staircase of clipped questions. Fail if the passage still reads as short debrief prompts any generic witness could ask."
+    },
+    {
+      "finding_id": "C04_AFTERMATH_SCHEMATIC_SUMMARY",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:225; snapshots/cycle_02/chapters/chapter_04.md:243; snapshots/cycle_02/chapters/chapter_04.md:245",
+      "problem": "Right after the chapter's strongest live event, the narration backs away into schematic explanation: \"The tactical situation was this\" followed by alignment labels and an abstract inventory of the new configuration. That phrasing is report-language, not Maren's close-third ordeal register, and it re-translates shock the scene has already dramatized instead of using the aftermath to create fresh pressure.",
+      "rewrite_direction": "Replace the abstract setup beginning at snapshots/cycle_02/chapters/chapter_04.md:225 and continuing through snapshots/cycle_02/chapters/chapter_04.md:243 and snapshots/cycle_02/chapters/chapter_04.md:245 with scene-grounded aftermath in Maren's body and ear: let Derry's reaction, Vess and Aldric's clash, and the altered contamination bank show what changed. Preserve the reader's understanding that two opposed fragments now share Maren and that the collision destabilized his classification, but do it without thesis framing or label-dump exposition.",
+      "acceptance_test": "Pass if the revised passage at snapshots/cycle_02/chapters/chapter_04.md:225-245 lets a cold reader state what changed after the collision and what immediate pressure follows, while staying inside Maren's lived experience and avoiding abstract framing such as \"The tactical situation was this.\" Fail if the passage still pauses to summarize the new state in report language before generating a new consequential beat."
+    }
+  ],
+  "summary": "Vivid body-horror rendering, clear ritual legibility, and a strong Vess entrance keep the chapter alive on the page, but it still fails review. A hard continuity contradiction misstates the canon bounty amount, Derry briefly collapses into reader-service Q&A instead of his established anxious overtalk, and the prose steps out of Maren's live aftermath into schematic summary just after the chapter's best shock beat. Those breaks are enough to keep the chapter below pass level on craft control and overall award readiness."
+}

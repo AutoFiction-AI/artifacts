@@ -1,0 +1,90 @@
+{
+  "acceptance_targets": [
+    "[ch02-craft-001] PASS if revised lines 561-581 show Tomas performing a specific illegal county act on the page (false entry written, county fuel dispensed, or illicit departure launched) while Mina witnesses it; FAIL if the chapter still ends with both cans empty and the ledger line blank.",
+    "[ch02-dialogue-001] PASS if, in revised lines 241-285, Tomas has at least two leverage turns grounded in county or fuel-work specifics and Mina has at least two replies grounded in the creek/rumor/body-specific want that is hers; FAIL if their lines in that span still read like interchangeable hard-boiled flirtation once dialogue tags are removed.",
+    "[ch02-prose-001] PASS if, across revised lines 243, 443, 499-500, and 535-536, no more than one beat still uses the sentence-initial 'Not ...' denial/reframe construction; FAIL if the chapter keeps stacking the same correction formula in three or more of those locations."
+  ],
+  "chapter_id": "chapter_02",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if revised lines 561-581 show Tomas performing a specific illegal county act on the page (false entry written, county fuel dispensed, or illicit departure launched) while Mina witnesses it; FAIL if the chapter still ends with both cans empty and the ledger line blank.",
+      "chapter_id": "chapter_02",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:561; snapshots/cycle_02/chapters/chapter_02.md:563; snapshots/cycle_02/chapters/chapter_02.md:575; snapshots/cycle_02/chapters/chapter_02.md:581",
+      "finding_id": "ch02-craft-001",
+      "problem": "The chapter ends with the gas cans still empty and the falsified ledger line still blank, so the irreversible county violation has not actually happened on the page. That contradicts the continuity sheet's canonical chapter-02 state transition that Tomas starts falsifying fuel use and giving Mina illicit night access here, and it weakens the chapter's consequence by deferring the ugliest operational act to chapter_03.",
+      "rewrite_direction": "Revise the ending in snapshots/cycle_02/chapters/chapter_02.md:561-581 so Tomas commits the first irreversible county offense before Mina leaves: either he writes the false log entry at the station, fills the cans with the county key, or initiates the run itself in this chapter. Keep Mina present for the choice so the chapter closes on witnessed consequence rather than anticipation.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if, in revised lines 241-285, Tomas has at least two leverage turns grounded in county or fuel-work specifics and Mina has at least two replies grounded in the creek/rumor/body-specific want that is hers; FAIL if their lines in that span still read like interchangeable hard-boiled flirtation once dialogue tags are removed.",
+      "chapter_id": "chapter_02",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:241; snapshots/cycle_02/chapters/chapter_02.md:251; snapshots/cycle_02/chapters/chapter_02.md:265; snapshots/cycle_02/chapters/chapter_02.md:275; snapshots/cycle_02/chapters/chapter_02.md:285",
+      "finding_id": "ch02-dialogue-001",
+      "problem": "In the core bargaining stretch, Tomas drifts toward abstract, polished seducer talk ('which part you think is free,' 'Some airboat attached to a pulse,' 'You're expensive in a whole different way') and Mina answers in the same sharpened register. That blurs idiolect separation and nudges Tomas toward generic dangerous-man dialogue instead of the work-rooted county-boatman voice required by the style bible.",
+      "rewrite_direction": "Rework the bargaining beats in snapshots/cycle_02/chapters/chapter_02.md:241-285 so Tomas's leverage comes through county-work diction, fuel-log risk, route knowledge, overtime/job anxiety, and local shorthand, while Mina's replies stay anchored to creek-obsession, bodily want, and shame. Strip or replace the most generic sexy-threat lines rather than polishing them further.",
+      "severity": "MEDIUM",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if, across revised lines 243, 443, 499-500, and 535-536, no more than one beat still uses the sentence-initial 'Not ...' denial/reframe construction; FAIL if the chapter keeps stacking the same correction formula in three or more of those locations.",
+      "chapter_id": "chapter_02",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:243; snapshots/cycle_02/chapters/chapter_02.md:443; snapshots/cycle_02/chapters/chapter_02.md:499; snapshots/cycle_02/chapters/chapter_02.md:535",
+      "finding_id": "ch02-prose-001",
+      "problem": "The prose leans repeatedly on the same negation-to-redefinition sentence shape ('Not flirtation exactly. Not yet.' / 'Not guilt exactly. Not dismissal.' / 'Not triumph. Something rougher...' / 'Not a fall, not a seduction, not fate.'). Once or twice this is a choice; at this frequency it becomes a chapter-level tic and makes the voice feel patterned rather than freshly observant.",
+      "rewrite_direction": "Vary the sentence logic in snapshots/cycle_02/chapters/chapter_02.md:243, snapshots/cycle_02/chapters/chapter_02.md:443, snapshots/cycle_02/chapters/chapter_02.md:499-500, and snapshots/cycle_02/chapters/chapter_02.md:535-536. Preserve the emotional meaning, but deliver at least three of those beats through different syntax, image, or action instead of sentence-initial denial/reframe.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "e3a059ca762d652f1b0c41d4877670a04057571c8bbe29173ac16313b7ac544a",
+  "must_fix_count": 3,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into the book's uncomfortable overlaps: desire entangled with access, wonder contaminated by biotech history, class need shaping erotic choices, and ecological harm rendered at creature scale. When a scene sits on the edge between restraint and retreat, keep the pressure visible through bodies, residue, changed behavior, or social cost. If an exact detail would make the material more embarrassing, more sensual, or more morally compromising, that is usually the detail to keep.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If sex, ecological damage, class shame, or moral compromise are softened into tasteful fog at the moment they should bite, the scene has failed and must be rewritten at higher specificity.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High - contractions are the norm in spoken dialogue; uncontracted forms should signal deliberate emphasis, institutional performance, or a character-specific formality shift.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate compression and dilation aggressively: single-scene nocturnes, comic paperwork chapters, quiet survey chapters, domestic weather chapters, confrontational set pieces, and aftermath chapters should sit beside each other without repeating the same rhythm two chapters in a row.",
+      "diction": "Concrete, coastal, and exact without brochure prettiness; scientific and bureaucratic terms may appear when the characters would think or speak through them, but they should stay embodied by consequence.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third centered on Mina Cordero, with free-indirect access tight enough to track bodily desire, shame, and observational obsession without collapsing into confessional summary",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Supple sentence music that can hold humidity, rot, and erotic charge, then cut hard into blunt compression at moments of humiliation, procedural friction, or ecological damage.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

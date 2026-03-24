@@ -1,0 +1,82 @@
+{
+  "acceptance_targets": [
+    "[ch10_f003] PASS if Marisol uses contractions in at least 4 of her next 5 defensive replies anchored at snapshots/cycle_01/chapters/chapter_10.md:69, snapshots/cycle_01/chapters/chapter_10.md:73, snapshots/cycle_01/chapters/chapter_10.md:97, snapshots/cycle_01/chapters/chapter_10.md:101, and snapshots/cycle_01/chapters/chapter_10.md:113, and any uncontracted form is clearly motivated by emphasis; FAIL if unmotivated formal full forms remain the default in that exchange.",
+    "[ch10_f004] PASS if each of the four speakers has at least one line in those spans that cannot be swapped to another without obvious lexical/rhythmic mismatch; FAIL if two or more still read as interchangeable policy voice."
+  ],
+  "chapter_id": "chapter_10",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if Marisol uses contractions in at least 4 of her next 5 defensive replies anchored at snapshots/cycle_01/chapters/chapter_10.md:69, snapshots/cycle_01/chapters/chapter_10.md:73, snapshots/cycle_01/chapters/chapter_10.md:97, snapshots/cycle_01/chapters/chapter_10.md:101, and snapshots/cycle_01/chapters/chapter_10.md:113, and any uncontracted form is clearly motivated by emphasis; FAIL if unmotivated formal full forms remain the default in that exchange.",
+      "chapter_id": "chapter_10",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:69; snapshots/cycle_01/chapters/chapter_10.md:73; snapshots/cycle_01/chapters/chapter_10.md:97; snapshots/cycle_01/chapters/chapter_10.md:177",
+      "finding_id": "ch10_f003",
+      "problem": "Marisol's speech drifts toward formal legal diction at peak pressure, including repeated uncontracted forms ('I did not...') despite a high-contraction profile and stress pattern that should sound sharper and less institutional. This blurs her idiolect against the room's policy register.",
+      "rewrite_direction": "Rework Marisol's defensive lines at snapshots/cycle_01/chapters/chapter_10.md:69, snapshots/cycle_01/chapters/chapter_10.md:73, snapshots/cycle_01/chapters/chapter_10.md:97, and snapshots/cycle_01/chapters/chapter_10.md:177 so contractions and her sharper private stress texture dominate, reserving any full-form phrasing for explicit emphasis. Keep content identical; shift cadence/register.",
+      "severity": "MEDIUM",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if each of the four speakers has at least one line in those spans that cannot be swapped to another without obvious lexical/rhythmic mismatch; FAIL if two or more still read as interchangeable policy voice.",
+      "chapter_id": "chapter_10",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:55; snapshots/cycle_01/chapters/chapter_10.md:61; snapshots/cycle_01/chapters/chapter_10.md:125; snapshots/cycle_01/chapters/chapter_10.md:263",
+      "finding_id": "ch10_f004",
+      "problem": "Institutional voices partially collapse into one compliance register. Genevieve, Nora, Elliot, and Maya all default to similar polished legal-operational syntax, which reduces idiolect separation and makes several lines speaker-swappable.",
+      "rewrite_direction": "Differentiate speaker texture at snapshots/cycle_01/chapters/chapter_10.md:55, snapshots/cycle_01/chapters/chapter_10.md:61, snapshots/cycle_01/chapters/chapter_10.md:125, and snapshots/cycle_01/chapters/chapter_10.md:263: legal counsel should remain statutory/procedural, Nora should carry curator-fatigue + institutional triage, Genevieve should sound donor-facing but personal, and Maya should stay HR-script clipped.",
+      "severity": "MEDIUM",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "0bd0477118896ee3150cb6d51d31076e540b8184171651ae0db7e11dbf796432",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on dialogue realism and voice separation: idiolect fidelity, leverage shifts, pressure cadence, anti-transcript behavior, natural colloquial texture (contractions/interruptions/slang when character-true), and pressure-true profanity usage per aesthetic risk policy.",
+    "key": "p2_dialogue_idiolect_cadence",
+    "label": "dialogue/idiolect/cadence fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "When choosing between reputationally safe abstraction and specific discomfort, choose specificity. Render addiction, sexuality, deceit, class shame, and grief at lived scale. In edge cases, preserve character truth and causal accountability over reader comfort or institutional decorum.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene demands bodily, moral, or economic specificity, euphemistic phrasing is treated as a failed draft and must be rewritten with concrete stakes and observable consequence.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the spoken default; full forms appear only for emphasis, ritual language, or character-specific formal posture",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate scene density and pressure modes: pair high-conflict chapters with quiet domestic or documentary chapters, vary dialogue-to-interiority ratios, and prevent identical chapter skeletons in consecutive sequence.",
+      "diction": "contemporary literary diction with class-aware, borough-specific concreteness; avoid prestige-neutral workshop language",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third centered on Marisol, with rare brief distance expansions for institutional scenes",
+      "narrative_tense": "past tense",
+      "rhythm_target": "alternating tensile compression and reflective extension; line-level cadence should carry emotional pressure, not just information",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

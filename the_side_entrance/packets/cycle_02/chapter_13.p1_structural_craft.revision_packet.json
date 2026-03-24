@@ -1,0 +1,69 @@
+{
+  "acceptance_targets": [
+    "[chapter_13_craft_001] Pass if a cold reader can account for every discussed amount across snapshots/cycle_02/chapters/chapter_13.md:337, snapshots/cycle_02/chapters/chapter_13.md:343, snapshots/cycle_02/chapters/chapter_13.md:467, snapshots/cycle_02/chapters/chapter_13.md:501, snapshots/cycle_02/chapters/chapter_13.md:513, and snapshots/cycle_02/chapters/chapter_13.md:551 without outside inference: the text explicitly identifies what is in the envelope, what portion is Beni's, what Eszter takes, what remains on him, and why any additional amount is still needed the next day. Fail if the revised ending still leaves the extra 30 pounds or the remaining 50 pounds semantically unmoored."
+  ],
+  "chapter_id": "chapter_13",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if a cold reader can account for every discussed amount across snapshots/cycle_02/chapters/chapter_13.md:337, snapshots/cycle_02/chapters/chapter_13.md:343, snapshots/cycle_02/chapters/chapter_13.md:467, snapshots/cycle_02/chapters/chapter_13.md:501, snapshots/cycle_02/chapters/chapter_13.md:513, and snapshots/cycle_02/chapters/chapter_13.md:551 without outside inference: the text explicitly identifies what is in the envelope, what portion is Beni's, what Eszter takes, what remains on him, and why any additional amount is still needed the next day. Fail if the revised ending still leaves the extra 30 pounds or the remaining 50 pounds semantically unmoored.",
+      "chapter_id": "chapter_13",
+      "cycle": 2,
+      "evidence": "Beni mixes Nina's money with his own without fixing the envelope total, then counts out 300 pounds, Eszter accepts 250, and the last paragraph introduces \"the other thirty\" without a stable prior shortfall (snapshots/cycle_02/chapters/chapter_13.md:343; snapshots/cycle_02/chapters/chapter_13.md:467; snapshots/cycle_02/chapters/chapter_13.md:501; snapshots/cycle_02/chapters/chapter_13.md:513; snapshots/cycle_02/chapters/chapter_13.md:551).",
+      "finding_id": "chapter_13_craft_001",
+      "problem": "The chapter's core moral mechanism depends on exact cash contamination, but the bookkeeping and object handling turn muddy at the payoff. A reader cannot cleanly track how much of the loan is Beni's, how much remains in his pocket, or why another thirty pounds suddenly matters, which weakens causality at the precise moment the chapter is supposed to lock contamination into care. It also leaves the handoff unstable against the boundary pack's chapter-14 memory of the loan.",
+      "rewrite_direction": "Clarify the money choreography in the setup and payoff. At snapshots/cycle_02/chapters/chapter_13.md:337 and snapshots/cycle_02/chapters/chapter_13.md:343, state exactly how much Beni puts in the white envelope and how much of it is his own money. At snapshots/cycle_02/chapters/chapter_13.md:467, snapshots/cycle_02/chapters/chapter_13.md:501, and snapshots/cycle_02/chapters/chapter_13.md:513, make Eszter's accepted total legible against her stated room-and-fares need. At snapshots/cycle_02/chapters/chapter_13.md:551, replace the vague \"other thirty\" beat with a specific remaining amount and purpose so the chapter ends on contamination, not arithmetic haze, and can hand off cleanly into chapter 14.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "282bbedae889b6708e6e57a924305304ede05f7dc9c958c0fe734a8d38ad6070",
+  "must_fix_count": 1,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into asymmetry, embarrassment, appetite, and the material costs of intimacy. When an edge case appears, choose the version that preserves class pressure, erotic consequence, and bodily specificity rather than smoothing the scene into tasteful distance or soft-focus safety.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene naturally contains sexual awkwardness, bodily shame, class contempt, grief, or moral compromise, vague tasteful phrasing counts as a failed draft and must be rewritten toward concrete consequence.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High - contractions are the norm in spoken English here; uncontracted forms should appear mainly for precision, social performance, or emphasis.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 2,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Vary chapter feel through scene count, dialogue density, movement versus waiting, and whether the turn comes from confrontation, discovery, aftermath, preparation, or unwanted intrusion. A nocturnal chauffeur chapter should not be followed by another chapter with the same pulse and architecture; counter hard chapters with domestic or reflective ones that still advance consequence.",
+      "diction": "Plainspoken but exact, materially grounded, and alert to social register; imagery should emerge from labor, appetite, weather, and bodily memory rather than from decorative abstraction.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person anchored to Beni, with memory pressure and sensory bleed but no roaming omniscience.",
+      "narrative_tense": "Past tense",
+      "rhythm_target": "Alternate compressed, road-tight paragraphs with slower observational passages that let smell, touch, and silence accumulate; keep sentence music controlled rather than showy.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

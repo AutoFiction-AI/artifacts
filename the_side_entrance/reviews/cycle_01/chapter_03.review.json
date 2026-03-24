@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_03",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch03-booker-001",
+      "source": "booker",
+      "severity": "HIGH",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:367; snapshots/cycle_01/chapters/chapter_03.md:397; snapshots/cycle_01/chapters/chapter_03.md:405",
+      "problem": "The chapter overruns its boundary and breaks causal handoff. After the noon setup, it jumps ahead to a completed Mayfair errand, Bea pickup, and an end-of-day return to the kitchen, so chapter_03 finishes after material that the boundary context reserves for the next chapter. That creates timeline backtracking and weakens the chapter's own ending because the reader has already been carried past the handoff point.",
+      "rewrite_direction": "Cut or relocate the late-afternoon/evening material at snapshots/cycle_01/chapters/chapter_03.md:367, snapshots/cycle_01/chapters/chapter_03.md:397, and snapshots/cycle_01/chapters/chapter_03.md:405 so chapter_03 ends before the post-noon Nina run is completed. A clean option is to land the chapter on the first noon-to-afternoon pull of attachment around snapshots/cycle_01/chapters/chapter_03.md:353-365, then let chapter_04 own the Mayfair trip and everything after it.",
+      "acceptance_test": "Pass if a reader can move from the revised ending of chapter_03 directly into the boundary pack's chapter_04 opening without any temporal rewind. Fail if the revised chapter still shows Beni having already completed the Mayfair run, picked up Bea, or returned to the kitchen after the day's work is done."
+    },
+    {
+      "finding_id": "ch03-craft-001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:367",
+      "problem": "The line 'The afternoon flattened into the kind of service work that left no mark except tiredness' is sanitizing summary: it replaces a plot-bearing afternoon with generic compression right where the chapter needs either a clean stop or concrete scene pressure. Because the style rules explicitly disallow summary replacing scene, this reads as timidity and craft evasion rather than purposeful ellipsis.",
+      "rewrite_direction": "Revise snapshots/cycle_01/chapters/chapter_03.md:367-395 so the chapter does one thing clearly. Either delete this afternoon summary entirely and end before it, or choose one specific afternoon beat in that span and render it in scene with concrete physical detail, dialogue, and a visible leverage shift. Do not keep the current one-paragraph synopsis of Nina's meeting, garment bags, and Bea pickup.",
+      "acceptance_test": "Pass if the revised passage no longer resolves the whole afternoon in a single summary paragraph. The page must either omit that material from chapter_03 or dramatize one selected errand so a reader can point to at least one concrete action, one spoken exchange, and one changed power relation in the revised span."
+    },
+    {
+      "finding_id": "ch03-prose-001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:81; snapshots/cycle_01/chapters/chapter_03.md:147; snapshots/cycle_01/chapters/chapter_03.md:263; snapshots/cycle_01/chapters/chapter_03.md:373; snapshots/cycle_01/chapters/chapter_03.md:403",
+      "problem": "The chapter leans too often on the same contrastive negation formula: negate an initial reading, then replace it with the 'real' one. 'The trouble with the waiting was not idleness,' 'it was not a kitchen answer,' 'The problem was not that he wanted another bowl,' 'It was not accusation, only data,' and 'It was not much' make the sentence music start to feel pre-loaded rather than discovered.",
+      "rewrite_direction": "Rewrite several of the cited local beats at snapshots/cycle_01/chapters/chapter_03.md:81, snapshots/cycle_01/chapters/chapter_03.md:147, snapshots/cycle_01/chapters/chapter_03.md:263, snapshots/cycle_01/chapters/chapter_03.md:373, and snapshots/cycle_01/chapters/chapter_03.md:403 so they arrive by different sentence shapes. Keep the perceptions, but let some land directly, some through image, and some through action instead of repeating the same negate-and-correct construction.",
+      "acceptance_test": "Pass if, on a reread of the revised chapter, no more than two of the cited passages still use the same 'not X / actual Y' correction pattern. Fail if three or more of those spans still pivot through that identical contrastive architecture."
+    }
+  ],
+  "summary": "FAIL. The chapter's strongest work is in dialogue and character voice: Beni, Bea, Eszter, and Nina sound distinct, contraction use stays mostly natural, and the kitchen scene carries real appetite and class pressure. But the chapter fails review because it overruns the boundary into next-chapter material, uses summary where scene or omission is required, and repeats a prose correction formula often enough to become a tic."
+}

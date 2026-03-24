@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_10",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_10_booker_01",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:103; snapshots/cycle_01/chapters/chapter_10.md:121; snapshots/cycle_01/chapters/chapter_10.md:163; snapshots/cycle_01/chapters/chapter_10.md:225; snapshots/cycle_01/chapters/chapter_10.md:245; snapshots/cycle_01/chapters/chapter_10.md:387; snapshots/cycle_01/chapters/chapter_10.md:413",
+      "problem": "The chapter keeps pausing after strong concrete beats to translate its labor politics into thesis-like narration. Because Manny's shortcuts, Claude's compromise, the cash envelope, and the home math are already legible on the page, these repeated interpretive overlays flatten ambiguity and make the chapter sound more explained than lived.",
+      "rewrite_direction": "Rework the commentary-heavy passages at snapshots/cycle_01/chapters/chapter_10.md:101, snapshots/cycle_01/chapters/chapter_10.md:121, snapshots/cycle_01/chapters/chapter_10.md:161, snapshots/cycle_01/chapters/chapter_10.md:225, and snapshots/cycle_01/chapters/chapter_10.md:387 so the system-level meaning lands through Manny's behavior, Claude's compromises, Delroy's bodily fear, and the wage insult rather than through repeated abstract glosses. Keep only the sharpest generalization, if any, in each cluster and convert the rest into immediate perception or action.",
+      "acceptance_test": "Pass if a read of snapshots/cycle_01/chapters/chapter_10.md:101-123, snapshots/cycle_01/chapters/chapter_10.md:161-165, snapshots/cycle_01/chapters/chapter_10.md:225-245, and snapshots/cycle_01/chapters/chapter_10.md:387-413 lets the reader infer the exploitative labor system from scene evidence without the narration repeatedly stepping aside to label what the scene already proved; fail if multiple standalone thesis sentences still explain Manny, Claude, or poverty after the action has already made the point."
+    },
+    {
+      "finding_id": "chapter_10_craft_01",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:389; snapshots/cycle_01/chapters/chapter_10.md:393; snapshots/cycle_01/chapters/chapter_10.md:415",
+      "problem": "The chapter does not hand off cleanly into the provided chapter-11 boundary state. It closes with the family still undecided about Jackson and with Marcia making a sling from a torn pillowcase, but the boundary excerpt for chapter 11 assumes a different, more advanced post-care sling state. That leaves an overnight transition missing at exactly the point where object state and care decisions need to be clear.",
+      "rewrite_direction": "Clarify the overnight handoff in snapshots/cycle_01/chapters/chapter_10.md:389, snapshots/cycle_01/chapters/chapter_10.md:393, and snapshots/cycle_01/chapters/chapter_10.md:415 by either landing a definite care decision before the chapter ends or revising the final object state so it can plausibly match the chapter-11 opening without contradiction. The sling's material/provenance and the family's choice about treatment need to be explicit on the page.",
+      "acceptance_test": "Pass if, after reading snapshots/cycle_01/chapters/chapter_10.md:389-425 and the supplied chapter-11 boundary excerpt, a reader can state where Delroy's arm support came from and whether the family sought overnight care without encountering a material mismatch between chapter-end state and next-chapter opening; fail if the chapter still ends on one sling/care state while the next chapter begins on another."
+    },
+    {
+      "finding_id": "chapter_10_prose_01",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:5; snapshots/cycle_01/chapters/chapter_10.md:47; snapshots/cycle_01/chapters/chapter_10.md:75; snapshots/cycle_01/chapters/chapter_10.md:95; snapshots/cycle_01/chapters/chapter_10.md:193; snapshots/cycle_01/chapters/chapter_10.md:253; snapshots/cycle_01/chapters/chapter_10.md:417",
+      "problem": "The narration repeatedly uses clipped, article-stripped fragments that violate the constitution's ban on elliptical clipping. Lines such as the document inventory, the 'Not whether...' setup, the 'Not a big theatrical lie' passage, the bare noun list of safer tasks, the 'Not sharp exactly. Huge. Bright.' beat, and the 'Not wages. Not savings. Not help.' close make the prose feel mannered and house-rule-noncompliant rather than controlled.",
+      "rewrite_direction": "Rewrite the fragment-heavy passages at snapshots/cycle_01/chapters/chapter_10.md:5, snapshots/cycle_01/chapters/chapter_10.md:47, snapshots/cycle_01/chapters/chapter_10.md:75, snapshots/cycle_01/chapters/chapter_10.md:95, snapshots/cycle_01/chapters/chapter_10.md:193, snapshots/cycle_01/chapters/chapter_10.md:253, and snapshots/cycle_01/chapters/chapter_10.md:417 into grammatically complete narration that still carries Delroy's pressure and rhythm. Preserve compression, but stop relying on bare noun phrases or article-stripped clauses as full sentences.",
+      "acceptance_test": "Pass if a close read of snapshots/cycle_01/chapters/chapter_10.md:5-6, snapshots/cycle_01/chapters/chapter_10.md:47-48, snapshots/cycle_01/chapters/chapter_10.md:75-76, snapshots/cycle_01/chapters/chapter_10.md:95-99, snapshots/cycle_01/chapters/chapter_10.md:193-194, snapshots/cycle_01/chapters/chapter_10.md:253-254, and snapshots/cycle_01/chapters/chapter_10.md:417-418 finds grammatically complete narration rather than standalone clipped fragments; fail if the revised prose still uses phrase fragments as sentence substitutes in those spans."
+    },
+    {
+      "finding_id": "chapter_10_prose_02",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:47; snapshots/cycle_01/chapters/chapter_10.md:121; snapshots/cycle_01/chapters/chapter_10.md:163; snapshots/cycle_01/chapters/chapter_10.md:193; snapshots/cycle_01/chapters/chapter_10.md:225; snapshots/cycle_01/chapters/chapter_10.md:411; snapshots/cycle_01/chapters/chapter_10.md:417",
+      "problem": "The same negation-and-correction sentence shape recurs well past the chapter's allowed tolerance: 'Not whether...,' 'Not one dramatic danger...,' 'Not mastermind evil...,' 'Not sharp exactly...,' 'Not dramatic...,' 'Not cruel. Not forgiving. Just exact.,' and 'Not wages. Not savings. Not help.' Once or twice this is emphatic; by the sixth and seventh appearance it reads like a tic and flattens the prose's rhythm.",
+      "rewrite_direction": "Vary the emphasis beats at snapshots/cycle_01/chapters/chapter_10.md:47, snapshots/cycle_01/chapters/chapter_10.md:121, snapshots/cycle_01/chapters/chapter_10.md:163, snapshots/cycle_01/chapters/chapter_10.md:193, snapshots/cycle_01/chapters/chapter_10.md:225, snapshots/cycle_01/chapters/chapter_10.md:411, and snapshots/cycle_01/chapters/chapter_10.md:417 so some of them land through image, syntax expansion, or direct thought instead of the repeated 'Not X / Not Y / Just-or-final-Z' pattern.",
+      "acceptance_test": "Pass if a read across snapshots/cycle_01/chapters/chapter_10.md:47-48, snapshots/cycle_01/chapters/chapter_10.md:121-123, snapshots/cycle_01/chapters/chapter_10.md:163-165, snapshots/cycle_01/chapters/chapter_10.md:193-194, snapshots/cycle_01/chapters/chapter_10.md:225-226, snapshots/cycle_01/chapters/chapter_10.md:411-417 shows differentiated rhetorical movement rather than three or more repetitions of the same negation-clarification formula; fail if that construction still reads as the chapter's default emphasis move."
+    }
+  ],
+  "summary": "FAIL overall. The chapter strongly delivers material job-site specificity, bodily consequence, the insult of near-missing wages, and mostly style-bible-accurate character voices; Delroy jokes before shortening in shame, Marcia gets exact under pressure, and Tiana stays controlled without slipping into stiff full-form dialogue. It still falls below pass because the narration repeatedly violates the constitution's anti-clipping rule, leans too often on a repeated negation formula and explanatory labor-system glosses, and does not hand off cleanly into the supplied chapter-11 boundary state."
+}

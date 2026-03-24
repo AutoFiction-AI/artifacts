@@ -1,0 +1,37 @@
+{
+  "chapter_id": "chapter_11",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "PASS",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch11-booker-001",
+      "source": "booker",
+      "severity": "HIGH",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_02/chapters/chapter_11.md:243; snapshots/cycle_02/chapters/chapter_11.md:245; snapshots/cycle_02/chapters/chapter_11.md:249; snapshots/cycle_02/chapters/chapter_11.md:255; snapshots/cycle_02/chapters/chapter_11.md:257",
+      "problem": "The chapter's decisive turn depends on the room dropping its guard around the single most dangerous object in play. After Ferrand openly baits Abel toward spectacle, Elise notices Abel fixating on the satchel, and Lucien explicitly orders Ferrand to keep the bag shut or take it aboveground, the text still lets Abel carry the satchel and pistol into the sleeping gallery without any meaningful security step. That makes Abel's theft feel author-protected rather than causally earned.",
+      "rewrite_direction": "Rework the satchel handoff and theft around snapshots/cycle_02/chapters/chapter_11.md:243, snapshots/cycle_02/chapters/chapter_11.md:249, and snapshots/cycle_02/chapters/chapter_11.md:255-257 so Abel gets access by overcoming a concrete precaution instead of benefiting from everyone relaxing at once. Options: Lucien takes custody and Abel deceives or steals from him later; Clemence orders the bag locked away and Abel uses Lucie's report or quarry traffic to get at it; Ferrand refuses to relinquish it and Abel takes it during a sharper distraction. Preserve the countdown, but make the theft the result of action against resistance.",
+      "acceptance_test": "In the revised passage covering snapshots/cycle_02/chapters/chapter_11.md:243-257, at least one adult takes an observable step to secure the satchel or pistol after the argument, and Abel's successful theft happens only because he clearly circumvents or defeats that step. If a careful reader can still ask why the explosive satchel was left casually accessible after the room had already identified both the bag and Abel's agitation, this finding remains open."
+    },
+    {
+      "finding_id": "ch11-prose-001",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_02/chapters/chapter_11.md:51; snapshots/cycle_02/chapters/chapter_11.md:57; snapshots/cycle_02/chapters/chapter_11.md:79; snapshots/cycle_02/chapters/chapter_11.md:91; snapshots/cycle_02/chapters/chapter_11.md:191; snapshots/cycle_02/chapters/chapter_11.md:423",
+      "problem": "The narration repeatedly falls into clipped negation fragments such as \"Not running. Not startled.\", \"Not a fist.\", and \"Not on her.\" This is both a visible chapter-level tic and a direct violation of the constitution's ban on elliptical clipping in narration. The repeated fragment-reversal rhythm starts reading like formula instead of pressure-shaped prose.",
+      "rewrite_direction": "Rewrite the clipped beats at snapshots/cycle_02/chapters/chapter_11.md:51, snapshots/cycle_02/chapters/chapter_11.md:57, snapshots/cycle_02/chapters/chapter_11.md:79, snapshots/cycle_02/chapters/chapter_11.md:91-95, snapshots/cycle_02/chapters/chapter_11.md:191, and snapshots/cycle_02/chapters/chapter_11.md:423-424 into grammatically complete sentences or fuller clauses that carry the same emphasis without subject-dropping. Vary the sentence music rather than leaning on repeated \"Not X. Y.\" reversals.",
+      "acceptance_test": "In the revised text at snapshots/cycle_02/chapters/chapter_11.md:51-57, snapshots/cycle_02/chapters/chapter_11.md:79-95, snapshots/cycle_02/chapters/chapter_11.md:191, and snapshots/cycle_02/chapters/chapter_11.md:423-424, the narration conveys contrast through complete clauses rather than standalone clipped negation fragments. Pass if those cited spans no longer contain fragment beats like \"Not running.\" or \"Not on her.\" and the emphasis still reads clearly in context; fail if the chapter continues to rely on the same fragment formula in those locations."
+    }
+  ],
+  "summary": "Chapter 11 hits its required spine beats: Nadir's arrest is public, humiliating, and sudden; Ferrand immediately weaponizes it; and Abel's disappearance turns dread into a countdown. Voice work is strong and style-bible-consistent across Lucien, Clemence, Ferrand, Abel, Lucie, and Elise, contraction use stays natural, narrative tense remains in past, and I found no continuity contradictions or sanitization drift. The chapter still fails review because the satchel theft hinge is under-motivated at the exact point the plot needs it, and the prose repeatedly violates the constitution's anti-clipping rule with visible negation-fragment tics.",
+  "coverage_scene_ids": [
+    "ch11_scene_01_delivery_arrest",
+    "ch11_scene_02_ration_room_argument",
+    "ch11_scene_03_missing_satchel_and_pursuit"
+  ]
+}

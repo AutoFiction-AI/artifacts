@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_02",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH02-BKR-001",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_01/chapters/chapter_02.md:129; snapshots/cycle_01/chapters/chapter_02.md:135; snapshots/cycle_01/chapters/chapter_02.md:149; snapshots/cycle_01/chapters/chapter_02.md:151",
+      "problem": "The mid-chapter communication run repeats the same non-decision beat (call, dodge, silence) before the burner-phone pivot, so escalation stalls instead of compounding at each contact.",
+      "rewrite_direction": "Tighten and re-sequence the contact stretch in snapshots/cycle_01/chapters/chapter_02.md:129-153 so each beat forces a new constraint (e.g., a concrete deadline loss, an HR status change, or a family consequence) rather than another ignored exchange. Preserve the burner pivot but remove at least one redundant dodge loop in this span.",
+      "acceptance_test": "Pass if every communication beat in snapshots/cycle_01/chapters/chapter_02.md:129-153 produces a distinct change in Eli's options or risk, and no two consecutive beats end with simple non-response without a new consequence; fail otherwise."
+    },
+    {
+      "finding_id": "CH02-CRF-001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_01/chapters/chapter_02.md:297; snapshots/cycle_01/chapters/chapter_02.md:299; snapshots/cycle_01/chapters/chapter_02.md:301",
+      "problem": "Sanitization drift at the chapter's hardest accountability point: Nora asks for exact financial facts, but the prose retreats to metaphor and evasive phrasing, muting the concrete economic harm and blunting immediate consequence.",
+      "rewrite_direction": "In snapshots/cycle_01/chapters/chapter_02.md:297-305, replace abstraction with specific financial reality (what transfer data he is hiding: amount/date/account movement) and render immediate embodied pressure plus relational damage in-scene. Do not resolve morally; make the concealment legible and costly in concrete terms.",
+      "acceptance_test": "Pass if the revised span around snapshots/cycle_01/chapters/chapter_02.md:297-305 contains at least one explicit concealed financial fact and one immediate interpersonal consequence inside the same exchange; fail if the moment remains primarily metaphor/evasion."
+    },
+    {
+      "finding_id": "CH02-DLG-001",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_01/chapters/chapter_02.md:77; snapshots/cycle_01/chapters/chapter_02.md:81; snapshots/cycle_01/chapters/chapter_02.md:153",
+      "problem": "Cal's two voicemails share an over-polished memo cadence, so his spoken voice reads as procedural transcription rather than pressured live speech with evolving stakes.",
+      "rewrite_direction": "Revise Cal's voicemail lines at snapshots/cycle_01/chapters/chapter_02.md:77-81 and snapshots/cycle_01/chapters/chapter_02.md:153 into more oral rhythm: shorter bursts, at least one self-correction/disfluency, and clearer escalation between first and second message while retaining compliance content.",
+      "acceptance_test": "Pass if each revised voicemail includes spoken-pressure texture (e.g., restart, interruption, clipped correction) and the second voicemail is recognizably sharper than the first in diction and threat level; fail if both still read like parallel policy memos."
+    },
+    {
+      "finding_id": "CH02-PRS-001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_01/chapters/chapter_02.md:49; snapshots/cycle_01/chapters/chapter_02.md:133; snapshots/cycle_01/chapters/chapter_02.md:357; snapshots/cycle_01/chapters/chapter_02.md:359; snapshots/cycle_01/chapters/chapter_02.md:361",
+      "problem": "A recurring self-justification construction (notably repeated 'He told himself' scaffolding) appears more than twice and starts to feel mechanically reused, flattening cadence and over-literalizing Eli's stress tell.",
+      "rewrite_direction": "Rework the repeated denial beats in snapshots/cycle_01/chapters/chapter_02.md:49, snapshots/cycle_01/chapters/chapter_02.md:133, and snapshots/cycle_01/chapters/chapter_02.md:357-361 so the same psychology is delivered through varied sentence shapes (action contradiction, sensory counterpoint, and one terse interior line) rather than repeated stem phrasing.",
+      "acceptance_test": "Pass if within the revised target spans the exact stem 'He told himself' appears no more than once and at least two denial beats are conveyed through different prose constructions; fail if the repeated scaffold remains dominant."
+    }
+  ],
+  "summary": "Chapter 2 lands core plot obligations and maintains strong close-third interiority, but it does not clear pass threshold yet: escalation briefly plateaus in repeated dodge loops, Cal's voicemail voice is too memo-like, the key financial-concealment confrontation is sanitized at the moment it should be most concrete, and repeated denial scaffolds create prose tic-level repetition."
+}

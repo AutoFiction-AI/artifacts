@@ -1,0 +1,70 @@
+{
+  "acceptance_targets": [
+    "[ch18_dialogue_001] PASS if revised snapshots/cycle_01/chapters/chapter_18.md:281-311 keeps all three boundary conditions while limiting standalone 'Agreed' responses to one or fewer and giving each speaker at least one line with distinct rhythm/lexicon not interchangeable with the other; FAIL if the exchange still reads like mirrored policy recitation."
+  ],
+  "chapter_id": "chapter_18",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if revised snapshots/cycle_01/chapters/chapter_18.md:281-311 keeps all three boundary conditions while limiting standalone 'Agreed' responses to one or fewer and giving each speaker at least one line with distinct rhythm/lexicon not interchangeable with the other; FAIL if the exchange still reads like mirrored policy recitation.",
+      "chapter_id": "chapter_18",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_18.md:281; snapshots/cycle_01/chapters/chapter_18.md:283; snapshots/cycle_01/chapters/chapter_18.md:285; snapshots/cycle_01/chapters/chapter_18.md:287; snapshots/cycle_01/chapters/chapter_18.md:289; snapshots/cycle_01/chapters/chapter_18.md:291; snapshots/cycle_01/chapters/chapter_18.md:293",
+      "finding_id": "ch18_dialogue_001",
+      "problem": "Boundary negotiation dialogue becomes checklist-formal ('Agreed' repeats, mirrored syntax), flattening idiolect separation between Ina and Minjae at a high-pressure emotional hinge.",
+      "rewrite_direction": "Rework snapshots/cycle_01/chapters/chapter_18.md:281-311 so terms stay explicit but spoken texture differs by character: Ina should retain analytical control with stress corrections, while Minjae should sound more pragmatic/wry and less contractual. Keep consent boundaries intact, but introduce interruption, hesitation, or colloquial rhythm.",
+      "severity": "MEDIUM",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "68cdfce344dc5061b26345bd2a1e9763e5c747eea50b9c7041523950906abacd",
+  "must_fix_count": 1,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on dialogue realism and voice separation: idiolect fidelity, leverage shifts, pressure cadence, anti-transcript behavior, natural colloquial texture (contractions/interruptions/slang when character-true), and pressure-true profanity usage per aesthetic risk policy.",
+    "key": "p2_dialogue_idiolect_cadence",
+    "label": "dialogue/idiolect/cadence fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into uncomfortable specificity when stakes demand it: show coercion mechanics, sexual negotiation, grief rituals, and financial desperation at scene level. In edge cases, prefer precision over decorum; protect character dignity through perspective accuracy, not by omitting the hard material.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene requires bodily, economic, or moral consequence and the draft retreats into abstract phrasing, rewrite with concrete action, sensation, and decision impact before proceeding.",
+      "operational_resolution_rule": "When uncertain between tasteful distance and narrative truth, choose the version that preserves causal accountability and embodied consequence, then tune language for clarity rather than softness.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the baseline in spoken dialogue; uncontracted forms are reserved for deliberate emphasis, legal language, or character-specific formality.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate chapter structures deliberately: high-density dialogue vs interior reflection, multi-scene public collision vs two-scene intimate pressure, aftermath inventory vs anticipatory dread. Never let two consecutive chapters share the same pacing architecture or turn mechanism.",
+      "diction": "Contemporary, unsentimental literary diction that permits technical vocabulary, profanity, and class-marked speech without flattening idiolects.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third person centered on Seo Ina, with brief controlled widenings in public-event chapters.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Alternating pressure waves: compressed clauses in operational stress, longer breath-based lines in grief and reflection.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "chapter_id": "chapter_07",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "ch07_dialogue_example_line_copy",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:37",
+      "problem": "Simone's opening prompt reproduces a calibration-only example line from the style bible verbatim: \"Tell me something funny.\" Example lines are forbidden for direct reuse, so the chapter imports guide text instead of generating fresh character speech.",
+      "rewrite_direction": "Replace the opening pressure beat in snapshots/cycle_01/chapters/chapter_07.md:37, snapshots/cycle_01/chapters/chapter_07.md:39, and snapshots/cycle_01/chapters/chapter_07.md:55 with new Simone wording that still demands on-the-spot humor and triggers Doug's stall, but does not echo any example line from outline/style_bible.json.",
+      "acceptance_test": "PASS if the revised opening exchange around snapshots/cycle_01/chapters/chapter_07.md:37 forces Doug into the same immediate failure without using \"Tell me something funny\" or any near-verbatim calibration line from the style bible; FAIL if the new prompt can still be traced back to an example line."
+    },
+    {
+      "finding_id": "ch07_craft_sanitized_montage_middle",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:141; snapshots/cycle_01/chapters/chapter_07.md:143; snapshots/cycle_01/chapters/chapter_07.md:145; snapshots/cycle_01/chapters/chapter_07.md:147; snapshots/cycle_01/chapters/chapter_07.md:195; snapshots/cycle_01/chapters/chapter_07.md:217",
+      "problem": "After a strong live opening, the chapter retreats into a Tuesday-through-Friday montage that reports Doug's failed attempts instead of making the reader sit through one. That is sanitization by summary-replacing-scene: the humiliating, comedy-defining development work gets compressed into tidy retrospective explanation, which softens the discomfort the premise requires.",
+      "rewrite_direction": "Rebuild the middle section across snapshots/cycle_01/chapters/chapter_07.md:141 through snapshots/cycle_01/chapters/chapter_07.md:217 so at least one post-Tuesday session plays as a full scene. Put one of Doug's bad performative attempts on the page, let it die audibly, and let Simone redirect him in real time before the Friday diagnosis lands.",
+      "acceptance_test": "PASS if the revised middle contains at least one fully dramatized post-Tuesday session in which the reader can quote Doug's failed material, observe Simone's live response, and track a concrete change in method; FAIL if those days are still mainly resumable as \"they met several times and she noticed a pattern.\""
+    },
+    {
+      "finding_id": "ch07_award_overexplained_revelation",
+      "source": "award",
+      "severity": "HIGH",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:241; snapshots/cycle_01/chapters/chapter_07.md:245; snapshots/cycle_01/chapters/chapter_07.md:247; snapshots/cycle_01/chapters/chapter_07.md:255; snapshots/cycle_01/chapters/chapter_07.md:277; snapshots/cycle_01/chapters/chapter_07.md:311",
+      "problem": "The chapter's central revelation lands when Simone says the toast worked because Doug was not trying and his ordinary specifics are the material. From there, the scene keeps paraphrasing the same diagnosis in dialogue and narration instead of buying a new turn. The result is deflated comedy and non-award-level compression: the chapter explains its own insight rather than trusting the scene to carry it.",
+      "rewrite_direction": "Compress the post-diagnosis run from snapshots/cycle_01/chapters/chapter_07.md:241 through snapshots/cycle_01/chapters/chapter_07.md:313 so each remaining beat changes pressure. Keep one Doug objection, one sharper Simone counter, and one ending image or action that carries the roses distinction, but cut or rewrite passages that restate \"your life is the material\" without adding new cost, decision, or information.",
+      "acceptance_test": "PASS if, after the revised turn around snapshots/cycle_01/chapters/chapter_07.md:241, each subsequent beat performs distinct dramatic work and the ending around snapshots/cycle_01/chapters/chapter_07.md:311 conveys Doug's shift through image, action, or partial realization rather than a full prose unpacking of the claim-versus-roses thesis; FAIL if the section still reads like the same insight being proven multiple times."
+    },
+    {
+      "finding_id": "ch07_dialogue_simone_mentor_speech",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:237; snapshots/cycle_01/chapters/chapter_07.md:241; snapshots/cycle_01/chapters/chapter_07.md:245; snapshots/cycle_01/chapters/chapter_07.md:277",
+      "problem": "Simone slides from dry, diagnostic comedy-writer into polished mentor. Her Friday explanations arrive as balanced mini-speeches and clean analogies, especially the documentary-versus-feature-film line, which reads like theme delivery rather than spoken thought under scene pressure. That blurs her idiolect and violates the style bible's ban on mentor-figure wisdom speeches.",
+      "rewrite_direction": "Rework Simone's Friday dialogue in snapshots/cycle_01/chapters/chapter_07.md:237 through snapshots/cycle_01/chapters/chapter_07.md:277 into shorter, more interruptible, more character-true turns. Let her identify what works, but make her sound like a working comic diagnostician rather than a novelist summarizing the chapter's point.",
+      "acceptance_test": "PASS if Simone's revised Friday exchange is built from shorter diagnostic turns, leaves at least one implication unstated for Doug to infer, and no longer hinges on a polished analogy that could stand alone as writing advice; FAIL if she still delivers a clean mentor monologue that fully interprets Doug for the reader."
+    },
+    {
+      "finding_id": "ch07_prose_repeated_explanatory_scaffolds",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:11; snapshots/cycle_01/chapters/chapter_07.md:143; snapshots/cycle_01/chapters/chapter_07.md:167; snapshots/cycle_01/chapters/chapter_07.md:215; snapshots/cycle_01/chapters/chapter_07.md:269; snapshots/cycle_01/chapters/chapter_07.md:277; snapshots/cycle_01/chapters/chapter_07.md:279; snapshots/cycle_01/chapters/chapter_07.md:281; snapshots/cycle_01/chapters/chapter_07.md:311",
+      "problem": "The prose keeps reaching for the same explanatory scaffolds: repeated \"the way ...\" comparator sentences and repeated \"specific [noun]\" labels. After the third instance, the chapter stops feeling rhythmically controlled and starts sounding mechanically generated from its own precision-setting.",
+      "rewrite_direction": "Vary the sentence architecture at snapshots/cycle_01/chapters/chapter_07.md:11, snapshots/cycle_01/chapters/chapter_07.md:143, snapshots/cycle_01/chapters/chapter_07.md:215, snapshots/cycle_01/chapters/chapter_07.md:269, snapshots/cycle_01/chapters/chapter_07.md:277, and snapshots/cycle_01/chapters/chapter_07.md:281, and trim the repeated \"specific ...\" phrasing at snapshots/cycle_01/chapters/chapter_07.md:167, snapshots/cycle_01/chapters/chapter_07.md:279, and snapshots/cycle_01/chapters/chapter_07.md:311. Keep the observational precision, but let more beats land without the same comparator or qualifier.",
+      "acceptance_test": "PASS if the revised cited passages leave no more than two explanatory \"the way ...\" comparator constructions and no repeated \"specific [noun]\" tic doing the same job; FAIL if the chapter still turns on the same sentence swivel every few paragraphs."
+    }
+  ],
+  "summary": "Strong Doug texture and clean continuity are not enough to pass this chapter. It fails because it lifts a calibration-only dialogue line from the style bible, summarizes the most embarrassing stretch of Doug's comedy development instead of staging it, and over-explains the revelation once Simone identifies his voice. Tense stays canonically past and I found no continuity contradiction against the supplied packs, but Simone's dialogue drifts into mentor-speech and the prose develops repeated explanatory tics."
+}

@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_04",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_04_craft_001",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_01/chapters/chapter_04.md:199; snapshots/cycle_01/chapters/chapter_04.md:451",
+      "problem": "The narration slips into clipped noun-fragment beats (\"The plant smell. The cold air.\" / \"Cabinet door.\") that the constitution explicitly forbids. The effect is momentary pressure, but here it reads as mannered compression rather than cleaner close-third perception.",
+      "rewrite_direction": "Revise the fragment-heavy passages at snapshots/cycle_01/chapters/chapter_04.md:199 and snapshots/cycle_01/chapters/chapter_04.md:451 so the sensory information lands in grammatically complete narration. Keep Micah's pressure and the apartment's thin-wall claustrophobia, but replace article-stripped or verbless fragments with full sentences that still move quickly.",
+      "acceptance_test": "Pass if the revised sentences in the spans around snapshots/cycle_01/chapters/chapter_04.md:199 and snapshots/cycle_01/chapters/chapter_04.md:451 contain no stand-alone verbless noun-fragment sentences and still preserve the same concrete sensory details; fail if lines in those spans still read like clipped note-taking rather than complete narration."
+    },
+    {
+      "finding_id": "chapter_04_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_01/chapters/chapter_04.md:137; snapshots/cycle_01/chapters/chapter_04.md:221; snapshots/cycle_01/chapters/chapter_04.md:381; snapshots/cycle_01/chapters/chapter_04.md:403; snapshots/cycle_01/chapters/chapter_04.md:433; snapshots/cycle_01/chapters/chapter_04.md:465; snapshots/cycle_01/chapters/chapter_04.md:479",
+      "problem": "The chapter leans too often on negative-definition sentence shapes: telling the reader what a laugh, stillness, emotion, or self-image is not before naming what it is. By the second half, that repeated scaffolding becomes a visible prose tic and flattens beats that should feel fresher on arrival.",
+      "rewrite_direction": "Rework the repeated negative-definition beats at snapshots/cycle_01/chapters/chapter_04.md:137, snapshots/cycle_01/chapters/chapter_04.md:221, snapshots/cycle_01/chapters/chapter_04.md:381, snapshots/cycle_01/chapters/chapter_04.md:403, snapshots/cycle_01/chapters/chapter_04.md:433, snapshots/cycle_01/chapters/chapter_04.md:465, and snapshots/cycle_01/chapters/chapter_04.md:479 so most of those moments land in direct, scene-specific positive language on first contact. Keep one or two negation-based beats if needed for emphasis, but stop using the same template as the default delivery system for insight.",
+      "acceptance_test": "Pass if, across the cited spans, no more than two beats still rely on an \"it was not...\" or repeated \"he/she did not...\" setup and each revised moment states the concrete feeling, judgment, or bodily fact immediately; fail if three or more of the cited beats still define the moment mainly by negation."
+    }
+  ],
+  "summary": "Strong causal chapter: Micah's public swagger/private shame stays distinct, Marcia's office silence lands as damage rather than softness, Dre's cash offer is genuinely seductive, and character voices remain consistent with the style bible. No continuity contradiction, copied example-line drift, named-character hollowness, sanitization failure, intimacy fade-to-black issue, or narrative-tense drift was detected. The chapter still fails craft/prose at this stage because clipped narration fragments violate the constitution and the repeated negative-definition sentence formula becomes a noticeable tic."
+}

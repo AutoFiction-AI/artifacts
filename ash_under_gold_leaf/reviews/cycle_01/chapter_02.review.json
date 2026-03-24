@@ -1,0 +1,66 @@
+{
+  "chapter_id": "chapter_02",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_02_F01",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_01/chapters/chapter_02.md:72; snapshots/cycle_01/chapters/chapter_02.md:74",
+      "problem": "The scene introduces an ungrounded factual element (\"bed\") in Marisol's evidence challenge even though Salvador's prior list names only meetings, church, and studio. That local contradiction weakens the chapter's evidence-driven logic and Marisol's credibility as a precise interviewer.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_02.md:74, either (a) revise Marisol's list so it only references settings Salvador already named at snapshots/cycle_01/chapters/chapter_02.md:72, or (b) add a concrete prior mention of \"bed\" in Salvador's line at snapshots/cycle_01/chapters/chapter_02.md:72 so the challenge remains internally consistent.",
+      "acceptance_test": "PASS if the revised exchange at snapshots/cycle_01/chapters/chapter_02.md:72-75 contains no setting in Marisol's rebuttal that was not explicitly introduced by Salvador in the immediately preceding reply; FAIL if any extra setting appears without setup."
+    },
+    {
+      "finding_id": "chapter_02_F02",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_01/chapters/chapter_02.md:42; snapshots/cycle_01/chapters/chapter_02.md:46; snapshots/cycle_01/chapters/chapter_02.md:58; snapshots/cycle_01/chapters/chapter_02.md:120",
+      "problem": "Sanitization drift at the core reveal beat: the death-claim language stays euphemistic or negative (metaphor and 'not' framing) at the exact moment the narrative asks for concrete causal stakes. The chapter withholds naming the suspected mechanism, which softens pressure instead of sharpening it.",
+      "rewrite_direction": "In the interview reveal span at snapshots/cycle_01/chapters/chapter_02.md:42-60 and/or snapshots/cycle_01/chapters/chapter_02.md:120-147, add at least one explicit, concrete causal term (for example overdose/drug-use context tied to the foil detail) while preserving uncertainty about date/address/witness. Keep Marisol's verification standard active in the same beat.",
+      "acceptance_test": "PASS if the revised reveal includes at least one direct, non-euphemistic causal noun tied to Tomas's death context and an immediate verification challenge (date, location, witness, or document) in the same exchange; FAIL if the beat remains only metaphor plus negation."
+    },
+    {
+      "finding_id": "chapter_02_F03",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_01/chapters/chapter_02.md:264; snapshots/cycle_01/chapters/chapter_02.md:284; snapshots/cycle_01/chapters/chapter_02.md:374",
+      "problem": "Luis's register drifts into stacked aphorism mode, pushing him toward sponsor-guru cadence rather than grounded shift-worker pragmatism. This conflicts with his style-bible constraint against omniscient sponsor speech.",
+      "rewrite_direction": "Revise Luis's lines in snapshots/cycle_01/chapters/chapter_02.md:264-285 and snapshots/cycle_01/chapters/chapter_02.md:370-375 so most of his speech is concrete instruction, short accountability prompts, and transit-work diction; keep at most one punchy metaphorical line in the sequence.",
+      "acceptance_test": "PASS if Luis gives at least three concrete next actions in the cited spans and uses no more than one standalone aphoristic sentence; FAIL if multiple proverb-like lines remain the dominant texture."
+    },
+    {
+      "finding_id": "chapter_02_F04",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_01/chapters/chapter_02.md:194; snapshots/cycle_01/chapters/chapter_02.md:232; snapshots/cycle_01/chapters/chapter_02.md:248; snapshots/cycle_01/chapters/chapter_02.md:362; snapshots/cycle_01/chapters/chapter_02.md:380; snapshots/cycle_01/chapters/chapter_02.md:384",
+      "problem": "The chapter resolves the craving beat, then re-runs an almost identical evidence/accountability loop in the post-meeting call. That duplication slows narrative consequence and blunts escalation at the end of the chapter.",
+      "rewrite_direction": "Condense the second phone exchange at snapshots/cycle_01/chapters/chapter_02.md:362-390 by removing repeated checklist content already established in snapshots/cycle_01/chapters/chapter_02.md:232-285, and replace the recovered space with a new consequence beat (new obstacle, contradiction, or cost) that advances chapter-to-chapter momentum.",
+      "acceptance_test": "PASS if the revised post-meeting section introduces at least one new complication not present in the earlier street-call scene and avoids repeating the same verification standard verbatim; FAIL if it primarily restates earlier guidance."
+    },
+    {
+      "finding_id": "chapter_02_F05",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_01/chapters/chapter_02.md:12; snapshots/cycle_01/chapters/chapter_02.md:20; snapshots/cycle_01/chapters/chapter_02.md:38; snapshots/cycle_01/chapters/chapter_02.md:68; snapshots/cycle_01/chapters/chapter_02.md:186",
+      "problem": "A recurring 'as if' comparison template appears more than twice and starts to read as a default sentence engine rather than a deliberate rhythmic choice, flattening local prose variation.",
+      "rewrite_direction": "Rework at least three of the 'as if' constructions in snapshots/cycle_01/chapters/chapter_02.md:12, :20, :38, :68, and :186 into direct sensory observation, action, or interior inference so the chapter keeps pressure without relying on one recurring comparative scaffold.",
+      "acceptance_test": "PASS if the revised chapter contains no more than two narration-level 'as if' comparisons and the cited lines show varied construction types; FAIL if the same template remains dominant across those beats."
+    }
+  ],
+  "summary": "Chapter 02 lands key plot obligations and strong scene pressure, but it does not clear pass-level quality under strict review because of one high-impact local logic inconsistency, one high-severity sanitization drift at the core reveal beat, and medium-level dilution from dialogue aphorisming, repeated accountability loops, and a recurring prose template.",
+  "coverage_scene_ids": [
+    "scene_01_interview_room",
+    "scene_02_craving_call_meeting"
+  ]
+}

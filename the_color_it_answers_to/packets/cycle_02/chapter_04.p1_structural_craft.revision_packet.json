@@ -1,0 +1,95 @@
+{
+  "acceptance_targets": [
+    "[chapter_04_craft_001] Pass if the revised passage at snapshots/cycle_02/chapters/chapter_04.md:221 and snapshots/cycle_02/chapters/chapter_04.md:265 lets a first-time reader reach chapter end without Inez learning Gideon's name, Verdancy House, a paid naming deadline, or any explicit exclusivity arrangement. Fail if those specifics are still spoken or if Inez's response shows she already knows Silas is tied to Wren in particular.",
+    "[chapter_04_booker_001] Pass if every exchange after snapshots/cycle_02/chapters/chapter_04.md:183 either adds a new stake, changes the leverage between Silas and Inez, or introduces new Gideon pressure not already dramatized. Fail if the revised last third still includes a passage whose main function is simply to restate that names are practical instructions or memory after the reader has already seen that proved in scene.",
+    "[FBR-004] Pass if the confrontation at `snapshots/cycle_02/FINAL_NOVEL.md:1596` reads as specifically Inez rather than a reusable house beat, and the prose no longer uses 'went still' or 'went flat' there. Fail if the emotional turn is still carried by generic stillness vocabulary."
+  ],
+  "chapter_id": "chapter_04",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if the revised passage at snapshots/cycle_02/chapters/chapter_04.md:221 and snapshots/cycle_02/chapters/chapter_04.md:265 lets a first-time reader reach chapter end without Inez learning Gideon's name, Verdancy House, a paid naming deadline, or any explicit exclusivity arrangement. Fail if those specifics are still spoken or if Inez's response shows she already knows Silas is tied to Wren in particular.",
+      "chapter_id": "chapter_04",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:225 has Silas name Gideon Wren, Verdancy House, the payment, and the noon deadline to Inez; snapshots/cycle_02/chapters/chapter_04.md:265 has Inez answer with a Wren-specific prohibition.",
+      "finding_id": "chapter_04_craft_001",
+      "problem": "This creates a continuity contradiction with the canon knowledge state in outline/continuity_sheet.json, which says Silas's Gideon exclusivity tie and loss of neutrality stay hidden from Inez until chapter_10. Letting Inez learn the patron, payment, and immediate commercial brief here weakens the later betrayal/reveal arc and makes her chapter-end terms react to information she should not yet have.",
+      "rewrite_direction": "Revise the confession exchange starting at snapshots/cycle_02/chapters/chapter_04.md:221 and the ultimatum starting at snapshots/cycle_02/chapters/chapter_04.md:265 so Silas can admit divided motives and economic pressure without naming Gideon, Verdancy, the paid deadline, or any contract-level detail. Keep the moral split visible to the reader, but keep Inez's on-page knowledge general enough that the chapter_10 reveal still has somewhere to land.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if every exchange after snapshots/cycle_02/chapters/chapter_04.md:183 either adds a new stake, changes the leverage between Silas and Inez, or introduces new Gideon pressure not already dramatized. Fail if the revised last third still includes a passage whose main function is simply to restate that names are practical instructions or memory after the reader has already seen that proved in scene.",
+      "chapter_id": "chapter_04",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:37, snapshots/cycle_02/chapters/chapter_04.md:59, snapshots/cycle_02/chapters/chapter_04.md:91, snapshots/cycle_02/chapters/chapter_04.md:167, and snapshots/cycle_02/chapters/chapter_04.md:189 each restage the same proof that local names encode use; snapshots/cycle_02/chapters/chapter_04.md:247 resumes summarizing the lesson after Silas has already conceded it at snapshots/cycle_02/chapters/chapter_04.md:183.",
+      "finding_id": "chapter_04_booker_001",
+      "problem": "The chapter's discovery engine is over-proven. Once potback/threadshow, stepblue, and fingerbiter have all demonstrated the naming logic in action, the propagation-run speech and rooftop recap start to feel like a tutorial repeating itself rather than a scene escalating. That costs momentum in the final third, where the Gideon pressure and provisional alliance should be carrying the chapter instead of another round of explanation.",
+      "rewrite_direction": "Compress or repurpose one of the explanatory beats beginning at snapshots/cycle_02/chapters/chapter_04.md:187 or snapshots/cycle_02/chapters/chapter_04.md:247. After Silas's 'Not one' turn at snapshots/cycle_02/chapters/chapter_04.md:183, spend the remaining space on new leverage: the cost of his contract, what collaboration actually requires, or a concrete next hazard in the ward, rather than restating the use-name thesis in abstract terms.",
+      "severity": "MEDIUM",
+      "source": "booker",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if the confrontation at `snapshots/cycle_02/FINAL_NOVEL.md:1596` reads as specifically Inez rather than a reusable house beat, and the prose no longer uses 'went still' or 'went flat' there. Fail if the emotional turn is still carried by generic stillness vocabulary.",
+      "chapter_id": "chapter_04",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:1596",
+      "finding_id": "FBR-004",
+      "problem": "Recurring full-book pattern: default emotional punctuation via 'went still/flat' appears in 5 chapters (chapters 03, 04, 07, 11, and 13). In this chapter, 'She went still' is especially costly because Inez's authority is one of the novel's most specific registers, and the generic stillness shorthand blunts that precision.",
+      "rewrite_direction": "REPLACE the formula at `snapshots/cycle_02/FINAL_NOVEL.md:1596` and adjust the surrounding beat at `snapshots/cycle_02/FINAL_NOVEL.md:1594` and `snapshots/cycle_02/FINAL_NOVEL.md:1599` so Inez's reaction arrives through an exact workman's tell: clipped instruction, hand placement on the rail or tray, narrowed syntax, or another pressure response unique to her.",
+      "severity": "MEDIUM",
+      "source": "booker_global",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "7b08aeb786f1121455bfb432cc51060e60897c4b6cf73ef45106e038ba68a42e",
+  "must_fix_count": 3,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into the book's strange civic biology, vulgar humor, erotic consequence, and class abrasion. When a choice appears between the cleaner version and the truer, messier one, choose the messier version so long as causality and character truth remain exact. Treat the city's slime, smell, heat, and appetite as part of the novel's beauty rather than embarrassment to be polished away.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If sex, shame, hunger, class humiliation, bodily mess, or economic pressure starts drifting into decorous vagueness, rewrite until the scene carries concrete sensory and social cost on the page.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm across the novel; uncontracted forms should signal emphasis, class performance, ceremonial language, or Gideon's deliberate control.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate crowd scenes with cleanup, ritual with labor, public humiliation with private tenderness, and single-sweep chapters with multi-scene accumulations; no two consecutive chapters should feel built from the same emotional weather, dialogue density, or scene rhythm.",
+      "diction": "Period-aware but not museum-stiff; vivid, bodily, class-conscious, and willing to be ugly or funny without slipping into arch parody or modern snark.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third person anchored to Silas Vale for the full novel, with no head-hopping and no neutral historian voice; Inez remains legible through observed action, dialogue, and the objects she shares.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Elastic and pressure-sensitive: quick comic snap in public scenes, thicker sensory accumulation in labor and erotic passages, and hard clean sentences at moments of shame or decision.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

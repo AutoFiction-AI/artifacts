@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_13",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_13_f01",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:389",
+      "problem": "The reported Mina line at line 389 is a near-verbatim calibration echo of Nita's non-copyable style-bible example line: it reuses the same 'If the apartment ... it can start ...' joke frame. That is direct style-bible leakage, and it muddies voice separation by making Mina sound like a recycled Nita reference instead of her own sharper off-page force.",
+      "rewrite_direction": "Replace the reported quote at snapshots/cycle_01/chapters/chapter_13.md:389 and keep the follow-through at snapshots/cycle_01/chapters/chapter_13.md:390 focused on Nita's embarrassment. Give Mina a fresh insult tied to cash, resale pressure, or family leverage without reusing the 'If the apartment ... it can start ...' scaffolding from the style-bible example.",
+      "acceptance_test": "PASS if the revised line at snapshots/cycle_01/chapters/chapter_13.md:389 conveys Mina's contempt in a new sentence shape and no longer reads as a variant of the style-bible example; FAIL if the line still uses the 'If the apartment ... it can start ...' template or a near-paraphrase of it."
+    },
+    {
+      "finding_id": "chapter_13_f02",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:517, snapshots/cycle_01/chapters/chapter_13.md:519, snapshots/cycle_01/chapters/chapter_13.md:521, snapshots/cycle_01/chapters/chapter_13.md:523, snapshots/cycle_01/chapters/chapter_13.md:525, snapshots/cycle_01/chapters/chapter_13.md:527, snapshots/cycle_01/chapters/chapter_13.md:545",
+      "problem": "Scene 3 collapses into stacked low-information assent. Ben answers Nita with repeated 'I know.' beats, violating the style bible's `max_consecutive_low_info_replies: 1` and flattening leverage in a scene that should keep redistributing pressure. The repetition also narrows Ben's voice from evasive, socially smoothing specificity into generic shame-muted transcript cadence.",
+      "rewrite_direction": "Rework Ben's replies at snapshots/cycle_01/chapters/chapter_13.md:519, snapshots/cycle_01/chapters/chapter_13.md:523, snapshots/cycle_01/chapters/chapter_13.md:527, and snapshots/cycle_01/chapters/chapter_13.md:545 so no more than one consecutive reply is a bare assent. Use those slots for character-specific concessions or logistical fear in Ben's register: what he loses, what he cannot cover, or what manual co-parenting will actually cost.",
+      "acceptance_test": "PASS if the revised exchange beginning at snapshots/cycle_01/chapters/chapter_13.md:517 contains no more than one consecutive low-information assent from Ben and each of Nita's three pressures receives a distinct reply that changes leverage or adds consequence; FAIL if the scene still stacks multiple bare 'I know.' replies."
+    },
+    {
+      "finding_id": "chapter_13_f03",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:81, snapshots/cycle_01/chapters/chapter_13.md:147, snapshots/cycle_01/chapters/chapter_13.md:281, snapshots/cycle_01/chapters/chapter_13.md:361, snapshots/cycle_01/chapters/chapter_13.md:419, snapshots/cycle_01/chapters/chapter_13.md:431, snapshots/cycle_01/chapters/chapter_13.md:493, snapshots/cycle_01/chapters/chapter_13.md:507, snapshots/cycle_01/chapters/chapter_13.md:531, snapshots/cycle_01/chapters/chapter_13.md:565",
+      "problem": "The narration leans on a repeated 'looked at/looked up/looked back' reaction formula well past the twice-is-coincidence threshold. At this frequency it stops feeling like controlled camera placement and starts reading as autopilot shorthand, especially in a chapter whose strongest passages succeed by precise bodily or domestic noticing.",
+      "rewrite_direction": "Revise the reaction beats at snapshots/cycle_01/chapters/chapter_13.md:281, snapshots/cycle_01/chapters/chapter_13.md:361, snapshots/cycle_01/chapters/chapter_13.md:419, snapshots/cycle_01/chapters/chapter_13.md:493, snapshots/cycle_01/chapters/chapter_13.md:507, and snapshots/cycle_01/chapters/chapter_13.md:565 so they register through specific body movement, object handling, or sensory pressure instead of the generic 'looked' construction. Keep the remaining uses, if any, reserved for the two moments where plain visual redirection is genuinely the sharpest choice.",
+      "acceptance_test": "PASS if at least four of the cited beats are rewritten into distinct physical or sensory reactions and no more than two narration sentences in those cited locations still rely on a generic 'looked' construction; FAIL if three or more of those moments still default to 'looked at/looked up/looked back.'"
+    },
+    {
+      "finding_id": "chapter_13_f04",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:509, snapshots/cycle_01/chapters/chapter_13.md:559, snapshots/cycle_01/chapters/chapter_13.md:563, snapshots/cycle_01/chapters/chapter_13.md:567, snapshots/cycle_01/chapters/chapter_13.md:605, snapshots/cycle_01/chapters/chapter_13.md:609",
+      "problem": "The final movement explains the chapter's meaning too directly instead of cashing it out in a sharper irreversible turn. Lines like 'Freedom ...,' the triple 'I'm saying ...,' 'nobody is coming to rescue ...,' and 'It was only real' push the scene toward thesis delivery and polished self-summary, which the style bible explicitly warns against for Nita. The result is a closing scene that understands its themes more clearly than it dramatizes them.",
+      "rewrite_direction": "Reshape the closing passage at snapshots/cycle_01/chapters/chapter_13.md:509, snapshots/cycle_01/chapters/chapter_13.md:559, snapshots/cycle_01/chapters/chapter_13.md:563, snapshots/cycle_01/chapters/chapter_13.md:571, snapshots/cycle_01/chapters/chapter_13.md:605, and snapshots/cycle_01/chapters/chapter_13.md:609 so the scene lands on one concrete, irreversible next move on-page: choosing who takes which listing, freezing the card, contacting a landlord, or another material concession. Break Nita's speech into harsher operational specifics rather than a generalized thesis about rescue or class position.",
+      "acceptance_test": "PASS if the revised closing scene includes one irreversible action on-page and the replacement for the speech beginning at snapshots/cycle_01/chapters/chapter_13.md:559 is grounded in specific sacrifices or logistics instead of generalized thesis language; FAIL if the scene still ends by stating its meaning abstractly without a concrete changed condition."
+    }
+  ],
+  "summary": "Continuity, tense, and the core shame mechanics are strong: the chapter cleanly lands the required debt reveal, Mina subsidy reveal, and class-loss pressure with concrete domestic detail. It still fails this review because scene 3 slips into style-bible leakage, repeated low-information dialogue, a visible 'looked' prose tic, and a closing movement that states the chapter's thesis more neatly than it dramatizes it."
+}

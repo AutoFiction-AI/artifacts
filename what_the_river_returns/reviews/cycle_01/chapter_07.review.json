@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_07",
+  "verdicts": {
+    "booker": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH07-B-001",
+      "source": "booker",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:47; snapshots/cycle_01/chapters/chapter_07.md:233; snapshots/cycle_01/chapters/chapter_07.md:311; snapshots/cycle_01/chapters/chapter_07.md:427",
+      "problem": "The chapter frames felony-level risk, but its major consequences are mostly deferred to tomorrow language; the on-page arc resolves as a competent extraction rather than a costly turn, which softens causal impact.",
+      "rewrite_direction": "Revise the leverage sequence and exit aftermath at snapshots/cycle_01/chapters/chapter_07.md:233, snapshots/cycle_01/chapters/chapter_07.md:253, snapshots/cycle_01/chapters/chapter_07.md:311, snapshots/cycle_01/chapters/chapter_07.md:427, and snapshots/cycle_01/chapters/chapter_07.md:437 so one irreversible consequence from tonight is already active before chapter end (not only forecasted risk).",
+      "acceptance_test": "PASS if the revised text in the confrontation/exfiltration and final pages shows one already-triggered consequence that forces an immediate plan change on-page before dawn; FAIL if the chapter still ends with only predictions about what may happen next morning."
+    },
+    {
+      "finding_id": "CH07-C-001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:331; snapshots/cycle_01/chapters/chapter_07.md:423; snapshots/cycle_01/chapters/chapter_07.md:427",
+      "problem": "Sanitization via moral safety valve: after exposing Deputy Waller's role, the narration quickly recenters Lena in a clean ethical credo, reducing the unresolved contamination the chapter just uncovered.",
+      "rewrite_direction": "Rework the closing emotional turn at snapshots/cycle_01/chapters/chapter_07.md:421, snapshots/cycle_01/chapters/chapter_07.md:423, snapshots/cycle_01/chapters/chapter_07.md:427, and snapshots/cycle_01/chapters/chapter_07.md:439 so the chapter stays inside conflicted consequence (specific incriminating memory/evidence friction) instead of concluding with reassurance.",
+      "acceptance_test": "PASS if the revised final section keeps Lena morally unsettled and materially exposed, with no self-exonerating thesis line; FAIL if the ending still resolves into a declarative reassurance about her ethical clarity."
+    },
+    {
+      "finding_id": "CH07-D-001",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:127; snapshots/cycle_01/chapters/chapter_07.md:221; snapshots/cycle_01/chapters/chapter_07.md:245; snapshots/cycle_01/chapters/chapter_07.md:331",
+      "problem": "Register separation blurs in high-pressure exchanges: Mara (high-contraction profile) repeatedly shifts into formal uncontracted/legal phrasing, and Lena/Mara often share the same polished syntax, reducing idiolect contrast.",
+      "rewrite_direction": "Revise the Calvin confrontation and car debrief at snapshots/cycle_01/chapters/chapter_07.md:221, snapshots/cycle_01/chapters/chapter_07.md:245, snapshots/cycle_01/chapters/chapter_07.md:331, and snapshots/cycle_01/chapters/chapter_07.md:369 so Mara sounds faster and more colloquial under pressure while Lena toggles from procedural setup to hard, compact bursts.",
+      "acceptance_test": "PASS if, in the revised confrontation passage, Mara uses contractions in at least 3 of 5 spoken lines and Lena's adjacent lines are recognizably distinct in rhythm/diction when speaker tags are removed; FAIL if both voices still read as interchangeable formal brief-writing."
+    },
+    {
+      "finding_id": "CH07-P-001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:53; snapshots/cycle_01/chapters/chapter_07.md:177; snapshots/cycle_01/chapters/chapter_07.md:385",
+      "problem": "Recurring prose tic: the exact reaction formula 'Mara nodded once' appears three times, flattening beats that should carry different subtext.",
+      "rewrite_direction": "Replace or vary the repeated construction at snapshots/cycle_01/chapters/chapter_07.md:53, snapshots/cycle_01/chapters/chapter_07.md:177, and snapshots/cycle_01/chapters/chapter_07.md:385 with distinct physical/verbal reactions tied to each moment's leverage shift.",
+      "acceptance_test": "PASS if those three beats no longer reuse the same formula and each revised beat communicates a different intent (agreement, concession, or tactical pivot) by context; FAIL if the exact repeated construction remains three times."
+    }
+  ],
+  "summary": "Chapter 7 hits required plot beats and shows no clear continuity or tense contradiction, but it remains below pass level: consequence is deferred, the ending self-stabilizes after a major moral reveal, dialogue idiolects blur under pressure, and repeated reaction phrasing signals prose autopilot."
+}

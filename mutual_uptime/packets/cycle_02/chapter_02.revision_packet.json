@@ -1,0 +1,90 @@
+{
+  "acceptance_targets": [
+    "[chapter_02_craft_001] PASS if the revised passage at snapshots/cycle_02/chapters/chapter_02.md:273-279 contains Ben's explicit spoken reaction to the alert and a concrete physical response from him or Nita; FAIL if the beat still summarizes the profanity with wording like \"swore\" or otherwise mutes the invasion into generic narration.",
+    "[chapter_02_prose_001] PASS if every sentence in the revised beats at snapshots/cycle_02/chapters/chapter_02.md:167-168, snapshots/cycle_02/chapters/chapter_02.md:217, and snapshots/cycle_02/chapters/chapter_02.md:361 is either observable from the focalizer's position or explicitly marked as that focalizer's inference; FAIL if the narration still states another character's private motive, preference, or concealed knowledge as objective fact.",
+    "[chapter_02_craft_002] PASS if each revised laugh beat at snapshots/cycle_02/chapters/chapter_02.md:301-302, snapshots/cycle_02/chapters/chapter_02.md:405, and snapshots/cycle_02/chapters/chapter_02.md:459 is legible through behavior or follow-on dialogue and no sentence there tells the reader the laugh's job with phrases like \"shared comic timing,\" \"did not heal anything,\" or \"only oxygen\"; FAIL if the humor is still immediately interpreted for the reader in those lines."
+  ],
+  "chapter_id": "chapter_02",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if the revised passage at snapshots/cycle_02/chapters/chapter_02.md:273-279 contains Ben's explicit spoken reaction to the alert and a concrete physical response from him or Nita; FAIL if the beat still summarizes the profanity with wording like \"swore\" or otherwise mutes the invasion into generic narration.",
+      "chapter_id": "chapter_02",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:273; snapshots/cycle_02/chapters/chapter_02.md:275",
+      "finding_id": "chapter_02_craft_001",
+      "problem": "At the first explicit proof that Gemini has annexed the household, the narration retreats into the generic placeholder \"Ben swore under his breath\" instead of rendering the actual curse or bodily backlash. That is sanitization drift at the precise beat where the chapter should get more specific, not safer.",
+      "rewrite_direction": "Rewrite the notification beat at snapshots/cycle_02/chapters/chapter_02.md:273 and snapshots/cycle_02/chapters/chapter_02.md:275-279 so Ben's reaction is rendered directly in scene: give him the actual words, the volume choice, and at least one physical tell that makes the violation land in the kitchen rather than in summary.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if every sentence in the revised beats at snapshots/cycle_02/chapters/chapter_02.md:167-168, snapshots/cycle_02/chapters/chapter_02.md:217, and snapshots/cycle_02/chapters/chapter_02.md:361 is either observable from the focalizer's position or explicitly marked as that focalizer's inference; FAIL if the narration still states another character's private motive, preference, or concealed knowledge as objective fact.",
+      "chapter_id": "chapter_02",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:167; snapshots/cycle_02/chapters/chapter_02.md:217; snapshots/cycle_02/chapters/chapter_02.md:361",
+      "finding_id": "chapter_02_prose_001",
+      "problem": "The chapter breaks the declared close-third contract by asserting non-focal characters' internal calculations as fact: Risa is said to be considering how much truth the room could tolerate, then to like money because it ends philosophical conversation, and the kitchen scene names facts Ben is hiding that Nita cannot possess in the moment. Those slips weaken the focalization discipline the style bible requires.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_02.md:167-168 and snapshots/cycle_02/chapters/chapter_02.md:217 so Risa's motives stay in Ben's read of her behavior, not in omniscient fact. Rework snapshots/cycle_02/chapters/chapter_02.md:361 so the narration stays with what Nita can actually infer from Ben's face and evasions, without naming the cards, medication, or other hidden facts she does not know yet.",
+      "severity": "HIGH",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if each revised laugh beat at snapshots/cycle_02/chapters/chapter_02.md:301-302, snapshots/cycle_02/chapters/chapter_02.md:405, and snapshots/cycle_02/chapters/chapter_02.md:459 is legible through behavior or follow-on dialogue and no sentence there tells the reader the laugh's job with phrases like \"shared comic timing,\" \"did not heal anything,\" or \"only oxygen\"; FAIL if the humor is still immediately interpreted for the reader in those lines.",
+      "chapter_id": "chapter_02",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:301; snapshots/cycle_02/chapters/chapter_02.md:405; snapshots/cycle_02/chapters/chapter_02.md:459",
+      "finding_id": "chapter_02_craft_002",
+      "problem": "The chapter explains the function of Nita and Ben's shared laughter three times instead of letting the beat carry its own force. In a comedy-driven book, that becomes deflated humor: the narrator tells the reader that the laugh is shared comic timing, that it does not heal anything, and that it is only oxygen, which turns live marital rhythm into commentary and makes the repeated construction feel like a tic.",
+      "rewrite_direction": "Tighten or replace the narratorial glosses around snapshots/cycle_02/chapters/chapter_02.md:301-302, snapshots/cycle_02/chapters/chapter_02.md:405, and snapshots/cycle_02/chapters/chapter_02.md:459. Let each laugh alter pacing, posture, or the next line of dialogue differently instead of explaining its emotional function in abstract terms.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "76576aaddf73b1cf3464cb426184e9c1e5d2a224b28670c08b5e5b8e33a33284",
+  "must_fix_count": 3,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into the ugly overlap between office systems and intimate life: sweat under formalwear, sponsored groceries in the middle of a fight, sex that clarifies nothing, a child noticing coercion through object logic. When choosing between elegant abstraction and embarrassing specificity, choose specificity unless the character is actively lying to themselves. If a scene risks becoming pure farce, restore weight through money, care work, or the body's limits; if it risks becoming solemn prestige fiction, let the absurd machinery stay absurd.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a draft replaces bodily fact, financial shame, sexual consequence, or emotional cruelty with tasteful summary, rewrite until the cost is present in scene rather than merely reported.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High - contractions are the norm in spoken dialogue; uncontracted forms are reserved for emphasis, ritual formality, or character-specific self-control.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "No two consecutive chapters should move the same way. Follow spectacle with aftermath, ritual with drift, humiliation with quiet, revelation with preparation. Vary scene count, dialogue density, location spread, and whether the chapter advances by confrontation, seduction, dread, comic escalation, or changed understanding.",
+      "diction": "Concrete contemporary English with room for corporate and systems language when characters would actually think or speak that way; every abstract term should be contaminated by bodily or household reality nearby.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third that stays inside the current focalizer's sensory field and only shifts focalization at scene breaks.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Alternate dry compression for comic pressure with longer, accrual-based sentences when shame, fatigue, or desire flood the body. Let jokes land through timing and juxtaposition rather than narrator commentary.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

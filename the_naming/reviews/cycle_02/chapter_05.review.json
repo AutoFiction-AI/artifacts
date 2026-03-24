@@ -1,0 +1,43 @@
+{
+  "chapter_id": "chapter_05",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_05-F001",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_02/chapters/chapter_05.md:3; snapshots/cycle_02/chapters/chapter_05.md:35; snapshots/cycle_02/chapters/chapter_05.md:187",
+      "problem": "The chapter fixes Arash's wedding at exactly eleven days away, which conflicts with the canonical continuity timeline that keeps the road closed until Day 21 and still treats the wedding road as a live future route in later beats. As written, the countdown makes the wedding date expire before the road reopens.",
+      "rewrite_direction": "Revise the countdown language at snapshots/cycle_02/chapters/chapter_05.md:3, snapshots/cycle_02/chapters/chapter_05.md:35, and snapshots/cycle_02/chapters/chapter_05.md:187 so the deadline matches the continuity sheet, or change the broader chronology everywhere if the eleven-day figure is non-negotiable. Do not leave chapter_05 carrying an exact number that makes chapter_18's departure-to-the-wedding-road logic impossible.",
+      "acceptance_test": "PASS if a reader can reconcile the revised deadline in snapshots/cycle_02/chapters/chapter_05.md:3, snapshots/cycle_02/chapters/chapter_05.md:35, and snapshots/cycle_02/chapters/chapter_05.md:187 with the continuity sheet's Day 21 road reopening without the wedding having already lapsed; FAIL if the chapter still states or clearly implies an exact wedding date that arrives before the road can canonically reopen."
+    },
+    {
+      "finding_id": "chapter_05-F002",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_02/chapters/chapter_05.md:137; snapshots/cycle_02/chapters/chapter_05.md:139; snapshots/cycle_02/chapters/chapter_05.md:141; snapshots/cycle_02/chapters/chapter_05.md:143; snapshots/cycle_02/chapters/chapter_05.md:145; snapshots/cycle_02/chapters/chapter_05.md:147; snapshots/cycle_02/chapters/chapter_05.md:149; snapshots/cycle_02/chapters/chapter_05.md:151; snapshots/cycle_02/chapters/chapter_05.md:153; snapshots/cycle_02/chapters/chapter_05.md:155",
+      "problem": "The chapter hits a ten-paragraph stretch in the core hall confrontation with no Venn interiority. Because the focalizer disappears from thought, sensation, memory, or self-assessment right when Bram, Fasa, and Deshi pin him down, the scene starts to read like staged transcript instead of close-third pressure.",
+      "rewrite_direction": "Thread Venn-specific interior beats back into the confrontation bracketed by snapshots/cycle_02/chapters/chapter_05.md:137 and snapshots/cycle_02/chapters/chapter_05.md:155. Give him at least two moments of bodily reaction, private calculation, or self-exposure after Bram's challenge and again after Deshi's 'orderly response' line so the exchange stays under his skin rather than outside him.",
+      "acceptance_test": "PASS if the revised passage between snapshots/cycle_02/chapters/chapter_05.md:137 and snapshots/cycle_02/chapters/chapter_05.md:155 contains at least two explicit Venn interior beats (thought, sensation, memory, or self-assessment) and no run longer than five consecutive paragraphs without Venn interiority; FAIL if that stretch still plays as ten externally observed paragraphs in a row."
+    },
+    {
+      "finding_id": "chapter_05-F003",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_02/chapters/chapter_05.md:83; snapshots/cycle_02/chapters/chapter_05.md:125; snapshots/cycle_02/chapters/chapter_05.md:179",
+      "problem": "The room's shifting silence is rendered three times with the same anonymous negation frame ('No one ...'). By the third use, the construction stops feeling shaped and starts flattening distinct social beats into one repeated prose default.",
+      "rewrite_direction": "Revise at least two of the communal-reaction beats at snapshots/cycle_02/chapters/chapter_05.md:83, snapshots/cycle_02/chapters/chapter_05.md:125, and snapshots/cycle_02/chapters/chapter_05.md:179 so they register through concrete, named witness behavior rather than another 'No one ...' sentence. Keep the pressure on silence, but vary how that silence manifests.",
+      "acceptance_test": "PASS if at least two of the cited beats no longer rely on a 'No one ...' construction and each revised beat communicates a different room temperature through specific observable behavior; FAIL if the chapter still uses the same anonymous-negation formula for all three reactions."
+    }
+  ],
+  "summary": "FAIL. The chapter has real strengths: Venn's controlling POV is mostly well calibrated, the grief/uncanny material is unsanitized, and the dialogue voices remain distinct and style-bible-consistent. It still falls below pass level because chapter_05 introduces a HIGH wedding-timeline contradiction against the canonical Day 21 reopening, lets the decisive mid-scene argument run for ten consecutive paragraphs without Venn's interior experience, and repeats the same 'No one ...' silence construction until separate reaction beats begin to blur.",
+  "coverage_scene_ids": []
+}

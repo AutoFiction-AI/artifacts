@@ -1,0 +1,33 @@
+{
+  "chapter_id": "chapter_03",
+  "verdicts": {
+    "booker": "PASS",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_03_craft_001",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:339; snapshots/cycle_01/chapters/chapter_03.md:341; snapshots/cycle_01/chapters/chapter_03.md:343; snapshots/cycle_01/chapters/chapter_03.md:345",
+      "problem": "At the emotional center of Halima's ledger reading, the narration slips into clipped note-fragments ('First the date. Then the labor note...') rather than complete sentences. That breaks the constitution's anti-elliptical-clipping rule and weakens embodied pressure at the exact point where the chapter should feel most fully lived-through.",
+      "rewrite_direction": "Rewrite the ledger-reading block at snapshots/cycle_01/chapters/chapter_03.md:339-347 so the staggered reveal still arrives piece by piece, but each beat is a grammatically complete sentence anchored to Halima's act of reading, touching, or recognizing the page. Keep the sequence date -> labor note -> death line, but remove the note-form fragment rhythm.",
+      "acceptance_test": "PASS if snapshots/cycle_01/chapters/chapter_03.md:339-347 still disclose the date, labor note, and death line one beat at a time while every sentence in that span has an explicit subject and verb tied to Halima's perception; FAIL if the revised passage still depends on bare fragment labels such as 'First the date' or 'Then the labor note' for its force."
+    },
+    {
+      "finding_id": "chapter_03_prose_001",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:95; snapshots/cycle_01/chapters/chapter_03.md:101; snapshots/cycle_01/chapters/chapter_03.md:287; snapshots/cycle_01/chapters/chapter_03.md:365; snapshots/cycle_01/chapters/chapter_03.md:387",
+      "problem": "The chapter reuses the same stand-alone negation pivot often enough to become a visible prose tic: 'Not a grand dream.' 'Not hopeful chatter.' 'Not relief.' 'Not from tears.' 'Not dramatically.' The first instance reads as compression; by the later repetitions, the pattern feels like default emphasis rather than freshly made sentence music.",
+      "rewrite_direction": "Rework at least three of the beats at snapshots/cycle_01/chapters/chapter_03.md:95-101, snapshots/cycle_01/chapters/chapter_03.md:287-289, snapshots/cycle_01/chapters/chapter_03.md:365-367, and snapshots/cycle_01/chapters/chapter_03.md:387-389 so they land through affirmative image, action, or sensation instead of the recurring 'Not X.' pivot. Preserve compression, but vary the sentence engine.",
+      "acceptance_test": "PASS if a reread of snapshots/cycle_01/chapters/chapter_03.md:95-101, snapshots/cycle_01/chapters/chapter_03.md:287-289, snapshots/cycle_01/chapters/chapter_03.md:365-367, and snapshots/cycle_01/chapters/chapter_03.md:387-389 shows no more than one remaining stand-alone 'Not ...' opener across those target spans and each revised moment now lands through distinct concrete material; FAIL if multiple target spans still rely on the same negation-first rhetorical turn."
+    }
+  ],
+  "summary": "Strong causal chapter: it establishes the household baseline cleanly, makes Nura's nursing ambition specific, and turns the verification regime into immediate family pressure without continuity or tense drift. Halima and Nura stay distinct and style-bible-consistent in register and contraction use. The failures are sentence-level: the ledger reveal uses constitution-banned clipped fragments, and the repeated 'Not X.' pivot becomes a noticeable prose habit by the second half.",
+  "coverage_scene_ids": []
+}

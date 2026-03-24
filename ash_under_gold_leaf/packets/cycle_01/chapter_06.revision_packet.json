@@ -1,0 +1,103 @@
+{
+  "acceptance_targets": [
+    "[CH06-F001] PASS if the revised text in lines 207-233 clearly shows a legally plausible purchase path for the intoxicant and no bodega clerk is selling distilled liquor; FAIL if vodka/spirits are still purchased from a bodega or location details still contradict the handoff setup.",
+    "[CH06-F002] PASS if, after line 251, at least one new external event materially changes Marisol's available choices before the close at lines 449-453; FAIL if the section remains primarily iterative draft/delete self-looping with no new pressure variable.",
+    "[CH06-F003] PASS if each side character's speech is distinguishable by syntax/rhythm without dialogue tags and only one of the two exchanges delivers direct life-advice; FAIL if both still read as interchangeable warning one-liners to Marisol.",
+    "[CH06-F004] PASS if the revised passage contains no more than two explicit \"She typed:\" lead-ins and no more than one standalone delete/backspace marker while preserving the unsent-confession conflict to both Luis and Ada; FAIL if three or more near-identical compose/delete beat pairs remain."
+  ],
+  "chapter_id": "chapter_06",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if the revised text in lines 207-233 clearly shows a legally plausible purchase path for the intoxicant and no bodega clerk is selling distilled liquor; FAIL if vodka/spirits are still purchased from a bodega or location details still contradict the handoff setup.",
+      "chapter_id": "chapter_06",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:209",
+      "finding_id": "CH06-F001",
+      "problem": "The relapse purchase is staged in a neighborhood bodega selling half-pint vodka, which breaks contemporary NYC realism and conflicts with chapter-boundary handoff continuity that expects a liquor-store purchase context. This is a canonical world-logic contradiction, not a cosmetic detail.",
+      "rewrite_direction": "Revise the acquisition sequence at snapshots/cycle_01/chapters/chapter_06.md:207, snapshots/cycle_01/chapters/chapter_06.md:209, snapshots/cycle_01/chapters/chapter_06.md:211, and snapshots/cycle_01/chapters/chapter_06.md:217 so Marisol buys from a licensed liquor store (or change the substance to a legally sold bodega item). Keep downstream relapse beats intact but align location/object specifics with the chapter handoff.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if, after line 251, at least one new external event materially changes Marisol's available choices before the close at lines 449-453; FAIL if the section remains primarily iterative draft/delete self-looping with no new pressure variable.",
+      "chapter_id": "chapter_06",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:273",
+      "finding_id": "CH06-F002",
+      "problem": "After the first-drink turning point, the chapter runs a long iterative loop of drafting/deleting messages and additional swallows without enough new external pressure, so escalation plateaus instead of compounding consequence.",
+      "rewrite_direction": "Compress and re-sequence the post-relapse middle in snapshots/cycle_01/chapters/chapter_06.md:273 through snapshots/cycle_01/chapters/chapter_06.md:315 and snapshots/cycle_01/chapters/chapter_06.md:393 through snapshots/cycle_01/chapters/chapter_06.md:416 by adding at least one concrete interruptive event (time-sensitive call consequence, missed-meeting threshold, or immediate practical fallout) that forces a fresh decision before the final unsent-thread beat.",
+      "severity": "MEDIUM",
+      "source": "booker",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if each side character's speech is distinguishable by syntax/rhythm without dialogue tags and only one of the two exchanges delivers direct life-advice; FAIL if both still read as interchangeable warning one-liners to Marisol.",
+      "chapter_id": "chapter_06",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:229",
+      "finding_id": "CH06-F003",
+      "problem": "Two incidental speakers (cashier and halal vendor) land similar cautionary mini-lectures in the same chapter movement, making side voices converge into one advisory authorial register rather than distinct neighborhood idiolects.",
+      "rewrite_direction": "Differentiate exchange texture at snapshots/cycle_01/chapters/chapter_06.md:225 through snapshots/cycle_01/chapters/chapter_06.md:230 and snapshots/cycle_01/chapters/chapter_06.md:375 through snapshots/cycle_01/chapters/chapter_06.md:380: keep one interaction terse/procedural and let the other carry character-specific cadence or transactional motive, instead of two parallel cautionary lines.",
+      "severity": "MEDIUM",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if the revised passage contains no more than two explicit \"She typed:\" lead-ins and no more than one standalone delete/backspace marker while preserving the unsent-confession conflict to both Luis and Ada; FAIL if three or more near-identical compose/delete beat pairs remain.",
+      "chapter_id": "chapter_06",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:277",
+      "finding_id": "CH06-F004",
+      "problem": "A recurring construction appears more than twice: the repeated \"She typed:\" plus \"Backspace/Delete\" loop (lines 277, 281, 285, 303, 329, 411 with delete markers at 279, 283, 301, 305). The repetition reads as mechanical patterning rather than escalating interior form.",
+      "rewrite_direction": "Rework snapshots/cycle_01/chapters/chapter_06.md:277 through snapshots/cycle_01/chapters/chapter_06.md:307 and snapshots/cycle_01/chapters/chapter_06.md:411 through snapshots/cycle_01/chapters/chapter_06.md:415 so only one or two explicit compose/delete beats remain; shift the remaining pressure into embodied action, sensory distortion, or decision cost.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "043a9c4375199eb8361326ffed73228c806b40670d451f0c214b84f429cb06cf",
+  "must_fix_count": 4,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "When choosing between reputationally safe abstraction and specific discomfort, choose specificity. Render addiction, sexuality, deceit, class shame, and grief at lived scale. In edge cases, preserve character truth and causal accountability over reader comfort or institutional decorum.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene demands bodily, moral, or economic specificity, euphemistic phrasing is treated as a failed draft and must be rewritten with concrete stakes and observable consequence.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the spoken default; full forms appear only for emphasis, ritual language, or character-specific formal posture",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate scene density and pressure modes: pair high-conflict chapters with quiet domestic or documentary chapters, vary dialogue-to-interiority ratios, and prevent identical chapter skeletons in consecutive sequence.",
+      "diction": "contemporary literary diction with class-aware, borough-specific concreteness; avoid prestige-neutral workshop language",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third centered on Marisol, with rare brief distance expansions for institutional scenes",
+      "narrative_tense": "past tense",
+      "rhythm_target": "alternating tensile compression and reflective extension; line-level cadence should carry emotional pressure, not just information",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "acceptance_targets": [
+    "[chapter_11_f002_dialogue_idiolect_convergence] In revised versions of the line clusters around snapshots/cycle_02/chapters/chapter_11.md:255-314 and snapshots/cycle_02/chapters/chapter_11.md:522-529, pass only if Eli has at least one self-correction and one logistics-first line, Marisol has at least one concrete work/sensory detail line, and at least 2 original aphoristic couplets are replaced by less polished speech.",
+    "[chapter_11_f005_dialogue_mechanical_echo_loops] In revised dialogue corresponding to snapshots/cycle_02/chapters/chapter_11.md:267-349 and snapshots/cycle_02/chapters/chapter_11.md:440-442, pass only if each of the exact phrases \"I hear you\", \"Do you?\", and \"Say it back\" appears no more than once total and at least 2 replacement lines carry new concrete context words from the current task/stakes."
+  ],
+  "chapter_id": "chapter_11",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "In revised versions of the line clusters around snapshots/cycle_02/chapters/chapter_11.md:255-314 and snapshots/cycle_02/chapters/chapter_11.md:522-529, pass only if Eli has at least one self-correction and one logistics-first line, Marisol has at least one concrete work/sensory detail line, and at least 2 original aphoristic couplets are replaced by less polished speech.",
+      "chapter_id": "chapter_11",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_11.md:309; snapshots/cycle_02/chapters/chapter_11.md:313; snapshots/cycle_02/chapters/chapter_11.md:406; snapshots/cycle_02/chapters/chapter_11.md:524; snapshots/cycle_02/chapters/chapter_11.md:528",
+      "finding_id": "chapter_11_f002_dialogue_idiolect_convergence",
+      "problem": "Eli and Marisol repeatedly speak in similarly polished aphoristic lines, which compresses idiolect separation and makes both voices sound authored by the same rhetorical cadence under pressure.",
+      "rewrite_direction": "Revise exchanges at snapshots/cycle_02/chapters/chapter_11.md:309, snapshots/cycle_02/chapters/chapter_11.md:313, snapshots/cycle_02/chapters/chapter_11.md:406, snapshots/cycle_02/chapters/chapter_11.md:524, and snapshots/cycle_02/chapters/chapter_11.md:528: give Eli more self-interrupting logistical syntax and give Marisol more concrete service-work/sensory diction with sharper factual pressure. Break at least two proverb-like one-liners into messier spoken rhythm.",
+      "severity": "MEDIUM",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "In revised dialogue corresponding to snapshots/cycle_02/chapters/chapter_11.md:267-349 and snapshots/cycle_02/chapters/chapter_11.md:440-442, pass only if each of the exact phrases \"I hear you\", \"Do you?\", and \"Say it back\" appears no more than once total and at least 2 replacement lines carry new concrete context words from the current task/stakes.",
+      "chapter_id": "chapter_11",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_11.md:73; snapshots/cycle_02/chapters/chapter_11.md:269; snapshots/cycle_02/chapters/chapter_11.md:347; snapshots/cycle_02/chapters/chapter_11.md:367; snapshots/cycle_02/chapters/chapter_11.md:440; snapshots/cycle_02/chapters/chapter_11.md:442; snapshots/cycle_02/chapters/chapter_11.md:538",
+      "finding_id": "chapter_11_f005_dialogue_mechanical_echo_loops",
+      "problem": "Call-and-response motifs (\"I hear you\" / \"Do you?\" / \"Say it back\") recur so often that they read as mechanical style-bible token reuse rather than scene-specific speech pressure.",
+      "rewrite_direction": "In the confrontation spans near snapshots/cycle_02/chapters/chapter_11.md:267, snapshots/cycle_02/chapters/chapter_11.md:347, and snapshots/cycle_02/chapters/chapter_11.md:440, keep one echo motif for continuity but replace the remaining repeats with context-bound phrasing tied to immediate action (wire timing, shift tasks, pain management, missed-contact risk).",
+      "severity": "MEDIUM",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "4d9af615cf20b88a2604d8cc9ea418c4af500b7ca859792fbe8fe1934ef74ef8",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Focus on dialogue realism and voice separation: idiolect fidelity, leverage shifts, pressure cadence, anti-transcript behavior, natural colloquial texture (contractions/interruptions/slang when character-true), and pressure-true profanity usage per aesthetic risk policy.",
+    "key": "p2_dialogue_idiolect_cadence",
+    "label": "dialogue/idiolect/cadence fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into morally mixed behavior, bodily consequence, and economic detail when they are causally active. In edge cases, choose the more concrete and uncomfortable rendering unless it violates factual continuity; if two renderings are equally plausible, prefer the one that increases character accountability rather than reader reassurance.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene contains pain, sex, addiction, debt panic, or humiliation, abstract phrasing is treated as a failed draft and must be rewritten with embodied specificity.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "high - contractions are the spoken default; uncontracted forms are reserved for emphasis, legal precision, or deliberate emotional distance.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate chapter architectures across the book: confrontation chapters, document-information turns, labor-process chapters, transit interiority chapters, and quiet relational chapters. Consecutive chapters must differ in scene density or dialogue-to-interiority ratio.",
+      "diction": "Contemporary American literary realism: precise, unsentimental, image-aware, and concrete under stress.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "close third-person anchored to Eli, with no unmarked POV drift.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Braided cadence: reflective medium-length sentences interrupted by blunt short lines at impact moments.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

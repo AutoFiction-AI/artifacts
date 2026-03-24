@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_15",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "chapter_15_f001_date_schedule_contradiction",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_01/chapters/chapter_15.md:21; snapshots/cycle_01/chapters/chapter_15.md:39; snapshots/cycle_01/chapters/chapter_15.md:75",
+      "problem": "The chapter says Earl's outing happens on the \"First Thursday of the month,\" then anchors the cemetery handoff in late-October language and a cold that means November is present \"in everything but the calendar.\" Those claims cannot all be true at once, so the chapter's core day-level timeline breaks exactly where the drop needs clean temporal footing.",
+      "rewrite_direction": "Revise either the outing schedule at snapshots/cycle_01/chapters/chapter_15.md:21 or the seasonal/date language at snapshots/cycle_01/chapters/chapter_15.md:39 and snapshots/cycle_01/chapters/chapter_15.md:75 so the trip sits on one coherent date. Strategy options: make this an early-November first-Thursday outing and remove the not-yet-November language, or keep the late-October setting and change the facility routine to a monthly outing day that can actually fall then.",
+      "acceptance_test": "Pass if a cold reader can reconcile the calendar by reading snapshots/cycle_01/chapters/chapter_15.md:21, snapshots/cycle_01/chapters/chapter_15.md:39, and snapshots/cycle_01/chapters/chapter_15.md:75 without doing repair work: all three places must point to the same month/day logic. Fail if the outing is still described as a first-Thursday trip while the prose still insists it is not yet November."
+    },
+    {
+      "finding_id": "chapter_15_f002_age_service_timeline_break",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_01/chapters/chapter_15.md:25; snapshots/cycle_01/chapters/chapter_15.md:47",
+      "problem": "The chapter states Earl is eighty-one, then uses \"Korea\" as the apparent provenance for the VA-benefit cover story. In the provided continuity sheet, Earl is canonized as eighty-one and as a Korean War veteran; this chapter carries both facts forward without clarifying the chronology, leaving the book with an impossible service timeline unless the passage makes clear that Earl means later Korea service or is knowingly lying.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_15.md:25 and snapshots/cycle_01/chapters/chapter_15.md:47, revise one side of the equation so the service history becomes chronologically possible on the page. Strategy options: keep Earl at eighty-one and change the military provenance Denise hears to service that fits his birth year, or keep the Korea reference but make the line explicitly a cover story Earl knows is false rather than ambient fact.",
+      "acceptance_test": "Pass if a cold reader can read snapshots/cycle_01/chapters/chapter_15.md:25 and snapshots/cycle_01/chapters/chapter_15.md:47 and derive a plausible military timeline or an explicit lie Earl is telling Denise. Fail if the revised passage still leaves Earl as eighty-one while asking the reader to take the Korea-based VA provenance as factual."
+    },
+    {
+      "finding_id": "chapter_15_f003_style_bible_example_line_copied",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_01/chapters/chapter_15.md:81; snapshots/cycle_01/chapters/chapter_15.md:119",
+      "problem": "Earl's style-bible calibration line \"Fine.\" appears verbatim as live dialogue, then gets quoted again in narration. The review spec explicitly forbids reproducing `example_lines`, even when the copied line is short.",
+      "rewrite_direction": "Replace the exact reply at snapshots/cycle_01/chapters/chapter_15.md:81 and adjust the callback at snapshots/cycle_01/chapters/chapter_15.md:119 so Earl still shuts Marcus down in his minimal public register without echoing the protected calibration wording. Options include a different curt answer, silence, or a gesture Marcus correctly reads as closure.",
+      "acceptance_test": "Pass if snapshots/cycle_01/chapters/chapter_15.md:81 no longer contains the exact line \"Fine.\" and snapshots/cycle_01/chapters/chapter_15.md:119 no longer quotes that calibration line back to the reader, while Marcus's question is still ended by a terse Earl-true response. Fail if the revised passage still reproduces the example line verbatim anywhere in the exchange."
+    },
+    {
+      "finding_id": "chapter_15_f004_visible_template_scaffolds",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_01/chapters/chapter_15.md:3; snapshots/cycle_01/chapters/chapter_15.md:19; snapshots/cycle_01/chapters/chapter_15.md:97; snapshots/cycle_01/chapters/chapter_15.md:119; snapshots/cycle_01/chapters/chapter_15.md:137; snapshots/cycle_01/chapters/chapter_15.md:159; snapshots/cycle_01/chapters/chapter_15.md:163; snapshots/cycle_01/chapters/chapter_15.md:177",
+      "problem": "The chapter's quiet passages lean too often on the same visible sentence machinery: repeated `the way ...` comparison scaffolds and a three-beat run of `He thought about ...` paragraph openers. Because Earl's POV is otherwise spare and controlled, those repeated templates start to read as drafting autopilot rather than deliberate rhythmic design.",
+      "rewrite_direction": "Rework the repeated scaffolds across snapshots/cycle_01/chapters/chapter_15.md:3, snapshots/cycle_01/chapters/chapter_15.md:19, snapshots/cycle_01/chapters/chapter_15.md:97, snapshots/cycle_01/chapters/chapter_15.md:119, snapshots/cycle_01/chapters/chapter_15.md:137, snapshots/cycle_01/chapters/chapter_15.md:159, snapshots/cycle_01/chapters/chapter_15.md:163, and snapshots/cycle_01/chapters/chapter_15.md:177. Keep only the strongest one or two comparisons, then recast the others into direct statement, image, or action so the opening, cemetery section, and bedside close no longer all hinge on the same syntactic template.",
+      "acceptance_test": "Pass if the revised spans at snapshots/cycle_01/chapters/chapter_15.md:3, snapshots/cycle_01/chapters/chapter_15.md:97, snapshots/cycle_01/chapters/chapter_15.md:137, snapshots/cycle_01/chapters/chapter_15.md:159, snapshots/cycle_01/chapters/chapter_15.md:163, and snapshots/cycle_01/chapters/chapter_15.md:177 no longer repeat the exact `the way ...` or `He thought about ...` scaffolds as the dominant sentence shape, and at least three of those cited beats now land through materially different syntax. Fail if the chapter still reads as one reusable template being redeployed across the opening, graveyard, and final-night passages."
+    }
+  ],
+  "summary": "Fail. The chapter has strong specificity and a coherent Earl interior, but it does not clear review because two high-severity timeline/continuity breaks undercut the chapter's factual footing, one protected style-bible example line is copied verbatim into live dialogue, and repeated sentence templates become visible enough to flatten the prose's otherwise spare control."
+}

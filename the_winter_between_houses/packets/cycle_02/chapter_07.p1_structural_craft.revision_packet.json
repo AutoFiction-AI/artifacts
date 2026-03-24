@@ -1,0 +1,95 @@
+{
+  "acceptance_targets": [
+    "[CH7_CRAFT_001] PASS if the revised passage at snapshots/cycle_02/chapters/chapter_07.md:413-464 contains an on-page, moment-by-moment depiction of Tom's escalation (not just Elsie's later report), including at least one direct physical contact/near-contact detail and one immediate consequence beat before the scene moves on; FAIL if the violence remains primarily summarized in dialogue.",
+    "[CH7_CRAFT_002] PASS if at least two paragraphs in snapshots/cycle_02/chapters/chapter_07.md:417-445 now contain explicit Noreen interior experience and each interior beat changes a subsequent line of dialogue or action; FAIL if the span remains external-only coverage.",
+    "[FBR-02-007] Read `snapshots/cycle_02/FINAL_NOVEL.md:2437`-`snapshots/cycle_02/FINAL_NOVEL.md:2443`. PASS if the non-escalation choice is clear without generic stillness shorthand and remains psychologically legible. FAIL if the sentence remains a stock freeze beat."
+  ],
+  "chapter_id": "chapter_07",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if the revised passage at snapshots/cycle_02/chapters/chapter_07.md:413-464 contains an on-page, moment-by-moment depiction of Tom's escalation (not just Elsie's later report), including at least one direct physical contact/near-contact detail and one immediate consequence beat before the scene moves on; FAIL if the violence remains primarily summarized in dialogue.",
+      "chapter_id": "chapter_07",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_07.md:415; snapshots/cycle_02/chapters/chapter_07.md:417; snapshots/cycle_02/chapters/chapter_07.md:459; snapshots/cycle_02/chapters/chapter_07.md:463",
+      "finding_id": "CH7_CRAFT_001",
+      "problem": "Sanitization drift at the chapter's ugliest domestic-violence beat: the scene presents aftermath (hole in wall, burn) and retrospective explanation instead of rendering the violent escalation in scene-time. The narrative looks away at the moment consequence should be embodied.",
+      "rewrite_direction": "Revise the escalation window at snapshots/cycle_02/chapters/chapter_07.md:413-423 and snapshots/cycle_02/chapters/chapter_07.md:459-464 so at least one concrete violent action beat is shown directly on-page (movement, impact, and immediate response), not only reported after the fact. Keep POV tight to Noreen while staging spatial positions (Tom/Elsie/sink/wall) and immediate bodily consequence.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if at least two paragraphs in snapshots/cycle_02/chapters/chapter_07.md:417-445 now contain explicit Noreen interior experience and each interior beat changes a subsequent line of dialogue or action; FAIL if the span remains external-only coverage.",
+      "chapter_id": "chapter_07",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_07.md:417; snapshots/cycle_02/chapters/chapter_07.md:421; snapshots/cycle_02/chapters/chapter_07.md:429; snapshots/cycle_02/chapters/chapter_07.md:437; snapshots/cycle_02/chapters/chapter_07.md:445",
+      "finding_id": "CH7_CRAFT_002",
+      "problem": "Interiority dropout during peak pressure: this span runs as 10+ consecutive external-action/dialogue paragraphs with no clear focalizer interior thought/sensation/self-assessment, flattening close-third into screenplay mode.",
+      "rewrite_direction": "In snapshots/cycle_02/chapters/chapter_07.md:417-445, add 2-3 brief interior beats from Noreen (body signal, risk calculation, memory flash, or self-check) that materially shape the next spoken/action beat.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Read `snapshots/cycle_02/FINAL_NOVEL.md:2437`-`snapshots/cycle_02/FINAL_NOVEL.md:2443`. PASS if the non-escalation choice is clear without generic stillness shorthand and remains psychologically legible. FAIL if the sentence remains a stock freeze beat.",
+      "chapter_id": "chapter_07",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:2441",
+      "finding_id": "FBR-02-007",
+      "problem": "Recurring full-book construction: default stillness shorthand appears in 7 chapters. In this chapter, `snapshots/cycle_02/FINAL_NOVEL.md:2441` should REPLACE.",
+      "rewrite_direction": "At `snapshots/cycle_02/FINAL_NOVEL.md:2441`, replace \"went still\" with a different defensive behavior under threat (e.g., deliberate non-response gesture, controlled repositioning) that better matches Noreen's suppression pattern in this scene.",
+      "severity": "MEDIUM",
+      "source": "booker_global",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "d2dbf718201032317b9b68601798e84eb160cd7bd6cd2110df71536b71b6cb63",
+  "must_fix_count": 3,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "When edge cases arise, choose the more specific and potentially uncomfortable rendering if it is character-true and causally necessary. Intimacy, bodily risk, and moral compromise must be shown with concrete detail and aftermath, then integrated into later behavior rather than quarantined as a one-scene shock.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a draft abstracts pain, sex, coercion, blood, or economic shame at the exact moment consequence should be embodied, revise by replacing summary with physically and socially specific action tied to POV stakes.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High by default for spoken lines; uncontracted forms are marked choices for period formality, emphasis, or character-specific control behavior.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate structural engines across adjacent chapters: ensemble social scenes, inventory chapters, information-turn chapters, acted-upon pressure chapters, and aftermath chapters. Vary scene count (2 to 4), dialogue density, and interiority depth so consecutive chapters do not share the same pacing signature.",
+      "diction": "Period-authentic but readable contemporary English, favoring concrete nouns and precise verbs over lyrical abstraction.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person, alternating primarily between Elsie and Noreen, with occasional tightly limited deviations only when causal clarity requires it.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Sentence rhythm should alternate compressed pressure bursts with longer observational lines that carry social texture; avoid monotone paragraph cadence.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

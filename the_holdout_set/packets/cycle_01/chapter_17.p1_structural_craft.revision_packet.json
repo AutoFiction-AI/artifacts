@@ -1,0 +1,95 @@
+{
+  "acceptance_targets": [
+    "[ch17-booker-01] Pass if the revised stretch from snapshots/cycle_01/chapters/chapter_17.md:125 through snapshots/cycle_01/chapters/chapter_17.md:241 gives Leela at least one public action or spoken intervention that directly changes another character's next move, and if removing that Leela beat would materially alter how the confrontation proceeds. Fail if she still remains only the focalized observer after Omar sends.",
+    "[FBK-001] Pass if a reader can follow a credible chain from the first Ruderal question through a near-failed containment attempt to the leave order at `snapshots/cycle_01/FINAL_NOVEL.md:6046`, `snapshots/cycle_01/FINAL_NOVEL.md:6116`, and `snapshots/cycle_01/FINAL_NOVEL.md:6134`, and that chain depends on explicit witness/liability pressure visible on the page. Fail if the scene still reads like a smooth domino of exactly the right people speaking in exactly the right order.",
+    "[FBK-005] Pass if a reader can feel the atrium flip in the revised lines around `snapshots/cycle_01/FINAL_NOVEL.md:6064`-`snapshots/cycle_01/FINAL_NOVEL.md:6078` without being told \"the room changed.\" Fail if the sentence still labels the shift instead of embodying it."
+  ],
+  "chapter_id": "chapter_17",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if the revised stretch from snapshots/cycle_01/chapters/chapter_17.md:125 through snapshots/cycle_01/chapters/chapter_17.md:241 gives Leela at least one public action or spoken intervention that directly changes another character's next move, and if removing that Leela beat would materially alter how the confrontation proceeds. Fail if she still remains only the focalized observer after Omar sends.",
+      "chapter_id": "chapter_17",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_17.md:125; snapshots/cycle_01/chapters/chapter_17.md:145; snapshots/cycle_01/chapters/chapter_17.md:167; snapshots/cycle_01/chapters/chapter_17.md:203; snapshots/cycle_01/chapters/chapter_17.md:225; snapshots/cycle_01/chapters/chapter_17.md:241",
+      "finding_id": "ch17-booker-01",
+      "problem": "Once Omar triggers the release, the public takedown is carried by June, Ben, Nina, the sponsor, and Gloria while Leela mostly observes. In a Leela-centered chapter, the decisive public sequence lands as something she witnesses rather than something she must actively risk in real time, which blunts the climax's emotional ownership.",
+      "rewrite_direction": "Rework the exposure sequence beginning at snapshots/cycle_01/chapters/chapter_17.md:125 and tightening around snapshots/cycle_01/chapters/chapter_17.md:145, snapshots/cycle_01/chapters/chapter_17.md:167, snapshots/cycle_01/chapters/chapter_17.md:225, and snapshots/cycle_01/chapters/chapter_17.md:241 so Leela performs one irreplaceable public act after the send: for example, she hands out the paper packets, names the provenance of a stolen figure, or blocks the move to a side room before Gloria acts. Keep June's public decision central, but make the room's irreversible turn depend partly on Leela's onstage risk rather than only on prior planning.",
+      "severity": "MEDIUM",
+      "source": "booker",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if a reader can follow a credible chain from the first Ruderal question through a near-failed containment attempt to the leave order at `snapshots/cycle_01/FINAL_NOVEL.md:6046`, `snapshots/cycle_01/FINAL_NOVEL.md:6116`, and `snapshots/cycle_01/FINAL_NOVEL.md:6134`, and that chain depends on explicit witness/liability pressure visible on the page. Fail if the scene still reads like a smooth domino of exactly the right people speaking in exactly the right order.",
+      "chapter_id": "chapter_17",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:6116",
+      "finding_id": "FBK-001",
+      "problem": "The public takedown lands through a sequence that is too clean for the institutional world the novel has otherwise established: a sponsor asks the perfect licensing question, June breaks publicly, Ben confesses cleanly, Nina arrives exactly before containment succeeds, and Gloria moves to immediate leave in the room. The scene is exciting, but the institution's reflex becomes more theatrically efficient than the book's prior bureaucracy has earned.",
+      "rewrite_direction": "Rework the escalation across `snapshots/cycle_01/FINAL_NOVEL.md:6046`, `snapshots/cycle_01/FINAL_NOVEL.md:6058`, `snapshots/cycle_01/FINAL_NOVEL.md:6116`, and `snapshots/cycle_01/FINAL_NOVEL.md:6134`. Keep the same core witnesses and evidence, but add at least one serious near-containment beat that almost works: Gloria or a sponsor should plausibly try to narrow this to a side room, Mohit should win back ground for longer than a sentence, and the leave decision should hinge on explicit liability/preservation pressure rather than a sudden collective moral awakening. Make the public decision feel like institutional self-protection under duress, not a clean reversal of sixteen chapters of avoidance.",
+      "severity": "HIGH",
+      "source": "booker_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if a reader can feel the atrium flip in the revised lines around `snapshots/cycle_01/FINAL_NOVEL.md:6064`-`snapshots/cycle_01/FINAL_NOVEL.md:6078` without being told \"the room changed.\" Fail if the sentence still labels the shift instead of embodying it.",
+      "chapter_id": "chapter_17",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:6068",
+      "finding_id": "FBK-005",
+      "problem": "Recurring full-book pattern: direct scene-signpost phrasing of the form \"The room changed...\" appears in chapter_05, chapter_11, and chapter_17. In the climax, this phrasing blunts the shock by naming the transformation before the crowd's concrete behavior has finished delivering it. This chapter should REPLACE its instance.",
+      "rewrite_direction": "Replace the line at `snapshots/cycle_01/FINAL_NOVEL.md:6068` using the room's actual reactions in `snapshots/cycle_01/FINAL_NOVEL.md:6064`, `snapshots/cycle_01/FINAL_NOVEL.md:6070`, and `snapshots/cycle_01/FINAL_NOVEL.md:6076`: watchers stopping mid-breath, posture shifts, screen glow, donor movement, or the sudden silence after June's refusal. Let the climax earn the change through witness behavior rather than abstract narration.",
+      "severity": "MEDIUM",
+      "source": "booker_global",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "dcf2282a4a1b9626dd9f68635fa5645806448c13235c45a8c5ca4ef187bfe304",
+  "must_fix_count": 3,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "Lean into the absurdity and cruelty of graduate labor without converting the book into caricature or chase-plot menace. In edge cases, prefer the messier and more compromising version of events if it yields stronger human consequence and remains causally plausible; render sex, professional theft, bureaucratic harm, and emotional pettiness with the same specificity as any technical problem.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "If a scene turns vague at the exact point humiliation, erotic charge, class shame, visa fear, or institutional cruelty becomes concrete, rewrite until the cost is materially and socially legible.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High; contractions are the baseline in speech, and uncontracted forms should appear only for deliberate precision, class performance, emotional emphasis, or character-specific formality.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 1,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate public and private pressure, ensemble chapters and solitary ones, bureaucratic scenes and domestic scenes, deadline compression and aftermath inventory, so no two adjacent chapters rely on the same structural rhythm or dialogue density.",
+      "diction": "Contemporary literary English grounded in material detail; technical language should appear only when the social reality of the lab requires it, and it should never replace bodily or relational consequence.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person centered on Leela, with occasional brief widenings that register group mood and institutional atmosphere without leaving her interpretive frame.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Alternate compressed observational lines with longer accrual sentences that can carry comedy, shame, and procedural dread in the same movement; quiet chapters should breathe, deadline chapters should tighten without turning telegraphic.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

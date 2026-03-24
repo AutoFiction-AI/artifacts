@@ -1,0 +1,104 @@
+{
+  "acceptance_targets": [
+    "[somatic_gesture_overuse_chapter_03] Chapter 3 contains no more than two crucifix instances, and no two use the same verb phrase.",
+    "[RED-02] Ch3's first description of Earl does not re-state his height or hand size. His entry is defined by action and demeanor, not physical re-inventory.",
+    "[RED-03] Ch3's first Burt passage does not repeat 'wispy white hair.' The musician's-fingers label may remain as new information from Agnes, but the hair and hand-shape re-inventory is gone.",
+    "[RED-04] Ch3's Agnes entry does not re-describe wire-rimmed glasses if that detail appeared in Ch1's introduction. The pharmacist authority framing may remain."
+  ],
+  "chapter_id": "chapter_03",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Chapter 3 contains no more than two crucifix instances, and no two use the same verb phrase.",
+      "chapter_id": "chapter_03",
+      "cycle": 1,
+      "evidence": "FINAL_NOVEL.md:415 'she held her crucifix. Her hand trembled \u2014 it always trembled.' FINAL_NOVEL.md:554 'Lola's grip tightened on the crucifix chain.' FINAL_NOVEL.md:578 'Lola's grip tightening on the crucifix until the tremor transferred to the chain.' Three instances in one chapter. The L554 and L578 gestures are nearly identical in phrasing ('grip tightened/tightening on the crucifix').",
+      "finding_id": "somatic_gesture_overuse_chapter_03",
+      "problem": "Two of the three instances use the same verb ('tightened/tightening') with the same object ('the crucifix chain'). This is not variation \u2014 it is repetition within a single scene.",
+      "rewrite_direction": "Retain FINAL_NOVEL.md:415 (the strongest, with the tremor-as-devotion observation). Cut either FINAL_NOVEL.md:554 or FINAL_NOVEL.md:578 \u2014 whichever moment can carry tension through other means \u2014 and vary the remaining instance so it does not echo 'grip tightened.'",
+      "severity": "MEDIUM",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch3's first description of Earl does not re-state his height or hand size. His entry is defined by action and demeanor, not physical re-inventory.",
+      "chapter_id": "chapter_03",
+      "cycle": 1,
+      "evidence": "Ch1 L51: 'Earl was tall even folded into the chair, with hands large enough to make the magazine look like a pamphlet'; Ch3 L431: 'Earl Washington was eighty-one, six-two when he stood straight...He had large hands, a steelworker's hands'; Ch3 L654: 'Earl's stooped back, his large hands steady on the chair'",
+      "finding_id": "RED-02",
+      "problem": "Earl's height and large hands are established in Ch1 L51. Ch3 re-introduces him with full name, age, exact height (six-two), and 'large hands, a steelworker's hands' \u2014 a fuller version of the same traits. The 'large hands' descriptor appears again at L654 in the same chapter.",
+      "rewrite_direction": "In Ch3 L431, cut the height restatement and the 'large hands, a steelworker's hands' phrase. Enter Earl through his action (pushing Burt's wheelchair) and his operational silence, which are the new information this chapter provides. At L654, 'his large hands steady on the chair' can stay as a single callback but does not need the second 'large hands' mention at L431.",
+      "severity": "HIGH",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch3's first Burt passage does not repeat 'wispy white hair.' The musician's-fingers label may remain as new information from Agnes, but the hair and hand-shape re-inventory is gone.",
+      "chapter_id": "chapter_03",
+      "cycle": 1,
+      "evidence": "Ch1 L57: 'wispy white hair pressed flat on one side...His hands lay on top of the blanket, long and thin, with the fine bones of someone who'd done precise, delicate work'; Ch3 L433: 'his wispy white hair was going in three directions and his long fingers \u2014 musician's fingers, Agnes called them'",
+      "finding_id": "RED-03",
+      "problem": "Burt's wispy white hair and long/fine-boned fingers are established in Ch1 L57. Ch3 L433 re-describes both traits two chapters later with synonymous phrasing ('wispy white hair,' 'long fingers'). The musician's-fingers gloss is new but the underlying physical observation is redundant.",
+      "rewrite_direction": "In Ch3 L433, cut 'wispy white hair was going in three directions' \u2014 the reader already knows Burt's hair. Keep 'musician's fingers' as a new characterization by Agnes but drop the prior physical description. Enter Burt through his state (asleep, chin on chest, fingers twitching) rather than re-cataloguing his appearance.",
+      "severity": "HIGH",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch3's Agnes entry does not re-describe wire-rimmed glasses if that detail appeared in Ch1's introduction. The pharmacist authority framing may remain.",
+      "chapter_id": "chapter_03",
+      "cycle": 1,
+      "evidence": "Ch1 L41: 'She was small and thin, gray hair cut short, wire-rimmed glasses reflecting the slant of hallway light'; Ch3 L403: 'her wire-rimmed glasses sat low on her nose because the left arm was bent...seventy-six and weighed maybe a hundred and ten pounds, and she moved through the room with the authority of forty-two years at the Walgreens in Edison'",
+      "finding_id": "RED-04",
+      "problem": "Agnes's wire-rimmed glasses and small stature are established in Ch1 L41. Ch3 L403 re-introduces the glasses and adds weight and age, but the glasses + small-frame pairing is redundant for the reader who met Agnes two chapters ago.",
+      "rewrite_direction": "In Ch3 L403, cut or trim the wire-rimmed glasses reference \u2014 one mention in Ch1 is sufficient until much later. The pharmacist-authority characterization and the bent glasses arm are new and can stay. Lead with Agnes's operational behavior (arriving first, carrying notebooks, two-pen system) rather than physical re-inventory.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "8c9c9567b52de942c3d3fc52bc9719e4206ac995c979c34bfeb4b16f508a830f",
+  "must_fix_count": 4,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This is a dark comedy about elderly agency, institutional failure, and moral compromise in a setting most fiction treats as a punchline or a tragedy but never both. The risks the novel must take: render the comedy of octogenarians as pharmaceutical distributors without condescending to them or turning them into lovable rogues; make Carmen's escalating complicity fully legible without moralizing about it; show the bodily realities of aging \u2014 incontinence, tremor, cognitive decline, falls, the smell of a body that doesn't leave a building \u2014 with unsentimental specificity; render the economic desperation of both healthcare workers and uninsured buyers without turning either into social-issue abstractions; give the moral ambiguity of the ring genuine weight by refusing to resolve it into either 'they were wrong' or 'they were heroes.' The novel must trust readers to sit with complexity. When in doubt between too raw and too safe, choose raw. A nursing home that smells like potpourri is a nursing home written by someone who's never been in one.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism for bodily functions, aging, economic shame, institutional dysfunction, or the realities of nursing home care is a craft failure. The novel's comedy and humanity depend on rendering what polite fiction glosses over: what it smells like to clean someone who can't clean themselves, what it costs to count coins for a bus fare, what oxycodone sells for per milligram on the secondary market, what a concussion looks like on an 88-year-old skull, what it sounds like when someone with Parkinson's tries to hold a coffee cup steady, what Burt's dementia actually looks like up close. If the prose flinches from these specifics, the novel loses its authority.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the default for all dialogue. Uncontracted forms appear only for emphasis, character-specific formality (Agnes's low contraction level), Carmen under extreme stress reverting to formal speech, or deliberate register choices. In a contemporary New Jersey nursing home, stiff diction is the anomaly, not the norm.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate high-intensity scenes with reflective interiority. Vary scene count: single-scene chapters for maximum compression, three-scene chapters for range. Comic chapters (3, 9) should feel structurally different from quiet character studies (7, 8, 12, 15), which should feel different from crisis chapters (11, 16, 17). Follow a confrontation with a reflection, an escalation with a domestic scene, a comic set piece with an elegiac one. If two consecutive chapters share the same rhythm, one needs redesigning.",
+      "diction": "Grounded and specific. Drug names (oxycodone, alprazolam, hydroxychloroquine), nursing procedures (med pass, pill count, charting, fall assessment), body realities (incontinence, tremor, laceration, scalp bleed). No purple prose, no literary performance. The style should feel like someone who works with their hands is telling you the truth about what she saw.",
+      "forbidden_drift_patterns": [
+        "generic cinematic phrasing"
+      ],
+      "narrative_distance": "Close third person, varying by POV character. Carmen chapters are warm and sensory, anchored in the body and the immediate environment. Harry chapters are precise and calculating, with attention to numbers and angles. Agnes chapters are clinical and compressed. Lola chapters are winding and emotionally layered, with embedded memories. Earl chapters are spare and weighted, with silence doing as much work as language. Marcus chapters are kinetic, with physical movement and code-switching. Tammy chapters are flat and observational, her trained eye cataloguing what doesn't add up.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Varied by chapter and POV. Carmen chapters favor medium sentences with occasional long runs when she's anxious. Harry chapters are short and clipped. Comic set pieces (chapters 3 and 9) move between fast inventory and slow domestic beats. Quiet chapters (7, 12, 15) slow down and let space onto the page. No chapter should feel rhythmically identical to the one before it.",
+      "sensory_bias": [
+        "touch",
+        "sound",
+        "spatial pressure"
+      ]
+    }
+  }
+}

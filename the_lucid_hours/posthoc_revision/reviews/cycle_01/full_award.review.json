@@ -1,0 +1,170 @@
+{
+  "cycle": 1,
+  "verdict": "FAIL",
+  "summary": "The Lucid Hours is a genuinely accomplished novel — tonally controlled, morally unsparing, structurally sound in its escalation from small pharmaceutical hustle to institutional reckoning. The prose is alive at the sentence level: Carmen's night-shift perceptions, Harry's wry self-assessment, Agnes's pharmacological precision, and Lola's weaponized warmth all land with specificity and force. Dialogue is calibrated to character and scene pressure with rare skill for generated fiction; the novel earns its dark-comedy register without retreating into reassurance or moralizing. The ensemble architecture distributes narrative weight effectively across seven POVs, and the thematic treatment of institutional neglect, economic desperation, and aging is handled with lived-in detail rather than thesis-driven abstraction. However, the manuscript fails on continuity grounds that would disqualify it from shortlist consideration. A single secondary character in Room 110 is named Delvecchio (male) in Chapter 1, Davila in Chapter 2, and Delacroix (female) from Chapter 4 onward — a gender-switching triple rename visible to any attentive reader. Agnes's roommate cycles through four names (Nowak, Dorothy, Doris Okonkwo, Mrs. Delacroix) and ages eight years between consecutive chapters. Carmen's car changes make and model between Chapters 1 and 2 with no narrative explanation. These are not subtle discrepancies requiring cross-referencing; they are surface-level errors that signal insufficient editorial control over a manuscript that otherwise demonstrates considerable command. Additionally, a prose formula ('the kind of X that Y') recurs twenty times across twelve chapters, and two somatic gestures (badge-adjusting, crucifix-gripping) repeat at frequencies that cross from characterization into mechanical tic. The novel's strengths are real and substantial — this is not a craft-deficient manuscript but an editorially unfinished one. The continuity errors must be resolved and the prose-formula repetition reduced before the work can be reconsidered.",
+  "findings": [
+    {
+      "finding_id": "carmen_car_inconsistency",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "FINAL_NOVEL.md:145 introduces Carmen's car as 'a 2019 Nissan Sentra with a dent in the rear bumper from a parking garage incident three months ago.' By FINAL_NOVEL.md:286 (Ch2), the same car is 'her Civic.' At FINAL_NOVEL.md:1540 (Ch7) it is 'A 2019 Civic with 94,000 miles.' Meanwhile, FINAL_NOVEL.md:1177 (Ch6) gives Rosa 'a Nissan Sentra with a dent in the rear quarter panel' — the dented-Sentra detail has migrated from Carmen to a different character.",
+      "problem": "Carmen's car changes from Nissan Sentra to Honda Civic between Chapters 1 and 2 with no narrative explanation. The original Sentra description (including the dent detail) reappears attached to Rosa in Chapter 6, suggesting a revision error where the make was changed for Carmen but the original description was inadvertently recycled.",
+      "rewrite_direction": "Choose one make/model for Carmen's car and apply it consistently. If it is a Civic, update FINAL_NOVEL.md:145 to read 'Honda Civic' and adjust the dent detail so it does not duplicate Rosa's vehicle description at FINAL_NOVEL.md:1177. If it is a Sentra, update FINAL_NOVEL.md:286 and FINAL_NOVEL.md:1384 and FINAL_NOVEL.md:1540 to read 'Sentra.' Also differentiate Rosa's vehicle at FINAL_NOVEL.md:1177 so two characters do not drive identically described dented Sentras.",
+      "acceptance_test": "A single make/model for Carmen's car appears at every mention (L145, L286, L1384, L1540). No shared dent-description detail between Carmen's and Rosa's vehicles."
+    },
+    {
+      "finding_id": "marcus_apartment_inconsistency",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_16",
+      "evidence": "FINAL_NOVEL.md:1265 (Ch6): 'rent on his basement apartment in North Brunswick.' FINAL_NOVEL.md:3823 (Ch16): 'I'm in a basement apartment in Plainfield.' FINAL_NOVEL.md:3965 (Ch16): 'his headlights disappearing down Route 27 toward Plainfield and his basement apartment.'",
+      "problem": "Marcus's apartment moves from North Brunswick to Plainfield between Chapters 6 and 16 with no relocation narrated. Both are central-Jersey towns but they are twenty miles apart. An attentive reader familiar with New Jersey geography will notice immediately.",
+      "rewrite_direction": "Choose one town and apply it consistently. If Plainfield, update FINAL_NOVEL.md:1265 to replace 'North Brunswick' with 'Plainfield.' If North Brunswick, update FINAL_NOVEL.md:3823 and FINAL_NOVEL.md:3965 to replace 'Plainfield' with 'North Brunswick.' Check Route 27 reference at L3965 for geographic accuracy with the chosen town.",
+      "acceptance_test": "Every mention of Marcus's apartment names the same town. Route reference is geographically consistent with the chosen location."
+    },
+    {
+      "finding_id": "agnes_roommate_age_discrepancy",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "FINAL_NOVEL.md:1571 (Ch8): 'Her roommate, Doris Okonkwo, eighty-three, was five years into Alzheimer's.' FINAL_NOVEL.md:1914 (Ch9): 'Her roommate, Doris, ninety-one and deep into Alzheimer's.' The timeline between these chapters is approximately two weeks.",
+      "problem": "Agnes's roommate ages eight years between consecutive chapters. Eighty-three to ninety-one in two weeks of story time is an obvious factual error that undermines the reader's trust in the narrator's reliability.",
+      "rewrite_direction": "Choose one age and apply it at both FINAL_NOVEL.md:1571 and FINAL_NOVEL.md:1914. Given the description of severe Alzheimer's and PEG-tube dependency elsewhere, ninety-one is the more plausible age. Update L1571 to 'ninety-one' and adjust the 'five years into Alzheimer's' duration if needed for clinical consistency.",
+      "acceptance_test": "The roommate's age is identical at L1571 and L1914. Alzheimer's duration is clinically plausible for the chosen age."
+    },
+    {
+      "finding_id": "buyer_fates_offscreen",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_18",
+      "evidence": "Rosa appears in Chapters 6, 10, and 11 as a buyer whose pharmaceutical access is a lifeline — her specific economic corridor is rendered in detail at FINAL_NOVEL.md:2521. Derek appears in Ch6 (L1211-1227) as a volatile buyer. Janine appears in Ch5 (L930) and Ch8 as a back-surgery patient. After the ring's dissolution in Chapters 16-17, none of these characters appears in Chapter 18 except Janine in a backstory reference at FINAL_NOVEL.md:4537. Their pharmaceutical lifeline has been severed with no on-page consequence shown.",
+      "problem": "The novel invests significant narrative energy establishing the buyers' desperation and pharmaceutical dependency, then drops them entirely when the ring collapses. This creates an asymmetry between the specificity of the setup (Rosa counting coins for a MetroCard, Derek's volatility, Janine's surgical pain) and the silence of the resolution. The core characters' fates are handled, but the people most materially harmed by the ring's end vanish without trace.",
+      "rewrite_direction": "In Chapter 18 (FINAL_NOVEL.md:4349-4660), add at least one brief passage — through Carmen's awareness, Harry's reflection, or Marcus's exit — registering what happens to the buyers when the supply stops. This need not be a full scene; a paragraph of consequence (a voicemail, a rumor, a name on a chart, a face in the parking lot) would close the loop. Target insertion around FINAL_NOVEL.md:4400-4450 during Carmen's shift or FINAL_NOVEL.md:4580-4620 during Harry's reflection.",
+      "acceptance_test": "At least one buyer's post-dissolution fate is registered on the page in Chapter 18, even obliquely. The reader understands that cutting the supply had human cost beyond the core ensemble."
+    }
+  ],
+  "pattern_findings": [
+    {
+      "pattern_id": "secondary_character_naming_instability",
+      "severity": "HIGH",
+      "global_problem": "Three secondary characters change names across chapters with no narrative justification: (1) The Room 110 resident is 'Mr. Delvecchio' in Ch1, 'Mrs. Davila' in Ch2, and 'Mrs. Delacroix' from Ch4 onward — changing not only surname but gender. (2) Agnes's roommate in 108A is 'Mrs. Nowak' in Ch1, 'Dorothy' in Ch2, 'Doris Okonkwo' in Ch8, and 'Mrs. Delacroix' in Ch17-18 — the last name colliding with the Room 110 resident. (3) Lola's roommate in 112 is 'Mrs. Kim' in Ch1 and 'Margaret Oates' in Ch12. These are not minor background details; Room 110's resident is referenced by name or sound in at least eight chapters, and Agnes's roommate is a recurring presence. Any reader tracking the nursing-home population will notice the names shifting. This is the single highest-severity issue in the manuscript and the primary driver of the FAIL verdict.",
+      "global_rewrite_principles": "Assign each secondary character one permanent name and use it at every mention. For Room 110, choose one name and one gender — the character's murmuring is a recurring atmospheric device across many chapters, so consistency is essential. For Agnes's roommate, choose one name (Doris Okonkwo is the most developed) and ensure it does not collide with the Room 110 resident's name. For Lola's roommate, choose one name. After fixing, run a full-text search for each retired name to ensure no orphaned references remain.",
+      "affected_chapters": ["chapter_01", "chapter_02", "chapter_04", "chapter_05", "chapter_08", "chapter_09", "chapter_12", "chapter_17", "chapter_18"],
+      "chapter_hits": [
+        {
+          "chapter_id": "chapter_01",
+          "evidence": "FINAL_NOVEL.md:9 'Mr. Delvecchio, I'm going to help you turn now, OK?' and FINAL_NOVEL.md:139 'Mr. Delvecchio in 110 needs to be turned at midnight.' Also FINAL_NOVEL.md:41 refers to Agnes's roommate as 'Mrs. Nowak' and FINAL_NOVEL.md:17 refers to Lola's roommate as 'Mrs. Kim in 112B.'",
+          "problem": "Chapter 1 establishes three secondary-character names (Delvecchio, Nowak, Mrs. Kim) that are all abandoned in subsequent chapters. Delvecchio is male ('Mr.') here but becomes female ('Mrs.') later.",
+          "rewrite_direction": "At FINAL_NOVEL.md:9 and FINAL_NOVEL.md:139, replace 'Mr. Delvecchio' with the chosen permanent name for the Room 110 resident (and adjust gendered pronouns if the chosen character is female). At FINAL_NOVEL.md:41, replace 'Mrs. Nowak' with the chosen name for Agnes's roommate. At FINAL_NOVEL.md:17, replace 'Mrs. Kim' with the chosen name for Lola's roommate.",
+          "acceptance_test": "All three secondary characters in Chapter 1 use the same names that appear in every other chapter."
+        },
+        {
+          "chapter_id": "chapter_02",
+          "evidence": "FINAL_NOVEL.md:266 'Agnes's roommate, a woman named Dorothy who hadn't spoken in eleven months and received nutrition through a PEG tube.' FINAL_NOVEL.md:308 references the Room 110 resident with a different name than Ch1.",
+          "problem": "Agnes's roommate is 'Dorothy' here but was 'Mrs. Nowak' in Ch1 and will become 'Doris Okonkwo' in Ch8. The Room 110 resident's name also shifts from Ch1's 'Delvecchio.'",
+          "rewrite_direction": "At FINAL_NOVEL.md:266, replace 'Dorothy' with the chosen permanent name for Agnes's roommate. At FINAL_NOVEL.md:308, replace the Room 110 resident's name with the chosen permanent name and ensure gender consistency.",
+          "acceptance_test": "Agnes's roommate and the Room 110 resident each use a single consistent name in Chapter 2 matching all other chapters."
+        },
+        {
+          "chapter_id": "chapter_04",
+          "evidence": "FINAL_NOVEL.md:685 and subsequent lines introduce 'Mrs. Delacroix' as the Room 110 resident — a female name replacing the male 'Mr. Delvecchio' from Ch1. FINAL_NOVEL.md:745 'Mrs. Delacroix's distant murmur,' FINAL_NOVEL.md:852 'She passed Room 110 and heard Mrs. Delacroix making her sounds.'",
+          "problem": "The Room 110 resident has changed gender (Mr. → Mrs.) and surname (Delvecchio → Delacroix). The character's murmuring is a significant atmospheric device in this chapter, making the name highly visible.",
+          "rewrite_direction": "If 'Mrs. Delacroix' is the chosen name, update Ch1 and Ch2 references to match. If 'Delvecchio' is chosen, update FINAL_NOVEL.md:685, L745, L781, L803, L835, L852, and L1000 to use 'Delvecchio' with consistent gender. Ensure the chosen name does not collide with Agnes's roommate.",
+          "acceptance_test": "Room 110 resident has the same name and gender in Ch4 as in Ch1, Ch2, and all subsequent chapters."
+        },
+        {
+          "chapter_id": "chapter_08",
+          "evidence": "FINAL_NOVEL.md:1571 'Her roommate, Doris Okonkwo, eighty-three, was five years into Alzheimer's and had not produced a recognizable word since Christmas two years ago.'",
+          "problem": "Agnes's roommate is now 'Doris Okonkwo, eighty-three' — her third name (after 'Mrs. Nowak' in Ch1 and 'Dorothy' in Ch2). This is also the most detailed introduction, giving full name and age, which makes the earlier inconsistencies more conspicuous in retrospect.",
+          "rewrite_direction": "If 'Doris Okonkwo' is the chosen name, update FINAL_NOVEL.md:41 (Ch1) and FINAL_NOVEL.md:266 (Ch2) to match. The full-name-plus-age introduction at L1571 can remain as-is if it is the first such detail — earlier chapters may use just the surname.",
+          "acceptance_test": "Agnes's roommate is 'Doris Okonkwo' (or the chosen name) at every mention from Ch1 through Ch18."
+        },
+        {
+          "chapter_id": "chapter_12",
+          "evidence": "FINAL_NOVEL.md:2897 'Her roommate Margaret — Margaret Oates, eighty-six, severe vascular dementia, no family visitors in the eleven months Lola had shared this room with her.'",
+          "problem": "Lola's roommate is 'Margaret Oates' here but was 'Mrs. Kim' at FINAL_NOVEL.md:17 (Ch1). Both are given as 112-resident details. The discrepancy is compounded by the specificity of both introductions.",
+          "rewrite_direction": "Choose one name for Lola's roommate. If 'Margaret Oates,' update FINAL_NOVEL.md:17 to replace 'Mrs. Kim' with 'Margaret Oates' (or 'Mrs. Oates'). If 'Mrs. Kim,' update FINAL_NOVEL.md:2897 accordingly and adjust the demographic details.",
+          "acceptance_test": "Lola's roommate has a single name at both L17 and L2897 and any other mention."
+        },
+        {
+          "chapter_id": "chapter_17",
+          "evidence": "FINAL_NOVEL.md:4058 'Her roommate, Mrs. Delacroix, was asleep and snoring wetly in the bed nearest the door.' FINAL_NOVEL.md:4290 'Mrs. Delacroix's snoring was the only sound.'",
+          "problem": "Agnes's roommate is now called 'Mrs. Delacroix' — her fourth name and one that collides with the Room 110 resident who has been 'Mrs. Delacroix' since Ch4. Unless the novel narrates a room transfer (it does not), the reader must conclude either that Agnes's roommate and the Room 110 murmurer are the same person (contradicted by their simultaneous existence in earlier chapters) or that two different residents share a surname by coincidence (implausible and confusing).",
+          "rewrite_direction": "At FINAL_NOVEL.md:4058 and FINAL_NOVEL.md:4290, replace 'Mrs. Delacroix' with the chosen permanent name for Agnes's roommate (e.g., 'Doris' or 'Doris Okonkwo'). Ensure no name collision with the Room 110 resident.",
+          "acceptance_test": "Agnes's roommate in Ch17 uses the same name as in Ch1, Ch2, Ch8, and Ch9. No name collision with the Room 110 resident."
+        }
+      ]
+    },
+    {
+      "pattern_id": "kind_of_prose_formula",
+      "severity": "MEDIUM",
+      "global_problem": "The construction 'the kind of X that Y' appears approximately twenty times across twelve chapters (01, 03, 06, 07, 08, 10, 12, 13, 14, 15, 17, 18). The constitution's rule 9 flags any 'sentence construction, metaphor template, or descriptive default' that appears 'more than four times in the book' as a tic. At twenty occurrences, this frame has become an authorial habit rather than a deliberate stylistic choice. Each instance wraps a specific observation inside the same syntactic scaffolding ('the kind of X that Y'), flattening variety into formula.",
+      "global_rewrite_principles": "Reduce total instances to no more than four across the full manuscript. For each removed instance, replace the 'the kind of X that Y' frame with direct description, metaphor, simple predication, or deletion of the qualifier entirely. Prioritize retaining instances where the construction does genuine rhetorical work (e.g., where the 'that Y' clause delivers an unexpected turn) and cutting instances where it is merely classificatory.",
+      "affected_chapters": ["chapter_01", "chapter_03", "chapter_06", "chapter_07", "chapter_08", "chapter_10", "chapter_12", "chapter_13", "chapter_14", "chapter_15", "chapter_17", "chapter_18"],
+      "chapter_hits": [
+        {
+          "chapter_id": "chapter_01",
+          "evidence": "FINAL_NOVEL.md:19 'the kind of smile that was present but not entirely tracking.' FINAL_NOVEL.md:115 'the kind of mistake nurses made when the shift was already chewing on them.' FINAL_NOVEL.md:175 contains a third instance. Three occurrences in one chapter already approaches the constitution's per-chapter threshold.",
+          "problem": "Three instances of 'the kind of' in a single opening chapter establishes the formula as a default narrative move before the reader has settled into the prose.",
+          "rewrite_direction": "Retain at most one instance in Chapter 1 — the strongest is L115, where the 'that Y' clause does real work. At FINAL_NOVEL.md:19, rewrite to direct description (e.g., 'a smile that was present but not entirely tracking'). At FINAL_NOVEL.md:175, rewrite to eliminate the 'the kind of' frame.",
+          "acceptance_test": "Chapter 1 contains no more than one instance of 'the kind of X that Y.'"
+        },
+        {
+          "chapter_id": "chapter_10",
+          "evidence": "FINAL_NOVEL.md:2422 'the kind of incomplete med list you got when people outside care settings pieced their treatment together.' FINAL_NOVEL.md:2521 'the kind of coverage that kept a body functional.' FINAL_NOVEL.md:2601 'the kind of sheet someone carried around because throwing it away would make the problem feel official.' Three instances in one chapter.",
+          "problem": "Three uses in a chapter centered on Rosa's medical and economic vulnerability. Each instance classifies an observation rather than rendering it, and the repetition makes the narrator sound like they are sorting rather than seeing.",
+          "rewrite_direction": "Retain the strongest (L2601, which has genuine ironic force). Rewrite FINAL_NOVEL.md:2422 to direct statement (e.g., 'an incomplete med list — the patchwork you got when...'). Rewrite FINAL_NOVEL.md:2521 to remove the frame (e.g., 'coverage that kept a body functional').",
+          "acceptance_test": "Chapter 10 contains no more than one instance of 'the kind of X that Y.'"
+        },
+        {
+          "chapter_id": "chapter_12",
+          "evidence": "FINAL_NOVEL.md:2941 'It was the kind of thing that shouldn't matter and that mattered more than almost anything.' Lines 2961 and 2969 contain two additional instances.",
+          "problem": "Three instances in a short chapter (155 lines). The formula is functioning as a narrative reflex — the prose reaches for 'the kind of' whenever it wants to classify an observation.",
+          "rewrite_direction": "Retain at most one instance. L2941 is the strongest because the paradox ('shouldn't matter / mattered more') earns the frame. Rewrite L2961 and L2969 to direct description.",
+          "acceptance_test": "Chapter 12 contains no more than one instance of 'the kind of X that Y.'"
+        },
+        {
+          "chapter_id": "chapter_15",
+          "evidence": "FINAL_NOVEL.md:3582 'the kind of late-October cold that got to work before Halloween was done.' FINAL_NOVEL.md:3666 'the kind of thing that happened when you were old and your blood didn't reach your feet the way it used to.' A third instance appears at FINAL_NOVEL.md:3548.",
+          "problem": "Three instances in 172 lines. The Chapter 15 concentration (along with Ch1, Ch10, and Ch12) confirms the pattern is a prose-level habit rather than a deliberate device.",
+          "rewrite_direction": "Cut to one or zero instances. L3666 does the most work (the observation about aging and circulation is specific). At FINAL_NOVEL.md:3582, rewrite to direct sensation (e.g., 'a raw late-October cold'). At FINAL_NOVEL.md:3548, eliminate the frame entirely.",
+          "acceptance_test": "Chapter 15 contains no more than one instance of 'the kind of X that Y.'"
+        }
+      ]
+    },
+    {
+      "pattern_id": "somatic_gesture_overuse",
+      "severity": "MEDIUM",
+      "global_problem": "Two character-signature gestures recur at frequencies that cross from characterization into mechanical tic: (1) Carmen's badge-adjusting appears approximately fourteen times across nine chapters (01, 04, 05, 09, 10, 13, 14, 16, 17), with five instances concentrated in Chapter 13 alone. (2) Lola's crucifix-gripping appears approximately twenty-four times across twelve chapters (02, 03, 05, 06, 09, 10, 12, 13, 14, 16, 17, 18). Both gestures are intentional character traits and both are well-observed — the problem is not the gesture itself but its frequency. The constitution's rule 9 flags any 'descriptive default' appearing more than four times in the book as a tic. At fourteen and twenty-four instances respectively, these gestures have become prose formulas that the narrator deploys reflexively at moments of tension rather than choosing from a wider gestural vocabulary.",
+      "global_rewrite_principles": "Reduce Carmen's badge-adjusting to four to five instances across the full novel, retaining the moments where the gesture is most narratively significant (first appearance in Ch1, Horvath scene in Ch10, Tammy's observation in Ch14, and the climactic Ch16 meeting). Reduce Lola's crucifix-gripping to six to eight instances, retaining appearances that vary the description or carry specific emotional weight (first appearance, the tremor-transfer moment at L415, the climactic Ch16 confrontation). For retained instances, vary the verb and physical detail — avoid repeating 'hand went to her badge/crucifix' as a template. For cut instances, replace with character-specific gesture, silence, or nothing.",
+      "affected_chapters": ["chapter_01", "chapter_02", "chapter_03", "chapter_04", "chapter_05", "chapter_06", "chapter_09", "chapter_10", "chapter_12", "chapter_13", "chapter_14", "chapter_16", "chapter_17", "chapter_18"],
+      "chapter_hits": [
+        {
+          "chapter_id": "chapter_13",
+          "evidence": "FINAL_NOVEL.md:3104 'Carmen thumbed the edge of her badge through her scrub top.' FINAL_NOVEL.md:3166 'Carmen pinched the badge clipped under her scrub top until the plastic edge bit her thumb.' FINAL_NOVEL.md:3170 'The mark from the badge edge stayed in her thumb.' FINAL_NOVEL.md:3210 'her badge was under her scrub top, her name sat on the logs.' FINAL_NOVEL.md:3224 'the badge under her scrub top pressing against her sternum.' Five badge-adjusting instances in one chapter.",
+          "problem": "Five badge gestures in a single chapter creates a rhythmic drone. The reader registers the tic after two instances; by five, the gesture has lost its power to signal anxiety and instead signals authorial default. The specific physical variations (thumbing, pinching, pressing) do not mask the repetition because the narrative frame is identical each time: Carmen under pressure → hand goes to badge.",
+          "rewrite_direction": "Retain two instances in Chapter 13 — the first (FINAL_NOVEL.md:3104) to establish the gesture in the scene, and one later instance (FINAL_NOVEL.md:3224, which ties the badge to professional identity) for the climactic beat. Cut FINAL_NOVEL.md:3166, FINAL_NOVEL.md:3170, and FINAL_NOVEL.md:3210. Replace with different anxiety markers or simply let dialogue and silence carry the tension.",
+          "acceptance_test": "Chapter 13 contains no more than two badge-related gestures."
+        },
+        {
+          "chapter_id": "chapter_16",
+          "evidence": "FINAL_NOVEL.md:3755 'the gold crucifix she never took off, the one that caught the fluorescent light.' FINAL_NOVEL.md:3849 'the crucifix kept tapping against her thumbnail, metal on nail, tiny and fast.' FINAL_NOVEL.md:3873 'Lola was holding her crucifix in her right hand, the gold chain tight around her fingers.' FINAL_NOVEL.md:3875 'She was working the chain through her fingers.' FINAL_NOVEL.md:3893 'the crucifix was shaking in her grip.' Six crucifix instances in one chapter, plus FINAL_NOVEL.md:3813 adds a badge-adjusting for Carmen.",
+          "problem": "Six crucifix mentions in a single chapter is the highest concentration in the novel. The Chapter 16 group meeting is the emotional climax, so the stakes of Lola's distress are real — but the gesture recurs so densely that it becomes a stage direction rather than a lived moment. The reader starts tracking the crucifix as a formula rather than feeling it as character.",
+          "rewrite_direction": "Retain three crucifix instances in Chapter 16: the entrance at FINAL_NOVEL.md:3755 (establishes tremor severity), the tapping at FINAL_NOVEL.md:3849 (strongest sensory detail — metal on nail), and the shaking grip at FINAL_NOVEL.md:3893 (climactic). Cut FINAL_NOVEL.md:3873 and FINAL_NOVEL.md:3875. Let Lola's distress in those moments register through voice, posture, or the tremor itself without the crucifix.",
+          "acceptance_test": "Chapter 16 contains no more than three crucifix-related gestures for Lola."
+        },
+        {
+          "chapter_id": "chapter_03",
+          "evidence": "FINAL_NOVEL.md:415 'she held her crucifix. Her hand trembled — it always trembled.' FINAL_NOVEL.md:554 'Lola's grip tightened on the crucifix chain.' FINAL_NOVEL.md:578 'Lola's grip tightening on the crucifix until the tremor transferred to the chain.' Three instances in one chapter. The L554 and L578 gestures are nearly identical in phrasing ('grip tightened/tightening on the crucifix').",
+          "problem": "Two of the three instances use the same verb ('tightened/tightening') with the same object ('the crucifix chain'). This is not variation — it is repetition within a single scene.",
+          "rewrite_direction": "Retain FINAL_NOVEL.md:415 (the strongest, with the tremor-as-devotion observation). Cut either FINAL_NOVEL.md:554 or FINAL_NOVEL.md:578 — whichever moment can carry tension through other means — and vary the remaining instance so it does not echo 'grip tightened.'",
+          "acceptance_test": "Chapter 3 contains no more than two crucifix instances, and no two use the same verb phrase."
+        },
+        {
+          "chapter_id": "chapter_09",
+          "evidence": "FINAL_NOVEL.md:1745 'Carmen's hand went to her badge, adjusted it — the automatic motion Agnes had seen her make during medication counts that did not add up.' FINAL_NOVEL.md:1938 'Her gold crucifix caught the late-morning light through the window.'",
+          "problem": "One badge and one crucifix instance in the same chapter. The badge instance at L1745 is one of the stronger uses — Agnes observes it as diagnostic evidence — but it uses the template phrase 'hand went to her badge' that appears nearly verbatim at L3813, L4012, and elsewhere.",
+          "rewrite_direction": "Retain FINAL_NOVEL.md:1745 (it earns its place through Agnes's POV interpretation) but vary the phrasing so it does not duplicate 'hand went to her badge.' FINAL_NOVEL.md:1938 is atmospheric and can stay if the global crucifix count is brought within range.",
+          "acceptance_test": "L1745 uses a phrasing for the badge gesture that does not repeat 'hand went to her badge.'"
+        }
+      ]
+    }
+  ]
+}
