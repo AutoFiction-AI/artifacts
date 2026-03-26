@@ -1,0 +1,127 @@
+{
+  "acceptance_targets": [
+    "[CH05_CRAFT_CONTINUITY_CASSEROLE_STATE] In the revised snapshots/cycle_02/chapters/chapter_05.md:3-11 and snapshots/cycle_02/chapters/chapter_05.md:197-214, the casserole is never described as warming, browning, being served, or sitting on the stovetop; a reader can track it as an untouched item that stays stored rather than becoming live scene business.",
+    "[CH05_CRAFT_CONTINUITY_PREMATURE_BCA] At revised snapshots/cycle_02/chapters/chapter_05.md:265, Mallick's next move names a local or first-death-appropriate step and does not imply BCA involvement before the second death; the line should still create urgency about autopsy timing and immediate interviews.",
+    "[R09] Ch5 does not describe Martin's picks circled in red on the draft board.",
+    "[R23] Ch5 contains no more than 3 instances of 'something.'",
+    "[length_chapter_05_min_words] Chapter word count is >= 4500 while preserving heading contract."
+  ],
+  "chapter_id": "chapter_05",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "In the revised snapshots/cycle_02/chapters/chapter_05.md:3-11 and snapshots/cycle_02/chapters/chapter_05.md:197-214, the casserole is never described as warming, browning, being served, or sitting on the stovetop; a reader can track it as an untouched item that stays stored rather than becoming live scene business.",
+      "chapter_id": "chapter_05",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_05.md:3; snapshots/cycle_02/chapters/chapter_05.md:11; snapshots/cycle_02/chapters/chapter_05.md:121; snapshots/cycle_02/chapters/chapter_05.md:197; snapshots/cycle_02/chapters/chapter_05.md:213",
+      "finding_id": "CH05_CRAFT_CONTINUITY_CASSEROLE_STATE",
+      "problem": "The chapter breaks the continuity sheet's canonical state for Mallick's casserole. Canon says the green bean casserole sits untouched in Martin's refrigerator through the week, but this chapter has Decker put it in the oven, Mallick checking it as it browns, inviting Paul to eat it, and later pulling it out to cool. That is a hard object-state contradiction, not a tonal variation.",
+      "rewrite_direction": "Revise the casserole beats at snapshots/cycle_02/chapters/chapter_05.md:3-11, snapshots/cycle_02/chapters/chapter_05.md:121-125, and snapshots/cycle_02/chapters/chapter_05.md:197-214 so the dish remains a disarming prop without entering active use. Keep the domestic-interrogation strategy, but either leave the casserole in the refrigerator throughout or swap the warmed food beat to a different object that is not canon-tracked.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "At revised snapshots/cycle_02/chapters/chapter_05.md:265, Mallick's next move names a local or first-death-appropriate step and does not imply BCA involvement before the second death; the line should still create urgency about autopsy timing and immediate interviews.",
+      "chapter_id": "chapter_05",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_05.md:265",
+      "finding_id": "CH05_CRAFT_CONTINUITY_PREMATURE_BCA",
+      "problem": "The closing action contradicts the continuity sheet's world rule that Becker County handles the initial response and the BCA enters only once the second death reads as homicide. Having Mallick want 'the BCA' moving on Martin's autopsy here pulls a later-stage procedural escalation into Saturday and breaks the established investigative sequence.",
+      "rewrite_direction": "Replace the BCA reference at snapshots/cycle_02/chapters/chapter_05.md:265 with the procedurally correct Saturday-stage action for this book's canon: a county-side autopsy push, a medical-examiner request, or another local next step that keeps the first death inside the initial Becker County response chain. If upstream canon is meant to change, that change belongs in the continuity inputs, not only here.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch5 does not describe Martin's picks circled in red on the draft board.",
+      "chapter_id": "chapter_05",
+      "cycle": 2,
+      "evidence": "Ch4/916: 'The draft board stayed on the wall, Martin's picks circled in red Sharpie.' Ch5/1315: 'the draft board on the wall. Martin Kessler's picks circled in red marker.' Consecutive chapters repeat the same image in nearly identical phrasing.",
+      "finding_id": "R09",
+      "problem": "Ch5/1315 repeats the draft-board-with-red-circled-picks image from Ch4/916 one chapter later. Ch6/1782 repeats it a third consecutive time. First establishment as post-death artifact: Ch4/916.",
+      "rewrite_direction": "In Ch5, cut the draft board description. Mallick can register the room without the board, or notice something only a detective would notice about it.",
+      "severity": "HIGH",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch5 contains no more than 3 instances of 'something.'",
+      "chapter_id": "chapter_05",
+      "cycle": 2,
+      "evidence": "'Something' appears 108 times manuscript-wide (1 per 604 words). Ch5 contains 8 instances in 3,828 words (1 per 478 words).",
+      "finding_id": "R23",
+      "problem": "Ch5 uses 'something' at 1 per 478 words in Mallick's first POV chapter. Mallick is observationally precise; the hedge undercuts her voice.",
+      "rewrite_direction": "Reduce 'something' in Ch5 to no more than 3 instances. Mallick should name what she notices rather than defer to 'something.'",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Chapter word count is >= 4500 while preserving heading contract.",
+      "chapter_id": "chapter_05",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_05.md:1",
+      "finding_id": "length_chapter_05_min_words",
+      "problem": "Chapter is below projected_min_words (3833 < 4500).",
+      "rewrite_direction": "Add causally necessary scene material that strengthens the chapter engine, increases pressure, and lands the planned state shift without filler.",
+      "severity": "HIGH",
+      "source": "length_guardrail",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "db8eb669c722e537572bf57ca6c6ec2e5c6be3c76ff21199968165043c72d412",
+  "must_fix_count": 5,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "The comedy is the creative risk and the creative achievement. These are men in their late forties who talk the way men in their late forties talk when there are no women present and the drinks have been flowing for hours: crude, raunchy, profane, sexually explicit, casually cruel, and occasionally accidentally beautiful. Do not clean this up. Do not soften the language. Do not make them witty where they would be vulgar. Do not make them eloquent where they would be clumsy. The profanity is not decoration \u2014 it is the texture of the friendship. When the second death breaks the comic register, the absence of that profane warmth should feel like a loss, not a relief. The murder, when it arrives, should be rendered with physical specificity \u2014 the water, the struggle, the sounds. The grief should be specific. The shame should be specific. The twenty-two-year-old guilt should be embodied, not summarized. If a scene makes the writer uncomfortable, that is a signal to stay in it longer, not to cut away.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Every euphemism for death, sex, bodily function, emotional state, or financial desperation must be replaced with the direct term or a character-specific avoidance that itself reveals something about the character. Cliff saying 'restructure' when he means 'I'm broke' is character work. The narrator describing Cliff as 'facing financial challenges' is sanitization.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the absolute norm. These are informal men in their late forties who have been friends for twenty-five years. Uncontracted forms should appear only for deliberate emphasis, Joel's occasional legal precision, or Mallick's public-persona overcorrection. If two consecutive lines of dialogue contain uncontracted forms and neither character has a stated reason for formality, at least one is wrong.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "No two consecutive chapters should have the same structural rhythm. After a dialogue-heavy chapter, lead the next with interiority or description. After an interview chapter, give the reader a memory or a quiet observation. After a comic set piece, let the next chapter breathe. The scene counts vary (2-3) and should feel varied \u2014 a two-scene chapter after a three-scene chapter creates natural pacing shift. The tonal break at Chapter 14 should feel like a gear change, not a gradual dimming.",
+      "diction": "Muscular, specific, unpretentious. No literary posturing. The prose should sound like intelligent conversation, not workshopped fiction. Prefer concrete nouns over abstract ones. Prefer active constructions. Avoid decorative metaphor \u2014 when a metaphor appears, it should be load-bearing. The comedy demands precision: funny is specific, and vague is never funny.",
+      "forbidden_drift_patterns": [
+        "Prestige-literary inflation \u2014 do not elevate the comic register into literary solemnity. A man flushing Viagra while a detective knocks on the door is funny. The prose should be funny. Do not describe it as if it were a scene from Dostoevsky.",
+        "Comedic exhaustion \u2014 do not let every paragraph contain a joke. Comedy needs rhythm, which means it needs non-comic beats to land against. Let some paragraphs be straightforwardly descriptive or emotional.",
+        "Interior monologue sprawl \u2014 close third is not stream of consciousness. The POV character's interiority should be selective and purposeful, not an open channel of every thought.",
+        "Simultaneous narration \u2014 do not describe characters 'simultaneously' feeling multiple things. Choose the dominant feeling and let the undertone be implicit.",
+        "Forensic procedure porn \u2014 this is not a police procedural. Keep investigation details specific but brief. The comedy and character are the vehicle, not the forensics.",
+        "Metaphor creep \u2014 do not let the same metaphor template appear more than twice in a chapter. If you've used a sports metaphor, a water metaphor, and a fire metaphor, check that none of them are doing the same structural work."
+      ],
+      "narrative_distance": "Close third person, rotating POV. Each chapter is locked to one character's interiority. No omniscient intrusions. The prose should take on the coloring of the POV character without becoming parody \u2014 Nate's chapters move faster and list more, Doug's chapters are quieter and more observational, Mallick's chapters shift between her two registers.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Conversational propulsion, not literary drift. The prose should move like someone telling you this story \u2014 not rushed, but never self-admiring. Vary sentence length aggressively: long compound sentences for the comic set pieces, short declarative hits for the turns. The humor lives in rhythm as much as content \u2014 the timing of a punchline is a prose-level decision.",
+      "sensory_bias": [
+        "auditory \u2014 conversations, lake sounds, house creaks, the specific silence of a house where someone died",
+        "proprioceptive \u2014 hangovers, physical discomfort, adrenaline, the specific sensation of a body that hasn't slept",
+        "olfactory \u2014 booze, lake water, morning coffee, the basement must, the casserole"
+      ]
+    }
+  }
+}

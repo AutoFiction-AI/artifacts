@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_08",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "RT_DOCUMENT_INTERIORITY_DROP",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_03/chapters/chapter_08.md:91; snapshots/cycle_03/chapters/chapter_08.md:93; snapshots/cycle_03/chapters/chapter_08.md:95; snapshots/cycle_03/chapters/chapter_08.md:103; snapshots/cycle_03/chapters/chapter_08.md:109; snapshots/cycle_03/chapters/chapter_08.md:113",
+      "problem": "The chapter's defining discovery drops Cliff's close-third filter for too long. After the brief anchor at line 91, the RT section runs as a ten-paragraph backstory dossier before Cliff's interior reaction returns at line 113, so the reveal lands as information transfer more than lived discovery.",
+      "rewrite_direction": "Rework the RT-reading sequence at snapshots/cycle_03/chapters/chapter_08.md:85, snapshots/cycle_03/chapters/chapter_08.md:91, snapshots/cycle_03/chapters/chapter_08.md:93, snapshots/cycle_03/chapters/chapter_08.md:103, and snapshots/cycle_03/chapters/chapter_08.md:109 so the document remains the source of the facts but the scene stays inside Cliff. Keep the core fire facts, but interrupt the lines 93-111 run with brief Cliff-side processing: a bodily reaction, a legal or financial parsing instinct, and a moment where the moral temperature changes before the later leverage math.",
+      "acceptance_test": "In the revised passage anchored around snapshots/cycle_03/chapters/chapter_08.md:93, snapshots/cycle_03/chapters/chapter_08.md:103, and snapshots/cycle_03/chapters/chapter_08.md:109, the reader can track Cliff reading in real time rather than absorbing a stand-alone synopsis. Pass only if the section contains at least three distinct Cliff filters inside the RT account and no 10-plus-paragraph run remains without Cliff thought, sensation, or self-assessment."
+    },
+    {
+      "finding_id": "RT_DOCUMENT_DATE_HORIZON_SEAM",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_03/chapters/chapter_08.md:87; snapshots/cycle_03/chapters/chapter_08.md:89; snapshots/cycle_03/chapters/chapter_08.md:101; snapshots/cycle_03/chapters/chapter_08.md:103; snapshots/cycle_03/chapters/chapter_08.md:105",
+      "problem": "The RT document is dated August 17, 2002 and framed as an immediate memory record, but it also reads as if Martin already has later investigative conclusions in hand: a coroner's blood-alcohol result and a settled accidental-fire ruling. Because this document is the novel's motive engine, the mixed time horizon weakens the artifact's plausibility at the exact moment the reader needs to trust it as real leverage, not a plot memo.",
+      "rewrite_direction": "At snapshots/cycle_03/chapters/chapter_08.md:87, snapshots/cycle_03/chapters/chapter_08.md:89, snapshots/cycle_03/chapters/chapter_08.md:101, and snapshots/cycle_03/chapters/chapter_08.md:105, choose one documentary logic and make the text obey it. Either redate the note to a point when Martin could plausibly know those official findings, or keep the August 17 dating and move the report-level details into a clearly marked later addendum, margin note, or separate page that Cliff can still find in the envelope.",
+      "acceptance_test": "The revised RT packet passes only if every official detail in the lines anchored at snapshots/cycle_03/chapters/chapter_08.md:101 and snapshots/cycle_03/chapters/chapter_08.md:105 clearly belongs to the date logic established at snapshots/cycle_03/chapters/chapter_08.md:87 and snapshots/cycle_03/chapters/chapter_08.md:89. It fails if the same dated note still reads as both hot confession and post-investigation summary without the text marking the difference."
+    }
+  ],
+  "summary": "Cliff's money panic, the safe logic, and the eventual leverage turn are all clean and linearly legible, and the chapter keeps his transactional interiority specific rather than generic. The fail is about delivery, not causality: the pivotal RT discovery becomes too dossier-like in the middle, and the document's dated knowledge horizon has a plausibility seam. That combination keeps the chapter below shortlist level even though the surrounding material is strong."
+}

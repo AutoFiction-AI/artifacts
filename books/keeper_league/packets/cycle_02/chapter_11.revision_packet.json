@@ -1,0 +1,201 @@
+{
+  "acceptance_targets": [
+    "[fallback_chapter_11_contract] At least 1 grounded fix is applied in snapshots/cycle_02/chapters/chapter_11.md:1-220 and a valid review JSON is regenerated with anchored evidence lines.",
+    "[SAFE_CONTENTS_PHYSICAL_chapter_11] Pass if the revised material at snapshots/cycle_02/FINAL_NOVEL.md:2820; snapshots/cycle_02/FINAL_NOVEL.md:2840 now follows the rewrite direction and no longer exhibits the described defect. Fail if a cold reader would still identify the same underlying problem in those cited passages.",
+    "[R02] Ch11 no longer lists Tommy's age, job title, marital status, or number of children in a summary capsule.",
+    "[R11] Ch11 does not re-describe the lake landscape print as a discovery.",
+    "[C02] The cash amount in the safe is consistent across Ch8 and Ch11, or an intervening removal is explicitly established.",
+    "[C06] The safe contents in Ch8 and Ch11 are reconciled: same number of folders, same envelope size, same cash container, and the will's presence or absence in Ch8 is explained.",
+    "[C09] The will appears in Cliff's safe inventory in Ch8, even if he does not read it in detail.",
+    "[length_chapter_11_min_words] Chapter word count is >= 4500 while preserving heading contract."
+  ],
+  "chapter_id": "chapter_11",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "At least 1 grounded fix is applied in snapshots/cycle_02/chapters/chapter_11.md:1-220 and a valid review JSON is regenerated with anchored evidence lines.",
+      "chapter_id": "chapter_11",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_11.md:1",
+      "finding_id": "fallback_chapter_11_contract",
+      "problem": "Review output contract could not be validated; chapter requires manual quality pass. Root validator reason: missing JSON file: reviews/cycle_02/chapter_11.review.json",
+      "rewrite_direction": "Audit and revise snapshots/cycle_02/chapters/chapter_11.md:1-220 for constitution compliance and complete actionable findings coverage.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if the revised material at snapshots/cycle_02/FINAL_NOVEL.md:2820; snapshots/cycle_02/FINAL_NOVEL.md:2840 now follows the rewrite direction and no longer exhibits the described defect. Fail if a cold reader would still identify the same underlying problem in those cited passages.",
+      "chapter_id": "chapter_11",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:2820; snapshots/cycle_02/FINAL_NOVEL.md:2840",
+      "finding_id": "SAFE_CONTENTS_PHYSICAL_chapter_11",
+      "locator_excerpts": {
+        "acceptance_test": [
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:2820",
+            "excerpt": "2820:",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:2840",
+            "excerpt": "2840: \"Hey.\" Cliff's voice. Smooth as ever. \"Brought you one.\"",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          }
+        ],
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:2820",
+            "excerpt": "2820:",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:2840",
+            "excerpt": "2840: \"Hey.\" Cliff's voice. Smooth as ever. \"Brought you one.\"",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          }
+        ],
+        "rewrite_direction": [
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:2820",
+            "excerpt": "2820:",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:2840",
+            "excerpt": "2840: \"Hey.\" Cliff's voice. Smooth as ever. \"Brought you one.\"",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "problem": "Safe contents observed again: cash $860, 'sealed manila envelope, letter-sized.' No scene accounts for the missing $1,140 or the envelope's size change.",
+      "rewrite_direction": "Revise snapshots/cycle_02/FINAL_NOVEL.md:2820; snapshots/cycle_02/FINAL_NOVEL.md:2840. Fix one canonical description of the safe contents (cash amount, envelope size and color, document page count) and use it in every scene where the safe is opened. If cash is removed between scenes, show it on-page or reference it. The envelope and document are the same physical objects and must match across all observations.",
+      "severity": "MEDIUM",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch11 no longer lists Tommy's age, job title, marital status, or number of children in a summary capsule.",
+      "chapter_id": "chapter_11",
+      "cycle": 2,
+      "evidence": "Ch8 line 2076: 'Tommy Renaldi. Forty-seven. High school football coach. PE teacher. Married, three kids.' Ch11 line 2761: 'Tommy Renaldi. High school football coach. Married to Denise. Three kids.'",
+      "finding_id": "R02",
+      "problem": "Ch11 line 2761 repeats Tommy's biographical capsule nearly verbatim from Ch8/2076 (coach, married, three kids). A third identical capsule will appear at Ch18/4672. First establishment of this capsule: Ch8 line 2076.",
+      "rewrite_direction": "Replace the capsule at line 2761 with Paul's emotional reaction to the will naming Tommy. Paul already knows who Tommy is; the passage should show Paul's confusion about why Martin chose Tommy, not re-teach the reader Tommy's bio.",
+      "severity": "HIGH",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch11 does not re-describe the lake landscape print as a discovery.",
+      "chapter_id": "chapter_11",
+      "cycle": 2,
+      "evidence": "Ch8/1986: 'Martin's wall safe behind a framed lake landscape print.' Ch10/2488: 'The wall safe in Martin's study was hidden behind a lake landscape print.' Ch11/2733: 'the same lake landscape print Martin's parents had bought at a craft fair in Duluth in 1983.' Three consecutive chapters describe the safe-behind-painting setup.",
+      "finding_id": "R11",
+      "problem": "Ch11/2733 is the third chapter in a row to describe the safe behind the lake print. The Duluth craft fair provenance is repeated verbatim in Ch17/4196.",
+      "rewrite_direction": "Paul already knows about the safe. Skip the print description \u2014 he can access the safe directly. The Duluth provenance can stay here if cut from Ch17.",
+      "severity": "HIGH",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "The cash amount in the safe is consistent across Ch8 and Ch11, or an intervening removal is explicitly established.",
+      "chapter_id": "chapter_11",
+      "cycle": 2,
+      "evidence": "Ch8/2008: 'Cliff took the cash first and counted without removing the clip. Twenties and fifties. Roughly two thousand. He put it back.' Ch11/2739: 'A smaller envelope with cash. Paul counted it automatically... Eight hundred and sixty dollars in twenties and fifties.'",
+      "finding_id": "C02",
+      "problem": "The cash in Martin's safe is 'roughly two thousand' when Cliff counts it (Ch8/2008, Sunday morning) but 'eight hundred and sixty dollars' when Paul counts it (Ch11/2739, Monday). Cliff explicitly puts the cash back. No character is described removing cash between these chapters.",
+      "rewrite_direction": "Reconcile the cash amount. Either make both counts match (e.g., both ~$860 or both ~$2,000), or add a brief note that someone took cash from the safe between Sunday and Monday if that is the intended plot.",
+      "severity": "HIGH",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "The safe contents in Ch8 and Ch11 are reconciled: same number of folders, same envelope size, same cash container, and the will's presence or absence in Ch8 is explained.",
+      "chapter_id": "chapter_11",
+      "cycle": 2,
+      "evidence": "Ch8/2008: 'Inside were three manila folders, a small law-office envelope, one legal-size manila envelope, and a stack of bills clipped together.' Ch11/2739: 'a manila folder of financial documents... A smaller envelope with cash... A sealed manila envelope, letter-sized... And beneath everything, in a clear plastic sleeve, a document.'",
+      "finding_id": "C06",
+      "problem": "The safe contents inventory differs between Ch8 and Ch11. Three manila folders become one. The 'legal-size' envelope becomes 'letter-sized.' The 'law-office envelope' disappears. Martin's will (in a clear plastic sleeve) appears in Ch11 but was not mentioned in Ch8, despite Cliff examining the safe contents. The 'stack of bills clipped together' becomes 'a smaller envelope with cash.'",
+      "rewrite_direction": "Reconcile the safe contents across Ch8 and Ch11. Either (a) make both inventories match exactly, or (b) if Cliff's inventory is deliberately incomplete (he was focused on the debt), note explicitly in Ch8 that he didn't examine everything. The will's absence from Ch8 is the most critical gap \u2014 Cliff should either notice and dismiss it, or the will should not be visible on casual inspection.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "The will appears in Cliff's safe inventory in Ch8, even if he does not read it in detail.",
+      "chapter_id": "chapter_11",
+      "cycle": 2,
+      "evidence": "Ch8/2008-2014: Cliff inventories the safe and finds three folders (HOUSE, INVESTMENTS, PERSONAL), the RT envelope, a law-office envelope, and cash. He opens and reads the RT envelope. Ch11/2739: Paul finds 'a manila folder of financial documents... A sealed manila envelope, letter-sized... a document [the will] in a clear plastic sleeve.'",
+      "finding_id": "C09",
+      "problem": "Cliff examined the safe contents in detail in Ch8 but did not see or mention Martin's will. Paul finds the will in Ch11 in a 'clear plastic sleeve' beneath everything. If the will was in the safe when Cliff opened it Sunday morning, Cliff either saw it and ignored it (implausible given his financial motive) or it was not there yet (impossible \u2014 no one else put it in). The most likely explanation is that the will was omitted from Ch8 in error.",
+      "rewrite_direction": "Add the will to Cliff's inventory in Ch8. Cliff can notice it, register that it is Martin's will, and choose not to read it carefully because he is focused on the debt documentation and the RT envelope. This preserves the plot while closing the gap.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Chapter word count is >= 4500 while preserving heading contract.",
+      "chapter_id": "chapter_11",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_11.md:1",
+      "finding_id": "length_chapter_11_min_words",
+      "problem": "Chapter is below projected_min_words (3599 < 4500).",
+      "rewrite_direction": "Add causally necessary scene material that strengthens the chapter engine, increases pressure, and lands the planned state shift without filler.",
+      "severity": "HIGH",
+      "source": "length_guardrail",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "has_locator_excerpts": true,
+  "input_snapshot_hash": "f05fe804fc52c87e0e9c8a035cc53204dfed730916b09cdaa01a53a4a7689b66",
+  "must_fix_count": 8,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "original_snapshot_file": "snapshots/cycle_02/chapters/chapter_11.md",
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "The comedy is the creative risk and the creative achievement. These are men in their late forties who talk the way men in their late forties talk when there are no women present and the drinks have been flowing for hours: crude, raunchy, profane, sexually explicit, casually cruel, and occasionally accidentally beautiful. Do not clean this up. Do not soften the language. Do not make them witty where they would be vulgar. Do not make them eloquent where they would be clumsy. The profanity is not decoration \u2014 it is the texture of the friendship. When the second death breaks the comic register, the absence of that profane warmth should feel like a loss, not a relief. The murder, when it arrives, should be rendered with physical specificity \u2014 the water, the struggle, the sounds. The grief should be specific. The shame should be specific. The twenty-two-year-old guilt should be embodied, not summarized. If a scene makes the writer uncomfortable, that is a signal to stay in it longer, not to cut away.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Every euphemism for death, sex, bodily function, emotional state, or financial desperation must be replaced with the direct term or a character-specific avoidance that itself reveals something about the character. Cliff saying 'restructure' when he means 'I'm broke' is character work. The narrator describing Cliff as 'facing financial challenges' is sanitization.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the absolute norm. These are informal men in their late forties who have been friends for twenty-five years. Uncontracted forms should appear only for deliberate emphasis, Joel's occasional legal precision, or Mallick's public-persona overcorrection. If two consecutive lines of dialogue contain uncontracted forms and neither character has a stated reason for formality, at least one is wrong.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "No two consecutive chapters should have the same structural rhythm. After a dialogue-heavy chapter, lead the next with interiority or description. After an interview chapter, give the reader a memory or a quiet observation. After a comic set piece, let the next chapter breathe. The scene counts vary (2-3) and should feel varied \u2014 a two-scene chapter after a three-scene chapter creates natural pacing shift. The tonal break at Chapter 14 should feel like a gear change, not a gradual dimming.",
+      "diction": "Muscular, specific, unpretentious. No literary posturing. The prose should sound like intelligent conversation, not workshopped fiction. Prefer concrete nouns over abstract ones. Prefer active constructions. Avoid decorative metaphor \u2014 when a metaphor appears, it should be load-bearing. The comedy demands precision: funny is specific, and vague is never funny.",
+      "forbidden_drift_patterns": [
+        "Prestige-literary inflation \u2014 do not elevate the comic register into literary solemnity. A man flushing Viagra while a detective knocks on the door is funny. The prose should be funny. Do not describe it as if it were a scene from Dostoevsky.",
+        "Comedic exhaustion \u2014 do not let every paragraph contain a joke. Comedy needs rhythm, which means it needs non-comic beats to land against. Let some paragraphs be straightforwardly descriptive or emotional.",
+        "Interior monologue sprawl \u2014 close third is not stream of consciousness. The POV character's interiority should be selective and purposeful, not an open channel of every thought.",
+        "Simultaneous narration \u2014 do not describe characters 'simultaneously' feeling multiple things. Choose the dominant feeling and let the undertone be implicit.",
+        "Forensic procedure porn \u2014 this is not a police procedural. Keep investigation details specific but brief. The comedy and character are the vehicle, not the forensics.",
+        "Metaphor creep \u2014 do not let the same metaphor template appear more than twice in a chapter. If you've used a sports metaphor, a water metaphor, and a fire metaphor, check that none of them are doing the same structural work."
+      ],
+      "narrative_distance": "Close third person, rotating POV. Each chapter is locked to one character's interiority. No omniscient intrusions. The prose should take on the coloring of the POV character without becoming parody \u2014 Nate's chapters move faster and list more, Doug's chapters are quieter and more observational, Mallick's chapters shift between her two registers.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Conversational propulsion, not literary drift. The prose should move like someone telling you this story \u2014 not rushed, but never self-admiring. Vary sentence length aggressively: long compound sentences for the comic set pieces, short declarative hits for the turns. The humor lives in rhythm as much as content \u2014 the timing of a punchline is a prose-level decision.",
+      "sensory_bias": [
+        "auditory \u2014 conversations, lake sounds, house creaks, the specific silence of a house where someone died",
+        "proprioceptive \u2014 hangovers, physical discomfort, adrenaline, the specific sensation of a body that hasn't slept",
+        "olfactory \u2014 booze, lake water, morning coffee, the basement must, the casserole"
+      ]
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "chapter_id": "chapter_15",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH15_PROCESS_LEAK",
+      "source": "craft",
+      "severity": "CRITICAL",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_01/chapters/chapter_15.md:109",
+      "problem": "The narration explicitly says \"The continuity sheet in her memory was accurate,\" which imports production-pipeline language into close third and breaks the fictional frame. This is direct process leakage, not character thought, and it damages reader trust immediately in a chapter that depends on forensic authority.",
+      "rewrite_direction": "Rewrite `snapshots/cycle_01/chapters/chapter_15.md:109` so the shallow depth and lake-bottom texture come from Mallick's prior visit, local knowledge, or present observation at the dock. Keep the deduction, but remove any out-of-story document vocabulary from the line.",
+      "acceptance_test": "Pass if revised `snapshots/cycle_01/chapters/chapter_15.md:109` conveys the water depth/bottom through Mallick's embodied memory or direct observation and contains no terms such as \"continuity sheet,\" \"context,\" or any other production-artifact language; fail if any process-facing vocabulary remains in the narration."
+    },
+    {
+      "finding_id": "CH15_EVIDENCE_CHAIN_SKIP",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_01/chapters/chapter_15.md:75; snapshots/cycle_01/chapters/chapter_15.md:125; snapshots/cycle_01/chapters/chapter_15.md:155; snapshots/cycle_01/chapters/chapter_15.md:337; snapshots/cycle_01/chapters/chapter_15.md:357; snapshots/cycle_01/chapters/chapter_15.md:359",
+      "problem": "Mallick's certainty outruns the on-page evidence. She orders BCA as a homicide before the chapter has shown her a scene inconsistency, then upgrades Cliff's access to the study into a safe-secret murder theory and Tommy-specific guilt without enough intermediate proof. The result is not impressive detection but authorial foreknowledge: the chapter skips the investigative middle and weakens both suspense and procedural credibility.",
+      "rewrite_direction": "Revise `snapshots/cycle_01/chapters/chapter_15.md:75` so the homicide call is either preceded by a concrete inconsistency Arneson reports or visually provisional rather than definitive. Then revise `snapshots/cycle_01/chapters/chapter_15.md:155`, `snapshots/cycle_01/chapters/chapter_15.md:337`, `snapshots/cycle_01/chapters/chapter_15.md:357`, and `snapshots/cycle_01/chapters/chapter_15.md:359` so the safe/Tommy line remains a working hypothesis unless the chapter adds new proof before those notes land.",
+      "acceptance_test": "Pass if, before the first explicit homicide declaration at revised `snapshots/cycle_01/chapters/chapter_15.md:75`, the text supplies at least one concrete anomaly Mallick can point to, and if the later notebook/internal lines at revised `snapshots/cycle_01/chapters/chapter_15.md:155`, `snapshots/cycle_01/chapters/chapter_15.md:337`, `snapshots/cycle_01/chapters/chapter_15.md:357`, and `snapshots/cycle_01/chapters/chapter_15.md:359` read as questions, probabilities, or evidence-linked inferences rather than settled fact unless new in-chapter proof has been shown."
+    },
+    {
+      "finding_id": "CH15_RECORDING_PAYOFF_WITHHELD",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_01/chapters/chapter_15.md:229; snapshots/cycle_01/chapters/chapter_15.md:241; snapshots/cycle_01/chapters/chapter_15.md:361; snapshots/cycle_01/chapters/chapter_15.md:369; snapshots/cycle_01/chapters/chapter_15.md:373",
+      "problem": "The tracked Nate-recording payoff does not actually land in this chapter. The phone is confiscated, the notebook says it may matter, and the scene ends on Mallick pressing play, but the reader receives no concrete evidentiary fragment. That leaves the chapter ending on anticipation instead of a realized pursuit beat.",
+      "rewrite_direction": "Revise `snapshots/cycle_01/chapters/chapter_15.md:229`, `snapshots/cycle_01/chapters/chapter_15.md:241`, `snapshots/cycle_01/chapters/chapter_15.md:361`, `snapshots/cycle_01/chapters/chapter_15.md:369`, and `snapshots/cycle_01/chapters/chapter_15.md:373` so the recording yields at least one specific usable detail before chapter end, or else change the ending hook so it lands on a different achieved turn rather than a deferred one.",
+      "acceptance_test": "Pass if, by the end of revised `snapshots/cycle_01/chapters/chapter_15.md:369` and `snapshots/cycle_01/chapters/chapter_15.md:373`, Mallick has heard at least one concrete audio clue from Nate's phone that sharpens the timeline or suspect field on the page; fail if the chapter still ends with only the promise that the audio might matter."
+    },
+    {
+      "finding_id": "CH15_EXPLANATORY_SCAFFOLD_TIC",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_01/chapters/chapter_15.md:51; snapshots/cycle_01/chapters/chapter_15.md:55; snapshots/cycle_01/chapters/chapter_15.md:77; snapshots/cycle_01/chapters/chapter_15.md:91; snapshots/cycle_01/chapters/chapter_15.md:231; snapshots/cycle_01/chapters/chapter_15.md:345",
+      "problem": "The chapter repeatedly leans on the same explanatory sentence scaffolds: \"the way...,\" \"the kind of...,\" \"the expression of a man...,\" \"the particular...,\" \"the specific silence of....\" A few of these can sharpen observation; this many make the prose feel pre-shaped and self-translating, as if each image has to be run through the same interpretive template before it can stand.",
+      "rewrite_direction": "Revise `snapshots/cycle_01/chapters/chapter_15.md:51`, `snapshots/cycle_01/chapters/chapter_15.md:55`, `snapshots/cycle_01/chapters/chapter_15.md:77`, `snapshots/cycle_01/chapters/chapter_15.md:91`, `snapshots/cycle_01/chapters/chapter_15.md:231`, and `snapshots/cycle_01/chapters/chapter_15.md:345` to vary the sentence architecture. Keep the strongest one or two explanatory turns, but let the rest land as direct observation, rhythm, or image without the recurring scaffold.",
+      "acceptance_test": "Pass if the revised cited lines contain no more than two total instances of these explanatory scaffold shapes and at least three of the cited observations are rendered directly without \"the way,\" \"the kind,\" \"the expression,\" \"the particular,\" or \"the specific\" framing; fail if the same template still dominates the passage."
+    },
+    {
+      "finding_id": "CH15_DOSSIER_SHORTHAND",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_01/chapters/chapter_15.md:141; snapshots/cycle_01/chapters/chapter_15.md:143; snapshots/cycle_01/chapters/chapter_15.md:147; snapshots/cycle_01/chapters/chapter_15.md:333; snapshots/cycle_01/chapters/chapter_15.md:357; snapshots/cycle_01/chapters/chapter_15.md:359",
+      "problem": "Several of Mallick's notes and retroactive reads flatten people into dossier labels rather than scene-born evidence: \"Compulsive talker,\" \"Legal precision,\" \"Physically agitated,\" then later \"strong enough,\" \"afraid enough,\" \"careless enough.\" Because those labels arrive in bundled abstractions, the correction map starts sounding like imported character-sheet metadata instead of a detective's live reasoning on this page.",
+      "rewrite_direction": "Revise `snapshots/cycle_01/chapters/chapter_15.md:141`, `snapshots/cycle_01/chapters/chapter_15.md:143`, `snapshots/cycle_01/chapters/chapter_15.md:147`, `snapshots/cycle_01/chapters/chapter_15.md:333`, `snapshots/cycle_01/chapters/chapter_15.md:357`, and `snapshots/cycle_01/chapters/chapter_15.md:359` so the notes and suspicions are grounded in concrete observed facts, quoted lines, or physical evidence rather than stacked summary tags.",
+      "acceptance_test": "Pass if each revised suspect note in the cited lines contains at least one concrete observable fact from this chapter or Mallick's prior interviews, and if at least three abstract labels in the cited material are either removed or immediately tied to specific behavior or evidence; fail if the notes still read primarily as trait shorthand."
+    }
+  ],
+  "summary": "The chapter lands the tonal break and the dialogue voices stay distinct enough to pass, but it does not meet shortlist-level craft. A CRITICAL process leak breaks immersion, Mallick's certainty repeatedly outruns the evidence, the Nate-recording payoff is deferred instead of landed, and the prose leans too often on repeated explanatory scaffolds and dossier-like shorthand. Those failures are enough to sink award, craft, and prose despite the chapter's solid control of scene pressure and character-register separation."
+}

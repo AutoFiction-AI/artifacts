@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_15",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH15_TIMELINE_DAYCOUNT",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_02/chapters/chapter_15.md:5; snapshots/cycle_02/chapters/chapter_15.md:19; snapshots/cycle_02/chapters/chapter_15.md:349",
+      "problem": "The opening says this is the second call to the property in four days, but the chapter's own chronology and the continuity sheet place Mallick's first callout on Saturday morning and this one at 11:47 PM Monday, with arrival at 12:13 AM Tuesday. That is not four elapsed days. Because the line is a hard time-count claim in the chapter's setup, it reads as a canon break rather than flavor.",
+      "rewrite_direction": "Revise the elapsed-time phrasing at snapshots/cycle_02/chapters/chapter_15.md:5 so it matches the Saturday-to-Monday-night interval already established in this chapter. If the casserole callback at snapshots/cycle_02/chapters/chapter_15.md:349 keeps an age count, make it use the same counting logic so the opening and the kitchen beat do not imply different calendars.",
+      "acceptance_test": "Pass if a reader can reconcile the named interval with the chapter's own timestamps at snapshots/cycle_02/chapters/chapter_15.md:19 and the Saturday references at snapshots/cycle_02/chapters/chapter_15.md:13-15 without doing timeline repair. Fail if snapshots/cycle_02/chapters/chapter_15.md:5 still overcounts the gap between the first response and the second."
+    },
+    {
+      "finding_id": "CH15_RECAP_CERTIFICATION_LOOP",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_02/chapters/chapter_15.md:111; snapshots/cycle_02/chapters/chapter_15.md:121; snapshots/cycle_02/chapters/chapter_15.md:151; snapshots/cycle_02/chapters/chapter_15.md:353; snapshots/cycle_02/chapters/chapter_15.md:391; snapshots/cycle_02/chapters/chapter_15.md:395",
+      "problem": "The dock scene already lands the key inference that Cliff was staged and likely held under, but the chapter then keeps re-certifying that conclusion in notebook prose and summary language instead of converting it into fresh pressure. The result is a pursuit chapter that pauses to explain itself twice in the middle and once again after the audio beat, softening momentum precisely when the engine should be tightening around Tommy.",
+      "rewrite_direction": "Compress or merge the synthesis that begins at snapshots/cycle_02/chapters/chapter_15.md:151 and the case-note recap that begins at snapshots/cycle_02/chapters/chapter_15.md:353 so only one explicit staging summary remains before the phone playback. After the audio turn at snapshots/cycle_02/chapters/chapter_15.md:373, replace the written paraphrase at snapshots/cycle_02/chapters/chapter_15.md:393 with a tactical consequence on page: a question, order, movement, or suspect-focused decision that changes the chapter's state.",
+      "acceptance_test": "Pass if the revised chapter contains only one full recap of the staged-drowning theory between snapshots/cycle_02/chapters/chapter_15.md:111 and snapshots/cycle_02/chapters/chapter_15.md:388, and the material after snapshots/cycle_02/chapters/chapter_15.md:389 ends on a changed tactical situation rather than another notebook restatement of what the reader just heard. Fail if both recap blocks starting at snapshots/cycle_02/chapters/chapter_15.md:151 and snapshots/cycle_02/chapters/chapter_15.md:353 still stand as separate summaries or if the closing beat remains a written certification of the audio."
+    },
+    {
+      "finding_id": "CH15_TELEGRAPHIC_FRAGMENT_TIC",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_02/chapters/chapter_15.md:9; snapshots/cycle_02/chapters/chapter_15.md:23; snapshots/cycle_02/chapters/chapter_15.md:75; snapshots/cycle_02/chapters/chapter_15.md:99; snapshots/cycle_02/chapters/chapter_15.md:100; snapshots/cycle_02/chapters/chapter_15.md:133",
+      "problem": "Mallick's hard-register narration keeps collapsing into stand-alone noun stacks and verbless tags: wardrobe inventory, character labels, and evidence labels rendered as shorthand rather than finished prose. One or two would read as controlled compression; repeated across the chapter, they become a mechanical tic and run straight into the constitution's ban on elliptical clipping in narration.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_15.md:9, snapshots/cycle_02/chapters/chapter_15.md:23, snapshots/cycle_02/chapters/chapter_15.md:75, snapshots/cycle_02/chapters/chapter_15.md:99, snapshots/cycle_02/chapters/chapter_15.md:100, and snapshots/cycle_02/chapters/chapter_15.md:133, keep the brisk Mallick rhythm but convert the noun-pile shorthand into grammatically complete narration. Vary at least some of those beats with sensory or evaluative detail so the chapter sounds deliberate rather than auto-generated terse.",
+      "acceptance_test": "Pass if the cited beats can be read aloud without the reader having to silently supply omitted subjects or verbs, and if stand-alone fragments such as the clothing list, the deputy label, and the shoe labels no longer remain as isolated sentence units at those lines. Fail if three or more of the cited spots still use bare noun-fragment sentences as their final form."
+    }
+  ],
+  "summary": "The chapter earns a dialogue pass: Mallick, Nate, Joel, Tommy, and Doug stay locally distinct under pressure, and the no-casserole version of Mallick is immediately legible. It still fails award, craft, and prose on this pass because the opening overcounts the timeline, the investigation keeps restating deductions the dock scene has already landed, and the narration leans on telegraphic fragment shorthand often enough to read as a tic instead of controlled compression."
+}

@@ -1,0 +1,62 @@
+{
+  "chapter_id": "chapter_01",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH1_CRAFT_CONTINUITY_VIAGRA_SETUP",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:191; snapshots/cycle_01/chapters/chapter_01.md:213; snapshots/cycle_01/chapters/chapter_01.md:221",
+      "problem": "The chapter contradicts the canonical setup for the Viagra evidence. On the page Tommy gives Martin a bag containing four pills on Thursday night and Martin pockets the whole bag immediately, but the continuity sheet and chapter-boundary setup establish a single-pill Friday-evening gag beat. That changes the timing, quantity, and object state that later chapters rely on when Tommy panics about the pills in Martin's room.",
+      "rewrite_direction": "Rework snapshots/cycle_01/chapters/chapter_01.md:191, snapshots/cycle_01/chapters/chapter_01.md:213, and snapshots/cycle_01/chapters/chapter_01.md:221 so the on-page action matches the canonical setup: either move the actual handoff to Friday evening and make it a single-pill joke, or keep Thursday as verbal teasing and reserve the physical pill beat for the later night. If that change alters Nate's recollection, also adjust snapshots/cycle_01/chapters/chapter_01.md:305 and snapshots/cycle_01/chapters/chapter_01.md:409 to stay consistent.",
+      "acceptance_test": "Pass only if a reader of the revised chapter can state, from the text itself, that Tommy gives Martin one Viagra pill on Friday night rather than a four-pill bag on Thursday, and no later line in the chapter preserves the old contradictory object state."
+    },
+    {
+      "finding_id": "CH1_CRAFT_CONTINUITY_RECORDER_GEOGRAPHY",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:307",
+      "problem": "The recorder location is spatially impossible. Nate is in the basement, but the line says the phone and mic are in the kitchen \"three floors up.\" The continuity sheet establishes a three-level house with the kitchen on the main floor, so the kitchen is one level above the basement, not three. Because the recording is seeded as later evidence, this kind of geography error is high-cost.",
+      "rewrite_direction": "Correct snapshots/cycle_01/chapters/chapter_01.md:307 so the recorder's position matches the established house layout and the implied sound path stays plausible. If Nate is on the basement cot, the recorder should be described as on the main-floor kitchen counter, one floor up, or in another specifically named location that fits the geography.",
+      "acceptance_test": "Pass only if the revised snapshots/cycle_01/chapters/chapter_01.md:307 lets a cold reader map Nate in the basement and the recorder in the kitchen without any floor-count contradiction; the line must name a spatial relationship that matches the established three-level house."
+    },
+    {
+      "finding_id": "CH1_CRAFT_CLIFF_DEBT_SETUP_TOO_COY",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:251; snapshots/cycle_01/chapters/chapter_01.md:255",
+      "problem": "Cliff's money beat is too euphemistic to cleanly land the required setup that Martin owes him consequential money. \"Close out our position on the Burnsville thing\" and \"try to collect on the other end\" sound plausibly Cliff-ish, but the page never cashes out the business static into a legible debt or stalled payout. Later motive depends on that pressure reading as real, not just vaguely transactional.",
+      "rewrite_direction": "Sharpen snapshots/cycle_01/chapters/chapter_01.md:251 and snapshots/cycle_01/chapters/chapter_01.md:255 so Cliff still sounds like Cliff but the reader can tell, in this scene, that Martin has been sitting on money or an unresolved real-estate exposure Cliff needs resolved. One explicit clause, one sharper ask, or one Nate observation is enough, as long as it converts the euphemism into legible stakes.",
+      "acceptance_test": "Pass only if, by the end of the Burnsville exchange in snapshots/cycle_01/chapters/chapter_01.md:251 and snapshots/cycle_01/chapters/chapter_01.md:255, a cold reader can answer \"What does Martin owe Cliff?\" with something more specific than \"some business issue\" and can tell that the unresolved money matters now."
+    },
+    {
+      "finding_id": "CH1_CRAFT_DISCOVERY_TRIGGER_UNDERSEEDED",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:415; snapshots/cycle_01/chapters/chapter_01.md:423",
+      "problem": "The annual five-dollar side bet appears for the first time at the exact moment the plot needs Nate to go upstairs, so the discovery trigger reads as a convenience insertion rather than as previously established behavior. Because Martin's body discovery is the chapter's major turn, the access mechanism needs setup the reader can recall instead of brand-new information delivered on the threshold.",
+      "rewrite_direction": "Seed the late-night bet ritual or another specific Nate-to-Martin errand earlier in the chapter, then let snapshots/cycle_01/chapters/chapter_01.md:415 and snapshots/cycle_01/chapters/chapter_01.md:423 pay that setup off. The cleanest places to plant it are in the arrival banter at snapshots/cycle_01/chapters/chapter_01.md:11, the post-draft wind-down at snapshots/cycle_01/chapters/chapter_01.md:175, or the pre-bed exchange at snapshots/cycle_01/chapters/chapter_01.md:399.",
+      "acceptance_test": "Pass only if, before Nate goes upstairs in snapshots/cycle_01/chapters/chapter_01.md:417, the revised chapter has already established on page that he and Martin customarily settle the last-place bet late at night or that Nate has another concrete, previously introduced reason to look for him. When the body-discovery beat arrives, the reader should be recalling a setup rather than learning it for the first time."
+    },
+    {
+      "finding_id": "CH1_PROSE_CLIPPED_NARRATION_TIC",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:17; snapshots/cycle_01/chapters/chapter_01.md:165; snapshots/cycle_01/chapters/chapter_01.md:417; snapshots/cycle_01/chapters/chapter_01.md:433",
+      "problem": "The narration keeps defaulting to clipped fragment stacks as an emphasis device: \"Big hands.\" \"No vote. No debate. No appeal.\" \"Basement stairs, main stairs...\" \"Warm and absolutely still.\" In isolated use this can hit, but at chapter frequency it becomes a mechanical prose habit and runs against the constitution's explicit ban on clipped narration.",
+      "rewrite_direction": "Recast the fragment-heavy beats at snapshots/cycle_01/chapters/chapter_01.md:17, snapshots/cycle_01/chapters/chapter_01.md:165, snapshots/cycle_01/chapters/chapter_01.md:417, and snapshots/cycle_01/chapters/chapter_01.md:433 into grammatically complete sentences or into a single clearly intentional fragment surrounded by complete syntax. Keep the pace and force, but stop using telegraphic shorthand as the default punch mechanism in those local passages.",
+      "acceptance_test": "Pass only if the revised cited passages still land the same beats — Martin's physical presence, Martin's authority, Nate's climb upstairs, and the shock of touching the body — while reading as complete prose rather than fragment stacks. In those four local beats, a reader should not hit more than one intentionally clipped narration fragment before the syntax resolves into full sentences."
+    }
+  ],
+  "summary": "FAIL. The chapter has live banter, clear voice separation, and it hits most of the required group-dynamics beats, but it does not clear pass-level craft because two seeded facts break continuity outright and two key setup mechanisms arrive too late or too coyly to do their structural work cleanly. The prose also leans on clipped narration often enough to become a chapter-level tic. Dialogue is the strongest lens here; craft and prose are not yet at award-shortlist standard."
+}

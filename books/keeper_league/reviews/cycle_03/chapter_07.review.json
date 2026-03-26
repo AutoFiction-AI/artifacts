@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_07",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH07_CONTINUITY_CASSEROLE_STATE",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_03/chapters/chapter_07.md:23",
+      "problem": "The kitchen inventory places Mallick's foil-covered casserole out on the counter Saturday morning, but the continuity sheet establishes that the casserole remains untouched in Martin's refrigerator until Mallick leaves with it. That is a canonical object-state contradiction, not a texture detail.",
+      "rewrite_direction": "Revise the kitchen beat at snapshots/cycle_03/chapters/chapter_07.md:23 so the coffee setup and onion-and-cheese smell do not require the casserole to be physically out on the counter. Keep the domestic-disruption texture, but either locate the casserole in Martin's refrigerator or remove it from the visible counter inventory entirely.",
+      "acceptance_test": "Pass if the revised kitchen passage at snapshots/cycle_03/chapters/chapter_07.md:23 no longer shows the foil-covered casserole sitting in or being moved around the kitchen before Mallick departs. Fail if a reader can still infer from snapshots/cycle_03/chapters/chapter_07.md:23 that the casserole was already out on the counter Saturday morning."
+    },
+    {
+      "finding_id": "CH07_PROSE_CLIPPED_FRAGMENT_TIC",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_03/chapters/chapter_07.md:3; snapshots/cycle_03/chapters/chapter_07.md:5; snapshots/cycle_03/chapters/chapter_07.md:7; snapshots/cycle_03/chapters/chapter_07.md:15; snapshots/cycle_03/chapters/chapter_07.md:217; snapshots/cycle_03/chapters/chapter_07.md:293; snapshots/cycle_03/chapters/chapter_07.md:307",
+      "problem": "The narration repeatedly leans on clipped stand-alone fragments such as \"Unnecessary.\", \"Lexapro first.\", \"Dry swallow.\", \"Ativan next.\", \"Not because of evidence.\", \"No soft landing.\", \"Pull-outs. Folded blankets. Laundry closet.\", and \"Tiny sound.\" to manufacture terseness. In this chapter, that pattern reads as a recurring prose tic and collides with the constitution's ban on function-word stripping and elliptical clipping in narration.",
+      "rewrite_direction": "Rework the fragment clusters centered at snapshots/cycle_03/chapters/chapter_07.md:3, snapshots/cycle_03/chapters/chapter_07.md:5, snapshots/cycle_03/chapters/chapter_07.md:7, snapshots/cycle_03/chapters/chapter_07.md:15, snapshots/cycle_03/chapters/chapter_07.md:217, snapshots/cycle_03/chapters/chapter_07.md:293, and snapshots/cycle_03/chapters/chapter_07.md:307 into grammatically complete sentences or clauses while preserving Doug's compressed perception. Keep the pressure and pace of the pill routine, the shame motive, Martin's blunt memory, and the basement scan, but stop relying on bare noun or adjective fragments as the prose engine.",
+      "acceptance_test": "Pass if the revised passages at snapshots/cycle_03/chapters/chapter_07.md:3, snapshots/cycle_03/chapters/chapter_07.md:5, snapshots/cycle_03/chapters/chapter_07.md:7, snapshots/cycle_03/chapters/chapter_07.md:15, snapshots/cycle_03/chapters/chapter_07.md:217, snapshots/cycle_03/chapters/chapter_07.md:293, and snapshots/cycle_03/chapters/chapter_07.md:307 still read terse and close to Doug while no sentence in those spots depends on an omitted subject, article, or verb for force. Fail if those same beats still use stand-alone narration fragments as their main rhythmic device."
+    }
+  ],
+  "summary": "The chapter lands Doug's vulnerability, witness acuity, and Mallick pressure cleanly enough that the dialogue itself stays inside the style bible. It still fails review because a high-visibility continuity error breaks canonical object state, and the prose repeatedly falls back on constitution-forbidden clipped fragments instead of fully controlled compression."
+}

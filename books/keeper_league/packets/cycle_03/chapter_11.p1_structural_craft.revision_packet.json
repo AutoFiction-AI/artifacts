@@ -1,0 +1,140 @@
+{
+  "acceptance_targets": [
+    "[CH11_CONTINUITY_HOUSE_LAYOUT] Pass if a cold read of snapshots/cycle_03/chapters/chapter_11.md:11 through snapshots/cycle_03/chapters/chapter_11.md:35 leaves Nate and Doug as the basement roommates, places Paul and Joel in a canon-consistent sleeping arrangement, and makes Paul clearly change floors between Martin's bedroom and the study. Fail if Paul and Joel still 'take the basement beds' without explanation or if the study still reads as a same-hall room off Martin's upstairs bedroom.",
+    "[F-01] The emotion is legible through Paul's behavior, physical sensation, or character-specific vocabulary before any abstract label appears. If 'jealousy' or 'indignation' still appear, they arrive after the reader has already felt the feeling through specific detail.",
+    "[P-05_chapter_11] Line 3297's 'the kind of thing' formulation is replaced with a specific, character-voiced observation. No two instances of the construction appear within 100 lines.",
+    "[RED-08] Ch 11 no longer contains an editorial comment about Martin buying expensive clothing to appear casual.",
+    "[RED-19] Ch 11 contains only one version of the 'Martin organized even his [death/absence]' observation.",
+    "[RED-28] Ch 11 contains fewer than 26 sentences beginning with 'He'."
+  ],
+  "chapter_id": "chapter_11",
+  "cycle": 3,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if a cold read of snapshots/cycle_03/chapters/chapter_11.md:11 through snapshots/cycle_03/chapters/chapter_11.md:35 leaves Nate and Doug as the basement roommates, places Paul and Joel in a canon-consistent sleeping arrangement, and makes Paul clearly change floors between Martin's bedroom and the study. Fail if Paul and Joel still 'take the basement beds' without explanation or if the study still reads as a same-hall room off Martin's upstairs bedroom.",
+      "chapter_id": "chapter_11",
+      "cycle": 3,
+      "evidence": "snapshots/cycle_03/chapters/chapter_11.md:11; snapshots/cycle_03/chapters/chapter_11.md:17; snapshots/cycle_03/chapters/chapter_11.md:35",
+      "finding_id": "CH11_CONTINUITY_HOUSE_LAYOUT",
+      "problem": "The chapter drifts off the continuity sheet's house map in two operationally important places. Line 11 says Paul and Joel took the basement pullouts even though the continuity sheet establishes Nate and Doug as the basement roommates, and lines 17 and 35 have Paul go upstairs to Martin's room and then reach the study by simply going down the hall even though the study is canonically a ground-floor office. Because this chapter's central turn depends on a believable search path to the safe, the geography error reads as a real continuity break, not a harmless staging blur.",
+      "rewrite_direction": "Revise snapshots/cycle_03/chapters/chapter_11.md:11 so Paul and Joel sleep in a canon-consistent location, and revise the movement around snapshots/cycle_03/chapters/chapter_11.md:17 and snapshots/cycle_03/chapters/chapter_11.md:35 so Paul must transition from the upper floor to the ground floor before entering Martin's study. Keep Nate and Doug as the basement sleepers unless you add an explicit on-page explanation that reconciles the swap with the established house use.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "The emotion is legible through Paul's behavior, physical sensation, or character-specific vocabulary before any abstract label appears. If 'jealousy' or 'indignation' still appear, they arrive after the reader has already felt the feeling through specific detail.",
+      "chapter_id": "chapter_11",
+      "cycle": 3,
+      "evidence": "Line 3235: 'What arrived was not grief. Grief he could have handled... What arrived instead was flatter and more humiliating: jealousy. His best friend of twenty-five years had been dead four days, and Paul\u2019s first response to the will was the petty, undeniable indignation of a man who had been assuming, for a quarter century, that he was Martin\u2019s person.'",
+      "finding_id": "F-01",
+      "problem": "Paul's emotional response to the will is introduced through abstract emotion-naming ('jealousy,' 'indignation') rather than embodied sensation. The style bible profiles Paul as using concrete, risk-assessment vocabulary internally ('exposure,' 'adjust,' 'total loss'). While the passage recovers with 250 lines of specific memories and observations that embody the feeling, the entry point names the emotion before rendering it, inverting the prose's own principle of showing before telling. Additionally, the opening construction ('What arrived was not grief... What arrived instead') uses the P-03 corrective template, compounding two issues in a single passage.",
+      "rewrite_direction": "Open with the physical or behavioral manifestation of the jealousy \u2014 Paul's hands on the armrest, his re-reading of the specific line naming Tommy, the involuntary mental inventory of his own contributions \u2014 before any abstract label appears. The insurance vocabulary could do the work: Paul feeling 'adjusted down' or registering 'total loss' in the language his brain naturally reaches for. If 'jealousy' must appear, let it arrive after at least two sentences of embodied rendering, as discovery rather than announcement.",
+      "severity": "LOW",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Line 3297's 'the kind of thing' formulation is replaced with a specific, character-voiced observation. No two instances of the construction appear within 100 lines.",
+      "chapter_id": "chapter_11",
+      "cycle": 3,
+      "evidence": "Line 3235: 'the kind of feeling that should have made him quieter.' Line 3297: 'the kind of thing that happened in long-running friend groups.'",
+      "finding_id": "P-05_chapter_11",
+      "problem": "Two instances within 62 lines, both in Paul's POV. Line 3297 is the weaker instance \u2014 'the kind of thing that happened in long-running friend groups' is vague and generic, the sort of observation that could appear in any novel about any group of people. It lacks the specificity the constitution demands.",
+      "rewrite_direction": "Cut 3297 entirely or replace with a Paul-specific observation: a comparison to claims he's adjusted, a specific memory of the group absorbing a previous shock. Line 3235 can stand if P-03's correction removes the 'not X but Y' frame that wraps it \u2014 without the corrective scaffolding, the type-calibration is less visible.",
+      "severity": "LOW",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch 11 no longer contains an editorial comment about Martin buying expensive clothing to appear casual.",
+      "chapter_id": "chapter_11",
+      "cycle": 3,
+      "evidence": "Ch 1 line 19: 'a flannel that cost a hundred and fifty dollars and looked like it cost twelve, which was Martin's whole approach to possessions.' Ch 11 line 3177: 'three polo shirts, the expensive kind Martin bought to look casual, as if a sixty-dollar polo was casual.'",
+      "finding_id": "RED-08",
+      "problem": "Martin's expensive-but-casual clothing trait is established in Ch 1 and re-described in Ch 11 with the same structural observation: price + ironic note about casualness.",
+      "rewrite_direction": "In Ch 11, keep the polo shirts as inventory but cut the editorial gloss about buying expensive things to look casual. The polos can exist without re-teaching Martin's consumption philosophy.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch 11 contains only one version of the 'Martin organized even his [death/absence]' observation.",
+      "chapter_id": "chapter_11",
+      "cycle": 3,
+      "evidence": "Ch 11 line 3213: 'Martin was organized even in death.' Ch 11 line 3245: 'Martin had organized even his absence.' Same sentence, same chapter, 32 lines apart.",
+      "finding_id": "RED-19",
+      "problem": "Martin's controlling/organizing baseline is stated twice in near-identical phrasing within 32 lines of Ch 11. 'Organized even in death' and 'organized even his absence' are the same observation.",
+      "rewrite_direction": "Cut one of the two. Keep whichever better serves the surrounding paragraph's emotional arc (3245 is stronger because it connects to Paul's anger about the will).",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch 11 contains fewer than 26 sentences beginning with 'He'.",
+      "chapter_id": "chapter_11",
+      "cycle": 3,
+      "evidence": "Ch 11: 41 sentences beginning with 'He' out of 371 total sentences = 11.1%. Manuscript-wide 'He' rate: 6.44%.",
+      "finding_id": "RED-28",
+      "problem": "Ch 11 (Paul POV) opens 11.1% of its sentences with 'He' \u2014 the second-worst chapter rate. Combined with Ch 17 (also Paul POV at 12.0%), Paul's chapters are the primary driver of 'He'-opener monotony.",
+      "rewrite_direction": "Vary at least 15 of the 41 'He' openers in Ch 11. Target bringing the chapter below 7% (max 25 'He' openers).",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "5536f10dfa321ad45a2f0b8beb736a72d7051aee574f7dd0de7fadfd4479c717",
+  "must_fix_count": 6,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "The comedy is the creative risk and the creative achievement. These are men in their late forties who talk the way men in their late forties talk when there are no women present and the drinks have been flowing for hours: crude, raunchy, profane, sexually explicit, casually cruel, and occasionally accidentally beautiful. Do not clean this up. Do not soften the language. Do not make them witty where they would be vulgar. Do not make them eloquent where they would be clumsy. The profanity is not decoration \u2014 it is the texture of the friendship. When the second death breaks the comic register, the absence of that profane warmth should feel like a loss, not a relief. The murder, when it arrives, should be rendered with physical specificity \u2014 the water, the struggle, the sounds. The grief should be specific. The shame should be specific. The twenty-two-year-old guilt should be embodied, not summarized. If a scene makes the writer uncomfortable, that is a signal to stay in it longer, not to cut away.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Every euphemism for death, sex, bodily function, emotional state, or financial desperation must be replaced with the direct term or a character-specific avoidance that itself reveals something about the character. Cliff saying 'restructure' when he means 'I'm broke' is character work. The narrator describing Cliff as 'facing financial challenges' is sanitization.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the absolute norm. These are informal men in their late forties who have been friends for twenty-five years. Uncontracted forms should appear only for deliberate emphasis, Joel's occasional legal precision, or Mallick's public-persona overcorrection. If two consecutive lines of dialogue contain uncontracted forms and neither character has a stated reason for formality, at least one is wrong.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "No two consecutive chapters should have the same structural rhythm. After a dialogue-heavy chapter, lead the next with interiority or description. After an interview chapter, give the reader a memory or a quiet observation. After a comic set piece, let the next chapter breathe. The scene counts vary (2-3) and should feel varied \u2014 a two-scene chapter after a three-scene chapter creates natural pacing shift. The tonal break at Chapter 14 should feel like a gear change, not a gradual dimming.",
+      "diction": "Muscular, specific, unpretentious. No literary posturing. The prose should sound like intelligent conversation, not workshopped fiction. Prefer concrete nouns over abstract ones. Prefer active constructions. Avoid decorative metaphor \u2014 when a metaphor appears, it should be load-bearing. The comedy demands precision: funny is specific, and vague is never funny.",
+      "forbidden_drift_patterns": [
+        "Prestige-literary inflation \u2014 do not elevate the comic register into literary solemnity. A man flushing Viagra while a detective knocks on the door is funny. The prose should be funny. Do not describe it as if it were a scene from Dostoevsky.",
+        "Comedic exhaustion \u2014 do not let every paragraph contain a joke. Comedy needs rhythm, which means it needs non-comic beats to land against. Let some paragraphs be straightforwardly descriptive or emotional.",
+        "Interior monologue sprawl \u2014 close third is not stream of consciousness. The POV character's interiority should be selective and purposeful, not an open channel of every thought.",
+        "Simultaneous narration \u2014 do not describe characters 'simultaneously' feeling multiple things. Choose the dominant feeling and let the undertone be implicit.",
+        "Forensic procedure porn \u2014 this is not a police procedural. Keep investigation details specific but brief. The comedy and character are the vehicle, not the forensics.",
+        "Metaphor creep \u2014 do not let the same metaphor template appear more than twice in a chapter. If you've used a sports metaphor, a water metaphor, and a fire metaphor, check that none of them are doing the same structural work."
+      ],
+      "narrative_distance": "Close third person, rotating POV. Each chapter is locked to one character's interiority. No omniscient intrusions. The prose should take on the coloring of the POV character without becoming parody \u2014 Nate's chapters move faster and list more, Doug's chapters are quieter and more observational, Mallick's chapters shift between her two registers.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Conversational propulsion, not literary drift. The prose should move like someone telling you this story \u2014 not rushed, but never self-admiring. Vary sentence length aggressively: long compound sentences for the comic set pieces, short declarative hits for the turns. The humor lives in rhythm as much as content \u2014 the timing of a punchline is a prose-level decision.",
+      "sensory_bias": [
+        "auditory \u2014 conversations, lake sounds, house creaks, the specific silence of a house where someone died",
+        "proprioceptive \u2014 hangovers, physical discomfort, adrenaline, the specific sensation of a body that hasn't slept",
+        "olfactory \u2014 booze, lake water, morning coffee, the basement must, the casserole"
+      ]
+    }
+  }
+}

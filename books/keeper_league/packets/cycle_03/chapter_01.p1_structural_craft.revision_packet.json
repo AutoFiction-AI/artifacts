@@ -1,0 +1,140 @@
+{
+  "acceptance_targets": [
+    "[CRAFT_CONTINUITY_VOICEMAIL_TIME] Pass if a reader of snapshots/cycle_03/chapters/chapter_01.md:473 through snapshots/cycle_03/chapters/chapter_01.md:489 can tell that Nate already left the voicemail hours before the body discovery, with no language anchoring the message to 'one-thirty' or 'quarter to two'; fail if the voicemail still appears to be left immediately before Nate goes upstairs.",
+    "[CRAFT_CONTINUITY_DISCOVERY_STATE] Pass if the body and room description in snapshots/cycle_03/chapters/chapter_01.md:491 through snapshots/cycle_03/chapters/chapter_01.md:515 can roll directly into the chapter_02 boundary excerpt without the reader having to imagine an unseen repositioning or unseen light change; fail if Martin is still on his back, with the wrong hand exposed, or in a dark room when Nate exits.",
+    "[CRAFT_SETUP_VIAGRA_OBJECT_STATE] Pass if a cold reader of snapshots/cycle_03/chapters/chapter_01.md:425 through snapshots/cycle_03/chapters/chapter_01.md:445 can tell that Martin ends the scene with access to more than one sildenafil pill while the dialogue still reads as a crude joke, not ominous setup; fail if the scene still implies there was only ever one pill in play.",
+    "[P-02_chapter_01] Both instances remain. They should feel like sensory discovery, not the first two entries in a count.",
+    "[RED-21] Ch 1 contains no more than 3 references to the refrigerator.",
+    "[RED-23] Ch 1 contains no more than 4 references to scotch or Lagavulin."
+  ],
+  "chapter_id": "chapter_01",
+  "cycle": 3,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if a reader of snapshots/cycle_03/chapters/chapter_01.md:473 through snapshots/cycle_03/chapters/chapter_01.md:489 can tell that Nate already left the voicemail hours before the body discovery, with no language anchoring the message to 'one-thirty' or 'quarter to two'; fail if the voicemail still appears to be left immediately before Nate goes upstairs.",
+      "chapter_id": "chapter_01",
+      "cycle": 3,
+      "evidence": "snapshots/cycle_03/chapters/chapter_01.md:475; snapshots/cycle_03/chapters/chapter_01.md:481; snapshots/cycle_03/chapters/chapter_01.md:483",
+      "finding_id": "CRAFT_CONTINUITY_VOICEMAIL_TIME",
+      "problem": "The chapter explicitly timestamps Nate's voicemail around 1:45 AM ('One-thirty' followed by 'At quarter to two'), but the continuity sheet canon locks that voicemail to 8:47 PM Friday. Because the voicemail later matters as evidence, this is a hard timeline contradiction rather than flexible scene texture.",
+      "rewrite_direction": "Revise snapshots/cycle_03/chapters/chapter_01.md:473, snapshots/cycle_03/chapters/chapter_01.md:481, and snapshots/cycle_03/chapters/chapter_01.md:487 so Nate's comic voicemail is clearly a Friday-evening beat consistent with the canonical 8:47 PM timestamp, while the after-midnight decision to go upstairs becomes a separate later action. Preserve Nate's guilt about the message, but do not time-stamp the voicemail itself as a quarter-to-two call.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if the body and room description in snapshots/cycle_03/chapters/chapter_01.md:491 through snapshots/cycle_03/chapters/chapter_01.md:515 can roll directly into the chapter_02 boundary excerpt without the reader having to imagine an unseen repositioning or unseen light change; fail if Martin is still on his back, with the wrong hand exposed, or in a dark room when Nate exits.",
+      "chapter_id": "chapter_01",
+      "cycle": 3,
+      "evidence": "snapshots/cycle_03/chapters/chapter_01.md:491; snapshots/cycle_03/chapters/chapter_01.md:499; snapshots/cycle_03/chapters/chapter_01.md:501; snapshots/cycle_03/chapters/chapter_01.md:511; snapshots/cycle_03/chapters/chapter_01.md:513; snapshots/cycle_03/chapters/chapter_01.md:515",
+      "finding_id": "CRAFT_CONTINUITY_DISCOVERY_STATE",
+      "problem": "This discovery handoff no longer matches the canonical state carried into the next chapter. Here Nate enters a dark room, finds Martin on his back, notices the left hand on top of the blanket, and lifts and replaces that hand. The boundary pack and continuity sheet require Paul to encounter a lit room and a body already on Martin's left side, facing the window, with the right hand hanging off the mattress. Because chapter_02 begins seconds later, the mismatch is a hard continuity contradiction.",
+      "rewrite_direction": "Revise snapshots/cycle_03/chapters/chapter_01.md:491, snapshots/cycle_03/chapters/chapter_01.md:499, snapshots/cycle_03/chapters/chapter_01.md:501, snapshots/cycle_03/chapters/chapter_01.md:511, and snapshots/cycle_03/chapters/chapter_01.md:513 so Nate's first look at Martin matches the carried-forward state: visible light from the room, body oriented left-side and window-facing, right hand off the mattress. If Nate touches Martin in snapshots/cycle_03/chapters/chapter_01.md:507 or snapshots/cycle_03/chapters/chapter_01.md:513, keep that contact from materially repositioning the body unless the text explicitly shows the change before Nate goes to Paul.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if a cold reader of snapshots/cycle_03/chapters/chapter_01.md:425 through snapshots/cycle_03/chapters/chapter_01.md:445 can tell that Martin ends the scene with access to more than one sildenafil pill while the dialogue still reads as a crude joke, not ominous setup; fail if the scene still implies there was only ever one pill in play.",
+      "chapter_id": "chapter_01",
+      "cycle": 3,
+      "evidence": "snapshots/cycle_03/chapters/chapter_01.md:425; snapshots/cycle_03/chapters/chapter_01.md:429; snapshots/cycle_03/chapters/chapter_01.md:431; snapshots/cycle_03/chapters/chapter_01.md:443",
+      "finding_id": "CRAFT_SETUP_VIAGRA_OBJECT_STATE",
+      "problem": "The Friday-night gag is framed as one loose pill only ('a single blue pill,' 'Is that one Viagra?', 'One Viagra'), but the continuity sheet's object state and later plot logic require a four-pill sample pack in Martin's room with three pills still available to be flushed later. As written, the setup is too thin and slightly misleading for a later evidence chain the story depends on.",
+      "rewrite_direction": "Revise snapshots/cycle_03/chapters/chapter_01.md:425, snapshots/cycle_03/chapters/chapter_01.md:431, and snapshots/cycle_03/chapters/chapter_01.md:443 so the joke still lands as Tommy razzing Martin about a pill, but the on-page prop makes it legible that Tommy is handing over or leaving a small multi-pill sample or blister pack rather than the chapter's only pill. Keep the beat light and medically unforeshadowed.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Both instances remain. They should feel like sensory discovery, not the first two entries in a count.",
+      "chapter_id": "chapter_01",
+      "cycle": 3,
+      "evidence": "Line 309: 'The refrigerator cycled on somewhere above him.' Line 513: 'The refrigerator hummed somewhere below him.'",
+      "finding_id": "P-02_chapter_01",
+      "problem": "Two instances in the opening chapter. Both work atmospherically \u2014 the first marks the quiet after friends disperse, the second accompanies Nate's discovery of Martin. The spatial inversion (above/below) does genuine character work. These are the strongest early uses and should be preserved.",
+      "rewrite_direction": "Keep both. These establish the motif and ground the house as a body with mechanical organs. They set the reader's ear for the sound without yet feeling repetitive.",
+      "severity": "MEDIUM",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch 1 contains no more than 3 references to the refrigerator.",
+      "chapter_id": "chapter_01",
+      "cycle": 3,
+      "evidence": "Manuscript-wide: 'refrigerator' or 'fridge' appears 58 times. Ch 1 has 7 instances. The fridge-as-ambient-sound motif starts strong in Ch 1 and never lets up.",
+      "finding_id": "RED-21",
+      "problem": "Ch 1 introduces the refrigerator 7 times, establishing it as a too-prominent environmental element from the start. Target is 8-10 instances manuscript-wide, so Ch 1 alone uses most of the budget.",
+      "rewrite_direction": "Reduce refrigerator mentions in Ch 1 from 7 to 2-3. Keep the strongest atmospheric uses. The fridge can exist without being foregrounded in every kitchen scene.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch 1 contains no more than 4 references to scotch or Lagavulin.",
+      "chapter_id": "chapter_01",
+      "cycle": 3,
+      "evidence": "Manuscript-wide: 'scotch' appears 25 times, 'Lagavulin' 14 times (39 combined, with some overlap on shared lines). Ch 1 has 9 scotch/Lagavulin mentions \u2014 the highest chapter concentration.",
+      "finding_id": "RED-23",
+      "problem": "Martin's scotch is mentioned 9 times in Ch 1 alone, nearly half the target budget for the entire manuscript (8-10 for 20+ occurrences). The Lagavulin brand name and scotch references saturate the opening chapter.",
+      "rewrite_direction": "Reduce scotch/Lagavulin references in Ch 1 from 9 to 3-4. Establish the brand once, the drinking habit once, and use 1-2 in-scene references. The draft-night atmosphere can carry without every scene reminding the reader of the scotch.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "7d37d8f0e4623bd4b47f370073f968211c542f772e0abf98768b062a96b90665",
+  "must_fix_count": 6,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "The comedy is the creative risk and the creative achievement. These are men in their late forties who talk the way men in their late forties talk when there are no women present and the drinks have been flowing for hours: crude, raunchy, profane, sexually explicit, casually cruel, and occasionally accidentally beautiful. Do not clean this up. Do not soften the language. Do not make them witty where they would be vulgar. Do not make them eloquent where they would be clumsy. The profanity is not decoration \u2014 it is the texture of the friendship. When the second death breaks the comic register, the absence of that profane warmth should feel like a loss, not a relief. The murder, when it arrives, should be rendered with physical specificity \u2014 the water, the struggle, the sounds. The grief should be specific. The shame should be specific. The twenty-two-year-old guilt should be embodied, not summarized. If a scene makes the writer uncomfortable, that is a signal to stay in it longer, not to cut away.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Every euphemism for death, sex, bodily function, emotional state, or financial desperation must be replaced with the direct term or a character-specific avoidance that itself reveals something about the character. Cliff saying 'restructure' when he means 'I'm broke' is character work. The narrator describing Cliff as 'facing financial challenges' is sanitization.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the absolute norm. These are informal men in their late forties who have been friends for twenty-five years. Uncontracted forms should appear only for deliberate emphasis, Joel's occasional legal precision, or Mallick's public-persona overcorrection. If two consecutive lines of dialogue contain uncontracted forms and neither character has a stated reason for formality, at least one is wrong.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "No two consecutive chapters should have the same structural rhythm. After a dialogue-heavy chapter, lead the next with interiority or description. After an interview chapter, give the reader a memory or a quiet observation. After a comic set piece, let the next chapter breathe. The scene counts vary (2-3) and should feel varied \u2014 a two-scene chapter after a three-scene chapter creates natural pacing shift. The tonal break at Chapter 14 should feel like a gear change, not a gradual dimming.",
+      "diction": "Muscular, specific, unpretentious. No literary posturing. The prose should sound like intelligent conversation, not workshopped fiction. Prefer concrete nouns over abstract ones. Prefer active constructions. Avoid decorative metaphor \u2014 when a metaphor appears, it should be load-bearing. The comedy demands precision: funny is specific, and vague is never funny.",
+      "forbidden_drift_patterns": [
+        "Prestige-literary inflation \u2014 do not elevate the comic register into literary solemnity. A man flushing Viagra while a detective knocks on the door is funny. The prose should be funny. Do not describe it as if it were a scene from Dostoevsky.",
+        "Comedic exhaustion \u2014 do not let every paragraph contain a joke. Comedy needs rhythm, which means it needs non-comic beats to land against. Let some paragraphs be straightforwardly descriptive or emotional.",
+        "Interior monologue sprawl \u2014 close third is not stream of consciousness. The POV character's interiority should be selective and purposeful, not an open channel of every thought.",
+        "Simultaneous narration \u2014 do not describe characters 'simultaneously' feeling multiple things. Choose the dominant feeling and let the undertone be implicit.",
+        "Forensic procedure porn \u2014 this is not a police procedural. Keep investigation details specific but brief. The comedy and character are the vehicle, not the forensics.",
+        "Metaphor creep \u2014 do not let the same metaphor template appear more than twice in a chapter. If you've used a sports metaphor, a water metaphor, and a fire metaphor, check that none of them are doing the same structural work."
+      ],
+      "narrative_distance": "Close third person, rotating POV. Each chapter is locked to one character's interiority. No omniscient intrusions. The prose should take on the coloring of the POV character without becoming parody \u2014 Nate's chapters move faster and list more, Doug's chapters are quieter and more observational, Mallick's chapters shift between her two registers.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Conversational propulsion, not literary drift. The prose should move like someone telling you this story \u2014 not rushed, but never self-admiring. Vary sentence length aggressively: long compound sentences for the comic set pieces, short declarative hits for the turns. The humor lives in rhythm as much as content \u2014 the timing of a punchline is a prose-level decision.",
+      "sensory_bias": [
+        "auditory \u2014 conversations, lake sounds, house creaks, the specific silence of a house where someone died",
+        "proprioceptive \u2014 hangovers, physical discomfort, adrenaline, the specific sensation of a body that hasn't slept",
+        "olfactory \u2014 booze, lake water, morning coffee, the basement must, the casserole"
+      ]
+    }
+  }
+}

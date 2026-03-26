@@ -1,0 +1,142 @@
+{
+  "acceptance_targets": [
+    "[CH15_TIMELINE_DAYCOUNT] Pass if a reader can reconcile the named interval with the chapter's own timestamps at snapshots/cycle_02/chapters/chapter_15.md:19 and the Saturday references at snapshots/cycle_02/chapters/chapter_15.md:13-15 without doing timeline repair. Fail if snapshots/cycle_02/chapters/chapter_15.md:5 still overcounts the gap between the first response and the second.",
+    "[CH15_RECAP_CERTIFICATION_LOOP] Pass if the revised chapter contains only one full recap of the staged-drowning theory between snapshots/cycle_02/chapters/chapter_15.md:111 and snapshots/cycle_02/chapters/chapter_15.md:388, and the material after snapshots/cycle_02/chapters/chapter_15.md:389 ends on a changed tactical situation rather than another notebook restatement of what the reader just heard. Fail if both recap blocks starting at snapshots/cycle_02/chapters/chapter_15.md:151 and snapshots/cycle_02/chapters/chapter_15.md:353 still stand as separate summaries or if the closing beat remains a written certification of the audio.",
+    "[WOUND_SIDE_CH15] All wound-side references in chapters 14 through 18 must specify the same laterality, confirmed by full-text search for 'temple', 'side of the head', and related wound descriptors.",
+    "[length_chapter_15_min_words] Chapter word count is >= 5000 while preserving heading contract."
+  ],
+  "chapter_id": "chapter_15",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if a reader can reconcile the named interval with the chapter's own timestamps at snapshots/cycle_02/chapters/chapter_15.md:19 and the Saturday references at snapshots/cycle_02/chapters/chapter_15.md:13-15 without doing timeline repair. Fail if snapshots/cycle_02/chapters/chapter_15.md:5 still overcounts the gap between the first response and the second.",
+      "chapter_id": "chapter_15",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_15.md:5; snapshots/cycle_02/chapters/chapter_15.md:19; snapshots/cycle_02/chapters/chapter_15.md:349",
+      "finding_id": "CH15_TIMELINE_DAYCOUNT",
+      "problem": "The opening says this is the second call to the property in four days, but the chapter's own chronology and the continuity sheet place Mallick's first callout on Saturday morning and this one at 11:47 PM Monday, with arrival at 12:13 AM Tuesday. That is not four elapsed days. Because the line is a hard time-count claim in the chapter's setup, it reads as a canon break rather than flavor.",
+      "rewrite_direction": "Revise the elapsed-time phrasing at snapshots/cycle_02/chapters/chapter_15.md:5 so it matches the Saturday-to-Monday-night interval already established in this chapter. If the casserole callback at snapshots/cycle_02/chapters/chapter_15.md:349 keeps an age count, make it use the same counting logic so the opening and the kitchen beat do not imply different calendars.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if the revised chapter contains only one full recap of the staged-drowning theory between snapshots/cycle_02/chapters/chapter_15.md:111 and snapshots/cycle_02/chapters/chapter_15.md:388, and the material after snapshots/cycle_02/chapters/chapter_15.md:389 ends on a changed tactical situation rather than another notebook restatement of what the reader just heard. Fail if both recap blocks starting at snapshots/cycle_02/chapters/chapter_15.md:151 and snapshots/cycle_02/chapters/chapter_15.md:353 still stand as separate summaries or if the closing beat remains a written certification of the audio.",
+      "chapter_id": "chapter_15",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_15.md:111; snapshots/cycle_02/chapters/chapter_15.md:121; snapshots/cycle_02/chapters/chapter_15.md:151; snapshots/cycle_02/chapters/chapter_15.md:353; snapshots/cycle_02/chapters/chapter_15.md:391; snapshots/cycle_02/chapters/chapter_15.md:395",
+      "finding_id": "CH15_RECAP_CERTIFICATION_LOOP",
+      "problem": "The dock scene already lands the key inference that Cliff was staged and likely held under, but the chapter then keeps re-certifying that conclusion in notebook prose and summary language instead of converting it into fresh pressure. The result is a pursuit chapter that pauses to explain itself twice in the middle and once again after the audio beat, softening momentum precisely when the engine should be tightening around Tommy.",
+      "rewrite_direction": "Compress or merge the synthesis that begins at snapshots/cycle_02/chapters/chapter_15.md:151 and the case-note recap that begins at snapshots/cycle_02/chapters/chapter_15.md:353 so only one explicit staging summary remains before the phone playback. After the audio turn at snapshots/cycle_02/chapters/chapter_15.md:373, replace the written paraphrase at snapshots/cycle_02/chapters/chapter_15.md:393 with a tactical consequence on page: a question, order, movement, or suspect-focused decision that changes the chapter's state.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "All wound-side references in chapters 14 through 18 must specify the same laterality, confirmed by full-text search for 'temple', 'side of the head', and related wound descriptors.",
+      "chapter_id": "chapter_15",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:3695; snapshots/cycle_02/FINAL_NOVEL.md:3777",
+      "finding_id": "WOUND_SIDE_CH15",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:3695",
+            "excerpt": "3695: \"Cliff Haywood, forty-eight. Found face-down beside the dock around eleven-thirty. Doug Whitfield pulled him out before we got there. There's a cut on the left side of the head.\"",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:3777",
+            "excerpt": "3777: The split sat on the left temple, a little above and behind the ear, about two inches long. Clean enough to be hard-edge impact. Not rock, not branch. She looked at the railing. Old splinters, weathered gray, nothing fresh. She looked at the bench at the end of the dock. Smooth wood, no blood, no hair, no scrape she trusted.",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          }
+        ],
+        "rewrite_direction": [
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:3695",
+            "excerpt": "3695: \"Cliff Haywood, forty-eight. Found face-down beside the dock around eleven-thirty. Doug Whitfield pulled him out before we got there. There's a cut on the left side of the head.\"",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:3777",
+            "excerpt": "3777: The split sat on the left temple, a little above and behind the ear, about two inches long. Clean enough to be hard-edge impact. Not rock, not branch. She looked at the railing. Old splinters, weathered gray, nothing fresh. She looked at the bench at the end of the dock. Smooth wood, no blood, no hair, no scrape she trusted.",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "problem": "Chapter 15 describes Joel's wound at the 'left temple' (line 3695) and 'left side of the head' (line 3777), contradicting chapter 14's 'right temple' placement. This is the paired finding to WOUND_SIDE_CH14.",
+      "rewrite_direction": "Revise snapshots/cycle_02/FINAL_NOVEL.md:3695; snapshots/cycle_02/FINAL_NOVEL.md:3777. Align with the side chosen for chapter 14. Update lines 3695 and 3777 and any downstream forensic reasoning that depends on wound placement.",
+      "severity": "HIGH",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Chapter word count is >= 5000 while preserving heading contract.",
+      "chapter_id": "chapter_15",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_15.md:1",
+      "finding_id": "length_chapter_15_min_words",
+      "problem": "Chapter is below projected_min_words (3264 < 5000).",
+      "rewrite_direction": "Add causally necessary scene material that strengthens the chapter engine, increases pressure, and lands the planned state shift without filler.",
+      "severity": "HIGH",
+      "source": "length_guardrail",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "has_locator_excerpts": true,
+  "input_snapshot_hash": "e2d6331c6b6c19914bf5bbbc8cb291af13fb474966ba1da3daedcc1964d5d5db",
+  "must_fix_count": 4,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "original_snapshot_file": "snapshots/cycle_02/chapters/chapter_15.md",
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "The comedy is the creative risk and the creative achievement. These are men in their late forties who talk the way men in their late forties talk when there are no women present and the drinks have been flowing for hours: crude, raunchy, profane, sexually explicit, casually cruel, and occasionally accidentally beautiful. Do not clean this up. Do not soften the language. Do not make them witty where they would be vulgar. Do not make them eloquent where they would be clumsy. The profanity is not decoration \u2014 it is the texture of the friendship. When the second death breaks the comic register, the absence of that profane warmth should feel like a loss, not a relief. The murder, when it arrives, should be rendered with physical specificity \u2014 the water, the struggle, the sounds. The grief should be specific. The shame should be specific. The twenty-two-year-old guilt should be embodied, not summarized. If a scene makes the writer uncomfortable, that is a signal to stay in it longer, not to cut away.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Every euphemism for death, sex, bodily function, emotional state, or financial desperation must be replaced with the direct term or a character-specific avoidance that itself reveals something about the character. Cliff saying 'restructure' when he means 'I'm broke' is character work. The narrator describing Cliff as 'facing financial challenges' is sanitization.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the absolute norm. These are informal men in their late forties who have been friends for twenty-five years. Uncontracted forms should appear only for deliberate emphasis, Joel's occasional legal precision, or Mallick's public-persona overcorrection. If two consecutive lines of dialogue contain uncontracted forms and neither character has a stated reason for formality, at least one is wrong.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "No two consecutive chapters should have the same structural rhythm. After a dialogue-heavy chapter, lead the next with interiority or description. After an interview chapter, give the reader a memory or a quiet observation. After a comic set piece, let the next chapter breathe. The scene counts vary (2-3) and should feel varied \u2014 a two-scene chapter after a three-scene chapter creates natural pacing shift. The tonal break at Chapter 14 should feel like a gear change, not a gradual dimming.",
+      "diction": "Muscular, specific, unpretentious. No literary posturing. The prose should sound like intelligent conversation, not workshopped fiction. Prefer concrete nouns over abstract ones. Prefer active constructions. Avoid decorative metaphor \u2014 when a metaphor appears, it should be load-bearing. The comedy demands precision: funny is specific, and vague is never funny.",
+      "forbidden_drift_patterns": [
+        "Prestige-literary inflation \u2014 do not elevate the comic register into literary solemnity. A man flushing Viagra while a detective knocks on the door is funny. The prose should be funny. Do not describe it as if it were a scene from Dostoevsky.",
+        "Comedic exhaustion \u2014 do not let every paragraph contain a joke. Comedy needs rhythm, which means it needs non-comic beats to land against. Let some paragraphs be straightforwardly descriptive or emotional.",
+        "Interior monologue sprawl \u2014 close third is not stream of consciousness. The POV character's interiority should be selective and purposeful, not an open channel of every thought.",
+        "Simultaneous narration \u2014 do not describe characters 'simultaneously' feeling multiple things. Choose the dominant feeling and let the undertone be implicit.",
+        "Forensic procedure porn \u2014 this is not a police procedural. Keep investigation details specific but brief. The comedy and character are the vehicle, not the forensics.",
+        "Metaphor creep \u2014 do not let the same metaphor template appear more than twice in a chapter. If you've used a sports metaphor, a water metaphor, and a fire metaphor, check that none of them are doing the same structural work."
+      ],
+      "narrative_distance": "Close third person, rotating POV. Each chapter is locked to one character's interiority. No omniscient intrusions. The prose should take on the coloring of the POV character without becoming parody \u2014 Nate's chapters move faster and list more, Doug's chapters are quieter and more observational, Mallick's chapters shift between her two registers.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Conversational propulsion, not literary drift. The prose should move like someone telling you this story \u2014 not rushed, but never self-admiring. Vary sentence length aggressively: long compound sentences for the comic set pieces, short declarative hits for the turns. The humor lives in rhythm as much as content \u2014 the timing of a punchline is a prose-level decision.",
+      "sensory_bias": [
+        "auditory \u2014 conversations, lake sounds, house creaks, the specific silence of a house where someone died",
+        "proprioceptive \u2014 hangovers, physical discomfort, adrenaline, the specific sensation of a body that hasn't slept",
+        "olfactory \u2014 booze, lake water, morning coffee, the basement must, the casserole"
+      ]
+    }
+  }
+}

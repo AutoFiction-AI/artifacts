@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_01",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH01_CRAFT_VOICEMAIL_SETUP",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_02/chapters/chapter_01.md:87; snapshots/cycle_02/chapters/chapter_01.md:115; snapshots/cycle_02/chapters/chapter_01.md:305; snapshots/cycle_02/chapters/chapter_01.md:467; snapshots/cycle_02/chapters/chapter_01.md:475; snapshots/cycle_02/chapters/chapter_01.md:481",
+      "problem": "The chapter establishes Nate as a recorder and a man who immediately translates the weekend into podcast material, but it never puts the Friday-night voicemail on the page. The provided continuity sheet makes that voicemail canonical in this chapter, and later plot use depends on it. As written, Nate lies awake thinking in segments, then goes straight upstairs for the loser-bet ritual, so the later deleted-voicemail thread reads like retroactive information rather than a planted seed.",
+      "rewrite_direction": "Add the voicemail beat inside the insomnia sequence around snapshots/cycle_02/chapters/chapter_01.md:467, snapshots/cycle_02/chapters/chapter_01.md:475, and snapshots/cycle_02/chapters/chapter_01.md:481 before Nate opens Martin's door. Best option: Nate, half-drunk and still performing, calls or voice-messages Martin about the draft, says something specific enough to sound ugly in hindsight, then goes upstairs when Martin does not answer. Alternate option: move the voicemail a few beats earlier in the same late-night sequence, but it must be rendered on-page, not implied after the fact.",
+      "acceptance_test": "Pass if the revised late-night sequence around snapshots/cycle_02/chapters/chapter_01.md:467, snapshots/cycle_02/chapters/chapter_01.md:475, and snapshots/cycle_02/chapters/chapter_01.md:481 contains a discrete on-page voicemail or voice message from Nate to Martin about the draft, with enough wording or premise that a cold reader can state why Nate would later want it deleted. Fail if Nate still only records ambient audio, thinks in podcast bits, and then goes upstairs with no separate voicemail action."
+    },
+    {
+      "finding_id": "CH01_PROSE_INTERIORITY_GAP",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_02/chapters/chapter_01.md:105; snapshots/cycle_02/chapters/chapter_01.md:113; snapshots/cycle_02/chapters/chapter_01.md:135; snapshots/cycle_02/chapters/chapter_01.md:153; snapshots/cycle_02/chapters/chapter_01.md:161; snapshots/cycle_02/chapters/chapter_01.md:181",
+      "problem": "The draft runs for more than ten consecutive paragraphs with almost no Nate interiority. In a style-bible close-third Nate chapter, that turns a crucial ensemble-establishing scene into camera coverage: we hear the banter and understand the logistics, but we lose Nate's body, his content-brain, and his unease about the room until the narration re-enters him later. The result is legible but flatter than the chapter's chosen POV can afford.",
+      "rewrite_direction": "Thread Nate-specific interior beats through the draft block centered on snapshots/cycle_02/chapters/chapter_01.md:105, snapshots/cycle_02/chapters/chapter_01.md:113, snapshots/cycle_02/chapters/chapter_01.md:135, snapshots/cycle_02/chapters/chapter_01.md:153, snapshots/cycle_02/chapters/chapter_01.md:161, and snapshots/cycle_02/chapters/chapter_01.md:181. Use selective beats, not blanket commentary: Nate clocking what is good audio, noticing Joel's mood curdle the table, feeling himself slip into performance, or privately reading Martin's authority as comfort or debt. The goal is to keep the scene in Nate rather than to explain the scene from above.",
+      "acceptance_test": "Pass if, in the revised draft sequence spanning snapshots/cycle_02/chapters/chapter_01.md:105 through snapshots/cycle_02/chapters/chapter_01.md:181, no run longer than five consecutive paragraphs goes by without a clear Nate thought, sensation, memory, or self-assessment, and at least three of those beats change how the reader understands the banter. Fail if the scene still reads as extended external coverage with Nate largely absent as consciousness."
+    },
+    {
+      "finding_id": "CH01_PROSE_SCAFFOLD_REPETITION",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_02/chapters/chapter_01.md:3; snapshots/cycle_02/chapters/chapter_01.md:43; snapshots/cycle_02/chapters/chapter_01.md:153; snapshots/cycle_02/chapters/chapter_01.md:263; snapshots/cycle_02/chapters/chapter_01.md:311",
+      "problem": "The chapter repeatedly falls back on the same sentence scaffold: category first, explanation second, usually in a 'the kind of ... that ...' or adjacent 'the one that ...' shape. By the fourth and fifth appearances, the pattern stops feeling like live Nate rhythm and starts reading like reusable prose machinery. It also blunts specificity by telling the reader what class of thing this is before giving the concrete image.",
+      "rewrite_direction": "Recast the flagged sentences at snapshots/cycle_02/chapters/chapter_01.md:3, snapshots/cycle_02/chapters/chapter_01.md:43, snapshots/cycle_02/chapters/chapter_01.md:153, snapshots/cycle_02/chapters/chapter_01.md:263, and snapshots/cycle_02/chapters/chapter_01.md:311 so most of them enter through direct sensory detail, action, or a different clause rhythm. Keep the construction only where it is doing unmistakable comic work; the rest should arrive by a materially different sentence shape.",
+      "acceptance_test": "Pass if the revised chapter contains no more than two uses of this scaffold across the flagged cluster at snapshots/cycle_02/chapters/chapter_01.md:3, snapshots/cycle_02/chapters/chapter_01.md:43, snapshots/cycle_02/chapters/chapter_01.md:153, snapshots/cycle_02/chapters/chapter_01.md:263, and snapshots/cycle_02/chapters/chapter_01.md:311, and the revised sentences no longer share the same category-then-explanation rhythm. Fail if three or more of those beats still use essentially the same construction."
+    },
+    {
+      "finding_id": "CH01_PROSE_ENDCAP_OVERSTATEMENT",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_02/chapters/chapter_01.md:497; snapshots/cycle_02/chapters/chapter_01.md:501; snapshots/cycle_02/chapters/chapter_01.md:503",
+      "problem": "The death reveal already lands on the page through Nate's bodily shock, his inability to perform, and Paul's face changing in the doorway. The closing sentence, 'The weekend was over,' paraphrases a turn the scene has already made legible and replaces the live consequence with an abstract thesis statement.",
+      "rewrite_direction": "Cut or replace the abstract final sentence at snapshots/cycle_02/chapters/chapter_01.md:503. Preserve the force of snapshots/cycle_02/chapters/chapter_01.md:497 and snapshots/cycle_02/chapters/chapter_01.md:501 by ending on an observable consequence instead: Nate's stripped-down speech, Paul's immediate movement, the hallway light, or another concrete beat that keeps the reader inside the shock rather than summarizing it from outside.",
+      "acceptance_test": "Pass if the final line after the material at snapshots/cycle_02/chapters/chapter_01.md:497 and snapshots/cycle_02/chapters/chapter_01.md:501 is a concrete action, image, or spoken fragment, and no sentence in the closing paragraph states the state shift in abstract terms. Fail if the chapter still closes by naming the weekend, ritual, or story as over instead of letting the on-page consequence carry the ending."
+    }
+  ],
+  "summary": "Strong ensemble control and voice separation keep the dialogue above water, and the chapter does land most required beats: Martin's domestic authority, Joel's visible anger, Doug's warmth, Cliff's money grievance, Tommy's Viagra joke, Martin's subtle protectiveness toward Tommy, and the final body reveal. It still fails overall. The biggest problem is structural: the canonical Friday-night voicemail is missing from the chapter that is supposed to plant it, which undercuts a later evidentiary thread. On the prose side, the long draft block drops Nate's interior presence for too long, the chapter leans on a repeated explanatory sentence scaffold, and the final line overstates a turn the scene has already embodied. Those are enough to keep the chapter below pass-level craft and below shortlist-level finish."
+}

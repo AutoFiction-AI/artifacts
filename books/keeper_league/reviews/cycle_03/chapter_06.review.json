@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_06",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH06_CONTINUITY_VOICEMAIL_TIMESTAMP",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_03/chapters/chapter_06.md:17; snapshots/cycle_03/chapters/chapter_06.md:37; snapshots/cycle_03/chapters/chapter_06.md:47",
+      "problem": "The chapter fixes Nate's voicemail at about 8 PM and then specifically at 8:17 PM, but the continuity sheet establishes Nate's Friday voicemail as 8:47 PM. Because later evidence handling depends on exact device timing, this is a direct canonical contradiction rather than harmless approximation.",
+      "rewrite_direction": "Revise snapshots/cycle_03/chapters/chapter_06.md:17, snapshots/cycle_03/chapters/chapter_06.md:37, and snapshots/cycle_03/chapters/chapter_06.md:47 so Nate's recalled timing and the phone-screen timestamp all align to the canonical 8:47 PM voicemail, without introducing any alternate on-page time for the same call.",
+      "acceptance_test": "In the revised chapter, the phone-screen timestamp in the equivalent of snapshots/cycle_03/chapters/chapter_06.md:37 reads 8:47 PM, any looser paraphrase in the equivalents of snapshots/cycle_03/chapters/chapter_06.md:17 and snapshots/cycle_03/chapters/chapter_06.md:47 is consistent with that exact time, and no line in the chapter gives a conflicting voicemail time."
+    },
+    {
+      "finding_id": "CH06_REPEATED_SEARCH_STALL",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_03/chapters/chapter_06.md:3; snapshots/cycle_03/chapters/chapter_06.md:9; snapshots/cycle_03/chapters/chapter_06.md:23; snapshots/cycle_03/chapters/chapter_06.md:25; snapshots/cycle_03/chapters/chapter_06.md:63; snapshots/cycle_03/chapters/chapter_06.md:65",
+      "problem": "The first scene runs three separate internet-search beats that all end on the same conclusion: maybe the voicemail survived, maybe it did not. After the first search result, the chapter engine is already legible. The Quora pass and the later deck search mostly restate uncertainty instead of adding a new obstacle, proof, or decision, so the opening scene briefly stalls before Mallick arrives.",
+      "rewrite_direction": "Compress or differentiate the repeated research passes at snapshots/cycle_03/chapters/chapter_06.md:23, snapshots/cycle_03/chapters/chapter_06.md:25, snapshots/cycle_03/chapters/chapter_06.md:63, and snapshots/cycle_03/chapters/chapter_06.md:65. Keep one beat that establishes possible voicemail retention and one beat that introduces a genuinely new consequence or forces Nate into a next action; if the deck search remains, it must do more than confirm that the answer is still muddy.",
+      "acceptance_test": "Across the revised equivalents of snapshots/cycle_03/chapters/chapter_06.md:3-27 and snapshots/cycle_03/chapters/chapter_06.md:61-67, each surviving search beat produces distinct dramatic work: one establishes possible retention, one establishes a new obstacle or cost, and the scene turns toward Mallick only after a sharper decision or constraint appears. A cold reader should be able to name what new information or action each remaining search beat adds."
+    },
+    {
+      "finding_id": "CH06_CLIPPED_NARRATION",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_03/chapters/chapter_06.md:15; snapshots/cycle_03/chapters/chapter_06.md:19; snapshots/cycle_03/chapters/chapter_06.md:29; snapshots/cycle_03/chapters/chapter_06.md:49; snapshots/cycle_03/chapters/chapter_06.md:173",
+      "problem": "The narration repeatedly leans on clipped fragments for emphasis: \"The voicemail. The goddamn voicemail.\", \"Six guys. Six.\", \"Head rush.\" and the fragment stack after Nate's confession. The constitution explicitly forbids this telegraphic compression in narration, and here the repetition starts to read as a prose shortcut rather than Nate-colored urgency.",
+      "rewrite_direction": "Recast the emphatic fragments at snapshots/cycle_03/chapters/chapter_06.md:15, snapshots/cycle_03/chapters/chapter_06.md:19, snapshots/cycle_03/chapters/chapter_06.md:29, snapshots/cycle_03/chapters/chapter_06.md:49, and snapshots/cycle_03/chapters/chapter_06.md:173 into complete short sentences that preserve pressure without dropping verbs, subjects, or articles.",
+      "acceptance_test": "In the revised equivalents of snapshots/cycle_03/chapters/chapter_06.md:15, snapshots/cycle_03/chapters/chapter_06.md:19, snapshots/cycle_03/chapters/chapter_06.md:29, snapshots/cycle_03/chapters/chapter_06.md:49, and snapshots/cycle_03/chapters/chapter_06.md:173, the emphasis still lands but the narration is grammatically complete; no beat relies on standalone fragments such as \"The voicemail\" or \"Head rush\" for its effect."
+    },
+    {
+      "finding_id": "CH06_COMPARISON_PUNCHLINE_TIC",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_03/chapters/chapter_06.md:3; snapshots/cycle_03/chapters/chapter_06.md:13; snapshots/cycle_03/chapters/chapter_06.md:23; snapshots/cycle_03/chapters/chapter_06.md:49; snapshots/cycle_03/chapters/chapter_06.md:71; snapshots/cycle_03/chapters/chapter_06.md:175",
+      "problem": "The chapter repeatedly routes observation through comparison-first punchlines: the satellite, the telegram, Doug's bag, Quora in a blazer, adrenaline as an unwanted stimulant, Mallick as a co-op parking-lot conversation, the notebook closed like a book at chapter's end. In isolation several are good; in aggregate they become a marked construction tic and make the prose feel more written-about than lived-through.",
+      "rewrite_direction": "Trim the repeated comparison scaffold in snapshots/cycle_03/chapters/chapter_06.md:3, snapshots/cycle_03/chapters/chapter_06.md:13, snapshots/cycle_03/chapters/chapter_06.md:23, snapshots/cycle_03/chapters/chapter_06.md:49, snapshots/cycle_03/chapters/chapter_06.md:71, and snapshots/cycle_03/chapters/chapter_06.md:175. Keep only the strongest one or two comparison jokes and replace the others with direct sensory or social observation in Nate's idiom.",
+      "acceptance_test": "A read of the revised equivalents of snapshots/cycle_03/chapters/chapter_06.md:3, snapshots/cycle_03/chapters/chapter_06.md:23, snapshots/cycle_03/chapters/chapter_06.md:71, and snapshots/cycle_03/chapters/chapter_06.md:175 should not encounter comparison-based punchlines stacked at nearly every turn. At least two of those highlighted beats must now land through direct observation rather than another simile or analogy, and no two adjacent highlighted beats may depend on the same comparison scaffold for their effect."
+    }
+  ],
+  "summary": "Chapter 06 captures Nate's panic spiral and keeps Nate and Mallick distinct enough for the dialogue lens to pass, but it does not clear review. A hard continuity break on the voicemail timestamp, a search-loop opening that briefly restates the same uncertainty instead of escalating it, and two recurring prose habits forbidden by the constitution keep the chapter below pass-level craft and prose standards."
+}

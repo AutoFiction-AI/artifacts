@@ -1,0 +1,166 @@
+{
+  "acceptance_targets": [
+    "[CRAFT_CONTINUITY_WOUND_SIDE] PASS if the injury descriptions in snapshots/cycle_03/chapters/chapter_14.md:89-90 and snapshots/cycle_03/chapters/chapter_14.md:145-146 both identify the wound as being on Cliff's right temple, with no remaining left/right ambiguity anywhere in the chapter's body-discovery sequence; FAIL if any line in that sequence still names or implies the left temple.",
+    "[P-03_chapter_14] Chapter 14's body-discovery scene uses direct sensory language. The corrective construction appears no more than once in the chapter, and not in the first 50 lines of the discovery.",
+    "[RED-06] Ch 14 no longer contains 'pressed chinos' or a clothing inventory for Cliff.",
+    "[RED-11] Ch 14 no longer specifies eighty yards or thirty feet in the dock path description.",
+    "[RED-17] Ch 14's dock discovery scene contains no more than 1 passage labeling Doug through his pharmaceutical background.",
+    "[RED-18] Ch 14 no longer contains a standalone sentence declaring that Doug watches rooms or is the quiet one.",
+    "[RED-24] Ch 14 contains no more than 2 references to scotch or Lagavulin.",
+    "[length_chapter_14_min_words] Chapter word count is >= 5000 while preserving heading contract."
+  ],
+  "chapter_id": "chapter_14",
+  "cycle": 3,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if the injury descriptions in snapshots/cycle_03/chapters/chapter_14.md:89-90 and snapshots/cycle_03/chapters/chapter_14.md:145-146 both identify the wound as being on Cliff's right temple, with no remaining left/right ambiguity anywhere in the chapter's body-discovery sequence; FAIL if any line in that sequence still names or implies the left temple.",
+      "chapter_id": "chapter_14",
+      "cycle": 3,
+      "evidence": "snapshots/cycle_03/chapters/chapter_14.md:89; snapshots/cycle_03/chapters/chapter_14.md:145",
+      "finding_id": "CRAFT_CONTINUITY_WOUND_SIDE",
+      "problem": "The chapter places Cliff's impact wound on the left temple in both the discovery and group-assessment beats, but the continuity sheet canon for chapter 14 establishes that Cliff struck his right temple before being held under. Because the wound side is one of the chapter's core murder clues, this is a direct canonical contradiction rather than a cosmetic detail.",
+      "rewrite_direction": "Revise the wound references at snapshots/cycle_03/chapters/chapter_14.md:89 and snapshots/cycle_03/chapters/chapter_14.md:145 so every on-page description identifies Cliff's right temple as the injured side. If Doug's angle on the body makes laterality easy to misread, add a brief orienting cue in the same local spans so the reader can track that the wound is on Cliff's right even as the body is turned in the water.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Chapter 14's body-discovery scene uses direct sensory language. The corrective construction appears no more than once in the chapter, and not in the first 50 lines of the discovery.",
+      "chapter_id": "chapter_14",
+      "cycle": 3,
+      "evidence": "Line 4668: 'not the give of sleeping muscle but the stiffness of flesh.' Line 4724: 'not to understand but to contain.'",
+      "finding_id": "P-03_chapter_14",
+      "problem": "Two instances in the chapter where Doug discovers Cliff's body \u2014 a high-pressure moment where the corrective template should yield to immediate sensory impact. The negation-then-correction adds a processing step ('this is not A, it is B') where the character should be registering sensation directly, without the comparator.",
+      "rewrite_direction": "For 4668: 'The stiffness of flesh that had stopped being a person's.' \u2014 direct sensation, no negation. For 4724: 'He was trying to contain it, not to understand it.' \u2014 if the corrective is retained, invert the order so the primary action (containing) comes first and the negation is afterthought.",
+      "severity": "MEDIUM",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch 14 no longer contains 'pressed chinos' or a clothing inventory for Cliff.",
+      "chapter_id": "chapter_14",
+      "cycle": 3,
+      "evidence": "Ch 1 line 45: 'pressed chinos and a collared polo.' Ch 14 line 4620: 'Pressed chinos, navy polo, and the leather loafers he wore indoors because he was the one person in the group who gave a shit about shoes.'",
+      "finding_id": "RED-06",
+      "problem": "Cliff's outfit is re-described in Ch 14 with 'pressed chinos' verbatim from Ch 1 and 'navy polo' echoing 'collared polo.' This is the fourth re-description of Cliff's grooming pattern (Chs 1, 7, 12, 14).",
+      "rewrite_direction": "Cut the outfit line. Doug's POV strength here is room dynamics, not Cliff's clothing. If physical detail is needed, use something new.",
+      "severity": "HIGH",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch 14 no longer specifies eighty yards or thirty feet in the dock path description.",
+      "chapter_id": "chapter_14",
+      "cycle": 3,
+      "evidence": "Ch 5: stone path, pines, ~80 yards. Ch 10: eighty yards, thirty feet. Ch 12: thirty feet, stone path through pine and birch. Ch 14 lines 4646-4654: 'Eighty yards through pine and birch... extending thirty feet into the lake.'",
+      "finding_id": "RED-11",
+      "problem": "Fourth re-inventory. 'Eighty yards through pine and birch' and 'thirty feet' repeat exact numbers and tree species from Chs 5, 10, and 12.",
+      "rewrite_direction": "Cut the eighty-yard distance and thirty-foot dock length. Keep the unique sensory texture (flagstones sunk from freeze-thaw, moonlight cut by canopy, turpentine-and-sugar smell).",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch 14's dock discovery scene contains no more than 1 passage labeling Doug through his pharmaceutical background.",
+      "chapter_id": "chapter_14",
+      "cycle": 3,
+      "evidence": "Ch 14 lines 4660, 4672, 4676: 'Contraindicated, his pharmaceutical vocabulary said' (4660); 'Doug's pharmaceutical training gave clinical names for' (4672); 'not the pharmaceutical sales voice' (4676). Three pharmaceutical-identity labels in 16 lines, after Ch 7 line 1995 and Ch 13 line 3947 already established this baseline.",
+      "finding_id": "RED-17",
+      "problem": "Doug's pharmaceutical background is re-proved 3 times in 16 lines of Ch 14, after 2 prior establishments. The same word ('pharmaceutical') is used as a character label three times in rapid succession during the dock discovery scene.",
+      "rewrite_direction": "Keep one pharmaceutical reference in the dock discovery (strongest is 'Contraindicated' at 4660, which shows the vocabulary in action). Cut the other two explicit 'pharmaceutical' labels.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch 14 no longer contains a standalone sentence declaring that Doug watches rooms or is the quiet one.",
+      "chapter_id": "chapter_14",
+      "cycle": 3,
+      "evidence": "Ch 1 line 167: 'Doug agreed to things.' Ch 4 line 1354: 'Doug sunk down in his hoodie, saying almost nothing and noticing almost everything.' Ch 9 line 2593: 'the quiet surveillance Doug had perfected over twenty-five years of being the one nobody watched.' Ch 14 line 4616: 'Watching rooms was what he'd always done.' Ch 14 line 4632: 'Doug was the one you told things to when you needed someone to nod.'",
+      "finding_id": "RED-18",
+      "problem": "Doug's quiet-observer baseline is stated in essentially the same language 4 times (Chs 4, 9, 14 twice). Line 4616 ('watching rooms was what he'd always done') and 4632 ('the one you told things to when you needed someone to nod') are the fourth and fifth versions of Ch 4's 'saying almost nothing and noticing almost everything.'",
+      "rewrite_direction": "In Ch 14, cut the explicit character-summary sentences at lines 4616 and 4632. Doug's observation can be shown through what he notices in the scene rather than declared as his defining trait for the fourth time.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch 14 contains no more than 2 references to scotch or Lagavulin.",
+      "chapter_id": "chapter_14",
+      "cycle": 3,
+      "evidence": "Manuscript-wide: scotch/Lagavulin appears 39 times. Ch 14 has 6 instances. By Ch 14, the scotch has been referenced in Chs 1, 2, 3, 4, 6, 7, 11 already.",
+      "finding_id": "RED-24",
+      "problem": "Ch 14 mentions scotch or Lagavulin 6 times after the image has appeared 25+ times previously. The bottle-on-the-counter detail at line 4620 ('the bottle had been on the counter since Thursday night') recaps information the reader has had since Ch 7.",
+      "rewrite_direction": "Reduce Ch 14 scotch references from 6 to 2. Keep the strongest (Cliff pouring himself two fingers is plot-relevant). Cut the editorial recap about the bottle being on the counter since Thursday.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Chapter word count is >= 5000 while preserving heading contract.",
+      "chapter_id": "chapter_14",
+      "cycle": 3,
+      "evidence": "snapshots/cycle_03/chapters/chapter_14.md:1",
+      "finding_id": "length_chapter_14_min_words",
+      "problem": "Chapter is below projected_min_words (4906 < 5000).",
+      "rewrite_direction": "Add causally necessary scene material that strengthens the chapter engine, increases pressure, and lands the planned state shift without filler.",
+      "severity": "HIGH",
+      "source": "length_guardrail",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "478a0674da112ee2a00dfe102424c8f0aefbd135fdc2dd021803e6348cd3078b",
+  "must_fix_count": 8,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "The comedy is the creative risk and the creative achievement. These are men in their late forties who talk the way men in their late forties talk when there are no women present and the drinks have been flowing for hours: crude, raunchy, profane, sexually explicit, casually cruel, and occasionally accidentally beautiful. Do not clean this up. Do not soften the language. Do not make them witty where they would be vulgar. Do not make them eloquent where they would be clumsy. The profanity is not decoration \u2014 it is the texture of the friendship. When the second death breaks the comic register, the absence of that profane warmth should feel like a loss, not a relief. The murder, when it arrives, should be rendered with physical specificity \u2014 the water, the struggle, the sounds. The grief should be specific. The shame should be specific. The twenty-two-year-old guilt should be embodied, not summarized. If a scene makes the writer uncomfortable, that is a signal to stay in it longer, not to cut away.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Every euphemism for death, sex, bodily function, emotional state, or financial desperation must be replaced with the direct term or a character-specific avoidance that itself reveals something about the character. Cliff saying 'restructure' when he means 'I'm broke' is character work. The narrator describing Cliff as 'facing financial challenges' is sanitization.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the absolute norm. These are informal men in their late forties who have been friends for twenty-five years. Uncontracted forms should appear only for deliberate emphasis, Joel's occasional legal precision, or Mallick's public-persona overcorrection. If two consecutive lines of dialogue contain uncontracted forms and neither character has a stated reason for formality, at least one is wrong.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "No two consecutive chapters should have the same structural rhythm. After a dialogue-heavy chapter, lead the next with interiority or description. After an interview chapter, give the reader a memory or a quiet observation. After a comic set piece, let the next chapter breathe. The scene counts vary (2-3) and should feel varied \u2014 a two-scene chapter after a three-scene chapter creates natural pacing shift. The tonal break at Chapter 14 should feel like a gear change, not a gradual dimming.",
+      "diction": "Muscular, specific, unpretentious. No literary posturing. The prose should sound like intelligent conversation, not workshopped fiction. Prefer concrete nouns over abstract ones. Prefer active constructions. Avoid decorative metaphor \u2014 when a metaphor appears, it should be load-bearing. The comedy demands precision: funny is specific, and vague is never funny.",
+      "forbidden_drift_patterns": [
+        "Prestige-literary inflation \u2014 do not elevate the comic register into literary solemnity. A man flushing Viagra while a detective knocks on the door is funny. The prose should be funny. Do not describe it as if it were a scene from Dostoevsky.",
+        "Comedic exhaustion \u2014 do not let every paragraph contain a joke. Comedy needs rhythm, which means it needs non-comic beats to land against. Let some paragraphs be straightforwardly descriptive or emotional.",
+        "Interior monologue sprawl \u2014 close third is not stream of consciousness. The POV character's interiority should be selective and purposeful, not an open channel of every thought.",
+        "Simultaneous narration \u2014 do not describe characters 'simultaneously' feeling multiple things. Choose the dominant feeling and let the undertone be implicit.",
+        "Forensic procedure porn \u2014 this is not a police procedural. Keep investigation details specific but brief. The comedy and character are the vehicle, not the forensics.",
+        "Metaphor creep \u2014 do not let the same metaphor template appear more than twice in a chapter. If you've used a sports metaphor, a water metaphor, and a fire metaphor, check that none of them are doing the same structural work."
+      ],
+      "narrative_distance": "Close third person, rotating POV. Each chapter is locked to one character's interiority. No omniscient intrusions. The prose should take on the coloring of the POV character without becoming parody \u2014 Nate's chapters move faster and list more, Doug's chapters are quieter and more observational, Mallick's chapters shift between her two registers.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Conversational propulsion, not literary drift. The prose should move like someone telling you this story \u2014 not rushed, but never self-admiring. Vary sentence length aggressively: long compound sentences for the comic set pieces, short declarative hits for the turns. The humor lives in rhythm as much as content \u2014 the timing of a punchline is a prose-level decision.",
+      "sensory_bias": [
+        "auditory \u2014 conversations, lake sounds, house creaks, the specific silence of a house where someone died",
+        "proprioceptive \u2014 hangovers, physical discomfort, adrenaline, the specific sensation of a body that hasn't slept",
+        "olfactory \u2014 booze, lake water, morning coffee, the basement must, the casserole"
+      ]
+    }
+  }
+}

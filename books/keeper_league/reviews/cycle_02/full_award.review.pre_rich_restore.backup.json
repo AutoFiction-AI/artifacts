@@ -1,0 +1,45 @@
+{
+  "cycle": 2,
+  "findings": [
+    {
+      "acceptance_test": "Grep the manuscript for 'temple' and any laterality marker (left/right) near wound descriptions; all instances must agree on a single side.",
+      "category": "continuity",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:3560; snapshots/cycle_02/FINAL_NOVEL.md:3616",
+      "fix": "Choose one side and enforce it in both chapters. If the wound is self-inflicted by a right-handed person, left temple is anatomically more plausible; if staged, right temple may serve the plot. Whichever is chosen, update every reference in chapters 14, 15, and any later mention.",
+      "id": "WOUND_SIDE_CH14",
+      "problem": "Joel's gunshot wound is described as striking the 'right temple' twice in chapter 14 (lines 3560 and 3616), but chapter 15 relocates it to the 'left temple' and 'left side of the head.' A wound whose laterality flips between consecutive chapters undermines the forensic reasoning the narrative depends on.",
+      "severity": "HIGH",
+      "finding_id": "WOUND_SIDE_CH14",
+      "rewrite_direction": "Revise snapshots/cycle_02/FINAL_NOVEL.md:3560; snapshots/cycle_02/FINAL_NOVEL.md:3616. Choose one side and enforce it in both chapters. If the wound is self-inflicted by a right-handed person, left temple is anatomically more plausible; if staged, right temple may serve the plot. Whichever is chosen, update every reference in chapters 14, 15, and any later mention."
+    },
+    {
+      "acceptance_test": "All wound-side references in chapters 14 through 18 must specify the same laterality, confirmed by full-text search for 'temple', 'side of the head', and related wound descriptors.",
+      "category": "continuity",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:3695; snapshots/cycle_02/FINAL_NOVEL.md:3777",
+      "fix": "Align with the side chosen for chapter 14. Update lines 3695 and 3777 and any downstream forensic reasoning that depends on wound placement.",
+      "id": "WOUND_SIDE_CH15",
+      "problem": "Chapter 15 describes Joel's wound at the 'left temple' (line 3695) and 'left side of the head' (line 3777), contradicting chapter 14's 'right temple' placement. This is the paired finding to WOUND_SIDE_CH14.",
+      "severity": "HIGH",
+      "finding_id": "WOUND_SIDE_CH15",
+      "rewrite_direction": "Revise snapshots/cycle_02/FINAL_NOVEL.md:3695; snapshots/cycle_02/FINAL_NOVEL.md:3777. Align with the side chosen for chapter 14. Update lines 3695 and 3777 and any downstream forensic reasoning that depends on wound placement."
+    },
+    {
+      "acceptance_test": "Chapter 14's Doug passage should not exceed three sentences before introducing new information or changed circumstances. No detail from the chapter 7 baseline should be repeated verbatim or at comparable length.",
+      "category": "pacing",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:3472; snapshots/cycle_02/FINAL_NOVEL.md:3528",
+      "fix": "Cut or compress the re-introduction to a single sentence that references the established routine (e.g., 'Doug ran his usual inventory') and move directly into the disruption that makes this scene matter. Retain only details that have changed since chapter 7.",
+      "id": "DOUG_BASELINE_RETEACH_CH14",
+      "problem": "Chapter 14 (lines 3472-3528) re-teaches Doug's medication routine, observation role, and dock ritual as though the reader has not encountered them before. These details were fully established in chapter 7 (lines 1789-1955). The redundancy slows a chapter whose engine is supposed to be escalating dread, and it reads as a parallel-drafting artifact where the chapter 14 agent did not have access to chapter 7's coverage.",
+      "severity": "MEDIUM",
+      "finding_id": "DOUG_BASELINE_RETEACH_CH14",
+      "rewrite_direction": "Revise snapshots/cycle_02/FINAL_NOVEL.md:3472; snapshots/cycle_02/FINAL_NOVEL.md:3528. Cut or compress the re-introduction to a single sentence that references the established routine (e.g., 'Doug ran his usual inventory') and move directly into the disruption that makes this scene matter. Retain only details that have changed since chapter 7."
+    }
+  ],
+  "pattern_findings": [],
+  "stage": "full_award_review",
+  "summary": "The manuscript demonstrates genuine shortlist-level strengths in prose, comedy register, dialogue differentiation, and mystery architecture. However, a catastrophic continuity failure disqualifies it: the RT document describing the 2002 fire \u2014 the evidentiary spine of the mystery \u2014 is rendered four materially incompatible ways across chapters 8, 12, 16, and 17. Two of those chapters (8 and 16) depict characters reading the same physical document yet describe different dates, page counts, accelerants, structures, and victim positions. A mystery novel whose central evidence contradicts itself across scenes cannot reach a shortlist. Secondary findings include a wound-side flip between chapters 14 and 15 and inconsistent physical descriptions of the wall-safe contents. If all findings were resolved, the book would plausibly reach shortlist readiness: the prose is controlled, the comedy is genuine and character-driven, the tonal pivot at chapter 14 is earned, dialogue voices are well-separated, and the mystery payoff is satisfying.",
+  "verdict": "FAIL"
+}

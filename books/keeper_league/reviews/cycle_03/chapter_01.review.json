@@ -1,0 +1,62 @@
+{
+  "chapter_id": "chapter_01",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CRAFT_CONTINUITY_VOICEMAIL_TIME",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_03/chapters/chapter_01.md:475; snapshots/cycle_03/chapters/chapter_01.md:481; snapshots/cycle_03/chapters/chapter_01.md:483",
+      "problem": "The chapter explicitly timestamps Nate's voicemail around 1:45 AM ('One-thirty' followed by 'At quarter to two'), but the continuity sheet canon locks that voicemail to 8:47 PM Friday. Because the voicemail later matters as evidence, this is a hard timeline contradiction rather than flexible scene texture.",
+      "rewrite_direction": "Revise snapshots/cycle_03/chapters/chapter_01.md:473, snapshots/cycle_03/chapters/chapter_01.md:481, and snapshots/cycle_03/chapters/chapter_01.md:487 so Nate's comic voicemail is clearly a Friday-evening beat consistent with the canonical 8:47 PM timestamp, while the after-midnight decision to go upstairs becomes a separate later action. Preserve Nate's guilt about the message, but do not time-stamp the voicemail itself as a quarter-to-two call.",
+      "acceptance_test": "Pass if a reader of snapshots/cycle_03/chapters/chapter_01.md:473 through snapshots/cycle_03/chapters/chapter_01.md:489 can tell that Nate already left the voicemail hours before the body discovery, with no language anchoring the message to 'one-thirty' or 'quarter to two'; fail if the voicemail still appears to be left immediately before Nate goes upstairs."
+    },
+    {
+      "finding_id": "CRAFT_CONTINUITY_DISCOVERY_STATE",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_03/chapters/chapter_01.md:491; snapshots/cycle_03/chapters/chapter_01.md:499; snapshots/cycle_03/chapters/chapter_01.md:501; snapshots/cycle_03/chapters/chapter_01.md:511; snapshots/cycle_03/chapters/chapter_01.md:513; snapshots/cycle_03/chapters/chapter_01.md:515",
+      "problem": "This discovery handoff no longer matches the canonical state carried into the next chapter. Here Nate enters a dark room, finds Martin on his back, notices the left hand on top of the blanket, and lifts and replaces that hand. The boundary pack and continuity sheet require Paul to encounter a lit room and a body already on Martin's left side, facing the window, with the right hand hanging off the mattress. Because chapter_02 begins seconds later, the mismatch is a hard continuity contradiction.",
+      "rewrite_direction": "Revise snapshots/cycle_03/chapters/chapter_01.md:491, snapshots/cycle_03/chapters/chapter_01.md:499, snapshots/cycle_03/chapters/chapter_01.md:501, snapshots/cycle_03/chapters/chapter_01.md:511, and snapshots/cycle_03/chapters/chapter_01.md:513 so Nate's first look at Martin matches the carried-forward state: visible light from the room, body oriented left-side and window-facing, right hand off the mattress. If Nate touches Martin in snapshots/cycle_03/chapters/chapter_01.md:507 or snapshots/cycle_03/chapters/chapter_01.md:513, keep that contact from materially repositioning the body unless the text explicitly shows the change before Nate goes to Paul.",
+      "acceptance_test": "Pass if the body and room description in snapshots/cycle_03/chapters/chapter_01.md:491 through snapshots/cycle_03/chapters/chapter_01.md:515 can roll directly into the chapter_02 boundary excerpt without the reader having to imagine an unseen repositioning or unseen light change; fail if Martin is still on his back, with the wrong hand exposed, or in a dark room when Nate exits."
+    },
+    {
+      "finding_id": "CRAFT_SETUP_VIAGRA_OBJECT_STATE",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_03/chapters/chapter_01.md:425; snapshots/cycle_03/chapters/chapter_01.md:429; snapshots/cycle_03/chapters/chapter_01.md:431; snapshots/cycle_03/chapters/chapter_01.md:443",
+      "problem": "The Friday-night gag is framed as one loose pill only ('a single blue pill,' 'Is that one Viagra?', 'One Viagra'), but the continuity sheet's object state and later plot logic require a four-pill sample pack in Martin's room with three pills still available to be flushed later. As written, the setup is too thin and slightly misleading for a later evidence chain the story depends on.",
+      "rewrite_direction": "Revise snapshots/cycle_03/chapters/chapter_01.md:425, snapshots/cycle_03/chapters/chapter_01.md:431, and snapshots/cycle_03/chapters/chapter_01.md:443 so the joke still lands as Tommy razzing Martin about a pill, but the on-page prop makes it legible that Tommy is handing over or leaving a small multi-pill sample or blister pack rather than the chapter's only pill. Keep the beat light and medically unforeshadowed.",
+      "acceptance_test": "Pass if a cold reader of snapshots/cycle_03/chapters/chapter_01.md:425 through snapshots/cycle_03/chapters/chapter_01.md:445 can tell that Martin ends the scene with access to more than one sildenafil pill while the dialogue still reads as a crude joke, not ominous setup; fail if the scene still implies there was only ever one pill in play."
+    },
+    {
+      "finding_id": "PROSE_INTERIORITY_DROP_HOT_TUB",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_03/chapters/chapter_01.md:317; snapshots/cycle_03/chapters/chapter_01.md:319; snapshots/cycle_03/chapters/chapter_01.md:345; snapshots/cycle_03/chapters/chapter_01.md:347; snapshots/cycle_03/chapters/chapter_01.md:455",
+      "problem": "The hot-tub set piece drops Nate's interiority for screenplay-length stretches. From the scene opening through line 345, and then for most of the banter that follows, the chapter becomes transcripted group comedy instead of close third locked to Nate. Rule 11 explicitly requires a MEDIUM flag for 10-plus consecutive paragraphs without focalized thought, sensation, memory, or self-assessment, and this scene clears that threshold easily.",
+      "rewrite_direction": "Revise snapshots/cycle_03/chapters/chapter_01.md:317, snapshots/cycle_03/chapters/chapter_01.md:345, snapshots/cycle_03/chapters/chapter_01.md:347, and snapshots/cycle_03/chapters/chapter_01.md:455 so the hot-tub exchange stays funny but is filtered through Nate at regular intervals. Use brief bodily discomfort, broadcaster-brain framing, selective noticing, or self-protective thought rather than saving Nate's presence for scene edges.",
+      "acceptance_test": "Pass if, across snapshots/cycle_03/chapters/chapter_01.md:317 through snapshots/cycle_03/chapters/chapter_01.md:455, no run of 10 consecutive paragraphs lacks an explicit Nate interior marker and the reader can track Nate's discomfort, attention, or avoidance as the banter unfolds; fail if the scene still reads like an unfiltered transcript of the group for paragraph after paragraph."
+    },
+    {
+      "finding_id": "PROSE_RECURRING_MAN_WHO_SCAFFOLD",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_03/chapters/chapter_01.md:17; snapshots/cycle_03/chapters/chapter_01.md:25; snapshots/cycle_03/chapters/chapter_01.md:365",
+      "problem": "The prose reuses the same interpretive scaffold often enough to feel automatic: Martin gets 'the focus of a man who...,' Doug gets 'the patience of someone who...' and 'the posture of a guy who...,' and Joel arrives with 'the deliberation of a man who...' while Martin is described again via 'the quiet satisfaction of a host whose...' Once that pattern hits this many times in one chapter, it stops reading like intentional rhythm and starts reading like autopilot explanation.",
+      "rewrite_direction": "Revise snapshots/cycle_03/chapters/chapter_01.md:17, snapshots/cycle_03/chapters/chapter_01.md:25, and snapshots/cycle_03/chapters/chapter_01.md:365 so at least two of these character reads land through concrete action or a different sentence shape rather than the same 'the [abstract noun] of a man or someone who...' frame. Keep Nate's judgments, but vary the syntax and let behavior carry more of the load.",
+      "acceptance_test": "Pass if, in the revised versions of snapshots/cycle_03/chapters/chapter_01.md:17, snapshots/cycle_03/chapters/chapter_01.md:25, and snapshots/cycle_03/chapters/chapter_01.md:365, no more than one sentence still uses that explanatory scaffold and each targeted character beat remains legible through distinct syntax or behavior; fail if the Martin beat at line 17, the Doug beat at line 25, and the line 365 Joel-entry or Martin-host beat are still primarily carried by the same repeated template."
+    }
+  ],
+  "summary": "Dialogue and group voice are the chapter's strongest assets, but the draft fails review because it breaks canon in two hard places: Nate's voicemail is timed around 1:45 AM instead of the required 8:47 PM Friday, and Martin's discovery state no longer matches the immediate chapter-boundary and continuity handoff. A lighter but still meaningful setup problem leaves the Viagra evidence chain underprepared, and the hot-tub sequence drops Nate's interiority for a screenplay-length stretch while the prose also repeats one explanatory sentence scaffold often enough to feel automatic."
+}

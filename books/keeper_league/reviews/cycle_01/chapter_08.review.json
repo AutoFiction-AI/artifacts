@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_08",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CRAFT_CONTINUITY_WILL_REVEAL",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_01/chapters/chapter_08.md:65; snapshots/cycle_01/chapters/chapter_08.md:67; snapshots/cycle_01/chapters/chapter_08.md:69; snapshots/cycle_01/chapters/chapter_08.md:167",
+      "problem": "This chapter reveals that Tommy inherits the lake house, but the provided canon assigns that discovery to Paul in chapter 11. Pulling the beneficiary reveal forward breaks continuity, gives Cliff knowledge he is not supposed to have yet, and steals the later state shift where Paul's grief turns into suspicion.",
+      "rewrite_direction": "Revise snapshots/cycle_01/chapters/chapter_08.md:65, snapshots/cycle_01/chapters/chapter_08.md:67, and snapshots/cycle_01/chapters/chapter_08.md:69 so Cliff either does not inspect the will here or does not learn the named beneficiary. Then revise snapshots/cycle_01/chapters/chapter_08.md:167 so Cliff's inference about Martin protecting Tommy rests on the fire document and Tommy's behavior, not on a will fact reserved for chapter 11.",
+      "acceptance_test": "Pass if a cold reader of chapter 8 can tell that Cliff found and photographed the fire document but cannot know from this chapter who inherits the house; fail if Thomas Renaldi is still identified as the beneficiary anywhere in the revised equivalents of snapshots/cycle_01/chapters/chapter_08.md:65-69 or if the revised equivalent of snapshots/cycle_01/chapters/chapter_08.md:167 still depends on Cliff already knowing that fact."
+    },
+    {
+      "finding_id": "AWARD_OVERSTATEMENT_AFTER_DISCOVERY",
+      "source": "award",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_01/chapters/chapter_08.md:121; snapshots/cycle_01/chapters/chapter_08.md:127; snapshots/cycle_01/chapters/chapter_08.md:131; snapshots/cycle_01/chapters/chapter_08.md:135; snapshots/cycle_01/chapters/chapter_08.md:137; snapshots/cycle_01/chapters/chapter_08.md:173; snapshots/cycle_01/chapters/chapter_08.md:175",
+      "problem": "Once the chapter lands the real turn, Cliff recognizing that Tommy's exposure is worth more than forty thousand dollars, the narration keeps translating the same conclusion into cleaner deal language. The later porch-step material reiterates that Cliff thinks in leverage, restructuring, and conversations instead of letting the discovery keep generating fresh pressure, so the temperature change is explained twice rather than dramatized once and then advanced.",
+      "rewrite_direction": "Compress the duplicate explanatory beats in snapshots/cycle_01/chapters/chapter_08.md:121, snapshots/cycle_01/chapters/chapter_08.md:127, snapshots/cycle_01/chapters/chapter_08.md:131, snapshots/cycle_01/chapters/chapter_08.md:135, snapshots/cycle_01/chapters/chapter_08.md:137, snapshots/cycle_01/chapters/chapter_08.md:173, and snapshots/cycle_01/chapters/chapter_08.md:175. Keep the must-land work: Cliff understands the leverage, photographs the document, reseals the safe, and decides to approach Tommy later. Use the ending to add a new variable, such as a sharper read of Tommy's danger or the risk carried by the photos, instead of restating Cliff's negotiation philosophy.",
+      "acceptance_test": "Pass if the revised stretch from the equivalent of snapshots/cycle_01/chapters/chapter_08.md:121 through snapshots/cycle_01/chapters/chapter_08.md:175 contains one clear articulation of Cliff's leverage logic and a later beat that introduces a new pressure or risk; fail if the chapter still explains the same 'this is not blackmail, this is a conversation/restructuring' idea in both the revised equivalents of snapshots/cycle_01/chapters/chapter_08.md:135-137 and snapshots/cycle_01/chapters/chapter_08.md:173-175 without any new consequence entering."
+    },
+    {
+      "finding_id": "PROSE_RECURRENT_CHARACTER_TEMPLATE",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_01/chapters/chapter_08.md:13; snapshots/cycle_01/chapters/chapter_08.md:19; snapshots/cycle_01/chapters/chapter_08.md:21; snapshots/cycle_01/chapters/chapter_08.md:45; snapshots/cycle_01/chapters/chapter_08.md:95; snapshots/cycle_01/chapters/chapter_08.md:99; snapshots/cycle_01/chapters/chapter_08.md:145; snapshots/cycle_01/chapters/chapter_08.md:147; snapshots/cycle_01/chapters/chapter_08.md:165",
+      "problem": "The chapter keeps reaching for the same descriptive scaffold: 'the particular/specific X of a man who...' and adjacent 'he looked like a man...' constructions. Used this often, the prose stops feeling like Cliff making fresh assessments and starts sounding like a reusable characterization template, which flattens otherwise strong observation.",
+      "rewrite_direction": "Rework the repeated scaffolds in snapshots/cycle_01/chapters/chapter_08.md:13, snapshots/cycle_01/chapters/chapter_08.md:19, snapshots/cycle_01/chapters/chapter_08.md:21, snapshots/cycle_01/chapters/chapter_08.md:45, snapshots/cycle_01/chapters/chapter_08.md:95, snapshots/cycle_01/chapters/chapter_08.md:99, snapshots/cycle_01/chapters/chapter_08.md:145, snapshots/cycle_01/chapters/chapter_08.md:147, and snapshots/cycle_01/chapters/chapter_08.md:165 so at least several of those beats are carried by concrete behavior, sensory detail, or Cliff-specific valuation language rather than the same abstract sentence mold.",
+      "acceptance_test": "Pass if, across the revised equivalents of snapshots/cycle_01/chapters/chapter_08.md:13-21, snapshots/cycle_01/chapters/chapter_08.md:45, snapshots/cycle_01/chapters/chapter_08.md:95-99, snapshots/cycle_01/chapters/chapter_08.md:145-147, and snapshots/cycle_01/chapters/chapter_08.md:165, no more than two beats still use the '[particular/specific] ... of a man who...' or 'he looked like a man...' template, and each remaining character beat is distinguishable by its own physical or behavioral evidence rather than the shared scaffold."
+    }
+  ],
+  "summary": "The chapter nails Cliff's desperation, keeps the safe discovery legible, and largely holds the voices in register, but it does not pass review. The will reveal creates a hard continuity conflict with the provided canon, the back half over-certifies Cliff's leverage logic after the document has already changed the temperature, and the prose relies too often on repeated 'man who...' characterization templates."
+}

@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_04",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CRAFT_PREMATURE_JOEL_ARGUMENT_PAYOFF",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_01/chapters/chapter_04.md:255; snapshots/cycle_01/chapters/chapter_04.md:259; snapshots/cycle_01/chapters/chapter_04.md:375",
+      "problem": "Joel's interior narration explicitly names Karen and Martin's relationship in this chapter, which cashes the tracked Joel-argument reveal before chapter_09. The context pack assigns chapter_04 the job of making Joel look suspicious because he refuses to explain, then assigns chapter_09 the job of explaining that the argument was about Martin sleeping with Karen. Once line 375 states that outright, chapter_04 stops planting pressure and starts spending the later payoff.",
+      "rewrite_direction": "Revise snapshots/cycle_01/chapters/chapter_04.md:255-260 and snapshots/cycle_01/chapters/chapter_04.md:375 so Joel's private pressure stays vivid without decoding the subject of the argument. Keep the sense that he has a personally explosive answer rehearsed and that the argument was about intimate betrayal, but do not yet identify Karen as Martin's partner or explain the affair in direct terms.",
+      "acceptance_test": "Pass if, after revising snapshots/cycle_01/chapters/chapter_04.md:255-260 and snapshots/cycle_01/chapters/chapter_04.md:375, a first-time reader can tell Joel is hiding a personal betrayal tied to Thursday night but still cannot state from chapter_04 alone that Martin was sleeping with Karen. Fail if chapter_04 still explicitly identifies the affair before the later reveal chapter."
+    },
+    {
+      "finding_id": "CRAFT_MALLICK_AMBIGUITY_OVERPROVED",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_01/chapters/chapter_04.md:77; snapshots/cycle_01/chapters/chapter_04.md:167; snapshots/cycle_01/chapters/chapter_04.md:243; snapshots/cycle_01/chapters/chapter_04.md:327; snapshots/cycle_01/chapters/chapter_04.md:337; snapshots/cycle_01/chapters/chapter_04.md:387",
+      "problem": "The chapter brief says Mallick's folksy entrance should leave the reader unable to tell whether the act is genuine. The chapter keeps insisting on that uncertainty, but Joel's prosecutorial readings plus Doug's explicit decode of the correction pattern steadily tip the page toward 'she is obviously putting this on.' By the end, the characters say they can't tell, but the reader has been nudged too hard toward one answer.",
+      "rewrite_direction": "Rebalance snapshots/cycle_01/chapters/chapter_04.md:77-79, snapshots/cycle_01/chapters/chapter_04.md:167, snapshots/cycle_01/chapters/chapter_04.md:243, snapshots/cycle_01/chapters/chapter_04.md:327-337, and snapshots/cycle_01/chapters/chapter_04.md:387. Keep the corrections mechanism and Joel's suspicion, but remove or soften one or two explanatory deductions and replace them with observable behavior that can still read as genuine county-level awkwardness.",
+      "acceptance_test": "Pass if a cold reader can cite at least one detail in the revised target spans supporting real disorganization and at least one supporting tactical performance, with no line before snapshots/cycle_01/chapters/chapter_04.md:387 resolving the balance as settled fact. Fail if the revised chapter still reads as though Mallick's performance has already been definitively decoded."
+    },
+    {
+      "finding_id": "DIALOGUE_MALLICK_COMPOSED_MINISPEECH",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_01/chapters/chapter_04.md:231; snapshots/cycle_01/chapters/chapter_04.md:235; snapshots/cycle_01/chapters/chapter_04.md:241",
+      "problem": "Mallick's pressure beat turns into a polished diagnosis instead of spoken-through interrogation. 'You're the calmest person in this house... your account doesn't have a single loose thread... either you've got nothing to hide or you're very, very good at this' is a balanced mini-speech with a neat binary landing, which reads more like authorial summation or private-register case notes than her public folksy voice under scene pressure.",
+      "rewrite_direction": "Rework snapshots/cycle_01/chapters/chapter_04.md:231-241 so Mallick either stays in her rambling public persona and applies pressure through shorter, interruptible questions and restatements, or visibly drops the persona into her direct mode. Do not keep the current pressure beat as one clean diagnostic speech disguised as casual talk.",
+      "acceptance_test": "Pass if the revised exchange in snapshots/cycle_01/chapters/chapter_04.md:231-241 reaches the same suspicion through at least two separate conversational moves or through a clearly marked persona drop, and no single line functions as a tidy either-or courtroom summation. Fail if the passage still hinges on one balanced mini-speech that sounds written-about rather than spoken."
+    },
+    {
+      "finding_id": "PROSE_MARKED_SCAFFOLD_REPETITION",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_01/chapters/chapter_04.md:5; snapshots/cycle_01/chapters/chapter_04.md:47; snapshots/cycle_01/chapters/chapter_04.md:137; snapshots/cycle_01/chapters/chapter_04.md:253; snapshots/cycle_01/chapters/chapter_04.md:257; snapshots/cycle_01/chapters/chapter_04.md:265; snapshots/cycle_01/chapters/chapter_04.md:373; snapshots/cycle_01/chapters/chapter_04.md:375",
+      "problem": "Joel's narration repeatedly leans on the same marked scaffolds: 'the specific,' 'the particular,' and 'the way...' formulations that announce significance instead of discovering it. Used once or twice, they sharpen his noticing; used this often in one chapter, they start to feel like autopilot prose rather than character-colored precision.",
+      "rewrite_direction": "Revise snapshots/cycle_01/chapters/chapter_04.md:5-9, snapshots/cycle_01/chapters/chapter_04.md:137-139, snapshots/cycle_01/chapters/chapter_04.md:253-259, snapshots/cycle_01/chapters/chapter_04.md:265, and snapshots/cycle_01/chapters/chapter_04.md:373-375. Keep only the strongest one or two heightened formulations, and restage the surrounding observations in varied syntax that lets Joel's legal mind register pressure without repeating the same emphasis template.",
+      "acceptance_test": "Pass if the revised target spans no longer rely on repeated 'the specific/the particular/the way...' emphasis more than twice across the chapter, and Joel's observations land through visibly varied sentence shapes instead of one recurring template. Fail if those marked formulations still cluster through the cited spans often enough to read as a chapter-level tic."
+    }
+  ],
+  "summary": "The chapter has a strong comic-suspicion engine and a usable Joel POV, but it does not clear pass level. The biggest problem is structural: Joel's private paragraph names the Karen/Martin affair early and spends a later reveal that the context pack assigns to chapter_09. On top of that, the chapter over-deciphers Mallick's act instead of preserving full uncertainty, gives her one notably composed diagnostic speech, and repeats marked prose emphasis patterns often enough to feel generated rather than precise."
+}

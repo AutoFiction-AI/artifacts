@@ -1,0 +1,146 @@
+{
+  "cycle": 2,
+  "stage": "full_award_review",
+  "verdict": "FAIL",
+  "summary": "The manuscript demonstrates genuine shortlist-level strengths in prose, comedy register, dialogue differentiation, and mystery architecture. However, a catastrophic continuity failure disqualifies it: the RT document describing the 2002 fire \u2014 the evidentiary spine of the mystery \u2014 is rendered four materially incompatible ways across chapters 8, 12, 16, and 17. Two of those chapters (8 and 16) depict characters reading the same physical document yet describe different dates, page counts, accelerants, structures, and victim positions. A mystery novel whose central evidence contradicts itself across scenes cannot reach a shortlist. Secondary findings include a wound-side flip between chapters 14 and 15 and inconsistent physical descriptions of the wall-safe contents. If all findings were resolved, the book would plausibly reach shortlist readiness: the prose is controlled, the comedy is genuine and character-driven, the tonal pivot at chapter 14 is earned, dialogue voices are well-separated, and the mystery payoff is satisfying.",
+  "findings": [
+    {
+      "id": "WOUND_SIDE_CH14",
+      "chapter_id": "chapter_14",
+      "severity": "HIGH",
+      "category": "continuity",
+      "problem": "Joel's gunshot wound is described as striking the 'right temple' twice in chapter 14 (lines 3560 and 3616), but chapter 15 relocates it to the 'left temple' and 'left side of the head.' A wound whose laterality flips between consecutive chapters undermines the forensic reasoning the narrative depends on.",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:3560; snapshots/cycle_02/FINAL_NOVEL.md:3616",
+      "fix": "Choose one side and enforce it in both chapters. If the wound is self-inflicted by a right-handed person, left temple is anatomically more plausible; if staged, right temple may serve the plot. Whichever is chosen, update every reference in chapters 14, 15, and any later mention.",
+      "acceptance_test": "Grep the manuscript for 'temple' and any laterality marker (left/right) near wound descriptions; all instances must agree on a single side.",
+      "finding_id": "WOUND_SIDE_CH14",
+      "rewrite_direction": "Revise snapshots/cycle_02/FINAL_NOVEL.md:3560; snapshots/cycle_02/FINAL_NOVEL.md:3616. Choose one side and enforce it in both chapters. If the wound is self-inflicted by a right-handed person, left temple is anatomically more plausible; if staged, right temple may serve the plot. Whichever is chosen, update every reference in chapters 14, 15, and any later mention."
+    },
+    {
+      "id": "WOUND_SIDE_CH15",
+      "chapter_id": "chapter_15",
+      "severity": "HIGH",
+      "category": "continuity",
+      "problem": "Chapter 15 describes Joel's wound at the 'left temple' (line 3695) and 'left side of the head' (line 3777), contradicting chapter 14's 'right temple' placement. This is the paired finding to WOUND_SIDE_CH14.",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:3695; snapshots/cycle_02/FINAL_NOVEL.md:3777",
+      "fix": "Align with the side chosen for chapter 14. Update lines 3695 and 3777 and any downstream forensic reasoning that depends on wound placement.",
+      "acceptance_test": "All wound-side references in chapters 14 through 18 must specify the same laterality, confirmed by full-text search for 'temple', 'side of the head', and related wound descriptors.",
+      "finding_id": "WOUND_SIDE_CH15",
+      "rewrite_direction": "Revise snapshots/cycle_02/FINAL_NOVEL.md:3695; snapshots/cycle_02/FINAL_NOVEL.md:3777. Align with the side chosen for chapter 14. Update lines 3695 and 3777 and any downstream forensic reasoning that depends on wound placement."
+    },
+    {
+      "id": "DOUG_BASELINE_RETEACH_CH14",
+      "chapter_id": "chapter_14",
+      "severity": "MEDIUM",
+      "category": "pacing",
+      "problem": "Chapter 14 (lines 3472-3528) re-teaches Doug's medication routine, observation role, and dock ritual as though the reader has not encountered them before. These details were fully established in chapter 7 (lines 1789-1955). The redundancy slows a chapter whose engine is supposed to be escalating dread, and it reads as a parallel-drafting artifact where the chapter 14 agent did not have access to chapter 7's coverage.",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:3472; snapshots/cycle_02/FINAL_NOVEL.md:3528",
+      "fix": "Cut or compress the re-introduction to a single sentence that references the established routine (e.g., 'Doug ran his usual inventory') and move directly into the disruption that makes this scene matter. Retain only details that have changed since chapter 7.",
+      "acceptance_test": "Chapter 14's Doug passage should not exceed three sentences before introducing new information or changed circumstances. No detail from the chapter 7 baseline should be repeated verbatim or at comparable length.",
+      "finding_id": "DOUG_BASELINE_RETEACH_CH14",
+      "rewrite_direction": "Revise snapshots/cycle_02/FINAL_NOVEL.md:3472; snapshots/cycle_02/FINAL_NOVEL.md:3528. Cut or compress the re-introduction to a single sentence that references the established routine (e.g., 'Doug ran his usual inventory') and move directly into the disruption that makes this scene matter. Retain only details that have changed since chapter 7."
+    }
+  ],
+  "pattern_findings": [
+    {
+      "id": "FIRE_DOC_CONTRADICTIONS",
+      "severity": "CRITICAL",
+      "category": "continuity",
+      "global_problem": "The RT document describing the 2002 fire is the evidentiary spine of the mystery, yet it is rendered four materially incompatible ways across four chapters. Chapters 8 and 16 both depict a character reading the same physical document but describe different dates (Aug 17 vs Aug 14), page counts (four pages vs three sheets), accelerants (kerosene heater vs gasoline near space heater), structures (cabin kitchen vs shed), and victim positions (back bedroom vs unspecified). Chapter 12 gives Tommy's memory of a bonfire with lighter fluid jumping to a porch. Chapter 17 gives Tommy's confession describing a cigarette-and-propane-line fire at 'Martin's uncle's place' with the victim 'in the front cabin.' No two accounts agree on accelerant, structure, date, or victim location. In a mystery where the document is the central proof, this is a plot-destroying inconsistency.",
+      "chapter_ids": [
+        "chapter_08",
+        "chapter_12",
+        "chapter_16",
+        "chapter_17"
+      ],
+      "chapter_hits": [
+        {
+          "chapter_id": "chapter_08",
+          "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:2070; snapshots/cycle_02/FINAL_NOVEL.md:2095",
+          "local_note": "Cliff reads the RT document: dated Aug 17 2002, four pages, kerosene heater knocked over in cabin kitchen, Toomey in back bedroom, 'friend of Tommy's uncle named Gunderson.'",
+          "problem": "Cliff reads the RT document: dated Aug 17 2002, four pages, kerosene heater knocked over in cabin kitchen, Toomey in back bedroom, 'friend of Tommy's uncle named Gunderson.'",
+          "rewrite_direction": "Revise snapshots/cycle_02/FINAL_NOVEL.md:2070; snapshots/cycle_02/FINAL_NOVEL.md:2095. Establish one canonical version of the 2002 fire (date, accelerant, structure, victim location, document page count) and enforce it wherever the RT document is read on-page (chapters 8 and 16 must match exactly). Tommy's memory (chapter 12) and confession (chapter 17) may diverge from the document if the divergence is intentional and flagged as unreliable narration, but the two on-page readings of the same physical document must be identical.",
+          "acceptance_test": "Pass if the revised material at snapshots/cycle_02/FINAL_NOVEL.md:2070; snapshots/cycle_02/FINAL_NOVEL.md:2095 now follows the rewrite direction and no longer exhibits the described defect. Fail if a cold reader would still identify the same underlying problem in those cited passages."
+        },
+        {
+          "chapter_id": "chapter_12",
+          "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:3050; snapshots/cycle_02/FINAL_NOVEL.md:3075",
+          "local_note": "Tommy's memory of the fire: bonfire outside, lighter fluid, fire jumped to porch, 'buddy's family place.' No document is referenced \u2014 this is recall, but it contradicts the document that supposedly records the same event.",
+          "problem": "Tommy's memory of the fire: bonfire outside, lighter fluid, fire jumped to porch, 'buddy's family place.' No document is referenced \u2014 this is recall, but it contradicts the document that supposedly records the same event.",
+          "rewrite_direction": "Revise snapshots/cycle_02/FINAL_NOVEL.md:3050; snapshots/cycle_02/FINAL_NOVEL.md:3075. Establish one canonical version of the 2002 fire (date, accelerant, structure, victim location, document page count) and enforce it wherever the RT document is read on-page (chapters 8 and 16 must match exactly). Tommy's memory (chapter 12) and confession (chapter 17) may diverge from the document if the divergence is intentional and flagged as unreliable narration, but the two on-page readings of the same physical document must be identical.",
+          "acceptance_test": "Pass if the revised material at snapshots/cycle_02/FINAL_NOVEL.md:3050; snapshots/cycle_02/FINAL_NOVEL.md:3075 now follows the rewrite direction and no longer exhibits the described defect. Fail if a cold reader would still identify the same underlying problem in those cited passages."
+        },
+        {
+          "chapter_id": "chapter_16",
+          "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:4050; snapshots/cycle_02/FINAL_NOVEL.md:4080",
+          "local_note": "Joel reads the same physical RT document Cliff read in chapter 8, but now it is dated Aug 14 2002, three sheets, gasoline can near space heater, shed fire (not cabin). The document cannot have changed between readings.",
+          "problem": "Joel reads the same physical RT document Cliff read in chapter 8, but now it is dated Aug 14 2002, three sheets, gasoline can near space heater, shed fire (not cabin). The document cannot have changed between readings.",
+          "rewrite_direction": "Revise snapshots/cycle_02/FINAL_NOVEL.md:4050; snapshots/cycle_02/FINAL_NOVEL.md:4080. Establish one canonical version of the 2002 fire (date, accelerant, structure, victim location, document page count) and enforce it wherever the RT document is read on-page (chapters 8 and 16 must match exactly). Tommy's memory (chapter 12) and confession (chapter 17) may diverge from the document if the divergence is intentional and flagged as unreliable narration, but the two on-page readings of the same physical document must be identical.",
+          "acceptance_test": "Pass if the revised material at snapshots/cycle_02/FINAL_NOVEL.md:4050; snapshots/cycle_02/FINAL_NOVEL.md:4080 now follows the rewrite direction and no longer exhibits the described defect. Fail if a cold reader would still identify the same underlying problem in those cited passages."
+        },
+        {
+          "chapter_id": "chapter_17",
+          "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:4350; snapshots/cycle_02/FINAL_NOVEL.md:4380",
+          "local_note": "Tommy's confession version: cigarette in bed, propane line, 'Martin's uncle's place,' victim 'in the front cabin.' This is a fifth distinct account of accelerant and structure.",
+          "problem": "Tommy's confession version: cigarette in bed, propane line, 'Martin's uncle's place,' victim 'in the front cabin.' This is a fifth distinct account of accelerant and structure.",
+          "rewrite_direction": "Revise snapshots/cycle_02/FINAL_NOVEL.md:4350; snapshots/cycle_02/FINAL_NOVEL.md:4380. Establish one canonical version of the 2002 fire (date, accelerant, structure, victim location, document page count) and enforce it wherever the RT document is read on-page (chapters 8 and 16 must match exactly). Tommy's memory (chapter 12) and confession (chapter 17) may diverge from the document if the divergence is intentional and flagged as unreliable narration, but the two on-page readings of the same physical document must be identical.",
+          "acceptance_test": "Pass if the revised material at snapshots/cycle_02/FINAL_NOVEL.md:4350; snapshots/cycle_02/FINAL_NOVEL.md:4380 now follows the rewrite direction and no longer exhibits the described defect. Fail if a cold reader would still identify the same underlying problem in those cited passages."
+        }
+      ],
+      "fix": "Establish one canonical version of the 2002 fire (date, accelerant, structure, victim location, document page count) and enforce it wherever the RT document is read on-page (chapters 8 and 16 must match exactly). Tommy's memory (chapter 12) and confession (chapter 17) may diverge from the document if the divergence is intentional and flagged as unreliable narration, but the two on-page readings of the same physical document must be identical.",
+      "acceptance_test": "Extract every factual claim about the 2002 fire from all four chapters into a comparison table. The two document-reading scenes (chapters 8 and 16) must agree on date, page count, accelerant, structure, and victim position. Any divergence in Tommy's accounts (chapters 12 and 17) must be narratively motivated and legible as unreliable recall or deliberate omission.",
+      "pattern_id": "FIRE_DOC_CONTRADICTIONS",
+      "affected_chapters": [
+        "chapter_08",
+        "chapter_12",
+        "chapter_16",
+        "chapter_17"
+      ]
+    },
+    {
+      "id": "SAFE_CONTENTS_PHYSICAL",
+      "severity": "MEDIUM",
+      "category": "continuity",
+      "global_problem": "The wall safe's physical contents are described with incompatible specifics across three chapters. Cash amount shifts from approximately $2,000 (chapter 8) to $860 (chapter 11) with no on-page withdrawal. The envelope changes from 'legal-size manila' (chapter 8) to 'letter-sized' (chapter 11) to 'yellow RT envelope' (chapter 16). The document inside changes from 'four pages' / 'four sheets, eight images' (chapter 8) to 'three sheets' (chapter 16). These are not perspective differences \u2014 they are physical objects whose dimensions and quantities should not change between observations.",
+      "chapter_ids": [
+        "chapter_08",
+        "chapter_11",
+        "chapter_16"
+      ],
+      "chapter_hits": [
+        {
+          "chapter_id": "chapter_08",
+          "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:2055; snapshots/cycle_02/FINAL_NOVEL.md:2070",
+          "local_note": "Cliff opens the safe: cash approximately $2,000, 'legal-size manila envelope,' document described as 'four pages' and later 'four sheets, eight images.'",
+          "problem": "Cliff opens the safe: cash approximately $2,000, 'legal-size manila envelope,' document described as 'four pages' and later 'four sheets, eight images.'",
+          "rewrite_direction": "Revise snapshots/cycle_02/FINAL_NOVEL.md:2055; snapshots/cycle_02/FINAL_NOVEL.md:2070. Fix one canonical description of the safe contents (cash amount, envelope size and color, document page count) and use it in every scene where the safe is opened. If cash is removed between scenes, show it on-page or reference it. The envelope and document are the same physical objects and must match across all observations.",
+          "acceptance_test": "Pass if the revised material at snapshots/cycle_02/FINAL_NOVEL.md:2055; snapshots/cycle_02/FINAL_NOVEL.md:2070 now follows the rewrite direction and no longer exhibits the described defect. Fail if a cold reader would still identify the same underlying problem in those cited passages."
+        },
+        {
+          "chapter_id": "chapter_11",
+          "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:2820; snapshots/cycle_02/FINAL_NOVEL.md:2840",
+          "local_note": "Safe contents observed again: cash $860, 'sealed manila envelope, letter-sized.' No scene accounts for the missing $1,140 or the envelope's size change.",
+          "problem": "Safe contents observed again: cash $860, 'sealed manila envelope, letter-sized.' No scene accounts for the missing $1,140 or the envelope's size change.",
+          "rewrite_direction": "Revise snapshots/cycle_02/FINAL_NOVEL.md:2820; snapshots/cycle_02/FINAL_NOVEL.md:2840. Fix one canonical description of the safe contents (cash amount, envelope size and color, document page count) and use it in every scene where the safe is opened. If cash is removed between scenes, show it on-page or reference it. The envelope and document are the same physical objects and must match across all observations.",
+          "acceptance_test": "Pass if the revised material at snapshots/cycle_02/FINAL_NOVEL.md:2820; snapshots/cycle_02/FINAL_NOVEL.md:2840 now follows the rewrite direction and no longer exhibits the described defect. Fail if a cold reader would still identify the same underlying problem in those cited passages."
+        },
+        {
+          "chapter_id": "chapter_16",
+          "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:4050; snapshots/cycle_02/FINAL_NOVEL.md:4065",
+          "local_note": "Joel opens the safe: 'yellow RT envelope,' document now 'three sheets.' Envelope color and document page count differ from both prior descriptions.",
+          "problem": "Joel opens the safe: 'yellow RT envelope,' document now 'three sheets.' Envelope color and document page count differ from both prior descriptions.",
+          "rewrite_direction": "Revise snapshots/cycle_02/FINAL_NOVEL.md:4050; snapshots/cycle_02/FINAL_NOVEL.md:4065. Fix one canonical description of the safe contents (cash amount, envelope size and color, document page count) and use it in every scene where the safe is opened. If cash is removed between scenes, show it on-page or reference it. The envelope and document are the same physical objects and must match across all observations.",
+          "acceptance_test": "Pass if the revised material at snapshots/cycle_02/FINAL_NOVEL.md:4050; snapshots/cycle_02/FINAL_NOVEL.md:4065 now follows the rewrite direction and no longer exhibits the described defect. Fail if a cold reader would still identify the same underlying problem in those cited passages."
+        }
+      ],
+      "fix": "Fix one canonical description of the safe contents (cash amount, envelope size and color, document page count) and use it in every scene where the safe is opened. If cash is removed between scenes, show it on-page or reference it. The envelope and document are the same physical objects and must match across all observations.",
+      "acceptance_test": "Grep for 'safe,' 'envelope,' and 'manila' across the manuscript. Every physical description of the same object must be consistent. If cash amount changes, the withdrawal must be shown or referenced on-page.",
+      "pattern_id": "SAFE_CONTENTS_PHYSICAL",
+      "affected_chapters": [
+        "chapter_08",
+        "chapter_11",
+        "chapter_16"
+      ]
+    }
+  ]
+}

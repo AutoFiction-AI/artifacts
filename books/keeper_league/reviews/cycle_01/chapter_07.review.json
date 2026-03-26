@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_07",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH07_CONTINUITY_WEEKEND_TIMELINE",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:7; snapshots/cycle_01/chapters/chapter_07.md:75; snapshots/cycle_01/chapters/chapter_07.md:127",
+      "problem": "The chapter places the group's arrival and the draft-night memories on Friday, but the continuity sheet canon has the men arriving and drafting on Thursday, with Martin dying early Saturday. Line 7 also says the bottles sat upstairs for 'approximately fourteen hours' before Martin died, which conflicts with both the canonical weekend timeline and this chapter's own 3 A.M. retrieval. This is a direct continuity contradiction, not a permissible ambiguity.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_07.md:7, reset the bottle-stashing beat to the canonical Thursday arrival and adjust the elapsed-time language so it matches a Saturday-early-morning death. At snapshots/cycle_01/chapters/chapter_07.md:75 and snapshots/cycle_01/chapters/chapter_07.md:127, replace the Friday-arrival/Friday-draft phrasing with canon-accurate references to draft night and the later fatal night so the weekend sequence is internally and globally consistent.",
+      "acceptance_test": "Pass only if a cold reader can reconstruct one coherent sequence from the revised chapter alone: the group arrives and drafts on Thursday, Martin dies early Saturday, Doug retrieves the bottles around 3 A.M. Saturday, and no line in snapshots/cycle_01/chapters/chapter_07.md:7, snapshots/cycle_01/chapters/chapter_07.md:75, or snapshots/cycle_01/chapters/chapter_07.md:127 implies a Friday-arrival or Friday-draft version of events."
+    },
+    {
+      "finding_id": "CH07_AWARD_DOCK_OVEREXPLAINS",
+      "source": "award",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:177; snapshots/cycle_01/chapters/chapter_07.md:181; snapshots/cycle_01/chapters/chapter_07.md:183; snapshots/cycle_01/chapters/chapter_07.md:187; snapshots/cycle_01/chapters/chapter_07.md:193",
+      "problem": "The dock sequence reaches its emotional arrival by the time Doug realizes he is glad he came and that Martin had understood the shape of his unhappiness, then keeps re-proving the same point through additional thesis-heavy explanation. The result is a good character chapter that still reads more controlled in outline than on the page: instead of trusting the lake, Martin-memory, and return to the basement to land the turn, the prose keeps annotating Doug's depression after the turn has already happened.",
+      "rewrite_direction": "Compress the dock close centered on snapshots/cycle_01/chapters/chapter_07.md:177, snapshots/cycle_01/chapters/chapter_07.md:181, snapshots/cycle_01/chapters/chapter_07.md:183, snapshots/cycle_01/chapters/chapter_07.md:187, and snapshots/cycle_01/chapters/chapter_07.md:193. Preserve the must-land beats in that material: Doug is unexpectedly glad he came, Martin's July call mattered, and he returns inside unable to sleep. After those beats land, either end the chapter on the concrete dock-to-basement movement already present or replace the remaining explanation with one genuinely new pressure, decision, or consequence. Do not spend a second pass translating the same sadness into abstract summary at snapshots/cycle_01/chapters/chapter_07.md:187 and snapshots/cycle_01/chapters/chapter_07.md:193.",
+      "acceptance_test": "Pass only if the revised dock passage lands Doug's gratitude-for-showing-up and Martin-memory once, then exits within one further beat on a concrete action or image. If material equivalent to snapshots/cycle_01/chapters/chapter_07.md:187 or snapshots/cycle_01/chapters/chapter_07.md:193 remains, it must introduce new pressure beyond restating that Doug is depressed, hidden, and barely hanging on; otherwise the scene still fails."
+    },
+    {
+      "finding_id": "CH07_PROSE_TEMPLATE_REPETITION",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:17; snapshots/cycle_01/chapters/chapter_07.md:41; snapshots/cycle_01/chapters/chapter_07.md:73; snapshots/cycle_01/chapters/chapter_07.md:77; snapshots/cycle_01/chapters/chapter_07.md:81; snapshots/cycle_01/chapters/chapter_07.md:171; snapshots/cycle_01/chapters/chapter_07.md:181; snapshots/cycle_01/chapters/chapter_07.md:187",
+      "problem": "The prose falls back on repeated templates and style-bible tag language often enough to feel generated rather than freshly observed. Doug is repeatedly defined as the quiet/easy one who 'got more ice,' while the chapter also leans on the same scaffolds ('the specific ...', 'It was the thing ...') across unrelated beats. Because those recurrences do the same characterization work each time, they flatten Doug's voice instead of deepening it.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_07.md:17, snapshots/cycle_01/chapters/chapter_07.md:77, snapshots/cycle_01/chapters/chapter_07.md:81, snapshots/cycle_01/chapters/chapter_07.md:181, and snapshots/cycle_01/chapters/chapter_07.md:187, keep Doug's role in the group but replace repeated label phrases with new concrete observations, bodily detail, or scene-specific thought. At snapshots/cycle_01/chapters/chapter_07.md:41, snapshots/cycle_01/chapters/chapter_07.md:73, snapshots/cycle_01/chapters/chapter_07.md:171, and snapshots/cycle_01/chapters/chapter_07.md:187, vary or cut the recurring sentence scaffolds so any retained repetition feels intentional and load-bearing rather than autopilot.",
+      "acceptance_test": "Pass only if the opening, great-room, and dock passages no longer reuse the exact quiet/easy-one-plus-'got more ice' phrasing more than once across the cited spans, and no more than one of the cited beats relies on the 'the specific ...' scaffold. Each retained recurrence must mark a changed meaning or sharper pressure, not merely restate Doug's role."
+    }
+  ],
+  "summary": "Doug's shame, depression, and observational intelligence are rendered with real specificity, and the chapter's dialogue remains character-true. The review still fails because the draft breaks the canonical weekend timeline, keeps certifying its emotional point after the dock scene has already landed, and falls into repeated template phrasing that makes Doug's voice feel annotated in places instead of fully lived."
+}

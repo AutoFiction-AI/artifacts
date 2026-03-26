@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_11",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH11_CONTINUITY_HOUSE_LAYOUT",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_03/chapters/chapter_11.md:11; snapshots/cycle_03/chapters/chapter_11.md:17; snapshots/cycle_03/chapters/chapter_11.md:35",
+      "problem": "The chapter drifts off the continuity sheet's house map in two operationally important places. Line 11 says Paul and Joel took the basement pullouts even though the continuity sheet establishes Nate and Doug as the basement roommates, and lines 17 and 35 have Paul go upstairs to Martin's room and then reach the study by simply going down the hall even though the study is canonically a ground-floor office. Because this chapter's central turn depends on a believable search path to the safe, the geography error reads as a real continuity break, not a harmless staging blur.",
+      "rewrite_direction": "Revise snapshots/cycle_03/chapters/chapter_11.md:11 so Paul and Joel sleep in a canon-consistent location, and revise the movement around snapshots/cycle_03/chapters/chapter_11.md:17 and snapshots/cycle_03/chapters/chapter_11.md:35 so Paul must transition from the upper floor to the ground floor before entering Martin's study. Keep Nate and Doug as the basement sleepers unless you add an explicit on-page explanation that reconciles the swap with the established house use.",
+      "acceptance_test": "Pass if a cold read of snapshots/cycle_03/chapters/chapter_11.md:11 through snapshots/cycle_03/chapters/chapter_11.md:35 leaves Nate and Doug as the basement roommates, places Paul and Joel in a canon-consistent sleeping arrangement, and makes Paul clearly change floors between Martin's bedroom and the study. Fail if Paul and Joel still 'take the basement beds' without explanation or if the study still reads as a same-hall room off Martin's upstairs bedroom."
+    },
+    {
+      "finding_id": "CH11_PROSE_OVERSTATEMENT_CLOSE",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_03/chapters/chapter_11.md:147; snapshots/cycle_03/chapters/chapter_11.md:149; snapshots/cycle_03/chapters/chapter_11.md:193; snapshots/cycle_03/chapters/chapter_11.md:195; snapshots/cycle_03/chapters/chapter_11.md:197",
+      "problem": "The chapter lands Paul's realization before the ending, then keeps translating it into thesis language. By line 147 the loyalty hierarchy is already clear, and lines 149-152 convert the evidence into an explicit pattern statement. After Joel leaves, lines 193-197 restate the same point again, including a repeated 'first loyalty' sentence and the abstract 'load-bearing facts of a friendship' close. That extra paraphrase dulls the sting instead of sharpening it.",
+      "rewrite_direction": "Compress or rework the recap beats at snapshots/cycle_03/chapters/chapter_11.md:145, snapshots/cycle_03/chapters/chapter_11.md:149, snapshots/cycle_03/chapters/chapter_11.md:193, and snapshots/cycle_03/chapters/chapter_11.md:197. Keep one clear articulation of Paul's new understanding, then use the last beat to create fresh pressure through something concrete already on the page: his concealment from Joel, the lawyer's number in his pocket, or the unopened RT envelope he chose not to read.",
+      "acceptance_test": "Pass if the material after Joel exits in snapshots/cycle_03/chapters/chapter_11.md:187 produces a new visible pressure or decision rather than another thematic restatement, and if the exact sentence 'It just had not been the first loyalty' appears no more than once in the chapter. Fail if the final paragraphs still mainly paraphrase Paul's jealousy and Martin's preference for Tommy after the will/memory sequence has already made that hierarchy legible."
+    }
+  ],
+  "summary": "The chapter has a strong emotional engine and a clean Paul/Joel exchange, but it does not pass review. A canonical house-layout break undercuts the study discovery, and the closing pages keep explaining Paul's realization after the will and memory evidence have already landed. Fix the continuity and let the ending generate new pressure instead of re-proving the same loyalty thesis."
+}

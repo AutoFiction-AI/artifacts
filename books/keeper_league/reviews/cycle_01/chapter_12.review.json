@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_12",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH12_CONTINUITY_ELAPSED_TIME",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:3; snapshots/cycle_01/chapters/chapter_12.md:7",
+      "problem": "The opening timestamps the scene as Monday afternoon, then says \"It had been four days. Four days since Martin,\" which contradicts the canonical timeline where Martin dies early Saturday and this confrontation happens Monday afternoon. Breaking the elapsed-time count on the first page damages continuity trust before the chapter's main leverage turn even starts.",
+      "rewrite_direction": "Revise snapshots/cycle_01/chapters/chapter_12.md:3 and snapshots/cycle_01/chapters/chapter_12.md:7 so Tommy's time count matches a Monday-afternoon scene roughly two to three days after Martin's death. Keep the deck isolation and house-mourning texture, but replace the four-day phrasing with a count or marker Tommy would actually use for that shorter interval.",
+      "acceptance_test": "PASS if a cold reader can read snapshots/cycle_01/chapters/chapter_12.md:3 through snapshots/cycle_01/chapters/chapter_12.md:7 and infer a Monday-afternoon confrontation taking place about two to three days after the Saturday death; FAIL if the revised opening still states or implies a four-day gap."
+    },
+    {
+      "finding_id": "CH12_DIALOGUE_STYLE_BIBLE_ECHO",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:49; snapshots/cycle_01/chapters/chapter_12.md:57",
+      "problem": "Cliff's centerpiece pitch imports calibration-only style-bible material almost verbatim. The lead-in at line 49 and the debt-justification phrasing at line 57 closely echo non-copyable Cliff example lines, so the chapter-defining confrontation reads referenced rather than freshly spoken.",
+      "rewrite_direction": "Rebuild Cliff's proposition in snapshots/cycle_01/chapters/chapter_12.md:49 through snapshots/cycle_01/chapters/chapter_12.md:58 with fresh wording and a fresh sentence rhythm. Preserve Cliff's smooth, transactional, real-estate-sales cadence and his attempt to sound reasonable, but do not reuse the style bible's calibration phrasing or its exact rhetorical shape.",
+      "acceptance_test": "PASS if snapshots/cycle_01/chapters/chapter_12.md:49 through snapshots/cycle_01/chapters/chapter_12.md:58 no longer contain the phrases \"here's what I'm thinking,\" \"putting this out there, no pressure,\" or the paired \"forty thousand ... not a rounding error\" formulation, while Cliff's ask and desperation remain plainly legible; FAIL if the revised beat still reads like a style-bible lift."
+    },
+    {
+      "finding_id": "CH12_POST_FLASHBACK_RESTATEMENT",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:117; snapshots/cycle_01/chapters/chapter_12.md:121; snapshots/cycle_01/chapters/chapter_12.md:145; snapshots/cycle_01/chapters/chapter_12.md:151; snapshots/cycle_01/chapters/chapter_12.md:203; snapshots/cycle_01/chapters/chapter_12.md:227; snapshots/cycle_01/chapters/chapter_12.md:245; snapshots/cycle_01/chapters/chapter_12.md:251",
+      "problem": "The chapter lands its central transaction before the flashback: Cliff has named the leverage, Tommy has outwardly agreed, and the document's status is already clear. When the deck scene resumes, Cliff spends another long pass re-translating the same arrangement into cleaner thematic language before the chapter reaches the only new operational fact. That is structural recurrence and overstatement after arrival: the later material certifies what the reader already understands instead of turning immediately to a new cost.",
+      "rewrite_direction": "Compress or re-engineer snapshots/cycle_01/chapters/chapter_12.md:197 through snapshots/cycle_01/chapters/chapter_12.md:251 so Cliff's return introduces a new complication immediately - the phone/cloud persistence, a concrete next step, or another irreversible condition - instead of repeating Paul's role, the debt's legitimacy, and Cliff's reasonableness. Preserve the must-land beats that Cliff has documented the letter and that Tommy imposes a clean-break condition.",
+      "acceptance_test": "PASS if the first substantive exchange after snapshots/cycle_01/chapters/chapter_12.md:197 adds a fact, cost, or condition not already established in snapshots/cycle_01/chapters/chapter_12.md:117 through snapshots/cycle_01/chapters/chapter_12.md:151, and the scene exits once Tommy has that new complication plus the clean-break beat; FAIL if the resumed scene still spends multiple exchanges restating the original arrangement before anything new happens."
+    },
+    {
+      "finding_id": "CH12_MECHANICAL_PROSE_REPETITION",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:127; snapshots/cycle_01/chapters/chapter_12.md:143; snapshots/cycle_01/chapters/chapter_12.md:215; snapshots/cycle_01/chapters/chapter_12.md:275",
+      "problem": "The chapter reuses its own marked constructions almost verbatim. Tommy's violent ideation appears twice as a whiteboard or play-diagram shape with lines and arrows, and Cliff's self-serving misread appears twice as the option-three interpretation that confirms the deal. Once would read as choice; repeated this tightly, the phrasing reads as autopilot and overproves beats the reader already has.",
+      "rewrite_direction": "Rework one passage in each repeated pair: either snapshots/cycle_01/chapters/chapter_12.md:127 or snapshots/cycle_01/chapters/chapter_12.md:275, and either snapshots/cycle_01/chapters/chapter_12.md:143 or snapshots/cycle_01/chapters/chapter_12.md:215. Keep Tommy's coaching cognition and Cliff's self-confirming optimism, but let the later beats advance through new sensory or strategic observation instead of recycled metaphor and recycled interpretive wording.",
+      "acceptance_test": "PASS if the later violent-turn beat and the later Cliff-misread beat are no longer phrased as near-duplicates of the earlier ones: snapshots/cycle_01/chapters/chapter_12.md:275 must not reuse the same whiteboard or lines-and-arrows metaphor from snapshots/cycle_01/chapters/chapter_12.md:127, and snapshots/cycle_01/chapters/chapter_12.md:215 must not repeat the option-three or confirmed-the-deal wording from snapshots/cycle_01/chapters/chapter_12.md:143. FAIL if both later passages still read as reheated copies."
+    }
+  ],
+  "summary": "Fail. The chapter has real pressure and a vivid, unsanitized fire memory, but it breaks continuity in the opening time count, lifts calibration-only Cliff phrasing into the main confrontation, and then overstates the turn through repeated post-flashback negotiation and repeated internal phrasing."
+}
