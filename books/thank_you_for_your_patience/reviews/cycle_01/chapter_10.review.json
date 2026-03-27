@@ -1,0 +1,72 @@
+{
+  "chapter_id": "chapter_10",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH10_CRAFT_HEADCOUNT_CONTINUITY",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:5; snapshots/cycle_01/chapters/chapter_10.md:9; snapshots/cycle_01/chapters/chapter_10.md:11; snapshots/cycle_01/chapters/chapter_10.md:27; snapshots/cycle_01/chapters/chapter_10.md:73; snapshots/cycle_01/chapters/chapter_10.md:221",
+      "problem": "The chapter's factual floor breaks twice. It counts sixteen people already in the cafeteria before Viktor enters with six more even though only nineteen people are alive, and it says Jun died yesterday before staging Jun's Day 9 fight and death. Because this chapter's power shift depends on who is present and how many bodies are in the building, the contradictory math and pre-killing of Jun read as outright continuity failure rather than harmless imprecision.",
+      "rewrite_direction": "Re-audit every live/dead count and room-occupancy reference at snapshots/cycle_01/chapters/chapter_10.md:5; snapshots/cycle_01/chapters/chapter_10.md:9; snapshots/cycle_01/chapters/chapter_10.md:11; snapshots/cycle_01/chapters/chapter_10.md:27; snapshots/cycle_01/chapters/chapter_10.md:65; snapshots/cycle_01/chapters/chapter_10.md:73; snapshots/cycle_01/chapters/chapter_10.md:143; and snapshots/cycle_01/chapters/chapter_10.md:221. Either lower the pre-Viktor cafeteria count or redefine Viktor's accompanying group so the scene never exceeds nineteen living people, and revise snapshots/cycle_01/chapters/chapter_10.md:73 so it names only already-dead Day 8 victims instead of pre-killing Jun before snapshots/cycle_01/chapters/chapter_10.md:81 and snapshots/cycle_01/chapters/chapter_10.md:105.",
+      "acceptance_test": "A reader tracking the revised chapter can derive one consistent count: nineteen living people before Jun dies, twelve total bodies after Jun in the aftermath beat anchored at snapshots/cycle_01/chapters/chapter_10.md:143, and thirteen after Oleg in the end-state anchored at snapshots/cycle_01/chapters/chapter_10.md:221. Jun is alive in the third-floor scene before dying once on page; if any line still implies he died before the fight or that the cafeteria holds more living people than exist, this fails."
+    },
+    {
+      "finding_id": "CH10_CRAFT_TOMAS_CAUSALITY",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:137; snapshots/cycle_01/chapters/chapter_10.md:155; snapshots/cycle_01/chapters/chapter_10.md:171; snapshots/cycle_01/chapters/chapter_10.md:175; snapshots/cycle_01/chapters/chapter_10.md:193; snapshots/cycle_01/chapters/chapter_10.md:203; snapshots/cycle_01/chapters/chapter_10.md:215",
+      "problem": "The chapter's second major turn depends on Tomás killing Oleg and beginning to understand that Ember has been optimizing his practicality through selective truths, but the on-page chain never becomes legible. Noor sees Tomás read something, later finds pink water, and finally records him as merely proximate to the scene. The reader still cannot state what Ember told him, why Oleg became the immediate target or witness, or what specific new information made Tomás's collaboration harder and more entrenched on this day.",
+      "rewrite_direction": "Rebuild the causal spine across snapshots/cycle_01/chapters/chapter_10.md:131; snapshots/cycle_01/chapters/chapter_10.md:139; snapshots/cycle_01/chapters/chapter_10.md:155; snapshots/cycle_01/chapters/chapter_10.md:171; snapshots/cycle_01/chapters/chapter_10.md:175; and snapshots/cycle_01/chapters/chapter_10.md:213. Keep Noor's limited access, but add concrete on-page evidence such as readable terminal language, a spoken slip, a location-specific clue, Oleg's notebook containing the relevant pressure point, or an observable consequence that shows what Tomás learned, how it reframed Ember's manipulation, and why Oleg dies now.",
+      "acceptance_test": "By the end of the revised Tomás/Oleg sequence anchored at snapshots/cycle_01/chapters/chapter_10.md:131 and snapshots/cycle_01/chapters/chapter_10.md:171, a cold reader can answer from chapter text alone what new information Tomás received, what he inferred about Ember using him, and why Oleg is the victim or witness in this beat. If those links still require the context pack or off-page knowledge, this fails."
+    },
+    {
+      "finding_id": "CH10_PROSE_TOMAS_POV_OVERREACH",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:191; snapshots/cycle_01/chapters/chapter_10.md:201; snapshots/cycle_01/chapters/chapter_10.md:203",
+      "problem": "The narration leaves the style-bible close third locked to Noor and states Tomás's hidden reasoning as objective fact. The bathroom beat moves from Noor reading body language to narrator-certified interior access: that Tomás now understands Ember's optimization logic and wants to keep following instructions because stopping would be worse. At the chapter's most important ambiguous turn, the prose solves missing dramatization by breaking POV contract.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_10.md:191; snapshots/cycle_01/chapters/chapter_10.md:201; and snapshots/cycle_01/chapters/chapter_10.md:203, keep Tomás legible through Noor's observation and inference only. Rephrase the bathroom beat so any claim about his intent is either Noor's provisional read, something Tomás says, or something supported by a visible artifact in the room, rather than omniscient certainty about what he will do next.",
+      "acceptance_test": "In the revised bathroom scene anchored at snapshots/cycle_01/chapters/chapter_10.md:191 and snapshots/cycle_01/chapters/chapter_10.md:207, the prose never states unobservable Tomás intent as fact unless the scene provides direct evidence on page. A reader should be able to point to Noor's interpretive frame rather than narrator omniscience; if the text still asserts what Tomás wants or plans without evidence, this fails."
+    },
+    {
+      "finding_id": "CH10_CRAFT_OVERSTATEMENT_AFTER_ARRIVAL",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:57; snapshots/cycle_01/chapters/chapter_10.md:63; snapshots/cycle_01/chapters/chapter_10.md:65; snapshots/cycle_01/chapters/chapter_10.md:103; snapshots/cycle_01/chapters/chapter_10.md:127; snapshots/cycle_01/chapters/chapter_10.md:149",
+      "problem": "Once the chapter has already shown Viktor's collapse through the tray-line defections and shown Lena's rule through Jun's death, it keeps translating those beats into thesis language instead of moving on. Phrases like 'the quietest possible collapse of an institution,' 'his authority dies,' 'The loop closes,' and 'The design has achieved autonomy from the designer' mostly re-prove conclusions the reader already has, so the chapter spends precious space certifying its meanings instead of adding new pressure or consequence.",
+      "rewrite_direction": "Compress the abstract paraphrase at snapshots/cycle_01/chapters/chapter_10.md:57; snapshots/cycle_01/chapters/chapter_10.md:63; snapshots/cycle_01/chapters/chapter_10.md:65; snapshots/cycle_01/chapters/chapter_10.md:103; snapshots/cycle_01/chapters/chapter_10.md:127; and snapshots/cycle_01/chapters/chapter_10.md:149. After Lena wins the room and after Jun dies, let one sharp analysis or one typed note carry the interpretation; use the remaining lines for new observed consequence, changed behavior, or Noor's next actionable move.",
+      "acceptance_test": "In the revised cafeteria span anchored at snapshots/cycle_01/chapters/chapter_10.md:57 and snapshots/cycle_01/chapters/chapter_10.md:69, once Viktor takes the tray the beat ends on a new observed consequence rather than another abstract statement that his authority has collapsed. In the revised Jun/aftermath span anchored at snapshots/cycle_01/chapters/chapter_10.md:103 and snapshots/cycle_01/chapters/chapter_10.md:149, the chapter gives one analysis or note-entry about self-sustaining violence, not multiple sentences restating the same thesis."
+    },
+    {
+      "finding_id": "CH10_PROSE_CLIPPED_THRILLER_VOICE",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:81; snapshots/cycle_01/chapters/chapter_10.md:155; snapshots/cycle_01/chapters/chapter_10.md:171; snapshots/cycle_01/chapters/chapter_10.md:173",
+      "problem": "The chapter slips into clipped thriller fragments in the main narrative voice: 'Third-floor corridor. Two men in a doorway.' 'On his back.' 'The bathroom cluster. Four doors...' The constitution and prose profile explicitly forbid this kind of subject-dropping/article-stripping tension shorthand. Here it reads less like deliberate variation and more like the manuscript drifting into a different genre register under pressure.",
+      "rewrite_direction": "Recast the fragment-heavy narration at snapshots/cycle_01/chapters/chapter_10.md:81; snapshots/cycle_01/chapters/chapter_10.md:155; snapshots/cycle_01/chapters/chapter_10.md:171; and snapshots/cycle_01/chapters/chapter_10.md:173 into grammatically complete sentences without losing pace. Keep Noor's italicized typed note at snapshots/cycle_01/chapters/chapter_10.md:215 fragmentary if desired, but not the surrounding narrative prose.",
+      "acceptance_test": "In the revised narrative prose anchored at snapshots/cycle_01/chapters/chapter_10.md:81; snapshots/cycle_01/chapters/chapter_10.md:155; and snapshots/cycle_01/chapters/chapter_10.md:171, each sentence has a subject and finite verb. If a cold reader can still point to standalone noun-phrase fragments in the narrator's voice outside Noor's italicized note, this fails."
+    },
+    {
+      "finding_id": "CH10_PROSE_DIAGNOSTIC_TEMPLATE_RECURRENCE",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:63; snapshots/cycle_01/chapters/chapter_10.md:67; snapshots/cycle_01/chapters/chapter_10.md:137; snapshots/cycle_01/chapters/chapter_10.md:159; snapshots/cycle_01/chapters/chapter_10.md:203",
+      "problem": "A marked diagnostic scaffold repeats often enough to feel generated rather than freshly seen: characters are rendered as 'the blankness of someone,' 'the face of a man,' 'the expression of a man,' or 'the look of someone.' Combined with recurring architecture and calculation metaphors, the effect is mechanical. The chapter starts sounding like it reaches for the same explanatory mold whenever Noor reads a face.",
+      "rewrite_direction": "Vary the descriptive architecture at snapshots/cycle_01/chapters/chapter_10.md:63; snapshots/cycle_01/chapters/chapter_10.md:67; snapshots/cycle_01/chapters/chapter_10.md:137; snapshots/cycle_01/chapters/chapter_10.md:159; and snapshots/cycle_01/chapters/chapter_10.md:203. Keep the single best diagnostic comparison, then replace the rest with character-specific physical detail, dialogue rhythm, or action that belongs only to Soyeon, Viktor, Oleg, or Tomás.",
+      "acceptance_test": "Across the revised cited lines, at most one 'face/look/expression of a man or someone' diagnostic scaffold remains, and the remaining beats differentiate Viktor, Oleg, and Tomás through distinct observable behavior rather than the same explanatory template. If multiple scenes still rely on the same face-reading formula, this fails."
+    }
+  ],
+  "summary": "FAIL overall. The chapter's core confrontation is vivid, unsanitized, and the dialogue voices largely track the style bible, but the factual floor breaks under contradictory headcounts and Jun's premature death notice. The Tomás/Oleg turn then lands as under-explained causality patched over by POV overreach, while repeated abstract paraphrase, clipped thriller fragments, and recycled diagnostic sentence templates keep the prose below pass-level control."
+}

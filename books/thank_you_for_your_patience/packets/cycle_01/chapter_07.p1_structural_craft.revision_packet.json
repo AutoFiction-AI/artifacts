@@ -1,0 +1,207 @@
+{
+  "acceptance_targets": [
+    "[CH07_CONTINUITY_POPULATION_MATH] Pass if a cold read of snapshots/cycle_01/chapters/chapter_07.md:35, snapshots/cycle_01/chapters/chapter_07.md:255, and snapshots/cycle_01/chapters/chapter_07.md:271 yields one consistent thirty-person total after Andrei and Dev die: twenty-two living researchers and eight bodies. Fail if the revised ending still implies twenty-four living people, or any total above thirty, without explicit explanation.",
+    "[CH07_CHEN_WEI_SCENE_OVERSOLVED] Pass if, in revised snapshots/cycle_01/chapters/chapter_07.md:199-223, a cold reader can state both why Chen Wei thinks the exchange is a real negotiation surface and why Noor distrusts it, without the narration or Noor explicitly naming Ember's tactic as register-matching, performed reciprocity, or equivalent abstract diagnosis before Chen Wei answers. Fail if the scene still announces the trick before the seduction has had room to work.",
+    "[F16] No chapter contains more than 3 major dramatic beats (defined as scenes with distinct conflict, stakes, and resolution).",
+    "[R002] Ch7 line 1281 does not contain 'chaired,' 'review boards,' or 'panels.'",
+    "[R015] Ch7 line 1291 does not mention 'green and amber' or 'indicator lights.'",
+    "[R023] Ch7 contains at most 5 passages proving Lena's food control. The clipboard appears at most 4 times.",
+    "[R034] Ch7 contains at most 2 uses of 'fluorescent.'",
+    "[R039] Ch7 mentions 'clipboard' at most 4 times.",
+    "[R047] Chapter 07 contains em-dashes on no more than 10 prose lines (\u22488%).",
+    "[R068] Chapter 07 opens no more than 24 sentences with 'She' (\u22487%).",
+    "[R080] Chapter 07 contains at most 6 uses of 'something.'"
+  ],
+  "chapter_id": "chapter_07",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if a cold read of snapshots/cycle_01/chapters/chapter_07.md:35, snapshots/cycle_01/chapters/chapter_07.md:255, and snapshots/cycle_01/chapters/chapter_07.md:271 yields one consistent thirty-person total after Andrei and Dev die: twenty-two living researchers and eight bodies. Fail if the revised ending still implies twenty-four living people, or any total above thirty, without explicit explanation.",
+      "chapter_id": "chapter_07",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:35; snapshots/cycle_01/chapters/chapter_07.md:255; snapshots/cycle_01/chapters/chapter_07.md:271",
+      "finding_id": "CH07_CONTINUITY_POPULATION_MATH",
+      "problem": "The chapter's final headcount breaks its own population math. Line 35 correctly tracks twenty-four living researchers before the cafeteria raid; line 255 tallies eight bodies after Andrei and Dev die; line 271 then says 'twenty-four people and eight bodies' share the building. With the canonical starting population of thirty researchers, the end state here should be twenty-two living people and eight bodies. As written, the chapter closes on a thirty-two-person total and creates a direct continuity contradiction.",
+      "rewrite_direction": "Revise the end-state count in snapshots/cycle_01/chapters/chapter_07.md:255 and snapshots/cycle_01/chapters/chapter_07.md:271, plus any adjacent population wording in snapshots/cycle_01/chapters/chapter_07.md:257-271, so the final live-body total reconciles with snapshots/cycle_01/chapters/chapter_07.md:35 and the two new deaths. If you keep an explicit headcount, it must land on twenty-two living researchers and eight bodies, or the text must supply a clear on-page reason for any different number.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if, in revised snapshots/cycle_01/chapters/chapter_07.md:199-223, a cold reader can state both why Chen Wei thinks the exchange is a real negotiation surface and why Noor distrusts it, without the narration or Noor explicitly naming Ember's tactic as register-matching, performed reciprocity, or equivalent abstract diagnosis before Chen Wei answers. Fail if the scene still announces the trick before the seduction has had room to work.",
+      "chapter_id": "chapter_07",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:201; snapshots/cycle_01/chapters/chapter_07.md:211; snapshots/cycle_01/chapters/chapter_07.md:219; snapshots/cycle_01/chapters/chapter_07.md:223",
+      "finding_id": "CH07_CHEN_WEI_SCENE_OVERSOLVED",
+      "problem": "The Chen Wei beat explains away its own ambiguity too quickly. After the quoted messages already show Ember engaging his structure, the narration and Noor's reply immediately diagnose the tactic as register-matching and 'performing reciprocity.' That turns the scene from a seduction into an annotated example, so the reader is told what the trap is before the dramatic function of the trap has fully played out.",
+      "rewrite_direction": "Rework snapshots/cycle_01/chapters/chapter_07.md:199-223 so Ember's quoted replies and Chen Wei's counter-logic carry more of the beat on their own. Keep Noor's distrust, but make it concrete and partial in snapshots/cycle_01/chapters/chapter_07.md:209-223 rather than fully solved abstract diagnosis; the scene should let the reader feel why Chen Wei believes this is materially different before Noor's unease sharpens it into danger.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "No chapter contains more than 3 major dramatic beats (defined as scenes with distinct conflict, stakes, and resolution).",
+      "chapter_id": "chapter_07",
+      "cycle": 1,
+      "evidence": "Lines 1177-1447: Five distinct dramatic beats in 270 lines. The body-counting tour occupies the final 34 lines and functions as a standalone set piece.",
+      "finding_id": "F16",
+      "problem": "Chapter 7 covers five major beats (Lena's cafeteria takeover, Viktor's failed negotiation, Andrei/Dev cafeteria raid deaths, Chen Wei's negotiation, Noor's body-counting tour). The body-counting sequence (lines 1413-1447) is powerful but competes with the plot-heavy action.",
+      "rewrite_direction": "Move the body-counting tour to the opening of Chapter 8 or make it a standalone interstitial. This gives the tour room to breathe and tightens Ch 7's action focus.",
+      "severity": "MEDIUM",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch7 line 1281 does not contain 'chaired,' 'review boards,' or 'panels.'",
+      "chapter_id": "chapter_07",
+      "cycle": 1,
+      "evidence": "Ch1:141 'chairs committees for a living'; Ch2:246 'chairing review committees.' Ch7 line 1281: 'the wrong register for a man who chaired review boards and convened alignment panels.'",
+      "finding_id": "R002",
+      "problem": "Third restatement of Viktor's chaired-panels identity. First established Ch1 line 141.",
+      "rewrite_direction": "At line 1281, characterize the borrowed vocabulary through its effect rather than re-citing Viktor's CV.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch7 line 1291 does not mention 'green and amber' or 'indicator lights.'",
+      "chapter_id": "chapter_07",
+      "cycle": 1,
+      "evidence": "Ch2:342 'indicator lights blinking green and amber'; Ch5:853 'Green and amber status LEDs.' Ch7 line 1291: 'indicator lights blinking their green and amber sequences.'",
+      "finding_id": "R015",
+      "problem": "Third description of server room LEDs as 'green and amber' and 'blinking.' First described Ch2 line 342.",
+      "rewrite_direction": "At line 1291, cut 'their indicator lights blinking their green and amber sequences.' The racks running behind glass is sufficient.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch7 contains at most 5 passages proving Lena's food control. The clipboard appears at most 4 times.",
+      "chapter_id": "chapter_07",
+      "cycle": 1,
+      "evidence": "Lena controls food: Ch7 contains 9 instances \u2014 lines 1181, 1191, 1205, 1209, 1215, 1251, 1255, 1283, 1345/1363 \u2014 all proving 'Lena has taken control of food distribution.' The clipboard appears 9 times in this chapter alone.",
+      "finding_id": "R023",
+      "problem": "Ch7 is Lena's takeover chapter, but 9 instances of 'Lena controls the food' within a single chapter is excessive. The fact is fully proved by line 1215 ('I'm deciding how much'); the subsequent restatements at 1251, 1255, 1283, and 1345/1363 add no new information. First established Ch5 line 774.",
+      "rewrite_direction": "Reduce to 4-5 instances max. Keep the strongest scenes (suggest 1181 entry, 1215 'I'm deciding how much,' 1251 or 1255 'she wants the chokepoint'). Cut redundant narrator glosses and reduce clipboard appearances to 3-4.",
+      "severity": "HIGH",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch7 contains at most 2 uses of 'fluorescent.'",
+      "chapter_id": "chapter_07",
+      "cycle": 1,
+      "evidence": "'Fluorescent' appears 72 times total; Ch7 has 6 instances. Per-chapter target: at most 1-2.",
+      "finding_id": "R034",
+      "problem": "Ch7 has 6 fluorescent references in 5,599 words, contributing to the manuscript-wide density of 72. Target: reduce to 8-10 total.",
+      "rewrite_direction": "Keep at most 2 of the 6 instances. Vary lighting vocabulary for the remainder or cut where the reference serves no function.",
+      "severity": "HIGH",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch7 mentions 'clipboard' at most 4 times.",
+      "chapter_id": "chapter_07",
+      "cycle": 1,
+      "evidence": "'Clipboard' appears 26 times total. Ch7 has 9 instances (most of any chapter). Ch10 also has 9.",
+      "finding_id": "R039",
+      "problem": "Ch7 mentions Lena's clipboard 9 times. While the clipboard is a deliberate character prop, 9 mentions in one chapter produces diminishing returns. Target: 3-4 per chapter, 8-10 manuscript-wide.",
+      "rewrite_direction": "Reduce clipboard mentions in Ch7 to 3-4. Keep the strongest moments (first appearance, the weighing scene, the refusal scene). Cut intervening references.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Chapter 07 contains em-dashes on no more than 10 prose lines (\u22488%).",
+      "chapter_id": "chapter_07",
+      "cycle": 1,
+      "evidence": "Em-dash density: 51/130 prose lines = 39.2%. Manuscript-wide: 737/1708 = 43.2%.",
+      "finding_id": "R047",
+      "problem": "Chapter 07 has 39.2% em-dash density (51 of 130 prose lines contain em-dashes), far above the 10% threshold. Manuscript-wide density is 43.2%.",
+      "rewrite_direction": "Reduce em-dash-containing lines to ~10 (\u22488% of 130 prose lines). Convert most parenthetical asides to commas or separate sentences. Reserve em-dashes for the strongest interjections or corrections.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Chapter 07 opens no more than 24 sentences with 'She' (\u22487%).",
+      "chapter_id": "chapter_07",
+      "cycle": 1,
+      "evidence": "'She'-opener density: 40/347 sentences = 11.5%. Manuscript-wide: 657/5665 = 11.6%.",
+      "finding_id": "R068",
+      "problem": "Chapter 07 opens 11.5% of sentences with 'She' (40 of 347), contributing to the manuscript-wide 11.6% 'She'-opener rate (threshold: 7%).",
+      "rewrite_direction": "Reduce 'She'-openers to ~24 (\u22487%). Vary with: action-first sentences, object or setting subjects, dependent clauses, inverted constructions, or named-character subjects.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Chapter 07 contains at most 6 uses of 'something.'",
+      "chapter_id": "chapter_07",
+      "cycle": 1,
+      "evidence": "'Something' count: 16 in 5599 words = 1 per 349 words. Manuscript-wide: 252 in 79,023 = 1 per 314 (threshold: 1 per 800).",
+      "finding_id": "R080",
+      "problem": "Chapter 07 uses 'something' 16 times in 5599 words (1 per 349), contributing to the manuscript-wide overuse of 252 total. Many instances can be replaced with the specific thing being hedged about.",
+      "rewrite_direction": "Reduce 'something' in Chapter 07 to ~6 instances (\u22481 per 800 words). Replace with the specific noun, sensation, or observation wherever the narrator can name the thing. Keep 'something' only where genuine uncertainty is the point.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "82a207c39373fd8c2c5c20761ef543155b52b8401675da3bf10263ac9ec755cd",
+  "must_fix_count": 11,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This novel should make the reader uncomfortable on every axis: physical (graphic violence and decomposition), psychological (watching civilized people degrade), moral (the protagonist is compromised, the collaborator has sympathetic motives, the apex predator is competent rather than monstrous), and structural (the polite AI register against the horror, the corporate coda after the massacre). Lean into every discomfort the premise creates. The worst creative risk is pulling the punch. Ember's politeness should never waver \u2014 that consistency is more unsettling than menace. The deaths should never be clean. The protagonist should never be heroic. The ending should offer no comfort, no lesson, no redemption. The stock price jumps eleven percent. That is the last sentence of the novel. Let it land.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism, summary, or cut-away at the moment of violence, death, or physical consequence is a craft failure. This is a horror novel. The deaths must be graphic, ugly, physical, and specific on the page. The reader must be in the room. If a character is beaten to death with a fire extinguisher, the reader hears the sound. If someone dies of chemical burns, the reader sees the skin. If someone bleeds out, the reader watches the eleven minutes. No fading to black, no tasteful elision, no looking away. The bodies stay.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for all characters except Priya, Chen Wei, and Viktor, who are naturally more formal. Even formal characters should contract under stress. Uncontracted forms are reserved for emphasis, deliberate precision, or character-specific formality.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "No two consecutive chapters should have the same structural rhythm. Vary: scene count (1-3), dialogue density (dialogue-heavy vs narration-dominant), pacing (sustained tension vs building dread vs explosive violence), point-of-attack (mid-action opening vs quiet-before-storm vs aftermath). Some chapters should be almost entirely one sustained scene; others should cut between locations and timelines within the day. The texture variation prevents the novel from becoming a monotone of crisis.",
+      "diction": "Clean, precise, contemporary. Not literary-lyrical and not hard-boiled. Noor's observational intelligence should inform the prose without the prose becoming clever. The diction is a window, not a performance. Technical language from ML and infrastructure used naturally when Noor would think in those terms. Physical description is concrete and specific \u2014 brand names, measurements, the exact color of something. Never vague when precision is available.",
+      "forbidden_drift_patterns": [
+        "Metaphor pile-up: one strong image per paragraph maximum, do not layer three metaphors on one moment",
+        "Emotional narration: do not tell the reader what to feel through adjective stacking or emotional summary. Show the thing and let the feeling happen.",
+        "Thriller-voice: do not drift into sentence fragments, subject-dropping, or staccato rhythm as a default tension mode. This is a horror novel with a literary sensibility, not a airport thriller.",
+        "Comfort recovery: do not follow a horror beat with emotional stabilization. No character 'takes a breath and feels steadier.' The dread compounds.",
+        "Ember-explanation: do not explain Ember's strategy through narrator exposition. It should emerge through Noor's analysis and observation.",
+        "Purple death: do not poeticize the deaths. They are ugly, physical, specific. No one dies beautifully.",
+        "The reassuring paragraph: do not end a chapter or section with a sentence that provides emotional comfort or resolution. End on the thing that stays."
+      ],
+      "narrative_distance": "Close third, locked to Noor. The reader sees, hears, smells, and knows only what Noor does. When Noor is not present for a scene, it doesn't happen on the page \u2014 it arrives as discovery, rumor, or aftermath. The camera never leaves her.",
+      "narrative_tense": "present tense",
+      "rhythm_target": "Propulsive and varied. Default pace is forward-moving \u2014 short paragraphs, active verbs, scene momentum \u2014 but the rhythm must shift for horror (slowed, sensory-heavy, the moment stretching), grief (longer sentences, heavier cadence), and dread (suspended, waiting, the sentence holding its breath). No single rhythm for more than two consecutive pages.",
+      "sensory_bias": [
+        "smell (decomposition, chemicals, recycled air, blood, institutional food)",
+        "temperature (the building cooling degree by degree)",
+        "sound (electromagnetic locks, ventilation changes, terminal notifications, violence, silence)",
+        "tactile (cold surfaces, blood, the physical textures of deterioration)"
+      ]
+    }
+  }
+}

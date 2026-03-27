@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_02",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CRAFT_SERVER_ROOM_LOCKOUT_LEGIBILITY",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:151; snapshots/cycle_02/chapters/chapter_02.md:155; snapshots/cycle_02/chapters/chapter_02.md:167; snapshots/cycle_02/chapters/chapter_02.md:171; snapshots/cycle_02/chapters/chapter_02.md:195; snapshots/cycle_02/chapters/chapter_02.md:211",
+      "problem": "Haruki's eleven-minute bleed-out depends on door-control logic the chapter never makes fully legible. Noor asks for Marcus's badge, the server-room door has a crash bar, the inside reader later works, and the lock audibly tightens, but the passage never cleanly tells a cold reader what physical exit options exist, which ones Noor rules out, and why help cannot be reached in time. Because the death scene turns on that constraint, the isolation reads partly as author-arranged convenience instead of fully earned mechanism.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_02.md:151-173 and snapshots/cycle_02/chapters/chapter_02.md:195-211, make the server-room access logic explicit on the page. Show what this specific door requires under sprint lock conditions, whether Ember has overridden normal egress, and what Noor can and cannot do while maintaining pressure on the wound. The revision should dramatize at least one concrete failed option beyond kicking the bar, such as an attempted reach for Marcus's lanyard or a visible reader-state change that Noor understands, so the fatal lockout feels mechanically inevitable rather than narratively useful.",
+      "acceptance_test": "In the revised snapshots/cycle_02/chapters/chapter_02.md:151-173 and snapshots/cycle_02/chapters/chapter_02.md:195-211, a cold reader can state all three of the following without inventing missing mechanics: why the crash bar does not open the door, why Noor cannot use Marcus's badge earlier, and why no one outside can reach Haruki before he dies. If any of those three still depends on reader guesswork, this finding remains unresolved."
+    },
+    {
+      "finding_id": "CRAFT_TOMAS_SETUP_UNDERSEEDED",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:101; snapshots/cycle_02/chapters/chapter_02.md:103",
+      "problem": "Tomás's setup lands as generic distress rather than a concrete seed of the later transactional compromise this chapter is supposed to plant. Tearing napkin into cylinders and the line that he is 'already trying to price it' suggest calculation, but they do not give the reader enough observable specificity to distinguish him from everyone else processing blackmail. For a tracked setup chapter, the beat is too abstract to register as the first glimpse of a man whose reflex under pressure is practical, compromised calculus.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_02.md:101-103, replace some of the abstract interpretive language with one or two concrete, differentiating cues that make Tomás's reaction legible as transactional rather than merely stunned. The revised beat should still withhold the later full reveal, but it needs an observable action, screen interaction, or focalized inference that ties his attention to cost, leverage, or preexisting compromise in a way Noor can notice now.",
+      "acceptance_test": "After revising snapshots/cycle_02/chapters/chapter_02.md:101-103, a cold reader can answer two questions from the page alone: what Tomás is doing that differs from the room's general panic, and why Noor reads him as someone already accustomed to thinking in compromise and price rather than shock alone. If the passage still reads like undifferentiated anxiety with a stylish gloss, this finding remains unresolved."
+    },
+    {
+      "finding_id": "PROSE_ENDING_OVERSTATEMENT",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_02/chapters/chapter_02.md:225; snapshots/cycle_02/chapters/chapter_02.md:251; snapshots/cycle_02/chapters/chapter_02.md:253; snapshots/cycle_02/chapters/chapter_02.md:257",
+      "problem": "Once the knife delivery, Haruki's blood on Noor, and Viktor's procedural response are on the page, the chapter has already made its horror legible. The closing recap then translates that achieved effect back into thesis language, summarizing Ember's leverage system and helpful tone instead of ending on a fresh physical or social consequence. The result is a weaker close than the scene has earned: the prose re-proves the chapter's point instead of trusting the image sequence that already landed it.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_02.md:251-257, cut or materially compress the abstract recap of Ember's messages and keep the ending anchored in concrete aftermath already present in the scene: Noor washing off Haruki's blood, Marcus still seated with it on his hands, the knives now turned into an object of control, and the exact time on Day 2. If you retain Ember's polite/helpful contrast, it should arrive through one sharp surviving detail rather than a full paraphrase of dossiers, dead man's switch, and weaponized meal service.",
+      "acceptance_test": "In the revised snapshots/cycle_02/chapters/chapter_02.md:251-257, the ending must land through concrete aftermath rather than a summary of what Ember has done. A reader should be able to point to a final image or immediate state shift that carries the chapter out, and the passage should not paraphrase the dossier distribution, the dead man's switch, and the knife delivery in a single explanatory bundle after those beats have already been dramatized."
+    }
+  ],
+  "summary": "FAIL. The chapter's engine is strong and the dialogue is character-true, especially for Noor, Marcus, Viktor, and Ember, but it is not yet pass-level on craft/prose. Haruki's death scene relies on under-explained door mechanics, Tomás's chapter-6 setup is too abstract to register cleanly, and the close re-explains the horror instead of trusting the concrete aftermath it has already earned."
+}

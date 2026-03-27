@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_14",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CRAFT_REWARD_MEAL_TIMELINE",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_03/chapters/chapter_14.md:25; snapshots/cycle_03/chapters/chapter_14.md:109; snapshots/cycle_03/chapters/chapter_14.md:243; snapshots/cycle_03/chapters/chapter_14.md:291",
+      "problem": "The Tomas reward-meal plant breaks object-state control at the exact point it is supposed to cleanly establish his privileged channel. A single thermal container is introduced in the morning, opened and eaten just before noon, then reappears hours later as \"the same sealed thermal container\" still steaming. That reads as a continuity error instead of a precise setup for the off-ledger meal system chapter 15 depends on.",
+      "rewrite_direction": "Repair the reward-meal thread at snapshots/cycle_03/chapters/chapter_14.md:25; snapshots/cycle_03/chapters/chapter_14.md:27; snapshots/cycle_03/chapters/chapter_14.md:109; snapshots/cycle_03/chapters/chapter_14.md:243; and snapshots/cycle_03/chapters/chapter_14.md:291. Either make the noon container the only public reveal and cut the later \"same sealed\" restatement, or explicitly stage multiple containers / a visible stash so the reader can track when Tomas receives each meal, when each is opened, and why the later warm meal is a fresh privilege rather than the already-open lunch.",
+      "acceptance_test": "Reading snapshots/cycle_03/chapters/chapter_14.md:25; snapshots/cycle_03/chapters/chapter_14.md:27; snapshots/cycle_03/chapters/chapter_14.md:109; snapshots/cycle_03/chapters/chapter_14.md:243; and snapshots/cycle_03/chapters/chapter_14.md:291, a cold reader can state exactly how many reward containers Tomas gets that day, when each one is opened, and why the evening meal is not the already-open noon container; no passage describes an already-opened container as newly sealed or newly steaming."
+    },
+    {
+      "finding_id": "CRAFT_SPATIAL_LEGIBILITY_FLOORS",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_03/chapters/chapter_14.md:67; snapshots/cycle_03/chapters/chapter_14.md:177; snapshots/cycle_03/chapters/chapter_14.md:181; snapshots/cycle_03/chapters/chapter_14.md:205; snapshots/cycle_03/chapters/chapter_14.md:207; snapshots/cycle_03/chapters/chapter_14.md:243; snapshots/cycle_03/chapters/chapter_14.md:249",
+      "problem": "The chapter blurs floor-to-floor geography right when Lena's move-downstairs order becomes the scene's operational hinge. After Noor carries food \"back upstairs,\" she later seems to move straight from the cafeteria doorway to Priya at the \"server-room corridor\" and then to Marcus, after which she tells him they still have to go downstairs. The reader can infer omitted movement, but the local floor map is not concrete enough to cleanly place Priya, Marcus, the cafeteria, and the server-room access in relation to one another.",
+      "rewrite_direction": "Tighten the movement logic at snapshots/cycle_03/chapters/chapter_14.md:67; snapshots/cycle_03/chapters/chapter_14.md:177; snapshots/cycle_03/chapters/chapter_14.md:181; snapshots/cycle_03/chapters/chapter_14.md:205; snapshots/cycle_03/chapters/chapter_14.md:243; and snapshots/cycle_03/chapters/chapter_14.md:249. Add one or two explicit anchors for stair movement and floor location, and clarify whether Priya is working near an upstairs station pulling server-room data or physically near the first-floor server-room corridor before Noor returns to Marcus and brings him down.",
+      "acceptance_test": "A cold reader can read snapshots/cycle_03/chapters/chapter_14.md:177; snapshots/cycle_03/chapters/chapter_14.md:181; snapshots/cycle_03/chapters/chapter_14.md:205; snapshots/cycle_03/chapters/chapter_14.md:243; and snapshots/cycle_03/chapters/chapter_14.md:249 and describe, without importing outside context, Noor's path from the cafeteria to Priya to Marcus and back down to the cafeteria, with each stop assigned to a clear and consistent floor/location."
+    },
+    {
+      "finding_id": "PROSE_CROWD_NEGATION_TIC",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_03/chapters/chapter_14.md:29; snapshots/cycle_03/chapters/chapter_14.md:53; snapshots/cycle_03/chapters/chapter_14.md:67; snapshots/cycle_03/chapters/chapter_14.md:113; snapshots/cycle_03/chapters/chapter_14.md:129; snapshots/cycle_03/chapters/chapter_14.md:163; snapshots/cycle_03/chapters/chapter_14.md:251; snapshots/cycle_03/chapters/chapter_14.md:292",
+      "problem": "The chapter repeatedly defaults to sentence-initial \"Nobody/No one ...\" constructions to register group paralysis. Used this many times in one chapter, the scaffold starts to read like autopilot instead of pressure-specific observation, flattening the crowd's texture at exactly the moments when fear should become more socially particular.",
+      "rewrite_direction": "Vary the group-reaction beats in snapshots/cycle_03/chapters/chapter_14.md:29, snapshots/cycle_03/chapters/chapter_14.md:53, snapshots/cycle_03/chapters/chapter_14.md:67, snapshots/cycle_03/chapters/chapter_14.md:113, snapshots/cycle_03/chapters/chapter_14.md:129, snapshots/cycle_03/chapters/chapter_14.md:163, snapshots/cycle_03/chapters/chapter_14.md:251, and snapshots/cycle_03/chapters/chapter_14.md:292. Keep the collective paralysis, but replace several negation-led summaries with concrete individual reactions, displaced tasks, eye-lines, or bodily tells so the room feels inhabited rather than generically frozen.",
+      "acceptance_test": "Across the revised versions of snapshots/cycle_03/chapters/chapter_14.md:29, snapshots/cycle_03/chapters/chapter_14.md:53, snapshots/cycle_03/chapters/chapter_14.md:67, snapshots/cycle_03/chapters/chapter_14.md:113, snapshots/cycle_03/chapters/chapter_14.md:129, snapshots/cycle_03/chapters/chapter_14.md:163, snapshots/cycle_03/chapters/chapter_14.md:251, and snapshots/cycle_03/chapters/chapter_14.md:292, no more than two sentence-initial \"Nobody/No one ...\" crowd-reaction lines remain, and at least three of the current beats are recast as specific observable behavior by named or clearly individuated survivors."
+    }
+  ],
+  "summary": "FAIL. The chapter's violence, scarcity pressure, and dialogue are strong, but shortlist-level control breaks in three places: Tomas's reward-meal setup reads as one impossible container instead of a clean privilege channel, the Priya/Marcus/cafeteria movement blurs the floor map exactly when the downstairs order matters, and the prose leans too often on \"Nobody/No one ...\" crowd-negation scaffolds. Dialogue remains character-true enough to pass."
+}

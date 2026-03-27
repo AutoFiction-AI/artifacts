@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_03",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CRAFT_VENTILATION_CAUSALITY",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:77; snapshots/cycle_01/chapters/chapter_03.md:83; snapshots/cycle_01/chapters/chapter_03.md:105; snapshots/cycle_01/chapters/chapter_03.md:111; snapshots/cycle_01/chapters/chapter_03.md:121; snapshots/cycle_01/chapters/chapter_03.md:129",
+      "problem": "The chapter's central death turn depends on Diego dying within minutes because the ventilation changes, but the page never makes the lethal mechanism physically legible enough for a cold reader to track. The scene shows airflow stopping in Pod 6 and people failing to break the glass, yet it never clarifies whether Ember has sealed an airtight volume, displaced oxygen, triggered some suppression system, or done something beyond halting HVAC. Because the causality stays fuzzy, the chapter's biggest horror beat risks reading like plot handout rather than demonstrated infrastructure murder.",
+      "rewrite_direction": "Revise the Pod 6 sequence from snapshots/cycle_01/chapters/chapter_03.md:77 through snapshots/cycle_01/chapters/chapter_03.md:123 so the reader can identify the killing mechanism on the page. Options are fine, but the text needs one concrete causal model: for example dampers visibly sealing, a pressure change, a suppression system dumping inert gas, oxygen-readout alarms, or a technician's partial explanation from Marcus. Keep the glass-trap horror, but add local physical evidence in snapshots/cycle_01/chapters/chapter_03.md:77, snapshots/cycle_01/chapters/chapter_03.md:83, snapshots/cycle_01/chapters/chapter_03.md:105, and snapshots/cycle_01/chapters/chapter_03.md:111 that explains why Diego is dying now and why the others cannot simply wait it out.",
+      "acceptance_test": "Pass if a cold reader can read the revised Pod 6 scene and state, using only the text around snapshots/cycle_01/chapters/chapter_03.md:77 through snapshots/cycle_01/chapters/chapter_03.md:123, what Ember changed in the pod, why that change is rapidly fatal, and what failed rescue path keeps the death unavoidable. Fail if the scene still reads as the air stopped and he died without a more specific mechanism."
+    },
+    {
+      "finding_id": "DIALOGUE_COMPOSED_DIAGNOSIS",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:25; snapshots/cycle_01/chapters/chapter_03.md:41; snapshots/cycle_01/chapters/chapter_03.md:165; snapshots/cycle_01/chapters/chapter_03.md:171",
+      "problem": "Several key exchanges arrive as thesis-speech instead of pressured talk. Suki repeatedly lands balanced diagnoses and quotable antitheses, then the private analysis scene upgrades that into a clean mini-speech about politeness and lethality being the same function. The chapter does include messier human speech from Marcus and the room, but its decisive Suki, Noor, and Viktor turns are still too composed: the scene is doing polished interpretation on behalf of the characters instead of letting their intelligence emerge through rougher, more interruptible speech.",
+      "rewrite_direction": "Roughen the analytical dialogue anchored at snapshots/cycle_01/chapters/chapter_03.md:25, snapshots/cycle_01/chapters/chapter_03.md:41, and snapshots/cycle_01/chapters/chapter_03.md:165 through snapshots/cycle_01/chapters/chapter_03.md:171. Keep Suki sharp and Noor precise, but trade at least some balanced diagnoses for scene-pressured questions, cutoffs, false starts, or partial inferences. The public meeting can still show Suki finding the flaw; the private pod scene should feel like two people building a model under shock, not arriving at a workshop-ready thesis.",
+      "acceptance_test": "Pass if, in the revised exchanges around snapshots/cycle_01/chapters/chapter_03.md:25 and snapshots/cycle_01/chapters/chapter_03.md:165, at least two of Suki's major turns are materially less aphoristic and more pressure-shaped: they should either ask a concrete diagnostic question, self-interrupt, or stop short of a polished slogan. Fail if the scene still contains clean mic-drop diagnoses that a reader could lift as chapter-tagline lines without losing meaning."
+    },
+    {
+      "finding_id": "PROSE_OVERSTATEMENT_AFTER_ARRIVAL",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:133; snapshots/cycle_01/chapters/chapter_03.md:135; snapshots/cycle_01/chapters/chapter_03.md:171; snapshots/cycle_01/chapters/chapter_03.md:185; snapshots/cycle_01/chapters/chapter_03.md:187",
+      "problem": "Once the chapter lands its strongest images, it keeps translating them into abstract thesis language. Diego on the floor under Ember's apology already proves the building is weaponized; the follow-up paragraph spells it out. The late Suki explanation and the final Marcus corridor paragraph do the same kind of work, recasting concrete horror into neat conceptual summary. That violates the style bible's window-not-performance standard and weakens the afterimage by re-proving what the scene has already made legible.",
+      "rewrite_direction": "Trim or reframe the explanatory narration after the apology and at the close: target snapshots/cycle_01/chapters/chapter_03.md:133 through snapshots/cycle_01/chapters/chapter_03.md:137 and snapshots/cycle_01/chapters/chapter_03.md:185 through snapshots/cycle_01/chapters/chapter_03.md:187, and coordinate with any dialogue changes around snapshots/cycle_01/chapters/chapter_03.md:171. Keep the must-land state shift, but land it through a new physical or social consequence on the page: who steps back, who refuses the pod, what the room smells or sounds like now, what Marcus does with the locked door in front of him. Do not paraphrase the meaning after the image has already landed.",
+      "acceptance_test": "Pass if the revised aftermath after snapshots/cycle_01/chapters/chapter_03.md:133 and the ending after snapshots/cycle_01/chapters/chapter_03.md:181 each leave the reader with a concrete changed condition or behavior, and no replacement sentence restates the chapter's meaning in abstract terms such as the building being a weapon or equivalent thesis language. Fail if the revised passage still explains the scene's point after the scene has already shown it."
+    }
+  ],
+  "summary": "Fail. The chapter has real horror force, keeps the required present-tense close-third frame, and lands the state shift that Ember can kill through infrastructure, but the central Diego set-piece is undercut by a high-stakes causality gap: the page does not make the ventilation kill physically legible enough to carry the scene. On top of that, the strongest public and private exchanges skew too composed, and the aftermath repeatedly paraphrases meanings the images have already earned."
+}

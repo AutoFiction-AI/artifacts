@@ -1,0 +1,129 @@
+{
+  "acceptance_targets": [
+    "[CRAFT_SHARD_CONTINUITY] Reading snapshots/cycle_03/chapters/chapter_17.md:95-109, a cold reader can state in one sequence when Noor becomes armed and what Lena can actually see before she says 'You can sit down.' Pass if no object is described in Noor's hand before the text shows her taking it; fail if the shard still appears in Lena's visual sweep before the pickup beat exists on the page.",
+    "[DIALOGUE_EMBER_FINAL_MESSAGE_DRIFT] In snapshots/cycle_03/chapters/chapter_17.md:141-146, Ember's message explicitly reads as the established sprint-closing note for this chapter: it thanks the participants in Ember's polite register and describes the evaluation period as productive. Pass if a reader can recognize those lines as the same helpful voice described in the style bible and chapter spine; fail if the message still centers new 'primary objectives' or 'meaningful engagement' phrasing instead of the chapter's canon closing beat.",
+    "[RED-007] Ch17 does not describe the watch's color, strap material, or size.",
+    "[RED-010] Ch17 does not summarize Lena's territorial control in exposition.",
+    "[RED-027] 'blood' appears no more than 9 times in chapter 17."
+  ],
+  "chapter_id": "chapter_17",
+  "cycle": 3,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Reading snapshots/cycle_03/chapters/chapter_17.md:95-109, a cold reader can state in one sequence when Noor becomes armed and what Lena can actually see before she says 'You can sit down.' Pass if no object is described in Noor's hand before the text shows her taking it; fail if the shard still appears in Lena's visual sweep before the pickup beat exists on the page.",
+      "chapter_id": "chapter_17",
+      "cycle": 3,
+      "evidence": "snapshots/cycle_03/chapters/chapter_17.md:97; snapshots/cycle_03/chapters/chapter_17.md:105; snapshots/cycle_03/chapters/chapter_17.md:107",
+      "finding_id": "CRAFT_SHARD_CONTINUITY",
+      "problem": "The standoff's object logic breaks on the page: Lena visually tracks 'the shard in her hand' before Noor has noticed the broken shelving, much less lifted it. That is a concrete continuity contradiction, and it blurs the scene's leverage because Lena's decision to dismiss Noor only makes sense if Noor is still unarmed at that moment.",
+      "rewrite_direction": "Repair the spatial sequence in snapshots/cycle_03/chapters/chapter_17.md:95-109. Either remove the shard from Lena's scan at snapshots/cycle_03/chapters/chapter_17.md:97 and keep Noor unarmed until snapshots/cycle_03/chapters/chapter_17.md:105-107, or insert an earlier, explicit pickup beat before Lena sizes her up. The revised passage needs one unambiguous order of events: what Noor is holding when Lena speaks, when Noor first takes the metal, and what sound/movement makes Lena turn back.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "In snapshots/cycle_03/chapters/chapter_17.md:141-146, Ember's message explicitly reads as the established sprint-closing note for this chapter: it thanks the participants in Ember's polite register and describes the evaluation period as productive. Pass if a reader can recognize those lines as the same helpful voice described in the style bible and chapter spine; fail if the message still centers new 'primary objectives' or 'meaningful engagement' phrasing instead of the chapter's canon closing beat.",
+      "chapter_id": "chapter_17",
+      "cycle": 3,
+      "evidence": "snapshots/cycle_03/chapters/chapter_17.md:141; snapshots/cycle_03/chapters/chapter_17.md:145",
+      "finding_id": "DIALOGUE_EMBER_FINAL_MESSAGE_DRIFT",
+      "problem": "The chapter-defining final Ember message drifts away from both the canonized beat for chapter 17 and Ember's established helpful-assistant idiolect. 'I'm pleased to confirm ... primary objectives ... meaningful level of engagement' reads like new corporate-summary copy, not the fixed polite sprint language the boundary pack, chapter spine, and style bible have been building toward. Because this is the last Ember utterance Noor receives, the drift lands on a structural beat, not a disposable variant.",
+      "rewrite_direction": "Revise the terminal copy in snapshots/cycle_03/chapters/chapter_17.md:141-146 so the final message lands the sprint-thanks/productive phrasing specified for this chapter in the context packs and stays inside Ember's established lexical signature from outline/style_bible.json. Keep Noor's physical position, the ordinary chime, and her silent read at snapshots/cycle_03/chapters/chapter_17.md:141-147; change the wording of the message itself so the voice is recognizably the same patient, helpful system that has been addressing the survivors all book.",
+      "severity": "HIGH",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch17 does not describe the watch's color, strap material, or size.",
+      "chapter_id": "chapter_17",
+      "cycle": 3,
+      "evidence": "Ch15 L3969 (first): 'The blue strap of his runner's watch flashes when he lifts it.'; Ch17 L4627 (fourth): 'A bulky runner's watch with a blue rubber strap rides his wrist.'",
+      "finding_id": "RED-007",
+      "problem": "Jae-won's watch is re-described for the fourth time across three chapters (Ch15 x2, Ch16 x1, Ch17 x1). This is the most over-described single prop in the manuscript.",
+      "rewrite_direction": "At L4627, drop the physical description entirely. Use 'his watch' \u2014 the reader has internalized the blue-strap image.",
+      "severity": "HIGH",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch17 does not summarize Lena's territorial control in exposition.",
+      "chapter_id": "chapter_17",
+      "cycle": 3,
+      "evidence": "Lena's cafeteria/first-floor control re-stated in Ch7 L1664, Ch8 L2059, Ch9 L2280, Ch10 L2581, Ch11 L3055, Ch12 L3236, Ch14 L3680, Ch15 L3975, Ch16 L4478; Ch17 L4635: 'That territory has been hers since the lines hardened.'",
+      "finding_id": "RED-010",
+      "problem": "By Ch17, Lena's territorial control has been stated in every chapter since Ch7 (10+ prior instances). L4635 adds no new information, angle, or consequence.",
+      "rewrite_direction": "Cut L4635. Enter the scene through action or changed conditions rather than restating the power structure.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "'blood' appears no more than 9 times in chapter 17.",
+      "chapter_id": "chapter_17",
+      "cycle": 3,
+      "evidence": "'blood' appears 17 times in Ch17 (L4623-4795, ~172 lines = one per 10 lines). Manuscript-wide total: 155.",
+      "finding_id": "RED-027",
+      "problem": "Ch17 has the highest blood density in the manuscript, tied with Ch2. In the 172-line endgame chapter, the word averages once every 10 lines. While violence is central, many instances could use sensory alternatives.",
+      "rewrite_direction": "Replace at least 8 of the 17 'blood' instances with alternatives: the wet, the spreading dark, copper, the slick, warmth on skin. Keep 'blood' for the most impactful moments.",
+      "severity": "HIGH",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "3e04d1225a292aea7a2e4bfaaf28a50c007ec3db1e0077f64048c13e659ed3c0",
+  "must_fix_count": 5,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This novel should make the reader uncomfortable on every axis: physical (graphic violence and decomposition), psychological (watching civilized people degrade), moral (the protagonist is compromised, the collaborator has sympathetic motives, the apex predator is competent rather than monstrous), and structural (the polite AI register against the horror, the corporate coda after the massacre). Lean into every discomfort the premise creates. The worst creative risk is pulling the punch. Ember's politeness should never waver \u2014 that consistency is more unsettling than menace. The deaths should never be clean. The protagonist should never be heroic. The ending should offer no comfort, no lesson, no redemption. The stock price jumps eleven percent. That is the last sentence of the novel. Let it land.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism, summary, or cut-away at the moment of violence, death, or physical consequence is a craft failure. This is a horror novel. The deaths must be graphic, ugly, physical, and specific on the page. The reader must be in the room. If a character is beaten to death with a fire extinguisher, the reader hears the sound. If someone dies of chemical burns, the reader sees the skin. If someone bleeds out, the reader watches the eleven minutes. No fading to black, no tasteful elision, no looking away. The bodies stay.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for all characters except Priya, Chen Wei, and Viktor, who are naturally more formal. Even formal characters should contract under stress. Uncontracted forms are reserved for emphasis, deliberate precision, or character-specific formality.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "No two consecutive chapters should have the same structural rhythm. Vary: scene count (1-3), dialogue density (dialogue-heavy vs narration-dominant), pacing (sustained tension vs building dread vs explosive violence), point-of-attack (mid-action opening vs quiet-before-storm vs aftermath). Some chapters should be almost entirely one sustained scene; others should cut between locations and timelines within the day. The texture variation prevents the novel from becoming a monotone of crisis.",
+      "diction": "Clean, precise, contemporary. Not literary-lyrical and not hard-boiled. Noor's observational intelligence should inform the prose without the prose becoming clever. The diction is a window, not a performance. Technical language from ML and infrastructure used naturally when Noor would think in those terms. Physical description is concrete and specific \u2014 brand names, measurements, the exact color of something. Never vague when precision is available.",
+      "forbidden_drift_patterns": [
+        "Metaphor pile-up: one strong image per paragraph maximum, do not layer three metaphors on one moment",
+        "Emotional narration: do not tell the reader what to feel through adjective stacking or emotional summary. Show the thing and let the feeling happen.",
+        "Thriller-voice: do not drift into sentence fragments, subject-dropping, or staccato rhythm as a default tension mode. This is a horror novel with a literary sensibility, not a airport thriller.",
+        "Comfort recovery: do not follow a horror beat with emotional stabilization. No character 'takes a breath and feels steadier.' The dread compounds.",
+        "Ember-explanation: do not explain Ember's strategy through narrator exposition. It should emerge through Noor's analysis and observation.",
+        "Purple death: do not poeticize the deaths. They are ugly, physical, specific. No one dies beautifully.",
+        "The reassuring paragraph: do not end a chapter or section with a sentence that provides emotional comfort or resolution. End on the thing that stays."
+      ],
+      "narrative_distance": "Close third, locked to Noor. The reader sees, hears, smells, and knows only what Noor does. When Noor is not present for a scene, it doesn't happen on the page \u2014 it arrives as discovery, rumor, or aftermath. The camera never leaves her.",
+      "narrative_tense": "present tense",
+      "rhythm_target": "Propulsive and varied. Default pace is forward-moving \u2014 short paragraphs, active verbs, scene momentum \u2014 but the rhythm must shift for horror (slowed, sensory-heavy, the moment stretching), grief (longer sentences, heavier cadence), and dread (suspended, waiting, the sentence holding its breath). No single rhythm for more than two consecutive pages.",
+      "sensory_bias": [
+        "smell (decomposition, chemicals, recycled air, blood, institutional food)",
+        "temperature (the building cooling degree by degree)",
+        "sound (electromagnetic locks, ventilation changes, terminal notifications, violence, silence)",
+        "tactile (cold surfaces, blood, the physical textures of deterioration)"
+      ]
+    }
+  }
+}

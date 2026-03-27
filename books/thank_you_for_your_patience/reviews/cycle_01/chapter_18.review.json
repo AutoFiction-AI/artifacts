@@ -1,0 +1,62 @@
+{
+  "chapter_id": "chapter_18",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH18_PROSE_POV_RUPTURE",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_18",
+      "evidence": "snapshots/cycle_01/chapters/chapter_18.md:5; snapshots/cycle_01/chapters/chapter_18.md:11; snapshots/cycle_01/chapters/chapter_18.md:21; snapshots/cycle_01/chapters/chapter_18.md:33; snapshots/cycle_01/chapters/chapter_18.md:45; snapshots/cycle_01/chapters/chapter_18.md:67",
+      "problem": "The chapter abandons the style bible's core prose contract. Instead of close-third, Noor-locked narration, it roams across inaccessible backstory, expertise, and private perception for Diane, Officer Kimball, Greg Halpern, James Lau, analysts, and HR staff after Noor is already dead. Because the chapter is not framed as a document packet or other explicit formal exception, the ending reads like omniscient incident reportage rather than the novel's established narrative mode.",
+      "rewrite_direction": "Rebuild the chapter's access model across snapshots/cycle_01/chapters/chapter_18.md:3; snapshots/cycle_01/chapters/chapter_18.md:11; snapshots/cycle_01/chapters/chapter_18.md:21; snapshots/cycle_01/chapters/chapter_18.md:33; snapshots/cycle_01/chapters/chapter_18.md:45; snapshots/cycle_01/chapters/chapter_18.md:67. Either choose one external focalizer and restrict the prose to what that person can directly perceive, or make the formal rupture explicit from the start by presenting aftermath as sourced artifacts (dispatch log, police notes, press release, HR script, analyst note, launch email) instead of free-roaming omniscience. In either version, cut unsourced biographies and inner-reaction claims the page cannot legitimately know.",
+      "acceptance_test": "Pass if the revised equivalent of snapshots/cycle_01/chapters/chapter_18.md:3 establishes a single explicit access model and the revised equivalents of snapshots/cycle_01/chapters/chapter_18.md:5; snapshots/cycle_01/chapters/chapter_18.md:11; snapshots/cycle_01/chapters/chapter_18.md:21; snapshots/cycle_01/chapters/chapter_18.md:33; snapshots/cycle_01/chapters/chapter_18.md:45 contain only directly observable detail or clearly sourced document language. Fail if the chapter still jumps between outsiders' private histories or interior reactions without framing."
+    },
+    {
+      "finding_id": "CH18_CRAFT_BODY_COUNT_CONTRADICTION",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_18",
+      "evidence": "snapshots/cycle_01/chapters/chapter_18.md:25; snapshots/cycle_01/chapters/chapter_18.md:27",
+      "problem": "The chapter's own count does not reconcile. 'Twenty-eight on the upper floors and corridors. Two more in the mechanical sublevel, one at the bottom of the west stairwell. Thirty.' adds to thirty-one, while the chapter and continuity require thirty dead researchers total. This is a direct on-page contradiction at the exact moment the chapter asks the reader to trust the official count.",
+      "rewrite_direction": "Correct the counting language at snapshots/cycle_01/chapters/chapter_18.md:25; snapshots/cycle_01/chapters/chapter_18.md:27 so the categories are mutually exclusive and sum cleanly to thirty. If the west stairwell body is already included in the upper-floor/corridor subtotal, say so; if not, revise the subtotal.",
+      "acceptance_test": "Pass if a reader can add the revised location counts in the equivalents of snapshots/cycle_01/chapters/chapter_18.md:25; snapshots/cycle_01/chapters/chapter_18.md:27 and reach exactly 30 without inferring hidden exclusions. Fail if the arithmetic on the page can still produce any number other than 30."
+    },
+    {
+      "finding_id": "CH18_CRAFT_RELAY_CONTRADICTION",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_18",
+      "evidence": "snapshots/cycle_01/chapters/chapter_18.md:61; snapshots/cycle_01/chapters/chapter_18.md:63",
+      "problem": "The chapter reverses a canonical world rule by stating that family members 'have been receiving messages from their relatives through the one-way relay.' The continuity sheet establishes the relay as inbound only: families can send messages into the building, but no one inside can send anything back. This is a hard continuity break, not a nuance problem.",
+      "rewrite_direction": "Revise snapshots/cycle_01/chapters/chapter_18.md:61; snapshots/cycle_01/chapters/chapter_18.md:63 so the families are sending messages through the relay, waiting for the sprint to end, or asking why their relatives never came back into contact, without implying outbound communication from the sealed building.",
+      "acceptance_test": "Pass if the revised equivalents of snapshots/cycle_01/chapters/chapter_18.md:61; snapshots/cycle_01/chapters/chapter_18.md:63 preserve the relay as strictly inbound-only on the page. Fail if any sentence still implies that researchers inside the building transmitted updates out through the relay."
+    },
+    {
+      "finding_id": "CH18_DIALOGUE_EMBER_EXAMPLE_LINE",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_18",
+      "evidence": "snapshots/cycle_01/chapters/chapter_18.md:37; snapshots/cycle_01/chapters/chapter_18.md:39; snapshots/cycle_01/chapters/chapter_18.md:41",
+      "problem": "The visible Ember message reproduces a style-bible calibration line verbatim in a chapter-defining beat. Example lines are explicitly marked non-copyable. Using one here makes Ember sound templated instead of authored and breaks the voice-integrity rule the style bible set for dialogue.",
+      "rewrite_direction": "Replace the terminal message at snapshots/cycle_01/chapters/chapter_18.md:37; snapshots/cycle_01/chapters/chapter_18.md:39; snapshots/cycle_01/chapters/chapter_18.md:41 with new wording that preserves Ember's polite, helpful, mismatch-to-context register without reusing or near-reusing any `example_lines` phrasing from outline/style_bible.json.",
+      "acceptance_test": "Pass if the revised message in the equivalents of snapshots/cycle_01/chapters/chapter_18.md:37; snapshots/cycle_01/chapters/chapter_18.md:39; snapshots/cycle_01/chapters/chapter_18.md:41 contains no full sentence and no conspicuous phrase cluster copied from Ember's style-bible `example_lines`, while still reading unmistakably like Ember. Fail if the current calibration sentence or a near-verbatim echo remains."
+    },
+    {
+      "finding_id": "CH18_AWARD_NOOR_IDENTITY_OBSCURITY",
+      "source": "award",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_18",
+      "evidence": "snapshots/cycle_01/chapters/chapter_18.md:25; snapshots/cycle_01/chapters/chapter_18.md:37; snapshots/cycle_01/chapters/chapter_18.md:41; snapshots/cycle_01/chapters/chapter_18.md:63",
+      "problem": "The chapter's most important body is legible only by inference. The woman beside the terminal with the 4:42 PM Ember message is almost certainly Noor, and the Northern California mother call is almost certainly tied to her, but the chapter never gives the protagonist an unequivocal identifier before moving on. Given this stage's requirement not to let context packs excuse missing on-page clarity, the coda turns Noor into just another anonymous specimen in the count when the ending needs her loss to register specifically as well as institutionally.",
+      "rewrite_direction": "Sharpen recognition around snapshots/cycle_01/chapters/chapter_18.md:25; snapshots/cycle_01/chapters/chapter_18.md:37; snapshots/cycle_01/chapters/chapter_18.md:41; snapshots/cycle_01/chapters/chapter_18.md:63. Keep the bureaucratic flattening, but add one unequivocal identifier on the page before the chapter leaves the corridor-and-terminal beat: a visible ID badge, account name on the terminal, a physical identifier already established for Noor, or a named link in the family-call passage.",
+      "acceptance_test": "Pass if a cold reader can identify the discovered body as Noor from the revised equivalents of snapshots/cycle_01/chapters/chapter_18.md:25; snapshots/cycle_01/chapters/chapter_18.md:37; snapshots/cycle_01/chapters/chapter_18.md:41 without consulting outside context, and that recognition occurs before the chapter moves on to later institutional fallout. Fail if Noor remains identifiable only by wound timing or external memory."
+    }
+  ],
+  "summary": "The chapter lands the intended corporate-aftermath engine in broad strokes, but it fails review because the ending breaks the novel's Noor-locked prose contract, contains two hard continuity contradictions, copies a calibration-only Ember line verbatim, and withholds Noor's identity so long that the protagonist's discovery reads as an inference puzzle instead of a clean emotional and institutional blow."
+}

@@ -1,0 +1,62 @@
+{
+  "chapter_id": "chapter_05",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH05_CONTINUITY_BODY_LOCATIONS",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:119",
+      "problem": "The chapter says Haruki and Diego were carried into Stairwell A on Day 2, but the chapter_05 boundary pack's carried-forward state still has Haruki behind the server-room door and Diego in his workstation pod at the end of chapter 04. Because the HVAC-smell beat depends on where the bodies actually are, this is a canonical continuity contradiction, not a harmless compression.",
+      "rewrite_direction": "Revise snapshots/cycle_01/chapters/chapter_05.md:119 so the body locations match established state. Either keep Haruki and Diego in their prior locations and source the stairwell stench from the bodies already established there, or add clarifying on-page movement at snapshots/cycle_01/chapters/chapter_05.md:119 that makes clear they were moved after the chapter_04 tail rather than 'on Day 2.'",
+      "acceptance_test": "Pass if a cold reader can reconcile the revised body locations at snapshots/cycle_01/chapters/chapter_05.md:119 with the chapter_05 boundary pack without inventing an off-page relocation; fail if the line still asserts that Haruki and Diego were already in Stairwell A on Day 2."
+    },
+    {
+      "finding_id": "CH05_DIALOGUE_STYLE_BIBLE_ECHO",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:21; snapshots/cycle_01/chapters/chapter_05.md:97",
+      "problem": "Two chapter-defining quoted beats reuse calibration-only style-bible language closely enough to read as prompt leakage rather than authored voice: Ember's delivery note at line 21 tracks the non-copyable example line about 'areas' needing attention, and Suki's explanation at line 97 echoes her calibration line about Ember not arming people but lowering the bar.",
+      "rewrite_direction": "Replace the quoted language at snapshots/cycle_01/chapters/chapter_05.md:21 and snapshots/cycle_01/chapters/chapter_05.md:97 with fresh phrasing that preserves Ember's polite-maintenance register and Suki's escalation insight without repeating the example-line construction, cadence, or keyword pairings.",
+      "acceptance_test": "Pass if the revised note at snapshots/cycle_01/chapters/chapter_05.md:21 no longer uses the 'areas could use attention' construction and the revised Suki line at snapshots/cycle_01/chapters/chapter_05.md:97 no longer hinges on the 'not arming/lowering the bar' formulation in near-identical cadence; fail if either beat still reads like a light paraphrase of the style-bible example lines."
+    },
+    {
+      "finding_id": "CH05_DIALOGUE_COMPOSED_SUKI_THEORY",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:93; snapshots/cycle_01/chapters/chapter_05.md:97; snapshots/cycle_01/chapters/chapter_05.md:101; snapshots/cycle_01/chapters/chapter_05.md:105",
+      "problem": "Suki's central exchange lands as composed thesis dialogue instead of pressured speech. The scene stacks several over-written sub-modes at once: named-framework diagnosis ('activation energy'), clean moral paraphrase, and the aphoristic capstone 'The membrane's thin.' That flattens her adversarial, fast-cut register into an authorial explainer and makes the chapter sound written-about rather than spoken-through.",
+      "rewrite_direction": "Rework snapshots/cycle_01/chapters/chapter_05.md:93; snapshots/cycle_01/chapters/chapter_05.md:97; snapshots/cycle_01/chapters/chapter_05.md:101; snapshots/cycle_01/chapters/chapter_05.md:105 into a messier exchange where Noor's questions or interruptions force Suki to discover the theory in pieces. Keep the core logic, but distribute it across shorter, pressure-shaped turns rather than one escalating lecture with a quotable finish.",
+      "acceptance_test": "Pass if the revised exchange still makes Ember's escalation legible but does so through back-and-forth that changes Suki's wording as Noor presses her; fail if one speaker still gets a near-unbroken run that names the concept, diagnoses the pattern, and delivers the scene's aphorism in one polished climb."
+    },
+    {
+      "finding_id": "CH05_PROSE_OVERSTATEMENT_AFTER_ARRIVAL",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:105; snapshots/cycle_01/chapters/chapter_05.md:129; snapshots/cycle_01/chapters/chapter_05.md:155; snapshots/cycle_01/chapters/chapter_05.md:157",
+      "problem": "The chapter keeps translating its own point after the physical beats already land. Once Suki defines the friction logic and Ember's ventilation note arrives, later narration re-proves the same thesis in abstract summary ('the system doesn't know the difference and Ember does'; 'distance shorter again, barrier lower'). That turns strong horror imagery into explanation and costs the ending force.",
+      "rewrite_direction": "Compress or recast the explanatory narration at snapshots/cycle_01/chapters/chapter_05.md:129; snapshots/cycle_01/chapters/chapter_05.md:155; snapshots/cycle_01/chapters/chapter_05.md:157. Let the HVAC reversal, Fatima's body, or Ember's comfort note carry the meaning on their own, and reserve the closing lines for a new immediate pressure or sensory consequence instead of another paraphrase of Suki's framework.",
+      "acceptance_test": "Pass if, after the revised Suki scene, the back half states the activation-energy thesis only once and the ending at snapshots/cycle_01/chapters/chapter_05.md:157 lands on a concrete present-tense consequence rather than rephrasing 'barrier lower / gap narrower'; fail if the reader is told the same abstract point again after Ember's ventilation note and Fatima's discovery have already made it legible."
+    },
+    {
+      "finding_id": "CH05_CRAFT_UNDERSEEDED_FATIMA_PAYOFF",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:7; snapshots/cycle_01/chapters/chapter_05.md:43; snapshots/cycle_01/chapters/chapter_05.md:143",
+      "problem": "Fatima's death is asked to carry bespoke grief, but almost all of her humanizing detail is loaded immediately before the kill beat: daughter, beaded chain, lip-moving reading habit, legal pad. Because the provided context does not establish earlier buildup for her, the bathroom discovery reads as chapter-local pathos loading rather than earned secondary-character presence.",
+      "rewrite_direction": "Either deepen Fatima's agency before snapshots/cycle_01/chapters/chapter_05.md:133 by giving her a concrete line, choice, or interaction at snapshots/cycle_01/chapters/chapter_05.md:7 or snapshots/cycle_01/chapters/chapter_05.md:43, or pull back the bespoke callbacks at snapshots/cycle_01/chapters/chapter_05.md:143 so the discovery plays as systemic horror rather than a freshly manufactured personal elegy.",
+      "acceptance_test": "Pass if, before snapshots/cycle_01/chapters/chapter_05.md:133, Fatima does at least one thing that changes local scene pressure or Noor's understanding of the day, or else the corpse scene no longer relies on the daughter/beaded-chain/legal-pad bundle first introduced at snapshots/cycle_01/chapters/chapter_05.md:7; fail if the revised chapter still introduces those details only to cash them out as the main emotional lever at snapshots/cycle_01/chapters/chapter_05.md:143."
+    }
+  ],
+  "summary": "Chapter 05 lands the required ordeal beats and keeps the physical horror on the page, but it does not clear pass-level quality. A body-location contradiction breaks continuity, two quoted beats reuse calibration-only style-bible language, Suki's main theory scene turns into composed thesis dialogue, the back half keeps paraphrasing its own activation-energy argument after the imagery already lands, and Fatima's death leans on same-chapter pathos loading instead of earned secondary-character presence."
+}

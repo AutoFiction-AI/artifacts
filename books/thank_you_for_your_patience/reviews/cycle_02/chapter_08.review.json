@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_08",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CRAFT_RELAY_SCENE_OVEREXPLAINED",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_02/chapters/chapter_08.md:151; snapshots/cycle_02/chapters/chapter_08.md:153; snapshots/cycle_02/chapters/chapter_08.md:161; snapshots/cycle_02/chapters/chapter_08.md:209",
+      "problem": "The relay-message beat explains the system in abstract before and after the emotional payload instead of letting the interface and the incoming message do the work. The paragraph beginning at line 153 certifies the relay as having 'no return path' and 'no hardware trick' before Noor even opens the message, and line 209 restates the same point after the absent reply affordance has already made it legible. That turns a scene beat into explanatory summary and blunts the mother's-message horror.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_08.md:151, snapshots/cycle_02/chapters/chapter_08.md:153, and snapshots/cycle_02/chapters/chapter_08.md:209 so Noor enters the relay beat through the chime, the locked-in corporate UI, and the missing reply affordance on the screen. Keep the one-way constraint clear, but remove the abstract certification language and let Noor's encounter with the interface and message carry the realization.",
+      "acceptance_test": "Pass if, in the revised passage anchored at snapshots/cycle_02/chapters/chapter_08.md:151 and closing at snapshots/cycle_02/chapters/chapter_08.md:209, a cold reader can state that messages come in but cannot be answered from the on-page chime, layout, and absent reply control, and no sentence in that passage explains the system in abstract terms such as 'no return path,' 'no override,' or 'no hardware trick.' Fail if the scene still pre-explains or post-certifies the relay instead of proving it through the terminal encounter."
+    },
+    {
+      "finding_id": "PROSE_INTERPRETIVE_GLOSS_RECURRENCE",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_02/chapters/chapter_08.md:17; snapshots/cycle_02/chapters/chapter_08.md:55; snapshots/cycle_02/chapters/chapter_08.md:143; snapshots/cycle_02/chapters/chapter_08.md:177; snapshots/cycle_02/chapters/chapter_08.md:209",
+      "problem": "The chapter repeatedly lands a concrete beat and then adds a short interpretive gloss that tells the reader what the beat already conveyed: Noor's mixed motive ('Both things stay true'), Marcus's shame, Priya's bargain, Marcus's emotional collapse, and the relay's cruelty. Because the underlying images and dialogue are already strong, these abstract tag-lines read as over-translation rather than added pressure, and the recurrence becomes a prose tic.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_08.md:17, snapshots/cycle_02/chapters/chapter_08.md:55, snapshots/cycle_02/chapters/chapter_08.md:143, snapshots/cycle_02/chapters/chapter_08.md:177, and snapshots/cycle_02/chapters/chapter_08.md:209. In each cited beat, replace the summarizing sentence with a concrete action, bodily tell, object detail, or spoken line that leaves the inference on the page instead of naming it.",
+      "acceptance_test": "Pass only if each revised beat at snapshots/cycle_02/chapters/chapter_08.md:17, snapshots/cycle_02/chapters/chapter_08.md:55, snapshots/cycle_02/chapters/chapter_08.md:143, snapshots/cycle_02/chapters/chapter_08.md:177, and snapshots/cycle_02/chapters/chapter_08.md:209 ends on something scene-bound rather than an abstract interpretive sentence, and a reader can still infer Noor's split motive, Marcus's shame, Priya's transactional position, Marcus's emotional collapse, and the one-way cruelty of the relay from the revised concrete detail alone. Fail if any cited beat still closes by paraphrasing the meaning the previous image or line already made legible."
+    }
+  ],
+  "summary": "Chapter 08 lands its required beats with strong scene specificity: Marcus's withdrawal is fully physical, the cafeteria killing is unsanitized, the family messages are mundane in the right haunting way, dialogue stays voice-true to Noor, Marcus, and Priya, and continuity/tense remain clean against the provided packs. It still falls below pass in craft and prose because the relay-message section explains its own meaning instead of letting the interface prove it, and the chapter repeatedly adds abstract interpretive glosses after concrete beats that were already doing the work. Dialogue passes. Award fails because, while the chapter is controlled and effective, those prose/craft habits keep it short of clear shortlist-level singularity."
+}

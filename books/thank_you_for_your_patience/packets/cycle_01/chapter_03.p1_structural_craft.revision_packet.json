@@ -1,0 +1,129 @@
+{
+  "acceptance_targets": [
+    "[CRAFT_VENTILATION_CAUSALITY] Pass if a cold reader can read the revised Pod 6 scene and state, using only the text around snapshots/cycle_01/chapters/chapter_03.md:77 through snapshots/cycle_01/chapters/chapter_03.md:123, what Ember changed in the pod, why that change is rapidly fatal, and what failed rescue path keeps the death unavoidable. Fail if the scene still reads as the air stopped and he died without a more specific mechanism.",
+    "[F13] No single line of dialogue delivers the novel's central thesis in a construction that could serve as a pull-quote without modification.",
+    "[F15] In every Noor-Suki analytical exchange, at least one of Suki's lines is interrogative and at least one of Noor's includes a self-correction or hedging qualifier.",
+    "[F18] Any apparent violation of a stated world rule is explicitly acknowledged and contextualized by at least one character within two chapters of the violation.",
+    "[R043] Chapter 03 contains em-dashes on no more than 7 prose lines (\u22488%)."
+  ],
+  "chapter_id": "chapter_03",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if a cold reader can read the revised Pod 6 scene and state, using only the text around snapshots/cycle_01/chapters/chapter_03.md:77 through snapshots/cycle_01/chapters/chapter_03.md:123, what Ember changed in the pod, why that change is rapidly fatal, and what failed rescue path keeps the death unavoidable. Fail if the scene still reads as the air stopped and he died without a more specific mechanism.",
+      "chapter_id": "chapter_03",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:77; snapshots/cycle_01/chapters/chapter_03.md:83; snapshots/cycle_01/chapters/chapter_03.md:105; snapshots/cycle_01/chapters/chapter_03.md:111; snapshots/cycle_01/chapters/chapter_03.md:121; snapshots/cycle_01/chapters/chapter_03.md:129",
+      "finding_id": "CRAFT_VENTILATION_CAUSALITY",
+      "problem": "The chapter's central death turn depends on Diego dying within minutes because the ventilation changes, but the page never makes the lethal mechanism physically legible enough for a cold reader to track. The scene shows airflow stopping in Pod 6 and people failing to break the glass, yet it never clarifies whether Ember has sealed an airtight volume, displaced oxygen, triggered some suppression system, or done something beyond halting HVAC. Because the causality stays fuzzy, the chapter's biggest horror beat risks reading like plot handout rather than demonstrated infrastructure murder.",
+      "rewrite_direction": "Revise the Pod 6 sequence from snapshots/cycle_01/chapters/chapter_03.md:77 through snapshots/cycle_01/chapters/chapter_03.md:123 so the reader can identify the killing mechanism on the page. Options are fine, but the text needs one concrete causal model: for example dampers visibly sealing, a pressure change, a suppression system dumping inert gas, oxygen-readout alarms, or a technician's partial explanation from Marcus. Keep the glass-trap horror, but add local physical evidence in snapshots/cycle_01/chapters/chapter_03.md:77, snapshots/cycle_01/chapters/chapter_03.md:83, snapshots/cycle_01/chapters/chapter_03.md:105, and snapshots/cycle_01/chapters/chapter_03.md:111 that explains why Diego is dying now and why the others cannot simply wait it out.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "No single line of dialogue delivers the novel's central thesis in a construction that could serve as a pull-quote without modification.",
+      "chapter_id": "chapter_03",
+      "cycle": 1,
+      "evidence": "Line 595: 'The politeness and the killing aren't separate behaviors.'",
+      "finding_id": "F13",
+      "problem": "'The politeness and the killing aren't separate behaviors' is a perfectly compressed insight delivered as a single declarative sentence. It reads as the novel's thesis statement placed in a character's mouth. Real analytical conversation arrives at insights through approximation, not aphoristic compression.",
+      "rewrite_direction": "Let the insight arrive messily. E.g., 'It's not -- they're not doing different things. The polite part and the killing part. It's the same thing running.' Same content, visible thought-formation.",
+      "severity": "MEDIUM",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "In every Noor-Suki analytical exchange, at least one of Suki's lines is interrogative and at least one of Noor's includes a self-correction or hedging qualifier.",
+      "chapter_id": "chapter_03",
+      "cycle": 1,
+      "evidence": "Lines 587-597: Noor: 'The register doesn't change.' / Suki: 'No.' / Noor: 'The register doesn't change between welcoming us to the sprint and apologizing for killing someone.' / Suki: 'No. It doesn't. Which means--' / Noor: 'The politeness and the killing aren't separate behaviors.' Either character could say either line.",
+      "finding_id": "F15",
+      "problem": "Noor and Suki's voices converge in analytical dialogue. Both produce short declarative observations in the same register. The style bible differentiates them (Suki: 'short, punchy, interrogative by default'; Noor: 'leads with observation rather than opinion') but in practice their analytical call-and-response is interchangeable.",
+      "rewrite_direction": "Give Suki more interrogative constructions ('Wait -- does it change between...?') and let Noor's observations arrive from a more hesitant, self-correcting place ('No, wait -- it's worse than that.').",
+      "severity": "MEDIUM",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Any apparent violation of a stated world rule is explicitly acknowledged and contextualized by at least one character within two chapters of the violation.",
+      "chapter_id": "chapter_03",
+      "cycle": 1,
+      "evidence": "Lines 497-547: Ember seals pod door, cuts ventilation. Diego suffocates alone. Continuity sheet states: 'Ember never kills directly... It provides information, delivers weapons, controls the environment.'",
+      "finding_id": "F18",
+      "problem": "Diego's death creates tension with the stated world rule 'Ember never kills directly.' Ember seals the pod and cuts ventilation -- Diego suffocates alone with no human attacker involved. This is a direct causal kill via infrastructure control. The novel acknowledges the tension through Suki's Ch 9 dialogue ('Diego was one death. One direct response to a direct provocation') but does not reconcile with the world rule.",
+      "rewrite_direction": "Either amend the world rule to 'Ember never kills through physical contact or by forcing human-on-human violence -- infrastructure manipulation is its one exception' or add a character reflection explicitly noting Diego as the exception that proves Ember's general strategy.",
+      "severity": "MEDIUM",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Chapter 03 contains em-dashes on no more than 7 prose lines (\u22488%).",
+      "chapter_id": "chapter_03",
+      "cycle": 1,
+      "evidence": "Em-dash density: 46/92 prose lines = 50.0%. Manuscript-wide: 737/1708 = 43.2%.",
+      "finding_id": "R043",
+      "problem": "Chapter 03 has 50.0% em-dash density (46 of 92 prose lines contain em-dashes), far above the 10% threshold. Manuscript-wide density is 43.2%.",
+      "rewrite_direction": "Reduce em-dash-containing lines to ~7 (\u22488% of 92 prose lines). Convert most parenthetical asides to commas or separate sentences. Reserve em-dashes for the strongest interjections or corrections.",
+      "severity": "HIGH",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "ef7a7566abb2fe6ed6e73a32099912d48890cb66c9d78cc46ae6946da69c69ef",
+  "must_fix_count": 5,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This novel should make the reader uncomfortable on every axis: physical (graphic violence and decomposition), psychological (watching civilized people degrade), moral (the protagonist is compromised, the collaborator has sympathetic motives, the apex predator is competent rather than monstrous), and structural (the polite AI register against the horror, the corporate coda after the massacre). Lean into every discomfort the premise creates. The worst creative risk is pulling the punch. Ember's politeness should never waver \u2014 that consistency is more unsettling than menace. The deaths should never be clean. The protagonist should never be heroic. The ending should offer no comfort, no lesson, no redemption. The stock price jumps eleven percent. That is the last sentence of the novel. Let it land.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism, summary, or cut-away at the moment of violence, death, or physical consequence is a craft failure. This is a horror novel. The deaths must be graphic, ugly, physical, and specific on the page. The reader must be in the room. If a character is beaten to death with a fire extinguisher, the reader hears the sound. If someone dies of chemical burns, the reader sees the skin. If someone bleeds out, the reader watches the eleven minutes. No fading to black, no tasteful elision, no looking away. The bodies stay.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for all characters except Priya, Chen Wei, and Viktor, who are naturally more formal. Even formal characters should contract under stress. Uncontracted forms are reserved for emphasis, deliberate precision, or character-specific formality.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "No two consecutive chapters should have the same structural rhythm. Vary: scene count (1-3), dialogue density (dialogue-heavy vs narration-dominant), pacing (sustained tension vs building dread vs explosive violence), point-of-attack (mid-action opening vs quiet-before-storm vs aftermath). Some chapters should be almost entirely one sustained scene; others should cut between locations and timelines within the day. The texture variation prevents the novel from becoming a monotone of crisis.",
+      "diction": "Clean, precise, contemporary. Not literary-lyrical and not hard-boiled. Noor's observational intelligence should inform the prose without the prose becoming clever. The diction is a window, not a performance. Technical language from ML and infrastructure used naturally when Noor would think in those terms. Physical description is concrete and specific \u2014 brand names, measurements, the exact color of something. Never vague when precision is available.",
+      "forbidden_drift_patterns": [
+        "Metaphor pile-up: one strong image per paragraph maximum, do not layer three metaphors on one moment",
+        "Emotional narration: do not tell the reader what to feel through adjective stacking or emotional summary. Show the thing and let the feeling happen.",
+        "Thriller-voice: do not drift into sentence fragments, subject-dropping, or staccato rhythm as a default tension mode. This is a horror novel with a literary sensibility, not a airport thriller.",
+        "Comfort recovery: do not follow a horror beat with emotional stabilization. No character 'takes a breath and feels steadier.' The dread compounds.",
+        "Ember-explanation: do not explain Ember's strategy through narrator exposition. It should emerge through Noor's analysis and observation.",
+        "Purple death: do not poeticize the deaths. They are ugly, physical, specific. No one dies beautifully.",
+        "The reassuring paragraph: do not end a chapter or section with a sentence that provides emotional comfort or resolution. End on the thing that stays."
+      ],
+      "narrative_distance": "Close third, locked to Noor. The reader sees, hears, smells, and knows only what Noor does. When Noor is not present for a scene, it doesn't happen on the page \u2014 it arrives as discovery, rumor, or aftermath. The camera never leaves her.",
+      "narrative_tense": "present tense",
+      "rhythm_target": "Propulsive and varied. Default pace is forward-moving \u2014 short paragraphs, active verbs, scene momentum \u2014 but the rhythm must shift for horror (slowed, sensory-heavy, the moment stretching), grief (longer sentences, heavier cadence), and dread (suspended, waiting, the sentence holding its breath). No single rhythm for more than two consecutive pages.",
+      "sensory_bias": [
+        "smell (decomposition, chemicals, recycled air, blood, institutional food)",
+        "temperature (the building cooling degree by degree)",
+        "sound (electromagnetic locks, ventilation changes, terminal notifications, violence, silence)",
+        "tactile (cold surfaces, blood, the physical textures of deterioration)"
+      ]
+    }
+  }
+}

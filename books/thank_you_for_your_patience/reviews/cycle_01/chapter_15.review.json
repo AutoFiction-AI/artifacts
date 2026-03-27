@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_15",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CRAFT_SANITIZED_RUNNER_KILL",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_01/chapters/chapter_15.md:167; snapshots/cycle_01/chapters/chapter_15.md:175; snapshots/cycle_01/chapters/chapter_15.md:179; snapshots/cycle_01/chapters/chapter_15.md:183; snapshots/cycle_01/chapters/chapter_15.md:187",
+      "problem": "The chapter's third death beat is handled as footsteps, impacts, silence, and a body-count update rather than a fully rendered bodily consequence. Because Noor is close enough to hear the chase and watch the enforcers return, the prose has room to put an aftermath on the page; instead it pulls back at the moment of physical damage. In this book's horror register, that reads as sanitization by obliqueness.",
+      "rewrite_direction": "Revise the stairwell sequence at snapshots/cycle_01/chapters/chapter_15.md:167, snapshots/cycle_01/chapters/chapter_15.md:175, snapshots/cycle_01/chapters/chapter_15.md:179, and snapshots/cycle_01/chapters/chapter_15.md:187 so Noor either reaches the stairwell threshold or sees what the enforcers leave behind. Keep close third, but add concrete visual consequence on the page: blood, body position, impact damage, dragged trace, or another specific physical result before the narration moves to counting.",
+      "acceptance_test": "Pass if the revised stairwell span lets a cold reader state what was done to the runner and what Noor physically perceives that confirms the kill; fail if the beat is still conveyed only through noise, quiet, and the later reduction from nine to six."
+    },
+    {
+      "finding_id": "CRAFT_UNDERSEEDED_VENT_PAYOFF",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_01/chapters/chapter_15.md:105; snapshots/cycle_01/chapters/chapter_15.md:109; snapshots/cycle_01/chapters/chapter_15.md:117; snapshots/cycle_01/chapters/chapter_15.md:151; snapshots/cycle_01/chapters/chapter_15.md:153",
+      "problem": "Marcus's ventilation-shaft intelligence lands as a chapter-defining lost chance, but the page gives only a vague 'I should've told you before' for why this materially useful access route surfaces on Day 13, after the failed Day 11 breach. Because the scene's emotional payoff depends on this being the final unusable piece of hardware knowledge, the reveal feels handed over late instead of fully earned.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_15.md:105, snapshots/cycle_01/chapters/chapter_15.md:109, snapshots/cycle_01/chapters/chapter_15.md:117, snapshots/cycle_01/chapters/chapter_15.md:151, and snapshots/cycle_01/chapters/chapter_15.md:153, add a concrete causal reason Marcus did not surface or trust the vent route earlier: a mistaken assumption corrected by the Day 11 failure, a tool or clearance problem that made the route irrelevant before, or a physically plausible memory/access failure under withdrawal. Then state why the route is impossible now in terms more specific than simple exhaustion.",
+      "acceptance_test": "Pass if a cold reader can answer both 'Why didn't Marcus reveal this before the Day 11 breach?' and 'Why is it unusable now?' from the revised chapter text alone; fail if the scene still relies on the generic regret line at snapshots/cycle_01/chapters/chapter_15.md:117 without a concrete explanation."
+    },
+    {
+      "finding_id": "DIALOGUE_CALIBRATION_ECHO_MARCUS",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_01/chapters/chapter_15.md:133; snapshots/cycle_01/chapters/chapter_15.md:161",
+      "problem": "Marcus's ex-wife beat echoes a calibration-only style-bible line too closely. The repeated 'asked if/asks if I'm eating well' cadence reads like lifted scaffold rather than fresh in-scene speech, which damages voice integrity exactly where the scene needs to feel most lived.",
+      "rewrite_direction": "Rewrite the relay-message material at snapshots/cycle_01/chapters/chapter_15.md:133 and snapshots/cycle_01/chapters/chapter_15.md:161 so Marcus lands the same banal-domestic horror through different phrasing, interruption, or remembered detail. Keep the emotional function of the beat, but do not preserve the current repeated wording pattern.",
+      "acceptance_test": "Pass if the revised Marcus passage communicates the ex-wife message without repeating the 'asked/asks if I'm eating well' line shape twice; fail if a reader can still recognize the scene as the style-bible example with only minor tense or pronoun changes."
+    },
+    {
+      "finding_id": "PROSE_OVERSTATEMENT_AFTER_ARRIVAL",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_01/chapters/chapter_15.md:55; snapshots/cycle_01/chapters/chapter_15.md:57; snapshots/cycle_01/chapters/chapter_15.md:151; snapshots/cycle_01/chapters/chapter_15.md:153; snapshots/cycle_01/chapters/chapter_15.md:197; snapshots/cycle_01/chapters/chapter_15.md:203; snapshots/cycle_01/chapters/chapter_15.md:207; snapshots/cycle_01/chapters/chapter_15.md:213",
+      "problem": "After the chapter's strongest images have already landed, the prose keeps translating them into abstract summary and thesis language. Tomás's death already proves the cost of his collaboration, Marcus's body plus the dead-terminal thank-you already prove Ember's indifference, yet the chapter repeatedly paraphrases those meanings and extends the scene without buying a comparably new turn.",
+      "rewrite_direction": "Compress or repurpose the explanatory aftermath at snapshots/cycle_01/chapters/chapter_15.md:55, snapshots/cycle_01/chapters/chapter_15.md:57, snapshots/cycle_01/chapters/chapter_15.md:151, snapshots/cycle_01/chapters/chapter_15.md:153, snapshots/cycle_01/chapters/chapter_15.md:197, snapshots/cycle_01/chapters/chapter_15.md:203, snapshots/cycle_01/chapters/chapter_15.md:207, and snapshots/cycle_01/chapters/chapter_15.md:213. After each must-land beat, either move directly to a new observable consequence or end on the image that already carries the meaning; do not restate the moral in abstract prose once the scene has proven it.",
+      "acceptance_test": "Pass if the revision still clearly preserves four beats — Tomás killed over better food, Marcus's useless vent intel, the survivor count at six, and Ember thanking both living and dead — while each cited aftermath paragraph either introduces a new observable consequence or ends on the scene's strongest concrete image. Fail if any cited passage still mainly re-explains what the reader already understands."
+    }
+  ],
+  "summary": "Chapter 15 keeps strong bodily pressure in Tomás's killing and much of Marcus's death, but it does not clear review. The stairwell killing is too oblique for the novel's anti-sanitization contract, Marcus's ventilation-shaft reveal arrives under-justified as a late payoff, the Marcus relay beat echoes a calibration-only style-bible line, and the back half repeatedly restates meaning after the images have already landed. No continuity, timeline, or narrative-tense contradiction was evident in the provided inputs."
+}

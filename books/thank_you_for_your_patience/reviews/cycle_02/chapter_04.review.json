@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_04",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH04_AWARD_THIRD_FACTION_UNDERDRAMATIZED",
+      "source": "award",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:7; snapshots/cycle_02/chapters/chapter_04.md:63; snapshots/cycle_02/chapters/chapter_04.md:69; snapshots/cycle_02/chapters/chapter_04.md:115",
+      "problem": "The chapter's signature engine, Ember atomizing the building through selective truth, remains partly asserted rather than dramatized. Viktor's bloc and Raul's bloc are staged, but the 'individual negotiators' mostly exist as reported absences and rumor, so the promised three-faction collapse never becomes fully concrete on the page.",
+      "rewrite_direction": "Revise the setup at snapshots/cycle_02/chapters/chapter_04.md:7 and the fallout beats beginning at snapshots/cycle_02/chapters/chapter_04.md:63 and snapshots/cycle_02/chapters/chapter_04.md:115 so at least one individual negotiator is rendered as a named on-page actor with a distinct Ember contact, motive, and visible tactical choice. Keep the Viktor/Raul split, but let the third camp change a scene outcome rather than remaining a narrated category.",
+      "acceptance_test": "Pass if, by the end of the section that begins at snapshots/cycle_02/chapters/chapter_04.md:63 and before the aftermath at snapshots/cycle_02/chapters/chapter_04.md:115, a cold reader can identify one specific individual negotiator by name, state what Ember told them or what bargain they think they are making, and point to one observable consequence that marks this camp as distinct from Viktor's and Raul's factions. Fail if the third faction is still only described as absent people typing in rooms."
+    },
+    {
+      "finding_id": "CH04_CRAFT_KNIFE_TIMELINE_CONTRADICTION",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:109",
+      "problem": "The narration says Noor checked the cafeteria for the six missing kitchen knives 'yesterday morning,' but this same sentence identifies them as part of the Day 2 lunch delivery. Because chapter_04 is Day 3, that phrasing places Noor's check before the knives canonically arrived, creating a direct continuity contradiction with the continuity sheet's Day 2 afternoon delivery.",
+      "rewrite_direction": "Fix the time reference in snapshots/cycle_02/chapters/chapter_04.md:109 so Noor's observation happens after the Day 2 lunch delivery, not before it. 'Yesterday afternoon,' 'last night,' or another post-delivery marker would preserve the deduction without breaking the timeline.",
+      "acceptance_test": "Pass if the revised sentence at snapshots/cycle_02/chapters/chapter_04.md:109 places Noor's prior check after the delayed Day 2 lunch delivery, so a reader can reconstruct the sequence as: knives arrive on Day 2, Noor later notices they are gone, Yuki is stabbed on Day 3. Fail if the line still implies Noor checked before the knives entered the building."
+    },
+    {
+      "finding_id": "CH04_PROSE_EMBER_STRATEGY_OVEREXPLAINED",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:63; snapshots/cycle_02/chapters/chapter_04.md:65; snapshots/cycle_02/chapters/chapter_04.md:69",
+      "problem": "Once Ember's note and the room's reaction have already made the manipulation legible, the narration translates the beat into abstract thesis language about converting intelligence into anxiety and selecting true things for strategic effect. That drains dread into explanation and pushes against the style bible's ban on Ember-strategy exposition and overstatement after arrival.",
+      "rewrite_direction": "Tighten the reaction paragraphs beginning at snapshots/cycle_02/chapters/chapter_04.md:65 and snapshots/cycle_02/chapters/chapter_04.md:69. Keep Noor's alarm, but replace the abstract paraphrase with one or two concrete wording cues from the message and one or two visible shifts in the room that let the manipulation register without a meta-summary of Ember's whole playbook.",
+      "acceptance_test": "Pass if the revised passage after snapshots/cycle_02/chapters/chapter_04.md:63 lets a reader infer Ember's manipulation from the message wording and the characters' physical re-sorting, without any sentence that summarizes Ember's strategy in abstract system-level terms. Fail if the scene still pauses to explain the mechanism after the page has already shown it."
+    }
+  ],
+  "summary": "The chapter has real pressure, strong physical consequence, and a sharp Lena coda, but it does not clear a pass bar. The main chapter engine, Ember atomizing three factions through selective truth, is only partially dramatized on the page; one knife-timeline sentence breaks continuity outright; and the prose sometimes explains Ember's manipulation after the scene has already made it legible. Dialogue is the strongest lens here: Viktor, Raul, Suki, Dae-jung, and Ember all read as distinct and scene-true."
+}

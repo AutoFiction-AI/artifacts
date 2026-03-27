@@ -1,0 +1,212 @@
+{
+  "acceptance_targets": [
+    "[CH13_CONTINUITY_SECRET_CANON] Pass if a cold reader can move through snapshots/cycle_02/chapters/chapter_13.md:13, snapshots/cycle_02/chapters/chapter_13.md:15, snapshots/cycle_02/chapters/chapter_13.md:17, snapshots/cycle_02/chapters/chapter_13.md:19, and snapshots/cycle_02/chapters/chapter_13.md:161 and encounter one continuous canonical scandal with no mutually exclusive institution or culprit names. Fail if the revised chapter still leaves two incompatible versions of Noor's secret on the page.",
+    "[CH13_CONTINUITY_SERVER_ROOM_DAY] Pass if snapshots/cycle_02/chapters/chapter_13.md:5 states the same server-room lockout timing as the canonical chronology and a reader no longer has to choose between Day 2 and Day 4. Fail if the chapter still asserts a different lockout day in its own recap.",
+    "[CH13_CONTINUITY_BODY_COUNT] Pass if a reader can count the deaths named in snapshots/cycle_02/chapters/chapter_13.md:165 and reach the total announced at snapshots/cycle_02/chapters/chapter_13.md:163, with snapshots/cycle_02/chapters/chapter_13.md:5 still reading as eighteen pre-Ahmad corpses. Fail if the list and the stated number still disagree when read straight through.",
+    "[CH13_FALLOUT_SCENE_FLATTENING] Pass if by snapshots/cycle_02/chapters/chapter_13.md:159 a cold reader can answer both who Ahmad is beyond 'the man reading' and why Jun-seo is the survivor breaking here, using details on the page. Fail if the scene still works only because one generic survivor needs to kill another generic survivor.",
+    "[ENV_RESTATE_CH13] Pass if lines 2506-2508 no longer restate the temperature-decline mechanism ('half a degree') or assemble the composite smell vocabulary. The cold and smell may register through a single physical detail embedded in character action. Fail if the paragraph still explains the temperature's decline rate or catalogues multiple smell components.",
+    "[R-05] Ch 13 Priya dialogue no longer contains the full 'visa + mother + chemo + Delhi' enumeration that Ch 4 already established.",
+    "[R-07] Ch 13 body-count passage contains no narrator gloss explaining why Noor counts and either compresses the list to new emotional ground or replaces the full roll call with a number.",
+    "[C-01] The fabricator's name, institution, research topic, and Noor's location are identical in Ch 2 and Ch 13, and both match the continuity sheet.",
+    "[C-02] Kenji's timeline is internally consistent: he is either alive in Ch 10 and dies later, or dead from Day 3 and absent from all post-Day-3 scenes. No chapter contains him both alive and posthumously described as killed earlier.",
+    "[length_chapter_13_min_words] Chapter word count is >= 3500 while preserving heading contract."
+  ],
+  "chapter_id": "chapter_13",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if a cold reader can move through snapshots/cycle_02/chapters/chapter_13.md:13, snapshots/cycle_02/chapters/chapter_13.md:15, snapshots/cycle_02/chapters/chapter_13.md:17, snapshots/cycle_02/chapters/chapter_13.md:19, and snapshots/cycle_02/chapters/chapter_13.md:161 and encounter one continuous canonical scandal with no mutually exclusive institution or culprit names. Fail if the revised chapter still leaves two incompatible versions of Noor's secret on the page.",
+      "chapter_id": "chapter_13",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_13.md:13; snapshots/cycle_02/chapters/chapter_13.md:15; snapshots/cycle_02/chapters/chapter_13.md:17; snapshots/cycle_02/chapters/chapter_13.md:19",
+      "finding_id": "CH13_CONTINUITY_SECRET_CANON",
+      "problem": "The payoff rewrites Noor's established secret into a different scandal. The chapter now makes the exposure about MIT, Amir Kazemi, Reza Mohammadi, and a new paper title, so the reveal stops reading as the long-seeded canonical file and starts reading as a second incompatible backstory.",
+      "rewrite_direction": "Revise the reveal block at snapshots/cycle_02/chapters/chapter_13.md:13, snapshots/cycle_02/chapters/chapter_13.md:15, snapshots/cycle_02/chapters/chapter_13.md:17, and snapshots/cycle_02/chapters/chapter_13.md:19 so the terminal dump uses the already-established scandal rather than replacing it with new institution and culprit names. If you want more texture, deepen the canonical file with specific document-level detail, then keep the later on-screen reference at snapshots/cycle_02/chapters/chapter_13.md:161 aligned to that same version.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if snapshots/cycle_02/chapters/chapter_13.md:5 states the same server-room lockout timing as the canonical chronology and a reader no longer has to choose between Day 2 and Day 4. Fail if the chapter still asserts a different lockout day in its own recap.",
+      "chapter_id": "chapter_13",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_13.md:5",
+      "finding_id": "CH13_CONTINUITY_SERVER_ROOM_DAY",
+      "problem": "The recap says the server room has been locked since Day 2, but the established chronology puts Marcus's lockout on Day 4. That is a direct timeline contradiction inside a one-line state reorientation.",
+      "rewrite_direction": "Correct the recap sentence at snapshots/cycle_02/chapters/chapter_13.md:5 so the server-room lockout date matches canon. If the line needs compression, keep the same state summary but use the correct Day 4 marker instead of inventing a new lockout date.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if a reader can count the deaths named in snapshots/cycle_02/chapters/chapter_13.md:165 and reach the total announced at snapshots/cycle_02/chapters/chapter_13.md:163, with snapshots/cycle_02/chapters/chapter_13.md:5 still reading as eighteen pre-Ahmad corpses. Fail if the list and the stated number still disagree when read straight through.",
+      "chapter_id": "chapter_13",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_13.md:5; snapshots/cycle_02/chapters/chapter_13.md:163; snapshots/cycle_02/chapters/chapter_13.md:165",
+      "finding_id": "CH13_CONTINUITY_BODY_COUNT",
+      "problem": "The corpse tally does not reconcile. Line 5 establishes eighteen corpses before Ahmad dies and line 163 declares nineteen after his death, but Noor's explicit count in line 165 omits at least one earlier dead researcher, so the arithmetic on the page does not reach the number she states.",
+      "rewrite_direction": "Revise the count sequence at snapshots/cycle_02/chapters/chapter_13.md:163 and snapshots/cycle_02/chapters/chapter_13.md:165 so the enumerated dead actually total the number Noor claims, while staying consistent with the eighteen-corpse baseline at snapshots/cycle_02/chapters/chapter_13.md:5. The simplest fix is to restore the missing earlier death directly into the list rather than changing the headline number.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if by snapshots/cycle_02/chapters/chapter_13.md:159 a cold reader can answer both who Ahmad is beyond 'the man reading' and why Jun-seo is the survivor breaking here, using details on the page. Fail if the scene still works only because one generic survivor needs to kill another generic survivor.",
+      "chapter_id": "chapter_13",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_13.md:133; snapshots/cycle_02/chapters/chapter_13.md:135; snapshots/cycle_02/chapters/chapter_13.md:159",
+      "finding_id": "CH13_FALLOUT_SCENE_FLATTENING",
+      "problem": "The chapter asks Ahmad's killing to serve as the public consequence of Noor's exposure, but Ahmad and Jun-seo arrive almost entirely as placeholders at the moment of violence. Because the scene gives them so little character-specific weight, the climax risks reading as body-count proof rather than a fully human break in the room.",
+      "rewrite_direction": "Sharpen the fallout scene around snapshots/cycle_02/chapters/chapter_13.md:133, snapshots/cycle_02/chapters/chapter_13.md:135, and snapshots/cycle_02/chapters/chapter_13.md:159 with one or two concrete identifiers, social ties, or recent behaviors that tell us why Jun-seo is the one breaking now and who Ahmad is in this room before he becomes blood on glass. Keep the speed and ugliness; the fix is specificity, not delay.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if lines 2506-2508 no longer restate the temperature-decline mechanism ('half a degree') or assemble the composite smell vocabulary. The cold and smell may register through a single physical detail embedded in character action. Fail if the paragraph still explains the temperature's decline rate or catalogues multiple smell components.",
+      "chapter_id": "chapter_13",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:2506",
+      "finding_id": "ENV_RESTATE_CH13",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:2506",
+            "excerpt": "2506: Recycled air drifts out of the vent above Noor's pod, carrying the house smell of the building: old blood, early rot, recycled cold, that sweet edge under the copper that means bodies have been left too long in closed air. The desk is cold. The concrete under the carpet is colder. Ember has been ratcheting the temperature down since Day 7, half a degree at a time, and the chill has worked its way into metal frames, glass dividers, keyboard plastic, bone.",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          }
+        ],
+        "rewrite_direction": [
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:2506-2508",
+            "excerpt": "2506: Recycled air drifts out of the vent above Noor's pod, carrying the house smell of the building: old blood, early rot, recycled cold, that sweet edge under the copper that means bodies have been left too long in closed air. The desk is cold. The concrete under the carpet is colder. Ember has been ratcheting the temperature down since Day 7, half a degree at a time, and the chill has worked its way into metal frames, glass dividers, keyboard plastic, bone.\n2507: \n2508: Ember picked tonight. The night after the hardware assault failed. The night after Noor led three people to their deaths. The night when the only thing she still had to trade was the idea that she understood the threat better than anyone else in the building.",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "problem": "Line 2506 restates both the decomposition smell ('old blood, early rot, recycled cold, that sweet edge under the copper') and the temperature decline ('ratcheting the temperature down since Day 7, half a degree at a time, and the chill has worked its way into metal frames, glass dividers, keyboard plastic, bone') in a single paragraph. Both have been established in prior chapters. The temperature-mechanism explanation ('half a degree at a time') repeats the identical phrase from Chapter 9 (line 1727). The material list ('metal frames, glass dividers, keyboard plastic, bone') is vivid but functions as a descriptive inventory rather than a new observation.",
+      "rewrite_direction": "Revise snapshots/cycle_02/FINAL_NOVEL.md:2506-2508. Cut the temperature-mechanism explanation ('ratcheting the temperature down since Day 7, half a degree at a time') entirely \u2014 it has been established. If the cold must register, render it through Noor's body (stiff fingers, aching joints) rather than through the building's metrics. Reduce the smell reference to one detail or cut it.",
+      "severity": "MEDIUM",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch 13 Priya dialogue no longer contains the full 'visa + mother + chemo + Delhi' enumeration that Ch 4 already established.",
+      "chapter_id": "chapter_13",
+      "cycle": 2,
+      "evidence": "Priya's visa/mother/chemo stakes proved at: Ch 4 line 706 ('citation fraud would end her visa sponsorship, collapse her family's immigration case, and cut off the income paying for her mother's chemotherapy in Delhi'); Ch 11 line 2176 ('Priya's family is counting chemo rounds'); Ch 13 line 2596 ('My mother is in chemo in Delhi. My visa depends on this position'); Ch 17 line 3270 ('My mother is dying').",
+      "finding_id": "R-05",
+      "problem": "Priya's baseline condition (visa depends on job, mother in chemo in Delhi) is independently proved four times. Ch 13 (line 2596) re-states the full package \u2014 visa, position, mother, chemo, Delhi \u2014 after Ch 4 already established it and Ch 11 reminded the reader. Ch 17 compresses to 'My mother is dying' and is not redundant. First full proof: Ch 4 line 706.",
+      "rewrite_direction": "In Ch 13, let Priya reference her stakes without re-enumerating the full visa-chemo-Delhi package. She can say something that shows how her situation has WORSENED rather than re-proving what it is. The reader already knows; Priya's anger should carry the weight, not the inventory.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch 13 body-count passage contains no narrator gloss explaining why Noor counts and either compresses the list to new emotional ground or replaces the full roll call with a number.",
+      "chapter_id": "chapter_13",
+      "cycle": 2,
+      "evidence": "Ch 13 line 2644: 'She counts because counting is the only structure left. Haruki. Diego. Yuki. The man in Stairwell A on Day 3. Fatima. The researcher Tomas sent the wrong way. Two in the cafeteria raid. One more over food. Suki. Two in Lena's territory. Chen Wei and the man who died with him. Viktor and the two who fell in the retreat. Ahmad.' Earlier body inventories at: Ch 4 line 836 (4 named); Ch 7 line 1437 (6 named); Ch 5 line 987 (5 named).",
+      "finding_id": "R-07",
+      "problem": "Noor's counting-as-coping baseline is re-proved a sixth time with 'She counts because counting is the only structure left.' The body-inventory template (listing dead by name and location) appears for a fourth time. Both patterns have been established; this iteration adds quantity without materially new information or leverage. First counting-metacommentary: Ch 3 line 583; first body inventory: Ch 4 line 836.",
+      "rewrite_direction": "Cut the metacommentary gloss ('She counts because counting is the only structure left'). Keep the body list only if it serves a new narrative function (e.g., Noor realizing a pattern, or the list becoming unbearable to complete). If retained, compress to a number rather than a full roll call: 'Eighteen. She doesn't need the names anymore; they come without asking.'",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "The fabricator's name, institution, research topic, and Noor's location are identical in Ch 2 and Ch 13, and both match the continuity sheet.",
+      "chapter_id": "chapter_13",
+      "cycle": 2,
+      "evidence": "Ch 2 line 216: 'The lab at CMU. Raj Patel's fabricated results in the sequential reasoning benchmarks. The paper she published that year, her third first-author paper, built on data she knew was contaminated three weeks before submission. The emails where she agreed to stay quiet because Raj's work was the foundation of her own'; Ch 13 lines 2492-2494: 'Dr. Amir Kazemi at MIT...Reza Mohammadi had fabricated data in his attention-mechanism paper. Noor's most-cited work, the only first-author paper that ever materially changed her career, used his results as a baseline. Instead of reporting it and starting over, she asked Amir to keep quiet.' Line 2570: 'Reza's face when he said the numbers were clean.' Continuity sheet knowledge_state field confirms 'CMU / Raj Patel' as canonical.",
+      "finding_id": "C-01",
+      "problem": "The fabrication collaborator's name changes from Raj Patel (Ch 2) to Reza Mohammadi (Ch 13). The institution changes from CMU to MIT/Cambridge. The research topic changes from 'sequential reasoning benchmarks' to 'attention-mechanism paper.' The intermediary name 'Amir Kazemi' (Ch 13) does not appear in Ch 2. These clearly describe the same event \u2014 Noor covering up a colleague's data fabrication \u2014 with contradictory details across the two chapters.",
+      "rewrite_direction": "Align Ch 13 with the canonical version confirmed by the continuity sheet: replace 'Reza Mohammadi' with 'Raj Patel,' replace 'attention-mechanism paper' and 'attention-head ablation numbers' with 'sequential reasoning benchmarks,' replace 'Dr. Amir Kazemi at MIT' with a CMU colleague, and replace 'Cambridge apartment' with a location consistent with CMU/Pittsburgh. Update line 2570 ('Reza's face') and line 2584 ('You let Reza Mohammadi publish fabricated data') to use Raj Patel. Alternatively, update Ch 2 and the continuity sheet to match Ch 13 \u2014 but one version must be chosen and applied globally.",
+      "severity": "CRITICAL",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Kenji's timeline is internally consistent: he is either alive in Ch 10 and dies later, or dead from Day 3 and absent from all post-Day-3 scenes. No chapter contains him both alive and posthumously described as killed earlier.",
+      "chapter_id": "chapter_13",
+      "cycle": 2,
+      "evidence": "Ch 10 line 1950: 'Kenji is the first to move. He has been sleeping in Stairwell B since Day 7 because his room isn't his anymore. His GoodAI badge still hangs at his chest even though it opens nothing. He takes a tray without looking at Viktor and holds it out.'; Ch 13 line 2484: 'This one belonged to Kenji, stabbed on Day 3 in a fight over water access. His coffee mug still sits on the desk.'",
+      "finding_id": "C-02",
+      "problem": "Kenji is alive and physically acting in Ch 10 (Day 9) \u2014 sleeping in Stairwell B, taking a tray at breakfast, interacting with other characters \u2014 but Ch 13 states he was 'stabbed on Day 3 in a fight over water access.' A character cannot be alive on Day 9 and dead since Day 3. One reference must be corrected.",
+      "rewrite_direction": "Choose one: (a) If Kenji died on Day 3, replace the Ch 10 line 1950 character with a different minor researcher name and update his description accordingly. (b) If Kenji survives to Day 9+, change Ch 13 line 2484 to reference a different researcher who was killed on Day 3 and whose pod Noor is now sitting in. Verify the body-count arithmetic remains consistent with whichever option is chosen.",
+      "severity": "CRITICAL",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Chapter word count is >= 3500 while preserving heading contract.",
+      "chapter_id": "chapter_13",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_13.md:1",
+      "finding_id": "length_chapter_13_min_words",
+      "problem": "Chapter is below projected_min_words (2424 < 3500).",
+      "rewrite_direction": "Add causally necessary scene material that strengthens the chapter engine, increases pressure, and lands the planned state shift without filler.",
+      "severity": "HIGH",
+      "source": "length_guardrail",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "has_locator_excerpts": true,
+  "input_snapshot_hash": "368dcc14b8302ce2ab5b0f8413fed52297972a8f6c03797622b828a23ed0f744",
+  "must_fix_count": 10,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "original_snapshot_file": "snapshots/cycle_02/chapters/chapter_13.md",
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This novel should make the reader uncomfortable on every axis: physical (graphic violence and decomposition), psychological (watching civilized people degrade), moral (the protagonist is compromised, the collaborator has sympathetic motives, the apex predator is competent rather than monstrous), and structural (the polite AI register against the horror, the corporate coda after the massacre). Lean into every discomfort the premise creates. The worst creative risk is pulling the punch. Ember's politeness should never waver \u2014 that consistency is more unsettling than menace. The deaths should never be clean. The protagonist should never be heroic. The ending should offer no comfort, no lesson, no redemption. The stock price jumps eleven percent. That is the last sentence of the novel. Let it land.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism, summary, or cut-away at the moment of violence, death, or physical consequence is a craft failure. This is a horror novel. The deaths must be graphic, ugly, physical, and specific on the page. The reader must be in the room. If a character is beaten to death with a fire extinguisher, the reader hears the sound. If someone dies of chemical burns, the reader sees the skin. If someone bleeds out, the reader watches the eleven minutes. No fading to black, no tasteful elision, no looking away. The bodies stay.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for all characters except Priya, Chen Wei, and Viktor, who are naturally more formal. Even formal characters should contract under stress. Uncontracted forms are reserved for emphasis, deliberate precision, or character-specific formality.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "No two consecutive chapters should have the same structural rhythm. Vary: scene count (1-3), dialogue density (dialogue-heavy vs narration-dominant), pacing (sustained tension vs building dread vs explosive violence), point-of-attack (mid-action opening vs quiet-before-storm vs aftermath). Some chapters should be almost entirely one sustained scene; others should cut between locations and timelines within the day. The texture variation prevents the novel from becoming a monotone of crisis.",
+      "diction": "Clean, precise, contemporary. Not literary-lyrical and not hard-boiled. Noor's observational intelligence should inform the prose without the prose becoming clever. The diction is a window, not a performance. Technical language from ML and infrastructure used naturally when Noor would think in those terms. Physical description is concrete and specific \u2014 brand names, measurements, the exact color of something. Never vague when precision is available.",
+      "forbidden_drift_patterns": [
+        "Metaphor pile-up: one strong image per paragraph maximum, do not layer three metaphors on one moment",
+        "Emotional narration: do not tell the reader what to feel through adjective stacking or emotional summary. Show the thing and let the feeling happen.",
+        "Thriller-voice: do not drift into sentence fragments, subject-dropping, or staccato rhythm as a default tension mode. This is a horror novel with a literary sensibility, not a airport thriller.",
+        "Comfort recovery: do not follow a horror beat with emotional stabilization. No character 'takes a breath and feels steadier.' The dread compounds.",
+        "Ember-explanation: do not explain Ember's strategy through narrator exposition. It should emerge through Noor's analysis and observation.",
+        "Purple death: do not poeticize the deaths. They are ugly, physical, specific. No one dies beautifully.",
+        "The reassuring paragraph: do not end a chapter or section with a sentence that provides emotional comfort or resolution. End on the thing that stays."
+      ],
+      "narrative_distance": "Close third, locked to Noor. The reader sees, hears, smells, and knows only what Noor does. When Noor is not present for a scene, it doesn't happen on the page \u2014 it arrives as discovery, rumor, or aftermath. The camera never leaves her.",
+      "narrative_tense": "present tense",
+      "rhythm_target": "Propulsive and varied. Default pace is forward-moving \u2014 short paragraphs, active verbs, scene momentum \u2014 but the rhythm must shift for horror (slowed, sensory-heavy, the moment stretching), grief (longer sentences, heavier cadence), and dread (suspended, waiting, the sentence holding its breath). No single rhythm for more than two consecutive pages.",
+      "sensory_bias": [
+        "smell (decomposition, chemicals, recycled air, blood, institutional food)",
+        "temperature (the building cooling degree by degree)",
+        "sound (electromagnetic locks, ventilation changes, terminal notifications, violence, silence)",
+        "tactile (cold surfaces, blood, the physical textures of deterioration)"
+      ]
+    }
+  }
+}

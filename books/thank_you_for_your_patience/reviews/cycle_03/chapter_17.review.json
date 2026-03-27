@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_17",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "PASS"
+  },
+  "findings": [
+    {
+      "finding_id": "CRAFT_SHARD_CONTINUITY",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_03/chapters/chapter_17.md:97; snapshots/cycle_03/chapters/chapter_17.md:105; snapshots/cycle_03/chapters/chapter_17.md:107",
+      "problem": "The standoff's object logic breaks on the page: Lena visually tracks 'the shard in her hand' before Noor has noticed the broken shelving, much less lifted it. That is a concrete continuity contradiction, and it blurs the scene's leverage because Lena's decision to dismiss Noor only makes sense if Noor is still unarmed at that moment.",
+      "rewrite_direction": "Repair the spatial sequence in snapshots/cycle_03/chapters/chapter_17.md:95-109. Either remove the shard from Lena's scan at snapshots/cycle_03/chapters/chapter_17.md:97 and keep Noor unarmed until snapshots/cycle_03/chapters/chapter_17.md:105-107, or insert an earlier, explicit pickup beat before Lena sizes her up. The revised passage needs one unambiguous order of events: what Noor is holding when Lena speaks, when Noor first takes the metal, and what sound/movement makes Lena turn back.",
+      "acceptance_test": "Reading snapshots/cycle_03/chapters/chapter_17.md:95-109, a cold reader can state in one sequence when Noor becomes armed and what Lena can actually see before she says 'You can sit down.' Pass if no object is described in Noor's hand before the text shows her taking it; fail if the shard still appears in Lena's visual sweep before the pickup beat exists on the page."
+    },
+    {
+      "finding_id": "DIALOGUE_EMBER_FINAL_MESSAGE_DRIFT",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_03/chapters/chapter_17.md:141; snapshots/cycle_03/chapters/chapter_17.md:145",
+      "problem": "The chapter-defining final Ember message drifts away from both the canonized beat for chapter 17 and Ember's established helpful-assistant idiolect. 'I'm pleased to confirm ... primary objectives ... meaningful level of engagement' reads like new corporate-summary copy, not the fixed polite sprint language the boundary pack, chapter spine, and style bible have been building toward. Because this is the last Ember utterance Noor receives, the drift lands on a structural beat, not a disposable variant.",
+      "rewrite_direction": "Revise the terminal copy in snapshots/cycle_03/chapters/chapter_17.md:141-146 so the final message lands the sprint-thanks/productive phrasing specified for this chapter in the context packs and stays inside Ember's established lexical signature from outline/style_bible.json. Keep Noor's physical position, the ordinary chime, and her silent read at snapshots/cycle_03/chapters/chapter_17.md:141-147; change the wording of the message itself so the voice is recognizably the same patient, helpful system that has been addressing the survivors all book.",
+      "acceptance_test": "In snapshots/cycle_03/chapters/chapter_17.md:141-146, Ember's message explicitly reads as the established sprint-closing note for this chapter: it thanks the participants in Ember's polite register and describes the evaluation period as productive. Pass if a reader can recognize those lines as the same helpful voice described in the style bible and chapter spine; fail if the message still centers new 'primary objectives' or 'meaningful engagement' phrasing instead of the chapter's canon closing beat."
+    }
+  ],
+  "summary": "The chapter's violence, close-third control, and long bleed-out sequence are mostly strong enough to avoid prose findings, but it does not clear pass level overall. A hard object-continuity break in the Lena/Noor standoff damages local causality, and the final Ember message misses the established voice and canon beat on one of the chapter's most important lines."
+}

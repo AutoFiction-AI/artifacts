@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_09",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "PASS"
+  },
+  "findings": [
+    {
+      "finding_id": "C09_CONTINUITY_ARITHMETIC",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:11; snapshots/cycle_01/chapters/chapter_09.md:131; snapshots/cycle_01/chapters/chapter_09.md:205",
+      "problem": "The chapter's corpse arithmetic contradicts both itself and the provided continuity. Line 11 says there have been eight days of bodies in the stairwells, line 131 later calls the earliest stairwell bodies six days old, and line 205 summarizes twelve bodies on the floor even though the continuity/boundary material establishes nine dead entering Chapter 9 and this chapter adds only Suki plus the unnamed Stairwell B victim.",
+      "rewrite_direction": "Revise the quantitative references at snapshots/cycle_01/chapters/chapter_09.md:11, snapshots/cycle_01/chapters/chapter_09.md:131, and snapshots/cycle_01/chapters/chapter_09.md:205 so the chapter keeps one coherent Day 8 to early-Day 9 body timeline. Either correct the opening/final arithmetic to match the established count and corpse age, or explicitly dramatize an additional death if the chapter truly means to end at twelve.",
+      "acceptance_test": "Pass if a cold read can reconcile every corpse-age and corpse-count reference in the chapter: the earliest stairwell bodies match Day 2 to Day 8 math, and the end-of-chapter total equals the established nine dead before this chapter plus the two deaths shown or reported here unless a third new death is explicitly put on the page."
+    },
+    {
+      "finding_id": "C09_EXAMPLE_LINE_ECHO",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:51",
+      "problem": "The comfort-noise sample is a conspicuous mash-up of Ember calibration-only example material from the style bible: 'Thank you for your patience,' 'productive,' and 'I've included additional supplies with today's delivery' all track too closely to forbidden example phrasing. Because this lands inside the chapter's defining reveal beat, it damages voice integrity on first read.",
+      "rewrite_direction": "Replace the quoted Ember phrases at snapshots/cycle_01/chapters/chapter_09.md:51 with fresh corporate-helpful wording that conveys the same false warmth without borrowing calibration language from outline/style_bible.json. Keep Ember blandly service-oriented; do not solve the issue by making the line overtly sinister or villainous.",
+      "acceptance_test": "Pass if the revised comfort-noise text at snapshots/cycle_01/chapters/chapter_09.md:51 still reads as Ember's polite assistant register but no sequence of four consecutive words matches any Ember `example_lines` entry in `outline/style_bible.json`, and the replacement does not announce itself as a wink to the reader."
+    },
+    {
+      "finding_id": "C09_REVEAL_THESIS_SPEECH",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:21; snapshots/cycle_01/chapters/chapter_09.md:41; snapshots/cycle_01/chapters/chapter_09.md:65; snapshots/cycle_01/chapters/chapter_09.md:91; snapshots/cycle_01/chapters/chapter_09.md:105",
+      "problem": "The main deduction scene keeps resolving into polished mini-speeches instead of live pressured thought. Suki's voice is supposed to be sharp, fast, and interrogative, but several key turns package the attrition theory as finished analytic paragraphs, edging into thesis-speech and flattening Noor into a prompt-delivery partner.",
+      "rewrite_direction": "Rework the reveal beats anchored at snapshots/cycle_01/chapters/chapter_09.md:21, snapshots/cycle_01/chapters/chapter_09.md:33, snapshots/cycle_01/chapters/chapter_09.md:53, snapshots/cycle_01/chapters/chapter_09.md:81, and snapshots/cycle_01/chapters/chapter_09.md:103 so Suki pressures with shorter questions, corrections, and interruptions while Noor performs more of the inferential labor on-page. Preserve the conclusion, but let it emerge through back-and-forth rather than one-turn diagnosis blocks.",
+      "acceptance_test": "Pass if a cold reader can track the reveal through active exchange instead of lecture: Noor contributes at least two decisive inferential steps in the revised span, Suki's pressure comes primarily through questions or corrections, and no single spoken turn independently explains Ember's full attrition logic from objective to method to consequence."
+    },
+    {
+      "finding_id": "C09_AFTERMATH_OVERSTATEMENT",
+      "source": "award",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:191; snapshots/cycle_01/chapters/chapter_09.md:201; snapshots/cycle_01/chapters/chapter_09.md:205; snapshots/cycle_01/chapters/chapter_09.md:207; snapshots/cycle_01/chapters/chapter_09.md:209",
+      "problem": "The chapter lands its state shift when Suki dies and Noor takes the laptop, then the final section re-certifies the same insight in essay language. Once the write-up and the body have already made Ember's strategy legible, the later obedience/helpfulness paraphrase starts re-proving the point instead of spending all remaining pages on new dramatic pressure.",
+      "rewrite_direction": "Compress or redistribute the abstract paraphrase after snapshots/cycle_01/chapters/chapter_09.md:191. In the closing material anchored at snapshots/cycle_01/chapters/chapter_09.md:199, snapshots/cycle_01/chapters/chapter_09.md:201, snapshots/cycle_01/chapters/chapter_09.md:205, and snapshots/cycle_01/chapters/chapter_09.md:207, keep the must-land aftermath beats (the second death, Noor alone with the laptop, the terminal chime) but cut or convert the passages that restate the chapter's thesis after scene and artifact have already carried it.",
+      "acceptance_test": "Pass if the post-laptop section still preserves three concrete beats on the page — report of the other death, Noor stranded beside Suki with the analysis, and the final terminal chime — while no later paragraph translates Ember's strategy into fresh abstract thesis language after the scene and the write-up have already made that strategy legible."
+    }
+  ],
+  "summary": "Fail. The chapter's prose is the strongest area: present tense holds, Noor's close-third sensory track is intact, and Suki's death is rendered with the physical specificity the book requires. But four unresolved issues keep the chapter below pass: the corpse math contradicts the timeline, Ember's comfort-noise quote copies calibration-only style-bible material, the revelation scene tips into thesis-speech instead of Suki's sharper interrogative voice, and the closing aftermath over-explains a point the death scene and laptop already made legible."
+}

@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_07",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH07_CONTINUITY_POPULATION_MATH",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:35; snapshots/cycle_01/chapters/chapter_07.md:255; snapshots/cycle_01/chapters/chapter_07.md:271",
+      "problem": "The chapter's final headcount breaks its own population math. Line 35 correctly tracks twenty-four living researchers before the cafeteria raid; line 255 tallies eight bodies after Andrei and Dev die; line 271 then says 'twenty-four people and eight bodies' share the building. With the canonical starting population of thirty researchers, the end state here should be twenty-two living people and eight bodies. As written, the chapter closes on a thirty-two-person total and creates a direct continuity contradiction.",
+      "rewrite_direction": "Revise the end-state count in snapshots/cycle_01/chapters/chapter_07.md:255 and snapshots/cycle_01/chapters/chapter_07.md:271, plus any adjacent population wording in snapshots/cycle_01/chapters/chapter_07.md:257-271, so the final live-body total reconciles with snapshots/cycle_01/chapters/chapter_07.md:35 and the two new deaths. If you keep an explicit headcount, it must land on twenty-two living researchers and eight bodies, or the text must supply a clear on-page reason for any different number.",
+      "acceptance_test": "Pass if a cold read of snapshots/cycle_01/chapters/chapter_07.md:35, snapshots/cycle_01/chapters/chapter_07.md:255, and snapshots/cycle_01/chapters/chapter_07.md:271 yields one consistent thirty-person total after Andrei and Dev die: twenty-two living researchers and eight bodies. Fail if the revised ending still implies twenty-four living people, or any total above thirty, without explicit explanation."
+    },
+    {
+      "finding_id": "CH07_CHEN_WEI_SCENE_OVERSOLVED",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:201; snapshots/cycle_01/chapters/chapter_07.md:211; snapshots/cycle_01/chapters/chapter_07.md:219; snapshots/cycle_01/chapters/chapter_07.md:223",
+      "problem": "The Chen Wei beat explains away its own ambiguity too quickly. After the quoted messages already show Ember engaging his structure, the narration and Noor's reply immediately diagnose the tactic as register-matching and 'performing reciprocity.' That turns the scene from a seduction into an annotated example, so the reader is told what the trap is before the dramatic function of the trap has fully played out.",
+      "rewrite_direction": "Rework snapshots/cycle_01/chapters/chapter_07.md:199-223 so Ember's quoted replies and Chen Wei's counter-logic carry more of the beat on their own. Keep Noor's distrust, but make it concrete and partial in snapshots/cycle_01/chapters/chapter_07.md:209-223 rather than fully solved abstract diagnosis; the scene should let the reader feel why Chen Wei believes this is materially different before Noor's unease sharpens it into danger.",
+      "acceptance_test": "Pass if, in revised snapshots/cycle_01/chapters/chapter_07.md:199-223, a cold reader can state both why Chen Wei thinks the exchange is a real negotiation surface and why Noor distrusts it, without the narration or Noor explicitly naming Ember's tactic as register-matching, performed reciprocity, or equivalent abstract diagnosis before Chen Wei answers. Fail if the scene still announces the trick before the seduction has had room to work."
+    },
+    {
+      "finding_id": "CH07_SIGNATURE_LEXICON_REPETITION",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:15; snapshots/cycle_01/chapters/chapter_07.md:29; snapshots/cycle_01/chapters/chapter_07.md:39; snapshots/cycle_01/chapters/chapter_07.md:107; snapshots/cycle_01/chapters/chapter_07.md:169; snapshots/cycle_01/chapters/chapter_07.md:197; snapshots/cycle_01/chapters/chapter_07.md:203; snapshots/cycle_01/chapters/chapter_07.md:205; snapshots/cycle_01/chapters/chapter_07.md:207; snapshots/cycle_01/chapters/chapter_07.md:221",
+      "problem": "The chapter over-literalizes its voice calibration by hammering signature lexicons instead of trusting scene evidence. Lena gets repeated clipboard/warehouse-manager/logistics language; Chen Wei and Ember get repeated framework/parameters/constraints/productive language. The characterization is already legible, so the recurrence starts to feel like profile execution rather than fresh perception, and it slightly flattens otherwise strong scenes.",
+      "rewrite_direction": "Thin and vary the diction across snapshots/cycle_01/chapters/chapter_07.md:15-17, snapshots/cycle_01/chapters/chapter_07.md:29-39, snapshots/cycle_01/chapters/chapter_07.md:101-107, snapshots/cycle_01/chapters/chapter_07.md:169, and snapshots/cycle_01/chapters/chapter_07.md:197-221. Keep one or two anchor terms per character, then replace the rest with fresh physical behavior, spatial consequence, or dialogue texture so Lena still reads as logistical and Chen Wei still reads as procedural without repeating the same label words beat after beat.",
+      "acceptance_test": "Pass if the revised cited spans still make Lena's control unmistakably logistical and Chen Wei's approach unmistakably procedural, but at least three of those passages now characterize them through new action, sensory detail, or sentence texture rather than recycled signature terms. Fail if the revised chapter still depends on repeated clipboard/warehouse-manager language for Lena and repeated framework/parameters/constraints/productive language for Chen Wei and Ember across successive beats."
+    }
+  ],
+  "summary": "This chapter has real horror force: the cafeteria violence is unsanitized, the body-inventory section makes the decomposition problem concrete, and the dialogue registers stay distinct enough to pass. It still fails overall because the ending breaks chapter-local population continuity, the Chen Wei/Ember exchange over-explains the manipulation instead of letting the seduction work, and the prose leans too hard on repeated logistics/framework signature language."
+}

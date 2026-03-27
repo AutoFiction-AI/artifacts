@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_10",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH10_CONTINUITY_TRAY_STATE",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_03/chapters/chapter_10.md:71; snapshots/cycle_03/chapters/chapter_10.md:73; snapshots/cycle_03/chapters/chapter_10.md:133",
+      "problem": "Viktor's breakfast tray breaks continuity at a conspicuous moment. The chapter shows him taking a tray and eating halfway through the bowl downstairs, then later describes him setting an \"untouched tray\" against the corridor wall upstairs. That kind of object-state contradiction is easy for a reader to catch and undercuts trust in the chapter's physical bookkeeping.",
+      "rewrite_direction": "Reconcile the tray from snapshots/cycle_03/chapters/chapter_10.md:71, snapshots/cycle_03/chapters/chapter_10.md:73, and snapshots/cycle_03/chapters/chapter_10.md:133. Either keep Viktor carrying a visibly half-eaten bowl into the third-floor corridor, or leave the tray in the cafeteria and replace the upstairs beat with a different physical tell for his shaking hands. Do not let an already eaten bowl become \"untouched.\"",
+      "acceptance_test": "Pass only if a cold reader can track Viktor's tray/bowl cleanly from snapshots/cycle_03/chapters/chapter_10.md:71 through snapshots/cycle_03/chapters/chapter_10.md:133 without any contradiction. Fail if the revised text still has him eat from the bowl in the cafeteria and later treats the same serving as untouched upstairs."
+    },
+    {
+      "finding_id": "CH10_STRUCTURAL_RECURRENCE_VIKTOR",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_03/chapters/chapter_10.md:49; snapshots/cycle_03/chapters/chapter_10.md:61; snapshots/cycle_03/chapters/chapter_10.md:117; snapshots/cycle_03/chapters/chapter_10.md:137; snapshots/cycle_03/chapters/chapter_10.md:163; snapshots/cycle_03/chapters/chapter_10.md:169; snapshots/cycle_03/chapters/chapter_10.md:191; snapshots/cycle_03/chapters/chapter_10.md:199; snapshots/cycle_03/chapters/chapter_10.md:209",
+      "problem": "By the time the chapter returns to the lab, Lena's rule and Viktor's impotence have already been proved in public through the cafeteria confrontation and Jun's killing. The lab beat then spends multiple paragraphs having Viktor restate food, room, and intervention principles in cleaner governance language before the Tomás interruption arrives. That turns the second scene into a re-argument of a point the chapter had already landed instead of buying a genuinely new turn.",
+      "rewrite_direction": "Rework the lab follow-up centered at snapshots/cycle_03/chapters/chapter_10.md:157, snapshots/cycle_03/chapters/chapter_10.md:163, snapshots/cycle_03/chapters/chapter_10.md:169, snapshots/cycle_03/chapters/chapter_10.md:191, snapshots/cycle_03/chapters/chapter_10.md:199, and snapshots/cycle_03/chapters/chapter_10.md:209. Either compress Viktor's repeated governance appeal to a single failed bid, or give the sequence a new irreversible public consequence before Tomas's chime cuts across it. The scene needs fresh dramatic work, not a cleaner thematic translation of what snapshots/cycle_03/chapters/chapter_10.md:49 through snapshots/cycle_03/chapters/chapter_10.md:141 already established.",
+      "acceptance_test": "Pass only if the revised lab passage at snapshots/cycle_03/chapters/chapter_10.md:157 through snapshots/cycle_03/chapters/chapter_10.md:209 either produces one new public consequence beyond \"Viktor is ignored again\" or trims the repeated appeal so the scene reaches Tomas's message without multiple paragraphs re-litigating food, rooms, and intervention. Fail if the reader still leaves snapshots/cycle_03/chapters/chapter_10.md:209 with no material state change beyond a second certification of Lena's existing control."
+    },
+    {
+      "finding_id": "CH10_PROSE_OVERSTATEMENT_CERTIFICATION",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_03/chapters/chapter_10.md:141; snapshots/cycle_03/chapters/chapter_10.md:153; snapshots/cycle_03/chapters/chapter_10.md:155; snapshots/cycle_03/chapters/chapter_10.md:324; snapshots/cycle_03/chapters/chapter_10.md:336; snapshots/cycle_03/chapters/chapter_10.md:352",
+      "problem": "The chapter repeatedly follows strong concrete action with polished thesis sentences that explain the meaning the reader has already absorbed: the body as warning, the analysis already being in the room, the workers resuming around a larger failure, Tomas's fear being diagnosed, the body remaining a body, the bathroom calculation finding a usable form. That habit pushes Noor's close-third voice toward workshopped certification instead of the style bible's cleaner observational window.",
+      "rewrite_direction": "Replace or roughen the summary lines at snapshots/cycle_03/chapters/chapter_10.md:141, snapshots/cycle_03/chapters/chapter_10.md:153, snapshots/cycle_03/chapters/chapter_10.md:155, snapshots/cycle_03/chapters/chapter_10.md:324, snapshots/cycle_03/chapters/chapter_10.md:336, and snapshots/cycle_03/chapters/chapter_10.md:352. Let Noor register those beats through concrete sight, sound, temperature, body handling, or changed social behavior instead of abstract paraphrase. If one summarizing line remains, the surrounding sentences need to add new information rather than restating the beat's meaning.",
+      "acceptance_test": "Pass only if the revised versions of the targeted lines let a reader infer the power shift, Tomas's recalibration, and the stubborn physicality of Oleg's body from observable detail or behavior on the page. Across snapshots/cycle_03/chapters/chapter_10.md:141, snapshots/cycle_03/chapters/chapter_10.md:153, snapshots/cycle_03/chapters/chapter_10.md:155, snapshots/cycle_03/chapters/chapter_10.md:324, snapshots/cycle_03/chapters/chapter_10.md:336, and snapshots/cycle_03/chapters/chapter_10.md:352, no more than one line may still function primarily as an abstract paraphrase of what the immediately preceding action already showed."
+    }
+  ],
+  "summary": "Chapter 10 has strong scene pressure, credible character voices, and properly unsanitized violence, but it does not clear review. A hard continuity error around Viktor's tray is a trust-breaking craft problem, the lab follow-up re-proves Lena's dominance after the chapter has already landed that state change, and the prose too often steps in to certify meanings the action had already made legible."
+}

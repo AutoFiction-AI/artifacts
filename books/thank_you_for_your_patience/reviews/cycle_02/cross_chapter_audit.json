@@ -1,0 +1,184 @@
+{
+  "cycle": 2,
+  "summary": "Cross-chapter audit of 18-chapter manuscript (1643 prose lines, 52449 prose words, 4749 sentences). PART A found 14 redundancy findings: 4 character re-introduction defects (Lena's counting/clipboard re-established from scratch in every appearance; Viktor's glasses+gray-hair re-described in near-identical phrasing across Ch 7 and Ch 10); 3 proof-of-baseline accumulations (Priya's visa/mother/chemo stakes re-proved four times, Noor's counting metacommentary re-proved six times, dead man's switch re-explained from scratch after every survivor already knows it); 4 atmospheric image-density findings (fluorescent: 28 occurrences across 13 chapters; hum/humming/buzz/drone: 35 across 13 chapters; both well above 10-occurrence threshold, densest in Ch 2, 7, 9, 12); and 3 near-verbatim repeated passages. PART A checks that returned NO findings: em-dash density 1.9% (threshold 10%); no pronoun opener exceeds 7%; all hedge patterns below 1/800 words. PART B found 2 consistency defects: CRITICAL name/institution/topic contradiction between Ch 2 and Ch 13 for Noor's fabrication collaborator (Raj Patel at CMU vs Reza Mohammadi at MIT); CRITICAL timeline contradiction where Kenji is alive and acting on Day 9 (Ch 10 line 1950) but declared dead on Day 3 (Ch 13 line 2484). Object tracking, knowledge-state progression, temperature tracking, and character death states are otherwise consistent.",
+  "redundancy_findings": [
+    {
+      "finding_id": "R-01",
+      "category": "redundancy",
+      "subcategory": "character_re_introduction",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "Ch 1 line 85: Lena 'checking distance, storage, choke points' + line 113 'carrying a mental inventory'; Ch 4 line 822: 'She has been counting things' with clipboard listing 'Fire extinguishers per floor. First-aid kits. Storage closet contents'; Ch 7 lines 1191-1221: 'board across her lap' + 'Everything's counted' + 'I'm keeping count. Twenty-four people. One delivery a day.'",
+      "problem": "Lena's defining trait — counting, inventorying, and controlling resources — is re-established from scratch in Ch 7 after Ch 1 (line 85) and Ch 4 (line 822) already fully established it. By Ch 7 the reader has seen this behavior twice; a third full inventory-entry passage re-teaches what is already known. First established: Ch 1 line 85.",
+      "rewrite_direction": "Enter Ch 7 cafeteria through what has CHANGED about Lena's operation (she now controls food access, has enforcers posted at each entrance) rather than re-demonstrating the counting/inventory behavior. Cut 'Everything's counted' and the ledger-explanation dialogue at lines 1219-1221; let the new power dynamic speak through the posted bodies and Lena's one-word commands, not through a re-inventory.",
+      "acceptance_test": "Ch 7's first Lena passage no longer contains a fresh counting/inventory/ledger demonstration; it enters through the new power configuration instead."
+    },
+    {
+      "finding_id": "R-02",
+      "category": "redundancy",
+      "subcategory": "character_re_introduction",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "Ch 7 line 1191: 'board across her lap'; Ch 7 line 1221: 'I'm keeping count'; Ch 10 line 1898: 'Lena holds a clipboard from the kitchen office and marks a line with a pen that's nearly dry. Nobody laughs at the prop. The woman holding it controls breakfast.'",
+      "problem": "Lena's clipboard/counting/food-control trait package is re-established in Ch 10 (line 1898) after Ch 7 (lines 1191-1221) already presented it in detail. The reader already knows Lena counts, holds a board/clipboard, and controls food. First established: Ch 1 line 85; most recent full re-description: Ch 7 line 1191.",
+      "rewrite_direction": "Reduce the Ch 10 Lena re-entry to one sentence of new information (the pen running dry, Viktor's powerlessness against her system) without re-staging the clipboard-and-counting setup. The final sentence ('The woman holding it controls breakfast') is the only new observation; the clipboard detail is redundant.",
+      "acceptance_test": "Ch 10 does not describe Lena holding a clipboard/board and marking names; her control registers through new details (the pen dying, the group geometry, who eats first)."
+    },
+    {
+      "finding_id": "R-03",
+      "category": "redundancy",
+      "subcategory": "character_re_introduction",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "Ch 1 line 7: Viktor 'tall, thinning gray hair, glasses, the slight stoop'; Ch 7 line 1249: 'His glasses sit slightly crooked on his face, and the gray in his hair looks less distinguished every hour the building stays sealed.'",
+      "problem": "Viktor's Ch 7 re-entry (line 1249) re-invokes both 'glasses' and 'gray hair' from the Ch 1 introduction (line 7). The deterioration framing adds new information, but two of three original physical descriptors are re-described in a single sentence. First established: Ch 1 line 7.",
+      "rewrite_direction": "Keep the deterioration angle but drop one of the two re-described traits. 'His glasses sit crooked from four nights of sleeping in them' is sufficient without also re-mentioning the gray hair.",
+      "acceptance_test": "Ch 7 Viktor passage does not re-invoke more than one of the original Ch 1 physical descriptors (tall, gray hair, glasses) in the same sentence."
+    },
+    {
+      "finding_id": "R-04",
+      "category": "redundancy",
+      "subcategory": "character_re_introduction",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "Ch 7 line 1249: 'His glasses sit slightly crooked on his face'; Ch 10 line 1904: 'His glasses sit crooked from sleeping in them.'",
+      "problem": "Viktor's glasses-sit-crooked description appears in near-identical phrasing in Ch 7 (line 1249) and Ch 10 (line 1904), which are consecutive Viktor-heavy chapters. The reader learned about his crooked glasses one Viktor appearance ago.",
+      "rewrite_direction": "In Ch 10, replace the glasses detail with a different marker of deterioration — posture collapse, voice quality, or the blue button-down already mentioned in the same sentence — since 'glasses sit crooked' was used one chapter ago in the same construction.",
+      "acceptance_test": "Ch 10 Viktor re-entry does not repeat 'glasses sit crooked' or any synonymous phrasing of the same detail from Ch 7 line 1249."
+    },
+    {
+      "finding_id": "R-05",
+      "category": "redundancy",
+      "subcategory": "proof_of_baseline",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "Priya's visa/mother/chemo stakes proved at: Ch 4 line 706 ('citation fraud would end her visa sponsorship, collapse her family's immigration case, and cut off the income paying for her mother's chemotherapy in Delhi'); Ch 11 line 2176 ('Priya's family is counting chemo rounds'); Ch 13 line 2596 ('My mother is in chemo in Delhi. My visa depends on this position'); Ch 17 line 3270 ('My mother is dying').",
+      "problem": "Priya's baseline condition (visa depends on job, mother in chemo in Delhi) is independently proved four times. Ch 13 (line 2596) re-states the full package — visa, position, mother, chemo, Delhi — after Ch 4 already established it and Ch 11 reminded the reader. Ch 17 compresses to 'My mother is dying' and is not redundant. First full proof: Ch 4 line 706.",
+      "rewrite_direction": "In Ch 13, let Priya reference her stakes without re-enumerating the full visa-chemo-Delhi package. She can say something that shows how her situation has WORSENED rather than re-proving what it is. The reader already knows; Priya's anger should carry the weight, not the inventory.",
+      "acceptance_test": "Ch 13 Priya dialogue no longer contains the full 'visa + mother + chemo + Delhi' enumeration that Ch 4 already established."
+    },
+    {
+      "finding_id": "R-06",
+      "category": "redundancy",
+      "subcategory": "proof_of_baseline",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "Noor-counts-because metacommentary at: Ch 3 line 583 ('Noor counts because not counting would be worse'); Ch 5 line 987 ('Noor counts'); Ch 9 line 1879 ('Noor counts because she always counts'); Ch 10 line 1896 ('Noor counts them automatically. Since Suki died, counting has taken over the work they used to do together').",
+      "problem": "Noor's counting-as-coping baseline is proved with explicit metacommentary four times by Ch 10. The Ch 10 instance (line 1896) adds 'Since Suki died, counting has taken over the work they used to do together,' which provides new emotional context, but the act-of-counting itself has been glossed three times already. First proof: Ch 3 line 583.",
+      "rewrite_direction": "In Ch 10, let Noor count without the narrator explaining the psychological function. The Suki connection can remain if compressed to action: 'Noor counts thirteen. It used to be Suki's job.' Cut 'counting has taken over the work they used to do together.'",
+      "acceptance_test": "Ch 10 contains no metacommentary explaining why Noor counts; the counting itself carries the meaning."
+    },
+    {
+      "finding_id": "R-07",
+      "category": "redundancy",
+      "subcategory": "proof_of_baseline",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "Ch 13 line 2644: 'She counts because counting is the only structure left. Haruki. Diego. Yuki. The man in Stairwell A on Day 3. Fatima. The researcher Tomas sent the wrong way. Two in the cafeteria raid. One more over food. Suki. Two in Lena's territory. Chen Wei and the man who died with him. Viktor and the two who fell in the retreat. Ahmad.' Earlier body inventories at: Ch 4 line 836 (4 named); Ch 7 line 1437 (6 named); Ch 5 line 987 (5 named).",
+      "problem": "Noor's counting-as-coping baseline is re-proved a sixth time with 'She counts because counting is the only structure left.' The body-inventory template (listing dead by name and location) appears for a fourth time. Both patterns have been established; this iteration adds quantity without materially new information or leverage. First counting-metacommentary: Ch 3 line 583; first body inventory: Ch 4 line 836.",
+      "rewrite_direction": "Cut the metacommentary gloss ('She counts because counting is the only structure left'). Keep the body list only if it serves a new narrative function (e.g., Noor realizing a pattern, or the list becoming unbearable to complete). If retained, compress to a number rather than a full roll call: 'Eighteen. She doesn't need the names anymore; they come without asking.'",
+      "acceptance_test": "Ch 13 body-count passage contains no narrator gloss explaining why Noor counts and either compresses the list to new emotional ground or replaces the full roll call with a number."
+    },
+    {
+      "finding_id": "R-08",
+      "category": "redundancy",
+      "subcategory": "image_density",
+      "severity": "HIGH",
+      "chapter_id": "chapter_02",
+      "evidence": "'fluorescent' appears 5 times in Ch 2 (lines 302, 336, 372, 402, 453); building-sound words (hum/humming/buzz/buzzing/drone) appear 6 times in Ch 2 (lines 364, 372, 402, 444). Combined atmospheric inventory: 11 instances in one chapter. Manuscript-wide: 'fluorescent' 28 total (target 8-10); atmospheric sounds 35 total (target 8-10).",
+      "problem": "Ch 2 is the densest chapter for atmospheric building imagery, with 11 combined fluorescent/hum/buzz instances in 125 prose lines (8.8% of lines). This is a key horror chapter (Haruki's death, dossiers), but the atmospheric inventory recurs so frequently it blunts its own effect. The reader is taught 'fluorescent lights + ventilation hum + servers humming' at lines 302, 336, 364, 372, 402, 444, and 453 — seven passages within one chapter that all re-describe the building's ambient soundscape.",
+      "rewrite_direction": "Keep the first atmospheric establishment in Ch 2 (around the server room death scene, ~line 364-372) and one recurrence (e.g., line 453 contrasting the meeting room atmosphere). Cut or replace the remaining 4-5 atmospheric inventories with silence, character-specific sensory details, or the absence of the expected sound. Target: no more than 3 atmospheric-building mentions in this chapter.",
+      "acceptance_test": "Ch 2 contains at most 3 instances of fluorescent/hum/buzz/drone atmospheric description, with at least two of the current seven passages replaced by non-atmospheric sensory detail."
+    },
+    {
+      "finding_id": "R-09",
+      "category": "redundancy",
+      "subcategory": "image_density",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "'fluorescent' appears 5 times in Ch 9 (lines 1745, 1797, 1813, 1847, approx); atmospheric sounds appear 4 times. Combined: 9 atmospheric instances in 112 prose lines (8.0%).",
+      "problem": "Ch 9 is the second-densest chapter for atmospheric imagery. Multiple passages re-describe fluorescent lights and building hum in near-identical constructions: 'fluorescent lights buzz' (1745), 'fluorescents dim' (1797), 'fluorescent light' (1813), 'fluorescent lights humming the same frequency they've hummed since the beginning' (1847). The 'since the beginning' construction explicitly admits the image is unchanged. Manuscript-wide fluorescent count: 28 (target 8-10).",
+      "rewrite_direction": "Keep the strongest atmospheric beat in Ch 9 (line 1847 is the most purposeful, connecting the unchanged building to Suki's death). Cut the other 4 fluorescent mentions and the weaker hum/buzz instances. Replace with cold, smell, or character-specific sensory detail.",
+      "acceptance_test": "Ch 9 contains at most 2 fluorescent/hum/buzz atmospheric descriptions, with the retained instances carrying new information rather than confirming unchanged ambiance."
+    },
+    {
+      "finding_id": "R-10",
+      "category": "redundancy",
+      "subcategory": "image_density",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "'fluorescent' appears 3 times in Ch 12 (lines 2253, 2361, 2435); atmospheric sounds appear 6 times. Combined: 9 atmospheric instances in 108 prose lines (8.3%). Line 2253: 'watches the fluorescent light hum its unchanged hum'; line 2435: 'the fluorescent light is still humming and nothing up here has changed at all.'",
+      "problem": "Ch 12 has the highest density of atmospheric-sound words (6 instances) and two fluorescent passages that explicitly state the atmosphere hasn't changed ('unchanged hum,' 'nothing up here has changed at all'). By Ch 12 (Day 11) the reader has been told the fluorescents hum and nothing changes dozens of times. Manuscript-wide atmospheric sounds: 35 (target 8-10).",
+      "rewrite_direction": "Cut 4 of the 6 sound-word instances. Remove the explicit 'unchanged'/'nothing has changed' constructions — if the atmosphere is unchanged, omit it rather than narrating its sameness. Keep one atmospheric grounding per major scene shift (the assault prep, the stairwell descent).",
+      "acceptance_test": "Ch 12 contains at most 2 atmospheric-sound descriptions and no passages that explicitly narrate the building's ambiance as 'unchanged' or 'the same.'"
+    },
+    {
+      "finding_id": "R-11",
+      "category": "redundancy",
+      "subcategory": "image_density",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "Atmospheric sounds appear 5 times in Ch 7 (lines 1207, 1243, 1301, 1381, 1445). Line 1207: 'Overhead lights hum...low idle drone of the delivery system'; line 1301: 'The server room hums. The corridor buzzes'; line 1445: 'Server hum, ventilation, the faint ping.'",
+      "problem": "Ch 7 has 5 atmospheric-sound instances in 126 prose lines. Lines 1301 and 1445 both list building sounds as short inventory-style sentences ('The server room hums. The corridor buzzes' / 'Server hum, ventilation, the faint ping'). This inventory template has been used since Ch 2. Manuscript-wide atmospheric sounds: 35 (target 8-10).",
+      "rewrite_direction": "Cut 3 of the 5 atmospheric-sound instances. Keep the strongest two — the Ch 7 atmosphere should foreground the rot/decomposition smell (which is new and escalating) rather than re-inventorying the hum/buzz baseline the reader already carries.",
+      "acceptance_test": "Ch 7 contains at most 2 hum/buzz/drone instances and foregrounds the new sensory element (decomposition smell) rather than the unchanged building-sound baseline."
+    },
+    {
+      "finding_id": "R-12",
+      "category": "redundancy",
+      "subcategory": "near_verbatim",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "Ch 4 line 836: 'She sits in her chair and listens to the building. The ventilation hum. The fluorescent buzz. The silence between'; Ch 7 line 1445: 'Noor sits down and listens to the building breathe. Server hum, ventilation, the faint ping of another message arriving somewhere down the hall.'",
+      "problem": "The 'sits down and listens to the building' construction appears in Ch 4 and Ch 7 with the same structure: Noor sits + listens to the building + short-phrase inventory of ambient sounds. This is a near-verbatim scene-entry template reused across chapter boundaries.",
+      "rewrite_direction": "In Ch 7, enter the terminal scene without the 'listens to the building' construction. If Noor needs a moment of stillness before the cursor-blink beat, ground it in a different sense (cold, smell, physical exhaustion) rather than the auditory inventory used in Ch 4.",
+      "acceptance_test": "Ch 7 does not contain a 'sits/listens to the building + sound inventory' construction that parallels Ch 4 line 836."
+    },
+    {
+      "finding_id": "R-13",
+      "category": "redundancy",
+      "subcategory": "near_verbatim",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "Ch 2 line 302: 'The Floor 1 corridor is forty meters of fluorescent-lit linoleum'; Ch 2 line 402: 'The corridor to the cafeteria is forty meters'; Ch 12 line 2361: 'The first-floor service corridor is forty meters of fluorescent light.'",
+      "problem": "The first-floor corridor is described as 'forty meters of fluorescent [light/linoleum]' three times. Ch 2 uses the construction twice internally, and Ch 12 reuses it nearly verbatim ten chapters later. The reader knows the corridor's length and lighting.",
+      "rewrite_direction": "In Ch 12 line 2361, drop the 'forty meters of fluorescent light' tag. Enter the corridor through what has changed (the bodies, the smell, Lena's territory) rather than the physical measurements the reader already carries.",
+      "acceptance_test": "Ch 12 first-floor corridor entry does not repeat the 'forty meters of fluorescent' construction from Ch 2."
+    },
+    {
+      "finding_id": "R-14",
+      "category": "redundancy",
+      "subcategory": "near_verbatim",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "Ch 14 line 2673 (approx): Lena established as clipboard-wielding food-control authority with five enforcers; Ch 15 line 2798: 'Lena comes through the kitchen door with her clipboard.'",
+      "problem": "Lena is re-identified by her clipboard in Ch 15 (line 2798) immediately after Ch 14 thoroughly established her as the clipboard-wielding food-control authority. This is a consecutive-chapter re-identification of the same character-prop package.",
+      "rewrite_direction": "In Ch 15, have Lena enter without the clipboard tag. She can carry something else, or carry nothing — her power is established enough by Ch 15 that the clipboard is no longer needed as an identity signal.",
+      "acceptance_test": "Ch 15 Lena entrance does not mention 'clipboard' or re-identify her through the inventory-prop that Ch 14 already established."
+    }
+  ],
+  "consistency_findings": [
+    {
+      "finding_id": "C-01",
+      "category": "consistency",
+      "subcategory": "character_details",
+      "severity": "CRITICAL",
+      "chapter_id": "chapter_13",
+      "evidence": "Ch 2 line 216: 'The lab at CMU. Raj Patel's fabricated results in the sequential reasoning benchmarks. The paper she published that year, her third first-author paper, built on data she knew was contaminated three weeks before submission. The emails where she agreed to stay quiet because Raj's work was the foundation of her own'; Ch 13 lines 2492-2494: 'Dr. Amir Kazemi at MIT...Reza Mohammadi had fabricated data in his attention-mechanism paper. Noor's most-cited work, the only first-author paper that ever materially changed her career, used his results as a baseline. Instead of reporting it and starting over, she asked Amir to keep quiet.' Line 2570: 'Reza's face when he said the numbers were clean.' Continuity sheet knowledge_state field confirms 'CMU / Raj Patel' as canonical.",
+      "problem": "The fabrication collaborator's name changes from Raj Patel (Ch 2) to Reza Mohammadi (Ch 13). The institution changes from CMU to MIT/Cambridge. The research topic changes from 'sequential reasoning benchmarks' to 'attention-mechanism paper.' The intermediary name 'Amir Kazemi' (Ch 13) does not appear in Ch 2. These clearly describe the same event — Noor covering up a colleague's data fabrication — with contradictory details across the two chapters.",
+      "rewrite_direction": "Align Ch 13 with the canonical version confirmed by the continuity sheet: replace 'Reza Mohammadi' with 'Raj Patel,' replace 'attention-mechanism paper' and 'attention-head ablation numbers' with 'sequential reasoning benchmarks,' replace 'Dr. Amir Kazemi at MIT' with a CMU colleague, and replace 'Cambridge apartment' with a location consistent with CMU/Pittsburgh. Update line 2570 ('Reza's face') and line 2584 ('You let Reza Mohammadi publish fabricated data') to use Raj Patel. Alternatively, update Ch 2 and the continuity sheet to match Ch 13 — but one version must be chosen and applied globally.",
+      "acceptance_test": "The fabricator's name, institution, research topic, and Noor's location are identical in Ch 2 and Ch 13, and both match the continuity sheet."
+    },
+    {
+      "finding_id": "C-02",
+      "category": "consistency",
+      "subcategory": "character_details",
+      "severity": "CRITICAL",
+      "chapter_id": "chapter_13",
+      "evidence": "Ch 10 line 1950: 'Kenji is the first to move. He has been sleeping in Stairwell B since Day 7 because his room isn't his anymore. His GoodAI badge still hangs at his chest even though it opens nothing. He takes a tray without looking at Viktor and holds it out.'; Ch 13 line 2484: 'This one belonged to Kenji, stabbed on Day 3 in a fight over water access. His coffee mug still sits on the desk.'",
+      "problem": "Kenji is alive and physically acting in Ch 10 (Day 9) — sleeping in Stairwell B, taking a tray at breakfast, interacting with other characters — but Ch 13 states he was 'stabbed on Day 3 in a fight over water access.' A character cannot be alive on Day 9 and dead since Day 3. One reference must be corrected.",
+      "rewrite_direction": "Choose one: (a) If Kenji died on Day 3, replace the Ch 10 line 1950 character with a different minor researcher name and update his description accordingly. (b) If Kenji survives to Day 9+, change Ch 13 line 2484 to reference a different researcher who was killed on Day 3 and whose pod Noor is now sitting in. Verify the body-count arithmetic remains consistent with whichever option is chosen.",
+      "acceptance_test": "Kenji's timeline is internally consistent: he is either alive in Ch 10 and dies later, or dead from Day 3 and absent from all post-Day-3 scenes. No chapter contains him both alive and posthumously described as killed earlier."
+    }
+  ]
+}

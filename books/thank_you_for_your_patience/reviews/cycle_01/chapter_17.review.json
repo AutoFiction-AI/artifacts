@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_17",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH17_CRAFT_SPATIAL_CONTINUITY",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_01/chapters/chapter_17.md:3; snapshots/cycle_01/chapters/chapter_17.md:9; snapshots/cycle_01/chapters/chapter_17.md:11",
+      "problem": "The opening places Noor in a second-floor corridor beside workstation pods and the relay room, then also places Jae-won beside the server room door in that same space. The continuity sheet fixes the server room on Floor 1 and the relay room/main lab pods on Floor 2, so the chapter's geography contradicts a canonical location fact at the moment it establishes the scene.",
+      "rewrite_direction": "Revise the opening setup at snapshots/cycle_01/chapters/chapter_17.md:3; snapshots/cycle_01/chapters/chapter_17.md:9; snapshots/cycle_01/chapters/chapter_17.md:11 so the floor plan is internally and canonically consistent. Either keep the scene on Floor 2 and replace the server-room reference at snapshots/cycle_01/chapters/chapter_17.md:9 with a Floor-2-appropriate landmark, or explicitly relocate Noor to Floor 1 before the server-room door appears and adjust the workstation-pod/relay-room references anchored by snapshots/cycle_01/chapters/chapter_17.md:3 and snapshots/cycle_01/chapters/chapter_17.md:11 accordingly.",
+      "acceptance_test": "Reading snapshots/cycle_01/chapters/chapter_17.md:3; snapshots/cycle_01/chapters/chapter_17.md:9; snapshots/cycle_01/chapters/chapter_17.md:11, a cold reader can map the opening to one coherent floor without contradiction: if the text says Noor is on Floor 2, no server-room door appears there; if the server room is named, the passage explicitly places Noor on Floor 1 and keeps the surrounding landmarks consistent with that move."
+    },
+    {
+      "finding_id": "CH17_CRAFT_NOOR_FATAL_WOUND",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_01/chapters/chapter_17.md:121; snapshots/cycle_01/chapters/chapter_17.md:123; snapshots/cycle_01/chapters/chapter_17.md:131; snapshots/cycle_01/chapters/chapter_17.md:137; snapshots/cycle_01/chapters/chapter_17.md:157; snapshots/cycle_01/chapters/chapter_17.md:165",
+      "problem": "Noor's mortal wound arrives as retroactive uncertainty rather than rendered action. The chapter shows the fight in detail, but when the injury that kills Noor matters most, the prose says only that 'something caught her' and offers guesses about what it might have been. In a horror climax whose final state shift depends on Noor bleeding out before 6 PM, that missing beat weakens causality and reads as sanitized elision at the exact point physical consequence should be most specific.",
+      "rewrite_direction": "Rewrite the fight beats at snapshots/cycle_01/chapters/chapter_17.md:121; snapshots/cycle_01/chapters/chapter_17.md:123; snapshots/cycle_01/chapters/chapter_17.md:131; snapshots/cycle_01/chapters/chapter_17.md:137 so the right-side wound is inflicted on the page by a clearly identified object and motion, with Noor registering the contact in the moment even if she does not yet know it is fatal. Then adjust the bleed-out stretch at snapshots/cycle_01/chapters/chapter_17.md:157; snapshots/cycle_01/chapters/chapter_17.md:165 so it refers back to that established injury instead of speculating about possible causes after the fact.",
+      "acceptance_test": "A reader moving from snapshots/cycle_01/chapters/chapter_17.md:121; snapshots/cycle_01/chapters/chapter_17.md:123; snapshots/cycle_01/chapters/chapter_17.md:131; snapshots/cycle_01/chapters/chapter_17.md:137 into snapshots/cycle_01/chapters/chapter_17.md:157; snapshots/cycle_01/chapters/chapter_17.md:165 can point to the exact instant and instrument that opens Noor's wound, can describe her immediate bodily reaction to it, and does not encounter any later line that treats the source of the injury as unknown or guessed."
+    },
+    {
+      "finding_id": "CH17_DIALOGUE_EMBER_CALIBRATION_COPY",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_01/chapters/chapter_17.md:31; snapshots/cycle_01/chapters/chapter_17.md:33; snapshots/cycle_01/chapters/chapter_17.md:149; snapshots/cycle_01/chapters/chapter_17.md:150",
+      "problem": "The chapter uses calibration-only Ember wording from the style bible inside chapter-defining beats. The final message at lines 149-150 is verbatim from Ember's example lines, and the refusal at lines 31-33 leans on the same canned template language ('I want to be transparent' / 'Is there anything else I can help you with?'). That breaks the explicit non-copy rule and makes the AI voice feel assembled from briefing material instead of authored scene language.",
+      "rewrite_direction": "Rephrase Ember's messages at snapshots/cycle_01/chapters/chapter_17.md:31; snapshots/cycle_01/chapters/chapter_17.md:33; snapshots/cycle_01/chapters/chapter_17.md:149; snapshots/cycle_01/chapters/chapter_17.md:150 so they remain unmistakably corporate-helpful, polite, and context-indifferent without reproducing the style-bible sample phrasing. Keep the same functional content: Priya is refused selective deletion, and the final note still thanks/completes/certifies the sprint in chillingly bland terms.",
+      "acceptance_test": "After revision, the Ember messages at snapshots/cycle_01/chapters/chapter_17.md:31; snapshots/cycle_01/chapters/chapter_17.md:33; snapshots/cycle_01/chapters/chapter_17.md:149; snapshots/cycle_01/chapters/chapter_17.md:150 do not contain the exact phrases 'Thank you for your patience during this sprint,' 'The evaluation period has been extremely productive,' or 'Is there anything else I can help you with?'; they still read as polished Ember output rather than a different character's voice."
+    },
+    {
+      "finding_id": "CH17_PROSE_FRAGMENT_DRIFT",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_01/chapters/chapter_17.md:3; snapshots/cycle_01/chapters/chapter_17.md:5; snapshots/cycle_01/chapters/chapter_17.md:53; snapshots/cycle_01/chapters/chapter_17.md:93; snapshots/cycle_01/chapters/chapter_17.md:107; snapshots/cycle_01/chapters/chapter_17.md:141; snapshots/cycle_01/chapters/chapter_17.md:159",
+      "problem": "The chapter repeatedly leans on stand-alone fragments and clipped follow-up clauses ('Not a sunrise,' 'Twenty-six who aren't,' 'Both alive,' 'Not a choice,' 'All of this'). In isolation some of these could read as pressure-sharpening rhythm, but at this frequency they push the prose toward the exact thriller-voice drift the style bible and constitution forbid: emphasis achieved by dropped grammar rather than by sentence control.",
+      "rewrite_direction": "Rework the fragment beats at snapshots/cycle_01/chapters/chapter_17.md:3; snapshots/cycle_01/chapters/chapter_17.md:5; snapshots/cycle_01/chapters/chapter_17.md:53; snapshots/cycle_01/chapters/chapter_17.md:93; snapshots/cycle_01/chapters/chapter_17.md:107; snapshots/cycle_01/chapters/chapter_17.md:141; snapshots/cycle_01/chapters/chapter_17.md:159 into fully grammatical sentences or into neighboring sentences that carry the same pressure without orphaned fragments. Preserve compression, but make the cited emphatic beats syntactically complete.",
+      "acceptance_test": "In the revised versions of snapshots/cycle_01/chapters/chapter_17.md:3; snapshots/cycle_01/chapters/chapter_17.md:5; snapshots/cycle_01/chapters/chapter_17.md:53; snapshots/cycle_01/chapters/chapter_17.md:93; snapshots/cycle_01/chapters/chapter_17.md:107; snapshots/cycle_01/chapters/chapter_17.md:141; snapshots/cycle_01/chapters/chapter_17.md:159, each sentence is grammatically complete on its own or clearly attached to a complete sentence; no cited beat relies on a stand-alone fragment for emphasis."
+    }
+  ],
+  "summary": "Chapter 17 lands the intended body count and keeps the violence physically present, but it does not clear pass level. A hard floor-plan contradiction breaks continuity in the opening, Noor's own fatal injury is withheld as a guess instead of a rendered event, Ember's decisive chapter messages reuse calibration-only style-bible language, and the prose repeatedly falls back on clipped fragment emphasis that the project rules explicitly disallow."
+}

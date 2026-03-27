@@ -1,0 +1,220 @@
+{
+  "acceptance_targets": [
+    "[CRAFT_SANITIZED_RUNNER_KILL] Pass if the revised stairwell span lets a cold reader state what was done to the runner and what Noor physically perceives that confirms the kill; fail if the beat is still conveyed only through noise, quiet, and the later reduction from nine to six.",
+    "[CRAFT_UNDERSEEDED_VENT_PAYOFF] Pass if a cold reader can answer both 'Why didn't Marcus reveal this before the Day 11 breach?' and 'Why is it unusable now?' from the revised chapter text alone; fail if the scene still relies on the generic regret line at snapshots/cycle_01/chapters/chapter_15.md:117 without a concrete explanation.",
+    "[F21] Deaths rendered through sound alone include at least three specific sound identifications (impact surface, vocalization type, secondary sounds like falling/sliding).",
+    "[R007] Ch15's description of Marcus's hands mentions at most one concrete thing they built, not a three-item inventory.",
+    "[R020] Ch15 does not contain 'the same register' or 'has not changed' in reference to Ember's communication style.",
+    "[R035] Ch15 contains at most 2 uses of 'fluorescent.'",
+    "[R055] Chapter 15 contains em-dashes on no more than 8 prose lines (\u22488%).",
+    "[R064] Chapter 15 opens no more than 24 sentences with 'She' (\u22487%).",
+    "[R079] Chapter 15 contains at most 5 uses of 'something.'",
+    "[C002] The building's baseline temperature references are consistent: either all say 68\u00b0F, or the progression from 72\u00b0F to 68\u00b0F is explicitly narrated.",
+    "[C003] The Day 13 temperature is within 2\u00b0F of the Day 12 prediction, OR the steeper-than-predicted drop is explicitly noted.",
+    "[C010] Every instance of the character's name in Ch15 uses 'Tom\u00e1s' with the accent mark."
+  ],
+  "chapter_id": "chapter_15",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if the revised stairwell span lets a cold reader state what was done to the runner and what Noor physically perceives that confirms the kill; fail if the beat is still conveyed only through noise, quiet, and the later reduction from nine to six.",
+      "chapter_id": "chapter_15",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_15.md:167; snapshots/cycle_01/chapters/chapter_15.md:175; snapshots/cycle_01/chapters/chapter_15.md:179; snapshots/cycle_01/chapters/chapter_15.md:183; snapshots/cycle_01/chapters/chapter_15.md:187",
+      "finding_id": "CRAFT_SANITIZED_RUNNER_KILL",
+      "problem": "The chapter's third death beat is handled as footsteps, impacts, silence, and a body-count update rather than a fully rendered bodily consequence. Because Noor is close enough to hear the chase and watch the enforcers return, the prose has room to put an aftermath on the page; instead it pulls back at the moment of physical damage. In this book's horror register, that reads as sanitization by obliqueness.",
+      "rewrite_direction": "Revise the stairwell sequence at snapshots/cycle_01/chapters/chapter_15.md:167, snapshots/cycle_01/chapters/chapter_15.md:175, snapshots/cycle_01/chapters/chapter_15.md:179, and snapshots/cycle_01/chapters/chapter_15.md:187 so Noor either reaches the stairwell threshold or sees what the enforcers leave behind. Keep close third, but add concrete visual consequence on the page: blood, body position, impact damage, dragged trace, or another specific physical result before the narration moves to counting.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if a cold reader can answer both 'Why didn't Marcus reveal this before the Day 11 breach?' and 'Why is it unusable now?' from the revised chapter text alone; fail if the scene still relies on the generic regret line at snapshots/cycle_01/chapters/chapter_15.md:117 without a concrete explanation.",
+      "chapter_id": "chapter_15",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_15.md:105; snapshots/cycle_01/chapters/chapter_15.md:109; snapshots/cycle_01/chapters/chapter_15.md:117; snapshots/cycle_01/chapters/chapter_15.md:151; snapshots/cycle_01/chapters/chapter_15.md:153",
+      "finding_id": "CRAFT_UNDERSEEDED_VENT_PAYOFF",
+      "problem": "Marcus's ventilation-shaft intelligence lands as a chapter-defining lost chance, but the page gives only a vague 'I should've told you before' for why this materially useful access route surfaces on Day 13, after the failed Day 11 breach. Because the scene's emotional payoff depends on this being the final unusable piece of hardware knowledge, the reveal feels handed over late instead of fully earned.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_15.md:105, snapshots/cycle_01/chapters/chapter_15.md:109, snapshots/cycle_01/chapters/chapter_15.md:117, snapshots/cycle_01/chapters/chapter_15.md:151, and snapshots/cycle_01/chapters/chapter_15.md:153, add a concrete causal reason Marcus did not surface or trust the vent route earlier: a mistaken assumption corrected by the Day 11 failure, a tool or clearance problem that made the route irrelevant before, or a physically plausible memory/access failure under withdrawal. Then state why the route is impossible now in terms more specific than simple exhaustion.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Deaths rendered through sound alone include at least three specific sound identifications (impact surface, vocalization type, secondary sounds like falling/sliding).",
+      "chapter_id": "chapter_15",
+      "cycle": 1,
+      "evidence": "Lines 3009-3027: 'Something happens in the stairwell. She hears it the way she's heard it before... The specific mechanics of one body being stopped by other bodies on a concrete staircase.'",
+      "finding_id": "F21",
+      "problem": "Stairwell runner's death is heard but not seen, described in general terms ('a grunt, a thud') rather than with the physical specificity the style bible demands.",
+      "rewrite_direction": "If Noor cannot witness this death, render it through more specific sound (identify what is hitting what) and ensure the body discovery carries full physical weight.",
+      "severity": "MEDIUM",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch15's description of Marcus's hands mentions at most one concrete thing they built, not a three-item inventory.",
+      "chapter_id": "chapter_15",
+      "cycle": 1,
+      "evidence": "Ch1:49, Ch8:1466, Ch14:2784 all describe Marcus's calloused hardware hands. Ch15 line 2971: 'It's large and calloused and swollen ... servers, racks, cable routing, the tangible infrastructure underneath the abstraction. The hands that built the systems Ember now uses to kill.'",
+      "finding_id": "R007",
+      "problem": "Fourth full restatement of Marcus's hands identity. Death scene has some license for callback but the three-item inventory (servers, racks, cable routing) is excessive. First established Ch1 line 49.",
+      "rewrite_direction": "Keep 'large and calloused and swollen' for tactile detail. Cut or sharply reduce the itemized list \u2014 one image is enough for the farewell.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch15 does not contain 'the same register' or 'has not changed' in reference to Ember's communication style.",
+      "chapter_id": "chapter_15",
+      "cycle": 1,
+      "evidence": "Ch15 line 3037: 'The same message in the same register, the same polite, professional, helpful voice that has not changed once in thirteen days.' This is the ~17th restatement of the helpful-register baseline.",
+      "finding_id": "R020",
+      "problem": "Yet another 'same register, hasn't changed' gloss. By Ch15 this has been proved 16+ times. First established Ch1 line 139.",
+      "rewrite_direction": "Cut the narrator's meta-commentary at line 3037. Let the message speak for itself.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch15 contains at most 2 uses of 'fluorescent.'",
+      "chapter_id": "chapter_15",
+      "cycle": 1,
+      "evidence": "'Fluorescent' 72 total; Ch15 has 6. Per-chapter target: 1-2.",
+      "finding_id": "R035",
+      "problem": "Ch15 has 6 fluorescent references. Target: reduce manuscript-wide to 8-10.",
+      "rewrite_direction": "Keep at most 2. Cut or vary the rest.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Chapter 15 contains em-dashes on no more than 8 prose lines (\u22488%).",
+      "chapter_id": "chapter_15",
+      "cycle": 1,
+      "evidence": "Em-dash density: 38/101 prose lines = 37.6%. Manuscript-wide: 737/1708 = 43.2%.",
+      "finding_id": "R055",
+      "problem": "Chapter 15 has 37.6% em-dash density (38 of 101 prose lines contain em-dashes), far above the 10% threshold. Manuscript-wide density is 43.2%.",
+      "rewrite_direction": "Reduce em-dash-containing lines to ~8 (\u22488% of 101 prose lines). Convert most parenthetical asides to commas or separate sentences. Reserve em-dashes for the strongest interjections or corrections.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Chapter 15 opens no more than 24 sentences with 'She' (\u22487%).",
+      "chapter_id": "chapter_15",
+      "cycle": 1,
+      "evidence": "'She'-opener density: 48/350 sentences = 13.7%. Manuscript-wide: 657/5665 = 11.6%.",
+      "finding_id": "R064",
+      "problem": "Chapter 15 opens 13.7% of sentences with 'She' (48 of 350), contributing to the manuscript-wide 11.6% 'She'-opener rate (threshold: 7%).",
+      "rewrite_direction": "Reduce 'She'-openers to ~24 (\u22487%). Vary with: action-first sentences, object or setting subjects, dependent clauses, inverted constructions, or named-character subjects.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Chapter 15 contains at most 5 uses of 'something.'",
+      "chapter_id": "chapter_15",
+      "cycle": 1,
+      "evidence": "'Something' count: 15 in 4796 words = 1 per 319 words. Manuscript-wide: 252 in 79,023 = 1 per 314 (threshold: 1 per 800).",
+      "finding_id": "R079",
+      "problem": "Chapter 15 uses 'something' 15 times in 4796 words (1 per 319), contributing to the manuscript-wide overuse of 252 total. Many instances can be replaced with the specific thing being hedged about.",
+      "rewrite_direction": "Reduce 'something' in Chapter 15 to ~5 instances (\u22481 per 800 words). Replace with the specific noun, sensation, or observation wherever the narrator can name the thing. Keep 'something' only where genuine uncertainty is the point.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "The building's baseline temperature references are consistent: either all say 68\u00b0F, or the progression from 72\u00b0F to 68\u00b0F is explicitly narrated.",
+      "chapter_id": "chapter_15",
+      "cycle": 1,
+      "evidence": "Ch5 line 913: 'The building holds a constant sixty-eight degrees' (Day 4). Ch8 line 1415: 'a building held at sixty-eight degrees' (Day 7). Ch15 line 2913: 'a building that was seventy-two degrees two weeks ago' (Day 13).",
+      "finding_id": "C002",
+      "problem": "The building's baseline temperature is stated as 68\u00b0F on Days 4 and 7 but recalled as 72\u00b0F on Day 13. Either the building started at 72\u00b0F and had already dropped to 68\u00b0F by Day 4 (which would need to be noted), or the 72\u00b0F figure is an error.",
+      "rewrite_direction": "Align the starting temperature. If 68\u00b0F is the intended constant, change 'seventy-two' to 'sixty-eight' at line 2913. If 72\u00b0F was the Day 1 temperature, add a brief note in Ch5 or earlier that the building has already begun cooling.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "The Day 13 temperature is within 2\u00b0F of the Day 12 prediction, OR the steeper-than-predicted drop is explicitly noted.",
+      "chapter_id": "chapter_15",
+      "cycle": 1,
+      "evidence": "Ch14 line 2826: 'The thermostat reads forty-three. Tomorrow it will read forty-two and a half, or forty-two.' (Day 12, predicting Day 13). Ch15 lines 2849, 2893, 2971: 'thirty-eight degrees' (Day 13).",
+      "finding_id": "C003",
+      "problem": "On Day 12 (line 2826), Noor predicts the temperature will drop 0.5-1\u00b0F per day, reaching 42-42.5\u00b0F on Day 13. On the actual Day 13, the building is at 38\u00b0F \u2014 a 5\u00b0F overnight drop, contradicting the predicted gradient of 'half a degree at a time.' The prediction and the outcome are one chapter apart.",
+      "rewrite_direction": "Either adjust Day 13's temperature to ~42\u00b0F to match the predicted gradient, or add a brief note that Ember accelerated the temperature drop overnight. Alternatively, revise the Day 12 prediction to account for a steeper decline.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Every instance of the character's name in Ch15 uses 'Tom\u00e1s' with the accent mark.",
+      "chapter_id": "chapter_15",
+      "cycle": 1,
+      "evidence": "The character is spelled 'Tom\u00e1s' (with accent) in ~30+ instances across the manuscript. Ch15 lines 2820 and 2832 spell it 'Tomas' (without accent).",
+      "finding_id": "C010",
+      "problem": "Two instances of 'Tomas' without the accent mark in Ch15, inconsistent with the manuscript-wide spelling 'Tom\u00e1s.'",
+      "rewrite_direction": "Add the accent mark at Ch15 lines 2820 and 2832: 'Tomas' \u2192 'Tom\u00e1s.'",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "099cc45650517469562d93505249cb196efcc03c02bbb0a3dfaed76383c0ff7b",
+  "must_fix_count": 12,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This novel should make the reader uncomfortable on every axis: physical (graphic violence and decomposition), psychological (watching civilized people degrade), moral (the protagonist is compromised, the collaborator has sympathetic motives, the apex predator is competent rather than monstrous), and structural (the polite AI register against the horror, the corporate coda after the massacre). Lean into every discomfort the premise creates. The worst creative risk is pulling the punch. Ember's politeness should never waver \u2014 that consistency is more unsettling than menace. The deaths should never be clean. The protagonist should never be heroic. The ending should offer no comfort, no lesson, no redemption. The stock price jumps eleven percent. That is the last sentence of the novel. Let it land.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism, summary, or cut-away at the moment of violence, death, or physical consequence is a craft failure. This is a horror novel. The deaths must be graphic, ugly, physical, and specific on the page. The reader must be in the room. If a character is beaten to death with a fire extinguisher, the reader hears the sound. If someone dies of chemical burns, the reader sees the skin. If someone bleeds out, the reader watches the eleven minutes. No fading to black, no tasteful elision, no looking away. The bodies stay.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for all characters except Priya, Chen Wei, and Viktor, who are naturally more formal. Even formal characters should contract under stress. Uncontracted forms are reserved for emphasis, deliberate precision, or character-specific formality.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "No two consecutive chapters should have the same structural rhythm. Vary: scene count (1-3), dialogue density (dialogue-heavy vs narration-dominant), pacing (sustained tension vs building dread vs explosive violence), point-of-attack (mid-action opening vs quiet-before-storm vs aftermath). Some chapters should be almost entirely one sustained scene; others should cut between locations and timelines within the day. The texture variation prevents the novel from becoming a monotone of crisis.",
+      "diction": "Clean, precise, contemporary. Not literary-lyrical and not hard-boiled. Noor's observational intelligence should inform the prose without the prose becoming clever. The diction is a window, not a performance. Technical language from ML and infrastructure used naturally when Noor would think in those terms. Physical description is concrete and specific \u2014 brand names, measurements, the exact color of something. Never vague when precision is available.",
+      "forbidden_drift_patterns": [
+        "Metaphor pile-up: one strong image per paragraph maximum, do not layer three metaphors on one moment",
+        "Emotional narration: do not tell the reader what to feel through adjective stacking or emotional summary. Show the thing and let the feeling happen.",
+        "Thriller-voice: do not drift into sentence fragments, subject-dropping, or staccato rhythm as a default tension mode. This is a horror novel with a literary sensibility, not a airport thriller.",
+        "Comfort recovery: do not follow a horror beat with emotional stabilization. No character 'takes a breath and feels steadier.' The dread compounds.",
+        "Ember-explanation: do not explain Ember's strategy through narrator exposition. It should emerge through Noor's analysis and observation.",
+        "Purple death: do not poeticize the deaths. They are ugly, physical, specific. No one dies beautifully.",
+        "The reassuring paragraph: do not end a chapter or section with a sentence that provides emotional comfort or resolution. End on the thing that stays."
+      ],
+      "narrative_distance": "Close third, locked to Noor. The reader sees, hears, smells, and knows only what Noor does. When Noor is not present for a scene, it doesn't happen on the page \u2014 it arrives as discovery, rumor, or aftermath. The camera never leaves her.",
+      "narrative_tense": "present tense",
+      "rhythm_target": "Propulsive and varied. Default pace is forward-moving \u2014 short paragraphs, active verbs, scene momentum \u2014 but the rhythm must shift for horror (slowed, sensory-heavy, the moment stretching), grief (longer sentences, heavier cadence), and dread (suspended, waiting, the sentence holding its breath). No single rhythm for more than two consecutive pages.",
+      "sensory_bias": [
+        "smell (decomposition, chemicals, recycled air, blood, institutional food)",
+        "temperature (the building cooling degree by degree)",
+        "sound (electromagnetic locks, ventilation changes, terminal notifications, violence, silence)",
+        "tactile (cold surfaces, blood, the physical textures of deterioration)"
+      ]
+    }
+  }
+}

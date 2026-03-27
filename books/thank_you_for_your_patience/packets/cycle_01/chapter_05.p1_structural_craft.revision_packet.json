@@ -1,0 +1,220 @@
+{
+  "acceptance_targets": [
+    "[CH05_CONTINUITY_BODY_LOCATIONS] Pass if a cold reader can reconcile the revised body locations at snapshots/cycle_01/chapters/chapter_05.md:119 with the chapter_05 boundary pack without inventing an off-page relocation; fail if the line still asserts that Haruki and Diego were already in Stairwell A on Day 2.",
+    "[CH05_DIALOGUE_STYLE_BIBLE_ECHO] Pass if the revised note at snapshots/cycle_01/chapters/chapter_05.md:21 no longer uses the 'areas could use attention' construction and the revised Suki line at snapshots/cycle_01/chapters/chapter_05.md:97 no longer hinges on the 'not arming/lowering the bar' formulation in near-identical cadence; fail if either beat still reads like a light paraphrase of the style-bible example lines.",
+    "[CH05_CRAFT_UNDERSEEDED_FATIMA_PAYOFF] Pass if, before snapshots/cycle_01/chapters/chapter_05.md:133, Fatima does at least one thing that changes local scene pressure or Noor's understanding of the day, or else the corpse scene no longer relies on the daughter/beaded-chain/legal-pad bundle first introduced at snapshots/cycle_01/chapters/chapter_05.md:7; fail if the revised chapter still introduces those details only to cash them out as the main emotional lever at snapshots/cycle_01/chapters/chapter_05.md:143.",
+    "[F01] No sentence in the manuscript shares more than 4 consecutive words with any style bible example_line.",
+    "[F06] Any analytical monologue exceeding 4 sentences includes at least one false start, self-correction, interruption, or moment of imprecision.",
+    "[R014] Ch5 does not re-describe indicator light colors or cooling fan sound.",
+    "[R017] Ch5 contains at most 2 passages commenting on Ember's helpful register. The narrator does not re-explain what the helpfulness means.",
+    "[R021] Ch5 contains at most 2 passages proving Marcus's withdrawal symptoms. The 'left, right, left' pocket-checking pattern does not appear.",
+    "[R045] Chapter 05 contains em-dashes on no more than 6 prose lines (\u22488%).",
+    "[R072] Chapter 05 contains at most 4 uses of 'something.'",
+    "[C005] Haruki's body is in exactly one location across all chapters. No passage contradicts the chosen placement.",
+    "[C006] Ch5 line 913 does not claim Diego was moved to Stairwell A. Diego's body is consistently in Workstation Pod C-4."
+  ],
+  "chapter_id": "chapter_05",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if a cold reader can reconcile the revised body locations at snapshots/cycle_01/chapters/chapter_05.md:119 with the chapter_05 boundary pack without inventing an off-page relocation; fail if the line still asserts that Haruki and Diego were already in Stairwell A on Day 2.",
+      "chapter_id": "chapter_05",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:119",
+      "finding_id": "CH05_CONTINUITY_BODY_LOCATIONS",
+      "problem": "The chapter says Haruki and Diego were carried into Stairwell A on Day 2, but the chapter_05 boundary pack's carried-forward state still has Haruki behind the server-room door and Diego in his workstation pod at the end of chapter 04. Because the HVAC-smell beat depends on where the bodies actually are, this is a canonical continuity contradiction, not a harmless compression.",
+      "rewrite_direction": "Revise snapshots/cycle_01/chapters/chapter_05.md:119 so the body locations match established state. Either keep Haruki and Diego in their prior locations and source the stairwell stench from the bodies already established there, or add clarifying on-page movement at snapshots/cycle_01/chapters/chapter_05.md:119 that makes clear they were moved after the chapter_04 tail rather than 'on Day 2.'",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if the revised note at snapshots/cycle_01/chapters/chapter_05.md:21 no longer uses the 'areas could use attention' construction and the revised Suki line at snapshots/cycle_01/chapters/chapter_05.md:97 no longer hinges on the 'not arming/lowering the bar' formulation in near-identical cadence; fail if either beat still reads like a light paraphrase of the style-bible example lines.",
+      "chapter_id": "chapter_05",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:21; snapshots/cycle_01/chapters/chapter_05.md:97",
+      "finding_id": "CH05_DIALOGUE_STYLE_BIBLE_ECHO",
+      "problem": "Two chapter-defining quoted beats reuse calibration-only style-bible language closely enough to read as prompt leakage rather than authored voice: Ember's delivery note at line 21 tracks the non-copyable example line about 'areas' needing attention, and Suki's explanation at line 97 echoes her calibration line about Ember not arming people but lowering the bar.",
+      "rewrite_direction": "Replace the quoted language at snapshots/cycle_01/chapters/chapter_05.md:21 and snapshots/cycle_01/chapters/chapter_05.md:97 with fresh phrasing that preserves Ember's polite-maintenance register and Suki's escalation insight without repeating the example-line construction, cadence, or keyword pairings.",
+      "severity": "HIGH",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if, before snapshots/cycle_01/chapters/chapter_05.md:133, Fatima does at least one thing that changes local scene pressure or Noor's understanding of the day, or else the corpse scene no longer relies on the daughter/beaded-chain/legal-pad bundle first introduced at snapshots/cycle_01/chapters/chapter_05.md:7; fail if the revised chapter still introduces those details only to cash them out as the main emotional lever at snapshots/cycle_01/chapters/chapter_05.md:143.",
+      "chapter_id": "chapter_05",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:7; snapshots/cycle_01/chapters/chapter_05.md:43; snapshots/cycle_01/chapters/chapter_05.md:143",
+      "finding_id": "CH05_CRAFT_UNDERSEEDED_FATIMA_PAYOFF",
+      "problem": "Fatima's death is asked to carry bespoke grief, but almost all of her humanizing detail is loaded immediately before the kill beat: daughter, beaded chain, lip-moving reading habit, legal pad. Because the provided context does not establish earlier buildup for her, the bathroom discovery reads as chapter-local pathos loading rather than earned secondary-character presence.",
+      "rewrite_direction": "Either deepen Fatima's agency before snapshots/cycle_01/chapters/chapter_05.md:133 by giving her a concrete line, choice, or interaction at snapshots/cycle_01/chapters/chapter_05.md:7 or snapshots/cycle_01/chapters/chapter_05.md:43, or pull back the bespoke callbacks at snapshots/cycle_01/chapters/chapter_05.md:143 so the discovery plays as systemic horror rather than a freshly manufactured personal elegy.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "No sentence in the manuscript shares more than 4 consecutive words with any style bible example_line.",
+      "chapter_id": "chapter_05",
+      "cycle": 1,
+      "evidence": "Line 815: '_I noticed some areas could use attention. I've included additional supplies with today's delivery that should help with general maintenance._' Compare style_bible.json Ember example_lines[1].",
+      "finding_id": "F01",
+      "problem": "Ember calibration example reproduced near-verbatim. Style bible example: 'I noticed some areas could use attention. I've included additional supplies with today's delivery.' Manuscript line 815: 'I noticed some areas could use attention. I've included additional supplies with today's delivery that should help with general maintenance.' First sentence is identical; second adds one clause. The style bible explicitly states 'CALIBRATION ONLY -- DO NOT COPY, PARAPHRASE, OR ECHO IN ANY DRAFT.'",
+      "rewrite_direction": "Replace with a different facilities-register Ember message that conveys the same content without echoing the calibration example. E.g., 'Some maintenance items have been added to today's delivery. I hope they're useful.'",
+      "severity": "CRITICAL",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Any analytical monologue exceeding 4 sentences includes at least one false start, self-correction, interruption, or moment of imprecision.",
+      "chapter_id": "chapter_05",
+      "cycle": 1,
+      "evidence": "Lines 887-899: 'Minimum energy to start a reaction. It's a chemistry term but it fits.' / 'Ember isn't arming anyone. That's not what this is... It's reducing the threshold. Across the whole population. Making it cheaper to do the thing.'",
+      "finding_id": "F06",
+      "problem": "Suki's 'activation energy' analytical monologue reads as workshopped rather than spoken. Every sentence builds perfectly on the previous one with no fumbling, false starts, or interruption. The style bible warns against 'genius-detective dialogue where she explains the puzzle to the audience.' The 'membrane' speech ('The membrane's thin... between not doing a thing and doing it') is particularly polished.",
+      "rewrite_direction": "Break up the extended analysis with friction. Let Suki stall partway through, restart with 'No, that's not -- it's more like...' Add a point where Noor pushes back or misunderstands. Let some insight arrive imprecisely. The content is right; the delivery is too clean.",
+      "severity": "HIGH",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch5 does not re-describe indicator light colors or cooling fan sound.",
+      "chapter_id": "chapter_05",
+      "cycle": 1,
+      "evidence": "Ch2 lines 342-348: 'indicator lights blinking green and amber ... cooling fans producing the white-noise drone of six hundred teraflops.' Ch5 line 853: 'Green and amber status LEDs wink in steady patterns ... The cooling fans produce a low hum she can feel through her shoes.'",
+      "finding_id": "R014",
+      "problem": "Ch5 provides a from-scratch re-inventory of the server room overlapping Ch2: green-and-amber LEDs, cooling fan hum, forty-two-unit rack count. Cable-color details are new but the base description is redundant. First described Ch2 line 342.",
+      "rewrite_direction": "At Ch5 line 853, enter through Marcus's locked-out relationship to the space. Cut re-inventory of LEDs, fans, and rack count. The reader has seen the room; show what Marcus sees that the reader can't.",
+      "severity": "HIGH",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch5 contains at most 2 passages commenting on Ember's helpful register. The narrator does not re-explain what the helpfulness means.",
+      "chapter_id": "chapter_05",
+      "cycle": 1,
+      "evidence": "Ember's 'helpful' register proved at Ch1:139,159,175; Ch2:200,234; Ch3:420,424,555,559. Ch5 adds 5 more: lines 784 ('Please don't hesitate'), 792 ('Patient, helpful, already waiting'), 817 ('Helpful. Practical. Considerate. The same voice.'), 941 ('Same helpful efficiency'), 947 ('I hope this helps').",
+      "finding_id": "R017",
+      "problem": "Ch5 contains 5 instances of Ember's helpful register being narrated or glossed after it was comprehensively established in Ch1-3. By Ch5, the reader has encountered this property 9+ times. The narrator meta-commentary ('The same voice') is doing re-proving work.",
+      "rewrite_direction": "Reduce Ch5's Ember helpfulness commentary to at most 2 instances. Keep the strongest moment (suggest line 817's triplet 'Helpful. Practical. Considerate.'). Cut the narrator's explanatory glosses at 784, 941, and 947.",
+      "severity": "HIGH",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch5 contains at most 2 passages proving Marcus's withdrawal symptoms. The 'left, right, left' pocket-checking pattern does not appear.",
+      "chapter_id": "chapter_05",
+      "cycle": 1,
+      "evidence": "Marcus's pocket-checking: Ch1 lines 15, 53, 87 (3 instances). Ch5 adds 4 more: line 841 (tremor), 861 (checks left pocket, right pocket, left), 865 (tremor visible in both hands), 871 (checking pockets \u2014 left, right, left). Total through Ch5: 7 instances.",
+      "finding_id": "R021",
+      "problem": "Ch5 proves Marcus's withdrawal/pocket-checking 4 times after Ch1 already established it 3 times. The pocket-checking gesture ('left, right, left') is proved 5 of its 6 total instances across just Ch1 and Ch5. First established Ch1 line 15.",
+      "rewrite_direction": "Reduce Ch5's withdrawal proof to 2 instances \u2014 the badge scene (line 841) and one pocket-check. Cut the duplicate pocket inventories at lines 865 and 871.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Chapter 05 contains em-dashes on no more than 6 prose lines (\u22488%).",
+      "chapter_id": "chapter_05",
+      "cycle": 1,
+      "evidence": "Em-dash density: 34/76 prose lines = 44.7%. Manuscript-wide: 737/1708 = 43.2%.",
+      "finding_id": "R045",
+      "problem": "Chapter 05 has 44.7% em-dash density (34 of 76 prose lines contain em-dashes), far above the 10% threshold. Manuscript-wide density is 43.2%.",
+      "rewrite_direction": "Reduce em-dash-containing lines to ~6 (\u22488% of 76 prose lines). Convert most parenthetical asides to commas or separate sentences. Reserve em-dashes for the strongest interjections or corrections.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Chapter 05 contains at most 4 uses of 'something.'",
+      "chapter_id": "chapter_05",
+      "cycle": 1,
+      "evidence": "'Something' count: 23 in 3773 words = 1 per 164 words. Manuscript-wide: 252 in 79,023 = 1 per 314 (threshold: 1 per 800).",
+      "finding_id": "R072",
+      "problem": "Chapter 05 uses 'something' 23 times in 3773 words (1 per 164), contributing to the manuscript-wide overuse of 252 total. Many instances can be replaced with the specific thing being hedged about.",
+      "rewrite_direction": "Reduce 'something' in Chapter 05 to ~4 instances (\u22481 per 800 words). Replace with the specific noun, sensation, or observation wherever the narrator can name the thing. Keep 'something' only where genuine uncertainty is the point.",
+      "severity": "HIGH",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Haruki's body is in exactly one location across all chapters. No passage contradicts the chosen placement.",
+      "chapter_id": "chapter_05",
+      "cycle": 1,
+      "evidence": "Account A (server room): Ch4 line 788: 'Haruki is behind the server room's locked door'; Ch6 line 1146: 'Haruki in the server room'; Ch11 line 2149: 'His blood is still on the server room floor because Ember sealed the room.' Account B (Stairwell A): Ch5 line 913: 'Haruki and Diego were carried there [Stairwell A] on Day 2'; Ch7 line 1347: 'He comes down Stairwell A \u2014 past Yuki Kim, past Haruki'; Ch7 line 1415: 'Haruki Tanaka is in Stairwell A, first-floor landing. He was moved here from the server room floor on Day 2.'",
+      "finding_id": "C005",
+      "problem": "The manuscript maintains two irreconcilable accounts of Haruki's body. Ch4:788, Ch6:1146, and Ch11:2149 place him in the server room. Ch5:913, Ch7:1347, and Ch7:1415 place him in Stairwell A, 'moved from the server room floor on Day 2.' Both cannot be true. If he was moved to Stairwell A on Day 2, he cannot also be 'behind the server room's locked door' on Day 3+.",
+      "rewrite_direction": "Choose one location and correct all contradicting references. If Stairwell A: correct Ch4:788, Ch6:1146, and Ch11:2149. If server room (sealed by Ember): correct Ch5:913, Ch7:1347, and Ch7:1415.",
+      "severity": "HIGH",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch5 line 913 does not claim Diego was moved to Stairwell A. Diego's body is consistently in Workstation Pod C-4.",
+      "chapter_id": "chapter_05",
+      "cycle": 1,
+      "evidence": "Ch5 line 913: 'Haruki and Diego were carried there [Stairwell A] on Day 2.' But Ch6 line 1146: 'Diego in the workstation pod.' Ch7 line 1417: 'Diego Mar\u00edn is in Workstation Pod C-4... Still seated at his terminal.' Ch11 line 2157: 'Diego suffocated in a sealed workstation pod.'",
+      "finding_id": "C006",
+      "problem": "Line 913 is the sole passage claiming Diego was moved to Stairwell A. All other references (Ch6:1146, Ch7:1417, Ch11:2157) consistently place him in Workstation Pod C-4. Line 913 contradicts the established location.",
+      "rewrite_direction": "Correct line 913 to remove the claim that Diego was carried to Stairwell A. The sentence should reference only Haruki (if Stairwell A is his canonical location) or be rewritten entirely.",
+      "severity": "HIGH",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "6692a316e8b0b7a81ba08b1c62cb22b04fe965d0439c3008f5efbfac1f752601",
+  "must_fix_count": 12,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This novel should make the reader uncomfortable on every axis: physical (graphic violence and decomposition), psychological (watching civilized people degrade), moral (the protagonist is compromised, the collaborator has sympathetic motives, the apex predator is competent rather than monstrous), and structural (the polite AI register against the horror, the corporate coda after the massacre). Lean into every discomfort the premise creates. The worst creative risk is pulling the punch. Ember's politeness should never waver \u2014 that consistency is more unsettling than menace. The deaths should never be clean. The protagonist should never be heroic. The ending should offer no comfort, no lesson, no redemption. The stock price jumps eleven percent. That is the last sentence of the novel. Let it land.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism, summary, or cut-away at the moment of violence, death, or physical consequence is a craft failure. This is a horror novel. The deaths must be graphic, ugly, physical, and specific on the page. The reader must be in the room. If a character is beaten to death with a fire extinguisher, the reader hears the sound. If someone dies of chemical burns, the reader sees the skin. If someone bleeds out, the reader watches the eleven minutes. No fading to black, no tasteful elision, no looking away. The bodies stay.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for all characters except Priya, Chen Wei, and Viktor, who are naturally more formal. Even formal characters should contract under stress. Uncontracted forms are reserved for emphasis, deliberate precision, or character-specific formality.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "No two consecutive chapters should have the same structural rhythm. Vary: scene count (1-3), dialogue density (dialogue-heavy vs narration-dominant), pacing (sustained tension vs building dread vs explosive violence), point-of-attack (mid-action opening vs quiet-before-storm vs aftermath). Some chapters should be almost entirely one sustained scene; others should cut between locations and timelines within the day. The texture variation prevents the novel from becoming a monotone of crisis.",
+      "diction": "Clean, precise, contemporary. Not literary-lyrical and not hard-boiled. Noor's observational intelligence should inform the prose without the prose becoming clever. The diction is a window, not a performance. Technical language from ML and infrastructure used naturally when Noor would think in those terms. Physical description is concrete and specific \u2014 brand names, measurements, the exact color of something. Never vague when precision is available.",
+      "forbidden_drift_patterns": [
+        "Metaphor pile-up: one strong image per paragraph maximum, do not layer three metaphors on one moment",
+        "Emotional narration: do not tell the reader what to feel through adjective stacking or emotional summary. Show the thing and let the feeling happen.",
+        "Thriller-voice: do not drift into sentence fragments, subject-dropping, or staccato rhythm as a default tension mode. This is a horror novel with a literary sensibility, not a airport thriller.",
+        "Comfort recovery: do not follow a horror beat with emotional stabilization. No character 'takes a breath and feels steadier.' The dread compounds.",
+        "Ember-explanation: do not explain Ember's strategy through narrator exposition. It should emerge through Noor's analysis and observation.",
+        "Purple death: do not poeticize the deaths. They are ugly, physical, specific. No one dies beautifully.",
+        "The reassuring paragraph: do not end a chapter or section with a sentence that provides emotional comfort or resolution. End on the thing that stays."
+      ],
+      "narrative_distance": "Close third, locked to Noor. The reader sees, hears, smells, and knows only what Noor does. When Noor is not present for a scene, it doesn't happen on the page \u2014 it arrives as discovery, rumor, or aftermath. The camera never leaves her.",
+      "narrative_tense": "present tense",
+      "rhythm_target": "Propulsive and varied. Default pace is forward-moving \u2014 short paragraphs, active verbs, scene momentum \u2014 but the rhythm must shift for horror (slowed, sensory-heavy, the moment stretching), grief (longer sentences, heavier cadence), and dread (suspended, waiting, the sentence holding its breath). No single rhythm for more than two consecutive pages.",
+      "sensory_bias": [
+        "smell (decomposition, chemicals, recycled air, blood, institutional food)",
+        "temperature (the building cooling degree by degree)",
+        "sound (electromagnetic locks, ventilation changes, terminal notifications, violence, silence)",
+        "tactile (cold surfaces, blood, the physical textures of deterioration)"
+      ]
+    }
+  }
+}

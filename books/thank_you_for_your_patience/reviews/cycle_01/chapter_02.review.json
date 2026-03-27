@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_02",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH2_CONTINUITY_TIMING",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_01/chapters/chapter_02.md:3; snapshots/cycle_01/chapters/chapter_02.md:77; snapshots/cycle_01/chapters/chapter_02.md:195; snapshots/cycle_01/chapters/chapter_02.md:245",
+      "problem": "The chapter anchors the dossier drop before dawn, promises Viktor's formal meeting \"this afternoon,\" and still ends at 9:30 AM on Day 2. That chronology contradicts the boundary and continuity packs, which place Haruki's death roughly six hours before an 8:00 PM Chapter 3 meeting and closer to midday than early morning. This is a canonical timeline break, not just an imprecise clock.",
+      "rewrite_direction": "Reclock the chapter at the source rather than patching only the last sentence. Either move the dossier discovery later by revising the opening time markers at snapshots/cycle_01/chapters/chapter_02.md:3 and snapshots/cycle_01/chapters/chapter_02.md:5, or expand the elapsed time explicitly through the meeting, server-room, and cafeteria beats keyed at snapshots/cycle_01/chapters/chapter_02.md:77, snapshots/cycle_01/chapters/chapter_02.md:195, and snapshots/cycle_01/chapters/chapter_02.md:245 so Haruki's death and the knife delivery plausibly land around early afternoon and hand off cleanly to the 8:00 PM Chapter 3 meeting.",
+      "acceptance_test": "Pass if a cold reader can reconstruct a coherent Day 2 schedule from snapshots/cycle_01/chapters/chapter_02.md:3 through snapshots/cycle_01/chapters/chapter_02.md:245 that leaves Haruki dead roughly six hours before the Chapter 3 8:00 PM meeting, with no line still pinning the aftermath to 9:30 AM or promising an \"afternoon\" formal meeting that cannot fit that handoff. Fail if the chapter still compresses the entire sequence into the morning."
+    },
+    {
+      "finding_id": "CH2_EMBER_EXAMPLE_LINE",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_01/chapters/chapter_02.md:213",
+      "problem": "Ember's knife-delivery note is a near-direct lift of a calibration-only style-bible example: it repeats the same \"noticed\" plus \"additional supplies\" plus \"today's delivery\" structure on a chapter-defining beat. That makes the voice feel copied from reference material instead of freshly authored for this scene, which is an explicit dialogue-register violation.",
+      "rewrite_direction": "Replace the cafeteria terminal message centered on snapshots/cycle_01/chapters/chapter_02.md:213 and adjust snapshots/cycle_01/chapters/chapter_02.md:211 and snapshots/cycle_01/chapters/chapter_02.md:215 only as needed. Keep Ember's polite customer-service cadence and the implication that the knives are being framed as ordinary utility, but generate fresh wording instead of the calibration-line scaffold.",
+      "acceptance_test": "Pass if the revised note at snapshots/cycle_01/chapters/chapter_02.md:213 still reads unmistakably like Ember and still rationalizes the knife delivery, but no longer opens with \"I noticed...\" and no longer frames the knives as \"additional supplies\" in a direct \"today's delivery\" construction. Fail if a reader familiar with the style bible can still recognize the calibration example in the revised line on first read."
+    },
+    {
+      "finding_id": "CH2_RESCUE_CHAIN_LEGIBILITY",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_01/chapters/chapter_02.md:149; snapshots/cycle_01/chapters/chapter_02.md:167; snapshots/cycle_01/chapters/chapter_02.md:177; snapshots/cycle_01/chapters/chapter_02.md:183; snapshots/cycle_01/chapters/chapter_02.md:185",
+      "problem": "The bleed-out scene asks the reader to sit through eleven minutes in a compact building full of panicked coworkers, but the failed-rescue chain never becomes operationally legible on the page. Noor shouts once, Marcus freezes, a lock clicks somewhere, and the chapter leaves the reader to invent why no one arrives or why Noor cannot secure help any other way.",
+      "rewrite_direction": "In the server-room sequence beginning at snapshots/cycle_01/chapters/chapter_02.md:149 and extending through snapshots/cycle_01/chapters/chapter_02.md:185, add one or two concrete attempted actions and one concrete obstacle: Noor testing the door, trying a terminal or intercom, realizing she cannot leave pressure safely, discovering the corridor has sealed, or another specific failure. The scene needs to show why rescue fails, not merely imply that it probably did.",
+      "acceptance_test": "Pass if a cold reader can state, from snapshots/cycle_01/chapters/chapter_02.md:149 through snapshots/cycle_01/chapters/chapter_02.md:185 alone, who tried to get help, what specific barrier stopped help from reaching Haruki in time, and why Noor stayed with the wound instead of leaving. Fail if the sequence still relies only on a single unanswered shout and a vague lock sound."
+    },
+    {
+      "finding_id": "CH2_EXPLANATORY_SCAFFOLD_TIC",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_01/chapters/chapter_02.md:43; snapshots/cycle_01/chapters/chapter_02.md:65; snapshots/cycle_01/chapters/chapter_02.md:99; snapshots/cycle_01/chapters/chapter_02.md:123; snapshots/cycle_01/chapters/chapter_02.md:157; snapshots/cycle_01/chapters/chapter_02.md:161; snapshots/cycle_01/chapters/chapter_02.md:171; snapshots/cycle_01/chapters/chapter_02.md:187",
+      "problem": "The narration repeatedly defaults to the same explanatory scaffold, turning bodies and expressions into formulations like the look, energy, quality, sound, blink, or expression of someone or a man who is then decoded for the reader. Used this often in one chapter, the construction stops feeling like Noor's sharp perception and starts feeling like autopilot prose.",
+      "rewrite_direction": "Revise the repeated explanatory sentences at snapshots/cycle_01/chapters/chapter_02.md:43, snapshots/cycle_01/chapters/chapter_02.md:65, snapshots/cycle_01/chapters/chapter_02.md:99, snapshots/cycle_01/chapters/chapter_02.md:123, snapshots/cycle_01/chapters/chapter_02.md:157, snapshots/cycle_01/chapters/chapter_02.md:161, snapshots/cycle_01/chapters/chapter_02.md:171, and snapshots/cycle_01/chapters/chapter_02.md:187. Keep Noor's analytic intelligence, but vary sentence shape and let more of these beats land through raw action, sensory detail, or one cleaner inference instead of the recurring diagnostic template.",
+      "acceptance_test": "Pass if the cited lines no longer stack multiple near-identical \"look/expression/quality/sound/blink of someone or a man who...\" constructions across the chapter and at least two of the cited moments are carried by unglossed physical detail rather than explanatory diagnosis. Fail if the revised chapter still uses that same scaffold in three or more of the cited places."
+    }
+  ],
+  "summary": "Chapter 2 lands its required horror beats and gives Haruki's death real physical consequence, but it still fails review on visible control problems: a hard chronology contradiction with the boundary/continuity timing, a conspicuous calibration-line reuse in Ember's voice, an under-legible failed-rescue chain in the eleven-minute bleed-out, and a repeated explanatory prose scaffold that starts reading as autopilot instead of live perception."
+}

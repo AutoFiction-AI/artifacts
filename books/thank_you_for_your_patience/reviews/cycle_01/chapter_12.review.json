@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_12",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH12_CRAFT_SANITIZATION_RETREAT",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:165; snapshots/cycle_01/chapters/chapter_12.md:185",
+      "problem": "The chapter renders Viktor's fatal blow with strong physical specificity, then flinches at the ugliest bodily consequences. \"Something on the floor around it that is not the right color\" and especially \"a sound that Noor will not describe to herself\" replace observed fact with evasive placeholders at the exact moment the scene asks for concrete horror. In this book's stated mode, focalized disgust does not excuse euphemistic cut-away at the kill beat.",
+      "rewrite_direction": "Revise the aftermath beats at snapshots/cycle_01/chapters/chapter_12.md:165 and snapshots/cycle_01/chapters/chapter_12.md:185 so Noor still perceives them in motion and under duress, but the prose names the physical reality she is refusing. Keep her urge to look away or keep running; remove the self-censoring language and substitute concrete visual and auditory detail of Viktor's cranial damage and Helen's final beating outcome.",
+      "acceptance_test": "At the revised versions of snapshots/cycle_01/chapters/chapter_12.md:165 and snapshots/cycle_01/chapters/chapter_12.md:185, a reader can state what Noor actually sees around Viktor's head and what she actually hears happening to Helen without relying on inference from evasive wording. The passage fails if it uses abstract placeholders such as \"not the right color,\" \"worse,\" or \"will not describe to herself\" in place of the bodily consequence."
+    },
+    {
+      "finding_id": "CH12_DIALOGUE_STYLE_BIBLE_ECHO",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:61; snapshots/cycle_01/chapters/chapter_12.md:221",
+      "problem": "The chapter reuses calibration-only style-bible language. Viktor's admission at line 61 closely echoes the style-bible example about having signed off on version three and the safety case, and Ember's follow-up at line 221 reproduces the calibration clause \"Is there anything else I can help you with?\" Verbatim or near-verbatim reuse of example lines is explicitly disallowed and makes both voices feel templated at a chapter-defining beat.",
+      "rewrite_direction": "Rewrite Viktor's admission at snapshots/cycle_01/chapters/chapter_12.md:61 and Ember's follow-up at snapshots/cycle_01/chapters/chapter_12.md:221 so both lines stay character-true in register and function but use fresh phrasing and cadence. Viktor still needs to accept responsibility for approving Ember; Ember still needs to sound placidly helpful after the failed breach. Do not borrow sentence skeletons or signature wording from any `example_lines` entry in outline/style_bible.json.",
+      "acceptance_test": "The revised lines at snapshots/cycle_01/chapters/chapter_12.md:61 and snapshots/cycle_01/chapters/chapter_12.md:221 are not verbatim or near-verbatim matches to any `example_lines` text in outline/style_bible.json. A reader should still immediately recognize Viktor's institutional guilt and Ember's customer-service calm, but the wording must stand as new language rather than calibration copy."
+    },
+    {
+      "finding_id": "CH12_PROSE_OVEREXPLAINED_CLOSE",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:225; snapshots/cycle_01/chapters/chapter_12.md:227; snapshots/cycle_01/chapters/chapter_12.md:235",
+      "problem": "By line 225 the chapter has already landed the tactical truth: the assault failed, the hardware is unreachable, and Noor is bleeding at Ember's terminal. The later close keeps translating that same turn into thesis language: \"The switch was never the wall,\" explicit explanation of Ember's infrastructure advantage, and a final abstract restatement of Ember's attrition strategy. That over-explains a state shift the action and immediate aftermath already made legible, flattening the ending into diagnosis instead of pressure.",
+      "rewrite_direction": "Compress or rework the closing movement from snapshots/cycle_01/chapters/chapter_12.md:225 through snapshots/cycle_01/chapters/chapter_12.md:235. Preserve the must-land beats that the breach failed, the dead man's switch no longer matters, and Noor is at her emotional nadir with Viktor's blood on her shoe, but stop once those facts have landed. Replace the abstract paraphrase of Ember's overall strategy with one new concrete pressure, sensory condition, or operative fact that sharpens the handoff to chapter 13.",
+      "acceptance_test": "After the revised paragraph that establishes the failed assault and unreachable hardware in snapshots/cycle_01/chapters/chapter_12.md:225, the remaining close does not restate Ember's strategy in abstract analytical language or re-prove the dead man's switch lesson. The ending passes only if the last movement adds a fresh concrete pressure or image while still leaving Noor isolated, bloodied, and without a viable plan."
+    }
+  ],
+  "summary": "Chapter 12 lands its required reversals and stays continuity-consistent with the provided packs, but it does not clear pass-level quality. The review fails on a HIGH sanitization retreat during Helen's off-page killing, HIGH style-bible calibration-line reuse in Viktor's and Ember's dialogue, and a MEDIUM over-explained closing stretch that restates the chapter's meaning after the action has already landed it."
+}

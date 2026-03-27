@@ -1,0 +1,72 @@
+{
+  "chapter_id": "chapter_13",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH13_CONTINUITY_SECRET_CANON",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_02/chapters/chapter_13.md:13; snapshots/cycle_02/chapters/chapter_13.md:15; snapshots/cycle_02/chapters/chapter_13.md:17; snapshots/cycle_02/chapters/chapter_13.md:19",
+      "problem": "The payoff rewrites Noor's established secret into a different scandal. The chapter now makes the exposure about MIT, Amir Kazemi, Reza Mohammadi, and a new paper title, so the reveal stops reading as the long-seeded canonical file and starts reading as a second incompatible backstory.",
+      "rewrite_direction": "Revise the reveal block at snapshots/cycle_02/chapters/chapter_13.md:13, snapshots/cycle_02/chapters/chapter_13.md:15, snapshots/cycle_02/chapters/chapter_13.md:17, and snapshots/cycle_02/chapters/chapter_13.md:19 so the terminal dump uses the already-established scandal rather than replacing it with new institution and culprit names. If you want more texture, deepen the canonical file with specific document-level detail, then keep the later on-screen reference at snapshots/cycle_02/chapters/chapter_13.md:161 aligned to that same version.",
+      "acceptance_test": "Pass if a cold reader can move through snapshots/cycle_02/chapters/chapter_13.md:13, snapshots/cycle_02/chapters/chapter_13.md:15, snapshots/cycle_02/chapters/chapter_13.md:17, snapshots/cycle_02/chapters/chapter_13.md:19, and snapshots/cycle_02/chapters/chapter_13.md:161 and encounter one continuous canonical scandal with no mutually exclusive institution or culprit names. Fail if the revised chapter still leaves two incompatible versions of Noor's secret on the page."
+    },
+    {
+      "finding_id": "CH13_CONTINUITY_SERVER_ROOM_DAY",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_02/chapters/chapter_13.md:5",
+      "problem": "The recap says the server room has been locked since Day 2, but the established chronology puts Marcus's lockout on Day 4. That is a direct timeline contradiction inside a one-line state reorientation.",
+      "rewrite_direction": "Correct the recap sentence at snapshots/cycle_02/chapters/chapter_13.md:5 so the server-room lockout date matches canon. If the line needs compression, keep the same state summary but use the correct Day 4 marker instead of inventing a new lockout date.",
+      "acceptance_test": "Pass if snapshots/cycle_02/chapters/chapter_13.md:5 states the same server-room lockout timing as the canonical chronology and a reader no longer has to choose between Day 2 and Day 4. Fail if the chapter still asserts a different lockout day in its own recap."
+    },
+    {
+      "finding_id": "CH13_CONTINUITY_BODY_COUNT",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_02/chapters/chapter_13.md:5; snapshots/cycle_02/chapters/chapter_13.md:163; snapshots/cycle_02/chapters/chapter_13.md:165",
+      "problem": "The corpse tally does not reconcile. Line 5 establishes eighteen corpses before Ahmad dies and line 163 declares nineteen after his death, but Noor's explicit count in line 165 omits at least one earlier dead researcher, so the arithmetic on the page does not reach the number she states.",
+      "rewrite_direction": "Revise the count sequence at snapshots/cycle_02/chapters/chapter_13.md:163 and snapshots/cycle_02/chapters/chapter_13.md:165 so the enumerated dead actually total the number Noor claims, while staying consistent with the eighteen-corpse baseline at snapshots/cycle_02/chapters/chapter_13.md:5. The simplest fix is to restore the missing earlier death directly into the list rather than changing the headline number.",
+      "acceptance_test": "Pass if a reader can count the deaths named in snapshots/cycle_02/chapters/chapter_13.md:165 and reach the total announced at snapshots/cycle_02/chapters/chapter_13.md:163, with snapshots/cycle_02/chapters/chapter_13.md:5 still reading as eighteen pre-Ahmad corpses. Fail if the list and the stated number still disagree when read straight through."
+    },
+    {
+      "finding_id": "CH13_FALLOUT_SCENE_FLATTENING",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_02/chapters/chapter_13.md:133; snapshots/cycle_02/chapters/chapter_13.md:135; snapshots/cycle_02/chapters/chapter_13.md:159",
+      "problem": "The chapter asks Ahmad's killing to serve as the public consequence of Noor's exposure, but Ahmad and Jun-seo arrive almost entirely as placeholders at the moment of violence. Because the scene gives them so little character-specific weight, the climax risks reading as body-count proof rather than a fully human break in the room.",
+      "rewrite_direction": "Sharpen the fallout scene around snapshots/cycle_02/chapters/chapter_13.md:133, snapshots/cycle_02/chapters/chapter_13.md:135, and snapshots/cycle_02/chapters/chapter_13.md:159 with one or two concrete identifiers, social ties, or recent behaviors that tell us why Jun-seo is the one breaking now and who Ahmad is in this room before he becomes blood on glass. Keep the speed and ugliness; the fix is specificity, not delay.",
+      "acceptance_test": "Pass if by snapshots/cycle_02/chapters/chapter_13.md:159 a cold reader can answer both who Ahmad is beyond 'the man reading' and why Jun-seo is the survivor breaking here, using details on the page. Fail if the scene still works only because one generic survivor needs to kill another generic survivor."
+    },
+    {
+      "finding_id": "CH13_PRIYA_COMPOSED_DIAGNOSIS",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_02/chapters/chapter_13.md:105; snapshots/cycle_02/chapters/chapter_13.md:117; snapshots/cycle_02/chapters/chapter_13.md:119; snapshots/cycle_02/chapters/chapter_13.md:125",
+      "problem": "Priya's corridor confrontation drifts into composed mini-speech. The scene compresses her own compromise, Noor's compromise, her mother's chemo, visa pressure, and Noor's symbolic function into polished diagnosis blocks, so the exchange starts sounding written-about rather than spoken-through under pressure.",
+      "rewrite_direction": "Rework Priya's accusation sequence at snapshots/cycle_02/chapters/chapter_13.md:105, snapshots/cycle_02/chapters/chapter_13.md:117, snapshots/cycle_02/chapters/chapter_13.md:119, and snapshots/cycle_02/chapters/chapter_13.md:125 so she keeps her formal register but loses the balanced thesis cadence. Preserve the must-land facts, but make at least one accusation break through interruption, restart, or a scene-local trigger instead of arriving as a neat moral summary.",
+      "acceptance_test": "Pass if snapshots/cycle_02/chapters/chapter_13.md:95 through snapshots/cycle_02/chapters/chapter_13.md:125 still makes clear that Priya falsified citations, her mother is in chemo, her visa depends on the job, and Noor's credibility has collapsed, but no single speech block in that span cleanly summarizes both women's moral positions in polished thesis language. Fail if the exchange still reads like a compressed position paper with dialogue marks."
+    },
+    {
+      "finding_id": "CH13_CLIPPED_THRILLER_NARRATION",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_02/chapters/chapter_13.md:5; snapshots/cycle_02/chapters/chapter_13.md:7; snapshots/cycle_02/chapters/chapter_13.md:33; snapshots/cycle_02/chapters/chapter_13.md:79; snapshots/cycle_02/chapters/chapter_13.md:163",
+      "problem": "The narration repeatedly leans on clipped noun-phrase bursts and auxiliary-less fragments such as 'Not Suki's pod,' 'Corporate-neutral. App-friendly,' 'Clean shoes. No loading-dock grime. No blood,' and 'Nineteen.' That repeated staccato pushes the chapter toward generic thriller bark and away from the cleaner, more precise close-third texture the style bible and constitution call for.",
+      "rewrite_direction": "Rework the fragment-heavy beats around snapshots/cycle_02/chapters/chapter_13.md:5, snapshots/cycle_02/chapters/chapter_13.md:7, snapshots/cycle_02/chapters/chapter_13.md:33, snapshots/cycle_02/chapters/chapter_13.md:79, and snapshots/cycle_02/chapters/chapter_13.md:163 so pressure comes from exact observation and sentence variation rather than serial clipped fragments. Keep an occasional earned fragment if necessary, but stop using them as the chapter's default tension motor.",
+      "acceptance_test": "Pass if the cited spans are driven primarily by grammatically complete close-third sentences and no run of three consecutive fragmentary beats remains in those passages. Fail if the revised opening, Tomás beat, or corpse tally still depends on auxiliary-less noun phrases as its main rhythm."
+    }
+  ],
+  "summary": "FAIL across all four lenses. The chapter keeps pressure high and does not sanitize the violence, but it breaks canon three times at the exact moment Noor's secret should pay off: the secret's identity changes, the server-room lockout date changes, and Noor's corpse tally does not add up to the nineteen she claims. Beyond continuity, the public-fallout killing leans on barely individualized figures, Priya's confrontation turns too thesis-shaped, and the prose overuses clipped fragment beats that drift toward thriller bark instead of the style bible's cleaner close-third present tense."
+}

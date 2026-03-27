@@ -1,0 +1,220 @@
+{
+  "cycle": 3,
+  "verdict": "FAIL",
+  "summary": "The manuscript's principal failure modes, in order of consequence: (1) Prose-level somatic and transitional vocabulary defaults — 'swallow/swallowing' (22+ occurrences), 'shift/shifted' (40+ occurrences), 'for a second/beat' (20+ occurrences), and 'mouth open/working/closes' as default stress and death descriptors recur across nearly every chapter at rates far above the constitution's four-per-book threshold, creating a mechanical texture detectable by any attentive prize reader. (2) Death scene narrative formula — nearly every death follows the same five-beat sequence (physical action, breathing/mouth failure, hand movement, positional change, silence plus body observation), which becomes predictable by mid-book despite excellent physical specificity within individual scenes. (3) Present-tense narration slips into past tense across seven chapters, with the densest clusters in chapters 2 and 8, undermining the close-third present-tense contract. The novel demonstrates genuine shortlist-level strengths: dialogue is distinct, contracted, and pressure-appropriate with zero style-bible calibration-line leakage; deaths are graphic, ugly, and specific per the horror mandate with no sanitization failures; continuity is near-perfect across 30 characters and 14 days; pacing earns its body-count acceleration; and the ending — Noor bleeding out while Ember sends a performance review, then the stock rising eleven percent — is devastating and fully earned. Fixing the identified prose-level patterns and tense slips would plausibly bring the manuscript to shortlist readiness without altering its dramatic architecture.",
+  "findings": [],
+  "pattern_findings": [
+    {
+      "pattern_id": "TENSE_DRIFT",
+      "severity": "MEDIUM",
+      "global_problem": "Present-tense narration slips into simple past across seven chapters, breaking the close-third present-tense contract declared in the style bible. Slips cluster in action sequences and physical descriptions where the prose shifts from observing live events to summarizing completed ones.",
+      "affected_chapters": ["chapter_02", "chapter_04", "chapter_05", "chapter_08", "chapter_09", "chapter_10", "chapter_12"],
+      "global_rewrite_principles": "Convert past-tense narration verbs to present tense in all cited passages. Past tense remains acceptable in dialogue, in explicit flashback or memory context clearly framed as such, and in past-perfect constructions that establish prior state. The test is whether the narration voice is describing a live scene or has accidentally slipped into retrospective mode.",
+      "chapter_hits": [
+        {
+          "finding_id": "TENSE_DRIFT_CH02",
+          "chapter_id": "chapter_02",
+          "evidence": "snapshots/cycle_03/FINAL_NOVEL.md:541; snapshots/cycle_03/FINAL_NOVEL.md:577; snapshots/cycle_03/FINAL_NOVEL.md:617; snapshots/cycle_03/FINAL_NOVEL.md:675",
+          "problem": "Four narration tense slips in live action sequences: 'He took the west stairwell or he was already heading down' (541), 'He touched Haruki's head... He pulled his hands back' (577), 'Noor never saw him lower them' (617), 'the blade was clean' (675).",
+          "rewrite_direction": "At snapshots/cycle_03/FINAL_NOVEL.md:541, convert to 'He takes the west stairwell or he is already heading down.' At :577, convert to 'He touches... He pulls his hands back.' At :617, convert to 'Noor has never seen him lower them.' At :675, convert 'was clean' to 'is clean.'",
+          "acceptance_test": "Pass if all four cited lines use present tense in narration. Fail if any simple-past verb remains in live narration at the cited lines."
+        },
+        {
+          "finding_id": "TENSE_DRIFT_CH04",
+          "chapter_id": "chapter_04",
+          "evidence": "snapshots/cycle_03/FINAL_NOVEL.md:1021; snapshots/cycle_03/FINAL_NOVEL.md:1023",
+          "problem": "Two tense slips: 'Yuki was in the middle of the stairs... someone came through her' (1021) uses simple past for what should be present-tense reconstruction; 'Noor checked the cafeteria late yesterday afternoon... they were already gone' (1023) mixes past narration into present-tense context.",
+          "rewrite_direction": "At snapshots/cycle_03/FINAL_NOVEL.md:1021, convert to present: 'Yuki is in the middle of the stairs... someone comes through her.' At :1023, the yesterday reference permits past-tense content but frame it with present-tense narration: 'Noor checked the cafeteria yesterday afternoon' can stay past, but 'they were already gone' should align with the established pattern — use present perfect 'they are already gone' or restructure.",
+          "acceptance_test": "Pass if line 1021 uses present tense for the description of Yuki's location and the attack. Fail if simple past persists in the live-narration reconstruction."
+        },
+        {
+          "finding_id": "TENSE_DRIFT_CH05",
+          "chapter_id": "chapter_05",
+          "evidence": "snapshots/cycle_03/FINAL_NOVEL.md:1166",
+          "problem": "Mixed tense in a single sentence: 'He was not at breakfast' (simple past) alongside 'has stopped arriving' (present perfect). The sentence describes a current observation, not a past event.",
+          "rewrite_direction": "At snapshots/cycle_03/FINAL_NOVEL.md:1166, convert to consistent present: 'He is not at breakfast and he has stopped arriving anywhere on time since Day 2.'",
+          "acceptance_test": "Pass if the sentence at line 1166 uses present tense throughout. Fail if 'was not' remains."
+        },
+        {
+          "finding_id": "TENSE_DRIFT_CH08",
+          "chapter_id": "chapter_08",
+          "evidence": "snapshots/cycle_03/FINAL_NOVEL.md:2005; snapshots/cycle_03/FINAL_NOVEL.md:2159; snapshots/cycle_03/FINAL_NOVEL.md:2197",
+          "problem": "Three tense slips: 'Yesterday she found him... She cleaned him with wet paper towels and walked him here because... this pod was empty' (2005) drifts from acceptable yesterday-reference into contaminating the surrounding narration; 'a blackening stain that was already there' (2159) uses simple past in live observation; 'adds what she saw' (2197) should be present.",
+          "rewrite_direction": "At snapshots/cycle_03/FINAL_NOVEL.md:2005, the yesterday flashback verbs ('found,' 'cleaned,' 'walked') are acceptable, but 'this pod was empty and had a wastepaper bin' describes a currently visible condition — convert to 'this pod is empty and has a wastepaper bin.' At :2159, convert 'was already there' to 'is already there.' At :2197, convert 'she saw' to 'she has seen.'",
+          "acceptance_test": "Pass if lines 2159 and 2197 use present tense and line 2005 confines past tense to the explicitly recalled yesterday events without contaminating present-state descriptions. Fail if simple past persists in non-flashback narration."
+        },
+        {
+          "finding_id": "TENSE_DRIFT_CH09",
+          "chapter_id": "chapter_09",
+          "evidence": "snapshots/cycle_03/FINAL_NOVEL.md:2496",
+          "problem": "Extended past-tense passage in present-tense narration: 'She was typing when the bracket went in. She was working the problem. She was solving it. Then a sharpened strip of shelving went into her back and the work stopped.' This is Noor reconstructing Suki's last moment while sitting beside the body — the surrounding narration is present tense, and this passage breaks the contract.",
+          "rewrite_direction": "At snapshots/cycle_03/FINAL_NOVEL.md:2496, convert to present tense to maintain emotional immediacy and narration consistency: 'She is typing when the bracket goes in. She is working the problem. She is solving it.' The present tense forces the reader to experience the moment as Noor replays it, which is more devastating than retrospective summary.",
+          "acceptance_test": "Pass if the passage at line 2496 uses present tense consistent with the surrounding narration. Fail if the extended past-tense sequence remains."
+        },
+        {
+          "finding_id": "TENSE_DRIFT_CH10",
+          "chapter_id": "chapter_10",
+          "evidence": "snapshots/cycle_03/FINAL_NOVEL.md:2593",
+          "problem": "Past-tense slip in present-tense description: 'washed in a third-floor sink until the collar went gray' describes a visible current condition using simple past.",
+          "rewrite_direction": "At snapshots/cycle_03/FINAL_NOVEL.md:2593, convert to present perfect: 'washed in a third-floor sink until the collar has gone gray.'",
+          "acceptance_test": "Pass if the description uses present perfect or present tense. Fail if simple past 'went gray' remains."
+        },
+        {
+          "finding_id": "TENSE_DRIFT_CH12",
+          "chapter_id": "chapter_12",
+          "evidence": "snapshots/cycle_03/FINAL_NOVEL.md:3334",
+          "problem": "Narration lapses to past tense: 'The blow had the same logic as ration distribution: there was a job in front of her and she did it.' This describes a present-moment observation.",
+          "rewrite_direction": "At snapshots/cycle_03/FINAL_NOVEL.md:3334, convert to present: 'The blow has the same logic as ration distribution: there is a job in front of her and she does it.'",
+          "acceptance_test": "Pass if the sentence uses present tense throughout. Fail if past-tense narration remains."
+        }
+      ]
+    },
+    {
+      "pattern_id": "PROSE_TIC_SOMATIC_VOCAB",
+      "severity": "MEDIUM",
+      "global_problem": "The manuscript defaults to a narrow somatic vocabulary — 'swallow/swallowing' (22+ occurrences), 'mouth open/working/closes/tightens' as the primary stress and death descriptor, and 'hands + open/close/shake' as the primary agency marker — creating repetitive physical texture across the full book. The constitution flags any descriptive default appearing more than four times in the book as a tic. These constructions individually exceed that threshold by factors of four to ten.",
+      "affected_chapters": ["chapter_08", "chapter_10", "chapter_12", "chapter_14", "chapter_15", "chapter_16"],
+      "global_rewrite_principles": "Vary the physiological vocabulary. Where 'swallow' currently appears, substitute precise alternatives — throat working, jaw clenching, liquid failing to descend, gulping, choking, forcing down. Where 'mouth open' serves as default death/stress marker, shift focal sense to other body systems: respiratory sounds, limb position, skin color change, involuntary muscle response. Aim for no more than one 'swallow' per chapter and no more than four across the book. Aim for 'mouth' as primary descriptor in no more than two death scenes across the book.",
+      "chapter_hits": [
+        {
+          "finding_id": "SOMATIC_VOCAB_CH08",
+          "chapter_id": "chapter_08",
+          "evidence": "snapshots/cycle_03/FINAL_NOVEL.md:2011; snapshots/cycle_03/FINAL_NOVEL.md:2047; snapshots/cycle_03/FINAL_NOVEL.md:2129",
+          "problem": "'Swallow' appears three times in Marcus's withdrawal scenes (2011, 2047, 2129), becoming a default physiological marker for his condition. Combined with 'mouth tightens' (2011), the chapter narrows Marcus's physical experience to a mouth-and-throat register.",
+          "rewrite_direction": "At snapshots/cycle_03/FINAL_NOVEL.md:2011-2129, keep the most physically embedded instance (2011, where swallowing triggers vomiting — this is functional). At :2047, replace 'He swallows hard, twice' with a different withdrawal detail: throat convulsion, jaw locking, dry heave rhythm. At :2129, replace 'He swallows' with a different confession-beat physical marker: pause, exhale, eyes dropping.",
+          "acceptance_test": "Pass if 'swallow/swallowing' appears no more than once in the chapter and Marcus's withdrawal is rendered through at least three distinct physical systems rather than mouth-throat dominance. Fail if the word appears three times."
+        },
+        {
+          "finding_id": "SOMATIC_VOCAB_CH10",
+          "chapter_id": "chapter_10",
+          "evidence": "snapshots/cycle_03/FINAL_NOVEL.md:2793; snapshots/cycle_03/FINAL_NOVEL.md:2804; snapshots/cycle_03/FINAL_NOVEL.md:2832",
+          "problem": "'Mouth' appears in three rapid-fire physical descriptions: 'His jaw shifts once' (2793), 'his mouth stays slack for a beat' (2804), 'A pink froth gathers at the corner of his mouth. He tries to swallow and can't' (2832). The somatic vocabulary narrows to mouth/jaw/swallow in the chapter's most intense passages.",
+          "rewrite_direction": "At snapshots/cycle_03/FINAL_NOVEL.md:2793-2832, keep the death detail at :2832 (the froth is specific and effective). At :2804, replace 'his mouth stays slack' with a different physical observation — posture change, hand position, breath pattern. At :2793, 'His jaw shifts' is acceptable if 'mouth' at 2804 is replaced.",
+          "acceptance_test": "Pass if the 40-line span from 2793-2832 uses 'mouth' no more than once and pairs it with observations from other physical systems. Fail if three mouth/jaw descriptions cluster in the same span."
+        },
+        {
+          "finding_id": "SOMATIC_VOCAB_CH12",
+          "chapter_id": "chapter_12",
+          "evidence": "snapshots/cycle_03/FINAL_NOVEL.md:3162; snapshots/cycle_03/FINAL_NOVEL.md:3176",
+          "problem": "'Swallow' appears twice in close proximity: 'like something she swallowed' (3162, simile) and 'the effort it takes him to swallow is visible in his throat' (3176, literal). The word serves two different functions but the repetition registers as a tic.",
+          "rewrite_direction": "At snapshots/cycle_03/FINAL_NOVEL.md:3162, replace the simile 'like something she swallowed' with a different internalization image — 'like something settling behind her ribs' or a different somatic metaphor. Keep :3176 as the literal usage.",
+          "acceptance_test": "Pass if 'swallow' appears no more than once in the chapter. Fail if both instances remain."
+        },
+        {
+          "finding_id": "SOMATIC_VOCAB_CH14",
+          "chapter_id": "chapter_14",
+          "evidence": "snapshots/cycle_03/FINAL_NOVEL.md:3670; snapshots/cycle_03/FINAL_NOVEL.md:3732; snapshots/cycle_03/FINAL_NOVEL.md:3750; snapshots/cycle_03/FINAL_NOVEL.md:3792",
+          "problem": "'Swallow' appears four times across three characters — Kwame (3670), Marcus eating with difficulty (3732, 3750), and Min dying (3792, 'two empty swallows'). The repetition flattens what should be distinct physical experiences into the same default.",
+          "rewrite_direction": "At snapshots/cycle_03/FINAL_NOVEL.md:3670-3792, keep one instance (3732, where swallowing difficulty is most embedded in Marcus's eating scene). At :3670, replace 'He swallows once' with a different physical beat. At :3750, replace 'has to swallow it in pieces' with a different eating-difficulty detail. At :3792 (Min's death), replace 'two empty swallows' with a different dying-body detail — throat click, chest hitch, airway sound.",
+          "acceptance_test": "Pass if 'swallow' appears no more than once in the chapter and Min's death uses a different physiological marker. Fail if the word appears 3+ times."
+        },
+        {
+          "finding_id": "SOMATIC_VOCAB_CH15",
+          "chapter_id": "chapter_15",
+          "evidence": "snapshots/cycle_03/FINAL_NOVEL.md:3997; snapshots/cycle_03/FINAL_NOVEL.md:4013; snapshots/cycle_03/FINAL_NOVEL.md:4111",
+          "problem": "'Swallow' appears three times: 'the bite he never swallowed' (3997, Tomas's death), 'swallows the water in one go' (4013), 'He swallows and grimaces' (4111). Each serves a different character but the word recurs as default.",
+          "rewrite_direction": "At snapshots/cycle_03/FINAL_NOVEL.md:3997, keep — 'the bite he never swallowed' is effective in the death context. At :4013, replace 'swallows the water in one go' with 'drains the water' or 'drinks it in one pull.' At :4111, replace 'He swallows and grimaces' with a different effort marker.",
+          "acceptance_test": "Pass if 'swallow' appears no more than once. Fail if it appears 3+ times."
+        },
+        {
+          "finding_id": "SOMATIC_VOCAB_CH16",
+          "chapter_id": "chapter_16",
+          "evidence": "snapshots/cycle_03/FINAL_NOVEL.md:4414; snapshots/cycle_03/FINAL_NOVEL.md:4448",
+          "problem": "'Swallow' appears twice in the blanket vigil sequence: 'loses the swallow halfway down' (4414, Dane) and 'He tries to swallow it, fails' (4448, dying man). Both describe failing bodies, creating a repetitive death marker.",
+          "rewrite_direction": "At snapshots/cycle_03/FINAL_NOVEL.md:4448, replace 'tries to swallow it, fails' with a different choking/failing detail: 'tries to clear his throat,' 'his chest hitches,' or 'breath catches in the wet.' Keep :4414 as the single instance.",
+          "acceptance_test": "Pass if 'swallow' appears no more than once in the chapter. Fail if both instances remain."
+        }
+      ]
+    },
+    {
+      "pattern_id": "PROSE_TIC_TRANSITION_PAUSE",
+      "severity": "MEDIUM",
+      "global_problem": "'Shift/shifted/shifts' appears 40+ times as the default verb for transitions, physical repositioning, and atmospheric change. 'For a second' and 'for a beat' appear 20+ times as the default scene-slowing device. Together these create a mechanical rhythm across the manuscript — scenes transition through 'shifts' and pause through 'beats' with insufficient variation.",
+      "affected_chapters": ["chapter_05", "chapter_06", "chapter_10", "chapter_14", "chapter_15"],
+      "global_rewrite_principles": "For 'shift': replace with context-specific verbs — 'turns,' 'adjusts,' 'changes,' 'moves,' 'pivots,' or name the specific physical action. Keep 'shift' only when it refers to a genuinely atmospheric or perceptual change. For 'for a second/beat': delete the construction entirely where possible (let the reader feel the pause through white space, sentence break, or action), or replace with a specific physical beat that does double duty as pause and characterization.",
+      "chapter_hits": [
+        {
+          "finding_id": "TRANSITION_PAUSE_CH05",
+          "chapter_id": "chapter_05",
+          "evidence": "snapshots/cycle_03/FINAL_NOVEL.md:1136; snapshots/cycle_03/FINAL_NOVEL.md:1154; snapshots/cycle_03/FINAL_NOVEL.md:1210; snapshots/cycle_03/FINAL_NOVEL.md:1222; snapshots/cycle_03/FINAL_NOVEL.md:1306",
+          "problem": "'Shift' appears three times (1136, 1154, 1306) and 'for a second' twice (1210, 1222) in a single chapter — five instances of these default constructions creating a repetitive scene-transition rhythm.",
+          "rewrite_direction": "At snapshots/cycle_03/FINAL_NOVEL.md:1136, replace 'Jonas shifts the drain cleaner away' with a specific physical verb: 'slides,' 'carries,' 'pulls.' At :1154, replace 'The argument shifts from' with direct narration of the new disagreement. At :1306, replace 'the vent above her station shifts direction' with sensory description: 'the vent reverses' or describe the felt change. At :1222, delete 'She's quiet for a second' or replace with a specific physical beat. Keep :1210 if strongest.",
+          "acceptance_test": "Pass if 'shift' appears no more than once and 'for a second' no more than once in the chapter. Fail if either exceeds one occurrence."
+        },
+        {
+          "finding_id": "TRANSITION_PAUSE_CH06",
+          "chapter_id": "chapter_06",
+          "evidence": "snapshots/cycle_03/FINAL_NOVEL.md:1627; snapshots/cycle_03/FINAL_NOVEL.md:1631; snapshots/cycle_03/FINAL_NOVEL.md:1678",
+          "problem": "'Shift' appears three times, including a near-verbatim sentence repetition: 'When she shifts in her chair, Noor catches a single line' (1627) and 'When she shifts in her chair, Noor catches fragments' (1631) — only four lines apart. 'Pasternack shifts a few inches' (1678) adds a third instance.",
+          "rewrite_direction": "At snapshots/cycle_03/FINAL_NOVEL.md:1627 and :1631, the near-verbatim repetition must be fixed — rewrite one of these sentences entirely. Use a different physical action for Priya's second movement: 'When she leans back,' 'When she turns to the keyboard,' or cut the second observation into the first. At :1678, replace 'shifts' with a specific physical verb: 'moves,' 'steps aside.'",
+          "acceptance_test": "Pass if no near-verbatim sentence repetition exists between 1627 and 1631, and 'shift' appears no more than once in the chapter. Fail if both 'shifts in her chair' instances remain."
+        },
+        {
+          "finding_id": "TRANSITION_PAUSE_CH10",
+          "chapter_id": "chapter_10",
+          "evidence": "snapshots/cycle_03/FINAL_NOVEL.md:2643; snapshots/cycle_03/FINAL_NOVEL.md:2787; snapshots/cycle_03/FINAL_NOVEL.md:2793; snapshots/cycle_03/FINAL_NOVEL.md:2804; snapshots/cycle_03/FINAL_NOVEL.md:2916",
+          "problem": "'Shift' appears three times (2643, 2793, 2832) and 'for a second/beat' appears three times (2787, 2804, 2916). Six instances of these default constructions in one chapter create a highly repetitive transition-and-pause cadence.",
+          "rewrite_direction": "At snapshots/cycle_03/FINAL_NOVEL.md:2643, replace 'Nobody announces the shift' with 'Nobody announces the change' or 'Nobody announces it.' At :2787 and :2916, delete 'for a second' — let the pause live in the sentence break or a physical detail. At :2804, replace 'for a beat' with action: 'His eyes move over the same four lines again' already provides the pause. Keep :2793 as the single 'shift' instance if needed.",
+          "acceptance_test": "Pass if 'shift' appears no more than once and 'for a second/beat' appears no more than once. Fail if either construction exceeds one occurrence."
+        },
+        {
+          "finding_id": "TRANSITION_PAUSE_CH14",
+          "chapter_id": "chapter_14",
+          "evidence": "snapshots/cycle_03/FINAL_NOVEL.md:3682; snapshots/cycle_03/FINAL_NOVEL.md:3688; snapshots/cycle_03/FINAL_NOVEL.md:3716; snapshots/cycle_03/FINAL_NOVEL.md:3762",
+          "problem": "'Shift' appears three times (3682, 3688 'Rodney shifts the pipe,' 3762 'the cardboard shifts') and 'for a second' once (3716) — four instances of default construction in the chapter.",
+          "rewrite_direction": "At snapshots/cycle_03/FINAL_NOVEL.md:3688, replace 'Rodney shifts the pipe' with 'Rodney adjusts the pipe' or 'Rodney moves the pipe forward.' At :3762, replace 'the cardboard shifts' with 'the cardboard rustles' or 'the stack settles.' Keep one 'shift' instance at :3682 if it is the strongest.",
+          "acceptance_test": "Pass if 'shift' appears no more than once in the chapter. Fail if it appears 3+ times."
+        },
+        {
+          "finding_id": "TRANSITION_PAUSE_CH15",
+          "chapter_id": "chapter_15",
+          "evidence": "snapshots/cycle_03/FINAL_NOVEL.md:4069; snapshots/cycle_03/FINAL_NOVEL.md:4089; snapshots/cycle_03/FINAL_NOVEL.md:4249",
+          "problem": "'Shift' appears three times describing weight redistribution: 'He shifts and sucks air' (4069), 'The next shift of his weight' (4089), 'the kneeling enforcer shifts his weight' (4249). All three describe the same physical action in the same word.",
+          "rewrite_direction": "At snapshots/cycle_03/FINAL_NOVEL.md:4069, replace 'He shifts' with a specific Marcus detail: 'He moves' or 'He tries to turn.' At :4249, replace 'shifts his weight' with 'leans harder' or 'presses down.' Keep :4089 ('The next shift of his weight') as the single instance — it reads as the most deliberate usage.",
+          "acceptance_test": "Pass if 'shift' appears no more than once in the chapter. Fail if it appears 3+ times."
+        }
+      ]
+    },
+    {
+      "pattern_id": "DEATH_SCENE_NARRATIVE_FORMULA",
+      "severity": "MEDIUM",
+      "global_problem": "Nearly every death in the novel follows the same five-beat narrative sequence: (1) physical action or blow, (2) breathing difficulty or mouth movement, (3) hand response (gripping, reaching, releasing), (4) positional change or settling, (5) silence/stillness plus body observation by Noor. Individual scenes are physically specific and unsanitized, but the repeating structure becomes predictable by mid-book, reducing the cumulative horror impact. A reader who has encountered this sequence ten times will anticipate the next death's narrative shape before it arrives.",
+      "affected_chapters": ["chapter_04", "chapter_07", "chapter_12", "chapter_15"],
+      "global_rewrite_principles": "Vary the narrative architecture of death scenes. Options include: rendering a death entirely through sound; rendering it through another character's involuntary physical response rather than the victim's; beginning with the aftermath and withholding the action; compressing a death to a single sentence after a long buildup; omitting one or more of the five beats and letting absence carry weight. The physical specificity should remain — the variation needed is structural, not in the level of detail.",
+      "chapter_hits": [
+        {
+          "finding_id": "DEATH_FORMULA_CH04",
+          "chapter_id": "chapter_04",
+          "evidence": "snapshots/cycle_03/FINAL_NOVEL.md:995-1019; snapshots/cycle_03/FINAL_NOVEL.md:1057-1073",
+          "problem": "Two deaths (Yuki stabbed, Ben struck with pipe) in the same chapter follow the same five-beat structure: wound → breath/mouth → hand/body response → settling → observation. Encountering the identical narrative shape twice within one chapter makes the formula visible.",
+          "rewrite_direction": "At snapshots/cycle_03/FINAL_NOVEL.md:1057-1073 (Ben's death), restructure the rendering. Options: begin with the sound of the pipe strike from Noor's position before she sees the body; render Ben's death through Marcus's or another witness's physical response (shaking, backing away, vomiting) rather than through Ben's body; compress the death to two beats and let the speed itself be the horror. Yuki's death (995-1019) can retain its current structure as the chapter's primary death scene.",
+          "acceptance_test": "Pass if the two death scenes use materially different narrative structures — different opening beats, different focal characters or senses, different element sequences. Fail if both deaths progress through the same five-beat pattern in the same order."
+        },
+        {
+          "finding_id": "DEATH_FORMULA_CH07",
+          "chapter_id": "chapter_07",
+          "evidence": "snapshots/cycle_03/FINAL_NOVEL.md:1848-1902; snapshots/cycle_03/FINAL_NOVEL.md:1862-1868",
+          "problem": "Two deaths (Andrei beaten with fire extinguisher, Dev thrown down stairs) follow the same arc: violent action → physical detail → body observation. Dev's death is already partially off-stage (Noor sees the body, not the push), but the aftermath description still resolves into the same 'position + eyes + stillness' template.",
+          "rewrite_direction": "At snapshots/cycle_03/FINAL_NOVEL.md:1862-1868 (Dev), lean fully into the off-stage rendering. Options: render the death only through the sound that reaches Noor — impact, a single exhale, then nothing; render it through the reactions of people in the corridor who hear it; describe only what Noor refuses to look at. The body-observation template ('Folded, not fallen... His head is turned... His eyes are open') echoes too many prior deaths.",
+          "acceptance_test": "Pass if Dev's death uses a fundamentally different rendering approach from Andrei's — different primary sense, different focal perspective, or deliberate incompleteness. Fail if both deaths resolve into body-observation description."
+        },
+        {
+          "finding_id": "DEATH_FORMULA_CH12",
+          "chapter_id": "chapter_12",
+          "evidence": "snapshots/cycle_03/FINAL_NOVEL.md:3312-3357",
+          "problem": "Three deaths (James, Viktor, Helen) in the failed raid sequence each follow the blow-failure-stillness progression. When three deaths cluster this tightly, the formula is most visible. The chaos of a failed raid should produce chaotic narrative structure, not three orderly death sequences.",
+          "rewrite_direction": "At snapshots/cycle_03/FINAL_NOVEL.md:3312-3357, radically differentiate the three deaths. Options: render one in a single compressed sentence; render another entirely through Noor's physical state (tunnel vision, ringing ears, unable to process what she sees); render the third through absence — someone who was beside her is no longer there, and she pieces it together from the blood on the wall. The raid's violence should overwhelm Noor's capacity to observe cleanly.",
+          "acceptance_test": "Pass if no two of the three deaths use the same narrative sequence and at least one death is rendered through a non-standard approach (sound only, absence, compression, witness reaction). Fail if the reader can predict the rendering pattern by the second death."
+        },
+        {
+          "finding_id": "DEATH_FORMULA_CH15",
+          "chapter_id": "chapter_15",
+          "evidence": "snapshots/cycle_03/FINAL_NOVEL.md:3995-3997; snapshots/cycle_03/FINAL_NOVEL.md:4069-4185",
+          "problem": "Multiple deaths in this chapter (Tomas's neck snapped, stairwell blanket fight, Marcus's organ failure) arrive after the reader has encountered the five-beat death structure 15+ times. Marcus's death from organ failure is already structurally different (slow medical decline, not violence) — this variation is effective. But Tomas's death (3995-3997) and the stairwell deaths follow the established template.",
+          "rewrite_direction": "At snapshots/cycle_03/FINAL_NOVEL.md:3995-3997 (Tomas's death), the current rendering is effective in its speed but still resolves into the mouth-stillness template ('mouth open around the bite he never swallowed'). Consider rendering the moment purely through the sound and the reaction of others at the table rather than through Tomas's body. For stairwell deaths, use at least one non-standard approach — a death described only by what Noor hears from another floor, or a body discovered without the death being shown.",
+          "acceptance_test": "Pass if the violent deaths in this chapter use at least two materially different rendering approaches and at least one avoids the standard body-observation template. Fail if all deaths use the same blow-mouth-stillness progression."
+        }
+      ]
+    }
+  ]
+}

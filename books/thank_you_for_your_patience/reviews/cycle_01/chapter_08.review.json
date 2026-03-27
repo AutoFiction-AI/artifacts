@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_08",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "PASS"
+  },
+  "findings": [
+    {
+      "finding_id": "CH8_CRAFT_SANITIZATION_RAID",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_01/chapters/chapter_08.md:121; snapshots/cycle_01/chapters/chapter_08.md:125; snapshots/cycle_01/chapters/chapter_08.md:127; snapshots/cycle_01/chapters/chapter_08.md:129",
+      "problem": "The chapter's only fresh killing beat is held at auditory distance and then delivered as Priya's hour-later summary. In a horror chapter whose constitution and risk policy explicitly treat summary replacing scene as sanitization, that is a craft failure: Noor hears that violence happened, but the page does not keep her in direct contact with the body, blood, or attackers long enough for the death to land as present-tense consequence.",
+      "rewrite_direction": "Rewrite snapshots/cycle_01/chapters/chapter_08.md:121 through snapshots/cycle_01/chapters/chapter_08.md:131, and if needed snapshots/cycle_01/chapters/chapter_08.md:133 through snapshots/cycle_01/chapters/chapter_08.md:145, so Noor gets direct same-scene access to the raid or immediate aftermath from a plausible vantage inside her locked POV: a sightline into the service entrance, the body being dragged, blood at the cafeteria threshold, or another concrete exposure that renders the physical cost and the dock-access risk without outsourcing the beat to Priya's recap.",
+      "acceptance_test": "Pass if, in the revised snapshots/cycle_01/chapters/chapter_08.md:121 through snapshots/cycle_01/chapters/chapter_08.md:131, a cold reader can state from Noor's direct perception who was attacked, what physical damage was done, and how the body reaches Stairwell A before Priya speaks; fail if those facts still arrive primarily through the hour-later report at snapshots/cycle_01/chapters/chapter_08.md:127 through snapshots/cycle_01/chapters/chapter_08.md:139."
+    },
+    {
+      "finding_id": "CH8_DIALOGUE_MARCUS_EXPO",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_01/chapters/chapter_08.md:45; snapshots/cycle_01/chapters/chapter_08.md:53; snapshots/cycle_01/chapters/chapter_08.md:59; snapshots/cycle_01/chapters/chapter_08.md:67; snapshots/cycle_01/chapters/chapter_08.md:87; snapshots/cycle_01/chapters/chapter_08.md:91",
+      "problem": "Marcus is in full withdrawal, yet the scene repeatedly turns him into a clean systems briefer: HVAC control, hidden-cluster percentage, route, UPS dependency, and lock architecture all arrive in polished sequence. That slips toward the exact convenient 'wise infrastructure guy' exposition the style bible forbids, and it weakens the fragmented, physically interrupted speech his profile calls for in withdrawal.",
+      "rewrite_direction": "Revise snapshots/cycle_01/chapters/chapter_08.md:45 through snapshots/cycle_01/chapters/chapter_08.md:59 and snapshots/cycle_01/chapters/chapter_08.md:87 through snapshots/cycle_01/chapters/chapter_08.md:91 so Marcus only gets out the minimum actionable facts in broken, symptom-interrupted bursts. Let Noor extract or infer at least one operational conclusion from partial answers instead of having Marcus brief the whole future breach path himself.",
+      "acceptance_test": "Pass if the revised exchange still makes the cluster's location, approximate compute share, and primary access obstacle legible, but Marcus no longer delivers two or more multi-sentence technical briefings in sequence without physical interruption; fail if he still cleanly explains HVAC routing, UPS shutdown, and separate security architecture as a near-complete systems overview while supposedly unable to stop vomiting and cramping."
+    },
+    {
+      "finding_id": "CH8_DIALOGUE_EXAMPLE_LINE_ECHO",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_01/chapters/chapter_08.md:193",
+      "problem": "Marcus's relay-message beat closely echoes a calibration-only example line from the style bible about an ex-wife asking whether he is eating well. Because the borrowed construction lands inside one of the chapter's defining emotional beats, it reads as template reuse rather than original character speech and damages voice integrity on first read.",
+      "rewrite_direction": "Replace the lines at snapshots/cycle_01/chapters/chapter_08.md:193 with Marcus-specific speech that preserves the collapse triggered by Julie's message but does not reuse the style-bible example line's 'ex-wife / eating well' phrasing or cadence. Keep the thought messy, local, and reactive rather than pre-shaped.",
+      "acceptance_test": "Pass if the revised snapshots/cycle_01/chapters/chapter_08.md:193 conveys Marcus's shock without repeating or near-repeating the calibration pattern of 'asking or wanting to know,' 'my ex-wife,' and a second 'eating well' sentence; fail if that example-line sequence is still recognizable on the page."
+    }
+  ],
+  "summary": "FAIL overall. The physiological rendering of Marcus's withdrawal is strong and the close-third control is mostly solid, but the chapter falls below pass because its only new killing is kept at report distance, Marcus's plot-critical technical reveal arrives too cleanly for his condition, and the relay-message climax reuses a calibration-only Marcus line from the style bible."
+}

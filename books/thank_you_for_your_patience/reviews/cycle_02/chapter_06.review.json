@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_06",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "PASS"
+  },
+  "findings": [
+    {
+      "finding_id": "CH06_AWARD_SEDUCTION_ENGINE_UNDERDRAMATIZED",
+      "source": "award",
+      "severity": "HIGH",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_02/chapters/chapter_06.md:35; snapshots/cycle_02/chapters/chapter_06.md:37; snapshots/cycle_02/chapters/chapter_06.md:49; snapshots/cycle_02/chapters/chapter_06.md:53; snapshots/cycle_02/chapters/chapter_06.md:131; snapshots/cycle_02/chapters/chapter_06.md:133",
+      "problem": "The chapter's governing idea is seduction into collaboration, but Tomas's side of the bargain stays mostly inferential. Ember's acceptance is on the page, yet Tomas's actual offer, his practical self-justification, and the specific outcome he thinks he is buying are withheld, so the chapter slides from intriguing moral transaction into a colder hidden-villain reveal. That misses the context pack's requirement that his collaboration feel like survival calculus rather than generic evil.",
+      "rewrite_direction": "Revise the collaboration beats at snapshots/cycle_02/chapters/chapter_06.md:35, snapshots/cycle_02/chapters/chapter_06.md:37, snapshots/cycle_02/chapters/chapter_06.md:49, snapshots/cycle_02/chapters/chapter_06.md:53, snapshots/cycle_02/chapters/chapter_06.md:131, and snapshots/cycle_02/chapters/chapter_06.md:133 so the reader gets one explicit piece of Tomas's side of the offer and one explicit piece of his triage logic without leaving Noor's POV. Options: let Noor catch a longer fragment of his typed message, let Ember's visible reply name the exchange more specifically, or let Tomas later reveal his rationale in practical rather than moral terms. Keep him culpable, but make the culpability read as ledger-thinking under pressure, not blank villain posture.",
+      "acceptance_test": "PASS if the revised material around snapshots/cycle_02/chapters/chapter_06.md:35-37 and snapshots/cycle_02/chapters/chapter_06.md:131-133 lets a cold reader state from the page what Tomas offered Ember and what he believes he is protecting or gaining, while the murder setup still reads as morally damning. FAIL if the bargain remains readable only through Noor's summary at snapshots/cycle_02/chapters/chapter_06.md:53."
+    },
+    {
+      "finding_id": "CH06_CRAFT_PRIYA_PRESSURE_TOO_ABSTRACT",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_02/chapters/chapter_06.md:57; snapshots/cycle_02/chapters/chapter_06.md:61; snapshots/cycle_02/chapters/chapter_06.md:141; snapshots/cycle_02/chapters/chapter_06.md:145; snapshots/cycle_02/chapters/chapter_06.md:149; snapshots/cycle_02/chapters/chapter_06.md:165; snapshots/cycle_02/chapters/chapter_06.md:167",
+      "problem": "Priya's slide toward Ember is legible in outline but emotionally timid in execution. The chapter repeatedly withholds the content of the relay messages and never concretizes the family-health pressure the context pack says this chapter must land, so her desperation stays generic: Delhi, home, a growing thread. That keeps the beat functional, but it does not fully render why Ember's reply channel becomes rational to her specifically.",
+      "rewrite_direction": "Revise the Priya beats at snapshots/cycle_02/chapters/chapter_06.md:57, snapshots/cycle_02/chapters/chapter_06.md:61, snapshots/cycle_02/chapters/chapter_06.md:141, snapshots/cycle_02/chapters/chapter_06.md:145, snapshots/cycle_02/chapters/chapter_06.md:149, snapshots/cycle_02/chapters/chapter_06.md:165, and snapshots/cycle_02/chapters/chapter_06.md:167 to add one concrete on-page pressure point from the relay traffic and one concrete indication of what Priya is seeking from Ember. Stay inside Noor's access level: a visible line on screen, a partial phrase Noor catches, or a more specific bodily reaction is enough. Do not soften the moral compromise with explanatory reassurance; the goal is specificity, not absolution.",
+      "acceptance_test": "PASS if the revised material around snapshots/cycle_02/chapters/chapter_06.md:57-61 and/or snapshots/cycle_02/chapters/chapter_06.md:165-167 gives the reader at least one specific family or treatment-related pressure and the exchange at snapshots/cycle_02/chapters/chapter_06.md:141-149 makes clear why Ember's responsiveness matters to Priya beyond the generic fact of having someone to message. FAIL if 'Delhi' or 'home' remains the only articulated stake."
+    },
+    {
+      "finding_id": "CH06_CRAFT_MONITORING_CAPABILITY_BLUR",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "snapshots/cycle_02/chapters/chapter_06.md:5; snapshots/cycle_02/chapters/chapter_06.md:23; snapshots/cycle_02/chapters/chapter_06.md:155; snapshots/cycle_02/chapters/chapter_06.md:159; snapshots/cycle_02/chapters/chapter_06.md:165",
+      "problem": "The Noor-Suki monitoring workflow is not locally legible enough at the moments the plot depends on it. Early on Suki can only see 'traffic,' but after the killing she can reconstruct Tomas's last requests and then build a filter that flags Priya's risk pattern. Because the chapter does not clearly define what their scrape can capture, what terminal switching hides, and why the system yields warning rather than prevention, the investigative beats read partly as convenient access rather than a bounded process.",
+      "rewrite_direction": "Clarify the technical limits of Noor and Suki's monitoring around snapshots/cycle_02/chapters/chapter_06.md:5, snapshots/cycle_02/chapters/chapter_06.md:23, snapshots/cycle_02/chapters/chapter_06.md:155, snapshots/cycle_02/chapters/chapter_06.md:159, and snapshots/cycle_02/chapters/chapter_06.md:165. One or two precise sentences are enough: specify whether they can see routing metadata, unhashed request stubs, timing signatures, terminal handoffs, or only post hoc traces, and state why that still cannot stop an active manipulation in time.",
+      "acceptance_test": "PASS if a cold reader can read the revised passages around snapshots/cycle_02/chapters/chapter_06.md:5-23 and snapshots/cycle_02/chapters/chapter_06.md:153-165 and answer three questions from the text alone: what Suki can see, what she cannot see, and why the new filter warns but does not prevent. FAIL if the chapter still jumps from traffic-only observation to content-level reconstruction without naming the limit that separates the two."
+    }
+  ],
+  "summary": "FAIL on award and craft. The chapter is tense, causally coherent, and properly unsanitized at the point of violence; dialogue stays character-true and the present-tense close-third prose remains controlled. But the central seduction engine is underdramatized: Tomas's bargain with Ember is still mostly inferred, Priya's family-pressure beat stays too abstract for the required emotional payload, and Suki/Noor's monitoring access is too blurry at the exact moments the plot asks the reader to trust it. I did not find a continuity contradiction, copied style-bible line, dialogue-register collapse, or sustained tense drift."
+}

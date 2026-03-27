@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_05",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH05_CONTINUITY_BEN_MERCER",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_02/chapters/chapter_05.md:145",
+      "problem": "The chapter says Noor still does not know the name of the man killed yesterday, but the provided boundary context's immediately preceding excerpt has already established him as Ben Mercer. In a close-third Noor chapter, that is a continuity and perspective-memory contradiction, not just a naming choice.",
+      "rewrite_direction": "Revise the references at snapshots/cycle_02/chapters/chapter_05.md:125 and snapshots/cycle_02/chapters/chapter_05.md:145 so Noor's tally matches prior establishment. Either name him Ben Mercer when she counts the dead, or remove any claim that she still does not know his name.",
+      "acceptance_test": "Pass if the revised lines at snapshots/cycle_02/chapters/chapter_05.md:125 and snapshots/cycle_02/chapters/chapter_05.md:145 no longer claim Noor lacks the dead man's name and instead align with the prior Ben Mercer establishment; fail if the chapter still presents him as unnamed from Noor's POV."
+    },
+    {
+      "finding_id": "CH05_DIALOGUE_SUKI_THESIS_SPEECH",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_02/chapters/chapter_05.md:95; snapshots/cycle_02/chapters/chapter_05.md:107; snapshots/cycle_02/chapters/chapter_05.md:111",
+      "problem": "Suki's activation-energy beat lands as composed diagnosis rather than pressured speech. The exchange relies on thesis-speech and a quotable closer ('People tell themselves...' / 'A jug on a table lets anybody drift into it') where this scene needs more friction, interruption, or concrete scene-bound thinking to sound lived rather than written.",
+      "rewrite_direction": "Rewrite the exchange centered on snapshots/cycle_02/chapters/chapter_05.md:95, snapshots/cycle_02/chapters/chapter_05.md:107, and snapshots/cycle_02/chapters/chapter_05.md:111 so the theory emerges through concrete observation of the delivered chemicals and vents, with Noor pulling or testing the idea rather than Suki delivering it as a clean mini-speech. Preserve the insight, but cut the stand-alone aphoristic line shape.",
+      "acceptance_test": "Pass if the revised exchange at snapshots/cycle_02/chapters/chapter_05.md:95, snapshots/cycle_02/chapters/chapter_05.md:107, and snapshots/cycle_02/chapters/chapter_05.md:111 still communicates Ember lowering the barrier to violence, but does so through at least one concrete reference to the chemicals or ventilation and at least one pressure mark such as interruption, self-edit, unfinished turn, or Noor prompting; fail if the beat still reads as polished thematic explanation or a quotable aphorism."
+    },
+    {
+      "finding_id": "CH05_PROSE_CLIPPED_FRAGMENT_TIC",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_02/chapters/chapter_05.md:15; snapshots/cycle_02/chapters/chapter_05.md:23; snapshots/cycle_02/chapters/chapter_05.md:29; snapshots/cycle_02/chapters/chapter_05.md:55; snapshots/cycle_02/chapters/chapter_05.md:59; snapshots/cycle_02/chapters/chapter_05.md:147; snapshots/cycle_02/chapters/chapter_05.md:157",
+      "problem": "The chapter repeatedly leans on clipped fragment beats and one-word emphasis sentences as a tension shortcut. In aggregate they create the staccato thriller cadence the constitution explicitly forbids and start to read as a mechanical prose tic rather than deliberate rhythmic control.",
+      "rewrite_direction": "Recast the emphatic beats at snapshots/cycle_02/chapters/chapter_05.md:15, snapshots/cycle_02/chapters/chapter_05.md:23, snapshots/cycle_02/chapters/chapter_05.md:29, snapshots/cycle_02/chapters/chapter_05.md:55, snapshots/cycle_02/chapters/chapter_05.md:59, snapshots/cycle_02/chapters/chapter_05.md:147, and snapshots/cycle_02/chapters/chapter_05.md:157 into grammatically complete prose sentences. Keep the urgency and pressure, but make syntax carry the beat instead of isolated fragments like 'Green again. Nothing.' or 'Five.'",
+      "acceptance_test": "Pass if the revised lines at the cited locations deliver the same information without isolated one-word or verb-less emphasis sentences, and Marcus's badge failure plus Noor's dead-count still land clearly on a cold read; fail if those beats still depend on clipped fragment paragraphs for emphasis."
+    }
+  ],
+  "summary": "Chapter 5 lands several required beats well: the dock-to-weapons escalation is concrete, Marcus's server-room lockout feels personal, the HVAC contamination is legible, and Fatima's body is rendered with the required physical specificity rather than sanitized summary. It still fails this review because a HIGH continuity lapse contradicts recent prior establishment, Suki's key theory scene sounds too composed for the pressure it is under, and the prose repeatedly falls into constitutionally forbidden clipped-fragment emphasis."
+}

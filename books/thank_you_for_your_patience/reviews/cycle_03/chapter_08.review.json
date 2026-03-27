@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_08",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH08_CRAFT_ROUTE_CONTINUITY",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_03/chapters/chapter_08.md:103; snapshots/cycle_03/chapters/chapter_08.md:109; snapshots/cycle_03/chapters/chapter_08.md:113; snapshots/cycle_03/chapters/chapter_08.md:123; snapshots/cycle_03/chapters/chapter_08.md:141; snapshots/cycle_03/chapters/chapter_08.md:143; snapshots/cycle_03/chapters/chapter_08.md:199",
+      "problem": "The chapter's operative route to the secondary cluster is rendered as a cafeteria service-hall path to a yellow-reader mechanical door, but the provided continuity sheet canonizes Marcus's chapter-08 sketch as the grate route under the loading dock. Because later breach logic depends on this geography, the chapter currently leaves the canonical access path unstable instead of telling the reader whether the door route, the grate route, or both are in play.",
+      "rewrite_direction": "Revise the route-sketch beat at snapshots/cycle_03/chapters/chapter_08.md:103; snapshots/cycle_03/chapters/chapter_08.md:109; snapshots/cycle_03/chapters/chapter_08.md:113; snapshots/cycle_03/chapters/chapter_08.md:123 and the later confirmation beats at snapshots/cycle_03/chapters/chapter_08.md:141; snapshots/cycle_03/chapters/chapter_08.md:143; snapshots/cycle_03/chapters/chapter_08.md:199 so the page matches one clear canon. Either make Marcus explicitly sketch the grate-and-ladder approach from the dock, or explicitly state that the cafeteria mechanical door and the west-side grate are separate access options and identify which one Noor is validating here. Keep Marcus's uncertainty about the interior layout/code if needed, but remove uncertainty about the approach itself.",
+      "acceptance_test": "Pass if a cold reader can read the revised route material at snapshots/cycle_03/chapters/chapter_08.md:103; snapshots/cycle_03/chapters/chapter_08.md:109; snapshots/cycle_03/chapters/chapter_08.md:113; snapshots/cycle_03/chapters/chapter_08.md:123; snapshots/cycle_03/chapters/chapter_08.md:141; snapshots/cycle_03/chapters/chapter_08.md:143; snapshots/cycle_03/chapters/chapter_08.md:199 and answer, without outside inference, which physical access path Marcus mapped and which path Noor visually confirms. Fail if the revised chapter still allows the reader to mistake the cafeteria door for the only route when the grate route is supposed to matter, or vice versa."
+    },
+    {
+      "finding_id": "CH08_DIALOGUE_COMPOSED_DIAGNOSIS",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_03/chapters/chapter_08.md:173; snapshots/cycle_03/chapters/chapter_08.md:191; snapshots/cycle_03/chapters/chapter_08.md:253",
+      "problem": "Two pressured exchanges slip into composed diagnosis instead of sounding spoken-through. Priya's explanation of how Lena's rule now works and Marcus's summary of what the sprint looks like from outside are both clean and legible, but the balance and abstraction make them read like chapter-theme statements rather than fearful, character-true speech under immediate strain.",
+      "rewrite_direction": "Roughen the explanatory lines at snapshots/cycle_03/chapters/chapter_08.md:173; snapshots/cycle_03/chapters/chapter_08.md:191; snapshots/cycle_03/chapters/chapter_08.md:253 without changing the information. Let Priya keep her formal, cautious register, but make her sound like a witness choosing words carefully rather than delivering a polished maxim. Let Marcus's point about the outside world arrive through his family specifics, false starts, or physical interruption so the thought feels dragged out of him instead of packaged as a neat thesis.",
+      "acceptance_test": "Pass if the revised lines at snapshots/cycle_03/chapters/chapter_08.md:173; snapshots/cycle_03/chapters/chapter_08.md:191; snapshots/cycle_03/chapters/chapter_08.md:253 still communicate the same facts but no longer read like standalone commentary on the whole book: Priya must retain her deferential/formal idiolect, Marcus must retain his withdrawal-fragmented state, and each exchange must include at least one hesitation, qualification, or concrete anchor. Fail if those lines can still be lifted out as balanced thesis sentences with little loss."
+    },
+    {
+      "finding_id": "CH08_PROSE_SOFT_CLOSE",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "snapshots/cycle_03/chapters/chapter_08.md:207; snapshots/cycle_03/chapters/chapter_08.md:213; snapshots/cycle_03/chapters/chapter_08.md:253; snapshots/cycle_03/chapters/chapter_08.md:259; snapshots/cycle_03/chapters/chapter_08.md:261; snapshots/cycle_03/chapters/chapter_08.md:263; snapshots/cycle_03/chapters/chapter_08.md:265",
+      "problem": "The relay-message contrast lands before the chapter ends, then the closing movement keeps translating the same inside/outside dissonance and finally exits on Noor's garden/tomato thought. That last sentence is calmer and more consoling than the chapter's live pressure, which softens the finish instead of leaving the reader on the unresolved pressure the style bible asks the chapter to preserve.",
+      "rewrite_direction": "Rework the closing run after snapshots/cycle_03/chapters/chapter_08.md:253, especially snapshots/cycle_03/chapters/chapter_08.md:259; snapshots/cycle_03/chapters/chapter_08.md:261; snapshots/cycle_03/chapters/chapter_08.md:263; snapshots/cycle_03/chapters/chapter_08.md:265. Keep the family-message dissonance, but stop re-proving it and let the final sentence land on an active in-building pressure: the route through Lena, the bodies in Stairwell A, the cruelty of CLOSE/ARCHIVE, or Noor's next tactical recognition. Do not let the chapter's last line be a neutral status report about the garden unless it now carries fresh threat or decision weight.",
+      "acceptance_test": "Pass if the revised ending at snapshots/cycle_03/chapters/chapter_08.md:259; snapshots/cycle_03/chapters/chapter_08.md:261; snapshots/cycle_03/chapters/chapter_08.md:263; snapshots/cycle_03/chapters/chapter_08.md:265 ends on pressure that still exists inside the building and the final sentence is not merely a soothing update about Noor's mother's tomatoes. Fail if the chapter still closes by repeating the garden image without adding a new threat, cost, or choice."
+    }
+  ],
+  "summary": "Fail. The chapter is strong on sensory specificity, Noor-locked scene control, and unsanitized physical consequence, but it does not clear pass-level review because a HIGH continuity problem destabilizes the sublevel access geometry, the closing passage over-translates a beat that has already landed, and two pressure scenes slip into thesis-like dialogue instead of fully lived speech."
+}

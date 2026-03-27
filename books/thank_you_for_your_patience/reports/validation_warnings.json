@@ -1,0 +1,56 @@
+{
+  "validation_mode": "lenient",
+  "warning_count": 5,
+  "warnings": [
+    {
+      "action": "continued_after_parallel_review_failure",
+      "artifact": "reviews/cycle_01",
+      "chapter_id": null,
+      "cycle": 1,
+      "reason": "review_cycle_01 phase had job failures:\ncycle_01_review_chapter_11: codex exec stalled (no JSONL output for 1800s, killed after 1840s wall time)",
+      "stage": "chapter_review",
+      "timestamp_utc": "2026-03-26T15:07:08Z",
+      "validation_mode": "lenient"
+    },
+    {
+      "action": "wrote_fallback_chapter_review",
+      "artifact": "reviews/cycle_01/chapter_11.review.json",
+      "chapter_id": "chapter_11",
+      "cycle": 1,
+      "reason": "missing JSON file: reviews/cycle_01/chapter_11.review.json",
+      "stage": "chapter_review",
+      "timestamp_utc": "2026-03-26T15:07:08Z",
+      "validation_mode": "lenient"
+    },
+    {
+      "action": "continued_after_parallel_review_failure",
+      "artifact": "reviews/cycle_02",
+      "chapter_id": null,
+      "cycle": 2,
+      "reason": "review_cycle_02 phase had job failures:\ncycle_02_review_chapter_07: codex exec stalled (no JSONL output for 1800s, killed after 1940s wall time)",
+      "stage": "chapter_review",
+      "timestamp_utc": "2026-03-26T19:37:09Z",
+      "validation_mode": "lenient"
+    },
+    {
+      "action": "wrote_fallback_chapter_review",
+      "artifact": "reviews/cycle_02/chapter_07.review.json",
+      "chapter_id": "chapter_07",
+      "cycle": 2,
+      "reason": "missing JSON file: reviews/cycle_02/chapter_07.review.json",
+      "stage": "chapter_review",
+      "timestamp_utc": "2026-03-26T19:37:09Z",
+      "validation_mode": "lenient"
+    },
+    {
+      "action": "continued_after_parallel_revision_failure_p1_structural_craft",
+      "artifact": "revisions/cycle_03",
+      "chapter_id": null,
+      "cycle": 3,
+      "reason": "revise_cycle_03_p1_structural_craft phase had job failures:\ncycle_03_revise_p1_structural_craft_chapter_07: codex exec stalled (no JSONL output for 1800s, killed after 1830s wall time)",
+      "stage": "chapter_revision",
+      "timestamp_utc": "2026-03-26T23:22:38Z",
+      "validation_mode": "lenient"
+    }
+  ]
+}

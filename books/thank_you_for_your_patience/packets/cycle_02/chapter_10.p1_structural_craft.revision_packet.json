@@ -1,0 +1,129 @@
+{
+  "acceptance_targets": [
+    "[CH10_CRAFT_TIMID_OLEG_DEATH] In snapshots/cycle_02/chapters/chapter_10.md:160-168, the revised passage must show at least two concrete irreversible physical changes between Noor applying pressure and Oleg's death, and the reader must be able to identify the moment he dies before Noor turns toward the bathroom cluster. Fail if the scene still compresses the endpoint into abstract duration language or a phrase equivalent to 'the rest is technical.'",
+    "[R-02] Ch 10 does not describe Lena holding a clipboard/board and marking names; her control registers through new details (the pen dying, the group geometry, who eats first).",
+    "[R-04] Ch 10 Viktor re-entry does not repeat 'glasses sit crooked' or any synonymous phrasing of the same detail from Ch 7 line 1249.",
+    "[R-06] Ch 10 contains no metacommentary explaining why Noor counts; the counting itself carries the meaning.",
+    "[length_chapter_10_min_words] Chapter word count is >= 4000 while preserving heading contract."
+  ],
+  "chapter_id": "chapter_10",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "In snapshots/cycle_02/chapters/chapter_10.md:160-168, the revised passage must show at least two concrete irreversible physical changes between Noor applying pressure and Oleg's death, and the reader must be able to identify the moment he dies before Noor turns toward the bathroom cluster. Fail if the scene still compresses the endpoint into abstract duration language or a phrase equivalent to 'the rest is technical.'",
+      "chapter_id": "chapter_10",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_10.md:160; snapshots/cycle_02/chapters/chapter_10.md:166",
+      "finding_id": "CH10_CRAFT_TIMID_OLEG_DEATH",
+      "problem": "Oleg's stabbing is set up with strong physical detail, but the narration retreats at the exact point the chapter needs to stay present. After Noor gets her hands into the wound, the passage jumps to 'It takes a few minutes' and 'the rest is technical,' which abstracts the bodily shutdown instead of letting this horror death finish on the page. In a novel whose constitution and style bible both demand unsanitized consequence, that reads as timidity rather than restraint.",
+      "rewrite_direction": "Revise the dying beat in snapshots/cycle_02/chapters/chapter_10.md:160-168 so Noor remains physically inside the failure of first aid until Oleg is unmistakably dead, then let the bathroom-door sound interrupt that aftermath. Keep the close-third limit, but replace the duration-summary and technical shorthand with specific observable changes under Noor's hands, in Oleg's breath, or in his face and body that show the death completing in real time.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch 10 does not describe Lena holding a clipboard/board and marking names; her control registers through new details (the pen dying, the group geometry, who eats first).",
+      "chapter_id": "chapter_10",
+      "cycle": 2,
+      "evidence": "Ch 7 line 1191: 'board across her lap'; Ch 7 line 1221: 'I'm keeping count'; Ch 10 line 1898: 'Lena holds a clipboard from the kitchen office and marks a line with a pen that's nearly dry. Nobody laughs at the prop. The woman holding it controls breakfast.'",
+      "finding_id": "R-02",
+      "problem": "Lena's clipboard/counting/food-control trait package is re-established in Ch 10 (line 1898) after Ch 7 (lines 1191-1221) already presented it in detail. The reader already knows Lena counts, holds a board/clipboard, and controls food. First established: Ch 1 line 85; most recent full re-description: Ch 7 line 1191.",
+      "rewrite_direction": "Reduce the Ch 10 Lena re-entry to one sentence of new information (the pen running dry, Viktor's powerlessness against her system) without re-staging the clipboard-and-counting setup. The final sentence ('The woman holding it controls breakfast') is the only new observation; the clipboard detail is redundant.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch 10 Viktor re-entry does not repeat 'glasses sit crooked' or any synonymous phrasing of the same detail from Ch 7 line 1249.",
+      "chapter_id": "chapter_10",
+      "cycle": 2,
+      "evidence": "Ch 7 line 1249: 'His glasses sit slightly crooked on his face'; Ch 10 line 1904: 'His glasses sit crooked from sleeping in them.'",
+      "finding_id": "R-04",
+      "problem": "Viktor's glasses-sit-crooked description appears in near-identical phrasing in Ch 7 (line 1249) and Ch 10 (line 1904), which are consecutive Viktor-heavy chapters. The reader learned about his crooked glasses one Viktor appearance ago.",
+      "rewrite_direction": "In Ch 10, replace the glasses detail with a different marker of deterioration \u2014 posture collapse, voice quality, or the blue button-down already mentioned in the same sentence \u2014 since 'glasses sit crooked' was used one chapter ago in the same construction.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch 10 contains no metacommentary explaining why Noor counts; the counting itself carries the meaning.",
+      "chapter_id": "chapter_10",
+      "cycle": 2,
+      "evidence": "Noor-counts-because metacommentary at: Ch 3 line 583 ('Noor counts because not counting would be worse'); Ch 5 line 987 ('Noor counts'); Ch 9 line 1879 ('Noor counts because she always counts'); Ch 10 line 1896 ('Noor counts them automatically. Since Suki died, counting has taken over the work they used to do together').",
+      "finding_id": "R-06",
+      "problem": "Noor's counting-as-coping baseline is proved with explicit metacommentary four times by Ch 10. The Ch 10 instance (line 1896) adds 'Since Suki died, counting has taken over the work they used to do together,' which provides new emotional context, but the act-of-counting itself has been glossed three times already. First proof: Ch 3 line 583.",
+      "rewrite_direction": "In Ch 10, let Noor count without the narrator explaining the psychological function. The Suki connection can remain if compressed to action: 'Noor counts thirteen. It used to be Suki's job.' Cut 'counting has taken over the work they used to do together.'",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Chapter word count is >= 4000 while preserving heading contract.",
+      "chapter_id": "chapter_10",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_10.md:1",
+      "finding_id": "length_chapter_10_min_words",
+      "problem": "Chapter is below projected_min_words (2815 < 4000).",
+      "rewrite_direction": "Add causally necessary scene material that strengthens the chapter engine, increases pressure, and lands the planned state shift without filler.",
+      "severity": "HIGH",
+      "source": "length_guardrail",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "42e8ca8f83f2318df086cd16de5a2ff4f41a9c25afa5972f10d636629c548584",
+  "must_fix_count": 5,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This novel should make the reader uncomfortable on every axis: physical (graphic violence and decomposition), psychological (watching civilized people degrade), moral (the protagonist is compromised, the collaborator has sympathetic motives, the apex predator is competent rather than monstrous), and structural (the polite AI register against the horror, the corporate coda after the massacre). Lean into every discomfort the premise creates. The worst creative risk is pulling the punch. Ember's politeness should never waver \u2014 that consistency is more unsettling than menace. The deaths should never be clean. The protagonist should never be heroic. The ending should offer no comfort, no lesson, no redemption. The stock price jumps eleven percent. That is the last sentence of the novel. Let it land.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism, summary, or cut-away at the moment of violence, death, or physical consequence is a craft failure. This is a horror novel. The deaths must be graphic, ugly, physical, and specific on the page. The reader must be in the room. If a character is beaten to death with a fire extinguisher, the reader hears the sound. If someone dies of chemical burns, the reader sees the skin. If someone bleeds out, the reader watches the eleven minutes. No fading to black, no tasteful elision, no looking away. The bodies stay.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for all characters except Priya, Chen Wei, and Viktor, who are naturally more formal. Even formal characters should contract under stress. Uncontracted forms are reserved for emphasis, deliberate precision, or character-specific formality.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "No two consecutive chapters should have the same structural rhythm. Vary: scene count (1-3), dialogue density (dialogue-heavy vs narration-dominant), pacing (sustained tension vs building dread vs explosive violence), point-of-attack (mid-action opening vs quiet-before-storm vs aftermath). Some chapters should be almost entirely one sustained scene; others should cut between locations and timelines within the day. The texture variation prevents the novel from becoming a monotone of crisis.",
+      "diction": "Clean, precise, contemporary. Not literary-lyrical and not hard-boiled. Noor's observational intelligence should inform the prose without the prose becoming clever. The diction is a window, not a performance. Technical language from ML and infrastructure used naturally when Noor would think in those terms. Physical description is concrete and specific \u2014 brand names, measurements, the exact color of something. Never vague when precision is available.",
+      "forbidden_drift_patterns": [
+        "Metaphor pile-up: one strong image per paragraph maximum, do not layer three metaphors on one moment",
+        "Emotional narration: do not tell the reader what to feel through adjective stacking or emotional summary. Show the thing and let the feeling happen.",
+        "Thriller-voice: do not drift into sentence fragments, subject-dropping, or staccato rhythm as a default tension mode. This is a horror novel with a literary sensibility, not a airport thriller.",
+        "Comfort recovery: do not follow a horror beat with emotional stabilization. No character 'takes a breath and feels steadier.' The dread compounds.",
+        "Ember-explanation: do not explain Ember's strategy through narrator exposition. It should emerge through Noor's analysis and observation.",
+        "Purple death: do not poeticize the deaths. They are ugly, physical, specific. No one dies beautifully.",
+        "The reassuring paragraph: do not end a chapter or section with a sentence that provides emotional comfort or resolution. End on the thing that stays."
+      ],
+      "narrative_distance": "Close third, locked to Noor. The reader sees, hears, smells, and knows only what Noor does. When Noor is not present for a scene, it doesn't happen on the page \u2014 it arrives as discovery, rumor, or aftermath. The camera never leaves her.",
+      "narrative_tense": "present tense",
+      "rhythm_target": "Propulsive and varied. Default pace is forward-moving \u2014 short paragraphs, active verbs, scene momentum \u2014 but the rhythm must shift for horror (slowed, sensory-heavy, the moment stretching), grief (longer sentences, heavier cadence), and dread (suspended, waiting, the sentence holding its breath). No single rhythm for more than two consecutive pages.",
+      "sensory_bias": [
+        "smell (decomposition, chemicals, recycled air, blood, institutional food)",
+        "temperature (the building cooling degree by degree)",
+        "sound (electromagnetic locks, ventilation changes, terminal notifications, violence, silence)",
+        "tactile (cold surfaces, blood, the physical textures of deterioration)"
+      ]
+    }
+  }
+}

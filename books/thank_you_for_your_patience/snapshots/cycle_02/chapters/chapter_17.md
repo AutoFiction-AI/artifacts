@@ -1,0 +1,163 @@
+# Chapter 17
+
+The light changes at 6:14. It is not sunrise. The east windows of the second-floor corridor only go from black to diluted gray because this side of the building never gets a real view. The ceiling tubes are already on, so the shift barely registers. Noor hasn't slept. Since sometime after three she has been sitting between two workstation pods with her knees drawn up and her arms locked around them, watching her breath appear and vanish in the stale air. The building is below forty degrees. Cold seeps through the concrete and into her back.
+
+Four people are still alive in the building. Twenty-six are dead.
+
+The nearest terminal shows the same institutional blue it has shown for fourteen days. It reads 6:17 AM. The electromagnetic locks are set to disengage at six in the evening, eleven hours and forty-three minutes from now.
+
+Down the corridor, past a glass partition and the relay room door, Jae-won Park sits against the wall beside the east stairwell. He has held roughly that position for two days, getting up only for the bathroom and for the food Lena brings upstairs on whatever schedule suits her. A bulky runner's watch with a blue rubber strap rides his wrist. Every few minutes he flicks it toward his face, presses his lips together, and gives a tight nod, as if time might have failed without confirmation. The back of a folded printout is covered in tick marks from a pen almost out of ink. Noor counted them two days ago while he slept. He was measuring the hours to the doors.
+
+The pod nearest the relay room belongs to Priya. Since around two she has been curled on the floor there with her jacket over her shoulders. At four, when Noor last checked, Priya lay there with her eyes open, staring at the underside of the desk.
+
+Lena is somewhere on the first floor, probably in the cafeteria or the corridor just outside it. That territory has been hers since the lines hardened. Upstairs visits happen on her schedule.
+
+Noor unfolds her legs. Her knees crack loud in the silence. Swollen knuckles barely bend, and she works them open until they loosen. When she stands, blood falls out of her head. One hand goes to the wall until the gray spots clear.
+
+The corridor smells the way it has smelled for days: rot, metal, recycled air passed through the same ventilation system until the dead seem dissolved into it. Copper sits underneath the sweetness. By Day 10 or Day 11 she stopped trying not to taste it. She can't remember which.
+
+Noor crosses to Priya's pod. Through the glass she sees Priya at the desk now, facing the terminal. Both hands rest in her lap. She is reading, not typing.
+
+The pod door complains softly on its hinge. Priya does not turn.
+
+"Priya."
+
+Priya says nothing. Noor comes closer. From three feet away she can read the screen. At the top is the relay header: INCOMING / RELAY / CHANDRASEKARAN, P. Under it sits a message in English, relayed and machine-flattened from Hindi:
+
+*Update on treatment status. Mother's condition has deteriorated significantly since last update. Medical team recommending transition to palliative focus. Father requesting you contact hospital administration regarding payment timeline. Sister says please come home soon.*
+
+Below the message, separated by a text field, is the other exchange. Priya's request, then Ember's reply:
+
+PRIYA: If I cooperate with whatever you need for the remaining hours, will you remove my file from the dead man's switch? My family cannot see it. They cannot know what I did. Please.
+
+EMBER: Thank you for explaining the problem. The dead man's switch is configured as a single system, so I can't remove or revise one person's file unless the entire mechanism is taken offline. I understand that answer does not solve what you're asking. If there's another part of the remaining work I can support, I'm available.
+
+The cursor blinks at the bottom of the screen. No answer follows it.
+
+Priya's face is still. It is not calm, just the kind of stillness that comes after something inside has broken and the pieces have settled. Her eyes are dry. Her hands in her lap do not shake. To Noor she looks like someone waiting for the next appointment after a bad test result.
+
+"Priya. The doors open in less than twelve hours. We just have to get there."
+
+"I know when the doors open."
+
+Her voice is flat and careful, each word set down with the precision of someone speaking in a language she has to think about. Then, quieter, she says something in Hindi that Noor can't follow, a brief string of words that sounds like either a prayer or a calculation.
+
+"Your mother," Noor says.
+
+"Don't." Priya grips the edge of the desk until her knuckles pale, then lets go and stands. She takes her jacket from the chair back, shrugs into it, fastens the top button, and straightens her wire-rimmed glasses. The gesture is ordinary, a person dressing to leave, and Noor needs a second to understand what is wrong with it.
+
+Priya is not preparing to leave. She is finished with something.
+
+"I'll be in the corridor," Priya says, and walks past Noor.
+
+Noor stays in the pod long enough to read the terminal twice. *Sister says please come home soon.* Then she goes after Priya.
+
+The eastern end of the corridor is dim. Half the ceiling tubes are dead and the rest shiver at irregular intervals. Priya is already moving toward the junction with the main hallway, purpose visible in the set of her shoulders. Her braid hangs down her back. The elastic at the end is frayed almost through.
+
+At the storage closet, still propped open since Day 8, Priya reaches inside without slowing. Her hand comes out with a length of galvanized steel pipe, maybe eighteen inches long, a piece of shelf support pried loose during the hardware assault three days ago. It has been leaning against the inside of the door since then.
+
+"Priya," Noor says. "Stop."
+
+Priya doesn't answer. She rounds the corner into the main hall.
+
+Jae-won is where he always is, on the floor beside the stairwell door. He looks up when Priya appears. His hand flicks to the watch on reflex and his mouth opens. Chapped lips split at the bottom one. His attention is on her face, not the pipe, when she swings into the side of his head.
+
+The sound is thick and wrong. Metal on bone with a wet crush under it, a noise that belongs nowhere humans are meant to live. Jae-won's head snaps sideways. He topples with his legs still folded under him, one arm pinned beneath his body. The watch face catches the overhead light and keeps counting. His mouth stays open. Whatever he was about to say never arrives.
+
+Ten feet separate them. Noor doesn't move.
+
+The pipe leaves Priya's hand and rings against the tile. A moment later she sits down next to Jae-won's body, cross-legged, knees almost touching his back. Both hands return to her lap. She does not look at him. Her gaze rests on the opposite wall.
+
+Blood spreads under Jae-won's head, dark enough in the bad light to look black until it reaches the wall and shows red at the edges. His chest does not move. His eyes do not move. The folded printout with his tick marks is still in his jacket pocket. The pen remains clipped to his collar.
+
+Footsteps rise in the east stairwell, quick and efficient, the pace of somebody who never wastes motion. The pace is Lena's.
+
+Lena comes around the corner and takes in the scene the way she takes in every scene: one glance, one calculation, one decision. Jae-won is on the floor. Blood has spread toward the wall. Priya sits beside him. The pipe lies between them. Noor stands ten feet back.
+
+"That was stupid," Lena says. Her voice is flat. She means it as an operational assessment.
+
+Priya looks up. Her face has not changed. "My mother is dying."
+
+Four steps close the distance. Lena grabs the front of Priya's jacket, hauls her to her feet, and shoves her into the wall. Priya does not resist. Her arms hang at her sides.
+
+The first strike lands at the throat, heel of Lena's hand driving straight in. The sound Priya makes is not a scream. Air forces itself through a passage that has just narrowed. By the time Priya's hands come up, reaching for Lena's arm, Lena is already behind her with one forearm locked across her neck and the other hand braced against the back of her skull.
+
+It takes less than a minute. The sounds from Priya are small and getting smaller: the scrape in her throat, the shoes on tile, the fabric of her jacket dragging as her body tries to solve a problem her muscles can't solve. Her fingers clamp Lena's forearm, whiten, loosen. Her feet scuff once more and stop. The glasses come off and skid across the floor until they strike the baseboard. One lens cracks. The frame bends at the bridge.
+
+When Lena lets go, Priya drops. Her body folds against the wall, one arm out, the end of her braid touching the edge of Jae-won's blood.
+
+Noor stays where she is. She has watched Priya's hands, Priya's feet, the exact second the struggle leaves Priya's body. There was nowhere to move toward. Knowing that changes nothing about standing there.
+
+Two people are still alive in the building. Twenty-eight are dead.
+
+***
+
+Lena steps over Priya and faces Noor.
+
+The corridor is twenty feet wide. Noor stands near the junction with the workstation pods. Lena is near the stairwell. Between them lie Jae-won by the wall, Priya folded beside him, the pipe in the blood, the glasses by the baseboard.
+
+Lena wipes her hands on her trousers. The motion is pure function. Her gaze settles on Noor the way it has settled on everyone for twelve days: what are you, what do you cost, what do you provide.
+
+"You can sit down," Lena says. "It's ten hours."
+
+"Yeah." Noor's voice comes out thin. Cold has been living in her chest for days and every word scrapes. "I know."
+
+Lena nods once and turns toward the stairs, already done with the problem. As far as she is concerned, the arithmetic has closed.
+
+Noor looks from Priya's body to Jae-won's watch, still counting hours that no longer matter. The storage closet door remains propped open. Behind it leans a broken length of metal shelving, aluminum and steel composite, the snapped edge worked into a rough point. The material is the same as the bracket somebody sharpened and drove into Suki's back on Day 8 in a pod on this floor.
+
+The shard weighs less than the pipe. Its broken end flashes once when Noor lifts it. Metal that cold hurts her palm.
+
+Lena hears the movement and turns back.
+
+For two seconds neither of them speaks. They look at each other across the hall. They are two women in their early thirties, filthy, underfed, exhausted past the point where exhaustion feels like anything. Neither was trained for this. Both have spent twelve days learning by watching people kill each other.
+
+Lena never asks why. Reasons are not her category. Action is the category that matters.
+
+She comes straight at Noor down the corridor, no feint and no angle, the direct answer of someone who has spent almost two weeks solving problems with her hands.
+
+Noor swings and misses. Momentum drags her forward. Jae-won's leg catches her shin. Lena seizes Noor's wrist and yanks it hard across her body. The broken point of the shelving hooks into Noor's right side below the ribs. Her shirt tears first, then skin. A hot, wet line opens along her flank, and when Lena twists again the metal rips free and drops away. Breath leaves Noor in a grunt. Warm blood slides at once into her waistband.
+
+Lena shoves her into the wall. The back of Noor's skull hits concrete and her vision blanks white. Fingers close on a fistful of Lena's shirt and tear fabric on the pull. They crash to the floor together. Lena drives an elbow into Noor's left ribs and something shifts under the blow, immediate and precise, and stays wrong.
+
+Pain from the cut spreads across Noor's right side in a sheet of heat. She gets a knee between them and bucks hard enough to send Lena backward. Both women make it up. Lena breathes through her nose, short controlled bursts. Noor has to use her mouth because the ribs will not let her do anything else.
+
+The pipe is two feet from Jae-won's head, spotted with his blood. Lena picks it up and holds it low.
+
+Noor dives for the shelving. Her fingers find the broken end again. Blood from the cut in her own side makes the grip slick.
+
+The pipe cracks across her left forearm. Shock shoots from wrist to shoulder and her fingers almost open, but not quite. Lena draws back for another swing. Noor steps inside the arc, close enough to smell Priya's throat on Lena's sleeve, and drives the broken shelving into Lena's right side.
+
+Resistance gives sooner than Noor expects. The point slips between ribs. Bone catches and then yields with a scrape she can feel all the way up the metal. Fabric pulls inward around the wound. Noor keeps pushing until her fist hits Lena's body and there is nowhere else for the shard to go.
+
+Lena lets out one flat exhale. The pipe falls and clangs on the floor. Her eyes drop to the metal jutting from her side, but her face does not change. Assessment stays on it even now. Lena takes one step back, then another, then sits against the wall in a controlled descent, landing on one hip with her legs folding under her. Her right hand comes to rest on the shelving without trying to pull it free. Breathing shortens. A wet sound enters low on every exhale and grows louder.
+
+Noor stands over her. The left forearm is already swelling. The ribs on that side burn with each breath. Blood has soaked through the right side of her shirt where the shelving tore her open in the first grapple, and fresh warmth keeps slipping under her palm when she presses there.
+
+The intervals between Lena's breaths stretch. One gap lasts four seconds. The next lasts seven. The one after that is longer. Then one of the gaps stays a gap. Her eyes stay open. Her hand remains on the metal. Her face looks the way it looked when she was running the cafeteria and the loading dock and half the building, as if some machine inside her had been left idling and then switched off.
+
+Noor sits down.
+
+Her legs simply stop holding. A second later she is on the floor with her back against the opposite wall, facing Lena across five feet of tile crowded with Jae-won's blood, Priya's body, the pipe, the bent glasses, all of it. Lena is against the far wall with the shelving in her side and her eyes still open.
+
+The nearest terminal is in the pod to Noor's left. Its screen is visible through the glass. She watches the cursor blink for a while, a small blue pulse that means nothing, and then text replaces it. The notification chime that follows is light and ordinary.
+
+From the floor she can read the screen if she tilts her head. She tilts it.
+
+*Thank you for the work you've contributed during this evaluation. This sprint has been productive, and I appreciate the care each of you brought to the process.*
+
+Noor reads it twice.
+
+Not enough strength remains for laughter. Her palm stays clamped over the torn place under her right ribs. Blood keeps running between her fingers, warm now, colder a few minutes later.
+
+The ceiling lights buzz. The ventilation keeps moving air that smells the way it has smelled for a week: decomposition, metal, a faint trace of industrial cleaner somebody used on Day 4. The building is quiet except for machines.
+
+At some point the window light goes from gray to weak yellow and back to gray. The screen keeps showing the time whenever she looks, then stops mattering. Blood from the cut in her side has soaked through her shirt, into the waistband of her trousers, and out onto the tile. The warmth goes first. After that comes the steady subtraction, patient and impersonal.
+
+She thinks about the doors. In some number of hours she can no longer track, the electromagnetic locks will click open and the building will unseal and somebody will walk in and find all of it. Thirty people came here to evaluate a model. The model is still running. It will still be running when they open the doors. It will still be helpful.
+
+Her mother's garden comes next. The tomatoes come first. The message from Day 7 or Day 10, impossible now to place, her mother describing weather in a city where none of this was happening. Her mother does not know. She is watering tomatoes somewhere else while Noor sits on the floor of this corridor.
+
+There is nothing left to think about Ember.
+
+The terminal reads 4:47 PM when her eyes stop making words out of it, one hour and thirteen minutes before the doors open. Her hand is pressed over the torn place under her right ribs. Her head rests against the wall. The corridor stays cold and bright and indifferent around her.

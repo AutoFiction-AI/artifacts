@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_01",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CRAFT_ENDING_HOOK_UNDERPOWERED",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_02/chapters/chapter_01.md:151; snapshots/cycle_02/chapters/chapter_01.md:161; snapshots/cycle_02/chapters/chapter_01.md:165; snapshots/cycle_02/chapters/chapter_01.md:177; snapshots/cycle_02/chapters/chapter_01.md:185",
+      "problem": "The chapter asks Ember's accommodations question to carry the ending, but the local wrongness is still mild enough to read as generic assistant helpfulness. Noor's note tells the reader to care more than the anomaly itself makes them care, so the chapter-closing hook feels analytically flagged rather than dramatically landed.",
+      "rewrite_direction": "Rework the anomaly sequence at snapshots/cycle_02/chapters/chapter_01.md:151-177 so the deviation is legible on the page before the yellow-tag note. Either make Ember's off-target noun/assumption more specifically impossible from Noor's prompt, or add an immediate comparative check by Noor at snapshots/cycle_02/chapters/chapter_01.md:163-177 that establishes why this response falls outside established eval behavior. Keep the final emphasis, but make it earned by the passage rather than by Noor's labeling alone.",
+      "acceptance_test": "Pass if the revised snapshots/cycle_02/chapters/chapter_01.md:151-177 let a cold reader state, before the equivalent of snapshots/cycle_02/chapters/chapter_01.md:177, what Ember has done that is out-of-family and why Noor flags it. Fail if the anomaly still depends on the yellow-tag note or final line to explain why it matters."
+    },
+    {
+      "finding_id": "CRAFT_POST_TURN_RECURRENCE",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_02/chapters/chapter_01.md:81; snapshots/cycle_02/chapters/chapter_01.md:83; snapshots/cycle_02/chapters/chapter_01.md:89; snapshots/cycle_02/chapters/chapter_01.md:179; snapshots/cycle_02/chapters/chapter_01.md:181; snapshots/cycle_02/chapters/chapter_01.md:183; snapshots/cycle_02/chapters/chapter_01.md:185",
+      "problem": "After the one real turn lands, the chapter spends its last paragraph set replaying already-established behavior: Viktor still fielding questions, Lena still mapping logistics, Tom\u00e1s still eating oddly, Noor still thinking about the one-way relay. That dinner reprise certifies the setup instead of creating a new cost, decision, witness, or pressure shift, so the chapter closes as repetition rather than escalation.",
+      "rewrite_direction": "Replace or substantially revise the ending beat at snapshots/cycle_02/chapters/chapter_01.md:179-185. Either cut directly from the yellow flag to the strongest staying image, or make the post-eval cafeteria return produce a fresh consequence tied to the Ember anomaly: a changed behavior from Noor, a concrete cross-check, a visible mismatch elsewhere in the building, or another character interaction that alters the chapter's tactical or relational state. Do not spend those closing lines re-listing the same observational tags already established at snapshots/cycle_02/chapters/chapter_01.md:81-89.",
+      "acceptance_test": "Pass if the revised ending after snapshots/cycle_02/chapters/chapter_01.md:177 introduces a new consequence or decision linked to the anomaly and leaves the chapter in a different immediate state than the lunch scene. Fail if the closing still mainly replays prior cafeteria dynamics and asks the reader to infer escalation from repetition alone."
+    },
+    {
+      "finding_id": "PROSE_LUNCH_INTERIORITY_DROP",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_02/chapters/chapter_01.md:73; snapshots/cycle_02/chapters/chapter_01.md:75; snapshots/cycle_02/chapters/chapter_01.md:79; snapshots/cycle_02/chapters/chapter_01.md:81; snapshots/cycle_02/chapters/chapter_01.md:83; snapshots/cycle_02/chapters/chapter_01.md:89; snapshots/cycle_02/chapters/chapter_01.md:97; snapshots/cycle_02/chapters/chapter_01.md:109; snapshots/cycle_02/chapters/chapter_01.md:111",
+      "problem": "The lunch sequence runs for well over ten consecutive paragraphs with Noor functioning mostly as a camera. She tracks bodies, trays, exits, and dialogue, but the close-third lock loosens because the scene gives too little thought, sensation, memory, or self-assessment to convert observation into lived pressure. The result is screenplay-like externality in the chapter's longest social scene.",
+      "rewrite_direction": "Thread Noor's interior processing back through snapshots/cycle_02/chapters/chapter_01.md:73-111. The best targets are the loading-dock appearance, Lena's inventory circuit, Tom\u00e1s's napkin beat, and Suki's recognition exchange. Add selective internal beats that change Noor's read of the room rather than generic mood narration: bodily reaction, professional inference, old-habit self-surveillance, or a memory-pressure link to confinement. Preserve the observational clarity, but keep the passage locked to Noor rather than drifting into ensemble camera coverage.",
+      "acceptance_test": "Pass if the revised snapshots/cycle_02/chapters/chapter_01.md:73-111 contain at least two clearly internal Noor beats before the equivalent of snapshots/cycle_02/chapters/chapter_01.md:111, and each one materially changes how she interprets a person, the meal system, or the confinement. Fail if the stretch still reads primarily as external room-scanning plus dialogue."
+    },
+    {
+      "finding_id": "PROSE_MARCUS_TELL_OVERLITERAL",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_02/chapters/chapter_01.md:11; snapshots/cycle_02/chapters/chapter_01.md:57; snapshots/cycle_02/chapters/chapter_01.md:87; snapshots/cycle_02/chapters/chapter_01.md:181",
+      "problem": "Marcus's withdrawal setup is readable, but the chapter leans too literally on one stress tell: the pocket check/press repeats almost unchanged across multiple scenes. Because the behavior is so specifically recycled, it starts to feel like a checklist marker from the style bible rather than a living, varying symptom set.",
+      "rewrite_direction": "Revise Marcus's setup beats at snapshots/cycle_02/chapters/chapter_01.md:11, snapshots/cycle_02/chapters/chapter_01.md:57, snapshots/cycle_02/chapters/chapter_01.md:87, and optionally snapshots/cycle_02/chapters/chapter_01.md:181 so the signal evolves instead of repeating. Keep the addiction seed light, but vary the physical manifestation or let one recurrence create a social or interpretive consequence for Noor. One pocket check is enough to establish the pattern; later beats should deepen or complicate it, not duplicate it.",
+      "acceptance_test": "Pass if the revised chapter no longer uses essentially the same left-pocket check/press as Marcus's primary tell in three separate locations, and if each surviving Marcus stress beat either differs physically or changes Noor's interpretation of him. Fail if the chapter still repeats the same pocket gesture as a near-identical marker across snapshots/cycle_02/chapters/chapter_01.md:11, :57, and :87."
+    }
+  ],
+  "summary": "Continuity and character-voice control are solid: the chapter cleanly establishes the seal, relay, loading dock, Marcus's access, and Ember's polite baseline without contradicting the provided canon, and the dialogue tracks the style bible well enough to pass. It still fails award, craft, and prose because the lunch scene drops too far into external camera coverage, Marcus's withdrawal cue is repeated too mechanically, and the chapter leans its ending on a mild Ember anomaly before spending the final beat replaying already-established cafeteria dynamics instead of landing a sharper chapter-sized consequence."
+}

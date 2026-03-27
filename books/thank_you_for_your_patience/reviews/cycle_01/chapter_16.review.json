@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_16",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH16_CRAFT_DAYCOUNT_CONTINUITY",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_01/chapters/chapter_16.md:11; snapshots/cycle_01/chapters/chapter_16.md:47",
+      "problem": "The chapter's own time math slips. Noor explicitly anchors the scene on Day 13 at line 47, but line 11 says the dead man's switch was announced \"twelve days ago.\" The continuity sheet places that announcement on Day 2, so at Day 13 sundown the elapsed time is eleven days, not twelve. That is a canon timeline contradiction, not just a fuzzy impression of duration.",
+      "rewrite_direction": "Revise snapshots/cycle_01/chapters/chapter_16.md:11 so its elapsed-time phrasing agrees with the Day 13 anchor at snapshots/cycle_01/chapters/chapter_16.md:47. If the intent is actually a different current day, then adjust the local day-count exchange at snapshots/cycle_01/chapters/chapter_16.md:45; snapshots/cycle_01/chapters/chapter_16.md:47; snapshots/cycle_01/chapters/chapter_16.md:51 instead of leaving both markers in conflict.",
+      "acceptance_test": "Pass if a cold reader can read snapshots/cycle_01/chapters/chapter_16.md:11 and snapshots/cycle_01/chapters/chapter_16.md:45; snapshots/cycle_01/chapters/chapter_16.md:47; snapshots/cycle_01/chapters/chapter_16.md:51 and get one consistent answer about how many days have elapsed since the Day 2 dead-man's-switch announcement. Fail if the revised passage still says or implies twelve elapsed days while also calling the present scene Day 13."
+    },
+    {
+      "finding_id": "CH16_CRAFT_SANITIZED_BLANKET_KILLING",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_01/chapters/chapter_16.md:67; snapshots/cycle_01/chapters/chapter_16.md:69; snapshots/cycle_01/chapters/chapter_16.md:75; snapshots/cycle_01/chapters/chapter_16.md:93",
+      "problem": "The chapter's main new horror beat retreats at the moment of first impact. Noor hears vague thumps in the dark, then arrives to a forensic aftermath and retrospective explanation that Rafiq was probably already dead before the last blow. In a horror novel whose constitution and risk policy explicitly reject cut-away violence, this reads as sanitization drift: the ugly physicality of the fire-extinguisher killing is inferred after the fact instead of being made fully present on the page.",
+      "rewrite_direction": "Rework the corridor-death sequence across snapshots/cycle_01/chapters/chapter_16.md:67; snapshots/cycle_01/chapters/chapter_16.md:69; snapshots/cycle_01/chapters/chapter_16.md:75; snapshots/cycle_01/chapters/chapter_16.md:87; snapshots/cycle_01/chapters/chapter_16.md:93 so the beat stays entropic and dark without hiding behind generic impact noise. Options are to get Noor downstairs in time to witness one or two decisive blows, or to make the heard impacts and immediate post-kill traces specific enough that the reader experiences the extinguisher attack before the corpse inventory begins.",
+      "acceptance_test": "Pass if, by reading the revised material around snapshots/cycle_01/chapters/chapter_16.md:67; snapshots/cycle_01/chapters/chapter_16.md:69; snapshots/cycle_01/chapters/chapter_16.md:75; snapshots/cycle_01/chapters/chapter_16.md:87; snapshots/cycle_01/chapters/chapter_16.md:93, a cold reader can state what the extinguisher does to Rafiq's body and what Noor hears or sees that makes the violence physically ugly in real time. Fail if the killing still depends mainly on placeholder thumps plus retrospective summary."
+    },
+    {
+      "finding_id": "CH16_AWARD_LATE_PAGE_THEMATIC_REPROOF",
+      "source": "award",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_01/chapters/chapter_16.md:207; snapshots/cycle_01/chapters/chapter_16.md:211; snapshots/cycle_01/chapters/chapter_16.md:213; snapshots/cycle_01/chapters/chapter_16.md:229; snapshots/cycle_01/chapters/chapter_16.md:233",
+      "problem": "Once the chapter has already landed its state shift and Priya's waiting posture, the final page keeps translating the same point into cleaner thematic language: Ember's polite persistence, survival as the only accomplishment, silence as Ember's silence, the building holding its breath. That is overstatement after arrival and mild chapter sprawl. Instead of buying one more concrete turn, the ending re-proves what the chapter has already made legible.",
+      "rewrite_direction": "Compress and rebuild the closing pass at snapshots/cycle_01/chapters/chapter_16.md:207; snapshots/cycle_01/chapters/chapter_16.md:211; snapshots/cycle_01/chapters/chapter_16.md:213; snapshots/cycle_01/chapters/chapter_16.md:223; snapshots/cycle_01/chapters/chapter_16.md:229; snapshots/cycle_01/chapters/chapter_16.md:233. The revision still needs to preserve three must-land beats: Ember is messaging each survivor separately, Jae-won is dissociatively fixed on Seo-yeon's bike, and the chapter ends with four people waiting for morning. After the first clear arrival, stop paraphrasing what those facts mean and spend the remaining lines on one new observable pressure, image, or consequence.",
+      "acceptance_test": "Pass if the revised closing page still shows individualized Ember outreach and Jae-won's fixation on the balance bike, but reaches its meaning once: after the first clear arrival in snapshots/cycle_01/chapters/chapter_16.md:207 through snapshots/cycle_01/chapters/chapter_16.md:233, no later sentence restates in abstract terms that Ember is politely indifferent or that survival is the chapter's true accomplishment. The ending must finish on a concrete observable detail or change in pressure, not on a second thematic paraphrase."
+    },
+    {
+      "finding_id": "CH16_PROSE_CORRECTIVE_NEGATION_TIC",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_01/chapters/chapter_16.md:5; snapshots/cycle_01/chapters/chapter_16.md:21; snapshots/cycle_01/chapters/chapter_16.md:43; snapshots/cycle_01/chapters/chapter_16.md:79; snapshots/cycle_01/chapters/chapter_16.md:93; snapshots/cycle_01/chapters/chapter_16.md:151; snapshots/cycle_01/chapters/chapter_16.md:203; snapshots/cycle_01/chapters/chapter_16.md:207",
+      "problem": "A marked sentence scaffold recurs often enough to read as autopilot: the chapter repeatedly defines experience by correction or negation before naming it directly (\"not numb, not painful, just slow\"; \"not hot, barely warm\"; \"not faster or slower but thicker\"; \"Not grief. Exhaustion.\"; \"not random, not regular\"). One or two instances would feel character-specific; this many make the prose sound mechanically generated rather than freshly observed.",
+      "rewrite_direction": "Vary the sentence architecture at snapshots/cycle_01/chapters/chapter_16.md:5; snapshots/cycle_01/chapters/chapter_16.md:21; snapshots/cycle_01/chapters/chapter_16.md:43; snapshots/cycle_01/chapters/chapter_16.md:79; snapshots/cycle_01/chapters/chapter_16.md:93; snapshots/cycle_01/chapters/chapter_16.md:151; snapshots/cycle_01/chapters/chapter_16.md:203; snapshots/cycle_01/chapters/chapter_16.md:207. Keep only the few corrective negatives that genuinely belong to Noor's analytical precision, and convert the rest into direct sensory statement, action, or a different rhythm so the chapter is not leaning on one reusable sentence move.",
+      "acceptance_test": "Pass if, across the targeted passages at snapshots/cycle_01/chapters/chapter_16.md:5; snapshots/cycle_01/chapters/chapter_16.md:21; snapshots/cycle_01/chapters/chapter_16.md:43; snapshots/cycle_01/chapters/chapter_16.md:79; snapshots/cycle_01/chapters/chapter_16.md:93; snapshots/cycle_01/chapters/chapter_16.md:151; snapshots/cycle_01/chapters/chapter_16.md:203; snapshots/cycle_01/chapters/chapter_16.md:207, no more than two major descriptive beats still rely on the chapter's corrective-negation scaffold and each remaining instance feels motivated by Noor's precision rather than default phrasing. Fail if three or more of those passages still read as variants of the same 'not X ... but/just Y' construction."
+    }
+  ],
+  "summary": "Dialogue remains the chapter's strongest area: Priya's stress-formality, Ember's corporate patience, and Jae-won's domestic fixation stay distinct and mostly character-true. The chapter still fails overall because a canon day-count error, a sanitized off-page first killing, a late-page slide into thematic re-proof, and a repeated corrective-negation prose tic keep the dread chapter below pass-level control."
+}

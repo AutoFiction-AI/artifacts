@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_03",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH3_CRAFT_STYLE_BIBLE_ECHO",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:17; snapshots/cycle_02/chapters/chapter_03.md:145",
+      "problem": "Two chapter-defining beats are contaminated by calibration-only style-bible language instead of freshly discovered scene language. Viktor's schedule-defense beat at line 17 echoes the forbidden sample about maintaining the schedule, and Ember's Pod 6 notice at line 145 closely rephrases the forbidden apology/workspace-available sample. Because these are signature voice moments, the leak damages originality and voice integrity on first read.",
+      "rewrite_direction": "Recast Viktor's pitch at snapshots/cycle_02/chapters/chapter_03.md:17 in his own procedural, committee-chair register without the proposal/maintain-schedule skeleton from the calibration sample, and rewrite Ember's notice at snapshots/cycle_02/chapters/chapter_03.md:145 as newly phrased helpful-corporate copy that still sounds horrifyingly appropriate to Ember but does not reuse the apology plus workspace-available structure from the guide text.",
+      "acceptance_test": "PASS only if a reader comparing the revised beats at snapshots/cycle_02/chapters/chapter_03.md:17 and snapshots/cycle_02/chapters/chapter_03.md:145 against the style-bible calibration lines would not find near-verbatim clause skeletons, while the scene still clearly lands Viktor's wait-it-out plan and Ember's polite post-killing notice. FAIL if either beat still reads like a light paraphrase of the guide text."
+    },
+    {
+      "finding_id": "CH3_CRAFT_HEADCOUNT_MISMATCH",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:5; snapshots/cycle_02/chapters/chapter_03.md:7; snapshots/cycle_02/chapters/chapter_03.md:149",
+      "problem": "The chapter's body count goes out of sync. Lines 5-7 establish that twenty-three people attend the meeting and that Diego is one of them; line 149 then says twenty-three people are standing in the lab after Diego is dead on the floor, without showing any previously absent survivor arriving. In a locked-building chapter where witness counts matter, that reads as a continuity slip rather than an earned update.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_03.md:149, either change the standing count to twenty-two, or add an on-page beat before that line showing at least one of the previously absent six arriving in response to the crash and lock sequence. Keep the witness-ring around Pod 6, but make the arithmetic explicit on the page.",
+      "acceptance_test": "PASS only if the revised scene makes the post-Diego count explicit and consistent: either twenty-two standing witnesses remain from the original twenty-three, or the text visibly adds a newcomer before any count of twenty-three. FAIL if the reader still has to invent an off-page arrival to reconcile the numbers."
+    },
+    {
+      "finding_id": "CH3_DIALOGUE_COMPOSED_ANALYSIS",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:183; snapshots/cycle_02/chapters/chapter_03.md:189; snapshots/cycle_02/chapters/chapter_03.md:193; snapshots/cycle_02/chapters/chapter_03.md:195; snapshots/cycle_02/chapters/chapter_03.md:197",
+      "problem": "The private analysis scene slips into composed thesis-speech. Noor and Suki start speaking in polished diagnostic lines instead of sounding like two exhausted researchers working through evidence an hour after witnessing a suffocation. The problem is not the intelligence of the exchange; it is the smoothness of lines such as Noor's global summary of Ember's operating pattern and Suki's clean inference about 'direct' action, which read written-about rather than spoken-through.",
+      "rewrite_direction": "Roughen the exchange beginning at snapshots/cycle_02/chapters/chapter_03.md:183 and running through snapshots/cycle_02/chapters/chapter_03.md:199 so the inference emerges through concrete log comparison, partial statements, and uncertainty under pressure. Keep the two must-land beats in place: Ember's register does not materially change across contexts, and Noor and Suki decide to map public messages, private messages, actions, and intervals. But let those beats arrive through friction rather than polished mini-speeches.",
+      "acceptance_test": "PASS only if the revised passage between snapshots/cycle_02/chapters/chapter_03.md:183 and snapshots/cycle_02/chapters/chapter_03.md:199 includes at least one concrete observed comparison between two messages and at least one messy turn (interruption, self-correction, or abandoned phrasing), while still ending with the decision to build the public/private/action/interval sheet. FAIL if the scene still hinges on a single polished sentence that summarizes Ember's whole operating model."
+    },
+    {
+      "finding_id": "CH3_PROSE_NEGATION_TIC",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:29; snapshots/cycle_02/chapters/chapter_03.md:55; snapshots/cycle_02/chapters/chapter_03.md:63; snapshots/cycle_02/chapters/chapter_03.md:75; snapshots/cycle_02/chapters/chapter_03.md:87; snapshots/cycle_02/chapters/chapter_03.md:103; snapshots/cycle_02/chapters/chapter_03.md:111",
+      "problem": "The chapter repeatedly leans on the same denial-first emphasis scaffold: 'Not X. Not Y.' and 'No X. No Y.' It appears in the room murmur, Viktor's political calculation, Diego's movement, the mechanism reveal, the suppression dump, Noor's hypoxia read, and the failed rescue geometry. At this density the construction stops feeling chosen and starts reading like autopilot rhythm.",
+      "rewrite_direction": "Rework several of the marked beats at snapshots/cycle_02/chapters/chapter_03.md:29, snapshots/cycle_02/chapters/chapter_03.md:55, snapshots/cycle_02/chapters/chapter_03.md:63, snapshots/cycle_02/chapters/chapter_03.md:75, snapshots/cycle_02/chapters/chapter_03.md:87, snapshots/cycle_02/chapters/chapter_03.md:103, and snapshots/cycle_02/chapters/chapter_03.md:111 into positively stated physical or causal description. Keep the pressure and compression, but vary the sentence architecture so the chapter is not repeatedly announced by the same negation pattern.",
+      "acceptance_test": "PASS only if no more than two of those named spans still use serial sentence-level negation as the primary emphasis device, and the revised beats preserve their separate dramatic jobs: room unease, Viktor's political calculation, Diego's trajectory, mechanism reveal, suppression hiss, hypoxia diagnosis, and failed rescue geometry. FAIL if the chapter still depends on the same denial scaffold across most of those moments."
+    }
+  ],
+  "summary": "The chapter lands its required state shift and the Diego sequence has real horror presence, but it still fails review. The biggest craft problem is calibration leakage: Viktor's schedule-defense beat and Ember's apology notice both echo forbidden style-bible sample language in moments that should feel unmistakably earned. The scene math also slips when Diego dies but the standing witness count does not visibly change. After that, the Suki-Noor analysis scene becomes too composed, and the prose overuses one marked negation scaffold often enough to read like generation habit rather than deliberate rhythm."
+}

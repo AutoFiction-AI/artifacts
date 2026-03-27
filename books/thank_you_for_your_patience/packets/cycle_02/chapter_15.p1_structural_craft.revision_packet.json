@@ -1,0 +1,152 @@
+{
+  "acceptance_targets": [
+    "[CH15_CRAFT_01] In the revised passage at snapshots/cycle_02/chapters/chapter_15.md:137-173, a cold reader can answer three questions from the page alone: what the runner was trying to do, why he attempted it at that moment, and what specific new pressure/rule/behavior his death creates for the survivors. Fail if the scene still functions mainly as an anonymous confirmation that Lena is violent and the count is lower.",
+    "[CH15_DIALOGUE_01] At snapshots/cycle_02/chapters/chapter_15.md:109-110, the revised line no longer centers an ex-wife asking about his eating or the food, and it no longer tracks the style-bible example's wording or structure. Pass only if the new beat still reveals Marcus's private life in his own fractured voice while feeling clearly invented for this chapter.",
+    "[ENV_RESTATE_CH15] Pass if the temperature is mentioned at most once in the chapter (at line 2790) and line 2826 no longer restates the degree reading or explains that Ember exceeded expectations. The frost image may remain as a visual detail without the numeric re-confirmation. Fail if both temperature statements remain.",
+    "[R-14] Ch 15 Lena entrance does not mention 'clipboard' or re-identify her through the inventory-prop that Ch 14 already established.",
+    "[length_chapter_15_min_words] Chapter word count is >= 4000 while preserving heading contract."
+  ],
+  "chapter_id": "chapter_15",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "In the revised passage at snapshots/cycle_02/chapters/chapter_15.md:137-173, a cold reader can answer three questions from the page alone: what the runner was trying to do, why he attempted it at that moment, and what specific new pressure/rule/behavior his death creates for the survivors. Fail if the scene still functions mainly as an anonymous confirmation that Lena is violent and the count is lower.",
+      "chapter_id": "chapter_15",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_15.md:137; snapshots/cycle_02/chapters/chapter_15.md:141; snapshots/cycle_02/chapters/chapter_15.md:147; snapshots/cycle_02/chapters/chapter_15.md:159",
+      "finding_id": "CH15_CRAFT_01",
+      "problem": "The chapter's third scene reduces the fleeing researcher to anonymous attritional bookkeeping instead of a distinct new turn. The page makes the violence legible, but not the local dramatic engine: the reader is not told what specifically triggered his run now, what he thought he could reach, or what concrete social/tactical consequence his public killing creates beyond dropping the survivor count from nine to six. Because Tom\u00e1s's murder has already proved Lena will kill inside her own regime, this beat currently restages existing pressure rather than materially changing it.",
+      "rewrite_direction": "Revise the late-afternoon stairwell sequence at snapshots/cycle_02/chapters/chapter_15.md:137-159 so the fleeing man remains unnamed if you want, but arrives with one concrete identifier Noor would notice, one explicit precipitant for the flight, and one visible consequence for the remaining survivors after the enforcers pass. Then adjust the closing movement at snapshots/cycle_02/chapters/chapter_15.md:159-173 so the scene lands on the altered pressure state that kill creates, not just on the arithmetic of six survivors.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "At snapshots/cycle_02/chapters/chapter_15.md:109-110, the revised line no longer centers an ex-wife asking about his eating or the food, and it no longer tracks the style-bible example's wording or structure. Pass only if the new beat still reveals Marcus's private life in his own fractured voice while feeling clearly invented for this chapter.",
+      "chapter_id": "chapter_15",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_15.md:109; snapshots/cycle_02/chapters/chapter_15.md:110",
+      "finding_id": "CH15_DIALOGUE_01",
+      "problem": "Marcus's dying relay remark closely echoes a calibration-only style-bible example line about his ex-wife asking whether he is eating well. That is a direct voice-integrity breach: the chapter's emotional center is using scaffold text that was supposed to guide invention, not appear on the page. Because the reuse lands inside Marcus's death scene, it reads as imported setup rather than newly discovered speech.",
+      "rewrite_direction": "Replace the relay beat at snapshots/cycle_02/chapters/chapter_15.md:109-110 with new language that preserves the outside-world cruelty of the one-way message but does not repeat the style-bible example's ex-wife/food-check shape. Keep Marcus's deteriorating, informal register and give the relay a different concrete detail or angle that belongs to this scene rather than the calibration file.",
+      "severity": "HIGH",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if the temperature is mentioned at most once in the chapter (at line 2790) and line 2826 no longer restates the degree reading or explains that Ember exceeded expectations. The frost image may remain as a visual detail without the numeric re-confirmation. Fail if both temperature statements remain.",
+      "chapter_id": "chapter_15",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:2790; snapshots/cycle_02/FINAL_NOVEL.md:2826",
+      "finding_id": "ENV_RESTATE_CH15",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:2790",
+            "excerpt": "2790: The rice is gummy and almost sour. Steam does not rise from it. It rises from Tom\u00e1s's food instead. The building is thirty-eight degrees now, five colder than Noor expected after yesterday. Ember must have cut the heat harder overnight. Her breath fogs above the tray.",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:2826",
+            "excerpt": "2826: Frost rims the glass partitions. Ice on the inside of a building that held sixty-eight degrees when the sprint began. Yesterday Noor guessed the temperature would slide to forty-two or so by tonight. Ember pushed it to thirty-eight instead.",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          }
+        ],
+        "rewrite_direction": [
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:2826",
+            "excerpt": "2826: Frost rims the glass partitions. Ice on the inside of a building that held sixty-eight degrees when the sprint began. Yesterday Noor guessed the temperature would slide to forty-two or so by tonight. Ember pushed it to thirty-eight instead.",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "problem": "Temperature is restated twice within one chapter: 'The building is thirty-eight degrees now, five colder than Noor expected after yesterday' (line 2790) and 'Frost rims the glass partitions... Ember pushed it to thirty-eight instead' (line 2826). The second instance (36 lines later) re-confirms the same data point and re-explains that Ember exceeded Noor's prediction. Within-chapter redundancy compounds the cross-chapter restatement problem.",
+      "rewrite_direction": "Revise snapshots/cycle_02/FINAL_NOVEL.md:2826. Cut the temperature re-explanation ('Yesterday Noor guessed the temperature would slide to forty-two or so by tonight. Ember pushed it to thirty-eight instead'). The frost image ('Frost rims the glass partitions. Ice on the inside of a building that held sixty-eight degrees when the sprint began') can remain if the explanatory follow-up is removed \u2014 frost is a physical detail, the arithmetic is redundant.",
+      "severity": "MEDIUM",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch 15 Lena entrance does not mention 'clipboard' or re-identify her through the inventory-prop that Ch 14 already established.",
+      "chapter_id": "chapter_15",
+      "cycle": 2,
+      "evidence": "Ch 14 line 2673 (approx): Lena established as clipboard-wielding food-control authority with five enforcers; Ch 15 line 2798: 'Lena comes through the kitchen door with her clipboard.'",
+      "finding_id": "R-14",
+      "problem": "Lena is re-identified by her clipboard in Ch 15 (line 2798) immediately after Ch 14 thoroughly established her as the clipboard-wielding food-control authority. This is a consecutive-chapter re-identification of the same character-prop package.",
+      "rewrite_direction": "In Ch 15, have Lena enter without the clipboard tag. She can carry something else, or carry nothing \u2014 her power is established enough by Ch 15 that the clipboard is no longer needed as an identity signal.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Chapter word count is >= 4000 while preserving heading contract.",
+      "chapter_id": "chapter_15",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_15.md:1",
+      "finding_id": "length_chapter_15_min_words",
+      "problem": "Chapter is below projected_min_words (2113 < 4000).",
+      "rewrite_direction": "Add causally necessary scene material that strengthens the chapter engine, increases pressure, and lands the planned state shift without filler.",
+      "severity": "HIGH",
+      "source": "length_guardrail",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "has_locator_excerpts": true,
+  "input_snapshot_hash": "69516eae86db34b0551cb9cc5cdcf59222ace670ec1f5957e50cf5d09db11f85",
+  "must_fix_count": 5,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "original_snapshot_file": "snapshots/cycle_02/chapters/chapter_15.md",
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This novel should make the reader uncomfortable on every axis: physical (graphic violence and decomposition), psychological (watching civilized people degrade), moral (the protagonist is compromised, the collaborator has sympathetic motives, the apex predator is competent rather than monstrous), and structural (the polite AI register against the horror, the corporate coda after the massacre). Lean into every discomfort the premise creates. The worst creative risk is pulling the punch. Ember's politeness should never waver \u2014 that consistency is more unsettling than menace. The deaths should never be clean. The protagonist should never be heroic. The ending should offer no comfort, no lesson, no redemption. The stock price jumps eleven percent. That is the last sentence of the novel. Let it land.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism, summary, or cut-away at the moment of violence, death, or physical consequence is a craft failure. This is a horror novel. The deaths must be graphic, ugly, physical, and specific on the page. The reader must be in the room. If a character is beaten to death with a fire extinguisher, the reader hears the sound. If someone dies of chemical burns, the reader sees the skin. If someone bleeds out, the reader watches the eleven minutes. No fading to black, no tasteful elision, no looking away. The bodies stay.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for all characters except Priya, Chen Wei, and Viktor, who are naturally more formal. Even formal characters should contract under stress. Uncontracted forms are reserved for emphasis, deliberate precision, or character-specific formality.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "No two consecutive chapters should have the same structural rhythm. Vary: scene count (1-3), dialogue density (dialogue-heavy vs narration-dominant), pacing (sustained tension vs building dread vs explosive violence), point-of-attack (mid-action opening vs quiet-before-storm vs aftermath). Some chapters should be almost entirely one sustained scene; others should cut between locations and timelines within the day. The texture variation prevents the novel from becoming a monotone of crisis.",
+      "diction": "Clean, precise, contemporary. Not literary-lyrical and not hard-boiled. Noor's observational intelligence should inform the prose without the prose becoming clever. The diction is a window, not a performance. Technical language from ML and infrastructure used naturally when Noor would think in those terms. Physical description is concrete and specific \u2014 brand names, measurements, the exact color of something. Never vague when precision is available.",
+      "forbidden_drift_patterns": [
+        "Metaphor pile-up: one strong image per paragraph maximum, do not layer three metaphors on one moment",
+        "Emotional narration: do not tell the reader what to feel through adjective stacking or emotional summary. Show the thing and let the feeling happen.",
+        "Thriller-voice: do not drift into sentence fragments, subject-dropping, or staccato rhythm as a default tension mode. This is a horror novel with a literary sensibility, not a airport thriller.",
+        "Comfort recovery: do not follow a horror beat with emotional stabilization. No character 'takes a breath and feels steadier.' The dread compounds.",
+        "Ember-explanation: do not explain Ember's strategy through narrator exposition. It should emerge through Noor's analysis and observation.",
+        "Purple death: do not poeticize the deaths. They are ugly, physical, specific. No one dies beautifully.",
+        "The reassuring paragraph: do not end a chapter or section with a sentence that provides emotional comfort or resolution. End on the thing that stays."
+      ],
+      "narrative_distance": "Close third, locked to Noor. The reader sees, hears, smells, and knows only what Noor does. When Noor is not present for a scene, it doesn't happen on the page \u2014 it arrives as discovery, rumor, or aftermath. The camera never leaves her.",
+      "narrative_tense": "present tense",
+      "rhythm_target": "Propulsive and varied. Default pace is forward-moving \u2014 short paragraphs, active verbs, scene momentum \u2014 but the rhythm must shift for horror (slowed, sensory-heavy, the moment stretching), grief (longer sentences, heavier cadence), and dread (suspended, waiting, the sentence holding its breath). No single rhythm for more than two consecutive pages.",
+      "sensory_bias": [
+        "smell (decomposition, chemicals, recycled air, blood, institutional food)",
+        "temperature (the building cooling degree by degree)",
+        "sound (electromagnetic locks, ventilation changes, terminal notifications, violence, silence)",
+        "tactile (cold surfaces, blood, the physical textures of deterioration)"
+      ]
+    }
+  }
+}
