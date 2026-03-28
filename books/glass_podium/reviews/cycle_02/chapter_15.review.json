@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_15",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH15_CRAFT_LOG_AUDIT_CONVENIENCE",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_02/chapters/chapter_15.md:47; snapshots/cycle_02/chapters/chapter_15.md:55; snapshots/cycle_02/chapters/chapter_15.md:69; snapshots/cycle_02/chapters/chapter_15.md:71; snapshots/cycle_02/chapters/chapter_15.md:75",
+      "problem": "Petra's suspension scene depends on a late discovery of automatically generated telemetry and pathway records that the chapter itself says have always existed. Because the red-over-green mismatch is visually obvious and the logs are auto-produced, the turn reads as under-motivated convenience unless the text explains why medical oversight is seeing this data now, after months of sessions and after earlier virus scrutiny, rather than earlier.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_15.md:47, snapshots/cycle_02/chapters/chapter_15.md:53, snapshots/cycle_02/chapters/chapter_15.md:69, snapshots/cycle_02/chapters/chapter_15.md:71, and snapshots/cycle_02/chapters/chapter_15.md:75 so Petra states the exact trigger and blind spot: for example, that Tomas's crash triggered a one-time cross-system audit, that coach-side feed logs were not routed to medical until now, or that existing alerts watched acute failure rather than chronic zone drift. The scene needs an explicit why-now and why-not-earlier, not just the fact of discovery.",
+      "acceptance_test": "In revised snapshots/cycle_02/chapters/chapter_15.md:47 through snapshots/cycle_02/chapters/chapter_15.md:75, a cold reader can answer three questions from the page alone: what specific event made Petra pull these logs now, why earlier sessions did not reach medical review, and what changed in access or audit procedure. If any of those remain implicit or guesswork, fail."
+    },
+    {
+      "finding_id": "CH15_DIALOGUE_COMPOSED_CONFESSION",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_02/chapters/chapter_15.md:171; snapshots/cycle_02/chapters/chapter_15.md:175; snapshots/cycle_02/chapters/chapter_15.md:181; snapshots/cycle_02/chapters/chapter_15.md:185; snapshots/cycle_02/chapters/chapter_15.md:189; snapshots/cycle_02/chapters/chapter_15.md:193; snapshots/cycle_02/chapters/chapter_15.md:197; snapshots/cycle_02/chapters/chapter_15.md:203; snapshots/cycle_02/chapters/chapter_15.md:207; snapshots/cycle_02/chapters/chapter_15.md:211",
+      "problem": "The Kai-Margot confrontation runs on polished confessional blocks instead of pressured speech. Kai mostly prompts; Margot returns finished mini-speeches that explain the feed's mechanics, diagnose the addiction, compress her history, and summarize her moral logic in clean thesis units. That creates composed dialogue in the chapter's defining exchange: thesis-speech, aphoristic closure, and mini-speech diagnosis all crowd out interruption, failed wording, or leverage shifts.",
+      "rewrite_direction": "Rework snapshots/cycle_02/chapters/chapter_15.md:169, snapshots/cycle_02/chapters/chapter_15.md:171, snapshots/cycle_02/chapters/chapter_15.md:175, snapshots/cycle_02/chapters/chapter_15.md:179, snapshots/cycle_02/chapters/chapter_15.md:201, and snapshots/cycle_02/chapters/chapter_15.md:211 so the exchange stops functioning as a prompt-and-confess ladder. Keep the core admissions, but make at least some of them arrive through interruption, self-correction, evasion that fails, or Kai forcing a different answer than the one Margot wants to give. The scene also needs a sharper end-state than Kai absorbing a completed statement set and leaving.",
+      "acceptance_test": "Across revised snapshots/cycle_02/chapters/chapter_15.md:169 through snapshots/cycle_02/chapters/chapter_15.md:211, at least one major admission is disrupted by interruption or self-correction, and the exchange produces a new relational fact or decision on the page after the apology rather than only Kai's one-word acknowledgment and exit. If Margot can still deliver the addiction explanation as mostly uninterrupted polished blocks, fail."
+    },
+    {
+      "finding_id": "CH15_PROSE_WRIST_TIC",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_02/chapters/chapter_15.md:13; snapshots/cycle_02/chapters/chapter_15.md:15; snapshots/cycle_02/chapters/chapter_15.md:19; snapshots/cycle_02/chapters/chapter_15.md:171; snapshots/cycle_02/chapters/chapter_15.md:181; snapshots/cycle_02/chapters/chapter_15.md:185; snapshots/cycle_02/chapters/chapter_15.md:195; snapshots/cycle_02/chapters/chapter_15.md:203; snapshots/cycle_02/chapters/chapter_15.md:207",
+      "problem": "The addiction prose keeps returning to the same wrist-groove-strap gesture until it becomes a default rather than a deepening motif. Early use of the wrist mark is strong, but the later confrontation repeatedly cashes the same somatic cue instead of discovering fresh bodily evidence, so the prose starts to feel mechanically reused at the exact point where craving should become more various and specific.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_15.md:171, snapshots/cycle_02/chapters/chapter_15.md:181, snapshots/cycle_02/chapters/chapter_15.md:185, snapshots/cycle_02/chapters/chapter_15.md:195, snapshots/cycle_02/chapters/chapter_15.md:203, and snapshots/cycle_02/chapters/chapter_15.md:207, and trim or rebalance earlier setup at snapshots/cycle_02/chapters/chapter_15.md:13, snapshots/cycle_02/chapters/chapter_15.md:15, and snapshots/cycle_02/chapters/chapter_15.md:19 if needed. Keep the wrist mark as a selective callback, but let later craving beats register through different body evidence already available in this chapter's vocabulary: saliva, mouth water, leg phantom, temperature, breath, jaw, posture, or contact with the environment.",
+      "acceptance_test": "In revised snapshots/cycle_02/chapters/chapter_15.md:171 through snapshots/cycle_02/chapters/chapter_15.md:207, the wrist or strap cue appears only when its meaning changes, and at least two later craving beats are rendered through different observable bodily evidence rather than another return to the same wrist gesture. If most major addiction beats in that span still point back to the wrist, fail."
+    }
+  ],
+  "summary": "FAIL. The chapter has a strong embodied opening and stays consistent with the provided continuity and past-tense requirements, but it does not reach pass-level quality. Petra's late audit turn is under-explained, the Kai-Margot confrontation leans on composed confession instead of pressured speech, and the addiction prose overuses the same wrist/strap somatic marker until it reads like a tic rather than controlled recurrence."
+}

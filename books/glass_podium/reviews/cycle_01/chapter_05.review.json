@@ -1,0 +1,72 @@
+{
+  "chapter_id": "chapter_05",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH05_PROSE_POV_ABSTRACTION",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:25; snapshots/cycle_01/chapters/chapter_05.md:35; snapshots/cycle_01/chapters/chapter_05.md:51; snapshots/cycle_01/chapters/chapter_05.md:55",
+      "problem": "The chapter-defining blackout and crash sequence leaves Kai's body-grounded close third for essayistic and clinical language. Phrases like 'the ability to see,' 'as a faculty,' 'humeral head,' and 'distal end' make the narration sound more like an essayist or medic than Kai, so the prose becomes smarter than the focalizer at the exact moment it should feel most inhabited.",
+      "rewrite_direction": "Rework snapshots/cycle_01/chapters/chapter_05.md:25-35 and snapshots/cycle_01/chapters/chapter_05.md:51-55 so the blackout and injuries stay legible through Kai's live bodily language: what disappears, what hits, what slides wrong, what he can and cannot command. Keep the terror physical, but strip category-level abstraction and clinician-only anatomy unless the line is unmistakably something Kai would think in the moment.",
+      "acceptance_test": "In the revised snapshots/cycle_01/chapters/chapter_05.md:25-35 and snapshots/cycle_01/chapters/chapter_05.md:51-55, a cold reader can still identify that sight, hearing, and proprioception vanish and that Kai dislocates a shoulder and breaks a wrist, but the passage does not depend on category-language such as 'ability to see' or 'as a faculty' or on clinician-only labels such as 'humeral head' and 'distal end' unless Kai's POV directly motivates them."
+    },
+    {
+      "finding_id": "CH05_PROSE_ELLIPTICAL_CLIPPING",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:25; snapshots/cycle_01/chapters/chapter_05.md:61; snapshots/cycle_01/chapters/chapter_05.md:91; snapshots/cycle_01/chapters/chapter_05.md:93",
+      "problem": "Subject-stripped negative fragments recur as a chapter tic at pressure beats ('Not gone.' 'Not running.' 'No fade. No static. No transition.'). The constitution explicitly bans elliptical clipping in narration, so this reads as repeated shorthand rather than earned compression.",
+      "rewrite_direction": "Recast the clipped beats at snapshots/cycle_01/chapters/chapter_05.md:25, snapshots/cycle_01/chapters/chapter_05.md:61, and snapshots/cycle_01/chapters/chapter_05.md:91-93 into grammatically complete narration or grounded sentence fragments that still hit hard without dropped subjects/articles. Vary the rhythm so the chapter is not leaning on the same negative-correction scaffold each time pressure spikes.",
+      "acceptance_test": "After revision, the cited spans in snapshots/cycle_01/chapters/chapter_05.md:25, snapshots/cycle_01/chapters/chapter_05.md:61, and snapshots/cycle_01/chapters/chapter_05.md:91-93 contain no standalone narration sentences built as 'Not X.' or 'No Y.' The urgency remains legible, but each beat reads as complete narration rather than clipped shorthand."
+    },
+    {
+      "finding_id": "CH05_CRAFT_VIRUS_REVEAL_OPACITY",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:153; snapshots/cycle_01/chapters/chapter_05.md:155; snapshots/cycle_01/chapters/chapter_05.md:159; snapshots/cycle_01/chapters/chapter_05.md:163; snapshots/cycle_01/chapters/chapter_05.md:169; snapshots/cycle_01/chapters/chapter_05.md:175; snapshots/cycle_01/chapters/chapter_05.md:179",
+      "problem": "The chapter asks the reader to accept a plot-critical jump from Kai's crash log to facility-wide infection and immediate quarantine without showing the proof chain. We are told Yusuf sees replication, but the page does not make clear what data source he checked beyond Kai's local log, what shared signature distinguishes a virus from a generic firmware bug, or what part of the diagnosis is still hypothesis.",
+      "rewrite_direction": "In snapshots/cycle_01/chapters/chapter_05.md:153-169, show one concrete comparison Yusuf actually pulls up - network handshake logs, a duplicated error hash, matched corruption timestamps, or another specific shared trace - and make his certainty tier explicit before snapshots/cycle_01/chapters/chapter_05.md:175-179 lands the quarantine decision. Keep the pace, but let the reader see why this is replication rather than authorial fiat.",
+      "acceptance_test": "By the end of the revised snapshots/cycle_01/chapters/chapter_05.md:153-179, a cold reader can state 1) which data source Yusuf consulted beyond Kai's local telemetry, 2) what matching feature across athletes makes him suspect replication, 3) what part is confirmed versus still diagnostic hypothesis, and 4) why grounding the facility follows now."
+    },
+    {
+      "finding_id": "CH05_DIALOGUE_YUSUF_COMPOSED_DIAGNOSIS",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:155; snapshots/cycle_01/chapters/chapter_05.md:159; snapshots/cycle_01/chapters/chapter_05.md:163; snapshots/cycle_01/chapters/chapter_05.md:169; snapshots/cycle_01/chapters/chapter_05.md:175; snapshots/cycle_01/chapters/chapter_05.md:179",
+      "problem": "The composed-dialogue problem here is thesis-speech and mini-speech diagnosis, not aphorism or mic-drop rhetoric: under immediate crisis Yusuf still delivers the virus explanation in polished packets ('Replication mechanism, propagation vector, cascading error structure') instead of sounding like a stressed engineer thinking out loud. That turns him into an exposition channel and blunts the register crack the style bible promises when his professional control fails.",
+      "rewrite_direction": "Roughen Yusuf's spoken lines in snapshots/cycle_01/chapters/chapter_05.md:155-169 and snapshots/cycle_01/chapters/chapter_05.md:175-179. Let the thought process break on itself, let a little colloquial or Birmingham texture leak in once the professional mode cracks, and split the diagnosis across interruption, restart, or self-correction instead of balanced summary bursts. Keep the technical content, but make it sound spoken under pressure.",
+      "acceptance_test": "In the revised snapshots/cycle_01/chapters/chapter_05.md:155-179, at least two of Yusuf's lines show live-thinking pressure through interruption, restart, self-correction, or colloquial spill, and no single line delivers the whole virus diagnosis as a polished three-item summary or thesis sentence."
+    },
+    {
+      "finding_id": "CH05_PROSE_MECHANICAL_METAPHOR_TIC",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:35; snapshots/cycle_01/chapters/chapter_05.md:39; snapshots/cycle_01/chapters/chapter_05.md:47; snapshots/cycle_01/chapters/chapter_05.md:61; snapshots/cycle_01/chapters/chapter_05.md:95",
+      "problem": "The chapter repeatedly defaults to the same computer-system metaphor family for bodily alienation: 'unplugged peripheral,' 'the machine was still going,' 'a machine that had changed the locks,' 'run a program,' 'the legs were the system.' One or two such analogies could land, but five within the same sequence flatten the body horror into a conceptual scheme and collide with the style bible's ban on mechanical metaphors for human experience.",
+      "rewrite_direction": "Reduce or vary the metaphor family at snapshots/cycle_01/chapters/chapter_05.md:35, snapshots/cycle_01/chapters/chapter_05.md:39, snapshots/cycle_01/chapters/chapter_05.md:47, snapshots/cycle_01/chapters/chapter_05.md:61, and snapshots/cycle_01/chapters/chapter_05.md:95. Keep at most one deliberate computing analogy; replace the others with track, muscle, nerve, balance, impact, or other body-first language that leaves the horror in Kai's physical experience.",
+      "acceptance_test": "Across the revised snapshots/cycle_01/chapters/chapter_05.md:35, snapshots/cycle_01/chapters/chapter_05.md:39, snapshots/cycle_01/chapters/chapter_05.md:47, snapshots/cycle_01/chapters/chapter_05.md:61, and snapshots/cycle_01/chapters/chapter_05.md:95, no more than one explicit computer or system metaphor remains. The remaining lines describe lost agency through sensation, motion, or concrete physical analogy rather than repeated computing language."
+    },
+    {
+      "finding_id": "CH05_CRAFT_ENDING_OVERSTATEMENT",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:63; snapshots/cycle_01/chapters/chapter_05.md:91; snapshots/cycle_01/chapters/chapter_05.md:93; snapshots/cycle_01/chapters/chapter_05.md:95; snapshots/cycle_01/chapters/chapter_05.md:183; snapshots/cycle_01/chapters/chapter_05.md:189",
+      "problem": "By the time the chapter reaches the corridor aftermath, the core horror is already legible: Kai's legs can execute without him. The closing beat keeps paraphrasing that same thesis ('the legs had not needed him,' 'they had done exactly what they wanted') instead of creating a fresh final turn, so the ending certifies meaning the reader already has rather than adding new consequence, decision, or instability.",
+      "rewrite_direction": "Compress or repurpose snapshots/cycle_01/chapters/chapter_05.md:181-189. Either end nearer the first ordinary-versus-blackout contrast at snapshots/cycle_01/chapters/chapter_05.md:181-183, or make the foot-flex test in snapshots/cycle_01/chapters/chapter_05.md:189 produce a genuinely new state shift - hesitation, mistrust, failed obedience, or an immediate action tied to Yusuf's quarantine call - instead of another paraphrase of the chapter's thesis.",
+      "acceptance_test": "In the revised ending at snapshots/cycle_01/chapters/chapter_05.md:181-189, the final paragraph must do one new piece of dramatic work beyond restating that Kai's legs ran without him: either a fresh observable change in Kai's relation to his body or an immediate choice or consequence triggered by Yusuf's diagnosis. If the last two sentences can be removed without losing any new dramatic information, the revision still fails."
+    }
+  ],
+  "summary": "Chapter 5 delivers the required bodily horror without sanitizing the crash, but it still fails review. The blackout and injury prose repeatedly leaves Kai's body-grounded POV for abstract, clinical, and over-repeated machine language; Yusuf's virus reveal is both under-demonstrated on the page and too composed in dialogue; and the ending keeps translating the chapter's point after it has already landed."
+}

@@ -1,0 +1,349 @@
+{
+  "cycle": 3,
+  "summary": "Cross-chapter audit of cycle 03 FINAL_NOVEL.md (18 chapters, 84,498 prose words, 3,178 prose lines). REDUNDANCY: 28 findings across 6 subcategories. Highest-priority defects are 4 adjacent-chapter re-descriptions: ch01/02 share a near-identical room-closing image (dark room, green wall display, mountains invisible in window); ch03/04 repeat the mountains-as-dark-ridge-against-sky formula; ch05/06 re-describe Petra's grey hair AND re-inventory the medical bay via parallel smell-led openings. Proof-of-baseline accumulation is most severe for Margot's feed-craving somatic vocabulary (5 re-proofs in 90 lines of ch04; 4 interface-fidgeting gestures in ch12; 3 re-statements in 30 lines of ch15) and Kai's wrist/shoulder ache inventory (12+ total re-statements without new information, with local clusters in ch07, ch14, ch18). Image density flags 9 terms exceeding 10 manuscript-wide occurrences, none tracked as motifs in the outline: graft/grafts (48, with 18 in ch01 alone), wrist (82), corridor (59), display (55), green (41), fluorescent (31), chlorine (27), hum (25), Birmingham (11). Two near-verbatim cross-chapter matches confirmed: calibration bay hum description (ch01:115 vs ch14:4726) and medical bay smell opener (ch05:1069 vs ch06:1500). Hedge-word 'something' appears 110 times (1.04 per 800 prose words), marginally above the 1-per-800 threshold, concentrated in ch18 (14), ch07 (12), ch17 (12), ch01 (10). Em-dash density is 1.3% (40/3,178 prose lines), well below the 10% threshold -- no findings emitted. No pronoun sentence opener exceeds 7% (highest: She at 5.2%) -- no findings emitted. CONSISTENCY: 3 findings. A HIGH-severity contradiction: the Stuttgart backstory athlete is an unnamed female gymnast in ch09 but named male decathlete Marius Koch in ch15, with the continuity sheet confirming the ch15 version. Margot's feed interface is placed on her left wrist in ch04 and ch18 but on her right wrist in ch02, ch10, and ch12.",
+  "redundancy_findings": [
+    {
+      "finding_id": "R001",
+      "category": "redundancy",
+      "subcategory": "character_reintroduction",
+      "severity": "HIGH",
+      "chapter_id": "chapter_06",
+      "evidence": "Ch05 line 1239: 'grey hair pulled back too tight, fatigue written across her face in old familiar lines'; Ch06 line 1422: 'The grey in her hair looked harsher under the strip lights. The clinical precision of her posture had a new rigidity to it'",
+      "problem": "Petra Engel's grey hair is described in ch05 (first full physical description at line 1239) and re-described in the very next chapter at line 1422. Adjacent-chapter re-introduction of the same physical trait.",
+      "rewrite_direction": "In ch06, cut the grey-hair descriptor at line 1422. Petra can be identified by posture or action alone; the reader met her hair one chapter ago. Keep the rigidity detail if needed but drop 'The grey in her hair looked harsher under the strip lights.'",
+      "acceptance_test": "Ch06's first reference to Petra contains no description of her hair color or grey hair."
+    },
+    {
+      "finding_id": "R002",
+      "category": "redundancy",
+      "subcategory": "setting_redescription",
+      "severity": "HIGH",
+      "chapter_id": "chapter_02",
+      "evidence": "Ch01 line 217: 'His room was dark except for the wall display's glow. Green readouts, all systems nominal... The mountains were invisible, just darkness and the faint reflection of the diagnostic display behind him, green numbers floating in the glass where the Bernese Alps should have been'; Ch02 lines 424, 444: 'the wall display was washing the room in soft green... she sat still while the wall display glowed green and the mountains disappeared in the window'",
+      "problem": "Ch01 closes with Kai's room: dark room, green wall display, invisible mountains reflected in window glass. Ch02 closes with Lena's room: dark room, green wall display, mountains disappeared in window. The descriptive architecture is near-identical across adjacent chapters, even though the POV characters differ.",
+      "rewrite_direction": "In ch02, rework Lena's evening room passage (lines 424-444) so the closing image does not replicate dark-room + green-display + mountains-in-window. Lena's room can close through the book, the link port, the symptom she is processing, or any sensory detail that distinguishes her interior space from Kai's. The wall display can remain functional but should not be the atmospheric image.",
+      "acceptance_test": "Ch02's room-closing passage does not describe a green-glowing wall display with mountains invisible or disappearing in the window."
+    },
+    {
+      "finding_id": "R003",
+      "category": "redundancy",
+      "subcategory": "setting_redescription",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "Ch03 line 625: 'the mountains were only shape and weight, a dark mass against a slightly less dark sky'; Ch04 line 926: 'the mountain outside her window was already a black ridge against a sky not much lighter'",
+      "problem": "The mountains-as-dark-mass/ridge-against-not-much-lighter-sky formula appears in ch03 and is repeated in the adjacent chapter (ch04) with near-synonymous phrasing. First established at ch03 line 625.",
+      "rewrite_direction": "In ch04 line 926, replace the dark-ridge-against-sky description with a detail specific to Margot's state -- the cold of the glass, the reflection of the room, or silence. The reader already has the alpine dusk image from one chapter ago.",
+      "acceptance_test": "Ch04's window passage does not describe the mountain as a dark shape/mass/ridge against a lighter sky."
+    },
+    {
+      "finding_id": "R004",
+      "category": "redundancy",
+      "subcategory": "setting_redescription",
+      "severity": "HIGH",
+      "chapter_id": "chapter_06",
+      "evidence": "Ch05 line 1069: 'smelled like isopropyl and cold metal trays'; Ch06 line 1500: 'The medical bay smelled of antiseptic and the faint mineral trace of surgical polymer, graft work, maintenance fluid'",
+      "problem": "The medical bay is entered via smell inventory in ch05 (line 1069, Kai's POV) and re-entered via a parallel smell inventory in the very next chapter (ch06, line 1500, Lena's POV). Both open with 'The medical bay smelled [like/of]' + clinical odor list. Adjacent-chapter scene-entry template reuse.",
+      "rewrite_direction": "In ch06, cut or rework the smell-led entry at line 1500. Enter the medical bay through what has changed since ch05 -- the corridor overflow, the waiting athletes, the symptom forms -- rather than re-inventorying the room's baseline scent. The smell was established one chapter ago.",
+      "acceptance_test": "Ch06's medical bay entry does not open with an olfactory inventory of the space."
+    },
+    {
+      "finding_id": "R005",
+      "category": "redundancy",
+      "subcategory": "proof_of_baseline",
+      "severity": "HIGH",
+      "chapter_id": "chapter_04",
+      "evidence": "Lines 900, 928-948, 970-972, 992 all within ch04. Line 900: 'Residual current sat in the tendons of her inner wrist. It would take half an hour to fade'; line 942: 'pressed her thumb into the dent left by the dock until the mark went white and pain climbed up her forearm'; line 970: 'Her forearms still remembered the jolt'; line 992: 'pressed it to her pulse point without connecting it'",
+      "problem": "Margot's post-session feed craving is proved 5 times in approximately 90 lines (900-992) of ch04. Lines 928-948 establish the self-denial and body-check pattern (valuable). Lines 900, 970, and 992 re-prove the same somatic craving baseline (residual sensation, forearm memory, pressing dead metal to pulse) without materially new information.",
+      "rewrite_direction": "Keep the strongest craving beat in ch04 (lines 928-948, the mirror scene with 'It wasn't addiction. It was work.'). Cut or substantially compress lines 900 and 970-972 so the chapter does not re-prove craving three additional times after the mirror scene. Line 992 can remain as a chapter closer if one of the earlier beats is cut.",
+      "acceptance_test": "Ch04 contains no more than 2 distinct passages proving Margot craves the feed after a session."
+    },
+    {
+      "finding_id": "R006",
+      "category": "redundancy",
+      "subcategory": "proof_of_baseline",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "Line 3640: 'Her left hand had already snapped to her right wrist. Her thumb jammed under the edge of the interface'; line 3720: 'Her left hand kept straying to the seam of it'; line 3846: 'her right hand kept slipping off and hooking under the interface band'; line 3890: 'her hand kept creeping back to the interface band, worrying the skin there pink'",
+      "problem": "Margot's hand-worrying-the-interface-band gesture is described 4 times within one chapter meeting scene (lines 3640-3890). The first instance (3640) establishes the involuntary reaction. The subsequent three re-prove the same baseline with diminishing returns.",
+      "rewrite_direction": "Keep lines 3640 (initial snap) and 3890 (Kai's observation, which closes the scene). Cut the two middle repetitions at lines 3720 and 3846, or replace them with a different physical tell that shows Margot's distress without repeating the same gesture.",
+      "acceptance_test": "Ch12's meeting scene contains no more than 2 descriptions of Margot touching or worrying the interface band on her wrist."
+    },
+    {
+      "finding_id": "R007",
+      "category": "redundancy",
+      "subcategory": "proof_of_baseline",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "Line 4863: phantom paralysis from the feed; line 4871-4875: 'her thumb kept circling the concave pad... The want sat low in her gut, mean and stupid and alive'; line 4893: wanting had already outrun the caffeine",
+      "problem": "Margot's craving is re-stated 3 times in approximately 30 lines (4863-4893). The phantom paralysis (4863) is new information. The shower craving (4871-4875) nearly duplicates the ch04 shower + craving scene (lines 928-950) with identical somatic vocabulary (thumb on pad, gut-level want). The hallway craving (4893) re-proves the same baseline a third time.",
+      "rewrite_direction": "Keep the phantom paralysis beat (4863) as it introduces new post-Tomas stakes. Compress or cut the shower craving passage (4871-4875) so it does not replicate ch04's mirror/shower scene. Let the hallway beat (4893) carry the craving forward without re-explaining the somatic mechanism.",
+      "acceptance_test": "Ch15's opening 30 lines contain no more than 1 explicit description of Margot's somatic craving response (gut-level want, mouth moisture, thumb pressing)."
+    },
+    {
+      "finding_id": "R008",
+      "category": "redundancy",
+      "subcategory": "proof_of_baseline",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "Line 4672: 'At twenty-one, his legs had been the entire architecture of his life'; line 4716: 'a twenty-one-year-old's legs were gone'; line 4806: 'He's twenty-one' (Kai's dialogue); line 4899: 'Tomas Reyes was twenty-one years old and couldn't feel his legs'",
+      "problem": "Tomas's age ('twenty-one') is stated 4 times in 227 lines of ch14 (lines 4672-4899), by three different characters (narrator, Margot, Kai). The age was first established in ch03 line 525. After the catastrophe, one or two age-mentions carry emotional weight; four in sequence dilutes the effect.",
+      "rewrite_direction": "Retain the strongest 2 age references in ch14 -- the initial statement at line 4672 and one later echo (either 4806 or 4899). Cut or rephrase the other two so Tomas's youth registers without the reader encountering 'twenty-one' four times in rapid succession.",
+      "acceptance_test": "Ch14 contains no more than 2 explicit statements of Tomas being twenty-one years old."
+    },
+    {
+      "finding_id": "R009",
+      "category": "redundancy",
+      "subcategory": "proof_of_baseline",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "Line 4634: 'his left wrist aching as the cold indoor air found the marrow'; line 4722: 'his wrist aching, his shoulder aching, his body remembering February'; line 4840: 'The wrist ached. The shoulder too.'",
+      "problem": "Kai's wrist and shoulder ache is re-proved 3 times within ch14 (lines 4634, 4722, 4840) without materially new information about the injury. The injury was established in ch05 and has been re-proved in ch06, ch07, ch08, ch11, and ch12 already. By ch14, the reader knows the wrist aches.",
+      "rewrite_direction": "Keep one wrist/shoulder reference in ch14 -- preferably line 4722 where it serves the emotional context of 'his body remembering February.' Cut the atmospheric mentions at lines 4634 and 4840.",
+      "acceptance_test": "Ch14 contains no more than 1 passage stating Kai's wrist or shoulder aches."
+    },
+    {
+      "finding_id": "R010",
+      "category": "redundancy",
+      "subcategory": "proof_of_baseline",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_18",
+      "evidence": "Line 6020: 'His left wrist had been complaining since lunch. He turned it once. The ache stayed.'; line 6030: 'his shoulder settling in its socket with a smoothness that still made him aware of the joint'; line 6078: 'a short shrug that didn't involve the bad shoulder'",
+      "problem": "Kai's wrist/shoulder ache is re-proved 3 times within 58 lines of ch18 (6020-6078). This is the 12th+ manuscript-wide re-statement of the same chronic condition. None of these instances add materially new information about the injury.",
+      "rewrite_direction": "Keep one injury reference in ch18's opening -- line 6020 or 6078, whichever best serves the scene's emotional register. Cut the other two. By the final chapter, the reader carries this knowledge; a single touch is sufficient.",
+      "acceptance_test": "Ch18's first 80 lines contain no more than 1 reference to Kai's wrist or shoulder pain."
+    },
+    {
+      "finding_id": "R011",
+      "category": "redundancy",
+      "subcategory": "proof_of_baseline",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "Line 1753: 'Kai's shoulder clicked when he raised the fork'; line 1903: 'Lena's gaze dropped to his wrist brace'; line 1937: 'wrist brace making his left side bulge'",
+      "problem": "Kai's injury is re-proved 3 times in ch07 (lines 1753, 1903, 1937) after the chapter opening already established his recovery state in detail (lines 1711-1727). Lines 1903 and 1937 are visual reminders of the brace that add no new information beyond 'brace is still on.' First established ch05 lines 1023-1099.",
+      "rewrite_direction": "Keep the shoulder-click at line 1753 (serves the dinner scene). Cut one of the two brace-visibility mentions at 1903 or 1937 -- the other can remain as a brief identifying detail.",
+      "acceptance_test": "After ch07's opening recovery passage (lines 1711-1727), the brace is mentioned as a visual detail no more than once."
+    },
+    {
+      "finding_id": "R012",
+      "category": "redundancy",
+      "subcategory": "proof_of_baseline",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "Ch04 line 938: 'broad shoulders gone soft at the edges, thighs still thick'; Ch10 line 3000: 'gone to Brisbane in 2028 in an unenhanced body and finished fifth'; Ch15 line 4873: 'a thirty-five-year-old woman with a former swimmer's shoulders and hips widened past her competition frame. The body that had placed fifth at the Olympics and then stopped mattering'",
+      "problem": "Margot's former-swimmer body and Olympic 5th place are described in ch04 (lines 932-938), ch10 (line 3000), and ch15 (line 4873). The ch15 version composites both prior descriptions: swimmer's shoulders from ch04 + fifth at Olympics from ch10. By ch15 the reader has both details; re-describing the combination is redundant.",
+      "rewrite_direction": "In ch15, rework line 4873 to enter Margot's mirror scene through what is NEW in this moment -- the treatment context, the absence of the feed, the physical withdrawal -- rather than re-cataloguing the competition frame and Olympic placement the reader already knows.",
+      "acceptance_test": "Ch15's mirror scene does not re-state that Margot has a swimmer's build or placed fifth at the Olympics."
+    },
+    {
+      "finding_id": "R013",
+      "category": "redundancy",
+      "subcategory": "proof_of_baseline",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "Ch02 line 226 establishes chlorine smell on pool deck; Ch08 line 2250: 'hair still damp from the morning swim, the faint chlorine smell that never fully left her'; Ch11 line 3331: 'Her hair was still damp, the chlorine smell so constant on her that he only noticed it now when she was close'",
+      "problem": "Lena's damp-hair-plus-chlorine-smell sensory signature is established in ch02 and re-proved in ch08 (line 2250) and ch11 (line 3331) with near-identical phrasing. Both later instances include an explanatory comment about the smell's permanence ('never fully left her' / 'so constant on her'). Ch11 is adjacent to ch10, where Lena swims; the reader already knows she smells of chlorine.",
+      "rewrite_direction": "In ch11 line 3331, cut the chlorine-smell notation or replace it with a different sensory detail for Lena's arrival. Kai noticing something NEW about her (her mood, her posture, an unfamiliar detail) would serve the intimacy scene better than re-confirming the chlorine.",
+      "acceptance_test": "Ch11's first description of Lena entering Kai's room does not mention damp hair or chlorine smell."
+    },
+    {
+      "finding_id": "R014",
+      "category": "redundancy",
+      "subcategory": "near_verbatim",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "Ch01 line 115: 'the permanent low hum of processing equipment, a sound that lived in the walls... Kai had been told you stopped hearing it after a week'; Ch14 line 4726: 'the low drone of processing equipment Kai had learned to tune out in his first week at the facility. Tonight it sounded closer'",
+      "problem": "Ch14 near-paraphrases ch01's calibration bay description: 'permanent low hum of processing equipment' becomes 'low drone of processing equipment'; 'stopped hearing it after a week' becomes 'learned to tune out in his first week.' The Kai-habituation framing is structurally identical. This is a 12+ word near-verbatim match across chapter boundaries.",
+      "rewrite_direction": "In ch14 line 4726, cut the habituation framing ('Kai had learned to tune out in his first week'). Enter the bay through what is different tonight -- Kai's purpose, the after-hours emptiness, the emotional charge -- not through a re-description of the room's baseline sound and Kai's relationship to it.",
+      "acceptance_test": "Ch14's calibration bay entry does not describe the hum of processing equipment or reference Kai habituating to it over his first week."
+    },
+    {
+      "finding_id": "R015",
+      "category": "redundancy",
+      "subcategory": "near_verbatim",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "Line 4750: 'professional polish rising and then failing, Birmingham showing through underneath like bone through skin'; line 4780: 'The Birmingham was thicker in his voice now, the professional register failing'; line 4808: 'the Birmingham breaking through'",
+      "problem": "The 'professional register failing, Birmingham accent breaking through' pattern appears 3 times within ch14 (lines 4750, 4780, 4808) in approximately 60 lines. The same pattern was established in ch09 (line 2605). Three iterations in one scene diminishes the impact of a strong character tell.",
+      "rewrite_direction": "Keep the strongest Birmingham-breaking-through beat in ch14 (line 4750, with the 'bone through skin' simile). Cut or rephrase lines 4780 and 4808 so the accent shift is not explicitly re-named twice more in the same scene.",
+      "acceptance_test": "Ch14's Kai-Yusuf confrontation scene contains no more than 1 explicit description of Yusuf's Birmingham accent overriding his professional register."
+    },
+    {
+      "finding_id": "R016",
+      "category": "redundancy",
+      "subcategory": "image_density",
+      "severity": "HIGH",
+      "chapter_id": "chapter_01",
+      "evidence": "'graft' or 'grafts' appears 18 times in ch01 (lines 3-223). Manuscript total: 48. The term appears in 11 of 18 chapters, but ch01 alone accounts for 37.5% of all occurrences. No tracked motif designation in outline.",
+      "problem": "Ch01 uses 'graft/grafts' 18 times in 220 lines (approximately once every 12 lines). While the term is essential to the novel's speculative premise, ch01's density front-loads the word to the point of reader fatigue. The manuscript target for a 48-occurrence image is 8-10 retained instances.",
+      "rewrite_direction": "Audit ch01 for graft mentions that can be replaced with pronouns, body-part references, or context-implied descriptions. Target reducing ch01's count from 18 to 8-10 while preserving all essential explanatory uses. Prioritize cutting atmospheric/repetitive uses over technical/expository ones.",
+      "acceptance_test": "Ch01 contains no more than 10 instances of the word 'graft' or 'grafts.'"
+    },
+    {
+      "finding_id": "R017",
+      "category": "redundancy",
+      "subcategory": "image_density",
+      "severity": "HIGH",
+      "chapter_id": "chapter_14",
+      "evidence": "Ch14 image counts: wrist (11), graft (6), corridor (4), fluorescent (4), hum (4), green (4), Birmingham (4). Total flagged-image occurrences in ch14: 37 across 7 distinct terms, in a chapter of approximately 250 lines.",
+      "problem": "Ch14 is the single most image-dense chapter in the manuscript, with heavy concentrations of every major recurring term. The accumulation creates a chapter that reads like a compendium of the novel's atmospheric vocabulary rather than a scene with its own texture.",
+      "rewrite_direction": "Audit ch14 for atmospheric terms that can be varied or cut. Priority cuts: 'wrist' and 'graft' (pick the 2-3 strongest instances of each); 'fluorescent' and 'hum' (keep 1 each); 'Birmingham' (keep 1, see R015). Target reducing total flagged-image count from 37 to approximately 15-18.",
+      "acceptance_test": "Ch14 contains no more than 6 instances of 'wrist', 3 of 'graft', and 1 each of 'fluorescent', 'hum', and 'Birmingham.'"
+    },
+    {
+      "finding_id": "R018",
+      "category": "redundancy",
+      "subcategory": "image_density",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "'corridor' appears 10 times in ch06 (lines 1416-1708). Manuscript total: 59. Ch06 accounts for 17% of all corridor mentions.",
+      "problem": "Ch06 uses 'corridor' 10 times in approximately 290 lines. The chapter's crisis scenario (athletes queuing, overflow into corridors) motivates several uses, but the word itself has become a tic. Manuscript target for a 59-occurrence image is 8-10 retained instances total.",
+      "rewrite_direction": "Replace 4-5 of the 10 'corridor' instances in ch06 with spatial synonyms (hallway, passage) or implied movement. Keep 'corridor' where it carries specific institutional atmosphere.",
+      "acceptance_test": "Ch06 contains no more than 6 instances of the word 'corridor.'"
+    },
+    {
+      "finding_id": "R019",
+      "category": "redundancy",
+      "subcategory": "image_density",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "'display' appears 11 times in ch09 (lines 2437-2881). Manuscript total: 55. Ch09 accounts for 20% of all display mentions.",
+      "problem": "Ch09 uses 'display' 11 times. Yusuf's late-night coding scenes motivate screen references, but 11 in one chapter saturates the term. Manuscript target for 55 occurrences is 8-10 retained total.",
+      "rewrite_direction": "Replace 5-6 of the 11 'display' instances in ch09 with 'screen', 'monitor', or implied references ('the data showed', 'on-screen'). Keep 'display' for the wall-mounted diagnostic display specifically.",
+      "acceptance_test": "Ch09 contains no more than 5 instances of the word 'display.'"
+    },
+    {
+      "finding_id": "R020",
+      "category": "redundancy",
+      "subcategory": "image_density",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_17",
+      "evidence": "'corridor' appears 9 times in ch17 (lines 5543-6015); 'chlorine' appears 5 times. Ch17 accounts for 15% of corridor mentions and 19% of chlorine mentions.",
+      "problem": "Ch17 (the Doha competition chapter) accumulates 9 corridor references and 5 chlorine references. The competition venue is a new space, which makes re-using 'corridor' and 'chlorine' at Kirchberg frequency feel like atmospheric autopilot.",
+      "rewrite_direction": "Vary the Doha venue's spatial language -- tunnels, concourse, warm-up zone -- rather than defaulting to 'corridor.' For chlorine, retain the 1-2 strongest pool-specific uses and cut the atmospheric ones.",
+      "acceptance_test": "Ch17 contains no more than 4 instances of 'corridor' and 3 of 'chlorine.'"
+    },
+    {
+      "finding_id": "R021",
+      "category": "redundancy",
+      "subcategory": "image_density",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "'chlorine' appears 5 times in ch11 (lines 3325-3579); 'display' appears 6 times. The intimacy chapter clusters both terms.",
+      "problem": "Ch11 uses 'chlorine' 5 times and 'display' 6 times in approximately 255 lines. The chlorine functions as Lena's sensory tag but is over-deployed in the intimacy scene. The diagnostic display is described 3 times (lines 3329, 3375, 3449) in the same room.",
+      "rewrite_direction": "Retain 1-2 chlorine mentions (the first arrival beat and one later echo). Cut 3 of the 5. For 'display,' keep 1 of the 3 room descriptions -- the flash at line 3375 is the strongest. Cut or compress the standby description at 3329 and the dead-display note at 3449.",
+      "acceptance_test": "Ch11 contains no more than 2 instances of 'chlorine' and 3 of 'display.'"
+    },
+    {
+      "finding_id": "R022",
+      "category": "redundancy",
+      "subcategory": "image_density",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "'fluorescent' appears 4 times in ch13 (lines 4003-4603); 'hum' or 'humming' appears 3 times. Combined: 7 facility-atmosphere terms in one chapter.",
+      "problem": "Ch13 accumulates 4 'fluorescent' and 3 'hum/humming' references. The chapter's calibration and pool scenes motivate some uses, but 7 facility-atmosphere terms in one chapter contributes to the manuscript-wide overuse. Manuscript totals: fluorescent (31), hum (25).",
+      "rewrite_direction": "Cut 2 of the 4 'fluorescent' instances and 1-2 of the 3 'hum' instances. Enter spaces through what is new in the post-patch context rather than through the same facility lighting and sound.",
+      "acceptance_test": "Ch13 contains no more than 2 instances of 'fluorescent' and 2 of 'hum/humming.'"
+    },
+    {
+      "finding_id": "R023",
+      "category": "redundancy",
+      "subcategory": "image_density",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "'green' appears 7 times in ch05 (lines 995-1415); 'graft' appears 4 times; 'wrist' appears 12 times. The crash-and-aftermath chapter is the densest for 'wrist' and 'green.'",
+      "problem": "Ch05 uses 'green' 7 times (most are dashboard/status-indicator uses) and 'wrist' 12 times. The crash chapter naturally motivates wrist references (it is the chapter where the wrist breaks), but 12 instances in one chapter plus 4 'graft' references create considerable term density.",
+      "rewrite_direction": "For 'green,' vary the dashboard/status language (nominal, clear, steady) in 3-4 of the 7 instances. For 'wrist,' retain the diagnostic and medical uses but replace 3-4 atmospheric wrist-mentions with implied references or body-part variation (forearm, hand).",
+      "acceptance_test": "Ch05 contains no more than 4 instances of 'green' and 9 of 'wrist.'"
+    },
+    {
+      "finding_id": "R024",
+      "category": "redundancy",
+      "subcategory": "image_density",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "'display' appears 7 times in ch10 (lines 2882-3324). Manuscript total: 55.",
+      "problem": "Ch10 uses 'display' 7 times. Margot's coaching-feed scenes and the session-display interface motivate screen references, but 7 in one chapter compounds the manuscript-wide overuse.",
+      "rewrite_direction": "Replace 3-4 of the 7 'display' instances with 'screen,' 'console,' or implied interface references. Keep 'display' for the wall-mounted diagnostic or session display specifically.",
+      "acceptance_test": "Ch10 contains no more than 4 instances of the word 'display.'"
+    },
+    {
+      "finding_id": "R025",
+      "category": "redundancy",
+      "subcategory": "hedge_density",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_18",
+      "evidence": "'something' appears 14 times in ch18 (4,959 prose words), density 2.26 per 800 words. Manuscript total: 110 in 84,498 words (1.04/800w, threshold 1.0/800w). Ch18 is the densest chapter for this hedge.",
+      "problem": "Ch18 uses 'something' 14 times -- the highest of any chapter and more than double the threshold density. As the final chapter, excessive hedging undercuts the resolution's emotional clarity.",
+      "rewrite_direction": "Audit each 'something' in ch18. Replace 7-8 instances with the specific noun, sensation, or state the hedge is avoiding. Retain 'something' only where genuine indeterminacy is the point of the sentence.",
+      "acceptance_test": "Ch18 contains no more than 7 instances of the word 'something.'"
+    },
+    {
+      "finding_id": "R026",
+      "category": "redundancy",
+      "subcategory": "hedge_density",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "'something' appears 12 times in ch07 (5,015 prose words), density 1.91 per 800 words.",
+      "problem": "Ch07 uses 'something' 12 times at nearly double the threshold density. The chapter's exploratory tone (Kai testing his hand, dinner with Lena, the mountain walk) uses 'something' as a default vagueness marker.",
+      "rewrite_direction": "Replace 6-7 instances with specific nouns or sensory details. Keep 'something' only where the character genuinely cannot name what they are experiencing.",
+      "acceptance_test": "Ch07 contains no more than 6 instances of the word 'something.'"
+    },
+    {
+      "finding_id": "R027",
+      "category": "redundancy",
+      "subcategory": "hedge_density",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "'something' appears 10 times in ch01 (4,616 prose words), density 1.73 per 800 words.",
+      "problem": "Ch01 uses 'something' 10 times in the novel's opening chapter. As the reader's introduction to the world, hedged descriptions reduce the specificity and authority of the prose.",
+      "rewrite_direction": "Replace 5-6 instances with concrete nouns or sensory details. The opening chapter should model precision for the reader.",
+      "acceptance_test": "Ch01 contains no more than 5 instances of the word 'something.'"
+    },
+    {
+      "finding_id": "R028",
+      "category": "redundancy",
+      "subcategory": "hedge_density",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "'something' appears 9 times in ch15 (4,560 prose words), density 1.58 per 800 words.",
+      "problem": "Ch15 uses 'something' 9 times at 1.58x threshold density. The chapter contains critical confrontation and confession scenes where vagueness undercuts the drama.",
+      "rewrite_direction": "Replace 4-5 instances with the specific object, feeling, or fact being hedged. Keep 'something' only in dialogue where a character is genuinely struggling to articulate.",
+      "acceptance_test": "Ch15 contains no more than 5 instances of the word 'something.'"
+    }
+  ],
+  "consistency_findings": [
+    {
+      "finding_id": "C001",
+      "category": "consistency",
+      "subcategory": "character_details",
+      "severity": "HIGH",
+      "chapter_id": "chapter_09",
+      "evidence": "Ch09 lines 2736-2748: 'There was a gymnast at the Stuttgart facility... She was twenty-four... She died. Eight months later. Organ failure. Her body had been in active rejection'; Ch15 line 4997: 'Marius Koch. Decathlete. Twenty-four... He died eight months later from the condition I'd identified'; continuity sheet line 178 confirms canonical version: 'decathlete Marius Koch's graft rejection'",
+      "problem": "Petra's Stuttgart backstory athlete is described as an unnamed female gymnast in ch09 (lines 2736-2748) but as a male decathlete named Marius Koch in ch15 (line 4997). Same facility, same age (24), same timeline (eight months later), same cause of death -- different gender, sport, and name status. The continuity sheet confirms the ch15 version (Marius Koch, decathlete) as canonical.",
+      "rewrite_direction": "In ch09, change the Stuttgart athlete from 'a gymnast... She... Her' to a male decathlete. Petra may still withhold the name ('I'm not going to give you his name') but the gender and sport must match ch15's canonical version: male, decathlete.",
+      "acceptance_test": "Ch09's Stuttgart backstory uses male pronouns and identifies the athlete as a decathlete, consistent with ch15's Marius Koch reference."
+    },
+    {
+      "finding_id": "C002",
+      "category": "consistency",
+      "subcategory": "objects_possessions",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "Ch02 line 324: feed interface 'rested dark against her right wrist'; Ch10 line 2890: 'strapped the feed interface to her right wrist'; Ch12 line 3640: 'left hand had already snapped to her right wrist'; Ch04 line 928: 'the feed mark still dented into her left wrist'",
+      "problem": "Margot's feed interface is consistently placed on her RIGHT wrist in ch02, ch10, and ch12. However, ch04 line 928 places the feed mark on her LEFT wrist. The preponderance of evidence (4 right-wrist references vs. 1 left-wrist here) indicates ch04 is the error.",
+      "rewrite_direction": "In ch04 line 928, change 'her left wrist' to 'her right wrist' to match the established canonical placement.",
+      "acceptance_test": "Ch04 line 928 refers to the feed mark on Margot's right wrist."
+    },
+    {
+      "finding_id": "C003",
+      "category": "consistency",
+      "subcategory": "objects_possessions",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_18",
+      "evidence": "Ch02 line 324: 'right wrist'; Ch10 line 2890: 'right wrist'; Ch18 line 6422: 'the empty air above her left wrist where the feed band had sat for years'",
+      "problem": "Ch18 line 6422 places the phantom feed band on Margot's LEFT wrist. The canonical placement is the right wrist (ch02, ch10, ch12). This is a second instance of the same left/right inconsistency.",
+      "rewrite_direction": "In ch18 line 6422, change 'her left wrist' to 'her right wrist' to match the established canonical placement.",
+      "acceptance_test": "Ch18 line 6422 refers to the empty air above Margot's right wrist."
+    }
+  ]
+}

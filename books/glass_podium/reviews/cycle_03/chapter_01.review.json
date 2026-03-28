@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_01",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH1_DIALOGUE_EXAMPLE_LINE_ECHO",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_03/chapters/chapter_01.md:173; snapshots/cycle_03/chapters/chapter_01.md:183",
+      "problem": "The chapter echoes Kai's calibration-only example material from outline/style_bible.json in a chapter-defining exchange. Yusuf's explanatory image about reaching for a glass before the system 'gets there first' and Kai's report that the motion is halfway done before the decision finishes are both too close to the forbidden reference line built around reaching for something and finding the hand already there. Because the echo appears twice in the core reveal beat, it reads like the draft is lifting calibration language instead of generating live character speech.",
+      "rewrite_direction": "Replace the illustrative language at snapshots/cycle_03/chapters/chapter_01.md:173 and snapshots/cycle_03/chapters/chapter_01.md:183 so Yusuf and Kai arrive at the predictive-lead idea through chapter-specific language rather than the style-bible's hand/glass template. Keep Yusuf technically clear and Kai privately awkward, but give them different wording, imagery, or no illustrative analogy at all.",
+      "acceptance_test": "Pass if the revised exchange at snapshots/cycle_03/chapters/chapter_01.md:171 and snapshots/cycle_03/chapters/chapter_01.md:183 still makes predictive initiation legible, but neither speaker uses a reach-for-an-object example or any hand-already-there phrasing, and the beat no longer reads as a paraphrase of Kai's calibration-only example line."
+    },
+    {
+      "finding_id": "CH1_CRAFT_FIRST_SYMPTOM_DEFUSED",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_03/chapters/chapter_01.md:105; snapshots/cycle_03/chapters/chapter_01.md:109",
+      "problem": "The cafeteria scene finally puts autonomous motion on the page, then immediately shrinks it. After the strong setup of Kai's hand tightening and lifting the glass before the wanting fully arrives, the narration backs off into 'It was nothing' and generalized retrospective summary. For a chapter whose engine is bodily agency starting to erode, that move reads as timidity: the prose reaches the evidence and then steps away from the exact wrongness.",
+      "rewrite_direction": "Rework the follow-through at snapshots/cycle_03/chapters/chapter_01.md:105 and snapshots/cycle_03/chapters/chapter_01.md:109 so Kai has to inhabit the specific bodily wrongness before he explains it away. Keep the water-glass action, but add the immediate sensory or emotional consequence at the table and let any self-minimization register as defense after the fact rather than the narration's first move.",
+      "acceptance_test": "Pass if the revised lunch beat lets a cold reader identify one concrete bodily symptom and one immediate reaction from Kai before any retrospective summary, and the passage does not dismiss the event as negligible until after the unsettling part has already been made legible on the page."
+    },
+    {
+      "finding_id": "CH1_CRAFT_GRAPH_EXPLAINS_CLIMAX",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_03/chapters/chapter_01.md:167; snapshots/cycle_03/chapters/chapter_01.md:169; snapshots/cycle_03/chapters/chapter_01.md:195",
+      "problem": "The calibration scene's main turn arrives mostly as graph interpretation and explanatory speech. The information is clear, but the chapter's climactic discovery becomes a diagnosis delivered at a screen rather than a fresh, observable in-room event. That leaves the ending more informed than destabilized and leans into exposition at exactly the point where the novel's premise wants embodied consequence.",
+      "rewrite_direction": "Rebuild the reveal around a live demonstration at snapshots/cycle_03/chapters/chapter_01.md:167 and snapshots/cycle_03/chapters/chapter_01.md:195. Let the rig or a simple commanded movement produce a visible predictive lead that Kai experiences in real time, then use Yusuf's explanation to clarify threshold, tracking, and next steps instead of carrying the entire dramatic payload by itself.",
+      "acceptance_test": "Pass if a reader can point to a specific action in the calibration bay where Kai's body gets ahead of him before or as Yusuf names the drift, and Yusuf's dialogue functions mainly as interpretation of an on-page event rather than as the sole source of the chapter's final discovery."
+    },
+    {
+      "finding_id": "CH1_PROSE_SOMEONE_WHO_TEMPLATE",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_03/chapters/chapter_01.md:3; snapshots/cycle_03/chapters/chapter_01.md:23; snapshots/cycle_03/chapters/chapter_01.md:87; snapshots/cycle_03/chapters/chapter_01.md:115",
+      "problem": "A marked descriptive scaffold recurs often enough to feel generated rather than chosen: observation framed through 'the X of someone who...' or equivalent comparative biography. It appears in the driver, the woman in the doorway, the cafeteria athlete, and Yusuf, among other spots. Because the chapter returns to the same explanatory sentence mold for different kinds of noticing, Kai's observational intelligence starts to flatten into autopilot prose.",
+      "rewrite_direction": "Vary the descriptive architecture at snapshots/cycle_03/chapters/chapter_01.md:3; snapshots/cycle_03/chapters/chapter_01.md:23; snapshots/cycle_03/chapters/chapter_01.md:87; snapshots/cycle_03/chapters/chapter_01.md:115. Keep Kai's acuity, but replace most of those comparison frames with direct sensory noticing or more specific, non-template analogies so the chapter stops leaning on one default sentence shape.",
+      "acceptance_test": "Pass if, across the revised cited beats, no more than one major description still relies on the 'someone who...' scaffold and the remaining observations read as syntactically distinct rather than as repeats of the same descriptive template."
+    }
+  ],
+  "summary": "Chapter 1 cleanly establishes Kirchberg, lands the required proprioception-drift setup, and stays aligned with the provided continuity and tense requirements, but it does not clear pass-level review. The largest failure is dialogue integrity: the chapter echoes Kai's calibration-only style-bible example line in its central reveal beat. Craft-wise, the first concrete loss-of-agency moment is partially defused by self-minimizing summary, and the calibration climax leans too hard on graph explanation instead of a fresh embodied event. On the sentence level, the repeated 'someone who...' descriptive scaffold starts to feel mechanical enough to mark the prose down."
+}

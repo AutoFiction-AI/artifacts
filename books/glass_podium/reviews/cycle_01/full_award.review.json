@@ -1,0 +1,235 @@
+{
+  "cycle": 1,
+  "verdict": "FAIL",
+  "summary": "The novel's conceptual architecture is original and its best scenes achieve genuine specificity — the intimacy scene in Ch 11, Tomas's crash in Ch 14, Margot's feed-transmitted paralysis, and Kai's override in Ch 17 are rendered with the visceral body-horror precision the premise demands. Character differentiation is strong across all four principals. Setup/payoff chains close cleanly. Sanitization passes: the novel confronts its difficult material without flinching. Tense and POV are consistent throughout. The principal failure mode is accumulated repetition at the prose level, which erodes the reading experience across the second half of the book: (1) the wrist-ache description recurs in near-identical language with full backstory restatement across 8 chapters, becoming a tic rather than a motif; (2) Lena's neural-link-port description and touch-gesture recur in substantially the same construction across 8+ chapters; (3) established backstory conditions are re-taught to the reader in multiple chapters as if the information were new; (4) 'flat' serves as the universal default descriptor for emotional tone, vocal quality, light, and facial expression across the entire manuscript (72 occurrences). Secondary blockers: two near-verbatim echoes of a style-bible calibration example line, composed dialogue in the Ch 12 group argument, and a montage time-skip in Ch 16 that compresses four weeks of earned departures into summary. These are craft-polish defects, not conceptual or structural failures. A revision pass targeting repetition patterns and reader-knowledge trust would bring this manuscript to shortlist contention.",
+  "findings": [
+    {
+      "finding_id": "STYLE_ECHO_CH07",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:1245",
+      "problem": "Near-verbatim echo of style-bible calibration example line. Kai says 'She says she can tell the difference' about his mother watching old race footage. The style bible's calibration-only example line for Kai reads: 'My mom still watches the old footage. The natural stuff. She says she can tell the difference.' The manuscript version at line 1241-1245 closely tracks this: 'My mom still watches my old race footage. The pre-enhancement stuff... She says she can tell the difference.' The phrasing 'she says she can tell the difference' is identical.",
+      "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:1241-1245, rephrase the mother's observation to avoid matching the calibration example. The story beat (mother notices a difference in old vs. new footage) is earned and should stay. Change the specific phrasing: e.g., 'She says something changed in how I move' or 'She told me last week she can see it — the difference between me and whatever I am now.' The point is the same; the words must diverge from the example.",
+      "acceptance_test": "Lines 1241-1245 contain no phrase matching 'she says she can tell the difference' or 'the natural stuff' from the style-bible example. The mother's observation is conveyed in language original to the manuscript."
+    },
+    {
+      "finding_id": "COMPOSED_DIALOGUE_CH12",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2422; snapshots/cycle_01/FINAL_NOVEL.md:2430; snapshots/cycle_01/FINAL_NOVEL.md:2527",
+      "problem": "Key speeches in the group argument scene achieve a level of composure and rhetorical structure that exceeds what characters under this emotional pressure would produce. Jin-seo's argument at line 2422 ('But what you're asking these athletes to do is accept a firmware modification that's never been installed in a living human system, built by one engineer with a personal stake in the outcome, to solve a problem that Meridian has already solved with a tested, validated patch') is a perfectly constructed three-clause parallel structure delivered moments after discussing her brother's death. Her speech at line 2430-2434 maintains technical vocabulary ('Enhancement system, shared network, propagation event') while narrating a deeply personal loss. Lena's summation at line 2527 ('So one option locks in the damage and makes me less than I was. And the other might fix the damage but keeps running the system that caused it') is a perfectly balanced antithesis that sounds composed rather than spoken. The style bible's stress tells for Jin-seo are not defined, but the constitution requires that 'under pressure, most characters contract, truncate, curse, and lose syntactic composure.'",
+      "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:2422-2423, break Jin-seo's argument into shorter sentences with less parallel structure. Let her reach the point through accumulation rather than rhetoric: she could start confident, stumble when the personal stakes surface, then recover with a simpler formulation. At line 2430-2434, her brother's death story should cost her syntactic control — the technical vocabulary should arrive unevenly, with a gap or correction, not as a fluent technical summary. At line 2527, give Lena's summation some friction: a false start, a word she reaches for and misses, a sentence that arrives slightly sideways rather than as balanced antithesis.",
+      "acceptance_test": "Jin-seo's argument at lines 2422-2434 contains at least one syntactic break, hesitation, or self-correction that reflects the emotional weight of the subject. Lena's summation at line 2527 is not a balanced two-clause antithesis; it arrives through groping rather than polish."
+    },
+    {
+      "finding_id": "STYLE_ECHO_CH16",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:3436",
+      "problem": "Second echo of the same style-bible calibration line, nine chapters after the first. Kai says 'She says she can tell the difference. Between those and the enhanced footage.' This repeats the Ch 7 beat (mother watching old footage, noting the difference) with the same key phrase, compounding the style-bible leakage and creating a narrative repetition — the reader has already heard this anecdote in Ch 7.",
+      "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:3428-3441, either cut the mother-footage anecdote entirely (the reader knows it from Ch 7) or advance it: the mother has sent something new, her reaction has changed, or Kai's relationship to the footage has shifted. If retained, the phrasing 'she says she can tell the difference' must not appear. The Ch 16 biryani scene earns its emotional weight from the group dynamic, not from recycled anecdotes.",
+      "acceptance_test": "Lines 3428-3441 either omit the mother-footage story or present a materially new development in the mother's reaction. The phrase 'she can tell the difference' does not appear."
+    },
+    {
+      "finding_id": "COMPRESSION_CH16",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:3322; snapshots/cycle_01/FINAL_NOVEL.md:3326; snapshots/cycle_01/FINAL_NOVEL.md:3330; snapshots/cycle_01/FINAL_NOVEL.md:3332; snapshots/cycle_01/FINAL_NOVEL.md:3334; snapshots/cycle_01/FINAL_NOVEL.md:3336",
+      "problem": "After fifteen chapters of granular scene work, Chapter 16 opens with four paragraphs of montage summary covering four weeks of departures, individual character updates, and the facility emptying. Athletes who signed Meridian's contract 'left first' (line 3326); the holdouts are described in a single paragraph (3328); Kai, Lena, Yusuf, and Margot each receive one summary paragraph of their four-week experience (3330-3337). This is telling at scale — the departures, the thinning facility, the emotional weight of colleagues leaving — none are rendered as lived scenes. The shift from the novel's established close-third POV texture to omniscient montage is abrupt. The biryani dinner that follows is well-executed, but the opening summary reads as connective tissue rather than inhabited fiction.",
+      "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:3322-3340, convert at least one departure into a brief scene (a goodbye at the shuttle, a room going dark, a name disappearing from the hallway display). The character summaries at lines 3330-3337 can stay compressed but should include at least one specific scene-moment per character rather than pure summary. Margot's paragraph (3336) is the strongest of the four because it includes concrete detail (the outdoor loop, the bar). Bring the others to that specificity level.",
+      "acceptance_test": "The opening section of Ch 16 (pre-biryani) contains at least one rendered scene of a departure or a specific moment in the emptying facility. Each character's four-week summary includes at least one concrete sensory detail or micro-scene, not just state description."
+    }
+  ],
+  "pattern_findings": [
+    {
+      "pattern_id": "PROSE_WRIST_ACHE",
+      "severity": "MEDIUM",
+      "global_problem": "The wrist-ache description recurs in near-identical prose across 8 chapters after the establishing injury in Ch 5-6. The construction 'the bone knitted/healed too fast by synthetic grafts' with its full backstory (healing timeline, wrongness in the architecture, synthetic repair leaving a seam) is restated rather than evolved. By Ch 18, the reader has encountered essentially the same explanatory clause 10+ times. This crosses from motif to tic — the style bible's own rule 9 flags constructions appearing more than four times in the book as tics, not style.",
+      "affected_chapters": ["chapter_07", "chapter_12", "chapter_14", "chapter_16", "chapter_17", "chapter_18"],
+      "global_rewrite_principles": "After Ch 7's establishing description, no subsequent chapter should restate the healing-speed backstory (how long the break took, how many days vs. weeks, that synthetic grafts accelerated the repair). The wrist ache itself is a legitimate recurring sensation — Kai lives with it — but each reference must find new physical language or new dramatic function. The ache can be a weather-vane (barometric shifts), a rhythm (it throbs with his pulse during the race), a tether (it anchors him during the override), an absence (a morning when it doesn't ache and that feels wrong). What it cannot be is the same explanatory paragraph reformatted for each chapter.",
+      "chapter_hits": [
+        {
+          "chapter_id": "chapter_07",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:1129",
+          "problem": "Extended establishing description of the wrist's too-fast healing. This is the first full post-injury treatment and earns its length, but sets the template that subsequent chapters copy.",
+          "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:1129, retain as establishing passage but tighten: the final clause ('his body rebuilding on a schedule he didn't set') carries the thematic weight. Cut or compress the middle ('Knitting implied the body's own patient labor' is good but the surrounding sentences over-explain).",
+          "acceptance_test": "Line 1129 paragraph is 3-4 sentences. The healing-speed wrongness is conveyed through one concrete sensory detail and one thematic beat, not through explanatory walkthrough."
+        },
+        {
+          "chapter_id": "chapter_12",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2342",
+          "problem": "Full backstory restatement: 'the bone had knitted too fast, synthetic grafts accelerating a repair that should have taken eight weeks into three and leaving something not quite right in the architecture.' Third restatement of the same information.",
+          "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:2342, reduce to a brief physical gesture: 'His wrist throbbed. He pressed his thumb into the bad spot.' The 'eight weeks into three' detail is old information the reader has internalized.",
+          "acceptance_test": "Line 2342 mentions the wrist in 15 words or fewer. No healing-speed backstory. No mention of synthetic grafts accelerating repair."
+        },
+        {
+          "chapter_id": "chapter_14",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2840",
+          "problem": "Fourth restatement: 'the bone knitted too fast, the synthetic repair leaving a seam in the marrow that the cold indoor air found and pressed on.' The cold-air detail is scene-specific and fresh; the backstory clause is not.",
+          "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:2840, keep the cold-air detail ('the cold indoor air found and pressed on the marrow') and cut the backstory clause. The reader knows why the wrist hurts.",
+          "acceptance_test": "Line 2840 references cold air and wrist pain. Does not contain 'knitted too fast' or 'synthetic repair.'"
+        },
+        {
+          "chapter_id": "chapter_16",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:3330",
+          "problem": "Sixth restatement embedded in montage summary: 'the bone where the break had knitted too fast — a shallow wrongness, like the memory of an injury rather than the injury itself.' The simile is new but the backstory clause is the same.",
+          "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:3330, retain the simile ('like the memory of an injury rather than the injury itself') which evolves the motif. Cut 'the bone where the break had knitted too fast.' The simile carries the meaning alone.",
+          "acceptance_test": "Line 3330 uses the memory-of-injury simile without the knitted-too-fast clause."
+        },
+        {
+          "chapter_id": "chapter_17",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:3617; snapshots/cycle_01/FINAL_NOVEL.md:3635; snapshots/cycle_01/FINAL_NOVEL.md:3661; snapshots/cycle_01/FINAL_NOVEL.md:3721",
+          "problem": "Four wrist references in one chapter, including the longest backstory restatement in the book (line 3617: full sentence recapping the break, the wall, the sprint speed, the healing timeline). Lines 3635 and 3721 add 'His wrist ached' with no new information.",
+          "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:3617, cut the full-sentence backstory entirely. By Ch 17 the reader needs no reminder. Keep two wrist references total: one in the call room (line 3619 thumb-pressing gesture, which is active and scene-specific) and one mid-race (line 3661 'a tiny flare of wrong that tethered him to his own skeleton' — the tethering metaphor is new and dramatically functional). Cut lines 3635 and 3721.",
+          "acceptance_test": "Ch 17 contains exactly two wrist references. Neither restates healing origin. The mid-race reference (line 3661) retains its tethering function."
+        },
+        {
+          "chapter_id": "chapter_18",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:3736",
+          "problem": "The novel's final chapter opens with the most elaborate wrist-ache restatement: 5 sentences re-explaining nine-day healing, six-week normal timeline, seam in the bone. This re-teaches the entire wrist backstory as if the reader is arriving fresh.",
+          "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:3736, compress to 1-2 sentences. 'His wrist ached — two o'clock, as usual — and he rotated it and the ache held.' The seam metaphor can stay as it's physically specific; the nine-day/six-week comparison must go. Trust the reader.",
+          "acceptance_test": "Lines 3736-3737 are 2 sentences or fewer. No mention of nine days, six weeks, or synthetic graft healing speed. The ache is present as lived sensation, not as backstory summary."
+        }
+      ]
+    },
+    {
+      "pattern_id": "PROSE_PORT_TOUCH",
+      "severity": "MEDIUM",
+      "global_problem": "Lena touching or being described touching the neural link port at the base of her skull recurs in near-identical language across 8+ chapters (14 instances total). The typical construction — 'the neural link port at the base of her skull,' 'a small disc/circle,' 'warm from the skin,' combined with the gesture of touching/pressing it — repeats without evolving the symbolic or emotional meaning. The gesture is thematically resonant (checking that the hardware is still hers) but the prose describing it has calcified into a single template.",
+      "affected_chapters": ["chapter_02", "chapter_06", "chapter_07", "chapter_12", "chapter_16", "chapter_18"],
+      "global_rewrite_principles": "The port-touching gesture can recur — it is Lena's signature somatic tell. But the language describing it must vary. Different chapters should notice different physical qualities: the port's hardness vs. the softness of the surrounding skin, its warmth or coldness relative to the scene, the way hair catches on its edge, the way water beads on its surface differently than on skin. The full descriptor ('neural link port at the base of her skull, a small disc, two centimeters, warm') should appear once in the book. Subsequent references should be abbreviated or find new angles. When another character observes the port (Kai in Ch 7, Ch 11), their perception should differ from Lena's self-perception.",
+      "chapter_hits": [
+        {
+          "chapter_id": "chapter_02",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:348",
+          "problem": "First full port description: 'She reached behind her head and touched the neural link port at the base of her skull. A small smooth disc, two centimeters, warm from the skin around it. It was always warm.' This establishes the template.",
+          "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:348, this establishing description is earned. Retain it. Ensure no subsequent chapter repeats the full 'small disc, two centimeters, warm' construction.",
+          "acceptance_test": "Line 348 retains its establishing function. The specific phrase 'two centimeters' appears only here in the manuscript."
+        },
+        {
+          "chapter_id": "chapter_06",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:1032; snapshots/cycle_01/FINAL_NOVEL.md:1062",
+          "problem": "Two port descriptions in one chapter, both re-describing size and warmth: 'two centimeters of surgical polymer, flush with the skin' (1032) and 'the neural link port that had been part of her since she was four years old' (1062). The childhood-installation backstory is re-stated.",
+          "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:1032, abbreviate: 'She touched the port at the back of her neck' — the reader knows what it is. At line 1062, cut the since-she-was-four clause; the reader learned this in Ch 2.",
+          "acceptance_test": "Ch 6 port references total 15 words or fewer combined. No re-description of material, size, or installation age."
+        },
+        {
+          "chapter_id": "chapter_07",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:1195",
+          "problem": "Kai observes the port: 'the neural link port at the base of her skull where her hair was pulled up. A small disc, almost but not quite the color of her skin.' Re-uses the 'small disc' construction from Ch 2.",
+          "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:1195, since this is Kai's POV (not Lena's), the observation should reflect his perception. He wouldn't catalog the disc's dimensions — he'd notice it the way you notice a hearing aid or a surgical scar: as a fact about someone's body that you register without examining. Compress to something observational rather than descriptive.",
+          "acceptance_test": "Line 1195 does not use the phrase 'small disc.' Kai's observation of the port is framed through his POV, not through inventory."
+        },
+        {
+          "chapter_id": "chapter_12",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2324",
+          "problem": "Lena's port described in exposition: 'The neural link port at the base of her skull was visible where her hair was pulled back, a small circle of dark composite flush with the skin.' Near-identical to Ch 7's description.",
+          "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:2324, either cut the port description (the reader can visualize Lena by now) or use it to convey something new about her state in this scene — e.g., the port catching the room's light differently, or another character glancing at it.",
+          "acceptance_test": "Line 2324 does not contain 'small circle' or 'flush with the skin' or 'base of her skull' if those phrases have appeared in prior chapters."
+        },
+        {
+          "chapter_id": "chapter_16",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:3466; snapshots/cycle_01/FINAL_NOVEL.md:3496",
+          "problem": "Two port-touch gestures in one scene: 'Her hand went to the back of her neck, where the neural link port sat under her hair. She touched it and brought her hand back down' (3466) and 'her fingers resting against the small circle of the port' (3496). The gesture is doing the same dramatic work both times (Lena checking in with herself during a reflective moment).",
+          "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:3466 and 3496, keep one instance. The second (3496) is the stronger choice because it occurs as a final image — her fingers on the port while Yusuf and Margot wash dishes. Cut or replace line 3466 with a different gesture.",
+          "acceptance_test": "The biryani scene (Ch 16) contains one port-touch gesture, not two."
+        },
+        {
+          "chapter_id": "chapter_18",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:3804",
+          "problem": "Final chapter re-describes the port in full: 'the port at the base of her skull — the small circle of titanium, warm from the pool water, the interface through which her neural link connected to the outside world and through which Yusuf's patch had been installed during a night she remembered in full.' This re-teaches both the port's physical description and its narrative function.",
+          "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:3804, the towel-catching-on-the-port detail is fresh and physical — keep it. Cut the explanatory parenthetical about what the port does and when the patch was installed. The reader knows. 'The towel caught on the port, and she touched it with two fingers, the absent check.' That's enough.",
+          "acceptance_test": "Line 3804 contains the towel detail and the two-finger touch. No explanatory clause about the port's function or the patch installation."
+        }
+      ]
+    },
+    {
+      "pattern_id": "READER_RETEACH",
+      "severity": "HIGH",
+      "global_problem": "Established conditions — the wrist break's origin, Lena's childhood installation, the proprioception drift mechanism, the facility's environmental constants — are re-explained in substantially the same expository function across multiple chapters as if the reader has not retained the information from earlier. This is distinct from the prose-tic repetition of PROSE_WRIST_ACHE and PROSE_PORT_TOUCH: those patterns concern identical language, while this pattern concerns re-delivered information. A reader who has been with the book since Ch 1 is being re-taught what proprioception drift is in Ch 7, 14, 17, and 18; re-told that Lena's link was installed at four years old in Ch 2, 6, 7, and 18; re-informed that the facility hums at sixty hertz in Ch 3, 6, 9, and 14. The cumulative effect is condescension — the novel doesn't trust its reader to remember across chapters.",
+      "affected_chapters": ["chapter_07", "chapter_14", "chapter_16", "chapter_17", "chapter_18"],
+      "global_rewrite_principles": "After a condition is established (usually in its first chapter), subsequent references should assume the reader retains the information. A second reference can add new context or new emotional coloring but must not re-deliver the same explanatory content. Third and later references should be shorthand only: 'the drift,' 'the ache,' 'the quiet in her head.' If a reader might genuinely have forgotten a detail due to structural distance (e.g., Ch 18 referencing a Ch 3 detail), a single oblique reminder is acceptable — but it should feel like a character's lived awareness, not like a narrator briefing a newcomer.",
+      "chapter_hits": [
+        {
+          "chapter_id": "chapter_07",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:1133; snapshots/cycle_01/FINAL_NOVEL.md:1209; snapshots/cycle_01/FINAL_NOVEL.md:1219",
+          "problem": "Ch 7 re-explains the proprioception drift (line 1133: 'his hand arriving at the glass a fraction ahead of his decision to reach... the synthetic tissue queuing the motion before his conscious intent arrived') — this was already explained in full in Ch 1 (line 147-168). Ch 7 also re-explains Lena's lack of a baseline (line 1209-1219) which was established in Ch 2.",
+          "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:1133, compress the hand-override experiments to show what's new (he's learning to feel the gap and resist it) without re-explaining what the gap is. At lines 1209-1219, the Kai-Lena conversation can reference 'you don't have that' and 'you can't tell if it's new' without Kai re-stating the full explanation of what proprioception drift means.",
+          "acceptance_test": "Line 1133 describes the hand experiments through action and sensation without re-explaining predictive motor drift. Lines 1209-1219 reference the baseline gap in dialogue shorthand, not as a narrator's explanatory summary."
+        },
+        {
+          "chapter_id": "chapter_14",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2932; snapshots/cycle_01/FINAL_NOVEL.md:2936; snapshots/cycle_01/FINAL_NOVEL.md:2976",
+          "problem": "Ch 14 re-explains: the virus's relationship to the calibration network (line 2932, already established in Ch 5-6), Meridian's contract terms (line 2936, established in Ch 8), and Yusuf's Farah backstory (line 2976, revealed in Ch 3 and 12). Each of these has been established in prior chapters and is being re-taught to the reader in Kai's POV.",
+          "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:2932-2936, trust the reader to remember the virus and the contract. Replace explanatory clauses with Kai's lived reaction: 'The corporate fix had not stopped the virus from reaching him' conveys the same information without re-teaching the contract terms. At line 2976, Yusuf can reference 'my sister' without re-explaining the syndrome — Kai was in the room when Yusuf told the group in Ch 12.",
+          "acceptance_test": "Lines 2932-2976 do not re-explain the virus mechanism, the contract terms, or Voss-Kessler syndrome. Each reference assumes the reader's prior knowledge."
+        },
+        {
+          "chapter_id": "chapter_16",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:3330; snapshots/cycle_01/FINAL_NOVEL.md:3332; snapshots/cycle_01/FINAL_NOVEL.md:3334",
+          "problem": "The montage opening re-teaches each character's condition: Kai's proprioception-gap practice (3330, established in Ch 7), Lena's system silence (3332, established in Ch 13), Yusuf's patch installations and Farah's decline (3334, established in Ch 3, 12, 13). Each summary paragraph re-delivers information the reader has.",
+          "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:3330-3337, each character paragraph should show the four-week state through a specific moment rather than summarizing the condition. Kai: a moment on the track where the gap is different. Lena: a specific morning in the pool where the silence is easier. Yusuf: a specific Thursday call with Farah. These micro-scenes replace the summaries.",
+          "acceptance_test": "Each character paragraph in lines 3330-3337 contains at least one specific moment or sensory detail that was not present in any prior chapter. No paragraph re-explains a condition established before Ch 16."
+        },
+        {
+          "chapter_id": "chapter_17",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:3549; snapshots/cycle_01/FINAL_NOVEL.md:3567; snapshots/cycle_01/FINAL_NOVEL.md:3575; snapshots/cycle_01/FINAL_NOVEL.md:3623",
+          "problem": "During Lena's race, the narration repeatedly re-explains what the system used to do vs. what it does now: 'the ambient optimization layer that had been adjusting her stroke pattern... since she was four years old' (3551), 'Not the managed version the system used to run' (3575). During Kai's call room, line 3623 re-explains his unpatched status. The race scenes should be experienced, not explained.",
+          "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:3549-3575, reduce the before/after comparisons. The reader knows what Lena lost. During the race, let the absence speak through sensation: her arms getting tired, her catch getting sloppy, the field pulling away. One brief acknowledgment of the silence is enough ('Her lungs were working — just her lungs' or similar). At line 3623, cut the explanation of Kai's unpatched status; the reader knows.",
+          "acceptance_test": "Lena's race in Ch 17 contains no more than one before/after comparison with the pre-patch system. The rest is experienced in real-time sensation. Kai's call room section does not re-explain his patch status."
+        },
+        {
+          "chapter_id": "chapter_18",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:3744; snapshots/cycle_01/FINAL_NOVEL.md:3766; snapshots/cycle_01/FINAL_NOVEL.md:3800",
+          "problem": "The epilogue re-teaches: the proprioception drift and its origin in the calibration session (3744), Lena's stroke efficiency difference ('two seconds per hundred meters' established earlier, re-stated at 3766), and the data-freedom arc (3800). The final chapter should trust accumulated reader knowledge completely.",
+          "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:3744, show the phone-pickup moment without the parenthetical explaining what proprioception drift is. At line 3766, the two-seconds-per-hundred detail can stay (it's specific and earned) but should not be accompanied by explanation of why. At line 3800, the data-freedom observation can reference 'the gate' without re-explaining the licensing mechanics.",
+          "acceptance_test": "Ch 18 contains zero explanatory parentheticals about enhancement mechanics that have been established in prior chapters. Each condition reference is shorthand only."
+        }
+      ]
+    },
+    {
+      "pattern_id": "PROSE_FLAT_DEFAULT",
+      "severity": "MEDIUM",
+      "global_problem": "The word 'flat' appears 72 times in the manuscript, serving as the default descriptor for at least five distinct categories: emotional affect ('her face was flat'), vocal quality ('a flat sound with no humor in it'), light quality ('flat white light,' 'flat late-afternoon light'), surface quality ('flat plane'), and absence of feeling ('flat, emptied'). While some uses are precise and earned (Margot's face going 'flat' in Ch 15 matches her style-bible stress tell of losing performative texture), the frequency creates a monotone in the prose's sensory palette. When the same word describes light, faces, voices, sounds, and emotions across every chapter, it stops functioning as description and becomes verbal wallpaper.",
+      "affected_chapters": ["chapter_06", "chapter_12", "chapter_14", "chapter_15", "chapter_17"],
+      "global_rewrite_principles": "Reserve 'flat' for one primary usage — probably facial/emotional affect, where it carries the most specificity. Find distinct language for light (harsh, blanched, undifferentiated, clinical), for voices (emptied, drained, stripped), for sound (toneless, compressed, thin). The goal is not to eliminate 'flat' but to reduce it from 72 to 15-20 occurrences, each earning its place.",
+      "chapter_hits": [
+        {
+          "chapter_id": "chapter_06",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:1052",
+          "problem": "Two 'flat' descriptors in quick succession: 'He exhaled through his nose, a flat sound with no humor in it' — the modifier 'with no humor in it' already conveys what 'flat' is supposed to convey, making the word redundant.",
+          "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:1052, cut 'flat' — the clause 'a sound with no humor in it' is stronger alone.",
+          "acceptance_test": "Line 1052 does not use the word 'flat.' The sound is described through its quality, not through a catch-all adjective."
+        },
+        {
+          "chapter_id": "chapter_12",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2260; snapshots/cycle_01/FINAL_NOVEL.md:2308",
+          "problem": "'Flat late-afternoon light' (2260) and 'her face stayed flat' (2308) within 50 lines. The word is doing different jobs (describing light and facial expression) but arriving at the reader as the same note.",
+          "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:2260, replace 'flat late-afternoon light' with a more specific quality of the light (the late-afternoon Alps light has a particular amber or grey character — name it). Keep line 2308, where 'flat' is Margot's signature affect.",
+          "acceptance_test": "Line 2260 describes the light without 'flat.' Line 2308 retains 'flat' as character-specific affect."
+        },
+        {
+          "chapter_id": "chapter_14",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2868; snapshots/cycle_01/FINAL_NOVEL.md:3048",
+          "problem": "'His voice was still flat' (Tomas, 2868) and 'Kai's voice was flat' (3048) — two different characters described with identical 'voice was flat' construction in the same chapter.",
+          "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:2868, Tomas's post-crash voice should be described through his specific register — the style bible notes he gets quieter and his English narrows. Replace 'flat' with something that captures his particular version of emptiness: 'His voice was careful' or 'His voice was the voice of minor confusion.' At 3048, keep Kai's 'flat' — it matches his style-bible stress tell.",
+          "acceptance_test": "Line 2868 does not use 'flat.' Tomas's vocal quality is described in language consistent with his character profile."
+        },
+        {
+          "chapter_id": "chapter_15",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:3225; snapshots/cycle_01/FINAL_NOVEL.md:3263",
+          "problem": "'Her face was flat. Not composed. Flat.' (Margot, 3225) and 'The tone was flat in the way his voice went flat' (Kai, 3263). The repetition of 'flat' across two characters in the same chapter dilutes its force. The Ch 15 deliberate emphasis ('Not composed. Flat.') is effective; the subsequent 'flat' for Kai's voice reduces the earlier usage by proximity.",
+          "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:3263, replace Kai's 'flat' with a different word for his specific vocal emptiness: 'stripped,' 'level,' 'emptied.' Keep Margot's 'flat' at 3225, which is deliberately deployed for emphasis.",
+          "acceptance_test": "Line 3263 does not use 'flat.' Kai's vocal quality is described in his own register. Margot's 'flat' at 3225 remains the chapter's only facial/vocal 'flat.'"
+        },
+        {
+          "chapter_id": "chapter_17",
+          "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:3639",
+          "problem": "'The light was flat and white, broadcast-quality' — the stadium light is described with the same 'flat white' construction used for fluorescent lighting throughout the facility chapters. The Doha stadium should have its own light signature distinct from Kirchberg's fluorescents.",
+          "rewrite_direction": "At snapshots/cycle_01/FINAL_NOVEL.md:3639, describe the broadcast lighting through its specific qualities: the shadowlessness, the heat of it, the way it makes skin look. The point is that this light is different from Kirchberg — it should be described differently.",
+          "acceptance_test": "Line 3639 describes the stadium light without 'flat.' The light quality distinguishes the Doha venue from the Kirchberg facility."
+        }
+      ]
+    }
+  ]
+}

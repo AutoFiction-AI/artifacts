@@ -1,0 +1,72 @@
+{
+  "chapter_id": "chapter_12",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH12_CRAFT_INTERFACE_WRIST_CONTINUITY",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:51; snapshots/cycle_01/chapters/chapter_12.md:109",
+      "problem": "Margot's feed interface changes wrists inside the same scene: Kai reads her left hand going to her right wrist at the reveal, then the device is on her left wrist at the window. Because the patch's cost is specifically the loss of that interface, this local continuity contradiction is conspicuous rather than incidental.",
+      "rewrite_direction": "Make snapshots/cycle_01/chapters/chapter_12.md:51 and snapshots/cycle_01/chapters/chapter_12.md:109 consistent about which wrist carries the feed interface. If the device has moved for a reason, state that reason inside the same beat instead of letting the side switch read as an accident.",
+      "acceptance_test": "Pass if every reference to Margot's feed interface in snapshots/cycle_01/chapters/chapter_12.md:49-52 and snapshots/cycle_01/chapters/chapter_12.md:109-110 identifies the same wrist with no contradiction. Fail if the chapter still assigns the device to different wrists."
+    },
+    {
+      "finding_id": "CH12_CRAFT_SANITIZED_FEED_STAKE",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:49; snapshots/cycle_01/chapters/chapter_12.md:51; snapshots/cycle_01/chapters/chapter_12.md:109; snapshots/cycle_01/chapters/chapter_12.md:245; snapshots/cycle_01/chapters/chapter_12.md:246",
+      "problem": "The chapter's crucial fact that Margot is fighting to preserve feed access gets translated into tasteful inference and life-summary instead of embodied addictive need. Kai observes one sharp physical tell, but the payoff lands as abstract diagnosis: the narration explains that the feed is 'the only thing keeping her present' and reduces the loss to résumé language about being a former swimmer with nothing on the other side. Given the style bible's requirement that Margot's feed dependence read as genuine addiction with physical craving, this is sanitization at a central pressure point.",
+      "rewrite_direction": "In snapshots/cycle_01/chapters/chapter_12.md:49-52 and snapshots/cycle_01/chapters/chapter_12.md:109-110, keep Kai outside Margot's interior but add concrete observable feed-hunger behavior. Then replace the abstract explanation in snapshots/cycle_01/chapters/chapter_12.md:245-246 with body-based evidence Kai can witness: compulsive contact with the interface, withdrawal-like agitation, a visible drop when severance becomes real, or another specific tell that makes the addiction legible without summarizing her life for the reader.",
+      "acceptance_test": "Pass if a cold reader can infer from snapshots/cycle_01/chapters/chapter_12.md:49-52, snapshots/cycle_01/chapters/chapter_12.md:109-110, and snapshots/cycle_01/chapters/chapter_12.md:245-246 that Margot is opposing the patch because she needs the feed, using at least two concrete physical cues and no abstract narrator diagnosis to carry the motive. Fail if the motive still depends mainly on explanatory summary such as career-backstory or a statement that the feed is what keeps her alive or present."
+    },
+    {
+      "finding_id": "CH12_DIALOGUE_COMPOSED_POLICY_DEBATE",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:59; snapshots/cycle_01/chapters/chapter_12.md:67; snapshots/cycle_01/chapters/chapter_12.md:171; snapshots/cycle_01/chapters/chapter_12.md:175; snapshots/cycle_01/chapters/chapter_12.md:223; snapshots/cycle_01/chapters/chapter_12.md:233; snapshots/cycle_01/chapters/chapter_12.md:275",
+      "problem": "The chapter's dominant dialogue register is composed debate. Under immediate pressure, multiple characters produce finished thesis-speeches, balanced mini-diagnoses, and clean either-or summaries of the chapter's argument instead of speech shaped by interruption, self-protection, or partial understanding. Margot, Jin-seo, and Lena all sound more like articulate position papers than stressed participants in a live room, which collapses idiolect separation and triggers the exact 'written-about rather than spoken-through' failure the brief warns about.",
+      "rewrite_direction": "Roughen the exchanges in snapshots/cycle_01/chapters/chapter_12.md:59-67, snapshots/cycle_01/chapters/chapter_12.md:171-176, snapshots/cycle_01/chapters/chapter_12.md:223-242, and snapshots/cycle_01/chapters/chapter_12.md:253-275. Keep each character's core position, but break at least two of those arguments with interruption, false starts, sharper shorthand, evasion, or lines that answer only part of the previous question. Do not let multiple speakers neatly summarize both sides of the dilemma in polished language before the scene has forced them to live it.",
+      "acceptance_test": "Pass if, on a fresh read of snapshots/cycle_01/chapters/chapter_12.md:59-67, snapshots/cycle_01/chapters/chapter_12.md:171-176, snapshots/cycle_01/chapters/chapter_12.md:223-242, and snapshots/cycle_01/chapters/chapter_12.md:253-275, at least two of the four exchanges now contain audible pressure markers such as interruption, restart, messy compression, or partial response, and no more than one exchange ends in a polished either-or thesis statement. Fail if the scene still reads primarily as a sequence of clean summaries of the novel's themes."
+    },
+    {
+      "finding_id": "CH12_PROSE_POV_OVERREACH",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:151; snapshots/cycle_01/chapters/chapter_12.md:153; snapshots/cycle_01/chapters/chapter_12.md:157; snapshots/cycle_01/chapters/chapter_12.md:245; snapshots/cycle_01/chapters/chapter_12.md:307",
+      "problem": "Kai-close narration repeatedly outruns what Kai can actually know and speaks in a more essayed register than his style-bible profile supports. The prose tells us what Yusuf expected the room to feel, reduces the reaction to 'arithmetic,' asserts Margot's hidden life-summary as fact, and closes on a generalized statement about how arguments settle. That is thematic narration laid over Kai rather than Kai's own concrete perceptual language.",
+      "rewrite_direction": "Rework snapshots/cycle_01/chapters/chapter_12.md:151-159, snapshots/cycle_01/chapters/chapter_12.md:245-246, and snapshots/cycle_01/chapters/chapter_12.md:307 so the interpretation stays inside Kai's observable limits. Replace omniscient motive-claims and abstract thematic phrasing with what he can see, hear, remember, or physically compare, and let uncertainty remain uncertainty when he cannot truly know another person's interior.",
+      "acceptance_test": "Pass if those spans can be read without granting Kai settled knowledge of Yusuf's expectations or Margot's unspoken self-concept, and if the closing sentence lands on a concrete room-image or bodily sensation rather than a generalized truth about arguments. Fail if the narration still states private motives or abstract thematic conclusions as fact."
+    },
+    {
+      "finding_id": "CH12_CRAFT_UNDERSEEDED_PATCH_DECISION",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:275; snapshots/cycle_01/chapters/chapter_12.md:281; snapshots/cycle_01/chapters/chapter_12.md:297; snapshots/cycle_01/chapters/chapter_12.md:305",
+      "problem": "The chapter defines Lena's bind with clarity, then disperses into aftermath without producing the concrete turn that makes her immediate next-step legible. By the end she has only named the symmetry of the loss, the room empties, Yusuf offers questions, and the chapter closes on atmosphere. Given the boundary context's immediate move into her overnight procedure in Chapter 13, this scene underseeds the decision chain that gets her onto the rig.",
+      "rewrite_direction": "In snapshots/cycle_01/chapters/chapter_12.md:247-307, keep Lena's articulation of the bind but add a specific catalyst, commitment, or operational step that pushes her from dilemma to action: an explicit request to Yusuf, a deadline, a new symptom, a concrete concession, or another irreversible next move. The scene can remain unresolved in theme, but it needs a visible tactical change that points directly toward the procedure that follows.",
+      "acceptance_test": "Pass if, by the end of snapshots/cycle_01/chapters/chapter_12.md:247-307, a cold reader can state why Lena is on Yusuf's rig in the next chapter and what concrete event or choice moved her there. Fail if the chapter still ends with only generalized irresolution and no specific trigger beyond the fact that both options are bad."
+    },
+    {
+      "finding_id": "CH12_PROSE_ROOM_REACTION_TIC",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "snapshots/cycle_01/chapters/chapter_12.md:35; snapshots/cycle_01/chapters/chapter_12.md:137; snapshots/cycle_01/chapters/chapter_12.md:181; snapshots/cycle_01/chapters/chapter_12.md:199; snapshots/cycle_01/chapters/chapter_12.md:215; snapshots/cycle_01/chapters/chapter_12.md:247",
+      "problem": "The chapter relies on personified 'the room' reactions as a repeated prose shortcut: the room is quiet, waits, is still, registers a gap, sits with a crack in a voice, turns toward Lena. At six uses, this is no longer an isolated choice but a marked scaffold, and it flattens what should be a scene of distinct bodies recalculating in different ways.",
+      "rewrite_direction": "Revise snapshots/cycle_01/chapters/chapter_12.md:35, snapshots/cycle_01/chapters/chapter_12.md:137, snapshots/cycle_01/chapters/chapter_12.md:181, snapshots/cycle_01/chapters/chapter_12.md:199, snapshots/cycle_01/chapters/chapter_12.md:215, and snapshots/cycle_01/chapters/chapter_12.md:247 so most collective-reaction beats are reassigned to named characters or to Kai's own sensory read of the space. Leave, at most, one deliberate collective-room sentence if you want the effect once; the rest should not default to the same scaffold.",
+      "acceptance_test": "Pass if a reread of those cited lines finds no more than one personified 'the room [verb]' reaction sentence, and the replacement beats identify specific people or concrete sensory changes instead of a generic collective organism. Fail if the same collective scaffold still appears three or more times in the chapter."
+    }
+  ],
+  "summary": "FAIL across all four lenses. The chapter cleanly states the patch binary and lands Yusuf's Farah reveal, but it does not reach pass-level execution: the meeting's dialogue defaults to polished policy debate, the prose repeatedly steps outside Kai's perceptual limits, Margot's feed-dependence is abstracted into safe summary instead of embodied addiction, the final movement does not yet earn Lena's immediate Chapter 13 procedure, and a left-wrist/right-wrist continuity slip breaks local control."
+}

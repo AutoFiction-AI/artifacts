@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_01",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "C01_CRAFT_BODY_PLAN_CONTRADICTION",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:5; snapshots/cycle_01/chapters/chapter_01.md:33; snapshots/cycle_01/chapters/chapter_01.md:81; snapshots/cycle_01/chapters/chapter_01.md:105",
+      "problem": "Kai's enhancement layout changes inside the chapter: the setup frames his rebuild as leg grafts plus spinal bridge and visual processing, but the cafeteria beat suddenly gives him synthetic muscle in the forearm and the calibration scene introduces a visible bridge access port at a different body location. That breaks the continuity sheet's body plan and undermines trust in the chapter's core bodily-stakes reporting.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_01.md:5, snapshots/cycle_01/chapters/chapter_01.md:33, snapshots/cycle_01/chapters/chapter_01.md:81, and snapshots/cycle_01/chapters/chapter_01.md:105, pick one hardware configuration and keep it consistent. If canon remains leg-grafts-only, render the water-glass beat as predictive neural timing in a natural forearm and remove the visible external access-port description. If the forearm graft or exposed port is intentional, seed that hardware from its first mention and bring the canonical materials into alignment before release.",
+      "acceptance_test": "A cold reader can describe Kai's installed hardware once, after reading the revised lines 5, 33, 81, and 105, without contradiction. Pass only if those lines support the same body plan and no later sentence implies an unestablished forearm graft or visible external bridge port."
+    },
+    {
+      "finding_id": "C01_DIALOGUE_STYLE_BIBLE_ECHO",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:159; snapshots/cycle_01/chapters/chapter_01.md:195",
+      "problem": "Kai's key articulation of the proprioception drift echoes the style bible's calibration-only 'your hand is already there' reference closely enough to read as lifted template language, then repeats the same image in the chapter's closing sting. Because the copied material sits in a chapter-defining beat and recurs, it damages voice integrity on first read.",
+      "rewrite_direction": "Replace the phrasing at snapshots/cycle_01/chapters/chapter_01.md:159 and snapshots/cycle_01/chapters/chapter_01.md:195 with fresh Kai-specific language. Keep the bodily problem legible, but do not reuse the style-bible image, syntax, or the 'already there' formulation; the replacement should feel like Kai building a concrete analogy in real time, not reciting a pre-calibrated line.",
+      "acceptance_test": "Pass only if the revised lines 159 and 195 no longer use the 'hand ... already there' image or a close paraphrase, while a cold reader can still tell from those lines that Kai experiences execution arriving before conscious choice."
+    },
+    {
+      "finding_id": "C01_DIALOGUE_CLIPPED_TEXT_MESSAGE",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:67",
+      "problem": "Kai's mother's opening text, 'Colder than you probably,' reads like accidental truncation rather than living shorthand. It lands as dropped words or process damage, not as characterful texting, which breaks the realism of an exchange that otherwise does useful social work.",
+      "rewrite_direction": "Rewrite snapshots/cycle_01/chapters/chapter_01.md:67 in place, and lightly tune the adjacent exchange if needed at snapshots/cycle_01/chapters/chapter_01.md:69 and snapshots/cycle_01/chapters/chapter_01.md:71 so the first message is complete on first read while still sounding like Kai's mother texting casually.",
+      "acceptance_test": "Pass only if the first incoming text at line 67 is syntactically complete and immediately intelligible without the reader supplying missing words, and the surrounding exchange still reads as an ordinary mother-son text thread rather than exposition."
+    },
+    {
+      "finding_id": "C01_PROSE_HUM_DESCRIPTION_TIC",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:25; snapshots/cycle_01/chapters/chapter_01.md:27; snapshots/cycle_01/chapters/chapter_01.md:89; snapshots/cycle_01/chapters/chapter_01.md:189",
+      "problem": "The chapter reuses the same marked acoustic scaffold four times: the facility noise 'lived' in the walls and sat below conversation or above silence. By the third use, the phrasing stops reading as deliberate motif and starts reading as an autopilot sentence template.",
+      "rewrite_direction": "Rework the ambient-noise descriptions at snapshots/cycle_01/chapters/chapter_01.md:25, snapshots/cycle_01/chapters/chapter_01.md:27, snapshots/cycle_01/chapters/chapter_01.md:89, and snapshots/cycle_01/chapters/chapter_01.md:189 so only one passage keeps this exact walls/silence formulation. Later mentions should either do new sensory work on Kai's body or be cut.",
+      "acceptance_test": "Pass only if no more than one revised passage uses the 'lived in the walls / below conversation / above silence' scaffold, and each remaining reference to facility noise adds a distinct new effect on Kai rather than restating the same acoustic impression."
+    }
+  ],
+  "summary": "The chapter lands its mandatory engine cleanly: Kai posts the qualifying best, the calibration session makes the drift legible, and the body/autonomy split is on the page in concrete sensory terms. It still fails review because the manuscript destabilizes Kai's hardware canon mid-chapter, lifts calibration-only style-bible language into a chapter-defining beat, includes one obviously clipped text line, and repeats a marked hum/drone sentence scaffold often enough to feel templated rather than controlled."
+}

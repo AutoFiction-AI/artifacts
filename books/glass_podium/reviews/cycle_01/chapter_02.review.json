@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_02",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH02_CRAFT_TELEMETRY_OVEREXPLAINS",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_01/chapters/chapter_02.md:25; snapshots/cycle_01/chapters/chapter_02.md:29; snapshots/cycle_01/chapters/chapter_02.md:55; snapshots/cycle_01/chapters/chapter_02.md:75; snapshots/cycle_01/chapters/chapter_02.md:85; snapshots/cycle_01/chapters/chapter_02.md:89; snapshots/cycle_01/chapters/chapter_02.md:97; snapshots/cycle_01/chapters/chapter_02.md:101",
+      "problem": "The chapter's middle scene spends too much dramatic bandwidth translating an already legible violation into system explanation. The pool scene has already made the loss of agency clear on the page, but the telemetry review turns that pressure into an orderly briefing about stored variants, optimization cycles, drift parameters, and recalibration thresholds. The result is clear, but it is not tense enough: the institutional minimization arrives mostly as exposition instead of as a harder collision between what Lena felt and what the system can explain.",
+      "rewrite_direction": "Rework the review passage centered on snapshots/cycle_01/chapters/chapter_02.md:75, snapshots/cycle_01/chapters/chapter_02.md:85, snapshots/cycle_01/chapters/chapter_02.md:89, snapshots/cycle_01/chapters/chapter_02.md:97, and snapshots/cycle_01/chapters/chapter_02.md:101. Keep the minimum operational facts the chapter needs - the November variant, the 1.3-second divergence, Margot's acceptable-range framing, and the flag for Yusuf - but compress the engine explanation and use the saved space for a sharper mismatch between Lena's lived alarm and Margot's normalization. The scene should read less like a clean technical walkthrough and more like a human dismissal backed by data.",
+      "acceptance_test": "Reading revised snapshots/cycle_01/chapters/chapter_02.md:75-101, a cold reader can still state from the text what the link did, why Margot says it is within parameters, and why Lena leaves unconvinced. Fail if the scene requires paragraph-length explanation of how the optimization engine works, or if the scene ends as a clearer system description rather than a sharper institutional brush-off."
+    },
+    {
+      "finding_id": "CH02_PROSE_ENDING_OVERSTATES",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "snapshots/cycle_01/chapters/chapter_02.md:137; snapshots/cycle_01/chapters/chapter_02.md:145; snapshots/cycle_01/chapters/chapter_02.md:147; snapshots/cycle_01/chapters/chapter_02.md:159; snapshots/cycle_01/chapters/chapter_02.md:165; snapshots/cycle_01/chapters/chapter_02.md:167; snapshots/cycle_01/chapters/chapter_02.md:171; snapshots/cycle_01/chapters/chapter_02.md:173",
+      "problem": "The missing-time sequence lands cleanly when the words stop assembling and Lena realizes twenty-one minutes have vanished. After that arrival, the closing paragraphs shift into abstract paraphrase - data versus no data, telemetry versus absence, sleep as a matching analogy - instead of ending on fresh residue or a new concrete pressure. That is overstatement after arrival: the chapter explains the meaning of the blackout after the blackout is already legible.",
+      "rewrite_direction": "Revise the closing run at snapshots/cycle_01/chapters/chapter_02.md:159, snapshots/cycle_01/chapters/chapter_02.md:165, snapshots/cycle_01/chapters/chapter_02.md:167, snapshots/cycle_01/chapters/chapter_02.md:171, and snapshots/cycle_01/chapters/chapter_02.md:173 so it grows out of the already effective realization at snapshots/cycle_01/chapters/chapter_02.md:137-147. Keep the facts that Lena cannot point to telemetry proof and that she withholds the episode, but replace the abstract restatement with one concrete new end-state: a bodily fear about sleep, a changed interaction with the display or link, or an explicit choice about what she will not report.",
+      "acceptance_test": "In revised snapshots/cycle_01/chapters/chapter_02.md:159-173, the reader can point to one new concrete consequence that occurs after Lena recognizes the lost time: a choice, a bodily symptom, or a changed behavior toward her room, body, or system. Fail if the ending only rephrases that the flip turn was measurable and the twenty-one minutes were not."
+    }
+  ],
+  "summary": "Chapter 2 lands its required canon beats and shows no continuity contradiction, but it does not reach pass-level craft or prose. The flip turn and the missing-time beat both work; the problem is that the chapter keeps translating those strong bodily events into explanation, first through an overextended telemetry review and then through an ending that restates the blackout after it has already landed. Dialogue remains mostly character-true and does not surface a medium-plus issue on its own, but the chapter as a whole reads as solid setup rather than shortlist-level execution."
+}

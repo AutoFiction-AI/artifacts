@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_10",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH10_CRAFT_CONCEALMENT_LOGIC",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_02/chapters/chapter_10.md:5; snapshots/cycle_02/chapters/chapter_10.md:43; snapshots/cycle_02/chapters/chapter_10.md:69; snapshots/cycle_02/chapters/chapter_10.md:79",
+      "problem": "The chapter's concealment turn depends on Margot being able to suppress a Class III event, relabel two red alerts, and keep the raw feed off the institutional record, but the page never cashes out exactly why this system is defeasible. The opening note that the facility is not online yet is suggestive, not sufficient. As written, the pivotal lie reads a step too much like plot permission rather than a fully legible operational exploit.",
+      "rewrite_direction": "In snapshots/cycle_02/chapters/chapter_10.md:43-45 and snapshots/cycle_02/chapters/chapter_10.md:69-79, add one or two precise clarifying beats that connect the early-offline setup to the concealment mechanics: what the medical countdown would have transmitted if left alone, what Margot's personal wrist unit stores locally by default, what summary-sync strips out, and what recoverable trace still remains for a later manual pull.",
+      "acceptance_test": "Pass if a cold reader of revised snapshots/cycle_02/chapters/chapter_10.md:43-45 and snapshots/cycle_02/chapters/chapter_10.md:69-79 can state, without inference gaps, why Petra is not auto-notified immediately, which settings Margot changes, and what evidence still survives on the device for later discovery. Fail if the concealment still works only because the reader assumes the system is conveniently editable."
+    },
+    {
+      "finding_id": "CH10_CRAFT_UNEARNED_UNFLAGGED",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_02/chapters/chapter_10.md:113; snapshots/cycle_02/chapters/chapter_10.md:115; snapshots/cycle_02/chapters/chapter_10.md:157; snapshots/cycle_02/chapters/chapter_10.md:169; snapshots/cycle_02/chapters/chapter_10.md:189; snapshots/cycle_02/chapters/chapter_10.md:191",
+      "problem": "Lena's decision to leave the session unflagged is thematically explained, but the live scene under-earns the choice. She has just reread a protocol that clearly classifies loss of conscious awareness as Class III, and Margot does not provide a new data point or a sharply coercive lever strong enough to outweigh that knowledge. The chapter then leans on narrator summary about institutional conditioning to carry the turn after the fact.",
+      "rewrite_direction": "Strengthen snapshots/cycle_02/chapters/chapter_10.md:157-175 so Margot's lie exerts a concrete pressure Lena could plausibly submit to in the moment: a specific institutional consequence, a more exact manipulation of the telemetry language, a request not to trigger an automatic hold, or another immediate lever that turns Lena's hesitation into a scene-earned choice. Then let snapshots/cycle_02/chapters/chapter_10.md:189-191 register that already-established pressure rather than explaining the whole decision in abstract terms.",
+      "acceptance_test": "Pass if revised snapshots/cycle_02/chapters/chapter_10.md:157-175 gives Lena one clearly legible reason to delay reporting beyond generic fear of being grounded, and her action in snapshots/cycle_02/chapters/chapter_10.md:189 reads as a direct response to that pressure. Fail if the non-report still depends mainly on retrospective narration in snapshots/cycle_02/chapters/chapter_10.md:191 telling the reader why she ignored her own protocol reading."
+    },
+    {
+      "finding_id": "CH10_DIALOGUE_EXAMPLE_ECHO",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_02/chapters/chapter_10.md:147; snapshots/cycle_02/chapters/chapter_10.md:151; snapshots/cycle_02/chapters/chapter_10.md:153",
+      "problem": "Lena's key description of the desync, \"Like I was removed. Then returned,\" lands as a polished summary line instead of pressured speech and echoes the style-bible's calibration-only moved-aside/takeover formulation too closely. That damages voice integrity in the very beat where the chapter needs Lena to sound most locally and specifically herself.",
+      "rewrite_direction": "Replace the line in snapshots/cycle_02/chapters/chapter_10.md:147-153 with a more character-true attempt at precision: Lena should sound like she is checking the language in real time, and the revised phrasing should avoid the calibration-only removed/moved-aside/smoother-takes-over frame from the style bible. A self-correction or narrowed physical description would fit her profile better than a finished capsule line.",
+      "acceptance_test": "Pass if revised snapshots/cycle_02/chapters/chapter_10.md:147-153 gives Lena a desync description that reads as scene-pressured speech, not a quotable capsule, and does not echo the style-bible example's moved-aside/takeover wording or structure. Fail if the moment still hinges on a similarly packaged removal metaphor."
+    },
+    {
+      "finding_id": "CH10_PROSE_NEGATION_TIC",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_02/chapters/chapter_10.md:35; snapshots/cycle_02/chapters/chapter_10.md:93; snapshots/cycle_02/chapters/chapter_10.md:153; snapshots/cycle_02/chapters/chapter_10.md:171",
+      "problem": "The chapter leans repeatedly on the same absence ladder, especially stacked \"There was no...\" constructions, to render different kinds of emptiness: desynced stroke, clean telemetry, lost experience, and Margot's neutral offer. By the back half, the syntax starts to feel like a reusable template rather than fresh perception, which blunts otherwise strong prose control.",
+      "rewrite_direction": "Keep the strongest negation ladder, then revoice the others in snapshots/cycle_02/chapters/chapter_10.md:35, snapshots/cycle_02/chapters/chapter_10.md:93, snapshots/cycle_02/chapters/chapter_10.md:153, and snapshots/cycle_02/chapters/chapter_10.md:171 through more varied sentence shapes tied to POV: diagnostic language in Lena's telemetry read, embodied sensory language in the pool beat, and a sharper social read in the corridor exchange.",
+      "acceptance_test": "Pass if, after revision, at least three of the four cited passages no longer rely on a stacked \"There was no...\" absence ladder and each beat still preserves its specific dramatic function. Fail if multiple late-chapter beats continue to default to the same negation scaffold for different effects."
+    }
+  ],
+  "summary": "Fail. The chapter has real bodily charge, a convincing Margot addiction frame, and a clean POV handoff, but it does not yet clear shortlist standard. The pivotal concealment mechanics remain one step under-explained, Lena's choice not to report is explained more than scene-earned, her central desync line leaks calibration-only style-bible phrasing, and a repeated negation scaffold starts to read as autopilot prose."
+}

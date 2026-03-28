@@ -1,0 +1,216 @@
+{
+  "acceptance_targets": [
+    "[CH15_CRAFT_LOG_AUDIT_CONVENIENCE] In revised snapshots/cycle_02/chapters/chapter_15.md:47 through snapshots/cycle_02/chapters/chapter_15.md:75, a cold reader can answer three questions from the page alone: what specific event made Petra pull these logs now, why earlier sessions did not reach medical review, and what changed in access or audit procedure. If any of those remain implicit or guesswork, fail.",
+    "[CH15_DIALOGUE_COMPOSED_CONFESSION] Across revised snapshots/cycle_02/chapters/chapter_15.md:169 through snapshots/cycle_02/chapters/chapter_15.md:211, at least one major admission is disrupted by interruption or self-correction, and the exchange produces a new relational fact or decision on the page after the apology rather than only Kai's one-word acknowledgment and exit. If Margot can still deliver the addiction explanation as mostly uninterrupted polished blocks, fail.",
+    "[CH15_PETRA_STUTTGART_FEMALE_GYMNAST] Pass if the patient's sport and gender at line 3145 match the description at Chapter 9 line 1769. Fail if any factual detail contradicts between the two passages.",
+    "[SOMATIC_CH15] Pass if Ch 15 contains at most two wrist references and neither re-explains the too-fast healing or grafts. Fail if the chapter contains three or more wrist-ache/throb mentions or if any instance re-teaches the healing baseline.",
+    "[RED-011] Ch15 contains at most one wrist-ache reference that serves a scene-level purpose. The other instances are cut.",
+    "[CON-001] All time-to-Games references, dialogue time references, and environmental descriptions in Ch15 point to the same month. No marker contradicts the others by more than 2 weeks.",
+    "[length_chapter_15_min_words] Chapter word count is >= 4500 while preserving heading contract."
+  ],
+  "chapter_id": "chapter_15",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "In revised snapshots/cycle_02/chapters/chapter_15.md:47 through snapshots/cycle_02/chapters/chapter_15.md:75, a cold reader can answer three questions from the page alone: what specific event made Petra pull these logs now, why earlier sessions did not reach medical review, and what changed in access or audit procedure. If any of those remain implicit or guesswork, fail.",
+      "chapter_id": "chapter_15",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_15.md:47; snapshots/cycle_02/chapters/chapter_15.md:55; snapshots/cycle_02/chapters/chapter_15.md:69; snapshots/cycle_02/chapters/chapter_15.md:71; snapshots/cycle_02/chapters/chapter_15.md:75",
+      "finding_id": "CH15_CRAFT_LOG_AUDIT_CONVENIENCE",
+      "problem": "Petra's suspension scene depends on a late discovery of automatically generated telemetry and pathway records that the chapter itself says have always existed. Because the red-over-green mismatch is visually obvious and the logs are auto-produced, the turn reads as under-motivated convenience unless the text explains why medical oversight is seeing this data now, after months of sessions and after earlier virus scrutiny, rather than earlier.",
+      "rewrite_direction": "Revise snapshots/cycle_02/chapters/chapter_15.md:47, snapshots/cycle_02/chapters/chapter_15.md:53, snapshots/cycle_02/chapters/chapter_15.md:69, snapshots/cycle_02/chapters/chapter_15.md:71, and snapshots/cycle_02/chapters/chapter_15.md:75 so Petra states the exact trigger and blind spot: for example, that Tomas's crash triggered a one-time cross-system audit, that coach-side feed logs were not routed to medical until now, or that existing alerts watched acute failure rather than chronic zone drift. The scene needs an explicit why-now and why-not-earlier, not just the fact of discovery.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Across revised snapshots/cycle_02/chapters/chapter_15.md:169 through snapshots/cycle_02/chapters/chapter_15.md:211, at least one major admission is disrupted by interruption or self-correction, and the exchange produces a new relational fact or decision on the page after the apology rather than only Kai's one-word acknowledgment and exit. If Margot can still deliver the addiction explanation as mostly uninterrupted polished blocks, fail.",
+      "chapter_id": "chapter_15",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_15.md:171; snapshots/cycle_02/chapters/chapter_15.md:175; snapshots/cycle_02/chapters/chapter_15.md:181; snapshots/cycle_02/chapters/chapter_15.md:185; snapshots/cycle_02/chapters/chapter_15.md:189; snapshots/cycle_02/chapters/chapter_15.md:193; snapshots/cycle_02/chapters/chapter_15.md:197; snapshots/cycle_02/chapters/chapter_15.md:203; snapshots/cycle_02/chapters/chapter_15.md:207; snapshots/cycle_02/chapters/chapter_15.md:211",
+      "finding_id": "CH15_DIALOGUE_COMPOSED_CONFESSION",
+      "problem": "The Kai-Margot confrontation runs on polished confessional blocks instead of pressured speech. Kai mostly prompts; Margot returns finished mini-speeches that explain the feed's mechanics, diagnose the addiction, compress her history, and summarize her moral logic in clean thesis units. That creates composed dialogue in the chapter's defining exchange: thesis-speech, aphoristic closure, and mini-speech diagnosis all crowd out interruption, failed wording, or leverage shifts.",
+      "rewrite_direction": "Rework snapshots/cycle_02/chapters/chapter_15.md:169, snapshots/cycle_02/chapters/chapter_15.md:171, snapshots/cycle_02/chapters/chapter_15.md:175, snapshots/cycle_02/chapters/chapter_15.md:179, snapshots/cycle_02/chapters/chapter_15.md:201, and snapshots/cycle_02/chapters/chapter_15.md:211 so the exchange stops functioning as a prompt-and-confess ladder. Keep the core admissions, but make at least some of them arrive through interruption, self-correction, evasion that fails, or Kai forcing a different answer than the one Margot wants to give. The scene also needs a sharper end-state than Kai absorbing a completed statement set and leaving.",
+      "severity": "HIGH",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if the patient's sport and gender at line 3145 match the description at Chapter 9 line 1769. Fail if any factual detail contradicts between the two passages.",
+      "chapter_id": "chapter_15",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:3145",
+      "finding_id": "CH15_PETRA_STUTTGART_FEMALE_GYMNAST",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:3145",
+            "excerpt": "3145: \"It might have. Yes.\" For an instant Petra's face contracted around the eyes before control returned. \"I flagged a rejection risk at the Stuttgart facility four years ago. An enhancement incompatibility in a young gymnast. I wrote the report and filed it through proper channels. Meridian's medical oversight board reviewed my findings and downgraded the risk classification. She died eight months later from the condition I'd identified.\"",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          }
+        ],
+        "rewrite_direction": [
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:3145",
+            "excerpt": "3145: \"It might have. Yes.\" For an instant Petra's face contracted around the eyes before control returned. \"I flagged a rejection risk at the Stuttgart facility four years ago. An enhancement incompatibility in a young gymnast. I wrote the report and filed it through proper channels. Meridian's medical oversight board reviewed my findings and downgraded the risk classification. She died eight months later from the condition I'd identified.\"",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "problem": "Petra refers to the Stuttgart patient as 'a young gymnast' who 'died eight months later' using female pronouns ('She died'). Chapter 9 (line 1769) identifies the same patient as 'Marius Koch. Decathlete. Twenty-four.' with male pronouns. This is a gender, sport, and anonymity contradiction in a backstory that is central to Petra's characterization and moral positioning in both chapters.",
+      "rewrite_direction": "At snapshots/cycle_02/FINAL_NOVEL.md:3145, revise 'a young gymnast' and 'She died' to match Chapter 9's details (Marius Koch, decathlete, male pronouns), or coordinate with the Ch 9 revision to establish a single consistent version. If the anonymous version is preferred for Ch 15's different audience context (Petra is talking to Margot, not Yusuf), ensure the sport and gender still match.",
+      "severity": "HIGH",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if Ch 15 contains at most two wrist references and neither re-explains the too-fast healing or grafts. Fail if the chapter contains three or more wrist-ache/throb mentions or if any instance re-teaches the healing baseline.",
+      "chapter_id": "chapter_15",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:3022; snapshots/cycle_02/FINAL_NOVEL.md:3191; snapshots/cycle_02/FINAL_NOVEL.md:3211; snapshots/cycle_02/FINAL_NOVEL.md:3251",
+      "finding_id": "SOMATIC_CH15",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:3022",
+            "excerpt": "3022: \"Don't.\" His wrist ached. His shoulder ached. \"Don't make this about Farah right now. A kid is paralyzed and you've been sitting on this.\" He gestured at the monitors. \"All of it.\"",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:3191",
+            "excerpt": "3191: His left wrist ached. It always ached now, the bone healed too fast by the synthetic grafts, a wrongness in the joint that flared with barometric shifts. Spring in the Alps was all pressure changes. He flexed his hand open and closed as he crossed the dock. The ache was useful. It had a location.",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:3211",
+            "excerpt": "3211: He'd come out here with things to say and she'd said them first. His wrist throbbed. He flexed his hand against the cold rail.",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:3251",
+            "excerpt": "3251: Kai stood. The backs of his thighs were cold. His wrist throbbed with the pressure change. The mountains stayed where they were, patient and indifferent.",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          }
+        ],
+        "rewrite_direction": [
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:3022",
+            "excerpt": "3022: \"Don't.\" His wrist ached. His shoulder ached. \"Don't make this about Farah right now. A kid is paralyzed and you've been sitting on this.\" He gestured at the monitors. \"All of it.\"",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:3191",
+            "excerpt": "3191: His left wrist ached. It always ached now, the bone healed too fast by the synthetic grafts, a wrongness in the joint that flared with barometric shifts. Spring in the Alps was all pressure changes. He flexed his hand open and closed as he crossed the dock. The ache was useful. It had a location.",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:3211",
+            "excerpt": "3211: He'd come out here with things to say and she'd said them first. His wrist throbbed. He flexed his hand against the cold rail.",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "problem": "Four wrist references in a single chapter: 'His wrist ached. His shoulder ached.' (3022); 'His left wrist ached. It always ached now, the bone healed too fast by the synthetic grafts, a wrongness in the joint that flared with barometric shifts' (3191, full re-explanation); 'His wrist throbbed' (3211); 'His wrist throbbed with the pressure change' (3251). By line 3251 the wrist has ached or throbbed four times in roughly 230 lines. The line 3191 instance is the worst offender -- it re-teaches 'healed too fast' and 'barometric shifts' as though this is new information.",
+      "rewrite_direction": "Revise snapshots/cycle_02/FINAL_NOVEL.md:3022; snapshots/cycle_02/FINAL_NOVEL.md:3191; snapshots/cycle_02/FINAL_NOVEL.md:3211. Cut to at most two wrist references in Ch 15. Keep line 3022 ('His wrist ached. His shoulder ached.' -- the paired ache during confrontation works as punctuation). Cut or compress lines 3191, 3211, and 3251. At line 3191, the 'barometric shifts' detail is the one new observation -- keep that in a single clause ('The spring pressure changes found the wrist') and cut the re-explanation. At lines 3211 and 3251, either cut entirely or compress to a single word nested in the action.",
+      "severity": "MEDIUM",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch15 contains at most one wrist-ache reference that serves a scene-level purpose. The other instances are cut.",
+      "chapter_id": "chapter_15",
+      "cycle": 2,
+      "evidence": "Ch15 line 3191: 'His left wrist ached. It always ached now'; line 3211: 'His wrist throbbed. He flexed his hand against the cold'; line 3229: 'He pressed his wrist against the cold safety rail until the metal bit into bone'; line 3251: 'His wrist throbbed with the pressure change'",
+      "finding_id": "RED-011",
+      "problem": "Kai's wrist ache is re-proved four times in Ch15 without materially new information. By Ch15, the wrist has been proved at least 12 times across the manuscript. The 'It always ached now' line (3191) explicitly states that the condition is permanent and unremarkable \u2014 then the chapter proves it three more times anyway.",
+      "rewrite_direction": "In Ch15, keep one wrist reference \u2014 the rail-pressing moment at line 3229, where the pain serves a dramatic function (grounding Kai during Margot's confession). Cut the other three; they add nothing the reader doesn't already carry.",
+      "severity": "HIGH",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "All time-to-Games references, dialogue time references, and environmental descriptions in Ch15 point to the same month. No marker contradicts the others by more than 2 weeks.",
+      "chapter_id": "chapter_15",
+      "cycle": 2,
+      "evidence": "Ch15 line 3059: 'Spring light cut farther into the room than it had a month ago\u2026 snow had retreated above the tree line. Brown earth below, mud and scree'; Ch15 line 3181: 'breath smoking in the spring air'; Ch15 line 3255: 'the opening ceremony was five weeks away'; Ch15 line 3121: Petra says 'You identified the feed as a transmission risk four months ago'",
+      "finding_id": "CON-001",
+      "problem": "Ch15 contains irreconcilable time markers. The 'five weeks to opening ceremony' (late July Games) places the chapter in mid-June. The 'four months ago' dialogue (referring to February events) also points to June. But ALL environmental descriptions \u2014 spring thaw, snowmelt, mud and scree, breath smoking in cold air \u2014 depict March/April conditions at 2,100m in the Bernese Alps. By mid-June at this altitude, snow would be limited to peaks, the landscape would be green, and breath would not smoke. The chapter cannot be both mid-June (per time-to-Games) and early spring (per physical descriptions).",
+      "rewrite_direction": "Choose one timeline anchor and revise the other. If Ch15 is mid-June (five weeks to Games), update the environmental descriptions to late spring/early summer: longer light, green slopes, warm air, no breath-smoking. If Ch15 is early spring (~7 weeks after arrival), change 'five weeks to the opening ceremony' to a larger number (~18-20 weeks) and change 'four months ago' to '5-6 weeks ago'.",
+      "severity": "CRITICAL",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Chapter word count is >= 4500 while preserving heading contract.",
+      "chapter_id": "chapter_15",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_15.md:1",
+      "finding_id": "length_chapter_15_min_words",
+      "problem": "Chapter is below projected_min_words (3562 < 4500).",
+      "rewrite_direction": "Add causally necessary scene material that strengthens the chapter engine, increases pressure, and lands the planned state shift without filler.",
+      "severity": "HIGH",
+      "source": "length_guardrail",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "has_locator_excerpts": true,
+  "input_snapshot_hash": "21f964bf36c469f1d956b355477b1437650f8106b83d6f8ece6023d6ad6fec7c",
+  "must_fix_count": 7,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "original_snapshot_file": "snapshots/cycle_02/chapters/chapter_15.md",
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This novel asks what it means to own a body that has been partially replaced, optimized, or networked. The answer cannot be abstract. The physical horror of enhancement failure \u2014 sensory blackouts, autonomous muscle firing, personality thinning \u2014 must be rendered with visceral specificity. The intimacy between enhanced people must confront the fact that their bodies are partly engineered, and the strangeness of that must be present on the page, not elided. Margot's addiction to the sensory feed must be shown as a genuine addiction with genuine physical craving, not as an interesting character trait. Tomas's paralysis must be ugly, specific, and permanent \u2014 not a tidy plot device. The corporate betrayal must feel institutional, not melodramatic. When the novel asks its readers to sit with discomfort \u2014 a body that moves without consent, a mind that thins to nothing, an addiction that destroys someone else \u2014 the prose must stay present and not retreat to safety. The specific is always braver than the general.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism at the point of consequence is a craft failure. When a body crashes into a wall at sprint speed, the reader should feel the impact \u2014 bone, skin, blood, the specific geometry of injury. When Margot feels Tomas's spinal impact through the feed, the sensation must be rendered in full: the compression, the silence of nerves going dead, the phantom that stays after she disconnects. When Kai's body moves without his consent during sex, the reader must experience the uncanny specificity of reflexes that are not his. When Lena loses time, the gap must feel real \u2014 not a graceful ellipsis but a genuine absence. Every scene where the novel touches difficult material \u2014 bodily horror, addiction, institutional betrayal, the vulnerability of intimacy \u2014 must be rendered with the same specificity given to any other moment. Retreat into summary, metaphor, or tasteful vagueness at these moments destroys the novel's central claim that bodies matter.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for all characters in spoken English. Uncontracted forms are reserved for emphasis, deliberate formality, or character-specific moments (Lena's slightly formal second-language register, Petra's clinical precision). Any uncontracted line in casual dialogue should be checked: does this character have a reason to be formal here?",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Alternate high-intensity chapters with reflective or quiet ones. Vary scene count, dialogue density, and narrative distance across consecutive chapters. A chapter driven by confrontation should not be followed by another confrontation. A chapter heavy in dialogue should be followed by one that relies more on interiority and physical description. The quiet chapters (7, 16, parts of 18) should not feel like connective tissue between the 'real' scenes \u2014 they carry the human baseline that makes crisis meaningful. Some chapters should be physically compressed (a single long scene) and others structurally looser (multiple shorter scenes with white space between them).",
+      "diction": "Contemporary literary \u2014 technically precise when inhabiting engineering or medical perspectives, grounded in body experience when inhabiting athletic or intimate perspectives. The enhancement technology should be described through felt sensation, not through exposition. How a neural link feels, not how it works. The novel's primary sensory vocabulary is the body: muscle, bone, nerve, heat, pressure, the experience of a body doing things its owner did not command.",
+      "forbidden_drift_patterns": [
+        "Purple proprioception \u2014 the sensory descriptions of enhancement should remain specific and physical, not drift into poetic abstraction about the nature of consciousness",
+        "Exposition dumps about how the technology works \u2014 establish through character experience, not through narrator explanation",
+        "Uniform crisis register \u2014 not every chapter should feel urgent; some should feel ordinary, empty, or quiet, and the prose should match",
+        "Philosophical narrator \u2014 the narration should not editorialize about the body-autonomy theme; the events carry the argument",
+        "Symmetrical emotional beats \u2014 not every character should have matching epiphanies or matching moments of clarity; some characters end muddled",
+        "Mechanical metaphors for human experience \u2014 the point is that these people are not machines, even when their bodies partly are; do not let the prose treat them as systems",
+        "Identical blackout descriptions \u2014 each sensory disruption scene must find different language for the experience rather than reusing void/static/white metaphors"
+      ],
+      "narrative_distance": "Close third person, rotating POV by chapter. The narration inhabits each POV character's sensory and cognitive world \u2014 what they notice, how they process sensation, what language they would use internally. The narration should not be smarter, more articulate, or more philosophically aware than the character whose head we are in. Ensemble chapters may shift between characters within scenes but must establish clear transitions.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Variable across chapters and within chapters. Technical/calibration scenes: precise, measured, slightly clinical. Sensory/feed scenes: fractured, overlapping, synaesthetic. Interpersonal scenes: looser, more conversational, allowing silence and dead space. Action/blackout scenes: compressed, fragmented, physical. Quiet scenes: unhurried, sensory, present tense of ordinary experience. No single rhythm should dominate the novel.",
+      "sensory_bias": [
+        "proprioception",
+        "tactile",
+        "kinesthetic",
+        "temperature",
+        "pressure",
+        "spatial awareness"
+      ]
+    }
+  }
+}

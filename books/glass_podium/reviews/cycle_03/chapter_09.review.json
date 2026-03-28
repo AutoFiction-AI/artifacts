@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_09",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CRAFT_CONTINUITY_PETRA_STUTTGART_CASE",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_03/chapters/chapter_09.md:300; snapshots/cycle_03/chapters/chapter_09.md:304; snapshots/cycle_03/chapters/chapter_09.md:308; snapshots/cycle_03/chapters/chapter_09.md:312",
+      "problem": "Petra's formative Stuttgart anecdote contradicts the continuity sheet at the exact moment the chapter uses it to justify her choice. On the page, the overruled death becomes an unnamed twenty-four-year-old female gymnast; the continuity sheet's canonical case is Marius Koch, a male decathlete whose graft-rejection warning Petra escalated and Meridian overruled. This is a direct continuity break in a chapter-defining motivation beat.",
+      "rewrite_direction": "Revise the Petra backstory block at snapshots/cycle_03/chapters/chapter_09.md:300, snapshots/cycle_03/chapters/chapter_09.md:304, snapshots/cycle_03/chapters/chapter_09.md:308, and snapshots/cycle_03/chapters/chapter_09.md:312 so it matches the canonical Stuttgart case on identity, sport, and outcome. If the intent is to introduce a second overruled death rather than the known Marius Koch case, make that explicit in the same local span and distinguish it cleanly from Petra's established continuity instead of letting the scene silently overwrite it.",
+      "acceptance_test": "Pass if a reader comparing the revised material at snapshots/cycle_03/chapters/chapter_09.md:300 through snapshots/cycle_03/chapters/chapter_09.md:317 against the continuity sheet can tell unambiguously whether Petra is describing the canonical Marius Koch decathlete case or a newly established separate case, with no mismatch in athlete identity, discipline, or outcome. Fail if the revised scene still presents a contradictory unnamed gymnast while relying on the same canonical motivation beat."
+    },
+    {
+      "finding_id": "DIALOGUE_COMPOSED_PETRA_DIAGNOSES",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_03/chapters/chapter_09.md:316; snapshots/cycle_03/chapters/chapter_09.md:328; snapshots/cycle_03/chapters/chapter_09.md:336; snapshots/cycle_03/chapters/chapter_09.md:397; snapshots/cycle_03/chapters/chapter_09.md:401",
+      "problem": "Petra's confrontation keeps tipping into composed dialogue: mini-speech diagnosis, aphoristic institutional critique, and balanced antithesis that sound written to land rather than spoken under late-night pressure. The scene already gives Petra precision and authority; lines like the protocols diagnosis, the calculation speech, and the defamation-versus-burial warning make her read too much like the chapter's thesis-delivery system and too little like a tired medical director deciding in real time.",
+      "rewrite_direction": "Roughen Petra's key speeches at snapshots/cycle_03/chapters/chapter_09.md:316, snapshots/cycle_03/chapters/chapter_09.md:328, snapshots/cycle_03/chapters/chapter_09.md:336, snapshots/cycle_03/chapters/chapter_09.md:397, and snapshots/cycle_03/chapters/chapter_09.md:401. Keep the same decisions and institutional stakes, but break at least some of the finished diagnoses into more scene-pressured speech: qualifiers, partial restarts, concrete clinical or legal phrasing, or friction from Yusuf answering before Petra can complete the clean thematic formulation. Avoid letting Petra validate Yusuf through polished summary statements that read like calibration prose rather than overheard speech.",
+      "acceptance_test": "Pass if the revised exchanges anchored at snapshots/cycle_03/chapters/chapter_09.md:316, snapshots/cycle_03/chapters/chapter_09.md:328, and snapshots/cycle_03/chapters/chapter_09.md:397 still communicate Petra's past failure, her choice not to report him, and her evidence-handling warning, but at least two of the current quotable diagnosis lines are replaced by messier pressure-true speech with interruption, self-correction, hedging, or concrete operational language. Fail if Petra still gets multiple uninterrupted lines that neatly paraphrase the chapter's institutional thesis or land as mentor-ready aphorisms."
+    },
+    {
+      "finding_id": "PROSE_THEMATIC_PARAPHRASE_AFTER_IMAGE",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_03/chapters/chapter_09.md:102; snapshots/cycle_03/chapters/chapter_09.md:106; snapshots/cycle_03/chapters/chapter_09.md:149; snapshots/cycle_03/chapters/chapter_09.md:433; snapshots/cycle_03/chapters/chapter_09.md:439",
+      "problem": "The chapter repeatedly lands a vivid operational image or datapoint and then explains its meaning in abstract body-autonomy language the reader already has. After the sensory panes go blank, after Yusuf links the virus to the contract cadence, and again in the closing matrix recap, the narration translates concrete scene pressure into thesis prose. That weakens the image and nudges the narration toward being more thematically articulate than Yusuf's immediate thought process needs.",
+      "rewrite_direction": "Trim the second-order paraphrase in the local spans around snapshots/cycle_03/chapters/chapter_09.md:102, snapshots/cycle_03/chapters/chapter_09.md:106, snapshots/cycle_03/chapters/chapter_09.md:149, snapshots/cycle_03/chapters/chapter_09.md:433, and snapshots/cycle_03/chapters/chapter_09.md:439. Let the blank sensory panes, the dev-path evidence, the matrix values, and Yusuf's bodily responses carry more of the meaning. If the ending keeps reflective language, tie it to a new technical result or altered decision rather than rephrasing the already-established safe-versus-fast tradeoff in abstract terms.",
+      "acceptance_test": "Pass if a reader can infer from the revised passages at snapshots/cycle_03/chapters/chapter_09.md:102 through snapshots/cycle_03/chapters/chapter_09.md:106 and snapshots/cycle_03/chapters/chapter_09.md:433 through snapshots/cycle_03/chapters/chapter_09.md:443 that the virus preserves motion while stripping personhood and that Yusuf's patch tradeoff remains unresolved, without the prose needing equivalent thesis lines such as the current abstract paraphrases. Fail if the revision still follows strong concrete images with explicit thematic summary instead of new scene action, bodily reaction, or fresh technical evidence."
+    }
+  ],
+  "summary": "FAIL. The chapter is technically legible and it lands the required preparation beats, but it falls below pass level on three fronts: Petra's Stuttgart backstory breaks canonical continuity, her confrontation speeches are too composed and thesis-forward for the scene pressure, and the prose repeatedly explains images that have already landed instead of trusting the chapter's concrete evidence."
+}

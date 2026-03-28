@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_10",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH10_CRAFT_SANITIZATION_DRIFT",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:35; snapshots/cycle_01/chapters/chapter_10.md:67; snapshots/cycle_01/chapters/chapter_10.md:103; snapshots/cycle_01/chapters/chapter_10.md:117",
+      "problem": "The chapter softens Margot's addiction and concealment at the point of consequence. The feed high is rendered as beautiful transcendence, then the aftermath shifts into narrator summary about what she should do and what the session log would morally prove. The style bible and context pack require Margot's feed dependence to read as ordinary, bodily, and ugly, not as an interesting rush followed by explanatory conscience. This is sanitization drift and a moral safety valve: the prose tells the reader the choice is wrong instead of making the compulsion and betrayal feel physically sordid on the page.",
+      "rewrite_direction": "Rework snapshots/cycle_01/chapters/chapter_10.md:35 through snapshots/cycle_01/chapters/chapter_10.md:38, snapshots/cycle_01/chapters/chapter_10.md:67 through snapshots/cycle_01/chapters/chapter_10.md:68, and snapshots/cycle_01/chapters/chapter_10.md:103 through snapshots/cycle_01/chapters/chapter_10.md:121. Keep the plot beats, but replace the narrated ethical accounting with concrete addictive behavior: what exact sensation in Lena's feed hooks Margot, what disconnect does to Margot's unenhanced body, and what specific concealment actions she takes because she wants access more than she wants Lena safe.",
+      "acceptance_test": "Pass if the revised equivalents of snapshots/cycle_01/chapters/chapter_10.md:35 through snapshots/cycle_01/chapters/chapter_10.md:38 and snapshots/cycle_01/chapters/chapter_10.md:103 through snapshots/cycle_01/chapters/chapter_10.md:121 let a reader identify all three of these on the page: one concrete bodily reward Margot is chasing in the feed, one concrete bodily comedown symptom after disconnecting, and one observable concealment action on the log, alert, or device. Fail if the passage still depends on narrator paraphrase about what a coach should do or what the session would reveal."
+    },
+    {
+      "finding_id": "CH10_PROSE_MARGOT_VOICE_DRIFT",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:25; snapshots/cycle_01/chapters/chapter_10.md:31; snapshots/cycle_01/chapters/chapter_10.md:37; snapshots/cycle_01/chapters/chapter_10.md:55; snapshots/cycle_01/chapters/chapter_10.md:81",
+      "problem": "Margot's close-third narration drifts above her style-bible register into essayistic abstraction and machine-language. Phrases such as consciousness 'thinning,' Lena's 'interior architecture' collapsing, the system running the body 'the way a program runs a machine,' and the room/air metaphor chain sound more philosophical and concept-heavy than Margot's blunt, physical, stripped-down voice. The style bible explicitly warns against mechanical metaphors for human experience and against narration sounding smarter than the focalizer; this passage does both, which weakens POV fidelity and dulls the bodily horror of the desync.",
+      "rewrite_direction": "Rework snapshots/cycle_01/chapters/chapter_10.md:25 through snapshots/cycle_01/chapters/chapter_10.md:38, snapshots/cycle_01/chapters/chapter_10.md:55 through snapshots/cycle_01/chapters/chapter_10.md:56, and snapshots/cycle_01/chapters/chapter_10.md:81 through snapshots/cycle_01/chapters/chapter_10.md:82 so the desync is legible through concrete feed changes Margot would actually notice as a former swimmer and coach: timing, pressure, resistance, pacing response, breath pattern, the wrongness of an unoccupied stroke. Replace the machine and room abstractions with body-first vocabulary that stays inside Margot's harsher, simpler register.",
+      "acceptance_test": "Pass if the revised equivalents of snapshots/cycle_01/chapters/chapter_10.md:25 through snapshots/cycle_01/chapters/chapter_10.md:38 and snapshots/cycle_01/chapters/chapter_10.md:81 through snapshots/cycle_01/chapters/chapter_10.md:82 give a cold reader at least three concrete sensory or kinesthetic signs that Lena has gone absent, and the passage no longer explains the effect through broad concepts like programs, machines, boundaries, or interior architecture. Fail if the desync still reads primarily as abstract diagnosis rather than as a physical wrongness in the feed."
+    },
+    {
+      "finding_id": "CH10_CRAFT_OVERSTATEMENT_ENDING",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "snapshots/cycle_01/chapters/chapter_10.md:149; snapshots/cycle_01/chapters/chapter_10.md:203; snapshots/cycle_01/chapters/chapter_10.md:211; snapshots/cycle_01/chapters/chapter_10.md:233; snapshots/cycle_01/chapters/chapter_10.md:235",
+      "problem": "The chapter keeps re-proving Lena's data-versus-sensation conflict after it is already legible. By the time Lena reads the Class III protocol and hears Margot refuse the diagnosis, the reader understands both the medical stakes and the institutional conditioning. The later reflections repeat the same thesis twice: first in the mid-scene explanation of what the Meridian program taught her, then again in the closing self-justification. That second pass adds emphasis, not new pressure.",
+      "rewrite_direction": "Compress snapshots/cycle_01/chapters/chapter_10.md:203 through snapshots/cycle_01/chapters/chapter_10.md:212 and snapshots/cycle_01/chapters/chapter_10.md:233 through snapshots/cycle_01/chapters/chapter_10.md:237 so Lena's conditioning to trust data is stated once, tied directly to her decision not to flag the session, and then converted into a sharper final consequence or image. Preserve the must-land beats: she knows the event was severe, Margot offers a misleading off-ramp, and Lena leaves the session unflagged.",
+      "acceptance_test": "Pass if the revised material corresponding to snapshots/cycle_01/chapters/chapter_10.md:203 through snapshots/cycle_01/chapters/chapter_10.md:237 states Lena's learned trust in data once, uses it to explain why she does not report the event, and then ends on one concrete sensory or relational consequence. Fail if both the mid-scene reflection and the closing paragraph still separately paraphrase the same lesson that the system's numbers outrank her own experience."
+    }
+  ],
+  "summary": "Chapter 10 lands the required plot beats, keeps continuity intact, and stays in past tense; the Lena/Margot dialogue is also mostly consistent with the style bible's registers and contraction expectations. It still fails at award, craft, and prose level because Margot's POV repeatedly turns addiction and desync into polished conceptual prose instead of blunt bodily experience, and the second half over-explains Lena's data-conditioned non-reporting after the chapter has already made that conflict clear."
+}

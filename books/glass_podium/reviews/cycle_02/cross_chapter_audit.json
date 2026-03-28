@@ -1,0 +1,327 @@
+{
+  "cycle": 2,
+  "summary": "Audited all 18 chapters of the cycle 02 manuscript (55,427 prose words across 1,811 prose lines) for cross-chapter redundancy and consistency. REDUNDANCY: Found 9 setting re-description / character re-introduction defects concentrated in the first half of the novel (Ch1-Ch5 and Ch7-Ch8 adjacent-chapter pairs are worst). Found proof-of-baseline accumulation for Kai's wrist ache (re-proved without new leverage in 8+ chapters after the initial injury, with Ch11 and Ch15 each containing 4 redundant mentions). Yusuf's glasses-gesture image appears 22 times across the manuscript (target 8-10); worst chapters: Ch6 (5), Ch14 (5), Ch12 (3). 'He' sentence-opener rate is 7.1% manuscript-wide (285/4041 sentences), exceeding the 7% threshold, with Ch9 at 15.2% and Ch11 at 14.5% as the worst offenders. Em-dash density is 1.8% (32/1811 prose lines) — well under threshold. No hedge patterns exceed the 1-per-800-words threshold. Near-verbatim 10-word matches found across chapter boundaries: 'neural link port at the base of her skull' (Ch2/Ch11), 'quarters on the third floor of the residential wing' (Ch2/Ch4). CONSISTENCY: Found a critical timeline contradiction in Ch15 where 'five weeks to the opening ceremony' (pointing to mid-June) coexists with spring-thaw descriptions (pointing to March/April) and a 'four months ago' dialogue reference that is consistent with the June timeline but not the spring descriptions. Ch11 says Kai's crash was 'six weeks ago' while Ch14 (later in the narrative) says it was 'five weeks ago' — the clock runs backward. Tomas's name spelling shifts from accented 'Tomás' (19 instances, Ch3-4) to unaccented 'Tomas' (57 instances, Ch6+). Lena's neural port location alternates between 'base of skull' (8 instances) and 'back of neck' / 'at her neck' (5+ instances) without distinction.",
+  "redundancy_findings": [
+    {
+      "finding_id": "RED-001",
+      "category": "redundancy",
+      "subcategory": "setting_re_description",
+      "severity": "HIGH",
+      "chapter_id": "chapter_02",
+      "evidence": "Ch1 line 29: 'bed, a desk, a bathroom, and a window facing the eastern ridge. The wall-mounted diagnostic display was already active, scrolling data… All green'; Ch2 line 326: 'single bed, desk, bathroom, window facing the ridge. The wall display glowed soft green with neural link connectivity, system load, calibration schedule'",
+      "problem": "Adjacent-chapter re-description of athletes' quarters. Ch1 already taught the reader the room layout (bed/desk/bathroom/window/diagnostic display/green status). Ch2 re-inventories the same elements one chapter later through Lena's POV. The reader does not need to re-learn the room.",
+      "rewrite_direction": "In Ch2, cut the bed/desk/bathroom/window inventory. Enter Lena's room through what is specific to her evening state — the wall display's biomarker ticker or the book on the bed — not through the furniture list the reader already has from Ch1.",
+      "acceptance_test": "Ch2 quarter-entry passage no longer lists bed, desk, bathroom, or window as a spatial inventory. Room is established through character-specific detail only."
+    },
+    {
+      "finding_id": "RED-002",
+      "category": "redundancy",
+      "subcategory": "setting_re_description",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "Ch1 line 27: 'fifty meters of chlorinated water under flat white light, the surface so still it looked solid'; Ch2 line 202: 'Fifty meters of chlorinated water. Lane ropes. Pace clock. The smell already in the back of her throat'",
+      "problem": "Pool dimensions and chlorine established in Ch1 line 27 during Kai's corridor walk-through. Ch2 opens with Lena's pool entry and re-states 'Fifty meters of chlorinated water' one chapter later. The reader already has this.",
+      "rewrite_direction": "In Ch2, cut or condense the 'Fifty meters of chlorinated water' line. Enter the pool through Lena's sensory relationship with it (the darkness at 5:30 AM, the feel of the deck, the pre-dawn lighting schedule) rather than repeating the dimensions and chemistry.",
+      "acceptance_test": "Ch2 pool opening no longer states fifty-meter dimensions or chlorinated water as new spatial information."
+    },
+    {
+      "finding_id": "RED-003",
+      "category": "redundancy",
+      "subcategory": "setting_re_description",
+      "severity": "HIGH",
+      "chapter_id": "chapter_03",
+      "evidence": "Ch1 line 91: 'permanent low hum of processing equipment, a sound that lived in the walls'; Ch1 line 95: 'could have passed for a dentist's chair if dentists needed six monitors and a firmware interface'; Ch3 line 381: 'hum had become the sound of his working life. It ran at sixty hertz, low and steady'; Ch3 line 387: 'looked like a dentist's chair designed by people who thought dentists weren't invasive enough'",
+      "problem": "Calibration bay described from scratch in Ch3 after full establishment in Ch1. Both the processor hum and the dentist's-chair rig metaphor are re-stated in synonymous phrasing two chapters later. The dentist's chair comparison is nearly verbatim.",
+      "rewrite_direction": "In Ch3, cut the hum description and the dentist's-chair metaphor. Enter the bay through Yusuf's routine (the temperature, his fleece, the schedule) without re-teaching the room's sensory signature or the rig's appearance.",
+      "acceptance_test": "Ch3 calibration bay opening contains no hum description and no dentist's-chair comparison. The rig is referenced functionally, not re-described."
+    },
+    {
+      "finding_id": "RED-004",
+      "category": "redundancy",
+      "subcategory": "character_re_introduction",
+      "severity": "HIGH",
+      "chapter_id": "chapter_04",
+      "evidence": "Ch3 line 413: 'Tomás Reyes arrived at seven thirty, twenty-one, Ecuadorian, first Apex cycle'; Ch4 line 614: 'Tomás was twenty-one and eager and his family in Quito needed him to be good'",
+      "problem": "Adjacent-chapter re-introduction of Tomas's age and identity. Ch3 introduces him as twenty-one, Ecuadorian, first Apex cycle. Ch4 re-states his age and adds family-in-Quito context one chapter later. The reader met him in Ch3; Ch4 re-teaches who he is.",
+      "rewrite_direction": "In Ch4 line 614, cut 'twenty-one and' — the reader knows his age from one chapter ago. The family-in-Quito motivation can stay if trimmed to the need itself rather than the identity package.",
+      "acceptance_test": "Ch4 does not re-state Tomas's age. His Quito family context is conveyed through action or stakes, not as biographical re-introduction."
+    },
+    {
+      "finding_id": "RED-005",
+      "category": "redundancy",
+      "subcategory": "setting_re_description",
+      "severity": "HIGH",
+      "chapter_id": "chapter_05",
+      "evidence": "Ch1 line 41: 'indoor track was a 200-meter oval under high ceilings with acoustic dampening that didn't quite work. Footfalls carried, each one a clean report off the rubber surface followed by a fast, shallow echo… smelled of rubber'; Ch5 line 743: 'rubber smell of the surface, the dry high-altitude air… overhead lights throwing a flat white glare across the oval. The ceilings were high and packed with acoustic dampening, which took the sharp edge off footfalls without killing the echo'",
+      "problem": "Indoor track sensory inventory re-described from scratch in Ch5 after full establishment in Ch1. Same elements repeated: rubber smell, oval shape, high ceilings, acoustic dampening, footfall echo. Four chapters apart but the same space entered through the same checklist.",
+      "rewrite_direction": "In Ch5, cut the track's sensory inventory at line 743. Enter through Kai's race-specific state — starting blocks, ankle click, the synthetic muscle tightening — which the chapter already does well at line 741. The rubber/ceiling/echo package can go.",
+      "acceptance_test": "Ch5 track entry does not re-inventory rubber smell, ceiling height, acoustic dampening, or footfall echo as spatial information."
+    },
+    {
+      "finding_id": "RED-006",
+      "category": "redundancy",
+      "subcategory": "setting_re_description",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "Ch2 line 264: 'neural coaching suite, small and windowless, with two reclining stations, a wall of displays… Processing hardware hummed behind the panels'; Ch4 line 582: 'coaching suite smelled like adhesive tape and the faint metallic discharge of processing hardware running warm'; Ch4 line 586: 'Three monitors on the wall held empty biometric grids. The chair was padded and built for long sessions'",
+      "problem": "Coaching suite re-described in Ch4 after establishment in Ch2. Both entries inventory the processing hardware and wall displays. Two chapters apart; reader already knows the room.",
+      "rewrite_direction": "In Ch4, cut the spatial inventory (monitors, chair description). Enter through Margot's anticipatory state — already docked, watching the green ready-light, mouth going dry — which is the chapter's actual opening move.",
+      "acceptance_test": "Ch4 coaching suite entry does not re-inventory wall monitors, chair description, or processing hardware as spatial information."
+    },
+    {
+      "finding_id": "RED-007",
+      "category": "redundancy",
+      "subcategory": "character_re_introduction",
+      "severity": "HIGH",
+      "chapter_id": "chapter_08",
+      "evidence": "Ch7 lines 1191-1203: 'The brace was off… graft-driven repair had run six weeks too fast, leaving an itch deep in the bone… shoulder clicked… cuts on his cheek and brow were already down to thin pink lines'; Ch8 line 1432: 'His wrist throbbed under the brace, a deep pulse matched to his heartbeat. The bone kept knitting on a schedule the grafts had set… a low grind inside the bone, something being filed into shape from within. The stitched cut across his left cheekbone had stopped hurting days ago but still tugged when he chewed'; Ch8 line 1454: 'attention settle on the stitched cheekbone, the brace, the shoulder he still kept a fraction too high'",
+      "problem": "Adjacent-chapter re-description of Kai's post-crash injury state. Ch7 opens with the wrist (bone knitting, graft repair), shoulder (clicking), and facial cuts (thin pink lines). Ch8 re-inventories the same injuries: wrist (throbbing, bone knitting, low grind), cheekbone (tugging), shoulder (too high). The reader received a full injury update one chapter ago.",
+      "rewrite_direction": "In Ch8, reduce the injury inventory to a single anchoring detail (e.g., the wrist throb or the brace). Cut the bone-knitting description at line 1432 and the cheekbone re-description. The three-part injury inventory at line 1454 can be trimmed to one visible marker.",
+      "acceptance_test": "Ch8 contains at most one brief injury reference, not a multi-sentence re-inventory of wrist, bone knitting, and cheekbone state."
+    },
+    {
+      "finding_id": "RED-008",
+      "category": "redundancy",
+      "subcategory": "character_re_introduction",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "Ch10 line 1814: 'the port at the base of her skull showed for a second: a small round disc, skin-colored, then hidden again'; Ch11 line 2049: 'His thumb found the neural link port at the base of her skull, a small hard circle, body-warm, the engineered rim flush with the surrounding skin'",
+      "problem": "Adjacent-chapter re-description of Lena's neural port. Ch10 describes it as 'a small round disc' at the base of her skull. Ch11 re-describes it as 'a small hard circle' at the base of her skull with additional physical detail. The reader already knows what it looks like and where it is. Also a near-verbatim 10-word match: 'the neural link port at the base of her skull' appears in both Ch2 (line 354) and Ch11 (line 2049).",
+      "rewrite_direction": "In Ch11, keep the tactile intimacy of Kai finding the port but cut the re-description of its shape, size, and engineered rim. His thumb can find the port without re-teaching the reader what it is.",
+      "acceptance_test": "Ch11 port passage does not re-describe the port's shape, material, or location as new information. The tactile discovery remains; the physical description does not."
+    },
+    {
+      "finding_id": "RED-009",
+      "category": "redundancy",
+      "subcategory": "setting_re_description",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "Ch1 line 41: 'rubber surface followed by a fast, shallow echo… high ceilings with acoustic dampening'; Ch5 line 743: 'rubber smell… ceilings were high and packed with acoustic dampening'; Ch14 line 2802: 'indoor track smelled like hot rubber and recycled air… high ceilings swallowed the sound of their footfalls and returned it as faint percussion'",
+      "problem": "Third re-description of the indoor track's sensory inventory. By Ch14, the reader has been taught the rubber smell and the ceiling/footfall acoustics twice (Ch1, Ch5). Ch14 re-enters through the same elements again.",
+      "rewrite_direction": "In Ch14, cut the track's sensory inventory entirely. Enter through Tomas's POV — his counting rhythm, his body's relationship with the hurdles — which is already the chapter's strongest opening move at line 2800.",
+      "acceptance_test": "Ch14 track entry does not re-state rubber smell, ceiling height, or footfall acoustics."
+    },
+    {
+      "finding_id": "RED-010",
+      "category": "redundancy",
+      "subcategory": "proof_of_baseline",
+      "severity": "HIGH",
+      "chapter_id": "chapter_11",
+      "evidence": "Ch11 line 2013: 'His left wrist was on his knee, the ache doing its low-grade thing, the bone reminding him it had been broken and reassembled'; line 2021: 'felt the ache shift from the wrist into the base of his thumb'; line 2125: 'The wrist ache was there. It was always there. It sat in the bone like a tenant who had paid up'; line 2227: 'his wrist was still aching'",
+      "problem": "Kai's wrist ache is re-proved four times in Ch11 without materially new information, leverage, or consequence. By Ch11, the wrist has already been proved at least 8 times across Ch5-8. The 'tenant who had paid up' simile (line 2125) is the strongest instance; the other three are redundant inventory checks. The earlier establishment runs Ch5 line 789 (injury), Ch6 line 1022 (braced), Ch7 line 1191 (healing), Ch8 line 1432 (still knitting).",
+      "rewrite_direction": "In Ch11, keep at most one wrist reference — the 'tenant' simile at line 2125 or the opening mention at line 2013. Cut the other three. The chapter's intimacy does not require the wrist to ache in every scene break.",
+      "acceptance_test": "Ch11 contains at most two wrist-ache references. The removed instances are not replaced by synonymous pain descriptions."
+    },
+    {
+      "finding_id": "RED-011",
+      "category": "redundancy",
+      "subcategory": "proof_of_baseline",
+      "severity": "HIGH",
+      "chapter_id": "chapter_15",
+      "evidence": "Ch15 line 3191: 'His left wrist ached. It always ached now'; line 3211: 'His wrist throbbed. He flexed his hand against the cold'; line 3229: 'He pressed his wrist against the cold safety rail until the metal bit into bone'; line 3251: 'His wrist throbbed with the pressure change'",
+      "problem": "Kai's wrist ache is re-proved four times in Ch15 without materially new information. By Ch15, the wrist has been proved at least 12 times across the manuscript. The 'It always ached now' line (3191) explicitly states that the condition is permanent and unremarkable — then the chapter proves it three more times anyway.",
+      "rewrite_direction": "In Ch15, keep one wrist reference — the rail-pressing moment at line 3229, where the pain serves a dramatic function (grounding Kai during Margot's confession). Cut the other three; they add nothing the reader doesn't already carry.",
+      "acceptance_test": "Ch15 contains at most one wrist-ache reference that serves a scene-level purpose. The other instances are cut."
+    },
+    {
+      "finding_id": "RED-012",
+      "category": "redundancy",
+      "subcategory": "proof_of_baseline",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "Ch12 line 2334: 'His wrist throbbed. He pressed his thumb into the bad spot'; line 2486: 'Kai's wrist throbbed again. He pressed his thumb into the bad spot and ran the options until they all came up bad'",
+      "problem": "Kai's wrist ache is re-proved twice in Ch12 with the same gesture ('pressed his thumb into the bad spot') — an exact behavioral repeat within the same chapter. By Ch12, the wrist baseline has been proved 10+ times. Neither instance adds new information.",
+      "rewrite_direction": "In Ch12, keep at most one of the two 'bad spot' references. The decision-making tension at line 2486 is the stronger scene; the wrist can be cut from line 2334 or vice versa.",
+      "acceptance_test": "Ch12 contains at most one wrist reference. The 'pressed his thumb into the bad spot' gesture does not appear twice."
+    },
+    {
+      "finding_id": "RED-013",
+      "category": "redundancy",
+      "subcategory": "proof_of_baseline",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "Ch8 line 1432: 'His wrist throbbed under the brace, a deep pulse matched to his heartbeat. The bone kept knitting on a schedule the grafts had set without asking him'; line 1582: 'His left wrist gave a deep, grinding throb inside the brace. Bone knitting too fast. Tissue pulling itself together under instructions he had never agreed to'",
+      "problem": "Ch8 re-proves the wrist-bone-knitting baseline twice with near-identical language ('bone knitting on a schedule' vs 'bone knitting too fast') after Ch7 already established the same condition. These two passages, combined with the adjacent-chapter re-description flagged in RED-007, mean Ch8 contains three separate injury-state re-proofs.",
+      "rewrite_direction": "In Ch8, keep at most one wrist reference — preferably the binder-closing moment at line 1582 where the physical and contractual pressures converge. Cut line 1432's bone-knitting passage, which is also flagged in RED-007.",
+      "acceptance_test": "Ch8 contains at most one wrist/bone-knitting reference. The identical 'bone knitting' language does not appear twice in the chapter."
+    },
+    {
+      "finding_id": "RED-014",
+      "category": "redundancy",
+      "subcategory": "image_density",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "Ch14 contains 5 glasses references: line 2932 'glasses pushed up on his forehead'; line 2956 'took his glasses off his forehead and put them on'; line 3008 'took his glasses off again and rubbed his eyes'; line 3014 'put his glasses on, took them off again'; line 3036 inferred from scene. Manuscript total: 22 glasses references (target: 8-10 for 20+ images).",
+      "problem": "Yusuf's glasses gesture appears 5 times in Ch14 alone. Across the manuscript, the 'took off glasses / put them on / rubbed bridge of nose / cleaned on shirt' cycle appears 22 times. At 20+ instances, the target is 8-10 retained. Ch14's 5 instances (combined with Ch6's 5) represent nearly half the manuscript's total.",
+      "rewrite_direction": "In Ch14, keep 1-2 glasses references — the forehead-to-face adjustment at line 2956 (which marks the emotional shift to 'technical mode') is the strongest. Cut the remaining 3-4 instances. Yusuf's distress in this chapter should register through other channels.",
+      "acceptance_test": "Ch14 contains at most 2 glasses references. The 'took off / put on / rubbed / cleaned' cycle does not repeat more than once."
+    },
+    {
+      "finding_id": "RED-015",
+      "category": "redundancy",
+      "subcategory": "image_density",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "Ch6 contains 5 glasses references across lines 845-954: line 845 'eyes narrowed behind his glasses'; line 895 'glasses had slid down his nose'; line 909 'pushed his glasses back into place'; line 954 'took off his glasses and rubbed the bridge of his nose'. Manuscript total: 22 glasses references (target: 8-10).",
+      "problem": "Yusuf's glasses appear 5 times in Ch6. The 'slid down / pushed back' and 'took off / rubbed nose' gestures repeat the same nervous-engineer signal. Combined with Ch14's 5 instances, these two chapters account for nearly half of all glasses references in the manuscript.",
+      "rewrite_direction": "In Ch6, keep 1-2 glasses references — the 'took off and rubbed the bridge of his nose' at line 954 (Petra's arrival, emotional beat) is the strongest. Cut or vary the others so the glasses aren't doing all the characterization work.",
+      "acceptance_test": "Ch6 contains at most 2 glasses references. The specific gesture of removing/replacing glasses does not appear more than once."
+    },
+    {
+      "finding_id": "RED-016",
+      "category": "redundancy",
+      "subcategory": "image_density",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "evidence": "Ch12 line 2254: 'smudge on his glasses'; line 2288: 'took his glasses off and cleaned them on his shirt. He always did this when he was buying time'; line 2298: 'put his glasses back on'. Manuscript total: 22 glasses references.",
+      "problem": "Ch12 contains 3 glasses references, including a meta-commentary ('He always did this when he was buying time') that draws explicit attention to the gesture's repetitiveness. By Ch12, the reader has seen this gesture 12+ times across the manuscript.",
+      "rewrite_direction": "In Ch12, cut 2 of the 3 glasses references. The meta-commentary at line 2288 should be cut first — if the gesture has become so frequent that characters comment on its repetitiveness, that is the clearest signal of overuse.",
+      "acceptance_test": "Ch12 contains at most 1 glasses reference. The narrator does not comment on the gesture's repetitiveness."
+    },
+    {
+      "finding_id": "RED-017",
+      "category": "redundancy",
+      "subcategory": "sentence_opener_monotony",
+      "severity": "HIGH",
+      "chapter_id": "chapter_09",
+      "evidence": "Ch9: 32 of 211 sentences (15.2%) begin with 'He'. Manuscript-wide: 285/4041 (7.1%), exceeding the 7% threshold. Ch9 is the single worst offender at more than double the threshold.",
+      "problem": "'He' opens 15.2% of sentences in Ch9 — a Yusuf-POV chapter. The pronoun monotony flattens the chapter's rhythm and makes sentence boundaries predictable. The manuscript-wide 'He' rate (7.1%) just exceeds the 7% threshold, and Ch9's 32 'He'-openers are the largest single-chapter contributor.",
+      "rewrite_direction": "In Ch9, convert at least 12-15 'He'-opened sentences to alternative constructions: begin with the action, the object, a subordinate clause, or a sensory detail. Target bringing Ch9 below 10% (21 or fewer 'He' openers out of 211 sentences).",
+      "acceptance_test": "Ch9 'He'-opener rate is below 10%. At least 12 former 'He'-opened sentences now begin with varied constructions."
+    },
+    {
+      "finding_id": "RED-018",
+      "category": "redundancy",
+      "subcategory": "sentence_opener_monotony",
+      "severity": "HIGH",
+      "chapter_id": "chapter_11",
+      "evidence": "Ch11: 39 of 269 sentences (14.5%) begin with 'He'. Additionally, 23 sentences (8.6%) begin with 'She'. Combined 'He'/'She' opener rate: 23.1%. Manuscript-wide 'He' rate: 7.1%.",
+      "problem": "'He' opens 14.5% and 'She' opens 8.6% of sentences in Ch11 — an intimate two-character chapter where nearly one in four sentences begins with a personal pronoun. The alternation of 'He'/'She' creates a metronomic quality that undercuts the chapter's emotional texture.",
+      "rewrite_direction": "In Ch11, convert at least 15 'He'-opened and 5 'She'-opened sentences to alternative constructions. Vary the rhythm by beginning sentences with the physical detail, the sensation, or the thought rather than the pronoun.",
+      "acceptance_test": "Ch11 'He'-opener rate is below 10% and 'She'-opener rate is below 7%."
+    },
+    {
+      "finding_id": "RED-019",
+      "category": "redundancy",
+      "subcategory": "sentence_opener_monotony",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "Ch5: 26 of 225 sentences (11.6%) begin with 'He'; 24 (10.7%) begin with 'His'. Combined 'He'/'His' opener rate: 22.2%. Manuscript-wide 'He' rate: 7.1%.",
+      "problem": "'He' and 'His' together open more than one in five sentences in Ch5 — a Kai-POV action chapter. The pronoun saturation is particularly dense during the crash sequence, where nearly every sentence of interiority opens with 'He' or 'His'.",
+      "rewrite_direction": "In Ch5, convert at least 10 'He'-opened and 10 'His'-opened sentences to constructions that lead with the sensation, the body part, or the environment rather than the pronoun.",
+      "acceptance_test": "Ch5 'He'-opener rate is below 8% and 'His'-opener rate is below 7%."
+    },
+    {
+      "finding_id": "RED-020",
+      "category": "redundancy",
+      "subcategory": "sentence_opener_monotony",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "Ch3: 23 of 182 sentences (12.6%) begin with 'He'. Manuscript-wide 'He' rate: 7.1%.",
+      "problem": "'He' opens 12.6% of sentences in Ch3 — a Yusuf-POV chapter. Combined with Ch9 (also Yusuf-POV at 15.2%), the pattern suggests a systematic tendency in Yusuf chapters to default to 'He' + verb construction.",
+      "rewrite_direction": "In Ch3, convert at least 8-10 'He'-opened sentences to alternative constructions. Yusuf's technical focus provides natural alternative openers: equipment subjects, data observations, sensory details from the bay.",
+      "acceptance_test": "Ch3 'He'-opener rate is below 8%."
+    },
+    {
+      "finding_id": "RED-021",
+      "category": "redundancy",
+      "subcategory": "sentence_opener_monotony",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "Ch1: 31 of 285 sentences (10.9%) begin with 'He'. Manuscript-wide 'He' rate: 7.1%.",
+      "problem": "'He' opens 10.9% of sentences in Ch1 — the reader's introduction to the manuscript. The pronoun density is less extreme than Ch9 or Ch11 but still materially above the 7% threshold and contributes to the manuscript-wide overshoot.",
+      "rewrite_direction": "In Ch1, convert at least 8-10 'He'-opened sentences to alternative constructions, particularly in the calibration scene where 'He' and 'Yusuf' alternate predictably.",
+      "acceptance_test": "Ch1 'He'-opener rate is below 8%."
+    },
+    {
+      "finding_id": "RED-022",
+      "category": "redundancy",
+      "subcategory": "sentence_opener_monotony",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_17",
+      "evidence": "Ch17: 15 of 139 sentences (10.8%) begin with 'He'. Manuscript-wide 'He' rate: 7.1%.",
+      "problem": "'He' opens 10.8% of sentences in Ch17 — the climactic race chapter. The pronoun density flattens what should be the novel's most dynamically varied prose.",
+      "rewrite_direction": "In Ch17, convert at least 5-6 'He'-opened sentences to constructions that lead with the race's sensory immediacy: the track, the crowd, the body's mechanics.",
+      "acceptance_test": "Ch17 'He'-opener rate is below 8%."
+    },
+    {
+      "finding_id": "RED-023",
+      "category": "redundancy",
+      "subcategory": "sentence_opener_monotony",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "Ch14: 33 of 338 sentences (9.8%) begin with 'He'; 28 (8.3%) begin with 'His'. Combined 'He'/'His' opener rate: 18.0%.",
+      "problem": "'He' and 'His' together open 18% of sentences in Ch14, the manuscript's longest chapter and the site of the central catastrophe. The pronoun density blunts the chapter's impact.",
+      "rewrite_direction": "In Ch14, convert at least 10 'He'/'His'-opened sentences to alternative constructions, especially in the post-crash sequences where the pattern is densest.",
+      "acceptance_test": "Ch14 'He'-opener rate is below 8% and 'His'-opener rate is below 6%."
+    },
+    {
+      "finding_id": "RED-024",
+      "category": "redundancy",
+      "subcategory": "near_verbatim",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "Ch2 line 326: 'quarters on the third floor of the residential wing: single bed, desk, bathroom, window facing the ridge'; Ch4 line 706: 'Her quarters were on the third floor of the residential wing, facing the mountain'",
+      "problem": "Near-verbatim spatial template repeated across chapters. 'Quarters on the third floor of the residential wing' appears in both Ch2 (Lena) and Ch4 (Margot) as an orienting sentence. The 10-word sequence is an exact match. The reader already knows where the residential wing is.",
+      "rewrite_direction": "In Ch4, cut the 'third floor of the residential wing' location tag. Enter Margot's room through what she sees or feels — the mountain view, the cold glass — not through the building's floor plan.",
+      "acceptance_test": "Ch4 does not repeat the phrase 'third floor of the residential wing' or any near-verbatim echo of Ch2's quarter-entry template."
+    }
+  ],
+  "consistency_findings": [
+    {
+      "finding_id": "CON-001",
+      "category": "consistency",
+      "subcategory": "timeline",
+      "severity": "CRITICAL",
+      "chapter_id": "chapter_15",
+      "evidence": "Ch15 line 3059: 'Spring light cut farther into the room than it had a month ago… snow had retreated above the tree line. Brown earth below, mud and scree'; Ch15 line 3181: 'breath smoking in the spring air'; Ch15 line 3255: 'the opening ceremony was five weeks away'; Ch15 line 3121: Petra says 'You identified the feed as a transmission risk four months ago'",
+      "problem": "Ch15 contains irreconcilable time markers. The 'five weeks to opening ceremony' (late July Games) places the chapter in mid-June. The 'four months ago' dialogue (referring to February events) also points to June. But ALL environmental descriptions — spring thaw, snowmelt, mud and scree, breath smoking in cold air — depict March/April conditions at 2,100m in the Bernese Alps. By mid-June at this altitude, snow would be limited to peaks, the landscape would be green, and breath would not smoke. The chapter cannot be both mid-June (per time-to-Games) and early spring (per physical descriptions).",
+      "rewrite_direction": "Choose one timeline anchor and revise the other. If Ch15 is mid-June (five weeks to Games), update the environmental descriptions to late spring/early summer: longer light, green slopes, warm air, no breath-smoking. If Ch15 is early spring (~7 weeks after arrival), change 'five weeks to the opening ceremony' to a larger number (~18-20 weeks) and change 'four months ago' to '5-6 weeks ago'.",
+      "acceptance_test": "All time-to-Games references, dialogue time references, and environmental descriptions in Ch15 point to the same month. No marker contradicts the others by more than 2 weeks."
+    },
+    {
+      "finding_id": "CON-002",
+      "category": "consistency",
+      "subcategory": "timeline",
+      "severity": "HIGH",
+      "chapter_id": "chapter_14",
+      "evidence": "Ch11 line 2013: 'Six weeks ago he'd been bleeding on the track'; Ch14 line 2802: 'his stride still favoring the shoulder that had healed wrong after the blackout crash five weeks ago'",
+      "problem": "The crash's temporal distance runs backward. Ch11 says the crash was six weeks ago; Ch14, which occurs later in the narrative, says it was five weeks ago. Time should move forward between chapters. Either Ch11 overstates the elapsed time or Ch14 understates it. Based on the continuity sheet (crash ~2 weeks after late-January arrival), Ch11 at roughly week 8 would be correct at 'six weeks since the crash,' making Ch14 at week 8-9 require 'six to seven weeks ago' — not 'five weeks.'",
+      "rewrite_direction": "In Ch14 line 2802, change 'five weeks ago' to a figure consistent with Ch11's 'six weeks ago' — at minimum 'six weeks ago' or 'more than a month ago' or a phrasing that avoids a specific number if timeline flexibility is needed.",
+      "acceptance_test": "Ch14's crash-elapsed-time reference is equal to or greater than Ch11's. The temporal distance does not shrink between chapters."
+    },
+    {
+      "finding_id": "CON-003",
+      "category": "consistency",
+      "subcategory": "character_details",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "Ch3-4: 'Tomás' (accented) in all 19 instances (Ch3 lines 413-443; Ch4 lines 582-730); Ch6+: 'Tomas' (unaccented) in all 57 instances (Ch6 lines 1148+, Ch8 lines 1430+, Ch14 lines 2800+, Ch15 lines 3049+)",
+      "problem": "The character's name spelling shifts from 'Tomás' (with accent, Ch3-4) to 'Tomas' (without accent, Ch6 onward). The accent is present in every instance through Ch4 and absent in every instance from Ch6 forward. This is a copyediting inconsistency, not a POV choice — the name changes between chapters that share no common narrator.",
+      "rewrite_direction": "Standardize the spelling to one form throughout the manuscript. 'Tomás' is the correct Spanish spelling and is used in his introduction chapters. Apply the accent mark consistently across all 76 instances, or drop it consistently across all 76.",
+      "acceptance_test": "Every instance of the character's name uses the same spelling (accented or unaccented) from Ch3 through Ch15."
+    },
+    {
+      "finding_id": "CON-004",
+      "category": "consistency",
+      "subcategory": "character_details",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "Base-of-skull references: Ch2 line 354, Ch2 line 374, Ch10 line 1814, Ch10 line 1920, Ch11 line 2049, Ch13 line 2577, Ch18 lines 3640 and 3668; Neck references: Ch6 line 1050 'port at her neck', Ch10 line 1880 'port at the back of her neck', Ch15 line 3438 'fingers resting against the small circle of the port' (at back of neck)",
+      "problem": "Lena's neural link port is described as being at the 'base of her skull' (8 instances) and at 'her neck' or 'the back of her neck' (3+ instances). While anatomically adjacent, the text uses both as if they are the same location without settling on consistent language. The continuity sheet specifies 'base of her skull' as canonical.",
+      "rewrite_direction": "Standardize to 'base of her skull' or 'base of the skull' in all instances. Change Ch6 line 1050 from 'port at her neck' and Ch10 line 1880 from 'port at the back of her neck' to the canonical location.",
+      "acceptance_test": "Every reference to Lena's port uses 'base of her skull' or 'base of the skull.' No instance uses 'neck' as the port's location."
+    },
+    {
+      "finding_id": "CON-005",
+      "category": "consistency",
+      "subcategory": "timeline",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "Ch8 line 1452: Jin-seo Park says 'Twelve days ago, one of you hit a wall at sprint speed'; Continuity sheet: 'Meridian delegation arrives approximately 1 week after blackout'",
+      "problem": "Jin-seo's dialogue places the crash twelve days before the Meridian presentation. The continuity sheet specifies the delegation arrives approximately one week after the blackout. Twelve days is nearly twice one week. If the crash is ~2 weeks after arrival and the delegation arrives 12 days later, the delegation is at ~4 weeks — but the continuity sheet says ~3 weeks after arrival.",
+      "rewrite_direction": "Either change 'Twelve days ago' to 'A week ago' or 'Eight days ago' to match the continuity sheet, or update the continuity sheet to reflect twelve days if this figure better serves the pacing.",
+      "acceptance_test": "The interval between Kai's crash (Ch5) and the Meridian presentation (Ch8) is consistent between the manuscript dialogue and the continuity sheet."
+    }
+  ]
+}

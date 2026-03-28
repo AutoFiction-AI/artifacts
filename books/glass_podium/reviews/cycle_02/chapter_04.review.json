@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_04",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "AWARD_SECOND_TURN_MISSING",
+      "source": "award",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:71; snapshots/cycle_02/chapters/chapter_04.md:83; snapshots/cycle_02/chapters/chapter_04.md:123; snapshots/cycle_02/chapters/chapter_04.md:141; snapshots/cycle_02/chapters/chapter_04.md:153",
+      "problem": "The chapter lands the expected plot obligations, but once Tomas falls it mostly certifies information the reader already has: Margot lies, the paperwork can hide the edit, and she wants another feed. The back half therefore lacks a sharper second turn or new liability, so the chapter reads as efficient setup rather than a fully realized seduction-concealment chapter.",
+      "rewrite_direction": "Rework the post-fall progression at snapshots/cycle_02/chapters/chapter_04.md:79; snapshots/cycle_02/chapters/chapter_04.md:123; snapshots/cycle_02/chapters/chapter_04.md:141; snapshots/cycle_02/chapters/chapter_04.md:149; snapshots/cycle_02/chapters/chapter_04.md:157 so a later beat creates new pressure instead of restating the existing one. Keep the injury, concealment, and comedown, but add one irreversible choice or concrete new liability after the fall: a challenged diagnosis that forces a deeper lie, a logged discrepancy that heightens exposure, or a near-relapse that materially changes what the next sessions will mean.",
+      "acceptance_test": "Pass only if at least one beat after the fall creates a new on-page consequence beyond the current false report and craving sequence. Fail if the revised chapter still reaches the same understanding by the report/comedown section that it had already reached once Margot gives the altitude explanation."
+    },
+    {
+      "finding_id": "CRAFT_PATTERN_SETUP_UNDERPLANTED",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:63; snapshots/cycle_02/chapters/chapter_04.md:65; snapshots/cycle_02/chapters/chapter_04.md:149",
+      "problem": "The tracked setup `margot_feed_pattern` is underplanted. The context pack says this chapter must make clear that Margot routinely pushes athletes past safe heart-rate margins and that the pattern is visible in telemetry, but the page currently shows only a single target bump plus a vague audit mention. As written, Chapter 15 would be discovering one incident and calling it a pattern.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_04.md:63; snapshots/cycle_02/chapters/chapter_04.md:65; and snapshots/cycle_02/chapters/chapter_04.md:149, add at least one additional concrete sign that this is practiced recurring behavior. Options: Margot recognizes the movement as habitual, mentally compares Tomas's numbers to prior overpushes, notices earlier hidden edits in her own queue, or calibrates how far she can raise a target without triggering immediate scrutiny. Keep the scene local to Tomas, but make the later auditable pattern legible on the page.",
+      "acceptance_test": "Pass only if a cold reader can point to at least two distinct on-page cues before chapter end that Margot has done this before and that Petra's later review would uncover repeated abuse rather than a one-off threshold mistake. One cue may be the current manual edit; at least one additional cue must be present in the revised text."
+    },
+    {
+      "finding_id": "DIALOGUE_COMPOSED_COVER_STORY",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:81; snapshots/cycle_02/chapters/chapter_04.md:83; snapshots/cycle_02/chapters/chapter_04.md:93; snapshots/cycle_02/chapters/chapter_04.md:95; snapshots/cycle_02/chapters/chapter_04.md:101; snapshots/cycle_02/chapters/chapter_04.md:103",
+      "problem": "The aftermath dialogue is too clean for a fresh training fall. Margot gets to deliver a polished mini-diagnosis, Tomas accepts it with very little friction, and the trainer's exchange resolves almost immediately. The scene sounds arranged to transmit the cover story rather than spoken through pain, uncertainty, and institutional caution.",
+      "rewrite_direction": "Roughen the post-fall exchange at snapshots/cycle_02/chapters/chapter_04.md:81; snapshots/cycle_02/chapters/chapter_04.md:83; snapshots/cycle_02/chapters/chapter_04.md:93; snapshots/cycle_02/chapters/chapter_04.md:101; and snapshots/cycle_02/chapters/chapter_04.md:103 so Margot has to evade in her established substitute-truth style instead of landing a neat explanation on first pass. Preserve Tomas's trust and the trainer's triage focus, but add at least one follow-up question, contradiction, or messy hesitation that makes the lie work harder.",
+      "acceptance_test": "Pass only if, after Margot's first explanation, either Tomas or the trainer raises a specific objection rooted in the run or the telemetry and Margot must answer it with a second evasive move. Fail if the scene still moves from fall to accepted altitude explanation without meaningful verbal resistance."
+    },
+    {
+      "finding_id": "PROSE_ACCESS_CONTROL_EXPOSITION",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/chapters/chapter_04.md:19; snapshots/cycle_02/chapters/chapter_04.md:65; snapshots/cycle_02/chapters/chapter_04.md:109; snapshots/cycle_02/chapters/chapter_04.md:149",
+      "problem": "The chapter repeatedly explains permissions, tabs, logins, and audit queues in neutral systems language. The information matters, but the current phrasing cools the bodily close third and duplicates the concealment mechanics instead of keeping the prose inside Margot's immediate trained hunger and risk calculation.",
+      "rewrite_direction": "Compress and re-embed the system explanation at snapshots/cycle_02/chapters/chapter_04.md:19; snapshots/cycle_02/chapters/chapter_04.md:65; snapshots/cycle_02/chapters/chapter_04.md:109; and snapshots/cycle_02/chapters/chapter_04.md:149 so each beat gives only the single access fact the scene needs, phrased through Margot's practical fear or habit. Remove duplicate explanation of who can and cannot see the edit, and keep the emphasis on what she feels, notices, and counts on.",
+      "acceptance_test": "Pass only if a reader can still answer two questions from the revised passage alone: who sees the summary now, and who could uncover the hidden edit later. Fail if the revision still needs multiple separate explanations of tabs, logins, or audit access, or if any sentence reads like detached system documentation rather than Margot's close-third perception."
+    }
+  ],
+  "summary": "Controlled and readable, with strong bodily comedown detail, but the chapter still fails. It underplants the recurring telemetry-pattern setup required for the later audit payoff, resolves the cover story through overly clean dialogue, cools the POV with access-control exposition, and does not generate a stronger second turn after Tomas's fall."
+}

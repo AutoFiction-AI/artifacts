@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_14",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "PASS"
+  },
+  "findings": [
+    {
+      "finding_id": "CH14_CRAFT_001",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:123; snapshots/cycle_02/chapters/chapter_14.md:127; snapshots/cycle_02/chapters/chapter_14.md:131",
+      "problem": "Kai's discovery of Yusuf's archive arrives as a plot handout. The post-incident audit conveniently leaves an engineer shell open, the incriminating transfer tab already expanded, and the anomaly legible enough for a non-engineer to decode at a glance. Because the chapter's turn depends on this reveal, the scene needs clearer access logic: why the routing is exposed only now, why Petra's team has not already seen it, and what specifically lets Kai know this is theft rather than audit traffic.",
+      "rewrite_direction": "Rework the discovery setup in snapshots/cycle_02/chapters/chapter_14.md:123-131. Keep Kai in the bay and keep the archive reveal, but add one concrete reason the emergency audit exposes raw routing only in this moment, one immediate obstacle or uncertainty before Kai reaches the conclusion, and one explicit reason Petra's team has not already processed or closed this view before snapshots/cycle_02/chapters/chapter_14.md:137. The fix should make Kai earn the recognition through a specific label, timestamp pattern, or remembered calibration detail rather than through a conveniently open answer screen.",
+      "acceptance_test": "Pass if a cold reader can answer from snapshots/cycle_02/chapters/chapter_14.md:123-131 why the raw routing is visible now, why it was hidden in ordinary sessions, why Kai sees it before Petra's team, and what exact on-screen evidence tells him the transfers are his data being siphoned. Fail if the scene still depends mainly on an unattended open engineer shell handing him the archive reveal."
+    },
+    {
+      "finding_id": "CH14_DIALOGUE_001",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:165",
+      "problem": "Yusuf's confession line is a near-verbatim echo of a calibration-only example line in the style bible: the same admission beat, the same exclusive-access rationale, and the same broken self-exculpation. Because this lands inside the chapter's central trust-break, it reads less like live speech and more like copied calibration material, which damages voice integrity.",
+      "rewrite_direction": "Replace the confession turn at snapshots/cycle_02/chapters/chapter_14.md:165 with fresh sentence architecture and diction specific to this scene's pressure. Keep Yusuf admitting the theft and trying, unsuccessfully, to justify it, but do not reuse the current scaffold of flat admission plus exclusive-access rationale plus broken disclaimer. Let the line carry more of Yusuf's stressed Birmingham/private register or technical redirection without reproducing the style-bible exemplar.",
+      "acceptance_test": "Pass if snapshots/cycle_02/chapters/chapter_14.md:165 no longer mirrors the style-bible example's sequence of admission, exclusive-access justification, and cut-off self-defense, and if the revised line sounds recognizably Yusuf without obvious deja vu from the calibration sample. Fail if the confession still clearly tracks that exemplar's structure or phrasing."
+    },
+    {
+      "finding_id": "CH14_DIALOGUE_002",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:179; snapshots/cycle_02/chapters/chapter_14.md:183; snapshots/cycle_02/chapters/chapter_14.md:193; snapshots/cycle_02/chapters/chapter_14.md:229",
+      "problem": "The Kai-Yusuf confrontation intermittently slips into composed diagnosis instead of pressured speech. Yusuf's corporate readout arrives as clean mini-speeches, and Kai answers with a polished moral summation. Those lines deliver the chapter's thesis too efficiently; they sound written-about rather than spoken-through at the moment a real argument should be jagged, partial, and interruptive.",
+      "rewrite_direction": "Roughen the confrontation across snapshots/cycle_02/chapters/chapter_14.md:179-197 and snapshots/cycle_02/chapters/chapter_14.md:221-229. Keep the same facts on the table: code-structure similarity, server-authorized suppression, Kai's anger about Tomas, and Yusuf's inability to prove intent. But break the information into more pressured turn-taking: interruptions, self-corrections, unfinished technical phrasing, and accusations tied to concrete facts in the room instead of finished thesis lines.",
+      "acceptance_test": "Pass if in snapshots/cycle_02/chapters/chapter_14.md:179-197 and snapshots/cycle_02/chapters/chapter_14.md:221-229 no single line compresses Meridian's scheme or the chapter's moral into a polished slogan, and if at least one of Yusuf's explanations is visibly interrupted or self-corrected before completion. Fail if the exchange still contains aphoristic diagnosis, mini-speech explanation, or a clean mic-drop moral line where scene pressure should make the speech messier."
+    }
+  ],
+  "summary": "FAIL on award, craft, and dialogue; PASS on prose. The chapter's first two movements are strong: Tomas's crash and Margot's feed experience are physically specific, unsanitized, and fully consequential. The failure is concentrated in the office reveal, where the archive discovery is too conveniently exposed, Yusuf's confession echoes non-copyable style-bible calibration text, and the confrontation repeatedly resolves into polished thesis speech instead of pressured argument."
+}

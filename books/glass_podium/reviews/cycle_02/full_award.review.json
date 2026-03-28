@@ -1,0 +1,118 @@
+{
+  "cycle": 2,
+  "findings": [
+    {
+      "acceptance_test": "Pass if Chapter 18 contains a Yusuf POV section of at least 40 lines that dramatizes the publication through scene action (not summary) and includes at least one interaction that tests the consequences of going public. Fail if the publication remains mediated entirely through another character's phone or is rendered only in summary narration.",
+      "chapter_id": "chapter_18",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:3652; snapshots/cycle_02/FINAL_NOVEL.md:3654; snapshots/cycle_02/FINAL_NOVEL.md:3660; snapshots/cycle_02/FINAL_NOVEL.md:3666",
+      "finding_id": "CH18_YUSUF_ARC_OFFPAGE",
+      "problem": "Yusuf's decision to publish the Meridian analysis -- the culmination of his entire arc (data theft in Ch 3, alternative patch in Ch 9, confrontation with Kai in Ch 14) -- is resolved entirely off-page. Lena reads the ResearchGate article on her phone in a changing room. The publication's consequences (11% stock drop, federal inquiry, Farah's data going public) are summarized in narration. Yusuf gets no POV scene in the novel's final chapter despite having full POV chapters earlier (Ch 3, Ch 9). His texted reply ('Yeah. Farah says hi.') is the only direct speech from a character whose defining action is happening right now. This is the novel's most consequential compression failure: a four-chapter arc culminates in someone else's phone notification.",
+      "rewrite_direction": "Add a Yusuf POV section to Chapter 18, positioned before or after Lena's swimming section. Target the space currently occupied by snapshots/cycle_02/FINAL_NOVEL.md:3652-3666 -- either replace Lena's mediated summary with a Yusuf scene, or insert a new section break before line 3627 with Yusuf's perspective. The scene should dramatize the act and cost of going public: the moment of posting, a call with Farah that carries both hope and uncertainty, and at least one piece of immediate fallout (a message from Petra, a notification from Meridian, a colleague's reaction). The scene should render Yusuf's own awareness that the published data may or may not help Farah -- the uncertainty is the point.",
+      "severity": "HIGH"
+    },
+    {
+      "acceptance_test": "Pass if Kai's Ch 18 section contains at least one scene with dialogue where his post-Doha state is tested or revealed through interaction with another person. Fail if the section remains entirely interior narration with no dialogue and no external test.",
+      "chapter_id": "chapter_18",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:3597; snapshots/cycle_02/FINAL_NOVEL.md:3608; snapshots/cycle_02/FINAL_NOVEL.md:3614; snapshots/cycle_02/FINAL_NOVEL.md:3625",
+      "finding_id": "CH18_KAI_EPILOGUE_INERT",
+      "problem": "The protagonist's epilogue (lines 3597-3625, approximately 28 lines) consists entirely of undramatized interiority: Kai sits at a cafe, his wrist aches, he thinks about a commentary job offer, his hand lifts his phone before he means to, he doesn't call Lena, a pigeon lands. There is no scene, no dialogue, no interaction, and no moment where the state established in Doha (the man who stopped his own race) is tested by the world. The hand-lifting-the-phone detail (line 3608) is the one beat with genuine craft resonance, but it passes without scene consequence. Compare Margot's section in the same chapter (lines 3672-3734), which delivers a full therapy scene and a full observation scene. Kai's section reads as if the novel has exhausted its material for its central character.",
+      "rewrite_direction": "Expand Kai's section at snapshots/cycle_02/FINAL_NOVEL.md:3597-3625 to include at least one scene with external interaction. Options: (a) the SportsVision producer meets Kai in Lausanne and the conversation tests whether Kai can articulate what happened in Doha without accepting the 'equipment trouble' framing; (b) a stranger recognizes him from the race and says something that forces Kai to decide in real time what version to give; (c) a scene with Lena where the daily version of the system-ahead-of-him creates friction or tenderness in an ordinary moment. The section needs at least one interaction where another person's presence externalizes Kai's state.",
+      "severity": "MEDIUM"
+    },
+    {
+      "acceptance_test": "Pass if the Stuttgart patient's name, sport, and gender are identical in Ch 9 and Ch 15. Fail if any detail -- sport, gender, or named vs. anonymous status -- contradicts between the two chapters.",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:1769",
+      "finding_id": "CH09_PETRA_STUTTGART_MALE_DECATHLETE",
+      "problem": "Petra describes her Stuttgart patient as 'Marius Koch. Decathlete. Twenty-four.' and uses male pronouns ('His body started rejecting the synthetic muscle grafts'). In Chapter 15 (line 3145), the same story describes the patient as 'a young gymnast' with female pronouns ('She died eight months later'). This is a triple contradiction -- name/anonymity, sport (decathlete vs. gymnast), and gender (male vs. female) -- in a recurring backstory that anchors Petra's moral authority. Both chapters were likely drafted in parallel without synchronizing this critical detail.",
+      "rewrite_direction": "At snapshots/cycle_02/FINAL_NOVEL.md:1769, confirm or revise the patient's details to match whatever Chapter 15 establishes. If Ch 15's version (female gymnast) is preferred, change line 1769 to use a female name, 'gymnast,' and female pronouns throughout the passage (lines 1769-1778). If Ch 9's version (Marius Koch, male decathlete) is preferred, the corresponding fix must happen in Ch 15. Choose one version and make it consistent.",
+      "severity": "HIGH"
+    },
+    {
+      "acceptance_test": "Pass if the patient's sport and gender at line 3145 match the description at Chapter 9 line 1769. Fail if any factual detail contradicts between the two passages.",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:3145",
+      "finding_id": "CH15_PETRA_STUTTGART_FEMALE_GYMNAST",
+      "problem": "Petra refers to the Stuttgart patient as 'a young gymnast' who 'died eight months later' using female pronouns ('She died'). Chapter 9 (line 1769) identifies the same patient as 'Marius Koch. Decathlete. Twenty-four.' with male pronouns. This is a gender, sport, and anonymity contradiction in a backstory that is central to Petra's characterization and moral positioning in both chapters.",
+      "rewrite_direction": "At snapshots/cycle_02/FINAL_NOVEL.md:3145, revise 'a young gymnast' and 'She died' to match Chapter 9's details (Marius Koch, decathlete, male pronouns), or coordinate with the Ch 9 revision to establish a single consistent version. If the anonymous version is preferred for Ch 15's different audience context (Petra is talking to Margot, not Yusuf), ensure the sport and gender still match.",
+      "severity": "HIGH"
+    },
+    {
+      "acceptance_test": "Pass if the revised confession delivers the same emotional beat without reproducing the example line's four-part structure (yeah + admission + because-nobody-else + self-interruption). The revised passage should not contain 'nobody was going to have' or an equivalent phrase that mirrors the example line's justification logic in the same sentence position. Fail if the revised passage still follows the same structural template.",
+      "chapter_id": "chapter_14",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:2960; snapshots/cycle_02/FINAL_NOVEL.md:2963",
+      "finding_id": "CH14_EXAMPLE_LINE_LEAKAGE",
+      "problem": "Yusuf's confession -- 'Yeah. I copied the files. I took them because nobody else was going to have them once that contract went through. That's not -- I know that's not a defense' -- closely mirrors the structure and logic of his style-bible example line: 'Yeah. Yeah, I took the data. I took the data because if I didn't take the data, nobody was going to have it. That's not -- look, I know how that sounds.' The rhythm (yeah + admission + because-nobody-else + self-interruption + self-awareness), the justification logic ('nobody was going to have it'), and the trailing self-aware deflection ('that's not --') are near-verbatim. This occurs in a chapter-defining emotional beat where Yusuf's concealment is exposed.",
+      "rewrite_direction": "Revise snapshots/cycle_02/FINAL_NOVEL.md:2960-2963 to deliver the same confession with a different sentence architecture. Yusuf's register should stay (Birmingham under stress, direct admission), but the progression from admission through justification to self-awareness needs a different shape. Option: Yusuf starts with the technical justification (what the data was for, how the access worked) and is pulled toward the personal admission by Kai's refusal to accept the technical frame. Option: Yusuf tries the professional defense first and it visibly fails before the raw version comes out, arriving in shorter sentences rather than the example line's cascading repetition.",
+      "severity": "MEDIUM"
+    },
+    {
+      "acceptance_test": "Pass if the Ch 16 dinner conversation introduces character material that does not substantially replicate the Ch 7 mom-video exchange in function and register. Fail if both chapters still deploy the same anecdote (mom watching old footage and noticing the difference) without meaningful differentiation.",
+      "chapter_id": "chapter_16",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:3366; snapshots/cycle_02/FINAL_NOVEL.md:3378; snapshots/cycle_02/FINAL_NOVEL.md:3387",
+      "finding_id": "CH16_MOM_VIDEO_RESTAGE",
+      "problem": "Kai tells the dinner group that his mother 'keeps sending me old race videos' and describes a screenshot with a circled arm. This restages material from Chapter 7 (lines 1293-1298), where Kai told Lena the same story: 'My mom sends me old race clips sometimes... she paused one on my second step out of the blocks and said, there, right there.' Both versions serve the same dramatic function (Kai's mother sees the difference enhancement made) in the same emotional register (rueful, affectionate). The Ch 16 version adds the circled-arm detail but does not change the insight's leverage, consequence, or meaning. A character retelling the same anecdote to a different audience is only valid reprising if the retelling reveals something new about the teller.",
+      "rewrite_direction": "At snapshots/cycle_02/FINAL_NOVEL.md:3366-3387, replace the mom-video anecdote with different character material that serves the same scene function (showing something about Kai's relationship to his pre-enhancement self). Options: (a) a detail from the Doha trip or the flight home that exposed the gap between his experience and the public version; (b) a different family communication that shows how others see him now; (c) keep the mom reference but make it about something new she sent or said that shifts the meaning from Ch 7. If the mom-video concept must stay, have Kai acknowledge having told the story before, and let the retelling reveal what has changed since Ch 7.",
+      "severity": "MEDIUM"
+    }
+  ],
+  "pattern_findings": [
+    {
+      "affected_chapters": [
+        "chapter_08",
+        "chapter_12",
+        "chapter_15",
+        "chapter_16",
+        "chapter_18"
+      ],
+      "chapter_hits": [
+        {
+          "acceptance_test": "Pass if the wrist reference at line 1432 is under two sentences and connects the sensation to the chapter's immediate context (Meridian arrival) rather than restating the healing baseline. Fail if the passage still explains that the bone is knitting or healing too fast.",
+          "chapter_id": "chapter_08",
+          "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:1432",
+          "finding_id": "SOMATIC_CH08",
+          "problem": "Kai's wrist 'throbbed under the brace, a deep pulse matched to his heartbeat' followed by 'the bone kept knitting on a schedule the grafts had set without asking him... a low grind inside the bone, something being filed into shape from within' -- four lines re-explaining the too-fast healing already established in Ch 5-7. This chapter re-teaches the condition without tying the sensation to the Meridian delegation arriving, which is the actual dramatic pressure.",
+          "rewrite_direction": "At snapshots/cycle_02/FINAL_NOVEL.md:1432, compress the wrist to a single sensory clause tied to the chapter's pressure. E.g., the wrist reacting to the cold from the window as he watches the SUVs, or to the specific act of setting down his fork. Cut the 'bone kept knitting' re-explanation entirely -- the reader knows this by Ch 8."
+        },
+        {
+          "acceptance_test": "Pass if Ch 12 contains at most one instance of the 'throbbed... bad spot' construction and any additional wrist reference uses different language tied to the scene. Fail if 'pressed his thumb into the bad spot' appears more than once in the chapter.",
+          "chapter_id": "chapter_12",
+          "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:2334; snapshots/cycle_02/FINAL_NOVEL.md:2486",
+          "finding_id": "SOMATIC_CH12",
+          "problem": "Two near-identical instances within the same chapter: 'His wrist throbbed. He pressed his thumb into the bad spot' (line 2334) and 'Kai's wrist throbbed again. He pressed his thumb into the bad spot' (line 2486). The second occurrence is only 150 lines later and uses the same verb ('throbbed'), the same gesture ('pressed his thumb into the bad spot'), and the same register. Within a single chapter this reads as an unconscious copy rather than a motif.",
+          "rewrite_direction": "At snapshots/cycle_02/FINAL_NOVEL.md:2486, cut the second 'throbbed... bad spot' entirely or replace with a different physical response to the scene's pressure. The first instance (line 2334) can stay. The second instance could instead show the wrist reacting to the specific action Kai is taking (e.g., gripping the chair arm during the confrontation)."
+        },
+        {
+          "acceptance_test": "Pass if Ch 15 contains at most two wrist references and neither re-explains the too-fast healing or grafts. Fail if the chapter contains three or more wrist-ache/throb mentions or if any instance re-teaches the healing baseline.",
+          "chapter_id": "chapter_15",
+          "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:3022; snapshots/cycle_02/FINAL_NOVEL.md:3191; snapshots/cycle_02/FINAL_NOVEL.md:3211; snapshots/cycle_02/FINAL_NOVEL.md:3251",
+          "finding_id": "SOMATIC_CH15",
+          "problem": "Four wrist references in a single chapter: 'His wrist ached. His shoulder ached.' (3022); 'His left wrist ached. It always ached now, the bone healed too fast by the synthetic grafts, a wrongness in the joint that flared with barometric shifts' (3191, full re-explanation); 'His wrist throbbed' (3211); 'His wrist throbbed with the pressure change' (3251). By line 3251 the wrist has ached or throbbed four times in roughly 230 lines. The line 3191 instance is the worst offender -- it re-teaches 'healed too fast' and 'barometric shifts' as though this is new information.",
+          "rewrite_direction": "Revise snapshots/cycle_02/FINAL_NOVEL.md:3022; snapshots/cycle_02/FINAL_NOVEL.md:3191; snapshots/cycle_02/FINAL_NOVEL.md:3211. Cut to at most two wrist references in Ch 15. Keep line 3022 ('His wrist ached. His shoulder ached.' -- the paired ache during confrontation works as punctuation). Cut or compress lines 3191, 3211, and 3251. At line 3191, the 'barometric shifts' detail is the one new observation -- keep that in a single clause ('The spring pressure changes found the wrist') and cut the re-explanation. At lines 3211 and 3251, either cut entirely or compress to a single word nested in the action."
+        },
+        {
+          "acceptance_test": "Pass if Margot's wrist gesture at line 3264 shows visible change from the blanching-skin description used in earlier chapters, and Lena's port reference at line 3438 reflects her post-patch state rather than replaying the pre-patch gesture. Fail if both passages reproduce their earlier versions without alteration.",
+          "chapter_id": "chapter_16",
+          "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:3264; snapshots/cycle_02/FINAL_NOVEL.md:3438",
+          "finding_id": "SOMATIC_CH16",
+          "problem": "Two somatic baselines replayed: Margot at the bottle filler with 'Her thumbnail dug into [the pale strap mark] hard enough to blanch the skin' (3264) -- the same blanching-wrist gesture from Ch 12 and Ch 15 without showing change in Margot's relationship to the loss -- and Lena with 'her hand went to the back of her neck and stayed there' (3438) -- the same port-touch from multiple earlier chapters. Ch 16 is a departure chapter; the somatic gestures should register the changed circumstances rather than replaying their earlier forms.",
+          "rewrite_direction": "At snapshots/cycle_02/FINAL_NOVEL.md:3264, Margot's wrist gesture should show that weeks without the feed have changed the habit: weaker, redirected, or consciously stopped. She is running now instead of feeding -- the body has found a different outlet. The gesture should reflect that shift. At line 3438, Lena's port touch should be briefer and should reflect the post-patch relationship ('the port she no longer feared' or 'the hardware that had gone quiet')."
+        },
+        {
+          "acceptance_test": "Pass if the wrist references in Kai's Ch 18 section total no more than two brief clauses and neither re-explains the healing baseline or uses 'sealed too fast.' Fail if any Ch 18 wrist passage re-teaches the too-fast healing or stacks multiple baseline descriptors without new meaning.",
+          "chapter_id": "chapter_18",
+          "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:3600; snapshots/cycle_02/FINAL_NOVEL.md:3618",
+          "finding_id": "SOMATIC_CH18",
+          "problem": "'the same deep tight ache that arrived every afternoon where the break had sealed too fast' (3600) re-teaches the healing baseline in the novel's final pages. Line 3618 stacks two baseline descriptors in one sentence: 'the left still wrong deep in the bone, the right carrying that familiar seam under the skin.' In the epilogue, the wrist should carry accumulated meaning -- what it now means to live with a body that healed wrong -- not replay the explanatory baseline.",
+          "rewrite_direction": "At snapshots/cycle_02/FINAL_NOVEL.md:3600, cut 'the same deep tight ache that arrived every afternoon where the break had sealed too fast' and replace with a single sensory beat that shows how Kai now lives with the wrist rather than re-explaining its origin. E.g., 'His wrist found the weather before he did' or simply 'The wrist.' At line 3618, keep at most one of the two descriptors and let the other land as compressed gesture. The novel's final wrist reference should feel like arrival, not reminder."
+        }
+      ],
+      "global_problem": "Three recurring somatic descriptors -- Kai's wrist ache (10 instances across 8 chapters), Lena's port touch (6+ instances across 6 chapters), and Margot's wrist-strap groove (4+ instances across 4 chapters) -- reappear in near-identical prose that replays the same descriptive package without altering meaning, pressure, or what the focalizer notices about the sensation. The wrist ache in particular oscillates between 'throbbed' and 'ached' with occasional 'bad spot' or 'pressure change' riders but no genuine accumulation. Chapter 15 contains four wrist references in a single chapter (lines 3022, 3191, 3211, 3251). The port touch repeats 'the base of her skull' or 'the back of her neck' as a near-formulaic stage direction. These motifs should build -- the same body part noticed differently as the character's relationship to it changes -- but instead replay.",
+      "global_rewrite_principles": "Keep the somatic motifs but vary the prose handling so each recurrence shows change in context, meaning, or awareness. The wrist should not default to 'ached' or 'throbbed' -- by mid-novel, compress to a single clause or show how the ache now lives differently in the character's attention. The port touch should reflect Lena's evolving relationship with the hardware (pre-patch fear vs. post-patch ambivalence vs. Ch 18's 'part of her body but not her'). Aim to carry the full descriptive baseline at most twice in the novel (first establishment + one later reminder); all other instances should be compressed, re-angled, or tied to immediate scene pressure.",
+      "pattern_id": "SOMATIC_BASELINE_REPETITION",
+      "severity": "MEDIUM"
+    }
+  ],
+  "summary": "Glass Podium is a seriously accomplished novel. The central conceit -- enhanced athletes whose bodies perform without consent -- is explored with visceral specificity across prose that is controlled, sensory, and in service of its engine. Character differentiation is strong: Kai's Midwestern deflection, Lena's clinical precision, Yusuf's Birmingham cadence under professional polish, Margot's stripped-down honesty. The intimacy scene (Ch 11) delivers on the style bible's demand for specificity about partly-engineered bodies during sex. Margot's addiction is rendered without moral safety valves. The violence (Ch 5 blackout, Ch 14 crash) is physical and ugly. The quiet chapters (7, 16) earn their place. The novel fails shortlist readiness on two principal grounds, followed by additional blockers that would independently prevent passage. First, Chapter 18 structurally undermines the ending: Yusuf's decision to publish the Meridian code-signature analysis -- the culmination of his entire arc from data theft (Ch 3) through confrontation (Ch 14) -- is resolved entirely off-page, mediated through Lena reading an article on her phone in a changing room. In a novel that gave Yusuf two full POV chapters, his most consequential action goes undramatized. The protagonist Kai receives an inert 28-line epilogue of undramatized interiority (cafe sitting, wrist aching, pigeon) with no scene, no dialogue, and no new test of his post-Doha state, while Margot's section in the same chapter delivers two full scenes. Second, a cross-chapter factual contradiction -- Petra describes her Stuttgart patient as 'Marius Koch. Decathlete. Twenty-four' with male pronouns in Chapter 9, then as 'a young gymnast' with female pronouns ('She died') in Chapter 15 -- is the kind of parallel-drafting desynchronization that destroys reader trust at a pivotal moment. Additional blockers: Yusuf's confession in Chapter 14 near-verbatim reproduces the rhythm and logic of his style-bible example line in a chapter-defining beat; Chapter 16 restages Chapter 7's 'mom watches old footage' material without differentiation; and a recurring pattern of somatic descriptive repetition (wrist ache appearing 10 times, port touching 6+ times, wrist-strap groove 4+ times) replays near-identical prose across chapters without altering meaning, flattening motifs into mechanical baselines.",
+  "verdict": "FAIL"
+}
