@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_13",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "C13_CRAFT_RECOGNITION_LEAK",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_02/chapters/chapter_13.md:167; snapshots/cycle_02/chapters/chapter_13.md:169; snapshots/cycle_02/chapters/chapter_13.md:213; snapshots/cycle_02/chapters/chapter_13.md:233",
+      "problem": "The basement scene leaks Damian's recognition to Anya. At line 167 his surface thought explicitly supplies \"Anya Forger\" under the spoken cover name, and this chapter's telepathy rules mean Anya hears that thought in real time. The chapter later treats Damian's recognition as private knowledge processed only in his own POV, which contradicts the continuity sheet and weakens the intended Chapter 13 dramatic-ironies reversal.",
+      "rewrite_direction": "Revise the beat at snapshots/cycle_02/chapters/chapter_13.md:167 and snapshots/cycle_02/chapters/chapter_13.md:169 so Damian's surface thought does not hand Anya a clear identity confirmation. Keep the explicit recognition in the Damian-only material at snapshots/cycle_02/chapters/chapter_13.md:213 and snapshots/cycle_02/chapters/chapter_13.md:233, or make the basement thought oblique enough that Anya can read strain without learning what he knows.",
+      "acceptance_test": "Pass if the revised basement passage around snapshots/cycle_02/chapters/chapter_13.md:167 lets a first-time reader see Damian snag on her without giving telepathic Anya an unambiguous \"he knows it's me\" thought, and the first explicit confirmation of Damian's recognition still arrives only in the Damian POV section beginning at snapshots/cycle_02/chapters/chapter_13.md:193. Fail if Anya can still reasonably infer his knowledge during the basement scene."
+    },
+    {
+      "finding_id": "C13_CRAFT_CAUSAL_CHAIN_ABSTRACT",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_02/chapters/chapter_13.md:15; snapshots/cycle_02/chapters/chapter_13.md:49; snapshots/cycle_02/chapters/chapter_13.md:61; snapshots/cycle_02/chapters/chapter_13.md:161; snapshots/cycle_02/chapters/chapter_13.md:171",
+      "problem": "The chapter asks the reader to carry a specific causal chain, but the mechanics stay abstract. Anya's lie becomes \"scraps\" she cut down, a \"pocket of bad information,\" and two lost days on the wrong analyst; the raid and ambush are called coordinated without clarifying which links are proven and which are inference. The emotional guilt reads, but the operational logic that makes the guilt earned is still blurry on the page.",
+      "rewrite_direction": "Sharpen the causal explanation in one or two local passages at snapshots/cycle_02/chapters/chapter_13.md:15, snapshots/cycle_02/chapters/chapter_13.md:49, snapshots/cycle_02/chapters/chapter_13.md:161, or snapshots/cycle_02/chapters/chapter_13.md:171. Name what Anya falsified, what WISE therefore did differently, how that left Crane's route vulnerable, and whether the cache raid comes from the same blind spot or from a separate leak. If uncertainty remains, label it as uncertainty instead of letting abstraction do the work.",
+      "acceptance_test": "Pass if, after reading the revised lines around snapshots/cycle_02/chapters/chapter_13.md:15, snapshots/cycle_02/chapters/chapter_13.md:49, snapshots/cycle_02/chapters/chapter_13.md:161, and snapshots/cycle_02/chapters/chapter_13.md:171, a cold reader can answer four concrete questions from the chapter alone: what Anya lied about, what WISE changed because of that lie, how Crane's route became exposed, and what part of the raid-ambush connection is fact versus hypothesis. Fail if the chapter still relies on generalized terms like \"bad information\" or \"wrong analyst\" without a concrete operative consequence."
+    },
+    {
+      "finding_id": "C13_DIALOGUE_DAMIAN_TOO_COMPOSED",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_02/chapters/chapter_13.md:87; snapshots/cycle_02/chapters/chapter_13.md:107; snapshots/cycle_02/chapters/chapter_13.md:135; snapshots/cycle_02/chapters/chapter_13.md:171",
+      "problem": "Damian's private speech stays too clean at the exact moment his network is burning and Reinhardt may be next. Key turns in the basement scene resolve into balanced mini-briefings (especially lines 135 and 171) instead of the pressured, partially collapsed private register the style bible specifies for him under emotional stress. The scene carries grief in narration, but some of Damian's spoken lines still sound written-about rather than spoken-through.",
+      "rewrite_direction": "Rework Damian's turns at snapshots/cycle_02/chapters/chapter_13.md:87, snapshots/cycle_02/chapters/chapter_13.md:135, and snapshots/cycle_02/chapters/chapter_13.md:171 so at least part of the operational content arrives through visibly strained speech: interruption, restart, cut-off, failed qualification, or a sharper drop from diplomatic diction into blunt private language. Keep one clean strategic line if needed, but stop stacking consecutive debrief-shaped summaries in the basement exchange.",
+      "acceptance_test": "Pass if the revised basement conversation shows at least two Damian turns near snapshots/cycle_02/chapters/chapter_13.md:87, snapshots/cycle_02/chapters/chapter_13.md:135, or snapshots/cycle_02/chapters/chapter_13.md:171 with an on-page pressure tell in the dialogue itself before or while he delivers the information. Fail if his three main updates can still be read straight through as polished situation-report lines."
+    },
+    {
+      "finding_id": "C13_PROSE_POSTTURN_CERTIFICATION",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_02/chapters/chapter_13.md:181; snapshots/cycle_02/chapters/chapter_13.md:183; snapshots/cycle_02/chapters/chapter_13.md:185; snapshots/cycle_02/chapters/chapter_13.md:231; snapshots/cycle_02/chapters/chapter_13.md:233; snapshots/cycle_02/chapters/chapter_13.md:235",
+      "problem": "After the chapter's key turns land concretely, the prose keeps translating them into abstract explanation. \"Us\" already lands as the scene's turn, but the following narration explains what the word is not and what it means. Damian's decision after the photo likewise gets paraphrased into consecutive thesis statements about forgiveness, alliance, secrecy, and future method. The chapter keeps certifying its meaning instead of trusting the action and image that already delivered it.",
+      "rewrite_direction": "Compress or recast the explanatory follow-through after snapshots/cycle_02/chapters/chapter_13.md:181 and snapshots/cycle_02/chapters/chapter_13.md:231. Let the basement scene end on a physical consequence, altered distance, or object state that carries the alliance shift, and let the Damian section end on one decisive action or one interior turn rather than multiple abstract restatements.",
+      "acceptance_test": "Pass if the revised text after snapshots/cycle_02/chapters/chapter_13.md:181 ends on an observable changed condition on the page rather than an abstract explanation of what \"Us\" means, and the revised text after snapshots/cycle_02/chapters/chapter_13.md:231 makes Damian's choice legible through a single concrete action-thought sequence rather than two or more back-to-back explanatory summaries. Fail if the post-turn paragraphs still rephrase the same conclusion in abstract terms."
+    }
+  ],
+  "summary": "Chapter 13 lands the major setback architecture and the Damian POV pivot, but it does not pass review. The basement scene breaks continuity by letting telepathic Anya hear Damian's recognition, the causal chain from Anya's lie to Crane's death and the raid remains too abstract for the dramatic weight it carries, Damian's private dialogue is too composed in the basement, and the prose overexplains both of the chapter's major emotional turns after they have already landed."
+}

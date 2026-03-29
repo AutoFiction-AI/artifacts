@@ -1,0 +1,261 @@
+{
+  "cycle": 2,
+  "summary": "Cross-chapter audit complete. PART A (redundancy): 22 findings across 15 chapters. Primary patterns: (1) Bond re-described as 'old dog' in every appearance chapter (7 uses across Ch6/10/14/17); (2) Damian physically re-described in Ch3 with traits from adjacent Ch2; (3) Anya telepathy mechanism re-explained Ch8; (4) Ch14/Ch15 near-verbatim seam recap; (5) Damian jaw-tightening gesture repeated identically across 4 chapters; (6) three hedge words exceed density threshold — 'just' at 127 occurrences (1 per 447 words vs 1/800 threshold), 'something' at 73 (1/777), 'maybe' at 71 (1/799); (7) Voss and Falk re-introduced in Ch15; (8) 'coffee' at 32 occurrences across 12 chapters. Em-dash density PASS (13/2533 prose lines = 0.51%). Sentence-opener monotony PASS (He 5.94%, She 5.68%, I 4.84%, It 2.34%, They 0.91% — none exceed 7% manuscript-wide; notable chapter hotspots: Ch13 He 15.4%, Ch1 She 12.7%). PART B (consistency): 1 finding — 'Reinhardt' name collision between unrelated characters in Ch1 and Ch13. Timeline, geography, spatial layout, objects, financial/quantitative details, knowledge states, world rules, and progressive state tracking all passed clean across 8 consistency checks.",
+  "redundancy_findings": [
+    {
+      "finding_id": "RED-001",
+      "category": "redundancy",
+      "subcategory": "character_reintroduction",
+      "severity": "HIGH",
+      "chapter_id": "chapter_03",
+      "evidence": "Ch2 L422: 'Sharper through the jaw, darker under the eyes, the soft roundness of Eden sanded out by adulthood and bad sleep'; Ch2 L402: 'Straight back. Hands resting on stone as if he had taught them calm by force'; Ch3 L584: 'Same straight back, same careful face, but less armored'; Ch3 L596: 'Sharper jaw. Same eyes.'",
+      "problem": "Damian's physical description is established in Ch2 (L422: 'sharper through the jaw'; L402: 'straight back'). One chapter later, Ch3 re-describes the same two traits in the same terms ('sharper jaw' L596, 'same straight back' L584). Adjacent-chapter re-description is the most jarring form of redundancy for a sequential reader.",
+      "rewrite_direction": "Remove or replace the 'sharper jaw' and 'straight back' descriptors in Ch3. The second encounter should enter through behavioral or situational detail new to this scene (the academy setting, his laugh, his changed social register) rather than re-confirming physical traits the reader learned one chapter ago.",
+      "acceptance_test": "Ch3's first close description of Damian contains zero physical traits already stated in Ch2's introduction (no jaw reference, no 'straight back')."
+    },
+    {
+      "finding_id": "RED-002",
+      "category": "redundancy",
+      "subcategory": "character_reintroduction",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "Ch1 L17: 'Whatever anyone within range was actively thinking arrived in her head... Hadn't been able to since she was four'; Ch8 L2089: 'She'd been hearing other people's thoughts since she was four. It never became normal... like carrying a radio under her ribs that nobody else could hear and nobody else could switch off.'",
+      "problem": "Anya's telepathy mechanism is fully established in Ch1 L17 (range, involuntary nature, age-four origin). Ch8 L2089 re-explains the mechanism in near-identical terms ('since she was four', cannot switch off). The 'radio under her ribs' image is new, but the surrounding re-explanation is redundant.",
+      "rewrite_direction": "Cut or heavily compress the mechanism re-explanation at L2089. The 'radio under her ribs' metaphor can stand alone as new texture without re-stating the age-four origin or the can't-switch-off framing. Enter the reception through the specific sensory character of THIS crowd.",
+      "acceptance_test": "Ch8's opening no longer re-states the age-four origin or the can't-switch-off framing already established in Ch1."
+    },
+    {
+      "finding_id": "RED-003",
+      "category": "redundancy",
+      "subcategory": "character_reintroduction",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_10",
+      "evidence": "Ch6 L1593: 'his joints were what they were'; Ch6 L1663: 'Not the slow surfacing of an old dog'; Ch10 L2721: 'the unselfconscious entitlement of a very large, very old dog who had decided that this particular section of rug was his and always had been.'",
+      "problem": "Bond's age, size, and joint infirmity are established in Ch6 (L1593, L1663). Ch10 L2721 re-describes Bond as 'very large, very old dog' with no new information about his physical condition. The Yor-POV shift provides some justification, but the trait package is identical.",
+      "rewrite_direction": "Let Bond's presence in Ch10 register through behavior or Yor's specific relationship to him rather than re-certifying his size and age. Yor would notice different things about Bond than Anya does — his breathing, his smell, what he dreams about — rather than the same adjectives.",
+      "acceptance_test": "Ch10's Bond introduction does not use 'old' or 'large/huge' as primary descriptors and instead enters through Yor-specific observation."
+    },
+    {
+      "finding_id": "RED-004",
+      "category": "redundancy",
+      "subcategory": "proof_of_baseline",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "Ch6 L1663: 'old dog'; Ch10 L2721: 'very old dog'; Ch14 L3893: 'faster than an old dog with stiff hips had any right to move'; Ch14 L3915: 'the simpler distress of an old dog who knew only that the place on the map was bad' (22 lines later in same chapter).",
+      "problem": "Bond's 'old dog' label has been used in Ch6 and Ch10, and now appears twice within Ch14 (L3893 and L3915, only 22 lines apart). L3893 earns its place by contrasting age against sudden urgency. L3915 re-applies the same label without new leverage.",
+      "rewrite_direction": "Cut or replace the 'old dog' tag at L3915. Bond's distress as the vision fades can be conveyed through body language (pressing closer, trembling, panting) without re-certifying his age a second time in the same scene.",
+      "acceptance_test": "Ch14 uses the phrase 'old dog' no more than once."
+    },
+    {
+      "finding_id": "RED-005",
+      "category": "redundancy",
+      "subcategory": "proof_of_baseline",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_17",
+      "evidence": "Ch6 L1593: stiff joints; Ch10 L2721: 'very large, very old'; Ch14 L3893: 'old dog with stiff hips'; Ch17 L4960: 'huge and white and old enough now that getting up took planning'; Ch17 L5054: 'the slow certainty of an old dog who knew where the warmth was.'",
+      "problem": "Bond's age, size, color, and mobility difficulty have been re-stated in every chapter where he appears. Ch17 re-describes the full trait package at L4960 and repeats 'old dog' at L5054. These are the 6th and 7th uses of 'old dog' in the manuscript.",
+      "rewrite_direction": "At L4960, enter Bond through what is NEW in this final scene — his warmth, his contentment, the specific quality of his precognitive flicker — rather than re-listing size/color/age. At L5054, replace 'old dog' with a Bond-specific verb or image that conveys the same slow approach without the now-worn label.",
+      "acceptance_test": "Ch17 does not re-state Bond's size, color, or age as primary descriptors and uses 'old dog' zero times."
+    },
+    {
+      "finding_id": "RED-006",
+      "category": "redundancy",
+      "subcategory": "character_reintroduction",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "Ch7 L1998 (Grosz): 'Big man, military carriage, old grief from the border years'; Ch15 L4132: 'Voss himself looked as he always did, heavyset, disciplined, carrying military posture inside an expensive civilian suit. His brother had died in the last border conflict. The grief had not made him generous.'",
+      "problem": "Voss is introduced via Grosz's description in Ch7 L1998 ('big man, military carriage, old grief from the border years'). Ch15 L4132 re-describes the same three traits: build ('heavyset'), bearing ('military posture'), and brother's death/grief — all synonymous with the Ch7 introduction.",
+      "rewrite_direction": "Ch15 should enter Voss through what is tactically relevant to THIS confrontation — his position in the room, who he is talking to, his body language as Damian approaches — rather than re-delivering the dossier summary the reader already has.",
+      "acceptance_test": "Ch15's first description of Voss does not re-state his build, military bearing, or brother's death in terms synonymous with Ch7 L1998."
+    },
+    {
+      "finding_id": "RED-007",
+      "category": "redundancy",
+      "subcategory": "character_reintroduction",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "Ch1 L167: 'He was a senior analyst, easy to miss in a room like this'; Ch15 L4110: 'Gerald Falk, who had stood in WISE hallways for years looking exactly as suspicious as wallpaper'; Ch15 L4264: 'Gerald Falk. Twenty-four years in WISE... A bottle of wine at Anya's fifteenth birthday'; Ch15 L4278: 'That ordinariness had protected him for years.'",
+      "problem": "Falk's ordinariness is established in Ch1 L167. Ch15 re-states it twice (L4110, L4278). Additionally, both Anya's POV (L4110: 'attended her Eden graduation') and Loid's POV (L4264: 'wine at Anya's fifteenth birthday... drying crystal for Yor') independently establish Falk's family ties, performing the same dramatic function from two viewpoints within the same chapter.",
+      "rewrite_direction": "Keep ONE ordinariness re-statement (L4278 in Loid's POV is stronger). Cut or replace L4110's 'as suspicious as wallpaper.' For the family-ties double, keep Loid's version and trim Anya's 'Eden graduation' reference or fold it into tactical assessment.",
+      "acceptance_test": "Ch15 contains at most one re-statement of Falk's ordinariness and does not independently establish his family connections from both POVs."
+    },
+    {
+      "finding_id": "RED-008",
+      "category": "redundancy",
+      "subcategory": "proof_of_baseline",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "evidence": "Ch1 L29: 'The crowd noise was a wall of competing voices'; Ch2 L306: 'A crowd always felt like thirty radios left on in a locked room. Tonight the volume was turned up.'",
+      "problem": "Ch1 establishes what crowds feel like for a telepath (L29: 'wall of competing voices'). Ch2, the very next chapter, re-teaches the same sensory baseline with a synonymous metaphor (L306: 'thirty radios left on in a locked room'). Both serve the identical orienting function. Adjacent-chapter re-orientation on the same sensory baseline.",
+      "rewrite_direction": "Ch2's crowd entry should skip the general crowd-telepathy framing and go directly to what is specific about THIS crowd — the diplomatic event's particular thought-texture, warmth, political pressure — since the reader already understands the general mechanism from Ch1.",
+      "acceptance_test": "Ch2's entry into the state dinner does not include a general statement about what crowds feel like for a telepath."
+    },
+    {
+      "finding_id": "RED-009",
+      "category": "redundancy",
+      "subcategory": "proof_of_baseline",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "Ch8 L2118: 'The headache behind her right eye had already started its steady drilling'; Ch9 L2295: 'The ache behind her right eye had deepened. Jaw tight, shoulders tight, fingers flexing around the water glass without permission.'",
+      "problem": "Anya's 'ache behind her right eye' is stated in Ch8 L2118 and restated in adjacent Ch9 L2295 using the same formulation with no materially new information. The headache baseline has been proved in Ch1 (L113, L183), Ch2 (L314, L368), and now Ch8-Ch9 as an adjacent cluster.",
+      "rewrite_direction": "In Ch9, convey telepathic strain through consequences and behavior (jaw tight, shoulders tight are good) rather than re-naming the familiar 'ache behind her right eye.' Use a different physical marker or framing if the headache must be referenced.",
+      "acceptance_test": "Ch9 does not repeat the 'behind her right eye' formulation already used in Ch8."
+    },
+    {
+      "finding_id": "RED-010",
+      "category": "redundancy",
+      "subcategory": "proof_of_baseline",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "evidence": "Ch9 L2688: 'none of it had been freely offered'; Ch11 L2946: 'carrying things Berger had never offered her'; Ch14 L4003: 'She kept taking the first thing in everybody's head and laying it on the table like they had offered it.'",
+      "problem": "The consent-violation frame for telepathy — thoughts taken rather than offered — uses the same 'offered' formulation three times (Ch9, Ch11, Ch14). The idea is central, but the specific phrasing has become a verbal tic. Ch9 L2688 (kiss scene) is the strongest deployment; Ch14 L4003 is the third use.",
+      "rewrite_direction": "Vary the language at L4003. The consent-violation insight can be expressed through a different metaphor — theft, eavesdropping, trespass — rather than the now-familiar 'offered' construction.",
+      "acceptance_test": "Ch14's expression of telepathic consent violation does not use the word 'offered' in the same frame as Ch9 and Ch11."
+    },
+    {
+      "finding_id": "RED-011",
+      "category": "redundancy",
+      "subcategory": "near_verbatim",
+      "severity": "HIGH",
+      "chapter_id": "chapter_15",
+      "evidence": "Ch14 L4055: 'East Gallery meant a separate entrance, better sight lines'; Ch14 L4057: 'Tomorrow she'd walk into the conference center wearing his press badge and still not know what list he'd kept her off'; Ch15 L4062: 'The borrowed badge had given her better sight lines, a separate entrance, and still no answer about what list he'd kept her off.'",
+      "problem": "Ch15's opening sentence recaps three specific phrases from Ch14's closing in substantially the same form: 'separate entrance, better sight lines' (reversed word order), 'press badge' / 'borrowed badge' (near-synonym), and 'still not know what list he'd kept her off' / 'still no answer about what list he'd kept her off' (12 of 13 content words identical). This is a classic chapter-seam recap that treats the chapter break as a memory gap the reader needs help crossing.",
+      "rewrite_direction": "Cut the recap clause at L4062 ('The borrowed badge had given her better sight lines, a separate entrance, and still no answer about what list he'd kept her off'). Ch15 can open with Anya taking her seat and opening herself to the room — the borrowed credential is already on her lapel, and the reader finished Ch14 seconds ago.",
+      "acceptance_test": "Ch15's opening paragraph does not restate any of the three phrases from Ch14 L4055-4057 (separate entrance, sight lines, list he'd kept her off)."
+    },
+    {
+      "finding_id": "RED-012",
+      "category": "redundancy",
+      "subcategory": "character_gesture_repetition",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_05",
+      "evidence": "Ch4 L939: 'His jaw tightened.' (Damian); Ch5 L1112: 'His jaw tightened.' (Damian) — exact verbatim repetition one chapter later.",
+      "problem": "Damian's jaw-tightening gesture is first used in Ch4 L939. Ch5 L1112 repeats the exact same three-word sentence ('His jaw tightened.') one chapter later with the same dramatic function (suppressed emotional reaction). This gesture recurs in Ch7 L1890 and Ch15 L4182 for a total of 4 chapters. First instance (Ch4) may be kept.",
+      "rewrite_direction": "Vary or cut the jaw-tightening tell at L1112. Use a different physical marker for Damian's suppressed reaction — a change in breathing, a shift in posture, a hand closing — so the reader does not encounter the same three-word sentence in consecutive chapters.",
+      "acceptance_test": "Ch5 does not describe Damian's jaw tightening, locking, or clenching."
+    },
+    {
+      "finding_id": "RED-013",
+      "category": "redundancy",
+      "subcategory": "character_gesture_repetition",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "Ch4 L939: 'His jaw tightened.'; Ch5 L1112: 'His jaw tightened.'; Ch7 L1890: 'Damian's jaw tightened.'",
+      "problem": "Third use of Damian's jaw-tightening gesture in 4 chapters, same dramatic function (suppressed reaction). The gesture has become Damian's sole physical tell for emotional containment.",
+      "rewrite_direction": "Replace with a different physical register. Damian is a diplomat trained in composure — he has a repertoire of tells (voice, breathing, stillness, hand position) beyond jaw tension.",
+      "acceptance_test": "Ch7 does not describe Damian's jaw tightening, locking, or clenching."
+    },
+    {
+      "finding_id": "RED-014",
+      "category": "redundancy",
+      "subcategory": "character_gesture_repetition",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "Ch4 L939: 'His jaw tightened.'; Ch5 L1112: 'His jaw tightened.'; Ch7 L1890: 'Damian's jaw tightened.'; Ch15 L4182: 'Damian felt his jaw lock. Voss saw it and pressed.'",
+      "problem": "Fourth use of Damian's jaw as emotional tell. Ch15 L4182 uses the variant 'jaw lock' but serves the same function. The gesture is now predictable enough that an antagonist (Voss) reads it as a tell in-scene.",
+      "rewrite_direction": "Since Voss reading Damian's tell is dramatically useful, consider keeping the L4182 instance BUT varying at least two of the earlier three (Ch5, Ch7) so the gesture feels earned here rather than habitual for the prose.",
+      "acceptance_test": "Across the full manuscript, Damian's jaw tightening/locking appears no more than twice total."
+    },
+    {
+      "finding_id": "RED-015",
+      "category": "redundancy",
+      "subcategory": "hedge_word_density",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_04",
+      "evidence": "Manuscript-wide 'just': 127 occurrences / 56,758 prose words = 1 per 447 words (threshold: 1 per 800). Ch4: 14 occurrences / 2,148 prose words = 1 per 153 words. Ch4 also has 'maybe' at 7 occurrences / 2,148 words = 1 per 307 words.",
+      "problem": "Ch4 is the densest chapter for 'just' in the manuscript (1 per 153 words, nearly 5x the threshold). Combined with 'maybe' (1 per 307 words), the chapter has an exceptionally high hedge-word load. Manuscript-wide 'just' exceeds threshold by 79%.",
+      "rewrite_direction": "Review Ch4 for non-essential 'just' and 'maybe' — particularly 'just' used as a minimizer ('just a', 'just the', 'it was just') rather than a temporal marker. Target cutting 8-10 of the 14 'just' instances and 3-4 of the 7 'maybe' instances.",
+      "acceptance_test": "Ch4 contains no more than 6 uses of 'just' and no more than 4 uses of 'maybe'."
+    },
+    {
+      "finding_id": "RED-016",
+      "category": "redundancy",
+      "subcategory": "hedge_word_density",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "evidence": "Ch6 'something': 14 occurrences / 3,306 prose words = 1 per 236 words (threshold: 1 per 800). Ch6 'just': 12 occurrences / 3,306 words = 1 per 276 words. Together: 26 hedge instances in 3,306 words.",
+      "problem": "Ch6 is the densest chapter for 'something' in the manuscript (14 of 73 total, 19%) and second-densest for 'just' (12 instances). The combined hedge load is 1 hedge word per 127 prose words, creating a pervasive tentativeness in the prose.",
+      "rewrite_direction": "Review Ch6 for 'something' used as vague placeholder ('something in her voice', 'something harder') and 'just' used as minimizer. Replace 'something' with specific nouns or cut the hedging construction. Target cutting 8-10 of the 14 'something' and 6-8 of the 12 'just'.",
+      "acceptance_test": "Ch6 contains no more than 6 uses of 'something' and no more than 6 uses of 'just'."
+    },
+    {
+      "finding_id": "RED-017",
+      "category": "redundancy",
+      "subcategory": "hedge_word_density",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "Ch7 'something': 11 occurrences / 4,094 prose words = 1 per 372 words (threshold: 1 per 800). Manuscript-wide 'something': 73 / 56,758 = 1 per 777 words.",
+      "problem": "Ch7 has the second-highest 'something' density (11 instances, 1 per 372 words). This is Damian's POV chapter; the vague 'something' repeatedly substitutes for precise internal observation in a character whose political training should produce sharper self-assessment.",
+      "rewrite_direction": "Replace 'something' with specific nouns or cut the hedging construction. Damian's internal voice should name what he perceives rather than gesturing vaguely at it. Target cutting 6-7 of the 11 instances.",
+      "acceptance_test": "Ch7 contains no more than 5 uses of 'something'."
+    },
+    {
+      "finding_id": "RED-018",
+      "category": "redundancy",
+      "subcategory": "hedge_word_density",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "Ch13 'maybe': 11 occurrences / 2,732 prose words = 1 per 248 words (threshold: 1 per 800). Manuscript-wide 'maybe': 71 / 56,758 = 1 per 799 words (at threshold).",
+      "problem": "Ch13 is the densest chapter for 'maybe' (11 of 71 total, 15%). The word dominates Damian's distressed interior monologue after the SSS raid, but at this density it reads as a prose tic rather than a character voice.",
+      "rewrite_direction": "Review Ch13 for 'maybe' used in interior thought. Keep the instances that genuinely convey Damian's uncertainty; cut or rephrase the rest. Target cutting 5-6 of the 11 instances.",
+      "acceptance_test": "Ch13 contains no more than 5 uses of 'maybe'."
+    },
+    {
+      "finding_id": "RED-019",
+      "category": "redundancy",
+      "subcategory": "hedge_word_density",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_16",
+      "evidence": "Ch16 'maybe': 8 occurrences / 2,599 prose words = 1 per 325 words (threshold: 1 per 800). Manuscript-wide 'maybe': 71 / 56,758 = 1 per 799 words.",
+      "problem": "Ch16 has the second-highest 'maybe' density (8 instances, 1 per 325 words). This is the disclosure chapter where Anya tells Damian she is a telepath — the uncertainty should be in the emotional stakes, not the hedging vocabulary.",
+      "rewrite_direction": "Review Ch16 for 'maybe' used as verbal filler. Keep instances in direct speech where they reflect genuine character uncertainty; cut from narration. Target cutting 4-5 of the 8 instances.",
+      "acceptance_test": "Ch16 contains no more than 4 uses of 'maybe'."
+    },
+    {
+      "finding_id": "RED-020",
+      "category": "redundancy",
+      "subcategory": "hedge_word_density",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_17",
+      "evidence": "Ch17 'just': 12 occurrences / 2,981 prose words = 1 per 248 words (threshold: 1 per 800). Manuscript-wide 'just': 127 / 56,758 = 1 per 447 words.",
+      "problem": "Ch17 (the coda/resolution chapter) has the third-highest 'just' density (12 instances, 1 per 248 words). In a chapter meant to land with quiet authority, the minimizing 'just' undercuts the finality the prose needs.",
+      "rewrite_direction": "Review Ch17 for 'just' used as minimizer. The resolution chapter should commit to its statements rather than hedging them. Target cutting 6-8 of the 12 instances.",
+      "acceptance_test": "Ch17 contains no more than 5 uses of 'just'."
+    },
+    {
+      "finding_id": "RED-021",
+      "category": "redundancy",
+      "subcategory": "image_density",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "Manuscript-wide 'coffee': 32 occurrences across 12 of 17 chapters. Ch1: 8 occurrences in 5,075 prose words (1 per 634 words). Next densest: Ch13 (7, intentional coffee-ring motif), Ch8 (4), Ch7 (3), Ch11 (3). Target for 32-count image: keep strongest 8-10.",
+      "problem": "Coffee appears 32 times in the manuscript, exceeding the 10-instance threshold. Ch1 alone has 8 instances (25% of total) across the market extraction, WISE briefing, and cafe scenes. While coffee is a natural setting element, the density in Ch1 makes it a default ambient prop that flattens the sensory palette.",
+      "rewrite_direction": "In Ch1, audit the 8 coffee references and keep only those that serve a specific dramatic or character purpose (e.g., Loid's untouched coffee as a tell, the credenza coffee establishing WISE's institutional drabness). Cut generic passing references. Target reducing Ch1 from 8 to 3-4 instances.",
+      "acceptance_test": "Ch1 contains no more than 4 uses of 'coffee'."
+    },
+    {
+      "finding_id": "RED-022",
+      "category": "redundancy",
+      "subcategory": "image_density",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "evidence": "Manuscript-wide 'coffee': 32 occurrences. Ch8: 4 occurrences in 2,941 prose words (1 per 735 words). Combined with Ch7 (3 occurrences), these adjacent chapters contribute 7 of the 32 total.",
+      "problem": "Ch8 has 4 coffee references in a reception scene where champagne and wine are the actual beverages. These appear to be generic 'bad institutional coffee' gags that repeat the same beat established in Ch1's WISE briefing and Ch7's Grosz apartment.",
+      "rewrite_direction": "Review Ch8's 4 coffee references and cut those that serve the same 'bad coffee' ambient function already established in Ch1 and Ch7. The reception scene has its own sensory palette (crystal, quartet, warm light) that does not need coffee as filler.",
+      "acceptance_test": "Ch8 contains no more than 2 uses of 'coffee'."
+    }
+  ],
+  "consistency_findings": [
+    {
+      "finding_id": "CON-001",
+      "category": "consistency",
+      "subcategory": "character_details",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "Ch1 L143: 'Reinhardt, two seats to her left. Analyst, mid-forties... his seven-year-old daughter Marta had a piano recital'; Ch13 L3562: 'Reinhardt called an hour ago' — Damian's ministry contact with 'daughters. Eight and ten. Football on Saturdays' (L3710).",
+      "problem": "Two unrelated characters share the surname 'Reinhardt' without first-name differentiation: a WISE analyst in Ch1 (mid-forties, daughter Marta age 7, piano recital) and Damian's ministry official contact in Ch13 (two daughters aged 8 and 10, Saturday football, ministry garage). Different occupations, different families, different roles in the plot. The shared surname risks reader confusion, especially since both appear in intelligence-adjacent contexts.",
+      "rewrite_direction": "Rename one of the two Reinhardts. The Ch13 ministry contact is the better candidate for renaming since the Ch1 analyst's name is paired with specific interior thought that makes him more distinctive. Choose a surname that does not collide with any other named character.",
+      "acceptance_test": "No two unrelated characters in the manuscript share a surname."
+    }
+  ]
+}

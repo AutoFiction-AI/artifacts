@@ -1,0 +1,72 @@
+{
+  "chapter_id": "chapter_01",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "KINGLET_AGE_DELTA_CONTRADICTION",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:73; snapshots/cycle_01/chapters/chapter_01.md:115",
+      "problem": "Kinglet is framed as twenty years older than Anya during the extraction, then as only twelve years older in the immediate aftermath. The contradiction lands inside the same local beat where the text is trying to emphasize the younger operative/older courier reversal, so it reads as broken chapter-internal continuity rather than nuance.",
+      "rewrite_direction": "Revise the age-gap references at snapshots/cycle_01/chapters/chapter_01.md:73 and snapshots/cycle_01/chapters/chapter_01.md:115 so they resolve to one consistent relationship, or remove one numerical comparison and render the asymmetry through non-numeric detail instead. Keep the intended contrast that the older courier freezes while the younger operative stays steady, but do not make the math change between beats.",
+      "acceptance_test": "Pass if a reader can move from snapshots/cycle_01/chapters/chapter_01.md:73 to snapshots/cycle_01/chapters/chapter_01.md:115 without inferring two different age gaps. Fail if both surviving references still imply incompatible numbers."
+    },
+    {
+      "finding_id": "MARKET_ROUTE_SPATIAL_CONFUSION",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:77; snapshots/cycle_01/chapters/chapter_01.md:89; snapshots/cycle_01/chapters/chapter_01.md:101",
+      "problem": "The extraction logic says Anya rejects the west exit and takes Kinglet east, but the scene then states they emerge on the western edge of the market without showing the loop that gets them there. Because the beat's success depends on her route choice and on the tails committing to the wrong exit, the missing spatial handoff blurs cause and effect in the chapter's main action sequence.",
+      "rewrite_direction": "Clarify the route in snapshots/cycle_01/chapters/chapter_01.md:77-101. If she truly loops back west, show that turn explicitly; if the intended exit is the eastern edge, correct the directional label. The chase should let a cold reader track bench, false expectation, actual path, and diplomatic-quarter boundary without stopping to reconcile the geography.",
+      "acceptance_test": "Pass if a cold reader can trace one consistent path from the bench to the diplomatic boundary by reading snapshots/cycle_01/chapters/chapter_01.md:77-101, with east/west references that agree with each other. Fail if Anya still appears to go east and then simply materialize on the west edge without an explicit transition."
+    },
+    {
+      "finding_id": "FALK_INTRO_OVERSIGNALED",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:155; snapshots/cycle_01/chapters/chapter_01.md:159; snapshots/cycle_01/chapters/chapter_01.md:161",
+      "problem": "The boundary/context material calls for Falk to register as a named colleague whose cynical thought becomes meaningful only in retrospect. Instead, the chapter halts to give him personalized backstory, a sentimental graduation memory, and the fountain-pen detail, which spotlights him as future-plot-relevant on first introduction and undercuts the intended quietness of the seed.",
+      "rewrite_direction": "Trim or redistribute the spotlight material in snapshots/cycle_01/chapters/chapter_01.md:155-161. Keep Falk named and present, and keep the institutional cynicism if needed, but defer the graduation/fountain-pen memory or any similarly singular marker that isolates him from the rest of the room before the story has earned that emphasis.",
+      "acceptance_test": "Pass if Falk's briefing-room appearance reads like one colleague among several and the cited span does not attach a sentimental personal-history marker to him. Fail if the revised introduction still singles him out with a bespoke keepsake, an unusually loaded memory, or equivalent narrative underlining."
+    },
+    {
+      "finding_id": "MISSION_BRIEF_REHEATED_AT_CAFE",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:145; snapshots/cycle_01/chapters/chapter_01.md:149; snapshots/cycle_01/chapters/chapter_01.md:201; snapshots/cycle_01/chapters/chapter_01.md:209",
+      "problem": "The chapter delivers the same mission assessment twice in near-identical analytical language: first in Sylvia's briefing, then again in Anya's summary to Loid. That repetition turns the cafe scene into a partial re-brief instead of letting it convert the assignment into new tactical or relational pressure, so the chapter spends pages restating a point that has already landed.",
+      "rewrite_direction": "Compress the restatement at snapshots/cycle_01/chapters/chapter_01.md:201-202 and pivot the cafe conversation faster toward what only Loid can add in snapshots/cycle_01/chapters/chapter_01.md:203-215: cover-pattern strategy, Yuri/SSS risk, handler-father conflict, or another materially new consequence. The second scene should advance the assignment rather than paraphrase Sylvia's first delivery.",
+      "acceptance_test": "Pass if the cafe scene introduces a new tactical or relational problem within the first few lines of the assignment talk and does not restate Sylvia's procurement/compartmentalization summary in full. Fail if both scenes still spend their opening beats delivering essentially the same mission brief before the father-daughter scene starts doing fresh work."
+    },
+    {
+      "finding_id": "ENDING_DRIFTS_INTO_THESIS_LANGUAGE",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:269; snapshots/cycle_01/chapters/chapter_01.md:279; snapshots/cycle_01/chapters/chapter_01.md:281; snapshots/cycle_01/chapters/chapter_01.md:285",
+      "problem": "After the walk-home vignettes have already made the burden/violation legible, the closing movement leaves Anya's close-third register and restates the theme in polished, universal language. Lines like the privacy claim and the 'most connected ... most alone' closure read as authorial thesis-writing rather than Anya's immediate processing, which creates prestige-creep and overstatement after the chapter has already arrived.",
+      "rewrite_direction": "Rework snapshots/cycle_01/chapters/chapter_01.md:269-285 so the ending stays in Anya's plainer, more immediate register and lands through concrete intrusive detail, bodily response, or one specific thought she cannot stop hearing. Keep the lifelong-violation turn, but stop once the page has made the feeling unavoidable instead of translating it into abstract summary.",
+      "acceptance_test": "Pass if the revised closing movement in snapshots/cycle_01/chapters/chapter_01.md:269-289 remains anchored to concrete perception or action and does not end on an abstract universal claim or aphoristic summary of Anya's condition. Fail if the passage still explains the theme after the citizen-thought sequence has already made it legible."
+    },
+    {
+      "finding_id": "EXPLANATORY_PROSE_TEMPLATES_REPEAT",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:105; snapshots/cycle_01/chapters/chapter_01.md:135; snapshots/cycle_01/chapters/chapter_01.md:143; snapshots/cycle_01/chapters/chapter_01.md:159; snapshots/cycle_01/chapters/chapter_01.md:259",
+      "problem": "Across action, description, and interior analysis, the chapter repeatedly leans on the same explanatory sentence scaffolds: 'specific X,' 'the kind of X,' and 'in the way of someone who...' constructions that interpret the image for the reader instead of letting the detail carry it. The recurrence is visible enough within this single chapter to read as a prose tic rather than a deliberate local choice.",
+      "rewrite_direction": "Line-edit the repeated scaffold passages at snapshots/cycle_01/chapters/chapter_01.md:105, snapshots/cycle_01/chapters/chapter_01.md:135, snapshots/cycle_01/chapters/chapter_01.md:143, snapshots/cycle_01/chapters/chapter_01.md:159, and snapshots/cycle_01/chapters/chapter_01.md:259. Keep the underlying observations, but replace most of the interpretive template language with direct concrete detail or sentence shapes that do not all solve the beat the same way.",
+      "acceptance_test": "Pass if those revised passages no longer repeat the same 'specific ...' / 'the kind of ...' / 'in the way of someone ...' scaffold more than once across the cited set and each beat reads as its own observation. Fail if three or more of the cited lines still use the same explanatory template."
+    }
+  ],
+  "summary": "Chapter 1 hits the required setup beats and the dialogue remains differentiated enough to pass, but it does not clear pass-level craft/prose standards. The market extraction contains a local continuity/spatial break, Falk is over-signaled instead of quietly seeded, the briefing material is partially repeated rather than converted into fresh scene pressure, and the ending drifts out of Anya's close-third voice into thesis language."
+}

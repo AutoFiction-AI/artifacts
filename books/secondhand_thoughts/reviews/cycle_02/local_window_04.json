@@ -1,0 +1,65 @@
+{
+  "chapters_reviewed": [
+    "chapter_07",
+    "chapter_08",
+    "chapter_09",
+    "chapter_10"
+  ],
+  "cycle": 2,
+  "findings": [
+    {
+      "acceptance_test": "A reader finishing Chapter 7 and starting Chapter 8 can tell whether Lang's meeting has already happened, is happening later that same day, or has been displaced by the reception, without wondering if the book forgot the annex-number plan.",
+      "boundary_span": "chapter_07/chapter_08",
+      "category": "pre_scan",
+      "chapter_id": "chapter_08",
+      "evidence": "Chapter 7 closes on Grosz's instruction that Damian attend Lang's Thursday working group, capture annex numbers, and watch who speaks to Voss, then shows Damian writing the annex number down before beginning the tariff paper; Chapter 8 opens at a different reception with no bridge or acknowledgment of whether that mission happened. snapshots/cycle_02/FINAL_NOVEL.md:2024 snapshots/cycle_02/FINAL_NOVEL.md:2074 snapshots/cycle_02/FINAL_NOVEL.md:2081",
+      "finding_id": "LW04-001",
+      "fix_owner_reason": "Chapter 8 owns the fix because the later chapter is responsible for absorbing the prior chapter's end-hook and preventing it from reading like a dropped thread.",
+      "pass_hint": "p1_structural_craft",
+      "problem": "Read straight through, Chapter 7 ends on a concrete investigative promise and Chapter 8 behaves as if the reader should simply absorb a new set piece instead. Because the successor chapter neither cashes the Thursday assignment nor explicitly supersedes it, Damian's procurement thread feels dropped at the exact point it was supposed to tighten.",
+      "related_chapter_ids": [
+        "chapter_07"
+      ],
+      "rewrite_direction": "At the start of Chapter 8, add a time bridge and one sentence of outcome or non-outcome from Lang's meeting and the annex hunt, or move Grosz's specific Thursday instructions later so Chapter 7 does not promise an immediate payoff the window refuses to deliver.",
+      "severity": "HIGH",
+      "subcategory": "dangling_thread"
+    },
+    {
+      "acceptance_test": "On a cold read, the first paragraph of Chapter 10 tells the reader where Yor's timeline sits relative to Damian and Anya's safe-house night before the compound action begins.",
+      "boundary_span": "chapter_09/chapter_10",
+      "category": "pre_scan",
+      "chapter_id": "chapter_10",
+      "evidence": "Chapter 9 ends with Anya framing dawn as the next action point while Damian sleeps in the safe house; Chapter 10 then begins with Yor in a domestic setup and later reaches the compound at half past ten without saying whether this is earlier that same night, the next night, or a parallel rewind. snapshots/cycle_02/FINAL_NOVEL.md:2710 snapshots/cycle_02/FINAL_NOVEL.md:2712 snapshots/cycle_02/FINAL_NOVEL.md:2717 snapshots/cycle_02/FINAL_NOVEL.md:2773",
+      "finding_id": "LW04-002",
+      "fix_owner_reason": "Chapter 10 owns the fix because the chronology confusion is created by its unanchored opening.",
+      "pass_hint": "p1_structural_craft",
+      "problem": "Because the boundary supplies no temporal marker, the reader has to stop and solve where Chapter 10 sits relative to the safe-house night. That reorientation work is visible because Chapter 9 has just pointed the reader toward dawn as the next beat, so the sudden reset to Yor's evening leaves the timeline briefly unstable.",
+      "related_chapter_ids": [
+        "chapter_09"
+      ],
+      "rewrite_direction": "Tag Chapter 10's opening with an explicit temporal relation to Chapter 9, such as 'Earlier that evening' or 'The next night,' and keep one sentence that explains why the narrative is leaving the safe house now.",
+      "severity": "MEDIUM",
+      "subcategory": "chronology_gap"
+    },
+    {
+      "acceptance_test": "In Chapters 7 through 9, each recognition beat materially alters what Damian knows or how Anya must respond; the reader should not encounter three consecutive 'almost remembered' beats that all reset to uncertainty.",
+      "boundary_span": "chapter_07/chapter_09",
+      "category": "repetitive_scene_dynamics",
+      "chapter_id": "chapter_09",
+      "evidence": "Damian studies the Eden class photo and nearly retrieves Anya's name in Chapter 7, nearly resolves the same memory at the reception in Chapter 8, then in Chapter 9 tells the cleanup story, asks if she went to Eden, and still lands on another interrupted almost-recognition during the kiss. snapshots/cycle_02/FINAL_NOVEL.md:2068 snapshots/cycle_02/FINAL_NOVEL.md:2237 snapshots/cycle_02/FINAL_NOVEL.md:2600 snapshots/cycle_02/FINAL_NOVEL.md:2682",
+      "finding_id": "LW04-003",
+      "fix_owner_reason": "Chapter 9 owns the fix because later and weaker repetition owns the pattern, and the third pass is where the near-recognition stops reading as escalation and starts reading as stall.",
+      "pass_hint": "p1_structural_craft",
+      "problem": "Across three consecutive chapters, the same interpersonal dynamic repeats: Damian gets close to identifying Anya through the same Eden, pink-hair, and laugh cues, then the beat aborts. Chapter 9 changes the temperature, but it still withholds the same piece of leverage, so the recognition thread starts to feel prolonged rather than sharpened.",
+      "related_chapter_ids": [
+        "chapter_07",
+        "chapter_08"
+      ],
+      "rewrite_direction": "Either remove one of the earlier near-miss beats or let Chapter 9 convert the pattern into a genuinely new state, such as a partial name, a concrete suspicion Damian acts on, or a visible change in how Anya has to manage him afterward.",
+      "severity": "HIGH",
+      "subcategory": "recognition_near_miss_repetition"
+    }
+  ],
+  "summary": "Dominant local-window failures: Damian's recognition of Anya is prolonged through three consecutive near-miss beats, while the 07/08 and 09/10 boundaries under-orient the reader about promised next steps and timeline placement.",
+  "window_id": "window_04"
+}

@@ -1,0 +1,253 @@
+{
+  "acceptance_targets": [
+    "[SPRAWL_CH10] Pass if the chapter closes within 15 lines of the compound departure, ending on the battery removal as a compressed physical act. Fail if the walk home still includes extended moral processing or domestic-thought enumeration.",
+    "[R025] Ch10 contains no more than 6 instances of 'something.'",
+    "[LW04-002] A cold reader can summarize the causal chain from \"asset inside WISE\" and \"18:12 / west exit revision / WS-7\" to \"watch Karl Dominic's compound\" without relying on inference-heavy guesswork.",
+    "[LW04-003] After chapter_10, the reader should feel that the story's leverage has changed in a way chapter_09 did not already deliver; the ending should register as escalation, not as a second version of \"don't call it in yet.\"",
+    "[LW05-001] A reader moving directly from Chapter 9 into Chapter 10 can tell within the first page that Damian survived the night, the promised dawn move/report occurred offstage, and the WS-7 lead remains active."
+  ],
+  "aggregation_applied": {
+    "decisions_file": "packets/cycle_03/aggregation_decisions.json",
+    "decisions_sha1": "5b1896d0d80c5b6ca52bc77fd008f267c508d6cc"
+  },
+  "chapter_id": "chapter_10",
+  "cycle": 3,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if the chapter closes within 15 lines of the compound departure, ending on the battery removal as a compressed physical act. Fail if the walk home still includes extended moral processing or domestic-thought enumeration.",
+      "chapter_id": "chapter_10",
+      "cycle": 3,
+      "evidence": "snapshots/cycle_03/FINAL_NOVEL.md:5880; snapshots/cycle_03/FINAL_NOVEL.md:5920; snapshots/cycle_03/FINAL_NOVEL.md:5935",
+      "finding_id": "SPRAWL_CH10",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:5880",
+            "excerpt": "5880:",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:5920",
+            "excerpt": "5920:",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:5935",
+            "excerpt": "5935: \"Sure,\" she said. \"Get some rest.\"",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          }
+        ],
+        "rewrite_direction": [
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:5875-5935",
+            "excerpt": "5875: Yor kept breaking through it anyway. Dominic's records. Garden's code in Dominic's paperwork. The crack that had opened in her mother's head on the service road. But Anya had nothing she could carry into a briefing folder, no way to ask Yor what she'd found without admitting she'd stolen it out of her mind, and no reason to think Yor would tell anyone before she tried to think her way back into obedience. That was the bet Anya had made when she turned away instead of following Yor home. Maybe Yor would go quiet for a few days. Maybe, in those same few days, Garden would clean the trail and Yor would let them. Damian's warning about the WISE leak felt shorter than that. So Anya came to headquarters and stayed.\n5876: \n5877: In her fourth-floor cubicle, coffee went cold beside an access-log spreadsheet. The fluorescents buzzed. Reheated fish from the break room was making the whole floor smell like punishment. Outside, two analysts argued about sourcing methodology while one of them worried about his dead dog and the other about an overdue credit-card bill.\n5878: \n5879: Reading WISE all day got her the same junk everybody else carried around: errands, resentment, money, lunch, w...",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "problem": "After Yor's departure from Anya at the compound perimeter -- the chapter's natural dramatic close -- the prose extends 55+ lines through Yor's walk home, her processing of the Garden's complicity, the domestic-thoughts reassembling themselves, and the battery-removal decision. The battery moment is powerful in isolation but arrives after the scene's emotional weight has already been spent. The walk home restates the moral rupture (nine contracts, four years, Garden's code) that the compound discovery already delivered.",
+      "rewrite_direction": "Revise snapshots/cycle_03/FINAL_NOVEL.md:5875-5935. End the chapter within 10-15 lines of Yor's departure from Anya. The battery-removal decision can be compressed to a single gesture: she walks, she reaches the tram, she takes the battery out. Cut the extended domestic-thought reassembly and the enumeration of what the Garden papers mean. Yor's silence about the confirmation call should land as physical action, not narratorial meditation.",
+      "severity": "HIGH",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch10 contains no more than 6 instances of 'something.'",
+      "chapter_id": "chapter_10",
+      "cycle": 3,
+      "evidence": "Ch10: 10 instances of 'something' in 5,562 prose words = 1 per 556 words; manuscript-wide: 141/102,891 = 1 per 730 words",
+      "finding_id": "R025",
+      "problem": "Ch10 has 10 instances of 'something' at 1 per 556 words. This is Yor's assassination chapter where precision of observation is thematically important, making hedge words particularly counterproductive.",
+      "rewrite_direction": "Audit Ch10 for 'something' and replace with operational or sensory specifics. Target reducing from 10 to 6 or fewer.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "A cold reader can summarize the causal chain from \"asset inside WISE\" and \"18:12 / west exit revision / WS-7\" to \"watch Karl Dominic's compound\" without relying on inference-heavy guesswork.",
+      "chapter_id": "chapter_10",
+      "cycle": 3,
+      "evidence": "Anya ends chapter 8 with a specific plan to work review calendars, staffing shifts, and access lists before identity (`snapshots/cycle_03/FINAL_NOVEL.md:5140`; `snapshots/cycle_03/FINAL_NOVEL.md:5148`). Chapter 9 opens three days later with her already tailing Damian instead (`snapshots/cycle_03/FINAL_NOVEL.md:5203`). By chapter 10, the reader is asked to accept a completed north-side surveillance setup keyed to `WS-7` (`snapshots/cycle_03/FINAL_NOVEL.md:5750`; `snapshots/cycle_03/FINAL_NOVEL.md:5782`).",
+      "finding_id": "LW04-002",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:5140",
+            "excerpt": "5140: She would start with the review cycle, not the abstract word from the room but the actual live reviews touching WISE over the next week: oversight, coverage rotation, border traffic assessments, anything that changed staffing or paper flow. She needed to know who had access, who would know a window was closing, and who would know a handoff had to move before coverage shifted.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:5148",
+            "excerpt": "5148: She could do quiet work, ugly work, work that started with calendars, rosters, access lists, watch coverage, and who touched what file and when. She could do it because Loid had taught her how to build a pattern and because telepathy, filthy unfair telepathy, had dropped the first shard in her lap.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:5203",
+            "excerpt": "5203: For twenty minutes, Anya had kept Damian well ahead after he left the Foreign Affairs Ministry. Far enough not to trip his instincts. Far enough to tell herself the tail was protocol, just an operational partner keeping eyes on an ally in an unsecured environment. Partly true. The rest was simpler and worse: three days after catching *the asset inside WISE* at the reception, she couldn't leave his movements alone.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:5750",
+            "excerpt": "5750: At the base of the wall, where the service road curved toward the canal, the weeds beside the industrial waste containers had been pressed flat into a human hollow. A cheap thermos lay on its side with the cap screwed back on tight. Beside it sat compact field glasses wrapped in dark tape to kill reflection, a pencil worn down to the metal, and a folded municipal survey map pinned under a broken brick. The compound perimeter had been sketched on the back in quick pencil strokes: south gate, loading dock, patrol route, the north sensor gap she'd used. In the upper corner someone had written `WS-7`.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:5782",
+            "excerpt": "5782: \"I had a line from the west side,\" Anya said. \"One corridor. It ended here.\"",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "pass_hint": "p1_structural_craft",
+      "problem": "Across the cluster, the mole plot advances in result states rather than dramatized reasoning. The reception fragment, the ambush-mailbox clue, and the Dominic stakeout all belong to the same investigative line, but the connective work keeps happening between chapters. As a reading experience, that makes the conspiracy feel discovered by omission rather than by cumulative pressure.",
+      "rewrite_direction": "Add one compact on-page deduction beat that converts the reception fragment and WS-7 movement leak into Dominic: show Anya testing review windows against movement traffic, narrowing the corridor, and choosing Dominic's gate as the first useful watch point.",
+      "severity": "HIGH",
+      "source": "local_window",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "After chapter_10, the reader should feel that the story's leverage has changed in a way chapter_09 did not already deliver; the ending should register as escalation, not as a second version of \"don't call it in yet.\"",
+      "chapter_id": "chapter_10",
+      "cycle": 3,
+      "evidence": "Chapter 9 culminates in Anya deciding the leak makes official activation impossible, so the safe-house phone stays dark until morning (`snapshots/cycle_03/FINAL_NOVEL.md:5375`; `snapshots/cycle_03/FINAL_NOVEL.md:5399`). Chapter 10 ends on the same structural beat from the Garden side: Anya warns Yor not to make the next call (`snapshots/cycle_03/FINAL_NOVEL.md:5810`), then Yor removes the battery instead of confirming completion (`snapshots/cycle_03/FINAL_NOVEL.md:5856`; `snapshots/cycle_03/FINAL_NOVEL.md:5862`).",
+      "finding_id": "LW04-003",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:5375",
+            "excerpt": "5375: \"One call on this activates the apartment,\" she said. \"Duty officer logs the address, dispatch logs the time, somebody opens a file, and everybody with emergency access can see that this location is hot.\"",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:5399",
+            "excerpt": "5399: \"First light,\" she said. \"I move you first. Then I report.\"",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:5810",
+            "excerpt": "5810: Anya held her eyes. \"Don't make whatever call comes next tonight. Just go home.\"",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:5856",
+            "excerpt": "5856: The phone in her pocket vibrated once: not a call, just the automated reminder that the confirmation window was closing.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:5862",
+            "excerpt": "5862: Tonight she slid the battery free instead.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "pass_hint": "p1_structural_craft",
+      "problem": "Read consecutively, the two chapters close on near-identical narrative functions: discover institutional contamination, keep the reporting line dark, carry the secret evidence alone into tomorrow. Chapter_10 has bigger revelations, but its terminal state still echoes chapter_09's withheld-report climax so closely that the second ending feels like a replay rather than a new pressure geometry.",
+      "rewrite_direction": "Make chapter_10's closing move materially different from chapter_09's. Yor could set a trap, destroy or hide evidence, choose a specific person to trust, or take an irreversible action that changes the family or Garden board immediately instead of ending on another deferred report.",
+      "severity": "HIGH",
+      "source": "local_window",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "A reader moving directly from Chapter 9 into Chapter 10 can tell within the first page that Damian survived the night, the promised dawn move/report occurred offstage, and the WS-7 lead remains active.",
+      "chapter_id": "chapter_10",
+      "cycle": 3,
+      "evidence": "Chapter 9 closes on an immediate dawn plan to move Damian; report; and run the WS-7 lead while his near-recognition is still active; but Chapter 10 hard-resets into Yor's domestic opener instead of first stabilizing that cliff; the relationship aftermath is only backfilled later as summary about being careful since the safe house: snapshots/cycle_03/FINAL_NOVEL.md:5573; snapshots/cycle_03/FINAL_NOVEL.md:5575; snapshots/cycle_03/FINAL_NOVEL.md:5580; snapshots/cycle_03/FINAL_NOVEL.md:6398; Chapter 9 ends with a concrete dawn promise: Anya will move Damian; report from a cleaner line; and go north on the narrowed corridor (`snapshots/cycle_03/FINAL_NOVEL.md:5573`). Chapter 10 hard-cuts to Yor \"the next evening\" in domestic space (`snapshots/cycle_03/FINAL_NOVEL.md:5580`) and only much later reveals Anya already running a WS-7 stakeout outside Dominic's compound (`snapshots/cycle_03/FINAL_NOVEL.md:5750`; `snapshots/cycle_03/FINAL_NOVEL.md:5782`).",
+      "finding_id": "LW05-001",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:5573",
+            "excerpt": "5573: The bare bulb buzzed. His blood had dried brown at the edges of her nails from the butterfly strips. In her pocket, the folded note pressed against her thigh: `18:12 / west exit revision / WS-7`. The prepaid phone sat in the closet with its battery beside it, both of them waiting for morning. Dawn would be for moving him, reporting from somewhere cleaner, and going north on the one corridor she'd managed to narrow.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:5575",
+            "excerpt": "5575: For now he slept in brief, uneven drifts with his shoulder against hers and his fingers still slack in her sleeve. Her jaw had been locked so long it hurt, and the bruise under her ribs was only part of the reason. She had no clean way to separate what belonged to her from what she'd taken. Under the scratchy blanket, with his near-name still catching and failing in her head, staying felt like one more theft. She stayed anyway.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:5580",
+            "excerpt": "5580: Under the kitchen light, the milk was going to be a problem. The next evening, Yor knew only that the milk was going to be a problem.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:6398",
+            "excerpt": "6398: They were careful with each other in public. They had been careful since the safe house, since the bruised ribs and split eyebrow and the quiet after, since the line they'd crossed and then, by mutual unstated agreement, backed away from without deciding which side they meant to live on. Here, in a room full of people who knew one or both of them, careful was the only option. It also weighed a ton.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:5750",
+            "excerpt": "5750: At the base of the wall, where the service road curved toward the canal, the weeds beside the industrial waste containers had been pressed flat into a human hollow. A cheap thermos lay on its side with the cap screwed back on tight. Beside it sat compact field glasses wrapped in dark tape to kill reflection, a pencil worn down to the metal, and a folded municipal survey map pinned under a broken brick. The compound perimeter had been sketched on the back in quick pencil strokes: south gate, loading dock, patrol route, the north sensor gap she'd used. In the upper corner someone had written `WS-7`.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:5782",
+            "excerpt": "5782: \"I had a line from the west side,\" Anya said. \"One corridor. It ended here.\"",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "pass_hint": "p1_structural_craft",
+      "problem": "The adjacent handoff asks the reader to shelve the hottest emotional and operational thread in the window without even a quick orienting beat. Because the promised dawn follow-through vanishes for two chapter openings, the safe-house climax reads less like sustained pressure and more like a skipped chapter.",
+      "rewrite_direction": "Give Chapter 10 an early orienting beat before Yor's domestic material takes over: confirm that Damian was moved at dawn, the WS-7 lead is now driving Anya's surveillance direction, and whether the report was delayed or rerouted. The reader needs to learn what happened at first light so the safe-house climax converts into sustained pressure rather than reading as a skipped chapter.",
+      "severity": "HIGH",
+      "source": "local_window",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "has_locator_excerpts": true,
+  "input_snapshot_hash": "9d097980487e8dca9f0facbe466c36c0664e8ddb93f126fd8e11802bfbc68d6a",
+  "must_fix_count": 5,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness.",
+    "Audit every revised passage for hedge words ('something,' 'somehow,' 'seemed to,' 'a kind of,' 'almost'). Replace with specifics wherever the referent can be identified. Intentional vagueness is permitted only when a character is genuinely uncertain or a telepathic signal is genuinely fragmentary. The default must be precision, not approximation.",
+    "In any revised dialogue exchange of three or more volleys, ensure at least one moment of rhythmic imbalance: a line that lands wrong, a response at the wrong register, a silence where speech was expected, or a sentence the speaker visibly regrets starting. Do not produce perfectly weighted stichomythia where every line advances the theme at the same pace and length.",
+    "Once a chapter's dramatic climax has landed, close within 10-15 lines. Do not extend into narratorial meditation, moral processing, or enumeration of what the climax means. End on a physical detail, an unresolved image, or a single unprocessed sensation. The reader carries the meaning; the chapter's job is to leave them in the collision, not to summarize it."
+  ],
+  "original_snapshot_file": "snapshots/cycle_03/chapters/chapter_10.md",
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This novel's premise blends comedy, espionage action, and genuine emotional stakes. The creative risk is in honoring all three simultaneously without letting any one mode cannibalize the others. Do not soften the violence because the novel is funny. Do not suppress the comedy because the stakes are real. Do not retreat from Anya's moral complicity (she reads minds without consent and uses it to manipulate) because she is the protagonist and we like her. The hardest scenes to get right are the ones where comedy and pain coexist \u2014 a fight that is also funny, a confession that is also absurd, a family dinner where love and deception are the same meal. Lean into those moments rather than resolving them into one register. The novel's best material lives in the dissonance.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism at the point of consequence is a craft failure. When violence, fear, grief, or moral compromise demands scene presence, render it with specificity. A bruise should have a color. A death should have weight. A lie should have a cost the liar feels in their body. The exception is Anya's telepathic restraint \u2014 she sometimes cannot bear to fully articulate what she's reading in someone's mind, and this selective omission is a character choice, not authorial squeamishness.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for all characters in casual speech. Uncontracted forms reserved for emphasis, deliberate formality, or character-specific register choices (Sylvia's professional diction, Damian's diplomatic mode). In contemporary casual scenes, an unjustified full-form line should be flagged and checked.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 2
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "No two consecutive chapters should share the same structural rhythm. Alternate between dialogue-heavy scenes and interiority-heavy passages. Vary scene count: two-scene chapters (11, 16, 17 \u2014 compressed force) against multi-scene chapters (8, 15 \u2014 breadth and momentum). Shift between comic dominant and dramatic dominant across the middle of the book, with the comic register maintaining presence even in dramatic chapters through Anya's voice and the Forger family's inherent absurdity. The tonal shift at Chapter 13 is a deliberate gear change, not a gradual dimming \u2014 comedy should be fully alive in Chapter 12 and markedly reduced (not absent) in Chapter 13. The Chapter 13 POV shift to Damian is a structural event: the reader's relationship to information changes. The final act (14-17) maintains Anya's voice and the family's warmth as comic undertone, but the dominant mode is drama with consequences. Chapter 17's dinner scene reintroduces comedy through a register the novel has not previously accessed \u2014 Damian's self-conscious thought management around a known telepath \u2014 which only works because it follows sixteen chapters of oblivious thought-reading.",
+      "diction": "Contemporary and accessible, not literary-precious. The prose should have energy and forward drive. Humor comes from observation, character logic, and the gap between surface and interior \u2014 not from clever narration or authorial commentary. Let the funny things be funny without signposting them. Let the sad things sit without interpretation. The prose should be invisible when it needs to be and vivid when the scene demands it, but never decorative for its own sake.",
+      "forbidden_drift_patterns": [
+        "Narrator-as-comedian: the prose commenting on its own comedy, winking at the reader, or admiring a character's wit. The humor lives in the situation, not in the telling.",
+        "Telepathy-as-omniscience: Anya's mind-reading should feel like cognitive overload, not like a narrator's convenient access to exposition. She reads surface thoughts, not deep motivations, and the thoughts she catches should be fragmentary, mundane, and sometimes misleading.",
+        "Prestige-creep: the prose drifting toward solemn literary register when the scene's natural mode is comic, warm, or chaotic. This novel's emotional power comes from the coexistence of comedy and genuine feeling, not from the comedy yielding to seriousness.",
+        "Briefing-itis: scenes where characters explain plot to each other or to the reader. Information should emerge through action, observation, and telepathic fragments \u2014 not through expository dialogue formatted as conversation.",
+        "Combat-poetry: fight scenes that become lyrical or aesthetically admiring. Violence should be fast, specific, physically grounded, and over quickly. Yor's lethality is matter-of-fact; Anya's fighting is scrappier and less elegant.",
+        "Emotion-labeling: telling the reader what a character feels instead of rendering the feeling through thought, action, and physical detail. 'She felt sad' is always worse than the specific thing that makes the sadness legible."
+      ],
+      "narrative_distance": "Close third person, primarily Anya. Chapter 7 (Damian), Chapter 10 (Yor), the Damian POV section in Chapter 13, and Damian's thread in Chapter 15 shift to close third on their respective POV characters. The telepathy layer is unique to Anya's POV \u2014 when she is the viewpoint character, other characters' surface thoughts appear as italicized interjections woven into the prose. In non-Anya POV chapters, no telepathic content appears. The Chapter 13 Damian POV section is structurally critical: it gives the reader access to Damian's interior at a depth Anya's telepathy cannot reach, and it reveals that he has identified Anya \u2014 knowledge the reader carries into the final act while Anya does not. This dramatic irony reversal is the novel's strongest structural surprise and depends on the reader experiencing Damian's depths unmediated by Anya's telepathic filter.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Varied and responsive to scene pressure. Action sequences: short sentences, concrete verbs, sensory immediacy. Comic scenes: longer sentences that build to turns, pacing that allows beats to land. Quiet domestic scenes: relaxed rhythm with room for observation and texture. Telepathic interjections should disrupt prose rhythm the way intrusive thoughts disrupt concentration \u2014 not ornamentally but as genuine cognitive interference. Avoid metronomic sentence patterns in any mode.",
+      "sensory_bias": [
+        "visual surveillance \u2014 reading rooms, reading faces, the spy's hyperawareness of spatial arrangement and exit routes",
+        "auditory \u2014 overheard thoughts as a telepathic sixth sense layered over actual ambient sound",
+        "kinesthetic \u2014 action choreography, physical proximity, the body under stress or in intimacy",
+        "olfactory/gustatory \u2014 Yor's cooking, Berlint street food, the specific smell of institutional buildings and safe houses"
+      ]
+    }
+  }
+}

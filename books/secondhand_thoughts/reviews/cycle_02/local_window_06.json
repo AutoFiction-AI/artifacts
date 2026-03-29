@@ -1,0 +1,81 @@
+{
+  "chapters_reviewed": [
+    "chapter_11",
+    "chapter_12",
+    "chapter_13",
+    "chapter_14"
+  ],
+  "cycle": 2,
+  "findings": [
+    {
+      "acceptance_test": "After finishing chapter 12, a reader can state what happened to Anya's planned 0600 Falk watch and why the story is now at the gala instead.",
+      "boundary_span": "chapter_11/chapter_12",
+      "category": "pre_scan",
+      "chapter_id": "chapter_12",
+      "evidence": "Chapter 11 exits on a specific dawn task: Anya writes \"0600 / diplomatic procurement desk / Falk\" and explicitly decides Yor can wait one more night because that WISE lane is about to go blind at snapshots/cycle_02/FINAL_NOVEL.md:3110 and snapshots/cycle_02/FINAL_NOVEL.md:3118. Chapter 12 then opens at Becky's gala with the mole clock still active at snapshots/cycle_02/FINAL_NOVEL.md:3125 and snapshots/cycle_02/FINAL_NOVEL.md:3139, but never says what the 0600 watch showed or why it was superseded.",
+      "finding_id": "LW06-001",
+      "fix_owner_reason": "The later chapter owns the dropped handoff: chapter 11 makes the dawn surveillance the next concrete action, and chapter 12 is where that promised action vanishes from the page.",
+      "pass_hint": "p1_structural_craft",
+      "problem": "The immediate next-action promise at the end of chapter 11 disappears at the boundary. Read consecutively, the handoff feels like a missing scene rather than a purposeful omission because the reader is asked to carry a concrete surveillance task into a chapter that never acknowledges whether it happened.",
+      "related_chapter_ids": [
+        "chapter_11"
+      ],
+      "rewrite_direction": "Add a short bridge in chapter 12's opening that states the result of the 0600 watch or why border and cover pressure pulled Anya away from it. Even one or two sentences would preserve the causal handoff.",
+      "severity": "HIGH",
+      "subcategory": "dangling_thread"
+    },
+    {
+      "acceptance_test": "On a back-to-back read of chapters 12 and 13, the reader can track the overnight timeline without pausing over whether the boundary also hid a larger date jump.",
+      "boundary_span": "chapter_12/chapter_13",
+      "category": "pre_scan",
+      "chapter_id": "chapter_13",
+      "evidence": "Chapter 12 frames the gala as an October night at snapshots/cycle_02/FINAL_NOVEL.md:3125 and is still in that same night when Anya gets the second border pulse at snapshots/cycle_02/FINAL_NOVEL.md:3503. Chapter 13 opens at 6:14 the next morning after 'Most of the night' in border traffic at snapshots/cycle_02/FINAL_NOVEL.md:3514 and snapshots/cycle_02/FINAL_NOVEL.md:3516, then describes the window as November at snapshots/cycle_02/FINAL_NOVEL.md:3572.",
+      "finding_id": "LW06-002",
+      "fix_owner_reason": "The later chapter owns the missing time anchor because chapter 13 is where the month shift is introduced while presenting itself as the immediate next morning.",
+      "pass_hint": "p1_structural_craft",
+      "problem": "The boundary implies only a few overnight hours have passed, but the month changes with no anchor. A reader has to stop and backsolve whether this is meant to be an Oct. 31 to Nov. 1 rollover or whether the chapter boundary hid a larger date jump.",
+      "related_chapter_ids": [
+        "chapter_12"
+      ],
+      "rewrite_direction": "Anchor the date change explicitly. Either tag the gala as the last night of October or remove the month marker in chapter 13 so the overnight compression reads cleanly without calendar math.",
+      "severity": "MEDIUM",
+      "subcategory": "chronology_gap"
+    },
+    {
+      "acceptance_test": "Within the opening pages of chapter 12, the reader should feel the 11/12 boundary tightening pressure rather than suspending it.",
+      "boundary_span": "chapter_11/chapter_12",
+      "category": "reading_momentum",
+      "chapter_id": "chapter_12",
+      "evidence": "Chapter 11 ends on the sharpened promise of a 0600 watch and a weekend-provocation clock at snapshots/cycle_02/FINAL_NOVEL.md:3076 and snapshots/cycle_02/FINAL_NOVEL.md:3118. Chapter 12 then spends its opening run on gala orientation, alumni chatter, and public-cover maintenance at snapshots/cycle_02/FINAL_NOVEL.md:3125, snapshots/cycle_02/FINAL_NOVEL.md:3205, and snapshots/cycle_02/FINAL_NOVEL.md:3249 before the chapter's real detonation arrives at snapshots/cycle_02/FINAL_NOVEL.md:3305.",
+      "finding_id": "LW06-003",
+      "fix_owner_reason": "The weaker momentum beat belongs to the later chapter because chapter 12 controls whether the urgency inherited from chapter 11 compounds or diffuses.",
+      "pass_hint": "p1_structural_craft",
+      "problem": "Because the prior chapter hands off a live operational clock, the first stretch of chapter 12 reads like a temporary pressure leak. The gala material is not useless, but the window stalls before it creates a new equivalent source of leverage or danger.",
+      "related_chapter_ids": [
+        "chapter_11"
+      ],
+      "rewrite_direction": "Move the chapter's active pressure closer to the opening. Report the dawn surveillance result immediately and pull either Kreuzfeld or the nostalgia-wall recognition trigger forward so the gala does not spend so long feeling like a side lane.",
+      "severity": "HIGH",
+      "subcategory": "boundary_stall_after_live_clock"
+    },
+    {
+      "acceptance_test": "Reading from chapter 12 into chapter 13, the reader should reach Damian's new decision quickly, without sitting through another full proof of a recognition that already landed.",
+      "boundary_span": "chapter_12/chapter_13",
+      "category": "information_flow",
+      "chapter_id": "chapter_13",
+      "evidence": "Chapter 12 already lands Damian's recognition in real time, with the spoken name and his conclusion arriving cleanly at snapshots/cycle_02/FINAL_NOVEL.md:3305 and snapshots/cycle_02/FINAL_NOVEL.md:3333. Chapter 13 re-signals the same fact in the basement at snapshots/cycle_02/FINAL_NOVEL.md:3678 and then spends Damian's closing POV re-walking the class photo, the state dinner, and the identity match before finally reaching his actual decision at snapshots/cycle_02/FINAL_NOVEL.md:3722 and snapshots/cycle_02/FINAL_NOVEL.md:3744.",
+      "finding_id": "LW06-004",
+      "fix_owner_reason": "The later chapter owns the repeated reveal processing: chapter 12 has already completed the recognition beat, and chapter 13 chooses to restate it before moving to consequence.",
+      "pass_hint": "p1_structural_craft",
+      "problem": "Once chapter 12 has detonated the recognition, chapter 13 uses too much scarce aftermath space re-proving a reveal the reader no longer doubts. The genuinely new information, Damian's decision to keep the alliance and how he intends to carry that knowledge, lands later and with less force than it should.",
+      "related_chapter_ids": [
+        "chapter_12"
+      ],
+      "rewrite_direction": "Start chapter 13 from Damian's certainty instead of reconfirming it. Compress the repeated identity-evidence beats and spend that space on consequence: what he changes in his behavior, what new limits he places on the alliance, and what he now suspects but still cannot prove.",
+      "severity": "HIGH",
+      "subcategory": "repeated_reveal_processing"
+    }
+  ],
+  "summary": "Dominant local failure: the 11/12 boundary drops the promised 0600 Falk watch, which leaks momentum, and the 12/13 handoff spends too much space re-proving Damian's recognition instead of converting it into faster consequence.",
+  "window_id": "window_06"
+}

@@ -1,0 +1,65 @@
+{
+  "chapters_reviewed": [
+    "chapter_13",
+    "chapter_14",
+    "chapter_15",
+    "chapter_16"
+  ],
+  "cycle": 2,
+  "findings": [
+    {
+      "acceptance_test": "On a cold read, the first 2-3 lines of chapter 14 make the three-day jump legible without the reader having to back-correct once the later Tuesday/three-days language appears.",
+      "boundary_span": "chapter_13/chapter_14",
+      "category": "pre_scan",
+      "chapter_id": "chapter_14",
+      "evidence": "Chapter 13 opens on Crane's death call at 6:14 a.m. and ends without signaling a multi-day handoff, but chapter 14 only later reveals that Anya has shown up at her parents' apartment 'at nine on a Tuesday' and has been carrying the same guilt for 'three days.' snapshots/cycle_02/FINAL_NOVEL.md:3514; snapshots/cycle_02/FINAL_NOVEL.md:3757; snapshots/cycle_02/FINAL_NOVEL.md:3787",
+      "finding_id": "LW07-001",
+      "fix_owner_reason": "Later chapter owns the boundary confusion; chapter 14 is where the time jump first needs to be made explicit on page.",
+      "pass_hint": "p1_structural_craft",
+      "problem": "Read back-to-back, the boundary initially feels like an immediate continuation of Damian's chapter-13 coda. The actual three-day jump arrives late enough that a reader has to revise the story clock after the new chapter is already underway.",
+      "related_chapter_ids": [
+        "chapter_13"
+      ],
+      "rewrite_direction": "Give chapter 14 an explicit elapsed-time marker in its first sentence or first paragraph, or plant a cleaner handoff at the end of chapter 13 so the reader enters the family-alliance scene already oriented in time.",
+      "severity": "MEDIUM",
+      "subcategory": "chronology_gap"
+    },
+    {
+      "acceptance_test": "Reading straight from chapter 14 into chapter 15, the first paragraph of chapter 15 adds a new operational or emotional complication rather than restating the same unanswered list question.",
+      "boundary_span": "chapter_14/chapter_15",
+      "category": "pre_scan",
+      "chapter_id": "chapter_15",
+      "evidence": "Chapter 14 closes by telling the reader Anya still does not know 'what list he'd kept her off,' and chapter 15 opens by repeating that the borrowed badge still leaves her with 'no answer about what list he'd kept her off.' snapshots/cycle_02/FINAL_NOVEL.md:4057; snapshots/cycle_02/FINAL_NOVEL.md:4062",
+      "finding_id": "LW07-002",
+      "fix_owner_reason": "Later chapter owns redundant re-orientation; chapter 15 repeats an already-landed beat in its opening paragraph.",
+      "pass_hint": "p1_structural_craft",
+      "problem": "The exact same unresolved badge/list beat is restated across the chapter break instead of converting into fresh action pressure. Because the summit opening already has enough live tension, this reads as redundant re-orientation rather than meaningful escalation.",
+      "related_chapter_ids": [
+        "chapter_14"
+      ],
+      "rewrite_direction": "Cut the repeated phrasing at the top of chapter 15 or replace it with a new consequence of Damian's reroute so the boundary advances the situation instead of echoing it.",
+      "severity": "MEDIUM",
+      "subcategory": "repeated_information"
+    },
+    {
+      "acceptance_test": "By the end of chapter 16, a reader can state in plain language why Damian moved Anya to East Gallery and what exposure he was shielding her from, without relying on unstated inference.",
+      "boundary_span": "chapter_14/chapter_16",
+      "category": "information_flow",
+      "chapter_id": "chapter_16",
+      "evidence": "The window repeatedly frames Damian's credential maneuver as a specific mystery: Anya notes he is keeping her off 'some other list' and ends chapter 14 still not knowing which one; chapter 15 repeats that unanswered question; chapter 16 then moves into the identity-reveal aftermath without ever explicitly tying the East Gallery reroute to what Damian knew or to the danger he was screening her from. snapshots/cycle_02/FINAL_NOVEL.md:4031; snapshots/cycle_02/FINAL_NOVEL.md:4057; snapshots/cycle_02/FINAL_NOVEL.md:4062; snapshots/cycle_02/FINAL_NOVEL.md:4537; snapshots/cycle_02/FINAL_NOVEL.md:4705",
+      "finding_id": "LW07-003",
+      "fix_owner_reason": "Payoff misses belong to the payoff chapter; chapter 16 is where Damian's hidden-knowledge thread is finally disclosed, so it is the right place to connect the earlier credential mystery to that revelation.",
+      "pass_hint": "p1_structural_craft",
+      "problem": "Across chapters 14-16, the text teaches the reader to treat the press-badge reroute as a payoff-bearing mini-mystery, but the reveal chapter resolves the larger secret of Damian recognizing Anya without cashing out that smaller operational question. The result is a boundary-level suspense beat that diffuses into inference instead of landing cleanly.",
+      "related_chapter_ids": [
+        "chapter_14",
+        "chapter_15"
+      ],
+      "rewrite_direction": "In chapter 16, add one explicit sentence connecting Damian's prior credential switch to his knowledge of Anya's identity or to the exact ministry-screening risk he was avoiding. If no explicit payoff is intended, strip the repeated emphasis from chapters 14-15 so the reader is not trained to wait for one.",
+      "severity": "MEDIUM",
+      "subcategory": "setup_payoff_miss"
+    }
+  ],
+  "summary": "Strong escalation overall, but the chapter 13/14 handoff blurs elapsed time and the Damian-counterknowledge thread gets reiterated across the 14/15 turn more often than it is cleanly paid off in chapter 16.",
+  "window_id": "window_07"
+}

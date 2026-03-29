@@ -1,0 +1,119 @@
+{
+  "acceptance_targets": [
+    "[CH06_CRAFT_TELEPATHY_OVERREACH] PASS if the revised beat lets a cold reader separate three things on the page: Yor's active memory fragment, Yor's visible suppression of it, and any conclusion Anya draws as tentative. FAIL if the prose still states as fact that Anya knows Yor's long-term coping logic or general method for handling contradiction.",
+    "[CH06_CRAFT_OVERSTATEMENT_AFTER_ARRIVAL] PASS if a reader can still identify Loid's suspicion, WISE pressure, and Yor/Garden danger from the revised scenes, and the final movement after snapshots/cycle_01/chapters/chapter_06.md:217 ends on an image, action, or immediate near-choice rather than an abstract explanatory inventory. FAIL if the revision still includes a thesis line about how trust erodes or a numbered first/second/third recap of secrets.",
+    "[RED-025] Ch 6 em-dash-containing prose lines are at or below 8%.",
+    "[RED-036] Ch 6 'She'-opener sentences are at or below 7%."
+  ],
+  "aggregation_applied": {
+    "decisions_file": "packets/cycle_01/aggregation_decisions.json",
+    "decisions_sha1": "889c056d151d53dd50571894efe396e4d98b6011"
+  },
+  "chapter_id": "chapter_06",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if the revised beat lets a cold reader separate three things on the page: Yor's active memory fragment, Yor's visible suppression of it, and any conclusion Anya draws as tentative. FAIL if the prose still states as fact that Anya knows Yor's long-term coping logic or general method for handling contradiction.",
+      "chapter_id": "chapter_06",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:67; snapshots/cycle_01/chapters/chapter_06.md:69; snapshots/cycle_01/chapters/chapter_06.md:73; snapshots/cycle_01/chapters/chapter_06.md:77",
+      "finding_id": "CH06_CRAFT_TELEPATHY_OVERREACH",
+      "problem": "The Yor/Garden beat begins with a valid surface-thought flash, then upgrades that fragment into certainty about Yor's broader contradiction-management and private habits. In Anya POV, lines 73-77 read as telepathy becoming omniscience: the text moves from what Yor is actively thinking to authoritative claims about how she handles \"every dark thing\" and \"every contradiction in her life,\" which the style bible and continuity rules explicitly prohibit.",
+      "rewrite_direction": "Revise the passage anchored at snapshots/cycle_01/chapters/chapter_06.md:67, snapshots/cycle_01/chapters/chapter_06.md:69, snapshots/cycle_01/chapters/chapter_06.md:73, and snapshots/cycle_01/chapters/chapter_06.md:77 so the planted doubt stays limited to what Anya can actually catch: the brief memory mismatch, Yor's immediate social recovery, and Anya's unsettled inference. If Anya reaches for a broader conclusion, mark it as her guess rather than telepathic fact.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if a reader can still identify Loid's suspicion, WISE pressure, and Yor/Garden danger from the revised scenes, and the final movement after snapshots/cycle_01/chapters/chapter_06.md:217 ends on an image, action, or immediate near-choice rather than an abstract explanatory inventory. FAIL if the revision still includes a thesis line about how trust erodes or a numbered first/second/third recap of secrets.",
+      "chapter_id": "chapter_06",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_06.md:145; snapshots/cycle_01/chapters/chapter_06.md:147; snapshots/cycle_01/chapters/chapter_06.md:199; snapshots/cycle_01/chapters/chapter_06.md:223; snapshots/cycle_01/chapters/chapter_06.md:227; snapshots/cycle_01/chapters/chapter_06.md:229",
+      "finding_id": "CH06_CRAFT_OVERSTATEMENT_AFTER_ARRIVAL",
+      "problem": "The back half keeps explaining stakes after the scene has already made them legible. Loid's filed suspicion is already clear by line 145, but line 147 converts it into thesis language about trust erosion. Sylvia's call already supplies the institutional danger, but line 199 re-briefs the reader on intelligence cross-checking. The bedroom close then labels the burden as \"Three secrets\" and inventories each one instead of converting that pressure into a fresh image, choice, or behavioral consequence. This is overstatement after arrival and unearned chapter sprawl.",
+      "rewrite_direction": "Compress or replace the explanatory codas at snapshots/cycle_01/chapters/chapter_06.md:147, snapshots/cycle_01/chapters/chapter_06.md:199, and the closing inventory beginning at snapshots/cycle_01/chapters/chapter_06.md:223. Let the exchanges at snapshots/cycle_01/chapters/chapter_06.md:137 and snapshots/cycle_01/chapters/chapter_06.md:165 do the informational work, then carry the aftermath through concrete present-tense pressure: the cold stew, the doorway posture, the headband, the failed attempt to sleep. The bedroom section beginning at snapshots/cycle_01/chapters/chapter_06.md:217 should preserve the three active burdens without numbering and re-summarizing them.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch 6 em-dash-containing prose lines are at or below 8%.",
+      "chapter_id": "chapter_06",
+      "cycle": 1,
+      "evidence": "Ch 6: 50 of 116 prose lines (43.1%) contain em-dashes.",
+      "finding_id": "RED-025",
+      "problem": "Ch 6 at 43.1% em-dash density (50/116).",
+      "rewrite_direction": "Reduce em-dash-containing lines in Ch 6 from 50 to ~9 (target ~8%).",
+      "severity": "HIGH",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch 6 'She'-opener sentences are at or below 7%.",
+      "chapter_id": "chapter_06",
+      "cycle": 1,
+      "evidence": "Ch 6: 49 'She'-opener sentences out of 325 total (15.1%). Manuscript-wide: 735/6637 (11.1%).",
+      "finding_id": "RED-036",
+      "problem": "Ch 6 at 15.1% 'She' openers (49/325).",
+      "rewrite_direction": "Rewrite at least 26 'She'-opener sentences in Ch 6. Target ~23 (7%).",
+      "severity": "HIGH",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "be94e1d547363720bb76bd6f134b172dca9f3a30d81ee9f321a6a84789d58081",
+  "must_fix_count": 4,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This novel's premise blends comedy, espionage action, and genuine emotional stakes. The creative risk is in honoring all three simultaneously without letting any one mode cannibalize the others. Do not soften the violence because the novel is funny. Do not suppress the comedy because the stakes are real. Do not retreat from Anya's moral complicity (she reads minds without consent and uses it to manipulate) because she is the protagonist and we like her. The hardest scenes to get right are the ones where comedy and pain coexist \u2014 a fight that is also funny, a confession that is also absurd, a family dinner where love and deception are the same meal. Lean into those moments rather than resolving them into one register. The novel's best material lives in the dissonance.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism at the point of consequence is a craft failure. When violence, fear, grief, or moral compromise demands scene presence, render it with specificity. A bruise should have a color. A death should have weight. A lie should have a cost the liar feels in their body. The exception is Anya's telepathic restraint \u2014 she sometimes cannot bear to fully articulate what she's reading in someone's mind, and this selective omission is a character choice, not authorial squeamishness.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for all characters in casual speech. Uncontracted forms reserved for emphasis, deliberate formality, or character-specific register choices (Sylvia's professional diction, Damian's diplomatic mode). In contemporary casual scenes, an unjustified full-form line should be flagged and checked.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 2
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "No two consecutive chapters should share the same structural rhythm. Alternate between dialogue-heavy scenes and interiority-heavy passages. Vary scene count: two-scene chapters (11, 16, 17 \u2014 compressed force) against multi-scene chapters (8, 15 \u2014 breadth and momentum). Shift between comic dominant and dramatic dominant across the middle of the book, with the comic register maintaining presence even in dramatic chapters through Anya's voice and the Forger family's inherent absurdity. The tonal shift at Chapter 13 is a deliberate gear change, not a gradual dimming \u2014 comedy should be fully alive in Chapter 12 and markedly reduced (not absent) in Chapter 13. The Chapter 13 POV shift to Damian is a structural event: the reader's relationship to information changes. The final act (14-17) maintains Anya's voice and the family's warmth as comic undertone, but the dominant mode is drama with consequences. Chapter 17's dinner scene reintroduces comedy through a register the novel has not previously accessed \u2014 Damian's self-conscious thought management around a known telepath \u2014 which only works because it follows sixteen chapters of oblivious thought-reading.",
+      "diction": "Contemporary and accessible, not literary-precious. The prose should have energy and forward drive. Humor comes from observation, character logic, and the gap between surface and interior \u2014 not from clever narration or authorial commentary. Let the funny things be funny without signposting them. Let the sad things sit without interpretation. The prose should be invisible when it needs to be and vivid when the scene demands it, but never decorative for its own sake.",
+      "forbidden_drift_patterns": [
+        "Narrator-as-comedian: the prose commenting on its own comedy, winking at the reader, or admiring a character's wit. The humor lives in the situation, not in the telling.",
+        "Telepathy-as-omniscience: Anya's mind-reading should feel like cognitive overload, not like a narrator's convenient access to exposition. She reads surface thoughts, not deep motivations, and the thoughts she catches should be fragmentary, mundane, and sometimes misleading.",
+        "Prestige-creep: the prose drifting toward solemn literary register when the scene's natural mode is comic, warm, or chaotic. This novel's emotional power comes from the coexistence of comedy and genuine feeling, not from the comedy yielding to seriousness.",
+        "Briefing-itis: scenes where characters explain plot to each other or to the reader. Information should emerge through action, observation, and telepathic fragments \u2014 not through expository dialogue formatted as conversation.",
+        "Combat-poetry: fight scenes that become lyrical or aesthetically admiring. Violence should be fast, specific, physically grounded, and over quickly. Yor's lethality is matter-of-fact; Anya's fighting is scrappier and less elegant.",
+        "Emotion-labeling: telling the reader what a character feels instead of rendering the feeling through thought, action, and physical detail. 'She felt sad' is always worse than the specific thing that makes the sadness legible."
+      ],
+      "narrative_distance": "Close third person, primarily Anya. Chapter 7 (Damian), Chapter 10 (Yor), the Damian POV section in Chapter 13, and Damian's thread in Chapter 15 shift to close third on their respective POV characters. The telepathy layer is unique to Anya's POV \u2014 when she is the viewpoint character, other characters' surface thoughts appear as italicized interjections woven into the prose. In non-Anya POV chapters, no telepathic content appears. The Chapter 13 Damian POV section is structurally critical: it gives the reader access to Damian's interior at a depth Anya's telepathy cannot reach, and it reveals that he has identified Anya \u2014 knowledge the reader carries into the final act while Anya does not. This dramatic irony reversal is the novel's strongest structural surprise and depends on the reader experiencing Damian's depths unmediated by Anya's telepathic filter.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Varied and responsive to scene pressure. Action sequences: short sentences, concrete verbs, sensory immediacy. Comic scenes: longer sentences that build to turns, pacing that allows beats to land. Quiet domestic scenes: relaxed rhythm with room for observation and texture. Telepathic interjections should disrupt prose rhythm the way intrusive thoughts disrupt concentration \u2014 not ornamentally but as genuine cognitive interference. Avoid metronomic sentence patterns in any mode.",
+      "sensory_bias": [
+        "visual surveillance \u2014 reading rooms, reading faces, the spy's hyperawareness of spatial arrangement and exit routes",
+        "auditory \u2014 overheard thoughts as a telepathic sixth sense layered over actual ambient sound",
+        "kinesthetic \u2014 action choreography, physical proximity, the body under stress or in intimacy",
+        "olfactory/gustatory \u2014 Yor's cooking, Berlint street food, the specific smell of institutional buildings and safe houses"
+      ]
+    }
+  }
+}

@@ -1,0 +1,696 @@
+{
+  "advisory_gate": {
+    "chapter_review_failures": 17,
+    "cross_chapter_audit_failed": false,
+    "cycle": 2,
+    "decision": "FAIL",
+    "full_award_verdict": "FAIL",
+    "reason": "unresolved_medium_plus_or_review_failures_or_full_award_fail",
+    "unresolved_medium_plus_count": 139
+  },
+  "completion_policy": {
+    "terminate_on_max_cycles": true,
+    "terminate_on_quality_pass": false
+  },
+  "cycle": 2,
+  "max_cycles": 2,
+  "min_cycles": 2,
+  "resume": {
+    "earliest_rerun_stage": null,
+    "next_action": "cycle_complete",
+    "reusable_stages": [
+      "outline_review",
+      "outline_revision",
+      "spatial_layout",
+      "assemble_snapshot",
+      "build_cycle_context_packs",
+      "chapter_review",
+      "full_award_review",
+      "cross_chapter_audit",
+      "local_window_audit",
+      "aggregate_findings",
+      "build_revision_packets",
+      "llm_aggregator",
+      "materialize_aggregation_decisions",
+      "revision",
+      "seam_polish",
+      "assemble_post_revision_snapshot",
+      "continuity_reconciliation"
+    ]
+  },
+  "run_mode": "fresh",
+  "stages": {
+    "aggregate_findings": {
+      "chapter_count": 17,
+      "outputs": [
+        "findings/cycle_02/all_findings.jsonl",
+        "findings/cycle_02/summary.json"
+      ],
+      "required": true,
+      "status": "complete"
+    },
+    "assemble_post_revision_snapshot": {
+      "outputs": [
+        "snapshots/cycle_02/FINAL_NOVEL.post_revision.md"
+      ],
+      "required": true,
+      "status": "complete"
+    },
+    "assemble_snapshot": {
+      "outputs": [
+        "snapshots/cycle_02/FINAL_NOVEL.md"
+      ],
+      "required": true,
+      "status": "complete"
+    },
+    "build_cycle_context_packs": {
+      "artifact_glob": "context/cycle_02/**/*.json",
+      "required": true,
+      "status": "complete"
+    },
+    "build_revision_packets": {
+      "artifact_glob": "packets/cycle_02/*.revision_packet.json",
+      "chapter_count": 17,
+      "required": true,
+      "status": "complete"
+    },
+    "chapter_review": {
+      "artifact_glob": "reviews/cycle_02/chapter_*.review.json",
+      "chapter_count": 17,
+      "required": true,
+      "status": "complete",
+      "units": {
+        "chapter_01": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_02": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_03": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_04": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_05": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_06": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_07": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_08": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_09": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_10": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_11": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_12": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_13": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_14": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_15": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_16": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_17": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        }
+      }
+    },
+    "continuity_reconciliation": {
+      "required": true,
+      "status": "complete"
+    },
+    "cross_chapter_audit": {
+      "outputs": [
+        "reviews/cycle_02/cross_chapter_audit.json"
+      ],
+      "required": true,
+      "status": "complete"
+    },
+    "full_award_review": {
+      "outputs": [
+        "reviews/cycle_02/full_award.review.json"
+      ],
+      "required": true,
+      "status": "complete"
+    },
+    "llm_aggregator": {
+      "chapter_count": 17,
+      "outputs": [
+        "packets/cycle_02/compact_aggregator_input.json",
+        "packets/cycle_02/aggregation_decisions.json"
+      ],
+      "required": false,
+      "status": "complete"
+    },
+    "local_window_audit": {
+      "artifact_glob": "reviews/cycle_02/local_window_*.json",
+      "required": false,
+      "status": "complete",
+      "units": {
+        "window_01": {
+          "artifact": "reviews/cycle_02/local_window_01.json",
+          "chapter_count": 4,
+          "chapters_reviewed": [
+            "chapter_01",
+            "chapter_02",
+            "chapter_03",
+            "chapter_04"
+          ],
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "window_02": {
+          "artifact": "reviews/cycle_02/local_window_02.json",
+          "chapter_count": 4,
+          "chapters_reviewed": [
+            "chapter_03",
+            "chapter_04",
+            "chapter_05",
+            "chapter_06"
+          ],
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "window_03": {
+          "artifact": "reviews/cycle_02/local_window_03.json",
+          "chapter_count": 4,
+          "chapters_reviewed": [
+            "chapter_05",
+            "chapter_06",
+            "chapter_07",
+            "chapter_08"
+          ],
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "window_04": {
+          "artifact": "reviews/cycle_02/local_window_04.json",
+          "chapter_count": 4,
+          "chapters_reviewed": [
+            "chapter_07",
+            "chapter_08",
+            "chapter_09",
+            "chapter_10"
+          ],
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "window_05": {
+          "artifact": "reviews/cycle_02/local_window_05.json",
+          "chapter_count": 4,
+          "chapters_reviewed": [
+            "chapter_09",
+            "chapter_10",
+            "chapter_11",
+            "chapter_12"
+          ],
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "window_06": {
+          "artifact": "reviews/cycle_02/local_window_06.json",
+          "chapter_count": 4,
+          "chapters_reviewed": [
+            "chapter_11",
+            "chapter_12",
+            "chapter_13",
+            "chapter_14"
+          ],
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "window_07": {
+          "artifact": "reviews/cycle_02/local_window_07.json",
+          "chapter_count": 4,
+          "chapters_reviewed": [
+            "chapter_13",
+            "chapter_14",
+            "chapter_15",
+            "chapter_16"
+          ],
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "window_08": {
+          "artifact": "reviews/cycle_02/local_window_08.json",
+          "chapter_count": 3,
+          "chapters_reviewed": [
+            "chapter_15",
+            "chapter_16",
+            "chapter_17"
+          ],
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        }
+      }
+    },
+    "materialize_aggregation_decisions": {
+      "artifact_glob": "packets/cycle_02/*.revision_packet.json",
+      "chapter_count": 17,
+      "outputs": [
+        "packets/cycle_02/aggregation_materialization_summary.json",
+        "packets/cycle_02/aggregation_suppressions.json",
+        "packets/cycle_02/aggregation_unfixable.json"
+      ],
+      "required": false,
+      "status": "complete"
+    },
+    "outline_review": {
+      "reason": "config_skip_outline_review",
+      "required": false,
+      "status": "skipped",
+      "units": {}
+    },
+    "outline_revision": {
+      "reason": "config_skip_outline_review",
+      "required": false,
+      "status": "skipped",
+      "units": {}
+    },
+    "revision": {
+      "artifact_glob": "revisions/cycle_02/*.revision_report.json",
+      "chapter_count": 17,
+      "required": true,
+      "status": "complete",
+      "units": {
+        "chapter_01.p1_structural_craft": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_01.p2_dialogue_idiolect_cadence": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_01.p3_prose_copyedit": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_02.p1_structural_craft": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_02.p2_dialogue_idiolect_cadence": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_02.p3_prose_copyedit": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_03.p1_structural_craft": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_03.p2_dialogue_idiolect_cadence": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_03.p3_prose_copyedit": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_04.p1_structural_craft": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_04.p2_dialogue_idiolect_cadence": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_04.p3_prose_copyedit": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_05.p1_structural_craft": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_05.p2_dialogue_idiolect_cadence": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_05.p3_prose_copyedit": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_06.p1_structural_craft": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_06.p2_dialogue_idiolect_cadence": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_06.p3_prose_copyedit": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_07.p1_structural_craft": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_07.p2_dialogue_idiolect_cadence": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_07.p3_prose_copyedit": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_08.p1_structural_craft": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_08.p2_dialogue_idiolect_cadence": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_08.p3_prose_copyedit": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_09.p1_structural_craft": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_09.p2_dialogue_idiolect_cadence": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_09.p3_prose_copyedit": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_10.p1_structural_craft": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_10.p2_dialogue_idiolect_cadence": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_10.p3_prose_copyedit": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_11.p1_structural_craft": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_11.p2_dialogue_idiolect_cadence": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_11.p3_prose_copyedit": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_12.p1_structural_craft": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_12.p2_dialogue_idiolect_cadence": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_12.p3_prose_copyedit": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_13.p1_structural_craft": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_13.p2_dialogue_idiolect_cadence": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_13.p3_prose_copyedit": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_14.p1_structural_craft": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_14.p2_dialogue_idiolect_cadence": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_14.p3_prose_copyedit": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_15.p1_structural_craft": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_15.p2_dialogue_idiolect_cadence": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_15.p3_prose_copyedit": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_16.p1_structural_craft": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_16.p2_dialogue_idiolect_cadence": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_16.p3_prose_copyedit": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_17.p1_structural_craft": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_17.p2_dialogue_idiolect_cadence": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_17.p3_prose_copyedit": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        }
+      }
+    },
+    "seam_polish": {
+      "artifact_glob": "seams/cycle_02/*.seam_report.json",
+      "chapter_count": 17,
+      "required": true,
+      "status": "complete",
+      "units": {
+        "chapter_01": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_02": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_03": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_04": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_05": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_06": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_07": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_08": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_09": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_10": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_11": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_12": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_13": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_14": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_15": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_16": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        },
+        "chapter_17": {
+          "fresh": true,
+          "status": "complete",
+          "validated": true
+        }
+      }
+    },
+    "spatial_layout": {
+      "outputs": [
+        "outline/spatial_layout.json"
+      ],
+      "required": true,
+      "status": "reused"
+    }
+  },
+  "updated_at_utc": "2026-03-29T18:20:21Z",
+  "warnings_file": "reports/validation_warnings.json"
+}

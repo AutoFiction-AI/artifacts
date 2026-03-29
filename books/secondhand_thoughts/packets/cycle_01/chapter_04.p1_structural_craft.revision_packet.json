@@ -1,0 +1,343 @@
+{
+  "acceptance_targets": [
+    "[CH04_CRAFT_TELEPATHY_OMNISCIENCE] Pass if the revised cited spans let a cold reader distinguish what Anya directly hears from what she infers: the italic thoughts read as incomplete active thoughts rather than self-contained report paragraphs, and at least one major conclusion currently delivered telepathically is marked as Anya's hypothesis or guess instead of fact. Fail if the thoughts still carry polished backstory/explanation on their own.",
+    "[CH04_CRAFT_WORLD_RULE_SLIP] Pass if snapshots/cycle_01/chapters/chapter_04.md:141 contains only in-world services or generic foreign-service language consistent with the continuity sheet. Fail if an unestablished real-world acronym remains in Damian's thought.",
+    "[CH04_DIALOGUE_COMPOSED_CORRIDOR] Pass if the revised corridor exchange still lands the alliance terms but no character delivers the whole conflict in a single polished thesis paragraph, and at least one key disclosure is interrupted, qualified, or dragged out across multiple turns in a visibly character-true way. Fail if the scene still reads like two smart operatives summarizing the plot to each other.",
+    "[CH04_DIALOGUE_STYLE_BIBLE_ECHO] Pass if the revised lines at snapshots/cycle_01/chapters/chapter_04.md:175 and snapshots/cycle_01/chapters/chapter_04.md:176 no longer reproduce the example-line progression ('My father built something' -> 'An infrastructure' -> 'It's still running') and Damian's confession feels syntactically new on first read. Fail if that calibration-line skeleton remains recognizable.",
+    "[CH04_PROSE_ANYA_VOICE_DRIFT] Pass if the revised cited spans communicate the same tactical understanding in simpler, character-true diction and at least two of those spans show Anya's private-register seams through interruption, self-correction, bodily reaction, or blunt phrasing rather than institutional jargon. Fail if the POV still sounds interchangeable with a generic intelligence narrator.",
+    "[MORAL_META_INVENTORY_CH04] Pass if snapshots/cycle_01/FINAL_NOVEL.md:1062-1068 no longer contains the 'Every successful deception widened the gap' ledger passage or the explicit 'cheats before the game starts' rhetorical frame, and the chapter's closing relies on physical detail and action (the mop-bucket corridor, the return to the forum) rather than moral-philosophical diagnosis. Fail if the closing still explicitly ranks Anya's deceptions and restates the telepathy-as-cheating thesis.",
+    "[RED-032] Ch 4 em-dash-containing prose lines are at or below 8%.",
+    "[RED-047] Ch 4 contains at most 1-2 'fluorescent' references.",
+    "[LW01-001] A reader can trace one clear public identity for Anya across chapters 2-4. If multiple names remain, chapter 4 explains why before the introduction lands, and Damian's response reflects what he already knows from chapter 3.",
+    "[LW01-002] Across chapters 2-4, no more than one chapter spends a full opening beat on telepathic crowd calibration plus drink-prop cover before the main turn. Each chapter's engine should feel distinct within its first page.",
+    "[LW02-001] When chapters 03 and 04 are read consecutively, the last paragraphs of chapter 04 should leave a distinct aftertaste from chapter 03. The dominant feeling should be 'this alliance can snap in a specific way now,' not another pass through 'Anya lied with telepathy and hates that she was effective.'"
+  ],
+  "aggregation_applied": {
+    "decisions_file": "packets/cycle_01/aggregation_decisions.json",
+    "decisions_sha1": "889c056d151d53dd50571894efe396e4d98b6011"
+  },
+  "chapter_id": "chapter_04",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if the revised cited spans let a cold reader distinguish what Anya directly hears from what she infers: the italic thoughts read as incomplete active thoughts rather than self-contained report paragraphs, and at least one major conclusion currently delivered telepathically is marked as Anya's hypothesis or guess instead of fact. Fail if the thoughts still carry polished backstory/explanation on their own.",
+      "chapter_id": "chapter_04",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_04.md:23; snapshots/cycle_01/chapters/chapter_04.md:33; snapshots/cycle_01/chapters/chapter_04.md:91; snapshots/cycle_01/chapters/chapter_04.md:165; snapshots/cycle_01/chapters/chapter_04.md:201; snapshots/cycle_01/chapters/chapter_04.md:229; snapshots/cycle_01/chapters/chapter_04.md:237",
+      "finding_id": "CH04_CRAFT_TELEPATHY_OMNISCIENCE",
+      "problem": "Anya's telepathy repeatedly turns into an exposition pipe instead of noisy surface-thought access. Brandt and Damian think in orderly briefing paragraphs, backstory arrives pre-interpreted, and Anya gets more certainty than the world rules allow from what should be fragmentary active thoughts. That breaks the style-bible ban on telepathy-as-omniscience and drains pressure from the reveal beats.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_04.md:23; snapshots/cycle_01/chapters/chapter_04.md:33; snapshots/cycle_01/chapters/chapter_04.md:41; snapshots/cycle_01/chapters/chapter_04.md:91; snapshots/cycle_01/chapters/chapter_04.md:165; snapshots/cycle_01/chapters/chapter_04.md:201; snapshots/cycle_01/chapters/chapter_04.md:229; and snapshots/cycle_01/chapters/chapter_04.md:237, cut the italic thoughts down to fragmentary, actively-thought material and move strategic conclusions into Anya's visible inference. If she concludes what Gessler is, what Damian's bilateral agenda is, or why he hesitates, make the prose show her assembling that from partial thought plus behavior rather than receiving a full internal briefing.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if snapshots/cycle_01/chapters/chapter_04.md:141 contains only in-world services or generic foreign-service language consistent with the continuity sheet. Fail if an unestablished real-world acronym remains in Damian's thought.",
+      "chapter_id": "chapter_04",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_04.md:141",
+      "finding_id": "CH04_CRAFT_WORLD_RULE_SLIP",
+      "problem": "Damian's internal catalog suddenly names 'BND,' a real-world German intelligence service that is nowhere established in the allowed Westalis/Ostania continuity. The chapter otherwise uses in-world geopolitical language, so this reads as a world-model leak and a continuity contradiction.",
+      "rewrite_direction": "Replace the service reference at snapshots/cycle_01/chapters/chapter_04.md:141 with an in-world possibility already legible from the allowed context, such as WISE, an unnamed Westalian service, or a generic third-country shop. Do not import real-world Germany into this setting unless the book has established it elsewhere, which the allowed inputs do not.\n\nAggregator guidance:\n- Canonical choice [intelligence_services]: In-world names only: WISE, SSS, the Garden, or unnamed/generic third-country service. No real-world agency acronyms (BND, CIA, MI6, etc.).. Grounding: Continuity sheet world rules establish a fictional Cold War analog with fictional agencies. No real-world intelligence services are part of this world's political structure.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if the revised corridor exchange still lands the alliance terms but no character delivers the whole conflict in a single polished thesis paragraph, and at least one key disclosure is interrupted, qualified, or dragged out across multiple turns in a visibly character-true way. Fail if the scene still reads like two smart operatives summarizing the plot to each other.",
+      "chapter_id": "chapter_04",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_04.md:175; snapshots/cycle_01/chapters/chapter_04.md:191; snapshots/cycle_01/chapters/chapter_04.md:199; snapshots/cycle_01/chapters/chapter_04.md:211; snapshots/cycle_01/chapters/chapter_04.md:223; snapshots/cycle_01/chapters/chapter_04.md:227",
+      "finding_id": "CH04_DIALOGUE_COMPOSED_CORRIDOR",
+      "problem": "The service-corridor confrontation keeps resolving into composed dialogue modes the brief explicitly warns about: Damian's reveal lands as a thesis-speech, Anya's proposal as a neat operational memo, and the exchange advances through balanced mini-speeches instead of pressured, character-true friction. The scene has leverage shifts, but it sounds written-about rather than spoken-through.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_04.md:175; snapshots/cycle_01/chapters/chapter_04.md:191; snapshots/cycle_01/chapters/chapter_04.md:199; snapshots/cycle_01/chapters/chapter_04.md:211; snapshots/cycle_01/chapters/chapter_04.md:223; and snapshots/cycle_01/chapters/chapter_04.md:227, break the information into messier human turns. Damian should have to stop, qualify, or rephrase before the strategic picture becomes clear; Anya should pull specifics out with risky follow-ups or visible cover-swerves rather than receiving one polished summary and answering with lawyer-clean terms.",
+      "severity": "HIGH",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if the revised lines at snapshots/cycle_01/chapters/chapter_04.md:175 and snapshots/cycle_01/chapters/chapter_04.md:176 no longer reproduce the example-line progression ('My father built something' -> 'An infrastructure' -> 'It's still running') and Damian's confession feels syntactically new on first read. Fail if that calibration-line skeleton remains recognizable.",
+      "chapter_id": "chapter_04",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_04.md:175; snapshots/cycle_01/chapters/chapter_04.md:176",
+      "finding_id": "CH04_DIALOGUE_STYLE_BIBLE_ECHO",
+      "problem": "Damian's line 'My father built something ... An infrastructure ... It's still running' is a near-verbatim reuse of a calibration-only example line from the style bible. Because the echo lands inside the chapter's defining mutual-disclosure beat, it damages voice integrity on first read and makes the moment feel assembled from guidance rather than authored.",
+      "rewrite_direction": "Rewrite Damian's disclosure at snapshots/cycle_01/chapters/chapter_04.md:175 and snapshots/cycle_01/chapters/chapter_04.md:176 into fresh phrasing that still communicates inherited network, reluctance, and political contamination without repeating the example line's sentence order or key verbal skeleton.",
+      "severity": "HIGH",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if the revised cited spans communicate the same tactical understanding in simpler, character-true diction and at least two of those spans show Anya's private-register seams through interruption, self-correction, bodily reaction, or blunt phrasing rather than institutional jargon. Fail if the POV still sounds interchangeable with a generic intelligence narrator.",
+      "chapter_id": "chapter_04",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_04.md:11; snapshots/cycle_01/chapters/chapter_04.md:35; snapshots/cycle_01/chapters/chapter_04.md:77; snapshots/cycle_01/chapters/chapter_04.md:85; snapshots/cycle_01/chapters/chapter_04.md:93; snapshots/cycle_01/chapters/chapter_04.md:217; snapshots/cycle_01/chapters/chapter_04.md:251",
+      "finding_id": "CH04_PROSE_ANYA_VOICE_DRIFT",
+      "problem": "The close third repeatedly sounds like an adult analyst narrator instead of Anya's private register. Phrases such as 'operational texture,' 'muddying the signal,' 'intelligence-adjacent functionaries,' and the abstract calibration language around the negotiation give her POV an institutional polish the style bible explicitly disallows. The result is a flatter, less specific Anya voice and less felt telepathic overwhelm.",
+      "rewrite_direction": "Recast the prose around snapshots/cycle_01/chapters/chapter_04.md:11; snapshots/cycle_01/chapters/chapter_04.md:35; snapshots/cycle_01/chapters/chapter_04.md:77; snapshots/cycle_01/chapters/chapter_04.md:85; snapshots/cycle_01/chapters/chapter_04.md:93; snapshots/cycle_01/chapters/chapter_04.md:217; and snapshots/cycle_01/chapters/chapter_04.md:251 in Anya-shaped diction: concrete, direct, slightly messy, with visible self-correction or telepathic interruption where pressure spikes. Let her understand the room quickly without sounding like Sylvia writing a memo.",
+      "severity": "HIGH",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if snapshots/cycle_01/FINAL_NOVEL.md:1062-1068 no longer contains the 'Every successful deception widened the gap' ledger passage or the explicit 'cheats before the game starts' rhetorical frame, and the chapter's closing relies on physical detail and action (the mop-bucket corridor, the return to the forum) rather than moral-philosophical diagnosis. Fail if the closing still explicitly ranks Anya's deceptions and restates the telepathy-as-cheating thesis.",
+      "chapter_id": "chapter_04",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:1058; snapshots/cycle_01/FINAL_NOVEL.md:1062; snapshots/cycle_01/FINAL_NOVEL.md:1064; snapshots/cycle_01/FINAL_NOVEL.md:1066; snapshots/cycle_01/chapters/chapter_04.md:215; snapshots/cycle_01/chapters/chapter_04.md:217; snapshots/cycle_01/chapters/chapter_04.md:255; snapshots/cycle_01/chapters/chapter_04.md:257; snapshots/cycle_01/chapters/chapter_04.md:259",
+      "finding_id": "MORAL_META_INVENTORY_CH04",
+      "locator_excerpts": {
+        "acceptance_test": [
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:1062-1068",
+            "excerpt": "1062: From the inside, she'd just negotiated an alliance by reading her partner's mind without his knowledge or consent. She'd heard his doubts, his fears, his grudging hope, and she'd used all of it \u2014 not cruelly, not to harm, but to optimize. To say the right thing at the right time. To know when he needed reassurance and when he needed space. She'd been inside his negotiating position the entire time, and he'd been on the other side of the table playing blind, and he'd still chosen to work with her.\n1063: \n1064: She didn't know if that made the alliance stronger or if it just made her the worst kind of partner. The kind who cheats before the game starts and then pretends the result was fair.\n1065: \n1066: Two days ago, she'd sat across from Sylvia and filed a false report while reading the trust that enabled it. Today, she'd stood across from Damian and negotiated an alliance while reading the doubts that shaped it. Every successful deception widened the gap between Anya and every person she dealt with. Sylvia trusted her. Damian was starting to trust her. And both forms of trust rested on information she'd stolen and lies she'd told, and the lies worked because she was good at t...",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          }
+        ],
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:1058",
+            "excerpt": "1058: Her hands were shaking. She noticed this the way she noticed most things about her own body during operational work \u2014 late, and with faint surprise, as if the body was a peripheral system she'd neglected to monitor. The shaking wasn't fear. It was the specific tremor of sustained performance, the adrenaline afterburn of having managed three conversations at once for twenty minutes \u2014 Brandt's thoughts, Damian's thoughts, and the words coming out of her own mouth, each track running on a different frequency, each demanding a different version of herself.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:1062",
+            "excerpt": "1062: From the inside, she'd just negotiated an alliance by reading her partner's mind without his knowledge or consent. She'd heard his doubts, his fears, his grudging hope, and she'd used all of it \u2014 not cruelly, not to harm, but to optimize. To say the right thing at the right time. To know when he needed reassurance and when he needed space. She'd been inside his negotiating position the entire time, and he'd been on the other side of the table playing blind, and he'd still chosen to work with her.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:1064",
+            "excerpt": "1064: She didn't know if that made the alliance stronger or if it just made her the worst kind of partner. The kind who cheats before the game starts and then pretends the result was fair.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:1066",
+            "excerpt": "1066: Two days ago, she'd sat across from Sylvia and filed a false report while reading the trust that enabled it. Today, she'd stood across from Damian and negotiated an alliance while reading the doubts that shaped it. Every successful deception widened the gap between Anya and every person she dealt with. Sylvia trusted her. Damian was starting to trust her. And both forms of trust rested on information she'd stolen and lies she'd told, and the lies worked because she was good at this, and being good at this was the thing she couldn't forgive.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "problem": "Chapter 4 closes with another moral inventory sequence (lines 1058-1068) that restates the same telepathy-violation thesis as Chapter 3's closing. Line 1062 converts the alliance negotiation into explicit moral diagnosis: 'She'd been inside his negotiating position the entire time, and he'd been on the other side of the table playing blind.' Line 1064 poses the rhetorical question ('The kind who cheats before the game starts') and line 1066 explicitly connects the false report and the alliance into a deception ledger: 'Every successful deception widened the gap.' The alliance scene has already dramatized the ethical asymmetry through Anya reading Damian's doubts and hopes in real time \u2014 the closing pages convert that dramatization into organized moral argument.",
+      "rewrite_direction": "Strip both the mid-chapter exculpatory safety-valve phrasing ('not to exploit, but calibrate,' 'not cruelly, not to harm') at lines 215-261 AND the closing deception-catalogue/ledger passage at lines 1058-1068 (FINAL_NOVEL). Leave the telepathic manipulation morally exposed without clean-up language or philosophical diagnosis. The physical details already present (shaking hands, mop bucket, dirty water, pressing hands against eyes) carry the closing. Keep the concrete image of returning to the forum; cut the intervening paragraphs that catalogue and rank deceptions.",
+      "severity": "HIGH",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch 4 em-dash-containing prose lines are at or below 8%.",
+      "chapter_id": "chapter_04",
+      "cycle": 1,
+      "evidence": "Ch 4: 37 of 128 prose lines (28.9%) contain em-dashes.",
+      "finding_id": "RED-032",
+      "problem": "Ch 4 at 28.9% em-dash density (37/128). Lower than average but still far above 10%.",
+      "rewrite_direction": "Reduce em-dash-containing lines in Ch 4 from 37 to ~10 (target ~8%).",
+      "severity": "HIGH",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch 4 contains at most 1-2 'fluorescent' references.",
+      "chapter_id": "chapter_04",
+      "cycle": 1,
+      "evidence": "Ch 4 has 5 'fluorescent' references. Manuscript-wide: 24.",
+      "finding_id": "RED-047",
+      "problem": "Ch 4 contributes 5 of the 24 'fluorescent' instances, all in the service-corridor scene.",
+      "rewrite_direction": "Cut 3-4 of the 5 instances in Ch 4. One establishing mention is sufficient for the corridor setting.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "A reader can trace one clear public identity for Anya across chapters 2-4. If multiple names remain, chapter 4 explains why before the introduction lands, and Damian's response reflects what he already knows from chapter 3.",
+      "chapter_id": "chapter_04",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:866; snapshots/cycle_01/FINAL_NOVEL.md:870",
+      "finding_id": "LW01-001",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:866",
+            "excerpt": "866: \"Mr. Desmond, hello again \u2014 I didn't know you'd be at this one.\" She extended her hand and gave him the attach\u00e9 smile, the one that was warm without being memorable. \"We met at the cultural exchange last week? Anna Kessler, Westalian mission.\"",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:870",
+            "excerpt": "870: He took her hand. \"Of course. Ms. Kessler. The cultural attach\u00e9.\" His public voice was smooth, diplomatic, and his grip was brief and correct. But his thoughts added: *Why is she at an economic forum? Cultural attach\u00e9s don't usually show up for tariff reform panels.*",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "pass_hint": "p1_structural_craft",
+      "problem": "Across the Damian thread, Anya's public identity stops being trackable. The state-dinner credentials establish 'Marta Kramer,' the cultural exchange introduces her to Damian as 'Anya,' and the very next chapter has her reintroduce herself to the same man as 'Anna Kessler' with no on-page explanation or friction. Because Damian is already carrying her official contact information, his seamless acceptance of a third identifier reads like a continuity break, not tradecraft.",
+      "rewrite_direction": "Pick one coherent cover identity for the Damian-facing line of action, or explicitly state before the chapter-4 approach that she is rotating aliases for a specific operational reason. If the alias shift is intentional, Damian and Brandt both need to register it in the scene rather than glide past it.\n\nAggregator guidance:\n- Canonical choice [cover_identity]: Anna Kessler, Westalian cultural attach\u00e9. Grounding: Continuity sheet establishes Anya's cover as cultural attach\u00e9 at the Westalian mission. 'Anna Kessler' appears in Ch 4's locator excerpt as the name used at the economic forum. Applying this name consistently across all Damian-facing diplomatic events prevents unexplained alias rotation that reads as continuity error.\n- Cross-chapter context: Canonical cover identity: 'Anna Kessler,' Westalian cultural attach\u00e9. Ch 2 should introduce Anya at the state dinner under this name. Ch 3 must maintain it at the cultural exchange. Ch 4 must use the same name at the economic forum. If alias rotation is operationally intended, it must be explicitly acknowledged by Damian or Brandt on the page rather than silently accepted.",
+      "severity": "CRITICAL",
+      "source": "local_window",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Across chapters 2-4, no more than one chapter spends a full opening beat on telepathic crowd calibration plus drink-prop cover before the main turn. Each chapter's engine should feel distinct within its first page.",
+      "chapter_id": "chapter_04",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:310; snapshots/cycle_01/FINAL_NOVEL.md:318; snapshots/cycle_01/FINAL_NOVEL.md:610; snapshots/cycle_01/FINAL_NOVEL.md:616; snapshots/cycle_01/FINAL_NOVEL.md:810; snapshots/cycle_01/FINAL_NOVEL.md:818",
+      "finding_id": "LW01-002",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:310",
+            "excerpt": "310: Not the audible kind \u2014 that was still muffled behind the gallery doors, a low hum of conversation and string music. The other kind. Two hundred minds, give or take, pressing against the limits of her skull like a headache that hadn't decided where to settle. Surface thoughts: fragments, loops, half-formed sentences. The quality of crowd telepathy was less like eavesdropping on individual conversations and more like standing in a train station where every announcement played simultaneously in a different language. You could tune toward one signal, but the background never disappeared. It just became a texture \u2014 a constant neural static that she'd been living with since she was old enough to understand that other people didn't hear it.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:318",
+            "excerpt": "318: She took a champagne glass from a passing tray and began to work.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:610",
+            "excerpt": "610: The telepathic noise was manageable. Not the overwhelming density of the state dinner, where hundreds of overlapping thoughts had battered her like standing in a wind tunnel. This was more like a cocktail party playing on multiple radios at moderate volume \u2014 she could let the murmur wash over her or tune toward individual signals with a focused effort.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:616",
+            "excerpt": "616: She stood near the refreshments table with a glass of Ostanian white \u2014 a little sweet, not her preference, but it was the prop that made her look like a person at a party instead of an intelligence operative surveilling the room. The cover was easy tonight: a young Westalian cultural attach\u00e9 attending an official East-West exchange event. She'd worn her hair down, the pink falling past her shoulders, and a dress that was professional without trying hard enough to look like it was trying. Loid had once told her that the best cover identity was one where you didn't have to remember what you were pretending to be, because it was close enough to what you were. Good advice from a man who had built an entire real life on that principle.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:810",
+            "excerpt": "810: The Ostanian Forum on Economic Realignment was held in a conference room on the third floor of the Foreign Affairs Ministry, and it was exactly as tedious as its name suggested. Anya stood near the back wall with a glass of sparkling water she hadn't touched, wearing her cultural attach\u00e9 smile, while a deputy minister explained his vision for bilateral tariff reform to an audience that was mostly thinking about lunch.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:818",
+            "excerpt": "818: The usual hum. Thirty-odd bureaucrats and party functionaries in a room meant for twenty, the radiators working too hard, condensation on the windows turning the grey October sky into a smear. Anya let the thoughts wash through her and tried to pick out operational texture from the noise. Mostly there was none. These forums existed so mid-level officials could be seen attending them, and the thoughts in the room reflected that: career anxiety, social positioning, one woman silently ranking the men in the room by attractiveness with a specificity that made Anya want to take notes.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "pass_hint": "p1_structural_craft",
+      "problem": "Chapters 2-4 keep restarting the Damian line with the same preparatory machinery: Anya enters an official function, calibrates crowd telepathy, takes an untouched drink as cover, and only then moves toward the real scene. Read consecutively, the repeated setup pattern makes the window feel chapter-template-driven just when it should be tightening into sharper variation.",
+      "rewrite_direction": "Break the scaffold in at least one of these chapters. The cleanest fix is to open chapter 4 closer to Brandt's suspicion, or move one Damian beat out of reception/forum geometry so the chapter does not spend its first energy re-establishing crowd-noise conditions the reader already knows.",
+      "severity": "HIGH",
+      "source": "local_window",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "When chapters 03 and 04 are read consecutively, the last paragraphs of chapter 04 should leave a distinct aftertaste from chapter 03. The dominant feeling should be 'this alliance can snap in a specific way now,' not another pass through 'Anya lied with telepathy and hates that she was effective.'",
+      "chapter_id": "chapter_04",
+      "cycle": 1,
+      "evidence": "Chapter 03 already closes by turning a successful operational beat into Anya's inventory of the two deceptions and the cost of being effective at them at snapshots/cycle_01/FINAL_NOVEL.md:793; snapshots/cycle_01/FINAL_NOVEL.md:795; snapshots/cycle_01/FINAL_NOVEL.md:801; and snapshots/cycle_01/FINAL_NOVEL.md:805. Chapter 04 lands the alliance; but its final movement returns to the same private moral bookkeeping: clean win outside; telepathic cheating inside; Sylvia/Damian paired as people she has used; and self-condemnation for being good at it at snapshots/cycle_01/FINAL_NOVEL.md:1060; snapshots/cycle_01/FINAL_NOVEL.md:1062; snapshots/cycle_01/FINAL_NOVEL.md:1064; and snapshots/cycle_01/FINAL_NOVEL.md:1066.; snapshots/cycle_01/FINAL_NOVEL.md:803; snapshots/cycle_01/FINAL_NOVEL.md:805; snapshots/cycle_01/FINAL_NOVEL.md:1060; snapshots/cycle_01/FINAL_NOVEL.md:1066",
+      "finding_id": "LW02-001",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:793",
+            "excerpt": "793: She put on her coat. Her hands were steady now. The shaking from this morning had passed, replaced by something quieter and worse: the recognition that she'd done two things today, and she'd chosen both of them, and both of them had worked exactly as she'd intended.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:795",
+            "excerpt": "795: The false report was in WISE's system. The contact was established. Two deceptions \u2014 one aimed at the institution that trusted her, one woven through every word she'd spoken to the man she was supposed to be assessing \u2014 and both of them were hers. Not compelled by the mission. Not forced by circumstance. Chosen, because Anya Forger had decided she knew better than everyone around her. Better than WISE's analytical machinery. Better than Loid's training. Better than Sylvia's thirty years of experience. Better than Damian's right to meet someone without that someone already knowing his thoughts.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:801",
+            "excerpt": "801: Today that lifelong fact had become a choice. Two choices. And both of them had cost something that she could feel in her body \u2014 not in her throat or her chest, not the stock vocabulary of guilt, but in her hands, which had held the folder steady while she lied to Sylvia, and which had shaken afterward in a bathroom stall, and which had been steady again by the time she shook Damian's hand in a gallery. The steadiness was the worst part. It meant she was getting used to it.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:805",
+            "excerpt": "805: She was good at this. That was the thing she couldn't stop thinking about. She was really, really good at this.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:1060",
+            "excerpt": "1060: She'd done it. Alliance formed. Terms set. Damian's operation preserved, for now. Brandt's report delayed, diluted, redirected. From the outside, it looked like a clean win.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:1062",
+            "excerpt": "1062: From the inside, she'd just negotiated an alliance by reading her partner's mind without his knowledge or consent. She'd heard his doubts, his fears, his grudging hope, and she'd used all of it \u2014 not cruelly, not to harm, but to optimize. To say the right thing at the right time. To know when he needed reassurance and when he needed space. She'd been inside his negotiating position the entire time, and he'd been on the other side of the table playing blind, and he'd still chosen to work with her.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:1064",
+            "excerpt": "1064: She didn't know if that made the alliance stronger or if it just made her the worst kind of partner. The kind who cheats before the game starts and then pretends the result was fair.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:1066",
+            "excerpt": "1066: Two days ago, she'd sat across from Sylvia and filed a false report while reading the trust that enabled it. Today, she'd stood across from Damian and negotiated an alliance while reading the doubts that shaped it. Every successful deception widened the gap between Anya and every person she dealt with. Sylvia trusted her. Damian was starting to trust her. And both forms of trust rested on information she'd stolen and lies she'd told, and the lies worked because she was good at this, and being good at this was the thing she couldn't forgive.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:803",
+            "excerpt": "803: Anya walked home through the autumn dark, reading the city all the way, carrying the specific weight of the day she'd become a person who betrayed her handler's trust and used a man's unguarded thoughts to build a connection he believed was honest. Two deceptions. One she'd been born with. One she'd made this morning at a table in a room that smelled like burned coffee.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "pass_hint": "p1_structural_craft",
+      "problem": "Read back-to-back, chapters 03 and 04 do distinct plot work but the same closing emotional work. Both chapters end with Anya successfully advancing the mission and then withdrawing into a solitary summary of how telepathy let her betray someone who trusted her. Because chapter 04 repeats chapter 03's terminal function instead of cashing out the alliance as a new kind of danger, the front half of the window feels like it is circling the same guilt beat rather than deepening it.",
+      "rewrite_direction": "Ch 4's exit must leave a distinct aftertaste from Ch 3's. Keep the moral cost but end on alliance-specific pressure unique to the new arrangement: Damian's filed suspicion and how it constrains future contact, the fragility of negotiated terms, the Brandt/Gessler operational clock, or the concrete risk of maintaining regular-channel contact with someone WISE doesn't know she's running. Compress the generalized self-indictment so the reader leaves on changed leverage, not a second version of the same telepathy-guilt moral inventory that closed Ch 3.",
+      "severity": "HIGH",
+      "source": "local_window",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "has_locator_excerpts": true,
+  "input_snapshot_hash": "b19bbb7a19dd6fa42e0f922f39d3da98b304133202cbed1d3b0ff3a081723ede",
+  "must_fix_count": 11,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "original_snapshot_file": "snapshots/cycle_01/chapters/chapter_04.md",
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This novel's premise blends comedy, espionage action, and genuine emotional stakes. The creative risk is in honoring all three simultaneously without letting any one mode cannibalize the others. Do not soften the violence because the novel is funny. Do not suppress the comedy because the stakes are real. Do not retreat from Anya's moral complicity (she reads minds without consent and uses it to manipulate) because she is the protagonist and we like her. The hardest scenes to get right are the ones where comedy and pain coexist \u2014 a fight that is also funny, a confession that is also absurd, a family dinner where love and deception are the same meal. Lean into those moments rather than resolving them into one register. The novel's best material lives in the dissonance.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism at the point of consequence is a craft failure. When violence, fear, grief, or moral compromise demands scene presence, render it with specificity. A bruise should have a color. A death should have weight. A lie should have a cost the liar feels in their body. The exception is Anya's telepathic restraint \u2014 she sometimes cannot bear to fully articulate what she's reading in someone's mind, and this selective omission is a character choice, not authorial squeamishness.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for all characters in casual speech. Uncontracted forms reserved for emphasis, deliberate formality, or character-specific register choices (Sylvia's professional diction, Damian's diplomatic mode). In contemporary casual scenes, an unjustified full-form line should be flagged and checked.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 2
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "No two consecutive chapters should share the same structural rhythm. Alternate between dialogue-heavy scenes and interiority-heavy passages. Vary scene count: two-scene chapters (11, 16, 17 \u2014 compressed force) against multi-scene chapters (8, 15 \u2014 breadth and momentum). Shift between comic dominant and dramatic dominant across the middle of the book, with the comic register maintaining presence even in dramatic chapters through Anya's voice and the Forger family's inherent absurdity. The tonal shift at Chapter 13 is a deliberate gear change, not a gradual dimming \u2014 comedy should be fully alive in Chapter 12 and markedly reduced (not absent) in Chapter 13. The Chapter 13 POV shift to Damian is a structural event: the reader's relationship to information changes. The final act (14-17) maintains Anya's voice and the family's warmth as comic undertone, but the dominant mode is drama with consequences. Chapter 17's dinner scene reintroduces comedy through a register the novel has not previously accessed \u2014 Damian's self-conscious thought management around a known telepath \u2014 which only works because it follows sixteen chapters of oblivious thought-reading.",
+      "diction": "Contemporary and accessible, not literary-precious. The prose should have energy and forward drive. Humor comes from observation, character logic, and the gap between surface and interior \u2014 not from clever narration or authorial commentary. Let the funny things be funny without signposting them. Let the sad things sit without interpretation. The prose should be invisible when it needs to be and vivid when the scene demands it, but never decorative for its own sake.",
+      "forbidden_drift_patterns": [
+        "Narrator-as-comedian: the prose commenting on its own comedy, winking at the reader, or admiring a character's wit. The humor lives in the situation, not in the telling.",
+        "Telepathy-as-omniscience: Anya's mind-reading should feel like cognitive overload, not like a narrator's convenient access to exposition. She reads surface thoughts, not deep motivations, and the thoughts she catches should be fragmentary, mundane, and sometimes misleading.",
+        "Prestige-creep: the prose drifting toward solemn literary register when the scene's natural mode is comic, warm, or chaotic. This novel's emotional power comes from the coexistence of comedy and genuine feeling, not from the comedy yielding to seriousness.",
+        "Briefing-itis: scenes where characters explain plot to each other or to the reader. Information should emerge through action, observation, and telepathic fragments \u2014 not through expository dialogue formatted as conversation.",
+        "Combat-poetry: fight scenes that become lyrical or aesthetically admiring. Violence should be fast, specific, physically grounded, and over quickly. Yor's lethality is matter-of-fact; Anya's fighting is scrappier and less elegant.",
+        "Emotion-labeling: telling the reader what a character feels instead of rendering the feeling through thought, action, and physical detail. 'She felt sad' is always worse than the specific thing that makes the sadness legible."
+      ],
+      "narrative_distance": "Close third person, primarily Anya. Chapter 7 (Damian), Chapter 10 (Yor), the Damian POV section in Chapter 13, and Damian's thread in Chapter 15 shift to close third on their respective POV characters. The telepathy layer is unique to Anya's POV \u2014 when she is the viewpoint character, other characters' surface thoughts appear as italicized interjections woven into the prose. In non-Anya POV chapters, no telepathic content appears. The Chapter 13 Damian POV section is structurally critical: it gives the reader access to Damian's interior at a depth Anya's telepathy cannot reach, and it reveals that he has identified Anya \u2014 knowledge the reader carries into the final act while Anya does not. This dramatic irony reversal is the novel's strongest structural surprise and depends on the reader experiencing Damian's depths unmediated by Anya's telepathic filter.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Varied and responsive to scene pressure. Action sequences: short sentences, concrete verbs, sensory immediacy. Comic scenes: longer sentences that build to turns, pacing that allows beats to land. Quiet domestic scenes: relaxed rhythm with room for observation and texture. Telepathic interjections should disrupt prose rhythm the way intrusive thoughts disrupt concentration \u2014 not ornamentally but as genuine cognitive interference. Avoid metronomic sentence patterns in any mode.",
+      "sensory_bias": [
+        "visual surveillance \u2014 reading rooms, reading faces, the spy's hyperawareness of spatial arrangement and exit routes",
+        "auditory \u2014 overheard thoughts as a telepathic sixth sense layered over actual ambient sound",
+        "kinesthetic \u2014 action choreography, physical proximity, the body under stress or in intimacy",
+        "olfactory/gustatory \u2014 Yor's cooking, Berlint street food, the specific smell of institutional buildings and safe houses"
+      ]
+    }
+  }
+}

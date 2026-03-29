@@ -1,0 +1,80 @@
+{
+  "cycle": 3,
+  "window_id": "window_06",
+  "chapters_reviewed": [
+    "chapter_11",
+    "chapter_12",
+    "chapter_13",
+    "chapter_14"
+  ],
+  "summary": "Strong escalation runs through chapters 11-13, but the window loses force at two handoffs: chapter 12 skips the promised 0600 Falk watch into recap, and chapter 14 spends too long re-briefing damage from chapter 13 before the family-alliance turn finally changes the board.",
+  "findings": [
+    {
+      "finding_id": "LW06-001",
+      "category": "pre_scan",
+      "subcategory": "reader_confusion",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "related_chapter_ids": [
+        "chapter_13"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "snapshots/cycle_03/FINAL_NOVEL.md:7224",
+      "problem": "Chapter 14 opens with two masculine pronouns before the scene anchors who \"he\" is. Coming straight off Damian's POV and repeated Crane references, a reader has to stop and test Damian versus Loid versus Crane before the apartment context settles. That kind of pause is accidental boundary confusion, not productive suspense.",
+      "rewrite_direction": "Name Loid directly, or reframe the opening so the Forger-apartment context lands before any pronoun-only reference. If the intent is that Loid now feels newly strange as both father and handler, make that strangeness explicit instead of suspending antecedent clarity.",
+      "acceptance_test": "A cold reader can identify both the location and who \"he\" is within the first two sentences of chapter 14 without rereading.",
+      "fix_owner_reason": "Chapter 14 owns the problem because the ambiguity is created in its opening line, and later chapters own boundary-local clarity fixes by default."
+    },
+    {
+      "finding_id": "LW06-002",
+      "category": "information_flow",
+      "subcategory": "setup_payoff_compression",
+      "severity": "HIGH",
+      "chapter_id": "chapter_12",
+      "related_chapter_ids": [
+        "chapter_11",
+        "chapter_12"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "snapshots/cycle_03/FINAL_NOVEL.md:6227; snapshots/cycle_03/FINAL_NOVEL.md:6250",
+      "problem": "Chapter 11 closes by loading the 0600 Falk watch as the next live test of whether Anya is finally right, then chapter 12 reports that watch in retrospective summary before moving to the gala. Because the boundary promises a scene and then delivers only a recap of failure, the handoff sheds suspense instead of cashing it in.",
+      "rewrite_direction": "Dramatize some portion of the 0600 watch before the gala material, or lower the terminal-state promise at the end of chapter 11 so the reader is not primed for a real-time sting that the next chapter immediately skips. Even a short on-page beat of the desk going blind and Anya realizing she has missed the useful moment would preserve momentum.",
+      "acceptance_test": "A reader moving from chapter 11 into chapter 12 experiences the immediate consequence of \"watch, don't report\" on-page rather than learning in summary that the watch already failed.",
+      "fix_owner_reason": "Later chapters own payoff misses at the boundary; chapter 12 is where the setup inherited from chapter 11 gets compressed into recap."
+    },
+    {
+      "finding_id": "LW06-003",
+      "category": "redundant_scene_functions",
+      "subcategory": "rebrief_after_debrief",
+      "severity": "HIGH",
+      "chapter_id": "chapter_14",
+      "related_chapter_ids": [
+        "chapter_13",
+        "chapter_14"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "snapshots/cycle_03/FINAL_NOVEL.md:6827; snapshots/cycle_03/FINAL_NOVEL.md:6971; snapshots/cycle_03/FINAL_NOVEL.md:7290; snapshots/cycle_03/FINAL_NOVEL.md:7414",
+      "problem": "Chapter 13 already runs Anya through two consequence-filter scenes: Damian refuses a clean self-indictment, then Sylvia forces the distinction between known and guessed facts. Chapter 14 opens by making Loid run a third version of the same beat, so the reader sits through another partial confession and another insistence on the solid part before Yor's envelope finally changes the state of play. Read back-to-back, the first movement of chapter 14 feels like another debrief rather than a new engine.",
+      "rewrite_direction": "Compress Loid's cross-examination or make it produce materially new information immediately. Move Yor's envelope into the scene sooner, or let Loid's questioning expose a fact the reader does not already possess from chapter 13.",
+      "acceptance_test": "Before Yor says she has something, chapter 14 has already added new leverage instead of restating the Crane, mole, and summit package the reader just absorbed in chapter 13.",
+      "fix_owner_reason": "The weaker later chapter owns repeated scene function by default; chapter 14 repeats the debrief shape after chapter 13 has already exhausted it."
+    },
+    {
+      "finding_id": "LW06-004",
+      "category": "character_decision_coherence",
+      "subcategory": "underexplained_delay",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_14",
+      "related_chapter_ids": [
+        "chapter_13",
+        "chapter_14"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "snapshots/cycle_03/FINAL_NOVEL.md:6729; snapshots/cycle_03/FINAL_NOVEL.md:7157; snapshots/cycle_03/FINAL_NOVEL.md:7224; snapshots/cycle_03/FINAL_NOVEL.md:7312",
+      "problem": "After Crane dies, Anya moves immediately to meet Damian and spends the same day mapping damage with Sylvia, but the crucial step of warning Loid and Yor is deferred off-page for three full days until the summit is essentially upon them. The text acknowledges that she should have come sooner, yet the offered reason, wanting one more clean piece, feels thinner than the operational urgency chapter 13 establishes. On a cluster read, the delay feels arranged to hold the family-alliance chapter in place rather than emerging from believable pressure.",
+      "rewrite_direction": "Either add a concrete blocker that makes those three days impossible or dangerous, such as surveillance, WISE lockdown, or a specific reason home contact would burn the remaining line, or shorten the gap so the family alliance activates much closer to the chapter-13 collapse.",
+      "acceptance_test": "A reader can explain in one sentence why Anya could not realistically go to the Forgers earlier and why that blocker outweighed giving them more time before the summit.",
+      "fix_owner_reason": "The later chapter owns this boundary-delay payoff unless the earlier chapter already establishes a hard blocker; chapter 14 introduces the three-day gap without making it feel necessary enough."
+    }
+  ]
+}

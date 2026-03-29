@@ -1,0 +1,83 @@
+{
+  "chapters_reviewed": [
+    "chapter_01",
+    "chapter_02",
+    "chapter_03",
+    "chapter_04"
+  ],
+  "cycle": 2,
+  "findings": [
+    {
+      "acceptance_test": "Within the first 2-3 paragraphs of chapter 4, a reader can say how long it has been since chapter 3 and understand why Damian is now seeing a different public-facing name without having to backsolve the cover bookkeeping.",
+      "boundary_span": "chapter_03/chapter_04",
+      "category": "pre_scan",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:782; snapshots/cycle_02/FINAL_NOVEL.md:789; snapshots/cycle_02/FINAL_NOVEL.md:821",
+      "finding_id": "LW01-001",
+      "fix_owner_reason": "Later chapter owns the boundary-local clarity miss; chapter 4 withholds the time skip until after the new scene is already underway.",
+      "pass_hint": "p1_structural_craft",
+      "problem": "Chapter 3 ends on the immediate consequences of Anya's false report and Damian getting her contact channel, but chapter 4 drops straight into another ministry room without first telling the reader how much time has passed. The one-week skip and accumulated badge logic only arrive later, so the reader has to reconstruct the timeline while the Brandt threat scene is already trying to run hot.",
+      "related_chapter_ids": [
+        "chapter_03"
+      ],
+      "rewrite_direction": "Give chapter 4 a clean temporal bridge before the room-scan begins, or fold the 'a week later / another forum / another badge' orientation into the first paragraph so Brandt's suspicion lands as escalation instead of recalibration.",
+      "severity": "MEDIUM",
+      "subcategory": "chronology_gap"
+    },
+    {
+      "acceptance_test": "The first page of chapter 4 feels structurally different from the openings of chapters 2 and 3, with the reader entering on a new action vector rather than another crowded-room reconnaissance pass.",
+      "boundary_span": "chapter_02/chapter_04",
+      "category": "pacing_rhythm",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:304; snapshots/cycle_02/FINAL_NOVEL.md:316; snapshots/cycle_02/FINAL_NOVEL.md:580; snapshots/cycle_02/FINAL_NOVEL.md:590; snapshots/cycle_02/FINAL_NOVEL.md:789; snapshots/cycle_02/FINAL_NOVEL.md:821",
+      "finding_id": "LW01-002",
+      "fix_owner_reason": "The third chapter in the pattern is where the repetition becomes reader-visible, and chapter 4 can fix it most efficiently by changing its opening shape.",
+      "pass_hint": "p1_structural_craft",
+      "problem": "Three consecutive chapters re-enter almost the same rhythm: Anya arrives in an official room, absorbs telepathic crowd noise, identifies the useful pressure point in the room, and then moves toward Damian. Read back-to-back, the window keeps restarting instead of accelerating, so chapter 4 opens like a third variation on an already familiar setup rather than the payoff phase of the arc.",
+      "related_chapter_ids": [
+        "chapter_02",
+        "chapter_03"
+      ],
+      "rewrite_direction": "Break the pattern in chapter 4 by opening later in the pressure sequence, compressing the room-orientation beat, or starting with Brandt already leaning on Damian so the chapter enters on conflict instead of another scan-and-approach cycle.",
+      "severity": "HIGH",
+      "subcategory": "repeated_official_room_openings"
+    },
+    {
+      "acceptance_test": "After reading chapters 2 and 3 consecutively, the Damian thread in chapter 3 feels like a new phase of the relationship rather than a slower verbalization of the recognition danger chapter 2 already established.",
+      "boundary_span": "chapter_02/chapter_03",
+      "category": "redundant_scene_functions",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:454; snapshots/cycle_02/FINAL_NOVEL.md:474; snapshots/cycle_02/FINAL_NOVEL.md:702; snapshots/cycle_02/FINAL_NOVEL.md:718",
+      "finding_id": "LW01-003",
+      "fix_owner_reason": "The weaker chapter owns the overlap; chapter 3 revisits a suspense function chapter 2 has already clearly installed.",
+      "pass_hint": "p1_structural_craft",
+      "problem": "Chapter 2 already lands Damian's half-recognition as an active danger, with the schoolyard memory surfacing and his almost-name forming. Chapter 3 then spends its Damian scene replaying that same suspense function until he asks the question out loud. The relationship does advance, but the chapter uses a lot of space to move from 'almost remembers' to 'asks if we've met,' which reads like the same function twice in a row.",
+      "related_chapter_ids": [
+        "chapter_02"
+      ],
+      "rewrite_direction": "Let the chapter-3 contact scene cash out a more materially different shift sooner, such as leaning harder on operational leverage or mutual curiosity, and trim the repeated beats of Damian re-noticing her face and familiarity before the scene turns.",
+      "severity": "HIGH",
+      "subcategory": "recognition_suspense_replayed"
+    },
+    {
+      "acceptance_test": "Consecutive chapter openings in this window no longer reuse the same heat/noise/music-overheard-thoughts/head-pressure cluster; each scene announces its difference in the first paragraph rather than by paragraph three.",
+      "boundary_span": "chapter_02/chapter_04",
+      "category": "cross_chapter_prose_patterns",
+      "chapter_id": "chapter_04",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:304; snapshots/cycle_02/FINAL_NOVEL.md:306; snapshots/cycle_02/FINAL_NOVEL.md:314; snapshots/cycle_02/FINAL_NOVEL.md:580; snapshots/cycle_02/FINAL_NOVEL.md:584; snapshots/cycle_02/FINAL_NOVEL.md:789",
+      "finding_id": "LW01-004",
+      "fix_owner_reason": "The later chapter owns the visible prose tic because chapter 4 confirms it as a recurring boundary-level pattern rather than a one-off description.",
+      "pass_hint": "p3_prose_copyedit",
+      "problem": "The adjacent official-room scenes keep describing themselves through the same kit: heat, crowd-thought pressure, cultured-room details, and Anya's physical overload before she moves on the useful mind in the room. Because the chapter openings are already structurally similar, this repeated descriptive inventory makes the window sound even more samey at the boundaries.",
+      "related_chapter_ids": [
+        "chapter_02",
+        "chapter_03"
+      ],
+      "rewrite_direction": "Once one crowded-room telepathy setup is established in the window, let later chapters enter from a fresher sensory angle or skip straight to the differentiating pressure instead of reloading the whole overload package.",
+      "severity": "MEDIUM",
+      "subcategory": "telepathic_room_inventory_repetition"
+    }
+  ],
+  "summary": "Dominant failure: chapters 02-04 keep re-entering similar diplomatic-room setups and Damian-recognition beats, so the window's escalation arrives later and with less lift than the chapter-04 alliance scene needs.",
+  "window_id": "window_01"
+}

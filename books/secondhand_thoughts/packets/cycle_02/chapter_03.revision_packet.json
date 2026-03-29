@@ -1,0 +1,155 @@
+{
+  "acceptance_targets": [
+    "[CRAFT_SUMMARIZED_CONTACT_BEAT] Pass if the revised material between snapshots/cycle_02/chapters/chapter_03.md:136 and snapshots/cycle_02/chapters/chapter_03.md:150 lets a cold reader identify, from rendered dialogue/action rather than summary labels, one specific topic they connect over, one moment Damian nearly places her, and one cover-saving move Anya makes in response. Fail if the section still relies mainly on retrospective statements about him being good at conversation or her 'flirting' and 'steering away' without staging those beats.",
+    "[PROSE_DIAGNOSTIC_AFTERBEATS] Pass if each revised cited beat is legible through on-page consequence in Anya's immediate register: a physical tell, a conversational break, a thought-fragment, or a changed decision the reader can observe without a standalone abstract diagnosis. Fail if any of the cited spans still resolves primarily through narrator verdicts about what the line meant, how the beat landed, or what broad category of pressure it represented.",
+    "[RED-001] Ch3's first close description of Damian contains zero physical traits already stated in Ch2's introduction (no jaw reference, no 'straight back').",
+    "[LW01-003] After reading chapters 2 and 3 consecutively, the Damian thread in chapter 3 feels like a new phase of the relationship rather than a slower verbalization of the recognition danger chapter 2 already established.",
+    "[length_chapter_03_min_words] Chapter word count is >= 5000 while preserving heading contract."
+  ],
+  "aggregation_applied": {
+    "decisions_file": "packets/cycle_02/aggregation_decisions.json",
+    "decisions_sha1": "95a1a6d74306227ded836a8c728f5d1dfabd115c"
+  },
+  "chapter_id": "chapter_03",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if the revised material between snapshots/cycle_02/chapters/chapter_03.md:136 and snapshots/cycle_02/chapters/chapter_03.md:150 lets a cold reader identify, from rendered dialogue/action rather than summary labels, one specific topic they connect over, one moment Damian nearly places her, and one cover-saving move Anya makes in response. Fail if the section still relies mainly on retrospective statements about him being good at conversation or her 'flirting' and 'steering away' without staging those beats.",
+      "chapter_id": "chapter_03",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:136; snapshots/cycle_02/chapters/chapter_03.md:148",
+      "finding_id": "CRAFT_SUMMARIZED_CONTACT_BEAT",
+      "problem": "The chapter's key first-contact turn with Damian compresses the middle of the conversation into summary right where the seduction and recognition pressure need to be lived on the page. The text tells us they move into an 'easy corridor,' that Damian is good at public conversation, and that Anya is flirting while dodging childhood landmines, but it withholds the specific exchange that would make her choice to keep pushing past protocol feel fully earned.",
+      "rewrite_direction": "Rebuild the corridor passage between snapshots/cycle_02/chapters/chapter_03.md:136 and snapshots/cycle_02/chapters/chapter_03.md:150 so the chemistry and cover-management are dramatized rather than reported. Keep the later gallery invitation, but give this span at least one concrete topic-specific exchange, one visible recognition snag from Damian, and one evasive counter-move from Anya that shows how she is using the room and his thoughts in real time.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if each revised cited beat is legible through on-page consequence in Anya's immediate register: a physical tell, a conversational break, a thought-fragment, or a changed decision the reader can observe without a standalone abstract diagnosis. Fail if any of the cited spans still resolves primarily through narrator verdicts about what the line meant, how the beat landed, or what broad category of pressure it represented.",
+      "chapter_id": "chapter_03",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:77; snapshots/cycle_02/chapters/chapter_03.md:132; snapshots/cycle_02/chapters/chapter_03.md:164; snapshots/cycle_02/chapters/chapter_03.md:208; snapshots/cycle_02/chapters/chapter_03.md:244; snapshots/cycle_02/chapters/chapter_03.md:268; snapshots/cycle_02/chapters/chapter_03.md:286",
+      "finding_id": "PROSE_DIAGNOSTIC_AFTERBEATS",
+      "problem": "The prose repeatedly steps outside Anya's immediate close-third into polished diagnostic shorthand that explains the beat after it has already landed. Phrases such as the lie as 'competent administrative labor,' the half-sentence having 'landed somewhere,' the invitation that 'gave him away,' and the final 'Two lines she couldn't pull back' read like a narrator scoring the scene instead of Anya living through it. That abstraction softens pressure and blurs the simpler, more overloaded Anya register the style bible calls for.",
+      "rewrite_direction": "Revise the explanatory afterbeats around snapshots/cycle_02/chapters/chapter_03.md:77, snapshots/cycle_02/chapters/chapter_03.md:132, snapshots/cycle_02/chapters/chapter_03.md:164, snapshots/cycle_02/chapters/chapter_03.md:208, snapshots/cycle_02/chapters/chapter_03.md:244, snapshots/cycle_02/chapters/chapter_03.md:268, and snapshots/cycle_02/chapters/chapter_03.md:286 so each cited moment either adds new sensory/consequential information or disappears. Replace verdict-style summary with bodily reaction, interruption, pause, or changed behavior that lets the reader infer the same pressure without authorial translation.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch3's first close description of Damian contains zero physical traits already stated in Ch2's introduction (no jaw reference, no 'straight back').",
+      "aggregated_pass_key": "p3_prose_copyedit",
+      "chapter_id": "chapter_03",
+      "cycle": 2,
+      "evidence": "Ch2 L422: 'Sharper through the jaw, darker under the eyes, the soft roundness of Eden sanded out by adulthood and bad sleep'; Ch2 L402: 'Straight back. Hands resting on stone as if he had taught them calm by force'; Ch3 L584: 'Same straight back, same careful face, but less armored'; Ch3 L596: 'Sharper jaw. Same eyes.'",
+      "finding_id": "RED-001",
+      "problem": "Damian's physical description is established in Ch2 (L422: 'sharper through the jaw'; L402: 'straight back'). One chapter later, Ch3 re-describes the same two traits in the same terms ('sharper jaw' L596, 'same straight back' L584). Adjacent-chapter re-description is the most jarring form of redundancy for a sequential reader.",
+      "rewrite_direction": "Remove or replace the 'sharper jaw' and 'straight back' descriptors in Ch3. The second encounter should enter through behavioral or situational detail new to this scene (the academy setting, his laugh, his changed social register) rather than re-confirming physical traits the reader learned one chapter ago.",
+      "severity": "HIGH",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "After reading chapters 2 and 3 consecutively, the Damian thread in chapter 3 feels like a new phase of the relationship rather than a slower verbalization of the recognition danger chapter 2 already established.",
+      "chapter_id": "chapter_03",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:454; snapshots/cycle_02/FINAL_NOVEL.md:474; snapshots/cycle_02/FINAL_NOVEL.md:702; snapshots/cycle_02/FINAL_NOVEL.md:718",
+      "finding_id": "LW01-003",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:454",
+            "excerpt": "454: *Eden courtyard in spring. Bell late again.*",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:474",
+            "excerpt": "474: And then the start of a name. Just the first sound. *An.*",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:702",
+            "excerpt": "702: \"This is a strange question,\" he said. \"Have we met before?\"",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:718",
+            "excerpt": "718: \"Right,\" he said finally. \"Sorry. You just seem familiar.\"",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "pass_hint": "p1_structural_craft",
+      "problem": "Chapter 2 already lands Damian's half-recognition as an active danger, with the schoolyard memory surfacing and his almost-name forming. Chapter 3 then spends its Damian scene replaying that same suspense function until he asks the question out loud. The relationship does advance, but the chapter uses a lot of space to move from 'almost remembers' to 'asks if we've met,' which reads like the same function twice in a row.",
+      "rewrite_direction": "Let the chapter-3 contact scene cash out a more materially different shift sooner, such as leaning harder on operational leverage or mutual curiosity, and trim the repeated beats of Damian re-noticing her face and familiarity before the scene turns.",
+      "severity": "HIGH",
+      "source": "local_window",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Chapter word count is >= 5000 while preserving heading contract.",
+      "chapter_id": "chapter_03",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_03.md:1",
+      "finding_id": "length_chapter_03_min_words",
+      "problem": "Chapter is below projected_min_words (2412 < 5000).",
+      "rewrite_direction": "Add causally necessary scene material that strengthens the chapter engine, increases pressure, and lands the planned state shift without filler.",
+      "severity": "HIGH",
+      "source": "length_guardrail",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "has_locator_excerpts": true,
+  "input_snapshot_hash": "9dca8135c9bcd83c92660f7f78d791f6d2c629ec2f0fad0447b95d14f47cadda",
+  "must_fix_count": 5,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "original_snapshot_file": "snapshots/cycle_02/chapters/chapter_03.md",
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This novel's premise blends comedy, espionage action, and genuine emotional stakes. The creative risk is in honoring all three simultaneously without letting any one mode cannibalize the others. Do not soften the violence because the novel is funny. Do not suppress the comedy because the stakes are real. Do not retreat from Anya's moral complicity (she reads minds without consent and uses it to manipulate) because she is the protagonist and we like her. The hardest scenes to get right are the ones where comedy and pain coexist \u2014 a fight that is also funny, a confession that is also absurd, a family dinner where love and deception are the same meal. Lean into those moments rather than resolving them into one register. The novel's best material lives in the dissonance.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism at the point of consequence is a craft failure. When violence, fear, grief, or moral compromise demands scene presence, render it with specificity. A bruise should have a color. A death should have weight. A lie should have a cost the liar feels in their body. The exception is Anya's telepathic restraint \u2014 she sometimes cannot bear to fully articulate what she's reading in someone's mind, and this selective omission is a character choice, not authorial squeamishness.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for all characters in casual speech. Uncontracted forms reserved for emphasis, deliberate formality, or character-specific register choices (Sylvia's professional diction, Damian's diplomatic mode). In contemporary casual scenes, an unjustified full-form line should be flagged and checked.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 2
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "No two consecutive chapters should share the same structural rhythm. Alternate between dialogue-heavy scenes and interiority-heavy passages. Vary scene count: two-scene chapters (11, 16, 17 \u2014 compressed force) against multi-scene chapters (8, 15 \u2014 breadth and momentum). Shift between comic dominant and dramatic dominant across the middle of the book, with the comic register maintaining presence even in dramatic chapters through Anya's voice and the Forger family's inherent absurdity. The tonal shift at Chapter 13 is a deliberate gear change, not a gradual dimming \u2014 comedy should be fully alive in Chapter 12 and markedly reduced (not absent) in Chapter 13. The Chapter 13 POV shift to Damian is a structural event: the reader's relationship to information changes. The final act (14-17) maintains Anya's voice and the family's warmth as comic undertone, but the dominant mode is drama with consequences. Chapter 17's dinner scene reintroduces comedy through a register the novel has not previously accessed \u2014 Damian's self-conscious thought management around a known telepath \u2014 which only works because it follows sixteen chapters of oblivious thought-reading.",
+      "diction": "Contemporary and accessible, not literary-precious. The prose should have energy and forward drive. Humor comes from observation, character logic, and the gap between surface and interior \u2014 not from clever narration or authorial commentary. Let the funny things be funny without signposting them. Let the sad things sit without interpretation. The prose should be invisible when it needs to be and vivid when the scene demands it, but never decorative for its own sake.",
+      "forbidden_drift_patterns": [
+        "Narrator-as-comedian: the prose commenting on its own comedy, winking at the reader, or admiring a character's wit. The humor lives in the situation, not in the telling.",
+        "Telepathy-as-omniscience: Anya's mind-reading should feel like cognitive overload, not like a narrator's convenient access to exposition. She reads surface thoughts, not deep motivations, and the thoughts she catches should be fragmentary, mundane, and sometimes misleading.",
+        "Prestige-creep: the prose drifting toward solemn literary register when the scene's natural mode is comic, warm, or chaotic. This novel's emotional power comes from the coexistence of comedy and genuine feeling, not from the comedy yielding to seriousness.",
+        "Briefing-itis: scenes where characters explain plot to each other or to the reader. Information should emerge through action, observation, and telepathic fragments \u2014 not through expository dialogue formatted as conversation.",
+        "Combat-poetry: fight scenes that become lyrical or aesthetically admiring. Violence should be fast, specific, physically grounded, and over quickly. Yor's lethality is matter-of-fact; Anya's fighting is scrappier and less elegant.",
+        "Emotion-labeling: telling the reader what a character feels instead of rendering the feeling through thought, action, and physical detail. 'She felt sad' is always worse than the specific thing that makes the sadness legible."
+      ],
+      "narrative_distance": "Close third person, primarily Anya. Chapter 7 (Damian), Chapter 10 (Yor), the Damian POV section in Chapter 13, and Damian's thread in Chapter 15 shift to close third on their respective POV characters. The telepathy layer is unique to Anya's POV \u2014 when she is the viewpoint character, other characters' surface thoughts appear as italicized interjections woven into the prose. In non-Anya POV chapters, no telepathic content appears. The Chapter 13 Damian POV section is structurally critical: it gives the reader access to Damian's interior at a depth Anya's telepathy cannot reach, and it reveals that he has identified Anya \u2014 knowledge the reader carries into the final act while Anya does not. This dramatic irony reversal is the novel's strongest structural surprise and depends on the reader experiencing Damian's depths unmediated by Anya's telepathic filter.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Varied and responsive to scene pressure. Action sequences: short sentences, concrete verbs, sensory immediacy. Comic scenes: longer sentences that build to turns, pacing that allows beats to land. Quiet domestic scenes: relaxed rhythm with room for observation and texture. Telepathic interjections should disrupt prose rhythm the way intrusive thoughts disrupt concentration \u2014 not ornamentally but as genuine cognitive interference. Avoid metronomic sentence patterns in any mode.",
+      "sensory_bias": [
+        "visual surveillance \u2014 reading rooms, reading faces, the spy's hyperawareness of spatial arrangement and exit routes",
+        "auditory \u2014 overheard thoughts as a telepathic sixth sense layered over actual ambient sound",
+        "kinesthetic \u2014 action choreography, physical proximity, the body under stress or in intimacy",
+        "olfactory/gustatory \u2014 Yor's cooking, Berlint street food, the specific smell of institutional buildings and safe houses"
+      ]
+    }
+  }
+}

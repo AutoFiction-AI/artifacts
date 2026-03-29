@@ -1,0 +1,63 @@
+{
+  "cycle": 2,
+  "window_id": "window_03",
+  "chapters_reviewed": [
+    "chapter_05",
+    "chapter_06",
+    "chapter_07",
+    "chapter_08"
+  ],
+  "summary": "Dominant failure: chapter 8 repeats too much of chapter 5's reception-and-recognition machinery, so the window's genuinely new pressure arrives late; the 05/06 boundary also forces the reader to reverse-engineer the timeline.",
+  "findings": [
+    {
+      "finding_id": "LW03-001",
+      "category": "pre_scan",
+      "subcategory": "chronology_gap",
+      "severity": "HIGH",
+      "chapter_id": "chapter_06",
+      "related_chapter_ids": [
+        "chapter_05"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:1108; snapshots/cycle_02/FINAL_NOVEL.md:1380; snapshots/cycle_02/FINAL_NOVEL.md:1567; snapshots/cycle_02/FINAL_NOVEL.md:1709",
+      "problem": "Chapter 5 establishes an evening operation that starts around eight, runs long enough for Damian to lose forty-five minutes to Margarethe, and then continues into the park-bench aftermath. Chapter 6 immediately opens on Anya arriving for family dinner with no day-marker, but the secure call lands at half past eight. Read straight through, the boundary briefly implies a continuous same-night move that the clock later proves impossible, so the reader has to stop and recalculate when chapter 6 is happening.",
+      "rewrite_direction": "Anchor chapter 6 in its first sentence or two with an explicit elapsed-time cue and destination cue, so the reader knows before the dinner scene settles whether this is the next evening, the following day, or another scheduled visit home.",
+      "acceptance_test": "A cold reader can place chapter 6 in time relative to the club operation before reaching the secure-call scene and does not need the 8:30 timestamp to realize a gap has occurred.",
+      "fix_owner_reason": "The later chapter owns this because chapter 6 withholds the time jump and forces retroactive timeline repair at the boundary."
+    },
+    {
+      "finding_id": "LW03-002",
+      "category": "repetitive_scene_dynamics",
+      "subcategory": "recognition_near_miss_reset",
+      "severity": "HIGH",
+      "chapter_id": "chapter_08",
+      "related_chapter_ids": [
+        "chapter_05",
+        "chapter_07"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:1470; snapshots/cycle_02/FINAL_NOVEL.md:1478; snapshots/cycle_02/FINAL_NOVEL.md:2066; snapshots/cycle_02/FINAL_NOVEL.md:2229; snapshots/cycle_02/FINAL_NOVEL.md:2245",
+      "problem": "Across this window, the Damian-recognition thread keeps landing on the same beat shape: Anya's mannerism or laugh triggers an Eden memory, Damian gets close, and the story resets before leverage actually changes. Chapter 5 already spends a full beat on him asking about Eden outright; chapter 7 extends the same tease with the class photo; chapter 8 returns to another ballroom and another almost-click. Read back-to-back, the suspense stops tightening and starts feeling reheated.",
+      "rewrite_direction": "Make chapter 8 convert the recognition thread into a distinct new condition instead of another near-miss: force Damian to test a detail only school-Anya would know, make Anya pay a sharper cover cost, or let one of them leave the scene with meaningfully changed leverage.",
+      "acceptance_test": "After chapter 8, the reader can name a concrete change in the Damian/Anya recognition dynamic that did not already exist after chapter 5's park-bench exchange or chapter 7's photo scene.",
+      "fix_owner_reason": "The later, weaker repetition owns this: chapter 8 reuses an already-played recognition pattern rather than cashing it into a new state."
+    },
+    {
+      "finding_id": "LW03-003",
+      "category": "reading_momentum",
+      "subcategory": "late_arriving_new_pressure",
+      "severity": "HIGH",
+      "chapter_id": "chapter_08",
+      "related_chapter_ids": [
+        "chapter_05",
+        "chapter_07"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:1212; snapshots/cycle_02/FINAL_NOVEL.md:2106; snapshots/cycle_02/FINAL_NOVEL.md:2177; snapshots/cycle_02/FINAL_NOVEL.md:2305",
+      "problem": "The window's strongest genuinely new turn is the 'asset inside WISE' fragment, but chapter 8 does not reach it until after a long stretch of material that rereads as chapter-5 business in a larger room: petty-thought reception inventory, Anya sorting signal from noise, Damian doing parallel diplomatic work, and another recognition probe. Because chapter 7 has already supplied the bilateral-corruption exposition, the first two-thirds of chapter 8 feel like setup drift rather than escalation, and the window does not regain hard forward pull until line 2305.",
+      "rewrite_direction": "Either surface the mole pressure earlier in chapter 8 or cut/compress the repeated ballroom-processing beats so the chapter establishes its distinct threat quickly, before the recognition subplot and room comedy start to feel like a replay.",
+      "acceptance_test": "By the first third to first half of chapter 8, the reader has already encountered the chapter's unique irreversible pressure, rather than waiting until the late ballroom pass for the window's next major acceleration.",
+      "fix_owner_reason": "Chapter 8 owns the stall because it spends too much runway reorienting through already-familiar reception mechanics before delivering the window's freshest leverage."
+    }
+  ]
+}

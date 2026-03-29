@@ -1,0 +1,329 @@
+{
+  "acceptance_targets": [
+    "[R013] Ch3 contains no more than 3 references to the quartet.",
+    "[R027] Ch3 contains no more than 8 instances of 'something.'",
+    "[LW01-001] Reading chapters 2 and 3 back to back, the opening of chapter 3 should add new consequence immediately. A reader should not hear the three-draft history or the downgraded assessment substance restated before Sylvia's trust and the signed record change the situation.",
+    "[LW01-003] Across chapters 2-4, each chapter should feel functionally distinct on first read: discovery, institutional betrayal with a decisive leverage change, then alliance under threat. Chapter 3 should not leave the reader feeling they sat through a second long version of the same Damian-room dance before chapter 4 cashes it.",
+    "[LW01-004] By the time chapter 4 introduces Brandt, Gessler, and Bretz, a reader should already know which earlier terms matter, what kind of scheme they point to, and why those new names are a sharper escalation instead of just more ministry noise."
+  ],
+  "aggregation_applied": {
+    "decisions_file": "packets/cycle_03/aggregation_decisions.json",
+    "decisions_sha1": "5b1896d0d80c5b6ca52bc77fd008f267c508d6cc"
+  },
+  "chapter_id": "chapter_03",
+  "cycle": 3,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Ch3 contains no more than 3 references to the quartet.",
+      "chapter_id": "chapter_03",
+      "cycle": 3,
+      "evidence": "Ch3 quartet references at lines 1134, 1146, 1179, 1191, 1237, 1305, 1497, 1825, 1849 (9 instances); manuscript total: 26 instances across 5 chapters (Ch2:3, Ch3:9, Ch5:3, Ch8:4, Ch12:7)",
+      "finding_id": "R013",
+      "problem": "The word 'quartet' appears 26 times across 5 chapters. Ch3 accounts for 9 of these (35%). At 26 total, the target is keeping 4-6 instances. Ch3 can retain 2-3 (the initial arrival and one functional reference) and cut 6-7 instances.",
+      "rewrite_direction": "Reduce Ch3's quartet references from 9 to 2-3. Keep the Academy arrival reference (L1179) and one dialogue reference. Replace remaining instances with varied atmospheric detail or cut entirely where the quartet is background furniture.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch3 contains no more than 8 instances of 'something.'",
+      "chapter_id": "chapter_03",
+      "cycle": 3,
+      "evidence": "Ch3: 11 instances of 'something' in 6,821 prose words = 1 per 620 words; manuscript-wide: 141/102,891 = 1 per 730 words",
+      "finding_id": "R027",
+      "problem": "Ch3 has 11 instances of 'something' at 1 per 620 words, above the 1/800 threshold.",
+      "rewrite_direction": "Audit Ch3 for 'something' and replace with specifics. Target reducing from 11 to 8 or fewer.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Reading chapters 2 and 3 back to back, the opening of chapter 3 should add new consequence immediately. A reader should not hear the three-draft history or the downgraded assessment substance restated before Sylvia's trust and the signed record change the situation.",
+      "chapter_id": "chapter_03",
+      "cycle": 3,
+      "evidence": "snapshots/cycle_03/FINAL_NOVEL.md:955; snapshots/cycle_03/FINAL_NOVEL.md:961; snapshots/cycle_03/FINAL_NOVEL.md:967",
+      "finding_id": "LW01-001",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:955",
+            "excerpt": "955: Three versions of the report had existed last night. The first had been true and unusable: Damian Desmond running a quiet war inside Foreign Affairs, Renewal Front chatter sharper than WISE knew, too many lines pointing toward a real operation. The second had cut the telepathy out and still pointed too close to him. She had deleted that one too.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:961",
+            "excerpt": "961: \"The operative is a mid-level diplomat. Damian Desmond, yes, Donovan's son, but he's kept visible distance from the family's political apparatus.\" Anya opened the folder, though she knew every line already. \"His activity looks like internal party positioning. I don't read him as a direct security threat to Westalian interests.\"",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:967",
+            "excerpt": "967: \"The Renewal Front intelligence.\"",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          }
+        ],
+        "problem": [
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:834",
+            "excerpt": "834: The first version came out too fast because truth usually did when it had nowhere to go.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:854",
+            "excerpt": "854: A second version came out cleaner, smaller, safer.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:894",
+            "excerpt": "894: At last she began with the version that could survive questions.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:944",
+            "excerpt": "944: Tomorrow the lie would stop being a draft and become a record.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "pass_hint": "p1_structural_craft",
+      "problem": "Chapter 2 already dramatizes the full three-draft progression of Anya's false assessment, including the true version, the safer version, and the commitment that the lie becomes official tomorrow (`snapshots/cycle_03/FINAL_NOVEL.md:834`, `snapshots/cycle_03/FINAL_NOVEL.md:854`, `snapshots/cycle_03/FINAL_NOVEL.md:894`, `snapshots/cycle_03/FINAL_NOVEL.md:944`). Chapter 3 then reopens by restating that same three-version history and the same downgraded judgment before the genuinely new beat arrives, so the boundary reads like recap instead of acceleration.",
+      "rewrite_direction": "Start chapter 3 on the irreducibly new pressure: Sylvia's trust, the signature line, and the file entering the system. Assume the reader still remembers the drafting agony from the end of chapter 2, and keep only the minimum reminder needed to orient the office scene.",
+      "severity": "HIGH",
+      "source": "local_window",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Across chapters 2-4, each chapter should feel functionally distinct on first read: discovery, institutional betrayal with a decisive leverage change, then alliance under threat. Chapter 3 should not leave the reader feeling they sat through a second long version of the same Damian-room dance before chapter 4 cashes it.",
+      "chapter_id": "chapter_03",
+      "cycle": 3,
+      "evidence": "snapshots/cycle_03/FINAL_NOVEL.md:1179; snapshots/cycle_03/FINAL_NOVEL.md:1577; snapshots/cycle_03/FINAL_NOVEL.md:1775",
+      "finding_id": "LW01-003",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:1179",
+            "excerpt": "1179: The Ostanian Academy of Arts was bright, crowded, and blessedly smaller than the state dinner. Thoughts moved through the hall in manageable bands instead of storm fronts: complaints about funding, annoyance about the quartet, one man's desperate hope that the salmon puffs had not run out yet.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:1577",
+            "excerpt": "1577: \"This is a strange question,\" he said. \"Have we met before?\"",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:1775",
+            "excerpt": "1775: He rubbed a thumb once against the rim of the glass. \"There's a forum at the ministry on Thursday afternoon. Trade and cultural appropriations.\"",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          }
+        ],
+        "problem": [
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:392",
+            "excerpt": "392: The Ministry did state dinners the way it did everything else: with marble, chandeliers, and the steady suggestion that everyone present ought to feel honored. Warm gold light sat on the floor. White linens glowed under crystal. A quartet near the windows played a Baroque piece nobody cared about. Waiters moved through the room with champagne, wine, and a pale nonalcoholic drink nobody wanted. Ministry catering meant the food would look official and taste tired.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:694",
+            "excerpt": "694: It was Damian Desmond.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:752",
+            "excerpt": "752: Then the first edge of a name pushed up.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:1207",
+            "excerpt": "1207: Normal did not last. His gaze caught on her face a beat too long, moved to her hair, came back. The pause was tiny. Anya felt every second of it.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:1577",
+            "excerpt": "1577: \"This is a strange question,\" he said. \"Have we met before?\"",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:1803",
+            "excerpt": "1803: She gave him the official cultural attach\u00e9 address, the one WISE monitored, on a mission card. He read it once, entered it carefully, then slid the card into his inner pocket as if he did not trust himself to remember it later.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:1902",
+            "excerpt": "1902: The deputy minister had been murdering tariff reform for forty straight minutes when Brandt slid into the empty seat beside Damian and bent his head in a way that looked polite from a distance and predatory from where Anya sat. Most of the audience had the dead-eyed patience of people being held hostage by their own careers, and the abandoned translation headsets on the back table had already knotted themselves into a little plastic nest of surrender. Damian still had his diplomatic posture on, one ankle hooked back under the chair, folder balanced on one knee, but the line of his shoulders had gone half an inch stiffer the second Brandt sat down.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:2100",
+            "excerpt": "2100: \"There's a service corridor behind the east stairwell,\" he said softly. \"Five minutes.\"",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "pass_hint": "p1_structural_craft",
+      "problem": "As a cluster, chapters 2-4 keep assigning nearly the same narrative job to adjacent public-event scenes. Chapter 2 already gives the discovery version of 'Anya works an official room, reads Damian's hidden purpose, and leaves with a dangerous half-recognition' (`snapshots/cycle_03/FINAL_NOVEL.md:392`, `snapshots/cycle_03/FINAL_NOVEL.md:694`, `snapshots/cycle_03/FINAL_NOVEL.md:752`). Chapter 3 then spends its back half on another cultured-official room where Damian finds her familiar, Anya dodges, and the chapter ends with another paper/contact handoff (`snapshots/cycle_03/FINAL_NOVEL.md:1207`, `snapshots/cycle_03/FINAL_NOVEL.md:1577`, `snapshots/cycle_03/FINAL_NOVEL.md:1803`). Chapter 4 finally delivers the real alliance, but only after opening in yet another ministry event (`snapshots/cycle_03/FINAL_NOVEL.md:1902`, `snapshots/cycle_03/FINAL_NOVEL.md:2100`). In consecutive reading, chapter 3 feels like an intermediate variation on the same scene function rather than a chapter with its own distinct engine.",
+      "rewrite_direction": "Keep chapter 3's lie-signing material, then either compress the Academy reception sharply or repurpose it so the chapter does something the dinner and forum do not, such as forcing an immediate institutional cost of the false report or making the first contact operationally irreversible faster.",
+      "severity": "HIGH",
+      "source": "local_window",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "By the time chapter 4 introduces Brandt, Gessler, and Bretz, a reader should already know which earlier terms matter, what kind of scheme they point to, and why those new names are a sharper escalation instead of just more ministry noise.",
+      "chapter_id": "chapter_03",
+      "cross_chapter_context": "This finding is routed to Ch3; Ch2's fragment stack is outside Ch3's revision scope. Execute the Ch3-specific fix: use the Academy reception or its aftermath to cash at least one key bureaucratic fragment (April fourteen, the forum list, or the south route) into plain-language stakes, so the reader enters Ch4 with a clearer sense of what the machinery is building toward. Do not attempt to strip Ch2's fragments.",
+      "cycle": 3,
+      "evidence": "snapshots/cycle_03/FINAL_NOVEL.md:530; snapshots/cycle_03/FINAL_NOVEL.md:674; snapshots/cycle_03/FINAL_NOVEL.md:1498; snapshots/cycle_03/FINAL_NOVEL.md:2606",
+      "finding_id": "LW01-004",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:530",
+            "excerpt": "530: *You want an attendance list, go ask scheduling. You want April fourteen, ask someone else.*",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:674",
+            "excerpt": "674: *Need the forum list. Need the civilian names on the draft, not the cleaned copy.*",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:1498",
+            "excerpt": "1498:",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:2606",
+            "excerpt": "2606: *...Tuesday. Bretz. If Desmond turns up there too, Gessler gets the whole packet.*",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          }
+        ],
+        "problem": [
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:530",
+            "excerpt": "530: *You want an attendance list, go ask scheduling. You want April fourteen, ask someone else.*",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:560",
+            "excerpt": "560: *South route. Not checkpoint. Stop calling it the checkpoint where anyone can hear you.*",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:564",
+            "excerpt": "564: *He said forum, not committee. Forum. Why is he still on the forum?*",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:590",
+            "excerpt": "590: *Why is Donovan's son talking to Kleist's clerk?*",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:666",
+            "excerpt": "666: *Griesler first. Before month-end. If he panics and runs to committee, it stops being a review and starts being troops at the fence.*",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:674",
+            "excerpt": "674: *Need the forum list. Need the civilian names on the draft, not the cleaned copy.*",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:1498",
+            "excerpt": "1498:",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:1775",
+            "excerpt": "1775: He rubbed a thumb once against the rim of the glass. \"There's a forum at the ministry on Thursday afternoon. Trade and cultural appropriations.\"",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:1948",
+            "excerpt": "1948: *...take it upstairs tonight. Gessler will want the access log and every room Desmond's touched this week.*",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:2076",
+            "excerpt": "2076: *...Dreher first. Gessler after. Pull the access log. Check Kessler against the calendar. Then Desmond. Tuesday should be enough.*",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:2606",
+            "excerpt": "2606: *...Tuesday. Bretz. If Desmond turns up there too, Gessler gets the whole packet.*",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:2272",
+            "excerpt": "2272: \"My father left\u2014\" He stopped. Started again from a different angle. \"There's a standing procurement authorization that runs through the Defense Liaison Office. My father's signature is on the original. He's been dead for years and it's still disbursing because nobody in this building wants to be the person who admits the contract was never about border security.\" His hand came out of his pocket, made a vague gesture at the pipes, went back. \"The Front didn't build anything new. They moved into what was already running. That authorization. The committee seats at the Gesellschaft Club. Procurement desks that only exist because my family's name was on the appointment memo.\"",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "pass_hint": "p1_structural_craft",
+      "problem": "Chapter 2 asks the reader to track a stack of bureaucratic fragments before any one of them is ranked: April fourteen, forum list, south route, liaison allocation, Kleist, Griesler (`snapshots/cycle_03/FINAL_NOVEL.md:530`, `snapshots/cycle_03/FINAL_NOVEL.md:560`, `snapshots/cycle_03/FINAL_NOVEL.md:564`, `snapshots/cycle_03/FINAL_NOVEL.md:590`, `snapshots/cycle_03/FINAL_NOVEL.md:666`, `snapshots/cycle_03/FINAL_NOVEL.md:674`). Chapter 3 does not sort that load into plainer stakes; it moves into attraction and another invitation while Damian stays abstract about rooms being off-stage (`snapshots/cycle_03/FINAL_NOVEL.md:1498`, `snapshots/cycle_03/FINAL_NOVEL.md:1775`). Chapter 4 then adds Brandt, Gessler, Tuesday, and Bretz (`snapshots/cycle_03/FINAL_NOVEL.md:1948`, `snapshots/cycle_03/FINAL_NOVEL.md:2076`, `snapshots/cycle_03/FINAL_NOVEL.md:2606`) before the corridor finally translates what machine is actually running (`snapshots/cycle_03/FINAL_NOVEL.md:2272`). Read consecutively, the name stack starts to feel like noise instead of tightening leverage.",
+      "rewrite_direction": "Consolidate the fragment cloud earlier. Either strip chapter 2 down to the two or three names that matter inside this window, or use chapter 3 to cash one key fragment into plain-language stakes before chapter 4 adds new paper-trail names.",
+      "severity": "MEDIUM",
+      "source": "local_window",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "has_locator_excerpts": true,
+  "input_snapshot_hash": "dc0e278f2f855e565a0ad12e69cf8b5d19c75cbaa2fc49511d39ccbc9f8f8437",
+  "must_fix_count": 5,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness.",
+    "Audit every revised passage for hedge words ('something,' 'somehow,' 'seemed to,' 'a kind of,' 'almost'). Replace with specifics wherever the referent can be identified. Intentional vagueness is permitted only when a character is genuinely uncertain or a telepathic signal is genuinely fragmentary. The default must be precision, not approximation.",
+    "In any revised dialogue exchange of three or more volleys, ensure at least one moment of rhythmic imbalance: a line that lands wrong, a response at the wrong register, a silence where speech was expected, or a sentence the speaker visibly regrets starting. Do not produce perfectly weighted stichomythia where every line advances the theme at the same pace and length.",
+    "Once a chapter's dramatic climax has landed, close within 10-15 lines. Do not extend into narratorial meditation, moral processing, or enumeration of what the climax means. End on a physical detail, an unresolved image, or a single unprocessed sensation. The reader carries the meaning; the chapter's job is to leave them in the collision, not to summarize it."
+  ],
+  "original_snapshot_file": "snapshots/cycle_03/chapters/chapter_03.md",
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This novel's premise blends comedy, espionage action, and genuine emotional stakes. The creative risk is in honoring all three simultaneously without letting any one mode cannibalize the others. Do not soften the violence because the novel is funny. Do not suppress the comedy because the stakes are real. Do not retreat from Anya's moral complicity (she reads minds without consent and uses it to manipulate) because she is the protagonist and we like her. The hardest scenes to get right are the ones where comedy and pain coexist \u2014 a fight that is also funny, a confession that is also absurd, a family dinner where love and deception are the same meal. Lean into those moments rather than resolving them into one register. The novel's best material lives in the dissonance.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism at the point of consequence is a craft failure. When violence, fear, grief, or moral compromise demands scene presence, render it with specificity. A bruise should have a color. A death should have weight. A lie should have a cost the liar feels in their body. The exception is Anya's telepathic restraint \u2014 she sometimes cannot bear to fully articulate what she's reading in someone's mind, and this selective omission is a character choice, not authorial squeamishness.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for all characters in casual speech. Uncontracted forms reserved for emphasis, deliberate formality, or character-specific register choices (Sylvia's professional diction, Damian's diplomatic mode). In contemporary casual scenes, an unjustified full-form line should be flagged and checked.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 2
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "No two consecutive chapters should share the same structural rhythm. Alternate between dialogue-heavy scenes and interiority-heavy passages. Vary scene count: two-scene chapters (11, 16, 17 \u2014 compressed force) against multi-scene chapters (8, 15 \u2014 breadth and momentum). Shift between comic dominant and dramatic dominant across the middle of the book, with the comic register maintaining presence even in dramatic chapters through Anya's voice and the Forger family's inherent absurdity. The tonal shift at Chapter 13 is a deliberate gear change, not a gradual dimming \u2014 comedy should be fully alive in Chapter 12 and markedly reduced (not absent) in Chapter 13. The Chapter 13 POV shift to Damian is a structural event: the reader's relationship to information changes. The final act (14-17) maintains Anya's voice and the family's warmth as comic undertone, but the dominant mode is drama with consequences. Chapter 17's dinner scene reintroduces comedy through a register the novel has not previously accessed \u2014 Damian's self-conscious thought management around a known telepath \u2014 which only works because it follows sixteen chapters of oblivious thought-reading.",
+      "diction": "Contemporary and accessible, not literary-precious. The prose should have energy and forward drive. Humor comes from observation, character logic, and the gap between surface and interior \u2014 not from clever narration or authorial commentary. Let the funny things be funny without signposting them. Let the sad things sit without interpretation. The prose should be invisible when it needs to be and vivid when the scene demands it, but never decorative for its own sake.",
+      "forbidden_drift_patterns": [
+        "Narrator-as-comedian: the prose commenting on its own comedy, winking at the reader, or admiring a character's wit. The humor lives in the situation, not in the telling.",
+        "Telepathy-as-omniscience: Anya's mind-reading should feel like cognitive overload, not like a narrator's convenient access to exposition. She reads surface thoughts, not deep motivations, and the thoughts she catches should be fragmentary, mundane, and sometimes misleading.",
+        "Prestige-creep: the prose drifting toward solemn literary register when the scene's natural mode is comic, warm, or chaotic. This novel's emotional power comes from the coexistence of comedy and genuine feeling, not from the comedy yielding to seriousness.",
+        "Briefing-itis: scenes where characters explain plot to each other or to the reader. Information should emerge through action, observation, and telepathic fragments \u2014 not through expository dialogue formatted as conversation.",
+        "Combat-poetry: fight scenes that become lyrical or aesthetically admiring. Violence should be fast, specific, physically grounded, and over quickly. Yor's lethality is matter-of-fact; Anya's fighting is scrappier and less elegant.",
+        "Emotion-labeling: telling the reader what a character feels instead of rendering the feeling through thought, action, and physical detail. 'She felt sad' is always worse than the specific thing that makes the sadness legible."
+      ],
+      "narrative_distance": "Close third person, primarily Anya. Chapter 7 (Damian), Chapter 10 (Yor), the Damian POV section in Chapter 13, and Damian's thread in Chapter 15 shift to close third on their respective POV characters. The telepathy layer is unique to Anya's POV \u2014 when she is the viewpoint character, other characters' surface thoughts appear as italicized interjections woven into the prose. In non-Anya POV chapters, no telepathic content appears. The Chapter 13 Damian POV section is structurally critical: it gives the reader access to Damian's interior at a depth Anya's telepathy cannot reach, and it reveals that he has identified Anya \u2014 knowledge the reader carries into the final act while Anya does not. This dramatic irony reversal is the novel's strongest structural surprise and depends on the reader experiencing Damian's depths unmediated by Anya's telepathic filter.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Varied and responsive to scene pressure. Action sequences: short sentences, concrete verbs, sensory immediacy. Comic scenes: longer sentences that build to turns, pacing that allows beats to land. Quiet domestic scenes: relaxed rhythm with room for observation and texture. Telepathic interjections should disrupt prose rhythm the way intrusive thoughts disrupt concentration \u2014 not ornamentally but as genuine cognitive interference. Avoid metronomic sentence patterns in any mode.",
+      "sensory_bias": [
+        "visual surveillance \u2014 reading rooms, reading faces, the spy's hyperawareness of spatial arrangement and exit routes",
+        "auditory \u2014 overheard thoughts as a telepathic sixth sense layered over actual ambient sound",
+        "kinesthetic \u2014 action choreography, physical proximity, the body under stress or in intimacy",
+        "olfactory/gustatory \u2014 Yor's cooking, Berlint street food, the specific smell of institutional buildings and safe houses"
+      ]
+    }
+  }
+}

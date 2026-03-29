@@ -1,0 +1,186 @@
+{
+  "acceptance_targets": [
+    "[CH09_TELEPATHY_RANGE_BREAK] Pass if the revised opening through the replacement of snapshots/cycle_02/chapters/chapter_09.md:5-31 gives a cold reader a physically plausible moment when Anya is within telepathic range before she hears Damian or the attackers, or else withholds those thoughts until she closes the gap; fail if she is still described as a block and a half or roughly a hundred meters back while reading them.",
+    "[CH09_RECOGNITION_PAYOFF_STOPS_SHORT] Pass if the revised closing beat gives the reader an unmistakable near-name for Anya Forger in Damian's thought or half-spoken speech while still stopping short of full conscious identification; fail if the chapter still ends on only pink-hair/Eden/class-photo imagery without a sharper Anya-specific recognition fragment.",
+    "[CH09_TELEPATHY_BECOMES_OMNISCIENT] Pass if the revised kiss sequence gives Anya only surface-thought fragments, memory flashes, and sensory broadcasts a reader can plausibly believe she is overhearing in real time, and the imbalance is legible without lines equivalent to 'the layer he wasn't steering at all' or 'That was the worst part'; fail if Damian's deeper loneliness, hope, or self-concept is still summarized for the reader in omniscient prose.",
+    "[CH09_INTIMACY_CONSENT_WEIGHT] A reader can identify the exact moment the telepathic violation changes the physical quality of the kiss, not just Anya's internal narration about it. The sensory texture of lines after the recognition is distinguishable from lines before it.",
+    "[LW04-003] In Chapters 7 through 9, each recognition beat materially alters what Damian knows or how Anya must respond; the reader should not encounter three consecutive 'almost remembered' beats that all reset to uncertainty.",
+    "[length_chapter_09_min_words] Chapter word count is >= 5000 while preserving heading contract."
+  ],
+  "aggregation_applied": {
+    "decisions_file": "packets/cycle_02/aggregation_decisions.json",
+    "decisions_sha1": "95a1a6d74306227ded836a8c728f5d1dfabd115c"
+  },
+  "chapter_id": "chapter_09",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if the revised opening through the replacement of snapshots/cycle_02/chapters/chapter_09.md:5-31 gives a cold reader a physically plausible moment when Anya is within telepathic range before she hears Damian or the attackers, or else withholds those thoughts until she closes the gap; fail if she is still described as a block and a half or roughly a hundred meters back while reading them.",
+      "chapter_id": "chapter_09",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_09.md:5; snapshots/cycle_02/chapters/chapter_09.md:11; snapshots/cycle_02/chapters/chapter_09.md:17; snapshots/cycle_02/chapters/chapter_09.md:19",
+      "finding_id": "CH09_TELEPATHY_RANGE_BREAK",
+      "problem": "The ambush setup depends on Anya reading Damian and both attackers from far beyond the continuity sheet's established roughly twenty-meter telepathy radius. The chapter says she keeps Damian a block and a half ahead, then places him a hundred meters ahead while still giving her his thoughts and the attackers' coordination. That makes the rescue hinge on impossible information and turns the opening action beat into a causality break.",
+      "rewrite_direction": "Revise the surveillance-to-ambush sequence at snapshots/cycle_02/chapters/chapter_09.md:5, snapshots/cycle_02/chapters/chapter_09.md:9, snapshots/cycle_02/chapters/chapter_09.md:17, and snapshots/cycle_02/chapters/chapter_09.md:19 so Anya either closes to plausible telepathic range before she hears anything useful or notices the threat through ordinary surveillance first and only gets thought access once she is close. Preserve the two-assailant coordination and Damian's narrow escape, but make the warning source physically possible on the page.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if the revised closing beat gives the reader an unmistakable near-name for Anya Forger in Damian's thought or half-spoken speech while still stopping short of full conscious identification; fail if the chapter still ends on only pink-hair/Eden/class-photo imagery without a sharper Anya-specific recognition fragment.",
+      "chapter_id": "chapter_09",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_09.md:221; snapshots/cycle_02/chapters/chapter_09.md:225; snapshots/cycle_02/chapters/chapter_09.md:305; snapshots/cycle_02/chapters/chapter_09.md:307; snapshots/cycle_02/chapters/chapter_09.md:331; snapshots/cycle_02/chapters/chapter_09.md:337",
+      "finding_id": "CH09_RECOGNITION_PAYOFF_STOPS_SHORT",
+      "problem": "The chapter-context pack says chapter 9 should end with Damian at the edge of thinking Anya Forger by name, but the draft repeats the same Eden-memory cluster twice and never sharpens past a generic near-miss. 'That girl. Eden. That--' and the final 'missing name' loop keep the ending in the same recognition register the chapter already used earlier instead of delivering a new, chapter-defining escalation.",
+      "rewrite_direction": "Strengthen the recognition beat at snapshots/cycle_02/chapters/chapter_09.md:221, snapshots/cycle_02/chapters/chapter_09.md:225, snapshots/cycle_02/chapters/chapter_09.md:305, snapshots/cycle_02/chapters/chapter_09.md:307, and snapshots/cycle_02/chapters/chapter_09.md:331 so Damian reaches the threshold of Anya-specific naming without consciously locking the identification yet. Options are fine, but the revised beat needs a more explicit name-fragment, half-spoken recognition, or unmistakably Anya-targeted thought than the current generic childhood imagery provides.",
+      "severity": "MEDIUM",
+      "source": "award",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if the revised kiss sequence gives Anya only surface-thought fragments, memory flashes, and sensory broadcasts a reader can plausibly believe she is overhearing in real time, and the imbalance is legible without lines equivalent to 'the layer he wasn't steering at all' or 'That was the worst part'; fail if Damian's deeper loneliness, hope, or self-concept is still summarized for the reader in omniscient prose.",
+      "chapter_id": "chapter_09",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_09.md:295; snapshots/cycle_02/chapters/chapter_09.md:297; snapshots/cycle_02/chapters/chapter_09.md:299; snapshots/cycle_02/chapters/chapter_09.md:311; snapshots/cycle_02/chapters/chapter_09.md:313",
+      "finding_id": "CH09_TELEPATHY_BECOMES_OMNISCIENT",
+      "problem": "In the chapter's central intimacy passage, Anya stops reading surface thoughts and starts receiving a fully interpreted psychological dossier. The prose gives her access to 'the layer he wasn't steering at all' and then summarizes Damian's loneliness and hope in clean narrator language, which violates the style bible's ban on telepathy-as-omniscience. The scene then explains the ethical asymmetry in abstract terms after the unequal access is already visible, further flattening the beat.",
+      "rewrite_direction": "Rework the intimacy passage at snapshots/cycle_02/chapters/chapter_09.md:295, snapshots/cycle_02/chapters/chapter_09.md:297, snapshots/cycle_02/chapters/chapter_09.md:299, snapshots/cycle_02/chapters/chapter_09.md:311, and snapshots/cycle_02/chapters/chapter_09.md:313 so Damian's broadcast stays fragmentary, immediate, and plausibly surface-level in the moment. Keep Anya's moral compromise, but render it through what she actually overhears, what physical reaction it causes, and the fact that she keeps going, rather than through abstract diagnosis of his whole inner life or thesis language about what the scene means.",
+      "severity": "HIGH",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "A reader can identify the exact moment the telepathic violation changes the physical quality of the kiss, not just Anya's internal narration about it. The sensory texture of lines after the recognition is distinguishable from lines before it.",
+      "chapter_id": "chapter_09",
+      "cycle": 2,
+      "evidence": "At snapshots/cycle_02/FINAL_NOVEL.md:2670\u20132688; the kiss scene explicitly addresses the telepathic consent violation: 'Trying not to read his mind worked exactly as well as trying not to hear a radio in the next room' (2670). Fragments of Damian's loneliness and hope arrive: 'Loneliness; not curated; not social... The structural kind' (2672). Anya recognizes the violation: 'Not earned. Not given. Taken because she was built wrong for fairness' (2674). The passage culminates in: 'The worst part was that she knew the exchange wasn't even and wanted it badly enough to keep going. His private hope; his private hunger; the unguarded trust of a person kissing her because he thought he was arriving at her cleanly. Every second of it sat in her hands and none of it had been freely offered' (2688). All of this moral weight is delivered through internal narration. The physical texture of the kiss does not change at the moment the violation registers\u2014lines 2664\u20132668 (before recognition) and lines 2690\u20132702 (after recognition) share the same sensory temperature.; The kiss scene at snapshots/cycle_02/FINAL_NOVEL.md:2660\u20132712 is the novel's most concentrated exploration of what telepathy does to intimacy. Anya reads Damian's loneliness (2672); his childhood memory of Eden (2680\u20132684); and his hope that she is real (2672). Each fragment is morally loaded but the scene treats telepathic intimacy as normal intimacy with a guilt soundtrack rather than as a categorically different experience.",
+      "finding_id": "CH09_INTIMACY_CONSENT_WEIGHT",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:2670-2688",
+            "excerpt": "2670: Trying not to read his mind worked exactly as well as trying not to hear a radio in the next room.\n2671: \n2672: Fragments hit first. *Real. Her mouth. Don't stop. Want--* Under that, the layer he wasn't steering at all. Loneliness, not curated, not social, not the version a man could package into a self-deprecating anecdote. The structural kind. Dinner for one in an apartment still half boxed up. Meetings spent performing beliefs he hated. A surname heavy enough to bend a life around it. Under the loneliness came another thing, smaller and more dangerous. Hope. Stubborn. Defensive. The hope that she was real, that this was real, that he hadn't built the whole connection out of bad timing and a need he didn't like examining.\n2673: \n2674: All of it went through her in one rush. Not earned. Not given. Taken because she was built wrong for fairness.\n2675: \n[...]\n2683: \n2684: Pain spiked behind his wounded brow and the thought broke apart before it could lock.\n2685: \n2686: Anya heard even that much. Heard how close it was. Heard the recognition pushing at the edge of form and failing. Kept kissing him anyway.\n2687: \n2688: That was the worst part. Not the telepathy itself. Not the...",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:2660-2712",
+            "excerpt": "2660: The safe house light did nobody any favors. It showed the split in his brow, the blood dried at his jaw, the hair he'd shoved back too many times because he needed his hands to do anything except shake. It showed the same thing in reverse, probably: bruised ribs, shirt tugged down in a hurry, mouth still swollen from laughing and breathing too hard. Twenty years old. Nearly killed. Alone together in a room too cold to mistake for comfort.\n2661: \n2662: He leaned in. Anya stayed where she was.\n2663: \n2664: Careful at first. Mouth to mouth. Question in the pressure of it. His fingers touched the side of her face, cold from the room. Copper lingered where blood had gotten to his lip earlier. Under that there was only him, no diplomatic polish, no operational language, no cover story strong enough to stand between them and what was happening.\n2665: \n[...]\n2707: \n2708: Anya stayed very still.\n2709: \n2710: The bare bulb buzzed. His blood had dried brown at the edges of her nails from the butterfly strips. In her pocket, the folded note pressed against her thigh: `18:12 / west exit revision / WS-7`. The prepaid phone sat in the closet with its battery beside it, both of them waiting...",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "problem": "For a novel whose central engine is the ethics of telepathic intimacy, the pivotal kiss scene identifies the violation analytically rather than dramatizing it through the body. Anya's recognition that she is reading Damian's unguarded interior during an intimate moment is stated ('the worst part,' 'none of it had been freely offered') but the scene's physical experience does not shift when the recognition hits. The kiss continues at the same temperature before and after. The prose tells the reader what the violation means instead of letting the reader feel it change the kiss. A shortlist reader registers this as the novel's central argument being delivered as essay rather than as fiction.",
+      "rewrite_direction": "When Damian's loneliness/hope hits during the kiss, let the physical experience change on the page immediately: the kiss falters, touch becomes newly difficult, or Anya nearly pulls back because telepathic access has fused desire, information, and violation into a qualitatively different act. Keep the speculative strangeness, but make the bodily shift arrive before any analytical commentary.",
+      "severity": "MEDIUM",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "In Chapters 7 through 9, each recognition beat materially alters what Damian knows or how Anya must respond; the reader should not encounter three consecutive 'almost remembered' beats that all reset to uncertainty.",
+      "chapter_id": "chapter_09",
+      "cycle": 2,
+      "evidence": "Damian studies the Eden class photo and nearly retrieves Anya's name in Chapter 7, nearly resolves the same memory at the reception in Chapter 8, then in Chapter 9 tells the cleanup story, asks if she went to Eden, and still lands on another interrupted almost-recognition during the kiss. snapshots/cycle_02/FINAL_NOVEL.md:2068 snapshots/cycle_02/FINAL_NOVEL.md:2237 snapshots/cycle_02/FINAL_NOVEL.md:2600 snapshots/cycle_02/FINAL_NOVEL.md:2682",
+      "finding_id": "LW04-003",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:2068",
+            "excerpt": "2068: He knew he should remember her immediately. Becky anchored the row. The school festival program in the box anchored the year. The girl's face still snagged in him somewhere familiar, irritatingly familiar, and the name would not come.",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:2237",
+            "excerpt": "2237: Her name hovered at the edge of his mind, not in the thought yet, close enough to burn.",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:2600",
+            "excerpt": "2600: \"You ever go to Eden?\" he asked.",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:2682",
+            "excerpt": "2682: *That girl. Eden. That--*",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "pass_hint": "p1_structural_craft",
+      "problem": "Across three consecutive chapters, the same interpersonal dynamic repeats: Damian gets close to identifying Anya through the same Eden, pink-hair, and laugh cues, then the beat aborts. Chapter 9 changes the temperature, but it still withholds the same piece of leverage, so the recognition thread starts to feel prolonged rather than sharpened.",
+      "rewrite_direction": "Either remove one of the earlier near-miss beats or let Chapter 9 convert the pattern into a genuinely new state, such as a partial name, a concrete suspicion Damian acts on, or a visible change in how Anya has to manage him afterward.",
+      "severity": "HIGH",
+      "source": "local_window",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Chapter word count is >= 5000 while preserving heading contract.",
+      "chapter_id": "chapter_09",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_09.md:1",
+      "finding_id": "length_chapter_09_min_words",
+      "problem": "Chapter is below projected_min_words (4398 < 5000).",
+      "rewrite_direction": "Add causally necessary scene material that strengthens the chapter engine, increases pressure, and lands the planned state shift without filler.",
+      "severity": "HIGH",
+      "source": "length_guardrail",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "has_locator_excerpts": true,
+  "input_snapshot_hash": "7f0174d789ab6d5ea73cc2093b5d883f64769e8ff616200b4a5e2379abcd3c4d",
+  "must_fix_count": 6,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "original_snapshot_file": "snapshots/cycle_02/chapters/chapter_09.md",
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This novel's premise blends comedy, espionage action, and genuine emotional stakes. The creative risk is in honoring all three simultaneously without letting any one mode cannibalize the others. Do not soften the violence because the novel is funny. Do not suppress the comedy because the stakes are real. Do not retreat from Anya's moral complicity (she reads minds without consent and uses it to manipulate) because she is the protagonist and we like her. The hardest scenes to get right are the ones where comedy and pain coexist \u2014 a fight that is also funny, a confession that is also absurd, a family dinner where love and deception are the same meal. Lean into those moments rather than resolving them into one register. The novel's best material lives in the dissonance.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism at the point of consequence is a craft failure. When violence, fear, grief, or moral compromise demands scene presence, render it with specificity. A bruise should have a color. A death should have weight. A lie should have a cost the liar feels in their body. The exception is Anya's telepathic restraint \u2014 she sometimes cannot bear to fully articulate what she's reading in someone's mind, and this selective omission is a character choice, not authorial squeamishness.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for all characters in casual speech. Uncontracted forms reserved for emphasis, deliberate formality, or character-specific register choices (Sylvia's professional diction, Damian's diplomatic mode). In contemporary casual scenes, an unjustified full-form line should be flagged and checked.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 2
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "No two consecutive chapters should share the same structural rhythm. Alternate between dialogue-heavy scenes and interiority-heavy passages. Vary scene count: two-scene chapters (11, 16, 17 \u2014 compressed force) against multi-scene chapters (8, 15 \u2014 breadth and momentum). Shift between comic dominant and dramatic dominant across the middle of the book, with the comic register maintaining presence even in dramatic chapters through Anya's voice and the Forger family's inherent absurdity. The tonal shift at Chapter 13 is a deliberate gear change, not a gradual dimming \u2014 comedy should be fully alive in Chapter 12 and markedly reduced (not absent) in Chapter 13. The Chapter 13 POV shift to Damian is a structural event: the reader's relationship to information changes. The final act (14-17) maintains Anya's voice and the family's warmth as comic undertone, but the dominant mode is drama with consequences. Chapter 17's dinner scene reintroduces comedy through a register the novel has not previously accessed \u2014 Damian's self-conscious thought management around a known telepath \u2014 which only works because it follows sixteen chapters of oblivious thought-reading.",
+      "diction": "Contemporary and accessible, not literary-precious. The prose should have energy and forward drive. Humor comes from observation, character logic, and the gap between surface and interior \u2014 not from clever narration or authorial commentary. Let the funny things be funny without signposting them. Let the sad things sit without interpretation. The prose should be invisible when it needs to be and vivid when the scene demands it, but never decorative for its own sake.",
+      "forbidden_drift_patterns": [
+        "Narrator-as-comedian: the prose commenting on its own comedy, winking at the reader, or admiring a character's wit. The humor lives in the situation, not in the telling.",
+        "Telepathy-as-omniscience: Anya's mind-reading should feel like cognitive overload, not like a narrator's convenient access to exposition. She reads surface thoughts, not deep motivations, and the thoughts she catches should be fragmentary, mundane, and sometimes misleading.",
+        "Prestige-creep: the prose drifting toward solemn literary register when the scene's natural mode is comic, warm, or chaotic. This novel's emotional power comes from the coexistence of comedy and genuine feeling, not from the comedy yielding to seriousness.",
+        "Briefing-itis: scenes where characters explain plot to each other or to the reader. Information should emerge through action, observation, and telepathic fragments \u2014 not through expository dialogue formatted as conversation.",
+        "Combat-poetry: fight scenes that become lyrical or aesthetically admiring. Violence should be fast, specific, physically grounded, and over quickly. Yor's lethality is matter-of-fact; Anya's fighting is scrappier and less elegant.",
+        "Emotion-labeling: telling the reader what a character feels instead of rendering the feeling through thought, action, and physical detail. 'She felt sad' is always worse than the specific thing that makes the sadness legible."
+      ],
+      "narrative_distance": "Close third person, primarily Anya. Chapter 7 (Damian), Chapter 10 (Yor), the Damian POV section in Chapter 13, and Damian's thread in Chapter 15 shift to close third on their respective POV characters. The telepathy layer is unique to Anya's POV \u2014 when she is the viewpoint character, other characters' surface thoughts appear as italicized interjections woven into the prose. In non-Anya POV chapters, no telepathic content appears. The Chapter 13 Damian POV section is structurally critical: it gives the reader access to Damian's interior at a depth Anya's telepathy cannot reach, and it reveals that he has identified Anya \u2014 knowledge the reader carries into the final act while Anya does not. This dramatic irony reversal is the novel's strongest structural surprise and depends on the reader experiencing Damian's depths unmediated by Anya's telepathic filter.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Varied and responsive to scene pressure. Action sequences: short sentences, concrete verbs, sensory immediacy. Comic scenes: longer sentences that build to turns, pacing that allows beats to land. Quiet domestic scenes: relaxed rhythm with room for observation and texture. Telepathic interjections should disrupt prose rhythm the way intrusive thoughts disrupt concentration \u2014 not ornamentally but as genuine cognitive interference. Avoid metronomic sentence patterns in any mode.",
+      "sensory_bias": [
+        "visual surveillance \u2014 reading rooms, reading faces, the spy's hyperawareness of spatial arrangement and exit routes",
+        "auditory \u2014 overheard thoughts as a telepathic sixth sense layered over actual ambient sound",
+        "kinesthetic \u2014 action choreography, physical proximity, the body under stress or in intimacy",
+        "olfactory/gustatory \u2014 Yor's cooking, Berlint street food, the specific smell of institutional buildings and safe houses"
+      ]
+    }
+  }
+}

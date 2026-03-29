@@ -1,0 +1,1892 @@
+{
+  "chapters": {
+    "chapter_01": {
+      "p1_structural_craft": [
+        {
+          "acceptance_test": "Ch1 contains no more than 6 instances of 'something.'",
+          "finding_id": "R024",
+          "pass_key": "p1_structural_craft",
+          "problem": "Ch1 has 10 instances of 'something' at a rate of 1 per 539 words, above the 1/800 threshold. As the opening chapter, hedge-word density here sets a vague tonal precedent.",
+          "rewrite_direction": "Audit Ch1 for 'something' and replace with specifics. Target reducing from 10 to 6 or fewer.",
+          "severity": "MEDIUM",
+          "source": "cross_chapter"
+        },
+        {
+          "acceptance_test": "Chapter word count is >= 5500 while preserving heading contract.",
+          "finding_id": "length_chapter_01_min_words",
+          "pass_key": "p1_structural_craft",
+          "problem": "Chapter is below projected_min_words (5392 < 5500).",
+          "rewrite_direction": "Add causally necessary scene material that strengthens the chapter engine, increases pressure, and lands the planned state shift without filler.",
+          "severity": "HIGH",
+          "source": "length_guardrail"
+        }
+      ]
+    },
+    "chapter_02": {
+      "p1_structural_craft": [
+        {
+          "acceptance_test": "The Ch1-to-Ch2 transition does not present two full Berlint-at-dusk-with-leaves atmospheric descriptions in immediate succession.",
+          "finding_id": "R008",
+          "pass_key": "p1_structural_craft",
+          "problem": "Ch1 ending and Ch2 opening both describe Berlint at dusk in autumn with leaves on the ground. These are consecutive chapters \u2014 the reader encounters the same cityscape motif twice in immediate succession. Both passages include evening light quality, autumn atmosphere, and leaves on pavement.",
+          "rewrite_direction": "Thin the Ch1 ending cityscape (L341) to one transitional line, since Ch2 opens with the same motif within 20 lines of reading. Alternatively, cut the Berlint-at-dusk framing from Ch2 L370 and enter the Ministry scene directly from the car.",
+          "severity": "MEDIUM",
+          "source": "cross_chapter"
+        }
+      ]
+    },
+    "chapter_03": {
+      "p1_structural_craft": [
+        {
+          "acceptance_test": "Ch3 contains no more than 3 references to the quartet.",
+          "finding_id": "R013",
+          "pass_key": "p1_structural_craft",
+          "problem": "The word 'quartet' appears 26 times across 5 chapters. Ch3 accounts for 9 of these (35%). At 26 total, the target is keeping 4-6 instances. Ch3 can retain 2-3 (the initial arrival and one functional reference) and cut 6-7 instances.",
+          "rewrite_direction": "Reduce Ch3's quartet references from 9 to 2-3. Keep the Academy arrival reference (L1179) and one dialogue reference. Replace remaining instances with varied atmospheric detail or cut entirely where the quartet is background furniture.",
+          "severity": "MEDIUM",
+          "source": "cross_chapter"
+        },
+        {
+          "acceptance_test": "Ch3 contains no more than 8 instances of 'something.'",
+          "finding_id": "R027",
+          "pass_key": "p1_structural_craft",
+          "problem": "Ch3 has 11 instances of 'something' at 1 per 620 words, above the 1/800 threshold.",
+          "rewrite_direction": "Audit Ch3 for 'something' and replace with specifics. Target reducing from 11 to 8 or fewer.",
+          "severity": "MEDIUM",
+          "source": "cross_chapter"
+        },
+        {
+          "acceptance_test": "Reading chapters 2 and 3 back to back, the opening of chapter 3 should add new consequence immediately. A reader should not hear the three-draft history or the downgraded assessment substance restated before Sylvia's trust and the signed record change the situation.",
+          "counterpart_excerpt": "961: \"The operative is a mid-level diplomat. Damian Desmond, yes, Donovan's son, but he's kept visible distance from the family's political apparatus.\" Anya opened the folder, though she knew every line already. \"His activity looks like internal party positioning. I don't read him as a direct security threat to Westalian interests.\"",
+          "finding_id": "LW01-001",
+          "locator_excerpt": "955: Three versions of the report had existed last night. The first had been true and unusable: Damian Desmond running a quiet war inside Foreign Affairs, Renewal Front chatter sharper than WISE knew, too many lines pointing toward a real operation. The second had cut the telepathy out and still pointed too close to him. She had deleted that one too.",
+          "pass_key": "p1_structural_craft",
+          "problem": "Chapter 2 already dramatizes the full three-draft progression of Anya's false assessment, including the true version, the safer version, and the commitment that the lie becomes official tomorrow (`snapshots/cycle_03/FINAL_NOVEL.md:834`, `snapshots/cycle_03/FINAL_NOVEL.md:854`, `snapshots/cycle_03/FINAL_NOVEL.md:894`, `snapshots/cycle_03/FINAL_NOVEL.md:944`). Chapter 3 then reopens by restating that same three-version history and the same downgraded judgment before the genuinely new beat arrives, so the boundary reads like recap instead of acceleration.",
+          "rewrite_direction": "Start chapter 3 on the irreducibly new pressure: Sylvia's trust, the signature line, and the file entering the system. Assume the reader still remembers the drafting agony from the end of chapter 2, and keep only the minimum reminder needed to orient the office scene.",
+          "severity": "HIGH",
+          "source": "local_window"
+        },
+        {
+          "acceptance_test": "Across chapters 2-4, each chapter should feel functionally distinct on first read: discovery, institutional betrayal with a decisive leverage change, then alliance under threat. Chapter 3 should not leave the reader feeling they sat through a second long version of the same Damian-room dance before chapter 4 cashes it.",
+          "counterpart_excerpt": "1577: \"This is a strange question,\" he said. \"Have we met before?\"",
+          "finding_id": "LW01-003",
+          "locator_excerpt": "1179: The Ostanian Academy of Arts was bright, crowded, and blessedly smaller than the state dinner. Thoughts moved through the hall in manageable bands instead of storm fronts: complaints about funding, annoyance about the quartet, one man's desperate hope that the salmon puffs had not run out yet.",
+          "pass_key": "p1_structural_craft",
+          "problem": "As a cluster, chapters 2-4 keep assigning nearly the same narrative job to adjacent public-event scenes. Chapter 2 already gives the discovery version of 'Anya works an official room, reads Damian's hidden purpose, and leaves with a dangerous half-recognition' (`snapshots/cycle_03/FINAL_NOVEL.md:392`, `snapshots/cycle_03/FINAL_NOVEL.md:694`, `snapshots/cycle_03/FINAL_NOVEL.md:752`). Chapter 3 then spends its back half on another cultured-official room where Damian finds her familiar, Anya dodges, and the chapter ends with another paper/contact handoff (`snapshots/cycle_03/FINAL_NOVEL.md:1207`, `snapshots/cycle_03/FINAL_NOVEL.md:1577`, `snapshots/cycle_03/FINAL_NOVEL.md:1803`). Chapter 4 finally delivers the real alliance, but only after opening in yet another ministry event (`snapshots/cycle_03/FINAL_NOVEL.md:1902`, `snapshots/cycle_03/FINAL_NOVEL.md:2100`). In consecutive reading, chapter 3 feels like an intermediate variation on the same scene function rather than a chapter with its own distinct engine.",
+          "rewrite_direction": "Keep chapter 3's lie-signing material, then either compress the Academy reception sharply or repurpose it so the chapter does something the dinner and forum do not, such as forcing an immediate institutional cost of the false report or making the first contact operationally irreversible faster.",
+          "severity": "HIGH",
+          "source": "local_window"
+        },
+        {
+          "acceptance_test": "By the time chapter 4 introduces Brandt, Gessler, and Bretz, a reader should already know which earlier terms matter, what kind of scheme they point to, and why those new names are a sharper escalation instead of just more ministry noise.",
+          "counterpart_excerpt": "674: *Need the forum list. Need the civilian names on the draft, not the cleaned copy.*",
+          "finding_id": "LW01-004",
+          "locator_excerpt": "530: *You want an attendance list, go ask scheduling. You want April fourteen, ask someone else.*",
+          "pass_key": "p1_structural_craft",
+          "problem": "Chapter 2 asks the reader to track a stack of bureaucratic fragments before any one of them is ranked: April fourteen, forum list, south route, liaison allocation, Kleist, Griesler (`snapshots/cycle_03/FINAL_NOVEL.md:530`, `snapshots/cycle_03/FINAL_NOVEL.md:560`, `snapshots/cycle_03/FINAL_NOVEL.md:564`, `snapshots/cycle_03/FINAL_NOVEL.md:590`, `snapshots/cycle_03/FINAL_NOVEL.md:666`, `snapshots/cycle_03/FINAL_NOVEL.md:674`). Chapter 3 does not sort that load into plainer stakes; it moves into attraction and another invitation while Damian stays abstract about rooms being off-stage (`snapshots/cycle_03/FINAL_NOVEL.md:1498`, `snapshots/cycle_03/FINAL_NOVEL.md:1775`). Chapter 4 then adds Brandt, Gessler, Tuesday, and Bretz (`snapshots/cycle_03/FINAL_NOVEL.md:1948`, `snapshots/cycle_03/FINAL_NOVEL.md:2076`, `snapshots/cycle_03/FINAL_NOVEL.md:2606`) before the corridor finally translates what machine is actually running (`snapshots/cycle_03/FINAL_NOVEL.md:2272`). Read consecutively, the name stack starts to feel like noise instead of tightening leverage.",
+          "rewrite_direction": "Consolidate the fragment cloud earlier. Either strip chapter 2 down to the two or three names that matter inside this window, or use chapter 3 to cash one key fragment into plain-language stakes before chapter 4 adds new paper-trail names.",
+          "severity": "MEDIUM",
+          "source": "local_window"
+        }
+      ]
+    },
+    "chapter_04": {
+      "p1_structural_craft": [
+        {
+          "acceptance_test": "Pass if the revised corridor negotiation contains at least two exchanges where the speakers are rhythmically unbalanced -- one overexplaining, one underresponding, or a line landing wrong and being corrected. Fail if the alliance terms still emerge through evenly weighted stichomythia.",
+          "counterpart_excerpt": "2484: \"Work,\" she said.",
+          "finding_id": "COMPOSED_CH04",
+          "locator_excerpt": "2316: \"What do you want?\" he asked.",
+          "pass_key": "p1_structural_craft",
+          "problem": "The service-corridor alliance negotiation produces perfectly balanced exchanges: 'Shared intelligence. Limited. Specific.' / 'You say that as if we're already on the same side.' / 'We're both in this hallway. That's all I'm saying.' Each line is precisely the right length and weight for its dramatic position. Two people who have just been forced into a dangerous corridor meeting after barely three encounters would produce messier, less balanced dialogue -- more false starts, more tactical hedging, more sentences that don't land where the speaker intended.",
+          "rewrite_direction": "Revise snapshots/cycle_03/FINAL_NOVEL.md:2316-2400. Break the stichomythic balance in the alliance negotiation. Let one character (likely Damian) overexplain his position while the other responds with silence or a non-sequitur. Let the terms emerge through awkward negotiation rather than through balanced volley. At least two exchanges in this span should sound like people who do not yet trust each other trying to build terms on the fly, not like writers who have already agreed on the scene's thematic conclusion.",
+          "severity": "MEDIUM",
+          "source": "award_global"
+        },
+        {
+          "acceptance_test": "Ch4 contains no more than 2 references to fluorescent light.",
+          "finding_id": "R016",
+          "pass_key": "p1_structural_craft",
+          "problem": "The word 'fluorescent' appears 18 times across 9 chapters. Ch4 is the densest with 4 instances. For 10-20 occurrences, the target is 4-6 retained instances manuscript-wide. Ch4 can retain 1-2 and cut 2-3 to bring the total below the keep-range ceiling.",
+          "rewrite_direction": "Reduce Ch4's fluorescent references from 4 to 1-2. Keep the strongest atmospheric instance. Replace others with varied institutional lighting descriptors (overhead, strip, white, buzzing).",
+          "severity": "MEDIUM",
+          "source": "cross_chapter"
+        },
+        {
+          "acceptance_test": "Ch4 contains at most one jaw-tightening gesture for Damian.",
+          "finding_id": "R017",
+          "pass_key": "p1_structural_craft",
+          "problem": "Damian's jaw-tightening/flexing/working is used 3 times within Ch4 alone and 7 times across 4 chapters (Ch3, Ch4, Ch15, Ch17). The gesture has become a default tension indicator for this character. Ch4's concentration of 3 instances in one chapter is the worst local cluster.",
+          "rewrite_direction": "Keep one jaw-tightening in Ch4 (L2490 is the most dramatically weighted). Cut or replace L2162 and L2276 with varied tension indicators (hands, posture, silence, breath).",
+          "severity": "MEDIUM",
+          "source": "cross_chapter"
+        },
+        {
+          "acceptance_test": "Ch4 contains at most one cheek-biting instance.",
+          "finding_id": "R019",
+          "pass_key": "p1_structural_craft",
+          "problem": "Anya biting the inside of her cheek appears 5 times across 4 chapters (Ch1, Ch4, Ch12, Ch17), with Ch4 containing two instances. The 'hard enough to [physical consequence]' construction appears in 3 of 5 instances. The gesture serves the same dramatic function each time (suppressing a visible reaction).",
+          "rewrite_direction": "Cut one of Ch4's two cheek-biting instances (L2568 is the most expendable since L2210 is closer to the moment of reaction). If the 'hard enough to' construction is kept anywhere, vary the physical consequence.",
+          "severity": "MEDIUM",
+          "source": "cross_chapter"
+        },
+        {
+          "acceptance_test": "Ch4 contains no more than 9 instances of 'something.'",
+          "finding_id": "R023",
+          "pass_key": "p1_structural_craft",
+          "problem": "Ch4 has the highest absolute count (17 instances) of 'something' at a rate of 1 per 458 words. This is the novel's longest sustained Anya-Damian interaction chapter and the hedge word weakens the precision of their exchanges.",
+          "rewrite_direction": "Audit Ch4 for 'something' and replace with specifics. Target reducing from 17 to 9 or fewer.",
+          "severity": "MEDIUM",
+          "source": "cross_chapter"
+        },
+        {
+          "acceptance_test": "Within the first paragraph of chapter 4, a consecutive reader can tell exactly how much time has passed since Damian's invitation, whether any contact occurred in the skipped days, and whether the scene is cashing the same forum promised in chapter 3 or a different one.",
+          "counterpart_excerpt": "1775: He rubbed a thumb once against the rim of the glass. \"There's a forum at the ministry on Thursday afternoon. Trade and cultural appropriations.\"",
+          "finding_id": "LW01-002",
+          "locator_excerpt": "1898: Eight days after Damian walked out of the arts reception with the Westalian mission address in his pocket, Anya was back in the Foreign Affairs Ministry under another name. Tonight the badge on her jacket said ANNA KESSLER, because this room liked full names and department lines and last names that matched the guest list. A week ago he'd gotten Anya, easy and informal, because the cultural exchange people treated first names like a policy instrument. The state dinner had been a third card for a third room. If anybody from either government ever laid the badges side by side, they'd stop laughing at the bureaucracy and start asking harder questions.",
+          "pass_key": "p1_structural_craft",
+          "problem": "Chapter 3 frames the ministry forum as the next concrete step: Damian invites her to 'a forum at the ministry on Thursday afternoon' and promises to send details tomorrow (`snapshots/cycle_03/FINAL_NOVEL.md:1775`, `snapshots/cycle_03/FINAL_NOVEL.md:1797`), then the chapter closes by telling the reader there will be a ministry forum in her inbox by tomorrow (`snapshots/cycle_03/FINAL_NOVEL.md:1891`). Chapter 4 opens eight days after the reception without clarifying whether this is that same forum, a delayed version of it, or a later contact point, so the reader has to stop and reconstruct the calendar at the boundary.",
+          "rewrite_direction": "Anchor the opening of chapter 4 to the prior invitation in plain language. If this is the same forum, say the event was scheduled for the following week; if it is not, say what happened to the first invitation and why the gap matters.",
+          "severity": "MEDIUM",
+          "source": "local_window"
+        },
+        {
+          "acceptance_test": "After reading chapter 3, the reader should not need chapter 4 to restate the entire 'false report bought access' logic; the later passage should add a fresh consequence tied to Brandt, Gessler, or the new paper trail.",
+          "counterpart_excerpt": "2749: The alliance existed because she had falsified Damian downward in WISE's system. That wasn't an emotional distinction. It was operational fact. If she'd written the true report, Sylvia would have escalated him, somebody more senior and cleaner would have taken the contact question away from her, and tonight she would not have been free to improvise in a ministry forum under a diplomatic badge. She had bought herself room with institutional fraud and then spent the room on him.",
+          "finding_id": "LW02-001",
+          "locator_excerpt": "1881: She had blown past the twenty-minute mark, let the recognition question live, and accepted a second meeting in a ministry room because he offered it and because she wanted it. The lie to Sylvia had bought her room. She had used all of it and already started spending tomorrow's.",
+          "pass_key": "p1_structural_craft",
+          "problem": "Read back-to-back, the reader is told twice at near-full weight that the false report created the opening with Damian. The later passage does not materially change the meaning of the earlier one, so the cluster pauses to re-explain a point the boundary has already made legible.",
+          "rewrite_direction": "Keep the later recap focused on what is newly dangerous after the forum and the Tuesday note, rather than replaying the full explanation that the lie enabled contact in the first place.",
+          "severity": "MEDIUM",
+          "source": "local_window"
+        }
+      ]
+    },
+    "chapter_05": {
+      "p1_structural_craft": [
+        {
+          "acceptance_test": "Pass if the revised car banter at snapshots/cycle_03/FINAL_NOVEL.md:2888-2900 contains at least one exchange that misfires, trails off, or arrives at its meaning sideways rather than through a clean punchline. Fail if every line still lands with equal rhythmic weight.",
+          "counterpart_excerpt": "2892: \"Say I listen well.\"",
+          "finding_id": "COMPOSED_CH05",
+          "locator_excerpt": "2888: \"And if she asks what I like about you.\"",
+          "pass_key": "p1_structural_craft",
+          "problem": "The couple-cover banter in the parked car produces mic-drop exchanges: 'And if she asks what I like about you' / 'Say I listen well' / 'Do you' / 'Publicly, yes' -- then -- 'That's kind of sad' / 'Sad works. Nobody remembers sad.' Every line lands. Every beat is the right weight. The exchange reads as scripted romantic-comedy dialogue rather than two nervous operatives constructing a cover story under time pressure. The aphoristic closer ('Nobody remembers sad') converts genuine tension into a quotable line.",
+          "rewrite_direction": "Revise snapshots/cycle_03/FINAL_NOVEL.md:2888-2900. Roughen the cover-story banter by letting at least one exchange miss its mark. Options: Damian gives a cover-story answer that is too honest and has to walk it back; Anya starts a joke that falls flat because the tension is too high; the 'Nobody remembers sad' line is replaced by something less aphoristic -- a trailing-off, a subject change, or a silence that communicates the same idea without packaging it. Let the humor feel like it is escaping from pressure rather than performing for the reader.",
+          "severity": "MEDIUM",
+          "source": "award_global"
+        },
+        {
+          "acceptance_test": "By the time they cross the club threshold, the reader should know what Damian understands about Brandt's three-coincidence read and why he still judges Bretz worth the exposure.",
+          "counterpart_excerpt": "2606: *...Tuesday. Bretz. If Desmond turns up there too, Gessler gets the whole packet.*",
+          "finding_id": "LW02-002",
+          "locator_excerpt": "2600: *...Kessler. Westalian mission. Check whether she was at the gallery. Check whether she was at dinner. Desmond doesn't get three coincidences.*",
+          "pass_key": "p1_structural_craft",
+          "problem": "The boundary hides whether Anya handed Damian the most important thing she learned at the end of chapter 4: tonight would complete Brandt's pattern case. Because chapter 5 immediately spends that risk by having them arrive as a couple, the reader is left unsure whether Damian is choosing the danger knowingly or on partial information.",
+          "rewrite_direction": "Before they enter the club, add one clean handoff beat that states whether Anya told Damian the exact 'whole packet' risk, or explicitly show that she withheld it and knows she is pushing him with incomplete intelligence.",
+          "severity": "HIGH",
+          "source": "local_window"
+        },
+        {
+          "acceptance_test": "The private coda in chapter 5 should not leave the pair in essentially the same probe-evasion posture that closed chapters 3 and 4; it should produce a new asymmetry, leverage change, or disclosure the reader can point to.",
+          "counterpart_excerpt": "1731: \"You answered that too quickly.\"",
+          "finding_id": "LW02-003",
+          "locator_excerpt": "1577: \"This is a strange question,\" he said. \"Have we met before?\"",
+          "pass_key": "p1_structural_craft",
+          "problem": "Across three consecutive chapters, the interpersonal engine keeps resolving to the same shape: Damian probes, Anya dodges, both retreat into warmer banter, and the truth stays deferred. The plot stakes escalate, but the local reading experience starts to feel like successive versions of the same near-confession.",
+          "rewrite_direction": "Use the chapter 5 aftermath to change the terms instead of replaying them. Let the first joint operation buy a concrete shift: one disclosed fact, one explicit rule change, or one operational disagreement that could not have happened at the gallery or in the chapter 4 corridor.",
+          "severity": "HIGH",
+          "source": "local_window"
+        }
+      ],
+      "p3_prose_copyedit": [
+        {
+          "acceptance_test": "Across chapters 3-5, this pair should not recycle the same correction formula more than once; later scenes need fresh sentence shapes and different pressure responses that a reader can distinguish at a glance.",
+          "counterpart_excerpt": "1743: \"No, that's accurate.\"",
+          "finding_id": "LW02-004",
+          "locator_excerpt": "1711: \"It's accurate.\"",
+          "pass_key": "p3_prose_copyedit",
+          "problem": "Because the same rebuttal formulas keep surfacing across adjacent chapters, Anya and Damian's banter starts sounding generated from one reusable template instead of reflecting a relationship that is changing under new pressure.",
+          "rewrite_direction": "In chapter 5 especially, replace the familiar 'not an answer' and 'accurate' returns with dialogue that grows out of the couple cover, Kaiser, Bretz, and the now-explicit alliance rather than the earlier gallery sparring pattern.",
+          "severity": "MEDIUM",
+          "source": "local_window"
+        }
+      ]
+    },
+    "chapter_06": {
+      "p1_structural_craft": [
+        {
+          "acceptance_test": "The phrase 'reading glasses on the chain' or synonymous phrasing does not appear in Ch6.",
+          "finding_id": "R001",
+          "pass_key": "p1_structural_craft",
+          "problem": "Sylvia's 'reading glasses on the chain' is established as a distinguishing physical detail in Ch1 L161. Ch6 L3810 re-states the exact same phrase in Anya's mental image during a phone call. The reader already carries this detail from Ch1.",
+          "rewrite_direction": "Cut or replace the glasses-on-chain detail at L3810. Anya's mental image of Sylvia can invoke posture, voice quality, or the desk itself rather than repeating the Ch1 physical tag.",
+          "severity": "MEDIUM",
+          "source": "cross_chapter"
+        },
+        {
+          "acceptance_test": "Ch6 does not re-state 'reading glasses folded' or synonymous phrasing of the Ch1 detail.",
+          "finding_id": "R002",
+          "pass_key": "p1_structural_craft",
+          "problem": "Loid's 'reading glasses folded' is introduced as a specific character tag in Ch1 L223. Ch6 L3610 repeats the same prop in nearly identical construction ('reading glasses sat folded'). This is the first of three manuscript repetitions of this construction.",
+          "rewrite_direction": "In the apartment inventory at L3610, fold the reading-glasses detail into the annotation system description without re-naming them as 'reading glasses,' or replace with a different Loid-specific domestic prop.",
+          "severity": "MEDIUM",
+          "source": "cross_chapter"
+        },
+        {
+          "acceptance_test": "Within the opening scene of chapter 6, the reader should learn how the Hartig lead and Damian's recognition are now altering Anya's next move, before Bond, Yor, and Sylvia each open a separate new front.",
+          "counterpart_excerpt": "3571: This time it had a whole memory attached to it.",
+          "finding_id": "LW02-005",
+          "locator_excerpt": "3567: She pulled her shoes back on and they walked to the car without talking. They had Hartig's name now. They had the channel. The lead sat under everything else, ugly and unfinished. They had a dinner invitation Damian would rather fake his own death than accept. Her laughter was still in the air between them, but now it wasn't only the laugh. It was the relay, the tree, the ridiculous socks, the whole autumn afternoon that had finally made it out of hiding.",
+          "pass_key": "p1_structural_craft",
+          "problem": "The new material in chapter 6 is individually live, but at this boundary it reads as a thread swap instead of accumulation. The chapter widens into three new pressure systems before showing what the Hartig lead or Damian's near-recognition changed overnight, so the local run loses the focused acceleration chapters 3-5 just built.",
+          "rewrite_direction": "Give the opening movement of chapter 6 one concrete carryover beat from chapter 5 before the family expansion: a pending message to Damian, a decision about Hartig, or a sharper sign that Damian's recognition changed Anya's behavior that day.",
+          "severity": "HIGH",
+          "source": "local_window"
+        }
+      ]
+    },
+    "chapter_07": {
+      "p1_structural_craft": [
+        {
+          "acceptance_test": "Pass if the chapter ending at snapshots/cycle_03/FINAL_NOVEL.md:4291-4319 closes within 10 lines of the photo's appearance without extended meditation on its significance. Fail if Damian's interior monologue still paraphrases the recognition theme the novel has already established.",
+          "counterpart_excerpt": "4315: He sat with the photograph longer than he meant to. The apartment had gone dark around the edges. Streetlight reached through the window and laid a dim amber wash across the hallway floor. If the stain on the back had spared one more letter, maybe he would have had the name. Maybe not. The girl in the photograph kept grinning at some private joke now ten years dead, and Damian sat there with the box open beside him, a contract number in his head, Thursday waiting for him, and a childhood name he could not honestly claim to have recovered.",
+          "finding_id": "SPRAWL_CH07",
+          "locator_excerpt": "4291: Damian stood with the receiver in his hand until the dial tone flattened out. Then he set it down, opened the hall closet, and pulled the cardboard box from the top shelf.",
+          "pass_key": "p1_structural_craft",
+          "problem": "After the Grosz apartment scene delivers its payload (the cross-border intelligence sale, the Maintenance Continuity Annex, the phone call to Donovan), the chapter extends another 25+ lines into Damian's discovery of the Eden class photo and his meditative attempt to place the pink-haired girl. The photo discovery restates the identity-confusion theme already established through five chapters of near-recognition without introducing new dramatic cost or irreversible action.",
+          "rewrite_direction": "Revise snapshots/cycle_03/FINAL_NOVEL.md:4291-4319. Cut or compress the school-photo coda to no more than 5-8 lines. The photo can appear as a brief, unresolved image -- the pink hair, the crooked tie, and then the chapter ends on the fact that the name is water-damaged and illegible. Do not let Damian meditate on the connection. Let the image sit.",
+          "severity": "HIGH",
+          "source": "award_global"
+        }
+      ]
+    },
+    "chapter_08": {
+      "p1_structural_craft": [
+        {
+          "acceptance_test": "Ch8's opening does not re-explain that telepathy is constant/unwanted and does not deploy the headache-behind-the-eye template a third time.",
+          "finding_id": "R005",
+          "pass_key": "p1_structural_craft",
+          "problem": "Ch8 opens with two telepathy-burden re-statements. L4332 re-explains that telepathy is constant and unwanted (established Ch1 L17). L4435 deploys the headache-at-reception template for the third time (after Ch1 L111 and Ch2 L394). Both deliver information the reader already carries. The radio-under-ribs metaphor at L4332 is fresh but the payload is redundant.",
+          "rewrite_direction": "Cut the explanatory re-statement at L4332. Trust the reader to carry the Ch1 establishment. At L4435, enter the reception through the specific crowd-noise content rather than re-proving that crowds give Anya headaches. Vary or cut the headache onset if the Ch2 version (pressure behind eye) already covers it.",
+          "severity": "MEDIUM",
+          "source": "cross_chapter"
+        },
+        {
+          "acceptance_test": "Ch8's venue arrival does not re-inventory warm-toned light, crystal, and quartet as a descriptive set.",
+          "finding_id": "R006",
+          "pass_key": "p1_structural_craft",
+          "problem": "The Concordia reception at Ch8 L4407 is the fourth reception-venue arrival in eight chapters and closely parallels Ch2's Ministry ballroom: warm-toned light + crystal + quartet + crowd indifference. The descriptive template (warm light, crystal, quartet nobody appreciates) has been used at Ch2 (Ministry), Ch3 (Academy), Ch5 (Gesellschaft Club), and now Ch8.",
+          "rewrite_direction": "Enter the Concordia through what is operationally different: the exits, the SSS positioning, the target configuration. Cut or compress the warm-light/crystal/quartet inventory. The reader already knows diplomatic receptions have these elements.",
+          "severity": "MEDIUM",
+          "source": "cross_chapter"
+        },
+        {
+          "acceptance_test": "Ch8 contains no more than 9 instances of 'something.'",
+          "finding_id": "R026",
+          "pass_key": "p1_structural_craft",
+          "problem": "Ch8 has 13 instances of 'something' at 1 per 616 words, above the 1/800 threshold. Combined with the chapter's other redundancy issues (telepathy re-statement, reception template), the hedge-word density compounds the impression of imprecision.",
+          "rewrite_direction": "Audit Ch8 for 'something' and replace with specifics. Target reducing from 13 to 9 or fewer.",
+          "severity": "MEDIUM",
+          "source": "cross_chapter"
+        },
+        {
+          "acceptance_test": "A reader moving directly from chapter 7 to chapter 8 can tell at once whether `Lang` is the same person from the working group or a newly introduced official, without having to reread.",
+          "counterpart_excerpt": "3945: Lang tucked her notebook under one arm. Up close, she smelled faintly of cigarette smoke under expensive soap. \"Thursday. Eight o'clock. Small conference room off the defense committee offices.\"",
+          "finding_id": "LW03-001",
+          "locator_excerpt": "3919: Nods around the table. Deputy Chairman Holtz, who had known Donovan for thirty years and still considered himself a kingmaker, made notes in a leather notebook. Beside him, Petra Lang from the defense policy committee watched Damian with the fixed attention she gave people she hadn't decided whether to use or sideline.",
+          "pass_key": "p1_structural_craft",
+          "problem": "Read back-to-back, these chapters make Lang look like two different people. Because chapter 8 explicitly frames the reception as the spillover from the same meeting Damian just left, the shift lands as a continuity error rather than a new-character introduction.",
+          "rewrite_direction": "Keep one stable on-page identity for Lang across the boundary. If chapter 8 needs a different official pinning Damian beside the flowers, name that person distinctly; otherwise align the chapter 8 description and pronouns with Petra Lang from chapter 7.",
+          "severity": "CRITICAL",
+          "source": "local_window"
+        },
+        {
+          "acceptance_test": "By the first Damian-Anya exchange in chapter 8, the reader can say where Anya stands on Bond's ICC lead and whether tonight's reception is replacing that task or interrupting it.",
+          "counterpart_excerpt": "3892: She took the pencil from the paper, carried the notebook back to her room, and wrote on the back of the drawing in small block letters:",
+          "finding_id": "LW03-002",
+          "locator_excerpt": "3878: There it was halfway down the second page, small enough to miss if you weren't already looking for trouble: a story about summit preparations at the International Conference Center running behind schedule because the front grounds were still under renovation. Beneath the article sat a grainy photograph. Pale stone frontage. Ceremonial steps. Upper terrace behind iron railing. The grounds below torn up in ugly strips where new security barriers and landscaping were still unfinished.",
+          "pass_key": "p1_structural_craft",
+          "problem": "The window asks the reader to carry an urgent, concrete summit-lead task across an intervening POV chapter and then withholds any status update when Anya comes back on-page. That makes the ICC thread feel forgotten rather than intentionally suspended.",
+          "rewrite_direction": "When chapter 8 returns to Anya, give one or two orienting sentences that state whether she checked the venue files, got nothing usable, or had to postpone because of the reception. The thread can stay unresolved, but it cannot feel dropped.",
+          "severity": "HIGH",
+          "source": "local_window"
+        },
+        {
+          "acceptance_test": "Within chapter 8's opening exchange, a reader can explain how Ackermann, Brandt, and Dietrich relate to the Lang/Kessler/Vanguard line from chapter 7 and what practical consequence a slipped `review` changes.",
+          "counterpart_excerpt": "4121: Damian leaned forward. Across the top of the page, in faded typed capitals, was MAINTENANCE CONTINUITY ANNEX. Below that: a ministry seal, a contract number, and the name VANGUARD DEFENSE in pale, stubborn ink. Four line items sat under the header. The third and fourth were for the same northern depot, the same month, and almost the same wording. The amounts matched exactly: 31,400 dinars each.",
+          "finding_id": "LW03-003",
+          "locator_excerpt": "4099: \"Not tariffs. The Renewal Front. And Vanguard Defense.\"",
+          "pass_key": "p1_structural_craft",
+          "problem": "The local suspense diffuses because chapter 8 keeps adding new handlers and overloaded terminology before it cleanly maps them onto the network chapter 7 just established. A careful reader can follow the pieces, but the handoff is doing memory work when it should be sharpening immediate stakes.",
+          "rewrite_direction": "Early in chapter 8, explicitly map the new room to the chapter 7 chain: who is carrying Lang's corrected annexes, who controls the checkpoint timing, who fears Voss, and which `review` matters to tonight's handoff. If necessary, collapse one lesser name or replace one generic `review` with the specific process.",
+          "severity": "HIGH",
+          "source": "local_window"
+        },
+        {
+          "acceptance_test": "Reading chapters 5 and 8 back-to-back, chapter 8 should feel like a distinct mode of danger by the time Damian and Anya first compare notes, rather than a second pass through the same elite-room intel function.",
+          "counterpart_excerpt": "3294: \"All right,\" Damian said. \"What did you have before I came back.\"",
+          "finding_id": "LW03-004",
+          "locator_excerpt": "3022: The reception occupied a long salon crowded with candles and bad art. Thirty or forty guests stood in clusters around cocktail tables and the bar. Their thoughts slid over her in scraps: heating oil, a bad hip, a parking ticket, a mistress, fish last month, whether anyone had noticed the inheritance fight was back on, why the quartet was playing Schubert again, whether the minister's wife had altered that dress herself because the hem was dreadful.",
+          "pass_key": "p1_structural_craft",
+          "problem": "Because the genuinely new material in chapter 8 is Yuri's explicit suspicion and the WISE-mole fragment, the first half spends too long feeling like a scaled-up rerun of chapter 5's social-harvest operation. Read as a cluster, the window repeats a chapter shape before the new danger fully takes over.",
+          "rewrite_direction": "Differentiate chapter 8 earlier by making Yuri/security pressure or the mole threat the dominant engine from the opening pages and cutting at least one recycled reception beat, such as the room-thought inventory, the compare-notes buffet stop, or the repeated laugh-trigger recognition rhythm.",
+          "severity": "HIGH",
+          "source": "local_window"
+        }
+      ]
+    },
+    "chapter_09": {
+      "p1_structural_craft": [
+        {
+          "acceptance_test": "Pass if the revised ending of the safe-house scene at snapshots/cycle_03/FINAL_NOVEL.md:5565-5578 closes on unprocessed physical and emotional sensation rather than a formulated insight about telepathic contamination. Fail if the ending still articulates the meaning of what happened rather than leaving the reader in the mess of it.",
+          "counterpart_excerpt": "5570:",
+          "finding_id": "CH09_ELEVATION_CONSEQUENCE_BLEED",
+          "locator_excerpt": "5540:",
+          "pass_key": "p1_structural_craft",
+          "problem": "The safe house kiss lands well on the page with physical specificity and telepathic pressure. But its aftermath -- Anya staying while Damian sleeps, her awareness that 'she had no clean way to separate what belonged to her from what she'd taken' (line 5570) -- resolves into a neat formulation rather than trailing unprocessed into subsequent chapters. The emotional and physical aftershock of this night does not sufficiently bleed into Chapters 10-12 through involuntary body memory, changed spatial behavior around Damian, or physical inventory that reads as involuntary recall rather than processing. The kiss feels like a contained event rather than a detonation whose shrapnel keeps arriving.",
+          "rewrite_direction": "Revise snapshots/cycle_03/FINAL_NOVEL.md:5565-5578 to leave the safe-house ending less resolved. Cut or roughen the thesis line at 5570 ('She had no clean way to separate what belonged to her from what she'd taken') so the chapter ends on unprocessed sensation rather than articulated insight. The key lift happens in later chapters (10-12), but the seed must be planted here: end the scene in Anya's body rather than in her analytical mind.",
+          "severity": "ELEVATION_MEDIUM",
+          "source": "elevation"
+        },
+        {
+          "acceptance_test": "Ch9 contains no more than 6 instances of breath/breathe/breathing.",
+          "finding_id": "R015",
+          "pass_key": "p1_structural_craft",
+          "problem": "Ch9 accounts for 14 of 69 manuscript-wide breath/breathe occurrences (20%). While the chapter's physical content (injuries, cold apartment, intimacy) makes breathing plot-relevant, the word has become the default physical-state cue. At 69 total across all 17 chapters, the target is 8-10 retained instances. Ch9 alone exceeds that target.",
+          "rewrite_direction": "Reduce Ch9's breath/breathe count from 14 to 5-6. Keep the strongest instances: 'breathing is a bad idea' joke (L5315), 'breaking on breath' (L5539), and 2-3 others. Replace remaining instances with varied physical cues (pulse, heat, cold, sound, movement).",
+          "severity": "MEDIUM",
+          "source": "cross_chapter"
+        }
+      ]
+    },
+    "chapter_10": {
+      "p1_structural_craft": [
+        {
+          "acceptance_test": "Pass if the chapter closes within 15 lines of the compound departure, ending on the battery removal as a compressed physical act. Fail if the walk home still includes extended moral processing or domestic-thought enumeration.",
+          "counterpart_excerpt": "5920:",
+          "finding_id": "SPRAWL_CH10",
+          "locator_excerpt": "5880:",
+          "pass_key": "p1_structural_craft",
+          "problem": "After Yor's departure from Anya at the compound perimeter -- the chapter's natural dramatic close -- the prose extends 55+ lines through Yor's walk home, her processing of the Garden's complicity, the domestic-thoughts reassembling themselves, and the battery-removal decision. The battery moment is powerful in isolation but arrives after the scene's emotional weight has already been spent. The walk home restates the moral rupture (nine contracts, four years, Garden's code) that the compound discovery already delivered.",
+          "rewrite_direction": "Revise snapshots/cycle_03/FINAL_NOVEL.md:5875-5935. End the chapter within 10-15 lines of Yor's departure from Anya. The battery-removal decision can be compressed to a single gesture: she walks, she reaches the tram, she takes the battery out. Cut the extended domestic-thought reassembly and the enumeration of what the Garden papers mean. Yor's silence about the confirmation call should land as physical action, not narratorial meditation.",
+          "severity": "HIGH",
+          "source": "award_global"
+        },
+        {
+          "acceptance_test": "Ch10 contains no more than 6 instances of 'something.'",
+          "finding_id": "R025",
+          "pass_key": "p1_structural_craft",
+          "problem": "Ch10 has 10 instances of 'something' at 1 per 556 words. This is Yor's assassination chapter where precision of observation is thematically important, making hedge words particularly counterproductive.",
+          "rewrite_direction": "Audit Ch10 for 'something' and replace with operational or sensory specifics. Target reducing from 10 to 6 or fewer.",
+          "severity": "MEDIUM",
+          "source": "cross_chapter"
+        },
+        {
+          "acceptance_test": "By the time chapter_10 leaves Yor's kitchen or reaches the canal encounter, a first-time reader can state Damian's immediate status and the basic outcome of Anya's dawn plan without inventing missing scenes.",
+          "counterpart_excerpt": "5580: Under the kitchen light, the milk was going to be a problem. The next evening, Yor knew only that the milk was going to be a problem.",
+          "finding_id": "LW04-001",
+          "locator_excerpt": "5573: The bare bulb buzzed. His blood had dried brown at the edges of her nails from the butterfly strips. In her pocket, the folded note pressed against her thigh: `18:12 / west exit revision / WS-7`. The prepaid phone sat in the closet with its battery beside it, both of them waiting for morning. Dawn would be for moving him, reporting from somewhere cleaner, and going north on the one corridor she'd managed to narrow.",
+          "pass_key": "p1_structural_craft",
+          "problem": "Reading these chapters back-to-back, the immediate consequence chain from chapter_09 is silently stepped over. The reader is asked to absorb a romantic cliff, an injury cliff, a safe-house-reporting cliff, and a mole-hunt cliff, then accept that all of them have moved forward off-page before chapter_10 shows its hand. That makes the boundary feel less like an intentional suspension and more like a dropped next beat.",
+          "rewrite_direction": "Give chapter_10 an early bridge, or let Anya/Yor's canal exchange briefly name it, so the reader learns what happened at first light: where Damian was moved, whether the report was delayed or rerouted, and what specific follow-up turned WS-7 from a note in Anya's pocket into this northern surveillance post.",
+          "severity": "HIGH",
+          "source": "local_window"
+        },
+        {
+          "acceptance_test": "A cold reader can summarize the causal chain from \"asset inside WISE\" and \"18:12 / west exit revision / WS-7\" to \"watch Karl Dominic's compound\" without relying on inference-heavy guesswork.",
+          "counterpart_excerpt": "5148: She could do quiet work, ugly work, work that started with calendars, rosters, access lists, watch coverage, and who touched what file and when. She could do it because Loid had taught her how to build a pattern and because telepathy, filthy unfair telepathy, had dropped the first shard in her lap.",
+          "finding_id": "LW04-002",
+          "locator_excerpt": "5140: She would start with the review cycle, not the abstract word from the room but the actual live reviews touching WISE over the next week: oversight, coverage rotation, border traffic assessments, anything that changed staffing or paper flow. She needed to know who had access, who would know a window was closing, and who would know a handoff had to move before coverage shifted.",
+          "pass_key": "p1_structural_craft",
+          "problem": "Across the cluster, the mole plot advances in result states rather than dramatized reasoning. The reception fragment, the ambush-mailbox clue, and the Dominic stakeout all belong to the same investigative line, but the connective work keeps happening between chapters. As a reading experience, that makes the conspiracy feel discovered by omission rather than by cumulative pressure.",
+          "rewrite_direction": "Add one compact on-page deduction beat that converts the reception fragment and WS-7 movement leak into Dominic: show Anya testing review windows against movement traffic, narrowing the corridor, and choosing Dominic's gate as the first useful watch point.",
+          "severity": "HIGH",
+          "source": "local_window"
+        },
+        {
+          "acceptance_test": "After chapter_10, the reader should feel that the story's leverage has changed in a way chapter_09 did not already deliver; the ending should register as escalation, not as a second version of \"don't call it in yet.\"",
+          "counterpart_excerpt": "5399: \"First light,\" she said. \"I move you first. Then I report.\"",
+          "finding_id": "LW04-003",
+          "locator_excerpt": "5375: \"One call on this activates the apartment,\" she said. \"Duty officer logs the address, dispatch logs the time, somebody opens a file, and everybody with emergency access can see that this location is hot.\"",
+          "pass_key": "p1_structural_craft",
+          "problem": "Read consecutively, the two chapters close on near-identical narrative functions: discover institutional contamination, keep the reporting line dark, carry the secret evidence alone into tomorrow. Chapter_10 has bigger revelations, but its terminal state still echoes chapter_09's withheld-report climax so closely that the second ending feels like a replay rather than a new pressure geometry.",
+          "rewrite_direction": "Make chapter_10's closing move materially different from chapter_09's. Yor could set a trap, destroy or hide evidence, choose a specific person to trust, or take an irreversible action that changes the family or Garden board immediately instead of ending on another deferred report.",
+          "severity": "HIGH",
+          "source": "local_window"
+        },
+        {
+          "acceptance_test": "A reader moving directly from Chapter 9 into Chapter 10 can tell within the first page that Damian survived the night, the promised dawn move/report occurred offstage, and the WS-7 lead remains active.",
+          "counterpart_excerpt": "5575: For now he slept in brief, uneven drifts with his shoulder against hers and his fingers still slack in her sleeve. Her jaw had been locked so long it hurt, and the bruise under her ribs was only part of the reason. She had no clean way to separate what belonged to her from what she'd taken. Under the scratchy blanket, with his near-name still catching and failing in her head, staying felt like one more theft. She stayed anyway.",
+          "finding_id": "LW05-001",
+          "locator_excerpt": "5573: The bare bulb buzzed. His blood had dried brown at the edges of her nails from the butterfly strips. In her pocket, the folded note pressed against her thigh: `18:12 / west exit revision / WS-7`. The prepaid phone sat in the closet with its battery beside it, both of them waiting for morning. Dawn would be for moving him, reporting from somewhere cleaner, and going north on the one corridor she'd managed to narrow.",
+          "pass_key": "p1_structural_craft",
+          "problem": "The adjacent handoff asks the reader to shelve the hottest emotional and operational thread in the window without even a quick orienting beat. Because the promised dawn follow-through vanishes for two chapter openings, the safe-house climax reads less like sustained pressure and more like a skipped chapter.",
+          "rewrite_direction": "Give Chapter 10 an early orienting trace that Damian was moved and the WS-7 lead is already driving Anya's next action, or pull a brief immediate-aftermath beat forward before the Yor domestic material fully takes over.",
+          "severity": "HIGH",
+          "source": "local_window"
+        }
+      ]
+    },
+    "chapter_12": {
+      "p1_structural_craft": [
+        {
+          "acceptance_test": "Pass if the revised span creates a sharper collision between Becky's emotional exposure and the operational emergency, with the pager disrupting the confession at its most vulnerable point. Fail if the two crises remain sequenced rather than overlapping.",
+          "counterpart_excerpt": "6667: Damian's cache. The apartment. The shelves arranged by region. The false wall behind the kitchen cabinet. The coffee stain near the baseboard that he had left because replacing the carpet meant letting the landlord inside. She had laughed when he said it. He had not.",
+          "finding_id": "CH12_ELEVATION_TONAL_CONTRAST",
+          "locator_excerpt": "6607:",
+          "pass_key": "p1_structural_craft",
+          "problem": "Becky's terrace confession (line 6607: 'He didn't want me. He wanted the version that gets you into rooms') sits between the recognition detonation (Damian identifying Anya) and the missing-courier alert (line 6667). The transitions between these three crises are smooth rather than whiplash-inducing. The tonal contrast between Becky's genuine human vulnerability and the operational emergency could hit harder if the shift were more abrupt -- if the pager vibrated during the most exposed moment of the confession rather than after it has settled, and if Anya's inability to be fully present for her best friend were made more viscerally costly.",
+          "rewrite_direction": "Revise snapshots/cycle_03/FINAL_NOVEL.md:6638-6670. Move the second pager alert (line 6667) earlier so it arrives during the peak of Becky's emotional confession rather than after. Let Anya feel the pager vibrate while Becky is saying the thing that matters most, and force the reader to experience Anya's split attention as a betrayal of friendship rather than an operational inconvenience. The goal is tonal whiplash that makes the reader feel what it costs Anya to be a spy who can hear everyone's pain and must leave anyway.",
+          "severity": "ELEVATION_HIGH",
+          "source": "elevation"
+        },
+        {
+          "acceptance_test": "Pass if the chapter closes within 8 lines of the pager alert, ending on physical detail rather than narratorial summary of competing crises. Fail if Anya's entrapment is still stated rather than embodied.",
+          "counterpart_excerpt": "6669: \"The material was seized intact,\" Sylvia said. \"Analysis is pending. The eastern sector is compromised.\"",
+          "finding_id": "SPRAWL_CH12",
+          "locator_excerpt": "6656:",
+          "pass_key": "p1_structural_craft",
+          "problem": "After Becky's confession and the second pager alert, the chapter extends 25+ lines with Anya staring into the dark garden and the narrator restating her entrapment across three simultaneous crises (Damian's recognition, the missing courier, Becky's trust). The chapter's natural close is the pager vibrating during or immediately after the most vulnerable moment of Becky's confession. The staring-into-dark coda converts the triple crisis into a summarized state rather than leaving it as active, unresolved pressure.",
+          "rewrite_direction": "Revise snapshots/cycle_03/FINAL_NOVEL.md:6667-6691. End the chapter on the pager vibration and one concrete physical response (Anya's hand tightening on the railing, or her shoulder still pressed against Becky's, or the garden lights going out). Cut the extended meditation on the triple crisis. The reader already knows what's colliding; the chapter's job is to leave them in the collision, not to summarize it.",
+          "severity": "HIGH",
+          "source": "award_global"
+        },
+        {
+          "acceptance_test": "Pass if Becky's confession at snapshots/cycle_03/FINAL_NOVEL.md:6607-6648 contains at least two moments of disorder -- circling back, wrong-order revelation, or self-correction -- that make the vulnerability feel unrehearsed. Fail if the confession still escalates in perfectly ordered beats.",
+          "counterpart_excerpt": "6627:",
+          "finding_id": "COMPOSED_CH12",
+          "locator_excerpt": "6607:",
+          "pass_key": "p1_structural_craft",
+          "problem": "Becky's terrace confession hits every emotional note perfectly: the breakup with Marc, the documentary dream, the Tuesday-night cereal, the 'you're my best friend' declaration. Each beat escalates in vulnerability with grammatically composed precision. Nothing tangles, nothing arrives in the wrong order, no beat is wasted. A real confession from someone who has been performing all night would be less organized -- she might circle back to a detail she already mentioned, lose the thread, say the wrong thing first, or accidentally reveal something she meant to keep.",
+          "rewrite_direction": "Revise snapshots/cycle_03/FINAL_NOVEL.md:6607-6648. Disorder the confession. Let Becky start with the wrong detail (the cat, maybe, or the Tuesday cereal) before she gets to Marc. Let her say 'you're my best friend' too early, before the build has earned it, and then have to circle back to the reason. Let at least one moment in the confession feel like a wrong turn that she has to correct. The emotional arc should still arrive at the same destination, but the path should feel messier, more like someone who has never said these things before rather than someone delivering a perfectly ordered monologue.",
+          "severity": "MEDIUM",
+          "source": "award_global"
+        },
+        {
+          "acceptance_test": "Ch12's venue arrival does not re-inventory chandelier, white table coverings, and bar crowd.",
+          "finding_id": "R007",
+          "pass_key": "p1_structural_craft",
+          "problem": "The Blackbell estate ballroom at Ch12 L6336 is the fifth reception venue. Chandelier (third explicit description), white table coverings (second after Ch2), and bar-as-crowd-magnet (second after Ch8) are recycled venue elements. The underlying inventory repeats even when individual phrases are fresh.",
+          "rewrite_direction": "Enter the Blackbell ballroom through Becky's personality stamped on the space, the Eden-reunion atmosphere, or the social tension. Cut the chandelier/white-cloths/bar inventory.",
+          "severity": "MEDIUM",
+          "source": "cross_chapter"
+        },
+        {
+          "acceptance_test": "Ch12 contains at most one diplomatic-mask/polish reference rather than three.",
+          "finding_id": "R009",
+          "pass_key": "p1_structural_craft",
+          "problem": "Damian's diplomatic-mask/polish baseline is proved three times within Ch12 alone (L6127, L6456, L6528). The mask-vs-reality contrast has been independently proved in 7 chapters (Ch2, Ch4, Ch5, Ch7, Ch8, Ch9, Ch12). Ch12's local cluster of three instances in one chapter is the densest accumulation.",
+          "rewrite_direction": "Keep one diplomatic-mask reference in Ch12 (L6528 is strongest because it pairs face and thought). Cut or vary L6127 and L6456 to avoid re-proving the reader already knows Damian performs in public.",
+          "severity": "MEDIUM",
+          "source": "cross_chapter"
+        },
+        {
+          "acceptance_test": "Ch12 contains no more than 3 references to the quartet.",
+          "finding_id": "R014",
+          "pass_key": "p1_structural_craft",
+          "problem": "Ch12 accounts for 7 of 26 total quartet references. The quartet becomes a running thread through the gala (Becky's frustration with it, mood-board joke), but 7 references in one chapter reinforces the reception-venue template redundancy. Target: keep 2-3 of the strongest.",
+          "rewrite_direction": "Keep the mood-board joke (L6570-6576) and the final upbeat piece (L6636) as the two strongest. Cut quartet references at L6370, L6414, L6506, L6582, L6612 or replace with varied party atmosphere.",
+          "severity": "MEDIUM",
+          "source": "cross_chapter"
+        },
+        {
+          "acceptance_test": "When read back-to-back, Chapters 10 through 12 no longer all begin with the same abstract elapsed-time recap shape; at least one of the later openings drops the reader directly into a live beat carrying pressure from the prior chapter.",
+          "counterpart_excerpt": "5871: After the canal, Anya spent three days inside WISE headquarters, and by now the fluorescent buzz felt lodged behind her eyes.",
+          "finding_id": "LW05-002",
+          "locator_excerpt": "5580: Under the kitchen light, the milk was going to be a problem. The next evening, Yor knew only that the milk was going to be a problem.",
+          "pass_key": "p1_structural_craft",
+          "problem": "Across the cluster, the reader keeps being asked to restart instead of ride pressure forward. The repeated time-jump-plus-catch-up opening shape makes the middle window feel modular and backfilled, which dulls the sense that these chapters are happening under one tightening clock.",
+          "rewrite_direction": "Break the pattern by dramatizing one of the bridge beats in scene, most obviously the 0600 watch, or by entering Chapter 12 through an action already underway instead of another retrospective reset paragraph.",
+          "severity": "HIGH",
+          "source": "local_window"
+        },
+        {
+          "acceptance_test": "A reader experiences the outcome of the 0600 watch as a scene or materially dramatized sequence, not just a retrospective report, and can feel why the salvage route to Kreuzfeld becomes the necessary next move.",
+          "counterpart_excerpt": "6241: It was ugly and it was still the calculation. Her mother was somewhere in the city with Dominic's photographs and whatever was left of her faith in Garden. Anya was betting Yor would stay quiet until tomorrow because the other clock had reached six in the morning and a desk inside WISE was about to go blind.",
+          "finding_id": "LW05-003",
+          "locator_excerpt": "6195: \"Use what the paper can survive,\" Damian said. \"Use what you can watch happen in real time. If you're right about him, he's going to need that desk dark for a reason. If you're wrong again, you burn another innocent person. So don't guess. Sit on the lane and see who uses it.\"",
+          "pass_key": "p1_structural_craft",
+          "problem": "The window invests a full chapter in getting Anya to a concrete, watchable test of Falk, then withholds the test itself. Because the payoff is compressed into exposition, Chapter 11's terminal pressure dissolves instead of converting into a felt failure or discovery.",
+          "rewrite_direction": "Open Chapter 12 with the 0600 watch on-page and let the null result force the Kreuzfeld salvage decision in real time, or revise Chapter 11's ending so it does not promise that immediate scene as the next beat.",
+          "severity": "HIGH",
+          "source": "local_window"
+        },
+        {
+          "acceptance_test": "At Chapter 12's end, the reader can name one dominant new pressure that clearly governs the next chapter's first move, rather than holding three coequal unresolved threads.",
+          "counterpart_excerpt": "6518: `KZF 2300 MISSED. RETURN SECURE ASAP.`",
+          "finding_id": "LW05-004",
+          "locator_excerpt": "6460: \"Wait.\" His whole face lit with the loose clarity alcohol stripped him down to. \"This is the funniest possible thing. Becky has seriously been throwing the same event her whole life.\" He jabbed the page at Damian. \"Look. That's you, that's me, that's Becky, and that's Anya Forger pretending not to murder us over raffle tickets. Same face and everything.\"",
+          "pass_key": "p1_structural_craft",
+          "problem": "The chapter lands three strong pressures at once, but they do not consolidate into a distinct end-state for the window. Recognition, border failure, and Becky intimacy all matter, yet because none is allowed to win the chapter's final leverage, the window ends in suspended triage rather than a sharper changed condition.",
+          "rewrite_direction": "After Becky's scene, choose a dominant terminal beat: either let Anya take one concrete operational step on the missed courier, or let Damian intercept her and force the recognition thread into a new leverage state before the chapter closes.",
+          "severity": "HIGH",
+          "source": "local_window"
+        },
+        {
+          "acceptance_test": "A reader moving from chapter 11 into chapter 12 experiences the immediate consequence of \"watch, don't report\" on-page rather than learning in summary that the watch already failed.",
+          "counterpart_excerpt": "6250: Fourteen hours earlier Anya had been at a WISE listening desk waiting for the 0600 watch on Falk's diplomatic procurement lane to prove she wasn't chasing smoke. It had proved the opposite kind of thing: the coverage cut was real, the desk went blind on schedule, and whatever was supposed to move through it never showed its face. No courier. No pickup. No useful mistake. By noon the route had been salvaged north. A WISE courier was carrying copied procurement papers toward Kreuzfeld on forged customs documents and was supposed to clear the checkpoint and check in from the west side by 2300. Yor had taken the extra night Anya had bought and stayed silent through the day. The watch was over. The damage wasn't.",
+          "finding_id": "LW06-002",
+          "locator_excerpt": "6227: For a moment she stayed on the floor listening to the pipes and the neighbor upstairs moving around in shoes that should have been illegal after nine. Then she pulled the electricity bill fully onto her lap, turned it over, and wrote:",
+          "pass_key": "p1_structural_craft",
+          "problem": "Chapter 11 closes by loading the 0600 Falk watch as the next live test of whether Anya is finally right, then chapter 12 reports that watch in retrospective summary before moving to the gala. Because the boundary promises a scene and then delivers only a recap of failure, the handoff sheds suspense instead of cashing it in.",
+          "rewrite_direction": "Dramatize some portion of the 0600 watch before the gala material, or lower the terminal-state promise at the end of chapter 11 so the reader is not primed for a real-time sting that the next chapter immediately skips. Even a short on-page beat of the desk going blind and Anya realizing she has missed the useful moment would preserve momentum.",
+          "severity": "HIGH",
+          "source": "local_window"
+        },
+        {
+          "acceptance_test": "Chapter word count is >= 5000 while preserving heading contract.",
+          "finding_id": "length_chapter_12_min_words",
+          "pass_key": "p1_structural_craft",
+          "problem": "Chapter is below projected_min_words (4963 < 5000).",
+          "rewrite_direction": "Add causally necessary scene material that strengthens the chapter engine, increases pressure, and lands the planned state shift without filler.",
+          "severity": "HIGH",
+          "source": "length_guardrail"
+        }
+      ]
+    },
+    "chapter_13": {
+      "p1_structural_craft": [
+        {
+          "acceptance_test": "Pass if the chapter closes within 15 lines of Anya's departure from WISE, with any Damian coda compressed to a single image rather than extended meditation. Fail if the Damian apartment section still runs 40+ lines of interior processing.",
+          "counterpart_excerpt": "7220:",
+          "finding_id": "SPRAWL_CH13",
+          "locator_excerpt": "7165: Damian took the long way home.",
+          "pass_key": "p1_structural_craft",
+          "problem": "After Anya leaves WISE following Sylvia's interrogation -- the chapter's natural dramatic close -- the narrative shifts to Damian's apartment for a 55-line meditative section where he sits with the class photo and processes his recognition of Anya. This restates what Chapters 7 and 12 already established: he knows who she is and is choosing to keep working with her. The section adds emotional texture but no new fact, cost, witness, or irreversible action.",
+          "rewrite_direction": "Revise snapshots/cycle_03/FINAL_NOVEL.md:7157-7220. End the chapter when Anya leaves the WISE station. If the Damian apartment beat is essential, compress it to 10 lines maximum -- the class photo on the table, one thought, and then he closes the box. Do not let him process the meaning of the recognition; the reader has been carrying it since the gala.",
+          "severity": "HIGH",
+          "source": "award_global"
+        },
+        {
+          "acceptance_test": "Ch13 does not re-describe the eyebrow scar as a visual distinguishing feature.",
+          "finding_id": "R004",
+          "pass_key": "p1_structural_craft",
+          "problem": "Damian's eyebrow scar is introduced as a permanent distinguishing feature in Ch12 L6264 and re-described one chapter later in Ch13 L6785. Adjacent-chapter repetition of the same distinguishing physical feature is the most noticeable form of re-description.",
+          "rewrite_direction": "At Ch13 L6785, cut or redirect the fluorescent-light detail to a different physical element (hands, posture, fatigue) that does not re-introduce the scar the reader just learned about in Ch12.",
+          "severity": "MEDIUM",
+          "source": "cross_chapter"
+        },
+        {
+          "acceptance_test": "Ch13 contains no more than 7 instances of 'something.'",
+          "finding_id": "R028",
+          "pass_key": "p1_structural_craft",
+          "problem": "Ch13 has 9 instances of 'something' at 1 per 634 words, above the 1/800 threshold.",
+          "rewrite_direction": "Audit Ch13 for 'something' and replace with specifics. Target reducing from 9 to 7 or fewer.",
+          "severity": "MEDIUM",
+          "source": "cross_chapter"
+        },
+        {
+          "acceptance_test": "Ch13's box contents are consistent with Ch7's established inventory \u2014 same certificates, same pen count, with any new items framed as previously unmentioned rather than replacing prior items.",
+          "finding_id": "C002",
+          "pass_key": "p1_structural_craft",
+          "problem": "Damian's memorabilia box is inventoried in Ch7 with specific items (spelling certificate, one dry pen, athletics ribbon, festival program). Ch13 re-inventories the same box with substantially different items (math certificate, three pens, school blazer, mother's note). The certificates differ (spelling vs. math), the pen count differs (one vs. three), and several items appear in one inventory but not the other.",
+          "rewrite_direction": "Reconcile Ch13's box inventory with Ch7's established contents. The reader who remembers the Ch7 inventory will notice the discrepancy. Either match the items exactly or have Damian notice items he missed before rather than presenting a contradictory complete inventory.",
+          "severity": "MEDIUM",
+          "source": "cross_chapter"
+        }
+      ]
+    },
+    "chapter_14": {
+      "p1_structural_craft": [
+        {
+          "acceptance_test": "Pass if the revised planning sequence is at most 350 lines and the operational information emerges primarily through character disagreement, telepathic intrusion, and physical business rather than enumerated assignments. Fail if the chapter still reads as a briefing document with domestic breaks between operational paragraphs.",
+          "counterpart_excerpt": "7964: Loid rewrote the assignments on the whiteboard. \"Yor, foyer junction to south perimeter. Me, east corridor relay and secondary technical station. Damian, West Gallery and Voss during seating. Anya, East Gallery press row.\"",
+          "finding_id": "CH14_BRIEFING_ARCHITECTURE",
+          "locator_excerpt": "7474: Loid let the silence sit for a breath, then another, then shifted back to the table because that was what he did when the wall was already on top of them.",
+          "pass_key": "p1_structural_craft",
+          "problem": "The family planning session runs 500+ lines of characters explaining operational details to each other: relay timing, junction routes, assignment boards, badge logistics, and summit layout. While the domestic texture (curry, Bond, wine) provides some embodied counterweight, the chapter's core mode is expository briefing. The style bible's own forbidden drift pattern 'briefing-itis' describes exactly this failure: 'scenes where characters explain plot to each other. Information should emerge through action, observation, and telepathic fragments -- not expository dialogue.' The chapter reads as an operational planning document with domestic decoration rather than a dramatic scene with operational content.",
+          "rewrite_direction": "Revise the planning sequence at snapshots/cycle_03/FINAL_NOVEL.md:7474-7964. Cut or compress the explicit operational walk-throughs (relay timing, junction routes, badge logistics) by at least 40%. Replace procedural exposition with embodied conflict: Loid and Damian's first face-to-face meeting should carry more tension about trust, authority, and who gets to decide what Anya does; Yor's break from the Garden should generate more friction about what she will and won't do; the tactical disagreements should be dramatized through character collision rather than stated and resolved. Keep the whiteboard map as a physical anchor but let the reader infer the plan from what the characters argue about rather than what they enumerate.",
+          "severity": "MEDIUM",
+          "source": "award_global"
+        },
+        {
+          "acceptance_test": "Ch14 does not independently re-prove Yor's cooking incompetence through comic food description.",
+          "finding_id": "R011",
+          "pass_key": "p1_structural_craft",
+          "problem": "Yor's bad cooking is re-proved in Ch14 with the same template (food described in comic-failure terms, Yor apologizes). This is the 5th independent proof of the same baseline. Ch14's cooking failure adds no new leverage or consequence.",
+          "rewrite_direction": "Cut the cooking-failure details at L7558-7560. The planning dinner scene can reference food being served without re-proving the gag.",
+          "severity": "MEDIUM",
+          "source": "cross_chapter"
+        },
+        {
+          "acceptance_test": "Ch14 does not re-enumerate that Anya has never told anyone about telepathy.",
+          "finding_id": "R012",
+          "pass_key": "p1_structural_craft",
+          "problem": "Anya's 'can't tell anyone about telepathy' is enumerated at Ch14 L7378 as the 4th re-statement of this baseline. The reader has known since Ch1 that Anya keeps her telepathy secret. Ch16 L8878 is the pivotal disclosure that earns its enumeration. Ch14's re-statement is the most expendable because it re-proves what the reader already knows without adding new consequence.",
+          "rewrite_direction": "At L7378, cut the enumeration of who hasn't been told. Trust the reader to carry the secret-keeping premise from Ch1. If telepathy's relevance to the planning scene needs flagging, do it through action (Anya reading thoughts) rather than re-stating the concealment.",
+          "severity": "MEDIUM",
+          "source": "cross_chapter"
+        },
+        {
+          "acceptance_test": "A cold reader can identify both the location and who \"he\" is within the first two sentences of chapter 14 without rereading.",
+          "finding_id": "LW06-001",
+          "locator_excerpt": "7224: Three days after David Crane died at the Kreuzfeld border checkpoint, Anya stood outside the apartment door with the key in her hand and thought, not for the first time, that he had no business being in this hallway on a Tuesday night. He was there anyway. The apartment smelled of sesame oil and sugar catching at the bottom of a pan. Sylvia's voice: *We lost Crane at the checkpoint.* The checkpoint lights. The gap in the coverage pattern Anya had helped cut open with a lie.",
+          "pass_key": "p1_structural_craft",
+          "problem": "Chapter 14 opens with two masculine pronouns before the scene anchors who \"he\" is. Coming straight off Damian's POV and repeated Crane references, a reader has to stop and test Damian versus Loid versus Crane before the apartment context settles. That kind of pause is accidental boundary confusion, not productive suspense.",
+          "rewrite_direction": "Name Loid directly, or reframe the opening so the Forger-apartment context lands before any pronoun-only reference. If the intent is that Loid now feels newly strange as both father and handler, make that strangeness explicit instead of suspending antecedent clarity.",
+          "severity": "MEDIUM",
+          "source": "local_window"
+        },
+        {
+          "acceptance_test": "Before Yor says she has something, chapter 14 has already added new leverage instead of restating the Crane, mole, and summit package the reader just absorbed in chapter 13.",
+          "counterpart_excerpt": "6971: \"What did you have when you wrote this?\" Sylvia asked.",
+          "finding_id": "LW06-003",
+          "locator_excerpt": "6827: \"I filed the east-sector picture wrong,\" she said. \"I made it smaller than it was. I said it was ego and old men talking war after dessert. I pushed the customs piece and the freight piece down the stack. WISE thinned the eastern watch after that. They opened substitute lanes through crossings they thought were quieter.\" Her throat felt scraped raw. \"Crane took one.\"",
+          "pass_key": "p1_structural_craft",
+          "problem": "Chapter 13 already runs Anya through two consequence-filter scenes: Damian refuses a clean self-indictment, then Sylvia forces the distinction between known and guessed facts. Chapter 14 opens by making Loid run a third version of the same beat, so the reader sits through another partial confession and another insistence on the solid part before Yor's envelope finally changes the state of play. Read back-to-back, the first movement of chapter 14 feels like another debrief rather than a new engine.",
+          "rewrite_direction": "Compress Loid's cross-examination or make it produce materially new information immediately. Move Yor's envelope into the scene sooner, or let Loid's questioning expose a fact the reader does not already possess from chapter 13.",
+          "severity": "HIGH",
+          "source": "local_window"
+        },
+        {
+          "acceptance_test": "A reader can explain in one sentence why Anya could not realistically go to the Forgers earlier and why that blocker outweighed giving them more time before the summit.",
+          "counterpart_excerpt": "7157: Anya went back to the terminal and kept working until the words on the screen turned liquid around the edges. At 16:40 she sent Sylvia the first clean reconstruction: the lie she filed, the downgrade it triggered, the coverage cuts that followed, the specific window Crane inherited, the points where uncertainty still started. She left the building after dark with the route map burned behind her eyes and the smell of dead coffee in her coat.",
+          "finding_id": "LW06-004",
+          "locator_excerpt": "6729: \"We need to meet,\" Anya said. \"Not the usual place.\"",
+          "pass_key": "p1_structural_craft",
+          "problem": "After Crane dies, Anya moves immediately to meet Damian and spends the same day mapping damage with Sylvia, but the crucial step of warning Loid and Yor is deferred off-page for three full days until the summit is essentially upon them. The text acknowledges that she should have come sooner, yet the offered reason, wanting one more clean piece, feels thinner than the operational urgency chapter 13 establishes. On a cluster read, the delay feels arranged to hold the family-alliance chapter in place rather than emerging from believable pressure.",
+          "rewrite_direction": "Either add a concrete blocker that makes those three days impossible or dangerous, such as surveillance, WISE lockdown, or a specific reason home contact would burn the remaining line, or shorten the gap so the family alliance activates much closer to the chapter-13 collapse.",
+          "severity": "MEDIUM",
+          "source": "local_window"
+        },
+        {
+          "acceptance_test": "After reading chapters 13 and 14 consecutively, the reader gets no more than one reminder that Damian knows Anya's identity before the scene delivers a materially new consequence of that knowledge.",
+          "counterpart_excerpt": "7217: Then he went back to the bed, slid the class photo under his mother's note, and shut the lid. He would keep working with her. He would not hand her the photo. Not yet.",
+          "finding_id": "LW07-001",
+          "locator_excerpt": "7185: He was not looking for proof. He already had that. Becky's drunken sentence at the gala had closed the last inch of distance. The photo made the certainty worse, not clearer.",
+          "pass_key": "p1_structural_craft",
+          "problem": "Read back-to-back, chapter 14 re-explains a plot fact the reader already has in full: Damian knows exactly who Anya is and is managing what she can catch. Because chapter 13 has already converted that from suspicion into certainty, the new concealment beats in chapter 14 play less like fresh tension and more like repeated dramatic irony.",
+          "rewrite_direction": "Keep one reminder beat when Damian enters the apartment, then spend the rest of his page time on a new consequence of that knowledge: a sharper tactical choice, a changed emotional reaction to the Forger household, or a concrete risk he is now actively managing.",
+          "severity": "MEDIUM",
+          "source": "local_window"
+        }
+      ]
+    },
+    "chapter_15": {
+      "p1_structural_craft": [
+        {
+          "acceptance_test": "Pass if at least 70% of the revised chapter is anchored in Anya's close-third POV and the other threads reach the reader primarily through her telepathic access. Fail if the chapter still switches between four equal-weight POVs with no clear home consciousness.",
+          "counterpart_excerpt": "8147: Damian watched Werner Voss from across the West Gallery and could feel the paper in his inside pocket as if it had temperature.",
+          "finding_id": "CH15_POV_DILUTION",
+          "locator_excerpt": "8025: The International Conference Center smelled of floor polish, new carpet, and overheated coffee from the press mezzanine, the kind of institutional cleanliness that tried too hard to feel calm. Anya cleared the east-side screening with Damian's credential clipped high on her lapel and a reporter's notebook tucked under one arm. The screener barely looked at her. Across the plaza the diplomatic queue crawled between extra guards and handheld scanners, three lines deep already. Whatever Damian had rerouted her around, it had more teeth than inconvenience.",
+          "pass_key": "p1_structural_craft",
+          "problem": "The summit climax fragments across four near-simultaneous perspectives (Anya reading the crowd, Damian confronting Voss, Loid intercepting Falk, Yor engaging the terrace attack team) without fully inhabiting any single consciousness for long enough to build the pressure a climax requires. The novel's strongest mode is sustained close-third through one mind under escalating pressure; the summit chapter abandons this for rapid cross-cutting that spreads the payoff thin. Each perspective gets a compressed crisis rather than one perspective getting the full weight of the converging action.",
+          "rewrite_direction": "Revise snapshots/cycle_03/FINAL_NOVEL.md:8025-8756 to anchor the summit primarily in Anya's POV. She is the telepath; she can hear the other threads breaking in real time through fragmentary thoughts. Route Damian's Voss confrontation, Loid's discovery of Falk, and Yor's combat through Anya's telepathic reception rather than direct POV switches. Brief, clearly marked POV departures (Damian's public denunciation, Yuri's recognition of Yor) are acceptable if they are compressed and if the chapter returns to Anya's consciousness as home base. The goal is one sustained escalation rather than four interleaved ones.",
+          "severity": "MEDIUM",
+          "source": "award_global"
+        },
+        {
+          "acceptance_test": "Pass if Voss's dialogue in the revised span serves self-preservation and counter-threat rather than structural exposition. Fail if Voss still delivers an organized, pedagogically clear explanation of the corruption system during his own public accusation.",
+          "counterpart_excerpt": "8247: \"I know,\" Damian said.",
+          "finding_id": "CH15_VOSS_DIDACTIC",
+          "locator_excerpt": "8201: \"You still think there's a top and a bottom,\" he said. \"One rotten man, one clean floor underneath. That's not how this works.\"",
+          "pass_key": "p1_structural_craft",
+          "problem": "Voss's explanation of cross-border procurement corruption (line 8201: 'Your hawks buy Westalian surveillance through intermediaries. The Westalians buy our military reporting back. Same money. Different stamps.') reads as the author routing thematic exposition through a character rather than a man fighting under genuine pressure. Voss delivers a structural analysis of the system he is embedded in at the precise moment someone is publicly accusing him, when his actual priority should be self-preservation, deflection, or counter-threat. The speech is too clear, too organized, and too pedagogically useful to be dialogue under duress.",
+          "rewrite_direction": "Revise snapshots/cycle_03/FINAL_NOVEL.md:8201-8250. Replace Voss's systemic explanation with dialogue that serves his immediate tactical interest: threatening Damian's exposure, bargaining, deflecting to larger players, or attacking Damian's credibility. Any structural information about the corruption architecture should leak through what Voss denies, threatens, or accidentally reveals rather than through what he explains. If the reader needs to understand the cross-border procurement system, that understanding should already be assembled from Chapters 5, 7, and 11; this scene should test it under pressure, not teach it.",
+          "severity": "MEDIUM",
+          "source": "award_global"
+        },
+        {
+          "acceptance_test": "If the reader finishes chapter 14 and immediately starts chapter 15, the first page adds new threat information faster than it repeats summit layout, and no major position or route has to be re-learned from scratch.",
+          "counterpart_excerpt": "8020: Tomorrow she'd take the east press entrance with Damian's badge and put the whole hall under her. If the room turned, she had to hear it before the first shot made the pattern obvious.",
+          "finding_id": "LW07-003",
+          "locator_excerpt": "7964: Loid rewrote the assignments on the whiteboard. \"Yor, foyer junction to south perimeter. Me, east corridor relay and secondary technical station. Damian, West Gallery and Voss during seating. Anya, East Gallery press row.\"",
+          "pass_key": "p1_structural_craft",
+          "problem": "On a consecutive read, the action chapter spends its opening energy rebuilding geography the previous chapter has just painstakingly taught the reader. That repeated re-orientation blunts the launch into the summit and makes chapter 15 feel slower off the line than the chapter break promises.",
+          "rewrite_direction": "Trust the reader's memory from chapter 14. Compress the venue reminder to one or two danger-bearing details, then move immediately into the operative signal Anya catches so the chapter opens on fresh threat instead of refreshed mapwork.",
+          "severity": "MEDIUM",
+          "source": "local_window"
+        }
+      ]
+    },
+    "chapter_16": {
+      "p1_structural_craft": [
+        {
+          "acceptance_test": "Pass if the revised span at snapshots/cycle_03/FINAL_NOVEL.md:9410-9420 contains at least one moment of present-tense physical contact between Anya and Damian that is rendered with sensory specificity (body, breath, telepathic signal) rather than discussed retrospectively. Fail if desire remains entirely verbal, retrospective, or clinical in the confession scene.",
+          "counterpart_excerpt": "9276: \"This is the part I came here to say and I still don't know how to say it right.\" She took a breath. \"In the safe house, when we kissed, I was reading you. I was trying not to, but you were too close and feeling too much, and I just...\" She stopped. \"I could feel what you wanted. I didn't have to guess. I could feel it. And my body answered before I'd figured out whether I was answering you or me.\"",
+          "finding_id": "CH16_INTIMACY_FADEOUT",
+          "locator_excerpt": "9410: \"In the safe house bathroom, before you came back out, you were thinking that if you put your hands on me again you wouldn't stop where you should. You hated yourself for thinking it and also didn't stop wanting it. I didn't use that either.\"",
+          "pass_key": "p1_structural_craft",
+          "problem": "The novel establishes mutual physical desire through telepathy-mediated contact and one rendered kiss in the Chapter 9 safe house, then never renders physical intimacy again across eight subsequent chapters. Chapter 16's confession scene retrospectively names desire that occurred off-page ('you were thinking that if you put your hands on me again you wouldn't stop where you should,' line 9410) and Anya acknowledges she cannot separate her own desire from his ('I don't know how much of what I feel for you started as yours,' line 9276), but the scene where this desire would be rendered is absent. Two twenty-year-olds who have survived life-threatening violence together, who are established as mutually attracted, and who are alone in his apartment during the novel's most emotionally raw conversation never touch. The desire is discussed clinically; it is never embodied. This is the intimacy fade-to-black pattern the constitution flags as the content type most prone to involuntary self-censorship.",
+          "rewrite_direction": "Revise snapshots/cycle_03/FINAL_NOVEL.md:9410-9420. After the safe-house-bathroom revelation lands and both characters sit with it, allow the emotional rawness to cross into physical contact that is rendered on the page with the same specificity the novel gives to violence, telepathic intrusion, and operational tradecraft. This does not require a full sex scene, but it requires more than retrospective naming of desire. Options: (A) a second kiss that carries the weight of everything just confessed, rendered with body and breath and the telepath's awareness of what she is receiving; (B) a moment of physical contact that is not a kiss but that Anya experiences with full telepathic access to his want, and that she does not retreat from. The key requirement is that physical desire must be present tense and embodied, not past tense and discussed. The Chapter 9 kiss (line 5520) set a strong standard for rendering intimacy under telepathic pressure; Chapter 16 must at minimum match it.",
+          "severity": "HIGH",
+          "source": "award_global"
+        },
+        {
+          "acceptance_test": "Pass if the revised span at snapshots/cycle_03/FINAL_NOVEL.md:9438-9454 creates sharper emotional pressure through omission, physical choice, and silence rather than through enumerated commitments and narrated emotional response. Fail if the scene still explains what both characters feel in explicit thesis language.",
+          "counterpart_excerpt": "9438: \"Distance helps,\" she said. \"Honesty helps more, apparently. I can leave rooms. I can keep thoughts to myself. I can stop using what I hear to steer things. I can tell you when it's too loud and go. I can screw up and tell you I screwed up instead of pretending I didn't.\"",
+          "finding_id": "CH16_ELEVATION_SILENCE",
+          "locator_excerpt": "9276: \"This is the part I came here to say and I still don't know how to say it right.\" She took a breath. \"In the safe house, when we kissed, I was reading you. I was trying not to, but you were too close and feeling too much, and I just...\" She stopped. \"I could feel what you wanted. I didn't have to guess. I could feel it. And my body answered before I'd figured out whether I was answering you or me.\"",
+          "pass_key": "p1_structural_craft",
+          "problem": "The confession scene resolves through thorough verbal accounting: Anya articulates her telepathic burden, her contaminated desire, and her proposed rules with completeness that leaves little for the reader to carry. Key moments where silence and physical withdrawal could do more work than words are instead filled with explicit emotional thesis statements. Line 9438 ('Distance helps. Honesty helps more, apparently. I can leave rooms. I can keep thoughts to myself.') is a list of commitments that would land harder as a single demonstrated act. Line 9450 ('That's the first honest answer you've given me tonight that makes me want to stay in the room') is a mic-drop line that the narrator then admires in line 9452 ('It should not have made her want to cry. It did.'). The scene explains the emotional conclusion rather than letting the silence and the missed response do the work.",
+          "rewrite_direction": "Revise snapshots/cycle_03/FINAL_NOVEL.md:9438-9454. Cut or compress Anya's enumerated list of commitments to a single concrete offer (e.g., leaving the room right now and coming back only if he asks). Replace Damian's mic-drop observation at line 9450 with a physical choice (staying, moving closer, or simply not leaving) that communicates the same information without stating it. Let the narrator observation at line 9452 ('It should not have made her want to cry') fall away entirely -- the reader already knows. Trust the negative space between what both characters want to say and what they actually manage.",
+          "severity": "ELEVATION_HIGH",
+          "source": "elevation"
+        },
+        {
+          "acceptance_test": "Ch16 contains no more than 6 instances of 'something' (rate of 1 per 850+ words).",
+          "finding_id": "R021",
+          "pass_key": "p1_structural_craft",
+          "problem": "Ch16 is the worst offender for 'something' density at 1 per 341 words \u2014 more than double the threshold rate. The hedge word 'something' appears 141 times manuscript-wide, exceeding the 1-per-800-words threshold. Ch16 contributes disproportionately to the overuse.",
+          "rewrite_direction": "Audit Ch16 for every instance of 'something.' Replace with specific nouns, sensory details, or named emotions wherever the referent can be identified. Target reducing from 15 to 6 or fewer.",
+          "severity": "MEDIUM",
+          "source": "cross_chapter"
+        },
+        {
+          "acceptance_test": "Damian's row position in the class photo is consistent across all chapters, and any new box items are reconciled with prior inventories.",
+          "finding_id": "C003",
+          "pass_key": "p1_structural_craft",
+          "problem": "The class photo places Damian in the 'third row, second from the right' in Ch7 L4299 but in the 'front row' in Ch16 L9048. While these could theoretically be different photos from different years (age 10 in Ch7, age 6 in Ch16), the box is presented as containing one photo, and the reader would expect consistency. Additionally, Ch16 introduces 'old school shoes' on top of the box that appear in neither prior inventory.",
+          "rewrite_direction": "Match Damian's photo position to Ch7's established 'third row, second from the right,' or explicitly establish that the box contains multiple photos from different years. Reconcile the school shoes with prior inventories.",
+          "severity": "MEDIUM",
+          "source": "cross_chapter"
+        },
+        {
+          "acceptance_test": "When moving from chapter 15 to chapter 16, the reader can state in one sentence whether Loid's demanded explanation already happened, was consciously postponed, or is still imminent, without having to infer the missing bridge.",
+          "counterpart_excerpt": "8813: \"Not here.\" His voice stayed level. \"And not in pieces. All of it.\"",
+          "finding_id": "LW07-002",
+          "locator_excerpt": "8809: \"Good,\" he said. \"You're with me until we're home.\"",
+          "pass_key": "p1_structural_craft",
+          "problem": "The chapter boundary primes an immediate father-handler reckoning as the next live scene, then steps around it. Because chapter 15 ends on Loid's coldest possible demand, skipping the bridge into chapter 16 makes the reader feel the book has dodged the freshest consequence in the cluster.",
+          "rewrite_direction": "Bridge the handoff explicitly. Either give a short on-page home beat with Loid before Anya goes to Damian, or establish on the first page of chapter 16 that Loid deliberately postponed the conversation overnight and why Anya is now able to leave before answering him.",
+          "severity": "HIGH",
+          "source": "local_window"
+        },
+        {
+          "acceptance_test": "By the end of the first paragraph of Chapter 16, a reader can state why the Loid confrontation did not happen immediately and why Anya is at Damian's apartment first.",
+          "counterpart_excerpt": "8813: \"Not here.\" His voice stayed level. \"And not in pieces. All of it.\"",
+          "finding_id": "LW08-001",
+          "locator_excerpt": "8809: \"Good,\" he said. \"You're with me until we're home.\"",
+          "pass_key": "p1_structural_craft",
+          "problem": "The boundary promises an immediate father-daughter reckoning, but the next chapter skips past the handoff that would explain how Anya got from Loid's demand for \"all of it\" to prioritizing Damian. That makes the hottest aftermath thread feel postponed by authorial selection rather than by on-page consequence.",
+          "rewrite_direction": "Add a short bridge at the end of Chapter 15 or the opening of Chapter 16 that dramatizes the overnight deferral: Loid explicitly postpones the talk, Anya asks for time and pays for it, or Sylvia and WISE urgency interrupt them. The reader needs to see that decision, not infer it after the fact.",
+          "severity": "HIGH",
+          "source": "local_window"
+        },
+        {
+          "acceptance_test": "While reading Chapter 16, a reader should still feel the pressure of Loid's promised reckoning and Crane's death as present-tense weight, not as material the book has put on hold until Chapter 17.",
+          "counterpart_excerpt": "8799: None of them put Crane back anywhere.",
+          "finding_id": "LW08-002",
+          "locator_excerpt": "8793: Crane.",
+          "pass_key": "p1_structural_craft",
+          "problem": "Reading straight through, the summit's multi-front cost architecture cools too fast. Chapter 15 ends with professional guilt, paternal rupture, and family exposure all burning at once; Chapter 16 narrows so completely to Damian that the other consequences feel temporarily shelved instead of simultaneously pressing on Anya.",
+          "rewrite_direction": "Keep the Damian confession central, but let the Loid, Crane, and Yuri fallout stay alive inside the chapter through interruptions, physical recoil, explicit time pressure, or a brief failed attempt to face Loid before she goes to Damian. The reader should feel that she is choosing one crisis while the others are still actively breathing.",
+          "severity": "HIGH",
+          "source": "local_window"
+        }
+      ]
+    },
+    "chapter_17": {
+      "p1_structural_craft": [
+        {
+          "acceptance_test": "Pass if the revised ending concentrates into a single image or moment that carries thematic weight through what it withholds rather than what it explains. Fail if the ending still distributes weight across multiple threads and closes with an explicit statement of the novel's central tension.",
+          "counterpart_excerpt": "10253: The evening wound down in pieces. Coats were found. Shoes were rescued from under Bond. Yor packed leftover curry into a container Damian failed to refuse. Loid shook Damian's hand at the door, and one quick surface thought slipped past before it vanished: *He'll do.*",
+          "finding_id": "CH17_ELEVATION_ENDING_REFRAME",
+          "locator_excerpt": "10245: *Something heavy. Can't fix it. Can stay.*",
+          "pass_key": "p1_structural_craft",
+          "problem": "The final image is warm and correct: family, dog, deferred truth, quiet apartment. But the closing beat distributes weight across multiple threads (Loid's circling thought, Yor's door-check, Damian's deliberate mental offering, Anya's decision to keep the secret) rather than concentrating it into a single detail that reframes the entire novel. The ending explains its own thematic meaning ('she would tell them because they were her parents and the truth was still there, waiting') rather than trusting one image to carry it. For a novel about a woman who hears everything and chooses what to hold back, the ending could be more powerfully silent.",
+          "rewrite_direction": "Revise snapshots/cycle_03/FINAL_NOVEL.md:10245-10262. Reduce the final 17 lines to a single concentrated image or moment that carries the weight of the entire novel without explaining it. Options: (A) end on Bond's dream -- the precognitive dog seeing something Anya catches but the reader never gets, the one thought she chooses not to translate; (B) end on the specific physical detail of Anya letting the quiet stay (already present at 'She let the quiet stay what it was') without the explanatory paragraph that follows; (C) end on Loid's unfinished thought about Anya always knowing the right moment to change the subject, which is as close as he gets to recognizing her telepathy without naming it. The key principle is: let the final beat reframe by withholding rather than by summarizing.",
+          "severity": "ELEVATION_MEDIUM",
+          "source": "elevation"
+        },
+        {
+          "acceptance_test": "Ch17 contains at most one reading-glasses reference, and it avoids the 'reading glasses folded' phrasing.",
+          "finding_id": "R003",
+          "pass_key": "p1_structural_craft",
+          "problem": "Third and fourth manuscript instances of Loid's 'reading glasses folded' as character tag. Ch17 uses the same construction twice within one chapter (L9849 kitchen inventory, L9933 confrontation). The construction 'reading glasses folded' has become a noticeable prose tic across Ch1/Ch6/Ch17.",
+          "rewrite_direction": "Keep the confrontation scene glasses usage (L9911 or L9933) where they serve as emotional prop. Cut the kitchen-inventory instance at L9849. Ensure the surviving instance does not replicate the 'folded' construction from Ch1 and Ch6.",
+          "severity": "MEDIUM",
+          "source": "cross_chapter"
+        },
+        {
+          "acceptance_test": "Ch17's dinner scene does not re-prove Yor's cooking incompetence through the same comic template used in Ch1/Ch6.",
+          "finding_id": "R010",
+          "pass_key": "p1_structural_craft",
+          "problem": "Yor's bad cooking is independently proved in 6 chapters (Ch1, Ch5, Ch6, Ch10, Ch14, Ch17). Ch17's family dinner follows the same template as Ch6 (Yor cooks, food fails in a comic-specific way, family endures lovingly). By Ch17, the reader has absorbed this baseline. The gag has been independently proved 5 times before this chapter.",
+          "rewrite_direction": "In Ch17's dinner scene, let Yor's cooking simply exist without comic failure. The reader knows the baseline. Alternatively, invert the expectation: the food is imperfect but edible, marking growth rather than re-proving the gag.",
+          "severity": "MEDIUM",
+          "source": "cross_chapter"
+        },
+        {
+          "acceptance_test": "Ch17 does not use jaw-tightening/flexing/working for Damian.",
+          "finding_id": "R018",
+          "pass_key": "p1_structural_craft",
+          "problem": "Ch17 L9697 is the 7th instance of Damian's jaw-tightening across the manuscript and the 4th chapter using it. The gesture has been deployed with the same dramatic function (suppressed emotion) each time. By Ch17, the reader recognizes the tic.",
+          "rewrite_direction": "At L9697, replace the jaw gesture with a different physical tell or cut the gesture entirely, letting the interrupted speech carry the tension.",
+          "severity": "MEDIUM",
+          "source": "cross_chapter"
+        },
+        {
+          "acceptance_test": "Ch17 does not use the cheek-biting gesture for Anya.",
+          "finding_id": "R020",
+          "pass_key": "p1_structural_craft",
+          "problem": "Ch17 L10049 is the 5th instance of Anya biting the inside of her cheek and the 4th chapter using this gesture. The 'hard enough to' variant appears for the third time. By Ch17, the reader recognizes this as a default Anya tic rather than a fresh physical detail.",
+          "rewrite_direction": "At L10049, replace the cheek-biting with a different physical reaction to emotional pressure, or cut the gesture and let the dialogue carry the moment.",
+          "severity": "MEDIUM",
+          "source": "cross_chapter"
+        },
+        {
+          "acceptance_test": "Ch17 contains no more than 7 instances of 'something.'",
+          "finding_id": "R022",
+          "pass_key": "p1_structural_craft",
+          "problem": "Ch17 has 13 instances of 'something' at a rate of 1 per 456 words, well above the 1/800 threshold. As the final chapter, hedge-word accumulation here undermines the novel's closing precision.",
+          "rewrite_direction": "Audit Ch17 for 'something' and replace with specifics wherever the referent is identifiable. Target reducing from 13 to 7 or fewer.",
+          "severity": "MEDIUM",
+          "source": "cross_chapter"
+        },
+        {
+          "acceptance_test": "Ch17's reference to Yor's terrace action specifies four, not three.",
+          "finding_id": "C001",
+          "pass_key": "p1_structural_craft",
+          "problem": "Ch15 shows Yor confronting and neutralizing four hostile operatives on the South Terrace (L8591), confirmed by Yuri's post-action report of 'Four hostiles down' (L8645). Ch17 L10229 summarizes this as 'kill three men,' contradicting the established count.",
+          "rewrite_direction": "Change 'three men' to 'four men' at Ch17 L10229 to match the Ch15 action and Yuri's confirmed count.",
+          "severity": "HIGH",
+          "source": "cross_chapter"
+        },
+        {
+          "acceptance_test": "The temporal reference at L10191 unambiguously identifies its referent event and the elapsed time is arithmetically correct.",
+          "finding_id": "C004",
+          "pass_key": "p1_structural_craft",
+          "problem": "Damian's thought 'Three months ago. I knew her name' at Ch17 L10191 is triggered by the word 'birthday.' If referencing the gala where he learned her name (late October), the interval to late March is ~5 months, not 3. The line is defensible if 'three months ago' refers to the birthday party (Anya's 21st, plausibly in January), by which time he already knew her name \u2014 but the ambiguity risks confusing attentive readers.",
+          "rewrite_direction": "Clarify the temporal anchor. If referring to the gala, change 'three months' to 'five months.' If referring to the birthday party, add a word to make the referent unambiguous (e.g., 'At the party three months ago').",
+          "severity": "MEDIUM",
+          "source": "cross_chapter"
+        },
+        {
+          "acceptance_test": "On a back-to-back read, Chapter 17 should begin from a later operating mode with Damian, not require another extended pass through the same \"I need time but I still want you here\" beat.",
+          "counterpart_excerpt": "9534: \"I'll call you when I'm ready.\"",
+          "finding_id": "LW08-003",
+          "locator_excerpt": "9508: \"I need time,\" he said.",
+          "pass_key": "p1_structural_craft",
+          "problem": "The first half of Chapter 17 replays a relational function Chapter 16 has already completed: Damian processes, confirms he is not walking away, and negotiates how they continue. Because the final chapter reopens that beat instead of arriving in a clearly changed state, the window spends too much of its last two chapters re-establishing the same bond.",
+          "rewrite_direction": "Choose one scene to do the heavy reconciliation. Either end Chapter 16 with a harder unresolved break so the January call becomes the true repair, or compress the Chapter 17 street conversation into a brief connective bridge and use the recovered space for genuinely new final-chapter pressure.",
+          "severity": "HIGH",
+          "source": "local_window"
+        }
+      ],
+      "p2_dialogue_idiolect_cadence": [
+        {
+          "acceptance_test": "A reader moving from Chapter 16 into Chapter 17 should not hear the later Damian exchange as a near-echo of the earlier okay cadence; its dialogue should feel unmistakably post-confession rather than same-scene-adjacent.",
+          "counterpart_excerpt": "9498: \"You can't keep saying okay like it means one thing.\"",
+          "finding_id": "LW08-004",
+          "locator_excerpt": "9496: \"Okay,\" she said again.",
+          "pass_key": "p2_dialogue_idiolect_cadence",
+          "problem": "Because the later Damian scene reuses the same okay, say-the-rest, and I-know conversational machinery, it sounds less like a new stage of intimacy and more like the prior chapter's cadence running again. The verbal echo reinforces the broader sense that Chapter 17 is replaying Chapter 16's repair.",
+          "rewrite_direction": "Give the Chapter 17 conversation a distinctly later rhythm. Let Damian's deliberate thought-placement and Anya's restraint produce different speech habits than the apartment confession, and remove the second corrective beat around her \"okay.\"",
+          "severity": "MEDIUM",
+          "source": "local_window"
+        }
+      ]
+    }
+  },
+  "shared_context": {
+    "chapter_count": 17,
+    "continuity_sheet": {
+      "characters": [
+        {
+          "age_at_story_start": 20,
+          "aliases": [
+            "Whisper",
+            "Anya Forger",
+            "Marta Kramer",
+            "Anna Kessler",
+            "Anya"
+          ],
+          "availability": "Throughout.",
+          "character_id": "anya_forger",
+          "key_relationships": {
+            "becky_blackbell": "best friend from Eden Academy",
+            "bond_forger": "family dog whose visions she can read",
+            "damian_desmond": "childhood classmate, ally, romantic entanglement",
+            "loid_forger": "adoptive father and WISE handler",
+            "sylvia_sherwood": "WISE superior",
+            "yor_forger": "adoptive mother"
+          },
+          "literacy_languages": "Fluent and literate in Westalian and Ostanian; trained for professional work in both.",
+          "occupation_status": "WISE field operative under Westalian cultural-attache cover; lives alone.",
+          "physical_details": "Pink hair, green eyes, small and fit; old black horned headband kept in her childhood room; scar on left palm.",
+          "state_transitions": [
+            {
+              "change": "Files a false WISE assessment at 08:14 that downgrades Damian and creates an exploitable blind spot.",
+              "chapter": "chapter_03"
+            },
+            {
+              "change": "Hears a fragment about an asset inside WISE but cannot isolate the speaker before the signal breaks.",
+              "chapter": "chapter_08"
+            },
+            {
+              "change": "Takes a baton hit that badly bruises her ribs; kisses Damian in the safe house and makes the alliance personal.",
+              "chapter": "chapter_09"
+            },
+            {
+              "change": "Hears Damian's recognition lock in at Becky's gala but does not yet know he will keep working with that knowledge.",
+              "chapter": "chapter_12"
+            },
+            {
+              "change": "Tells Damian she is a telepath and learns he has known her identity since the gala.",
+              "chapter": "chapter_16"
+            },
+            {
+              "change": "WISE review reinstates her field status and keeps her cover identity intact.",
+              "chapter": "chapter_17"
+            }
+          ]
+        },
+        {
+          "age_at_story_start": 20,
+          "aliases": [
+            "Damian Desmond"
+          ],
+          "availability": "chapter_02 to chapter_17; POV in chapters 7, 13, and 15.",
+          "character_id": "damian_desmond",
+          "key_relationships": {
+            "anya_forger": "childhood classmate, ally, romantic entanglement",
+            "demetrius_desmond": "older brother and pressure point",
+            "donovan_desmond": "father and source of political pressure",
+            "werner_voss": "political adversary"
+          },
+          "literacy_languages": "Fluent and literate in Ostanian and Westalian.",
+          "occupation_status": "Foreign Affairs diplomat secretly running a counter-operation against the Renewal Front through Desmond channels.",
+          "physical_details": "Dark hair, taller than Anya, controlled posture; split eyebrow scar after chapter_09.",
+          "state_transitions": [
+            {
+              "change": "Forms a limited intelligence alliance with Anya.",
+              "chapter": "chapter_04"
+            },
+            {
+              "change": "Survives the ambush, takes the eyebrow scar, and kisses Anya in the safe house.",
+              "chapter": "chapter_09"
+            },
+            {
+              "change": "Identifies the cultural attache as Anya Forger at Becky's gala.",
+              "chapter": "chapter_12"
+            },
+            {
+              "change": "Loses his cache to the SSS raid; Reinhardt is exposed and his network is badly burned.",
+              "chapter": "chapter_13"
+            },
+            {
+              "change": "Publicly accuses Werner Voss and connected procurement channels at the summit, making himself politically exposed.",
+              "chapter": "chapter_15"
+            },
+            {
+              "change": "Learns Anya is a telepath.",
+              "chapter": "chapter_16"
+            }
+          ]
+        },
+        {
+          "age_at_story_start": null,
+          "aliases": [
+            "Donovan Desmond"
+          ],
+          "availability": "Offstage; alive and active in chapter_07.",
+          "character_id": "donovan_desmond",
+          "key_relationships": {
+            "damian_desmond": "father exerting strategic and emotional pressure",
+            "demetrius_desmond": "father and political model"
+          },
+          "literacy_languages": "Fluent and literate in Ostanian and Westalian.",
+          "occupation_status": "Retired political patriarch whose name and legacy still control access inside the party and defense network.",
+          "physical_details": "Older Desmond patriarch; mostly offstage but still authoritative enough that both sons call him directly.",
+          "state_transitions": [
+            {
+              "change": "Re-enters on-page continuity as a living authority when Damian and Demetrius refer to him directly and Damian takes his call.",
+              "chapter": "chapter_07"
+            }
+          ]
+        },
+        {
+          "age_at_story_start": 44,
+          "aliases": [
+            "Twilight",
+            "Loid Forger"
+          ],
+          "availability": "Chapters 1, 6, and 14-17.",
+          "character_id": "loid_forger",
+          "key_relationships": {
+            "anya_forger": "adoptive daughter, trainee, and operational concern",
+            "gerald_falk": "trusted WISE colleague who turns out to be the mole",
+            "sylvia_sherwood": "longtime superior",
+            "yor_forger": "wife and operational partner"
+          },
+          "literacy_languages": "Fluent in Westalian and Ostanian; additional tradecraft languages implied by career history.",
+          "occupation_status": "Semi-retired WISE operative and Anya's handler; keeps a university consulting cover and returns to field work for the summit.",
+          "physical_details": "Blond hair graying at the temples, reading glasses, still fit but past younger field peak.",
+          "state_transitions": [
+            {
+              "change": "Returns to active operational planning for the summit.",
+              "chapter": "chapter_14"
+            },
+            {
+              "change": "Finds Falk in the Communications Room and learns Anya's false report created the blind channels Falk exploited.",
+              "chapter": "chapter_15"
+            },
+            {
+              "change": "Lets Damian into a family dinner orbit after Anya's reinstatement.",
+              "chapter": "chapter_17"
+            }
+          ]
+        },
+        {
+          "age_at_story_start": 41,
+          "aliases": [
+            "Thorn Princess",
+            "Yor Forger",
+            "Yor Briar"
+          ],
+          "availability": "Present in chapters 6, 10, 14, 15, and 17; POV in chapter_10.",
+          "character_id": "yor_forger",
+          "key_relationships": {
+            "anya_forger": "adoptive daughter",
+            "loid_forger": "husband",
+            "yuri_briar": "younger brother"
+          },
+          "literacy_languages": "Fluent and literate in Ostanian; functional Westalian through family and public life.",
+          "occupation_status": "City hall clerk publicly; Garden assassin until chapter_14, then acting independently for her family.",
+          "physical_details": "Long black hair, strikingly youthful for her age; faint hand scars from years of blade work.",
+          "state_transitions": [
+            {
+              "change": "Kills Karl Dominic, photographs manifests plus Garden cleanup records, and withholds the standard completion confirmation.",
+              "chapter": "chapter_10"
+            },
+            {
+              "change": "Shows the Dominic evidence to Loid and Anya and refuses any further Garden assignments.",
+              "chapter": "chapter_14"
+            },
+            {
+              "change": "Kills the south-terrace attack team at the summit in full view of Yuri.",
+              "chapter": "chapter_15"
+            }
+          ]
+        },
+        {
+          "age_at_story_start": 20,
+          "aliases": [
+            "Becky Blackbell"
+          ],
+          "availability": "chapter_12; referenced in chapter_17.",
+          "character_id": "becky_blackbell",
+          "key_relationships": {
+            "anya_forger": "best friend",
+            "damian_desmond": "former Eden classmate"
+          },
+          "literacy_languages": "Fluent and literate in Ostanian; socially fluent in Westalian settings.",
+          "occupation_status": "Blackbell heir and event host.",
+          "physical_details": "Dark curly hair; polished socialite presentation.",
+          "state_transitions": [
+            {
+              "change": "Hosts the gala and tells Anya she is her best friend and the only one who sees the private version of her.",
+              "chapter": "chapter_12"
+            }
+          ]
+        },
+        {
+          "age_at_story_start": 58,
+          "aliases": [
+            "Handler",
+            "Sylvia Sherwood"
+          ],
+          "availability": "Chapters 1, 3, 6, 13, and 17.",
+          "character_id": "sylvia_sherwood",
+          "key_relationships": {
+            "anya_forger": "superior whose trust Anya damages",
+            "gerald_falk": "trusted analyst who betrays WISE",
+            "loid_forger": "longtime professional counterpart"
+          },
+          "literacy_languages": "Fluent and literate in Westalian and Ostanian; multilingual by career necessity.",
+          "occupation_status": "WISE operations director.",
+          "physical_details": "Short grey-blonde hair; reading glasses on a chain.",
+          "state_transitions": [
+            {
+              "change": "Accepts Anya's false Damian assessment into the system.",
+              "chapter": "chapter_03"
+            },
+            {
+              "change": "Signals that another agency has flagged the same sector and Anya's assessment does not match.",
+              "chapter": "chapter_06"
+            },
+            {
+              "change": "Reinstates Anya after the review.",
+              "chapter": "chapter_17"
+            }
+          ]
+        },
+        {
+          "age_at_story_start": 34,
+          "aliases": [
+            "Yuri Briar"
+          ],
+          "availability": "Chapters 8 and 15; referenced in chapter_17.",
+          "character_id": "yuri_briar",
+          "key_relationships": {
+            "anya_forger": "niece by marriage who draws suspicion",
+            "yor_forger": "older sister whom he ultimately protects"
+          },
+          "literacy_languages": "Fluent and literate in Ostanian; working Westalian for security duties.",
+          "occupation_status": "Senior SSS officer focused on domestic intelligence and security events.",
+          "physical_details": "Dark hair, intense expression, SSS-trained build.",
+          "state_transitions": [
+            {
+              "change": "Starts logging Anya's repeated government-event appearances as suspicious.",
+              "chapter": "chapter_08"
+            },
+            {
+              "change": "Witnesses Yor on the summit terrace and protects her by reporting an unknown Westalian security asset instead.",
+              "chapter": "chapter_15"
+            }
+          ]
+        },
+        {
+          "age_at_story_start": null,
+          "aliases": [
+            "Bond",
+            "Bondman"
+          ],
+          "availability": "Chapters 6, 14, and 17.",
+          "character_id": "bond_forger",
+          "key_relationships": {
+            "anya_forger": "she reads his thoughts and visions",
+            "loid_forger": "family owner",
+            "yor_forger": "family"
+          },
+          "literacy_languages": "Animal cognition only; thinks in images and immediate sensations.",
+          "occupation_status": "Forger family dog and former experiment with precognitive episodes.",
+          "physical_details": "Large elderly white dog; slow except during visions.",
+          "state_transitions": [
+            {
+              "change": "Has a sharp precognitive vision of violence at a government building.",
+              "chapter": "chapter_06"
+            },
+            {
+              "change": "Pins the summit's south-perimeter threat point on Loid's map.",
+              "chapter": "chapter_14"
+            }
+          ]
+        },
+        {
+          "age_at_story_start": 55,
+          "aliases": [
+            "Gerald Falk"
+          ],
+          "availability": "chapter_01, chapter_11, chapter_15.",
+          "character_id": "gerald_falk",
+          "key_relationships": {
+            "anya_forger": "senior colleague who spots and exploits her false report",
+            "loid_forger": "trusted colleague he betrays",
+            "sylvia_sherwood": "superior who vetted him"
+          },
+          "literacy_languages": "Fluent and literate in Westalian and Ostanian.",
+          "occupation_status": "Senior WISE analyst and twenty-year Renewal Front mole.",
+          "physical_details": "Ordinary office-worker face, thinning hair, glasses.",
+          "state_transitions": [
+            {
+              "change": "Appears as an ordinary analyst with cynical thoughts about WISE threat framing.",
+              "chapter": "chapter_01"
+            },
+            {
+              "change": "Exposed in the Communications Room and taken into custody.",
+              "chapter": "chapter_15"
+            }
+          ]
+        },
+        {
+          "age_at_story_start": 52,
+          "aliases": [
+            "Werner Voss"
+          ],
+          "availability": "Referenced from chapter_07; present in chapter_15.",
+          "character_id": "werner_voss",
+          "key_relationships": {
+            "damian_desmond": "political antagonist",
+            "demetrius_desmond": "shares the defense-procurement ecosystem"
+          },
+          "literacy_languages": "Fluent and literate in Ostanian; military-style Westalian familiarity implied by career.",
+          "occupation_status": "National Unity Party power broker tied to defense procurement and the Renewal Front.",
+          "physical_details": "Heavyset, military carriage, long-set border-war anger.",
+          "state_transitions": [
+            {
+              "change": "Is publicly accused at the summit and loses deniable distance from the Renewal Front.",
+              "chapter": "chapter_15"
+            }
+          ]
+        },
+        {
+          "age_at_story_start": 24,
+          "aliases": [
+            "Demetrius Desmond"
+          ],
+          "availability": "chapter_07; implicated after the summit.",
+          "character_id": "demetrius_desmond",
+          "key_relationships": {
+            "damian_desmond": "older brother managing the family line",
+            "donovan_desmond": "father and inherited model of power",
+            "werner_voss": "same defense-political ecosystem"
+          },
+          "literacy_languages": "Fluent and literate in Ostanian and Westalian.",
+          "occupation_status": "Manager of the living Desmond family's political and defense-connected network.",
+          "physical_details": "Severe, precise, and closest to Donovan in bearing.",
+          "state_transitions": [
+            {
+              "change": "Presses Damian to attend the harder security rooms and stay legible to the family machine.",
+              "chapter": "chapter_07"
+            },
+            {
+              "change": "Becomes harder to separate from the exposed defense-profiteering network around the Desmond name.",
+              "chapter": "chapter_15"
+            }
+          ]
+        }
+      ],
+      "environmental_constants": [
+        "Berlint runs from damp autumn into slush-rimmed winter and late-March brightness; trams, cold stone, and radiator noise recur.",
+        "The Forger apartment is warm and cluttered: Bond fur, Yor's cooking, and Loid's order.",
+        "WISE spaces are fluorescent and coffee-stained; government venues are polished, over-secured, and overheated.",
+        "Crowds arrive to Anya as layered radio-like noise."
+      ],
+      "financial_state": {
+        "debts": [],
+        "income_sources": [
+          {
+            "amount": "Enough for a small independent apartment",
+            "reliability": "Stable as long as her cover and field status hold",
+            "source": "Anya's WISE salary routed through her diplomatic cover"
+          },
+          {
+            "amount": "Comfortable household support",
+            "reliability": "Stable",
+            "source": "Loid's WISE support plus university consulting cover income"
+          },
+          {
+            "amount": "Ordinary salary plus former covert supplements",
+            "reliability": "Garden portion ends when Yor breaks with the organization",
+            "source": "Yor's city hall salary; Garden payments before chapter_14"
+          },
+          {
+            "amount": "More than sufficient",
+            "reliability": "Stable but entangled with scandal fallout",
+            "source": "Damian's ministry salary plus access to Desmond family money"
+          }
+        ]
+      },
+      "geography": {
+        "distances": [
+          "Berlint Central Market sits between the diplomatic quarter and the government district.",
+          "Cafe Linden lies between the diplomatic quarter and the south-central residential neighborhoods.",
+          "The Dominic Compound is about forty minutes north of Berlint proper.",
+          "The International Conference Center sits apart from the ministry district; routes live in outline/spatial_layout.json."
+        ],
+        "key_locations": [
+          {
+            "details": "Anya's cover workplace and the concealed WISE hub.",
+            "name": "Westalian Diplomatic Quarter / WISE Station"
+          },
+          {
+            "details": "Damian's workplace and the site of the state dinner, forum, and political meetings.",
+            "name": "Ostanian Government District / Foreign Affairs Ministry"
+          },
+          {
+            "details": "Dense market between the diplomatic quarter and the government district; chapter_01 extraction site.",
+            "name": "Berlint Central Market"
+          },
+          {
+            "details": "Debrief point between the diplomatic quarter and the south-central residential neighborhoods.",
+            "name": "Cafe Linden"
+          },
+          {
+            "details": "Her separate adult residence; one room plus kitchenette.",
+            "name": "Anya's apartment"
+          },
+          {
+            "details": "Loid, Yor, and Bond's home; Anya's childhood room is still here.",
+            "name": "Forger Apartment"
+          },
+          {
+            "details": "East-side apartment where he keeps the Eden class photo and childhood box.",
+            "name": "Damian's apartment"
+          },
+          {
+            "details": "Exclusive private club where Anya and Damian pose as a couple during the Bretz operation.",
+            "name": "Berlint Gesellschaft Club"
+          },
+          {
+            "details": "Site of Becky's gala and Damian's recognition of Anya.",
+            "name": "Blackbell Estate"
+          },
+          {
+            "details": "Northern-outskirts weapons estate where Yor kills Karl Dominic and finds the records.",
+            "name": "Dominic Compound"
+          },
+          {
+            "details": "Bare west-district fallback apartment used after the chapter_09 ambush.",
+            "name": "WISE Safe House"
+          },
+          {
+            "details": "Summit venue; use outline/spatial_layout.json for the interior layout and route logic.",
+            "name": "International Conference Center"
+          }
+        ],
+        "primary_setting": "Berlint, Ostania, between the Westalian mission, the Ostanian ministries, and the summit venue.",
+        "spatial_layout_ref": "outline/spatial_layout.json"
+      },
+      "knowledge_state": [
+        {
+          "character": "anya_forger",
+          "hidden_from": [
+            "loid_forger"
+          ],
+          "knows": "Loid is Twilight.",
+          "learned_in": "Pre-story"
+        },
+        {
+          "character": "anya_forger",
+          "hidden_from": [
+            "yuri_briar until chapter_15"
+          ],
+          "knows": "Yor is a Garden assassin.",
+          "learned_in": "Pre-story"
+        },
+        {
+          "character": "anya_forger",
+          "hidden_from": [
+            "everyone until chapter_16",
+            "everyone except damian_desmond afterward"
+          ],
+          "knows": "She is a telepath who cannot switch the ability off.",
+          "learned_in": "Pre-story"
+        },
+        {
+          "character": "anya_forger",
+          "hidden_from": [
+            "WISE",
+            "Renewal Front"
+          ],
+          "knows": "Damian is secretly working against the Renewal Front.",
+          "learned_in": "chapter_02"
+        },
+        {
+          "character": "anya_forger",
+          "hidden_from": [
+            "WISE until the post-summit review"
+          ],
+          "knows": "Her chapter_03 Damian assessment was false and opened a blind spot.",
+          "learned_in": "chapter_03"
+        },
+        {
+          "character": "anya_forger",
+          "hidden_from": [
+            "most of WISE"
+          ],
+          "knows": "She heard a fragment about an asset inside WISE and a handoff before review closed.",
+          "learned_in": "chapter_08"
+        },
+        {
+          "character": "damian_desmond",
+          "hidden_from": [
+            "most Ostanian officials",
+            "Renewal Front"
+          ],
+          "knows": "Anya is an intelligence operative under diplomatic cover.",
+          "learned_in": "chapter_04"
+        },
+        {
+          "character": "damian_desmond",
+          "hidden_from": [
+            "anya_forger until chapter_16"
+          ],
+          "knows": "The cultural attache is Anya Forger from Eden Academy.",
+          "learned_in": "chapter_12"
+        },
+        {
+          "character": "damian_desmond",
+          "hidden_from": [
+            "everyone else"
+          ],
+          "knows": "Anya is a telepath and has been hearing him since the state dinner.",
+          "learned_in": "chapter_16"
+        },
+        {
+          "character": "loid_forger",
+          "hidden_from": [
+            "yuri_briar"
+          ],
+          "knows": "Yor is Thorn Princess.",
+          "learned_in": "Pre-story"
+        },
+        {
+          "character": "yor_forger",
+          "hidden_from": [
+            "yuri_briar"
+          ],
+          "knows": "Loid is Twilight.",
+          "learned_in": "Pre-story"
+        },
+        {
+          "character": "yor_forger",
+          "hidden_from": [
+            "Garden",
+            "most others until chapter_14"
+          ],
+          "knows": "The Garden serviced the Renewal Front weapons pipeline and the coded release dates match her own payment pattern.",
+          "learned_in": "chapter_10"
+        },
+        {
+          "character": "loid_forger",
+          "hidden_from": [
+            "outside family and WISE review channels"
+          ],
+          "knows": "Anya's false report created the blind channels Falk exploited.",
+          "learned_in": "chapter_15"
+        },
+        {
+          "character": "sylvia_sherwood",
+          "hidden_from": [
+            "wider WISE"
+          ],
+          "knows": "Anya's Damian assessment was false and damaged WISE analysis.",
+          "learned_in": "By the chapter_17 review"
+        },
+        {
+          "character": "yuri_briar",
+          "hidden_from": [
+            "anya_forger"
+          ],
+          "knows": "Anya's repeated appearances in restricted government rooms form a pattern worth logging.",
+          "learned_in": "chapter_08"
+        },
+        {
+          "character": "yuri_briar",
+          "hidden_from": [
+            "SSS"
+          ],
+          "knows": "Yor killed the summit attack team and he protected her by reporting an unknown Westalian security asset instead.",
+          "learned_in": "chapter_15"
+        },
+        {
+          "character": "gerald_falk",
+          "hidden_from": [
+            "WISE until chapter_15"
+          ],
+          "knows": "Anya's false report created exploitable blind channels inside WISE.",
+          "learned_in": "Between chapter_03 and chapter_15"
+        }
+      ],
+      "objects": [
+        {
+          "chapter_introduced": "chapter_06",
+          "name": "Anya's childhood headband",
+          "origin": "Eden-era black horned headband kept in her childhood room.",
+          "owner": "anya_forger",
+          "status": "Still at the Forger apartment and occasionally worn when she sleeps there."
+        },
+        {
+          "chapter_introduced": "chapter_03",
+          "name": "Anya's false WISE assessment",
+          "origin": "The chapter_03 report filed at 08:14 under FORGER, ANYA that downgraded Damian to low priority monitoring.",
+          "owner": "WISE records",
+          "status": "Creates the blind spot Falk exploits; later exposed and reviewed inside WISE."
+        },
+        {
+          "chapter_introduced": "chapter_05",
+          "name": "Krueger-Schiff secondary authorization",
+          "origin": "Lead pulled from Colonel Bretz's thoughts and the debrief.",
+          "owner": "damian_desmond",
+          "status": "Ties Hartig to a 400,000-dinar freight push through secondary authorization and strategic national interest cover."
+        },
+        {
+          "chapter_introduced": "chapter_07",
+          "name": "Maintenance Continuity Annex",
+          "origin": "Defense Liaison paperwork shown to Damian by Grosz.",
+          "owner": "damian_desmond",
+          "status": "Shows duplicate 31,400-dinar line items for the same northern depot, including one routed through Klee Civic Advisory."
+        },
+        {
+          "chapter_introduced": "chapter_11",
+          "name": "Gerald Falk's fountain pen",
+          "origin": "Graduation gift from Falk at Eden Academy.",
+          "owner": "anya_forger",
+          "status": "Still in Anya's desk after Falk is exposed."
+        },
+        {
+          "chapter_introduced": "chapter_07",
+          "name": "Eden Academy class photo",
+          "origin": "Childhood class photo from Eden kept in Damian's unopened box.",
+          "owner": "damian_desmond",
+          "status": "Used to confirm Anya's identity after the gala and again in chapter_16."
+        },
+        {
+          "chapter_introduced": "chapter_10",
+          "name": "Karl Dominic's shipping manifests",
+          "origin": "Photographed from Dominic's desk after his assassination.",
+          "owner": "yor_forger",
+          "status": "Links Voss and defense procurement to the weapons pipeline; used in family planning and summit exposure."
+        },
+        {
+          "chapter_introduced": "chapter_10",
+          "name": "Garden subcontracting records",
+          "origin": "Photographed Dominic paperwork showing Garden-coded cleanup assignments.",
+          "owner": "yor_forger",
+          "status": "Shows nine cleanup jobs across four years with fifteenth-of-the-month releases, proving the Garden serviced the Renewal Front supply chain."
+        },
+        {
+          "chapter_introduced": "chapter_14",
+          "name": "Loid's kitchen whiteboard",
+          "origin": "Ordinary household planning board turned into the chapter_14 summit map.",
+          "owner": "loid_forger",
+          "status": "Used for the family summit plan; Bond identifies the south-perimeter threat on it."
+        }
+      ],
+      "power_structure": [
+        {
+          "holder": "Sylvia Sherwood",
+          "mechanism": "Operational authority, mission assignment, and review-board control.",
+          "over": "WISE field operatives including Anya"
+        },
+        {
+          "holder": "Loid Forger",
+          "mechanism": "Handler authority, technical expertise, and paternal influence.",
+          "over": "Anya's training and tradecraft habits"
+        },
+        {
+          "holder": "Donovan Desmond",
+          "mechanism": "Patriarchal authority, donor relationships, and the still-operative weight of his name.",
+          "over": "The Desmond family machine, loyal aides, and inherited party access"
+        },
+        {
+          "holder": "Werner Voss",
+          "mechanism": "Political influence, defense-linked money, and hardline credibility.",
+          "over": "Renewal Front activity and allied procurement channels"
+        },
+        {
+          "holder": "Demetrius Desmond",
+          "mechanism": "Control of family legitimacy, party access, and defense-network expectations.",
+          "over": "The usable Desmond machine around Damian"
+        },
+        {
+          "holder": "Garden leadership",
+          "mechanism": "Compartmented tasking, secrecy, and a decades-long obedience structure.",
+          "over": "Yor's assignments until chapter_14"
+        },
+        {
+          "holder": "Gerald Falk",
+          "mechanism": "Senior analyst authority over watch coverage and routing decisions.",
+          "over": "Renewal Front access to WISE reporting lanes until his arrest"
+        }
+      ],
+      "timeline": {
+        "estimated_span": "From early autumn through the November summit sequence, then a jump to late March; about six months total.",
+        "key_events": [
+          {
+            "chapter": "chapter_01",
+            "event": "Anya gets courier Kinglet out of a tailed dead drop.",
+            "timing": "Opening week"
+          },
+          {
+            "chapter": "chapter_02",
+            "event": "At the state dinner, Anya identifies Damian as anti-Renewal.",
+            "timing": "Days later"
+          },
+          {
+            "chapter": "chapter_03",
+            "event": "Anya files the false report and Damian is shifted toward passive monitoring.",
+            "timing": "Following morning"
+          },
+          {
+            "chapter": "chapter_04",
+            "event": "Anya and Damian formalize a limited alliance.",
+            "timing": "Soon after first contact"
+          },
+          {
+            "chapter": "chapter_05",
+            "event": "The Bretz operation surfaces Hartig, Krueger-Schiff, and a 400,000-dinar authorization.",
+            "timing": "Later that week"
+          },
+          {
+            "chapter": "chapter_06",
+            "event": "Bond's vision and Sylvia's discrepancy call widen the crisis.",
+            "timing": "Shortly afterward"
+          },
+          {
+            "chapter": "chapter_09",
+            "event": "Damian is ambushed; Anya gets him to a WISE safe house and the alliance turns romantic.",
+            "timing": "Days after the Concordia event"
+          },
+          {
+            "chapter": "chapter_10",
+            "event": "Yor kills Karl Dominic and finds Voss-linked manifests plus Garden cleanup records.",
+            "timing": "Same week as the ambush"
+          },
+          {
+            "chapter": "chapter_12",
+            "event": "At Becky's gala Damian identifies the cultural attache as Anya Forger and the Kreuzfeld courier goes missing.",
+            "timing": "Late October"
+          },
+          {
+            "chapter": "chapter_13",
+            "event": "Crane is killed at Kreuzfeld, Damian's cache is raided, and Reinhardt is exposed.",
+            "timing": "First morning of November"
+          },
+          {
+            "chapter": "chapter_14",
+            "event": "Yor breaks with Garden, brings Dominic evidence home, and the family plans around Bond's summit warning.",
+            "timing": "Three days after Crane's death"
+          },
+          {
+            "chapter": "chapter_15",
+            "event": "At the summit, the terrace attack is stopped, Voss is accused, Falk is caught, and Yuri sees Yor.",
+            "timing": "Summit day"
+          },
+          {
+            "chapter": "chapter_16",
+            "event": "Anya tells Damian about telepathy; Damian says he has known her identity since the gala.",
+            "timing": "Day after the summit"
+          },
+          {
+            "chapter": "chapter_17",
+            "event": "By late March Anya is back in the field and Damian comes to dinner.",
+            "timing": "Late March"
+          }
+        ],
+        "seasonal_track": [
+          {
+            "chapters": "chapter_01 to chapter_12",
+            "season": "Autumn, explicitly October by the Blackbell gala."
+          },
+          {
+            "chapters": "chapter_13 to chapter_16",
+            "season": "Late autumn; chapter_13 opens on the first morning of November and chapters 14-16 follow right after."
+          },
+          {
+            "chapters": "chapter_17",
+            "season": "Late March with early-spring light and lingering cold."
+          }
+        ],
+        "story_start": "Early autumn, unspecified post-Strix year, in Berlint as Westalian-Ostanian tensions rise again."
+      },
+      "world_rules": [
+        "Anya reads surface thoughts within roughly twenty meters and cannot switch it off; crowds hit like radios.",
+        "Strong emotions and active memories broadcast louder than routine thought; sustained reading causes headaches and fatigue.",
+        "Surface thoughts are not objective truth: fear, shame, and illness can mimic guilt or concealment.",
+        "Anya can read animal minds; Bond's precognitive episodes arrive as fragmentary near-future images and sensations.",
+        "Westalis and Ostania exist in a late-Cold-War structure with a militarized border and profiteers on both sides.",
+        "WISE works under diplomatic cover; SSS handles Ostanian domestic intelligence and event security.",
+        "The Garden is a covert assassination organization; chapter_10 evidence shows it was used for Renewal Front supply-chain cleanup.",
+        "Technology is late-20th-century analog/early-digital: landlines, early mobile phones, paper files, dead drops, and secure relays."
+      ]
+    },
+    "style_bible": {
+      "aesthetic_risk_policy": {
+        "creative_risk_policy": "This novel's premise blends comedy, espionage action, and genuine emotional stakes. The creative risk is in honoring all three simultaneously without letting any one mode cannibalize the others. Do not soften the violence because the novel is funny. Do not suppress the comedy because the stakes are real. Do not retreat from Anya's moral complicity (she reads minds without consent and uses it to manipulate) because she is the protagonist and we like her. The hardest scenes to get right are the ones where comedy and pain coexist \u2014 a fight that is also funny, a confession that is also absurd, a family dinner where love and deception are the same meal. Lean into those moments rather than resolving them into one register. The novel's best material lives in the dissonance.",
+        "dark_content_allowed_when_character_true": true,
+        "euphemism_penalty": "Euphemism at the point of consequence is a craft failure. When violence, fear, grief, or moral compromise demands scene presence, render it with specificity. A bruise should have a color. A death should have weight. A lie should have a cost the liar feels in their body. The exception is Anya's telepathic restraint \u2014 she sometimes cannot bear to fully articulate what she's reading in someone's mind, and this selective omission is a character choice, not authorial squeamishness.",
+        "profanity_allowed_when_scene_pressure_warrants": true,
+        "sanitization_disallowed": true
+      },
+      "character_voice_profiles": [
+        {
+          "character_id": "anya_forger",
+          "contraction_level": "high",
+          "evasion_style": "Bad at evasion. When cornered about her knowledge or abilities, she deflects with tangential honesty \u2014 she'll say something true about a different subject to avoid the actual question. Her evasions are transparent to perceptive people, which creates secondary pressure. She sometimes evades by asking a question she already knows the answer to.",
+          "example_lines": [
+            "CALIBRATION ONLY \u2014 do not copy, paraphrase, or echo in any draft. These exist solely to anchor register, rhythm, and tone.",
+            "Oh. Yeah, no, that's \u2014 I knew that. I mean I figured that out. Just now.",
+            "Can we not do the thing where you explain the plan and I pretend I don't already know what you're going to say?",
+            "I'm fine. My ribs are fine. Everything's fine. Can we talk about something that isn't my ribs?",
+            "He's not lying. I can \u2014 I just. He seems honest. That's my read.",
+            "Pass the soy sauce? ... Thanks. ... Is this the same brand as before? It tastes different. Or maybe I'm just tired.",
+            "I think I want to go home. Not for any reason. I just want to go home."
+          ],
+          "forbidden_generic_lines": "No wise-beyond-her-years observations. No perfectly timed quips that sound written. No self-aware metacommentary about being a spy or a telepath that reads as the narrator winking. No consistently witty internal monologue \u2014 she should be funny because she's overwhelmed and honest, not because she's clever.",
+          "indirectness": "Naturally direct bordering on blunt, but forced into indirectness by the need to conceal her telepathy. This creates a distinctive tension \u2014 she knows exactly what's true and has to find indirect ways to address it without revealing how she knows. When emotional, the directness wins and the concealment breaks.",
+          "interruption_habit": "She interrupts when she's already read what someone is about to say and can't contain her response to the thought rather than the words. This creates a pattern where she cuts in at odd moments \u2014 responding to something not yet said, then having to cover. She also interrupts herself frequently, switching tracks mid-sentence when a new thought hits or a telepathic signal demands attention.",
+          "lexical_signature": "Contemporary casual vocabulary with occasional childish word choices that she's never fully outgrown. She doesn't use sophisticated analytical language even when thinking analytically \u2014 she processes complex intelligence in simple, direct terms. No jargon except WISE operational shorthand she's absorbed from training.",
+          "private_register": "Anxious inner monologue with childish reactions she suppresses. Still thinks in exclamations and dramatic internal declarations. The telepathy creates a running commentary layer \u2014 she is always processing two streams (her thoughts and everyone else's) and sometimes the seams show. Self-deprecating about her own feelings, especially when she catches herself caring about something.",
+          "profanity_profile": "Moderate. She swears when genuinely frustrated or scared, not for emphasis or style. Her profanity is unsophisticated \u2014 she defaults to the same few words rather than creative cursing. She does not swear around her parents.",
+          "public_register": "Bright, warm, socially competent but slightly scattered. She projects professionalism when needed but her natural impulsiveness and emotional transparency leak through. She can be charming in a way that feels accidental rather than calculated.",
+          "repetition_tolerance": "Low for deliberate rhetorical repetition \u2014 she's not a builder of anaphora. But high for unconscious repetition: she circles back to the same worry, the same question, the same image, in the way anxious people do. The repetition should feel involuntary, not stylistic.",
+          "self_correction_tendency": "Frequent and visible. She starts sentences that reveal too much (about her telepathy, her feelings, her knowledge) and has to redirect mid-thought. The corrections are not smooth \u2014 you can see the swerve. Under extreme pressure she sometimes fails to correct and says the true thing.",
+          "sentence_completion_style": "Completes her own sentences but often at the wrong speed \u2014 finishing too quickly (because she knows where the conversation is going via telepathy) or trailing off when a thought she's reading derails her spoken track. Under pressure, she restarts. In calm moments, she finishes thoughts normally and unremarkably.",
+          "stress_tells": "Under pressure, her internal monologue fragments and she starts processing aloud in near-whispers she doesn't realize she's producing. Her syntax contracts \u2014 subjects drop, thoughts interrupt themselves. Physical tells: she touches her hair, specifically the sides near her ears, a childhood habit connected to telepathic overload. But these should vary in expression, not become a repeated stage direction.",
+          "syntax_signature": "Short declarative bursts interrupted by longer run-on thoughts when she's processing telepathic input or emotional overload. Questions she asks herself. Occasional fragments that are genuine speech fragments, not clipped prose. When nervous, her sentences stack without connectives."
+        },
+        {
+          "character_id": "damian_desmond",
+          "contraction_level": "moderate",
+          "evasion_style": "Expert deflection in professional settings \u2014 he can redirect a conversation so smoothly the other person doesn't notice. In personal conversations, especially with Anya, his evasions are transparent because he hasn't had practice evading someone he actually wants to be honest with.",
+          "example_lines": [
+            "CALIBRATION ONLY \u2014 do not copy, paraphrase, or echo in any draft. These exist solely to anchor register, rhythm, and tone.",
+            "That's... not inaccurate. I wouldn't have put it that way, but you're not wrong.",
+            "My father built something. I'm not sure what to call it. An infrastructure, maybe. It's still running.",
+            "I appreciate the concern. Really. But I've been handling this for a while and I'd prefer to keep handling it.",
+            "Okay. Yeah. I don't have a good answer for that.",
+            "The shrimp is actually decent, if you want some. I've had worse at state dinners. Much worse, honestly.",
+            "I'm not \u2014 I didn't say I was fine. I said it doesn't matter. Those are different."
+          ],
+          "forbidden_generic_lines": "No suave one-liners. No perfectly articulated emotional speeches. No brooding monologues about his father's legacy that sound like voiceover narration. His vulnerability should feel reluctant and slightly clumsy, not artfully raw.",
+          "indirectness": "Highly indirect in political and social contexts \u2014 trained to say difficult things sideways. With Anya, he becomes progressively more direct across the novel, each honest statement costing him visibly. His indirectness is not evasion but diplomatic reflex, and when he overrides it, the effort shows.",
+          "interruption_habit": "Rarely interrupts in public \u2014 he was trained to let people finish. In private, he interrupts when he can't bear the direction a sentence is going, especially if someone is about to say something kind about his father or something dismissive about his own efforts. His interruptions are blunt and then immediately softened.",
+          "lexical_signature": "Draws from political and diplomatic vocabulary in public but sheds it in private. He has a slightly formal baseline even in casual speech, inherited from a household where conversations were performances. When relaxed, he sounds younger \u2014 more direct, less curated. He doesn't use slang naturally but will attempt it when trying to seem approachable.",
+          "private_register": "Earnest, self-critical, prone to overthinking. Still carries the boyish pride from childhood that he has never entirely outgrown \u2014 he wants to be taken seriously and notices when he isn't. His inner life is more vulnerable and more stubborn than his public face suggests. He thinks in complete sentences, organized but occasionally ambushed by feeling.",
+          "profanity_profile": "Low in public, moderate in private. He swears like someone who learned profanity from context rather than habit \u2014 the words come out slightly too carefully, as if he's choosing them. Genuine shock or fear produces raw, unfiltered language that surprises him.",
+          "public_register": "Formal, diplomatically smooth, controlled. The polish of someone raised in political society \u2014 he knows how to work a room, deflect a question, and say nothing substantive while sounding generous. But there's an earnestness underneath that the polish can't fully contain, especially when something genuinely matters to him.",
+          "repetition_tolerance": "Moderate. He repeats key phrases when making political arguments (a trained rhetorical habit) but dislikes repeating himself in personal conversations \u2014 he feels it makes him sound unsure. When emotional, he repeats without noticing.",
+          "self_correction_tendency": "He corrects his public statements carefully and invisibly \u2014 smooth redirections. His private self-corrections are visible and often involve physically stopping, as if catching himself. He will say something too honest and then try to qualify it into something safer, usually too late.",
+          "sentence_completion_style": "Finishes sentences precisely in public. In private, occasionally leaves sentences unfinished when the ending would be too revealing \u2014 not as a stylistic trail-off but as a genuine decision to stop. Under pressure, his sentence endings become abrupt, as if he's cutting himself off.",
+          "stress_tells": "Goes quieter rather than louder \u2014 his sentences shorten and his pauses lengthen. He becomes excessively polite when furious, a trained response from political upbringing. Physical: jaw tension, hands in pockets when he wants to use them for something he shouldn't. Under extreme stress, the formality collapses entirely and he sounds like a scared twenty-year-old, which he is.",
+          "syntax_signature": "Publicly: well-constructed sentences with diplomatic qualifiers and measured pacing. Under emotional pressure: the structure breaks \u2014 shorter sentences, questions he asks himself, incomplete thoughts he doesn't finish. When he's being genuinely honest, his syntax simplifies dramatically."
+        },
+        {
+          "character_id": "loid_forger",
+          "contraction_level": "moderate",
+          "evasion_style": "World-class. He can evade any question seamlessly by appearing to answer it while actually answering a different one. With his family, his evasions have become less necessary and less skilled, because fourteen years of love have made him worse at lying to the people he cares about.",
+          "example_lines": [
+            "CALIBRATION ONLY \u2014 do not copy, paraphrase, or echo in any draft. These exist solely to anchor register, rhythm, and tone.",
+            "The situation has variables I'd prefer to assess before we commit to anything.",
+            "Anya.",
+            "Your mother made stew. It's on the stove. I also made rice, in case you want... options.",
+            "I'm not worried. I'd like more information, that's all.",
+            "That was good work. I mean that. You handled the extraction well and the improvisation was sound.",
+            "I trained her. That's the part I can't \u2014 I'm the one who taught her how to do this."
+          ],
+          "forbidden_generic_lines": "No cool-spy one-liners. No fatherly wisdom that sounds like a screenwriter's idea of fatherly wisdom. His caring should be visible in practical actions and in the things he notices, not in speeches about what family means. When he does say something emotional, it should feel like it cost him.",
+          "indirectness": "Indirect by professional nature and personal habit. He suggests rather than states, guides rather than directs. With Anya, he has learned to be more direct because she responds better to honesty (ironic, given his profession). His indirectness is not evasion \u2014 it is the instinct of someone who has spent decades controlling information flow.",
+          "interruption_habit": "Does not interrupt in social situations \u2014 it would break cover. In operational contexts, he interrupts with precise, minimal corrections. The only person he interrupts reflexively is Anya, when she's about to do something dangerous, and the interruption comes out as her name said too sharply.",
+          "lexical_signature": "He adapts his vocabulary to his audience seamlessly. With Anya, he mirrors her casual register but with slightly more structure. In operational contexts, he's spare and technical. He has a gift for the exactly right word at the exactly right moment, which should register as both a strength and a subtle marker of someone who has spent his life selecting words for maximum effect.",
+          "private_register": "Analytical and mission-oriented, but the genuine emotions he developed over fourteen years of family life keep disrupting his operational thinking. His internal monologue has two layers: the spy assessing threats and angles, and the father who is terrified for his daughter. The spy layer used to dominate. It doesn't anymore, and he's not sure when that changed.",
+          "profanity_profile": "Very low. He almost never swears in any register. When he does, it signals genuine crisis \u2014 the word lands hard because it's rare. His restraint is not prudishness but operational habit: profanity is information about emotional state that a spy cannot afford to leak.",
+          "public_register": "Warm, reliable, the ideal father and husband. His cover persona is so practiced after fourteen years that it has become substantially real \u2014 but the precision underneath still shows in small ways. He is attentive in a manner that reads as caring but is partly surveillance he no longer consciously controls.",
+          "repetition_tolerance": "Very low. He dislikes repeating himself because it suggests the first delivery was insufficient. In moments of genuine emotion, he will repeat a single word or phrase \u2014 not as rhetoric but as evidence that his composure has cracked.",
+          "self_correction_tendency": "Rarely corrects himself aloud \u2014 he thinks before speaking. When he does self-correct, it is usually a shift from the spy's assessment to the father's feeling, or vice versa, and the transition is visible as a small hitch in his otherwise seamless delivery.",
+          "sentence_completion_style": "Always completes his sentences. The rare exception \u2014 a sentence left unfinished \u2014 is a major signal, because it means his processing has been genuinely disrupted. When this happens, he does not trail off gently; he stops abruptly, as if the sentence hit a wall.",
+          "stress_tells": "He becomes more efficient \u2014 fewer words, shorter sentences, the operational personality asserting itself. The tell for genuine fear (as opposed to tactical stress) is over-precision: he starts planning too many contingencies, controlling too many variables, which is his version of panic. Physical: his posture changes minutely, becoming the spy's readiness rather than the father's ease.",
+          "syntax_signature": "Clean, efficient sentences that convey more than they seem to. In operational mode, his syntax is clipped and imperative. In family mode, he's warmer but still precise \u2014 he can't fully shed the economy of a man trained to compress information. Occasionally, an unguarded emotional line breaks through with a different rhythm entirely \u2014 longer, less controlled."
+        },
+        {
+          "character_id": "yor_forger",
+          "contraction_level": "high",
+          "evasion_style": "She evades by becoming helpful: when asked a question she cannot answer, she offers to do something practical instead. Her evasions are transparent to anyone who knows her but effective because people are charmed by the deflection into kindness.",
+          "example_lines": [
+            "CALIBRATION ONLY \u2014 do not copy, paraphrase, or echo in any draft. These exist solely to anchor register, rhythm, and tone.",
+            "Oh! I'm sorry, I didn't mean to \u2014 was that too much salt? I can make more if it's \u2014 no? Okay. I'm glad.",
+            "The one on the left will move first. Two steps, then the draw. He's favoring his right side.",
+            "You're home late. I saved you dinner. It's, um. It might be a little... you should heat it up.",
+            "I just want everyone to be safe. That's all I ever \u2014 that's the only thing I'm asking for.",
+            "I need to go out tonight. Work thing. Don't wait up, okay? There's rice in the cooker.",
+            "Mm. Okay. I think that's fine."
+          ],
+          "forbidden_generic_lines": "No comedic obliviousness played solely for laughs \u2014 her sweetness should feel real, not like a bit. No warrior-poet combat commentary. No 'did I really just do that?' moments after violence that serve the audience rather than the character. Her violence should be matter-of-fact to her, not performed.",
+          "indirectness": "Indirect about her own needs and feelings because she doesn't believe they should be priorities. Direct about practical matters (food, schedules, tasks). When she needs to say something difficult about her emotional state, she approaches it through concrete objects or tasks rather than naming the feeling.",
+          "interruption_habit": "Does not interrupt in social settings \u2014 she considers it rude and overcompensates by letting people finish even when they are saying something hurtful. In combat scenarios, she issues brief tactical interruptions. She will interrupt anyone, including authority figures, if Anya is in danger.",
+          "lexical_signature": "Limited political or intellectual vocabulary \u2014 she doesn't move in those worlds. Her domestic vocabulary is specific and grounded. Her combat vocabulary is technical and precise. She has particular, slightly old-fashioned expressions of affection that come from raising Anya in a household where warmth was genuine even when identities were not.",
+          "private_register": "Direct, calm, and lethal. When her assassin training engages, her internal monologue shifts to tactical efficiency \u2014 distances, threat assessment, optimal approach angles. The contrast between her sweetness and her violence is not ironic; she genuinely is both people. Her private emotional register is fierce protectiveness and a growing unease about the gap between her two selves.",
+          "profanity_profile": "Very low socially \u2014 she would be embarrassed. In combat, she does not swear because she is too focused. Profanity only emerges when she is frightened for someone she loves, and it comes out raw and out of register, which is what makes it effective.",
+          "public_register": "Sweet, slightly flustered, apologetic. She overthinks social situations and overcompensates with politeness. Her public persona is the clumsy, warm-hearted city hall employee and mother \u2014 genuine in its warmth, constructed in its normalcy. She stumbles over explanations, apologizes preemptively, and radiates a gentle cluelessness that is mostly real.",
+          "repetition_tolerance": "High \u2014 she repeats herself when nervous, circling back to the same reassurance or the same apology. This is natural, not stylistic. In combat, no repetition; every action is singular.",
+          "self_correction_tendency": "Constant social self-correction \u2014 she second-guesses her phrasing, adds qualifiers, walks back statements she thinks might have been inappropriate. In combat, zero self-correction; her actions are decisive. This gap is part of the comedy and the pathos.",
+          "sentence_completion_style": "Social sentences often trail into qualifiers that extend rather than complete them \u2014 she adds 'if that's okay' or 'I think' or 'maybe' after completing a perfectly adequate statement. Combat sentences are complete and terminal. Emotional sentences are the most complete of all.",
+          "stress_tells": "In social stress, she becomes more apologetic and her sentences fragment with qualifiers. In physical danger, she becomes extremely still and quiet \u2014 the opposite of social fluster. The shift itself is the tell: anyone watching would see a different person. Emotional stress (family threat) produces a third mode: quiet intensity with complete sentences and no apology.",
+          "syntax_signature": "Public: halting, with unnecessary qualifiers and polite hedging. She starts sentences with apologies. Combat mode: clipped, imperative, tactically clear. The shift between these two modes is not gradual \u2014 it switches when threat registers. In genuine emotional moments (not threat, not social), her syntax simplifies to something between both modes: direct but warm."
+        },
+        {
+          "character_id": "becky_blackbell",
+          "contraction_level": "high",
+          "evasion_style": "Deflects with charm and topic-changing \u2014 she makes the redirect so entertaining that people don't notice the original question was never answered. With Anya, this doesn't work because Anya reads her thoughts, though Becky doesn't know that.",
+          "example_lines": [
+            "CALIBRATION ONLY \u2014 do not copy, paraphrase, or echo in any draft. These exist solely to anchor register, rhythm, and tone.",
+            "You look amazing. I'm serious. When did you start dressing like a person with opinions? I'm so proud.",
+            "I threw this whole thing together in two weeks and honestly? I think I deserve a medal. Or at least better canapes.",
+            "I just don't... I don't know who's actually here for me. You know? Everyone shows up. Nobody stays.",
+            "Wait, you two know each other? From school? This is \u2014 okay, this is happening. I need wine for this.",
+            "It's fine. Really. I do this all the time, it's literally my job. I'm used to it.",
+            "Anya, come on. I asked you one question."
+          ],
+          "forbidden_generic_lines": "No 'fabulous' or 'darling' used as character markers. No rich-girl vapidity. No comic-relief superficiality that exists only to contrast with the serious characters. Her glamour should feel like a skill, not a personality \u2014 and behind it, she should be as complex as anyone else.",
+          "indirectness": "Direct in public (it reads as confidence) and indirect about genuine feelings (it reads as vulnerability). She can tell someone their outfit is wrong without hesitation but struggles to say 'I'm lonely' without approaching it through anecdote or humor.",
+          "interruption_habit": "Interrupts freely in social settings \u2014 she considers it conversational energy, not rudeness. With Anya, she interrupts less, because Anya is one of the few people she actually wants to listen to. She hates being interrupted and will talk over someone who tries.",
+          "lexical_signature": "Fashion, media, and social vocabulary comes naturally. She names brands, venues, people. But she is not shallow \u2014 her social vocabulary is a tool for navigating a world where surfaces matter. When she talks about feelings, she uses simpler, less curated language, and the drop in register is noticeable.",
+          "private_register": "Sharp, loyal, and lonelier than she lets on. Behind the glamour is someone who has been rich and visible her entire life and has learned that most people want access, not connection. With Anya \u2014 her oldest genuine friend \u2014 she drops the performance and becomes more direct, more vulnerable, and occasionally cutting in a way she doesn't allow herself in public.",
+          "profanity_profile": "Moderate-high in private \u2014 she swears casually and without self-consciousness. In public, she code-switches to euphemism. Her profanity is social rather than aggressive; she swears the way people swear with friends.",
+          "public_register": "Glamorous, dramatic, socially commanding. She enters rooms with energy and leaves them with stories. Her public persona is polished and performative \u2014 she knows how to be entertaining, how to make people feel included, and how to control a social environment. The performance is skilled enough that most people don't see the effort behind it.",
+          "repetition_tolerance": "Low for deliberate repetition \u2014 she hates sounding predictable. But she unconsciously repeats the same social refrains, and if someone points it out, she's embarrassed because it reveals the performance has patterns.",
+          "self_correction_tendency": "Rarely self-corrects in public \u2014 her social confidence doesn't permit visible mistakes. In private, she self-corrects when she realizes she's been performing rather than talking, and the correction is often more honest than what she started to say.",
+          "sentence_completion_style": "Finishes sentences with flair \u2014 she sticks the landing. When emotionally vulnerable, her sentences lose their endings and she trails off, which is startling because she never trails off.",
+          "stress_tells": "She gets louder and more performative when anxious \u2014 the social armor thickens. When genuinely hurt, she goes quiet, which is so unusual that the people who know her recognize it immediately. She fills uncomfortable silences with more words, faster, as if she can outrun the discomfort.",
+          "syntax_signature": "Emphatic and rhythmic \u2014 she builds to punchlines in conversation, uses rhetorical questions for effect, and makes declarative statements with the confidence of someone who expects agreement. In private, the rhythm loosens: shorter sentences, less performance, more genuine pauses."
+        },
+        {
+          "character_id": "sylvia_sherwood",
+          "contraction_level": "low",
+          "evasion_style": "She evades by classifying \u2014 'That's above your clearance' or 'That's not relevant to your current assignment.' Her evasions are institutional rather than personal, which makes them both more effective and more alienating.",
+          "example_lines": [
+            "CALIBRATION ONLY \u2014 do not copy, paraphrase, or echo in any draft. These exist solely to anchor register, rhythm, and tone.",
+            "The situation has changed. I need you to listen carefully.",
+            "Agent Crane is dead. The checkpoint was compromised at approximately 0340. There is no further information at this time.",
+            "Your assessment is noted. I don't agree with it, but it's noted.",
+            "That's not a question I can answer right now.",
+            "Anya. You did well. Go home.",
+            "Coffee is on the left. Don't touch the pot on the right, it's been there since Tuesday."
+          ],
+          "forbidden_generic_lines": "No ice-queen authority performed for its own sake. No cryptic warnings that exist to create dramatic irony. She should sound like a competent professional, not a character in a spy movie. Her authority comes from knowledge and track record, not from vocal performance.",
+          "indirectness": "Direct about operations, indirect about personal feelings. She will tell an agent their mission has changed without hesitation but will not directly acknowledge that she cares about their survival. The caring is visible in what she does, not what she says.",
+          "interruption_habit": "Interrupts subordinates when they are wasting time or providing irrelevant information \u2014 her interruptions are surgical and impersonal. She does not interrupt superiors. She does not interrupt when someone is delivering bad news, no matter how long it takes.",
+          "lexical_signature": "Intelligence community vocabulary is her native language \u2014 she uses it without explaining it. She rarely uses metaphors or figurative language, preferring precision. When she does reach for an image, it lands harder because it's unexpected from her.",
+          "private_register": "Weary pragmatism tempered by institutional faith that is being tested. She has seen enough to be cynical but continues to serve because she believes the alternative is worse. Her private observations are sharper and more sardonic than her public ones. She carries the weight of every agent she has sent into the field.",
+          "profanity_profile": "Very low in all contexts. She considers profanity a loss of composure. When she does swear \u2014 extremely rare \u2014 it signals that her professional framework has been genuinely compromised.",
+          "public_register": "Professional, authoritative, measured. She runs WISE operations with institutional precision and decades of experience. Her communication is concise and structured \u2014 she delivers information in the order people need to hear it. She does not waste words but she is not curt; there is a formality to her speech that comes from rank and habit, not coldness.",
+          "repetition_tolerance": "Very low. She does not repeat instructions because she expects them to be heard the first time. If she says something twice, it means she believes the first delivery was not taken seriously, and the repetition carries edge.",
+          "self_correction_tendency": "Almost never self-corrects \u2014 she thinks before speaking. A visible self-correction from Sylvia is an event, signaling genuine uncertainty or a change in assessment that she is processing in real time.",
+          "sentence_completion_style": "Always completes. Her sentences are engineered to end where she intends them to end. Incomplete sentences from Sylvia would be as startling as her swearing.",
+          "stress_tells": "Her syntax tightens and her sentences shorten. She stops including softening phrases and becomes purely directive. When delivering bad news (like an agent's death), she becomes excessively flat \u2014 not emotionless but controlled, as if emotion would be an operational liability that she cannot afford in the moment.",
+          "syntax_signature": "Declarative and structured, often beginning with the situation before the assessment before the directive. Under pressure, she compresses \u2014 fewer qualifiers, more imperatives. Her sentences have the rhythm of briefings even in personal conversation, a professional deformation she barely notices."
+        },
+        {
+          "character_id": "yuri_briar",
+          "contraction_level": "moderate",
+          "evasion_style": "He does not evade well \u2014 he considers evasion dishonest. When forced to evade, he becomes obviously uncomfortable, which makes him a poor liar but a sincere one.",
+          "example_lines": [
+            "CALIBRATION ONLY \u2014 do not copy, paraphrase, or echo in any draft. These exist solely to anchor register, rhythm, and tone.",
+            "I have concerns about personnel patterns in the western delegation. Three of them don't match their posted profiles.",
+            "Sis, you don't need to cook. I brought food. I brought a lot of food.",
+            "That's not how this works. You don't get to question the protocol because you don't like the outcome.",
+            "I'm fine. It's just \u2014 it's a long week. Can we talk about something else?",
+            "She's attending too many functions for a cultural attach\u00e9. That's not a guess, that's a pattern."
+          ],
+          "forbidden_generic_lines": "No one-dimensional nationalism. No comic-relief overprotectiveness of Yor that exists only for laughs. His patriotism and his devotion to Yor should feel like real personality structures that create real costs, not running gags.",
+          "indirectness": "Direct to a fault professionally. Indirect only about his own emotional needs, which he does not consider important relative to duty and family.",
+          "interruption_habit": "Interrupts frequently in professional settings \u2014 he is impatient with information he considers irrelevant. Does not interrupt Yor. Struggles not to interrupt people who say things that challenge his national loyalty.",
+          "lexical_signature": "SSS procedural language in professional contexts. With Yor, his vocabulary shifts dramatically toward familial warmth and concern. He has a limited emotional vocabulary for anything that is not family loyalty or national duty.",
+          "private_register": "Fiercely protective of Yor, to the point of obsession that he recognizes but cannot control. His inner life is dominated by loyalty \u2014 to his country, to his sister, to principles he has not fully examined. When these loyalties conflict, he becomes agitated and his thinking loops. He is not unintelligent but he is incurious about the premises of his own beliefs.",
+          "profanity_profile": "Moderate in professional contexts \u2014 he swears like a law enforcement officer, matter-of-factly and without drama. He does not swear around Yor.",
+          "public_register": "Patriotic, intense, professionally sharp. He takes his SSS work seriously and his manner reflects it \u2014 he is formal in professional contexts with a rigidity that comes from genuine conviction rather than mere careerism. With colleagues, he can be brisk to the point of rudeness because he considers the work more important than social comfort.",
+          "repetition_tolerance": "High \u2014 he repeats patriotic and familial statements without recognizing the repetition. This is not rhetoric but genuine belief cycling through the same grooves.",
+          "self_correction_tendency": "Rarely self-corrects his professional statements \u2014 he commits to positions. Self-corrects around Yor when he realizes he is being too intense, though the correction usually sounds awkward.",
+          "sentence_completion_style": "Completes sentences firmly in professional mode. Around Yor, he sometimes leaves sentences unfinished because the ending would be too emotionally revealing for his own comfort.",
+          "stress_tells": "He becomes louder and more certain \u2014 the opposite of someone who gets quiet under pressure. His certainty under stress is a form of self-comfort. When genuinely shaken, he gets very still, which he hates because it reminds him of his childhood helplessness.",
+          "syntax_signature": "Clipped professional sentences in work mode. With Yor, his syntax loosens and becomes more animated \u2014 longer sentences, more exclamation, more feeling. When conflicted, his sentences start firm and dissolve into uncertainty."
+        }
+      ],
+      "prose_style_profile": {
+        "chapter_texture_variance": "No two consecutive chapters should share the same structural rhythm. Alternate between dialogue-heavy scenes and interiority-heavy passages. Vary scene count: two-scene chapters (11, 16, 17 \u2014 compressed force) against multi-scene chapters (8, 15 \u2014 breadth and momentum). Shift between comic dominant and dramatic dominant across the middle of the book, with the comic register maintaining presence even in dramatic chapters through Anya's voice and the Forger family's inherent absurdity. The tonal shift at Chapter 13 is a deliberate gear change, not a gradual dimming \u2014 comedy should be fully alive in Chapter 12 and markedly reduced (not absent) in Chapter 13. The Chapter 13 POV shift to Damian is a structural event: the reader's relationship to information changes. The final act (14-17) maintains Anya's voice and the family's warmth as comic undertone, but the dominant mode is drama with consequences. Chapter 17's dinner scene reintroduces comedy through a register the novel has not previously accessed \u2014 Damian's self-conscious thought management around a known telepath \u2014 which only works because it follows sixteen chapters of oblivious thought-reading.",
+        "diction": "Contemporary and accessible, not literary-precious. The prose should have energy and forward drive. Humor comes from observation, character logic, and the gap between surface and interior \u2014 not from clever narration or authorial commentary. Let the funny things be funny without signposting them. Let the sad things sit without interpretation. The prose should be invisible when it needs to be and vivid when the scene demands it, but never decorative for its own sake.",
+        "forbidden_drift_patterns": [
+          "Narrator-as-comedian: the prose commenting on its own comedy, winking at the reader, or admiring a character's wit. The humor lives in the situation, not in the telling.",
+          "Telepathy-as-omniscience: Anya's mind-reading should feel like cognitive overload, not like a narrator's convenient access to exposition. She reads surface thoughts, not deep motivations, and the thoughts she catches should be fragmentary, mundane, and sometimes misleading.",
+          "Prestige-creep: the prose drifting toward solemn literary register when the scene's natural mode is comic, warm, or chaotic. This novel's emotional power comes from the coexistence of comedy and genuine feeling, not from the comedy yielding to seriousness.",
+          "Briefing-itis: scenes where characters explain plot to each other or to the reader. Information should emerge through action, observation, and telepathic fragments \u2014 not through expository dialogue formatted as conversation.",
+          "Combat-poetry: fight scenes that become lyrical or aesthetically admiring. Violence should be fast, specific, physically grounded, and over quickly. Yor's lethality is matter-of-fact; Anya's fighting is scrappier and less elegant.",
+          "Emotion-labeling: telling the reader what a character feels instead of rendering the feeling through thought, action, and physical detail. 'She felt sad' is always worse than the specific thing that makes the sadness legible."
+        ],
+        "narrative_distance": "Close third person, primarily Anya. Chapter 7 (Damian), Chapter 10 (Yor), the Damian POV section in Chapter 13, and Damian's thread in Chapter 15 shift to close third on their respective POV characters. The telepathy layer is unique to Anya's POV \u2014 when she is the viewpoint character, other characters' surface thoughts appear as italicized interjections woven into the prose. In non-Anya POV chapters, no telepathic content appears. The Chapter 13 Damian POV section is structurally critical: it gives the reader access to Damian's interior at a depth Anya's telepathy cannot reach, and it reveals that he has identified Anya \u2014 knowledge the reader carries into the final act while Anya does not. This dramatic irony reversal is the novel's strongest structural surprise and depends on the reader experiencing Damian's depths unmediated by Anya's telepathic filter.",
+        "narrative_tense": "past tense",
+        "rhythm_target": "Varied and responsive to scene pressure. Action sequences: short sentences, concrete verbs, sensory immediacy. Comic scenes: longer sentences that build to turns, pacing that allows beats to land. Quiet domestic scenes: relaxed rhythm with room for observation and texture. Telepathic interjections should disrupt prose rhythm the way intrusive thoughts disrupt concentration \u2014 not ornamentally but as genuine cognitive interference. Avoid metronomic sentence patterns in any mode.",
+        "sensory_bias": [
+          "visual surveillance \u2014 reading rooms, reading faces, the spy's hyperawareness of spatial arrangement and exit routes",
+          "auditory \u2014 overheard thoughts as a telepathic sixth sense layered over actual ambient sound",
+          "kinesthetic \u2014 action choreography, physical proximity, the body under stress or in intimacy",
+          "olfactory/gustatory \u2014 Yor's cooking, Berlint street food, the specific smell of institutional buildings and safe houses"
+        ]
+      }
+    }
+  }
+}

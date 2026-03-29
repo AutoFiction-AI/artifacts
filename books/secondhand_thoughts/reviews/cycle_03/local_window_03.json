@@ -1,0 +1,78 @@
+{
+  "cycle": 3,
+  "window_id": "window_03",
+  "chapters_reviewed": [
+    "chapter_05",
+    "chapter_06",
+    "chapter_07",
+    "chapter_08"
+  ],
+  "summary": "Dominant failure: chapter 8 carries real escalation, but this window muddies it by dropping chapter 6's ICC thread on re-entry, overloading the chapter 7 to 8 handoff with fresh procurement names, and partially replaying chapter 5's reception machinery. The Lang identity shift is also a direct reader-trust break.",
+  "findings": [
+    {
+      "finding_id": "LW03-001",
+      "category": "pre_scan",
+      "subcategory": "inconsistent_description",
+      "severity": "CRITICAL",
+      "chapter_id": "chapter_08",
+      "related_chapter_ids": [
+        "chapter_07"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "Chapter 7 introduces Petra Lang and consistently treats Lang as a woman in Damian's Thursday working-group line (`snapshots/cycle_03/FINAL_NOVEL.md:3919`, `snapshots/cycle_03/FINAL_NOVEL.md:3945`, `snapshots/cycle_03/FINAL_NOVEL.md:4261`). Chapter 8 then carries the same Thursday-working-group figure into the reception but describes Lang as `broad, silver-haired` and uses `he/him` (`snapshots/cycle_03/FINAL_NOVEL.md:4349`, `snapshots/cycle_03/FINAL_NOVEL.md:4439`, `snapshots/cycle_03/FINAL_NOVEL.md:4441`).",
+      "problem": "Read back-to-back, these chapters make Lang look like two different people. Because chapter 8 explicitly frames the reception as the spillover from the same meeting Damian just left, the shift lands as a continuity error rather than a new-character introduction.",
+      "rewrite_direction": "Keep one stable on-page identity for Lang across the boundary. If chapter 8 needs a different official pinning Damian beside the flowers, name that person distinctly; otherwise align the chapter 8 description and pronouns with Petra Lang from chapter 7.",
+      "acceptance_test": "A reader moving directly from chapter 7 to chapter 8 can tell at once whether `Lang` is the same person from the working group or a newly introduced official, without having to reread.",
+      "fix_owner_reason": "Later chapter owns the boundary contradiction. Chapter 8 is the first place the identity drift appears and should either preserve Petra Lang or explicitly introduce a different Lang."
+    },
+    {
+      "finding_id": "LW03-002",
+      "category": "pre_scan",
+      "subcategory": "dangling_thread",
+      "severity": "HIGH",
+      "chapter_id": "chapter_08",
+      "related_chapter_ids": [
+        "chapter_06",
+        "chapter_07"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "Chapter 6 ends with Anya turning Bond's vision into a concrete next-morning task: she identifies the International Conference Center and decides, `Tomorrow she would go in early, pull whatever public-event and venue files she could justify` (`snapshots/cycle_03/FINAL_NOVEL.md:3878`, `snapshots/cycle_03/FINAL_NOVEL.md:3892`, `snapshots/cycle_03/FINAL_NOVEL.md:3902`). Chapter 7 then fully detours into Damian's day (`snapshots/cycle_03/FINAL_NOVEL.md:3913`), and chapter 8 returns to Anya in a different operation without telling the reader whether that ICC check happened or what it produced (`snapshots/cycle_03/FINAL_NOVEL.md:4324`, `snapshots/cycle_03/FINAL_NOVEL.md:4377`).",
+      "problem": "The window asks the reader to carry an urgent, concrete summit-lead task across an intervening POV chapter and then withholds any status update when Anya comes back on-page. That makes the ICC thread feel forgotten rather than intentionally suspended.",
+      "rewrite_direction": "When chapter 8 returns to Anya, give one or two orienting sentences that state whether she checked the venue files, got nothing usable, or had to postpone because of the reception. The thread can stay unresolved, but it cannot feel dropped.",
+      "acceptance_test": "By the first Damian-Anya exchange in chapter 8, the reader can say where Anya stands on Bond's ICC lead and whether tonight's reception is replacing that task or interrupting it.",
+      "fix_owner_reason": "The missing re-anchor belongs to the later Anya chapter. Chapter 7 can pause the thread because of the POV switch, but chapter 8 needs to cash or bracket it as soon as the narrative returns to her."
+    },
+    {
+      "finding_id": "LW03-003",
+      "category": "information_flow",
+      "subcategory": "name_load_and_ambiguous_terms",
+      "severity": "HIGH",
+      "chapter_id": "chapter_08",
+      "related_chapter_ids": [
+        "chapter_07"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "Chapter 7 ends by tying Damian's Thursday danger to Kessler, Vanguard Defense, annex numbers, Voss, and a Westalian routing sheet (`snapshots/cycle_03/FINAL_NOVEL.md:4099`, `snapshots/cycle_03/FINAL_NOVEL.md:4121`, `snapshots/cycle_03/FINAL_NOVEL.md:4167`, `snapshots/cycle_03/FINAL_NOVEL.md:4219`). Chapter 8 immediately swaps the active nouns to Ackermann, Dietrich, Brandt, Strauss, and three different meanings of `review` (`snapshots/cycle_03/FINAL_NOVEL.md:4353`, `snapshots/cycle_03/FINAL_NOVEL.md:4373`, `snapshots/cycle_03/FINAL_NOVEL.md:4425`, `snapshots/cycle_03/FINAL_NOVEL.md:4506`, `snapshots/cycle_03/FINAL_NOVEL.md:4730`).",
+      "problem": "The local suspense diffuses because chapter 8 keeps adding new handlers and overloaded terminology before it cleanly maps them onto the network chapter 7 just established. A careful reader can follow the pieces, but the handoff is doing memory work when it should be sharpening immediate stakes.",
+      "rewrite_direction": "Early in chapter 8, explicitly map the new room to the chapter 7 chain: who is carrying Lang's corrected annexes, who controls the checkpoint timing, who fears Voss, and which `review` matters to tonight's handoff. If necessary, collapse one lesser name or replace one generic `review` with the specific process.",
+      "acceptance_test": "Within chapter 8's opening exchange, a reader can explain how Ackermann, Brandt, and Dietrich relate to the Lang/Kessler/Vanguard line from chapter 7 and what practical consequence a slipped `review` changes.",
+      "fix_owner_reason": "The later chapter owns the overloaded re-orientation. Chapter 8 is where the new names and duplicated terminology pile on without enough carrying context from chapter 7."
+    },
+    {
+      "finding_id": "LW03-004",
+      "category": "redundant_scene_functions",
+      "subcategory": "elite_reception_intel_repeat",
+      "severity": "HIGH",
+      "chapter_id": "chapter_08",
+      "related_chapter_ids": [
+        "chapter_05"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "Chapter 5 already gives the window an elite-room intelligence sequence built from telepathic guest-thought inventory, partial procurement fragments, Damian's mid-room reconnection, and a laugh-trigger recognition beat (`snapshots/cycle_03/FINAL_NOVEL.md:3022`, `snapshots/cycle_03/FINAL_NOVEL.md:3294`, `snapshots/cycle_03/FINAL_NOVEL.md:3431`). Chapter 8 replays much of that same machinery at a larger reception: another crowd-thought montage, another split-room compare-notes rhythm, and another laugh-triggered near-recognition spiral (`snapshots/cycle_03/FINAL_NOVEL.md:4411`, `snapshots/cycle_03/FINAL_NOVEL.md:4512`, `snapshots/cycle_03/FINAL_NOVEL.md:4746`).",
+      "problem": "Because the genuinely new material in chapter 8 is Yuri's explicit suspicion and the WISE-mole fragment, the first half spends too long feeling like a scaled-up rerun of chapter 5's social-harvest operation. Read as a cluster, the window repeats a chapter shape before the new danger fully takes over.",
+      "rewrite_direction": "Differentiate chapter 8 earlier by making Yuri/security pressure or the mole threat the dominant engine from the opening pages and cutting at least one recycled reception beat, such as the room-thought inventory, the compare-notes buffet stop, or the repeated laugh-trigger recognition rhythm.",
+      "acceptance_test": "Reading chapters 5 and 8 back-to-back, chapter 8 should feel like a distinct mode of danger by the time Damian and Anya first compare notes, rather than a second pass through the same elite-room intel function.",
+      "fix_owner_reason": "The weaker or more repetitive chapter owns this. Chapter 8 is later and repeats the earlier club-operation function before its new stakes fully differentiate it."
+    }
+  ]
+}

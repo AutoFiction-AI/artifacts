@@ -1,0 +1,228 @@
+{
+  "acceptance_targets": [
+    "[CH17_CONTINUITY_BIRTHDAY_TIMING] PASS if the revised passage at snapshots/cycle_02/chapters/chapter_17.md:193 through snapshots/cycle_02/chapters/chapter_17.md:200 no longer implies that Anya's twentieth birthday occurred roughly three months before a March chapter; FAIL if a reader can still infer a December-or-later twentieth birthday from those lines.",
+    "[CH17_CONTINUITY_DINNER_HEADCOUNT] PASS if the revised lines at snapshots/cycle_02/chapters/chapter_17.md:53 and snapshots/cycle_02/chapters/chapter_17.md:227 describe a table count that matches the on-page diners for the whole meal; FAIL if the text still claims five place settings or \"five at the table\" without a fifth human diner being physically present and accounted for.",
+    "[CH17_THOUGHT_MANAGEMENT_DEPTH] At least one of Damian's thoughts in Chapter 17 is clearly intended for Anya to receive, and Anya's narration registers the qualitative difference between a thought taken and a thought offered.",
+    "[LW08-001] Between Damian's 'I need time' and the dinner invitation, the manuscript includes an on-page beat where he reaches back out or both characters explicitly define the new terms of continuing. A reader should not have to infer the entire emotional reconnection from chapter 17 banter.",
+    "[LW08-002] By the end of chapter 17, at least one non-romantic consequence from chapter 15 has advanced through direct scene action rather than summary or implication alone. The reader should be able to point to a changed Loid-Anya or Yor-Yuri dynamic that happens on the page inside this window.",
+    "[length_chapter_17_min_words] Chapter word count is >= 4500 while preserving heading contract."
+  ],
+  "aggregation_applied": {
+    "decisions_file": "packets/cycle_02/aggregation_decisions.json",
+    "decisions_sha1": "95a1a6d74306227ded836a8c728f5d1dfabd115c"
+  },
+  "chapter_id": "chapter_17",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if the revised passage at snapshots/cycle_02/chapters/chapter_17.md:193 through snapshots/cycle_02/chapters/chapter_17.md:200 no longer implies that Anya's twentieth birthday occurred roughly three months before a March chapter; FAIL if a reader can still infer a December-or-later twentieth birthday from those lines.",
+      "chapter_id": "chapter_17",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_17.md:3; snapshots/cycle_02/chapters/chapter_17.md:193; snapshots/cycle_02/chapters/chapter_17.md:199",
+      "finding_id": "CH17_CONTINUITY_BIRTHDAY_TIMING",
+      "problem": "The chapter sets itself in the third week of March, then ties Becky and Yor's memory to Anya's twentieth birthday party and has Damian think \"Three months ago.\" The continuity sheet fixes Anya at age 20 at story start in autumn, so this line makes her twentieth birthday land months too late and creates a direct age/timeline contradiction in a late-book chapter where the chronology should be settled.",
+      "rewrite_direction": "Revise the birthday exchange centered on snapshots/cycle_02/chapters/chapter_17.md:193 and snapshots/cycle_02/chapters/chapter_17.md:199 through the surrounding beat so the recalled event matches the March timeline. Either change the party reference to a birthday number/timing that fits Anya already being 20 at story start, or remove the \"three months ago\" marker and replace it with a memory cue that does not break the established chronology.\n\nAggregator guidance:\n- Canonical choice [chapter17_recent_birthday_reference]: Any birthday party remembered as roughly three months before the Chapter 17 March coda must be Anya's twenty-first birthday, not her twentieth; otherwise the ordinal should be removed.. Grounding: The continuity sheet sets Anya at age 20 at story start in autumn and places Chapter 17 in the third week of March, so a \"twentieth birthday\" only three months earlier is chronologically impossible.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if the revised lines at snapshots/cycle_02/chapters/chapter_17.md:53 and snapshots/cycle_02/chapters/chapter_17.md:227 describe a table count that matches the on-page diners for the whole meal; FAIL if the text still claims five place settings or \"five at the table\" without a fifth human diner being physically present and accounted for.",
+      "chapter_id": "chapter_17",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_17.md:53; snapshots/cycle_02/chapters/chapter_17.md:101; snapshots/cycle_02/chapters/chapter_17.md:227",
+      "finding_id": "CH17_CONTINUITY_DINNER_HEADCOUNT",
+      "problem": "The dinner staging miscounts its own participants. The scene is written as Loid, Yor, Anya, and Damian at the table, but the chapter explicitly says Loid sets out five bowls and five place settings, then later thinks \"Five at the table.\" Because no fifth diner ever appears, the physical scene does not add up and the domestic realism this chapter depends on briefly collapses.",
+      "rewrite_direction": "Correct the table-staging spans at snapshots/cycle_02/chapters/chapter_17.md:53 and snapshots/cycle_02/chapters/chapter_17.md:227 so the count of bowls, chairs, and people matches the bodies actually present in the scene. If Bond is being counted emotionally, make that explicit without giving him a human place setting; otherwise revise the prose to a consistent four-person dinner.\n\nAggregator guidance:\n- Canonical choice [chapter17_dinner_headcount]: The dinner table has four human diners: Loid, Yor, Anya, and Damian. Bond is present in the room but not a fifth place setting.. Grounding: Chapter 17's spec defines the final beat as Damian joining the Forger table with Bond separately \"on his feet\"; no fifth human diner is established anywhere in the coda setup.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "At least one of Damian's thoughts in Chapter 17 is clearly intended for Anya to receive, and Anya's narration registers the qualitative difference between a thought taken and a thought offered.",
+      "chapter_id": "chapter_17",
+      "cycle": 2,
+      "evidence": "At snapshots/cycle_02/FINAL_NOVEL.md:4970\u20134992, Damian arrives at dinner fully aware Anya can hear him. His response is suppression and panic: 'Don't think about the wine. You brought the wine. She told you not to bring wine. Don't think about it' (4970). Later: 'She can hear me thinking about water' (4992). His thoughts spiral toward management ('Pick one. You practiced this,' 4976) but never cross into deliberate performance\u2014thinking something he means her to hear.",
+      "finding_id": "CH17_THOUGHT_MANAGEMENT_DEPTH",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:4970-4992",
+            "excerpt": "4970: Damian stood in the hall in a dark coat with his hair combed and a bottle of wine held in both hands like evidence. His thought hit Anya before his voice did: *Don't think about the wine. You brought the wine. She told you not to bring wine. Don't think about it.*\n4971: \n4972: \"Damian,\" Loid said, holding out his hand.\n4973: \n4974: The handshake was exact. Loid's were always exact. His thought ran under it: *Firm grip. Nervous. New coat. He dressed for this.*\n4975: \n[...]\n4987: \n4988: Whether that was true or diplomatic was impossible to tell.\n4989: \n4990: They sat. Yor served the curry with the hopeful pride of somebody who had spent all afternoon on a thing and needed it to count. The sauce was thick and dark. The potatoes were hard in the center. The spice hit fast enough that Anya's eyes watered on the first bite. She reached for the rice. Loid had made it perfectly, of course.\n4991: \n4992: Damian took one bite and his thoughts turned into a full-body emergency. *Oh. Oh god. My mouth. Okay. Smile. This is Anya's mother's cooking. You are going to eat this and you are going to survive it.* He reached for his water. Then panic doubled back on itself. *Don't reach too fast....",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          }
+        ],
+        "rewrite_direction": [
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:4990-5040",
+            "excerpt": "4990: They sat. Yor served the curry with the hopeful pride of somebody who had spent all afternoon on a thing and needed it to count. The sauce was thick and dark. The potatoes were hard in the center. The spice hit fast enough that Anya's eyes watered on the first bite. She reached for the rice. Loid had made it perfectly, of course.\n4991: \n4992: Damian took one bite and his thoughts turned into a full-body emergency. *Oh. Oh god. My mouth. Okay. Smile. This is Anya's mother's cooking. You are going to eat this and you are going to survive it.* He reached for his water. Then panic doubled back on itself. *Don't reach too fast. People drink water. Normal dinner water. Why am I thinking about how to drink water. She can hear me thinking about water.*\n4993: \n4994: \"This is really good, Mrs. Forger,\" he said.\n4995: \n[...]\n5035: \n5036: Damian made a noise into his water glass that might have been relief trying not to become laughter.\n5037: \n5038: Loid looked at her for a beat, then back at Damian. His surface thought flickered, quick and unreadable after the first word: *Protective.* Aloud he said, \"I'm interested in your friend's work.\"\n5039: \n5040: \"He's not my friend.\"",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "problem": "The novel's seventeen chapters build a sustained argument about the ethics and cost of involuntary telepathic access. By Chapter 17, Damian knows the truth and has stayed. But his response to Anya's telepathy remains reactive (panic, suppression, attempted thought-control). He never takes the next step: deliberately offering a thought. A moment where Damian thinks something intended for Anya\u2014a compliment too sincere for speech, a private joke, or simply an acknowledgment that he knows she can hear this and does not mind\u2014would invert the novel's central ethical tension. Telepathic intimacy becomes not just a violation Anya inflicts but a gift Damian can choose to give. This would provide genuine emotional resolution to the consent thread that runs through every chapter.",
+      "rewrite_direction": "Add a beat in the dinner scene (target: snapshots/cycle_02/FINAL_NOVEL.md:4990\u20135040) where Damian's thoughts shift from panic-management to deliberate address. Not a grand gesture. Something quiet: a thought he lets sit on the surface because he means her to have it. Anya registers the difference\u2014a thought offered rather than taken\u2014and the narrative acknowledges, even briefly, that this is new. The beat should be small enough to fit the domestic register of the scene but significant enough to mark a turning point in the telepathy-as-consent arc.\n\nAggregator guidance:\n- Cross-chapter context: Chapter 16 already ends with Damian saying one thing aloud while knowingly letting the matching thought sit on the surface for Anya to hear. Chapter 17's offered-thought beat should feel like the next step beyond that: not panic management, but a small deliberate gift of access inside the domestic dinner scene.",
+      "severity": "HIGH",
+      "source": "elevation",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Between Damian's 'I need time' and the dinner invitation, the manuscript includes an on-page beat where he reaches back out or both characters explicitly define the new terms of continuing. A reader should not have to infer the entire emotional reconnection from chapter 17 banter.",
+      "chapter_id": "chapter_17",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:4825; snapshots/cycle_02/FINAL_NOVEL.md:4835; snapshots/cycle_02/FINAL_NOVEL.md:4902; snapshots/cycle_02/FINAL_NOVEL.md:4916",
+      "finding_id": "LW08-001",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:4825",
+            "excerpt": "4825: \"I need time,\" he said.",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:4835",
+            "excerpt": "4835: \"I'll call you when I'm ready.\"",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:4902",
+            "excerpt": "4902: She called Damian on the walk.",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:4916",
+            "excerpt": "4916: Anya laughed. It came easy now, easier than it used to. Damian knew about the telepathy. He knew and had stayed, and it meant she did not have to spend every good feeling asking where it came from.",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "pass_hint": "p1_structural_craft",
+      "problem": "Chapter 16 ends on Damian explicitly asking for time and promising to call when he is ready, but chapter 17 reopens after that decision has already been made. The reader jumps from raw uncertainty and physical distance to easy phone banter and Anya internally treating Damian's staying as settled fact, so the boundary drops the very thread chapter 16 leaves hanging.",
+      "rewrite_direction": "Add a short bridge before the dinner material that shows Damian reinitiating contact and establishes what has changed between them, or move a brief version of that beat into the end of chapter 16 so chapter 17 is not carrying an off-page reconciliation.",
+      "severity": "HIGH",
+      "source": "local_window",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "By the end of chapter 17, at least one non-romantic consequence from chapter 15 has advanced through direct scene action rather than summary or implication alone. The reader should be able to point to a changed Loid-Anya or Yor-Yuri dynamic that happens on the page inside this window.",
+      "chapter_id": "chapter_17",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:4336; snapshots/cycle_02/FINAL_NOVEL.md:4506; snapshots/cycle_02/FINAL_NOVEL.md:4414; snapshots/cycle_02/FINAL_NOVEL.md:4537; snapshots/cycle_02/FINAL_NOVEL.md:4892; snapshots/cycle_02/FINAL_NOVEL.md:4942; snapshots/cycle_02/FINAL_NOVEL.md:5108",
+      "finding_id": "LW08-002",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:4336",
+            "excerpt": "4336: \"I can't. Your daughter wrote the blind spot.\"",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:4506",
+            "excerpt": "4506: His face was composed because his face was almost always composed. But his eyes had changed. Not anger. Not even disappointment yet. Recognition. The sort that arrives when scattered facts stop scattering and lock into one shape.",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:4414",
+            "excerpt": "4414: Yuri.",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:4537",
+            "excerpt": "4537: Damian had to come first. The summit had ended yesterday. Falk was in custody. Loid's unfinished questions were waiting back at the apartment, and Sylvia had not called her in yet, which meant she would. Damian had gone into the summit already knowing her real name, and if Anya left the telepathy hidden one more day then she was just adding fresh rot to old rot.",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:4892",
+            "excerpt": "4892: \"The review board has completed its assessment of your record. Your field status is reinstated, effective immediately. The cover identity remains intact. The summit exposure stayed in political channels, not intelligence ones.\"",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:4942",
+            "excerpt": "4942: He set the last bowl down. \"We still need to talk.\"",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:5108",
+            "excerpt": "5108: Under that, under all the dinner noise, Yor kept catching on the same buried thing. Not full sentences. Just scraps rising and sinking with the steam from her cup. *Yuri.* *No knock at the door.* *He stopped it.* *Not tonight.*",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "pass_hint": "p1_structural_craft",
+      "problem": "Chapter 15 detonates multiple costs at once: Loid learns Anya's false report mattered, Yuri recognizes Yor's killing, and Damian becomes politically exposed. The window then fully dramatizes only the Damian-Anya fallout. By chapter 17, WISE reinstatement arrives as boardroom summary, Loid and Anya are still postponing their real talk, and Yuri/Yor survives mostly as implied silence. Reading the three chapters together, the cluster promises a multi-front aftermath but cashes out only one front at scene level.",
+      "rewrite_direction": "Give chapter 17 one additional consequential scene-level payoff outside the Damian thread, preferably a concrete Loid-Anya exchange or a sharper Yuri/Yor state change. If that space is unavailable, reduce chapter 15's end emphasis on the unattended fallout so the window stops overpromising what it will dramatize.",
+      "severity": "HIGH",
+      "source": "local_window",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Chapter word count is >= 4500 while preserving heading contract.",
+      "chapter_id": "chapter_17",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_17.md:1",
+      "finding_id": "length_chapter_17_min_words",
+      "problem": "Chapter is below projected_min_words (2985 < 4500).",
+      "rewrite_direction": "Add causally necessary scene material that strengthens the chapter engine, increases pressure, and lands the planned state shift without filler.",
+      "severity": "HIGH",
+      "source": "length_guardrail",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "has_locator_excerpts": true,
+  "input_snapshot_hash": "b0aca748dc45ce3e88ef506d86e231eb1c6ca5567fea05bf239080fd8a6e5f37",
+  "must_fix_count": 6,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "original_snapshot_file": "snapshots/cycle_02/chapters/chapter_17.md",
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This novel's premise blends comedy, espionage action, and genuine emotional stakes. The creative risk is in honoring all three simultaneously without letting any one mode cannibalize the others. Do not soften the violence because the novel is funny. Do not suppress the comedy because the stakes are real. Do not retreat from Anya's moral complicity (she reads minds without consent and uses it to manipulate) because she is the protagonist and we like her. The hardest scenes to get right are the ones where comedy and pain coexist \u2014 a fight that is also funny, a confession that is also absurd, a family dinner where love and deception are the same meal. Lean into those moments rather than resolving them into one register. The novel's best material lives in the dissonance.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism at the point of consequence is a craft failure. When violence, fear, grief, or moral compromise demands scene presence, render it with specificity. A bruise should have a color. A death should have weight. A lie should have a cost the liar feels in their body. The exception is Anya's telepathic restraint \u2014 she sometimes cannot bear to fully articulate what she's reading in someone's mind, and this selective omission is a character choice, not authorial squeamishness.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for all characters in casual speech. Uncontracted forms reserved for emphasis, deliberate formality, or character-specific register choices (Sylvia's professional diction, Damian's diplomatic mode). In contemporary casual scenes, an unjustified full-form line should be flagged and checked.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 2
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "No two consecutive chapters should share the same structural rhythm. Alternate between dialogue-heavy scenes and interiority-heavy passages. Vary scene count: two-scene chapters (11, 16, 17 \u2014 compressed force) against multi-scene chapters (8, 15 \u2014 breadth and momentum). Shift between comic dominant and dramatic dominant across the middle of the book, with the comic register maintaining presence even in dramatic chapters through Anya's voice and the Forger family's inherent absurdity. The tonal shift at Chapter 13 is a deliberate gear change, not a gradual dimming \u2014 comedy should be fully alive in Chapter 12 and markedly reduced (not absent) in Chapter 13. The Chapter 13 POV shift to Damian is a structural event: the reader's relationship to information changes. The final act (14-17) maintains Anya's voice and the family's warmth as comic undertone, but the dominant mode is drama with consequences. Chapter 17's dinner scene reintroduces comedy through a register the novel has not previously accessed \u2014 Damian's self-conscious thought management around a known telepath \u2014 which only works because it follows sixteen chapters of oblivious thought-reading.",
+      "diction": "Contemporary and accessible, not literary-precious. The prose should have energy and forward drive. Humor comes from observation, character logic, and the gap between surface and interior \u2014 not from clever narration or authorial commentary. Let the funny things be funny without signposting them. Let the sad things sit without interpretation. The prose should be invisible when it needs to be and vivid when the scene demands it, but never decorative for its own sake.",
+      "forbidden_drift_patterns": [
+        "Narrator-as-comedian: the prose commenting on its own comedy, winking at the reader, or admiring a character's wit. The humor lives in the situation, not in the telling.",
+        "Telepathy-as-omniscience: Anya's mind-reading should feel like cognitive overload, not like a narrator's convenient access to exposition. She reads surface thoughts, not deep motivations, and the thoughts she catches should be fragmentary, mundane, and sometimes misleading.",
+        "Prestige-creep: the prose drifting toward solemn literary register when the scene's natural mode is comic, warm, or chaotic. This novel's emotional power comes from the coexistence of comedy and genuine feeling, not from the comedy yielding to seriousness.",
+        "Briefing-itis: scenes where characters explain plot to each other or to the reader. Information should emerge through action, observation, and telepathic fragments \u2014 not through expository dialogue formatted as conversation.",
+        "Combat-poetry: fight scenes that become lyrical or aesthetically admiring. Violence should be fast, specific, physically grounded, and over quickly. Yor's lethality is matter-of-fact; Anya's fighting is scrappier and less elegant.",
+        "Emotion-labeling: telling the reader what a character feels instead of rendering the feeling through thought, action, and physical detail. 'She felt sad' is always worse than the specific thing that makes the sadness legible."
+      ],
+      "narrative_distance": "Close third person, primarily Anya. Chapter 7 (Damian), Chapter 10 (Yor), the Damian POV section in Chapter 13, and Damian's thread in Chapter 15 shift to close third on their respective POV characters. The telepathy layer is unique to Anya's POV \u2014 when she is the viewpoint character, other characters' surface thoughts appear as italicized interjections woven into the prose. In non-Anya POV chapters, no telepathic content appears. The Chapter 13 Damian POV section is structurally critical: it gives the reader access to Damian's interior at a depth Anya's telepathy cannot reach, and it reveals that he has identified Anya \u2014 knowledge the reader carries into the final act while Anya does not. This dramatic irony reversal is the novel's strongest structural surprise and depends on the reader experiencing Damian's depths unmediated by Anya's telepathic filter.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Varied and responsive to scene pressure. Action sequences: short sentences, concrete verbs, sensory immediacy. Comic scenes: longer sentences that build to turns, pacing that allows beats to land. Quiet domestic scenes: relaxed rhythm with room for observation and texture. Telepathic interjections should disrupt prose rhythm the way intrusive thoughts disrupt concentration \u2014 not ornamentally but as genuine cognitive interference. Avoid metronomic sentence patterns in any mode.",
+      "sensory_bias": [
+        "visual surveillance \u2014 reading rooms, reading faces, the spy's hyperawareness of spatial arrangement and exit routes",
+        "auditory \u2014 overheard thoughts as a telepathic sixth sense layered over actual ambient sound",
+        "kinesthetic \u2014 action choreography, physical proximity, the body under stress or in intimacy",
+        "olfactory/gustatory \u2014 Yor's cooking, Berlint street food, the specific smell of institutional buildings and safe houses"
+      ]
+    }
+  }
+}

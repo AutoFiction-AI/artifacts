@@ -1,0 +1,80 @@
+{
+  "cycle": 1,
+  "window_id": "window_05",
+  "chapters_reviewed": [
+    "chapter_09",
+    "chapter_10",
+    "chapter_11",
+    "chapter_12"
+  ],
+  "summary": "Dominant failure: chapter 11 functions like a bridge chapter but repeats telepathy-guilt material and leaves the Yor/Garden aftershock under-bridged, while chapter 9 partially spends the recognition payoff that chapter 12 is supposed to detonate.",
+  "findings": [
+    {
+      "finding_id": "LW05-001",
+      "category": "information_flow",
+      "subcategory": "premature_partial_payoff",
+      "severity": "HIGH",
+      "chapter_id": "chapter_09",
+      "related_chapter_ids": [
+        "chapter_12"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2361; snapshots/cycle_01/FINAL_NOVEL.md:2365; snapshots/cycle_01/FINAL_NOVEL.md:2423; snapshots/cycle_01/FINAL_NOVEL.md:2457; snapshots/cycle_01/FINAL_NOVEL.md:2465; snapshots/cycle_01/FINAL_NOVEL.md:3146",
+      "problem": "Chapter 9 already lets Damian reach Anya's exact name in thought, then repeat it in sleep, so when chapter 12 frames the gala beat as the decisive lock-clicking recognition, the cluster reads it as confirmation of a conclusion he has effectively already had rather than the first irreversible identification.",
+      "rewrite_direction": "In chapter 9, keep Damian at sensory and memory recognition without the fully articulated name, or else make chapter 12 pay off with an immediate outward consequence that goes beyond internal confirmation.",
+      "acceptance_test": "After chapter 9, a reader should feel that Damian is close to placing her, but should not be able to point to an earlier internal full-name identification. Chapter 12 should be the first unambiguous moment where Damian fully locks Anya to Anya Forger.",
+      "fix_owner_reason": "Chapter 9 is over-spending a later payoff. The earlier chapter should preserve recognition pressure instead of partially cashing it out before the gala reveal."
+    },
+    {
+      "finding_id": "LW05-002",
+      "category": "character_decision_coherence",
+      "subcategory": "unbridged_priority_shift",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "related_chapter_ids": [
+        "chapter_10"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2702; snapshots/cycle_01/FINAL_NOVEL.md:2704; snapshots/cycle_01/FINAL_NOVEL.md:2708; snapshots/cycle_01/FINAL_NOVEL.md:2723; snapshots/cycle_01/FINAL_NOVEL.md:2725; snapshots/cycle_01/FINAL_NOVEL.md:2733",
+      "problem": "Chapter 10 ends with Anya hearing that the Garden's code appears in Dominic's records and with Yor internally cracking under that realization, but chapter 11 jumps straight to 'three days inside WISE headquarters' without any on-page triage of why the mole hunt outranks the Yor/Garden emergency. In sequence, the prior chapter's family-operational collision feels topic-switched away rather than consciously shelved.",
+      "rewrite_direction": "Add a short bridge at the start of chapter 11, or in its first investigative beat, clarifying why Anya cannot act on what she read from Yor yet: no physical evidence, no safe way to approach Yor, and a shorter clock on the WISE leak tied to Damian's warning.",
+      "acceptance_test": "By the end of chapter 11, the reader should be able to explain why Anya stayed on the mole hunt first and what risk she believes she is accepting by leaving Yor's crisis untouched for three days.",
+      "fix_owner_reason": "The later chapter owns the missing boundary bridge. Chapter 11 is where the unexplained three-day pivot occurs."
+    },
+    {
+      "finding_id": "LW05-003",
+      "category": "redundant_scene_functions",
+      "subcategory": "telepathy_guilt_restatement",
+      "severity": "HIGH",
+      "chapter_id": "chapter_11",
+      "related_chapter_ids": [
+        "chapter_10",
+        "chapter_12"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2708; snapshots/cycle_01/FINAL_NOVEL.md:2710; snapshots/cycle_01/FINAL_NOVEL.md:2807; snapshots/cycle_01/FINAL_NOVEL.md:2809; snapshots/cycle_01/FINAL_NOVEL.md:2855; snapshots/cycle_01/FINAL_NOVEL.md:3290; snapshots/cycle_01/FINAL_NOVEL.md:3302",
+      "problem": "Read consecutively, chapters 10, 11, and 12 all stage the same function: Anya receives unconsented access to someone's private pain and then reframes telepathy as a universal violation against people who trust her. Chapter 10 already broadens the Damian beat to 'everyone she loves,' and chapter 12 personalizes it through Becky. Chapter 11 therefore repeats the moral theorem instead of letting its distinctive contribution be the operational lesson that telepathy can produce a costly false positive.",
+      "rewrite_direction": "Keep Dreher's misread and Falk's opacity, but compress one or both guilt-summing paragraphs in chapter 11 and spend that space on changed investigative behavior, sharper mole pressure, or a more concrete consequence from the wasted two days.",
+      "acceptance_test": "When chapters 10 through 12 are read back-to-back, chapter 11 should register first as the wrong-answer chapter, not as the third consecutive chapter recapitulating that telepathy violates trust.",
+      "fix_owner_reason": "The weaker repeated function sits in the middle of the run. Chapter 11 can cede the broader telepathy-guilt articulation to chapters 10 and 12 and keep its own lane."
+    },
+    {
+      "finding_id": "LW05-004",
+      "category": "cross_chapter_prose_patterns",
+      "subcategory": "abstract_scaffold_repetition",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "related_chapter_ids": [
+        "chapter_09",
+        "chapter_10",
+        "chapter_12"
+      ],
+      "pass_hint": "p3_prose_copyedit",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2451; snapshots/cycle_01/FINAL_NOVEL.md:2704; snapshots/cycle_01/FINAL_NOVEL.md:2710; snapshots/cycle_01/FINAL_NOVEL.md:2723; snapshots/cycle_01/FINAL_NOVEL.md:2729; snapshots/cycle_01/FINAL_NOVEL.md:2765; snapshots/cycle_01/FINAL_NOVEL.md:3288",
+      "problem": "Across the run, different shocks keep arriving under the same abstract framing vocabulary: 'the thing about...' and repeated uses of 'structural' to label crack, violation, headache, and concealment. Read consecutively, that shared phrasing starts to sound like the narration is pre-classifying each beat instead of letting each chapter discover its own texture.",
+      "rewrite_direction": "Replace the later recurrences with chapter-specific concrete language: bodily residue in chapter 11, social disorientation in chapter 12, or more Yor- and Anya-specific imagery instead of reusing the same abstract scaffold words.",
+      "acceptance_test": "A local copyedit pass should remove the repeated abstract labels so these consecutive chapters no longer lean on 'structural' or 'the thing about' as default framing for crisis.",
+      "fix_owner_reason": "Chapter 11 compounds the pattern most densely immediately after chapter 10, so trimming and rephrasing there will reduce the local echo fastest."
+    }
+  ]
+}

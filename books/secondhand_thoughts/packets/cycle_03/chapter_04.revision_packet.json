@@ -1,0 +1,221 @@
+{
+  "acceptance_targets": [
+    "[COMPOSED_CH04] Pass if the revised corridor negotiation contains at least two exchanges where the speakers are rhythmically unbalanced -- one overexplaining, one underresponding, or a line landing wrong and being corrected. Fail if the alliance terms still emerge through evenly weighted stichomythia.",
+    "[R016] Ch4 contains no more than 2 references to fluorescent light.",
+    "[R017] Ch4 contains at most one jaw-tightening gesture for Damian.",
+    "[R019] Ch4 contains at most one cheek-biting instance.",
+    "[R023] Ch4 contains no more than 9 instances of 'something.'",
+    "[LW01-002] Within the first paragraph of chapter 4, a consecutive reader can tell exactly how much time has passed since Damian's invitation, whether any contact occurred in the skipped days, and whether the scene is cashing the same forum promised in chapter 3 or a different one.",
+    "[LW02-001] After reading chapter 3, the reader should not need chapter 4 to restate the entire 'false report bought access' logic; the later passage should add a fresh consequence tied to Brandt, Gessler, or the new paper trail."
+  ],
+  "aggregation_applied": {
+    "decisions_file": "packets/cycle_03/aggregation_decisions.json",
+    "decisions_sha1": "5b1896d0d80c5b6ca52bc77fd008f267c508d6cc"
+  },
+  "chapter_id": "chapter_04",
+  "cycle": 3,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if the revised corridor negotiation contains at least two exchanges where the speakers are rhythmically unbalanced -- one overexplaining, one underresponding, or a line landing wrong and being corrected. Fail if the alliance terms still emerge through evenly weighted stichomythia.",
+      "chapter_id": "chapter_04",
+      "cycle": 3,
+      "evidence": "snapshots/cycle_03/FINAL_NOVEL.md:2316; snapshots/cycle_03/FINAL_NOVEL.md:2484",
+      "finding_id": "COMPOSED_CH04",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:2316",
+            "excerpt": "2316: \"What do you want?\" he asked.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:2484",
+            "excerpt": "2484: \"Work,\" she said.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          }
+        ],
+        "rewrite_direction": [
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:2316-2400",
+            "excerpt": "2316: \"What do you want?\" he asked.\n2317: \n2318: \"Brandt off your back, first.\" She uncrossed her arms. \"After that? Shared intelligence. Limited. Specific. Enough to make it harder for the Front to move without somebody noticing.\"\n2319: \n2320: \"You say that as if we're already on the same side.\"\n2321: \n[...]\n2395: \n2396: He considered her. The fluorescent light made the shadows under his eyes look older than the rest of him.\n2397: \n2398: \"My side of this isn't abstract,\" he said. \"If Gessler gets enough paper to justify it, he'll pull my staff records, my scheduling history, everything. He'll sit on it until he can make a loyalty question out of any name that repeats too often. One wrong inference and people who never asked for any of this get questioned because they happened to have coffee with me twice in one month.\"\n2399: \n2400: That cost something to admit. She could see the cost more than hear it. His voice lost structure when it got close to people who mattered.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "problem": "The service-corridor alliance negotiation produces perfectly balanced exchanges: 'Shared intelligence. Limited. Specific.' / 'You say that as if we're already on the same side.' / 'We're both in this hallway. That's all I'm saying.' Each line is precisely the right length and weight for its dramatic position. Two people who have just been forced into a dangerous corridor meeting after barely three encounters would produce messier, less balanced dialogue -- more false starts, more tactical hedging, more sentences that don't land where the speaker intended.",
+      "rewrite_direction": "Revise snapshots/cycle_03/FINAL_NOVEL.md:2316-2400. Break the stichomythic balance in the alliance negotiation. Let one character (likely Damian) overexplain his position while the other responds with silence or a non-sequitur. Let the terms emerge through awkward negotiation rather than through balanced volley. At least two exchanges in this span should sound like people who do not yet trust each other trying to build terms on the fly, not like writers who have already agreed on the scene's thematic conclusion.",
+      "severity": "MEDIUM",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch4 contains no more than 2 references to fluorescent light.",
+      "chapter_id": "chapter_04",
+      "cycle": 3,
+      "evidence": "Ch4 fluorescent references at 4 locations; manuscript total: 18 across 9 chapters (Ch1:2, Ch3:2, Ch4:4, Ch6:1, Ch10:1, Ch11:3, Ch13:2, Ch15:1, Ch16:2)",
+      "finding_id": "R016",
+      "problem": "The word 'fluorescent' appears 18 times across 9 chapters. Ch4 is the densest with 4 instances. For 10-20 occurrences, the target is 4-6 retained instances manuscript-wide. Ch4 can retain 1-2 and cut 2-3 to bring the total below the keep-range ceiling.",
+      "rewrite_direction": "Reduce Ch4's fluorescent references from 4 to 1-2. Keep the strongest atmospheric instance. Replace others with varied institutional lighting descriptors (overhead, strip, white, buzzing).",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch4 contains at most one jaw-tightening gesture for Damian.",
+      "chapter_id": "chapter_04",
+      "cycle": 3,
+      "evidence": "Ch4 jaw-tightening: L2162 'Damian's jaw flexed once', L2276 'His jaw worked', L2490 'His jaw tightened'; also in Ch3 (L1409, L1827), Ch15 (L8203), Ch17 (L9697); total 7 Damian jaw-tightening instances across 4 chapters",
+      "finding_id": "R017",
+      "problem": "Damian's jaw-tightening/flexing/working is used 3 times within Ch4 alone and 7 times across 4 chapters (Ch3, Ch4, Ch15, Ch17). The gesture has become a default tension indicator for this character. Ch4's concentration of 3 instances in one chapter is the worst local cluster.",
+      "rewrite_direction": "Keep one jaw-tightening in Ch4 (L2490 is the most dramatically weighted). Cut or replace L2162 and L2276 with varied tension indicators (hands, posture, silence, breath).",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch4 contains at most one cheek-biting instance.",
+      "chapter_id": "chapter_04",
+      "cycle": 3,
+      "evidence": "Ch4 cheek-biting: L2210 'She bit the inside of her cheek hard enough to get copper', L2568 'She had bitten the inside of her cheek hard enough to split skin'; also Ch1 L185, Ch12 L6324, Ch17 L10049; total 5 instances across 4 chapters",
+      "finding_id": "R019",
+      "problem": "Anya biting the inside of her cheek appears 5 times across 4 chapters (Ch1, Ch4, Ch12, Ch17), with Ch4 containing two instances. The 'hard enough to [physical consequence]' construction appears in 3 of 5 instances. The gesture serves the same dramatic function each time (suppressing a visible reaction).",
+      "rewrite_direction": "Cut one of Ch4's two cheek-biting instances (L2568 is the most expendable since L2210 is closer to the moment of reaction). If the 'hard enough to' construction is kept anywhere, vary the physical consequence.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch4 contains no more than 9 instances of 'something.'",
+      "chapter_id": "chapter_04",
+      "cycle": 3,
+      "evidence": "Ch4: 17 instances of 'something' in 7,786 prose words = 1 per 458 words; manuscript-wide: 141/102,891 = 1 per 730 words",
+      "finding_id": "R023",
+      "problem": "Ch4 has the highest absolute count (17 instances) of 'something' at a rate of 1 per 458 words. This is the novel's longest sustained Anya-Damian interaction chapter and the hedge word weakens the precision of their exchanges.",
+      "rewrite_direction": "Audit Ch4 for 'something' and replace with specifics. Target reducing from 17 to 9 or fewer.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Within the first paragraph of chapter 4, a consecutive reader can tell exactly how much time has passed since Damian's invitation, whether any contact occurred in the skipped days, and whether the scene is cashing the same forum promised in chapter 3 or a different one.",
+      "chapter_id": "chapter_04",
+      "cycle": 3,
+      "evidence": "snapshots/cycle_03/FINAL_NOVEL.md:1898",
+      "finding_id": "LW01-002",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:1898",
+            "excerpt": "1898: Eight days after Damian walked out of the arts reception with the Westalian mission address in his pocket, Anya was back in the Foreign Affairs Ministry under another name. Tonight the badge on her jacket said ANNA KESSLER, because this room liked full names and department lines and last names that matched the guest list. A week ago he'd gotten Anya, easy and informal, because the cultural exchange people treated first names like a policy instrument. The state dinner had been a third card for a third room. If anybody from either government ever laid the badges side by side, they'd stop laughing at the bureaucracy and start asking harder questions.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          }
+        ],
+        "problem": [
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:1775",
+            "excerpt": "1775: He rubbed a thumb once against the rim of the glass. \"There's a forum at the ministry on Thursday afternoon. Trade and cultural appropriations.\"",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:1797",
+            "excerpt": "1797: \"I mean tomorrow,\" he said. \"I'll send them tomorrow.\"",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:1891",
+            "excerpt": "1891: The report was in WISE's system now. Her cover address was in Damian's pocket. By tomorrow there would be a ministry forum in her inbox, and her own signature was already sliding deeper into archive behind two secure doors.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "pass_hint": "p1_structural_craft",
+      "problem": "Chapter 3 frames the ministry forum as the next concrete step: Damian invites her to 'a forum at the ministry on Thursday afternoon' and promises to send details tomorrow (`snapshots/cycle_03/FINAL_NOVEL.md:1775`, `snapshots/cycle_03/FINAL_NOVEL.md:1797`), then the chapter closes by telling the reader there will be a ministry forum in her inbox by tomorrow (`snapshots/cycle_03/FINAL_NOVEL.md:1891`). Chapter 4 opens eight days after the reception without clarifying whether this is that same forum, a delayed version of it, or a later contact point, so the reader has to stop and reconstruct the calendar at the boundary.",
+      "rewrite_direction": "Anchor the opening of chapter 4 to the prior invitation in plain language. If this is the same forum, say the event was scheduled for the following week; if it is not, say what happened to the first invitation and why the gap matters.",
+      "severity": "MEDIUM",
+      "source": "local_window",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "After reading chapter 3, the reader should not need chapter 4 to restate the entire 'false report bought access' logic; the later passage should add a fresh consequence tied to Brandt, Gessler, or the new paper trail.",
+      "chapter_id": "chapter_04",
+      "cycle": 3,
+      "evidence": "Chapter 3 already lands that Anya's lie to Sylvia bought her room with Damian at snapshots/cycle_03/FINAL_NOVEL.md:1881. Chapter 4 later restates the same causal chain almost from zero, including that the alliance exists because she falsified Damian downward and bought herself room with the fraud, at snapshots/cycle_03/FINAL_NOVEL.md:2749.",
+      "finding_id": "LW02-001",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:1881",
+            "excerpt": "1881: She had blown past the twenty-minute mark, let the recognition question live, and accepted a second meeting in a ministry room because he offered it and because she wanted it. The lie to Sylvia had bought her room. She had used all of it and already started spending tomorrow's.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:2749",
+            "excerpt": "2749: The alliance existed because she had falsified Damian downward in WISE's system. That wasn't an emotional distinction. It was operational fact. If she'd written the true report, Sylvia would have escalated him, somebody more senior and cleaner would have taken the contact question away from her, and tonight she would not have been free to improvise in a ministry forum under a diplomatic badge. She had bought herself room with institutional fraud and then spent the room on him.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "pass_hint": "p1_structural_craft",
+      "problem": "Read back-to-back, the reader is told twice at near-full weight that the false report created the opening with Damian. The later passage does not materially change the meaning of the earlier one, so the cluster pauses to re-explain a point the boundary has already made legible.",
+      "rewrite_direction": "Keep the later recap focused on what is newly dangerous after the forum and the Tuesday note, rather than replaying the full explanation that the lie enabled contact in the first place.",
+      "severity": "MEDIUM",
+      "source": "local_window",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "has_locator_excerpts": true,
+  "input_snapshot_hash": "0fd0d1b640c37a2b1f043fd73b098c7c12cc8c89533af82645619dadbc95c318",
+  "must_fix_count": 7,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness.",
+    "Audit every revised passage for hedge words ('something,' 'somehow,' 'seemed to,' 'a kind of,' 'almost'). Replace with specifics wherever the referent can be identified. Intentional vagueness is permitted only when a character is genuinely uncertain or a telepathic signal is genuinely fragmentary. The default must be precision, not approximation.",
+    "In any revised dialogue exchange of three or more volleys, ensure at least one moment of rhythmic imbalance: a line that lands wrong, a response at the wrong register, a silence where speech was expected, or a sentence the speaker visibly regrets starting. Do not produce perfectly weighted stichomythia where every line advances the theme at the same pace and length.",
+    "Once a chapter's dramatic climax has landed, close within 10-15 lines. Do not extend into narratorial meditation, moral processing, or enumeration of what the climax means. End on a physical detail, an unresolved image, or a single unprocessed sensation. The reader carries the meaning; the chapter's job is to leave them in the collision, not to summarize it."
+  ],
+  "original_snapshot_file": "snapshots/cycle_03/chapters/chapter_04.md",
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This novel's premise blends comedy, espionage action, and genuine emotional stakes. The creative risk is in honoring all three simultaneously without letting any one mode cannibalize the others. Do not soften the violence because the novel is funny. Do not suppress the comedy because the stakes are real. Do not retreat from Anya's moral complicity (she reads minds without consent and uses it to manipulate) because she is the protagonist and we like her. The hardest scenes to get right are the ones where comedy and pain coexist \u2014 a fight that is also funny, a confession that is also absurd, a family dinner where love and deception are the same meal. Lean into those moments rather than resolving them into one register. The novel's best material lives in the dissonance.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism at the point of consequence is a craft failure. When violence, fear, grief, or moral compromise demands scene presence, render it with specificity. A bruise should have a color. A death should have weight. A lie should have a cost the liar feels in their body. The exception is Anya's telepathic restraint \u2014 she sometimes cannot bear to fully articulate what she's reading in someone's mind, and this selective omission is a character choice, not authorial squeamishness.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for all characters in casual speech. Uncontracted forms reserved for emphasis, deliberate formality, or character-specific register choices (Sylvia's professional diction, Damian's diplomatic mode). In contemporary casual scenes, an unjustified full-form line should be flagged and checked.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 2
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "No two consecutive chapters should share the same structural rhythm. Alternate between dialogue-heavy scenes and interiority-heavy passages. Vary scene count: two-scene chapters (11, 16, 17 \u2014 compressed force) against multi-scene chapters (8, 15 \u2014 breadth and momentum). Shift between comic dominant and dramatic dominant across the middle of the book, with the comic register maintaining presence even in dramatic chapters through Anya's voice and the Forger family's inherent absurdity. The tonal shift at Chapter 13 is a deliberate gear change, not a gradual dimming \u2014 comedy should be fully alive in Chapter 12 and markedly reduced (not absent) in Chapter 13. The Chapter 13 POV shift to Damian is a structural event: the reader's relationship to information changes. The final act (14-17) maintains Anya's voice and the family's warmth as comic undertone, but the dominant mode is drama with consequences. Chapter 17's dinner scene reintroduces comedy through a register the novel has not previously accessed \u2014 Damian's self-conscious thought management around a known telepath \u2014 which only works because it follows sixteen chapters of oblivious thought-reading.",
+      "diction": "Contemporary and accessible, not literary-precious. The prose should have energy and forward drive. Humor comes from observation, character logic, and the gap between surface and interior \u2014 not from clever narration or authorial commentary. Let the funny things be funny without signposting them. Let the sad things sit without interpretation. The prose should be invisible when it needs to be and vivid when the scene demands it, but never decorative for its own sake.",
+      "forbidden_drift_patterns": [
+        "Narrator-as-comedian: the prose commenting on its own comedy, winking at the reader, or admiring a character's wit. The humor lives in the situation, not in the telling.",
+        "Telepathy-as-omniscience: Anya's mind-reading should feel like cognitive overload, not like a narrator's convenient access to exposition. She reads surface thoughts, not deep motivations, and the thoughts she catches should be fragmentary, mundane, and sometimes misleading.",
+        "Prestige-creep: the prose drifting toward solemn literary register when the scene's natural mode is comic, warm, or chaotic. This novel's emotional power comes from the coexistence of comedy and genuine feeling, not from the comedy yielding to seriousness.",
+        "Briefing-itis: scenes where characters explain plot to each other or to the reader. Information should emerge through action, observation, and telepathic fragments \u2014 not through expository dialogue formatted as conversation.",
+        "Combat-poetry: fight scenes that become lyrical or aesthetically admiring. Violence should be fast, specific, physically grounded, and over quickly. Yor's lethality is matter-of-fact; Anya's fighting is scrappier and less elegant.",
+        "Emotion-labeling: telling the reader what a character feels instead of rendering the feeling through thought, action, and physical detail. 'She felt sad' is always worse than the specific thing that makes the sadness legible."
+      ],
+      "narrative_distance": "Close third person, primarily Anya. Chapter 7 (Damian), Chapter 10 (Yor), the Damian POV section in Chapter 13, and Damian's thread in Chapter 15 shift to close third on their respective POV characters. The telepathy layer is unique to Anya's POV \u2014 when she is the viewpoint character, other characters' surface thoughts appear as italicized interjections woven into the prose. In non-Anya POV chapters, no telepathic content appears. The Chapter 13 Damian POV section is structurally critical: it gives the reader access to Damian's interior at a depth Anya's telepathy cannot reach, and it reveals that he has identified Anya \u2014 knowledge the reader carries into the final act while Anya does not. This dramatic irony reversal is the novel's strongest structural surprise and depends on the reader experiencing Damian's depths unmediated by Anya's telepathic filter.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Varied and responsive to scene pressure. Action sequences: short sentences, concrete verbs, sensory immediacy. Comic scenes: longer sentences that build to turns, pacing that allows beats to land. Quiet domestic scenes: relaxed rhythm with room for observation and texture. Telepathic interjections should disrupt prose rhythm the way intrusive thoughts disrupt concentration \u2014 not ornamentally but as genuine cognitive interference. Avoid metronomic sentence patterns in any mode.",
+      "sensory_bias": [
+        "visual surveillance \u2014 reading rooms, reading faces, the spy's hyperawareness of spatial arrangement and exit routes",
+        "auditory \u2014 overheard thoughts as a telepathic sixth sense layered over actual ambient sound",
+        "kinesthetic \u2014 action choreography, physical proximity, the body under stress or in intimacy",
+        "olfactory/gustatory \u2014 Yor's cooking, Berlint street food, the specific smell of institutional buildings and safe houses"
+      ]
+    }
+  }
+}

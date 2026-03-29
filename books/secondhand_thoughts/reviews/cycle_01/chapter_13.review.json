@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_13",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH13_DIALOGUE_01_EXAMPLE_LINE_LEAK",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:9",
+      "problem": "Sylvia's death-notification opener is too close to the style-bible calibration line for her voice. Because the copied cadence lands in the chapter's defining consequence beat, it reads less like Sylvia speaking and more like house copy being reused.",
+      "rewrite_direction": "Rewrite Sylvia's notification in `snapshots/cycle_01/chapters/chapter_13.md:7` through `snapshots/cycle_01/chapters/chapter_13.md:13`. Keep the facts of Crane's death, the 0340 compromise, the missing documents, and Sylvia's institutional flatness, but deliver them in fresh phrasing and sentence order that does not echo the calibration example.",
+      "acceptance_test": "PASS if the revised `snapshots/cycle_01/chapters/chapter_13.md:7` through `snapshots/cycle_01/chapters/chapter_13.md:13` still gives the same operational facts and Sylvia still sounds low-contraction and procedural, but none of her lines is recognizable as the style-bible 'Agent Crane is dead / checkpoint was compromised at approximately 0340' exemplar. FAIL if the scene still opens on that same copied cadence."
+    },
+    {
+      "finding_id": "CH13_PROSE_01_POV_HOUSE_VOICE",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:29; snapshots/cycle_01/chapters/chapter_13.md:47; snapshots/cycle_01/chapters/chapter_13.md:113; snapshots/cycle_01/chapters/chapter_13.md:217; snapshots/cycle_01/chapters/chapter_13.md:241",
+      "problem": "The chapter's narration keeps defaulting to the same polished analytical house voice across both POVs. In Anya's sections that produces abstractions and poised metaphors she is not supposed to think in under stress; in Damian's section it turns his private register into a smooth voiceover monologue rather than the more reluctant, younger, feeling-ambushed interiority the style bible calls for. The structural Chapter 13 POV shift loses force when both blocks sound authored in the same register.",
+      "rewrite_direction": "Rework the character-specific narration at `snapshots/cycle_01/chapters/chapter_13.md:15`, `snapshots/cycle_01/chapters/chapter_13.md:29`, `snapshots/cycle_01/chapters/chapter_13.md:47`, `snapshots/cycle_01/chapters/chapter_13.md:107`, `snapshots/cycle_01/chapters/chapter_13.md:217`, and `snapshots/cycle_01/chapters/chapter_13.md:241`. For Anya, replace institution-level abstractions and admired phrasing with simpler, more direct, more interrupted thought that visibly swerves around telepathy and concealment. For Damian, keep his formal intelligence but break the monologue into more hesitant, less essay-like processing that sounds like this specific twenty-year-old under pressure.",
+      "acceptance_test": "PASS if `snapshots/cycle_01/chapters/chapter_13.md:15` through `snapshots/cycle_01/chapters/chapter_13.md:31`, `snapshots/cycle_01/chapters/chapter_13.md:107` through `snapshots/cycle_01/chapters/chapter_13.md:181`, and `snapshots/cycle_01/chapters/chapter_13.md:217` through `snapshots/cycle_01/chapters/chapter_13.md:249` now read as unmistakably different interior registers: Anya's spans show plain diction, visible self-correction or track-swerve, and telepathic interference, while Damian's span keeps more measured syntax but includes genuine hesitation rather than voiceover polish. FAIL if those blocks still share the same metaphor-heavy analytical cadence."
+    },
+    {
+      "finding_id": "CH13_CRAFT_01_OVEREXPLAINED_TURNS",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:47; snapshots/cycle_01/chapters/chapter_13.md:59; snapshots/cycle_01/chapters/chapter_13.md:109; snapshots/cycle_01/chapters/chapter_13.md:157; snapshots/cycle_01/chapters/chapter_13.md:181; snapshots/cycle_01/chapters/chapter_13.md:241; snapshots/cycle_01/chapters/chapter_13.md:247",
+      "problem": "Once the chapter lands its two central understandings, it keeps translating them into abstract summary instead of moving pressure forward. Anya's causal guilt is fully legible by the first phone-call and basement articulations, yet later paragraphs restate the same thesis. Damian's apartment sequence likewise reaches its decision, then spends additional paragraphs paraphrasing the asymmetry and his choice. The repetition dulls consequence instead of sharpening it.",
+      "rewrite_direction": "Keep the first full articulation of Anya's guilt at `snapshots/cycle_01/chapters/chapter_13.md:47` and Damian's alliance decision at `snapshots/cycle_01/chapters/chapter_13.md:241`, then compress or replace the later explanatory returns at `snapshots/cycle_01/chapters/chapter_13.md:109`, `snapshots/cycle_01/chapters/chapter_13.md:157`, `snapshots/cycle_01/chapters/chapter_13.md:181`, and `snapshots/cycle_01/chapters/chapter_13.md:247`. If those beats remain on the page, they need to add a new cost, new fact, new behavior, or a more concrete next-step pressure rather than rephrasing conclusions the reader already has.",
+      "acceptance_test": "PASS if the revised chapter still leaves the reader with the required state shift that Anya's lie helped create Crane's death-space and Damian chooses to continue the alliance with counter-knowledge, but every paragraph in `snapshots/cycle_01/chapters/chapter_13.md:109` through `snapshots/cycle_01/chapters/chapter_13.md:113`, `snapshots/cycle_01/chapters/chapter_13.md:157` through `snapshots/cycle_01/chapters/chapter_13.md:158`, `snapshots/cycle_01/chapters/chapter_13.md:181`, and `snapshots/cycle_01/chapters/chapter_13.md:247` through `snapshots/cycle_01/chapters/chapter_13.md:249` either introduces new dramatic material or is gone. FAIL if those spans still mainly paraphrase already-landed meaning."
+    },
+    {
+      "finding_id": "CH13_PROSE_02_BASEMENT_REPETITION",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:75; snapshots/cycle_01/chapters/chapter_13.md:79; snapshots/cycle_01/chapters/chapter_13.md:103; snapshots/cycle_01/chapters/chapter_13.md:123; snapshots/cycle_01/chapters/chapter_13.md:131; snapshots/cycle_01/chapters/chapter_13.md:155; snapshots/cycle_01/chapters/chapter_13.md:167",
+      "problem": "The basement scene keeps returning to the same environmental markers — cold metal, fluorescent buzz, knocking pipe, chill in the air — without enough change in function. Instead of accumulating pressure, those repeated cues start to read like default atmospheric filler, which makes the middle scene feel more generated than observed.",
+      "rewrite_direction": "Consolidate and vary the room-description beats across `snapshots/cycle_01/chapters/chapter_13.md:73` through `snapshots/cycle_01/chapters/chapter_13.md:167`. Keep one strong establishment of the basement and the later environmental beats that actually change behavior, such as the coat offer or upstairs telepathic bleed, but cut or rewrite repeated cold/buzz/pipe returns unless each one alters the scene's pressure in a new way.",
+      "acceptance_test": "PASS if the revised basement scene uses recurring setting details only when they trigger a character action, interrupt a line, or sharpen a distinct emotional turn, and no unchanged stand-alone return like the same fluorescent-buzz/cold-metal reminder remains. FAIL if `snapshots/cycle_01/chapters/chapter_13.md:73` through `snapshots/cycle_01/chapters/chapter_13.md:167` still repeats the same atmospheric cue without new dramatic work."
+    }
+  ],
+  "summary": "The chapter cleanly lands the required plot-state shift and I found no continuity contradiction or tense drift against the provided packs, but it is not pass-level. Sylvia's opening death notice echoes a calibration-only style-bible line almost verbatim, both POV blocks drift toward the same polished analytical house voice, the chapter keeps re-explaining Anya's guilt and Damian's decision after those beats already land, and the basement scene leans on repeated cold/buzz/metal filler instead of varied pressure."
+}

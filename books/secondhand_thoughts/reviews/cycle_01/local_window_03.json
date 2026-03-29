@@ -1,0 +1,67 @@
+{
+  "chapters_reviewed": [
+    "chapter_05",
+    "chapter_06",
+    "chapter_07",
+    "chapter_08"
+  ],
+  "cycle": 1,
+  "findings": [
+    {
+      "acceptance_test": "A consecutive read from chapter 7 into chapter 8 should leave no ambiguity about Damian's state: if he has already named Anya and linked her to the attache in chapter 7, chapter 8 must show explicit suspicion or altered conduct; if chapter 8 still needs the near-recognition beat, chapter 7 must stop short of the name.",
+      "boundary_span": "chapter_07/chapter_08",
+      "category": "factual_coherence",
+      "chapter_id": "chapter_07",
+      "counterpart_evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2097",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:1933; snapshots/cycle_01/FINAL_NOVEL.md:1935",
+      "finding_id": "LW03-001",
+      "fix_owner_reason": "Chapter 7 pre-spends a recognition beat that chapter 8 still treats as pending, so the cleaner continuity fix is to pull the earlier chapter back.",
+      "pass_hint": "p1_structural_craft",
+      "problem": "Chapter 7 lets Damian retrieve 'Anya Forger' from the Eden photo and immediately compare that remembered girl to the cultural attache, but chapter 8 later frames the same recognition as still one synapse short of the name. Read back-to-back, his awareness moves backward at the boundary instead of forward.",
+      "related_chapter_ids": [
+        "chapter_08"
+      ],
+      "rewrite_direction": "Pick one awareness level and carry it cleanly across the boundary. Either pull chapter 7 back to a charged but unresolved photo beat, or let chapter 8 begin from Damian already holding the name and adjusting his behavior around Anya accordingly.",
+      "severity": "HIGH",
+      "subcategory": "recognition_state_regression"
+    },
+    {
+      "acceptance_test": "Reading chapters 5 through 8 in order, each Damian-recognition beat should produce a new leverage state. By the end of chapter 8, the reader should feel that the thread has advanced beyond chapter 5's almost-remembering plateau, not returned to it.",
+      "boundary_span": "chapter_05/chapter_08",
+      "category": "information_flow",
+      "chapter_id": "chapter_08",
+      "evidence": "Chapter 5 already lands the relay-race memory, the pink-hair realization, and the almost-name at snapshots/cycle_01/FINAL_NOVEL.md:1397 and snapshots/cycle_01/FINAL_NOVEL.md:1407; chapter 8 returns to another school memory, another pink-hair realization, and another withheld name at snapshots/cycle_01/FINAL_NOVEL.md:2091 and snapshots/cycle_01/FINAL_NOVEL.md:2097.",
+      "finding_id": "LW03-002",
+      "fix_owner_reason": "Chapter 8 is the later payoff beat and currently reuses chapter 5's suspense function without changing the leverage enough.",
+      "pass_hint": "p1_structural_craft",
+      "problem": "Across the window, Damian's recognition fuse does not visibly shorten on the page. The later chapter revisits essentially the same brink chapter 5 already used, so the thread feels replayed rather than escalated even though chapter 8 is supposed to be the later, more dangerous beat.",
+      "related_chapter_ids": [
+        "chapter_05"
+      ],
+      "rewrite_direction": "Make chapter 8 change the terms of the recognition thread. Damian should either reach the name internally, test Anya with something only school-Anya would trip over, or force Anya into a more expensive cover move than another internal near-miss.",
+      "severity": "HIGH",
+      "subcategory": "recognition_payoff_plateau"
+    },
+    {
+      "acceptance_test": "A consecutive read of chapters 5 through 8 should not make the reader predict another 'specific' or 'kind of' sentence frame at chapter turns or closing reflections; the POV shift into Damian and back to Anya should sound more texturally distinct.",
+      "boundary_span": "chapter_05/chapter_08",
+      "category": "cross_chapter_prose_patterns",
+      "chapter_id": "chapter_08",
+      "evidence": "The same qualifier-heavy framing recurs across the window at snapshots/cycle_01/FINAL_NOVEL.md:1165, snapshots/cycle_01/FINAL_NOVEL.md:1493, snapshots/cycle_01/FINAL_NOVEL.md:1925, snapshots/cycle_01/FINAL_NOVEL.md:2129, and snapshots/cycle_01/FINAL_NOVEL.md:2212.",
+      "finding_id": "LW03-003",
+      "fix_owner_reason": "The pattern is window-wide, but chapter 8 repeats it in both setup and close, so revising the latest chapter gives the fastest relief to the local reading cadence.",
+      "pass_hint": "p3_prose_copyedit",
+      "problem": "In cluster read, the narrator keeps announcing precision through 'specific' or 'the kind of' constructions. Because the template shows up in both Anya and Damian chapters, it starts to flatten POV texture and gives consecutive chapter transitions a more self-similar cadence than the material wants.",
+      "related_chapter_ids": [
+        "chapter_05",
+        "chapter_06",
+        "chapter_07"
+      ],
+      "rewrite_direction": "Cut or vary these qualifier constructions, especially in scene-setting and terminal reflection beats. Let concrete nouns, verbs, and image sequence carry the precision instead of repeatedly labeling it.",
+      "severity": "MEDIUM",
+      "subcategory": "qualifier_template_recursion"
+    }
+  ],
+  "summary": "Dominant failure: Damian's recognition thread stops escalating cleanly across the window. Chapter 7 advances his awareness beyond what chapter 8 then allows, and chapter 8 largely replays chapter 5's near-recognition plateau instead of converting it into changed leverage; a repeated qualifier-heavy sentence template also becomes audible in cluster read.",
+  "window_id": "window_03"
+}

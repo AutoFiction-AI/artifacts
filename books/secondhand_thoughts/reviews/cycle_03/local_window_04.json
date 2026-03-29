@@ -1,0 +1,62 @@
+{
+  "cycle": 3,
+  "window_id": "window_04",
+  "chapters_reviewed": [
+    "chapter_07",
+    "chapter_08",
+    "chapter_09",
+    "chapter_10"
+  ],
+  "summary": "The window escalates cleanly through chapter_09, then loses local reading friction at the chapter_09/chapter_10 boundary: the dawn consequences of the safe-house ending are skipped, the WS-7 investigation jumps ahead in result states, and chapter_10 closes on a second \"keep the phone dark\" beat that echoes chapter_09 more than it transforms it.",
+  "findings": [
+    {
+      "finding_id": "LW04-001",
+      "category": "pre_scan",
+      "subcategory": "dangling_thread",
+      "severity": "HIGH",
+      "chapter_id": "chapter_10",
+      "related_chapter_ids": [
+        "chapter_09"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "Chapter 9 ends with a concrete dawn promise: Anya will move Damian, report from a cleaner line, and go north on the narrowed corridor (`snapshots/cycle_03/FINAL_NOVEL.md:5573`). Chapter 10 hard-cuts to Yor \"the next evening\" in domestic space (`snapshots/cycle_03/FINAL_NOVEL.md:5580`) and only much later reveals Anya already running a WS-7 stakeout outside Dominic's compound (`snapshots/cycle_03/FINAL_NOVEL.md:5750`; `snapshots/cycle_03/FINAL_NOVEL.md:5782`).",
+      "problem": "Reading these chapters back-to-back, the immediate consequence chain from chapter_09 is silently stepped over. The reader is asked to absorb a romantic cliff, an injury cliff, a safe-house-reporting cliff, and a mole-hunt cliff, then accept that all of them have moved forward off-page before chapter_10 shows its hand. That makes the boundary feel less like an intentional suspension and more like a dropped next beat.",
+      "rewrite_direction": "Give chapter_10 an early bridge, or let Anya/Yor's canal exchange briefly name it, so the reader learns what happened at first light: where Damian was moved, whether the report was delayed or rerouted, and what specific follow-up turned WS-7 from a note in Anya's pocket into this northern surveillance post.",
+      "acceptance_test": "By the time chapter_10 leaves Yor's kitchen or reaches the canal encounter, a first-time reader can state Damian's immediate status and the basic outcome of Anya's dawn plan without inventing missing scenes.",
+      "fix_owner_reason": "Chapter_10 inherits the unresolved end-of-chapter promise and currently withholds the bridge, so the later chapter owns repairing the boundary."
+    },
+    {
+      "finding_id": "LW04-002",
+      "category": "information_flow",
+      "subcategory": "offpage_investigation_bridge",
+      "severity": "HIGH",
+      "chapter_id": "chapter_10",
+      "related_chapter_ids": [
+        "chapter_08",
+        "chapter_09"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "Anya ends chapter 8 with a specific plan to work review calendars, staffing shifts, and access lists before identity (`snapshots/cycle_03/FINAL_NOVEL.md:5140`; `snapshots/cycle_03/FINAL_NOVEL.md:5148`). Chapter 9 opens three days later with her already tailing Damian instead (`snapshots/cycle_03/FINAL_NOVEL.md:5203`). By chapter 10, the reader is asked to accept a completed north-side surveillance setup keyed to `WS-7` (`snapshots/cycle_03/FINAL_NOVEL.md:5750`; `snapshots/cycle_03/FINAL_NOVEL.md:5782`).",
+      "problem": "Across the cluster, the mole plot advances in result states rather than dramatized reasoning. The reception fragment, the ambush-mailbox clue, and the Dominic stakeout all belong to the same investigative line, but the connective work keeps happening between chapters. As a reading experience, that makes the conspiracy feel discovered by omission rather than by cumulative pressure.",
+      "rewrite_direction": "Add one compact on-page deduction beat that converts the reception fragment and WS-7 movement leak into Dominic: show Anya testing review windows against movement traffic, narrowing the corridor, and choosing Dominic's gate as the first useful watch point.",
+      "acceptance_test": "A cold reader can summarize the causal chain from \"asset inside WISE\" and \"18:12 / west exit revision / WS-7\" to \"watch Karl Dominic's compound\" without relying on inference-heavy guesswork.",
+      "fix_owner_reason": "The Dominic surveillance payoff lands in chapter_10, and it is underprepared on the page because the decisive investigative bridge is still missing when the payoff arrives."
+    },
+    {
+      "finding_id": "LW04-003",
+      "category": "redundant_scene_functions",
+      "subcategory": "repeated_offgrid_withholding_climax",
+      "severity": "HIGH",
+      "chapter_id": "chapter_10",
+      "related_chapter_ids": [
+        "chapter_09"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "Chapter 9 culminates in Anya deciding the leak makes official activation impossible, so the safe-house phone stays dark until morning (`snapshots/cycle_03/FINAL_NOVEL.md:5375`; `snapshots/cycle_03/FINAL_NOVEL.md:5399`). Chapter 10 ends on the same structural beat from the Garden side: Anya warns Yor not to make the next call (`snapshots/cycle_03/FINAL_NOVEL.md:5810`), then Yor removes the battery instead of confirming completion (`snapshots/cycle_03/FINAL_NOVEL.md:5856`; `snapshots/cycle_03/FINAL_NOVEL.md:5862`).",
+      "problem": "Read consecutively, the two chapters close on near-identical narrative functions: discover institutional contamination, keep the reporting line dark, carry the secret evidence alone into tomorrow. Chapter_10 has bigger revelations, but its terminal state still echoes chapter_09's withheld-report climax so closely that the second ending feels like a replay rather than a new pressure geometry.",
+      "rewrite_direction": "Make chapter_10's closing move materially different from chapter_09's. Yor could set a trap, destroy or hide evidence, choose a specific person to trust, or take an irreversible action that changes the family or Garden board immediately instead of ending on another deferred report.",
+      "acceptance_test": "After chapter_10, the reader should feel that the story's leverage has changed in a way chapter_09 did not already deliver; the ending should register as escalation, not as a second version of \"don't call it in yet.\"",
+      "fix_owner_reason": "The later chapter is the weaker echo. Chapter_10 repeats chapter_09's off-grid-withholding function at its own close and therefore owns differentiating that terminal beat."
+    }
+  ]
+}

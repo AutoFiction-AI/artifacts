@@ -1,0 +1,196 @@
+{
+  "summary": "The novel is set in Berlint, the Ostanian capital, across seventeen chapters of espionage, domestic scenes, and multi-front action. Spatial relationships are load-bearing at two scales. At the city level, the east-west axis mirrors the geopolitical divide: Westalian diplomatic territory anchors the west, Ostanian government power anchors the east, and characters cross between them for surveillance, extraction, pursuit, and infiltration. Travel time and adjacency matter for the Chapter 1 market extraction, the Chapter 9 ambush and safe-house escape, the Chapter 10 compound infiltration on the outskirts, and general operational movement. At the venue level, the Chapter 15 security summit is the climactic set piece where four simultaneous threads (Anya reading the crowd, Damian confronting Voss, Loid intercepting Falk, Yor engaging the assassination team while Yuri watches) require spatial separation within one building and clear convergence paths.",
+  "micro": {
+    "setting_name": "International Security Summit Venue",
+    "structure_type": "government conference center",
+    "locations": [
+      {
+        "name": "Main Assembly Hall",
+        "description": "Large formal hall where delegations are seated; Anya's primary position for telepathic crowd-reading at maximum capacity",
+        "adjacency": ["East Gallery", "West Gallery", "Main Foyer"]
+      },
+      {
+        "name": "East Gallery",
+        "description": "Elevated side gallery overlooking the assembly hall; Westalian delegation overflow and press seating",
+        "adjacency": ["Main Assembly Hall", "East Service Corridor"]
+      },
+      {
+        "name": "West Gallery",
+        "description": "Elevated side gallery; Ostanian delegation VIP observation area where Voss positions himself before Damian's confrontation",
+        "adjacency": ["Main Assembly Hall", "West Service Corridor"]
+      },
+      {
+        "name": "Main Foyer",
+        "description": "Grand entrance with SSS security screening; Yuri's primary post; connects exterior to all major interior spaces",
+        "adjacency": ["Main Assembly Hall", "East Service Corridor", "West Service Corridor", "Exterior Grounds"]
+      },
+      {
+        "name": "East Service Corridor",
+        "description": "Staff and security access corridor along the east side; Loid's approach route to intercept Falk at the communications room",
+        "adjacency": ["East Gallery", "Main Foyer", "Communications Room"]
+      },
+      {
+        "name": "West Service Corridor",
+        "description": "Staff and security access corridor along the west side; connects the foyer to the south terrace where the assassination is staged",
+        "adjacency": ["West Gallery", "Main Foyer", "South Terrace"]
+      },
+      {
+        "name": "Communications Room",
+        "description": "Secure communications hub off the East Service Corridor; Falk transmits coordinates from here; houses the backup relay that Anya's overload causes her to miss",
+        "adjacency": ["East Service Corridor"]
+      },
+      {
+        "name": "South Terrace",
+        "description": "Open-air terrace overlooking the grounds; the staged assassination of the deputy minister is attempted here; Yor's combat engagement occurs in full view of security cameras and Yuri",
+        "adjacency": ["West Service Corridor", "Exterior Grounds"]
+      },
+      {
+        "name": "Exterior Grounds",
+        "description": "Landscaped perimeter with vehicle checkpoints; Bond's precognitive warning from Chapters 6 and 14 pointed to this location",
+        "adjacency": ["Main Foyer", "South Terrace"]
+      }
+    ],
+    "floor_summary": {
+      "ground_level": "Main Foyer, Main Assembly Hall, East and West Service Corridors, Communications Room, South Terrace, Exterior Grounds. All four operational threads converge on this level.",
+      "upper_level": "East Gallery and West Gallery, both overlooking the Assembly Hall from elevated positions. Accessible via stairs from the service corridors."
+    },
+    "key_routes": [
+      {
+        "from": "Main Assembly Hall",
+        "to": "South Terrace",
+        "via": "West Service Corridor",
+        "narrative_use": "Anya's path from crowd surveillance to the assassination site when she identifies the staged attack; the corridor route bypasses the public foyer"
+      },
+      {
+        "from": "East Service Corridor",
+        "to": "Communications Room",
+        "narrative_use": "Loid's approach to intercept Falk; single entry point, confined space, no escape route for Falk once Loid is in the corridor"
+      },
+      {
+        "from": "Main Foyer",
+        "to": "South Terrace",
+        "via": "West Service Corridor",
+        "narrative_use": "Yor moves through from her cover position toward the assassination team; Yuri is stationed near the foyer and witnesses her transit and combat"
+      },
+      {
+        "from": "West Gallery",
+        "to": "Main Assembly Hall",
+        "narrative_use": "Damian descends from the Ostanian VIP area to confront Voss publicly on the assembly floor"
+      }
+    ]
+  },
+  "macro": {
+    "world_name": "Berlint, Ostania",
+    "locations": [
+      {
+        "name": "Westalian Diplomatic Quarter",
+        "description": "Cluster of Westalian embassy and mission buildings; Anya's cover workplace as cultural attache; WISE operates within the mission compound",
+        "district": "central-west"
+      },
+      {
+        "name": "WISE Station",
+        "description": "Concealed within the Westalian diplomatic mission; briefing rooms, analyst offices, secure comms; where Anya files reports, attends briefings, and investigates the mole in Chapter 11",
+        "district": "central-west"
+      },
+      {
+        "name": "Ostanian Government District",
+        "description": "Eastern cluster of ministries including Foreign Affairs where Damian works; state dinner, policy forum, and National Unity Party venues are here",
+        "district": "central-east"
+      },
+      {
+        "name": "SSS Headquarters",
+        "description": "State Security Service central building within the government district; Yuri Briar's base of operations",
+        "district": "central-east"
+      },
+      {
+        "name": "Berlint Central Market",
+        "description": "Dense commercial district between the diplomatic and government quarters; the Chapter 1 dead-drop and extraction chase runs through market stalls and crowd cover",
+        "district": "central"
+      },
+      {
+        "name": "Forger Apartment",
+        "description": "Family residence in a mixed residential neighborhood south of the center; domestic scenes in Chapters 6, 14, and 17; Anya's childhood home",
+        "district": "south-central"
+      },
+      {
+        "name": "Damian's Apartment",
+        "description": "Upper-floor apartment in an upscale area near the government district; his private space in Chapters 7 and 13 where he confirms Anya's identity using the class photo",
+        "district": "east"
+      },
+      {
+        "name": "Cafe Linden",
+        "description": "Cafe between the diplomatic quarter and the Forger apartment; Anya and Loid debrief here after missions",
+        "district": "south-west"
+      },
+      {
+        "name": "Berlint Gesellschaft Club",
+        "description": "Exclusive private social club; the Chapter 5 Colonel Bretz operation where Anya and Damian pose as a couple",
+        "district": "north-central"
+      },
+      {
+        "name": "Dominic Compound",
+        "description": "Weapons broker Karl Dominic's secured estate on Berlint's northern outskirts; Yor's Chapter 10 Garden assignment and the mother-daughter collision at the perimeter",
+        "district": "northern outskirts"
+      },
+      {
+        "name": "International Conference Center",
+        "description": "The security summit venue for Chapter 15; large government complex south-east of the ministries (see micro layout for interior)",
+        "district": "south-east"
+      },
+      {
+        "name": "Blackbell Estate",
+        "description": "Becky Blackbell's family estate; venue for the Chapter 12 charity gala where the recognition detonates",
+        "district": "north-east"
+      },
+      {
+        "name": "WISE Safe House",
+        "description": "Fallback apartment used in Chapter 9 after the ambush; cold, bare, in a nondescript residential block away from both diplomatic and government districts",
+        "district": "west"
+      }
+    ],
+    "routes": [
+      {
+        "from": "Berlint Central Market",
+        "to": "Westalian Diplomatic Quarter",
+        "description": "Chapter 1 extraction route; Anya steers her contact west through market crowds toward diplomatic territory where pursuit becomes politically costly",
+        "travel_time": "15-20 minutes on foot through market density"
+      },
+      {
+        "from": "Westalian Diplomatic Quarter",
+        "to": "Forger Apartment",
+        "description": "Anya's walk home in Chapters 1 and 6; residential streets where she reads the city's collective anxiety",
+        "travel_time": "25 minutes on foot"
+      },
+      {
+        "from": "Forger Apartment",
+        "to": "Ostanian Government District",
+        "description": "Anya's route to state functions and Damian's professional territory; crosses through central Berlint",
+        "travel_time": "30 minutes by car"
+      },
+      {
+        "from": "Ostanian Government District",
+        "to": "Damian's Apartment",
+        "description": "Damian's commute; short walk east from the ministries",
+        "travel_time": "10 minutes on foot"
+      },
+      {
+        "from": "Ostanian Government District",
+        "to": "International Conference Center",
+        "description": "Official motorcade route south-east to the summit venue",
+        "travel_time": "15 minutes by car"
+      },
+      {
+        "from": "Dominic Compound",
+        "to": "Forger Apartment",
+        "description": "Return from the northern outskirts into the city; relevant for both Yor's and Anya's post-Chapter 10 movement",
+        "travel_time": "40 minutes by car"
+      }
+    ],
+    "cardinal_anchors": {
+      "west": "Westalian Diplomatic Quarter and WISE Station — mirrors the geopolitical axis; Westalis lies further west beyond the border",
+      "east": "Ostanian Government District, SSS Headquarters, Damian's apartment — the seat of Ostanian state power",
+      "north": "Elite and peripheral territory: Blackbell Estate, Gesellschaft Club, Dominic Compound further out on the outskirts",
+      "south": "Residential and climactic: Forger apartment neighborhood, International Conference Center where the summit plays out"
+    }
+  }
+}

@@ -1,0 +1,313 @@
+{
+  "acceptance_targets": [
+    "[R005] Ch8's opening does not re-explain that telepathy is constant/unwanted and does not deploy the headache-behind-the-eye template a third time.",
+    "[R006] Ch8's venue arrival does not re-inventory warm-toned light, crystal, and quartet as a descriptive set.",
+    "[R026] Ch8 contains no more than 9 instances of 'something.'",
+    "[LW03-001] A reader moving directly from chapter 7 to chapter 8 can tell at once whether `Lang` is the same person from the working group or a newly introduced official, without having to reread.",
+    "[LW03-002] By the first Damian-Anya exchange in chapter 8, the reader can say where Anya stands on Bond's ICC lead and whether tonight's reception is replacing that task or interrupting it.",
+    "[LW03-003] Within chapter 8's opening exchange, a reader can explain how Ackermann, Brandt, and Dietrich relate to the Lang/Kessler/Vanguard line from chapter 7 and what practical consequence a slipped `review` changes.",
+    "[LW03-004] Reading chapters 5 and 8 back-to-back, chapter 8 should feel like a distinct mode of danger by the time Damian and Anya first compare notes, rather than a second pass through the same elite-room intel function."
+  ],
+  "aggregation_applied": {
+    "decisions_file": "packets/cycle_03/aggregation_decisions.json",
+    "decisions_sha1": "5b1896d0d80c5b6ca52bc77fd008f267c508d6cc"
+  },
+  "chapter_id": "chapter_08",
+  "cycle": 3,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Ch8's opening does not re-explain that telepathy is constant/unwanted and does not deploy the headache-behind-the-eye template a third time.",
+      "chapter_id": "chapter_08",
+      "cycle": 3,
+      "evidence": "Ch1 L17: 'Anya couldn't turn it off. Hadn't been able to since she was four'; Ch8 L4332: 'The startle of other people's thoughts had burned off years ago. What stayed was the drag of it, the low constant pull, like carrying a radio under her ribs that never shut up for long'; Ch8 L4435: 'headache behind her right eye had already started its steady drilling'; Ch2 L394: 'Pressure gathered behind her left eye almost at once'",
+      "finding_id": "R005",
+      "problem": "Ch8 opens with two telepathy-burden re-statements. L4332 re-explains that telepathy is constant and unwanted (established Ch1 L17). L4435 deploys the headache-at-reception template for the third time (after Ch1 L111 and Ch2 L394). Both deliver information the reader already carries. The radio-under-ribs metaphor at L4332 is fresh but the payload is redundant.",
+      "rewrite_direction": "Cut the explanatory re-statement at L4332. Trust the reader to carry the Ch1 establishment. At L4435, enter the reception through the specific crowd-noise content rather than re-proving that crowds give Anya headaches. Vary or cut the headache onset if the Ch2 version (pressure behind eye) already covers it.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch8's venue arrival does not re-inventory warm-toned light, crystal, and quartet as a descriptive set.",
+      "chapter_id": "chapter_08",
+      "cycle": 3,
+      "evidence": "Ch2 L392: 'Warm gold light sat on the floor. White linens glowed under crystal. A quartet near the windows played a Baroque piece nobody cared about'; Ch8 L4407: 'Warm amber light hit first, then crystal, then bodies... The quartet was playing hard for people who did not care'",
+      "finding_id": "R006",
+      "problem": "The Concordia reception at Ch8 L4407 is the fourth reception-venue arrival in eight chapters and closely parallels Ch2's Ministry ballroom: warm-toned light + crystal + quartet + crowd indifference. The descriptive template (warm light, crystal, quartet nobody appreciates) has been used at Ch2 (Ministry), Ch3 (Academy), Ch5 (Gesellschaft Club), and now Ch8.",
+      "rewrite_direction": "Enter the Concordia through what is operationally different: the exits, the SSS positioning, the target configuration. Cut or compress the warm-light/crystal/quartet inventory. The reader already knows diplomatic receptions have these elements.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch8 contains no more than 9 instances of 'something.'",
+      "chapter_id": "chapter_08",
+      "cycle": 3,
+      "evidence": "Ch8: 13 instances of 'something' in 8,005 prose words = 1 per 616 words; manuscript-wide: 141/102,891 = 1 per 730 words",
+      "finding_id": "R026",
+      "problem": "Ch8 has 13 instances of 'something' at 1 per 616 words, above the 1/800 threshold. Combined with the chapter's other redundancy issues (telepathy re-statement, reception template), the hedge-word density compounds the impression of imprecision.",
+      "rewrite_direction": "Audit Ch8 for 'something' and replace with specifics. Target reducing from 13 to 9 or fewer.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "A reader moving directly from chapter 7 to chapter 8 can tell at once whether `Lang` is the same person from the working group or a newly introduced official, without having to reread.",
+      "chapter_id": "chapter_08",
+      "cycle": 3,
+      "evidence": "Chapter 7 introduces Petra Lang and consistently treats Lang as a woman in Damian's Thursday working-group line (`snapshots/cycle_03/FINAL_NOVEL.md:3919`, `snapshots/cycle_03/FINAL_NOVEL.md:3945`, `snapshots/cycle_03/FINAL_NOVEL.md:4261`). Chapter 8 then carries the same Thursday-working-group figure into the reception but describes Lang as `broad, silver-haired` and uses `he/him` (`snapshots/cycle_03/FINAL_NOVEL.md:4349`, `snapshots/cycle_03/FINAL_NOVEL.md:4439`, `snapshots/cycle_03/FINAL_NOVEL.md:4441`).",
+      "finding_id": "LW03-001",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:3919",
+            "excerpt": "3919: Nods around the table. Deputy Chairman Holtz, who had known Donovan for thirty years and still considered himself a kingmaker, made notes in a leather notebook. Beside him, Petra Lang from the defense policy committee watched Damian with the fixed attention she gave people she hadn't decided whether to use or sideline.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:3945",
+            "excerpt": "3945: Lang tucked her notebook under one arm. Up close, she smelled faintly of cigarette smoke under expensive soap. \"Thursday. Eight o'clock. Small conference room off the defense committee offices.\"",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:4261",
+            "excerpt": "4261: Damian stared at the black window over the sink. His own reflection looked thin in the glass. \"Lang wants me in her working group on Thursday.\"",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:4349",
+            "excerpt": "4349: \"That's generous.\" He came to a stop beside her without quite standing beside her, close enough to talk and far enough to deny later. \"Lang's meeting happened.\"",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:4439",
+            "excerpt": "4439: Across the room, Lang had Damian pinned beside a floral arrangement so expensive it had to be state-sponsored.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:4441",
+            "excerpt": "4441: Lang was broad, silver-haired, and built like a man who believed chairs should respect him on contact. Out loud he was saying something about pragmatic tariff realism. Inwardly he was nowhere near tariffs.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "pass_hint": "p1_structural_craft",
+      "problem": "Read back-to-back, these chapters make Lang look like two different people. Because chapter 8 explicitly frames the reception as the spillover from the same meeting Damian just left, the shift lands as a continuity error rather than a new-character introduction.",
+      "rewrite_direction": "Keep one stable on-page identity for Lang across the boundary. If chapter 8 needs a different official pinning Damian beside the flowers, name that person distinctly; otherwise align the chapter 8 description and pronouns with Petra Lang from chapter 7.",
+      "severity": "CRITICAL",
+      "source": "local_window",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "By the first Damian-Anya exchange in chapter 8, the reader can say where Anya stands on Bond's ICC lead and whether tonight's reception is replacing that task or interrupting it.",
+      "chapter_id": "chapter_08",
+      "cycle": 3,
+      "evidence": "Chapter 6 ends with Anya turning Bond's vision into a concrete next-morning task: she identifies the International Conference Center and decides, `Tomorrow she would go in early, pull whatever public-event and venue files she could justify` (`snapshots/cycle_03/FINAL_NOVEL.md:3878`, `snapshots/cycle_03/FINAL_NOVEL.md:3892`, `snapshots/cycle_03/FINAL_NOVEL.md:3902`). Chapter 7 then fully detours into Damian's day (`snapshots/cycle_03/FINAL_NOVEL.md:3913`), and chapter 8 returns to Anya in a different operation without telling the reader whether that ICC check happened or what it produced (`snapshots/cycle_03/FINAL_NOVEL.md:4324`, `snapshots/cycle_03/FINAL_NOVEL.md:4377`).",
+      "finding_id": "LW03-002",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:3878",
+            "excerpt": "3878: There it was halfway down the second page, small enough to miss if you weren't already looking for trouble: a story about summit preparations at the International Conference Center running behind schedule because the front grounds were still under renovation. Beneath the article sat a grainy photograph. Pale stone frontage. Ceremonial steps. Upper terrace behind iron railing. The grounds below torn up in ugly strips where new security barriers and landscaping were still unfinished.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:3892",
+            "excerpt": "3892: She took the pencil from the paper, carried the notebook back to her room, and wrote on the back of the drawing in small block letters:",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:3902",
+            "excerpt": "3902: That was the real choice, and her body knew it before her head caught up. Under the pillow the sketch could still pretend to be a nightmare. In the satchel it was a task. Tomorrow she would go in early, pull whatever public-event and venue files she could justify, and find out whether Bond's burning terrace belonged to the summit. If it did, then the warning she'd thrown at Loid over dinner would not be enough, and neither would silence.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:3913",
+            "excerpt": "3913: The conference room on the third floor of the National Unity Party headquarters smelled like old carpet and fresh coffee, and Damian Desmond was lying.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:4324",
+            "excerpt": "4324: The noise started in the elevator.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:4377",
+            "excerpt": "4377: \"What do you want from me?\" she asked.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "pass_hint": "p1_structural_craft",
+      "problem": "The window asks the reader to carry an urgent, concrete summit-lead task across an intervening POV chapter and then withholds any status update when Anya comes back on-page. That makes the ICC thread feel forgotten rather than intentionally suspended.",
+      "rewrite_direction": "When chapter 8 returns to Anya, give one or two orienting sentences that state whether she checked the venue files, got nothing usable, or had to postpone because of the reception. The thread can stay unresolved, but it cannot feel dropped.",
+      "severity": "HIGH",
+      "source": "local_window",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Within chapter 8's opening exchange, a reader can explain how Ackermann, Brandt, and Dietrich relate to the Lang/Kessler/Vanguard line from chapter 7 and what practical consequence a slipped `review` changes.",
+      "chapter_id": "chapter_08",
+      "cycle": 3,
+      "evidence": "Chapter 7 ends by tying Damian's Thursday danger to Kessler, Vanguard Defense, annex numbers, Voss, and a Westalian routing sheet (`snapshots/cycle_03/FINAL_NOVEL.md:4099`, `snapshots/cycle_03/FINAL_NOVEL.md:4121`, `snapshots/cycle_03/FINAL_NOVEL.md:4167`, `snapshots/cycle_03/FINAL_NOVEL.md:4219`). Chapter 8 immediately swaps the active nouns to Ackermann, Dietrich, Brandt, Strauss, and three different meanings of `review` (`snapshots/cycle_03/FINAL_NOVEL.md:4353`, `snapshots/cycle_03/FINAL_NOVEL.md:4373`, `snapshots/cycle_03/FINAL_NOVEL.md:4425`, `snapshots/cycle_03/FINAL_NOVEL.md:4506`, `snapshots/cycle_03/FINAL_NOVEL.md:4730`).",
+      "finding_id": "LW03-003",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:4099",
+            "excerpt": "4099: \"Not tariffs. The Renewal Front. And Vanguard Defense.\"",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:4121",
+            "excerpt": "4121: Damian leaned forward. Across the top of the page, in faded typed capitals, was MAINTENANCE CONTINUITY ANNEX. Below that: a ministry seal, a contract number, and the name VANGUARD DEFENSE in pale, stubborn ink. Four line items sat under the header. The third and fourth were for the same northern depot, the same month, and almost the same wording. The amounts matched exactly: 31,400 dinars each.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:4167",
+            "excerpt": "4167: \"All right. Thursday. Lang's room. What am I looking for besides duplicate charges?\"",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:4219",
+            "excerpt": "4219: \"I saw one routing sheet before I retired,\" he said. \"One. Threat assessments moving through a broker to a Westalian-owned procurement firm. Not stolen. Sold.\"",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:4353",
+            "excerpt": "4353: \"And I'd like to know why a clerical correction arrived on Ackermann's lap before Lang announced there'd been one.\"",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:4373",
+            "excerpt": "4373: \"That's the problem. At least three kinds.\" His voice stayed mild, but the irritation underneath had edges. \"Lang meant committee review. Ackermann meant border checkpoint review. One of the trade people was thinking about an oversight review tied to budget tables. Same word, three different knives.\"",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:4425",
+            "excerpt": "4425: A square little man with customs cuff links and a wet upper lip stood near the piano pretending to care about museum lending rates. *If Ackermann asks for annex four again, tell him Lang moved it to review. If he asks where review, say committee. If he asks which committee, laugh.*",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:4506",
+            "excerpt": "4506: *Brandt can wait until Monday if the checkpoint review slips.*",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:4730",
+            "excerpt": "4730: \"Brandt cares about November signatures and whether Voss starts asking questions if something slips. Dietrich is waiting on Friday or Monday depending on a review he didn't define. Ackermann's customs man has rehearsed a lie about annex four.\"",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "pass_hint": "p1_structural_craft",
+      "problem": "The local suspense diffuses because chapter 8 keeps adding new handlers and overloaded terminology before it cleanly maps them onto the network chapter 7 just established. A careful reader can follow the pieces, but the handoff is doing memory work when it should be sharpening immediate stakes.",
+      "rewrite_direction": "Early in chapter 8, explicitly map the new room to the chapter 7 chain: who is carrying Lang's corrected annexes, who controls the checkpoint timing, who fears Voss, and which `review` matters to tonight's handoff. If necessary, collapse one lesser name or replace one generic `review` with the specific process.",
+      "severity": "HIGH",
+      "source": "local_window",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Reading chapters 5 and 8 back-to-back, chapter 8 should feel like a distinct mode of danger by the time Damian and Anya first compare notes, rather than a second pass through the same elite-room intel function.",
+      "chapter_id": "chapter_08",
+      "cycle": 3,
+      "evidence": "Chapter 5 already gives the window an elite-room intelligence sequence built from telepathic guest-thought inventory, partial procurement fragments, Damian's mid-room reconnection, and a laugh-trigger recognition beat (`snapshots/cycle_03/FINAL_NOVEL.md:3022`, `snapshots/cycle_03/FINAL_NOVEL.md:3294`, `snapshots/cycle_03/FINAL_NOVEL.md:3431`). Chapter 8 replays much of that same machinery at a larger reception: another crowd-thought montage, another split-room compare-notes rhythm, and another laugh-triggered near-recognition spiral (`snapshots/cycle_03/FINAL_NOVEL.md:4411`, `snapshots/cycle_03/FINAL_NOVEL.md:4512`, `snapshots/cycle_03/FINAL_NOVEL.md:4746`).",
+      "finding_id": "LW03-004",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:3022",
+            "excerpt": "3022: The reception occupied a long salon crowded with candles and bad art. Thirty or forty guests stood in clusters around cocktail tables and the bar. Their thoughts slid over her in scraps: heating oil, a bad hip, a parking ticket, a mistress, fish last month, whether anyone had noticed the inheritance fight was back on, why the quartet was playing Schubert again, whether the minister's wife had altered that dress herself because the hem was dreadful.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:3294",
+            "excerpt": "3294: \"All right,\" Damian said. \"What did you have before I came back.\"",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:3431",
+            "excerpt": "3431: He didn't ask the question he'd asked at the gallery months ago. He didn't go backward into the same shape. He sat there listening to the sound of it fade and then said, almost to himself, \"There was a girl at Eden who laughed like that.\"",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:4411",
+            "excerpt": "4411: In the first fifteen minutes she got this:",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:4512",
+            "excerpt": "4512: When the clapping died, Damian cut out of Lang's orbit and reached her near the buffet as if the shrimp had drawn him.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:4746",
+            "excerpt": "4746: Then someone by the bar said something about cultural grant compliance in a tone so dry it surprised a laugh out of Anya before she could stop it.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "pass_hint": "p1_structural_craft",
+      "problem": "Because the genuinely new material in chapter 8 is Yuri's explicit suspicion and the WISE-mole fragment, the first half spends too long feeling like a scaled-up rerun of chapter 5's social-harvest operation. Read as a cluster, the window repeats a chapter shape before the new danger fully takes over.",
+      "rewrite_direction": "Differentiate chapter 8 earlier by making Yuri/security pressure or the mole threat the dominant engine from the opening pages and cutting at least one recycled reception beat, such as the room-thought inventory, the compare-notes buffet stop, or the repeated laugh-trigger recognition rhythm.",
+      "severity": "HIGH",
+      "source": "local_window",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "has_locator_excerpts": true,
+  "input_snapshot_hash": "75c1cb20b8a9bb786539285d6ee566f2ff2724e0f672ed63f2d6ad1f3d9c728f",
+  "must_fix_count": 7,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness.",
+    "Audit every revised passage for hedge words ('something,' 'somehow,' 'seemed to,' 'a kind of,' 'almost'). Replace with specifics wherever the referent can be identified. Intentional vagueness is permitted only when a character is genuinely uncertain or a telepathic signal is genuinely fragmentary. The default must be precision, not approximation.",
+    "In any revised dialogue exchange of three or more volleys, ensure at least one moment of rhythmic imbalance: a line that lands wrong, a response at the wrong register, a silence where speech was expected, or a sentence the speaker visibly regrets starting. Do not produce perfectly weighted stichomythia where every line advances the theme at the same pace and length.",
+    "Once a chapter's dramatic climax has landed, close within 10-15 lines. Do not extend into narratorial meditation, moral processing, or enumeration of what the climax means. End on a physical detail, an unresolved image, or a single unprocessed sensation. The reader carries the meaning; the chapter's job is to leave them in the collision, not to summarize it."
+  ],
+  "original_snapshot_file": "snapshots/cycle_03/chapters/chapter_08.md",
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This novel's premise blends comedy, espionage action, and genuine emotional stakes. The creative risk is in honoring all three simultaneously without letting any one mode cannibalize the others. Do not soften the violence because the novel is funny. Do not suppress the comedy because the stakes are real. Do not retreat from Anya's moral complicity (she reads minds without consent and uses it to manipulate) because she is the protagonist and we like her. The hardest scenes to get right are the ones where comedy and pain coexist \u2014 a fight that is also funny, a confession that is also absurd, a family dinner where love and deception are the same meal. Lean into those moments rather than resolving them into one register. The novel's best material lives in the dissonance.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism at the point of consequence is a craft failure. When violence, fear, grief, or moral compromise demands scene presence, render it with specificity. A bruise should have a color. A death should have weight. A lie should have a cost the liar feels in their body. The exception is Anya's telepathic restraint \u2014 she sometimes cannot bear to fully articulate what she's reading in someone's mind, and this selective omission is a character choice, not authorial squeamishness.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for all characters in casual speech. Uncontracted forms reserved for emphasis, deliberate formality, or character-specific register choices (Sylvia's professional diction, Damian's diplomatic mode). In contemporary casual scenes, an unjustified full-form line should be flagged and checked.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 2
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "No two consecutive chapters should share the same structural rhythm. Alternate between dialogue-heavy scenes and interiority-heavy passages. Vary scene count: two-scene chapters (11, 16, 17 \u2014 compressed force) against multi-scene chapters (8, 15 \u2014 breadth and momentum). Shift between comic dominant and dramatic dominant across the middle of the book, with the comic register maintaining presence even in dramatic chapters through Anya's voice and the Forger family's inherent absurdity. The tonal shift at Chapter 13 is a deliberate gear change, not a gradual dimming \u2014 comedy should be fully alive in Chapter 12 and markedly reduced (not absent) in Chapter 13. The Chapter 13 POV shift to Damian is a structural event: the reader's relationship to information changes. The final act (14-17) maintains Anya's voice and the family's warmth as comic undertone, but the dominant mode is drama with consequences. Chapter 17's dinner scene reintroduces comedy through a register the novel has not previously accessed \u2014 Damian's self-conscious thought management around a known telepath \u2014 which only works because it follows sixteen chapters of oblivious thought-reading.",
+      "diction": "Contemporary and accessible, not literary-precious. The prose should have energy and forward drive. Humor comes from observation, character logic, and the gap between surface and interior \u2014 not from clever narration or authorial commentary. Let the funny things be funny without signposting them. Let the sad things sit without interpretation. The prose should be invisible when it needs to be and vivid when the scene demands it, but never decorative for its own sake.",
+      "forbidden_drift_patterns": [
+        "Narrator-as-comedian: the prose commenting on its own comedy, winking at the reader, or admiring a character's wit. The humor lives in the situation, not in the telling.",
+        "Telepathy-as-omniscience: Anya's mind-reading should feel like cognitive overload, not like a narrator's convenient access to exposition. She reads surface thoughts, not deep motivations, and the thoughts she catches should be fragmentary, mundane, and sometimes misleading.",
+        "Prestige-creep: the prose drifting toward solemn literary register when the scene's natural mode is comic, warm, or chaotic. This novel's emotional power comes from the coexistence of comedy and genuine feeling, not from the comedy yielding to seriousness.",
+        "Briefing-itis: scenes where characters explain plot to each other or to the reader. Information should emerge through action, observation, and telepathic fragments \u2014 not through expository dialogue formatted as conversation.",
+        "Combat-poetry: fight scenes that become lyrical or aesthetically admiring. Violence should be fast, specific, physically grounded, and over quickly. Yor's lethality is matter-of-fact; Anya's fighting is scrappier and less elegant.",
+        "Emotion-labeling: telling the reader what a character feels instead of rendering the feeling through thought, action, and physical detail. 'She felt sad' is always worse than the specific thing that makes the sadness legible."
+      ],
+      "narrative_distance": "Close third person, primarily Anya. Chapter 7 (Damian), Chapter 10 (Yor), the Damian POV section in Chapter 13, and Damian's thread in Chapter 15 shift to close third on their respective POV characters. The telepathy layer is unique to Anya's POV \u2014 when she is the viewpoint character, other characters' surface thoughts appear as italicized interjections woven into the prose. In non-Anya POV chapters, no telepathic content appears. The Chapter 13 Damian POV section is structurally critical: it gives the reader access to Damian's interior at a depth Anya's telepathy cannot reach, and it reveals that he has identified Anya \u2014 knowledge the reader carries into the final act while Anya does not. This dramatic irony reversal is the novel's strongest structural surprise and depends on the reader experiencing Damian's depths unmediated by Anya's telepathic filter.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Varied and responsive to scene pressure. Action sequences: short sentences, concrete verbs, sensory immediacy. Comic scenes: longer sentences that build to turns, pacing that allows beats to land. Quiet domestic scenes: relaxed rhythm with room for observation and texture. Telepathic interjections should disrupt prose rhythm the way intrusive thoughts disrupt concentration \u2014 not ornamentally but as genuine cognitive interference. Avoid metronomic sentence patterns in any mode.",
+      "sensory_bias": [
+        "visual surveillance \u2014 reading rooms, reading faces, the spy's hyperawareness of spatial arrangement and exit routes",
+        "auditory \u2014 overheard thoughts as a telepathic sixth sense layered over actual ambient sound",
+        "kinesthetic \u2014 action choreography, physical proximity, the body under stress or in intimacy",
+        "olfactory/gustatory \u2014 Yor's cooking, Berlint street food, the specific smell of institutional buildings and safe houses"
+      ]
+    }
+  }
+}

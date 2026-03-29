@@ -1,0 +1,92 @@
+{
+  "chapter_id": "chapter_15",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH15_CRAFT_BACKUP_RELAY_CAUSALITY",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_01/chapters/chapter_15.md:169; snapshots/cycle_01/chapters/chapter_15.md:205; snapshots/cycle_01/chapters/chapter_15.md:207; snapshots/cycle_01/chapters/chapter_15.md:287; snapshots/cycle_01/chapters/chapter_15.md:293; snapshots/cycle_01/chapters/chapter_15.md:303; snapshots/cycle_01/chapters/chapter_15.md:307",
+      "problem": "The backup-relay thread breaks causality twice. Loid explicitly notices the backup transmitter, unplugs it, and the narration says both transmission lines are dead, but the later scene requires that same relay to be live. On top of that, Anya discovers the relay by directly perceiving equipment rather than by reading a person's surface thoughts, which exceeds the telepathy rules in the continuity sheet. The chapter's major cost beat lands as a handout instead of earned fallout.",
+      "rewrite_direction": "Rebuild the relay sequence across snapshots/cycle_01/chapters/chapter_15.md:169, snapshots/cycle_01/chapters/chapter_15.md:205, snapshots/cycle_01/chapters/chapter_15.md:207, snapshots/cycle_01/chapters/chapter_15.md:287, snapshots/cycle_01/chapters/chapter_15.md:293, snapshots/cycle_01/chapters/chapter_15.md:303, and snapshots/cycle_01/chapters/chapter_15.md:307 so there is one consistent secondary-relay state. Either Loid misses a hidden or duplicate relay, or he only kills the primary and Anya later finds the overlooked backup through a nearby operator's thoughts or a visible console change. Remove any wording that lets her sense electronics directly.",
+      "acceptance_test": "From the revised sequence anchored at snapshots/cycle_01/chapters/chapter_15.md:169, snapshots/cycle_01/chapters/chapter_15.md:205, snapshots/cycle_01/chapters/chapter_15.md:287, and snapshots/cycle_01/chapters/chapter_15.md:303, a cold reader can trace one unbroken causal chain for the secondary relay's status. Fail if Loid is still said to disable the backup before the later discovery, or if Anya still 'feels' equipment rather than inferring the relay from human thought or visible physical evidence."
+    },
+    {
+      "finding_id": "CH15_CRAFT_TERRACE_CASUALTY_STATE",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_01/chapters/chapter_15.md:229; snapshots/cycle_01/chapters/chapter_15.md:231; snapshots/cycle_01/chapters/chapter_15.md:235; snapshots/cycle_01/chapters/chapter_15.md:249; snapshots/cycle_01/chapters/chapter_15.md:255; snapshots/cycle_01/chapters/chapter_15.md:263; snapshots/cycle_01/chapters/chapter_15.md:283; snapshots/cycle_01/chapters/chapter_15.md:357",
+      "problem": "The South Terrace fight cannot decide whether Yor killed these men or nonlethally neutralized them. The prose retreats into safety-valve phrasing like 'disabled without killing immediately,' 'left him unconscious,' and 'put him out,' then later claims Yuri watched her kill four men. That is both sanitization drift and an internal contradiction at the chapter's hardest violence beat.",
+      "rewrite_direction": "Rework the casualty logic across snapshots/cycle_01/chapters/chapter_15.md:229, snapshots/cycle_01/chapters/chapter_15.md:231, snapshots/cycle_01/chapters/chapter_15.md:235, snapshots/cycle_01/chapters/chapter_15.md:249, snapshots/cycle_01/chapters/chapter_15.md:255, snapshots/cycle_01/chapters/chapter_15.md:263, snapshots/cycle_01/chapters/chapter_15.md:283, and snapshots/cycle_01/chapters/chapter_15.md:357 so the scene commits to one state for each attacker. If Yor kills them, render the deaths and bodily aftermath specifically. If they survive, keep the beat nonlethal and strip the later kill-language.",
+      "acceptance_test": "After revision, a reader can list each terrace attacker as dead, unconscious, or wounded/alive using only the revised text around snapshots/cycle_01/chapters/chapter_15.md:229, snapshots/cycle_01/chapters/chapter_15.md:235, snapshots/cycle_01/chapters/chapter_15.md:255, and snapshots/cycle_01/chapters/chapter_15.md:357. Fail if any later line contradicts that list or if the scene still gestures at lethal weight while withholding the actual physical consequence."
+    },
+    {
+      "finding_id": "CH15_CRAFT_YOR_NATIONALITY_ERROR",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_01/chapters/chapter_15.md:267",
+      "problem": "The narration calls Yor 'a foreign national,' which contradicts the continuity sheet. Yor is Ostanian. Yuri's institutional crisis is about his sister's hidden assassin identity and her apparent Westalian-security affiliation, not about her nationality changing.",
+      "rewrite_direction": "Fix the institutional framing at snapshots/cycle_01/chapters/chapter_15.md:267 so Yuri is reacting to an unidentified assailant dressed as or aligned with Westalian security, or to the treason optics of protecting her, without mislabeling Yor's nationality.",
+      "acceptance_test": "The revised version of snapshots/cycle_01/chapters/chapter_15.md:267 must not state or imply that Yor is non-Ostanian. Pass only if a cold reader comes away understanding that Yuri is weighing cover affiliation and duty, not a false nationality fact."
+    },
+    {
+      "finding_id": "CH15_DIALOGUE_COMPOSED_CONFRONTATIONS",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_01/chapters/chapter_15.md:101; snapshots/cycle_01/chapters/chapter_15.md:107; snapshots/cycle_01/chapters/chapter_15.md:115; snapshots/cycle_01/chapters/chapter_15.md:167; snapshots/cycle_01/chapters/chapter_15.md:171; snapshots/cycle_01/chapters/chapter_15.md:183; snapshots/cycle_01/chapters/chapter_15.md:191",
+      "problem": "The chapter's central confrontations default to composed thesis-speech, aphoristic lines, and mini-speech diagnosis. Voss and Falk explain the chapter's politics and betrayals almost perfectly under pressure, which makes the scenes sound workshopped rather than spoken-through. The reader hears theme delivery where the chapter needs pressure, interruption, and leverage shifts.",
+      "rewrite_direction": "Rewrite the exchanges anchored at snapshots/cycle_01/chapters/chapter_15.md:101, snapshots/cycle_01/chapters/chapter_15.md:107, snapshots/cycle_01/chapters/chapter_15.md:115, snapshots/cycle_01/chapters/chapter_15.md:167, snapshots/cycle_01/chapters/chapter_15.md:171, snapshots/cycle_01/chapters/chapter_15.md:183, and snapshots/cycle_01/chapters/chapter_15.md:191 so the bilateral-rot and false-report revelations arrive through broken speech, interruptions, evasions, document handling, and time pressure instead of uninterrupted lectures and mic-drop lines.",
+      "acceptance_test": "In the revised confrontations around snapshots/cycle_01/chapters/chapter_15.md:101 and snapshots/cycle_01/chapters/chapter_15.md:167, each speaker must be interrupted, forced to self-correct, or made to answer a specific challenge before the scene's key revelation lands. Fail if either confrontation still reads as a polished monologue capped by a quotable slogan."
+    },
+    {
+      "finding_id": "CH15_CRAFT_DAMIAN_PUBLIC_EXPOSURE_SUMMARIZED",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_01/chapters/chapter_15.md:121; snapshots/cycle_01/chapters/chapter_15.md:123; snapshots/cycle_01/chapters/chapter_15.md:127; snapshots/cycle_01/chapters/chapter_15.md:129",
+      "problem": "Damian's summit-floor exposure, the culmination of his counter-operation, is summarized instead of dramatized. Because the chapter withholds his actual words and the first live resistance to them, the later claim that half the room reads courage and half treason is asserted rather than earned on the page.",
+      "rewrite_direction": "Expand the public-turn material at snapshots/cycle_01/chapters/chapter_15.md:121, snapshots/cycle_01/chapters/chapter_15.md:123, snapshots/cycle_01/chapters/chapter_15.md:127, and snapshots/cycle_01/chapters/chapter_15.md:129 into an actual scene beat. Give Damian at least a few specific lines, one immediate procedural or political pushback, and one concrete reaction that makes the split reading legible without burning Anya or the family.",
+      "acceptance_test": "The revised section beginning at snapshots/cycle_01/chapters/chapter_15.md:121 must include at least one direct statement Damian makes on the floor and one immediate counterreaction from the hall that lets a reader hear why the act reads as both exposure and betrayal. Fail if the exposure is still rendered only as summary."
+    },
+    {
+      "finding_id": "CH15_CRAFT_OFFPAGE_SIGNAL_CHAIN",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_01/chapters/chapter_15.md:141; snapshots/cycle_01/chapters/chapter_15.md:145; snapshots/cycle_01/chapters/chapter_15.md:199; snapshots/cycle_01/chapters/chapter_15.md:207; snapshots/cycle_01/chapters/chapter_15.md:215",
+      "problem": "The multi-front coordination is under-rendered. Loid says he will stop the terrace team, but the chapter only shows him confronting Falk and holding the room. Yor's intercept depends on a two-cough signal that appears only later, with no shown handoff or clear spatial logic for how that warning reached her. For a chapter built on simultaneous operational threads, the causal chain is too fuzzy.",
+      "rewrite_direction": "Clarify the relay point inside snapshots/cycle_01/chapters/chapter_15.md:141, snapshots/cycle_01/chapters/chapter_15.md:145, snapshots/cycle_01/chapters/chapter_15.md:199, snapshots/cycle_01/chapters/chapter_15.md:207, and snapshots/cycle_01/chapters/chapter_15.md:215. Show when Loid passed the south-terrace warning, from where, and why Yor rather than Loid took the intercept while he pinned Falk.",
+      "acceptance_test": "By the time the revised action reaches snapshots/cycle_01/chapters/chapter_15.md:215, a cold reader must be able to state who warned Yor, when that warning happened, and why Loid stayed with Falk instead of going south himself. Fail if the answer still depends on retroactive inference rather than on-page causality."
+    },
+    {
+      "finding_id": "CH15_DIALOGUE_STYLE_BIBLE_ECHO",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_01/chapters/chapter_15.md:331",
+      "problem": "Loid's thought 'I trained her. I taught her how to do this.' is a near-verbatim echo of calibration-only example-line material from the style bible. Because it lands inside the chapter's defining father-daughter rupture, it reads like copied guidance rather than fresh voice.",
+      "rewrite_direction": "Replace the realization beat at snapshots/cycle_01/chapters/chapter_15.md:329, snapshots/cycle_01/chapters/chapter_15.md:331, and snapshots/cycle_01/chapters/chapter_15.md:333 with new language unique to this scene. Let Loid's recognition come through a different memory, bodily response, or syntax pattern that does not echo the style-bible exemplar.",
+      "acceptance_test": "After revision, no clause in snapshots/cycle_01/chapters/chapter_15.md:329 through snapshots/cycle_01/chapters/chapter_15.md:333 should read as a verbatim or near-verbatim reproduction of any example-line text from outline/style_bible.json. Pass only if Loid's realization is expressed in materially different wording and image."
+    },
+    {
+      "finding_id": "CH15_PROSE_OVERSTATEMENT_CLOSING",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_15",
+      "evidence": "snapshots/cycle_01/chapters/chapter_15.md:319; snapshots/cycle_01/chapters/chapter_15.md:321; snapshots/cycle_01/chapters/chapter_15.md:355; snapshots/cycle_01/chapters/chapter_15.md:357; snapshots/cycle_01/chapters/chapter_15.md:361; snapshots/cycle_01/chapters/chapter_15.md:365; snapshots/cycle_01/chapters/chapter_15.md:371",
+      "problem": "Once the chapter's consequences are already legible, the prose keeps restating them in abstract victory-and-cost ledgers and thematic paraphrase. The close translates the chapter into thesis language instead of letting one concrete aftermath beat carry the ending, which creates sprawl and weakens pressure.",
+      "rewrite_direction": "Compress or replace the recap-heavy material anchored at snapshots/cycle_01/chapters/chapter_15.md:319, snapshots/cycle_01/chapters/chapter_15.md:321, snapshots/cycle_01/chapters/chapter_15.md:355, snapshots/cycle_01/chapters/chapter_15.md:357, snapshots/cycle_01/chapters/chapter_15.md:361, and snapshots/cycle_01/chapters/chapter_15.md:365. Keep the must-land aftermath beats, then let snapshots/cycle_01/chapters/chapter_15.md:369 and snapshots/cycle_01/chapters/chapter_15.md:371 carry the final emotional pressure through specific action, image, or silence instead of summary certification.",
+      "acceptance_test": "In the revised closing after snapshots/cycle_01/chapters/chapter_15.md:355, every retained paragraph must either introduce a new observable consequence or change the Loid-Anya relationship beat on the page. Fail if the ending still pauses to inventory outcomes the reader already knows without adding a new action, image, or decision."
+    }
+  ],
+  "summary": "FAIL across all four lenses. The chapter has real engine and consequential material, but it is not pass-level because the backup-relay plotline breaks causality and telepathy rules, the Yor/Yuri terrace thread sanitizes and contradicts its own lethality, the major confrontations default to composed thesis speeches, Damian's public exposure is summarized instead of dramatized, and the ending keeps re-proving costs that were already visible. There is also a straight continuity error on Yor's nationality and a near-copy of protected style-bible calibration text in Loid's interior."
+}

@@ -1,0 +1,220 @@
+{
+  "acceptance_targets": [
+    "[CH14_CRAFT_DISCLOSURE_SUMMARIZED] PASS if a cold reader can read the revised snapshots/cycle_02/chapters/chapter_14.md:33 through snapshots/cycle_02/chapters/chapter_14.md:53 and state, from spoken lines and immediate reactions, what Anya tells her parents, what she deliberately omits, and why Damian is trusted enough to join the planning before snapshots/cycle_02/chapters/chapter_14.md:233. FAIL if the chapter still relies on a summary sentence such as 'She told them enough' to bridge those facts.",
+    "[CH14_CRAFT_BRIEFING_AUTOPILOT] PASS if each planning phase produces a distinct new pressure visible on the page: the first phase must do more than clean up routes, and the second phase must do more than certify Anya's next assignment. FAIL if the revised chapter still contains back-to-back sequences where Anya reads an unspoken fix, states it, and the room adopts it immediately without objection, cost, or revision.",
+    "[CH14_DIALOGUE_STYLE_BIBLE_COPY] PASS if the revised snapshots/cycle_02/chapters/chapter_14.md:3 and snapshots/cycle_02/chapters/chapter_14.md:33 no longer contain 'Agent Crane is dead' or an obvious near-copy of the Sylvia example line while still conveying Crane's death immediately. FAIL if the calibration wording remains recognizable.",
+    "[CH14_PROSE_ELLIPTICAL_CLIPPING] PASS if the revised versions of snapshots/cycle_02/chapters/chapter_14.md:37, snapshots/cycle_02/chapters/chapter_14.md:97, and snapshots/cycle_02/chapters/chapter_14.md:189 read as complete narrative sentences and still preserve pressure. FAIL if those beats still rely on subjectless negative fragments in narration outside italicized thought.",
+    "[CH14_BRIEFING_SPRAWL] The emotional temperature at the chapter's midpoint (planning session) stays within one register of its opening (Crane's death, Yor's revelation). No stretch of thirty or more consecutive lines reads as pure operational logistics without character-driven tension on the surface.",
+    "[RED-004] Ch14 uses the phrase 'old dog' no more than once.",
+    "[RED-010] Ch14's expression of telepathic consent violation does not use the word 'offered' in the same frame as Ch9 and Ch11.",
+    "[LW07-001] On a cold read, the first 2-3 lines of chapter 14 make the three-day jump legible without the reader having to back-correct once the later Tuesday/three-days language appears.",
+    "[length_chapter_14_min_words] Chapter word count is >= 5500 while preserving heading contract."
+  ],
+  "aggregation_applied": {
+    "decisions_file": "packets/cycle_02/aggregation_decisions.json",
+    "decisions_sha1": "95a1a6d74306227ded836a8c728f5d1dfabd115c"
+  },
+  "chapter_id": "chapter_14",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if a cold reader can read the revised snapshots/cycle_02/chapters/chapter_14.md:33 through snapshots/cycle_02/chapters/chapter_14.md:53 and state, from spoken lines and immediate reactions, what Anya tells her parents, what she deliberately omits, and why Damian is trusted enough to join the planning before snapshots/cycle_02/chapters/chapter_14.md:233. FAIL if the chapter still relies on a summary sentence such as 'She told them enough' to bridge those facts.",
+      "chapter_id": "chapter_14",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:33; snapshots/cycle_02/chapters/chapter_14.md:37; snapshots/cycle_02/chapters/chapter_14.md:53; snapshots/cycle_02/chapters/chapter_14.md:169; snapshots/cycle_02/chapters/chapter_14.md:233",
+      "finding_id": "CH14_CRAFT_DISCLOSURE_SUMMARIZED",
+      "problem": "The chapter reaches the family-assembly beat and then pulls away from it. Anya's most consequential disclosure is collapsed into summary, so the scene skips the hard part of her telling Loid and Yor what happened, what she is choosing not to tell them, and why Damian can be brought into the apartment at all. That summary move softens the point of consequence and leaves Loid's immediate commitment plus Damian's later seamless inclusion under-earned on the page.",
+      "rewrite_direction": "Expand the disclosure sequence between snapshots/cycle_02/chapters/chapter_14.md:33 and snapshots/cycle_02/chapters/chapter_14.md:53 into an on-page exchange. Let Anya speak at least some of the mission-critical facts aloud in broken, selective fashion, show Loid and Yor testing what she is and is not saying, and make the bridge to Damian explicit before the summon at snapshots/cycle_02/chapters/chapter_14.md:169 and the briefing handoff at snapshots/cycle_02/chapters/chapter_14.md:233. She can still withhold telepathy and the false report, but the withholding needs to be dramatized rather than covered by narration.\n\nAggregator guidance:\n- Canonical choice [damian_identity_knowledge_timeline]: Damian privately knows the cultural attache is Anya Forger from Chapter 12 onward, and Anya does not learn that he knows until Chapter 16.. Grounding: Continuity sheet knowledge_state explicitly says Damian knows \"the cultural attache is Anya Forger\" in chapter_12 and that this remains hidden from Anya until chapter_16; Chapter 16's spec treats that disclosure as a must-land counter-revelation.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if each planning phase produces a distinct new pressure visible on the page: the first phase must do more than clean up routes, and the second phase must do more than certify Anya's next assignment. FAIL if the revised chapter still contains back-to-back sequences where Anya reads an unspoken fix, states it, and the room adopts it immediately without objection, cost, or revision.",
+      "chapter_id": "chapter_14",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:109; snapshots/cycle_02/chapters/chapter_14.md:121; snapshots/cycle_02/chapters/chapter_14.md:123; snapshots/cycle_02/chapters/chapter_14.md:133; snapshots/cycle_02/chapters/chapter_14.md:245; snapshots/cycle_02/chapters/chapter_14.md:251; snapshots/cycle_02/chapters/chapter_14.md:253",
+      "finding_id": "CH14_CRAFT_BRIEFING_AUTOPILOT",
+      "problem": "The chapter's middle and back half run the same solve loop too cleanly: someone has an unspoken tactical answer, Anya harvests it, the map improves, and everyone moves on. That makes the family-alliance scene read as briefing-itis rather than pressure, and it pushes Anya's telepathy toward a frictionless answer engine instead of noisy, costly surface reading.",
+      "rewrite_direction": "Compress and roughen the planning work in snapshots/cycle_02/chapters/chapter_14.md:109 through snapshots/cycle_02/chapters/chapter_14.md:137 and snapshots/cycle_02/chapters/chapter_14.md:245 through snapshots/cycle_02/chapters/chapter_14.md:253. Keep the must-land beats, but give at least one proposed route real objection or failure, make at least one Anya intervention socially risky or partially mistaken, and let the Damian-versus-annex turn at snapshots/cycle_02/chapters/chapter_14.md:255 through snapshots/cycle_02/chapters/chapter_14.md:285 carry the scene's real leverage instead of another clean optimization pass.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if the revised snapshots/cycle_02/chapters/chapter_14.md:3 and snapshots/cycle_02/chapters/chapter_14.md:33 no longer contain 'Agent Crane is dead' or an obvious near-copy of the Sylvia example line while still conveying Crane's death immediately. FAIL if the calibration wording remains recognizable.",
+      "aggregated_pass_key": "p2_dialogue_idiolect_cadence",
+      "chapter_id": "chapter_14",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:3; snapshots/cycle_02/chapters/chapter_14.md:33",
+      "finding_id": "CH14_DIALOGUE_STYLE_BIBLE_COPY",
+      "problem": "The chapter reuses calibration-only wording from the style bible at a chapter-defining death beat. Sylvia's forbidden example line appears verbatim in remembered speech and is then echoed again in Anya's spoken disclosure, which turns reference text into manuscript dialogue and damages voice integrity on first read.",
+      "rewrite_direction": "Replace the death-notification wording at snapshots/cycle_02/chapters/chapter_14.md:3 and retune the spoken version at snapshots/cycle_02/chapters/chapter_14.md:33 so both beats are freshly phrased. Preserve Sylvia's flat institutional bad-news register and Anya's blunt family shorthand, but do not reproduce or closely echo the calibration language from outline/style_bible.json.",
+      "severity": "HIGH",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "PASS if the revised versions of snapshots/cycle_02/chapters/chapter_14.md:37, snapshots/cycle_02/chapters/chapter_14.md:97, and snapshots/cycle_02/chapters/chapter_14.md:189 read as complete narrative sentences and still preserve pressure. FAIL if those beats still rely on subjectless negative fragments in narration outside italicized thought.",
+      "chapter_id": "chapter_14",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:37; snapshots/cycle_02/chapters/chapter_14.md:97; snapshots/cycle_02/chapters/chapter_14.md:189",
+      "finding_id": "CH14_PROSE_ELLIPTICAL_CLIPPING",
+      "problem": "The narration repeatedly falls into clipped fragment shorthand: 'Not the telepathy. Not the false report.' 'No speech. No apology.' 'Not a second layer. Not a hidden room.' In aggregate this reads like mechanical hard-boiled compression, not lived close-third prose, and it violates the constitution's ban on elliptical clipping in narration.",
+      "rewrite_direction": "Recast the narration at snapshots/cycle_02/chapters/chapter_14.md:37, snapshots/cycle_02/chapters/chapter_14.md:97, and snapshots/cycle_02/chapters/chapter_14.md:189 into grammatically complete sentences that keep the same pressure. Fragmentary disruption can stay inside italicized telepathic bursts, but the base narration should carry its force through image, syntax, and specific observation rather than stacked clause-less negatives.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "The emotional temperature at the chapter's midpoint (planning session) stays within one register of its opening (Crane's death, Yor's revelation). No stretch of thirty or more consecutive lines reads as pure operational logistics without character-driven tension on the surface.",
+      "chapter_id": "chapter_14",
+      "cycle": 2,
+      "evidence": "At snapshots/cycle_02/FINAL_NOVEL.md:3857 the chapter shifts from the devastating emotional core (Anya arriving with Crane's death, Yor producing Garden intelligence, the family absorbing mutual deception) into tactical planning: 'Forty minutes later the kitchen looked less like dinner and more like evidence. Loid had pulled a venue map onto the refrigerator beside his whiteboard and covered both with times, arrows, and access points.' From line 3857 through line 3917, the prose becomes operational: 'The opening session is still the obvious window' (3859), 'The south side is theatrical. Good sight lines. Room for panic' (3861), 'What about the foyer junction instead?' (3873). Loid 'built routes,' Yor 'asked practical questions about choke points and camera coverage' (3887). The emotional register that powered lines 3751\u20133856 (Crane's name in the kitchen, Yor's Garden confession, Loid's silent assessment of his daughter) drains out and does not return until Bond's second vision at line 3889.",
+      "finding_id": "CH14_BRIEFING_SPRAWL",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:3857",
+            "excerpt": "3857: Forty minutes later the kitchen looked less like dinner and more like evidence. Loid had pulled a venue map onto the refrigerator beside his whiteboard and covered both with times, arrows, and access points. Yor's photographs sat in a neat row on the table. Anya stood near the counter with a pen she was not using.",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          }
+        ],
+        "rewrite_direction": [
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:3880-3917",
+            "excerpt": "3880: \n3881: Yor leaned forward and measured distance with two fingers. *Forty seconds if the heels are wrong. Less without them.* \"I can do that.\"\n3882: \n3883: The plan tightened. It always did when Anya stole the part nobody had said yet and handed it back as intuition.\n3884: \n3885: Her stomach turned.\n[...]\n3912: \n3913: \"Then the extraction route is real,\" he said. \"Or the staging route. Either way we hold that ground.\"\n3914: \n3915: Bond pressed closer to the refrigerator, the vision fading now into the simpler distress of an old dog who knew only that the place on the map was bad.\n3916: \n3917: Anya crouched and put her arms around his neck. \"Good boy,\" she said into his fur. \"I know.\"",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "problem": "The planning session is necessary for Chapter 15 setup but sprawls past its dramatic warrant. After the chapter's strongest emotional material\u2014a family choosing to fight together despite layers of mutual deception\u2014the prose shifts to logistics (venue maps, approach routes, choke points, camera coverage) for approximately sixty lines. The emotional engine that makes the chapter's opening powerful runs out of fuel around line 3880. A shortlist reader loses the current that carried them in and does not recover it until Bond's vision injects urgency. The result is a procedural trough in the chapter's midsection that reads as briefing-room exposition rather than three people holding together under pressure.",
+      "rewrite_direction": "Compress lines 3880\u20133917 by approximately 40%. Fold explicit route-building and choke-point discussion into shorter exchanges that keep character tension on the surface\u2014Yor's flat assassin's pragmatism clashing with Loid's analyst precision, Anya's guilt at using telepathy to smooth the planning. Move Bond's second vision (currently lines 3889\u20133917) earlier so it arrives before the planning loses momentum rather than after. Cut or drastically reduce the explicit tactical dialogue ('What about the foyer junction instead?') and replace with character-driven beats that carry the same spatial information: Yor measuring distance with her fingers while thinking about the man she killed, Loid circling a point on the map with the red pen he uses when something matters. Target: snapshots/cycle_02/FINAL_NOVEL.md:3880\u20133917.",
+      "severity": "MEDIUM",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch14 uses the phrase 'old dog' no more than once.",
+      "aggregated_pass_key": "p3_prose_copyedit",
+      "chapter_id": "chapter_14",
+      "cycle": 2,
+      "evidence": "Ch6 L1663: 'old dog'; Ch10 L2721: 'very old dog'; Ch14 L3893: 'faster than an old dog with stiff hips had any right to move'; Ch14 L3915: 'the simpler distress of an old dog who knew only that the place on the map was bad' (22 lines later in same chapter).",
+      "finding_id": "RED-004",
+      "problem": "Bond's 'old dog' label has been used in Ch6 and Ch10, and now appears twice within Ch14 (L3893 and L3915, only 22 lines apart). L3893 earns its place by contrasting age against sudden urgency. L3915 re-applies the same label without new leverage.",
+      "rewrite_direction": "Cut or replace the 'old dog' tag at L3915. Bond's distress as the vision fades can be conveyed through body language (pressing closer, trembling, panting) without re-certifying his age a second time in the same scene.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch14's expression of telepathic consent violation does not use the word 'offered' in the same frame as Ch9 and Ch11.",
+      "aggregated_pass_key": "p3_prose_copyedit",
+      "chapter_id": "chapter_14",
+      "cycle": 2,
+      "evidence": "Ch9 L2688: 'none of it had been freely offered'; Ch11 L2946: 'carrying things Berger had never offered her'; Ch14 L4003: 'She kept taking the first thing in everybody's head and laying it on the table like they had offered it.'",
+      "finding_id": "RED-010",
+      "problem": "The consent-violation frame for telepathy \u2014 thoughts taken rather than offered \u2014 uses the same 'offered' formulation three times (Ch9, Ch11, Ch14). The idea is central, but the specific phrasing has become a verbal tic. Ch9 L2688 (kiss scene) is the strongest deployment; Ch14 L4003 is the third use.",
+      "rewrite_direction": "Vary the language at L4003. The consent-violation insight can be expressed through a different metaphor \u2014 theft, eavesdropping, trespass \u2014 rather than the now-familiar 'offered' construction.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "On a cold read, the first 2-3 lines of chapter 14 make the three-day jump legible without the reader having to back-correct once the later Tuesday/three-days language appears.",
+      "chapter_id": "chapter_14",
+      "cycle": 2,
+      "evidence": "Chapter 13 opens on Crane's death call at 6:14 a.m. and ends without signaling a multi-day handoff, but chapter 14 only later reveals that Anya has shown up at her parents' apartment 'at nine on a Tuesday' and has been carrying the same guilt for 'three days.' snapshots/cycle_02/FINAL_NOVEL.md:3514; snapshots/cycle_02/FINAL_NOVEL.md:3757; snapshots/cycle_02/FINAL_NOVEL.md:3787",
+      "finding_id": "LW07-001",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:3514",
+            "excerpt": "3514: The phone rang at 6:14 in the morning.",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:3757",
+            "excerpt": "3757: She should have called. There was a protocol for this. When an operation went bad and you needed a handler outside the chain, you filed a contact request and waited for a secure window. You did not show up at your parents' apartment at nine on a Tuesday with your hands shaking and a dead man's name lodged behind your teeth.",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:3787",
+            "excerpt": "3787: She told them enough. Not the telepathy. Not the false report. Not the full shape of the guilt, which lived in her like swallowed metal and had not moved in three days. But enough. The Renewal Front. The conspiracy inside both governments. The mole inside WISE she still could not name. The summit. The fact that the provocation had narrowed to days, not weeks.",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "pass_hint": "p1_structural_craft",
+      "problem": "Read back-to-back, the boundary initially feels like an immediate continuation of Damian's chapter-13 coda. The actual three-day jump arrives late enough that a reader has to revise the story clock after the new chapter is already underway.",
+      "rewrite_direction": "Give chapter 14 an explicit elapsed-time marker in its first sentence or first paragraph, or plant a cleaner handoff at the end of chapter 13 so the reader enters the family-alliance scene already oriented in time.",
+      "severity": "MEDIUM",
+      "source": "local_window",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Chapter word count is >= 5500 while preserving heading contract.",
+      "chapter_id": "chapter_14",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_14.md:1",
+      "finding_id": "length_chapter_14_min_words",
+      "problem": "Chapter is below projected_min_words (3284 < 5500).",
+      "rewrite_direction": "Add causally necessary scene material that strengthens the chapter engine, increases pressure, and lands the planned state shift without filler.",
+      "severity": "HIGH",
+      "source": "length_guardrail",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "has_locator_excerpts": true,
+  "input_snapshot_hash": "9f6792689398456c15d275d4ff188c9b676efb98ccd20aa688c3f4ec2a83ca2c",
+  "must_fix_count": 9,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness."
+  ],
+  "original_snapshot_file": "snapshots/cycle_02/chapters/chapter_14.md",
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This novel's premise blends comedy, espionage action, and genuine emotional stakes. The creative risk is in honoring all three simultaneously without letting any one mode cannibalize the others. Do not soften the violence because the novel is funny. Do not suppress the comedy because the stakes are real. Do not retreat from Anya's moral complicity (she reads minds without consent and uses it to manipulate) because she is the protagonist and we like her. The hardest scenes to get right are the ones where comedy and pain coexist \u2014 a fight that is also funny, a confession that is also absurd, a family dinner where love and deception are the same meal. Lean into those moments rather than resolving them into one register. The novel's best material lives in the dissonance.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism at the point of consequence is a craft failure. When violence, fear, grief, or moral compromise demands scene presence, render it with specificity. A bruise should have a color. A death should have weight. A lie should have a cost the liar feels in their body. The exception is Anya's telepathic restraint \u2014 she sometimes cannot bear to fully articulate what she's reading in someone's mind, and this selective omission is a character choice, not authorial squeamishness.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for all characters in casual speech. Uncontracted forms reserved for emphasis, deliberate formality, or character-specific register choices (Sylvia's professional diction, Damian's diplomatic mode). In contemporary casual scenes, an unjustified full-form line should be flagged and checked.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 2
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "No two consecutive chapters should share the same structural rhythm. Alternate between dialogue-heavy scenes and interiority-heavy passages. Vary scene count: two-scene chapters (11, 16, 17 \u2014 compressed force) against multi-scene chapters (8, 15 \u2014 breadth and momentum). Shift between comic dominant and dramatic dominant across the middle of the book, with the comic register maintaining presence even in dramatic chapters through Anya's voice and the Forger family's inherent absurdity. The tonal shift at Chapter 13 is a deliberate gear change, not a gradual dimming \u2014 comedy should be fully alive in Chapter 12 and markedly reduced (not absent) in Chapter 13. The Chapter 13 POV shift to Damian is a structural event: the reader's relationship to information changes. The final act (14-17) maintains Anya's voice and the family's warmth as comic undertone, but the dominant mode is drama with consequences. Chapter 17's dinner scene reintroduces comedy through a register the novel has not previously accessed \u2014 Damian's self-conscious thought management around a known telepath \u2014 which only works because it follows sixteen chapters of oblivious thought-reading.",
+      "diction": "Contemporary and accessible, not literary-precious. The prose should have energy and forward drive. Humor comes from observation, character logic, and the gap between surface and interior \u2014 not from clever narration or authorial commentary. Let the funny things be funny without signposting them. Let the sad things sit without interpretation. The prose should be invisible when it needs to be and vivid when the scene demands it, but never decorative for its own sake.",
+      "forbidden_drift_patterns": [
+        "Narrator-as-comedian: the prose commenting on its own comedy, winking at the reader, or admiring a character's wit. The humor lives in the situation, not in the telling.",
+        "Telepathy-as-omniscience: Anya's mind-reading should feel like cognitive overload, not like a narrator's convenient access to exposition. She reads surface thoughts, not deep motivations, and the thoughts she catches should be fragmentary, mundane, and sometimes misleading.",
+        "Prestige-creep: the prose drifting toward solemn literary register when the scene's natural mode is comic, warm, or chaotic. This novel's emotional power comes from the coexistence of comedy and genuine feeling, not from the comedy yielding to seriousness.",
+        "Briefing-itis: scenes where characters explain plot to each other or to the reader. Information should emerge through action, observation, and telepathic fragments \u2014 not through expository dialogue formatted as conversation.",
+        "Combat-poetry: fight scenes that become lyrical or aesthetically admiring. Violence should be fast, specific, physically grounded, and over quickly. Yor's lethality is matter-of-fact; Anya's fighting is scrappier and less elegant.",
+        "Emotion-labeling: telling the reader what a character feels instead of rendering the feeling through thought, action, and physical detail. 'She felt sad' is always worse than the specific thing that makes the sadness legible."
+      ],
+      "narrative_distance": "Close third person, primarily Anya. Chapter 7 (Damian), Chapter 10 (Yor), the Damian POV section in Chapter 13, and Damian's thread in Chapter 15 shift to close third on their respective POV characters. The telepathy layer is unique to Anya's POV \u2014 when she is the viewpoint character, other characters' surface thoughts appear as italicized interjections woven into the prose. In non-Anya POV chapters, no telepathic content appears. The Chapter 13 Damian POV section is structurally critical: it gives the reader access to Damian's interior at a depth Anya's telepathy cannot reach, and it reveals that he has identified Anya \u2014 knowledge the reader carries into the final act while Anya does not. This dramatic irony reversal is the novel's strongest structural surprise and depends on the reader experiencing Damian's depths unmediated by Anya's telepathic filter.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Varied and responsive to scene pressure. Action sequences: short sentences, concrete verbs, sensory immediacy. Comic scenes: longer sentences that build to turns, pacing that allows beats to land. Quiet domestic scenes: relaxed rhythm with room for observation and texture. Telepathic interjections should disrupt prose rhythm the way intrusive thoughts disrupt concentration \u2014 not ornamentally but as genuine cognitive interference. Avoid metronomic sentence patterns in any mode.",
+      "sensory_bias": [
+        "visual surveillance \u2014 reading rooms, reading faces, the spy's hyperawareness of spatial arrangement and exit routes",
+        "auditory \u2014 overheard thoughts as a telepathic sixth sense layered over actual ambient sound",
+        "kinesthetic \u2014 action choreography, physical proximity, the body under stress or in intimacy",
+        "olfactory/gustatory \u2014 Yor's cooking, Berlint street food, the specific smell of institutional buildings and safe houses"
+      ]
+    }
+  }
+}

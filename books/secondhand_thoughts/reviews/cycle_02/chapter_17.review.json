@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_17",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH17_CONTINUITY_BIRTHDAY_TIMING",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_02/chapters/chapter_17.md:3; snapshots/cycle_02/chapters/chapter_17.md:193; snapshots/cycle_02/chapters/chapter_17.md:199",
+      "problem": "The chapter sets itself in the third week of March, then ties Becky and Yor's memory to Anya's twentieth birthday party and has Damian think \"Three months ago.\" The continuity sheet fixes Anya at age 20 at story start in autumn, so this line makes her twentieth birthday land months too late and creates a direct age/timeline contradiction in a late-book chapter where the chronology should be settled.",
+      "rewrite_direction": "Revise the birthday exchange centered on snapshots/cycle_02/chapters/chapter_17.md:193 and snapshots/cycle_02/chapters/chapter_17.md:199 through the surrounding beat so the recalled event matches the March timeline. Either change the party reference to a birthday number/timing that fits Anya already being 20 at story start, or remove the \"three months ago\" marker and replace it with a memory cue that does not break the established chronology.",
+      "acceptance_test": "PASS if the revised passage at snapshots/cycle_02/chapters/chapter_17.md:193 through snapshots/cycle_02/chapters/chapter_17.md:200 no longer implies that Anya's twentieth birthday occurred roughly three months before a March chapter; FAIL if a reader can still infer a December-or-later twentieth birthday from those lines."
+    },
+    {
+      "finding_id": "CH17_CONTINUITY_DINNER_HEADCOUNT",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_02/chapters/chapter_17.md:53; snapshots/cycle_02/chapters/chapter_17.md:101; snapshots/cycle_02/chapters/chapter_17.md:227",
+      "problem": "The dinner staging miscounts its own participants. The scene is written as Loid, Yor, Anya, and Damian at the table, but the chapter explicitly says Loid sets out five bowls and five place settings, then later thinks \"Five at the table.\" Because no fifth diner ever appears, the physical scene does not add up and the domestic realism this chapter depends on briefly collapses.",
+      "rewrite_direction": "Correct the table-staging spans at snapshots/cycle_02/chapters/chapter_17.md:53 and snapshots/cycle_02/chapters/chapter_17.md:227 so the count of bowls, chairs, and people matches the bodies actually present in the scene. If Bond is being counted emotionally, make that explicit without giving him a human place setting; otherwise revise the prose to a consistent four-person dinner.",
+      "acceptance_test": "PASS if the revised lines at snapshots/cycle_02/chapters/chapter_17.md:53 and snapshots/cycle_02/chapters/chapter_17.md:227 describe a table count that matches the on-page diners for the whole meal; FAIL if the text still claims five place settings or \"five at the table\" without a fifth human diner being physically present and accounted for."
+    },
+    {
+      "finding_id": "CH17_PROSE_CLIPPED_NARRATION",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_02/chapters/chapter_17.md:3; snapshots/cycle_02/chapters/chapter_17.md:5; snapshots/cycle_02/chapters/chapter_17.md:241; snapshots/cycle_02/chapters/chapter_17.md:243; snapshots/cycle_02/chapters/chapter_17.md:265",
+      "problem": "The narration repeatedly leans on bare noun stacks and clipped fragments for emphasis: \"Paint samples. Grocery lists.\", \"Courtrooms. Committees. Procedural language.\", \"New faces. New security checks.\", \"Not tonight.\", \"Anya Forger. Twenty years old. Telepath. Daughter. Operative.\" The constitution explicitly forbids elliptical clipping in narration, and by the end of the chapter this habit reads less like pressure-responsive compression than a recurring prose shortcut.",
+      "rewrite_direction": "Recast the cited narration at snapshots/cycle_02/chapters/chapter_17.md:3, snapshots/cycle_02/chapters/chapter_17.md:5, snapshots/cycle_02/chapters/chapter_17.md:241, snapshots/cycle_02/chapters/chapter_17.md:243, and snapshots/cycle_02/chapters/chapter_17.md:265 through the closing lines so the emphasis comes from complete sentences or clearly framed interior syntax rather than subjectless label-stacks. Preserve the chapter's compression, but move the rhythm away from constitution-banned clipped narration.",
+      "acceptance_test": "PASS if the revised spans beginning at snapshots/cycle_02/chapters/chapter_17.md:3, snapshots/cycle_02/chapters/chapter_17.md:241, and snapshots/cycle_02/chapters/chapter_17.md:265 no longer contain standalone narrative fragments built from bare nouns or negation-only sentences for emphasis; FAIL if those sections still rely on the same clipped-fragment pattern instead of carrying the beat in full sentences or unmistakably signaled thought syntax."
+    }
+  ],
+  "summary": "The chapter lands the intended tender/comic resolution register and the spoken dialogue is mostly character-true, especially Damian's anxious thought-management around a known telepath. It still fails review because two hard continuity/staging contradictions break local trust and the prose repeatedly defaults to clipped narrative fragments the constitution disallows, including in the closing beat."
+}
