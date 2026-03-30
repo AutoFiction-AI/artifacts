@@ -1,0 +1,48 @@
+{
+  "cycle": 3,
+  "window_id": "window_05",
+  "chapters_reviewed": [
+    "chapter_09",
+    "chapter_10",
+    "chapter_11",
+    "chapter_12"
+  ],
+  "summary": "Strong window overall; the main local drag is a chapter 11/12 handoff that repeats the same Kem/Vel distrust question, plus a chapter 11 time marker that slips from three days since Thessa's settlement to five without any shown elapsed gap.",
+  "findings": [
+    {
+      "finding_id": "LW05-001",
+      "category": "pre_scan",
+      "subcategory": "repeated_information",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_12",
+      "related_chapter_ids": [
+        "chapter_11"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "snapshots/cycle_03/FINAL_NOVEL.md:4953; snapshots/cycle_03/FINAL_NOVEL.md:5082",
+      "problem": "Chapter 11 already crystallizes Kem's suspicion in a clean binary: is Vel teaching him judgment or building the version of him she needs. Chapter 12 then reopens with nearly the same question in nearly the same terms. Read back-to-back, the second formulation feels like a re-brief at the seam rather than a new turn, so the Margins opening spends its first beat restating distrust instead of advancing it.",
+      "rewrite_direction": "Revise the chapter 12 opening so it starts from a new consequence of the river argument, such as changed watch behavior, route choices, or what Vel now refuses to say, and let the distrust question surface indirectly. If the thought stays explicit, it needs to add a sharper angle than the chapter 11 formulation already gave the reader.",
+      "acceptance_test": "Reading straight from the end of chapter 11 into chapter 12, the opening pages should create new leverage in the Vel/Kem fracture instead of repeating the same interpretive question almost verbatim.",
+      "fix_owner_reason": "Later chapter owns redundant re-orientation. Chapter 12 repeats a suspicion chapter 11 has already framed clearly."
+    },
+    {
+      "finding_id": "LW05-002",
+      "category": "factual_coherence",
+      "subcategory": "elapsed_time_contradiction",
+      "severity": "HIGH",
+      "chapter_id": "chapter_11",
+      "related_chapter_ids": [
+        "chapter_10",
+        "chapter_12"
+      ],
+      "boundary_span": "chapter_10/chapter_11",
+      "counterpart_evidence": "snapshots/cycle_03/FINAL_NOVEL.md:4747; snapshots/cycle_03/FINAL_NOVEL.md:5092",
+      "pass_hint": "p1_structural_craft",
+      "evidence": "snapshots/cycle_03/FINAL_NOVEL.md:4953",
+      "problem": "Chapter 11 opens by placing the bridge three days after leaving Thessa's settlement, then later says it has been five days since Thessa's kitchen even though the chapter only shows the same-day river crossing and aftermath. Chapter 12's own 'Two days after the river' marker makes the five-day count read like it belongs later, so the local travel clock slips exactly where the reader has been primed to track Thessa's 'three days south' challenge.",
+      "rewrite_direction": "Either change the later chapter 11 count to three days since Thessa's kitchen, or insert an explicit two-day travel skip between the river aftermath and that reflection if five days is intended. Then confirm chapter 12's post-river timing still lands on the same calendar.",
+      "acceptance_test": "A reader can track the elapsed time from leaving Thessa's settlement, to reaching the bridge, to the first night south of the river, to 'two days after the river' without inventing unseen days or recalculating the sequence.",
+      "fix_owner_reason": "The contradiction first appears in chapter 11's later timestamp. The earlier bridge anchor and chapter 12's post-river timing are both clearer than the intervening 'five days' line."
+    }
+  ]
+}

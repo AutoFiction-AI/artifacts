@@ -1,0 +1,63 @@
+{
+  "cycle": 1,
+  "window_id": "window_04",
+  "chapters_reviewed": [
+    "chapter_07",
+    "chapter_08",
+    "chapter_09",
+    "chapter_10"
+  ],
+  "summary": "The window escalates cleanly in engine, but boundary trust is weaker than the scene work: chapter 8 to 9 drops five unexplained Kem levels, chapter 9 to 10 hides a substantial time jump until too late, and chapter 8 re-teaches chapter 7's Spent-town economics before the action starts.",
+  "findings": [
+    {
+      "finding_id": "LW04-001",
+      "category": "pre_scan",
+      "subcategory": "repeated_information",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_08",
+      "related_chapter_ids": [
+        "chapter_07"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "Chapter 7 already lands the outside-the-Vault spending lesson through the healing ward, wall repair, and Dren's Mira math at snapshots/cycle_01/FINAL_NOVEL.md:1567, snapshots/cycle_01/FINAL_NOVEL.md:1587, and snapshots/cycle_01/FINAL_NOVEL.md:1701. Chapter 8 opens by explaining the same Fertility Charm economics again through the barley gradient at snapshots/cycle_01/FINAL_NOVEL.md:1818 and snapshots/cycle_01/FINAL_NOVEL.md:1820 before the pursuit arrives.",
+      "problem": "Read back-to-back, chapter 8 spends its opening runway restating a lesson chapter 7 has already dramatized: ordinary southern life runs on practical, budgeted spending. Because the previous chapter has just made that point in scene, the repeated explanation blunts the handoff into the attack chapter and makes the opening feel like another teaching lap instead of new movement.",
+      "rewrite_direction": "Trim chapter 8's agronomy/economics recap to only the genuinely new route detail or Dren-specific texture, then get to Vel hearing the wrong sounds sooner. Let chapter 7 own the broad discovery that Spent communities spend levels as daily labor.",
+      "acceptance_test": "A consecutive read from chapter 7 into chapter 8 reaches the pursuit setup without feeling that the novel has to explain Spent-town level economics twice. Chapter 8 should add route-specific detail or character texture, not restate the chapter 7 lesson.",
+      "fix_owner_reason": "Chapter 8 owns this because later chapters own redundant re-orientation, and the repeated material appears in its opening rather than in chapter 7's first-landed discovery."
+    },
+    {
+      "finding_id": "LW04-002",
+      "category": "pre_scan",
+      "subcategory": "chronology_gap",
+      "severity": "HIGH",
+      "chapter_id": "chapter_10",
+      "related_chapter_ids": [
+        "chapter_09"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "Chapter 9 ends with Kem waking before dawn at the immediate post-fight camp at snapshots/cycle_01/FINAL_NOVEL.md:2287. Chapter 10 opens at Thessa's settlement with no early elapsed-time cue at snapshots/cycle_01/FINAL_NOVEL.md:2292, snapshots/cycle_01/FINAL_NOVEL.md:2296, and snapshots/cycle_01/FINAL_NOVEL.md:2304; the reader only gets a much later indication that Vel's ribs were cracked two weeks earlier at snapshots/cycle_01/FINAL_NOVEL.md:2476.",
+      "problem": "The chapter 9 to 10 handoff leaves the reader unable to tell whether the group has traveled overnight, several days, or weeks. Because chapter 10 depends on accumulated wear in Dren's arm, Vel's ribs, and the route deviation to Thessa, the missing time marker creates avoidable confusion at exactly the point where the new chapter should feel grounded.",
+      "rewrite_direction": "Anchor the skip in the first paragraph or first exchange of chapter 10 with an explicit elapsed-time cue and one concrete sentence about what changed during the off-page travel. The reader should know immediately how long it has been since the chapter 8 fight and what state the group is carrying into Thessa's settlement.",
+      "acceptance_test": "Within the first 2-3 sentences of chapter 10, a reader can state how much time has passed since chapter 9 and can reconcile Dren's wound, Vel's ribs, and the route change without waiting for later clues.",
+      "fix_owner_reason": "Chapter 10 owns this because later chapters own missing boundary orientation, and the confusion is created by its opening refusing to timestamp the skip."
+    },
+    {
+      "finding_id": "LW04-003",
+      "category": "factual_coherence",
+      "subcategory": "level_accounting",
+      "severity": "CRITICAL",
+      "chapter_id": "chapter_09",
+      "related_chapter_ids": [
+        "chapter_08"
+      ],
+      "boundary_span": "chapter_08/chapter_09",
+      "counterpart_evidence": "snapshots/cycle_01/FINAL_NOVEL.md:1996 and snapshots/cycle_01/FINAL_NOVEL.md:1998",
+      "pass_hint": "p1_structural_craft",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2125",
+      "problem": "Chapter 8 explicitly leaves Kem at 183 after the perimeter costs forty-two levels, but chapter 9 checks him at 178 without any on-page additional spend across the boundary. In a novel that trains the reader to audit exact numbers, the missing five levels reads as broken accounting in the core mechanic.",
+      "rewrite_direction": "Either add an explicit five-level spend between the retreat and the camp scene or change chapter 9's ledger check to match the chapter 8 total. If the intended answer is off-page attrition, put that attrition on the page before the 178 check arrives.",
+      "acceptance_test": "A careful reader can total Kem's on-page spending from chapter 8 into chapter 9 and arrive at the exact number chapter 9 reports, with no need to assume unseen use.",
+      "fix_owner_reason": "Chapter 9 owns this because the earlier chapter's arithmetic is explicit on the page, and the mismatch first appears when chapter 9 reports the new ledger number."
+    }
+  ]
+}

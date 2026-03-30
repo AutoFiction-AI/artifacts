@@ -1,0 +1,180 @@
+{
+  "acceptance_targets": [
+    "[CH09_DIALOGUE_EXAMPLE_LINE_LEAK] Pass if the revised dialogue at snapshots/cycle_01/chapters/chapter_09.md:51 and in the reveal exchange beginning at snapshots/cycle_01/chapters/chapter_09.md:125 no longer preserves the recognizable sample-line skeletons 'My arm's still on, so thanks' or 'People hit zero... Not dead. Not there/gone,' and each speaker's line contains scene-specific wording that could not be mistaken for a copied calibration example. Fail if either beat still reads as a near-verbatim or cadence-level reuse of the style-bible examples.",
+    "[CH09_CRAFT_ABSTRACT_THRESHOLD_REVEAL] Pass if, by reading the revised reveal sequence beginning at snapshots/cycle_01/chapters/chapter_09.md:125, a cold reader can state from the chapter text alone: 1. what Vel says happens at zero, 2. one concrete thing she personally witnessed during a crossing, 3. what prevents the crossing from being an accidental vanish, and 4. why Kem's understanding of Vel changes in this scene. Fail if the revised passage still relies mainly on abstract placeholders such as 'place,' 'other side,' or 'mechanism' without at least one concrete witnessed detail, or if paragraphs after the clarification merely restate that the sub-Ledger exists without adding new pressure or information.",
+    "[CH09_PROSE_POV_NAME_LEAK] Pass if the revised line at snapshots/cycle_01/chapters/chapter_09.md:217 either uses only Kem-available identifiers for the pursuer or includes a prior in-chapter moment where he is explicitly given her name. Fail if 'Sable Orm' remains in Kem's reflection without any on-page knowledge transfer.",
+    "[R026] Ch9 em-dash density below 10%.",
+    "[R037] Ch9 'He'-opened sentences do not exceed 7%.",
+    "[R055] Ch9 'the way' does not exceed 1.0 per 800 words.",
+    "[LW04-003] A careful reader can total Kem's on-page spending from chapter 8 into chapter 9 and arrive at the exact number chapter 9 reports, with no need to assume unseen use."
+  ],
+  "aggregation_applied": {
+    "decisions_file": "packets/cycle_01/aggregation_decisions.json",
+    "decisions_sha1": "880a450ac33b90efc1364a17207490490d407904"
+  },
+  "chapter_id": "chapter_09",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if the revised dialogue at snapshots/cycle_01/chapters/chapter_09.md:51 and in the reveal exchange beginning at snapshots/cycle_01/chapters/chapter_09.md:125 no longer preserves the recognizable sample-line skeletons 'My arm's still on, so thanks' or 'People hit zero... Not dead. Not there/gone,' and each speaker's line contains scene-specific wording that could not be mistaken for a copied calibration example. Fail if either beat still reads as a near-verbatim or cadence-level reuse of the style-bible examples.",
+      "chapter_id": "chapter_09",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:51; snapshots/cycle_01/chapters/chapter_09.md:125; snapshots/cycle_01/chapters/chapter_09.md:147; snapshots/cycle_01/chapters/chapter_09.md:157; snapshots/cycle_01/FINAL_NOVEL.md:2107",
+      "finding_id": "CH09_DIALOGUE_EXAMPLE_LINE_LEAK",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:2107",
+            "excerpt": "2107: Dren rotated his wrist again. The gash was closed. The arm was functional. \"My arm's still on, though. So.\" He looked at Kem, and something shifted in his expression \u2014 not warmth exactly, but a recognition of effort that wasn't pretending to be expertise. \"Thanks.\"",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "problem": "The chapter reuses calibration-only style-bible dialogue almost verbatim. Dren's gratitude beat at line 51 closely reproduces the Dren example-line skeleton ('My arm's still on, so thanks'), and Vel's threshold description at lines 125/147/157 echoes the Fallow example-line cadence ('People hit zero, they go somewhere... Not dead. Not there'). That makes two important exchanges feel pre-authored from the guide instead of discovered in-scene, and it blurs voice separation by migrating a Fallow-shaped line into Vel's mouth.",
+      "rewrite_direction": "Rewrite the gratitude beat around snapshots/cycle_01/chapters/chapter_09.md:51 so Dren thanks Kem in language specific to this ugly stitch job, this arm, and Dren's trader pragmatism rather than the style-bible sample cadence. Specifically at line 2107, replace 'My arm's still on, though. So.' with original dry-gratitude phrasing that does not echo the example line's construction. Also rewrite Vel's reveal around snapshots/cycle_01/chapters/chapter_09.md:125, :147, and :157 so her phrasing comes from what she personally witnessed and from her own compressed register, not from the example-line structure about people hitting zero and not being dead.",
+      "severity": "HIGH",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if, by reading the revised reveal sequence beginning at snapshots/cycle_01/chapters/chapter_09.md:125, a cold reader can state from the chapter text alone: 1. what Vel says happens at zero, 2. one concrete thing she personally witnessed during a crossing, 3. what prevents the crossing from being an accidental vanish, and 4. why Kem's understanding of Vel changes in this scene. Fail if the revised passage still relies mainly on abstract placeholders such as 'place,' 'other side,' or 'mechanism' without at least one concrete witnessed detail, or if paragraphs after the clarification merely restate that the sub-Ledger exists without adding new pressure or information.",
+      "chapter_id": "chapter_09",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:125; snapshots/cycle_01/chapters/chapter_09.md:129; snapshots/cycle_01/chapters/chapter_09.md:149; snapshots/cycle_01/chapters/chapter_09.md:157; snapshots/cycle_01/chapters/chapter_09.md:177; snapshots/cycle_01/chapters/chapter_09.md:179; snapshots/cycle_01/chapters/chapter_09.md:185; snapshots/cycle_01/chapters/chapter_09.md:195; snapshots/cycle_01/chapters/chapter_09.md:217",
+      "finding_id": "CH09_CRAFT_ABSTRACT_THRESHOLD_REVEAL",
+      "problem": "The chapter's defining revelation stays too abstract for the amount of dramatic weight it is asked to carry. Vel gives Kem placeholder nouns ('a place,' 'the other side,' 'specific conditions,' 'a mechanism'), but almost no concrete observational detail from the crossing she claims to have witnessed. The scene then compensates with repeated narrator paraphrase about what the reveal means to Kem and to Vel rather than letting concrete witnessed evidence do the work. The result is an under-realized payoff: the chapter insists that the sub-Ledger changes everything, but on the page the reader gets concept language and thematic translation more than revelation.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_09.md:125, snapshots/cycle_01/chapters/chapter_09.md:147, snapshots/cycle_01/chapters/chapter_09.md:157, and snapshots/cycle_01/chapters/chapter_09.md:177, add one or two concrete, witness-level details from what Vel actually saw when someone crossed: an observable bodily change, an environmental effect, the exact absence/presence shift, or a Ledger-related sensation she can name as fact. Then compress or replace the explanatory gloss at snapshots/cycle_01/chapters/chapter_09.md:179, snapshots/cycle_01/chapters/chapter_09.md:185, snapshots/cycle_01/chapters/chapter_09.md:195, and snapshots/cycle_01/chapters/chapter_09.md:217 so each remaining paragraph after the reveal either supplies a new fact, sharpens motive, or changes the relationship between Kem and Vel instead of rephrasing the same thematic point.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if the revised line at snapshots/cycle_01/chapters/chapter_09.md:217 either uses only Kem-available identifiers for the pursuer or includes a prior in-chapter moment where he is explicitly given her name. Fail if 'Sable Orm' remains in Kem's reflection without any on-page knowledge transfer.",
+      "chapter_id": "chapter_09",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:217",
+      "finding_id": "CH09_PROSE_POV_NAME_LEAK",
+      "problem": "The close-third narration breaks POV discipline by naming 'Sable Orm' inside Kem's late-night reflection. In the allowed chapter/context inputs, Kem knows there was a sixth watcher with a notebook; he does not have her name. Using it here imports reader-side or out-of-POV knowledge into a chapter that otherwise stays tightly inside Kem's perception.",
+      "rewrite_direction": "Revise snapshots/cycle_01/chapters/chapter_09.md:217 so the thought refers only to what Kem could know on the page at this point, such as the sixth agent or the woman with the notebook. If the name must appear, the chapter needs an explicit earlier beat where Kem learns it before this line.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch9 em-dash density below 10%.",
+      "chapter_id": "chapter_09",
+      "cycle": 1,
+      "evidence": "Ch9: 44/113 = 38.9%.",
+      "finding_id": "R026",
+      "problem": "Ch9 at 38.9% em-dash density.",
+      "rewrite_direction": "Cut at least 33 of 44. Target: no more than 11 em-dash lines.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch9 'He'-opened sentences do not exceed 7%.",
+      "chapter_id": "chapter_09",
+      "cycle": 1,
+      "evidence": "Ch9: 39 'He'-opened sentences out of 298 = 13.1%.",
+      "finding_id": "R037",
+      "problem": "Ch9 at 13.1% 'He' opener density, nearly double the threshold.",
+      "rewrite_direction": "Vary at least 18 of 39. Target: no more than 21 (7%).",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch9 'the way' does not exceed 1.0 per 800 words.",
+      "chapter_id": "chapter_09",
+      "cycle": 1,
+      "evidence": "Ch9: 15 'the way' in 4,101 words = 2.9/800 \u2014 highest per-chapter 'the way' density.",
+      "finding_id": "R055",
+      "problem": "Ch9 has the highest 'the way' density at 2.9/800, nearly 3x threshold. Manuscript-wide: 229/100,725 = 1.82/800 (threshold 1.0).",
+      "rewrite_direction": "Replace at least 10 of 15 'the way' with direct description. 'The way she walked' \u2192 describe the walk. 'The way he held' \u2192 describe the posture. Target: no more than 5.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "A careful reader can total Kem's on-page spending from chapter 8 into chapter 9 and arrive at the exact number chapter 9 reports, with no need to assume unseen use.",
+      "chapter_id": "chapter_09",
+      "cross_chapter_context": "Ch8 explicitly leaves Kem at 183 after the perimeter fight costs forty-two levels. Add five levels of explicit on-page spending between the retreat from the fight and the camp scene where Kem checks at 178. Options: evasion abilities during withdrawal, Light/Concealment during night travel, defensive abilities while making camp, or minor healing. The spending must be named and visible before the 178 check arrives.",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2125",
+      "finding_id": "LW04-003",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:2125",
+            "excerpt": "2125: He checked his Ledger. The number hung in his awareness the way it always did \u2014 not visible exactly, but present, the way you knew the temperature of a room without looking at anything specific. 178.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "pass_hint": "p1_structural_craft",
+      "problem": "Chapter 8 explicitly leaves Kem at 183 after the perimeter costs forty-two levels, but chapter 9 checks him at 178 without any on-page additional spend across the boundary. In a novel that trains the reader to audit exact numbers, the missing five levels reads as broken accounting in the core mechanic.",
+      "rewrite_direction": "Either add an explicit five-level spend between the retreat and the camp scene or change chapter 9's ledger check to match the chapter 8 total. If the intended answer is off-page attrition, put that attrition on the page before the 178 check arrives.",
+      "severity": "CRITICAL",
+      "source": "local_window",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "has_locator_excerpts": true,
+  "input_snapshot_hash": "5ec31c03184ef00ea7eebb45db853241998ca7351172d6ac53cc9e1cc54554aa",
+  "must_fix_count": 7,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness.",
+    "After a scene has shown its meaning through dramatized action, dialogue, or concrete imagery, do not add narrator passages that explain, paraphrase, or certify that meaning in abstract language. If a paragraph can be removed without losing new information \u2014 and it exists only to restate what the scene has already proved \u2014 cut it. One sharpened summary beat per major scene movement is permissible if it adds genuine pressure or new information; a second sentence restating the same idea is not.",
+    "No dialogue line may reproduce or closely echo the wording, sentence structure, or cadence of any style-bible example line. Example lines are calibration-only \u2014 they demonstrate register and rhythm, not actual manuscript dialogue. When a draft line shares more than 40% of its phrasing or the same distinctive syntactic skeleton as an example line, it must be rewritten from scratch while preserving the character's voice profile constraints. This applies to all characters, including recalled or paraphrased dialogue from earlier chapters.",
+    "Under emotional or tactical pressure, no character may deliver a polished, balanced, quotable thematic diagnosis in dialogue. Accusation, confession, revelation, and argument should arrive through interruption, self-correction, partial articulation, concrete reference, or unfinished syntax rather than finished mini-speeches. If a dialogue line can be quoted cleanly out of context as a theme statement, it needs roughening. Characters should sound like they are thinking under pressure, not delivering prepared remarks.",
+    "The 'not X, not Y, but Z' or 'not X \u2014 Y' corrective-negation pattern may appear no more than twice per chapter across all prose and dialogue. When the pattern recurs beyond that limit, replace with direct statement, image, or a different syntactic shape. Each POV should render the negation-correction move through character-specific sensory logic if used at all.",
+    "Each chapter must keep em-dash-containing prose lines below 10% of total prose lines. When revising, prioritize cutting parenthetical asides and appositive interruptions that can be restructured as independent clauses or joined with commas, colons, or periods. Do not simply replace em-dashes with other punctuation mechanically \u2014 restructure the sentence so it does not need the interruption."
+  ],
+  "original_snapshot_file": "snapshots/cycle_01/chapters/chapter_09.md",
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This is a dark comedy about a world where doing nothing is rational and doing something is self-destruction. Both the comedy and the darkness must be fully committed. Do not soften combat into choreography or spectacle \u2014 fights should hurt, cost real things, and leave damage. Do not soften the comedy into gentle satire \u2014 the absurdity of the Hoarded and their agents should be genuinely funny, sometimes cruelly so. Do not soften grief into sentimentality or revelation into epiphany. The premise demands a tonal register that holds absurdity and genuine pain in the same hand. When the material is uncomfortable \u2014 the physical reality of injury, the moral weight of exploitation, the specific grief of losing someone to a place you cannot reach \u2014 lean into specificity rather than retreating to safety. A draft that never risks anything produces a novel that never moves anyone.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism in combat, injury, consequence, or emotional extremity is a craft failure. If Vel breaks ribs, the reader should feel the break \u2014 the specific wrongness of breathing with cracked bone, the way she holds herself, the pain when she forgets. If Kem is terrified, the terror should be specific and physical: hands, stomach, breathing, the precise quality of his fear. Do not abstract away from embodied experience into summary or generalization.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for all characters except Sable (low) and early-book Kem (initially low, shifting to high). Uncontracted forms are reserved for deliberate emphasis, formal Hoarded speech contexts, or bureaucratic register. In casual conversation, unjustified full-form lines should be treated as suspect.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Vary chapter rhythm aggressively. Combat chapters should be compressed and physical. Discovery chapters should have more room for observation and the surprise of new information. Quiet chapters should breathe \u2014 longer scenes, more sensory detail, conversations that circle rather than drive. Intercut chapters (like Ch 11's Kem/Sable split and Ch 17's Sable intercut) should have contrasting textures between sections. No two consecutive chapters should have the same structural shape: vary scene count, dialogue density, pacing, and the ratio of action to interiority. Dark comedy chapters in the back half (Ch 12, 14, 15, 17) must commit fully to comic energy as a primary narrative mode: the absurdity of Hoarded bureaucratic language applied to human exploitation, the grim humor of fighting for your life with single-digit levels, the comedy of precision teamwork performed in emotional silence. These chapters carry genuine stakes alongside their comedy \u2014 the tonal fusion is the point, not tonal alternation.",
+      "diction": "Concrete, physical, occasionally wry. Avoids both literary pretension and genre cliche. The world has its own vocabulary (Hoarded, Spent, Ledger, Stillness, the Scour, the Margins) and these terms should be used naturally, not defined in exposition. Metaphors earned from the world's own materials \u2014 spending, counting, weight, erosion \u2014 rather than imported from outside the setting. The Hoarded institutional register \u2014 bureaucratic classifications, procedural euphemism, administrative language applied to human exploitation \u2014 is a specific comic instrument in the Margins chapters. When rendering Hoarded documents, policies, or institutional speech, the language should be precise, procedural, and devastating in its indifference.",
+      "forbidden_drift_patterns": [
+        "Narrator-as-comedian: comedy arises from situation and character, not from narrative commentary or winking asides to the reader",
+        "Ability-use described like video game tooltips: do not produce stat readouts or system notifications in prose",
+        "Emotional temperature permanently at maximum: not every scene is a crisis and not every internal moment is an epiphany",
+        "Generic fantasy description: landscape, architecture, and weather must be specific to this world's conditions, not recycled from the fantasy-prose commons",
+        "Competence porn: do not let characters be consistently impressive \u2014 they should fumble, miscalculate, and fail at things that are hard",
+        "Thematic underlining: the prose should not highlight its own meanings or signal when something is symbolically significant"
+      ],
+      "narrative_distance": "Close third-person limited, shifting with the POV character. Vel chapters are compressed and physical \u2014 the prose should feel like it is counting. Kem chapters are more expansive and curious \u2014 the prose has more room for observation and surprise. Sable chapters are structured and institutional, loosening as she changes. The POV break in Ch 13\u201314 (two consecutive Kem chapters) should make Vel's absence felt: the reader is locked inside Kem's betrayed perspective, and the prose should reflect the claustrophobia of a mind cycling through anger without access to the other person's interiority. The distance should be intimate enough to access characters' internal arithmetic but not so close it becomes stream-of-consciousness.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Varied by chapter texture and scene pressure. Short declarative sentences in combat. Longer, conditional, clause-heavy sentences in reflection. Comma-heavy run-ons in panic or exhilaration. The Ledger's arithmetic should bleed into prose rhythm during ability-use moments \u2014 characters counting, weighing, calculating. Quiet chapters should breathe. Action chapters should compress. Two consecutive chapters should not share the same dominant rhythm.",
+      "sensory_bias": [
+        "proprioceptive awareness \u2014 the body's internal sense of position, strain, damage, and capacity",
+        "physical weight and effort \u2014 characters feel gravity, distance, fatigue",
+        "the Ledger's feedback \u2014 a character's awareness of their remaining levels as a persistent background sensation",
+        "environmental specificity \u2014 terrain, weather, architecture rendered through what a body encounters"
+      ]
+    }
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "acceptance_targets": [
+    "[LW02-001] Within the first two or three sentences of chapter 6, a cold reader can place the scene relative to the outrider attack and knows they are not reading the morning after chapter 5's camp.",
+    "[LW02-002] At the end of chapter 6, a reader can say how far behind Sable is in practical terms and that answer agrees with both Kem's just-read route and the Low Bridge witness.",
+    "[LW02-003] A reread of chapters 05 and 06 no longer feels like two consecutive 'the Hoarded finally use their bodies' chapters; chapter 6 establishes that point quickly and then moves to distinct pressure.",
+    "[LW02-004] After chapter 6, the reader can name one new pressure on Vel and Kem that did not exist at the chapter's start, not just a better understanding that Sable's team is unready."
+  ],
+  "aggregation_applied": {
+    "decisions_file": "packets/cycle_03/aggregation_decisions.json",
+    "decisions_sha1": "9ff43bf06ed189d3e193643a756de41e798487c6"
+  },
+  "chapter_id": "chapter_06",
+  "cycle": 3,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Within the first two or three sentences of chapter 6, a cold reader can place the scene relative to the outrider attack and knows they are not reading the morning after chapter 5's camp.",
+      "chapter_id": "chapter_06",
+      "cycle": 3,
+      "evidence": "Chapter 5 is already two days past the outrider fight and closes on a settled night camp (`snapshots/cycle_03/FINAL_NOVEL.md:1831`, `snapshots/cycle_03/FINAL_NOVEL.md:2347`), but chapter 6 opens in the Council chamber and only at `snapshots/cycle_03/FINAL_NOVEL.md:2364` reveals that Kem has been gone about five days and the failed contact was yesterday, so the reader has to realize mid-scene that the book has rewound.",
+      "finding_id": "LW02-001",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:1831",
+            "excerpt": "1831: It had been two days since the outriders. Vel had put those two days to work. She took them off the main south track before sunset and kept them off it: through thigh-deep water that made Kem hiss through his teeth, over a scree shoulder where even goats would think twice, under deadfall so tangled he had to crawl on one elbow to keep from cracking the rib the hillside had given him. The first night they slept under an uprooted cedar with wet dirt against their backs and no heat at all. At dawn she sent him back half a mile to brush away the clean lordling tread he'd left in mud, then made him cross the stream barefoot because boots held prints in the leather. By midday the second day both of them smelled like cold water, leaf rot, and the iron note of his reopened palm.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:2347",
+            "excerpt": "2347: From her blanket she could hear him settle by stages, each small adjustment negotiated around the rib. The stream kept running in the dark. Twenty-eight hummed low and steady at the back of her mind. In the morning he'd build the fire himself, shoulder the wrong pack, and hurt through it without buying the easy answer.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:2364",
+            "excerpt": "2364: \"Young Lord Aldraste has been outside the walls for approximately five days.\" Breve checked his notes. The gesture itself was an indictment. \"He has spent an estimated twelve levels. In five days. The perimeter enforcement detail authorized under standing recovery protocol made contact yesterday. It did not recover him.\"",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "pass_hint": "p1_structural_craft",
+      "problem": "The chapter 05/06 boundary does not tell the reader soon enough that chapter 6 is stepping backward on the calendar. Read straight through, the opening initially feels like forward motion after the stream-bank night, then forces a retroactive timeline rebuild once the Council dates appear.",
+      "rewrite_direction": "Mark the rewind in the first paragraph of chapter 6, or insert an immediate temporal anchor tying the chamber scene to the failed retrieval after the basin fight.",
+      "severity": "HIGH",
+      "source": "local_window",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "At the end of chapter 6, a reader can say how far behind Sable is in practical terms and that answer agrees with both Kem's just-read route and the Low Bridge witness.",
+      "chapter_id": "chapter_06",
+      "cycle": 3,
+      "evidence": "Sable's Wayfinder tells her Kem is \"roughly nine days ahead\" at `snapshots/cycle_03/FINAL_NOVEL.md:2638`.",
+      "finding_id": "LW02-002",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:2638",
+            "excerpt": "2638: Breathing came too fast. The Wayfinder did not care. It kept running at the base of her skull, pulling south-southeast. At foot pace, the target was roughly nine days ahead and still moving. She could not dismiss it without spending again.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "pass_hint": "p1_structural_craft",
+      "problem": "That estimate does not cohere with the travel window the reader has just lived through or with chapter 6's own road witness. Chapters 03-05 keep Kem on a five-to-six-day route out of the Vault, and the woman at the crossing says he passed Low Bridge yesterday, so the pursuit gap reads as broken math rather than useful pressure.",
+      "rewrite_direction": "Either lower the Wayfinder estimate to match the route evidence, or explicitly define that the figure is a projection based on the retrieval team's current incompetence rather than literal target distance.",
+      "severity": "HIGH",
+      "source": "local_window",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "A reread of chapters 05 and 06 no longer feels like two consecutive 'the Hoarded finally use their bodies' chapters; chapter 6 establishes that point quickly and then moves to distinct pressure.",
+      "chapter_id": "chapter_06",
+      "cycle": 3,
+      "evidence": "Chapter 5 already makes Kem wipe the trail, build shelter, make fire, and produce dinner by hand (`snapshots/cycle_03/FINAL_NOVEL.md:1849`, `snapshots/cycle_03/FINAL_NOVEL.md:1971`, `snapshots/cycle_03/FINAL_NOVEL.md:2035`). Chapter 6 immediately replays the same discovery curve through Sable's pack drills, bridge labor, camp fire, and blister triage (`snapshots/cycle_03/FINAL_NOVEL.md:2538`, `snapshots/cycle_03/FINAL_NOVEL.md:2708`, `snapshots/cycle_03/FINAL_NOVEL.md:2774`).",
+      "finding_id": "LW02-003",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:1849",
+            "excerpt": "1849: \"You don't. First wipe our approach. Then shelter. Then heat. Then food. You're doing all of it.\"",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:1971",
+            "excerpt": "1971: The wrap held flint, striker, char cloth, and the tinder she'd kept dry under the cooking pot. He picked them up like evidence against his upbringing. She built the first nest where he could see, using dried grass, shredded birch bark from a deadfall, and twigs no thicker than his little finger. Her own hands wanted to take the kit back and finish it before he bled on everything. She made them stay at her sides.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:2035",
+            "excerpt": "2035: \"What's first?\" he asked.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:2538",
+            "excerpt": "2538: Sable took the team down to the service corridor outside Archive Three, where the floors were stone rather than polished wood and the stairs turned tight enough to punish error. She had each operative load a pack, climb two flights, descend, cross the corridor, and repeat the circuit until the straps settled into whatever truth they were going to tell.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:2708",
+            "excerpt": "2708: The water in the cut was only calf deep, but it ran fast where the retaining stones had come loose. Chael climbed down first, planted himself wide, and started taking rock from the laborers on the bank. Lenn followed with the rigid bravery of a man who would rather have received a diagram. Sable handed Marris the field log, stripped off her gloves, and went in after them because ranking six people from dry ground while they carried stone for her seemed likely to end the wrong part of her life.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:2774",
+            "excerpt": "2774: The sight of five level-300 feet after one day on the road would have improved a number of sermons if sermons had possessed the necessary honesty. Kess's heel skin had peeled open in two wet crescents. Marris had rubbed one little toe bloody because she had not trimmed the nail square. Lenn's socks were damp from the channel and had already begun abrading the back of both ankles. Tarrell, whose shoes had clearly been selected by a man who believed in floors, had blisters rising under the ball of each foot like accusations.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "pass_hint": "p1_structural_craft",
+      "problem": "Back-to-back, chapters 05 and 06 serve the same scene function: preserved Hoarded bodies discover that hands, feet, packs, fire, and food are real work. Because chapter 5 already lands that through Kem at emotional depth, chapter 6's long novice-road logistics feel like replay instead of escalation.",
+      "rewrite_direction": "Compress chapter 6's repeated competence beats to one sharp demonstration, then spend the recovered space on the material only Sable's POV can deliver: sharper institutional stakes, more specific pursuit leverage, or a cleaner read on how dangerous her team actually is.",
+      "severity": "HIGH",
+      "source": "local_window",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "After chapter 6, the reader can name one new pressure on Vel and Kem that did not exist at the chapter's start, not just a better understanding that Sable's team is unready.",
+      "chapter_id": "chapter_06",
+      "cycle": 3,
+      "evidence": "Chapter 4 already tells the reader the pursuit has become institutional (`snapshots/cycle_03/FINAL_NOVEL.md:1764`), and chapter 5 keeps that danger active while Vel and Kem hide and recalibrate (`snapshots/cycle_03/FINAL_NOVEL.md:1831`, `snapshots/cycle_03/FINAL_NOVEL.md:1837`). Chapter 6 then spends its ending on Sable filling out Form 7-C and writing \"Initial operating assumptions require revision\" (`snapshots/cycle_03/FINAL_NOVEL.md:2864`, `snapshots/cycle_03/FINAL_NOVEL.md:2870`).",
+      "finding_id": "LW02-004",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:1764",
+            "excerpt": "1764: \"So if they don't report back,\" Kem said, \"someone else comes south.\"",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:1831",
+            "excerpt": "1831: It had been two days since the outriders. Vel had put those two days to work. She took them off the main south track before sunset and kept them off it: through thigh-deep water that made Kem hiss through his teeth, over a scree shoulder where even goats would think twice, under deadfall so tangled he had to crawl on one elbow to keep from cracking the rib the hillside had given him. The first night they slept under an uprooted cedar with wet dirt against their backs and no heat at all. At dawn she sent him back half a mile to brush away the clean lordling tread he'd left in mud, then made him cross the stream barefoot because boots held prints in the leather. By midday the second day both of them smelled like cold water, leaf rot, and the iron note of his reopened palm.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:1837",
+            "excerpt": "1837: So when the stream bent under hornbeam and cut a narrow shelf of dry ground above its own bank, she stopped and made herself look hard before she let wanting become decision. The place gave her water, deadfall, and a strip of stones on both approaches where tracks would break up. Enough root and brush hid a mean low blaze if she kept it short. The bank below narrowed into a throat of rock. Anyone splashing up it would make noise long before they reached camp. The ridge above was too steep for horses and too exposed for men who'd been trained to think mud was an administrative inconvenience. It was barely safe enough.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:2864",
+            "excerpt": "2864: At the bottom was a final box: *LESSONS FOR FUTURE DEPLOYMENT.*",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:2870",
+            "excerpt": "2870: She wrote: *Initial operating assumptions require revision.*",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "pass_hint": "p1_structural_craft",
+      "problem": "The window exits on administrative recalibration instead of a harder chase state. Sable learns the packet is absurd, but Vel and Kem are not under meaningfully new leverage by the last line, so the pursuit thread feels broader rather than tighter after a full chapter in the pursuers' POV.",
+      "rewrite_direction": "Give chapter 6 a more forceful terminal change: a confirmed gain on Vel and Kem's line, a costly but competent spend, a route narrowing that removes one of their options, or a witness/report that materially shortens the chase.",
+      "severity": "HIGH",
+      "source": "local_window",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "has_locator_excerpts": true,
+  "input_snapshot_hash": "700eb7d0c9bb70abe627704c578a230acb322728578a463b95a208df4f728574",
+  "must_fix_count": 4,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness.",
+    "Do not open a chapter by restating information the reader received at the end of the previous chapter. Each chapter must begin with forward motion, a new development, or at most a single brief orienting clause before advancing. Travel summaries, logistics recaps, and re-explanations of the prior chapter's final state are revision targets, not opening strategies.",
+    "Each chapter should contain no more than 20 hand/palm/finger references. Keep only load-bearing instances where hands perform a specific, non-substitutable action (holding a specific object, performing a skill, a hand-specific injury). Replace atmospheric and habitual hand references with varied body parts: posture, jaw, shoulders, feet, weight shift, breathing, gaze. Do not replace hand references with another single substitute that creates a new tic.",
+    "Retain at most three 'the shape of [abstract noun]' constructions across the entire manuscript. Specifically retain: (1) Ch13 line 5564's contrastive pair ('Not the shape of a hope. The shape of a requirement.') which earns its repetition through deliberate parallelism, and (2) Ch18 line 8602's 'The shape of the world started to slip' which may be defensible as literal threshold description. Replace all other instances with constructions native to their scene: physical metaphors, Ledger-vocabulary substitutions, or direct statement. No replacement phrase should introduce a new recurring template.",
+    "Do not re-describe the physical appearance of a character, object, or location that has already been established in an earlier chapter, unless the re-description serves a genuinely new narrative function: a materially changed physical state (new injury, visible deterioration), a unique institutional perspective that reframes the detail, or a plot-driving reaction to the detail. On reappearance, use a brief reference or a single new observation rather than a full visual re-inventory. Trust the reader's memory across chapter boundaries."
+  ],
+  "original_snapshot_file": "snapshots/cycle_03/chapters/chapter_06.md",
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This is a dark comedy about a world where doing nothing is rational and doing something is self-destruction. Both the comedy and the darkness must be fully committed. Do not soften combat into choreography or spectacle \u2014 fights should hurt, cost real things, and leave damage. Do not soften the comedy into gentle satire \u2014 the absurdity of the Hoarded and their agents should be genuinely funny, sometimes cruelly so. Do not soften grief into sentimentality or revelation into epiphany. The premise demands a tonal register that holds absurdity and genuine pain in the same hand. When the material is uncomfortable \u2014 the physical reality of injury, the moral weight of exploitation, the specific grief of losing someone to a place you cannot reach \u2014 lean into specificity rather than retreating to safety. A draft that never risks anything produces a novel that never moves anyone.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism in combat, injury, consequence, or emotional extremity is a craft failure. If Vel breaks ribs, the reader should feel the break \u2014 the specific wrongness of breathing with cracked bone, the way she holds herself, the pain when she forgets. If Kem is terrified, the terror should be specific and physical: hands, stomach, breathing, the precise quality of his fear. Do not abstract away from embodied experience into summary or generalization.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for all characters except Sable (low) and early-book Kem (initially low, shifting to high). Uncontracted forms are reserved for deliberate emphasis, formal Hoarded speech contexts, or bureaucratic register. In casual conversation, unjustified full-form lines should be treated as suspect.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Vary chapter rhythm aggressively. Combat chapters should be compressed and physical. Discovery chapters should have more room for observation and the surprise of new information. Quiet chapters should breathe \u2014 longer scenes, more sensory detail, conversations that circle rather than drive. Intercut chapters (like Ch 11's Kem/Sable split and Ch 17's Sable intercut) should have contrasting textures between sections. No two consecutive chapters should have the same structural shape: vary scene count, dialogue density, pacing, and the ratio of action to interiority. Dark comedy chapters in the back half (Ch 12, 14, 15, 17) must commit fully to comic energy as a primary narrative mode: the absurdity of Hoarded bureaucratic language applied to human exploitation, the grim humor of fighting for your life with single-digit levels, the comedy of precision teamwork performed in emotional silence. These chapters carry genuine stakes alongside their comedy \u2014 the tonal fusion is the point, not tonal alternation.",
+      "diction": "Concrete, physical, occasionally wry. Avoids both literary pretension and genre cliche. The world has its own vocabulary (Hoarded, Spent, Ledger, Stillness, the Scour, the Margins) and these terms should be used naturally, not defined in exposition. Metaphors earned from the world's own materials \u2014 spending, counting, weight, erosion \u2014 rather than imported from outside the setting. The Hoarded institutional register \u2014 bureaucratic classifications, procedural euphemism, administrative language applied to human exploitation \u2014 is a specific comic instrument in the Margins chapters. When rendering Hoarded documents, policies, or institutional speech, the language should be precise, procedural, and devastating in its indifference.",
+      "forbidden_drift_patterns": [
+        "Narrator-as-comedian: comedy arises from situation and character, not from narrative commentary or winking asides to the reader",
+        "Ability-use described like video game tooltips: do not produce stat readouts or system notifications in prose",
+        "Emotional temperature permanently at maximum: not every scene is a crisis and not every internal moment is an epiphany",
+        "Generic fantasy description: landscape, architecture, and weather must be specific to this world's conditions, not recycled from the fantasy-prose commons",
+        "Competence porn: do not let characters be consistently impressive \u2014 they should fumble, miscalculate, and fail at things that are hard",
+        "Thematic underlining: the prose should not highlight its own meanings or signal when something is symbolically significant"
+      ],
+      "narrative_distance": "Close third-person limited, shifting with the POV character. Vel chapters are compressed and physical \u2014 the prose should feel like it is counting. Kem chapters are more expansive and curious \u2014 the prose has more room for observation and surprise. Sable chapters are structured and institutional, loosening as she changes. The POV break in Ch 13\u201314 (two consecutive Kem chapters) should make Vel's absence felt: the reader is locked inside Kem's betrayed perspective, and the prose should reflect the claustrophobia of a mind cycling through anger without access to the other person's interiority. The distance should be intimate enough to access characters' internal arithmetic but not so close it becomes stream-of-consciousness.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Varied by chapter texture and scene pressure. Short declarative sentences in combat. Longer, conditional, clause-heavy sentences in reflection. Comma-heavy run-ons in panic or exhilaration. The Ledger's arithmetic should bleed into prose rhythm during ability-use moments \u2014 characters counting, weighing, calculating. Quiet chapters should breathe. Action chapters should compress. Two consecutive chapters should not share the same dominant rhythm.",
+      "sensory_bias": [
+        "proprioceptive awareness \u2014 the body's internal sense of position, strain, damage, and capacity",
+        "physical weight and effort \u2014 characters feel gravity, distance, fatigue",
+        "the Ledger's feedback \u2014 a character's awareness of their remaining levels as a persistent background sensation",
+        "environmental specificity \u2014 terrain, weather, architecture rendered through what a body encounters"
+      ]
+    }
+  }
+}

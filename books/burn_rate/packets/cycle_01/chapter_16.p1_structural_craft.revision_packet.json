@@ -1,0 +1,407 @@
+{
+  "acceptance_targets": [
+    "[CH16_CRAFT_LEDGER_CONTINUITY] Pass if a reader can move through snapshots/cycle_01/chapters/chapter_16.md:27, :111, :237, :253, and :255 and find one self-consistent Vel count and one self-consistent combined total that align with the chapter_16 canon. Fail if the revised chapter still explicitly says Vel is at sixteen, or if the pair total still implies thirty-four, without new on-page spending that explains the discrepancy.",
+    "[CH16_CRAFT_DREN_ARM_CONTINUITY] Pass if every arm reference in the Dren departure sequence points to the same injured left arm and the pack mechanics no longer imply the opposite side. Fail if any revised sentence still makes the wound right-sided or leaves the side physically ambiguous.",
+    "[CH16_ELEVATION_CONFESSION_OVERCOMPLETE] Pass if the revised confession at snapshots/cycle_01/FINAL_NOVEL.md:4217-4229 contains at least one fully articulated moral self-diagnosis AND at least one moment where Vel reaches for a harder truth and cannot complete it, creating a gap the reader fills. Fail if the confession still delivers three distinct, completed moral analyses in sequence.",
+    "[THEMATIC_OVERSTATEMENT_CH16] Pass if the post-confession material at snapshots/cycle_01/FINAL_NOVEL.md:4231-4280 carries its emotional weight through concrete action and physical detail without narrator passages that explicitly characterize the silence's quality, the grief's shape, or the body's learning in abstract language. Fail if any passage of 2+ sentences still explains what the silence or the proximity means.",
+    "[R011] Ch16's post-departure walking scene does not open with 'They walked for an hour without speaking.'",
+    "[R012] The Ch16 handshake between Kem and Dren does not re-inventory Kem's hand transformation.",
+    "[R030] Ch16 em-dash density below 10%.",
+    "[R042] Ch16 'She'-opened sentences do not exceed 7%.",
+    "[R054] Ch16 does not exceed 1.0 per 800 words for either pattern.",
+    "[C001] Mira's age is consistent across all mentions. Her illness is described consistently as the same condition in both Ch7 and Ch16.",
+    "[C005] The financial structure of Mira's healing cost is consistent between Ch7 and Ch16 \u2014 same unit, same approximate amount.",
+    "[LW07-001] By the time chapter 16 states Kem's current level, the reader can tell how much time has passed since Sable left, why the group is at the waystation, and what on-page or explicitly summarized costs produced Kem's new number.",
+    "[LW07-004] After chapter 16, the partnership or plan has changed in a concrete way that chapter 14 did not already deliver; the scene should not read as another iteration of pause, reveal, resume.",
+    "[LW08-001] A reader can move from the end of chapter 15 into chapter 16 and state how much time has passed and how far the Scour remains without reconciling conflicting distance estimates."
+  ],
+  "aggregation_applied": {
+    "decisions_file": "packets/cycle_01/aggregation_decisions.json",
+    "decisions_sha1": "880a450ac33b90efc1364a17207490490d407904"
+  },
+  "chapter_id": "chapter_16",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if a reader can move through snapshots/cycle_01/chapters/chapter_16.md:27, :111, :237, :253, and :255 and find one self-consistent Vel count and one self-consistent combined total that align with the chapter_16 canon. Fail if the revised chapter still explicitly says Vel is at sixteen, or if the pair total still implies thirty-four, without new on-page spending that explains the discrepancy.",
+      "chapter_id": "chapter_16",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_16.md:27; snapshots/cycle_01/chapters/chapter_16.md:111; snapshots/cycle_01/chapters/chapter_16.md:237; snapshots/cycle_01/chapters/chapter_16.md:253; snapshots/cycle_01/chapters/chapter_16.md:255",
+      "finding_id": "CH16_CRAFT_LEDGER_CONTINUITY",
+      "problem": "The chapter repeatedly fixes Vel at sixteen levels and the pair at thirty-four levels, but the continuity sheet's canonical chapter_16 state has Vel at approximately fourteen. Because these numbers recur in the chapter's emotional and tactical arithmetic, this is a visible continuity break, not a harmless approximation drift.",
+      "rewrite_direction": "Revise the explicit Ledger counts at snapshots/cycle_01/chapters/chapter_16.md:27, snapshots/cycle_01/chapters/chapter_16.md:111, snapshots/cycle_01/chapters/chapter_16.md:237, snapshots/cycle_01/chapters/chapter_16.md:253, and snapshots/cycle_01/chapters/chapter_16.md:255 so the chapter uses one canon-consistent Vel number and one canon-consistent pair total throughout. If Vel is meant to remain at sixteen here, the chapter needs new on-page spending before those lines and the continuity pack would have to stop saying chapter_16 drops her to approximately fourteen; otherwise change the chapter's numbers.\n\nAggregator guidance:\n- Canonical choice [vel_ch16_level]: Vel is at approximately 14 levels in Ch16, not 16.. Grounding: Continuity sheet: Ch14 drops Vel to approximately 16 (2 levels for rescue), Ch16 drops her further to approximately 14 (reveals Maren, acknowledges moral asymmetry). The chapter's explicit references to 'sixteen' and the pair total of 'thirty-four' must be revised to match approximately 14.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if every arm reference in the Dren departure sequence points to the same injured left arm and the pack mechanics no longer imply the opposite side. Fail if any revised sentence still makes the wound right-sided or leaves the side physically ambiguous.",
+      "chapter_id": "chapter_16",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_16.md:9; snapshots/cycle_01/chapters/chapter_16.md:21; snapshots/cycle_01/chapters/chapter_16.md:49; snapshots/cycle_01/chapters/chapter_16.md:65; snapshots/cycle_01/chapters/chapter_16.md:75",
+      "finding_id": "CH16_CRAFT_DREN_ARM_CONTINUITY",
+      "problem": "This departure scene makes Dren's shrapnel injury a right-arm problem, but the continuity sheet establishes the silo wound as a left-arm gash. The scene also builds physical business off that wrong-side injury, so the contradiction stays visible instead of passing as incidental wording.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_16.md:9, snapshots/cycle_01/chapters/chapter_16.md:21, snapshots/cycle_01/chapters/chapter_16.md:49, and the arm references around snapshots/cycle_01/chapters/chapter_16.md:65-75, revise the staging so Dren's injured side is consistently his left arm and the pack/strap handling matches that laterality.\n\nAggregator guidance:\n- Canonical choice [dren_injured_arm]: Dren's silo-shrapnel wound is on his left arm.. Grounding: Continuity sheet: 'Wounded by silo shrapnel \u2014 deep gash on left arm' (Ch8 state transition). Physical details: 'carries a poorly healed wound on his left arm.'",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if the revised confession at snapshots/cycle_01/FINAL_NOVEL.md:4217-4229 contains at least one fully articulated moral self-diagnosis AND at least one moment where Vel reaches for a harder truth and cannot complete it, creating a gap the reader fills. Fail if the confession still delivers three distinct, completed moral analyses in sequence.",
+      "chapter_id": "chapter_16",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:4217; snapshots/cycle_01/FINAL_NOVEL.md:4221; snapshots/cycle_01/FINAL_NOVEL.md:4225; snapshots/cycle_01/FINAL_NOVEL.md:4229",
+      "finding_id": "CH16_ELEVATION_CONFESSION_OVERCOMPLETE",
+      "locator_excerpts": {
+        "acceptance_test": [
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:4217-4229",
+            "excerpt": "4217: \"I'm doing the same thing,\" Vel said. The words came out flatter than she'd intended, which meant they came out honest. \"You said it in the Margins, after the mechanism. That I looked at you the way they look at everyone here. Like a resource.\" She touched the journal's cover. \"You weren't wrong. The Margins make it worse because the pattern's the same \u2014 someone with power needing something from someone without it, wrapping the need in a reason that sounds good enough to justify the taking. The Hoarded call it Development Opportunities. I called it saving you the trouble of dying for nothing.\"\n4218: \n4219: \"And the difference?\"\n4220: \n4221: \"I don't know if there is one.\" That cost her. She could feel it in her chest \u2014 not the old rib injury, which was a known quantity, but the pressure of saying a true thing that she'd been structuring her entire justification around not saying. \"The intent's different. I care about you. That's real. But the shape of the thing \u2014 finding someone, using their levels, guiding them toward the outcome I need \u2014 that's the shape of what they did here.\" She gestured at the Margins around them. \"It doesn't matter that I had a better reason. The peopl...",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          }
+        ],
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:4217",
+            "excerpt": "4217: \"I'm doing the same thing,\" Vel said. The words came out flatter than she'd intended, which meant they came out honest. \"You said it in the Margins, after the mechanism. That I looked at you the way they look at everyone here. Like a resource.\" She touched the journal's cover. \"You weren't wrong. The Margins make it worse because the pattern's the same \u2014 someone with power needing something from someone without it, wrapping the need in a reason that sounds good enough to justify the taking. The Hoarded call it Development Opportunities. I called it saving you the trouble of dying for nothing.\"",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:4221",
+            "excerpt": "4221: \"I don't know if there is one.\" That cost her. She could feel it in her chest \u2014 not the old rib injury, which was a known quantity, but the pressure of saying a true thing that she'd been structuring her entire justification around not saying. \"The intent's different. I care about you. That's real. But the shape of the thing \u2014 finding someone, using their levels, guiding them toward the outcome I need \u2014 that's the shape of what they did here.\" She gestured at the Margins around them. \"It doesn't matter that I had a better reason. The people who made Fallow work thirty years in the fields had reasons too.\"",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:4225",
+            "excerpt": "4225: \"Maren wouldn't \u2014\" Vel started, and stopped. She opened the journal to a page near the back. The handwriting was smaller here, more urgent, the annotations spilling off the ruled margins into the page's edges. She didn't show it to Kem, but she looked at it while she spoke, the way you hold something solid when the ground shifts. \"Maren would've hated what I did. How I did it. She spent for people because she saw them. I spent you because I saw her. Those aren't the same thing, and pretending they are is another kind of lie I've been telling myself.\"",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:4229",
+            "excerpt": "4229: \"I'm not sorry I found you. I'm not sorry I used your levels. I'm sorry that I couldn't figure out how to need you without it being the same thing everyone else in this system does to everyone else.\"",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          }
+        ],
+        "rewrite_direction": [
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:4217-4229",
+            "excerpt": "4217: \"I'm doing the same thing,\" Vel said. The words came out flatter than she'd intended, which meant they came out honest. \"You said it in the Margins, after the mechanism. That I looked at you the way they look at everyone here. Like a resource.\" She touched the journal's cover. \"You weren't wrong. The Margins make it worse because the pattern's the same \u2014 someone with power needing something from someone without it, wrapping the need in a reason that sounds good enough to justify the taking. The Hoarded call it Development Opportunities. I called it saving you the trouble of dying for nothing.\"\n4218: \n4219: \"And the difference?\"\n4220: \n4221: \"I don't know if there is one.\" That cost her. She could feel it in her chest \u2014 not the old rib injury, which was a known quantity, but the pressure of saying a true thing that she'd been structuring her entire justification around not saying. \"The intent's different. I care about you. That's real. But the shape of the thing \u2014 finding someone, using their levels, guiding them toward the outcome I need \u2014 that's the shape of what they did here.\" She gestured at the Margins around them. \"It doesn't matter that I had a better reason. The peopl...",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "problem": "E6/E9: Vel's confession delivers a three-part moral self-diagnosis with a precision that contradicts her character profile (oblique about feelings, narrows questions, answers the adjacent rather than the real). Line 4217 names the structural parallel to the Hoarded ('The Hoarded call it Development Opportunities. I called it saving you the trouble of dying for nothing'). Line 4221 names the distinction from Maren ('She spent for people because she saw them. I spent you because I saw her'). Line 4229 names the systemic failure ('I'm sorry that I couldn't figure out how to need you without it being the same thing everyone else in this system does to everyone else'). Each is individually strong, but collectively the confession is too complete. A character who spent eight years not examining her motives would not produce this level of moral architecture under pressure. The gap between what she can say and what she means \u2014 the withheld, the failed articulation \u2014 is where the emotional weight should concentrate.",
+      "rewrite_direction": "Revise snapshots/cycle_01/FINAL_NOVEL.md:4217-4229. Let Vel land one of the three self-diagnoses fully (the strongest candidate is the Maren distinction at 4221) and reach for the others without quite getting there. She might circle back to the Margins parallel but deflect into physical detail rather than completing the thought. The systemic apology at 4229 could become a sentence Vel starts and abandons, leaving the gap for the reader to fill. Kem's response at 4251 ('That's recognition. That's different') is already calibrated to value the attempt over the completeness \u2014 let the attempt be incomplete enough to earn that response.",
+      "severity": "HIGH",
+      "source": "elevation",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if the post-confession material at snapshots/cycle_01/FINAL_NOVEL.md:4231-4280 carries its emotional weight through concrete action and physical detail without narrator passages that explicitly characterize the silence's quality, the grief's shape, or the body's learning in abstract language. Fail if any passage of 2+ sentences still explains what the silence or the proximity means.",
+      "chapter_id": "chapter_16",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:4231; snapshots/cycle_01/FINAL_NOVEL.md:4263; snapshots/cycle_01/FINAL_NOVEL.md:4267; snapshots/cycle_01/FINAL_NOVEL.md:4279; snapshots/cycle_01/chapters/chapter_16.md:223; snapshots/cycle_01/chapters/chapter_16.md:227; snapshots/cycle_01/chapters/chapter_16.md:235; snapshots/cycle_01/chapters/chapter_16.md:247; snapshots/cycle_01/chapters/chapter_16.md:257; snapshots/cycle_01/chapters/chapter_16.md:259",
+      "finding_id": "THEMATIC_OVERSTATEMENT_CH16",
+      "locator_excerpts": {
+        "acceptance_test": [
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:4231-4280",
+            "excerpt": "4231: Kem said nothing. The quiet stretched. Vel could hear the creak of the old signpost in the wind, the dry tick of scrub branches rubbing against each other, the sound of two people breathing in depleted air. She had said it. All of it, or as close to all of it as she was capable of. Eight years of reasons and justifications and night-arguments with a woman who wasn't there to argue back, compressed into sentences that felt smaller than the thing they contained. Grief always felt smaller out loud. The interior version had rooms and corridors and years. The spoken version was a story about a woman and a door.\n4232: \n4233: The sun was high now. Their shadows had shrunk to almost nothing beneath them \u2014 two dark shapes pressed tight against the base of the wall like animals hiding from the heat. The Margins road stretched south, empty, the subsidence cracks running through it like the landscape's own form of depletion, the ground spending itself downward into old mine galleries nobody maintained.\n4234: \n4235: \"What if she's not there?\" Kem said.\n4236: \n[...]\n4275: At a water stop \u2014 a Margins communal well, still functional, the rope frayed and the bucket dented but the water clean...",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          }
+        ],
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:4231",
+            "excerpt": "4231: Kem said nothing. The quiet stretched. Vel could hear the creak of the old signpost in the wind, the dry tick of scrub branches rubbing against each other, the sound of two people breathing in depleted air. She had said it. All of it, or as close to all of it as she was capable of. Eight years of reasons and justifications and night-arguments with a woman who wasn't there to argue back, compressed into sentences that felt smaller than the thing they contained. Grief always felt smaller out loud. The interior version had rooms and corridors and years. The spoken version was a story about a woman and a door.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:4263",
+            "excerpt": "4263: They moved south through the afternoon without conversation, but the silence between them had changed. The old silence \u2014 the logistics-only quiet that had followed the fracture \u2014 had been a wall. Solid, maintained, load-bearing in the way that resentment is load-bearing: holding up a structure by holding two people apart. This silence was different. It was the quiet of two people who had said the hard things and were letting the words settle into the space between them like sediment in still water. Not comfortable. But habitable.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:4267",
+            "excerpt": "4267: She thought about Dren. Heading north with a bad arm and a hundred and twenty levels and a nine-year-old daughter whose lungs sounded like paper. He'd said *my daughter is my zero* and the phrase sat in Vel's chest like a stone, hard and precise and irreducible. His zero had a name and an address and a disease. His cascade was forty levels he could barely afford and a healer's table in a town he'd been away from for six weeks.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:4279",
+            "excerpt": "4279: The road dipped where the earth had subsided over an old mine gallery. Vel stepped around the depression without thinking. Kem stepped around it after her, matching her line, the unconscious mimicry of two people who had learned each other's gait. He didn't know he was doing it. She did. It was one of the things she'd taught him without teaching him \u2014 the body learning from proximity, absorbing another person's economy of movement the way soil absorbs rain, quietly and without permission.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "problem": "After Vel's confession and the repair, multiple narrator passages translate scene meaning into thematic commentary. Line 4231: 'Grief always felt smaller out loud. The interior version had rooms and corridors and years. The spoken version was a story about a woman and a door.' Line 4263: 'This silence was different...the quiet of two people who had said the hard things and were letting the words settle...like sediment in still water. Not comfortable. But habitable.' Line 4279: 'the body learning from proximity...the way soil absorbs rain, quietly and without permission.' These are individually elegant but collectively they explain what the scene already showed: the confession, the silence, the walking beside rather than ahead, the canteen handoff \u2014 these concrete actions already communicate the repair.",
+      "rewrite_direction": "Revise FINAL_NOVEL lines 4231, 4263 (second sentence onward), and 4279. Cut the abstract commentary: 'Grief always felt smaller out loud. The interior version had rooms and corridors and years' (4231); 'This silence was different...the quiet of two people who had said the hard things...like sediment in still water. Not comfortable. But habitable.' (4263); the proximity/soil absorption metaphor (4279). The concrete details already do the thematic work: the water canteen exchange at 4275, Kem walking beside rather than ahead at 4273, the road's subsidence. Keep one or two concrete aftereffects that show the altered alliance, and close on forward Scour pressure or arithmetic.",
+      "severity": "HIGH",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch16's post-departure walking scene does not open with 'They walked for an hour without speaking.'",
+      "chapter_id": "chapter_16",
+      "cycle": 1,
+      "evidence": "Ch13 line 3524: 'They walked for an hour without speaking. The road south was worse than what they'd come in on'; Ch16 line 4117: 'They walked for an hour without speaking. The road south was a Hoarded-built supply line.'",
+      "finding_id": "R011",
+      "problem": "Identical 10-word sentence opener ('They walked for an hour without speaking. The road south was...') used as scene-transition template in both Ch13 and Ch16. Same structure, same function, three chapters apart.",
+      "rewrite_direction": "Vary the Ch16 transition. Enter through a different temporal or spatial marker \u2014 the missing third set of footsteps, the changed rhythm of two instead of three.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "The Ch16 handshake between Kem and Dren does not re-inventory Kem's hand transformation.",
+      "chapter_id": "chapter_16",
+      "cycle": 1,
+      "evidence": "Kem's hands tracked in Ch3 (soft, no calluses), Ch5 (blisters on palms), Ch7 (started to callus but still soft), Ch9 (beginning of calluses), Ch13 (leaner, harder at shoulders and hands), Ch14 (softness pounded out), Ch16 line 4105 (soft skin long gone, knuckles scraped, calluses new and poorly placed).",
+      "finding_id": "R012",
+      "problem": "Kem's soft-to-calloused hands transformation is re-proved in 7 chapters (Ch3, 5, 7, 9, 13, 14, 16). By Ch16 the baseline has been proved more than 3 times without materially new information. The handshake scene at Ch16 is the 7th re-description of this same arc.",
+      "rewrite_direction": "The Ch16 handshake can land through what Dren's grip communicates rather than through another inventory of Kem's hand transformation. Cut 'the soft skin long gone, the knuckles scraped, the calluses new and poorly placed' \u2014 the reader has tracked this evolution across 6 prior chapters.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch16 em-dash density below 10%.",
+      "chapter_id": "chapter_16",
+      "cycle": 1,
+      "evidence": "Ch16: 53/127 = 41.7%.",
+      "finding_id": "R030",
+      "problem": "Ch16 at 41.7% em-dash density.",
+      "rewrite_direction": "Cut at least 40 of 53. Target: no more than 13 em-dash lines.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch16 'She'-opened sentences do not exceed 7%.",
+      "chapter_id": "chapter_16",
+      "cycle": 1,
+      "evidence": "Ch16: 43 'She'-opened out of 409 = 10.5%.",
+      "finding_id": "R042",
+      "problem": "Ch16 at 10.5% 'She' opener density.",
+      "rewrite_direction": "Vary at least 14 of 43. Target: no more than 29 (7%).",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch16 does not exceed 1.0 per 800 words for either pattern.",
+      "chapter_id": "chapter_16",
+      "cycle": 1,
+      "evidence": "Ch16: 17 'something' in 5,034 words = 2.7/800; also 15 'the way' = 2.4/800.",
+      "finding_id": "R054",
+      "problem": "Ch16 exceeds threshold for both patterns.",
+      "rewrite_direction": "Replace at least 11 'something' and 9 'the way.' Target: both below 1.0/800.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Mira's age is consistent across all mentions. Her illness is described consistently as the same condition in both Ch7 and Ch16.",
+      "chapter_id": "chapter_16",
+      "cycle": 1,
+      "evidence": "Ch7 line 1701: 'Mira. She's eight. Got a bone thing that's been eating at her legs for the past year.'; Ch16 line 4057: 'She's nine years old and her lungs sound like paper'; Ch16 line 4267: 'a nine-year-old daughter whose lungs sounded like paper.'; Ch16 line 4057: 'She's nine years old and her lungs sound like paper and she's waiting for her father to come home with enough levels to fix it.'; Continuity sheet timeline: 'Estimated span: approximately five to six weeks from Vel's departure to threshold crossing.'",
+      "finding_id": "C001",
+      "problem": "Dren's daughter Mira has two contradictions between Ch7 and Ch16. (1) Age changes from 8 to 9 within a story span of approximately 5-6 weeks \u2014 she cannot age a year in that time. (2) Illness changes from 'bone thing eating at her legs' (skeletal/orthopedic) to 'lungs sound like paper' (respiratory). These are completely different conditions affecting different body systems.",
+      "rewrite_direction": "Reconcile both discrepancies in Ch16 to match Ch7's first establishment. Mira must be eight years old (not nine). The illness must be skeletal/orthopedic affecting her legs ('bone thing eating at her legs' per Ch7), not respiratory. If the intended illness is respiratory, Ch7 line 1701 must also be corrected, but per first-establishment rules, Ch7's version is canonical. See canonical_choices for the binding answers.\n\nAggregator guidance:\n- Canonical choice [mira_age]: Mira is eight years old throughout the story.. Grounding: First manuscript establishment in Ch7. The journey spans approximately 5-6 weeks; Mira cannot age a full year in that interval.\n- Canonical choice [mira_illness]: Mira's illness is skeletal/orthopedic, affecting her legs ('bone thing eating at her legs').. Grounding: First manuscript establishment in Ch7 line 1701. Ch16's respiratory description ('lungs sound like paper') contradicts the first establishment.",
+      "severity": "CRITICAL",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "The financial structure of Mira's healing cost is consistent between Ch7 and Ch16 \u2014 same unit, same approximate amount.",
+      "chapter_id": "chapter_16",
+      "cycle": 1,
+      "evidence": "Ch7 line 1701: 'There's a healer three towns north who can treat it \u2014 a deep Restoration, takes multiple sessions. It costs.'; Ch16 line 4057: 'the healer in Roth charges forty for the work she needs. That's a third of me, Vel. A third of everything I've got left.'",
+      "finding_id": "C005",
+      "problem": "In Ch7, Dren describes the healer cost vaguely ('It costs') and says Vel's payment 'covers about half.' In Ch16, the cost is specified as 40 levels at a healer in 'Roth.' Dren is at 120 in Ch16, so 40 is indeed one-third. But Ch7 said Vel's payment covered 'about half' \u2014 if the healing costs 40 levels and Vel's payment covers half, Vel was paying the equivalent of ~20 levels. The Ch7 framing suggests the cost is measured in marks/money, while Ch16 measures it in levels. These may not contradict if the healer charges both marks and levels, but the inconsistency in unit of measurement (marks vs. levels) should be reviewed.",
+      "rewrite_direction": "Clarify whether the healer charges levels, marks, or both. If the cost is 40 levels, Vel's marks payment in Ch7 should reflect an equivalent value structure rather than 'about half.'\n\nAggregator guidance:\n- Canonical choice [mira_healing_cost]: The healer charges Dren a fee in marks (currency). '40 levels' refers to what the healer spends of their own levels to perform the healing, which determines the mark price. Vel's Ch7 payment covers 'about half' the mark fee. The cost to Dren is financial, not in his own levels.. Grounding: Ch7 first establishment frames the cost in marks (Vel pays in marks, covering 'about half'). World rules establish that ability use reduces the user's level, not the patient's \u2014 a healer spends their own levels. Ch16's '40 levels' is the healer's professional cost, not a charge extracted from Dren's Ledger.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "By the time chapter 16 states Kem's current level, the reader can tell how much time has passed since Sable left, why the group is at the waystation, and what on-page or explicitly summarized costs produced Kem's new number.",
+      "chapter_id": "chapter_16",
+      "cross_chapter_context": "Several days pass between the Ch15 farmhouse encounter with Sable and Ch16's opening. Kem drops from 25 to approximately 18 through accumulated incidental spending during this travel (continuity sheet confirms 'approximately 18 after accumulated minor spending over several days'). Open Ch16 with a brief bridge establishing elapsed time since the farmhouse, the move to the current location, and the specific costs that account for the 7-level drop.",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:3765 establishes Kem at twenty-five at the end of the last anchored Kem chapter; snapshots/cycle_01/FINAL_NOVEL.md:4020 leaves the group in the farmhouse in full daylight; snapshots/cycle_01/FINAL_NOVEL.md:4031 reopens before sunrise in an abandoned waystation; snapshots/cycle_01/FINAL_NOVEL.md:4055 suddenly places Kem at eighteen with no bridge for the elapsed travel or off-page spending.",
+      "finding_id": "LW07-001",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:3765",
+            "excerpt": "3765: He lay back on his bedroll. The stars were out, thick and dense in the Margins sky where there wasn't enough light pollution from ability use to wash them away. The Ledger hummed its thin note. Twenty-five. The ground beneath him was solid, or as solid as Margins ground got. Somewhere to the south the land would drop into the Scour, and the threshold would be there or it wouldn't, and Vel would explain the rest or she wouldn't, and none of that changed what he was going to do in the morning.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:4020",
+            "excerpt": "4020: Sable walked out through the missing wall. The Margins stretched south, flat and depleted and baked under mid-summer heat that turned the horizon into a smear. The walking staff struck packed earth with each step. Behind her, the farmhouse held three people who were going to the same place she was going, for different reasons, through the same landscape, and she was not with them. She was not with anyone. She was a Senior Auditor of the Hoarded Council, forty-seven years old, level two hundred and thirty-eight, walking south alone with a question she could not file or forget.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:4031",
+            "excerpt": "4031: Dren was packing before sunrise.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:4055",
+            "excerpt": "4055: Vel leaned against the doorframe and waited. She could hear Kem stirring inside the waystation \u2014 the creak of a body that had gotten thinner over six weeks of hard travel, joints that protested the floor more than they used to. Kem at eighteen. She was at sixteen. Numbers that would have been a punchline in the Spent Towns.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "pass_hint": "p1_structural_craft",
+      "problem": "The chapter 15 to 16 handoff asks the reader to infer too much at once: at least one overnight, a relocation from farmhouse to waystation, and seven missing levels from Kem's Ledger. Because the bridge is absent, Dren's departure starts on top of avoidable orientation work instead of cleanly inheriting the prior chapter's pressure.",
+      "rewrite_direction": "Add a brief opening bridge in chapter 16 that fixes the elapsed time, names the move from the farmhouse, and accounts for the incidental spending or survival costs that took Kem from twenty-five to eighteen.",
+      "severity": "HIGH",
+      "source": "local_window",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "After chapter 16, the partnership or plan has changed in a concrete way that chapter 14 did not already deliver; the scene should not read as another iteration of pause, reveal, resume.",
+      "chapter_id": "chapter_16",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:3753, snapshots/cycle_01/FINAL_NOVEL.md:3761, and snapshots/cycle_01/FINAL_NOVEL.md:3769 already land Kem's decision that he will not walk away; after chapter 15 escalates the Scour threat, snapshots/cycle_01/FINAL_NOVEL.md:4129, snapshots/cycle_01/FINAL_NOVEL.md:4137, snapshots/cycle_01/FINAL_NOVEL.md:4243, and snapshots/cycle_01/FINAL_NOVEL.md:4251 stop the road again so he can refuse more steps until Vel tells the truth and then agree to keep walking.",
+      "finding_id": "LW07-004",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:3753",
+            "excerpt": "3753: He could stop. He could tell Vel in the morning that twenty-five levels was enough, that he'd given more than he owed, that the remaining walk toward zero was her journey and not his. The math supported it. Twenty-five levels, spent carefully, could sustain him for years. He could walk north, find the Spent Towns, learn a trade, become someone who used a level or two a year on practical things and lived a quiet life. The signet was in his pocket and nobody north of the Margins would know who he'd been or what he'd done or how far he'd fallen.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:3761",
+            "excerpt": "3761: Because the person who spent for other people was who he was now. And that person went where spending took him, and if that was zero, and if zero was a threshold, then he'd cross it or he wouldn't, but he wouldn't walk away.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:3769",
+            "excerpt": "3769: They would walk south.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:4129",
+            "excerpt": "4129: \"No,\" he said.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:4137",
+            "excerpt": "4137: \"Not the mechanism. You.\" He took a breath that cost him something. \"Why you, specifically, Vel. Why you've been walking toward zero for eight years. Why you carry that journal like it's the last thing in the world that matters. Why Thessa looked at you like you'd killed someone. What happened to make you \u2014 this.\"",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:4243",
+            "excerpt": "4243: \"Okay,\" he said.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:4251",
+            "excerpt": "4251: \"But you said it.\" He brushed stone dust from his legs. A practical gesture, performed while he found the rest of the sentence. \"You didn't \u2014 you said the thing. About the shape of it. About the Margins. About what you did being the same as what they did. That's \u2014 I needed that more than I needed the story.\"",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "pass_hint": "p1_structural_craft",
+      "problem": "The confession in chapter 16 is necessary, but the surrounding scene dynamic repeats a beat the window has already spent: Kem halts movement, truth comes out, Kem recommits to the southward march. Because chapter 14 has already made his keep-going choice feel interiorly settled, chapter 16's version reads less like escalation than like a second pass over the same leverage question.",
+      "rewrite_direction": "Either leave chapter 14's ending more provisional so chapter 16 earns the actual recommitment, or keep chapter 16's confession but change the consequence so the post-confession state is materially different from 'we are still walking south.'",
+      "severity": "HIGH",
+      "source": "local_window",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "A reader can move from the end of chapter 15 into chapter 16 and state how much time has passed and how far the Scour remains without reconciling conflicting distance estimates.",
+      "chapter_id": "chapter_16",
+      "cross_chapter_context": "Ch15 ends with Sable departing the farmhouse heading south, and her intercut in Ch17 places her three hours behind at 236. Ch16 says the Scour is 'two days south,' which must be reconciled with the geography. Either establish that additional travel has occurred between the Ch15 farmhouse and Ch16's waystation (so the Scour is legitimately still two days away from a different location), or adjust the distance estimate in Ch16 to be shorter if the group is closer than two days.",
+      "cycle": 1,
+      "evidence": "Chapter 15 closes with Sable already walking toward \"Three hours south. Then the Scour,\" but chapter 16 later frames the remaining trip as \"two days south\" with no bridge or correction: snapshots/cycle_01/FINAL_NOVEL.md:4024, snapshots/cycle_01/FINAL_NOVEL.md:4283",
+      "finding_id": "LW08-001",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:4024",
+            "excerpt": "4024: Three hours south. Then the Scour.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:4283",
+            "excerpt": "4283: The Scour was two days south. Red Reserve agents, trained and armed and guarding a threshold that had been there longer than anyone alive. Four of them against two people with thirty-four levels between them. The arithmetic was the worst she'd ever faced, and she'd faced bad arithmetic for forty years.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "pass_hint": "p1_structural_craft",
+      "problem": "The boundary leaves the reader unable to tell whether chapter 16 is the next morning, a rewind, a route change, or a correction of the earlier estimate. That muddies elapsed time, geography, and the urgency of the Scour approach before the next phase of the window even starts.",
+      "rewrite_direction": "Choose one travel timeline and anchor it on-page. Either keep the Scour only hours away after the farmhouse, or explicitly mark that additional travel has happened and explain why the remaining distance is still days long.",
+      "severity": "HIGH",
+      "source": "local_window",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "has_locator_excerpts": true,
+  "input_snapshot_hash": "e8f7af1e644022325c8c96a542fbc8e037872ff6dc834f3fb3cd797fc7eea240",
+  "must_fix_count": 14,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness.",
+    "After a scene has shown its meaning through dramatized action, dialogue, or concrete imagery, do not add narrator passages that explain, paraphrase, or certify that meaning in abstract language. If a paragraph can be removed without losing new information \u2014 and it exists only to restate what the scene has already proved \u2014 cut it. One sharpened summary beat per major scene movement is permissible if it adds genuine pressure or new information; a second sentence restating the same idea is not.",
+    "No dialogue line may reproduce or closely echo the wording, sentence structure, or cadence of any style-bible example line. Example lines are calibration-only \u2014 they demonstrate register and rhythm, not actual manuscript dialogue. When a draft line shares more than 40% of its phrasing or the same distinctive syntactic skeleton as an example line, it must be rewritten from scratch while preserving the character's voice profile constraints. This applies to all characters, including recalled or paraphrased dialogue from earlier chapters.",
+    "Under emotional or tactical pressure, no character may deliver a polished, balanced, quotable thematic diagnosis in dialogue. Accusation, confession, revelation, and argument should arrive through interruption, self-correction, partial articulation, concrete reference, or unfinished syntax rather than finished mini-speeches. If a dialogue line can be quoted cleanly out of context as a theme statement, it needs roughening. Characters should sound like they are thinking under pressure, not delivering prepared remarks.",
+    "The 'not X, not Y, but Z' or 'not X \u2014 Y' corrective-negation pattern may appear no more than twice per chapter across all prose and dialogue. When the pattern recurs beyond that limit, replace with direct statement, image, or a different syntactic shape. Each POV should render the negation-correction move through character-specific sensory logic if used at all.",
+    "Each chapter must keep em-dash-containing prose lines below 10% of total prose lines. When revising, prioritize cutting parenthetical asides and appositive interruptions that can be restructured as independent clauses or joined with commas, colons, or periods. Do not simply replace em-dashes with other punctuation mechanically \u2014 restructure the sentence so it does not need the interruption."
+  ],
+  "original_snapshot_file": "snapshots/cycle_01/chapters/chapter_16.md",
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This is a dark comedy about a world where doing nothing is rational and doing something is self-destruction. Both the comedy and the darkness must be fully committed. Do not soften combat into choreography or spectacle \u2014 fights should hurt, cost real things, and leave damage. Do not soften the comedy into gentle satire \u2014 the absurdity of the Hoarded and their agents should be genuinely funny, sometimes cruelly so. Do not soften grief into sentimentality or revelation into epiphany. The premise demands a tonal register that holds absurdity and genuine pain in the same hand. When the material is uncomfortable \u2014 the physical reality of injury, the moral weight of exploitation, the specific grief of losing someone to a place you cannot reach \u2014 lean into specificity rather than retreating to safety. A draft that never risks anything produces a novel that never moves anyone.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism in combat, injury, consequence, or emotional extremity is a craft failure. If Vel breaks ribs, the reader should feel the break \u2014 the specific wrongness of breathing with cracked bone, the way she holds herself, the pain when she forgets. If Kem is terrified, the terror should be specific and physical: hands, stomach, breathing, the precise quality of his fear. Do not abstract away from embodied experience into summary or generalization.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for all characters except Sable (low) and early-book Kem (initially low, shifting to high). Uncontracted forms are reserved for deliberate emphasis, formal Hoarded speech contexts, or bureaucratic register. In casual conversation, unjustified full-form lines should be treated as suspect.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Vary chapter rhythm aggressively. Combat chapters should be compressed and physical. Discovery chapters should have more room for observation and the surprise of new information. Quiet chapters should breathe \u2014 longer scenes, more sensory detail, conversations that circle rather than drive. Intercut chapters (like Ch 11's Kem/Sable split and Ch 17's Sable intercut) should have contrasting textures between sections. No two consecutive chapters should have the same structural shape: vary scene count, dialogue density, pacing, and the ratio of action to interiority. Dark comedy chapters in the back half (Ch 12, 14, 15, 17) must commit fully to comic energy as a primary narrative mode: the absurdity of Hoarded bureaucratic language applied to human exploitation, the grim humor of fighting for your life with single-digit levels, the comedy of precision teamwork performed in emotional silence. These chapters carry genuine stakes alongside their comedy \u2014 the tonal fusion is the point, not tonal alternation.",
+      "diction": "Concrete, physical, occasionally wry. Avoids both literary pretension and genre cliche. The world has its own vocabulary (Hoarded, Spent, Ledger, Stillness, the Scour, the Margins) and these terms should be used naturally, not defined in exposition. Metaphors earned from the world's own materials \u2014 spending, counting, weight, erosion \u2014 rather than imported from outside the setting. The Hoarded institutional register \u2014 bureaucratic classifications, procedural euphemism, administrative language applied to human exploitation \u2014 is a specific comic instrument in the Margins chapters. When rendering Hoarded documents, policies, or institutional speech, the language should be precise, procedural, and devastating in its indifference.",
+      "forbidden_drift_patterns": [
+        "Narrator-as-comedian: comedy arises from situation and character, not from narrative commentary or winking asides to the reader",
+        "Ability-use described like video game tooltips: do not produce stat readouts or system notifications in prose",
+        "Emotional temperature permanently at maximum: not every scene is a crisis and not every internal moment is an epiphany",
+        "Generic fantasy description: landscape, architecture, and weather must be specific to this world's conditions, not recycled from the fantasy-prose commons",
+        "Competence porn: do not let characters be consistently impressive \u2014 they should fumble, miscalculate, and fail at things that are hard",
+        "Thematic underlining: the prose should not highlight its own meanings or signal when something is symbolically significant"
+      ],
+      "narrative_distance": "Close third-person limited, shifting with the POV character. Vel chapters are compressed and physical \u2014 the prose should feel like it is counting. Kem chapters are more expansive and curious \u2014 the prose has more room for observation and surprise. Sable chapters are structured and institutional, loosening as she changes. The POV break in Ch 13\u201314 (two consecutive Kem chapters) should make Vel's absence felt: the reader is locked inside Kem's betrayed perspective, and the prose should reflect the claustrophobia of a mind cycling through anger without access to the other person's interiority. The distance should be intimate enough to access characters' internal arithmetic but not so close it becomes stream-of-consciousness.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Varied by chapter texture and scene pressure. Short declarative sentences in combat. Longer, conditional, clause-heavy sentences in reflection. Comma-heavy run-ons in panic or exhilaration. The Ledger's arithmetic should bleed into prose rhythm during ability-use moments \u2014 characters counting, weighing, calculating. Quiet chapters should breathe. Action chapters should compress. Two consecutive chapters should not share the same dominant rhythm.",
+      "sensory_bias": [
+        "proprioceptive awareness \u2014 the body's internal sense of position, strain, damage, and capacity",
+        "physical weight and effort \u2014 characters feel gravity, distance, fatigue",
+        "the Ledger's feedback \u2014 a character's awareness of their remaining levels as a persistent background sensation",
+        "environmental specificity \u2014 terrain, weather, architecture rendered through what a body encounters"
+      ]
+    }
+  }
+}

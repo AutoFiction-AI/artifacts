@@ -1,0 +1,151 @@
+{
+  "acceptance_targets": [
+    "[R04] Ch16's first reference to Dren's arm conveys functional limitation without re-describing the scar's appearance using 'ridge', 'gash', or similar terms already used in Ch9/Ch11.",
+    "[R13] Ch16's later reflection on Dren does not restate the Mira/healer/arithmetic baseline in summary form.",
+    "[R15] Ch16's opening paragraph does not restate the 'two days from the basin' distance or re-explain why the direct road was not taken."
+  ],
+  "aggregation_applied": {
+    "decisions_file": "packets/cycle_03/aggregation_decisions.json",
+    "decisions_sha1": "9ff43bf06ed189d3e193643a756de41e798487c6"
+  },
+  "chapter_id": "chapter_16",
+  "cycle": 3,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Ch16's first reference to Dren's arm conveys functional limitation without re-describing the scar's appearance using 'ridge', 'gash', or similar terms already used in Ch9/Ch11.",
+      "chapter_id": "chapter_16",
+      "cycle": 3,
+      "evidence": "Ch11 line 4767: 'knotted ridge of scar that pulled tight when he extended the elbow'; Ch13 line 5492: 'left arm held a little away from his body the way he carried it when the old wound had started burning'; Ch16 line 6911: 'The silo gash had healed into a thick shiny ridge from wrist to elbow, and the hand on that side only half closed until he worked it awake.'",
+      "finding_id": "R04",
+      "problem": "Ch16 line 6911 provides another full re-description of Dren's scar ('thick shiny ridge from wrist to elbow, hand only half closed') after the reader has received full scar inventories in Ch11 and functional references in Ch12 and Ch13. This is the 4th detailed scar description since Ch9.",
+      "rewrite_direction": "At line 6911, replace the scar re-description with a single behavioral detail showing the arm's limitation (e.g., the pack adjustment) without re-inventorying the scar's physical appearance.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch16's later reflection on Dren does not restate the Mira/healer/arithmetic baseline in summary form.",
+      "chapter_id": "chapter_16",
+      "cycle": 3,
+      "evidence": "Ch16 line 6931: 'My daughter's sick...her legs won't take her when she swings out of bed. She hits the floor and looks at me...' (first detailed medical description, legitimate); Ch16 line 7582: 'Mira. The healer. The whole awful arithmetic of it.'",
+      "finding_id": "R13",
+      "problem": "Ch16 line 7582 restates the Mira baseline ('Mira. The healer. The whole awful arithmetic of it.') from Kem's POV after Dren has already departed with the full, detailed payoff scene at line 6931. The payoff scene added new medical detail and emotional specificity. Line 7582, coming 650 lines later in the same chapter, reduces that detail back to atmospheric shorthand.",
+      "rewrite_direction": "Cut or rework line 7582. If Kem's reflection on Dren's departure needs to reference Mira, anchor it in a specific image from the departure scene (e.g., the way Dren carried his pack on one shoulder) rather than the abstract 'arithmetic' formula.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch16's opening paragraph does not restate the 'two days from the basin' distance or re-explain why the direct road was not taken.",
+      "chapter_id": "chapter_16",
+      "cycle": 3,
+      "evidence": "Ch15 line 6882: '...still about two days from the basin; because cover cost time and wounded men cost more.'; Ch16 line 6899: 'They were still about two days from the basin because they'd spent two days not going straight at it.'; Chapter 15 already lays out the direct-road versus eastern-cuts arithmetic in Sable's warning and then restates it in the chapter close (snapshots/cycle_03/FINAL_NOVEL.md:6712; snapshots/cycle_03/FINAL_NOVEL.md:6713; snapshots/cycle_03/FINAL_NOVEL.md:6880; snapshots/cycle_03/FINAL_NOVEL.md:6882). Chapter 16 immediately re-explains the same two-hard-days-versus-four-days equation before the new scene starts (snapshots/cycle_03/FINAL_NOVEL.md:6899; snapshots/cycle_03/FINAL_NOVEL.md:6903).; Chapter 15 already establishes the direct-road-versus-cuts arithmetic and its reason at snapshots/cycle_03/FINAL_NOVEL.md:6710 and snapshots/cycle_03/FINAL_NOVEL.md:6712. Chapter 16 then opens by restating that same route math and cover logic at snapshots/cycle_03/FINAL_NOVEL.md:6899 before the chapter reaches its new pressure.",
+      "finding_id": "R15",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:6712",
+            "excerpt": "6712: \"That depends on where the order found them.\" Sable drew a line in the dirt with one finger, then a second line branching east. \"From this farmhouse the direct southern road reaches the Scour in two hard days if one traveler goes light and accepts being visible most of the way. That is the line the Reserve would prefer. The eastern cuts are longer. Three people with one damaged arm using pump houses and irrigation walls for cover can turn the approach into four days.\"",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:6713",
+            "excerpt": "6713:",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:6880",
+            "excerpt": "6880: She stepped out through the missing wall into the late heat. Behind her the farmhouse kept its cracked beam and its lentils over coals. The alliance inside it was not repaired, only reactivated by necessity. South lay flat and white beyond the ridge. East dropped into the old irrigation cuts Vel would take because caution, with three bodies, was slower than solitude and less cleanly visible from a watch post.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:6882",
+            "excerpt": "6882: The direct road would carry Sable to the basin in two hard days if she traveled light, kept her water, and accepted that anyone watching from a rise would see one road-worn woman moving alone through open heat. Vel would spend those same two days reaching the waystations east of the line, still about two days from the basin, because cover cost time and wounded men cost more. The difference no longer felt like a contradiction. It felt like arithmetic.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:6899",
+            "excerpt": "6899: Two days after Sable walked out of the farmhouse, the Scour still was not under them. From the farmhouse the basin had been about two hard days on foot by the direct southern road if they were willing to be seen. Vel had spent those same two days taking them east through dead irrigation cuts and fallen relay posts, then south in crooked pieces, then east again whenever the open road showed fresh dust or mirror-flash. They had not gone backward, but they had barely bought half a day's southing. The direct line belonged to whoever the Red Reserve already had between the farmhouse and the basin. The loop bought them cover, one intact pump, three walls still standing, and proof Sable had not been trying to scare them for sport. It had not bought them time. They were still about two days from the basin because they'd spent two days not going straight at it.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:6903",
+            "excerpt": "6903: The detour had cost them anyway. Kem spent seven levels in the stupid little bites that passed for caution when you still had levels left: one for light in a collapsed culvert, two bracing a washout while Dren crossed with his left arm pinned to his side, one forcing water through a pump handle rusted half shut, three more in scraps of strength and reinforcement when Margins infrastructure gave out under their feet. Vel spent two of her own, one on concealment when that first dust line swung off the road toward their ditch, one keeping the waystation stairs from coming down under Dren's weight after dark. By dusk Kem was at eighteen. She was at fourteen. Dren was still at one hundred and twenty, which only meant he'd managed not to do anything desperate yet.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:6710",
+            "excerpt": "6710: Dren shifted on the crate. \"How fast do they reach the basin?\"",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "problem": "Ch16 line 6899 recaps the travel logistics from Ch15 line 6882 at the chapter boundary. The 8-word phrase 'still about two days from the basin because' appears in both, and both passages explain why the direct road was not taken. The reader received this information 17 lines earlier.",
+      "rewrite_direction": "Open Ch16 with a brief time-and-position anchor, then move immediately to the new information: Dren packing, the relay flashes, the riders. Cut or compress the logistics paragraph at line 6899 that recaps Ch15's route arithmetic. The reader knows they are two days out and does not need the direct-road-versus-eastern-cuts equation re-explained.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "has_locator_excerpts": true,
+  "input_snapshot_hash": "cbd0a32f913812d915e9e6b861d41b1f9a6aa274e8b53f73cc12f03b9283ae7b",
+  "must_fix_count": 3,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness.",
+    "Do not open a chapter by restating information the reader received at the end of the previous chapter. Each chapter must begin with forward motion, a new development, or at most a single brief orienting clause before advancing. Travel summaries, logistics recaps, and re-explanations of the prior chapter's final state are revision targets, not opening strategies.",
+    "Each chapter should contain no more than 20 hand/palm/finger references. Keep only load-bearing instances where hands perform a specific, non-substitutable action (holding a specific object, performing a skill, a hand-specific injury). Replace atmospheric and habitual hand references with varied body parts: posture, jaw, shoulders, feet, weight shift, breathing, gaze. Do not replace hand references with another single substitute that creates a new tic.",
+    "Retain at most three 'the shape of [abstract noun]' constructions across the entire manuscript. Specifically retain: (1) Ch13 line 5564's contrastive pair ('Not the shape of a hope. The shape of a requirement.') which earns its repetition through deliberate parallelism, and (2) Ch18 line 8602's 'The shape of the world started to slip' which may be defensible as literal threshold description. Replace all other instances with constructions native to their scene: physical metaphors, Ledger-vocabulary substitutions, or direct statement. No replacement phrase should introduce a new recurring template.",
+    "Do not re-describe the physical appearance of a character, object, or location that has already been established in an earlier chapter, unless the re-description serves a genuinely new narrative function: a materially changed physical state (new injury, visible deterioration), a unique institutional perspective that reframes the detail, or a plot-driving reaction to the detail. On reappearance, use a brief reference or a single new observation rather than a full visual re-inventory. Trust the reader's memory across chapter boundaries."
+  ],
+  "original_snapshot_file": "snapshots/cycle_03/chapters/chapter_16.md",
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This is a dark comedy about a world where doing nothing is rational and doing something is self-destruction. Both the comedy and the darkness must be fully committed. Do not soften combat into choreography or spectacle \u2014 fights should hurt, cost real things, and leave damage. Do not soften the comedy into gentle satire \u2014 the absurdity of the Hoarded and their agents should be genuinely funny, sometimes cruelly so. Do not soften grief into sentimentality or revelation into epiphany. The premise demands a tonal register that holds absurdity and genuine pain in the same hand. When the material is uncomfortable \u2014 the physical reality of injury, the moral weight of exploitation, the specific grief of losing someone to a place you cannot reach \u2014 lean into specificity rather than retreating to safety. A draft that never risks anything produces a novel that never moves anyone.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism in combat, injury, consequence, or emotional extremity is a craft failure. If Vel breaks ribs, the reader should feel the break \u2014 the specific wrongness of breathing with cracked bone, the way she holds herself, the pain when she forgets. If Kem is terrified, the terror should be specific and physical: hands, stomach, breathing, the precise quality of his fear. Do not abstract away from embodied experience into summary or generalization.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for all characters except Sable (low) and early-book Kem (initially low, shifting to high). Uncontracted forms are reserved for deliberate emphasis, formal Hoarded speech contexts, or bureaucratic register. In casual conversation, unjustified full-form lines should be treated as suspect.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Vary chapter rhythm aggressively. Combat chapters should be compressed and physical. Discovery chapters should have more room for observation and the surprise of new information. Quiet chapters should breathe \u2014 longer scenes, more sensory detail, conversations that circle rather than drive. Intercut chapters (like Ch 11's Kem/Sable split and Ch 17's Sable intercut) should have contrasting textures between sections. No two consecutive chapters should have the same structural shape: vary scene count, dialogue density, pacing, and the ratio of action to interiority. Dark comedy chapters in the back half (Ch 12, 14, 15, 17) must commit fully to comic energy as a primary narrative mode: the absurdity of Hoarded bureaucratic language applied to human exploitation, the grim humor of fighting for your life with single-digit levels, the comedy of precision teamwork performed in emotional silence. These chapters carry genuine stakes alongside their comedy \u2014 the tonal fusion is the point, not tonal alternation.",
+      "diction": "Concrete, physical, occasionally wry. Avoids both literary pretension and genre cliche. The world has its own vocabulary (Hoarded, Spent, Ledger, Stillness, the Scour, the Margins) and these terms should be used naturally, not defined in exposition. Metaphors earned from the world's own materials \u2014 spending, counting, weight, erosion \u2014 rather than imported from outside the setting. The Hoarded institutional register \u2014 bureaucratic classifications, procedural euphemism, administrative language applied to human exploitation \u2014 is a specific comic instrument in the Margins chapters. When rendering Hoarded documents, policies, or institutional speech, the language should be precise, procedural, and devastating in its indifference.",
+      "forbidden_drift_patterns": [
+        "Narrator-as-comedian: comedy arises from situation and character, not from narrative commentary or winking asides to the reader",
+        "Ability-use described like video game tooltips: do not produce stat readouts or system notifications in prose",
+        "Emotional temperature permanently at maximum: not every scene is a crisis and not every internal moment is an epiphany",
+        "Generic fantasy description: landscape, architecture, and weather must be specific to this world's conditions, not recycled from the fantasy-prose commons",
+        "Competence porn: do not let characters be consistently impressive \u2014 they should fumble, miscalculate, and fail at things that are hard",
+        "Thematic underlining: the prose should not highlight its own meanings or signal when something is symbolically significant"
+      ],
+      "narrative_distance": "Close third-person limited, shifting with the POV character. Vel chapters are compressed and physical \u2014 the prose should feel like it is counting. Kem chapters are more expansive and curious \u2014 the prose has more room for observation and surprise. Sable chapters are structured and institutional, loosening as she changes. The POV break in Ch 13\u201314 (two consecutive Kem chapters) should make Vel's absence felt: the reader is locked inside Kem's betrayed perspective, and the prose should reflect the claustrophobia of a mind cycling through anger without access to the other person's interiority. The distance should be intimate enough to access characters' internal arithmetic but not so close it becomes stream-of-consciousness.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Varied by chapter texture and scene pressure. Short declarative sentences in combat. Longer, conditional, clause-heavy sentences in reflection. Comma-heavy run-ons in panic or exhilaration. The Ledger's arithmetic should bleed into prose rhythm during ability-use moments \u2014 characters counting, weighing, calculating. Quiet chapters should breathe. Action chapters should compress. Two consecutive chapters should not share the same dominant rhythm.",
+      "sensory_bias": [
+        "proprioceptive awareness \u2014 the body's internal sense of position, strain, damage, and capacity",
+        "physical weight and effort \u2014 characters feel gravity, distance, fatigue",
+        "the Ledger's feedback \u2014 a character's awareness of their remaining levels as a persistent background sensation",
+        "environmental specificity \u2014 terrain, weather, architecture rendered through what a body encounters"
+      ]
+    }
+  }
+}

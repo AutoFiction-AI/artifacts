@@ -1,0 +1,62 @@
+{
+  "chapter_id": "chapter_07",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH07_CRAFT_LEDGER_DRIFT",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:37; snapshots/cycle_01/chapters/chapter_07.md:211",
+      "problem": "Kem's Ledger count changes from 228 to 227 inside the same chapter without any on-page ability use or stated incidental spend. Because both numbers are presented as exact internal checks, the chapter creates a continuity break in the very arithmetic it asks the reader to track closely.",
+      "rewrite_direction": "Reconcile the count at snapshots/cycle_01/chapters/chapter_07.md:37 and snapshots/cycle_01/chapters/chapter_07.md:211. Either keep the same number in both places or add one explicit Kem spend between snapshots/cycle_01/chapters/chapter_07.md:37 and snapshots/cycle_01/chapters/chapter_07.md:211 so the one-level drop has a visible cause.",
+      "acceptance_test": "Pass if snapshots/cycle_01/chapters/chapter_07.md:37 and snapshots/cycle_01/chapters/chapter_07.md:211 either show the same Ledger number or the revised text includes one explicit Kem spend between those points that accounts for the change. Fail if his count still drops by one with no causal spend on the page."
+    },
+    {
+      "finding_id": "CH07_CRAFT_THEME_UNDERLINED",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:73; snapshots/cycle_01/chapters/chapter_07.md:83; snapshots/cycle_01/chapters/chapter_07.md:227; snapshots/cycle_01/chapters/chapter_07.md:229; snapshots/cycle_01/chapters/chapter_07.md:231",
+      "problem": "The chapter repeatedly explains the meaning of Kem's humiliation and the Spent Towns' ethic after the scene has already made that meaning legible. The tavern-keeper's withdrawal and Kem's choice not to use a Light Charm are strong dramatic proofs, but the narration keeps translating them into abstract social theory and moral paraphrase, which flattens discovery into essay.",
+      "rewrite_direction": "Compress the interpretive passages at snapshots/cycle_01/chapters/chapter_07.md:73 and snapshots/cycle_01/chapters/chapter_07.md:83 so they stay with Kem's immediate shame instead of expanding into manifesto language. Do the same at snapshots/cycle_01/chapters/chapter_07.md:227, snapshots/cycle_01/chapters/chapter_07.md:229, and snapshots/cycle_01/chapters/chapter_07.md:231: let the silence, the fire, and Kem's refusal of the Light Charm carry the state change without a final thematic summary.",
+      "acceptance_test": "Pass if the revised passages anchored at snapshots/cycle_01/chapters/chapter_07.md:73, snapshots/cycle_01/chapters/chapter_07.md:83, snapshots/cycle_01/chapters/chapter_07.md:227, snapshots/cycle_01/chapters/chapter_07.md:229, and snapshots/cycle_01/chapters/chapter_07.md:231 end on concrete perception or action and do not add new abstract paraphrases of what the Hoarded system means after the scene has landed. Fail if those locations still restate the chapter's theme in manifesto or moral-summary language."
+    },
+    {
+      "finding_id": "CH07_DIALOGUE_COMPOSED_EXPLANATION",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:87; snapshots/cycle_01/chapters/chapter_07.md:149; snapshots/cycle_01/chapters/chapter_07.md:153",
+      "problem": "Several lines resolve into composed thematic delivery instead of lived speech. Vel's \"That's what outside is for\" lands as a portable mentor aphorism, and Dren's Mira/risk explanation arrives as balanced mini-speeches about \"the math\" and what Kem's signet means. Under pressure, these exchanges sound written-about rather than spoken-through, and Dren's rougher trader idiolect softens into clean exposition.",
+      "rewrite_direction": "Replace the aphoristic answer at snapshots/cycle_01/chapters/chapter_07.md:87 with a blunter practical reply or silence that stays inside Vel's compressed register. Rework Dren's disclosure at snapshots/cycle_01/chapters/chapter_07.md:149 and snapshots/cycle_01/chapters/chapter_07.md:153 so the information about Mira, price, and risk emerges through bargaining pressure, interruption, redirect, or rough connective language rather than neatly concluded diagnosis.",
+      "acceptance_test": "Pass if the revised dialogue at snapshots/cycle_01/chapters/chapter_07.md:87, snapshots/cycle_01/chapters/chapter_07.md:149, and snapshots/cycle_01/chapters/chapter_07.md:153 contains no portable lesson or polished thesis-speech, and the same information reaches the reader through character-specific bargaining texture instead of mini-speeches. Fail if Vel still sounds like a mentor dispensing theme or Dren still delivers a clean explanatory block about Mira and the danger."
+    },
+    {
+      "finding_id": "CH07_PROSE_SPECIFIC_TIC",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:41; snapshots/cycle_01/chapters/chapter_07.md:43; snapshots/cycle_01/chapters/chapter_07.md:77; snapshots/cycle_01/chapters/chapter_07.md:121; snapshots/cycle_01/chapters/chapter_07.md:145; snapshots/cycle_01/chapters/chapter_07.md:181; snapshots/cycle_01/chapters/chapter_07.md:191; snapshots/cycle_01/chapters/chapter_07.md:195",
+      "problem": "The chapter leans on \"specific\" and \"specifically\" as a recurrent intensifier instead of delivering the detail directly. After enough repetitions, the word starts reading like a placeholder for precision rather than precision itself, which makes the prose feel mechanically generated.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_07.md:41, snapshots/cycle_01/chapters/chapter_07.md:43, snapshots/cycle_01/chapters/chapter_07.md:77, snapshots/cycle_01/chapters/chapter_07.md:121, snapshots/cycle_01/chapters/chapter_07.md:145, snapshots/cycle_01/chapters/chapter_07.md:181, snapshots/cycle_01/chapters/chapter_07.md:191, and snapshots/cycle_01/chapters/chapter_07.md:195, replace the \"specific/specifically\" construction with the actual observed distinction or cut the modifier entirely. The sentence should earn exactness through image, rhythm, or action, not announce that exactness abstractly.",
+      "acceptance_test": "Pass if the cited lines no longer rely on \"specific\" or \"specifically\" to create emphasis and each revised sentence renders the distinguishing detail directly. Fail if multiple cited beats still use the word as a placeholder for precision."
+    },
+    {
+      "finding_id": "CH07_PROSE_CLIPPED_FRAGMENT_PATTERN",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:3; snapshots/cycle_01/chapters/chapter_07.md:29; snapshots/cycle_01/chapters/chapter_07.md:61; snapshots/cycle_01/chapters/chapter_07.md:147",
+      "problem": "Standalone clipped fragments recur as an emphasis habit: \"Maintained.\", \"Working.\", \"Not anger.\", \"Flat, informational.\" In isolation that move can work, but here it repeats enough to read as mechanical shorthand, and it pushes against the constitution's ban on clipped narration.",
+      "rewrite_direction": "Recast the fragment beats at snapshots/cycle_01/chapters/chapter_07.md:3, snapshots/cycle_01/chapters/chapter_07.md:29, snapshots/cycle_01/chapters/chapter_07.md:61, and snapshots/cycle_01/chapters/chapter_07.md:147 into complete sentences or integrated clauses. Keep the compression, but let syntax carry the emphasis instead of one- or two-word fragments.",
+      "acceptance_test": "Pass if the cited beats are rewritten as grammatically complete sentences or clauses while preserving the same information and pressure. Fail if standalone clipped fragments remain the primary emphasis device in those locations."
+    }
+  ],
+  "summary": "Fail. The chapter has strong raw material in its settlement-worldbuilding and the signet humiliation, but it is not at pass level yet: the core Ledger arithmetic breaks on the page, the narration repeatedly explains meanings that the scenes already conveyed, dialogue occasionally slips into composed theme-delivery, and the prose shows mechanical habits rather than fully controlled chapter-specific texture."
+}

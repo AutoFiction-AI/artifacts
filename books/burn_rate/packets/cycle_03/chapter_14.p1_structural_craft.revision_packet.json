@@ -1,0 +1,224 @@
+{
+  "acceptance_targets": [
+    "[R06] Ch14's settlement arrival does not include more than one observer assessing Kem's appearance.",
+    "[R10] Ch14's journal reference does not describe two handwritings or the contrast between Maren's and Vel's script.",
+    "[R12] Ch14 does not include a narrator-summary of Dren's fear for Mira. Dren's motivation is shown through action or a single brief gesture, not an interior-state inventory.",
+    "[LW07-001] A cold reader should be able to summarize chapter 13 as the betrayal-confrontation chapter and chapter 14 as the explicit-terms/choice chapter, instead of describing both primarily as consecutive collapsing-settlement rescues."
+  ],
+  "aggregation_applied": {
+    "decisions_file": "packets/cycle_03/aggregation_decisions.json",
+    "decisions_sha1": "9ff43bf06ed189d3e193643a756de41e798487c6"
+  },
+  "chapter_id": "chapter_14",
+  "cycle": 3,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Ch14's settlement arrival does not include more than one observer assessing Kem's appearance.",
+      "chapter_id": "chapter_14",
+      "cycle": 3,
+      "evidence": "Ch12 line 5098: 'A woman sat outside...shelling dried beans...She looked up when they approached. Her eyes went to Kem first, to his height, his hands, the boots'; Ch14 line 5933: 'A woman with two sacks...watched Vel first, then Kem, then the distance between them. An old man by the wall...pretending he was not listening. Two boys...fell silent when they noticed Kem's boots.'",
+      "finding_id": "R06",
+      "problem": "Ch14 line 5927-5933 repeats the Margins-settlement-arrival template for the third time: exterior lean/collapse description, well as anchor, locals watching and measuring newcomers (specifically Kem's boots and appearance). Two chapters after Ch12 used the same structure.",
+      "rewrite_direction": "Enter the Ch14 settlement through the specific geography (the crack, the lean, the retaining wall) rather than the generic outsider-assessment scene. Cut or compress the watching-locals inventory at line 5933.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch14's journal reference does not describe two handwritings or the contrast between Maren's and Vel's script.",
+      "chapter_id": "chapter_14",
+      "cycle": 3,
+      "evidence": "Ch10 line 4188: 'Maren's handwriting ran slanted and impatient along the top margin. Vel's newer notes sat underneath in smaller blockier script'; Ch12 line 5536: 'Vel sat with Maren's route journal open on her knees...The handwriting on the open spread wasn't hers'; Ch14 line 6295: 'Vel had Maren's route journal open on her knees. Kem had already noticed the two handwritings days ago. Tonight the neater one stopped halfway down a distance column.'; The route journal's two-hand clue is planted when Fallow notes that the handwriting is not Vel's at snapshots/cycle_03/FINAL_NOVEL.md:5391; repeated when Kem notices the open spread isn't hers at snapshots/cycle_03/FINAL_NOVEL.md:5536; then reintroduced again as 'the two handwritings' before he asks where her writing stops at snapshots/cycle_03/FINAL_NOVEL.md:6295 and snapshots/cycle_03/FINAL_NOVEL.md:6333.",
+      "finding_id": "R10",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:5391",
+            "excerpt": "5391: \"That handwriting's not yours.\"",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:5536",
+            "excerpt": "5536: Dren found a clay jug in the corner that still held water under a layer of grit. He poured some into a cup, sniffed it, tasted it, waited, then drank the rest in three slow swallows. Across from Kem, Vel sat with Maren's route journal open on her knees, thumb pinning one page flat against the breeze sneaking through the broken shutters. The handwriting on the open spread wasn't hers.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:6295",
+            "excerpt": "6295: Across the fire, Vel had Maren's route journal open on her knees. Kem had already noticed the two handwritings days ago. Tonight the neater one stopped halfway down a distance column. After that the notes were Vel's, tighter and harder pressed, crowded into the margins where the road bent south and the terrain stopped behaving like a route made for ordinary travel.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:6333",
+            "excerpt": "6333: He pointed with two fingers at the journal. \"Where does her writing stop?\"",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "problem": "Ch14 line 6295 is the 4th description of Maren's journal as having two contrasting handwritings (after Ch1 line 323, Ch10 line 4188, Ch12 line 5536). The journal-on-knees posture and the two-handwriting observation serve the same orienting function each time. The reader knows who wrote what.",
+      "rewrite_direction": "At Ch14 line 6295, drop the handwriting observation and enter the journal through what Kem is reading or what information Vel is extracting. This is the 4th description of contrasting handwritings in the journal. Let the clue planted in Ch12 stand, let Ch13 use the journal without restating it, and let Ch14 turn it directly into new information or leverage rather than another visual re-introduction of the same physical detail.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch14 does not include a narrator-summary of Dren's fear for Mira. Dren's motivation is shown through action or a single brief gesture, not an interior-state inventory.",
+      "chapter_id": "chapter_14",
+      "cycle": 3,
+      "evidence": "Ch7 line 3029: 'My girl. Mira. Her legs are \u2014' (first establishment); Ch9 line 4075: 'Dren had a daughter. Dren had route math.' (3rd restatement); Ch14 line 6203: 'Fear for Mira stayed where he always kept it, under the practical layer, under the jokes, under the daily arithmetic of not saying aloud what waited north if he failed to get back in time.'",
+      "finding_id": "R12",
+      "problem": "Ch14 line 6203 is the 6th restatement of Dren's baseline motivation (sick daughter Mira, needs money for healer). By Ch14, the reader has been told this at Ch7 line 3029 (first), Ch7 line 3592 (location detail), Ch9 line 4075, Ch11 line 4987, and Ch12 line 5323. Line 6203 is pure atmospheric repetition \u2014 it adds no new detail about Mira's condition, Dren's situation, or the financial arithmetic.",
+      "rewrite_direction": "Cut line 6203 or replace with a single-sentence behavioral note showing Dren's preoccupation rather than narratively restating the baseline the reader has received 5 times.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "A cold reader should be able to summarize chapter 13 as the betrayal-confrontation chapter and chapter 14 as the explicit-terms/choice chapter, instead of describing both primarily as consecutive collapsing-settlement rescues.",
+      "chapter_id": "chapter_14",
+      "cycle": 3,
+      "evidence": "Chapter 13 already runs a broken-infrastructure rescue sequence from the grain annex through the weigh-station reset; with Vel directing; Kem spending; locals commenting; and the trio camping amid Hoarded ruin (snapshots/cycle_03/FINAL_NOVEL.md:5718; snapshots/cycle_03/FINAL_NOVEL.md:5744; snapshots/cycle_03/FINAL_NOVEL.md:5802; snapshots/cycle_03/FINAL_NOVEL.md:5818). Chapter 14 then opens another settlement rescue and follows it with retaining-wall labor and another strained camp before the journal handoff arrives (snapshots/cycle_03/FINAL_NOVEL.md:5981; snapshots/cycle_03/FINAL_NOVEL.md:5997; snapshots/cycle_03/FINAL_NOVEL.md:6085; snapshots/cycle_03/FINAL_NOVEL.md:6177).; Chapter 13 builds as road collapse; emergency spend; settlement labor; and a night camp framed by Dren in the middle and Vel with Maren's journal at snapshots/cycle_03/FINAL_NOVEL.md:5478; snapshots/cycle_03/FINAL_NOVEL.md:5718; snapshots/cycle_03/FINAL_NOVEL.md:5814; and snapshots/cycle_03/FINAL_NOVEL.md:5912. Chapter 14 then repeats the same macro-rhythm with another collapse rescue; another community work line; and another night camp framed by the same three-bedroll geometry and journal exchange at snapshots/cycle_03/FINAL_NOVEL.md:5977; snapshots/cycle_03/FINAL_NOVEL.md:6105; snapshots/cycle_03/FINAL_NOVEL.md:6177; and snapshots/cycle_03/FINAL_NOVEL.md:6355.",
+      "finding_id": "LW07-001",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:5718",
+            "excerpt": "5718: An hour later they heard shouting ahead and came over a low rise to find six people hauling grain sacks out of a leaning storage shed. The ground under the east wall had opened into a split no wider than a ditch but deep enough that darkness held at the bottom even in full sun. Every time a sack thumped across the packed earth, dust sifted from the rafters. A hand-painted board above the wide door read HARVEST HOLDING ANNEX 6B. Under that, in stenciled Hoarded print too neat for the building around it, was AUTHORIZED SHRINKAGE TOLERANCE: 14%.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:5744",
+            "excerpt": "5744: The next minutes ran on body logic. Lift, drag, hand off, back again. Kem's anger did not leave. It simply had to share space with work. The floor under his boots had a give in it he hated. Every time he crossed near the split wall, the ready shape of a bracing charm rose to the front of his mind on pure reflex. He could do it. He could spend and lock the corner long enough for them to clear the whole shed. He could feel the mechanism already half assembled behind his eyes.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:5802",
+            "excerpt": "5802: By late afternoon the weigh station appeared where the road widened around an old stone platform and a rusted scale big enough for wagons. The building attached to it had once been whitewashed. Now the lime had gone patchy and the wood shutters hung crooked on leather-dry hinges. A board over the platform read ROUTE COMPLIANCE POINT 4. Another sign underneath, newer by only a few years, instructed haulers to declare undepleted labor assets before entering basin territory.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:5818",
+            "excerpt": "5818: Dren found a strip of iron to brace the main door and said, \"If either of you start another honesty session tonight, do it outside.\"",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:5981",
+            "excerpt": "5981: The two-story house at the eastern lip had gone past leaning and into decision. Its upper floor slanted toward the crack. A man in a stone-colored shirt kept circling it without getting close enough to matter. A child was crying somewhere inside in the flat repetitive way children cried when the part of them that expected adults to fix things had started to fail.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:5997",
+            "excerpt": "5997: \"Northwest corner's taking weight,\" she said. The old operational register had survived the fracture intact. \"Southeast is gone. Beam runs north to south and it's cracked midway. Reinforce that. Clear the east door. Woman inside, maybe two children.\"",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:6085",
+            "excerpt": "6085: Vel bent, picked up her pack, and set it back down again as if the first instinct had been wrong. \"Show me.\"",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:6177",
+            "excerpt": "6177: By full dark they were camped on the west rise above the crack, exactly where the well woman and the quarryman had told them to be. The fire was small because the wood was poor and because nobody in the settlement believed in burning more than a pot required. Vel on one side, Dren in the middle, Kem on the other. The same cold geometry as the last two nights, only now the people downhill knew enough about it to make faces.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:5478",
+            "excerpt": "5478: The road failed under a farmer before noon.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:5814",
+            "excerpt": "5814: Dren went through the room with a trader's eye and took the least rotten corner for his bedroll. Vel checked doors, window slits, roofline, then set her pack against the wall nearest the entrance. Kem chose the far side by instinct, as far from her as the room allowed without making a statement so obvious even Dren would have to comment on it.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:5912",
+            "excerpt": "5912: When dawn finally started paling the eastern edge of the fields, it came colorless at first, then yellow and merciless. Dren emerged rubbing his face with one hand and muttering about his arm. Vel came out last, journal packed, expression blank with the kind of tiredness she wore as function. Nobody mentioned the night walk. Nobody mentioned the cough. Nobody mentioned anything from the farmhouse because there was no version of the conversation that would not either reopen it or fake its closure.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:5977",
+            "excerpt": "5977: That should have been the end of it. It almost was. Then somewhere east a voice started calling for help, not loud and not wild, just steady with the rhythm of someone who had been saying the same words for long enough to wear the panic down to function.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:6105",
+            "excerpt": "6105: Orders moved through the settlement faster than thanks had. The same people who had been watching now started lifting, dragging, passing, swearing. Somebody put Kem at the upper course before he had agreed to be put anywhere. Somebody else thrust a coil of rope into Dren's good hand. The flour-armed woman told a boy to stop gaping and move the chicken crate unless he wanted supper to choose its own grave.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:6355",
+            "excerpt": "6355: He held out his hand for the journal without having planned to. Vel looked at it. For a moment he thought she would refuse, not out of secrecy but out of habit so old it would take more than one night to break. Instead she rose, came around the fire, and set the book down on the ground between their bedrolls.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "pass_hint": "p1_structural_craft",
+      "problem": "Read back-to-back, the second Kem chapter spends too much of its runtime replaying the prior chapter's collapse-response, grim-local-comment, and bleak-camp function. Chapter 14 does have a different internal job, but that job lands late enough that the two chapters start to blur into one long sequence of another failing structure, another emergency spend, and another camp reset.",
+      "rewrite_direction": "Give chapter 14 a different dominant shape from chapter 13. Cut or compress one labor block, bring the altered alliance terms or basin-specific pressure to the front, and avoid restaging the full collapse-rescue-campfire grammar chapter 13 just used. A cold reader should be able to summarize chapter 13 as the betrayal-confrontation chapter and chapter 14 as the explicit-terms/choice chapter, not describe both primarily as consecutive collapsing-settlement rescues.",
+      "severity": "HIGH",
+      "source": "local_window",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "has_locator_excerpts": true,
+  "input_snapshot_hash": "975479677af496a0703f41fbd13280183f217b444eb6dae4b843119599560730",
+  "must_fix_count": 4,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness.",
+    "Do not open a chapter by restating information the reader received at the end of the previous chapter. Each chapter must begin with forward motion, a new development, or at most a single brief orienting clause before advancing. Travel summaries, logistics recaps, and re-explanations of the prior chapter's final state are revision targets, not opening strategies.",
+    "Each chapter should contain no more than 20 hand/palm/finger references. Keep only load-bearing instances where hands perform a specific, non-substitutable action (holding a specific object, performing a skill, a hand-specific injury). Replace atmospheric and habitual hand references with varied body parts: posture, jaw, shoulders, feet, weight shift, breathing, gaze. Do not replace hand references with another single substitute that creates a new tic.",
+    "Retain at most three 'the shape of [abstract noun]' constructions across the entire manuscript. Specifically retain: (1) Ch13 line 5564's contrastive pair ('Not the shape of a hope. The shape of a requirement.') which earns its repetition through deliberate parallelism, and (2) Ch18 line 8602's 'The shape of the world started to slip' which may be defensible as literal threshold description. Replace all other instances with constructions native to their scene: physical metaphors, Ledger-vocabulary substitutions, or direct statement. No replacement phrase should introduce a new recurring template.",
+    "Do not re-describe the physical appearance of a character, object, or location that has already been established in an earlier chapter, unless the re-description serves a genuinely new narrative function: a materially changed physical state (new injury, visible deterioration), a unique institutional perspective that reframes the detail, or a plot-driving reaction to the detail. On reappearance, use a brief reference or a single new observation rather than a full visual re-inventory. Trust the reader's memory across chapter boundaries."
+  ],
+  "original_snapshot_file": "snapshots/cycle_03/chapters/chapter_14.md",
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This is a dark comedy about a world where doing nothing is rational and doing something is self-destruction. Both the comedy and the darkness must be fully committed. Do not soften combat into choreography or spectacle \u2014 fights should hurt, cost real things, and leave damage. Do not soften the comedy into gentle satire \u2014 the absurdity of the Hoarded and their agents should be genuinely funny, sometimes cruelly so. Do not soften grief into sentimentality or revelation into epiphany. The premise demands a tonal register that holds absurdity and genuine pain in the same hand. When the material is uncomfortable \u2014 the physical reality of injury, the moral weight of exploitation, the specific grief of losing someone to a place you cannot reach \u2014 lean into specificity rather than retreating to safety. A draft that never risks anything produces a novel that never moves anyone.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism in combat, injury, consequence, or emotional extremity is a craft failure. If Vel breaks ribs, the reader should feel the break \u2014 the specific wrongness of breathing with cracked bone, the way she holds herself, the pain when she forgets. If Kem is terrified, the terror should be specific and physical: hands, stomach, breathing, the precise quality of his fear. Do not abstract away from embodied experience into summary or generalization.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for all characters except Sable (low) and early-book Kem (initially low, shifting to high). Uncontracted forms are reserved for deliberate emphasis, formal Hoarded speech contexts, or bureaucratic register. In casual conversation, unjustified full-form lines should be treated as suspect.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Vary chapter rhythm aggressively. Combat chapters should be compressed and physical. Discovery chapters should have more room for observation and the surprise of new information. Quiet chapters should breathe \u2014 longer scenes, more sensory detail, conversations that circle rather than drive. Intercut chapters (like Ch 11's Kem/Sable split and Ch 17's Sable intercut) should have contrasting textures between sections. No two consecutive chapters should have the same structural shape: vary scene count, dialogue density, pacing, and the ratio of action to interiority. Dark comedy chapters in the back half (Ch 12, 14, 15, 17) must commit fully to comic energy as a primary narrative mode: the absurdity of Hoarded bureaucratic language applied to human exploitation, the grim humor of fighting for your life with single-digit levels, the comedy of precision teamwork performed in emotional silence. These chapters carry genuine stakes alongside their comedy \u2014 the tonal fusion is the point, not tonal alternation.",
+      "diction": "Concrete, physical, occasionally wry. Avoids both literary pretension and genre cliche. The world has its own vocabulary (Hoarded, Spent, Ledger, Stillness, the Scour, the Margins) and these terms should be used naturally, not defined in exposition. Metaphors earned from the world's own materials \u2014 spending, counting, weight, erosion \u2014 rather than imported from outside the setting. The Hoarded institutional register \u2014 bureaucratic classifications, procedural euphemism, administrative language applied to human exploitation \u2014 is a specific comic instrument in the Margins chapters. When rendering Hoarded documents, policies, or institutional speech, the language should be precise, procedural, and devastating in its indifference.",
+      "forbidden_drift_patterns": [
+        "Narrator-as-comedian: comedy arises from situation and character, not from narrative commentary or winking asides to the reader",
+        "Ability-use described like video game tooltips: do not produce stat readouts or system notifications in prose",
+        "Emotional temperature permanently at maximum: not every scene is a crisis and not every internal moment is an epiphany",
+        "Generic fantasy description: landscape, architecture, and weather must be specific to this world's conditions, not recycled from the fantasy-prose commons",
+        "Competence porn: do not let characters be consistently impressive \u2014 they should fumble, miscalculate, and fail at things that are hard",
+        "Thematic underlining: the prose should not highlight its own meanings or signal when something is symbolically significant"
+      ],
+      "narrative_distance": "Close third-person limited, shifting with the POV character. Vel chapters are compressed and physical \u2014 the prose should feel like it is counting. Kem chapters are more expansive and curious \u2014 the prose has more room for observation and surprise. Sable chapters are structured and institutional, loosening as she changes. The POV break in Ch 13\u201314 (two consecutive Kem chapters) should make Vel's absence felt: the reader is locked inside Kem's betrayed perspective, and the prose should reflect the claustrophobia of a mind cycling through anger without access to the other person's interiority. The distance should be intimate enough to access characters' internal arithmetic but not so close it becomes stream-of-consciousness.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Varied by chapter texture and scene pressure. Short declarative sentences in combat. Longer, conditional, clause-heavy sentences in reflection. Comma-heavy run-ons in panic or exhilaration. The Ledger's arithmetic should bleed into prose rhythm during ability-use moments \u2014 characters counting, weighing, calculating. Quiet chapters should breathe. Action chapters should compress. Two consecutive chapters should not share the same dominant rhythm.",
+      "sensory_bias": [
+        "proprioceptive awareness \u2014 the body's internal sense of position, strain, damage, and capacity",
+        "physical weight and effort \u2014 characters feel gravity, distance, fatigue",
+        "the Ledger's feedback \u2014 a character's awareness of their remaining levels as a persistent background sensation",
+        "environmental specificity \u2014 terrain, weather, architecture rendered through what a body encounters"
+      ]
+    }
+  }
+}

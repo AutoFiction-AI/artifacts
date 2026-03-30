@@ -1,0 +1,62 @@
+{
+  "chapter_id": "chapter_11",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CRAFT_SPATIAL_GEOMETRY_RIVER",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:55; snapshots/cycle_01/chapters/chapter_11.md:89; snapshots/cycle_01/chapters/chapter_11.md:109; snapshots/cycle_01/chapters/chapter_11.md:113",
+      "problem": "The river-crossing geography contradicts itself. The chapter first places the flat rock on the far bank, then later treats that same rock as a staging point still eight meters short of the far bank. Because the ordeal's last turn depends on that landmark, the reader cannot hold a stable map of where Kem is or what remains to cross.",
+      "rewrite_direction": "Rebuild the crossing geometry at snapshots/cycle_01/chapters/chapter_11.md:55 and snapshots/cycle_01/chapters/chapter_11.md:87-117 so the rock has one consistent location and the channel progression stays legible. Either establish from the start that the rock is a midstream outcrop, or keep it on the bank and give Kem a different final obstacle; in either case, name the bank/channel order concretely when he is swept downstream and when he reaches the landmark.",
+      "acceptance_test": "A cold reader can trace Kem's route through snapshots/cycle_01/chapters/chapter_11.md:55-117 without rereading: the rock is described in one location only, Kem's 'wrong side' status is visually explainable, and the final eight-meter push follows from the earlier map instead of revising it."
+    },
+    {
+      "finding_id": "CRAFT_LEDGER_ARITHMETIC_COLLAPSE",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:199; snapshots/cycle_01/chapters/chapter_11.md:207; snapshots/cycle_01/chapters/chapter_11.md:209; snapshots/cycle_01/chapters/chapter_11.md:211; snapshots/cycle_01/chapters/chapter_11.md:213; snapshots/cycle_01/chapters/chapter_11.md:215",
+      "problem": "The chapter's Ledger arithmetic contradicts itself at the exact moment it asks the reader to trust precise accounting. Vel says Kem has wasted eighteen incidental levels and the scene keeps repeating eighteen, but Kem immediately calculates his post-escape drop from 160 to 148 as twelve levels. That breaks the chapter's core factual argument and also conflicts with the continuity sheet's chapter_11 state tracking.",
+      "rewrite_direction": "Choose one canonical incidental-loss total and propagate it consistently through snapshots/cycle_01/chapters/chapter_11.md:195-215, including Vel's accusation, Kem's Ledger check, his mental subtraction, and the closing formulation. If canon stays twelve, rewrite the examples and repeated tally to twelve; if canon stays eighteen, adjust Kem's prior number and any related state references so the subtraction on the page matches.",
+      "acceptance_test": "In the revised exchange at snapshots/cycle_01/chapters/chapter_11.md:195-215, every stated number reconciles on first read: Kem's prior level minus his current level equals the incidental-loss total Vel cites, and no sentence in the passage preserves a competing total."
+    },
+    {
+      "finding_id": "DIALOGUE_THESIS_SPEECH_DEBRIEF",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:155; snapshots/cycle_01/chapters/chapter_11.md:163; snapshots/cycle_01/chapters/chapter_11.md:171; snapshots/cycle_01/chapters/chapter_11.md:175; snapshots/cycle_01/chapters/chapter_11.md:181; snapshots/cycle_01/chapters/chapter_11.md:211; snapshots/cycle_01/chapters/chapter_11.md:215",
+      "problem": "The chapter's decisive confrontation slides into composed thesis-speech. After a near-drowning, Vel delivers polished mini-diagnoses and quotable abstractions ('Discipline isn't following a rule,' 'It's ideology,' 'Both of those are true at the same time') that sound workshopped rather than spoken under pressure. The scene then re-paraphrases a lesson the river has already dramatized, flattening Vel's compressed practicality and letting Kem absorb the point too cleanly.",
+      "rewrite_direction": "Rework snapshots/cycle_01/chapters/chapter_11.md:155-185 and snapshots/cycle_01/chapters/chapter_11.md:211-215 so the argument stays in Vel's practical register: concrete misreads from the crossing, sharper admission of her bad call, more interruption and resistance from Kem, and less abstract taxonomy. Let the ordeal carry most of the ideology point; cut the aphoristic summaries or convert them into messier, character-true speech with friction.",
+      "acceptance_test": "In the revised debrief at snapshots/cycle_01/chapters/chapter_11.md:155-215, Vel's lines stay tied to concrete crossing details, Kem interrupts or rejects at least one point before she completes it, and the exchange ends on concrete mistrust or practical consequence rather than an abstract moral summary."
+    },
+    {
+      "finding_id": "DIALOGUE_EXAMPLE_LINE_COPY",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:299",
+      "problem": "The chapter reproduces a style-bible calibration line almost verbatim: Dren's 'my arm's still on, so thanks.' Example lines are explicitly non-copyable, so this reads as voice templating rather than authored recall.",
+      "rewrite_direction": "Replace the recalled wording at snapshots/cycle_01/chapters/chapter_11.md:299 with fresh, chapter-specific language that conveys Dren's rough gratitude and Kem's reaction without borrowing the calibration sentence.",
+      "acceptance_test": "The revised sentence at snapshots/cycle_01/chapters/chapter_11.md:299 no longer matches any style-bible example line verbatim or near-verbatim, while Sable can still remember Dren's grudging thanks and Kem's response to it."
+    },
+    {
+      "finding_id": "PROSE_NEGATION_CORRECTION_TIC",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "evidence": "snapshots/cycle_01/chapters/chapter_11.md:61; snapshots/cycle_01/chapters/chapter_11.md:67; snapshots/cycle_01/chapters/chapter_11.md:73; snapshots/cycle_01/chapters/chapter_11.md:79; snapshots/cycle_01/chapters/chapter_11.md:141; snapshots/cycle_01/chapters/chapter_11.md:145; snapshots/cycle_01/chapters/chapter_11.md:249; snapshots/cycle_01/chapters/chapter_11.md:307",
+      "problem": "The chapter leans too often on the same negation-then-correction scaffold ('not X — Y,' 'not X but Y'). Used this many times across both POV blocks, it starts to feel like authorial self-editing on the page rather than live perception, flattening otherwise strong sensory writing into a predictable explanatory rhythm.",
+      "rewrite_direction": "Revise the repeated scaffold in snapshots/cycle_01/chapters/chapter_11.md:61-79, snapshots/cycle_01/chapters/chapter_11.md:141-145, snapshots/cycle_01/chapters/chapter_11.md:249, and snapshots/cycle_01/chapters/chapter_11.md:307 so more of the image arrives directly. Keep the physical specificity, but stop announcing what the sensation is not before telling us what it is.",
+      "acceptance_test": "Across the cited passages, no more than two sentences retain the negation-first correction pattern; the remaining revised lines present sensation, temperature, pain, or realization directly enough that the chapter no longer sounds like it is continually rephrasing itself."
+    }
+  ],
+  "summary": "Fail across all four lenses. The river ordeal has real physical bite and the Sable intercut lands the intended state shift, but shortlist-level control is not there: the chapter breaks its own spatial map and Ledger arithmetic, then overexplains its thematic lesson in composed dialogue. A copied style-bible line and a recurring negation/correction prose tic further weaken voice integrity and sentence-level authority."
+}

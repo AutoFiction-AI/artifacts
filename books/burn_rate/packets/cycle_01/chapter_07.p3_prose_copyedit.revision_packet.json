@@ -1,0 +1,134 @@
+{
+  "acceptance_targets": [
+    "[CH07_PROSE_SPECIFIC_TIC] Pass if the cited lines no longer rely on \"specific\" or \"specifically\" to create emphasis and each revised sentence renders the distinguishing detail directly. Fail if multiple cited beats still use the word as a placeholder for precision.",
+    "[CH07_PROSE_CLIPPED_FRAGMENT_PATTERN] Pass if the cited beats are rewritten as grammatically complete sentences or clauses while preserving the same information and pressure. Fail if standalone clipped fragments remain the primary emphasis device in those locations."
+  ],
+  "aggregation_applied": {
+    "decisions_file": "packets/cycle_01/aggregation_decisions.json",
+    "decisions_sha1": "880a450ac33b90efc1364a17207490490d407904"
+  },
+  "chapter_id": "chapter_07",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if the cited lines no longer rely on \"specific\" or \"specifically\" to create emphasis and each revised sentence renders the distinguishing detail directly. Fail if multiple cited beats still use the word as a placeholder for precision.",
+      "chapter_id": "chapter_07",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:41; snapshots/cycle_01/chapters/chapter_07.md:43; snapshots/cycle_01/chapters/chapter_07.md:77; snapshots/cycle_01/chapters/chapter_07.md:121; snapshots/cycle_01/chapters/chapter_07.md:145; snapshots/cycle_01/chapters/chapter_07.md:181; snapshots/cycle_01/chapters/chapter_07.md:191; snapshots/cycle_01/chapters/chapter_07.md:195; The same authorial scaffold repeats across the window: snapshots/cycle_01/FINAL_NOVEL.md:1165; snapshots/cycle_01/FINAL_NOVEL.md:1189; snapshots/cycle_01/FINAL_NOVEL.md:1389; snapshots/cycle_01/FINAL_NOVEL.md:1593; snapshots/cycle_01/FINAL_NOVEL.md:1595; and snapshots/cycle_01/FINAL_NOVEL.md:1629 all lean on \"the specific [quality] of...\" phrasing.",
+      "finding_id": "CH07_PROSE_SPECIFIC_TIC",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:1165",
+            "excerpt": "1165: She paused. Not for effect. For the specific effort of uncovering something she'd packed away so long it had calcified into fact, and facts were easier than memories.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:1189",
+            "excerpt": "1189: She stopped. She'd said more than she planned, and the silence that followed had the specific weight of too much honesty \u2014 not regret, but the exposure of having told a true thing to someone she hadn't fully decided to trust.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:1389",
+            "excerpt": "1389: \"I was told this was a documentation assignment,\" said Operative Tarrell. He had brought three notebooks and a personal seal. He was a slender man in his fifties whose hands had the specific softness of someone who had never lifted anything heavier than a records binder. He had, Sable knew from his file, spent the last decade cataloguing the Vault's entire architectural archive \u2014 every pillar measurement, every sightline angle, every drainage gradient. His handwriting was famous among the filing clerks. He did not, at this moment, look like someone prepared to walk to the end of the corridor with purpose.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:1593",
+            "excerpt": "1593: She led them to a tavern \u2014 a broad, low building with a clay-tile roof and a yard where someone had set up benches under a canvas shade. A few chickens scratched in the dirt near the entrance. Inside was dim and cool, smelling of grain beer and cooked onions and the specific sourness of a space where many people had eaten and drunk and the wood had absorbed decades of it. Half a dozen patrons sat at tables \u2014 men and women in working clothes, eating midday meals or drinking slowly. They looked up when Vel and Kem entered. The looks settled on Kem in the same measuring way they had outside, held for a beat, and moved on. One man went back to his food. A woman at the bar turned fully to study him, then turned away.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:1595",
+            "excerpt": "1595: The tavern keeper came from a back room, a crate of clay bottles braced against her hip. She was perhaps fifty, heavy-set, with her hair pulled back under a cloth and forearms that showed the specific muscle of years spent lifting, pouring, and hauling stock. A leather brace wrapped her left knee \u2014 the kind of thing you wore for a joint that had been complaining for years and you'd stopped trying to fix. She set the crate on the bar with a practiced thud and looked at them.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:1629",
+            "excerpt": "1629: Vel was shouldering her pack. She'd seen the whole thing \u2014 he could tell by the specific quality of her not-looking, the way she didn't turn toward him or offer commentary. She was giving him room to sit with it.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "problem": "The chapter leans on \"specific\" and \"specifically\" as a recurrent intensifier instead of delivering the detail directly. After enough repetitions, the word starts reading like a placeholder for precision rather than precision itself, which makes the prose feel mechanically generated.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_07.md:41, :43, :77, :121, :145, :181, :191, and :195, replace the 'specific/specifically' construction and the 'the specific ...' comparator pattern with the actual observed distinction or cut the modifier entirely. The sentence should earn exactness through image, rhythm, or action, not announce that exactness abstractly. Keep only the strongest instance if any. This fix also addresses the cross-chapter pattern where 'the specific...' construction recurs across POVs in the ch5-8 window \u2014 by removing it from Ch7, the window no longer reads as a shared authorial default.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if the cited beats are rewritten as grammatically complete sentences or clauses while preserving the same information and pressure. Fail if standalone clipped fragments remain the primary emphasis device in those locations.",
+      "chapter_id": "chapter_07",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:3; snapshots/cycle_01/chapters/chapter_07.md:29; snapshots/cycle_01/chapters/chapter_07.md:61; snapshots/cycle_01/chapters/chapter_07.md:147",
+      "finding_id": "CH07_PROSE_CLIPPED_FRAGMENT_PATTERN",
+      "problem": "Standalone clipped fragments recur as an emphasis habit: \"Maintained.\", \"Working.\", \"Not anger.\", \"Flat, informational.\" In isolation that move can work, but here it repeats enough to read as mechanical shorthand, and it pushes against the constitution's ban on clipped narration.",
+      "rewrite_direction": "Recast the fragment beats at snapshots/cycle_01/chapters/chapter_07.md:3, snapshots/cycle_01/chapters/chapter_07.md:29, snapshots/cycle_01/chapters/chapter_07.md:61, and snapshots/cycle_01/chapters/chapter_07.md:147 into complete sentences or integrated clauses. Keep the compression, but let syntax carry the emphasis instead of one- or two-word fragments.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "has_locator_excerpts": true,
+  "input_snapshot_hash": "ea7445c45d3da81925e816c31bd2be36a65bd7dea8c6b89b3de144a60bdd7d81",
+  "must_fix_count": 2,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness.",
+    "After a scene has shown its meaning through dramatized action, dialogue, or concrete imagery, do not add narrator passages that explain, paraphrase, or certify that meaning in abstract language. If a paragraph can be removed without losing new information \u2014 and it exists only to restate what the scene has already proved \u2014 cut it. One sharpened summary beat per major scene movement is permissible if it adds genuine pressure or new information; a second sentence restating the same idea is not.",
+    "No dialogue line may reproduce or closely echo the wording, sentence structure, or cadence of any style-bible example line. Example lines are calibration-only \u2014 they demonstrate register and rhythm, not actual manuscript dialogue. When a draft line shares more than 40% of its phrasing or the same distinctive syntactic skeleton as an example line, it must be rewritten from scratch while preserving the character's voice profile constraints. This applies to all characters, including recalled or paraphrased dialogue from earlier chapters.",
+    "Under emotional or tactical pressure, no character may deliver a polished, balanced, quotable thematic diagnosis in dialogue. Accusation, confession, revelation, and argument should arrive through interruption, self-correction, partial articulation, concrete reference, or unfinished syntax rather than finished mini-speeches. If a dialogue line can be quoted cleanly out of context as a theme statement, it needs roughening. Characters should sound like they are thinking under pressure, not delivering prepared remarks.",
+    "The 'not X, not Y, but Z' or 'not X \u2014 Y' corrective-negation pattern may appear no more than twice per chapter across all prose and dialogue. When the pattern recurs beyond that limit, replace with direct statement, image, or a different syntactic shape. Each POV should render the negation-correction move through character-specific sensory logic if used at all.",
+    "Each chapter must keep em-dash-containing prose lines below 10% of total prose lines. When revising, prioritize cutting parenthetical asides and appositive interruptions that can be restructured as independent clauses or joined with commas, colons, or periods. Do not simply replace em-dashes with other punctuation mechanically \u2014 restructure the sentence so it does not need the interruption."
+  ],
+  "original_snapshot_file": "snapshots/cycle_01/chapters/chapter_07.md",
+  "revision_pass": {
+    "focus": "Focus on prose and copyedit finish: diction precision, rhythm control, sentence-level clarity, grammar, line-level polish without flattening style, and explicit aesthetic-risk audit (sanitization is the primary risk \u2014 do not soften or euphemize; push toward creative risk and specificity).",
+    "key": "p3_prose_copyedit",
+    "label": "prose/copyedit fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This is a dark comedy about a world where doing nothing is rational and doing something is self-destruction. Both the comedy and the darkness must be fully committed. Do not soften combat into choreography or spectacle \u2014 fights should hurt, cost real things, and leave damage. Do not soften the comedy into gentle satire \u2014 the absurdity of the Hoarded and their agents should be genuinely funny, sometimes cruelly so. Do not soften grief into sentimentality or revelation into epiphany. The premise demands a tonal register that holds absurdity and genuine pain in the same hand. When the material is uncomfortable \u2014 the physical reality of injury, the moral weight of exploitation, the specific grief of losing someone to a place you cannot reach \u2014 lean into specificity rather than retreating to safety. A draft that never risks anything produces a novel that never moves anyone.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism in combat, injury, consequence, or emotional extremity is a craft failure. If Vel breaks ribs, the reader should feel the break \u2014 the specific wrongness of breathing with cracked bone, the way she holds herself, the pain when she forgets. If Kem is terrified, the terror should be specific and physical: hands, stomach, breathing, the precise quality of his fear. Do not abstract away from embodied experience into summary or generalization.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for all characters except Sable (low) and early-book Kem (initially low, shifting to high). Uncontracted forms are reserved for deliberate emphasis, formal Hoarded speech contexts, or bureaucratic register. In casual conversation, unjustified full-form lines should be treated as suspect.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Vary chapter rhythm aggressively. Combat chapters should be compressed and physical. Discovery chapters should have more room for observation and the surprise of new information. Quiet chapters should breathe \u2014 longer scenes, more sensory detail, conversations that circle rather than drive. Intercut chapters (like Ch 11's Kem/Sable split and Ch 17's Sable intercut) should have contrasting textures between sections. No two consecutive chapters should have the same structural shape: vary scene count, dialogue density, pacing, and the ratio of action to interiority. Dark comedy chapters in the back half (Ch 12, 14, 15, 17) must commit fully to comic energy as a primary narrative mode: the absurdity of Hoarded bureaucratic language applied to human exploitation, the grim humor of fighting for your life with single-digit levels, the comedy of precision teamwork performed in emotional silence. These chapters carry genuine stakes alongside their comedy \u2014 the tonal fusion is the point, not tonal alternation.",
+      "diction": "Concrete, physical, occasionally wry. Avoids both literary pretension and genre cliche. The world has its own vocabulary (Hoarded, Spent, Ledger, Stillness, the Scour, the Margins) and these terms should be used naturally, not defined in exposition. Metaphors earned from the world's own materials \u2014 spending, counting, weight, erosion \u2014 rather than imported from outside the setting. The Hoarded institutional register \u2014 bureaucratic classifications, procedural euphemism, administrative language applied to human exploitation \u2014 is a specific comic instrument in the Margins chapters. When rendering Hoarded documents, policies, or institutional speech, the language should be precise, procedural, and devastating in its indifference.",
+      "forbidden_drift_patterns": [
+        "Narrator-as-comedian: comedy arises from situation and character, not from narrative commentary or winking asides to the reader",
+        "Ability-use described like video game tooltips: do not produce stat readouts or system notifications in prose",
+        "Emotional temperature permanently at maximum: not every scene is a crisis and not every internal moment is an epiphany",
+        "Generic fantasy description: landscape, architecture, and weather must be specific to this world's conditions, not recycled from the fantasy-prose commons",
+        "Competence porn: do not let characters be consistently impressive \u2014 they should fumble, miscalculate, and fail at things that are hard",
+        "Thematic underlining: the prose should not highlight its own meanings or signal when something is symbolically significant"
+      ],
+      "narrative_distance": "Close third-person limited, shifting with the POV character. Vel chapters are compressed and physical \u2014 the prose should feel like it is counting. Kem chapters are more expansive and curious \u2014 the prose has more room for observation and surprise. Sable chapters are structured and institutional, loosening as she changes. The POV break in Ch 13\u201314 (two consecutive Kem chapters) should make Vel's absence felt: the reader is locked inside Kem's betrayed perspective, and the prose should reflect the claustrophobia of a mind cycling through anger without access to the other person's interiority. The distance should be intimate enough to access characters' internal arithmetic but not so close it becomes stream-of-consciousness.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Varied by chapter texture and scene pressure. Short declarative sentences in combat. Longer, conditional, clause-heavy sentences in reflection. Comma-heavy run-ons in panic or exhilaration. The Ledger's arithmetic should bleed into prose rhythm during ability-use moments \u2014 characters counting, weighing, calculating. Quiet chapters should breathe. Action chapters should compress. Two consecutive chapters should not share the same dominant rhythm.",
+      "sensory_bias": [
+        "proprioceptive awareness \u2014 the body's internal sense of position, strain, damage, and capacity",
+        "physical weight and effort \u2014 characters feel gravity, distance, fatigue",
+        "the Ledger's feedback \u2014 a character's awareness of their remaining levels as a persistent background sensation",
+        "environmental specificity \u2014 terrain, weather, architecture rendered through what a body encounters"
+      ]
+    }
+  }
+}

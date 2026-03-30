@@ -1,0 +1,62 @@
+{
+  "cycle": 2,
+  "window_id": "window_01",
+  "chapters_reviewed": [
+    "chapter_01",
+    "chapter_02",
+    "chapter_03",
+    "chapter_04"
+  ],
+  "summary": "The window escalates in plot, but the handoff into Chapter 2 is temporally fuzzy and Chapters 3-4 keep re-orienting the reader to Kem's incompetence instead of trusting what the previous chapter already established.",
+  "findings": [
+    {
+      "finding_id": "LW01-001",
+      "category": "pre_scan",
+      "subcategory": "chronology_gap",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "related_chapter_ids": [
+        "chapter_01"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "Chapter 1 ends at night with Vel deciding to leave 'at first light' after hearing the Aldraste boy left 'that morning,' then Chapter 2 opens on the Conservatory Rite without an explicit rewind cue even though it is dramatizing that same departure event: snapshots/cycle_02/FINAL_NOVEL.md:209; snapshots/cycle_02/FINAL_NOVEL.md:213; snapshots/cycle_02/FINAL_NOVEL.md:224.",
+      "problem": "The 01/02 handoff briefly scrambles chronology. Read straight through, the sequence feels like forward motion from Vel's nighttime decision until the chapter break drops into Kem's earlier same-day departure, so the POV switch lands as a reset rather than a clean expansion of the same moment.",
+      "rewrite_direction": "Anchor Chapter 2 as the source event behind the rumor within its opening beats. A small time marker or an explicit callback to the departure Vel has just heard about would keep the rewind legible without changing structure.",
+      "acceptance_test": "Within the first two paragraphs of Chapter 2, a reader can place the scene as the departure Vel heard about at the end of Chapter 1 without needing later context to reconstruct the timeline.",
+      "fix_owner_reason": "The later chapter owns the boundary confusion because Chapter 1 closes in clearly signaled evening time and Chapter 2 is the unmarked rewind."
+    },
+    {
+      "finding_id": "LW01-002",
+      "category": "pre_scan",
+      "subcategory": "repeated_information",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "related_chapter_ids": [
+        "chapter_02"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "Chapter 2 already dramatizes the overshot banquet and first-day burn rate, landing Kem at 288 and summarizing that twelve levels are gone in the first hour, but Chapter 3 reopens by inventorying the rotting feast, recalculating him at 286, and then making Vel restate the fourteen-level loss aloud: snapshots/cycle_02/FINAL_NOVEL.md:372; snapshots/cycle_02/FINAL_NOVEL.md:382; snapshots/cycle_02/FINAL_NOVEL.md:399; snapshots/cycle_02/FINAL_NOVEL.md:403; snapshots/cycle_02/FINAL_NOVEL.md:439; snapshots/cycle_02/FINAL_NOVEL.md:443.",
+      "problem": "The Chapter 2 to Chapter 3 boundary spends its first movement catching the reader back up on Kem's obvious mistakes instead of exploiting the new friction of Vel finally meeting him. Read back-to-back, the encounter starts in recap mode.",
+      "rewrite_direction": "Trust the reader to carry over the banquet, bad calibration, and early losses from Chapter 2. Let Vel's entrance hinge on new leverage, a fresh tell, or the terms of the alliance instead of re-totaling what the previous chapter already proved.",
+      "acceptance_test": "Reading Chapter 3 immediately after Chapter 2, the opening exchange adds materially new information about Vel's agenda or Kem's choice without re-explaining his first-day waste pattern and current level count.",
+      "fix_owner_reason": "The later chapter owns redundant re-orientation because Chapter 2 already staged the banquet overspend and its arithmetic on page."
+    },
+    {
+      "finding_id": "LW01-003",
+      "category": "pacing_rhythm",
+      "subcategory": "repeated_opening_structure",
+      "severity": "HIGH",
+      "chapter_id": "chapter_04",
+      "related_chapter_ids": [
+        "chapter_02",
+        "chapter_03"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "Chapter 2 opens Kem's road plot by stressing that even short walks inside the Vault exhausted him and left him blistered; Chapter 3 reintroduces him through Vel's inspection of the same ruined-road incompetence; then Chapter 4 opens by again comparing the current climb to the tiny distances he walked in the Vault and restating his 286 count and fourteen lost levels: snapshots/cycle_02/FINAL_NOVEL.md:294; snapshots/cycle_02/FINAL_NOVEL.md:346; snapshots/cycle_02/FINAL_NOVEL.md:407; snapshots/cycle_02/FINAL_NOVEL.md:433; snapshots/cycle_02/FINAL_NOVEL.md:740; snapshots/cycle_02/FINAL_NOVEL.md:748.",
+      "problem": "By the start of Chapter 4, the window has used the same opening rhythm three times: Kem's preserved body meets ordinary road hardship, the text restates how unready he is, and only then does the chapter advance. That repetition dulls the acceleration the new pursuit chapter should generate.",
+      "rewrite_direction": "Compress or cut the top-of-chapter recap in Chapter 4 and enter faster through what has changed overnight: the new partnership terms, the altered terrain, or immediate signs of pursuit. Let the reader arrive already carrying Kem's baseline incompetence from Chapters 2 and 3.",
+      "acceptance_test": "Chapter 4 differentiates its opening from Chapters 2 and 3 by foregrounding a fresh problem within the first page, without another full recap of Kem's Vault conditioning, blisters, and current level total.",
+      "fix_owner_reason": "The later chapter owns the repetition because Chapter 4 is where reinforcement turns into drag; by this point the reader has already absorbed the same orientation beat twice."
+    }
+  ]
+}

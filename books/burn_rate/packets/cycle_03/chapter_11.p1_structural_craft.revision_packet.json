@@ -1,0 +1,150 @@
+{
+  "acceptance_targets": [
+    "[shape_of_metaphor_tic_chapter_11] Pass if the revised material now follows the rewrite direction and no longer exhibits the described defect. Fail if a cold reader would still identify the same underlying problem.",
+    "[R03] Ch11 references Dren's arm injury no more than twice, and neither reference re-describes the scar's physical appearance in terms already shown during Ch9.",
+    "[C01] The retrospective level-count at Ch11 line 4973 uses numbers that match the established spend-by-spend tracking from prior chapters.",
+    "[LW05-002] A reader can track the elapsed time from leaving Thessa's settlement, to reaching the bridge, to the first night south of the river, to 'two days after the river' without inventing unseen days or recalculating the sequence.",
+    "[length_chapter_11_min_words] Chapter word count is >= 5000 while preserving heading contract."
+  ],
+  "aggregation_applied": {
+    "decisions_file": "packets/cycle_03/aggregation_decisions.json",
+    "decisions_sha1": "9ff43bf06ed189d3e193643a756de41e798487c6"
+  },
+  "chapter_id": "chapter_11",
+  "cycle": 3,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if the revised material now follows the rewrite direction and no longer exhibits the described defect. Fail if a cold reader would still identify the same underlying problem.",
+      "chapter_id": "chapter_11",
+      "cycle": 3,
+      "evidence": "Line 4843: 'but the shape of the words carried'",
+      "finding_id": "shape_of_metaphor_tic_chapter_11",
+      "problem": "Formula applied to sound carrying across a river; the physical acoustics of shouting over water could be rendered more specifically than through an abstract 'shape' metaphor.",
+      "rewrite_direction": "Audit all eleven instances. Retain at most three where the formula does genuine work: line 5564's contrastive pair ('Not the shape of a hope. The shape of a requirement.') earns its repetition through deliberate parallelism; line 8602's physical usage ('The shape of the world started to slip') may be defensible as literal description at the threshold moment. Replace the remaining instances with constructions native to their scene: physical metaphors, Ledger-vocabulary substitutions, or direct statement. In Chapter 13, reduce from three instances to at most one. Ensure no replacement phrase introduces a new recurring template.",
+      "severity": "MEDIUM",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch11 references Dren's arm injury no more than twice, and neither reference re-describes the scar's physical appearance in terms already shown during Ch9.",
+      "chapter_id": "chapter_11",
+      "cycle": 3,
+      "evidence": "Ch9 lines 3831-3867: full stitching scene showing wound creation and Kem's bad stitches in real time; Ch11 line 4767: 'His left arm moved carefully. The silo wound had healed into a knotted ridge of scar that pulled tight when he extended the elbow, Kem's inexpert stitches leaving puckered seams in the skin like a badly mended seam in leather. The arm worked, but not easily.'; also Ch11 lines 4789 and 4793 describe the scar again.",
+      "finding_id": "R03",
+      "problem": "Ch11 line 4767 provides a full physical re-inventory of Dren's scar just two chapters after the reader watched every stitch go in during Ch9. The 'knotted ridge', 'puckered seams', 'inexpert stitches', and 'badly mended seam' are all information the reader holds from the stitching scene. Additionally, lines 4789 and 4793 in the same chapter describe the scar twice more.",
+      "rewrite_direction": "At line 4767, reduce the scar description to a single functional detail (e.g., 'the arm that wouldn't straighten'). Cut or compress the two additional scar references at lines 4789 and 4793 to at most one brief touch.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "The retrospective level-count at Ch11 line 4973 uses numbers that match the established spend-by-spend tracking from prior chapters.",
+      "chapter_id": "chapter_11",
+      "cross_chapter_context": "Kem's canonical level trail for the retrospective: 225 at Spent Towns entry (Ch7 line 2911), 183 after the silo fight (Ch8), 160 after Thessa's settlement escape (Ch10, losing 23 levels on defensive abilities), then additional incidental spending between Ch10 and Ch12. The Ch11 retrospective at line 4973 must use these correct numbers. The sequence '166 -> 160 -> 148' is wrong at every anchor point.",
+      "cycle": 3,
+      "evidence": "Ch7 line 2911: 'His Ledger pulsed at the edge of his awareness: 225.'; Ch11 line 4973: 'One hundred and sixty-six when they'd entered the Spent Towns. One hundred and sixty after the escape. One hundred and forty-eight now.'",
+      "finding_id": "C01",
+      "problem": "Ch11 line 4973 states Kem was at level 166 when entering the Spent Towns. The canonical and manuscript-established value is 225 (Ch7 line 2911). The number 166 does not correspond to any tracked spending event. The sequence '166 \u2192 160 \u2192 148' at line 4973 implies only 6 levels were spent during the escape from Thessa's settlement, but the spend-by-spend accounting in Ch10 shows a much larger drop from 183 (post-silo fight) to 160.",
+      "rewrite_direction": "Correct line 4973. Replace 'One hundred and sixty-six when they'd entered the Spent Towns' with the canonical Spent Towns entry level (225) or, if the retrospective is meant to reference a different milestone, use the correct level for that point (e.g., 183 before the Ch10 escape). Verify the arithmetic of the three-number descent described in this passage.\n\nAggregator guidance:\n- Canonical choice [kem_spent_towns_level]: 225. Grounding: Ch7 line 2911 manuscript establishment. Corroborated by the continuity sheet spend trail: 300 (birth) -> 288 (Ch2 departure waste) -> 286 (pre-Ch4) -> 245 (Ch4 combat) -> 225 (Ch7 Spent Towns entry). The number 166 at Ch11 line 4973 does not correspond to any tracked spending event.",
+      "severity": "HIGH",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "A reader can track the elapsed time from leaving Thessa's settlement, to reaching the bridge, to the first night south of the river, to 'two days after the river' without inventing unseen days or recalculating the sequence.",
+      "chapter_id": "chapter_11",
+      "cross_chapter_context": "Ch12 opens with 'Two days after the river' as its first temporal marker. Any fix to Ch11's timeline arithmetic \u2014 whether changing '5 days since Thessa's kitchen' to 3 or inserting an explicit 2-day travel skip \u2014 must ensure Ch12's 'two days after the river' still lands on a coherent calendar when read consecutively.",
+      "cycle": 3,
+      "evidence": "snapshots/cycle_03/FINAL_NOVEL.md:4953",
+      "finding_id": "LW05-002",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:4953",
+            "excerpt": "4953: Five days since Thessa's kitchen, and the question still sat where it had landed. Was Vel teaching him to judge for himself, or building the kind of man she needed? Both possibilities fit too neatly to let the matter rest.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "pass_hint": "p1_structural_craft",
+      "problem": "Chapter 11 opens by placing the bridge three days after leaving Thessa's settlement, then later says it has been five days since Thessa's kitchen even though the chapter only shows the same-day river crossing and aftermath. Chapter 12's own 'Two days after the river' marker makes the five-day count read like it belongs later, so the local travel clock slips exactly where the reader has been primed to track Thessa's 'three days south' challenge.",
+      "rewrite_direction": "Either change the later chapter 11 count to three days since Thessa's kitchen, or insert an explicit two-day travel skip between the river aftermath and that reflection if five days is intended. Then confirm chapter 12's post-river timing still lands on the same calendar.",
+      "severity": "HIGH",
+      "source": "local_window",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Chapter word count is >= 5000 while preserving heading contract.",
+      "chapter_id": "chapter_11",
+      "cycle": 3,
+      "evidence": "snapshots/cycle_03/chapters/chapter_11.md:1",
+      "finding_id": "length_chapter_11_min_words",
+      "problem": "Chapter is below projected_min_words (4929 < 5000).",
+      "rewrite_direction": "Add causally necessary scene material that strengthens the chapter engine, increases pressure, and lands the planned state shift without filler.",
+      "severity": "HIGH",
+      "source": "length_guardrail",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "has_locator_excerpts": true,
+  "input_snapshot_hash": "3c1a380010ceb241b6640332df72d3a590d2cf53d335f0e367ec64b3c057e4dd",
+  "must_fix_count": 5,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness.",
+    "Do not open a chapter by restating information the reader received at the end of the previous chapter. Each chapter must begin with forward motion, a new development, or at most a single brief orienting clause before advancing. Travel summaries, logistics recaps, and re-explanations of the prior chapter's final state are revision targets, not opening strategies.",
+    "Each chapter should contain no more than 20 hand/palm/finger references. Keep only load-bearing instances where hands perform a specific, non-substitutable action (holding a specific object, performing a skill, a hand-specific injury). Replace atmospheric and habitual hand references with varied body parts: posture, jaw, shoulders, feet, weight shift, breathing, gaze. Do not replace hand references with another single substitute that creates a new tic.",
+    "Retain at most three 'the shape of [abstract noun]' constructions across the entire manuscript. Specifically retain: (1) Ch13 line 5564's contrastive pair ('Not the shape of a hope. The shape of a requirement.') which earns its repetition through deliberate parallelism, and (2) Ch18 line 8602's 'The shape of the world started to slip' which may be defensible as literal threshold description. Replace all other instances with constructions native to their scene: physical metaphors, Ledger-vocabulary substitutions, or direct statement. No replacement phrase should introduce a new recurring template.",
+    "Do not re-describe the physical appearance of a character, object, or location that has already been established in an earlier chapter, unless the re-description serves a genuinely new narrative function: a materially changed physical state (new injury, visible deterioration), a unique institutional perspective that reframes the detail, or a plot-driving reaction to the detail. On reappearance, use a brief reference or a single new observation rather than a full visual re-inventory. Trust the reader's memory across chapter boundaries."
+  ],
+  "original_snapshot_file": "snapshots/cycle_03/chapters/chapter_11.md",
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This is a dark comedy about a world where doing nothing is rational and doing something is self-destruction. Both the comedy and the darkness must be fully committed. Do not soften combat into choreography or spectacle \u2014 fights should hurt, cost real things, and leave damage. Do not soften the comedy into gentle satire \u2014 the absurdity of the Hoarded and their agents should be genuinely funny, sometimes cruelly so. Do not soften grief into sentimentality or revelation into epiphany. The premise demands a tonal register that holds absurdity and genuine pain in the same hand. When the material is uncomfortable \u2014 the physical reality of injury, the moral weight of exploitation, the specific grief of losing someone to a place you cannot reach \u2014 lean into specificity rather than retreating to safety. A draft that never risks anything produces a novel that never moves anyone.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism in combat, injury, consequence, or emotional extremity is a craft failure. If Vel breaks ribs, the reader should feel the break \u2014 the specific wrongness of breathing with cracked bone, the way she holds herself, the pain when she forgets. If Kem is terrified, the terror should be specific and physical: hands, stomach, breathing, the precise quality of his fear. Do not abstract away from embodied experience into summary or generalization.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for all characters except Sable (low) and early-book Kem (initially low, shifting to high). Uncontracted forms are reserved for deliberate emphasis, formal Hoarded speech contexts, or bureaucratic register. In casual conversation, unjustified full-form lines should be treated as suspect.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Vary chapter rhythm aggressively. Combat chapters should be compressed and physical. Discovery chapters should have more room for observation and the surprise of new information. Quiet chapters should breathe \u2014 longer scenes, more sensory detail, conversations that circle rather than drive. Intercut chapters (like Ch 11's Kem/Sable split and Ch 17's Sable intercut) should have contrasting textures between sections. No two consecutive chapters should have the same structural shape: vary scene count, dialogue density, pacing, and the ratio of action to interiority. Dark comedy chapters in the back half (Ch 12, 14, 15, 17) must commit fully to comic energy as a primary narrative mode: the absurdity of Hoarded bureaucratic language applied to human exploitation, the grim humor of fighting for your life with single-digit levels, the comedy of precision teamwork performed in emotional silence. These chapters carry genuine stakes alongside their comedy \u2014 the tonal fusion is the point, not tonal alternation.",
+      "diction": "Concrete, physical, occasionally wry. Avoids both literary pretension and genre cliche. The world has its own vocabulary (Hoarded, Spent, Ledger, Stillness, the Scour, the Margins) and these terms should be used naturally, not defined in exposition. Metaphors earned from the world's own materials \u2014 spending, counting, weight, erosion \u2014 rather than imported from outside the setting. The Hoarded institutional register \u2014 bureaucratic classifications, procedural euphemism, administrative language applied to human exploitation \u2014 is a specific comic instrument in the Margins chapters. When rendering Hoarded documents, policies, or institutional speech, the language should be precise, procedural, and devastating in its indifference.",
+      "forbidden_drift_patterns": [
+        "Narrator-as-comedian: comedy arises from situation and character, not from narrative commentary or winking asides to the reader",
+        "Ability-use described like video game tooltips: do not produce stat readouts or system notifications in prose",
+        "Emotional temperature permanently at maximum: not every scene is a crisis and not every internal moment is an epiphany",
+        "Generic fantasy description: landscape, architecture, and weather must be specific to this world's conditions, not recycled from the fantasy-prose commons",
+        "Competence porn: do not let characters be consistently impressive \u2014 they should fumble, miscalculate, and fail at things that are hard",
+        "Thematic underlining: the prose should not highlight its own meanings or signal when something is symbolically significant"
+      ],
+      "narrative_distance": "Close third-person limited, shifting with the POV character. Vel chapters are compressed and physical \u2014 the prose should feel like it is counting. Kem chapters are more expansive and curious \u2014 the prose has more room for observation and surprise. Sable chapters are structured and institutional, loosening as she changes. The POV break in Ch 13\u201314 (two consecutive Kem chapters) should make Vel's absence felt: the reader is locked inside Kem's betrayed perspective, and the prose should reflect the claustrophobia of a mind cycling through anger without access to the other person's interiority. The distance should be intimate enough to access characters' internal arithmetic but not so close it becomes stream-of-consciousness.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Varied by chapter texture and scene pressure. Short declarative sentences in combat. Longer, conditional, clause-heavy sentences in reflection. Comma-heavy run-ons in panic or exhilaration. The Ledger's arithmetic should bleed into prose rhythm during ability-use moments \u2014 characters counting, weighing, calculating. Quiet chapters should breathe. Action chapters should compress. Two consecutive chapters should not share the same dominant rhythm.",
+      "sensory_bias": [
+        "proprioceptive awareness \u2014 the body's internal sense of position, strain, damage, and capacity",
+        "physical weight and effort \u2014 characters feel gravity, distance, fatigue",
+        "the Ledger's feedback \u2014 a character's awareness of their remaining levels as a persistent background sensation",
+        "environmental specificity \u2014 terrain, weather, architecture rendered through what a body encounters"
+      ]
+    }
+  }
+}

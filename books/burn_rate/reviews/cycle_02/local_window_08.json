@@ -1,0 +1,78 @@
+{
+  "cycle": 2,
+  "window_id": "window_08",
+  "chapters_reviewed": [
+    "chapter_15",
+    "chapter_16",
+    "chapter_17",
+    "chapter_18"
+  ],
+  "summary": "Dominant failure: the window's travel clock and climax handoff do not read cleanly back-to-back. Chapter 17 also over-explains the mechanical solution, so chapter 18 arrives with less uncertainty than the preceding buildup promises.",
+  "findings": [
+    {
+      "finding_id": "LW08-001",
+      "category": "pre_scan",
+      "subcategory": "chronology_gap",
+      "severity": "HIGH",
+      "chapter_id": "chapter_15",
+      "related_chapter_ids": [
+        "chapter_16",
+        "chapter_17"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "Chapter 15 closes with Sable estimating \"Three hours to the Scour if the road held\" at snapshots/cycle_02/FINAL_NOVEL.md:3664. Chapter 16 then opens \"Two days after Sable walked out of the farmhouse\" with Vel's group still \"about two days before the basin\" at snapshots/cycle_02/FINAL_NOVEL.md:3671, and later repeats \"There were two more days in it\" at snapshots/cycle_02/FINAL_NOVEL.md:3911.",
+      "problem": "The farmhouse-to-Scour clock stops making physical sense at the boundary. On consecutive reading, the reader cannot tell whether chapter 15's estimate is wrong, the chapter 16 loop is implausibly longer than the direct route, or the geography has silently shifted.",
+      "rewrite_direction": "Choose one travel geometry and state it cleanly. Either revise chapter 15's closing estimate to a distance compatible with the later detour, or explicitly anchor why Sable's route and travel time are radically shorter than Vel, Kem, and Dren's from the same departure point.",
+      "acceptance_test": "A reader can move from chapter 15 into chapter 16 and explain, without inference gymnastics, how far the farmhouse is from the Scour and why Sable and the trio arrive on different clocks.",
+      "fix_owner_reason": "Chapter 15 plants the incompatible three-hour clock, so the earlier chapter owns the repair even though the contradiction becomes obvious at the next boundary."
+    },
+    {
+      "finding_id": "LW08-002",
+      "category": "information_flow",
+      "subcategory": "overdetermined_payoff",
+      "severity": "HIGH",
+      "chapter_id": "chapter_17",
+      "related_chapter_ids": [
+        "chapter_18"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "Osen already tells Kem the site is degraded and that \"more energy improves any mechanism\" at snapshots/cycle_02/FINAL_NOVEL.md:4028 and snapshots/cycle_02/FINAL_NOVEL.md:4044. The Sable intercut then states the exact answer, \"Three-contributor minimum recommended for stable threshold event,\" and reduces the situation to \"Vel and Kem were two. Sable was three hours away\" at snapshots/cycle_02/FINAL_NOVEL.md:4102 and snapshots/cycle_02/FINAL_NOVEL.md:4104. Chapter 18 resolves the climax exactly that way when Sable's seven levels stabilize the tear at snapshots/cycle_02/FINAL_NOVEL.md:4353.",
+      "problem": "Chapter 17 solves the climax for the reader before chapter 18 begins. Once the text states the precise contributor count and Sable's approach, the threshold sequence stops being uncertain and becomes a wait for the promised third term to arrive.",
+      "rewrite_direction": "Keep the degradation reveal, but remove the exact algebra from the Sable intercut or delay it until the threshold starts failing in chapter 18. Sable can be moving south without the prose announcing the precise number the climax requires.",
+      "acceptance_test": "At the end of chapter 17, the reader understands that the odds worsened and Sable is in motion, but cannot predict the exact mechanical solution to chapter 18 in a single sentence.",
+      "fix_owner_reason": "The setup chapter owns this because it over-specifies the payoff and flattens the next chapter's suspense before that chapter gets to earn it."
+    },
+    {
+      "finding_id": "LW08-003",
+      "category": "redundant_scene_functions",
+      "subcategory": "restaged_cover_stalemate",
+      "severity": "HIGH",
+      "chapter_id": "chapter_18",
+      "related_chapter_ids": [
+        "chapter_17"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "Chapter 17 ends with Vel and Kem sprinting from the tunnel to a small rock shelf while Osen calls, \"You can't make it work. It's not enough anymore\" at snapshots/cycle_02/FINAL_NOVEL.md:4190 and snapshots/cycle_02/FINAL_NOVEL.md:4200. Chapter 18 then opens after an off-page three-hour summary with them again pinned behind inadequate cover, still at twelve and eight, under the same strategic condition at snapshots/cycle_02/FINAL_NOVEL.md:4205 and snapshots/cycle_02/FINAL_NOVEL.md:4209.",
+      "problem": "The boundary stages the same beat twice: exposed run, insufficient cover, commander warning, no meaningful level change. That repetition blunts the cliff and makes the climax feel as if it restarts instead of accelerates.",
+      "rewrite_direction": "Either end chapter 17 earlier, before the first scramble to cover, or open chapter 18 on the first decisive change after that moment: a spend, a casualty, a broken line, or the threshold point suddenly becoming reachable.",
+      "acceptance_test": "Turning from chapter 17 to chapter 18 produces immediate forward movement with a materially changed tactical state, not another version of the same pinned-behind-rock stalemate.",
+      "fix_owner_reason": "The later chapter owns the redundant restaging because it reopens on a near-duplicate tactical pose instead of advancing the handoff."
+    },
+    {
+      "finding_id": "LW08-004",
+      "category": "character_decision_coherence",
+      "subcategory": "unanchored_knowledge_reveal",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_17",
+      "related_chapter_ids": [
+        "chapter_15"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "In the farmhouse, Sable frames her help as \"There are two things you need before dark\" and gives the Red Reserve and permanent garrison brief at snapshots/cycle_02/FINAL_NOVEL.md:3616 and snapshots/cycle_02/FINAL_NOVEL.md:3626. Chapter 17 later reveals that she has access to a specialist report whose key line is the actual threshold condition at snapshots/cycle_02/FINAL_NOVEL.md:4102.",
+      "problem": "Because the later chapter never places when Sable learned the specialist report, the boundary makes her chapter 15 briefing read selectively incomplete. On consecutive reading, the reader has to stop and ask whether she discovered this afterward or simply withheld the most important Scour fact.",
+      "rewrite_direction": "Timestamp the report discovery on the page. Either add a beat in chapter 15 or early chapter 17 that she has not yet cracked the threshold files, or show her realizing after the farmhouse that she failed to warn them about the degraded site.",
+      "acceptance_test": "A reader can say when Sable learned the three-contributor information and no longer has to invent a reason she omitted it during the farmhouse warning.",
+      "fix_owner_reason": "The apparent inconsistency is created by chapter 17's unanchored reveal, so the later chapter owns the clarification even if the farmhouse scene remains unchanged."
+    }
+  ]
+}

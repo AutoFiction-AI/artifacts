@@ -1,0 +1,32 @@
+{
+  "chapter_id": "chapter_17",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH17_PROSE_CLIPPED_FRAGMENT_TIC",
+      "source": "prose",
+      "severity": "HIGH",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_02/chapters/chapter_17.md:3; snapshots/cycle_02/chapters/chapter_17.md:5; snapshots/cycle_02/chapters/chapter_17.md:47; snapshots/cycle_02/chapters/chapter_17.md:67; snapshots/cycle_02/chapters/chapter_17.md:195; snapshots/cycle_02/chapters/chapter_17.md:215",
+      "problem": "The chapter repeatedly falls into clipped, article-stripped narration patterns (\"Not a gust but a condition,\" \"A wound,\" \"Not shouted. Carried.,\" \"Tight turns. Worn stone.,\" \"Not night. Underground dark.,\" \"No way back.\") that read like mechanical punch-up rather than controlled close-third compression. Because the constitution explicitly forbids elliptical clipping in narration, the recurrence stops feeling like pressure-sharpened style and starts feeling like autopilot.",
+      "rewrite_direction": "Revise the fragment-heavy spans at snapshots/cycle_02/chapters/chapter_17.md:3-5, snapshots/cycle_02/chapters/chapter_17.md:47-49, snapshots/cycle_02/chapters/chapter_17.md:67-69, snapshots/cycle_02/chapters/chapter_17.md:195-199, and snapshots/cycle_02/chapters/chapter_17.md:213-215 into grammatically complete sentences that stay inside Kem's perception. Keep the compression, heat, and shock, but remove subjectless/article-stripped scaffolds unless the line is an isolated level count.",
+      "acceptance_test": "In the revised versions of snapshots/cycle_02/chapters/chapter_17.md:3-5, snapshots/cycle_02/chapters/chapter_17.md:47-49, snapshots/cycle_02/chapters/chapter_17.md:67-69, snapshots/cycle_02/chapters/chapter_17.md:195-199, and snapshots/cycle_02/chapters/chapter_17.md:213-215, every sentence is grammatically complete except isolated level-count callouts such as \"Twelve.\" At least four of the cited clipped constructions are replaced with full sentences that preserve the same sensory facts and pressure."
+    },
+    {
+      "finding_id": "CH17_CRAFT_REPEATED_THRESHOLD_CERTIFICATION",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_17",
+      "evidence": "snapshots/cycle_02/chapters/chapter_17.md:97; snapshots/cycle_02/chapters/chapter_17.md:105; snapshots/cycle_02/chapters/chapter_17.md:135; snapshots/cycle_02/chapters/chapter_17.md:153; snapshots/cycle_02/chapters/chapter_17.md:169; snapshots/cycle_02/chapters/chapter_17.md:171; snapshots/cycle_02/chapters/chapter_17.md:267; snapshots/cycle_02/chapters/chapter_17.md:269",
+      "problem": "Osen's briefing lands the chapter's major turn cleanly, but the back half keeps re-certifying the same point that two contributors are no longer enough. Vel and Kem restate it, the Sable intercut certifies it again with the report language, and the chapter ends on Osen repeating the warning. That produces structural recurrence and overstatement where later beats feel like confirmation of the reveal instead of a fresher escalation built from it.",
+      "rewrite_direction": "Once the reveal has landed in snapshots/cycle_02/chapters/chapter_17.md:97-117, compress the explanatory restatement in snapshots/cycle_02/chapters/chapter_17.md:135-161 and rework snapshots/cycle_02/chapters/chapter_17.md:165-177 and snapshots/cycle_02/chapters/chapter_17.md:241-269 so each section buys new dramatic work rather than another phrasing of the same arithmetic. Options that would solve it: let Sable's intercut pivot on a concrete risk, delay, or spend decision instead of mainly the remembered report; give the basin-floor sequence an irreversible tactical loss, injury, separation, or spent resource; or end on a changed operational fact rather than Osen restating that it is not enough.",
+      "acceptance_test": "After the revised version of snapshots/cycle_02/chapters/chapter_17.md:117, each remaining section must add at least one new dramatic element beyond the already-established fact that two contributors may fail: snapshots/cycle_02/chapters/chapter_17.md:135-177 must contain either a new decision with visible cost or a materially new fact, and snapshots/cycle_02/chapters/chapter_17.md:241-269 must end on a tactical change, loss, or irreversible consequence. The ending fails if it can still be paraphrased as another version of Osen's earlier warning."
+    }
+  ],
+  "summary": "The chapter strongly renders the Scour, keeps the level arithmetic legible, and gives Osen enough specificity to avoid pure-function exposition; it also stays consistent with the continuity sheet and the style bible's past-tense requirement. It still falls below pass level overall because the prose leans repeatedly on banned clipped-fragment scaffolds, and the second half keeps restating the degraded-threshold revelation instead of converting that information into a more distinct late-chapter escalation. Dialogue is the strongest lens and remains passable."
+}

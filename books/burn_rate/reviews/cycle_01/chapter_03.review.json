@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_03",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CRAFT_HIDDEN_MOTIVE_OVEREXPOSED",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:117; snapshots/cycle_01/chapters/chapter_03.md:118; snapshots/cycle_01/chapters/chapter_03.md:119; snapshots/cycle_01/chapters/chapter_03.md:139; snapshots/cycle_01/chapters/chapter_03.md:205; snapshots/cycle_01/chapters/chapter_03.md:321; snapshots/cycle_01/chapters/chapter_03.md:323",
+      "problem": "The chapter's central concealment is not actually concealed. Vel's private read on Kem jumps from 'his number matters' to a near-operational explanation of the threshold mechanics and her years-long search for exactly this kind of high-level spender. That turns a planned light plant of manipulation into explicit disclosure, so the alliance reads as already-decoded exploitation instead of an uneasy bargain whose full shape is still latent.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_03.md:117-121, keep Vel's bodily reaction to Kem's 286 but remove the direct explanation of cascade/threshold function. At snapshots/cycle_01/chapters/chapter_03.md:139-141 and snapshots/cycle_01/chapters/chapter_03.md:205-207, preserve that she is withholding consequential information from Kem without letting the narration fully specify the hidden plan. At snapshots/cycle_01/chapters/chapter_03.md:317-325, keep the closing pressure on his level count and her need to manage his spending, but cut the recap that names him as the long-sought solution to an eight-year problem.",
+      "acceptance_test": "PASS if snapshots/cycle_01/chapters/chapter_03.md:117-121, snapshots/cycle_01/chapters/chapter_03.md:139-141, snapshots/cycle_01/chapters/chapter_03.md:205-207, and snapshots/cycle_01/chapters/chapter_03.md:317-325 make it clear that Vel has a serious ulterior motive tied to Kem's remaining levels while withholding the operational details; FAIL if those spans still let a reader state from chapter 3 alone how Kem's descent affects the threshold or that Vel has spent years hunting a high-level co-spender."
+    },
+    {
+      "finding_id": "DIALOGUE_COMPOSED_NEGOTIATION_BEATS",
+      "source": "dialogue",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:155; snapshots/cycle_01/chapters/chapter_03.md:203; snapshots/cycle_01/chapters/chapter_03.md:267; snapshots/cycle_01/chapters/chapter_03.md:269; snapshots/cycle_01/chapters/chapter_03.md:285",
+      "problem": "Several negotiation beats resolve into polished thesis-speech instead of pressured talk: Kem gets balanced mini-arguments about commitment and disclosure, Vel lands a neat diagnostic line about the ring, and the narration then certifies that the line landed. Those sub-modes are individually small, but together they make parts of the chapter sound written-about rather than spoken-through.",
+      "rewrite_direction": "Roughen snapshots/cycle_01/chapters/chapter_03.md:151-156 and snapshots/cycle_01/chapters/chapter_03.md:199-207 so Kem's information demand arrives through self-correction, interruption, or plainer phrasing rather than cleanly balanced logic. Rework snapshots/cycle_01/chapters/chapter_03.md:267-269 so Vel still forces the ring admission, but the scene shows the impact through Kem's behavior instead of a neat maxim plus narrator verification. At snapshots/cycle_01/chapters/chapter_03.md:285, keep Kem's class-awareness beat without packaging it as a tidy thematic button.",
+      "acceptance_test": "PASS if snapshots/cycle_01/chapters/chapter_03.md:151-156 and snapshots/cycle_01/chapters/chapter_03.md:199-207 still establish Kem's disclosure condition, and snapshots/cycle_01/chapters/chapter_03.md:265-269 still force his admission about the ring, but none of the cited lines resolves into a balanced mini-speech, aphoristic diagnosis, or narration explaining that a line 'landed'; FAIL if those beats still read as polished argument or narrator-certified mic-drop dialogue."
+    },
+    {
+      "finding_id": "PROSE_CLIPPED_FRAGMENT_TIC",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_03",
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:17; snapshots/cycle_01/chapters/chapter_03.md:31; snapshots/cycle_01/chapters/chapter_03.md:53; snapshots/cycle_01/chapters/chapter_03.md:111; snapshots/cycle_01/chapters/chapter_03.md:117; snapshots/cycle_01/chapters/chapter_03.md:161",
+      "problem": "The narration keeps reaching for isolated emphasis fragments to hammer a beat: numbers, single nouns, and one-line declarations detached from full syntax. Used this often, the device stops feeling like pressure and starts feeling mechanical, and it runs against the constitution's ban on clipped narration.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_03.md:17, snapshots/cycle_01/chapters/chapter_03.md:31, snapshots/cycle_01/chapters/chapter_03.md:53, snapshots/cycle_01/chapters/chapter_03.md:111, snapshots/cycle_01/chapters/chapter_03.md:117, and snapshots/cycle_01/chapters/chapter_03.md:161, fold the emphatic fragments back into grammatically complete sentences or into adjacent clauses. Keep the compression and arithmetic pressure, but make syntax carry the emphasis instead of stand-alone fragment beats.",
+      "acceptance_test": "PASS if each cited span reads as complete narration rather than an isolated emphasis fragment, while the same numerical or conceptual pressure still lands through rhythm and diction; FAIL if three or more of those cited beats still rely on one- or two-word clipped narration as the primary emphasis device."
+    }
+  ],
+  "summary": "Chapter 3 has a strong core encounter and stays consistent with the supplied continuity, tense, and character baselines, but it still fails review. The main problem is craft: the chapter over-exposes Vel's concealed agenda instead of planting it lightly. On the line level, parts of the negotiation harden into polished thesis dialogue, and the prose leans too often on clipped emphasis fragments rather than cleaner compression."
+}

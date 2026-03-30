@@ -1,0 +1,80 @@
+{
+  "cycle": 1,
+  "window_id": "window_09",
+  "chapters_reviewed": [
+    "chapter_17",
+    "chapter_18",
+    "chapter_19"
+  ],
+  "summary": "Dominant failure: chapter 18 does not pick up cleanly from chapter 17, so the climax reads like a rewound assault with an impossible Sable arrival; chapter 19 then introduces a second elapsed-time contradiction at the aftermath handoff.",
+  "findings": [
+    {
+      "finding_id": "LW09-001",
+      "category": "factual_coherence",
+      "subcategory": "boundary_action_reset",
+      "severity": "CRITICAL",
+      "chapter_id": "chapter_18",
+      "related_chapter_ids": [
+        "chapter_17"
+      ],
+      "boundary_span": "chapter_17/chapter_18",
+      "counterpart_evidence": "snapshots/cycle_01/FINAL_NOVEL.md:4528; snapshots/cycle_01/FINAL_NOVEL.md:4550; snapshots/cycle_01/FINAL_NOVEL.md:4564",
+      "pass_hint": "p1_structural_craft",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:4617; snapshots/cycle_01/FINAL_NOVEL.md:4635; snapshots/cycle_01/FINAL_NOVEL.md:4647",
+      "problem": "Chapter 17 already has Vel and Kem emerge from the tunnel, start the open-ground run, advance hundreds of meters, and hear Osen address them in late-afternoon light. Chapter 18 then reopens as if that run has not happened yet: they are back behind cover at eight hundred meters, re-counting the board, and the sun is suddenly overhead. Read consecutively, the climax rewinds instead of continuing.",
+      "rewrite_direction": "Choose one canonical start point for the basin-floor assault. Either end chapter 17 before the tunnel exit and let chapter 18 own the run, or cut chapter 18's reset material and begin on the first genuinely new beat after chapter 17's endpoint, keeping distance, cover state, and light consistent.",
+      "acceptance_test": "A straight read from chapter 17 into chapter 18 preserves the same physical state. If the pair leaves chapter 17 already in the basin under late-afternoon pressure, chapter 18 begins from that same position or after an explicitly marked later beat rather than re-staging the opening.",
+      "fix_owner_reason": "Later chapter owns the boundary contradiction. Chapter 18 is where the assault gets rewound, so it must either continue chapter 17 cleanly or explicitly reposition the scene."
+    },
+    {
+      "finding_id": "LW09-002",
+      "category": "pre_scan",
+      "subcategory": "presence_continuity",
+      "severity": "CRITICAL",
+      "chapter_id": "chapter_18",
+      "related_chapter_ids": [
+        "chapter_17"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:4606; snapshots/cycle_01/FINAL_NOVEL.md:4612; snapshots/cycle_01/FINAL_NOVEL.md:4913; snapshots/cycle_01/FINAL_NOVEL.md:4915",
+      "problem": "Chapter 17 explicitly establishes Sable as three hours of descent away from the basin floor and potentially too late to matter, then chapter 18's continuous action has her reach the threshold in time to save Kem within what reads as minutes of that setup. The needed travel is never paid for on the page, so her essential arrival feels teleported rather than earned.",
+      "rewrite_direction": "Rescale one side of the handoff. Either shorten Sable's distance in chapter 17, insert a clear hours-later break before the threshold starts collapsing, or show a materially faster route or ability-assisted descent that lets her arrival track.",
+      "acceptance_test": "A reader can account for Sable's movement from ridgeline to threshold without doing repair math. The text either makes the elapsed hours explicit or makes the distance small enough that her arrival during the climax is physically plausible.",
+      "fix_owner_reason": "Later chapter owns the boundary contradiction unless the earlier chapter is clearly wrong. Chapter 18 depends on Sable's arrival payoff, so it needs to supply the missing travel bridge or force a revision to the prior setup."
+    },
+    {
+      "finding_id": "LW09-003",
+      "category": "factual_coherence",
+      "subcategory": "crossing_elapsed_time",
+      "severity": "CRITICAL",
+      "chapter_id": "chapter_19",
+      "related_chapter_ids": [
+        "chapter_18"
+      ],
+      "boundary_span": "chapter_18/chapter_19",
+      "counterpart_evidence": "snapshots/cycle_01/FINAL_NOVEL.md:4877; snapshots/cycle_01/FINAL_NOVEL.md:4947; snapshots/cycle_01/FINAL_NOVEL.md:4983",
+      "pass_hint": "p1_structural_craft",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:5010",
+      "problem": "Chapter 18 stages Vel and Kem crossing within the same threshold event and ends with them sitting together in the sub-Ledger immediately afterward. Chapter 19 then has Sera say Vel came through about four hours before Kem, which converts a seconds-apart crossing into an impossible multi-hour gap right at the handoff into aftermath.",
+      "rewrite_direction": "Change the intake-house exposition so the four-hour gap refers to waking or leaving, not crossing, or add an explicit blackout and transport sequence that truly separates their arrivals in time.",
+      "acceptance_test": "From Vel's crossing to Kem's recovery, the timeline reads one way. No line in chapter 19 should force the reader to reinterpret 'came through' as something other than the threshold crossing unless the intervening sequence is shown.",
+      "fix_owner_reason": "Later chapter owns the boundary contradiction. Chapter 19 introduces the impossible elapsed time in dialogue and should correct the line or add the missing sequence."
+    },
+    {
+      "finding_id": "LW09-004",
+      "category": "redundant_scene_functions",
+      "subcategory": "adjacent_battlefield_reorientation",
+      "severity": "HIGH",
+      "chapter_id": "chapter_18",
+      "related_chapter_ids": [
+        "chapter_17"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:4386; snapshots/cycle_01/FINAL_NOVEL.md:4402; snapshots/cycle_01/FINAL_NOVEL.md:4528; snapshots/cycle_01/FINAL_NOVEL.md:4566; snapshots/cycle_01/FINAL_NOVEL.md:4617; snapshots/cycle_01/FINAL_NOVEL.md:4625",
+      "problem": "The end of chapter 17 already performs the key setup function for the climax: four agents on the field, no cover, the threshold degraded, and Vel/Kem reduced to 8 and 12 levels. Chapter 18 opens by re-establishing the same tactical board and the same 'two might not be enough' math before the fight truly changes shape. Back-to-back, the pair spends two adjacent chapter openings on the same orientation work instead of escalating.",
+      "rewrite_direction": "Let the chapters divide labor cleanly. If chapter 17 keeps the parley, tunnel, and first open-ground commitment, strip chapter 18's opening down to changed leverage only. If chapter 18 needs the full board setup, cut chapter 17 earlier so it does not already spend that function.",
+      "acceptance_test": "Across the 17/18 boundary, the reader receives the agent layout, threshold degradation, and level arithmetic once. The next chapter then starts with a new pressure beat rather than another setup pass over the same field.",
+      "fix_owner_reason": "Weaker later chapter owns redundant re-orientation. Chapter 18 repeats setup work chapter 17 has already landed."
+    }
+  ]
+}

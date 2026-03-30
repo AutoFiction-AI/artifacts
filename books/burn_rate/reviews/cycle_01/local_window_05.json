@@ -1,0 +1,65 @@
+{
+  "cycle": 1,
+  "window_id": "window_05",
+  "chapters_reviewed": [
+    "chapter_09",
+    "chapter_10",
+    "chapter_11",
+    "chapter_12"
+  ],
+  "summary": "Dominant failure: the chapter_10/chapter_11 handoff loses track of both elapsed time and Kem's Ledger math. A smaller but persistent negation-and-correction sentence tic also flattens the otherwise varied textures across chapter_10 through chapter_12.",
+  "findings": [
+    {
+      "finding_id": "LW05-001",
+      "category": "pre_scan",
+      "subcategory": "chronology_gap",
+      "severity": "HIGH",
+      "chapter_id": "chapter_11",
+      "related_chapter_ids": [
+        "chapter_10"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2623, snapshots/cycle_01/FINAL_NOVEL.md:2687, snapshots/cycle_01/FINAL_NOVEL.md:2811",
+      "problem": "Chapter 11 opens at the river with no immediate time anchor after the high-heat escape from Thessa's settlement. The reader only learns much later that Kem has been using Strength boosts for 'the last three days' and that Thessa's accusation happened 'five days ago,' so the opening stretch plays in a temporal fog: it is unclear whether this is the next morning, several days later, or how Kem's off-page losses accumulated.",
+      "rewrite_direction": "Add a concrete elapsed-time marker in the first paragraph or two of Chapter 11, or at the end of Chapter 10, that states how long the group has been traveling since Thessa's settlement and what those intervening days have cost them.",
+      "acceptance_test": "A reader should know within the opening beat of Chapter 11 how much time has passed since Chapter 10 and should not need later retrospective clues to place Kem's physical fatigue, incidental spending, or emotional carryover from Thessa's reveal.",
+      "fix_owner_reason": "The later chapter owns this boundary problem: Chapter 11 withholds the time marker that its own later lines depend on."
+    },
+    {
+      "finding_id": "LW05-002",
+      "category": "factual_coherence",
+      "subcategory": "level_tracking",
+      "severity": "CRITICAL",
+      "chapter_id": "chapter_11",
+      "related_chapter_ids": [
+        "chapter_09",
+        "chapter_10"
+      ],
+      "boundary_span": "chapter_10/chapter_11",
+      "counterpart_evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2141, snapshots/cycle_01/FINAL_NOVEL.md:2604",
+      "pass_hint": "p1_structural_craft",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2821, snapshots/cycle_01/FINAL_NOVEL.md:2833",
+      "problem": "The Ledger arithmetic no longer reconciles across the boundary. Chapter 9 fixes Kem at 178, and Chapter 10 explicitly spends 18 levels to land him at 160. Chapter 11 then says he is at 148 because of 'Eighteen levels since the Spent Towns' on incidentals. But 160 to 148 is only 12 levels. In a novel where level accounting is the governing physics, this contradiction lands exactly where the book is trying to make arithmetic feel morally and structurally precise.",
+      "rewrite_direction": "Reconcile the running total on-page. Either change the Chapter 11 incidental total to 12, or revise the earlier explicit level/spend numbers so Chapter 11's summary math and current total both add up cleanly.",
+      "acceptance_test": "A reader can add Kem's explicit level statements and stated spends from Chapters 9 through 11 and arrive at the same current total the narration gives, with no hidden or contradictory subtraction.",
+      "fix_owner_reason": "The later chapter owns the contradiction because Chapter 11 is the place that states the incompatible summary math after earlier chapters have already fixed the prior totals."
+    },
+    {
+      "finding_id": "LW05-003",
+      "category": "cross_chapter_prose_patterns",
+      "subcategory": "negation_restatement_formula",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_11",
+      "related_chapter_ids": [
+        "chapter_10",
+        "chapter_12"
+      ],
+      "pass_hint": "p3_prose_copyedit",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:2330, snapshots/cycle_01/FINAL_NOVEL.md:2338, snapshots/cycle_01/FINAL_NOVEL.md:2763, snapshots/cycle_01/FINAL_NOVEL.md:2783, snapshots/cycle_01/FINAL_NOVEL.md:2871, snapshots/cycle_01/FINAL_NOVEL.md:2954",
+      "problem": "Across these consecutive chapters, the prose keeps landing on the same emphasis move: reject an initial description, then restate it more precisely ('Not blank. Vacant...', 'Not from fear...', 'Not hot - cold...', 'not pain and not loss...', 'Not clay-pale... chalk-pale'). Used across Vel, Kem, and Sable material back-to-back, the tic starts to flatten the chapter-to-chapter texture variance that should distinguish compressed Vel narration, more searching Kem narration, and Sable's institutional frame.",
+      "rewrite_direction": "Thin or recast several of the negation-then-correction sentences, especially at chapter openings and emotional pivots. Let some observations land directly so POV distinction comes from selection and rhythm, not the same repeated sentence mechanic.",
+      "acceptance_test": "Sampling the openings and major emotional turns of Chapters 10 through 12 should no longer produce a repeated 'not X, but Y' cadence across POVs; each chapter should feel distinct without leaning on the same corrective syntax.",
+      "fix_owner_reason": "This becomes a window-level problem because the later run of chapters repeats the same construction across multiple POVs. Chapter 11 is the point where the shared cadence becomes unmistakable, so the middle and later chapters should absorb the variation work."
+    }
+  ]
+}

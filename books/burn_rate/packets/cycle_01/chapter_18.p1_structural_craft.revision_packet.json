@@ -1,0 +1,279 @@
+{
+  "acceptance_targets": [
+    "[CRAFT_CONTINUITY_VEL_SPENDING_YEARS] Pass if `snapshots/cycle_01/chapters/chapter_18.md:31` no longer implies Vel has been spending since birth and instead matches the established fact that her first spend came at seventeen; fail if the line still equates her age with years spent.",
+    "[CRAFT_CONTINUITY_KEM_BODY_WEIGHT] Pass if `snapshots/cycle_01/chapters/chapter_18.md:149` reads as changed carriage, deadweight, or Vel's exhaustion without claiming Kem has become heavier than at story start; fail if the revised line still depends on literal weight gain or 'denser mass' logic.",
+    "[CRAFT_ACTION_ANNOTATES_ITSELF] Pass if a cold reader can still state what each spend accomplishes in the revised passages around `snapshots/cycle_01/chapters/chapter_18.md:39`, `snapshots/cycle_01/chapters/chapter_18.md:101`, and `snapshots/cycle_01/chapters/chapter_18.md:187`, but the scene no longer inserts separate explanatory paragraphs once the move itself has already landed; fail if the action still repeatedly halts to unpack training history or ability theory.",
+    "[CRAFT_SABLE_RESCUE_UNDERPREPARED] Pass if, before `snapshots/cycle_01/chapters/chapter_18.md:297`, the revised chapter gives at least one specific sign of a third actor nearing the basin and why she is still free to act, so `snapshots/cycle_01/chapters/chapter_18.md:301` reads as payoff; fail if Sable still materializes with no local staging.",
+    "[R017] Ch18 em-dash density below 10%.",
+    "[R056] Ch18 does not exceed 1.0 per 800 words for either pattern.",
+    "[LW09-001] A straight read from chapter 17 into chapter 18 preserves the same physical state. If the pair leaves chapter 17 already in the basin under late-afternoon pressure, chapter 18 begins from that same position or after an explicitly marked later beat rather than re-staging the opening.",
+    "[LW09-002] A reader can account for Sable's movement from ridgeline to threshold without doing repair math. The text either makes the elapsed hours explicit or makes the distance small enough that her arrival during the climax is physically plausible."
+  ],
+  "aggregation_applied": {
+    "decisions_file": "packets/cycle_01/aggregation_decisions.json",
+    "decisions_sha1": "880a450ac33b90efc1364a17207490490d407904"
+  },
+  "chapter_id": "chapter_18",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if `snapshots/cycle_01/chapters/chapter_18.md:31` no longer implies Vel has been spending since birth and instead matches the established fact that her first spend came at seventeen; fail if the line still equates her age with years spent.",
+      "chapter_id": "chapter_18",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_18.md:31",
+      "finding_id": "CRAFT_CONTINUITY_VEL_SPENDING_YEARS",
+      "problem": "Vel thinks eight levels are 'everything she had left of fifty-eight years of spending,' but the continuity sheet establishes she is 58 years old and made her first spend at seventeen. In a climax built around exact arithmetic, that misstates one of the book's core facts.",
+      "rewrite_direction": "Revise `snapshots/cycle_01/chapters/chapter_18.md:31` so the thought distinguishes between Vel's age and her spending history: roughly forty years of spending, or fifty-eight years of living with the Ledger and forty years of actually burning it.\n\nAggregator guidance:\n- Canonical choice [vel_spending_years]: Vel's spending career spans approximately 41 years (from her first spend at age 17 to her current age of 58). References to 'fifty-eight years of spending' must distinguish between her age and her active spending history.. Grounding: Continuity sheet: age_at_story_start is 58. Ch5 establishes her first spend (drowning girl) at seventeen. 58 minus 17 equals 41 years of spending.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if `snapshots/cycle_01/chapters/chapter_18.md:149` reads as changed carriage, deadweight, or Vel's exhaustion without claiming Kem has become heavier than at story start; fail if the revised line still depends on literal weight gain or 'denser mass' logic.",
+      "chapter_id": "chapter_18",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_18.md:149",
+      "finding_id": "CRAFT_CONTINUITY_KEM_BODY_WEIGHT",
+      "problem": "The narration says Kem is heavier than at the start of the journey because he has traded 'soft Hoarded weight' for 'denser mass.' That contradicts his established late-book state as leaner and harder, and the body-composition explanation is physically false on its own terms.",
+      "rewrite_direction": "Rewrite `snapshots/cycle_01/chapters/chapter_18.md:149` to convey what Vel actually feels: Kem as awkward deadweight, newly solid from using his body, or hard to lift because she is depleted and he is injured. Do not describe him as net heavier than he was at the Vault.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if a cold reader can still state what each spend accomplishes in the revised passages around `snapshots/cycle_01/chapters/chapter_18.md:39`, `snapshots/cycle_01/chapters/chapter_18.md:101`, and `snapshots/cycle_01/chapters/chapter_18.md:187`, but the scene no longer inserts separate explanatory paragraphs once the move itself has already landed; fail if the action still repeatedly halts to unpack training history or ability theory.",
+      "chapter_id": "chapter_18",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_18.md:39; snapshots/cycle_01/chapters/chapter_18.md:45; snapshots/cycle_01/chapters/chapter_18.md:89; snapshots/cycle_01/chapters/chapter_18.md:95; snapshots/cycle_01/chapters/chapter_18.md:101; snapshots/cycle_01/chapters/chapter_18.md:107; snapshots/cycle_01/chapters/chapter_18.md:187; snapshots/cycle_01/chapters/chapter_18.md:190",
+      "finding_id": "CRAFT_ACTION_ANNOTATES_ITSELF",
+      "problem": "The fight is legible, but the prose repeatedly stops after each major move to explain telegraphs, training principles, prior planning, or system logic. That keeps the climax intelligible at the cost of heat; instead of feeling trapped inside the run, the reader is repeatedly handed commentary about how the run works.",
+      "rewrite_direction": "Compress the explanatory blocks centered on `snapshots/cycle_01/chapters/chapter_18.md:39`, `snapshots/cycle_01/chapters/chapter_18.md:89`, `snapshots/cycle_01/chapters/chapter_18.md:101`, and `snapshots/cycle_01/chapters/chapter_18.md:187`. Keep only the pieces needed to track objective, cost, and immediate consequence, and fold the rest into action pressure or later aftermath rather than pausing the exchange to tutorialize it.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if, before `snapshots/cycle_01/chapters/chapter_18.md:297`, the revised chapter gives at least one specific sign of a third actor nearing the basin and why she is still free to act, so `snapshots/cycle_01/chapters/chapter_18.md:301` reads as payoff; fail if Sable still materializes with no local staging.",
+      "chapter_id": "chapter_18",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_18.md:279; snapshots/cycle_01/chapters/chapter_18.md:297; snapshots/cycle_01/chapters/chapter_18.md:301",
+      "finding_id": "CRAFT_SABLE_RESCUE_UNDERPREPARED",
+      "problem": "Sable is the correct structural third contributor, but within this chapter her arrival is invisible until the exact second the threshold needs her. Because the chapter never keeps her approach live on the page, the save reads as a just-in-time solution rather than pressure the scene has been actively managing.",
+      "rewrite_direction": "Before `snapshots/cycle_01/chapters/chapter_18.md:297`, add at least one concrete on-page cue that Sable is nearing from the ridgeline and why the Reserve has not already intercepted her: a distant figure on the descent, falling scree, a newly felt ability signature, or Reserve attention splitting. If you prefer not to seed her physically, make Vel and Kem buy the extra seconds themselves before `snapshots/cycle_01/chapters/chapter_18.md:301` so Sable's contribution lands as extension rather than rescue-from-nowhere.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch18 em-dash density below 10%.",
+      "chapter_id": "chapter_18",
+      "cycle": 1,
+      "evidence": "Ch18: 87 em-dash-containing prose lines out of 181 total = 48.1%.",
+      "finding_id": "R017",
+      "problem": "Ch18 (climax) has 87 em-dash lines \u2014 the highest absolute count. At 48.1% density, the climactic chapter's prose rhythm is dominated by interrupted clauses.",
+      "rewrite_direction": "Cut at least 69 of 87 em-dash uses. Climactic action benefits from shorter, cleaner sentences. Target: no more than 18 em-dash lines.",
+      "severity": "HIGH",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch18 does not exceed 1.0 per 800 words for either pattern.",
+      "chapter_id": "chapter_18",
+      "cycle": 1,
+      "evidence": "Ch18: 19 'something' in 6,819 words = 2.2/800; also 17 'the way' = 2.0/800.",
+      "finding_id": "R056",
+      "problem": "Ch18 (climax) exceeds threshold for both patterns.",
+      "rewrite_direction": "Replace at least 10 'something' and 8 'the way.' Climactic prose should be precise. Target: both below 1.0/800.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "A straight read from chapter 17 into chapter 18 preserves the same physical state. If the pair leaves chapter 17 already in the basin under late-afternoon pressure, chapter 18 begins from that same position or after an explicitly marked later beat rather than re-staging the opening.",
+      "chapter_id": "chapter_18",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:4617; snapshots/cycle_01/FINAL_NOVEL.md:4635; snapshots/cycle_01/FINAL_NOVEL.md:4647; Chapter 18 reopens with them back at \"Eight hundred meters of open ground; \" hiding before the run; and changes the light to \"the sun was directly overhead\": snapshots/cycle_01/FINAL_NOVEL.md:4617; snapshots/cycle_01/FINAL_NOVEL.md:4621; Chapter 17 already orients the reader to the threshold point; four-agent layout; and the bad math of twenty levels crossing open ground before the move begins: snapshots/cycle_01/FINAL_NOVEL.md:4530; snapshots/cycle_01/FINAL_NOVEL.md:4538; snapshots/cycle_01/FINAL_NOVEL.md:4556. Chapter 18 opens by restaging the same tactical inventory before finally launching the run: snapshots/cycle_01/FINAL_NOVEL.md:4617; snapshots/cycle_01/FINAL_NOVEL.md:4619; snapshots/cycle_01/FINAL_NOVEL.md:4623; snapshots/cycle_01/FINAL_NOVEL.md:4386; snapshots/cycle_01/FINAL_NOVEL.md:4402; snapshots/cycle_01/FINAL_NOVEL.md:4528; snapshots/cycle_01/FINAL_NOVEL.md:4566; snapshots/cycle_01/FINAL_NOVEL.md:4625",
+      "finding_id": "LW09-001",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:4617",
+            "excerpt": "4617: Eight hundred meters of open ground. Vel measured the distance the way she measured everything now \u2014 in what it would cost.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:4635",
+            "excerpt": "4635: Wind crossed the basin floor and dried the sweat on Vel's forearms. Summer at the Scour \u2014 the sun was directly overhead, the shadows small and tight beneath them. No cover past this shelf. No vegetation. Just open ground, layered rock, and four trained combatants who knew exactly what they were trying to do.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:4647",
+            "excerpt": "4647: \"Go,\" she said.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:4621",
+            "excerpt": "4621: Vel crouched behind a shelf of wind-cut rock that offered approximately nothing. The striated layers \u2014 ochre, gray, dark red \u2014 were beautiful in the way that geology was beautiful when you weren't trying to hide behind it. Eighteen inches of eroded sandstone between her and four people who had more levels in their morning warm-up routines than she had left in total.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:4530",
+            "excerpt": "4530: The threshold point was roughly eight hundred meters to the west. Kem couldn't see it. There was nothing to see \u2014 no marker, no altar, no monument. Just rock. The most important point in the geography of the Ledger world was an unmarked stretch of basin floor indistinguishable from every other stretch.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:4538",
+            "excerpt": "4538: \"Eight hundred meters,\" Vel said, breathing hard. The tunnel's demands, the spending, the heat \u2014 all of it compounding in a fifty-eight-year-old body that had been counting for forty years.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:4556",
+            "excerpt": "4556: Four hundred meters. The descent agents appeared at the base of the switchback, moving fast. The fidgeting one had stopped fidgeting. They fanned out west, covering the approach to the threshold point, cutting off the direct route.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:4619",
+            "excerpt": "4619: Four agents between her and the threshold point. The commander at the far end, standing exactly where Maren's route journal said the crossing happened, eight years ago. Two permanent garrison operatives spread across the basin floor to cover the eastern approach \u2014 their approach, because the tunnel had deposited them exactly where they'd planned, east of the Reserve's primary sight lines, and it had cost them everything they'd budgeted for stealth. The two freshly deployed agents, brought in for Kem, were cutting a wide arc from the garrison camp to close the flank.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:4623",
+            "excerpt": "4623: Kem was three meters to her left, pressed flat against the basin floor. His breathing was controlled. His eyes were moving \u2014 scanning the agent positions, tracking their approach vectors, doing the tactical assessment she'd taught him to do six weeks and two hundred and eighty-eight levels ago. He was at twelve. She was at eight. Between them, twenty levels. The commander alone had more than that in her suppression reserve.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:4386",
+            "excerpt": "4386: \"Then I need to tell you something, because I follow protocol and because I'd rather you understood the situation before we have to do this the hard way.\" She uncrossed her arms. \"The threshold has degraded.\"",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:4402",
+            "excerpt": "4402: \"More energy. More contributors. The specialist's report \u2014 which I wasn't supposed to read but I've been here five years and reading is what I do between patrols \u2014 said a three-person cascade would likely compensate. Three people descending toward zero in proximity, generating overlapping energy.\" She paused. \"The Council didn't share that assessment with me officially. They don't want me thinking about how to open the door. They want me thinking about how to keep it shut.\"",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:4528",
+            "excerpt": "4528: They came out of the tunnel into late-afternoon sun, and the basin floor hit them like a fist made of light and heat. Red-gray rock, wind-scoured to a polish, hot enough to feel through boot soles. The erosion channels carved shallow grooves across the floor \u2014 waist-high ridges of harder stone left standing between worn troughs, enough to crouch behind, not enough to hide behind. The air shimmered.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:4566",
+            "excerpt": "4566: \"You can't make it work.\" She didn't sound angry. She didn't sound triumphant. She sounded like someone stating a measured result. \"It's not enough anymore.\"",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:4625",
+            "excerpt": "4625: \"You heard her,\" Vel said. The commander's words from the parley were still in the air, heavy as the heat: the threshold had degraded. Two might not be enough. \"Two might not cut it.\"",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "pass_hint": "p1_structural_craft",
+      "problem": "Chapter 17 already has Vel and Kem emerge from the tunnel, start the open-ground run, advance hundreds of meters, and hear Osen address them in late-afternoon light. Chapter 18 then reopens as if that run has not happened yet: they are back behind cover at eight hundred meters, re-counting the board, and the sun is suddenly overhead. Read consecutively, the climax rewinds instead of continuing.",
+      "rewrite_direction": "Choose one canonical start point for the basin-floor assault. Either end Ch17 before the tunnel exit and let Ch18 own the entire run, or cut Ch18's reset material and begin on the first genuinely new beat after Ch17's endpoint. The current state is a literal spatial-temporal rewind: Ch17 has Vel and Kem emerge from the tunnel, advance hundreds of meters under late-afternoon light, and hear Osen address them at six hundred meters. Ch18 reopens with them behind cover at eight hundred meters, re-counting the board, with the sun suddenly overhead. Fix: distance to threshold, agent positions, cover state, light angle, and remaining levels must be continuous across the chapter break. Eliminate the battlefield briefing duplication \u2014 the reader should receive the agent layout, threshold degradation, and level arithmetic exactly once.",
+      "severity": "CRITICAL",
+      "source": "local_window",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "A reader can account for Sable's movement from ridgeline to threshold without doing repair math. The text either makes the elapsed hours explicit or makes the distance small enough that her arrival during the climax is physically plausible.",
+      "chapter_id": "chapter_18",
+      "cross_chapter_context": "Ch17 places Sable three hours of descent above the basin floor, explicitly noting this may be too late. Her arrival during Ch18's continuous climactic action must be physically plausible. Options: (1) reduce the distance in Ch17 \u2014 she is closer than three hours, or she can see a faster scree route that takes ninety minutes; (2) insert a clear hours-later break in Ch18 before the threshold sequence, so elapsed time accounts for her descent; (3) show Sable using ability-assisted speed (she is at 236, she can afford it) to descend faster. The solution must not violate the established geography or make Sable's arrival feel teleported.",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:4606; snapshots/cycle_01/FINAL_NOVEL.md:4612; snapshots/cycle_01/FINAL_NOVEL.md:4913; snapshots/cycle_01/FINAL_NOVEL.md:4915",
+      "finding_id": "LW09-002",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:4606",
+            "excerpt": "4606: She stood up. The rock below was three hours of descent \u2014 the switchback, or a secondary route she'd mapped from the ridgeline, a scree slope that was faster and less visible. Three hours. By then it might be over. By then the two people down there might have burned their remaining twenty levels and found out whether thirty percent was enough or whether the door stayed shut.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:4612",
+            "excerpt": "4612: She started walking down.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:4913",
+            "excerpt": "4913: Seven of them. A burst of raw ability energy poured into the threshold from the basin floor \u2014 not from Kem, not from the agents. From someone who'd arrived from the direction of the ridgeline.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:4915",
+            "excerpt": "4915: Sable Orm stood on the layered rock with her hands raised.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "pass_hint": "p1_structural_craft",
+      "problem": "Chapter 17 explicitly establishes Sable as three hours of descent away from the basin floor and potentially too late to matter, then chapter 18's continuous action has her reach the threshold in time to save Kem within what reads as minutes of that setup. The needed travel is never paid for on the page, so her essential arrival feels teleported rather than earned.",
+      "rewrite_direction": "Rescale one side of the handoff. Either shorten Sable's distance in chapter 17, insert a clear hours-later break before the threshold starts collapsing, or show a materially faster route or ability-assisted descent that lets her arrival track.",
+      "severity": "CRITICAL",
+      "source": "local_window",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "has_locator_excerpts": true,
+  "input_snapshot_hash": "6d12adabd5361e9ac47fbb559829fe34a949d08dc057be3ebaeba570fa03548c",
+  "must_fix_count": 8,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness.",
+    "After a scene has shown its meaning through dramatized action, dialogue, or concrete imagery, do not add narrator passages that explain, paraphrase, or certify that meaning in abstract language. If a paragraph can be removed without losing new information \u2014 and it exists only to restate what the scene has already proved \u2014 cut it. One sharpened summary beat per major scene movement is permissible if it adds genuine pressure or new information; a second sentence restating the same idea is not.",
+    "No dialogue line may reproduce or closely echo the wording, sentence structure, or cadence of any style-bible example line. Example lines are calibration-only \u2014 they demonstrate register and rhythm, not actual manuscript dialogue. When a draft line shares more than 40% of its phrasing or the same distinctive syntactic skeleton as an example line, it must be rewritten from scratch while preserving the character's voice profile constraints. This applies to all characters, including recalled or paraphrased dialogue from earlier chapters.",
+    "Under emotional or tactical pressure, no character may deliver a polished, balanced, quotable thematic diagnosis in dialogue. Accusation, confession, revelation, and argument should arrive through interruption, self-correction, partial articulation, concrete reference, or unfinished syntax rather than finished mini-speeches. If a dialogue line can be quoted cleanly out of context as a theme statement, it needs roughening. Characters should sound like they are thinking under pressure, not delivering prepared remarks.",
+    "The 'not X, not Y, but Z' or 'not X \u2014 Y' corrective-negation pattern may appear no more than twice per chapter across all prose and dialogue. When the pattern recurs beyond that limit, replace with direct statement, image, or a different syntactic shape. Each POV should render the negation-correction move through character-specific sensory logic if used at all.",
+    "Each chapter must keep em-dash-containing prose lines below 10% of total prose lines. When revising, prioritize cutting parenthetical asides and appositive interruptions that can be restructured as independent clauses or joined with commas, colons, or periods. Do not simply replace em-dashes with other punctuation mechanically \u2014 restructure the sentence so it does not need the interruption."
+  ],
+  "original_snapshot_file": "snapshots/cycle_01/chapters/chapter_18.md",
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This is a dark comedy about a world where doing nothing is rational and doing something is self-destruction. Both the comedy and the darkness must be fully committed. Do not soften combat into choreography or spectacle \u2014 fights should hurt, cost real things, and leave damage. Do not soften the comedy into gentle satire \u2014 the absurdity of the Hoarded and their agents should be genuinely funny, sometimes cruelly so. Do not soften grief into sentimentality or revelation into epiphany. The premise demands a tonal register that holds absurdity and genuine pain in the same hand. When the material is uncomfortable \u2014 the physical reality of injury, the moral weight of exploitation, the specific grief of losing someone to a place you cannot reach \u2014 lean into specificity rather than retreating to safety. A draft that never risks anything produces a novel that never moves anyone.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism in combat, injury, consequence, or emotional extremity is a craft failure. If Vel breaks ribs, the reader should feel the break \u2014 the specific wrongness of breathing with cracked bone, the way she holds herself, the pain when she forgets. If Kem is terrified, the terror should be specific and physical: hands, stomach, breathing, the precise quality of his fear. Do not abstract away from embodied experience into summary or generalization.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for all characters except Sable (low) and early-book Kem (initially low, shifting to high). Uncontracted forms are reserved for deliberate emphasis, formal Hoarded speech contexts, or bureaucratic register. In casual conversation, unjustified full-form lines should be treated as suspect.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Vary chapter rhythm aggressively. Combat chapters should be compressed and physical. Discovery chapters should have more room for observation and the surprise of new information. Quiet chapters should breathe \u2014 longer scenes, more sensory detail, conversations that circle rather than drive. Intercut chapters (like Ch 11's Kem/Sable split and Ch 17's Sable intercut) should have contrasting textures between sections. No two consecutive chapters should have the same structural shape: vary scene count, dialogue density, pacing, and the ratio of action to interiority. Dark comedy chapters in the back half (Ch 12, 14, 15, 17) must commit fully to comic energy as a primary narrative mode: the absurdity of Hoarded bureaucratic language applied to human exploitation, the grim humor of fighting for your life with single-digit levels, the comedy of precision teamwork performed in emotional silence. These chapters carry genuine stakes alongside their comedy \u2014 the tonal fusion is the point, not tonal alternation.",
+      "diction": "Concrete, physical, occasionally wry. Avoids both literary pretension and genre cliche. The world has its own vocabulary (Hoarded, Spent, Ledger, Stillness, the Scour, the Margins) and these terms should be used naturally, not defined in exposition. Metaphors earned from the world's own materials \u2014 spending, counting, weight, erosion \u2014 rather than imported from outside the setting. The Hoarded institutional register \u2014 bureaucratic classifications, procedural euphemism, administrative language applied to human exploitation \u2014 is a specific comic instrument in the Margins chapters. When rendering Hoarded documents, policies, or institutional speech, the language should be precise, procedural, and devastating in its indifference.",
+      "forbidden_drift_patterns": [
+        "Narrator-as-comedian: comedy arises from situation and character, not from narrative commentary or winking asides to the reader",
+        "Ability-use described like video game tooltips: do not produce stat readouts or system notifications in prose",
+        "Emotional temperature permanently at maximum: not every scene is a crisis and not every internal moment is an epiphany",
+        "Generic fantasy description: landscape, architecture, and weather must be specific to this world's conditions, not recycled from the fantasy-prose commons",
+        "Competence porn: do not let characters be consistently impressive \u2014 they should fumble, miscalculate, and fail at things that are hard",
+        "Thematic underlining: the prose should not highlight its own meanings or signal when something is symbolically significant"
+      ],
+      "narrative_distance": "Close third-person limited, shifting with the POV character. Vel chapters are compressed and physical \u2014 the prose should feel like it is counting. Kem chapters are more expansive and curious \u2014 the prose has more room for observation and surprise. Sable chapters are structured and institutional, loosening as she changes. The POV break in Ch 13\u201314 (two consecutive Kem chapters) should make Vel's absence felt: the reader is locked inside Kem's betrayed perspective, and the prose should reflect the claustrophobia of a mind cycling through anger without access to the other person's interiority. The distance should be intimate enough to access characters' internal arithmetic but not so close it becomes stream-of-consciousness.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Varied by chapter texture and scene pressure. Short declarative sentences in combat. Longer, conditional, clause-heavy sentences in reflection. Comma-heavy run-ons in panic or exhilaration. The Ledger's arithmetic should bleed into prose rhythm during ability-use moments \u2014 characters counting, weighing, calculating. Quiet chapters should breathe. Action chapters should compress. Two consecutive chapters should not share the same dominant rhythm.",
+      "sensory_bias": [
+        "proprioceptive awareness \u2014 the body's internal sense of position, strain, damage, and capacity",
+        "physical weight and effort \u2014 characters feel gravity, distance, fatigue",
+        "the Ledger's feedback \u2014 a character's awareness of their remaining levels as a persistent background sensation",
+        "environmental specificity \u2014 terrain, weather, architecture rendered through what a body encounters"
+      ]
+    }
+  }
+}

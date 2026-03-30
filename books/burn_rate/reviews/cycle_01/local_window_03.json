@@ -1,0 +1,65 @@
+{
+  "cycle": 1,
+  "window_id": "window_03",
+  "chapters_reviewed": [
+    "chapter_05",
+    "chapter_06",
+    "chapter_07",
+    "chapter_08"
+  ],
+  "summary": "The window escalates cleanly from trust-building to pursuit to contact, but it carries one arithmetic contradiction that undercuts the novel's core level bookkeeping, one cross-POV knowledge leak in chapter 8, and a repeated \"the specific ...\" sentence template that becomes audible when these chapters are read straight through.",
+  "findings": [
+    {
+      "finding_id": "LW03-001",
+      "category": "pre_scan",
+      "subcategory": "inconsistent_description",
+      "severity": "HIGH",
+      "chapter_id": "chapter_07",
+      "related_chapter_ids": [
+        "chapter_05",
+        "chapter_08"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:967 and snapshots/cycle_01/FINAL_NOVEL.md:1301 keep Vel at 28 after the outrider fight; snapshots/cycle_01/FINAL_NOVEL.md:1757, snapshots/cycle_01/FINAL_NOVEL.md:1759, and snapshots/cycle_01/FINAL_NOVEL.md:1761 suddenly imply she has spent roughly five levels since finding Kem and is now at 26-27; snapshots/cycle_01/FINAL_NOVEL.md:1792 and snapshots/cycle_01/FINAL_NOVEL.md:1920 return her to 28.",
+      "problem": "The window asks the reader to track level arithmetic as the story's governing cost system, then gives Vel two incompatible totals inside three chapters. Because chapters 5 and 8 agree while chapter 7 briefly revises her downward, the reader has to stop and repair the math by hand right before the southbound escalation.",
+      "rewrite_direction": "Choose one continuous Vel total and make the campfire exchange in chapter 7 match it. If Vel is meant to be at 28 through the Spent Towns, revise the \"five, give or take\" line and Kem's follow-up estimate; if she is meant to be lower, then chapter 5 and chapter 8 budget language need to be re-keyed to the lower number all the way through the fight setup.",
+      "acceptance_test": "A reader can move from chapters 5 to 8 without ever having to reconcile Vel's ledger manually: every on-page reference to her post-outrider total and chapter-8 starting budget points to the same number.",
+      "fix_owner_reason": "Chapter 7 owns the fix because its campfire arithmetic is the lone outlier against the surrounding compiled text; chapters 5 and 8 already agree on 28."
+    },
+    {
+      "finding_id": "LW03-002",
+      "category": "factual_coherence",
+      "subcategory": "pov_knowledge_leak",
+      "severity": "HIGH",
+      "chapter_id": "chapter_08",
+      "related_chapter_ids": [
+        "chapter_06"
+      ],
+      "boundary_span": "chapter_06/chapter_08",
+      "counterpart_evidence": "snapshots/cycle_01/FINAL_NOVEL.md:1360; snapshots/cycle_01/FINAL_NOVEL.md:1385; snapshots/cycle_01/FINAL_NOVEL.md:1486",
+      "pass_hint": "p1_structural_craft",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:1844 labels the gray-cloak attackers as \"Sable Orm's retrieval team,\" and snapshots/cycle_01/FINAL_NOVEL.md:2032 says the watcher walks back toward the five people she'd been assigned to lead.",
+      "problem": "Chapter 8 is in Vel-close narration, but those two beats import chapter-6-only information before Vel has any plausible way to know the observer's name or formal command role. That punctures viewpoint discipline and also softens the later notebook reveal, because the prose has already quietly told the reader who the absent sixth figure is.",
+      "rewrite_direction": "Keep the chapter-8 labels inside Vel's observable frame until she can genuinely identify Sable. Early references should stay at the level of \"five Hoarded agents\" and \"the woman watching them,\" with the leadership frame arriving only after recognition or later confirmation.",
+      "acceptance_test": "If chapter 8 is read after chapter 6, the reader never receives Sable-specific command information through Vel's narration before Vel herself could reasonably infer it from the scene.",
+      "fix_owner_reason": "The later chapter owns this boundary-local contradiction because chapter 8 is where close-third Vel suddenly starts carrying information established only in Sable's earlier POV."
+    },
+    {
+      "finding_id": "LW03-003",
+      "category": "cross_chapter_prose_patterns",
+      "subcategory": "formulaic_specificity",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "related_chapter_ids": [
+        "chapter_05",
+        "chapter_06"
+      ],
+      "pass_hint": "p3_prose_copyedit",
+      "evidence": "The same authorial scaffold repeats across the window: snapshots/cycle_01/FINAL_NOVEL.md:1165, snapshots/cycle_01/FINAL_NOVEL.md:1189, snapshots/cycle_01/FINAL_NOVEL.md:1389, snapshots/cycle_01/FINAL_NOVEL.md:1593, snapshots/cycle_01/FINAL_NOVEL.md:1595, and snapshots/cycle_01/FINAL_NOVEL.md:1629 all lean on \"the specific [quality] of...\" phrasing.",
+      "problem": "Read consecutively, the repeated \"the specific ...\" construction stops feeling like a precise sentence choice and starts reading like a shared authorial default. Because it appears in Vel, Sable, and Kem chapters alike, it blurs the voice separation this window otherwise works hard to maintain.",
+      "rewrite_direction": "Keep only the strongest instance or two and replace the others with plainer, character-specific observation. Vel can usually state the thing directly; Sable can route through institutional phrasing; Kem can name the feeling more naively or physically without the same template.",
+      "acceptance_test": "When chapters 5-8 are read in sequence, the phrase pattern no longer registers as a repeated frame across POVs, and no single chapter relies on the construction more than once.",
+      "fix_owner_reason": "Chapter 7 owns the cleanup because its three uses arrive after two earlier instances and are where the repetition becomes unmistakable at window scale."
+    }
+  ]
+}

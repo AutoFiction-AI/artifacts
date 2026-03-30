@@ -1,0 +1,79 @@
+{
+  "cycle": 1,
+  "window_id": "window_08",
+  "chapters_reviewed": [
+    "chapter_15",
+    "chapter_16",
+    "chapter_17",
+    "chapter_18"
+  ],
+  "summary": "Dominant failure: the chapter 17 to chapter 18 handoff blurs local continuity and makes the basin-floor climax feel like it starts twice.",
+  "findings": [
+    {
+      "finding_id": "LW08-001",
+      "category": "pre_scan",
+      "subcategory": "chronology_gap",
+      "severity": "HIGH",
+      "chapter_id": "chapter_16",
+      "related_chapter_ids": [
+        "chapter_15"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "Chapter 15 closes with Sable already walking toward \"Three hours south. Then the Scour,\" but chapter 16 later frames the remaining trip as \"two days south\" with no bridge or correction: snapshots/cycle_01/FINAL_NOVEL.md:4024, snapshots/cycle_01/FINAL_NOVEL.md:4283",
+      "problem": "The boundary leaves the reader unable to tell whether chapter 16 is the next morning, a rewind, a route change, or a correction of the earlier estimate. That muddies elapsed time, geography, and the urgency of the Scour approach before the next phase of the window even starts.",
+      "rewrite_direction": "Choose one travel timeline and anchor it on-page. Either keep the Scour only hours away after the farmhouse, or explicitly mark that additional travel has happened and explain why the remaining distance is still days long.",
+      "acceptance_test": "A reader can move from the end of chapter 15 into chapter 16 and state how much time has passed and how far the Scour remains without reconciling conflicting distance estimates.",
+      "fix_owner_reason": "The later chapter owns this because chapter 15 exits on a concrete travel expectation and chapter 16 is where that expectation becomes unreadable."
+    },
+    {
+      "finding_id": "LW08-002",
+      "category": "factual_coherence",
+      "subcategory": "spatial_temporal_reset",
+      "severity": "HIGH",
+      "chapter_id": "chapter_18",
+      "related_chapter_ids": [
+        "chapter_17"
+      ],
+      "boundary_span": "chapter_17/chapter_18",
+      "counterpart_evidence": "Chapter 17 has them emerge into late-afternoon light, advance from eight hundred meters to six hundred, and be observed there by Sable: snapshots/cycle_01/FINAL_NOVEL.md:4528, snapshots/cycle_01/FINAL_NOVEL.md:4552, snapshots/cycle_01/FINAL_NOVEL.md:4564, snapshots/cycle_01/FINAL_NOVEL.md:4590",
+      "pass_hint": "p1_structural_craft",
+      "evidence": "Chapter 18 reopens with them back at \"Eight hundred meters of open ground,\" hiding before the run, and changes the light to \"the sun was directly overhead\": snapshots/cycle_01/FINAL_NOVEL.md:4617, snapshots/cycle_01/FINAL_NOVEL.md:4621, snapshots/cycle_01/FINAL_NOVEL.md:4635",
+      "problem": "The boundary reads like an unmarked rewind, but the text never signals one. Distance to the threshold, staging, and time-of-day all reset, so the reader has to stop and reconstruct whether the story moved backward or simply contradicted itself.",
+      "rewrite_direction": "Either end chapter 17 before the tunnel exit and battlefield run, or make chapter 18 continue from the six-hundred-meter beat with matching light, positions, and cover. If the rewind to Vel's perspective is intentional, label it explicitly.",
+      "acceptance_test": "A reader can move from chapter 17 to chapter 18 without remapping the battlefield; the distance to the threshold, the agents' relative positions, and the sun angle all track cleanly across the break.",
+      "fix_owner_reason": "The later chapter owns the contradiction because chapter 18 is where the basin-floor geometry and time-of-day reset without cue."
+    },
+    {
+      "finding_id": "LW08-003",
+      "category": "redundant_scene_functions",
+      "subcategory": "repeated_climax_preamble",
+      "severity": "HIGH",
+      "chapter_id": "chapter_18",
+      "related_chapter_ids": [
+        "chapter_17"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "Chapter 17 already orients the reader to the threshold point, four-agent layout, and the bad math of twenty levels crossing open ground before the move begins: snapshots/cycle_01/FINAL_NOVEL.md:4530, snapshots/cycle_01/FINAL_NOVEL.md:4538, snapshots/cycle_01/FINAL_NOVEL.md:4556. Chapter 18 opens by restaging the same tactical inventory before finally launching the run: snapshots/cycle_01/FINAL_NOVEL.md:4617, snapshots/cycle_01/FINAL_NOVEL.md:4619, snapshots/cycle_01/FINAL_NOVEL.md:4623, snapshots/cycle_01/FINAL_NOVEL.md:4647",
+      "problem": "Adjacent chapters are serving the same narrative function: briefing the battlefield and restating that two depleted people are trying to cross under impossible odds. Because the setup runs twice, the climax feels like it starts, stops, and starts again.",
+      "rewrite_direction": "Let only one chapter own the tactical preamble. The cleanest fix is to keep chapter 17's setup and open chapter 18 on the first hit, or trim chapter 17 back to the decision and let chapter 18 handle the run once.",
+      "acceptance_test": "Chapter 18 reaches first contact within a paragraph or two of opening, and no reader-facing inventory of agent count, threshold distance, or remaining levels repeats information chapter 17 has just established.",
+      "fix_owner_reason": "The weaker, redundant chapter owns this. Chapter 18 redoes work chapter 17 has already completed."
+    },
+    {
+      "finding_id": "LW08-004",
+      "category": "reading_momentum",
+      "subcategory": "suspended_climax",
+      "severity": "HIGH",
+      "chapter_id": "chapter_17",
+      "related_chapter_ids": [
+        "chapter_18"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "Chapter 17 gets Kem and Vel onto the basin floor, advances them to six hundred meters, and has Osen warn \"It's not enough anymore,\" then stops the confrontation for a long Sable intercut that begins three hours away: snapshots/cycle_01/FINAL_NOVEL.md:4564, snapshots/cycle_01/FINAL_NOVEL.md:4576, snapshots/cycle_01/FINAL_NOVEL.md:4598, snapshots/cycle_01/FINAL_NOVEL.md:4612",
+      "problem": "The window finally reaches live climax pressure, then chapter 17 diverts into reflective setup for Sable before any immediate consequence lands. Because chapter 18 then restarts the basin approach, the local reading experience loses the forward snap the window has been building toward.",
+      "rewrite_direction": "Compress Sable's realization to a shorter decision beat or move more of it earlier, before Kem and Vel break onto the basin floor. End chapter 17 either on the first attack or on a much tighter cliff that hands directly into chapter 18's action.",
+      "acceptance_test": "From the moment Kem and Vel emerge from the tunnel, each subsequent section adds new pressure instead of pausing for explanatory distance; the reader should not feel the climax cooling off between Osen's warning and the first exchange.",
+      "fix_owner_reason": "Chapter 17 owns the stall because it is the chapter that suspends immediate action for a reflective intercut before the payoff can land."
+    }
+  ]
+}

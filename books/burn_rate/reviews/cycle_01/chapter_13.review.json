@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_13",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH13_CRAFT_OPENING_REORIENTATION_DRAG",
+      "source": "craft",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:3; snapshots/cycle_01/chapters/chapter_13.md:7; snapshots/cycle_01/chapters/chapter_13.md:11; snapshots/cycle_01/chapters/chapter_13.md:15; snapshots/cycle_01/chapters/chapter_13.md:17; snapshots/cycle_01/chapters/chapter_13.md:19; snapshots/cycle_01/chapters/chapter_13.md:21",
+      "problem": "The chapter spends seven opening paragraphs re-establishing road decay, recent spend history, Vel's silence, Dren's wound, Kem's changing body, and the current Ledger inventory before it introduces the chapter's new event. In a revelation/confrontation chapter, that much setup reads as reorientation drag rather than forward pressure.",
+      "rewrite_direction": "Compress snapshots/cycle_01/chapters/chapter_13.md:3-20 and move the local threat from snapshots/cycle_01/chapters/chapter_13.md:21-29 into the opening movement. Keep Kem at forty-three, the seven-level attrition, and Vel's changed silence, but fold them into the approach to the failing road instead of isolating them in separate recap paragraphs.",
+      "acceptance_test": "By the end of the third paragraph in the revised snapshots/cycle_01/chapters/chapter_13.md:3-29, the reader can point to a concrete new pressure in this chapter itself (the road failing and/or the farmer at risk), while Kem's current level and Vel's altered behavior are still legible. If the opening still spends six or more recap-heavy paragraphs before any chapter-specific event arrives, fail."
+    },
+    {
+      "finding_id": "CH13_DIALOGUE_COMPOSED_CONFRONTATION",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:169; snapshots/cycle_01/chapters/chapter_13.md:171; snapshots/cycle_01/chapters/chapter_13.md:183; snapshots/cycle_01/chapters/chapter_13.md:193; snapshots/cycle_01/chapters/chapter_13.md:203",
+      "problem": "The confrontation turns betrayal speech into polished thematic delivery. Kem gets a complete prosecutorial diagnosis with a perfect Hoarded/Margins parallel, the narration explicitly spotlights how the line lands, and Vel answers with clean mini-summaries of the moral problem. The result is composed dialogue in the chapter's defining exchange: written-about rather than spoken-through.",
+      "rewrite_direction": "Roughen snapshots/cycle_01/chapters/chapter_13.md:169-170, snapshots/cycle_01/chapters/chapter_13.md:183-193, and snapshots/cycle_01/chapters/chapter_13.md:203 so the accusation and defense emerge through shorter turns, interruption, restart, self-correction, or concrete rebuttal beats. Preserve the required facts that Vel needed Kem's levels, that later attachment became real, and that the origin remains contaminated, but stop giving each speaker a polished thesis block.",
+      "acceptance_test": "In the revised snapshots/cycle_01/chapters/chapter_13.md:169-203, Kem's Hoarded/Margins accusation is not delivered as one uninterrupted diagnostic speech, and at least one speaker visibly loses syntactic composure before the admission lands through interruption, restart, or clipped correction. If the exchange still reads as alternating mini-speeches that summarize the chapter's theme cleanly enough to quote, fail."
+    },
+    {
+      "finding_id": "CH13_PROSE_OVERSTATEMENT_AFTER_ARRIVAL",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_13",
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:205; snapshots/cycle_01/chapters/chapter_13.md:215; snapshots/cycle_01/chapters/chapter_13.md:223; snapshots/cycle_01/chapters/chapter_13.md:235; snapshots/cycle_01/chapters/chapter_13.md:237; snapshots/cycle_01/chapters/chapter_13.md:247; snapshots/cycle_01/chapters/chapter_13.md:251; snapshots/cycle_01/chapters/chapter_13.md:253; snapshots/cycle_01/chapters/chapter_13.md:255",
+      "problem": "After Vel's silence and admission have already landed the chapter's turn, the narration keeps restating the same moral equation in abstract language: Vel and the Hoarded share an arithmetic, betrayal and dependency are the same structure, the road itself certifies the point again. The chapter stops discovering through scene and starts translating its own meaning.",
+      "rewrite_direction": "Trim or reconceive snapshots/cycle_01/chapters/chapter_13.md:205-215 and snapshots/cycle_01/chapters/chapter_13.md:243-255. Keep the concrete aftermath in snapshots/cycle_01/chapters/chapter_13.md:219-241: Kem pockets the signet, Dren takes the middle position, and Kem sets the walking distance. Any material kept after that needs to add a fresh sensory consequence, obstacle, or choice rather than another abstract paraphrase of the same moral arithmetic.",
+      "acceptance_test": "In the revised snapshots/cycle_01/chapters/chapter_13.md:205-255, the ending must still show three observable state shifts on the page: the signet comes off and goes to Kem's pocket, Dren walks between Kem and Vel, and Kem maintains deliberate physical distance from her. After those beats land, no remaining paragraph should exist only to restate the Hoarded/Vel equivalence or the mutual-trap logic in abstract summary; paragraphs that stay must introduce a new concrete consequence or changed interaction. Otherwise fail."
+    }
+  ],
+  "summary": "FAIL across all four lenses. The chapter's core reveal is clear and continuity-consistent, but the opening delays its new event with recap-heavy reorientation, the central confrontation slides into composed thesis-speech, and the ending keeps paraphrasing the same moral equation after the scene has already landed it through silence, admission, signet, and marching order."
+}

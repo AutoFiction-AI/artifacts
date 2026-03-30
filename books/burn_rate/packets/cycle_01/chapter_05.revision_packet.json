@@ -1,0 +1,275 @@
+{
+  "acceptance_targets": [
+    "[CH5_DIALOGUE_STYLE_BIBLE_COPY] Pass if the revised spans at snapshots/cycle_01/chapters/chapter_05.md:215-223 and snapshots/cycle_01/chapters/chapter_05.md:243-247 plus snapshots/cycle_01/chapters/chapter_05.md:271 still communicate the same facts, but no line uses the exact standalone beat \"I jumped in.\" as the hinge of Vel's confession and no line uses the example-line shape \"I sat next to him every week for twenty-six years\" paired with the father's unchanged three-hundred Ledger. Fail if a reader can still point to a verbatim or near-verbatim match against those calibration lines.",
+    "[CH5_DIALOGUE_COMPOSED_VEL] Pass if Vel's lines at snapshots/cycle_01/chapters/chapter_05.md:227 and snapshots/cycle_01/chapters/chapter_05.md:301-307 stay emotionally legible while using concrete scene-bound language and ordinary conversational syntax, and if the closing exchange no longer hinges on a definition-style couplet such as \"X is Y. Y is Z.\" Fail if either passage still reads like a self-contained maxim that could be quoted cleanly outside the scene.",
+    "[CH5_PROSE_CORRECTIVE_SCAFFOLD_TIC] Pass if, across the cited reflective beats, no more than one paragraph still uses the explicit correction pattern \"Not X ... Y\" or \"not X, but Y,\" and the remaining contrasts are carried by fresh syntax or concrete detail. Fail if multiple late-draft reflective beats still announce themselves through the same negation-first scaffold.",
+    "[THEMATIC_OVERSTATEMENT_CH05] Pass if the transition from Kem's father story to Vel's question at snapshots/cycle_01/FINAL_NOVEL.md:1239-1241 occurs through physical scene detail or silence without the narrator explicitly naming the thematic parallel. Fail if any sentence still articulates the connection between the canal story and the Conservatory in abstract/thesis language.",
+    "[R023] Ch5 em-dash density below 10%.",
+    "[R041] Ch5 does not exceed 7% for either 'He' or 'She' openers.",
+    "[C008] Sable's hand description in Ch15 does not use the phrase 'never gripped anything harder than a pen.'",
+    "[LW02-001] A reader moving from chapter 4 into chapter 5 can track Kem's footwear and injuries without stopping to recalculate what he is wearing or wondering why the rib impact disappeared.",
+    "[LW02-003] Chapter 5's opening should present a new problem or exchange within its first page, rather than requiring another full setup pass on Kem's hiking incompetence and Vel's trail-readiness."
+  ],
+  "aggregation_applied": {
+    "decisions_file": "packets/cycle_01/aggregation_decisions.json",
+    "decisions_sha1": "880a450ac33b90efc1364a17207490490d407904"
+  },
+  "chapter_id": "chapter_05",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if the revised spans at snapshots/cycle_01/chapters/chapter_05.md:215-223 and snapshots/cycle_01/chapters/chapter_05.md:243-247 plus snapshots/cycle_01/chapters/chapter_05.md:271 still communicate the same facts, but no line uses the exact standalone beat \"I jumped in.\" as the hinge of Vel's confession and no line uses the example-line shape \"I sat next to him every week for twenty-six years\" paired with the father's unchanged three-hundred Ledger. Fail if a reader can still point to a verbatim or near-verbatim match against those calibration lines.",
+      "chapter_id": "chapter_05",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:215; snapshots/cycle_01/chapters/chapter_05.md:219; snapshots/cycle_01/chapters/chapter_05.md:223; snapshots/cycle_01/chapters/chapter_05.md:243; snapshots/cycle_01/chapters/chapter_05.md:247; snapshots/cycle_01/chapters/chapter_05.md:271; snapshots/cycle_01/FINAL_NOVEL.md:1211",
+      "finding_id": "CH5_DIALOGUE_STYLE_BIBLE_COPY",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:1211",
+            "excerpt": "1211: \"You know the principle. You don't \u2014 \" He stopped. Restarted, lower, less rehearsed. \"I sat next to him at the Conservatory Rite every week for twenty-six years. That's the rite where we \u2014 where they \u2014 sit in a room full of objects that invite use and demonstrate the discipline of not touching them. Every week. My mother, my father, me. The great families. Everyone at three hundred. Everyone perfectly still.\"",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "problem": "The chapter's two defining confession beats lean on calibration-only style-bible material instead of sounding newly spoken. Vel's canal confession repeats the example-line setup around \"I jumped in\" and the first-level loss; Kem's father confession nearly reproduces the example-line shape about sitting beside him every week for twenty-six years while his Ledger stayed at three hundred. Because both echoes land inside the chapter's emotional center, the voice reads assembled from prompt scaffolding rather than discovered on the page.",
+      "rewrite_direction": "Rebuild both confessions from the facts outward at snapshots/cycle_01/chapters/chapter_05.md:215-223 (Vel's canal story) and snapshots/cycle_01/chapters/chapter_05.md:243-247 plus :271 (Kem's father story). Keep the must-land facts intact: Vel's first spend on the drowning girl, Kem's weekly witness of his father's decline, and the father's untouched Ledger. Change the entry sentences, sentence order, and phrasing so neither confession tracks the style-bible example-line wording or cadence. Specifically at line 1211, replace 'I sat next to him at the Conservatory Rite every week for twenty-six years' with original phrasing that communicates the same facts through materially different words.",
+      "severity": "HIGH",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if Vel's lines at snapshots/cycle_01/chapters/chapter_05.md:227 and snapshots/cycle_01/chapters/chapter_05.md:301-307 stay emotionally legible while using concrete scene-bound language and ordinary conversational syntax, and if the closing exchange no longer hinges on a definition-style couplet such as \"X is Y. Y is Z.\" Fail if either passage still reads like a self-contained maxim that could be quoted cleanly outside the scene.",
+      "chapter_id": "chapter_05",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:227; snapshots/cycle_01/chapters/chapter_05.md:303; snapshots/cycle_01/chapters/chapter_05.md:307",
+      "finding_id": "CH5_DIALOGUE_COMPOSED_VEL",
+      "problem": "Vel's dialogue periodically stops sounding like compressed, tired speech and starts sounding like polished theme delivery. \"Once you've done it, you can't unsee the places where someone should do something\" and \"Ruined is giving up halfway. Bad is finishing\" are balanced, quotable mini-speeches of the exact wise-mentor kind her voice profile forbids. In a chapter built on new trust, those lines make her feel authored rather than overheard.",
+      "rewrite_direction": "Roughen Vel's key emotional lines at snapshots/cycle_01/chapters/chapter_05.md:227 and snapshots/cycle_01/chapters/chapter_05.md:301-307. Keep the same relational work, but replace maxim-like phrasing with more ordinary, object-bound speech: let her talk about the canal, the bird, the hands, the pack, or tomorrow's work instead of defining action and failure in portable thesis language.",
+      "severity": "MEDIUM",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if, across the cited reflective beats, no more than one paragraph still uses the explicit correction pattern \"Not X ... Y\" or \"not X, but Y,\" and the remaining contrasts are carried by fresh syntax or concrete detail. Fail if multiple late-draft reflective beats still announce themselves through the same negation-first scaffold.",
+      "chapter_id": "chapter_05",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_05.md:95; snapshots/cycle_01/chapters/chapter_05.md:173; snapshots/cycle_01/chapters/chapter_05.md:201; snapshots/cycle_01/chapters/chapter_05.md:225; snapshots/cycle_01/chapters/chapter_05.md:309; snapshots/cycle_01/chapters/chapter_05.md:329",
+      "finding_id": "CH5_PROSE_CORRECTIVE_SCAFFOLD_TIC",
+      "problem": "The chapter leans too often on the same corrective sentence scaffold in its reflective beats: \"Not the look...\", \"Not why...\", \"Not for effect\", \"not regret, but...\", \"Not the bright, manic grin...\". One or two would read as choice; this many make the prose feel procedurally assembled around contrast-and-correction rather than freshly observed. The repetition is visible enough to count as a chapter-local prose tic under the constitution's recurrence rule.",
+      "rewrite_direction": "Vary the reflective sentence architecture at snapshots/cycle_01/chapters/chapter_05.md:95, snapshots/cycle_01/chapters/chapter_05.md:173, snapshots/cycle_01/chapters/chapter_05.md:201, snapshots/cycle_01/chapters/chapter_05.md:225, snapshots/cycle_01/chapters/chapter_05.md:309, and snapshots/cycle_01/chapters/chapter_05.md:329. Keep the contrast each beat is doing, but render most of it through direct description, sensory detail, or a different syntactic shape rather than repeating the same negation-first construction.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if the transition from Kem's father story to Vel's question at snapshots/cycle_01/FINAL_NOVEL.md:1239-1241 occurs through physical scene detail or silence without the narrator explicitly naming the thematic parallel. Fail if any sentence still articulates the connection between the canal story and the Conservatory in abstract/thesis language.",
+      "chapter_id": "chapter_05",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:1239; snapshots/cycle_01/chapters/chapter_05.md:275; snapshots/cycle_01/chapters/chapter_05.md:285; snapshots/cycle_01/chapters/chapter_05.md:333; snapshots/cycle_01/chapters/chapter_05.md:337; snapshots/cycle_01/chapters/chapter_05.md:339",
+      "finding_id": "THEMATIC_OVERSTATEMENT_CH05",
+      "locator_excerpts": {
+        "acceptance_test": [
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:1239-1241",
+            "excerpt": "1239: She thought about the man in the seal-coat, standing six feet from a drowning girl. She thought about Lord Aldraste in the Conservatory, three hundred on the Ledger and the person draining out of him like water through a cracked jug. The same math, both times. Don't spend, don't act, don't reach into the water. The number stays full and the life stays empty.\n1240: \n1241: \"Can he still talk?\" she asked.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          }
+        ],
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:1239",
+            "excerpt": "1239: She thought about the man in the seal-coat, standing six feet from a drowning girl. She thought about Lord Aldraste in the Conservatory, three hundred on the Ledger and the person draining out of him like water through a cracked jug. The same math, both times. Don't spend, don't act, don't reach into the water. The number stays full and the life stays empty.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          }
+        ],
+        "rewrite_direction": [
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:1239",
+            "excerpt": "1239: She thought about the man in the seal-coat, standing six feet from a drowning girl. She thought about Lord Aldraste in the Conservatory, three hundred on the Ledger and the person draining out of him like water through a cracked jug. The same math, both times. Don't spend, don't act, don't reach into the water. The number stays full and the life stays empty.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "problem": "After Kem's devastating account of his father's Stillness and Vel's canal story, the narrator translates both into an explicit thematic equation: 'The same math, both times. Don't spend, don't act, don't reach into the water. The number stays full and the life stays empty.' The reader has already connected these stories \u2014 the juxtaposition is the scene's structural work. The aphoristic final sentence ('The number stays full and the life stays empty') reads as the narrator producing the novel's tagline.",
+      "rewrite_direction": "Revise snapshots/cycle_01/FINAL_NOVEL.md:1239. Cut the thematic translation ('The same math, both times...the life stays empty') and transition directly from the scene's emotional residue to Vel's concrete follow-up question at line 1241 ('Can he still talk?'). More broadly, compress or replace the explanatory passages at snapshots/cycle_01/chapters/chapter_05.md:275-276 and :333-339 so the chapter preserves the must-land beats (Vel checks whether the father can speak, Kem takes the heavier pack, close leaves them at camp with twenty-eight levels) without abstract restatement of the confessions' meaning. Let one concrete image or changed action carry the meaning.",
+      "severity": "HIGH",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch5 em-dash density below 10%.",
+      "chapter_id": "chapter_05",
+      "cycle": 1,
+      "evidence": "Ch5: 51/168 = 30.4%.",
+      "finding_id": "R023",
+      "problem": "Ch5 at 30.4% em-dash density \u2014 lowest in manuscript but still 3x threshold.",
+      "rewrite_direction": "Cut at least 34 of 51. Target: no more than 17 em-dash lines.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch5 does not exceed 7% for either 'He' or 'She' openers.",
+      "chapter_id": "chapter_05",
+      "cycle": 1,
+      "evidence": "Ch5: 44 'He' (10.8%) and 33 'She' (8.1%) out of 406 sentences.",
+      "finding_id": "R041",
+      "problem": "Ch5 exceeds 7% for both 'He' (10.8%) and 'She' (8.1%).",
+      "rewrite_direction": "Vary at least 16 'He' and 4 'She' openers. Target: both below 7%.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Sable's hand description in Ch15 does not use the phrase 'never gripped anything harder than a pen.'",
+      "chapter_id": "chapter_05",
+      "cross_chapter_context": "Ch5 uses the phrase 'never gripped anything harder than a pen' for Kem's soft Hoarded hands. Ch15's description of Sable's hands must use materially different phrasing \u2014 describe her hands through her own specific history (administrative tools, document handling, the particular softness of someone who has written reports for decades) rather than the exact same clause used for Kem.",
+      "cycle": 1,
+      "evidence": "Ch5 line 1029: 'pale, soft skin that had never gripped anything harder than a pen'; Ch15 line 3958: 'Six weeks ago her hands had been the hands of a person who had never gripped anything harder than a pen.'",
+      "finding_id": "C008",
+      "problem": "The phrase 'never gripped anything harder than a pen' is used verbatim for both Kem (Ch5) and Sable (Ch15). While this may be a deliberate thematic parallel between two Hoarded characters, the identical wording creates a reader-facing echo that blurs the distinction between their arcs. If the parallel is intentional, varying the phrasing would preserve the structural rhyme while avoiding the impression of recycled prose.",
+      "rewrite_direction": "Vary the phrasing in Ch15 so Sable's hands are described through her own specific history (administrative tools, document handling) rather than the exact same clause used for Kem in Ch5.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "A reader moving from chapter 4 into chapter 5 can track Kem's footwear and injuries without stopping to recalculate what he is wearing or wondering why the rib impact disappeared.",
+      "chapter_id": "chapter_05",
+      "cross_chapter_context": "Ch3 line 677: Kem discards ruined boots on a log and steps barefoot onto gravel road. Ch4 ends with Kem having cracked ribs from a glancing hit during the outrider fight. Ch5 must reference replacement boots (traded for or acquired after the Ch3 discard, not stiff-soled Vault-bought ones) and the rib injury should visibly constrain walking, bending, fire-making, or other physical activities throughout the chapter.",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:677 has Kem abandon the original split corridor shoes; snapshots/cycle_01/FINAL_NOVEL.md:736 then gives him replacement trader boots, but snapshots/cycle_01/FINAL_NOVEL.md:981 re-describes his footwear as Vault-made corridor boots again. The same reset happens to his body: snapshots/cycle_01/FINAL_NOVEL.md:858 establishes a cracked rib after the fight, while snapshots/cycle_01/FINAL_NOVEL.md:995 only carries generic back stiffness as chapter 5 begins manual camp work.",
+      "finding_id": "LW02-001",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:677",
+            "excerpt": "677: He picked up his satchel, left the ruined boots on the log, and stepped onto the gravel road. The sharp stones pressed into his blisters immediately \u2014 she could see it in the way he shifted his weight, looking for a stride that distributed the pain.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:736",
+            "excerpt": "736: Kem followed. Quiet was a thing he'd been trained for, in a different context \u2014 the Vault's code of controlled movement, the ceremonial discipline of footfall that demonstrated conservation of energy. But the Vault's floors were marble and stone. This ground was made of things that cracked and shifted and gave way, and his boots were stiff-soled, heavy, purchased from a trader near the Vault gates who'd seen Kem's clothes and charged accordingly.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:981",
+            "excerpt": "981: She could hear his breathing. Heavy, effortful, with the quality of someone who'd never sustained exertion for more than an hour at a stretch. His boots \u2014 good leather, Vault-made, stitched for ceremonial corridors \u2014 were doing things to his feet that she could track by the way his stride had shortened since morning. His hands were worse. She'd been watching them for two days. The blisters had come in on his palms first, where the pack straps rubbed, and then his right thumb from the knife she'd lent him to cut their path through a deadfall section yesterday. He'd gripped the knife too tight, the way people hold things when they're afraid of dropping them. She hadn't corrected him. The calluses would teach him faster than she could.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:858",
+            "excerpt": "858: The tracker was moving toward him, careful, smart, staying behind cover. The injured woman had managed to raise her good hand and was pulling energy for something \u2014 a Pulse, a Binding, whatever she had left in her five trained techniques. Two opponents, both functional, and Kem was on his feet with dirt in his eyes and a cracked rib and the residual momentum of the Speed ability still jangling through his nervous system.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:995",
+            "excerpt": "995: Kem shrugged his own pack off and the relief that passed across his face was so naked she almost looked away. He stood straighter. Rolled his shoulders. Winced at something in his lower back that he didn't mention.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "pass_hint": "p1_structural_craft",
+      "problem": "Reading straight through, chapter 5 feels as if it has slid Kem back toward his pre-fight default kit and injury profile. The boot description actively contradicts the chapter 3-4 swap, and the combat aftermath no longer shapes his movement the way the cracked-rib ending promises it will.",
+      "rewrite_direction": "Make chapter 5 inherit the exact physical state created by chapter 4. Name the replacement boots as the pair bought after the log-side discard, and let the rib injury visibly constrain walking, bending, fire-making, or bird-cleaning so the chapter opens from the prior chapter's damage rather than from a softened reset.",
+      "severity": "HIGH",
+      "source": "local_window",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Chapter 5's opening should present a new problem or exchange within its first page, rather than requiring another full setup pass on Kem's hiking incompetence and Vel's trail-readiness.",
+      "chapter_id": "chapter_05",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:714 and snapshots/cycle_01/FINAL_NOVEL.md:718 open chapter 4 with Kem physically losing to the trail while Vel moves ahead with practiced ease; snapshots/cycle_01/FINAL_NOVEL.md:971 and snapshots/cycle_01/FINAL_NOVEL.md:981 open chapter 5 by restaging the same dynamic before the chapter reaches the campfire and meal material that actually changes the relationship.",
+      "finding_id": "LW02-003",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:714",
+            "excerpt": "714: The ridge trail had been climbing since dawn, and Kem's calves were filing complaints he had no language for.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:718",
+            "excerpt": "718: Vel was thirty paces ahead, moving through the undergrowth with the kind of ease that came from having done this since before he was born. She didn't look back. She hadn't looked back since they'd broken camp that morning, and Kem had stopped deciding whether this was trust or indifference because both options were equally dispiriting.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:971",
+            "excerpt": "971: Behind her, Kem Aldraste, level two hundred and forty-something, was losing a fight with the trail.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:981",
+            "excerpt": "981: She could hear his breathing. Heavy, effortful, with the quality of someone who'd never sustained exertion for more than an hour at a stretch. His boots \u2014 good leather, Vault-made, stitched for ceremonial corridors \u2014 were doing things to his feet that she could track by the way his stride had shortened since morning. His hands were worse. She'd been watching them for two days. The blisters had come in on his palms first, where the pack straps rubbed, and then his right thumb from the knife she'd lent him to cut their path through a deadfall section yesterday. He'd gripped the knife too tight, the way people hold things when they're afraid of dropping them. She hadn't corrected him. The calluses would teach him faster than she could.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "pass_hint": "p1_structural_craft",
+      "problem": "Back-to-back, chapters 4 and 5 both spend their opening energy proving that Kem is bad at hiking and that Vel is silently auditing the cost of dragging him south. Because chapter 4 has already dramatized that dynamic at length, chapter 5's first movement feels like reorientation rather than progression, delaying the quiet/tender engine that is the chapter's real value.",
+      "rewrite_direction": "Enter chapter 5 later. Start closer to the camp stop, the fire lesson, or the first task that puts Kem's non-ability competence under pressure, and let the trail hardship survive as one or two inherited details instead of another full opening beat.",
+      "severity": "HIGH",
+      "source": "local_window",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "has_locator_excerpts": true,
+  "input_snapshot_hash": "ccdffa4289913815f71d02575c62f10c0bb807ef52214fce6aaa9f4f0766ed67",
+  "must_fix_count": 9,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness.",
+    "After a scene has shown its meaning through dramatized action, dialogue, or concrete imagery, do not add narrator passages that explain, paraphrase, or certify that meaning in abstract language. If a paragraph can be removed without losing new information \u2014 and it exists only to restate what the scene has already proved \u2014 cut it. One sharpened summary beat per major scene movement is permissible if it adds genuine pressure or new information; a second sentence restating the same idea is not.",
+    "No dialogue line may reproduce or closely echo the wording, sentence structure, or cadence of any style-bible example line. Example lines are calibration-only \u2014 they demonstrate register and rhythm, not actual manuscript dialogue. When a draft line shares more than 40% of its phrasing or the same distinctive syntactic skeleton as an example line, it must be rewritten from scratch while preserving the character's voice profile constraints. This applies to all characters, including recalled or paraphrased dialogue from earlier chapters.",
+    "Under emotional or tactical pressure, no character may deliver a polished, balanced, quotable thematic diagnosis in dialogue. Accusation, confession, revelation, and argument should arrive through interruption, self-correction, partial articulation, concrete reference, or unfinished syntax rather than finished mini-speeches. If a dialogue line can be quoted cleanly out of context as a theme statement, it needs roughening. Characters should sound like they are thinking under pressure, not delivering prepared remarks.",
+    "The 'not X, not Y, but Z' or 'not X \u2014 Y' corrective-negation pattern may appear no more than twice per chapter across all prose and dialogue. When the pattern recurs beyond that limit, replace with direct statement, image, or a different syntactic shape. Each POV should render the negation-correction move through character-specific sensory logic if used at all.",
+    "Each chapter must keep em-dash-containing prose lines below 10% of total prose lines. When revising, prioritize cutting parenthetical asides and appositive interruptions that can be restructured as independent clauses or joined with commas, colons, or periods. Do not simply replace em-dashes with other punctuation mechanically \u2014 restructure the sentence so it does not need the interruption."
+  ],
+  "original_snapshot_file": "snapshots/cycle_01/chapters/chapter_05.md",
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This is a dark comedy about a world where doing nothing is rational and doing something is self-destruction. Both the comedy and the darkness must be fully committed. Do not soften combat into choreography or spectacle \u2014 fights should hurt, cost real things, and leave damage. Do not soften the comedy into gentle satire \u2014 the absurdity of the Hoarded and their agents should be genuinely funny, sometimes cruelly so. Do not soften grief into sentimentality or revelation into epiphany. The premise demands a tonal register that holds absurdity and genuine pain in the same hand. When the material is uncomfortable \u2014 the physical reality of injury, the moral weight of exploitation, the specific grief of losing someone to a place you cannot reach \u2014 lean into specificity rather than retreating to safety. A draft that never risks anything produces a novel that never moves anyone.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism in combat, injury, consequence, or emotional extremity is a craft failure. If Vel breaks ribs, the reader should feel the break \u2014 the specific wrongness of breathing with cracked bone, the way she holds herself, the pain when she forgets. If Kem is terrified, the terror should be specific and physical: hands, stomach, breathing, the precise quality of his fear. Do not abstract away from embodied experience into summary or generalization.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for all characters except Sable (low) and early-book Kem (initially low, shifting to high). Uncontracted forms are reserved for deliberate emphasis, formal Hoarded speech contexts, or bureaucratic register. In casual conversation, unjustified full-form lines should be treated as suspect.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Vary chapter rhythm aggressively. Combat chapters should be compressed and physical. Discovery chapters should have more room for observation and the surprise of new information. Quiet chapters should breathe \u2014 longer scenes, more sensory detail, conversations that circle rather than drive. Intercut chapters (like Ch 11's Kem/Sable split and Ch 17's Sable intercut) should have contrasting textures between sections. No two consecutive chapters should have the same structural shape: vary scene count, dialogue density, pacing, and the ratio of action to interiority. Dark comedy chapters in the back half (Ch 12, 14, 15, 17) must commit fully to comic energy as a primary narrative mode: the absurdity of Hoarded bureaucratic language applied to human exploitation, the grim humor of fighting for your life with single-digit levels, the comedy of precision teamwork performed in emotional silence. These chapters carry genuine stakes alongside their comedy \u2014 the tonal fusion is the point, not tonal alternation.",
+      "diction": "Concrete, physical, occasionally wry. Avoids both literary pretension and genre cliche. The world has its own vocabulary (Hoarded, Spent, Ledger, Stillness, the Scour, the Margins) and these terms should be used naturally, not defined in exposition. Metaphors earned from the world's own materials \u2014 spending, counting, weight, erosion \u2014 rather than imported from outside the setting. The Hoarded institutional register \u2014 bureaucratic classifications, procedural euphemism, administrative language applied to human exploitation \u2014 is a specific comic instrument in the Margins chapters. When rendering Hoarded documents, policies, or institutional speech, the language should be precise, procedural, and devastating in its indifference.",
+      "forbidden_drift_patterns": [
+        "Narrator-as-comedian: comedy arises from situation and character, not from narrative commentary or winking asides to the reader",
+        "Ability-use described like video game tooltips: do not produce stat readouts or system notifications in prose",
+        "Emotional temperature permanently at maximum: not every scene is a crisis and not every internal moment is an epiphany",
+        "Generic fantasy description: landscape, architecture, and weather must be specific to this world's conditions, not recycled from the fantasy-prose commons",
+        "Competence porn: do not let characters be consistently impressive \u2014 they should fumble, miscalculate, and fail at things that are hard",
+        "Thematic underlining: the prose should not highlight its own meanings or signal when something is symbolically significant"
+      ],
+      "narrative_distance": "Close third-person limited, shifting with the POV character. Vel chapters are compressed and physical \u2014 the prose should feel like it is counting. Kem chapters are more expansive and curious \u2014 the prose has more room for observation and surprise. Sable chapters are structured and institutional, loosening as she changes. The POV break in Ch 13\u201314 (two consecutive Kem chapters) should make Vel's absence felt: the reader is locked inside Kem's betrayed perspective, and the prose should reflect the claustrophobia of a mind cycling through anger without access to the other person's interiority. The distance should be intimate enough to access characters' internal arithmetic but not so close it becomes stream-of-consciousness.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Varied by chapter texture and scene pressure. Short declarative sentences in combat. Longer, conditional, clause-heavy sentences in reflection. Comma-heavy run-ons in panic or exhilaration. The Ledger's arithmetic should bleed into prose rhythm during ability-use moments \u2014 characters counting, weighing, calculating. Quiet chapters should breathe. Action chapters should compress. Two consecutive chapters should not share the same dominant rhythm.",
+      "sensory_bias": [
+        "proprioceptive awareness \u2014 the body's internal sense of position, strain, damage, and capacity",
+        "physical weight and effort \u2014 characters feel gravity, distance, fatigue",
+        "the Ledger's feedback \u2014 a character's awareness of their remaining levels as a persistent background sensation",
+        "environmental specificity \u2014 terrain, weather, architecture rendered through what a body encounters"
+      ]
+    }
+  }
+}

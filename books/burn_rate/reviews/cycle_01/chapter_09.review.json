@@ -1,0 +1,42 @@
+{
+  "chapter_id": "chapter_09",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "FAIL",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH09_DIALOGUE_EXAMPLE_LINE_LEAK",
+      "source": "dialogue",
+      "severity": "HIGH",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:51; snapshots/cycle_01/chapters/chapter_09.md:125; snapshots/cycle_01/chapters/chapter_09.md:147; snapshots/cycle_01/chapters/chapter_09.md:157",
+      "problem": "The chapter reuses calibration-only style-bible dialogue almost verbatim. Dren's gratitude beat at line 51 closely reproduces the Dren example-line skeleton ('My arm's still on, so thanks'), and Vel's threshold description at lines 125/147/157 echoes the Fallow example-line cadence ('People hit zero, they go somewhere... Not dead. Not there'). That makes two important exchanges feel pre-authored from the guide instead of discovered in-scene, and it blurs voice separation by migrating a Fallow-shaped line into Vel's mouth.",
+      "rewrite_direction": "Rewrite the gratitude beat around snapshots/cycle_01/chapters/chapter_09.md:51 so Dren thanks Kem in language specific to this ugly stitch job, this arm, and Dren's trader pragmatism rather than the style-bible sample cadence. Rewrite Vel's reveal around snapshots/cycle_01/chapters/chapter_09.md:125, snapshots/cycle_01/chapters/chapter_09.md:147, and snapshots/cycle_01/chapters/chapter_09.md:157 so her phrasing comes from what she personally witnessed and from her own compressed private register, not from the example-line structure about people hitting zero and not being dead.",
+      "acceptance_test": "Pass if the revised dialogue at snapshots/cycle_01/chapters/chapter_09.md:51 and in the reveal exchange beginning at snapshots/cycle_01/chapters/chapter_09.md:125 no longer preserves the recognizable sample-line skeletons 'My arm's still on, so thanks' or 'People hit zero... Not dead. Not there/gone,' and each speaker's line contains scene-specific wording that could not be mistaken for a copied calibration example. Fail if either beat still reads as a near-verbatim or cadence-level reuse of the style-bible examples."
+    },
+    {
+      "finding_id": "CH09_CRAFT_ABSTRACT_THRESHOLD_REVEAL",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:125; snapshots/cycle_01/chapters/chapter_09.md:129; snapshots/cycle_01/chapters/chapter_09.md:149; snapshots/cycle_01/chapters/chapter_09.md:157; snapshots/cycle_01/chapters/chapter_09.md:177; snapshots/cycle_01/chapters/chapter_09.md:179; snapshots/cycle_01/chapters/chapter_09.md:185; snapshots/cycle_01/chapters/chapter_09.md:195; snapshots/cycle_01/chapters/chapter_09.md:217",
+      "problem": "The chapter's defining revelation stays too abstract for the amount of dramatic weight it is asked to carry. Vel gives Kem placeholder nouns ('a place,' 'the other side,' 'specific conditions,' 'a mechanism'), but almost no concrete observational detail from the crossing she claims to have witnessed. The scene then compensates with repeated narrator paraphrase about what the reveal means to Kem and to Vel rather than letting concrete witnessed evidence do the work. The result is an under-realized payoff: the chapter insists that the sub-Ledger changes everything, but on the page the reader gets concept language and thematic translation more than revelation.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_09.md:125, snapshots/cycle_01/chapters/chapter_09.md:147, snapshots/cycle_01/chapters/chapter_09.md:157, and snapshots/cycle_01/chapters/chapter_09.md:177, add one or two concrete, witness-level details from what Vel actually saw when someone crossed: an observable bodily change, an environmental effect, the exact absence/presence shift, or a Ledger-related sensation she can name as fact. Then compress or replace the explanatory gloss at snapshots/cycle_01/chapters/chapter_09.md:179, snapshots/cycle_01/chapters/chapter_09.md:185, snapshots/cycle_01/chapters/chapter_09.md:195, and snapshots/cycle_01/chapters/chapter_09.md:217 so each remaining paragraph after the reveal either supplies a new fact, sharpens motive, or changes the relationship between Kem and Vel instead of rephrasing the same thematic point.",
+      "acceptance_test": "Pass if, by reading the revised reveal sequence beginning at snapshots/cycle_01/chapters/chapter_09.md:125, a cold reader can state from the chapter text alone: 1. what Vel says happens at zero, 2. one concrete thing she personally witnessed during a crossing, 3. what prevents the crossing from being an accidental vanish, and 4. why Kem's understanding of Vel changes in this scene. Fail if the revised passage still relies mainly on abstract placeholders such as 'place,' 'other side,' or 'mechanism' without at least one concrete witnessed detail, or if paragraphs after the clarification merely restate that the sub-Ledger exists without adding new pressure or information."
+    },
+    {
+      "finding_id": "CH09_PROSE_POV_NAME_LEAK",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_09",
+      "evidence": "snapshots/cycle_01/chapters/chapter_09.md:217",
+      "problem": "The close-third narration breaks POV discipline by naming 'Sable Orm' inside Kem's late-night reflection. In the allowed chapter/context inputs, Kem knows there was a sixth watcher with a notebook; he does not have her name. Using it here imports reader-side or out-of-POV knowledge into a chapter that otherwise stays tightly inside Kem's perception.",
+      "rewrite_direction": "Revise snapshots/cycle_01/chapters/chapter_09.md:217 so the thought refers only to what Kem could know on the page at this point, such as the sixth agent or the woman with the notebook. If the name must appear, the chapter needs an explicit earlier beat where Kem learns it before this line.",
+      "acceptance_test": "Pass if the revised line at snapshots/cycle_01/chapters/chapter_09.md:217 either uses only Kem-available identifiers for the pursuer or includes a prior in-chapter moment where he is explicitly given her name. Fail if 'Sable Orm' remains in Kem's reflection without any on-page knowledge transfer."
+    }
+  ],
+  "summary": "FAIL. The chapter has a strong embodied opening and a real tenderness in Kem's first bad-but-useful care work, but the central sub-Ledger reveal does not yet meet pass-level standards. Its key revelation stays too placeholder-abstract, the scene leans on narrator paraphrase where concrete witnessed detail should carry the turn, the prose slips out of Kem's POV by naming Sable, and the dialogue includes a conspicuous style-bible example-line leak."
+}

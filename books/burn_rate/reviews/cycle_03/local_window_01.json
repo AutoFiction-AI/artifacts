@@ -1,0 +1,78 @@
+{
+  "cycle": 3,
+  "window_id": "window_01",
+  "chapters_reviewed": [
+    "chapter_01",
+    "chapter_02",
+    "chapter_03",
+    "chapter_04"
+  ],
+  "summary": "Dominant failure: chapter 1 over-specifies both Kem's escape and Vel's threshold motive, so chapters 2 and 3 often read like replayed setup or managed delay until chapter 4 finally creates fresh pressure.",
+  "findings": [
+    {
+      "finding_id": "LW01-001",
+      "category": "pre_scan",
+      "subcategory": "reader_confusion",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "related_chapter_ids": [
+        "chapter_02"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "snapshots/cycle_03/FINAL_NOVEL.md:221 has Vel ask for the 'last clean sighting' and snapshots/cycle_03/FINAL_NOVEL.md:223 answers 'Breck's yard,' but snapshots/cycle_03/FINAL_NOVEL.md:255 and snapshots/cycle_03/FINAL_NOVEL.md:287 reframe Breck's yard as the last trustworthy rumor node, while snapshots/cycle_03/FINAL_NOVEL.md:444 and snapshots/cycle_03/FINAL_NOVEL.md:510 keep Kem in open country rather than passing him through that yard on-page.",
+      "problem": "At the chapter 1/2 boundary, Breck's yard briefly reads like Kem's confirmed last location rather than the last place the report itself can be verified. When chapter 2 then shows Kem simply leaving the Vault and heading into the wild, a reader has to stop and recalculate what Vel is actually tracking.",
+      "rewrite_direction": "Clarify in chapter 1 that Breck's yard is the last reliable report point or courier relay point, not a confirmed physical sighting of Kem. One precise line in Sorren's answer is enough to keep the geography of the chase clean before chapter 2 rewinds to Kem's actual route.",
+      "acceptance_test": "A first-pass reader can state, before finishing chapter 2, that Breck's yard is where the rumor hardens into evidence, not a place Kem is definitively known to have reached.",
+      "fix_owner_reason": "Chapter 1 owns this because the supper exchange creates the ambiguity before the adjacent chapter exposes the mismatch in what the reader thought had been confirmed."
+    },
+    {
+      "finding_id": "LW01-002",
+      "category": "pre_scan",
+      "subcategory": "repeated_information",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_02",
+      "related_chapter_ids": [
+        "chapter_01"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "snapshots/cycle_03/FINAL_NOVEL.md:193, snapshots/cycle_03/FINAL_NOVEL.md:207, snapshots/cycle_03/FINAL_NOVEL.md:227, and snapshots/cycle_03/FINAL_NOVEL.md:295 already give the reader a vivid reported version of Kem's gate breach and first-stretch overspend, then snapshots/cycle_03/FINAL_NOVEL.md:390, snapshots/cycle_03/FINAL_NOVEL.md:434, snapshots/cycle_03/FINAL_NOVEL.md:484, and snapshots/cycle_03/FINAL_NOVEL.md:494 restage those same beats in dramatized form immediately afterward.",
+      "problem": "Read back-to-back, chapters 1 and 2 explain Kem's escape twice through two different narrative modes before the cluster has paid off Vel's pursuit. Chapter 2 still adds important worldbuilding, but its first major beats arrive as replay rather than fresh progression.",
+      "rewrite_direction": "Either trim chapter 1's rumor down to the chase value and save the mechanics for chapter 2, or let chapter 2 enter later than the door-and-banquet material so its first pages are mostly net-new.",
+      "acceptance_test": "A consecutive reader gets one full account of Kem's door breach and early waste; the adjacent chapter either hooks the chase more lightly or delivers materially new story leverage instead of re-explaining the same departure beats.",
+      "fix_owner_reason": "Chapter 2 owns this by default because the later chapter is the one that must justify revisiting information the previous chapter has already made vivid."
+    },
+    {
+      "finding_id": "LW01-003",
+      "category": "information_flow",
+      "subcategory": "reader_ahead_withholding",
+      "severity": "HIGH",
+      "chapter_id": "chapter_03",
+      "related_chapter_ids": [
+        "chapter_01"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "snapshots/cycle_03/FINAL_NOVEL.md:89, snapshots/cycle_03/FINAL_NOVEL.md:93, snapshots/cycle_03/FINAL_NOVEL.md:315, and snapshots/cycle_03/FINAL_NOVEL.md:319 already tell the reader that zero is passage, Vel needs a high-level co-spender, and someone has crossed before; chapter 3 then builds multiple exchanges on withholding those basics at snapshots/cycle_03/FINAL_NOVEL.md:883, snapshots/cycle_03/FINAL_NOVEL.md:891, snapshots/cycle_03/FINAL_NOVEL.md:923, snapshots/cycle_03/FINAL_NOVEL.md:1227, snapshots/cycle_03/FINAL_NOVEL.md:1311, and snapshots/cycle_03/FINAL_NOVEL.md:1345.",
+      "problem": "The reader arrives in chapter 3 already ahead of Kem on the core threshold math, so Vel's refusals there generate less suspense than the chapter expects. Instead of feeling like discovery, the negotiation often feels like controlled delay around information the book has already disclosed.",
+      "rewrite_direction": "Either hold back more of Vel's threshold explanation in chapter 1, or let chapter 3's negotiations pivot toward genuinely new leverage: what Vel will manipulate, what she owes the person who crossed, or what Kem can infer about the cost of trusting her now.",
+      "acceptance_test": "By the end of chapter 3, a back-to-back reader has learned something materially beyond the cascade math and the fact that someone once got through, and Kem's questions are no longer circling information the audience already has.",
+      "fix_owner_reason": "Chapter 3 owns this because the later chapter is where already-disclosed material gets replayed as mystery instead of being converted into a fresh revelation or sharper power shift."
+    },
+    {
+      "finding_id": "LW01-004",
+      "category": "reading_momentum",
+      "subcategory": "deferred_convergence",
+      "severity": "HIGH",
+      "chapter_id": "chapter_02",
+      "related_chapter_ids": [
+        "chapter_01",
+        "chapter_03"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "snapshots/cycle_03/FINAL_NOVEL.md:253, snapshots/cycle_03/FINAL_NOVEL.md:317, and snapshots/cycle_03/FINAL_NOVEL.md:333 end chapter 1 by aiming Vel directly at the runaway as the live story; chapter 2 then rewinds to Kem's departure at snapshots/cycle_03/FINAL_NOVEL.md:338 and keeps him in a standalone launch arc through snapshots/cycle_03/FINAL_NOVEL.md:510, with the actual interception deferred until snapshots/cycle_03/FINAL_NOVEL.md:521.",
+      "problem": "As a reading cluster, the window spends two full chapters and part of a third before the central pair are even in the same scene. Chapter 2 is strong in isolation, but after chapter 1's urgent northbound turn it functions like a second first chapter, so cumulative pressure does not really lock in until the opening of chapter 3 and the pursuit of chapter 4.",
+      "rewrite_direction": "Either intercut Vel's chase into chapter 2, cut chapter 1's rumor scene back so chapter 2 becomes the primary reveal, or bring chapter 2's endpoint closer to the actual Vel/Kem collision so the next chapter is not carrying delayed payoff from two directions at once.",
+      "acceptance_test": "Once chapter 1 commits Vel north, the next chapter either materially closes the distance to Kem or changes the state of the hunt before asking the reader to wait another full chapter for the encounter.",
+      "fix_owner_reason": "Chapter 2 owns this because the stall is created by its choice to reboot into a full solo-departure chapter after chapter 1 has already launched the chase."
+    }
+  ]
+}

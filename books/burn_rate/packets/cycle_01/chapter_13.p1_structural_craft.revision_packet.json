@@ -1,0 +1,226 @@
+{
+  "acceptance_targets": [
+    "[CH13_CRAFT_OPENING_REORIENTATION_DRAG] By the end of the third paragraph in the revised snapshots/cycle_01/chapters/chapter_13.md:3-29, the reader can point to a concrete new pressure in this chapter itself (the road failing and/or the farmer at risk), while Kem's current level and Vel's altered behavior are still legible. If the opening still spends six or more recap-heavy paragraphs before any chapter-specific event arrives, fail.",
+    "[CH13_DIALOGUE_COMPOSED_CONFRONTATION] In the revised snapshots/cycle_01/chapters/chapter_13.md:169-203, Kem's Hoarded/Margins accusation is not delivered as one uninterrupted diagnostic speech, and at least one speaker visibly loses syntactic composure before the admission lands through interruption, restart, or clipped correction. If the exchange still reads as alternating mini-speeches that summarize the chapter's theme cleanly enough to quote, fail.",
+    "[THEMATIC_OVERSTATEMENT_CH13] Pass if the post-confrontation narration at snapshots/cycle_01/FINAL_NOVEL.md:3486-3530 stays in practical survival calculus, physical scene detail, and character action without producing sentences that name the thematic structure of the betrayal in abstract language. Fail if sentences like 'the same structure' or 'the caring didn't undo the structure' or equivalent formulations survive.",
+    "[R006] Ch13 does not re-describe Margins soil depletion or Fertility Charm exhaustion as if the reader is encountering the Margins for the first time.",
+    "[R010] Kem's Ch13 memory of Thessa's revelation does not reproduce the full multi-clause quote verbatim.",
+    "[R013] Ch13 does not re-list the full transformation package (leaner, harder, calluses, muscle) already established in prior chapters.",
+    "[R029] Ch13 em-dash density below 10%.",
+    "[R045] Ch13 'He'-opened sentences do not exceed 7%.",
+    "[C002] Every mention of the Aldraste signet uses the same metal color and the same crest design."
+  ],
+  "aggregation_applied": {
+    "decisions_file": "packets/cycle_01/aggregation_decisions.json",
+    "decisions_sha1": "880a450ac33b90efc1364a17207490490d407904"
+  },
+  "chapter_id": "chapter_13",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "By the end of the third paragraph in the revised snapshots/cycle_01/chapters/chapter_13.md:3-29, the reader can point to a concrete new pressure in this chapter itself (the road failing and/or the farmer at risk), while Kem's current level and Vel's altered behavior are still legible. If the opening still spends six or more recap-heavy paragraphs before any chapter-specific event arrives, fail.",
+      "chapter_id": "chapter_13",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:3; snapshots/cycle_01/chapters/chapter_13.md:7; snapshots/cycle_01/chapters/chapter_13.md:11; snapshots/cycle_01/chapters/chapter_13.md:15; snapshots/cycle_01/chapters/chapter_13.md:17; snapshots/cycle_01/chapters/chapter_13.md:19; snapshots/cycle_01/chapters/chapter_13.md:21",
+      "finding_id": "CH13_CRAFT_OPENING_REORIENTATION_DRAG",
+      "problem": "The chapter spends seven opening paragraphs re-establishing road decay, recent spend history, Vel's silence, Dren's wound, Kem's changing body, and the current Ledger inventory before it introduces the chapter's new event. In a revelation/confrontation chapter, that much setup reads as reorientation drag rather than forward pressure.",
+      "rewrite_direction": "Compress snapshots/cycle_01/chapters/chapter_13.md:3-20 and move the local threat from snapshots/cycle_01/chapters/chapter_13.md:21-29 into the opening movement. Keep Kem at forty-three, the seven-level attrition, and Vel's changed silence, but fold them into the approach to the failing road instead of isolating them in separate recap paragraphs.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "In the revised snapshots/cycle_01/chapters/chapter_13.md:169-203, Kem's Hoarded/Margins accusation is not delivered as one uninterrupted diagnostic speech, and at least one speaker visibly loses syntactic composure before the admission lands through interruption, restart, or clipped correction. If the exchange still reads as alternating mini-speeches that summarize the chapter's theme cleanly enough to quote, fail.",
+      "chapter_id": "chapter_13",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_13.md:169; snapshots/cycle_01/chapters/chapter_13.md:171; snapshots/cycle_01/chapters/chapter_13.md:183; snapshots/cycle_01/chapters/chapter_13.md:193; snapshots/cycle_01/chapters/chapter_13.md:203; snapshots/cycle_01/FINAL_NOVEL.md:3450",
+      "finding_id": "CH13_DIALOGUE_COMPOSED_CONFRONTATION",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:3450",
+            "excerpt": "3450: \"I want to understand something.\" His voice had gone strange \u2014 conversational, almost pleasant. He could hear the Hoarded polish in it, the register his father used in Council sessions when he was about to end someone's career without raising his voice. He hated the sound of it coming out of his own mouth. He used it anyway. \"You spent forty years healing people. That girl drowning in the canal when you were seventeen. Every farmer and every settlement since. Forty years of jumping in when nobody else would. And then you found me.\" He turned to face her. \"You looked at me and you saw levels. You calculated my output.\" He gestured \u2014 at the faded notices on the wall, at the Margins visible through the door, at the landscape of extraction around them. \"You recruited me as a component. That's what they do here. They look at people and see what can be extracted.\" He paused. His hand was still raised, pointing at the posted notice that classified humans as Renewable Expenditure Units, and the parallel was so clean it made him sick. \"You replicated the system you claim to oppose. You saw levels, not a person. You just had a nicer reason for it.\"",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "problem": "The confrontation turns betrayal speech into polished thematic delivery. Kem gets a complete prosecutorial diagnosis with a perfect Hoarded/Margins parallel, the narration explicitly spotlights how the line lands, and Vel answers with clean mini-summaries of the moral problem. The result is composed dialogue in the chapter's defining exchange: written-about rather than spoken-through.",
+      "rewrite_direction": "Roughen the confrontation at snapshots/cycle_01/chapters/chapter_13.md:169-170, :183-193, and :203 so the accusation and defense emerge through shorter turns, interruption, restart, self-correction, or concrete rebuttal beats. Specifically at FINAL_NOVEL lines 3446-3457, roughen Kem's accusation so it arrives with visible emotional friction and at least two moments of disfluency or syntactic breakdown. Let the anger outpace the rhetoric: false starts, self-corrections, a clause that loses its syntax before finding it. The parallel to the Margins notices can land through gesture (pointing at the sign, trailing off) rather than a composed analytical sequence. The core charge \u2014 that Vel replicated the system she opposes \u2014 should emerge from pressure and arrive ugly, not as a clean closing argument. Cut or compress the narrator's interpretive frame at lines 3452-3456; Vel's silence already communicates what the narrator explains. Preserve the required facts that Vel needed Kem's levels, that later attachment became real, and that the origin remains contaminated.",
+      "severity": "HIGH",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if the post-confrontation narration at snapshots/cycle_01/FINAL_NOVEL.md:3486-3530 stays in practical survival calculus, physical scene detail, and character action without producing sentences that name the thematic structure of the betrayal in abstract language. Fail if sentences like 'the same structure' or 'the caring didn't undo the structure' or equivalent formulations survive.",
+      "chapter_id": "chapter_13",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:3486; snapshots/cycle_01/FINAL_NOVEL.md:3496; snapshots/cycle_01/FINAL_NOVEL.md:3528; snapshots/cycle_01/chapters/chapter_13.md:205; snapshots/cycle_01/chapters/chapter_13.md:215; snapshots/cycle_01/chapters/chapter_13.md:223; snapshots/cycle_01/chapters/chapter_13.md:235; snapshots/cycle_01/chapters/chapter_13.md:237; snapshots/cycle_01/chapters/chapter_13.md:247; snapshots/cycle_01/chapters/chapter_13.md:251; snapshots/cycle_01/chapters/chapter_13.md:253; snapshots/cycle_01/chapters/chapter_13.md:255",
+      "finding_id": "THEMATIC_OVERSTATEMENT_CH13",
+      "locator_excerpts": {
+        "acceptance_test": [
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:3486-3530",
+            "excerpt": "3486: Kem stood in the courtyard and felt the heat on his skin and the thirty-one humming at the edge of his mind and the specific weight of the word *component* sitting in his mouth like a stone. He looked at the labor classification notice still posted on the farmstead wall. The Hoarded had looked at the Margins and seen energy to extract. Vel had looked at him and seen energy to extract. The distinction was supposed to be that she cared about him and the Hoarded didn't care about anyone. But the structure was the same. The arithmetic was the same. And in the Margins \u2014 standing in the wreckage of a system that had ground generations down to nothing through precisely that arithmetic \u2014 the caring didn't undo the structure. It just made the structure harder to see.\n3487: \n3488: \"No,\" he said. \"It doesn't.\"\n3489: \n3490: He could leave. The thought surfaced on its own, automatic \u2014 the obvious response to discovering you've been used. Walk away. Go north. Find a settlement, offer his remaining levels for food and shelter, live out his days at thirty-one or whatever he burned down to.\n3491: \n[...]\n3525: \n3526: Kem thought about his father. The Conservatory Rite \u2014 the weekly ritual of si...",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          }
+        ],
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:3486",
+            "excerpt": "3486: Kem stood in the courtyard and felt the heat on his skin and the thirty-one humming at the edge of his mind and the specific weight of the word *component* sitting in his mouth like a stone. He looked at the labor classification notice still posted on the farmstead wall. The Hoarded had looked at the Margins and seen energy to extract. Vel had looked at him and seen energy to extract. The distinction was supposed to be that she cared about him and the Hoarded didn't care about anyone. But the structure was the same. The arithmetic was the same. And in the Margins \u2014 standing in the wreckage of a system that had ground generations down to nothing through precisely that arithmetic \u2014 the caring didn't undo the structure. It just made the structure harder to see.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:3496",
+            "excerpt": "3496: They were stuck with each other. The betrayal and the dependency were the same structure, and pulling out one would collapse the other.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:3528",
+            "excerpt": "3528: He'd left the Vault because he couldn't watch it anymore. He'd spent his first ability on opening a door because staying still had become impossible. And Vel had been positioned for exactly that kind of person \u2014 someone whose revulsion at the Hoarded philosophy would make him willing to burn everything down. She hadn't caused his departure. But she'd been ready for it, the way a channel cut in dry ground is ready for rain, and when he fell she caught him and pointed him south.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "problem": "After the confrontation dialogue, the narrator provides multiple passages of moral analysis: 'the caring didn't undo the structure. It just made the structure harder to see' (3486-3487); 'The betrayal and the dependency were the same structure, and pulling out one would collapse the other' (3496); and 'she'd been ready for it, the way a channel cut in dry ground is ready for rain' (3528). The confrontation dialogue already carries the meaning \u2014 Kem's accusation and Vel's silence are the scene's argument. The narrator's thesis passages explain what the reader already understands.",
+      "rewrite_direction": "Revise FINAL_NOVEL lines 3486-3487, 3496-3497, and 3528. Cut the narrator thesis language ('the caring didn't undo the structure', 'The betrayal and the dependency were the same structure', 'she'd been ready for it'). Keep the practical survival calculus (Kem can't leave at 31 in the Margins; Vel can't survive at 18 without him) but remove the abstract structural metaphors. The practical dependency already communicates the betrayal-dependency fusion. In the ending at snapshots/cycle_01/chapters/chapter_13.md:205-255, keep the concrete aftermath: Kem pockets the signet, Dren takes the middle position, Kem sets the walking distance. Any material after that must add a fresh sensory consequence, obstacle, or choice rather than another abstract paraphrase of the same moral arithmetic.",
+      "severity": "HIGH",
+      "source": "award_global",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch13 does not re-describe Margins soil depletion or Fertility Charm exhaustion as if the reader is encountering the Margins for the first time.",
+      "chapter_id": "chapter_13",
+      "cycle": 1,
+      "evidence": "Ch12 line 2954: 'chalk-pale, the specific exhaustion of ground that had been asked for everything it could give and then asked again'; Ch13 line 3296: 'Depleted farmland the color of bone dust, where Fertility Charms had been cast and recast until the soil couldn't hold anything anymore. Low structures with Shaping-smooth walls going to ruin.'",
+      "finding_id": "R006",
+      "problem": "Ch13 re-inventories the Margins landscape one chapter after Ch12 established it. Both describe: depleted pale soil (chalk/bone dust), exhausted farmland from overused Fertility Charms, crumbling Shaping structures. Ch13 should enter through what is specific to this stretch, not through fresh soil-exhaustion inventory.",
+      "rewrite_direction": "Cut or compress Ch13 lines 3296 and surrounding landscape re-description. Enter through the specific road collapse and subsidence that distinguish this location.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Kem's Ch13 memory of Thessa's revelation does not reproduce the full multi-clause quote verbatim.",
+      "chapter_id": "chapter_13",
+      "cycle": 1,
+      "evidence": "Ch10 line 2488: 'Whether any lords had walked out. Whether anyone at two-fifty or above might be persuaded to spend down.'; Ch13 line 3396: 'Whether any Hoarded lords had walked out. Whether anyone at two-fifty or above might be persuaded to burn down.'",
+      "finding_id": "R010",
+      "problem": "Thessa's accusation from Ch10 is reproduced near-verbatim as Kem's italicized memory in Ch13. The core phrase ('Whether anyone at two-fifty or above might be persuaded to burn/spend down') is repeated across a 3-chapter gap with only one word changed (spend\u2192burn).",
+      "rewrite_direction": "Compress the recalled quote to its emotional core \u2014 the word 'component' and the fact of the search \u2014 rather than reproducing the full sentence structure. The reader remembers the scene.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch13 does not re-list the full transformation package (leaner, harder, calluses, muscle) already established in prior chapters.",
+      "chapter_id": "chapter_13",
+      "cycle": 1,
+      "evidence": "Kem's body transformation tracked in Ch5 (blisters, pack straps), Ch7 (pallor reddening), Ch9 (calluses forming), Ch13 line 3298: 'Leaner. Harder at the shoulders and hands, where new callus and muscle sat on top of bone they'd never met... I don't recognize this person.'",
+      "finding_id": "R013",
+      "problem": "Ch13 line 3298 re-proves Kem's physical transformation (leaner, harder, calloused) which has been tracked in Ch5, Ch7, and Ch9. The self-reflection ('I don't recognize this person') is the 4th re-proving of the same transformation arc without adding new consequence.",
+      "rewrite_direction": "Compress the physical self-assessment. The 'I don't recognize this person' realization can land through one specific detail rather than a full body inventory.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch13 em-dash density below 10%.",
+      "chapter_id": "chapter_13",
+      "cycle": 1,
+      "evidence": "Ch13: 56/126 = 44.4%.",
+      "finding_id": "R029",
+      "problem": "Ch13 at 44.4% em-dash density.",
+      "rewrite_direction": "Cut at least 43 of 56. Target: no more than 13 em-dash lines.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch13 'He'-opened sentences do not exceed 7%.",
+      "chapter_id": "chapter_13",
+      "cycle": 1,
+      "evidence": "Ch13: 42 'He'-opened out of 423 = 9.9%.",
+      "finding_id": "R045",
+      "problem": "Ch13 at 9.9% 'He' opener density.",
+      "rewrite_direction": "Vary at least 12 of 42. Target: no more than 30 (7%).",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Every mention of the Aldraste signet uses the same metal color and the same crest design.",
+      "chapter_id": "chapter_13",
+      "cycle": 1,
+      "evidence": "Ch2 line 304: 'The Aldraste signet was silver-dark; heavy; the crest a closed circle.'; Ch7 line 1611: 'Silver; carved with the Aldraste crest \u2014 the still flame; the mark of preservation.'; Ch13 line 3500: 'The House signet \u2014 heavy gold; the Aldraste crest of three locked towers.'; Ch2 line 304: 'the crest a closed circle'; Ch7 line 1611: 'the Aldraste crest \u2014 the still flame; Ch2 line 304: 'silver-dark'; Ch7 line 1611: 'Silver'; Ch13 line 3500: 'heavy gold'; Ch14 line 3723: 'gold; heavy.'",
+      "finding_id": "C002",
+      "problem": "The House Aldraste signet ring has three different descriptions. Metal: 'silver-dark' (Ch2) / 'Silver' (Ch7) / 'gold' (Ch13, Ch14). Crest: 'closed circle' (Ch2) / 'still flame' (Ch7) / 'three locked towers' (Ch13). Both the material and the design change across chapters. The signet is a tracked object appearing in 10+ chapters and must be consistent.",
+      "rewrite_direction": "Standardize all appearances of the House Aldraste signet to silver-dark metal with a closed circle crest (per Ch2 first establishment). Update Ch7 line 1611 ('still flame' to 'closed circle'), Ch13 lines 3500/3504 ('gold' to 'silver-dark', 'three locked towers' to 'closed circle'), Ch14 line 3723 ('gold, heavy' to 'silver-dark'), and Ch19 line 5190 to match. The canonical design is defined in canonical_choices.\n\nAggregator guidance:\n- Canonical choice [signet_design]: The House Aldraste signet ring is silver-dark metal bearing a closed circle crest.. Grounding: First manuscript establishment in Ch2. The signet is introduced in Ch2 with 'silver-dark' metal and 'closed circle' crest. Per first-establishment rules for surface facts, Ch2's description is canonical.",
+      "severity": "CRITICAL",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "has_locator_excerpts": true,
+  "input_snapshot_hash": "8284da5cb003d66bc1ad71d0b10c5b68b995ddfe7511e546da0e3dd9043695bc",
+  "must_fix_count": 9,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness.",
+    "After a scene has shown its meaning through dramatized action, dialogue, or concrete imagery, do not add narrator passages that explain, paraphrase, or certify that meaning in abstract language. If a paragraph can be removed without losing new information \u2014 and it exists only to restate what the scene has already proved \u2014 cut it. One sharpened summary beat per major scene movement is permissible if it adds genuine pressure or new information; a second sentence restating the same idea is not.",
+    "No dialogue line may reproduce or closely echo the wording, sentence structure, or cadence of any style-bible example line. Example lines are calibration-only \u2014 they demonstrate register and rhythm, not actual manuscript dialogue. When a draft line shares more than 40% of its phrasing or the same distinctive syntactic skeleton as an example line, it must be rewritten from scratch while preserving the character's voice profile constraints. This applies to all characters, including recalled or paraphrased dialogue from earlier chapters.",
+    "Under emotional or tactical pressure, no character may deliver a polished, balanced, quotable thematic diagnosis in dialogue. Accusation, confession, revelation, and argument should arrive through interruption, self-correction, partial articulation, concrete reference, or unfinished syntax rather than finished mini-speeches. If a dialogue line can be quoted cleanly out of context as a theme statement, it needs roughening. Characters should sound like they are thinking under pressure, not delivering prepared remarks.",
+    "The 'not X, not Y, but Z' or 'not X \u2014 Y' corrective-negation pattern may appear no more than twice per chapter across all prose and dialogue. When the pattern recurs beyond that limit, replace with direct statement, image, or a different syntactic shape. Each POV should render the negation-correction move through character-specific sensory logic if used at all.",
+    "Each chapter must keep em-dash-containing prose lines below 10% of total prose lines. When revising, prioritize cutting parenthetical asides and appositive interruptions that can be restructured as independent clauses or joined with commas, colons, or periods. Do not simply replace em-dashes with other punctuation mechanically \u2014 restructure the sentence so it does not need the interruption."
+  ],
+  "original_snapshot_file": "snapshots/cycle_01/chapters/chapter_13.md",
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This is a dark comedy about a world where doing nothing is rational and doing something is self-destruction. Both the comedy and the darkness must be fully committed. Do not soften combat into choreography or spectacle \u2014 fights should hurt, cost real things, and leave damage. Do not soften the comedy into gentle satire \u2014 the absurdity of the Hoarded and their agents should be genuinely funny, sometimes cruelly so. Do not soften grief into sentimentality or revelation into epiphany. The premise demands a tonal register that holds absurdity and genuine pain in the same hand. When the material is uncomfortable \u2014 the physical reality of injury, the moral weight of exploitation, the specific grief of losing someone to a place you cannot reach \u2014 lean into specificity rather than retreating to safety. A draft that never risks anything produces a novel that never moves anyone.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism in combat, injury, consequence, or emotional extremity is a craft failure. If Vel breaks ribs, the reader should feel the break \u2014 the specific wrongness of breathing with cracked bone, the way she holds herself, the pain when she forgets. If Kem is terrified, the terror should be specific and physical: hands, stomach, breathing, the precise quality of his fear. Do not abstract away from embodied experience into summary or generalization.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for all characters except Sable (low) and early-book Kem (initially low, shifting to high). Uncontracted forms are reserved for deliberate emphasis, formal Hoarded speech contexts, or bureaucratic register. In casual conversation, unjustified full-form lines should be treated as suspect.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Vary chapter rhythm aggressively. Combat chapters should be compressed and physical. Discovery chapters should have more room for observation and the surprise of new information. Quiet chapters should breathe \u2014 longer scenes, more sensory detail, conversations that circle rather than drive. Intercut chapters (like Ch 11's Kem/Sable split and Ch 17's Sable intercut) should have contrasting textures between sections. No two consecutive chapters should have the same structural shape: vary scene count, dialogue density, pacing, and the ratio of action to interiority. Dark comedy chapters in the back half (Ch 12, 14, 15, 17) must commit fully to comic energy as a primary narrative mode: the absurdity of Hoarded bureaucratic language applied to human exploitation, the grim humor of fighting for your life with single-digit levels, the comedy of precision teamwork performed in emotional silence. These chapters carry genuine stakes alongside their comedy \u2014 the tonal fusion is the point, not tonal alternation.",
+      "diction": "Concrete, physical, occasionally wry. Avoids both literary pretension and genre cliche. The world has its own vocabulary (Hoarded, Spent, Ledger, Stillness, the Scour, the Margins) and these terms should be used naturally, not defined in exposition. Metaphors earned from the world's own materials \u2014 spending, counting, weight, erosion \u2014 rather than imported from outside the setting. The Hoarded institutional register \u2014 bureaucratic classifications, procedural euphemism, administrative language applied to human exploitation \u2014 is a specific comic instrument in the Margins chapters. When rendering Hoarded documents, policies, or institutional speech, the language should be precise, procedural, and devastating in its indifference.",
+      "forbidden_drift_patterns": [
+        "Narrator-as-comedian: comedy arises from situation and character, not from narrative commentary or winking asides to the reader",
+        "Ability-use described like video game tooltips: do not produce stat readouts or system notifications in prose",
+        "Emotional temperature permanently at maximum: not every scene is a crisis and not every internal moment is an epiphany",
+        "Generic fantasy description: landscape, architecture, and weather must be specific to this world's conditions, not recycled from the fantasy-prose commons",
+        "Competence porn: do not let characters be consistently impressive \u2014 they should fumble, miscalculate, and fail at things that are hard",
+        "Thematic underlining: the prose should not highlight its own meanings or signal when something is symbolically significant"
+      ],
+      "narrative_distance": "Close third-person limited, shifting with the POV character. Vel chapters are compressed and physical \u2014 the prose should feel like it is counting. Kem chapters are more expansive and curious \u2014 the prose has more room for observation and surprise. Sable chapters are structured and institutional, loosening as she changes. The POV break in Ch 13\u201314 (two consecutive Kem chapters) should make Vel's absence felt: the reader is locked inside Kem's betrayed perspective, and the prose should reflect the claustrophobia of a mind cycling through anger without access to the other person's interiority. The distance should be intimate enough to access characters' internal arithmetic but not so close it becomes stream-of-consciousness.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Varied by chapter texture and scene pressure. Short declarative sentences in combat. Longer, conditional, clause-heavy sentences in reflection. Comma-heavy run-ons in panic or exhilaration. The Ledger's arithmetic should bleed into prose rhythm during ability-use moments \u2014 characters counting, weighing, calculating. Quiet chapters should breathe. Action chapters should compress. Two consecutive chapters should not share the same dominant rhythm.",
+      "sensory_bias": [
+        "proprioceptive awareness \u2014 the body's internal sense of position, strain, damage, and capacity",
+        "physical weight and effort \u2014 characters feel gravity, distance, fatigue",
+        "the Ledger's feedback \u2014 a character's awareness of their remaining levels as a persistent background sensation",
+        "environmental specificity \u2014 terrain, weather, architecture rendered through what a body encounters"
+      ]
+    }
+  }
+}

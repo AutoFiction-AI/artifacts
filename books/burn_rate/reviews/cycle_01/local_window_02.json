@@ -1,0 +1,81 @@
+{
+  "cycle": 1,
+  "window_id": "window_02",
+  "chapters_reviewed": [
+    "chapter_03",
+    "chapter_04",
+    "chapter_05",
+    "chapter_06"
+  ],
+  "summary": "The window escalates well from encounter to first trust, but the cluster loses reliability at two boundaries: chapter 5 partially resets Kem's established physical state, and chapter 6 does not cleanly reconcile its retrieval-assignment setup with the already authorized enforcement operation in chapter 4. Chapter 5 also spends its opening replaying chapter 4's trail-ineptitude dynamic before it reaches the quieter material that actually changes the relationship.",
+  "findings": [
+    {
+      "finding_id": "LW02-001",
+      "category": "pre_scan",
+      "subcategory": "inconsistent_description",
+      "severity": "HIGH",
+      "chapter_id": "chapter_05",
+      "related_chapter_ids": [
+        "chapter_03",
+        "chapter_04"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:677 has Kem abandon the original split corridor shoes; snapshots/cycle_01/FINAL_NOVEL.md:736 then gives him replacement trader boots, but snapshots/cycle_01/FINAL_NOVEL.md:981 re-describes his footwear as Vault-made corridor boots again. The same reset happens to his body: snapshots/cycle_01/FINAL_NOVEL.md:858 establishes a cracked rib after the fight, while snapshots/cycle_01/FINAL_NOVEL.md:995 only carries generic back stiffness as chapter 5 begins manual camp work.",
+      "problem": "Reading straight through, chapter 5 feels as if it has slid Kem back toward his pre-fight default kit and injury profile. The boot description actively contradicts the chapter 3-4 swap, and the combat aftermath no longer shapes his movement the way the cracked-rib ending promises it will.",
+      "rewrite_direction": "Make chapter 5 inherit the exact physical state created by chapter 4. Name the replacement boots as the pair bought after the log-side discard, and let the rib injury visibly constrain walking, bending, fire-making, or bird-cleaning so the chapter opens from the prior chapter's damage rather than from a softened reset.",
+      "acceptance_test": "A reader moving from chapter 4 into chapter 5 can track Kem's footwear and injuries without stopping to recalculate what he is wearing or wondering why the rib impact disappeared.",
+      "fix_owner_reason": "The later chapter owns this boundary contradiction because chapters 03-04 establish the discarded shoes, the replacement boots, and the rib injury more concretely than chapter 05 carries them forward."
+    },
+    {
+      "finding_id": "LW02-002",
+      "category": "factual_coherence",
+      "subcategory": "retrieval_operation_sequence",
+      "severity": "HIGH",
+      "chapter_id": "chapter_06",
+      "related_chapter_ids": [
+        "chapter_04"
+      ],
+      "boundary_span": "chapter_04/chapter_06",
+      "counterpart_evidence": "snapshots/cycle_01/FINAL_NOVEL.md:926",
+      "pass_hint": "p1_structural_craft",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:1328 presents the Council as still deciding the retrieval method, and snapshots/cycle_01/FINAL_NOVEL.md:1360 plus snapshots/cycle_01/FINAL_NOVEL.md:1385 frame Sable's untrained team as the operative answer, even though chapter 4 has already shown a Council-authorized enforcement retrieval with six trained agents and a spending budget.",
+      "problem": "The window does not make the institutional sequence legible. Chapter 4 reads like the Council has already authorized and launched a trained enforcement operation; chapter 6 then stages a high-level meeting that sounds like the first retrieval decision, with no explicit signal that Sable's mission is a second wave, a political cover operation, or a separate mandate. That ambiguity makes the pursuit mechanics feel contradictory rather than cumulative.",
+      "rewrite_direction": "Clarify the operational sequence in chapter 6 or chapter 4. Either mark Sable's assignment as the follow-up response after the enforcement team's failure, or revise the earlier paperwork so the reader understands the chapter 4 agents and Sable's team as distinct tracks from the outset.",
+      "acceptance_test": "After reading chapters 4 and 6 back-to-back, a reader can explain in one sentence how the enforcement agents and Sable's team differ, who authorized each, and which operation happened first.",
+      "fix_owner_reason": "The later chapter owns the contradiction by default because chapter 4 already gives the first retrieval operation concrete paperwork, staffing, and spending terms; chapter 6 is where the sequence becomes ambiguous."
+    },
+    {
+      "finding_id": "LW02-003",
+      "category": "redundant_scene_functions",
+      "subcategory": "adjacent_reorientation_repeat",
+      "severity": "HIGH",
+      "chapter_id": "chapter_05",
+      "related_chapter_ids": [
+        "chapter_04"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:714 and snapshots/cycle_01/FINAL_NOVEL.md:718 open chapter 4 with Kem physically losing to the trail while Vel moves ahead with practiced ease; snapshots/cycle_01/FINAL_NOVEL.md:971 and snapshots/cycle_01/FINAL_NOVEL.md:981 open chapter 5 by restaging the same dynamic before the chapter reaches the campfire and meal material that actually changes the relationship.",
+      "problem": "Back-to-back, chapters 4 and 5 both spend their opening energy proving that Kem is bad at hiking and that Vel is silently auditing the cost of dragging him south. Because chapter 4 has already dramatized that dynamic at length, chapter 5's first movement feels like reorientation rather than progression, delaying the quiet/tender engine that is the chapter's real value.",
+      "rewrite_direction": "Enter chapter 5 later. Start closer to the camp stop, the fire lesson, or the first task that puts Kem's non-ability competence under pressure, and let the trail hardship survive as one or two inherited details instead of another full opening beat.",
+      "acceptance_test": "Chapter 5's opening should present a new problem or exchange within its first page, rather than requiring another full setup pass on Kem's hiking incompetence and Vel's trail-readiness.",
+      "fix_owner_reason": "The weaker later chapter owns repeated scene function findings, and chapter 5 is the chapter repeating a travel-orientation job that chapter 4 has already completed."
+    },
+    {
+      "finding_id": "LW02-004",
+      "category": "cross_chapter_prose_patterns",
+      "subcategory": "ledger_loss_tooth_gap_metaphor",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_06",
+      "related_chapter_ids": [
+        "chapter_03",
+        "chapter_05"
+      ],
+      "pass_hint": "p3_prose_copyedit",
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:391 compares level loss to a chip taken from a tooth, snapshots/cycle_01/FINAL_NOVEL.md:967 returns to the same sensation as a tooth she keeps tonguing, and snapshots/cycle_01/FINAL_NOVEL.md:1548 repeats it again as a tooth gone from the jaw.",
+      "problem": "Within this short window, three different POVs reach for nearly the same dental-gap image to describe Ledger subtraction. Read consecutively, the comparison stops feeling character-specific and starts reading like shared authorial default phrasing.",
+      "rewrite_direction": "Keep the metaphor in only one chapter, or reframe the later instances through POV-specific sensory logic. Vel, Kem, and Sable should not all arrive at nearly identical body-language for the same abstract cost in a four-chapter span.",
+      "acceptance_test": "Across chapters 3-6, only one chapter uses the tooth-gap comparison for Ledger loss, and the other POVs render the sensation through materially different imagery.",
+      "fix_owner_reason": "The latest repeated instance owns the cleanup because chapter 6 turns an already repeated phrase into an obvious window-level prose tic."
+    }
+  ]
+}

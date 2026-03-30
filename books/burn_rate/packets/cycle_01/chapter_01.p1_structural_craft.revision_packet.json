@@ -1,0 +1,137 @@
+{
+  "acceptance_targets": [
+    "[CH01_CONTINUITY_TIMING_BREAK] A reader comparing revised snapshots/cycle_01/chapters/chapter_01.md:139-145 and snapshots/cycle_01/chapters/chapter_01.md:181-185 should be able to infer one coherent elapsed time since Kem left the Vault. If one span still implies a parallel timeline while the other still implies a five-to-six-day gap, this finding is not fixed.",
+    "[CH01_CONVENIENT_PARTNER_RUMOR] In revised snapshots/cycle_01/chapters/chapter_01.md:93-101 and snapshots/cycle_01/chapters/chapter_01.md:125-147, a cold reader must be able to answer two questions from the page alone: why this information reaches Vel tonight, and what concrete uncertainty or cost keeps it from feeling like a tidy solution. If the rumor still arrives by pure chance and solves her stated problem without additional friction, this finding remains open.",
+    "[R015] Ch1 em-dash-containing prose lines are below 10% (no more than 10 of 96).",
+    "[R035] Ch1 'She'-opened sentences do not exceed 7%.",
+    "[R057] Ch1 'the way' does not exceed 1.0 per 800 words."
+  ],
+  "aggregation_applied": {
+    "decisions_file": "packets/cycle_01/aggregation_decisions.json",
+    "decisions_sha1": "880a450ac33b90efc1364a17207490490d407904"
+  },
+  "chapter_id": "chapter_01",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "A reader comparing revised snapshots/cycle_01/chapters/chapter_01.md:139-145 and snapshots/cycle_01/chapters/chapter_01.md:181-185 should be able to infer one coherent elapsed time since Kem left the Vault. If one span still implies a parallel timeline while the other still implies a five-to-six-day gap, this finding is not fixed.",
+      "chapter_id": "chapter_01",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:143; snapshots/cycle_01/chapters/chapter_01.md:181",
+      "finding_id": "CH01_CONTINUITY_TIMING_BREAK",
+      "problem": "The rumor dates the Aldraste defection as five or six days old, which contradicts the continuity sheet's canonical opening chronology that places Kem's departure effectively parallel to this chapter. Because chapter 1 is the reader's first timeline anchor, this creates immediate uncertainty about when chapter 2 is happening and how the later meeting cadence can line up.",
+      "rewrite_direction": "Resolve the chronology in both snapshots/cycle_01/chapters/chapter_01.md:139-145 and snapshots/cycle_01/chapters/chapter_01.md:181-185 with one consistent answer. Either shorten the rumor age so the defection is effectively current to Vel's chapter, or add explicit local time markers that place this entire chapter several days after Kem's departure and keep that placement consistent in both spans.\n\nAggregator guidance:\n- Canonical choice [ch1_timing]: Kem's departure from the Vault is effectively parallel to Ch1 (both occur on approximately Day 1). The rumor in Ch1 should present the Aldraste defection as fresh/current news, not five or six days old.. Grounding: Continuity sheet timeline: Ch1 is 'Day 1', Ch2 is 'Approximately Day 1 (parallel to Ch 1).' A five-to-six-day-old rumor contradicts the canonical parallel timing.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "In revised snapshots/cycle_01/chapters/chapter_01.md:93-101 and snapshots/cycle_01/chapters/chapter_01.md:125-147, a cold reader must be able to answer two questions from the page alone: why this information reaches Vel tonight, and what concrete uncertainty or cost keeps it from feeling like a tidy solution. If the rumor still arrives by pure chance and solves her stated problem without additional friction, this finding remains open.",
+      "chapter_id": "chapter_01",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:93; snapshots/cycle_01/chapters/chapter_01.md:101; snapshots/cycle_01/chapters/chapter_01.md:125; snapshots/cycle_01/chapters/chapter_01.md:143; snapshots/cycle_01/chapters/chapter_01.md:159",
+      "finding_id": "CH01_CONVENIENT_PARTNER_RUMOR",
+      "problem": "The chapter spends several paragraphs defining Vel's exact missing ingredient, then delivers a rumor that matches it almost perfectly on the same evening. Because the text does not first establish that Vel is actively working a rumor network or waiting on trader traffic for this specific kind of lead, the major turn reads as plot delivery rather than discovery.",
+      "rewrite_direction": "Earn the reveal across snapshots/cycle_01/chapters/chapter_01.md:93-101 and snapshots/cycle_01/chapters/chapter_01.md:125-147. Either seed before dinner that Vel stayed in this settlement, or is heading to the trading post, specifically to intercept rumor traffic about high-level defectors, or make Sorren's report materially less turnkey by adding a concrete uncertainty, conflict, or cost that prevents it from functioning as a near-perfect answer the moment it arrives.",
+      "severity": "MEDIUM",
+      "source": "award",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch1 em-dash-containing prose lines are below 10% (no more than 10 of 96).",
+      "chapter_id": "chapter_01",
+      "cycle": 1,
+      "evidence": "Ch1: 48 em-dash-containing prose lines out of 96 total = 50.0%.",
+      "finding_id": "R015",
+      "problem": "Ch1 has 50.0% em-dash density. Half of all prose lines contain em-dashes. As the novel's opening, this establishes the em-dash as default punctuation rhythm for the reader.",
+      "rewrite_direction": "Cut at least 38 of 48 em-dash uses. Replace with periods, colons, or restructured sentences. Target: no more than 10 em-dash lines in 96 prose lines.",
+      "severity": "HIGH",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch1 'She'-opened sentences do not exceed 7%.",
+      "chapter_id": "chapter_01",
+      "cycle": 1,
+      "evidence": "Ch1: 54 'She'-opened sentences out of 352 = 15.3%. Manuscript-wide 'She' opener: 592/7362 = 8.0%.",
+      "finding_id": "R035",
+      "problem": "Ch1 has the highest 'She' opener density at 15.3% \u2014 Vel's POV chapter where 'She' becomes the default opener.",
+      "rewrite_direction": "Vary at least 29 of 54 'She' openers. Use Vel's name, action-first, or sensory constructions. Target: no more than 25 'She' openers (7%).",
+      "severity": "HIGH",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch1 'the way' does not exceed 1.0 per 800 words.",
+      "chapter_id": "chapter_01",
+      "cycle": 1,
+      "evidence": "Ch1: 15 'the way' in 5,037 words = 2.4/800.",
+      "finding_id": "R057",
+      "problem": "Ch1 at 2.4/800 'the way' density in the novel's opening chapter.",
+      "rewrite_direction": "Replace at least 9 of 15 'the way' constructions. Target: no more than 6.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "input_snapshot_hash": "4e81156f98b39eea88ab749d8740fd0ca8ca917c17a924cadd9de7802e916804",
+  "must_fix_count": 5,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness.",
+    "After a scene has shown its meaning through dramatized action, dialogue, or concrete imagery, do not add narrator passages that explain, paraphrase, or certify that meaning in abstract language. If a paragraph can be removed without losing new information \u2014 and it exists only to restate what the scene has already proved \u2014 cut it. One sharpened summary beat per major scene movement is permissible if it adds genuine pressure or new information; a second sentence restating the same idea is not.",
+    "No dialogue line may reproduce or closely echo the wording, sentence structure, or cadence of any style-bible example line. Example lines are calibration-only \u2014 they demonstrate register and rhythm, not actual manuscript dialogue. When a draft line shares more than 40% of its phrasing or the same distinctive syntactic skeleton as an example line, it must be rewritten from scratch while preserving the character's voice profile constraints. This applies to all characters, including recalled or paraphrased dialogue from earlier chapters.",
+    "Under emotional or tactical pressure, no character may deliver a polished, balanced, quotable thematic diagnosis in dialogue. Accusation, confession, revelation, and argument should arrive through interruption, self-correction, partial articulation, concrete reference, or unfinished syntax rather than finished mini-speeches. If a dialogue line can be quoted cleanly out of context as a theme statement, it needs roughening. Characters should sound like they are thinking under pressure, not delivering prepared remarks.",
+    "The 'not X, not Y, but Z' or 'not X \u2014 Y' corrective-negation pattern may appear no more than twice per chapter across all prose and dialogue. When the pattern recurs beyond that limit, replace with direct statement, image, or a different syntactic shape. Each POV should render the negation-correction move through character-specific sensory logic if used at all.",
+    "Each chapter must keep em-dash-containing prose lines below 10% of total prose lines. When revising, prioritize cutting parenthetical asides and appositive interruptions that can be restructured as independent clauses or joined with commas, colons, or periods. Do not simply replace em-dashes with other punctuation mechanically \u2014 restructure the sentence so it does not need the interruption."
+  ],
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This is a dark comedy about a world where doing nothing is rational and doing something is self-destruction. Both the comedy and the darkness must be fully committed. Do not soften combat into choreography or spectacle \u2014 fights should hurt, cost real things, and leave damage. Do not soften the comedy into gentle satire \u2014 the absurdity of the Hoarded and their agents should be genuinely funny, sometimes cruelly so. Do not soften grief into sentimentality or revelation into epiphany. The premise demands a tonal register that holds absurdity and genuine pain in the same hand. When the material is uncomfortable \u2014 the physical reality of injury, the moral weight of exploitation, the specific grief of losing someone to a place you cannot reach \u2014 lean into specificity rather than retreating to safety. A draft that never risks anything produces a novel that never moves anyone.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism in combat, injury, consequence, or emotional extremity is a craft failure. If Vel breaks ribs, the reader should feel the break \u2014 the specific wrongness of breathing with cracked bone, the way she holds herself, the pain when she forgets. If Kem is terrified, the terror should be specific and physical: hands, stomach, breathing, the precise quality of his fear. Do not abstract away from embodied experience into summary or generalization.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for all characters except Sable (low) and early-book Kem (initially low, shifting to high). Uncontracted forms are reserved for deliberate emphasis, formal Hoarded speech contexts, or bureaucratic register. In casual conversation, unjustified full-form lines should be treated as suspect.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Vary chapter rhythm aggressively. Combat chapters should be compressed and physical. Discovery chapters should have more room for observation and the surprise of new information. Quiet chapters should breathe \u2014 longer scenes, more sensory detail, conversations that circle rather than drive. Intercut chapters (like Ch 11's Kem/Sable split and Ch 17's Sable intercut) should have contrasting textures between sections. No two consecutive chapters should have the same structural shape: vary scene count, dialogue density, pacing, and the ratio of action to interiority. Dark comedy chapters in the back half (Ch 12, 14, 15, 17) must commit fully to comic energy as a primary narrative mode: the absurdity of Hoarded bureaucratic language applied to human exploitation, the grim humor of fighting for your life with single-digit levels, the comedy of precision teamwork performed in emotional silence. These chapters carry genuine stakes alongside their comedy \u2014 the tonal fusion is the point, not tonal alternation.",
+      "diction": "Concrete, physical, occasionally wry. Avoids both literary pretension and genre cliche. The world has its own vocabulary (Hoarded, Spent, Ledger, Stillness, the Scour, the Margins) and these terms should be used naturally, not defined in exposition. Metaphors earned from the world's own materials \u2014 spending, counting, weight, erosion \u2014 rather than imported from outside the setting. The Hoarded institutional register \u2014 bureaucratic classifications, procedural euphemism, administrative language applied to human exploitation \u2014 is a specific comic instrument in the Margins chapters. When rendering Hoarded documents, policies, or institutional speech, the language should be precise, procedural, and devastating in its indifference.",
+      "forbidden_drift_patterns": [
+        "Narrator-as-comedian: comedy arises from situation and character, not from narrative commentary or winking asides to the reader",
+        "Ability-use described like video game tooltips: do not produce stat readouts or system notifications in prose",
+        "Emotional temperature permanently at maximum: not every scene is a crisis and not every internal moment is an epiphany",
+        "Generic fantasy description: landscape, architecture, and weather must be specific to this world's conditions, not recycled from the fantasy-prose commons",
+        "Competence porn: do not let characters be consistently impressive \u2014 they should fumble, miscalculate, and fail at things that are hard",
+        "Thematic underlining: the prose should not highlight its own meanings or signal when something is symbolically significant"
+      ],
+      "narrative_distance": "Close third-person limited, shifting with the POV character. Vel chapters are compressed and physical \u2014 the prose should feel like it is counting. Kem chapters are more expansive and curious \u2014 the prose has more room for observation and surprise. Sable chapters are structured and institutional, loosening as she changes. The POV break in Ch 13\u201314 (two consecutive Kem chapters) should make Vel's absence felt: the reader is locked inside Kem's betrayed perspective, and the prose should reflect the claustrophobia of a mind cycling through anger without access to the other person's interiority. The distance should be intimate enough to access characters' internal arithmetic but not so close it becomes stream-of-consciousness.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Varied by chapter texture and scene pressure. Short declarative sentences in combat. Longer, conditional, clause-heavy sentences in reflection. Comma-heavy run-ons in panic or exhilaration. The Ledger's arithmetic should bleed into prose rhythm during ability-use moments \u2014 characters counting, weighing, calculating. Quiet chapters should breathe. Action chapters should compress. Two consecutive chapters should not share the same dominant rhythm.",
+      "sensory_bias": [
+        "proprioceptive awareness \u2014 the body's internal sense of position, strain, damage, and capacity",
+        "physical weight and effort \u2014 characters feel gravity, distance, fatigue",
+        "the Ledger's feedback \u2014 a character's awareness of their remaining levels as a persistent background sensation",
+        "environmental specificity \u2014 terrain, weather, architecture rendered through what a body encounters"
+      ]
+    }
+  }
+}

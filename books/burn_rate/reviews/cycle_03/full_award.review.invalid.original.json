@@ -1,0 +1,62 @@
+{
+  "cycle": 3,
+  "verdict": "FAIL",
+  "summary": "The manuscript demonstrates shortlist-caliber prose control, structural ambition, and tonal commitment across 19 chapters. Dialogue voice separation is strong and consistent with style-bible profiles, past-tense narration holds throughout, dark-comedy register is fully committed, and sanitization is not a concern: violence, moral compromise, and grief are rendered with embodied specificity. The principal failure mode is a recurring metaphor formula ('the shape of [X]') that appears eleven times across seven chapters, nearly triple the constitution Rule 9 threshold of four book-wide instances, with Chapter 13 exceeding the per-chapter threshold of two. No other MEDIUM+ blockers were identified; the novel is one targeted editorial pass from clearing this gate.",
+  "findings": [],
+  "pattern_findings": [
+    {
+      "pattern_id": "shape_of_metaphor_tic",
+      "source": "award_global",
+      "severity": "MEDIUM",
+      "global_problem": "The construction 'the shape of [noun/clause]' recurs eleven times across seven chapters (4, 8, 10, 11, 13, 17, 18), nearly triple the constitution Rule 9 threshold of four instances per book. Chapter 13 contains three instances in two lines, exceeding the per-chapter threshold of two. The formula has calcified into an authorial tic: a careful reader or prize judge would register the pattern by mid-book and find it confirmed through the climax.",
+      "rewrite_direction": "Audit all eleven instances. Retain at most three where the formula does genuine work: line 5564's contrastive pair ('Not the shape of a hope. The shape of a requirement.') earns its repetition through deliberate parallelism; line 8602's physical usage ('The shape of the world started to slip') may be defensible as literal description at the threshold moment. Replace the remaining instances with constructions native to their scene: physical metaphors, Ledger-vocabulary substitutions, or direct statement. In Chapter 13, reduce from three instances to at most one. Ensure no replacement phrase introduces a new recurring template.",
+      "acceptance_test": "Grep for 'the shape of' in FINAL_NOVEL.md returns at most three hits, no two in the same chapter, and no replacement phrase appears more than twice in the full book.",
+      "affected_chapters": [
+        "chapter_04",
+        "chapter_08",
+        "chapter_10",
+        "chapter_11",
+        "chapter_13",
+        "chapter_17",
+        "chapter_18"
+      ],
+      "chapter_hits": [
+        {
+          "chapter_id": "chapter_04",
+          "evidence": "Line 1658: 'It felt like the body's appetite learning the shape of permission.'",
+          "problem": "Abstract metaphor formula applied to Kem's first spending sensation; the body's experience could be rendered through concrete proprioceptive detail rather than a 'shape of' abstraction."
+        },
+        {
+          "chapter_id": "chapter_08",
+          "evidence": "Line 3246: 'She could see the shape of the mistake before he made it'",
+          "problem": "Formula used for Vel's tactical perception; her combat awareness is established through Perception-mapping vocabulary elsewhere and does not need the generic 'shape' construction."
+        },
+        {
+          "chapter_id": "chapter_10",
+          "evidence": "Line 4460: 'That at least was tact, or the shape of it.' Line 4620: 'she could already see the shape of what the representative would write.'",
+          "problem": "Two instances in one chapter, both using 'shape' for social perception. Functionally interchangeable constructions that could be differentiated through character-specific language."
+        },
+        {
+          "chapter_id": "chapter_11",
+          "evidence": "Line 4843: 'but the shape of the words carried'",
+          "problem": "Formula applied to sound carrying across a river; the physical acoustics of shouting over water could be rendered more specifically than through an abstract 'shape' metaphor."
+        },
+        {
+          "chapter_id": "chapter_13",
+          "evidence": "Line 5564: 'Not the shape of a hope. The shape of a requirement.' Line 5620: 'He had mistaken control of information for the shape of experience.'",
+          "problem": "Three uses of the formula in one chapter, exceeding the per-chapter threshold of two. The contrastive pair at 5564 earns its repetition through deliberate parallelism, but the third instance at 5620 dilutes the rhetorical force. Reduce to at most one instance in this chapter."
+        },
+        {
+          "chapter_id": "chapter_17",
+          "evidence": "Line 7863: 'She had offered the shape of failure in practical terms.'",
+          "problem": "Late-book instance in a high-stakes chapter; by this point the pattern is audible to an attentive reader and reads as default rather than chosen."
+        },
+        {
+          "chapter_id": "chapter_18",
+          "evidence": "Line 8270: 'Vel could almost admire the shape of it when she hated her enough.' Line 8602: 'The shape of the world started to slip'",
+          "problem": "Two instances in the climax chapter. Line 8270 uses 'shape' for tactical admiration (replaceable). Line 8602 describes the threshold's physical distortion and may be defensible as literal rather than formulaic."
+        }
+      ]
+    }
+  ]
+}

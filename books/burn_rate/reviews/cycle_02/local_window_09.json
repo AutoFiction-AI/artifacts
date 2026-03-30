@@ -1,0 +1,60 @@
+{
+  "cycle": 2,
+  "window_id": "window_09",
+  "chapters_reviewed": [
+    "chapter_17",
+    "chapter_18",
+    "chapter_19"
+  ],
+  "summary": "Dominant failure: the window over-solves its own climax, then blunts both chapter breaks by skipping the first phase of the basin fight at 17/18 and delaying the Vel/Maren payoff at 18/19.",
+  "findings": [
+    {
+      "finding_id": "LW09-001",
+      "category": "pre_scan",
+      "subcategory": "chronology_gap",
+      "severity": "HIGH",
+      "chapter_id": "chapter_18",
+      "related_chapter_ids": [
+        "chapter_17"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "Chapter 17 ends with the first exposed sprint from the rock shelf and Osen's immediate warning (snapshots/cycle_02/FINAL_NOVEL.md:4194, snapshots/cycle_02/FINAL_NOVEL.md:4200), but chapter 18 opens after an already-fought attritional phase, with only two hundred meters left and new injuries summarized after the fact (snapshots/cycle_02/FINAL_NOVEL.md:4205, snapshots/cycle_02/FINAL_NOVEL.md:4209).",
+      "problem": "The break lands in active combat and then advances past a large piece of that same combat, so the reader has to reconstruct what happened off-page instead of feeling the escalation continuously. The opening of chapter 18 reads less like a clean handoff and more like missing steps in the basin fight.",
+      "rewrite_direction": "Either end chapter 17 before the first sprint commits the scene to immediate action, or let chapter 18 reopen on the shelf under fire and dramatize the attritional sideways push before compressing later. The boundary needs one continuous action line from alarm to 'two hundred meters left.'",
+      "acceptance_test": "A first-time reader can move from the last page of chapter 17 to the first page of chapter 18 without pausing to recalculate elapsed time, lost ground, or where Vel and Kem picked up their new injuries.",
+      "fix_owner_reason": "The later chapter owns the boundary gap: chapter 18 chooses to reopen after a skipped tranche of action instead of orienting directly from chapter 17's cliff."
+    },
+    {
+      "finding_id": "LW09-002",
+      "category": "information_flow",
+      "subcategory": "overdetermined_payoff",
+      "severity": "HIGH",
+      "chapter_id": "chapter_17",
+      "related_chapter_ids": [
+        "chapter_18"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "Osen already establishes that the damped site may no longer take two contributors and that extra energy is the only theoretical compensation (snapshots/cycle_02/FINAL_NOVEL.md:4028, snapshots/cycle_02/FINAL_NOVEL.md:4044, snapshots/cycle_02/FINAL_NOVEL.md:4048). The Sable intercut then states the exact report language that three contributors are required and tags Sable as the missing third (snapshots/cycle_02/FINAL_NOVEL.md:4100, snapshots/cycle_02/FINAL_NOVEL.md:4102, snapshots/cycle_02/FINAL_NOVEL.md:4104). Chapter 18 keeps re-signaling her arrival through the scree cues before she finally stabilizes the tear (snapshots/cycle_02/FINAL_NOVEL.md:4211, snapshots/cycle_02/FINAL_NOVEL.md:4255, snapshots/cycle_02/FINAL_NOVEL.md:4299, snapshots/cycle_02/FINAL_NOVEL.md:4353).",
+      "problem": "The window explains the mechanical solution to the climax before the climax begins, then reminds the reader several more times that the solution is on its way. That turns Sable's intervention from a live choice under pressure into execution of already-solved arithmetic, flattening suspense across the whole 17/18 run.",
+      "rewrite_direction": "Keep the degradation reveal, but stop short of handing the reader the full answer. Let Osen's warning create uncertainty instead of a complete formula, or keep Sable's knowledge private and cut the repeated north-scree reminders so her arrival feels like a risky decision rather than scheduled machinery.",
+      "acceptance_test": "By the middle of chapter 18, the reader should know the threshold is unstable and that Sable is nearby, but should not feel able to predict with certainty that a seven-level third-contributor save is the only remaining route.",
+      "fix_owner_reason": "The setup chapter owns this because chapter 17 converts a strong complication into an explicit solution spec before chapter 18 can earn the payoff."
+    },
+    {
+      "finding_id": "LW09-003",
+      "category": "reading_momentum",
+      "subcategory": "deferred_reunion_payoff",
+      "severity": "HIGH",
+      "chapter_id": "chapter_19",
+      "related_chapter_ids": [
+        "chapter_18"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "Chapter 18 closes on Vel bracing for Maren's appearance the moment the threshold shuts (snapshots/cycle_02/FINAL_NOVEL.md:4385, snapshots/cycle_02/FINAL_NOVEL.md:4389). Chapter 19 then spends its opening movement on Kem's recovery, a medical stop, and council logistics before it reaches the reunion room over a hundred lines later (snapshots/cycle_02/FINAL_NOVEL.md:4394, snapshots/cycle_02/FINAL_NOVEL.md:4440, snapshots/cycle_02/FINAL_NOVEL.md:4460, snapshots/cycle_02/FINAL_NOVEL.md:4522).",
+      "problem": "The window promises immediate emotional consequence and then diverts into orientation beats before paying it off. Kem's guided entry into the sub-Ledger does useful worldbuilding, but placed directly after Vel waiting for Maren it drains pressure from the book's most charged reunion setup.",
+      "rewrite_direction": "Open chapter 19 on the first Maren/Vel contact, or give Kem's wake-up scene a sharper immediate linkage to that reunion so the reader feels propulsion rather than detour. The civic tour can follow once the promised emotional beat has landed.",
+      "acceptance_test": "The opening scene of chapter 19 either delivers the Maren/Vel collision or replaces it with a scene that increases the same emotional pressure instead of postponing it for orientation.",
+      "fix_owner_reason": "The payoff chapter owns the stall: chapter 19 delays the boundary promise made on the last page of chapter 18."
+    }
+  ]
+}

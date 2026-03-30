@@ -1,0 +1,52 @@
+{
+  "chapter_id": "chapter_01",
+  "verdicts": {
+    "award": "FAIL",
+    "craft": "FAIL",
+    "dialogue": "PASS",
+    "prose": "FAIL"
+  },
+  "findings": [
+    {
+      "finding_id": "CH01_CONTINUITY_TIMING_BREAK",
+      "source": "craft",
+      "severity": "HIGH",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:143; snapshots/cycle_01/chapters/chapter_01.md:181",
+      "problem": "The rumor dates the Aldraste defection as five or six days old, which contradicts the continuity sheet's canonical opening chronology that places Kem's departure effectively parallel to this chapter. Because chapter 1 is the reader's first timeline anchor, this creates immediate uncertainty about when chapter 2 is happening and how the later meeting cadence can line up.",
+      "rewrite_direction": "Resolve the chronology in both snapshots/cycle_01/chapters/chapter_01.md:139-145 and snapshots/cycle_01/chapters/chapter_01.md:181-185 with one consistent answer. Either shorten the rumor age so the defection is effectively current to Vel's chapter, or add explicit local time markers that place this entire chapter several days after Kem's departure and keep that placement consistent in both spans.",
+      "acceptance_test": "A reader comparing revised snapshots/cycle_01/chapters/chapter_01.md:139-145 and snapshots/cycle_01/chapters/chapter_01.md:181-185 should be able to infer one coherent elapsed time since Kem left the Vault. If one span still implies a parallel timeline while the other still implies a five-to-six-day gap, this finding is not fixed."
+    },
+    {
+      "finding_id": "CH01_CONVENIENT_PARTNER_RUMOR",
+      "source": "award",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:93; snapshots/cycle_01/chapters/chapter_01.md:101; snapshots/cycle_01/chapters/chapter_01.md:125; snapshots/cycle_01/chapters/chapter_01.md:143; snapshots/cycle_01/chapters/chapter_01.md:159",
+      "problem": "The chapter spends several paragraphs defining Vel's exact missing ingredient, then delivers a rumor that matches it almost perfectly on the same evening. Because the text does not first establish that Vel is actively working a rumor network or waiting on trader traffic for this specific kind of lead, the major turn reads as plot delivery rather than discovery.",
+      "rewrite_direction": "Earn the reveal across snapshots/cycle_01/chapters/chapter_01.md:93-101 and snapshots/cycle_01/chapters/chapter_01.md:125-147. Either seed before dinner that Vel stayed in this settlement, or is heading to the trading post, specifically to intercept rumor traffic about high-level defectors, or make Sorren's report materially less turnkey by adding a concrete uncertainty, conflict, or cost that prevents it from functioning as a near-perfect answer the moment it arrives.",
+      "acceptance_test": "In revised snapshots/cycle_01/chapters/chapter_01.md:93-101 and snapshots/cycle_01/chapters/chapter_01.md:125-147, a cold reader must be able to answer two questions from the page alone: why this information reaches Vel tonight, and what concrete uncertainty or cost keeps it from feeling like a tidy solution. If the rumor still arrives by pure chance and solves her stated problem without additional friction, this finding remains open."
+    },
+    {
+      "finding_id": "CH01_PROSE_SELF_EXPLAINS",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:59; snapshots/cycle_01/chapters/chapter_01.md:61; snapshots/cycle_01/chapters/chapter_01.md:67; snapshots/cycle_01/chapters/chapter_01.md:69; snapshots/cycle_01/chapters/chapter_01.md:193; snapshots/cycle_01/chapters/chapter_01.md:197",
+      "problem": "After the chapter gives strong concrete material, the narration keeps stepping in to paraphrase the meaning in abstract Ledger language: abandonment becomes 'arithmetic,' barter becomes a general thesis about how the world works, and hope becomes a summary formulation. That self-translation weakens the close third-person distance and makes Vel sound more essayistic than embodied.",
+      "rewrite_direction": "Revise snapshots/cycle_01/chapters/chapter_01.md:59-69 and snapshots/cycle_01/chapters/chapter_01.md:191-197 so the settlement's neglect and Vel's hope are carried by observed detail, bodily sensation, or immediate decision pressure rather than follow-up thesis sentences. Keep at most one sharpened summary beat if needed, but cut the repeated explanatory paraphrase in those spans.",
+      "acceptance_test": "In revised snapshots/cycle_01/chapters/chapter_01.md:59-69 and snapshots/cycle_01/chapters/chapter_01.md:191-197, the reader should be able to infer Hoarded abandonment and Vel's strained hope before any abstract naming of the idea appears. If those spans still end by restating the already-legible meaning in generalized Ledger terms, this finding has not passed."
+    },
+    {
+      "finding_id": "CH01_NEGATION_SCAFFOLD_TIC",
+      "source": "prose",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_01",
+      "evidence": "snapshots/cycle_01/chapters/chapter_01.md:9; snapshots/cycle_01/chapters/chapter_01.md:11; snapshots/cycle_01/chapters/chapter_01.md:27; snapshots/cycle_01/chapters/chapter_01.md:65; snapshots/cycle_01/chapters/chapter_01.md:79; snapshots/cycle_01/chapters/chapter_01.md:83; snapshots/cycle_01/chapters/chapter_01.md:85; snapshots/cycle_01/chapters/chapter_01.md:127",
+      "problem": "The narration leans on the same corrective-negation scaffold often enough in one chapter to sound templated: 'not pain, not sound, but a subtraction,' 'Not the tremor of exhaustion,' 'Not helpless, but thin,' 'not death, not an ending, but a door,' and similar turns. What should feel like controlled rhythm starts reading like autopilot sentence assembly.",
+      "rewrite_direction": "Vary the syntax at snapshots/cycle_01/chapters/chapter_01.md:9-11, snapshots/cycle_01/chapters/chapter_01.md:27, snapshots/cycle_01/chapters/chapter_01.md:65, snapshots/cycle_01/chapters/chapter_01.md:79-85, and snapshots/cycle_01/chapters/chapter_01.md:127. Keep the strongest one or two negation turns if you want that cadence, but let the rest land through direct statement, action, or image instead of another not-X-then-correction pattern.",
+      "acceptance_test": "Across revised snapshots/cycle_01/chapters/chapter_01.md:9-11, snapshots/cycle_01/chapters/chapter_01.md:27, snapshots/cycle_01/chapters/chapter_01.md:65, snapshots/cycle_01/chapters/chapter_01.md:79-85, and snapshots/cycle_01/chapters/chapter_01.md:127, no more than two corrective-negation constructions may remain. The replacements must still communicate the same pressure or perception, but through fresh sentence shapes rather than another variant of the same scaffold."
+    }
+  ],
+  "summary": "FAIL overall. The chapter clearly establishes the Ledger mechanic, Vel's depletion, and the route-journal setup, and the dialogue stays natural enough to avoid a dialogue failure. But the opening chronology breaks canon, the partner rumor arrives too conveniently, and the prose too often explains or formulaically restates meanings instead of trusting its own concrete detail."
+}

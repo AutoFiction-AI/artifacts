@@ -1,0 +1,274 @@
+{
+  "acceptance_targets": [
+    "[CH07_CRAFT_LEDGER_DRIFT] Pass if snapshots/cycle_01/chapters/chapter_07.md:37 and snapshots/cycle_01/chapters/chapter_07.md:211 either show the same Ledger number or the revised text includes one explicit Kem spend between those points that accounts for the change. Fail if his count still drops by one with no causal spend on the page.",
+    "[CH07_CRAFT_THEME_UNDERLINED] Pass if the revised passages anchored at snapshots/cycle_01/chapters/chapter_07.md:73, snapshots/cycle_01/chapters/chapter_07.md:83, snapshots/cycle_01/chapters/chapter_07.md:227, snapshots/cycle_01/chapters/chapter_07.md:229, and snapshots/cycle_01/chapters/chapter_07.md:231 end on concrete perception or action and do not add new abstract paraphrases of what the Hoarded system means after the scene has landed. Fail if those locations still restate the chapter's theme in manifesto or moral-summary language.",
+    "[CH07_DIALOGUE_COMPOSED_EXPLANATION] Pass if the revised dialogue at snapshots/cycle_01/chapters/chapter_07.md:87, snapshots/cycle_01/chapters/chapter_07.md:149, and snapshots/cycle_01/chapters/chapter_07.md:153 contains no portable lesson or polished thesis-speech, and the same information reaches the reader through character-specific bargaining texture instead of mini-speeches. Fail if Vel still sounds like a mentor dispensing theme or Dren still delivers a clean explanatory block about Mira and the danger.",
+    "[CH07_PROSE_SPECIFIC_TIC] Pass if the cited lines no longer rely on \"specific\" or \"specifically\" to create emphasis and each revised sentence renders the distinguishing detail directly. Fail if multiple cited beats still use the word as a placeholder for precision.",
+    "[CH07_PROSE_CLIPPED_FRAGMENT_PATTERN] Pass if the cited beats are rewritten as grammatically complete sentences or clauses while preserving the same information and pressure. Fail if standalone clipped fragments remain the primary emphasis device in those locations.",
+    "[R001] Dren's first assessment of Kem does not re-list height, jaw, hands, or posture already established by the Ch3 introduction.",
+    "[R002] Dren's first look at Vel does not re-list 'weathered face,' 'scarred hands,' or pack description.",
+    "[R025] Ch7 em-dash density below 10%.",
+    "[R050] Ch7 'something' does not exceed 1.0 per 800 words.",
+    "[LW03-001] A reader can move from chapters 5 to 8 without ever having to reconcile Vel's ledger manually: every on-page reference to her post-outrider total and chapter-8 starting budget points to the same number."
+  ],
+  "aggregation_applied": {
+    "decisions_file": "packets/cycle_01/aggregation_decisions.json",
+    "decisions_sha1": "880a450ac33b90efc1364a17207490490d407904"
+  },
+  "chapter_id": "chapter_07",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Pass if snapshots/cycle_01/chapters/chapter_07.md:37 and snapshots/cycle_01/chapters/chapter_07.md:211 either show the same Ledger number or the revised text includes one explicit Kem spend between those points that accounts for the change. Fail if his count still drops by one with no causal spend on the page.",
+      "chapter_id": "chapter_07",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:37; snapshots/cycle_01/chapters/chapter_07.md:211",
+      "finding_id": "CH07_CRAFT_LEDGER_DRIFT",
+      "problem": "Kem's Ledger count changes from 228 to 227 inside the same chapter without any on-page ability use or stated incidental spend. Because both numbers are presented as exact internal checks, the chapter creates a continuity break in the very arithmetic it asks the reader to track closely.",
+      "rewrite_direction": "Reconcile the count at snapshots/cycle_01/chapters/chapter_07.md:37 and snapshots/cycle_01/chapters/chapter_07.md:211. Either keep the same number in both places or add one explicit Kem spend between snapshots/cycle_01/chapters/chapter_07.md:37 and snapshots/cycle_01/chapters/chapter_07.md:211 so the one-level drop has a visible cause.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if the revised passages anchored at snapshots/cycle_01/chapters/chapter_07.md:73, snapshots/cycle_01/chapters/chapter_07.md:83, snapshots/cycle_01/chapters/chapter_07.md:227, snapshots/cycle_01/chapters/chapter_07.md:229, and snapshots/cycle_01/chapters/chapter_07.md:231 end on concrete perception or action and do not add new abstract paraphrases of what the Hoarded system means after the scene has landed. Fail if those locations still restate the chapter's theme in manifesto or moral-summary language.",
+      "chapter_id": "chapter_07",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:73; snapshots/cycle_01/chapters/chapter_07.md:83; snapshots/cycle_01/chapters/chapter_07.md:227; snapshots/cycle_01/chapters/chapter_07.md:229; snapshots/cycle_01/chapters/chapter_07.md:231",
+      "finding_id": "CH07_CRAFT_THEME_UNDERLINED",
+      "problem": "The chapter repeatedly explains the meaning of Kem's humiliation and the Spent Towns' ethic after the scene has already made that meaning legible. The tavern-keeper's withdrawal and Kem's choice not to use a Light Charm are strong dramatic proofs, but the narration keeps translating them into abstract social theory and moral paraphrase, which flattens discovery into essay.",
+      "rewrite_direction": "Compress the interpretive passages at snapshots/cycle_01/chapters/chapter_07.md:73 and snapshots/cycle_01/chapters/chapter_07.md:83 so they stay with Kem's immediate shame instead of expanding into manifesto language. Do the same at snapshots/cycle_01/chapters/chapter_07.md:227, snapshots/cycle_01/chapters/chapter_07.md:229, and snapshots/cycle_01/chapters/chapter_07.md:231: let the silence, the fire, and Kem's refusal of the Light Charm carry the state change without a final thematic summary.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if the revised dialogue at snapshots/cycle_01/chapters/chapter_07.md:87, snapshots/cycle_01/chapters/chapter_07.md:149, and snapshots/cycle_01/chapters/chapter_07.md:153 contains no portable lesson or polished thesis-speech, and the same information reaches the reader through character-specific bargaining texture instead of mini-speeches. Fail if Vel still sounds like a mentor dispensing theme or Dren still delivers a clean explanatory block about Mira and the danger.",
+      "chapter_id": "chapter_07",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:87; snapshots/cycle_01/chapters/chapter_07.md:149; snapshots/cycle_01/chapters/chapter_07.md:153",
+      "finding_id": "CH07_DIALOGUE_COMPOSED_EXPLANATION",
+      "problem": "Several lines resolve into composed thematic delivery instead of lived speech. Vel's \"That's what outside is for\" lands as a portable mentor aphorism, and Dren's Mira/risk explanation arrives as balanced mini-speeches about \"the math\" and what Kem's signet means. Under pressure, these exchanges sound written-about rather than spoken-through, and Dren's rougher trader idiolect softens into clean exposition.",
+      "rewrite_direction": "Replace the aphoristic answer at snapshots/cycle_01/chapters/chapter_07.md:87 with a blunter practical reply or silence that stays inside Vel's compressed register. Rework Dren's disclosure at snapshots/cycle_01/chapters/chapter_07.md:149 and snapshots/cycle_01/chapters/chapter_07.md:153 so the information about Mira, price, and risk emerges through bargaining pressure, interruption, redirect, or rough connective language rather than neatly concluded diagnosis.",
+      "severity": "MEDIUM",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if the cited lines no longer rely on \"specific\" or \"specifically\" to create emphasis and each revised sentence renders the distinguishing detail directly. Fail if multiple cited beats still use the word as a placeholder for precision.",
+      "chapter_id": "chapter_07",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:41; snapshots/cycle_01/chapters/chapter_07.md:43; snapshots/cycle_01/chapters/chapter_07.md:77; snapshots/cycle_01/chapters/chapter_07.md:121; snapshots/cycle_01/chapters/chapter_07.md:145; snapshots/cycle_01/chapters/chapter_07.md:181; snapshots/cycle_01/chapters/chapter_07.md:191; snapshots/cycle_01/chapters/chapter_07.md:195; The same authorial scaffold repeats across the window: snapshots/cycle_01/FINAL_NOVEL.md:1165; snapshots/cycle_01/FINAL_NOVEL.md:1189; snapshots/cycle_01/FINAL_NOVEL.md:1389; snapshots/cycle_01/FINAL_NOVEL.md:1593; snapshots/cycle_01/FINAL_NOVEL.md:1595; and snapshots/cycle_01/FINAL_NOVEL.md:1629 all lean on \"the specific [quality] of...\" phrasing.",
+      "finding_id": "CH07_PROSE_SPECIFIC_TIC",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:1165",
+            "excerpt": "1165: She paused. Not for effect. For the specific effort of uncovering something she'd packed away so long it had calcified into fact, and facts were easier than memories.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:1189",
+            "excerpt": "1189: She stopped. She'd said more than she planned, and the silence that followed had the specific weight of too much honesty \u2014 not regret, but the exposure of having told a true thing to someone she hadn't fully decided to trust.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:1389",
+            "excerpt": "1389: \"I was told this was a documentation assignment,\" said Operative Tarrell. He had brought three notebooks and a personal seal. He was a slender man in his fifties whose hands had the specific softness of someone who had never lifted anything heavier than a records binder. He had, Sable knew from his file, spent the last decade cataloguing the Vault's entire architectural archive \u2014 every pillar measurement, every sightline angle, every drainage gradient. His handwriting was famous among the filing clerks. He did not, at this moment, look like someone prepared to walk to the end of the corridor with purpose.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:1593",
+            "excerpt": "1593: She led them to a tavern \u2014 a broad, low building with a clay-tile roof and a yard where someone had set up benches under a canvas shade. A few chickens scratched in the dirt near the entrance. Inside was dim and cool, smelling of grain beer and cooked onions and the specific sourness of a space where many people had eaten and drunk and the wood had absorbed decades of it. Half a dozen patrons sat at tables \u2014 men and women in working clothes, eating midday meals or drinking slowly. They looked up when Vel and Kem entered. The looks settled on Kem in the same measuring way they had outside, held for a beat, and moved on. One man went back to his food. A woman at the bar turned fully to study him, then turned away.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:1595",
+            "excerpt": "1595: The tavern keeper came from a back room, a crate of clay bottles braced against her hip. She was perhaps fifty, heavy-set, with her hair pulled back under a cloth and forearms that showed the specific muscle of years spent lifting, pouring, and hauling stock. A leather brace wrapped her left knee \u2014 the kind of thing you wore for a joint that had been complaining for years and you'd stopped trying to fix. She set the crate on the bar with a practiced thud and looked at them.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:1629",
+            "excerpt": "1629: Vel was shouldering her pack. She'd seen the whole thing \u2014 he could tell by the specific quality of her not-looking, the way she didn't turn toward him or offer commentary. She was giving him room to sit with it.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "problem": "The chapter leans on \"specific\" and \"specifically\" as a recurrent intensifier instead of delivering the detail directly. After enough repetitions, the word starts reading like a placeholder for precision rather than precision itself, which makes the prose feel mechanically generated.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_07.md:41, :43, :77, :121, :145, :181, :191, and :195, replace the 'specific/specifically' construction and the 'the specific ...' comparator pattern with the actual observed distinction or cut the modifier entirely. The sentence should earn exactness through image, rhythm, or action, not announce that exactness abstractly. Keep only the strongest instance if any. This fix also addresses the cross-chapter pattern where 'the specific...' construction recurs across POVs in the ch5-8 window \u2014 by removing it from Ch7, the window no longer reads as a shared authorial default.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Pass if the cited beats are rewritten as grammatically complete sentences or clauses while preserving the same information and pressure. Fail if standalone clipped fragments remain the primary emphasis device in those locations.",
+      "chapter_id": "chapter_07",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_07.md:3; snapshots/cycle_01/chapters/chapter_07.md:29; snapshots/cycle_01/chapters/chapter_07.md:61; snapshots/cycle_01/chapters/chapter_07.md:147",
+      "finding_id": "CH07_PROSE_CLIPPED_FRAGMENT_PATTERN",
+      "problem": "Standalone clipped fragments recur as an emphasis habit: \"Maintained.\", \"Working.\", \"Not anger.\", \"Flat, informational.\" In isolation that move can work, but here it repeats enough to read as mechanical shorthand, and it pushes against the constitution's ban on clipped narration.",
+      "rewrite_direction": "Recast the fragment beats at snapshots/cycle_01/chapters/chapter_07.md:3, snapshots/cycle_01/chapters/chapter_07.md:29, snapshots/cycle_01/chapters/chapter_07.md:61, and snapshots/cycle_01/chapters/chapter_07.md:147 into complete sentences or integrated clauses. Keep the compression, but let syntax carry the emphasis instead of one- or two-word fragments.",
+      "severity": "MEDIUM",
+      "source": "prose",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Dren's first assessment of Kem does not re-list height, jaw, hands, or posture already established by the Ch3 introduction.",
+      "chapter_id": "chapter_07",
+      "cycle": 1,
+      "evidence": "Ch3 lines 399-419 establish Kem: 'tall... mid-twenties, the unlined face... Pale skin going pink... soft hands... no calluses, no scars, no evidence of grip or impact or labor'; Ch7 line 1657 re-describes via Dren: 'The height. The jaw that had never been hit. The hands that had started to callus but still showed the softness of a life spent indoors. The posture.'",
+      "finding_id": "R001",
+      "problem": "Dren's assessment at Ch7 line 1657 re-invokes Kem's physical traits (height, jaw, soft hands, posture) established in Ch3. Four chapters later, the reader knows these traits. 'The jaw that had never been hit' is near-verbatim from Ch3's descriptor inventory.",
+      "rewrite_direction": "Cut or compress Dren's physical inventory of Kem. Dren can register Kem as Hoarded through behavior and signet alone. Keep the 'standing in my market yard like he's waiting for someone to bring him a chair' line, which is original observation.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Dren's first look at Vel does not re-list 'weathered face,' 'scarred hands,' or pack description.",
+      "chapter_id": "chapter_07",
+      "cycle": 1,
+      "evidence": "Ch1 lines 29-57, Ch3 lines 397-419 establish Vel: scarred hands, weathered appearance, pack; Ch7 line 1657: 'Assessed Vel \u2014 took in the weathered face, the scarred hands, the pack that sat on her frame like it belonged there.'",
+      "finding_id": "R002",
+      "problem": "Dren's assessment at Ch7 re-invokes Vel's three-trait physical signature (weathered face, scarred hands, pack) already established in Ch1/3. Same three-trait package the reader has known for six chapters.",
+      "rewrite_direction": "Replace the three-trait inventory with Dren's functional read \u2014 what a trader sees is competence, route-readiness, level range. Let Dren assess capability, not appearance.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch7 em-dash density below 10%.",
+      "chapter_id": "chapter_07",
+      "cycle": 1,
+      "evidence": "Ch7: 39/114 = 34.2%.",
+      "finding_id": "R025",
+      "problem": "Ch7 at 34.2% em-dash density.",
+      "rewrite_direction": "Cut at least 28 of 39. Target: no more than 11 em-dash lines.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch7 'something' does not exceed 1.0 per 800 words.",
+      "chapter_id": "chapter_07",
+      "cycle": 1,
+      "evidence": "Ch7: 19 'something' in 4,500 words = 3.4/800.",
+      "finding_id": "R050",
+      "problem": "Ch7 at 3.4/800 'something' density, 3.4x threshold.",
+      "rewrite_direction": "Replace at least 13 of 19 'something' with specifics. Target: no more than 6 (1.0/800).",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "A reader can move from chapters 5 to 8 without ever having to reconcile Vel's ledger manually: every on-page reference to her post-outrider total and chapter-8 starting budget points to the same number.",
+      "chapter_id": "chapter_07",
+      "cross_chapter_context": "Vel is canonically at 28 levels from Ch4 through Ch7 (continuity sheet confirms no spending between Ch4 and Ch8). The campfire exchange in Ch7 where Vel mentions her level or where Kem estimates it must use 28, not a lower number. Any 'five, give or take' line or Kem's follow-up estimate must be revised to match.",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:967 and snapshots/cycle_01/FINAL_NOVEL.md:1301 keep Vel at 28 after the outrider fight; snapshots/cycle_01/FINAL_NOVEL.md:1757, snapshots/cycle_01/FINAL_NOVEL.md:1759, and snapshots/cycle_01/FINAL_NOVEL.md:1761 suddenly imply she has spent roughly five levels since finding Kem and is now at 26-27; snapshots/cycle_01/FINAL_NOVEL.md:1792 and snapshots/cycle_01/FINAL_NOVEL.md:1920 return her to 28.",
+      "finding_id": "LW03-001",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:967",
+            "excerpt": "967: Two days since the outriders and Vel hadn't spent a point. She tracked this the way she tracked everything \u2014 as arithmetic, not virtue. Twenty-eight on the Ledger, the number sitting at the back of her awareness like a tooth she kept tonguing. Twenty-eight could get them to the Spent Towns if nothing went wrong. If Kem stopped hemorrhaging levels on problems a lit candle could solve. If the Hoarded were slow to send the next wave.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:1301",
+            "excerpt": "1301: Twenty-eight. The Ledger's hum was there, the way it was always there \u2014 not loud, just present, the awareness of what remained. Two hundred and seventy-two levels spent. Twenty-eight left. Every one of the spent ones had gone to something. Someone. Some moment where the water was rising and nobody was moving and she was standing there with what she had.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:1757",
+            "excerpt": "1757: She considered. \"Three in the outrider fight. Couple more on small things through the week. Five, give or take.\"",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:1759",
+            "excerpt": "1759: \"So you're at \u2014 twenty-six? Twenty-seven?\"",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:1761",
+            "excerpt": "1761: \"Around there.\"",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:1792",
+            "excerpt": "1792: Twenty-eight. That was the number she carried, the number she'd budgeted from, the number that had to stretch across the southern routes and whatever they found on them. She checked it the way she checked her pack straps \u2014 habitual, involuntary, a background process that ran beneath everything else. Twenty-eight.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:1920",
+            "excerpt": "1920: Twenty-eight. She'd walked onto this road at twenty-eight.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "pass_hint": "p1_structural_craft",
+      "problem": "The window asks the reader to track level arithmetic as the story's governing cost system, then gives Vel two incompatible totals inside three chapters. Because chapters 5 and 8 agree while chapter 7 briefly revises her downward, the reader has to stop and repair the math by hand right before the southbound escalation.",
+      "rewrite_direction": "Choose one continuous Vel total and make the campfire exchange in chapter 7 match it. If Vel is meant to be at 28 through the Spent Towns, revise the \"five, give or take\" line and Kem's follow-up estimate; if she is meant to be lower, then chapter 5 and chapter 8 budget language need to be re-keyed to the lower number all the way through the fight setup.\n\nAggregator guidance:\n- Canonical choice [vel_ch7_level]: Vel is at 28 levels through Ch5, Ch7, and into Ch8 (pre-fight). Any campfire exchange in Ch7 implying a lower number must be revised to match 28.. Grounding: Continuity sheet: Ch4 drops Vel to approximately 28; next change is Ch8 dropping to approximately 22. Ch5 and Ch8 both agree on 28 as the pre-Ch8 number.",
+      "severity": "HIGH",
+      "source": "local_window",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "has_locator_excerpts": true,
+  "input_snapshot_hash": "ea7445c45d3da81925e816c31bd2be36a65bd7dea8c6b89b3de144a60bdd7d81",
+  "must_fix_count": 10,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness.",
+    "After a scene has shown its meaning through dramatized action, dialogue, or concrete imagery, do not add narrator passages that explain, paraphrase, or certify that meaning in abstract language. If a paragraph can be removed without losing new information \u2014 and it exists only to restate what the scene has already proved \u2014 cut it. One sharpened summary beat per major scene movement is permissible if it adds genuine pressure or new information; a second sentence restating the same idea is not.",
+    "No dialogue line may reproduce or closely echo the wording, sentence structure, or cadence of any style-bible example line. Example lines are calibration-only \u2014 they demonstrate register and rhythm, not actual manuscript dialogue. When a draft line shares more than 40% of its phrasing or the same distinctive syntactic skeleton as an example line, it must be rewritten from scratch while preserving the character's voice profile constraints. This applies to all characters, including recalled or paraphrased dialogue from earlier chapters.",
+    "Under emotional or tactical pressure, no character may deliver a polished, balanced, quotable thematic diagnosis in dialogue. Accusation, confession, revelation, and argument should arrive through interruption, self-correction, partial articulation, concrete reference, or unfinished syntax rather than finished mini-speeches. If a dialogue line can be quoted cleanly out of context as a theme statement, it needs roughening. Characters should sound like they are thinking under pressure, not delivering prepared remarks.",
+    "The 'not X, not Y, but Z' or 'not X \u2014 Y' corrective-negation pattern may appear no more than twice per chapter across all prose and dialogue. When the pattern recurs beyond that limit, replace with direct statement, image, or a different syntactic shape. Each POV should render the negation-correction move through character-specific sensory logic if used at all.",
+    "Each chapter must keep em-dash-containing prose lines below 10% of total prose lines. When revising, prioritize cutting parenthetical asides and appositive interruptions that can be restructured as independent clauses or joined with commas, colons, or periods. Do not simply replace em-dashes with other punctuation mechanically \u2014 restructure the sentence so it does not need the interruption."
+  ],
+  "original_snapshot_file": "snapshots/cycle_01/chapters/chapter_07.md",
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This is a dark comedy about a world where doing nothing is rational and doing something is self-destruction. Both the comedy and the darkness must be fully committed. Do not soften combat into choreography or spectacle \u2014 fights should hurt, cost real things, and leave damage. Do not soften the comedy into gentle satire \u2014 the absurdity of the Hoarded and their agents should be genuinely funny, sometimes cruelly so. Do not soften grief into sentimentality or revelation into epiphany. The premise demands a tonal register that holds absurdity and genuine pain in the same hand. When the material is uncomfortable \u2014 the physical reality of injury, the moral weight of exploitation, the specific grief of losing someone to a place you cannot reach \u2014 lean into specificity rather than retreating to safety. A draft that never risks anything produces a novel that never moves anyone.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism in combat, injury, consequence, or emotional extremity is a craft failure. If Vel breaks ribs, the reader should feel the break \u2014 the specific wrongness of breathing with cracked bone, the way she holds herself, the pain when she forgets. If Kem is terrified, the terror should be specific and physical: hands, stomach, breathing, the precise quality of his fear. Do not abstract away from embodied experience into summary or generalization.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for all characters except Sable (low) and early-book Kem (initially low, shifting to high). Uncontracted forms are reserved for deliberate emphasis, formal Hoarded speech contexts, or bureaucratic register. In casual conversation, unjustified full-form lines should be treated as suspect.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Vary chapter rhythm aggressively. Combat chapters should be compressed and physical. Discovery chapters should have more room for observation and the surprise of new information. Quiet chapters should breathe \u2014 longer scenes, more sensory detail, conversations that circle rather than drive. Intercut chapters (like Ch 11's Kem/Sable split and Ch 17's Sable intercut) should have contrasting textures between sections. No two consecutive chapters should have the same structural shape: vary scene count, dialogue density, pacing, and the ratio of action to interiority. Dark comedy chapters in the back half (Ch 12, 14, 15, 17) must commit fully to comic energy as a primary narrative mode: the absurdity of Hoarded bureaucratic language applied to human exploitation, the grim humor of fighting for your life with single-digit levels, the comedy of precision teamwork performed in emotional silence. These chapters carry genuine stakes alongside their comedy \u2014 the tonal fusion is the point, not tonal alternation.",
+      "diction": "Concrete, physical, occasionally wry. Avoids both literary pretension and genre cliche. The world has its own vocabulary (Hoarded, Spent, Ledger, Stillness, the Scour, the Margins) and these terms should be used naturally, not defined in exposition. Metaphors earned from the world's own materials \u2014 spending, counting, weight, erosion \u2014 rather than imported from outside the setting. The Hoarded institutional register \u2014 bureaucratic classifications, procedural euphemism, administrative language applied to human exploitation \u2014 is a specific comic instrument in the Margins chapters. When rendering Hoarded documents, policies, or institutional speech, the language should be precise, procedural, and devastating in its indifference.",
+      "forbidden_drift_patterns": [
+        "Narrator-as-comedian: comedy arises from situation and character, not from narrative commentary or winking asides to the reader",
+        "Ability-use described like video game tooltips: do not produce stat readouts or system notifications in prose",
+        "Emotional temperature permanently at maximum: not every scene is a crisis and not every internal moment is an epiphany",
+        "Generic fantasy description: landscape, architecture, and weather must be specific to this world's conditions, not recycled from the fantasy-prose commons",
+        "Competence porn: do not let characters be consistently impressive \u2014 they should fumble, miscalculate, and fail at things that are hard",
+        "Thematic underlining: the prose should not highlight its own meanings or signal when something is symbolically significant"
+      ],
+      "narrative_distance": "Close third-person limited, shifting with the POV character. Vel chapters are compressed and physical \u2014 the prose should feel like it is counting. Kem chapters are more expansive and curious \u2014 the prose has more room for observation and surprise. Sable chapters are structured and institutional, loosening as she changes. The POV break in Ch 13\u201314 (two consecutive Kem chapters) should make Vel's absence felt: the reader is locked inside Kem's betrayed perspective, and the prose should reflect the claustrophobia of a mind cycling through anger without access to the other person's interiority. The distance should be intimate enough to access characters' internal arithmetic but not so close it becomes stream-of-consciousness.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Varied by chapter texture and scene pressure. Short declarative sentences in combat. Longer, conditional, clause-heavy sentences in reflection. Comma-heavy run-ons in panic or exhilaration. The Ledger's arithmetic should bleed into prose rhythm during ability-use moments \u2014 characters counting, weighing, calculating. Quiet chapters should breathe. Action chapters should compress. Two consecutive chapters should not share the same dominant rhythm.",
+      "sensory_bias": [
+        "proprioceptive awareness \u2014 the body's internal sense of position, strain, damage, and capacity",
+        "physical weight and effort \u2014 characters feel gravity, distance, fatigue",
+        "the Ledger's feedback \u2014 a character's awareness of their remaining levels as a persistent background sensation",
+        "environmental specificity \u2014 terrain, weather, architecture rendered through what a body encounters"
+      ]
+    }
+  }
+}

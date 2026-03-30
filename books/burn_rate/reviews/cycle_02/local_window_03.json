@@ -1,0 +1,78 @@
+{
+  "cycle": 2,
+  "window_id": "window_03",
+  "chapters_reviewed": [
+    "chapter_05",
+    "chapter_06",
+    "chapter_07",
+    "chapter_08"
+  ],
+  "summary": "Dominant failure: chapter 6 launches a live pursuit, but chapter 7 and the opening stretch of chapter 8 cool that pressure with another round of setup, and chapter 8 does not fully cash in the specifically named agents chapter 6 prepared.",
+  "findings": [
+    {
+      "finding_id": "LW03-001",
+      "category": "pre_scan",
+      "subcategory": "chronology_gap",
+      "severity": "MEDIUM",
+      "chapter_id": "chapter_07",
+      "related_chapter_ids": [
+        "chapter_06"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:1456, snapshots/cycle_02/FINAL_NOVEL.md:1472, snapshots/cycle_02/FINAL_NOVEL.md:1481, snapshots/cycle_02/FINAL_NOVEL.md:1683",
+      "problem": "Chapter 6 ends with Sable only an hour into a newly activated chase and a concrete nine-day distance estimate, but chapter 7 opens with Kem already six days deeper into the road without a clean relative anchor. Reading the window straight through, the reader has to reconcile 'approximately five days,' 'nine days at our pace,' 'for six days,' and 'eleven days ago' by hand to know where the two threads now sit against each other.",
+      "rewrite_direction": "Anchor chapter 7's opening in a plainly stated interval relative to Kem's departure or the last camp so the reader immediately understands how much travel has been skipped and how much time Sable has had to close the gap.",
+      "acceptance_test": "Within the first five lines of chapter 7, a reader can tell how much time has passed since chapter 6's pursuit launch without doing arithmetic across later references.",
+      "fix_owner_reason": "Later chapter owns boundary clarity; chapter 7 is where the time jump lands and therefore where the reader needs the orientation."
+    },
+    {
+      "finding_id": "LW03-002",
+      "category": "reading_momentum",
+      "subcategory": "pursuit_pressure_cools",
+      "severity": "HIGH",
+      "chapter_id": "chapter_07",
+      "related_chapter_ids": [
+        "chapter_06",
+        "chapter_08"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:1442, snapshots/cycle_02/FINAL_NOVEL.md:1466, snapshots/cycle_02/FINAL_NOVEL.md:1517, snapshots/cycle_02/FINAL_NOVEL.md:1629, snapshots/cycle_02/FINAL_NOVEL.md:1710, snapshots/cycle_02/FINAL_NOVEL.md:1740",
+      "problem": "Chapter 6 ends by turning Sable's pursuit into the active engine of the window, but chapter 7 spends almost all of its runtime on settlement observation, provisioning, and Dren's negotiation, with the chase only surfacing briefly in dialogue. Chapter 8 then adds another three-day travel buffer and depot approach before the agents finally appear. The result is that the pressure chapter 6 creates goes slack for a full chapter and most of the next one.",
+      "rewrite_direction": "Make chapter 7 produce chase pressure on-page, such as a sign that the team is closing, a settlement-level consequence of Kem being tracked, or a negotiation term driven by imminent danger, or else open chapter 8 much closer to the moment of contact.",
+      "acceptance_test": "After chapter 6 activates the pursuit, each subsequent chapter in the window shows the pursuers closing or forces Vel and Kem to make a chase-driven decision before the eventual roadside attack.",
+      "fix_owner_reason": "The stall manifests in chapter 7; that chapter inherits the pursuit engine from chapter 6 and cools it instead of intensifying it."
+    },
+    {
+      "finding_id": "LW03-003",
+      "category": "redundant_scene_functions",
+      "subcategory": "mirrored_launch_sequence",
+      "severity": "HIGH",
+      "chapter_id": "chapter_07",
+      "related_chapter_ids": [
+        "chapter_06"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:1352, snapshots/cycle_02/FINAL_NOVEL.md:1406, snapshots/cycle_02/FINAL_NOVEL.md:1420, snapshots/cycle_02/FINAL_NOVEL.md:1517, snapshots/cycle_02/FINAL_NOVEL.md:1579, snapshots/cycle_02/FINAL_NOVEL.md:1665",
+      "problem": "Read consecutively, chapters 6 and 7 both perform a launch-prep function: assemble a party, sort gear and carrying capacity, negotiate what the road requires, and end with a next-leg departure. Chapter 6 already spends substantial real estate on organizing Sable's pursuit; chapter 7 then spends another full chapter getting Vel and Kem supplied and attached to a guide. The window feels like it starts twice before chapter 8 finally lets the collision happen.",
+      "rewrite_direction": "Either compress the chapter 7 provisioning and hiring mechanics or make Dren's entrance trigger a qualitatively different scene function, such as immediate route peril, social blowback, or a decision that changes leverage now instead of merely preparing the next stretch.",
+      "acceptance_test": "Chapter 7 cannot be accurately summarized as another party-assembly chapter after chapter 6; by its end, the group's leverage or danger state has changed in a way that goes beyond acquiring supplies and a guide.",
+      "fix_owner_reason": "The later and weaker repetition owns the duplicated scene job; chapter 7 repeats a preparation function chapter 6 has already covered."
+    },
+    {
+      "finding_id": "LW03-004",
+      "category": "information_flow",
+      "subcategory": "setup_payoff_identifiability",
+      "severity": "HIGH",
+      "chapter_id": "chapter_08",
+      "related_chapter_ids": [
+        "chapter_06"
+      ],
+      "pass_hint": "p1_structural_craft",
+      "evidence": "snapshots/cycle_02/FINAL_NOVEL.md:1356, snapshots/cycle_02/FINAL_NOVEL.md:1374, snapshots/cycle_02/FINAL_NOVEL.md:1406, snapshots/cycle_02/FINAL_NOVEL.md:1748, snapshots/cycle_02/FINAL_NOVEL.md:1784, snapshots/cycle_02/FINAL_NOVEL.md:1892",
+      "problem": "Chapter 6 teaches the reader Tarrell, Kess, Lenn, Marris, and Chael as distinct recruits with distinct incompetences, but chapter 8 pays that setup off mostly as five anonymous gray cloaks making generic mistakes. Because the confrontation does not clearly map the blunders back onto the named people Sable assembled, the scene loses both comic sharpness and narrative payoff.",
+      "rewrite_direction": "Thread specific identifiers into the attack beats, by name, remembered quirk, carried object, or unmistakable callback detail, so the reader recognizes the same recruits from chapter 6 rather than inferring them retroactively.",
+      "acceptance_test": "During the chapter 8 fight, a reader can identify at least three of the five agents as previously introduced chapter 6 recruits before the scene ends.",
+      "fix_owner_reason": "The setup already exists in chapter 6; the later payoff chapter owns the missing connective tissue because recognition has to happen on the page where the confrontation lands."
+    }
+  ]
+}

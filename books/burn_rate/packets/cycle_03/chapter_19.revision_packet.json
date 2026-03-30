@@ -1,0 +1,142 @@
+{
+  "acceptance_targets": [
+    "[R19] Ch19 contains no more than 20 hand/palm/finger references.",
+    "[R20] The exact phrases 'I'm glad you're alive' and 'I'm not ready for the rest of it' each appear only once in Ch19.",
+    "[LW09-004] By the end of Chapter 19, the Vel/Maren thread should have moved to a leverage state that is clearly different from the first reunion exchange, and the chapter should not repeat the five-years/intake grievance plus 'not ready for the rest' combination without adding a new consequence."
+  ],
+  "aggregation_applied": {
+    "decisions_file": "packets/cycle_03/aggregation_decisions.json",
+    "decisions_sha1": "9ff43bf06ed189d3e193643a756de41e798487c6"
+  },
+  "chapter_id": "chapter_19",
+  "cycle": 3,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "Ch19 contains no more than 20 hand/palm/finger references.",
+      "chapter_id": "chapter_19",
+      "cycle": 3,
+      "evidence": "Ch19 (lines 8735-9225): 44 hand/palm/finger references in 244 prose lines. Manuscript-wide total: 616.",
+      "finding_id": "R19",
+      "problem": "Ch19 has 44 hand references in 244 prose lines, the highest density ratio in the novel after Ch13. The resolution chapter defaults to hands for nearly every physical and emotional beat.",
+      "rewrite_direction": "Audit hand references in Ch19 and cut at least 50%. The reunion and resolution scenes can use a wider range of physical details (voice, posture, gaze, proximity).",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "The exact phrases 'I'm glad you're alive' and 'I'm not ready for the rest of it' each appear only once in Ch19.",
+      "chapter_id": "chapter_19",
+      "cycle": 3,
+      "evidence": "Ch19 lines 8909+8913: 'I'm glad you're alive.' / 'I'm not ready for the rest of it,' Maren said.; Ch19 line 9157: 'I'm glad you're alive. I'm not ready for the rest of it, so don't push.'",
+      "finding_id": "R20",
+      "problem": "Within Ch19, Maren's two key sentences ('I'm glad you're alive' and 'I'm not ready for the rest of it') appear near-verbatim at lines 8909/8913 and again at line 9157. The 15-word near-exact repetition within a single chapter undermines the emotional weight of both instances.",
+      "rewrite_direction": "Keep one instance and rework the other. If the first (8909/8913) is the stronger dramatic moment, line 9157 should reference the earlier exchange without quoting it ('She said the same thing again, or close enough').",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "By the end of Chapter 19, the Vel/Maren thread should have moved to a leverage state that is clearly different from the first reunion exchange, and the chapter should not repeat the five-years/intake grievance plus 'not ready for the rest' combination without adding a new consequence.",
+      "chapter_id": "chapter_19",
+      "cycle": 3,
+      "evidence": "Chapter 18 ends by promising the Maren payoff immediately, but Chapter 19 turns that promise into two near-identical deferrals: first Maren's intake/house exchange lands on the five-years-of-intake history plus 'I'm glad you're alive' and 'I'm not ready for the rest of it,' then the later three-person house scene repeats the same five-years/intake grievance and the same refusal almost verbatim after a long council detour: snapshots/cycle_03/FINAL_NOVEL.md:8730; snapshots/cycle_03/FINAL_NOVEL.md:8875; snapshots/cycle_03/FINAL_NOVEL.md:8909; snapshots/cycle_03/FINAL_NOVEL.md:8913; snapshots/cycle_03/FINAL_NOVEL.md:9135; snapshots/cycle_03/FINAL_NOVEL.md:9157.",
+      "finding_id": "LW09-004",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:8730",
+            "excerpt": "8730: For the first time in forty years, she had to wait for the corner to produce the body before knowing who was coming.",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:8875",
+            "excerpt": "8875: Maren said, \"I used to do this stupid walk to intake every time somebody came through who might know your name.\"",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:8909",
+            "excerpt": "8909: Maren broke it without looking away. \"I'm glad you're alive.\"",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:8913",
+            "excerpt": "8913: \"I'm not ready for the rest of it,\" Maren said. \"Not yet. I left council in the middle of an argument and Pol's going to send somebody down with a map any minute because he thinks weather negotiates with stubbornness.\"",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:9135",
+            "excerpt": "9135: Maren set the new roll down on top of the others and said, \"I had intake come tell me every time somebody crossed who might know your name. They did it for five years. Three years ago I told them to stop. I got tired of walking up there to collect strangers.\"",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_03/FINAL_NOVEL.md:9157",
+            "excerpt": "9157: Maren wiped her wet fingers on her trouser leg and said, quieter, \"I'm glad you're alive. I'm not ready for the rest of it, so don't push.\"",
+            "source_file": "snapshots/cycle_03/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "pass_hint": "p1_structural_craft",
+      "problem": "The window promises a high-voltage reunion at the 18/19 boundary, but Chapter 19 spends that voltage on two versions of the same withheld conversation. Because the second Maren scene lands on essentially the same leverage state as the first, the chapter diffuses the payoff instead of converting it into a new emotional or practical condition.",
+      "rewrite_direction": "Either let the first Maren scene land a materially new term between them, or let the later scene force a sharper change than another restatement of old hurt and temporary refusal. If the council orientation must stay, shorten it or move it so it does not sit between two versions of the same reunion beat.",
+      "severity": "HIGH",
+      "source": "local_window",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "has_locator_excerpts": true,
+  "input_snapshot_hash": "c7a8b25d464309988c624e0a01318fe54df70d0196b0c092bf06fb3f780baf8f",
+  "must_fix_count": 3,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness.",
+    "Do not open a chapter by restating information the reader received at the end of the previous chapter. Each chapter must begin with forward motion, a new development, or at most a single brief orienting clause before advancing. Travel summaries, logistics recaps, and re-explanations of the prior chapter's final state are revision targets, not opening strategies.",
+    "Each chapter should contain no more than 20 hand/palm/finger references. Keep only load-bearing instances where hands perform a specific, non-substitutable action (holding a specific object, performing a skill, a hand-specific injury). Replace atmospheric and habitual hand references with varied body parts: posture, jaw, shoulders, feet, weight shift, breathing, gaze. Do not replace hand references with another single substitute that creates a new tic.",
+    "Retain at most three 'the shape of [abstract noun]' constructions across the entire manuscript. Specifically retain: (1) Ch13 line 5564's contrastive pair ('Not the shape of a hope. The shape of a requirement.') which earns its repetition through deliberate parallelism, and (2) Ch18 line 8602's 'The shape of the world started to slip' which may be defensible as literal threshold description. Replace all other instances with constructions native to their scene: physical metaphors, Ledger-vocabulary substitutions, or direct statement. No replacement phrase should introduce a new recurring template.",
+    "Do not re-describe the physical appearance of a character, object, or location that has already been established in an earlier chapter, unless the re-description serves a genuinely new narrative function: a materially changed physical state (new injury, visible deterioration), a unique institutional perspective that reframes the detail, or a plot-driving reaction to the detail. On reappearance, use a brief reference or a single new observation rather than a full visual re-inventory. Trust the reader's memory across chapter boundaries."
+  ],
+  "original_snapshot_file": "snapshots/cycle_03/chapters/chapter_19.md",
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This is a dark comedy about a world where doing nothing is rational and doing something is self-destruction. Both the comedy and the darkness must be fully committed. Do not soften combat into choreography or spectacle \u2014 fights should hurt, cost real things, and leave damage. Do not soften the comedy into gentle satire \u2014 the absurdity of the Hoarded and their agents should be genuinely funny, sometimes cruelly so. Do not soften grief into sentimentality or revelation into epiphany. The premise demands a tonal register that holds absurdity and genuine pain in the same hand. When the material is uncomfortable \u2014 the physical reality of injury, the moral weight of exploitation, the specific grief of losing someone to a place you cannot reach \u2014 lean into specificity rather than retreating to safety. A draft that never risks anything produces a novel that never moves anyone.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism in combat, injury, consequence, or emotional extremity is a craft failure. If Vel breaks ribs, the reader should feel the break \u2014 the specific wrongness of breathing with cracked bone, the way she holds herself, the pain when she forgets. If Kem is terrified, the terror should be specific and physical: hands, stomach, breathing, the precise quality of his fear. Do not abstract away from embodied experience into summary or generalization.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for all characters except Sable (low) and early-book Kem (initially low, shifting to high). Uncontracted forms are reserved for deliberate emphasis, formal Hoarded speech contexts, or bureaucratic register. In casual conversation, unjustified full-form lines should be treated as suspect.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Vary chapter rhythm aggressively. Combat chapters should be compressed and physical. Discovery chapters should have more room for observation and the surprise of new information. Quiet chapters should breathe \u2014 longer scenes, more sensory detail, conversations that circle rather than drive. Intercut chapters (like Ch 11's Kem/Sable split and Ch 17's Sable intercut) should have contrasting textures between sections. No two consecutive chapters should have the same structural shape: vary scene count, dialogue density, pacing, and the ratio of action to interiority. Dark comedy chapters in the back half (Ch 12, 14, 15, 17) must commit fully to comic energy as a primary narrative mode: the absurdity of Hoarded bureaucratic language applied to human exploitation, the grim humor of fighting for your life with single-digit levels, the comedy of precision teamwork performed in emotional silence. These chapters carry genuine stakes alongside their comedy \u2014 the tonal fusion is the point, not tonal alternation.",
+      "diction": "Concrete, physical, occasionally wry. Avoids both literary pretension and genre cliche. The world has its own vocabulary (Hoarded, Spent, Ledger, Stillness, the Scour, the Margins) and these terms should be used naturally, not defined in exposition. Metaphors earned from the world's own materials \u2014 spending, counting, weight, erosion \u2014 rather than imported from outside the setting. The Hoarded institutional register \u2014 bureaucratic classifications, procedural euphemism, administrative language applied to human exploitation \u2014 is a specific comic instrument in the Margins chapters. When rendering Hoarded documents, policies, or institutional speech, the language should be precise, procedural, and devastating in its indifference.",
+      "forbidden_drift_patterns": [
+        "Narrator-as-comedian: comedy arises from situation and character, not from narrative commentary or winking asides to the reader",
+        "Ability-use described like video game tooltips: do not produce stat readouts or system notifications in prose",
+        "Emotional temperature permanently at maximum: not every scene is a crisis and not every internal moment is an epiphany",
+        "Generic fantasy description: landscape, architecture, and weather must be specific to this world's conditions, not recycled from the fantasy-prose commons",
+        "Competence porn: do not let characters be consistently impressive \u2014 they should fumble, miscalculate, and fail at things that are hard",
+        "Thematic underlining: the prose should not highlight its own meanings or signal when something is symbolically significant"
+      ],
+      "narrative_distance": "Close third-person limited, shifting with the POV character. Vel chapters are compressed and physical \u2014 the prose should feel like it is counting. Kem chapters are more expansive and curious \u2014 the prose has more room for observation and surprise. Sable chapters are structured and institutional, loosening as she changes. The POV break in Ch 13\u201314 (two consecutive Kem chapters) should make Vel's absence felt: the reader is locked inside Kem's betrayed perspective, and the prose should reflect the claustrophobia of a mind cycling through anger without access to the other person's interiority. The distance should be intimate enough to access characters' internal arithmetic but not so close it becomes stream-of-consciousness.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Varied by chapter texture and scene pressure. Short declarative sentences in combat. Longer, conditional, clause-heavy sentences in reflection. Comma-heavy run-ons in panic or exhilaration. The Ledger's arithmetic should bleed into prose rhythm during ability-use moments \u2014 characters counting, weighing, calculating. Quiet chapters should breathe. Action chapters should compress. Two consecutive chapters should not share the same dominant rhythm.",
+      "sensory_bias": [
+        "proprioceptive awareness \u2014 the body's internal sense of position, strain, damage, and capacity",
+        "physical weight and effort \u2014 characters feel gravity, distance, fatigue",
+        "the Ledger's feedback \u2014 a character's awareness of their remaining levels as a persistent background sensation",
+        "environmental specificity \u2014 terrain, weather, architecture rendered through what a body encounters"
+      ]
+    }
+  }
+}

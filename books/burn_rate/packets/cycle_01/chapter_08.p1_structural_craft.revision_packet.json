@@ -1,0 +1,197 @@
+{
+  "acceptance_targets": [
+    "[AWARD_AFTERMATH_CERTIFICATION] In revised snapshots/cycle_01/chapters/chapter_08.md:199-265, every paragraph after Vel considers healing either introduces a new fact, changes the group's next move, or sharpens the Sable threat. If a paragraph can be removed without losing one of those four aftermath beats, the chapter still fails this test.",
+    "[CRAFT_PERIMETER_DELAY] Before Vel's ribs break in revised snapshots/cycle_01/chapters/chapter_08.md:125-130, a cold reader can answer from the text alone why Kem has not already raised the barrier. If the answer still requires reader inference beyond the revised passage, this finding remains unresolved.",
+    "[R018] Ch8 em-dash density below 10%.",
+    "[R047] Ch8 'She'-opened sentences do not exceed 7%.",
+    "[LW03-002] If chapter 8 is read after chapter 6, the reader never receives Sable-specific command information through Vel's narration before Vel herself could reasonably infer it from the scene.",
+    "[LW04-001] A consecutive read from chapter 7 into chapter 8 reaches the pursuit setup without feeling that the novel has to explain Spent-town level economics twice. Chapter 8 should add route-specific detail or character texture, not restate the chapter 7 lesson."
+  ],
+  "aggregation_applied": {
+    "decisions_file": "packets/cycle_01/aggregation_decisions.json",
+    "decisions_sha1": "880a450ac33b90efc1364a17207490490d407904"
+  },
+  "chapter_id": "chapter_08",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "In revised snapshots/cycle_01/chapters/chapter_08.md:199-265, every paragraph after Vel considers healing either introduces a new fact, changes the group's next move, or sharpens the Sable threat. If a paragraph can be removed without losing one of those four aftermath beats, the chapter still fails this test.",
+      "chapter_id": "chapter_08",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_08.md:199; snapshots/cycle_01/chapters/chapter_08.md:203; snapshots/cycle_01/chapters/chapter_08.md:213; snapshots/cycle_01/chapters/chapter_08.md:231; snapshots/cycle_01/chapters/chapter_08.md:263",
+      "finding_id": "AWARD_AFTERMATH_CERTIFICATION",
+      "problem": "Once the encounter's real price is already clear, the back third keeps certifying the same loss in new phrasing rather than buying enough additional dramatic payload. Vel's refusal to heal, Kem's 183 report, Dren's wound management, and the Sable reveal are the necessary aftermath beats; the repeated twenty-two/budget-wrecked summaries around them make the chapter feel less shortlist-sharp than its core engine deserves.",
+      "rewrite_direction": "Compress the reiterative arithmetic around snapshots/cycle_01/chapters/chapter_08.md:199, snapshots/cycle_01/chapters/chapter_08.md:203, snapshots/cycle_01/chapters/chapter_08.md:231, snapshots/cycle_01/chapters/chapter_08.md:261, and snapshots/cycle_01/chapters/chapter_08.md:263. Keep the must-land aftermath work: Vel explicitly choosing not to spend the two-level heal, Kem reporting 183 and the wasted perimeter scale, Dren's immediate wound stabilization and travel constraint, Sable's notebook reveal, and the group's decision to keep moving. Cut or fold any paragraph that only re-says the budget damage after those beats have already landed.",
+      "severity": "MEDIUM",
+      "source": "award",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Before Vel's ribs break in revised snapshots/cycle_01/chapters/chapter_08.md:125-130, a cold reader can answer from the text alone why Kem has not already raised the barrier. If the answer still requires reader inference beyond the revised passage, this finding remains unresolved.",
+      "chapter_id": "chapter_08",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_08.md:65; snapshots/cycle_01/chapters/chapter_08.md:69; snapshots/cycle_01/chapters/chapter_08.md:145; snapshots/cycle_01/chapters/chapter_08.md:147; snapshots/cycle_01/chapters/chapter_08.md:213",
+      "finding_id": "CRAFT_PERIMETER_DELAY",
+      "problem": "The chapter's injury-and-overspend turn depends on Vel keeping Kem passive until after she has taken the rib hit, but the page does not make clear why an expert cost-calculator facing five level-300 pursuers on open ground would reject an earlier barrier from her 225-level ally. Because the later perimeter works immediately, the delay reads less like tactics and more like authorial staging.",
+      "rewrite_direction": "In snapshots/cycle_01/chapters/chapter_08.md:65, snapshots/cycle_01/chapters/chapter_08.md:69, snapshots/cycle_01/chapters/chapter_08.md:145, and snapshots/cycle_01/chapters/chapter_08.md:147, add a concrete tactical reason Vel does not call for a perimeter immediately, or change the action so she does deploy Kem sooner and the later damage arises from a clearly shown limitation of that choice. The missing piece is not a general reminder that Kem is wasteful; it is a local, scene-specific reason this option is unusable before the Force Push lands.",
+      "severity": "MEDIUM",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch8 em-dash density below 10%.",
+      "chapter_id": "chapter_08",
+      "cycle": 1,
+      "evidence": "Ch8: 62/132 = 47.0%.",
+      "finding_id": "R018",
+      "problem": "Ch8 at 47.0% em-dash density.",
+      "rewrite_direction": "Cut at least 49 of 62. Target: no more than 13 em-dash lines.",
+      "severity": "HIGH",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch8 'She'-opened sentences do not exceed 7%.",
+      "chapter_id": "chapter_08",
+      "cycle": 1,
+      "evidence": "Ch8: 33 'She' out of 375 = 8.8%.",
+      "finding_id": "R047",
+      "problem": "Ch8 at 8.8% 'She' opener density.",
+      "rewrite_direction": "Vary at least 7 of 33. Target: no more than 26 (7%).",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "If chapter 8 is read after chapter 6, the reader never receives Sable-specific command information through Vel's narration before Vel herself could reasonably infer it from the scene.",
+      "chapter_id": "chapter_08",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/FINAL_NOVEL.md:1844 labels the gray-cloak attackers as \"Sable Orm's retrieval team,\" and snapshots/cycle_01/FINAL_NOVEL.md:2032 says the watcher walks back toward the five people she'd been assigned to lead.",
+      "finding_id": "LW03-002",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:1844",
+            "excerpt": "1844: Sable Orm's retrieval team.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:2032",
+            "excerpt": "2032: Then she turned and walked back to the agents \u2014 she wasn't hurrying or running, just walking with the unhurried gait of someone on her own schedule, crossing the trampled barley toward the five people she'd been assigned to lead and had apparently decided to observe instead.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "pass_hint": "p1_structural_craft",
+      "problem": "Chapter 8 is in Vel-close narration, but those two beats import chapter-6-only information before Vel has any plausible way to know the observer's name or formal command role. That punctures viewpoint discipline and also softens the later notebook reveal, because the prose has already quietly told the reader who the absent sixth figure is.",
+      "rewrite_direction": "Keep the chapter-8 labels inside Vel's observable frame until she can genuinely identify Sable. Early references should stay at the level of \"five Hoarded agents\" and \"the woman watching them,\" with the leadership frame arriving only after recognition or later confirmation.",
+      "severity": "HIGH",
+      "source": "local_window",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "A consecutive read from chapter 7 into chapter 8 reaches the pursuit setup without feeling that the novel has to explain Spent-town level economics twice. Chapter 8 should add route-specific detail or character texture, not restate the chapter 7 lesson.",
+      "chapter_id": "chapter_08",
+      "cycle": 1,
+      "evidence": "Chapter 7 already lands the outside-the-Vault spending lesson through the healing ward, wall repair, and Dren's Mira math at snapshots/cycle_01/FINAL_NOVEL.md:1567, snapshots/cycle_01/FINAL_NOVEL.md:1587, and snapshots/cycle_01/FINAL_NOVEL.md:1701. Chapter 8 opens by explaining the same Fertility Charm economics again through the barley gradient at snapshots/cycle_01/FINAL_NOVEL.md:1818 and snapshots/cycle_01/FINAL_NOVEL.md:1820 before the pursuit arrives.",
+      "finding_id": "LW04-001",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:1567",
+            "excerpt": "1567: A low, warm vibration ran under everything \u2014 Fertility Charms, he realized, active in the fields to the east. Not one but dozens, the combined output of farmers spending levels daily to make soil yield more than it would on its own. The sound was like standing near a hive, a thrumming he felt in his back teeth before he heard it with his ears. Layered over that: the crack and grind of Shaping work, someone reshaping stone on the settlement's far side, a distant rhythm of ability striking material. And closer, something else \u2014 a pulse he couldn't identify at first. Rhythmic, gentle, warm. It rose and fell like breathing.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:1587",
+            "excerpt": "1587: She moved to the next section and started again. Each repair cost something \u2014 a fraction of a level, a fraction of a fraction, but it accumulated. Every time she pressed her hand to the stone she was permanently diminished by some small measure. She was choosing to do it because the wall needed fixing.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:1701",
+            "excerpt": "1701: \"Mira. She's eight. Got a bone thing that's been eating at her legs for the past year. There's a healer three towns north who can treat it \u2014 a deep Restoration, takes multiple sessions. It costs.\" He looked at the space between himself and Vel as if the money she'd offered were sitting there, visible. \"What you're paying covers about half. The other half I've been scraping together run by run. Callowfield gets me maybe a quarter. So the math on your offer is good. The math on going south with \u2014\" He nodded at Kem. \"\u2014 with whatever this is, that math is less clear.\"",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:1818",
+            "excerpt": "1818: \"Smart.\" A pause. \"That's not good barley, by the way. Fertility Charm's worn thin. You can see where it stops \u2014 the color changes about fifty meters in.\"",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:1820",
+            "excerpt": "1820: Vel could see it. A line across the field where the green darkened, the stalks thickened, and then \u2014 nothing dramatic, just a gradient \u2014 the barley became thinner, paler, working harder for less. The line between charmed land and uncharmed land. Every farmer in the Spent Towns knew that line. It was the border between what you could afford and what you couldn't.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "pass_hint": "p1_structural_craft",
+      "problem": "Read back-to-back, chapter 8 spends its opening runway restating a lesson chapter 7 has already dramatized: ordinary southern life runs on practical, budgeted spending. Because the previous chapter has just made that point in scene, the repeated explanation blunts the handoff into the attack chapter and makes the opening feel like another teaching lap instead of new movement.",
+      "rewrite_direction": "Trim chapter 8's agronomy/economics recap to only the genuinely new route detail or Dren-specific texture, then get to Vel hearing the wrong sounds sooner. Let chapter 7 own the broad discovery that Spent communities spend levels as daily labor.",
+      "severity": "MEDIUM",
+      "source": "local_window",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "has_locator_excerpts": true,
+  "input_snapshot_hash": "7694a2bf3a32c533683e43dda3bb6aec63477f813cad0bf5d52f877502c78afa",
+  "must_fix_count": 6,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness.",
+    "After a scene has shown its meaning through dramatized action, dialogue, or concrete imagery, do not add narrator passages that explain, paraphrase, or certify that meaning in abstract language. If a paragraph can be removed without losing new information \u2014 and it exists only to restate what the scene has already proved \u2014 cut it. One sharpened summary beat per major scene movement is permissible if it adds genuine pressure or new information; a second sentence restating the same idea is not.",
+    "No dialogue line may reproduce or closely echo the wording, sentence structure, or cadence of any style-bible example line. Example lines are calibration-only \u2014 they demonstrate register and rhythm, not actual manuscript dialogue. When a draft line shares more than 40% of its phrasing or the same distinctive syntactic skeleton as an example line, it must be rewritten from scratch while preserving the character's voice profile constraints. This applies to all characters, including recalled or paraphrased dialogue from earlier chapters.",
+    "Under emotional or tactical pressure, no character may deliver a polished, balanced, quotable thematic diagnosis in dialogue. Accusation, confession, revelation, and argument should arrive through interruption, self-correction, partial articulation, concrete reference, or unfinished syntax rather than finished mini-speeches. If a dialogue line can be quoted cleanly out of context as a theme statement, it needs roughening. Characters should sound like they are thinking under pressure, not delivering prepared remarks.",
+    "The 'not X, not Y, but Z' or 'not X \u2014 Y' corrective-negation pattern may appear no more than twice per chapter across all prose and dialogue. When the pattern recurs beyond that limit, replace with direct statement, image, or a different syntactic shape. Each POV should render the negation-correction move through character-specific sensory logic if used at all.",
+    "Each chapter must keep em-dash-containing prose lines below 10% of total prose lines. When revising, prioritize cutting parenthetical asides and appositive interruptions that can be restructured as independent clauses or joined with commas, colons, or periods. Do not simply replace em-dashes with other punctuation mechanically \u2014 restructure the sentence so it does not need the interruption."
+  ],
+  "original_snapshot_file": "snapshots/cycle_01/chapters/chapter_08.md",
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This is a dark comedy about a world where doing nothing is rational and doing something is self-destruction. Both the comedy and the darkness must be fully committed. Do not soften combat into choreography or spectacle \u2014 fights should hurt, cost real things, and leave damage. Do not soften the comedy into gentle satire \u2014 the absurdity of the Hoarded and their agents should be genuinely funny, sometimes cruelly so. Do not soften grief into sentimentality or revelation into epiphany. The premise demands a tonal register that holds absurdity and genuine pain in the same hand. When the material is uncomfortable \u2014 the physical reality of injury, the moral weight of exploitation, the specific grief of losing someone to a place you cannot reach \u2014 lean into specificity rather than retreating to safety. A draft that never risks anything produces a novel that never moves anyone.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism in combat, injury, consequence, or emotional extremity is a craft failure. If Vel breaks ribs, the reader should feel the break \u2014 the specific wrongness of breathing with cracked bone, the way she holds herself, the pain when she forgets. If Kem is terrified, the terror should be specific and physical: hands, stomach, breathing, the precise quality of his fear. Do not abstract away from embodied experience into summary or generalization.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for all characters except Sable (low) and early-book Kem (initially low, shifting to high). Uncontracted forms are reserved for deliberate emphasis, formal Hoarded speech contexts, or bureaucratic register. In casual conversation, unjustified full-form lines should be treated as suspect.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Vary chapter rhythm aggressively. Combat chapters should be compressed and physical. Discovery chapters should have more room for observation and the surprise of new information. Quiet chapters should breathe \u2014 longer scenes, more sensory detail, conversations that circle rather than drive. Intercut chapters (like Ch 11's Kem/Sable split and Ch 17's Sable intercut) should have contrasting textures between sections. No two consecutive chapters should have the same structural shape: vary scene count, dialogue density, pacing, and the ratio of action to interiority. Dark comedy chapters in the back half (Ch 12, 14, 15, 17) must commit fully to comic energy as a primary narrative mode: the absurdity of Hoarded bureaucratic language applied to human exploitation, the grim humor of fighting for your life with single-digit levels, the comedy of precision teamwork performed in emotional silence. These chapters carry genuine stakes alongside their comedy \u2014 the tonal fusion is the point, not tonal alternation.",
+      "diction": "Concrete, physical, occasionally wry. Avoids both literary pretension and genre cliche. The world has its own vocabulary (Hoarded, Spent, Ledger, Stillness, the Scour, the Margins) and these terms should be used naturally, not defined in exposition. Metaphors earned from the world's own materials \u2014 spending, counting, weight, erosion \u2014 rather than imported from outside the setting. The Hoarded institutional register \u2014 bureaucratic classifications, procedural euphemism, administrative language applied to human exploitation \u2014 is a specific comic instrument in the Margins chapters. When rendering Hoarded documents, policies, or institutional speech, the language should be precise, procedural, and devastating in its indifference.",
+      "forbidden_drift_patterns": [
+        "Narrator-as-comedian: comedy arises from situation and character, not from narrative commentary or winking asides to the reader",
+        "Ability-use described like video game tooltips: do not produce stat readouts or system notifications in prose",
+        "Emotional temperature permanently at maximum: not every scene is a crisis and not every internal moment is an epiphany",
+        "Generic fantasy description: landscape, architecture, and weather must be specific to this world's conditions, not recycled from the fantasy-prose commons",
+        "Competence porn: do not let characters be consistently impressive \u2014 they should fumble, miscalculate, and fail at things that are hard",
+        "Thematic underlining: the prose should not highlight its own meanings or signal when something is symbolically significant"
+      ],
+      "narrative_distance": "Close third-person limited, shifting with the POV character. Vel chapters are compressed and physical \u2014 the prose should feel like it is counting. Kem chapters are more expansive and curious \u2014 the prose has more room for observation and surprise. Sable chapters are structured and institutional, loosening as she changes. The POV break in Ch 13\u201314 (two consecutive Kem chapters) should make Vel's absence felt: the reader is locked inside Kem's betrayed perspective, and the prose should reflect the claustrophobia of a mind cycling through anger without access to the other person's interiority. The distance should be intimate enough to access characters' internal arithmetic but not so close it becomes stream-of-consciousness.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Varied by chapter texture and scene pressure. Short declarative sentences in combat. Longer, conditional, clause-heavy sentences in reflection. Comma-heavy run-ons in panic or exhilaration. The Ledger's arithmetic should bleed into prose rhythm during ability-use moments \u2014 characters counting, weighing, calculating. Quiet chapters should breathe. Action chapters should compress. Two consecutive chapters should not share the same dominant rhythm.",
+      "sensory_bias": [
+        "proprioceptive awareness \u2014 the body's internal sense of position, strain, damage, and capacity",
+        "physical weight and effort \u2014 characters feel gravity, distance, fatigue",
+        "the Ledger's feedback \u2014 a character's awareness of their remaining levels as a persistent background sensation",
+        "environmental specificity \u2014 terrain, weather, architecture rendered through what a body encounters"
+      ]
+    }
+  }
+}

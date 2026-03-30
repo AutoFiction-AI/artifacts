@@ -1,0 +1,213 @@
+{
+  "acceptance_targets": [
+    "[CRAFT_HIDDEN_MOTIVE_OVEREXPOSED] PASS if snapshots/cycle_01/chapters/chapter_03.md:117-121, snapshots/cycle_01/chapters/chapter_03.md:139-141, snapshots/cycle_01/chapters/chapter_03.md:205-207, and snapshots/cycle_01/chapters/chapter_03.md:317-325 make it clear that Vel has a serious ulterior motive tied to Kem's remaining levels while withholding the operational details; FAIL if those spans still let a reader state from chapter 3 alone how Kem's descent affects the threshold or that Vel has spent years hunting a high-level co-spender.",
+    "[R021] Ch3 em-dash density below 10%.",
+    "[R038] Ch3 'He'-opened sentences do not exceed 7%.",
+    "[R058] Ch3 does not exceed 1.0 per 800 words for either pattern.",
+    "[LW01-001] By the time Vel asks what he can trade for boots, the reader already knows where Kem has been carrying those valuables, or chapter 3 explicitly explains how he assembled them after leaving the Vault.",
+    "[LW01-003] Within the first movement of chapter 3, the reader is in materially new territory: alliance terms, withheld information, or changed leverage. Chapter 3 should no longer spend its opening primarily reiterating why Kem needs Vel."
+  ],
+  "aggregation_applied": {
+    "decisions_file": "packets/cycle_01/aggregation_decisions.json",
+    "decisions_sha1": "880a450ac33b90efc1364a17207490490d407904"
+  },
+  "chapter_id": "chapter_03",
+  "cycle": 1,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "PASS if snapshots/cycle_01/chapters/chapter_03.md:117-121, snapshots/cycle_01/chapters/chapter_03.md:139-141, snapshots/cycle_01/chapters/chapter_03.md:205-207, and snapshots/cycle_01/chapters/chapter_03.md:317-325 make it clear that Vel has a serious ulterior motive tied to Kem's remaining levels while withholding the operational details; FAIL if those spans still let a reader state from chapter 3 alone how Kem's descent affects the threshold or that Vel has spent years hunting a high-level co-spender.",
+      "chapter_id": "chapter_03",
+      "cycle": 1,
+      "evidence": "snapshots/cycle_01/chapters/chapter_03.md:117; snapshots/cycle_01/chapters/chapter_03.md:118; snapshots/cycle_01/chapters/chapter_03.md:119; snapshots/cycle_01/chapters/chapter_03.md:139; snapshots/cycle_01/chapters/chapter_03.md:205; snapshots/cycle_01/chapters/chapter_03.md:321; snapshots/cycle_01/chapters/chapter_03.md:323",
+      "finding_id": "CRAFT_HIDDEN_MOTIVE_OVEREXPOSED",
+      "problem": "The chapter's central concealment is not actually concealed. Vel's private read on Kem jumps from 'his number matters' to a near-operational explanation of the threshold mechanics and her years-long search for exactly this kind of high-level spender. That turns a planned light plant of manipulation into explicit disclosure, so the alliance reads as already-decoded exploitation instead of an uneasy bargain whose full shape is still latent.",
+      "rewrite_direction": "At snapshots/cycle_01/chapters/chapter_03.md:117-121, keep Vel's bodily reaction to Kem's 286 but remove the direct explanation of cascade/threshold function. At snapshots/cycle_01/chapters/chapter_03.md:139-141 and snapshots/cycle_01/chapters/chapter_03.md:205-207, preserve that she is withholding consequential information from Kem without letting the narration fully specify the hidden plan. At snapshots/cycle_01/chapters/chapter_03.md:317-325, keep the closing pressure on his level count and her need to manage his spending, but cut the recap that names him as the long-sought solution to an eight-year problem.",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch3 em-dash density below 10%.",
+      "chapter_id": "chapter_03",
+      "cycle": 1,
+      "evidence": "Ch3: 62/167 = 37.1%.",
+      "finding_id": "R021",
+      "problem": "Ch3 at 37.1% em-dash density \u2014 still 3.7x over 10% threshold.",
+      "rewrite_direction": "Cut at least 45 of 62. Target: no more than 17 em-dash lines.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch3 'He'-opened sentences do not exceed 7%.",
+      "chapter_id": "chapter_03",
+      "cycle": 1,
+      "evidence": "Ch3: 45 'He'-opened sentences out of 362 = 12.4%.",
+      "finding_id": "R038",
+      "problem": "Ch3 at 12.4% 'He' opener density.",
+      "rewrite_direction": "Vary at least 20 of 45. Target: no more than 25 (7%).",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch3 does not exceed 1.0 per 800 words for either pattern.",
+      "chapter_id": "chapter_03",
+      "cycle": 1,
+      "evidence": "Ch3: 15 'something' in 5,009 words = 2.4/800; 14 'the way' = 2.2/800.",
+      "finding_id": "R058",
+      "problem": "Ch3 exceeds threshold for both patterns.",
+      "rewrite_direction": "Replace at least 9 'something' and 8 'the way.' Target: both below 1.0/800.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "By the time Vel asks what he can trade for boots, the reader already knows where Kem has been carrying those valuables, or chapter 3 explicitly explains how he assembled them after leaving the Vault.",
+      "chapter_id": "chapter_03",
+      "cross_chapter_context": "Ch2 inventories Kem's departure from the Vault (formal Rite robes, the House signet taken from the gate stand) but does not mention a satchel or removable formal valuables packed in a bag. Change the barterable items in Ch3 so they come from clothing and accessories Kem is currently wearing (Rite attire, jewelry, formal fasteners), not from a satchel that Ch2 never established.",
+      "cycle": 1,
+      "evidence": "Chapter 3 later produces a small satchel containing additional formal pieces for barter, then has Kem pick that satchel up to leave, without any acquisition beat in between: snapshots/cycle_01/FINAL_NOVEL.md:653; snapshots/cycle_01/FINAL_NOVEL.md:677",
+      "finding_id": "LW01-001",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:653",
+            "excerpt": "653: \"And I have a few other \u2014 formal pieces, from the Rite. Things I was wearing when I left. They're in my bag.\" He gestured at a small satchel on the ground \u2014 Vault-made, embroidered, absurd for road travel. \"Would those buy boots?\"",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:677",
+            "excerpt": "677: He picked up his satchel, left the ruined boots on the log, and stepped onto the gravel road. The sharp stones pressed into his blisters immediately \u2014 she could see it in the way he shifted his weight, looking for a stride that distributed the pain.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "pass_hint": "p1_structural_craft",
+      "problem": "A concrete prop appears across the boundary with no setup. Because chapter 2 goes out of its way to inventory what Kem has on him, the satchel reads as a continuity slip rather than a harmless omitted detail.",
+      "rewrite_direction": "Either seed the satchel and the removable formal valuables in chapter 2 when Kem leaves the Vault, or change chapter 3 so the barterable items come directly from clothing and accessories already on his person.",
+      "severity": "HIGH",
+      "source": "local_window",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Within the first movement of chapter 3, the reader is in materially new territory: alliance terms, withheld information, or changed leverage. Chapter 3 should no longer spend its opening primarily reiterating why Kem needs Vel.",
+      "chapter_id": "chapter_03",
+      "cycle": 1,
+      "evidence": "Chapter 2 already uses Kem's solo travel to establish the comic function 'privileged defector burns levels on basic survival; ' and chapter 3 spends its opening movement performing that same function again before the alliance truly begins: snapshots/cycle_01/FINAL_NOVEL.md:252; snapshots/cycle_01/FINAL_NOVEL.md:332; snapshots/cycle_01/FINAL_NOVEL.md:375; snapshots/cycle_01/FINAL_NOVEL.md:427; The reader has just watched Kem waste levels on the gate; the banquet-scale Sustenance Charm; and comfort abilities; then chapter 3 replays that material first through Vel's forensic trail read and then through Kem's spoken itemization of the same mistakes: snapshots/cycle_01/FINAL_NOVEL.md:298; snapshots/cycle_01/FINAL_NOVEL.md:336; snapshots/cycle_01/FINAL_NOVEL.md:377; snapshots/cycle_01/FINAL_NOVEL.md:433",
+      "finding_id": "LW01-003",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:252",
+            "excerpt": "252: Kem did not know how to open a door, and this was not a figure of speech. The doors had handles \u2014 brass, polished weekly \u2014 and in principle the mechanism was simple. Pull or push, depending on the hinge direction, and the door would move. But Kem had never done it. Twenty-six years in the Vault and every door had been opened for him, closed behind him, held at the appropriate angle for the appropriate duration by people whose job it was to manage doors so that Kem and people like Kem never had to think about them.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:332",
+            "excerpt": "332: He knew the theory. Sustenance Charms were a basic utility ability \u2014 one of the first things children in the Spent Towns learned to calibrate, or so his tutors had told him. The principle was straightforward: draw on the Ledger to generate food and water from ambient energy, scaled to need. A single person's meal might cost one or two levels. Efficient, practical, the most common ability use in the world outside the Vault. Something any person at level one hundred and fifty did daily without thinking about it.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:375",
+            "excerpt": "375: She found him by the trail he'd left.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:427",
+            "excerpt": "427: \"Tell me what you spent them on,\" she said.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:298",
+            "excerpt": "298: The Projection Shield came again. Smaller this time \u2014 his mind, apparently, retained some memory of the last deployment and had attempted calibration \u2014 but still too much, still a rippling wall of force that crackled with surplus energy. The latch mechanism shattered. The gate groaned and swung outward on its hinges, not violently but firmly, and warm late-spring air flooded into the hall with a complexity of smell and temperature that hit Kem like a change in altitude. The air smelled of soil and growing things and something he couldn't identify \u2014 something open and directionless that turned out, he would learn later, to be the smell of distance itself.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:336",
+            "excerpt": "336: He activated the charm.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:377",
+            "excerpt": "377: Not footprints \u2014 those were everywhere, and half the north road carried traffic this time of year. What Vel followed was the residue. Two days north of the settlement where she'd healed the farmer, she picked up the first sign: a scorch mark in a roadside clearing where someone had used a Flame Charm on a pile of dry kindling. The kindling itself was still there, blackened to powder, the heat signature too uniform and too thorough for any natural fire. Someone who didn't know what a campfire was supposed to look like had pointed an ability at it and held on until everything burned.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_01/FINAL_NOVEL.md:433",
+            "excerpt": "433: He was quiet for a beat. Then he started listing them, and the formality of his speech \u2014 the Hoarded habit of complete, qualified, subordinated sentences \u2014 made the inventory worse. Each item arrived fully grammatical and absurd.",
+            "source_file": "snapshots/cycle_01/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "pass_hint": "p1_structural_craft",
+      "problem": "These adjacent chapters do too much of the same job. Instead of chapter 3 feeling like the collision that changes the book's engine, its first half still exists largely to prove Kem is wasteful and inexperienced, which chapter 2 already proved at full scene length.",
+      "rewrite_direction": "Let Ch2 own Kem's incompetence. Compress Ch3's recap of Kem's wasteful spending to one vivid residue beat and move immediately into fresh material: Vel's leverage, the alliance terms, the power imbalance, the withheld information. Do not re-explain oversized food output, unnecessary purification, oversized shelter, or casual waste that Ch2 has already dramatized at full scene length. If Kem verbalizes his spending, mention only off-page incidentals or what those choices meant to him, not the same list the reader just saw.",
+      "severity": "HIGH",
+      "source": "local_window",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "has_locator_excerpts": true,
+  "input_snapshot_hash": "012c22c715829fdaa2695becf671b7370d3e9e0faa92874f384a56924df5e4b3",
+  "must_fix_count": 6,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness.",
+    "After a scene has shown its meaning through dramatized action, dialogue, or concrete imagery, do not add narrator passages that explain, paraphrase, or certify that meaning in abstract language. If a paragraph can be removed without losing new information \u2014 and it exists only to restate what the scene has already proved \u2014 cut it. One sharpened summary beat per major scene movement is permissible if it adds genuine pressure or new information; a second sentence restating the same idea is not.",
+    "No dialogue line may reproduce or closely echo the wording, sentence structure, or cadence of any style-bible example line. Example lines are calibration-only \u2014 they demonstrate register and rhythm, not actual manuscript dialogue. When a draft line shares more than 40% of its phrasing or the same distinctive syntactic skeleton as an example line, it must be rewritten from scratch while preserving the character's voice profile constraints. This applies to all characters, including recalled or paraphrased dialogue from earlier chapters.",
+    "Under emotional or tactical pressure, no character may deliver a polished, balanced, quotable thematic diagnosis in dialogue. Accusation, confession, revelation, and argument should arrive through interruption, self-correction, partial articulation, concrete reference, or unfinished syntax rather than finished mini-speeches. If a dialogue line can be quoted cleanly out of context as a theme statement, it needs roughening. Characters should sound like they are thinking under pressure, not delivering prepared remarks.",
+    "The 'not X, not Y, but Z' or 'not X \u2014 Y' corrective-negation pattern may appear no more than twice per chapter across all prose and dialogue. When the pattern recurs beyond that limit, replace with direct statement, image, or a different syntactic shape. Each POV should render the negation-correction move through character-specific sensory logic if used at all.",
+    "Each chapter must keep em-dash-containing prose lines below 10% of total prose lines. When revising, prioritize cutting parenthetical asides and appositive interruptions that can be restructured as independent clauses or joined with commas, colons, or periods. Do not simply replace em-dashes with other punctuation mechanically \u2014 restructure the sentence so it does not need the interruption."
+  ],
+  "original_snapshot_file": "snapshots/cycle_01/chapters/chapter_03.md",
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This is a dark comedy about a world where doing nothing is rational and doing something is self-destruction. Both the comedy and the darkness must be fully committed. Do not soften combat into choreography or spectacle \u2014 fights should hurt, cost real things, and leave damage. Do not soften the comedy into gentle satire \u2014 the absurdity of the Hoarded and their agents should be genuinely funny, sometimes cruelly so. Do not soften grief into sentimentality or revelation into epiphany. The premise demands a tonal register that holds absurdity and genuine pain in the same hand. When the material is uncomfortable \u2014 the physical reality of injury, the moral weight of exploitation, the specific grief of losing someone to a place you cannot reach \u2014 lean into specificity rather than retreating to safety. A draft that never risks anything produces a novel that never moves anyone.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism in combat, injury, consequence, or emotional extremity is a craft failure. If Vel breaks ribs, the reader should feel the break \u2014 the specific wrongness of breathing with cracked bone, the way she holds herself, the pain when she forgets. If Kem is terrified, the terror should be specific and physical: hands, stomach, breathing, the precise quality of his fear. Do not abstract away from embodied experience into summary or generalization.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for all characters except Sable (low) and early-book Kem (initially low, shifting to high). Uncontracted forms are reserved for deliberate emphasis, formal Hoarded speech contexts, or bureaucratic register. In casual conversation, unjustified full-form lines should be treated as suspect.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Vary chapter rhythm aggressively. Combat chapters should be compressed and physical. Discovery chapters should have more room for observation and the surprise of new information. Quiet chapters should breathe \u2014 longer scenes, more sensory detail, conversations that circle rather than drive. Intercut chapters (like Ch 11's Kem/Sable split and Ch 17's Sable intercut) should have contrasting textures between sections. No two consecutive chapters should have the same structural shape: vary scene count, dialogue density, pacing, and the ratio of action to interiority. Dark comedy chapters in the back half (Ch 12, 14, 15, 17) must commit fully to comic energy as a primary narrative mode: the absurdity of Hoarded bureaucratic language applied to human exploitation, the grim humor of fighting for your life with single-digit levels, the comedy of precision teamwork performed in emotional silence. These chapters carry genuine stakes alongside their comedy \u2014 the tonal fusion is the point, not tonal alternation.",
+      "diction": "Concrete, physical, occasionally wry. Avoids both literary pretension and genre cliche. The world has its own vocabulary (Hoarded, Spent, Ledger, Stillness, the Scour, the Margins) and these terms should be used naturally, not defined in exposition. Metaphors earned from the world's own materials \u2014 spending, counting, weight, erosion \u2014 rather than imported from outside the setting. The Hoarded institutional register \u2014 bureaucratic classifications, procedural euphemism, administrative language applied to human exploitation \u2014 is a specific comic instrument in the Margins chapters. When rendering Hoarded documents, policies, or institutional speech, the language should be precise, procedural, and devastating in its indifference.",
+      "forbidden_drift_patterns": [
+        "Narrator-as-comedian: comedy arises from situation and character, not from narrative commentary or winking asides to the reader",
+        "Ability-use described like video game tooltips: do not produce stat readouts or system notifications in prose",
+        "Emotional temperature permanently at maximum: not every scene is a crisis and not every internal moment is an epiphany",
+        "Generic fantasy description: landscape, architecture, and weather must be specific to this world's conditions, not recycled from the fantasy-prose commons",
+        "Competence porn: do not let characters be consistently impressive \u2014 they should fumble, miscalculate, and fail at things that are hard",
+        "Thematic underlining: the prose should not highlight its own meanings or signal when something is symbolically significant"
+      ],
+      "narrative_distance": "Close third-person limited, shifting with the POV character. Vel chapters are compressed and physical \u2014 the prose should feel like it is counting. Kem chapters are more expansive and curious \u2014 the prose has more room for observation and surprise. Sable chapters are structured and institutional, loosening as she changes. The POV break in Ch 13\u201314 (two consecutive Kem chapters) should make Vel's absence felt: the reader is locked inside Kem's betrayed perspective, and the prose should reflect the claustrophobia of a mind cycling through anger without access to the other person's interiority. The distance should be intimate enough to access characters' internal arithmetic but not so close it becomes stream-of-consciousness.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Varied by chapter texture and scene pressure. Short declarative sentences in combat. Longer, conditional, clause-heavy sentences in reflection. Comma-heavy run-ons in panic or exhilaration. The Ledger's arithmetic should bleed into prose rhythm during ability-use moments \u2014 characters counting, weighing, calculating. Quiet chapters should breathe. Action chapters should compress. Two consecutive chapters should not share the same dominant rhythm.",
+      "sensory_bias": [
+        "proprioceptive awareness \u2014 the body's internal sense of position, strain, damage, and capacity",
+        "physical weight and effort \u2014 characters feel gravity, distance, fatigue",
+        "the Ledger's feedback \u2014 a character's awareness of their remaining levels as a persistent background sensation",
+        "environmental specificity \u2014 terrain, weather, architecture rendered through what a body encounters"
+      ]
+    }
+  }
+}

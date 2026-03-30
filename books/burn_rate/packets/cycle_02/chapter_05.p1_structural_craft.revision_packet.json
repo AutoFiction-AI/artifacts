@@ -1,0 +1,228 @@
+{
+  "acceptance_targets": [
+    "[CH5_CONTINUITY_VEL_AGE_ARITHMETIC] A reader can combine Vel's stated age at the canal and her elapsed-time language in snapshots/cycle_02/chapters/chapter_05.md:171 through snapshots/cycle_02/chapters/chapter_05.md:203 without producing a number that conflicts with the continuity sheet's age 58; the revised passage no longer yields 17 plus 40 as the scene's implied current age.",
+    "[CH5_DIALOGUE_EXAMPLE_LINE_LEAK] When the revised lines at snapshots/cycle_02/chapters/chapter_05.md:221 through snapshots/cycle_02/chapters/chapter_05.md:247 are compared against Kem's style-bible example lines, no single sample line maps beat-for-beat onto the chapter passage; the scene preserves the father and Stillness facts without reusing the sample line's cadence, sequencing, or phrasing.",
+    "[R14] Ch5's campfire telling of the father's condition does not restate '300 for sixty-one years' when that exact phrase was already delivered in Ch3.",
+    "[R16] Ch5 contains no more than 12 instances of fire/flame/firelight, with at least 3 different noun variants used across the chapter.",
+    "[LW02-002] Within the first page of chapter 5, the reader knows what Vel and Kem did in the skipped two days, what it cost them, and why Vel believes this stream camp is barely safe enough to risk.",
+    "[LW02-003] Before chapter 5 reaches Vel's canal story, the text has explicitly surfaced both sides of the chapter 4 aftermath: Vel's fear of Kem's appetite for power and Kem's mixed shame and exhilaration about what he did.",
+    "[length_chapter_05_min_words] Chapter word count is >= 4000 while preserving heading contract."
+  ],
+  "aggregation_applied": {
+    "decisions_file": "packets/cycle_02/aggregation_decisions.json",
+    "decisions_sha1": "1d3b1eee9508569a24a7c229c13a8ab6faab8bce"
+  },
+  "chapter_id": "chapter_05",
+  "cycle": 2,
+  "do_not_change": [],
+  "findings": [
+    {
+      "acceptance_test": "A reader can combine Vel's stated age at the canal and her elapsed-time language in snapshots/cycle_02/chapters/chapter_05.md:171 through snapshots/cycle_02/chapters/chapter_05.md:203 without producing a number that conflicts with the continuity sheet's age 58; the revised passage no longer yields 17 plus 40 as the scene's implied current age.",
+      "chapter_id": "chapter_05",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_05.md:171; snapshots/cycle_02/chapters/chapter_05.md:203",
+      "finding_id": "CH5_CONTINUITY_VEL_AGE_ARITHMETIC",
+      "problem": "Vel says she was seventeen at her first spend, then says that moment was forty years ago. On the provided continuity sheet she is 58 at story start, so the arithmetic on the page makes her 57 unless the elapsed time or age is adjusted. This is a direct continuity contradiction inside a chapter-defining origin beat.",
+      "rewrite_direction": "At snapshots/cycle_02/chapters/chapter_05.md:171 and snapshots/cycle_02/chapters/chapter_05.md:203, reconcile the numbers on the page: either change the age, change the elapsed-time phrasing, or make the time span explicitly approximate so Vel's first-spend story matches her canonical age from the continuity sheet.\n\nAggregator guidance:\n- Canonical choice [vel_age_arithmetic]: Vel is 58 at story start. Her first spend at seventeen was forty-one years ago.. Grounding: Continuity sheet: Vel's age at story start is 58. If first spend at 17, the elapsed time is 41 years. The chapter's 'forty years' produces 57, which is off by one. Fix by changing the elapsed-time phrasing to 'forty-one years' or making it explicitly approximate ('over forty years,' 'nearly forty years').",
+      "severity": "HIGH",
+      "source": "craft",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "When the revised lines at snapshots/cycle_02/chapters/chapter_05.md:221 through snapshots/cycle_02/chapters/chapter_05.md:247 are compared against Kem's style-bible example lines, no single sample line maps beat-for-beat onto the chapter passage; the scene preserves the father and Stillness facts without reusing the sample line's cadence, sequencing, or phrasing.",
+      "chapter_id": "chapter_05",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_05.md:221; snapshots/cycle_02/chapters/chapter_05.md:233; snapshots/cycle_02/chapters/chapter_05.md:237; snapshots/cycle_02/chapters/chapter_05.md:247",
+      "finding_id": "CH5_DIALOGUE_EXAMPLE_LINE_LEAK",
+      "problem": "Kem's confession about sitting beside his father at the Rite tracks the non-copyable style-bible calibration material too closely in fact order and sentence skeleton: beside him for twenty-six years, disappearance around year fifteen, Ledger still at three hundred. Because this lands in the chapter's core emotional exchange, it reads sourced from guide text instead of discovered in scene.",
+      "rewrite_direction": "Rebuild Kem's account at snapshots/cycle_02/chapters/chapter_05.md:221 through snapshots/cycle_02/chapters/chapter_05.md:247 from scene-specific memory and present pressure rather than the style-bible sample-line scaffold. Keep the canonical facts, but change the ordering, image logic, and cadence so the confession sounds like this Kem, in this camp, talking now.",
+      "severity": "HIGH",
+      "source": "dialogue",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch5's campfire telling of the father's condition does not restate '300 for sixty-one years' when that exact phrase was already delivered in Ch3.",
+      "chapter_id": "chapter_05",
+      "cycle": 2,
+      "evidence": "Ch3 L489: 'He's been three hundred for sixty-one years... less of him in the room each year... They call it discipline and composure... It's rot with good manners.'; Ch5 L1193: 'My father's Ledger is three hundred. Always has been. Sixty-one years and not a point gone.'; Ch5 L1201-1213: sentences shortening, physician calling it 'deepening discipline,' 'my father is disappearing in public.'",
+      "finding_id": "R14",
+      "problem": "Lord Aldraste's Stillness deterioration is first told to an outsider at Ch3 L489 with specific detail: 300 for 61 years, declining presence, they call it discipline. Ch5 L1193-1213 restates the same facts to Vel in a campfire scene -- '300 for sixty-one years,' sentences shortening, 'they call it virtue' -- adding some new detail (the progression over time, Uncle Aldris) but substantially re-proving the same baseline. This is the same property proved twice in nearby chapters to different listeners. The full confrontation is later proved again at Ch15 L3586 and L3634 (flagged separately as R06).",
+      "rewrite_direction": "Compress L1193 to skip the '300 for sixty-one years' restatement since Ch3 L489 already established this to the reader. Focus the Ch5 passage on the NEW details: the progression over time, the uncle's reaction, the physician's language. Let the emotional weight carry the scene rather than re-establishing facts the reader already has.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Ch5 contains no more than 12 instances of fire/flame/firelight, with at least 3 different noun variants used across the chapter.",
+      "chapter_id": "chapter_05",
+      "cycle": 2,
+      "evidence": "The word 'fire' (including fire, firelight, flame, flames) appears 21 times in Ch5 (~300 prose lines). Manuscript-wide total is 63. Ch5's central scene is Kem learning to build a fire manually, which justifies concentration, but 21 instances in one chapter is 1 per 14 lines. Target: keep 8-10 of the strongest instances in Ch5.",
+      "finding_id": "R16",
+      "problem": "Ch5 contains 21 fire/flame references in a single chapter. While the fire-building scene drives this concentration, the word itself is over-relied upon. Multiple instances could be replaced with varied vocabulary (coals, embers, heat, blaze) or reduced through pronoun reference and implied subjects.",
+      "rewrite_direction": "Audit Ch5 for fire/flame/firelight word repetition. Replace 10-12 of the weaker instances with varied vocabulary or pronoun references, keeping the word 'fire' for the 8-10 most impactful moments of the scene.",
+      "severity": "MEDIUM",
+      "source": "cross_chapter",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Within the first page of chapter 5, the reader knows what Vel and Kem did in the skipped two days, what it cost them, and why Vel believes this stream camp is barely safe enough to risk.",
+      "chapter_id": "chapter_05",
+      "cycle": 2,
+      "evidence": "Chapter 4 closes by stressing that half the valley heard Kem's blast and that the next team will come harder and faster at snapshots/cycle_02/FINAL_NOVEL.md:936, snapshots/cycle_02/FINAL_NOVEL.md:942, snapshots/cycle_02/FINAL_NOVEL.md:960. Chapter 5 then jumps to \"Two days since the outriders\" and an orderly camp stop at snapshots/cycle_02/FINAL_NOVEL.md:979, snapshots/cycle_02/FINAL_NOVEL.md:982 without accounting for how they shook the immediate pursuit chapter 4 had just promised.",
+      "finding_id": "LW02-002",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:936",
+            "excerpt": "936: \"I know you didn't.\" She jerked her chin toward his pack. \"Get it on. We move now. Half the valley heard that hillside go.\"",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:942",
+            "excerpt": "942: \"Look at this clearing,\" she said. Her voice was quiet enough that he had to listen. \"Forty-one levels bought you this. I've lost three and everybody I put down is still breathing. You broke the ground open and almost took me with the shield. Next team won't need a tracker if you keep leaving this kind of trail.\"",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:960",
+            "excerpt": "960: \"They'll send more,\" Vel said. \"Better ones. More authorization. More willingness to burn. And until you can tell the difference between one level and fifteen, you don't reach unless I'm already losing or I tell you to.\"",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:979",
+            "excerpt": "979: Two days since the outriders and Vel hadn't spent a point. Twenty-eight on the Ledger, enough if the Hoarded took their time, enough if Kem stopped reaching for levels every time the world asked for plain effort first.",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:982",
+            "excerpt": "982:",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "pass_hint": "p1_structural_craft",
+      "problem": "The boundary drops the most urgent external thread in the window. A reader is asked to invent the two-day evasion story that should be carrying pressure into the quiet chapter, which makes chapter 5 feel safer than chapter 4 earned.",
+      "rewrite_direction": "Open chapter 5 with a compressed but concrete account of the two-day flight or make the camp scene visibly shaped by live chase residue: route changes, track-covering, a near miss, lost supplies, or a forced stop because Kem's injuries finally override motion.",
+      "severity": "HIGH",
+      "source": "local_window",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Before chapter 5 reaches Vel's canal story, the text has explicitly surfaced both sides of the chapter 4 aftermath: Vel's fear of Kem's appetite for power and Kem's mixed shame and exhilaration about what he did.",
+      "chapter_id": "chapter_05",
+      "cycle": 2,
+      "evidence": "Chapter 4 ends with Kem still grinning after catastrophic overspend and Vel explicitly calling out that his shield almost took her too at snapshots/cycle_02/FINAL_NOVEL.md:924, snapshots/cycle_02/FINAL_NOVEL.md:942, snapshots/cycle_02/FINAL_NOVEL.md:974. Chapter 5 resumes with Vel assigning chores and Kem submitting to survival training at snapshots/cycle_02/FINAL_NOVEL.md:987, snapshots/cycle_02/FINAL_NOVEL.md:991, snapshots/cycle_02/FINAL_NOVEL.md:1113, but the dangerous exhilaration and alarm between them are not reactivated before the trust-building material begins.",
+      "finding_id": "LW02-003",
+      "locator_excerpts": {
+        "evidence": [
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:924",
+            "excerpt": "924: Kem was grinning.",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:942",
+            "excerpt": "942: \"Look at this clearing,\" she said. Her voice was quiet enough that he had to listen. \"Forty-one levels bought you this. I've lost three and everybody I put down is still breathing. You broke the ground open and almost took me with the shield. Next team won't need a tracker if you keep leaving this kind of trail.\"",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:974",
+            "excerpt": "974: Ahead, Vel kept angling them away from the slide and the crater, into tighter cover. The next team would not need a tracker to find what he'd left behind. Kem shifted the pack higher. His Ledger rubbed at him with every step. 245. Forty-one gone. Vel had spent three. The grin came back anyway. He let it, and kept walking south.",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:987",
+            "excerpt": "987: \"Sit,\" she said. Then, before he could, \"No. Don't. If you lock up now, you'll stay locked.\"",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:991",
+            "excerpt": "991: \"You don't. Fire. Food. Shelter. You're doing all of it.\"",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          },
+          {
+            "citation": "snapshots/cycle_02/FINAL_NOVEL.md:1113",
+            "excerpt": "1113: The bird tasted of ash, smoke, and punishment. Vel cut away the worst of the blackened skin with her knife and ate what was left. Across the fire, Kem chewed without complaint on meat his blistered hands had made badly and honestly.",
+            "source_file": "snapshots/cycle_02/FINAL_NOVEL.md"
+          }
+        ]
+      },
+      "pass_hint": "p1_structural_craft",
+      "problem": "The relational aftershock of Kem liking the spend evaporates across the chapter break. As a result, chapter 5 starts from a calmer teacher-student baseline than chapter 4 earned, which blunts both Vel's caution and Kem's moral unease.",
+      "rewrite_direction": "Keep the manual-labor chapter, but thread the fight's residue through its first half: Vel watching his hands, Kem admitting he wanted the charge back, or the forced chores reading as Vel's answer to the grin rather than generic road training.",
+      "severity": "HIGH",
+      "source": "local_window",
+      "status": "UNRESOLVED"
+    },
+    {
+      "acceptance_test": "Chapter word count is >= 4000 while preserving heading contract.",
+      "chapter_id": "chapter_05",
+      "cycle": 2,
+      "evidence": "snapshots/cycle_02/chapters/chapter_05.md:1",
+      "finding_id": "length_chapter_05_min_words",
+      "problem": "Chapter is below projected_min_words (2571 < 4000).",
+      "rewrite_direction": "Add causally necessary scene material that strengthens the chapter engine, increases pressure, and lands the planned state shift without filler.",
+      "severity": "HIGH",
+      "source": "length_guardrail",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "has_locator_excerpts": true,
+  "input_snapshot_hash": "bea73d70ec7684114c901b7ca1a5e25dc76b9abd757777e3af0c7dae8eb3dae5",
+  "must_fix_count": 7,
+  "non_negotiables": [
+    "Maintain heading contract exactly (# Chapter N).",
+    "Elliptical clipping is not permitted in dialogue or narration.",
+    "Avoid transcript cadence in high-stakes dialogue.",
+    "Avoid stiff over-formality in dialogue; use contractions and colloquial rhythm where character-true.",
+    "Preserve productive dialogue roughness; do not clean living speech into balanced thesis statements.",
+    "Reduce procedural drift when it displaces embodied consequence.",
+    "Maintain character-specific voice signatures from style bible.",
+    "Honor aesthetic risk policy: sanitization is the primary craft risk \u2014 do not soften, euphemize, or retreat from the story's established register. When in doubt, err toward rawness.",
+    "Every narration sentence must be grammatically complete. Do not use article-stripped noun-phrase fragments, subjectless stubs, or telegraphic fragment strings as a rhythmic device. Isolated level-count callouts ('Twelve.' or 'Zero.') are acceptable; stacked fragment clusters ('Not night. Underground dark.' or 'Too slow. Too loud. Too late.') are not. Achieve compression through short complete sentences, not by dropping subjects and articles.",
+    "When a scene beat has landed through concrete image, action, dialogue, or bodily sensation, do not add an abstract summary sentence that restates its meaning in thesis language. If a paragraph's only job is to translate what the reader already understood from the prior image or line of dialogue, cut it or replace it with a new fact, consequence, or pressure. Trust the scene. One beat, one landing.",
+    "No character should deliver a multi-sentence thematic diagnosis, balanced mini-speech, or quotable aphorism during a pressured scene. Accusations, confessions, and revelations must arrive through messy, character-true speech: interruptions, self-corrections, false starts, incomplete grammar, practical redirects, and mid-sentence recalibrations. If a line of dialogue can be lifted as a standalone epigram, it is probably too composed for the scene pressure. Rhetorical questions used for emphasis rather than genuine inquiry are not permitted for Vel."
+  ],
+  "original_snapshot_file": "snapshots/cycle_02/chapters/chapter_05.md",
+  "revision_pass": {
+    "focus": "Prioritize structural and craft blockers first: causality, chapter architecture, stakes clarity, continuity logic, and all HIGH/CRITICAL defects.",
+    "key": "p1_structural_craft",
+    "label": "HIGH/CRITICAL structural/craft fixes"
+  },
+  "style_constraints": {
+    "aesthetic_risk_policy": {
+      "creative_risk_policy": "This is a dark comedy about a world where doing nothing is rational and doing something is self-destruction. Both the comedy and the darkness must be fully committed. Do not soften combat into choreography or spectacle \u2014 fights should hurt, cost real things, and leave damage. Do not soften the comedy into gentle satire \u2014 the absurdity of the Hoarded and their agents should be genuinely funny, sometimes cruelly so. Do not soften grief into sentimentality or revelation into epiphany. The premise demands a tonal register that holds absurdity and genuine pain in the same hand. When the material is uncomfortable \u2014 the physical reality of injury, the moral weight of exploitation, the specific grief of losing someone to a place you cannot reach \u2014 lean into specificity rather than retreating to safety. A draft that never risks anything produces a novel that never moves anyone.",
+      "dark_content_allowed_when_character_true": true,
+      "euphemism_penalty": "Euphemism in combat, injury, consequence, or emotional extremity is a craft failure. If Vel breaks ribs, the reader should feel the break \u2014 the specific wrongness of breathing with cracked bone, the way she holds herself, the pain when she forgets. If Kem is terrified, the terror should be specific and physical: hands, stomach, breathing, the precise quality of his fear. Do not abstract away from embodied experience into summary or generalization.",
+      "profanity_allowed_when_scene_pressure_warrants": true,
+      "sanitization_disallowed": true
+    },
+    "dialogue_rules": {
+      "anti_transcript_cadence": true,
+      "default_contraction_use": "High \u2014 contractions are the norm for all characters except Sable (low) and early-book Kem (initially low, shifting to high). Uncontracted forms are reserved for deliberate emphasis, formal Hoarded speech contexts, or bureaucratic register. In casual conversation, unjustified full-form lines should be treated as suspect.",
+      "idiolect_separation_required": true,
+      "max_consecutive_low_info_replies": 3,
+      "required_leverage_shifts_per_scene": 1
+    },
+    "prose_style_profile": {
+      "chapter_texture_variance": "Vary chapter rhythm aggressively. Combat chapters should be compressed and physical. Discovery chapters should have more room for observation and the surprise of new information. Quiet chapters should breathe \u2014 longer scenes, more sensory detail, conversations that circle rather than drive. Intercut chapters (like Ch 11's Kem/Sable split and Ch 17's Sable intercut) should have contrasting textures between sections. No two consecutive chapters should have the same structural shape: vary scene count, dialogue density, pacing, and the ratio of action to interiority. Dark comedy chapters in the back half (Ch 12, 14, 15, 17) must commit fully to comic energy as a primary narrative mode: the absurdity of Hoarded bureaucratic language applied to human exploitation, the grim humor of fighting for your life with single-digit levels, the comedy of precision teamwork performed in emotional silence. These chapters carry genuine stakes alongside their comedy \u2014 the tonal fusion is the point, not tonal alternation.",
+      "diction": "Concrete, physical, occasionally wry. Avoids both literary pretension and genre cliche. The world has its own vocabulary (Hoarded, Spent, Ledger, Stillness, the Scour, the Margins) and these terms should be used naturally, not defined in exposition. Metaphors earned from the world's own materials \u2014 spending, counting, weight, erosion \u2014 rather than imported from outside the setting. The Hoarded institutional register \u2014 bureaucratic classifications, procedural euphemism, administrative language applied to human exploitation \u2014 is a specific comic instrument in the Margins chapters. When rendering Hoarded documents, policies, or institutional speech, the language should be precise, procedural, and devastating in its indifference.",
+      "forbidden_drift_patterns": [
+        "Narrator-as-comedian: comedy arises from situation and character, not from narrative commentary or winking asides to the reader",
+        "Ability-use described like video game tooltips: do not produce stat readouts or system notifications in prose",
+        "Emotional temperature permanently at maximum: not every scene is a crisis and not every internal moment is an epiphany",
+        "Generic fantasy description: landscape, architecture, and weather must be specific to this world's conditions, not recycled from the fantasy-prose commons",
+        "Competence porn: do not let characters be consistently impressive \u2014 they should fumble, miscalculate, and fail at things that are hard",
+        "Thematic underlining: the prose should not highlight its own meanings or signal when something is symbolically significant"
+      ],
+      "narrative_distance": "Close third-person limited, shifting with the POV character. Vel chapters are compressed and physical \u2014 the prose should feel like it is counting. Kem chapters are more expansive and curious \u2014 the prose has more room for observation and surprise. Sable chapters are structured and institutional, loosening as she changes. The POV break in Ch 13\u201314 (two consecutive Kem chapters) should make Vel's absence felt: the reader is locked inside Kem's betrayed perspective, and the prose should reflect the claustrophobia of a mind cycling through anger without access to the other person's interiority. The distance should be intimate enough to access characters' internal arithmetic but not so close it becomes stream-of-consciousness.",
+      "narrative_tense": "past tense",
+      "rhythm_target": "Varied by chapter texture and scene pressure. Short declarative sentences in combat. Longer, conditional, clause-heavy sentences in reflection. Comma-heavy run-ons in panic or exhilaration. The Ledger's arithmetic should bleed into prose rhythm during ability-use moments \u2014 characters counting, weighing, calculating. Quiet chapters should breathe. Action chapters should compress. Two consecutive chapters should not share the same dominant rhythm.",
+      "sensory_bias": [
+        "proprioceptive awareness \u2014 the body's internal sense of position, strain, damage, and capacity",
+        "physical weight and effort \u2014 characters feel gravity, distance, fatigue",
+        "the Ledger's feedback \u2014 a character's awareness of their remaining levels as a persistent background sensation",
+        "environmental specificity \u2014 terrain, weather, architecture rendered through what a body encounters"
+      ]
+    }
+  }
+}
